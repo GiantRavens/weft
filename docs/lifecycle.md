@@ -4,7 +4,7 @@ Ten steps. Each is a `pipeline/` subcommand except 1 and 9, which are human.
 
 | # | Step        | Input                          | Output                          | Judgment? |
 |---|-------------|--------------------------------|---------------------------------|-----------|
-| 1 | select      | a wish                          | `manifest.yaml`                 | human     |
+| 1 | select      | a candidate text                | `manifest.yaml`                 | human     |
 | 2 | acquire     | manifest URLs                   | `sources/` with sha256          | no        |
 | 3 | identify    | source text                     | line IDs (CTS)                  | no        |
 | 4 | tokenize    | lines + treebank                | token to treebank mapping       | edge cases|
@@ -33,10 +33,13 @@ rule re-runs one step; the git diff is the review task; the count of changes per
 
 ## Phases
 
-0. **Done 2026-09-29.** `od.1.1-10`: `weft draft` generates text, lemma, morph and sound from
-   Perseus plus AGDT; gloss, metre, alignment and notes are hand-made in curated/, sense/, notes/.
-   Renderer, settings panel (the Loom), veil self-test mode, print and phone layouts.
-1. Pipeline for source, sound, gloss, sense on Greek and Latin. Static site. Settings panel.
-2. Audio: espeak-ng baseline, IPA-input neural TTS, forced alignment for word highlighting.
-3. Notes: harvested commentaries and lexicon-grounded synthesis in a sidebar.
-4. Scale: whole works, remaining languages, review queue driven by confidence.
+0. **Done 2026-09-29.** `od.1.1-10` as the golden passage: generated text, lemma, morphology and
+   sound; hand-made gloss, metre, alignment and notes; the renderer, the Loom settings panel, veil
+   mode, print and phone layouts.
+1. **In progress.** Readers for six source formats and phonology for six languages are built, with
+   eight works in the library (see the pilot table and `pin ls`). Open: a generated gloss step with
+   confidence scores, the hexameter scanner, and a path for texts with no treebank.
+2. Audio: an espeak-ng baseline, then IPA-driven speech synthesis, then forced alignment for
+   word-level highlighting.
+3. Notes: commentaries harvested from public-domain editions, alongside lexicon-grounded notes.
+4. Scale: whole works, further languages, and a review queue ordered by confidence.

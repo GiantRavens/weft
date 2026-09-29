@@ -1,4 +1,4 @@
-# Weft — agent orientation
+# Weft: agent orientation
 
 Read `README.md` first, then `docs/lifecycle.md` and `docs/schema.md`. Tasks live in Pin (`pin ls`).
 
@@ -15,6 +15,13 @@ Read `README.md` first, then `docs/lifecycle.md` and `docs/schema.md`. Tasks liv
 9. Manifest before pipeline. A work is not processed until `manifest.yaml` names the edition, the treebank, the schemes, the translations with licenses, and the predicted gaps.
 
 ## Working style
+
+- **Voice for all authored prose** (README, docs, guides, notes on the page, UI strings, repo
+  description): Skip's clear, analytical voice, `~/.claude/skills/voice/voices/analyst-brief.md`,
+  then a `humanize` pass. Calm and measured; definitions before claims; scope every claim and
+  state where the evidence is weakest; relate a word rather than equate it; never add details the
+  text does not contain. No em-dashes, superlatives, drama, exclamation points, or flourishes
+  presented as findings ("the repetition is the point"). Quoted sources are left verbatim.
 
 - Python with `uv`; one package, no sidecars.
 - Each pipeline step is a CLI subcommand that reads the manifest, writes one layer, and reports counts and failure classes on exit.
