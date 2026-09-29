@@ -1,4 +1,4 @@
-# Neith
+# Weft
 
 Living interlinear editions of classical texts. Every line of the source is stitched to
 its sound, its literal word-for-word gloss, and one or more published translations,
@@ -10,8 +10,9 @@ with scholarly notes attached to the words themselves.
 
     Tell me, O Muse, of that ingenious hero who travelled far and wide   (Butler, 1900)
 
-The name: Neith, the Egyptian goddess of weaving and wisdom, whose sign is the loom. Named for my mother.
-An interlinear is a weave: warp of the source, weft of sound, gloss and sense.
+The name: the weft is the thread carried back and forth across the warp. The source text is the warp;
+sound, gloss and sense are the weft that turns it into cloth. Dedicated to Neith, goddess of the loom,
+and to my mother.
 
 ## The four layers
 
