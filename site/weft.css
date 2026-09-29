@@ -222,3 +222,11 @@ body.rtl .w.caesura { border-left: 0; border-right: 1px dotted var(--rule); }
 body.hide-script .scr { display: none; }
 .tr.editorial { border-left-style: dashed; }
 .tr.editorial cite::after { content: " · editorial, draft"; }
+
+/* ---------- reading-direction notice (right-to-left scripts) */
+.dir-note { max-width: 1120px; margin: 18px auto 0; padding: 0 16px; box-sizing: border-box;
+  font: 0.9rem/1.5 var(--sans); color: var(--ink-soft); }
+.dir-note[hidden] { display: none; }
+.dir-note strong { color: var(--ink); font-weight: 600; }
+.dir-note .arrow { display: inline-block; margin-right: 8px; color: var(--accent); font-weight: 700; }
+@media print { .dir-note { display: block; } }

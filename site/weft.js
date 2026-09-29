@@ -251,6 +251,14 @@
   const LANG = D.work.lang_html || D.work.language;
   const RTL = D.work.dir === "rtl";
   document.body.classList.toggle("rtl", RTL);
+  if (RTL) {
+    // tell the reader which way to read before the first line
+    const note = $("#dir-note");
+    note.append(h("span", { class: "arrow", "aria-hidden": "true", text: "←" }),
+      h("strong", { text: "Read right to left. " }),
+      `${D.work.lang_name || "This text"} runs from right to left: each ${D.work.unit === "verse" ? "verse" : "line"} begins at the right edge, and its first word is the rightmost. The pronunciation and gloss under each word read left to right.`);
+    note.hidden = false;
+  }
   // Hebrew: show the text without cantillation unless the reader asks for it
   const shown = (t) => (t.surface_plain && !S.cant ? t.surface_plain : t.surface);
   $("#veil").addEventListener("change", (e) => { S.veil = e.target.checked; applySettings(); save(); });

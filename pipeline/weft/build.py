@@ -17,6 +17,7 @@ from .draft import PHON, load_manifest
 
 HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "lzh": "lzh", "runic": "gmq"}
 RTL = {"hbo"}
+LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "lzh": "Classical Chinese", "runic": "Runic Norse"}
 
 
 def _load_yaml_dir(d: Path) -> list[tuple[Path, object]]:
@@ -85,7 +86,8 @@ def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
     return {
         "work": dict({k: m.get(k) for k in ("work", "title", "author", "language", "urn", "unit")},
                      lang_html=HTML_LANG.get(m["language"], m["language"]),
-                     dir="rtl" if m["language"] in RTL else "ltr"),
+                     dir="rtl" if m["language"] in RTL else "ltr",
+                     lang_name=LANG_NAMES.get(m["language"], m["language"])),
         "edition": {k: m["edition"].get(k) for k in ("id", "name", "license")},
         "treebank": ({k: m["treebank"].get(k) for k in ("id", "name", "license")} if m.get("treebank")
                      else {"id": "hand annotation", "name": "no treebank: hand annotation, draft", "license": "CC BY-SA 4.0"}),
@@ -168,7 +170,6 @@ def run(repo: Path, work: str, private: bool = False) -> Path:
     return out
 
 
-LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "lzh": "Classical Chinese", "runic": "Runic Norse"}
 
 
 def write_index(repo: Path, out_dir: Path) -> Path:
@@ -193,7 +194,7 @@ def write_index(repo: Path, out_dir: Path) -> Path:
         rows.append(f'<li><a href="{H.escape(page.name)}"><span class="t">{H.escape(m["title"])}</span>'
                     f'<span class="a">{H.escape(m["author"])} · {span}</span></a>'
                     + (f'<p class="w">{H.escape(written[:1].upper() + written[1:])}</p>' if written else "")
-                    + f'<p>{H.escape(LANG_NAMES.get(m["language"], m["language"]))} · '
+                    + f'<p>{H.escape(LANG_NAMES.get(m["language"], m["language"]))}{" (reads right to left)" if m["language"] in RTL else ""} · '
                     f'{H.escape(", ".join(m["schemes"]))} · {H.escape(trs)}</p></li>')
     idx = out_dir / "index.html"
     art = load_art(repo)
