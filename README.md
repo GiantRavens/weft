@@ -1,4 +1,4 @@
-# Rhapsode
+# Neith
 
 Living interlinear editions of classical texts. Every line of the source is stitched to
 its sound, its literal word-for-word gloss, and one or more published translations,
@@ -10,7 +10,8 @@ with scholarly notes attached to the words themselves.
 
     Tell me, O Muse, of that ingenious hero who travelled far and wide   (Butler, 1900)
 
-The name: a ῥαψῳδός was the reciter who "stitched songs" together.
+The name: Neith, the Egyptian goddess of weaving and wisdom, whose sign is the loom. Named for my mother.
+An interlinear is a weave: warp of the source, weft of sound, gloss and sense.
 
 ## The four layers
 

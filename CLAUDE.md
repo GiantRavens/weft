@@ -1,4 +1,4 @@
-# Rhapsode — agent orientation
+# Neith — agent orientation
 
 Read `README.md` first, then `docs/lifecycle.md` and `docs/schema.md`. Tasks live in Pin (`pin ls`).
 
