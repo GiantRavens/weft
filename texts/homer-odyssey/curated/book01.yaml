@@ -1,0 +1,113 @@
+# Human overlay for book 1. Wins over gen/ on conflict.
+# Each entry is one changeset: who, when, why, review status, and the fields it sets.
+# Keys under `set` are line IDs (od.1.1) or token IDs (od.1.1.5).
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-29
+  why: golden passage, hand gloss and hand scansion
+  status: draft            # draft | reviewed
+  set:
+    # metre: — long, ◡ short, × anceps, | foot boundary
+    od.1.1: {metre: "—◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×"}
+    od.1.2: {metre: "—◡◡|——|—◡◡|—◡◡|—◡◡|—×"}
+    od.1.3: {metre: "——|——|—◡◡|—◡◡|—◡◡|—×"}
+    od.1.4: {metre: "—◡◡|——|—◡◡|—◡◡|—◡◡|—×"}
+    od.1.5: {metre: "—◡◡|——|——|——|—◡◡|—×"}
+    od.1.6: {metre: "——|—◡◡|——|—◡◡|—◡◡|—×"}
+    od.1.7: {metre: "——|—◡◡|—◡◡|—◡◡|—◡◡|—×"}
+    od.1.8: {metre: "—◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×"}
+    od.1.9: {metre: "—◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×"}
+    od.1.10: {metre: "—◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×"}
+
+    od.1.1.1: {gloss: man}
+    od.1.1.2: {gloss: to-me}
+    od.1.1.3: {gloss: tell}
+    od.1.1.4: {gloss: O-Muse}
+    od.1.1.5: {gloss: of-many-turns}
+    od.1.1.6: {gloss: who}
+    od.1.1.7: {gloss: very}
+    od.1.1.8: {gloss: much}
+
+    od.1.2.1: {gloss: was-driven-wandering}
+    od.1.2.2: {gloss: after}
+    od.1.2.3: {gloss: of-Troy}
+    od.1.2.4: {gloss: holy}
+    od.1.2.5: {gloss: citadel}
+    od.1.2.6: {gloss: he-sacked}
+
+    od.1.3.1: {gloss: of-many}
+    od.1.3.2: {gloss: and}
+    od.1.3.3: {gloss: of-men}
+    od.1.3.4: {gloss: he-saw}
+    od.1.3.5: {gloss: cities}
+    od.1.3.6: {gloss: and}
+    od.1.3.7: {gloss: mind}
+    od.1.3.8: {gloss: he-came-to-know}
+
+    od.1.4.1: {gloss: many-things}
+    od.1.4.2: {gloss: and}
+    od.1.4.3: {gloss: he}
+    od.1.4.4: {gloss: indeed}
+    od.1.4.5: {gloss: "on"}
+    od.1.4.6: {gloss: sea}
+    od.1.4.7: {gloss: he-suffered}
+    od.1.4.8: {gloss: pains}
+    od.1.4.9: {gloss: his-own}
+    od.1.4.10: {gloss: in}
+    od.1.4.11: {gloss: heart}
+
+    od.1.5.1: {gloss: striving-to-win}
+    od.1.5.2: {gloss: his-own}
+    od.1.5.3: {gloss: both}
+    od.1.5.4: {gloss: life}
+    od.1.5.5: {gloss: and}
+    od.1.5.6: {gloss: homecoming}
+    od.1.5.7: {gloss: of-comrades}
+
+    od.1.6.1: {gloss: but}
+    od.1.6.2: {gloss: not-even}
+    od.1.6.3: {gloss: so}
+    od.1.6.4: {gloss: comrades}
+    od.1.6.5: {gloss: he-rescued}
+    od.1.6.6: {gloss: eager}
+    od.1.6.7: {gloss: though}
+
+    od.1.7.1: {gloss: of-themselves}
+    od.1.7.2: {gloss: for}
+    od.1.7.3: {gloss: by-their-own}
+    od.1.7.4: {gloss: by-reckless-follies}
+    od.1.7.5: {gloss: they-perished}
+
+    od.1.8.1: {gloss: fools}
+    od.1.8.2: {gloss: who}
+    od.1.8.3: {gloss: down}
+    od.1.8.4: {gloss: cattle}
+    od.1.8.5: {gloss: of-Hyperion}
+    od.1.8.6: {gloss: of-the-Sun}
+
+    od.1.9.1: {gloss: they-ate}
+    od.1.9.2: {gloss: but}
+    od.1.9.3: {gloss: he}
+    od.1.9.4: {gloss: from-them}
+    od.1.9.5: {gloss: took-away}
+    od.1.9.6: {gloss: of-return}
+    od.1.9.7: {gloss: day}
+
+    od.1.10.1: {gloss: of-these-things}
+    od.1.10.2: {gloss: from-somewhere}
+    od.1.10.3: {gloss: at-least}
+    od.1.10.4: {gloss: O-goddess}
+    od.1.10.5: {gloss: O-daughter}
+    od.1.10.6: {gloss: of-Zeus}
+    od.1.10.7: {gloss: tell}
+    od.1.10.8: {gloss: also}
+    od.1.10.9: {gloss: to-us}
+
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-29
+  why: AGDT 2.1 leaves article tokens unparsed (postag l--------); fill in the AGDT tag format
+  status: draft
+  set:
+    od.1.4.3: {morph: l-s---mn-}     # ὅ, nom. sg. masc., used as a pronoun: "he"
+    od.1.9.3: {morph: l-s---mn-}     # ὁ, nom. sg. masc., pronoun: "he" (the god)
+    od.1.9.4: {morph: l-p---md-}     # τοῖσιν, dat. pl. masc., dative of disadvantage: "from them"
+    od.1.10.1: {morph: l-p---ng-}    # τῶν, gen. pl. neut.: "of these things"

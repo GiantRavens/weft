@@ -1,0 +1,27 @@
+# Human overlay for 靜夜思. Part of speech comes from the Kyoto treebank, and so does a first
+# English gloss (MISC); this changeset turns those into Weft's gloss style and fixes wrong senses.
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-29
+  why: gloss style; 望 is 'gaze at' here, not the treebank's 'expect'; 低 had no gloss
+  status: draft
+  set:
+    lb.1.1: {gloss: "bed"}   # 床 (treebank: bed)
+    lb.1.2: {gloss: "before"}   # 前 (treebank: front)
+    lb.1.3: {gloss: "bright"}   # 明 (treebank: bright)
+    lb.1.4: {gloss: "moon"}   # 月 (treebank: moon)
+    lb.1.5: {gloss: "light"}   # 光 (treebank: light)
+    lb.2.1: {gloss: "suspect"}   # 疑 (treebank: suspect)
+    lb.2.2: {gloss: "it-is"}   # 是 (treebank: this)
+    lb.2.3: {gloss: "ground"}   # 地 (treebank: earth)
+    lb.2.4: {gloss: "upon"}   # 上 (treebank: up)
+    lb.2.5: {gloss: "frost"}   # 霜 (treebank: frost)
+    lb.3.1: {gloss: "raise"}   # 舉 (treebank: raise)
+    lb.3.2: {gloss: "head"}   # 頭 (treebank: head)
+    lb.3.3: {gloss: "gaze-at"}   # 望 (treebank: expect)
+    lb.3.4: {gloss: "bright"}   # 明 (treebank: bright)
+    lb.3.5: {gloss: "moon"}   # 月 (treebank: moon)
+    lb.4.1: {gloss: "lower"}   # 低 (treebank: none)
+    lb.4.2: {gloss: "head"}   # 頭 (treebank: head)
+    lb.4.3: {gloss: "think-of"}   # 思 (treebank: think)
+    lb.4.4: {gloss: "old"}   # 故 (treebank: former)
+    lb.4.5: {gloss: "home-village"}   # 鄉 (treebank: village)

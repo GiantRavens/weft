@@ -1,0 +1,35 @@
+# Notes for book 1. `attach` is a token ID or a line ID.
+# `kind`: quoted (verbatim from a named source) | editorial (Weft's own words, citing where it leans).
+# Editorial notes stay `status: draft` until a human reviews them.
+- id: n.od.1.1.andra
+  attach: od.1.1.1
+  kind: editorial
+  status: draft
+  text: "The poem's first word is ἄνδρα, 'man', and the man stays nameless until line 21. The Iliad opens the same way on its theme, with μῆνιν, 'wrath'."
+- id: n.od.1.1.polytropos
+  attach: od.1.1.5
+  kind: editorial
+  status: draft
+  leans_on: LSJ s.v. πολύτροπος
+  text: "Literally 'of many turns'. It can mean much-travelled, turned along many routes, or versatile and wily. Homer leaves both readings open and every translator must choose: Butler writes 'ingenious', Butcher and Lang 'so ready at need'."
+- id: n.od.1.2.plagchthe
+  attach: od.1.2.1
+  kind: editorial
+  status: draft
+  leans_on: LSJ s.v. πλάζω
+  text: "Aorist passive of πλάζω, 'drive off course'. Odysseus does not wander by choice; he is made to wander."
+- id: n.od.1.8.kata
+  attach: od.1.8.3
+  kind: editorial
+  status: draft
+  text: "κατὰ belongs with ἤσθιον in the next line: κατήσθιον, 'they ate down, devoured'. Homer often separates a verb from its prefix. Grammarians call this tmesis, 'cutting'."
+- id: n.od.1.10.hamothen
+  attach: od.1.10.2
+  kind: editorial
+  status: draft
+  text: "'From somewhere': the poet lets the Muse begin wherever she likes. She begins late, in the tenth year of the wandering, with Odysseus held on Calypso's island."
+- id: n.od.1.1.butler-construe
+  attach: od.1.1
+  kind: quoted
+  source: Samuel Butler, preface to The Odyssey (1900)
+  text: "That the reader, however, may see how far I have departed from strict construe, I will print here Messrs. Butcher and Lang’s translation of the sixty lines or so of the “Odyssey.”"

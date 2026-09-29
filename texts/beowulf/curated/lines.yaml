@@ -1,0 +1,73 @@
+# Human overlay for Beowulf 1-11. No open treebank covers Old English poetry, so this file
+# carries lemma and morphology too. Lemmas follow J. R. Clark Hall, A Concise Anglo-Saxon
+# Dictionary (1916). Morphology uses Universal Dependencies features.
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-29
+  why: pilot lines 1-11. Hand lemma, morphology, gloss, staves and metre; no treebank exists
+  status: draft
+  set:
+    beo.1: {metre: "long line, two half-lines · stave g"}
+    beo.1.1: {lemma: "hwæt", morph: "INTJ", gloss: "what"}   # Hwæt
+    beo.1.2: {lemma: "wē", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # wē
+    beo.1.3: {lemma: "Gār-Dene", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-Spear-Danes", stave: true}   # Gār-Dena
+    beo.1.4: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    beo.1.5: {lemma: "gēar-dæg", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "yore-days", stave: true}   # gēar-dagum
+    beo.2: {metre: "long line, two half-lines · stave þ"}
+    beo.2.1: {lemma: "þēod-cyning", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-folk-kings", stave: true}   # þēod-cyninga
+    beo.2.2: {lemma: "þrym", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "glory", stave: true}   # þrym
+    beo.2.3: {lemma: "gefrignan", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "have-heard-of"}   # gefrūnon
+    beo.3: {metre: "long line, two half-lines · stave vowel"}
+    beo.3.1: {lemma: "hū", morph: "ADV", gloss: "how"}   # hū
+    beo.3.2: {lemma: "se", morph: "DET|Case=Nom|Gender=Masc|Number=Plur", gloss: "the"}   # þā
+    beo.3.3: {lemma: "æþeling", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "princes", stave: true}   # æðelingas
+    beo.3.4: {lemma: "ellen", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "courage", stave: true}   # ellen
+    beo.3.5: {lemma: "fremman", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "performed"}   # fremedon
+    beo.4: {metre: "long line, two half-lines · stave sc"}
+    beo.4.1: {lemma: "oft", morph: "ADV", gloss: "often"}   # Oft
+    beo.4.2: {lemma: "Scyld", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Scyld", stave: true}   # Scyld
+    beo.4.3: {lemma: "Scēfing", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Sheaf's-son", stave: true}   # Scēfing
+    beo.4.4: {lemma: "sceaþa", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-foes", stave: true}   # sceaðena
+    beo.4.5: {lemma: "þrēat", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "from-troops"}   # þrēatum
+    beo.5: {metre: "long line, two half-lines · stave m"}
+    beo.5.1: {lemma: "manig", morph: "ADJ|Case=Dat|Number=Plur", gloss: "from-many", stave: true}   # monegum
+    beo.5.2: {lemma: "mǣgþ", morph: "NOUN|Case=Dat|Gender=Fem|Number=Plur", gloss: "tribes", stave: true}   # mǣgðum
+    beo.5.3: {lemma: "medu-setl", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-mead-seats", stave: true}   # meodo-setla
+    beo.5.4: {lemma: "oftēon", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "took-away"}   # oftēah
+    beo.6: {metre: "long line, two half-lines · stave vowel"}
+    beo.6.1: {lemma: "egesian", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "terrified", stave: true}   # Egsode
+    beo.6.2: {lemma: "eorl", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "earl", stave: true}   # eorl
+    beo.6.3: {lemma: "siþþan", morph: "SCONJ", gloss: "since"}   # syððan
+    beo.6.4: {lemma: "ǣrest", morph: "ADV", gloss: "first", stave: true}   # ǣrest
+    beo.6.5: {lemma: "weorþan", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "he-was"}   # wearð
+    beo.7: {metre: "long line, two half-lines · stave f"}
+    beo.7.1: {lemma: "fēasceaft", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "destitute", stave: true}   # fēa-sceaft
+    beo.7.2: {lemma: "findan", morph: "VERB|Tense=Past|VerbForm=Part", gloss: "found", stave: true}   # funden
+    beo.7.3: {lemma: "hē", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hē
+    beo.7.4: {lemma: "se", morph: "PRON|Case=Gen|Gender=Neut|Number=Sing|PronType=Dem", gloss: "for-that"}   # þæs
+    beo.7.5: {lemma: "frōfor", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "comfort", stave: true}   # frōfre
+    beo.7.6: {lemma: "gebīdan", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "lived-to-see"}   # gebād
+    beo.8: {metre: "long line, two half-lines · stave w"}
+    beo.8.1: {lemma: "weaxan", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "grew", stave: true}   # wēox
+    beo.8.2: {lemma: "under", morph: "ADP", gloss: "under"}   # under
+    beo.8.3: {lemma: "wolcen", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "clouds", stave: true}   # wolcnum
+    beo.8.4: {lemma: "weorþmynd", morph: "NOUN|Case=Dat|Gender=Fem|Number=Plur", gloss: "in-honours", stave: true}   # weorð-myndum
+    beo.8.5: {lemma: "þēon", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "prospered"}   # ðāh
+    beo.9: {metre: "long line, two half-lines · stave vowel"}
+    beo.9.1: {lemma: "ōþ", morph: "SCONJ", gloss: "until"}   # ōð
+    beo.9.2: {lemma: "þæt", morph: "SCONJ", gloss: "that"}   # þæt
+    beo.9.3: {lemma: "hē", morph: "PRON|Case=Dat|Gender=Masc|Number=Sing|Person=3", gloss: "to-him"}   # him
+    beo.9.4: {lemma: "ǣghwilc", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing", gloss: "each", stave: true}   # ǣghwylc
+    beo.9.5: {lemma: "se", morph: "DET|Case=Gen|Number=Plur", gloss: "of-the"}   # þāra
+    beo.9.6: {lemma: "ymbsittend", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "around-dwellers", stave: true}   # ymb-sittendra
+    beo.10: {metre: "long line, two half-lines · stave h"}
+    beo.10.1: {lemma: "ofer", morph: "ADP", gloss: "over"}   # ofer
+    beo.10.2: {lemma: "hronrād", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "whale-road", stave: true}   # hron-rāde
+    beo.10.3: {lemma: "hȳran", morph: "VERB|VerbForm=Inf", gloss: "obey", stave: true}   # hȳran
+    beo.10.4: {lemma: "sculan", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "had-to"}   # scolde
+    beo.11: {metre: "long line, two half-lines · stave g"}
+    beo.11.1: {lemma: "gombe", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "tribute", stave: true}   # gomban
+    beo.11.2: {lemma: "gyldan", morph: "VERB|VerbForm=Inf", gloss: "pay", stave: true}   # gyldan
+    beo.11.3: {lemma: "se", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þæt
+    beo.11.4: {lemma: "wesan", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # wæs
+    beo.11.5: {lemma: "gōd", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "good", stave: true}   # gōd
+    beo.11.6: {lemma: "cyning", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "king"}   # cyning

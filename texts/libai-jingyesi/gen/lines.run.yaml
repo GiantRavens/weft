@@ -1,0 +1,20 @@
+run:
+  weft: 0.1.0
+  book: null
+  lines: 1-4
+counts:
+  lines: 4
+  tokens: 20
+failures:
+  reading-from-variant: 1
+samples:
+  reading-from-variant:
+  - 4 鄉->鄕
+failure_rate:
+  reading-from-variant: 0.05
+shift_left: []
+predicted_gaps:
+- Tang readings (Stimson) cover about 3,800 common characters; rarer ones fall back to glyph variants or go missing
+- 'the popular text (1763 anthology) differs from the oldest Song edition: 看月光 and 山月 for 明月光 and 明月'
+- 'metre is tonal: level (○) and oblique (●) syllables, generated from the Tang tones'
+- 'Classical Chinese has no inflection: the grammar row is part of speech only'

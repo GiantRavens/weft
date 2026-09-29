@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<link rel="icon" type="image/svg+xml" href="{{FAVICON}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=Noto+Serif+Hebrew:wght@400;600&family=Noto+Serif+TC:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/*{{CSS}}*/
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="titles">
+      <a class="home" href="index.html" title="Back to the Weft library" aria-label="Weft: back to the library">{{LOCKUP}}</a>
+      <h1 id="work-title"></h1>
+      <p class="byline" id="work-byline"></p>
+    </div>
+    <nav class="tools" aria-label="Reading controls">
+      <button type="button" id="open-key" class="tool">Sound key</button>
+      <button type="button" id="open-loom" class="tool tool-primary" aria-controls="loom" aria-expanded="false">Loom</button>
+    </nav>
+  </div>
+</header>
+
+<main id="text" class="text" aria-live="polite"></main>
+
+<nav class="worknav" id="worknav" aria-label="Library"></nav>
+
+<footer class="colophon" id="colophon"></footer>
+
+<aside id="loom" class="panel loom" aria-label="Reading settings" hidden>
+  <div class="panel-head">
+    <h2>Loom</h2>
+    <button type="button" class="close" data-close="loom" aria-label="Close settings">×</button>
+  </div>
+  <section>
+    <h3>Threads</h3>
+    <div id="layer-toggles" class="checks"></div>
+    <label class="check"><input type="checkbox" id="veil"> Veil gloss and sense, tap to reveal</label>
+    <label class="check" id="cant-row" hidden><input type="checkbox" id="cant"> Cantillation marks (accents)</label>
+  </section>
+  <section>
+    <h3>Pronunciation</h3>
+    <div id="scheme-choice" class="radios"></div>
+  </section>
+  <section>
+    <h3>Translations</h3>
+    <div id="tr-toggles" class="checks"></div>
+  </section>
+  <section>
+    <h3>Sizes and spacing</h3>
+    <div id="sliders" class="sliders"></div>
+    <label class="check"><input type="checkbox" id="wrap"> Wrap long lines instead of scrolling</label>
+  </section>
+  <button type="button" id="reset" class="tool">Reset to defaults</button>
+</aside>
+
+<aside id="word" class="panel word" aria-label="Word detail" hidden>
+  <div class="panel-head">
+    <h2 id="word-title">Word</h2>
+    <button type="button" class="close" data-close="word" aria-label="Close word detail">×</button>
+  </div>
+  <div id="word-body"></div>
+</aside>
+
+<dialog id="key" class="keydialog" aria-label="Pronunciation key">
+  <div class="panel-head">
+    <h2 id="key-title">Sound key</h2>
+    <button type="button" class="close" id="close-key" aria-label="Close key">×</button>
+  </div>
+  <div id="key-body"></div>
+</dialog>
+
+<script>
+/*{{DATA}}*/
+</script>
+<script>
+/*{{JS}}*/
+</script>
+</body>
+</html>

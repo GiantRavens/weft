@@ -1,97 +1,134 @@
-# Data schema (v0)
+# Data schema v0 (frozen 2026-09-29)
 
-All files YAML. IDs are CTS-style short forms; the manifest maps them to full URNs.
+All files are YAML. IDs are CTS-style short forms: `od.1.1` is Odyssey book 1 line 1,
+`od.1.1.5` its fifth word. The manifest's `urn` and `prefix` map short forms to full CTS URNs.
 
-## manifest.yaml
+A work lives in `texts/<work>/`:
+
+| Path                 | Written by        | Holds                                                    |
+|----------------------|-------------------|----------------------------------------------------------|
+| `manifest.yaml`      | human             | what, from where, hashes, licenses, schemes, predicted gaps |
+| `sources/`           | `acquire` (later) | raw fetched files, never edited                           |
+| `gen/bookNN.yaml`    | `weft draft`      | text, lemma, morph, sound. Regenerable. Never hand-edited |
+| `gen/bookNN.run.yaml`| `weft draft`      | run telemetry: counts, failure classes, shift-left flags  |
+| `curated/bookNN.yaml`| humans            | overlay changesets; win over gen on conflict              |
+| `sense/<tr>.yaml`    | align (hand in phase 0) | one file per translation, spans keyed to line IDs  |
+| `notes/bookNN.yaml`  | harvest + humans  | notes attached to token or line IDs                       |
+
+`private/<work>/` mirrors this layout for licensed material, with its own `manifest.yaml`
+listing private translations. Only `weft build --private` reads it.
+
+## Provenance encoding (decision)
+
+Provenance is data, not comments, so tools can read it.
+
+1. **File-level defaults.** `gen` files open with a `layers` map giving the default `src` for
+   each field: `lemma: {src: agdt-2.1}`.
+2. **Per-token exceptions.** A token carries `prov: {field: "src string"}` only where it differs
+   from the default, e.g. a sound layer that used the quantity table.
+3. **Human changes carry their changeset.** The build stamps every curated field with
+   `curated: {field: {by, date, status}}`, so the page can show who changed what.
+4. **Judgment carries confidence.** When a generated step makes a judgment call (the future gloss
+   step), it writes `conf: {field: 0.0-1.0}` beside the value. Below the review threshold the item
+   goes to the review queue.
+
+## gen/bookNN.yaml
 
 ```yaml
 work: homer-odyssey
-title: Odyssey
-author: Homer
-language: grc-homeric
-urn: urn:cts:greekLit:tlg0012.tlg002
-unit: line                       # line | sentence | verse
-edition:
-  name: Perseus perseus-grc2
-  url: ...
-  license: CC BY-SA 4.0
-treebank:
-  name: AGDT 2.x
-  url: ...
-  license: CC BY-SA 3.0
-schemes: [homeric, erasmian]     # pronunciation schemes to generate
-translations:
-  - id: butler1900
-    translator: Samuel Butler
-    year: 1900
-    form: prose
-    license: public-domain
-    source: private/...epub or url
-commentaries:
-  - id: merry-riddell
-    title: Homer's Odyssey, Books I-XII
-    year: 1886
-    license: public-domain
-predicted_gaps:
-  - "alpha/iota/upsilon length ambiguous outside metre; scanner resolves ~90%"
-```
-
-## gen/<unit>.yaml
-
-```yaml
-pipeline: {tokenize: 0.1, phonemize: 0.1, gloss: 0.1, align: 0.1}
+pipeline: {weft: 0.1.0, greek: '0.1'}
+layers:
+  text: {src: perseus-grc2}
+  lemma: {src: agdt-2.1}
+  morph: {src: agdt-2.1}
+  sound: {src: weft.greek 0.1}
 lines:
-  - id: od.1.1
-    text: "Ἄνδρα μοι ἔννεπε, Μοῦσα, πολύτροπον, ὃς μάλα πολλὰ"
-    metre: "—◡◡ —◡◡ —◡◡ —◡◡ —◡◡ ——"       # src: scanner
-    tokens:
-      - id: od.1.1.5
-        surface: πολύτροπον
-        lemma: πολύτροπος          # src: agdt:1234
-        morph: a-s---ma-           # src: agdt
-        ipa: {homeric: polýtropon, erasmian: polútropon}   # src: rules 0.1
-        respell: po-LOO-tro-pon    # src: derived
-        gloss: of-many-turns       # src: llm+lsj, conf: 0.82
-        notes: [n.od.1.1.polytropos]
-    sense:
-      - {tr: butler1900, span: "Tell me, O Muse, of that ingenious hero who travelled far and wide", covers: [od.1.1, od.1.2]}
+- id: od.1.1
+  cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.1
+  text: ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον, ὃς μάλα πολλὰ
+  tokens:
+  - id: od.1.1.5
+    surface: πολύτροπον
+    punct: ','                 # trailing punctuation, kept apart from the word
+    lemma: πολύτροπος
+    morph: a-s---ma-           # AGDT 9-position tag; the build adds readable morph_text
+    tb: 2185541/7              # treebank sentence/word
+    sound:
+      restored: {ipa: po.lý.tro.pon, respell: po-LÜ-tro-pon}
+      erasmian: {ipa: po.ˈly.tro.pon, respell: po-LÜ-tro-pon}
+    prov: {sound: weft.greek 0.1 + quantity table}   # only when it differs from layers
 ```
 
-Provenance is a per-field `src` with an optional `conf`. Exact encoding (inline comment vs
-sibling map) is a Phase 0 decision; pick one and keep it.
+## curated/bookNN.yaml
 
-## curated/<unit>.yaml
-
-Sparse overlay. Only what a human changed.
+A list of changesets. Each is one person's one act of judgment, so it maps onto one pull request.
 
 ```yaml
-- id: od.1.1.5
-  field: gloss
-  value: much-turned
-  by: skip
-  date: 2026-09-29
-  why: "keep the etymology visible; Butler's 'ingenious' belongs in sense"
+- by: A. Scholar
+  date: 2026-10-02
+  why: keep the etymology visible; the smooth reading belongs in sense
+  status: reviewed           # draft | reviewed
+  set:
+    od.1.1.5: {gloss: much-turned}
+    od.1.1: {metre: "—◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×"}
 ```
 
-## notes/<unit>.yaml
+Keys under `set` are line or token IDs. Later changesets win over earlier ones.
+**Quote any value YAML 1.1 would read as a boolean**: `on`, `off`, `yes`, `no`. `weft check`
+flags the class as `gloss-not-string`.
+
+## sense/<translation>.yaml
+
+```yaml
+translation: butler1900      # must match an id in the manifest's translations
+aligned_by: hand, phase 0
+spans:
+  - lines: [od.1.1, od.1.2]  # first and last line covered, inclusive
+    text: "Tell me, O Muse, of that ingenious hero ..."
+```
+
+Spans must not overlap and should cover every line. `weft check` reports `sense-overlap` and
+`sense-gap`. The page shows a span after the last line it covers.
+
+## notes/bookNN.yaml
 
 ```yaml
 - id: n.od.1.1.polytropos
-  attach: od.1.1.5
-  source: merry-riddell 1886, ad loc.
+  attach: od.1.1.5            # token or line ID
+  kind: editorial             # quoted | editorial
+  status: draft               # draft | reviewed (editorial notes start as draft)
+  leans_on: LSJ s.v. πολύτροπος
+  text: "..."
+- id: n.od.1.1.butler-construe
+  attach: od.1.1
+  kind: quoted                # verbatim; `source` is required
+  source: Samuel Butler, preface to The Odyssey (1900)
   text: "..."
 ```
 
 ## Conventions for the gloss layer
 
 - One source word, one cell. English that needs several words is hyphenated: `of-many-turns`.
-- Grammar rides in the English: `for-me` (dative), `of-Troy` (genitive), `he-sacked` (3 sg aorist).
+- Grammar rides in the English: `to-me` (dative), `of-Troy` (genitive), `O-Muse` (vocative),
+  `he-sacked` (3rd singular aorist).
 - Word order is preserved. The sense layer does the repairing.
 - Compounds get their literal etymology, not a smooth reading.
+- Split compounds (tmesis) gloss each piece where it stands and carry a note.
 
 ## Conventions for the sound layer
 
-- Hyphenated syllables; stressed or accented syllable in caps.
-- Vowel length shown. Greek pitch accent marked with ´ or ˆ on the caps syllable.
-- One fixed respelling key per scheme, shown once per page.
-- IPA is canonical; respelling is a projection. Switching scheme regenerates both.
+- IPA is canonical; respelling is a projection of it. Switching scheme changes both.
+- Hyphenated syllables. Medial consonant clusters split before the last consonant, except
+  stop plus liquid (muta cum liquida), which goes whole to the next syllable.
+- Length is shown: doubled letters (aa, ee, üü) or a dedicated long symbol (ê, aw, ay, oo).
+- CAPS marks the accented syllable. In `restored` that means raised pitch on acute and
+  circumflex only; a grave is not raised. In `erasmian` every written accent is stress.
+- Long alpha, iota and upsilon not marked in the orthography come from
+  `pipeline/weft/data/grc_quantities.yaml`, each entry citing LSJ and the metrical foot.
+- Each word is phonemized alone. Sandhi, elision across words and correption are not modeled.
+
+## Metre
+
+A line-level string: `—` long, `◡` short, `×` anceps, `|` between feet. Hand-scanned in phase 0,
+in the curated overlay. A scanner will generate it into gen later and the curated values become
+its regression test.

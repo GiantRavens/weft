@@ -1,0 +1,95 @@
+# Human overlay for Grettis saga chapter 14. Lemma and morphology come from the treebank;
+# this file adds glosses and corrects the automatic UD conversion where it is wrong.
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-29
+  why: pilot sentences 1-9, hand gloss
+  status: draft
+  set:
+    gre.14.1.1: {gloss: "Asmund"}   # Ásmundur
+    gre.14.1.2: {gloss: "greyhair-long"}   # hærulangur
+    gre.14.1.3: {gloss: "set-up"}   # setti
+    gre.14.1.4: {gloss: "household"}   # bú
+    gre.14.1.5: {gloss: "at"}   # að
+    gre.14.1.6: {gloss: "Bjarg"}   # Bjargi
+    gre.14.1.7: {gloss: "great"}   # mikið
+    gre.14.1.8: {gloss: "and"}   # og
+    gre.14.1.9: {gloss: "stately"}   # reisulegt
+    gre.14.1.10: {gloss: "and"}   # og
+    gre.14.1.11: {gloss: "had"}   # hafði
+    gre.14.1.12: {gloss: "many-peopled"}   # mannmargt
+    gre.14.1.13: {gloss: "with"}   # með
+    gre.14.1.14: {gloss: "himself"}   # sér
+    gre.14.2.1: {gloss: "he"}   # Hann
+    gre.14.2.2: {gloss: "was"}   # var
+    gre.14.2.3: {gloss: "well-liked"}   # vinsæll
+    gre.14.2.4: {gloss: "man"}   # maður
+    gre.14.3.1: {gloss: "these"}   # Þessi
+    gre.14.3.2: {gloss: "were"}   # voru
+    gre.14.3.3: {gloss: "children"}   # börn
+    gre.14.3.4: {gloss: "of-them"}   # þeirra
+    gre.14.3.5: {gloss: "Asdis's"}   # Ásdísar
+    gre.14.4.1: {gloss: "Atli"}   # Atli
+    gre.14.4.2: {gloss: "was"}   # var
+    gre.14.4.3: {gloss: "eldest"}   # elstur
+    gre.14.5.1: {gloss: "he"}   # Hann
+    gre.14.5.2: {gloss: "was"}   # var
+    gre.14.5.3: {gloss: "straight"}   # gegn
+    gre.14.5.4: {gloss: "man"}   # maður
+    gre.14.5.5: {gloss: "and"}   # og
+    gre.14.5.6: {gloss: "gentle"}   # gæfur
+    gre.14.5.7: {gloss: "easy"}   # hægur
+    gre.14.5.8: {gloss: "and"}   # og
+    gre.14.5.9: {gloss: "meek"}   # hógvær
+    gre.14.6.1: {gloss: "with"}   # Við
+    gre.14.6.2: {gloss: "him"}   # hann
+    gre.14.6.3: {gloss: "it-pleased"}   # líkaði
+    gre.14.6.4: {gloss: "every"}   # hverjum
+    gre.14.6.5: {gloss: "man"}   # manni
+    gre.14.6.6: {gloss: "well"}   # vel
+    gre.14.7.1: {gloss: "another"}   # Annan
+    gre.14.7.2: {gloss: "son"}   # son
+    gre.14.7.3: {gloss: "had"}   # áttu
+    gre.14.7.4: {gloss: "they"}   # þau
+    gre.14.7.5: {gloss: "who"}   # er
+    gre.14.7.6: {gloss: "Grettir"}   # Grettir
+    gre.14.7.7: {gloss: "was"}   # var
+    gre.14.7.8: {gloss: "called"}   # kallaður
+    gre.14.8.1: {gloss: "he"}   # Hann
+    gre.14.8.2: {gloss: "was"}   # var
+    gre.14.8.3: {gloss: "very"}   # mjög
+    gre.14.8.4: {gloss: "unruly"}   # ódæll
+    gre.14.8.5: {gloss: "in"}   # í
+    gre.14.8.6: {gloss: "upbringing"}   # uppvexti
+    gre.14.8.7: {gloss: "his"}   # sínum
+    gre.14.8.8: {gloss: "few-worded"}   # fátalaður
+    gre.14.8.9: {gloss: "and"}   # og
+    gre.14.8.10: {gloss: "unfriendly"}   # óþýður
+    gre.14.8.11: {gloss: "aggressive"}   # bellinn
+    gre.14.8.12: {gloss: "both"}   # bæði
+    gre.14.8.13: {gloss: "in"}   # í
+    gre.14.8.14: {gloss: "words"}   # orðum
+    gre.14.8.15: {gloss: "and"}   # og
+    gre.14.8.16: {gloss: "deeds"}   # tiltektum
+    gre.14.9.1: {gloss: "not"}   # Ekki
+    gre.14.9.2: {gloss: "had"}   # hafði
+    gre.14.9.3: {gloss: "he"}   # hann
+    gre.14.9.4: {gloss: "love"}   # ástríki
+    gre.14.9.5: {gloss: "much"}   # mikið
+    gre.14.9.6: {gloss: "from"}   # af
+    gre.14.9.7: {gloss: "Asmund"}   # Ásmundi
+    gre.14.9.8: {gloss: "father"}   # föður
+    gre.14.9.9: {gloss: "his"}   # sínum
+    gre.14.9.10: {gloss: "but"}   # en
+    gre.14.9.11: {gloss: "mother"}   # móðir
+    gre.14.9.12: {gloss: "his"}   # hans
+    gre.14.9.13: {gloss: "loved"}   # unni
+    gre.14.9.14: {gloss: "him"}   # honum
+    gre.14.9.15: {gloss: "much"}   # mikið
+
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-29
+  why: errors from the automatic Penn-to-UD conversion
+  status: draft
+  set:
+    gre.14.7.4: {morph: "PRON|Case=Nom|Gender=Neut|Number=Plur|PronType=Prs"}   # þau is the subject: nominative, not accusative
+    gre.14.8.13: {morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing"}   # bellinn is an adjective, not a noun

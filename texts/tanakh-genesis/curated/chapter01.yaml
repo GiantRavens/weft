@@ -1,0 +1,59 @@
+# Human overlay for Genesis 1:1-5. Lemma and morphology come from OSHB; this file adds glosses.
+# [obj] marks אֵת, the Hebrew sign of a definite direct object, which English does not translate.
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-29
+  why: pilot verses 1-5, hand gloss
+  status: draft
+  set:
+    gen.1.1.1: {gloss: "in-beginning"}   # רֵאשִׁית
+    gen.1.1.2: {gloss: "created"}   # בָּרָא
+    gen.1.1.3: {gloss: "God"}   # אֱלֹהִים
+    gen.1.1.4: {gloss: "[obj]"}   # אֵת
+    gen.1.1.5: {gloss: "the-heavens"}   # שָׁמַיִם
+    gen.1.1.6: {gloss: "and-[obj]"}   # אֵת
+    gen.1.1.7: {gloss: "the-earth"}   # אֶרֶץ
+    gen.1.2.1: {gloss: "and-the-earth"}   # אֶרֶץ
+    gen.1.2.2: {gloss: "was"}   # הָיָה
+    gen.1.2.3: {gloss: "formless"}   # תֹּהוּ
+    gen.1.2.4: {gloss: "and-void"}   # בֹּהוּ
+    gen.1.2.5: {gloss: "and-darkness"}   # חֹשֶׁךְ
+    gen.1.2.6: {gloss: "upon"}   # עַל
+    gen.1.2.7: {gloss: "face-of"}   # פָּנִים
+    gen.1.2.8: {gloss: "deep"}   # תְּהוֹם
+    gen.1.2.9: {gloss: "and-wind-of"}   # רוּחַ
+    gen.1.2.10: {gloss: "God"}   # אֱלֹהִים
+    gen.1.2.11: {gloss: "hovering"}   # רָחַף
+    gen.1.2.12: {gloss: "upon"}   # עַל
+    gen.1.2.13: {gloss: "face-of"}   # פָּנִים
+    gen.1.2.14: {gloss: "the-waters"}   # מַיִם
+    gen.1.3.1: {gloss: "and-said"}   # אָמַר
+    gen.1.3.2: {gloss: "God"}   # אֱלֹהִים
+    gen.1.3.3: {gloss: "let-there-be"}   # הָיָה
+    gen.1.3.4: {gloss: "light"}   # אוֹר
+    gen.1.3.5: {gloss: "and-there-was"}   # הָיָה
+    gen.1.3.6: {gloss: "light"}   # אוֹר
+    gen.1.4.1: {gloss: "and-saw"}   # רָאָה
+    gen.1.4.2: {gloss: "God"}   # אֱלֹהִים
+    gen.1.4.3: {gloss: "[obj]"}   # אֵת
+    gen.1.4.4: {gloss: "the-light"}   # אוֹר
+    gen.1.4.5: {gloss: "that"}   # כִּי
+    gen.1.4.6: {gloss: "good"}   # טוֹב
+    gen.1.4.7: {gloss: "and-divided"}   # בָּדַל
+    gen.1.4.8: {gloss: "God"}   # אֱלֹהִים
+    gen.1.4.9: {gloss: "between"}   # בֵּין
+    gen.1.4.10: {gloss: "the-light"}   # אוֹר
+    gen.1.4.11: {gloss: "and-between"}   # בֵּין
+    gen.1.4.12: {gloss: "the-darkness"}   # חֹשֶׁךְ
+    gen.1.5.1: {gloss: "and-called"}   # קָרָא
+    gen.1.5.2: {gloss: "God"}   # אֱלֹהִים
+    gen.1.5.3: {gloss: "to-the-light"}   # אוֹר
+    gen.1.5.4: {gloss: "day"}   # יוֹם
+    gen.1.5.5: {gloss: "and-to-the-darkness"}   # חֹשֶׁךְ
+    gen.1.5.6: {gloss: "he-called"}   # קָרָא
+    gen.1.5.7: {gloss: "night"}   # לַיִל
+    gen.1.5.8: {gloss: "and-there-was"}   # הָיָה
+    gen.1.5.9: {gloss: "evening"}   # עֶרֶב
+    gen.1.5.10: {gloss: "and-there-was"}   # הָיָה
+    gen.1.5.11: {gloss: "morning"}   # בֹּקֶר
+    gen.1.5.12: {gloss: "day"}   # יוֹם
+    gen.1.5.13: {gloss: "one"}   # אֶחָד

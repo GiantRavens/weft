@@ -1,0 +1,4 @@
+# Old English unstressed prefixes the rules cannot see without the part of speech.
+# Key: normalized form. Value: the unstressed prefix, or "" to block a false ge- (geong, "young").
+oftēah: of         # verb oftēon, "take away": of-TĒAH
+geong: ""

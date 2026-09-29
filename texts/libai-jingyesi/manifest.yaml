@@ -1,0 +1,61 @@
+work: libai-jingyesi
+title: Quiet Night Thought (靜夜思)
+author: Li Bai (701–762), Tang dynasty
+language: lzh
+prefix: lb                       # lb.<line>[.<char>]
+urn: urn:weft:lzh:tangshi300.jingyesi   # no CTS URN; Weft-local identifier
+unit: line
+written: {year: 740, label: "written in the early-to-mid 700s, Tang dynasty"}
+status: phase-0
+pilot: {first: 1, last: 4}
+edition:
+  id: kyoto-tangshi300
+  name: Three Hundred Tang Poems (唐詩三百首, 1763) as in the Kyoto Classical Chinese treebank (Kanripo KR4h0169, poem 233)
+  format: conllu
+  sent_prefix: "KR4h0169_233_par"   # the poem body; _author and _title are separate sentences
+  file: sources/kyoto-train.conllu
+  url: https://raw.githubusercontent.com/UniversalDependencies/UD_Classical_Chinese-Kyoto/59ee9e05a0ad55514e03b443411e69f45af64b7e/lzh_kyoto-ud-train.conllu
+  sha256: ce1202b74d176440a8a94d959e7ccd22496de49c80ca70bcda283bbc49191b68
+  license: public domain (UD_Classical_Chinese-Kyoto)
+  license_url: https://github.com/UniversalDependencies/UD_Classical_Chinese-Kyoto
+treebank:
+  id: ud-kyoto
+  name: UD Classical Chinese Kyoto (Yasuoka), with English glosses in MISC
+  format: conllu-edition
+  license: public domain
+readings:
+  table: sources/Unihan_Readings.txt
+  variants: sources/Unihan_Variants.txt
+sources_extra:
+  - id: unihan-readings
+    name: Unicode Han Database 18.0, readings (kTang after Stimson 1976, kMandarin, kCantonese)
+    file: sources/Unihan_Readings.txt
+    sha256: 9d39995b5de714e8ce93716ed5d15eaa0792d68e407cdf8a0add2893b8f4150b   # of the extracted member
+    url: https://www.unicode.org/Public/18.0.0/ucd/Unihan.zip
+    extract: "Unihan_Readings.txt"
+    license: Unicode License v3
+    license_url: https://www.unicode.org/license.txt
+  - id: unihan-variants
+    name: Unicode Han Database 18.0, variants
+    file: sources/Unihan_Variants.txt
+    sha256: 4ccfd34b08ac7b9c14353f6668ba43e3796d85c4cdce7952b635be16015aafa2   # of the extracted member
+    url: https://www.unicode.org/Public/18.0.0/ucd/Unihan.zip
+    extract: "Unihan_Variants.txt"
+    license: Unicode License v3
+    license_url: https://www.unicode.org/license.txt
+schemes: [tang, mandarin, cantonese]   # default = Tang, as Li Bai's generation read it
+translations:
+  - id: cranmer-byng1909
+    translator: L. Cranmer-Byng
+    year: 1909
+    form: free verse
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/cranmer-byng1909.txt
+    url: https://www.gutenberg.org/cache/epub/390/pg390.txt
+    sha256: afa6f9f0b62006fc41d6aa50fea47ea388fa01af72f0105d1d79f591753b4b44
+predicted_gaps:
+  - "Tang readings (Stimson) cover about 3,800 common characters; rarer ones fall back to glyph variants or go missing"
+  - "the popular text (1763 anthology) differs from the oldest Song edition: 看月光 and 山月 for 明月光 and 明月"
+  - "metre is tonal: level (○) and oblique (●) syllables, generated from the Tang tones"
+  - "Classical Chinese has no inflection: the grammar row is part of speech only"

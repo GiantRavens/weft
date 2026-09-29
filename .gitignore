@@ -1,8 +1,13 @@
-private/
+# Licensed or third-party material stays on your machine. Get it with `weft acquire`.
+private/*
+!private/README.md
+texts/*/sources/*
+!texts/*/sources/README.md
+
+# Rebuildable
+site/build/
 __pycache__/
 .venv/
-site/build/
 *.wav
 *.mp3
 .DS_Store
-!private/README.md

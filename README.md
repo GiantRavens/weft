@@ -37,7 +37,7 @@ Later layers: metre, notes, audio. Layers are named, never numbered.
 ## Layout
 
     texts/<work>/manifest.yaml   what, from where, which schemes, predicted gaps
-    texts/<work>/sources/        raw fetched files, hashed, never edited
+    texts/<work>/sources/        raw fetched files, hashed, never edited, never in git (weft acquire)
     texts/<work>/gen/            machine output, fully regenerable
     texts/<work>/curated/        human overlay, sparse, wins on conflict
     texts/<work>/notes/          harvested and authored commentary
@@ -46,10 +46,39 @@ Later layers: metre, notes, audio. Layers are named, never numbered.
     site/                        renderer
     docs/                        schema, lifecycle, decisions
 
+## Quickstart
+
+    uv venv && uv pip install -e .
+    .venv/bin/weft acquire homer-odyssey    # lists each source and its license; nothing downloads yet
+    .venv/bin/weft acquire homer-odyssey --accept-licenses   # fetch, verify sha256 against the manifest
+    .venv/bin/weft draft homer-odyssey      # text, lemma, morph, sound -> gen/, telemetry -> gen/*.run.yaml
+    .venv/bin/weft check homer-odyssey      # selftest: every token has every layer, every reference resolves
+    .venv/bin/weft build homer-odyssey      # -> site/build/homer-odyssey.html, opens from file://
+    .venv/bin/weft build homer-odyssey --private   # adds licensed translations from private/
+    .venv/bin/weft say πολύτροπον ψυχὴν      # phonemize words in every scheme
+
 ## Status
 
-Founded 2026-09-29. Phase 0: hand-built Odyssey proem and a first renderer. See `docs/lifecycle.md`
-and `pin ls`.
+Eight works built across six languages, oldest first in the library:
+
+| Work | Passage | Schemes | Translations |
+|---|---|---|---|
+| Homer, Odyssey | 1.1-10 | restored, Erasmian | Butler 1900, Butcher and Lang 1879 |
+| Genesis (Bereshit) | 1:1-5 | Tiberian, modern Israeli | JPS 1917, Geneva 1599, King James 1611 |
+| Gospel of John | 1:1-5 | Koine, Erasmian | Tyndale 1534, Geneva 1599, King James 1611 |
+| Ovid, Metamorphoses | 1.1-9 | classical, ecclesiastical | Golding 1567, More 1922 |
+| Hávamál (Poetic Edda) | stanzas 1, 76, 77 | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
+| Li Bai, Quiet Night Thought | 4 lines | Tang, Mandarin, Cantonese | Cranmer-Byng 1909 |
+| Beowulf | 1-11 | late West Saxon | Gummere 1910, Morris and Wyatt 1895 |
+| Grettis saga | chapter 14, sentences 1-9 | modern Icelandic, Old Norse | Morris and Magnússon 1869, Hight 1914 |
+
+Homer, Ovid, John and Grettis saga take lemma and grammar from treebanks (AGDT, LDT, MorphGNT, IcePaHC); Genesis from the Open Scriptures Hebrew Bible; Li Bai from the Kyoto Classical Chinese treebank, with Tang readings from Unicode's Unihan database. No open
+treebank covers Eddic or Old English poetry, so Hávamál and Beowulf are hand-annotated against
+Zoëga and Clark Hall and marked draft (see CLAUDE.md rule 3).
+
+`weft build` also writes `site/build/index.html`, a library page listing every built work.
+Glosses, scansion, treebank corrections and editorial notes are drafts awaiting scholarly
+review. See `docs/lifecycle.md` and `pin ls`.
 
 ## License
 

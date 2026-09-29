@@ -1,0 +1,63 @@
+work: nt-john
+title: The Gospel of John
+author: John, in Koine Greek (about 90–110)
+language: grc
+prefix: jn                       # jn.<chapter>.<verse>[.<token>]
+urn: urn:cts:greekLit:tlg0031.tlg004
+unit: verse
+written: {year: 95, label: "written about AD 90–110"}   # composition date; the library sorts by year
+status: phase-0
+pilot: {chapter: 1, first: 1, last: 5}
+edition:
+  id: sblgnt
+  name: SBL Greek New Testament (2010), via MorphGNT
+  format: morphgnt               # text and morphology in one file, one word per row
+  file: sources/morphgnt-john.txt
+  url: https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/64-Jn-morphgnt.txt
+  sha256: 1b1de3e48e3f3d212ba19c76e5b2f1749833f888f5b52513099ec13cc01b619c
+  license: SBLGNT text CC BY 4.0; MorphGNT parsing and lemmas CC BY-SA 3.0
+  license_url: https://sblgnt.com/license/
+treebank:
+  id: morphgnt-6.12
+  name: MorphGNT SBLGNT edition (Tauber), lemma and parsing
+  format: morphgnt-edition       # lemma and morphology come from the edition file itself
+  license: CC BY-SA 3.0
+schemes: [koine, erasmian]       # default = first-century Koine, as first written; Erasmian = the seminary tradition
+translations:
+  - id: tyndale1534
+    translator: William Tyndale
+    year: 1534
+    form: prose
+    format: usfm
+    license: public-domain
+    license_url: https://ebible.org/find/details.php?id=engtnt
+    file: sources/tyndale1534-john.usfm
+    sha256: ff486531846bb16340bab129c7004aa92ba133d2c7fdb2b0f1519ce0b52128c5   # of the extracted member
+    url: https://ebible.org/Scriptures/engtnt_usfm.zip
+    extract: "JHN"
+  - id: geneva1599
+    translator: Geneva Bible
+    year: 1599
+    form: prose
+    format: usfm
+    license: public-domain
+    license_url: https://ebible.org/find/details.php?id=enggnv
+    file: sources/geneva1599-john.usfm
+    sha256: 56d667f27bc37a7149a009ae98d6a26f5e900c8ac682a624fc67f38af1c2bc49   # of the extracted member
+    url: https://ebible.org/Scriptures/enggnv_usfm.zip
+    extract: "JHN"
+  - id: kjv1769
+    translator: King James Version
+    year: 1611
+    form: prose, 1769 standard text
+    format: usfm
+    license: public-domain
+    license_url: https://ebible.org/find/details.php?id=eng-kjv
+    file: sources/kjv-john.usfm
+    sha256: 2af0ac3b8cfab9740ab364ba0923425a92a959c89b74fbbdcea404b33fe27bf8   # of the extracted member
+    url: https://ebible.org/Scriptures/eng-kjv_usfm.zip
+    extract: "JHN"
+predicted_gaps:
+  - "Koine reconstruction follows Buth; scholars differ on how far η and υ had moved by the first century"
+  - "translations align exactly by verse number; no hand alignment needed"
+  - "KJV here is the 1769 standard text most readers know, not the 1611 printing"

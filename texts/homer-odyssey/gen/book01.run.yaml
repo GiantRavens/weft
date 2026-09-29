@@ -1,0 +1,24 @@
+run:
+  weft: 0.1.0
+  book: 1
+  lines: 1-10
+counts:
+  lines: 10
+  tokens: 74
+failures:
+  morph-empty-declinable: 4
+samples:
+  morph-empty-declinable:
+  - 1.4 ὅ (l--------)
+  - 1.9 ὁ (l--------)
+  - 1.9 τοῖσιν (l--------)
+  - 1.10 τῶν (l--------)
+failure_rate:
+  morph-empty-declinable: 0.054
+shift_left: []
+predicted_gaps:
+- a/i/u vowel length not marked; quantity table covers the pilot, scanner to come
+- treebank is on perseus-grc1, edition is grc2; expect form differences and elision-mark differences
+- Butler's Gutenberg preface quotes Butcher-Lang; anchor alignment on the chapter heading
+- both translations are prose; spans cover 1-4 lines each
+- treebank article tokens (postag l--------) carry no morphology

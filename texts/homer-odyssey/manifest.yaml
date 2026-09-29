@@ -1,27 +1,52 @@
 work: homer-odyssey
 title: Odyssey
 author: Homer
-language: grc-homeric
+language: grc
+prefix: od                       # short ID prefix: od.<book>.<line>[.<token>]
 urn: urn:cts:greekLit:tlg0012.tlg002
 unit: line
+written: {year: -700, label: "composed about 725–675 BC"}   # composition date; the library sorts by year
 status: phase-0
-pilot: od.1.1-10
+pilot: {book: 1, first: 1, last: 10}
 edition:
-  name: Perseus perseus-grc2
-  url: https://github.com/PerseusDL/canonical-greekLit/tree/master/data/tlg0012/tlg002
+  id: perseus-grc2
+  name: Perseus perseus-grc2 (Murray)
+  file: sources/perseus-grc2.xml
+  url: https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0012/tlg002/tlg0012.tlg002.perseus-grc2.xml
+  sha256: 7d7ffafb6c51f8c230c0af3d6c0a6e5c7613cc0a016cc5681fb6e34972b86088
   license: CC BY-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-sa/4.0/
+  terms: https://github.com/PerseusDL/canonical-greekLit#license
 treebank:
-  name: Ancient Greek Dependency Treebank
-  url: https://github.com/PerseusDL/treebank_data
+  id: agdt-2.1
+  name: Ancient Greek Dependency Treebank 2.1 (on perseus-grc1)
+  file: sources/agdt-odyssey.tb.xml
+  url: https://raw.githubusercontent.com/PerseusDL/treebank_data/master/v2.1/Greek/texts/tlg0012.tlg002.perseus-grc1.tb.xml
+  sha256: e936cc7d0bb3fe61cd0ca83b047e745b495668d12fefe7d4e434d3818febd31d
   license: CC BY-SA 3.0
-schemes: [homeric, erasmian]
+  license_url: https://creativecommons.org/licenses/by-sa/3.0/
+  terms: https://github.com/PerseusDL/treebank_data#license
+schemes: [restored, erasmian]    # see pipeline/weft/greek.py for definitions
+quantities: pipeline/weft/data/grc_quantities.yaml
 translations:
   - id: butler1900
     translator: Samuel Butler
     year: 1900
     form: prose
     license: public-domain
-    source: https://www.gutenberg.org/ebooks/1727
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/butler1900.txt
+    url: https://www.gutenberg.org/cache/epub/1727/pg1727.txt
+    sha256: ffbdb29c3dda284b65c11243db1a98167826a70c81bca2ed4b6232f86c905fb9
+  - id: butcher-lang1879
+    translator: S. H. Butcher and Andrew Lang
+    year: 1879
+    form: prose
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/butcher-lang1879.txt
+    url: https://www.gutenberg.org/cache/epub/1728/pg1728.txt
+    sha256: 5a2a08a8ff28cf500e8196c9e95a83af146792b4948bdc635c3db46bef922b41
 commentaries:
   - id: merry-riddell
     title: "Homer's Odyssey, Books I-XII (Merry, Riddell, Monro)"
@@ -29,6 +54,8 @@ commentaries:
     license: public-domain
     source: Perseus
 predicted_gaps:
-  - "a/i/u vowel length not marked; hexameter scanner should resolve most, review the rest"
-  - "treebank tokenization splits elision and crasis; mapping step must reconcile"
-  - "Butler is prose; spans cover 1-3 lines each, alignment needs review"
+  - "a/i/u vowel length not marked; quantity table covers the pilot, scanner to come"
+  - "treebank is on perseus-grc1, edition is grc2; expect form differences and elision-mark differences"
+  - "Butler's Gutenberg preface quotes Butcher-Lang; anchor alignment on the chapter heading"
+  - "both translations are prose; spans cover 1-4 lines each"
+  - "treebank article tokens (postag l--------) carry no morphology"

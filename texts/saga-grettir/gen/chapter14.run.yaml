@@ -1,0 +1,16 @@
+run:
+  weft: 0.1.0
+  book: 14
+  lines: 1-9
+counts:
+  lines: 9
+  tokens: 80
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'IcePaHC spells the saga in modern Icelandic (kallaður, not kallaðr): the old-norse reading is approximate'
+- 'UD layer is an automatic conversion of hand-made Penn parses: expect some wrong case and part-of-speech tags'
+- 'unit is the sentence: a saga is prose, so lines are sentences and spans are clauses'
+- the treebank file is 61 MB for a nine-sentence pilot; acceptable, but a slicing acquire step would help

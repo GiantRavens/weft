@@ -6,12 +6,13 @@ Read `README.md` first, then `docs/lifecycle.md` and `docs/schema.md`. Tasks liv
 
 1. Never edit anything under `texts/*/sources/` or `texts/*/gen/` by hand. Sources are fetched; gen is produced by `pipeline/`. Human corrections go in `texts/*/curated/`.
 2. Every generated field carries `src` (what produced it, with version) and, where a judgment was made, `conf` (0 to 1). Low confidence goes to the review queue, not silently into the page.
-3. Lemma and morphology come from the treebank. An LLM may pick a sense from the lexicon entry for that lemma; it may not invent a lemma or a parse.
-4. Nothing copyrighted enters `texts/`. It goes in `private/` with the same layout, and the pipeline reads both.
+3. Lemma and morphology come from the treebank. An LLM may pick a sense from the lexicon entry for that lemma; it may not invent a lemma or a parse. **Exception, declared in the manifest (`treebank: null`):** when no treebank exists for a text (Eddic poetry, Chaucer), lemma and morphology are hand-annotated in `curated/` against a named dictionary, marked `status: draft`, and the page says so. The draft status is only lifted by a human reviewer.
+4. Third-party sources are never committed: `texts/*/sources/` is gitignored and each user fetches their own copy with `weft acquire`, which shows the licenses first and verifies the manifest's sha256. Nothing copyrighted enters `texts/`. It goes in `private/` with the same layout, and the pipeline reads both.
 5. Line IDs are CTS URNs or a CTS-style short form (`od.1.1`). Every layer, note and audio timing hangs off them.
 6. Layers are named (source, sound, gloss, sense, metre, notes, audio), never numbered.
 7. The site is plain HTML, CSS, JS. No build framework. It must work from `file://` and print cleanly.
-8. Manifest before pipeline. A work is not processed until `manifest.yaml` names the edition, the treebank, the schemes, the translations with licenses, and the predicted gaps.
+8. **The first pronunciation scheme is the default, and it is always the best reconstruction of how the text most likely sounded when first written** (Skip, 2026-09-29). Later traditions (Erasmian, ecclesiastical, modern Icelandic) are offered second. Where the evidence is thin, the page says the reconstruction is approximate rather than dropping it.
+9. Manifest before pipeline. A work is not processed until `manifest.yaml` names the edition, the treebank, the schemes, the translations with licenses, and the predicted gaps.
 
 ## Working style
 

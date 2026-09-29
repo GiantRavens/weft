@@ -1,0 +1,16 @@
+run:
+  weft: 0.1.0
+  lines: 1-11
+counts:
+  lines: 11
+  tokens: 54
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no open treebank for Old English poetry: lemma and morphology hand-annotated (Clark Hall), draft'
+- edition marks most vowel length (Heyne style); a few monosyllables unmarked, corrected by table
+- 'compound stress: the editor''s hyphens mark compounds; first element stressed'
+- palatal c and g inferred from spelling; editions that dot them (ċ, ġ) would remove the guesswork
+- Gummere and Morris reorder words across lines 1-3; spans group lines where they do

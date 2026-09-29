@@ -1,0 +1,96 @@
+# Human overlay for Metamorphoses book 1. Wins over gen/ on conflict.
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-29
+  why: pilot passage, hand gloss and hand scansion
+  status: draft
+  set:
+    # metre: — long, ◡ short, × anceps, | foot boundary. Elisions: 1.3 primaqu(e) ab, 1.5 mar(e) et, 1.8 congestaqu(e) eodem
+    met.1.1: {metre: "—◡◡|—◡◡|——|——|—◡◡|—×"}
+    met.1.2: {metre: "—◡◡|——|——|——|—◡◡|—×"}
+    met.1.3: {metre: "——|—◡◡|——|—◡◡|—◡◡|—×"}
+    met.1.4: {metre: "—◡◡|—◡◡|——|—◡◡|—◡◡|—×"}
+    met.1.5: {metre: "—◡◡|——|——|—◡◡|—◡◡|—×"}
+    met.1.6: {metre: "—◡◡|——|——|——|—◡◡|—×"}
+    met.1.7: {metre: "——|—◡◡|—◡◡|——|—◡◡|—×"}
+    met.1.8: {metre: "——|—◡◡|—◡◡|——|—◡◡|—×"}
+    met.1.9: {metre: "—◡◡|——|——|—◡◡|—◡◡|—×"}
+
+    met.1.1.1: {gloss: into}
+    met.1.1.2: {gloss: new}
+    met.1.1.3: {gloss: carries}
+    met.1.1.4: {gloss: mind}
+    met.1.1.5: {gloss: changed}
+    met.1.1.6: {gloss: to-tell}
+    met.1.1.7: {gloss: forms}
+
+    met.1.2.1: {gloss: bodies}
+    met.1.2.2: {gloss: O-gods}
+    met.1.2.3: {gloss: to-beginnings}
+    met.1.2.4: {gloss: for}
+    met.1.2.5: {gloss: you}
+    met.1.2.6: {gloss: changed}
+    met.1.2.7: {gloss: also}
+    met.1.2.8: {gloss: those}
+
+    met.1.3.1: {gloss: breathe-upon}
+    met.1.3.2: {gloss: my}
+    met.1.3.3: {gloss: and-first}
+    met.1.3.4: {gloss: from}
+    met.1.3.5: {gloss: origin}
+    met.1.3.6: {gloss: of-world}
+
+    met.1.4.1: {gloss: down-to}
+    met.1.4.2: {gloss: my}
+    met.1.4.3: {gloss: unbroken}
+    met.1.4.4: {gloss: spin-out}
+    met.1.4.5: {gloss: times}
+    met.1.4.6: {gloss: song}
+
+    met.1.5.1: {gloss: before}
+    met.1.5.2: {gloss: sea}
+    met.1.5.3: {gloss: and}
+    met.1.5.4: {gloss: lands}
+    met.1.5.5: {gloss: and}
+    met.1.5.6: {gloss: which}
+    met.1.5.7: {gloss: covers}
+    met.1.5.8: {gloss: all-things}
+    met.1.5.9: {gloss: sky}
+
+    met.1.6.1: {gloss: one}
+    met.1.6.2: {gloss: was}
+    met.1.6.3: {gloss: whole}
+    met.1.6.4: {gloss: of-nature}
+    met.1.6.5: {gloss: face}
+    met.1.6.6: {gloss: in}
+    met.1.6.7: {gloss: orb}
+
+    met.1.7.1: {gloss: which}
+    met.1.7.2: {gloss: they-called}
+    met.1.7.3: {gloss: Chaos}
+    met.1.7.4: {gloss: rough}
+    met.1.7.5: {gloss: and-unordered}
+    met.1.7.6: {gloss: mass}
+
+    met.1.8.1: {gloss: nor}
+    met.1.8.2: {gloss: anything}
+    met.1.8.3: {gloss: except}
+    met.1.8.4: {gloss: weight}
+    met.1.8.5: {gloss: inert}
+    met.1.8.6: {gloss: and-heaped}
+    met.1.8.7: {gloss: in-one-place}
+
+    met.1.9.1: {gloss: not}
+    met.1.9.2: {gloss: well}
+    met.1.9.3: {gloss: of-joined}
+    met.1.9.4: {gloss: warring}
+    met.1.9.5: {gloss: seeds}
+    met.1.9.6: {gloss: of-things}
+
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-29
+  why: LDT 2.1 annotation errors in the pilot passage
+  status: draft
+  set:
+    met.1.3.6: {lemma: mundus}                      # LDT gives the lemma "mundum"
+    met.1.7.3: {morph: n-s---na-}                   # LDT tags chaos as an adjective; it is a noun
+    met.1.9.4: {lemma: discors, morph: a-p---na-}   # LDT invents "discordium" (noun); it is neut. pl. of the adjective discors

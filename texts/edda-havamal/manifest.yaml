@@ -1,0 +1,46 @@
+work: edda-havamal
+title: Hávamál
+author: Poetic Edda
+language: non
+prefix: hav                      # hav.<stanza>.<line>[.<token>]
+urn: urn:weft:non:edda.havamal   # no CTS URN exists for the Edda; Weft-local identifier
+unit: stanza-line
+written: {year: 900, label: "composed in the Viking Age, 800s–900s; written down about 1270"}   # composition date; the library sorts by year
+status: phase-0
+pilot: {stanzas: [1, 76, 77]}
+edition:
+  id: jonsson-heimskringla
+  name: Guðni Jónsson's normalized text, via heimskringla.no and the CLTK Old Norse corpus
+  format: stanza-text
+  file: sources/havamal.txt
+  url: https://raw.githubusercontent.com/cltk/old_norse_texts_heimskringla/master/S%C3%A6mundar-Edda/H%C3%A1vam%C3%A1l/txt_files/complete.txt
+  sha256: 9c708035def8bdbf8c8480539cbf7574a3a5c721d437d95c7d3d9be91d2e228d
+  license: poem public domain; normalized text credited to Guðni Jónsson and heimskringla.no
+  license_url: http://heimskringla.no/wiki/Heimskringla.no:Copyright
+treebank: null                   # none exists for Eddic poetry; lemma and morph are hand-annotated in curated/
+schemes: [old-norse, modern-icelandic]   # see pipeline/weft/norse.py
+translations:
+  - id: bellows1923
+    translator: Henry Adams Bellows
+    year: 1923
+    form: alliterative verse
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/bellows1923.txt
+    url: https://www.gutenberg.org/cache/epub/73533/pg73533.txt
+    sha256: be983f2e4f2f97a57bb72095354eb9574bb656d185f16ce460efc7da2574438b
+  - id: thorpe1866
+    translator: Benjamin Thorpe
+    year: 1866
+    form: prose
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/thorpe1866.txt
+    url: https://www.gutenberg.org/cache/epub/14726/pg14726.txt
+    sha256: ef59192fd7f1f94011765f6becb108b32ed18fdbf906a6dec180f490a54778f9
+predicted_gaps:
+  - "no treebank: every lemma and parse is hand-annotated (Zoëga as reference) and stays draft until reviewed"
+  - "normalized edition marks vowel length, so no quantity table is needed"
+  - "Bellows numbers stanzas one higher from stanza 76 on (his 77 = standard 76); align by content"
+  - "metre is alliterative (ljóðaháttr): the metre layer records half-line roles and staves, not feet"
+  - "the edition's ö covers both old ǫ and ø; read as ǫ by default"

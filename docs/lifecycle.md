@@ -22,16 +22,20 @@ rule re-runs one step; the git diff is the review task; the count of changes per
 
 | Work                      | Passage           | Language        | Why                                   |
 |---------------------------|-------------------|-----------------|---------------------------------------|
-| Homer, Odyssey            | 1.1-10            | Homeric Greek   | golden passage; AGDT treebank         |
-| John                      | 1:1-5             | Koine Greek     | verse alignment trivially correct     |
-| Virgil, Aeneid            | 1.1-11            | Latin           | macronization + stress rule test      |
-| Poetic Edda, Völuspá      | stanzas 1-3       | Old Norse       | Icelandic TTS path later              |
+| Homer, Odyssey            | 1.1-10            | Homeric Greek   | **done**: golden passage; AGDT treebank |
+| John                      | 1:1-5             | Koine Greek     | Bible in its source language (Skip, 2026-09-29) |
+| Ovid, Metamorphoses       | 1.1-9             | Latin           | **done**: LDT stream treebank, enclitics, stress rule |
+| Virgil, Aeneid            | 1.1-11            | Latin           | no treebank for book 1: first treebank-free text |
+| Poetic Edda, Hávamál      | st. 1, 76, 77     | Old Norse       | **done**: no treebank, hand annotation, alliteration staves |
 | Chaucer, General Prologue | 1-18              | Middle English  | rule-based pre-GVS vowels             |
-| Beowulf                   | 1-11              | Old English     | later                                 |
+| Beowulf                   | 1-11              | Old English     | **done**: Heyne accents to macrons, caesura, staves, compound stress |
+| Grettis saga              | ch. 14, s. 1-9    | Old Icelandic   | **done**: IcePaHC treebank is the edition; prose, sentence unit |
 
 ## Phases
 
-0. Hand-built `od.1.1-10` YAML and a first renderer. Proves the format.
+0. **Done 2026-09-29.** `od.1.1-10`: `weft draft` generates text, lemma, morph and sound from
+   Perseus plus AGDT; gloss, metre, alignment and notes are hand-made in curated/, sense/, notes/.
+   Renderer, settings panel (the Loom), veil self-test mode, print and phone layouts.
 1. Pipeline for source, sound, gloss, sense on Greek and Latin. Static site. Settings panel.
 2. Audio: espeak-ng baseline, IPA-input neural TTS, forced alignment for word highlighting.
 3. Notes: harvested commentaries and lexicon-grounded synthesis in a sidebar.

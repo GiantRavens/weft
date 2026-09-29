@@ -1,0 +1,50 @@
+work: saga-grettir
+title: Grettis saga
+author: Anonymous, Old Icelandic (about 1310–1320)
+language: non
+prefix: gre                      # gre.<chapter>.<sentence>[.<token>]
+urn: urn:weft:non:grettis-saga   # no CTS URN; Weft-local identifier
+unit: sentence
+written: {year: 1315, label: "written about 1310–1320"}   # composition date; the library sorts by year
+status: phase-0
+pilot: {chapter: 14, first: 1, last: 9}    # IcePaHC sentence numbers within the text; its excerpt opens chapter 14
+edition:
+  id: icepahc
+  name: Icelandic Parsed Historical Corpus (IcePaHC), text 1310.GRETTIR, modernized spelling
+  format: conllu                 # the treebank carries the text: edition and parse are one file
+  text_id: "1310.GRETTIR.NAR-SAG"
+  file: sources/icepahc-train.conllu
+  url: https://raw.githubusercontent.com/UniversalDependencies/UD_Icelandic-IcePaHC/200fcd231e699705b35bdbbadc336b4261b0bc70/is_icepahc-ud-train.conllu
+  sha256: 8fd17bd56309bdd2d3ecb3945fb59fe1961ddc4826baebef2c24f1b81212911f
+  license: LGPL-3.0 (IcePaHC), UD conversion CC BY-SA 4.0
+  license_url: https://github.com/UniversalDependencies/UD_Icelandic-IcePaHC/blob/master/LICENSE.txt
+treebank:
+  id: icepahc-ud
+  name: UD_Icelandic-IcePaHC (hand-parsed IcePaHC, converted automatically to UD)
+  format: conllu-edition         # lemma and morph come from the edition file itself
+  license: LGPL-3.0 / CC BY-SA 4.0
+schemes: [old-norse, modern-icelandic]   # default = as first written (c. 1310); approximate, because the spelling is modernized
+translations:
+  - id: morris-magnusson1869
+    translator: William Morris and Eiríkr Magnússon
+    year: 1869
+    form: prose
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/morris-magnusson1869.txt
+    url: https://www.gutenberg.org/cache/epub/12747/pg12747.txt
+    sha256: d789d7cd9008e180f4942b5e05a80e6aa0048bd76c65ccc41cd21e0797bc0e48
+  - id: hight1914
+    translator: George Ainslie Hight
+    year: 1914
+    form: prose
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/hight1914.txt
+    url: https://www.gutenberg.org/cache/epub/347/pg347.txt
+    sha256: 1fe7d90f6525102222560392e23ab414788f816f40a08c75b2f5ce52d7b61f25
+predicted_gaps:
+  - "IcePaHC spells the saga in modern Icelandic (kallaður, not kallaðr): the old-norse reading is approximate"
+  - "UD layer is an automatic conversion of hand-made Penn parses: expect some wrong case and part-of-speech tags"
+  - "unit is the sentence: a saga is prose, so lines are sentences and spans are clauses"
+  - "the treebank file is 61 MB for a nine-sentence pilot; acceptable, but a slicing acquire step would help"

@@ -1,0 +1,17 @@
+run:
+  weft: 0.1.0
+  book: 1
+  lines: 1-5
+counts:
+  lines: 5
+  tokens: 52
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'the text is ancient but its vowels are the Tiberian Masoretes'' (about AD 900): ''as first written'' can only reach the pointing, not the Iron Age'
+- vocal versus silent shewa and qamets gadol versus qatan are guessed from the pointing where it is ambiguous
+- the Leningrad text writes the verse-final silluq with the meteg sign; the reader marks it from the sof pasuq
+- 'Strong''s lexicon gives an English sense per lemma, not per verse: the gloss row stays hand-made'
+- 'right-to-left script: the word strip runs right to left, English rows stay left to right'

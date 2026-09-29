@@ -1,0 +1,71 @@
+work: tanakh-genesis
+title: Genesis (Bereshit)
+author: Torah, in Biblical Hebrew
+language: hbo
+prefix: gen                      # gen.<chapter>.<verse>[.<token>]
+urn: urn:weft:hbo:tanakh.genesis # no CTS URN; Weft-local identifier
+unit: verse
+written: {year: -550, label: "composed in the first millennium BC, taking its final form around the 500s–400s BC; the vowel points were added about AD 900"}
+status: phase-0
+pilot: {chapter: 1, first: 1, last: 5}
+edition:
+  id: wlc-oshb
+  name: Westminster Leningrad Codex (from the Leningrad Codex, AD 1008), via the Open Scriptures Hebrew Bible
+  format: oshb
+  osis_book: Gen
+  file: sources/oshb-genesis.xml
+  url: https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml
+  sha256: 0526e5c9a5fb4d907847645f954ed3d1268fa69decbd872056cedd2668d86449
+  lexicon: sources/hebrew-strong.xml
+  license: WLC text public domain; OSHB lemma and morphology CC BY 4.0
+  license_url: https://github.com/openscriptures/morphhb/blob/master/LICENSE.md
+treebank:
+  id: oshb
+  name: Open Scriptures Hebrew Bible morphology, with Strong's Hebrew lexicon
+  format: oshb-edition           # lemma and morphology come from the edition file itself
+  file: sources/hebrew-strong.xml
+  url: https://raw.githubusercontent.com/openscriptures/HebrewLexicon/21c9add13bc727d3a951361778e97e3ff7afd1ce/HebrewStrong.xml
+  sha256: a628f4f89f8bdaf2483fd3faf1abc8653cc6717758dfc9f24beb7571d9bdd0c4
+  license: CC BY 4.0 (OSHB); Strong's lexicon public domain
+  license_url: https://github.com/openscriptures/HebrewLexicon
+schemes: [tiberian, modern-israeli]   # default = the earliest pronunciation preserved in full (the pointing itself)
+translations:
+  - id: jps1917
+    translator: Jewish Publication Society
+    year: 1917
+    form: prose
+    format: usfm
+    license: public-domain
+    license_url: https://ebible.org/find/details.php?id=engjps
+    file: sources/jps1917-genesis.usfm
+    sha256: 885bdcabcdca76ceba4d0cf4e11ae73bc83a306985779cf0b0476e9d85e2edc7   # of the extracted member
+    url: https://ebible.org/Scriptures/engjps_usfm.zip
+    extract: "GEN"
+  - id: geneva1599
+    translator: Geneva Bible
+    year: 1599
+    form: prose
+    format: usfm
+    license: public-domain
+    license_url: https://ebible.org/find/details.php?id=enggnv
+    file: sources/geneva1599-genesis.usfm
+    sha256: f0ddff01d42790deb8ab308cbfc199bd6a2167186de744f72e43de3e2c7ce8cc   # of the extracted member
+    url: https://ebible.org/Scriptures/enggnv_usfm.zip
+    extract: "GEN"
+  - id: kjv1611
+    translator: King James Version
+    year: 1611
+    form: prose, 1769 standard text
+    format: usfm
+    license: public-domain
+    license_url: https://ebible.org/find/details.php?id=eng-kjv
+    file: sources/kjv-genesis.usfm
+    sha256: db880f1d6925387aed76d8f7736e830ba23f53d15add7198e9864c8028ca509c   # of the extracted member
+    url: https://ebible.org/Scriptures/eng-kjv_usfm.zip
+    extract: "GEN"
+predicted_gaps:
+  - "the text is ancient but its vowels are the Tiberian Masoretes' (about AD 900): 'as first written' can only reach the pointing, not the Iron Age"
+  - "vocal versus silent shewa and qamets gadol versus qatan are guessed from the pointing where it is ambiguous"
+  - "the Leningrad text writes the verse-final silluq with the meteg sign; the reader marks it from the sof pasuq"
+  - "Strong's lexicon gives an English sense per lemma, not per verse: the gloss row stays hand-made"
+  - "right-to-left script: the word strip runs right to left, English rows stay left to right"

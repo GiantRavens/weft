@@ -1,0 +1,19 @@
+run:
+  weft: 0.1.0
+  stanzas:
+  - 1
+  - 76
+  - 77
+counts:
+  lines: 19
+  tokens: 58
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank: every lemma and parse is hand-annotated (Zoëga as reference) and stays draft until reviewed'
+- normalized edition marks vowel length, so no quantity table is needed
+- Bellows numbers stanzas one higher from stanza 76 on (his 77 = standard 76); align by content
+- 'metre is alliterative (ljóðaháttr): the metre layer records half-line roles and staves, not feet'
+- the edition's ö covers both old ǫ and ø; read as ǫ by default

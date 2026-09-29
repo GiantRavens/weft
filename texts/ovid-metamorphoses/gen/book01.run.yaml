@@ -1,0 +1,18 @@
+run:
+  weft: 0.1.0
+  book: 1
+  lines: 1-9
+counts:
+  lines: 9
+  tokens: 62
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- Latin never marks vowel length; stress needs it; every word must be in the quantity table
+- treebank has no per-word line cites; stream alignment against the edition
+- treebank splits enclitics (-que) and places them before the host; nec is split into c + ne
+- treebank lemmas carry homograph numbers (animus1); stripped for display
+- verse elision (mare et) is not modeled in per-word sound
+- treebank is on perseus-lat1, edition is lat2; expect form differences
