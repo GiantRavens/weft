@@ -82,5 +82,8 @@ review. See `docs/lifecycle.md` and `pin ls`.
 
 ## License
 
-Code: MIT. Text data under `texts/`: CC BY-SA 4.0, because Perseus treebank data is share-alike.
-Every source records its own license in the work's manifest.
+Code: MIT (`LICENSE`). Text data under `texts/`: CC BY-SA 4.0 (`LICENSE-DATA.md`), because the
+Perseus treebank data is share-alike. Every source records its own license in the work's manifest,
+and the sources themselves are fetched by `weft acquire`, never committed.
+
+Corrections and new works are welcome: see `CONTRIBUTING.md`.

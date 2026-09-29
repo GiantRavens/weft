@@ -220,7 +220,7 @@ a:hover .t{color:var(--accent)}.t{font-size:1.6rem;font-weight:700}.a{color:var(
 li p{margin:6px 0 0;font:.85rem/1.5 Inter,system-ui,sans-serif;color:var(--soft)}
 li p.w{margin-top:4px;font:italic .95rem/1.4 "Gentium Book Plus",Palatino,serif;color:var(--accent)}
 </style></head><body><main><div class="lockup" role="img" aria-label="Weft">{{LOCKUP}}</div><h1>Interlinear library</h1>
-<p class="lede">Each line with its sound, its word-for-word gloss, and the translators who carried it into English. Oldest first.</p>
+<p class="lede">Classic texts ordered by date - the original text, a phonetic guide to pronouncing it in English, a literal word-for-word translation called a 'gloss', and well-konwn translations - at last, together in one evolving, community led interlinear presentation.</p>
 <ul>
 {{ROWS}}
 </ul></main></body></html>
