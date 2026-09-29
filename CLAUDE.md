@@ -1,0 +1,21 @@
+# Rhapsode — agent orientation
+
+Read `README.md` first, then `docs/lifecycle.md` and `docs/schema.md`. Tasks live in Pin (`pin ls`).
+
+## Hard rules
+
+1. Never edit anything under `texts/*/sources/` or `texts/*/gen/` by hand. Sources are fetched; gen is produced by `pipeline/`. Human corrections go in `texts/*/curated/`.
+2. Every generated field carries `src` (what produced it, with version) and, where a judgment was made, `conf` (0 to 1). Low confidence goes to the review queue, not silently into the page.
+3. Lemma and morphology come from the treebank. An LLM may pick a sense from the lexicon entry for that lemma; it may not invent a lemma or a parse.
+4. Nothing copyrighted enters `texts/`. It goes in `private/` with the same layout, and the pipeline reads both.
+5. Line IDs are CTS URNs or a CTS-style short form (`od.1.1`). Every layer, note and audio timing hangs off them.
+6. Layers are named (source, sound, gloss, sense, metre, notes, audio), never numbered.
+7. The site is plain HTML, CSS, JS. No build framework. It must work from `file://` and print cleanly.
+8. Manifest before pipeline. A work is not processed until `manifest.yaml` names the edition, the treebank, the schemes, the translations with licenses, and the predicted gaps.
+
+## Working style
+
+- Python with `uv`; one package, no sidecars.
+- Each pipeline step is a CLI subcommand that reads the manifest, writes one layer, and reports counts and failure classes on exit.
+- Golden passage: the Odyssey proem (`od.1.1-10`), hand-verified. Every pipeline change is diffed against it.
+- Cognitive Honing applies: predicted vs actual on every run; when one failure class exceeds 15 percent, fix upstream.

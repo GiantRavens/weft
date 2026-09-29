@@ -1,0 +1,34 @@
+work: homer-odyssey
+title: Odyssey
+author: Homer
+language: grc-homeric
+urn: urn:cts:greekLit:tlg0012.tlg002
+unit: line
+status: phase-0
+pilot: od.1.1-10
+edition:
+  name: Perseus perseus-grc2
+  url: https://github.com/PerseusDL/canonical-greekLit/tree/master/data/tlg0012/tlg002
+  license: CC BY-SA 4.0
+treebank:
+  name: Ancient Greek Dependency Treebank
+  url: https://github.com/PerseusDL/treebank_data
+  license: CC BY-SA 3.0
+schemes: [homeric, erasmian]
+translations:
+  - id: butler1900
+    translator: Samuel Butler
+    year: 1900
+    form: prose
+    license: public-domain
+    source: https://www.gutenberg.org/ebooks/1727
+commentaries:
+  - id: merry-riddell
+    title: "Homer's Odyssey, Books I-XII (Merry, Riddell, Monro)"
+    year: 1886
+    license: public-domain
+    source: Perseus
+predicted_gaps:
+  - "a/i/u vowel length not marked; hexameter scanner should resolve most, review the rest"
+  - "treebank tokenization splits elision and crasis; mapping step must reconcile"
+  - "Butler is prose; spans cover 1-3 lines each, alignment needs review"
