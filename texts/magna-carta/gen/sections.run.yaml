@@ -1,0 +1,17 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '39'
+  - '40'
+counts:
+  lines: 4
+  tokens: 43
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank for medieval Latin charters: lemma and morphology hand-annotated (Lewis and Short; Du Cange for medieval words), draft'
+- the Anglo-Latin pronunciation is reconstructed from spelling and sound history; approximate
+- medieval spellings (terre, justiciam) are keyed as written; the classical reading of them is the classical reading of the letters
+- 'the translations disagree on vel in chapter 39 (''and'' or ''or''): that is the point to show, not a defect'

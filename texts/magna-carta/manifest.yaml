@@ -1,0 +1,43 @@
+work: magna-carta
+title: Magna Carta
+author: King John and the barons, Runnymede
+language: lat
+prefix: mc                       # mc.<chapter>.<line>[.<token>]
+urn: urn:weft:lat:magna-carta-1215   # Weft-local identifier
+unit: section
+written: {year: 1215, label: "sealed at Runnymede, 15 June 1215"}
+status: phase-0
+pilot: {sections: ["39", "40"]}
+edition:
+  id: mckechnie1905-latin
+  name: The 1215 Latin text as printed by W. S. McKechnie (1905), divided into lines by Weft
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain; Weft line division CC BY-SA 4.0
+treebank: null                   # no treebank covers medieval charters; hand annotation, draft
+schemes: [anglo-latin, classical]   # default = Latin as read in England around 1215
+quantities: pipeline/weft/data/lat_quantities.yaml
+translations:
+  - id: mckechnie1905
+    translator: William Sharp McKechnie
+    year: 1905
+    form: prose
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/mckechnie1905.txt
+    url: https://www.gutenberg.org/cache/epub/65363/pg65363.txt
+    sha256: 6bedeb2699f9f5158e24027f31deed40307b35ab60aeee0f16b3a33c8cdcd790
+  - id: bell1910
+    translator: Kenneth Bell
+    year: 1910
+    form: prose
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/bell1910.txt
+    url: https://www.gutenberg.org/cache/epub/50791/pg50791.txt
+    sha256: 2f6fca0cafe86c23c89e4439d3f7d5d3ffa4344cfabcd1635a017a5a5bc58a1b
+predicted_gaps:
+  - "no treebank for medieval Latin charters: lemma and morphology hand-annotated (Lewis and Short; Du Cange for medieval words), draft"
+  - "the Anglo-Latin pronunciation is reconstructed from spelling and sound history; approximate"
+  - "medieval spellings (terre, justiciam) are keyed as written; the classical reading of them is the classical reading of the letters"
+  - "the translations disagree on vel in chapter 39 ('and' or 'or'): that is the point to show, not a defect"

@@ -1,0 +1,15 @@
+# Weft edition of Magna Carta (1215), chapters 39 and 40. The Latin is McKechnie's text,
+# verbatim; `weft draft` checks every line against sources/mckechnie1905.txt. Weft divides the
+# long chapter 39 into three lines at McKechnie's own punctuation, so each fits one strip.
+verify_in: sources/mckechnie1905.txt
+sections:
+  - id: "39"
+    title: "Chapter 39: no free man shall be taken or imprisoned"
+    lines:
+      - "Nullus liber homo capiatur, vel imprisonetur, aut disseisiatur, aut utlagetur, aut exuletur, aut aliquo modo destruatur,"
+      - "nec super eum ibimus, nec super eum mittemus,"
+      - "nisi per legale judicium parium suorum vel per legem terre."
+  - id: "40"
+    title: "Chapter 40: to no one will we sell, deny or delay right or justice"
+    lines:
+      - "Nulli vendemus, nulli negabimus, aut differemus, rectum aut justiciam."

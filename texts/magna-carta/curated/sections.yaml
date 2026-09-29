@@ -1,0 +1,51 @@
+# Human overlay for Magna Carta 39-40. No treebank covers medieval charters, so this file
+# carries lemma and morphology too (rule 3 exception). Lemmas follow Lewis and Short; the
+# Anglo-Latin verbs imprisono, disseisio, utlago follow Du Cange and the Anglo-Norman terms.
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-29
+  why: pilot chapters 39-40; hand annotation, no treebank
+  status: draft
+  set:
+    mc.39.1.1: {lemma: "nullus", morph: "DET|Case=Nom|Gender=Masc|Number=Sing", gloss: "no"}   # Nullus
+    mc.39.1.2: {lemma: "liber", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "free"}   # liber
+    mc.39.1.3: {lemma: "homo", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "man"}   # homo
+    mc.39.1.4: {lemma: "capio", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|Voice=Pass", gloss: "be-seized"}   # capiatur
+    mc.39.1.5: {lemma: "vel", morph: "CCONJ", gloss: "or"}   # vel
+    mc.39.1.6: {lemma: "imprisono", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|Voice=Pass", gloss: "imprisoned"}   # imprisonetur
+    mc.39.1.7: {lemma: "aut", morph: "CCONJ", gloss: "or"}   # aut
+    mc.39.1.8: {lemma: "disseisio", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|Voice=Pass", gloss: "dispossessed"}   # disseisiatur
+    mc.39.1.9: {lemma: "aut", morph: "CCONJ", gloss: "or"}   # aut
+    mc.39.1.10: {lemma: "utlago", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|Voice=Pass", gloss: "outlawed"}   # utlagetur
+    mc.39.1.11: {lemma: "aut", morph: "CCONJ", gloss: "or"}   # aut
+    mc.39.1.12: {lemma: "exulo", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|Voice=Pass", gloss: "exiled"}   # exuletur
+    mc.39.1.13: {lemma: "aut", morph: "CCONJ", gloss: "or"}   # aut
+    mc.39.1.14: {lemma: "aliqui", morph: "DET|Case=Abl|Gender=Masc|Number=Sing", gloss: "in-any"}   # aliquo
+    mc.39.1.15: {lemma: "modus", morph: "NOUN|Case=Abl|Gender=Masc|Number=Sing", gloss: "way"}   # modo
+    mc.39.1.16: {lemma: "destruo", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|Voice=Pass", gloss: "destroyed"}   # destruatur
+    mc.39.2.1: {lemma: "nec", morph: "CCONJ", gloss: "nor"}   # nec
+    mc.39.2.2: {lemma: "super", morph: "ADP", gloss: "upon"}   # super
+    mc.39.2.3: {lemma: "is", morph: "PRON|Case=Acc|Gender=Masc|Number=Sing|Person=3", gloss: "him"}   # eum
+    mc.39.2.4: {lemma: "eo", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Fut|Voice=Act", gloss: "will-we-go"}   # ibimus
+    mc.39.2.5: {lemma: "nec", morph: "CCONJ", gloss: "nor"}   # nec
+    mc.39.2.6: {lemma: "super", morph: "ADP", gloss: "upon"}   # super
+    mc.39.2.7: {lemma: "is", morph: "PRON|Case=Acc|Gender=Masc|Number=Sing|Person=3", gloss: "him"}   # eum
+    mc.39.2.8: {lemma: "mitto", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Fut|Voice=Act", gloss: "will-we-send"}   # mittemus
+    mc.39.3.1: {lemma: "nisi", morph: "SCONJ", gloss: "except"}   # nisi
+    mc.39.3.2: {lemma: "per", morph: "ADP", gloss: "by"}   # per
+    mc.39.3.3: {lemma: "legalis", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "lawful"}   # legale
+    mc.39.3.4: {lemma: "judicium", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "judgment"}   # judicium
+    mc.39.3.5: {lemma: "par", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-peers"}   # parium
+    mc.39.3.6: {lemma: "suus", morph: "DET|Case=Gen|Gender=Masc|Number=Plur", gloss: "his-own"}   # suorum
+    mc.39.3.7: {lemma: "vel", morph: "CCONJ", gloss: "or"}   # vel
+    mc.39.3.8: {lemma: "per", morph: "ADP", gloss: "by"}   # per
+    mc.39.3.9: {lemma: "lex", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "law"}   # legem
+    mc.39.3.10: {lemma: "terra", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "of-the-land"}   # terre
+    mc.40.1.1: {lemma: "nullus", morph: "PRON|Case=Dat|Number=Sing", gloss: "to-no-one"}   # Nulli
+    mc.40.1.2: {lemma: "vendo", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Fut|Voice=Act", gloss: "will-we-sell"}   # vendemus
+    mc.40.1.3: {lemma: "nullus", morph: "PRON|Case=Dat|Number=Sing", gloss: "to-no-one"}   # nulli
+    mc.40.1.4: {lemma: "nego", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Fut|Voice=Act", gloss: "will-we-deny"}   # negabimus
+    mc.40.1.5: {lemma: "aut", morph: "CCONJ", gloss: "or"}   # aut
+    mc.40.1.6: {lemma: "differo", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Fut|Voice=Act", gloss: "will-we-delay"}   # differemus
+    mc.40.1.7: {lemma: "rectum", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "right"}   # rectum
+    mc.40.1.8: {lemma: "aut", morph: "CCONJ", gloss: "or"}   # aut
+    mc.40.1.9: {lemma: "justitia", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "justice"}   # justiciam

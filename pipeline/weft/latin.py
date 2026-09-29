@@ -92,7 +92,8 @@ def syllabify(word: str) -> list[Syl]:
         cl = segs[vi[n] + 1 : vi[n + 1]]
         if not cl:
             continue
-        if len(cl) >= 2 and cl[-2].text in STOPS and cl[-1].text in LIQUIDS:
+        # stop + liquid begins the next syllable, except tl and dl, which Latin never allows
+        if len(cl) >= 2 and cl[-2].text in STOPS and cl[-1].text in LIQUIDS and cl[-2].text + cl[-1].text not in ("tl", "dl"):
             cut = len(cl) - 2          # muta cum liquida: stays together, syllable stays light
         else:
             cut = len(cl) - 1
@@ -130,6 +131,15 @@ def _cons_ipa(c: Seg, nxt: Seg | None, prev: Seg | None, scheme: str) -> str:
     if scheme == "classical":
         return {"c": "k", "k": "k", "qu": "kʷ", "v": "w", "j": "j", "ch": "kʰ", "ph": "pʰ",
                 "th": "tʰ", "h": "h", "z": "dz", "g": "ɡ"}.get(t, "ŋ" if t == "n" and nxt and nxt.text in ("c", "g", "qu", "k") else t)
+    if scheme == "anglo-latin":
+        # Latin as read in England around 1215, in the French manner: soft c = ts (becoming s
+        # during the 1200s), soft g and consonantal i/j = dʒ, h silent, v = v
+        if t == "c":
+            return "ts" if _front(nxt) else "k"
+        if t == "g":
+            return "dʒ" if _front(nxt) else "ɡ"
+        return {"k": "k", "qu": "kw", "v": "v", "j": "dʒ", "ch": "k", "ph": "f", "th": "t",
+                "h": "", "z": "dz", "x": "ks"}.get(t, "ŋ" if t == "n" and nxt and nxt.text in ("c", "g", "qu", "k") else t)
     # ecclesiastical
     if t == "c":
         return "tʃ" if _front(nxt) else "k"
@@ -163,9 +173,11 @@ def _syl_ipa(syls: list[Syl], scheme: str) -> list[str]:
             if scheme == "ecclesiastical" and seg.text == "c" and prev and prev.text == "s" and _front(nxt):
                 continue
             # ecclesiastical ti before a vowel = tsi (natio), except after s, t, x and word-initially
-            if (scheme == "ecclesiastical" and seg.text == "t" and nxt and nxt.text == "i" and k > 0
+            if (scheme in ("ecclesiastical", "anglo-latin") and seg.text == "t" and nxt and nxt.text == "i" and k > 0
                     and k + 2 < len(flat) and flat[k + 2][1].vowel and not (prev and prev.text in ("s", "t", "k"))):
                 parts[n] += "ts"; continue
+            if scheme == "anglo-latin" and seg.text == "s" and prev and prev.vowel and nxt and nxt.vowel:
+                parts[n] += "z"; continue                  # French-style: s between vowels = z
             parts[n] += _cons_ipa(seg, nxt, prev, scheme)
     return parts
 
@@ -177,6 +189,8 @@ RESPELL = {
                   ("j", "y")],
     "ecclesiastical": [("au", "ow"), ("tʃ", "ch"), ("dʒ", "j"), ("ʃ", "sh"), ("ɲ", "ny"), ("ɡ", "g"),
                        ("ɛ", "e"), ("ɔ", "o"), ("i", "ee"), ("u", "oo"), ("ŋ", "ng"), ("j", "y")],
+    "anglo-latin": [("au", "ow"), ("dʒ", "j"), ("ts", "ts"), ("ɡ", "g"),
+                    ("ɛ", "e"), ("ɔ", "o"), ("i", "ee"), ("u", "oo"), ("ŋ", "ng")],
 }
 KEY = {
     "classical": [
@@ -205,7 +219,20 @@ KEY = {
         ("CAPS", "stressed syllable, same position as classical"),
     ],
 }
+KEY_ANGLO = [
+    ("a e ee o oo", "plain vowels; long and short no longer differ in sound, only in stress"),
+    ("e", "ae and oe are both e: the medieval spelling terre for terrae records this"),
+    ("ts", "c before e and i, as in bits; by the late 1200s it became s"),
+    ("j", "g before e and i, and the letter j: as in judge"),
+    ("(silent)", "h is not sounded: homo = omo"),
+    ("v", "v as in English"),
+    ("z", "s between vowels, as in French prison"),
+    ("CAPS", "stressed syllable, by the classical penultimate rule, which medieval readers kept"),
+    ("caution", "reconstructed from spelling and from French and English sound history; approximate"),
+]
+
 SCHEME_LABELS = {
+    "anglo-latin": "Anglo-Latin: as a clerk in England read Latin around 1215 (approximate)",
     "classical": "Classical: restored pronunciation of Cicero's and Ovid's Rome",
     "ecclesiastical": "Ecclesiastical: Italianate church Latin",
 }
@@ -230,7 +257,7 @@ def apply_quantity(word: str, table: dict[str, str]) -> tuple[str, bool]:
     return word, False
 
 
-def phonemize(word: str, scheme: str, quantities: dict[str, str] | None = None) -> dict:
+def phonemize(word: str, scheme: str, quantities: dict[str, str] | None = None, **_) -> dict:
     w = "".join(ch for ch in word if ch not in PUNCT)
     known = False
     if quantities is not None:
@@ -253,3 +280,5 @@ def phonemize(word: str, scheme: str, quantities: dict[str, str] | None = None) 
         spells.append(r.upper() if n == si and len(syls) > 1 else r)
     ipa = ".".join(("ˈ" if n == si and len(syls) > 1 else "") + ip for n, ip in enumerate(ipas))
     return {"ipa": ipa, "respell": "-".join(spells), "syllables": len(syls), "known": known}
+
+KEY["anglo-latin"] = KEY_ANGLO

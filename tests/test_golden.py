@@ -243,3 +243,24 @@ def test_runes():
         assert report["failures"] == {}
     r = check.run(REPO, "runes")
     assert r["ok"], r["problems"]
+
+
+def test_anglo_latin_and_magna_carta():
+    q = LQ
+    cases = {"judicium": ("joo-DEE-tsee-oom", "yoo-DI-ki-um"),   # j = dʒ; ci before a vowel = tsi
+             "legem": ("LE-jem", "LAY-gem"),                      # soft g before e
+             "homo": ("O-mo", "HO-mo"),                           # h silent
+             "imprisonetur": ("eem-pree-zo-NE-toor", "im-pri-so-NAY-tur"),  # s between vowels = z
+             "utlagetur": ("oot-la-JE-toor", "ut-la-GAY-tur")}    # tl is not a Latin onset
+    for w, (a, c) in cases.items():
+        assert latin.phonemize(w, "anglo-latin", q)["respell"] == a, w
+        assert latin.phonemize(w, "classical", q)["respell"] == c, w
+    work = REPO / "texts" / "magna-carta"
+    if sources_present(work):
+        before = (work / "gen/sections.yaml").read_text()
+        report = draft.run(work)
+        assert (work / "gen/sections.yaml").read_text() == before
+        assert report["counts"] == {"lines": 4, "tokens": 43}
+        assert report["failures"] == {}             # includes: every line found verbatim in McKechnie
+    r = check.run(REPO, "magna-carta")
+    assert r["ok"], r["problems"]

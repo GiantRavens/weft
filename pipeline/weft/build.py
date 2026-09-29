@@ -182,7 +182,9 @@ def write_index(repo: Path, out_dir: Path) -> Path:
             continue
         written = (m.get("written") or {}).get("label", "")
         pl = m.get("pilot", {})
-        if pl.get("inscriptions"):
+        if pl.get("sections"):
+            span = "chapters " + ", ".join(pl["sections"])
+        elif pl.get("inscriptions"):
             span = f"{len(pl['inscriptions'])} inscriptions"
         elif pl.get("stanzas"):
             span = "stanzas " + ", ".join(str(x) for x in pl["stanzas"])

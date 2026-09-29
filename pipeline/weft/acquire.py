@@ -22,7 +22,8 @@ def sources(m: dict) -> list[dict]:
         out.append(dict(m["treebank"], role="treebank"))
     out += [dict(t, role="translation", name=f"{t['translator']}, {t['year']}") for t in m.get("translations", [])]
     out += [dict(x, role="data") for x in m.get("sources_extra", [])]
-    return [s for s in out if s.get("file")]
+    # files without a url are committed with the work (Weft's own editions): nothing to fetch
+    return [s for s in out if s.get("file") and s.get("url")]
 
 
 def sha256(p: Path) -> str:

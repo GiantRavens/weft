@@ -76,7 +76,7 @@ server, so a page or the whole folder can be sent as an attachment.
 
 ## Status
 
-Nine works built across seven languages, oldest first in the library:
+Ten works built across seven languages, oldest first in the library:
 
 | Work | Passage | Schemes | Translations |
 |---|---|---|---|
@@ -88,6 +88,7 @@ Nine works built across seven languages, oldest first in the library:
 | Li Bai, Quiet Night Thought | 4 lines | Tang, Mandarin, Cantonese | Cranmer-Byng 1909 |
 | Runic inscriptions: Kylver, Gallehus, Rök | 3 inscriptions | Proto-Norse, Old East Norse | Stephens 1884; Weft editorial reading |
 | Beowulf | 1-11 | late West Saxon | Gummere 1910, Morris and Wyatt 1895 |
+| Magna Carta | chapters 39-40 | Anglo-Latin (England, 1215), classical | McKechnie 1905, Bell 1910 |
 | Grettis saga | chapter 14, sentences 1-9 | modern Icelandic, Old Norse | Morris and Magnússon 1869, Hight 1914 |
 
 Homer, Ovid, John and Grettis saga take lemma and grammar from treebanks (AGDT, LDT, MorphGNT, IcePaHC); Genesis from the Open Scriptures Hebrew Bible; Li Bai from the Kyoto Classical Chinese treebank, with Tang readings from Unicode's Unihan database. No open

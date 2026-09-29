@@ -62,7 +62,7 @@
   }
   const trOrder = Object.fromEntries(D.translations.map((t, i) => [t.id, i]));
   const shortRef = (id) => id.split(".").slice(1).join(".");
-  const STANZAS = D.work.unit === "stanza-line" || D.work.unit === "inscription";
+  const STANZAS = ["stanza-line", "inscription", "section"].includes(D.work.unit);
   // stanza works label lines "76.3"; book works and inscriptions label them "3"
   const lineNo = (id) => D.work.unit === "stanza-line" ? id.split(".").slice(-2).join(".") : id.split(".").pop();
   const tokNo = (id) => id.split(".").pop();
@@ -76,6 +76,8 @@
   const first = D.lines[0], last = D.lines[D.lines.length - 1];
   $("#work-byline").textContent = D.work.unit === "inscription"
     ? `${D.work.author} · ${new Set(D.lines.map((l) => l.stanza)).size} inscriptions`
+    : D.work.unit === "section"
+    ? `${D.work.author} · chapters ${[...new Set(D.lines.map((l) => l.stanza))].join(", ")}`
     : STANZAS
     ? `${D.work.author} · stanzas ${[...new Set(D.lines.map((l) => l.stanza))].join(", ")}`
     : `${D.work.author} · ${shortRef(first.id)}–${lineNo(last.id)}`;

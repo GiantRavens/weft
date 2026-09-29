@@ -23,7 +23,7 @@ def run(repo: Path, work: str) -> dict:
     for i, line in enumerate(data["lines"]):
         ids.add(line["id"]); line_ids.append(line["id"]); order[line["id"]] = i
         # verse carries metre; prose (unit: sentence) has none to carry
-        if data["work"].get("unit") not in ("sentence", "verse", "inscription") and not line.get("metre"):
+        if data["work"].get("unit") not in ("sentence", "verse", "inscription", "section") and not line.get("metre"):
             bad("line-no-metre", line["id"])
         for t in line["tokens"]:
             ntok += 1
@@ -42,6 +42,9 @@ def run(repo: Path, work: str) -> dict:
                 bad("gloss-has-space", f"{t['id']} {t['gloss']!r}")
     for m in data["_curated_missing"]:
         bad("curated-unknown-id", m["missing"])
+    if not data["notes"]:
+        # every work in the library carries notes; none at all means a file failed to land
+        bad("no-notes", work)
     for n in data["notes"]:
         if n.get("attach") not in ids:
             bad("note-unattached", n.get("id", "?"))
