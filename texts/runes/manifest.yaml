@@ -1,0 +1,41 @@
+work: runes
+title: Runic inscriptions
+author: Carved in gold and stone, about 400 to 800
+language: runic
+prefix: run                      # run.<inscription>.<line>[.<token>]
+urn: urn:weft:runic:anthology    # Weft-local identifier; inscriptions cite Rundata numbers
+unit: inscription
+written: {year: 400, label: "carved about 400 (Kylver, Gallehus) to about 800 (Rök)"}
+status: phase-0
+pilot: {inscriptions: [kylver, gallehus, rok]}
+edition:
+  id: weft-runic
+  name: Weft edition of the standard transliterations, cited to Rundata (G 88, DR 12, Ög 136)
+  format: weft-edition
+  file: edition.yaml              # committed with the work: short factual readings, no download
+  license: CC BY-SA 4.0
+treebank: null                   # no treebank exists for runic inscriptions; hand annotation, draft
+schemes: [as-carved]             # each inscription in the language of its own date
+translations:
+  - id: stephens1884
+    translator: George Stephens
+    year: 1884
+    form: word-for-word, with a free rendering; readings now superseded
+    partial: "no reading of Kylver: the stone was found in 1903, after the handbook"
+    license: public-domain
+    license_url: https://archive.org/details/cu31924026355499
+    file: sources/stephens1884.txt
+    url: https://archive.org/download/cu31924026355499/cu31924026355499_djvu.txt
+    sha256: 6a6fbb66b9749da318bf849204ab5552cb7e22f622e4c0c200fa71d14573cacc
+  - id: weft-editorial
+    translator: Weft editorial translation of the modern reading (draft)
+    year: 2026
+    form: literal
+    kind: editorial                # Weft's own words, not a published translation
+    license: CC BY-SA 4.0
+predicted_gaps:
+  - "runes do not mark vowel length or many consonant contrasts: sound comes from each word's normalization"
+  - "no public-domain modern translation exists; Stephens (1884) is public domain but his readings are superseded, so a labelled Weft translation of the modern reading sits beside it"
+  - "Stephens is quoted from the scanned page (the OCR text garbles words); spans were checked against pages 36 and 86 of the scan"
+  - "the Gallehus horn was stolen and melted in 1802; its runes survive only in 18th-century drawings"
+  - "Rök uses short-twig runes; Unicode short-twig forms stand in for the carved shapes"

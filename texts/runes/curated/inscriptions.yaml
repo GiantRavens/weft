@@ -1,0 +1,53 @@
+# Human overlay for the runic inscriptions. No treebank exists for runic texts, so this
+# file carries lemma and morphology too (rule 3 exception). Kylver's lemmas are the
+# reconstructed Proto-Germanic rune names, with the name's meaning as the gloss.
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a runologist
+  date: 2026-09-29
+  why: pilot inscriptions; hand annotation, no treebank
+  status: draft
+  set:
+    run.kylver.1: {metre: "the futhark: 24 runes in three groups of eight (ættir)"}
+    run.gallehus.1: {metre: "alliterative long line · staves h (hlewagastiz, holtijaz, horna)"}
+    run.rok.1: {metre: "prose memorial formula"}
+    run.rok.2: {metre: "prose memorial formula"}
+    run.kylver.1.1: {lemma: "*fehu", morph: "SYM", gloss: "cattle"}   # f ᚠ
+    run.kylver.1.2: {lemma: "*ūruz", morph: "SYM", gloss: "aurochs"}   # u ᚢ
+    run.kylver.1.3: {lemma: "*þurisaz", morph: "SYM", gloss: "giant"}   # þ ᚦ
+    run.kylver.1.4: {lemma: "*ansuz", morph: "SYM", gloss: "god"}   # a ᚨ
+    run.kylver.1.5: {lemma: "*raidō", morph: "SYM", gloss: "ride"}   # r ᚱ
+    run.kylver.1.6: {lemma: "*kaunan", morph: "SYM", gloss: "ulcer"}   # k ᚲ
+    run.kylver.1.7: {lemma: "*gebō", morph: "SYM", gloss: "gift"}   # g ᚷ
+    run.kylver.1.8: {lemma: "*wunjō", morph: "SYM", gloss: "joy"}   # w ᚹ
+    run.kylver.1.9: {lemma: "*hagalaz", morph: "SYM", gloss: "hail"}   # h ᚺ
+    run.kylver.1.10: {lemma: "*naudiz", morph: "SYM", gloss: "need"}   # n ᚾ
+    run.kylver.1.11: {lemma: "*īsaz", morph: "SYM", gloss: "ice"}   # i ᛁ
+    run.kylver.1.12: {lemma: "*jēran", morph: "SYM", gloss: "year"}   # j ᛃ
+    run.kylver.1.13: {lemma: "*perþō", morph: "SYM", gloss: "meaning-unknown"}   # p ᛈ
+    run.kylver.1.14: {lemma: "*īhwaz", morph: "SYM", gloss: "yew"}   # ï ᛇ
+    run.kylver.1.15: {lemma: "*algiz", morph: "SYM", gloss: "elk"}   # z ᛉ
+    run.kylver.1.16: {lemma: "*sōwilō", morph: "SYM", gloss: "sun"}   # s ᛊ
+    run.kylver.1.17: {lemma: "*tīwaz", morph: "SYM", gloss: "the-god-Tyr"}   # t ᛏ
+    run.kylver.1.18: {lemma: "*berkanan", morph: "SYM", gloss: "birch"}   # b ᛒ
+    run.kylver.1.19: {lemma: "*ehwaz", morph: "SYM", gloss: "horse"}   # e ᛖ
+    run.kylver.1.20: {lemma: "*mannaz", morph: "SYM", gloss: "man"}   # m ᛗ
+    run.kylver.1.21: {lemma: "*laguz", morph: "SYM", gloss: "water"}   # l ᛚ
+    run.kylver.1.22: {lemma: "*ingwaz", morph: "SYM", gloss: "the-god-Ing"}   # ŋ ᛜ
+    run.kylver.1.23: {lemma: "*dagaz", morph: "SYM", gloss: "day"}   # d ᛞ
+    run.kylver.1.24: {lemma: "*ōþalan", morph: "SYM", gloss: "inherited-land"}   # o ᛟ
+    run.gallehus.1.1: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    run.gallehus.1.2: {lemma: "Hlewagastiz", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Hlewagastiz", stave: true}   # hlewagastiz
+    run.gallehus.1.3: {lemma: "holtijaz", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "of-Holt", stave: true}   # holtijaz
+    run.gallehus.1.4: {lemma: "horna", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "horn", stave: true}   # horna
+    run.gallehus.1.5: {lemma: "tawidō", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "made"}   # tawido
+    run.rok.1.1: {lemma: "aft", morph: "ADP", gloss: "after"}   # aft
+    run.rok.1.2: {lemma: "Vámóðr", morph: "PROPN|Case=Acc|Gender=Masc|Number=Sing", gloss: "Vamod"}   # uamuþ
+    run.rok.1.3: {lemma: "standa", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "stand"}   # stonta
+    run.rok.1.4: {lemma: "rún", morph: "NOUN|Case=Nom|Gender=Fem|Number=Plur", gloss: "runes"}   # runaR
+    run.rok.1.5: {lemma: "sá", morph: "DET|Case=Nom|Gender=Fem|Number=Plur|PronType=Dem", gloss: "these"}   # þaR
+    run.rok.2.1: {lemma: "en", morph: "CCONJ", gloss: "and"}   # n
+    run.rok.2.2: {lemma: "Varinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Varin"}   # uarin
+    run.rok.2.3: {lemma: "fá", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "painted"}   # faþi
+    run.rok.2.4: {lemma: "faðir", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "father"}   # faþiR
+    run.rok.2.5: {lemma: "aft", morph: "ADP", gloss: "after"}   # aft
+    run.rok.2.6: {lemma: "feigr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "doomed"}   # faikion
+    run.rok.2.7: {lemma: "sunr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "son"}   # sunu

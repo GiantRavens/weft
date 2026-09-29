@@ -118,11 +118,11 @@ def _front(seg: Seg | None) -> bool:
 def _vowel_ipa(v: Seg, scheme: str) -> str:
     if scheme == "classical":
         if v.text in DIPHTHONGS:
-            return {"ae": "ae̯", "au": "au̯", "oe": "oe̯"}[v.text]
+            return {"ae": "ae", "au": "au", "oe": "oe"}[v.text]   # plain: the non-syllabic mark breaks web fonts
         short = {"a": "a", "e": "ɛ", "i": "ɪ", "o": "ɔ", "u": "ʊ", "y": "ʏ"}[v.text]
         long_ = {"a": "aː", "e": "eː", "i": "iː", "o": "oː", "u": "uː", "y": "yː"}[v.text]
         return long_ if v.long else short
-    return {"ae": "ɛ", "oe": "ɛ", "au": "au̯", "a": "a", "e": "ɛ", "i": "i", "o": "ɔ", "u": "u", "y": "i"}[v.text]
+    return {"ae": "ɛ", "oe": "ɛ", "au": "au", "a": "a", "e": "ɛ", "i": "i", "o": "ɔ", "u": "u", "y": "i"}[v.text]
 
 
 def _cons_ipa(c: Seg, nxt: Seg | None, prev: Seg | None, scheme: str) -> str:
@@ -171,11 +171,11 @@ def _syl_ipa(syls: list[Syl], scheme: str) -> list[str]:
 
 
 RESPELL = {
-    "classical": [("ae̯", "ai"), ("au̯", "ow"), ("oe̯", "oy"), ("aː", "aa"), ("eː", "ay"), ("iː", "ee"),
+    "classical": [("ae", "ai"), ("au", "ow"), ("oe", "oy"), ("aː", "aa"), ("eː", "ay"), ("iː", "ee"),
                   ("oː", "oh"), ("uː", "oo"), ("yː", "üü"), ("kʷ", "kw"), ("kʰ", "kʰ"), ("pʰ", "pʰ"),
                   ("tʰ", "tʰ"), ("ɛ", "e"), ("ɪ", "i"), ("ɔ", "o"), ("ʊ", "u"), ("ʏ", "ü"), ("ŋ", "ng"), ("ɡ", "g"),
                   ("j", "y")],
-    "ecclesiastical": [("au̯", "ow"), ("tʃ", "ch"), ("dʒ", "j"), ("ʃ", "sh"), ("ɲ", "ny"), ("ɡ", "g"),
+    "ecclesiastical": [("au", "ow"), ("tʃ", "ch"), ("dʒ", "j"), ("ʃ", "sh"), ("ɲ", "ny"), ("ɡ", "g"),
                        ("ɛ", "e"), ("ɔ", "o"), ("i", "ee"), ("u", "oo"), ("ŋ", "ng"), ("j", "y")],
 }
 KEY = {

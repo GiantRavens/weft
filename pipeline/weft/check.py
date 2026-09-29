@@ -23,7 +23,7 @@ def run(repo: Path, work: str) -> dict:
     for i, line in enumerate(data["lines"]):
         ids.add(line["id"]); line_ids.append(line["id"]); order[line["id"]] = i
         # verse carries metre; prose (unit: sentence) has none to carry
-        if data["work"].get("unit") not in ("sentence", "verse") and not line.get("metre"):
+        if data["work"].get("unit") not in ("sentence", "verse", "inscription") and not line.get("metre"):
             bad("line-no-metre", line["id"])
         for t in line["tokens"]:
             ntok += 1
@@ -59,7 +59,8 @@ def run(repo: Path, work: str) -> dict:
         if dup:
             bad("sense-overlap", f"{s['tr']} {dup[:3]}")
         gaps = [l for l in line_ids if l not in covered]
-        if gaps:
+        partial = any(t["id"] == s["tr"] and t.get("partial") for t in data["translations"])
+        if gaps and not partial:            # a translation declared partial may skip lines
             bad("sense-gap", f"{s['tr']} {gaps[:3]}")
     return {"work": work, "lines": len(line_ids), "tokens": ntok,
             "translations": len(data["sense"]), "notes": len(data["notes"]),

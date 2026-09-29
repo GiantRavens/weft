@@ -13,11 +13,11 @@ from pathlib import Path
 
 import yaml
 
-from . import __version__, chinese, greek, hebrew, latin, norse, oldenglish, treebank
+from . import __version__, chinese, greek, hebrew, latin, norse, oldenglish, runic, treebank
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
 INDECLINABLE = set("dcgrie")
-PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebrew, "lzh": chinese}
+PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebrew, "lzh": chinese, "runic": runic}
 NORMALIZE = {"heyne-to-macron": oldenglish.heyne_to_macron}
 LEAD = re.compile(r"^([(\[“]+)")
 TRAIL = re.compile(r"([,.·;:!?)\]”\u0387\u037e]+)$")
@@ -81,7 +81,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
     m = load_manifest(work_dir)
     pilot = m.get("pilot", {})
     ed_fmt = m["edition"].get("format", "tei")
-    if ed_fmt == "stanza-text":
+    if ed_fmt in ("stanza-text", "weft-edition"):
         book = first = last = None
     elif ed_fmt == "conllu" and m["edition"].get("sent_prefix"):
         book = None
@@ -124,7 +124,13 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
     quantities = yaml.safe_load(quant_path.read_text()) if quant_path else {}
 
     # units: (book-or-stanza, line number, text)
-    if ed_fmt == "stanza-text":
+    if ed_fmt == "weft-edition":
+        # Weft's own edition file: grouped units (inscriptions), tokens given explicitly
+        edition = yaml.safe_load((work_dir / m["edition"]["file"]).read_text())
+        groups = {g["id"]: g for g in edition["inscriptions"]}
+        units = [(g["id"], i, " ".join(t["t"] for t in ln["tokens"]))
+                 for g in edition["inscriptions"] for i, ln in enumerate(g["lines"], start=1)]
+    elif ed_fmt == "stanza-text":
         st = stanza_lines(work_dir / m["edition"]["file"], pilot["stanzas"])
         units = [(k, i, t) for k in pilot["stanzas"] for i, t in enumerate(st.get(k, []), start=1)]
         for k in pilot["stanzas"]:
@@ -197,8 +203,13 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         caesura_at = len(halves[0].split()) if len(halves) == 2 else None
         printed_text = text
         text = " ".join(text.split())
-        raw = [] if ed_fmt in ("conllu", "morphgnt", "oshb") else text.split()
+        raw = [] if ed_fmt in ("conllu", "morphgnt", "oshb", "weft-edition") else text.split()
         surfaces, puncts, leads = [], [], []
+        if ed_fmt == "weft-edition":
+            g = groups[book]
+            etoks = g["lines"][n - 1]["tokens"]
+            surfaces = [t["t"] for t in etoks]
+            puncts, leads = [None] * len(surfaces), [None] * len(surfaces)
         if ed_fmt == "oshb":
             surfaces = [r["word"] for r in verses[n]]
             puncts = [r.get("punct") for r in verses[n]]
@@ -244,6 +255,14 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                     tok["surface"] = s = ns
             if caesura_at is not None and i == caesura_at + 1:
                 tok["caesura"] = True
+            if ed_fmt == "weft-edition":
+                et = etoks[i - 1]
+                runes, missing = runic.to_runes(s, g["alphabet"])
+                tok["script"] = runes
+                if missing:
+                    fail("rune-missing", f"{book}.{n} {s} {missing}")
+                if et.get("n"):
+                    tok["norm"] = et["n"]
             if lead:
                 tok["lead"] = lead
             if p:
@@ -268,8 +287,11 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             snd = {}
             if lang == "grc":
                 _, qhit = greek.apply_quantity(greek.normalize_elision(s).rstrip("’"), quantities)
+            say = tok.get("norm", s)          # runic: sound comes from the normalized form
+            if ed_fmt == "weft-edition":
+                extra["dialect"] = groups[book]["dialect"]
             for scheme in m["schemes"]:
-                r = phon.phonemize(s, scheme, quantities, **extra,
+                r = phon.phonemize(say, scheme, quantities, **extra,
                                    **({"silluq": True} if w and w.get("silluq") else {}))
                 snd[scheme] = {"ipa": r["ipa"], "respell": r["respell"]}
             tok["sound"] = snd
@@ -294,6 +316,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             "id": lid(book, n),
             "cite": f"{m['urn']}.{m['edition']['id']}:" + (f"{book}.{n}" if book is not None else f"{n}"),
             **({"stanza": book} if ed_fmt == "stanza-text" else {}),
+            **({"stanza": book, "stanza_title": groups[book]["title"]} if ed_fmt == "weft-edition" else {}),
             "text": text,
             "tokens": toks,
         }
@@ -317,18 +340,21 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                 "morph": {"src": m["treebank"]["id"]}} if tb_fmt != "none" else
                {"lemma": {"src": "none: no treebank; hand annotation in curated/"},
                 "morph": {"src": "none: no treebank; hand annotation in curated/"}}),
-            "sound": {"src": f"weft.{phon.__name__.rsplit('.', 1)[-1]} {phon.VERSION}" + (" + quantity table" if lang == "lat" else "")},
+            "sound": {"src": f"weft.{phon.__name__.rsplit('.', 1)[-1]} {phon.VERSION}" + (" + quantity table" if lang == "lat" else "")
+                      + (", from the normalized form" if ed_fmt == "weft-edition" else "")},
+            **({"script": {"src": f"weft.runic {runic.VERSION}: generated from the transliteration"}} if ed_fmt == "weft-edition" else {}),
         },
         "lines": lines,
     }
-    stem = "lines" if book is None and ed_fmt != "stanza-text" else {"stanza-text": "stanzas", "verse-text": "lines"}.get(ed_fmt) or (
+    stem = "inscriptions" if ed_fmt == "weft-edition" else "lines" if book is None and ed_fmt != "stanza-text" else {"stanza-text": "stanzas", "verse-text": "lines"}.get(ed_fmt) or (
         f"chapter{book:02d}" if ed_fmt in ("conllu", "morphgnt", "oshb") else f"book{book:02d}")
     out = work_dir / "gen" / f"{stem}.yaml"
     header = "# Generated by `weft draft`. Do not edit. Corrections go in curated/.\n"
     out.write_text(header + yaml.dump(gen, allow_unicode=True, sort_keys=False, width=200,
                                       default_flow_style=None))
     report = {
-        "run": {"weft": __version__, **({"stanzas": pilot["stanzas"]} if ed_fmt == "stanza-text"
+        "run": {"weft": __version__, **({"inscriptions": [u[0] for u in units if u[1] == 1]} if ed_fmt == "weft-edition"
+                                          else {"stanzas": pilot["stanzas"]} if ed_fmt == "stanza-text"
                                           else {"lines": f"{first}-{last}"} if ed_fmt == "verse-text"
                                           else {"book": book, "lines": f"{first}-{last}"})},
         "counts": {"lines": len(lines), "tokens": ntok},

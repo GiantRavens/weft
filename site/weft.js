@@ -19,6 +19,7 @@
 
   /* ---------- settings, persisted per viewer */
   const LAYERS = [
+    ...(D.lines.some((l) => l.tokens.some((t) => t.script)) ? [["script", "Script (runes)"]] : []),
     ["source", "Source text"], ["sound", "Sound"], ["gloss", "Gloss, word for word"],
     ["metre", "Metre"], ["sense", "Translations"], ["notes", "Note markers"],
   ];
@@ -61,9 +62,9 @@
   }
   const trOrder = Object.fromEntries(D.translations.map((t, i) => [t.id, i]));
   const shortRef = (id) => id.split(".").slice(1).join(".");
-  const STANZAS = D.work.unit === "stanza-line";
-  // stanza works label lines "76.3"; book works label them "3"
-  const lineNo = (id) => STANZAS ? id.split(".").slice(-2).join(".") : id.split(".").pop();
+  const STANZAS = D.work.unit === "stanza-line" || D.work.unit === "inscription";
+  // stanza works label lines "76.3"; book works and inscriptions label them "3"
+  const lineNo = (id) => D.work.unit === "stanza-line" ? id.split(".").slice(-2).join(".") : id.split(".").pop();
   const tokNo = (id) => id.split(".").pop();
   // what a numbered unit is called: poems have lines, scripture has verses, sagas have sentences
   const UNIT = { verse: "verse", sentence: "sentence" }[D.work.unit] || "line";
@@ -73,7 +74,9 @@
   document.title = `${D.work.title} · Weft`;
   $("#work-title").textContent = D.work.title;
   const first = D.lines[0], last = D.lines[D.lines.length - 1];
-  $("#work-byline").textContent = STANZAS
+  $("#work-byline").textContent = D.work.unit === "inscription"
+    ? `${D.work.author} · ${new Set(D.lines.map((l) => l.stanza)).size} inscriptions`
+    : STANZAS
     ? `${D.work.author} · stanzas ${[...new Set(D.lines.map((l) => l.stanza))].join(", ")}`
     : `${D.work.author} · ${shortRef(first.id)}–${lineNo(last.id)}`;
   const anyDraft = D.lines.some((l) => l.curated || l.tokens.some((t) => t.curated && Object.values(t.curated).some((c) => c.status !== "reviewed")));
@@ -113,6 +116,7 @@
           "data-id": t.id, onclick: () => showWord(t, line),
           "aria-label": `${t.surface}${t.gloss ? ", " + t.gloss : ""}`,
         },
+          t.script ? h("span", { class: "scr", "aria-hidden": "true", text: t.script }) : null,
           h("span", { class: "src", lang: LANG }, t.lead ? h("span", { class: "p", text: t.lead }) : null, h("span", { class: "form", text: shown(t) }), t.punct ? h("span", { class: "p", text: t.punct }) : null),
           h("span", { class: "snd", text: snd.respell || "" }),
           h("span", { class: "gls", text: t.gloss || "·" }),
@@ -126,10 +130,11 @@
       for (const { tr, span } of spans) {
         const t = trById[tr];
         const range = span.lines[0] === span.lines[1] ? `${UNIT} ${lineNo(span.lines[0])}` : `${UNIT}s ${lineNo(span.lines[0])}–${lineNo(span.lines[1])}`;
-        sense.append(h("blockquote", { class: "tr" }, span.text, h("cite", { text: `${t.translator}, ${t.year} · ${range}` })));
+        const who = t.kind === "editorial" ? `${t.translator} · ${range}` : `${t.translator}, ${t.year} · ${range}`;
+        sense.append(h("blockquote", { class: "tr" + (t.kind === "editorial" ? " editorial" : "") }, span.text, h("cite", { text: who })));
       }
       const newStanza = STANZAS && line.stanza !== prevStanza;
-      if (newStanza) text.append(h("h2", { class: "stanza-head", text: `Stanza ${line.stanza}` }));
+      if (newStanza) text.append(h("h2", { class: "stanza-head", text: line.stanza_title || `Stanza ${line.stanza}` }));
       prevStanza = line.stanza;
       text.append(h("section", { class: "lineset" + (newStanza ? " stanza-first" : ""), id: line.id },
         gutter, h("div", { class: "body" }, strip, metre, spans.length ? sense : null)));
@@ -166,6 +171,8 @@
     const dl = h("dl", {},
       h("dt", { text: "lemma" }), h("dd", { class: "lemma", lang: LANG, text: t.lemma || "—" }),
       h("dt", { text: "form" }), h("dd", { text: t.morph_text || "indeclinable" }),
+      ...(t.script ? [h("dt", { text: "runes" }), h("dd", { class: "scr-big", text: t.script })] : []),
+      ...(t.norm ? [h("dt", { text: "normalized" }), h("dd", { text: t.norm })] : []),
       ...(t.enclitic ? [h("dt", { text: "enclitic" }), h("dd", { lang: LANG, text: `${t.enclitic.form} (${t.enclitic.lemma}, 'and'), attached to the end of the word` })] : []),
       ...(t.prefixes || []).flatMap((pf) => [h("dt", { text: "prefix" }),
         h("dd", {}, h("span", { lang: LANG, text: pf.form + " " }), `'${pf.gloss}'${pf.morph_text ? ", " + pf.morph_text : ""}`)]),

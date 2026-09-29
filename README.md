@@ -76,7 +76,7 @@ server, so a page or the whole folder can be sent as an attachment.
 
 ## Status
 
-Eight works built across six languages, oldest first in the library:
+Nine works built across seven languages, oldest first in the library:
 
 | Work | Passage | Schemes | Translations |
 |---|---|---|---|
@@ -86,12 +86,15 @@ Eight works built across six languages, oldest first in the library:
 | Ovid, Metamorphoses | 1.1-9 | classical, ecclesiastical | Golding 1567, More 1922 |
 | Hávamál (Poetic Edda) | stanzas 1, 76, 77 | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
 | Li Bai, Quiet Night Thought | 4 lines | Tang, Mandarin, Cantonese | Cranmer-Byng 1909 |
+| Runic inscriptions: Kylver, Gallehus, Rök | 3 inscriptions | Proto-Norse, Old East Norse | Stephens 1884; Weft editorial reading |
 | Beowulf | 1-11 | late West Saxon | Gummere 1910, Morris and Wyatt 1895 |
 | Grettis saga | chapter 14, sentences 1-9 | modern Icelandic, Old Norse | Morris and Magnússon 1869, Hight 1914 |
 
 Homer, Ovid, John and Grettis saga take lemma and grammar from treebanks (AGDT, LDT, MorphGNT, IcePaHC); Genesis from the Open Scriptures Hebrew Bible; Li Bai from the Kyoto Classical Chinese treebank, with Tang readings from Unicode's Unihan database. No open
-treebank covers Eddic or Old English poetry, so Hávamál and Beowulf are hand-annotated against
-Zoëga and Clark Hall and marked draft (see CLAUDE.md rule 3).
+treebank covers Eddic or Old English poetry or runic inscriptions, so Hávamál, Beowulf and the
+runes are hand-annotated and marked draft (see CLAUDE.md rule 3). The runic page adds a script
+row, generated from the transliteration, and a labelled Weft translation where no public-domain
+modern one exists.
 
 `weft build` also writes `site/build/index.html`, a library page listing every built work.
 Glosses, scansion, treebank corrections and editorial notes are drafts awaiting scholarly

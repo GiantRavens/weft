@@ -15,7 +15,7 @@ import yaml
 from . import __version__, treebank
 from .draft import PHON, load_manifest
 
-HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "lzh": "lzh"}
+HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "lzh": "lzh", "runic": "gmq"}
 RTL = {"hbo"}
 
 
@@ -50,7 +50,7 @@ def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
                     target.setdefault("curated", {}).update({f: {"by": cs.get("by"), "date": str(cs.get("date")), "status": cs.get("status", "draft")} for f in fields})
 
     # translations: public from manifest, private ones from private/<work>/manifest.yaml
-    translations = {t["id"]: {k: v for k, v in t.items() if k in ("id", "translator", "year", "form", "license")}
+    translations = {t["id"]: {k: v for k, v in t.items() if k in ("id", "translator", "year", "form", "license", "kind", "partial")}
                     for t in m.get("translations", [])}
     sense_roots = [work_dir / "sense"]
     if private_dir:
@@ -168,7 +168,7 @@ def run(repo: Path, work: str, private: bool = False) -> Path:
     return out
 
 
-LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "lzh": "Classical Chinese"}
+LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "lzh": "Classical Chinese", "runic": "Runic Norse"}
 
 
 def write_index(repo: Path, out_dir: Path) -> Path:
@@ -181,7 +181,9 @@ def write_index(repo: Path, out_dir: Path) -> Path:
             continue
         written = (m.get("written") or {}).get("label", "")
         pl = m.get("pilot", {})
-        if pl.get("stanzas"):
+        if pl.get("inscriptions"):
+            span = f"{len(pl['inscriptions'])} inscriptions"
+        elif pl.get("stanzas"):
             span = "stanzas " + ", ".join(str(x) for x in pl["stanzas"])
         else:
             span = (f"{pl.get('book')}.{pl.get('first')}–{pl.get('last')}" if pl.get("book")

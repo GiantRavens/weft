@@ -215,3 +215,10 @@ body.rtl .w.caesura { border-left: 0; border-right: 1px dotted var(--rule); }
   .worknav .lib { grid-column: 1 / -1; grid-row: 1; }
 }
 @media print { .worknav, .home { display: none !important; } }
+
+/* ---------- script row (runes above the transliteration) */
+.scr { font-family: "Noto Sans Runic", "Segoe UI Historic", sans-serif; font-size: calc(var(--src-size) * 1.05); line-height: 1.1; letter-spacing: 0.04em; color: var(--ink-soft); white-space: nowrap; }
+.word .scr-big { font-family: "Noto Sans Runic", "Segoe UI Historic", sans-serif; font-size: 1.6rem; }
+body.hide-script .scr { display: none; }
+.tr.editorial { border-left-style: dashed; }
+.tr.editorial cite::after { content: " · editorial, draft"; }

@@ -221,3 +221,25 @@ def test_chinese_and_libai():
             "○○○●○ · rhyme -ɑng", "○●●●○ · rhyme -ɑng", "●○○○● · rhyme -uæt", "○○○●○ · rhyme -ɑng"]
     r = check.run(REPO, "libai-jingyesi")
     assert r["ok"], r["problems"]
+
+
+def test_runes():
+    from weft import runic
+    assert runic.to_runes("hlewagastiz", "elder") == ("ᚺᛚᛖᚹᚨᚷᚨᛊᛏᛁᛉ", [])
+    assert runic.to_runes("stonta", "younger-short-twig") == ("ᛌᛐᚬᚿᛐᛆ", [])     # ᚬ spells nasal a
+    assert runic.to_runes("fuþarkgwhnijpïzstbemlŋdo", "elder")[0] == "ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛈᛇᛉᛊᛏᛒᛖᛗᛚᛜᛞᛟ"
+    cases = {("Hlewagastiz", "pn"): "HLE-wa-ghas-tiz",   # g between vowels is a fricative; z stays z
+             ("tawidō", "pn"): "TA-wi-dhoh",             # d between vowels = dh; macron = long
+             ("standa", "oen"): "STAN-da",               # sound from the normalized form, not the runes
+             ("faigian", "oen"): "FAI-ghi-an"}
+    for (w, d), want in cases.items():
+        assert runic.phonemize(w, dialect=d)["respell"] == want, w
+    work = REPO / "texts" / "runes"
+    if sources_present(work):
+        before = (work / "gen/inscriptions.yaml").read_text()
+        report = draft.run(work)
+        assert (work / "gen/inscriptions.yaml").read_text() == before
+        assert report["counts"] == {"lines": 4, "tokens": 41}
+        assert report["failures"] == {}
+    r = check.run(REPO, "runes")
+    assert r["ok"], r["problems"]

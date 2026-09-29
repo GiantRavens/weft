@@ -90,6 +90,12 @@ spans:
 Spans must not overlap and should cover every line. `weft check` reports `sense-overlap` and
 `sense-gap`. The page shows a span after the last line it covers.
 
+## Translations: partial and editorial
+
+A translation entry may carry `partial: "<reason>"` when it covers only some lines (Stephens
+predates the Kylver find), and `kind: editorial` when the text is Weft's own translation rather
+than a published one. The page labels editorial translations "editorial, draft" with a dashed rule.
+
 ## notes/bookNN.yaml
 
 ```yaml
