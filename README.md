@@ -1,4 +1,11 @@
-# Weft
+<h1 align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="art/weft-lockup-reverse.svg">
+    <img alt="Weft" src="art/weft-lockup.svg" width="320">
+  </picture>
+</h1>
+
+<p align="center"><strong><a href="https://giantravens.github.io/weft/">Read the library</a></strong></p>
 
 Living interlinear editions of classical texts. Every line of the source is stitched to
 its sound, its literal word-for-word gloss, and one or more published translations,
@@ -45,6 +52,16 @@ Later layers: metre, notes, audio. Layers are named, never numbered.
     pipeline/                    the lifecycle steps as CLI commands
     site/                        renderer
     docs/                        schema, lifecycle, decisions
+
+## Viewing
+
+The library is published to GitHub Pages on every push to `main`:
+<https://giantravens.github.io/weft/>. The workflow in `.github/workflows/pages.yml` runs the
+tests, builds every work with `weft build all`, and deploys `site/build/`. It needs no source
+files, because the build reads only what is committed.
+
+Each page is also a single self-contained file. `site/build/<work>.html` opens from disk with no
+server, so a page or the whole folder can be sent as an attachment.
 
 ## Quickstart
 

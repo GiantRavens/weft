@@ -1,0 +1,49 @@
+# Build the Weft library and publish it to GitHub Pages on every push to main.
+#
+# The build reads only committed data (generated layers, curated overlays, alignments, notes,
+# art). The licensed source files are never in the repository and are not needed here.
+# Tests run first; the draft-reproduction checks skip because the sources are absent.
+name: Library to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Install Weft
+        run: |
+          uv venv --python 3.12
+          uv pip install -e .
+      - name: Test
+        run: uv run --with pytest pytest -q tests
+      - name: Build the library
+        run: .venv/bin/weft build all
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
