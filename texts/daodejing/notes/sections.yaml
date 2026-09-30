@@ -1,0 +1,47 @@
+# Notes for Daodejing 1-2. Editorial, draft.
+- id: n.ddj.1.1.sound
+  attach: ddj.1.1
+  kind: editorial
+  status: draft
+  leans_on: "William H. Baxter and Laurent Sagart, Old Chinese: A New Reconstruction (2014), readings as published in English Wiktionary (pipeline/weft/data/lzh_oc_bs.yaml)"
+  text: "The default sound row is Old Chinese as reconstructed by Baxter and Sagart, the stage of the language before about 200 BC. It is a reconstruction, built from rhymes in early poetry, the sound elements of characters and later Chinese dialects, and it is approximate: brackets in the scholarly form, shown in each word's details, mark sounds they could not pin down. In their model the language had no tones yet. A final glottal catch (ʔ) later became the rising tone and a final -s the departing tone, which is why 道 'way', kə-lˤuʔ here, is dhɑ̌u in the Tang row, with the rising-tone mark, and dào in Mandarin."
+- id: n.ddj.1.1.chang
+  attach: ddj.1.1.5
+  kind: editorial
+  status: draft
+  leans_on: "Mawangdui silk manuscripts A and B (tomb 3, sealed 168 BC), as published in Mawangdui Han mu boshu (1980)"
+  text: "常 'constant' is the word of the transmitted text. The two Mawangdui manuscripts, the earliest witnesses to this chapter, write 恆, which has a similar sense. The change is usually explained as avoiding the personal name of Emperor Wen of Han, Liu Heng (劉恆, reigned 180 to 157 BC), which later scribes could not write. On that account 常 entered the text after the Mawangdui copies were made."
+- id: n.ddj.1.5.division
+  attach: ddj.1.5
+  kind: editorial
+  status: draft
+  leans_on: "Wang Bi's commentary in sources/wangbi-wikisource.txt; Mawangdui manuscripts (1980 edition)"
+  text: "Lines 5 and 6 can be divided two ways. Wang Bi, followed by this edition's punctuation and the gloss, reads 常無欲 'constantly without desire' and 常有欲 'constantly having desire'. Song scholars, among them Wang Anshi, divided after 無 and 有 instead: 常無，欲以觀其妙, 'in constant non-being, one would observe its subtlety'. Legge follows the first reading, Chalmers the second. The Mawangdui manuscripts add the particle 也 after 欲 (恆無欲也), which supports Wang Bi's division for the text as it stood in the 2nd century BC."
+- id: n.ddj.1.9.zhi
+  attach: ddj.1.9.2
+  kind: editorial
+  status: draft
+  text: "玄之又玄 is short and its grammar is not settled. The gloss takes 之 as an object pronoun, 'darken it and again darken', a reading of degree: dark beyond dark. Others treat 之 as a linking particle with no English equivalent. 玄 names a dark colour, black with a tinge of red, and by extension what is hidden; the translations render it 'Mystery' (Legge) and 'abyss' (Chalmers)."
+- id: n.ddj.2.1.witnesses
+  attach: ddj.2.1
+  kind: editorial
+  status: draft
+  leans_on: "Guodian Chu mu zhujian (1998); Mawangdui Han mu boshu (1980)"
+  text: "Chapter 2 is among the passages on the Guodian bamboo slips, from a tomb closed about 300 BC, the oldest known witness to the Laozi. Chapter 1 is not on them; its oldest witnesses are the Mawangdui manuscripts. The Guodian and Mawangdui texts differ from Wang Bi's in small ways here. They add the particle 之 in each pair (有無之相生), and where Wang Bi has 傾 'incline' they have a word usually read as 盈 'fill'. 盈 was the personal name of Emperor Hui of Han (reigned 195 to 188 BC), and the change is commonly explained, like 常 in chapter 1, as avoiding it."
+- id: n.ddj.2.5.jiao
+  attach: ddj.2.5.4
+  kind: editorial
+  status: draft
+  leans_on: "Baxter and Sagart (2014) and Zhengzhang Shangfang (2003), via Wiktionary; Guodian and Mawangdui editions as above"
+  text: "Lines 3 to 6 are a run of four-character pairs whose last words rhyme in the Old Chinese reconstruction: 生 sreng, 成 mdeng, 傾 kwheng, all ending in *-eŋ. 較 'compare' breaks the run; it belongs to a different rhyme group. The Guodian and Mawangdui texts write this word with graphs read as 形 'shape' (Old Chinese *-eŋ), and the rhyme is one of the arguments that 形 is the older reading. 較 is also the one character in this passage missing from the Baxter-Sagart list, so its sound here comes from Zhengzhang Shangfang's reconstruction and is marked as such in its details."
+- id: n.ddj.2.15.qu
+  attach: ddj.2.15.8
+  kind: editorial
+  status: draft
+  leans_on: "Baxter and Sagart (2014), readings of 居 and 去 via Wiktionary"
+  text: "居 'dwell in' and 去 'depart' are usually counted as a rhyme in the traditional analysis, both in the 魚 group. The metre row does not mark it, because the reconstruction used here does not support it: Baxter and Sagart give 去 in the sense 'depart' as *[k]ʰ(r)ap-s, with a final *-p, against 居 *k(r)a. Their other reading of 去, *[kʰ](r)aʔ 'get rid of', would rhyme, but it does not fit the sense. Whether *-ps had already been lost by the time this couplet was composed is the open question."
+- id: n.ddj.2.7.he
+  attach: ddj.2.7.4
+  kind: editorial
+  status: draft
+  text: "和 here is read in its departing-tone sense, 'answer in tune', as a voice answers an instrument; the Old Chinese, Tang and Mandarin rows all take that reading (*[ɢ]ˤoj-s, huɑ̀, hè). Many modern readers say hé, the level-tone reading 'harmonious'. The rhyme with 隨 holds either way, since *-s does not block a rhyme."

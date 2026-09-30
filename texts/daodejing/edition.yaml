@@ -1,0 +1,60 @@
+# Weft edition of Daodejing chapters 1 and 2 in Wang Bi's text, as printed on Chinese Wikisource
+# (道德經 (王弼本), revision 2354026). Each line is checked verbatim against that page with its
+# modern punctuation stripped (verify_strip); the punctuation is the Wikisource editor's, not
+# Wang Bi's, and is not reproduced. Weft divides the text into lines at that punctuation, joining
+# two parallel clauses into one line where they form a pair; `caesura` marks where the second
+# clause starts.
+#
+# One token per character. Where a character has more than one reading, the token names the one
+# this passage needs: oc = which Baxter-Sagart reading in pipeline/weft/data/lzh_oc_bs.yaml
+# (1-based), tang = which of Unihan's kTang readings, mandarin = the modern reading. Unmarked
+# tokens take the first listed reading. `rhyme` on a line is an editorial claim that its last
+# word rhymes, in the Old Chinese reconstruction, with the other lines of the chapter carrying the
+# same letter; weft draft checks the claim (rhyme-not-supported).
+joiner: ""
+verify_in: sources/wangbi-wikisource.txt
+verify_strip: "[，。；：、「」]"
+sections:
+  - id: "1"
+    title: "Chapter 1: the Way that can be told"
+    lines:
+      - tokens: [{t: 道, oc: 2, tang: 2}, {t: 可}, {t: 道, oc: 2, tang: 2}, {t: 非, caesura: true}, {t: 常}, {t: 道, oc: 2, tang: 2}]
+      - tokens: [{t: 名}, {t: 可}, {t: 名}, {t: 非, caesura: true}, {t: 常}, {t: 名}]
+      - rhyme: "A"
+        tokens: [{t: 無}, {t: 名}, {t: 天, caesura: true}, {t: 地, mandarin: dì}, {t: 之}, {t: 始}]
+      - rhyme: "A"
+        tokens: [{t: 有}, {t: 名}, {t: 萬, caesura: true}, {t: 物}, {t: 之}, {t: 母}]
+      - rhyme: "B"
+        tokens: [{t: 故}, {t: 常}, {t: 無}, {t: 欲}, {t: 以, caesura: true}, {t: 觀}, {t: 其}, {t: 妙}]
+      - rhyme: "B"
+        tokens: [{t: 常}, {t: 有}, {t: 欲}, {t: 以, caesura: true}, {t: 觀}, {t: 其}, {t: 徼, oc: 2}]
+      - tokens: [{t: 此}, {t: 兩, tang: 2}, {t: 者}, {t: 同, caesura: true}, {t: 出}, {t: 而}, {t: 異}, {t: 名}]
+      - tokens: [{t: 同}, {t: 謂}, {t: 之}, {t: 玄}]
+      - tokens: [{t: 玄}, {t: 之}, {t: 又}, {t: 玄}, {t: 眾, caesura: true}, {t: 妙}, {t: 之}, {t: 門}]
+  - id: "2"
+    title: "Chapter 2: beauty and ugliness"
+    lines:
+      - tokens: [{t: 天}, {t: 下, tang: 2}, {t: 皆}, {t: 知}, {t: 美}, {t: 之}, {t: 為, mandarin: wéi}, {t: 美}, {t: 斯, caesura: true}, {t: 惡}, {t: 已}]
+      - tokens: [{t: 皆}, {t: 知}, {t: 善}, {t: 之}, {t: 為, mandarin: wéi}, {t: 善}, {t: 斯, caesura: true}, {t: 不}, {t: 善}, {t: 已}]
+      - rhyme: "A"
+        tokens: [{t: 故}, {t: 有}, {t: 無}, {t: 相}, {t: 生}]
+      - rhyme: "A"
+        tokens: [{t: 難}, {t: 易}, {t: 相}, {t: 成, oc: 2}]
+      - tokens: [{t: 長, mandarin: cháng}, {t: 短}, {t: 相}, {t: 較}]
+      - rhyme: "A"
+        tokens: [{t: 高}, {t: 下, tang: 2}, {t: 相}, {t: 傾}]
+      - rhyme: "B"
+        tokens: [{t: 音}, {t: 聲}, {t: 相}, {t: 和, oc: 2, tang: 2, mandarin: hè}]
+      - rhyme: "B"
+        tokens: [{t: 前}, {t: 後}, {t: 相}, {t: 隨}]
+      - rhyme: "C"
+        tokens: [{t: 是}, {t: 以}, {t: 聖}, {t: 人}, {t: 處, tang: 2, mandarin: chǔ}, {t: 無}, {t: 為, mandarin: wéi}, {t: 之}, {t: 事}]
+      - tokens: [{t: 行, oc: 2}, {t: 不}, {t: 言}, {t: 之}, {t: 教, oc: 2, tang: 2}]
+      - rhyme: "C"
+        tokens: [{t: 萬}, {t: 物}, {t: 作}, {t: 焉, oc: 2, tang: 2}, {t: 而}, {t: 不}, {t: 辭}]
+      - rhyme: "C"
+        tokens: [{t: 生}, {t: 而}, {t: 不}, {t: 有}]
+      - rhyme: "C"
+        tokens: [{t: 為, mandarin: wéi}, {t: 而}, {t: 不}, {t: 恃}]
+      - tokens: [{t: 功}, {t: 成}, {t: 而}, {t: 弗}, {t: 居}]
+      - tokens: [{t: 夫, oc: 2, tang: 2, mandarin: fú}, {t: 唯}, {t: 弗}, {t: 居}, {t: 是, caesura: true}, {t: 以}, {t: 不}, {t: 去, oc: 2}]

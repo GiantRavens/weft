@@ -43,6 +43,9 @@ UD_VAL = {"Sing": "singular", "Plur": "plural", "Dual": "dual", "Pres": "present
           "Opt": "optative", "Abl": "ablative", "Ger": "gerund",
           # Vedic Sanskrit
           "Ins": "instrumental", "Loc": "locative", "Gdv": "gerundive",
+          # Akkadian verb stems and the stative
+          "G": "G-stem (basic)", "D": "D-stem (doubled)", "Š": "Š-stem (causative)", "N": "N-stem (passive)",
+          "Stative": "stative", "Cnd": "conditional",
           # Biblical Hebrew (OSHB)
           "Qal": "qal stem", "Niphal": "niphal stem", "Piel": "piel stem", "Pual": "pual stem",
           "Hiphil": "hiphil stem", "Hophal": "hophal stem", "Hithpael": "hithpael stem",

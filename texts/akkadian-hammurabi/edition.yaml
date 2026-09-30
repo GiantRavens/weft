@@ -1,0 +1,163 @@
+# Weft edition of the prologue of the Laws of Hammurabi, column I, lines 1-53: the first sentence
+# ("When exalted Anum ...") and the king's self-naming that follows it. The transliteration is
+# R. F. Harper's (1904), from the validated transcription of his page 2 on multilingual Wikisource,
+# checked verbatim against sources/harper1904-p22.txt by `weft draft`.
+#
+# One Weft line is one line of the stele's column as Harper numbers it. Harper separates lines
+# with a bar and prints a small raised b inside some lines; his page does not say what the b marks,
+# and Weft sets it aside (verify_strip), with the <sup> markup of the wiki text.
+#
+#   t    Harper's transliteration, verbatim. His conventions: no homophone indices; (N)i is the
+#        sign NI read i; ši(g) is the sign SIG read ši; capitals are signs read as Sumerian words;
+#        whole words in lower case with a circumflex (mâtim, dârî) are his readings of logograms
+#   det  the determinative Harper prints raised before the word (ilu, the divine determinative)
+#   sg   the signs as read today, in Oracc conventions, entered by hand and checked against the
+#        stele transliteration of CDLI P249253 (Louvre Sb 8). The cuneiform row is generated from it
+#   n    the Old Babylonian normalization, entered by hand. It drives the sound
+joiner: " "
+verify_in: sources/harper1904-p22.txt
+verify_strip: '<sup>b</sup>|</?sup>'
+sections:
+  - id: "1"
+    title: "Column I, lines 1-53: the gods give Babylon its kingship and name Hammurabi"
+    lines:
+      - tokens:
+        - {t: "(N)i-nu", n: "inu", sg: "i₃-nu"}
+        - {t: "ilum", n: "Anum", sg: "AN"}
+        - {t: "ṣi-ru-um", n: "ṣīrum", sg: "ṣi-ru-um"}
+      - tokens:
+        - {t: "šar", n: "šar", sg: "LUGAL"}
+        - {t: "iluA-nun-na-ki", n: "Anunnakī", sg: "{d}a-nun-na-ki", det: "ilu"}
+      - tokens:
+        - {t: "iluEN.LIL", n: "Ellil", sg: "{d}EN.LIL₂", det: "ilu"}
+      - tokens:
+        - {t: "be-el", n: "bēl", sg: "be-el"}
+        - {t: "ša-me-e", n: "šamê", sg: "ša-me-e"}
+      - tokens:
+        - {t: "u", n: "u", sg: "u₃"}
+        - {t: "ir-ṣi-tim", n: "erṣetim", sg: "er-ṣe-tim"}
+      - tokens:
+        - {t: "ša-i-im", n: "šāʾim", sg: "ša-i-im"}
+      - tokens:
+        - {t: "ši-ma-at", n: "šīmāt", sg: "ši-ma-at"}
+        - {t: "mâtim", n: "mātim", sg: "KALAM"}
+      - tokens:
+        - {t: "a-na", n: "ana", sg: "a-na"}
+        - {t: "iluMarduk", n: "Marduk", sg: "{d}AMAR.UTU", det: "ilu"}
+      - tokens:
+        - {t: "mâr+ri-eš-ti-im", n: "mārim rēštîm", sg: "DUMU re-eš-ti-im"}
+      - tokens:
+        - {t: "ša", n: "ša", sg: "ša"}
+        - {t: "iluEN.KI", n: "Ea", sg: "{d}EN.KI", det: "ilu"}
+      - tokens:
+        - {t: "ilubêlu-ut", n: "ellilūt", sg: "{d}EN.LIL₂-ut", det: "ilu"}
+      - tokens:
+        - {t: "kiššat", n: "kiššat", sg: "kiš"}
+        - {t: "ni-ši(g)", n: "nišī", sg: "ni-ši₃"}
+      - tokens:
+        - {t: "i-ši-mu-šum", n: "išīmūšum", sg: "i-ši-mu-šum"}
+      - tokens:
+        - {t: "in", n: "in", sg: "in"}
+        - {t: "I-gi-gi", n: "Igigī", sg: "i-gi₄-gi₄"}
+      - tokens:
+        - {t: "u-šar-be-u-šu", n: "ušarbiūšu", sg: "u₂-šar-bi₂-u₃-šu"}
+      - tokens:
+        - {t: "KA.DINGIR.RA.KI", n: "Bābilam", sg: "KA₂.DINGIR.RA{ki}"}
+      - tokens:
+        - {t: "šum-šu", n: "šumšu", sg: "šum-šu"}
+        - {t: "ṣi-ra-am", n: "ṣīram", sg: "ṣi-ra-am"}
+        - {t: "ib-bi-u", n: "ibbiū", sg: "ib-bi-u₃"}
+      - tokens:
+        - {t: "in", n: "in", sg: "in"}
+        - {t: "ki-ib-ra-tim", n: "kibrātim", sg: "ki-ib-ra-tim"}
+      - tokens:
+        - {t: "u-ša-te-ru-šu", n: "ušāterūšu", sg: "u₂-ša-ṭe₄-ru-šu"}
+      - tokens:
+        - {t: "i-na", n: "ina", sg: "i-na"}
+        - {t: "li-ib-bi-šu", n: "libbišu", sg: "li-ib-bi-šu"}
+      - tokens:
+        - {t: "šar-ru-tam", n: "šarrūtam", sg: "šar-ru-tam"}
+        - {t: "dârî-tam", n: "dārītam", sg: "da-ri₂-tam"}
+      - tokens:
+        - {t: "ša", n: "ša", sg: "ša"}
+        - {t: "ki-ma", n: "kīma", sg: "ki-ma"}
+        - {t: "ša-me-e", n: "šamê", sg: "ša-me-e"}
+      - tokens:
+        - {t: "u", n: "u", sg: "u₃"}
+        - {t: "ir-ṣi-tim", n: "erṣetim", sg: "er-ṣe-tim"}
+      - tokens:
+        - {t: "iš-da-ša", n: "išdāša", sg: "iš-da-ša"}
+      - tokens:
+        - {t: "šu-ur-šu-da", n: "šuršudā", sg: "šu-ur₂-šu-da"}
+      - tokens:
+        - {t: "u-ki-in-nu-šum", n: "ukinnūšum", sg: "u₂-ki-in-nu-šum"}
+      - tokens:
+        - {t: "i-nu-mi-šu", n: "inūmīšu", sg: "i-nu-mi-šu"}
+      - tokens:
+        - {t: "Ḫa-am-mu-ra-bi", n: "Ḫammurabi", sg: "{diš}ḫa-am-mu-ra-pi₂"}
+      - tokens:
+        - {t: "ru-ba-am", n: "rubâm", sg: "ru-ba-am"}
+      - tokens:
+        - {t: "na-’-dam", n: "naʾdam", sg: "na-a'-dam"}
+      - tokens:
+        - {t: "pa-li-iḫ", n: "pāliḫ", sg: "pa-li-iḫ"}
+        - {t: "ili", n: "ilī", sg: "i₃-li₂"}
+        - {t: "ia-ti", n: "yâti", sg: "ia-ti"}
+      - tokens:
+        - {t: "mi-ša-ra-am", n: "mīšaram", sg: "mi-ša-ra-am"}
+      - tokens:
+        - {t: "i-na", n: "ina", sg: "i-na"}
+        - {t: "ma-tim", n: "mātim", sg: "ma-tim"}
+      - tokens:
+        - {t: "a-na", n: "ana", sg: "a-na"}
+        - {t: "šu-bi-i-im", n: "šūpîm", sg: "šu-pi₂-i-im"}
+      - tokens:
+        - {t: "ra-ga-am", n: "raggam", sg: "ra-ga-am"}
+        - {t: "u", n: "u", sg: "u₃"}
+        - {t: "ṣi-nam", n: "ṣēnam", sg: "ṣe-nam"}
+      - tokens:
+        - {t: "a-na", n: "ana", sg: "a-na"}
+        - {t: "ḫu-ul-lu-ḳi-im", n: "ḫulluqim", sg: "ḫu-ul-lu-qi₂-im"}
+      - tokens:
+        - {t: "dan-nu-um", n: "dannum", sg: "dan-nu-um"}
+      - tokens:
+        - {t: "en-ša-am", n: "enšam", sg: "en-ša-am"}
+      - tokens:
+        - {t: "a-na", n: "ana", sg: "a-na"}
+        - {t: "la", n: "lā", sg: "la"}
+        - {t: "ḫa-ba-li-im", n: "ḫabālim", sg: "ḫa-ba-li-im"}
+      - tokens:
+        - {t: "ki-ma", n: "kīma", sg: "ki-ma"}
+        - {t: "iluŠamaš", n: "Šamaš", sg: "{d}UTU", det: "ilu"}
+      - tokens:
+        - {t: "a-na", n: "ana", sg: "a-na"}
+        - {t: "SAG.GIG", n: "ṣalmāt qaqqadim", sg: "SAG.GE₆"}
+      - tokens:
+        - {t: "wa-ṣi-e-im-ma", n: "waṣêmma", sg: "wa-ṣe-e-em-ma"}
+      - tokens:
+        - {t: "ma-tim", n: "mātim", sg: "ma-tim"}
+      - tokens:
+        - {t: "nu-wu-ri-im", n: "nuwwurim", sg: "nu-wu-ri-im"}
+      - tokens:
+        - {t: "ilum", n: "Anum", sg: "AN"}
+      - tokens:
+        - {t: "u", n: "u", sg: "u₃"}
+        - {t: "iluEN-LIL", n: "Ellil", sg: "{d}EN.LIL₂", det: "ilu"}
+      - tokens:
+        - {t: "a-na", n: "ana", sg: "a-na"}
+        - {t: "ši-ir", n: "šīr", sg: "ši-ir"}
+        - {t: "ni-ši", n: "nišī", sg: "ni-ši"}
+      - tokens:
+        - {t: "tu-ub-bi-im", n: "ṭubbim", sg: "ṭu₂-ub-bi-im"}
+      - tokens:
+        - {t: "šu-mi", n: "šumī", sg: "šu-mi"}
+        - {t: "ib-bu-u", n: "ibbû", sg: "ib-bu-u₂"}
+      - tokens:
+        - {t: "Ḫa-am-mu-ra-bi", n: "Ḫammurabi", sg: "{diš}ḫa-am-mu-ra-pi₂"}
+      - tokens:
+        - {t: "ri-i-a-um", n: "rēʾûm", sg: "re-iu-um"}
+      - tokens:
+        - {t: "ni-bi-it", n: "nibīt", sg: "ni-bi-it"}
+      - tokens:
+        - {t: "iluEN.LIL", n: "Ellil", sg: "{d}EN.LIL₂", det: "ilu"}
+        - {t: "a-na-ku", n: "anāku", sg: "a-na-ku"}

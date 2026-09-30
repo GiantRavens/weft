@@ -1,0 +1,27 @@
+# From sources/chalmers1868.txt (Internet Archive OCR of the 1868 edition, pages 1 to 3), chapters
+# I and II, checked against the page images. Chapter headings and footnote markers left out.
+# OCR corrections, each confirmed on the page image:
+#   "whicli" -> "which"; "tau*eSi" -> "tau-ed"; "riot the" -> "not the";
+#   "Non-exis^nce i«" -> "Non-existence is"; "ITniverse.^" -> "Universe." (footnote marker dropped);
+#   "the. abyss — ^the abyss of abysses —" -> "the abyss—the abyss of abysses—";
+#   "words ;^" -> "words;" (footnote marker dropped); "non-exis- tence", "diffi- culty", "with- out",
+#   "pre- suming": line-end hyphens joined.
+translation: chalmers1868
+aligned_by: hand, phase 0
+spans:
+  - lines: [ddj.1.1, ddj.1.2]
+    text: "The tau (reason) which can be tau-ed (reasoned) is not the Eternal Tau (Reason). The name which can be named is not the Eternal Name."
+  - lines: [ddj.1.3, ddj.1.4]
+    text: "Non-existence is named the Antecedent of heaven and earth; and Existence is named the Mother of all things."
+  - lines: [ddj.1.5, ddj.1.6]
+    text: "In eternal non-existence, therefore, man seeks to pierce the primordial mystery; and, in eternal existence, to behold the issues of the Universe."
+  - lines: [ddj.1.7, ddj.1.9]
+    text: "But these two are one and the same, and differ only in name. This sameness (of existence and non-existence) I call the abyss—the abyss of abysses—the gate of all mystery."
+  - lines: [ddj.2.1, ddj.2.2]
+    text: "When in the world beauty is recognized to be beautiful, straightway there is ugliness. When in the world goodness is recognized to be good, straightway there is evil."
+  - lines: [ddj.2.3, ddj.2.8]
+    text: "And thus, in like manner, existence and non-existence mutually originate (or suggest) each other; so also difficulty and ease, long and short, high and low, treble and bass, before and after."
+  - lines: [ddj.2.9, ddj.2.10]
+    text: "The sage accordingly confines himself to what is without effort (not demonstrative). He carries on teaching without words;"
+  - lines: [ddj.2.11, ddj.2.15]
+    text: "and everything works without hindrance. He produces without holding possession. He acts without presuming on the result. He completes his work and assumes no position for himself. And, since he assumes no position, he never loses any."

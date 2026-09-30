@@ -15,9 +15,9 @@ import yaml
 from . import __version__, treebank
 from .draft import PHON, load_manifest
 
-HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "lzh": "lzh", "runic": "gmq", "ja": "ja", "san": "sa"}
-RTL = {"hbo"}
-LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "lzh": "Classical Chinese", "runic": "Runic Norse", "ja": "Early modern Japanese", "san": "Vedic Sanskrit"}
+HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "lzh": "lzh", "runic": "gmq", "ja": "ja", "san": "sa", "akk": "akk", "fa": "fa", "ta": "ta"}
+RTL = {"hbo", "fa"}
+LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "lzh": "Classical Chinese", "runic": "Runic Norse", "ja": "Early modern Japanese", "san": "Vedic Sanskrit", "akk": "Akkadian", "fa": "Classical Persian", "ta": "Old Tamil"}
 
 
 def _load_yaml_dir(d: Path) -> list[tuple[Path, object]]:
@@ -87,7 +87,11 @@ def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
         "work": dict({k: m.get(k) for k in ("work", "title", "author", "language", "urn", "unit", "section_noun")},
                      lang_html=HTML_LANG.get(m["language"], m["language"]),
                      dir="rtl" if m["language"] in RTL else "ltr",
-                     lang_name=LANG_NAMES.get(m["language"], m["language"])),
+                     lang_name=LANG_NAMES.get(m["language"], m["language"]),
+                     script_label=getattr(PHON[m["language"]], "SCRIPT_LABEL", "Script (runes)"),
+                     script_word=getattr(PHON[m["language"]], "SCRIPT_WORD", "runes"),
+                     show_translit=getattr(PHON[m["language"]], "SHOW_TRANSLIT", m["language"] == "san"),
+                     translit_label=getattr(PHON[m["language"]], "TRANSLIT_LABEL", "Transliteration")),
         "edition": {k: m["edition"].get(k) for k in ("id", "name", "license")},
         "treebank": ({k: m["treebank"].get(k) for k in ("id", "name", "license")} if m.get("treebank")
                      else {"id": "hand annotation", "name": "no treebank: hand annotation, draft", "license": "CC BY-SA 4.0"}),

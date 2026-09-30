@@ -117,8 +117,9 @@ lines:
     morph: a-p---fa-
     tb: 2274106/14
     sound:
-      restored: {ipa: pol.làs, respell: pol-las}
-      erasmian: {ipa: pol.ˈlas, respell: pol-LAS}
+      restored: {ipa: pol.làːs, respell: pol-laas}
+      erasmian: {ipa: pol.ˈlaːs, respell: pol-LAAS}
+    prov: {sound: weft.greek 0.1 + quantity table}
   - id: il.1.3.2
     surface: δʼ
     lemma: δέ

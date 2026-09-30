@@ -1,0 +1,88 @@
+work: persian-rubaiyat
+title: "Quatrains attributed to Omar Khayyam, set against FitzGerald"
+author: "Omar Khayyam (1048–1131), by attribution"
+language: fa
+prefix: rub                           # rub.<Whinfield number>.<line>[.<token>]
+urn: urn:weft:fa:khayyam.rubaiyat     # Weft-local identifier
+unit: section
+section_noun: quatrain
+written: {year: 1100, label: "attributed to Omar Khayyam of Nishapur (1048–1131); the earliest manuscripts behind this selection were copied in the fifteenth and sixteenth centuries"}
+status: phase-0
+pilot: {sections: ["72", "104", "353", "252", "35", "379"]}
+edition:
+  id: whinfield1883
+  name: "E. H. Whinfield, ed., The Quatrains of Omar Khayyam: the Persian text with an English verse translation (London: Trübner, 1883), via Persian Wikisource"
+  format: weft-edition
+  file: edition.yaml
+  license: "public domain (1883); Wikisource transcription CC BY-SA 4.0; Weft token division and transliteration CC BY-SA 4.0"
+treebank: null                        # no Persian treebank covers this text; hand annotation, draft
+schemes: [early, modern]              # default = Early New Persian around 1100 (approximate)
+sources_extra:
+  - id: whinfield1883-72
+    name: "Whinfield (1883), quatrain 72: Persian Wikisource page 'Quatrains of Omar Khayyam (tr. Whinfield, 1883).djvu/107', revision 247335"
+    file: sources/whinfield1883-72.txt
+    url: "https://fa.wikisource.org/w/index.php?oldid=247335&action=raw"
+    sha256: b2e98dc917f31d1b150ec2b3aa015d6e55c386b24de5e0392828f85ce9d0dc4b
+    license: "public domain (1883); Wikisource CC BY-SA 4.0"
+    license_url: "https://fa.wikisource.org/wiki/رباعیات_خیام_(تصحیح_وینفیلد)"
+  - id: whinfield1883-104
+    name: "Whinfield (1883), quatrain 104: Persian Wikisource page 'Quatrains of Omar Khayyam (tr. Whinfield, 1883).djvu/127', revision 253576"
+    file: sources/whinfield1883-104.txt
+    url: "https://fa.wikisource.org/w/index.php?oldid=253576&action=raw"
+    sha256: 17be23715dec3176326a4c6ab6d8e8853bf02ae8f05877a5e169d07048fc49f2
+    license: "public domain (1883); Wikisource CC BY-SA 4.0"
+    license_url: "https://fa.wikisource.org/wiki/رباعیات_خیام_(تصحیح_وینفیلد)"
+  - id: whinfield1883-353
+    name: "Whinfield (1883), quatrain 353: Persian Wikisource page 'Quatrains of Omar Khayyam (tr. Whinfield, 1883).djvu/293', revision 268672"
+    file: sources/whinfield1883-353.txt
+    url: "https://fa.wikisource.org/w/index.php?oldid=268672&action=raw"
+    sha256: 0b4f7c685a61070cb815023a7a6df22f627ec813381acacdb45869dec4f34155
+    license: "public domain (1883); Wikisource CC BY-SA 4.0"
+    license_url: "https://fa.wikisource.org/wiki/رباعیات_خیام_(تصحیح_وینفیلد)"
+  - id: whinfield1883-252
+    name: "Whinfield (1883), quatrain 252: Persian Wikisource page 'Quatrains of Omar Khayyam (tr. Whinfield, 1883).djvu/227', revision 268639"
+    file: sources/whinfield1883-252.txt
+    url: "https://fa.wikisource.org/w/index.php?oldid=268639&action=raw"
+    sha256: 131d0096e3cdc2b3765db1f05b1f0bd5c3f6380abf9a401cfe7686805bd3ad95
+    license: "public domain (1883); Wikisource CC BY-SA 4.0"
+    license_url: "https://fa.wikisource.org/wiki/رباعیات_خیام_(تصحیح_وینفیلد)"
+  - id: whinfield1883-35
+    name: "Whinfield (1883), quatrain 35: Persian Wikisource page 'Quatrains of Omar Khayyam (tr. Whinfield, 1883).djvu/81', revision 247291"
+    file: sources/whinfield1883-35.txt
+    url: "https://fa.wikisource.org/w/index.php?oldid=247291&action=raw"
+    sha256: 66bf41aa84f7003522b2cc5aa90d84d8f7b5937ace15c9fa0eaff7cbcf3657db
+    license: "public domain (1883); Wikisource CC BY-SA 4.0"
+    license_url: "https://fa.wikisource.org/wiki/رباعیات_خیام_(تصحیح_وینفیلد)"
+  - id: whinfield1883-379
+    name: "Whinfield (1883), quatrain 379: Persian Wikisource page 'Quatrains of Omar Khayyam (tr. Whinfield, 1883).djvu/311', revision 268681"
+    file: sources/whinfield1883-379.txt
+    url: "https://fa.wikisource.org/w/index.php?oldid=268681&action=raw"
+    sha256: 7a482118183c4d4efcba397c4913d1f59805cfdcc5213f152f8671dc2c396794
+    license: "public domain (1883); Wikisource CC BY-SA 4.0"
+    license_url: "https://fa.wikisource.org/wiki/رباعیات_خیام_(تصحیح_وینفیلد)"
+translations:
+  - id: fitzgerald1889
+    translator: Edward FitzGerald
+    year: 1889
+    form: "verse, fifth edition of the Rubáiyát (published posthumously 1889), Project Gutenberg eBook 246"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/fitzgerald1889.txt
+    url: https://www.gutenberg.org/cache/epub/246/pg246.txt
+    sha256: 711166b8e22f048a2fc79599d5db3520f78120f42b2473a431df07863ce769b0
+  - id: heronallen1899
+    translator: Edward Heron-Allen
+    year: 1899
+    form: "literal prose, in Edward FitzGerald's Rubâ'iyât of Omar Khayyâm with their Original Persian Sources (London: Quaritch, 1899); OCR text, checked against the page scans"
+    license: public-domain
+    license_url: https://archive.org/details/india.history.resource.110981
+    file: sources/heronallen1899.txt
+    url: https://archive.org/download/india.history.resource.110981/110981_djvu.txt
+    sha256: 5ec9af9331b74514a10c56a07d968065e6cb13e2f6897d720ae6d50699aa8b2e
+predicted_gaps:
+  - "Heron-Allen translates the Ouseley (1460) or Calcutta manuscript, not Whinfield's text; in quatrains 72, 104 and 353 the wording differs, and the notes say where"
+  - "FitzGerald's stanzas are free paraphrases, one span per quatrain; 353 stands behind two of his stanzas (XXVII and XXVIII)"
+  - "Early New Persian around 1100 is reconstructed; the ð rule, the stress and the vowel qualities are approximate"
+  - "short vowels are not written in the script; the transliteration supplies them from Whinfield's notes, the metre and the dictionaries, and is not checked against the script except for its letters"
+  - "the metre admits recognized licences (wasl, a lengthened ezafe or u, a long vowel shortened before a vowel); which one a reciter used is a judgment"
+  - "no treebank; lemma, morphology and gloss are hand-annotated, draft"

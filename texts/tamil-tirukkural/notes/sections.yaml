@@ -1,0 +1,45 @@
+# Notes for Tirukkural chapter 1, The Praise of God.
+- id: n.kural.text
+  attach: kural.1.1
+  kind: editorial
+  status: draft
+  leans_on: "R. Srinivasan, ed., Tirukkuṟaḷ mūlam (1997), page 9, Tamil Wikisource revision 1529038"
+  text: "The Tamil text is R. Srinivasan's 1997 edition of the Kural alone (mūlam, without commentary), a book the Tamil Nadu government placed in the public domain, as proofread on Tamil Wikisource. The chapter's ten couplets agree word for word with the text Project Madurai distributes, which was not used because it names no license. The edition prints a full stop after each couplet; that stop is a modern editorial mark and is left out here. The chapter title, kaṭavuḷ vāḻttu, means praise of God."
+- id: n.kural.metre
+  attach: kural.1.2
+  kind: editorial
+  status: draft
+  leans_on: "the conventional rules of Tamil prosody (yāppu) for the veṇpā"
+  text: "Each couplet is a kuṟaḷ veṇpā: four feet (cīr) in the first line, three in the second. A foot is built from units called acai. A nēr is one syllable, with any consonants that close it; a nirai is an open short syllable together with the syllable after it. The metre row names each foot and its units, and it is computed from the transliteration. The last foot is a single unit, or a unit followed by the shortened final u, as ulaku here is nirai plus that u (a foot called piṟappu). The rules also fix how one foot joins the next (taḷai); the row is checked against them, and all ten couplets conform except one link in kural 4."
+- id: n.kural.4.talai
+  attach: kural.4.1.3
+  kind: editorial
+  status: draft
+  text: "Under the joining rules as coded here, vēṇṭāmai is a three-unit -kāy foot (nēr nēr nēr), and after such a foot a veṇpā expects the next to begin with nēr. ilāṉaṭi begins with nirai (i-lā), so the link is reported as a break. This is the only link in the chapter that fails the check. It may reflect a rule not modeled here, such as a special count for the final ai of vēṇṭāmai, or an irregularity the tradition accepts. It has not been checked against a prosodist's scansion, and it is left for review rather than corrected."
+- id: n.kural.1.akara
+  attach: kural.1.1.2
+  kind: editorial
+  status: draft
+  leans_on: "G. U. Pope, The 'Sacred' Kurral (1886), introduction, p. xxiii"
+  text: "mutala is the noun mutal, beginning, used as a verb: they have a beginning, or they have (it) as their first. Pope explains the construction and renders it 'All letters are A-firsted.' The second line uses the same form in the singular, mutaṟṟē, with the emphatic ē: the world has the Primal Lord as its first. The comparison rests on the Tamil alphabet, like the Sanskrit one, beginning with a. āti and pakavaṉ are borrowings of Sanskrit ādi, beginning, and bhagavat, lord."
+- id: n.kural.2.toḻāar
+  attach: kural.2.2.2
+  kind: editorial
+  status: draft
+  text: "toḻāar, they do not worship, is written with an extra அ after the long ā. This is aḷapeṭai, a lengthening written into the verse to fill the metre. Without it, toḻār would be a single unit (nirai), which a veṇpā does not allow in the middle of a line; with it the foot is nirai nēr, a puḷimā. The sound rows give the lengthened form as written."
+- id: n.kural.split
+  attach: kural.3.2.3
+  kind: editorial
+  status: draft
+  text: "The edition divides words by metrical foot, not always by word. nīṭuvāḻ vār is one verb, nīṭuvāḻvār, they will live long, split before its last foot (here and in kural 6). The same happens to aṭicērātār, those who do not reach the feet, in kural 10, and to tāḷcērntārkku allāl in kurals 7 and 8, where sandhi drops the final u and the doubled k is printed with allāl. Weft keeps the printed division, so the gloss of vār and tār gives only the part of the word they carry."
+- id: n.kural.8.azhi
+  attach: kural.8.1.1
+  kind: editorial
+  status: draft
+  leans_on: "Tamil Lexicon (University of Madras, 1924-36), s.v. ஆழி"
+  text: "āḻi can mean the sea and also a ring or wheel. aṟavāḻi is glossed virtue-sea here, as Pope ('the Sea of Good') and Drew ('a sea of virtue') take it; the second line's piṟavāḻi, other seas, repeats the word, and both translations take it as a sea there too. The alternative sense, wheel, is possible for the first occurrence taken alone."
+- id: n.kural.sound
+  attach: kural.1.1.1
+  kind: editorial
+  status: draft
+  text: "The first sound row is an approximate reconstruction of Old Tamil recitation. The date of the Kural is uncertain; estimates run from about the 4th to the 6th century AD. The script writes one letter for each stop, k, c, ṭ, t, p; the reconstruction voices them between vowels and after a nasal (akara as a-ga-ra) and keeps them voiceless at the start of a word and when doubled, following the Tolkāppiyam's account and later scholarship. The values of c, of ṟ and doubled ṟṟ, and of ḻ are the least certain. The second row gives a common modern recitation."

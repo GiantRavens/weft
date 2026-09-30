@@ -1,0 +1,49 @@
+# Notes for the Khayyam quatrains. Editorial notes are drafts until a reviewer lifts them.
+- id: n.rub.attribution
+  attach: rub.72.1
+  kind: editorial
+  status: draft
+  leans_on: "Heron-Allen, Edward FitzGerald's Rubâ'iyât (1899), pp. xv-xvi and the references under each stanza; V. Zhukovsky, 'Omar Khaiyām and the Wandering Quatrains', tr. E. Denison Ross, Journal of the Royal Asiatic Society (1898)"
+  text: "Omar Khayyam died in 1131, and no collection of his quatrains survives from his lifetime. The collections that carry his name grow with time: among Heron-Allen's sources, the Ouseley manuscript of 1460 has 158 quatrains and the Lucknow lithograph of 1894 has 770. Zhukovsky showed in 1897 that many of them also circulate under the names of other poets, and called them wandering quatrains. The attribution of any single quatrain here is therefore disputed. In Heron-Allen's collation, four of the six (35, 104, 252, 353) are in the Ouseley manuscript, the oldest copy he used; 72 and 379 are absent from it and appear in the Calcutta manuscript and the Paris manuscript of 1527. By these sources the first four are the better attested. That is evidence of age, not of authorship: the Ouseley copy was made more than three centuries after Khayyam's death."
+- id: n.rub.edition
+  attach: rub.72.2
+  kind: editorial
+  status: draft
+  leans_on: "Whinfield, The Quatrains of Omar Khayyam (1883), preface and notes; Heron-Allen (1899), pp. 33, 35 (Persian text of C. 99 and O. 43)"
+  text: "The Persian is E. H. Whinfield's printed text of 1883, which he assembled from several manuscripts and printed editions. It marks a few short vowels, such as the ezafe in سرخیِ, and leaves the rest unwritten. Heron-Allen's prose, shown below each quatrain, translates a single manuscript, and in three quatrains its wording differs from Whinfield's. Here in 72, Whinfield has āhū 'deer' where the Calcutta manuscript has rūbah 'fox'; his line 3 ends ba-kamand 'with the lasso' where Calcutta has dāyim 'always'; and his line 4 opens dīdī ki 'you saw how' where Calcutta has imrōz nigar 'today see'. In 104, line 3 has barg 'leaf' of the violet where the Ouseley manuscript has šāx 'shoot'. For 353, see the note on its last line."
+- id: n.rub.water
+  attach: rub.353.4
+  kind: editorial
+  status: draft
+  leans_on: "Heron-Allen (1899), p. 45 (Persian text of O. 121); Whinfield (1883), note to quatrain 353"
+  text: "FitzGerald's line 'I came like Water, and like Wind I go' follows the Ouseley manuscript, whose last line reads čūn āb dar-āmadēm u čūn bād šudēm, 'we came in like water and went like wind'. Whinfield prints az xāk bar-āmadēm u bar bād šudēm, 'we came up from dust and went on the wind'. Both readings fit the metre; Weft's scanner places both in the pattern 5.1.13. Heron-Allen's prose renders the Ouseley line, so it does not match the Persian printed above. Whinfield's note records that FitzGerald compared the words attributed to the dying vizier Nizam al-Mulk, that he was going in the hands of the wind."
+- id: n.rub.gur
+  attach: rub.72.4.4
+  kind: editorial
+  status: draft
+  leans_on: "FitzGerald, note on Bahram Gur (fifth edition, 1889); Heron-Allen (1899), p. 33"
+  text: "The quatrain turns on one word. Gōr, later gūr, means the wild ass, the onager; the same word, written the same way, means the grave. Line 3 says Bahram caught the gōr all his life; line 4 says the gōr has caught Bahram. Bahram is Bahram V, a Sasanian king of the fifth century whom Persian tradition calls Bahram Gur for his hunting of the wild ass. Heron-Allen marks the pun by printing (gūr) beside both English words. FitzGerald's note adds a legend that Bahram sank in a swamp while chasing a wild ass; the Persian does not mention it."
+- id: n.rub.sound
+  attach: rub.72.2.5
+  kind: editorial
+  status: draft
+  leans_on: "G. Lazard, La langue des plus anciens monuments de la prose persane (1963), phonology; Whinfield (1883), note to quatrain 33"
+  text: "The first reading reconstructs Persian as it was likely spoken around 1100, and it is approximate. Its main difference from modern Iranian Persian is in the vowels. The script writes ی for both ī and ē, and و for both ū and ō; Early New Persian kept them apart. So شیر was šēr 'lion' but šīr 'milk', a distinction Tajik and Dari still keep and Tehran has lost (both are šir). Other features: w was still [w] (wai, later vey), including after x in xwad 'self'; ay and aw were diphthongs (nau 'new', later now); and d after a vowel was a soft dh, which early manuscripts write with ذ. The respelling places stress by the modern rules, which is the least certain part."
+- id: n.rub.metre
+  attach: rub.35.1
+  kind: editorial
+  status: draft
+  leans_on: "L. P. Elwell-Sutton, The Persian Metres (1976), rubāʿī; Whinfield (1883), note to quatrain 35"
+  text: "The rubāʿī metre counts syllable length, not stress. A syllable ending in a short vowel is short; one ending in a long vowel, or a short vowel and one consonant, is long; one ending in a long vowel and a consonant, or in two consonants, is overlong and fills a long and a short position (xāk, dast). Every line fits one of two patterns that differ only in positions 6 and 7, and the closing pair of shorts may be a single long, as in this line. The metre row is computed from the transliteration. Here Whinfield's note tells the reader to 'Scan búd ast, dropping silent he', so būda ast is sounded as two syllables, bū-dast; the page keeps the written form and the metre uses the sounded one."
+- id: n.rub.e-suffix
+  attach: rub.379.1.5
+  kind: editorial
+  status: draft
+  leans_on: "Whinfield (1883), note to quatrain 33 ('Yá i tankir'); Lazard (1963), on the suffix -ē"
+  text: "Budē 'were' carries a suffix -ē, written ی, that marks an unreal condition: if I had power over heaven as God does. The same suffix gives bar-dāštamē 'I would lift' and sāxtamē 'I would make' in the next lines, and rasīdē 'would reach' in the last. A suffix of the same sound marks the indefinite (gulē 'a rose', nigārē 'a beauty') and, in 72, the habitual past (mē-giriftē 'used to catch'). Whinfield notes the indefinite as the 'Yá i tankir'. In Early New Persian these were the majhul vowel ē; in modern Iranian Persian they are all -i."
+- id: n.rub.zaban-i-hal
+  attach: rub.252.3.4
+  kind: editorial
+  status: draft
+  leans_on: "Whinfield (1883), note to quatrain 252; Heron-Allen (1899), p. 61"
+  text: "Ba-zabān-i ḥāl is literally 'in the tongue of state': speech carried by a thing's condition rather than by words. The clay does not speak aloud; its state says what it once was. Whinfield glosses ḥāl as 'ecstasy', Heron-Allen renders the phrase 'in mystic language', and FitzGerald gives the clay an 'all-obliterated Tongue'. Each translation leans the phrase a different way; the gloss row keeps the literal words."

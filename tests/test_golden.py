@@ -327,3 +327,10 @@ def test_voluspa_complete_and_annotated():
     assert r["ok"], r["problems"]
     g = yaml.safe_load((REPO / "texts/edda-voluspa/gen/stanzas.yaml").read_text())
     assert len({l["id"].split(".")[1] for l in g["lines"]}) == 66
+
+
+def test_new_languages_check():
+    """Akkadian, Classical Chinese prose, Old Tamil and Classical Persian works pass their checks."""
+    for work in ("akkadian-hammurabi", "daodejing", "tamil-tirukkural", "persian-rubaiyat"):
+        r = check.run(REPO, work)
+        assert r["ok"], (work, r["problems"])

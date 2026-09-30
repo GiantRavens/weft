@@ -1,0 +1,188 @@
+# Human overlay for Daodejing 1-2. No treebank: lemma (the character itself), part of speech in
+# UD form (Kyoto Classical Chinese conventions) and the English gloss are by hand, draft.
+# Glosses follow docs/schema.md: one character, one cell, hyphenated, word order kept.
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-30
+  why: pilot; hand annotation, no treebank exists for this text
+  status: draft
+  set:
+    ddj.1.1.1: {lemma: "道", morph: "NOUN", gloss: "way"}
+    ddj.1.1.2: {lemma: "可", morph: "AUX|Mood=Pot", gloss: "can-be"}
+    ddj.1.1.3: {lemma: "道", morph: "VERB", gloss: "told"}
+    ddj.1.1.4: {lemma: "非", morph: "VERB|Polarity=Neg", gloss: "is-not"}
+    ddj.1.1.5: {lemma: "常", morph: "VERB|Degree=Pos", gloss: "constant"}
+    ddj.1.1.6: {lemma: "道", morph: "NOUN", gloss: "way"}
+    ddj.1.2.1: {lemma: "名", morph: "NOUN", gloss: "name"}
+    ddj.1.2.2: {lemma: "可", morph: "AUX|Mood=Pot", gloss: "can-be"}
+    ddj.1.2.3: {lemma: "名", morph: "VERB", gloss: "named"}
+    ddj.1.2.4: {lemma: "非", morph: "VERB|Polarity=Neg", gloss: "is-not"}
+    ddj.1.2.5: {lemma: "常", morph: "VERB|Degree=Pos", gloss: "constant"}
+    ddj.1.2.6: {lemma: "名", morph: "NOUN", gloss: "name"}
+    ddj.1.3.1: {lemma: "無", morph: "VERB|Polarity=Neg", gloss: "not-having"}
+    ddj.1.3.2: {lemma: "名", morph: "NOUN", gloss: "name"}
+    ddj.1.3.3: {lemma: "天", morph: "NOUN", gloss: "heaven"}
+    ddj.1.3.4: {lemma: "地", morph: "NOUN", gloss: "earth"}
+    ddj.1.3.5: {lemma: "之", morph: "SCONJ", gloss: "'s"}
+    ddj.1.3.6: {lemma: "始", morph: "NOUN", gloss: "beginning"}
+    ddj.1.4.1: {lemma: "有", morph: "VERB", gloss: "having"}
+    ddj.1.4.2: {lemma: "名", morph: "NOUN", gloss: "name"}
+    ddj.1.4.3: {lemma: "萬", morph: "NUM", gloss: "ten-thousand"}
+    ddj.1.4.4: {lemma: "物", morph: "NOUN", gloss: "things"}
+    ddj.1.4.5: {lemma: "之", morph: "SCONJ", gloss: "'s"}
+    ddj.1.4.6: {lemma: "母", morph: "NOUN", gloss: "mother"}
+    ddj.1.5.1: {lemma: "故", morph: "ADV", gloss: "therefore"}
+    ddj.1.5.2: {lemma: "常", morph: "ADV", gloss: "constantly"}
+    ddj.1.5.3: {lemma: "無", morph: "VERB|Polarity=Neg", gloss: "without"}
+    ddj.1.5.4: {lemma: "欲", morph: "NOUN", gloss: "desire"}
+    ddj.1.5.5: {lemma: "以", morph: "ADV", gloss: "thereby"}
+    ddj.1.5.6: {lemma: "觀", morph: "VERB", gloss: "observe"}
+    ddj.1.5.7: {lemma: "其", morph: "PRON|Person=3|PronType=Prs", gloss: "its"}
+    ddj.1.5.8: {lemma: "妙", morph: "NOUN", gloss: "subtlety"}
+    ddj.1.6.1: {lemma: "常", morph: "ADV", gloss: "constantly"}
+    ddj.1.6.2: {lemma: "有", morph: "VERB", gloss: "having"}
+    ddj.1.6.3: {lemma: "欲", morph: "NOUN", gloss: "desire"}
+    ddj.1.6.4: {lemma: "以", morph: "ADV", gloss: "thereby"}
+    ddj.1.6.5: {lemma: "觀", morph: "VERB", gloss: "observe"}
+    ddj.1.6.6: {lemma: "其", morph: "PRON|Person=3|PronType=Prs", gloss: "its"}
+    ddj.1.6.7: {lemma: "徼", morph: "NOUN", gloss: "outer-bound"}
+    ddj.1.7.1: {lemma: "此", morph: "PRON|PronType=Dem", gloss: "these"}
+    ddj.1.7.2: {lemma: "兩", morph: "NUM", gloss: "two"}
+    ddj.1.7.3: {lemma: "者", morph: "PART", gloss: "ones"}
+    ddj.1.7.4: {lemma: "同", morph: "ADV", gloss: "together"}
+    ddj.1.7.5: {lemma: "出", morph: "VERB", gloss: "come-forth"}
+    ddj.1.7.6: {lemma: "而", morph: "CCONJ", gloss: "and"}
+    ddj.1.7.7: {lemma: "異", morph: "VERB", gloss: "differ-in"}
+    ddj.1.7.8: {lemma: "名", morph: "NOUN", gloss: "name"}
+    ddj.1.8.1: {lemma: "同", morph: "ADV", gloss: "alike"}
+    ddj.1.8.2: {lemma: "謂", morph: "VERB", gloss: "call"}
+    ddj.1.8.3: {lemma: "之", morph: "PRON|Person=3|PronType=Prs", gloss: "them"}
+    ddj.1.8.4: {lemma: "玄", morph: "NOUN", gloss: "dark"}
+    ddj.1.9.1: {lemma: "玄", morph: "VERB|Degree=Pos", gloss: "dark"}
+    ddj.1.9.2: {lemma: "之", morph: "PRON|Person=3|PronType=Prs", gloss: "it"}
+    ddj.1.9.3: {lemma: "又", morph: "ADV", gloss: "again"}
+    ddj.1.9.4: {lemma: "玄", morph: "VERB|Degree=Pos", gloss: "dark"}
+    ddj.1.9.5: {lemma: "眾", morph: "VERB|Degree=Pos", gloss: "all-the"}
+    ddj.1.9.6: {lemma: "妙", morph: "NOUN", gloss: "subtleties"}
+    ddj.1.9.7: {lemma: "之", morph: "SCONJ", gloss: "'s"}
+    ddj.1.9.8: {lemma: "門", morph: "NOUN", gloss: "gate"}
+    ddj.2.1.1: {lemma: "天", morph: "NOUN", gloss: "heaven"}
+    ddj.2.1.2: {lemma: "下", morph: "NOUN", gloss: "under"}
+    ddj.2.1.3: {lemma: "皆", morph: "ADV", gloss: "all"}
+    ddj.2.1.4: {lemma: "知", morph: "VERB", gloss: "know"}
+    ddj.2.1.5: {lemma: "美", morph: "VERB|Degree=Pos", gloss: "beautiful"}
+    ddj.2.1.6: {lemma: "之", morph: "SCONJ", gloss: "'s"}
+    ddj.2.1.7: {lemma: "為", morph: "VERB", gloss: "being"}
+    ddj.2.1.8: {lemma: "美", morph: "VERB|Degree=Pos", gloss: "beautiful"}
+    ddj.2.1.9: {lemma: "斯", morph: "ADV", gloss: "thereupon"}
+    ddj.2.1.10: {lemma: "惡", morph: "VERB|Degree=Pos", gloss: "ugly"}
+    ddj.2.1.11: {lemma: "已", morph: "PART", gloss: "it-is-so"}
+    ddj.2.2.1: {lemma: "皆", morph: "ADV", gloss: "all"}
+    ddj.2.2.2: {lemma: "知", morph: "VERB", gloss: "know"}
+    ddj.2.2.3: {lemma: "善", morph: "VERB|Degree=Pos", gloss: "good"}
+    ddj.2.2.4: {lemma: "之", morph: "SCONJ", gloss: "'s"}
+    ddj.2.2.5: {lemma: "為", morph: "VERB", gloss: "being"}
+    ddj.2.2.6: {lemma: "善", morph: "VERB|Degree=Pos", gloss: "good"}
+    ddj.2.2.7: {lemma: "斯", morph: "ADV", gloss: "thereupon"}
+    ddj.2.2.8: {lemma: "不", morph: "ADV|Polarity=Neg", gloss: "not"}
+    ddj.2.2.9: {lemma: "善", morph: "VERB|Degree=Pos", gloss: "good"}
+    ddj.2.2.10: {lemma: "已", morph: "PART", gloss: "it-is-so"}
+    ddj.2.3.1: {lemma: "故", morph: "ADV", gloss: "therefore"}
+    ddj.2.3.2: {lemma: "有", morph: "VERB", gloss: "being"}
+    ddj.2.3.3: {lemma: "無", morph: "VERB|Polarity=Neg", gloss: "non-being"}
+    ddj.2.3.4: {lemma: "相", morph: "ADV", gloss: "each-other"}
+    ddj.2.3.5: {lemma: "生", morph: "VERB", gloss: "give-birth-to"}
+    ddj.2.4.1: {lemma: "難", morph: "VERB|Degree=Pos", gloss: "hard"}
+    ddj.2.4.2: {lemma: "易", morph: "VERB|Degree=Pos", gloss: "easy"}
+    ddj.2.4.3: {lemma: "相", morph: "ADV", gloss: "each-other"}
+    ddj.2.4.4: {lemma: "成", morph: "VERB", gloss: "complete"}
+    ddj.2.5.1: {lemma: "長", morph: "VERB|Degree=Pos", gloss: "long"}
+    ddj.2.5.2: {lemma: "短", morph: "VERB|Degree=Pos", gloss: "short"}
+    ddj.2.5.3: {lemma: "相", morph: "ADV", gloss: "each-other"}
+    ddj.2.5.4: {lemma: "較", morph: "VERB", gloss: "measure"}
+    ddj.2.6.1: {lemma: "高", morph: "VERB|Degree=Pos", gloss: "high"}
+    ddj.2.6.2: {lemma: "下", morph: "VERB|Degree=Pos", gloss: "low"}
+    ddj.2.6.3: {lemma: "相", morph: "ADV", gloss: "each-other"}
+    ddj.2.6.4: {lemma: "傾", morph: "VERB", gloss: "lean-toward"}
+    ddj.2.7.1: {lemma: "音", morph: "NOUN", gloss: "note"}
+    ddj.2.7.2: {lemma: "聲", morph: "NOUN", gloss: "voice"}
+    ddj.2.7.3: {lemma: "相", morph: "ADV", gloss: "each-other"}
+    ddj.2.7.4: {lemma: "和", morph: "VERB", gloss: "answer-in-tune"}
+    ddj.2.8.1: {lemma: "前", morph: "NOUN", gloss: "before"}
+    ddj.2.8.2: {lemma: "後", morph: "NOUN", gloss: "after"}
+    ddj.2.8.3: {lemma: "相", morph: "ADV", gloss: "each-other"}
+    ddj.2.8.4: {lemma: "隨", morph: "VERB", gloss: "follow"}
+    ddj.2.9.1: {lemma: "是", morph: "PRON|PronType=Dem", gloss: "this"}
+    ddj.2.9.2: {lemma: "以", morph: "ADP", gloss: "by"}
+    ddj.2.9.3: {lemma: "聖", morph: "VERB|Degree=Pos", gloss: "sage"}
+    ddj.2.9.4: {lemma: "人", morph: "NOUN", gloss: "person"}
+    ddj.2.9.5: {lemma: "處", morph: "VERB", gloss: "dwells-in"}
+    ddj.2.9.6: {lemma: "無", morph: "VERB|Polarity=Neg", gloss: "without"}
+    ddj.2.9.7: {lemma: "為", morph: "VERB", gloss: "acting"}
+    ddj.2.9.8: {lemma: "之", morph: "SCONJ", gloss: "'s"}
+    ddj.2.9.9: {lemma: "事", morph: "NOUN", gloss: "affairs"}
+    ddj.2.10.1: {lemma: "行", morph: "VERB", gloss: "carries-out"}
+    ddj.2.10.2: {lemma: "不", morph: "ADV|Polarity=Neg", gloss: "not"}
+    ddj.2.10.3: {lemma: "言", morph: "VERB", gloss: "speaking"}
+    ddj.2.10.4: {lemma: "之", morph: "SCONJ", gloss: "'s"}
+    ddj.2.10.5: {lemma: "教", morph: "NOUN", gloss: "teaching"}
+    ddj.2.11.1: {lemma: "萬", morph: "NUM", gloss: "ten-thousand"}
+    ddj.2.11.2: {lemma: "物", morph: "NOUN", gloss: "things"}
+    ddj.2.11.3: {lemma: "作", morph: "VERB", gloss: "arise"}
+    ddj.2.11.4: {lemma: "焉", morph: "PRON", gloss: "therein"}
+    ddj.2.11.5: {lemma: "而", morph: "CCONJ", gloss: "and"}
+    ddj.2.11.6: {lemma: "不", morph: "ADV|Polarity=Neg", gloss: "not"}
+    ddj.2.11.7: {lemma: "辭", morph: "VERB", gloss: "decline"}
+    ddj.2.12.1: {lemma: "生", morph: "VERB", gloss: "produces"}
+    ddj.2.12.2: {lemma: "而", morph: "CCONJ", gloss: "and"}
+    ddj.2.12.3: {lemma: "不", morph: "ADV|Polarity=Neg", gloss: "not"}
+    ddj.2.12.4: {lemma: "有", morph: "VERB", gloss: "possesses"}
+    ddj.2.13.1: {lemma: "為", morph: "VERB", gloss: "acts"}
+    ddj.2.13.2: {lemma: "而", morph: "CCONJ", gloss: "and"}
+    ddj.2.13.3: {lemma: "不", morph: "ADV|Polarity=Neg", gloss: "not"}
+    ddj.2.13.4: {lemma: "恃", morph: "VERB", gloss: "relies-on-it"}
+    ddj.2.14.1: {lemma: "功", morph: "NOUN", gloss: "work"}
+    ddj.2.14.2: {lemma: "成", morph: "VERB", gloss: "completed"}
+    ddj.2.14.3: {lemma: "而", morph: "CCONJ", gloss: "and"}
+    ddj.2.14.4: {lemma: "弗", morph: "ADV|Polarity=Neg", gloss: "not"}
+    ddj.2.14.5: {lemma: "居", morph: "VERB", gloss: "dwells-in-it"}
+    ddj.2.15.1: {lemma: "夫", morph: "PART", gloss: "now"}
+    ddj.2.15.2: {lemma: "唯", morph: "ADV", gloss: "only"}
+    ddj.2.15.3: {lemma: "弗", morph: "ADV|Polarity=Neg", gloss: "not"}
+    ddj.2.15.4: {lemma: "居", morph: "VERB", gloss: "dwells-in-it"}
+    ddj.2.15.5: {lemma: "是", morph: "PRON|PronType=Dem", gloss: "this"}
+    ddj.2.15.6: {lemma: "以", morph: "ADP", gloss: "by"}
+    ddj.2.15.7: {lemma: "不", morph: "ADV|Polarity=Neg", gloss: "not"}
+    ddj.2.15.8: {lemma: "去", morph: "VERB", gloss: "departs"}
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-30
+  why: >-
+    this is not regulated verse, so the Tang tone pattern that draft writes for every Chinese line
+    does not apply. The metre row records only rhymes the Old Chinese reconstruction supports:
+    lines marked with the same letter end in the same Baxter-Sagart rime, which weft draft checks
+    against the edition's rhyme marks. Other lines carry no metre.
+  status: draft
+  set:
+    ddj.1.1: {metre: null}
+    ddj.1.2: {metre: null}
+    ddj.1.3: {metre: "rhyme A · *-ə (之 group)"}
+    ddj.1.4: {metre: "rhyme A · *-ə (之 group)"}
+    ddj.1.5: {metre: "rhyme B · *-ew (宵 group)"}
+    ddj.1.6: {metre: "rhyme B · *-ew (宵 group)"}
+    ddj.1.7: {metre: null}
+    ddj.1.8: {metre: null}
+    ddj.1.9: {metre: null}
+    ddj.2.1: {metre: null}
+    ddj.2.2: {metre: null}
+    ddj.2.3: {metre: "rhyme A · *-eŋ (耕 group)"}
+    ddj.2.4: {metre: "rhyme A · *-eŋ (耕 group)"}
+    ddj.2.5: {metre: "no rhyme: 較 breaks the *-eŋ run (see note)"}
+    ddj.2.6: {metre: "rhyme A · *-eŋ (耕 group)"}
+    ddj.2.7: {metre: "rhyme B · *-oj (歌 group)"}
+    ddj.2.8: {metre: "rhyme B · *-oj (歌 group)"}
+    ddj.2.9: {metre: "rhyme C · *-ə (之 group)"}
+    ddj.2.10: {metre: null}
+    ddj.2.11: {metre: "rhyme C · *-ə (之 group)"}
+    ddj.2.12: {metre: "rhyme C · *-ə (之 group)"}
+    ddj.2.13: {metre: "rhyme C · *-ə (之 group)"}
+    ddj.2.14: {metre: null}
+    ddj.2.15: {metre: null}

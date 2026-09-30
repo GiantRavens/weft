@@ -1,0 +1,137 @@
+# Weft edition of Tirukkural chapter 1, The Praise of God (kaṭavuḷ vāḻttu), from R. Srinivasan's
+# edition of the text alone (mūlam, 1997), page 9, as proofread on Tamil Wikisource. Checked verbatim
+# against that page. The edition prints a full stop after each kural; the stop is editorial and is left
+# out here (verify_strip removes it, with the verse-number template, before the check).
+#
+# Each kural is a section of two lines. Words are divided as the edition prints them, and the edition
+# divides them by metrical foot (cīr), not always by word: நீடுவாழ் வார் is the one verb நீடுவாழ்வார்
+# split before its last foot, and தாள்சேர்ந்தார்க் கல்லால் is தாள்சேர்ந்தார்க்கு அல்லால் joined by sandhi.
+#
+#   t   the Tamil script, as printed
+#   n   the transliteration, ISO 15919, typed by hand. `weft draft` converts t to the same
+#       transliteration and reports any difference (translit-mismatch). Sound and metre come from n.
+joiner: " "
+verify_in: sources/srinivasan1997-p9.txt
+verify_strip: '\.?\s*\{\{[Pp]line\|\d+\|r\}\}'
+metre: {name: kuṟaḷ veṇpā, feet: [4, 3]}
+sections:
+  - id: "1"
+    title: "Kural 1"
+    lines:
+      - tokens:
+        - {t: அகர, n: akara}
+        - {t: முதல, n: mutala}
+        - {t: எழுத்தெல்லாம், n: eḻuttellām}
+        - {t: ஆதி, n: āti}
+      - tokens:
+        - {t: பகவன், n: pakavaṉ}
+        - {t: முதற்றே, n: mutaṟṟē}
+        - {t: உலகு, n: ulaku}
+  - id: "2"
+    title: "Kural 2"
+    lines:
+      - tokens:
+        - {t: கற்றதனால், n: kaṟṟataṉāl}
+        - {t: ஆய, n: āya}
+        - {t: பயனென்கொல், n: payaṉeṉkol}
+        - {t: வாலறிவன், n: vālaṟivaṉ}
+      - tokens:
+        - {t: நற்றாள், n: naṟṟāḷ}
+        - {t: தொழாஅர், n: toḻāar}
+        - {t: எனின், n: eṉiṉ}
+  - id: "3"
+    title: "Kural 3"
+    lines:
+      - tokens:
+        - {t: மலர்மிசை, n: malarmicai}
+        - {t: ஏகினான், n: ēkiṉāṉ}
+        - {t: மாணடி, n: māṇaṭi}
+        - {t: சேர்ந்தார், n: cērntār}
+      - tokens:
+        - {t: நிலமிசை, n: nilamicai}
+        - {t: நீடுவாழ், n: nīṭuvāḻ}
+        - {t: வார், n: vār}
+  - id: "4"
+    title: "Kural 4"
+    lines:
+      - tokens:
+        - {t: வேண்டுதல், n: vēṇṭutal}
+        - {t: வேண்டாமை, n: vēṇṭāmai}
+        - {t: இலானடி, n: ilāṉaṭi}
+        - {t: சேர்ந்தார்க்கு, n: cērntārkku}
+      - tokens:
+        - {t: யாண்டும், n: yāṇṭum}
+        - {t: இடும்பை, n: iṭumpai}
+        - {t: இல, n: ila}
+  - id: "5"
+    title: "Kural 5"
+    lines:
+      - tokens:
+        - {t: இருள்சேர், n: iruḷcēr}
+        - {t: இருவினையும், n: iruviṉaiyum}
+        - {t: சேரா, n: cērā}
+        - {t: இறைவன், n: iṟaivaṉ}
+      - tokens:
+        - {t: பொருள்சேர், n: poruḷcēr}
+        - {t: புகழ்புரிந்தார், n: pukaḻpurintār}
+        - {t: மாட்டு, n: māṭṭu}
+  - id: "6"
+    title: "Kural 6"
+    lines:
+      - tokens:
+        - {t: பொறிவாயில், n: poṟivāyil}
+        - {t: ஐந்தவித்தான், n: aintavittāṉ}
+        - {t: பொய்தீர், n: poytīr}
+        - {t: ஒழுக்க, n: oḻukka}
+      - tokens:
+        - {t: நெறிநின்றார், n: neṟiniṉṟār}
+        - {t: நீடுவாழ், n: nīṭuvāḻ}
+        - {t: வார், n: vār}
+  - id: "7"
+    title: "Kural 7"
+    lines:
+      - tokens:
+        - {t: தனக்குவமை, n: taṉakkuvamai}
+        - {t: இல்லாதான், n: illātāṉ}
+        - {t: தாள்சேர்ந்தார்க், n: tāḷcērntārk}
+        - {t: கல்லால், n: kallāl}
+      - tokens:
+        - {t: மனக்கவலை, n: maṉakkavalai}
+        - {t: மாற்றல், n: māṟṟal}
+        - {t: அரிது, n: aritu}
+  - id: "8"
+    title: "Kural 8"
+    lines:
+      - tokens:
+        - {t: அறவாழி, n: aṟavāḻi}
+        - {t: அந்தணன், n: antaṇaṉ}
+        - {t: தாள்சேர்ந்தார்க், n: tāḷcērntārk}
+        - {t: கல்லால், n: kallāl}
+      - tokens:
+        - {t: பிறவாழி, n: piṟavāḻi}
+        - {t: நீந்தல், n: nīntal}
+        - {t: அரிது, n: aritu}
+  - id: "9"
+    title: "Kural 9"
+    lines:
+      - tokens:
+        - {t: கோளில், n: kōḷil}
+        - {t: பொறியின், n: poṟiyiṉ}
+        - {t: குணமிலவே, n: kuṇamilavē}
+        - {t: எண்குணத்தான், n: eṇkuṇattāṉ}
+      - tokens:
+        - {t: தாளை, n: tāḷai}
+        - {t: வணங்காத், n: vaṇaṅkāt}
+        - {t: தலை, n: talai}
+  - id: "10"
+    title: "Kural 10"
+    lines:
+      - tokens:
+        - {t: பிறவிப், n: piṟavip}
+        - {t: பெருங்கடல், n: peruṅkaṭal}
+        - {t: நீந்துவர், n: nīntuvar}
+        - {t: நீந்தார், n: nīntār}
+      - tokens:
+        - {t: இறைவன், n: iṟaivaṉ}
+        - {t: அடிசேரா, n: aṭicērā}
+        - {t: தார், n: tār}

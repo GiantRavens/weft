@@ -1,0 +1,215 @@
+# Weft edition of six quatrains attributed to Omar Khayyam, each the Persian source Heron-Allen (1899)
+# identified behind a stanza of FitzGerald's fifth edition. The Persian is E. H. Whinfield's text
+# (London, 1883), from the proofread page transcriptions on Persian Wikisource; each section is
+# checked verbatim against its own page (verify_in). The template markup of the page is set aside
+# (verify_strip). Sections carry Whinfield's quatrain numbers.
+#
+#   t   the Persian as printed, with Whinfield's occasional short-vowel signs
+#   n   Weft's transliteration in Early New Persian vowels (majhul ē and ō kept apart from ī and ū).
+#       Separators: '-' prefix or suffix, '+' compound, '=' enclitic (unstressed: ezafe, personal
+#       endings, -ē, -rā), "'" a contracted conjunction (k'az = ki az). The script leaves most
+#       short vowels unwritten; they come from Whinfield's notes, the metre, and the dictionaries.
+#   m   the reading the metre needs, where it differs: the silent final -a of būda is dropped before
+#       ast (Whinfield's note to quatrain 35: "Scan búd ast, dropping silent he, and Alif i wasl").
+joiner: " "
+verify_strip: '\{\{[^|{}]*\||\}\}'
+metre: {name: "rubāʿī"}
+sections:
+  - id: "72"
+    title: "Whinfield 72 · FitzGerald XVIII"
+    verify_in: sources/whinfield1883-72.txt
+    lines:
+      - tokens:
+        - {t: "آن", n: "ān"}
+        - {t: "قصر", n: "qaṣr"}
+        - {t: "که", n: "ki"}
+        - {t: "بهرام", n: "bahrām"}
+        - {t: "درو", n: "dar=ō"}
+        - {t: "جام", n: "jām"}
+        - {t: "گرفت", n: "girift"}
+      - tokens:
+        - {t: "آهُو", n: "āhū"}
+        - {t: "بره", n: "bara"}
+        - {t: "کرد", n: "kard"}
+        - {t: "و", n: "u"}
+        - {t: "شیر", n: "šēr"}
+        - {t: "آرام", n: "ārām"}
+        - {t: "گرفت", n: "girift"}
+      - tokens:
+        - {t: "بهرام", n: "bahrām"}
+        - {t: "که", n: "ki"}
+        - {t: "گور", n: "gōr"}
+        - {t: "میگرفتی", n: "mē-girift=ē"}
+        - {t: "بکمند", n: "ba-kamand"}
+      - tokens:
+        - {t: "دیدی", n: "dīd=ī"}
+        - {t: "که", n: "ki"}
+        - {t: "چگونه", n: "čigōna"}
+        - {t: "گور", n: "gōr"}
+        - {t: "بهرام", n: "bahrām"}
+        - {t: "گرفت", n: "girift"}
+  - id: "104"
+    title: "Whinfield 104 · FitzGerald XIX"
+    verify_in: sources/whinfield1883-104.txt
+    lines:
+      - tokens:
+        - {t: "هر", n: "har"}
+        - {t: "جا", n: "jā"}
+        - {t: "که", n: "ki"}
+        - {t: "گلی", n: "gul=ē"}
+        - {t: "و", n: "u"}
+        - {t: "لاله", n: "lāla"}
+        - {t: "زاری", n: "zār=ē"}
+        - {t: "بودست", n: "būd=ast"}
+      - tokens:
+        - {t: "از", n: "az"}
+        - {t: "سرخیِ", n: "surxī=yi"}
+        - {t: "خونِ", n: "xūn=i"}
+        - {t: "شهریاری", n: "šahriyār=ē"}
+        - {t: "بودست", n: "būd=ast"}
+      - tokens:
+        - {t: "هر", n: "har"}
+        - {t: "برگِ", n: "barg=i"}
+        - {t: "بنفشه", n: "banafša"}
+        - {t: "کز", n: "k'az"}
+        - {t: "زمین", n: "zamīn"}
+        - {t: "می‌روئید", n: "mē-rōyīd"}
+      - tokens:
+        - {t: "خالیست", n: "xāl=ē=st"}
+        - {t: "که", n: "ki"}
+        - {t: "بر", n: "bar"}
+        - {t: "رخِ", n: "rux=i"}
+        - {t: "نگاری", n: "nigār=ē"}
+        - {t: "بودست", n: "būd=ast"}
+  - id: "353"
+    title: "Whinfield 353 · FitzGerald XXVII and XXVIII"
+    verify_in: sources/whinfield1883-353.txt
+    lines:
+      - tokens:
+        - {t: "یکچند", n: "yak+čand"}
+        - {t: "بکودکی", n: "ba-kōdakī"}
+        - {t: "باستاد", n: "ba-ustād"}
+        - {t: "شدیم", n: "šud=ēm"}
+      - tokens:
+        - {t: "یکچند", n: "yak+čand"}
+        - {t: "باستادیِ", n: "ba-ustādī=yi"}
+        - {t: "خود", n: "xwad"}
+        - {t: "شاد", n: "šād"}
+        - {t: "شدیم", n: "šud=ēm"}
+      - tokens:
+        - {t: "پایانِ", n: "pāyān=i"}
+        - {t: "سخن", n: "suxun"}
+        - {t: "شنو", n: "šinaw"}
+        - {t: "که", n: "ki"}
+        - {t: "ما", n: "mā"}
+        - {t: "را", n: "=rā"}
+        - {t: "چه", n: "či"}
+        - {t: "رسید", n: "rasīd"}
+      - tokens:
+        - {t: "از", n: "az"}
+        - {t: "خاک", n: "xāk"}
+        - {t: "برآمدیم", n: "bar-āmad=ēm"}
+        - {t: "و", n: "u"}
+        - {t: "بر", n: "bar"}
+        - {t: "باد", n: "bād"}
+        - {t: "شدیم", n: "šud=ēm"}
+  - id: "252"
+    title: "Whinfield 252 · FitzGerald XXXVII"
+    verify_in: sources/whinfield1883-252.txt
+    lines:
+      - tokens:
+        - {t: "دی", n: "dī"}
+        - {t: "کوزه‌گری", n: "kōza+gar=ē"}
+        - {t: "بدیدم", n: "bi-dīd=am"}
+        - {t: "اندر", n: "andar"}
+        - {t: "بازار", n: "bāzār"}
+      - tokens:
+        - {t: "بر", n: "bar"}
+        - {t: "تازه", n: "tāza"}
+        - {t: "گلی", n: "gil=ē"}
+        - {t: "لکد", n: "lagad"}
+        - {t: "همی", n: "hamē"}
+        - {t: "زد", n: "zad"}
+        - {t: "بسیار", n: "bisyār"}
+      - tokens:
+        - {t: "وان", n: "w'ān"}
+        - {t: "گل", n: "gil"}
+        - {t: "بزبانِ", n: "ba-zabān=i"}
+        - {t: "حال", n: "ḥāl"}
+        - {t: "با", n: "bā"}
+        - {t: "وی", n: "way"}
+        - {t: "میگفت", n: "mē-guft"}
+      - tokens:
+        - {t: "من", n: "man"}
+        - {t: "همچو", n: "ham+ču"}
+        - {t: "تو", n: "tu"}
+        - {t: "بوده‌ام", n: "būda=am"}
+        - {t: "مرا", n: "ma=rā"}
+        - {t: "نیکو", n: "nēkō"}
+        - {t: "دار", n: "dār"}
+  - id: "35"
+    title: "Whinfield 35 · FitzGerald LXXI"
+    verify_in: sources/whinfield1883-35.txt
+    lines:
+      - tokens:
+        - {t: "بر", n: "bar"}
+        - {t: "لوحِ", n: "lawḥ=i"}
+        - {t: "نشانِ", n: "nišān=i"}
+        - {t: "بودنیها", n: "būdanī-hā"}
+        - {t: "بوده", n: "būda", m: "būd"}
+        - {t: "است", n: "ast"}
+      - tokens:
+        - {t: "پیوسته", n: "paywasta"}
+        - {t: "قلم", n: "qalam"}
+        - {t: "ز", n: "zi"}
+        - {t: "نیک", n: "nēk"}
+        - {t: "و", n: "u"}
+        - {t: "بد", n: "bad"}
+        - {t: "آسوده", n: "āsūda", m: "āsūd"}
+        - {t: "است", n: "ast"}
+      - tokens:
+        - {t: "اندر", n: "andar"}
+        - {t: "تقدیر", n: "taqdīr"}
+        - {t: "هرچه", n: "har+či"}
+        - {t: "بایست", n: "bāyist"}
+        - {t: "بداد", n: "bi-dād"}
+      - tokens:
+        - {t: "غم", n: "ġam"}
+        - {t: "خوردن", n: "xwardan"}
+        - {t: "و", n: "u"}
+        - {t: "کوشیدنِ", n: "kōšīdan=i"}
+        - {t: "ما", n: "mā"}
+        - {t: "بیهوده", n: "bē-hūda", m: "bē-hūd"}
+        - {t: "است", n: "ast"}
+  - id: "379"
+    title: "Whinfield 379 · FitzGerald XCIX"
+    verify_in: sources/whinfield1883-379.txt
+    lines:
+      - tokens:
+        - {t: "گر", n: "gar"}
+        - {t: "بر", n: "bar"}
+        - {t: "فلکم", n: "falak=am"}
+        - {t: "دست", n: "dast"}
+        - {t: "بُدی", n: "bud=ē"}
+        - {t: "چون", n: "čūn"}
+        - {t: "یزدان", n: "yazdān"}
+      - tokens:
+        - {t: "برداشتمی", n: "bar-dāšt=am=ē"}
+        - {t: "من", n: "man"}
+        - {t: "این", n: "īn"}
+        - {t: "فلکرا", n: "falak=rā"}
+        - {t: "ز", n: "zi"}
+        - {t: "میان", n: "miyān"}
+      - tokens:
+        - {t: "از", n: "az"}
+        - {t: "نو", n: "naw"}
+        - {t: "فلکِ", n: "falak=i"}
+        - {t: "دگر", n: "digar"}
+        - {t: "چنان", n: "činān"}
+        - {t: "ساختمی", n: "sāxt=am=ē"}
+      - tokens:
+        - {t: "کازاده", n: "k'āzāda"}
+        - {t: "بکام", n: "ba-kām=i"}
+        - {t: "دل", n: "dil"}
+        - {t: "رسیدی", n: "rasīd=ē"}
+        - {t: "آسان", n: "āsān"}

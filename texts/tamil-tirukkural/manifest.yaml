@@ -1,0 +1,54 @@
+work: tamil-tirukkural
+title: Tirukkural, chapter 1, The Praise of God (கடவுள் வாழ்த்து)
+author: Tiruvaḷḷuvar, by tradition
+language: ta
+prefix: kural                        # kural.<kural number>.<line>[.<token>]
+urn: urn:weft:ta:tirukkural.1        # Weft-local identifier
+unit: section
+section_noun: kural
+written: {year: 450, label: "composed perhaps between the 4th and 6th centuries AD; the date is uncertain"}
+status: phase-0
+pilot: {sections: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]}
+edition:
+  id: srinivasan1997
+  name: Tirukkuṟaḷ, mūlam, ed. R. Srinivasan (1997), page 9, via Tamil Wikisource
+  format: weft-edition
+  file: edition.yaml
+  license: the Kural is public domain; the 1997 edition is a Tamil Nadu nationalized book, its scan released CC0 on Wikimedia Commons; Wikisource text CC BY-SA 4.0; Weft word division CC BY-SA 4.0
+treebank: null                       # no treebank for Old Tamil; hand annotation in curated/, draft
+schemes: [old-tamil, modern]         # default = Old Tamil as first recited (approximate)
+sources_extra:
+  - id: srinivasan1997-p9
+    name: "பக்கம்:திருக்குறள், மூலம்.pdf/9 (chapter 1, proofread), Tamil Wikisource revision 1529038"
+    file: sources/srinivasan1997-p9.txt
+    url: "https://ta.wikisource.org/w/index.php?curid=287284&oldid=1529038&action=raw"
+    sha256: 0f74e43f19f91d792d3bccf4d78997c3454e24b842ca9256d806bd2bbe123a3f
+    license: public domain text; scan CC0 (Tamil Virtual Academy, nationalized books); Wikisource CC BY-SA 4.0
+    license_url: https://commons.wikimedia.org/wiki/File:திருக்குறள்,_மூலம்.pdf
+translations:
+  - id: pope1886
+    translator: G. U. Pope
+    year: 1886
+    form: rhymed verse couplets, in The 'Sacred' Kurral of Tiruvalluva-Nayanar
+    license: public-domain
+    license_url: https://archive.org/details/in.ernet.dli.2015.43871
+    file: sources/pope1886.txt
+    url: "https://archive.org/download/in.ernet.dli.2015.43871/2015.43871.Sacred-Kurral-Of-Tiruvalluva-nayanar_djvu.txt"
+    sha256: bd6a4000e43e46c9978b91482674b1586f34cf7edb7a4c031801c2f92a62898d
+  - id: drew1840
+    translator: W. H. Drew
+    year: 1840
+    form: prose, in The Cural of Tiruvalluvar, with the commentary of Parimēlaḻakar (Madras, 1840)
+    license: public domain (Public Domain Mark)
+    license_url: https://archive.org/details/b2934721x_0001
+    file: sources/drew1840.txt
+    url: "https://archive.org/download/b2934721x_0001/b2934721x_0001_djvu.txt"
+    sha256: 290e0f94904e6b26bbfc3f2f9066e3cc0b82148c19c009dc09cbff3dcf10fc47
+predicted_gaps:
+  - "the Kural's date is uncertain, so the Old Tamil reading is an approximation of an approximate period"
+  - "Old Tamil sounds are reconstructed from the Tolkāppiyam and later scholarship; the values of c, ṟ, ṟṟ, ḻ and the āytam are the least certain"
+  - "the full stop the 1997 edition prints after each kural is editorial and is left out; verify_strip removes it from the source for the verbatim check"
+  - "no treebank for Old Tamil; lemma, morphology and gloss by hand, draft"
+  - "each word is sounded alone: sandhi across words is written in the text but not modeled in the sound"
+  - "kural 4 links a -kāy foot to a foot beginning with nirai (veṇṭaḷai rule break under the rules as implemented); reported as venpa-talai and left for review"
+  - "Project Madurai's Tirukkural text was not used: its header allows free distribution but names no license and gives no permission to modify"

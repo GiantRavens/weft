@@ -1,0 +1,99 @@
+# Human overlay for the prologue of the Laws of Hammurabi, column I, lines 1-53. Lemmas follow the
+# headwords of Black, George and Postgate, A Concise Dictionary of Akkadian (2nd ed., 2000), with the
+# mimation in brackets as the dictionary prints it; verbs under the infinitive of the G stem.
+# Morphology uses Universal Dependencies features, with two Akkadian additions: Stem (G, D, Š) and
+# Tense=Stative. The subordinative mood is not marked: every verb in this passage ends in a vowel
+# (3rd plural -ū, dual -ā), where Akkadian adds no subordinative ending. Pronoun suffixes are shown
+# in the gloss (they-decreed-for-him).
+- by: Claude (Weft phase 0), for review by Skip and an Assyriologist
+  date: 2026-09-30
+  why: hand lemma, morphology and gloss; no treebank covers the Laws of Hammurabi
+  status: draft
+  set:
+    ch.1.1.1: {lemma: "inu", morph: "SCONJ", gloss: "when"}   # (N)i-nu
+    ch.1.1.2: {lemma: "Anu(m)", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Anum"}   # ilum
+    ch.1.1.3: {lemma: "ṣīru(m)", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "exalted"}   # ṣi-ru-um
+    ch.1.2.1: {lemma: "šarru(m)", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing|State=Cons", gloss: "king-of"}   # šar
+    ch.1.2.2: {lemma: "Anunnakū", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "the-Anunnaki"}   # iluA-nun-na-ki
+    ch.1.3.1: {lemma: "Ellil", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Enlil"}   # iluEN.LIL
+    ch.1.4.1: {lemma: "bēlu(m)", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing|State=Cons", gloss: "lord-of"}   # be-el
+    ch.1.4.2: {lemma: "šamû", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "heaven"}   # ša-me-e
+    ch.1.5.1: {lemma: "u", morph: "CCONJ", gloss: "and"}   # u
+    ch.1.5.2: {lemma: "erṣetu(m)", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "earth"}   # ir-ṣi-tim
+    ch.1.6.1: {lemma: "šiāmu(m)", morph: "VERB|Stem=G|VerbForm=Part|Gender=Masc|Case=Nom|State=Cons", gloss: "decreer-of"}   # ša-i-im
+    ch.1.7.1: {lemma: "šīmtu(m)", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur|State=Cons", gloss: "destinies-of"}   # ši-ma-at
+    ch.1.7.2: {lemma: "mātu(m)", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "the-land"}   # mâtim
+    ch.1.8.1: {lemma: "ana", morph: "ADP", gloss: "to"}   # a-na
+    ch.1.8.2: {lemma: "Marduk", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Marduk"}   # iluMarduk
+    ch.1.9.1: {lemma: "māru(m) + rēštû(m)", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing + ADJ|Case=Gen|Gender=Masc|Number=Sing", gloss: "son-first-born"}   # mâr+ri-eš-ti-im
+    ch.1.10.1: {lemma: "ša", morph: "ADP", gloss: "of"}   # ša
+    ch.1.10.2: {lemma: "Ea", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Ea"}   # iluEN.KI
+    ch.1.11.1: {lemma: "ellilūtu(m)", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing|State=Cons", gloss: "Enlil-ship-of"}   # ilubêlu-ut
+    ch.1.12.1: {lemma: "kiššatu(m)", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing|State=Cons", gloss: "totality-of"}   # kiššat
+    ch.1.12.2: {lemma: "nišū", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "the-people"}   # ni-ši(g)
+    ch.1.13.1: {lemma: "šiāmu(m)", morph: "VERB|Stem=G|Person=3|Number=Plur|Gender=Masc|Tense=Pret", gloss: "they-decreed-for-him"}   # i-ši-mu-šum
+    ch.1.14.1: {lemma: "ina", morph: "ADP", gloss: "among"}   # in
+    ch.1.14.2: {lemma: "Igigū", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "the-Igigi"}   # I-gi-gi
+    ch.1.15.1: {lemma: "rabû(m)", morph: "VERB|Stem=Š|Person=3|Number=Plur|Gender=Masc|Tense=Pret", gloss: "they-made-him-great"}   # u-šar-be-u-šu
+    ch.1.16.1: {lemma: "Bābilu(m)", morph: "PROPN|Case=Acc|Gender=Masc|Number=Sing", gloss: "Babylon"}   # KA.DINGIR.RA.KI
+    ch.1.17.1: {lemma: "šumu(m)", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "its-name"}   # šum-šu
+    ch.1.17.2: {lemma: "ṣīru(m)", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "exalted"}   # ṣi-ra-am
+    ch.1.17.3: {lemma: "nabû(m)", morph: "VERB|Stem=G|Person=3|Number=Plur|Gender=Masc|Tense=Pret", gloss: "they-named"}   # ib-bi-u
+    ch.1.18.1: {lemma: "ina", morph: "ADP", gloss: "in"}   # in
+    ch.1.18.2: {lemma: "kibrātu(m)", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "the-world-regions"}   # ki-ib-ra-tim
+    ch.1.19.1: {lemma: "watāru(m)", morph: "VERB|Stem=Š|Person=3|Number=Plur|Gender=Masc|Tense=Pret", gloss: "they-made-it-surpass"}   # u-ša-te-ru-šu
+    ch.1.20.1: {lemma: "ina", morph: "ADP", gloss: "in"}   # i-na
+    ch.1.20.2: {lemma: "libbu(m)", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "its-midst"}   # li-ib-bi-šu
+    ch.1.21.1: {lemma: "šarrūtu(m)", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "a-kingship"}   # šar-ru-tam
+    ch.1.21.2: {lemma: "dārû(m)", morph: "ADJ|Case=Acc|Gender=Fem|Number=Sing", gloss: "everlasting"}   # dârî-tam
+    ch.1.22.1: {lemma: "ša", morph: "PRON|PronType=Rel", gloss: "which"}   # ša
+    ch.1.22.2: {lemma: "kīma", morph: "ADP", gloss: "like"}   # ki-ma
+    ch.1.22.3: {lemma: "šamû", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "heaven"}   # ša-me-e
+    ch.1.23.1: {lemma: "u", morph: "CCONJ", gloss: "and"}   # u
+    ch.1.23.2: {lemma: "erṣetu(m)", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "earth"}   # ir-ṣi-tim
+    ch.1.24.1: {lemma: "išdu(m)", morph: "NOUN|Case=Nom|Gender=Masc|Number=Dual", gloss: "its-foundations"}   # iš-da-ša
+    ch.1.25.1: {lemma: "rašādu(m)", morph: "VERB|Stem=Š|Person=3|Number=Dual|Tense=Stative", gloss: "are-firmly-set"}   # šu-ur-šu-da
+    ch.1.26.1: {lemma: "kânu(m)", morph: "VERB|Stem=D|Person=3|Number=Plur|Gender=Masc|Tense=Pret", gloss: "they-established-for-him"}   # u-ki-in-nu-šum
+    ch.1.27.1: {lemma: "inūmīšu", morph: "ADV", gloss: "at-that-time"}   # i-nu-mi-šu
+    ch.1.28.1: {lemma: "Ḫammurabi", morph: "PROPN|Case=Acc|Gender=Masc|Number=Sing", gloss: "Hammurabi"}   # Ḫa-am-mu-ra-bi
+    ch.1.29.1: {lemma: "rubû(m)", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "the-prince"}   # ru-ba-am
+    ch.1.30.1: {lemma: "naʾdu(m)", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "pious"}   # na-’-dam
+    ch.1.31.1: {lemma: "palāḫu(m)", morph: "VERB|Stem=G|VerbForm=Part|Gender=Masc|Case=Acc|State=Cons", gloss: "fearer-of"}   # pa-li-iḫ
+    ch.1.31.2: {lemma: "ilu(m)", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "the-gods"}   # ili
+    ch.1.31.3: {lemma: "yâti", morph: "PRON|Person=1|Number=Sing|Case=Acc|PronType=Prs", gloss: "me"}   # ia-ti
+    ch.1.32.1: {lemma: "mīšaru(m)", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "justice"}   # mi-ša-ra-am
+    ch.1.33.1: {lemma: "ina", morph: "ADP", gloss: "in"}   # i-na
+    ch.1.33.2: {lemma: "mātu(m)", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "the-land"}   # ma-tim
+    ch.1.34.1: {lemma: "ana", morph: "ADP", gloss: "to"}   # a-na
+    ch.1.34.2: {lemma: "wapû(m)", morph: "VERB|Stem=Š|VerbForm=Inf|Case=Gen", gloss: "make-appear"}   # šu-bi-i-im
+    ch.1.35.1: {lemma: "raggu(m)", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "the-wicked"}   # ra-ga-am
+    ch.1.35.2: {lemma: "u", morph: "CCONJ", gloss: "and"}   # u
+    ch.1.35.3: {lemma: "ṣēnu(m)", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "the-evil"}   # ṣi-nam
+    ch.1.36.1: {lemma: "ana", morph: "ADP", gloss: "to"}   # a-na
+    ch.1.36.2: {lemma: "ḫalāqu(m)", morph: "VERB|Stem=D|VerbForm=Inf|Case=Gen", gloss: "destroy"}   # ḫu-ul-lu-ḳi-im
+    ch.1.37.1: {lemma: "dannu(m)", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "the-strong"}   # dan-nu-um
+    ch.1.38.1: {lemma: "enšu(m)", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "the-weak"}   # en-ša-am
+    ch.1.39.1: {lemma: "ana", morph: "ADP", gloss: "to"}   # a-na
+    ch.1.39.2: {lemma: "lā", morph: "PART|Polarity=Neg", gloss: "not"}   # la
+    ch.1.39.3: {lemma: "ḫabālu(m)", morph: "VERB|Stem=G|VerbForm=Inf|Case=Gen", gloss: "wrong"}   # ḫa-ba-li-im
+    ch.1.40.1: {lemma: "kīma", morph: "ADP", gloss: "like"}   # ki-ma
+    ch.1.40.2: {lemma: "Šamaš", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Shamash"}   # iluŠamaš
+    ch.1.41.1: {lemma: "ana", morph: "ADP", gloss: "over"}   # a-na
+    ch.1.41.2: {lemma: "ṣalmāt qaqqadim", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "the-black-headed"}   # SAG.GIG
+    ch.1.42.1: {lemma: "waṣû(m)", morph: "VERB|Stem=G|VerbForm=Inf|Case=Gen", gloss: "go-forth-and"}   # wa-ṣi-e-im-ma
+    ch.1.43.1: {lemma: "mātu(m)", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "the-land"}   # ma-tim
+    ch.1.44.1: {lemma: "nawāru(m)", morph: "VERB|Stem=D|VerbForm=Inf|Case=Gen", gloss: "light-up"}   # nu-wu-ri-im
+    ch.1.45.1: {lemma: "Anu(m)", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Anum"}   # ilum
+    ch.1.46.1: {lemma: "u", morph: "CCONJ", gloss: "and"}   # u
+    ch.1.46.2: {lemma: "Ellil", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Enlil"}   # iluEN-LIL
+    ch.1.47.1: {lemma: "ana", morph: "ADP", gloss: "for"}   # a-na
+    ch.1.47.2: {lemma: "šīru(m)", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing|State=Cons", gloss: "flesh-of"}   # ši-ir
+    ch.1.47.3: {lemma: "nišū", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "the-people"}   # ni-ši
+    ch.1.48.1: {lemma: "ṭiābu(m)", morph: "VERB|Stem=D|VerbForm=Inf|Case=Gen", gloss: "make-good"}   # tu-ub-bi-im
+    ch.1.49.1: {lemma: "šumu(m)", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "my-name"}   # šu-mi
+    ch.1.49.2: {lemma: "nabû(m)", morph: "VERB|Stem=G|Person=3|Number=Plur|Gender=Masc|Tense=Pret", gloss: "they-called"}   # ib-bu-u
+    ch.1.50.1: {lemma: "Ḫammurabi", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Hammurabi"}   # Ḫa-am-mu-ra-bi
+    ch.1.51.1: {lemma: "rēʾû(m)", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "the-shepherd"}   # ri-i-a-um
+    ch.1.52.1: {lemma: "nibītu(m)", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing|State=Cons", gloss: "named-one-of"}   # ni-bi-it
+    ch.1.53.1: {lemma: "Ellil", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Enlil"}   # iluEN.LIL
+    ch.1.53.2: {lemma: "anāku", morph: "PRON|Person=1|Number=Sing|Case=Nom|PronType=Prs", gloss: "I-am"}   # a-na-ku

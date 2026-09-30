@@ -1,0 +1,32 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '10'
+counts:
+  lines: 20
+  tokens: 70
+failures:
+  venpa-talai: 1
+samples:
+  venpa-talai:
+  - 4.1 vēṇṭāmai (tēmāṅkāy) then ilāṉaṭi (nirai)
+failure_rate:
+  venpa-talai: 0.014
+shift_left: []
+predicted_gaps:
+- the Kural's date is uncertain, so the Old Tamil reading is an approximation of an approximate period
+- Old Tamil sounds are reconstructed from the Tolkāppiyam and later scholarship; the values of c, ṟ, ṟṟ, ḻ and the āytam are the least certain
+- the full stop the 1997 edition prints after each kural is editorial and is left out; verify_strip removes it from the source for the verbatim check
+- no treebank for Old Tamil; lemma, morphology and gloss by hand, draft
+- 'each word is sounded alone: sandhi across words is written in the text but not modeled in the sound'
+- kural 4 links a -kāy foot to a foot beginning with nirai (veṇṭaḷai rule break under the rules as implemented); reported as venpa-talai and left for review
+- 'Project Madurai''s Tirukkural text was not used: its header allows free distribution but names no license and gives no permission to modify'

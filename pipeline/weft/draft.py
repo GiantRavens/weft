@@ -13,11 +13,12 @@ from pathlib import Path
 
 import yaml
 
-from . import __version__, chinese, greek, hebrew, japanese, latin, norse, oldenglish, runic, sanskrit, treebank
+from . import __version__, akkadian, chinese, greek, hebrew, japanese, latin, norse, oldenglish, persian, runic, sanskrit, tamil, treebank
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
 INDECLINABLE = set("dcgriebz")   # b: GLAUx coordinating conjunction
-PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebrew, "lzh": chinese, "runic": runic, "ja": japanese, "san": sanskrit}
+PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebrew, "lzh": chinese, "runic": runic, "ja": japanese, "san": sanskrit,
+        "akk": akkadian, "fa": persian, "ta": tamil}
 NORMALIZE = {"heyne-to-macron": oldenglish.heyne_to_macron}
 LEAD = re.compile(r"^([(\[“]+|[-–—]\u00a0)")
 TRAIL = re.compile(r"((?:[,.·;:!?)\]”\u0387\u037e]|\u00a0[-–—])+)$")
@@ -336,6 +337,12 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                     tok["norm"] = et["n"]
                 if et.get("m"):
                     tok["metre_form"] = et["m"]
+                # language hook: extra token fields (a generated script row, a reading) from the module
+                if hasattr(phon, "token_fields"):
+                    fields, tfails = phon.token_fields(s, et, g)
+                    tok.update(fields)
+                    for cls, sample in tfails:
+                        fail(cls, f"{book}.{n} {sample}")
             if lead:
                 tok["lead"] = lead
             if p:
@@ -400,6 +407,17 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         if lang == "ja" and toks:
             # Japanese verse counts morae; the first scheme is the as-first-spoken reading
             line_rec["metre"] = f"{sum(t.get('morae', 0) for t in toks)} morae"
+        if token_edition and toks and hasattr(phon, "line_metre"):
+            # language hook: metre computed from the line's tokens, with its own failure classes
+            m_str, mfails = phon.line_metre(etoks, edition)
+            if m_str:
+                line_rec["metre"] = m_str
+            for cls, sample in mfails:
+                fail(cls, f"{book}.{n} {sample}")
+        if token_edition and toks and hasattr(phon, "line_checks"):
+            # language hook: sensors that compare the line against its source (spelling, marks)
+            for cls, sample in phon.line_checks(text, etoks, edition):
+                fail(cls, f"{book}.{n} {sample}")
         if lang == "san" and toks:
             ns = [et["n"] for et in etoks]
             # sensor 1: the hand-entered transliteration must spell the printed Devanagari
@@ -425,7 +443,9 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                 if want and size != want:
                     # the Rigveda often counts a syllable its written form lost (ī́ḍyo read ī́ḍiyo)
                     fail("pada-syllables-short" if size < want else "pada-syllables-long", f"{book}.{n} pāda {k + 1}: {size}")
-        if lang == "lzh" and toks:
+        if lang == "lzh" and toks and not token_edition:
+            # Tang level/oblique tones and rhyme: regulated verse only (Li Bai); a Weft edition of
+            # Chinese prose-verse sets its own metre or none
             # regulated verse: level (○) or oblique (●) tone per syllable, and the rhyme of the last
             pattern = "".join("○" if t.get("tone") == "level" else "●" for t in toks)
             line_rec["metre"] = f"{pattern} · rhyme -{toks[-1].get('final', '?')}"
@@ -440,7 +460,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         "layers": {
             "text": {"src": m["edition"]["id"]},
             **({"gloss": {"src": m["treebank"]["id"] + " (MISC Gloss)"}, "metre": {"src": f"weft.chinese {chinese.VERSION}: Tang tones"}}
-               if lang == "lzh" else {}),
+               if lang == "lzh" and m.get("treebank") else {}),
             **({"lemma": {"src": m["treebank"]["id"] + (" (homograph numbers stripped)" if tb_fmt == "ldt-stream" else "")},
                 "morph": {"src": m["treebank"]["id"]}} if tb_fmt != "none" else
                {"lemma": {"src": "none: no treebank; hand annotation in curated/"},
@@ -453,8 +473,11 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         },
         "lines": lines,
     }
+    if hasattr(phon, "LAYERS"):
+        gen["layers"].update(phon.LAYERS)
     stem = ("inscriptions" if "inscriptions" in (yaml.safe_load((work_dir / m["edition"]["file"]).read_text()) or {}) else "sections") if ed_fmt == "weft-edition" else "lines" if book is None and ed_fmt != "stanza-text" else {"stanza-text": "stanzas", "verse-text": "lines"}.get(ed_fmt) or (
         f"chapter{book:02d}" if ed_fmt in ("conllu", "morphgnt", "oshb") else f"book{book:02d}")
+    (work_dir / "gen").mkdir(exist_ok=True)
     out = work_dir / "gen" / f"{stem}.yaml"
     header = "# Generated by `weft draft`. Do not edit. Corrections go in curated/.\n"
     out.write_text(header + yaml.dump(gen, allow_unicode=True, sort_keys=False, width=200,

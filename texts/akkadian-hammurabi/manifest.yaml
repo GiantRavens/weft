@@ -1,0 +1,59 @@
+work: akkadian-hammurabi
+title: The Laws of Hammurabi, prologue
+author: Hammurabi, king of Babylon (reigned about 1792–1750 BC)
+language: akk
+prefix: ch                       # ch.<column>.<line>[.<token>]: column I of the stele, Harper's line numbers
+urn: urn:weft:akk:hammurabi.prologue   # Weft-local identifier
+unit: section
+section_noun: column
+written: {year: -1755, label: "set up late in Hammurabi's reign, about 1755–1750 BC, in Old Babylonian; the stele in the Louvre (Sb 8) was carried to Susa about 1150 BC"}
+status: phase-0
+pilot: {sections: ["1"]}
+edition:
+  id: harper1904
+  name: "R. F. Harper, The Code of Hammurabi, King of Babylon (Chicago, 1904), transliteration of the prologue, column I, lines 1-53, via multilingual Wikisource"
+  format: weft-edition
+  file: edition.yaml
+  license: "public domain (1904); Wikisource transcription CC BY-SA 4.0; Weft sign reading, normalization and line division CC BY-SA 4.0"
+treebank: null                   # hand annotation, draft
+schemes: [ob-1750, classroom]    # default = Old Babylonian around 1750 BC (approximate)
+sources_extra:
+  - id: harper1904-p22
+    name: "Harper, The Code of Hammurabi (1904), page 2 (scan page 22), transliteration of the prologue, multilingual Wikisource revision 1355135 (proofread level 4, validated)"
+    file: sources/harper1904-p22.txt
+    url: "https://wikisource.org/w/index.php?title=Page:Code_of_Hammurabi_(1904).pdf/22&oldid=1355135&action=raw"
+    sha256: 93e151b557e4385e5e9f15061491f4fbe4ed43e75bb4c3fa4a23595b095071e6
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://wikisource.org/wiki/Codex_Hammurabi
+  - id: oracc-osl
+    name: "Oracc Sign List (osl.asl), Oracc, commit 193cadf; source of pipeline/weft/data/akk_osl_values.tsv"
+    file: sources/osl.asl
+    url: "https://raw.githubusercontent.com/oracc/osl/193cadfb13bccae6f1f36a8e100ce5660b9e1605/00lib/osl.asl"
+    sha256: 8a67f2bc17967459098e4bdb913586d07a3120b04f7a72750d78523c2134ad47
+    license: CC0 1.0 (stated in the file's header)
+    license_url: https://github.com/oracc/osl/blob/master/00lib/osl.asl
+translations:
+  - id: harper1904
+    translator: Robert Francis Harper
+    year: 1904
+    form: prose, printed opposite his transliteration, in The Code of Hammurabi, King of Babylon
+    license: public-domain
+    license_url: https://en.wikisource.org/wiki/The_Code_of_Hammurabi_(Harper_translation)
+    file: sources/harper1904-tr.txt
+    url: "https://en.wikisource.org/w/index.php?title=The_Code_of_Hammurabi_(Harper_translation)&oldid=14692280&action=raw"
+    sha256: 87468267cd42aa549ec67dacd848b92c9b75803b619638860049c9ab1a786890
+  - id: king1910
+    translator: Leonard William King
+    year: 1910
+    form: prose, the translation later distributed by the Avalon Project
+    license: public-domain
+    license_url: https://en.wikisource.org/wiki/Codex_Hammurabi_(King_translation)
+    file: sources/king1910.txt
+    url: "https://en.wikisource.org/w/index.php?curid=22643&oldid=16270720&action=raw"
+    sha256: 28d3ff04e7aef57c3ef1703598a8ff84751ea12e44445c8f965ddf1b0a57bae1
+predicted_gaps:
+  - "fallback from the requested target: the only public-domain transliteration of Standard Babylonian Gilgamesh Tablet I found (R. Campbell Thompson, 1930) exists online only as uncorrected OCR, which cannot pass the verbatim check; George's edition and the eBL corpus are not openly licensed (eBL is CC BY-NC-SA)"
+  - "Harper's 1904 readings are older than modern conventions: no homophone indices, some logograms read as whole words (mâtim, dârî, bêlu). The sign row therefore comes from a separate modern reading (sg), and a sensor reports three places where Harper's sign count differs from it (sign-count-differs-from-harper): the personal-name wedge before Ḫammurabi, which Harper omits (lines 28 and 50), and ri-i-a-um, where Harper reads the single sign IA as two (line 51)"
+  - "Harper prints a small raised b inside some lines without explaining it on the page; it is set aside, and its meaning is an open question for review"
+  - "Old Babylonian pronunciation is reconstructed; the values of š, s, z and the emphatic consonants are debated, and stress is inferred by a modern rule"
+  - "no treebank; lemma, morphology and gloss are hand annotation, draft"

@@ -1,0 +1,26 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+counts:
+  lines: 53
+  tokens: 87
+failures:
+  sign-count-differs-from-harper: 3
+samples:
+  sign-count-differs-from-harper:
+  - '1.28 Ḫa-am-mu-ra-bi: Harper 5, reading {diš}ḫa-am-mu-ra-pi₂ 6'
+  - '1.50 Ḫa-am-mu-ra-bi: Harper 5, reading {diš}ḫa-am-mu-ra-pi₂ 6'
+  - '1.51 ri-i-a-um: Harper 4, reading re-iu-um 3'
+failure_rate:
+  sign-count-differs-from-harper: 0.034
+shift_left: []
+predicted_gaps:
+- 'fallback from the requested target: the only public-domain transliteration of Standard Babylonian Gilgamesh Tablet I found (R. Campbell Thompson, 1930) exists online only as uncorrected OCR, which cannot
+  pass the verbatim check; George''s edition and the eBL corpus are not openly licensed (eBL is CC BY-NC-SA)'
+- 'Harper''s 1904 readings are older than modern conventions: no homophone indices, some logograms read as whole words (mâtim, dârî, bêlu). The sign row therefore comes from a separate modern reading (sg),
+  and a sensor reports three places where Harper''s sign count differs from it (sign-count-differs-from-harper): the personal-name wedge before Ḫammurabi, which Harper omits (lines 28 and 50), and ri-i-a-um,
+  where Harper reads the single sign IA as two (line 51)'
+- Harper prints a small raised b inside some lines without explaining it on the page; it is set aside, and its meaning is an open question for review
+- Old Babylonian pronunciation is reconstructed; the values of š, s, z and the emphatic consonants are debated, and stress is inferred by a modern rule
+- no treebank; lemma, morphology and gloss are hand annotation, draft

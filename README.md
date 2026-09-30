@@ -76,10 +76,11 @@ server, so a page or the whole folder can be sent as an attachment.
 
 ## Status
 
-Eighteen works built across nine languages, oldest first in the library:
+Twenty-two works built across twelve languages, oldest first in the library:
 
 | Work | Passage | Schemes | Translations |
 |---|---|---|---|
+| Laws of Hammurabi, prologue | column I, lines 1-53 | Old Babylonian (reconstructed), classroom Akkadian; cuneiform row generated | Harper 1904, King 1910 |
 | Rigveda 1.1, Hymn to Agni | 9 verses | Vedic (with the pitch accent), modern Indian | Griffith 1896, Wilson 1850 |
 | Homer, Iliad | 1.1-7 (the proem) | restored, Erasmian | Butler 1898, Lang, Leaf and Myers 1883 |
 | Homer, Odyssey | 1.1-10 | restored, Erasmian | Butler 1900, Butcher and Lang 1879 |
@@ -87,13 +88,16 @@ Eighteen works built across nine languages, oldest first in the library:
 | Genesis (Bereshit) | 1:1-5 | Tiberian, modern Israeli | JPS 1917, Geneva 1599, King James 1611 |
 | Gospel of John | 1:1-5 | Koine, Erasmian | Tyndale 1534, Geneva 1599, King James 1611 |
 | Ovid, Metamorphoses | 1.1-9 | classical, ecclesiastical | Golding 1567, More 1922 |
+| Daodejing (Laozi) | chapters 1-2 | Old Chinese (Baxter-Sagart), Tang, Mandarin | Legge 1891, Chalmers 1868 |
 | Epictetus, Enchiridion | 1.1-3 | Koine, restored, Erasmian | Long 1877, Higginson 1865 |
 | Marcus Aurelius, Meditations | 2.1 | Koine, restored, Erasmian | Long 1862, Casaubon 1634 |
 | Völuspá (Poetic Edda) | complete, stanzas 1-66 | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
 | Hávamál (Poetic Edda) | stanzas 1, 76, 77 | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
 | Li Bai, Quiet Night Thought | 4 lines | Tang, Mandarin, Cantonese | Cranmer-Byng 1909 |
+| Tirukkural | chapter 1, kurals 1-10 | Old Tamil (reconstructed), modern | Pope 1886, Drew 1840 |
 | Runic inscriptions: Kylver, Gallehus, Rök | 3 inscriptions | Proto-Norse, Old East Norse | Stephens 1884; Weft editorial reading |
 | Beowulf | 1-11 | late West Saxon | Gummere 1910, Morris and Wyatt 1895 |
+| Rubaiyat, quatrains attributed to Omar Khayyam | 6 quatrains | Early New Persian (about 1100), modern Persian | FitzGerald 1889, Heron-Allen 1899 |
 | Magna Carta | chapters 39-40 | Anglo-Latin (England, 1215), classical | McKechnie 1905, Bell 1910 |
 | Science in Latin: Descartes, Newton | cogito (1644); laws of motion (1687) | as first read (French, English manner), classical | Veitch 1853, Motte 1729 |
 | Bashō, The Old Pond | 1 poem, 5-7-5 | Edo 1686, modern | Hearn 1898, Chamberlain 1902 |

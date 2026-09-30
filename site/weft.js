@@ -19,9 +19,9 @@
 
   /* ---------- settings, persisted per viewer */
   const LAYERS = [
-    ...(D.lines.some((l) => l.tokens.some((t) => t.script)) ? [["script", "Script (runes)"]] : []),
+    ...(D.lines.some((l) => l.tokens.some((t) => t.script)) ? [["script", D.work.script_label || "Script (runes)"]] : []),
     ["source", "Source text"],
-    ...(D.work.language === "san" ? [["translit", "Transliteration"]] : []), ["sound", "Sound"], ["gloss", "Gloss, word for word"],
+    ...(D.work.show_translit ? [["translit", D.work.translit_label || "Transliteration"]] : []), ["sound", "Sound"], ["gloss", "Gloss, word for word"],
     ["metre", "Metre"], ["sense", "Translations"], ["notes", "Note markers"],
   ];
   const SLIDERS = [
@@ -132,7 +132,7 @@
         },
           t.script ? h("span", { class: "scr", "aria-hidden": "true", text: t.script }) : null,
           h("span", { class: "src", lang: LANG }, t.lead ? h("span", { class: "p", text: t.lead }) : null, h("span", { class: "form", text: shown(t) }), t.punct ? h("span", { class: "p", text: t.punct }) : null),
-          D.work.language === "san" && t.norm ? h("span", { class: "tl", text: t.norm }) : null,
+          D.work.show_translit && t.norm ? h("span", { class: "tl", text: t.norm }) : null,
           h("span", { class: "snd", text: snd.respell || "" }),
           h("span", { class: "gls", text: t.gloss || "·" }),
         );
@@ -186,8 +186,8 @@
     const dl = h("dl", {},
       h("dt", { text: "lemma" }), h("dd", { class: "lemma", lang: LANG, text: t.lemma || "—" }),
       h("dt", { text: "form" }), h("dd", { text: t.morph_text || "indeclinable" }),
-      ...(t.script ? [h("dt", { text: "runes" }), h("dd", { class: "scr-big", text: t.script })] : []),
-      ...(t.norm ? [h("dt", { text: { ja: "reading", san: "transliteration" }[D.work.language] || "normalized" }), h("dd", { lang: D.work.language === "san" ? null : LANG, text: t.norm })] : []),
+      ...(t.script ? [h("dt", { text: D.work.script_word || "runes" }), h("dd", { class: "scr-big", text: t.script })] : []),
+      ...(t.norm ? [h("dt", { text: { ja: "reading" }[D.work.language] || (D.work.show_translit ? (D.work.translit_label || "Transliteration").toLowerCase() : "normalized") }), h("dd", { lang: D.work.show_translit ? null : LANG, text: t.norm })] : []),
       ...(t.metre_form ? [h("dt", { text: "metrical reading" }), h("dd", { text: `${t.metre_form}: the metre sounds a syllable the written form lost` })] : []),
       ...(t.enclitic ? [h("dt", { text: "enclitic" }), h("dd", { lang: LANG, text: `${t.enclitic.form} (${t.enclitic.lemma}, 'and'), attached to the end of the word` })] : []),
       ...(t.prefixes || []).flatMap((pf) => [h("dt", { text: "prefix" }),

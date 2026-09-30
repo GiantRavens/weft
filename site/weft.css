@@ -224,8 +224,8 @@ body.rtl .w.caesura { border-left: 0; border-right: 1px dotted var(--rule); }
 @media print { .worknav, .home { display: none !important; } }
 
 /* ---------- script row (runes above the transliteration) */
-.scr { font-family: "Noto Sans Runic", "Segoe UI Historic", sans-serif; font-size: calc(var(--src-size) * 1.05); line-height: 1.1; letter-spacing: 0.04em; color: var(--ink-soft); white-space: nowrap; }
-.word .scr-big { font-family: "Noto Sans Runic", "Segoe UI Historic", sans-serif; font-size: 1.6rem; }
+.scr { font-family: "Noto Sans Runic", "Noto Sans Cuneiform", "Segoe UI Historic", sans-serif; font-size: calc(var(--src-size) * 1.05); line-height: 1.1; letter-spacing: 0.04em; color: var(--ink-soft); white-space: nowrap; }
+.word .scr-big { font-family: "Noto Sans Runic", "Noto Sans Cuneiform", "Segoe UI Historic", sans-serif; font-size: 1.6rem; }
 body.hide-script .scr { display: none; }
 .tr.editorial { border-left-style: dashed; }
 .tr.editorial cite::after { content: " · editorial, draft"; }
@@ -247,3 +247,9 @@ body.hide-script .scr { display: none; }
 .word .big[lang="sa"] { font-family: "Noto Serif Devanagari", "Kohinoor Devanagari", serif; }
 .tl { font: italic calc(var(--snd-size) * 1.2)/1.25 var(--serif); color: var(--ink-soft); white-space: nowrap; }
 body.hide-translit .tl { display: none; }
+
+/* Classical Persian (right to left), Old Tamil, Akkadian cuneiform */
+body.rtl .src[lang="fa"] { font-family: "Noto Naskh Arabic", "Geeza Pro", "Times New Roman", serif; font-size: calc(var(--src-size) * 1.05); line-height: 1.7; }
+.word .big[lang="fa"] { font-family: "Noto Naskh Arabic", "Geeza Pro", serif; direction: rtl; }
+.src[lang="ta"] { font-family: "Noto Serif Tamil", "Tamil Sangam MN", serif; font-size: calc(var(--src-size) * 0.95); line-height: 1.5; }
+.word .big[lang="ta"] { font-family: "Noto Serif Tamil", "Tamil Sangam MN", serif; }

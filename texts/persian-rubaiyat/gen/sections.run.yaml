@@ -1,0 +1,23 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '72'
+  - '104'
+  - '353'
+  - '252'
+  - '35'
+  - '379'
+counts:
+  lines: 24
+  tokens: 150
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- Heron-Allen translates the Ouseley (1460) or Calcutta manuscript, not Whinfield's text; in quatrains 72, 104 and 353 the wording differs, and the notes say where
+- FitzGerald's stanzas are free paraphrases, one span per quatrain; 353 stands behind two of his stanzas (XXVII and XXVIII)
+- Early New Persian around 1100 is reconstructed; the ð rule, the stress and the vowel qualities are approximate
+- short vowels are not written in the script; the transliteration supplies them from Whinfield's notes, the metre and the dictionaries, and is not checked against the script except for its letters
+- the metre admits recognized licences (wasl, a lengthened ezafe or u, a long vowel shortened before a vowel); which one a reciter used is a judgment
+- no treebank; lemma, morphology and gloss are hand-annotated, draft

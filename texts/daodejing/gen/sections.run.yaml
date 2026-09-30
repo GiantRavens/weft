@@ -1,0 +1,38 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+  - '2'
+counts:
+  lines: 24
+  tokens: 147
+failures:
+  reading-from-variant: 5
+  oc-from-zhengzhang: 1
+  reading-missing: 2
+samples:
+  reading-from-variant:
+  - 9 眾->衆
+  - 1 為->爲
+  - 2 為->爲
+  - 9 為->爲
+  - 13 為->爲
+  oc-from-zhengzhang:
+  - 2.5 較
+  reading-missing:
+  - 14 弗
+  - 15 弗
+failure_rate:
+  reading-from-variant: 0.034
+  oc-from-zhengzhang: 0.007
+  reading-missing: 0.014
+shift_left: []
+predicted_gaps:
+- Old Chinese is a reconstruction (Baxter-Sagart 2014), approximate; brackets and parentheses in the scholarly form mark uncertain segments
+- 較 has no Baxter-Sagart reading; it falls back to Zhengzhang Shangfang (failure class oc-from-zhengzhang, 1 token)
+- '弗 has no Tang reading in Unihan (Stimson''s list lacks it) and no variant to borrow one from: the Tang row shows ? (reading-missing, 2 tokens)'
+- 為 and 眾 take their Tang readings from the glyph variants 爲 and 衆 (reading-from-variant, 5 tokens)
+- Wikisource prints modern punctuation; Weft's lines follow it but do not reproduce it (the source is checked with the punctuation stripped)
+- no treebank; lemma, part of speech and gloss by hand, draft
+- the metre row records Old Chinese rhymes only where the reconstruction supports them (curated); the Tang tone pattern that draft writes for regulated verse is withdrawn, since this is not regulated verse
+- Wang Bi's 長短相較 breaks a run of *-eŋ rhymes; the Guodian and Mawangdui texts have 形 (see note)

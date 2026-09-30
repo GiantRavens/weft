@@ -1,0 +1,80 @@
+# Human overlay for Tirukkural chapter 1. No treebank exists for Old Tamil: lemma, morphology and gloss
+# are by hand. Lemmas are Tamil Lexicon (University of Madras, 1924-36) headwords; a word the edition
+# prints as one (a compound, or two words joined by sandhi) lists its parts with " + ". Morphology uses
+# Universal Dependencies features. A token that is only the last foot of a word split for the metre
+# (வார், தார்) carries the lemma and features of the whole word; its gloss is the part it adds.
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-30
+  why: pilot; hand lemma, morphology and literal gloss after the Tamil Lexicon and Parimēlaḻakar's construe
+  status: draft
+  set:
+    kural.1.1.1: {lemma: "அகரம்", morph: "NOUN", gloss: "the-letter-A"}   # அகர akara
+    kural.1.1.2: {lemma: "முதல்", morph: "VERB|Gender=Neut|Number=Plur|Person=3|VerbForm=Fin", gloss: "have-as-first"}   # முதல mutala
+    kural.1.1.3: {lemma: "எழுத்து + எல்லாம்", morph: "NOUN|Number=Plur + PRON|PronType=Tot", gloss: "letters-all"}   # எழுத்தெல்லாம் eḻuttellām
+    kural.1.1.4: {lemma: "ஆதி", morph: "NOUN", gloss: "primal"}   # ஆதி āti
+    kural.1.2.1: {lemma: "பகவன்", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "Lord"}   # பகவன் pakavaṉ
+    kural.1.2.2: {lemma: "முதல் + ஏ", morph: "VERB|Gender=Neut|Number=Sing|Person=3|VerbForm=Fin + PART", gloss: "has-as-first-indeed"}   # முதற்றே mutaṟṟē
+    kural.1.2.3: {lemma: "உலகு", morph: "NOUN|Case=Nom|Number=Sing", gloss: "the-world"}   # உலகு ulaku
+    kural.2.1.1: {lemma: "கல்", morph: "VERB|Case=Ins|Tense=Past|VerbForm=Ger", gloss: "by-what-was-learned"}   # கற்றதனால் kaṟṟataṉāl
+    kural.2.1.2: {lemma: "ஆ", morph: "VERB|Tense=Past|VerbForm=Part", gloss: "that-came"}   # ஆய āya
+    kural.2.1.3: {lemma: "பயன் + என் + கொல்", morph: "NOUN|Case=Nom + PRON|PronType=Int + PART", gloss: "profit-what-pray"}   # பயனென்கொல் payaṉeṉkol
+    kural.2.1.4: {lemma: "வாலறிவன்", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-Pure-Knower's"}   # வாலறிவன் vālaṟivaṉ
+    kural.2.2.1: {lemma: "நல் + தாள்", morph: "ADJ + NOUN|Case=Acc|Number=Plur", gloss: "good-feet"}   # நற்றாள் naṟṟāḷ
+    kural.2.2.2: {lemma: "தொழு", morph: "VERB|Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin", gloss: "they-worship-not"}   # தொழாஅர் toḻāar
+    kural.2.2.3: {lemma: "என்", morph: "VERB|Mood=Cnd", gloss: "if"}   # எனின் eṉiṉ
+    kural.3.1.1: {lemma: "மலர் + மிசை", morph: "NOUN + ADP", gloss: "flower-upon"}   # மலர்மிசை malarmicai
+    kural.3.1.2: {lemma: "ஏகு", morph: "VERB|Gender=Masc|Number=Sing|Person=3|Tense=Past|VerbForm=Fin", gloss: "he-who-went"}   # ஏகினான் ēkiṉāṉ
+    kural.3.1.3: {lemma: "மாண் + அடி", morph: "ADJ + NOUN|Case=Acc|Number=Plur", gloss: "glorious-feet"}   # மாணடி māṇaṭi
+    kural.3.1.4: {lemma: "சேர்", morph: "VERB|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "they-who-reached"}   # சேர்ந்தார் cērntār
+    kural.3.2.1: {lemma: "நிலம் + மிசை", morph: "NOUN + ADP", gloss: "earth-upon"}   # நிலமிசை nilamicai
+    kural.3.2.2: {lemma: "நீடு + வாழ்", morph: "ADV + VERB", gloss: "long-live"}   # நீடுவாழ் nīṭuvāḻ
+    kural.3.2.3: {lemma: "வாழ்", morph: "VERB|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin", gloss: "they-will"}   # வார் vār
+    kural.4.1.1: {lemma: "வேண்டு", morph: "VERB|VerbForm=Ger", gloss: "desiring"}   # வேண்டுதல் vēṇṭutal
+    kural.4.1.2: {lemma: "வேண்டு", morph: "VERB|Polarity=Neg|VerbForm=Ger", gloss: "not-desiring"}   # வேண்டாமை vēṇṭāmai
+    kural.4.1.3: {lemma: "இல் + அடி", morph: "VERB|Gender=Masc|Number=Sing|Person=3|Polarity=Neg + NOUN|Case=Acc|Number=Plur", gloss: "the-one-without's-feet"}   # இலானடி ilāṉaṭi
+    kural.4.1.4: {lemma: "சேர்", morph: "VERB|Case=Dat|Number=Plur|Tense=Past|VerbForm=Part", gloss: "to-those-who-reached"}   # சேர்ந்தார்க்கு cērntārkku
+    kural.4.2.1: {lemma: "யாண்டு + உம்", morph: "ADV + PART", gloss: "at-any-time-at-all"}   # யாண்டும் yāṇṭum
+    kural.4.2.2: {lemma: "இடும்பை", morph: "NOUN|Case=Nom|Number=Sing", gloss: "affliction"}   # இடும்பை iṭumpai
+    kural.4.2.3: {lemma: "இல்", morph: "VERB|Gender=Neut|Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin", gloss: "are-not"}   # இல ila
+    kural.5.1.1: {lemma: "இருள் + சேர்", morph: "NOUN + VERB", gloss: "darkness-joined"}   # இருள்சேர் iruḷcēr
+    kural.5.1.2: {lemma: "இரு + வினை + உம்", morph: "NUM + NOUN|Case=Nom|Number=Plur + PART", gloss: "two-deeds-both"}   # இருவினையும் iruviṉaiyum
+    kural.5.1.3: {lemma: "சேர்", morph: "VERB|Gender=Neut|Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin", gloss: "cling-not"}   # சேரா cērā
+    kural.5.1.4: {lemma: "இறைவன்", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-Lord's"}   # இறைவன் iṟaivaṉ
+    kural.5.2.1: {lemma: "பொருள் + சேர்", morph: "NOUN + VERB", gloss: "truth-joined"}   # பொருள்சேர் poruḷcēr
+    kural.5.2.2: {lemma: "புகழ் + புரி", morph: "NOUN + VERB|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "praise-who-cherished"}   # புகழ்புரிந்தார் pukaḻpurintār
+    kural.5.2.3: {lemma: "மாட்டு", morph: "ADP", gloss: "with"}   # மாட்டு māṭṭu
+    kural.6.1.1: {lemma: "பொறி + வாயில்", morph: "NOUN + NOUN", gloss: "sense-gates"}   # பொறிவாயில் poṟivāyil
+    kural.6.1.2: {lemma: "ஐந்து + அவி", morph: "NUM + VERB|Gender=Masc|Number=Sing|Person=3|Tense=Past|VerbForm=Fin", gloss: "five-he-who-quenched"}   # ஐந்தவித்தான் aintavittāṉ
+    kural.6.1.3: {lemma: "பொய் + தீர்", morph: "NOUN + VERB", gloss: "falsehood-free"}   # பொய்தீர் poytīr
+    kural.6.1.4: {lemma: "ஒழுக்கம்", morph: "NOUN", gloss: "of-conduct"}   # ஒழுக்க oḻukka
+    kural.6.2.1: {lemma: "நெறி + நில்", morph: "NOUN + VERB|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "path-who-stood"}   # நெறிநின்றார் neṟiniṉṟār
+    kural.6.2.2: {lemma: "நீடு + வாழ்", morph: "ADV + VERB", gloss: "long-live"}   # நீடுவாழ் nīṭuvāḻ
+    kural.6.2.3: {lemma: "வாழ்", morph: "VERB|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin", gloss: "they-will"}   # வார் vār
+    kural.7.1.1: {lemma: "தான் + உவமை", morph: "PRON|Case=Dat|Reflex=Yes + NOUN", gloss: "to-himself-likeness"}   # தனக்குவமை taṉakkuvamai
+    kural.7.1.2: {lemma: "இல்", morph: "VERB|Gender=Masc|Number=Sing|Person=3|Polarity=Neg", gloss: "he-who-has-not"}   # இல்லாதான் illātāṉ
+    kural.7.1.3: {lemma: "தாள் + சேர்", morph: "NOUN + VERB|Case=Dat|Number=Plur|Tense=Past|VerbForm=Part", gloss: "feet-to-those-who-reached"}   # தாள்சேர்ந்தார்க் tāḷcērntārk
+    kural.7.1.4: {lemma: "அல்லால்", morph: "ADP", gloss: "except"}   # கல்லால் kallāl
+    kural.7.2.1: {lemma: "மனம் + கவலை", morph: "NOUN + NOUN", gloss: "mind-anxiety"}   # மனக்கவலை maṉakkavalai
+    kural.7.2.2: {lemma: "மாற்று", morph: "VERB|VerbForm=Ger", gloss: "removing"}   # மாற்றல் māṟṟal
+    kural.7.2.3: {lemma: "அரிது", morph: "ADJ|Gender=Neut|Number=Sing", gloss: "is-hard"}   # அரிது aritu
+    kural.8.1.1: {lemma: "அறம் + ஆழி", morph: "NOUN + NOUN", gloss: "virtue-sea"}   # அறவாழி aṟavāḻi
+    kural.8.1.2: {lemma: "அந்தணன்", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-Gracious-One's"}   # அந்தணன் antaṇaṉ
+    kural.8.1.3: {lemma: "தாள் + சேர்", morph: "NOUN + VERB|Case=Dat|Number=Plur|Tense=Past|VerbForm=Part", gloss: "feet-to-those-who-reached"}   # தாள்சேர்ந்தார்க் tāḷcērntārk
+    kural.8.1.4: {lemma: "அல்லால்", morph: "ADP", gloss: "except"}   # கல்லால் kallāl
+    kural.8.2.1: {lemma: "பிற + ஆழி", morph: "ADJ + NOUN", gloss: "other-seas"}   # பிறவாழி piṟavāḻi
+    kural.8.2.2: {lemma: "நீந்து", morph: "VERB|VerbForm=Ger", gloss: "swimming"}   # நீந்தல் nīntal
+    kural.8.2.3: {lemma: "அரிது", morph: "ADJ|Gender=Neut|Number=Sing", gloss: "is-hard"}   # அரிது aritu
+    kural.9.1.1: {lemma: "கோள் + இல்", morph: "NOUN + VERB|Polarity=Neg", gloss: "function-without"}   # கோளில் kōḷil
+    kural.9.1.2: {lemma: "பொறி", morph: "NOUN|Case=Abl|Number=Plur", gloss: "like-senses"}   # பொறியின் poṟiyiṉ
+    kural.9.1.3: {lemma: "குணம் + இல் + ஏ", morph: "NOUN + VERB|Gender=Neut|Number=Plur|Person=3|Polarity=Neg + PART", gloss: "worth-without-indeed"}   # குணமிலவே kuṇamilavē
+    kural.9.1.4: {lemma: "எண் + குணம்", morph: "NUM + NOUN|Gender=Masc|Number=Sing", gloss: "the-Eight-Qualitied-One's"}   # எண்குணத்தான் eṇkuṇattāṉ
+    kural.9.2.1: {lemma: "தாள்", morph: "NOUN|Case=Acc|Number=Plur", gloss: "feet"}   # தாளை tāḷai
+    kural.9.2.2: {lemma: "வணங்கு", morph: "VERB|Polarity=Neg|VerbForm=Part", gloss: "not-bowing"}   # வணங்காத் vaṇaṅkāt
+    kural.9.2.3: {lemma: "தலை", morph: "NOUN|Case=Nom|Number=Sing", gloss: "head"}   # தலை talai
+    kural.10.1.1: {lemma: "பிறவி", morph: "NOUN", gloss: "of-births"}   # பிறவிப் piṟavip
+    kural.10.1.2: {lemma: "பெரு + கடல்", morph: "ADJ + NOUN|Case=Acc|Number=Sing", gloss: "great-sea"}   # பெருங்கடல் peruṅkaṭal
+    kural.10.1.3: {lemma: "நீந்து", morph: "VERB|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin", gloss: "they-swim"}   # நீந்துவர் nīntuvar
+    kural.10.1.4: {lemma: "நீந்து", morph: "VERB|Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin", gloss: "swim-not"}   # நீந்தார் nīntār
+    kural.10.2.1: {lemma: "இறைவன்", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-Lord's"}   # இறைவன் iṟaivaṉ
+    kural.10.2.2: {lemma: "அடி + சேர்", morph: "NOUN + VERB|Polarity=Neg", gloss: "feet-reach-not"}   # அடிசேரா aṭicērā
+    kural.10.2.3: {lemma: "சேர்", morph: "VERB|Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin", gloss: "those-who"}   # தார் tār

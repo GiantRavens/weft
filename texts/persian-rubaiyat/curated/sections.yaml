@@ -1,0 +1,159 @@
+# Human overlay for the Khayyam quatrains. No Persian treebank covers this text: lemma, morphology
+# and gloss are by hand. Lemmas follow F. Steingass, A Comprehensive Persian-English Dictionary
+# (1892), in modern spelling, verbs as the infinitive; morphology uses Universal Dependencies
+# features. The indefinite -ē and the ezafe show in the gloss (a-rose, blood-of), not in the tag.
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-30
+  why: hand lemma, morphology and gloss; no treebank exists for classical Persian verse
+  status: draft
+  set:
+    rub.72.1.1: {lemma: "آن", morph: "DET|PronType=Dem", gloss: "that"}   # آن ān
+    rub.72.1.2: {lemma: "قصر", morph: "NOUN|Number=Sing", gloss: "palace"}   # قصر qaṣr
+    rub.72.1.3: {lemma: "که", morph: "SCONJ", gloss: "which"}   # که ki
+    rub.72.1.4: {lemma: "بهرام", morph: "PROPN|Number=Sing", gloss: "Bahram"}   # بهرام bahrām
+    rub.72.1.5: {lemma: "در + او", morph: "ADP + PRON|Number=Sing|Person=3|PronType=Prs", gloss: "in-it"}   # درو dar=ō
+    rub.72.1.6: {lemma: "جام", morph: "NOUN|Number=Sing", gloss: "cup"}   # جام jām
+    rub.72.1.7: {lemma: "گرفتن", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "took"}   # گرفت girift
+    rub.72.2.1: {lemma: "آهو", morph: "NOUN|Number=Sing", gloss: "deer"}   # آهُو āhū
+    rub.72.2.2: {lemma: "بره", morph: "NOUN|Number=Sing", gloss: "young"}   # بره bara
+    rub.72.2.3: {lemma: "کردن", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "made"}   # کرد kard
+    rub.72.2.4: {lemma: "و", morph: "CCONJ", gloss: "and"}   # و u
+    rub.72.2.5: {lemma: "شیر", morph: "NOUN|Number=Sing", gloss: "lion"}   # شیر šēr
+    rub.72.2.6: {lemma: "آرام", morph: "NOUN|Number=Sing", gloss: "rest"}   # آرام ārām
+    rub.72.2.7: {lemma: "گرفتن", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "took"}   # گرفت girift
+    rub.72.3.1: {lemma: "بهرام", morph: "PROPN|Number=Sing", gloss: "Bahram"}   # بهرام bahrām
+    rub.72.3.2: {lemma: "که", morph: "SCONJ", gloss: "who"}   # که ki
+    rub.72.3.3: {lemma: "گور", morph: "NOUN|Number=Sing", gloss: "wild-ass"}   # گور gōr
+    rub.72.3.4: {lemma: "گرفتن", morph: "VERB|Number=Sing|Person=3|Tense=Imperf", gloss: "used-to-catch"}   # میگرفتی mē-girift=ē
+    rub.72.3.5: {lemma: "به + کمند", morph: "ADP + NOUN|Number=Sing", gloss: "with-lasso"}   # بکمند ba-kamand
+    rub.72.4.1: {lemma: "دیدن", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Past", gloss: "you-saw"}   # دیدی dīd=ī
+    rub.72.4.2: {lemma: "که", morph: "SCONJ", gloss: "that"}   # که ki
+    rub.72.4.3: {lemma: "چگونه", morph: "ADV|PronType=Int", gloss: "how"}   # چگونه čigōna
+    rub.72.4.4: {lemma: "گور", morph: "NOUN|Number=Sing", gloss: "grave"}   # گور gōr
+    rub.72.4.5: {lemma: "بهرام", morph: "PROPN|Number=Sing", gloss: "Bahram"}   # بهرام bahrām
+    rub.72.4.6: {lemma: "گرفتن", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "took"}   # گرفت girift
+    rub.104.1.1: {lemma: "هر", morph: "DET|PronType=Tot", gloss: "every"}   # هر har
+    rub.104.1.2: {lemma: "جا", morph: "NOUN|Number=Sing", gloss: "place"}   # جا jā
+    rub.104.1.3: {lemma: "که", morph: "SCONJ", gloss: "that"}   # که ki
+    rub.104.1.4: {lemma: "گل", morph: "NOUN|Number=Sing", gloss: "a-rose"}   # گلی gul=ē
+    rub.104.1.5: {lemma: "و", morph: "CCONJ", gloss: "and"}   # و u
+    rub.104.1.6: {lemma: "لاله", morph: "NOUN|Number=Sing", gloss: "tulip"}   # لاله lāla
+    rub.104.1.7: {lemma: "زار", morph: "NOUN|Number=Sing", gloss: "a-bed"}   # زاری zār=ē
+    rub.104.1.8: {lemma: "بودن + است", morph: "VERB|Number=Sing|Person=3|Tense=Perf", gloss: "has-been"}   # بودست būd=ast
+    rub.104.2.1: {lemma: "از", morph: "ADP", gloss: "from"}   # از az
+    rub.104.2.2: {lemma: "سرخی", morph: "NOUN|Number=Sing", gloss: "redness-of"}   # سرخیِ surxī=yi
+    rub.104.2.3: {lemma: "خون", morph: "NOUN|Number=Sing", gloss: "blood-of"}   # خونِ xūn=i
+    rub.104.2.4: {lemma: "شهریار", morph: "NOUN|Number=Sing", gloss: "a-king"}   # شهریاری šahriyār=ē
+    rub.104.2.5: {lemma: "بودن + است", morph: "VERB|Number=Sing|Person=3|Tense=Perf", gloss: "has-been"}   # بودست būd=ast
+    rub.104.3.1: {lemma: "هر", morph: "DET|PronType=Tot", gloss: "every"}   # هر har
+    rub.104.3.2: {lemma: "برگ", morph: "NOUN|Number=Sing", gloss: "leaf-of"}   # برگِ barg=i
+    rub.104.3.3: {lemma: "بنفشه", morph: "NOUN|Number=Sing", gloss: "violet"}   # بنفشه banafša
+    rub.104.3.4: {lemma: "که + از", morph: "SCONJ + ADP", gloss: "which-from"}   # کز k'az
+    rub.104.3.5: {lemma: "زمین", morph: "NOUN|Number=Sing", gloss: "earth"}   # زمین zamīn
+    rub.104.3.6: {lemma: "روییدن", morph: "VERB|Number=Sing|Person=3|Tense=Imperf", gloss: "was-growing"}   # می‌روئید mē-rōyīd
+    rub.104.4.1: {lemma: "خال + است", morph: "NOUN|Number=Sing + AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "a-mole-it-is"}   # خالیست xāl=ē=st
+    rub.104.4.2: {lemma: "که", morph: "SCONJ", gloss: "that"}   # که ki
+    rub.104.4.3: {lemma: "بر", morph: "ADP", gloss: "on"}   # بر bar
+    rub.104.4.4: {lemma: "رخ", morph: "NOUN|Number=Sing", gloss: "cheek-of"}   # رخِ rux=i
+    rub.104.4.5: {lemma: "نگار", morph: "NOUN|Number=Sing", gloss: "a-beauty"}   # نگاری nigār=ē
+    rub.104.4.6: {lemma: "بودن + است", morph: "VERB|Number=Sing|Person=3|Tense=Perf", gloss: "has-been"}   # بودست būd=ast
+    rub.353.1.1: {lemma: "یکچند", morph: "ADV", gloss: "a-while"}   # یکچند yak+čand
+    rub.353.1.2: {lemma: "به + کودکی", morph: "ADP + NOUN|Number=Sing", gloss: "in-childhood"}   # بکودکی ba-kōdakī
+    rub.353.1.3: {lemma: "به + استاد", morph: "ADP + NOUN|Number=Sing", gloss: "to-master"}   # باستاد ba-ustād
+    rub.353.1.4: {lemma: "شدن", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "we-went"}   # شدیم šud=ēm
+    rub.353.2.1: {lemma: "یکچند", morph: "ADV", gloss: "a-while"}   # یکچند yak+čand
+    rub.353.2.2: {lemma: "به + استادی", morph: "ADP + NOUN|Number=Sing", gloss: "in-mastery-of"}   # باستادیِ ba-ustādī=yi
+    rub.353.2.3: {lemma: "خود", morph: "PRON|PronType=Prs|Reflex=Yes", gloss: "self"}   # خود xwad
+    rub.353.2.4: {lemma: "شاد", morph: "ADJ", gloss: "glad"}   # شاد šād
+    rub.353.2.5: {lemma: "شدن", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "we-became"}   # شدیم šud=ēm
+    rub.353.3.1: {lemma: "پایان", morph: "NOUN|Number=Sing", gloss: "end-of"}   # پایانِ pāyān=i
+    rub.353.3.2: {lemma: "سخن", morph: "NOUN|Number=Sing", gloss: "speech"}   # سخن suxun
+    rub.353.3.3: {lemma: "شنودن", morph: "VERB|Mood=Imp|Number=Sing|Person=2", gloss: "hear"}   # شنو šinaw
+    rub.353.3.4: {lemma: "که", morph: "SCONJ", gloss: "that"}   # که ki
+    rub.353.3.5: {lemma: "ما", morph: "PRON|Number=Plur|Person=1|PronType=Prs", gloss: "us"}   # ما mā
+    rub.353.3.6: {lemma: "را", morph: "ADP", gloss: "to"}   # را =rā
+    rub.353.3.7: {lemma: "چه", morph: "PRON|PronType=Int", gloss: "what"}   # چه či
+    rub.353.3.8: {lemma: "رسیدن", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "befell"}   # رسید rasīd
+    rub.353.4.1: {lemma: "از", morph: "ADP", gloss: "from"}   # از az
+    rub.353.4.2: {lemma: "خاک", morph: "NOUN|Number=Sing", gloss: "dust"}   # خاک xāk
+    rub.353.4.3: {lemma: "برآمدن", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "we-came-up"}   # برآمدیم bar-āmad=ēm
+    rub.353.4.4: {lemma: "و", morph: "CCONJ", gloss: "and"}   # و u
+    rub.353.4.5: {lemma: "بر", morph: "ADP", gloss: "on"}   # بر bar
+    rub.353.4.6: {lemma: "باد", morph: "NOUN|Number=Sing", gloss: "wind"}   # باد bād
+    rub.353.4.7: {lemma: "شدن", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "we-went"}   # شدیم šud=ēm
+    rub.252.1.1: {lemma: "دی", morph: "ADV", gloss: "yesterday"}   # دی dī
+    rub.252.1.2: {lemma: "کوزه‌گر", morph: "NOUN|Number=Sing", gloss: "a-potter"}   # کوزه‌گری kōza+gar=ē
+    rub.252.1.3: {lemma: "دیدن", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "I-saw"}   # بدیدم bi-dīd=am
+    rub.252.1.4: {lemma: "اندر", morph: "ADP", gloss: "in"}   # اندر andar
+    rub.252.1.5: {lemma: "بازار", morph: "NOUN|Number=Sing", gloss: "bazaar"}   # بازار bāzār
+    rub.252.2.1: {lemma: "بر", morph: "ADP", gloss: "on"}   # بر bar
+    rub.252.2.2: {lemma: "تازه", morph: "ADJ", gloss: "fresh"}   # تازه tāza
+    rub.252.2.3: {lemma: "گل", morph: "NOUN|Number=Sing", gloss: "a-clay"}   # گلی gil=ē
+    rub.252.2.4: {lemma: "لگد", morph: "NOUN|Number=Sing", gloss: "kick"}   # لکد lagad
+    rub.252.2.5: {lemma: "همی", morph: "PART", gloss: "kept"}   # همی hamē
+    rub.252.2.6: {lemma: "زدن", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "struck"}   # زد zad
+    rub.252.2.7: {lemma: "بسیار", morph: "ADV", gloss: "much"}   # بسیار bisyār
+    rub.252.3.1: {lemma: "و + آن", morph: "CCONJ + DET|PronType=Dem", gloss: "and-that"}   # وان w'ān
+    rub.252.3.2: {lemma: "گل", morph: "NOUN|Number=Sing", gloss: "clay"}   # گل gil
+    rub.252.3.3: {lemma: "به + زبان", morph: "ADP + NOUN|Number=Sing", gloss: "in-tongue-of"}   # بزبانِ ba-zabān=i
+    rub.252.3.4: {lemma: "حال", morph: "NOUN|Number=Sing", gloss: "state"}   # حال ḥāl
+    rub.252.3.5: {lemma: "با", morph: "ADP", gloss: "with"}   # با bā
+    rub.252.3.6: {lemma: "وی", morph: "PRON|Number=Sing|Person=3|PronType=Prs", gloss: "him"}   # وی way
+    rub.252.3.7: {lemma: "گفتن", morph: "VERB|Number=Sing|Person=3|Tense=Imperf", gloss: "was-saying"}   # میگفت mē-guft
+    rub.252.4.1: {lemma: "من", morph: "PRON|Number=Sing|Person=1|PronType=Prs", gloss: "I"}   # من man
+    rub.252.4.2: {lemma: "همچو", morph: "ADP", gloss: "like"}   # همچو ham+ču
+    rub.252.4.3: {lemma: "تو", morph: "PRON|Number=Sing|Person=2|PronType=Prs", gloss: "you"}   # تو tu
+    rub.252.4.4: {lemma: "بودن", morph: "VERB|Number=Sing|Person=1|Tense=Perf", gloss: "have-been"}   # بوده‌ام būda=am
+    rub.252.4.5: {lemma: "من + را", morph: "PRON|Number=Sing|Person=1|PronType=Prs + ADP", gloss: "me"}   # مرا ma=rā
+    rub.252.4.6: {lemma: "نیکو", morph: "ADV", gloss: "well"}   # نیکو nēkō
+    rub.252.4.7: {lemma: "داشتن", morph: "VERB|Mood=Imp|Number=Sing|Person=2", gloss: "keep"}   # دار dār
+    rub.35.1.1: {lemma: "بر", morph: "ADP", gloss: "on"}   # بر bar
+    rub.35.1.2: {lemma: "لوح", morph: "NOUN|Number=Sing", gloss: "tablet-of"}   # لوحِ lawḥ=i
+    rub.35.1.3: {lemma: "نشان", morph: "NOUN|Number=Sing", gloss: "mark-of"}   # نشانِ nišān=i
+    rub.35.1.4: {lemma: "بودنی", morph: "NOUN|Number=Plur", gloss: "things-to-be"}   # بودنیها būdanī-hā
+    rub.35.1.5: {lemma: "بودن", morph: "VERB|Tense=Past|VerbForm=Part", gloss: "been"}   # بوده būda
+    rub.35.1.6: {lemma: "است", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # است ast
+    rub.35.2.1: {lemma: "پیوسته", morph: "ADV", gloss: "ever"}   # پیوسته paywasta
+    rub.35.2.2: {lemma: "قلم", morph: "NOUN|Number=Sing", gloss: "pen"}   # قلم qalam
+    rub.35.2.3: {lemma: "از", morph: "ADP", gloss: "from"}   # ز zi
+    rub.35.2.4: {lemma: "نیک", morph: "ADJ", gloss: "good"}   # نیک nēk
+    rub.35.2.5: {lemma: "و", morph: "CCONJ", gloss: "and"}   # و u
+    rub.35.2.6: {lemma: "بد", morph: "ADJ", gloss: "bad"}   # بد bad
+    rub.35.2.7: {lemma: "آسوده", morph: "ADJ", gloss: "at-rest"}   # آسوده āsūda
+    rub.35.2.8: {lemma: "است", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # است ast
+    rub.35.3.1: {lemma: "اندر", morph: "ADP", gloss: "in"}   # اندر andar
+    rub.35.3.2: {lemma: "تقدیر", morph: "NOUN|Number=Sing", gloss: "decree"}   # تقدیر taqdīr
+    rub.35.3.3: {lemma: "هرچه", morph: "PRON|PronType=Tot", gloss: "whatever"}   # هرچه har+či
+    rub.35.3.4: {lemma: "بایستن", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was-needed"}   # بایست bāyist
+    rub.35.3.5: {lemma: "دادن", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "he-gave"}   # بداد bi-dād
+    rub.35.4.1: {lemma: "غم", morph: "NOUN|Number=Sing", gloss: "grief"}   # غم ġam
+    rub.35.4.2: {lemma: "خوردن", morph: "VERB|VerbForm=Inf", gloss: "eating"}   # خوردن xwardan
+    rub.35.4.3: {lemma: "و", morph: "CCONJ", gloss: "and"}   # و u
+    rub.35.4.4: {lemma: "کوشیدن", morph: "VERB|VerbForm=Inf", gloss: "striving-of"}   # کوشیدنِ kōšīdan=i
+    rub.35.4.5: {lemma: "ما", morph: "PRON|Number=Plur|Person=1|PronType=Prs", gloss: "us"}   # ما mā
+    rub.35.4.6: {lemma: "بیهوده", morph: "ADJ", gloss: "vain"}   # بیهوده bē-hūda
+    rub.35.4.7: {lemma: "است", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # است ast
+    rub.379.1.1: {lemma: "اگر", morph: "SCONJ", gloss: "if"}   # گر gar
+    rub.379.1.2: {lemma: "بر", morph: "ADP", gloss: "over"}   # بر bar
+    rub.379.1.3: {lemma: "فلک + م", morph: "NOUN|Number=Sing + PRON|Number=Sing|Person=1|PronType=Prs", gloss: "heaven-my"}   # فلکم falak=am
+    rub.379.1.4: {lemma: "دست", morph: "NOUN|Number=Sing", gloss: "hand"}   # دست dast
+    rub.379.1.5: {lemma: "بودن", morph: "VERB|Mood=Cnd|Number=Sing|Person=3|Tense=Past", gloss: "were"}   # بُدی bud=ē
+    rub.379.1.6: {lemma: "چون", morph: "ADP", gloss: "like"}   # چون čūn
+    rub.379.1.7: {lemma: "یزدان", morph: "PROPN|Number=Sing", gloss: "God"}   # یزدان yazdān
+    rub.379.2.1: {lemma: "برداشتن", morph: "VERB|Mood=Cnd|Number=Sing|Person=1|Tense=Past", gloss: "I-would-lift"}   # برداشتمی bar-dāšt=am=ē
+    rub.379.2.2: {lemma: "من", morph: "PRON|Number=Sing|Person=1|PronType=Prs", gloss: "I"}   # من man
+    rub.379.2.3: {lemma: "این", morph: "DET|PronType=Dem", gloss: "this"}   # این īn
+    rub.379.2.4: {lemma: "فلک + را", morph: "NOUN|Number=Sing + ADP", gloss: "heaven"}   # فلکرا falak=rā
+    rub.379.2.5: {lemma: "از", morph: "ADP", gloss: "from"}   # ز zi
+    rub.379.2.6: {lemma: "میان", morph: "NOUN|Number=Sing", gloss: "midst"}   # میان miyān
+    rub.379.3.1: {lemma: "از", morph: "ADP", gloss: "from"}   # از az
+    rub.379.3.2: {lemma: "نو", morph: "ADJ", gloss: "new"}   # نو naw
+    rub.379.3.3: {lemma: "فلک", morph: "NOUN|Number=Sing", gloss: "heaven"}   # فلکِ falak=i
+    rub.379.3.4: {lemma: "دیگر", morph: "ADJ", gloss: "other"}   # دگر digar
+    rub.379.3.5: {lemma: "چنان", morph: "ADV", gloss: "such"}   # چنان činān
+    rub.379.3.6: {lemma: "ساختن", morph: "VERB|Mood=Cnd|Number=Sing|Person=1|Tense=Past", gloss: "I-would-build"}   # ساختمی sāxt=am=ē
+    rub.379.4.1: {lemma: "که + آزاده", morph: "SCONJ + NOUN|Number=Sing", gloss: "that-free-man"}   # کازاده k'āzāda
+    rub.379.4.2: {lemma: "به + کام", morph: "ADP + NOUN|Number=Sing", gloss: "to-desire-of"}   # بکام ba-kām=i
+    rub.379.4.3: {lemma: "دل", morph: "NOUN|Number=Sing", gloss: "heart"}   # دل dil
+    rub.379.4.4: {lemma: "رسیدن", morph: "VERB|Mood=Cnd|Number=Sing|Person=3|Tense=Past", gloss: "would-reach"}   # رسیدی rasīd=ē
+    rub.379.4.5: {lemma: "آسان", morph: "ADV", gloss: "easily"}   # آسان āsān

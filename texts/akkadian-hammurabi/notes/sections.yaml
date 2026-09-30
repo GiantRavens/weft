@@ -1,0 +1,54 @@
+# Notes for the prologue of the Laws of Hammurabi, column I, lines 1-53. Editorial notes are drafts
+# until a reviewer lifts them.
+- id: n.ch.opening
+  attach: ch.1.1
+  kind: editorial
+  status: draft
+  leans_on: "R. F. Harper, The Code of Hammurabi (1904), introduction; CDLI P249253 (Louvre Sb 8), catalogue record"
+  text: "These lines open the prologue of the Laws of Hammurabi, as cut on the black stone stele found at Susa in 1901 and 1902 and now in the Louvre (Sb 8). The text runs in columns of short lines, most of them one to three words. Lines 1 to 49 form one sentence. A 'when' clause (lines 1 to 26) says what the gods Anum and Enlil did for Marduk and for Babylon; the main clause (lines 27 to 49) says that at that time they called Hammurabi by name, and for what purposes. Lines 50 to 53 begin the long self-presentation that follows: 'Hammurabi, the shepherd named by Enlil, am I'."
+- id: n.ch.anum
+  attach: ch.1.1.2
+  kind: editorial
+  status: draft
+  leans_on: "Harper (1904), transliteration and translation of column I, lines 1 and 45; CDLI P249253, transliteration"
+  text: "The single sign AN is written here. It can stand for the word 'god', for the sky god Anum, or, unpronounced, as the marker placed before any god's name (Harper prints that marker as a raised ilu, as in the next line). Harper transliterates the sign as ilum, 'god', but translates it 'Anu', and modern readings take it as the name Anum. The same choice returns in line 45, where Anum and Enlil are the subject of 'they called'."
+- id: n.ch.ellil
+  attach: ch.1.3.1
+  kind: editorial
+  status: draft
+  leans_on: "Black, George and Postgate, A Concise Dictionary of Akkadian (2000), s.v. Ellil and illilūtu"
+  text: "The god written with the signs EN and LÍL is known by his Sumerian name, Enlil. Akkadian speakers called him Ellil, and the normalization follows them; the gloss keeps the familiar Enlil. Harper and King both translate the name as Bel, 'lord', a title Babylonian usage gave to the chief god. In line 11 the same signs, with the abstract ending -ūt, make ellilūt, 'the rank of Enlil': supreme rule, which Anum and Enlil assign to Marduk. Harper reads this line as ilu bêlu-ut and translates 'the rule'."
+- id: n.ch.harper-b
+  attach: ch.1.1.3
+  kind: editorial
+  status: draft
+  text: "In Harper's transliteration a small raised b stands before ṣi-ru-um in this line, and in seven other places in lines 1 to 53, sometimes inside a word (u-ki-in-ᵇnu-šum, line 26). His page does not say what it marks, and the introduction consulted for this edition does not explain it either. Because it can fall inside a word it is not a word division. Weft sets it aside in the source row. One possibility, not yet checked against his plates, is that it marks where a line of the stele continues onto a second row within its ruled case."
+- id: n.ch.ibbiu
+  attach: ch.1.17.3
+  kind: editorial
+  status: draft
+  leans_on: "Black, George and Postgate, A Concise Dictionary of Akkadian (2000), s.v. nabû II"
+  text: "ib-bi-u here and ib-bu-u in line 49 are the same form of one verb, nabûm, 'to name, to call': 'they named'. The first spelling writes the stem vowel i and the ending ū separately; the second writes the contracted form ibbû. The stele uses both spellings within a few lines. The normalization follows each spelling, ibbiū and ibbû, so the two sound slightly different on this page; whether the scribe's speech distinguished them is not known."
+- id: n.ch.hammurabi
+  attach: ch.1.28.1
+  kind: editorial
+  status: draft
+  leans_on: "CDLI P249253, transliteration of column I, line 28"
+  text: "The king's name is written ha-am-mu-ra-bi, preceded on the stele by a single vertical wedge, the marker for a personal name, which Harper does not transliterate; Weft's sensor reports that difference here and in line 50. The last sign, BI, can also be read pi, and modern transliterations often write the name Ḫammurapi. The name is Amorite, not Akkadian, which is one reason its form and meaning are discussed. The normalization and the sound follow Harper's spelling, Ḫammurabi, the form used in English."
+- id: n.ch.blackheaded
+  attach: ch.1.41.2
+  kind: editorial
+  status: draft
+  leans_on: "Black, George and Postgate, A Concise Dictionary of Akkadian (2000), s.v. ṣalmu"
+  text: "SAG.GE₆, two Sumerian signs meaning 'head' and 'black', was read in Akkadian as ṣalmāt qaqqadim, 'the black-headed ones'. It is a standing expression for the people of the land, and in some texts for humankind in general. The gloss keeps the literal image. Harper renders it 'the Black Head Race', King 'the black-headed people'. Harper reads the second sign as GIG; it is now read GE₆ (also written GI₆)."
+- id: n.ch.sound
+  attach: ch.1.2
+  kind: editorial
+  status: draft
+  leans_on: "M. P. Streck, 'Sibilants in the Old Babylonian texts of Hammurapi and of the governors in Qaṭṭunān' (2006); J. Huehnergard, A Grammar of Akkadian (3rd ed., 2011), on stress"
+  text: "Cuneiform records consonants and vowels only approximately, so any pronunciation of Old Babylonian is a reconstruction. The first scheme follows one view of the sibilants: that š was a plain s, and the letters s, z and ṣ stood for sounds like ts, dz and an ejective ts'. On this view šar, 'king', sounded like sar. Several scholars argue for it in Old Babylonian; others keep š as sh. The emphatic consonants ṭ, q, ṣ are given as ejectives, one of two common proposals; the other is the throaty quality of the Arabic emphatics. Stress is not written in cuneiform; both schemes place it by the rule in modern grammars, which is inferred from spellings, not recorded."
+- id: n.ham.glyphs
+  attach: ch.1.1
+  kind: editorial
+  status: draft
+  text: "The cuneiform row is generated from the sign readings in Unicode, and the font draws the signs in their later Neo-Assyrian shapes. On the stele the same signs are carved in the Old Babylonian monumental style, which differs in the shape and arrangement of the wedges, so the row identifies the signs but does not show how they look on the stone."

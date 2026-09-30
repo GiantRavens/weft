@@ -1,0 +1,82 @@
+work: daodejing
+title: Daodejing (道德經), chapters 1 and 2
+author: Laozi (老子), traditional attribution; text as transmitted by Wang Bi (226–249)
+language: lzh
+prefix: ddj                      # ddj.<chapter>.<line>[.<char>]
+urn: urn:weft:lzh:laozi.daodejing   # no CTS URN for Chinese texts; Weft-local identifier
+unit: section
+section_noun: chapter
+written: {year: -300, label: "compiled in the Warring States period, 4th to 3rd century BC; chapter 2 is on the Guodian bamboo slips (buried about 300 BC), chapter 1 first on the Mawangdui silk manuscripts (before 168 BC); this text is Wang Bi's recension (about AD 240)"}
+status: phase-0
+pilot: {sections: ["1", "2"]}
+edition:
+  id: wangbi-wikisource
+  name: Wang Bi's text of the Laozi (老子道德經注, 華亭張氏原本), Chinese Wikisource revision 2354026; Weft line division
+  format: weft-edition
+  file: edition.yaml
+  license: public domain (PD-old); Wikisource page CC BY-SA 4.0; Weft line division CC BY-SA 4.0
+treebank: null                   # none exists for this text; hand annotation, draft
+readings:
+  table: sources/Unihan_Readings.txt
+  variants: sources/Unihan_Variants.txt
+sources_extra:
+  - id: wangbi-wikisource-r2354026
+    name: 道德經 (王弼本), Chinese Wikisource, revision 2354026 (2024-01-10), raw wikitext
+    file: sources/wangbi-wikisource.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&action=raw"
+    sha256: 4827e5a84b37fdeaa99706b7505b3719b5eb40e2da8e7b8a0a499944051af611
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/道德經_(王弼本)
+  - id: unihan-readings
+    name: Unicode Han Database 18.0, readings (kTang after Stimson 1976, kMandarin)
+    file: sources/Unihan_Readings.txt
+    sha256: 9d39995b5de714e8ce93716ed5d15eaa0792d68e407cdf8a0add2893b8f4150b   # of the extracted member
+    url: https://www.unicode.org/Public/18.0.0/ucd/Unihan.zip
+    extract: "Unihan_Readings.txt"
+    license: Unicode License v3
+    license_url: https://www.unicode.org/license.txt
+  - id: unihan-variants
+    name: Unicode Han Database 18.0, variants
+    file: sources/Unihan_Variants.txt
+    sha256: 4ccfd34b08ac7b9c14353f6668ba43e3796d85c4cdce7952b635be16015aafa2   # of the extracted member
+    url: https://www.unicode.org/Public/18.0.0/ucd/Unihan.zip
+    extract: "Unihan_Variants.txt"
+    license: Unicode License v3
+    license_url: https://www.unicode.org/license.txt
+  - id: oc-baxter-sagart-wiktionary
+    name: Baxter-Sagart Old Chinese (2014, v1.1) from English Wiktionary's Module:zh/data/och-pron-BS/<character>, one pinned revision per character; 較 from Module:zh/data/och-pron-ZS (Zhengzhang 2003)
+    data: pipeline/weft/data/lzh_oc_bs.yaml   # a committed CC BY-SA extract, not fetched by acquire
+    sha256: 57b1a0ef4c651f15492857eeb4cf6cf0820e3efdf790c7e7e8b0be783d20fd75   # of the data file
+    url: https://en.wiktionary.org/wiki/Module:zh/data/och-pron-BS
+    license: CC BY-SA 4.0 (Wiktionary)
+    license_url: https://en.wiktionary.org/wiki/Wiktionary:Copyrights
+    terms: "The Baxter-Sagart data release (ocbaxtersagart.lsait.lsa.umich.edu) states no open license that Weft could verify, so the Wiktionary copy is used."
+schemes: [old-chinese, tang, mandarin]   # default = Old Chinese (Baxter-Sagart, approximate); Tang and Mandarin are later readings
+translations:
+  - id: legge1891
+    translator: James Legge
+    year: 1891
+    form: prose, with rhymed couplets; Sacred Books of the East vol. 39
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/legge1891.txt
+    url: https://www.gutenberg.org/cache/epub/216/pg216.txt
+    sha256: 041568f8dfef3ac6c2deb7699756f9d26d6aa8669647f4ce611b0ed4a95b0db6
+  - id: chalmers1868
+    translator: John Chalmers
+    year: 1868
+    form: prose, in The Speculations on Metaphysics, Polity, and Morality of "The Old Philosopher," Lau-tsze
+    license: public domain (published 1868; Internet Archive NOT_IN_COPYRIGHT)
+    license_url: https://archive.org/details/speculationsonm00laogoog
+    file: sources/chalmers1868.txt
+    url: https://archive.org/download/speculationsonm00laogoog/speculationsonm00laogoog_djvu.txt
+    sha256: fe13adf2ed16a7bcb31c09d1bfcbafe1009c5770b6b23eaca2769eec758f8f89
+predicted_gaps:
+  - "Old Chinese is a reconstruction (Baxter-Sagart 2014), approximate; brackets and parentheses in the scholarly form mark uncertain segments"
+  - "較 has no Baxter-Sagart reading; it falls back to Zhengzhang Shangfang (failure class oc-from-zhengzhang, 1 token)"
+  - "弗 has no Tang reading in Unihan (Stimson's list lacks it) and no variant to borrow one from: the Tang row shows ? (reading-missing, 2 tokens)"
+  - "為 and 眾 take their Tang readings from the glyph variants 爲 and 衆 (reading-from-variant, 5 tokens)"
+  - "Wikisource prints modern punctuation; Weft's lines follow it but do not reproduce it (the source is checked with the punctuation stripped)"
+  - "no treebank; lemma, part of speech and gloss by hand, draft"
+  - "the metre row records Old Chinese rhymes only where the reconstruction supports them (curated); the Tang tone pattern that draft writes for regulated verse is withdrawn, since this is not regulated verse"
+  - "Wang Bi's 長短相較 breaks a run of *-eŋ rhymes; the Guodian and Mawangdui texts have 形 (see note)"
