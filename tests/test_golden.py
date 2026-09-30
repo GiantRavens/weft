@@ -303,3 +303,19 @@ def test_japanese_and_basho():
     assert [l["metre"] for l in g["lines"]] == ["5 morae", "7 morae", "5 morae"]
     r = check.run(REPO, "basho-furuike")
     assert r["ok"], r["problems"]
+
+
+def test_sanskrit_accent_strokes_decode():
+    """Rigveda 1.1.1ab: the Devanagari accent strokes decode to the raised syllables written as
+    acutes in the transliteration, and the gāyatrī pādas scan 8 + 8."""
+    from weft import sanskrit as S
+    deva = "अ॒ग्निमी॑ळे पु॒रोहि॑तं य॒ज्ञस्य॑ दे॒वमृ॒त्विज॑म् ।"
+    words = ["agním", "īḷe", "puróhitaṃ", "yajñásya", "devám", "ṛtvíjam"]
+    iast, marks = S.devanagari(deva)
+    assert iast == S.strip_accents("".join(words))
+    decoded = S.decode_marks(marks)
+    written = S.accents_from_words(words)
+    assert [d == "U" for d in decoded] == [w == "U" for w in written]
+    assert S.metre(words, [3]) == ("—◡——◡—◡—|——◡—◡—◡×", [8, 8])
+    assert S.phonemize("agním")["respell"] == "uhg-NIM"
+    assert S.strip_accents("yaśásaṃ") == "yaśasaṃ"      # ś survives accent stripping

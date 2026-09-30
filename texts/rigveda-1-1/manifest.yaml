@@ -1,0 +1,60 @@
+work: rigveda-1-1
+title: Rigveda 1.1, Hymn to Agni
+author: Madhucchandas Vaiśvāmitra, by tradition
+language: san
+prefix: rv.1.1                   # rv.1.1.<verse>.<half-verse>[.<token>]
+urn: urn:weft:san:rigveda.1.1    # Weft-local identifier
+unit: section
+section_noun: verse
+written: {year: -1350, label: "composed about 1500–1200 BC and handed down orally, pitch accent included, for many centuries before it was written down"}
+status: phase-0
+pilot: {sections: ["1", "2", "3", "4", "5", "6", "7", "8", "9"]}
+edition:
+  id: rv-sasvara
+  name: Ṛgveda Saṃhitā, accented text (sasvara pāṭha), Sanskrit Wikisource
+  format: weft-edition
+  file: edition.yaml
+  license: the hymn is public domain; Wikisource text CC BY-SA 4.0; Weft word division CC BY-SA 4.0
+treebank:
+  id: ud-sanskrit-vedic
+  name: UD_Sanskrit-Vedic (Oliver Hellwig and others), Vedic Treebank converted to UD
+  format: conllu-citation
+  citation: {text: ṚV, chapter: "1, 1"}
+  file: sources/sa_vedic-ud-train.conllu
+  url: https://raw.githubusercontent.com/UniversalDependencies/UD_Sanskrit-Vedic/09c59eed987f28c2fd3a9972b4b5437439f46832/sa_vedic-ud-train.conllu
+  sha256: 05829c606047956b25aa6ebbd1fd2b11255ed04840fb90c3661f102b556c791d
+  license: CC BY-SA 4.0
+  license_url: https://github.com/UniversalDependencies/UD_Sanskrit-Vedic/blob/master/LICENSE.txt
+schemes: [vedic, modern]         # default = Vedic recitation with its pitch accent (approximate)
+sources_extra:
+  - id: rv-sasvara-1-5
+    name: "ऋग्वेदः/संहिता/सस्वरपाठः/१-५ (mandalas 1–5, accented), Sanskrit Wikisource revision 363001"
+    file: sources/rv-sasvara-1-5.txt
+    url: "https://sa.wikisource.org/w/index.php?curid=13408&oldid=363001&action=raw"
+    sha256: 874640465d27d8f3685bcf0afcb1b710bf902396a46864d48fc2014082dd253a
+    license: public domain text; Wikisource CC BY-SA 4.0
+    license_url: https://sa.wikisource.org/wiki/ऋग्वेदः/संहिता/सस्वरपाठः/१-५
+translations:
+  - id: griffith1896
+    translator: Ralph T. H. Griffith
+    year: 1896
+    form: verse, in The Hymns of the Rigveda, second edition, vol. 1
+    license: public-domain
+    license_url: https://archive.org/details/in.ernet.dli.2015.104118
+    file: sources/griffith1896.txt
+    url: "https://archive.org/download/in.ernet.dli.2015.104118/2015.104118.Hymns-Of-The-Rigveda-Voli_djvu.txt"
+    sha256: 60321142d028d53ab6ede8180f6fdbcca77c0d35106484dc1fca4676eaba60b3
+  - id: wilson1850
+    translator: H. H. Wilson
+    year: 1850
+    form: prose, in Rig-Veda-Sanhitá, vol. 1, following the commentary of Sāyaṇa
+    license: public-domain
+    license_url: https://archive.org/details/dli.csl.3740
+    file: sources/wilson1850.txt
+    url: "https://archive.org/download/dli.csl.3740/3740_djvu.txt"
+    sha256: b2bfb9f91c16ae76affc84377ff0e0822cbc00f8574c39f584b718cdeaee6c79
+predicted_gaps:
+  - "the Wikisource page does not name the printed edition it was typed from"
+  - "some pādas count seven syllables as written; the Rigveda often sounds a syllable the written form lost (ī́ḍyo as ī́ḍiyo, adhvarā́ṇām as adhvarā́ṇaam). The metre row shows the written count"
+  - "Vedic pronunciation around 1200 BC is reconstructed from the ancient phonetic treatises, which are several centuries later"
+  - "treebank words are unaccented and in their pre-sandhi forms; the accent comes from the edition"

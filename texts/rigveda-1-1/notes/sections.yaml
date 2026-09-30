@@ -1,0 +1,62 @@
+# Notes for Rigveda 1.1. Editorial notes are drafts until a reviewer lifts them.
+- id: n.rv.opening
+  attach: rv.1.1.1.1
+  kind: editorial
+  status: draft
+  leans_on: "Jamison and Brereton, The Rigveda (2014), introduction; Witzel, 'The Development of the Vedic Canon' (1997)"
+  text: "This is the first hymn of the Rigveda, the oldest collection of Indian poetry. Its hymns were composed in the second half of the second millennium BC and passed down orally, word for word and with their pitch accents, for many centuries before they were written down. The collection opens with Agni, the god of fire, because Agni carries the offerings of the sacrifice to the other gods."
+- id: n.rv.accent
+  attach: rv.1.1.1.1.1
+  kind: editorial
+  status: draft
+  leans_on: "W. S. Allen, Phonetics in Ancient India (1953); Macdonell, A Vedic Grammar for Students (1916), appendix III"
+  text: "Vedic Sanskrit had a pitch accent, not a stress accent: one syllable of a word was spoken on a higher tone (udātta), the next glided down (svarita), and the rest were low. The printed text marks this indirectly, with a stroke below the syllable before the high one and a stroke above the syllable after it; the high syllable itself is left unmarked. In अ॒ग्नि the stroke under अ tells you the high tone falls on gni: agním. Weft reads the strokes back into accents and checks them against the transliteration, line by line."
+- id: n.rv.sandhi
+  attach: rv.1.1.1.1.2
+  kind: editorial
+  status: draft
+  leans_on: "Whitney, Sanskrit Grammar (1889), chapter III"
+  text: "Devanagari writes a word's final consonant together with the next word's first vowel: agním īḷe is printed अ॒ग्निमी॑ळे, with the m inside मी. Weft divides the printed group where the words divide, so the m of agním appears in the cell for īḷe. Sounds also change where words meet (sandhi): ā ihá becomes éhá in verse 2, and táva ít becomes távét in verse 6. Those fused forms are one cell each, with both words in the lemma."
+- id: n.rv.ile
+  attach: rv.1.1.1.1.2
+  kind: editorial
+  status: draft
+  text: "īḷe, 'I praise', is written with ḷ, an l-like sound. The Rigveda writes ḍ between vowels this way; the treebank, following the later standard spelling, has īḍe. The verb has no accent because a finite verb in a main clause is unaccented in Vedic."
+- id: n.rv.purohita
+  attach: rv.1.1.1.1.3
+  kind: editorial
+  status: draft
+  leans_on: "Monier-Williams, Sanskrit-English Dictionary (1899), s.v. purohita"
+  text: "purohita means literally 'placed in front'. It was the title of a king's household priest. Here Agni is the priest set before the sacrifice. Griffith translates 'chosen Priest'."
+- id: n.rv.hotr
+  attach: rv.1.1.1.2.1
+  kind: editorial
+  status: draft
+  text: "The hotṛ was the priest who recited the hymns of invitation at the sacrifice. The word is derived either from hu, 'pour an offering', or from hū, 'call'; both derivations have their defenders. Griffith keeps it untranslated as Hotar."
+- id: n.rv.metre
+  attach: rv.1.1.1.1.4
+  kind: editorial
+  status: draft
+  leans_on: "E. V. Arnold, Vedic Metre in its Historical Development (1905)"
+  text: "The hymn is in gāyatrī metre: three lines (pādas) of eight syllables, each tending to end short-long-short-long. The printed text sets the first two pādas on one line; the divider marks where the second begins. The metre row is computed from the transliteration: a syllable is heavy (—) when its vowel is long or a diphthong, or when two consonants, an anusvāra or a visarga follow it."
+- id: n.rv.restored
+  attach: rv.1.1.2.1.4
+  kind: editorial
+  status: draft
+  leans_on: "van Nooten and Holland, Rig Veda: A Metrically Restored Text (1994), introduction"
+  text: "As written, this pāda has seven syllables. The metre shows that ī́ḍyo was sung ī́ḍiyo, with the y still a full vowel, as it had been earlier in the language. Six pādas of this hymn need such a restoration (tuvám, adhvarā́ṇaam, suvé, ágne, suastáye are the others). The metre row counts the restored forms; the sound row keeps the written ones, and the word panel shows both."
+- id: n.rv.adhvara
+  attach: rv.1.1.4.1.4
+  kind: editorial
+  status: draft
+  text: "adhvara is a word for the sacrificial rite. The medieval commentator Sāyaṇa explained it as a-dhvara, 'without harm', and Wilson's 1850 translation, which follows him, reads 'the unobstructed sacrifice'. The two translations here show how far the old commentary shaped the first English versions."
+- id: n.rv.dosavastar
+  attach: rv.1.1.7.1.5
+  kind: editorial
+  status: draft
+  text: "dóṣāvastar is disputed. Griffith takes it as a name for Agni, 'dispeller of the night'. Wilson, after Sāyaṇa, reads two words, dóṣā and vástar, 'at evening and at morning'. The treebank lists it as one word. The gloss follows Griffith's reading."
+- id: n.rv.sunave
+  attach: rv.1.1.9.1.4
+  kind: editorial
+  status: draft
+  text: "Weft's accent check disagrees here. Reading the strokes as usual puts a high tone on the last syllable of sūnáve, where the dictionary accent has none; the falling stroke then sits on 'gne, whose a has been dropped after the e. The rules for accent where vowels are elided like this are more involved than the check models, so the difference is reported rather than corrected, for a reviewer to settle."

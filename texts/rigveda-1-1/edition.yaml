@@ -1,0 +1,154 @@
+# Weft edition of Rigveda 1.1, the hymn to Agni, from the accented Saṃhitā text on Sanskrit
+# Wikisource, checked verbatim against it (the verse labels 1.001.01a are set aside).
+#
+# Each printed half-verse is one line: the first carries pādas a and b, the second pāda c. The
+# Devanagari is divided into words where a word ends, even inside a printed group: in अ॒ग्निमी॑ळे
+# the m of agním is written with the ī of īḷe, so the division falls after अ॒ग्नि.
+#
+#   t        the Devanagari, as printed
+#   n        the recited form in accented IAST: acute = raised pitch (udātta), grave = independent
+#            falling pitch (svarita). Checked against the accent strokes in t by `weft draft`.
+#   w        treebank words this printed word carries (default 1): रत्न॒धात॑मम् is the compound
+#            ratna + dhātamam; एह is ā + iha fused by sandhi
+#   glue     no space follows in the printed text
+#   caesura  this word begins pāda b
+#   p        the danda that follows the word
+#   m        the metrical reading, where the metre sounds a syllable the written form lost
+#            (ī́ḍyo is sung ī́ḍiyo). Used for the metre row only; editorial, after the standard
+#            metrical restorations of the Rigveda
+joiner: " "
+verify_in: sources/rv-sasvara-1-5.txt
+verify_strip: '\d+\.\d{3}\.\d{2}[a-z] '
+metre: {name: gāyatrī, pada: 8}
+sections:
+  - id: "1"
+    title: "Verse 1"
+    lines:
+      - tokens:
+        - {t: अ॒ग्नि, n: agním, glue: true}
+        - {t: मी॑ळे, n: īḷe}
+        - {t: पु॒रोहि॑तं, n: puróhitaṃ}
+        - {t: य॒ज्ञस्य॑, n: yajñásya, caesura: true}
+        - {t: दे॒व, n: devám, glue: true}
+        - {t: मृ॒त्विज॑म्, n: ṛtvíjam, p: "।"}
+      - tokens:
+        - {t: होता॑रं, n: hótāraṃ}
+        - {t: रत्न॒धात॑मम्, n: ratnadhā́tamam, w: 2, p: "॥"}
+  - id: "2"
+    title: "Verse 2"
+    lines:
+      - tokens:
+        - {t: अ॒ग्निः, n: agníḥ}
+        - {t: पूर्वे॑भि॒, n: pū́rvebhir, glue: true}
+        - {t: रृषि॑भि॒, n: ṛ́ṣibhir, glue: true}
+        - {t: रीड्यो॒, n: ī́ḍyo, m: ī́ḍiyo, caesura: true}
+        - {t: नूत॑नै, n: nū́tanair, glue: true}
+        - {t: रु॒त, n: utá, p: "।"}
+      - tokens:
+        - {t: स, n: sá}
+        - {t: दे॒वाँ, n: devā́ṁ}
+        - {t: एह, n: éhá, w: 2}
+        - {t: व॑क्षति, n: vakṣati, p: "॥"}
+  - id: "3"
+    title: "Verse 3"
+    lines:
+      - tokens:
+        - {t: अ॒ग्निना॑, n: agnínā}
+        - {t: र॒यि, n: rayím, glue: true}
+        - {t: म॑श्नव॒त्, n: aśnavat, glue: true}
+        - {t: पोष॑, n: póṣam, glue: true, caesura: true}
+        - {t: मे॒व, n: evá}
+        - {t: दि॒वे, n: divé, glue: true}
+        - {t: दि॑वे, n: dive, p: "।"}
+      - tokens:
+        - {t: य॒शसं॑, n: yaśásaṃ}
+        - {t: वी॒रव॑त्तमम्, n: vīrávattamam, p: "॥"}
+  - id: "4"
+    title: "Verse 4"
+    lines:
+      - tokens:
+        - {t: अग्ने॒, n: ágne}
+        - {t: यं, n: yáṃ}
+        - {t: य॒ज्ञ, n: yajñám, glue: true}
+        - {t: म॑ध्व॒रं, n: adhvaráṃ}
+        - {t: वि॒श्वत॑ः, n: viśvátaḥ, caesura: true}
+        - {t: परि॒भू, n: paribhū́r, glue: true}
+        - {t: रसि॑, n: ási, p: "।"}
+      - tokens:
+        - {t: स, n: sá}
+        - {t: इद्, n: íd, glue: true}
+        - {t: दे॒वेषु॑, n: devéṣu}
+        - {t: गच्छति, n: gacchati, p: "॥"}
+  - id: "5"
+    title: "Verse 5"
+    lines:
+      - tokens:
+        - {t: अ॒ग्निर्, n: agnír, glue: true}
+        - {t: होता॑, n: hótā}
+        - {t: क॒विक्र॑तुः, n: kavíkratuḥ, w: 2}
+        - {t: स॒त्यश्, n: satyáś, glue: true, caesura: true}
+        - {t: चि॒त्रश्र॑वस्तमः, n: citráśravastamaḥ, p: "।"}
+      - tokens:
+        - {t: दे॒वो, n: devó}
+        - {t: दे॒वेभि॒, n: devébhir, glue: true}
+        - {t: रा, n: ā́}
+        - {t: ग॑मत्, n: gamat, p: "॥"}
+  - id: "6"
+    title: "Verse 6"
+    lines:
+      - tokens:
+        - {t: य, n: yád, glue: true}
+        - {t: द॒ङ्ग, n: aṅgá}
+        - {t: दा॒शुषे॒, n: dāśúṣe}
+        - {t: त्व, n: tvám, m: tuvám, glue: true}
+        - {t: मग्ने॑, n: ágne, caesura: true}
+        - {t: भ॒द्रं, n: bhadráṃ}
+        - {t: क॑रि॒ष्यसि॑, n: kariṣyási, p: "।"}
+      - tokens:
+        - {t: तवेत्, n: távét, w: 2, glue: true}
+        - {t: तत्, n: tát, glue: true}
+        - {t: स॒त्य, n: satyám, glue: true}
+        - {t: म॑ङ्गिरः, n: aṅgiraḥ, p: "॥"}
+  - id: "7"
+    title: "Verse 7"
+    lines:
+      - tokens:
+        - {t: उप॑, n: úpa}
+        - {t: त्वाग्ने, n: tvāgne, w: 2}
+        - {t: दि॒वे, n: divé, glue: true}
+        - {t: दि॑वे॒, n: dive}
+        - {t: दोषा॑वस्तर्, n: dóṣāvastar, glue: true, caesura: true}
+        - {t: धि॒या, n: dhiyā́}
+        - {t: व॒यम्, n: vayám, p: "।"}
+      - tokens:
+        - {t: नमो॒, n: námo}
+        - {t: भर॑न्त॒, n: bháranta}
+        - {t: एम॑सि, n: émasi, w: 2, p: "॥"}
+  - id: "8"
+    title: "Verse 8"
+    lines:
+      - tokens:
+        - {t: राज॑न्त, n: rā́jantam, glue: true}
+        - {t: मध्व॒राणां॑, n: adhvarā́ṇāṃ, m: adhvarā́ṇaaṃ}
+        - {t: गो॒पा, n: gopā́m, glue: true, caesura: true}
+        - {t: मृ॒तस्य॒, n: ṛtásya}
+        - {t: दीदि॑विम्, n: dī́divim, p: "।"}
+      - tokens:
+        - {t: वर्ध॑मानं॒, n: várdhamānaṃ}
+        - {t: स्वे, n: své, m: suvé}
+        - {t: दमे॑, n: dáme, p: "॥"}
+  - id: "9"
+    title: "Verse 9"
+    lines:
+      - tokens:
+        - {t: स, n: sá}
+        - {t: न॑ः, n: naḥ}
+        - {t: पि॒तेव॑, n: pitéva, w: 2}
+        - {t: सू॒नवे, n: sūnáve, glue: true}
+        - {t: ऽग्ने॑, n: "'gne", m: ágne, caesura: true}
+        - {t: सूपाय॒नो, n: sūpāyanó, w: 2}
+        - {t: भ॑व, n: bhava, p: "।"}
+      - tokens:
+        - {t: सच॑स्वा, n: sácasvā}
+        - {t: नः, n: naḥ}
+        - {t: स्व॒स्तये॑, n: svastáye, m: suastáye, p: "॥"}

@@ -1,0 +1,71 @@
+work: epictetus-enchiridion
+title: Enchiridion (Handbook)
+author: Epictetus, recorded by Arrian
+language: grc
+prefix: ench
+urn: urn:cts:greekLit:tlg0557.tlg002
+unit: section
+section_noun: section
+written:
+  year: 125
+  label: compiled by Arrian from Epictetus's teaching, about AD 125
+status: phase-0
+pilot:
+  sections:
+  - '1.1'
+  - '1.2'
+  - '1.3'
+edition:
+  id: perseus-grc2
+  name: Perseus perseus-grc2 (Schenkl 1916), passage in a Weft edition file
+  format: weft-edition
+  file: edition.yaml
+  license: CC BY-SA 4.0
+treebank:
+  id: glaux
+  name: 'GLAUx, the Greek Language Automated corpus (Keersmaekers), Enchiridion: automatic parse, not hand-checked'
+  format: glaux
+  subdocs:
+  - '1.1'
+  - '1.2'
+  file: sources/glaux-0557-002.xml
+  url: https://raw.githubusercontent.com/perseids-publications/glaux-trees/12606b3426f1e5245413f3a8e1c5e0b22348a13c/public/xml/0557-002.xml
+  sha256: 5de7618b57cff7724dbd60081596badf884140bb50865842a8e5770ec454477b
+  license: CC BY-SA 4.0
+  license_url: https://github.com/perseids-publications/glaux-trees/blob/master/TREEBANK_LICENSE
+schemes:
+- koine
+- restored
+- erasmian
+quantities: pipeline/weft/data/grc_quantities.yaml
+sources_extra:
+- id: perseus-grc2
+  name: Perseus canonical-greekLit TEI edition
+  file: sources/perseus-grc2.xml
+  url: https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/bcc5df0602f3b3fe6fefe1e1d575602a25ab1db6/data/tlg0557/tlg002/tlg0557.tlg002.perseus-grc2.xml
+  sha256: 8142571a22ea88d560c0b77797751515a18b08655a28696695727a4f68fc7882
+  license: CC BY-SA 4.0
+  license_url: https://github.com/PerseusDL/canonical-greekLit#license
+translations:
+- id: long1877
+  translator: George Long
+  year: 1877
+  form: prose, in The Discourses of Epictetus, with the Encheiridion
+  license: public-domain
+  license_url: https://www.gutenberg.org/policy/license.html
+  file: sources/long1877.txt
+  url: https://www.gutenberg.org/cache/epub/10661/pg10661.txt
+  sha256: 7915eac7442daed1fbc461b8a281ecc315c5e619126d50d914c29c39fa3b2209
+- id: higginson1865
+  translator: Thomas Wentworth Higginson
+  year: 1865
+  form: prose; text as reprinted by the Liberal Arts Press, 1948
+  license: public-domain
+  license_url: https://www.gutenberg.org/policy/license.html
+  file: sources/higginson1865.txt
+  url: https://www.gutenberg.org/cache/epub/45109/pg45109.txt
+  sha256: 15a09ebd7f782cb64390459a29555140d86fb07f168675d41088a717978c3e4f
+predicted_gaps:
+- lemma and morphology are an automatic parse (GLAUx), not hand-checked; expect some errors
+- the Perseus text begins in lowercase, following Schenkl's edition
+- Koine pronunciation of the early 2nd century is reconstructed; the restored (classical) scheme is offered for comparison

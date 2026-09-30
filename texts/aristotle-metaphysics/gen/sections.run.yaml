@@ -1,0 +1,15 @@
+run:
+  weft: 0.1.0
+  sections:
+  - 980a
+counts:
+  lines: 4
+  tokens: 61
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- lemma and morphology are an automatic parse (GLAUx), not hand-checked; expect some errors
+- long a/i/u not marked in the spelling; the quantity table covers only the words it lists
+- both translations are read from OCR of the scans and checked against them by hand

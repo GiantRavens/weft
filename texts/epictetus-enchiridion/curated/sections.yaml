@@ -1,0 +1,145 @@
+# Human overlay for epictetus-enchiridion. Glosses by hand; corrections to the automatic parse in their own changeset.
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-29
+  why: pilot; literal word-for-word gloss
+  status: draft
+  set:
+    ench.1.1.1.1: {gloss: "of-the"}   # τῶν
+    ench.1.1.1.2: {gloss: "things-that-are"}   # ὄντων
+    ench.1.1.1.3: {gloss: "the-ones"}   # τὰ
+    ench.1.1.1.4: {gloss: "on-one-hand"}   # μέν
+    ench.1.1.1.5: {gloss: "are"}   # ἐστιν
+    ench.1.1.1.6: {gloss: "upon"}   # ἐφʼ
+    ench.1.1.1.7: {gloss: "us"}   # ἡμῖν
+    ench.1.1.1.8: {gloss: "the-others"}   # τὰ
+    ench.1.1.1.9: {gloss: "but"}   # δὲ
+    ench.1.1.1.10: {gloss: "not"}   # οὐκ
+    ench.1.1.1.11: {gloss: "upon"}   # ἐφʼ
+    ench.1.1.1.12: {gloss: "us"}   # ἡμῖν
+    ench.1.1.2.1: {gloss: "upon"}   # ἐφʼ
+    ench.1.1.2.2: {gloss: "us"}   # ἡμῖν
+    ench.1.1.2.3: {gloss: "on-one-hand"}   # μὲν
+    ench.1.1.2.4: {gloss: "judgement"}   # ὑπόληψις
+    ench.1.1.2.5: {gloss: "impulse"}   # ὁρμή
+    ench.1.1.2.6: {gloss: "desire"}   # ὄρεξις
+    ench.1.1.2.7: {gloss: "aversion"}   # ἔκκλισις
+    ench.1.1.2.8: {gloss: "and"}   # καὶ
+    ench.1.1.2.9: {gloss: "in-one"}   # ἑνὶ
+    ench.1.1.2.10: {gloss: "word"}   # λόγῳ
+    ench.1.1.2.11: {gloss: "as-many-as"}   # ὅσα
+    ench.1.1.2.12: {gloss: "our"}   # ἡμέτερα
+    ench.1.1.2.13: {gloss: "works"}   # ἔργα
+    ench.1.1.3.1: {gloss: "not"}   # οὐκ
+    ench.1.1.3.2: {gloss: "upon"}   # ἐφʼ
+    ench.1.1.3.3: {gloss: "us"}   # ἡμῖν
+    ench.1.1.3.4: {gloss: "but"}   # δὲ
+    ench.1.1.3.5: {gloss: "the"}   # τὸ
+    ench.1.1.3.6: {gloss: "body"}   # σῶμα
+    ench.1.1.3.7: {gloss: "the"}   # ἡ
+    ench.1.1.3.8: {gloss: "property"}   # κτῆσις
+    ench.1.1.3.9: {gloss: "reputations"}   # δόξαι
+    ench.1.1.3.10: {gloss: "offices"}   # ἀρχαὶ
+    ench.1.1.3.11: {gloss: "and"}   # καὶ
+    ench.1.1.3.12: {gloss: "in-one"}   # ἑνὶ
+    ench.1.1.3.13: {gloss: "word"}   # λόγῳ
+    ench.1.1.3.14: {gloss: "as-many-as"}   # ὅσα
+    ench.1.1.3.15: {gloss: "not"}   # οὐχ
+    ench.1.1.3.16: {gloss: "our"}   # ἡμέτερα
+    ench.1.1.3.17: {gloss: "works"}   # ἔργα
+    ench.1.2.1.1: {gloss: "and"}   # καὶ
+    ench.1.2.1.2: {gloss: "the-ones"}   # τὰ
+    ench.1.2.1.3: {gloss: "on-one-hand"}   # μὲν
+    ench.1.2.1.4: {gloss: "upon"}   # ἐφʼ
+    ench.1.2.1.5: {gloss: "us"}   # ἡμῖν
+    ench.1.2.1.6: {gloss: "are"}   # ἐστι
+    ench.1.2.1.7: {gloss: "by-nature"}   # φύσει
+    ench.1.2.1.8: {gloss: "free"}   # ἐλεύθερα
+    ench.1.2.1.9: {gloss: "unhindered"}   # ἀκώλυτα
+    ench.1.2.1.10: {gloss: "unimpeded"}   # ἀπαραπόδιστα
+    ench.1.2.1.11: {gloss: "the-others"}   # τὰ
+    ench.1.2.1.12: {gloss: "but"}   # δὲ
+    ench.1.2.1.13: {gloss: "not"}   # οὐκ
+    ench.1.2.1.14: {gloss: "upon"}   # ἐφʼ
+    ench.1.2.1.15: {gloss: "us"}   # ἡμῖν
+    ench.1.2.1.16: {gloss: "weak"}   # ἀσθενῆ
+    ench.1.2.1.17: {gloss: "slavish"}   # δοῦλα
+    ench.1.2.1.18: {gloss: "hinderable"}   # κωλυτά
+    ench.1.2.1.19: {gloss: "another's"}   # ἀλλότρια
+    ench.1.3.1.1: {gloss: "remember"}   # μέμνησο
+    ench.1.3.1.2: {gloss: "then"}   # οὖν
+    ench.1.3.1.3: {gloss: "that"}   # ὅτι
+    ench.1.3.1.4: {gloss: "if"}   # ἐὰν
+    ench.1.3.1.5: {gloss: "the"}   # τὰ
+    ench.1.3.1.6: {gloss: "by-nature"}   # φύσει
+    ench.1.3.1.7: {gloss: "slavish"}   # δοῦλα
+    ench.1.3.1.8: {gloss: "free"}   # ἐλεύθερα
+    ench.1.3.1.9: {gloss: "you-think"}   # οἰηθῇς
+    ench.1.3.1.10: {gloss: "and"}   # καὶ
+    ench.1.3.1.11: {gloss: "the"}   # τὰ
+    ench.1.3.1.12: {gloss: "another's"}   # ἀλλότρια
+    ench.1.3.1.13: {gloss: "your-own"}   # ἴδια
+    ench.1.3.1.14: {gloss: "you-will-be-impeded"}   # ἐμποδισθήσῃ
+    ench.1.3.1.15: {gloss: "you-will-grieve"}   # πενθήσεις
+    ench.1.3.1.16: {gloss: "you-will-be-troubled"}   # ταραχθήσῃ
+    ench.1.3.1.17: {gloss: "you-will-blame"}   # μέμψῃ
+    ench.1.3.1.18: {gloss: "both"}   # καὶ
+    ench.1.3.1.19: {gloss: "gods"}   # θεοὺς
+    ench.1.3.1.20: {gloss: "and"}   # καὶ
+    ench.1.3.1.21: {gloss: "men"}   # ἀνθρώπους
+    ench.1.3.2.1: {gloss: "if"}   # ἐὰν
+    ench.1.3.2.2: {gloss: "but"}   # δὲ
+    ench.1.3.2.3: {gloss: "the"}   # τὸ
+    ench.1.3.2.4: {gloss: "yours"}   # σὸν
+    ench.1.3.2.5: {gloss: "only"}   # μόνον
+    ench.1.3.2.6: {gloss: "you-think"}   # οἰηθῇς
+    ench.1.3.2.7: {gloss: "yours"}   # σὸν
+    ench.1.3.2.8: {gloss: "to-be"}   # εἶναι
+    ench.1.3.2.9: {gloss: "the"}   # τὸ
+    ench.1.3.2.10: {gloss: "and"}   # δὲ
+    ench.1.3.2.11: {gloss: "another's"}   # ἀλλότριον
+    ench.1.3.2.12: {gloss: "just-as"}   # ὥσπερ
+    ench.1.3.2.13: {gloss: "it-is"}   # ἐστίν
+    ench.1.3.2.14: {gloss: "another's"}   # ἀλλότριον
+    ench.1.3.2.15: {gloss: "no-one"}   # οὐδείς
+    ench.1.3.2.16: {gloss: "you"}   # σε
+    ench.1.3.2.17: {gloss: "will-compel"}   # ἀναγκάσει
+    ench.1.3.2.18: {gloss: "ever"}   # οὐδέποτε
+    ench.1.3.2.19: {gloss: "no-one"}   # οὐδείς
+    ench.1.3.2.20: {gloss: "you"}   # σε
+    ench.1.3.2.21: {gloss: "will-hinder"}   # κωλύσει
+    ench.1.3.2.22: {gloss: "not"}   # οὐ
+    ench.1.3.2.23: {gloss: "you-will-blame"}   # μέμψῃ
+    ench.1.3.2.24: {gloss: "no-one"}   # οὐδένα
+    ench.1.3.2.25: {gloss: "not"}   # οὐκ
+    ench.1.3.2.26: {gloss: "you-will-accuse"}   # ἐγκαλέσεις
+    ench.1.3.2.27: {gloss: "anyone"}   # τινί
+    ench.1.3.2.28: {gloss: "unwilling"}   # ἄκων
+    ench.1.3.2.29: {gloss: "you-will-do"}   # πράξεις
+    ench.1.3.2.30: {gloss: "not-even"}   # οὐδὲ
+    ench.1.3.2.31: {gloss: "one-thing"}   # ἕν
+    ench.1.3.2.32: {gloss: "no-one"}   # οὐδείς
+    ench.1.3.2.33: {gloss: "you"}   # σε
+    ench.1.3.2.34: {gloss: "will-harm"}   # βλάψει
+    ench.1.3.2.35: {gloss: "enemy"}   # ἐχθρὸν
+    ench.1.3.2.36: {gloss: "not"}   # οὐχ
+    ench.1.3.2.37: {gloss: "you-will-have"}   # ἕξεις
+    ench.1.3.2.38: {gloss: "nor"}   # οὐδὲ
+    ench.1.3.2.39: {gloss: "for"}   # γὰρ
+    ench.1.3.2.40: {gloss: "harmful"}   # βλαβερόν
+    ench.1.3.2.41: {gloss: "anything"}   # τι
+    ench.1.3.2.42: {gloss: "you-will-suffer"}   # πείσῃ
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-29
+  why: "corrections to the GLAUx automatic parse, lemma and tense: the automatic parse files πείσῃ under πείθω and ταραχθήσῃ under a nonexistent ταραχθαίνω, and reads four future indicatives as aorist subjunctives"
+  status: draft
+  set:
+    ench.1.2.1.10: {lemma: ἀπαραπόδιστος}
+    ench.1.3.1.9: {lemma: οἴομαι}
+    ench.1.3.2.6: {lemma: οἴομαι}
+    ench.1.3.1.16: {lemma: ταράσσω}
+    ench.1.3.2.17: {morph: v3sfia---}
+    ench.1.3.2.21: {morph: v3sfia---}
+    ench.1.3.2.23: {morph: v2sfim---}
+    ench.1.3.2.26: {morph: v2sfia---}
+    ench.1.3.2.29: {morph: v2sfia---}
+    ench.1.3.2.42: {lemma: πάσχω, morph: v2sfim---}

@@ -1,0 +1,122 @@
+# Human overlay for marcus-meditations. Glosses by hand; corrections to the automatic parse in their own changeset.
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-29
+  why: pilot; literal word-for-word gloss
+  status: draft
+  set:
+    med.2.1.1.1: {gloss: "at-dawn"}   # Ἕωθεν
+    med.2.1.1.2: {gloss: "to-say-beforehand"}   # προλέγειν
+    med.2.1.1.3: {gloss: "to-oneself"}   # ἑαυτῷ
+    med.2.1.1.4: {gloss: "I-shall-meet"}   # συντεύξομαι
+    med.2.1.1.5: {gloss: "a-busybody"}   # περιέργῳ
+    med.2.1.1.6: {gloss: "ungrateful"}   # ἀχαρίστῳ
+    med.2.1.1.7: {gloss: "insolent"}   # ὑβριστῇ
+    med.2.1.1.8: {gloss: "deceitful"}   # δολερῷ
+    med.2.1.1.9: {gloss: "envious"}   # βασκάνῳ
+    med.2.1.1.10: {gloss: "unsociable"}   # ἀκοινωνήτῳ
+    med.2.1.2.1: {gloss: "all"}   # πάντα
+    med.2.1.2.2: {gloss: "these-things"}   # ταῦτα
+    med.2.1.2.3: {gloss: "have-befallen"}   # συμβέβηκεν
+    med.2.1.2.4: {gloss: "them"}   # ἐκείνοις
+    med.2.1.2.5: {gloss: "because-of"}   # παρὰ
+    med.2.1.2.6: {gloss: "the"}   # τὴν
+    med.2.1.2.7: {gloss: "ignorance"}   # ἄγνοιαν
+    med.2.1.2.8: {gloss: "of-the"}   # τῶν
+    med.2.1.2.9: {gloss: "goods"}   # ἀγαθῶν
+    med.2.1.2.10: {gloss: "and"}   # καὶ
+    med.2.1.2.11: {gloss: "evils"}   # κακῶν
+    med.2.1.3.1: {gloss: "I"}   # ἐγὼ
+    med.2.1.3.2: {gloss: "but"}   # δὲ
+    med.2.1.3.3: {gloss: "having-beheld"}   # τεθεωρηκὼς
+    med.2.1.3.4: {gloss: "the"}   # τὴν
+    med.2.1.3.5: {gloss: "nature"}   # φύσιν
+    med.2.1.3.6: {gloss: "of-the"}   # τοῦ
+    med.2.1.3.7: {gloss: "good"}   # ἀγαθοῦ
+    med.2.1.3.8: {gloss: "that"}   # ὅτι
+    med.2.1.3.9: {gloss: "beautiful"}   # καλόν
+    med.2.1.3.10: {gloss: "and"}   # καὶ
+    med.2.1.3.11: {gloss: "of-the"}   # τοῦ
+    med.2.1.3.12: {gloss: "bad"}   # κακοῦ
+    med.2.1.3.13: {gloss: "that"}   # ὅτι
+    med.2.1.3.14: {gloss: "ugly"}   # αἰσχρόν
+    med.2.1.4.1: {gloss: "and"}   # καὶ
+    med.2.1.4.2: {gloss: "the"}   # τὴν
+    med.2.1.4.3: {gloss: "himself"}   # αὐτοῦ
+    med.2.1.4.4: {gloss: "the"}   # τοῦ
+    med.2.1.4.5: {gloss: "one-erring"}   # ἁμαρτάνοντος
+    med.2.1.4.6: {gloss: "nature"}   # φύσιν
+    med.2.1.4.7: {gloss: "that"}   # ὅτι
+    med.2.1.4.8: {gloss: "to-me"}   # μοι
+    med.2.1.4.9: {gloss: "akin"}   # συγγενής
+    med.2.1.4.10: {gloss: "not"}   # οὐχὶ
+    med.2.1.4.11: {gloss: "of-blood"}   # αἵματος
+    med.2.1.4.12: {gloss: "or"}   # ἢ
+    med.2.1.4.13: {gloss: "of-seed"}   # σπέρματος
+    med.2.1.4.14: {gloss: "the"}   # τοῦ
+    med.2.1.4.15: {gloss: "same"}   # αὐτοῦ
+    med.2.1.4.16: {gloss: "but"}   # ἀλλὰ
+    med.2.1.4.17: {gloss: "of-mind"}   # νοῦ
+    med.2.1.4.18: {gloss: "and"}   # καὶ
+    med.2.1.4.19: {gloss: "of-divine"}   # θείας
+    med.2.1.4.20: {gloss: "portion"}   # ἀπομοίρας
+    med.2.1.4.21: {gloss: "sharing"}   # μέτοχος
+    med.2.1.5.1: {gloss: "neither"}   # οὔτε
+    med.2.1.5.2: {gloss: "to-be-harmed"}   # βλαβῆναι
+    med.2.1.5.3: {gloss: "by"}   # ὑπό
+    med.2.1.5.4: {gloss: "any"}   # τινος
+    med.2.1.5.5: {gloss: "of-them"}   # αὐτῶν
+    med.2.1.5.6: {gloss: "I-can"}   # δύναμαι
+    med.2.1.5.7: {gloss: "in-shame"}   # αἰσχρῷ
+    med.2.1.5.8: {gloss: "for"}   # γάρ
+    med.2.1.5.9: {gloss: "me"}   # με
+    med.2.1.5.10: {gloss: "no-one"}   # οὐδεὶς
+    med.2.1.5.11: {gloss: "will-wrap"}   # περιβαλεῖ
+    med.2.1.6.1: {gloss: "nor"}   # οὔτε
+    med.2.1.6.2: {gloss: "to-be-angry"}   # ὀργίζεσθαι
+    med.2.1.6.3: {gloss: "with-the"}   # τῷ
+    med.2.1.6.4: {gloss: "kinsman"}   # συγγενεῖ
+    med.2.1.6.5: {gloss: "I-can"}   # δύναμαι
+    med.2.1.6.6: {gloss: "nor"}   # οὔτε
+    med.2.1.6.7: {gloss: "to-hate"}   # ἀπέχθεσθαι
+    med.2.1.6.8: {gloss: "him"}   # αὐτῷ
+    med.2.1.7.1: {gloss: "we-have-come-to-be"}   # γεγόναμεν
+    med.2.1.7.2: {gloss: "for"}   # γὰρ
+    med.2.1.7.3: {gloss: "for"}   # πρὸς
+    med.2.1.7.4: {gloss: "working-together"}   # συνεργίαν
+    med.2.1.7.5: {gloss: "like"}   # ὡς
+    med.2.1.7.6: {gloss: "feet"}   # πόδες
+    med.2.1.7.7: {gloss: "like"}   # ὡς
+    med.2.1.7.8: {gloss: "hands"}   # χεῖρες
+    med.2.1.7.9: {gloss: "like"}   # ὡς
+    med.2.1.7.10: {gloss: "eyelids"}   # βλέφαρα
+    med.2.1.7.11: {gloss: "like"}   # ὡς
+    med.2.1.7.12: {gloss: "the"}   # οἱ
+    med.2.1.7.13: {gloss: "rows"}   # στοῖχοι
+    med.2.1.7.14: {gloss: "of-the"}   # τῶν
+    med.2.1.7.15: {gloss: "upper"}   # ἄνω
+    med.2.1.7.16: {gloss: "and"}   # καὶ
+    med.2.1.7.17: {gloss: "lower"}   # κάτω
+    med.2.1.7.18: {gloss: "teeth"}   # ὀδόντων
+    med.2.1.8.1: {gloss: "the"}   # τὸ
+    med.2.1.8.2: {gloss: "so"}   # οὖν
+    med.2.1.8.3: {gloss: "working-against"}   # ἀντιπράσσειν
+    med.2.1.8.4: {gloss: "one-another"}   # ἀλλήλοις
+    med.2.1.8.5: {gloss: "against"}   # παρὰ
+    med.2.1.8.6: {gloss: "nature"}   # φύσιν
+    med.2.1.8.7: {gloss: "a-working-against"}   # ἀντιπρακτικὸν
+    med.2.1.8.8: {gloss: "and"}   # δὲ
+    med.2.1.8.9: {gloss: "the"}   # τὸ
+    med.2.1.8.10: {gloss: "being-vexed"}   # ἀγανακτεῖν
+    med.2.1.8.11: {gloss: "and"}   # καὶ
+    med.2.1.8.12: {gloss: "turning-away"}   # ἀποστρέφεσθαι
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-29
+  why: "corrections to the GLAUx automatic parse, lemma, gender and part of speech: συντεύξομαι belongs to συντυγχάνω, περιβαλεῖ is the future of περιβάλλω, and the adjectives of the list are tagged as nouns or feminine"
+  status: draft
+  set:
+    med.2.1.1.4: {lemma: συντυγχάνω}
+    med.2.1.1.5: {morph: a-s---md-}
+    med.2.1.1.8: {morph: a-s---md-}
+    med.2.1.1.9: {morph: a-s---md-}
+    med.2.1.1.10: {morph: a-s---md-}
+    med.2.1.5.11: {lemma: περιβάλλω, morph: v3sfia---}

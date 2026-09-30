@@ -13,11 +13,11 @@ from pathlib import Path
 
 import yaml
 
-from . import __version__, chinese, greek, hebrew, japanese, latin, norse, oldenglish, runic, treebank
+from . import __version__, chinese, greek, hebrew, japanese, latin, norse, oldenglish, runic, sanskrit, treebank
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
-INDECLINABLE = set("dcgrie")
-PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebrew, "lzh": chinese, "runic": runic, "ja": japanese}
+INDECLINABLE = set("dcgriebz")   # b: GLAUx coordinating conjunction
+PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebrew, "lzh": chinese, "runic": runic, "ja": japanese, "san": sanskrit}
 NORMALIZE = {"heyne-to-macron": oldenglish.heyne_to_macron}
 LEAD = re.compile(r"^([(\[“]+)")
 TRAIL = re.compile(r"([,.·;:!?)\]”\u0387\u037e]+)$")
@@ -34,7 +34,7 @@ def sha256(p: Path) -> str:
 def edition_lines(xml_path: Path, book: int, first: int, last: int) -> dict[int, str]:
     root = ET.parse(xml_path).getroot()
     for div in root.iter(f"{TEI}div"):
-        if div.get("subtype") == "book" and div.get("n") == str(book):
+        if (div.get("subtype") or "").lower() == "book" and div.get("n") == str(book):
             out = {}
             for l in div.iter(f"{TEI}l"):
                 n = int(l.get("n"))
@@ -132,7 +132,17 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         # a line is either plain text (tokenized normally) or explicit tokens (runic inscriptions)
         # token lines join with the edition's joiner: a space for runes, nothing for Japanese
         joiner = edition.get("joiner", " ")
-        units = [(str(g["id"]), i, ln if isinstance(ln, str) else joiner.join(t["t"] for t in ln["tokens"]))
+
+        def token_line(toks: list[dict]) -> str:
+            # glue: no space after this word (Devanagari writes a final consonant with the next
+            # word's vowel); p: a danda, set off by a space as the source prints it
+            out = ""
+            for k, t in enumerate(toks):
+                out += t["t"] + (" " + t["p"] if t.get("p") else "")
+                if k + 1 < len(toks) and not t.get("glue"):
+                    out += joiner
+            return out
+        units = [(str(g["id"]), i, ln if isinstance(ln, str) else token_line(ln["tokens"]))
                  for g in glist for i, ln in enumerate(g["lines"], start=1)]
         # Weft's edition must reproduce its cited source verbatim, line by line; a section may
         # name its own source (verify_in), otherwise the edition-wide one applies
@@ -142,7 +152,10 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             if not vpath:
                 continue
             if vpath not in cache:
-                cache[vpath] = " ".join((work_dir / vpath).read_text(encoding="utf-8").split())
+                raw_src = (work_dir / vpath).read_text(encoding="utf-8")
+                if edition.get("verify_strip"):       # verse labels printed inside the source lines
+                    raw_src = re.sub(edition["verify_strip"], "", raw_src)
+                cache[vpath] = " ".join(raw_src.split())
             if " ".join(text.split()) not in cache[vpath]:
                 fail("edition-not-in-source", f"{gid}.{i}")
     elif ed_fmt == "stanza-text":
@@ -195,6 +208,14 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         tb = treebank.load_lines(tb_path, book, first, last)
     elif tb_fmt == "ldt-stream":
         stream, cursor = treebank.load_stream(tb_path, book, first, last), 0
+    elif tb_fmt == "glaux":
+        stream, cursor = treebank.load_glaux(tb_path, [str(x) for x in m["treebank"]["subdocs"]]), 0
+    elif tb_fmt == "conllu-citation":
+        cit = m["treebank"]["citation"]
+        stream, cursor = treebank.load_conllu_citation([tb_path], cit["text"], cit["chapter"]), 0
+        need = sum(t.get("w", 1) for g in glist for ln in g["lines"] if not isinstance(ln, str) for t in ln["tokens"])
+        if need != len(stream):
+            fail("treebank-word-count", f"edition carries {need} treebank words, treebank has {len(stream)}")
     prefix = m["prefix"]
     lines = []
     ntok = 0
@@ -225,7 +246,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             g = groups[book]
             etoks = g["lines"][n - 1]["tokens"]
             surfaces = [t["t"] for t in etoks]
-            puncts, leads = [None] * len(surfaces), [None] * len(surfaces)
+            puncts, leads = [t.get("p") for t in etoks], [None] * len(surfaces)
         if ed_fmt == "oshb":
             surfaces = [r["word"] for r in verses[n]]
             puncts = [r.get("punct") for r in verses[n]]
@@ -251,8 +272,27 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             pairs, fl = conllu_pairs, []
         elif tb_fmt == "agdt-cite":
             pairs, fl = treebank.reconcile(surfaces, tb.get(f"{book}.{n}", []))
-        elif tb_fmt == "ldt-stream":
+        elif tb_fmt in ("ldt-stream", "glaux"):
             pairs, fl, cursor = treebank.reconcile_stream(surfaces, stream, cursor)
+        elif tb_fmt == "conllu-citation":
+            pairs, fl = [], []
+            for et in etoks:
+                k = et.get("w", 1)
+                rows, cursor = stream[cursor:cursor + k], cursor + k
+                if len(rows) < k:
+                    pairs.append(None); continue
+                feats = lambda r: r["upos"] + ("" if r["feats"] in ("_", "") else "|" + r["feats"])
+                pairs.append({"lemma": " + ".join(r["lemma"] for r in rows),
+                              "postag": " + ".join(feats(r) for r in rows),
+                              "ref": ", ".join(r["ref"] for r in rows)})
+                # sensor: the treebank's word should be recognizably the printed one; sandhi changes
+                # word ends, so compare the first three letters of the unaccented forms
+                sn = lambda x: sanskrit.strip_accents(x).lstrip("'’").replace("ṃ", "m").replace("ḷ", "ḍ")
+                said, tbw = sn(et["n"]), sn("".join(r["unsandhied"] for r in rows))
+                k3 = max(1, min(3, len(said) - 1, len(tbw) - 1))   # word ends change in sandhi
+                fused = k > 1 and (said[:1] == tbw[:1] or (said[:1] in "aāiīuūeo" and tbw[:1] in "aāiīuūeo"))
+                if said[:k3] != tbw[:k3] and not fused and not (said.startswith("gne") and tbw.startswith("agne")):
+                    fl.append(f"treebank-form-mismatch: {et['n']} vs {tbw}")
         else:
             pairs, fl = [None] * len(surfaces), []
         for f in fl:
@@ -271,6 +311,8 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                     tok["surface"] = s = ns
             if caesura_at is not None and i == caesura_at + 1:
                 tok["caesura"] = True
+            if token_edition and etoks[i - 1].get("caesura"):
+                tok["caesura"] = True
             if token_edition:
                 et = etoks[i - 1]
                 if g.get("alphabet"):
@@ -280,6 +322,8 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                         fail("rune-missing", f"{book}.{n} {s} {missing}")
                 if et.get("n"):
                     tok["norm"] = et["n"]
+                if et.get("m"):
+                    tok["metre_form"] = et["m"]
             if lead:
                 tok["lead"] = lead
             if p:
@@ -297,7 +341,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                     tok["gloss"] = w["tbgloss"]
                 # indeclinables (adverb, conjunction, particle, preposition, interjection) rightly
                 # carry no inflection; an empty tag on anything that declines or conjugates is a gap
-                if tb_fmt in ("agdt-cite", "ldt-stream") and w["postag"][1:].strip("-") == "" and w["postag"][0] not in INDECLINABLE:
+                if tb_fmt in ("agdt-cite", "ldt-stream", "glaux") and w["postag"][1:].strip("-") == "" and w["postag"][0] not in INDECLINABLE:
                     fail("morph-empty-declinable", f"{book}.{n} {s} ({w['postag']})")
             elif tb_fmt != "none":
                 fail("no-treebank-word", f"{book}.{n} {s}")
@@ -344,6 +388,31 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         if lang == "ja" and toks:
             # Japanese verse counts morae; the first scheme is the as-first-spoken reading
             line_rec["metre"] = f"{sum(t.get('morae', 0) for t in toks)} morae"
+        if lang == "san" and toks:
+            ns = [et["n"] for et in etoks]
+            # sensor 1: the hand-entered transliteration must spell the printed Devanagari
+            deva_iast, marks = sanskrit.devanagari(text)
+            said = sanskrit.strip_accents("".join(ns)).replace("'", "")
+            if deva_iast.replace("'", "") != said:
+                fail("translit-mismatch", f"{book}.{n} {deva_iast} vs {said}")
+            # sensor 2: raised pitch written as acutes must match the manuscript's accent strokes
+            decoded = sanskrit.decode_marks(marks)
+            written = sanskrit.accents_from_words(ns)
+            if len(decoded) != len(written):
+                fail("syllable-count-mismatch", f"{book}.{n} {len(decoded)} vs {len(written)}")
+            else:
+                sy_word = [w for w in ns for _ in range(sanskrit.phonemize(w)["syllables"])]
+                for k, (d, wr) in enumerate(zip(decoded, written)):
+                    if (d == "U") != (wr == "U"):
+                        fail("accent-mismatch", f"{book}.{n} syllable {k + 1} ({sy_word[k]}): strokes say {d}, written {wr or '-'}")
+            starts = [k for k, et in enumerate(etoks) if et.get("caesura")]
+            pattern, sizes = sanskrit.metre([et.get("m") or et["n"] for et in etoks], starts)
+            line_rec["metre"] = pattern
+            want = (edition.get("metre") or {}).get("pada")
+            for k, size in enumerate(sizes):
+                if want and size != want:
+                    # the Rigveda often counts a syllable its written form lost (ī́ḍyo read ī́ḍiyo)
+                    fail("pada-syllables-short" if size < want else "pada-syllables-long", f"{book}.{n} pāda {k + 1}: {size}")
         if lang == "lzh" and toks:
             # regulated verse: level (○) or oblique (●) tone per syllable, and the rhyme of the last
             pattern = "".join("○" if t.get("tone") == "level" else "●" for t in toks)
@@ -366,7 +435,9 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                 "morph": {"src": "none: no treebank; hand annotation in curated/"}}),
             "sound": {"src": f"weft.{phon.__name__.rsplit('.', 1)[-1]} {phon.VERSION}" + (" + quantity table" if lang == "lat" else "")
                       + (", from the normalized form" if ed_fmt == "weft-edition" else "")},
-            **({"script": {"src": f"weft.runic {runic.VERSION}: generated from the transliteration"}} if ed_fmt == "weft-edition" else {}),
+            **({"script": {"src": f"weft.runic {runic.VERSION}: generated from the transliteration"}} if ed_fmt == "weft-edition" and lang == "runic" else {}),
+            **({"translit": {"src": "Weft edition: hand-entered accented IAST, checked against the Devanagari and its accent strokes"},
+                "metre": {"src": f"weft.sanskrit {sanskrit.VERSION}: syllable weight across the line"}} if lang == "san" else {}),
         },
         "lines": lines,
     }

@@ -1,0 +1,22 @@
+# Notes for Aristotle, Metaphysics A.1. Editorial notes are drafts until a reviewer lifts them.
+- id: n.met.first
+  attach: met.980a.1
+  kind: editorial
+  status: draft
+  text: "The first sentence of the Metaphysics. εἰδέναι, 'to know', is the perfect infinitive of a root meaning 'see': to know is, in origin, to have seen. ὀρέγονται is a verb of reaching or stretching toward something. The two translations render the same six words as 'naturally desire to know' (Taylor, 1801) and 'are actuated with the desire of knowledge' (M'Mahon, 1857)."
+- id: n.met.title
+  attach: met.980a.1.1
+  kind: editorial
+  status: draft
+  leans_on: "M'Mahon's note on the title (1857)"
+  text: "The title Metaphysics, 'after the Physics', is not Aristotle's. It is usually explained by the order in which ancient editors placed these books, after his works on nature; M'Mahon in 1857 attributes it to Andronicus of Rhodes, the first-century BC editor."
+- id: n.met.sight
+  attach: met.980a.2.22
+  kind: editorial
+  status: draft
+  text: "Aristotle ranks sight above the other senses because it shows the most differences between things. M'Mahon's footnote of 1857 objects that this ranking follows the old philosophers and is 'discarded by the moderns'."
+- id: n.met.parse
+  attach: met.980a.1.5
+  kind: editorial
+  status: draft
+  text: "Lemma and form for each word come from GLAUx, a corpus of Greek parsed automatically rather than by hand. In this passage the parse needed no correction; in the Enchiridion and the Meditations on this site it needed ten and six."

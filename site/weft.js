@@ -20,7 +20,8 @@
   /* ---------- settings, persisted per viewer */
   const LAYERS = [
     ...(D.lines.some((l) => l.tokens.some((t) => t.script)) ? [["script", "Script (runes)"]] : []),
-    ["source", "Source text"], ["sound", "Sound"], ["gloss", "Gloss, word for word"],
+    ["source", "Source text"],
+    ...(D.work.language === "san" ? [["translit", "Transliteration"]] : []), ["sound", "Sound"], ["gloss", "Gloss, word for word"],
     ["metre", "Metre"], ["sense", "Translations"], ["notes", "Note markers"],
   ];
   const SLIDERS = [
@@ -123,6 +124,7 @@
         },
           t.script ? h("span", { class: "scr", "aria-hidden": "true", text: t.script }) : null,
           h("span", { class: "src", lang: LANG }, t.lead ? h("span", { class: "p", text: t.lead }) : null, h("span", { class: "form", text: shown(t) }), t.punct ? h("span", { class: "p", text: t.punct }) : null),
+          D.work.language === "san" && t.norm ? h("span", { class: "tl", text: t.norm }) : null,
           h("span", { class: "snd", text: snd.respell || "" }),
           h("span", { class: "gls", text: t.gloss || "·" }),
         );
@@ -172,12 +174,13 @@
     document.querySelectorAll(".w.active").forEach((x) => x.classList.remove("active"));
     const btn = document.querySelector(`.w[data-id="${CSS.escape(t.id)}"]`);
     if (btn) btn.classList.add("active");
-    $("#word-title").textContent = `${Unit} ${lineNo(line.id)}, word ${tokNo(t.id)}`;
+    $("#word-title").textContent = (STANZAS && line.stanza_title ? line.stanza_title + ", " + UNIT : Unit) + ` ${lineNo(line.id)}, word ${tokNo(t.id)}`;
     const dl = h("dl", {},
       h("dt", { text: "lemma" }), h("dd", { class: "lemma", lang: LANG, text: t.lemma || "—" }),
       h("dt", { text: "form" }), h("dd", { text: t.morph_text || "indeclinable" }),
       ...(t.script ? [h("dt", { text: "runes" }), h("dd", { class: "scr-big", text: t.script })] : []),
-      ...(t.norm ? [h("dt", { text: D.work.language === "ja" ? "reading" : "normalized" }), h("dd", { lang: LANG, text: t.norm })] : []),
+      ...(t.norm ? [h("dt", { text: { ja: "reading", san: "transliteration" }[D.work.language] || "normalized" }), h("dd", { lang: D.work.language === "san" ? null : LANG, text: t.norm })] : []),
+      ...(t.metre_form ? [h("dt", { text: "metrical reading" }), h("dd", { text: `${t.metre_form}: the metre sounds a syllable the written form lost` })] : []),
       ...(t.enclitic ? [h("dt", { text: "enclitic" }), h("dd", { lang: LANG, text: `${t.enclitic.form} (${t.enclitic.lemma}, 'and'), attached to the end of the word` })] : []),
       ...(t.prefixes || []).flatMap((pf) => [h("dt", { text: "prefix" }),
         h("dd", {}, h("span", { lang: LANG, text: pf.form + " " }), `'${pf.gloss}'${pf.morph_text ? ", " + pf.morph_text : ""}`)]),

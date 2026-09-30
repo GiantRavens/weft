@@ -1,0 +1,67 @@
+work: marcus-meditations
+title: Meditations (To Himself)
+author: Marcus Aurelius
+language: grc
+prefix: med
+urn: urn:cts:greekLit:tlg0562.tlg001
+unit: section
+section_noun: section
+written:
+  year: 175
+  label: written about AD 170–180, private notes kept in Greek by the Roman emperor, much of it on campaign
+status: phase-0
+pilot:
+  sections:
+  - '2.1'
+edition:
+  id: perseus-grc2
+  name: Perseus perseus-grc2 (Leopold 1908), passage in a Weft edition file
+  format: weft-edition
+  file: edition.yaml
+  license: CC BY-SA 4.0
+treebank:
+  id: glaux
+  name: 'GLAUx, the Greek Language Automated corpus (Keersmaekers), Meditations: automatic parse, not hand-checked'
+  format: glaux
+  subdocs:
+  - 2.1.1
+  file: sources/glaux-0562-001.xml
+  url: https://raw.githubusercontent.com/perseids-publications/glaux-trees/12606b3426f1e5245413f3a8e1c5e0b22348a13c/public/xml/0562-001.xml
+  sha256: 5ab4e31ceceeeb3743c7fde542405a3ed20512d6c4d3d806cc557a6f6357e24c
+  license: CC BY-SA 4.0
+  license_url: https://github.com/perseids-publications/glaux-trees/blob/master/TREEBANK_LICENSE
+schemes:
+- koine
+- restored
+- erasmian
+quantities: pipeline/weft/data/grc_quantities.yaml
+sources_extra:
+- id: perseus-grc2
+  name: Perseus canonical-greekLit TEI edition
+  file: sources/perseus-grc2.xml
+  url: https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/bcc5df0602f3b3fe6fefe1e1d575602a25ab1db6/data/tlg0562/tlg001/tlg0562.tlg001.perseus-grc2.xml
+  sha256: 9752103971dbbfcee8d483e926c4e926f78e8304abdff795f88e9f8766c178dc
+  license: CC BY-SA 4.0
+  license_url: https://github.com/PerseusDL/canonical-greekLit#license
+translations:
+- id: long1862
+  translator: George Long
+  year: 1862
+  form: prose, The Thoughts of the Emperor Marcus Aurelius Antoninus
+  license: public-domain
+  license_url: https://www.gutenberg.org/policy/license.html
+  file: sources/long1862.txt
+  url: https://www.gutenberg.org/cache/epub/15877/pg15877.txt
+  sha256: 6584df7e90d6035eece30d8028527290bf2508076963ee0376cb41db9cf88d5b
+- id: casaubon1634
+  translator: Meric Casaubon
+  year: 1634
+  form: prose, the first English translation
+  license: public-domain
+  license_url: https://www.gutenberg.org/policy/license.html
+  file: sources/casaubon1634.txt
+  url: https://www.gutenberg.org/cache/epub/2680/pg2680.txt
+  sha256: 6977474f82a39dd88a4af31a59504821658174d33c177732c54357e4d680b96c
+predicted_gaps:
+- lemma and morphology are an automatic parse (GLAUx), not hand-checked; expect some errors
+- Koine pronunciation of the late 2nd century is reconstructed; Marcus was a Latin speaker writing Greek

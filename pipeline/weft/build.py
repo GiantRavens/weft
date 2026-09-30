@@ -15,9 +15,9 @@ import yaml
 from . import __version__, treebank
 from .draft import PHON, load_manifest
 
-HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "lzh": "lzh", "runic": "gmq", "ja": "ja"}
+HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "lzh": "lzh", "runic": "gmq", "ja": "ja", "san": "sa"}
 RTL = {"hbo"}
-LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "lzh": "Classical Chinese", "runic": "Runic Norse", "ja": "Early modern Japanese"}
+LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "lzh": "Classical Chinese", "runic": "Runic Norse", "ja": "Early modern Japanese", "san": "Vedic Sanskrit"}
 
 
 def _load_yaml_dir(d: Path) -> list[tuple[Path, object]]:

@@ -1,0 +1,24 @@
+run:
+  weft: 0.1.0
+  book: 1
+  lines: 1-7
+counts:
+  lines: 7
+  tokens: 44
+failures:
+  form-mismatch: 1
+  morph-empty-declinable: 1
+samples:
+  form-mismatch:
+  - 1.2 ἄλγεʼ|ἄλγἐ
+  morph-empty-declinable:
+  - 1.3 Ἄϊδι (---------)
+failure_rate:
+  form-mismatch: 0.023
+  morph-empty-declinable: 0.023
+shift_left: []
+predicted_gaps:
+- a/i/u vowel length not marked in the spelling; the quantity table covers the pilot words it lists, others default to short
+- treebank is on perseus-grc1, edition is grc2; expect form and elision-mark differences
+- both translations are prose paragraphs; one span covers the whole proem
+- the editor's accentuation of Πηληϊάδεω and the synizesis of -εω are not modeled by the sound layer

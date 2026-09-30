@@ -6,7 +6,6 @@ layers:
   lemma: {src: 'none: no treebank; hand annotation in curated/'}
   morph: {src: 'none: no treebank; hand annotation in curated/'}
   sound: {src: 'weft.latin 0.1 + quantity table, from the normalized form'}
-  script: {src: 'weft.runic 0.1: generated from the transliteration'}
 lines:
 - id: sci.descartes.1
   cite: urn:weft:lat:science.weft-science:descartes.1

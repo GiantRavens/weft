@@ -1,0 +1,65 @@
+# Human overlay for Iliad book 1. Wins over gen/ on conflict.
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-29
+  why: pilot; hand gloss and hand scansion of the proem
+  status: draft
+  set:
+    # metre: — long, ◡ short, × anceps, | foot boundary. Line 1 reads -δεω as one syllable (synizesis).
+    il.1.1: {metre: "—◡◡|—◡◡|——|—◡◡|—◡◡|—×"}
+    il.1.2: {metre: "—◡◡|——|—◡◡|——|—◡◡|—×"}
+    il.1.3: {metre: "——|——|——|—◡◡|—◡◡|—×"}
+    il.1.4: {metre: "——|——|—◡◡|—◡◡|—◡◡|—×"}
+    il.1.5: {metre: "——|—◡◡|—◡◡|—◡◡|—◡◡|—×"}
+    il.1.6: {metre: "——|——|—◡◡|——|—◡◡|—×"}
+    il.1.7: {metre: "—◡◡|—◡◡|——|——|—◡◡|—×"}
+
+    il.1.1.1: {gloss: wrath}
+    il.1.1.2: {gloss: sing}
+    il.1.1.3: {gloss: O-goddess}
+    il.1.1.4: {gloss: of-Peleus'-son}
+    il.1.1.5: {gloss: of-Achilles}
+
+    il.1.2.1: {gloss: ruinous}
+    il.1.2.2: {gloss: which}
+    il.1.2.3: {gloss: countless}
+    il.1.2.4: {gloss: for-Achaeans}
+    il.1.2.5: {gloss: pains}
+    il.1.2.6: {gloss: it-set}
+
+    il.1.3.1: {gloss: many}
+    il.1.3.2: {gloss: and}
+    il.1.3.3: {gloss: mighty}
+    il.1.3.4: {gloss: souls}
+    il.1.3.5: {gloss: to-Hades, lemma: Ἀΐδης, morph: n-s---md-}   # treebank tag empty
+    il.1.3.6: {gloss: hurled-forth}
+
+    il.1.4.1: {gloss: of-heroes}
+    il.1.4.2: {gloss: themselves}
+    il.1.4.3: {gloss: and}
+    il.1.4.4: {gloss: prey}
+    il.1.4.5: {gloss: it-made}
+    il.1.4.6: {gloss: for-dogs}
+
+    il.1.5.1: {gloss: for-birds}
+    il.1.5.2: {gloss: and}
+    il.1.5.3: {gloss: all}
+    il.1.5.4: {gloss: of-Zeus}
+    il.1.5.5: {gloss: and}
+    il.1.5.6: {gloss: was-being-fulfilled}
+    il.1.5.7: {gloss: plan}
+
+    il.1.6.1: {gloss: from}
+    il.1.6.2: {gloss: which-time}
+    il.1.6.3: {gloss: indeed}
+    il.1.6.4: {gloss: the}
+    il.1.6.5: {gloss: first}
+    il.1.6.6: {gloss: the-two-stood-apart}
+    il.1.6.7: {gloss: the-two-having-quarrelled}
+
+    il.1.7.1: {gloss: son-of-Atreus}
+    il.1.7.2: {gloss: both}
+    il.1.7.3: {gloss: lord}
+    il.1.7.4: {gloss: of-men}
+    il.1.7.5: {gloss: and}
+    il.1.7.6: {gloss: godlike}
+    il.1.7.7: {gloss: Achilles}

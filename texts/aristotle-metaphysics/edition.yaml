@@ -1,0 +1,13 @@
+# Weft edition of Aristotle, Metaphysics A.1, 980a21-27, from the Perseus text (Ross), checked verbatim
+# against it (Bekker line markers set aside). One line per sentence.
+joiner: ' '
+verify_in: sources/perseus-grc2.xml
+verify_strip: <[^>]+>
+sections:
+- id: 980a
+  title: Book A (I), chapter 1, Bekker 980a21–27
+  lines:
+  - πάντες ἄνθρωποι τοῦ εἰδέναι ὀρέγονται φύσει.
+  - σημεῖον δʼ ἡ τῶν αἰσθήσεων ἀγάπησις· καὶ γὰρ χωρὶς τῆς χρείας ἀγαπῶνται διʼ αὑτάς, καὶ μάλιστα τῶν ἄλλων ἡ διὰ τῶν ὀμμάτων.
+  - οὐ γὰρ μόνον ἵνα πράττωμεν ἀλλὰ καὶ μηθὲν μέλλοντες πράττειν τὸ ὁρᾶν αἱρούμεθα ἀντὶ πάντων ὡς εἰπεῖν τῶν ἄλλων.
+  - αἴτιον δʼ ὅτι μάλιστα ποιεῖ γνωρίζειν ἡμᾶς αὕτη τῶν αἰσθήσεων καὶ πολλὰς δηλοῖ διαφοράς.

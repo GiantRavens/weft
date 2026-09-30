@@ -1,0 +1,54 @@
+work: homer-iliad
+title: Iliad
+author: Homer
+language: grc
+prefix: il                       # short ID prefix: il.<book>.<line>[.<token>]
+urn: urn:cts:greekLit:tlg0012.tlg001
+unit: line
+written: {year: -725, label: "composed about 750–700 BC, probably a generation before the Odyssey"}
+status: phase-0
+pilot: {book: 1, first: 1, last: 7}
+edition:
+  id: perseus-grc2
+  name: Perseus perseus-grc2 (Monro and Allen)
+  file: sources/perseus-grc2.xml
+  url: https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0012/tlg001/tlg0012.tlg001.perseus-grc2.xml
+  sha256: ae8b617018c6e5af14cbab9ce6082438c0f103eafd0a4c67bdae4588cca5eaa4
+  license: CC BY-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-sa/4.0/
+  terms: https://github.com/PerseusDL/canonical-greekLit#license
+treebank:
+  id: agdt-2.1
+  name: Ancient Greek Dependency Treebank 2.1 (on perseus-grc1)
+  file: sources/agdt-iliad.tb.xml
+  url: https://raw.githubusercontent.com/PerseusDL/treebank_data/master/v2.1/Greek/texts/tlg0012.tlg001.perseus-grc1.tb.xml
+  sha256: 1a7cacbc9460a7acce4a6c7004007619dd8acf1f6e210b3d9f8a3d3e2518c8d9
+  license: CC BY-SA 3.0
+  license_url: https://creativecommons.org/licenses/by-sa/3.0/
+  terms: https://github.com/PerseusDL/treebank_data#license
+schemes: [restored, erasmian]    # see pipeline/weft/greek.py for definitions
+quantities: pipeline/weft/data/grc_quantities.yaml
+translations:
+  - id: butler1898
+    translator: Samuel Butler
+    year: 1898
+    form: prose
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/butler1898.txt
+    url: https://www.gutenberg.org/cache/epub/2199/pg2199.txt
+    sha256: 72673dcefeaa5d302b4ac1cc9ce6fd0b236831e816de41391e5cfe138ab5b077
+  - id: lang-leaf-myers1883
+    translator: Andrew Lang, Walter Leaf and Ernest Myers
+    year: 1883
+    form: prose
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/lang-leaf-myers1883.txt
+    url: https://www.gutenberg.org/cache/epub/3059/pg3059.txt
+    sha256: b3053a57e162b79a0a418ef8bf8f6b8796a834acc668832f38cda804e92ac2a2
+predicted_gaps:
+  - "a/i/u vowel length not marked in the spelling; the quantity table covers the pilot words it lists, others default to short"
+  - "treebank is on perseus-grc1, edition is grc2; expect form and elision-mark differences"
+  - "both translations are prose paragraphs; one span covers the whole proem"
+  - "the editor's accentuation of Πηληϊάδεω and the synizesis of -εω are not modeled by the sound layer"

@@ -241,3 +241,9 @@ body.hide-script .scr { display: none; }
 /* ---------- Japanese */
 .src[lang="ja"] { font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif; font-size: calc(var(--src-size) * 1.15); }
 .word .big[lang="ja"], .word .lemma[lang="ja"] { font-family: "Noto Serif JP", "Hiragino Mincho ProN", serif; }
+
+/* Vedic Sanskrit: Devanagari with the Rigvedic accent strokes, and the accented transliteration below */
+.src[lang="sa"] { font-family: "Noto Serif Devanagari", "Kohinoor Devanagari", "Devanagari Sangam MN", serif; font-size: calc(var(--src-size) * 1.05); line-height: 1.6; }
+.word .big[lang="sa"] { font-family: "Noto Serif Devanagari", "Kohinoor Devanagari", serif; }
+.tl { font: italic calc(var(--snd-size) * 1.2)/1.25 var(--serif); color: var(--ink-soft); white-space: nowrap; }
+body.hide-translit .tl { display: none; }

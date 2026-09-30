@@ -9,7 +9,8 @@ from .greek import PUNCT, normalize_elision
 
 POS = {"n": "noun", "v": "verb", "t": "participle", "a": "adjective", "d": "adverb",
        "l": "article", "g": "particle", "c": "conjunction", "r": "preposition",
-       "p": "pronoun", "m": "numeral", "i": "interjection", "e": "exclamation", "x": "irregular"}
+       "p": "pronoun", "m": "numeral", "i": "interjection", "e": "exclamation", "x": "irregular",
+       "b": "coordinating conjunction", "z": "unclassified"}   # b, z: GLAUx (Pedalion) tags
 FIELDS = [
     None,
     {"1": "1st person", "2": "2nd person", "3": "3rd person"},
@@ -31,7 +32,7 @@ UD_POS = {"NOUN": "noun", "PROPN": "proper noun", "VERB": "verb", "AUX": "auxili
           "NUM": "numeral", "CCONJ": "conjunction", "SCONJ": "subordinating conjunction",
           "PART": "particle", "INTJ": "interjection"}
 UD_ORDER = ["Stem", "Conj", "Person", "Number", "Tense", "Mood", "VerbForm", "Voice", "Gender", "Case",
-            "State", "Degree", "Reflex", "PronType", "PartType", "Polarity"]
+            "State", "Degree", "Reflex", "PronType", "PartType", "Polarity", "Compound"]
 UD_VAL = {"Sing": "singular", "Plur": "plural", "Dual": "dual", "Pres": "present", "Past": "past",
           "Pret": "past", "Ind": "indicative", "Sub": "subjunctive", "Imp": "imperative",
           "Inf": "infinitive", "Part": "participle", "Mid": "middle", "Pass": "passive", "Act": "active",
@@ -40,6 +41,8 @@ UD_VAL = {"Sing": "singular", "Plur": "plural", "Dual": "dual", "Pres": "present
           "Neg": "negative", "Rel": "relative", "Dem": "demonstrative", "Prs": "personal", "Int": "interrogative",
           "Aor": "aorist", "Imperf": "imperfect", "Perf": "perfect", "Pqp": "pluperfect", "Fut": "future",
           "Opt": "optative", "Abl": "ablative", "Ger": "gerund",
+          # Vedic Sanskrit
+          "Ins": "instrumental", "Loc": "locative", "Gdv": "gerundive",
           # Biblical Hebrew (OSHB)
           "Qal": "qal stem", "Niphal": "niphal stem", "Piel": "piel stem", "Pual": "pual stem",
           "Hiphil": "hiphil stem", "Hophal": "hophal stem", "Hithpael": "hithpael stem",
@@ -63,6 +66,8 @@ def _decode_ud(tag: str) -> str:
             continue
         if k == "Person":
             parts.append({"1": "1st person", "2": "2nd person", "3": "3rd person"}.get(v, v))
+        elif k == "Compound" and v == "Yes":
+            parts.append("first member of a compound")
         elif k == "Reflex" and v == "Yes":
             parts.append("reflexive")
         else:
@@ -72,6 +77,8 @@ def _decode_ud(tag: str) -> str:
 
 def decode_morph(tag: str) -> str:
     """AGDT 9-position postag, or a UD 'UPOS|Feat=Val' string -> readable English."""
+    if tag and " + " in tag:          # one printed word carrying two treebank words
+        return " + ".join(decode_morph(t) for t in tag.split(" + "))
     if tag and ("|" in tag or tag.isupper()):
         return _decode_ud(tag)
     if not tag or len(tag) < 9:
@@ -482,3 +489,58 @@ def load_conllu_prefix(path: Path, prefix: str) -> dict[int, dict]:
                 cur["rows"].append({"id": c[0], "form": c[1], "lemma": c[2], "upos": c[3], "feats": c[5],
                                     "misc": c[9] if len(c) > 9 else "_"})
     return out
+
+
+# ---------------------------------------------------------------- citation stream (Vedic treebank)
+def load_conllu_citation(paths: list[Path], text: str, chapter: str) -> list[dict]:
+    """Every word row of the sentences cited as `text` `chapter` (e.g. ṚV 1, 1), in file order,
+    across the given files. The Vedic treebank splits and joins sentences without regard to verse
+    boundaries, so the words are returned as one stream for the edition to consume in order."""
+    import re as _re
+    out: list[dict] = []
+    for path in paths:
+        block: list[str] = []
+        with Path(path).open(encoding="utf-8") as f:
+            for line in list(f) + [""]:
+                line = line.rstrip("\n")
+                if line:
+                    block.append(line)
+                    continue
+                if not block:
+                    continue
+                meta = {m.group(1): m.group(2).strip() for l in block
+                        if (m := _re.match(r"#\s*([\w_]+)\s*=\s*(.*)", l))}
+                if meta.get("citation_text") == text and meta.get("citation_chapter") == chapter:
+                    sid = meta.get("sent_id", "?")
+                    for l in block:
+                        if l.startswith("#"):
+                            continue
+                        c = l.split("\t")
+                        if "-" in c[0] or "." in c[0]:
+                            continue
+                        misc = dict(kv.split("=", 1) for kv in c[9].split("|") if "=" in kv) if len(c) > 9 else {}
+                        out.append({"form": c[1], "lemma": c[2], "upos": c[3], "feats": c[5],
+                                    "ref": f"{sid}/{c[0]}", "unsandhied": misc.get("Unsandhied", c[1])})
+                block = []
+    return out
+
+
+# ---------------------------------------------------------------- GLAUx (automatically parsed Greek)
+def load_glaux(path: Path, subdocs: list[str]) -> list[dict]:
+    """Words of the GLAUx sentences whose citation (subdoc) is in `subdocs`, in file order,
+    punctuation dropped. GLAUx is AGDT-format XML parsed automatically (Keersmaekers, Pedalion
+    project); its citations are strings such as '1.1', '2.1.3' or Bekker '1.980a'."""
+    want = set(subdocs)
+    words: list[dict] = []
+    for _, el in ET.iterparse(path):
+        if el.tag != "sentence":
+            continue
+        if (el.get("subdoc") or "") in want:
+            for w in el.findall("word"):
+                if (w.get("postag") or "").startswith("u"):
+                    continue
+                words.append({"sentence": el.get("id"), "word": w.get("id"), "form": w.get("form"),
+                              "lemma": w.get("lemma"), "postag": w.get("postag"),
+                              "relation": w.get("relation"), "head": w.get("head")})
+        el.clear()
+    return words

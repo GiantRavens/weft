@@ -1,0 +1,14 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '2.1'
+counts:
+  lines: 8
+  tokens: 105
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- lemma and morphology are an automatic parse (GLAUx), not hand-checked; expect some errors
+- Koine pronunciation of the late 2nd century is reconstructed; Marcus was a Latin speaker writing Greek

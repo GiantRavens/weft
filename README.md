@@ -76,14 +76,19 @@ server, so a page or the whole folder can be sent as an attachment.
 
 ## Status
 
-Twelve works built across eight languages, oldest first in the library:
+Seventeen works built across nine languages, oldest first in the library:
 
 | Work | Passage | Schemes | Translations |
 |---|---|---|---|
+| Rigveda 1.1, Hymn to Agni | 9 verses | Vedic (with the pitch accent), modern Indian | Griffith 1896, Wilson 1850 |
+| Homer, Iliad | 1.1-7 (the proem) | restored, Erasmian | Butler 1898, Lang, Leaf and Myers 1883 |
 | Homer, Odyssey | 1.1-10 | restored, Erasmian | Butler 1900, Butcher and Lang 1879 |
+| Aristotle, Metaphysics | A.1, 980a21-27 | restored, Erasmian | Taylor 1801, M'Mahon 1857 |
 | Genesis (Bereshit) | 1:1-5 | Tiberian, modern Israeli | JPS 1917, Geneva 1599, King James 1611 |
 | Gospel of John | 1:1-5 | Koine, Erasmian | Tyndale 1534, Geneva 1599, King James 1611 |
 | Ovid, Metamorphoses | 1.1-9 | classical, ecclesiastical | Golding 1567, More 1922 |
+| Epictetus, Enchiridion | 1.1-3 | Koine, restored, Erasmian | Long 1877, Higginson 1865 |
+| Marcus Aurelius, Meditations | 2.1 | Koine, restored, Erasmian | Long 1862, Casaubon 1634 |
 | Hávamál (Poetic Edda) | stanzas 1, 76, 77 | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
 | Li Bai, Quiet Night Thought | 4 lines | Tang, Mandarin, Cantonese | Cranmer-Byng 1909 |
 | Runic inscriptions: Kylver, Gallehus, Rök | 3 inscriptions | Proto-Norse, Old East Norse | Stephens 1884; Weft editorial reading |
@@ -93,11 +98,12 @@ Twelve works built across eight languages, oldest first in the library:
 | Bashō, The Old Pond | 1 poem, 5-7-5 | Edo 1686, modern | Hearn 1898, Chamberlain 1902 |
 | Grettis saga | chapter 14, sentences 1-9 | modern Icelandic, Old Norse | Morris and Magnússon 1869, Hight 1914 |
 
-Homer, Ovid, John and Grettis saga take lemma and grammar from treebanks (AGDT, LDT, MorphGNT, IcePaHC); Genesis from the Open Scriptures Hebrew Bible; Li Bai from the Kyoto Classical Chinese treebank, with Tang readings from Unicode's Unihan database. No open
+Homer, Ovid, John, Grettis saga and the Rigveda take lemma and grammar from treebanks (AGDT, LDT, MorphGNT, IcePaHC, the Vedic Treebank); Aristotle, Epictetus and Marcus Aurelius from GLAUx, an automatic parse, corrected by hand where it errs; Genesis from the Open Scriptures Hebrew Bible; Li Bai from the Kyoto Classical Chinese treebank, with Tang readings from Unicode's Unihan database. No open
 treebank covers Eddic or Old English poetry or runic inscriptions, so Hávamál, Beowulf and the
 runes are hand-annotated and marked draft (see CLAUDE.md rule 3). The runic page adds a script
 row, generated from the transliteration, and a labelled Weft translation where no public-domain
-modern one exists.
+modern one exists. The Rigveda page reads the accent strokes of the Devanagari back into pitch
+accents, checks them against the transliteration, and computes the gāyatrī metre.
 
 `weft build` also writes `site/build/index.html`, a library page listing every built work.
 Glosses, scansion, treebank corrections and editorial notes are drafts awaiting scholarly

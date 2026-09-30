@@ -1,0 +1,28 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+counts:
+  lines: 18
+  tokens: 86
+failures:
+  accent-mismatch: 1
+samples:
+  accent-mismatch:
+  - '9.1 syllable 8 (sūnáve): strokes say U, written -'
+failure_rate:
+  accent-mismatch: 0.012
+shift_left: []
+predicted_gaps:
+- the Wikisource page does not name the printed edition it was typed from
+- some pādas count seven syllables as written; the Rigveda often sounds a syllable the written form lost (ī́ḍyo as ī́ḍiyo, adhvarā́ṇām as adhvarā́ṇaam). The metre row shows the written count
+- Vedic pronunciation around 1200 BC is reconstructed from the ancient phonetic treatises, which are several centuries later
+- treebank words are unaccented and in their pre-sandhi forms; the accent comes from the edition

@@ -1,0 +1,67 @@
+work: aristotle-metaphysics
+title: Metaphysics
+author: Aristotle
+language: grc
+prefix: met
+urn: urn:cts:greekLit:tlg0086.tlg025
+unit: section
+section_noun: passage
+written:
+  year: -340
+  label: Aristotle's lectures, about 350–322 BC, gathered as the Metaphysics after his death
+status: phase-0
+pilot:
+  sections:
+  - 980a
+edition:
+  id: perseus-grc2
+  name: Perseus perseus-grc2 (Ross 1924), passage in a Weft edition file
+  format: weft-edition
+  file: edition.yaml
+  license: CC BY-SA 4.0
+treebank:
+  id: glaux
+  name: 'GLAUx, the Greek Language Automated corpus (Keersmaekers), Metaphysics: automatic parse, not hand-checked'
+  format: glaux
+  subdocs:
+  - 1.980a
+  file: sources/glaux-0086-025.xml
+  url: https://raw.githubusercontent.com/perseids-publications/glaux-trees/12606b3426f1e5245413f3a8e1c5e0b22348a13c/public/xml/0086-025.xml
+  sha256: 2bc3a67d84169c487bba1d00501749ad7d2b0316936725c5f97c0cdd69ace48f
+  license: CC BY-SA 4.0
+  license_url: https://github.com/perseids-publications/glaux-trees/blob/master/TREEBANK_LICENSE
+schemes:
+- restored
+- erasmian
+quantities: pipeline/weft/data/grc_quantities.yaml
+sources_extra:
+- id: perseus-grc2
+  name: Perseus canonical-greekLit TEI edition
+  file: sources/perseus-grc2.xml
+  url: https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/bcc5df0602f3b3fe6fefe1e1d575602a25ab1db6/data/tlg0086/tlg025/tlg0086.tlg025.perseus-grc2.xml
+  sha256: d643d407fae3e39884c31a1c38d5a386fa8ed7ceeb3e14f98231ea2c4f9c8050
+  license: CC BY-SA 4.0
+  license_url: https://github.com/PerseusDL/canonical-greekLit#license
+translations:
+- id: taylor1801
+  translator: Thomas Taylor
+  year: 1801
+  form: prose, The Metaphysics of Aristotle
+  license: public-domain
+  license_url: https://archive.org/details/metaphysicsofari00aris
+  file: sources/taylor1801.txt
+  url: https://archive.org/download/metaphysicsofari00aris/metaphysicsofari00aris_djvu.txt
+  sha256: 9df539211b000249855c9fe7a2ed4a8ce9e2b0fff28e1a7cde232a8767207ffe
+- id: mcmahon1857
+  translator: John H. M'Mahon
+  year: 1857
+  form: prose, Bohn's Classical Library
+  license: public-domain
+  license_url: https://archive.org/details/metaphysicsaris00arisgoog
+  file: sources/mcmahon1857.txt
+  url: https://archive.org/download/metaphysicsaris00arisgoog/metaphysicsaris00arisgoog_djvu.txt
+  sha256: 4708fc854f11b5fba0b04e7257d2262d702fdb1e43e22ba81c245fcdc3d2081a
+predicted_gaps:
+- lemma and morphology are an automatic parse (GLAUx), not hand-checked; expect some errors
+- long a/i/u not marked in the spelling; the quantity table covers only the words it lists
+- both translations are read from OCR of the scans and checked against them by hand
