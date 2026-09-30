@@ -1,0 +1,19 @@
+run:
+  weft: 0.1.0
+  sections:
+  - descartes
+  - newton-1
+  - newton-2
+  - newton-3
+counts:
+  lines: 10
+  tokens: 91
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank: lemma and morphology hand-annotated (Lewis and Short), draft'
+- the national pronunciations (English method, French method) are reconstructions from contemporary grammars; approximate
+- Newton's Latin is the 1687 first edition; the 1713 and 1726 editions revised parts of the text
+- Newton's printed & and æ are kept on the page; the sound reads them as et and ae

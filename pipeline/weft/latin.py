@@ -257,7 +257,9 @@ def apply_quantity(word: str, table: dict[str, str]) -> tuple[str, bool]:
     return word, False
 
 
-def phonemize(word: str, scheme: str, quantities: dict[str, str] | None = None, **_) -> dict:
+def phonemize(word: str, scheme: str, quantities: dict[str, str] | None = None, dialect: str | None = None, **_) -> dict:
+    if scheme == "as-first-read":
+        return national(word, dialect or "english", quantities)
     w = "".join(ch for ch in word if ch not in PUNCT)
     known = False
     if quantities is not None:
@@ -282,3 +284,141 @@ def phonemize(word: str, scheme: str, quantities: dict[str, str] | None = None, 
     return {"ipa": ipa, "respell": "-".join(spells), "syllables": len(syls), "known": known}
 
 KEY["anglo-latin"] = KEY_ANGLO
+
+
+# ---------------------------------------------------------------- national pronunciations, 1600s
+# "As first read" for early-modern Latin depends on the reader's country. The scheme
+# `as-first-read` takes a `dialect`: english (Newton, Cambridge, 1680s) or french (Descartes,
+# 1640s). Both are reconstructions from contemporary grammars and later accounts (W. S. Allen,
+# Vox Latina, appendix); treat them as approximate.
+
+_ENG_LONG = {"a": ("eɪ", "ay"), "e": ("iː", "ee"), "i": ("aɪ", "eye"), "y": ("aɪ", "eye"),
+             "o": ("oʊ", "oh"), "u": ("juː", "yoo"), "ae": ("iː", "ee"), "oe": ("iː", "ee"), "au": ("ɔː", "aw")}
+_ENG_SHORT = {"a": ("æ", "a"), "e": ("ɛ", "e"), "i": ("ɪ", "i"), "y": ("ɪ", "i"),
+              "o": ("ɒ", "o"), "u": ("ʌ", "u"), "ae": ("iː", "ee"), "oe": ("iː", "ee"), "au": ("ɔː", "aw")}
+_ENG_FINAL = {"a": ("ə", "uh"), "e": ("iː", "ee"), "i": ("aɪ", "eye"), "o": ("oʊ", "oh"), "u": ("juː", "yoo")}
+_FR_V = {"a": ("a", "a"), "e": ("e", "e"), "i": ("i", "ee"), "y": ("i", "ee"), "o": ("o", "o"),
+         "u": ("y", "ü"), "ae": ("e", "e"), "oe": ("e", "e"), "au": ("o", "o")}
+_FR_NASAL = {"a": ("ɑ̃", "an"), "e": ("ɑ̃", "an"), "i": ("ɛ̃", "in"), "o": ("ɔ̃", "on"), "u": ("ɔ̃", "on")}
+
+
+def _national(syls: list[Syl], stress: int, dialect: str) -> list[tuple[str, str]]:
+    """(ipa, respell) per syllable for the English or French method."""
+    flat: list[tuple[int, Seg]] = []
+    for n, s in enumerate(syls):
+        for seg in s.onset + [s.nucleus] + s.coda:
+            flat.append((n, seg))
+    ipa = [""] * len(syls)
+    sp = [""] * len(syls)
+    last = len(syls) - 1
+    for k, (n, seg) in enumerate(flat):
+        nxt = flat[k + 1][1] if k + 1 < len(flat) else None
+        nxt2 = flat[k + 2][1] if k + 2 < len(flat) else None
+        prev = flat[k - 1][1] if k > 0 else None
+        t = seg.text
+        if seg.vowel:
+            syl = syls[n]
+            if dialect == "english":
+                open_ = not syl.coda
+                if n == stress:
+                    antepenult = len(syls) >= 3 and stress == len(syls) - 3
+                    # antepenults shorten (VI-ri-bus), except before a single consonant plus i or e
+                    # and another vowel, which keeps them long (RAY-di-us, kon-TRAY-ri-as)
+                    before_hiatus = (n + 2 < len(syls) and syls[n + 1].nucleus.text in ("i", "e")
+                                     and not syls[n + 1].coda and not syls[n + 2].onset)
+                    shorten = antepenult and t != "u" and not before_hiatus
+                    table = _ENG_LONG if open_ and not shorten else _ENG_SHORT
+                elif n == last and open_:
+                    table = _ENG_FINAL if t in _ENG_FINAL else _ENG_SHORT
+                elif open_ and t == "u":
+                    table = _ENG_LONG                      # u stays yoo in open syllables: mū-TAY-ree
+                else:
+                    table = _ENG_SHORT
+                if n == last and t == "e" and syl.coda and syl.coda[-1].text == "s" and len(syl.coda) == 1:
+                    a, b = ("iː", "ee")                    # final -es = eez: actiones, partes
+                else:
+                    a, b = table.get(t, (t, t))
+                if b == "eye" and sp[n]:
+                    b = "ye"                               # after a consonant: NYE-sye, SEN-dye
+            else:
+                nxt_onset = syls[n + 1].onset[0].text if n + 1 < len(syls) and syls[n + 1].onset else ""
+                nasal = (syl.coda and syl.coda[0].text in ("m", "n") and n != last
+                         and nxt_onset not in ("m", "n"))    # no nasal vowel before another m or n: omnium
+                a, b = _FR_NASAL[t] if nasal and t in _FR_NASAL else _FR_V.get(t, (t, t))
+                if n == last and t == "u" and syl.coda and syl.coda[0].text in ("m", "n"):
+                    a, b = ("ɔ", "o")                      # final -um = om: sum, dominum
+            ipa[n] += a; sp[n] += b
+            continue
+        front = nxt is not None and nxt.vowel and (nxt.text[0] in "eiy" or nxt.text in ("ae", "oe"))
+        if t == "c":
+            a, b = ("s", "s") if front else ("k", "k")
+        elif t == "g":
+            if front:
+                a, b = ("dʒ", "j") if dialect == "english" else ("ʒ", "zh")
+            else:
+                a, b = ("ɡ", "g")
+        elif t == "j":
+            a, b = ("dʒ", "j") if dialect == "english" else ("ʒ", "zh")
+        elif t == "qu":
+            a, b = ("kw", "kw") if dialect == "english" else ("k", "k")
+        elif t == "t" and nxt is not None and nxt.text == "i" and nxt2 is not None and nxt2.vowel and k > 0 \
+                and not (prev is not None and prev.text in ("s", "t", "k")):
+            a, b = ("ʃ", "sh") if dialect == "english" else ("s", "s")
+        elif t == "s" and dialect == "french" and prev is not None and prev.vowel and nxt is not None and nxt.vowel:
+            a, b = ("z", "z")
+        elif t == "s" and dialect == "english" and nxt is None and prev is not None and prev.text == "e" and n == last:
+            a, b = ("z", "z")                              # English method: final -es = eez
+        elif t == "h":
+            a, b = ("h", "h") if dialect == "english" else ("", "")
+        elif t == "ph":
+            a, b = ("f", "f")
+        elif t in ("ch", "th"):
+            a, b = (t[0], t[0])
+        elif t == "k" and dialect == "french" and nxt is not None and nxt.text == "s" and k <= 2 \
+                and flat[0][1].text == "e":
+            a, b = ("ɡ", "g")                              # ex- before a vowel = egz: existere
+        elif t == "s" and dialect == "french" and prev is not None and prev.text == "k" and k <= 3 \
+                and nxt is not None and nxt.vowel and flat[0][1].text == "e":
+            a, b = ("z", "z")
+        elif t in ("m", "n") and dialect == "french" and prev is not None and prev.vowel and seg in syls[n].coda \
+                and n != last and _FR_NASAL.get(prev.text) \
+                and not (n + 1 < len(syls) and syls[n + 1].onset and syls[n + 1].onset[0].text in ("m", "n")):
+            a, b = ("", "")                                # absorbed into the nasal vowel
+        else:
+            a, b = (t, t)
+        ipa[n] += a; sp[n] += b
+    return list(zip(ipa, sp))
+
+
+def national(word: str, dialect: str, quantities: dict[str, str] | None = None) -> dict:
+    w = "".join(ch for ch in word if ch not in PUNCT)
+    known = False
+    if quantities is not None:
+        w, known = apply_quantity(w, quantities)
+    host_len = None
+    if "+" in w:
+        host, enc = w.split("+", 1)
+        host_len = len(syllabify(host))
+        w = host + enc
+    syls = syllabify(w)
+    if not syls:
+        return {"ipa": w, "respell": w, "syllables": 0, "known": known}
+    stress = len(syls) - 1 if dialect == "french" else stress_index(syls, host_len)
+    parts = _national(syls, stress, dialect)
+    one = len(syls) == 1
+    ipa = ".".join(("ˈ" if j == stress and not one else "") + p[0] for j, p in enumerate(parts))
+    resp = "-".join(p[1].upper() if j == stress and not one else p[1] for j, p in enumerate(parts))
+    return {"ipa": ipa, "respell": resp, "syllables": len(syls), "known": known}
+
+
+KEY["as-first-read"] = [
+    ("", "Each author's Latin as read in his own country: Newton's in the English manner of the 1680s, Descartes's in the French manner of the 1640s. Reconstructed from contemporary grammars; approximate."),
+    ("ay, ee, eye, oh, yoo", "English method: a stressed vowel in an open syllable takes its English long value, so statu = STAY-tyoo"),
+    ("sh", "English method: ti before a vowel, as in mutation"),
+    ("ee (final e), eye (final i)", "English method: omne = OM-nee, dirigi = DI-ri-jye"),
+    ("ü", "French method: u as in French tu"),
+    ("an, on, in", "French method: nasal vowels before m or n"),
+    ("zh", "French method: g before e and i, and j, as in measure"),
+    ("CAPS", "stress: Latin position in the English method; always the last syllable in the French method"),
+]
+SCHEME_LABELS["as-first-read"] = "As first read: Newton in the English manner, Descartes in the French (approximate)"

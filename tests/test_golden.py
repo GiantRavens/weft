@@ -264,3 +264,24 @@ def test_anglo_latin_and_magna_carta():
         assert report["failures"] == {}             # includes: every line found verbatim in McKechnie
     r = check.run(REPO, "magna-carta")
     assert r["ok"], r["problems"]
+
+
+def test_national_latin_and_science():
+    q = LQ
+    eng = {"statu": "STAY-tyoo", "mutare": "myoo-TAY-ree", "omne": "OM-nee", "nisi": "NYE-sye",
+           "Mutationem": "myoo-ta-shi-OH-nem", "actiones": "ak-shi-OH-neez", "viribus": "VI-ri-bus",
+           "contrarias": "kon-TRAY-ri-as"}
+    fr = {"Ego": "e-GO", "cogito": "ko-zhee-TO", "sum": "som", "tempore": "tan-po-RE", "omnium": "om-nee-OM"}
+    for w, want in eng.items():
+        assert latin.phonemize(w, "as-first-read", q, dialect="english")["respell"] == want, w
+    for w, want in fr.items():
+        assert latin.phonemize(w, "as-first-read", q, dialect="french")["respell"] == want, w
+    work = REPO / "texts" / "science-latin"
+    if sources_present(work):
+        before = (work / "gen/sections.yaml").read_text()
+        report = draft.run(work)
+        assert (work / "gen/sections.yaml").read_text() == before
+        assert report["counts"] == {"lines": 10, "tokens": 91}
+        assert report["failures"] == {}             # every line verbatim in its own source
+    r = check.run(REPO, "science-latin")
+    assert r["ok"], r["problems"]

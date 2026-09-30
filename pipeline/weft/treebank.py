@@ -39,7 +39,7 @@ UD_VAL = {"Sing": "singular", "Plur": "plural", "Dual": "dual", "Pres": "present
           "Gen": "genitive", "Dat": "dative", "Voc": "vocative", "Cmp": "comparative", "Sup": "superlative",
           "Neg": "negative", "Rel": "relative", "Dem": "demonstrative", "Prs": "personal", "Int": "interrogative",
           "Aor": "aorist", "Imperf": "imperfect", "Perf": "perfect", "Pqp": "pluperfect", "Fut": "future",
-          "Opt": "optative", "Abl": "ablative",
+          "Opt": "optative", "Abl": "ablative", "Ger": "gerund",
           # Biblical Hebrew (OSHB)
           "Qal": "qal stem", "Niphal": "niphal stem", "Piel": "piel stem", "Pual": "pual stem",
           "Hiphil": "hiphil stem", "Hophal": "hophal stem", "Hithpael": "hithpael stem",

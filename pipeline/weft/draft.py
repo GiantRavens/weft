@@ -132,12 +132,17 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         # a line is either plain text (tokenized normally) or explicit tokens (runic inscriptions)
         units = [(str(g["id"]), i, ln if isinstance(ln, str) else " ".join(t["t"] for t in ln["tokens"]))
                  for g in glist for i, ln in enumerate(g["lines"], start=1)]
-        if edition.get("verify_in"):
-            # Weft's edition must reproduce its cited source verbatim, line by line
-            src = " ".join((work_dir / edition["verify_in"]).read_text(encoding="utf-8").split())
-            for gid, i, text in units:
-                if " ".join(text.split()) not in src:
-                    fail("edition-not-in-source", f"{gid}.{i}")
+        # Weft's edition must reproduce its cited source verbatim, line by line; a section may
+        # name its own source (verify_in), otherwise the edition-wide one applies
+        cache: dict[str, str] = {}
+        for gid, i, text in units:
+            vpath = groups[gid].get("verify_in") or edition.get("verify_in")
+            if not vpath:
+                continue
+            if vpath not in cache:
+                cache[vpath] = " ".join((work_dir / vpath).read_text(encoding="utf-8").split())
+            if " ".join(text.split()) not in cache[vpath]:
+                fail("edition-not-in-source", f"{gid}.{i}")
     elif ed_fmt == "stanza-text":
         st = stanza_lines(work_dir / m["edition"]["file"], pilot["stanzas"])
         units = [(k, i, t) for k in pilot["stanzas"] for i, t in enumerate(st.get(k, []), start=1)]

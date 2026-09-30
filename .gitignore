@@ -11,3 +11,6 @@ __pycache__/
 *.wav
 *.mp3
 .DS_Store
+
+# pin moves deleted tasks here; local only
+.trash/

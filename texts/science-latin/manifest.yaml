@@ -1,0 +1,68 @@
+work: science-latin
+title: Science in Latin
+author: Descartes and Newton
+language: lat
+prefix: sci                      # sci.<section>.<line>[.<token>]
+urn: urn:weft:lat:science        # Weft-local identifier
+unit: section
+section_noun: text
+written: {year: 1644, label: "1644 (Descartes) and 1687 (Newton)"}
+status: phase-0
+pilot: {sections: [descartes, newton-1, newton-2, newton-3]}
+edition:
+  id: weft-science
+  name: "Descartes's Latin as on Latin Wikisource (after Adam and Tannery); Newton's first edition of 1687 (Project Gutenberg 28233)"
+  format: weft-edition
+  file: edition.yaml
+  license: texts public domain; Weft line division CC BY-SA 4.0
+treebank: null                   # no treebank covers these texts; hand annotation, draft
+schemes: [as-first-read, classical]   # default: each author's own national manner of reading Latin
+quantities: pipeline/weft/data/lat_quantities.yaml
+sources_extra:
+  - id: descartes1644-la
+    name: Descartes, Principia philosophiae, Latin Wikisource revision 130858
+    file: sources/descartes1644-la.txt
+    url: "https://la.wikisource.org/w/index.php?title=Principia_philosophiae&oldid=130858&action=raw"
+    sha256: 73d305def3e4348238b68ba14f3cbf06c3fb5c22338c0145c964d47df03dc4f9
+    license: public domain (text); Wikisource CC BY-SA 4.0
+    license_url: https://la.wikisource.org/wiki/Principia_philosophiae
+  - id: newton1687
+    name: Newton, Philosophiae Naturalis Principia Mathematica (1687), Project Gutenberg 28233
+    file: sources/newton1687.txt
+    url: https://www.gutenberg.org/cache/epub/28233/pg28233.txt
+    sha256: a734045637deef5f22ce71d469deb44b19f73583d9576a9646db8dd3431b30ab
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+  - id: motte1729-p64
+    name: Motte's translation, 1729, scan page 64 (Law III), Wikisource revision 13168365
+    file: sources/motte1729-p64.txt
+    url: "https://en.wikisource.org/w/index.php?title=Page:The_Mathematical_Principles_of_Natural_Philosophy_-_1729_-_Volume_1.djvu/64&oldid=13168365&action=raw"
+    sha256: 3fc32566d9efb16fa575b8af131c65f4347b688ab4518e3f28c2a73a27797c2b
+    license: public domain (text); Wikisource CC BY-SA 4.0
+    license_url: https://en.wikisource.org/wiki/The_Mathematical_Principles_of_Natural_Philosophy_(1729)
+translations:
+  - id: veitch1853
+    translator: John Veitch
+    year: 1853
+    form: prose
+    partial: "Descartes only"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/veitch1853.txt
+    url: https://www.gutenberg.org/cache/epub/4391/pg4391.txt
+    sha256: 562a81e0587f5d1ca706c116b01e9e24da5f6b2d15dbf69322df0f7816a79b1c
+  - id: motte1729
+    translator: Andrew Motte
+    year: 1729
+    form: prose, with the long s of the 1729 printing
+    partial: "Newton only"
+    license: public domain (text); Wikisource CC BY-SA 4.0
+    license_url: https://en.wikisource.org/wiki/The_Mathematical_Principles_of_Natural_Philosophy_(1729)
+    file: sources/motte1729-p63.txt
+    url: "https://en.wikisource.org/w/index.php?title=Page:The_Mathematical_Principles_of_Natural_Philosophy_-_1729_-_Volume_1.djvu/63&oldid=13537282&action=raw"
+    sha256: 79f003bd9a203dccce13103b7306339e317091f52ca3d879588af2e26cba8dfd
+predicted_gaps:
+  - "no treebank: lemma and morphology hand-annotated (Lewis and Short), draft"
+  - "the national pronunciations (English method, French method) are reconstructions from contemporary grammars; approximate"
+  - "Newton's Latin is the 1687 first edition; the 1713 and 1726 editions revised parts of the text"
+  - "Newton's printed & and æ are kept on the page; the sound reads them as et and ae"

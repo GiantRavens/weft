@@ -5,6 +5,7 @@ language: lat
 prefix: mc                       # mc.<chapter>.<line>[.<token>]
 urn: urn:weft:lat:magna-carta-1215   # Weft-local identifier
 unit: section
+section_noun: chapter
 written: {year: 1215, label: "sealed at Runnymede, 15 June 1215"}
 status: phase-0
 pilot: {sections: ["39", "40"]}

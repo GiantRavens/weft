@@ -77,7 +77,9 @@
   $("#work-byline").textContent = D.work.unit === "inscription"
     ? `${D.work.author} · ${new Set(D.lines.map((l) => l.stanza)).size} inscriptions`
     : D.work.unit === "section"
-    ? `${D.work.author} · chapters ${[...new Set(D.lines.map((l) => l.stanza))].join(", ")}`
+    ? (D.work.section_noun === "chapter"
+        ? `${D.work.author} · chapters ${[...new Set(D.lines.map((l) => l.stanza))].join(", ")}`
+        : `${D.work.author} · ${new Set(D.lines.map((l) => l.stanza)).size} ${D.work.section_noun || "section"}s`)
     : STANZAS
     ? `${D.work.author} · stanzas ${[...new Set(D.lines.map((l) => l.stanza))].join(", ")}`
     : `${D.work.author} · ${shortRef(first.id)}–${lineNo(last.id)}`;

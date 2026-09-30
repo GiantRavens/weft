@@ -84,7 +84,7 @@ def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
                 t["surface_plain"] = strip_cantillation(t["surface"])
 
     return {
-        "work": dict({k: m.get(k) for k in ("work", "title", "author", "language", "urn", "unit")},
+        "work": dict({k: m.get(k) for k in ("work", "title", "author", "language", "urn", "unit", "section_noun")},
                      lang_html=HTML_LANG.get(m["language"], m["language"]),
                      dir="rtl" if m["language"] in RTL else "ltr",
                      lang_name=LANG_NAMES.get(m["language"], m["language"])),
@@ -183,7 +183,8 @@ def write_index(repo: Path, out_dir: Path) -> Path:
         written = (m.get("written") or {}).get("label", "")
         pl = m.get("pilot", {})
         if pl.get("sections"):
-            span = "chapters " + ", ".join(pl["sections"])
+            noun = m.get("section_noun", "section")
+            span = (f"{noun}s " + ", ".join(pl["sections"])) if noun == "chapter" else f"{len(pl['sections'])} {noun}s"
         elif pl.get("inscriptions"):
             span = f"{len(pl['inscriptions'])} inscriptions"
         elif pl.get("stanzas"):
