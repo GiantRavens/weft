@@ -30,9 +30,34 @@
   attach: il.1.5.6
   kind: editorial
   status: draft
-  text: "ἐτελείετο is imperfect, 'was being accomplished': the plan of Zeus works itself out over the whole poem, not in one act."
+  leans_on: "G. S. Kirk, The Iliad: A Commentary, vol. 1 (1985), on 1.5"
+  text: "ἐτελείετο is imperfect, 'was being accomplished': the plan of Zeus works itself out over the whole poem, not in one act. What the plan is, the proem does not say. Kirk, following the ancient scholar Aristarchus, takes it to be the promise Zeus makes to Thetis later in this book (1.524-30), to honour her son Achilles by letting the Trojans prevail for a time. A post-Homeric epic, the Cypria, gave the same phrase another meaning: Zeus's plan to relieve the overburdened earth by thinning its people through war."
 - id: n.il.1.6.dual
   attach: il.1.6.6
   kind: editorial
   status: draft
   text: "διαστήτην and ἐρίσαντε are dual forms. Greek had a separate grammatical number for pairs, and Homer uses it here for the two men, Agamemnon and Achilles. The gloss marks it as 'the-two'."
+- id: n.il.1.1.proem
+  attach: il.1.1
+  kind: editorial
+  status: draft
+  leans_on: "G. S. Kirk, The Iliad: A Commentary, vol. 1 (1985), on 1.1-7"
+  text: "The opening follows the convention of epic: an appeal to the Muse, then a statement of the theme. The ancient text was not fixed. Kirk records that the bibliophile Apellicon owned a copy that began with a single different verse, and that Aristoxenus knew a three-verse opening in place of the first nine. Kirk judges these to be clumsy condensations, and calls the proem as we have it 'typically Homeric in its forceful conciseness'."
+- id: n.il.1.1.first-word
+  attach: il.1.1.1
+  kind: editorial
+  status: draft
+  leans_on: "Emily Wilson, The Iliad (2023), translator's note; Robert Fagles, The Iliad (1990)"
+  text: "English translators have taken the first word in different ways. Lang, Leaf and Myers (1883) write 'the wrath', Butler (1898) 'the anger'. Robert Fagles (1990) keeps the word first, as Homer does: 'Rage—Goddess, sing the rage of Peleus' son Achilles'. Emily Wilson (2023) begins 'Goddess, sing of the cataclysmic wrath'. In her translator's note she explains that she chose the four-syllable 'cataclysmic' to answer the four-syllable οὐλομένην, which Homer places at the start of line 2."
+- id: n.il.1.2.runover
+  attach: il.1.2.1
+  kind: editorial
+  status: draft
+  leans_on: "G. S. Kirk, The Iliad: A Commentary, vol. 1 (1985), on 1.2, citing Walter Leaf (1900)"
+  text: "οὐλομένην completes the sense of line 1 but stands at the start of line 2, and the rest of line 2 grows out of it: 'ruinous, which set countless pains on the Achaeans'. Kirk calls it an emphatic runover word, a habit of Homer's cumulative style that recurs in lines 3 and 4. Leaf's commentary rendered it 'accursed'."
+- id: n.il.1.6.ex-hou
+  attach: il.1.6.2
+  kind: editorial
+  status: draft
+  leans_on: "G. S. Kirk, The Iliad: A Commentary, vol. 1 (1985), on 1.6-7; Emily Wilson, The Iliad (2023)"
+  text: "ἐξ οὗ can be read two ways. As 'from the time when', it dates the start of Zeus's plan. As 'from the point at which', it goes back to 'sing' in line 1 and tells the Muse where to begin: with the quarrel. Kirk prefers the second, against Aristarchus, comparing the Odyssey's singer Demodokos, who takes up his song 'from where' the story starts (Od. 8.500). Emily Wilson's 'starting with the conflict' (2023) takes it the second way. The gloss follows the first reading; the second is at least as likely."

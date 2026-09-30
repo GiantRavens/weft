@@ -16,3 +16,7 @@ The Weft artwork in `art/` (the mark, wordmark, lockup and favicon) is © Skip L
 reserved, pending a decision on its license. The illustrations in `art/works/` are public-domain
 images from Wikimedia Commons; `art/works/credits.yaml` records the source, license and credit for
 each.
+
+Notes may quote short phrases from modern translations and scholarship, attributed in the note and
+named in its `leans_on` field. Those quoted words remain under their owners' copyright and are not
+part of the CC BY-SA license; everything else in the note is Weft's own wording.

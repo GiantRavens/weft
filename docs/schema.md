@@ -112,6 +112,16 @@ than a published one. The page labels editorial translations "editorial, draft" 
   text: "..."
 ```
 
+## Quoting modern scholarship in notes
+
+Notes retell a scholar's argument in Weft's own words and name the source in `leans_on` (author,
+title, year, and the line or page). Verbatim words from a work still in copyright are kept to a
+short phrase, about fifteen words at most, used only where the wording itself matters (a
+translator's rendering, a scholar's key judgement), set in quotation marks with the author named in
+the sentence. No note quotes more than two such sources. Longer copyrighted material goes in
+`private/` and is never published. Public-domain scholarship (Leaf, Monro, Jebb, Bellows's notes)
+may be quoted at length as `kind: quoted`.
+
 ## Conventions for the gloss layer
 
 - One source word, one cell. English that needs several words is hyphenated: `of-many-turns`.
