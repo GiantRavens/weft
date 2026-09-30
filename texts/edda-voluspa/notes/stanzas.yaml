@@ -1,0 +1,67 @@
+# Notes for Völuspá. Editorial notes are drafts until a reviewer lifts them.
+- id: n.vsp.frame
+  attach: vsp.1.1
+  kind: editorial
+  status: draft
+  leans_on: "Ursula Dronke, The Poetic Edda, vol. II: Mythological Poems (1997), introduction to Vǫluspá"
+  text: "The speaker is a vǫlva, a seeress. She asks for silence from all the 'holy kindred', the sons of Heimdall, meaning humankind, and addresses Odin as Valföðr, 'father of the slain'. She then tells the history of the world from before its making to its destruction and its rising again. The poem survives in two manuscripts, the Codex Regius (about 1270) and Hauksbók (early 1300s), which differ in the order and number of stanzas; Snorri Sturluson also quotes it in his Prose Edda."
+- id: n.vsp.edition
+  attach: vsp.1.1.1
+  kind: editorial
+  status: draft
+  text: "This text is Guðni Jónsson's normalized edition, which draws on both manuscripts: stanza 65, for example, is found only in Hauksbók. Its stanza order and numbering differ in places from Bellows (1923) and Thorpe (1866), who followed other editions, so each translation stanza is matched to this text by content, and a translation may have no counterpart for a repeated refrain."
+- id: n.vsp.person
+  attach: vsp.28.1
+  kind: editorial
+  status: draft
+  text: "The seeress speaks of herself both as 'I' (ek) and as 'she' (hon): 'Ein sat hon úti', 'she sat out alone', but in the next lines 'Allt veit ek, Óðinn', 'I know everything, Odin'. The shift is in the manuscripts and runs through the poem. Bellows regularizes it to the first person throughout; the gloss row keeps the pronoun the text has."
+- id: n.vsp.ginnungagap
+  attach: vsp.3.7
+  kind: editorial
+  status: draft
+  text: "gap var ginnunga, 'there was a gap of ginnungar', is the void before creation, called Ginnungagap in Snorri's Prose Edda. The meaning of ginnunga is uncertain; it is usually connected with ginn-, found in words for deception and for great or sacred power, and translated 'yawning' by convention."
+- id: n.vsp.dwarfs
+  attach: vsp.11.1
+  kind: editorial
+  status: draft
+  text: "Stanzas 10 to 16 list the names of dwarfs. The catalogue is often thought to be a later addition to the poem, and the edition marks it off with rules. J. R. R. Tolkien took most of the dwarf names in The Hobbit (1937) from this list, among them Durin, Thorin, Fili, Kili, Bifur, Bofur, Bombur, Nori, Oin and Gloin, and also the name Gandalf."
+- id: n.vsp.yggdrasil
+  attach: vsp.19.1
+  kind: editorial
+  status: draft
+  text: "The world tree is an ash, askr, named Yggdrasill. Yggr, 'the terrible one', is a name of Odin, and drasill a word for horse, so the name is usually read as 'Odin's horse', which is taken to mean the gallows on which Odin hung, as told in Hávamál 138."
+- id: n.vsp.norns
+  attach: vsp.20.5
+  kind: editorial
+  status: draft
+  text: "The three maidens are the Norns. Urðr and Verðandi are formed from verða, 'to become': Urðr from its past, 'what came to be', and Verðandi from its present participle, 'becoming'. Skuld is from skulu, 'shall, must', with the sense of what is owed. The names are often rendered Past, Present and Future, though the words themselves are about becoming and obligation."
+- id: n.vsp.refrain
+  attach: vsp.27.8
+  kind: editorial
+  status: draft
+  text: "Vituð ér enn, eða hvat? 'Do you know yet, or what?' The seeress repeats this challenge to her hearers through the second half of the poem. Other refrains mark its structure too: 'Þá gengu regin öll á rökstóla', 'then all the powers went to their judgement seats', and, as the end approaches, 'Geyr nú Garmr mjök', 'Garm bays loudly now'."
+- id: n.vsp.baldr
+  attach: vsp.31.1
+  kind: editorial
+  status: draft
+  text: "The death of Baldr, Odin's son, killed by a shoot of mistletoe (mistilteinn) at Loki's contriving, is the turning point of the poem: after it the stanzas move toward the end of the world. The fuller story is told in Snorri's Prose Edda."
+- id: n.vsp.axe-age
+  attach: vsp.45.7
+  kind: editorial
+  status: draft
+  text: "skeggöld, skalmöld, vindöld, vargöld: 'axe-age, sword-age, wind-age, wolf-age'. Each compound joins a noun to öld, 'age'. The first element of skeggöld is skeggja, a kind of axe, not skegg, 'beard'."
+- id: n.vsp.renewal
+  attach: vsp.59.1
+  kind: editorial
+  status: draft
+  text: "After the destruction the seeress sees the earth rise a second time from the sea, green again. The surviving gods meet on Iðavöllr, where they met at the beginning (stanza 7), and find in the grass the golden gaming pieces they had played with before the world went wrong."
+- id: n.vsp.mighty-one
+  attach: vsp.65.1
+  kind: editorial
+  status: draft
+  text: "This stanza is found only in Hauksbók. 'The mighty one comes to the judgement of the powers, strong, from above, he who rules all.' Many readers take him to be Christ, and date the poem near the conversion of Iceland around the year 1000; others read him as a pagan figure. The text does not name him."
+- id: n.vsp.end
+  attach: vsp.66.8
+  kind: editorial
+  status: draft
+  text: "Nú mun hon sökkvask, 'now she will sink': the seeress ends her vision and sinks down, while the dark dragon Níðhöggr flies up carrying corpses in its feathers. The poem closes on this image rather than on the renewed world of the stanzas before."

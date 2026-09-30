@@ -76,7 +76,7 @@ server, so a page or the whole folder can be sent as an attachment.
 
 ## Status
 
-Seventeen works built across nine languages, oldest first in the library:
+Eighteen works built across nine languages, oldest first in the library:
 
 | Work | Passage | Schemes | Translations |
 |---|---|---|---|
@@ -89,6 +89,7 @@ Seventeen works built across nine languages, oldest first in the library:
 | Ovid, Metamorphoses | 1.1-9 | classical, ecclesiastical | Golding 1567, More 1922 |
 | Epictetus, Enchiridion | 1.1-3 | Koine, restored, Erasmian | Long 1877, Higginson 1865 |
 | Marcus Aurelius, Meditations | 2.1 | Koine, restored, Erasmian | Long 1862, Casaubon 1634 |
+| Völuspá (Poetic Edda) | complete, stanzas 1-66 | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
 | Hávamál (Poetic Edda) | stanzas 1, 76, 77 | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
 | Li Bai, Quiet Night Thought | 4 lines | Tang, Mandarin, Cantonese | Cranmer-Byng 1909 |
 | Runic inscriptions: Kylver, Gallehus, Rök | 3 inscriptions | Proto-Norse, Old East Norse | Stephens 1884; Weft editorial reading |
@@ -99,7 +100,7 @@ Seventeen works built across nine languages, oldest first in the library:
 | Grettis saga | chapter 14, sentences 1-9 | modern Icelandic, Old Norse | Morris and Magnússon 1869, Hight 1914 |
 
 Homer, Ovid, John, Grettis saga and the Rigveda take lemma and grammar from treebanks (AGDT, LDT, MorphGNT, IcePaHC, the Vedic Treebank); Aristotle, Epictetus and Marcus Aurelius from GLAUx, an automatic parse, corrected by hand where it errs; Genesis from the Open Scriptures Hebrew Bible; Li Bai from the Kyoto Classical Chinese treebank, with Tang readings from Unicode's Unihan database. No open
-treebank covers Eddic or Old English poetry or runic inscriptions, so Hávamál, Beowulf and the
+treebank covers Eddic or Old English poetry or runic inscriptions, so Hávamál, the complete Völuspá, Beowulf and the
 runes are hand-annotated and marked draft (see CLAUDE.md rule 3). The runic page adds a script
 row, generated from the transliteration, and a labelled Weft translation where no public-domain
 modern one exists. The Rigveda page reads the accent strokes of the Devanagari back into pitch

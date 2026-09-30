@@ -217,6 +217,17 @@ def run(repo: Path, work: str, private: bool = False) -> Path:
 
 
 
+def stanza_ranges(xs: list) -> str:
+    """1, 2, 3, 76, 77 -> '1–3, 76–77'."""
+    out: list[list] = []
+    for x in xs:
+        if out and isinstance(x, int) and x == out[-1][1] + 1:
+            out[-1][1] = x
+        else:
+            out.append([x, x])
+    return ", ".join(str(a) if a == b else f"{a}–{b}" for a, b in out)
+
+
 def write_index(repo: Path, out_dir: Path) -> Path:
     """A plain front door listing every built work in out_dir."""
     import html as H
@@ -234,7 +245,7 @@ def write_index(repo: Path, out_dir: Path) -> Path:
         elif pl.get("inscriptions"):
             span = f"{len(pl['inscriptions'])} inscriptions"
         elif pl.get("stanzas"):
-            span = "stanzas " + ", ".join(str(x) for x in pl["stanzas"])
+            span = "stanzas " + stanza_ranges(pl["stanzas"])
         else:
             span = (f"{pl.get('book')}.{pl.get('first')}–{pl.get('last')}" if pl.get("book")
                     else f"chapter {pl['chapter']}, {m.get('unit', 'line')}s {pl.get('first')}–{pl.get('last')}" if pl.get("chapter")

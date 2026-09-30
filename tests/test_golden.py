@@ -319,3 +319,11 @@ def test_sanskrit_accent_strokes_decode():
     assert S.metre(words, [3]) == ("—◡——◡—◡—|——◡—◡—◡×", [8, 8])
     assert S.phonemize("agním")["respell"] == "uhg-NIM"
     assert S.strip_accents("yaśásaṃ") == "yaśasaṃ"      # ś survives accent stripping
+
+
+def test_voluspa_complete_and_annotated():
+    """The whole Völuspá: 66 stanzas, every token hand-annotated (no treebank), every line scanned."""
+    r = check.run(REPO, "edda-voluspa")
+    assert r["ok"], r["problems"]
+    g = yaml.safe_load((REPO / "texts/edda-voluspa/gen/stanzas.yaml").read_text())
+    assert len({l["id"].split(".")[1] for l in g["lines"]}) == 66

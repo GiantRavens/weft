@@ -19,8 +19,8 @@ TEI = "{http://www.tei-c.org/ns/1.0}"
 INDECLINABLE = set("dcgriebz")   # b: GLAUx coordinating conjunction
 PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebrew, "lzh": chinese, "runic": runic, "ja": japanese, "san": sanskrit}
 NORMALIZE = {"heyne-to-macron": oldenglish.heyne_to_macron}
-LEAD = re.compile(r"^([(\[“]+)")
-TRAIL = re.compile(r"([,.·;:!?)\]”\u0387\u037e]+)$")
+LEAD = re.compile(r"^([(\[“]+|[-–—]\u00a0)")
+TRAIL = re.compile(r"((?:[,.·;:!?)\]”\u0387\u037e]|\u00a0[-–—])+)$")
 
 
 def load_manifest(work_dir: Path) -> dict:
@@ -241,6 +241,18 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         text = " ".join(text.split())
         token_edition = ed_fmt == "weft-edition" and not isinstance(groups[book]["lines"][n - 1], str)
         raw = [] if (ed_fmt in ("conllu", "morphgnt", "oshb") or token_edition) else text.split()
+        # a dash standing alone (a parenthesis, or the dash after a refrain) is punctuation, not a
+        # word: it joins the word before it, or the word after it at the start of a line
+        merged: list[str] = []
+        for k, t in enumerate(raw):
+            if re.fullmatch(r"[-–—]+[,.;:!?]*", t):
+                if merged:
+                    merged[-1] += "\u00a0" + t
+                elif k + 1 < len(raw):
+                    raw[k + 1] = t + "\u00a0" + raw[k + 1]
+                continue
+            merged.append(t)
+        raw = merged
         surfaces, puncts, leads = [], [], []
         if token_edition:
             g = groups[book]

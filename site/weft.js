@@ -71,6 +71,14 @@
   const UNIT = { verse: "verse", sentence: "sentence" }[D.work.unit] || "line";
   const Unit = UNIT[0].toUpperCase() + UNIT.slice(1);
 
+  const ranges = (xs) => {
+    const out = [];
+    for (const x of xs) {
+      const last = out[out.length - 1];
+      if (last && typeof x === "number" && x === last[1] + 1) last[1] = x; else out.push([x, x]);
+    }
+    return out.map(([a, b]) => (a === b ? `${a}` : `${a}–${b}`)).join(", ");
+  };
   /* ---------- masthead and colophon */
   document.title = `${D.work.title} · Weft`;
   $("#work-title").textContent = D.work.title;
@@ -83,7 +91,7 @@
         : (() => { const n = new Set(D.lines.map((l) => l.stanza)).size, noun = D.work.section_noun || "section";
                    return `${D.work.author} · ${n} ${noun}${n === 1 ? "" : "s"}`; })())
     : STANZAS
-    ? `${D.work.author} · stanzas ${[...new Set(D.lines.map((l) => l.stanza))].join(", ")}`
+    ? `${D.work.author} · stanzas ${ranges([...new Set(D.lines.map((l) => l.stanza))])}`
     : `${D.work.author} · ${shortRef(first.id)}–${lineNo(last.id)}`;
   const anyDraft = D.lines.some((l) => l.curated || l.tokens.some((t) => t.curated && Object.values(t.curated).some((c) => c.status !== "reviewed")));
   $("#colophon").append(

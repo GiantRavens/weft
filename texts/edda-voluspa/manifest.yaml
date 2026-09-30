@@ -1,0 +1,48 @@
+work: edda-voluspa
+title: Völuspá (The Seeress's Prophecy)
+author: Poetic Edda
+language: non
+prefix: vsp                      # vsp.<stanza>.<line>[.<token>]
+urn: urn:weft:non:edda.voluspa   # no CTS URN exists for the Edda; Weft-local identifier
+unit: stanza-line
+written: {year: 1000, label: "composed about 1000, near the conversion of Iceland to Christianity; written down about 1270 in the Codex Regius"}
+status: phase-0
+pilot: {stanzas: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66]}
+edition:
+  id: jonsson-heimskringla
+  name: Guðni Jónsson's normalized text, via heimskringla.no and the CLTK Old Norse corpus
+  format: stanza-text
+  file: sources/voluspa.txt
+  url: https://raw.githubusercontent.com/cltk/old_norse_texts_heimskringla/master/S%C3%A6mundar-Edda/V%C3%B6lusp%C3%A1/txt_files/complete.txt
+  sha256: 9c7b125b1b5d8890a20c849becf99c602a85ae9db9f38af8a6bbff17b89696fd
+  license: poem public domain; normalized text credited to Guðni Jónsson and heimskringla.no
+  license_url: http://heimskringla.no/wiki/Heimskringla.no:Copyright
+treebank: null                   # none exists for Eddic poetry; lemma and morph are hand-annotated in curated/
+schemes: [old-norse, modern-icelandic]   # see pipeline/weft/norse.py
+translations:
+  - id: bellows1923
+    translator: Henry Adams Bellows
+    year: 1923
+    form: alliterative verse
+    partial: "no counterpart for edition stanzas 34 (Bellows gives the Váli lines only in a note) and 54 (he prints the Garm refrain three times, not four)"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/bellows1923.txt
+    url: https://www.gutenberg.org/cache/epub/73533/pg73533.txt
+    sha256: be983f2e4f2f97a57bb72095354eb9574bb656d185f16ce460efc7da2574438b
+  - id: thorpe1866
+    translator: Benjamin Thorpe
+    year: 1866
+    form: prose
+    partial: "no counterpart for edition stanzas 33 (his stanza 37 omits the Váli lines), 49, 54 and 58 (he prints the Garm refrain once)"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/thorpe1866.txt
+    url: https://www.gutenberg.org/cache/epub/14726/pg14726.txt
+    sha256: ef59192fd7f1f94011765f6becb108b32ed18fdbf906a6dec180f490a54778f9
+predicted_gaps:
+  - "no treebank: every lemma and parse is hand-annotated (Zoëga as reference) and stays draft until reviewed"
+  - "Bellows and Thorpe order and number some stanzas differently from this edition; spans are aligned by content"
+  - "metre is fornyrðislag: the metre layer records half-line roles and staves, not feet"
+  - "the edition's ö covers both old ǫ and ø; read as ǫ by default"
+  - "the dwarf catalogue (stanzas 10-16) is mostly names; their glosses give meanings only where the name is transparent"
