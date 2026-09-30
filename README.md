@@ -76,7 +76,7 @@ server, so a page or the whole folder can be sent as an attachment.
 
 ## Status
 
-Eleven works built across seven languages, oldest first in the library:
+Twelve works built across eight languages, oldest first in the library:
 
 | Work | Passage | Schemes | Translations |
 |---|---|---|---|
@@ -90,6 +90,7 @@ Eleven works built across seven languages, oldest first in the library:
 | Beowulf | 1-11 | late West Saxon | Gummere 1910, Morris and Wyatt 1895 |
 | Magna Carta | chapters 39-40 | Anglo-Latin (England, 1215), classical | McKechnie 1905, Bell 1910 |
 | Science in Latin: Descartes, Newton | cogito (1644); laws of motion (1687) | as first read (French, English manner), classical | Veitch 1853, Motte 1729 |
+| Bashō, The Old Pond | 1 poem, 5-7-5 | Edo 1686, modern | Hearn 1898, Chamberlain 1902 |
 | Grettis saga | chapter 14, sentences 1-9 | modern Icelandic, Old Norse | Morris and Magnússon 1869, Hight 1914 |
 
 Homer, Ovid, John and Grettis saga take lemma and grammar from treebanks (AGDT, LDT, MorphGNT, IcePaHC); Genesis from the Open Scriptures Hebrew Bible; Li Bai from the Kyoto Classical Chinese treebank, with Tang readings from Unicode's Unihan database. No open

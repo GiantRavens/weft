@@ -1,0 +1,51 @@
+work: basho-furuike
+title: The Old Pond (古池や)
+author: Matsuo Bashō (1644–1694)
+language: ja
+prefix: ba                       # ba.1686.<line>[.<token>]
+urn: urn:weft:ja:basho.furuike   # Weft-local identifier
+unit: section
+section_noun: poem
+written: {year: 1686, label: "published 1686, in the anthology Haru no Hi (Spring Days)"}
+status: phase-0
+pilot: {sections: ["1686"]}
+edition:
+  id: otsuka1903
+  name: Ōtsuka Kōzan, ed., Bashō Haiku Zenshū (1903), page 23, via Japanese Wikisource
+  format: weft-edition
+  file: edition.yaml
+  license: public domain; Weft line division CC BY-SA 4.0
+treebank: null                   # hand annotation, draft
+schemes: [edo-1686, modern]      # default = Japanese as spoken in Edo in the 1680s (approximate)
+sources_extra:
+  - id: otsuka1903-p23
+    name: Bashō Haiku Zenshū (1903), scan page 23, Japanese Wikisource revision 171655
+    file: sources/otsuka1903-p23.txt
+    url: "https://ja.wikisource.org/w/index.php?title=Page:Basho_Haiku_Zenshu.djvu/23&oldid=171655&action=raw"
+    sha256: 99dc63fddca44229b52d0d6aa607e4ffdd6057aaf2cac5437ff5903c901430e5
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://ja.wikisource.org/wiki/芭蕉俳句全集
+translations:
+  - id: hearn1898
+    translator: Lafcadio Hearn
+    year: 1898
+    form: prose, in Exotics and Retrospectives
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/hearn1898.txt
+    url: https://www.gutenberg.org/cache/epub/42735/pg42735.txt
+    sha256: 45ac6bd2f1c6ab33722a99c0c21365927304adb6a870399a0f5630e75d9c91c6
+  - id: chamberlain1902
+    translator: Basil Hall Chamberlain
+    year: 1902
+    form: prose, in Bashō and the Japanese Poetical Epigram
+    license: public domain (Public Domain Mark)
+    license_url: https://archive.org/details/basho-and-the-japanses-poetical-epigram
+    file: sources/chamberlain1902.txt
+    url: https://archive.org/download/basho-and-the-japanses-poetical-epigram/87b3b0e22e3c341d29c3f58aa3666d5c_djvu.txt
+    sha256: 8f50bea31d66d956c181eead18d970b0e341365ebb1f59c7d6727bfffa286f95
+predicted_gaps:
+  - "the 1686 first printing writes 蛙飛こむ水のおと; the 1903 edition used here writes 蛙とびこむ水の音"
+  - "Edo pronunciation of the 1680s is reconstructed; the dzu of づ is uncertain by then"
+  - "no treebank; hand annotation, draft"
+  - "Chamberlain's OCR text garbles his romanization; only his translation line, which is clean, is used"

@@ -12,4 +12,7 @@ The source files themselves are **not** in this repository. They belong to their
 under their own licenses, and `weft acquire <work>` shows each license before downloading.
 
 The code under `pipeline/`, `site/` and `tests/` is MIT licensed (see `LICENSE`).
-The artwork under `art/` is © Skip Levens, all rights reserved, pending a decision on its license.
+The Weft artwork in `art/` (the mark, wordmark, lockup and favicon) is © Skip Levens, all rights
+reserved, pending a decision on its license. The illustrations in `art/works/` are public-domain
+images from Wikimedia Commons; `art/works/credits.yaml` records the source, license and credit for
+each.

@@ -15,9 +15,9 @@ import yaml
 from . import __version__, treebank
 from .draft import PHON, load_manifest
 
-HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "lzh": "lzh", "runic": "gmq"}
+HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "lzh": "lzh", "runic": "gmq", "ja": "ja"}
 RTL = {"hbo"}
-LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "lzh": "Classical Chinese", "runic": "Runic Norse"}
+LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "lzh": "Classical Chinese", "runic": "Runic Norse", "ja": "Early modern Japanese"}
 
 
 def _load_yaml_dir(d: Path) -> list[tuple[Path, object]]:
@@ -126,6 +126,49 @@ def load_art(repo: Path) -> dict[str, str]:
     return art
 
 
+AGES = [  # (label, span, first year after the age); years are negative BC, as in manifests
+    ("Antiquity", "to AD 500", 500),
+    ("Early Middle Ages", "500 to 1000", 1000),
+    ("High and Late Middle Ages", "1000 to 1500", 1500),
+    ("Early Modern", "1500 to 1800", 1800),
+    ("Modern", "from 1800", 10**6),
+]
+
+
+def age_of(year) -> tuple[str, str]:
+    """The age a composition date falls in. Undated works go in the last group."""
+    y = 10**6 - 1 if year is None else year
+    for label, span, end in AGES:
+        if y < end:
+            return label, span
+    return AGES[-1][0], AGES[-1][1]
+
+
+def load_illustration(repo: Path, work: str, size: str = "image") -> dict | None:
+    """The work's illustration from art/works/credits.yaml, embedded as a data URI so the page
+    stays one file. size is "image" (frontispiece) or "thumb" (library row)."""
+    import base64
+    cf = repo / "art" / "works" / "credits.yaml"
+    if not cf.exists():
+        return None
+    rec = (yaml.safe_load(cf.read_text(encoding="utf-8")) or {}).get(work)
+    if not rec or not (repo / rec[size]).exists():
+        return None
+    b = (repo / rec[size]).read_bytes()
+    return {**rec, "src": "data:image/jpeg;base64," + base64.b64encode(b).decode()}
+
+
+def frontispiece(ill: dict | None) -> str:
+    import html as H
+    if not ill:
+        return ""
+    credit = ", ".join(x for x in (ill.get("credit"), ill.get("date")) if x and x.lower() != "unknown")
+    return (f'<figure class="frontis"><img src="{ill["src"]}" alt="{H.escape(ill["alt"])}">'
+            f'<figcaption><span class="cap">{H.escape(ill["caption"])}</span>'
+            f'<span class="cred">{H.escape(credit + " · " if credit else "")}{H.escape(ill["license"])} · '
+            f'<a href="{H.escape(ill["source"])}">Wikimedia Commons</a></span></figcaption></figure>')
+
+
 def library_order(repo: Path) -> list[dict]:
     """Every work's manifest, oldest composition first: the library's reading order."""
     ms = [yaml.safe_load(mp.read_text()) for mp in (repo / "texts").glob("*/manifest.yaml")]
@@ -141,7 +184,8 @@ def render(data: dict, site_dir: Path) -> str:
     title = f"{data['work']['title']} · Weft"
     art = data.pop("_art", {})
     tpl = (tpl.replace("{{LOCKUP}}", art.get("weft-lockup", "Weft"))
-              .replace("{{FAVICON}}", art.get("favicon", "")))
+              .replace("{{FAVICON}}", art.get("favicon", ""))
+              .replace("{{FRONTIS}}", frontispiece(data.pop("_illustration", None))))
     return (tpl.replace("{{TITLE}}", title)
                .replace("/*{{CSS}}*/", css)
                .replace("/*{{DATA}}*/", f"window.WEFT = {payload};")
@@ -161,6 +205,7 @@ def run(repo: Path, work: str, private: bool = False) -> Path:
         "next": {"href": f"{order[i+1]}.html", "title": titles[order[i+1]]} if i + 1 < len(order) else None,
     }
     data["_art"] = load_art(repo)
+    data["_illustration"] = load_illustration(repo, work)
     html = render(data, repo / "site")
     out_dir = (repo / "private" / "build") if private else (repo / "site" / "build")
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -175,7 +220,7 @@ def run(repo: Path, work: str, private: bool = False) -> Path:
 def write_index(repo: Path, out_dir: Path) -> Path:
     """A plain front door listing every built work in out_dir."""
     import html as H
-    rows = []
+    rows, age = [], None
     for m in library_order(repo):   # oldest composition first; works without a date go last
         page = out_dir / f"{m['work']}.html"
         if not page.exists():
@@ -184,7 +229,8 @@ def write_index(repo: Path, out_dir: Path) -> Path:
         pl = m.get("pilot", {})
         if pl.get("sections"):
             noun = m.get("section_noun", "section")
-            span = (f"{noun}s " + ", ".join(pl["sections"])) if noun == "chapter" else f"{len(pl['sections'])} {noun}s"
+            k = len(pl["sections"])
+            span = (f"{noun}s " + ", ".join(pl["sections"])) if noun == "chapter" else f"{k} {noun}{'' if k == 1 else 's'}"
         elif pl.get("inscriptions"):
             span = f"{len(pl['inscriptions'])} inscriptions"
         elif pl.get("stanzas"):
@@ -194,11 +240,22 @@ def write_index(repo: Path, out_dir: Path) -> Path:
                     else f"chapter {pl['chapter']}, {m.get('unit', 'line')}s {pl.get('first')}–{pl.get('last')}" if pl.get("chapter")
                     else f"lines {pl.get('first')}–{pl.get('last')}") if pl else ""
         trs = ", ".join(f"{t['translator']} ({t['year']})" for t in m.get("translations", []))
-        rows.append(f'<li><a href="{H.escape(page.name)}"><span class="t">{H.escape(m["title"])}</span>'
+        this_age = age_of((m.get("written") or {}).get("year"))
+        if this_age != age:
+            if age is not None:
+                rows.append("</ul></section>")
+            rows.append(f'<section class="age"><h2>{H.escape(this_age[0])}<span>{H.escape(this_age[1])}</span></h2><ul>')
+            age = this_age
+        ill = load_illustration(repo, m["work"], "thumb")
+        thumb = (f'<a class="th" href="{H.escape(page.name)}" tabindex="-1" aria-hidden="true">'
+                 f'<img src="{ill["src"]}" alt=""></a>') if ill else '<span class="th"></span>'
+        rows.append(f'<li>{thumb}<div class="body"><a href="{H.escape(page.name)}"><span class="t">{H.escape(m["title"])}</span>'
                     f'<span class="a">{H.escape(m["author"])} · {span}</span></a>'
                     + (f'<p class="w">{H.escape(written[:1].upper() + written[1:])}</p>' if written else "")
                     + f'<p>{H.escape(LANG_NAMES.get(m["language"], m["language"]))}{" (reads right to left)" if m["language"] in RTL else ""} · '
-                    f'{H.escape(", ".join(m["schemes"]))} · {H.escape(trs)}</p></li>')
+                    f'{H.escape(", ".join(m["schemes"]))} · {H.escape(trs)}</p></div></li>')
+    if age is not None:
+        rows.append("</ul></section>")
     idx = out_dir / "index.html"
     art = load_art(repo)
     idx.write_text(INDEX.replace("{{ROWS}}", "\n".join(rows))
@@ -219,15 +276,19 @@ INDEX = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Gentium Book Plus",Palatino,serif}
 main{max-width:720px;margin:0 auto;padding:48px 16px}
 .k{font:600 .7rem/1 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0}
-h1{font-size:2.2rem;margin:.3rem 0 .4rem}.lede{color:var(--soft);margin:0 0 2rem;font-size:1.1rem}
-ul{list-style:none;padding:0;margin:0}li{border-top:1px solid var(--rule);padding:18px 0}
-a{color:inherit;text-decoration:none;display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline}
-a:hover .t{color:var(--accent)}.t{font-size:1.6rem;font-weight:700}.a{color:var(--soft)}
+h1{font-size:2.2rem;margin:.3rem 0 .4rem}.lede{color:var(--soft);margin:0 0 .6rem;font-size:1.1rem}
+ul{list-style:none;padding:0;margin:0}li{border-top:1px solid var(--rule);padding:18px 0;display:flex;gap:18px;align-items:flex-start}
+.age{margin:2.4rem 0 0}.age h2{font:600 .75rem/1 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 12px;display:flex;gap:12px;align-items:baseline}
+.age h2 span{letter-spacing:.04em;text-transform:none;font-weight:400;color:var(--soft)}
+.th{flex:0 0 88px;width:88px;height:88px;border-radius:6px;overflow:hidden;background:var(--rule);display:block}
+.th img{width:100%;height:100%;object-fit:cover;display:block}.body{flex:1;min-width:0}
+.body>a{color:inherit;text-decoration:none;display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline}
+@media (max-width:520px){.th{flex-basis:64px;width:64px;height:64px}li{gap:14px}}
+.body>a:hover .t{color:var(--accent)}.t{font-size:1.6rem;font-weight:700}.a{color:var(--soft)}
 li p{margin:6px 0 0;font:.85rem/1.5 Inter,system-ui,sans-serif;color:var(--soft)}
 li p.w{margin-top:4px;font:italic .95rem/1.4 "Gentium Book Plus",Palatino,serif;color:var(--accent)}
 </style></head><body><main><div class="lockup" role="img" aria-label="Weft">{{LOCKUP}}</div><h1>Interlinear library</h1>
 <p class="lede">Classic texts ordered by date: the original text, a phonetic guide to pronouncing it in English, a literal word-for-word translation called a 'gloss', and well-known published translations, together in one evolving, community-led interlinear presentation.</p>
-<ul>
 {{ROWS}}
-</ul></main></body></html>
+</main></body></html>
 """

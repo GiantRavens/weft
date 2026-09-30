@@ -285,3 +285,21 @@ def test_national_latin_and_science():
         assert report["failures"] == {}             # every line verbatim in its own source
     r = check.run(REPO, "science-latin")
     assert r["ok"], r["problems"]
+
+
+def test_japanese_and_basho():
+    from weft import japanese as jp
+    assert jp.phonemize("かはづ", "edo-1686")["respell"] == "ka-wa-dzu"   # medial は = wa; づ = dzu
+    assert jp.phonemize("かはづ", "modern")["respell"] == "ka-wa-zu"
+    assert jp.phonemize("ふるいけ", "modern")["syllables"] == 4           # morae, not syllables
+    work = REPO / "texts" / "basho-furuike"
+    if sources_present(work):
+        before = (work / "gen/sections.yaml").read_text()
+        report = draft.run(work)
+        assert (work / "gen/sections.yaml").read_text() == before
+        assert report["counts"] == {"lines": 3, "tokens": 7}
+        assert report["failures"] == {}
+    g = yaml.safe_load((work / "gen/sections.yaml").read_text())
+    assert [l["metre"] for l in g["lines"]] == ["5 morae", "7 morae", "5 morae"]
+    r = check.run(REPO, "basho-furuike")
+    assert r["ok"], r["problems"]

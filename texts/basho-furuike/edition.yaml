@@ -1,0 +1,13 @@
+# Weft edition of Bashō's frog poem, as printed in Ōtsuka Kōzan's Bashō Haiku Zenshū (1903),
+# checked verbatim against the Wikisource scan page. Weft divides the single printed line into
+# its three 5-7-5 phrases. Each token gives its reading in historical kana (n), from which the
+# sound and the mora count are derived.
+joiner: ""
+verify_in: sources/otsuka1903-p23.txt
+sections:
+  - id: "1686"
+    title: "Bashō, 1686: the old pond"
+    lines:
+      - tokens: [{t: 古池, n: ふるいけ}, {t: や, n: や}]
+      - tokens: [{t: 蛙, n: かはづ}, {t: とびこむ, n: とびこむ}]
+      - tokens: [{t: 水, n: みづ}, {t: の, n: の}, {t: 音, n: おと}]

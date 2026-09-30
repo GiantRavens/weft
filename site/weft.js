@@ -79,7 +79,8 @@
     : D.work.unit === "section"
     ? (D.work.section_noun === "chapter"
         ? `${D.work.author} · chapters ${[...new Set(D.lines.map((l) => l.stanza))].join(", ")}`
-        : `${D.work.author} · ${new Set(D.lines.map((l) => l.stanza)).size} ${D.work.section_noun || "section"}s`)
+        : (() => { const n = new Set(D.lines.map((l) => l.stanza)).size, noun = D.work.section_noun || "section";
+                   return `${D.work.author} · ${n} ${noun}${n === 1 ? "" : "s"}`; })())
     : STANZAS
     ? `${D.work.author} · stanzas ${[...new Set(D.lines.map((l) => l.stanza))].join(", ")}`
     : `${D.work.author} · ${shortRef(first.id)}–${lineNo(last.id)}`;
@@ -176,7 +177,7 @@
       h("dt", { text: "lemma" }), h("dd", { class: "lemma", lang: LANG, text: t.lemma || "—" }),
       h("dt", { text: "form" }), h("dd", { text: t.morph_text || "indeclinable" }),
       ...(t.script ? [h("dt", { text: "runes" }), h("dd", { class: "scr-big", text: t.script })] : []),
-      ...(t.norm ? [h("dt", { text: "normalized" }), h("dd", { text: t.norm })] : []),
+      ...(t.norm ? [h("dt", { text: D.work.language === "ja" ? "reading" : "normalized" }), h("dd", { lang: LANG, text: t.norm })] : []),
       ...(t.enclitic ? [h("dt", { text: "enclitic" }), h("dd", { lang: LANG, text: `${t.enclitic.form} (${t.enclitic.lemma}, 'and'), attached to the end of the word` })] : []),
       ...(t.prefixes || []).flatMap((pf) => [h("dt", { text: "prefix" }),
         h("dd", {}, h("span", { lang: LANG, text: pf.form + " " }), `'${pf.gloss}'${pf.morph_text ? ", " + pf.morph_text : ""}`)]),

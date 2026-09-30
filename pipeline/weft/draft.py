@@ -13,11 +13,11 @@ from pathlib import Path
 
 import yaml
 
-from . import __version__, chinese, greek, hebrew, latin, norse, oldenglish, runic, treebank
+from . import __version__, chinese, greek, hebrew, japanese, latin, norse, oldenglish, runic, treebank
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
 INDECLINABLE = set("dcgrie")
-PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebrew, "lzh": chinese, "runic": runic}
+PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebrew, "lzh": chinese, "runic": runic, "ja": japanese}
 NORMALIZE = {"heyne-to-macron": oldenglish.heyne_to_macron}
 LEAD = re.compile(r"^([(\[“]+)")
 TRAIL = re.compile(r"([,.·;:!?)\]”\u0387\u037e]+)$")
@@ -130,7 +130,9 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         glist = edition.get("inscriptions") or edition.get("sections")
         groups = {str(g["id"]): g for g in glist}
         # a line is either plain text (tokenized normally) or explicit tokens (runic inscriptions)
-        units = [(str(g["id"]), i, ln if isinstance(ln, str) else " ".join(t["t"] for t in ln["tokens"]))
+        # token lines join with the edition's joiner: a space for runes, nothing for Japanese
+        joiner = edition.get("joiner", " ")
+        units = [(str(g["id"]), i, ln if isinstance(ln, str) else joiner.join(t["t"] for t in ln["tokens"]))
                  for g in glist for i, ln in enumerate(g["lines"], start=1)]
         # Weft's edition must reproduce its cited source verbatim, line by line; a section may
         # name its own source (verify_in), otherwise the edition-wide one applies
@@ -271,10 +273,11 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                 tok["caesura"] = True
             if token_edition:
                 et = etoks[i - 1]
-                runes, missing = runic.to_runes(s, g["alphabet"])
-                tok["script"] = runes
-                if missing:
-                    fail("rune-missing", f"{book}.{n} {s} {missing}")
+                if g.get("alphabet"):
+                    runes, missing = runic.to_runes(s, g["alphabet"])
+                    tok["script"] = runes
+                    if missing:
+                        fail("rune-missing", f"{book}.{n} {s} {missing}")
                 if et.get("n"):
                     tok["norm"] = et["n"]
             if lead:
@@ -304,10 +307,14 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             say = tok.get("norm", s)          # runic: sound comes from the normalized form
             if ed_fmt == "weft-edition" and groups[book].get("dialect"):
                 extra["dialect"] = groups[book]["dialect"]
-            for scheme in m["schemes"]:
+            for k_s, scheme in enumerate(m["schemes"]):
                 r = phon.phonemize(say, scheme, quantities, **extra,
                                    **({"silluq": True} if w and w.get("silluq") else {}))
                 snd[scheme] = {"ipa": r["ipa"], "respell": r["respell"]}
+                if k_s == 0:
+                    first_syllables = r.get("syllables", 0)
+            if lang == "ja":
+                tok["morae"] = first_syllables
             tok["sound"] = snd
             if lang == "grc" and qhit:
                 tok["prov"] = {"sound": f"weft.greek {greek.VERSION} + quantity table"}
@@ -334,6 +341,9 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             "text": text,
             "tokens": toks,
         }
+        if lang == "ja" and toks:
+            # Japanese verse counts morae; the first scheme is the as-first-spoken reading
+            line_rec["metre"] = f"{sum(t.get('morae', 0) for t in toks)} morae"
         if lang == "lzh" and toks:
             # regulated verse: level (○) or oblique (●) tone per syllable, and the rhyme of the last
             pattern = "".join("○" if t.get("tone") == "level" else "●" for t in toks)

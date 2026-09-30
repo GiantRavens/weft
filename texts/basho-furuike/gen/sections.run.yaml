@@ -1,0 +1,16 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1686'
+counts:
+  lines: 3
+  tokens: 7
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- the 1686 first printing writes 蛙飛こむ水のおと; the 1903 edition used here writes 蛙とびこむ水の音
+- Edo pronunciation of the 1680s is reconstructed; the dzu of づ is uncertain by then
+- no treebank; hand annotation, draft
+- Chamberlain's OCR text garbles his romanization; only his translation line, which is clean, is used

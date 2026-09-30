@@ -1,0 +1,13 @@
+# Human overlay for Bashō's frog poem. No treebank; lemma and part of speech by hand.
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-29
+  why: pilot; hand annotation
+  status: draft
+  set:
+    ba.1686.1.1: {lemma: "古池", morph: "NOUN", gloss: "old-pond"}   # 古池
+    ba.1686.1.2: {lemma: "や", morph: "PART|PartType=Kireji", gloss: "ah!"}   # や
+    ba.1686.2.1: {lemma: "蛙", morph: "NOUN", gloss: "frog"}   # 蛙
+    ba.1686.2.2: {lemma: "飛び込む", morph: "VERB|Mood=Ind|Tense=Pres", gloss: "jumps-in"}   # とびこむ
+    ba.1686.3.1: {lemma: "水", morph: "NOUN", gloss: "water"}   # 水
+    ba.1686.3.2: {lemma: "の", morph: "ADP", gloss: "'s"}   # の
+    ba.1686.3.3: {lemma: "音", morph: "NOUN", gloss: "sound"}   # 音

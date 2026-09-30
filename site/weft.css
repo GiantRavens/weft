@@ -63,6 +63,13 @@ h1 { margin: 4px 0 0; font-size: 1.5rem; font-weight: 700; line-height: 1.1; }
 .tool:focus-visible, .w:focus-visible, .close:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 /* ---------- the text */
+/* frontispiece: a public-domain image of the artifact or its world, with caption and credit */
+.frontis { max-width: 1120px; margin: 24px auto 0; padding: 0 16px; display: flex; gap: 20px; align-items: flex-start; }
+.frontis img { width: 200px; height: auto; max-height: 260px; object-fit: cover; border-radius: 8px; border: 1px solid var(--rule); flex: 0 0 auto; }
+.frontis figcaption { font: 0.9rem/1.55 var(--serif, inherit); color: var(--ink-soft, var(--ink)); max-width: 62ch; display: flex; flex-direction: column; gap: 8px; }
+.frontis .cred { font: 0.72rem/1.5 var(--sans); color: var(--ink-faint); }
+.frontis .cred a { color: inherit; }
+@media (max-width: 560px) { .frontis { flex-direction: column; } .frontis img { width: 100%; max-height: 220px; } }
 .text { max-width: 1120px; margin: 0 auto; padding: 28px 16px 60px; }
 .lineset {
   display: grid; grid-template-columns: 3.2rem minmax(0, 1fr); column-gap: 0.6rem;
@@ -230,3 +237,7 @@ body.hide-script .scr { display: none; }
 .dir-note strong { color: var(--ink); font-weight: 600; }
 .dir-note .arrow { display: inline-block; margin-right: 8px; color: var(--accent); font-weight: 700; }
 @media print { .dir-note { display: block; } }
+
+/* ---------- Japanese */
+.src[lang="ja"] { font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif; font-size: calc(var(--src-size) * 1.15); }
+.word .big[lang="ja"], .word .lemma[lang="ja"] { font-family: "Noto Serif JP", "Hiragino Mincho ProN", serif; }
