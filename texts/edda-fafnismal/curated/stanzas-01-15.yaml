@@ -1,0 +1,533 @@
+# Human overlay for Fáfnismál, prose p0 to stanza 15. Lemmas follow Zoëga, A Concise Dictionary of Old Icelandic
+# (1910); morphology uses Universal Dependencies features. Staves (stave: true) mark the alliterating words;
+# metre gives each line's role in the ljóðaháttr or fornyrðislag stanza. Prose lines carry no metre.
+- by: Claude (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-01
+  why: hand lemma, morphology, gloss, staves and metre; no treebank exists for Eddic poetry
+  status: draft
+  set:
+    faf.p0.1.1: {lemma: "Sigurðr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Sigurd"}   # Sigurðr
+    faf.p0.1.2: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    faf.p0.1.3: {lemma: "Reginn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Regin"}   # Reginn
+    faf.p0.1.4: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "went"}   # fóru
+    faf.p0.1.5: {lemma: "upp", morph: "ADV", gloss: "up"}   # upp
+    faf.p0.1.6: {lemma: "á", morph: "ADP", gloss: "onto"}   # á
+    faf.p0.1.7: {lemma: "Gnitaheiðr", morph: "PROPN|Case=Acc|Gender=Fem|Number=Sing", gloss: "Gnita-heath"}   # Gnitaheiði
+    faf.p0.1.8: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    faf.p0.1.9: {lemma: "hitta", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "found"}   # hittu
+    faf.p0.1.10: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    faf.p0.1.11: {lemma: "slóð", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "track"}   # slóð
+    faf.p0.1.12: {lemma: "Fáfnir", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Fafnir's"}   # Fáfnis
+    faf.p0.1.13: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    faf.p0.1.14: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    faf.p0.1.15: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    faf.p0.1.16: {lemma: "skríða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "crawled"}   # skreið
+    faf.p0.1.17: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    faf.p0.1.18: {lemma: "vatn", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "water"}   # vatns
+    faf.p0.2.1: {lemma: "þar", morph: "ADV", gloss: "there"}   # Þar
+    faf.p0.2.2: {lemma: "gera", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "made"}   # gerði
+    faf.p0.2.3: {lemma: "Sigurðr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Sigurd"}   # Sigurðr
+    faf.p0.2.4: {lemma: "gröf", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "pit"}   # gröf
+    faf.p0.2.5: {lemma: "mikill", morph: "ADJ|Case=Acc|Gender=Fem|Number=Sing", gloss: "great"}   # mikla
+    faf.p0.2.6: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    faf.p0.2.7: {lemma: "vegr", morph: "NOUN|Case=Dat|Definite=Def|Gender=Masc|Number=Sing", gloss: "the-way"}   # veginum
+    faf.p0.2.8: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    faf.p0.2.9: {lemma: "ganga", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "went"}   # gekk
+    faf.p0.2.10: {lemma: "Sigurðr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Sigurd"}   # Sigurðr
+    faf.p0.2.11: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    faf.p0.2.12: {lemma: "í", morph: "ADV", gloss: "in"}   # í
+    faf.p0.3.1: {lemma: "en", morph: "CCONJ", gloss: "but"}   # En
+    faf.p0.3.2: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    faf.p0.3.3: {lemma: "Fáfnir", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Fafnir"}   # Fáfnir
+    faf.p0.3.4: {lemma: "skríða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "crawled"}   # skreið
+    faf.p0.3.5: {lemma: "af", morph: "ADP", gloss: "off"}   # af
+    faf.p0.3.6: {lemma: "gull", morph: "NOUN|Case=Dat|Definite=Def|Gender=Neut|Number=Sing", gloss: "the-gold"}   # gullinu
+    faf.p0.3.7: {lemma: "blása", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "blew"}   # blés
+    faf.p0.3.8: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    faf.p0.3.9: {lemma: "eitr", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "with-venom"}   # eitri
+    faf.p0.3.10: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    faf.p0.3.11: {lemma: "hrjóta", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spurted"}   # hraut
+    faf.p0.3.12: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing", gloss: "that"}   # þat
+    faf.p0.3.13: {lemma: "fyrir", morph: "ADP", gloss: "over"}   # fyrir
+    faf.p0.3.14: {lemma: "ofan", morph: "ADV", gloss: "above"}   # ofan
+    faf.p0.3.15: {lemma: "höfuð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "head"}   # höfuð
+    faf.p0.3.16: {lemma: "Sigurðr", morph: "PROPN|Case=Dat|Gender=Masc|Number=Sing", gloss: "to-Sigurd"}   # Sigurði
+    faf.p0.4.1: {lemma: "en", morph: "CCONJ", gloss: "but"}   # En
+    faf.p0.4.2: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    faf.p0.4.3: {lemma: "Fáfnir", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Fafnir"}   # Fáfnir
+    faf.p0.4.4: {lemma: "skríða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "crawled"}   # skreið
+    faf.p0.4.5: {lemma: "yfir", morph: "ADP", gloss: "over"}   # yfir
+    faf.p0.4.6: {lemma: "gröf", morph: "NOUN|Case=Acc|Definite=Def|Gender=Fem|Number=Sing", gloss: "the-pit"}   # gröfina
+    faf.p0.4.7: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    faf.p0.4.8: {lemma: "leggja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "thrust"}   # lagði
+    faf.p0.4.9: {lemma: "Sigurðr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Sigurd"}   # Sigurðr
+    faf.p0.4.10: {lemma: "hann", morph: "PRON|Case=Acc|Gender=Masc|Number=Sing|Person=3", gloss: "him"}   # hann
+    faf.p0.4.11: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    faf.p0.4.12: {lemma: "sverð", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "sword"}   # sverði
+    faf.p0.4.13: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    faf.p0.4.14: {lemma: "hjarta", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "heart"}   # hjarta
+    faf.p0.5.1: {lemma: "Fáfnir", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Fafnir"}   # Fáfnir
+    faf.p0.5.2: {lemma: "hrista", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "shook"}   # hristi
+    faf.p0.5.3: {lemma: "sik", morph: "PRON|Case=Acc|Reflex=Yes", gloss: "himself"}   # sik
+    faf.p0.5.4: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    faf.p0.5.5: {lemma: "berja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "beat"}   # barði
+    faf.p0.5.6: {lemma: "höfuð", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "with-head"}   # höfði
+    faf.p0.5.7: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    faf.p0.5.8: {lemma: "sporðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "with-tail"}   # sporði
+    faf.p0.6.1: {lemma: "Sigurðr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Sigurd"}   # Sigurðr
+    faf.p0.6.2: {lemma: "hlaupa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "leapt"}   # hljóp
+    faf.p0.6.3: {lemma: "ór", morph: "ADP", gloss: "out-of"}   # ór
+    faf.p0.6.4: {lemma: "gröf", morph: "NOUN|Case=Dat|Definite=Def|Gender=Fem|Number=Sing", gloss: "the-pit"}   # gröfinni
+    faf.p0.6.5: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    faf.p0.6.6: {lemma: "sjá", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "saw"}   # sá
+    faf.p0.6.7: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    faf.p0.6.8: {lemma: "hvárr", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing", gloss: "each-of-two"}   # hvárr
+    faf.p0.6.9: {lemma: "annarr", morph: "PRON|Case=Acc|Gender=Masc|Number=Sing", gloss: "other"}   # annan
+    faf.p0.7.1: {lemma: "Fáfnir", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Fafnir"}   # Fáfnir
+    faf.p0.7.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "said"}   # kvað
+    faf.1.1: {metre: "long line, a-verse · staves s"}
+    faf.1.1.1: {lemma: "sveinn", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "boy", stave: true}   # Sveinn
+    faf.1.1.2: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    faf.1.1.3: {lemma: "sveinn", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "boy", stave: true}   # sveinn
+    faf.1.2: {metre: "long line, b-verse · stave s · irregular (overlong)"}
+    faf.1.2.1: {lemma: "hverr", morph: "PRON|Case=Dat|Gender=Masc|Number=Sing", gloss: "to-whom"}   # hverjum
+    faf.1.2.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "are-you"}   # ertu
+    faf.1.2.3: {lemma: "sveinn", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "boy", stave: true}   # svein
+    faf.1.2.4: {lemma: "of", morph: "PART", gloss: "(particle)"}   # of
+    faf.1.2.5: {lemma: "bera", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "born"}   # borinn
+    faf.1.3: {metre: "full line · staves m"}
+    faf.1.3.1: {lemma: "hverr", morph: "PRON|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-which"}   # Hverra
+    faf.1.3.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "are-you"}   # ertu
+    faf.1.3.3: {lemma: "maðr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-men", stave: true}   # manna
+    faf.1.3.4: {lemma: "mögr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "son", stave: true}   # mögr
+    faf.1.4: {metre: "long line, a-verse · stave f"}
+    faf.1.4.1: {lemma: "er", morph: "SCONJ", gloss: "who"}   # er
+    faf.1.4.2: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "you"}   # þú
+    faf.1.4.3: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    faf.1.4.4: {lemma: "Fáfnir", morph: "PROPN|Case=Dat|Gender=Masc|Number=Sing", gloss: "Fafnir", stave: true}   # Fáfni
+    faf.1.4.5: {lemma: "rjóða", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Past", gloss: "reddened"}   # rautt
+    faf.1.5: {metre: "long line, b-verse · stave f"}
+    faf.1.5.1: {lemma: "þinn", morph: "DET|Case=Acc|Gender=Masc|Number=Sing|Poss=Yes", gloss: "your"}   # þinn
+    faf.1.5.2: {lemma: "inn", morph: "DET|Case=Acc|Gender=Masc|Number=Sing", gloss: "the"}   # inn
+    faf.1.5.3: {lemma: "fránn", morph: "ADJ|Case=Acc|Definite=Def|Gender=Masc|Number=Sing", gloss: "gleaming", stave: true}   # frána
+    faf.1.5.4: {lemma: "mækir", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "sword"}   # mæki
+    faf.1.6: {metre: "full line · staves h"}
+    faf.1.6.1: {lemma: "standa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Mid", gloss: "stands-in-me"}   # Stöndumk
+    faf.1.6.2: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    faf.1.6.3: {lemma: "hjarta", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "heart", stave: true}   # hjarta
+    faf.1.6.4: {lemma: "hjörr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "sword", stave: true}   # hjörr
+    faf.p1.1.1: {lemma: "Sigurðr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Sigurd"}   # Sigurðr
+    faf.p1.1.2: {lemma: "dylja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "concealed"}   # dulði
+    faf.p1.1.3: {lemma: "nafn", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "name"}   # nafn
+    faf.p1.1.4: {lemma: "sinn", morph: "DET|Case=Gen|Gender=Neut|Number=Sing|Poss=Yes|Reflex=Yes", gloss: "of-his-own"}   # síns
+    faf.p1.1.5: {lemma: "fyrir", morph: "ADP", gloss: "for"}   # fyrir
+    faf.p1.1.6: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Neut|Number=Sing", gloss: "that"}   # því
+    faf.p1.1.7: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    faf.p1.1.8: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing", gloss: "that"}   # þat
+    faf.p1.1.9: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    faf.p1.1.10: {lemma: "trúa", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "belief"}   # trúa
+    faf.p1.1.11: {lemma: "sá", morph: "PRON|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-them"}   # þeira
+    faf.p1.1.12: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    faf.p1.1.13: {lemma: "forneskja", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "olden-times"}   # forneskju
+    faf.p1.2.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    faf.p1.2.2: {lemma: "orð", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "word"}   # orð
+    faf.p1.2.3: {lemma: "feigr", morph: "ADJ|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-doomed"}   # feigs
+    faf.p1.2.4: {lemma: "maðr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "man"}   # manns
+    faf.p1.2.5: {lemma: "mega", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "might-avail"}   # mætti
+    faf.p1.2.6: {lemma: "mikill", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "much"}   # mikit
+    faf.p1.2.7: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    faf.p1.2.8: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    faf.p1.2.9: {lemma: "bölva", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "cursed"}   # bölvaði
+    faf.p1.2.10: {lemma: "óvinr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "enemy"}   # óvin
+    faf.p1.2.11: {lemma: "sinn", morph: "DET|Case=Dat|Gender=Masc|Number=Sing|Poss=Yes|Reflex=Yes", gloss: "his-own"}   # sínum
+    faf.p1.2.12: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    faf.p1.2.13: {lemma: "nafn", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "name"}   # nafni
+    faf.p1.3.1: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # Hann
+    faf.p1.3.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "said"}   # kvað
+    faf.2.1: {metre: "long line, a-verse · stave g"}
+    faf.2.1.1: {lemma: "göfugr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "noble", stave: true}   # Göfugt
+    faf.2.1.2: {lemma: "dýr", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "beast"}   # dýr
+    faf.2.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    faf.2.1.4: {lemma: "heita", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "am-called"}   # heiti
+    faf.2.2: {metre: "long line, b-verse · stave g"}
+    faf.2.2.1: {lemma: "en", morph: "CCONJ", gloss: "and"}   # en
+    faf.2.2.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    faf.2.2.3: {lemma: "ganga", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "gone", stave: true}   # gengit
+    faf.2.2.4: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "have-I"}   # hefk
+    faf.2.3: {metre: "full line · staves m"}
+    faf.2.3.1: {lemma: "inn", morph: "DET|Case=Nom|Gender=Masc|Number=Sing", gloss: "the"}   # inn
+    faf.2.3.2: {lemma: "móðurlauss", morph: "ADJ|Case=Nom|Definite=Def|Gender=Masc|Number=Sing", gloss: "mother-less", stave: true}   # móðurlausi
+    faf.2.3.3: {lemma: "mögr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "son", stave: true}   # mögr
+    faf.2.4: {metre: "long line, a-verse · stave f"}
+    faf.2.4.1: {lemma: "faðir", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "father", stave: true}   # föður
+    faf.2.4.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    faf.2.4.3: {lemma: "eiga", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres", gloss: "have-I-not"}   # ákk-a
+    faf.2.5: {metre: "long line, b-verse · stave f"}
+    faf.2.5.1: {lemma: "sem", morph: "SCONJ", gloss: "as"}   # sem
+    faf.2.5.2: {lemma: "firar", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-men", stave: true}   # fira
+    faf.2.5.3: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons"}   # synir
+    faf.2.6: {metre: "full line · staves vowel"}
+    faf.2.6.1: {lemma: "æ", morph: "ADV", gloss: "ever", stave: true}   # æ
+    faf.2.6.2: {lemma: "ganga", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "go"}   # geng
+    faf.2.6.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    faf.2.6.4: {lemma: "einn", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "one", stave: true}   # einn
+    faf.2.6.5: {lemma: "saman", morph: "ADV", gloss: "together"}   # saman
+    faf.3.1: {metre: "long line, a-verse · stave f"}
+    faf.3.1.1: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "know-you"}   # Veiztu
+    faf.3.1.2: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    faf.3.1.3: {lemma: "faðir", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "father", stave: true}   # föður
+    faf.3.1.4: {lemma: "né", morph: "PART", gloss: "not"}   # né
+    faf.3.1.5: {lemma: "eiga", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Polarity=Neg|Tense=Pres", gloss: "have-you-not"}   # átt-at
+    faf.3.2: {metre: "long line, b-verse · stave f"}
+    faf.3.2.1: {lemma: "sem", morph: "SCONJ", gloss: "as"}   # sem
+    faf.3.2.2: {lemma: "firar", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-men", stave: true}   # fira
+    faf.3.2.3: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons"}   # synir
+    faf.3.3: {metre: "full line · staves vowel"}
+    faf.3.3.1: {lemma: "af", morph: "ADP", gloss: "from"}   # af
+    faf.3.3.2: {lemma: "hverr", morph: "DET|Case=Dat|Gender=Neut|Number=Sing", gloss: "which"}   # hverju
+    faf.3.3.3: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=2|Tense=Past", gloss: "were-you"}   # vastu
+    faf.3.3.4: {lemma: "undr", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "wonder", stave: true}   # undri
+    faf.3.3.5: {lemma: "ala", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "born", stave: true}   # alinn
+    faf.4.1: {metre: "long line, a-verse · stave vowel"}
+    faf.4.1.1: {lemma: "ætterni", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "lineage", stave: true}   # Ætterni
+    faf.4.1.2: {lemma: "minn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing|Poss=Yes", gloss: "my"}   # mitt
+    faf.4.2: {metre: "long line, b-verse · stave vowel"}
+    faf.4.2.1: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "say"}   # kveð
+    faf.4.2.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    faf.4.2.3: {lemma: "þú", morph: "PRON|Case=Dat|Number=Sing|Person=2", gloss: "to-you"}   # þér
+    faf.4.2.4: {lemma: "ókunnigr", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "unknown", stave: true}   # ókunnigt
+    faf.4.2.5: {lemma: "vera", morph: "AUX|VerbForm=Inf", gloss: "be"}   # vera
+    faf.4.3: {metre: "full line · staves s"}
+    faf.4.3.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    faf.4.3.2: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # mik
+    faf.4.3.3: {lemma: "sjálfr", morph: "PRON|Case=Acc|Gender=Masc|Number=Sing", gloss: "myself", stave: true}   # sjalfan
+    faf.4.3.4: {lemma: "it", morph: "DET|Case=Acc|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    faf.4.3.5: {lemma: "samr", morph: "ADJ|Case=Acc|Definite=Def|Gender=Neut|Number=Sing", gloss: "same", stave: true}   # sama
+    faf.4.4: {metre: "long line, a-verse · stave s"}
+    faf.4.4.1: {lemma: "Sigurðr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Sigurd", stave: true}   # Sigurðr
+    faf.4.4.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    faf.4.4.3: {lemma: "heita", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "am-called"}   # heiti
+    faf.4.5: {metre: "long line, b-verse · stave s"}
+    faf.4.5.1: {lemma: "Sigmundr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Sigmund", stave: true}   # Sigmundr
+    faf.4.5.2: {lemma: "heita", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was-called"}   # hét
+    faf.4.5.3: {lemma: "minn", morph: "DET|Case=Nom|Gender=Masc|Number=Sing|Poss=Yes", gloss: "my"}   # minn
+    faf.4.5.4: {lemma: "faðir", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "father"}   # faðir
+    faf.4.6: {metre: "full line · staves v"}
+    faf.4.6.1: {lemma: "er", morph: "SCONJ", gloss: "who"}   # er
+    faf.4.6.2: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "have-I"}   # hefk
+    faf.4.6.3: {lemma: "þú", morph: "PRON|Case=Acc|Number=Sing|Person=2", gloss: "you"}   # þik
+    faf.4.6.4: {lemma: "vápn", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "with-weapons", stave: true}   # vápnum
+    faf.4.6.5: {lemma: "vega", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "slain", stave: true}   # vegit
+    faf.5.1: {metre: "long line, a-verse · staves h"}
+    faf.5.1.1: {lemma: "hverr", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing", gloss: "who", stave: true}   # Hverr
+    faf.5.1.2: {lemma: "þú", morph: "PRON|Case=Acc|Number=Sing|Person=2", gloss: "you"}   # þik
+    faf.5.1.3: {lemma: "hvetja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "whetted", stave: true}   # hvatti
+    faf.5.2: {metre: "long line, b-verse · stave h"}
+    faf.5.2.1: {lemma: "hví", morph: "ADV", gloss: "why", stave: true}   # Hví
+    faf.5.2.2: {lemma: "hvetja", morph: "VERB|VerbForm=Inf|Voice=Mid", gloss: "be-whetted"}   # hvetjask
+    faf.5.2.3: {lemma: "láta", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Past", gloss: "let-you"}   # lézt
+    faf.5.3: {metre: "full line · staves f"}
+    faf.5.3.1: {lemma: "minn", morph: "DET|Case=Dat|Gender=Neut|Number=Sing|Poss=Yes", gloss: "my"}   # mínu
+    faf.5.3.2: {lemma: "fjör", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "life", stave: true}   # fjörvi
+    faf.5.3.3: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    faf.5.3.4: {lemma: "fara", morph: "VERB|VerbForm=Inf", gloss: "go-at", stave: true}   # fara
+    faf.5.4: {metre: "long line, a-verse · stave f"}
+    faf.5.4.1: {lemma: "inn", morph: "DET|Case=Nom|Gender=Masc|Number=Sing", gloss: "the"}   # Inn
+    faf.5.4.2: {lemma: "fráneygr", morph: "ADJ|Case=Nom|Definite=Def|Gender=Masc|Number=Sing", gloss: "gleaming-eyed", stave: true}   # fráneygi
+    faf.5.4.3: {lemma: "sveinn", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "boy"}   # sveinn
+    faf.5.5: {metre: "long line, b-verse · stave f"}
+    faf.5.5.1: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "you"}   # þú
+    faf.5.5.2: {lemma: "eiga", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Past", gloss: "had"}   # áttir
+    faf.5.5.3: {lemma: "faðir", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "father", stave: true}   # föður
+    faf.5.5.4: {lemma: "bitr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "bitter"}   # bitran
+    faf.5.6: {metre: "full line · staves sk"}
+    faf.5.6.1: {lemma: "óborinn", morph: "ADJ|Case=Dat|Gender=Masc|Number=Plur", gloss: "to-the-unborn"}   # óbornum
+    faf.5.6.2: {lemma: "skjárr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "shy", stave: true}   # skjór
+    faf.5.6.3: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    faf.5.6.4: {lemma: "skeið", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "course", stave: true}   # skeið
+    faf.6.1: {metre: "long line, a-verse · staves h"}
+    faf.6.1.1: {lemma: "hugr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "courage", stave: true}   # Hugr
+    faf.6.1.2: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # mik
+    faf.6.1.3: {lemma: "hvetja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "whetted", stave: true}   # hvatti
+    faf.6.2: {metre: "long line, b-verse · stave h"}
+    faf.6.2.1: {lemma: "hönd", morph: "NOUN|Case=Nom|Gender=Fem|Number=Plur", gloss: "hands", stave: true}   # hendr
+    faf.6.2.2: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "me"}   # mér
+    faf.6.2.3: {lemma: "fulltýja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "helped"}   # fulltýðu
+    faf.6.3: {metre: "full line · staves h"}
+    faf.6.3.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    faf.6.3.2: {lemma: "minn", morph: "DET|Case=Nom|Gender=Masc|Number=Sing|Poss=Yes", gloss: "my"}   # minn
+    faf.6.3.3: {lemma: "inn", morph: "DET|Case=Nom|Gender=Masc|Number=Sing", gloss: "the"}   # inn
+    faf.6.3.4: {lemma: "hvass", morph: "ADJ|Case=Nom|Definite=Def|Gender=Masc|Number=Sing", gloss: "sharp", stave: true}   # hvassi
+    faf.6.3.5: {lemma: "hjörr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "sword", stave: true}   # hjörr
+    faf.6.4: {metre: "long line, a-verse · stave h"}
+    faf.6.4.1: {lemma: "fár", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "few"}   # fár
+    faf.6.4.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    faf.6.4.3: {lemma: "hvatr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "bold", stave: true}   # hvatr
+    faf.6.5: {metre: "long line, b-verse · stave h"}
+    faf.6.5.1: {lemma: "er", morph: "SCONJ", gloss: "who"}   # er
+    faf.6.5.2: {lemma: "hröða", morph: "VERB|VerbForm=Inf|Voice=Mid", gloss: "grow-old", stave: true}   # hröðask
+    faf.6.5.3: {lemma: "taka", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "begins"}   # tekr
+    faf.6.6: {metre: "full line · staves b"}
+    faf.6.6.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    faf.6.6.2: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    faf.6.6.3: {lemma: "barnæska", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "childhood", stave: true}   # barnæsku
+    faf.6.6.4: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    faf.6.6.5: {lemma: "blauðr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "cowardly", stave: true}   # blauðr
+    faf.7.1: {metre: "long line, a-verse · staves v"}
+    faf.7.1.1: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know", stave: true}   # Veit
+    faf.7.1.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    faf.7.1.3: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    faf.7.1.4: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "you"}   # þú
+    faf.7.1.5: {lemma: "vaxa", morph: "VERB|VerbForm=Inf", gloss: "grow", stave: true}   # vaxa
+    faf.7.1.6: {lemma: "ná", morph: "VERB|Mood=Sub|Number=Sing|Person=2|Tense=Past", gloss: "could-you"}   # næðir
+    faf.7.2: {metre: "long line, b-verse · stave v"}
+    faf.7.2.1: {lemma: "fyrir", morph: "ADP", gloss: "before"}   # fyr
+    faf.7.2.2: {lemma: "þinn", morph: "DET|Case=Gen|Gender=Masc|Number=Plur|Poss=Yes", gloss: "your"}   # þinna
+    faf.7.2.3: {lemma: "vinr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-friends", stave: true}   # vina
+    faf.7.2.4: {lemma: "brjóst", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "breast"}   # brjósti
+    faf.7.3: {metre: "full line · staves v"}
+    faf.7.3.1: {lemma: "sjá", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "would-see"}   # sæi
+    faf.7.3.2: {lemma: "maðr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "one"}   # maðr
+    faf.7.3.3: {lemma: "þú", morph: "PRON|Case=Acc|Number=Sing|Person=2", gloss: "you"}   # þik
+    faf.7.3.4: {lemma: "vreiðr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "wrathful", stave: true}   # vreiðan
+    faf.7.3.5: {lemma: "vega", morph: "VERB|VerbForm=Inf", gloss: "fight", stave: true}   # vega
+    faf.7.4: {metre: "long line, a-verse · stave h"}
+    faf.7.4.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    faf.7.4.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "are-you"}   # ertu
+    faf.7.4.3: {lemma: "haftr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "captive", stave: true}   # haftr
+    faf.7.5: {metre: "long line, b-verse · stave h"}
+    faf.7.5.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    faf.7.5.2: {lemma: "hernema", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "war-taken", stave: true}   # hernuminn
+    faf.7.6: {metre: "full line · staves b"}
+    faf.7.6.1: {lemma: "æ", morph: "ADV", gloss: "ever"}   # æ
+    faf.7.6.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "they-say"}   # kveða
+    faf.7.6.3: {lemma: "bandingi", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "captive", stave: true}   # bandingja
+    faf.7.6.4: {lemma: "bifa", morph: "VERB|VerbForm=Inf|Voice=Mid", gloss: "tremble", stave: true}   # bifask
+    faf.8.1: {metre: "long line, a-verse · stave f"}
+    faf.8.1.1: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Neut|Number=Sing", gloss: "for-that"}   # Því
+    faf.8.1.2: {lemma: "bregða", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "reproach"}   # bregðr
+    faf.8.1.3: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "you"}   # þú
+    faf.8.1.4: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "me"}   # mér
+    faf.8.1.5: {lemma: "Fáfnir", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Fafnir", stave: true}   # Fáfnir
+    faf.8.2: {metre: "long line, b-verse · stave f"}
+    faf.8.2.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    faf.8.2.2: {lemma: "til", morph: "ADV", gloss: "too"}   # til
+    faf.8.2.3: {lemma: "fjarri", morph: "ADV", gloss: "far", stave: true}   # fjarri
+    faf.8.2.4: {lemma: "vera", morph: "AUX|Mood=Sub|Number=Sing|Person=1|Tense=Pres", gloss: "I-be"}   # séak
+    faf.8.3: {metre: "full line · stave f · irregular"}
+    faf.8.3.1: {lemma: "minn", morph: "DET|Case=Dat|Gender=Masc|Number=Plur|Poss=Yes", gloss: "my"}   # mínum
+    faf.8.3.2: {lemma: "feðrmunir", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "father-goods", stave: true}   # feðrmunum
+    faf.8.4: {metre: "long line, a-verse · stave h"}
+    faf.8.4.1: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    faf.8.4.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "am"}   # em
+    faf.8.4.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    faf.8.4.4: {lemma: "haftr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "captive", stave: true}   # haftr
+    faf.8.5: {metre: "long line, b-verse · stave h"}
+    faf.8.5.1: {lemma: "þótt", morph: "SCONJ", gloss: "though"}   # þótt
+    faf.8.5.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    faf.8.5.3: {lemma: "vera", morph: "AUX|Mood=Sub|Number=Sing|Person=1|Tense=Past", gloss: "were"}   # væra
+    faf.8.5.4: {lemma: "hernema", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "war-taken", stave: true}   # hernumi
+    faf.8.6: {metre: "full line · staves l"}
+    faf.8.6.1: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "you"}   # þú
+    faf.8.6.2: {lemma: "finna", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Past", gloss: "found"}   # fannt
+    faf.8.6.3: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    faf.8.6.4: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    faf.8.6.5: {lemma: "lauss", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "free", stave: true}   # laus
+    faf.8.6.6: {lemma: "lifa", morph: "VERB|Mood=Sub|Number=Sing|Person=1|Tense=Pres", gloss: "live", stave: true}   # lifi
+    faf.9.1: {metre: "long line, a-verse · stave h"}
+    faf.9.1.1: {lemma: "heiftyrði", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "hate-words", stave: true}   # Heiftyrði
+    faf.9.1.2: {lemma: "einn", morph: "ADJ|Case=Acc|Gender=Neut|Number=Plur", gloss: "only"}   # ein
+    faf.9.2: {metre: "long line, b-verse · stave h"}
+    faf.9.2.1: {lemma: "telja", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "count"}   # telr
+    faf.9.2.2: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "you"}   # þú
+    faf.9.2.3: {lemma: "þú", morph: "PRON|Case=Dat|Number=Sing|Person=2", gloss: "for-yourself"}   # þér
+    faf.9.2.4: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    faf.9.2.5: {lemma: "hvívetna", morph: "PRON|Case=Dat|Gender=Neut|Number=Sing", gloss: "everything", stave: true}   # hvívetna
+    faf.9.3: {metre: "full line · staves s"}
+    faf.9.3.1: {lemma: "en", morph: "CCONJ", gloss: "but"}   # en
+    faf.9.3.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    faf.9.3.3: {lemma: "þú", morph: "PRON|Case=Dat|Number=Sing|Person=2", gloss: "to-you"}   # þér
+    faf.9.3.4: {lemma: "sannr", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "true", stave: true}   # satt
+    faf.9.3.5: {lemma: "einn", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "only"}   # eitt
+    faf.9.3.6: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "say-I", stave: true}   # segik
+    faf.9.4: {metre: "long line, a-verse · staves g"}
+    faf.9.4.1: {lemma: "it", morph: "DET|Case=Nom|Gender=Neut|Number=Sing", gloss: "the"}   # It
+    faf.9.4.2: {lemma: "gjallr", morph: "ADJ|Case=Nom|Definite=Def|Gender=Neut|Number=Sing", gloss: "ringing", stave: true}   # gjalla
+    faf.9.4.3: {lemma: "gull", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "gold", stave: true}   # gull
+    faf.9.5: {metre: "long line, b-verse · stave g"}
+    faf.9.5.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    faf.9.5.2: {lemma: "it", morph: "DET|Case=Nom|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    faf.9.5.3: {lemma: "glóðrauðr", morph: "ADJ|Case=Nom|Definite=Def|Gender=Neut|Number=Sing", gloss: "ember-red", stave: true}   # glóðrauða
+    faf.9.5.4: {lemma: "fé", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "wealth"}   # fé
+    faf.9.6: {metre: "full line · staves b"}
+    faf.9.6.1: {lemma: "þú", morph: "PRON|Case=Dat|Number=Sing|Person=2", gloss: "to-you"}   # þér
+    faf.9.6.2: {lemma: "verða", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "become"}   # verða
+    faf.9.6.3: {lemma: "sá", morph: "DET|Case=Nom|Gender=Masc|Number=Plur", gloss: "those"}   # þeir
+    faf.9.6.4: {lemma: "baugr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "rings", stave: true}   # baugar
+    faf.9.6.5: {lemma: "at", morph: "ADP", gloss: "as"}   # at
+    faf.9.6.6: {lemma: "bani", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "bane", stave: true}   # bana
+    faf.10.1: {metre: "long line, a-verse · stave f"}
+    faf.10.1.1: {lemma: "fé", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "wealth", stave: true}   # Féi
+    faf.10.1.2: {lemma: "ráða", morph: "VERB|VerbForm=Inf", gloss: "rule"}   # ráða
+    faf.10.2: {metre: "long line, b-verse · stave f"}
+    faf.10.2.1: {lemma: "vilja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "wants"}   # vill
+    faf.10.2.2: {lemma: "fyrðar", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-men", stave: true}   # fyrða
+    faf.10.2.3: {lemma: "hverr", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing", gloss: "each"}   # hverr
+    faf.10.3: {metre: "full line · staves vowel"}
+    faf.10.3.1: {lemma: "æ", morph: "ADV", gloss: "ever", stave: true}   # æ
+    faf.10.3.2: {lemma: "til", morph: "ADP", gloss: "until"}   # til
+    faf.10.3.3: {lemma: "inn", morph: "DET|Case=Gen|Gender=Masc|Number=Sing", gloss: "the"}   # ins
+    faf.10.3.4: {lemma: "einn", morph: "ADJ|Case=Gen|Gender=Masc|Number=Sing", gloss: "one", stave: true}   # eina
+    faf.10.3.5: {lemma: "dagr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "day"}   # dags
+    faf.10.4: {metre: "long line, a-verse · stave vowel"}
+    faf.10.4.1: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Neut|Number=Sing", gloss: "for-that"}   # því
+    faf.10.4.2: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    faf.10.4.3: {lemma: "einn", morph: "ADJ|Case=Dat|Gender=Neut|Number=Sing", gloss: "one", stave: true}   # einu
+    faf.10.4.4: {lemma: "sinn", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "time"}   # sinni
+    faf.10.5: {metre: "long line, b-verse · stave vowel"}
+    faf.10.5.1: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    faf.10.5.2: {lemma: "öld", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "of-men", stave: true}   # alda
+    faf.10.5.3: {lemma: "hverr", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing", gloss: "each"}   # hverr
+    faf.10.6: {metre: "full line · staves h"}
+    faf.10.6.1: {lemma: "fara", morph: "VERB|VerbForm=Inf", gloss: "go"}   # fara
+    faf.10.6.2: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    faf.10.6.3: {lemma: "hel", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "Hel", stave: true}   # heljar
+    faf.10.6.4: {lemma: "heðan", morph: "ADV", gloss: "hence", stave: true}   # heðan
+    faf.11.1: {metre: "long line, a-verse · stave n"}
+    faf.11.1.1: {lemma: "norn", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "of-norns", stave: true}   # Norna
+    faf.11.1.2: {lemma: "dómr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "judgment"}   # dóm
+    faf.11.2: {metre: "long line, b-verse · stave n"}
+    faf.11.2.1: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "you"}   # þú
+    faf.11.2.2: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "will"}   # munt
+    faf.11.2.3: {lemma: "fyrir", morph: "ADP", gloss: "off"}   # fyr
+    faf.11.2.4: {lemma: "nes", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "headlands", stave: true}   # nesjum
+    faf.11.2.5: {lemma: "hafa", morph: "VERB|VerbForm=Inf", gloss: "have"}   # hafa
+    faf.11.3: {metre: "full line · staves vowel"}
+    faf.11.3.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    faf.11.3.2: {lemma: "ósvinnr", morph: "ADJ|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-unwise", stave: true}   # ósvinns
+    faf.11.3.3: {lemma: "api", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "fool", stave: true}   # apa
+    faf.11.4: {metre: "long line, a-verse · stave v"}
+    faf.11.4.1: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    faf.11.4.2: {lemma: "vatn", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "water", stave: true}   # vatni
+    faf.11.4.3: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "you"}   # þú
+    faf.11.4.4: {lemma: "drukkna", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "drown"}   # drukknar
+    faf.11.5: {metre: "long line, b-verse · stave v"}
+    faf.11.5.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    faf.11.5.2: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    faf.11.5.3: {lemma: "vindr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "wind", stave: true}   # vindi
+    faf.11.5.4: {lemma: "róa", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "you-row"}   # rær
+    faf.11.6: {metre: "full line · staves f"}
+    faf.11.6.1: {lemma: "allr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "all"}   # allt
+    faf.11.6.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    faf.11.6.3: {lemma: "feigr", morph: "ADJ|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-the-doomed", stave: true}   # feigs
+    faf.11.6.4: {lemma: "forað", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "peril", stave: true}   # forað
+    faf.12.1: {metre: "long line, a-verse · stave f"}
+    faf.12.1.1: {lemma: "segja", morph: "VERB|Mood=Imp|Number=Sing|Person=2", gloss: "tell-you"}   # Segðu
+    faf.12.1.2: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "me"}   # mér
+    faf.12.1.3: {lemma: "Fáfnir", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Fafnir", stave: true}   # Fáfnir
+    faf.12.2: {metre: "long line, b-verse · stave f"}
+    faf.12.2.1: {lemma: "alls", morph: "SCONJ", gloss: "since"}   # alls
+    faf.12.2.2: {lemma: "þú", morph: "PRON|Case=Acc|Number=Sing|Person=2", gloss: "you"}   # þik
+    faf.12.2.3: {lemma: "fróðr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "wise", stave: true}   # fróðan
+    faf.12.2.4: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "they-say"}   # kveða
+    faf.12.3: {metre: "full line · staves v"}
+    faf.12.3.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    faf.12.3.2: {lemma: "vel", morph: "ADV", gloss: "very", stave: true}   # vel
+    faf.12.3.3: {lemma: "margr", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "much"}   # margt
+    faf.12.3.4: {lemma: "vita", morph: "VERB|VerbForm=Inf", gloss: "know", stave: true}   # vita
+    faf.12.4: {metre: "long line, a-verse · stave n"}
+    faf.12.4.1: {lemma: "hverr", morph: "PRON|Case=Nom|Gender=Fem|Number=Plur", gloss: "which"}   # hverjar
+    faf.12.4.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "are"}   # ro
+    faf.12.4.3: {lemma: "sá", morph: "DET|Case=Nom|Gender=Fem|Number=Plur", gloss: "those"}   # þær
+    faf.12.4.4: {lemma: "norn", morph: "NOUN|Case=Nom|Gender=Fem|Number=Plur", gloss: "norns", stave: true}   # nornir
+    faf.12.5: {metre: "long line, b-verse · stave n"}
+    faf.12.5.1: {lemma: "er", morph: "SCONJ", gloss: "who"}   # er
+    faf.12.5.2: {lemma: "nauðgöngull", morph: "NOUN|Case=Nom|Gender=Fem|Number=Plur", gloss: "need-goers", stave: true}   # nauðgönglar
+    faf.12.5.3: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "are"}   # ro
+    faf.12.6: {metre: "full line · staves m"}
+    faf.12.6.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    faf.12.6.2: {lemma: "kjósa", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "choose"}   # kjósa
+    faf.12.6.3: {lemma: "móðir", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "mothers", stave: true}   # mæðr
+    faf.12.6.4: {lemma: "frá", morph: "ADP", gloss: "from"}   # frá
+    faf.12.6.5: {lemma: "mögr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "sons", stave: true}   # mögum
+    faf.13.1: {metre: "long line, a-verse · stave s"}
+    faf.13.1.1: {lemma: "sundrborinn", morph: "ADJ|Case=Nom|Gender=Fem|Number=Plur", gloss: "asunder-born", stave: true}   # Sundrbornar
+    faf.13.1.2: {lemma: "mjök", morph: "ADV", gloss: "very"}   # mjök
+    faf.13.2: {metre: "long line, b-verse · stave s"}
+    faf.13.2.1: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "say", stave: true}   # segi
+    faf.13.2.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    faf.13.2.3: {lemma: "norn", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "norns"}   # nornir
+    faf.13.2.4: {lemma: "vera", morph: "AUX|VerbForm=Inf", gloss: "be"}   # vera
+    faf.13.3: {metre: "full line · staves vowel"}
+    faf.13.3.1: {lemma: "eiga", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Polarity=Neg|Tense=Pres", gloss: "have-not", stave: true}   # eigu-t
+    faf.13.3.2: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Fem|Number=Plur", gloss: "they"}   # þær
+    faf.13.3.3: {lemma: "ætt", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "kin", stave: true}   # ætt
+    faf.13.3.4: {lemma: "saman", morph: "ADV", gloss: "together"}   # saman
+    faf.13.4: {metre: "long line, a-verse · stave vowel"}
+    faf.13.4.1: {lemma: "sumr", morph: "ADJ|Case=Nom|Gender=Fem|Number=Plur", gloss: "some"}   # sumar
+    faf.13.4.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "are"}   # eru
+    faf.13.4.3: {lemma: "áskunnr", morph: "ADJ|Case=Nom|Gender=Fem|Number=Plur", gloss: "god-descended", stave: true}   # áskunngar
+    faf.13.5: {metre: "long line, b-verse · stave vowel"}
+    faf.13.5.1: {lemma: "sumr", morph: "ADJ|Case=Nom|Gender=Fem|Number=Plur", gloss: "some"}   # sumar
+    faf.13.5.2: {lemma: "alfkunnr", morph: "ADJ|Case=Nom|Gender=Fem|Number=Plur", gloss: "elf-descended", stave: true}   # alfkunngar
+    faf.13.6: {metre: "full line · staves d"}
+    faf.13.6.1: {lemma: "sumr", morph: "ADJ|Case=Nom|Gender=Fem|Number=Plur", gloss: "some"}   # sumar
+    faf.13.6.2: {lemma: "dóttir", morph: "NOUN|Case=Nom|Gender=Fem|Number=Plur", gloss: "daughters", stave: true}   # dætr
+    faf.13.6.3: {lemma: "Dvalinn", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Dvalin's", stave: true}   # Dvalins
+    faf.14.1: {metre: "long line, a-verse · stave f"}
+    faf.14.1.1: {lemma: "segja", morph: "VERB|Mood=Imp|Number=Sing|Person=2", gloss: "tell-you"}   # Segðu
+    faf.14.1.2: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "me"}   # mér
+    faf.14.1.3: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing", gloss: "that"}   # þat
+    faf.14.1.4: {lemma: "Fáfnir", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Fafnir", stave: true}   # Fáfnir
+    faf.14.2: {metre: "long line, b-verse · stave f"}
+    faf.14.2.1: {lemma: "alls", morph: "SCONJ", gloss: "since"}   # alls
+    faf.14.2.2: {lemma: "þú", morph: "PRON|Case=Acc|Number=Sing|Person=2", gloss: "you"}   # þik
+    faf.14.2.3: {lemma: "fróðr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "wise", stave: true}   # fróðan
+    faf.14.2.4: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "they-say"}   # kveða
+    faf.14.3: {metre: "full line · staves v"}
+    faf.14.3.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    faf.14.3.2: {lemma: "vel", morph: "ADV", gloss: "very", stave: true}   # vel
+    faf.14.3.3: {lemma: "margr", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "much"}   # margt
+    faf.14.3.4: {lemma: "vita", morph: "VERB|VerbForm=Inf", gloss: "know", stave: true}   # vita
+    faf.14.4: {metre: "long line, a-verse · staves h"}
+    faf.14.4.1: {lemma: "hvé", morph: "ADV", gloss: "how"}   # hvé
+    faf.14.4.2: {lemma: "sá", morph: "DET|Case=Nom|Gender=Masc|Number=Sing", gloss: "that"}   # sá
+    faf.14.4.3: {lemma: "holmr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "islet", stave: true}   # holmr
+    faf.14.4.4: {lemma: "heita", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is-called", stave: true}   # heitir
+    faf.14.5: {metre: "long line, b-verse · stave h"}
+    faf.14.5.1: {lemma: "er", morph: "SCONJ", gloss: "where"}   # er
+    faf.14.5.2: {lemma: "blanda", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "mix"}   # blanda
+    faf.14.5.3: {lemma: "hjörlögr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "sword-liquid", stave: true}   # hjörlegi
+    faf.14.6: {metre: "full line · staves s"}
+    faf.14.6.1: {lemma: "Surtr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Surt", stave: true}   # Surtr
+    faf.14.6.2: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    faf.14.6.3: {lemma: "áss", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "Aesir"}   # æsir
+    faf.14.6.4: {lemma: "saman", morph: "ADV", gloss: "together", stave: true}   # saman
+    faf.15.1: {metre: "long line, a-verse · stave vowel"}
+    faf.15.1.1: {lemma: "Óskópnir", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Oskopnir", stave: true}   # Óskópnir
+    faf.15.1.2: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "it"}   # hann
+    faf.15.1.3: {lemma: "heita", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is-called"}   # heitir
+    faf.15.2: {metre: "long line, b-verse · stave vowel"}
+    faf.15.2.1: {lemma: "en", morph: "CCONJ", gloss: "and"}   # en
+    faf.15.2.2: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    faf.15.2.3: {lemma: "allr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Plur", gloss: "all", stave: true}   # öll
+    faf.15.2.4: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "shall"}   # skulu
+    faf.15.3: {metre: "full line · staves g"}
+    faf.15.3.1: {lemma: "geirr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "with-spears", stave: true}   # geirum
+    faf.15.3.2: {lemma: "leika", morph: "VERB|VerbForm=Inf", gloss: "play"}   # leika
+    faf.15.3.3: {lemma: "goð", morph: "NOUN|Case=Nom|Gender=Neut|Number=Plur", gloss: "gods", stave: true}   # goð
+    faf.15.4: {metre: "long line, a-verse · staves b"}
+    faf.15.4.1: {lemma: "Bilröst", morph: "PROPN|Case=Nom|Gender=Fem|Number=Sing", gloss: "Bilrost", stave: true}   # Bilröst
+    faf.15.4.2: {lemma: "brotna", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "breaks", stave: true}   # brotnar
+    faf.15.5: {metre: "long line, b-verse · stave b"}
+    faf.15.5.1: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    faf.15.5.2: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur", gloss: "they"}   # þeir
+    faf.15.5.3: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    faf.15.5.4: {lemma: "brú", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "bridge", stave: true}   # brú
+    faf.15.5.5: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "go"}   # fara
+    faf.15.6: {metre: "full line · staves m"}
+    faf.15.6.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    faf.15.6.2: {lemma: "svima", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "swim"}   # svima
+    faf.15.6.3: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    faf.15.6.4: {lemma: "móða", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "river", stave: true}   # móðu
+    faf.15.6.5: {lemma: "marr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "steeds", stave: true}   # marir

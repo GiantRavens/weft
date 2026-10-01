@@ -1,6 +1,9 @@
 """Golden passage guards. Run: uv run --with pytest pytest -q"""
 from pathlib import Path
 
+import shutil
+
+import pytest
 import yaml
 
 from weft import check, draft, greek, latin, norse
@@ -414,6 +417,76 @@ def test_oldest_texts_check():
 
 def test_norse_norman_and_papal_works_check():
     """The 2026-10-01 batch: Þrymskviða, the Bayeux Tapestry captions, Inter caetera, Gylfaginning, the Res Gestae."""
-    for work in ("edda-thrymskvida", "bayeux-tapestry", "inter-caetera-1493", "res-gestae-augusti", "snorri-gylfaginning"):
+    for work in ("edda-thrymskvida", "bayeux-tapestry", "inter-caetera-1493", "res-gestae-augusti", "snorri-gylfaginning", "edda-fafnismal", "yijing"):
         r = check.run(REPO, work)
         assert r["ok"], (work, r["problems"])
+
+
+def test_docs_render_clean(tmp_path):
+    """The reader pages (docs/about.md, docs/languages.md) render with no stray Markdown and only working internal links."""
+    import re
+    from weft import docs
+    docs.build_docs(REPO, tmp_path, {})
+    pages = {p.name: p.read_text() for p in tmp_path.glob("*.html")}
+    assert "about.html" in pages
+    for name, html in pages.items():
+        body = html.split("<main>", 1)[1]
+        text = re.sub(r"<pre>.*?</pre>|<code>.*?</code>", "", body, flags=re.S)
+        assert "**" not in text and "](" not in text and "\n#" not in text, name
+        for anchor in re.findall(r'href="#([^"]+)"', body):
+            assert f'id="{anchor}"' in body, (name, anchor)
+        for target in re.findall(r'href="([a-z-]+)\.html', body):
+            assert target == "index" or f"{target}.html" in pages, (name, target)
+
+
+def _private_fixture(tmp_path):
+    """A repo whose private/ holds one private work (a copy of the Bashō work under a new name)."""
+    for d in ("texts", "site", "art", "docs", "pipeline"):
+        (tmp_path / d).symlink_to(REPO / d)
+    pw = tmp_path / "private" / "basho-private"
+    shutil.copytree(REPO / "texts" / "basho-furuike", pw, ignore=shutil.ignore_patterns("sources"))
+    m = yaml.safe_load((pw / "manifest.yaml").read_text())
+    m.update(work="basho-private", title="A private test work")
+    (pw / "manifest.yaml").write_text(yaml.dump(m, allow_unicode=True, sort_keys=False))
+    return tmp_path
+
+
+def test_private_work_builds_privately_only(tmp_path):
+    """A private work builds into private/build/ with the public library around it; the public
+    build refuses it, and the public library never lists it."""
+    from weft import build, paths
+    repo = _private_fixture(tmp_path)
+    assert paths.private_works(repo) == ["basho-private"]
+    assert "basho-private" not in [m["work"] for m in build.library_order(repo)]
+    with pytest.raises(SystemExit):
+        build.run(repo, "basho-private", private=False)
+    out = build.run(repo, "basho-private", private=True)
+    assert out == repo / "private" / "build" / "basho-private.html"
+    page = out.read_text()
+    assert '"private_work": true' in page and "issues/new" not in page.split("window.WEFT", 1)[1].split("</script>", 1)[0]
+    idx = (repo / "private" / "build" / "index.html").read_text()
+    assert "A private test work" in idx and "Private build" in idx
+
+
+def test_private_never_tracked():
+    """Leak sensor: nothing under private/ (except its README) and no fetched source is in git,
+    and the public site output holds no page for a private work."""
+    import subprocess
+    from weft import paths
+    tracked = subprocess.run(["git", "ls-files", "private", "texts"], cwd=REPO, capture_output=True, text=True).stdout.split()
+    leaks = [f for f in tracked if (f.startswith("private/") and f != "private/README.md")
+             or ("/sources/" in f and not f.endswith("/sources/README.md"))]
+    assert leaks == [], leaks
+    built = REPO / "site" / "build"
+    for w in paths.private_works(REPO):
+        assert not (built / f"{w}.html").exists(), w
+
+
+def test_japanese_kanbun_and_heike_check():
+    """The Japanese works: kanbun read in Japanese (1615, 1703) and the Heike opening pass their checks,
+    and every kanbun line carries a whole-line reading."""
+    for work in ("buke-shohatto-1615", "ronin-statement-1703", "heike-gion-shoja"):
+        r = check.run(REPO, work)
+        assert r["ok"], (work, r["problems"])
+    g = yaml.safe_load((REPO / "texts" / "buke-shohatto-1615" / "gen" / "sections.yaml").read_text())
+    assert all(l.get("reading") for l in g["lines"])

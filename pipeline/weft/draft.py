@@ -436,7 +436,10 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             **({"stanza": book} if ed_fmt == "stanza-text" else {}),
             **({"stanza": book, "stanza_title": groups[book]["title"]} if ed_fmt == "weft-edition" else {}),
             # a section may carry an image of its own (a tapestry scene, a manuscript page), shown above it
-            **({"figure": groups[book]["figure"]} if ed_fmt == "weft-edition" and n == 1 and groups[book].get("figure") else {}),
+            # section-level fields carried on the section's first line: an image, and for the Yijing
+            # the hexagram (six digits, bottom line first, 1 = unbroken) and its trigrams
+            **({k: groups[book][k] for k in ("figure", "hexagram", "trigrams") if groups[book].get(k)}
+               if ed_fmt == "weft-edition" and n == 1 else {}),
             "text": text,
             "tokens": toks,
         }
@@ -457,10 +460,16 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         if token_edition and toks and hasattr(phon, "line_metre"):
             # language hook: metre computed from the line's tokens, with its own failure classes
             m_str, mfails = phon.line_metre(etoks, edition)
-            if m_str:
+            if m_str is False:            # the hook says this line has no metre (prose)
+                line_rec.pop("metre", None)
+            elif m_str:
                 line_rec["metre"] = m_str
             for cls, sample in mfails:
                 fail(cls, f"{book}.{n} {sample}")
+        eline = groups[book]["lines"][n - 1] if ed_fmt == "weft-edition" else None
+        if isinstance(eline, dict) and eline.get("yomi"):
+            # a whole-line reading aloud, e.g. kanbun read in Japanese word order (yomikudashi)
+            line_rec["reading"] = eline["yomi"]
         if token_edition and toks and hasattr(phon, "line_checks"):
             # language hook: sensors that compare the line against its source (spelling, marks)
             for cls, sample in phon.line_checks(text, etoks, edition):

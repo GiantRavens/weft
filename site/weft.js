@@ -22,6 +22,7 @@
     ...(D.lines.some((l) => l.tokens.some((t) => t.script)) ? [["script", D.work.script_label || "Script (runes)"]] : []),
     ["source", "Source text"],
     ...(D.work.show_translit ? [["translit", D.work.translit_label || "Transliteration"]] : []), ["sound", "Sound"], ["gloss", "Gloss, word for word"],
+    ...(D.lines.some((l) => l.reading) ? [["reading", D.work.reading_label || "Reading aloud, whole line"]] : []),
     ["metre", "Metre"], ["sense", "Translations"], ["notes", "Note markers"],
   ];
   const SLIDERS = [
@@ -33,6 +34,7 @@
     ["--set-gap", "Space between line sets", 0.4, 5, 0.1, "rem", 2.4],
   ];
   const STORE = "weft:" + D.work.work;
+  document.body.classList.add("lang-" + D.work.language);
   const defaults = () => ({
     layers: Object.fromEntries(LAYERS.map(([k]) => [k, true])),
     scheme: D.schemes[0],
@@ -79,12 +81,15 @@
     }
     return out.map(([a, b]) => (a === b ? `${a}` : `${a}–${b}`)).join(", ");
   };
+  // GitHub issue forms (.github/ISSUE_TEMPLATE), prefilled with the work and the scheme in use
   const issueUrl = (kind) => {
     const repo = D.work.repo_url || "https://github.com/GiantRavens/weft";
-    const title = `${kind}: ${D.work.title}`;
-    const body = `Page: ${D.work.work}\nScheme: ${S.scheme}\nLine or word (e.g. its id from the word panel):\n\nWhat you suggest, and the source or evidence for it:\n`;
-    return `${repo}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+    const template = { Correction: "correction.yml", Pronunciation: "pronunciation.yml", Recording: "recording.yml" }[kind] || "correction.yml";
+    const q = new URLSearchParams({ template, title: `${kind}: ${D.work.title}`, work: D.work.work, scheme: S.scheme });
+    return `${repo}/issues/new?${q}`;
   };
+  const issueLink = (kind, text) => h("a", { href: issueUrl(kind), "data-issue": kind, text });
+  const refreshIssueLinks = () => document.querySelectorAll("a[data-issue]").forEach((a) => { a.href = issueUrl(a.dataset.issue); });
 
   /* ---------- masthead and colophon */
   document.title = `${D.work.title} · Weft`;
@@ -97,20 +102,27 @@
         ? (() => { // numbered chapters only; a named section such as a heading ("praef") shows on the page
                    const cs = [...new Set(D.lines.map((l) => l.stanza))].filter((c) => /^\d+$/.test(c)).map(Number);
                    return `${D.work.author} · chapter${cs.length === 1 ? "" : "s"} ${ranges(cs)}`; })()
-        : (() => { const n = new Set(D.lines.map((l) => l.stanza)).size, noun = D.work.section_noun || "section";
+        : (() => { // count numbered sections only: prose links (p0, p22) and headings are not stanzas
+                   const all = [...new Set(D.lines.map((l) => l.stanza))], num = all.filter((c) => /^\d+$/.test(c));
+                   const n = num.length || all.length, noun = D.work.section_noun || "section";
                    return `${D.work.author} · ${n} ${noun}${n === 1 ? "" : "s"}`; })())
     : STANZAS
     ? `${D.work.author} · stanzas ${ranges([...new Set(D.lines.map((l) => l.stanza))])}`
     : `${D.work.author} · ${shortRef(first.id)}–${shortRef(first.id).split(".")[0] === shortRef(last.id).split(".")[0] ? lineNo(last.id) : shortRef(last.id)}`;
-  const anyDraft = D.lines.some((l) => l.curated || l.tokens.some((t) => t.curated && Object.values(t.curated).some((c) => c.status !== "reviewed")));
+  const unreviewed = (c) => c && Object.values(c).some((x) => x.status !== "reviewed");
+  const anyDraft = D.lines.some((l) => unreviewed(l.curated) || l.tokens.some((t) => t.curated && Object.values(t.curated).some((c) => c.status !== "reviewed")));
   $("#colophon").append(
     h("p", { text: `Text: ${D.edition.name} (${D.edition.license}). Lemma and morphology: ${D.treebank.name} (${D.treebank.license}).` }),
     h("p", { text: "Translations: " + D.translations.map((t) => `${t.translator}, ${t.year} (${t.license})`).join("; ") + "."
       + ((D.references || []).length ? " Cited, in copyright: " + D.references.map((r) => `${r.translator}, ${r.year}`).join("; ") + "." : "") }),
     anyDraft ? h("p", { text: "Glosses, scansion and editorial notes are a phase 0 draft awaiting scholarly review." }) : null,
-    h("p", {}, "Corrections to a gloss, a reading or the pronunciation, and recordings, are welcome: ",
-      h("a", { href: issueUrl("Correction"), text: "open an issue" }), "."),
-    h("p", { text: `Built with Weft ${D.build.weft}${D.build.private ? " · private build, includes licensed translations" : ""}.` }),
+    D.work.private_work ? h("p", { text: "A private work: it exists only in your own build, and has no public issue links." }) :
+    h("p", {}, "Corrections and recordings are welcome: ",
+      issueLink("Correction", "a gloss, reading or note"), ", ",
+      issueLink("Pronunciation", "the pronunciation"), ", ",
+      issueLink("Recording", "a recording"), ". You do not need git. ",
+      h("a", { href: "about.html", text: "About Weft" }), "."),
+    h("p", { text: `Built with Weft ${D.build.weft}${D.build.private ? " · private build, includes your own or licensed material; do not publish" : ""}.` }),
   );
 
   /* ---------- the collection: previous and next work in date order, and the library */
@@ -161,7 +173,8 @@
         sense.append(h("blockquote", { class: "tr" + (t.kind === "editorial" ? " editorial" : "") }, span.text, h("cite", { text: who })));
       }
       const newStanza = STANZAS && line.stanza !== prevStanza;
-      if (newStanza) text.append(h("h2", { class: "stanza-head", text: line.stanza_title || `Stanza ${line.stanza}` }));
+      if (newStanza) text.append(h("h2", { class: "stanza-head" + (line.hexagram ? " hex-head" : ""), id: `sec-${line.stanza}` },
+        line.hexagram ? hexFigure(line.hexagram) : null, h("span", { text: line.stanza_title || `Stanza ${line.stanza}` })));
       if (newStanza && line.figure && line.figure.src) {
         const f = line.figure;
         text.append(h("figure", { class: "sec-fig" },
@@ -172,7 +185,9 @@
       }
       prevStanza = line.stanza;
       text.append(h("section", { class: "lineset" + (newStanza ? " stanza-first" : ""), id: line.id },
-        gutter, h("div", { class: "body" }, strip, metre, spans.length ? sense : null)));
+        gutter, h("div", { class: "body" }, strip,
+          line.reading ? h("p", { class: "reading" }, h("span", { class: "rl", text: "Read aloud" }), h("span", { lang: LANG, text: line.reading })) : null,
+          metre, spans.length ? sense : null)));
     }
   }
 
@@ -219,7 +234,7 @@
         return [h("dt", { text: s }), h("dd", {}, h("div", { text: snd.respell || "" }), h("div", { class: "ipa", text: snd.ipa ? `/${snd.ipa}/` : "" }))];
       }),
     );
-    const prov = [];
+    const prov = [`Word id: ${t.id} (quote it in a correction)`];
     prov.push(t.tb ? `Lemma and form: ${D.treebank.id} sentence/word ${t.tb}` : "Lemma and form: hand annotation (no treebank)");
     if (t.stave) prov.push("Stave: an alliterating sound that binds the verse");
     if (t.printed) prov.push(`Printed in the edition as ${t.printed}`);
@@ -240,6 +255,7 @@
       h("div", { class: "big", lang: LANG, style: "font-size:1.5rem", text: line.text }),
       h("div", { class: "src-line", text: line.cite }),
       ...(notesByAttach[line.id] || []).map(noteEl),
+      h("div", { class: "prov" }, h("div", { text: `Line id: ${line.id} (quote it in a correction or name a recording by it)` })),
     );
     openPanel(wordPanel);
   }
@@ -266,7 +282,7 @@
     const sc = $("#scheme-choice"); sc.replaceChildren();
     for (const s of D.schemes) {
       sc.append(h("label", { class: "radio" },
-        h("input", { type: "radio", name: "scheme", value: s, checked: S.scheme === s, onchange: () => { S.scheme = s; renderText(); applySettings(); save(); fillKey(); } }),
+        h("input", { type: "radio", name: "scheme", value: s, checked: S.scheme === s, onchange: () => { S.scheme = s; renderText(); applySettings(); save(); fillKey(); refreshIssueLinks(); } }),
         schemeLabel(s)));
     }
     const tt = $("#tr-toggles"); tt.replaceChildren();
@@ -296,14 +312,15 @@
     note.hidden = false;
   }
   // an invitation to specialists: corrections to a reconstructed pronunciation, or recordings
-  if (D.work.sound_confidence === "low" || D.work.sound_confidence === "medium") {
+  if (!D.work.private_work && (D.work.sound_confidence === "low" || D.work.sound_confidence === "medium")) {
     const note = $("#sound-note");
     const low = D.work.sound_confidence === "low";
     note.append(h("strong", { text: low ? "The pronunciation here is a reconstruction. " : "Parts of the pronunciation here are reconstructed. " }),
       low ? `How ${D.work.lang_name || "this language"} sounded is inferred indirectly, and specialists disagree. If you work on its phonology, we would welcome corrections to the sound guide, and recordings read from this page. `
           : "Specialists are welcome to suggest corrections or contribute recordings. ",
-      h("a", { href: issueUrl("Pronunciation"), text: "Suggest a correction or offer a recording" }),
-      ". The guide for contributors is in the project's CONTRIBUTING file.");
+      issueLink("Pronunciation", "Suggest a correction"), " or ",
+      issueLink("Recording", "offer a recording"), ". ",
+      h("a", { href: "languages.html", text: "What this reconstruction rests on" }), ".");
     note.hidden = false;
   }
   // translations still in copyright: cited here, never reproduced
@@ -325,6 +342,62 @@
     if (p.hidden) { closePanel(wordPanel); openPanel(p); $("#open-loom").setAttribute("aria-expanded", "true"); } else closePanel(p);
   });
   document.querySelectorAll("[data-close]").forEach((b) => b.addEventListener("click", () => closePanel($("#" + b.dataset.close))));
+
+  /* ---------- the Yijing: draw hexagrams, and cast one by the three-coin method */
+  // a hexagram is six digits, bottom line first, 1 = unbroken (yang), 0 = broken (yin)
+  function hexFigure(bits, changing = []) {
+    const fig = h("span", { class: "hex", role: "img", "aria-label": `hexagram ${bits}` });
+    for (let i = 5; i >= 0; i--)        // drawn top line first
+      fig.append(h("span", { class: "hl " + (bits[i] === "1" ? "yang" : "yin") + (changing.includes(i) ? " chg" : "") }));
+    return fig;
+  }
+  (function cast() {
+    const box = $("#cast");
+    const hexes = D.lines.filter((l) => l.hexagram);
+    if (!box || !hexes.length) return;
+    const bySig = Object.fromEntries(hexes.map((l) => [l.hexagram, l]));
+    const VAL = { 6: "6, old yin: broken, changing", 7: "7, young yang: unbroken", 8: "8, young yin: broken", 9: "9, old yang: unbroken, changing" };
+    const POS = ["first (bottom)", "second", "third", "fourth", "fifth", "top"];
+    let throws = null;
+    const coin = () => { const a = new Uint8Array(3); crypto.getRandomValues(a); return [...a].reduce((s, x) => s + (x & 1 ? 3 : 2), 0); };
+    const link = (l) => h("a", { href: `#sec-${l.stanza}`, text: l.stanza_title || `Hexagram ${l.stanza}` });
+    const result = h("div", { class: "cast-result", "aria-live": "polite" });
+    const selects = POS.map((p, i) => h("select", { "aria-label": `${p} line`, onchange: () => { throws[i] = +selects[i].value; show(); } },
+      ...[6, 7, 8, 9].map((v) => h("option", { value: v, text: VAL[v] }))));
+    function show() {
+      selects.forEach((s, i) => { s.value = throws[i]; });
+      const bits = throws.map((v) => (v % 2 ? "1" : "0")).join("");
+      const changing = throws.map((v, i) => (v === 6 || v === 9 ? i : -1)).filter((i) => i >= 0);
+      const after = throws.map((v) => (v === 9 ? "0" : v === 6 ? "1" : v % 2 ? "1" : "0")).join("");
+      const a = bySig[bits], b = changing.length ? bySig[after] : null;
+      document.querySelectorAll(".lineset.cast-hit").forEach((x) => x.classList.remove("cast-hit"));
+      if (a) {
+        // the section's line 1 is the name and judgment; lines 2 to 7 are the line statements, bottom first
+        const ids = D.lines.filter((l) => l.stanza === a.stanza).map((l) => l.id);
+        changing.forEach((i) => { const el = document.getElementById(ids[i + 1]); if (el) el.classList.add("cast-hit"); });
+      }
+      result.replaceChildren(
+        h("div", { class: "cast-pair" },
+          h("div", {}, hexFigure(bits, changing), h("p", {}, a ? link(a) : `hexagram ${bits} is not in this edition`)),
+          b ? h("div", { class: "arrow", "aria-hidden": "true", text: "→" }) : null,
+          b ? h("div", {}, hexFigure(after), h("p", {}, link(b))) : null),
+        h("p", { class: "cast-how", text: changing.length
+          ? `Changing lines: ${changing.map((i) => POS[i]).join(", ")}. They are marked in the text. Read the judgment and the changing lines of the first hexagram, then the judgment of the second.`
+          : "No changing lines: read the judgment of this hexagram." }));
+    }
+    box.append(
+      h("h2", { text: "Cast a hexagram" }),
+      h("p", { class: "cast-intro", text: "The three-coin method, as traditionally practised: three coins are thrown six times, building the hexagram from the bottom line up. Heads count 3 and tails 2, so each throw totals 6, 7, 8 or 9. Odd totals give an unbroken line, even totals a broken one; 6 and 9 are 'old' lines that change into their opposite, giving a second hexagram. This page describes the practice; it makes no claim about what the result means." }),
+      h("div", { class: "cast-controls" },
+        h("button", { type: "button", class: "tool tool-primary", onclick: () => { throws = Array.from({ length: 6 }, coin); show(); }, text: "Throw the coins" }),
+        h("details", {}, h("summary", { text: "Enter your own throws" }),
+          h("div", { class: "cast-manual" }, ...POS.map((p, i) => h("label", {}, `${p[0].toUpperCase() + p.slice(1)} line `, selects[i])).reverse(),
+            h("button", { type: "button", class: "tool", onclick: () => { throws = selects.map((s) => +s.value); show(); }, text: "Show" })))),
+      result);
+    throws = [7, 7, 7, 7, 7, 7];
+    selects.forEach((s) => { s.value = 7; });
+    box.hidden = false;
+  })();
 
   /* ---------- sound key */
   const keyDlg = $("#key");

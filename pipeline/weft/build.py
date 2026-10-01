@@ -166,14 +166,17 @@ def age_of(year) -> tuple[str, str]:
     return AGES[-1][0], AGES[-1][1]
 
 
-def load_illustration(repo: Path, work: str, size: str = "image") -> dict | None:
-    """The work's illustration from art/works/credits.yaml, embedded as a data URI so the page
-    stays one file. size is "image" (frontispiece) or "thumb" (library row)."""
+def load_illustration(repo: Path, work: str, size: str = "image", private: bool = False) -> dict | None:
+    """The work's illustration from art/works/credits.yaml (and, in a private build, first from
+    private/art/credits.yaml), embedded as a data URI so the page stays one file.
+    size is "image" (frontispiece) or "thumb" (library row)."""
     import base64
-    cf = repo / "art" / "works" / "credits.yaml"
-    if not cf.exists():
-        return None
-    rec = (yaml.safe_load(cf.read_text(encoding="utf-8")) or {}).get(work)
+    rec = None
+    for cf in ([repo / "private" / "art" / "credits.yaml"] if private else []) + [repo / "art" / "works" / "credits.yaml"]:
+        if cf.exists():
+            rec = (yaml.safe_load(cf.read_text(encoding="utf-8")) or {}).get(work)
+            if rec:
+                break
     if not rec or not (repo / rec[size]).exists():
         return None
     b = (repo / rec[size]).read_bytes()
@@ -187,13 +190,19 @@ def frontispiece(ill: dict | None) -> str:
     credit = ", ".join(x for x in (ill.get("credit"), ill.get("date")) if x and x.lower() != "unknown")
     return (f'<figure class="frontis"><img src="{ill["src"]}" alt="{H.escape(ill["alt"])}">'
             f'<figcaption><span class="cap">{H.escape(ill["caption"])}</span>'
-            f'<span class="cred">{H.escape(credit + " · " if credit else "")}{H.escape(ill["license"])} · '
-            f'<a href="{H.escape(ill["source"])}">Wikimedia Commons</a></span></figcaption></figure>')
+            f'<span class="cred">{H.escape(credit + " · " if credit else "")}{H.escape(ill.get("license", ""))} · '
+            + (f'<a href="{H.escape(ill["source"])}">{"Wikimedia Commons" if "wikimedia" in ill["source"] else "source"}</a>' if ill.get("source") else "")
+            + '</span></figcaption></figure>')
 
 
-def library_order(repo: Path) -> list[dict]:
-    """Every work's manifest, oldest composition first: the library's reading order."""
+def library_order(repo: Path, private: bool = False) -> list[dict]:
+    """Every work's manifest, oldest composition first: the library's reading order.
+    The public library is texts/ only; a private build adds the private works (marked _private)."""
+    from .paths import private_works
     ms = [yaml.safe_load(mp.read_text()) for mp in (repo / "texts").glob("*/manifest.yaml")]
+    if private:
+        for w in private_works(repo):
+            ms.append(dict(yaml.safe_load((repo / "private" / w / "manifest.yaml").read_text()), _private=True))
     ms.sort(key=lambda m: ((m.get("written") or {}).get("year", 10**6), m["work"]))
     return ms
 
@@ -215,25 +224,30 @@ def render(data: dict, site_dir: Path) -> str:
 
 
 def run(repo: Path, work: str, private: bool = False) -> Path:
-    work_dir = repo / "texts" / work
-    private_dir = repo / "private" / work if private else None
+    from .paths import is_private_work, resolve_for_build
+    work_dir, private_dir = resolve_for_build(repo, work, private)
     data = assemble(work_dir, private_dir)
+    if is_private_work(repo, work):
+        # never offer to file a private work's title or lines as a public GitHub issue
+        data["work"]["private_work"] = True
+        data["build"]["private"] = True
     # previous and next work in the library's date order, so the pages read as one collection
-    order = [m["work"] for m in library_order(repo)]
+    lib = library_order(repo, private)
+    order = [m["work"] for m in lib]
     i = order.index(work)
-    titles = {m["work"]: m["title"] for m in library_order(repo)}
+    titles = {m["work"]: m["title"] for m in lib}
     data["nav"] = {
         "prev": {"href": f"{order[i-1]}.html", "title": titles[order[i-1]]} if i > 0 else None,
         "next": {"href": f"{order[i+1]}.html", "title": titles[order[i+1]]} if i + 1 < len(order) else None,
     }
     data["_art"] = load_art(repo)
-    data["_illustration"] = load_illustration(repo, work)
+    data["_illustration"] = load_illustration(repo, work, private=private)
     html = render(data, repo / "site")
     out_dir = (repo / "private" / "build") if private else (repo / "site" / "build")
     out_dir.mkdir(parents=True, exist_ok=True)
     out = out_dir / f"{work}.html"
     out.write_text(html)
-    write_index(repo, out_dir)
+    write_index(repo, out_dir, private)
     return out
 
 
@@ -260,11 +274,12 @@ def stanza_ranges(xs: list) -> str:
     return ", ".join(str(a) if a == b else f"{a}–{b}" for a, b in out)
 
 
-def write_index(repo: Path, out_dir: Path) -> Path:
-    """A plain front door listing every built work in out_dir."""
+def write_index(repo: Path, out_dir: Path, private: bool = False) -> Path:
+    """A plain front door listing every built work in out_dir. A private build lists the
+    private works with the public ones, each marked."""
     import html as H
     rows, age = [], None
-    for m in library_order(repo):   # oldest composition first; works without a date go last
+    for m in library_order(repo, private):   # oldest composition first; works without a date go last
         page = out_dir / f"{m['work']}.html"
         if not page.exists():
             continue
@@ -291,7 +306,7 @@ def write_index(repo: Path, out_dir: Path) -> Path:
                 rows.append("</ul></section>")
             rows.append(f'<section class="age"><h2>{H.escape(this_age[0])}<span>{H.escape(this_age[1])}</span></h2><ul>')
             age = this_age
-        ill = load_illustration(repo, m["work"], "thumb")
+        ill = load_illustration(repo, m["work"], "thumb", private=private)
         thumb = (f'<a class="th" href="{H.escape(page.name)}" tabindex="-1" aria-hidden="true">'
                  f'<img src="{ill["src"]}" alt=""></a>') if ill else '<span class="th"></span>'
         lang_name = m.get("lang_name") or LANG_NAMES.get(m["language"], m["language"])
@@ -299,6 +314,7 @@ def write_index(repo: Path, out_dir: Path) -> Path:
                f'<span class="lg">{H.escape(lang_name)}</span></div>'
         rows.append(f'<li>{when}{thumb}<div class="body"><a href="{H.escape(page.name)}"><span class="t">{H.escape(m["title"])}</span>'
                     f'<span class="a">{H.escape(m["author"])} · {span}</span></a>'
+                    + ('<p class="pv">Private: in your build only</p>' if m.get("_private") else "")
                     + (f'<p class="w">{H.escape(written[:1].upper() + written[1:])}</p>' if written else "")
                     + f'<p>{"Reads right to left · " if m["language"] in RTL else ""}'
                     f'{H.escape(", ".join(m["schemes"]))} · {H.escape(trs)}</p></div></li>')
@@ -306,7 +322,10 @@ def write_index(repo: Path, out_dir: Path) -> Path:
         rows.append("</ul></section>")
     idx = out_dir / "index.html"
     art = load_art(repo)
-    idx.write_text(INDEX.replace("{{ROWS}}", "\n".join(rows))
+    from . import docs
+    docs.build_docs(repo, out_dir, art)
+    html = INDEX if not private else INDEX.replace("<h1>Interlinear library</h1>", "<h1>Interlinear library</h1><p class=\"pv\">Private build: includes your own texts and licensed material. Do not publish this folder.</p>")
+    idx.write_text(html.replace("{{ROWS}}", "\n".join(rows)).replace("{{NAV}}", docs.nav_html("index.html"))
                         .replace("{{LOCKUP}}", art.get("weft-lockup", "Weft"))
                         .replace("{{FAVICON}}", art.get("favicon", "")))
     return idx
@@ -338,9 +357,13 @@ ul{list-style:none;padding:0;margin:0}li{border-top:1px solid var(--rule);paddin
 .th{flex-basis:64px;width:64px;height:64px}}
 .body>a:hover .t{color:var(--accent)}.t{font-size:1.6rem;font-weight:700}.a{color:var(--soft)}
 li p{margin:6px 0 0;font:.85rem/1.5 Inter,system-ui,sans-serif;color:var(--soft)}
+.docnav{font:600 .78rem/1.4 Inter,system-ui,sans-serif;letter-spacing:.04em;color:var(--soft);margin:.4rem 0 0}
+.docnav a{color:var(--accent);text-decoration:none}.docnav a:hover{text-decoration:underline}.docnav span{color:var(--ink)}
+p.pv{font:600 .72rem/1.4 Inter,system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin:4px 0 0}
 li p.w{margin-top:4px;font:italic .95rem/1.4 "Gentium Book Plus",Palatino,serif;color:var(--accent)}
 </style></head><body><main><div class="lockup" role="img" aria-label="Weft">{{LOCKUP}}</div><h1>Interlinear library</h1>
 <p class="lede">Classic texts ordered by date: the original text, a phonetic guide to pronouncing it in English, a literal word-for-word translation called a 'gloss', and well-known published translations, together in one evolving, community-led interlinear presentation.</p>
+{{NAV}}
 {{ROWS}}
 </main></body></html>
 """

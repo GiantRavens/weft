@@ -371,7 +371,8 @@ def line_checks(text: str, etoks: list[dict], edition: dict) -> list[tuple[str, 
     oc = edition.get("ocr_check")
     if not oc:
         return []
-    p = Path(__file__).resolve().parents[2] / "texts" / edition["work"] / oc["file"]
+    from .paths import work_dir
+    p = work_dir(Path(__file__).resolve().parents[2], edition["work"]) / oc["file"]
     if str(p) not in _OCR:
         if not p.exists():
             return [("ocr-source-missing", oc["file"])]

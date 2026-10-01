@@ -1,0 +1,28 @@
+run:
+  weft: 0.1.0
+  sections:
+  - statement
+counts:
+  lines: 16
+  tokens: 178
+failures:
+  ocr-disagrees: 3
+samples:
+  ocr-disagrees:
+  - statement.7 末 (內匠末期殘念之心底家來共難忍仕合に御座候)
+  - statement.8 共 (對高家之御歷々家來共挾欝憤候段憚奉存候得共)
+  - statement.11 ゞ (私共死後若御見分之御方御座候はゞ奉願御披見如此御座候以上)
+failure_rate:
+  ocr-disagrees: 0.017
+shift_left: []
+predicted_gaps:
+- no open digital text of the statement was found (not on Japanese Wikisource or Aozora Bunko); the edition is Weft's transcription of a 1910 print, checked against the National Diet Library's OCR of the
+  same pages (ocr-disagrees lists where the OCR differs)
+- 'ocr-disagrees, 3 runs, explained: the OCR reads 末期 as 未期, 得共 as 得其, and the iteration mark of はゞ as katakana ヾ (dropped by the sensor); in each case the scan was checked and the edition follows the scan'
+- the copies of the statement differ in wording (於殿中 or 於御殿中; 難遁 or 難忍; 含意趣 with or without へ; 亡主之意趣 or 亡主之存念); the 1910 print is followed, and a note names the main variants
+- the return marks are the 1910 editor's, not the 1703 document's; they are checked by eye against the scan only. The first mark at 被召上 is faint and is read as 二
+- the print's ketsuji blanks before 仰付 and 上使 are not reproduced
+- the list of signatories is cut after the first three names
+- the reading (yomikudashi) and the 1703 pronunciation are Weft's reconstructions, approximate
+- 'Mitford translated another copy, freely: he renders 含意趣 as avenging ''an insult'', which the document does not say'
+- no treebank; lemma, part of speech and gloss by hand, draft

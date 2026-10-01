@@ -1,0 +1,55 @@
+name: Pronunciation
+description: A sound that should change, a rule that is wrong, or a scheme that should be added.
+title: "Pronunciation: "
+labels: [pronunciation]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A pronunciation change is made only with a citation. Before writing, it may help to read what
+        the current scheme rests on: https://giantravens.github.io/weft/languages.html
+  - type: input
+    id: work
+    attributes:
+      label: Work
+      description: The page, as in its address (for example rigveda-1-1).
+    validations:
+      required: true
+  - type: input
+    id: scheme
+    attributes:
+      label: Scheme
+      description: As chosen in the Loom (for example restored, classical, old-norse).
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options: [one word, a rule (affects every word it governs), the stress or accent rule, a new scheme alongside the existing ones]
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: Words or lines affected
+      description: Word ids from the word panel, or the words themselves.
+  - type: textarea
+    id: proposed
+    attributes:
+      label: What it should be
+      description: IPA if you can, and the respelling if you have a view on it.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Citation
+      description: The grammar, article or corpus the change rests on.
+    validations:
+      required: true
+  - type: input
+    id: credit
+    attributes:
+      label: How you would like to be credited
+      description: A name or a pseudonym. Weft does not publish contact details.

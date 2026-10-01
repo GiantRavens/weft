@@ -1,0 +1,42 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '10'
+  - '11'
+  - '12'
+  - '13'
+  - close
+counts:
+  lines: 60
+  tokens: 744
+failures:
+  kaeriten-emended: 1
+samples:
+  kaeriten-emended:
+  - '4.2 劔: printed 一, read 上'
+failure_rate:
+  kaeriten-emended: 0.001
+shift_left: []
+predicted_gaps:
+- the readings (yomikudashi) are Weft's, after Edo-period conventions; the 1903 edition prints return marks but no okurigana, so particles, inflections and the choice between Japanese and Sino-Japanese
+  readings are editorial
+- the return marks are those of the 1903 edition, not necessarily of the 1615 document; a manuscript copy of the same text (National Archives of Japan) carries kunten of its own
+- 'article 4: the 1903 print closes 爲{{下}} with 劔{{一}}; the reader needs 上 there, as the 1629 text prints it (failure class kaeriten-emended, 1 token; the line reads with 上)'
+- 'article 6 and article 11: the Wikisource transcriber emended two misprints of the 1903 page (雉 to 雖, 馬 to 輿); the edition follows the emended text'
+- 'article 8: the 1903 print marks an omission with ◦ and gives variants in small type (易 before 睽, 志 for 者, 輿 missing); the base text is kept, ◦ is a silent token, and a note gives the variants'
+- 將 in article 8 is read twice (まさに … とす); the token carries both readings and shows both places in the reading order
+- the 1615 pronunciation follows the Jesuit records of Kyoto speech c. 1600–1608 (open and closed long o, f for h, she, ye, wo, kwa); how a scholar-monk read kanbun aloud at Fushimi is not recorded, so
+  the row is approximate
+- 'no complete public-domain English translation was found: J. C. Hall''s (Transactions of the Asiatic Society of Japan 38, part 4, 1911) is not in any open scan located; Murdoch''s one-line digest covers
+  the article headings, and Weft''s editorial translation (draft) covers every line'
+- Murdoch names Hayashi Razan as the drafter (his OCR text reads Kazan); the usual attribution is to Konchiin Sūden (see note)
+- no treebank; lemma, part of speech and gloss by hand, draft

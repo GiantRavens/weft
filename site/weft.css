@@ -270,3 +270,35 @@ body.rtl .src[lang="fa"] { font-family: "Noto Naskh Arabic", "Geeza Pro", "Times
 .sec-fig .cred { display: block; font: 0.7rem/1.5 var(--sans); color: var(--ink-faint); }
 .sec-fig .cred a { color: inherit; }
 @media (max-width: 720px) { .sec-fig { margin-left: 0; } }
+
+/* the Yijing: hexagram figures and the casting panel */
+.hex { display: inline-flex; flex-direction: column; gap: 3px; width: 34px; vertical-align: middle; }
+.hl { height: 4px; display: block; background: currentColor; }
+.hl.yin { background: linear-gradient(to right, currentColor 0 42%, transparent 42% 58%, currentColor 58%); }
+.hl.chg { outline: 2px solid var(--accent); outline-offset: 1px; }
+.hex-head { display: flex; align-items: center; gap: 14px; color: var(--accent); }
+.hex-head .hex { color: var(--ink); width: 28px; gap: 2px; }
+.hex-head .hl { height: 3px; }
+.cast { margin: 20px 16px 8px max(16px, calc((100% - 1120px) / 2 + 16px)); padding: 16px 18px; border: 1px solid var(--rule); border-radius: 10px; max-width: 760px; }
+.cast h2 { font: 600 0.72rem/1 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin: 0 0 10px; }
+.cast-intro, .cast-how { font: 0.88rem/1.55 var(--sans); color: var(--ink-soft); margin: 0 0 12px; }
+.cast-controls { display: flex; flex-wrap: wrap; gap: 12px 18px; align-items: flex-start; }
+.cast-controls summary { font: 0.85rem/2 var(--sans); color: var(--ink-soft); cursor: pointer; }
+.cast-manual { display: grid; gap: 6px; margin-top: 8px; font: 0.82rem/1.4 var(--sans); }
+.cast-manual select { margin-left: 6px; font: inherit; }
+.cast-pair { display: flex; align-items: center; gap: 22px; margin-top: 16px; flex-wrap: wrap; }
+.cast-pair > div { display: flex; align-items: center; gap: 12px; }
+.cast-pair .hex { width: 46px; gap: 5px; }
+.cast-pair .hl { height: 6px; }
+.cast-pair p { margin: 0; font: 1rem/1.4 var(--serif); }
+.cast-pair .arrow { font-size: 1.4rem; color: var(--ink-soft); }
+.lineset.cast-hit { background: color-mix(in srgb, var(--accent) 10%, transparent); border-radius: 8px; }
+@media print { .cast { display: none; } }
+.cast a { color: var(--accent); }
+
+/* a whole-line reading (kanbun read aloud in Japanese order) */
+.reading { margin: 6px 0 0; font: 1.05rem/1.6 var(--serif); color: var(--ink); max-width: 860px; }
+.reading .rl { font: 600 0.66rem/1 var(--sans); letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-right: 10px; }
+body.hide-reading .reading { display: none; }
+/* Japanese kanbun: the script row holds reading-order numbers, set small */
+.lang-ja .w .scr { font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0; }

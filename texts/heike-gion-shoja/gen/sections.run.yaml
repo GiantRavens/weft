@@ -1,0 +1,28 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+counts:
+  lines: 11
+  tokens: 148
+failures:
+  ocr-disagrees: 2
+samples:
+  ocr-disagrees:
+  - 1.10 前 (まぢかくは六波羅の入道前の太政大臣平の朝臣清盛公と申しし人の有樣)
+  - 1.10 清 (まぢかくは六波羅の入道前の太政大臣平の朝臣清盛公と申しし人の有樣)
+failure_rate:
+  ocr-disagrees: 0.014
+shift_left: []
+predicted_gaps:
+- 'the text is the vulgate (rufubon) as printed in 1925, not the Kakuichi text: in this passage the Kakuichi text reads おごれる人 for 驕れるもの, たけき者 for 猛き人, and とぶらへば for とぶらふに (see note); no open digital text
+  of the Kakuichi version was found'
+- no open digital text of this edition exists; Weft transcribed it from the scan and checks it against the National Diet Library's OCR (ocr-disagrees); the OCR omits 前 in 入道前の太政大臣 and cannot read 清 (ocr-disagrees,
+  2 runs, both checked against the scan); it also renders the repetition mark of とり〴〵 as 〓
+- the chapter continues with Kiyomori's ancestry; the edition stops at 心もことばも及ばれね
+- the 1371 pronunciation is reconstructed from indirect evidence (later Jesuit spellings, kana usage, transcriptions in Chinese and Korean sources); the affrication of ti and tu and the value of medial
+  vowels are uncertain for the 14th century
+- the reciters' melody and the biwa are not represented
+- Sadler (1918) is public domain in the United States only (Sadler died 1970); a Weft editorial translation covers every line
+- Sadler's OCR text is corrected in a few places, listed in the sense file's header
+- no treebank; lemma, part of speech and gloss by hand, draft

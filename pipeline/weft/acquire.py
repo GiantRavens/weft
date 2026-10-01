@@ -1,4 +1,4 @@
-"""weft acquire: fetch a work's sources into texts/<work>/sources/, never into git.
+"""weft acquire: fetch a work's sources into texts/<work>/sources/ (or private/<work>/sources/), never into git.
 
 Sources are third-party files under their own licenses. The repository ships only the manifest,
 which names each file, where it comes from, its license, and the sha256 we built against.
@@ -22,8 +22,10 @@ def sources(m: dict) -> list[dict]:
         out.append(dict(m["treebank"], role="treebank"))
     out += [dict(t, role="translation", name=f"{t['translator']}, {t['year']}") for t in m.get("translations", [])]
     out += [dict(x, role="data") for x in m.get("sources_extra", [])]
-    # files without a url are committed with the work (Weft's own editions): nothing to fetch
-    return [s for s in out if s.get("file") and s.get("url")]
+    # files without a url are committed with the work (Weft's own editions): nothing to fetch.
+    # local: true marks a file you supply yourself (a scan or a copy you own, in a private work):
+    # never downloaded, but checked for presence and against its sha256.
+    return [s for s in out if s.get("file") and (s.get("url") or s.get("local"))]
 
 
 def sha256(p: Path) -> str:
@@ -48,7 +50,9 @@ def run(work_dir: Path, accept: bool = False) -> dict:
     rows = []
     for s in sources(m):
         st = status(work_dir, s)
-        if st != "ok" and accept:
+        if st != "ok" and accept and s.get("local"):
+            st = "local-" + st          # nothing to download: put your own copy at this path
+        elif st != "ok" and accept:
             p = work_dir / s["file"]
             p.parent.mkdir(parents=True, exist_ok=True)
             tmp = p.with_suffix(p.suffix + ".part")
@@ -75,14 +79,16 @@ def run(work_dir: Path, accept: bool = False) -> dict:
         rows.append({
             "file": s["file"], "role": s["role"], "name": s.get("name", s.get("id")),
             "license": s.get("license"), "license_url": s.get("license_url"),
-            "terms": s.get("terms"), "url": s["url"], "status": st,
+            "terms": s.get("terms"), "url": s.get("url") or "local file, supplied by you", "status": st,
         })
-    need = [r for r in rows if r["status"] in ("missing", "hash-mismatch")]
+    need = [r for r in rows if r["status"] in ("missing", "hash-mismatch", "local-missing", "local-hash-mismatch")]
     return {
         "work": m["work"],
         "sources": rows,
         "next": ("Read the licenses above, then rerun with --accept-licenses to download."
                  if need and not accept else "All sources present and verified."
                  if all(r["status"] in ("ok", "downloaded") for r in rows)
+                 else "Some local files are missing or differ from their sha256; place your own copy at the listed path."
+                 if any(r["status"].startswith("local-") for r in rows)
                  else "Some downloads did not match the pinned sha256; see *.unverified files."),
     }

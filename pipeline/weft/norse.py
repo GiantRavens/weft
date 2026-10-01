@@ -193,6 +193,18 @@ def _respell(ipa: str, scheme: str) -> str:
 
 def phonemize(word: str, scheme: str = "old-norse", quantities=None, **_) -> dict:
     w = "".join(ch for ch in word if ch not in PUNCT)
+    host_, _, clitic_ = w.strip("-").partition("-")
+    if clitic_ and any(ch.isalpha() for ch in host_) and any(ch.isalpha() for ch in clitic_):
+        # a hyphenated enclitic (er-a, kann-at, ákk-a): the host keeps the stress, the enclitic
+        # follows as its own unstressed syllable(s)
+        host, _, clitic = w.strip("-").partition("-")
+        h, c = phonemize(host, scheme), phonemize(clitic, scheme)
+        hs = h["respell"].upper() if h["syllables"] == 1 else h["respell"]
+        hi = h["ipa"] if h["ipa"].startswith("ˈ") else "ˈ" + h["ipa"]
+        if not c["syllables"]:          # a bare consonant (skyli-t) closes the host's last syllable
+            return {"ipa": h["ipa"] + c["ipa"], "respell": h["respell"] + c["respell"].lower(), "syllables": h["syllables"]}
+        return {"ipa": f"{hi}.{c['ipa'].lstrip('ˈ')}", "respell": f"{hs}-{c['respell'].lower()}",
+                "syllables": h["syllables"] + c["syllables"]}
     segs = _segments(w)
     if (scheme == "modern-icelandic" and len(segs) >= 2 and segs[-1].text == "r"
             and not segs[-2].vowel and segs[-2].text != "r"):

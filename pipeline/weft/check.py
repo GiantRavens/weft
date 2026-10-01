@@ -8,7 +8,8 @@ from .build import assemble
 
 
 def run(repo: Path, work: str) -> dict:
-    data = assemble(repo / "texts" / work)
+    from .paths import work_dir
+    data = assemble(work_dir(repo, work))
     problems: Counter[str] = Counter()
     samples: dict[str, list[str]] = {}
 

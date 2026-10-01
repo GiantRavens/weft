@@ -1,0 +1,962 @@
+# Weft edition of the Buke shohatto (武家諸法度) of 1615, the Genna text of thirteen articles, as
+# printed in Kondō Heijō, ed., Kaitei Shiseki shūran, vol. 17 (1903), pp. 218-220, from the Japanese
+# Wikisource transcription of those scan pages (pinned revisions, see the manifest). Each line is
+# checked verbatim against its page with the return marks and markup stripped (verify_strip); the
+# return marks themselves are checked by japanese.line_checks against the page as printed
+# (kunten_in), mark by mark.
+#
+# The text is kanbun: Chinese-character text that a Japanese reader read aloud in Japanese. Tokens
+# are single characters, or a compound verb where the print sets one mark for both characters
+# (kaeri_at gives the character it follows). For each token: t = character(s) as printed;
+# n = its reading, in historical kana, with the inflection and particles the reader supplied
+# (okurigana); kaeri = the return mark printed beside it; oki = a character the reader passes over;
+# saidoku = the first reading of a character read twice; mod = today's reading where the rules do
+# not give it; kaeri_read = the mark a reader needs where the print has another. yomi on a line is
+# the whole line as read aloud (yomikudashi), checked against the order and the readings.
+#
+# Line division and the readings are Weft's (draft). The Wikisource transcriber emended two
+# misprints of the 1903 page (雉 to 雖 in article 6, 馬 to 輿 in article 11, recorded in HTML
+# comments on the page); the edition follows the emended text, and a note records both.
+work: buke-shohatto-1615
+joiner: ''
+verify_in: sources/shiseki17-p218.txt
+verify_strip: <!--.*?-->|\{\{[レ一二三上中下甲乙]+\}\}|\{\{(?:small|r)\||\|[^|{}]*ィ\}\}|\}\}
+kunten_in:
+- sources/shiseki17-p218.txt
+- sources/shiseki17-p219.txt
+- sources/shiseki17-p220.txt
+sections:
+- id: '1'
+  title: 'Article 1: letters and arms'
+  verify_in: sources/shiseki17-p218.txt
+  kunten: true
+  lines:
+  - yomi: 一つ、文武弓馬の道、專ら相嗜むべき事
+    tokens:
+    - {t: 一, n: ひとつ}
+    - {t: 文, n: ぶん}
+    - {t: 武, n: ぶ}
+    - {t: 弓, n: きう}
+    - {t: 馬, n: ば}
+    - {t: 之, n: の}
+    - {t: 道, n: みち}
+    - {t: 專, n: もっぱら}
+    - {t: 可, kaeri: 二, n: べき}
+    - {t: 相, n: あひ}
+    - {t: 嗜, kaeri: 一, n: たしなむ}
+    - {t: 事, n: こと}
+  - yomi: 左文右武は古の法なり
+    tokens:
+    - {t: 左, n: さ}
+    - {t: 文, n: ぶん}
+    - {t: 右, n: いう}
+    - {t: 武, n: ぶは}
+    - {t: 古, n: いにしへ}
+    - {t: 之, n: の}
+    - {t: 法, n: はふ}
+    - {t: 也, n: なり}
+  - yomi: 兼備せざるべからず
+    tokens:
+    - {t: 不, kaeri: レ, n: ず}
+    - {t: 可, kaeri: レ, n: べから}
+    - {t: 不, kaeri: 二, n: ざる}
+    - {t: 兼, n: けん}
+    - {t: 備, kaeri: 一, n: びせ}
+    - {t: 矣, oki: true}
+  - yomi: 弓馬は是れ武家の要樞なり
+    tokens:
+    - {t: 弓, n: きう}
+    - {t: 馬, n: ばは}
+    - {t: 是, n: これ}
+    - {t: 武, n: ぶ}
+    - {t: 家, n: け}
+    - {t: 之, n: の}
+    - {t: 要, n: えう}
+    - {t: 樞, n: すう}
+    - {t: 也, n: なり}
+  - yomi: 兵を號して凶器と爲す、已むを得ずして之を用ふ
+    tokens:
+    - {t: 號, kaeri: レ, n: がうして}
+    - {t: 兵, n: へいを}
+    - {t: 爲, kaeri: 二, n: なす}
+    - {t: 凶, n: きょう}
+    - {t: 器, kaeri: 一, n: きと}
+    - {t: 不, kaeri: レ, n: ずして}
+    - {t: 得, kaeri: レ, n: え}
+    - {t: 已, n: やむを}
+    - {t: 而, oki: true}
+    - {t: 用, kaeri: レ, n: もち'ふ, mod: もちう}
+    - {t: 之, n: これを}
+  - yomi: 治にして乱を忘れず、何ぞ修鍊を勵まざらんや
+    tokens:
+    - {t: 治, n: ちにして}
+    - {t: 不, kaeri: レ, n: ず}
+    - {t: 忘, kaeri: レ, n: わすれ}
+    - {t: 乱, n: らんを}
+    - {t: 何, n: なんぞ}
+    - {t: 不, kaeri: レ, n: ざらん}
+    - {t: 勵, kaeri: 二, n: はげま}
+    - {t: 修, n: しう}
+    - {t: 鍊, kaeri: 一, n: れんを}
+    - {t: 乎, n: や}
+- id: '2'
+  title: 'Article 2: drinking parties and idle amusement'
+  verify_in: sources/shiseki17-p218.txt
+  kunten: true
+  lines:
+  - yomi: 一つ、群飮佚遊を制すべき事
+    tokens:
+    - {t: 一, n: ひとつ}
+    - {t: 可, kaeri: レ, n: べき}
+    - {t: 制, kaeri: 二, n: せいす}
+    - {t: 群, n: ぐん}
+    - {t: 飮, n: いん}
+    - {t: 佚, n: いつ}
+    - {t: 遊, kaeri: 一, n: いうを}
+    - {t: 事, n: こと}
+  - yomi: 令條に載する所の嚴制、殊に重し
+    tokens:
+    - {t: 令, n: れい}
+    - {t: 條, n: でうに}
+    - {t: 所, kaeri: レ, n: ところの}
+    - {t: 載, n: のする}
+    - {t: 嚴, n: げん}
+    - {t: 制, n: せい}
+    - {t: 殊, n: ことに}
+    - {t: 重, n: おもし}
+  - yomi: 好色に耽り、博奕を業とするは、是れ亡國の基なり
+    tokens:
+    - {t: 耽, kaeri: 二, n: ふけり}
+    - {t: 好, n: かう}
+    - {t: 色, kaeri: 一, n: しょくに}
+    - {t: 業, kaeri: 二, n: わざとするは}
+    - {t: 博, n: ばく}
+    - {t: 奕, kaeri: 一, n: えきを}
+    - {t: 是, n: これ}
+    - {t: 亡, n: ばう}
+    - {t: 國, n: こく}
+    - {t: 之, n: の}
+    - {t: 基, n: もとゐ}
+    - {t: 也, n: なり}
+- id: '3'
+  title: 'Article 3: those who break the law'
+  verify_in: sources/shiseki17-p218.txt
+  kunten: true
+  lines:
+  - yomi: 一つ、法度に背く輩、國々に隱し置くべからざる事
+    tokens:
+    - {t: 一, n: ひとつ}
+    - {t: 背, kaeri: 二, n: そむく}
+    - {t: 法, n: はっ}
+    - {t: 度, kaeri: 一, n: とに}
+    - {t: 輩, n: ともがら}
+    - {t: 不, kaeri: レ, n: ざる}
+    - {t: 可, kaeri: レ, n: べから}
+    - {t: 隱置, kaeri_at: 1, kaeri: 二, n: かくしおく}
+    - {t: 於, oki: true}
+    - {t: 國, n: くに}
+    - {t: 々, kaeri: 一, n: ぐにに}
+    - {t: 事, n: こと}
+  - yomi: 法は是れ禮節の本なり
+    tokens:
+    - {t: 法, n: はふは}
+    - {t: 是, n: これ}
+    - {t: 禮, n: れい}
+    - {t: 節, n: せつ}
+    - {t: 之, n: の}
+    - {t: 本, n: もと}
+    - {t: 也, n: なり}
+  - yomi: 法を以て理を破るも、理を以て法を破らず
+    tokens:
+    - {t: 以, kaeri: レ, n: もって}
+    - {t: 法, n: はふを}
+    - {t: 破, kaeri: レ, n: やぶるも}
+    - {t: 理, n: りを}
+    - {t: 以, kaeri: レ, n: もって}
+    - {t: 理, n: りを}
+    - {t: 不, kaeri: レ, n: ず}
+    - {t: 破, kaeri: レ, n: やぶら}
+    - {t: 法, n: はふを}
+  - yomi: 法に背くの類、其の科輕からず
+    tokens:
+    - {t: 背, kaeri: レ, n: そむく}
+    - {t: 法, n: はふに}
+    - {t: 之, n: の}
+    - {t: 類, n: たぐひ}
+    - {t: 其, n: その}
+    - {t: 科, n: とが}
+    - {t: 不, kaeri: レ, n: ず}
+    - {t: 輕, n: かろから}
+- id: '4'
+  title: 'Article 4: rebels and murderers among retainers'
+  verify_in: sources/shiseki17-p218.txt
+  kunten: true
+  lines:
+  - yomi: 一つ、國々の大名小名幷びに諸給人、各士卒を相抱ふるに、叛逆殺害人たるを吿ぐる有らば、速かに追ひ出すべき事
+    tokens:
+    - {t: 一, n: ひとつ}
+    - {t: 國, n: くに}
+    - {t: 々, n: ぐにの}
+    - {t: 大, n: だい}
+    - {t: 名, n: みゃう}
+    - {t: 小, n: せう}
+    - {t: 名, n: みゃう}
+    - {t: 幷, n: ならびに}
+    - {t: 諸, n: しょ}
+    - {t: 給, n: きふ}
+    - {t: 人, n: にん}
+    - {t: 各, n: おのおの}
+    - {t: 相抱, kaeri_at: 1, kaeri: 二, n: あひかかふるに, mod: あいかかうるに}
+    - {t: 士, n: し}
+    - {t: 卒, kaeri: 一, n: そつを}
+    - {t: 有, kaeri: 下, n: あら}
+    - {t: 爲, kaeri: 二, n: たるを}
+    - {t: 叛, n: はん}
+    - {t: 逆, n: ぎゃく}
+    - {t: 殺, n: せつ}
+    - {t: 害, n: がい}
+    - {t: 人, kaeri: 一, n: にん}
+    - {t: 吿, kaeri: 上, n: つぐる}
+    - {t: 者, n: ば}
+    - {t: 速, n: すみやかに}
+    - {t: 可, kaeri: 二, n: べき}
+    - {t: 追, n: おひ}
+    - {t: 出, kaeri: 一, n: いだす}
+    - {t: 事, n: こと}
+  - yomi: 夫れ野心を挾む者は、國家を覆すの利噐、人民を絕つの鋒劔たり
+    tokens:
+    - {t: 夫, n: それ}
+    - {t: 挾, kaeri: 二, n: さしはさむ}
+    - {t: 野, n: や}
+    - {t: 心, kaeri: 一, n: しんを}
+    - {t: 者, n: ものは}
+    - {t: 爲, kaeri: 下, n: たり}
+    - {t: 覆, kaeri: 二, n: くつがへす}
+    - {t: 國, n: こく}
+    - {t: 家, kaeri: 一, n: かを}
+    - {t: 之, n: の}
+    - {t: 利, n: り}
+    - {t: 噐, n: き}
+    - {t: 絕, kaeri: 二, n: たつ}
+    - {t: 人, n: じん}
+    - {t: 民, kaeri: 一, n: みんを}
+    - {t: 之, n: の}
+    - {t: 鋒, n: ほう}
+    - {t: 劔, kaeri_read: 上, kaeri: 一, n: けん}
+    - {t: 也, oki: true}
+  - yomi: 豈に是れ允容するに足らんや
+    tokens:
+    - {t: 豈, n: あに}
+    - {t: 是, n: これ}
+    - {t: 足, kaeri: 二, n: たらん}
+    - {t: 允, n: いん}
+    - {t: 容, kaeri: 一, n: ようするに}
+    - {t: 乎, n: や}
+- id: '5'
+  title: 'Article 5: men of other domains'
+  verify_in: sources/shiseki17-p218.txt
+  kunten: true
+  lines:
+  - yomi: 一つ、自今以後、國人の外、他國の者を交へ置くべからざる事
+    tokens:
+    - {t: 一, n: ひとつ}
+    - {t: 自, n: じ}
+    - {t: 今, n: こん}
+    - {t: 以, n: い}
+    - {t: 後, n: ご}
+    - {t: 國, n: こく}
+    - {t: 人, n: じん}
+    - {t: 之, n: の}
+    - {t: 外, n: ほか}
+    - {t: 不, kaeri: レ, n: ざる}
+    - {t: 可, kaeri: レ, n: べから}
+    - {t: 交置, kaeri_at: 1, kaeri: 二, n: まじへおく}
+    - {t: 他, n: た}
+    - {t: 國, n: こくの}
+    - {t: 者, kaeri: 一, n: ものを}
+    - {t: 事, n: こと}
+  - yomi: 凡そ國に因って其の風是れ異なり
+    tokens:
+    - {t: 凡, n: およそ}
+    - {t: 因, kaeri: レ, n: よって}
+    - {t: 國, n: くにに}
+    - {t: 其, n: その}
+    - {t: 風, n: ふう}
+    - {t: 是, n: これ}
+    - {t: 異, n: ことなり}
+  - yomi: 或いは自國の密事を以て他國に吿げ、或いは他國の密事を自國に吿ぐるは、侫媚の萠なり
+    tokens:
+    - {t: 或, n: あるいは}
+    - {t: 以, kaeri: 二, n: もって}
+    - {t: 自, n: じ}
+    - {t: 國, n: こく}
+    - {t: 之, n: の}
+    - {t: 密, n: みつ}
+    - {t: 事, kaeri: 一, n: じを}
+    - {t: 吿, kaeri: 二, n: つげ}
+    - {t: 他, n: た}
+    - {t: 國, kaeri: 一, n: こくに}
+    - {t: 或, n: あるいは}
+    - {t: 他, n: た}
+    - {t: 國, n: こく}
+    - {t: 之, n: の}
+    - {t: 密, n: みつ}
+    - {t: 事, n: じを}
+    - {t: 吿, kaeri: 二, n: つぐるは}
+    - {t: 自, n: じ}
+    - {t: 國, kaeri: 一, n: こくに}
+    - {t: 侫, n: ねい}
+    - {t: 媚, n: び}
+    - {t: 之, n: の}
+    - {t: 萠, n: きざし}
+    - {t: 也, n: なり}
+- id: '6'
+  title: 'Article 6: castles, repairs and new works'
+  verify_in: sources/shiseki17-p218.txt
+  kunten: true
+  lines:
+  - yomi: 一つ、諸國の居城、修補たりと雖も、必ず言上すべし、况んや新儀の搆營、堅く停止せしむる事
+    tokens:
+    - {t: 一, n: ひとつ}
+    - {t: 諸, n: しょ}
+    - {t: 國, n: こくの}
+    - {t: 居, n: きょ}
+    - {t: 城, n: じゃう}
+    - {t: 雖, kaeri: レ, n: いへども}
+    - {t: 爲, kaeri: 二, n: たりと}
+    - {t: 修, n: しう}
+    - {t: 補, kaeri: 一, n: ほ}
+    - {t: 必, n: かならず}
+    - {t: 可, kaeri: 二, n: べし}
+    - {t: 言, n: ごん}
+    - {t: 上, kaeri: 一, n: じゃうす}
+    - {t: 况, n: いはんや}
+    - {t: 新, n: しん}
+    - {t: 儀, n: ぎ}
+    - {t: 之, n: の}
+    - {t: 搆, n: こう}
+    - {t: 營, n: えい}
+    - {t: 堅, n: かたく}
+    - {t: 令, kaeri: 二, n: しむる}
+    - {t: 停, n: ちゃう}
+    - {t: 止, kaeri: 一, n: じせ}
+    - {t: 事, n: こと}
+  - yomi: 城、百雉を過ぐるは國の害なり
+    tokens:
+    - {t: 城, n: しろ}
+    - {t: 過, kaeri: 二, n: すぐるは}
+    - {t: 百, n: ひゃく}
+    - {t: 雉, kaeri: 一, n: ちを}
+    - {t: 國, n: くに}
+    - {t: 之, n: の}
+    - {t: 害, n: がい}
+    - {t: 也, n: なり}
+  - yomi: 壘を峻くし、隍を浚ふは、大乱の本なり
+    tokens:
+    - {t: 峻, kaeri: レ, n: たかくし}
+    - {t: 壘, n: るいを}
+    - {t: 浚, kaeri: レ, n: さらふは, mod: さらうは}
+    - {t: 隍, n: ほりを}
+    - {t: 大, n: たい}
+    - {t: 乱, n: らんの}
+    - {t: 本, n: もと}
+    - {t: 也, n: なり}
+- id: '7'
+  title: 'Article 7: plots in a neighbouring domain'
+  verify_in: sources/shiseki17-p218.txt
+  kunten: true
+  lines:
+  - yomi: 一つ、隣國に於て新儀を企て、徒黨を結ぶ者、之有らば、早く言上を致すべき事
+    tokens:
+    - {t: 一, n: ひとつ}
+    - {t: 於, kaeri: 二, n: おいて}
+    - {t: 隣, n: りん}
+    - {t: 國, kaeri: 一, n: ごくに}
+    - {t: 企, kaeri: 二, n: くはだて}
+    - {t: 新, n: しん}
+    - {t: 儀, kaeri: 一, n: ぎを}
+    - {t: 結, kaeri: 二, n: むすぶ}
+    - {t: 徒, n: と}
+    - {t: 黨, kaeri: 一, n: たうを}
+    - {t: 者, n: もの}
+    - {t: 有, kaeri: レ, n: あら}
+    - {t: 之, n: これ}
+    - {t: 者, n: ば}
+    - {t: 早, n: はやく}
+    - {t: 可, kaeri: レ, n: べき}
+    - {t: 致, kaeri: 二, n: いたす}
+    - {t: 言, n: ごん}
+    - {t: 上, kaeri: 一, n: じゃうを}
+    - {t: 事, n: こと}
+  - yomi: 人皆黨有り、亦達者少し
+    tokens:
+    - {t: 人, n: ひと}
+    - {t: 皆, n: みな}
+    - {t: 有, kaeri: レ, n: あり}
+    - {t: 黨, n: たう}
+    - {t: 亦, n: また}
+    - {t: 少, kaeri: 二, n: すくなし}
+    - {t: 達, n: たっ}
+    - {t: 者, kaeri: 一, n: しゃ}
+  - yomi: 是を以て、或いは君父に順はず、乍ち隣里に違ふ
+    tokens:
+    - {t: 是, n: ここを}
+    - {t: 以, n: もって}
+    - {t: 或, n: あるいは}
+    - {t: 不, kaeri: レ, n: ず}
+    - {t: 順, kaeri: 二, n: したがは}
+    - {t: 君, n: くん}
+    - {t: 父, kaeri: 一, n: ぷに}
+    - {t: 乍, n: たちまち}
+    - {t: 違, kaeri: 二, n: たがふ, mod: たがう}
+    - {t: 于, oki: true}
+    - {t: 隣, n: りん}
+    - {t: 里, kaeri: 一, n: りに}
+  - yomi: 舊例を守らず、何ぞ新儀を企てんや
+    tokens:
+    - {t: 不, kaeri: レ, n: ず}
+    - {t: 守, kaeri: 二, n: まもら}
+    - {t: 舊, n: きう}
+    - {t: 例, kaeri: 一, n: れいを}
+    - {t: 何, n: なんぞ}
+    - {t: 企, kaeri: 二, n: くはだてん}
+    - {t: 新, n: しん}
+    - {t: 儀, kaeri: 一, n: ぎを}
+    - {t: 乎, n: や}
+- id: '8'
+  title: 'Article 8: marriages'
+  verify_in: sources/shiseki17-p219.txt
+  kunten: true
+  lines:
+  - yomi: 一つ、私に婚姻を締ぶべからざる事
+    tokens:
+    - {t: 一, n: ひとつ}
+    - {t: 私, n: わたくしに}
+    - {t: 不, kaeri: レ, n: ざる}
+    - {t: 可, kaeri: レ, n: べから}
+    - {t: 締, kaeri: 二, n: むすぶ}
+    - {t: 婚, n: こん}
+    - {t: 姻, kaeri: 一, n: いんを}
+    - {t: 事, n: こと}
+  - yomi: 夫れ婚合は陰陽和同の道なり、容易にすべからず
+    tokens:
+    - {t: 夫, n: それ}
+    - {t: 婚, n: こん}
+    - {t: 合, n: がふ}
+    - {t: 者, n: は}
+    - {t: 陰, n: いん}
+    - {t: 陽, n: やう}
+    - {t: 和, n: わ}
+    - {t: 同, n: どう}
+    - {t: 之, n: の}
+    - {t: 道, n: みち}
+    - {t: 也, n: なり}
+    - {t: 不, kaeri: レ, n: ず}
+    - {t: 可, kaeri: 二, n: べから}
+    - {t: 容, n: よう}
+    - {t: 易, kaeri: 一, n: いにす}
+  - yomi: 睽に曰く、寇に匪ず、婚媾は將に寇に通ぜんとすれば、則ち時を失ふ
+    tokens:
+    - {t: ◦, oki: true}
+    - {t: 睽, n: けいに}
+    - {t: 曰, n: いはく}
+    - {t: 匪, kaeri: レ, n: あらず}
+    - {t: 寇, n: あだに}
+    - {t: 婚, n: こん}
+    - {t: 媾, n: こう}
+    - {t: 者, n: は}
+    - {t: 將, kaeri: レ, saidoku: まさに, n: まさに・とすれば}
+    - {t: 通, kaeri: レ, n: つうぜん}
+    - {t: 寇, n: あだに}
+    - {t: 則, n: すなはち}
+    - {t: 失, kaeri: レ, n: うしなふ, mod: うしなう}
+    - {t: 時, n: ときを}
+  - yomi: 桃夭に曰く、男女正しきを以てし、婚姻時を以てすれば、國に鰥民無きなり
+    tokens:
+    - {t: 桃, n: たう}
+    - {t: 夭, n: えうに}
+    - {t: 曰, n: いはく}
+    - {t: 男, n: なん}
+    - {t: 女, n: にょ}
+    - {t: 以, kaeri: レ, n: もってし}
+    - {t: 正, n: ただしきを}
+    - {t: 婚, n: こん}
+    - {t: 姻, n: いん}
+    - {t: 以, kaeri: レ, n: もってすれば}
+    - {t: 時, n: ときを}
+    - {t: 國, n: くにに}
+    - {t: 無, kaeri: 二, n: なき}
+    - {t: 鰥, n: くゎん}
+    - {t: 民, kaeri: 一, n: みん}
+    - {t: 也, n: なり}
+  - yomi: 緣を以て黨を成すは、是れ姦謀の本なり
+    tokens:
+    - {t: 以, kaeri: レ, n: もって}
+    - {t: 緣, n: えんを}
+    - {t: 成, kaeri: レ, n: なす}
+    - {t: 黨, n: たうを}
+    - {t: 者, n: は}
+    - {t: 是, n: これ}
+    - {t: 姦, n: かん}
+    - {t: 謀, n: ぼうの}
+    - {t: 本, n: もと}
+    - {t: 也, n: なり}
+- id: '9'
+  title: 'Article 9: daimyō coming to court'
+  verify_in: sources/shiseki17-p219.txt
+  kunten: true
+  lines:
+  - yomi: 一つ、諸大名參勤作法の事
+    tokens:
+    - {t: 一, n: ひとつ}
+    - {t: 諸, n: しょ}
+    - {t: 大, n: だい}
+    - {t: 名, n: みゃう}
+    - {t: 參, n: さん}
+    - {t: 勤, n: きん}
+    - {t: 作, n: さ}
+    - {t: 法, n: はふ}
+    - {t: 之, n: の}
+    - {t: 事, n: こと}
+  - yomi: 續日本紀の制に曰く、公事に預からずして、恣に己が族を集むることを得ず
+    tokens:
+    - {t: 續, n: しょく}
+    - {t: 日, n: に}
+    - {t: 本, n: ほん}
+    - {t: 紀, n: ぎの}
+    - {t: 制, n: せいに}
+    - {t: 曰, n: いはく}
+    - {t: 不, kaeri: レ, n: ずして}
+    - {t: 預, kaeri: 二, n: あづから}
+    - {t: 公, n: く}
+    - {t: 事, kaeri: 一, n: じに}
+    - {t: 恣, n: ほしいままに}
+    - {t: 不, kaeri: レ, n: ず}
+    - {t: 得, kaeri: レ, n: え}
+    - {t: 集, kaeri: 二, n: あつむることを}
+    - {t: 己, n: おのが}
+    - {t: 族, kaeri: 一, n: やからを}
+  - yomi: 京裡に二十騎以上集行することを得ず、云々
+    tokens:
+    - {t: 京, n: きゃう}
+    - {t: 裡, n: りに}
+    - {t: 二, n: に}
+    - {t: 十, n: じふ}
+    - {t: 騎, n: き}
+    - {t: 以, n: い}
+    - {t: 上, n: じゃう}
+    - {t: 不, kaeri: レ, n: ず}
+    - {t: 得, kaeri: 二, n: え}
+    - {t: 集, n: しふ}
+    - {t: 行, kaeri: 一, n: かうすることを}
+    - {t: 云, n: うん}
+    - {t: 々, n: ぬん}
+  - yomi: 然らば則ち多勢を引卒すべからず
+    tokens:
+    - {t: 然, n: しからば}
+    - {t: 則, n: すなはち}
+    - {t: 不, kaeri: レ, n: ず}
+    - {t: 可, kaeri: レ, n: べから}
+    - {t: 引卒, kaeri_at: 1, kaeri: 二, n: いんそつす}
+    - {t: 多, n: た}
+    - {t: 勢, kaeri: 一, n: ぜいを}
+  - yomi: 百萬石以下二拾萬石以上は二十騎を過ぐべからず
+    tokens:
+    - {t: 百, n: ひゃく}
+    - {t: 萬, n: まん}
+    - {t: 石, n: ごく}
+    - {t: 以, n: い}
+    - {t: 下, n: か}
+    - {t: 二, n: に}
+    - {t: 拾, n: じふ}
+    - {t: 萬, n: まん}
+    - {t: 石, n: ごく}
+    - {t: 以, n: い}
+    - {t: 上, n: じゃうは}
+    - {t: 不, kaeri: レ, n: ず}
+    - {t: 可, kaeri: レ, n: べから}
+    - {t: 過, kaeri: 二, n: すぐ}
+    - {t: 二, n: に}
+    - {t: 十, n: じふ}
+    - {t: 騎, kaeri: 一, n: きを}
+  - yomi: 十萬石以下は其の相應たるべし
+    tokens:
+    - {t: 十, n: じふ}
+    - {t: 萬, n: まん}
+    - {t: 石, n: ごく}
+    - {t: 以, n: い}
+    - {t: 下, n: かは}
+    - {t: 可, kaeri: レ, n: べし}
+    - {t: 爲, kaeri: 二, n: たる}
+    - {t: 其, n: その}
+    - {t: 相, n: さう}
+    - {t: 應, kaeri: 一, n: おう}
+  - yomi: 盖し公役の時は其の分限に隨ふべし
+    tokens:
+    - {t: 盖, n: けだし}
+    - {t: 公, n: く}
+    - {t: 役, n: やく}
+    - {t: 之, n: の}
+    - {t: 時, n: とき}
+    - {t: 者, n: は}
+    - {t: 可, kaeri: レ, n: べし}
+    - {t: 隨, kaeri: 二, n: したがふ, mod: したがう}
+    - {t: 其, n: その}
+    - {t: 分, n: ぶ}
+    - {t: 限, kaeri: 一, n: げんに}
+    - {t: 矣, oki: true}
+- id: '10'
+  title: 'Article 10: dress and rank'
+  verify_in: sources/shiseki17-p219.txt
+  kunten: true
+  lines:
+  - yomi: 一つ、衣裳の品混雜すべからざる事
+    tokens:
+    - {t: 一, n: ひとつ}
+    - {t: 衣, n: い}
+    - {t: 裳, n: しゃう}
+    - {t: 之, n: の}
+    - {t: 品, n: しな}
+    - {t: 不, kaeri: レ, n: ざる}
+    - {t: 可, kaeri: 二, n: べから}
+    - {t: 混, n: こん}
+    - {t: 雜, kaeri: 一, n: ざふす}
+    - {t: 事, n: こと}
+  - yomi: 君臣上下各別たるべし
+    tokens:
+    - {t: 君, n: くん}
+    - {t: 臣, n: しん}
+    - {t: 上, n: じゃう}
+    - {t: 下, n: げ}
+    - {t: 可, kaeri: レ, n: べし}
+    - {t: 爲, kaeri: 二, n: たる}
+    - {t: 各, n: かく}
+    - {t: 別, kaeri: 一, n: べつ}
+  - yomi: 白綾、白小袖、紫裏、練、無紋の小袖、紫袷、御免無き衆、猥りに着用有るべからず
+    tokens:
+    - {t: 白, n: しろ}
+    - {t: 綾, n: あや}
+    - {t: 白, n: しろ}
+    - {t: 小, n: こ}
+    - {t: 袖, n: そで}
+    - {t: 紫, n: むらさき}
+    - {t: 裏, n: うら}
+    - {t: 練, n: ねり}
+    - {t: 無, n: む}
+    - {t: 紋, n: もんの}
+    - {t: 小, n: こ}
+    - {t: 袖, n: そで}
+    - {t: 紫, n: むらさき}
+    - {t: 袷, n: あはせ}
+    - {t: 無, kaeri: 二, n: なき}
+    - {t: 御, n: ご}
+    - {t: 免, kaeri: 一, n: めん}
+    - {t: 衆, n: しゅ}
+    - {t: 猥, n: みだりに}
+    - {t: 不, kaeri: レ, n: ず}
+    - {t: 可, kaeri: レ, n: べから}
+    - {t: 有, kaeri: 二, n: ある}
+    - {t: 着, n: ちゃく}
+    - {t: 用, kaeri: 一, n: よう}
+  - yomi: 近代、郞從諸卒の綾羅錦繡等の飾服、古法に非ず、甚だ制す
+    tokens:
+    - {t: 近, n: きん}
+    - {t: 代, n: だい}
+    - {t: 郞, n: らう}
+    - {t: 從, n: じゅう}
+    - {t: 諸, n: しょ}
+    - {t: 卒, n: そつの}
+    - {t: 綾, n: りょう}
+    - {t: 羅, n: ら}
+    - {t: 錦, n: きん}
+    - {t: 繡, n: しう}
+    - {t: 等, n: とう}
+    - {t: 之, n: の}
+    - {t: 飾, n: しょく}
+    - {t: 服, n: ふく}
+    - {t: 非, kaeri: 二, n: あらず}
+    - {t: 古, n: こ}
+    - {t: 法, kaeri: 一, n: はふに}
+    - {t: 甚, n: はな・はだ}
+    - {t: 制, n: せいす}
+    - {t: 焉, oki: true}
+- id: '11'
+  title: 'Article 11: palanquins'
+  verify_in: sources/shiseki17-p219.txt
+  kunten: true
+  lines:
+  - yomi: 一つ、雜人恣に乘輿すべからざる事
+    tokens:
+    - {t: 一, n: ひとつ}
+    - {t: 雜, n: ざふ}
+    - {t: 人, n: にん}
+    - {t: 恣, n: ほしいままに}
+    - {t: 不, kaeri: レ, n: ざる}
+    - {t: 可, kaeri: 二, n: べから}
+    - {t: 乘, n: じょう}
+    - {t: 輿, kaeri: 一, n: よす}
+    - {t: 事, n: こと}
+  - yomi: 古來、其の人に依って、御免無く乘輿する家之有り、御免以後乘る家之有り
+    tokens:
+    - {t: 古, n: こ}
+    - {t: 來, n: らい}
+    - {t: 依, kaeri: 二, n: よって}
+    - {t: 其, n: その}
+    - {t: 人, kaeri: 一, n: ひとに}
+    - {t: 無, kaeri: 二, n: なく}
+    - {t: 御, n: ご}
+    - {t: 免, kaeri: 一, n: めん}
+    - {t: 乘, n: じょう}
+    - {t: 輿, n: よする}
+    - {t: 家, n: いへ}
+    - {t: 有, kaeri: レ, n: あり}
+    - {t: 之, n: これ}
+    - {t: 御, n: ご}
+    - {t: 免, n: めん}
+    - {t: 以, n: い}
+    - {t: 後, n: ご}
+    - {t: 乘, n: のる}
+    - {t: 家, n: いへ}
+    - {t: 有, kaeri: レ, n: あり}
+    - {t: 之, n: これ}
+  - yomi: 然るに近年家郞諸卒に及び乘輿す、誠に濫吹の至りなり
+    tokens:
+    - {t: 然, n: しかるに}
+    - {t: 近, n: きん}
+    - {t: 年, n: ねん}
+    - {t: 及, kaeri: 二, n: および}
+    - {t: 家, n: け}
+    - {t: 郞, n: らう}
+    - {t: 諸, n: しょ}
+    - {t: 卒, kaeri: 一, n: そつに}
+    - {t: 乘, n: じょう}
+    - {t: 輿, n: よす}
+    - {t: 誠, n: まことに}
+    - {t: 濫, n: らん}
+    - {t: 吹, n: すい}
+    - {t: 之, n: の}
+    - {t: 至, n: いたり}
+    - {t: 也, n: なり}
+  - yomi: 向後に於ては、國大名以下一門の歷々は、御免に及ばず乘るべし
+    tokens:
+    - {t: 於, kaeri: 二, n: おいて}
+    - {t: 向, n: きゃう}
+    - {t: 後, kaeri: 一, n: こうに}
+    - {t: 者, n: は}
+    - {t: 國, n: こく}
+    - {t: 大, n: だい}
+    - {t: 名, n: みゃう}
+    - {t: 以, n: い}
+    - {t: 下, n: か}
+    - {t: 一, n: いち}
+    - {t: 門, n: もん}
+    - {t: 之, n: の}
+    - {t: 歷, n: れき}
+    - {t: 々, n: れき}
+    - {t: 者, n: は}
+    - {t: 不, kaeri: レ, n: ず}
+    - {t: 及, kaeri: 二, n: およば}
+    - {t: 御, n: ご}
+    - {t: 免, kaeri: 一, n: めんに}
+    - {t: 可, kaeri: レ, n: べし}
+    - {t: 乘, n: のる}
+  - yomi: 其の外、眤近の衆、並びに醫陰兩道、或いは六十以上の人、或いは病人等、御免以後乘るべし
+    tokens:
+    - {t: 其, n: その}
+    - {t: 外, n: ほか}
+    - {t: 眤, n: じっ}
+    - {t: 近, n: きん}
+    - {t: 之, n: の}
+    - {t: 衆, n: しゅ}
+    - {t: 並, n: ならびに}
+    - {t: 醫, n: い}
+    - {t: 陰, n: おん}
+    - {t: 兩, n: りゃう}
+    - {t: 道, n: だう}
+    - {t: 或, n: あるいは}
+    - {t: 六, n: ろく}
+    - {t: 十, n: じふ}
+    - {t: 以, n: い}
+    - {t: 上, n: じゃう}
+    - {t: 之, n: の}
+    - {t: 人, n: ひと}
+    - {t: 或, n: あるいは}
+    - {t: 病, n: びゃう}
+    - {t: 人, n: にん}
+    - {t: 等, n: とう}
+    - {t: 御, n: ご}
+    - {t: 免, n: めん}
+    - {t: 以, n: い}
+    - {t: 後, n: ご}
+    - {t: 可, kaeri: レ, n: べし}
+    - {t: 乘, n: のる}
+  - yomi: 家郎從卒に恣に乘らしむる者は、其の主人越度たるべきなり
+    tokens:
+    - {t: 家, n: け}
+    - {t: 郎, n: らう}
+    - {t: 從, n: じゅう}
+    - {t: 卒, n: そつに}
+    - {t: 恣, n: ほしいままに}
+    - {t: 令, kaeri: レ, n: しむる}
+    - {t: 乘, n: のら}
+    - {t: 者, n: ものは}
+    - {t: 其, n: その}
+    - {t: 主, n: しゅ}
+    - {t: 人, n: じん}
+    - {t: 可, kaeri: レ, n: べき}
+    - {t: 爲, kaeri: 二, n: たる}
+    - {t: 越, n: をち}
+    - {t: 度, kaeri: 一, n: ど}
+    - {t: 也, n: なり}
+  - yomi: 但し公家門跡幷びに諸出世の衆は制限に非ず
+    tokens:
+    - {t: 但, n: ただし}
+    - {t: 公, n: く}
+    - {t: 家, n: げ}
+    - {t: 門, n: もん}
+    - {t: 跡, n: ぜき}
+    - {t: 幷, n: ならびに}
+    - {t: 諸, n: しょ}
+    - {t: 出, n: しゅっ}
+    - {t: 世, n: せ}
+    - {t: 之, n: の}
+    - {t: 衆, n: しゅ}
+    - {t: 者, n: は}
+    - {t: 非, kaeri: 二, n: あらず}
+    - {t: 制, n: せい}
+    - {t: 限, kaeri: 一, n: げんに}
+- id: '12'
+  title: 'Article 12: frugality'
+  verify_in: sources/shiseki17-p219.txt
+  kunten: true
+  lines:
+  - yomi: 一つ、諸國の諸侍、儉約を用ひらるべき事
+    tokens:
+    - {t: 一, n: ひとつ}
+    - {t: 諸, n: しょ}
+    - {t: 國, n: こくの}
+    - {t: 諸, n: しょ}
+    - {t: 侍, n: さむらひ}
+    - {t: 可, kaeri: レ, n: べき}
+    - {t: 被, kaeri: レ, n: らる}
+    - {t: 用, kaeri: 二, n: もちひ}
+    - {t: 儉, n: けん}
+    - {t: 約, kaeri: 一, n: やくを}
+    - {t: 事, n: こと}
+  - yomi: 富める者は彌誇り、貧しき者は及ばざるを耻づ
+    tokens:
+    - {t: 富, n: とめる}
+    - {t: 者, n: ものは}
+    - {t: 彌, n: いよいよ}
+    - {t: 誇, n: ほこり}
+    - {t: 貧, n: まづしき}
+    - {t: 者, n: ものは}
+    - {t: 耻, kaeri: レ, n: はづ}
+    - {t: 不, kaeri: レ, n: ざるを}
+    - {t: 及, n: およば}
+  - yomi: 俗の凋弊、此れより甚だしきは無し、嚴制せしむる所なり
+    tokens:
+    - {t: 俗, n: ぞく}
+    - {t: 之, n: の}
+    - {t: 凋, n: てう}
+    - {t: 弊, n: へい}
+    - {t: 無, kaeri: レ, n: なし}
+    - {t: 甚, kaeri: 二, n: はな・はだしきは}
+    - {t: 於, oki: true}
+    - {t: 此, kaeri: 一, n: これより}
+    - {t: 所, kaeri: レ, n: ところ}
+    - {t: 令, kaeri: 二, n: しむる}
+    - {t: 嚴, n: げん}
+    - {t: 制, kaeri: 一, n: せいせ}
+    - {t: 也, n: なり}
+- id: '13'
+  title: 'Article 13: choosing men to govern'
+  verify_in: sources/shiseki17-p220.txt
+  kunten: true
+  lines:
+  - yomi: 一つ、國主、政務の噐用を撰ぶべき事
+    tokens:
+    - {t: 一, n: ひとつ}
+    - {t: 國, n: こく}
+    - {t: 主, n: しゅ}
+    - {t: 可, kaeri: レ, n: べき}
+    - {t: 撰, kaeri: 二, n: えらぶ}
+    - {t: 政, n: せい}
+    - {t: 務, n: む}
+    - {t: 之, n: の}
+    - {t: 噐, n: き}
+    - {t: 用, kaeri: 一, n: ようを}
+    - {t: 事, n: こと}
+  - yomi: 凡そ治國の道は人を得るに在り
+    tokens:
+    - {t: 凡, n: およそ}
+    - {t: 治, n: ち}
+    - {t: 國, n: こくの}
+    - {t: 道, n: みちは}
+    - {t: 在, kaeri: レ, n: あり}
+    - {t: 得, kaeri: レ, n: うるに}
+    - {t: 人, n: ひとを}
+  - yomi: 功過を明察し、賞罸必ず當る
+    tokens:
+    - {t: 明察, kaeri_at: 1, kaeri: 二, n: めいさつし}
+    - {t: 功, n: こう}
+    - {t: 過, kaeri: 一, n: くゎを}
+    - {t: 賞, n: しゃう}
+    - {t: 罸, n: ばつ}
+    - {t: 必, n: かならず}
+    - {t: 當, n: あたる}
+  - yomi: 國に善人有れば、則ち其の國彌殷んなり
+    tokens:
+    - {t: 國, n: くにに}
+    - {t: 有, kaeri: 二, n: あれば}
+    - {t: 善, n: ぜん}
+    - {t: 人, kaeri: 一, n: にん}
+    - {t: 則, n: すなはち}
+    - {t: 其, n: その}
+    - {t: 國, n: くに}
+    - {t: 彌, n: いよいよ}
+    - {t: 殷, n: さかんなり}
+  - yomi: 國に善人無ければ、則ち其の國必ず亡ぶ
+    tokens:
+    - {t: 國, n: くにに}
+    - {t: 無, kaeri: 二, n: なければ}
+    - {t: 善, n: ぜん}
+    - {t: 人, kaeri: 一, n: にん}
+    - {t: 則, n: すなはち}
+    - {t: 其, n: その}
+    - {t: 國, n: くに}
+    - {t: 必, n: かならず}
+    - {t: 亡, n: ほろぶ}
+  - yomi: 是れ先哲の明誡なり
+    tokens:
+    - {t: 是, n: これ}
+    - {t: 先, n: せん}
+    - {t: 哲, n: てつ}
+    - {t: 之, n: の}
+    - {t: 明, n: めい}
+    - {t: 誡, n: かい}
+    - {t: 也, n: なり}
+- id: close
+  title: 'Closing: the injunction and the date'
+  verify_in: sources/shiseki17-p220.txt
+  kunten: true
+  lines:
+  - yomi: 右此の旨を相守るべき者なり
+    tokens:
+    - {t: 右, n: みぎ}
+    - {t: 可, kaeri: レ, n: べき}
+    - {t: 相守, kaeri_at: 1, kaeri: 二, n: あひまもる}
+    - {t: 此, n: この}
+    - {t: 旨, kaeri: 一, n: むねを}
+    - {t: 者, n: もの}
+    - {t: 也, n: なり}
+  - yomi: 慶長二十年卯七月
+    tokens:
+    - {t: 慶, n: けい}
+    - {t: 長, n: ちゃう}
+    - {t: 二, n: に}
+    - {t: 十, n: じふ}
+    - {t: 年, n: ねん}
+    - {t: 卯, n: う}
+    - {t: 七, n: しち}
+    - {t: 月, n: ぐゎつ}

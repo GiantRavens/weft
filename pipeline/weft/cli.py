@@ -32,7 +32,7 @@ def main(argv: list[str] | None = None) -> int:
     d.add_argument("--lines", help="first-last, e.g. 1-10")
     b = sub.add_parser("build", help="assemble all layers into one self-contained HTML page")
     b.add_argument("work", help="a work's folder name, or 'all' for the whole library")
-    b.add_argument("--private", action="store_true", help="include private/ translations; writes to private/build/")
+    b.add_argument("--private", action="store_true", help="include private/ overlays and private works; writes to private/build/")
     c = sub.add_parser("check", help="selftest: every token has every layer, every reference resolves")
     c.add_argument("work")
     al = sub.add_parser("align", help="align verse-numbered translations (USFM) to the work automatically")
@@ -41,10 +41,11 @@ def main(argv: list[str] | None = None) -> int:
     ph.add_argument("words", nargs="+")
     a = ap.parse_args(argv)
     repo = repo_root()
+    from . import paths
 
     if a.cmd == "acquire":
         from . import acquire
-        r = acquire.run(repo / "texts" / a.work, a.accept_licenses)
+        r = acquire.run(paths.work_dir(repo, a.work), a.accept_licenses)
         show(r)
         return 0 if r["next"].startswith("All") else 1
     if a.cmd == "draft":
@@ -52,10 +53,11 @@ def main(argv: list[str] | None = None) -> int:
         first = last = None
         if a.lines:
             first, last = (int(x) for x in a.lines.split("-"))
-        show(draft.run(repo / "texts" / a.work, a.book, first, last))
+        show(draft.run(paths.work_dir(repo, a.work), a.book, first, last))
     elif a.cmd == "build":
         from . import build
-        works = ([m["work"] for m in build.library_order(repo) if list((repo / "texts" / m["work"] / "gen").glob("*.yaml"))]
+        works = ([m["work"] for m in build.library_order(repo, a.private)
+                  if list((paths.work_dir(repo, m["work"]) / "gen").glob("*.yaml"))]
                  if a.work == "all" else [a.work])
         for w in works:
             out = build.run(repo, w, a.private)
@@ -67,7 +69,7 @@ def main(argv: list[str] | None = None) -> int:
         return 0 if r["ok"] else 1
     elif a.cmd == "align":
         from . import usfm
-        for f in usfm.align(repo / "texts" / a.work):
+        for f in usfm.align(paths.work_dir(repo, a.work)):
             print(f"wrote {f}")
     elif a.cmd == "say":
         from . import greek

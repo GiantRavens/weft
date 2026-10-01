@@ -1,0 +1,50 @@
+name: Propose a text
+description: A passage that belongs in the library.
+title: "Proposal: "
+labels: [proposal]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A work can be built when four things exist: an edition of the original that is public domain
+        or openly licensed, at least one public-domain English translation, a way to establish lemma
+        and grammar (a treebank, or a good dictionary for hand annotation), and some evidence for how
+        it sounded. Licences that forbid commercial use cannot be used. Fill in what you know; blanks
+        are fine.
+  - type: input
+    id: text
+    attributes:
+      label: Text and passage
+      description: For example Virgil, Aeneid 1.1-11.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this passage
+      description: What it would add to the library, and why this part of the work.
+    validations:
+      required: true
+  - type: textarea
+    id: edition
+    attributes:
+      label: Edition of the original
+      description: Where an openly licensed text can be found, and its licence.
+  - type: textarea
+    id: translations
+    attributes:
+      label: Translations
+      description: Public-domain English translations, with dates. Copyrighted ones can be cited as references.
+  - type: textarea
+    id: treebank
+    attributes:
+      label: Treebank or dictionary
+  - type: textarea
+    id: sound
+    attributes:
+      label: Pronunciation evidence
+      description: Studies of how the language sounded at the time of writing.
+  - type: input
+    id: credit
+    attributes:
+      label: How you would like to be credited

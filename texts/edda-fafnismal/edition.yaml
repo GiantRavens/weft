@@ -1,0 +1,494 @@
+# Weft edition of Fáfnismál, from Guðni Jónsson's normalized text as published by heimskringla.no and
+# kept in the CLTK Old Norse corpus (complete.txt, pinned by sha256 in the manifest). Each line is
+# checked verbatim against that file (verify_in).
+#
+# Why a Weft edition file, as for Þrymskviða: the source prints prose passages and speaker labels
+# ("Fáfnir kvað:") between the stanzas. The speaker labels that stand alone between stanzas are kept
+# in the stanza headings (kvað, "said"). The prose passages are kept as sections of their own, named
+# for the stanza they follow (p0 before stanza 1, p1 after stanza 1, and so on to p44 at the end),
+# one line per sentence or clause; a label that ends a prose paragraph ("Reginn kvað:") stays in it.
+#
+# Stanza 18 is three lines in the source, followed by "-- -- -- --", the edition's mark for the lost
+# second half. The mark is not a line of text and is left out here. Slips in the source are kept as
+# printed and listed in the manifest (predicted_gaps): no opening quotation mark in 16.1 and 35.1, "nafn síns" (p1.1) and
+# "han" for hann (p39.2).
+joiner: " "
+verify_in: sources/fafnismal.txt
+metre: {name: ljóðaháttr}
+sections:
+  - id: "p0"
+    title: 'Prose: Sigurðr wounds Fáfnir'
+    figure:
+      file: "art/works/edda-fafnismal/hylestad-dragon.jpg"
+      caption: "Sigurðr, crouching below, drives his sword up into the dragon. Carved portal plank from Hylestad stave church, Setesdal, Norway, usually dated to the late 1100s; now in the Historical Museum (Historisk museum), Oslo."
+      alt: "Wood carving of a crouching warrior in a helmet thrusting a sword upward into the coiled body of a dragon"
+      credit: "Photograph by Jeblad, via Wikimedia Commons"
+      license: "CC BY-SA 3.0"
+      source: "https://commons.wikimedia.org/wiki/File:Hylestad_I,_right_-_Fafnir_and_Sigurd.jpg"
+    lines:
+      - 'Sigurðr ok Reginn fóru upp á Gnitaheiði ok hittu þar slóð Fáfnis, þá er hann skreið til vatns.'
+      - 'Þar gerði Sigurðr gröf mikla á veginum, ok gekk Sigurðr þar í.'
+      - 'En er Fáfnir skreið af gullinu, blés hann eitri, ok hraut þat fyrir ofan höfuð Sigurði.'
+      - 'En er Fáfnir skreið yfir gröfina, þá lagði Sigurðr hann með sverði til hjarta.'
+      - 'Fáfnir hristi sik ok barði höfði ok sporði.'
+      - 'Sigurðr hljóp ór gröfinni, ok sá þá hvárr annan.'
+      - 'Fáfnir kvað:'
+  - id: "1"
+    title: 'Stanza 1'
+    lines:
+      - '"Sveinn ok sveinn,'
+      - 'hverjum ertu svein of borinn?'
+      - 'Hverra ertu manna mögr,'
+      - 'er þú á Fáfni rautt'
+      - 'þinn inn frána mæki?'
+      - 'Stöndumk til hjarta hjörr."'
+  - id: "p1"
+    title: 'Prose: Sigurðr hides his name'
+    lines:
+      - 'Sigurðr dulði nafn síns, fyrir því at þat var trúa þeira í forneskju,'
+      - 'at orð feigs manns mætti mikit, ef hann bölvaði óvin sínum með nafni.'
+      - 'Hann kvað:'
+  - id: "2"
+    title: 'Stanza 2'
+    lines:
+      - '"Göfugt dýr ek heiti,'
+      - 'en ek gengit hefk'
+      - 'inn móðurlausi mögr,'
+      - 'föður ek ákk-a'
+      - 'sem fira synir;'
+      - 'æ geng ek einn saman."'
+  - id: "3"
+    title: 'Stanza 3 · Fáfnir kvað'
+    lines:
+      - '"Veiztu, ef föður né átt-at'
+      - 'sem fira synir,'
+      - 'af hverju vastu undri alinn?"'
+  - id: "4"
+    title: 'Stanza 4 · Sigurðr kvað'
+    lines:
+      - '"Ætterni mitt'
+      - 'kveð ek þér ókunnigt vera'
+      - 'ok mik sjalfan it sama;'
+      - 'Sigurðr ek heiti,'
+      - 'Sigmundr hét minn faðir,'
+      - 'er hefk þik vápnum vegit."'
+  - id: "5"
+    title: 'Stanza 5 · Fáfnir kvað'
+    lines:
+      - '"Hverr þik hvatti?'
+      - 'Hví hvetjask lézt'
+      - 'mínu fjörvi at fara?'
+      - 'Inn fráneygi sveinn,'
+      - 'þú áttir föður bitran;'
+      - 'óbornum skjór á skeið."'
+  - id: "6"
+    title: 'Stanza 6 · Sigurðr kvað'
+    lines:
+      - '"Hugr mik hvatti,'
+      - 'hendr mér fulltýðu'
+      - 'ok minn inn hvassi hjörr;'
+      - 'fár er hvatr,'
+      - 'er hröðask tekr,'
+      - 'ef í barnæsku er blauðr."'
+  - id: "7"
+    title: 'Stanza 7 · Fáfnir kvað'
+    lines:
+      - '"Veit ek, ef þú vaxa næðir'
+      - 'fyr þinna vina brjósti,'
+      - 'sæi maðr þik vreiðan vega;'
+      - 'nú ertu haftr'
+      - 'ok hernuminn;'
+      - 'æ kveða bandingja bifask."'
+  - id: "8"
+    title: 'Stanza 8 · Sigurðr kvað'
+    lines:
+      - '"Því bregðr þú mér, Fáfnir,'
+      - 'at til fjarri séak'
+      - 'mínum feðrmunum;'
+      - 'eigi em ek haftr,'
+      - 'þótt ek væra hernumi;'
+      - 'þú fannt, at ek laus lifi."'
+  - id: "9"
+    title: 'Stanza 9 · Fáfnir kvað'
+    lines:
+      - '"Heiftyrði ein'
+      - 'telr þú þér í hvívetna,'
+      - 'en ek þér satt eitt segik:'
+      - 'It gjalla gull'
+      - 'ok it glóðrauða fé,'
+      - 'þér verða þeir baugar at bana."'
+  - id: "10"
+    title: 'Stanza 10 · Sigurðr kvað'
+    lines:
+      - '"Féi ráða'
+      - 'vill fyrða hverr'
+      - 'æ til ins eina dags;'
+      - 'því at einu sinni'
+      - 'skal alda hverr'
+      - 'fara til heljar heðan."'
+  - id: "11"
+    title: 'Stanza 11 · Fáfnir kvað'
+    lines:
+      - '"Norna dóm'
+      - 'þú munt fyr nesjum hafa'
+      - 'ok ósvinns apa;'
+      - 'í vatni þú drukknar,'
+      - 'ef í vindi rær;'
+      - 'allt er feigs forað."'
+  - id: "12"
+    title: 'Stanza 12 · Sigurðr kvað'
+    lines:
+      - '"Segðu mér, Fáfnir,'
+      - 'alls þik fróðan kveða'
+      - 'ok vel margt vita,'
+      - 'hverjar ro þær nornir,'
+      - 'er nauðgönglar ro'
+      - 'ok kjósa mæðr frá mögum."'
+  - id: "13"
+    title: 'Stanza 13 · Fáfnir kvað'
+    lines:
+      - '"Sundrbornar mjök'
+      - 'segi ek nornir vera,'
+      - 'eigu-t þær ætt saman;'
+      - 'sumar eru áskunngar,'
+      - 'sumar alfkunngar,'
+      - 'sumar dætr Dvalins."'
+  - id: "14"
+    title: 'Stanza 14 · Sigurðr kvað'
+    lines:
+      - '"Segðu mér þat, Fáfnir,'
+      - 'alls þik fróðan kveða'
+      - 'ok vel margt vita,'
+      - 'hvé sá holmr heitir,'
+      - 'er blanda hjörlegi'
+      - 'Surtr ok æsir saman."'
+  - id: "15"
+    title: 'Stanza 15 · Fáfnir kvað'
+    lines:
+      - '"Óskópnir hann heitir,'
+      - 'en þar öll skulu'
+      - 'geirum leika goð;'
+      - 'Bilröst brotnar,'
+      - 'er þeir á brú fara,'
+      - 'ok svima í móðu marir."'
+  - id: "16"
+    title: 'Stanza 16 · Fáfnir continues'
+    lines:
+      - 'Ægishjalm'
+      - 'bar ek of alda sonum,'
+      - 'meðan ek of menjum lák;'
+      - 'einn rammari'
+      - 'hugðumk öllum vera,'
+      - 'fannk-a ek svá marga mögu."'
+  - id: "17"
+    title: 'Stanza 17 · Sigurðr kvað'
+    lines:
+      - '"Ægishjalmr'
+      - 'bergr einungi,'
+      - 'hvar skulu vreiðir vega;'
+      - 'þá þat finnr,'
+      - 'er með fleirum kemr,'
+      - 'at engi er einna hvatastr."'
+  - id: "18"
+    title: 'Stanza 18 · Fáfnir kvað'
+    lines:
+      - '"Eitri ek fnæsta,'
+      - 'er ek á arfi lá'
+      - 'miklum míns föður."'
+  - id: "19"
+    title: 'Stanza 19 · Sigurðr kvað'
+    lines:
+      - '"Inn fráni ormr,'
+      - 'þú gerðir fræs mikla'
+      - 'ok galzt harðan hug;'
+      - 'heift at meiri'
+      - 'verðr hölða sonum,'
+      - 'at þann hjalm hafi."'
+  - id: "20"
+    title: 'Stanza 20 · Fáfnir kvað'
+    lines:
+      - '"Ræð ek þér nú, Sigurðr,'
+      - 'en þú ráð nemir,'
+      - 'ok ríð heim heðan;'
+      - 'it gjalla gull'
+      - 'ok it glóðrauða fé,'
+      - 'þér verða þeir baugar at bana."'
+  - id: "21"
+    title: 'Stanza 21 · Sigurðr kvað'
+    lines:
+      - '"Ráð er þér ráðit,'
+      - 'en ek ríða mun'
+      - 'til þess gulls, er í lyngvi liggr,'
+      - 'en þú, Fáfnir,'
+      - 'ligg í fjörbrotum,'
+      - 'þar er þik hel hafi."'
+  - id: "22"
+    title: 'Stanza 22 · Fáfnir kvað'
+    lines:
+      - '"Reginn mik réð,'
+      - 'hann þik ráða mun,'
+      - 'hann mun okkr verða báðum at bana;'
+      - 'fjör sitt láta,'
+      - 'hygg ek, at Fáfnir myni;'
+      - 'þitt varð nú meira megin."'
+  - id: "p22"
+    title: 'Prose: Reginn returns'
+    lines:
+      - 'Reginn var á brott horfinn, meðan Sigurðr vá Fáfni,'
+      - 'ok kom þá aftr, er Sigurðr strauk blóð af sverðinu.'
+      - 'Reginn kvað:'
+  - id: "23"
+    title: 'Stanza 23'
+    lines:
+      - '"Heill þú nú, Sigurðr,'
+      - 'nú hefir þú sigr vegit'
+      - 'ok Fáfni of farit;'
+      - 'manna þeira,'
+      - 'er mold troða,'
+      - 'þik kveð ek óblauðastan alinn."'
+  - id: "24"
+    title: 'Stanza 24 · Sigurðr kvað'
+    lines:
+      - '"Þat er óvíst at vita,'
+      - 'þá er komum allir saman,'
+      - 'sigtíva synir,'
+      - 'hverr óblauðastr er alinn;'
+      - 'margr er sá hvatr,'
+      - 'er hjör né rýðr'
+      - 'annars brjóstum í."'
+  - id: "25"
+    title: 'Stanza 25 · Reginn kvað'
+    lines:
+      - '"Glaðr ertu nú, Sigurðr,'
+      - 'ok gagni feginn,'
+      - 'er þú þerrir Gram á grasi;'
+      - 'bróður minn'
+      - 'hefr þú benjaðan,'
+      - 'ok vald ek þó sjalfr sumu."'
+  - id: "26"
+    title: 'Stanza 26 · Sigurðr kvað'
+    lines:
+      - '"Þú því rétt,'
+      - 'er ek ríða skyldak'
+      - 'hélug fjöll hinig;'
+      - 'féi ok fjörvi'
+      - 'réði sá inn fráni ormr,'
+      - 'nema þú frýðir mér hvats hugar."'
+  - id: "p26"
+    title: 'Prose: Reginn cuts out the heart'
+    lines:
+      - 'Þá gekk Reginn at Fáfni ok skar hjarta ór hánum með sverði, er Riðill heitir,'
+      - 'ok þá drakk hann blóð ór undinni eftir.'
+      - 'Reginn kvað:'
+  - id: "27"
+    title: 'Stanza 27'
+    lines:
+      - '"Sittu nú, Sigurðr,'
+      - 'en ek mun sofa ganga,'
+      - 'ok halt Fáfnis hjarta við funa;'
+      - 'eisköld ek vil'
+      - 'etin láta'
+      - 'eftir þenna dreyra drykk."'
+  - id: "28"
+    title: 'Stanza 28 · Sigurðr kvað'
+    lines:
+      - '"Fjarri þú gekkt,'
+      - 'meðan ek á Fáfni rauðk'
+      - 'minn inn hvassa hjör;'
+      - 'afli mínu'
+      - 'atta ek við orms megin,'
+      - 'meðan þú í lyngvi látt."'
+  - id: "29"
+    title: 'Stanza 29 · Reginn kvað'
+    lines:
+      - '"Lengi liggja'
+      - 'létir þú lyngvi í'
+      - 'þann inn aldna jötun,'
+      - 'ef þú sverðs né nytir,'
+      - 'þess er ek sjalfr gerða,'
+      - 'ok þíns ins hvassa hjörs."'
+  - id: "30"
+    title: 'Stanza 30 · Sigurðr kvað'
+    lines:
+      - '"Hugr er betri'
+      - 'en sé hjörs megin,'
+      - 'hvars vreiðir skulu vega,'
+      - 'því at hvatan mann'
+      - 'ek sé harðliga vega'
+      - 'með slævu sverði sigr."'
+  - id: "31"
+    title: 'Stanza 31 · Sigurðr continues'
+    lines:
+      - '"Hvötum er betra'
+      - 'en sé óhvötum'
+      - 'í hildileik hafask;'
+      - 'glöðum er betra'
+      - 'en sé glúpnanda,'
+      - 'hvat sem at hendi kemr."'
+  - id: "p31"
+    title: 'Prose: the heart and the birds'
+    figure:
+      file: "art/works/edda-fafnismal/hylestad-heart.jpg"
+      caption: "Sigurðr roasts the heart on a spit over the fire and puts his thumb to his mouth. From the same Hylestad portal."
+      alt: "Wood carving of a seated man in a pointed helmet holding a spit over flames with his thumb at his mouth, beside a second figure at a tree"
+      credit: "Photograph by Marieke Kuijjer, via Wikimedia Commons"
+      license: "CC BY-SA 2.0"
+      source: "https://commons.wikimedia.org/wiki/File:Hylestad_-_Sigurd_Sucking_Thumb.jpg"
+    lines:
+      - 'Sigurðr tók Fáfnis hjarta ok steikði á teini.'
+      - 'Er hann hugði, at fullsteikt væri ok freyddi sveitinn ór hjartanu,'
+      - 'þá tók hann á fingri sínum ok skynjaði, hvárt fullsteikt væri.'
+      - 'Hann brann ok brá fingrinum í munn sér.'
+      - 'En er hjartablóð Fáfnis kom á tungu hánum, ok skilði hann fugls rödd.'
+      - 'Hann heyrði, at igður klökuðu á hrísinu.'
+      - 'Igðan kvað:'
+  - id: "32"
+    title: 'Stanza 32'
+    lines:
+      - '"Þar sitr Sigurðr'
+      - 'sveita stokkinn,'
+      - 'Fáfnis hjarta'
+      - 'við funa steikir;'
+      - 'spakr þætti mér'
+      - 'spillir bauga,'
+      - 'ef hann fjörsega'
+      - 'fránan æti."'
+  - id: "33"
+    title: 'Stanza 33 · Önnur kvað'
+    lines:
+      - '"Þar liggr Reginn,'
+      - 'ræðr um við sik,'
+      - 'vill tæla mög,'
+      - 'þann er trúir hánum,'
+      - 'berr af reiði'
+      - 'röng orð saman,'
+      - 'vill bölvasmiðr'
+      - 'bróður hefna."'
+  - id: "34"
+    title: 'Stanza 34 · In þriðja kvað'
+    lines:
+      - '"Höfði skemmra'
+      - 'láti hann inn hára þul'
+      - 'fara til heljar heðan;'
+      - 'öllu gulli'
+      - 'þá kná hann einn ráða,'
+      - 'fjölð því er und Fáfni lá."'
+  - id: "35"
+    title: 'Stanza 35 · In fjórða kvað'
+    lines:
+      - 'Horskr þætti mér,'
+      - 'ef hafa kynni'
+      - 'ástráð mikit'
+      - 'yðvar systra,'
+      - 'hygði hann of sik'
+      - 'ok hugin gleddi;'
+      - 'þar er mér ulfs ván,'
+      - 'er ek eyru sék."'
+  - id: "36"
+    title: 'Stanza 36 · In fimmta kvað'
+    lines:
+      - '"Er-at svá horskr'
+      - 'hildimeiðr'
+      - 'sem ek hers jaðar'
+      - 'hyggja myndak,'
+      - 'ef hann bróður lætr'
+      - 'á brot komask,'
+      - 'en hann öðrum hefir'
+      - 'aldrs of synjat."'
+  - id: "37"
+    title: 'Stanza 37 · In sétta kvað'
+    lines:
+      - '"Mjök er ósviðr,'
+      - 'ef hann enn sparir'
+      - 'fjánda inn folkskáa,'
+      - 'þar er Reginn liggr,'
+      - 'er hann ráðinn hefr,'
+      - 'kann-at hann við slíku at séa."'
+  - id: "38"
+    title: 'Stanza 38 · In sjaunda kvað'
+    lines:
+      - '"Höfði skemmra láti hann'
+      - 'þann inn hrímkalda jötun'
+      - 'ok af baugum búa;'
+      - 'þá mun hann fjár þess,'
+      - 'er Fáfnir réð,'
+      - 'einvaldi vera."'
+  - id: "39"
+    title: 'Stanza 39 · Sigurðr kvað'
+    lines:
+      - '"Verða-t svá rík sköp,'
+      - 'at Reginn skyli'
+      - 'mitt banorð bera;'
+      - 'því at þeir báðir bræðr'
+      - 'skulu bráðliga'
+      - 'fara til heljar heðan."'
+  - id: "p39"
+    title: 'Prose: Sigurðr kills Reginn'
+    lines:
+      - 'Sigurðr hjó höfuð af Regin,'
+      - 'ok þá át han Fáfnis hjarta ok drakk blóð þeira beggja, Regins ok Fáfnis.'
+      - 'Þá heyrði Sigurðr, hvar igður mæltu:'
+  - id: "40"
+    title: 'Stanza 40'
+    lines:
+      - '"Bitt þú, Sigurðr,'
+      - 'bauga rauða;'
+      - 'er-a konungligt'
+      - 'kvíða mörgu.'
+      - 'Mey veit ek eina'
+      - 'miklu fegrsta,'
+      - 'gulli gædda,'
+      - 'ef þú geta mættir."'
+  - id: "41"
+    title: 'Stanza 41 · the birds continue'
+    lines:
+      - '"Liggja til Gjúka'
+      - 'grænar brautir,'
+      - 'fram vísa sköp'
+      - 'folklíðöndum;'
+      - 'þar hefir dýrr konungr'
+      - 'dóttur alna;'
+      - 'þá muntu, Sigurðr,'
+      - 'mundi kaupa."'
+  - id: "42"
+    title: 'Stanza 42 · the birds continue'
+    lines:
+      - '"Salr er á háu'
+      - 'Hindarfjalli,'
+      - 'allr er hann útan'
+      - 'eldi sveipinn,'
+      - 'þann hafa horskir'
+      - 'halir of görvan'
+      - 'ór ódökkum'
+      - 'Ógnar ljóma."'
+  - id: "43"
+    title: 'Stanza 43 · the birds continue'
+    lines:
+      - '"Veit ek á fjalli'
+      - 'folkvitr sofa'
+      - 'ok leikr yfir'
+      - 'lindar váði;'
+      - 'Yggr stakk þorni,'
+      - 'aðra felldi'
+      - 'hör-Gefn hali'
+      - 'en hafa vildi."'
+  - id: "44"
+    title: 'Stanza 44 · the birds continue'
+    lines:
+      - '"Knáttu, mögr, séa'
+      - 'mey und hjalmi,'
+      - 'þá er frá vígi'
+      - 'Vingskorni reið;'
+      - 'má-at Sigrdrífar'
+      - 'svefni bregða'
+      - 'skjöldunga niðr'
+      - 'fyr sköpum norna."'
+  - id: "p44"
+    title: 'Prose: Fáfnir''s lair and the gold'
+    lines:
+      - 'Sigurðr reið eftir slóð Fáfnis til bælis hans ok fann þat opit ok hurðir af járni ok gætti.'
+      - 'Af járni váru ok allir timbrstokkar í húsinu, en grafit í jörð niðr.'
+      - 'Þar fann Sigurðr stórmikit gull ok fylldi þar tvær kistur.'
+      - 'Þar tók hann ægishjálm ok gullbrynju ok sverðit Hrotta ok marga dýrgripi ok klyfjaði þar með Grana,'
+      - 'en hestrinn vildi eigi fram ganga, fyrr en Sigurðr steig á bak hánum.'
+

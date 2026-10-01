@@ -5,14 +5,14 @@
   </picture>
 </h1>
 
-<p align="center"><strong><a href="https://giantravens.github.io/weft/">Read the library</a></strong></p>
+<p align="center"><strong><a href="https://giantravens.github.io/weft/">Read the library</a></strong> · <a href="docs/about.md">About Weft, for readers and scholars</a> · <a href="docs/languages.md">Languages and pronunciation</a></p>
 
 Living interlinear editions of classical texts. Every line of the source is stitched to
 its sound, its literal word-for-word gloss, and one or more published translations,
 with scholarly notes attached to the words themselves.
 
     Ἄνδρα     μοι      ἔννεπε,   Μοῦσα,   πολύτροπον,        ὃς     μάλα    πολλὰ
-    AHN-dra   moy      EN-ne-pe  MOO-sa   po-LOO-tro-pon     hos    MA-la   pol-LA
+    AN-dra    moy      EN-ne-pe  MOO-sa   po-LÜ-tro-pon      hos    MA-la   pol-la
     man       for-me   tell      Muse     of-many-turns      who    very    many-things
 
     Tell me, O Muse, of that ingenious hero who travelled far and wide   (Butler, 1900)
@@ -38,7 +38,7 @@ Later layers: metre, notes, audio. Layers are named, never numbered.
 - **Generated and curated never share a file.** `gen/` is regenerable by the pipeline. `curated/` is a sparse human overlay that wins on conflict and carries attribution.
 - **Provenance on every field.** Each value says what produced it and how confident it is.
 - **Translations are a list, not a slot.** Adding one costs one alignment pass.
-- **Public and private builds from one codebase.** Copyrighted translations live in `private/` (gitignored) and appear only in your own build.
+- **Public and private builds from one codebase.** Your own material lives in `private/` (gitignored): licensed translations, your own annotations and notes, and whole private works. It appears only in your own build (`weft build all --private`); see `private/README.md`.
 - **No framework.** The site is static HTML, CSS and JS that works offline and prints.
 
 ## Layout
@@ -48,10 +48,11 @@ Later layers: metre, notes, audio. Layers are named, never numbered.
     texts/<work>/gen/            machine output, fully regenerable
     texts/<work>/curated/        human overlay, sparse, wins on conflict
     texts/<work>/notes/          harvested and authored commentary
-    private/                     licensed material, never committed
+        private/                     your own layer: licensed material and private works, never committed
     pipeline/                    the lifecycle steps as CLI commands
     site/                        renderer
-    docs/                        schema, lifecycle, decisions
+    docs/                        about (for readers), languages, lifecycle, schema; about and languages
+                                 are also built into the site as about.html and languages.html
 
 ## Viewing
 
@@ -76,7 +77,7 @@ server, so a page or the whole folder can be sent as an attachment.
 
 ## Status
 
-Forty-six works built across twenty-one languages, oldest first in the library:
+Fifty-one works built across twenty languages, oldest first in the library:
 
 | Work | Passage | Schemes | Translations |
 |---|---|---|---|
@@ -93,6 +94,7 @@ Forty-six works built across twenty-one languages, oldest first in the library:
 | 1 Corinthians 13 | the whole chapter | Koine, Erasmian | Tyndale 1534, Geneva 1599, King James 1611 |
 | Ovid, Metamorphoses | 1.1-9 | classical, ecclesiastical | Golding 1567, More 1922 |
 | Res Gestae Divi Augusti | heading, chapters 1-4, 34-35 | classical (Rome under Augustus), ecclesiastical | Fairley 1898, Shipley 1924 |
+| Yijing (I Ching), the Zhouyi | all 64 hexagrams: names, judgments and line statements; a three-coin casting panel | Old Chinese (Baxter-Sagart), Tang, Mandarin | Legge 1882; Wilhelm and Baynes 1950 cited |
 | Sunzi, The Art of War | chapter 1, Laying Plans | Old Chinese (Baxter-Sagart), Tang, Mandarin | Giles 1910, Calthrop 1908 |
 | Daodejing (Laozi) | chapters 1-2 | Old Chinese (Baxter-Sagart), Tang, Mandarin | Legge 1891, Chalmers 1868 |
 | Epictetus, Enchiridion | 1.1-3 | Koine, restored, Erasmian | Long 1877, Higginson 1865 |
@@ -100,6 +102,7 @@ Forty-six works built across twenty-one languages, oldest first in the library:
 | Völuspá (Poetic Edda) | complete, stanzas 1-66 | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
 | Hávamál (Poetic Edda) | stanzas 1-80, the guest's wisdom | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
 | Þrymskviða (Poetic Edda) | complete, stanzas 1-32 | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
+| Fáfnismál (Poetic Edda) | complete, 44 stanzas and the prose links | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
 | Snorri, Gylfaginning (Prose Edda) | chapters 5-8, the making of the world from Ymir; 49, the death of Baldr | Old Norse (about 1220), modern Icelandic | Brodeur 1916, Anderson 1880 |
 | Li Bai, Quiet Night Thought | 4 lines | Tang, Mandarin, Cantonese | Cranmer-Byng 1909 |
 | Tirukkural | chapter 1, kurals 1-10 | Old Tamil (reconstructed), modern | Pope 1886, Drew 1840 |
@@ -115,20 +118,23 @@ Forty-six works built across twenty-one languages, oldest first in the library:
 | Pico della Mirandola, Oration on the Dignity of Man | opening and God's speech to Adam | Italian humanist Latin (1480s), classical | Greswell 1805 (partial), Weft editorial; Forbes 1948 and Caponigri 1956 cited |
 | Alexander VI, the bull Inter caetera | 4 May 1493: the address, Columbus's voyage, the grant and the line | Latin of the papal chancery (Italian manner, 1493), classical | Davenport 1917, Blair and Robertson 1903 |
 | Erasmus, The Praise of Folly | Folly's opening | Low Countries Latin (about 1500), classical | Wilson 1668, Kennett 1683 |
+| Tale of the Heike, the opening | Gion shōja, 11 lines (vulgate text) | as recited about 1371, modern | Sadler 1918 (public domain in the US only), Weft editorial |
 | Machiavelli, The Prince | chapters 17-18 | Florentine (about 1513), modern Italian | Marriott 1908, Ricci 1903 |
 | Luther's German Bible (1545) | John 1:1-14, Psalm 23 | East Central German of the 1540s, modern German | Tyndale 1534, Coverdale 1535, King James |
 | Luther, the Ninety-five Theses | all 95, with the preamble | Latin as read in Saxony (about 1517), ecclesiastical, classical | Works of Martin Luther (Philadelphia, 1915) |
 | More, Utopia | Book 1, the sheep that devour men | Tudor English Latin (about 1516), classical | Robinson 1551, Burnet 1684 |
 | Linschoten, Itinerario: Japan | chapter 26, opening | Holland Dutch of about 1596, modern Dutch | Phillip 1598 |
 | Montaigne, Essais | To the Reader; I.19 opening | French of about 1580, modern French | Florio 1603, Cotton 1685, Hazlitt 1877 |
+| Laws for the Military Houses (Buke shohatto) | the 1615 text, 13 articles, with return marks and a whole-line Japanese reading | as read about 1615, modern | Murdoch 1903 (digest, partial), Weft editorial |
+| The Akō retainers' statement (the Forty-seven Rōnin) | the declaration of 1703 | Genroku Edo (1703), modern | Mitford 1871, Weft editorial |
 | Kant: What is Enlightenment? and the starry heavens | 1784 essay, opening; 1788 Critique of Practical Reason, conclusion | northern German before 1898, modern German | Richardson 1798, Abbott |
 | Science in Latin: Descartes, Newton | cogito (1644); laws of motion (1687) | as first read (French, English manner), classical | Veitch 1853, Motte 1729 |
 | Nietzsche: the madman and Zarathustra's descent | Gay Science 125 (1882); Zarathustra, prologue 1 (1883) | northern German before 1898, modern German | Common 1909 and 1910, Tille 1896 |
 | Haiku of Bashō | 9 haiku, 1680-1694 | Edo (1680s-90s), modern | Chamberlain 1902, Aston 1899, Hearn 1898 and 1900, Noguchi 1914; Yuasa 1966 cited |
-| Grettis saga | chapter 14, sentences 1-9 | modern Icelandic, Old Norse | Morris and Magnússon 1869, Hight 1914 |
+| Grettis saga | chapter 14, sentences 1-9 | Old Norse, modern Icelandic | Morris and Magnússon 1869, Hight 1914 |
 
 Homer, Ovid, John, Grettis saga and the Rigveda take lemma and grammar from treebanks (AGDT, LDT, MorphGNT, IcePaHC, the Vedic Treebank); Aristotle, Epictetus and Marcus Aurelius from GLAUx, an automatic parse, corrected by hand where it errs; Genesis from the Open Scriptures Hebrew Bible; Li Bai from the Kyoto Classical Chinese treebank, with Tang readings from Unicode's Unihan database. No open
-treebank covers Eddic or Old English poetry or runic inscriptions, so Hávamál, the complete Völuspá, Þrymskviða, Snorri's Gylfaginning, Beowulf and the
+treebank covers Eddic or Old English poetry or runic inscriptions, so Hávamál, the complete Völuspá, Þrymskviða, Fáfnismál, Snorri's Gylfaginning, Beowulf and the
 runes are hand-annotated and marked draft (see CLAUDE.md rule 3). The runic page adds a script
 row, generated from the transliteration, and a labelled Weft translation where no public-domain
 modern one exists. The Rigveda page reads the accent strokes of the Devanagari back into pitch
@@ -144,4 +150,5 @@ Code: MIT (`LICENSE`). Text data under `texts/`: CC BY-SA 4.0 (`LICENSE-DATA.md`
 Perseus treebank data is share-alike. Every source records its own license in the work's manifest,
 and the sources themselves are fetched by `weft acquire`, never committed.
 
-Corrections and new works are welcome: see `CONTRIBUTING.md`.
+Corrections, pronunciation fixes, recordings and proposals for new texts are welcome, with or
+without git: see `CONTRIBUTING.md`, or open an issue and choose a form.

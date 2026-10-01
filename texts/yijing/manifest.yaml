@@ -1,0 +1,530 @@
+work: yijing
+title: Yijing (易經), the Zhouyi (周易) core text, hexagrams 1 to 64
+author: anonymous; traditionally King Wen of Zhou (the judgments) and the Duke of Zhou (the line statements), an attribution modern scholarship does not accept
+language: lzh
+lang_name: "Old Chinese (Western Zhou)"
+prefix: yj                       # yj.<hexagram>.<line>[.<char>]; line 1 = name and judgment, lines 2-7 = line statements, bottom first
+urn: urn:weft:lzh:zhouyi         # no CTS URN for Chinese texts; Weft-local identifier
+unit: section
+section_noun: hexagram
+written: {year: -850, display: "c. 9th c. BC", label: "the judgments and line statements are conventionally dated to the late Western Zhou, about the 9th century BC; the dating is debated and the text may have taken shape over several generations. The oldest manuscript, the Chu bamboo slips held by the Shanghai Museum (about 300 BC), covers about half the hexagrams. This is the received text"}
+status: phase-0
+pilot: {sections: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64"]}
+edition:
+  id: zhouyi-wikisource
+  name: 周易, Chinese Wikisource, one page per hexagram (周易/乾 ... 周易/未濟), the core text set in blue on each page, pinned revisions listed under sources_extra; the pages do not name the edition they transcribe; Weft line division
+  format: weft-edition
+  file: edition.yaml
+  license: public domain (PD-old); Wikisource pages CC BY-SA 4.0; Weft line division CC BY-SA 4.0
+treebank: null                   # UD Classical Chinese Kyoto does not include the Yijing (checked 2026-10-01, v2.18); hand annotation, draft
+readings:
+  table: sources/Unihan_Readings.txt
+  variants: sources/Unihan_Variants.txt
+sources_extra:
+  - id: wikisource-zhouyi-01
+    name: 周易/乾, Chinese Wikisource, revision 2404991 (2024-05-09), raw wikitext
+    file: sources/wikisource/01.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E4%B9%BE&oldid=2404991&action=raw"
+    sha256: e8b8c4a93f7e1f86e00e83635a12423da0e134ec463ea21837f6a41b41661156
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/乾
+  - id: wikisource-zhouyi-02
+    name: 周易/坤, Chinese Wikisource, revision 2404999 (2024-05-09), raw wikitext
+    file: sources/wikisource/02.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%9D%A4&oldid=2404999&action=raw"
+    sha256: a229442f54886cd2b21b1b6ab19cb377c4c59e5fcd8ac6b75f44b846459ca881
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/坤
+  - id: wikisource-zhouyi-03
+    name: 周易/屯, Chinese Wikisource, revision 10643482 (2026-09-27), raw wikitext
+    file: sources/wikisource/03.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%B1%AF&oldid=10643482&action=raw"
+    sha256: 46e879adeb27dcbf7d8b7d0763fddf786025ad617ea3dccf364195467e8c4096
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/屯
+  - id: wikisource-zhouyi-04
+    name: 周易/蒙, Chinese Wikisource, revision 10645379 (2026-09-27), raw wikitext
+    file: sources/wikisource/04.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%92%99&oldid=10645379&action=raw"
+    sha256: 82968b32bb6552880209f9578ada9d2e30beadcc1fd2c59ee7d331c48dc9ea7b
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/蒙
+  - id: wikisource-zhouyi-05
+    name: 周易/需, Chinese Wikisource, revision 10643261 (2026-09-27), raw wikitext
+    file: sources/wikisource/05.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E9%9C%80&oldid=10643261&action=raw"
+    sha256: ccff1d03f4da5a90b388b3ec308fef5aa49ad588ad480be8627d633a3ad5bac3
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/需
+  - id: wikisource-zhouyi-06
+    name: 周易/訟, Chinese Wikisource, revision 10645409 (2026-09-27), raw wikitext
+    file: sources/wikisource/06.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%A8%9F&oldid=10645409&action=raw"
+    sha256: 8c6b14ac0b22d80ed48dd164132905c4dbdec9b3dda633744271e4bef064ee81
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/訟
+  - id: wikisource-zhouyi-07
+    name: 周易/師, Chinese Wikisource, revision 2405011 (2024-05-09), raw wikitext
+    file: sources/wikisource/07.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%B8%AB&oldid=2405011&action=raw"
+    sha256: 131b206cbc0995b1adfdab9560e66d7843fd85e3172bb4e9f89bb37e4665c1f9
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/師
+  - id: wikisource-zhouyi-08
+    name: 周易/比, Chinese Wikisource, revision 10645543 (2026-09-27), raw wikitext
+    file: sources/wikisource/08.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%AF%94&oldid=10645543&action=raw"
+    sha256: c722de4c7a95194e064b0c39c40c4712af8f007bf2186bc0d4f207e1fb0406e0
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/比
+  - id: wikisource-zhouyi-09
+    name: 周易/小畜, Chinese Wikisource, revision 10645530 (2026-09-27), raw wikitext
+    file: sources/wikisource/09.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%B0%8F%E7%95%9C&oldid=10645530&action=raw"
+    sha256: 6e1e827c09da249c5391f31c860080fd05657107b62c7e109c31a038349aebb9
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/小畜
+  - id: wikisource-zhouyi-10
+    name: 周易/履, Chinese Wikisource, revision 10647513 (2026-09-27), raw wikitext
+    file: sources/wikisource/10.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%B1%A5&oldid=10647513&action=raw"
+    sha256: 4cba3bd1b9e4d13bb34a71531611e37bebb7801d8e783c86870912540453cd49
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/履
+  - id: wikisource-zhouyi-11
+    name: 周易/泰, Chinese Wikisource, revision 2106138 (2022-02-16), raw wikitext
+    file: sources/wikisource/11.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%B3%B0&oldid=2106138&action=raw"
+    sha256: ecd49dba63369af09ab717293badc4b5823106b89c25ee5ebed44466817616e7
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/泰
+  - id: wikisource-zhouyi-12
+    name: 周易/否, Chinese Wikisource, revision 10645603 (2026-09-27), raw wikitext
+    file: sources/wikisource/12.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%90%A6&oldid=10645603&action=raw"
+    sha256: 40db949fcb2f204562ec6ba5377425cbc4261c46cc04e0748fdf399d5bb56fef
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/否
+  - id: wikisource-zhouyi-13
+    name: 周易/同人, Chinese Wikisource, revision 10645635 (2026-09-27), raw wikitext
+    file: sources/wikisource/13.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%90%8C%E4%BA%BA&oldid=10645635&action=raw"
+    sha256: c60417d5fd75abf7a958e368c092afadb2357e0d1af69085a1abe990c05a3d37
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/同人
+  - id: wikisource-zhouyi-14
+    name: 周易/大有, Chinese Wikisource, revision 10645712 (2026-09-27), raw wikitext
+    file: sources/wikisource/14.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%A4%A7%E6%9C%89&oldid=10645712&action=raw"
+    sha256: 3c4fdab8bfd0a57bfe53c483c5ad32a308d58094167a8dbb52b16c8c4c26ef0c
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/大有
+  - id: wikisource-zhouyi-15
+    name: 周易/謙, Chinese Wikisource, revision 2106142 (2022-02-16), raw wikitext
+    file: sources/wikisource/15.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%AC%99&oldid=2106142&action=raw"
+    sha256: 2ffb3b0269b10fe966f76b4dd96b49503733677215fa6b9df7414a0a903d3700
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/謙
+  - id: wikisource-zhouyi-16
+    name: 周易/豫, Chinese Wikisource, revision 10645735 (2026-09-27), raw wikitext
+    file: sources/wikisource/16.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%B1%AB&oldid=10645735&action=raw"
+    sha256: 65bf434245ce44f90a7034ebef4159cd64b85f7cdb099c7f52e8820215bbfe5b
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/豫
+  - id: wikisource-zhouyi-17
+    name: 周易/隨, Chinese Wikisource, revision 10645020 (2026-09-27), raw wikitext
+    file: sources/wikisource/17.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E9%9A%A8&oldid=10645020&action=raw"
+    sha256: af3531608314476f887b4c8adc97ccf6c2ca09abf5718d4643be598cdda4a8d0
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/隨
+  - id: wikisource-zhouyi-18
+    name: 周易/蠱, Chinese Wikisource, revision 2106145 (2022-02-16), raw wikitext
+    file: sources/wikisource/18.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%A0%B1&oldid=2106145&action=raw"
+    sha256: b823e1f7c186f7ae3ea27e22955595a873311c8c8f1c00a1b09d00f887df6a5a
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/蠱
+  - id: wikisource-zhouyi-19
+    name: 周易/臨, Chinese Wikisource, revision 2106146 (2022-02-16), raw wikitext
+    file: sources/wikisource/19.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%87%A8&oldid=2106146&action=raw"
+    sha256: beadffbfc5356c83e7068507a7446efbe4c175eeec1c3845ec634e288f3217cc
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/臨
+  - id: wikisource-zhouyi-20
+    name: 周易/觀, Chinese Wikisource, revision 10645159 (2026-09-27), raw wikitext
+    file: sources/wikisource/20.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%A7%80&oldid=10645159&action=raw"
+    sha256: 73da70d9f76cf58dc6ff2ca031e27125ef50b80fca221ffdf082e28fe044de6e
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/觀
+  - id: wikisource-zhouyi-21
+    name: 周易/噬嗑, Chinese Wikisource, revision 10645753 (2026-09-27), raw wikitext
+    file: sources/wikisource/21.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%99%AC%E5%97%91&oldid=10645753&action=raw"
+    sha256: cbfa0c3f32152b3c31c91624dddc4abd7b8217b7121507fecb8a68d7dc68ecee
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/噬嗑
+  - id: wikisource-zhouyi-22
+    name: 周易/賁, Chinese Wikisource, revision 2405035 (2024-05-09), raw wikitext
+    file: sources/wikisource/22.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%B3%81&oldid=2405035&action=raw"
+    sha256: f7418a0d3805c366e3afc6e9c7fb32c0c1da7883bf714cbe6235fe477365773c
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/賁
+  - id: wikisource-zhouyi-23
+    name: 周易/剝, Chinese Wikisource, revision 10645800 (2026-09-27), raw wikitext
+    file: sources/wikisource/23.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%89%9D&oldid=10645800&action=raw"
+    sha256: 641e20b6320b0c6d6bce4b0856297382547a9ae0f5b4da7ea219944208773090
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/剝
+  - id: wikisource-zhouyi-24
+    name: 周易/復, Chinese Wikisource, revision 10643037 (2026-09-27), raw wikitext
+    file: sources/wikisource/24.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%BE%A9&oldid=10643037&action=raw"
+    sha256: f798cd72e1c558fb9bcd640ee52ba089ca7b0f6f5be3e26c804c8a7733a17b5a
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/復
+  - id: wikisource-zhouyi-25
+    name: 周易/无妄, Chinese Wikisource, revision 10645038 (2026-09-27), raw wikitext
+    file: sources/wikisource/25.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%97%A0%E5%A6%84&oldid=10645038&action=raw"
+    sha256: c11bc5a60fde2c199374195527cee4102ef5e5b755b7cb2bb44454eec95fd310
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/无妄
+  - id: wikisource-zhouyi-26
+    name: 周易/大畜, Chinese Wikisource, revision 10646304 (2026-09-27), raw wikitext
+    file: sources/wikisource/26.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%A4%A7%E7%95%9C&oldid=10646304&action=raw"
+    sha256: 5cfe64d4db6fea5edd781f4ee13b6465e27d62e1cb1ee777121b158700bbfeaa
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/大畜
+  - id: wikisource-zhouyi-27
+    name: 周易/頤, Chinese Wikisource, revision 10643091 (2026-09-27), raw wikitext
+    file: sources/wikisource/27.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E9%A0%A4&oldid=10643091&action=raw"
+    sha256: d356ddc403ae8a2923c8805df8854b44b65eaa39c430b41a7924ea55593f320a
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/頤
+  - id: wikisource-zhouyi-28
+    name: 周易/大過, Chinese Wikisource, revision 10645184 (2026-09-27), raw wikitext
+    file: sources/wikisource/28.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%A4%A7%E9%81%8E&oldid=10645184&action=raw"
+    sha256: 1249e5a4ebb965dc31392541cf4f2b2892361c3b7a147eea0d79d7050778490f
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/大過
+  - id: wikisource-zhouyi-29
+    name: 周易/坎, Chinese Wikisource, revision 10646381 (2026-09-27), raw wikitext
+    file: sources/wikisource/29.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%9D%8E&oldid=10646381&action=raw"
+    sha256: 67649ec92aad923c487b99d0eadb244f47fd81ac9ec1fc41c991cae52fe8c980
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/坎
+  - id: wikisource-zhouyi-30
+    name: 周易/離, Chinese Wikisource, revision 10646424 (2026-09-27), raw wikitext
+    file: sources/wikisource/30.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E9%9B%A2&oldid=10646424&action=raw"
+    sha256: 441acca23398f8f80692371d6f6210c53ee2d945f3f77df0f649b2eb9da02ec9
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/離
+  - id: wikisource-zhouyi-31
+    name: 周易/咸, Chinese Wikisource, revision 10646450 (2026-09-27), raw wikitext
+    file: sources/wikisource/31.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%92%B8&oldid=10646450&action=raw"
+    sha256: fb35b42cf24d00ebc1532456ea7832c2d30f99fa52ba76c778451aa31a8d85ff
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/咸
+  - id: wikisource-zhouyi-32
+    name: 周易/恒, Chinese Wikisource, revision 10646486 (2026-09-27), raw wikitext
+    file: sources/wikisource/32.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%81%92&oldid=10646486&action=raw"
+    sha256: e9c83f30c75539487013066246e4f8cbf27bde372ec46b4e47c609e0622b67bc
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/恒
+  - id: wikisource-zhouyi-33
+    name: 周易/遯, Chinese Wikisource, revision 10645108 (2026-09-27), raw wikitext
+    file: sources/wikisource/33.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E9%81%AF&oldid=10645108&action=raw"
+    sha256: 2676bbe35fe01a331f62ce09665031ce05435a5b8f9bc2bb49a4ae761c0751fb
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/遯
+  - id: wikisource-zhouyi-34
+    name: 周易/大壯, Chinese Wikisource, revision 10646529 (2026-09-27), raw wikitext
+    file: sources/wikisource/34.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%A4%A7%E5%A3%AF&oldid=10646529&action=raw"
+    sha256: cddc93eed027f6a988901d305169ec51ba9b38c783b14488de6f1b141aec868b
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/大壯
+  - id: wikisource-zhouyi-35
+    name: 周易/晉, Chinese Wikisource, revision 10646579 (2026-09-27), raw wikitext
+    file: sources/wikisource/35.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%99%89&oldid=10646579&action=raw"
+    sha256: 7322474e504b7919ee7f29188f90aade0c384a2e5f4570de3eea3c8cbb083354
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/晉
+  - id: wikisource-zhouyi-36
+    name: 周易/明夷, Chinese Wikisource, revision 10644507 (2026-09-27), raw wikitext
+    file: sources/wikisource/36.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%98%8E%E5%A4%B7&oldid=10644507&action=raw"
+    sha256: 4d341536c62fa6e76cf02602e433eaff9a377efc8ed19258b85ae6ada8aea0ab
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/明夷
+  - id: wikisource-zhouyi-37
+    name: 周易/家人, Chinese Wikisource, revision 2405005 (2024-05-09), raw wikitext
+    file: sources/wikisource/37.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%AE%B6%E4%BA%BA&oldid=2405005&action=raw"
+    sha256: 0179c8e76f2ef04ee811c1acf142f707d29083fe324de7c4cd086ceb47f79c99
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/家人
+  - id: wikisource-zhouyi-38
+    name: 周易/睽, Chinese Wikisource, revision 10646622 (2026-09-27), raw wikitext
+    file: sources/wikisource/38.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E7%9D%BD&oldid=10646622&action=raw"
+    sha256: e992371a0dc8ee58aba5f44f8ede6205712dbdad25edb7c030a1dcf12f067706
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/睽
+  - id: wikisource-zhouyi-39
+    name: 周易/蹇, Chinese Wikisource, revision 2405036 (2024-05-09), raw wikitext
+    file: sources/wikisource/39.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%B9%87&oldid=2405036&action=raw"
+    sha256: 4fca7850987f383c2a66b195c5c35c5f39be0c41877c5607013d6a9858d7066b
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/蹇
+  - id: wikisource-zhouyi-40
+    name: 周易/解, Chinese Wikisource, revision 10646666 (2026-09-27), raw wikitext
+    file: sources/wikisource/40.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%A7%A3&oldid=10646666&action=raw"
+    sha256: 46fd421e644b9e766810bc08b912d61b680d17a3b5a420311d5bf75289a831f2
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/解
+  - id: wikisource-zhouyi-41
+    name: 周易/損, Chinese Wikisource, revision 10646704 (2026-09-27), raw wikitext
+    file: sources/wikisource/41.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%90%8D&oldid=10646704&action=raw"
+    sha256: 35cd31fa7274be23f261cdbeedea2764f755f2b9216e187ebd7cb19f104e7cea
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/損
+  - id: wikisource-zhouyi-42
+    name: 周易/益, Chinese Wikisource, revision 10646726 (2026-09-27), raw wikitext
+    file: sources/wikisource/42.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E7%9B%8A&oldid=10646726&action=raw"
+    sha256: b6b667ee48181cb28e9ba3a96f5e9f209d30a5a50396594c55b5260b5cb29aee
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/益
+  - id: wikisource-zhouyi-43
+    name: 周易/夬, Chinese Wikisource, revision 2405003 (2024-05-09), raw wikitext
+    file: sources/wikisource/43.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%A4%AC&oldid=2405003&action=raw"
+    sha256: 1dbda1e9e07a19fe4ff04491bf7f99b3b9c501702773972d647745c2c5f4b0aa
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/夬
+  - id: wikisource-zhouyi-44
+    name: 周易/姤, Chinese Wikisource, revision 10646826 (2026-09-27), raw wikitext
+    file: sources/wikisource/44.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%A7%A4&oldid=10646826&action=raw"
+    sha256: 6b32ae120b58931145ddff8085f5c56e45f7c52c3a1cb6a5c6a49d3b358819e3
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/姤
+  - id: wikisource-zhouyi-45
+    name: 周易/萃, Chinese Wikisource, revision 10647546 (2026-09-27), raw wikitext
+    file: sources/wikisource/45.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%90%83&oldid=10647546&action=raw"
+    sha256: f353e767fdeeca38561dfe43a34c587366154bad4ab6e5899924045b28da1c14
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/萃
+  - id: wikisource-zhouyi-46
+    name: 周易/升, Chinese Wikisource, revision 10646879 (2026-09-27), raw wikitext
+    file: sources/wikisource/46.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%8D%87&oldid=10646879&action=raw"
+    sha256: 443fb95dd115611d330e6ff8c5e71cde43295b15c5004bd1e2e7ecdf4754f742
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/升
+  - id: wikisource-zhouyi-47
+    name: 周易/困, Chinese Wikisource, revision 10647032 (2026-09-27), raw wikitext
+    file: sources/wikisource/47.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%9B%B0&oldid=10647032&action=raw"
+    sha256: cc243ac371a6fa4df22160bc14f1d5ce8802849a778522758ec24b87fa562b8b
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/困
+  - id: wikisource-zhouyi-48
+    name: 周易/井, Chinese Wikisource, revision 10645240 (2026-09-27), raw wikitext
+    file: sources/wikisource/48.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E4%BA%95&oldid=10645240&action=raw"
+    sha256: 1ab27335076e1c166642c60b9f31789337a7da0c66ec4e3d9f28632786ff0914
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/井
+  - id: wikisource-zhouyi-49
+    name: 周易/革, Chinese Wikisource, revision 10643173 (2026-09-27), raw wikitext
+    file: sources/wikisource/49.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E9%9D%A9&oldid=10643173&action=raw"
+    sha256: 095de39170ac0e2407fbebd131f3957b08f13d1aeea25eed4f331aa672fde643
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/革
+  - id: wikisource-zhouyi-50
+    name: 周易/鼎, Chinese Wikisource, revision 10647086 (2026-09-27), raw wikitext
+    file: sources/wikisource/50.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E9%BC%8E&oldid=10647086&action=raw"
+    sha256: f42593c252a3f9a3c5f3e0005959c887acb653016eef0b887bf51c129b841fa8
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/鼎
+  - id: wikisource-zhouyi-51
+    name: 周易/震, Chinese Wikisource, revision 10644930 (2026-09-27), raw wikitext
+    file: sources/wikisource/51.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E9%9C%87&oldid=10644930&action=raw"
+    sha256: a91ae3f5544413961abcc2d134f79310de1f7bab2c81f7f29a42d309a75ad26a
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/震
+  - id: wikisource-zhouyi-52
+    name: 周易/艮, Chinese Wikisource, revision 10647135 (2026-09-27), raw wikitext
+    file: sources/wikisource/52.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%89%AE&oldid=10647135&action=raw"
+    sha256: 58c8311a879b6c5e764365d0beb1c946ae2a2e63784e1e1d6a946f387a0379ee
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/艮
+  - id: wikisource-zhouyi-53
+    name: 周易/漸, Chinese Wikisource, revision 2560535 (2025-05-11), raw wikitext
+    file: sources/wikisource/53.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%BC%B8&oldid=2560535&action=raw"
+    sha256: 46da172e6576ba774f6c61741a2d566014f5e5fc90c1065251cb80ccd89b28d7
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/漸
+  - id: wikisource-zhouyi-54
+    name: 周易/歸妹, Chinese Wikisource, revision 10647182 (2026-09-27), raw wikitext
+    file: sources/wikisource/54.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%AD%B8%E5%A6%B9&oldid=10647182&action=raw"
+    sha256: 3b875fda93e1388dd9359d5185626e56e542344e07efe0659b02512595c992fd
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/歸妹
+  - id: wikisource-zhouyi-55
+    name: 周易/豐, Chinese Wikisource, revision 10645290 (2026-09-27), raw wikitext
+    file: sources/wikisource/55.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%B1%90&oldid=10645290&action=raw"
+    sha256: decc267b9a05f7779a16ca01bc00fce9bff4e650fd3b1195d0f97d91297df302
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/豐
+  - id: wikisource-zhouyi-56
+    name: 周易/旅, Chinese Wikisource, revision 10647234 (2026-09-27), raw wikitext
+    file: sources/wikisource/56.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%97%85&oldid=10647234&action=raw"
+    sha256: 3e8aed4bcd7651b4afde4fbfa7451fd15d632ad313d8760c1dda7d3d3c49e819
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/旅
+  - id: wikisource-zhouyi-57
+    name: 周易/巽, Chinese Wikisource, revision 10644966 (2026-09-27), raw wikitext
+    file: sources/wikisource/57.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%B7%BD&oldid=10644966&action=raw"
+    sha256: 99a815af7cfac36d8d46784002467f6e70babf49e7fe4bb930976d0e78dc066c
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/巽
+  - id: wikisource-zhouyi-58
+    name: 周易/兌, Chinese Wikisource, revision 2404993 (2024-05-09), raw wikitext
+    file: sources/wikisource/58.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%85%8C&oldid=2404993&action=raw"
+    sha256: 0ecebe0d070dcd3cdf07019a3f1d578cbcd4d1bb441c48b8536bb596e3e49850
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/兌
+  - id: wikisource-zhouyi-59
+    name: 周易/渙, Chinese Wikisource, revision 10647580 (2026-09-27), raw wikitext
+    file: sources/wikisource/59.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%B8%99&oldid=10647580&action=raw"
+    sha256: 9c8c9b4298fa8429c00ece4a08821a83f9a5692f9bba09eb26cd2e180850c76e
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/渙
+  - id: wikisource-zhouyi-60
+    name: 周易/節, Chinese Wikisource, revision 2405027 (2024-05-09), raw wikitext
+    file: sources/wikisource/60.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E7%AF%80&oldid=2405027&action=raw"
+    sha256: a017661595c6358621214894a41885648d4e2fe71af0d43ebd9f7b3f66517bcf
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/節
+  - id: wikisource-zhouyi-61
+    name: 周易/中孚, Chinese Wikisource, revision 10647425 (2026-09-27), raw wikitext
+    file: sources/wikisource/61.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E4%B8%AD%E5%AD%9A&oldid=10647425&action=raw"
+    sha256: 9048c101757a1c3a0f5e7ec3d79e0fa22ba121babbf7fc083b8a48e1a0514e2b
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/中孚
+  - id: wikisource-zhouyi-62
+    name: 周易/小過, Chinese Wikisource, revision 10643238 (2026-09-27), raw wikitext
+    file: sources/wikisource/62.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%B0%8F%E9%81%8E&oldid=10643238&action=raw"
+    sha256: 899bcfc5e793f63761f01098bc6997cbec4c71be84f183f763c553e69075f1cd
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/小過
+  - id: wikisource-zhouyi-63
+    name: 周易/既濟, Chinese Wikisource, revision 2572417 (2025-06-24), raw wikitext
+    file: sources/wikisource/63.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%97%A2%E6%BF%9F&oldid=2572417&action=raw"
+    sha256: e9099522d8013177a9316c8fc499a10b80d50edd18b3401cbd79b2d31ab58d78
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/既濟
+  - id: wikisource-zhouyi-64
+    name: 周易/未濟, Chinese Wikisource, revision 10647450 (2026-09-27), raw wikitext
+    file: sources/wikisource/64.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%9C%AA%E6%BF%9F&oldid=10647450&action=raw"
+    sha256: 9dcd6ad074f7d0633872e3e83665e86bd3d2bc19a3ae23cb4ff0eb044e2b4a83
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/周易/未濟
+  - id: unihan-readings
+    name: Unicode Han Database 18.0, readings (kTang after Stimson 1976, kMandarin)
+    file: sources/Unihan_Readings.txt
+    sha256: 9d39995b5de714e8ce93716ed5d15eaa0792d68e407cdf8a0add2893b8f4150b   # of the extracted member
+    url: https://www.unicode.org/Public/18.0.0/ucd/Unihan.zip
+    extract: "Unihan_Readings.txt"
+    license: Unicode License v3
+    license_url: https://www.unicode.org/license.txt
+  - id: unihan-variants
+    name: Unicode Han Database 18.0, variants
+    file: sources/Unihan_Variants.txt
+    sha256: 4ccfd34b08ac7b9c14353f6668ba43e3796d85c4cdce7952b635be16015aafa2   # of the extracted member
+    url: https://www.unicode.org/Public/18.0.0/ucd/Unihan.zip
+    extract: "Unihan_Variants.txt"
+    license: Unicode License v3
+    license_url: https://www.unicode.org/license.txt
+  - id: oc-baxter-sagart-wiktionary
+    name: Baxter-Sagart Old Chinese (2014, v1.1) from English Wiktionary's Module:zh/data/och-pron-BS/<character>, one pinned revision per character; characters absent from that list (92 in this text) from Module:zh/data/och-pron-ZS (Zhengzhang 2003)
+    data: pipeline/weft/data/lzh_oc_bs.yaml   # a committed CC BY-SA extract, not fetched by acquire
+    sha256: 338d9b98c32271f77f1dd747be629b6dd0bc67206bb38750066e8b57040f08ca   # of the data file
+    url: https://en.wiktionary.org/wiki/Module:zh/data/och-pron-BS
+    license: CC BY-SA 4.0 (Wiktionary)
+    license_url: https://en.wiktionary.org/wiki/Wiktionary:Copyrights
+    terms: "The Baxter-Sagart data release (ocbaxtersagart.lsait.lsa.umich.edu) states no open license that Weft could verify, so the Wiktionary copy is used."
+scheme_labels:
+  tang: "Tang: as Middle Chinese was read in the 8th century AD, some 1,500 years after the line statements were composed (Stimson, via Unicode)"
+  old-chinese: "Old Chinese: as the text may have sounded in the Zhou period (Baxter-Sagart 2014, via Wiktionary; approximate, and a model of later Zhou speech than the 9th century)"
+sound_confidence: medium              # the page invites specialists to correct the sound guide or record it
+schemes: [old-chinese, tang, mandarin]   # default = Old Chinese (Baxter-Sagart, approximate); Tang and Mandarin are later readings
+translations:
+  - id: legge1882
+    translator: James Legge
+    year: 1882
+    form: prose, The Yi King, Sacred Books of the East vol. 16 (Oxford, Clarendon Press, 1882), the Text; Internet Archive OCR (item wg916); Legge's paragraph numbers left out
+    license: public domain (published 1882)
+    license_url: https://archive.org/details/wg916
+    file: sources/legge1882.txt
+    url: "https://archive.org/download/wg916/WG916-1882%20-The%20Sacred%20Books%20of%20East%20-%20Vol%2016%20of%2050%20-%20The%20Sacred%20Books%20of%20China%20%20-%20Part%202%20Of%204%20-%20The%20Texts%20Of%20Confucianism%20-%20Yi%20King_djvu.txt"
+    sha256: 0cdcf1152546c08cbd7b70bcb440e914e79429d6814d1f8913681099cde183c4
+  - id: wilhelm-baynes1950
+    kind: reference
+    translator: Richard Wilhelm, rendered into English by Cary F. Baynes
+    year: 1950
+    title: The I Ching or Book of Changes
+    publisher: Bollingen Foundation (Pantheon Books), Bollingen Series XIX
+    note: "Translated from Wilhelm's German version of 1924"
+predicted_gaps:
+  - "the Ten Wings (彖, 大象, 小象, 文言, 繫辭, 說卦, 序卦, 雜卦) are not in this edition: they are commentaries, later than the core text, and the source pages print them after it"
+  - "Old Chinese is a reconstruction (Baxter-Sagart 2014), approximate, and models Zhou speech in general rather than the 9th century; brackets and parentheses in the scholarly form mark uncertain segments"
+  - "92 characters (209 tokens) have no Baxter-Sagart reading and fall back to Zhengzhang Shangfang (oc-from-zhengzhang), among them frequent words of the text: 孚, 涉, 蹇, 艮, 眚"
+  - "in hexagram 38, line 3, the page prints 𧤊 (Unicode Extension B, outside the page's Chinese font) with 掣 as the other copy; Weft prints 掣 there, the one place it departs from the printed reading. 内, 尫, 觌 and 轝, variant graphs the page uses, take the Old Chinese reading of 內, 尪, 覿 and 輿"
+  - "133 characters (386 tokens) have no Tang reading in Unihan, Stimson's list lacking them, and show ? in the Tang row (reading-missing), among them 亨, 孚, 吝, 弗, 黃; others borrow one from a glyph variant (reading-from-variant, 286 tokens; 无 from 無 most often)"
+  - "Mandarin readings chosen for sense that the Baxter-Sagart list does not give (mandarin-reading-unattested): 說 read tuō 'loosen' and yuè 'pleased'; choices for characters taken from Zhengzhang carry no pinyin to check against"
+  - "the Wikisource pages do not name their base text and in 48 places print one reading with another as 一作; Weft follows the printed reading, which in some places differs from the Wang Bi text Legge translated (see the note)"
+  - "Wikisource prints modern punctuation; Weft's tokens follow it as caesura marks but do not reproduce it (the source is checked with punctuation, markup and whitespace stripped)"
+  - "no treebank; lemma, part of speech and gloss by hand, draft, for hexagrams 1 to 16 only in this pass: hexagrams 17 to 64 are not yet annotated (token-no-lemma, token-no-morph, token-no-gloss in weft check)"
+  - "prose with some rhyme: no metre row"
+  - "one public-domain English translation (Legge 1882). McClatchie's 1876 translation, the first in English, is public domain but no open digitization of it was found; Wilhelm-Baynes (1950) is cited, not reproduced"
+  - "Legge's text is from the Internet Archive OCR; diacritics in his romanized names (â, ă, î, û) are not reliably kept by the OCR and are not restored; corrections are listed in sense/legge1882.yaml"

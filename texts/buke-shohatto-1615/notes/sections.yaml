@@ -1,0 +1,48 @@
+- id: n.bk.1.1.issue
+  attach: bk.1.1
+  kind: editorial
+  status: draft
+  leans_on: "Kaitei Shiseki shūran vol. 17 (1903), pp. 218 and 220 (section headings); James Murdoch, A History of Japan, vol. 2 (1903), p. 703"
+  text: "Who issued the text. The laws were read out to the daimyō at Fushimi Castle in the seventh month of 1615, two months after the fall of Osaka Castle, and they went out in the name of the shōgun, Tokugawa Hidetada. His father Ieyasu had retired from the office but still directed policy, and the drafting is usually credited to the Zen monk Konchiin Sūden. The 1903 edition reflects the shared authorship in its own way: it heads this text 權現樣御代, 'in the time of Gongen-sama', Ieyasu's posthumous title, and heads the 1629 version that follows it with Hidetada's. Murdoch, writing in 1903, gives a different drafter, Hayashi Razan (his OCR text reads Kazan), and says that Honda Masazumi commented on each article as it was read. Weft has not checked his source, so the attribution to Sūden is kept and Murdoch's is recorded here."
+- id: n.bk.1.2.sound
+  attach: bk.1.2
+  kind: editorial
+  status: draft
+  leans_on: "Nippo jisho (Nagasaki, 1603); João Rodrigues, Arte da lingoa de Iapam (1604–1608), as summarised in standard histories of Japanese phonology"
+  text: "The sound row. The first scheme reads each token's Japanese reading in the pronunciation of Kyoto around 1600, the best-recorded state of the language near 1615: Portuguese Jesuits wrote it down in a dictionary and a grammar within a decade of these laws. On that evidence h was a lip sound (法, はふ, is faw), the long o from au was still open and apart from the closed o from ou, and え was ye. The Jesuits recorded speech, not the reading aloud of Chinese text, and no recording of how the laws were read at Fushimi survives. The row is therefore an approximation in two layers: the reading itself is editorial, and its pronunciation is reconstructed."
+- id: n.bk.1.3.kunten
+  attach: bk.1.3
+  kind: editorial
+  status: draft
+  leans_on: "Kaitei Shiseki shūran vol. 17 (1903), p. 218"
+  text: "How the text was read. The laws are written in kanbun, Chinese-character prose that a Japanese reader turned into Japanese as he read, changing the order and adding inflections and particles. The 1903 edition prints the return marks (kaeriten) that guide the reordering: レ sends the reader back one character, 一 and 二 send him across a phrase. This line, 不レ可レ不二兼備一矣, is read 兼備せざるべからず, 'must not fail to hold both', with the three negative and modal characters said last and in reverse order, and 矣 not said at all. The small numbers above the characters give that order; the line under them gives the whole reading. The marks are those of the 1903 print. The okurigana, the choice of readings and therefore the wording of every line reading are Weft's, after Edo-period practice, and are draft."
+- id: n.bk.4.2.mark
+  attach: bk.4.2.18
+  kind: editorial
+  status: draft
+  leans_on: "Kaitei Shiseki shūran vol. 17 (1903), pp. 218 and 220"
+  text: "A misprinted mark. The print opens a 上-下 pair at 爲 (下) but closes the phrase at 劔 with 一, which leaves 爲 with nothing to return to. The 1629 version of the same sentence, printed two pages later in the same volume, has 上 at 劔. The edition keeps the printed 一, and the reading order follows 上 (marked with an asterisk), so that 爲 is read last: 國家を覆すの利噐、人民を絕つの鋒劔たり, 'is a sharp tool for overturning the state and a sword's point for cutting off the people'."
+- id: n.bk.6.1.emend
+  attach: bk.6.1
+  kind: editorial
+  status: draft
+  leans_on: "Japanese Wikisource, Page:Shisekisyūran17.pdf/218 and /219 (comments in the page source)"
+  text: "Two emendations. In this article the 1903 page prints 雉 ('pheasant', also a unit of wall length) where the sense requires 雖, 'even though'; in article 11 it prints 乘馬, 'riding a horse', where the article and its commentary concern 乘輿, 'riding a palanquin'. The Wikisource transcriber corrected both and left the printed forms in comments in the page source. Weft's text follows the corrected transcription, so in these two places it does not reproduce the 1903 print. The surrounding characters make both corrections secure."
+- id: n.bk.6.2.zuo
+  attach: bk.6.2
+  kind: editorial
+  status: draft
+  leans_on: "Zuo zhuan, Duke Yin year 1 (都城過百雉，國之害也)"
+  text: "A borrowed sentence. 城過百雉國之害也 adapts a line of the Zuo zhuan, the early Chinese chronicle, where a minister warns his ruler that a subordinate city whose walls exceed a hundred chi is a danger to the state. A chi (雉) is a measure of wall, traditionally three zhang long by one high. The commentary under this article argues from that classical precedent rather than from Japanese experience, as the commentaries under articles 8 and 9 also do."
+- id: n.bk.8.3.kui
+  attach: bk.8.3
+  kind: editorial
+  status: draft
+  leans_on: "Kaitei Shiseki shūran vol. 17 (1903), p. 219; Yijing, hexagram 38 (睽), top line"
+  text: "A damaged quotation. The 1903 print marks a gap with a small circle and notes in small type that another copy reads 易 there, which would make the sentence open 'The Yijing, under Kui, says'. It also notes 志 ('intention') as a variant for 者. 匪寇婚媾, 'not robbers but suitors', is a phrase of the top line of hexagram 38, Kui. The words that follow are not in that line, and their sense is uncertain: with 志 they read 'if the intention is to make common cause with enemies, the time is lost'; with 者, as printed, the translation here takes marriage as the subject. Both the reading and the translation of this line are tentative."
+- id: n.bk.9.1.kanei
+  attach: bk.9.1
+  kind: editorial
+  status: draft
+  leans_on: "Kaitei Shiseki shūran vol. 17 (1903), p. 220; general histories of the Tokugawa shogunate"
+  text: "This text and its revisions. The laws were reissued with each shōgun. The version of 1629, printed after this one in the 1903 volume, follows it closely, with small changes of wording, in the articles Weft has compared (1 to 6). The version of 1635, issued under the third shōgun Iemitsu and usually credited to Hayashi Razan, is longer, at nineteen articles. Among its additions is the rule that daimyō reside in Edo in alternate years, the system of alternate attendance (sankin kōtai). In 1615 this article speaks of 參勤, coming to attend on the shōgun, but sets no calendar; it limits the size of the retinue and cites an older Japanese decree as precedent. Murdoch's digest of this article places the residence in Yedo; the 1615 text does not name a city."

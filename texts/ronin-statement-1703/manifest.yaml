@@ -1,0 +1,82 @@
+work: ronin-statement-1703
+title: "The Akō retainers' statement (淺野內匠頭家來口上), 1703"
+author: The former retainers of Asano Takumi-no-kami Naganori, headed by Ōishi Kura-no-suke Yoshio; the drafting is attributed in later accounts to Hara Sōemon
+language: ja
+lang_name: "Early Modern Japanese (sōrōbun, epistolary style, read in Japanese)"
+prefix: ak                       # ak.statement.<line>[.<token>]
+urn: urn:weft:ja:ako.koujou.1703   # Weft-local identifier
+unit: section
+section_noun: document
+written: {year: 1703, display: "1703", label: "dated Genroku 15, twelfth month (January 1703 in the Western calendar); carried into Kira Yoshinaka's Edo mansion on the night of the attack, the 14th day of that month, and left there in a box fixed to a bamboo pole"}
+status: phase-0
+pilot: {sections: ["statement"]}
+edition:
+  id: sugihara1910
+  name: "Sugihara Izan (杉原夷山), Ōishi Yoshio: ijin genkōroku (大石良雄 偉人言行録), Tokyo, 1910, pp. 125–126, with its return marks; National Diet Library Digital Collections 781116, frames 75–76; transcribed by Weft from the scan"
+  format: weft-edition
+  file: edition.yaml
+  license: "public domain (NDL: Public Domain Mark); Weft transcription, line division and readings CC BY-SA 4.0"
+treebank: null                   # none exists for this text; hand annotation, draft
+schemes: [genroku-1703, hepburn] # default = Edo speech around 1700 (approximate); modern reading second
+scheme_labels:
+  genroku-1703: "Edo, 1703: the statement read aloud in Japanese, in the speech of Edo around 1700 (approximate)"
+  hepburn: "Modern reading of the same Japanese (Hepburn)"
+sound_confidence: medium
+sources_extra:
+  - id: ndl781116-p75
+    name: Sugihara 1910, NDL 781116 frame 75 (pp. 124–125), IIIF image
+    file: sources/ndl781116-p75.jpg
+    url: https://dl.ndl.go.jp/api/iiif/781116/R0000075/full/full/0/default.jpg
+    sha256: fb65471c50dfbde568b56b2bae9ddf993080066eb6aff72b1e9118b622f87af4
+    license: public domain (NDL Public Domain Mark)
+    license_url: https://dl.ndl.go.jp/pid/781116
+  - id: ndl781116-p76
+    name: Sugihara 1910, NDL 781116 frame 76 (pp. 126–127), IIIF image
+    file: sources/ndl781116-p76.jpg
+    url: https://dl.ndl.go.jp/api/iiif/781116/R0000076/full/full/0/default.jpg
+    sha256: fd80038117b5c54b6850c8a9292f69936b07815f9e01ff72fd55bb397aec673a
+    license: public domain (NDL Public Domain Mark)
+    license_url: https://dl.ndl.go.jp/pid/781116
+  - id: ndl781116-p75-ocr
+    name: NDL Next Digital Library OCR of frame 75 (JSON)
+    file: sources/ndl781116-p75-ocr.json
+    url: https://lab.ndl.go.jp/dl/api/page/781116_75
+    sha256: 7390f2ac08ec015a905802f63233933c0c97ff75672b2da6d52716901502668d
+    license: "public domain (NDL Lab: text data of these items is under the Public Domain Mark)"
+    license_url: https://lab.ndl.go.jp/service/tsugidigi/
+    terms: "NDL Lab asks that edited data be marked as edited and not attributed to the library; API use is free except continuous commercial use"
+  - id: ndl781116-p76-ocr
+    name: NDL Next Digital Library OCR of frame 76 (JSON)
+    file: sources/ndl781116-p76-ocr.json
+    url: https://lab.ndl.go.jp/dl/api/page/781116_76
+    sha256: df177b13f4a532d05d096f03224a6e9c848231ffdeff02a5af2b43bb3db22a31
+    license: "public domain (NDL Lab: text data of these items is under the Public Domain Mark)"
+    license_url: https://lab.ndl.go.jp/service/tsugidigi/
+    terms: "NDL Lab asks that edited data be marked as edited and not attributed to the library; API use is free except continuous commercial use"
+translations:
+  - id: mitford1871
+    translator: A. B. Mitford
+    year: 1871
+    form: "prose, in Tales of Old Japan, 'The Forty-seven Rônins', translating a copy he was shown at Sengakuji"
+    partial: "Mitford translates the document freely and in his own order; spans join lines where his sentences cross them, and he does not render the title"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/mitford1871.txt
+    url: https://www.gutenberg.org/cache/epub/13015/pg13015.txt
+    sha256: ed5ccecb92539f68711e7152298130f72cd61866ac629a3cb19e8bedff4162ff
+  - id: weft-editorial
+    kind: editorial
+    translator: Weft editorial translation
+    year: 2026
+    form: "prose, line by line, close to the Japanese; draft, for review"
+    license: CC BY-SA 4.0
+predicted_gaps:
+  - "no open digital text of the statement was found (not on Japanese Wikisource or Aozora Bunko); the edition is Weft's transcription of a 1910 print, checked against the National Diet Library's OCR of the same pages (ocr-disagrees lists where the OCR differs)"
+  - "ocr-disagrees, 3 runs, explained: the OCR reads 末期 as 未期, 得共 as 得其, and the iteration mark of はゞ as katakana ヾ (dropped by the sensor); in each case the scan was checked and the edition follows the scan"
+  - "the copies of the statement differ in wording (於殿中 or 於御殿中; 難遁 or 難忍; 含意趣 with or without へ; 亡主之意趣 or 亡主之存念); the 1910 print is followed, and a note names the main variants"
+  - "the return marks are the 1910 editor's, not the 1703 document's; they are checked by eye against the scan only. The first mark at 被召上 is faint and is read as 二"
+  - "the print's ketsuji blanks before 仰付 and 上使 are not reproduced"
+  - "the list of signatories is cut after the first three names"
+  - "the reading (yomikudashi) and the 1703 pronunciation are Weft's reconstructions, approximate"
+  - "Mitford translated another copy, freely: he renders 含意趣 as avenging 'an insult', which the document does not say"
+  - "no treebank; lemma, part of speech and gloss by hand, draft"

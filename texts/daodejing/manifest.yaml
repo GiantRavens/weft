@@ -46,12 +46,13 @@ sources_extra:
   - id: oc-baxter-sagart-wiktionary
     name: Baxter-Sagart Old Chinese (2014, v1.1) from English Wiktionary's Module:zh/data/och-pron-BS/<character>, one pinned revision per character; 較 from Module:zh/data/och-pron-ZS (Zhengzhang 2003)
     data: pipeline/weft/data/lzh_oc_bs.yaml   # a committed CC BY-SA extract, not fetched by acquire
-    sha256: a8eb7a2386dc63c3b612c5c34b32e040fa41abd9a1b9f352f1f464fdf3340562   # of the data file
+    sha256: 338d9b98c32271f77f1dd747be629b6dd0bc67206bb38750066e8b57040f08ca   # of the data file
     url: https://en.wiktionary.org/wiki/Module:zh/data/och-pron-BS
     license: CC BY-SA 4.0 (Wiktionary)
     license_url: https://en.wiktionary.org/wiki/Wiktionary:Copyrights
     terms: "The Baxter-Sagart data release (ocbaxtersagart.lsait.lsa.umich.edu) states no open license that Weft could verify, so the Wiktionary copy is used."
 scheme_labels:
+  tang: "Tang: as Middle Chinese was read in the 8th century, a millennium after the text was compiled (Stimson, via Unicode)"
   old-chinese: "Old Chinese: as the text may have sounded when compiled, 4th to 3rd century BC (Baxter-Sagart 2014, via Wiktionary; approximate)"
 sound_confidence: medium              # the page invites specialists to correct the sound guide or record it
 schemes: [old-chinese, tang, mandarin]   # default = Old Chinese (Baxter-Sagart, approximate); Tang and Mandarin are later readings

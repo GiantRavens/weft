@@ -1,0 +1,74 @@
+work: buke-shohatto-1615
+title: Laws for the Military Houses (武家諸法度), 1615
+author: Issued in the name of the shōgun Tokugawa Hidetada (1579–1632); drafted by the Zen monk Konchiin Sūden (1569–1633), under the direction of the retired shōgun Tokugawa Ieyasu
+language: ja
+lang_name: "Early Modern Japanese (kanbun read in Japanese)"
+prefix: bk                       # bk.<article>.<line>[.<token>]; the closing lines are bk.close.*
+urn: urn:weft:ja:buke-shohatto.1615   # Weft-local identifier
+unit: section
+section_noun: article
+written: {year: 1615, display: "1615", label: "read out to the daimyō assembled at Fushimi Castle in the seventh month of Keichō 20 (1615), weeks after the fall of Osaka Castle; dated 慶長二十年卯七月. The thirteen articles of this first issue were revised in 1629 and, at greater length, in 1635"}
+status: phase-0
+pilot: {sections: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "close"]}
+edition:
+  id: shiseki17
+  name: Kondō Heijō (近藤瓶城), ed., Kaitei Shiseki shūran (改定史籍集覧), vol. 17 (Kondō shuppanbu, 1903), pp. 218–220, the section headed 權現樣御代 武家諸法度, via the Japanese Wikisource transcription of those scan pages
+  format: weft-edition
+  file: edition.yaml
+  license: public domain (PD-old); Wikisource transcription CC BY-SA 4.0; Weft line division and readings CC BY-SA 4.0
+treebank: null                   # none exists for this text; hand annotation, draft
+schemes: [keicho-1615, hepburn]  # default = the reading as said aloud in 1615 (approximate); modern reading second
+scheme_labels:
+  keicho-1615: "Fushimi and Kyoto, 1615: kanbun read aloud in Japanese, in the pronunciation the Jesuits recorded c. 1600–1608 (approximate)"
+  hepburn: "Modern reading of the same Japanese (Hepburn)"
+sound_confidence: medium         # the readings and the 1615 pronunciation are both reconstructions
+sources_extra:
+  - id: shiseki17-p218
+    name: Kaitei Shiseki shūran vol. 17 (1903), scan page 218, Japanese Wikisource revision 212501
+    file: sources/shiseki17-p218.txt
+    url: "https://ja.wikisource.org/w/index.php?title=Page:Shisekisy%C5%ABran17.pdf/218&oldid=212501&action=raw"
+    sha256: c99bf2c171f10ca604e13c4790be3682b2d1a3c9d8828fd13cf30b2716f29f0a
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://ja.wikisource.org/wiki/武家諸法度_(元和令)
+  - id: shiseki17-p219
+    name: Kaitei Shiseki shūran vol. 17 (1903), scan page 219, Japanese Wikisource revision 212502
+    file: sources/shiseki17-p219.txt
+    url: "https://ja.wikisource.org/w/index.php?title=Page:Shisekisy%C5%ABran17.pdf/219&oldid=212502&action=raw"
+    sha256: fcfdc8fcb1bb03cc3b7b74e68780e053b1615116e6f87a06b89b13153115193b
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://ja.wikisource.org/wiki/武家諸法度_(元和令)
+  - id: shiseki17-p220
+    name: Kaitei Shiseki shūran vol. 17 (1903), scan page 220, Japanese Wikisource revision 212656
+    file: sources/shiseki17-p220.txt
+    url: "https://ja.wikisource.org/w/index.php?title=Page:Shisekisy%C5%ABran17.pdf/220&oldid=212656&action=raw"
+    sha256: 719ed57fc5619945a2eefaba2b0a9c1617c9effa25ce8f0b5e246fdad8b9ec90
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://ja.wikisource.org/wiki/武家諸法度_(元和令)
+translations:
+  - id: weft-editorial
+    kind: editorial
+    translator: Weft editorial translation
+    year: 2026
+    form: "prose, close to the Chinese sentence and to the Japanese reading; draft, for review"
+    license: CC BY-SA 4.0
+  - id: murdoch1903
+    translator: James Murdoch
+    year: 1903
+    form: "a digest of the thirteen articles, one sentence each, in A History of Japan, vol. 2 (Kobe Chronicle; Kelly and Walsh), pp. 703–704"
+    partial: "Murdoch summarises each article in one sentence and omits the commentary under it"
+    license: public domain (published 1903; Murdoch died 1921)
+    license_url: https://archive.org/details/historyofjapan02murd
+    file: sources/murdoch1903.txt
+    url: https://archive.org/download/historyofjapan02murd/historyofjapan02murd_djvu.txt
+    sha256: 45ecadbb4db4cacc4b5900e9b2c038a65a1a13047cb5944b51c044733c92c6d4
+predicted_gaps:
+  - "the readings (yomikudashi) are Weft's, after Edo-period conventions; the 1903 edition prints return marks but no okurigana, so particles, inflections and the choice between Japanese and Sino-Japanese readings are editorial"
+  - "the return marks are those of the 1903 edition, not necessarily of the 1615 document; a manuscript copy of the same text (National Archives of Japan) carries kunten of its own"
+  - "article 4: the 1903 print closes 爲{{下}} with 劔{{一}}; the reader needs 上 there, as the 1629 text prints it (failure class kaeriten-emended, 1 token; the line reads with 上)"
+  - "article 6 and article 11: the Wikisource transcriber emended two misprints of the 1903 page (雉 to 雖, 馬 to 輿); the edition follows the emended text"
+  - "article 8: the 1903 print marks an omission with ◦ and gives variants in small type (易 before 睽, 志 for 者, 輿 missing); the base text is kept, ◦ is a silent token, and a note gives the variants"
+  - "將 in article 8 is read twice (まさに … とす); the token carries both readings and shows both places in the reading order"
+  - "the 1615 pronunciation follows the Jesuit records of Kyoto speech c. 1600–1608 (open and closed long o, f for h, she, ye, wo, kwa); how a scholar-monk read kanbun aloud at Fushimi is not recorded, so the row is approximate"
+  - "no complete public-domain English translation was found: J. C. Hall's (Transactions of the Asiatic Society of Japan 38, part 4, 1911) is not in any open scan located; Murdoch's one-line digest covers the article headings, and Weft's editorial translation (draft) covers every line"
+  - "Murdoch names Hayashi Razan as the drafter (his OCR text reads Kazan); the usual attribution is to Konchiin Sūden (see note)"
+  - "no treebank; lemma, part of speech and gloss by hand, draft"

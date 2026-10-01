@@ -1,0 +1,176 @@
+# Weft edition of the opening of the Heike monogatari (祇園精舍の事, book 1, chapter 1, through
+# 心もことばも及ばれね), as printed in Kōchū Nihon bungaku taikei, vol. 14 (Kokumin tosho, 1925),
+# p. 247 (National Diet Library 1018053, frame 152, Public Domain Mark). This printed text is the
+# vulgate (rufubon) line of the tale, not the Kakuichi text of 1371; the two differ in a few words of
+# this passage (see the notes). Transcribed by Weft from the scan; no open digital text was found.
+# japanese.line_checks compares each line with the library's OCR of the page (ocr_in) and reports
+# runs the OCR lacks (ocr-disagrees); each was checked against the scan. Ruby (furigana) is not
+# reproduced. Line division is Weft's. Each token's n is its reading in historical kana; a ・ marks
+# a join between words (no medial-h or long-vowel rule across it), ' blocks a long vowel.
+work: heike-gion-shoja
+joiner: ''
+ocr_in:
+- sources/ndl1018053-f152-ocr.json
+sections:
+- id: '1'
+  title: 'Book 1, chapter 1: Gion Shōja'
+  lines:
+  - tokens:
+    - {t: 祇園精舍, n: ぎをんしゃうじゃ}
+    - {t: の, n: の}
+    - {t: 鐘, n: かね}
+    - {t: の, n: の}
+    - {t: 聲, n: こゑ, p: 、}
+    - {t: 諸行無常, n: しょぎゃうむじゃう}
+    - {t: の, n: の}
+    - {t: 響, n: ひびき}
+    - {t: あり, n: あり, p: 、}
+  - tokens:
+    - {t: 娑羅雙樹, n: しゃらさうじゅ}
+    - {t: の, n: の}
+    - {t: 花, n: はな}
+    - {t: の, n: の}
+    - {t: 色, n: いろ, p: 、}
+    - {t: 盛者必衰, n: じゃうしゃ・ひっすい}
+    - {t: の, n: の}
+    - {t: 理, n: ことわり}
+    - {t: を, n: を}
+    - {t: 顯はす, n: あらはす, p: 。}
+  - tokens:
+    - {t: 驕れる, n: おごれる}
+    - {t: もの, n: もの}
+    - {t: 久しからず, n: ひさしからず, p: 、}
+    - {t: たゞ, n: ただ}
+    - {t: 春, n: はる}
+    - {t: の, n: の}
+    - {t: 夜, n: よ}
+    - {t: の, n: の}
+    - {t: 夢, n: ゆめ}
+    - {t: の, n: の}
+    - {t: 如し, n: ごとし, p: 。}
+  - tokens:
+    - {t: 猛き, n: たけき}
+    - {t: 人, n: ひと}
+    - {t: も, n: も}
+    - {t: 遂に, n: つひに}
+    - {t: は, n: は}
+    - {t: 亡びぬ, n: ほろびぬ, p: 。}
+    - {t: ひとへに, n: ひとへに}
+    - {t: 風, n: かぜ}
+    - {t: の, n: の}
+    - {t: 前, n: まへ}
+    - {t: の, n: の}
+    - {t: 塵, n: ちり}
+    - {t: に, n: に}
+    - {t: 同じ, n: おなじ, p: 。}
+  - tokens:
+    - {t: 遠く, n: とほく}
+    - {t: 異朝, n: いてう}
+    - {t: を, n: を}
+    - {t: とぶらふ, n: とぶらふ, mod: とぶらう}
+    - {t: に, n: に, p: 、}
+    - {t: 秦, n: しん}
+    - {t: の, n: の}
+    - {t: 趙高, n: てうかう, p: 、}
+    - {t: 漢, n: かん}
+    - {t: の, n: の}
+    - {t: 王莽, n: わうまう, p: 、}
+    - {t: 梁, n: りゃう}
+    - {t: の, n: の}
+    - {t: 周伊, n: しうい, p: 、}
+    - {t: 唐, n: たう}
+    - {t: の, n: の}
+    - {t: 祿山, n: ろくさん, p: 、}
+  - tokens:
+    - {t: これら, n: これら}
+    - {t: は, n: は}
+    - {t: 皆, n: みな, p: 、}
+    - {t: 舊主, n: きうしゅ}
+    - {t: 先皇, n: せんくゎう}
+    - {t: の, n: の}
+    - {t: 政, n: まつりごと}
+    - {t: に, n: に}
+    - {t: も, n: も}
+    - {t: 從はず, n: したがはず, p: 、}
+    - {t: 樂しみ, n: たのしみ}
+    - {t: を, n: を}
+    - {t: 極め, n: きはめ, p: 、}
+    - {t: 諫め, n: いさめ}
+    - {t: を, n: を}
+    - {t: も, n: も}
+    - {t: 思ひ入れず, n: おもひいれず, p: 、}
+  - tokens:
+    - {t: 天下, n: てんか}
+    - {t: の, n: の}
+    - {t: 亂れん, n: みだれん}
+    - {t: 事, n: こと}
+    - {t: を, n: を}
+    - {t: 悟らずして, n: さとらずして, p: 、}
+    - {t: 民間, n: みんかん}
+    - {t: の, n: の}
+    - {t: 憂ふる, n: うれ'ふる, mod: うれうる}
+    - {t: 所, n: ところ}
+    - {t: を, n: を}
+    - {t: 知らざりしかば, n: しらざりしかば, p: 、}
+    - {t: 久しからずして, n: ひさしからずして}
+    - {t: 亡じにし, n: ばうじにし}
+    - {t: ものども, n: ものども}
+    - {t: なり, n: なり, p: 。}
+  - tokens:
+    - {t: 近く, n: ちかく}
+    - {t: 本朝, n: ほんてう}
+    - {t: を, n: を}
+    - {t: 窺ふ, n: うかがふ, mod: うかがう}
+    - {t: に, n: に, p: 、}
+    - {t: 承平, n: しょう・へい}
+    - {t: の, n: の}
+    - {t: 將門, n: まさかど, p: 、}
+    - {t: 天慶, n: てんぎゃう}
+    - {t: の, n: の}
+    - {t: 純友, n: すみとも, p: 、}
+    - {t: 康和, n: かうわ}
+    - {t: の, n: の}
+    - {t: 義親, n: ぎしん, p: 、}
+    - {t: 平治, n: へいぢ}
+    - {t: の, n: の}
+    - {t: 信賴, n: しんらい, p: 、}
+  - tokens:
+    - {t: これら, n: これら}
+    - {t: は, n: は}
+    - {t: 驕れる, n: おごれる}
+    - {t: 事, n: こと}
+    - {t: も, n: も}
+    - {t: 猛き, n: たけき}
+    - {t: 心, n: こころ}
+    - {t: も, n: も, p: 、}
+    - {t: 皆, n: みな}
+    - {t: とり〴〵, n: とりどり}
+    - {t: なりしかども, n: なりしかども, p: 、}
+  - tokens:
+    - {t: まぢかく, n: まぢかく}
+    - {t: は, n: は}
+    - {t: 六波羅, n: ろく・はら}
+    - {t: の, n: の}
+    - {t: 入道, n: にふだう}
+    - {t: 前, n: さき}
+    - {t: の, n: の}
+    - {t: 太政大臣, n: だいじゃうだいじん}
+    - {t: 平, n: たひら}
+    - {t: の, n: の}
+    - {t: 朝臣, n: あそん}
+    - {t: 清盛, n: きよもり}
+    - {t: 公, n: こう}
+    - {t: と, n: と}
+    - {t: 申しし, n: まうしし}
+    - {t: 人, n: ひと}
+    - {t: の, n: の}
+    - {t: 有樣, n: ありさま, p: 、}
+  - tokens:
+    - {t: 傳へ, n: つたへ}
+    - {t: 承る, n: うけたまはる}
+    - {t: こそ, n: こそ, p: 、}
+    - {t: 心, n: こころ}
+    - {t: も, n: も}
+    - {t: ことば, n: ことば}
+    - {t: も, n: も}
+    - {t: 及ばれね, n: およばれね, p: 。}

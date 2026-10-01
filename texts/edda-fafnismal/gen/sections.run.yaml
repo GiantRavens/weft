@@ -1,0 +1,72 @@
+run:
+  weft: 0.1.0
+  sections:
+  - p0
+  - '1'
+  - p1
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '10'
+  - '11'
+  - '12'
+  - '13'
+  - '14'
+  - '15'
+  - '16'
+  - '17'
+  - '18'
+  - '19'
+  - '20'
+  - '21'
+  - '22'
+  - p22
+  - '23'
+  - '24'
+  - '25'
+  - '26'
+  - p26
+  - '27'
+  - '28'
+  - '29'
+  - '30'
+  - '31'
+  - p31
+  - '32'
+  - '33'
+  - '34'
+  - '35'
+  - '36'
+  - '37'
+  - '38'
+  - '39'
+  - p39
+  - '40'
+  - '41'
+  - '42'
+  - '43'
+  - '44'
+  - p44
+counts:
+  lines: 308
+  tokens: 1293
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank: every lemma and parse is hand-annotated (Zoëga as reference) and stays draft until reviewed'
+- the prose passages are kept as their own sections (p0, p1, p22, p26, p31, p39, p44), one line per sentence or clause, glossed like the verse; they carry no metre
+- 'the page byline counts every section, so it reads 51 stanzas: 44 stanzas and 7 prose passages (weft.js counts sections; the library index uses pilot.sections and reads 44)'
+- 'Bellows reorders stanzas 26-31 after the Völsunga saga paraphrase: his 26-29 are edition 28-31, his 30 and 31 are edition 26 and 27; he also supplies two conjectural lines in his 3 and 18; spans are
+  aligned by content'
+- Thorpe misprints his stanza 32 as 38 and prints the label 'Fourth eagle' at the end of his 42; both are noted in sense/thorpe1866.yaml
+- stanza 18 is three lines; the source marks the lost half with '-- -- -- --', which is left out of the edition file and noted
+- metre is mostly ljóðaháttr; stanzas 32, 33, 35, 36 and 40-44 are fornyrðislag (labelled a-verse/b-verse); some lines are irregular and are scanned as best fits
+- the edition's ö covers both old ǫ and ø; read as ǫ by default
+- 'slips kept verbatim from the source: no opening quotation mark in 16.1 and 35.1, ''nafn síns'' (p1.1), ''han'' for hann (p39.2)'

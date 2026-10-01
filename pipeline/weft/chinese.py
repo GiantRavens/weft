@@ -112,7 +112,7 @@ KEY = {
         ("hl", "a voiceless l, breathed rather than voiced"),
         ("ng", "can begin a word: ŋa[n] 言 is ngan"),
         ("kw, ɢw", "k or ɢ with rounded lips"),
-        ("ː", "only in words taken from Zhengzhang Shangfang's system where the Baxter-Sagart list has no reading (較, 校): his long vowel, which corresponds to their ˤ"),
+        ("ː", "only in words taken from Zhengzhang Shangfang's system where the Baxter-Sagart list has no reading (較 and 校 in Sunzi; 孚, 涉, 蹇 and some ninety others in the Yijing): his long vowel, which corresponds to their ˤ"),
     ],
     "tang": [
         ("ɑ, æ, ə, ɛ", "ɑ as in father, æ as in cat, ə as in about, ɛ as in pet"),

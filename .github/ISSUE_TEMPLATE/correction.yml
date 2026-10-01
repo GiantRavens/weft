@@ -1,0 +1,56 @@
+name: Correction
+description: A gloss, lemma, grammatical form, scansion, alignment or note that should change.
+title: "Correction: "
+labels: [correction]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. A maintainer turns this into a correction under your name; you do not need git.
+        Tap the word on the page to see its id and what produced the current value.
+  - type: input
+    id: work
+    attributes:
+      label: Work
+      description: The page, as in its address (for example homer-odyssey).
+    validations:
+      required: true
+  - type: input
+    id: scheme
+    attributes:
+      label: Pronunciation scheme in use
+      description: Filled in from the page; leave it if the correction is not about sound.
+  - type: input
+    id: where
+    attributes:
+      label: Line or word
+      description: The id from the word panel (for example od.1.1.5), or the line number and the word.
+    validations:
+      required: true
+  - type: dropdown
+    id: layer
+    attributes:
+      label: What should change
+      options: [gloss, lemma, grammatical form, scansion or metre, translation alignment, note, the original text, something else]
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: What the page shows now
+  - type: textarea
+    id: proposed
+    attributes:
+      label: What it should be, and why
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source or evidence
+      description: A dictionary, grammar, edition or article. Short quotations only.
+  - type: input
+    id: credit
+    attributes:
+      label: How you would like to be credited
+      description: A name or a pseudonym. Weft does not publish contact details.

@@ -1,0 +1,125 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '10'
+  - '11'
+  - '12'
+  - '13'
+  - '14'
+  - '15'
+  - '16'
+  - '17'
+  - '18'
+  - '19'
+  - '20'
+  - '21'
+  - '22'
+  - '23'
+  - '24'
+  - '25'
+  - '26'
+  - '27'
+  - '28'
+  - '29'
+  - '30'
+  - '31'
+  - '32'
+  - '33'
+  - '34'
+  - '35'
+  - '36'
+  - '37'
+  - '38'
+  - '39'
+  - '40'
+  - '41'
+  - '42'
+  - '43'
+  - '44'
+  - '45'
+  - '46'
+  - '47'
+  - '48'
+  - '49'
+  - '50'
+  - '51'
+  - '52'
+  - '53'
+  - '54'
+  - '55'
+  - '56'
+  - '57'
+  - '58'
+  - '59'
+  - '60'
+  - '61'
+  - '62'
+  - '63'
+  - '64'
+counts:
+  lines: 450
+  tokens: 4937
+failures:
+  reading-missing: 386
+  reading-from-variant: 286
+  oc-from-zhengzhang: 209
+  mandarin-reading-unattested: 6
+samples:
+  reading-missing:
+  - 1 亨
+  - 5 淵
+  - 1 亨
+  - 1 牝
+  - 5 括
+  reading-from-variant:
+  - 4 无->無
+  - 5 无->無
+  - 8 羣->群
+  - 8 无->無
+  - 1 往->徃
+  oc-from-zhengzhang:
+  - 2.5 括
+  - 3.2 磐
+  - 3.3 邅
+  - 4.1 瀆
+  - 4.1 瀆
+  mandarin-reading-unattested:
+  - 4.2 說 tuō
+  - 9.4 說 tuō
+  - 26.3 說 tuō
+  - 33.3 說 tuō
+  - 38.7 說 tuō
+failure_rate:
+  reading-missing: 0.078
+  reading-from-variant: 0.058
+  oc-from-zhengzhang: 0.042
+  mandarin-reading-unattested: 0.001
+shift_left: []
+predicted_gaps:
+- 'the Ten Wings (彖, 大象, 小象, 文言, 繫辭, 說卦, 序卦, 雜卦) are not in this edition: they are commentaries, later than the core text, and the source pages print them after it'
+- Old Chinese is a reconstruction (Baxter-Sagart 2014), approximate, and models Zhou speech in general rather than the 9th century; brackets and parentheses in the scholarly form mark uncertain segments
+- '91 characters (208 tokens) have no Baxter-Sagart reading and fall back to Zhengzhang Shangfang (oc-from-zhengzhang), among them frequent words of the text: 孚, 涉, 蹇, 艮, 眚'
+- in hexagram 38, line 3, the page prints 𧤊 (Unicode Extension B, outside the page's Chinese font) with 掣 as the other copy; Weft prints 掣 there, the one place it departs from the printed reading. 内, 尫,
+  觌 and 轝, variant graphs the page uses, take the Old Chinese reading of 內, 尪, 覿 and 輿
+- 134 characters (387 tokens) have no Tang reading in Unihan, Stimson's list lacking them, and show ? in the Tang row (reading-missing), among them 亨, 孚, 吝, 弗, 黃; others borrow one from a glyph variant
+  (reading-from-variant, 286 tokens; 无 from 無 most often)
+- 'Mandarin readings chosen for sense that the Baxter-Sagart list does not give (mandarin-reading-unattested): 說 read tuō ''loosen'' and yuè ''pleased''; choices for characters taken from Zhengzhang carry
+  no pinyin to check against'
+- the Wikisource pages do not name their base text and in 48 places print one reading with another as 一作; Weft follows the printed reading, which in some places differs from the Wang Bi text Legge translated
+  (see the note)
+- Wikisource prints modern punctuation; Weft's tokens follow it as caesura marks but do not reproduce it (the source is checked with punctuation, markup and whitespace stripped)
+- 'no treebank; lemma, part of speech and gloss by hand, draft, for hexagrams 1 to 16 only in this pass: hexagrams 17 to 64 are not yet annotated (token-no-lemma, token-no-morph, token-no-gloss in weft
+  check)'
+- 'prose with some rhyme: no metre row'
+- one public-domain English translation (Legge 1882). McClatchie's 1876 translation, the first in English, is public domain but no open digitization of it was found; Wilhelm-Baynes (1950) is cited, not
+  reproduced
+- Legge's text is from the Internet Archive OCR; diacritics in his romanized names (â, ă, î, û) are not reliably kept by the OCR and are not restored; corrections are listed in sense/legge1882.yaml

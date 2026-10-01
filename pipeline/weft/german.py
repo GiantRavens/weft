@@ -558,7 +558,8 @@ def line_checks(text: str, etoks: list[dict], edition: dict) -> list[tuple[str, 
     chk = (sec or {}).get("check")
     if not chk:
         return []
-    p = Path(__file__).resolve().parents[2] / "texts" / edition["work"] / chk["file"]
+    from .paths import work_dir
+    p = work_dir(Path(__file__).resolve().parents[2], edition["work"]) / chk["file"]
     if not p.exists():
         return [("source-missing", chk["file"])]
     src = source_text(p, chk.get("format", "plain"), chk.get("strip"))

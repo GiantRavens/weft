@@ -16,6 +16,7 @@ edition:
   license: CC BY-SA 4.0
 treebank: null                   # no treebank exists for runic inscriptions; hand annotation, draft
 sound_confidence: low              # the page invites specialists to correct the sound guide or record it
+lang_name: "Proto-Norse and Old Norse (runic)"
 schemes: [as-carved]             # each inscription in the language of its own date
 translations:
   - id: stephens1884

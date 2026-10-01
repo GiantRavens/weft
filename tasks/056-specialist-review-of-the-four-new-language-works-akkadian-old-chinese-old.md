@@ -10,7 +10,7 @@ tags:
   - tamil
   - persian
 created_at: 2026-09-30T14:52:43.29374-05:00
-updated_at: 2026-10-01T11:39:54.585127-05:00
+updated_at: 2026-10-01T16:58:37.292457-05:00
 ---
 
 # Specialist review of the four new-language works (Akkadian, Old Chinese, Old Tamil, Classical Persian)
@@ -27,6 +27,9 @@ updated_at: 2026-10-01T11:39:54.585127-05:00
 - 2026-10-01T11:35:57Z: German works (2026-10-01): g after vowels fricative?, uvular r spread, long ä/e merger; one scheme for Kant and Nietzsche; KpV 'zunehmenden'; Kaliningrad plaque location; Richardson 1798 OCR corrections; Luther 1545: TextGrid/Zeno text not checked against page images (Volz 1972 vs Weimar), wonet/wandert/habens readings, jm/dasselbige referent, ecg1545 diphthongs and lenis stops and omitted unrounding, Table Talk citation, Lufft copy count.
 - 2026-10-01T15:22:52Z: Oldest texts (2026-10-01): Egyptian vocalizations are Weft's inferences from Coptic/Greek (14 forms, conf 0.3), consonant values debated; PT 273 location in the antechamber; pḏ.wt reading; D3B/O30U as base signs, D140/D207 not in Unicode; TLA 2018 excerpt may be superseded. Sumerian: Oracc CC0 label vs Foxvog/CDLI informal terms; u19/ulu3 and kišib/kišib3 readings; ergative/directive e; Jagersma aspiration analysis; dr phoneme not applied; Enheduanna's authorship debated.
 - 2026-10-01T16:39:54Z: Batch 2026-10-01 cruxes to verify: Inter caetera Marshall quotation (21 U.S. 543, written from memory) and Simancas vs Seville custody; Res Gestae auctoritate reading attribution (Ramsay and von Premerstein 1927, from memory), hidden quantities adsignavi/sescentas/Augustus; Gylfaginning hrímin gender, lúðr, speaker of ch. 5 (Hárr vs Jafnhárr), lawspeaker and Codex Upsaliensis claims; Bayeux scene 21 excluded (Wikipedia misreads the cloth)
+- 2026-10-01T20:19:48Z: Fáfnismál cruxes: 1.6 stöndumk (-mk with 3rd-person subject); 5.6 'óbornum skjór á skeið' provisional; 6.5 hröðask; 19.3 galzt (gjalda vs gjalla); 27.4 eisköld; bird count and address in 34/37/38; 42.8 Ógnar ljóma; 44.5 Sigrdrífa name vs epithet; Hylestad (late 1100s) and Ramsund (about 1030) dates to check
+- 2026-10-01T21:14:16Z: Yijing cruxes: 貞 'divining' vs 'correct and firm'; 孚 trust vs captives; 亨/享; unnamed Wikisource base text differs from Wang Bi in 48 places (e.g. 9.4, 13.5, 16.5, 35.6 矢/失, 41.2 祀/已); 38.4 𧤊 shown as 掣 (font); 滅 cut-off vs cover (21, 28); 34.6 易 as place name; 48.1 井井; Shaughnessy/Gu Jiegang/Zhang Zhenglang dating claims and the Song coin-method claim to verify
+- 2026-10-01T21:58:37Z: Japanese cruxes: all yomikudashi and okurigana are Weft's (治にして, 者 read ば, 將 まさに…とす); return marks are the 1903/1910 editors'; Buke art. 8 Kui hexagram line; Sūden vs Hayashi Razan attribution (Murdoch); 1615 and 1371 sound values indirect; rōnin text copy variants (故/歟, 難遁/難忍); Heike Buddhist-source claims; Atsuta manuscript date unverified; Sadler 1918 is PD in the US only (d. 1970)
 
 ## Log
 

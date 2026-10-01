@@ -1,0 +1,234 @@
+# Weft edition of the statement carried by the Akō retainers (淺野內匠頭家來口上), dated Genroku 15,
+# twelfth month (January 1703), as printed in Sugihara Izan, Ōishi Yoshio (Ijin genkōroku series,
+# Tokyo, 1910), pp. 125-126 (National Diet Library 781116, scan frames 75-76, Public Domain Mark).
+# Transcribed by Weft from the scan, with the print's return marks (kaeri). No open digital text
+# of the statement was found, so verify_in does not apply: japanese.line_checks compares every line
+# with the library's own OCR of the two pages (ocr_in) and reports each run of characters the OCR
+# lacks (ocr-disagrees); each such run was checked against the scan and is listed in the manifest's
+# predicted gaps. The print sets a blank before 仰付 and 上使 (ketsuji, a space of respect for the
+# shogunate); the blanks are not reproduced. The print continues the list of signatories; the
+# edition stops after the first three names.
+#
+# Token fields as in the Buke shohatto edition: t = word as printed; n = its reading in historical
+# kana with the okurigana a reader adds; kaeri = the return mark printed beside it; p = punctuation
+# as printed; yomi = the line as read aloud. Readings and line division are Weft's (draft).
+work: ronin-statement-1703
+joiner: ''
+ocr_in:
+- sources/ndl781116-p75-ocr.json
+- sources/ndl781116-p76-ocr.json
+sections:
+- id: statement
+  title: The statement of Asano Takumi-no-kami's retainers, Genroku 15 (1703)
+  kunten: true
+  lines:
+  - yomi: 淺野內匠頭家來口上
+    tokens:
+    - {t: 淺野, n: あさの}
+    - {t: 內匠頭, n: たくみのかみ}
+    - {t: 家來, n: けらい}
+    - {t: 口上, n: こうじゃう}
+  - yomi: 去年三月內匠儀、傳奏御馳走の儀に付き、吉良上野介殿意趣を含み罷り在り候處、
+    tokens:
+    - {t: 去年, n: きょねん}
+    - {t: 三月, n: さんぐゎつ}
+    - {t: 內匠, n: たくみ}
+    - {t: 儀, n: ぎ, p: 、}
+    - {t: 傳奏, n: てんそう}
+    - {t: 御馳走, n: ごちそう}
+    - {t: 之, n: の}
+    - {t: 儀, n: ぎ}
+    - {t: に, n: に}
+    - {t: 付, n: つき, p: 、}
+    - {t: 吉良, n: きら}
+    - {t: 上野介, n: かうづけのすけ}
+    - {t: 殿, n: どの}
+    - {t: 含, kaeri: 二, n: ふくみ}
+    - {t: 意趣, kaeri: 一, n: いしゅを}
+    - {t: 罷在, n: まかりあり}
+    - {t: 候, n: さうらふ}
+    - {t: 處, n: ところ, p: 、}
+  - yomi: 御殿中に於て、當座遁れ難き儀御座候故、刄傷に及び候。
+    tokens:
+    - {t: 於, kaeri: 二, n: おいて}
+    - {t: 御殿中, kaeri: 一, n: ごてんちゅうに}
+    - {t: 當座, n: たうざ}
+    - {t: 難, kaeri: レ, n: がたき}
+    - {t: 遁, n: のがれ}
+    - {t: 儀, n: ぎ}
+    - {t: 御座, n: ござ}
+    - {t: 候, n: さうらふ}
+    - {t: 故, n: ゆゑ, p: 、}
+    - {t: 及, kaeri: 二, n: および}
+    - {t: 刄傷, kaeri: 一, n: にんじゃうに}
+    - {t: 候, n: さうらふ, p: 。}
+  - yomi: 時節塲所を辨へず、不調法を働く至極に付き、切腹仰せ付けられ、領地赤穂城召し上げられ候儀、
+    tokens:
+    - {t: 不, kaeri: レ, n: ず}
+    - {t: 辨, kaeri: 二, n: わきまへ}
+    - {t: 時節, n: じせつ}
+    - {t: 塲所, kaeri: 一, n: ばしょを, p: 、}
+    - {t: 働, kaeri: 二, n: はたらく}
+    - {t: 不調法, kaeri: 一, n: ぶてう・はふを}
+    - {t: 至極, n: しごく}
+    - {t: に, n: に}
+    - {t: 付, n: つき, p: 、}
+    - {t: 切腹, n: せっぷく}
+    - {t: 被, kaeri: 二, n: られ}
+    - {t: 仰付, kaeri: 一, n: おほせつけ, p: 、}
+    - {t: 領地, n: りゃうち}
+    - {t: 赤穂城, n: あかうじゃう}
+    - {t: 被, kaeri: 二, n: られ}
+    - {t: 召上, kaeri: 一, n: めしあげ}
+    - {t: 候, n: さうらふ}
+    - {t: 儀, n: ぎ, p: 、}
+  - yomi: 家來共迄、畏れ入り存じ奉り、上使御下知を請け、城地差し上げ、家中早速離散仕り候。
+    tokens:
+    - {t: 家來, n: けらい}
+    - {t: 共, n: ども}
+    - {t: 迄, n: まで, p: 、}
+    - {t: 畏入, n: おそれいり}
+    - {t: 奉, kaeri: レ, n: たてまつり}
+    - {t: 存, n: ぞんじ, p: 、}
+    - {t: 請, kaeri: 二, n: うけ}
+    - {t: 上使, n: じゃうし}
+    - {t: 御下知, kaeri: 一, n: ごげぢを, p: 、}
+    - {t: 城地, n: じゃうち}
+    - {t: 差上, n: さしあげ, p: 、}
+    - {t: 家中, n: かちゅう}
+    - {t: 早速, n: さっそく}
+    - {t: 離散, n: りさん}
+    - {t: 仕, n: つかまつり}
+    - {t: 候, n: さうらふ, p: 。}
+  - yomi: 右喧嘩の節、御同席御抑留の御方之有り、上野介殿討ち留め申さず、
+    tokens:
+    - {t: 右, n: みぎ}
+    - {t: 喧嘩, n: けんくゎ}
+    - {t: 之, n: の}
+    - {t: 節, n: せつ, p: 、}
+    - {t: 御同席, n: ごどうせき}
+    - {t: 御抑留, n: ごよくりう}
+    - {t: 之, n: の}
+    - {t: 御方, n: おかた}
+    - {t: 有, kaeri: レ, n: あり}
+    - {t: 之, n: これ, p: 、}
+    - {t: 上野介, n: かうづけのすけ}
+    - {t: 殿, n: どの}
+    - {t: 討留, n: うちとめ}
+    - {t: 不, kaeri: レ, n: ず}
+    - {t: 申, n: まうさ, p: 、}
+  - yomi: 內匠末期殘念の心底、家來共忍び難き仕合に御座候。
+    tokens:
+    - {t: 內匠, n: たくみ}
+    - {t: 末期, n: まつご}
+    - {t: 殘念, n: ざんねん}
+    - {t: 之, n: の}
+    - {t: 心底, n: しんてい, p: 、}
+    - {t: 家來, n: けらい}
+    - {t: 共, n: ども}
+    - {t: 難, kaeri: レ, n: がたき}
+    - {t: 忍, n: しのび}
+    - {t: 仕合, n: しあはせ}
+    - {t: に, n: に}
+    - {t: 御座, n: ござ}
+    - {t: 候, n: さうらふ, p: 。}
+  - yomi: 高家の御歷々に對し、家來共欝憤を挾み候段、憚り存じ奉り候得共、
+    tokens:
+    - {t: 對, kaeri: 二, n: たいし}
+    - {t: 高家, n: かうけ}
+    - {t: 之, n: の}
+    - {t: 御歷々, kaeri: 一, n: おれきれきに, p: 、}
+    - {t: 家來, n: けらい}
+    - {t: 共, n: ども}
+    - {t: 挾, kaeri: 二, n: さしはさみ}
+    - {t: 欝憤, kaeri: 一, n: うっぷんを}
+    - {t: 候, n: さうらふ}
+    - {t: 段, n: だん, p: 、}
+    - {t: 憚, n: はばかり}
+    - {t: 奉, kaeri: レ, n: たてまつり}
+    - {t: 存, n: ぞんじ}
+    - {t: 候, n: さうらふ}
+    - {t: 得共, n: えども, p: 、}
+  - yomi: 君父の讐は、共に天を戴くべからざるの儀默止し難く、今日上野介殿御宅へ推參仕り候。
+    tokens:
+    - {t: 君父, n: くんぷ}
+    - {t: 之, n: の}
+    - {t: 讐, n: あた}
+    - {t: は, n: は, p: 、}
+    - {t: 不, kaeri: レ, n: ざる}
+    - {t: 可, kaeri: 二, n: べから}
+    - {t: 共, n: ともに}
+    - {t: 戴, kaeri: 一レ, n: いただく}
+    - {t: 天, n: てんを}
+    - {t: 之, n: の}
+    - {t: 儀, n: ぎ}
+    - {t: 難, kaeri: 二, n: がたく}
+    - {t: 默止, kaeri: 一, n: もくし, p: 、}
+    - {t: 今日, n: こんにち}
+    - {t: 上野介, n: かうづけのすけ}
+    - {t: 殿, n: どの}
+    - {t: 御宅, n: おたく}
+    - {t: へ, n: へ}
+    - {t: 推參, n: すいさん}
+    - {t: 仕, n: つかまつり}
+    - {t: 候, n: さうらふ, p: 。}
+  - yomi: 偏に亡主の意趣を繼ぎ候志迄に御座候。
+    tokens:
+    - {t: 偏, n: ひとへ}
+    - {t: に, n: に}
+    - {t: 繼, kaeri: 二, n: つぎ}
+    - {t: 亡主, n: ばうしゅ}
+    - {t: 之, n: の}
+    - {t: 意趣, kaeri: 一, n: いしゅを}
+    - {t: 候, n: さうらふ}
+    - {t: 志, n: こころざし}
+    - {t: 迄, n: まで}
+    - {t: に, n: に}
+    - {t: 御座, n: ござ}
+    - {t: 候, n: さうらふ, p: 。}
+  - yomi: 私共死後若し御見分の御方御座候はゞ、御披見を願ひ奉り、此の如く御座候。以上。
+    tokens:
+    - {t: 私, n: わたくし}
+    - {t: 共, n: ども}
+    - {t: 死後, n: しご}
+    - {t: 若, n: もし}
+    - {t: 御見分, n: ごけんぶん}
+    - {t: 之, n: の}
+    - {t: 御方, n: おかた}
+    - {t: 御座, n: ござ}
+    - {t: 候はゞ, n: さうらはば, p: 、}
+    - {t: 奉, kaeri: レ, n: たてまつり}
+    - {t: 願, kaeri: 二, n: ねがひ}
+    - {t: 御披見, kaeri: 一, n: ご・ひけんを, p: 、}
+    - {t: 如, kaeri: レ, n: ごとく}
+    - {t: 此, n: かくの}
+    - {t: 御座, n: ござ}
+    - {t: 候, n: さうらふ, p: 。}
+    - {t: 以上, n: いじゃう, p: 。}
+  - yomi: 元祿十五年十二月日
+    tokens:
+    - {t: 元祿, n: げんろく}
+    - {t: 十五年, n: じふごねん}
+    - {t: 十二月, n: じふにぐゎつ}
+    - {t: 日, n: ひ}
+  - yomi: 淺野內匠頭長矩家來
+    tokens:
+    - {t: 淺野, n: あさの}
+    - {t: 內匠頭, n: たくみのかみ}
+    - {t: 長矩, n: ながのり}
+    - {t: 家來, n: けらい}
+  - yomi: 大石內藏介良雄
+    tokens:
+    - {t: 大石, n: おほいし}
+    - {t: 內藏介, n: くらのすけ}
+    - {t: 良雄, n: よしを}
+  - yomi: 吉田忠左衛門兼亮
+    tokens:
+    - {t: 吉田, n: よしだ}
+    - {t: 忠左衛門, n: ちゅうざゑもん}
+    - {t: 兼亮, n: かねすけ}
+  - yomi: 原惣右衛門元辰
+    tokens:
+    - {t: 原, n: はら}
+    - {t: 惣右衛門, n: そうゑもん}
+    - {t: 元辰, n: もととき}

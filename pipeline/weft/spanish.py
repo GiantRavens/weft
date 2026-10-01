@@ -444,7 +444,7 @@ KEY = {
         ("", "Castilian of about 1492, as Nebrija describes the letters; approximate. A Castilian reader of the printed letter is modelled, not Columbus's own Genoese and Portuguese-coloured Spanish."),
         ("", "Hyphens divide syllables; CAPS mark the stressed syllable. Articles, most prepositions and object pronouns are unstressed."),
         ("ah eh ee oh oo", "the five vowels, as in father, bet, machine, note, rule, but short and pure"),
-        ("ts", "ç, and c before e or i (plazer is plah-DZEHR, concepción kohn-tsehp-TSYOHN): t and s together, as in cats"),
+        ("ts", "ç, and c before e or i (concepción kohn-tsehp-TSYOHN, conmemoración koh-meh-moh-rah-TSYOHN): t and s together, as in cats"),
         ("dz", "z (plazer, altezas, hazen): d and z together, as in adze"),
         ("s z", "s and z with the tip of the tongue raised toward the gums (apical), a sound between s and sh, as in northern Spain today. Single s between vowels is voiced z (cosa, KOH-zah); ss is voiceless (assí)"),
         ("sh", "x (not in this passage), as in ship"),

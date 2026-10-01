@@ -1,0 +1,36 @@
+- id: n.hk.1.text
+  attach: hk.1.1
+  kind: editorial
+  status: draft
+  leans_on: "Kōchū Nihon bungaku taikei vol. 14 (1925), p. 247; standard accounts of the Heike textual tradition"
+  text: "Which text this is. The Heike monogatari exists in many versions. The one most read today descends from the text that the reciter Kakuichi fixed in 1371. The 1925 edition printed here follows the vulgate (rufubon), the line of the early printed editions of the seventeenth century. In this passage the two differ in a few words: where this text has 驕れるもの, 'the proud ones', the Kakuichi text has おごれる人; for 猛き人 it has たけき者; and for とぶらふに it has とぶらへば. No openly licensed digital copy of the Kakuichi text was found, so the edition prints the vulgate and names the differences here. The sound row is set in Kakuichi's time all the same, since the opening was recited in much this form by then."
+- id: n.hk.1.gion
+  attach: hk.1.1.1
+  kind: editorial
+  status: draft
+  leans_on: "Sadler (1918), note 1; general Buddhist reference works"
+  text: "Gion Shōja is the Japanese name of the Jetavana, the monastery near Śrāvastī given to the Buddha, where by tradition many of his sermons were preached. Japanese commentators connected the bell with a hall for the dying in that monastery, whose bell was said to sound the verse on impermanence. 諸行無常, 'all conditioned things are impermanent', is the first line of that verse, a four-line stanza from the Nirvana Sutra. The tale opens on Buddhist vocabulary and returns to it at its close."
+- id: n.hk.2.sala
+  attach: hk.1.2
+  kind: editorial
+  status: draft
+  leans_on: "general Buddhist reference works"
+  text: "Impermanence, in a second image. 娑羅雙樹 are the pairs of sāla trees (Shorea robusta) among which the Buddha entered nirvana; the scriptures say their flowers turned white at his death. 盛者必衰, 'what flourishes must decline', is a set phrase of Buddhist scripture. Each of the first four lines pairs an image or a maxim with a judgement, and the next lines turn the maxim into history: four Chinese and four Japanese examples of men who rose and fell, before the tale names Kiyomori."
+- id: n.hk.4.recitation
+  attach: hk.1.4
+  kind: editorial
+  status: draft
+  leans_on: "general histories of medieval Japanese literature and performance"
+  text: "A recited text. The tale was performed by biwa hōshi, blind men in monk's dress who chanted it to the biwa, a short-necked lute; the tradition is called heikyoku. Kakuichi was one of these reciters, and the text named after him is a performers' text. What survives of the chant was handed down in later schools, and the melody of 1371 cannot be recovered. The sound row gives only the words, in a reconstruction of Kyoto speech of that time: h as a lip sound (fa, fi), ち and つ still ti and tu, え as ye, the open long o of au apart from the closed o of ou. Each of these is approximate."
+- id: n.hk.1.metre
+  attach: hk.1.1
+  kind: editorial
+  status: draft
+  leans_on: "the mora counts in the metre row"
+  text: "The rhythm. Japanese verse counts morae, and the metre row gives the count for each line. The first line falls into the pattern of seven and five that runs through Japanese verse: ぎをんしゃうじゃの (7) かねのこゑ (5), しょぎゃうむじゃうの (7) ひびきあり (5). The lines after it do not keep the pattern strictly. The passage is prose, but prose shaped to be chanted, and the opening line is the clearest instance of that here."
+- id: n.hk.10.kiyomori
+  attach: hk.1.10
+  kind: editorial
+  status: draft
+  leans_on: "general histories of the late Heian period"
+  text: "Kiyomori. Taira no Kiyomori (1118–1181) rose to be chancellor (太政大臣) in 1167, left the post, and took Buddhist vows the next year, so the text calls him the lay monk (入道) and former chancellor. Rokuhara, in eastern Kyoto, was the site of the Taira residences. The Japanese examples in the line before him are men remembered as rebels: Taira no Masakado and Fujiwara no Sumitomo in the 930s and 940s, Minamoto no Yoshichika early in the twelfth century, and Fujiwara no Nobuyori in the Heiji disturbance of 1159. Of the Chinese names, 周伊 of Liang is probably a corruption of another minister's name; Sadler's note says as much."

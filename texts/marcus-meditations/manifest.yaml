@@ -68,6 +68,8 @@ treebank:
   sha256: 5ab4e31ceceeeb3743c7fde542405a3ed20512d6c4d3d806cc557a6f6357e24c
   license: CC BY-SA 4.0
   license_url: https://github.com/perseids-publications/glaux-trees/blob/master/TREEBANK_LICENSE
+scheme_labels:
+  koine: "Koine: Greek as spoken in the first century (after Randall Buth); this text is late 2nd century; the scheme models the 1st (approximate)"
 schemes:
 - koine
 - restored

@@ -1,0 +1,47 @@
+name: Offer a recording
+description: Read a passage aloud in one of the page's pronunciation schemes.
+title: "Recording: "
+labels: [recording]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Pages do not play audio yet. Recordings are collected now and added, with credit, when the
+        audio layer is built. One file per line, named by the line id (for example gen.1.1.wav);
+        WAV or FLAC, 44.1 kHz or better, a quiet room, a natural pace.
+  - type: input
+    id: work
+    attributes:
+      label: Work
+    validations:
+      required: true
+  - type: input
+    id: scheme
+    attributes:
+      label: Scheme you read in
+    validations:
+      required: true
+  - type: input
+    id: lines
+    attributes:
+      label: Lines recorded
+      description: For example od.1.1 to od.1.10.
+  - type: textarea
+    id: files
+    attributes:
+      label: Files or a link
+      description: Attach the files here, or give a link to download them.
+  - type: dropdown
+    id: license
+    attributes:
+      label: Licence
+      options: [CC BY-SA 4.0, CC0 (public domain dedication)]
+    validations:
+      required: true
+  - type: input
+    id: credit
+    attributes:
+      label: How you would like to be credited
+      description: A name or a pseudonym. Weft does not publish contact details.
+    validations:
+      required: true

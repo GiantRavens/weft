@@ -1,0 +1,859 @@
+# Weft edition of the Zhouyi (周易), the core text of the Yijing: the 64 hexagrams in the received
+# (King Wen) order, each with its name and judgment (卦辭) and its line statements (爻辭), with the
+# extra statements 用九 and 用六 under hexagrams 1 and 2. The commentaries of the Ten Wings (彖, 象,
+# 文言 and the rest), which the source pages print after the core text, are left out.
+#
+# Source: Chinese Wikisource, one page per hexagram (周易/乾 ... 周易/未濟), each pinned by revision
+# and sha256 in manifest.yaml. On those pages the core text is the part set in blue. Each section is
+# checked verbatim against its own page (verify_in) after verify_strip deletes the wiki markup, the
+# alternative readings of the 另 template, the modern punctuation and all whitespace. The
+# punctuation is the Wikisource editor's, not the text's, and is not reproduced; `caesura` marks
+# where it falls, so the clause divisions stay visible. In 48 places the page prints one reading and
+# gives another as 一作 ("one copy writes"); Weft follows the printed reading (see the note), with
+# one exception: in hexagram 38, line 3, the page prints 𧤊, a character outside the page's
+# Chinese font, and gives 掣 as the other copy; Weft prints 掣, the reading of the received text
+# that Legge translated. verify_strip deletes 𧤊 there instead of 掣.
+#
+# Line 1 of each section is the hexagram name and judgment; lines 2 to 7 are the line statements,
+# bottom line first, each opening with its label (初九, 六二 ... 上六); line 8 of hexagrams 1 and 2 is
+# 用九 / 用六. `hexagram` gives the figure as six digits, bottom line first, 1 = unbroken (yang, 九),
+# 0 = broken (yin, 六), derived from the labels and checked against the trigrams the page names
+# (lower 下, upper 上). One token per character; oc, tang and mandarin name the reading where a
+# character has more than one (see texts/daodejing/edition.yaml); unmarked tokens take the first.
+joiner: ""
+verify_strip: "\\{\\{另\\||𧤊\\||(?<=掣)\\}\\}|\\|[^{}|]*\\}\\}|<[^>]*>|'''|-\\{|\\}-|[*#:;]|[，。；：、？！「」『』]|\\s"
+sections:
+  - id: "1"
+    title: "Hexagram 1, Qián 乾, strength"
+    hexagram: "111111"
+    trigrams: {lower: "乾", upper: "乾"}
+    verify_in: sources/wikisource/01.txt
+    lines:
+      - tokens: [{t: 乾}, {t: 元, caesura: true}, {t: 亨}, {t: 利, caesura: true}, {t: 貞, oc: 2}]   # 乾：元亨。利貞。
+      - tokens: [{t: 初}, {t: 九}, {t: 潛, caesura: true}, {t: 龍}, {t: 勿}, {t: 用}]   # 初九：潛龍勿用。
+      - tokens: [{t: 九}, {t: 二}, {t: 見, oc: 2, mandarin: xiàn, caesura: true}, {t: 龍}, {t: 在}, {t: 田}, {t: 利, caesura: true}, {t: 見}, {t: 大}, {t: 人}]   # 九二：見龍在田，利見大人。
+      - tokens: [{t: 九}, {t: 三}, {t: 君, caesura: true}, {t: 子, oc: 2}, {t: 終}, {t: 日}, {t: 乾}, {t: 乾}, {t: 夕, caesura: true}, {t: 惕}, {t: 若}, {t: 厲, caesura: true}, {t: 无, caesura: true}, {t: 咎}]   # 九三：君子終日乾乾，夕惕若；厲，无咎。
+      - tokens: [{t: 九}, {t: 四}, {t: 或, caesura: true}, {t: 躍}, {t: 在}, {t: 淵}, {t: 无, caesura: true}, {t: 咎}]   # 九四：或躍在淵，无咎。
+      - tokens: [{t: 九}, {t: 五}, {t: 飛, caesura: true}, {t: 龍}, {t: 在}, {t: 天}, {t: 利, caesura: true}, {t: 見}, {t: 大}, {t: 人}]   # 九五：飛龍在天，利見大人。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 亢, caesura: true}, {t: 龍}, {t: 有, caesura: true}, {t: 悔}]   # 上九：亢龍，有悔。
+      - tokens: [{t: 用}, {t: 九}, {t: 見, oc: 2, mandarin: xiàn, caesura: true}, {t: 羣}, {t: 龍}, {t: 无}, {t: 首}, {t: 吉, caesura: true}]   # 用九：見羣龍无首，吉。
+  - id: "2"
+    title: "Hexagram 2, Kūn 坤, the yielding"
+    hexagram: "000000"
+    trigrams: {lower: "坤", upper: "坤"}
+    verify_in: sources/wikisource/02.txt
+    lines:
+      - tokens: [{t: 坤}, {t: 元, caesura: true}, {t: 亨}, {t: 利, caesura: true}, {t: 牝}, {t: 馬}, {t: 之}, {t: 貞, oc: 2}, {t: 君, caesura: true}, {t: 子, oc: 2}, {t: 有}, {t: 攸}, {t: 往}, {t: 先, caesura: true}, {t: 迷}, {t: 後}, {t: 得}, {t: 主}, {t: 利, caesura: true}, {t: 西}, {t: 南}, {t: 得}, {t: 朋}, {t: 東, caesura: true}, {t: 北}, {t: 喪, oc: 2}, {t: 朋}, {t: 安, caesura: true}, {t: 貞, oc: 2}, {t: 吉, caesura: true}]   # 坤：元亨。利牝馬之貞。君子有攸往，先迷後得主。利西南得朋，東北喪朋。安貞，吉。
+      - tokens: [{t: 初}, {t: 六}, {t: 履, caesura: true}, {t: 霜}, {t: 堅, caesura: true}, {t: 冰}, {t: 至}]   # 初六：履霜，堅冰至。
+      - tokens: [{t: 六}, {t: 二}, {t: 直, caesura: true}, {t: 方}, {t: 大}, {t: 不, caesura: true}, {t: 習}, {t: 无}, {t: 不}, {t: 利}]   # 六二：直方大，不習无不利。
+      - tokens: [{t: 六}, {t: 三}, {t: 含, caesura: true}, {t: 章}, {t: 可, caesura: true}, {t: 貞, oc: 2}, {t: 或, caesura: true}, {t: 從}, {t: 王}, {t: 事}, {t: 无, caesura: true}, {t: 成}, {t: 有}, {t: 終}]   # 六三：含章，可貞。或從王事，无成有終。
+      - tokens: [{t: 六}, {t: 四}, {t: 括, caesura: true}, {t: 囊}, {t: 无, caesura: true}, {t: 咎}, {t: 无}, {t: 譽}]   # 六四：括囊，无咎无譽。
+      - tokens: [{t: 六}, {t: 五}, {t: 黃, caesura: true}, {t: 裳}, {t: 元, caesura: true}, {t: 吉}]   # 六五：黃裳，元吉。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 龍, caesura: true}, {t: 戰}, {t: 于}, {t: 野}, {t: 其, oc: 2, caesura: true}, {t: 血}, {t: 玄}, {t: 黃}]   # 上六：龍戰于野，其血玄黃。
+      - tokens: [{t: 用}, {t: 六}, {t: 利, caesura: true}, {t: 永}, {t: 貞, oc: 2}]   # 用六：利永貞。
+  - id: "3"
+    title: "Hexagram 3, Zhūn 屯, difficult beginning"
+    hexagram: "100010"
+    trigrams: {lower: "震", upper: "坎"}
+    verify_in: sources/wikisource/03.txt
+    lines:
+      - tokens: [{t: 屯, oc: 2, tang: 2, mandarin: zhūn}, {t: 元, caesura: true}, {t: 亨}, {t: 利, caesura: true}, {t: 貞, oc: 2}, {t: 勿, caesura: true}, {t: 用}, {t: 有}, {t: 攸}, {t: 往}, {t: 利, caesura: true}, {t: 建}, {t: 侯}]   # 屯：元亨，利貞。勿用有攸往，利建侯。
+      - tokens: [{t: 初}, {t: 九}, {t: 磐, caesura: true}, {t: 桓}, {t: 利, caesura: true}, {t: 居}, {t: 貞, oc: 2}, {t: 利, caesura: true}, {t: 建}, {t: 侯}]   # 初九：磐桓，利居貞，利建侯。
+      - tokens: [{t: 六}, {t: 二}, {t: 屯, oc: 2, tang: 2, mandarin: zhūn, caesura: true}, {t: 如, oc: 2}, {t: 邅}, {t: 如, oc: 2}, {t: 乘, caesura: true}, {t: 馬}, {t: 班}, {t: 如, oc: 2}, {t: 匪, caesura: true}, {t: 寇}, {t: 婚}, {t: 媾}, {t: 女, caesura: true}, {t: 子, oc: 2}, {t: 貞, oc: 2}, {t: 不}, {t: 字}, {t: 十, caesura: true}, {t: 年}, {t: 乃}, {t: 字}]   # 六二：屯如邅如，乘馬班如，匪寇婚媾，女子貞不字，十年乃字。
+      - tokens: [{t: 六}, {t: 三}, {t: 即, caesura: true}, {t: 鹿}, {t: 无}, {t: 虞}, {t: 惟, caesura: true}, {t: 入}, {t: 于}, {t: 林}, {t: 中}, {t: 君, caesura: true}, {t: 子, oc: 2}, {t: 幾}, {t: 不}, {t: 如, oc: 2}, {t: 舍}, {t: 往, caesura: true}, {t: 吝}]   # 六三：即鹿无虞，惟入于林中，君子幾不如舍，往吝。
+      - tokens: [{t: 六}, {t: 四}, {t: 乘, caesura: true}, {t: 馬}, {t: 班}, {t: 如, oc: 2}, {t: 求, caesura: true}, {t: 婚}, {t: 媾}, {t: 往, caesura: true}, {t: 吉, caesura: true}, {t: 无}, {t: 不}, {t: 利}]   # 六四：乘馬班如，求婚媾，往，吉无不利。
+      - tokens: [{t: 九}, {t: 五}, {t: 屯, oc: 1, tang: 1, mandarin: tún, caesura: true}, {t: 其, oc: 2}, {t: 膏}, {t: 小, caesura: true}, {t: 貞, oc: 2}, {t: 吉}, {t: 大, caesura: true}, {t: 貞, oc: 2}, {t: 凶}]   # 九五：屯其膏；小貞吉，大貞凶。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 乘, caesura: true}, {t: 馬}, {t: 班}, {t: 如, oc: 2}, {t: 泣, caesura: true}, {t: 血}, {t: 漣}, {t: 如, oc: 2}]   # 上六：乘馬班如，泣血漣如。
+  - id: "4"
+    title: "Hexagram 4, Méng 蒙, youthful ignorance"
+    hexagram: "010001"
+    trigrams: {lower: "坎", upper: "艮"}
+    verify_in: sources/wikisource/04.txt
+    lines:
+      - tokens: [{t: 蒙}, {t: 亨, caesura: true}, {t: 匪, caesura: true}, {t: 我}, {t: 求}, {t: 童}, {t: 蒙}, {t: 童, caesura: true}, {t: 蒙}, {t: 求}, {t: 我}, {t: 初, caesura: true}, {t: 筮}, {t: 告}, {t: 再, caesura: true}, {t: 三}, {t: 瀆}, {t: 瀆, caesura: true}, {t: 則}, {t: 不}, {t: 告}, {t: 利, caesura: true}, {t: 貞, oc: 2}]   # 蒙：亨。匪我求童蒙，童蒙求我。初筮告，再三瀆，瀆則不告。利貞。
+      - tokens: [{t: 初}, {t: 六}, {t: 發, caesura: true}, {t: 蒙}, {t: 利, caesura: true}, {t: 用}, {t: 刑}, {t: 人}, {t: 用, caesura: true}, {t: 說, mandarin: tuō}, {t: 桎}, {t: 梏}, {t: 以, caesura: true}, {t: 往}, {t: 吝}]   # 初六：發蒙，利用刑人，用說桎梏，以往吝。
+      - tokens: [{t: 九}, {t: 二}, {t: 包, caesura: true}, {t: 蒙}, {t: 吉}, {t: 納, caesura: true}, {t: 婦}, {t: 吉}, {t: 子, oc: 2, caesura: true}, {t: 克}, {t: 家}]   # 九二：包蒙吉，納婦吉，子克家。
+      - tokens: [{t: 六}, {t: 三}, {t: 勿, caesura: true}, {t: 用}, {t: 取}, {t: 女}, {t: 見, caesura: true}, {t: 金}, {t: 夫}, {t: 不, caesura: true}, {t: 有}, {t: 躬}, {t: 无, caesura: true}, {t: 攸}, {t: 利}]   # 六三：勿用取女，見金夫，不有躬，无攸利。
+      - tokens: [{t: 六}, {t: 四}, {t: 困, caesura: true}, {t: 蒙}, {t: 吝, caesura: true}]   # 六四：困蒙，吝。
+      - tokens: [{t: 六}, {t: 五}, {t: 童, caesura: true}, {t: 蒙}, {t: 吉, caesura: true}]   # 六五：童蒙，吉。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 擊, caesura: true}, {t: 蒙}, {t: 不, caesura: true}, {t: 利}, {t: 為, mandarin: wéi}, {t: 寇}, {t: 利, caesura: true}, {t: 禦}, {t: 寇}]   # 上九：擊蒙，不利為寇，利禦寇。
+  - id: "5"
+    title: "Hexagram 5, Xū 需, waiting"
+    hexagram: "111010"
+    trigrams: {lower: "乾", upper: "坎"}
+    verify_in: sources/wikisource/05.txt
+    lines:
+      - tokens: [{t: 需}, {t: 有, caesura: true}, {t: 孚}, {t: 光, caesura: true}, {t: 亨}, {t: 貞, oc: 2, caesura: true}, {t: 吉}, {t: 利, caesura: true}, {t: 涉}, {t: 大}, {t: 川}]   # 需：有孚，光亨。貞吉，利涉大川。
+      - tokens: [{t: 初}, {t: 九}, {t: 需, caesura: true}, {t: 于}, {t: 郊}, {t: 利, caesura: true}, {t: 用}, {t: 恆}, {t: 无, caesura: true}, {t: 咎}]   # 初九：需于郊，利用恆，无咎。
+      - tokens: [{t: 九}, {t: 二}, {t: 需, caesura: true}, {t: 于}, {t: 沙}, {t: 小, caesura: true}, {t: 有}, {t: 言}, {t: 終, caesura: true}, {t: 吉}]   # 九二：需于沙，小有言，終吉。
+      - tokens: [{t: 九}, {t: 三}, {t: 需, caesura: true}, {t: 于}, {t: 泥}, {t: 致, caesura: true}, {t: 寇}, {t: 至}]   # 九三：需于泥，致寇至。
+      - tokens: [{t: 六}, {t: 四}, {t: 需, caesura: true}, {t: 于}, {t: 血}, {t: 出, caesura: true}, {t: 自}, {t: 穴}]   # 六四：需于血，出自穴。
+      - tokens: [{t: 九}, {t: 五}, {t: 需, caesura: true}, {t: 于}, {t: 酒}, {t: 食}, {t: 貞, oc: 2, caesura: true}, {t: 吉}]   # 九五：需于酒食，貞吉。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 入, caesura: true}, {t: 于}, {t: 穴}, {t: 有, caesura: true}, {t: 不}, {t: 速}, {t: 之}, {t: 客}, {t: 三}, {t: 人}, {t: 來, oc: 2}, {t: 敬, caesura: true}, {t: 之}, {t: 終}, {t: 吉}]   # 上六：入于穴，有不速之客三人來，敬之終吉。
+  - id: "6"
+    title: "Hexagram 6, Sòng 訟, dispute"
+    hexagram: "010111"
+    trigrams: {lower: "坎", upper: "乾"}
+    verify_in: sources/wikisource/06.txt
+    lines:
+      - tokens: [{t: 訟}, {t: 有, caesura: true}, {t: 孚}, {t: 窒, caesura: true}, {t: 惕, caesura: true}, {t: 中, caesura: true}, {t: 吉}, {t: 終, caesura: true}, {t: 凶}, {t: 利, caesura: true}, {t: 見}, {t: 大}, {t: 人}, {t: 不, caesura: true}, {t: 利}, {t: 涉}, {t: 大}, {t: 川}]   # 訟：有孚，窒，惕，中吉，終凶。利見大人，不利涉大川。
+      - tokens: [{t: 初}, {t: 六}, {t: 不, caesura: true}, {t: 永}, {t: 所}, {t: 事}, {t: 小, caesura: true}, {t: 有}, {t: 言}, {t: 終, caesura: true}, {t: 吉}]   # 初六：不永所事，小有言，終吉。
+      - tokens: [{t: 九}, {t: 二}, {t: 不, caesura: true}, {t: 克}, {t: 訟}, {t: 歸, caesura: true}, {t: 而}, {t: 逋}, {t: 其, oc: 2, caesura: true}, {t: 邑}, {t: 人}, {t: 三}, {t: 百}, {t: 戶}, {t: 无}, {t: 眚}]   # 九二：不克訟，歸而逋，其邑人三百戶无眚。
+      - tokens: [{t: 六}, {t: 三}, {t: 食, caesura: true}, {t: 舊}, {t: 德}, {t: 貞, oc: 2, caesura: true}, {t: 厲}, {t: 終, caesura: true}, {t: 吉}, {t: 或, caesura: true}, {t: 從}, {t: 王}, {t: 事}, {t: 无, caesura: true}, {t: 成}]   # 六三：食舊德，貞厲，終吉。或從王事，无成。
+      - tokens: [{t: 九}, {t: 四}, {t: 不, caesura: true}, {t: 克}, {t: 訟}, {t: 復, oc: 2, caesura: true}, {t: 即}, {t: 命}, {t: 渝}, {t: 安, caesura: true}, {t: 貞, oc: 2}, {t: 吉}]   # 九四：不克訟，復即命渝，安貞吉。
+      - tokens: [{t: 九}, {t: 五}, {t: 訟, caesura: true}, {t: 元, caesura: true}, {t: 吉}]   # 九五：訟，元吉。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 或, caesura: true}, {t: 錫}, {t: 之}, {t: 鞶}, {t: 帶}, {t: 終, caesura: true}, {t: 朝}, {t: 三}, {t: 褫}, {t: 之}]   # 上九：或錫之鞶帶，終朝三褫之。
+  - id: "7"
+    title: "Hexagram 7, Shī 師, the army"
+    hexagram: "010000"
+    trigrams: {lower: "坎", upper: "坤"}
+    verify_in: sources/wikisource/07.txt
+    lines:
+      - tokens: [{t: 師}, {t: 貞, oc: 2, caesura: true}, {t: 丈}, {t: 人}, {t: 吉}, {t: 无, caesura: true}, {t: 咎}]   # 師：貞丈人吉，无咎。
+      - tokens: [{t: 初}, {t: 六}, {t: 師, caesura: true}, {t: 出}, {t: 以}, {t: 律}, {t: 否, caesura: true}, {t: 臧}, {t: 凶, caesura: true}]   # 初六：師出以律，否臧，凶。
+      - tokens: [{t: 九}, {t: 二}, {t: 在, caesura: true}, {t: 師}, {t: 中}, {t: 吉}, {t: 无, caesura: true}, {t: 咎}, {t: 王, caesura: true}, {t: 三}, {t: 錫}, {t: 命}]   # 九二：在師中吉，无咎；王三錫命。
+      - tokens: [{t: 六}, {t: 三}, {t: 師, caesura: true}, {t: 或}, {t: 輿}, {t: 尸}, {t: 凶, caesura: true}]   # 六三：師或輿尸，凶。
+      - tokens: [{t: 六}, {t: 四}, {t: 師, caesura: true}, {t: 左}, {t: 次}, {t: 无, caesura: true}, {t: 咎}]   # 六四：師左次，无咎。
+      - tokens: [{t: 六}, {t: 五}, {t: 田, caesura: true}, {t: 有}, {t: 禽}, {t: 利, caesura: true}, {t: 執}, {t: 言}, {t: 无, caesura: true}, {t: 咎}, {t: 長, oc: 2, tang: 3, caesura: true}, {t: 子, oc: 2}, {t: 帥}, {t: 師}, {t: 弟, caesura: true}, {t: 子, oc: 2}, {t: 輿}, {t: 尸}, {t: 貞, oc: 2, caesura: true}, {t: 凶}]   # 六五：田有禽，利執言，无咎。長子帥師，弟子輿尸，貞凶。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 大, caesura: true}, {t: 君}, {t: 有}, {t: 命}, {t: 開, caesura: true}, {t: 國}, {t: 承}, {t: 家}, {t: 小, caesura: true}, {t: 人}, {t: 勿}, {t: 用}]   # 上六：大君有命，開國承家，小人勿用。
+  - id: "8"
+    title: "Hexagram 8, Bǐ 比, joining"
+    hexagram: "000010"
+    trigrams: {lower: "坤", upper: "坎"}
+    verify_in: sources/wikisource/08.txt
+    lines:
+      - tokens: [{t: 比, oc: 2, tang: 3}, {t: 吉, caesura: true}, {t: 原, caesura: true}, {t: 筮}, {t: 元}, {t: 永}, {t: 貞, oc: 2}, {t: 无, caesura: true}, {t: 咎}, {t: 不, caesura: true}, {t: 寧}, {t: 方}, {t: 來, oc: 2}, {t: 後, caesura: true}, {t: 夫}, {t: 凶}]   # 比：吉。原筮元永貞，无咎。不寧方來，後夫凶。
+      - tokens: [{t: 初}, {t: 六}, {t: 有, caesura: true}, {t: 孚}, {t: 比, oc: 2, tang: 3, caesura: true}, {t: 之}, {t: 无, caesura: true}, {t: 咎}, {t: 有, caesura: true}, {t: 孚}, {t: 盈}, {t: 缶}, {t: 終, caesura: true}, {t: 來, oc: 2}, {t: 有}, {t: 它}, {t: 吉, caesura: true}]   # 初六：有孚，比之，无咎。有孚盈缶，終來有它，吉。
+      - tokens: [{t: 六}, {t: 二}, {t: 比, oc: 2, tang: 3, caesura: true}, {t: 之}, {t: 自}, {t: 內}, {t: 貞, oc: 2, caesura: true}, {t: 吉}]   # 六二：比之自內，貞吉。
+      - tokens: [{t: 六}, {t: 三}, {t: 比, oc: 2, tang: 3, caesura: true}, {t: 之}, {t: 匪}, {t: 人}]   # 六三：比之匪人。
+      - tokens: [{t: 六}, {t: 四}, {t: 外, caesura: true}, {t: 比, oc: 2, tang: 3}, {t: 之}, {t: 貞, oc: 2, caesura: true}, {t: 吉}]   # 六四：外比之，貞吉。
+      - tokens: [{t: 九}, {t: 五}, {t: 顯, caesura: true}, {t: 比, oc: 2, tang: 3}, {t: 王, caesura: true}, {t: 用}, {t: 三}, {t: 敺}, {t: 失, caesura: true}, {t: 前}, {t: 禽}, {t: 邑, caesura: true}, {t: 人}, {t: 不}, {t: 誡}, {t: 吉, caesura: true}]   # 九五：顯比。王用三敺，失前禽，邑人不誡，吉。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 比, oc: 2, tang: 3, caesura: true}, {t: 之}, {t: 无}, {t: 首}, {t: 凶, caesura: true}]   # 上六：比之无首，凶。
+  - id: "9"
+    title: "Hexagram 9, Xiǎo Xù 小畜, small taming"
+    hexagram: "111011"
+    trigrams: {lower: "乾", upper: "巽"}
+    verify_in: sources/wikisource/09.txt
+    lines:
+      - tokens: [{t: 小}, {t: 畜, oc: 4, mandarin: xù}, {t: 亨, caesura: true}, {t: 密, caesura: true}, {t: 雲}, {t: 不}, {t: 雨}, {t: 自, caesura: true}, {t: 我}, {t: 西}, {t: 郊}]   # 小畜：亨。密雲不雨，自我西郊。
+      - tokens: [{t: 初}, {t: 九}, {t: 復, oc: 2, caesura: true}, {t: 自}, {t: 道}, {t: 何, caesura: true}, {t: 其, oc: 2}, {t: 咎}, {t: 吉, caesura: true}]   # 初九：復自道，何其咎，吉。
+      - tokens: [{t: 九}, {t: 二}, {t: 牽, caesura: true}, {t: 復, oc: 2}, {t: 吉, caesura: true}]   # 九二：牽復，吉。
+      - tokens: [{t: 九}, {t: 三}, {t: 車, caesura: true}, {t: 說, mandarin: tuō}, {t: 輹}, {t: 夫, caesura: true}, {t: 妻}, {t: 反}, {t: 目}]   # 九三：車說輹，夫妻反目。
+      - tokens: [{t: 六}, {t: 四}, {t: 有, caesura: true}, {t: 孚}, {t: 血, caesura: true}, {t: 去}, {t: 惕}, {t: 出}, {t: 无, caesura: true}, {t: 咎}]   # 六四：有孚，血去惕出，无咎。
+      - tokens: [{t: 九}, {t: 五}, {t: 有, caesura: true}, {t: 孚}, {t: 攣}, {t: 如, oc: 2}, {t: 富, caesura: true}, {t: 以}, {t: 其, oc: 2}, {t: 鄰}]   # 九五：有孚攣如，富以其鄰。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 既, caesura: true}, {t: 雨}, {t: 既}, {t: 處, tang: 2, mandarin: chǔ}, {t: 尚, caesura: true}, {t: 得}, {t: 載, oc: 2, tang: 3}, {t: 婦, caesura: true}, {t: 貞, oc: 2}, {t: 厲}, {t: 月, caesura: true}, {t: 幾}, {t: 望}, {t: 君, caesura: true}, {t: 子, oc: 2}, {t: 征}, {t: 凶}]   # 上九：既雨既處，尚得載，婦貞厲，月幾望，君子征凶。
+  - id: "10"
+    title: "Hexagram 10, Lǚ 履, treading"
+    hexagram: "110111"
+    trigrams: {lower: "兌", upper: "乾"}
+    verify_in: sources/wikisource/10.txt
+    lines:
+      - tokens: [{t: 履}, {t: 虎}, {t: 尾}, {t: 不, caesura: true}, {t: 咥}, {t: 人}, {t: 亨, caesura: true}]   # 履虎尾，不咥人，亨。
+      - tokens: [{t: 初}, {t: 九}, {t: 素, caesura: true}, {t: 履}, {t: 往, caesura: true}, {t: 无}, {t: 咎}]   # 初九：素履，往无咎。
+      - tokens: [{t: 九}, {t: 二}, {t: 履, caesura: true}, {t: 道}, {t: 坦}, {t: 坦}, {t: 幽, caesura: true}, {t: 人}, {t: 貞, oc: 2}, {t: 吉}]   # 九二：履道坦坦，幽人貞吉。
+      - tokens: [{t: 六}, {t: 三}, {t: 眇, caesura: true}, {t: 能}, {t: 視}, {t: 跛, caesura: true}, {t: 能}, {t: 履}, {t: 履, caesura: true}, {t: 虎}, {t: 尾}, {t: 咥, caesura: true}, {t: 人}, {t: 凶, caesura: true}, {t: 武, caesura: true}, {t: 人}, {t: 為, mandarin: wéi}, {t: 于}, {t: 大}, {t: 君}]   # 六三：眇能視，跛能履，履虎尾，咥人，凶。武人為于大君。
+      - tokens: [{t: 九}, {t: 四}, {t: 履, caesura: true}, {t: 虎}, {t: 尾}, {t: 愬, caesura: true}, {t: 愬}, {t: 終}, {t: 吉}]   # 九四：履虎尾，愬愬終吉。
+      - tokens: [{t: 九}, {t: 五}, {t: 夬, caesura: true}, {t: 履}, {t: 貞, oc: 2, caesura: true}, {t: 厲}]   # 九五：夬履，貞厲。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 視, caesura: true}, {t: 履}, {t: 考}, {t: 詳}, {t: 其, oc: 2, caesura: true}, {t: 旋}, {t: 元}, {t: 吉}]   # 上九：視履考詳，其旋元吉。
+  - id: "11"
+    title: "Hexagram 11, Tài 泰, peace"
+    hexagram: "111000"
+    trigrams: {lower: "乾", upper: "坤"}
+    verify_in: sources/wikisource/11.txt
+    lines:
+      - tokens: [{t: 泰}, {t: 小, caesura: true}, {t: 往}, {t: 大}, {t: 來, oc: 2}, {t: 吉, caesura: true}, {t: 亨}]   # 泰：小往大來，吉亨。
+      - tokens: [{t: 初}, {t: 九}, {t: 拔, caesura: true}, {t: 茅}, {t: 茹}, {t: 以}, {t: 其, oc: 2}, {t: 彙}, {t: 征, caesura: true}, {t: 吉}]   # 初九：拔茅茹以其彙，征吉。
+      - tokens: [{t: 九}, {t: 二}, {t: 包, caesura: true}, {t: 荒}, {t: 用, caesura: true}, {t: 馮}, {t: 河}, {t: 不, caesura: true}, {t: 遐}, {t: 遺}, {t: 朋, caesura: true}, {t: 亡}, {t: 得, caesura: true}, {t: 尚}, {t: 于}, {t: 中}, {t: 行, oc: 2}]   # 九二：包荒。用馮河，不遐遺；朋亡。得尚于中行。
+      - tokens: [{t: 九}, {t: 三}, {t: 无, caesura: true}, {t: 平}, {t: 不}, {t: 陂}, {t: 无, caesura: true}, {t: 往}, {t: 不}, {t: 復, oc: 2}, {t: 艱, caesura: true}, {t: 貞, oc: 2}, {t: 无}, {t: 咎}, {t: 勿, caesura: true}, {t: 恤}, {t: 其, oc: 2}, {t: 孚}, {t: 于, caesura: true}, {t: 食}, {t: 有}, {t: 福}]   # 九三：无平不陂，无往不復，艱貞无咎。勿恤其孚，于食有福。
+      - tokens: [{t: 六}, {t: 四}, {t: 翩, caesura: true}, {t: 翩}, {t: 不, caesura: true}, {t: 富}, {t: 以}, {t: 其, oc: 2}, {t: 鄰}, {t: 不, caesura: true}, {t: 戒}, {t: 以}, {t: 孚}]   # 六四：翩翩，不富以其鄰；不戒以孚。
+      - tokens: [{t: 六}, {t: 五}, {t: 帝, caesura: true}, {t: 乙}, {t: 歸}, {t: 妹}, {t: 以, caesura: true}, {t: 祉}, {t: 元, caesura: true}, {t: 吉}]   # 六五：帝乙歸妹，以祉，元吉。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 城, caesura: true}, {t: 復, oc: 2}, {t: 于}, {t: 隍}, {t: 勿, caesura: true}, {t: 用}, {t: 師}, {t: 自, caesura: true}, {t: 邑}, {t: 告}, {t: 命}, {t: 貞, oc: 2, caesura: true}, {t: 吝}]   # 上六：城復于隍，勿用師，自邑告命，貞吝。
+  - id: "12"
+    title: "Hexagram 12, Pǐ 否, obstruction"
+    hexagram: "000111"
+    trigrams: {lower: "坤", upper: "乾"}
+    verify_in: sources/wikisource/12.txt
+    lines:
+      - tokens: [{t: 否}, {t: 之}, {t: 匪}, {t: 人}, {t: 不, caesura: true}, {t: 利}, {t: 君}, {t: 子, oc: 2}, {t: 貞, oc: 2}, {t: 大, caesura: true}, {t: 往}, {t: 小}, {t: 來, oc: 2}]   # 否之匪人，不利君子貞，大往小來。
+      - tokens: [{t: 初}, {t: 六}, {t: 拔, caesura: true}, {t: 茅}, {t: 茹}, {t: 以}, {t: 其, oc: 2}, {t: 彙}, {t: 貞, oc: 2, caesura: true}, {t: 吉}, {t: 亨, caesura: true}]   # 初六，拔茅茹以其彙，貞吉。亨。
+      - tokens: [{t: 六}, {t: 二}, {t: 包, caesura: true}, {t: 承}, {t: 小, caesura: true}, {t: 人}, {t: 吉}, {t: 大, caesura: true}, {t: 人}, {t: 否}, {t: 亨, caesura: true}]   # 六二，包承，小人吉，大人否。亨。
+      - tokens: [{t: 六}, {t: 三}, {t: 包, caesura: true}, {t: 羞}]   # 六三，包羞。
+      - tokens: [{t: 九}, {t: 四}, {t: 有, caesura: true}, {t: 命}, {t: 无, caesura: true}, {t: 咎}, {t: 疇, caesura: true}, {t: 離}, {t: 祉}]   # 九四，有命，无咎，疇離祉。
+      - tokens: [{t: 九}, {t: 五}, {t: 休, caesura: true}, {t: 否}, {t: 大, caesura: true}, {t: 人}, {t: 吉}, {t: 其, oc: 2, caesura: true}, {t: 亡}, {t: 其, oc: 2}, {t: 亡}, {t: 繫, caesura: true}, {t: 于}, {t: 包}, {t: 桑}]   # 九五，休否，大人吉。其亡其亡，繫于包桑。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 傾, caesura: true}, {t: 否}, {t: 先, caesura: true}, {t: 否}, {t: 後}, {t: 喜}]   # 上九，傾否，先否後喜。
+  - id: "13"
+    title: "Hexagram 13, Tóng Rén 同人, fellowship"
+    hexagram: "101111"
+    trigrams: {lower: "離", upper: "乾"}
+    verify_in: sources/wikisource/13.txt
+    lines:
+      - tokens: [{t: 同}, {t: 人}, {t: 于}, {t: 野}, {t: 亨, caesura: true}, {t: 利, caesura: true}, {t: 涉}, {t: 大}, {t: 川}, {t: 利, caesura: true}, {t: 君}, {t: 子, oc: 2}, {t: 貞, oc: 2}]   # 同人于野，亨。利涉大川，利君子貞。
+      - tokens: [{t: 初}, {t: 九}, {t: 同, caesura: true}, {t: 人}, {t: 于}, {t: 門}, {t: 無, caesura: true}, {t: 咎}]   # 初九：同人于門，無咎。
+      - tokens: [{t: 六}, {t: 二}, {t: 同, caesura: true}, {t: 人}, {t: 于}, {t: 宗}, {t: 吝, caesura: true}]   # 六二：同人于宗，吝。
+      - tokens: [{t: 九}, {t: 三}, {t: 伏, caesura: true}, {t: 戎}, {t: 于}, {t: 莽}, {t: 升, caesura: true}, {t: 其, oc: 2}, {t: 高}, {t: 陵}, {t: 三, caesura: true}, {t: 歲}, {t: 不}, {t: 興}]   # 九三：伏戎于莽，升其高陵，三歲不興。
+      - tokens: [{t: 九}, {t: 四}, {t: 乘, caesura: true}, {t: 其, oc: 2}, {t: 庸}, {t: 弗, caesura: true}, {t: 克}, {t: 攻}, {t: 吉, caesura: true}]   # 九四：乘其庸，弗克攻，吉。
+      - tokens: [{t: 九}, {t: 五}, {t: 同, caesura: true}, {t: 人}, {t: 先, caesura: true}, {t: 號, mandarin: háo}, {t: 啕}, {t: 而}, {t: 後}, {t: 笑}, {t: 大, caesura: true}, {t: 師}, {t: 克}, {t: 相}, {t: 遇}]   # 九五：同人，先號啕而後笑。大師克相遇。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 同, caesura: true}, {t: 人}, {t: 于}, {t: 郊}, {t: 無, caesura: true}, {t: 悔}]   # 上九：同人于郊，無悔。
+  - id: "14"
+    title: "Hexagram 14, Dà Yǒu 大有, great possession"
+    hexagram: "111101"
+    trigrams: {lower: "乾", upper: "離"}
+    verify_in: sources/wikisource/14.txt
+    lines:
+      - tokens: [{t: 大}, {t: 有}, {t: 元, caesura: true}, {t: 亨}]   # 大有：元亨。
+      - tokens: [{t: 初}, {t: 九}, {t: 无, caesura: true}, {t: 交}, {t: 害}, {t: 匪, caesura: true}, {t: 咎}, {t: 艱, caesura: true}, {t: 則}, {t: 无}, {t: 咎}]   # 初九：无交害，匪咎，艱則无咎。
+      - tokens: [{t: 九}, {t: 二}, {t: 大, caesura: true}, {t: 轝}, {t: 以}, {t: 載, oc: 2, tang: 3}, {t: 有, caesura: true}, {t: 攸}, {t: 往}, {t: 无, caesura: true}, {t: 咎}]   # 九二：大轝以載，有攸往，无咎。
+      - tokens: [{t: 九}, {t: 三}, {t: 公, caesura: true}, {t: 用}, {t: 亨, oc: 3, mandarin: xiǎng}, {t: 于}, {t: 天}, {t: 子, oc: 2}, {t: 小, caesura: true}, {t: 人}, {t: 弗}, {t: 克}]   # 九三：公用亨于天子，小人弗克。
+      - tokens: [{t: 九}, {t: 四}, {t: 匪, caesura: true}, {t: 其, oc: 2}, {t: 尫}, {t: 无, caesura: true}, {t: 咎}]   # 九四：匪其尫，无咎。
+      - tokens: [{t: 六}, {t: 五}, {t: 厥, caesura: true}, {t: 孚}, {t: 交}, {t: 如, oc: 2}, {t: 威, caesura: true}, {t: 如, oc: 2}, {t: 吉, caesura: true}]   # 六五：厥孚交如，威如；吉。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 自, caesura: true}, {t: 天}, {t: 佑}, {t: 之}, {t: 吉, caesura: true}, {t: 无}, {t: 不}, {t: 利}]   # 上九：自天佑之，吉无不利。
+  - id: "15"
+    title: "Hexagram 15, Qiān 謙, modesty"
+    hexagram: "001000"
+    trigrams: {lower: "艮", upper: "坤"}
+    verify_in: sources/wikisource/15.txt
+    lines:
+      - tokens: [{t: 謙}, {t: 亨, caesura: true}, {t: 君, caesura: true}, {t: 子, oc: 2}, {t: 有}, {t: 終}]   # 謙：亨，君子有終。
+      - tokens: [{t: 初}, {t: 六}, {t: 謙, caesura: true}, {t: 謙}, {t: 君}, {t: 子, oc: 2}, {t: 用, caesura: true}, {t: 涉}, {t: 大}, {t: 川}, {t: 吉, caesura: true}]   # 初六：謙謙君子，用涉大川，吉。
+      - tokens: [{t: 六}, {t: 二}, {t: 鳴, caesura: true}, {t: 謙}, {t: 貞, oc: 2, caesura: true}, {t: 吉}]   # 六二：鳴謙，貞吉。
+      - tokens: [{t: 九}, {t: 三}, {t: 勞, caesura: true}, {t: 謙}, {t: 君}, {t: 子, oc: 2}, {t: 有, caesura: true}, {t: 終}, {t: 吉}]   # 九三：勞謙君子，有終吉。
+      - tokens: [{t: 六}, {t: 四}, {t: 无, caesura: true}, {t: 不}, {t: 利}, {t: 撝, caesura: true}, {t: 謙}]   # 六四：无不利，撝謙。
+      - tokens: [{t: 六}, {t: 五}, {t: 不, caesura: true}, {t: 富}, {t: 以, caesura: true}, {t: 其, oc: 2}, {t: 鄰}, {t: 利, caesura: true}, {t: 用}, {t: 侵}, {t: 伐}, {t: 无, caesura: true}, {t: 不}, {t: 利}]   # 六五：不富，以其鄰，利用侵伐，无不利。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 鳴, caesura: true}, {t: 謙}, {t: 利, caesura: true}, {t: 用}, {t: 行, oc: 2}, {t: 師}, {t: 征, caesura: true}, {t: 邑}, {t: 國}]   # 上六：鳴謙，利用行師，征邑國。
+  - id: "16"
+    title: "Hexagram 16, Yù 豫, delight"
+    hexagram: "000100"
+    trigrams: {lower: "坤", upper: "震"}
+    verify_in: sources/wikisource/16.txt
+    lines:
+      - tokens: [{t: 豫}, {t: 利, caesura: true}, {t: 建}, {t: 侯}, {t: 行, oc: 2}, {t: 師}]   # 豫：利建侯行師。
+      - tokens: [{t: 初}, {t: 六}, {t: 鳴, caesura: true}, {t: 豫}, {t: 凶, caesura: true}]   # 初六：鳴豫，凶。
+      - tokens: [{t: 六}, {t: 二}, {t: 介, caesura: true}, {t: 于}, {t: 石}, {t: 不, caesura: true}, {t: 終}, {t: 日}, {t: 貞, oc: 2, caesura: true}, {t: 吉}]   # 六二：介于石，不終日，貞吉。
+      - tokens: [{t: 六}, {t: 三}, {t: 盱, caesura: true}, {t: 豫}, {t: 悔, caesura: true}, {t: 遲, caesura: true}, {t: 有}, {t: 悔}]   # 六三：盱豫，悔。遲有悔。
+      - tokens: [{t: 九}, {t: 四}, {t: 由, caesura: true}, {t: 豫}, {t: 大, caesura: true}, {t: 有}, {t: 得}, {t: 勿, caesura: true}, {t: 疑}, {t: 朋, caesura: true}, {t: 盍}, {t: 戠}]   # 九四：由豫，大有得。勿疑。朋盍戠。
+      - tokens: [{t: 六}, {t: 五}, {t: 貞, oc: 2, caesura: true}, {t: 疾}, {t: 恆, caesura: true}, {t: 不}, {t: 死}]   # 六五：貞疾，恆不死。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 冥, caesura: true}, {t: 豫}, {t: 成, caesura: true}, {t: 有}, {t: 渝}, {t: 无, caesura: true}, {t: 咎}]   # 上六：冥豫，成有渝，无咎。
+  - id: "17"
+    title: "Hexagram 17, Suí 隨, following"
+    hexagram: "100110"
+    trigrams: {lower: "震", upper: "兌"}
+    verify_in: sources/wikisource/17.txt
+    lines:
+      - tokens: [{t: 隨}, {t: 元, caesura: true}, {t: 亨}, {t: 利, caesura: true}, {t: 貞, oc: 2}, {t: 无, caesura: true}, {t: 咎}]   # 隨：元亨。利貞。无咎。
+      - tokens: [{t: 初}, {t: 九}, {t: 官, caesura: true}, {t: 有}, {t: 渝}, {t: 貞, oc: 2, caesura: true}, {t: 吉}, {t: 出, caesura: true}, {t: 門}, {t: 交}, {t: 有}, {t: 功}]   # 初九：官有渝，貞吉。出門交有功。
+      - tokens: [{t: 六}, {t: 二}, {t: 係, caesura: true}, {t: 小}, {t: 子, oc: 2}, {t: 失, caesura: true}, {t: 丈}, {t: 夫}]   # 六二：係小子，失丈夫。
+      - tokens: [{t: 六}, {t: 三}, {t: 係, caesura: true}, {t: 丈}, {t: 夫}, {t: 失, caesura: true}, {t: 小}, {t: 子, oc: 2}, {t: 隨, caesura: true}, {t: 有, caesura: true}, {t: 求}, {t: 得}, {t: 利}, {t: 居, caesura: true}, {t: 貞, oc: 2}]   # 六三：係丈夫，失小子。隨，有求得利，居貞。
+      - tokens: [{t: 九}, {t: 四}, {t: 隨, caesura: true}, {t: 有}, {t: 獲}, {t: 貞, oc: 2, caesura: true}, {t: 凶}, {t: 有, caesura: true}, {t: 孚}, {t: 在}, {t: 道}, {t: 以, caesura: true}, {t: 明}, {t: 何, caesura: true}, {t: 咎}]   # 九四：隨有獲，貞凶。有孚在道，以明，何咎。
+      - tokens: [{t: 九}, {t: 五}, {t: 孚, caesura: true}, {t: 于}, {t: 嘉}, {t: 吉, caesura: true}]   # 九五：孚于嘉，吉。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 拘, caesura: true}, {t: 係}, {t: 之}, {t: 乃, caesura: true}, {t: 從}, {t: 維}, {t: 之}, {t: 王, caesura: true}, {t: 用}, {t: 亨, oc: 3, mandarin: xiǎng}, {t: 于}, {t: 西}, {t: 山}]   # 上六：拘係之，乃從維之。王用亨于西山。
+  - id: "18"
+    title: "Hexagram 18, Gǔ 蠱, decay"
+    hexagram: "011001"
+    trigrams: {lower: "巽", upper: "艮"}
+    verify_in: sources/wikisource/18.txt
+    lines:
+      - tokens: [{t: 蠱}, {t: 元, caesura: true}, {t: 亨}, {t: 利, caesura: true}, {t: 涉}, {t: 大}, {t: 川}, {t: 先, caesura: true}, {t: 甲}, {t: 三}, {t: 日}, {t: 後, caesura: true}, {t: 甲}, {t: 三}, {t: 日}]   # 蠱：元亨。利涉大川。先甲三日，後甲三日。
+      - tokens: [{t: 初}, {t: 六}, {t: 幹, caesura: true}, {t: 父}, {t: 之}, {t: 蠱}, {t: 有, caesura: true}, {t: 子, oc: 2}, {t: 考}, {t: 无, caesura: true}, {t: 咎}, {t: 厲, caesura: true}, {t: 終}, {t: 吉}]   # 初六：幹父之蠱，有子考，无咎，厲終吉。
+      - tokens: [{t: 九}, {t: 二}, {t: 幹, caesura: true}, {t: 母}, {t: 之}, {t: 蠱}, {t: 不, caesura: true}, {t: 可}, {t: 貞, oc: 2}]   # 九二：幹母之蠱，不可貞。
+      - tokens: [{t: 九}, {t: 三}, {t: 幹, caesura: true}, {t: 父}, {t: 之}, {t: 蠱}, {t: 小, caesura: true}, {t: 有}, {t: 悔}, {t: 无, caesura: true}, {t: 大}, {t: 咎}]   # 九三：幹父之蠱，小有悔，无大咎。
+      - tokens: [{t: 六}, {t: 四}, {t: 裕, caesura: true}, {t: 父}, {t: 之}, {t: 蠱}, {t: 往, caesura: true}, {t: 見}, {t: 吝}]   # 六四：裕父之蠱，往見吝。
+      - tokens: [{t: 六}, {t: 五}, {t: 幹, caesura: true}, {t: 父}, {t: 之}, {t: 蠱}, {t: 用, caesura: true}, {t: 譽}]   # 六五：幹父之蠱，用譽。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 不, caesura: true}, {t: 事}, {t: 王}, {t: 侯}, {t: 高, caesura: true}, {t: 尚}, {t: 其, oc: 2}, {t: 事}]   # 上九：不事王侯，高尚其事。
+  - id: "19"
+    title: "Hexagram 19, Lín 臨, approach"
+    hexagram: "110000"
+    trigrams: {lower: "兌", upper: "坤"}
+    verify_in: sources/wikisource/19.txt
+    lines:
+      - tokens: [{t: 臨}, {t: 元, caesura: true}, {t: 亨}, {t: 利, caesura: true}, {t: 貞, oc: 2}, {t: 至, caesura: true}, {t: 于}, {t: 八}, {t: 月}, {t: 有}, {t: 凶}]   # 臨：元亨。利貞。至于八月有凶。
+      - tokens: [{t: 初}, {t: 九}, {t: 咸, caesura: true}, {t: 臨}, {t: 貞, oc: 2, caesura: true}, {t: 吉}]   # 初九：咸臨，貞吉。
+      - tokens: [{t: 九}, {t: 二}, {t: 咸, caesura: true}, {t: 臨}, {t: 吉, caesura: true}, {t: 无}, {t: 不}, {t: 利}]   # 九二：咸臨，吉无不利。
+      - tokens: [{t: 六}, {t: 三}, {t: 甘, caesura: true}, {t: 臨}, {t: 无, caesura: true}, {t: 攸}, {t: 利}, {t: 既, caesura: true}, {t: 憂}, {t: 之}, {t: 无, caesura: true}, {t: 咎}]   # 六三：甘臨，无攸利。既憂之，无咎。
+      - tokens: [{t: 六}, {t: 四}, {t: 至, caesura: true}, {t: 臨}, {t: 无, caesura: true}, {t: 咎}]   # 六四：至臨，无咎。
+      - tokens: [{t: 六}, {t: 五}, {t: 知, caesura: true}, {t: 臨}, {t: 大, caesura: true}, {t: 君}, {t: 之}, {t: 宜}, {t: 吉, caesura: true}]   # 六五：知臨，大君之宜，吉。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 敦, caesura: true}, {t: 臨}, {t: 吉, caesura: true}, {t: 无}, {t: 咎}]   # 上六：敦臨，吉无咎。
+  - id: "20"
+    title: "Hexagram 20, Guān 觀, viewing"
+    hexagram: "000011"
+    trigrams: {lower: "坤", upper: "巽"}
+    verify_in: sources/wikisource/20.txt
+    lines:
+      - tokens: [{t: 觀}, {t: 盥, caesura: true}, {t: 而}, {t: 不}, {t: 薦}, {t: 有, caesura: true}, {t: 孚}, {t: 顒}, {t: 若}]   # 觀：盥而不薦，有孚顒若。
+      - tokens: [{t: 初}, {t: 六}, {t: 童, caesura: true}, {t: 觀}, {t: 小, caesura: true}, {t: 人}, {t: 无}, {t: 咎}, {t: 君, caesura: true}, {t: 子, oc: 2}, {t: 吝}]   # 初六：童觀，小人无咎，君子吝。
+      - tokens: [{t: 六}, {t: 二}, {t: 窺, caesura: true}, {t: 觀}, {t: 利, caesura: true}, {t: 女}, {t: 貞, oc: 2}]   # 六二：窺觀，利女貞。
+      - tokens: [{t: 六}, {t: 三}, {t: 觀, caesura: true}, {t: 我}, {t: 生}, {t: 進, caesura: true}, {t: 退}]   # 六三：觀我生，進退。
+      - tokens: [{t: 六}, {t: 四}, {t: 觀, caesura: true}, {t: 國}, {t: 之}, {t: 光}, {t: 利, caesura: true}, {t: 用}, {t: 賓}, {t: 于}, {t: 王}]   # 六四：觀國之光，利用賓于王。
+      - tokens: [{t: 九}, {t: 五}, {t: 觀, caesura: true}, {t: 我}, {t: 生}, {t: 君, caesura: true}, {t: 子, oc: 2}, {t: 无}, {t: 咎}]   # 九五：觀我生，君子无咎。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 觀, caesura: true}, {t: 其, oc: 2}, {t: 生}, {t: 君, caesura: true}, {t: 子, oc: 2}, {t: 无}, {t: 咎}]   # 上九：觀其生，君子无咎。
+  - id: "21"
+    title: "Hexagram 21, Shì Hé 噬嗑, biting through"
+    hexagram: "100101"
+    trigrams: {lower: "震", upper: "離"}
+    verify_in: sources/wikisource/21.txt
+    lines:
+      - tokens: [{t: 噬}, {t: 嗑}, {t: 亨, caesura: true}, {t: 利, caesura: true}, {t: 用}, {t: 獄}]   # 噬嗑：亨。利用獄。
+      - tokens: [{t: 初}, {t: 九}, {t: 屨, caesura: true}, {t: 校}, {t: 滅}, {t: 趾}, {t: 无, caesura: true}, {t: 咎}]   # 初九：屨校滅趾，无咎。
+      - tokens: [{t: 六}, {t: 二}, {t: 噬, caesura: true}, {t: 膚}, {t: 滅}, {t: 鼻}, {t: 无, caesura: true}, {t: 咎}]   # 六二：噬膚滅鼻，无咎。
+      - tokens: [{t: 六}, {t: 三}, {t: 噬, caesura: true}, {t: 昔}, {t: 肉}, {t: 遇, caesura: true}, {t: 毒}, {t: 小, caesura: true}, {t: 吝}, {t: 无, caesura: true}, {t: 咎}]   # 六三：噬昔肉，遇毒；小吝，无咎。
+      - tokens: [{t: 九}, {t: 四}, {t: 噬, caesura: true}, {t: 乾}, {t: 胏}, {t: 得, caesura: true}, {t: 金}, {t: 矢}, {t: 利, caesura: true}, {t: 艱}, {t: 貞, oc: 2}, {t: 吉, caesura: true}]   # 九四：噬乾胏，得金矢，利艱貞，吉。
+      - tokens: [{t: 六}, {t: 五}, {t: 噬, caesura: true}, {t: 乾}, {t: 肉}, {t: 得, caesura: true}, {t: 黃}, {t: 金}, {t: 貞, oc: 2, caesura: true}, {t: 厲}, {t: 无, caesura: true}, {t: 咎}]   # 六五：噬乾肉，得黃金，貞厲，无咎。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 何, caesura: true}, {t: 校}, {t: 滅}, {t: 耳}, {t: 凶, caesura: true}]   # 上九：何校滅耳，凶。
+  - id: "22"
+    title: "Hexagram 22, Bì 賁, adornment"
+    hexagram: "101001"
+    trigrams: {lower: "離", upper: "艮"}
+    verify_in: sources/wikisource/22.txt
+    lines:
+      - tokens: [{t: 賁, oc: 2}, {t: 亨, caesura: true}, {t: 小, caesura: true}, {t: 利}, {t: 有}, {t: 攸}, {t: 往}]   # 賁：亨。小利有攸往。
+      - tokens: [{t: 初}, {t: 九}, {t: 賁, oc: 2, caesura: true}, {t: 其, oc: 2}, {t: 趾}, {t: 舍, caesura: true}, {t: 車}, {t: 而}, {t: 徒}]   # 初九：賁其趾，舍車而徒。
+      - tokens: [{t: 六}, {t: 二}, {t: 賁, oc: 2, caesura: true}, {t: 其, oc: 2}, {t: 須}]   # 六二：賁其須。
+      - tokens: [{t: 九}, {t: 三}, {t: 賁, oc: 2, caesura: true}, {t: 如, oc: 2}, {t: 濡}, {t: 如, oc: 2}, {t: 永, caesura: true}, {t: 貞, oc: 2}, {t: 吉}]   # 九三：賁如濡如，永貞吉。
+      - tokens: [{t: 六}, {t: 四}, {t: 賁, oc: 2, caesura: true}, {t: 如, oc: 2}, {t: 皤}, {t: 如, oc: 2}, {t: 白, caesura: true}, {t: 馬}, {t: 翰}, {t: 如, oc: 2}, {t: 匪, caesura: true}, {t: 寇}, {t: 婚}, {t: 媾}]   # 六四：賁如皤如，白馬翰如，匪寇婚媾。
+      - tokens: [{t: 六}, {t: 五}, {t: 賁, oc: 2, caesura: true}, {t: 於}, {t: 丘}, {t: 園}, {t: 束, caesura: true}, {t: 帛}, {t: 戔}, {t: 戔}, {t: 吝, caesura: true}, {t: 終, caesura: true}, {t: 吉}]   # 六五：賁於丘園，束帛戔戔，吝，終吉。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 白, caesura: true}, {t: 賁, oc: 2}, {t: 无, caesura: true}, {t: 咎}]   # 上九：白賁，无咎。
+  - id: "23"
+    title: "Hexagram 23, Bō 剝, stripping"
+    hexagram: "000001"
+    trigrams: {lower: "坤", upper: "艮"}
+    verify_in: sources/wikisource/23.txt
+    lines:
+      - tokens: [{t: 剝}, {t: 不, caesura: true}, {t: 利}, {t: 有, caesura: true}, {t: 攸}, {t: 往}]   # 剝：不利。有攸往。
+      - tokens: [{t: 初}, {t: 六}, {t: 剝, caesura: true}, {t: 牀}, {t: 以}, {t: 足}, {t: 蔑, caesura: true}, {t: 貞, oc: 2}, {t: 凶}]   # 初六：剝牀以足，蔑貞凶。
+      - tokens: [{t: 六}, {t: 二}, {t: 剝, caesura: true}, {t: 牀}, {t: 以}, {t: 辨}, {t: 蔑, caesura: true}, {t: 貞, oc: 2}, {t: 凶}]   # 六二：剝牀以辨，蔑貞凶。
+      - tokens: [{t: 六}, {t: 三}, {t: 剝, caesura: true}, {t: 之}, {t: 无, caesura: true}, {t: 咎}]   # 六三：剝之，无咎。
+      - tokens: [{t: 六}, {t: 四}, {t: 剝, caesura: true}, {t: 牀}, {t: 以}, {t: 膚}, {t: 凶, caesura: true}]   # 六四：剝牀以膚，凶。
+      - tokens: [{t: 六}, {t: 五}, {t: 貫, caesura: true}, {t: 魚}, {t: 以, caesura: true}, {t: 宮}, {t: 人}, {t: 寵}, {t: 无, caesura: true}, {t: 不}, {t: 利}]   # 六五：貫魚，以宮人寵，无不利。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 碩, caesura: true}, {t: 果}, {t: 不}, {t: 食}, {t: 君, caesura: true}, {t: 子, oc: 2}, {t: 德}, {t: 車}, {t: 小, caesura: true}, {t: 人}, {t: 剝}, {t: 廬}]   # 上九：碩果不食，君子德車，小人剝廬。
+  - id: "24"
+    title: "Hexagram 24, Fù 復, return"
+    hexagram: "100000"
+    trigrams: {lower: "震", upper: "坤"}
+    verify_in: sources/wikisource/24.txt
+    lines:
+      - tokens: [{t: 復, oc: 2}, {t: 亨, caesura: true}, {t: 出, caesura: true}, {t: 入}, {t: 无}, {t: 疾}, {t: 朋, caesura: true}, {t: 來, oc: 2}, {t: 无}, {t: 咎}, {t: 反, caesura: true}, {t: 復, oc: 2}, {t: 其, oc: 2}, {t: 道}, {t: 七, caesura: true}, {t: 日}, {t: 來, oc: 2}, {t: 復, oc: 2}, {t: 利, caesura: true}, {t: 有}, {t: 攸}, {t: 往}]   # 復：亨。出入无疾，朋來无咎。反復其道，七日來復，利有攸往。
+      - tokens: [{t: 初}, {t: 九}, {t: 不, caesura: true}, {t: 遠}, {t: 復, oc: 2}, {t: 无, caesura: true}, {t: 祇}, {t: 悔}, {t: 元, caesura: true}, {t: 吉}]   # 初九：不遠復，无祇悔，元吉。
+      - tokens: [{t: 六}, {t: 二}, {t: 休, caesura: true}, {t: 復, oc: 2}, {t: 吉, caesura: true}]   # 六二：休復，吉。
+      - tokens: [{t: 六}, {t: 三}, {t: 頻, caesura: true}, {t: 復, oc: 2}, {t: 厲, caesura: true}, {t: 无}, {t: 咎}]   # 六三：頻復，厲无咎。
+      - tokens: [{t: 六}, {t: 四}, {t: 中, caesura: true}, {t: 行, oc: 2}, {t: 獨}, {t: 復, oc: 2}]   # 六四：中行獨復。
+      - tokens: [{t: 六}, {t: 五}, {t: 敦, caesura: true}, {t: 復, oc: 2}, {t: 无, caesura: true}, {t: 悔}]   # 六五：敦復，无悔。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 迷, caesura: true}, {t: 復, oc: 2}, {t: 凶, caesura: true}, {t: 有, caesura: true}, {t: 災}, {t: 眚}, {t: 用, caesura: true}, {t: 行, oc: 2}, {t: 師}, {t: 終, caesura: true}, {t: 有}, {t: 大}, {t: 敗}, {t: 以, caesura: true}, {t: 其, oc: 2}, {t: 國}, {t: 君}, {t: 凶, caesura: true}, {t: 至, caesura: true}, {t: 于}, {t: 十}, {t: 年}, {t: 不, caesura: true}, {t: 克}, {t: 征}]   # 上六：迷復，凶，有災眚。用行師，終有大敗，以其國君，凶；至于十年，不克征。
+  - id: "25"
+    title: "Hexagram 25, Wú Wàng 无妄, without falsehood"
+    hexagram: "100111"
+    trigrams: {lower: "震", upper: "乾"}
+    verify_in: sources/wikisource/25.txt
+    lines:
+      - tokens: [{t: 无}, {t: 妄}, {t: 元, caesura: true}, {t: 亨}, {t: 利, caesura: true}, {t: 貞, oc: 2}, {t: 其, oc: 2, caesura: true}, {t: 匪}, {t: 正}, {t: 有}, {t: 眚}, {t: 不, caesura: true}, {t: 利}, {t: 有}, {t: 攸}, {t: 往}]   # 无妄：元亨。利貞。其匪正有眚，不利有攸往。
+      - tokens: [{t: 初}, {t: 九}, {t: 无, caesura: true}, {t: 妄}, {t: 往, caesura: true}, {t: 吉}]   # 初九：无妄，往吉。
+      - tokens: [{t: 六}, {t: 二}, {t: 不, caesura: true}, {t: 耕}, {t: 穫}, {t: 不, caesura: true}, {t: 菑}, {t: 畬}, {t: 則, caesura: true}, {t: 利}, {t: 有}, {t: 攸}, {t: 往}]   # 六二：不耕穫，不菑畬，則利有攸往。
+      - tokens: [{t: 六}, {t: 三}, {t: 无, caesura: true}, {t: 妄}, {t: 之}, {t: 災}, {t: 或, caesura: true}, {t: 繫}, {t: 之}, {t: 牛}, {t: 行, oc: 2, caesura: true}, {t: 人}, {t: 之}, {t: 得}, {t: 邑, caesura: true}, {t: 人}, {t: 之}, {t: 災}]   # 六三：无妄之災，或繫之牛，行人之得，邑人之災。
+      - tokens: [{t: 九}, {t: 四}, {t: 可, caesura: true}, {t: 貞, oc: 2}, {t: 无, caesura: true}, {t: 咎}]   # 九四：可貞，无咎。
+      - tokens: [{t: 九}, {t: 五}, {t: 无, caesura: true}, {t: 妄}, {t: 之}, {t: 疾}, {t: 勿, caesura: true}, {t: 藥}, {t: 有}, {t: 喜}]   # 九五：无妄之疾，勿藥有喜。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 无, caesura: true}, {t: 妄}, {t: 行, oc: 2, caesura: true}, {t: 有}, {t: 眚}, {t: 无, caesura: true}, {t: 攸}, {t: 利}]   # 上九：无妄，行有眚，无攸利。
+  - id: "26"
+    title: "Hexagram 26, Dà Xù 大畜, great taming"
+    hexagram: "111001"
+    trigrams: {lower: "乾", upper: "艮"}
+    verify_in: sources/wikisource/26.txt
+    lines:
+      - tokens: [{t: 大}, {t: 畜, oc: 4, mandarin: xù}, {t: 利, caesura: true}, {t: 貞, oc: 2}, {t: 不, caesura: true}, {t: 家}, {t: 食}, {t: 吉}, {t: 利, caesura: true}, {t: 涉}, {t: 大}, {t: 川}]   # 大畜：利貞，不家食吉，利涉大川。
+      - tokens: [{t: 初}, {t: 九}, {t: 有, caesura: true}, {t: 厲}, {t: 利}, {t: 已}]   # 初九：有厲利已。
+      - tokens: [{t: 九}, {t: 二}, {t: 輿, caesura: true}, {t: 說, mandarin: tuō}, {t: 輹}]   # 九二：輿說輹。
+      - tokens: [{t: 九}, {t: 三}, {t: 良, caesura: true}, {t: 馬}, {t: 逐}, {t: 利, caesura: true}, {t: 艱}, {t: 貞, oc: 2}, {t: 吉, caesura: true}, {t: 日, caesura: true}, {t: 閑}, {t: 輿}, {t: 衛}, {t: 利, caesura: true}, {t: 有}, {t: 攸}, {t: 往}]   # 九三：良馬逐，利艱貞，吉。日閑輿衛，利有攸往。
+      - tokens: [{t: 六}, {t: 四}, {t: 童, caesura: true}, {t: 牛}, {t: 之}, {t: 告}, {t: 元, caesura: true}, {t: 吉}]   # 六四：童牛之告，元吉。
+      - tokens: [{t: 六}, {t: 五}, {t: 豶, caesura: true}, {t: 豕}, {t: 之}, {t: 牙}, {t: 吉, caesura: true}]   # 六五：豶豕之牙，吉。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 何, caesura: true}, {t: 天}, {t: 之}, {t: 衢}, {t: 亨, caesura: true}]   # 上九：何天之衢，亨。
+  - id: "27"
+    title: "Hexagram 27, Yí 頤, the jaws"
+    hexagram: "100001"
+    trigrams: {lower: "震", upper: "艮"}
+    verify_in: sources/wikisource/27.txt
+    lines:
+      - tokens: [{t: 頤}, {t: 貞, oc: 2, caesura: true}, {t: 吉}, {t: 觀, caesura: true}, {t: 頤}, {t: 自, caesura: true}, {t: 求}, {t: 口}, {t: 實}]   # 頤：貞吉。觀頤，自求口實。
+      - tokens: [{t: 初}, {t: 九}, {t: 舍, caesura: true}, {t: 爾}, {t: 靈}, {t: 龜}, {t: 觀, caesura: true}, {t: 我}, {t: 朵}, {t: 頤}, {t: 凶, caesura: true}]   # 初九：舍爾靈龜，觀我朵頤，凶。
+      - tokens: [{t: 六}, {t: 二}, {t: 顛, caesura: true}, {t: 頤}, {t: 拂, caesura: true}, {t: 經}, {t: 于, caesura: true}, {t: 丘}, {t: 頤}, {t: 征, caesura: true}, {t: 凶}]   # 六二：顛頤，拂經，于丘頤，征凶。
+      - tokens: [{t: 六}, {t: 三}, {t: 拂, caesura: true}, {t: 頤}, {t: 貞, oc: 2, caesura: true}, {t: 凶}, {t: 十, caesura: true}, {t: 年}, {t: 勿}, {t: 用}, {t: 无, caesura: true}, {t: 攸}, {t: 利}]   # 六三：拂頤，貞凶，十年勿用，无攸利。
+      - tokens: [{t: 六}, {t: 四}, {t: 顛, caesura: true}, {t: 頤}, {t: 吉}, {t: 虎, caesura: true}, {t: 視}, {t: 眈}, {t: 眈}, {t: 其, oc: 2, caesura: true}, {t: 欲}, {t: 逐}, {t: 逐}, {t: 无, caesura: true}, {t: 咎}]   # 六四：顛頤吉，虎視眈眈，其欲逐逐，无咎。
+      - tokens: [{t: 六}, {t: 五}, {t: 拂, caesura: true}, {t: 經}, {t: 居, caesura: true}, {t: 貞, oc: 2}, {t: 吉}, {t: 不, caesura: true}, {t: 可}, {t: 涉}, {t: 大}, {t: 川}]   # 六五：拂經，居貞吉，不可涉大川。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 由, caesura: true}, {t: 頤}, {t: 厲, caesura: true}, {t: 吉}, {t: 利, caesura: true}, {t: 涉}, {t: 大}, {t: 川}]   # 上九：由頤，厲吉，利涉大川。
+  - id: "28"
+    title: "Hexagram 28, Dà Guò 大過, great excess"
+    hexagram: "011110"
+    trigrams: {lower: "巽", upper: "兌"}
+    verify_in: sources/wikisource/28.txt
+    lines:
+      - tokens: [{t: 大}, {t: 過, oc: 3, tang: 2}, {t: 棟, caesura: true}, {t: 橈}, {t: 利, caesura: true}, {t: 有}, {t: 攸}, {t: 往}, {t: 亨, caesura: true}]   # 大過：棟橈，利有攸往，亨。
+      - tokens: [{t: 初}, {t: 六}, {t: 藉, caesura: true}, {t: 用}, {t: 白}, {t: 茅}, {t: 无, caesura: true}, {t: 咎}]   # 初六：藉用白茅，无咎。
+      - tokens: [{t: 九}, {t: 二}, {t: 枯, caesura: true}, {t: 楊}, {t: 生}, {t: 稊}, {t: 老, caesura: true}, {t: 夫}, {t: 得}, {t: 其, oc: 2}, {t: 女}, {t: 妻}, {t: 无, caesura: true}, {t: 不}, {t: 利}]   # 九二：枯楊生稊，老夫得其女妻，无不利。
+      - tokens: [{t: 九}, {t: 三}, {t: 棟, caesura: true}, {t: 橈}, {t: 凶, caesura: true}]   # 九三：棟橈，凶。
+      - tokens: [{t: 九}, {t: 四}, {t: 棟, caesura: true}, {t: 隆}, {t: 吉, caesura: true}, {t: 有, caesura: true}, {t: 它}, {t: 吝}]   # 九四：棟隆，吉。有它吝。
+      - tokens: [{t: 九}, {t: 五}, {t: 枯, caesura: true}, {t: 楊}, {t: 生}, {t: 華}, {t: 老, caesura: true}, {t: 婦}, {t: 得}, {t: 其, oc: 2}, {t: 士}, {t: 夫}, {t: 无, caesura: true}, {t: 咎}, {t: 无}, {t: 譽}]   # 九五：枯楊生華，老婦得其士夫，无咎无譽。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 過, oc: 3, tang: 2, caesura: true}, {t: 涉}, {t: 滅}, {t: 頂}, {t: 凶, caesura: true}, {t: 无, caesura: true}, {t: 咎}]   # 上六：過涉滅頂，凶，无咎。
+  - id: "29"
+    title: "Hexagram 29, Kǎn 坎, the pit"
+    hexagram: "010010"
+    trigrams: {lower: "坎", upper: "坎"}
+    verify_in: sources/wikisource/29.txt
+    lines:
+      - tokens: [{t: 習}, {t: 坎}, {t: 有, caesura: true}, {t: 孚}, {t: 維, caesura: true}, {t: 心}, {t: 亨}, {t: 行, oc: 2, caesura: true}, {t: 有}, {t: 尚}]   # 習坎：有孚，維心亨。行有尚。
+      - tokens: [{t: 初}, {t: 六}, {t: 習, caesura: true}, {t: 坎}, {t: 入, caesura: true}, {t: 于}, {t: 坎}, {t: 窞}, {t: 凶, caesura: true}]   # 初六：習坎，入于坎窞，凶。
+      - tokens: [{t: 九}, {t: 二}, {t: 坎, caesura: true}, {t: 有}, {t: 險}, {t: 求, caesura: true}, {t: 小}, {t: 得}]   # 九二：坎有險，求小得。
+      - tokens: [{t: 六}, {t: 三}, {t: 來, oc: 2, caesura: true}, {t: 之}, {t: 坎}, {t: 坎}, {t: 險, caesura: true}, {t: 且}, {t: 枕}, {t: 入, caesura: true}, {t: 于}, {t: 坎}, {t: 窞}, {t: 勿, caesura: true}, {t: 用}]   # 六三：來之坎坎，險且枕，入于坎窞，勿用。
+      - tokens: [{t: 六}, {t: 四}, {t: 尊, caesura: true}, {t: 酒}, {t: 簋}, {t: 貳, caesura: true}, {t: 用}, {t: 缶}, {t: 内, caesura: true}, {t: 約}, {t: 自}, {t: 牖}, {t: 終, caesura: true}, {t: 无}, {t: 咎}]   # 六四：尊酒簋，貳用缶。内約自牖，終无咎。
+      - tokens: [{t: 九}, {t: 五}, {t: 坎, caesura: true}, {t: 不}, {t: 盈}, {t: 禔, caesura: true}, {t: 既}, {t: 平}, {t: 无, caesura: true}, {t: 咎}]   # 九五：坎不盈，禔既平，无咎。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 係, caesura: true}, {t: 用}, {t: 徽}, {t: 纆}, {t: 寘, caesura: true}, {t: 于}, {t: 叢}, {t: 棘}, {t: 三, caesura: true}, {t: 歲}, {t: 不}, {t: 得}, {t: 凶, caesura: true}]   # 上六：係用徽纆，寘于叢棘，三歲不得，凶。
+  - id: "30"
+    title: "Hexagram 30, Lí 離, attachment"
+    hexagram: "101101"
+    trigrams: {lower: "離", upper: "離"}
+    verify_in: sources/wikisource/30.txt
+    lines:
+      - tokens: [{t: 離}, {t: 利, caesura: true}, {t: 貞, oc: 2}, {t: 亨, caesura: true}, {t: 畜, oc: 4, mandarin: xù, caesura: true}, {t: 牝}, {t: 牛}, {t: 吉, caesura: true}]   # 離：利貞。亨。畜牝牛，吉。
+      - tokens: [{t: 初}, {t: 九}, {t: 履, caesura: true}, {t: 錯}, {t: 然}, {t: 敬, caesura: true}, {t: 之}, {t: 无}, {t: 咎}]   # 初九：履錯然，敬之无咎。
+      - tokens: [{t: 六}, {t: 二}, {t: 黃, caesura: true}, {t: 離}, {t: 元, caesura: true}, {t: 吉}]   # 六二：黃離，元吉。
+      - tokens: [{t: 九}, {t: 三}, {t: 日, caesura: true}, {t: 昃}, {t: 之}, {t: 離}, {t: 不, caesura: true}, {t: 鼓}, {t: 缶}, {t: 而}, {t: 歌}, {t: 則, caesura: true}, {t: 大}, {t: 耋}, {t: 之}, {t: 差}, {t: 凶, caesura: true}]   # 九三：日昃之離，不鼓缶而歌，則大耋之差，凶。
+      - tokens: [{t: 九}, {t: 四}, {t: 突, caesura: true}, {t: 如, oc: 2}, {t: 其, oc: 2}, {t: 來, oc: 2}, {t: 如, oc: 2}, {t: 焚, caesura: true}, {t: 如, oc: 2}, {t: 死, caesura: true}, {t: 如, oc: 2}, {t: 棄, caesura: true}, {t: 如, oc: 2}]   # 九四：突如其來如，焚如，死如，棄如。
+      - tokens: [{t: 六}, {t: 五}, {t: 出, caesura: true}, {t: 涕}, {t: 沱}, {t: 若}, {t: 戚, caesura: true}, {t: 嗟}, {t: 若}, {t: 吉, caesura: true}]   # 六五：出涕沱若，戚嗟若，吉。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 王, caesura: true}, {t: 用}, {t: 出}, {t: 征}, {t: 有, caesura: true}, {t: 嘉}, {t: 折}, {t: 首}, {t: 獲, caesura: true}, {t: 匪}, {t: 其, oc: 2}, {t: 醜}, {t: 无, caesura: true}, {t: 咎}]   # 上九：王用出征，有嘉折首，獲匪其醜，无咎。
+  - id: "31"
+    title: "Hexagram 31, Xián 咸, sensing"
+    hexagram: "001110"
+    trigrams: {lower: "艮", upper: "兌"}
+    verify_in: sources/wikisource/31.txt
+    lines:
+      - tokens: [{t: 咸}, {t: 亨, caesura: true}, {t: 利, caesura: true}, {t: 貞, oc: 2}, {t: 取, caesura: true}, {t: 女}, {t: 吉}]   # 咸：亨。利貞。取女吉。
+      - tokens: [{t: 初}, {t: 六}, {t: 咸, caesura: true}, {t: 其, oc: 2}, {t: 拇}]   # 初六：咸其拇。
+      - tokens: [{t: 六}, {t: 二}, {t: 咸, caesura: true}, {t: 其, oc: 2}, {t: 腓}, {t: 凶, caesura: true}, {t: 居, caesura: true}, {t: 吉}]   # 六二：咸其腓，凶，居吉。
+      - tokens: [{t: 九}, {t: 三}, {t: 咸, caesura: true}, {t: 其, oc: 2}, {t: 股}, {t: 執, caesura: true}, {t: 其, oc: 2}, {t: 隨}, {t: 往, caesura: true}, {t: 吝}]   # 九三：咸其股，執其隨，往吝。
+      - tokens: [{t: 九}, {t: 四}, {t: 貞, oc: 2, caesura: true}, {t: 吉}, {t: 悔}, {t: 亡}, {t: 憧, caesura: true}, {t: 憧}, {t: 往}, {t: 來, oc: 2}, {t: 朋, caesura: true}, {t: 從}, {t: 爾}, {t: 思}]   # 九四：貞吉悔亡，憧憧往來，朋從爾思。
+      - tokens: [{t: 九}, {t: 五}, {t: 咸, caesura: true}, {t: 其, oc: 2}, {t: 脢}, {t: 无, caesura: true}, {t: 悔}]   # 九五：咸其脢，无悔。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 咸, caesura: true}, {t: 其, oc: 2}, {t: 輔}, {t: 頰, caesura: true}, {t: 舌, caesura: true}]   # 上六：咸其輔，頰，舌。
+  - id: "32"
+    title: "Hexagram 32, Héng 恆, constancy"
+    hexagram: "011100"
+    trigrams: {lower: "巽", upper: "震"}
+    verify_in: sources/wikisource/32.txt
+    lines:
+      - tokens: [{t: 恆}, {t: 亨, caesura: true}, {t: 无, caesura: true}, {t: 咎}, {t: 利, caesura: true}, {t: 貞, oc: 2}, {t: 利, caesura: true}, {t: 有}, {t: 攸}, {t: 往}]   # 恆：亨，无咎。利貞，利有攸往。
+      - tokens: [{t: 初}, {t: 六}, {t: 浚, caesura: true}, {t: 恆}, {t: 貞, oc: 2, caesura: true}, {t: 凶}, {t: 无, caesura: true}, {t: 攸}, {t: 利}]   # 初六：浚恆，貞凶，无攸利。
+      - tokens: [{t: 九}, {t: 二}, {t: 悔, caesura: true}, {t: 亡}]   # 九二：悔亡。
+      - tokens: [{t: 九}, {t: 三}, {t: 不, caesura: true}, {t: 恆}, {t: 其, oc: 2}, {t: 德}, {t: 或, caesura: true}, {t: 承}, {t: 之}, {t: 羞}, {t: 貞, oc: 2, caesura: true}, {t: 吝}]   # 九三：不恆其德，或承之羞，貞吝。
+      - tokens: [{t: 九}, {t: 四}, {t: 田, caesura: true}, {t: 无}, {t: 禽}]   # 九四：田无禽。
+      - tokens: [{t: 六}, {t: 五}, {t: 恆, caesura: true}, {t: 其, oc: 2}, {t: 德}, {t: 貞, oc: 2, caesura: true}, {t: 婦, caesura: true}, {t: 人}, {t: 吉}, {t: 夫, caesura: true}, {t: 子, oc: 2}, {t: 凶}]   # 六五：恆其德，貞，婦人吉，夫子凶。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 震, caesura: true}, {t: 恆}, {t: 凶, caesura: true}]   # 上六：震恆，凶。
+  - id: "33"
+    title: "Hexagram 33, Dùn 遯, retreat"
+    hexagram: "001111"
+    trigrams: {lower: "艮", upper: "乾"}
+    verify_in: sources/wikisource/33.txt
+    lines:
+      - tokens: [{t: 遯}, {t: 亨, caesura: true}, {t: 小, caesura: true}, {t: 利}, {t: 貞, oc: 2}]   # 遯：亨。小利貞。
+      - tokens: [{t: 初}, {t: 六}, {t: 遯, caesura: true}, {t: 尾}, {t: 厲, caesura: true}, {t: 勿, caesura: true}, {t: 用}, {t: 有}, {t: 攸}, {t: 往}]   # 初六：遯尾，厲，勿用有攸往。
+      - tokens: [{t: 六}, {t: 二}, {t: 執, caesura: true}, {t: 之}, {t: 用}, {t: 黃}, {t: 牛}, {t: 之}, {t: 革}, {t: 莫, caesura: true}, {t: 之}, {t: 勝, mandarin: shēng}, {t: 說, mandarin: tuō}]   # 六二：執之用黃牛之革，莫之勝說。
+      - tokens: [{t: 九}, {t: 三}, {t: 係, caesura: true}, {t: 遯}, {t: 有, caesura: true}, {t: 疾}, {t: 厲}, {t: 畜, oc: 4, mandarin: xù, caesura: true}, {t: 臣}, {t: 妾}, {t: 吉}]   # 九三：係遯，有疾厲，畜臣妾吉。
+      - tokens: [{t: 九}, {t: 四}, {t: 好, oc: 2, mandarin: hào, caesura: true}, {t: 遯}, {t: 君}, {t: 子, oc: 2}, {t: 吉}, {t: 小, caesura: true}, {t: 人}, {t: 否}]   # 九四：好遯君子吉，小人否。
+      - tokens: [{t: 九}, {t: 五}, {t: 嘉, caesura: true}, {t: 遯}, {t: 貞, oc: 2, caesura: true}, {t: 吉}]   # 九五：嘉遯，貞吉。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 肥, caesura: true}, {t: 遯}, {t: 无, caesura: true}, {t: 不}, {t: 利}]   # 上九：肥遯，无不利。
+  - id: "34"
+    title: "Hexagram 34, Dà Zhuàng 大壯, great strength"
+    hexagram: "111100"
+    trigrams: {lower: "乾", upper: "震"}
+    verify_in: sources/wikisource/34.txt
+    lines:
+      - tokens: [{t: 大}, {t: 壯}, {t: 利, caesura: true}, {t: 貞, oc: 2}]   # 大壯：利貞。
+      - tokens: [{t: 初}, {t: 九}, {t: 壯, caesura: true}, {t: 于}, {t: 趾}, {t: 征, caesura: true}, {t: 凶}, {t: 有, caesura: true}, {t: 孚}]   # 初九：壯于趾，征凶，有孚。
+      - tokens: [{t: 九}, {t: 二}, {t: 貞, oc: 2, caesura: true}, {t: 吉}]   # 九二：貞吉。
+      - tokens: [{t: 九}, {t: 三}, {t: 小, caesura: true}, {t: 人}, {t: 用}, {t: 壯}, {t: 君, caesura: true}, {t: 子, oc: 2}, {t: 用}, {t: 罔}, {t: 貞, oc: 2, caesura: true}, {t: 厲}, {t: 羝, caesura: true}, {t: 羊}, {t: 觸}, {t: 藩}, {t: 羸, caesura: true}, {t: 其, oc: 2}, {t: 角}]   # 九三：小人用壯，君子用罔，貞厲。羝羊觸藩，羸其角。
+      - tokens: [{t: 九}, {t: 四}, {t: 貞, oc: 2, caesura: true}, {t: 吉}, {t: 悔}, {t: 亡}, {t: 藩, caesura: true}, {t: 決}, {t: 不}, {t: 羸}, {t: 壯, caesura: true}, {t: 于}, {t: 大}, {t: 轝}, {t: 之}, {t: 腹}]   # 九四：貞吉悔亡，藩決不羸，壯于大轝之腹。
+      - tokens: [{t: 六}, {t: 五}, {t: 喪, oc: 2, caesura: true}, {t: 羊}, {t: 于}, {t: 易}, {t: 无, caesura: true}, {t: 悔}]   # 六五：喪羊于易，无悔。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 羝, caesura: true}, {t: 羊}, {t: 觸}, {t: 藩}, {t: 不, caesura: true}, {t: 能}, {t: 退}, {t: 不, caesura: true}, {t: 能}, {t: 遂}, {t: 无, caesura: true}, {t: 攸}, {t: 利}, {t: 艱, caesura: true}, {t: 則}, {t: 吉}]   # 上六：羝羊觸藩，不能退，不能遂，无攸利，艱則吉。
+  - id: "35"
+    title: "Hexagram 35, Jìn 晉, advance"
+    hexagram: "000101"
+    trigrams: {lower: "坤", upper: "離"}
+    verify_in: sources/wikisource/35.txt
+    lines:
+      - tokens: [{t: 晉}, {t: 康, caesura: true}, {t: 侯}, {t: 用}, {t: 錫}, {t: 馬}, {t: 蕃}, {t: 庶}, {t: 晝, caesura: true}, {t: 日}, {t: 三}, {t: 接}]   # 晉：康侯用錫馬蕃庶，晝日三接。
+      - tokens: [{t: 初}, {t: 六}, {t: 晉, caesura: true}, {t: 如, oc: 2}, {t: 摧, caesura: true}, {t: 如, oc: 2}, {t: 貞, oc: 2, caesura: true}, {t: 吉}, {t: 罔, caesura: true}, {t: 孚}, {t: 裕, caesura: true}, {t: 无}, {t: 咎}]   # 初六：晉如，摧如，貞吉。罔孚，裕无咎。
+      - tokens: [{t: 六}, {t: 二}, {t: 晉, caesura: true}, {t: 如, oc: 2}, {t: 愁, caesura: true}, {t: 如, oc: 2}, {t: 貞, oc: 2, caesura: true}, {t: 吉}, {t: 受, caesura: true}, {t: 茲}, {t: 介}, {t: 福}, {t: 于, caesura: true}, {t: 其, oc: 2}, {t: 王}, {t: 母}]   # 六二：晉如，愁如，貞吉。受茲介福，于其王母。
+      - tokens: [{t: 六}, {t: 三}, {t: 眾, caesura: true}, {t: 允}, {t: 悔, caesura: true}, {t: 亡}]   # 六三：眾允，悔亡。
+      - tokens: [{t: 九}, {t: 四}, {t: 晉, caesura: true}, {t: 如, oc: 2}, {t: 鼫}, {t: 鼠}, {t: 貞, oc: 2, caesura: true}, {t: 厲}]   # 九四：晉如鼫鼠，貞厲。
+      - tokens: [{t: 六}, {t: 五}, {t: 悔, caesura: true}, {t: 亡}, {t: 矢, caesura: true}, {t: 得}, {t: 勿}, {t: 恤}, {t: 往, caesura: true}, {t: 吉}, {t: 无}, {t: 不}, {t: 利}]   # 六五：悔亡，矢得勿恤，往吉无不利。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 晉, caesura: true}, {t: 其, oc: 2}, {t: 角}, {t: 維, caesura: true}, {t: 用}, {t: 伐}, {t: 邑}, {t: 厲, caesura: true}, {t: 吉}, {t: 无}, {t: 咎}, {t: 貞, oc: 2, caesura: true}, {t: 吝}]   # 上九：晉其角，維用伐邑，厲吉无咎，貞吝。
+  - id: "36"
+    title: "Hexagram 36, Míng Yí 明夷, the bright wounded"
+    hexagram: "101000"
+    trigrams: {lower: "離", upper: "坤"}
+    verify_in: sources/wikisource/36.txt
+    lines:
+      - tokens: [{t: 明}, {t: 夷}, {t: 利, caesura: true}, {t: 艱}, {t: 貞, oc: 2}]   # 明夷：利艱貞。
+      - tokens: [{t: 初}, {t: 九}, {t: 明, caesura: true}, {t: 夷}, {t: 于}, {t: 飛}, {t: 垂, caesura: true}, {t: 其, oc: 2}, {t: 翼}, {t: 君, caesura: true}, {t: 子, oc: 2}, {t: 于}, {t: 行, oc: 2}, {t: 三, caesura: true}, {t: 日}, {t: 不}, {t: 食}, {t: 有, caesura: true}, {t: 攸}, {t: 往}, {t: 主, caesura: true}, {t: 人}, {t: 有}, {t: 言}]   # 初九：明夷于飛，垂其翼。君子于行，三日不食，有攸往，主人有言。
+      - tokens: [{t: 六}, {t: 二}, {t: 明, caesura: true}, {t: 夷}, {t: 夷, caesura: true}, {t: 于}, {t: 左}, {t: 股}, {t: 用, caesura: true}, {t: 拯}, {t: 馬}, {t: 壯}, {t: 吉, caesura: true}]   # 六二：明夷，夷于左股，用拯馬壯，吉。
+      - tokens: [{t: 九}, {t: 三}, {t: 明, caesura: true}, {t: 夷}, {t: 于}, {t: 南}, {t: 狩}, {t: 得, caesura: true}, {t: 其, oc: 2}, {t: 大}, {t: 首}, {t: 不, caesura: true}, {t: 可}, {t: 疾}, {t: 貞, oc: 2}]   # 九三：明夷于南狩，得其大首，不可疾貞。
+      - tokens: [{t: 六}, {t: 四}, {t: 入, caesura: true}, {t: 于}, {t: 左}, {t: 腹}, {t: 獲, caesura: true}, {t: 明}, {t: 夷}, {t: 之}, {t: 心}, {t: 于, caesura: true}, {t: 出}, {t: 門}, {t: 庭}]   # 六四：入于左腹，獲明夷之心，于出門庭。
+      - tokens: [{t: 六}, {t: 五}, {t: 箕, caesura: true}, {t: 子, oc: 2}, {t: 之}, {t: 明}, {t: 夷}, {t: 利, caesura: true}, {t: 貞, oc: 2}]   # 六五：箕子之明夷，利貞。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 不, caesura: true}, {t: 明}, {t: 晦}, {t: 初, caesura: true}, {t: 登}, {t: 于}, {t: 天}, {t: 後, caesura: true}, {t: 入}, {t: 于}, {t: 地}]   # 上六：不明晦，初登于天，後入于地。
+  - id: "37"
+    title: "Hexagram 37, Jiā Rén 家人, the household"
+    hexagram: "101011"
+    trigrams: {lower: "離", upper: "巽"}
+    verify_in: sources/wikisource/37.txt
+    lines:
+      - tokens: [{t: 家}, {t: 人}, {t: 利, caesura: true}, {t: 女}, {t: 貞, oc: 2}]   # 家人：利女貞。
+      - tokens: [{t: 初}, {t: 九}, {t: 閑, caesura: true}, {t: 有}, {t: 家}, {t: 悔, caesura: true}, {t: 亡}]   # 初九：閑有家，悔亡。
+      - tokens: [{t: 六}, {t: 二}, {t: 无, caesura: true}, {t: 攸}, {t: 遂}, {t: 在, caesura: true}, {t: 中}, {t: 饋}, {t: 貞, oc: 2, caesura: true}, {t: 吉}]   # 六二：无攸遂，在中饋，貞吉。
+      - tokens: [{t: 九}, {t: 三}, {t: 家, caesura: true}, {t: 人}, {t: 嗃}, {t: 嗃}, {t: 悔, caesura: true}, {t: 厲}, {t: 吉}, {t: 婦, caesura: true}, {t: 子, oc: 2}, {t: 嘻}, {t: 嘻}, {t: 終, caesura: true}, {t: 吝}]   # 九三：家人嗃嗃，悔厲吉；婦子嘻嘻，終吝。
+      - tokens: [{t: 六}, {t: 四}, {t: 富, caesura: true}, {t: 家}, {t: 大, caesura: true}, {t: 吉}]   # 六四：富家，大吉。
+      - tokens: [{t: 九}, {t: 五}, {t: 王, caesura: true}, {t: 假}, {t: 有}, {t: 家}, {t: 勿, caesura: true}, {t: 恤}, {t: 吉, caesura: true}]   # 九五：王假有家，勿恤。吉。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 有, caesura: true}, {t: 孚}, {t: 威}, {t: 如, oc: 2}, {t: 終, caesura: true}, {t: 吉}]   # 上九：有孚威如，終吉。
+  - id: "38"
+    title: "Hexagram 38, Kuí 睽, opposition"
+    hexagram: "110101"
+    trigrams: {lower: "兌", upper: "離"}
+    verify_in: sources/wikisource/38.txt
+    lines:
+      - tokens: [{t: 睽}, {t: 小, caesura: true}, {t: 事}, {t: 吉}]   # 睽：小事吉。
+      - tokens: [{t: 初}, {t: 九}, {t: 悔, caesura: true}, {t: 亡}, {t: 喪, oc: 2, caesura: true}, {t: 馬}, {t: 勿}, {t: 逐}, {t: 自, caesura: true}, {t: 復, oc: 2}, {t: 見, caesura: true}, {t: 惡}, {t: 人}, {t: 无}, {t: 咎}]   # 初九：悔亡，喪馬勿逐，自復；見惡人无咎。
+      - tokens: [{t: 九}, {t: 二}, {t: 遇, caesura: true}, {t: 主}, {t: 于}, {t: 巷}, {t: 无, caesura: true}, {t: 咎}]   # 九二：遇主于巷，无咎。
+      - tokens: [{t: 六}, {t: 三}, {t: 見, caesura: true}, {t: 輿}, {t: 曳}, {t: 其, oc: 2, caesura: true}, {t: 牛}, {t: 掣}, {t: 其, oc: 2, caesura: true}, {t: 人}, {t: 天}, {t: 且}, {t: 劓}, {t: 无, caesura: true}, {t: 初}, {t: 有}, {t: 終}]   # 六三：見輿曳，其牛掣，其人天且劓，无初有終。
+      - tokens: [{t: 九}, {t: 四}, {t: 睽, caesura: true}, {t: 孤}, {t: 遇, caesura: true}, {t: 元}, {t: 夫}, {t: 交, caesura: true}, {t: 孚}, {t: 厲, caesura: true}, {t: 无}, {t: 咎}]   # 九四：睽孤，遇元夫，交孚，厲无咎。
+      - tokens: [{t: 六}, {t: 五}, {t: 悔, caesura: true}, {t: 亡}, {t: 厥, caesura: true}, {t: 宗}, {t: 噬}, {t: 膚}, {t: 往, caesura: true}, {t: 何}, {t: 咎}]   # 六五：悔亡，厥宗噬膚，往何咎。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 睽, caesura: true}, {t: 孤}, {t: 見, caesura: true}, {t: 豕}, {t: 負}, {t: 涂}, {t: 載, oc: 2, tang: 3, caesura: true}, {t: 鬼}, {t: 一}, {t: 車}, {t: 先, caesura: true}, {t: 張}, {t: 之}, {t: 弧}, {t: 後, caesura: true}, {t: 說, mandarin: tuō}, {t: 之}, {t: 弧}, {t: 匪, caesura: true}, {t: 寇}, {t: 婚}, {t: 媾}, {t: 往, caesura: true}, {t: 遇}, {t: 雨}, {t: 則}, {t: 吉}]   # 上九：睽孤，見豕負涂，載鬼一車，先張之弧，後說之弧，匪寇婚媾，往遇雨則吉。
+  - id: "39"
+    title: "Hexagram 39, Jiǎn 蹇, limping"
+    hexagram: "001010"
+    trigrams: {lower: "艮", upper: "坎"}
+    verify_in: sources/wikisource/39.txt
+    lines:
+      - tokens: [{t: 蹇}, {t: 利, caesura: true}, {t: 西}, {t: 南}, {t: 不, caesura: true}, {t: 利}, {t: 東}, {t: 北}, {t: 利, caesura: true}, {t: 見}, {t: 大}, {t: 人}, {t: 貞, oc: 2, caesura: true}, {t: 吉}]   # 蹇：利西南，不利東北；利見大人，貞吉。
+      - tokens: [{t: 初}, {t: 六}, {t: 往, caesura: true}, {t: 蹇}, {t: 來, oc: 2, caesura: true}, {t: 譽}]   # 初六：往蹇，來譽。
+      - tokens: [{t: 六}, {t: 二}, {t: 王, caesura: true}, {t: 臣}, {t: 蹇}, {t: 蹇}, {t: 匪, caesura: true}, {t: 躬}, {t: 之}, {t: 故}]   # 六二：王臣蹇蹇，匪躬之故。
+      - tokens: [{t: 九}, {t: 三}, {t: 往, caesura: true}, {t: 蹇}, {t: 來, oc: 2}, {t: 反}]   # 九三：往蹇來反。
+      - tokens: [{t: 六}, {t: 四}, {t: 往, caesura: true}, {t: 蹇}, {t: 來, oc: 2}, {t: 連}]   # 六四：往蹇來連。
+      - tokens: [{t: 九}, {t: 五}, {t: 大, caesura: true}, {t: 蹇}, {t: 朋}, {t: 來, oc: 2}]   # 九五：大蹇朋來。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 往, caesura: true}, {t: 蹇}, {t: 來, oc: 2}, {t: 碩}, {t: 吉, caesura: true}, {t: 利, caesura: true}, {t: 見}, {t: 大}, {t: 人}]   # 上六：往蹇來碩，吉；利見大人。
+  - id: "40"
+    title: "Hexagram 40, Xiè 解, release"
+    hexagram: "010100"
+    trigrams: {lower: "坎", upper: "震"}
+    verify_in: sources/wikisource/40.txt
+    lines:
+      - tokens: [{t: 解, oc: 2, mandarin: xiè}, {t: 利, caesura: true}, {t: 西}, {t: 南}, {t: 无, caesura: true}, {t: 所}, {t: 往}, {t: 其, oc: 2, caesura: true}, {t: 來, oc: 2}, {t: 復, oc: 2}, {t: 吉}, {t: 有, caesura: true}, {t: 攸}, {t: 往}, {t: 夙, caesura: true}, {t: 吉}]   # 解：利西南，无所往，其來復吉。有攸往，夙吉。
+      - tokens: [{t: 初}, {t: 六}, {t: 无, caesura: true}, {t: 咎}]   # 初六：无咎。
+      - tokens: [{t: 九}, {t: 二}, {t: 田, caesura: true}, {t: 獲}, {t: 三}, {t: 狐}, {t: 得, caesura: true}, {t: 黃}, {t: 矢}, {t: 貞, oc: 2, caesura: true}, {t: 吉}]   # 九二：田獲三狐，得黃矢，貞吉。
+      - tokens: [{t: 六}, {t: 三}, {t: 負, caesura: true}, {t: 且}, {t: 乘}, {t: 致, caesura: true}, {t: 寇}, {t: 至}, {t: 貞, oc: 2, caesura: true}, {t: 吝}]   # 六三：負且乘，致寇至，貞吝。
+      - tokens: [{t: 九}, {t: 四}, {t: 解, caesura: true}, {t: 而}, {t: 拇}, {t: 朋, caesura: true}, {t: 至}, {t: 斯}, {t: 孚}]   # 九四：解而拇，朋至斯孚。
+      - tokens: [{t: 六}, {t: 五}, {t: 君, caesura: true}, {t: 子, oc: 2}, {t: 惟}, {t: 有}, {t: 解}, {t: 吉, caesura: true}, {t: 有, caesura: true}, {t: 孚}, {t: 于}, {t: 小}, {t: 人}]   # 六五：君子惟有解，吉；有孚于小人。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 公, caesura: true}, {t: 用}, {t: 射}, {t: 隼}, {t: 于, caesura: true}, {t: 高}, {t: 墉}, {t: 之}, {t: 上, oc: 3}, {t: 獲, caesura: true}, {t: 之}, {t: 无, caesura: true}, {t: 不}, {t: 利}]   # 上六：公用射隼，于高墉之上，獲之，无不利。
+  - id: "41"
+    title: "Hexagram 41, Sǔn 損, decrease"
+    hexagram: "110001"
+    trigrams: {lower: "兌", upper: "艮"}
+    verify_in: sources/wikisource/41.txt
+    lines:
+      - tokens: [{t: 損}, {t: 有, caesura: true}, {t: 孚}, {t: 元, caesura: true}, {t: 吉}, {t: 无, caesura: true}, {t: 咎}, {t: 可, caesura: true}, {t: 貞, oc: 2}, {t: 利, caesura: true}, {t: 有}, {t: 攸}, {t: 往}, {t: 曷, caesura: true}, {t: 之}, {t: 用}, {t: 二, caesura: true}, {t: 簋}, {t: 可}, {t: 用}, {t: 享}]   # 損：有孚，元吉。无咎，可貞，利有攸往。曷之用？二簋可用享。
+      - tokens: [{t: 初}, {t: 九}, {t: 祀, caesura: true}, {t: 事}, {t: 遄}, {t: 往}, {t: 无, caesura: true}, {t: 咎}, {t: 酌, caesura: true}, {t: 損}, {t: 之}]   # 初九：祀事遄往，无咎，酌損之。
+      - tokens: [{t: 九}, {t: 二}, {t: 利, caesura: true}, {t: 貞, oc: 2}, {t: 征, caesura: true}, {t: 凶}, {t: 弗, caesura: true}, {t: 損}, {t: 益}, {t: 之}]   # 九二：利貞，征凶，弗損益之。
+      - tokens: [{t: 六}, {t: 三}, {t: 三, caesura: true}, {t: 人}, {t: 行, oc: 2}, {t: 則, caesura: true}, {t: 損}, {t: 一}, {t: 人}, {t: 一, caesura: true}, {t: 人}, {t: 行, oc: 2}, {t: 則, caesura: true}, {t: 得}, {t: 其, oc: 2}, {t: 友}]   # 六三：三人行，則損一人；一人行，則得其友。
+      - tokens: [{t: 六}, {t: 四}, {t: 損, caesura: true}, {t: 其, oc: 2}, {t: 疾}, {t: 使, caesura: true}, {t: 遄}, {t: 有}, {t: 喜}, {t: 无, caesura: true}, {t: 咎}]   # 六四：損其疾，使遄有喜，无咎。
+      - tokens: [{t: 六}, {t: 五}, {t: 或, caesura: true}, {t: 益}, {t: 之}, {t: 十, caesura: true}, {t: 朋}, {t: 之}, {t: 龜}, {t: 弗}, {t: 克}, {t: 違}, {t: 元, caesura: true}, {t: 吉}]   # 六五：或益之，十朋之龜弗克違，元吉。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 弗, caesura: true}, {t: 損}, {t: 益}, {t: 之}, {t: 无, caesura: true}, {t: 咎}, {t: 貞, oc: 2, caesura: true}, {t: 吉}, {t: 利, caesura: true}, {t: 有}, {t: 攸}, {t: 往}, {t: 得, caesura: true}, {t: 臣}, {t: 无}, {t: 家}]   # 上九：弗損益之，无咎，貞吉，利有攸往，得臣无家。
+  - id: "42"
+    title: "Hexagram 42, Yì 益, increase"
+    hexagram: "100011"
+    trigrams: {lower: "震", upper: "巽"}
+    verify_in: sources/wikisource/42.txt
+    lines:
+      - tokens: [{t: 益}, {t: 利, caesura: true}, {t: 有}, {t: 攸}, {t: 往}, {t: 利, caesura: true}, {t: 涉}, {t: 大}, {t: 川}]   # 益：利有攸往。利涉大川。
+      - tokens: [{t: 初}, {t: 九}, {t: 利, caesura: true}, {t: 用}, {t: 為, mandarin: wéi}, {t: 大}, {t: 作}, {t: 元, caesura: true}, {t: 吉}, {t: 无, caesura: true}, {t: 咎}]   # 初九：利用為大作，元吉，无咎。
+      - tokens: [{t: 六}, {t: 二}, {t: 或, caesura: true}, {t: 益}, {t: 之}, {t: 十, caesura: true}, {t: 朋}, {t: 之}, {t: 龜}, {t: 弗}, {t: 克}, {t: 違}, {t: 永, caesura: true}, {t: 貞, oc: 2}, {t: 吉}, {t: 王, caesura: true}, {t: 用}, {t: 享}, {t: 于}, {t: 帝}, {t: 吉, caesura: true}]   # 六二：或益之，十朋之龜弗克違，永貞吉。王用享于帝，吉。
+      - tokens: [{t: 六}, {t: 三}, {t: 益, caesura: true}, {t: 之}, {t: 用}, {t: 凶}, {t: 事}, {t: 无, caesura: true}, {t: 咎}, {t: 有, caesura: true}, {t: 孚}, {t: 中}, {t: 行, oc: 2}, {t: 告, caesura: true}, {t: 公}, {t: 用}, {t: 圭}]   # 六三：益之用凶事，无咎。有孚中行，告公用圭。
+      - tokens: [{t: 六}, {t: 四}, {t: 中, caesura: true}, {t: 行, oc: 2}, {t: 告, caesura: true}, {t: 公}, {t: 從}, {t: 利, caesura: true}, {t: 用}, {t: 為, mandarin: wéi}, {t: 依}, {t: 遷}, {t: 國}]   # 六四：中行，告公從。利用為依遷國。
+      - tokens: [{t: 九}, {t: 五}, {t: 有, caesura: true}, {t: 孚}, {t: 惠}, {t: 心}, {t: 勿, caesura: true}, {t: 問}, {t: 元}, {t: 吉}, {t: 有, caesura: true}, {t: 孚}, {t: 惠}, {t: 我}, {t: 德}]   # 九五：有孚惠心，勿問元吉。有孚惠我德。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 莫, caesura: true}, {t: 益}, {t: 之}, {t: 或, caesura: true}, {t: 擊}, {t: 之}, {t: 立, caesura: true}, {t: 心}, {t: 勿}, {t: 恆}, {t: 凶, caesura: true}]   # 上九：莫益之，或擊之，立心勿恆，凶。
+  - id: "43"
+    title: "Hexagram 43, Guài 夬, parting"
+    hexagram: "111110"
+    trigrams: {lower: "乾", upper: "兌"}
+    verify_in: sources/wikisource/43.txt
+    lines:
+      - tokens: [{t: 夬}, {t: 揚, caesura: true}, {t: 于}, {t: 王}, {t: 庭}, {t: 孚, caesura: true}, {t: 號, mandarin: háo}, {t: 有, caesura: true}, {t: 厲}, {t: 告, caesura: true}, {t: 自}, {t: 邑}, {t: 不, caesura: true}, {t: 利}, {t: 即}, {t: 戎}, {t: 利, caesura: true}, {t: 有}, {t: 攸}, {t: 往}]   # 夬：揚于王庭，孚號，有厲，告自邑，不利即戎，利有攸往。
+      - tokens: [{t: 初}, {t: 九}, {t: 壯, caesura: true}, {t: 于}, {t: 前}, {t: 趾}, {t: 往, caesura: true}, {t: 不}, {t: 勝, oc: 2}, {t: 為, mandarin: wéi}, {t: 咎}]   # 初九：壯于前趾，往不勝為咎。
+      - tokens: [{t: 九}, {t: 二}, {t: 惕, caesura: true}, {t: 號, mandarin: háo}, {t: 莫, caesura: true}, {t: 夜}, {t: 有}, {t: 戎}, {t: 勿, caesura: true}, {t: 恤}]   # 九二：惕號，莫夜有戎，勿恤。
+      - tokens: [{t: 九}, {t: 三}, {t: 壯, caesura: true}, {t: 于}, {t: 頄}, {t: 有, caesura: true}, {t: 凶}, {t: 君, caesura: true}, {t: 子, oc: 2}, {t: 夬}, {t: 夬}, {t: 獨, caesura: true}, {t: 行, oc: 2}, {t: 遇}, {t: 雨}, {t: 若, caesura: true}, {t: 濡}, {t: 有}, {t: 慍}, {t: 无, caesura: true}, {t: 咎}]   # 九三：壯于頄，有凶。君子夬夬，獨行遇雨，若濡有慍，无咎。
+      - tokens: [{t: 九}, {t: 四}, {t: 臀, caesura: true}, {t: 无}, {t: 膚}, {t: 其, oc: 2, caesura: true}, {t: 行, oc: 2}, {t: 次}, {t: 且}, {t: 牽, caesura: true}, {t: 羊}, {t: 悔}, {t: 亡}, {t: 聞, caesura: true}, {t: 言}, {t: 不}, {t: 信}]   # 九四：臀无膚，其行次且。牽羊悔亡，聞言不信。
+      - tokens: [{t: 九}, {t: 五}, {t: 莧, caesura: true}, {t: 陸}, {t: 夬}, {t: 夬}, {t: 中, caesura: true}, {t: 行, oc: 2}, {t: 无}, {t: 咎}]   # 九五：莧陸夬夬，中行无咎。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 无, caesura: true}, {t: 號, mandarin: háo}, {t: 終, caesura: true}, {t: 有}, {t: 凶}]   # 上六：无號，終有凶。
+  - id: "44"
+    title: "Hexagram 44, Gòu 姤, meeting"
+    hexagram: "011111"
+    trigrams: {lower: "巽", upper: "乾"}
+    verify_in: sources/wikisource/44.txt
+    lines:
+      - tokens: [{t: 姤}, {t: 女, caesura: true}, {t: 壯}, {t: 勿, caesura: true}, {t: 用}, {t: 取}, {t: 女}]   # 姤：女壯，勿用取女。
+      - tokens: [{t: 初}, {t: 六}, {t: 系, caesura: true}, {t: 于}, {t: 金}, {t: 柅}, {t: 貞, oc: 2, caesura: true}, {t: 吉}, {t: 有, caesura: true}, {t: 攸}, {t: 往}, {t: 見, caesura: true}, {t: 凶}, {t: 羸, caesura: true}, {t: 豕}, {t: 孚, caesura: true}, {t: 蹢, caesura: true}, {t: 躅}]   # 初六：系于金柅，貞吉，有攸往，見凶，羸豕，孚，蹢躅。
+      - tokens: [{t: 九}, {t: 二}, {t: 包, caesura: true}, {t: 有}, {t: 魚}, {t: 无, caesura: true}, {t: 咎}, {t: 不, caesura: true}, {t: 利}, {t: 賓}]   # 九二：包有魚，无咎，不利賓。
+      - tokens: [{t: 九}, {t: 三}, {t: 臀, caesura: true}, {t: 无}, {t: 膚}, {t: 其, oc: 2, caesura: true}, {t: 行, oc: 2}, {t: 次}, {t: 且}, {t: 厲, caesura: true}, {t: 无, caesura: true}, {t: 大}, {t: 咎}]   # 九三：臀无膚，其行次且，厲，无大咎。
+      - tokens: [{t: 九}, {t: 四}, {t: 包, caesura: true}, {t: 无}, {t: 魚}, {t: 起, caesura: true}, {t: 凶}]   # 九四：包无魚，起凶。
+      - tokens: [{t: 九}, {t: 五}, {t: 以, caesura: true}, {t: 杞}, {t: 包}, {t: 瓜}, {t: 含, caesura: true}, {t: 章}, {t: 有, caesura: true}, {t: 隕}, {t: 自}, {t: 天}]   # 九五：以杞包瓜，含章，有隕自天。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 姤, caesura: true}, {t: 其, oc: 2}, {t: 角}, {t: 吝, caesura: true}, {t: 无, caesura: true}, {t: 咎}]   # 上九：姤其角，吝，无咎。
+  - id: "45"
+    title: "Hexagram 45, Cuì 萃, gathering"
+    hexagram: "000110"
+    trigrams: {lower: "坤", upper: "兌"}
+    verify_in: sources/wikisource/45.txt
+    lines:
+      - tokens: [{t: 萃}, {t: 王, caesura: true}, {t: 假}, {t: 有}, {t: 廟}, {t: 利, caesura: true}, {t: 見}, {t: 大}, {t: 人}, {t: 亨, caesura: true}, {t: 利, caesura: true}, {t: 貞, oc: 2}, {t: 用, caesura: true}, {t: 大}, {t: 牲}, {t: 吉}, {t: 利, caesura: true}, {t: 有}, {t: 攸}, {t: 往}]   # 萃：王假有廟，利見大人，亨。利貞。用大牲吉，利有攸往。
+      - tokens: [{t: 初}, {t: 六}, {t: 有, caesura: true}, {t: 孚}, {t: 不}, {t: 終}, {t: 乃, caesura: true}, {t: 亂}, {t: 乃}, {t: 萃}, {t: 若, caesura: true}, {t: 號, mandarin: háo}, {t: 一}, {t: 握}, {t: 為, mandarin: wéi}, {t: 笑}, {t: 勿, caesura: true}, {t: 恤}, {t: 往, caesura: true}, {t: 无}, {t: 咎}]   # 初六：有孚不終，乃亂乃萃，若號一握為笑，勿恤，往无咎。
+      - tokens: [{t: 六}, {t: 二}, {t: 引, caesura: true}, {t: 吉}, {t: 无, caesura: true}, {t: 咎}, {t: 孚, caesura: true}, {t: 乃}, {t: 利}, {t: 用}, {t: 禴}]   # 六二：引吉，无咎，孚乃利用禴。
+      - tokens: [{t: 六}, {t: 三}, {t: 萃, caesura: true}, {t: 如, oc: 2}, {t: 嗟, caesura: true}, {t: 如, oc: 2}, {t: 无, caesura: true}, {t: 攸}, {t: 利}, {t: 往, caesura: true}, {t: 无}, {t: 咎}, {t: 小, caesura: true}, {t: 吝}]   # 六三：萃如，嗟如，无攸利，往无咎，小吝。
+      - tokens: [{t: 九}, {t: 四}, {t: 大, caesura: true}, {t: 吉}, {t: 无, caesura: true}, {t: 咎}]   # 九四：大吉，无咎。
+      - tokens: [{t: 九}, {t: 五}, {t: 萃, caesura: true}, {t: 有}, {t: 位}, {t: 无, caesura: true}, {t: 咎}, {t: 匪, caesura: true}, {t: 孚}, {t: 元, caesura: true}, {t: 永}, {t: 貞, oc: 2}, {t: 悔, caesura: true}, {t: 亡}]   # 九五：萃有位，无咎。匪孚，元永貞，悔亡。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 齎, caesura: true}, {t: 資}, {t: 涕}, {t: 洟}, {t: 无, caesura: true}, {t: 咎}]   # 上六：齎資涕洟，无咎。
+  - id: "46"
+    title: "Hexagram 46, Shēng 升, rising"
+    hexagram: "011000"
+    trigrams: {lower: "巽", upper: "坤"}
+    verify_in: sources/wikisource/46.txt
+    lines:
+      - tokens: [{t: 升}, {t: 元, caesura: true}, {t: 亨}, {t: 用, caesura: true}, {t: 見}, {t: 大}, {t: 人}, {t: 勿, caesura: true}, {t: 恤}, {t: 南, caesura: true}, {t: 征}, {t: 吉}]   # 升：元亨，用見大人，勿恤，南征吉。
+      - tokens: [{t: 初}, {t: 六}, {t: 允, caesura: true}, {t: 升}, {t: 大, caesura: true}, {t: 吉}]   # 初六：允升，大吉。
+      - tokens: [{t: 九}, {t: 二}, {t: 孚, caesura: true}, {t: 乃}, {t: 利}, {t: 用}, {t: 禴}, {t: 无, caesura: true}, {t: 咎}]   # 九二：孚乃利用禴，无咎。
+      - tokens: [{t: 九}, {t: 三}, {t: 升, caesura: true}, {t: 虛}, {t: 邑}]   # 九三：升虛邑。
+      - tokens: [{t: 六}, {t: 四}, {t: 王, caesura: true}, {t: 用}, {t: 享}, {t: 于}, {t: 岐}, {t: 山}, {t: 吉, caesura: true}, {t: 无}, {t: 咎}]   # 六四：王用享于岐山，吉无咎。
+      - tokens: [{t: 六}, {t: 五}, {t: 貞, oc: 2, caesura: true}, {t: 吉}, {t: 升, caesura: true}, {t: 階}]   # 六五：貞吉，升階。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 冥, caesura: true}, {t: 升}, {t: 利, caesura: true}, {t: 于}, {t: 不}, {t: 息}, {t: 之}, {t: 貞, oc: 2}]   # 上六：冥升，利于不息之貞。
+  - id: "47"
+    title: "Hexagram 47, Kùn 困, confinement"
+    hexagram: "010110"
+    trigrams: {lower: "坎", upper: "兌"}
+    verify_in: sources/wikisource/47.txt
+    lines:
+      - tokens: [{t: 困}, {t: 亨, caesura: true}, {t: 貞, oc: 2, caesura: true}, {t: 大}, {t: 人}, {t: 吉}, {t: 无, caesura: true}, {t: 咎}, {t: 有, caesura: true}, {t: 言}, {t: 不}, {t: 信}]   # 困：亨，貞大人吉，无咎，有言不信。
+      - tokens: [{t: 初}, {t: 六}, {t: 臀, caesura: true}, {t: 困}, {t: 于}, {t: 株}, {t: 木}, {t: 入, caesura: true}, {t: 于}, {t: 幽}, {t: 谷}, {t: 三, caesura: true}, {t: 歲}, {t: 不}, {t: 覿}]   # 初六：臀困于株木，入于幽谷，三歲不覿。
+      - tokens: [{t: 九}, {t: 二}, {t: 困, caesura: true}, {t: 于}, {t: 酒}, {t: 食}, {t: 朱, caesura: true}, {t: 紱}, {t: 方}, {t: 來, oc: 2}, {t: 利, caesura: true}, {t: 用}, {t: 亨, oc: 3, mandarin: xiǎng}, {t: 祀}, {t: 征, caesura: true}, {t: 凶}, {t: 无, caesura: true}, {t: 咎}]   # 九二：困于酒食，朱紱方來，利用亨祀，征凶，无咎。
+      - tokens: [{t: 六}, {t: 三}, {t: 困, caesura: true}, {t: 于}, {t: 石}, {t: 據, caesura: true}, {t: 于}, {t: 蒺}, {t: 蔾}, {t: 入, caesura: true}, {t: 于}, {t: 其, oc: 2}, {t: 宮}, {t: 不, caesura: true}, {t: 見}, {t: 其, oc: 2}, {t: 妻}, {t: 凶, caesura: true}]   # 六三：困于石，據于蒺蔾，入于其宮，不見其妻，凶。
+      - tokens: [{t: 九}, {t: 四}, {t: 來, oc: 2, caesura: true}, {t: 荼}, {t: 荼}, {t: 困, caesura: true}, {t: 于}, {t: 金}, {t: 轝}, {t: 吝, caesura: true}, {t: 有, caesura: true}, {t: 終}]   # 九四：來荼荼，困于金轝，吝，有終。
+      - tokens: [{t: 九}, {t: 五}, {t: 劓, caesura: true}, {t: 刖}, {t: 困, caesura: true}, {t: 于}, {t: 赤}, {t: 紱}, {t: 乃, caesura: true}, {t: 徐}, {t: 有}, {t: 說, mandarin: yuè}, {t: 利, caesura: true}, {t: 用}, {t: 祭}, {t: 祀}]   # 九五：劓刖，困于赤紱，乃徐有說，利用祭祀。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 困, caesura: true}, {t: 于}, {t: 葛}, {t: 藟}, {t: 于, caesura: true}, {t: 臲}, {t: 卼}, {t: 曰, caesura: true}, {t: 動}, {t: 悔}, {t: 有, caesura: true}, {t: 悔}, {t: 征, caesura: true}, {t: 吉}]   # 上六：困于葛藟，于臲卼，曰動悔。有悔，征吉。
+  - id: "48"
+    title: "Hexagram 48, Jǐng 井, the well"
+    hexagram: "011010"
+    trigrams: {lower: "巽", upper: "坎"}
+    verify_in: sources/wikisource/48.txt
+    lines:
+      - tokens: [{t: 井}, {t: 改, caesura: true}, {t: 邑}, {t: 不}, {t: 改}, {t: 井}, {t: 无, caesura: true}, {t: 喪, oc: 2}, {t: 无}, {t: 得}, {t: 往, caesura: true}, {t: 來, oc: 2}, {t: 井}, {t: 井}, {t: 汔, caesura: true}, {t: 至}, {t: 亦}, {t: 未}, {t: 繘}, {t: 井}, {t: 羸, caesura: true}, {t: 其, oc: 2}, {t: 瓶}, {t: 凶, caesura: true}]   # 井：改邑不改井，无喪无得，往來井井。汔至亦未繘井。羸其瓶，凶。
+      - tokens: [{t: 初}, {t: 六}, {t: 井, caesura: true}, {t: 泥}, {t: 不}, {t: 食}, {t: 舊, caesura: true}, {t: 井}, {t: 无}, {t: 禽}]   # 初六：井泥不食，舊井无禽。
+      - tokens: [{t: 九}, {t: 二}, {t: 井, caesura: true}, {t: 谷}, {t: 射}, {t: 鮒}, {t: 瓮, caesura: true}, {t: 敝}, {t: 漏}]   # 九二：井谷射鮒，瓮敝漏。
+      - tokens: [{t: 九}, {t: 三}, {t: 井, caesura: true}, {t: 渫}, {t: 不}, {t: 食}, {t: 為, oc: 2, tang: 2, mandarin: wèi, caesura: true}, {t: 我}, {t: 心}, {t: 惻}, {t: 可, caesura: true}, {t: 用}, {t: 汲}, {t: 王, caesura: true}, {t: 明}, {t: 並, caesura: true}, {t: 受}, {t: 其, oc: 2}, {t: 福}]   # 九三：井渫不食，為我心惻，可用汲，王明，並受其福。
+      - tokens: [{t: 六}, {t: 四}, {t: 井, caesura: true}, {t: 甃}, {t: 无, caesura: true}, {t: 咎}]   # 六四：井甃，无咎。
+      - tokens: [{t: 九}, {t: 五}, {t: 井, caesura: true}, {t: 冽}, {t: 寒, caesura: true}, {t: 泉}, {t: 食}]   # 九五：井冽，寒泉食。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 井, caesura: true}, {t: 收}, {t: 勿}, {t: 幕}, {t: 有, caesura: true}, {t: 孚}, {t: 元}, {t: 吉}]   # 上六：井收勿幕，有孚元吉。
+  - id: "49"
+    title: "Hexagram 49, Gé 革, change"
+    hexagram: "101110"
+    trigrams: {lower: "離", upper: "兌"}
+    verify_in: sources/wikisource/49.txt
+    lines:
+      - tokens: [{t: 革}, {t: 已, caesura: true}, {t: 日}, {t: 乃}, {t: 孚}, {t: 元, caesura: true}, {t: 亨}, {t: 利, caesura: true}, {t: 貞, oc: 2}, {t: 悔, caesura: true}, {t: 亡}]   # 革：已日乃孚，元亨。利貞。悔亡。
+      - tokens: [{t: 初}, {t: 九}, {t: 鞏, caesura: true}, {t: 用}, {t: 黃}, {t: 牛}, {t: 之}, {t: 革}]   # 初九：鞏用黃牛之革。
+      - tokens: [{t: 六}, {t: 二}, {t: 已, caesura: true}, {t: 日}, {t: 乃}, {t: 革}, {t: 之}, {t: 征, caesura: true}, {t: 吉}, {t: 无, caesura: true}, {t: 咎}]   # 六二：已日乃革之，征吉，无咎。
+      - tokens: [{t: 九}, {t: 三}, {t: 征, caesura: true}, {t: 凶}, {t: 貞, oc: 2, caesura: true}, {t: 厲}, {t: 革, caesura: true}, {t: 言}, {t: 三}, {t: 就}, {t: 有, caesura: true}, {t: 孚}]   # 九三：征凶，貞厲，革言三就，有孚。
+      - tokens: [{t: 九}, {t: 四}, {t: 悔, caesura: true}, {t: 亡}, {t: 有, caesura: true}, {t: 孚}, {t: 改}, {t: 命}, {t: 吉, caesura: true}]   # 九四：悔亡，有孚改命，吉。
+      - tokens: [{t: 九}, {t: 五}, {t: 大, caesura: true}, {t: 人}, {t: 虎}, {t: 變}, {t: 未, caesura: true}, {t: 占}, {t: 有}, {t: 孚}]   # 九五：大人虎變，未占有孚。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 君, caesura: true}, {t: 子, oc: 2}, {t: 豹}, {t: 變}, {t: 小, caesura: true}, {t: 人}, {t: 革}, {t: 面}, {t: 征, caesura: true}, {t: 凶}, {t: 居, caesura: true}, {t: 貞, oc: 2}, {t: 吉}]   # 上六：君子豹變，小人革面，征凶，居貞吉。
+  - id: "50"
+    title: "Hexagram 50, Dǐng 鼎, the cauldron"
+    hexagram: "011101"
+    trigrams: {lower: "巽", upper: "離"}
+    verify_in: sources/wikisource/50.txt
+    lines:
+      - tokens: [{t: 鼎}, {t: 元, caesura: true}, {t: 吉}, {t: 亨, caesura: true}]   # 鼎：元吉，亨。
+      - tokens: [{t: 初}, {t: 六}, {t: 鼎, caesura: true}, {t: 顛}, {t: 趾}, {t: 利, caesura: true}, {t: 出}, {t: 否}, {t: 得, caesura: true}, {t: 妾}, {t: 以}, {t: 其, oc: 2}, {t: 子, oc: 2}, {t: 无, caesura: true}, {t: 咎}]   # 初六：鼎顛趾，利出否，得妾以其子，无咎。
+      - tokens: [{t: 九}, {t: 二}, {t: 鼎, caesura: true}, {t: 有}, {t: 實}, {t: 我, caesura: true}, {t: 仇}, {t: 有}, {t: 疾}, {t: 不, caesura: true}, {t: 我}, {t: 能}, {t: 即}, {t: 吉, caesura: true}]   # 九二：鼎有實，我仇有疾，不我能即，吉。
+      - tokens: [{t: 九}, {t: 三}, {t: 鼎, caesura: true}, {t: 耳}, {t: 革}, {t: 其, oc: 2, caesura: true}, {t: 行, oc: 2}, {t: 塞}, {t: 雉, caesura: true}, {t: 膏}, {t: 不}, {t: 食}, {t: 方, caesura: true}, {t: 雨}, {t: 虧}, {t: 悔}, {t: 終, caesura: true}, {t: 吉}]   # 九三：鼎耳革，其行塞，雉膏不食，方雨虧悔，終吉。
+      - tokens: [{t: 九}, {t: 四}, {t: 鼎, caesura: true}, {t: 折}, {t: 足}, {t: 覆, caesura: true}, {t: 公}, {t: 餗}, {t: 其, oc: 2, caesura: true}, {t: 刑}, {t: 渥}, {t: 凶, caesura: true}]   # 九四：鼎折足，覆公餗，其刑渥，凶。
+      - tokens: [{t: 六}, {t: 五}, {t: 鼎, caesura: true}, {t: 黃}, {t: 耳}, {t: 金}, {t: 鉉}, {t: 利, caesura: true}, {t: 貞, oc: 2}]   # 六五：鼎黃耳金鉉，利貞。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 鼎, caesura: true}, {t: 玉}, {t: 鉉}, {t: 大, caesura: true}, {t: 吉}, {t: 无, caesura: true}, {t: 不}, {t: 利}]   # 上九：鼎玉鉉，大吉，无不利。
+  - id: "51"
+    title: "Hexagram 51, Zhèn 震, thunder"
+    hexagram: "100100"
+    trigrams: {lower: "震", upper: "震"}
+    verify_in: sources/wikisource/51.txt
+    lines:
+      - tokens: [{t: 震}, {t: 亨, caesura: true}, {t: 震, caesura: true}, {t: 來, oc: 2}, {t: 虩}, {t: 虩}, {t: 笑, caesura: true}, {t: 言}, {t: 啞}, {t: 啞}, {t: 震, caesura: true}, {t: 驚}, {t: 百}, {t: 里}, {t: 不, caesura: true}, {t: 喪, oc: 2}, {t: 匕}, {t: 鬯}]   # 震：亨。震來虩虩，笑言啞啞。震驚百里，不喪匕鬯。
+      - tokens: [{t: 初}, {t: 九}, {t: 震, caesura: true}, {t: 來, oc: 2}, {t: 虩}, {t: 虩}, {t: 後, caesura: true}, {t: 笑}, {t: 言}, {t: 啞}, {t: 啞}, {t: 吉, caesura: true}]   # 初九：震來虩虩，後笑言啞啞，吉。
+      - tokens: [{t: 六}, {t: 二}, {t: 震, caesura: true}, {t: 來, oc: 2}, {t: 厲}, {t: 億, caesura: true}, {t: 喪, oc: 2}, {t: 貝}, {t: 躋, caesura: true}, {t: 于}, {t: 九}, {t: 陵}, {t: 勿, caesura: true}, {t: 逐}, {t: 七, caesura: true}, {t: 日}, {t: 得}]   # 六二：震來厲，億喪貝，躋于九陵，勿逐，七日得。
+      - tokens: [{t: 六}, {t: 三}, {t: 震, caesura: true}, {t: 蘇}, {t: 蘇}, {t: 震, caesura: true}, {t: 行, oc: 2}, {t: 无}, {t: 眚}]   # 六三：震蘇蘇，震行无眚。
+      - tokens: [{t: 九}, {t: 四}, {t: 震, caesura: true}, {t: 遂}, {t: 泥}]   # 九四：震遂泥。
+      - tokens: [{t: 六}, {t: 五}, {t: 震, caesura: true}, {t: 往}, {t: 來, oc: 2}, {t: 厲}, {t: 億, caesura: true}, {t: 无}, {t: 喪, oc: 2}, {t: 有, caesura: true}, {t: 事}]   # 六五：震往來厲，億无喪，有事。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 震, caesura: true}, {t: 索}, {t: 索}, {t: 視, caesura: true}, {t: 矍}, {t: 矍}, {t: 征, caesura: true}, {t: 凶}, {t: 震, caesura: true}, {t: 不}, {t: 于}, {t: 其, oc: 2}, {t: 躬}, {t: 于, caesura: true}, {t: 其, oc: 2}, {t: 鄰}, {t: 无, caesura: true}, {t: 咎}, {t: 婚, caesura: true}, {t: 媾}, {t: 有}, {t: 言}]   # 上六：震索索，視矍矍，征凶。震不于其躬，于其鄰，无咎。婚媾有言。
+  - id: "52"
+    title: "Hexagram 52, Gèn 艮, stilling"
+    hexagram: "001001"
+    trigrams: {lower: "艮", upper: "艮"}
+    verify_in: sources/wikisource/52.txt
+    lines:
+      - tokens: [{t: 艮}, {t: 艮, caesura: true}, {t: 其, oc: 2}, {t: 背}, {t: 不, caesura: true}, {t: 獲}, {t: 其, oc: 2}, {t: 身}, {t: 行, oc: 2, caesura: true}, {t: 其, oc: 2}, {t: 庭}, {t: 不, caesura: true}, {t: 見}, {t: 其, oc: 2}, {t: 人}, {t: 无, caesura: true}, {t: 咎}]   # 艮：艮其背，不獲其身，行其庭，不見其人，无咎。
+      - tokens: [{t: 初}, {t: 六}, {t: 艮, caesura: true}, {t: 其, oc: 2}, {t: 趾}, {t: 无, caesura: true}, {t: 咎}, {t: 利, caesura: true}, {t: 永}, {t: 貞, oc: 2}]   # 初六：艮其趾，无咎，利永貞。
+      - tokens: [{t: 六}, {t: 二}, {t: 艮, caesura: true}, {t: 其, oc: 2}, {t: 腓}, {t: 不, caesura: true}, {t: 拯}, {t: 其, oc: 2}, {t: 隨}, {t: 其, oc: 2, caesura: true}, {t: 心}, {t: 不}, {t: 快}]   # 六二：艮其腓，不拯其隨，其心不快。
+      - tokens: [{t: 九}, {t: 三}, {t: 艮, caesura: true}, {t: 其, oc: 2}, {t: 限}, {t: 裂, caesura: true}, {t: 其, oc: 2}, {t: 夤}, {t: 厲, caesura: true}, {t: 閽}, {t: 心}]   # 九三：艮其限，裂其夤，厲閽心。
+      - tokens: [{t: 六}, {t: 四}, {t: 艮, caesura: true}, {t: 其, oc: 2}, {t: 身}, {t: 无, caesura: true}, {t: 咎}]   # 六四：艮其身，无咎。
+      - tokens: [{t: 六}, {t: 五}, {t: 艮, caesura: true}, {t: 其, oc: 2}, {t: 輔}, {t: 言, caesura: true}, {t: 有}, {t: 孚}, {t: 悔, caesura: true}, {t: 亡}]   # 六五：艮其輔，言有孚，悔亡。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 敦, caesura: true}, {t: 艮}, {t: 吉, caesura: true}]   # 上九：敦艮，吉。
+  - id: "53"
+    title: "Hexagram 53, Jiàn 漸, gradual advance"
+    hexagram: "001011"
+    trigrams: {lower: "艮", upper: "巽"}
+    verify_in: sources/wikisource/53.txt
+    lines:
+      - tokens: [{t: 漸, oc: 2}, {t: 女, caesura: true}, {t: 歸}, {t: 吉}, {t: 利, caesura: true}, {t: 貞, oc: 2}]   # 漸：女歸吉，利貞。
+      - tokens: [{t: 初}, {t: 六}, {t: 鴻, caesura: true}, {t: 漸, oc: 2}, {t: 于}, {t: 干}, {t: 小, caesura: true}, {t: 子, oc: 2}, {t: 厲}, {t: 有, caesura: true}, {t: 言}, {t: 无, caesura: true}, {t: 咎}]   # 初六：鴻漸于干，小子厲，有言，无咎。
+      - tokens: [{t: 六}, {t: 二}, {t: 鴻, caesura: true}, {t: 漸, oc: 2}, {t: 于}, {t: 磐}, {t: 飲, caesura: true}, {t: 食}, {t: 衎}, {t: 衎}, {t: 吉, caesura: true}]   # 六二：鴻漸于磐，飲食衎衎，吉。
+      - tokens: [{t: 九}, {t: 三}, {t: 鴻, caesura: true}, {t: 漸, oc: 2}, {t: 于}, {t: 陸}, {t: 夫, caesura: true}, {t: 征}, {t: 不}, {t: 復, oc: 2}, {t: 婦, caesura: true}, {t: 孕}, {t: 不}, {t: 育}, {t: 凶, caesura: true}, {t: 利, caesura: true}, {t: 禦}, {t: 寇}]   # 九三：鴻漸于陸，夫征不復，婦孕不育，凶；利禦寇。
+      - tokens: [{t: 六}, {t: 四}, {t: 鴻, caesura: true}, {t: 漸, oc: 2}, {t: 于}, {t: 木}, {t: 或, caesura: true}, {t: 得}, {t: 其, oc: 2}, {t: 桷}, {t: 无, caesura: true}, {t: 咎}]   # 六四：鴻漸于木，或得其桷，无咎。
+      - tokens: [{t: 九}, {t: 五}, {t: 鴻, caesura: true}, {t: 漸, oc: 2}, {t: 于}, {t: 陵}, {t: 婦, caesura: true}, {t: 三}, {t: 歲}, {t: 不}, {t: 孕}, {t: 終, caesura: true}, {t: 莫}, {t: 之}, {t: 勝}, {t: 吉, caesura: true}]   # 九五：鴻漸于陵，婦三歲不孕，終莫之勝，吉。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 鴻, caesura: true}, {t: 漸, oc: 2}, {t: 于}, {t: 陸}, {t: 其, oc: 2, caesura: true}, {t: 羽}, {t: 可}, {t: 用}, {t: 為, mandarin: wéi}, {t: 儀}, {t: 吉, caesura: true}]   # 上九：鴻漸于陸，其羽可用為儀，吉。
+  - id: "54"
+    title: "Hexagram 54, Guī Mèi 歸妹, the marrying younger sister"
+    hexagram: "110100"
+    trigrams: {lower: "兌", upper: "震"}
+    verify_in: sources/wikisource/54.txt
+    lines:
+      - tokens: [{t: 歸}, {t: 妹}, {t: 征, caesura: true}, {t: 凶}, {t: 无, caesura: true}, {t: 攸}, {t: 利}]   # 歸妹：征凶，无攸利。
+      - tokens: [{t: 初}, {t: 九}, {t: 歸, caesura: true}, {t: 妹}, {t: 以}, {t: 娣}, {t: 跛, caesura: true}, {t: 能}, {t: 履}, {t: 征, caesura: true}, {t: 吉}]   # 初九：歸妹以娣，跛能履，征吉。
+      - tokens: [{t: 九}, {t: 二}, {t: 眇, caesura: true}, {t: 能}, {t: 視}, {t: 利, caesura: true}, {t: 幽}, {t: 人}, {t: 之}, {t: 貞, oc: 2}]   # 九二：眇能視，利幽人之貞。
+      - tokens: [{t: 六}, {t: 三}, {t: 歸, caesura: true}, {t: 妹}, {t: 以}, {t: 須}, {t: 反, caesura: true}, {t: 歸}, {t: 以}, {t: 娣}]   # 六三：歸妹以須，反歸以娣。
+      - tokens: [{t: 九}, {t: 四}, {t: 歸, caesura: true}, {t: 妹}, {t: 愆}, {t: 期}, {t: 遲, caesura: true}, {t: 歸}, {t: 有}, {t: 時}]   # 九四：歸妹愆期，遲歸有時。
+      - tokens: [{t: 六}, {t: 五}, {t: 帝, caesura: true}, {t: 乙}, {t: 歸}, {t: 妹}, {t: 其, oc: 2, caesura: true}, {t: 君}, {t: 之}, {t: 袂}, {t: 不, caesura: true}, {t: 如, oc: 2}, {t: 其, oc: 2}, {t: 娣}, {t: 之}, {t: 袂}, {t: 良}, {t: 月, caesura: true}, {t: 幾}, {t: 望}, {t: 吉, caesura: true}]   # 六五：帝乙歸妹，其君之袂，不如其娣之袂良，月幾望，吉。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 女, caesura: true}, {t: 承}, {t: 筐}, {t: 无}, {t: 實}, {t: 士, caesura: true}, {t: 刲}, {t: 羊}, {t: 无}, {t: 血}, {t: 无, caesura: true}, {t: 攸}, {t: 利}]   # 上六：女承筐无實，士刲羊无血，无攸利。
+  - id: "55"
+    title: "Hexagram 55, Fēng 豐, abundance"
+    hexagram: "101100"
+    trigrams: {lower: "離", upper: "震"}
+    verify_in: sources/wikisource/55.txt
+    lines:
+      - tokens: [{t: 豐}, {t: 亨, caesura: true}, {t: 王, caesura: true}, {t: 假}, {t: 之}, {t: 勿, caesura: true}, {t: 憂}, {t: 宜, caesura: true}, {t: 日}, {t: 中}]   # 豐：亨。王假之，勿憂，宜日中。
+      - tokens: [{t: 初}, {t: 九}, {t: 遇, caesura: true}, {t: 其, oc: 2}, {t: 配}, {t: 主}, {t: 雖, caesura: true}, {t: 旬}, {t: 无}, {t: 咎}, {t: 往, caesura: true}, {t: 有}, {t: 尚}]   # 初九：遇其配主，雖旬无咎，往有尚。
+      - tokens: [{t: 六}, {t: 二}, {t: 豐, caesura: true}, {t: 其, oc: 2}, {t: 蔀}, {t: 日, caesura: true}, {t: 中}, {t: 見}, {t: 斗}, {t: 往, caesura: true}, {t: 得}, {t: 疑}, {t: 疾}, {t: 有, caesura: true}, {t: 孚}, {t: 發}, {t: 若}, {t: 吉, caesura: true}]   # 六二：豐其蔀，日中見斗，往得疑疾，有孚發若，吉。
+      - tokens: [{t: 九}, {t: 三}, {t: 豐, caesura: true}, {t: 其, oc: 2}, {t: 沛}, {t: 日, caesura: true}, {t: 中}, {t: 見}, {t: 沬}, {t: 折, caesura: true}, {t: 其, oc: 2}, {t: 右}, {t: 肱}, {t: 无, caesura: true}, {t: 咎}]   # 九三：豐其沛，日中見沬，折其右肱，无咎。
+      - tokens: [{t: 九}, {t: 四}, {t: 豐, caesura: true}, {t: 其, oc: 2}, {t: 蔀}, {t: 日, caesura: true}, {t: 中}, {t: 見}, {t: 斗}, {t: 遇, caesura: true}, {t: 其, oc: 2}, {t: 夷}, {t: 主}, {t: 吉, caesura: true}]   # 九四：豐其蔀，日中見斗，遇其夷主，吉。
+      - tokens: [{t: 六}, {t: 五}, {t: 來, oc: 2, caesura: true}, {t: 章}, {t: 有, caesura: true}, {t: 慶}, {t: 譽}, {t: 吉, caesura: true}]   # 六五：來章，有慶譽，吉。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 豐, caesura: true}, {t: 其, oc: 2}, {t: 屋}, {t: 蔀, caesura: true}, {t: 其, oc: 2}, {t: 家}, {t: 窺, caesura: true}, {t: 其, oc: 2}, {t: 戶}, {t: 闃, caesura: true}, {t: 其, oc: 2}, {t: 无}, {t: 人}, {t: 三, caesura: true}, {t: 歲}, {t: 不}, {t: 觌}, {t: 凶, caesura: true}]   # 上六：豐其屋，蔀其家，窺其戶，闃其无人，三歲不觌，凶。
+  - id: "56"
+    title: "Hexagram 56, Lǚ 旅, the traveller"
+    hexagram: "001101"
+    trigrams: {lower: "艮", upper: "離"}
+    verify_in: sources/wikisource/56.txt
+    lines:
+      - tokens: [{t: 旅}, {t: 小, caesura: true}, {t: 亨}, {t: 旅, caesura: true}, {t: 貞, oc: 2}, {t: 吉}]   # 旅：小亨，旅貞吉。
+      - tokens: [{t: 初}, {t: 六}, {t: 旅, caesura: true}, {t: 瑣}, {t: 瑣}, {t: 斯, caesura: true}, {t: 其, oc: 2}, {t: 所}, {t: 取}, {t: 災}]   # 初六：旅瑣瑣，斯其所取災。
+      - tokens: [{t: 六}, {t: 二}, {t: 旅, caesura: true}, {t: 即}, {t: 次}, {t: 懷, caesura: true}, {t: 其, oc: 2}, {t: 資}, {t: 得, caesura: true}, {t: 僮}, {t: 僕}, {t: 貞, oc: 2}]   # 六二：旅即次，懷其資，得僮僕貞。
+      - tokens: [{t: 九}, {t: 三}, {t: 旅, caesura: true}, {t: 焚}, {t: 其, oc: 2}, {t: 次}, {t: 喪, oc: 2, caesura: true}, {t: 其, oc: 2}, {t: 僮}, {t: 僕}, {t: 貞, oc: 2, caesura: true}, {t: 厲}]   # 九三：旅焚其次，喪其僮僕，貞厲。
+      - tokens: [{t: 九}, {t: 四}, {t: 旅, caesura: true}, {t: 于}, {t: 處, tang: 2, mandarin: chǔ}, {t: 得, caesura: true}, {t: 其, oc: 2}, {t: 資}, {t: 斧}, {t: 我, caesura: true}, {t: 心}, {t: 不}, {t: 快}]   # 九四：旅于處，得其資斧，我心不快。
+      - tokens: [{t: 六}, {t: 五}, {t: 射, caesura: true}, {t: 雉}, {t: 一}, {t: 矢}, {t: 亡}, {t: 終, caesura: true}, {t: 以}, {t: 譽}, {t: 命}]   # 六五：射雉一矢亡，終以譽命。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 鳥, caesura: true}, {t: 焚}, {t: 其, oc: 2}, {t: 巢}, {t: 旅, caesura: true}, {t: 人}, {t: 先}, {t: 笑}, {t: 後}, {t: 號, mandarin: háo}, {t: 咷}, {t: 喪, oc: 2, caesura: true}, {t: 牛}, {t: 于}, {t: 易}, {t: 凶, caesura: true}]   # 上九：鳥焚其巢，旅人先笑後號咷。喪牛于易，凶。
+  - id: "57"
+    title: "Hexagram 57, Xùn 巽, compliance"
+    hexagram: "011011"
+    trigrams: {lower: "巽", upper: "巽"}
+    verify_in: sources/wikisource/57.txt
+    lines:
+      - tokens: [{t: 巽}, {t: 小, caesura: true}, {t: 亨}, {t: 利, caesura: true}, {t: 有}, {t: 攸}, {t: 往}, {t: 利, caesura: true}, {t: 見}, {t: 大}, {t: 人}]   # 巽：小亨。利有攸往。利見大人。
+      - tokens: [{t: 初}, {t: 六}, {t: 進, caesura: true}, {t: 退}, {t: 利, caesura: true}, {t: 武}, {t: 人}, {t: 之}, {t: 貞, oc: 2}]   # 初六：進退，利武人之貞。
+      - tokens: [{t: 九}, {t: 二}, {t: 巽, caesura: true}, {t: 在}, {t: 牀}, {t: 下}, {t: 用, caesura: true}, {t: 史}, {t: 巫}, {t: 紛}, {t: 若}, {t: 吉, caesura: true}, {t: 无}, {t: 咎}]   # 九二：巽在牀下，用史巫紛若，吉无咎。
+      - tokens: [{t: 九}, {t: 三}, {t: 頻, caesura: true}, {t: 巽}, {t: 吝, caesura: true}]   # 九三：頻巽，吝。
+      - tokens: [{t: 六}, {t: 四}, {t: 悔, caesura: true}, {t: 亡}, {t: 田, caesura: true}, {t: 獲}, {t: 三}, {t: 品}]   # 六四：悔亡，田獲三品。
+      - tokens: [{t: 九}, {t: 五}, {t: 貞, oc: 2, caesura: true}, {t: 吉}, {t: 悔}, {t: 亡}, {t: 无, caesura: true}, {t: 不}, {t: 利}, {t: 无, caesura: true}, {t: 初}, {t: 有}, {t: 終}, {t: 先, caesura: true}, {t: 庚}, {t: 三}, {t: 日}, {t: 後, caesura: true}, {t: 庚}, {t: 三}, {t: 日}, {t: 吉, caesura: true}]   # 九五：貞吉悔亡，无不利。无初有終，先庚三日，後庚三日，吉。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 巽, caesura: true}, {t: 在}, {t: 牀}, {t: 下}, {t: 喪, oc: 2, caesura: true}, {t: 其, oc: 2}, {t: 資}, {t: 斧}, {t: 貞, oc: 2, caesura: true}, {t: 凶}]   # 上九：巽在牀下，喪其資斧，貞凶。
+  - id: "58"
+    title: "Hexagram 58, Duì 兌, joy"
+    hexagram: "110110"
+    trigrams: {lower: "兌", upper: "兌"}
+    verify_in: sources/wikisource/58.txt
+    lines:
+      - tokens: [{t: 兌}, {t: 亨, caesura: true}, {t: 利, caesura: true}, {t: 貞, oc: 2}]   # 兌：亨。利貞。
+      - tokens: [{t: 初}, {t: 九}, {t: 和, caesura: true}, {t: 兌}, {t: 吉, caesura: true}]   # 初九：和兌，吉。
+      - tokens: [{t: 九}, {t: 二}, {t: 孚, caesura: true}, {t: 兌}, {t: 吉, caesura: true}, {t: 悔, caesura: true}, {t: 亡}]   # 九二：孚兌，吉，悔亡。
+      - tokens: [{t: 六}, {t: 三}, {t: 來, oc: 2, caesura: true}, {t: 兌}, {t: 凶, caesura: true}]   # 六三：來兌，凶。
+      - tokens: [{t: 九}, {t: 四}, {t: 商, caesura: true}, {t: 兌}, {t: 未, caesura: true}, {t: 寧}, {t: 介, caesura: true}, {t: 疾}, {t: 有}, {t: 喜}]   # 九四：商兌，未寧，介疾有喜。
+      - tokens: [{t: 九}, {t: 五}, {t: 孚, caesura: true}, {t: 于}, {t: 剝}, {t: 有, caesura: true}, {t: 厲}]   # 九五：孚于剝，有厲。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 引, caesura: true}, {t: 兌}]   # 上六：引兌。
+  - id: "59"
+    title: "Hexagram 59, Huàn 渙, dispersal"
+    hexagram: "010011"
+    trigrams: {lower: "坎", upper: "巽"}
+    verify_in: sources/wikisource/59.txt
+    lines:
+      - tokens: [{t: 渙}, {t: 亨, caesura: true}, {t: 王, caesura: true}, {t: 假}, {t: 有}, {t: 廟}, {t: 利, caesura: true}, {t: 涉}, {t: 大}, {t: 川}, {t: 利, caesura: true}, {t: 貞, oc: 2}]   # 渙：亨，王假有廟，利涉大川，利貞。
+      - tokens: [{t: 初}, {t: 六}, {t: 用, caesura: true}, {t: 拯}, {t: 馬}, {t: 壯}, {t: 吉, caesura: true}, {t: 悔, caesura: true}, {t: 亡}]   # 初六：用拯馬壯，吉，悔亡。
+      - tokens: [{t: 九}, {t: 二}, {t: 渙, caesura: true}, {t: 奔}, {t: 其, oc: 2}, {t: 机}, {t: 悔, caesura: true}, {t: 亡}]   # 九二：渙奔其机，悔亡。
+      - tokens: [{t: 六}, {t: 三}, {t: 渙, caesura: true}, {t: 其, oc: 2}, {t: 躬}, {t: 无, caesura: true}, {t: 悔}]   # 六三：渙其躬，无悔。
+      - tokens: [{t: 六}, {t: 四}, {t: 渙, caesura: true}, {t: 其, oc: 2}, {t: 群}, {t: 元, caesura: true}, {t: 吉}, {t: 渙, caesura: true}, {t: 有}, {t: 丘}, {t: 匪, caesura: true}, {t: 夷}, {t: 所}, {t: 思}]   # 六四：渙其群，元吉。渙有丘，匪夷所思。
+      - tokens: [{t: 九}, {t: 五}, {t: 渙, caesura: true}, {t: 汗}, {t: 其, oc: 2}, {t: 大}, {t: 號, mandarin: háo}, {t: 渙, caesura: true}, {t: 王}, {t: 居}, {t: 无, caesura: true}, {t: 咎}]   # 九五：渙汗其大號，渙王居，无咎。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 渙, caesura: true}, {t: 其, oc: 2}, {t: 血}, {t: 去, caesura: true}, {t: 逖}, {t: 出}, {t: 无, caesura: true}, {t: 咎}]   # 上九：渙其血，去逖出，无咎。
+  - id: "60"
+    title: "Hexagram 60, Jié 節, measure"
+    hexagram: "110010"
+    trigrams: {lower: "兌", upper: "坎"}
+    verify_in: sources/wikisource/60.txt
+    lines:
+      - tokens: [{t: 節}, {t: 亨, caesura: true}, {t: 苦, caesura: true}, {t: 節}, {t: 不}, {t: 可}, {t: 貞, oc: 2}]   # 節：亨。苦節不可貞。
+      - tokens: [{t: 初}, {t: 九}, {t: 不, caesura: true}, {t: 出}, {t: 戶}, {t: 庭}, {t: 无, caesura: true}, {t: 咎}]   # 初九：不出戶庭，无咎。
+      - tokens: [{t: 九}, {t: 二}, {t: 不, caesura: true}, {t: 出}, {t: 門}, {t: 庭}, {t: 凶, caesura: true}]   # 九二：不出門庭，凶。
+      - tokens: [{t: 六}, {t: 三}, {t: 不, caesura: true}, {t: 節}, {t: 若}, {t: 則, caesura: true}, {t: 嗟}, {t: 若}, {t: 无, caesura: true}, {t: 咎}]   # 六三：不節若，則嗟若，无咎。
+      - tokens: [{t: 六}, {t: 四}, {t: 安, caesura: true}, {t: 節}, {t: 亨, caesura: true}]   # 六四：安節，亨。
+      - tokens: [{t: 九}, {t: 五}, {t: 甘, caesura: true}, {t: 節}, {t: 吉, caesura: true}, {t: 往, caesura: true}, {t: 有}, {t: 尚}]   # 九五：甘節，吉；往有尚。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 苦, caesura: true}, {t: 節}, {t: 貞, oc: 2, caesura: true}, {t: 凶}, {t: 悔, caesura: true}, {t: 亡}]   # 上六：苦節，貞凶，悔亡。
+  - id: "61"
+    title: "Hexagram 61, Zhōng Fú 中孚, inner trust"
+    hexagram: "110011"
+    trigrams: {lower: "兌", upper: "巽"}
+    verify_in: sources/wikisource/61.txt
+    lines:
+      - tokens: [{t: 中}, {t: 孚}, {t: 豚, caesura: true}, {t: 魚}, {t: 吉}, {t: 利, caesura: true}, {t: 涉}, {t: 大}, {t: 川}, {t: 利, caesura: true}, {t: 貞, oc: 2}]   # 中孚：豚魚吉，利涉大川，利貞。
+      - tokens: [{t: 初}, {t: 九}, {t: 虞, caesura: true}, {t: 吉}, {t: 有, caesura: true}, {t: 它}, {t: 不}, {t: 燕}]   # 初九：虞吉，有它不燕。
+      - tokens: [{t: 九}, {t: 二}, {t: 鳴, caesura: true}, {t: 鶴}, {t: 在}, {t: 陰}, {t: 其, oc: 2, caesura: true}, {t: 子, oc: 2}, {t: 和}, {t: 之}, {t: 我, caesura: true}, {t: 有}, {t: 好, tang: 2}, {t: 爵}, {t: 吾, caesura: true}, {t: 與}, {t: 爾}, {t: 靡}, {t: 之}]   # 九二：鳴鶴在陰，其子和之，我有好爵，吾與爾靡之。
+      - tokens: [{t: 六}, {t: 三}, {t: 得, caesura: true}, {t: 敵}, {t: 或, caesura: true}, {t: 鼓}, {t: 或}, {t: 罷}, {t: 或, caesura: true}, {t: 泣}, {t: 或}, {t: 歌}]   # 六三：得敵，或鼓或罷，或泣或歌。
+      - tokens: [{t: 六}, {t: 四}, {t: 月, caesura: true}, {t: 既}, {t: 望}, {t: 馬, caesura: true}, {t: 匹}, {t: 亡}, {t: 无, caesura: true}, {t: 咎}]   # 六四：月既望，馬匹亡，无咎。
+      - tokens: [{t: 九}, {t: 五}, {t: 有, caesura: true}, {t: 孚}, {t: 攣}, {t: 如, oc: 2}, {t: 无, caesura: true}, {t: 咎}]   # 九五：有孚攣如，无咎。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 翰, caesura: true}, {t: 音}, {t: 登}, {t: 于}, {t: 天}, {t: 貞, oc: 2, caesura: true}, {t: 凶}]   # 上九：翰音登于天，貞凶。
+  - id: "62"
+    title: "Hexagram 62, Xiǎo Guò 小過, small excess"
+    hexagram: "001100"
+    trigrams: {lower: "艮", upper: "震"}
+    verify_in: sources/wikisource/62.txt
+    lines:
+      - tokens: [{t: 小}, {t: 過, oc: 3, tang: 2}, {t: 亨, caesura: true}, {t: 利, caesura: true}, {t: 貞, oc: 2}, {t: 可, caesura: true}, {t: 小}, {t: 事}, {t: 不, caesura: true}, {t: 可}, {t: 大}, {t: 事}, {t: 飛, caesura: true}, {t: 鳥}, {t: 遺}, {t: 之}, {t: 音}, {t: 不, caesura: true}, {t: 宜}, {t: 上, oc: 1, tang: 3}, {t: 宜}, {t: 下}, {t: 大, caesura: true}, {t: 吉}]   # 小過：亨。利貞。可小事，不可大事。飛鳥遺之音，不宜上宜下，大吉。
+      - tokens: [{t: 初}, {t: 六}, {t: 飛, caesura: true}, {t: 鳥}, {t: 以}, {t: 凶}]   # 初六：飛鳥以凶。
+      - tokens: [{t: 六}, {t: 二}, {t: 過, oc: 3, tang: 2, caesura: true}, {t: 其, oc: 2}, {t: 祖}, {t: 遇, caesura: true}, {t: 其, oc: 2}, {t: 妣}, {t: 不, caesura: true}, {t: 及}, {t: 其, oc: 2}, {t: 君}, {t: 遇, caesura: true}, {t: 其, oc: 2}, {t: 臣}, {t: 无, caesura: true}, {t: 咎}]   # 六二：過其祖，遇其妣；不及其君，遇其臣；无咎。
+      - tokens: [{t: 九}, {t: 三}, {t: 弗, caesura: true}, {t: 過, oc: 3, tang: 2}, {t: 防}, {t: 之}, {t: 從, caesura: true}, {t: 或}, {t: 戕}, {t: 之}, {t: 凶, caesura: true}]   # 九三：弗過防之，從或戕之，凶。
+      - tokens: [{t: 九}, {t: 四}, {t: 无, caesura: true}, {t: 咎}, {t: 弗, caesura: true}, {t: 過, oc: 3, tang: 2}, {t: 遇}, {t: 之}, {t: 往, caesura: true}, {t: 厲}, {t: 必}, {t: 戒}, {t: 勿, caesura: true}, {t: 用}, {t: 永}, {t: 貞, oc: 2}]   # 九四：无咎，弗過遇之。往厲必戒，勿用永貞。
+      - tokens: [{t: 六}, {t: 五}, {t: 密, caesura: true}, {t: 雲}, {t: 不}, {t: 雨}, {t: 自, caesura: true}, {t: 我}, {t: 西}, {t: 郊}, {t: 公, caesura: true}, {t: 弋}, {t: 取}, {t: 彼}, {t: 在}, {t: 穴}]   # 六五：密雲不雨，自我西郊，公弋取彼在穴。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 弗, caesura: true}, {t: 遇}, {t: 過, oc: 3, tang: 2}, {t: 之}, {t: 飛, caesura: true}, {t: 鳥}, {t: 離}, {t: 之}, {t: 凶, caesura: true}, {t: 是, caesura: true}, {t: 謂}, {t: 災}, {t: 眚}]   # 上六：弗遇過之，飛鳥離之，凶，是謂災眚。
+  - id: "63"
+    title: "Hexagram 63, Jì Jì 既濟, already across"
+    hexagram: "101010"
+    trigrams: {lower: "離", upper: "坎"}
+    verify_in: sources/wikisource/63.txt
+    lines:
+      - tokens: [{t: 既}, {t: 濟, oc: 4}, {t: 亨, caesura: true}, {t: 小}, {t: 利, caesura: true}, {t: 貞, oc: 2}, {t: 初, caesura: true}, {t: 吉}, {t: 終}, {t: 亂}]   # 既濟：亨小。利貞。初吉終亂。
+      - tokens: [{t: 初}, {t: 九}, {t: 曳, caesura: true}, {t: 其, oc: 2}, {t: 輪}, {t: 濡, caesura: true}, {t: 其, oc: 2}, {t: 尾}, {t: 无, caesura: true}, {t: 咎}]   # 初九：曳其輪，濡其尾，无咎。
+      - tokens: [{t: 六}, {t: 二}, {t: 婦, caesura: true}, {t: 喪, oc: 2}, {t: 其, oc: 2}, {t: 茀}, {t: 勿, caesura: true}, {t: 逐}, {t: 七, caesura: true}, {t: 日}, {t: 得}]   # 六二：婦喪其茀，勿逐，七日得。
+      - tokens: [{t: 九}, {t: 三}, {t: 高, caesura: true}, {t: 宗}, {t: 伐}, {t: 鬼}, {t: 方}, {t: 三, caesura: true}, {t: 年}, {t: 克}, {t: 之}, {t: 小, caesura: true}, {t: 人}, {t: 勿}, {t: 用}]   # 九三：高宗伐鬼方，三年克之，小人勿用。
+      - tokens: [{t: 六}, {t: 四}, {t: 繻, caesura: true}, {t: 有}, {t: 衣}, {t: 袽}, {t: 終, caesura: true}, {t: 日}, {t: 戒}]   # 六四：繻有衣袽，終日戒。
+      - tokens: [{t: 九}, {t: 五}, {t: 東, caesura: true}, {t: 鄰}, {t: 殺}, {t: 牛}, {t: 不, caesura: true}, {t: 如, oc: 2}, {t: 西}, {t: 鄰}, {t: 之}, {t: 禴}, {t: 祭}, {t: 實, caesura: true}, {t: 受}, {t: 其, oc: 2}, {t: 福}]   # 九五：東鄰殺牛，不如西鄰之禴祭，實受其福。
+      - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 濡, caesura: true}, {t: 其, oc: 2}, {t: 首}, {t: 厲, caesura: true}]   # 上六：濡其首，厲。
+  - id: "64"
+    title: "Hexagram 64, Wèi Jì 未濟, not yet across"
+    hexagram: "010101"
+    trigrams: {lower: "坎", upper: "離"}
+    verify_in: sources/wikisource/64.txt
+    lines:
+      - tokens: [{t: 未}, {t: 濟, oc: 4}, {t: 亨, caesura: true}, {t: 小, caesura: true}, {t: 狐}, {t: 汔}, {t: 濟, oc: 4}, {t: 濡, caesura: true}, {t: 其, oc: 2}, {t: 尾}, {t: 无, caesura: true}, {t: 攸}, {t: 利}]   # 未濟：亨。小狐汔濟，濡其尾，无攸利。
+      - tokens: [{t: 初}, {t: 六}, {t: 濡, caesura: true}, {t: 其, oc: 2}, {t: 尾}, {t: 吝, caesura: true}]   # 初六：濡其尾，吝。
+      - tokens: [{t: 九}, {t: 二}, {t: 曳, caesura: true}, {t: 其, oc: 2}, {t: 輪}, {t: 貞, oc: 2, caesura: true}, {t: 吉}]   # 九二：曳其輪，貞吉。
+      - tokens: [{t: 六}, {t: 三}, {t: 未, caesura: true}, {t: 濟, oc: 4}, {t: 征, caesura: true}, {t: 凶}, {t: 利, caesura: true}, {t: 涉}, {t: 大}, {t: 川}]   # 六三：未濟，征凶，利涉大川。
+      - tokens: [{t: 九}, {t: 四}, {t: 貞, oc: 2, caesura: true}, {t: 吉}, {t: 悔, caesura: true}, {t: 亡}, {t: 震, caesura: true}, {t: 用}, {t: 伐}, {t: 鬼}, {t: 方}, {t: 三, caesura: true}, {t: 年}, {t: 有}, {t: 賞}, {t: 于}, {t: 大}, {t: 國}]   # 九四：貞吉，悔亡，震用伐鬼方，三年有賞于大國。
+      - tokens: [{t: 六}, {t: 五}, {t: 貞, oc: 2, caesura: true}, {t: 吉}, {t: 无, caesura: true}, {t: 悔}, {t: 君, caesura: true}, {t: 子, oc: 2}, {t: 之}, {t: 光}, {t: 有, caesura: true}, {t: 孚}, {t: 吉, caesura: true}]   # 六五：貞吉，无悔，君子之光，有孚，吉。
+      - tokens: [{t: 上, oc: 3}, {t: 九}, {t: 有, caesura: true}, {t: 孚}, {t: 于}, {t: 飲}, {t: 酒}, {t: 无, caesura: true}, {t: 咎}, {t: 濡, caesura: true}, {t: 其, oc: 2}, {t: 首}, {t: 有, caesura: true}, {t: 孚}, {t: 失}, {t: 是}]   # 上九：有孚于飲酒，无咎，濡其首，有孚失是。

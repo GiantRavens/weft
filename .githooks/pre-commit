@@ -1,0 +1,11 @@
+#!/bin/sh
+# Weft leak guard: refuse a commit that stages anything under private/ (except its README) or a
+# fetched third-party source. Enable once per clone:  git config core.hooksPath .githooks
+bad=$(git diff --cached --name-only --diff-filter=ACMR | grep -E '^private/|^texts/[^/]+/sources/' \
+      | grep -vE '^private/README\.md$|^texts/[^/]+/sources/README\.md$')
+if [ -n "$bad" ]; then
+  echo "weft: refusing to commit private or third-party files:" >&2
+  echo "$bad" | sed 's/^/  /' >&2
+  echo "Unstage them with: git restore --staged <path>" >&2
+  exit 1
+fi
