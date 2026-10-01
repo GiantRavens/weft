@@ -1,0 +1,73 @@
+# Weft edition of Machiavelli, Il Principe, chapter 17 (from "Nasce da questo una disputa") and
+# the opening of chapter 18, from the edition printed with the imprint "Italia", 1814 (New York
+# Public Library copy, Google scan at the Internet Archive, ilprincipedinic00machgoog), as
+# proofread on Italian Wikisource (Indice:Il Principe.djvu). This is a pre-critical text; the
+# notes say where it differs from the modern critical editions.
+#
+# Each section is one printed page, checked verbatim against that page's pinned revision
+# (verify_in): djvu page 74 (printed p. 64), revision 2416822; page 76 (p. 66), revision 2416824;
+# page 77 (p. 67), revision 2416825. Chapter 18's sentence "Pertanto ad un Principe è necessario
+# saper ben usare la bestia e l'uomo" runs across the page break, so it is divided there into two
+# lines. verify_strip sets aside the page's markup: italics (''), section tags, the templates that
+# join a word divided across pages ({{Pt|sa-}} / {{Pt|per|saper}}) and the link templates
+# ({{W|Chirone|Chirone Centauro}}), keeping the printed words.
+#
+# Prose: one line per sentence, or per clause where a sentence is long. Each token's t is the word
+# as printed with any punctuation after it; `weft draft` moves the punctuation to its own field
+# (weft.italian token_fields), so the line still reproduces the source.
+#   n   (where present) Weft's marked reading of the word, overriding the lexicon
+joiner: " "
+verify_strip: "''|<[^>]+>|\\{\\{Pt\\|[^|{}]*\\|?\\}\\}|\\{\\{(?:W|AutoreCitato|ac|Pt)\\|[^|{}]*\\||\\}\\}"
+sections:
+  - id: "17"
+    title: "Chapter 17, Of cruelty and clemency (1814 edition, p. 64)"
+    verify_in: sources/ws-djvu74.txt
+    lines:
+      - tokens: [{t: "Nasce"}, {t: "da"}, {t: "questo"}, {t: "una"}, {t: "disputa:"}, {t: "s’egli"}, {t: "è"}, {t: "meglio"}, {t: "essere"}, {t: "amato"}, {t: "che"}, {t: "temuto,"}, {t: "o"}, {t: "temuto"}, {t: "che"}, {t: "amato."}]
+      - tokens: [{t: "Rispondesi,"}, {t: "che"}, {t: "si"}, {t: "vorrebbe"}, {t: "essere"}, {t: "l’uno"}, {t: "e"}, {t: "l’altro;"}]
+      - tokens: [{t: "ma"}, {t: "perchè"}, {t: "egli"}, {t: "è"}, {t: "difficile,"}, {t: "che"}, {t: "e’"}, {t: "stiano"}, {t: "insieme,"}]
+      - tokens: [{t: "è"}, {t: "molto"}, {t: "più"}, {t: "sicuro"}, {t: "l’esser"}, {t: "temuto"}, {t: "che"}, {t: "amato,"}, {t: "quando"}, {t: "s’abbi"}, {t: "a"}, {t: "mancare"}, {t: "dell’un"}, {t: "de’"}, {t: "duoi."}]
+      - tokens: [{t: "Perchè"}, {t: "degli"}, {t: "uomini"}, {t: "si"}, {t: "può"}, {t: "dire"}, {t: "questo"}, {t: "generalmente,"}, {t: "che"}, {t: "sieno"}, {t: "ingrati,"}, {t: "volubili,"}, {t: "simulatori,"}, {t: "fuggitori"}, {t: "de’"}, {t: "pericoli,"}, {t: "cupidi"}, {t: "di"}, {t: "guadagno;"}]
+      - tokens: [{t: "e"}, {t: "mentre"}, {t: "fai"}, {t: "loro"}, {t: "bene"}, {t: "sono"}, {t: "tutti"}, {t: "tuoi,"}]
+      - tokens: [{t: "ti"}, {t: "offeriscono"}, {t: "il"}, {t: "sangue,"}, {t: "la"}, {t: "roba,"}, {t: "la"}, {t: "vita,"}, {t: "ed"}, {t: "i"}, {t: "figliuoli,"}, {t: "come"}, {t: "di"}, {t: "sopra"}, {t: "dissi,"}, {t: "quando"}, {t: "il"}, {t: "bisogno"}, {t: "è"}, {t: "discosto;"}]
+      - tokens: [{t: "ma,"}, {t: "quando"}, {t: "ti"}, {t: "si"}, {t: "appressa,"}, {t: "si"}, {t: "rivoltano."}]
+      - tokens: [{t: "E"}, {t: "quel"}, {t: "Principe"}, {t: "che"}, {t: "si"}, {t: "è"}, {t: "tutto"}, {t: "fondato"}, {t: "in"}, {t: "sulle"}, {t: "parole"}, {t: "loro,"}, {t: "trovandosi"}, {t: "nudo"}, {t: "di"}, {t: "altri"}, {t: "preparamenti,"}, {t: "rovina;"}]
+      - tokens: [{t: "perchè"}, {t: "l’amicizie"}, {t: "che"}, {t: "si"}, {t: "acquistano"}, {t: "con"}, {t: "il"}, {t: "prezzo,"}, {t: "e"}, {t: "non"}, {t: "con"}, {t: "grandezza"}, {t: "e"}, {t: "nobiltà"}, {t: "d’animo,"}]
+      - tokens: [{t: "si"}, {t: "meritano,"}, {t: "ma"}, {t: "non"}, {t: "le"}, {t: "si"}, {t: "hanno,"}, {t: "e"}, {t: "a’"}, {t: "tempi"}, {t: "non"}, {t: "si"}, {t: "possono"}, {t: "spendere."}]
+      - tokens: [{t: "E"}, {t: "gli"}, {t: "uomini"}, {t: "hanno"}, {t: "men"}, {t: "rispetto"}, {t: "di"}, {t: "offendere"}, {t: "uno"}, {t: "che"}, {t: "si"}, {t: "facci"}, {t: "amare,"}, {t: "che"}, {t: "uno"}, {t: "che"}, {t: "si"}, {t: "facci"}, {t: "temere;"}]
+      - tokens: [{t: "perchè"}, {t: "l’amore"}, {t: "è"}, {t: "tenuto"}, {t: "da"}, {t: "un"}, {t: "vincolo"}, {t: "di"}, {t: "obbligo,"}, {t: "il"}, {t: "quale,"}, {t: "per"}, {t: "essere"}, {t: "gli"}, {t: "uomini"}, {t: "tristi,"}, {t: "da"}, {t: "ogni"}, {t: "occasione"}, {t: "di"}, {t: "propria"}, {t: "utilità"}, {t: "è"}, {t: "rotto;"}]
+      - tokens: [{t: "ma"}, {t: "il"}, {t: "timore"}, {t: "è"}, {t: "tenuto"}, {t: "da"}, {t: "una"}, {t: "paura"}, {t: "di"}, {t: "pena,"}, {t: "che"}, {t: "non"}, {t: "abbandona"}, {t: "mai."}]
+      - tokens: [{t: "Deve"}, {t: "nondimeno"}, {t: "il"}, {t: "Principe"}, {t: "farsi"}, {t: "temere"}, {t: "in"}, {t: "modo,"}, {t: "che,"}, {t: "se"}, {t: "non"}, {t: "acquista"}, {t: "l’amore,"}, {t: "e’"}, {t: "fugga"}, {t: "l’odio,"}]
+      - tokens: [{t: "perchè"}, {t: "può"}, {t: "molto"}, {t: "bene"}, {t: "stare"}, {t: "insieme"}, {t: "esser"}, {t: "temuto,"}, {t: "e"}, {t: "non"}, {t: "odiato;"}]
+      - tokens: [{t: "il"}, {t: "che"}, {t: "farà,"}, {t: "semprechè"}, {t: "s’astenga"}, {t: "dalla"}, {t: "roba"}, {t: "de’"}, {t: "suoi"}, {t: "cittadini,"}, {t: "e"}, {t: "de’"}, {t: "suoi"}, {t: "sudditi,"}, {t: "e"}, {t: "dalle"}, {t: "donne"}, {t: "loro."}]
+  - id: "18a"
+    title: "Chapter 18, How princes should keep faith (p. 66)"
+    verify_in: sources/ws-djvu76.txt
+    lines:
+      - tokens: [{t: "Quanto"}, {t: "sia"}, {t: "laudabile"}, {t: "in"}, {t: "un"}, {t: "Principe"}, {t: "mantenere"}, {t: "la"}, {t: "fede,"}, {t: "e"}, {t: "vivere"}, {t: "con"}, {t: "integrità,"}, {t: "e"}, {t: "non"}, {t: "con"}, {t: "astuzia,"}, {t: "ciascuno"}, {t: "lo"}, {t: "intende."}]
+      - tokens: [{t: "Nondimeno"}, {t: "si"}, {t: "vede"}, {t: "per"}, {t: "esperienzia,"}, {t: "ne’"}, {t: "nostri"}, {t: "tempi,"}, {t: "quelli"}, {t: "Principi"}, {t: "aver"}, {t: "fatto"}, {t: "gran"}, {t: "cose,"}]
+      - tokens: [{t: "che"}, {t: "della"}, {t: "fede"}, {t: "hanno"}, {t: "tenuto"}, {t: "poco"}, {t: "conto,"}, {t: "e"}, {t: "che"}, {t: "hanno"}, {t: "saputo"}, {t: "con"}, {t: "astuzia"}, {t: "aggirare"}, {t: "i"}, {t: "cervelli"}, {t: "degli"}, {t: "uomini,"}]
+      - tokens: [{t: "ed"}, {t: "alla"}, {t: "fine"}, {t: "hanno"}, {t: "superato"}, {t: "quelli"}, {t: "che"}, {t: "si"}, {t: "sono"}, {t: "fondati"}, {t: "in"}, {t: "su"}, {t: "la"}, {t: "lealtà."}]
+      - tokens: [{t: "Dovete"}, {t: "adunque"}, {t: "sapere"}, {t: "come"}, {t: "sono"}, {t: "due"}, {t: "generazioni"}, {t: "di"}, {t: "combattere:"}, {t: "l’una"}, {t: "con"}, {t: "le"}, {t: "leggi,"}, {t: "l’altra"}, {t: "con"}, {t: "le"}, {t: "forze."}]
+      - tokens: [{t: "Quel"}, {t: "primo"}, {t: "è"}, {t: "degli"}, {t: "uomini;"}, {t: "quel"}, {t: "secondo"}, {t: "è"}, {t: "delle"}, {t: "bestie;"}]
+      - tokens: [{t: "ma"}, {t: "perchè"}, {t: "il"}, {t: "primo"}, {t: "spesse"}, {t: "volte"}, {t: "non"}, {t: "basta,"}, {t: "bisogna"}, {t: "ricorrere"}, {t: "al"}, {t: "secondo."}]
+      - tokens: [{t: "Pertanto"}, {t: "ad"}, {t: "un"}, {t: "Principe"}, {t: "è"}, {t: "necessario"}]
+  - id: "18b"
+    title: "Chapter 18, continued: the fox and the lion (p. 67)"
+    verify_in: sources/ws-djvu77.txt
+    lines:
+      - tokens: [{t: "saper"}, {t: "ben"}, {t: "usare"}, {t: "la"}, {t: "bestia"}, {t: "e"}, {t: "l’uomo."}]
+      - tokens: [{t: "Questa"}, {t: "parte"}, {t: "è"}, {t: "stata"}, {t: "insegnata"}, {t: "a’"}, {t: "Principi"}, {t: "copertamente"}, {t: "dagli"}, {t: "antichi"}, {t: "scrittori,"}]
+      - tokens: [{t: "i"}, {t: "quali"}, {t: "scrivono"}, {t: "come"}, {t: "Achille"}, {t: "e"}, {t: "molti"}, {t: "altri"}, {t: "di"}, {t: "quelli"}, {t: "Principi"}, {t: "antichi"}, {t: "furono"}, {t: "dati"}, {t: "a"}, {t: "nutrire"}, {t: "a"}, {t: "Chirone"}, {t: "Centauro,"}]
+      - tokens: [{t: "che"}, {t: "sotto"}, {t: "la"}, {t: "sua"}, {t: "disciplina"}, {t: "gli"}, {t: "custodisse;"}]
+      - tokens: [{t: "il"}, {t: "che"}, {t: "non"}, {t: "vuol"}, {t: "dire"}, {t: "altro"}, {t: "l’avere"}, {t: "per"}, {t: "precettore"}, {t: "un"}, {t: "mezzo"}, {t: "bestia"}, {t: "e"}, {t: "mezzo"}, {t: "uomo,"}]
+      - tokens: [{t: "se"}, {t: "non"}, {t: "che"}, {t: "bisogna"}, {t: "a"}, {t: "un"}, {t: "Principe"}, {t: "sapere"}, {t: "usare"}, {t: "l’una"}, {t: "e"}, {t: "l’altra"}, {t: "natura,"}]
+      - tokens: [{t: "e"}, {t: "l’una"}, {t: "senza"}, {t: "l’altra"}, {t: "non"}, {t: "è"}, {t: "durabile."}]
+      - tokens: [{t: "Essendo"}, {t: "adunque"}, {t: "un"}, {t: "Principe"}, {t: "necessitato"}, {t: "sapere"}, {t: "bene"}, {t: "usare"}, {t: "la"}, {t: "bestia,"}, {t: "debbe"}, {t: "di"}, {t: "quella"}, {t: "pigliare"}, {t: "la"}, {t: "volpe"}, {t: "e"}, {t: "il"}, {t: "lione;"}]
+      - tokens: [{t: "perchè"}, {t: "il"}, {t: "lione"}, {t: "non"}, {t: "si"}, {t: "defende"}, {t: "da’"}, {t: "lacci,"}, {t: "la"}, {t: "volpe"}, {t: "non"}, {t: "si"}, {t: "defende"}, {t: "da’"}, {t: "lupi."}]
+      - tokens: [{t: "Bisogna"}, {t: "adunque"}, {t: "essere"}, {t: "volpe"}, {t: "a"}, {t: "cognoscere"}, {t: "i"}, {t: "lacci,"}, {t: "e"}, {t: "lione"}, {t: "a"}, {t: "sbigottire"}, {t: "i"}, {t: "lupi."}]
+      - tokens: [{t: "Coloro"}, {t: "che"}, {t: "stanno"}, {t: "semplicemente"}, {t: "in"}, {t: "sul"}, {t: "lione,"}, {t: "non"}, {t: "se"}, {t: "ne"}, {t: "intendono."}]
+      - tokens: [{t: "Non"}, {t: "può"}, {t: "pertanto"}, {t: "un"}, {t: "Signore"}, {t: "prudente,"}, {t: "nè"}, {t: "debbe"}, {t: "osservare"}, {t: "la"}, {t: "fede,"}]
+      - tokens: [{t: "quando"}, {t: "tale"}, {t: "osservanzia"}, {t: "gli"}, {t: "torni"}, {t: "contro,"}, {t: "e"}, {t: "che"}, {t: "sono"}, {t: "spente"}, {t: "le"}, {t: "cagioni"}, {t: "che"}, {t: "la"}, {t: "feciono"}, {t: "promettere."}]
+      - tokens: [{t: "E"}, {t: "se"}, {t: "gli"}, {t: "uomini"}, {t: "fussero"}, {t: "tutti"}, {t: "buoni,"}, {t: "questo"}, {t: "precetto"}, {t: "non"}, {t: "saria"}, {t: "buono;"}]
+      - tokens: [{t: "ma"}, {t: "perchè"}, {t: "sono"}, {t: "tristi,"}, {t: "e"}, {t: "non"}, {t: "l’osserverebbono"}, {t: "a"}, {t: "te,"}, {t: "tu"}, {t: "ancora"}, {t: "non"}, {t: "l’hai"}, {t: "da"}, {t: "osservare"}, {t: "a"}, {t: "loro."}]

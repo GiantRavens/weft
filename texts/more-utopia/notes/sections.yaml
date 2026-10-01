@@ -1,0 +1,40 @@
+# Notes for Utopia, Book 1, the sheep that devour men.
+- id: n.utop.sound
+  attach: utop.oves.1
+  kind: editorial
+  status: draft
+  leans_on: "W. S. Allen, Vox Latina (1965), appendix on the pronunciation of Latin in England"
+  text: "The default reading is Latin as an Englishman of More's generation would have read it around 1516. It is the English method, in which a stressed vowel in an open syllable takes its English long value, but at an earlier stage of English sound change than the reading given for Newton in 1687. In this period a was still aa and o still aw, long i had begun to move toward its modern value (shown here as ei), short u was still the vowel of put, and ti before a vowel was si rather than sh. The dates of these changes are known only within decades, so treat the reading as approximate. Proposals to reform the English pronunciation of Greek and Latin, made at Cambridge in the 1530s and 1540s, came after Utopia. The classical reading is the second choice in the Loom."
+- id: n.utop.speakers
+  attach: utop.oves.3
+  kind: editorial
+  status: draft
+  leans_on: "Henry Morley, introduction to Utopia (1901)"
+  text: "The passage is reported dialogue. Raphael Hythloday, the traveller, is telling More and Peter Giles about a dinner at the house of John Morton, Cardinal and Archbishop of Canterbury. Cardinalis in line 3 is Morton, and inquam, 'I say', in line 4 is Hythloday. More himself had served in Morton's household as a boy."
+- id: n.utop.oves
+  attach: utop.oves.4.1
+  kind: editorial
+  status: draft
+  text: "Hythloday reverses the usual picture of sheep. The relative clause in line 4 says they are accustomed to be gentle and to live on little; line 6 says they now devour men themselves, along with fields, houses and towns. Lines 7 to 14 then name the cause: owners of land where the finer wool grows convert tillage to enclosed pasture."
+- id: n.utop.enclosure
+  attach: utop.oves.11
+  kind: editorial
+  status: draft
+  leans_on: "J. H. Lupton, ed., The Utopia of Sir Thomas More (1895), p. 51, n. 3"
+  text: "Enclosure here means fencing open fields and common land as private pasture. Lupton notes that complaints about the spread of sheep-farming were already current in More's day and continued for many years after, and cites a tract dated to about 1550-3, The Decaye of England by the great multitude of shepe."
+- id: n.utop.spelling
+  attach: utop.oves.2.7
+  kind: editorial
+  status: draft
+  text: "The text keeps the spelling of the 1518 printing: u for consonantal v (uobis, uestrae, deuorent), & for et, ij for ii (praedijs), and c for t before i (preciosior, ociose). The page shows the printed letters, and the sound layer reads uobis as vobis. Line 11 has onmia where Lupton's transcription of 1518 has omnia; onmia appears to be a transcription error in the Wikisource text. It is kept because the edition reproduces its source verbatim, and the sound layer reads it as omnia."
+- id: n.utop.suibus
+  attach: utop.oves.12.6
+  kind: editorial
+  status: draft
+  text: "The OCR of Lupton's 1895 edition reads suibus, 'for pigs', where this text has ouibus, 'for sheep'. The OCR copy used here cannot settle which word the 1518 printing has, and it has not been collated against a scan. Robinson ('a shepehowse') and Burnet ('lodge their sheep') both translate sheep."
+- id: n.utop.holy
+  attach: utop.oves.14.2
+  kind: editorial
+  status: draft
+  leans_on: "J. H. Lupton, ed., The Utopia of Sir Thomas More (1895), p. 52, n. 3"
+  text: "The Latin of line 14 has boni uiri, 'good men', for the landlords, ironic after line 8 called the abbots sancti uiri, 'holy men'. Robinson writes 'those good holy men', adding holy. Lupton reads the addition as aimed at the abbots, and adds that nothing shows they were more to blame than other great landlords."

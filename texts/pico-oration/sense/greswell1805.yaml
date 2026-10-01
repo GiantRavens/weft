@@ -1,0 +1,19 @@
+# William Parr Greswell, Memoirs of Angelus Politianus, Joannes Picus of Mirandula ... (2nd ed.,
+# Manchester, 1805), pages 247-248, transcribed from the Internet Archive OCR. Greswell translates
+# the opening and then retells the speech to Adam in his own summary; the second span is that
+# summary, not a translation. Corrections:
+#   - opening quotation mark read as "4t" by the OCR, and "auditors^" as "auditors," (OCR errors);
+#   - "theatre or the universe" corrected to "theatre of the universe" (OCR error; the second
+#     scan of the same book reads "of");
+#   - "6 Asclepi" printed "o Asclepi" (the OCR's 6 stands for an o, possibly accented);
+#   - "MAN" (small capitals) printed "man"; line-end hyphenation joined (Ab-dallah, defi-nite,
+#     existen-ces); straight OCR quotation marks set as curly ones.
+translation: greswell1805
+aligned_by: hand, phase 0
+spans:
+- lines: [pico.exordium.1, pico.exordium.3]
+  text: "“I have read,” (thus he commences his address,) “honourable and reverend auditors, in the remains of Arabic literature, that Abdallah the Saracen, being asked what object, on this great theatre of the universe, he deemed most worthy of admiration, answered, man."
+- lines: [pico.exordium.4, pico.exordium.4]
+  text: "Trismegistus, with no unlike sentiment, exclaims, “Magnum, o Asclepi, miraculum est homo.”"
+- lines: [pico.adam.1, pico.adam.11]
+  text: "Man, unlike other orders of being, was to be circumscribed to no definite destination. Placed in the midst of an immense scene, every where full and perfect in its distribution, his creator bade him look around, amidst the various orders of existences, chuse his own model, and assume that rank which pleased him."

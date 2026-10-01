@@ -1,0 +1,571 @@
+# Human overlay for Machiavelli, Il Principe 17-18. No treebank covers this text: lemma,
+# morphology and gloss are by hand, draft.
+# Lemmas are modern Italian headwords as in the Vocabolario Treccani; old forms (duoi, sieno,
+# offeriscono, defende, lione, debbe, feciono, fussero, saria, nudriva, veggio, medesmo, pentersi)
+# are lemmatized under the modern headword, with the TLIO (Tesoro della lingua italiana delle origini,
+# OVI-CNR) and the Grande dizionario della lingua italiana (Battaglia) as the guide to their sense.
+# Morphology uses Universal Dependencies features, after the conventions of the UD Italian
+# treebanks (ISDT): essere as copula and auxiliary, and potere, dovere, volere before an
+# infinitive, are AUX; a joined article or clitic is a second lemma after ' + '. The gloss keeps the
+# Italian word order; grammar rides in the English (I-said, of-the, it-they-would-keep).
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-30
+  why: hand lemma, morphology and gloss; no openly licensed treebank contains Il Principe
+  status: draft
+  set:
+    prin.17.1.1: {lemma: "nascere", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "arises"}   # Nasce
+    prin.17.1.2: {lemma: "da", morph: "ADP", gloss: "from"}   # da
+    prin.17.1.3: {lemma: "questo", morph: "PRON|Gender=Masc|Number=Sing|PronType=Dem", gloss: "this"}   # questo
+    prin.17.1.4: {lemma: "uno", morph: "DET|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art", gloss: "a"}   # una
+    prin.17.1.5: {lemma: "disputa", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "dispute"}   # disputa:
+    prin.17.1.6: {lemma: "se + egli", morph: "SCONJ + PRON|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "whether-it"}   # s’egli
+    prin.17.1.7: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # è
+    prin.17.1.8: {lemma: "meglio", morph: "ADV", gloss: "better"}   # meglio
+    prin.17.1.9: {lemma: "essere", morph: "AUX|VerbForm=Inf", gloss: "to-be"}   # essere
+    prin.17.1.10: {lemma: "amare", morph: "VERB|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "loved"}   # amato
+    prin.17.1.11: {lemma: "che", morph: "SCONJ", gloss: "than"}   # che
+    prin.17.1.12: {lemma: "temere", morph: "VERB|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "feared"}   # temuto,
+    prin.17.1.13: {lemma: "o", morph: "CCONJ", gloss: "or"}   # o
+    prin.17.1.14: {lemma: "temere", morph: "VERB|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "feared"}   # temuto
+    prin.17.1.15: {lemma: "che", morph: "SCONJ", gloss: "than"}   # che
+    prin.17.1.16: {lemma: "amare", morph: "VERB|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "loved"}   # amato.
+    prin.17.2.1: {lemma: "rispondere + si", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin + PRON|Clitic=Yes|Person=3|PronType=Prs", gloss: "one-answers"}   # Rispondesi,
+    prin.17.2.2: {lemma: "che", morph: "SCONJ", gloss: "that"}   # che
+    prin.17.2.3: {lemma: "si", morph: "PRON|Clitic=Yes|Person=3|PronType=Prs", gloss: "one"}   # si
+    prin.17.2.4: {lemma: "volere", morph: "AUX|Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "would-wish"}   # vorrebbe
+    prin.17.2.5: {lemma: "essere", morph: "AUX|VerbForm=Inf", gloss: "to-be"}   # essere
+    prin.17.2.6: {lemma: "il + uno", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art + PRON|Gender=Masc|Number=Sing|PronType=Ind", gloss: "the-one"}   # l’uno
+    prin.17.2.7: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.17.2.8: {lemma: "il + altro", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art + PRON|Gender=Masc|Number=Sing|PronType=Ind", gloss: "the-other"}   # l’altro;
+    prin.17.3.1: {lemma: "ma", morph: "CCONJ", gloss: "but"}   # ma
+    prin.17.3.2: {lemma: "perché", morph: "SCONJ", gloss: "because"}   # perchè
+    prin.17.3.3: {lemma: "egli", morph: "PRON|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "it"}   # egli
+    prin.17.3.4: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # è
+    prin.17.3.5: {lemma: "difficile", morph: "ADJ|Number=Sing", gloss: "difficult"}   # difficile,
+    prin.17.3.6: {lemma: "che", morph: "SCONJ", gloss: "that"}   # che
+    prin.17.3.7: {lemma: "ei", morph: "PRON|Gender=Masc|Number=Plur|Person=3|PronType=Prs", gloss: "they"}   # e’
+    prin.17.3.8: {lemma: "stare", morph: "VERB|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "stand"}   # stiano
+    prin.17.3.9: {lemma: "insieme", morph: "ADV", gloss: "together"}   # insieme,
+    prin.17.4.1: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # è
+    prin.17.4.2: {lemma: "molto", morph: "ADV", gloss: "much"}   # molto
+    prin.17.4.3: {lemma: "più", morph: "ADV", gloss: "more"}   # più
+    prin.17.4.4: {lemma: "sicuro", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "safe"}   # sicuro
+    prin.17.4.5: {lemma: "il + essere", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art + AUX|VerbForm=Inf", gloss: "the-being"}   # l’esser
+    prin.17.4.6: {lemma: "temere", morph: "VERB|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "feared"}   # temuto
+    prin.17.4.7: {lemma: "che", morph: "SCONJ", gloss: "than"}   # che
+    prin.17.4.8: {lemma: "amare", morph: "VERB|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "loved"}   # amato,
+    prin.17.4.9: {lemma: "quando", morph: "SCONJ", gloss: "when"}   # quando
+    prin.17.4.10: {lemma: "si + avere", morph: "PRON|Clitic=Yes|Person=3|PronType=Prs + VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "one-has"}   # s’abbi
+    prin.17.4.11: {lemma: "a", morph: "ADP", gloss: "to"}   # a
+    prin.17.4.12: {lemma: "mancare", morph: "VERB|VerbForm=Inf", gloss: "go-without"}   # mancare
+    prin.17.4.13: {lemma: "di + il + uno", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art + PRON|Gender=Masc|Number=Sing|PronType=Ind", gloss: "of-the-one"}   # dell’un
+    prin.17.4.14: {lemma: "di + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "of-the"}   # de’
+    prin.17.4.15: {lemma: "due", morph: "NUM|NumType=Card", gloss: "two"}   # duoi.
+    prin.17.5.1: {lemma: "perché", morph: "SCONJ", gloss: "for"}   # Perchè
+    prin.17.5.2: {lemma: "di + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "of-the"}   # degli
+    prin.17.5.3: {lemma: "uomo", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "men"}   # uomini
+    prin.17.5.4: {lemma: "si", morph: "PRON|Clitic=Yes|Person=3|PronType=Prs", gloss: "one"}   # si
+    prin.17.5.5: {lemma: "potere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "can"}   # può
+    prin.17.5.6: {lemma: "dire", morph: "VERB|VerbForm=Inf", gloss: "say"}   # dire
+    prin.17.5.7: {lemma: "questo", morph: "PRON|Gender=Masc|Number=Sing|PronType=Dem", gloss: "this"}   # questo
+    prin.17.5.8: {lemma: "generalmente", morph: "ADV", gloss: "generally"}   # generalmente,
+    prin.17.5.9: {lemma: "che", morph: "SCONJ", gloss: "that"}   # che
+    prin.17.5.10: {lemma: "essere", morph: "AUX|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "they-are"}   # sieno
+    prin.17.5.11: {lemma: "ingrato", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "ungrateful"}   # ingrati,
+    prin.17.5.12: {lemma: "volubile", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "fickle"}   # volubili,
+    prin.17.5.13: {lemma: "simulatore", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "dissemblers"}   # simulatori,
+    prin.17.5.14: {lemma: "fuggitore", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "fleers"}   # fuggitori
+    prin.17.5.15: {lemma: "di + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "of-the"}   # de’
+    prin.17.5.16: {lemma: "pericolo", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "dangers"}   # pericoli,
+    prin.17.5.17: {lemma: "cupido", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "greedy"}   # cupidi
+    prin.17.5.18: {lemma: "di", morph: "ADP", gloss: "of"}   # di
+    prin.17.5.19: {lemma: "guadagno", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "gain"}   # guadagno;
+    prin.17.6.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.17.6.2: {lemma: "mentre", morph: "SCONJ", gloss: "while"}   # mentre
+    prin.17.6.3: {lemma: "fare", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin", gloss: "you-do"}   # fai
+    prin.17.6.4: {lemma: "loro", morph: "PRON|Number=Plur|Person=3|PronType=Prs", gloss: "to-them"}   # loro
+    prin.17.6.5: {lemma: "bene", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "good"}   # bene
+    prin.17.6.6: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "they-are"}   # sono
+    prin.17.6.7: {lemma: "tutto", morph: "PRON|Gender=Masc|Number=Plur|PronType=Tot", gloss: "all"}   # tutti
+    prin.17.6.8: {lemma: "tuo", morph: "DET|Gender=Masc|Number=Plur|Person=2|Poss=Yes|PronType=Prs", gloss: "yours"}   # tuoi,
+    prin.17.7.1: {lemma: "ti", morph: "PRON|Clitic=Yes|Number=Sing|Person=2|PronType=Prs", gloss: "to-you"}   # ti
+    prin.17.7.2: {lemma: "offrire", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "they-offer"}   # offeriscono
+    prin.17.7.3: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # il
+    prin.17.7.4: {lemma: "sangue", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "blood"}   # sangue,
+    prin.17.7.5: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # la
+    prin.17.7.6: {lemma: "roba", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "property"}   # roba,
+    prin.17.7.7: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # la
+    prin.17.7.8: {lemma: "vita", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "life"}   # vita,
+    prin.17.7.9: {lemma: "e", morph: "CCONJ", gloss: "and"}   # ed
+    prin.17.7.10: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # i
+    prin.17.7.11: {lemma: "figliuolo", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "children"}   # figliuoli,
+    prin.17.7.12: {lemma: "come", morph: "SCONJ", gloss: "as"}   # come
+    prin.17.7.13: {lemma: "di", morph: "ADP", gloss: "from"}   # di
+    prin.17.7.14: {lemma: "sopra", morph: "ADV", gloss: "above"}   # sopra
+    prin.17.7.15: {lemma: "dire", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin", gloss: "I-said"}   # dissi,
+    prin.17.7.16: {lemma: "quando", morph: "SCONJ", gloss: "when"}   # quando
+    prin.17.7.17: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # il
+    prin.17.7.18: {lemma: "bisogno", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "need"}   # bisogno
+    prin.17.7.19: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # è
+    prin.17.7.20: {lemma: "discosto", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "far-off"}   # discosto;
+    prin.17.8.1: {lemma: "ma", morph: "CCONJ", gloss: "but"}   # ma,
+    prin.17.8.2: {lemma: "quando", morph: "SCONJ", gloss: "when"}   # quando
+    prin.17.8.3: {lemma: "ti", morph: "PRON|Clitic=Yes|Number=Sing|Person=2|PronType=Prs", gloss: "to-you"}   # ti
+    prin.17.8.4: {lemma: "si", morph: "PRON|Clitic=Yes|Person=3|PronType=Prs|Reflex=Yes", gloss: "itself"}   # si
+    prin.17.8.5: {lemma: "appressare", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "draws-near"}   # appressa,
+    prin.17.8.6: {lemma: "si", morph: "PRON|Clitic=Yes|Person=3|PronType=Prs|Reflex=Yes", gloss: "themselves"}   # si
+    prin.17.8.7: {lemma: "rivoltare", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "turn-round"}   # rivoltano.
+    prin.17.9.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # E
+    prin.17.9.2: {lemma: "quello", morph: "DET|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # quel
+    prin.17.9.3: {lemma: "principe", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "prince"}   # Principe
+    prin.17.9.4: {lemma: "che", morph: "PRON|PronType=Rel", gloss: "who"}   # che
+    prin.17.9.5: {lemma: "si", morph: "PRON|Clitic=Yes|Person=3|PronType=Prs|Reflex=Yes", gloss: "himself"}   # si
+    prin.17.9.6: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "has"}   # è
+    prin.17.9.7: {lemma: "tutto", morph: "ADV", gloss: "wholly"}   # tutto
+    prin.17.9.8: {lemma: "fondare", morph: "VERB|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "founded"}   # fondato
+    prin.17.9.9: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    prin.17.9.10: {lemma: "su + il", morph: "ADP + DET|Definite=Def|Gender=Fem|Number=Plur|PronType=Art", gloss: "on-the"}   # sulle
+    prin.17.9.11: {lemma: "parola", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "words"}   # parole
+    prin.17.9.12: {lemma: "loro", morph: "DET|Number=Plur|Person=3|Poss=Yes|PronType=Prs", gloss: "their"}   # loro,
+    prin.17.9.13: {lemma: "trovare + si", morph: "VERB|VerbForm=Ger + PRON|Clitic=Yes|Person=3|PronType=Prs|Reflex=Yes", gloss: "finding-himself"}   # trovandosi
+    prin.17.9.14: {lemma: "nudo", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "naked"}   # nudo
+    prin.17.9.15: {lemma: "di", morph: "ADP", gloss: "of"}   # di
+    prin.17.9.16: {lemma: "altro", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "other"}   # altri
+    prin.17.9.17: {lemma: "preparamento", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "preparations"}   # preparamenti,
+    prin.17.9.18: {lemma: "rovinare", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "falls-to-ruin"}   # rovina;
+    prin.17.10.1: {lemma: "perché", morph: "SCONJ", gloss: "because"}   # perchè
+    prin.17.10.2: {lemma: "il + amicizia", morph: "DET|Definite=Def|Gender=Fem|Number=Plur|PronType=Art + NOUN|Gender=Fem|Number=Plur", gloss: "the-friendships"}   # l’amicizie
+    prin.17.10.3: {lemma: "che", morph: "PRON|PronType=Rel", gloss: "that"}   # che
+    prin.17.10.4: {lemma: "si", morph: "PRON|Clitic=Yes|Person=3|PronType=Prs", gloss: "one"}   # si
+    prin.17.10.5: {lemma: "acquistare", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "acquire"}   # acquistano
+    prin.17.10.6: {lemma: "con", morph: "ADP", gloss: "with"}   # con
+    prin.17.10.7: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # il
+    prin.17.10.8: {lemma: "prezzo", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "price"}   # prezzo,
+    prin.17.10.9: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.17.10.10: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    prin.17.10.11: {lemma: "con", morph: "ADP", gloss: "with"}   # con
+    prin.17.10.12: {lemma: "grandezza", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "greatness"}   # grandezza
+    prin.17.10.13: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.17.10.14: {lemma: "nobiltà", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "nobility"}   # nobiltà
+    prin.17.10.15: {lemma: "di + animo", morph: "ADP + NOUN|Gender=Masc|Number=Sing", gloss: "of-spirit"}   # d’animo,
+    prin.17.11.1: {lemma: "si", morph: "PRON|Clitic=Yes|Person=3|PronType=Prs", gloss: "one"}   # si
+    prin.17.11.2: {lemma: "meritare", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "earn"}   # meritano,
+    prin.17.11.3: {lemma: "ma", morph: "CCONJ", gloss: "but"}   # ma
+    prin.17.11.4: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    prin.17.11.5: {lemma: "lo", morph: "PRON|Clitic=Yes|Gender=Fem|Number=Plur|Person=3|PronType=Prs", gloss: "them"}   # le
+    prin.17.11.6: {lemma: "si", morph: "PRON|Clitic=Yes|Person=3|PronType=Prs", gloss: "one"}   # si
+    prin.17.11.7: {lemma: "avere", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "has"}   # hanno,
+    prin.17.11.8: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.17.11.9: {lemma: "a + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "at-the"}   # a’
+    prin.17.11.10: {lemma: "tempo", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "times"}   # tempi
+    prin.17.11.11: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    prin.17.11.12: {lemma: "si", morph: "PRON|Clitic=Yes|Person=3|PronType=Prs", gloss: "one"}   # si
+    prin.17.11.13: {lemma: "potere", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "can"}   # possono
+    prin.17.11.14: {lemma: "spendere", morph: "VERB|VerbForm=Inf", gloss: "spend"}   # spendere.
+    prin.17.12.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # E
+    prin.17.12.2: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # gli
+    prin.17.12.3: {lemma: "uomo", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "men"}   # uomini
+    prin.17.12.4: {lemma: "avere", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "have"}   # hanno
+    prin.17.12.5: {lemma: "meno", morph: "ADV", gloss: "less"}   # men
+    prin.17.12.6: {lemma: "rispetto", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "regard"}   # rispetto
+    prin.17.12.7: {lemma: "di", morph: "ADP", gloss: "of"}   # di
+    prin.17.12.8: {lemma: "offendere", morph: "VERB|VerbForm=Inf", gloss: "offending"}   # offendere
+    prin.17.12.9: {lemma: "uno", morph: "PRON|Gender=Masc|Number=Sing|PronType=Ind", gloss: "one"}   # uno
+    prin.17.12.10: {lemma: "che", morph: "PRON|PronType=Rel", gloss: "who"}   # che
+    prin.17.12.11: {lemma: "si", morph: "PRON|Clitic=Yes|Person=3|PronType=Prs|Reflex=Yes", gloss: "himself"}   # si
+    prin.17.12.12: {lemma: "fare", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "makes"}   # facci
+    prin.17.12.13: {lemma: "amare", morph: "VERB|VerbForm=Inf", gloss: "love"}   # amare,
+    prin.17.12.14: {lemma: "che", morph: "SCONJ", gloss: "than"}   # che
+    prin.17.12.15: {lemma: "uno", morph: "PRON|Gender=Masc|Number=Sing|PronType=Ind", gloss: "one"}   # uno
+    prin.17.12.16: {lemma: "che", morph: "PRON|PronType=Rel", gloss: "who"}   # che
+    prin.17.12.17: {lemma: "si", morph: "PRON|Clitic=Yes|Person=3|PronType=Prs|Reflex=Yes", gloss: "himself"}   # si
+    prin.17.12.18: {lemma: "fare", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "makes"}   # facci
+    prin.17.12.19: {lemma: "temere", morph: "VERB|VerbForm=Inf", gloss: "fear"}   # temere;
+    prin.17.13.1: {lemma: "perché", morph: "SCONJ", gloss: "because"}   # perchè
+    prin.17.13.2: {lemma: "il + amore", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art + NOUN|Gender=Masc|Number=Sing", gloss: "the-love"}   # l’amore
+    prin.17.13.3: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # è
+    prin.17.13.4: {lemma: "tenere", morph: "VERB|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "held"}   # tenuto
+    prin.17.13.5: {lemma: "da", morph: "ADP", gloss: "by"}   # da
+    prin.17.13.6: {lemma: "uno", morph: "DET|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art", gloss: "a"}   # un
+    prin.17.13.7: {lemma: "vincolo", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "bond"}   # vincolo
+    prin.17.13.8: {lemma: "di", morph: "ADP", gloss: "of"}   # di
+    prin.17.13.9: {lemma: "obbligo", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "obligation"}   # obbligo,
+    prin.17.13.10: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # il
+    prin.17.13.11: {lemma: "quale", morph: "PRON|Number=Sing|PronType=Rel", gloss: "which"}   # quale,
+    prin.17.13.12: {lemma: "per", morph: "ADP", gloss: "for"}   # per
+    prin.17.13.13: {lemma: "essere", morph: "AUX|VerbForm=Inf", gloss: "being"}   # essere
+    prin.17.13.14: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # gli
+    prin.17.13.15: {lemma: "uomo", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "men"}   # uomini
+    prin.17.13.16: {lemma: "tristo", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "wicked"}   # tristi,
+    prin.17.13.17: {lemma: "da", morph: "ADP", gloss: "by"}   # da
+    prin.17.13.18: {lemma: "ogni", morph: "DET|Number=Sing|PronType=Tot", gloss: "every"}   # ogni
+    prin.17.13.19: {lemma: "occasione", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "occasion"}   # occasione
+    prin.17.13.20: {lemma: "di", morph: "ADP", gloss: "of"}   # di
+    prin.17.13.21: {lemma: "proprio", morph: "ADJ|Gender=Fem|Number=Sing", gloss: "own"}   # propria
+    prin.17.13.22: {lemma: "utilità", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "advantage"}   # utilità
+    prin.17.13.23: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # è
+    prin.17.13.24: {lemma: "rompere", morph: "VERB|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "broken"}   # rotto;
+    prin.17.14.1: {lemma: "ma", morph: "CCONJ", gloss: "but"}   # ma
+    prin.17.14.2: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # il
+    prin.17.14.3: {lemma: "timore", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "fear"}   # timore
+    prin.17.14.4: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # è
+    prin.17.14.5: {lemma: "tenere", morph: "VERB|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "held"}   # tenuto
+    prin.17.14.6: {lemma: "da", morph: "ADP", gloss: "by"}   # da
+    prin.17.14.7: {lemma: "uno", morph: "DET|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art", gloss: "a"}   # una
+    prin.17.14.8: {lemma: "paura", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "dread"}   # paura
+    prin.17.14.9: {lemma: "di", morph: "ADP", gloss: "of"}   # di
+    prin.17.14.10: {lemma: "pena", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "punishment"}   # pena,
+    prin.17.14.11: {lemma: "che", morph: "PRON|PronType=Rel", gloss: "which"}   # che
+    prin.17.14.12: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    prin.17.14.13: {lemma: "abbandonare", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "abandons"}   # abbandona
+    prin.17.14.14: {lemma: "mai", morph: "ADV", gloss: "ever"}   # mai.
+    prin.17.15.1: {lemma: "dovere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "must"}   # Deve
+    prin.17.15.2: {lemma: "nondimeno", morph: "ADV", gloss: "nevertheless"}   # nondimeno
+    prin.17.15.3: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # il
+    prin.17.15.4: {lemma: "principe", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "prince"}   # Principe
+    prin.17.15.5: {lemma: "fare + si", morph: "VERB|VerbForm=Inf + PRON|Clitic=Yes|Person=3|PronType=Prs|Reflex=Yes", gloss: "make-himself"}   # farsi
+    prin.17.15.6: {lemma: "temere", morph: "VERB|VerbForm=Inf", gloss: "fear"}   # temere
+    prin.17.15.7: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    prin.17.15.8: {lemma: "modo", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "manner"}   # modo,
+    prin.17.15.9: {lemma: "che", morph: "SCONJ", gloss: "that"}   # che,
+    prin.17.15.10: {lemma: "se", morph: "SCONJ", gloss: "if"}   # se
+    prin.17.15.11: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    prin.17.15.12: {lemma: "acquistare", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "he-gains"}   # acquista
+    prin.17.15.13: {lemma: "il + amore", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art + NOUN|Gender=Masc|Number=Sing", gloss: "the-love"}   # l’amore,
+    prin.17.15.14: {lemma: "ei", morph: "PRON|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "he"}   # e’
+    prin.17.15.15: {lemma: "fuggire", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "may-flee"}   # fugga
+    prin.17.15.16: {lemma: "il + odio", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art + NOUN|Gender=Masc|Number=Sing", gloss: "the-hatred"}   # l’odio,
+    prin.17.16.1: {lemma: "perché", morph: "SCONJ", gloss: "because"}   # perchè
+    prin.17.16.2: {lemma: "potere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "can"}   # può
+    prin.17.16.3: {lemma: "molto", morph: "ADV", gloss: "very"}   # molto
+    prin.17.16.4: {lemma: "bene", morph: "ADV", gloss: "well"}   # bene
+    prin.17.16.5: {lemma: "stare", morph: "VERB|VerbForm=Inf", gloss: "stand"}   # stare
+    prin.17.16.6: {lemma: "insieme", morph: "ADV", gloss: "together"}   # insieme
+    prin.17.16.7: {lemma: "essere", morph: "AUX|VerbForm=Inf", gloss: "to-be"}   # esser
+    prin.17.16.8: {lemma: "temere", morph: "VERB|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "feared"}   # temuto,
+    prin.17.16.9: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.17.16.10: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    prin.17.16.11: {lemma: "odiare", morph: "VERB|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "hated"}   # odiato;
+    prin.17.17.1: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # il
+    prin.17.17.2: {lemma: "che", morph: "PRON|PronType=Rel", gloss: "which"}   # che
+    prin.17.17.3: {lemma: "fare", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin", gloss: "he-will-do"}   # farà,
+    prin.17.17.4: {lemma: "sempreché", morph: "SCONJ", gloss: "provided-that"}   # semprechè
+    prin.17.17.5: {lemma: "si + astenere", morph: "PRON|Clitic=Yes|Person=3|PronType=Prs|Reflex=Yes + VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "himself-abstains"}   # s’astenga
+    prin.17.17.6: {lemma: "da + il", morph: "ADP + DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "from-the"}   # dalla
+    prin.17.17.7: {lemma: "roba", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "property"}   # roba
+    prin.17.17.8: {lemma: "di + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "of-the"}   # de’
+    prin.17.17.9: {lemma: "suo", morph: "DET|Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs", gloss: "his"}   # suoi
+    prin.17.17.10: {lemma: "cittadino", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "citizens"}   # cittadini,
+    prin.17.17.11: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.17.17.12: {lemma: "di + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "of-the"}   # de’
+    prin.17.17.13: {lemma: "suo", morph: "DET|Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs", gloss: "his"}   # suoi
+    prin.17.17.14: {lemma: "suddito", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "subjects"}   # sudditi,
+    prin.17.17.15: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.17.17.16: {lemma: "da + il", morph: "ADP + DET|Definite=Def|Gender=Fem|Number=Plur|PronType=Art", gloss: "from-the"}   # dalle
+    prin.17.17.17: {lemma: "donna", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "women"}   # donne
+    prin.17.17.18: {lemma: "loro", morph: "DET|Number=Plur|Person=3|Poss=Yes|PronType=Prs", gloss: "their"}   # loro.
+    prin.18a.1.1: {lemma: "quanto", morph: "ADV", gloss: "how-much"}   # Quanto
+    prin.18a.1.2: {lemma: "essere", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # sia
+    prin.18a.1.3: {lemma: "laudabile", morph: "ADJ|Number=Sing", gloss: "praiseworthy"}   # laudabile
+    prin.18a.1.4: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    prin.18a.1.5: {lemma: "uno", morph: "DET|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art", gloss: "a"}   # un
+    prin.18a.1.6: {lemma: "principe", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "prince"}   # Principe
+    prin.18a.1.7: {lemma: "mantenere", morph: "VERB|VerbForm=Inf", gloss: "to-keep"}   # mantenere
+    prin.18a.1.8: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # la
+    prin.18a.1.9: {lemma: "fede", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "faith"}   # fede,
+    prin.18a.1.10: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.18a.1.11: {lemma: "vivere", morph: "VERB|VerbForm=Inf", gloss: "to-live"}   # vivere
+    prin.18a.1.12: {lemma: "con", morph: "ADP", gloss: "with"}   # con
+    prin.18a.1.13: {lemma: "integrità", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "integrity"}   # integrità,
+    prin.18a.1.14: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.18a.1.15: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    prin.18a.1.16: {lemma: "con", morph: "ADP", gloss: "with"}   # con
+    prin.18a.1.17: {lemma: "astuzia", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "cunning"}   # astuzia,
+    prin.18a.1.18: {lemma: "ciascuno", morph: "PRON|Gender=Masc|Number=Sing|PronType=Tot", gloss: "each-one"}   # ciascuno
+    prin.18a.1.19: {lemma: "lo", morph: "PRON|Clitic=Yes|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "it"}   # lo
+    prin.18a.1.20: {lemma: "intendere", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "understands"}   # intende.
+    prin.18a.2.1: {lemma: "nondimeno", morph: "ADV", gloss: "nevertheless"}   # Nondimeno
+    prin.18a.2.2: {lemma: "si", morph: "PRON|Clitic=Yes|Person=3|PronType=Prs", gloss: "one"}   # si
+    prin.18a.2.3: {lemma: "vedere", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "sees"}   # vede
+    prin.18a.2.4: {lemma: "per", morph: "ADP", gloss: "by"}   # per
+    prin.18a.2.5: {lemma: "esperienza", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "experience"}   # esperienzia,
+    prin.18a.2.6: {lemma: "in + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "in-the"}   # ne’
+    prin.18a.2.7: {lemma: "nostro", morph: "DET|Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs", gloss: "our"}   # nostri
+    prin.18a.2.8: {lemma: "tempo", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "times"}   # tempi,
+    prin.18a.2.9: {lemma: "quello", morph: "DET|Gender=Masc|Number=Plur|PronType=Dem", gloss: "those"}   # quelli
+    prin.18a.2.10: {lemma: "principe", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "princes"}   # Principi
+    prin.18a.2.11: {lemma: "avere", morph: "AUX|VerbForm=Inf", gloss: "to-have"}   # aver
+    prin.18a.2.12: {lemma: "fare", morph: "VERB|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "done"}   # fatto
+    prin.18a.2.13: {lemma: "grande", morph: "ADJ|Number=Sing", gloss: "great"}   # gran
+    prin.18a.2.14: {lemma: "cosa", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "things"}   # cose,
+    prin.18a.3.1: {lemma: "che", morph: "PRON|PronType=Rel", gloss: "who"}   # che
+    prin.18a.3.2: {lemma: "di + il", morph: "ADP + DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "of-the"}   # della
+    prin.18a.3.3: {lemma: "fede", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "faith"}   # fede
+    prin.18a.3.4: {lemma: "avere", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "have"}   # hanno
+    prin.18a.3.5: {lemma: "tenere", morph: "VERB|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "held"}   # tenuto
+    prin.18a.3.6: {lemma: "poco", morph: "DET|Gender=Masc|Number=Sing|PronType=Ind", gloss: "little"}   # poco
+    prin.18a.3.7: {lemma: "conto", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "account"}   # conto,
+    prin.18a.3.8: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.18a.3.9: {lemma: "che", morph: "PRON|PronType=Rel", gloss: "who"}   # che
+    prin.18a.3.10: {lemma: "avere", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "have"}   # hanno
+    prin.18a.3.11: {lemma: "sapere", morph: "VERB|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "known-how"}   # saputo
+    prin.18a.3.12: {lemma: "con", morph: "ADP", gloss: "with"}   # con
+    prin.18a.3.13: {lemma: "astuzia", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "cunning"}   # astuzia
+    prin.18a.3.14: {lemma: "aggirare", morph: "VERB|VerbForm=Inf", gloss: "to-get-round"}   # aggirare
+    prin.18a.3.15: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # i
+    prin.18a.3.16: {lemma: "cervello", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "brains"}   # cervelli
+    prin.18a.3.17: {lemma: "di + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "of-the"}   # degli
+    prin.18a.3.18: {lemma: "uomo", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "men"}   # uomini,
+    prin.18a.4.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # ed
+    prin.18a.4.2: {lemma: "a + il", morph: "ADP + DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "at-the"}   # alla
+    prin.18a.4.3: {lemma: "fine", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "end"}   # fine
+    prin.18a.4.4: {lemma: "avere", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "have"}   # hanno
+    prin.18a.4.5: {lemma: "superare", morph: "VERB|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "overcome"}   # superato
+    prin.18a.4.6: {lemma: "quello", morph: "PRON|Gender=Masc|Number=Plur|PronType=Dem", gloss: "those"}   # quelli
+    prin.18a.4.7: {lemma: "che", morph: "PRON|PronType=Rel", gloss: "who"}   # che
+    prin.18a.4.8: {lemma: "si", morph: "PRON|Clitic=Yes|Person=3|PronType=Prs|Reflex=Yes", gloss: "themselves"}   # si
+    prin.18a.4.9: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "are"}   # sono
+    prin.18a.4.10: {lemma: "fondare", morph: "VERB|Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part", gloss: "founded"}   # fondati
+    prin.18a.4.11: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    prin.18a.4.12: {lemma: "su", morph: "ADP", gloss: "on"}   # su
+    prin.18a.4.13: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # la
+    prin.18a.4.14: {lemma: "lealtà", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "loyalty"}   # lealtà.
+    prin.18a.5.1: {lemma: "dovere", morph: "AUX|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin", gloss: "you-must"}   # Dovete
+    prin.18a.5.2: {lemma: "adunque", morph: "ADV", gloss: "therefore"}   # adunque
+    prin.18a.5.3: {lemma: "sapere", morph: "VERB|VerbForm=Inf", gloss: "know"}   # sapere
+    prin.18a.5.4: {lemma: "come", morph: "SCONJ", gloss: "how"}   # come
+    prin.18a.5.5: {lemma: "essere", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "there-are"}   # sono
+    prin.18a.5.6: {lemma: "due", morph: "NUM|NumType=Card", gloss: "two"}   # due
+    prin.18a.5.7: {lemma: "generazione", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "kinds"}   # generazioni
+    prin.18a.5.8: {lemma: "di", morph: "ADP", gloss: "of"}   # di
+    prin.18a.5.9: {lemma: "combattere", morph: "VERB|VerbForm=Inf", gloss: "fighting"}   # combattere:
+    prin.18a.5.10: {lemma: "il + uno", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art + PRON|Gender=Fem|Number=Sing|PronType=Ind", gloss: "the-one"}   # l’una
+    prin.18a.5.11: {lemma: "con", morph: "ADP", gloss: "with"}   # con
+    prin.18a.5.12: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Plur|PronType=Art", gloss: "the"}   # le
+    prin.18a.5.13: {lemma: "legge", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "laws"}   # leggi,
+    prin.18a.5.14: {lemma: "il + altro", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art + PRON|Gender=Fem|Number=Sing|PronType=Ind", gloss: "the-other"}   # l’altra
+    prin.18a.5.15: {lemma: "con", morph: "ADP", gloss: "with"}   # con
+    prin.18a.5.16: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Plur|PronType=Art", gloss: "the"}   # le
+    prin.18a.5.17: {lemma: "forza", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "forces"}   # forze.
+    prin.18a.6.1: {lemma: "quello", morph: "DET|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # Quel
+    prin.18a.6.2: {lemma: "primo", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "first"}   # primo
+    prin.18a.6.3: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # è
+    prin.18a.6.4: {lemma: "di + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "of-the"}   # degli
+    prin.18a.6.5: {lemma: "uomo", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "men"}   # uomini;
+    prin.18a.6.6: {lemma: "quello", morph: "DET|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # quel
+    prin.18a.6.7: {lemma: "secondo", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "second"}   # secondo
+    prin.18a.6.8: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # è
+    prin.18a.6.9: {lemma: "di + il", morph: "ADP + DET|Definite=Def|Gender=Fem|Number=Plur|PronType=Art", gloss: "of-the"}   # delle
+    prin.18a.6.10: {lemma: "bestia", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "beasts"}   # bestie;
+    prin.18a.7.1: {lemma: "ma", morph: "CCONJ", gloss: "but"}   # ma
+    prin.18a.7.2: {lemma: "perché", morph: "SCONJ", gloss: "because"}   # perchè
+    prin.18a.7.3: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # il
+    prin.18a.7.4: {lemma: "primo", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "first"}   # primo
+    prin.18a.7.5: {lemma: "spesso", morph: "ADJ|Gender=Fem|Number=Plur", gloss: "frequent"}   # spesse
+    prin.18a.7.6: {lemma: "volta", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "times"}   # volte
+    prin.18a.7.7: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    prin.18a.7.8: {lemma: "bastare", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "suffices"}   # basta,
+    prin.18a.7.9: {lemma: "bisognare", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "it-is-needful"}   # bisogna
+    prin.18a.7.10: {lemma: "ricorrere", morph: "VERB|VerbForm=Inf", gloss: "to-resort"}   # ricorrere
+    prin.18a.7.11: {lemma: "a + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "to-the"}   # al
+    prin.18a.7.12: {lemma: "secondo", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "second"}   # secondo.
+    prin.18a.8.1: {lemma: "pertanto", morph: "ADV", gloss: "therefore"}   # Pertanto
+    prin.18a.8.2: {lemma: "a", morph: "ADP", gloss: "to"}   # ad
+    prin.18a.8.3: {lemma: "uno", morph: "DET|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art", gloss: "a"}   # un
+    prin.18a.8.4: {lemma: "principe", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "prince"}   # Principe
+    prin.18a.8.5: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # è
+    prin.18a.8.6: {lemma: "necessario", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "necessary"}   # necessario
+    prin.18b.1.1: {lemma: "sapere", morph: "VERB|VerbForm=Inf", gloss: "to-know-how"}   # saper
+    prin.18b.1.2: {lemma: "bene", morph: "ADV", gloss: "well"}   # ben
+    prin.18b.1.3: {lemma: "usare", morph: "VERB|VerbForm=Inf", gloss: "to-use"}   # usare
+    prin.18b.1.4: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # la
+    prin.18b.1.5: {lemma: "bestia", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "beast"}   # bestia
+    prin.18b.1.6: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.18b.1.7: {lemma: "il + uomo", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art + NOUN|Gender=Masc|Number=Sing", gloss: "the-man"}   # l’uomo.
+    prin.18b.2.1: {lemma: "questo", morph: "DET|Gender=Fem|Number=Sing|PronType=Dem", gloss: "this"}   # Questa
+    prin.18b.2.2: {lemma: "parte", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "part"}   # parte
+    prin.18b.2.3: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "has"}   # è
+    prin.18b.2.4: {lemma: "essere", morph: "AUX|Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part", gloss: "been"}   # stata
+    prin.18b.2.5: {lemma: "insegnare", morph: "VERB|Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part", gloss: "taught"}   # insegnata
+    prin.18b.2.6: {lemma: "a + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "to-the"}   # a’
+    prin.18b.2.7: {lemma: "principe", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "princes"}   # Principi
+    prin.18b.2.8: {lemma: "copertamente", morph: "ADV", gloss: "covertly"}   # copertamente
+    prin.18b.2.9: {lemma: "da + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "by-the"}   # dagli
+    prin.18b.2.10: {lemma: "antico", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "ancient"}   # antichi
+    prin.18b.2.11: {lemma: "scrittore", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "writers"}   # scrittori,
+    prin.18b.3.1: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # i
+    prin.18b.3.2: {lemma: "quale", morph: "PRON|Number=Plur|PronType=Rel", gloss: "who"}   # quali
+    prin.18b.3.3: {lemma: "scrivere", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "write"}   # scrivono
+    prin.18b.3.4: {lemma: "come", morph: "SCONJ", gloss: "how"}   # come
+    prin.18b.3.5: {lemma: "Achille", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Achilles"}   # Achille
+    prin.18b.3.6: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.18b.3.7: {lemma: "molto", morph: "DET|Gender=Masc|Number=Plur|PronType=Ind", gloss: "many"}   # molti
+    prin.18b.3.8: {lemma: "altro", morph: "PRON|Gender=Masc|Number=Plur|PronType=Ind", gloss: "others"}   # altri
+    prin.18b.3.9: {lemma: "di", morph: "ADP", gloss: "of"}   # di
+    prin.18b.3.10: {lemma: "quello", morph: "DET|Gender=Masc|Number=Plur|PronType=Dem", gloss: "those"}   # quelli
+    prin.18b.3.11: {lemma: "principe", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "princes"}   # Principi
+    prin.18b.3.12: {lemma: "antico", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "ancient"}   # antichi
+    prin.18b.3.13: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "were"}   # furono
+    prin.18b.3.14: {lemma: "dare", morph: "VERB|Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part", gloss: "given"}   # dati
+    prin.18b.3.15: {lemma: "a", morph: "ADP", gloss: "to"}   # a
+    prin.18b.3.16: {lemma: "nutrire", morph: "VERB|VerbForm=Inf", gloss: "to-nurture"}   # nutrire
+    prin.18b.3.17: {lemma: "a", morph: "ADP", gloss: "to"}   # a
+    prin.18b.3.18: {lemma: "Chirone", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Chiron"}   # Chirone
+    prin.18b.3.19: {lemma: "centauro", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "Centaur"}   # Centauro,
+    prin.18b.4.1: {lemma: "che", morph: "PRON|PronType=Rel", gloss: "who"}   # che
+    prin.18b.4.2: {lemma: "sotto", morph: "ADP", gloss: "under"}   # sotto
+    prin.18b.4.3: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # la
+    prin.18b.4.4: {lemma: "suo", morph: "DET|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "his"}   # sua
+    prin.18b.4.5: {lemma: "disciplina", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "discipline"}   # disciplina
+    prin.18b.4.6: {lemma: "lo", morph: "PRON|Clitic=Yes|Gender=Masc|Number=Plur|Person=3|PronType=Prs", gloss: "them"}   # gli
+    prin.18b.4.7: {lemma: "custodire", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin", gloss: "should-keep"}   # custodisse;
+    prin.18b.5.1: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # il
+    prin.18b.5.2: {lemma: "che", morph: "PRON|PronType=Rel", gloss: "which"}   # che
+    prin.18b.5.3: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    prin.18b.5.4: {lemma: "volere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "wants"}   # vuol
+    prin.18b.5.5: {lemma: "dire", morph: "VERB|VerbForm=Inf", gloss: "to-say"}   # dire
+    prin.18b.5.6: {lemma: "altro", morph: "PRON|Gender=Masc|Number=Sing|PronType=Ind", gloss: "other"}   # altro
+    prin.18b.5.7: {lemma: "il + avere", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art + VERB|VerbForm=Inf", gloss: "the-having"}   # l’avere
+    prin.18b.5.8: {lemma: "per", morph: "ADP", gloss: "for"}   # per
+    prin.18b.5.9: {lemma: "precettore", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "teacher"}   # precettore
+    prin.18b.5.10: {lemma: "uno", morph: "DET|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art", gloss: "a"}   # un
+    prin.18b.5.11: {lemma: "mezzo", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "half"}   # mezzo
+    prin.18b.5.12: {lemma: "bestia", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "beast"}   # bestia
+    prin.18b.5.13: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.18b.5.14: {lemma: "mezzo", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "half"}   # mezzo
+    prin.18b.5.15: {lemma: "uomo", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "man"}   # uomo,
+    prin.18b.6.1: {lemma: "se", morph: "SCONJ", gloss: "if"}   # se
+    prin.18b.6.2: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    prin.18b.6.3: {lemma: "che", morph: "SCONJ", gloss: "that"}   # che
+    prin.18b.6.4: {lemma: "bisognare", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "it-is-needful"}   # bisogna
+    prin.18b.6.5: {lemma: "a", morph: "ADP", gloss: "to"}   # a
+    prin.18b.6.6: {lemma: "uno", morph: "DET|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art", gloss: "a"}   # un
+    prin.18b.6.7: {lemma: "principe", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "prince"}   # Principe
+    prin.18b.6.8: {lemma: "sapere", morph: "VERB|VerbForm=Inf", gloss: "to-know-how"}   # sapere
+    prin.18b.6.9: {lemma: "usare", morph: "VERB|VerbForm=Inf", gloss: "to-use"}   # usare
+    prin.18b.6.10: {lemma: "il + uno", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art + ADJ|Gender=Fem|Number=Sing", gloss: "the-one"}   # l’una
+    prin.18b.6.11: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.18b.6.12: {lemma: "il + altro", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art + ADJ|Gender=Fem|Number=Sing", gloss: "the-other"}   # l’altra
+    prin.18b.6.13: {lemma: "natura", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "nature"}   # natura,
+    prin.18b.7.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.18b.7.2: {lemma: "il + uno", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art + PRON|Gender=Fem|Number=Sing|PronType=Ind", gloss: "the-one"}   # l’una
+    prin.18b.7.3: {lemma: "senza", morph: "ADP", gloss: "without"}   # senza
+    prin.18b.7.4: {lemma: "il + altro", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art + PRON|Gender=Fem|Number=Sing|PronType=Ind", gloss: "the-other"}   # l’altra
+    prin.18b.7.5: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    prin.18b.7.6: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # è
+    prin.18b.7.7: {lemma: "durabile", morph: "ADJ|Number=Sing", gloss: "lasting"}   # durabile.
+    prin.18b.8.1: {lemma: "essere", morph: "AUX|VerbForm=Ger", gloss: "being"}   # Essendo
+    prin.18b.8.2: {lemma: "adunque", morph: "ADV", gloss: "therefore"}   # adunque
+    prin.18b.8.3: {lemma: "uno", morph: "DET|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art", gloss: "a"}   # un
+    prin.18b.8.4: {lemma: "principe", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "prince"}   # Principe
+    prin.18b.8.5: {lemma: "necessitare", morph: "VERB|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "compelled"}   # necessitato
+    prin.18b.8.6: {lemma: "sapere", morph: "VERB|VerbForm=Inf", gloss: "to-know-how"}   # sapere
+    prin.18b.8.7: {lemma: "bene", morph: "ADV", gloss: "well"}   # bene
+    prin.18b.8.8: {lemma: "usare", morph: "VERB|VerbForm=Inf", gloss: "to-use"}   # usare
+    prin.18b.8.9: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # la
+    prin.18b.8.10: {lemma: "bestia", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "beast"}   # bestia,
+    prin.18b.8.11: {lemma: "dovere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "he-must"}   # debbe
+    prin.18b.8.12: {lemma: "di", morph: "ADP", gloss: "of"}   # di
+    prin.18b.8.13: {lemma: "quello", morph: "PRON|Gender=Fem|Number=Sing|PronType=Dem", gloss: "that"}   # quella
+    prin.18b.8.14: {lemma: "pigliare", morph: "VERB|VerbForm=Inf", gloss: "take"}   # pigliare
+    prin.18b.8.15: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # la
+    prin.18b.8.16: {lemma: "volpe", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "fox"}   # volpe
+    prin.18b.8.17: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.18b.8.18: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # il
+    prin.18b.8.19: {lemma: "leone", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "lion"}   # lione;
+    prin.18b.9.1: {lemma: "perché", morph: "SCONJ", gloss: "because"}   # perchè
+    prin.18b.9.2: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # il
+    prin.18b.9.3: {lemma: "leone", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "lion"}   # lione
+    prin.18b.9.4: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    prin.18b.9.5: {lemma: "si", morph: "PRON|Clitic=Yes|Person=3|PronType=Prs|Reflex=Yes", gloss: "itself"}   # si
+    prin.18b.9.6: {lemma: "difendere", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "defends"}   # defende
+    prin.18b.9.7: {lemma: "da + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "from-the"}   # da’
+    prin.18b.9.8: {lemma: "laccio", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "snares"}   # lacci,
+    prin.18b.9.9: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # la
+    prin.18b.9.10: {lemma: "volpe", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "fox"}   # volpe
+    prin.18b.9.11: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    prin.18b.9.12: {lemma: "si", morph: "PRON|Clitic=Yes|Person=3|PronType=Prs|Reflex=Yes", gloss: "itself"}   # si
+    prin.18b.9.13: {lemma: "difendere", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "defends"}   # defende
+    prin.18b.9.14: {lemma: "da + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "from-the"}   # da’
+    prin.18b.9.15: {lemma: "lupo", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "wolves"}   # lupi.
+    prin.18b.10.1: {lemma: "bisognare", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "it-is-needful"}   # Bisogna
+    prin.18b.10.2: {lemma: "adunque", morph: "ADV", gloss: "therefore"}   # adunque
+    prin.18b.10.3: {lemma: "essere", morph: "AUX|VerbForm=Inf", gloss: "to-be"}   # essere
+    prin.18b.10.4: {lemma: "volpe", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "fox"}   # volpe
+    prin.18b.10.5: {lemma: "a", morph: "ADP", gloss: "to"}   # a
+    prin.18b.10.6: {lemma: "conoscere", morph: "VERB|VerbForm=Inf", gloss: "know"}   # cognoscere
+    prin.18b.10.7: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # i
+    prin.18b.10.8: {lemma: "laccio", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "snares"}   # lacci,
+    prin.18b.10.9: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.18b.10.10: {lemma: "leone", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "lion"}   # lione
+    prin.18b.10.11: {lemma: "a", morph: "ADP", gloss: "to"}   # a
+    prin.18b.10.12: {lemma: "sbigottire", morph: "VERB|VerbForm=Inf", gloss: "frighten"}   # sbigottire
+    prin.18b.10.13: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # i
+    prin.18b.10.14: {lemma: "lupo", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "wolves"}   # lupi.
+    prin.18b.11.1: {lemma: "coloro", morph: "PRON|Gender=Masc|Number=Plur|PronType=Dem", gloss: "those"}   # Coloro
+    prin.18b.11.2: {lemma: "che", morph: "PRON|PronType=Rel", gloss: "who"}   # che
+    prin.18b.11.3: {lemma: "stare", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "stand"}   # stanno
+    prin.18b.11.4: {lemma: "semplicemente", morph: "ADV", gloss: "simply"}   # semplicemente
+    prin.18b.11.5: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    prin.18b.11.6: {lemma: "su + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "on-the"}   # sul
+    prin.18b.11.7: {lemma: "leone", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "lion"}   # lione,
+    prin.18b.11.8: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    prin.18b.11.9: {lemma: "si", morph: "PRON|Clitic=Yes|Person=3|PronType=Prs|Reflex=Yes", gloss: "themselves"}   # se
+    prin.18b.11.10: {lemma: "ne", morph: "PRON|Clitic=Yes|PronType=Prs", gloss: "of-it"}   # ne
+    prin.18b.11.11: {lemma: "intendere", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "understand"}   # intendono.
+    prin.18b.12.1: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # Non
+    prin.18b.12.2: {lemma: "potere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "can"}   # può
+    prin.18b.12.3: {lemma: "pertanto", morph: "ADV", gloss: "therefore"}   # pertanto
+    prin.18b.12.4: {lemma: "uno", morph: "DET|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art", gloss: "a"}   # un
+    prin.18b.12.5: {lemma: "signore", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "lord"}   # Signore
+    prin.18b.12.6: {lemma: "prudente", morph: "ADJ|Number=Sing", gloss: "prudent"}   # prudente,
+    prin.18b.12.7: {lemma: "né", morph: "CCONJ", gloss: "nor"}   # nè
+    prin.18b.12.8: {lemma: "dovere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "ought"}   # debbe
+    prin.18b.12.9: {lemma: "osservare", morph: "VERB|VerbForm=Inf", gloss: "to-keep"}   # osservare
+    prin.18b.12.10: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # la
+    prin.18b.12.11: {lemma: "fede", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "faith"}   # fede,
+    prin.18b.13.1: {lemma: "quando", morph: "SCONJ", gloss: "when"}   # quando
+    prin.18b.13.2: {lemma: "tale", morph: "DET|Number=Sing|PronType=Dem", gloss: "such"}   # tale
+    prin.18b.13.3: {lemma: "osservanza", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "observance"}   # osservanzia
+    prin.18b.13.4: {lemma: "gli", morph: "PRON|Clitic=Yes|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "to-him"}   # gli
+    prin.18b.13.5: {lemma: "tornare", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "turns"}   # torni
+    prin.18b.13.6: {lemma: "contro", morph: "ADV", gloss: "against"}   # contro,
+    prin.18b.13.7: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.18b.13.8: {lemma: "che", morph: "SCONJ", gloss: "that"}   # che
+    prin.18b.13.9: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "are"}   # sono
+    prin.18b.13.10: {lemma: "spegnere", morph: "VERB|Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part", gloss: "extinguished"}   # spente
+    prin.18b.13.11: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Plur|PronType=Art", gloss: "the"}   # le
+    prin.18b.13.12: {lemma: "cagione", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "causes"}   # cagioni
+    prin.18b.13.13: {lemma: "che", morph: "PRON|PronType=Rel", gloss: "that"}   # che
+    prin.18b.13.14: {lemma: "lo", morph: "PRON|Clitic=Yes|Gender=Fem|Number=Sing|Person=3|PronType=Prs", gloss: "it"}   # la
+    prin.18b.13.15: {lemma: "fare", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "made"}   # feciono
+    prin.18b.13.16: {lemma: "promettere", morph: "VERB|VerbForm=Inf", gloss: "promise"}   # promettere.
+    prin.18b.14.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # E
+    prin.18b.14.2: {lemma: "se", morph: "SCONJ", gloss: "if"}   # se
+    prin.18b.14.3: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # gli
+    prin.18b.14.4: {lemma: "uomo", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "men"}   # uomini
+    prin.18b.14.5: {lemma: "essere", morph: "AUX|Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin", gloss: "were"}   # fussero
+    prin.18b.14.6: {lemma: "tutto", morph: "PRON|Gender=Masc|Number=Plur|PronType=Tot", gloss: "all"}   # tutti
+    prin.18b.14.7: {lemma: "buono", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "good"}   # buoni,
+    prin.18b.14.8: {lemma: "questo", morph: "DET|Gender=Masc|Number=Sing|PronType=Dem", gloss: "this"}   # questo
+    prin.18b.14.9: {lemma: "precetto", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "precept"}   # precetto
+    prin.18b.14.10: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    prin.18b.14.11: {lemma: "essere", morph: "AUX|Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "would-be"}   # saria
+    prin.18b.14.12: {lemma: "buono", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "good"}   # buono;
+    prin.18b.15.1: {lemma: "ma", morph: "CCONJ", gloss: "but"}   # ma
+    prin.18b.15.2: {lemma: "perché", morph: "SCONJ", gloss: "because"}   # perchè
+    prin.18b.15.3: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "they-are"}   # sono
+    prin.18b.15.4: {lemma: "tristo", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "wicked"}   # tristi,
+    prin.18b.15.5: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    prin.18b.15.6: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    prin.18b.15.7: {lemma: "lo + osservare", morph: "PRON|Clitic=Yes|Gender=Fem|Number=Sing|Person=3|PronType=Prs + VERB|Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "it-they-would-keep"}   # l’osserverebbono
+    prin.18b.15.8: {lemma: "a", morph: "ADP", gloss: "to"}   # a
+    prin.18b.15.9: {lemma: "te", morph: "PRON|Number=Sing|Person=2|PronType=Prs", gloss: "you"}   # te,
+    prin.18b.15.10: {lemma: "tu", morph: "PRON|Number=Sing|Person=2|PronType=Prs", gloss: "you"}   # tu
+    prin.18b.15.11: {lemma: "ancora", morph: "ADV", gloss: "also"}   # ancora
+    prin.18b.15.12: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    prin.18b.15.13: {lemma: "lo + avere", morph: "PRON|Clitic=Yes|Gender=Fem|Number=Sing|Person=3|PronType=Prs + VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin", gloss: "it-you-have"}   # l’hai
+    prin.18b.15.14: {lemma: "da", morph: "ADP", gloss: "to"}   # da
+    prin.18b.15.15: {lemma: "osservare", morph: "VERB|VerbForm=Inf", gloss: "keep"}   # osservare
+    prin.18b.15.16: {lemma: "a", morph: "ADP", gloss: "to"}   # a
+    prin.18b.15.17: {lemma: "loro", morph: "PRON|Number=Plur|Person=3|PronType=Prs", gloss: "them"}   # loro.

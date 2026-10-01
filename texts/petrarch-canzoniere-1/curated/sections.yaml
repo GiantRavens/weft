@@ -1,0 +1,115 @@
+# Human overlay for Petrarch, Rerum vulgarium fragmenta 1. No treebank covers this text: lemma,
+# morphology and gloss are by hand, draft.
+# Lemmas are modern Italian headwords as in the Vocabolario Treccani; old forms (duoi, sieno,
+# offeriscono, defende, lione, debbe, feciono, fussero, saria, nudriva, veggio, medesmo, pentersi)
+# are lemmatized under the modern headword, with the TLIO (Tesoro della lingua italiana delle origini,
+# OVI-CNR) and the Grande dizionario della lingua italiana (Battaglia) as the guide to their sense.
+# Morphology uses Universal Dependencies features, after the conventions of the UD Italian
+# treebanks (ISDT): essere as copula and auxiliary, and potere, dovere, volere before an
+# infinitive, are AUX; a joined article or clitic is a second lemma after ' + '. The gloss keeps the
+# Italian word order; grammar rides in the English (I-said, of-the, it-they-would-keep).
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-30
+  why: hand lemma, morphology and gloss; no openly licensed treebank contains the Canzoniere
+  status: draft
+  set:
+    rvf.1.1.1: {lemma: "voi", morph: "PRON|Number=Plur|Person=2|PronType=Prs", gloss: "you"}   # Voi
+    rvf.1.1.2: {lemma: "che + ascoltare", morph: "PRON|PronType=Rel + VERB|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin", gloss: "who-hear"}   # ch’ascoltate
+    rvf.1.1.3: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    rvf.1.1.4: {lemma: "rima", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "rhymes"}   # rime
+    rvf.1.1.5: {lemma: "spargere", morph: "VERB|Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part", gloss: "scattered"}   # sparse
+    rvf.1.1.6: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # il
+    rvf.1.1.7: {lemma: "suono", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "sound"}   # suono
+    rvf.1.2.1: {lemma: "di", morph: "ADP", gloss: "of"}   # di
+    rvf.1.2.2: {lemma: "quello", morph: "DET|Gender=Masc|Number=Plur|PronType=Dem", gloss: "those"}   # quei
+    rvf.1.2.3: {lemma: "sospiro", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "sighs"}   # sospiri
+    rvf.1.2.4: {lemma: "onde + io", morph: "ADV + PRON|Number=Sing|Person=1|PronType=Prs", gloss: "with-which-I"}   # ond’io
+    rvf.1.2.5: {lemma: "nutrire", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin", gloss: "used-to-feed"}   # nudriva
+    rvf.1.2.6: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # ’l
+    rvf.1.2.7: {lemma: "cuore", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "heart"}   # core
+    rvf.1.3.1: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    rvf.1.3.2: {lemma: "su + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "on-the"}   # sul
+    rvf.1.3.3: {lemma: "mio", morph: "DET|Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs", gloss: "my"}   # mio
+    rvf.1.3.4: {lemma: "primo", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "first"}   # primo
+    rvf.1.3.5: {lemma: "giovanile", morph: "ADJ|Number=Sing", gloss: "youthful"}   # giovenile
+    rvf.1.3.6: {lemma: "errore", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "wandering"}   # errore
+    rvf.1.4.1: {lemma: "quando + essere", morph: "SCONJ + AUX|Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin", gloss: "when-I-was"}   # quand’era
+    rvf.1.4.2: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    rvf.1.4.3: {lemma: "parte", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "part"}   # parte
+    rvf.1.4.4: {lemma: "altro + uomo", morph: "ADJ|Gender=Masc|Number=Sing + NOUN|Gender=Masc|Number=Sing", gloss: "another-man"}   # altr’uom
+    rvf.1.4.5: {lemma: "da", morph: "ADP", gloss: "from"}   # da
+    rvf.1.4.6: {lemma: "quello", morph: "PRON|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # quel
+    rvf.1.4.7: {lemma: "che + io", morph: "PRON|PronType=Rel + PRON|Number=Sing|Person=1|PronType=Prs", gloss: "which-I"}   # ch’i’
+    rvf.1.4.8: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin", gloss: "am"}   # sono,
+    rvf.1.5.1: {lemma: "di + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "of-the"}   # del
+    rvf.1.5.2: {lemma: "vario", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "varied"}   # vario
+    rvf.1.5.3: {lemma: "stile", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "style"}   # stile
+    rvf.1.5.4: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    rvf.1.5.5: {lemma: "che + io", morph: "PRON|PronType=Rel + PRON|Number=Sing|Person=1|PronType=Prs", gloss: "which-I"}   # ch’io
+    rvf.1.5.6: {lemma: "piangere", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin", gloss: "weep"}   # piango
+    rvf.1.5.7: {lemma: "e", morph: "CCONJ", gloss: "and"}   # et
+    rvf.1.5.8: {lemma: "ragionare", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin", gloss: "reason"}   # ragiono
+    rvf.1.6.1: {lemma: "fra", morph: "ADP", gloss: "between"}   # fra
+    rvf.1.6.2: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Plur|PronType=Art", gloss: "the"}   # le
+    rvf.1.6.3: {lemma: "vano", morph: "ADJ|Gender=Fem|Number=Plur", gloss: "vain"}   # vane
+    rvf.1.6.4: {lemma: "speranza", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "hopes"}   # speranze
+    rvf.1.6.5: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    rvf.1.6.6: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # ’l
+    rvf.1.6.7: {lemma: "vano", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "vain"}   # van
+    rvf.1.6.8: {lemma: "dolore", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "grief"}   # dolore,
+    rvf.1.7.1: {lemma: "ove", morph: "ADV", gloss: "where"}   # ove
+    rvf.1.7.2: {lemma: "essere", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "there-be"}   # sia
+    rvf.1.7.3: {lemma: "chi", morph: "PRON|PronType=Rel", gloss: "one-who"}   # chi
+    rvf.1.7.4: {lemma: "per", morph: "ADP", gloss: "by"}   # per
+    rvf.1.7.5: {lemma: "prova", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "trial"}   # prova
+    rvf.1.7.6: {lemma: "intendere", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "understands"}   # intenda
+    rvf.1.7.7: {lemma: "amore", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "love"}   # amore,
+    rvf.1.8.1: {lemma: "sperare", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin", gloss: "I-hope"}   # spero
+    rvf.1.8.2: {lemma: "trovare", morph: "VERB|VerbForm=Inf", gloss: "to-find"}   # trovar
+    rvf.1.8.3: {lemma: "pietà", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "pity"}   # pietà,
+    rvf.1.8.4: {lemma: "nonché", morph: "CCONJ", gloss: "let-alone"}   # nonché
+    rvf.1.8.5: {lemma: "perdono", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "pardon"}   # perdono.
+    rvf.1.9.1: {lemma: "ma", morph: "CCONJ", gloss: "but"}   # Ma
+    rvf.1.9.2: {lemma: "bene", morph: "ADV", gloss: "well"}   # ben
+    rvf.1.9.3: {lemma: "vedere", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin", gloss: "I-see"}   # veggio
+    rvf.1.9.4: {lemma: "ora", morph: "ADV", gloss: "now"}   # or
+    rvf.1.9.5: {lemma: "sì", morph: "ADV", gloss: "so"}   # sì
+    rvf.1.9.6: {lemma: "come", morph: "SCONJ", gloss: "as"}   # come
+    rvf.1.9.7: {lemma: "a + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "to-the"}   # al
+    rvf.1.9.8: {lemma: "popolo", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "people"}   # popol
+    rvf.1.9.9: {lemma: "tutto", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "whole"}   # tutto
+    rvf.1.10.1: {lemma: "favola", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "a-tale"}   # favola
+    rvf.1.10.2: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin", gloss: "I-was"}   # fui
+    rvf.1.10.3: {lemma: "grande", morph: "ADJ|Number=Sing", gloss: "great"}   # gran
+    rvf.1.10.4: {lemma: "tempo", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "time"}   # tempo,
+    rvf.1.10.5: {lemma: "onde", morph: "ADV", gloss: "whence"}   # onde
+    rvf.1.10.6: {lemma: "sovente", morph: "ADV", gloss: "often"}   # sovente
+    rvf.1.11.1: {lemma: "di", morph: "ADP", gloss: "of"}   # di
+    rvf.1.11.2: {lemma: "me", morph: "PRON|Number=Sing|Person=1|PronType=Prs", gloss: "me"}   # me
+    rvf.1.11.3: {lemma: "medesimo", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "self"}   # medesmo
+    rvf.1.11.4: {lemma: "meco", morph: "PRON|Number=Sing|Person=1|PronType=Prs", gloss: "with-me"}   # meco
+    rvf.1.11.5: {lemma: "mi", morph: "PRON|Clitic=Yes|Number=Sing|Person=1|PronType=Prs|Reflex=Yes", gloss: "myself"}   # mi
+    rvf.1.11.6: {lemma: "vergognare", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin", gloss: "I-shame"}   # vergogno;
+    rvf.1.12.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # et
+    rvf.1.12.2: {lemma: "di + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "of-the"}   # del
+    rvf.1.12.3: {lemma: "mio", morph: "DET|Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs", gloss: "my"}   # mio
+    rvf.1.12.4: {lemma: "vaneggiare", morph: "VERB|VerbForm=Inf", gloss: "raving"}   # vaneggiar
+    rvf.1.12.5: {lemma: "vergogna", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "shame"}   # vergogna
+    rvf.1.12.6: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # è
+    rvf.1.12.7: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # ’l
+    rvf.1.12.8: {lemma: "frutto", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "fruit"}   # frutto,
+    rvf.1.13.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    rvf.1.13.2: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # ’l
+    rvf.1.13.3: {lemma: "pentire + si", morph: "VERB|VerbForm=Inf + PRON|Clitic=Yes|Person=3|PronType=Prs|Reflex=Yes", gloss: "repenting"}   # pentersi,
+    rvf.1.13.4: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    rvf.1.13.5: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # ’l
+    rvf.1.13.6: {lemma: "conoscere", morph: "VERB|VerbForm=Inf", gloss: "knowing"}   # conoscer
+    rvf.1.13.7: {lemma: "chiaramente", morph: "ADV", gloss: "clearly"}   # chiaramente
+    rvf.1.14.1: {lemma: "che", morph: "SCONJ", gloss: "that"}   # che
+    rvf.1.14.2: {lemma: "quanto", morph: "PRON|Gender=Masc|Number=Sing|PronType=Rel", gloss: "whatever"}   # quanto
+    rvf.1.14.3: {lemma: "piacere", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "pleases"}   # piace
+    rvf.1.14.4: {lemma: "a + il", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "to-the"}   # al
+    rvf.1.14.5: {lemma: "mondo", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "world"}   # mondo
+    rvf.1.14.6: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # è
+    rvf.1.14.7: {lemma: "breve", morph: "ADJ|Number=Sing", gloss: "brief"}   # breve
+    rvf.1.14.8: {lemma: "sogno", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "dream"}   # sogno.

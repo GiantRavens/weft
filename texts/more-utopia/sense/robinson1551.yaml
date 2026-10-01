@@ -1,0 +1,20 @@
+# Ralph Robinson's translation (1551), from J. H. Lupton's edition (Oxford: Clarendon Press, 1895),
+# pages 51-52, transcribed from the Internet Archive OCR of that edition. Robinson's spelling is
+# kept (u for v, vp for up). Corrections:
+#   - Lupton's footnote markers removed: "1" before "But yet", "2" after "the", "a" after "Forsoth",
+#     "3" after "shepe", "a" after "god wote", "b" after "in", "c" after "of it", "1" after
+#     "shepehowse", "a" after "no small" (probably a misread numeral), "3" after "holy";
+#   - "them se^fes" corrected to "them selfes" and "Hue" to "liue" (OCR errors);
+#   - line-end hyphenation joined (steal-ing, deuow-erers).
+# The quotation marks are Lupton's.
+translation: robinson1551
+aligned_by: hand, phase 0
+spans:
+- lines: [utop.oves.1, utop.oves.2]
+  text: "But yet this is not onlye the necessary cause of stealing. There is an other which as I suppose is proper and peculiare to yow Englishe men alone."
+- lines: [utop.oves.3, utop.oves.3]
+  text: "\"What is that?\" quod the Cardenall."
+- lines: [utop.oves.4, utop.oves.6]
+  text: "\"Forsoth\" (quod I), \"your shepe, that were wont to be so myke and tame, and so smal eaters, now, as I heare saie, be become so greate deuowerers, and so wylde, that they eate vp and swallow down the very men them selfes. They consume, destroy, and deuoure hole fieldes, howses, and cities."
+- lines: [utop.oves.7, utop.oves.14]
+  text: "For looke in what partes of the realme doth growe the fynyst, and therfore dearist woll, there noble men and gentlemen, yea, and certeyn Abbottes, holy men god wote, not contenting them selfes with the yearely reuennues and profyttes that were wont to grow to theyr forefathers and predecessours of their landes, nor beynge content that they liue in rest and pleasure, nothyng profytyng, ye, muche noyinge the weale publique, leaue no grounde for tyllage; they enclose all in pastures; they throw downe houses; they plucke downe townes; and leaue nothing stondynge but only the churche, to make of it a shepehowse. And, as thoughe yow loste no small quantity of grounde by forestes, chases, laundes, and parkes; those good holy men turne all dwellinge places and all glebe lande into desolation and wildernes."

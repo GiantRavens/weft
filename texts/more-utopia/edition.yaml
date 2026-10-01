@@ -1,0 +1,23 @@
+# Weft edition: Raphael Hythloday on the sheep that devour men, from Book 1 of Thomas More's
+# Utopia, as transcribed on Latin Wikisource in the spelling of the 1518 Basel edition. Every line
+# is checked verbatim against that page by `weft draft`. Weft divides the long sentences into
+# lines at their clause boundaries.
+verify_in: sources/utopia-la.txt
+sections:
+  - id: oves
+    title: "Book 1: the sheep that devour men"
+    lines:
+      - "Neque haec tamen sola est furandi necessitas."
+      - "Est alia magis quantum credo, peculiaris uobis."
+      - "Quaenam est ea? inquit Cardinalis."
+      - "Oues, inquam uestrae, quae tam mites esse, tamque exiguo solent ali,"
+      - "nunc (uti fertur) tam edaces atque indomitae esse coeperunt,"
+      - "ut homines deuorent ipsos, agros, domos, oppida uastent ac depopulentur."
+      - "Nempe quibuscunque regni partibus nascitur lana tenuior, atque ideo preciosior,"
+      - "ibi nobiles & generosi, atque adeo Abbates aliquot sancti uiri,"
+      - "non his contenti reditibus, fructibusque annuis, qui maioribus suis solebant ex praedijs crescere,"
+      - "nec habentes satis, quod ociose ac laute uiuentes, nihil in publicum prosint, nisi etiam obsint,"
+      - "aruo nihil relinquunt, onmia claudunt pascuis,"
+      - "demoliuntur domos, diruunt oppida, templo duntaxat stabulandis ouibus relicto,"
+      - "& tanquam parum soli perderent apud uos ferarum saltus, ac uiuaria,"
+      - "illi boni uiri habitationes omnes, & quicquid usquam est culti, uertunt in solitudinem."

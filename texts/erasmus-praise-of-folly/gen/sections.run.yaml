@@ -1,0 +1,17 @@
+run:
+  weft: 0.1.0
+  sections:
+  - exordium
+counts:
+  lines: 12
+  tokens: 96
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank: lemma and morphology hand-annotated (Lewis and Short), draft'
+- the Low Countries reading is reconstructed from Middle Dutch sound history and the later Dutch school tradition, not from a description of Erasmus's own speech; approximate
+- the 1892 text follows Froben's 1522 edition; the first edition (Paris, 1511) and later ones differ in small points, which are not collated here
+- the 1892 editor's footnotes on nepenthe and Trophonius are stripped before the verbatim check (verify_strip)
+- the 1876 English reprint names no translator; it is attributed to White Kennett (1683) from its wording

@@ -1,0 +1,202 @@
+# Pronunciation lexicon for Weft's French texts, keyed by the modern spelling of each word
+# (the token's n field, lowercased). Hand-written, one entry per word form.
+#
+#   m1580   IPA, French of about 1580 (approximate; see pipeline/weft/french.py for the evidence
+#           and its limits). The form is the word said alone or before a consonant. A final e caduc
+#           (ə) is written where the grammarians of the period still count it; french.py drops it
+#           before a vowel.
+#   modern  IPA, standard modern French, the word said alone.
+#   lz      the latent final consonant sounded in liaison before a vowel (z t n r k l), if any.
+#           In m1580 french.py sounds it before any vowel-initial word with no pause between;
+#           in modern only where the edition token sets z: true.
+#
+# Syllables are divided with dots. Length is shown with ː.
+"c’": {m1580: "s", modern: "s"}
+"d’": {m1580: "d", modern: "d"}
+"j’": {m1580: "ʒ", modern: "ʒ"}
+"l’": {m1580: "l", modern: "l"}
+"m’": {m1580: "m", modern: "m"}
+"n’": {m1580: "n", modern: "n"}
+"qu’": {m1580: "k", modern: "k"}
+"s’": {m1580: "s", modern: "s"}
+"t’": {m1580: "t", modern: "t"}
+"a": {m1580: "a", modern: "a"}
+"à": {m1580: "a", modern: "a"}
+"ai": {m1580: "e", modern: "e"}
+"ainsi": {m1580: "ɛ̃.si", modern: "ɛ̃.si"}
+"amis": {m1580: "a.mi", modern: "a.mi", lz: "z"}
+"apprendre": {m1580: "a.prɑ̃.drə", modern: "a.pʁɑ̃dʁ"}
+"apprentissage": {m1580: "a.prɑ̃.ti.sa.ʒə", modern: "a.pʁɑ̃.ti.saʒ"}
+"apprêter": {m1580: "a.prɛ.te", modern: "a.pʁɛ.te", lz: "r"}
+"artifice": {m1580: "ar.ti.fi.sə", modern: "aʁ.ti.fis"}
+"assure": {m1580: "a.sy.rə", modern: "a.syʁ"}
+"au": {m1580: "o", modern: "o"}
+"aucune": {m1580: "o.ky.nə", modern: "o.kyn"}
+"aucunement": {m1580: "o.ky.nə.mɑ̃", modern: "o.kyn.mɑ̃", lz: "t"}
+"aucuns": {m1580: "o.kỹ", modern: "o.kœ̃", lz: "z"}
+"autant": {m1580: "o.tɑ̃", modern: "o.tɑ̃", lz: "t"}
+"autre": {m1580: "o.trə", modern: "otʁ"}
+"avertit": {m1580: "a.vɛr.ti", modern: "a.vɛʁ.ti", lz: "t"}
+"ayant": {m1580: "ɛ.jɑ̃", modern: "ɛ.jɑ̃", lz: "t"}
+"bien": {m1580: "bjɛ̃", modern: "bjɛ̃", lz: "n"}
+"bonne": {m1580: "bɔ̃.nə", modern: "bɔn"}
+"capables": {m1580: "ka.pa.blə", modern: "ka.pabl", lz: "z"}
+"car": {m1580: "kar", modern: "kaʁ"}
+"ce": {m1580: "sə", modern: "sə"}
+"cents": {m1580: "sɑ̃", modern: "sɑ̃", lz: "z"}
+"ces": {m1580: "se", modern: "se", lz: "z"}
+"chose": {m1580: "ʃo.zə", modern: "ʃoz"}
+"cicéron": {m1580: "si.se.ro", modern: "si.se.ʁɔ̃"}
+"cinq": {m1580: "sɛ̃", modern: "sɛ̃k", lz: "k"}
+"commodité": {m1580: "kɔ.mɔ.di.te", modern: "kɔ.mɔ.di.te"}
+"conditions": {m1580: "kɔ̃.di.sjɔ̃", modern: "kɔ̃.di.sjɔ̃", lz: "z"}
+"connaissance": {m1580: "kɔ.nwɛ.sɑ̃.sə", modern: "kɔ.nɛ.sɑ̃s"}
+"considération": {m1580: "kɔ̃.si.de.ra.sjɔ̃", modern: "kɔ̃.si.de.ʁa.sjɔ̃"}
+"contemplation": {m1580: "kɔ̃.tɑ̃.pla.sjɔ̃", modern: "kɔ̃.tɑ̃.pla.sjɔ̃"}
+"contention": {m1580: "kɔ̃.tɑ̃.sjɔ̃", modern: "kɔ̃.tɑ̃.sjɔ̃"}
+"corps": {m1580: "kɔr", modern: "kɔʁ", lz: "z"}
+"craindre": {m1580: "krɛ̃.drə", modern: "kʁɛ̃dʁ"}
+"de": {m1580: "də", modern: "də"}
+"défauts": {m1580: "de.fo", modern: "de.fo", lz: "z"}
+"des": {m1580: "de", modern: "de", lz: "z"}
+"dès": {m1580: "dɛ", modern: "dɛ", lz: "z"}
+"dessein": {m1580: "dɛ.sɛ̃", modern: "de.sɛ̃"}
+"dieu": {m1580: "djø", modern: "djø"}
+"discours": {m1580: "dis.kur", modern: "dis.kuʁ", lz: "z"}
+"dit": {m1580: "di", modern: "di", lz: "t"}
+"domestique": {m1580: "dɔ.mɛs.ti.kə", modern: "dɔ.mɛs.tik"}
+"donc": {m1580: "dɔ̃k", modern: "dɔ̃k"}
+"douce": {m1580: "du.sə", modern: "dus"}
+"du": {m1580: "dy", modern: "dy"}
+"embesognent": {m1580: "ɑ̃.bə.zɔ.ɲə", modern: "ɑ̃.bə.zɔɲ", lz: "t"}
+"emploies": {m1580: "ɑ̃.plwɛː", modern: "ɑ̃.plwa", lz: "z"}
+"en": {m1580: "ɑ̃", modern: "ɑ̃", lz: "n"}
+"encore": {m1580: "ɑ̃.kɔ.rə", modern: "ɑ̃.kɔʁ"}
+"entier": {m1580: "ɑ̃.tje", modern: "ɑ̃.tje", lz: "r"}
+"entière": {m1580: "ɑ̃.tjɛ.rə", modern: "ɑ̃.tjɛʁ"}
+"entre": {m1580: "ɑ̃.trə", modern: "ɑ̃tʁ"}
+"entrée": {m1580: "ɑ̃.treː", modern: "ɑ̃.tʁe"}
+"est": {m1580: "ɛ", modern: "ɛ", lz: "t"}
+"et": {m1580: "e", modern: "e"}
+"été": {m1580: "e.te", modern: "e.te"}
+"étude": {m1580: "e.ty.də", modern: "e.tyd"}
+"étudiée": {m1580: "e.ty.djeː", modern: "e.ty.dje"}
+"eu": {m1580: "y", modern: "y"}
+"eusse": {m1580: "y.sə", modern: "ys"}
+"eût": {m1580: "yː", modern: "y", lz: "t"}
+"façon": {m1580: "fa.sɔ̃", modern: "fa.sɔ̃"}
+"faire": {m1580: "fɛ.rə", modern: "fɛʁ"}
+"faveur": {m1580: "fa.vœr", modern: "fa.vœʁ"}
+"fin": {m1580: "fɛ̃", modern: "fɛ̃"}
+"foi": {m1580: "fwɛ", modern: "fwa"}
+"forces": {m1580: "fɔr.sə", modern: "fɔʁs", lz: "z"}
+"forme": {m1580: "fɔr.mə", modern: "fɔʁm"}
+"frivole": {m1580: "fri.vɔ.lə", modern: "fʁi.vɔl"}
+"fusse": {m1580: "fy.sə", modern: "fys"}
+"gloire": {m1580: "glwɛ.rə", modern: "ɡlwaʁ"}
+"hors": {m1580: "hɔr", modern: "ɔʁ"}
+"humeurs": {m1580: "y.mœr", modern: "y.mœʁ", lz: "z"}
+"ici": {m1580: "i.si", modern: "i.si"}
+"il": {m1580: "i", modern: "il", lz: "l"}
+"ils": {m1580: "i", modern: "il", lz: "z"}
+"je": {m1580: "ʒə", modern: "ʒə"}
+"la": {m1580: "la", modern: "la"}
+"lecteur": {m1580: "lɛk.tœr", modern: "lɛk.tœʁ"}
+"liberté": {m1580: "li.bɛr.te", modern: "li.bɛʁ.te"}
+"liront": {m1580: "li.rɔ̃", modern: "li.ʁɔ̃", lz: "t"}
+"livre": {m1580: "li.vrə", modern: "livʁ"}
+"lois": {m1580: "lwɛ", modern: "lwa", lz: "z"}
+"loisir": {m1580: "lwɛ.zir", modern: "lwa.ziʁ"}
+"ma": {m1580: "ma", modern: "ma"}
+"marche": {m1580: "mar.ʃə", modern: "maʁʃ"}
+"mars": {m1580: "mars", modern: "maʁs"}
+"matière": {m1580: "ma.tjɛ.rə", modern: "ma.tjɛʁ"}
+"me": {m1580: "mə", modern: "mə"}
+"mes": {m1580: "me", modern: "me", lz: "z"}
+"mieux": {m1580: "mjø", modern: "mjø", lz: "z"}
+"mille": {m1580: "mi.lə", modern: "mil"}
+"moi": {m1580: "mwɛ", modern: "mwa"}
+"moi-même": {m1580: "mwɛ.mɛː.mə", modern: "mwa.mɛm"}
+"mon": {m1580: "mɔ̃", modern: "mɔ̃", lz: "n"}
+"monde": {m1580: "mɔ̃.də", modern: "mɔ̃d"}
+"montaigne": {m1580: "mɔ̃.ta.ɲə", modern: "mɔ̃.tɛɲ"}
+"mort": {m1580: "mɔr", modern: "mɔʁ"}
+"mourir": {m1580: "mu.rir", modern: "mu.ʁiʁ"}
+"moyen": {m1580: "mwɛ.jɛ̃", modern: "mwa.jɛ̃"}
+"nations": {m1580: "na.sjɔ̃", modern: "na.sjɔ̃", lz: "z"}
+"naturelle": {m1580: "na.ty.rɛ.lə", modern: "na.ty.ʁɛl"}
+"nature": {m1580: "na.ty.rə", modern: "na.tyʁ"}
+"naïve": {m1580: "na.i.və", modern: "na.iv"}
+"ne": {m1580: "nə", modern: "nə"}
+"ni": {m1580: "ni", modern: "ni"}
+"notre": {m1580: "nɔ.trə", modern: "nɔtʁ"}
+"nourrissent": {m1580: "nu.ri.sə", modern: "nu.ʁis", lz: "t"}
+"nous": {m1580: "nu", modern: "nu", lz: "z"}
+"nu": {m1580: "ny", modern: "ny"}
+"nulle": {m1580: "ny.lə", modern: "nyl"}
+"on": {m1580: "ɔ̃", modern: "ɔ̃", lz: "n"}
+"ont": {m1580: "ɔ̃", modern: "ɔ̃", lz: "t"}
+"ordinaire": {m1580: "ɔr.di.nɛ.rə", modern: "ɔʁ.di.nɛʁ"}
+"ou": {m1580: "u", modern: "u"}
+"par": {m1580: "par", modern: "paʁ"}
+"paré": {m1580: "pa.re", modern: "pa.ʁe"}
+"parents": {m1580: "pa.rɑ̃", modern: "pa.ʁɑ̃", lz: "z"}
+"part": {m1580: "par", modern: "paʁ"}
+"particulière": {m1580: "par.ti.ky.ljɛ.rə", modern: "paʁ.ti.ky.ljɛʁ"}
+"pas": {m1580: "pa", modern: "pa", lz: "z"}
+"peins": {m1580: "pɛ̃", modern: "pɛ̃", lz: "z"}
+"peint": {m1580: "pɛ̃", modern: "pɛ̃", lz: "t"}
+"perdu": {m1580: "pɛr.dy", modern: "pɛʁ.dy"}
+"permis": {m1580: "pɛr.mi", modern: "pɛʁ.mi", lz: "z"}
+"philosopher": {m1580: "fi.lɔ.zɔ.fe", modern: "fi.lɔ.zɔ.fe", lz: "r"}
+"plus": {m1580: "ply", modern: "ply", lz: "z"}
+"point": {m1580: "pwɛ̃", modern: "pwɛ̃", lz: "t"}
+"pour": {m1580: "pur", modern: "puʁ"}
+"premier": {m1580: "prə.mje", modern: "pʁə.mje", lz: "r"}
+"premières": {m1580: "prə.mjɛ.rə", modern: "pʁə.mjɛʁ", lz: "z"}
+"présenterais": {m1580: "pre.zɑ̃.tə.rwɛ", modern: "pʁe.zɑ̃.tʁɛ", lz: "z"}
+"privée": {m1580: "pri.veː", modern: "pʁi.ve"}
+"proposé": {m1580: "prɔ.po.ze", modern: "pʁɔ.po.ze"}
+"publique": {m1580: "py.bli.kə", modern: "py.blik"}
+"puissent": {m1580: "pɥi.sə", modern: "pɥis", lz: "t"}
+"quatre": {m1580: "ka.trə", modern: "katʁ"}
+"que": {m1580: "kə", modern: "kə"}
+"quelque": {m1580: "kɛl.kə", modern: "kɛlk"}
+"qui": {m1580: "ki", modern: "ki"}
+"raison": {m1580: "rɛ.zɔ̃", modern: "ʁɛ.zɔ̃"}
+"rechercher": {m1580: "rə.ʃɛr.ʃe", modern: "ʁə.ʃɛʁ.ʃe", lz: "r"}
+"ressemblance": {m1580: "rə.sɑ̃.blɑ̃.sə", modern: "ʁə.sɑ̃.blɑ̃s"}
+"retirent": {m1580: "rə.ti.rə", modern: "ʁə.tiʁ", lz: "t"}
+"retrouver": {m1580: "rə.tru.ve", modern: "ʁə.tʁu.ve", lz: "r"}
+"révérence": {m1580: "re.ve.rɑ̃.sə", modern: "ʁe.ve.ʁɑ̃s"}
+"résout": {m1580: "re.zu", modern: "ʁe.zu", lz: "t"}
+"sagesse": {m1580: "sa.ʒɛ.sə", modern: "sa.ʒɛs"}
+"sans": {m1580: "sɑ̃", modern: "sɑ̃", lz: "z"}
+"se": {m1580: "sə", modern: "sə"}
+"service": {m1580: "sɛr.vi.sə", modern: "sɛʁ.vis"}
+"si": {m1580: "si", modern: "si"}
+"simple": {m1580: "sɛ̃.plə", modern: "sɛ̃pl"}
+"sont": {m1580: "sɔ̃", modern: "sɔ̃", lz: "t"}
+"sous": {m1580: "su", modern: "su", lz: "z"}
+"suis": {m1580: "sɥi", modern: "sɥi", lz: "z"}
+"sujet": {m1580: "sy.ʒɛ", modern: "sy.ʒɛ", lz: "t"}
+"tel": {m1580: "tɛl", modern: "tɛl"}
+"ton": {m1580: "tɔ̃", modern: "tɔ̃", lz: "n"}
+"toute": {m1580: "tu.tə", modern: "tut"}
+"tout": {m1580: "tu", modern: "tu", lz: "t"}
+"tôt": {m1580: "toː", modern: "to", lz: "t"}
+"traits": {m1580: "trɛ", modern: "tʁɛ", lz: "z"}
+"très-volontiers": {m1580: "trɛ.vɔ.lɔ̃.tje", modern: "tʁɛ.vɔ.lɔ̃.tje", lz: "z"}
+"tu": {m1580: "ty", modern: "ty"}
+"un": {m1580: "ỹ", modern: "œ̃", lz: "n"}
+"une": {m1580: "y.nə", modern: "yn"}
+"vain": {m1580: "vɛ̃", modern: "vɛ̃"}
+"veux": {m1580: "vø", modern: "vø", lz: "z"}
+"vif": {m1580: "vif", modern: "vif"}
+"vingts": {m1580: "vɛ̃", modern: "vɛ̃", lz: "z"}
+"vive": {m1580: "vi.və", modern: "viv"}
+"vivre": {m1580: "vi.vrə", modern: "vivʁ"}
+"voie": {m1580: "vwɛː", modern: "vwa"}
+"voué": {m1580: "vu.e", modern: "vwe"}
+"y": {m1580: "i", modern: "i"}
+"âme": {m1580: "aː.mə", modern: "ɑm"}

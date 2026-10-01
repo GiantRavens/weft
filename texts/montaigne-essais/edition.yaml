@@ -1,0 +1,382 @@
+# Weft edition of two passages of Montaigne's Essais in the spelling of the 1595 edition (Paris,
+# Abel L'Angelier), as printed in the Didot edition of 1907, tome 1 (ed. général Michaud), which
+# sets the 1595 text "collationné sur l'exemplaire de l'édition de 1595" at the Bibliothèque
+# nationale opposite a modern French version. Transcribed on French Wikisource and checked verbatim
+# against the two pages (`weft draft` reports edition-not-in-source otherwise); the wiki markup
+# ({{iv}} paragraph marks, the drop capital of Cicero) is set aside by verify_strip.
+#
+# The edition prints u for v and i for j as the 16th-century printers did (vn liure, ie); Weft keeps
+# that. Weft divides the text into lines at the sentence and at the colons of the print.
+#
+#   t        the word as printed, punctuation attached (foy,); the elided c’ l’ qu’ are tokens of
+#            their own, glued to the next word
+#   n        the modern spelling, typed by hand; the page shows it as "Modern spelling" and the
+#            sound is looked up from it (pipeline/weft/data/fr_lexicon.yaml)
+#   p        punctuation set off by a space in the print (" :")
+#   glue     no space follows
+#   z        liaison in the modern scheme
+#   ipa      a per-occurrence override of the lexicon
+joiner: " "
+verify_strip: '\{\{iv\}\}|\{\{Lettrine\||\}\}\{\{sc\||\}\}'
+sections:
+  - id: "pref"
+    title: "Au lecteur (To the reader), dated 1 March 1580"
+    verify_in: sources/didot1907-p34.txt
+    lines:
+      - tokens:
+        - {t: "C’", n: "c’", glue: true}
+        - {t: "est", n: "est", z: true}
+        - {t: "icy", n: "ici"}
+        - {t: "vn", n: "un"}
+        - {t: "Liure", n: "livre"}
+        - {t: "de", n: "de"}
+        - {t: "bonne", n: "bonne"}
+        - {t: "foy,", n: "foi"}
+        - {t: "Lecteur.", n: "lecteur"}
+      - tokens:
+        - {t: "Il", n: "il"}
+        - {t: "t’", n: "t’", glue: true}
+        - {t: "aduertit", n: "avertit"}
+        - {t: "dés", n: "dès"}
+        - {t: "l’", n: "l’", glue: true}
+        - {t: "entree,", n: "entrée"}
+        - {t: "que", n: "que"}
+        - {t: "ie", n: "je"}
+        - {t: "ne", n: "ne"}
+        - {t: "m’", n: "m’", glue: true}
+        - {t: "y", n: "y"}
+        - {t: "suis", n: "suis"}
+        - {t: "proposé", n: "proposé"}
+        - {t: "aucune", n: "aucune"}
+        - {t: "fin,", n: "fin"}
+        - {t: "que", n: "que"}
+        - {t: "domestique", n: "domestique"}
+        - {t: "et", n: "et"}
+        - {t: "priuee", n: "privée", p: ":"}
+      - tokens:
+        - {t: "ie", n: "je"}
+        - {t: "n’", n: "n’", glue: true}
+        - {t: "y", n: "y"}
+        - {t: "ay", n: "ai"}
+        - {t: "eu", n: "eu"}
+        - {t: "nulle", n: "nulle"}
+        - {t: "consideration", n: "considération"}
+        - {t: "de", n: "de"}
+        - {t: "ton", n: "ton"}
+        - {t: "seruice,", n: "service"}
+        - {t: "ny", n: "ni"}
+        - {t: "de", n: "de"}
+        - {t: "ma", n: "ma"}
+        - {t: "gloire", n: "gloire", p: ":"}
+      - tokens:
+        - {t: "mes", n: "mes"}
+        - {t: "forces", n: "forces"}
+        - {t: "ne", n: "ne"}
+        - {t: "sont", n: "sont"}
+        - {t: "pas", n: "pas"}
+        - {t: "capables", n: "capables"}
+        - {t: "d’", n: "d’", glue: true}
+        - {t: "vn", n: "un"}
+        - {t: "tel", n: "tel"}
+        - {t: "dessein.", n: "dessein"}
+      - tokens:
+        - {t: "Ie", n: "je"}
+        - {t: "l’", n: "l’", glue: true}
+        - {t: "ay", n: "ai"}
+        - {t: "voué", n: "voué"}
+        - {t: "à", n: "à"}
+        - {t: "la", n: "la"}
+        - {t: "commodité", n: "commodité"}
+        - {t: "particuliere", n: "particulière"}
+        - {t: "de", n: "de"}
+        - {t: "mes", n: "mes"}
+        - {t: "parens", n: "parents"}
+        - {t: "et", n: "et"}
+        - {t: "amis", n: "amis", p: ":"}
+      - tokens:
+        - {t: "à", n: "à"}
+        - {t: "ce", n: "ce"}
+        - {t: "que", n: "que"}
+        - {t: "m’", n: "m’", glue: true}
+        - {t: "ayans", n: "ayant"}
+        - {t: "perdu", n: "perdu"}
+        - {t: "(ce", n: "ce"}
+        - {t: "qu’", n: "qu’", glue: true}
+        - {t: "ils", n: "ils", z: true}
+        - {t: "ont", n: "ont"}
+        - {t: "à", n: "à"}
+        - {t: "faire", n: "faire"}
+        - {t: "bien", n: "bien"}
+        - {t: "tost)", n: "tôt"}
+        - {t: "ils", n: "ils", z: true}
+        - {t: "y", n: "y"}
+        - {t: "puissent", n: "puissent"}
+        - {t: "retrouuer", n: "retrouver"}
+        - {t: "aucuns", n: "aucuns"}
+        - {t: "traicts", n: "traits"}
+        - {t: "de", n: "de"}
+        - {t: "mes", n: "mes"}
+        - {t: "conditions", n: "conditions"}
+        - {t: "et", n: "et"}
+        - {t: "humeurs,", n: "humeurs"}
+      - tokens:
+        - {t: "et", n: "et"}
+        - {t: "que", n: "que"}
+        - {t: "par", n: "par"}
+        - {t: "ce", n: "ce"}
+        - {t: "moyen", n: "moyen"}
+        - {t: "ils", n: "ils"}
+        - {t: "nourrissent", n: "nourrissent"}
+        - {t: "plus", n: "plus", z: true}
+        - {t: "entiere", n: "entière"}
+        - {t: "et", n: "et"}
+        - {t: "plus", n: "plus"}
+        - {t: "visue", n: "vive"}
+        - {t: "la", n: "la"}
+        - {t: "connoissance", n: "connaissance"}
+        - {t: "qu’", n: "qu’", glue: true}
+        - {t: "ils", n: "ils", z: true}
+        - {t: "ont", n: "ont"}
+        - {t: "eu", n: "eu"}
+        - {t: "de", n: "de"}
+        - {t: "moy.", n: "moi"}
+      - tokens:
+        - {t: "Si", n: "si"}
+        - {t: "c’", n: "c’", glue: true}
+        - {t: "eust", n: "eût", z: true}
+        - {t: "esté", n: "été"}
+        - {t: "pour", n: "pour"}
+        - {t: "rechercher", n: "rechercher"}
+        - {t: "la", n: "la"}
+        - {t: "faueur", n: "faveur"}
+        - {t: "du", n: "du"}
+        - {t: "monde,", n: "monde"}
+        - {t: "ie", n: "je"}
+        - {t: "me", n: "me"}
+        - {t: "fusse", n: "fusse"}
+        - {t: "mieus", n: "mieux"}
+        - {t: "paré", n: "paré"}
+        - {t: "et", n: "et"}
+        - {t: "me", n: "me"}
+        - {t: "presanterois", n: "présenterais"}
+        - {t: "en", n: "en", z: true}
+        - {t: "vne", n: "une"}
+        - {t: "marche", n: "marche"}
+        - {t: "estudiee.", n: "étudiée"}
+      - tokens:
+        - {t: "Ie", n: "je"}
+        - {t: "veux", n: "veux"}
+        - {t: "qu’", n: "qu’", glue: true}
+        - {t: "on", n: "on"}
+        - {t: "m’", n: "m’", glue: true}
+        - {t: "y", n: "y"}
+        - {t: "voye", n: "voie"}
+        - {t: "en", n: "en"}
+        - {t: "ma", n: "ma"}
+        - {t: "façon", n: "façon"}
+        - {t: "simple,", n: "simple"}
+        - {t: "naturelle", n: "naturelle"}
+        - {t: "et", n: "et"}
+        - {t: "ordinaire,", n: "ordinaire"}
+        - {t: "sans", n: "sans"}
+        - {t: "contantion", n: "contention"}
+        - {t: "et", n: "et"}
+        - {t: "artifice", n: "artifice", p: ":"}
+      - tokens:
+        - {t: "car", n: "car"}
+        - {t: "c’", n: "c’", glue: true}
+        - {t: "est", n: "est"}
+        - {t: "moy", n: "moi"}
+        - {t: "que", n: "que"}
+        - {t: "ie", n: "je"}
+        - {t: "peins.", n: "peins"}
+      - tokens:
+        - {t: "Mes", n: "mes"}
+        - {t: "defauts", n: "défauts"}
+        - {t: "s’", n: "s’", glue: true}
+        - {t: "y", n: "y"}
+        - {t: "liront", n: "liront"}
+        - {t: "au", n: "au"}
+        - {t: "vif", n: "vif"}
+        - {t: "et", n: "et"}
+        - {t: "ma", n: "ma"}
+        - {t: "forme", n: "forme"}
+        - {t: "naifue,", n: "naïve"}
+        - {t: "autant", n: "autant"}
+        - {t: "que", n: "que"}
+        - {t: "la", n: "la"}
+        - {t: "reuerence", n: "révérence"}
+        - {t: "publique", n: "publique"}
+        - {t: "me", n: "me"}
+        - {t: "l’", n: "l’", glue: true}
+        - {t: "a", n: "a"}
+        - {t: "permis.", n: "permis"}
+      - tokens:
+        - {t: "Que", n: "que"}
+        - {t: "si", n: "si"}
+        - {t: "i’", n: "j’", glue: true}
+        - {t: "eusse", n: "eusse"}
+        - {t: "esté", n: "été"}
+        - {t: "entre", n: "entre"}
+        - {t: "ces", n: "ces"}
+        - {t: "nations", n: "nations"}
+        - {t: "qu’", n: "qu’", glue: true}
+        - {t: "on", n: "on"}
+        - {t: "dit", n: "dit"}
+        - {t: "viure", n: "vivre"}
+        - {t: "encore", n: "encore"}
+        - {t: "souz", n: "sous"}
+        - {t: "la", n: "la"}
+        - {t: "douce", n: "douce"}
+        - {t: "liberté", n: "liberté"}
+        - {t: "des", n: "des"}
+        - {t: "premieres", n: "premières"}
+        - {t: "loix", n: "lois"}
+        - {t: "de", n: "de"}
+        - {t: "nature,", n: "nature"}
+      - tokens:
+        - {t: "ie", n: "je"}
+        - {t: "t’", n: "t’", glue: true}
+        - {t: "asseure", n: "assure"}
+        - {t: "que", n: "que"}
+        - {t: "ie", n: "je"}
+        - {t: "m’", n: "m’", glue: true}
+        - {t: "y", n: "y"}
+        - {t: "fusse", n: "fusse"}
+        - {t: "tres-volontiers", n: "très-volontiers"}
+        - {t: "peint", n: "peint"}
+        - {t: "tout", n: "tout", z: true}
+        - {t: "entier,", n: "entier"}
+        - {t: "et", n: "et"}
+        - {t: "tout", n: "tout"}
+        - {t: "nud.", n: "nu"}
+      - tokens:
+        - {t: "Ainsi,", n: "ainsi"}
+        - {t: "Lecteur,", n: "lecteur"}
+        - {t: "ie", n: "je"}
+        - {t: "suis", n: "suis"}
+        - {t: "moy-mesme", n: "moi-même"}
+        - {t: "la", n: "la"}
+        - {t: "matiere", n: "matière"}
+        - {t: "de", n: "de"}
+        - {t: "mon", n: "mon"}
+        - {t: "liure,", n: "livre"}
+      - tokens:
+        - {t: "ce", n: "ce"}
+        - {t: "n’", n: "n’", glue: true}
+        - {t: "est", n: "est"}
+        - {t: "pas", n: "pas"}
+        - {t: "raison", n: "raison"}
+        - {t: "que", n: "que"}
+        - {t: "tu", n: "tu"}
+        - {t: "employes", n: "emploies"}
+        - {t: "ton", n: "ton"}
+        - {t: "loisir", n: "loisir"}
+        - {t: "en", n: "en", z: true}
+        - {t: "vn", n: "un"}
+        - {t: "subiect", n: "sujet"}
+        - {t: "si", n: "si"}
+        - {t: "friuole", n: "frivole"}
+        - {t: "et", n: "et"}
+        - {t: "si", n: "si"}
+        - {t: "vain.", n: "vain"}
+      - tokens:
+        - {t: "A", n: "à"}
+        - {t: "Dieu", n: "Dieu"}
+        - {t: "donq.", n: "donc"}
+      - tokens:
+        - {t: "De", n: "de"}
+        - {t: "Montaigne,", n: "Montaigne"}
+        - {t: "ce", n: "ce"}
+        - {t: "premier", n: "premier"}
+        - {t: "de", n: "de"}
+        - {t: "mars,", n: "mars"}
+        - {t: "mille", n: "mille"}
+        - {t: "cinq", n: "cinq"}
+        - {t: "cens", n: "cents"}
+        - {t: "quattre", n: "quatre", ipa: {modern: "ka.tʁə"}}
+        - {t: "vins.", n: "vingts"}
+  - id: "1.19"
+    title: "Book I, chapter 19: Que philosopher, c’est apprendre à mourir (opening)"
+    verify_in: sources/didot1907-p126.txt
+    lines:
+      - tokens:
+        - {t: "Cicero", n: "Cicéron"}
+        - {t: "dit", n: "dit"}
+        - {t: "que", n: "que"}
+        - {t: "Philosopher", n: "philosopher"}
+        - {t: "ce", n: "ce"}
+        - {t: "n’", n: "n’", glue: true}
+        - {t: "est", n: "est", z: true}
+        - {t: "autre", n: "autre"}
+        - {t: "chose", n: "chose"}
+        - {t: "que", n: "que"}
+        - {t: "s’", n: "s’", glue: true}
+        - {t: "aprester", n: "apprêter"}
+        - {t: "à", n: "à"}
+        - {t: "la", n: "la"}
+        - {t: "mort.", n: "mort"}
+      - tokens:
+        - {t: "C’", n: "c’", glue: true}
+        - {t: "est", n: "est"}
+        - {t: "d’", n: "d’", glue: true}
+        - {t: "autant", n: "autant"}
+        - {t: "que", n: "que"}
+        - {t: "l’", n: "l’", glue: true}
+        - {t: "estude", n: "étude"}
+        - {t: "et", n: "et"}
+        - {t: "la", n: "la"}
+        - {t: "contemplation", n: "contemplation"}
+        - {t: "retirent", n: "retirent"}
+        - {t: "aucunement", n: "aucunement"}
+        - {t: "nostre", n: "notre"}
+        - {t: "ame", n: "âme"}
+        - {t: "hors", n: "hors"}
+        - {t: "de", n: "de"}
+        - {t: "nous,", n: "nous"}
+      - tokens:
+        - {t: "et", n: "et"}
+        - {t: "l’", n: "l’", glue: true}
+        - {t: "embesongnent", n: "embesognent"}
+        - {t: "à", n: "à"}
+        - {t: "part", n: "part"}
+        - {t: "du", n: "du"}
+        - {t: "corps,", n: "corps"}
+        - {t: "qui", n: "qui"}
+        - {t: "est", n: "est"}
+        - {t: "quelque", n: "quelque"}
+        - {t: "apprentissage", n: "apprentissage"}
+        - {t: "et", n: "et"}
+        - {t: "ressemblance", n: "ressemblance"}
+        - {t: "de", n: "de"}
+        - {t: "la", n: "la"}
+        - {t: "mort", n: "mort", p: ":"}
+      - tokens:
+        - {t: "ou", n: "ou"}
+        - {t: "bien,", n: "bien"}
+        - {t: "c’", n: "c’", glue: true}
+        - {t: "est", n: "est"}
+        - {t: "que", n: "que"}
+        - {t: "toute", n: "toute"}
+        - {t: "la", n: "la"}
+        - {t: "sagesse", n: "sagesse"}
+        - {t: "et", n: "et"}
+        - {t: "discours", n: "discours"}
+        - {t: "du", n: "du"}
+        - {t: "monde", n: "monde"}
+        - {t: "se", n: "se"}
+        - {t: "resoult", n: "résout"}
+        - {t: "en", n: "en"}
+        - {t: "fin", n: "fin"}
+        - {t: "à", n: "à"}
+        - {t: "ce", n: "ce"}
+        - {t: "point,", n: "point"}
+        - {t: "de", n: "de"}
+        - {t: "nous", n: "nous", z: true}
+        - {t: "apprendre", n: "apprendre"}
+        - {t: "à", n: "à"}
+        - {t: "ne", n: "ne"}
+        - {t: "craindre", n: "craindre"}
+        - {t: "point", n: "point"}
+        - {t: "à", n: "à"}
+        - {t: "mourir.", n: "mourir"}

@@ -1,0 +1,79 @@
+work: montaigne-essais
+title: Essais (Au lecteur; Que philosopher c'est apprendre à mourir)
+author: Michel de Montaigne (1533–1592)
+language: fr
+prefix: ess                       # ess.<section>.<line>[.<token>]; sections pref and 1.19
+urn: urn:weft:fr:montaigne.essais  # Weft-local identifier
+unit: section
+section_noun: passage
+written: {year: 1580, label: "first published at Bordeaux in 1580; the preface is dated 1 March 1580. The text here is the posthumous edition of 1595"}
+status: phase-0
+pilot: {sections: ["pref", "1.19"]}
+edition:
+  id: didot1907-1595
+  name: "Essais, text of the 1595 edition (Paris, Abel L'Angelier) in its original spelling, as printed in the Didot edition of 1907, tome 1 (ed. Michaud), via French Wikisource"
+  format: weft-edition
+  file: edition.yaml
+  license: the text is public domain; Wikisource transcription CC BY-SA 4.0; Weft line division and modern spellings CC BY-SA 4.0
+treebank: null                    # no treebank; lemma, morphology and gloss by hand, draft
+schemes: [m1580, modern]          # default = French of about 1580 (approximate)
+sources_extra:
+  - id: didot1907-p34
+    name: "Montaigne, Essais, Didot 1907, tome 1, page 34 (Au lecteur, 1595 text), French Wikisource revision 15039270"
+    file: sources/didot1907-p34.txt
+    url: "https://fr.wikisource.org/w/index.php?title=Page%3AMontaigne%20-%20Essais%2C%20Didot%2C%201907%2C%20tome%201.djvu/34&oldid=15039270&action=raw"
+    sha256: 93f3a0687659243bea33ce6cf5567139804b912edcd8c498c60f3e92ae4aa6c7
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0/
+  - id: didot1907-p126
+    name: "Montaigne, Essais, Didot 1907, tome 1, page 126 (book I, chapter 19, 1595 text), French Wikisource revision 13249901"
+    file: sources/didot1907-p126.txt
+    url: "https://fr.wikisource.org/w/index.php?title=Page%3AMontaigne%20-%20Essais%2C%20Didot%2C%201907%2C%20tome%201.djvu/126&oldid=13249901&action=raw"
+    sha256: b895c9948431fcf96eed26da072c4e053c1fdee7d463dc95345ec5384d91d336
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0/
+  - id: florio1603-ch19
+    name: "Florio's Montaigne, book I, chapter 19, English Wikisource revision 11533521"
+    file: sources/florio1603-ch19.txt
+    url: "https://en.wikisource.org/w/index.php?title=Montaigne%27s%20Essays/Book%20I/Chapter%20XIX&oldid=11533521&action=raw"
+    sha256: 19fe68dfcebf968c822da572b64bc91cebe74bdfc1afe650464f8128f0b37690
+    license: public domain; Wikisource CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0/
+translations:
+  - id: florio1603
+    translator: John Florio
+    year: 1603
+    form: "prose, The Essayes (London, 1603), the first English translation; text from English Wikisource (The Author to the Reader, revision 11533618; book I chapter 19, revision 11533521)"
+    license: public domain; Wikisource CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0/
+    file: sources/florio1603-reader.txt
+    url: "https://en.wikisource.org/w/index.php?title=Montaigne%27s%20Essays/The%20Author%20to%20the%20Reader&oldid=11533618&action=raw"
+    sha256: add66b1875baa8693c62560a2aac63a57def5c022280ef72e6075d2a0f93602c
+  - id: cotton1685
+    translator: Charles Cotton
+    year: 1685
+    form: "prose, Essays of Michael Seigneur de Montaigne (1685–86), as revised by William Carew Hazlitt (1877); Project Gutenberg #3600"
+    partial: "Cotton did not translate the preface (Hazlitt's edition marks it 'Omitted by Cotton'); this translation covers chapter 19 only"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/cotton-hazlitt1877.txt
+    url: https://www.gutenberg.org/cache/epub/3600/pg3600.txt
+    sha256: 1b4c87312f0890e04cecee48e3a5fa263de65743230b819e16cb1bd72f7aee59
+  - id: hazlitt1877
+    translator: "Unnamed translator, in W. C. Hazlitt's edition of Cotton"
+    year: 1877
+    form: "prose; the preface, which Cotton omitted, as supplied in Hazlitt's 1877 edition; Project Gutenberg #3600"
+    partial: "the preface only"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/cotton-hazlitt1877.txt
+    url: https://www.gutenberg.org/cache/epub/3600/pg3600.txt
+    sha256: 1b4c87312f0890e04cecee48e3a5fa263de65743230b819e16cb1bd72f7aee59
+predicted_gaps:
+  - "the source is the 1595 text, not the 1580 first edition, which is not transcribed on Wikisource; the preface differs between editions (see the notes)"
+  - "the transcription reads 'visue' where the Bordeaux copy has 'vifue' (vive); probably a long-s misreading, kept verbatim and given its modern spelling"
+  - "the pronunciation of about 1580 is reconstructed from the grammarians of the period; the value of oi, the r of -er infinitives, and the strength of the e caduc are uncertain"
+  - "Montaigne's own Gascon-coloured pronunciation is not modelled; the m1580 scheme follows the Paris norm"
+  - "no treebank; lemma, morphology and gloss by hand, draft"
+  - "Florio's text on English Wikisource is a modernized reprint of uncertain origin, not a transcription of the 1603 print"
+  - "Cotton's translation is read in Hazlitt's 1877 revision, not as Cotton printed it in 1685-86"

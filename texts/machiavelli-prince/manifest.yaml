@@ -1,0 +1,70 @@
+work: machiavelli-prince
+title: "Il Principe, chapters 17 and 18: feared or loved; the fox and the lion"
+author: "Niccolò Machiavelli (1469–1527)"
+language: it
+prefix: prin                          # prin.<section>.<line>[.<token>]; sections are printed pages
+urn: urn:weft:it:machiavelli.principe # Weft-local identifier
+unit: section
+section_noun: passage
+pilot: {sections: ["17", "18a", "18b"]}
+written: {year: 1513, label: "written in 1513 and circulated in manuscript; first printed in 1532, after Machiavelli's death"}
+status: phase-0
+edition:
+  id: italia1814
+  name: "Il principe di Niccolò Machiavelli (imprint 'Italia', 1814; New York Public Library copy, Google scan at the Internet Archive, ilprincipedinic00machgoog), as proofread on Italian Wikisource"
+  format: weft-edition
+  file: edition.yaml
+  license: "public domain (1814); Wikisource transcription CC BY-SA 4.0; Weft line division CC BY-SA 4.0"
+treebank: null                        # no openly licensed treebank contains Il Principe; hand annotation, draft
+schemes: [florentine, modern]         # default = Florentine around 1513 (approximate)
+scheme_labels:
+  florentine: "Florentine as Machiavelli and his readers likely spoke it, around 1513 (approximate)"
+quantities: pipeline/weft/data/it_lexicon.yaml   # stress, open and closed e and o, voiced s and z
+sources_extra:
+  - id: ws-djvu74
+    name: "Italian Wikisource, 'Pagina:Il Principe.djvu/74' (printed p. 64), revision 2416822"
+    file: sources/ws-djvu74.txt
+    url: "https://it.wikisource.org/w/index.php?oldid=2416822&action=raw"
+    sha256: fd0152cbde49f07e45e726fbb0dde23f072f31cb94187fe787ec164cb6c54036
+    license: "public domain (1814); Wikisource CC BY-SA 4.0"
+    license_url: "https://it.wikisource.org/wiki/Indice:Il_Principe.djvu"
+  - id: ws-djvu76
+    name: "Italian Wikisource, 'Pagina:Il Principe.djvu/76' (printed p. 66), revision 2416824"
+    file: sources/ws-djvu76.txt
+    url: "https://it.wikisource.org/w/index.php?oldid=2416824&action=raw"
+    sha256: 42ff708735df96ba0247ebc890e28a17493c65aa52d705b6a44a0e52c530020e
+    license: "public domain (1814); Wikisource CC BY-SA 4.0"
+    license_url: "https://it.wikisource.org/wiki/Indice:Il_Principe.djvu"
+  - id: ws-djvu77
+    name: "Italian Wikisource, 'Pagina:Il Principe.djvu/77' (printed p. 67), revision 2416825"
+    file: sources/ws-djvu77.txt
+    url: "https://it.wikisource.org/w/index.php?oldid=2416825&action=raw"
+    sha256: 1b98ab3fddd304474f513775f39a70999931644ce3d2cd1e297559b019cb69cc
+    license: "public domain (1814); Wikisource CC BY-SA 4.0"
+    license_url: "https://it.wikisource.org/wiki/Indice:Il_Principe.djvu"
+translations:
+  - id: marriott1908
+    translator: W. K. Marriott
+    year: 1908
+    form: "prose, first published 1908; Project Gutenberg eBook 1232"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/marriott1908.txt
+    url: https://www.gutenberg.org/cache/epub/1232/pg1232.txt
+    sha256: 33496a305f7a4b933784fb5aec95f920fbc3d4687794817e4cc444aa6578d2e4
+  - id: ricci1903
+    translator: Luigi Ricci
+    year: 1903
+    form: "prose, first published 1903; Project Gutenberg eBook 57037, from the Oxford University Press printing of 1909"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/ricci1903.txt
+    url: https://www.gutenberg.org/cache/epub/57037/pg57037.txt
+    sha256: 45e0ad8b224d74b3f535b1c36b0264a702c6f644f73438f0d2fc602ef35f4382
+predicted_gaps:
+  - "the 1814 edition is a pre-critical text; its chapter 17 title has clemenzia where the modern critical editions have pietà, and its spelling and punctuation are not Machiavelli's"
+  - "the Florentine of 1513 is reconstructed; open and closed e and o come from a lexicon built on the modern Tuscan standard and the Latin source vowels, and the gorgia toscana is left out"
+  - "Latinizing spellings (esperienzia, osservanzia, cognoscere) are read as written; whether readers sounded them so is not known"
+  - "one sentence of chapter 18 runs across a page break and is divided there into two lines"
+  - "no treebank; lemma, morphology and gloss are hand-annotated, draft"
+  - "the translations follow other Italian texts; Marriott and Ricci join several of these sentences into one, so the spans are grouped"

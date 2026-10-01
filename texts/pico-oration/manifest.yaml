@@ -1,0 +1,66 @@
+work: pico-oration
+title: Oration on the Dignity of Man
+author: Giovanni Pico della Mirandola
+language: lat
+prefix: pico                     # pico.<section>.<line>[.<token>]
+urn: urn:weft:lat:pico-oratio    # Weft-local identifier
+unit: section
+section_noun: passage
+written: {year: 1486, label: "written in 1486 for a disputation in Rome that never took place; first printed in 1496"}
+status: phase-0
+pilot: {sections: [exordium, adam]}
+edition:
+  id: la-wikisource-oratio
+  name: "Oratio de hominis dignitate as on Latin Wikisource (text of the Bologna edition of 1496, with its folio marks)"
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain; Weft line division CC BY-SA 4.0
+treebank: null                   # no treebank covers Pico; hand annotation, draft
+schemes: [italian-humanist, classical]   # default: Latin as read in northern Italy in the 1480s
+scheme_labels:
+  italian-humanist: "As first read: in the Italian manner of the 1480s, Pico's own (approximate)"
+quantities: pipeline/weft/data/lat_quantities.yaml
+sources_extra:
+  - id: oratio-la
+    name: "Pico, Oratio de hominis dignitate, Latin Wikisource revision 204321"
+    file: sources/oratio-la.txt
+    url: "https://la.wikisource.org/w/index.php?title=Oratio_de_hominis_dignitate&oldid=204321&action=raw"
+    sha256: bcb82ab6f9baa8372b4e9e356c004d9ab2d1cbb7a96781e840cdcfe6bdf321b3
+    license: public domain (text); Wikisource CC BY-SA 4.0
+    license_url: https://la.wikisource.org/wiki/Oratio_de_hominis_dignitate
+translations:
+  - id: greswell1805
+    translator: William Parr Greswell
+    year: 1805
+    form: "prose; the opening translated, the speech to Adam retold in summary"
+    partial: "a summary, not a translation, after the opening"
+    license: public-domain
+    license_url: https://archive.org/details/memoirsofangelus00gres
+    file: sources/greswell1805.txt
+    url: https://archive.org/download/memoirsofangelus00gres/memoirsofangelus00gres_djvu.txt
+    sha256: dabba921c88206783423f265f63148e532ff8cbdf7a16eb3fb1031404c749de0
+  - id: weft-editorial
+    translator: Weft editorial translation (draft)
+    year: 2026
+    form: literal
+    kind: editorial                # Weft's own words, not a published translation
+    license: CC BY-SA 4.0
+  - id: forbes1948
+    kind: reference
+    translator: Elizabeth Livermore Forbes
+    year: 1948
+    title: "Oration on the Dignity of Man, in The Renaissance Philosophy of Man, ed. Ernst Cassirer, Paul Oskar Kristeller and John Herman Randall, Jr., pp. 223-254"
+    publisher: University of Chicago Press
+    note: "First printed in the Journal of the History of Ideas 3 (1942), 347-354."
+  - id: caponigri1956
+    kind: reference
+    translator: A. Robert Caponigri
+    year: 1956
+    title: Oration on the Dignity of Man
+    publisher: Henry Regnery Company (Gateway Editions), Chicago
+predicted_gaps:
+  - "no treebank: lemma and morphology hand-annotated (Lewis and Short), draft"
+  - "no complete public-domain English translation exists: Greswell (1805) translates the opening and summarizes the rest, so a labelled Weft translation runs beside him and the standard modern translations are cited"
+  - "the source's guillemets around quoted speech and its folio mark [132r] are stripped before the verbatim check (verify_strip); the tokenizer does not split guillemets"
+  - "the source keeps the 1496 spelling (caeteris, cohercetur, prefinies, comodius, celestem); the classical reading reads the letters as printed"
+  - "the Italian reading of the 1480s is reconstructed from Italian sound history and the later ecclesiastical tradition; approximate"

@@ -13,15 +13,15 @@ from pathlib import Path
 
 import yaml
 
-from . import __version__, akkadian, chinese, greek, hebrew, japanese, latin, norse, oldenglish, persian, runic, sanskrit, tamil, treebank
+from . import __version__, akkadian, chinese, french, greek, hebrew, italian, japanese, latin, norse, oldenglish, persian, runic, sanskrit, tamil, treebank
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
 INDECLINABLE = set("dcgriebz")   # b: GLAUx coordinating conjunction
 PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebrew, "lzh": chinese, "runic": runic, "ja": japanese, "san": sanskrit,
-        "akk": akkadian, "fa": persian, "ta": tamil}
+        "akk": akkadian, "fa": persian, "ta": tamil, "it": italian, "fr": french}
 NORMALIZE = {"heyne-to-macron": oldenglish.heyne_to_macron}
-LEAD = re.compile(r"^([(\[“]+|[-–—]\u00a0)")
-TRAIL = re.compile(r"((?:[,.·;:!?)\]”\u0387\u037e]|\u00a0[-–—])+)$")
+LEAD = re.compile(r"^([(\[“«‹]+|[-–—]\u00a0)")
+TRAIL = re.compile(r"((?:[,.·;:!?)\]”»›\u0387\u037e]|\u00a0[-–—])+)$")
 
 
 def load_manifest(work_dir: Path) -> dict:

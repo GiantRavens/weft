@@ -1,0 +1,32 @@
+# Weft edition of Petrarch, Rerum vulgarium fragmenta (Canzoniere) 1, from Gianfranco Contini's
+# critical text (Turin: Einaudi, 1964), as transcribed on Italian Wikisource from Liber Liber,
+# revision 3676909. Checked verbatim against that page (verify_in); the page's line-number
+# templates ({{r|5}}) are set aside (verify_strip). Contini prints the Latin spelling et beside e,
+# as Petrarch's own manuscript (Vat. lat. 3195) does.
+#
+# One section, the sonnet; one line per verse. Each token's t is the word as printed with any
+# punctuation after it; `weft draft` moves the punctuation to its own field (weft.italian
+# token_fields), so the line still reproduces the source.
+#   m   (where present) a metrical override; none is needed in this sonnet
+joiner: " "
+verify_in: sources/ws-rvf1.txt
+verify_strip: '\{\{r\|\d+\}\}'
+metre: {name: endecasillabo, rhyme: "ABBA ABBA CDE CDE"}
+sections:
+  - id: "1"
+    title: "Sonnet 1"
+    lines:
+      - tokens: [{t: "Voi"}, {t: "ch’ascoltate"}, {t: "in"}, {t: "rime"}, {t: "sparse"}, {t: "il"}, {t: "suono"}]
+      - tokens: [{t: "di"}, {t: "quei"}, {t: "sospiri"}, {t: "ond’io"}, {t: "nudriva"}, {t: "’l"}, {t: "core"}]
+      - tokens: [{t: "in"}, {t: "sul"}, {t: "mio"}, {t: "primo"}, {t: "giovenile"}, {t: "errore"}]
+      - tokens: [{t: "quand’era"}, {t: "in"}, {t: "parte"}, {t: "altr’uom"}, {t: "da"}, {t: "quel"}, {t: "ch’i’"}, {t: "sono,"}]
+      - tokens: [{t: "del"}, {t: "vario"}, {t: "stile"}, {t: "in"}, {t: "ch’io"}, {t: "piango"}, {t: "et"}, {t: "ragiono"}]
+      - tokens: [{t: "fra"}, {t: "le"}, {t: "vane"}, {t: "speranze"}, {t: "e"}, {t: "’l"}, {t: "van"}, {t: "dolore,"}]
+      - tokens: [{t: "ove"}, {t: "sia"}, {t: "chi"}, {t: "per"}, {t: "prova"}, {t: "intenda"}, {t: "amore,"}]
+      - tokens: [{t: "spero"}, {t: "trovar"}, {t: "pietà,"}, {t: "nonché"}, {t: "perdono."}]
+      - tokens: [{t: "Ma"}, {t: "ben"}, {t: "veggio"}, {t: "or"}, {t: "sì"}, {t: "come"}, {t: "al"}, {t: "popol"}, {t: "tutto"}]
+      - tokens: [{t: "favola"}, {t: "fui"}, {t: "gran"}, {t: "tempo,"}, {t: "onde"}, {t: "sovente"}]
+      - tokens: [{t: "di"}, {t: "me"}, {t: "medesmo"}, {t: "meco"}, {t: "mi"}, {t: "vergogno;"}]
+      - tokens: [{t: "et"}, {t: "del"}, {t: "mio"}, {t: "vaneggiar"}, {t: "vergogna"}, {t: "è"}, {t: "’l"}, {t: "frutto,"}]
+      - tokens: [{t: "e"}, {t: "’l"}, {t: "pentersi,"}, {t: "e"}, {t: "’l"}, {t: "conoscer"}, {t: "chiaramente"}]
+      - tokens: [{t: "che"}, {t: "quanto"}, {t: "piace"}, {t: "al"}, {t: "mondo"}, {t: "è"}, {t: "breve"}, {t: "sogno."}]

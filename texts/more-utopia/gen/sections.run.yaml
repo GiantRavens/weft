@@ -1,0 +1,18 @@
+run:
+  weft: 0.1.0
+  sections:
+  - oves
+counts:
+  lines: 14
+  tokens: 136
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank: lemma and morphology hand-annotated (Lewis and Short), draft'
+- the Tudor English reading is reconstructed from English sound history (an earlier stage of the method used for Newton); approximate
+- the source spells u for v (uestrae, deuorent); the quantity table supplies the v for the sound, and the page keeps the printed u
+- the source misprints onmia for omnia in line 11; the page keeps it, and the quantity table reads it as omnia
+- 'Robinson''s text comes from the OCR of Lupton''s 1895 edition: footnote markers are removed and OCR errors corrected, each listed in the sense file'
+- Lupton's Latin (1518) has suibus, 'pigs', where the Wikisource text has ouibus, 'sheep', in line 12; not collated against the 1518 print here

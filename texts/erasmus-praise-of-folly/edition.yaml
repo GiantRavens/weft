@@ -1,0 +1,22 @@
+# Weft edition: the opening sentence of Folly's speech in Erasmus's Moriae Encomium, from the
+# Leipzig printing of 1892 as transcribed on Latin Wikisource (scan page 720). Every line is
+# checked verbatim against that page by `weft draft`, after the editor's footnotes (<ref>) are
+# stripped. Weft divides the one long sentence into lines at its own clause boundaries.
+verify_in: sources/holtze1892-p720.txt
+verify_strip: "<ref>[^<]*</ref>"
+sections:
+  - id: exordium
+    title: "Folly speaks: the opening of the declamation"
+    lines:
+      - "Utcunque de me vulgo mortales loquuntur,"
+      - "(neque enim sum nescia, quam male audiat stultitia etiam apud stultissimos,)"
+      - "tamen hanc esse, hanc, inquam esse unam, quae meo numine Deos atque homines exhilaro,"
+      - "vel illud abunde magnum est argumentum,"
+      - "quod simulatque in hunc coetum frequentissimum dictura prodii,"
+      - "sic repente omnium vultus nova quadam atque insolita hilaritate enituerunt,"
+      - "sic subito frontem exporrexistis,"
+      - "sic laeto quodam et amabili applausistis risu,"
+      - "ut mihi profecto, quotquot undique praesentes intueor,"
+      - "pariter deorum Homericorum nectare, non sine nepenthe, temulenti esse videamini,"
+      - "cum antehac tristes ac solliciti sederitis,"
+      - "perinde quasi nuper e Trophonii specu reversi."

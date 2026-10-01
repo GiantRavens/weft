@@ -1,0 +1,28 @@
+# Weft edition: the opening of Pico's Oration and God's speech to Adam, from the text on Latin
+# Wikisource (the Bologna edition of 1496). Every line is checked verbatim against that page by
+# `weft draft`, after its folio mark [132r] and its guillemets are stripped. Weft divides the
+# long sentences into lines at their clause boundaries.
+verify_in: sources/oratio-la.txt
+verify_strip: "\\[\\d+[rv]\\]|[«»]"
+sections:
+  - id: exordium
+    title: "The opening: nothing more wonderful than man"
+    lines:
+      - "Legi, Patres colendissimi, in Arabum monumentis,"
+      - "interrogatum Abdalam sarracenum, quid in hac quasi mundana scena admirandum maxime spectaretur,"
+      - "nihil spectari homine admirabilius respondisse."
+      - "Cui sententiae illud Mercurii adstipulatur: Magnum, o Asclepi, miraculum est homo."
+  - id: adam
+    title: "God's speech to Adam"
+    lines:
+      - "Statuit tandem optimus opifex, ut cui dari nihil proprium poterat commune esset quicquid privatum singulis fuerat."
+      - "Igitur hominem accepit indiscretae opus imaginis atque in mundi positum meditullio sic est alloquutus:"
+      - "Nec certam sedem, nec propriam faciem, nec munus ullum peculiare tibi dedimus, o Adam,"
+      - "ut quam sedem, quam faciem, quae munera tute optaveris, ea, pro voto, pro tua sententia, habeas et possideas."
+      - "Definita caeteris natura intra praescriptas a nobis leges cohercetur."
+      - "Tu, nullis angustiis cohercitus, pro tuo arbitrio, in cuius manu te posui, tibi illam prefinies."
+      - "Medium te mundi posui, ut circumspiceres inde comodius quicquid est in mundo."
+      - "Nec te celestem neque terrenum, neque mortalem neque immortalem fecimus,"
+      - "ut tui ipsius quasi arbitrarius honorariusque plastes et fictor, in quam malueris tute formam effingas."
+      - "Poteris in inferiora quae sunt bruta degenerare;"
+      - "poteris in superiora quae sunt divina ex tui animi sententia regenerari."

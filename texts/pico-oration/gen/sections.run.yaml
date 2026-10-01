@@ -1,0 +1,19 @@
+run:
+  weft: 0.1.0
+  sections:
+  - exordium
+  - adam
+counts:
+  lines: 15
+  tokens: 175
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank: lemma and morphology hand-annotated (Lewis and Short), draft'
+- 'no complete public-domain English translation exists: Greswell (1805) translates the opening and summarizes the rest, so a labelled Weft translation runs beside him and the standard modern translations
+  are cited'
+- the source's guillemets around quoted speech and its folio mark [132r] are stripped before the verbatim check (verify_strip); the tokenizer does not split guillemets
+- the source keeps the 1496 spelling (caeteris, cohercetur, prefinies, comodius, celestem); the classical reading reads the letters as printed
+- the Italian reading of the 1480s is reconstructed from Italian sound history and the later ecclesiastical tradition; approximate

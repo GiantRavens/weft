@@ -1,0 +1,17 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+counts:
+  lines: 14
+  tokens: 100
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- the Florentine of 1350 is reconstructed; open and closed e and o come from a lexicon built on the modern Tuscan standard and the Latin source vowels, and the gorgia toscana is left out
+- the metre counts synalepha across words and synaeresis in mio, io, sia; a reader may divide differently, and which syllables carry the main accents is a judgment
+- 'the rhyme is checked by spelling: suono rhymes with sono although their o''s differ in quality'
+- the Bohn and Higginson versions are verse paraphrases; Higginson translates a text with small differences (il core, pentirsi)
+- no treebank; lemma, morphology and gloss are hand-annotated, draft

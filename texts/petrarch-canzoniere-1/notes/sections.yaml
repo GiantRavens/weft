@@ -1,0 +1,40 @@
+# Notes for Petrarch, Rerum vulgarium fragmenta 1. Editorial notes are drafts until a reviewer lifts them.
+- id: n.rvf.1.edition
+  attach: rvf.1.1
+  kind: editorial
+  status: draft
+  leans_on: "F. Petrarca, Canzoniere, ed. G. Contini (Turin: Einaudi, 1964); E. H. Wilkins, The Making of the 'Canzoniere' and Other Petrarchan Studies (Rome, 1951)"
+  text: "The text is Gianfranco Contini's (1964), which follows the manuscript Vatican Library, Vat. lat. 3195. Petrarch had that copy made and corrected it, partly in his own hand, until his death in 1374, so for this collection an author's final text survives. Contini keeps its spelling where it bears on sound or form: et beside e, ch'i' for ch'io. The sonnet stands first in the collection but was not the first poem written. It is usually dated to about 1350, when Petrarch was arranging his Italian poems as a book (Wilkins), and it looks back on them: 'quand'era in parte altr'uom da quel ch'i' sono', when I was in part another man from the one I am."
+- id: n.rvf.1.title
+  attach: rvf.1.1.5
+  kind: editorial
+  status: draft
+  text: "Rime sparse, scattered rhymes, matches the Latin title Petrarch gave the collection in Vat. lat. 3195, Rerum vulgarium fragmenta, fragments of things in the vernacular. Both describe the poems as pieces rather than a single work, although Petrarch spent decades ordering them. Canzoniere, the name used today, is a later editors' title."
+- id: n.rvf.1.metre
+  attach: rvf.1.2
+  kind: editorial
+  status: draft
+  leans_on: "A. Menichetti, Metrica italiana (Padua, 1993), on synalepha and the accent patterns of the endecasillabo"
+  text: "Each line is an endecasillabo: Italian counts syllables up to the last accent, which falls on the 10th, and the line usually ends with one unstressed syllable, so most lines have eleven. A vowel at the end of a word and a vowel at the start of the next usually share one syllable (synalepha): in this line 'sospiri ond'io' joins ri and on. Weft's count also treats ond'io and mio as one syllable each, as the metre needs. The line then needs a main accent on the 4th or the 6th syllable. Line 2 has accents on 2, 4, 6, 8 and 10; read with stress on 4 and 8 it is the type called a minore. The accent counts shown on each line come from the lexicon; which accents a reader stresses most is a judgment, and the labels a minore and a maiore follow a simple rule stated in the code."
+- id: n.rvf.1.rhyme
+  attach: rvf.1.4.8
+  kind: editorial
+  status: draft
+  text: "The rhyme scheme is ABBA ABBA CDE CDE: two quatrains on two rhymes (-ono, -ore), then two tercets on three (-utto, -ente, -ogno). Weft compares rhymes by spelling from the stressed vowel. That is how Italian poets rhymed: suono, with an open o (Latin sonus, short o), rhymes with sono, with a closed o (Latin sum). The sound row shows the difference: SWAW-noh, SOH-noh."
+- id: n.rvf.1.errore
+  attach: rvf.1.3.6
+  kind: editorial
+  status: draft
+  text: "Errore keeps the sense of its Latin source, errare, to wander, as well as the sense of mistake. The gloss gives 'wandering'; 'giovenile errore' can be read as a youthful straying, a youthful mistake, or both. The translations choose: Nott has 'youthful error', Higginson 'youth's errors'. The sestet supports the moral sense, since its subject is shame and repentance."
+- id: n.rvf.1.favola
+  attach: rvf.1.10.1
+  kind: editorial
+  status: draft
+  leans_on: "Horace, Epodes 11.7-8"
+  text: "Favola fui, I was a tale, means that people talked about him: he was the subject of common gossip. The phrase follows Horace, Epodes 11.7-8, 'heu me, per urbem, nam pudet tanti mali, / fabula quanta fui', alas, what talk I was through the city, for I am ashamed of so great an ill. Petrarch knew Horace well, and commentators on this sonnet cite the passage. Both poets join the public talk to the speaker's shame; Petrarch's next line turns it inward: of myself, with myself, I am ashamed."
+- id: n.rvf.1.sound
+  attach: rvf.1.9.3
+  kind: editorial
+  status: draft
+  leans_on: "B. Migliorini, Storia della lingua italiana (Florence, 1960), chapters on the fourteenth century; DOP (Migliorini, Tagliavini, Fiorelli)"
+  text: "The first sound scheme is Florentine of about 1350, reconstructed and approximate. Petrarch was born in Arezzo to Florentine parents and grew up in Provence; the language of the Canzoniere is literary Florentine, and the scheme describes that language, not his personal accent. Veggio, [ˈveddʒo], is an older form of vedo, from Latin video. Et is read e. The gorgia toscana, the softening of k, t, p between vowels heard in Florence today, is left out: there is no positive evidence for it this early. In this sonnet the modern scheme gives the same result for every word, because the one systematic difference Weft models, s voiced between vowels, does not occur. Doubling across words (raddoppiamento sintattico), which both Tuscan and standard Italian have, is not shown."

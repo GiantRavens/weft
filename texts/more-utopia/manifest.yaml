@@ -1,0 +1,56 @@
+work: more-utopia
+title: Utopia
+author: Thomas More
+language: lat
+prefix: utop                     # utop.<section>.<line>[.<token>]
+urn: urn:weft:lat:utopia         # Weft-local identifier
+unit: section
+section_noun: passage
+written: {year: 1516, label: "first printed at Louvain in 1516; this text follows the Basel edition of March 1518"}
+status: phase-0
+pilot: {sections: [oves]}
+edition:
+  id: la-wikisource-utopia
+  name: "Utopia, Book 1, as on Latin Wikisource (spelling of the Basel edition of 1518: u for v, & for et)"
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain; Weft line division CC BY-SA 4.0
+treebank: null                   # no treebank covers More; hand annotation, draft
+schemes: [tudor-english, classical]   # default: Latin as read in England around 1516
+scheme_labels:
+  tudor-english: "As first read: in the English manner of More's generation, around 1516 (approximate)"
+quantities: pipeline/weft/data/lat_quantities.yaml
+sources_extra:
+  - id: utopia-la
+    name: "More, Utopia, Book 1, 'Colloquium apud Cardinalem Ioannem Mortonum', Latin Wikisource revision 241157"
+    file: sources/utopia-la.txt
+    url: "https://la.wikisource.org/w/index.php?title=Utopia/Liber_I/Colloquium_apud_Cardinalem_Ioannem_Mortonum&oldid=241157&action=raw"
+    sha256: 5f5f2e2db45e26b748919549761dd71ac597f245643e04d1015cbe9a8d27b7a6
+    license: public domain (text); Wikisource CC BY-SA 4.0
+    license_url: https://la.wikisource.org/wiki/Utopia
+translations:
+  - id: robinson1551
+    translator: Ralph Robinson
+    year: 1551
+    form: prose, in Robinson's spelling, from J. H. Lupton's edition (Oxford, 1895)
+    license: public-domain
+    license_url: https://archive.org/details/utopiaofsirthoma00moreuoft
+    file: sources/robinson1551.txt
+    url: https://archive.org/download/utopiaofsirthoma00moreuoft/utopiaofsirthoma00moreuoft_djvu.txt
+    sha256: ecb52c7d7da99e7c4e24f98af8627b56101e192f14bf66b5f046663c94178a31
+  - id: burnet1684
+    translator: Gilbert Burnet
+    year: 1684
+    form: prose, from Henry Morley's edition
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/burnet1684.txt
+    url: https://www.gutenberg.org/cache/epub/2130/pg2130.txt
+    sha256: 9a07cd3fd858e085aa5229b13214c52dba0f0c2ddd0b62bae47b7e29490ce19e
+predicted_gaps:
+  - "no treebank: lemma and morphology hand-annotated (Lewis and Short), draft"
+  - "the Tudor English reading is reconstructed from English sound history (an earlier stage of the method used for Newton); approximate"
+  - "the source spells u for v (uestrae, deuorent); the quantity table supplies the v for the sound, and the page keeps the printed u"
+  - "the source misprints onmia for omnia in line 11; the page keeps it, and the quantity table reads it as omnia"
+  - "Robinson's text comes from the OCR of Lupton's 1895 edition: footnote markers are removed and OCR errors corrected, each listed in the sense file"
+  - "Lupton's Latin (1518) has suibus, 'pigs', where the Wikisource text has ouibus, 'sheep', in line 12; not collated against the 1518 print here"

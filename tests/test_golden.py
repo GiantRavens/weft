@@ -350,3 +350,11 @@ def test_reference_translation_is_cited_not_inlined(tmp_path):
     assert [r["id"] for r in data["references"]] == ["later2000"]
     assert "later2000" not in [t["id"] for t in data["translations"]]
     assert all(s["tr"] != "later2000" for s in data["sense"])
+
+
+def test_renaissance_works_check():
+    """Italian, Renaissance Latin and Middle French works pass their checks."""
+    for work in ("petrarch-canzoniere-1", "pico-oration", "erasmus-praise-of-folly", "machiavelli-prince",
+                 "more-utopia", "montaigne-essais"):
+        r = check.run(REPO, work)
+        assert r["ok"], (work, r["problems"])

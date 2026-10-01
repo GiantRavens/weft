@@ -1,0 +1,20 @@
+run:
+  weft: 0.1.0
+  sections:
+  - pref
+  - '1.19'
+counts:
+  lines: 21
+  tokens: 332
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- the source is the 1595 text, not the 1580 first edition, which is not transcribed on Wikisource; the preface differs between editions (see the notes)
+- the transcription reads 'visue' where the Bordeaux copy has 'vifue' (vive); probably a long-s misreading, kept verbatim and given its modern spelling
+- the pronunciation of about 1580 is reconstructed from the grammarians of the period; the value of oi, the r of -er infinitives, and the strength of the e caduc are uncertain
+- Montaigne's own Gascon-coloured pronunciation is not modelled; the m1580 scheme follows the Paris norm
+- no treebank; lemma, morphology and gloss by hand, draft
+- Florio's text on English Wikisource is a modernized reprint of uncertain origin, not a transcription of the 1603 print
+- Cotton's translation is read in Hazlitt's 1877 revision, not as Cotton printed it in 1685-86

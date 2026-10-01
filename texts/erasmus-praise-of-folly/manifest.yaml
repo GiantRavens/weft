@@ -1,0 +1,55 @@
+work: erasmus-praise-of-folly
+title: The Praise of Folly
+author: Desiderius Erasmus
+language: lat
+prefix: mor                      # mor.<section>.<line>[.<token>]
+urn: urn:weft:lat:moriae-encomium   # Weft-local identifier
+unit: section
+section_noun: passage
+written: {year: 1511, label: "written 1509 in Thomas More's house, first printed in Paris in 1511"}
+status: phase-0
+pilot: {sections: [exordium]}
+edition:
+  id: holtze1892
+  name: "Moriae Encomium as printed by Otto Holtze, Leipzig 1892 (following Froben's Basel edition of 1522), as on Latin Wikisource, page 720 of the scan"
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain; Weft line division CC BY-SA 4.0
+treebank: null                   # no treebank covers Erasmus; hand annotation, draft
+schemes: [low-countries, classical]   # default: Latin as read in the Low Countries around 1500
+scheme_labels:
+  low-countries: "As first read: in the manner of the Low Countries around 1500, Erasmus's own (approximate)"
+quantities: pipeline/weft/data/lat_quantities.yaml
+sources_extra:
+  - id: holtze1892-p720
+    name: "Erasmus, Moriae Encomium (Leipzig: Otto Holtze, 1892), scan page 720, Latin Wikisource revision 233040"
+    file: sources/holtze1892-p720.txt
+    url: "https://la.wikisource.org/w/index.php?title=Pagina:Erasmi_Colloquia_Familiaria_Et_Encomium_Moriae.djvu/720&oldid=233040&action=raw"
+    sha256: 80be118023c5a1e8ab1928902e209a9ba770db49311c42cb2e4687c7d7a62765
+    license: public domain (text); Wikisource CC BY-SA 4.0
+    license_url: https://la.wikisource.org/wiki/Colloquia_familiaria/Encomium_Moriae/Stultitia_laus
+translations:
+  - id: wilson1668
+    translator: John Wilson
+    year: 1668
+    form: prose
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/wilson1668.txt
+    url: https://www.gutenberg.org/cache/epub/9371/pg9371.txt
+    sha256: 8964ae61f38257e329e4254e5d153c6fb37da80d20a3c2a000e57b6470c7e8e6
+  - id: kennett1683
+    translator: White Kennett (attributed; the 1876 reprint names no translator)
+    year: 1683
+    form: prose, as reprinted in London in 1876 with Holbein's drawings
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/kennett1683.txt
+    url: https://www.gutenberg.org/cache/epub/30201/pg30201.txt
+    sha256: fce937b5a224e6fecfa0c20201db979c7981640fea0456594b99a517be797716
+predicted_gaps:
+  - "no treebank: lemma and morphology hand-annotated (Lewis and Short), draft"
+  - "the Low Countries reading is reconstructed from Middle Dutch sound history and the later Dutch school tradition, not from a description of Erasmus's own speech; approximate"
+  - "the 1892 text follows Froben's 1522 edition; the first edition (Paris, 1511) and later ones differ in small points, which are not collated here"
+  - "the 1892 editor's footnotes on nepenthe and Trophonius are stripped before the verbatim check (verify_strip)"
+  - "the 1876 English reprint names no translator; it is attributed to White Kennett (1683) from its wording"

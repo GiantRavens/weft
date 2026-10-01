@@ -1,0 +1,62 @@
+work: petrarch-canzoniere-1
+title: "Canzoniere 1: Voi ch'ascoltate in rime sparse il suono"
+author: "Francesco Petrarca (1304–1374)"
+language: it
+prefix: rvf                           # rvf.<poem>.<line>[.<token>]: Rerum vulgarium fragmenta
+urn: urn:weft:it:petrarca.rvf         # Weft-local identifier
+unit: section
+section_noun: sonnet
+pilot: {sections: ["1"]}
+written: {year: 1350, label: "composed about 1350 as the opening sonnet of the collection; Petrarch revised the Canzoniere until his death in 1374"}
+status: phase-0
+edition:
+  id: contini1964
+  name: "Francesco Petrarca, Canzoniere, critical text by Gianfranco Contini (Turin: Einaudi, 1964), via Liber Liber and Italian Wikisource"
+  format: weft-edition
+  file: edition.yaml
+  license: "Contini's critical text (1964) no longer protected (Italian law gives critical editions 20 years); Wikisource transcription CC BY-SA 4.0; Weft token division CC BY-SA 4.0"
+treebank: null                        # no openly licensed treebank contains the Canzoniere; hand annotation, draft
+schemes: [florentine, modern]         # default = Florentine around 1350 (approximate)
+scheme_labels:
+  florentine: "Florentine as Petrarch's first readers likely spoke it, around 1350 (approximate)"
+quantities: pipeline/weft/data/it_lexicon.yaml   # stress, open and closed e and o, voiced s and z
+sources_extra:
+  - id: ws-rvf1
+    name: "Italian Wikisource, 'Canzoniere (Rerum vulgarium fragmenta)/Voi ch'ascoltate in rime sparse il suono', revision 3676909"
+    file: sources/ws-rvf1.txt
+    url: "https://it.wikisource.org/w/index.php?oldid=3676909&action=raw"
+    sha256: 8ea3ab5af00ecc76140dc2847191516b253ec7332137713a5959539635dd18ed
+    license: "Wikisource CC BY-SA 4.0"
+    license_url: "https://it.wikisource.org/wiki/Discussione:Canzoniere_(Rerum_vulgarium_fragmenta)"
+translations:
+  - id: nott-bohn
+    translator: "Nott, in Bohn's Petrarch"
+    year: 1859
+    form: "verse, signed NOTT (the preface's 'Rev. Dr. Nott') in The Sonnets, Triumphs, and Other Poems of Petrarch, now first completely translated into English verse by various hands (Bohn's Illustrated Library, 1859); Project Gutenberg eBook 17650, from the George Bell reprint of 1879"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/bohn1859.txt
+    url: https://www.gutenberg.org/cache/epub/17650/pg17650.txt
+    sha256: 9b623ef22a7c89cc9a45300ff332bdff16fa197f99b65c49f6ef5f74f4f23c0e
+  - id: higginson1903
+    translator: Thomas Wentworth Higginson
+    year: 1903
+    form: "verse, Fifteen Sonnets of Petrarch (Boston: Houghton Mifflin, Riverside Press, 1903), no. XV; Project Gutenberg eBook 50307"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/higginson1903.txt
+    url: https://www.gutenberg.org/cache/epub/50307/pg50307.txt
+    sha256: a3439442ba6282af5f3f3bb024c61adacfea01fcfd50ae2305a9c54b14683104
+  - id: auslander1931
+    kind: reference
+    translator: Joseph Auslander
+    year: 1931
+    title: The Sonnets of Petrarch
+    publisher: "Longmans, Green and Co."
+    note: "copyright status not checked, so Weft treats it as in copyright"
+predicted_gaps:
+  - "the Florentine of 1350 is reconstructed; open and closed e and o come from a lexicon built on the modern Tuscan standard and the Latin source vowels, and the gorgia toscana is left out"
+  - "the metre counts synalepha across words and synaeresis in mio, io, sia; a reader may divide differently, and which syllables carry the main accents is a judgment"
+  - "the rhyme is checked by spelling: suono rhymes with sono although their o's differ in quality"
+  - "the Bohn and Higginson versions are verse paraphrases; Higginson translates a text with small differences (il core, pentirsi)"
+  - "no treebank; lemma, morphology and gloss are hand-annotated, draft"

@@ -422,3 +422,208 @@ KEY["as-first-read"] = [
     ("CAPS", "stress: Latin position in the English method; always the last syllable in the French method"),
 ]
 SCHEME_LABELS["as-first-read"] = "As first read: Newton in the English manner, Descartes in the French (approximate)"
+
+
+# ---------------------------------------------------------------- humanist readings, 1480s to 1510s
+# Three more national manners of reading Latin, for humanist authors of the generation before
+# the reforms of pronunciation. Each is its own scheme, so each has its own key; the same rules
+# are also reachable through `as-first-read` with a section `dialect` (dutch, tudor, italian).
+# All three keep the classical stress position (the penultimate rule), as readers of the time
+# did. Vowel quantity sets only the stress; vowel quality follows the reader's own language.
+#
+#   low-countries     Latin in the Low Countries around 1500 (Erasmus): Dutch vowel values,
+#                     long in open syllables and short in closed ones; u as Dutch uu (front
+#                     rounded); g a fricative everywhere; soft c = s; ti before a vowel = tsi;
+#                     ch = kh. Reconstructed from Middle Dutch sound history and the later
+#                     Dutch school tradition; approximate.
+#   tudor-english     Latin in England around 1516 (More): the English method at an earlier stage
+#                     of the Great Vowel Shift. Stressed open vowels take English long values,
+#                     but a is still aa, o is still aw, i is a glide ei, and short u is u as in
+#                     put; ti before a vowel = si, not yet sh. Approximate.
+#   italian-humanist  Latin in northern Italy in the 1480s (Pico): Italian vowels, soft c = ch,
+#                     soft g = j, gn = ny, sc before e and i = sh, ti before a vowel = tsi, h
+#                     silent, s between vowels = z (a northern trait). Close to the later
+#                     ecclesiastical reading, which descends from it. Approximate.
+
+HUMANIST = {"low-countries": "dutch", "tudor-english": "tudor", "italian-humanist": "italian"}
+
+_NL_LONG = {"a": ("aː", "aa"), "e": ("eː", "ay"), "i": ("iː", "ee"), "y": ("iː", "ee"), "o": ("oː", "oh"),
+            "u": ("yː", "üü"), "ae": ("eː", "ay"), "oe": ("eː", "ay"), "au": ("ɑu", "ow")}
+_NL_SHORT = {"a": ("ɑ", "a"), "e": ("ɛ", "e"), "i": ("ɪ", "i"), "y": ("ɪ", "i"), "o": ("ɔ", "o"),
+             "u": ("ʏ", "ü"), "ae": ("eː", "ay"), "oe": ("eː", "ay"), "au": ("ɑu", "ow")}
+_TU_LONG = {"a": ("aː", "aa"), "e": ("iː", "ee"), "i": ("əi", "ei"), "y": ("əi", "ei"), "o": ("ɔː", "aw"),
+            "u": ("iu", "yoo"), "ae": ("iː", "ee"), "oe": ("iː", "ee"), "au": ("au", "ow")}
+_TU_SHORT = {"a": ("a", "a"), "e": ("ɛ", "e"), "i": ("ɪ", "i"), "y": ("ɪ", "i"), "o": ("ɔ", "o"),
+             "u": ("ʊ", "u"), "ae": ("iː", "ee"), "oe": ("iː", "ee"), "au": ("au", "ow")}
+_TU_FINAL = {"a": ("a", "a"), "e": ("iː", "ee"), "i": ("əi", "ei"), "y": ("əi", "ei"), "o": ("ɔː", "aw"), "u": ("iu", "yoo")}
+_IT_V = {"a": ("a", "a"), "e": ("e", "e"), "i": ("i", "ee"), "y": ("i", "ee"), "o": ("o", "o"),
+         "u": ("u", "oo"), "ae": ("ɛ", "e"), "oe": ("ɛ", "e"), "au": ("au", "ow")}
+
+
+def _humanist(syls: list[Syl], stress: int, dialect: str) -> list[tuple[str, str]]:
+    """(ipa, respell) per syllable for the dutch, tudor and italian readings."""
+    flat: list[tuple[int, Seg]] = []
+    for n, s in enumerate(syls):
+        for seg in s.onset + [s.nucleus] + s.coda:
+            flat.append((n, seg))
+    ipa = [""] * len(syls)
+    sp = [""] * len(syls)
+    last = len(syls) - 1
+
+    def front(seg: Seg | None) -> bool:
+        return seg is not None and seg.vowel and (seg.text[0] in "eiy" or seg.text in ("ae", "oe"))
+
+    for k, (n, seg) in enumerate(flat):
+        nxt = flat[k + 1][1] if k + 1 < len(flat) else None
+        nxt2 = flat[k + 2][1] if k + 2 < len(flat) else None
+        prev = flat[k - 1][1] if k > 0 else None
+        t = seg.text
+        if seg.vowel:
+            syl = syls[n]
+            open_ = not syl.coda
+            if dialect == "dutch":
+                a, b = (_NL_LONG if open_ else _NL_SHORT).get(t, (t, t))
+            elif dialect == "tudor":
+                if n == stress:
+                    antepenult = len(syls) >= 3 and stress == len(syls) - 3
+                    before_hiatus = (n + 2 < len(syls) and syls[n + 1].nucleus.text in ("i", "e")
+                                     and not syls[n + 1].coda and not syls[n + 2].onset)
+                    # i stays short here even before hiatus (Fabricius = fa-BRI-si-us)
+                    shorten = antepenult and t != "u" and not (before_hiatus and t not in ("i", "y"))
+                    table = _TU_LONG if open_ and not shorten else _TU_SHORT
+                elif n == last and open_:
+                    table = _TU_FINAL if t in _TU_FINAL else _TU_SHORT
+                elif open_ and t == "u":
+                    table = _TU_LONG
+                else:
+                    table = _TU_SHORT
+                if n == last and t == "e" and len(syl.coda) == 1 and syl.coda[0].text == "s":
+                    a, b = ("iː", "ee")                    # final -es = eez
+                else:
+                    a, b = table.get(t, (t, t))
+            else:
+                a, b = _IT_V.get(t, (t, t))
+            ipa[n] += a; sp[n] += b
+            continue
+        ti = (t == "t" and nxt is not None and nxt.text == "i" and nxt2 is not None and nxt2.vowel and k > 0
+              and not (prev is not None and prev.text in ("s", "t", "k")))
+        if t == "c" and prev is not None and prev.text == "s" and front(nxt):
+            a, b = ("", "")                                # sc before e, i: one sound, written at the s
+        elif t == "s" and nxt is not None and nxt.text == "c" and front(nxt2):
+            a, b = ("ʃ", "sh") if dialect == "italian" else ("s", "s")
+        elif t == "c":
+            if front(nxt):
+                a, b = ("tʃ", "ch") if dialect == "italian" else ("s", "s")
+            else:
+                a, b = ("k", "k")
+        elif t == "g":
+            if dialect == "dutch":
+                a, b = ("ɣ", "gh")
+            elif dialect == "italian" and nxt is not None and nxt.text == "n":
+                a, b = ("", "")                            # gn = ny, written at the n
+            elif front(nxt):
+                a, b = ("dʒ", "j")
+            else:
+                a, b = ("ɡ", "g")
+        elif t == "n" and dialect == "italian" and prev is not None and prev.text == "g":
+            a, b = ("ɲ", "ny")
+        elif t == "j":
+            a, b = ("dʒ", "j") if dialect == "tudor" else ("j", "y")
+        elif t == "qu":
+            a, b = ("kw", "kw")
+        elif ti:
+            a, b = ("s", "s") if dialect == "tudor" else ("ts", "ts")
+        elif t == "s" and prev is not None and prev.vowel and nxt is not None and nxt.vowel:
+            a, b = ("z", "z")                              # s between vowels is voiced in all three
+        elif t == "s" and dialect == "tudor" and nxt is None and prev is not None and prev.text == "e" and n == last:
+            a, b = ("z", "z")
+        elif t == "h":
+            a, b = ("", "") if dialect == "italian" else ("h", "h")
+        elif t == "ch":
+            a, b = ("x", "kh") if dialect == "dutch" else ("k", "k")
+        elif t == "ph":
+            a, b = ("f", "f")
+        elif t == "th":
+            a, b = ("t", "t")
+        elif t == "z":
+            a, b = ("dz", "dz") if dialect == "italian" else ("z", "z")
+        elif t == "n" and nxt is not None and nxt.text in ("c", "g", "qu", "k") and not (dialect == "italian" and nxt.text == "g" and nxt2 is not None and nxt2.text == "n"):
+            a, b = ("ŋ", "ng")
+        else:
+            a, b = (t, t)
+        ipa[n] += a; sp[n] += b
+    return list(zip(ipa, sp))
+
+
+def humanist(word: str, dialect: str, quantities: dict[str, str] | None = None) -> dict:
+    w = "".join(ch for ch in word if ch not in PUNCT)
+    known = False
+    if quantities is not None:
+        w, known = apply_quantity(w, quantities)
+    host_len = None
+    if "+" in w:
+        host, enc = w.split("+", 1)
+        host_len = len(syllabify(host))
+        w = host + enc
+    syls = syllabify(w)
+    if not syls:
+        return {"ipa": w, "respell": w, "syllables": 0, "known": known}
+    stress = stress_index(syls, host_len)
+    parts = _humanist(syls, stress, dialect)
+    one = len(syls) == 1
+    ipa = ".".join(("ˈ" if j == stress and not one else "") + p[0] for j, p in enumerate(parts))
+    resp = "-".join(p[1].upper() if j == stress and not one else p[1] for j, p in enumerate(parts))
+    return {"ipa": ipa, "respell": resp, "syllables": len(syls), "known": known}
+
+
+_phonemize_v01 = phonemize
+
+
+def phonemize(word: str, scheme: str, quantities: dict[str, str] | None = None, dialect: str | None = None, **kw) -> dict:  # noqa: F811
+    """Adds the humanist schemes; every other scheme and dialect goes through unchanged."""
+    if scheme in HUMANIST:
+        return humanist(word, HUMANIST[scheme], quantities)
+    if scheme == "as-first-read" and dialect in HUMANIST.values():
+        return humanist(word, dialect, quantities)
+    return _phonemize_v01(word, scheme, quantities, dialect=dialect, **kw)
+
+
+KEY["low-countries"] = [
+    ("", "Latin as read in the Low Countries around 1500, Erasmus's own country and generation. Reconstructed from Middle Dutch sound history and the later Dutch school tradition; approximate."),
+    ("aa, ay, ee, oh, üü", "a vowel in an open syllable is long: a as in father, e as in they (no glide), i as in machine, o as in go (no glide), u as Dutch uu or French u"),
+    ("a, e, i, o, ü", "a vowel in a closed syllable is short; ü is short Dutch u, as in Dutch put"),
+    ("ay", "ae and oe are both long e"),
+    ("gh", "g is a voiced throat fricative, as in Dutch goed, before every vowel"),
+    ("kh", "ch, as in Scottish loch"),
+    ("s", "c before e and i"),
+    ("ts", "ti before a vowel: gratia = GHRAA-tsee-aa"),
+    ("z", "s between vowels"),
+    ("y", "consonantal i, as in yes"),
+    ("CAPS", "stressed syllable, by the classical penultimate rule"),
+]
+KEY["tudor-english"] = [
+    ("", "Latin as read in England around 1516, Thomas More's generation: the English method at an earlier stage of the Great Vowel Shift than Newton's. Approximate."),
+    ("aa, ee, ei, aw, yoo", "a stressed vowel in an open syllable takes its English long value of the time: a as in father, e as in see, i as a glide from uh to ee, o as in law, u as you"),
+    ("u", "short u as in put; the vowel of cut came later"),
+    ("ee (final e), ei (final i)", "a final e is ee and a final i is ei"),
+    ("s", "c before e and i; also ti before a vowel, as si (later sh)"),
+    ("j", "g before e and i, and consonantal i, as in judge"),
+    ("z", "s between vowels and in final -es, as in English Caesar"),
+    ("CAPS", "stressed syllable, by the classical penultimate rule"),
+]
+KEY["italian-humanist"] = [
+    ("", "Latin as read in northern Italy in the 1480s, Pico's country and decade. Close to the later ecclesiastical reading; approximate."),
+    ("a e ee o oo", "Italian vowels; length changes the stress, not the quality"),
+    ("e", "ae and oe are both e"),
+    ("ch", "c before e, i, ae, oe, as in church"),
+    ("j", "g before e, i, ae, oe, as in gem"),
+    ("sh", "sc before e and i"),
+    ("ny", "gn, as in canyon"),
+    ("ts", "ti before a vowel: gratia = GRA-tsee-a"),
+    ("z", "s between vowels, as in northern Italian rosa"),
+    ("(silent)", "h is not sounded: homo = O-mo"),
+    ("CAPS", "stressed syllable, by the classical penultimate rule"),
+]
+SCHEME_LABELS["low-countries"] = "As first read: Latin in the Low Countries around 1500 (approximate)"
+SCHEME_LABELS["tudor-english"] = "As first read: Latin in England around 1516 (approximate)"
+SCHEME_LABELS["italian-humanist"] = "As first read: Latin in northern Italy in the 1480s (approximate)"

@@ -1,0 +1,20 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '17'
+  - 18a
+  - 18b
+counts:
+  lines: 40
+  tokens: 556
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- the 1814 edition is a pre-critical text; its chapter 17 title has clemenzia where the modern critical editions have pietà, and its spelling and punctuation are not Machiavelli's
+- the Florentine of 1513 is reconstructed; open and closed e and o come from a lexicon built on the modern Tuscan standard and the Latin source vowels, and the gorgia toscana is left out
+- Latinizing spellings (esperienzia, osservanzia, cognoscere) are read as written; whether readers sounded them so is not known
+- one sentence of chapter 18 runs across a page break and is divided there into two lines
+- no treebank; lemma, morphology and gloss are hand-annotated, draft
+- the translations follow other Italian texts; Marriott and Ricci join several of these sentences into one, so the spans are grouped
