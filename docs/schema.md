@@ -96,6 +96,14 @@ A translation entry may carry `partial: "<reason>"` when it covers only some lin
 predates the Kylver find), and `kind: editorial` when the text is Weft's own translation rather
 than a published one. The page labels editorial translations "editorial, draft" with a dashed rule.
 
+## The date in the library
+
+`written: {year, display, label}` in the manifest. `year` sorts the library and places the work in an
+age (negative for BC). `display` is the short date shown in bold in the library's left column, above
+the language: a single year ("1517"), a range ("1755–1750 BC"), or an approximate date ("c. 2350 BC",
+"4th–3rd c. BC"). Without it the column shows the year. `label` is the longer sentence under the
+title. A work can override the language name shown there with `lang_name`.
+
 ## Translations still in copyright: kind: reference
 
 A translation that is still in copyright can be cited without being reproduced. In the manifest,

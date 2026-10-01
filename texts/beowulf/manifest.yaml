@@ -5,7 +5,7 @@ language: ang
 prefix: beo                      # beo.<line>[.<token>]: Beowulf numbers its lines straight through
 urn: urn:weft:ang:beowulf        # no CTS URN; Weft-local identifier
 unit: line
-written: {year: 850, label: "composed between the 700s and about 1000; manuscript about 1000"}   # composition date; the library sorts by year
+written: {year: 850, display: "700s–1000", label: "composed between the 700s and about 1000; manuscript about 1000"}   # composition date; the library sorts by year
 status: phase-0
 pilot: {first: 1, last: 11}
 edition:

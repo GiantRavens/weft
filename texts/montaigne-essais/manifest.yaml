@@ -6,7 +6,7 @@ prefix: ess                       # ess.<section>.<line>[.<token>]; sections pre
 urn: urn:weft:fr:montaigne.essais  # Weft-local identifier
 unit: section
 section_noun: passage
-written: {year: 1580, label: "first published at Bordeaux in 1580; the preface is dated 1 March 1580. The text here is the posthumous edition of 1595"}
+written: {year: 1580, display: "1580", label: "first published at Bordeaux in 1580; the preface is dated 1 March 1580. The text here is the posthumous edition of 1595"}
 status: phase-0
 pilot: {sections: ["pref", "1.19"]}
 edition:

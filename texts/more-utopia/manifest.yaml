@@ -6,7 +6,7 @@ prefix: utop                     # utop.<section>.<line>[.<token>]
 urn: urn:weft:lat:utopia         # Weft-local identifier
 unit: section
 section_noun: passage
-written: {year: 1516, label: "first printed at Louvain in 1516; this text follows the Basel edition of March 1518"}
+written: {year: 1516, display: "1516", label: "first printed at Louvain in 1516; this text follows the Basel edition of March 1518"}
 status: phase-0
 pilot: {sections: [oves]}
 edition:

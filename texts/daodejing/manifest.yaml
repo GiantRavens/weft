@@ -6,7 +6,7 @@ prefix: ddj                      # ddj.<chapter>.<line>[.<char>]
 urn: urn:weft:lzh:laozi.daodejing   # no CTS URN for Chinese texts; Weft-local identifier
 unit: section
 section_noun: chapter
-written: {year: -300, label: "compiled in the Warring States period, 4th to 3rd century BC; chapter 2 is on the Guodian bamboo slips (buried about 300 BC), chapter 1 first on the Mawangdui silk manuscripts (before 168 BC); this text is Wang Bi's recension (about AD 240)"}
+written: {year: -300, display: "4th–3rd c. BC", label: "compiled in the Warring States period, 4th to 3rd century BC; chapter 2 is on the Guodian bamboo slips (buried about 300 BC), chapter 1 first on the Mawangdui silk manuscripts (before 168 BC); this text is Wang Bi's recension (about AD 240)"}
 status: phase-0
 pilot: {sections: ["1", "2"]}
 edition:
@@ -53,6 +53,7 @@ sources_extra:
     terms: "The Baxter-Sagart data release (ocbaxtersagart.lsait.lsa.umich.edu) states no open license that Weft could verify, so the Wiktionary copy is used."
 scheme_labels:
   old-chinese: "Old Chinese: as the text may have sounded when compiled, 4th to 3rd century BC (Baxter-Sagart 2014, via Wiktionary; approximate)"
+sound_confidence: medium              # the page invites specialists to correct the sound guide or record it
 schemes: [old-chinese, tang, mandarin]   # default = Old Chinese (Baxter-Sagart, approximate); Tang and Mandarin are later readings
 translations:
   - id: legge1891

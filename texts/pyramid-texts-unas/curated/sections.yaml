@@ -1,0 +1,198 @@
+# Human overlay for Pyramid Text 273, Unas columns 496-509. Lemma and morphology come from the TLA
+# (weft.egyptian reads them through the token hook); this file adds the English gloss only. Glosses
+# follow the TLA's German word glosses (shown in the comment on each line) and the dictionary
+# senses of the Wörterbuch der ägyptischen Sprache as the TLA reports them; queried senses keep a
+# (?) where the TLA marks the meaning as uncertain. The particle jw, which marks a statement, is
+# glossed "indeed"; the enclitic particle r (jr) "truly".
+- by: Claude (Weft phase 0), for review by Skip and an Egyptologist
+  date: 2026-10-01
+  why: English word glosses; the TLA glosses in German
+  status: draft
+  set:
+    pt.273.1.1: {gloss: "clouding-over"}   # gp | TLA: sich bewölken
+    pt.273.1.2: {gloss: "the-sky"}   # p,t | TLA: Himmel
+    pt.273.1.3: {gloss: "darkening"}   # jḥy | TLA: sich verdunkeln (?) (von Sternen)
+    pt.273.1.4: {gloss: "the-stars"}   # sbꜣ.pl | TLA: Stern
+    pt.273.2.1: {gloss: "quivering"}   # nmnm | TLA: sich hin und her bewegen; schwanken
+    pt.273.2.2: {gloss: "the-expanses"}   # pḏ,t.pl | TLA: [Bez. für den Himmel]
+    pt.273.2.3: {gloss: "trembling"}   # sdꜣ | TLA: zittern
+    pt.273.3.1: {gloss: "the-bones-of"}   # qs.pl | TLA: Knochen
+    pt.273.3.2: {gloss: "the-Akers"}   # ꜣkr.w | TLA: Aker (Erdgott)
+    pt.273.3.3: {gloss: "falling-silent"}   # gr | TLA: schweigen; ruhig sein; aufhören
+    pt.273.3.4: {gloss: "truly"}   # r | TLA: [Partikel (nachgestellt zur Betonung)]
+    pt.273.3.5: {gloss: "they"}   # =sn | TLA: [Suffix Pron. pl.3.c.]
+    pt.273.3.6: {gloss: "the-movements(?)"}   # gnm.w | TLA: [von Bewegungen]
+    pt.273.3.7: {gloss: "have-seen"}   # mꜣ.n | TLA: sehen; erblicken
+    pt.273.3.8: {gloss: "they"}   # =sn | TLA: [Suffix Pron. pl.3.c.]
+    pt.273.4.1: {gloss: "Unas"}   # Wnjs | TLA: Unas
+    pt.273.4.2: {gloss: "having-appeared"}   # ḫꜥ | TLA: erscheinen
+    pt.273.4.3: {gloss: "being-ba-mighty"}   # bꜣ | TLA: ba-mächtig sein
+    pt.273.4.4: {gloss: "as"}   # m | TLA: als (etwas sein)
+    pt.273.4.5: {gloss: "a-god"}   # nṯr | TLA: Gott
+    pt.273.4.6: {gloss: "living"}   # ꜥnḫ | TLA: leben
+    pt.273.4.7: {gloss: "on"}   # m | TLA: [idiomatisch mit Verben verbunden]
+    pt.273.4.8: {gloss: "fathers"}   # jt(j).pl | TLA: Vater
+    pt.273.4.9: {gloss: "his"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.4.10: {gloss: "feeding"}   # wšb | TLA: sich nähren (von etwas)
+    pt.273.5.1: {gloss: "on"}   # m | TLA: [idiomatisch mit Verben verbunden]
+    pt.273.5.2: {gloss: "mothers"}   # mʾw,t.pl | TLA: Mutter
+    pt.273.5.3: {gloss: "his"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.5.4: {gloss: "Unas"}   # Wnjs | TLA: Unas
+    pt.273.5.5: {gloss: "is"}   # pw | TLA: [Kopula]
+    pt.273.5.6: {gloss: "lord-of"}   # nb | TLA: Besitzer (von etwas)
+    pt.273.5.7: {gloss: "wisdom(?)"}   # zꜣb,wt | TLA: Klugheit (?)
+    pt.273.5.8: {gloss: "of-which-not-knows"}   # ḫm.n | TLA: nicht wissen
+    pt.273.6.1: {gloss: "mother"}   # mʾw,t | TLA: Mutter
+    pt.273.6.2: {gloss: "his"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.6.3: {gloss: "name"}   # rn | TLA: Name
+    pt.273.6.4: {gloss: "his"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.6.5: {gloss: "indeed"}   # jw | TLA: [zur Satzmarkierung und in komplexen Verbformen]
+    pt.273.6.6: {gloss: "nobility-of"}   # šps,w | TLA: Herrlichkeit
+    pt.273.6.7: {gloss: "Unas"}   # Wnjs | TLA: Unas
+    pt.273.6.8: {gloss: "in"}   # m | TLA: [lokal]
+    pt.273.6.9: {gloss: "the-sky"}   # p,t | TLA: Himmel
+    pt.273.6.10: {gloss: "indeed"}   # jw | TLA: [zur Satzmarkierung und in komplexen Verbformen]
+    pt.273.6.11: {gloss: "power"}   # wsr | TLA: Macht
+    pt.273.6.12: {gloss: "his"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.6.13: {gloss: "in"}   # m | TLA: [lokal]
+    pt.273.6.14: {gloss: "the-horizon"}   # ꜣḫ,t | TLA: Horizont; Lichtland
+    pt.273.7.1: {gloss: "like"}   # mj | TLA: wie
+    pt.273.7.2: {gloss: "Atum"}   # (J)tm(,w) | TLA: Atum
+    pt.273.7.3: {gloss: "father"}   # jt(j) | TLA: Vater
+    pt.273.7.4: {gloss: "his"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.7.5: {gloss: "who-begot"}   # msi̯ | TLA: schaffen
+    pt.273.7.6: {gloss: "him"}   # sw | TLA: ihn [Enkl. Pron. sg.3.m.]
+    pt.273.7.7: {gloss: "indeed"}   # jw | TLA: [zur Satzmarkierung und in komplexen Verbformen]
+    pt.273.7.8: {gloss: "begot"}   # msi̯.n | TLA: schaffen
+    pt.273.7.9: {gloss: "he"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.7.10: {gloss: "him"}   # sw | TLA: ihn [Enkl. Pron. sg.3.m.]
+    pt.273.7.11: {gloss: "mightier"}   # wsr | TLA: mächtig sein; stark sein
+    pt.273.7.12: {gloss: "he"}   # sw | TLA: er; ihn [Enkl. Pron. sg.3.m.]
+    pt.273.7.13: {gloss: "than"}   # r | TLA: [Komparativ]
+    pt.273.7.14: {gloss: "him"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.7.15: {gloss: "indeed"}   # jw | TLA: [zur Satzmarkierung und in komplexen Verbformen]
+    pt.273.7.16: {gloss: "the-kas-of"}   # kꜣ.pl | TLA: Ka; Lebenskraft
+    pt.273.8.1: {gloss: "Unas"}   # Wnjs | TLA: Unas
+    pt.273.8.2: {gloss: "behind"}   # ḥꜣ | TLA: hinter
+    pt.273.8.3: {gloss: "him"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.8.4: {gloss: "indeed"}   # jw | TLA: [zur Satzmarkierung und in komplexen Verbformen]
+    pt.273.8.5: {gloss: "the-hemsut"}   # ḥms.w,t | TLA: [weibl. Pendant zum Ka]
+    pt.273.8.6: {gloss: "his"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.8.7: {gloss: "under"}   # ẖr | TLA: unter (lokal)
+    pt.273.8.8: {gloss: "feet"}   # rd.du | TLA: Fuß
+    pt.273.8.9: {gloss: "his"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.8.10: {gloss: "indeed"}   # jw | TLA: [zur Satzmarkierung und in komplexen Verbformen]
+    pt.273.8.11: {gloss: "gods"}   # nṯr.pl | TLA: Gott
+    pt.273.8.12: {gloss: "his"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.8.13: {gloss: "upon"}   # tp | TLA: auf
+    pt.273.8.14: {gloss: "him"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.8.15: {gloss: "indeed"}   # jw | TLA: [zur Satzmarkierung und in komplexen Verbformen]
+    pt.273.8.16: {gloss: "uraei"}   # jꜥr,t.pl | TLA: Uräus
+    pt.273.8.17: {gloss: "his"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.9.1: {gloss: "on"}   # m | TLA: [lokal]
+    pt.273.9.2: {gloss: "brow"}   # wp,t | TLA: Scheitel
+    pt.273.9.3: {gloss: "his"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.9.4: {gloss: "indeed"}   # jw | TLA: [zur Satzmarkierung und in komplexen Verbformen]
+    pt.273.9.5: {gloss: "the-guide-of"}   # sšm,wt | TLA: Führerin (Uräusschlange, Göttinnen)
+    pt.273.9.6: {gloss: "Unas"}   # Wnjs | TLA: Unas
+    pt.273.9.7: {gloss: "on"}   # m | TLA: [lokal]
+    pt.273.9.8: {gloss: "forehead"}   # ḥꜣ,t | TLA: Stirn
+    pt.273.9.9: {gloss: "his"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.9.10: {gloss: "seeing"}   # ptr.t | TLA: sehen; erblicken
+    pt.273.9.11: {gloss: "the-ba"}   # bꜣ | TLA: Ba (Seelenkraft als Teil der Persönlichkeit)
+    pt.273.9.12: {gloss: "effective"}   # ꜣḫ.t | TLA: wirkungsmächtig sein
+    pt.273.9.13: {gloss: "burns"}   # nṯb | TLA: ausdörren
+    pt.273.9.14: {gloss: "she"}   # =s | TLA: [Suffix Pron.sg.3.f.]
+    pt.273.10.1: {gloss: "indeed"}   # jw | TLA: [zur Satzmarkierung und in komplexen Verbformen]
+    pt.273.10.2: {gloss: "the-powers-of"}   # wsr.pl | TLA: Macht
+    pt.273.10.3: {gloss: "Unas"}   # Wnjs | TLA: Unas
+    pt.273.10.4: {gloss: "at"}   # ḥr | TLA: [mit Infinitiv]
+    pt.273.10.5: {gloss: "protecting"}   # mk.t | TLA: schützen
+    pt.273.10.6: {gloss: "him"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.10.7: {gloss: "Unas"}   # Wnjs | TLA: Unas
+    pt.273.10.8: {gloss: "is"}   # pj | TLA: [Kopula]
+    pt.273.10.9: {gloss: "the-bull-of"}   # kꜣ | TLA: Stier
+    pt.273.10.10: {gloss: "the-sky"}   # p,t | TLA: Himmel
+    pt.273.10.11: {gloss: "raging"}   # nhd | TLA: wütend sein
+    pt.273.10.12: {gloss: "in"}   # m | TLA: [lokal]
+    pt.273.10.13: {gloss: "heart"}   # jb | TLA: Charakter
+    pt.273.10.14: {gloss: "his"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.10.15: {gloss: "living"}   # ꜥnḫ | TLA: leben
+    pt.273.10.16: {gloss: "on"}   # m | TLA: [idiomatisch mit Verben verbunden]
+    pt.273.10.17: {gloss: "the-form"}   # ḫpr(,w) | TLA: Gestalt
+    pt.273.11.1: {gloss: "of"}   # n(,j) | TLA: von [Genitiv]
+    pt.273.11.2: {gloss: "god"}   # nṯr | TLA: Gott
+    pt.273.11.3: {gloss: "every"}   # nb | TLA: jeder
+    pt.273.11.4: {gloss: "eating"}   # wnm | TLA: essen
+    pt.273.11.5: {gloss: "the-innards(?)"}   # wzm.w | TLA: [Körperteile des Menschen (Innereien?)]
+    pt.273.11.6: {gloss: "their"}   # =sn | TLA: [Suffix Pron. pl.3.c.]
+    pt.273.11.7: {gloss: "who-came"}   # jwi̯.w | TLA: kommen
+    pt.273.11.8: {gloss: "was-filled"}   # mḥ | TLA: füllen
+    pt.273.11.9: {gloss: "belly"}   # ẖ,t | TLA: Leib; Bauch
+    pt.273.11.10: {gloss: "their"}   # =sn | TLA: [Suffix Pron. pl.3.c.]
+    pt.273.11.11: {gloss: "with"}   # m | TLA: [idiomatisch mit Verben verbunden]
+    pt.273.11.12: {gloss: "magic"}   # ḥkꜣ.w | TLA: Zauber; Zauberkraft
+    pt.273.11.13: {gloss: "on"}   # m | TLA: [lokal]
+    pt.273.11.14: {gloss: "the-Island-of-Flame"}   # jw-nsjsj | TLA: Flammeninsel (Teil der Unterwelt)
+    pt.273.11.15: {gloss: "Unas"}   # Wnjs | TLA: Unas
+    pt.273.11.16: {gloss: "is"}   # pj | TLA: [Kopula]
+    pt.273.12.1: {gloss: "equipped"}   # ꜥpr | TLA: ausgestattet sein
+    pt.273.12.2: {gloss: "gathering"}   # jꜥb | TLA: (sich) vereinigen
+    pt.273.12.3: {gloss: "spirit-powers"}   # ꜣḫ.pl | TLA: Macht; Zauberkraft
+    pt.273.12.4: {gloss: "his"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.12.5: {gloss: "indeed"}   # jw | TLA: [zur Satzmarkierung und in komplexen Verbformen]
+    pt.273.12.6: {gloss: "Unas"}   # Wnjs | TLA: Unas
+    pt.273.12.7: {gloss: "has-appeared"}   # ḫꜥi̯ | TLA: aufgehen; erscheinen; glänzen
+    pt.273.12.8: {gloss: "as"}   # m | TLA: als (etwas sein)
+    pt.273.12.9: {gloss: "great-one"}   # wr | TLA: der Große
+    pt.273.12.10: {gloss: "this"}   # pw | TLA: dieser [Dem.Pron. sg.m.]
+    pt.273.12.11: {gloss: "lord-of"}   # nb | TLA: Herr; Besitzer (von etwas)
+    pt.273.12.12: {gloss: "helpers"}   # jm(,j).w-s,t-ꜥ | TLA: Gehilfe
+    pt.273.12.13: {gloss: "sits"}   # ḥmsi̯ | TLA: sitzen
+    pt.273.12.14: {gloss: "he"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.12.15: {gloss: "back"}   # sꜣ | TLA: Rücken
+    pt.273.12.16: {gloss: "his"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.12.17: {gloss: "toward"}   # jr | TLA: [in Richtung auf]
+    pt.273.12.18: {gloss: "Geb"}   # Gbb | TLA: Geb
+    pt.273.13.1: {gloss: "Unas"}   # Wnjs | TLA: Unas
+    pt.273.13.2: {gloss: "is"}   # pj | TLA: [Kopula]
+    pt.273.13.3: {gloss: "judging"}   # wḏꜥ | TLA: richten
+    pt.273.13.4: {gloss: "matter"}   # mdw | TLA: Angelegenheit
+    pt.273.13.5: {gloss: "his"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.13.6: {gloss: "with"}   # ḥnꜥ | TLA: zusammen mit
+    pt.273.13.7: {gloss: "hidden"}   # jmn | TLA: verbergen; verborgen sein
+    pt.273.13.8: {gloss: "name"}   # rn | TLA: Name
+    pt.273.13.9: {gloss: "his"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.13.10: {gloss: "day"}   # hrw | TLA: Tag
+    pt.273.13.11: {gloss: "this"}   # pw | TLA: dieser [Dem.Pron. sg.m.]
+    pt.273.13.12: {gloss: "of"}   # n(,j) | TLA: von [Genitiv]
+    pt.273.13.13: {gloss: "slaughtering"}   # rḫs | TLA: schlachten
+    pt.273.13.14: {gloss: "the-eldest"}   # sms,w | TLA: Ältester
+    pt.273.13.15: {gloss: "Unas"}   # Wnjs | TLA: Unas
+    pt.273.13.16: {gloss: "is"}   # p | TLA: [Kopula]
+    pt.273.13.17: {gloss: "lord-of"}   # nb | TLA: Besitzer (von etwas)
+    pt.273.13.18: {gloss: "offerings"}   # ḥtp,t | TLA: Speisen; Opfer
+    pt.273.13.19: {gloss: "knotting"}   # ṯꜣz | TLA: knoten
+    pt.273.13.20: {gloss: "the-rope"}   # ꜥqꜣ | TLA: Tau
+    pt.273.13.21: {gloss: "making"}   # jri̯ | TLA: machen
+    pt.273.13.22: {gloss: "meal"}   # ꜣw,t | TLA: Spende; Darreichung
+    pt.273.13.23: {gloss: "his"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.13.24: {gloss: "self-of"}   # ḏs | TLA: Selbst
+    pt.273.13.25: {gloss: "him"}   # =f | TLA: [Suffix Pron. sg.3.m.]
+    pt.273.14.1: {gloss: "Unas"}   # Wnjs | TLA: Unas
+    pt.273.14.2: {gloss: "is"}   # pj | TLA: [Kopula]
+    pt.273.14.3: {gloss: "eating"}   # wnm | TLA: essen
+    pt.273.14.4: {gloss: "people"}   # rmṯ | TLA: Mensch
+    pt.273.14.5: {gloss: "living"}   # ꜥnḫ | TLA: leben
+    pt.273.14.6: {gloss: "on"}   # m | TLA: [idiomatisch mit Verben verbunden]
+    pt.273.14.7: {gloss: "gods"}   # nṯr.pl | TLA: Gott
+    pt.273.14.8: {gloss: "lord-of"}   # nb | TLA: Besitzer (von etwas)
+    pt.273.14.9: {gloss: "messengers"}   # jn,w.pl | TLA: Bote
+    pt.273.14.10: {gloss: "dispatching"}   # ḫꜣꜥ | TLA: erteilen
+    pt.273.14.11: {gloss: "messages"}   # wp(w),t.pl | TLA: Botschaft; Auftrag
+    pt.273.14.12: {gloss: "it-is"}   # jn | TLA: [Hervorhebungspartikel in der jn-Konstruktion]
+    pt.273.14.13: {gloss: "Grasper-of-Scalps-who-is-in-Kehau"}   # Jḫmꜥ-wp,t,pl-jm(,j)-kḥꜣ,w | TLA: Scheitelpacker, der im Kessel ist
+    pt.273.14.14: {gloss: "lassoing"}   # spḥ | TLA: mit dem Lasso fangen
+    pt.273.14.15: {gloss: "them"}   # sn | TLA: sie [Enkl. Pron. pl.3.c]
+    pt.273.14.16: {gloss: "for"}   # n | TLA: [Dativ: Nutzen]
+    pt.273.14.17: {gloss: "Unas"}   # Wnjs | TLA: Unas

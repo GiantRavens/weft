@@ -5,7 +5,7 @@ language: lzh
 prefix: lb                       # lb.<line>[.<char>]
 urn: urn:weft:lzh:tangshi300.jingyesi   # no CTS URN; Weft-local identifier
 unit: line
-written: {year: 740, label: "written in the early-to-mid 700s, Tang dynasty"}
+written: {year: 740, display: "700s", label: "written in the early-to-mid 700s, Tang dynasty"}
 status: phase-0
 pilot: {first: 1, last: 4}
 edition:
@@ -43,6 +43,7 @@ sources_extra:
     extract: "Unihan_Variants.txt"
     license: Unicode License v3
     license_url: https://www.unicode.org/license.txt
+sound_confidence: medium              # the page invites specialists to correct the sound guide or record it
 schemes: [tang, mandarin, cantonese]   # default = Tang, as Li Bai's generation read it
 translations:
   - id: cranmer-byng1909

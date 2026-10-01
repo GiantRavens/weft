@@ -6,7 +6,7 @@ prefix: kural                        # kural.<kural number>.<line>[.<token>]
 urn: urn:weft:ta:tirukkural.1        # Weft-local identifier
 unit: section
 section_noun: kural
-written: {year: 450, label: "composed perhaps between the 4th and 6th centuries AD; the date is uncertain"}
+written: {year: 450, display: "4th–6th c.", label: "composed perhaps between the 4th and 6th centuries AD; the date is uncertain"}
 status: phase-0
 pilot: {sections: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]}
 edition:
@@ -16,6 +16,7 @@ edition:
   file: edition.yaml
   license: the Kural is public domain; the 1997 edition is a Tamil Nadu nationalized book, its scan released CC0 on Wikimedia Commons; Wikisource text CC BY-SA 4.0; Weft word division CC BY-SA 4.0
 treebank: null                       # no treebank for Old Tamil; hand annotation in curated/, draft
+sound_confidence: medium              # the page invites specialists to correct the sound guide or record it
 schemes: [old-tamil, modern]         # default = Old Tamil as first recited (approximate)
 sources_extra:
   - id: srinivasan1997-p9

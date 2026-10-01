@@ -5,7 +5,7 @@ language: grc
 prefix: il                       # short ID prefix: il.<book>.<line>[.<token>]
 urn: urn:cts:greekLit:tlg0012.tlg001
 unit: line
-written: {year: -725, label: "composed about 750–700 BC, probably a generation before the Odyssey"}
+written: {year: -725, display: "750–700 BC", label: "composed about 750–700 BC, probably a generation before the Odyssey"}
 status: phase-0
 pilot: {book: 1, first: 1, last: 52}
 edition:

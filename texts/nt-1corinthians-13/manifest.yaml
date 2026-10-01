@@ -5,7 +5,7 @@ language: grc
 prefix: 1cor                   # 1cor.<chapter>.<verse>[.<token>]
 urn: urn:cts:greekLit:tlg0031.tlg007
 unit: verse
-written: {year: 54, label: "written about AD 53–55"}   # composition date; the library sorts by year
+written: {year: 54, display: "AD 53–55", label: "written about AD 53–55"}   # composition date; the library sorts by year
 status: draft
 pilot: {chapter: 13, first: 1, last: 13}
 edition:

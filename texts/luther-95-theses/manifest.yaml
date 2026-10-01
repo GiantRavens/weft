@@ -6,7 +6,7 @@ prefix: l95                      # l95.<section>.<line>[.<token>]; in section th
 urn: urn:weft:lat:disputatio-indulgentiarum   # Weft-local identifier
 unit: section
 section_noun: part
-written: {year: 1517, label: "dated 31 October 1517, Wittenberg; printed in Nuremberg, Leipzig and Basel before the end of 1517"}
+written: {year: 1517, display: "1517", label: "dated 31 October 1517, Wittenberg; printed in Nuremberg, Leipzig and Basel before the end of 1517"}
 status: phase-0
 pilot: {sections: [prooem, th]}
 edition:

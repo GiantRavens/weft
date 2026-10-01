@@ -7,7 +7,7 @@ urn: urn:weft:it:petrarca.rvf         # Weft-local identifier
 unit: section
 section_noun: sonnet
 pilot: {sections: ["1"]}
-written: {year: 1350, label: "composed about 1350 as the opening sonnet of the collection; Petrarch revised the Canzoniere until his death in 1374"}
+written: {year: 1350, display: "c. 1350", label: "composed about 1350 as the opening sonnet of the collection; Petrarch revised the Canzoniere until his death in 1374"}
 status: phase-0
 edition:
   id: contini1964

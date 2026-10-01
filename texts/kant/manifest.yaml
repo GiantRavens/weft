@@ -7,7 +7,7 @@ prefix: kant                      # kant.<section>.<line>[.<token>]; sections au
 urn: urn:weft:de:kant              # Weft-local identifier
 unit: section
 section_noun: passage
-written: {year: 1784, label: "Was ist Aufklärung? is dated Königsberg, 30 September 1784, and was printed in the Berlinische Monatsschrift for December 1784; the Critik der practischen Vernunft was printed at Riga in 1788"}
+written: {year: 1784, display: "1784–1788", label: "Was ist Aufklärung? is dated Königsberg, 30 September 1784, and was printed in the Berlinische Monatsschrift for December 1784; the Critik der practischen Vernunft was printed at Riga in 1788"}
 status: phase-0
 pilot: {sections: ["auf", "kpv"]}
 edition:

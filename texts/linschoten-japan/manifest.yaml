@@ -6,7 +6,7 @@ prefix: itin                      # itin.<chapter>.<line>[.<token>]; chapter 26
 urn: urn:weft:nl:linschoten.itinerario   # Weft-local identifier
 unit: section
 section_noun: chapter
-written: {year: 1596, label: "printed at Amsterdam by Cornelis Claesz in 1596; written after Linschoten's return from Goa in 1592"}
+written: {year: 1596, display: "1596", label: "printed at Amsterdam by Cornelis Claesz in 1596; written after Linschoten's return from Goa in 1592"}
 status: phase-0
 pilot: {sections: ["26"]}
 edition:

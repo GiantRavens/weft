@@ -6,7 +6,7 @@ prefix: rub                           # rub.<Whinfield number>.<line>[.<token>]
 urn: urn:weft:fa:khayyam.rubaiyat     # Weft-local identifier
 unit: section
 section_noun: quatrain
-written: {year: 1100, label: "attributed to Omar Khayyam of Nishapur (1048–1131); the earliest manuscripts behind this selection were copied in the fifteenth and sixteenth centuries"}
+written: {year: 1100, display: "11th–12th c.", label: "attributed to Omar Khayyam of Nishapur (1048–1131); the earliest manuscripts behind this selection were copied in the fifteenth and sixteenth centuries"}
 status: phase-0
 pilot: {sections: ["72", "104", "353", "252", "35", "379"]}
 edition:
@@ -16,6 +16,7 @@ edition:
   file: edition.yaml
   license: "public domain (1883); Wikisource transcription CC BY-SA 4.0; Weft token division and transliteration CC BY-SA 4.0"
 treebank: null                        # no Persian treebank covers this text; hand annotation, draft
+sound_confidence: medium              # the page invites specialists to correct the sound guide or record it
 schemes: [early, modern]              # default = Early New Persian around 1100 (approximate)
 sources_extra:
   - id: whinfield1883-72

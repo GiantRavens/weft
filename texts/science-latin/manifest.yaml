@@ -6,7 +6,7 @@ prefix: sci                      # sci.<section>.<line>[.<token>]
 urn: urn:weft:lat:science        # Weft-local identifier
 unit: section
 section_noun: text
-written: {year: 1644, label: "1644 (Descartes) and 1687 (Newton)"}
+written: {year: 1644, display: "1644–1687", label: "1644 (Descartes) and 1687 (Newton)"}
 status: phase-0
 pilot: {sections: [descartes, newton-1, newton-2, newton-3]}
 edition:

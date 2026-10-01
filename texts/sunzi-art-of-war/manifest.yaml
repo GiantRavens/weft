@@ -6,7 +6,7 @@ prefix: sz                       # sz.<chapter>.<line>[.<char>]
 urn: urn:weft:lzh:sunzi.bingfa   # no CTS URN for Chinese texts; Weft-local identifier
 unit: section
 section_noun: chapter
-written: {year: -400, label: "traditionally by Sun Wu, who served King Helü of Wu (reigned 514 to 496 BC); most scholars date the text as transmitted to the Warring States period, 5th to 4th century BC. The oldest manuscript is the bamboo-slip text from the Han tomb at Yinqueshan, closed in the 2nd century BC; Weft prints the transmitted text"}
+written: {year: -400, display: "5th–4th c. BC", label: "traditionally by Sun Wu, who served King Helü of Wu (reigned 514 to 496 BC); most scholars date the text as transmitted to the Warring States period, 5th to 4th century BC. The oldest manuscript is the bamboo-slip text from the Han tomb at Yinqueshan, closed in the 2nd century BC; Weft prints the transmitted text"}
 status: phase-0
 pilot: {sections: ["1"]}
 edition:
@@ -60,6 +60,7 @@ sources_extra:
     terms: "The Baxter-Sagart data release (ocbaxtersagart.lsait.lsa.umich.edu) states no open license that Weft could verify, so the Wiktionary copy is used."
 scheme_labels:
   old-chinese: "Old Chinese: as the text may have sounded when compiled, 5th to 4th century BC (Baxter-Sagart 2014, via Wiktionary; approximate)"
+sound_confidence: medium              # the page invites specialists to correct the sound guide or record it
 schemes: [old-chinese, tang, mandarin]   # default = Old Chinese (Baxter-Sagart, approximate); Tang and Mandarin are later readings
 translations:
   - id: giles1910

@@ -6,7 +6,7 @@ prefix: pico                     # pico.<section>.<line>[.<token>]
 urn: urn:weft:lat:pico-oratio    # Weft-local identifier
 unit: section
 section_noun: passage
-written: {year: 1486, label: "written in 1486 for a disputation in Rome that never took place; first printed in 1496"}
+written: {year: 1486, display: "1486", label: "written in 1486 for a disputation in Rome that never took place; first printed in 1496"}
 status: phase-0
 pilot: {sections: [exordium, adam]}
 edition:

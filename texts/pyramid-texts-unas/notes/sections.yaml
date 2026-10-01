@@ -1,0 +1,49 @@
+# Notes for Pyramid Text 273, Unas columns 496-509. Editorial notes are drafts until a reviewer
+# lifts them.
+- id: n.pt.walls
+  attach: pt.273.1
+  kind: editorial
+  status: draft
+  leans_on: "TLA object record, Pyramide des Unas (YVSJQDGOZJEBZEXPF7DB7MSQVY), and text record BRJCKLT7KNED5EKQX5DWGX3T4A (location: Ostgiebel); J. P. Allen, The Ancient Egyptian Pyramid Texts (2005), introduction"
+  text: "Unas was the last king of the Fifth Dynasty. His pyramid at Saqqara is the earliest known pyramid whose inner rooms are inscribed. The texts are cut in vertical columns on the walls of the burial chamber, the antechamber and the corridor that leads to them. They are a collection of separate spells, which Egyptologists call utterances: offering and purification rites spoken for the dead king, spells against snakes and other dangers, and texts about his rebirth and his passage into the sky. Their purpose, on the evidence of their content, was to secure that passage, and carving them on the walls made them permanent where the king lay. The passage edited here is on the east gable of the antechamber, the upper triangular part of the wall under the ceiling. Line 1 of this edition is Unas column 496 in Sethe's numbering; line 14 is column 509."
+- id: n.pt.ascent
+  attach: pt.273.4
+  kind: editorial
+  status: draft
+  leans_on: "TLA translation of this text (D. Topmann); Breasted, Development of Religion and Thought (1912), lecture IV"
+  text: "Many of the Pyramid Texts describe the dead king leaving the earth and taking a place among the gods of the sky. This utterance opens with the reaction of the cosmos to that event. In columns 496 to 498 the sky clouds over, the stars darken, the expanse of the sky quivers and the bones of the earth gods, the Akers, tremble; the reason follows in column 498: they have seen Unas. He has appeared (ḫꜥ, the verb used for the rising sun and for a king appearing in state) and is ba-mighty (bꜣ, related to the noun ba, the aspect of a being associated with its power to act and move) as a god. The next columns place him in the sky and the horizon and compare him with Atum, the creator god, whom the text calls his father."
+- id: n.pt.cannibal
+  attach: pt.273.14
+  kind: editorial
+  status: draft
+  leans_on: "TLA translation of this text, columns 505-525 (D. Topmann); Breasted, Development of Religion and Thought (1912), pages 127-129"
+  text: "Modern scholars call Pyramid Texts 273 and 274 the Cannibal Hymn. The name describes its central image: Unas, as a god in the sky, has the gods hunted, lassoed, bound and cooked, and eats them. Column 509 states the theme ('Unas is one who eats people and lives on gods'), and the columns after this edition's extract describe the hunt and the meal. The text says what the eating achieves: Unas takes in their magic (ḥkꜣ.w) and their spirit-power (ꜣḫ.w), and their knowledge, so that their power is in his belly. Breasted (1912) read the hymn as a survival from prehistoric times; that is his inference, and the text itself does not date its imagery. The events it describes take place among gods in the sky; it does not describe a practice among living people."
+- id: n.pt.writing
+  attach: pt.273.4.1
+  kind: editorial
+  status: draft
+  leans_on: "TLA sign codes for this text; Unicode Standard, Egyptian Hieroglyphs block (named by Gardiner number)"
+  text: "Hieroglyphic writing combines signs that stand for sounds with signs that stand for words or classify them. The king's name here is written with four sound signs: the hare (Gardiner E34, read wn), water (N35, n), the reed leaf (M17, j) and the folded cloth (S29, s). On the wall the name stands inside a cartouche, the oval ring that encloses royal names; the TLA's codes, from which this page builds its hieroglyph row, list only the signs inside it. The word for god, nṯr, is written with one sign, the flag on a pole (R8), and the plural 'gods' repeats it three times (line 8). The script writes no vowels. The row on this page sets the signs in a line; on the wall they are grouped in squares and stacked down the columns. Four signs in this passage have no code point in the basic Unicode block and are shown as their nearest encoded form or left out; the run report names them."
+- id: n.pt.copies
+  attach: pt.273.1.1
+  kind: quoted
+  source: "James Henry Breasted, Development of Religion and Thought in Ancient Egypt (1912), pages 84-85"
+  text: "It had always been supposed that the pyramids were all without inscription, until the native workmen employed by Mariette at Sakkara in 1880, the year before his death, penetrated the pyramid of Pepi I, and later that of Mernere. For the first edition of the Pyramid Texts we are indebted to Maspero, who displayed great penetration in discerning the general character of these texts, which he published during the next ten years."
+- id: n.pt.editions
+  attach: pt.273.1.2
+  kind: editorial
+  status: draft
+  leans_on: "Breasted (1912), page 85, note 1; TLA bibliography for the Unas pyramid (Sethe 1908; Piankoff 1968)"
+  text: "Gaston Maspero entered the pyramid of Unas in 1881 and published its texts, with those of the other inscribed pyramids, in his journal Recueil de travaux from 1882, and as a single volume in 1894. Kurt Sethe's Die altaegyptischen Pyramidentexte (Leipzig, 1908-1922) set the texts of all the pyramids known to him side by side and divided them into numbered utterances (Sprüche) and paragraphs. His numbers are still the standard references: this passage is the opening of utterance 273, beginning at paragraph 393, and the column numbers used here are his line numbers for Unas. Sethe's own translation and commentary appeared after his death in 1934. The Thesaurus Linguae Aegyptiae record used here names Sethe's edition and Alexandre Piankoff's photographic publication of the Unas pyramid (1968) as its sources for the text."
+- id: n.pt.sound
+  attach: pt.273.1.2
+  kind: editorial
+  status: draft
+  leans_on: "A. Loprieno, Ancient Egyptian: A Linguistic Introduction (1995), chapter 3; J. P. Allen, The Ancient Egyptian Language: An Historical Study (2013)"
+  text: "The pronunciation of Old Egyptian is reconstructed from indirect evidence. The script records consonants only. Vowels are inferred from Coptic, the last stage of the language, written in an alphabet with vowels from about the third century AD, more than 2,500 years after these texts; from Egyptian words and names written in cuneiform in the second millennium BC; and from names transcribed into Greek. Sound changes over that span are themselves inferred, so a vowel projected back from Coptic is a hypothesis. The values of several consonants are debated, among them ꜣ (a liquid or uvular sound in the earliest texts, later weakened), ꜥ, and the series written d and ḏ. Weft vocalizes only words whose Coptic descendant or Greek rendering it used (here p.t, 'sky', from Coptic pe) and names that evidence in each word's provenance; the other words fall back to the classroom convention. That convention, which inserts e between consonants, is a way of saying the words aloud and not a reconstruction. This sound row is the most reconstructed in the library."
+- id: n.pt.expanses
+  attach: pt.273.2.2
+  kind: editorial
+  status: draft
+  leans_on: "TLA lemma pḏ.t (63250) and translation of this text; Breasted (1912), page 127"
+  text: "The word pḏ.wt is the plural of pḏ.t, which elsewhere means 'bow' and 'troop of bowmen'. Breasted translated 'the Bows (a constellation)'. The TLA, whose lemma Weft follows, takes it as a designation of the sky and translates 'die Ausgespannte', the stretched-out one, the expanse of the sky. The gloss 'the expanses' follows the TLA; the reference of the word in this line is uncertain. Other words in these columns are marked as uncertain by the TLA too: gnm.w ('movements'), zꜣb.wt ('wisdom') and wzm.w ('innards'), and the name of the god in column 509, which Breasted renders 'Grasper-of-Forelocks living in Kehew' and the TLA 'Scheitelpacker, der im Kessel(?) ist'."

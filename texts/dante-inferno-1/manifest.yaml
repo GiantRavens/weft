@@ -7,7 +7,7 @@ urn: urn:weft:it:dante.commedia.inferno   # Weft-local identifier
 unit: section
 section_noun: canto
 pilot: {sections: ["1"]}
-written: {year: 1307, label: "the Commedia was begun about 1306–1308 and finished shortly before Dante's death in 1321; the journey is set at Easter 1300"}
+written: {year: 1307, display: "1306–1321", label: "the Commedia was begun about 1306–1308 and finished shortly before Dante's death in 1321; the journey is set at Easter 1300"}
 status: phase-0
 edition:
   id: petrocchi1966

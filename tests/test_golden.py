@@ -403,3 +403,10 @@ def test_german_works_check():
     for work in ("kant", "nietzsche", "luther-bible"):
         r = check.run(REPO, work)
         assert r["ok"], (work, r["problems"])
+
+
+def test_oldest_texts_check():
+    """The oldest works: Old Egyptian (Pyramid Texts) and Sumerian (Temple Hymns) pass their checks."""
+    for work in ("pyramid-texts-unas", "enheduanna-temple-hymns"):
+        r = check.run(REPO, work)
+        assert r["ok"], (work, r["problems"])

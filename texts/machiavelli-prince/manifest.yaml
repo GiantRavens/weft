@@ -7,7 +7,7 @@ urn: urn:weft:it:machiavelli.principe # Weft-local identifier
 unit: section
 section_noun: passage
 pilot: {sections: ["17", "18a", "18b"]}
-written: {year: 1513, label: "written in 1513 and circulated in manuscript; first printed in 1532, after Machiavelli's death"}
+written: {year: 1513, display: "1513", label: "written in 1513 and circulated in manuscript; first printed in 1532, after Machiavelli's death"}
 status: phase-0
 edition:
   id: italia1814

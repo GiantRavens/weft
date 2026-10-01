@@ -1,0 +1,110 @@
+# Human overlay for hymn 5 of the Temple Hymns (UET 6/1 111, obverse 1-19): the gloss row only.
+# Lemma and morphology come from the Oracc lemmatization (gen/), not from this file. Glosses lean
+# on Oracc's guide words and senses (ePSD2) and keep the case and person markers in the English:
+# of- (genitive), by- (agent, Oracc's ergative-or-directive e where it marks the doer), on-/at-
+# (the same e where it marks place), with- (comitative), like- (equative), your- (possessive -zu).
+# Where Weft's reading of an ending differs from Oracc's parse, the gloss follows Oracc and a note
+# says so, with one exception: in the closing refrain (lines 18-19) Oracc parses muš-za and
+# barag-za as genitives, and the gloss keeps the locative reading of the standard editions
+# ('in your precinct', 'on your dais'); the note on line 18 gives both. Words Oracc did not lemmatize carry a bracketed gloss and a query.
+- by: Claude (Weft phase 0), for review by Skip and a Sumerologist
+  date: 2026-10-01
+  why: hand gloss; Oracc supplies lemma and morphology but no word-for-word English
+  status: draft
+  set:
+    th.5.1.1: {gloss: "house"}                       # ⸢e₂
+    th.5.1.2: {gloss: "divine-powers"}               # me
+    th.5.1.3: {gloss: "gathering"} # ur₄
+    th.5.1.4: {gloss: "of-heaven"}                   # an⸣-na
+    th.5.1.5: {gloss: "of-the-platform"}             # ki-gal-la
+    th.5.1.6: {gloss: "standing"}                    # gub-ba
+    th.5.2.1: {gloss: "divine-powers"}               # ⸢me
+    th.5.2.2: {gloss: "true"}                        # zid
+    th.5.2.3: {gloss: "of-my-hero"}                  # ur-saŋ-ŋa₂⸣
+    th.5.2.4: {gloss: "on-the-dais"}                 # barag-ge
+    th.5.2.5: {gloss: "by-the-prince"}               # nun-e
+    th.5.2.6: {gloss: "made-to-grow"}                # mu₂-a
+    th.5.3.1: {gloss: "arm"}                         # a₂
+    th.5.3.2: {gloss: "of-battle"}                   # me₃
+    th.5.3.3: {gloss: "mitum-mace"}                  # {ŋeš}mitum₂
+    th.5.3.4: {gloss: "bow"}                         # tir
+    th.5.3.5: {gloss: "with-the-quiver"}             # ma-ru-da
+    th.5.3.6: {gloss: "awe"}                         # ni₂
+    th.5.3.7: {gloss: "carrying"}                    # ⸢gur₃⸣
+    th.5.4.1: {gloss: "brickwork"}                   # šeg₁₂
+    th.5.4.2: {gloss: "[laden?]"}                   # gurun
+    th.5.4.3: {gloss: "never-ceasing"}               # nu-silig-ge
+    th.5.4.4: {gloss: "foundation"}                  # temen
+    th.5.4.5: {gloss: "[day?]"}                      # ud
+    th.5.4.6: {gloss: "[unclear]-your"}              # lu-u₁₉-lu-za
+    th.5.5.1: {gloss: "by-Enul"}                     # en-ul-e
+    th.5.5.2: {gloss: "founded"}                     # ŋar-ra
+    th.5.5.3: {gloss: "decision"}                    # eš-bar
+    th.5.5.4: {gloss: "divine-powers"}               # me
+    th.5.5.5: {gloss: "it-is-of-the-prince"}         # nun-na-kam
+    th.5.6.1: {gloss: "[broken]"}                    # x
+    th.5.6.2: {gloss: "great"}                       # gal
+    th.5.6.3: {gloss: "of-the-mountain-land"}        # kur-ra
+    th.5.6.4: {gloss: "it-surpasses"}                # ab-diri
+    th.5.6.5: {gloss: "head"}                        # saŋ
+    th.5.6.6: {gloss: "raising"}                     # il₂
+    th.5.6.7: {gloss: "the-princes"}                 # nun-e-ne
+    th.5.7.1: {gloss: "house"}                       # ⸢e₂⸣
+    th.5.7.2: {gloss: "lofty"}                       # mah
+    th.5.7.3: {gloss: "wonder"}                      # u₆
+    th.5.7.4: {gloss: "your-coming-forth"}           # e₃-⸢zu⸣
+    th.5.7.5: {gloss: "like-daylight"}               # ud-gin₇
+    th.5.7.6: {gloss: "the-open-space"}              # muš
+    th.5.7.7: {gloss: "spreading-over"}              # ⸢barag⸣-ge
+    th.5.8.1: {gloss: "E-šumeša"}                    # ⸢e₂⸣-šu-me-ša₄
+    th.5.8.2: {gloss: "your-name"}                   # mu-zu
+    th.5.8.3: {gloss: "Enlil"}                       # {d}en-lil₂-le
+    th.5.9.1: {gloss: "aura"}                        # ⸢ni₂⸣
+    th.5.9.2: {gloss: "fierce"}                      # huš
+    th.5.9.3: {gloss: "he-laid-upon-you"}            # ma-ra-ni-ri
+    th.5.10.1: {gloss: "your-prince"}                # nun-zu
+    th.5.10.2: {gloss: "the-storm-wind"}             # tumu-e
+    th.5.10.3: {gloss: "the-mountain"}               # kur-e
+    th.5.10.4: {gloss: "the-hero"}                   # ur-saŋ-e
+    th.5.10.5: {gloss: "aura"}                       # ni₂
+    th.5.10.6: {gloss: "casting"}                    # ri
+    th.5.10.7: {gloss: "side"}                       # zag
+    th.5.10.8: {gloss: "seizing"}                    # dab₅-ba
+    th.5.11.1: {gloss: "ruler"}                      # ensi₂
+    th.5.11.2: {gloss: "great"}                      # gal
+    th.5.11.3: {gloss: "of-Enlil"}                   # {d}en-lil₂-la₂
+    th.5.12.1: {gloss: "noble-lord"}                 # ⸢nir⸣
+    th.5.12.2: {gloss: "with-heaven-and-earth"}      # an-ki-da
+    th.5.12.3: {gloss: "side"}                       # zag
+    th.5.12.4: {gloss: "covering"}                   # šuš₂-a
+    th.5.13.1: {gloss: "seal-bearer"}                # kišib-ŋal₂
+    th.5.13.2: {gloss: "bolt"}                       # si-ŋar
+    th.5.13.3: {gloss: "father"}                     # a-a
+    th.5.13.4: {gloss: "of-Enlil"}                   # {d}en-lil₂-la₂-ka
+    th.5.13.5: {gloss: "divine-powers"}              # me
+    th.5.13.6: {gloss: "greatness"}                  # nam-gal
+    th.5.13.7: {gloss: "hand"}                       # šu
+    th.5.13.8: {gloss: "completing"}                 # du₇
+    th.5.14.1: {gloss: "forceful"}                   # ⸢gaba⸣-ŋal₂
+    th.5.14.2: {gloss: "head"}                       # saŋ
+    th.5.14.3: {gloss: "fierce"}                     # huš
+    th.5.14.4: {gloss: "casting"}                    # ri
+    th.5.14.5: {gloss: "foremost"}                   # palil
+    th.5.14.6: {gloss: "father"}                     # a-a
+    th.5.14.7: {gloss: "of-Enlil"}                   # {d}en-lil₂-la₂
+    th.5.15.1: {gloss: "land"}                       # kur
+    th.5.15.2: {gloss: "hostile"}                    # gu₂-erim₂-ŋal₂
+    th.5.15.3: {gloss: "he-destroys-for-him"}        # mu-na-gul-gul-e
+    th.5.16.1: {gloss: "foremost"}                   # saŋ-kal
+    th.5.16.2: {gloss: "lion"}                       # piriŋ
+    th.5.16.3: {gloss: "by-the-Great-Mountain"}      # kur-gal-e
+    th.5.16.4: {gloss: "born"}                       # tud-da
+    th.5.17.1: {gloss: "E-šumeša"}                   # e₂-šu-me-ša₄
+    th.5.17.2: {gloss: "house"}                      # e₂
+    th.5.17.3: {gloss: "of-Ninurta"}                 # {d}nin-urta-ke₄
+    th.5.18.1: {gloss: "in-your-precinct"}           # muš-za
+    th.5.18.2: {gloss: "house"}                      # e₂
+    th.5.18.3: {gloss: "he-set-up"}                  # bi₂-in-gub
+    th.5.19.1: {gloss: "on-your-dais"}               # barag-za
+    th.5.19.2: {gloss: "seat"}                       # dur₂
+    th.5.19.3: {gloss: "he-placed"}                  # bi₂-in-ŋar

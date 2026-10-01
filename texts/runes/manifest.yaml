@@ -5,7 +5,7 @@ language: runic
 prefix: run                      # run.<inscription>.<line>[.<token>]
 urn: urn:weft:runic:anthology    # Weft-local identifier; inscriptions cite Rundata numbers
 unit: inscription
-written: {year: 400, label: "carved about 400 (Kylver, Gallehus) to about 800 (Rök)"}
+written: {year: 400, display: "c. 400–800", label: "carved about 400 (Kylver, Gallehus) to about 800 (Rök)"}
 status: phase-0
 pilot: {inscriptions: [kylver, gallehus, rok]}
 edition:
@@ -15,6 +15,7 @@ edition:
   file: edition.yaml              # committed with the work: short factual readings, no download
   license: CC BY-SA 4.0
 treebank: null                   # no treebank exists for runic inscriptions; hand annotation, draft
+sound_confidence: low              # the page invites specialists to correct the sound guide or record it
 schemes: [as-carved]             # each inscription in the language of its own date
 translations:
   - id: stephens1884

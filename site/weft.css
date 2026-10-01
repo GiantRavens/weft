@@ -258,3 +258,7 @@ body.rtl .src[lang="fa"] { font-family: "Noto Naskh Arabic", "Geeza Pro", "Times
 .ref-note { max-width: 1120px; margin: 14px auto 0; padding: 0 16px; font: 0.85rem/1.55 var(--sans); color: var(--ink-soft); }
 .ref-note strong { color: var(--ink); font-weight: 600; }
 .ref-note[hidden] { display: none; }
+
+/* invitation to specialists where the pronunciation is reconstructed */
+.sound-note { border-left: 3px solid var(--accent); padding-left: 12px; margin-top: 10px; }
+.sound-note a, .colophon a { color: var(--accent); }

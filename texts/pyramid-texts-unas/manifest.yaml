@@ -1,0 +1,77 @@
+work: pyramid-texts-unas
+title: The Pyramid Texts of Unas, Pyramid Text 273 (the "Cannibal Hymn"), opening
+author: Unknown priestly authors; carved for King Unas, last king of the Fifth Dynasty (reigned about 2375-2345 BC)
+language: egy
+lang_name: Old Egyptian
+prefix: pt                       # pt.<utterance>.<line>[.<token>]: Sethe's utterance number; line k is Unas column 495+k
+urn: urn:weft:egy:pyramidtexts.unas   # Weft-local identifier
+unit: section
+section_noun: utterance
+written: {year: -2350, display: "c. 2350 BC", label: "carved in the pyramid of Unas at Saqqara near the end of the Fifth Dynasty, about 2350 BC (reign dates vary between chronologies by some decades); the composition may be older"}
+status: phase-0
+pilot: {sections: ["273"]}
+edition:
+  id: tla-2018
+  name: "Thesaurus Linguae Aegyptiae, text BRJCKLT7KNED5EKQX5DWGX3T4A (PT 273 + PT 274, Unas, east gable; ed. Doris Topmann), columns 496-509, from the TLA database excerpt of January 2018 as distributed in the AES corpus (Simon D. Schweitzer), checked verbatim by `weft draft`"
+  format: weft-edition
+  file: edition.yaml
+  license: "TLA data CC BY-SA 4.0 (Berlin-Brandenburgische Akademie der Wissenschaften and Sächsische Akademie der Wissenschaften zu Leipzig); Weft line division, vocalization and sound CC BY-SA 4.0"
+treebank:
+  id: tla-2018
+  name: "Thesaurus Linguae Aegyptiae, database excerpt of January 2018 (urn:nbn:de:kobv:b4-opus4-29190), Pyramid Texts subcorpus in the AES JSON of S. D. Schweitzer: lemma, part of speech, morphological features and Gardiner sign codes, read by weft.egyptian"
+  format: "none"                 # draft reads no treebank format; weft.egyptian reads this file through its token hook
+  file: sources/aes_bbawpyramidentexte.json
+  url: "https://raw.githubusercontent.com/simondschweitzer/aes/35276d2527cca1a055e31ed5f6683e777717170f/files/aes/_aes_bbawpyramidentexte.json"
+  sha256: c82b275a2f5b70cb50b919d68f2113ef1d2c5cc1d50602718aa7931fa5f6ccf0
+  license: "CC BY-SA 4.0 (AES README: All files CC-BY-SA 4.0; the underlying TLA excerpt is published under CC BY-SA 4.0)"
+  license_url: https://creativecommons.org/licenses/by-sa/4.0/
+treebank_note: "The TLA website (thesaurus-linguae-aegyptiae.de, corpus edition 20) is newer but is not openly licensed for bulk reuse; its license page allows quoting single records only. The Hugging Face release of TLA v18 (CC BY-SA 4.0) contains only intact single sentences without text identifiers, so it cannot reproduce a passage. The 2018 excerpt is the openly licensed release that keeps whole texts, with Sethe's column numbers."
+schemes: [old-egyptian, egyptological]   # default = reconstructed Old Egyptian (conjectural word by word)
+sound_confidence: low              # the page invites specialists to correct the sound guide or record it
+translations:
+  - id: breasted1912
+    translator: James Henry Breasted
+    year: 1912
+    form: "verse lines, in Development of Religion and Thought in Ancient Egypt (New York, 1912), lecture IV, pages 127-128; Breasted spells the king's name Unis"
+    license: public-domain
+    license_url: https://archive.org/details/developmentofrel00breauoft
+    file: sources/breasted1912.txt
+    url: "https://archive.org/download/developmentofrel00breauoft/developmentofrel00breauoft_djvu.txt"
+    sha256: 08ab3b1ab8348f2630737add17e54ca5890841ded86cab785a85dfd95cb00f90
+    partial: "Breasted leaves out columns 502 (end) to 508, which he summarizes in a footnote as an obscure description of the king's equipment"
+  - id: tla-topmann
+    translator: Doris Topmann, Thesaurus Linguae Aegyptiae (German)
+    year: 2018
+    form: "German, sentence by sentence, from the TLA database excerpt of January 2018; Weft joins the sentences of each span"
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0/
+    file: sources/aes_bbawpyramidentexte.json
+    url: "https://raw.githubusercontent.com/simondschweitzer/aes/35276d2527cca1a055e31ed5f6683e777717170f/files/aes/_aes_bbawpyramidentexte.json"
+    sha256: c82b275a2f5b70cb50b919d68f2113ef1d2c5cc1d50602718aa7931fa5f6ccf0
+  - id: weft-editorial
+    translator: Weft editorial translation (draft)
+    year: 2026
+    form: "literal, close to the gloss row, for the columns Breasted leaves out"
+    kind: editorial
+    license: CC BY-SA 4.0
+    partial: "covers only columns 503-508, which no public-domain English translation consulted for this edition renders"
+  - id: faulkner1969
+    kind: reference
+    translator: R. O. Faulkner
+    year: 1969
+    title: "The Ancient Egyptian Pyramid Texts, Utterances 273-274"
+    publisher: "Clarendon Press, Oxford"
+  - id: allen2005
+    kind: reference
+    translator: James P. Allen
+    year: 2005
+    title: "The Ancient Egyptian Pyramid Texts (Writings from the Ancient World 23), Unas, antechamber, east gable"
+    publisher: "Society of Biblical Literature, Atlanta"
+    note: "Allen numbers the spells by their place in each pyramid and gives Sethe's utterance numbers beside them"
+predicted_gaps:
+  - "PT 213 ('you have not gone away dead') was considered first; it is not among the Unas texts of the openly licensed 2018 TLA excerpt (and its sentences are absent from the filtered v18 release), so the Cannibal Hymn was chosen"
+  - "no reconstruction for most words: Old Egyptian vowels are inferred, and Weft vocalizes only words whose Coptic descendant or Greek rendering was used (14 forms); the rest fall back to the Egyptological convention in the first scheme, flagged per token"
+  - "four signs have no Unicode code point in the basic Egyptian Hieroglyphs block: TLA codes D140 and D207 (extended JSesh signs) are left out of the hieroglyph row (sign-not-in-unicode), and the variants D3B and O30U are shown as their base signs D3 and O30 (sign-variant-shown-as-base)"
+  - "the hieroglyph row is a linear sequence of the TLA's sign codes; the grouping of signs in squares and their orientation on the wall are not reproduced"
+  - "Breasted's 1912 translation omits columns 502-508; Weft supplies an editorial English draft for 503-508, and the TLA German covers all lines"
+  - "the TLA 2018 excerpt predates later TLA revisions of this text; readings may differ from the current TLA website"

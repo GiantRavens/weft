@@ -7,7 +7,7 @@ prefix: polo                      # polo.<chapter>.<line>[.<token>]; chapter 159
 urn: urn:weft:fro:polo.devisement  # Weft-local identifier
 unit: section
 section_noun: chapter
-written: {year: 1298, label: "written down at Genoa in 1298 by Rustichello of Pisa from Marco Polo's account, as the book's prologue states; the text here is the Franco-Italian manuscript BnF fr. 1116, copied in the early 14th century, as printed in 1824"}
+written: {year: 1298, display: "1298", label: "written down at Genoa in 1298 by Rustichello of Pisa from Marco Polo's account, as the book's prologue states; the text here is the Franco-Italian manuscript BnF fr. 1116, copied in the early 14th century, as printed in 1824"}
 status: phase-0
 pilot: {sections: ["159"]}
 edition:
@@ -17,6 +17,7 @@ edition:
   file: edition.yaml
   license: the 1824 text is public domain; Weft transcription, line division and normalized spellings CC BY-SA 4.0
 treebank: null                    # no treebank; lemma, morphology and gloss by hand, draft
+sound_confidence: medium              # the page invites specialists to correct the sound guide or record it
 schemes: [fr1300, it1300]         # default = French of about 1300 (approximate); second = an Italian reader's sound (hypothesis)
 scheme_labels:
   fr1300: "French about 1300: the language the book is written in (approximate)"

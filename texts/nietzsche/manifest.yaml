@@ -7,7 +7,7 @@ prefix: nz                        # nz.<section>.<line>[.<token>]; sections fw12
 urn: urn:weft:de:nietzsche         # Weft-local identifier
 unit: section
 section_noun: passage
-written: {year: 1882, label: "Die fröhliche Wissenschaft was printed at Chemnitz by Ernst Schmeitzner in 1882; the first part of Also sprach Zarathustra followed from the same publisher in 1883"}
+written: {year: 1882, display: "1882–1883", label: "Die fröhliche Wissenschaft was printed at Chemnitz by Ernst Schmeitzner in 1882; the first part of Also sprach Zarathustra followed from the same publisher in 1883"}
 status: phase-0
 pilot: {sections: ["fw125", "za1"]}
 edition:

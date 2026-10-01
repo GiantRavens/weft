@@ -95,7 +95,9 @@ def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
                      script_label=getattr(PHON[m["language"]], "SCRIPT_LABEL", "Script (runes)"),
                      script_word=getattr(PHON[m["language"]], "SCRIPT_WORD", "runes"),
                      show_translit=getattr(PHON[m["language"]], "SHOW_TRANSLIT", m["language"] == "san"),
-                     translit_label=getattr(PHON[m["language"]], "TRANSLIT_LABEL", "Transliteration")),
+                     translit_label=getattr(PHON[m["language"]], "TRANSLIT_LABEL", "Transliteration"),
+                     sound_confidence=m.get("sound_confidence"),
+                     repo_url=REPO_URL),
         "edition": {k: m["edition"].get(k) for k in ("id", "name", "license")},
         "treebank": ({k: m["treebank"].get(k) for k in ("id", "name", "license")} if m.get("treebank")
                      else {"id": "hand annotation", "name": "no treebank: hand annotation, draft", "license": "CC BY-SA 4.0"}),
@@ -113,6 +115,7 @@ def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
     }
 
 
+REPO_URL = "https://github.com/GiantRavens/weft"   # corrections and recordings arrive as issues here
 ART_INK = "#16181D"
 
 
@@ -227,6 +230,16 @@ def run(repo: Path, work: str, private: bool = False) -> Path:
 
 
 
+def display_date(written: dict) -> str:
+    """The date shown in the library's left column: the manifest's display string, else the year."""
+    if written.get("display"):
+        return str(written["display"])
+    y = written.get("year")
+    if y is None:
+        return ""
+    return f"{-y} BC" if y < 0 else (f"AD {y}" if y < 1000 else str(y))
+
+
 def stanza_ranges(xs: list) -> str:
     """1, 2, 3, 76, 77 -> '1–3, 76–77'."""
     out: list[list] = []
@@ -272,10 +285,13 @@ def write_index(repo: Path, out_dir: Path) -> Path:
         ill = load_illustration(repo, m["work"], "thumb")
         thumb = (f'<a class="th" href="{H.escape(page.name)}" tabindex="-1" aria-hidden="true">'
                  f'<img src="{ill["src"]}" alt=""></a>') if ill else '<span class="th"></span>'
-        rows.append(f'<li>{thumb}<div class="body"><a href="{H.escape(page.name)}"><span class="t">{H.escape(m["title"])}</span>'
+        lang_name = m.get("lang_name") or LANG_NAMES.get(m["language"], m["language"])
+        when = f'<div class="when"><span class="yr">{H.escape(display_date(m.get("written") or {}))}</span>' \
+               f'<span class="lg">{H.escape(lang_name)}</span></div>'
+        rows.append(f'<li>{when}{thumb}<div class="body"><a href="{H.escape(page.name)}"><span class="t">{H.escape(m["title"])}</span>'
                     f'<span class="a">{H.escape(m["author"])} · {span}</span></a>'
                     + (f'<p class="w">{H.escape(written[:1].upper() + written[1:])}</p>' if written else "")
-                    + f'<p>{H.escape(m.get("lang_name") or LANG_NAMES.get(m["language"], m["language"]))}{" (reads right to left)" if m["language"] in RTL else ""} · '
+                    + f'<p>{"Reads right to left · " if m["language"] in RTL else ""}'
                     f'{H.escape(", ".join(m["schemes"]))} · {H.escape(trs)}</p></div></li>')
     if age is not None:
         rows.append("</ul></section>")
@@ -297,16 +313,20 @@ INDEX = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15130f;--ink:#ece4d2;--soft:#b9ad96;--rule:#342f26;--accent:#e08a5f;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#15130f;--ink:#ece4d2;--soft:#b9ad96;--rule:#342f26;--accent:#e08a5f;color-scheme:dark}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Gentium Book Plus",Palatino,serif}
-main{max-width:720px;margin:0 auto;padding:48px 16px}
+main{max-width:860px;margin:0 auto;padding:48px 16px}
 .k{font:600 .7rem/1 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0}
 h1{font-size:2.2rem;margin:.3rem 0 .4rem}.lede{color:var(--soft);margin:0 0 .6rem;font-size:1.1rem}
 ul{list-style:none;padding:0;margin:0}li{border-top:1px solid var(--rule);padding:18px 0;display:flex;gap:18px;align-items:flex-start}
 .age{margin:2.4rem 0 0}.age h2{font:600 .75rem/1 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 12px;display:flex;gap:12px;align-items:baseline}
 .age h2 span{letter-spacing:.04em;text-transform:none;font-weight:400;color:var(--soft)}
+.when{flex:0 0 8.6rem;display:flex;flex-direction:column;gap:5px;padding-top:4px}
+.when .yr{font:700 1.02rem/1.15 Inter,system-ui,sans-serif;color:var(--ink);letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.when .lg{font:600 .66rem/1.3 Inter,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
 .th{flex:0 0 88px;width:88px;height:88px;border-radius:6px;overflow:hidden;background:var(--rule);display:block}
 .th img{width:100%;height:100%;object-fit:cover;display:block}.body{flex:1;min-width:0}
 .body>a{color:inherit;text-decoration:none;display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline}
-@media (max-width:520px){.th{flex-basis:64px;width:64px;height:64px}li{gap:14px}}
+@media (max-width:560px){li{flex-wrap:wrap;gap:10px 14px}.when{flex:0 0 100%;flex-direction:row;align-items:baseline;gap:10px;padding-top:0}
+.th{flex-basis:64px;width:64px;height:64px}}
 .body>a:hover .t{color:var(--accent)}.t{font-size:1.6rem;font-weight:700}.a{color:var(--soft)}
 li p{margin:6px 0 0;font:.85rem/1.5 Inter,system-ui,sans-serif;color:var(--soft)}
 li p.w{margin-top:4px;font:italic .95rem/1.4 "Gentium Book Plus",Palatino,serif;color:var(--accent)}

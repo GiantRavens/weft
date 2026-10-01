@@ -6,7 +6,7 @@ prefix: mor                      # mor.<section>.<line>[.<token>]
 urn: urn:weft:lat:moriae-encomium   # Weft-local identifier
 unit: section
 section_noun: passage
-written: {year: 1511, label: "written 1509 in Thomas More's house, first printed in Paris in 1511"}
+written: {year: 1511, display: "1509–1511", label: "written 1509 in Thomas More's house, first printed in Paris in 1511"}
 status: phase-0
 pilot: {sections: [exordium]}
 edition:

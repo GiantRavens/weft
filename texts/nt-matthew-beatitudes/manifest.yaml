@@ -5,7 +5,7 @@ language: grc
 prefix: mt                     # mt.<chapter>.<verse>[.<token>]
 urn: urn:cts:greekLit:tlg0031.tlg001
 unit: verse
-written: {year: 85, label: "written about AD 80–90"}   # composition date; the library sorts by year
+written: {year: 85, display: "AD 80–90", label: "written about AD 80–90"}   # composition date; the library sorts by year
 status: draft
 pilot: {chapter: 5, first: 3, last: 12}
 edition:

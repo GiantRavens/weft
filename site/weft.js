@@ -79,6 +79,13 @@
     }
     return out.map(([a, b]) => (a === b ? `${a}` : `${a}–${b}`)).join(", ");
   };
+  const issueUrl = (kind) => {
+    const repo = D.work.repo_url || "https://github.com/GiantRavens/weft";
+    const title = `${kind}: ${D.work.title}`;
+    const body = `Page: ${D.work.work}\nScheme: ${S.scheme}\nLine or word (e.g. its id from the word panel):\n\nWhat you suggest, and the source or evidence for it:\n`;
+    return `${repo}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+  };
+
   /* ---------- masthead and colophon */
   document.title = `${D.work.title} · Weft`;
   $("#work-title").textContent = D.work.title;
@@ -100,6 +107,8 @@
     h("p", { text: "Translations: " + D.translations.map((t) => `${t.translator}, ${t.year} (${t.license})`).join("; ") + "."
       + ((D.references || []).length ? " Cited, in copyright: " + D.references.map((r) => `${r.translator}, ${r.year}`).join("; ") + "." : "") }),
     anyDraft ? h("p", { text: "Glosses, scansion and editorial notes are a phase 0 draft awaiting scholarly review." }) : null,
+    h("p", {}, "Corrections to a gloss, a reading or the pronunciation, and recordings, are welcome: ",
+      h("a", { href: issueUrl("Correction"), text: "open an issue" }), "."),
     h("p", { text: `Built with Weft ${D.build.weft}${D.build.private ? " · private build, includes licensed translations" : ""}.` }),
   );
 
@@ -275,6 +284,17 @@
     note.append(h("span", { class: "arrow", "aria-hidden": "true", text: "←" }),
       h("strong", { text: "Read right to left. " }),
       `${D.work.lang_name || "This text"} runs from right to left: each ${D.work.unit === "verse" ? "verse" : "line"} begins at the right edge, and its first word is the rightmost. The pronunciation and gloss under each word read left to right.`);
+    note.hidden = false;
+  }
+  // an invitation to specialists: corrections to a reconstructed pronunciation, or recordings
+  if (D.work.sound_confidence === "low" || D.work.sound_confidence === "medium") {
+    const note = $("#sound-note");
+    const low = D.work.sound_confidence === "low";
+    note.append(h("strong", { text: low ? "The pronunciation here is a reconstruction. " : "Parts of the pronunciation here are reconstructed. " }),
+      low ? `How ${D.work.lang_name || "this language"} sounded is inferred indirectly, and specialists disagree. If you work on its phonology, we would welcome corrections to the sound guide, and recordings read from this page. `
+          : "Specialists are welcome to suggest corrections or contribute recordings. ",
+      h("a", { href: issueUrl("Pronunciation"), text: "Suggest a correction or offer a recording" }),
+      ". The guide for contributors is in the project's CONTRIBUTING file.");
     note.hidden = false;
   }
   // translations still in copyright: cited here, never reproduced

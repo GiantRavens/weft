@@ -5,7 +5,7 @@ language: non
 prefix: gre                      # gre.<chapter>.<sentence>[.<token>]
 urn: urn:weft:non:grettis-saga   # no CTS URN; Weft-local identifier
 unit: sentence
-written: {year: 1315, label: "written about 1310–1320"}   # composition date; the library sorts by year
+written: {year: 1315, display: "1310–1320", label: "written about 1310–1320"}   # composition date; the library sorts by year
 status: phase-0
 pilot: {chapter: 14, first: 1, last: 9}    # IcePaHC sentence numbers within the text; its excerpt opens chapter 14
 edition:

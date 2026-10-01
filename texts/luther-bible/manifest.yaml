@@ -7,7 +7,7 @@ prefix: lb                        # lb.<section>.<verse>[.<token>]; sections jn1
 urn: urn:weft:de:luther-bible      # Weft-local identifier
 unit: section
 section_noun: passage
-written: {year: 1545, label: "Biblia: das ist: Die gantze Heilige Schrifft: Deudsch, printed at Wittenberg by Hans Lufft in 1545, the last edition printed in Luther's lifetime; the New Testament first appeared in September 1522, the complete Bible in 1534"}
+written: {year: 1545, display: "1545", label: "Biblia: das ist: Die gantze Heilige Schrifft: Deudsch, printed at Wittenberg by Hans Lufft in 1545, the last edition printed in Luther's lifetime; the New Testament first appeared in September 1522, the complete Bible in 1534"}
 status: phase-0
 pilot: {sections: ["jn1", "ps23"]}
 edition:

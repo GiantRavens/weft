@@ -60,6 +60,11 @@ UD_VAL = {"Sing": "singular", "Plur": "plural", "Dual": "dual", "Pres": "present
           "Suffix": "suffixed pronoun"}
 
 
+# Case values decoded on their own: Com is "common gender" elsewhere (Hebrew) but "comitative" as a case
+CASE_VAL = {"Com": "comitative", "Erg": "ergative", "Equ": "equative", "Ter": "terminative",
+            "Abs": "absolutive", "All": "allative", "Abl": "ablative", "Loc": "locative", "Dir": "directive"}
+
+
 def _decode_ud(tag: str) -> str:
     """'VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres' -> 'verb, 3rd person, singular, present, indicative'."""
     pos, *feats = tag.split("|")
@@ -69,7 +74,9 @@ def _decode_ud(tag: str) -> str:
         v = fd.get(k)
         if not v or v == "Fin":
             continue
-        if k == "Person":
+        if k == "Case" and v in CASE_VAL:      # case names that clash with other features' values
+            parts.append(CASE_VAL[v])
+        elif k == "Person":
             parts.append({"1": "1st person", "2": "2nd person", "3": "3rd person"}.get(v, v))
         elif k == "Compound" and v == "Yes":
             parts.append("first member of a compound")

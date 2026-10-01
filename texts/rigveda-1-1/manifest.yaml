@@ -6,7 +6,7 @@ prefix: rv.1.1                   # rv.1.1.<verse>.<half-verse>[.<token>]
 urn: urn:weft:san:rigveda.1.1    # Weft-local identifier
 unit: section
 section_noun: verse
-written: {year: -1350, label: "composed about 1500–1200 BC and handed down orally, pitch accent included, for many centuries before it was written down"}
+written: {year: -1350, display: "1500–1200 BC", label: "composed about 1500–1200 BC and handed down orally, pitch accent included, for many centuries before it was written down"}
 status: phase-0
 pilot: {sections: ["1", "2", "3", "4", "5", "6", "7", "8", "9"]}
 edition:
@@ -25,6 +25,7 @@ treebank:
   sha256: 05829c606047956b25aa6ebbd1fd2b11255ed04840fb90c3661f102b556c791d
   license: CC BY-SA 4.0
   license_url: https://github.com/UniversalDependencies/UD_Sanskrit-Vedic/blob/master/LICENSE.txt
+sound_confidence: medium              # the page invites specialists to correct the sound guide or record it
 schemes: [vedic, modern]         # default = Vedic recitation with its pitch accent (approximate)
 sources_extra:
   - id: rv-sasvara-1-5

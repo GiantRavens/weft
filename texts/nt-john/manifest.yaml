@@ -5,7 +5,7 @@ language: grc
 prefix: jn                       # jn.<chapter>.<verse>[.<token>]
 urn: urn:cts:greekLit:tlg0031.tlg004
 unit: verse
-written: {year: 95, label: "written about AD 90–110"}   # composition date; the library sorts by year
+written: {year: 95, display: "AD 90–110", label: "written about AD 90–110"}   # composition date; the library sorts by year
 status: phase-0
 pilot: {chapter: 1, first: 1, last: 18}
 edition:

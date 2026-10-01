@@ -1,0 +1,80 @@
+work: enheduanna-temple-hymns
+title: The Temple Hymns, hymn 5 (the E-šumeša of Ninurta at Nippur)
+author: Enheduanna, en-priestess of the moon god Nanna at Ur and daughter of Sargon of Akkad (about 2300 BC); attribution debated
+language: sux
+lang_name: Sumerian
+prefix: th                       # th.<hymn>.<line>[.<token>]: hymn number in the ETCSL composite, line of the Ur tablet
+urn: urn:weft:sux:templehymns    # Weft-local identifier
+unit: section
+section_noun: hymn
+written: {year: -2300, display: "c. 2300 BC", label: "attributed to Enheduanna, about 2300 BC (Akkad period); this copy is an Old Babylonian school tablet from Ur, about 1800 BC"}
+status: phase-0
+pilot: {sections: ["5"]}
+edition:
+  id: oracc-p346196
+  name: "UET 6/1 111 (Ur, U 16829; CDLI P346196), obverse lines 1-19, as transliterated in the Oracc epsd2/literary corpus (transliteration contributed to CDLI by D. A. Foxvog, 2021), checked verbatim against the Oracc JSON by `weft draft`"
+  format: weft-edition
+  file: edition.yaml
+  license: "Oracc epsd2/literary data CC0 1.0 (stated in the JSON); Weft token division, sign reading and sound CC BY-SA 4.0"
+treebank:
+  id: oracc-epsd2-literary
+  name: "Oracc epsd2/literary, P346196: lemmatization (citation form, guide word, sense, POS and morpheme string), read by weft.sumerian"
+  format: "none"                 # draft reads no treebank format; weft.sumerian reads this file through its token hook
+  file: sources/P346196.json
+  url: "https://web.archive.org/web/20220921062901id_/http://oracc.museum.upenn.edu/json/epsd2-literary.zip"   # Internet Archive capture of Oracc's JSON export, 21 September 2022 (JSON built 2021-12-21); the Oracc server sends an incomplete TLS chain that Python cannot verify
+  extract: "epsd2/literary/corpusjson/P346196.json$"
+  sha256: 4feec52f4e79b5125939abb5f7b1fc0732eee153094ba8e2a195700be5c6bff5
+  license: "CC0 1.0 (the JSON states: This data is released under the CC0 license); project pages CC BY-SA 3.0"
+  license_url: https://creativecommons.org/publicdomain/zero/1.0/
+treebank_note: "The project page of epsd2/literary says its ETCSL-derived composites are CC BY-NC-SA 3.0. This text is not one of them: it is a single manuscript transliterated for CDLI by D. A. Foxvog and lemmatized in Oracc."
+schemes: [recon-2300, classroom]  # default = reconstructed late third millennium Sumerian (conjectural)
+sound_confidence: low              # the page invites specialists to correct the sound guide or record it
+translations:
+  - id: weft-editorial
+    translator: Weft editorial translation (draft)
+    year: 2026
+    form: "literal, line by line, close to the gloss row"
+    kind: editorial                # Weft's own words, not a published translation
+    license: CC BY-SA 4.0
+  - id: sjoberg1969
+    kind: reference
+    translator: Åke W. Sjöberg and Eugen Bergmann
+    year: 1969
+    title: "The Collection of the Sumerian Temple Hymns (Texts from Cuneiform Sources 3; with Gene B. Gragg, The Keš Temple Hymn)"
+    publisher: "J. J. Augustin, Locust Valley, N.Y."
+    note: "The standard edition of the collection, with composite text, translation and commentary; it numbers this hymn 5"
+  - id: etcsl4801
+    kind: reference
+    translator: "J. A. Black, G. Cunningham, E. Robson, G. Zólyomi and others"
+    year: 1998
+    title: "The temple hymns (ETCSL 4.80.1), translation, The Electronic Text Corpus of Sumerian Literature, lines 61-76"
+    publisher: "University of Oxford, online"
+    note: "ETCSL's texts are licensed CC BY-NC-SA 3.0, which does not allow reuse in Weft"
+  - id: foxvog2021
+    kind: reference
+    translator: Daniel A. Foxvog
+    year: 2021
+    title: "Line-by-line translation of UET 6/1 111 (P346196), with his transliteration"
+    publisher: "Cuneiform Digital Library Initiative, online"
+    note: "It translates this tablet's own wording; CDLI's terms allow academic reuse with attribution but grant no open license, so it is cited here and not reproduced"
+  - id: meador2009
+    kind: reference
+    translator: Betty De Shong Meador
+    year: 2009
+    title: "Princess, Priestess, Poet: The Sumerian Temple Hymns of Enheduanna"
+    publisher: "University of Texas Press, Austin"
+  - id: helle2023
+    kind: reference
+    translator: Sophus Helle
+    year: 2023
+    title: "Enheduana: The Complete Poems of the World's First Author"
+    publisher: "Yale University Press, New Haven"
+predicted_gaps:
+  - "substitution: the requested text was nin-me-šara (The Exaltation of Inanna, ETCSL 4.07.2). Its only online transcriptions are ETCSL's (CC BY-NC-SA 3.0) and the Oracc epsd2/literary composite derived from it (Q000623); no individual manuscript of it is edited in an openly licensed corpus. This edition takes instead a complete hymn from the Temple Hymns, the other major work attributed to Enheduanna, from an Ur manuscript that is not ETCSL data"
+  - "the edition is one manuscript, not a composite: its wording and line division differ from the composite text (this hymn is 15 lines in the ancient count, 19 on this tablet)"
+  - "one sign is broken (line 6: sign-illegible, and with three words of line 4 it makes four oracc-unlemmatized tokens: x, gurun, ud, lu-u₁₉-lu-za); their lemma and form are marked as unknown and their gloss is bracketed"
+  - "the Oracc JSON drops the scribal-error and query flags that the Oracc page prints (an!? in line 1, nun! in line 2); the edition reproduces the JSON forms, and the notes name the flags"
+  - "Oracc and CDLI read two signs differently: u₁₉ (URU) against ulu₃ (URU×MIN) in line 4, and kišib (MES) against kišib₃ (DUB) in line 13. The cuneiform row follows Oracc"
+  - "Oracc's parse is followed for lemma and morphology, including three readings other editions do not share (ki-gal-la as genitive, ur-saŋ-ŋa₂ with 'my', Ninurta-ke₄ as genitive); the notes discuss them"
+  - "the sound is conjectural; stress is unknown and not marked; vowel length is unknown; the phoneme written dr (ř) is not applied"
+  - "morphology: possessor person and the copula are recorded as UD features (Person[psor], Cop) that the page does not yet display; the gloss carries them"

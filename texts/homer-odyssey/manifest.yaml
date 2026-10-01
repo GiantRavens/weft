@@ -5,7 +5,7 @@ language: grc
 prefix: od                       # short ID prefix: od.<book>.<line>[.<token>]
 urn: urn:cts:greekLit:tlg0012.tlg002
 unit: line
-written: {year: -700, label: "composed about 725–675 BC"}   # composition date; the library sorts by year
+written: {year: -700, display: "725–675 BC", label: "composed about 725–675 BC"}   # composition date; the library sorts by year
 status: phase-0
 pilot: {book: 1, first: 1, last: 10}
 edition:

@@ -1,0 +1,140 @@
+# Weft edition of hymn 5 of the Temple Hymns (the E-šumeša, house of Ninurta at Nippur), as written
+# on one Old Babylonian tablet from Ur: UET 6/1 111 (U 16829; CDLI and Oracc P346196), obverse lines
+# 1-19. The tablet goes on to the next two hymns of the collection; Weft takes this hymn whole.
+#
+# The transliteration is Oracc's (epsd2/literary, CC0), contributed to CDLI by D. A. Foxvog. Each
+# token reproduces the Oracc form verbatim, with ⸢ ⸣ around damaged signs. `weft draft` checks
+# every line against the Oracc JSON (verify_in), keeping only the "frag" values of that file
+# (verify_strip), and weft.sumerian checks each token against the Oracc word at its ref.
+#
+# One Weft line is one line of the tablet. Line IDs are th.5.<line>.
+#
+#   t    the Oracc transliteration, verbatim
+#   ref  the Oracc word reference; lemma and morphology are read from the Oracc JSON through it
+#   n    a hand reading for the sound, only where the spelling misleads (a-a is the word aya, 'father')
+#
+# Oracc's page prints two flags its JSON leaves out: an!? in line 1 (a sign that may be an
+# error for AN) and nun! in line 2 (a sign corrected to NUN). The notes name them.
+joiner: " "
+verify_in: sources/P346196.json
+verify_strip: '(?m)^(?!\s*"frag": ").*$|^\s*"frag": "|",$'
+sections:
+  - id: "5"
+    title: "Hymn 5: the E-šumeša, house of Ninurta at Nippur"
+    oracc_json: sources/P346196.json
+    lines:
+      - tokens:   # o 1
+        - {t: "⸢e₂", ref: "P346196.3.1"}
+        - {t: "me", ref: "P346196.3.2"}
+        - {t: "ur₄", ref: "P346196.3.3"}
+        - {t: "an⸣-na", ref: "P346196.3.4"}
+        - {t: "ki-gal-la", ref: "P346196.3.5"}
+        - {t: "gub-ba", ref: "P346196.3.6"}
+      - tokens:   # o 2
+        - {t: "⸢me", ref: "P346196.4.1"}
+        - {t: "zid", ref: "P346196.4.2"}
+        - {t: "ur-saŋ-ŋa₂⸣", ref: "P346196.4.3"}
+        - {t: "barag-ge", ref: "P346196.4.4"}
+        - {t: "nun-e", ref: "P346196.4.5"}
+        - {t: "mu₂-a", ref: "P346196.4.6"}
+      - tokens:   # o 3
+        - {t: "a₂", ref: "P346196.5.1"}
+        - {t: "me₃", ref: "P346196.5.2"}
+        - {t: "{ŋeš}mitum₂", ref: "P346196.5.3"}
+        - {t: "tir", ref: "P346196.5.4"}
+        - {t: "ma-ru-da", ref: "P346196.5.5"}
+        - {t: "ni₂", ref: "P346196.5.6"}
+        - {t: "⸢gur₃⸣", ref: "P346196.5.7"}
+      - tokens:   # o 4
+        - {t: "šeg₁₂", ref: "P346196.6.1"}
+        - {t: "gurun", ref: "P346196.6.2"}
+        - {t: "nu-silig-ge", ref: "P346196.6.3"}
+        - {t: "temen", ref: "P346196.6.4"}
+        - {t: "ud", ref: "P346196.6.5"}
+        - {t: "lu-u₁₉-lu-za", ref: "P346196.6.6"}
+      - tokens:   # o 5
+        - {t: "en-ul-e", ref: "P346196.7.1"}
+        - {t: "ŋar-ra", ref: "P346196.7.2"}
+        - {t: "eš-bar", ref: "P346196.7.3"}
+        - {t: "me", ref: "P346196.7.4"}
+        - {t: "nun-na-kam", ref: "P346196.7.5"}
+      - tokens:   # o 6
+        - {t: "x", ref: "P346196.8.1"}
+        - {t: "gal", ref: "P346196.8.2"}
+        - {t: "kur-ra", ref: "P346196.8.3"}
+        - {t: "ab-diri", ref: "P346196.8.4"}
+        - {t: "saŋ", ref: "P346196.8.5"}
+        - {t: "il₂", ref: "P346196.8.6"}
+        - {t: "nun-e-ne", ref: "P346196.8.7"}
+      - tokens:   # o 7
+        - {t: "⸢e₂⸣", ref: "P346196.9.1"}
+        - {t: "mah", ref: "P346196.9.2"}
+        - {t: "u₆", ref: "P346196.9.3"}
+        - {t: "e₃-⸢zu⸣", ref: "P346196.9.4"}
+        - {t: "ud-gin₇", ref: "P346196.9.5"}
+        - {t: "muš", ref: "P346196.9.6"}
+        - {t: "⸢barag⸣-ge", ref: "P346196.9.7"}
+      - tokens:   # o 8
+        - {t: "⸢e₂⸣-šu-me-ša₄", ref: "P346196.10.1"}
+        - {t: "mu-zu", ref: "P346196.10.2"}
+        - {t: "{d}en-lil₂-le", ref: "P346196.10.3"}
+      - tokens:   # o 9
+        - {t: "⸢ni₂⸣", ref: "P346196.11.1"}
+        - {t: "huš", ref: "P346196.11.2"}
+        - {t: "ma-ra-ni-ri", ref: "P346196.11.3"}
+      - tokens:   # o 10
+        - {t: "nun-zu", ref: "P346196.12.1"}
+        - {t: "tumu-e", ref: "P346196.12.2"}
+        - {t: "kur-e", ref: "P346196.12.3"}
+        - {t: "ur-saŋ-e", ref: "P346196.12.4"}
+        - {t: "ni₂", ref: "P346196.12.5"}
+        - {t: "ri", ref: "P346196.12.6"}
+        - {t: "zag", ref: "P346196.12.7"}
+        - {t: "dab₅-ba", ref: "P346196.12.8"}
+      - tokens:   # o 11
+        - {t: "ensi₂", ref: "P346196.13.1"}
+        - {t: "gal", ref: "P346196.13.2"}
+        - {t: "{d}en-lil₂-la₂", ref: "P346196.13.3"}
+      - tokens:   # o 12
+        - {t: "⸢nir⸣", ref: "P346196.14.1"}
+        - {t: "an-ki-da", ref: "P346196.14.2"}
+        - {t: "zag", ref: "P346196.14.3"}
+        - {t: "šuš₂-a", ref: "P346196.14.4"}
+      - tokens:   # o 13
+        - {t: "kišib-ŋal₂", ref: "P346196.15.1"}
+        - {t: "si-ŋar", ref: "P346196.15.2"}
+        - {t: "a-a", ref: "P346196.15.3", n: "a-ya"}
+        - {t: "{d}en-lil₂-la₂-ka", ref: "P346196.15.4"}
+        - {t: "me", ref: "P346196.15.5"}
+        - {t: "nam-gal", ref: "P346196.15.6"}
+        - {t: "šu", ref: "P346196.15.7"}
+        - {t: "du₇", ref: "P346196.15.8"}
+      - tokens:   # o 14
+        - {t: "⸢gaba⸣-ŋal₂", ref: "P346196.16.1"}
+        - {t: "saŋ", ref: "P346196.16.2"}
+        - {t: "huš", ref: "P346196.16.3"}
+        - {t: "ri", ref: "P346196.16.4"}
+        - {t: "palil", ref: "P346196.16.5"}
+        - {t: "a-a", ref: "P346196.16.6", n: "a-ya"}
+        - {t: "{d}en-lil₂-la₂", ref: "P346196.16.7"}
+      - tokens:   # o 15
+        - {t: "kur", ref: "P346196.17.1"}
+        - {t: "gu₂-erim₂-ŋal₂", ref: "P346196.17.2"}
+        - {t: "mu-na-gul-gul-e", ref: "P346196.17.3"}
+      - tokens:   # o 16
+        - {t: "saŋ-kal", ref: "P346196.18.1"}
+        - {t: "piriŋ", ref: "P346196.18.2"}
+        - {t: "kur-gal-e", ref: "P346196.18.3"}
+        - {t: "tud-da", ref: "P346196.18.4"}
+      - tokens:   # o 17
+        - {t: "e₂-šu-me-ša₄", ref: "P346196.19.1"}
+        - {t: "e₂", ref: "P346196.19.2"}
+        - {t: "{d}nin-urta-ke₄", ref: "P346196.19.3"}
+      - tokens:   # o 18
+        - {t: "muš-za", ref: "P346196.20.1"}
+        - {t: "e₂", ref: "P346196.20.2"}
+        - {t: "bi₂-in-gub", ref: "P346196.20.3"}
+      - tokens:   # o 19
+        - {t: "barag-za", ref: "P346196.21.1"}
+        - {t: "dur₂", ref: "P346196.21.2"}
+        - {t: "bi₂-in-ŋar", ref: "P346196.21.3"}

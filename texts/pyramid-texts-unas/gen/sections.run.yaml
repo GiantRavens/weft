@@ -1,0 +1,34 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '273'
+counts:
+  lines: 14
+  tokens: 187
+failures:
+  sign-variant-shown-as-base: 5
+  sign-not-in-unicode: 2
+samples:
+  sign-variant-shown-as-base:
+  - '273.9 wp,t: D3B as D3'
+  - '273.12 jꜥb: O30U as O30'
+  - '273.14 Jḫmꜥ-wp,t,pl-jm(,j)-kḥꜣ,w: D3B as D3'
+  - '273.14 Jḫmꜥ-wp,t,pl-jm(,j)-kḥꜣ,w: D3B as D3'
+  - '273.14 Jḫmꜥ-wp,t,pl-jm(,j)-kḥꜣ,w: D3B as D3'
+  sign-not-in-unicode:
+  - '273.9 ptr.t: D140'
+  - '273.12 jm(,j).w-s,t-ꜥ: D207'
+failure_rate:
+  sign-variant-shown-as-base: 0.027
+  sign-not-in-unicode: 0.011
+shift_left: []
+predicted_gaps:
+- PT 213 ('you have not gone away dead') was considered first; it is not among the Unas texts of the openly licensed 2018 TLA excerpt (and its sentences are absent from the filtered v18 release), so the
+  Cannibal Hymn was chosen
+- 'no reconstruction for most words: Old Egyptian vowels are inferred, and Weft vocalizes only words whose Coptic descendant or Greek rendering was used (14 forms); the rest fall back to the Egyptological
+  convention in the first scheme, flagged per token'
+- 'four signs have no Unicode code point in the basic Egyptian Hieroglyphs block: TLA codes D140 and D207 (extended JSesh signs) are left out of the hieroglyph row (sign-not-in-unicode), and the variants
+  D3B and O30U are shown as their base signs D3 and O30 (sign-variant-shown-as-base)'
+- the hieroglyph row is a linear sequence of the TLA's sign codes; the grouping of signs in squares and their orientation on the wall are not reproduced
+- Breasted's 1912 translation omits columns 502-508; Weft supplies an editorial English draft for 503-508, and the TLA German covers all lines
+- the TLA 2018 excerpt predates later TLA revisions of this text; readings may differ from the current TLA website

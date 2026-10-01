@@ -6,7 +6,7 @@ prefix: ba                       # ba.<year>[a-d].<line>[.<token>]; the frog poe
 urn: urn:weft:ja:basho.furuike   # Weft-local identifier
 unit: section
 section_noun: poem
-written: {year: 1686, label: "nine poems composed between 1680 and 1694, in order of composition; the old-pond poem was published in 1686, in the anthology Haru no Hi (Spring Days)"}
+written: {year: 1686, display: "1680–1694", label: "nine poems composed between 1680 and 1694, in order of composition; the old-pond poem was published in 1686, in the anthology Haru no Hi (Spring Days)"}
 status: phase-0
 pilot: {sections: ["1680", "1684", "1686", "1689a", "1689b", "1689c", "1689d", "1690", "1694"]}
 edition:

@@ -1,0 +1,242 @@
+# Weft edition of the opening of Pyramid Text 273 (the "Cannibal Hymn", Sethe's utterances 273-274)
+# as carved on the east gable of the antechamber in the pyramid of Unas at Saqqara, columns 496-509
+# in Sethe's numbering of the Unas texts. One Weft line is one column of the wall: line 1 is column
+# 496, line 14 is column 509.
+#
+# The transliteration is the Thesaurus Linguae Aegyptiae's (text BRJCKLT7KNED5EKQX5DWGX3T4A, edited
+# by Doris Topmann), from the TLA database excerpt of January 2018 (CC BY-SA 4.0) as distributed in
+# the AES corpus (Simon D. Schweitzer). `weft draft` checks it verbatim against that file; the strip
+# pattern below reduces the JSON to its sequence of written forms.
+#
+#   t    the TLA written form, verbatim (j for the reed leaf; a comma before the feminine t; .pl and
+#        .du for endings the script leaves unwritten; brackets for sounds the editor restores)
+#   tla  the TLA token id: lemma, part of speech, features and Gardiner sign codes are read from it
+#   n    Weft's vocalization, hand-entered. Vowels and an acute accent on the stressed vowel appear
+#        only where the evidence named under `vocalization` was used; otherwise n is the bare
+#        transliteration in Egyptological letters, with unwritten plural endings supplied (.w, .wt)
+joiner: " "
+verify_in: sources/aes_bbawpyramidentexte.json
+verify_strip: '(?m)^(?![ \t]*"written_form": ").*\n?|^[ \t]*"written_form": "|",?$'
+sections:
+  - id: "273"
+    title: "Pyramid Text 273, opening: Unas columns 496-509"
+    tla_file: texts/pyramid-texts-unas/sources/aes_bbawpyramidentexte.json
+    # the evidence behind each vocalized form; the page shows it in the word's provenance.
+    # Forms are Weft's inference from the named evidence, conjectural throughout
+    vocalization:
+      "pí.t": "Coptic (Sahidic) ⲡⲉ pe, 'sky': the stressed vowel i is inferred from the Coptic e; whether the feminine ending still carried a vowel is not shown"
+      "nā́ṯir": "Coptic ⲛⲟⲩⲧⲉ noute, 'god': a long stressed ā, the usual source of Coptic ou in this position; the second vowel, reduced to e in Coptic, is written i and is uncertain"
+      "naṯī́r.w": "Coptic ⲛⲧⲏⲣ ntēr, 'gods': stress on a long second vowel (Coptic ē); the first vowel is uncertain, and the plural ending, lost in Coptic, is read as u by rule"
+      "jā́tj": "Coptic ⲉⲓⲱⲧ eiōt, 'father': initial y and a long stressed ā (Coptic ō); the final reed leaf is read as the vowel i"
+      "múw.at": "Coptic ⲙⲁⲁⲩ maau, 'mother': stress on the first syllable; the vowels u and a are inferred and uncertain"
+      "rín": "Coptic ⲣⲁⲛ ran, 'name' (ⲣⲁⲛ= before a suffix): Coptic a in a closed syllable from an earlier i"
+      "Wánjs": "Greek Ὄννος (Onnos), the king's name in the Greek king lists derived from Manetho: stress on the first syllable, with the Greek o taken as the reflex of wa; the reed leaf is read as the vowel i"
+      "níb": "Coptic ⲛⲓⲙ nim, 'every': the vowel i; the change of b to m is later"
+      "ḥíkꜣ.w": "Coptic ϩⲓⲕ hik, 'magic' (singular): a stressed i; the ꜣ, lost in Coptic, is kept as a consonant of the period, and the plural ending is read as u by rule"
+      "ẖī́.t": "Coptic ϩⲏ hē, 'belly': a long stressed vowel; ī for Coptic ē is an inference"
+      "harā́w": "Coptic ϩⲟⲟⲩ hoou, 'day': stress on a long ā in the second syllable (Coptic oo); the first vowel is a guess"
+      "rā́maṯ": "Coptic ⲣⲱⲙⲉ rōme, 'person': a long stressed ā (Coptic ō); the final e points to a reduced second vowel, written a"
+      "ẖar": "Coptic ϩⲁ ha, 'under' (ϩⲁⲣⲟ= before a suffix): the vowel a; unstressed, as a preposition"
+      "ḥir": "Coptic ϩⲓ hi, 'on': the vowel i; unstressed, as a preposition"
+    lines:
+      - tokens:   # Unas column 496
+        - {t: "gp", n: "gp", tla: "IBUBdxkXsvDBikkXnunig0JouLo"}
+        - {t: "p,t", n: "pí.t", tla: "IBUBd1esPJM7L0I5kfFgNGoWAXw"}
+        - {t: "jḥy", n: "jḥy", tla: "IBUBd0cv8qGUlUGEv574SxPiL2A"}
+        - {t: "sbꜣ.pl", n: "sbꜣ.w", tla: "IBUBd0v0WKQup0NCk6qglpA4G7g"}
+      - tokens:   # Unas column 497
+        - {t: "nmnm", n: "nmnm", tla: "IBUBd9YmMILrTkWwqPrUrZsXWLc"}
+        - {t: "pḏ,t.pl", n: "pḏ.wt", tla: "IBUBd2kKqpLMekjsvPNxDFPQVn0"}
+        - {t: "sdꜣ", n: "sdꜣ", tla: "IBUBdxhSyekdQUQBpHL7hJYYXCs"}
+      - tokens:   # Unas column 498
+        - {t: "qs.pl", n: "qs.w", tla: "IBUBd1ELWfB15EM0uBkCwgwgmcY"}
+        - {t: "ꜣkr.w", n: "ꜣkr.w", tla: "IBUBd8p1hiKGPUP5sACb79Ebm94"}
+        - {t: "gr", n: "gr", tla: "IBUBdx238eCZW07jinVBBxUEB7o"}
+        - {t: "r", n: "r", tla: "IBUBd7imW6qUwU7Cv5LLf3hAWb8"}
+        - {t: "=sn", n: "=sn", tla: "IBUBdzQ4E7Q2Jk24h3KH0EYOSVk"}
+        - {t: "gnm.w", n: "gnm.w", tla: "IBUBd7uFtKRdYUVWsbTW3Hm6KA4"}
+        - {t: "mꜣ.n", n: "mꜣ.n", tla: "IBUBd2N22krIVEW4iLlngCtFQT4"}
+        - {t: "=sn", n: "=sn", tla: "IBUBdx8e5xliFEaljyOTx2v3neA"}
+      - tokens:   # Unas column 499
+        - {t: "Wnjs", n: "Wánjs", tla: "IBUBdWtWVl9UbkaOiqZLS99wzrU"}
+        - {t: "ḫꜥ", n: "ḫꜥ", tla: "IBUBdyiz4RpHJkBGhvv2BgSKkks"}
+        - {t: "bꜣ", n: "bꜣ", tla: "IBUBdw0XSxxi8EtPhTlJrP4Vxaw"}
+        - {t: "m", n: "m", tla: "IBUBdWT4bb0UZ0MloBlcs9yE1Ws"}
+        - {t: "nṯr", n: "nā́ṯir", tla: "IBUBd4TrlrQNG0tLtG2Hmb3uCm4"}
+        - {t: "ꜥnḫ", n: "ꜥnḫ", tla: "IBUBd5Lr8qocbkb1uQ6qdBThhzA"}
+        - {t: "m", n: "m", tla: "IBUBdQq2RoPT8Ep6gbgYAtgSgm8"}
+        - {t: "jt(j).pl", n: "jtj.w", tla: "IBUBd1CuOPiQB0bWuEvBkzZrPoY"}
+        - {t: "=f", n: "=f", tla: "IBUBd8P4GSbaj04btcxnIVU5xw8"}
+        - {t: "wšb", n: "wšb", tla: "IBUBd1Gp5q8QcUxrm4moCkECDh0"}
+      - tokens:   # Unas column 500
+        - {t: "m", n: "m", tla: "IBUBdwhezOahI0EigE2bZF3arKk"}
+        - {t: "mʾw,t.pl", n: "mw.wt", tla: "IBUBd1qffrRzyE9Jn3uF3efvonY"}
+        - {t: "=f", n: "=f", tla: "IBUBd6sGWqVbf0zRqk4Sc5Bk3EQ"}
+        - {t: "Wnjs", n: "Wánjs", tla: "IBUBd3b7W2HxWESsoRaJgRT4hHI"}
+        - {t: "pw", n: "pw", tla: "IBUBd5zq6HBFW0MQiUFJINHMR68"}
+        - {t: "nb", n: "nb", tla: "IBUBd6aKilb6pkrktV0UTbX0dsg"}
+        - {t: "zꜣb,wt", n: "zꜣb.wt", tla: "IBUBdy3eLrvuI0t8kz820gkpoEI"}
+        - {t: "ḫm.n", n: "ḫm.n", tla: "IBUBdQ61AC3oI0qprvh8VrZaj00"}
+      - tokens:   # Unas column 501
+        - {t: "mʾw,t", n: "múw.at", tla: "IBUBd53Wasd0eEt0m02IJXfxReA"}
+        - {t: "=f", n: "=f", tla: "IBUBd4Ii3n5mSk4Qi7p4HhyeqMQ"}
+        - {t: "rn", n: "rín", tla: "IBUBd6uLD83sw0NNu7jThkJgkDI"}
+        - {t: "=f", n: "=f", tla: "IBUBd69TvdXaRk24iKv2KrLFn58"}
+        - {t: "jw", n: "jw", tla: "IBUBdwd4lsQnRk2uifiVhoEG2hE"}
+        - {t: "šps,w", n: "šps.w", tla: "IBUBd2YdhJdEbU3bsYOmzau0lQw"}
+        - {t: "Wnjs", n: "Wánjs", tla: "IBUBd5LCKUJKeEr1jqtD0nbnd3k"}
+        - {t: "m", n: "m", tla: "IBUBdzxQ3zr3tUpZvEQyW1YDHsk"}
+        - {t: "p,t", n: "pí.t", tla: "IBUBdxR7YaYHBUEJiZUIovjQKuk"}
+        - {t: "jw", n: "jw", tla: "IBUBd5nQZ0luLUxvvGXUuk6tvkg"}
+        - {t: "wsr", n: "wsr", tla: "IBUBd5SyXuHH7EPsiXjCChLBWuU"}
+        - {t: "=f", n: "=f", tla: "IBUBd7k9p9i2NkdFg083CsQ1veo"}
+        - {t: "m", n: "m", tla: "IBUBd2Tb6jQRs079utqyqI7cIi4"}
+        - {t: "ꜣḫ,t", n: "ꜣḫ.t", tla: "IBUBd1ULgXgqQ0nmmWmHFQnh0Zs"}
+      - tokens:   # Unas column 502
+        - {t: "mj", n: "mj", tla: "IBUBdWw7lLxUQ0dCtkMecNwyyHM"}
+        - {t: "(J)tm(,w)", n: "Jtm.w", tla: "IBUBd79RyTpLQEHjmpg8VDko7Ug"}
+        - {t: "jt(j)", n: "jā́tj", tla: "IBUBdwQtivTFHU6EgFtY3KvAhS8"}
+        - {t: "=f", n: "=f", tla: "IBUBdQtoYoQjTkF7jdOAlqqJTB8"}
+        - {t: "msi̯", n: "msj", tla: "IBUBd0RtS10ElkJRh6yOQnfFgNA"}
+        - {t: "sw", n: "sw", tla: "IBUBd45kiW6WnEpciZtihLeLDQo"}
+        - {t: "jw", n: "jw", tla: "IBUBd56vrIOaykvDmmJUa1Ia2Xo"}
+        - {t: "msi̯.n", n: "msj.n", tla: "IBUBd9oCVvrnhUktgBwXv6bQWLo"}
+        - {t: "=f", n: "=f", tla: "IBUBdW00NDq3ZUGRrFG9M7lWe48"}
+        - {t: "sw", n: "sw", tla: "IBUBdzAHtyXy609lj7yEz4JpckY"}
+        - {t: "wsr", n: "wsr", tla: "IBUBd6Y7mFQGJkjdgTLbYbIQTOs"}
+        - {t: "sw", n: "sw", tla: "IBUBd7A76ITRW06nqE7aJeQPsJE"}
+        - {t: "r", n: "r", tla: "IBUBdxkzOiuOdkKdvvGUROasYTo"}
+        - {t: "=f", n: "=f", tla: "IBUBd7JIRCge5k3DtEosxSQ3ScU"}
+        - {t: "jw", n: "jw", tla: "IBUBd2x5HUWNr0rVqgWsOgHuUqE"}
+        - {t: "kꜣ.pl", n: "kꜣ.w", tla: "IBUBd6YYbCWZu007no08AExq3t8"}
+      - tokens:   # Unas column 503
+        - {t: "Wnjs", n: "Wánjs", tla: "IBUBdyGDPfdvykkfmqEWaLto3xw"}
+        - {t: "ḥꜣ", n: "ḥꜣ", tla: "IBUBd0QQ9pWwz0XLsrMkDqGCoTE"}
+        - {t: "=f", n: "=f", tla: "IBUBdWlUPf3hX0yGkfNfJfW588E"}
+        - {t: "jw", n: "jw", tla: "IBUBd5w41uhhWU31qGAQPSdfamE"}
+        - {t: "ḥms.w,t", n: "ḥms.wt", tla: "IBUBd8xaICTfnEK8oYFRuOkP9Qg"}
+        - {t: "=f", n: "=f", tla: "IBUBdwupG5xBh0ESggeLoX4bVh4"}
+        - {t: "ẖr", n: "ẖar", tla: "IBUBd8gnWXEQQk17mJNUtt5nIAI"}
+        - {t: "rd.du", n: "rd.wj", tla: "IBUBdxv78VDMD0RLk4tbIdNmf2o"}
+        - {t: "=f", n: "=f", tla: "IBUBd0dgCRzWQkSbidere3G8Epg"}
+        - {t: "jw", n: "jw", tla: "IBUBd248Gg74O0DkvICpWn6LUvc"}
+        - {t: "nṯr.pl", n: "naṯī́r.w", tla: "IBUBd4y2yYQKOkUfmgXn7Bhq1uQ"}
+        - {t: "=f", n: "=f", tla: "IBUBd3f4N0X7GUWjg2nzIs1LGLc"}
+        - {t: "tp", n: "tp", tla: "IBUBd6d7SvoZakI7mfpyFYosuZU"}
+        - {t: "=f", n: "=f", tla: "IBUBd2R5xThWskLmp3IZZpWKioE"}
+        - {t: "jw", n: "jw", tla: "IBUBd5yqB7Suek2vsGjRWijMw6o"}
+        - {t: "jꜥr,t.pl", n: "jꜥr.wt", tla: "IBUBd778fgr5S0KLkVlzbHVTBhI"}
+        - {t: "=f", n: "=f", tla: "IBUBdzidD0WbgEWIhneLTswzu4M"}
+      - tokens:   # Unas column 504
+        - {t: "m", n: "m", tla: "IBUBd82SrAftfkLdmxJk1Sz4rGw"}
+        - {t: "wp,t", n: "wp.t", tla: "IBUBd5kOkksRk0nej2cLv0VjSmI"}
+        - {t: "=f", n: "=f", tla: "IBUBdzyBdi5GVkq6oxICjWhx1vA"}
+        - {t: "jw", n: "jw", tla: "IBUBd8VCJOc0jEJYu1WAAAPgv1o"}
+        - {t: "sšm,wt", n: "sšm.wt", tla: "IBUBdyuGYZVM6Uf2oIttLSZW7wo"}
+        - {t: "Wnjs", n: "Wánjs", tla: "IBUBd313JewoLUvruVq8jSmemeM"}
+        - {t: "m", n: "m", tla: "IBUBd9V5WSQ9ekfmosADI6IqvaA"}
+        - {t: "ḥꜣ,t", n: "ḥꜣ.t", tla: "IBUBd4wNKXyP6kXDsiQAn6WnWVI"}
+        - {t: "=f", n: "=f", tla: "IBUBdWeTeF4WjEQrhWw5lDiC7aA"}
+        - {t: "ptr.t", n: "ptr.t", tla: "IBUBd4gkrVlhSUi3gF48eroMqMY"}
+        - {t: "bꜣ", n: "bꜣ", tla: "IBUBdQTNhEsbZ0kUlnQQ11nYuPI"}
+        - {t: "ꜣḫ.t", n: "ꜣḫ.t", tla: "IBUBd9zyQRkQMkLojXH95xXel0w"}
+        - {t: "nṯb", n: "nṯb", tla: "IBUBd64SI6t2oUans6y6xWN0Mfw"}
+        - {t: "=s", n: "=s", tla: "IBUBd10ccgTqKE4gvg66VoFnZ5s"}
+      - tokens:   # Unas column 505
+        - {t: "jw", n: "jw", tla: "IBUBdy6pUVM8hkiOnbxjWnnFsBo"}
+        - {t: "wsr.pl", n: "wsr.w", tla: "IBUBd6nNVMzbw0DtsZ4CWa7HRD4"}
+        - {t: "Wnjs", n: "Wánjs", tla: "IBUBd1i4lvllQkH1vTwHceiOKk8"}
+        - {t: "ḥr", n: "ḥir", tla: "IBUBd2NEmM8nu0qQjjVVujlqids"}
+        - {t: "mk.t", n: "mk.t", tla: "IBUBdyBZ1zwhKUWDj1Jle13wPnI"}
+        - {t: "=f", n: "=f", tla: "IBUBdwTJlhkCIEmYvV7wp9bOx4k"}
+        - {t: "Wnjs", n: "Wánjs", tla: "IBUBdQyHh8fNV0rDrMCM39QI4mk"}
+        - {t: "pj", n: "pj", tla: "IBUBd2zD92TVvUZtocPm8FNiyQE"}
+        - {t: "kꜣ", n: "kꜣ", tla: "IBUBdzwHYXmSDULGmCnkbaY9vTI"}
+        - {t: "p,t", n: "pí.t", tla: "IBUBdzZHsJXzQUSgowly84GlLAs"}
+        - {t: "nhd", n: "nhd", tla: "IBUBd5FTV4pWs03umfVQs7AAcns"}
+        - {t: "m", n: "m", tla: "IBUBd7aqUOJiVE7OoxRhfWhIsUo"}
+        - {t: "jb", n: "jb", tla: "IBUBdWgZLqXa6kWbhzJdyRuuzjk"}
+        - {t: "=f", n: "=f", tla: "IBUBd5YuJWaFeEB9uy46STOAkgc"}
+        - {t: "ꜥnḫ", n: "ꜥnḫ", tla: "IBUBdQDmEXnXV0uLoB1bKxps5hQ"}
+        - {t: "m", n: "m", tla: "IBUBd6niwjgkXkqpoRMDWUBkTXo"}
+        - {t: "ḫpr(,w)", n: "ḫpr.w", tla: "IBUBd5RA9bryPEn4rNt7BUo9hQI"}
+      - tokens:   # Unas column 506
+        - {t: "n(,j)", n: "n.j", tla: "IBUBdxOBEjhA6UOknI2Iy9JW3JI"}
+        - {t: "nṯr", n: "nā́ṯir", tla: "IBUBd4LmdVBjbUtTqQCeSPJJ7X4"}
+        - {t: "nb", n: "nb", tla: "IBUBdxitEsQcG0qbi2Ws0DiSNDM"}
+        - {t: "wnm", n: "wnm", tla: "IBUBd3oqoPZ9lUwUpDgOpmO2UN4"}
+        - {t: "wzm.w", n: "wzm.w", tla: "IBUBd6LBQp6ylUlmrOyrEcIon7I"}
+        - {t: "=sn", n: "=sn", tla: "IBUBdwGGgexBLEfBoyBn0SS75gU"}
+        - {t: "jwi̯.w", n: "jwj.w", tla: "IBUBd23fhT3lZUkciSnZPVUZpWs"}
+        - {t: "mḥ", n: "mḥ", tla: "IBUBdwClqN8U0UcsnL3j4i3wI5M"}
+        - {t: "ẖ,t", n: "ẖī́.t", tla: "IBUBdzjZLv9k4EwSoCqYYtXh7gk"}
+        - {t: "=sn", n: "=sn", tla: "IBUBdQgT36Z1nEpwllm8ct3VL8Q"}
+        - {t: "m", n: "m", tla: "IBUBdW94iX1RgEK5nMiRcQBSJzI"}
+        - {t: "ḥkꜣ.w", n: "ḥíkꜣ.w", tla: "IBUBd7YJuyQBgUZ6lDUnP4ebAaU"}
+        - {t: "m", n: "m", tla: "IBUBd9J0hUjoJUIvusja4mixnW8"}
+        - {t: "jw-nsjsj", n: "Jw-nsjsj", tla: "IBUBdW3OFArggEKGoub9HxvlQQ8"}
+        - {t: "Wnjs", n: "Wánjs", tla: "IBUBd9MYxJDa7kIoiA3oeuVwenQ"}
+        - {t: "pj", n: "pj", tla: "IBUBdQuBjoMnlETBgNPWpGFWuM4"}
+      - tokens:   # Unas column 507
+        - {t: "ꜥpr", n: "ꜥpr", tla: "IBUBd9Xf4DgwWEjPvzXTf66VdUw"}
+        - {t: "jꜥb", n: "jꜥb", tla: "IBUBdWPL8bksjUvWqQTryfNitX8"}
+        - {t: "ꜣḫ.pl", n: "ꜣḫ.w", tla: "IBUBd9mqX1Fx005cuPIGNbLmJCM"}
+        - {t: "=f", n: "=f", tla: "IBUBd9i10QPbbEihu50WKVEk4jA"}
+        - {t: "jw", n: "jw", tla: "IBUBdwZgMg3sQEZ4oWWjoYW1d4U"}
+        - {t: "Wnjs", n: "Wánjs", tla: "IBUBdQDnngK0JUZgqiir3kWC7SU"}
+        - {t: "ḫꜥi̯", n: "ḫꜥj", tla: "IBUBd1aYNssgXk8Orn8IrlQeJeo"}
+        - {t: "m", n: "m", tla: "IBUBdQqCbzKQ80zWn1WYjvklrXI"}
+        - {t: "wr", n: "wr", tla: "IBUBdQSAeuMmUUNWueIEXUSrBjU"}
+        - {t: "pw", n: "pw", tla: "IBUBd19nszYQWk3ogVZZYbNpwlo"}
+        - {t: "nb", n: "nb", tla: "IBUBdw7EvQCWuEfIggt3BWeI7w8"}
+        - {t: "jm(,j).w-s,t-ꜥ", n: "jmj.w-s.t-ꜥ", tla: "IBUBdQVRIhcyD0bHn7vnrEMQ0V8"}
+        - {t: "ḥmsi̯", n: "ḥmsj", tla: "IBUBd82EE9jBekjVnQFHzo75toc"}
+        - {t: "=f", n: "=f", tla: "IBUBd0k47FpTqUWJhPNN0qQieDs"}
+        - {t: "sꜣ", n: "sꜣ", tla: "IBUBd6wz8Ab0XE7smNTy66KVPV0"}
+        - {t: "=f", n: "=f", tla: "IBUBd4nLZpgJFUOrk1JrONfUiJg"}
+        - {t: "jr", n: "jr", tla: "IBUBd7GZxuD4FUNphsW2KuHzXmY"}
+        - {t: "Gbb", n: "Gbb", tla: "IBUBd83bAHjKVkwHqh2kecNg8Gg"}
+      - tokens:   # Unas column 508
+        - {t: "Wnjs", n: "Wánjs", tla: "IBUBd3x6CBpuWUckkwzZ4NRWKIM"}
+        - {t: "pj", n: "pj", tla: "IBUBd8nlkASpFU9hlzSjZ7BtDgE"}
+        - {t: "wḏꜥ", n: "wḏꜥ", tla: "IBUBd57kIutRmEhGoc1fKWMbPqw"}
+        - {t: "mdw", n: "mdw", tla: "IBUBd1kSEDFsPEkhv6i2fQZRu9g"}
+        - {t: "=f", n: "=f", tla: "IBUBdywgBRJD40p7n0IobYWMSeo"}
+        - {t: "ḥnꜥ", n: "ḥnꜥ", tla: "IBUBdyHN1Q7Yc0LxlocI1dKQiP4"}
+        - {t: "jmn", n: "jmn", tla: "IBUBd03acAlUqUy8lHHxpFAzens"}
+        - {t: "rn", n: "rín", tla: "IBUBd530NGfiBkLWvA4BedJUO6M"}
+        - {t: "=f", n: "=f", tla: "IBUBdz8WHElOLkHDsTQMNRWnZKk"}
+        - {t: "hrw", n: "harā́w", tla: "IBUBd6DFXsnBx0v6tPII5sSwPfc"}
+        - {t: "pw", n: "pw", tla: "IBUBdx4RFHFOW0tlrWrVaqSStPg"}
+        - {t: "n(,j)", n: "n.j", tla: "IBUBd65ZLCUEfUDKliX4C1BKgO0"}
+        - {t: "rḫs", n: "rḫs", tla: "IBUBd788xpBGAEiUvrlWSGG0xh0"}
+        - {t: "sms,w", n: "sms.w", tla: "IBUBd3GnVTuwBEmknklYcqzrspc"}
+        - {t: "Wnjs", n: "Wánjs", tla: "IBUBdWzMuqimyUY9qYTOC6v1sQM"}
+        - {t: "p", n: "pj", tla: "IBUBdw0wLf32cEn0iDo6AQpQSas"}
+        - {t: "nb", n: "nb", tla: "IBUBd0PAKfg4REj9kNiVuc0LAiY"}
+        - {t: "ḥtp,t", n: "ḥtp.t", tla: "IBUBd9OgOODSZ0KmnoDccsVMcFw"}
+        - {t: "ṯꜣz", n: "ṯꜣz", tla: "IBUBdWXPf1csDUAslZS16kzDqN4"}
+        - {t: "ꜥqꜣ", n: "ꜥqꜣ", tla: "IBUBd5Ugsa30Q0GRlpDmq75ixmY"}
+        - {t: "jri̯", n: "jrj", tla: "IBUBdyWZgwXyKEQekts1A9hSap4"}
+        - {t: "ꜣw,t", n: "ꜣw.t", tla: "IBUBd7s7cZ8PwEQoqnE7QF8El1M"}
+        - {t: "=f", n: "=f", tla: "IBUBd82GVpVQDkBjmCHNxXkEUpg"}
+        - {t: "ḏs", n: "ḏs", tla: "IBUBd6Cex0TMfkHPoBCYan1LW58"}
+        - {t: "=f", n: "=f", tla: "IBUBd3v41DCI7U9rkQlMgiDk8AY"}
+      - tokens:   # Unas column 509
+        - {t: "Wnjs", n: "Wánjs", tla: "IBUBd9KmQCPtWUzHkRjKkeWJOcw"}
+        - {t: "pj", n: "pj", tla: "IBUBd9zbiTMIr04WoQhN4ztWxsc"}
+        - {t: "wnm", n: "wnm", tla: "IBUBdxbX91gJv0ZxgCwMbZr8NR0"}
+        - {t: "rmṯ", n: "rā́maṯ", tla: "IBUBd6jF6EuLr0ONj1wi9EMRA8c"}
+        - {t: "ꜥnḫ", n: "ꜥnḫ", tla: "IBUBdx1wqyu7Ik7hjEqP0KJuREQ"}
+        - {t: "m", n: "m", tla: "IBUBdzDFLTuQdEARgMkORM5DIws"}
+        - {t: "nṯr.pl", n: "naṯī́r.w", tla: "IBUBdwxxqliIOkqbr5gV05OrsBM"}
+        - {t: "nb", n: "nb", tla: "IBUBd229DXenR0sevIzjcBW1zdw"}
+        - {t: "jn,w.pl", n: "jn.w", tla: "IBUBd0titBfzlkRIl5fbbXw7ycA"}
+        - {t: "ḫꜣꜥ", n: "ḫꜣꜥ", tla: "IBUBdWtSuWWIaEYmqBP57ReTtDM"}
+        - {t: "wp(w),t.pl", n: "wpw.wt", tla: "IBUBdxt4PREbF07kn5hnaQ0U5CQ"}
+        - {t: "jn", n: "jn", tla: "IBUBd9BpvYYwMUVio6R6VYbhLt4"}
+        - {t: "Jḫmꜥ-wp,t,pl-jm(,j)-kḥꜣ,w", n: "Jḫmꜥ-wp.wt-jmj-kḥꜣ.w", tla: "IBUBd5DKq3niVk1hpLb3W2QsAhc"}
+        - {t: "spḥ", n: "spḥ", tla: "IBUBd7WQSNlPOEy5oznlJnBnEPs"}
+        - {t: "sn", n: "sn", tla: "IBUBd24UNpiuyUx3mVvojErMdMA"}
+        - {t: "n", n: "n", tla: "IBUBdW3E62JzbUt9gQFllniB6l4"}
+        - {t: "Wnjs", n: "Wánjs", tla: "IBUBd8tzg07VWkp4isaogfoweD0"}

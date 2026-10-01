@@ -10,7 +10,7 @@ tags:
   - tamil
   - persian
 created_at: 2026-09-30T14:52:43.29374-05:00
-updated_at: 2026-10-01T06:35:57.472528-05:00
+updated_at: 2026-10-01T10:22:52.915814-05:00
 ---
 
 # Specialist review of the four new-language works (Akkadian, Old Chinese, Old Tamil, Classical Persian)
@@ -25,6 +25,7 @@ updated_at: 2026-10-01T06:35:57.472528-05:00
 - 2026-10-01T10:23:16Z: Voyages (2026-10-01): Polo 'le lune' for a wind, 'à no Abatan', 'asez hi nia', 'maintes' through damaged type, Yule's identifications, when Columbus read his Polo; Columbus transcription accents and supplied letters unverified against the facsimile, 'ueinte' vs thirty-three days, f as [h], island identifications, Quaritch translator; Linschoten ij [ei] in 1596, -en n, Nangasache ch, Kern 1910 not collated with 1596 gothic print.
 - 2026-10-01T10:55:28Z: Theses (2026-10-01): German-manner Latin v as [f] and s- as [z] inferred from German letter values; vowel length rule; Wikisource text is a composite (Basel 1517 spelling to ~thesis 29, WA 1 after), collated only to thesis 12; poenitentia glossed 'penitence'; verify Rörer note date, Adam Petri as Basel printer, early-1518 Nuremberg German translation, WA Br 1 no. 48; Pape (56) and Basilicam (51) readings; medieval lemmas against Du Cange/Niermeyer.
 - 2026-10-01T11:35:57Z: German works (2026-10-01): g after vowels fricative?, uvular r spread, long ä/e merger; one scheme for Kant and Nietzsche; KpV 'zunehmenden'; Kaliningrad plaque location; Richardson 1798 OCR corrections; Luther 1545: TextGrid/Zeno text not checked against page images (Volz 1972 vs Weimar), wonet/wandert/habens readings, jm/dasselbige referent, ecg1545 diphthongs and lenis stops and omitted unrounding, Table Talk citation, Lufft copy count.
+- 2026-10-01T15:22:52Z: Oldest texts (2026-10-01): Egyptian vocalizations are Weft's inferences from Coptic/Greek (14 forms, conf 0.3), consonant values debated; PT 273 location in the antechamber; pḏ.wt reading; D3B/O30U as base signs, D140/D207 not in Unicode; TLA 2018 excerpt may be superseded. Sumerian: Oracc CC0 label vs Foxvog/CDLI informal terms; u19/ulu3 and kišib/kišib3 readings; ergative/directive e; Jagersma aspiration analysis; dr phoneme not applied; Enheduanna's authorship debated.
 
 ## Log
 

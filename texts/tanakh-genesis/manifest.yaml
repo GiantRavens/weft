@@ -5,7 +5,7 @@ language: hbo
 prefix: gen                      # gen.<chapter>.<verse>[.<token>]
 urn: urn:weft:hbo:tanakh.genesis # no CTS URN; Weft-local identifier
 unit: verse
-written: {year: -550, label: "composed in the first millennium BC, taking its final form around the 500s–400s BC; the vowel points were added about AD 900"}
+written: {year: -550, display: "500s–400s BC", label: "composed in the first millennium BC, taking its final form around the 500s–400s BC; the vowel points were added about AD 900"}
 status: phase-0
 pilot: {chapter: 1, first: 1, last: 31, also: [{chapter: 2, first: 1, last: 3}]}
 edition:
