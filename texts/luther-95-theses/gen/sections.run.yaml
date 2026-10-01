@@ -1,0 +1,27 @@
+run:
+  weft: 0.1.0
+  sections:
+  - prooem
+  - th
+counts:
+  lines: 99
+  tokens: 1626
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank: lemma and morphology hand-annotated (Lewis and Short; Medieval Latin headwords from Du Cange and Niermeyer where Lewis and Short lacks the word), draft'
+- the German reading of about 1517 is reconstructed from the later German school pronunciation of Latin and Early New High German sound history; no description of Luther's own Latin survives; approximate,
+  and v as f is its least certain point
+- 'the Wikisource text is a composite: theses 1-29 and the preamble use classical ae and oe (poenitentia, Papae), theses 30-95 keep the e of WA 1 (penitentia, Pape); the quantity table restores ae and oe
+  for the sound, and the page keeps the printed letters'
+- the Wikisource text keeps misprints of the WA transcription it descends from (prorus 7, purgaturium 16, versus for verus 37, idulgentias 45, Multomagnis for Multo magis 74, laicorm 81); the page keeps
+  them and the sound reads the intended word
+- 'abbreviations are read through the quantity table: .i. and i. e. as id est, R. P. as reverendo patre, S. as sacrae, s. as sancti (in 59 and 77 the sense is sanctus; one table entry serves all four),
+  &c. and etc. as etcetera, Co. XII as Corinthios duodecimo'
+- forms that differ only in a final long vowel (poena and poenā, papa and papā) share one table entry, so the classical reading shows one length for both; stress is unaffected
+- 'seu is read as two syllables: the Latin module has no eu diphthong'
+- Luther is read with a short u (the table spells it Lutther, as WA's preamble does), matching German usage; the name's vowel in Luther's own Latin is not attested
+- the closing date line of the source (M.D.Xvii.) is not included
+- the English is the 1915 Philadelphia translation; its bracketed words are the translators' additions and are kept

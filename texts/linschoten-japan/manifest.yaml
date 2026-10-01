@@ -1,0 +1,46 @@
+work: linschoten-japan
+title: Itinerario, chapter 26 (Van't Eylandt van Iapan)
+author: Jan Huygen van Linschoten (1563–1611)
+language: nl
+prefix: itin                      # itin.<chapter>.<line>[.<token>]; chapter 26
+urn: urn:weft:nl:linschoten.itinerario   # Weft-local identifier
+unit: section
+section_noun: chapter
+written: {year: 1596, label: "printed at Amsterdam by Cornelis Claesz in 1596; written after Linschoten's return from Goa in 1592"}
+status: phase-0
+pilot: {sections: ["26"]}
+edition:
+  id: kern1910
+  name: "Itinerario, voyage ofte schipvaert ... naer Oost ofte Portugaels Indien, 1579-1592, ed. H. Kern (Werken uitgegeven door de Linschoten-Vereeniging, 's-Gravenhage: Martinus Nijhoff, 1910), volume 1, pages 103-104: the text of 1596 in its original spelling. Transcribed by Weft from the page scans and checked against the archive.org OCR of the University of Toronto copy"
+  format: weft-edition
+  file: edition.yaml
+  license: "Linschoten's text (1596) is public domain; Kern's 1910 edition is public domain (published 1910; Kern died 1917). Weft's transcription, line division and modern spellings CC BY-SA 4.0"
+treebank: null                    # no treebank for early modern Dutch prose; lemma, morphology and gloss by hand, draft
+schemes: [h1596, modern]          # default = Dutch of Holland about 1596 (approximate)
+sources_extra:
+  - id: kern1910-hocr
+    name: "Itinerario, ed. H. Kern (1910), volume 1, OCR with word positions (hOCR), Internet Archive item itinerariovoyage01lins (University of Toronto, Robarts Library copy)"
+    file: sources/kern1910-hocr.html
+    url: https://archive.org/download/itinerariovoyage01lins/itinerariovoyage01lins_hocr.html
+    sha256: bb6b55f0f82f7445bc0fde3ddc4d1ac6b8da49e650258313d57579f8d71360a7
+    license: public domain (published 1910 in the Netherlands; the text used is Linschoten's of 1596)
+    license_url: https://archive.org/details/itinerariovoyage01lins
+translations:
+  - id: phillip1598
+    translator: William Phillip
+    year: 1598
+    form: "prose, Iohn Huighen van Linschoten his Discours of Voyages into ye Easte and West Indies (London: John Wolfe, 1598), in the edition of A. C. Burnell and P. A. Tiele for the Hakluyt Society (The Voyage of John Huyghen van Linschoten to the East Indies, volume 1, London, 1885), pages 151-153; OCR text, checked against the page scans. Square brackets in the text are Burnell's: words the 1598 translator added to the Dutch"
+    license: public-domain
+    license_url: https://archive.org/details/voyagejohnhuygh01tielgoog
+    file: sources/hakluyt1885-v1.txt
+    url: https://archive.org/download/voyagejohnhuygh01tielgoog/voyagejohnhuygh01tielgoog_djvu.txt
+    sha256: 73b74ba26de48f33f626d0b45355d6018b1df2bd51c79fc67c9509a08f2b77af
+predicted_gaps:
+  - "the edition is the 1910 reprint of the 1596 text, not the 1596 print itself; the 1596 gothic type was not checked letter by letter for this passage"
+  - "the edition is checked against OCR, not a proofread transcription: the scan was read by hand, and each place where the OCR misreads the scan is declared per token (ocr) and listed in edition.yaml"
+  - "the chapter is long; this edition covers its opening (the land, food, houses, the silver trade, the people's skill and courtesy) and stops before the passages on punishment, the origin story, customs, government, religion and the Jesuits, which the notes summarize from the 1598 English"
+  - "the pronunciation of Holland about 1596 is reconstructed from the spelling of the period and the grammarians; the value of ij (diphthong or still a long i), the n of -en, and the stress of French and Latin loans are uncertain"
+  - "the sound is computed from the modern spelling of each word form; distinctions the modern spelling does not keep (sharp-long and soft-long ee and oo) are not shown"
+  - "Nangasache is read with ch as in Dutch [x]; the Portuguese forms (Nangasaque) suggest [k] may have been meant"
+  - "no treebank; lemma, morphology and gloss by hand, draft"
+  - "one English translation only: the 1598 version is the only public-domain English one; it adds words to the Dutch, which Burnell marks with square brackets"

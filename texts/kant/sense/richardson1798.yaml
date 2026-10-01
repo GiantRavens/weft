@@ -1,0 +1,48 @@
+# John Richardson's translation, "Answer to the question, What is Enlightening?", in Essays and
+# Treatises on Moral, Political, and Various Philosophical Subjects, by Emanuel Kant (London, 1798),
+# volume 1, pages 3-4: the first English translation of the essay. The text is the Internet Archive
+# OCR of a Google scan (essaysandtreati01kantgoog), which is poor on these pages; it was corrected by
+# reading it against the OCR of a second copy of the same printing
+# (bim_eighteenth-century_essays-and-treatises-on-_kant-immanuel_1798_1). Corrections, all of OCR
+# errors where the two copies or the sense agree:
+#   "TPnligtuening 15, Man*s ifuitting the nonage occdsitfried by himself" -> "Enlightening is, Man's
+#   quitting the nonage occasioned by himself"; "one^s" "another^" "one's self^" -> one's, another,
+#   one's self; "understan- ding" -> "understanding"; "one's. own lOiderstandingwitliout the guidance
+#   of pother" -> "one's own understanding without the guidance of another"; "Have courage to. ^
+#   ma!ke use" -> "Have courage to make use"; "imderstanding" -> "understanding"; "Lazinefs",
+#   "businefs" (long s read as f) -> "Laziness", "business"; "has- long" -> "has long";
+#   "(naUivaliter majoretiiies)" -> "(naturaliter majorennes)"; "f6 easy" -> "so easy"; "^ minor"
+#   -> "a minor"; "etc- •" -> "etc."; "need^" -> "need"; "I have > ixo occasion to thitxk" -> "I have
+#   no occasion to think"; "otjiers will save itte" -> "others will save me"; "bbsi- nefs" ->
+#   "business"; "mankitid" -> "mankind"; "care,-" -> "care,"; "thf greater" -> "the greater";
+#   "majorityj" -> "majority,"; "atten- ding" -> "attending"; "super- intendents" ->
+#   "superintendents"; "thenl as stupid a*" -> "them as stupid as"; "And carefully" -> "and
+#   carefully" (the second copy); "pre- vented" -> "prevented"; "iik which" -> "in which"; "theni"
+#   -> "them"; "fiiis" -> "this"; "so-very" -> "so very"; "tbe expence of ft few-" -> "the expence of
+#   a few"; "atid'" -> "and"; "at- tempts" -> "attempts". The print's space before commas and
+#   semicolons is not kept.
+translation: richardson1798
+aligned_by: hand, phase 0; one span per sentence of the German
+spans:
+- lines: [kant.auf.1, kant.auf.1]
+  text: "Enlightening is, Man's quitting the nonage occasioned by himself."
+- lines: [kant.auf.2, kant.auf.2]
+  text: "Nonage or minority is the inability of making use of one's own understanding without the guidance of another."
+- lines: [kant.auf.3, kant.auf.3]
+  text: "This nonage is occasioned by one's self, when the cause of it is not from want of understanding, but of resolution and courage to use one's own understanding without the guidance of another."
+- lines: [kant.auf.4, kant.auf.4]
+  text: "Sapere aude! Have courage to make use of thy own understanding! is therefore the dictum of enlightening."
+- lines: [kant.auf.5, kant.auf.6]
+  text: "Laziness and cowardice are the causes, why so great a part of mankind, after nature has long freed them from the guidance of others (naturaliter majorennes), willingly remain minors as long as they live; and why it is so easy for others, to set themselves up as their guardians."
+- lines: [kant.auf.7, kant.auf.7]
+  text: "It is convenient to be a minor."
+- lines: [kant.auf.8, kant.auf.8]
+  text: "If I have a book, which has understanding for me, a curate, who has conscience for me, a physician, who judges of diet for me, etc. I need not give myself any trouble."
+- lines: [kant.auf.9, kant.auf.9]
+  text: "I have no occasion to think, if I can but pay; others will save me the trouble of that irksome business."
+- lines: [kant.auf.10, kant.auf.11]
+  text: "Those guardians, who have graciously undertaken the superintendence of mankind, take sufficient care, that by far the greater part of them (and all the fair) shall hold the step to majority, besides the trouble attending it, very dangerous."
+- lines: [kant.auf.12, kant.auf.13]
+  text: "After these superintendents have first made them as stupid as their domestic animals, and carefully prevented those peaceable creatures from daring to venture a single step beyond the go-cart, in which they are inclosed; they point out to them the danger that threatens them, if they should try to go alone."
+- lines: [kant.auf.14, kant.auf.15]
+  text: "Indeed this danger is not so very great, for, at the expence of a few falls, they would learn to walk at last; but an example of this sort renders timid, and commonly discourages from all further attempts."

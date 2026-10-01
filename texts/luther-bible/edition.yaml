@@ -1,0 +1,370 @@
+# Weft edition of two passages of Luther's German Bible in the text of the Wittenberg edition of
+# 1545 (Biblia: das ist: Die gantze Heilige Schrifft: Deudsch. Auffs new zugericht. Wittenberg:
+# Hans Lufft, 1545), the last edition printed in Luther's lifetime.
+#
+# jn1   John 1:1-14, the opening of the Gospel of John (Das Euangelium S. Johannes), chapter I.
+# ps23  Psalm 23, with its title (Ein Psalm Dauids), which the source sets as part of verse 1.
+#
+# Text of the TextGrid Repository, Digitale Bibliothek, "Luther-Bibel 1545" (textgrid:s71f.0), the
+# Zeno.org transcription, which Zeno states follows the 1545 edition through Hans Volz's edition
+# (Munich, 1972). Checked against that TEI file by the sensor in pipeline/weft/german.py (section
+# field check, format textgrid-tei), which drops the verse numbers and note anchors the transcription
+# adds and compares without spaces. The transcription prints long s as s and the superscript e of the
+# umlauts as ü and ö; the 1545 spelling is otherwise kept (Vnd, jm, bey, Liecht, gleuben, Heubt,
+# frisschen), with the capitals of the first word of a paragraph (JM, ES, ER, DER, VNd, DV).
+#
+# Lines are verses. Luther's virgule (/) is punctuation and stays with the word before it.
+#
+#   t     the word as printed, punctuation attached ("Wort /", "Gott.")
+#   n     the modern spelling of the same word form (bey: bei, Liecht: Licht, gleuben: glauben);
+#         the page shows it as "Modern spelling", and the modern scheme is computed from it
+#   o     the 1545 form normalized for reading, where the rule in pipeline/weft/german.py
+#         (old_form: u/v and i/j by sound, aw as au, ssch as sch) does not give it: jm as ihm (the
+#         pronoun, a long vowel) against Jn as in (the preposition). The first scheme, ecg1545, is
+#         computed from this form, not from the modern spelling
+#   ipa   {scheme: ipa} override for this occurrence
+work: luther-bible
+joiner: " "
+sections:
+  - id: "jn1"
+    title: "John 1:1-14 (Das Euangelium S. Johannes, I.)"
+    old_forms: true
+    check: {file: sources/textgrid-luther1545.xml, format: textgrid-tei}
+    lines:
+      - tokens:  # jn1 1
+        - {t: "JM", n: "Im"}
+        - {t: "anfang", n: "Anfang"}
+        - {t: "war", n: "war"}
+        - {t: "das", n: "das"}
+        - {t: "Wort /", n: "Wort"}
+        - {t: "Vnd", n: "Und"}
+        - {t: "das", n: "das"}
+        - {t: "wort", n: "Wort"}
+        - {t: "war", n: "war"}
+        - {t: "bey", n: "bei"}
+        - {t: "Gott /", n: "Gott"}
+        - {t: "vnd", n: "und"}
+        - {t: "Gott", n: "Gott"}
+        - {t: "war", n: "war"}
+        - {t: "das", n: "das"}
+        - {t: "Wort.", n: "Wort"}
+      - tokens:  # jn1 2
+        - {t: "Das", n: "Das"}
+        - {t: "selbige", n: "selbige"}
+        - {t: "war", n: "war"}
+        - {t: "im", n: "im"}
+        - {t: "anfang", n: "Anfang"}
+        - {t: "bey", n: "bei"}
+        - {t: "Gott.", n: "Gott"}
+      - tokens:  # jn1 3
+        - {t: "Alle", n: "Alle"}
+        - {t: "ding", n: "Ding"}
+        - {t: "sind", n: "sind"}
+        - {t: "durch", n: "durch"}
+        - {t: "dasselbige", n: "dasselbige"}
+        - {t: "gemacht /", n: "gemacht"}
+        - {t: "vnd", n: "und"}
+        - {t: "on", n: "ohne"}
+        - {t: "dasselbige", n: "dasselbige"}
+        - {t: "ist", n: "ist"}
+        - {t: "nichts", n: "nichts"}
+        - {t: "gemacht /", n: "gemacht"}
+        - {t: "was", n: "was"}
+        - {t: "gemacht", n: "gemacht"}
+        - {t: "ist.", n: "ist"}
+      - tokens:  # jn1 4
+        - {t: "Jn", n: "In"}
+        - {t: "jm", n: "ihm", o: "ihm"}
+        - {t: "war", n: "war"}
+        - {t: "das", n: "das"}
+        - {t: "Leben /", n: "Leben"}
+        - {t: "vnd", n: "und"}
+        - {t: "das", n: "das"}
+        - {t: "Leben", n: "Leben"}
+        - {t: "war", n: "war"}
+        - {t: "das", n: "das"}
+        - {t: "Liecht", n: "Licht"}
+        - {t: "der", n: "der"}
+        - {t: "Menschen /", n: "Menschen"}
+      - tokens:  # jn1 5
+        - {t: "vnd", n: "und"}
+        - {t: "das", n: "das"}
+        - {t: "Liecht", n: "Licht"}
+        - {t: "scheinet", n: "scheinet"}
+        - {t: "in", n: "in"}
+        - {t: "der", n: "der"}
+        - {t: "Finsternis /", n: "Finsternis"}
+        - {t: "vnd", n: "und"}
+        - {t: "die", n: "die"}
+        - {t: "Finsternis", n: "Finsternis"}
+        - {t: "habens", n: "haben’s"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "begriffen.", n: "begriffen"}
+      - tokens:  # jn1 6
+        - {t: "ES", n: "Es"}
+        - {t: "ward", n: "ward"}
+        - {t: "ein", n: "ein"}
+        - {t: "Mensch", n: "Mensch"}
+        - {t: "von", n: "von"}
+        - {t: "Gott", n: "Gott"}
+        - {t: "gesand /", n: "gesandt"}
+        - {t: "der", n: "der"}
+        - {t: "hies", n: "hieß"}
+        - {t: "Johannes.", n: "Johannes"}
+      - tokens:  # jn1 7
+        - {t: "Derselbige", n: "Derselbige"}
+        - {t: "kam", n: "kam"}
+        - {t: "zum", n: "zum"}
+        - {t: "zeugnis /", n: "Zeugnis"}
+        - {t: "das", n: "dass"}
+        - {t: "er", n: "er"}
+        - {t: "von", n: "von"}
+        - {t: "dem", n: "dem"}
+        - {t: "Liecht", n: "Licht"}
+        - {t: "zeugete /", n: "zeugete"}
+        - {t: "auff", n: "auf"}
+        - {t: "das", n: "dass"}
+        - {t: "sie", n: "sie"}
+        - {t: "alle", n: "alle"}
+        - {t: "durch", n: "durch"}
+        - {t: "jn", n: "ihn", o: "ihn"}
+        - {t: "gleubten.", n: "glaubten"}
+      - tokens:  # jn1 8
+        - {t: "Er", n: "Er"}
+        - {t: "war", n: "war"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "das", n: "das"}
+        - {t: "Liecht /", n: "Licht"}
+        - {t: "sondern", n: "sondern"}
+        - {t: "das", n: "dass"}
+        - {t: "er", n: "er"}
+        - {t: "zeugete", n: "zeugete"}
+        - {t: "von", n: "von"}
+        - {t: "dem", n: "dem"}
+        - {t: "Liecht.", n: "Licht"}
+      - tokens:  # jn1 9
+        - {t: "Das", n: "Das"}
+        - {t: "war", n: "war"}
+        - {t: "das", n: "das"}
+        - {t: "warhafftige", n: "wahrhaftige"}
+        - {t: "Liecht /", n: "Licht"}
+        - {t: "welchs", n: "welchs"}
+        - {t: "alle", n: "alle"}
+        - {t: "Menschen", n: "Menschen"}
+        - {t: "erleuchtet /", n: "erleuchtet"}
+        - {t: "die", n: "die"}
+        - {t: "in", n: "in"}
+        - {t: "diese", n: "diese"}
+        - {t: "Welt", n: "Welt"}
+        - {t: "komen.", n: "kommen"}
+      - tokens:  # jn1 10
+        - {t: "Es", n: "Es"}
+        - {t: "war", n: "war"}
+        - {t: "in", n: "in"}
+        - {t: "der", n: "der"}
+        - {t: "Welt /", n: "Welt"}
+        - {t: "vnd", n: "und"}
+        - {t: "die", n: "die"}
+        - {t: "Welt", n: "Welt"}
+        - {t: "ist", n: "ist"}
+        - {t: "durch", n: "durch"}
+        - {t: "dasselbige", n: "dasselbige"}
+        - {t: "gemacht /", n: "gemacht"}
+        - {t: "vnd", n: "und"}
+        - {t: "die", n: "die"}
+        - {t: "Welt", n: "Welt"}
+        - {t: "kandte", n: "kannte"}
+        - {t: "es", n: "es"}
+        - {t: "nicht.", n: "nicht"}
+      - tokens:  # jn1 11
+        - {t: "ER", n: "Er"}
+        - {t: "kam", n: "kam"}
+        - {t: "in", n: "in"}
+        - {t: "sein", n: "sein"}
+        - {t: "eigenthum /", n: "Eigentum"}
+        - {t: "Vnd", n: "Und"}
+        - {t: "die", n: "die"}
+        - {t: "seinen", n: "seinen"}
+        - {t: "namen", n: "nahmen"}
+        - {t: "jn", n: "ihn", o: "ihn"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "auff.", n: "auf"}
+      - tokens:  # jn1 12
+        - {t: "Wie", n: "Wie"}
+        - {t: "viel", n: "viel"}
+        - {t: "jn", n: "ihn", o: "ihn"}
+        - {t: "aber", n: "aber"}
+        - {t: "auffnamen /", n: "aufnahmen"}
+        - {t: "denen", n: "denen"}
+        - {t: "gab", n: "gab"}
+        - {t: "er", n: "er"}
+        - {t: "macht /", n: "Macht"}
+        - {t: "Gottes", n: "Gottes"}
+        - {t: "Kinder", n: "Kinder"}
+        - {t: "zu", n: "zu"}
+        - {t: "werden /", n: "werden"}
+        - {t: "die", n: "die"}
+        - {t: "an", n: "an"}
+        - {t: "seinen", n: "seinen"}
+        - {t: "Namen", n: "Namen"}
+        - {t: "gleuben /", n: "glauben"}
+      - tokens:  # jn1 13
+        - {t: "Welche", n: "Welche"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "von", n: "von"}
+        - {t: "dem", n: "dem"}
+        - {t: "Geblüt /", n: "Geblüt"}
+        - {t: "noch", n: "noch"}
+        - {t: "von", n: "von"}
+        - {t: "dem", n: "dem"}
+        - {t: "willen", n: "Willen"}
+        - {t: "des", n: "des"}
+        - {t: "Fleisches /", n: "Fleisches"}
+        - {t: "noch", n: "noch"}
+        - {t: "von", n: "von"}
+        - {t: "dem", n: "dem"}
+        - {t: "willen", n: "Willen"}
+        - {t: "eines", n: "eines"}
+        - {t: "Mannes /", n: "Mannes"}
+        - {t: "Sondern", n: "sondern"}
+        - {t: "von", n: "von"}
+        - {t: "Gott", n: "Gott"}
+        - {t: "geboren", n: "geboren"}
+        - {t: "sind.", n: "sind"}
+      - tokens:  # jn1 14
+        - {t: "Vnd", n: "Und"}
+        - {t: "das", n: "das"}
+        - {t: "Wort", n: "Wort"}
+        - {t: "ward", n: "ward"}
+        - {t: "Fleisch /", n: "Fleisch"}
+        - {t: "vnd", n: "und"}
+        - {t: "wonet", n: "wohnet"}
+        - {t: "vnter", n: "unter"}
+        - {t: "vns /", n: "uns"}
+        - {t: "Vnd", n: "Und"}
+        - {t: "wir", n: "wir"}
+        - {t: "sahen", n: "sahen"}
+        - {t: "seine", n: "seine"}
+        - {t: "Herrligkeit /", n: "Herrlichkeit"}
+        - {t: "eine", n: "eine"}
+        - {t: "herrligkeit /", n: "Herrlichkeit"}
+        - {t: "als", n: "als"}
+        - {t: "des", n: "des"}
+        - {t: "eingeboren", n: "eingeboren"}
+        - {t: "Sons", n: "Sohns"}
+        - {t: "vom", n: "vom"}
+        - {t: "Vater /", n: "Vater"}
+        - {t: "voller", n: "voller"}
+        - {t: "Gnade", n: "Gnade"}
+        - {t: "vnd", n: "und"}
+        - {t: "Warheit.", n: "Wahrheit"}
+  - id: "ps23"
+    title: "Psalm 23 (Der Psalter, XXIII.)"
+    old_forms: true
+    check: {file: sources/textgrid-luther1545.xml, format: textgrid-tei}
+    lines:
+      - tokens:  # ps23 1
+        - {t: "Ein", n: "Ein"}
+        - {t: "Psalm", n: "Psalm"}
+        - {t: "Dauids.", n: "Davids", ipa: {ecg1545: "ˈdaː.fɪts", modern: "ˈdaː.vɪts"}}
+        - {t: "DER", n: "Der"}
+        - {t: "HERR", n: "Herr"}
+        - {t: "ist", n: "ist"}
+        - {t: "mein", n: "mein"}
+        - {t: "Hirte /", n: "Hirte"}
+        - {t: "Mir", n: "Mir"}
+        - {t: "wird", n: "wird"}
+        - {t: "nichts", n: "nichts"}
+        - {t: "mangeln.", n: "mangeln"}
+      - tokens:  # ps23 2
+        - {t: "Er", n: "Er"}
+        - {t: "weidet", n: "weidet"}
+        - {t: "mich", n: "mich"}
+        - {t: "auff", n: "auf"}
+        - {t: "einer", n: "einer"}
+        - {t: "grünen", n: "grünen"}
+        - {t: "Awen /", n: "Auen"}
+        - {t: "Vnd", n: "Und"}
+        - {t: "füret", n: "führet"}
+        - {t: "mich", n: "mich"}
+        - {t: "zum", n: "zum"}
+        - {t: "frisschen", n: "frischen"}
+        - {t: "Wasser.", n: "Wasser"}
+      - tokens:  # ps23 3
+        - {t: "Er", n: "Er"}
+        - {t: "erquicket", n: "erquicket"}
+        - {t: "meine", n: "meine"}
+        - {t: "Seele /", n: "Seele"}
+        - {t: "er", n: "er"}
+        - {t: "füret", n: "führet"}
+        - {t: "mich", n: "mich"}
+        - {t: "auff", n: "auf"}
+        - {t: "rechter", n: "rechter"}
+        - {t: "Strasse /", n: "Straße"}
+        - {t: "Vmb", n: "Um"}
+        - {t: "seines", n: "seines"}
+        - {t: "Namens", n: "Namens"}
+        - {t: "willen.", n: "willen"}
+      - tokens:  # ps23 4
+        - {t: "VNd", n: "Und"}
+        - {t: "ob", n: "ob"}
+        - {t: "ich", n: "ich"}
+        - {t: "schon", n: "schon"}
+        - {t: "wandert", n: "wandert"}
+        - {t: "im", n: "im"}
+        - {t: "finstern", n: "finstern"}
+        - {t: "Tal /", n: "Tal"}
+        - {t: "fürchte", n: "fürchte"}
+        - {t: "ich", n: "ich"}
+        - {t: "kein", n: "kein"}
+        - {t: "Vnglück /", n: "Unglück"}
+        - {t: "Denn", n: "Denn"}
+        - {t: "du", n: "du"}
+        - {t: "bist", n: "bist"}
+        - {t: "bey", n: "bei"}
+        - {t: "mir /", n: "mir"}
+        - {t: "Dein", n: "Dein"}
+        - {t: "Stecken", n: "Stecken"}
+        - {t: "vnd", n: "und"}
+        - {t: "Stab", n: "Stab"}
+        - {t: "trösten", n: "trösten"}
+        - {t: "mich.", n: "mich"}
+      - tokens:  # ps23 5
+        - {t: "DV", n: "Du"}
+        - {t: "bereitest", n: "bereitest"}
+        - {t: "fur", n: "für"}
+        - {t: "mir", n: "mir"}
+        - {t: "einen", n: "einen"}
+        - {t: "Tisch", n: "Tisch"}
+        - {t: "gegen", n: "gegen"}
+        - {t: "meine", n: "meine"}
+        - {t: "Feinde /", n: "Feinde"}
+        - {t: "Du", n: "Du"}
+        - {t: "salbest", n: "salbest"}
+        - {t: "mein", n: "mein"}
+        - {t: "Heubt", n: "Haupt"}
+        - {t: "mit", n: "mit"}
+        - {t: "öle /", n: "Öle"}
+        - {t: "Vnd", n: "Und"}
+        - {t: "schenckest", n: "schenkest"}
+        - {t: "mir", n: "mir"}
+        - {t: "vol", n: "voll"}
+        - {t: "ein.", n: "ein"}
+      - tokens:  # ps23 6
+        - {t: "Gutes", n: "Gutes"}
+        - {t: "vnd", n: "und"}
+        - {t: "Barmhertzigkeit", n: "Barmherzigkeit"}
+        - {t: "werden", n: "werden"}
+        - {t: "mir", n: "mir"}
+        - {t: "folgen", n: "folgen"}
+        - {t: "mein", n: "mein"}
+        - {t: "leben", n: "Leben"}
+        - {t: "lang /", n: "lang"}
+        - {t: "Vnd", n: "Und"}
+        - {t: "werde", n: "werde"}
+        - {t: "bleiben", n: "bleiben"}
+        - {t: "im", n: "im"}
+        - {t: "Hause", n: "Hause"}
+        - {t: "des", n: "des"}
+        - {t: "HERRN", n: "Herrn"}
+        - {t: "jmerdar.", n: "immerdar"}

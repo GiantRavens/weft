@@ -1,0 +1,399 @@
+# Weft edition of the opening of Columbus's letter announcing the first voyage, in the Spanish text
+# printed at Barcelona in 1493 (folio, no date or printer named; the unique copy is in the New York
+# Public Library). Transcribed on Spanish Wikisource, 'Carta de Colón al escribano de ración
+# (impreso)', revision 888747, and checked verbatim against it (`weft draft` reports
+# edition-not-in-source otherwise).
+#
+# The transcription keeps the printed letters (u for v, fallé, nonbre, the Catalan-influenced
+# spellings of the Barcelona compositor) but adds modern accents and punctuation, and expands the
+# print's abbreviations; letters in square brackets are supplied by the transcription. Weft keeps
+# the transcription as it stands and divides it into lines at the sentence and the clause.
+#
+#   t        the word as transcribed, punctuation attached (ésta,)
+#   n        the modern spelling, typed by hand; the page shows it as "Modern spelling"; the modern
+#            sound is computed from it and the 1492 sound looked up from it
+#            (pipeline/weft/data/es_lexicon.yaml)
+#   o        the 1490s spelling for this occurrence, overriding the lexicon (the conjunction e)
+joiner: " "
+sections:
+  - id: "1"
+    title: "The landfall and the naming of the islands"
+    verify_in: sources/barcelona1493-wikisource.txt
+    lines:
+      - tokens:
+        - {t: "Señor:", n: "Señor"}
+        - {t: "Porque", n: "porque"}
+        - {t: "sé", n: "sé"}
+        - {t: "que", n: "que"}
+        - {t: "auréis", n: "habréis"}
+        - {t: "plazer", n: "placer"}
+        - {t: "de", n: "de"}
+        - {t: "la", n: "la"}
+        - {t: "grand", n: "gran"}
+        - {t: "vitoria", n: "victoria"}
+        - {t: "que", n: "que"}
+        - {t: "nuestro", n: "nuestro"}
+        - {t: "Señor", n: "Señor"}
+        - {t: "me", n: "me"}
+        - {t: "ha", n: "ha"}
+        - {t: "dado", n: "dado"}
+        - {t: "en", n: "en"}
+        - {t: "mi", n: "mi"}
+        - {t: "viaje", n: "viaje"}
+        - {t: "vos", n: "vos"}
+        - {t: "escriuo", n: "escribo"}
+        - {t: "ésta,", n: "esta"}
+      - tokens:
+        - {t: "por", n: "por"}
+        - {t: "la", n: "la"}
+        - {t: "qual", n: "cual"}
+        - {t: "sabreys", n: "sabréis"}
+        - {t: "cómo", n: "cómo"}
+        - {t: "en", n: "en"}
+        - {t: "ueinte", n: "veinte"}
+        - {t: "dias", n: "días"}
+        - {t: "pasé", n: "pasé"}
+        - {t: "a", n: "a"}
+        - {t: "las", n: "las"}
+        - {t: "Indias", n: "Indias"}
+      - tokens:
+        - {t: "con", n: "con"}
+        - {t: "la", n: "la"}
+        - {t: "armada", n: "armada"}
+        - {t: "que", n: "que"}
+        - {t: "los", n: "los"}
+        - {t: "illustríssimos", n: "ilustrísimos"}
+        - {t: "Rey", n: "rey"}
+        - {t: "e", n: "y", o: "e"}
+        - {t: "Reyna,", n: "reina"}
+        - {t: "nuestros", n: "nuestros"}
+        - {t: "señores,", n: "señores"}
+        - {t: "me", n: "me"}
+        - {t: "dieron,", n: "dieron"}
+      - tokens:
+        - {t: "donde", n: "donde"}
+        - {t: "yo", n: "yo"}
+        - {t: "fallé", n: "hallé"}
+        - {t: "muy", n: "muy"}
+        - {t: "muchas", n: "muchas"}
+        - {t: "islas", n: "islas"}
+        - {t: "pobladas", n: "pobladas"}
+        - {t: "con", n: "con"}
+        - {t: "gente", n: "gente"}
+        - {t: "sin", n: "sin"}
+        - {t: "número,", n: "número"}
+      - tokens:
+        - {t: "y", n: "y"}
+        - {t: "dellas", n: "de ellas"}
+        - {t: "todas", n: "todas"}
+        - {t: "he", n: "he"}
+        - {t: "tomado", n: "tomado"}
+        - {t: "posesión", n: "posesión"}
+        - {t: "por", n: "por"}
+        - {t: "Sus", n: "sus"}
+        - {t: "Altezas", n: "Altezas"}
+        - {t: "con", n: "con"}
+        - {t: "pregón", n: "pregón"}
+        - {t: "y", n: "y"}
+        - {t: "uandera", n: "bandera"}
+        - {t: "rreal", n: "real"}
+        - {t: "estendida,", n: "extendida"}
+        - {t: "y", n: "y"}
+        - {t: "non", n: "no", o: "non"}
+        - {t: "me", n: "me"}
+        - {t: "fue", n: "fue"}
+        - {t: "contradicho.", n: "contradicho"}
+      - tokens:
+        - {t: "A", n: "a"}
+        - {t: "la", n: "la"}
+        - {t: "primera", n: "primera"}
+        - {t: "que", n: "que"}
+        - {t: "yo", n: "yo"}
+        - {t: "fallé", n: "hallé"}
+        - {t: "puse", n: "puse"}
+        - {t: "nonbre", n: "nombre"}
+        - {t: "Sant", n: "San"}
+        - {t: "Saluador,", n: "Salvador"}
+        - {t: "a", n: "a"}
+        - {t: "comemoración", n: "conmemoración"}
+        - {t: "de", n: "de"}
+        - {t: "su", n: "su"}
+        - {t: "Alta", n: "Alta"}
+        - {t: "Magestat,", n: "Majestad"}
+        - {t: "el", n: "el"}
+        - {t: "qual", n: "cual"}
+        - {t: "marauillosamente", n: "maravillosamente"}
+        - {t: "todo", n: "todo"}
+        - {t: "esto", n: "esto"}
+        - {t: "an", n: "han"}
+        - {t: "dado;", n: "dado"}
+      - tokens:
+        - {t: "los", n: "los"}
+        - {t: "indios", n: "indios"}
+        - {t: "la", n: "la"}
+        - {t: "llaman", n: "llaman"}
+        - {t: "Guanaham.", n: "Guanaham"}
+      - tokens:
+        - {t: "A", n: "a"}
+        - {t: "la", n: "la"}
+        - {t: "segunda", n: "segunda"}
+        - {t: "puse", n: "puse"}
+        - {t: "nonbre", n: "nombre"}
+        - {t: "la", n: "la"}
+        - {t: "isla", n: "isla"}
+        - {t: "de", n: "de"}
+        - {t: "Santa", n: "Santa"}
+        - {t: "María", n: "María"}
+        - {t: "de", n: "de"}
+        - {t: "Concepción,", n: "Concepción"}
+        - {t: "a", n: "a"}
+        - {t: "la", n: "la"}
+        - {t: "tercera,", n: "tercera"}
+        - {t: "Ferrandina;", n: "Fernandina"}
+      - tokens:
+        - {t: "a", n: "a"}
+        - {t: "la", n: "la"}
+        - {t: "quarta,", n: "cuarta"}
+        - {t: "la", n: "la"}
+        - {t: "isla", n: "isla"}
+        - {t: "Bella,", n: "Bella"}
+        - {t: "a", n: "a"}
+        - {t: "la", n: "la"}
+        - {t: "quinta,", n: "quinta"}
+        - {t: "la", n: "la"}
+        - {t: "isla", n: "isla"}
+        - {t: "Juana,", n: "Juana"}
+        - {t: "e", n: "y", o: "e"}
+        - {t: "así", n: "así"}
+        - {t: "a", n: "a"}
+        - {t: "cada", n: "cada"}
+        - {t: "una", n: "una"}
+        - {t: "nonbre", n: "nombre"}
+        - {t: "nueuo.", n: "nuevo"}
+  - id: "2"
+    title: "Juana taken for the mainland"
+    verify_in: sources/barcelona1493-wikisource.txt
+    lines:
+      - tokens:
+        - {t: "Quando", n: "cuando"}
+        - {t: "yo", n: "yo"}
+        - {t: "llegué", n: "llegué"}
+        - {t: "a", n: "a"}
+        - {t: "la", n: "la"}
+        - {t: "Juana", n: "Juana"}
+        - {t: "seguí", n: "seguí"}
+        - {t: "io", n: "yo"}
+        - {t: "la", n: "la"}
+        - {t: "costa", n: "costa"}
+        - {t: "della", n: "de ella"}
+        - {t: "al", n: "al"}
+        - {t: "poniente,", n: "poniente"}
+      - tokens:
+        - {t: "y", n: "y"}
+        - {t: "la", n: "la"}
+        - {t: "fallé", n: "hallé"}
+        - {t: "tan", n: "tan"}
+        - {t: "grande", n: "grande"}
+        - {t: "que", n: "que"}
+        - {t: "pensé", n: "pensé"}
+        - {t: "que", n: "que"}
+        - {t: "sería", n: "sería"}
+        - {t: "tierra", n: "tierra"}
+        - {t: "firme,", n: "firme"}
+        - {t: "la", n: "la"}
+        - {t: "prouincia", n: "provincia"}
+        - {t: "de", n: "de"}
+        - {t: "Catayo.", n: "Catay"}
+  - id: "3"
+    title: "Española, and the first description of the people"
+    verify_in: sources/barcelona1493-wikisource.txt
+    lines:
+      - tokens:
+        - {t: "La", n: "la"}
+        - {t: "Spañola", n: "Española"}
+        - {t: "es", n: "es"}
+        - {t: "marauilla:", n: "maravilla"}
+      - tokens:
+        - {t: "las", n: "las"}
+        - {t: "sierras", n: "sierras"}
+        - {t: "y", n: "y"}
+        - {t: "las", n: "las"}
+        - {t: "montañas", n: "montañas"}
+        - {t: "y", n: "y"}
+        - {t: "las", n: "las"}
+        - {t: "uegas", n: "vegas"}
+        - {t: "i", n: "y"}
+        - {t: "las", n: "las"}
+        - {t: "campiñas,", n: "campiñas"}
+        - {t: "y", n: "y"}
+        - {t: "las", n: "las"}
+        - {t: "tierras", n: "tierras"}
+        - {t: "tan", n: "tan"}
+        - {t: "fermosas", n: "hermosas"}
+        - {t: "y", n: "y"}
+        - {t: "gruesas", n: "gruesas"}
+        - {t: "para", n: "para"}
+        - {t: "plantar", n: "plantar"}
+        - {t: "y", n: "y"}
+        - {t: "sembrar,", n: "sembrar"}
+      - tokens:
+        - {t: "pa", n: "para"}
+        - {t: "criar", n: "criar"}
+        - {t: "ganados", n: "ganados"}
+        - {t: "de", n: "de"}
+        - {t: "todas", n: "todas"}
+        - {t: "suertes,", n: "suertes"}
+        - {t: "para", n: "para"}
+        - {t: "hedificios", n: "edificios"}
+        - {t: "de", n: "de"}
+        - {t: "villas", n: "villas"}
+        - {t: "e", n: "y", o: "e"}
+        - {t: "lugares.", n: "lugares"}
+      - tokens:
+        - {t: "Los", n: "los"}
+        - {t: "puertos", n: "puertos"}
+        - {t: "de", n: "de"}
+        - {t: "la", n: "la"}
+        - {t: "mar,", n: "mar"}
+        - {t: "aquí", n: "aquí"}
+        - {t: "no", n: "no"}
+        - {t: "hauría", n: "habría"}
+        - {t: "crehencia", n: "creencia"}
+        - {t: "sin", n: "sin"}
+        - {t: "vista,", n: "vista"}
+      - tokens:
+        - {t: "y", n: "y"}
+        - {t: "de", n: "de"}
+        - {t: "los", n: "los"}
+        - {t: "ríos", n: "ríos"}
+        - {t: "muchos", n: "muchos"}
+        - {t: "y", n: "y"}
+        - {t: "grandes", n: "grandes"}
+        - {t: "y", n: "y"}
+        - {t: "buenas", n: "buenas"}
+        - {t: "aguas,", n: "aguas"}
+        - {t: "los", n: "los"}
+        - {t: "más", n: "más"}
+        - {t: "de", n: "de"}
+        - {t: "los", n: "los"}
+        - {t: "quales", n: "cuales"}
+        - {t: "traen", n: "traen"}
+        - {t: "oro.", n: "oro"}
+      - tokens:
+        - {t: "En", n: "en"}
+        - {t: "los", n: "los"}
+        - {t: "árboles", n: "árboles"}
+        - {t: "y", n: "y"}
+        - {t: "frutos", n: "frutos"}
+        - {t: "y", n: "y"}
+        - {t: "yeruas", n: "hierbas"}
+        - {t: "ay", n: "hay"}
+        - {t: "grandes", n: "grandes"}
+        - {t: "differencias", n: "diferencias"}
+        - {t: "de", n: "de"}
+        - {t: "aquéllas", n: "aquellas"}
+        - {t: "de", n: "de"}
+        - {t: "la", n: "la"}
+        - {t: "Iuana;", n: "Juana"}
+      - tokens:
+        - {t: "en", n: "en"}
+        - {t: "ésta", n: "esta"}
+        - {t: "ay", n: "hay"}
+        - {t: "muchas", n: "muchas"}
+        - {t: "specierías", n: "especierías"}
+        - {t: "y", n: "y"}
+        - {t: "grandes", n: "grandes"}
+        - {t: "minas", n: "minas"}
+        - {t: "de", n: "de"}
+        - {t: "oro", n: "oro"}
+        - {t: "y", n: "y"}
+        - {t: "de", n: "de"}
+        - {t: "otros", n: "otros"}
+        - {t: "metales.", n: "metales"}
+      - tokens:
+        - {t: "La", n: "la"}
+        - {t: "gente", n: "gente"}
+        - {t: "desta", n: "de esta"}
+        - {t: "ysla", n: "isla"}
+        - {t: "y", n: "y"}
+        - {t: "de", n: "de"}
+        - {t: "todas", n: "todas"}
+        - {t: "las", n: "las"}
+        - {t: "otras", n: "otras"}
+        - {t: "que", n: "que"}
+        - {t: "he", n: "he"}
+        - {t: "fallado", n: "hallado"}
+        - {t: "y", n: "y"}
+        - {t: "hauido", n: "habido"}
+        - {t: "ni", n: "ni"}
+        - {t: "aya", n: "haya"}
+        - {t: "hauido", n: "habido"}
+        - {t: "noticia,", n: "noticia"}
+      - tokens:
+        - {t: "andan", n: "andan"}
+        - {t: "todos", n: "todos"}
+        - {t: "desnudos,", n: "desnudos"}
+        - {t: "hombres", n: "hombres"}
+        - {t: "y", n: "y"}
+        - {t: "mugeres,", n: "mujeres"}
+        - {t: "así", n: "así"}
+        - {t: "como", n: "como"}
+        - {t: "sus", n: "sus"}
+        - {t: "madres", n: "madres"}
+        - {t: "los", n: "los"}
+        - {t: "paren,", n: "paren"}
+      - tokens:
+        - {t: "haunque", n: "aunque"}
+        - {t: "algunas", n: "algunas"}
+        - {t: "mugeres", n: "mujeres"}
+        - {t: "se", n: "se"}
+        - {t: "cobrían", n: "cubrían"}
+        - {t: "un", n: "un"}
+        - {t: "solo", n: "solo"}
+        - {t: "lugar", n: "lugar"}
+        - {t: "con", n: "con"}
+        - {t: "una", n: "una"}
+        - {t: "foia", n: "hoja"}
+        - {t: "de", n: "de"}
+        - {t: "yerua", n: "hierba"}
+        - {t: "o", n: "o"}
+        - {t: "una", n: "una"}
+        - {t: "cosa", n: "cosa"}
+        - {t: "de", n: "de"}
+        - {t: "algodón", n: "algodón"}
+        - {t: "que", n: "que"}
+        - {t: "pa", n: "para"}
+        - {t: "ello", n: "ello"}
+        - {t: "fazen.", n: "hacen"}
+      - tokens:
+        - {t: "Ellos", n: "ellos"}
+        - {t: "no", n: "no"}
+        - {t: "tienen", n: "tienen"}
+        - {t: "fierro", n: "hierro"}
+        - {t: "ni", n: "ni"}
+        - {t: "azero", n: "acero"}
+        - {t: "ni", n: "ni"}
+        - {t: "armas", n: "armas"}
+        - {t: "ni", n: "ni"}
+        - {t: "son", n: "son"}
+        - {t: "[par]a", n: "para"}
+        - {t: "ello,", n: "ello"}
+      - tokens:
+        - {t: "no", n: "no"}
+        - {t: "porque", n: "porque"}
+        - {t: "no", n: "no"}
+        - {t: "sea", n: "sea"}
+        - {t: "gente", n: "gente"}
+        - {t: "bien", n: "bien"}
+        - {t: "dispuesta", n: "dispuesta"}
+        - {t: "y", n: "y"}
+        - {t: "de", n: "de"}
+        - {t: "fermosa", n: "hermosa"}
+        - {t: "estatura,", n: "estatura"}
+        - {t: "saluo", n: "salvo"}
+        - {t: "que", n: "que"}
+        - {t: "son", n: "son"}
+        - {t: "muy", n: "muy"}
+        - {t: "te[merosos]", n: "temerosos"}
+        - {t: "a", n: "a"}
+        - {t: "marauilla.", n: "maravilla"}

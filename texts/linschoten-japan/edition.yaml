@@ -1,0 +1,490 @@
+# Weft edition of the opening of chapter 26 of Jan Huygen van Linschoten's Itinerario (Amsterdam,
+# Cornelis Claesz, 1596), "Van't Eylandt van Iapan", in the text of H. Kern's edition for the
+# Linschoten-Vereeniging (The Hague, 1910), volume 1, pages 103-104. Kern reprints the 1596 text in
+# roman type, keeping its spelling (u for v in seluen, I for J in Iapan, y for ij in by and mylen)
+# and printing the folio numbers of 1596 in the margin ([34b], [35a]).
+#
+# The text was transcribed from the page scans of the archive.org copy (itinerariovoyage01lins) and
+# is checked against that copy's OCR (the hOCR file, sources/kern1910-hocr.html) by the sensor in
+# pipeline/weft/dutch.py (line_checks; failure class edition-not-in-source). The sensor reads only
+# the words inside the body column of each page (ocr_check.pages: x0, y0, x1, y1 in scan pixels),
+# which sets aside Kern's marginal summaries, the running head and the footnotes; it rejoins words
+# hyphenated at a line end and compares without spaces, because the OCR both splits words (s weert)
+# and joins them (jaght,waer). Where the OCR misreads the scan, the token says what the OCR has
+# (ocr); each such reading was checked against the scan:
+#   itin.26.2   ghecommuniceert   OCR prefixes a stray mark from the margin (ö)
+#   itin.26.12  eenen             OCR ecnen
+#   itin.26.13  ooc (the first), alle   OCR 00c, ajje
+#   itin.26.18  de                OCR prefixes marginal debris (&J*')
+#   itin.26.19  Silver te         OCR Sil- ^^ ^ (the start of the line is unread)
+#   itin.26.21  is,               OCR keeps Kern's footnote mark (x)), set aside here
+#   itin.26.22  natien soo goede  OCR natiën so° goeCie; the scan has natien, without the diaeresis
+# Weft divides the text into lines at the sentence, the semicolon and, in the longest sentences,
+# at a clause.
+#
+#   t     the word as printed in 1910 (= 1596), punctuation attached (Rivieren;)
+#   n     the modern Dutch spelling of the same word form (sekerheyt: zekerheid; ende stays ende);
+#         clitic groups are written apart (van't: van 't, datter: dat er). The page shows it as
+#         "Modern spelling"; the sound of both schemes is computed from it
+#         (pipeline/weft/dutch.py with pipeline/weft/data/nl_lexicon.yaml)
+#   ocr   the OCR's reading of this token where it differs from the scan (see above)
+#   ipa   {scheme: ipa} override for this occurrence
+work: linschoten-japan
+joiner: " "
+ocr_check:
+  file: sources/kern1910-hocr.html
+  pages:                       # hOCR page id: body column [x0, y0, x1, y1]; a word counts if its
+    page_000163: [300, 2380, 2390, 3700]     # top-left corner falls inside (p. 103)
+    page_000164: [500, 400, 2560, 3740]      # p. 104
+sections:
+  - id: "26"
+    title: "Dat 26. Capittel. Van't Eylandt van Iapan (chapter 26, Of the island of Japan: the opening)"
+    lines:
+      - tokens:
+        - {t: "Het", n: "het"}
+        - {t: "Eylandt", n: "eiland"}
+        - {t: "ofte", n: "ofte"}
+        - {t: "het", n: "het"}
+        - {t: "land", n: "land"}
+        - {t: "van", n: "van"}
+        - {t: "Iapan", n: "Japan"}
+        - {t: "zijn", n: "zijn"}
+        - {t: "veel", n: "veel"}
+        - {t: "Eylanden", n: "eilanden"}
+        - {t: "by", n: "bij"}
+        - {t: "malkanderen,", n: "malkanderen"}
+        - {t: "ende", n: "ende"}
+        - {t: "zijn", n: "zijn"}
+        - {t: "alleenelick", n: "alleenelijk"}
+        - {t: "ghedeelt", n: "gedeeld"}
+        - {t: "ende", n: "ende"}
+        - {t: "onderscheyden", n: "onderscheiden"}
+        - {t: "met", n: "met"}
+        - {t: "sommige", n: "sommige"}
+        - {t: "cleyne", n: "kleine"}
+        - {t: "Golven", n: "golven"}
+        - {t: "ende", n: "ende"}
+        - {t: "Rivieren;", n: "rivieren"}
+      - tokens:
+        - {t: "is", n: "is"}
+        - {t: "een", n: "een"}
+        - {t: "groot", n: "groot"}
+        - {t: "landt,", n: "land"}
+        - {t: "hoe", n: "hoe"}
+        - {t: "wel", n: "wel"}
+        - {t: "men", n: "men"}
+        - {t: "tot", n: "tot"}
+        - {t: "noch", n: "nog"}
+        - {t: "toe", n: "toe"}
+        - {t: "gheen", n: "geen"}
+        - {t: "sekerheyt", n: "zekerheid"}
+        - {t: "heeft", n: "heeft"}
+        - {t: "vande", n: "van de"}
+        - {t: "grootte,", n: "grootte"}
+        - {t: "om", n: "om"}
+        - {t: "dat", n: "dat"}
+        - {t: "het", n: "het"}
+        - {t: "noch", n: "nog"}
+        - {t: "niet", n: "niet"}
+        - {t: "al", n: "al"}
+        - {t: "ondeckt", n: "ondekt"}
+        - {t: "ende", n: "ende"}
+        - {t: "bekent,", n: "bekend"}
+        - {t: "noch", n: "noch"}
+        - {t: "vande", n: "van de"}
+        - {t: "Portugesen", n: "Portugezen"}
+        - {t: "ghecommuniceert", n: "gecommuniceerd", ocr: "öghecommuniceert"}
+        - {t: "is;", n: "is"}
+      - tokens:
+        - {t: "begint", n: "begint"}
+        - {t: "op", n: "op"}
+        - {t: "30.", n: "dertig"}
+        - {t: "graden,", n: "graden"}
+        - {t: "ende", n: "ende"}
+        - {t: "passeert", n: "passeert"}
+        - {t: "tot", n: "tot"}
+        - {t: "over", n: "over"}
+        - {t: "die", n: "die"}
+        - {t: "38.", n: "achtendertig"}
+      - tokens:
+        - {t: "Is", n: "is"}
+        - {t: "gelegen", n: "gelegen"}
+        - {t: "van't", n: "van 't"}
+        - {t: "vaste", n: "vaste"}
+        - {t: "landt", n: "land"}
+        - {t: "van", n: "van"}
+        - {t: "China", n: "China"}
+        - {t: "oost", n: "oost"}
+        - {t: "aen", n: "aan"}
+        - {t: "by", n: "bij"}
+        - {t: "de", n: "de"}
+        - {t: "80.", n: "tachtig"}
+        - {t: "mylen,", n: "mijlen"}
+        - {t: "ende", n: "ende"}
+        - {t: "van", n: "van"}
+        - {t: "Maccau", n: "Macau"}
+        - {t: "de", n: "de"}
+        - {t: "wech", n: "weg"}
+        - {t: "die", n: "die"}
+        - {t: "de", n: "de"}
+        - {t: "Portugesen", n: "Portugezen"}
+        - {t: "varen", n: "varen"}
+        - {t: "n.o.", n: "noordoost"}
+        - {t: "waert", n: "waart"}
+        - {t: "aen", n: "aan"}
+        - {t: "zijn", n: "zijn"}
+        - {t: "byde", n: "bij de"}
+        - {t: "300.", n: "driehonderd"}
+        - {t: "mylen,", n: "mijlen"}
+      - tokens:
+        - {t: "ende", n: "ende"}
+        - {t: "die", n: "die"}
+        - {t: "haven", n: "haven"}
+        - {t: "daer", n: "daar"}
+        - {t: "gemeenlick", n: "gemeenlijk"}
+        - {t: "die", n: "die"}
+        - {t: "Portugesen", n: "Portugezen"}
+        - {t: "handelen", n: "handelen"}
+        - {t: "ende", n: "ende"}
+        - {t: "varen,", n: "varen"}
+        - {t: "is", n: "is"}
+        - {t: "genaemt", n: "genaamd"}
+        - {t: "Nangasache,", n: "Nangasache"}
+        - {t: "hebben", n: "hebben"}
+        - {t: "oock", n: "ook"}
+        - {t: "ander", n: "ander"}
+        - {t: "plaetsen", n: "plaatsen"}
+        - {t: "daerse", n: "daar ze"}
+        - {t: "tracteren", n: "tracteren"}
+        - {t: "ende", n: "ende"}
+        - {t: "haer", n: "haar"}
+        - {t: "comunicatie", n: "communicatie"}
+        - {t: "hebben.", n: "hebben"}
+      - tokens:
+        - {t: "T'is", n: "'t is"}
+        - {t: "een", n: "een"}
+        - {t: "cout", n: "koud"}
+        - {t: "lant,", n: "land"}
+        - {t: "ende", n: "ende"}
+        - {t: "van", n: "van"}
+        - {t: "veel", n: "veel"}
+        - {t: "reghens,", n: "regens"}
+        - {t: "sneeu,", n: "sneeuw"}
+        - {t: "ende", n: "ende"}
+        - {t: "oock", n: "ook"}
+        - {t: "ys;", n: "ijs"}
+      - tokens:
+        - {t: "heeft", n: "heeft"}
+        - {t: "sommigh", n: "sommig"}
+        - {t: "koorn", n: "koorn"}
+        - {t: "land,", n: "land"}
+        - {t: "maer", n: "maar"}
+        - {t: "haer", n: "haar"}
+        - {t: "gemeen", n: "gemeen"}
+        - {t: "onderhout", n: "onderhoud"}
+        - {t: "ende", n: "ende"}
+        - {t: "voetsel", n: "voedsel"}
+        - {t: "is", n: "is"}
+        - {t: "Rijs.", n: "rijs"}
+      - tokens:
+        - {t: "Op", n: "op"}
+        - {t: "sommighe", n: "sommige"}
+        - {t: "plaetsen", n: "plaatsen"}
+        - {t: "is", n: "is"}
+        - {t: "het", n: "het"}
+        - {t: "land", n: "land"}
+        - {t: "seer", n: "zeer"}
+        - {t: "berghachtigh", n: "bergachtig"}
+        - {t: "ende", n: "ende"}
+        - {t: "onvruchtbaer;", n: "onvruchtbaar"}
+      - tokens:
+        - {t: "zy", n: "zij"}
+        - {t: "en", n: "en"}
+        - {t: "eeten", n: "eten"}
+        - {t: "anders", n: "anders"}
+        - {t: "geen", n: "geen"}
+        - {t: "vleesch", n: "vlees"}
+        - {t: "dan", n: "dan"}
+        - {t: "van", n: "van"}
+        - {t: "wilde", n: "wilde"}
+        - {t: "beesten,", n: "beesten"}
+        - {t: "ende", n: "ende"}
+        - {t: "vande", n: "van de"}
+        - {t: "jaght,", n: "jacht"}
+        - {t: "waer", n: "waar"}
+        - {t: "mede", n: "mede"}
+        - {t: "zij", n: "zij"}
+        - {t: "haer", n: "haar"}
+        - {t: "wonder", n: "wonder"}
+        - {t: "wel", n: "wel"}
+        - {t: "weten", n: "weten"}
+        - {t: "te", n: "te"}
+        - {t: "gheneeren,", n: "generen"}
+      - tokens:
+        - {t: "hoe", n: "hoe"}
+        - {t: "wel", n: "wel"}
+        - {t: "datter", n: "dat er"}
+        - {t: "ghenoech", n: "genoeg"}
+        - {t: "Ossen,", n: "ossen"}
+        - {t: "Koeyen,", n: "koeien"}
+        - {t: "Schapen,", n: "schapen"}
+        - {t: "ende", n: "ende"}
+        - {t: "dierghelijcke", n: "diergelijke"}
+        - {t: "Vee", n: "vee"}
+        - {t: "is,", n: "is"}
+        - {t: "maer", n: "maar"}
+        - {t: "ghebruijckense", n: "gebruiken ze"}
+        - {t: "tot", n: "tot"}
+        - {t: "ander", n: "ander"}
+        - {t: "dinghen", n: "dingen"}
+        - {t: "ende", n: "ende"}
+        - {t: "wercken,", n: "werken"}
+      - tokens:
+        - {t: "om", n: "om"}
+        - {t: "dat", n: "dat"}
+        - {t: "het", n: "het"}
+        - {t: "tam", n: "tam"}
+        - {t: "vleesch", n: "vlees"}
+        - {t: "is,", n: "is"}
+        - {t: "so", n: "zo"}
+        - {t: "staet", n: "staat"}
+        - {t: "het", n: "het"}
+        - {t: "haer", n: "haar"}
+        - {t: "teghen", n: "tegen"}
+        - {t: "t'eeten,", n: "te eten"}
+        - {t: "en", n: "en"}
+        - {t: "schuwent", n: "schuwen 't"}
+        - {t: "gelijck", n: "gelijk"}
+        - {t: "by", n: "bij"}
+        - {t: "ons", n: "ons"}
+        - {t: "peerden", n: "peerden"}
+        - {t: "vleesch;", n: "vlees"}
+      - tokens:
+        - {t: "hebben", n: "hebben"}
+        - {t: "oock", n: "ook"}
+        - {t: "eenen", n: "eenen", ocr: "ecnen"}
+        - {t: "grouwel", n: "grouwel"}
+        - {t: "vande", n: "van de"}
+        - {t: "melck,", n: "melk"}
+        - {t: "gelijck", n: "gelijk"}
+        - {t: "wy", n: "wij"}
+        - {t: "van't", n: "van 't"}
+        - {t: "rau", n: "rauw"}
+        - {t: "bloet,", n: "bloed"}
+        - {t: "seggen", n: "zeggen"}
+        - {t: "dat", n: "dat"}
+        - {t: "het", n: "het"}
+        - {t: "bloet", n: "bloed"}
+        - {t: "vande", n: "van de"}
+        - {t: "beesten", n: "beesten"}
+        - {t: "is", n: "is"}
+        - {t: "al", n: "al"}
+        - {t: "ist", n: "is 't"}
+        - {t: "wit;", n: "wit"}
+      - tokens:
+        - {t: "Hebben", n: "hebben"}
+        - {t: "veellerhande", n: "veelerhande"}
+        - {t: "vis,", n: "vis"}
+        - {t: "waer", n: "waar"}
+        - {t: "van", n: "van"}
+        - {t: "zy", n: "zij"}
+        - {t: "ooc", n: "ook", ocr: "00c"}
+        - {t: "groot", n: "groot"}
+        - {t: "vrient", n: "vriend"}
+        - {t: "zijn,", n: "zijn"}
+        - {t: "ooc", n: "ook"}
+        - {t: "van", n: "van"}
+        - {t: "alle", n: "alle", ocr: "ajje"}
+        - {t: "soorten", n: "soorten"}
+        - {t: "van", n: "van"}
+        - {t: "vruchten", n: "vruchten"}
+        - {t: "ghelijck", n: "gelijk"}
+        - {t: "die", n: "die"}
+        - {t: "van", n: "van"}
+        - {t: "China,", n: "China"}
+      - tokens:
+        - {t: "die", n: "die"}
+        - {t: "huysen", n: "huizen"}
+        - {t: "zijn", n: "zijn"}
+        - {t: "ghemeenlijck", n: "gemeenlijk"}
+        - {t: "van", n: "van"}
+        - {t: "hout", n: "hout"}
+        - {t: "bedeckt", n: "bedekt"}
+        - {t: "met", n: "met"}
+        - {t: "deelen", n: "delen"}
+        - {t: "ofte", n: "ofte"}
+        - {t: "stroy,", n: "strooi"}
+        - {t: "zijn", n: "zijn"}
+        - {t: "fray", n: "fraai"}
+        - {t: "ende", n: "ende"}
+        - {t: "cunstich", n: "kunstig"}
+        - {t: "ghewrocht,", n: "gewrocht"}
+        - {t: "principalijck", n: "principalijk"}
+        - {t: "van't", n: "van 't"}
+        - {t: "rijcke", n: "rijke"}
+        - {t: "ende", n: "ende"}
+        - {t: "machtigh", n: "machtig"}
+        - {t: "volck,", n: "volk"}
+      - tokens:
+        - {t: "hebbende", n: "hebbende"}
+        - {t: "hare", n: "hare"}
+        - {t: "camers", n: "kamers"}
+        - {t: "verciert", n: "versierd"}
+        - {t: "met", n: "met"}
+        - {t: "schoone", n: "schone"}
+        - {t: "matten,", n: "matten"}
+        - {t: "welck", n: "welk"}
+        - {t: "haer", n: "haar"}
+        - {t: "beste", n: "beste"}
+        - {t: "cyraet", n: "sieraad"}
+        - {t: "is,", n: "is"}
+      - tokens:
+        - {t: "die", n: "die"}
+        - {t: "Iapanen", n: "Japanen"}
+        - {t: "en", n: "en"}
+        - {t: "zijn", n: "zijn"}
+        - {t: "zoo", n: "zo"}
+        - {t: "net", n: "net"}
+        - {t: "noch", n: "noch"}
+        - {t: "soo", n: "zo"}
+        - {t: "curieus", n: "curieus"}
+        - {t: "op", n: "op"}
+        - {t: "alle", n: "alle"}
+        - {t: "haer", n: "haar"}
+        - {t: "dingen", n: "dingen"}
+        - {t: "niet", n: "niet"}
+        - {t: "als", n: "als"}
+        - {t: "die", n: "die"}
+        - {t: "Chinen,", n: "Chinen"}
+        - {t: "maer", n: "maar"}
+        - {t: "laten", n: "laten"}
+        - {t: "haer", n: "haar"}
+        - {t: "met", n: "met"}
+        - {t: "weynigh", n: "weinig"}
+        - {t: "genoegen,", n: "genoegen"}
+      - tokens:
+        - {t: "doch", n: "doch"}
+        - {t: "gaen", n: "gaan"}
+        - {t: "al", n: "al"}
+        - {t: "meest", n: "meest"}
+        - {t: "wel", n: "wel"}
+        - {t: "ghetracteert,", n: "getracteerd"}
+        - {t: "ende", n: "ende"}
+        - {t: "gecleedt", n: "gekleed"}
+        - {t: "met", n: "met"}
+        - {t: "zyde,", n: "zijde"}
+        - {t: "bynaest", n: "bijnaast"}
+        - {t: "ghelijck", n: "gelijk"}
+        - {t: "die", n: "die"}
+        - {t: "Chinen.", n: "Chinen"}
+      - tokens:
+        - {t: "Het", n: "het"}
+        - {t: "landt", n: "land"}
+        - {t: "heeft", n: "heeft"}
+        - {t: "sommige", n: "sommige"}
+        - {t: "Mynen", n: "mijnen"}
+        - {t: "van", n: "van"}
+        - {t: "Silver,", n: "zilver"}
+        - {t: "dat", n: "dat"}
+        - {t: "van", n: "van"}
+        - {t: "daer", n: "daar"}
+        - {t: "vande", n: "van de"}
+        - {t: "Portugesen", n: "Portugezen"}
+        - {t: "jaerlijcs", n: "jaarlijks"}
+        - {t: "vervoert", n: "vervoerd"}
+        - {t: "wert", n: "wert"}
+        - {t: "naer", n: "naar"}
+        - {t: "China", n: "China"}
+        - {t: "in", n: "in"}
+        - {t: "wisselinge", n: "wisselinge"}
+        - {t: "van", n: "van"}
+        - {t: "Zyde,", n: "zijde"}
+        - {t: "ende", n: "ende"}
+        - {t: "ander", n: "ander"}
+        - {t: "Chinische", n: "Chinische"}
+        - {t: "waren,", n: "waren"}
+        - {t: "die", n: "die"}
+        - {t: "de", n: "de", ocr: "&J*'de"}
+        - {t: "Iapanen", n: "Japanen"}
+        - {t: "ghebreck", n: "gebrek"}
+        - {t: "hebben.", n: "hebben"}
+      - tokens:
+        - {t: "Die", n: "die"}
+        - {t: "Iapanen", n: "Japanen"}
+        - {t: "zijn", n: "zijn"}
+        - {t: "seer", n: "zeer"}
+        - {t: "subtijl", n: "subtiel"}
+        - {t: "om't", n: "om 't"}
+        - {t: "Silver", n: "zilver", ocr: "Sil^^"}
+        - {t: "te", n: "te", ocr: "^"}
+        - {t: "soecken", n: "zoeken"}
+        - {t: "ende", n: "ende"}
+        - {t: "te", n: "te"}
+        - {t: "vercoopen,", n: "verkopen"}
+      - tokens:
+        - {t: "hebben", n: "hebben"}
+        - {t: "onder", n: "onder"}
+        - {t: "haer", n: "haar"}
+        - {t: "seer", n: "zeer"}
+        - {t: "goede", n: "goede"}
+        - {t: "ambachtslieden,", n: "ambachtslieden"}
+        - {t: "ende", n: "ende"}
+        - {t: "vernuftighe", n: "vernuftige"}
+        - {t: "meesters", n: "meesters"}
+        - {t: "van", n: "van"}
+        - {t: "veellerhande", n: "veelerhande"}
+        - {t: "ambachten,", n: "ambachten"}
+        - {t: "ende", n: "ende"}
+        - {t: "hantwercken,", n: "handwerken"}
+      - tokens:
+        - {t: "zijn", n: "zijn"}
+        - {t: "seer", n: "zeer"}
+        - {t: "scherpsinnigh,", n: "scherpzinnig"}
+        - {t: "ende", n: "ende"}
+        - {t: "leeren", n: "leren"}
+        - {t: "haest", n: "haast"}
+        - {t: "een", n: "een"}
+        - {t: "dinck,", n: "ding"}
+        - {t: "gelijck", n: "gelijk"}
+        - {t: "het", n: "het"}
+        - {t: "by", n: "bij"}
+        - {t: "experientie", n: "experiëntie"}
+        - {t: "gebleecken", n: "gebleken"}
+        - {t: "is,", n: "is", ocr: "isx),"}
+        - {t: "naer", n: "naar"}
+        - {t: "dat", n: "dat"}
+        - {t: "het", n: "het"}
+        - {t: "die", n: "die"}
+        - {t: "Portugesen", n: "Portugezen"}
+        - {t: "ontdeckt", n: "ontdekt"}
+        - {t: "hebben;", n: "hebben"}
+      - tokens:
+        - {t: "het", n: "het"}
+        - {t: "ghemeen", n: "gemeen"}
+        - {t: "volck", n: "volk"}
+        - {t: "ende", n: "ende"}
+        - {t: "lantlieden", n: "landlieden"}
+        - {t: "zijn", n: "zijn"}
+        - {t: "zeer", n: "zeer"}
+        - {t: "different", n: "different"}
+        - {t: "van", n: "van"}
+        - {t: "andere", n: "andere"}
+        - {t: "natien,", n: "natiën", ocr: "natiën,"}
+        - {t: "want", n: "want"}
+        - {t: "hebben", n: "hebben"}
+        - {t: "onder", n: "onder"}
+        - {t: "haer", n: "haar"}
+        - {t: "soo", n: "zo", ocr: "so°"}
+        - {t: "goede", n: "goede", ocr: "goeCie"}
+        - {t: "courtosye", n: "courtoisie"}
+        - {t: "ende", n: "ende"}
+        - {t: "politie,", n: "politie"}
+        - {t: "als", n: "als"}
+        - {t: "oft", n: "of"}
+        - {t: "zy", n: "zij"}
+        - {t: "alhaer", n: "al haar"}
+        - {t: "daghen", n: "dagen"}
+        - {t: "int", n: "in 't"}
+        - {t: "hoff", n: "hof"}
+        - {t: "opghevoet", n: "opgevoed"}
+        - {t: "waren.", n: "waren"}

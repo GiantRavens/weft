@@ -1,0 +1,69 @@
+work: polo-cipangu
+title: "The book of Marco Polo: the island of Cipangu (Franco-Italian F text)"
+author: Marco Polo (1254–1324) and Rustichello of Pisa
+language: fro                   # registered as Old French; the text is Franco-Italian (see predicted_gaps)
+lang_name: Franco-Italian         # shown on the page and in the library instead of "Old French"
+prefix: polo                      # polo.<chapter>.<line>[.<token>]; chapter 159 of the 1824 edition
+urn: urn:weft:fro:polo.devisement  # Weft-local identifier
+unit: section
+section_noun: chapter
+written: {year: 1298, label: "written down at Genoa in 1298 by Rustichello of Pisa from Marco Polo's account, as the book's prologue states; the text here is the Franco-Italian manuscript BnF fr. 1116, copied in the early 14th century, as printed in 1824"}
+status: phase-0
+pilot: {sections: ["159"]}
+edition:
+  id: sdg1824-f
+  name: "Voyages de Marco Polo, the Franco-Italian F text of Paris, BnF fr. 1116 (then Bibliothèque du Roi 7367), printed by the Société de Géographie, Recueil de voyages et de mémoires, tome 1 (Paris, 1824), chapter CLIX, pages 182-184; transcribed by Weft from the Internet Archive scan and checked against its OCR text with a declared list of corrections"
+  format: weft-edition
+  file: edition.yaml
+  license: the 1824 text is public domain; Weft transcription, line division and normalized spellings CC BY-SA 4.0
+treebank: null                    # no treebank; lemma, morphology and gloss by hand, draft
+schemes: [fr1300, it1300]         # default = French of about 1300 (approximate); second = an Italian reader's sound (hypothesis)
+scheme_labels:
+  fr1300: "French about 1300: the language the book is written in (approximate)"
+  it1300: "Franco-Italian read by an Italian about 1300 (hypothesis)"
+sources_extra:
+  - id: sdg1824-djvu
+    name: "Recueil de voyages et de mémoires publié par la Société de Géographie, tome 1 (1824), Internet Archive item recueildevoyages01soci (Natural History Museum Library, London, via the Biodiversity Heritage Library), OCR text"
+    file: sources/sdg1824-djvu.txt
+    url: https://archive.org/download/recueildevoyages01soci/recueildevoyages01soci_djvu.txt
+    sha256: 018ede2ec4451dbc6d7d8203173b86a26cacb344bfe29d9e966387765e3e9f32
+    license: public domain (published 1824; the item is marked public domain by the Biodiversity Heritage Library)
+    license_url: https://creativecommons.org/publicdomain/mark/1.0/
+  - id: sdg1824-scan
+    name: "The same item, page images as PDF; the chapter is on PDF pages 244-246 (printed pages 182-184). The transcription and every OCR correction were read from these images"
+    file: sources/sdg1824.pdf
+    url: https://archive.org/download/recueildevoyages01soci/recueildevoyages01soci.pdf
+    sha256: 24b9919fb153101a25271788dabf7593577498c8a89bedf83dea65267b17984a
+    license: public domain (published 1824)
+    license_url: https://creativecommons.org/publicdomain/mark/1.0/
+translations:
+  - id: yule1903
+    translator: Henry Yule
+    year: 1871
+    form: "prose, The Book of Ser Marco Polo (1871), in the third edition revised by Henri Cordier (1903), volume 2, book III, chapter II; Project Gutenberg #12410. Yule's text is a composite: it follows the French of Pauthier's edition (the Grégoire version) as its base, with passages from the F text and from Ramusio's Italian set in square brackets"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/yule1903-v2.txt
+    url: https://www.gutenberg.org/cache/epub/12410/pg12410.txt
+    sha256: c1ce61dd8c6c6a326c42fb7ac3b1a63767bf1685ec88354f83dd321e1748921c
+  - id: marsden1818
+    translator: William Marsden
+    year: 1818
+    form: "prose, The Travels of Marco Polo, a Venetian, in the Thirteenth Century (London, 1818), book III, chapter II, pages 569-571; translated from Ramusio's Italian version (Venice, 1559), not from the French. Read from the page images of Internet Archive item india.history.resource.100588 (the item's OCR text, pinned here, garbles this chapter)"
+    partial: "Marsden follows Ramusio, whose chapter orders the events differently and adds passages not in the F text (the burial of the dead with pearls, the men protected by stones, which F tells in its next chapter); his chapter runs on into the events of the next F chapter, and the span here stops where the F chapter's events end"
+    license: public domain (published 1818)
+    license_url: https://creativecommons.org/publicdomain/mark/1.0/
+    file: sources/marsden1818-djvu.txt
+    url: https://archive.org/download/india.history.resource.100588/100588_djvu.txt
+    sha256: ae3c1336db5ad456bc02df4fa5ac7a00c15063cd27a62a66661c0b2edf65aea3
+predicted_gaps:
+  - "the language is Franco-Italian, French written by Italians, not the Old French of France; the page's language label (Old French, from the registered code fro) is the nearest available. The title, the scheme labels and the notes say Franco-Italian"
+  - "no clean open transcription of the chapter exists; Weft's transcription is checked against uncorrected OCR through 39 declared corrections read from the scan, not against a proofread text"
+  - "the 1824 print is itself a transcription of the manuscript; its readings (le lune for a wind, à no for à non, les que) are kept as printed, and the manuscript was not consulted"
+  - "the type is damaged at maintes (line 15); the reading rests on the visible letters and the sense"
+  - "the first scheme is French of about 1300 in the Paris norm and is approximate; the date by which final consonants fell silent before consonants, and whether ch and j were still affricates, are the least certain points"
+  - "the second scheme is a hypothesis built from the letter values of Italian spelling; no source of the period describes how Italians read Franco-Italian aloud"
+  - "the normalized central-French spelling in n is Weft's editorial choice and normalizes letters only"
+  - "no treebank; lemma, morphology and gloss by hand, draft; lemmas follow the headwords of Godefroy's and Tobler-Lommatzsch's dictionaries as far as the forms allow"
+  - "Yule's text is a composite of several versions, and Marsden translates Ramusio's Italian; neither translates the F text as printed here"
+  - "Marsden's translation is transcribed from the page images; its OCR text, pinned for provenance, is not usable for this chapter"

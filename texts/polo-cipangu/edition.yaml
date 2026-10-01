@@ -1,0 +1,726 @@
+# Weft edition of the Cipangu chapter of Marco Polo's book in the Franco-Italian F text (Paris, BnF
+# fr. 1116, early 14th century), as printed by the Société de Géographie, Voyages de Marco Polo
+# (Recueil de voyages et de mémoires, tome 1, Paris, 1824), chapter CLIX, pages 182-184.
+#
+# No clean open transcription of this chapter exists: French Wikisource has neither the 1824 text
+# nor this part of Pauthier's 1865 edition transcribed. The text here was transcribed by hand from
+# the page images of the Internet Archive scan (item recueildevoyages01soci, PDF pages 244-246) and is
+# checked line by line against that item's OCR text by the ocr_verify sensor in
+# pipeline/weft/oldfrench.py: the OCR is joined across line-end hyphens, stripped of page numbers,
+# and corrected by the list below, each correction a reading of the scan; every edition line must
+# then appear in it verbatim (`weft draft` reports edition-not-in-source otherwise, and
+# ocr-correction-unused for a correction that no longer matches the OCR).
+#
+# The print sets a space before some commas and semicolons; the check ignores spacing before
+# punctuation. Weft divides the chapter into lines at the sentence, and splits the longest sentences
+# at a comma or semicolon. The chapter heading, Ci devise de l'isle de Cipingu, is the section title.
+#
+#   t        the word as printed, punctuation attached (ysle,); the elided d’ l’ qu’ q’ ch’ s’ are
+#            tokens of their own, glued to the next word
+#   n        the word in the spelling of central French about 1300 (que for qe, vos for voz, genz
+#            for jens), typed by hand; letters only, never the grammar. The page shows it as
+#            "Central French spelling", and the first sound scheme is looked up from it
+#            (pipeline/weft/data/fro_lexicon.yaml); the second reads the printed form t.
+#   glue     no space follows
+joiner: " "
+ocr_verify:
+  file: texts/polo-cipangu/sources/sdg1824-djvu.txt
+  start: "Ci  devise  de  l'isle  de  Cipingu."
+  end: "CHAPITRE  CLX."
+  strip: ['\n\s*\(\s*i8\d\s*\)\s*\n']
+  corrections:
+    - {ocr: "moût", print: "mout", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "bcles", print: "beles", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "qc", print: "qe", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "ti'aithor", print: "trait hor", why: "the print has two words, trait hor"}
+    - {ocr: "reste", print: "ceste", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "corne", print: "come", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "asezhi", print: "asez hi", why: "the print sets a narrow space between asez and hi"}
+    - {ocr: "aorncs", print: "aornés", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "desmcsurëc", print: "desmesurée", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "maiu'os", print: "maintes", why: "the print's type is damaged here (mai?'es); maintes is read from the letters that show and the sense"}
+    - {ocr: "isie", print: "isle", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "ccstui", print: "cestui", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "Culjlai", print: "Cublai", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "isIe", print: "isle", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "grandismcs", print: "grandismes", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "pies.", print: "piés.", why: "the print has piés with the acute"}
+    - {ocr: "ccsti", print: "cesti", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "estoicnt", print: "estoient", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "Zaitou", print: "Zaiton", why: "the print reads Zaiton"}
+    - {ocr: "mistrcnt", print: "mistrent", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "aient", print: "alent", why: "the print reads alent (they go); OCR misread l as i"}
+    - {ocr: "prestrcnt", print: "prestrent", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "desplain", print: "des plain", why: "the print has two words, des plain"}
+    - {ocr: "mes", print: "mès", why: "the print has the grave accent, mès, in this chapter"}
+    - {ocr: "maie", print: "male", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "euxie", print: "envie", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "avcnt", print: "avent", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "distrcnt", print: "distrent", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "aies", print: "alés", why: "the print reads alés; OCR misread l as i"}
+    - {ocr: "cntor", print: "entor", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "cclz", print: "celz", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "postrcnt", print: "postrent", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "tenoicnt", print: "tenoient", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "cscanpcs", print: "escanpés", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "cstoient", print: "estoient", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "cnsi", print: "ensi", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "q'elc", print: "q'ele", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "tomcnt", print: "tornent", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+    - {ocr: "ale's", print: "alés", why: "letter misread by the OCR (c for e, i for l, and similar); checked against the scan"}
+sections:
+  - id: "159"
+    title: "Ci devise de l'isle de Cipingu (Here it tells of the island of Cipingu), chapter CLIX of the 1824 edition"
+    lines:
+      - tokens:
+        - {t: "Cypungu", n: "Cypungu"}
+        - {t: "est", n: "est"}
+        - {t: "une", n: "une"}
+        - {t: "isle", n: "isle"}
+        - {t: "à", n: "a"}
+        - {t: "levant", n: "levant"}
+        - {t: "qui", n: "qui"}
+        - {t: "est", n: "est"}
+        - {t: "longie", n: "loing"}
+        - {t: "de", n: "de"}
+        - {t: "tere", n: "terre"}
+        - {t: "en", n: "en"}
+        - {t: "aut", n: "haute"}
+        - {t: "mer", n: "mer"}
+        - {t: "mille", n: "mille"}
+        - {t: "cinq", n: "cinq"}
+        - {t: "cens", n: "cens"}
+        - {t: "miles.", n: "miles"}
+      - tokens:
+        - {t: "Elle", n: "ele"}
+        - {t: "est", n: "est"}
+        - {t: "mout", n: "mout"}
+        - {t: "grandismes", n: "grandismes"}
+        - {t: "ysles.", n: "isles"}
+      - tokens:
+        - {t: "Les", n: "les"}
+        - {t: "jens", n: "genz"}
+        - {t: "sunt", n: "sont"}
+        - {t: "blances", n: "blanches"}
+        - {t: "de", n: "de"}
+        - {t: "beles", n: "beles"}
+        - {t: "maineres", n: "manieres"}
+        - {t: "e", n: "et"}
+        - {t: "biaus.", n: "biaus"}
+      - tokens:
+        - {t: "Il", n: "il"}
+        - {t: "sunt", n: "sont"}
+        - {t: "ydules", n: "ydoles"}
+        - {t: "e", n: "et"}
+        - {t: "se", n: "se"}
+        - {t: "tienent", n: "tienent"}
+        - {t: "por", n: "por"}
+        - {t: "elz,", n: "els"}
+        - {t: "e", n: "et"}
+        - {t: "ne", n: "ne"}
+        - {t: "ont", n: "ont"}
+        - {t: "seignorie", n: "seignorie"}
+        - {t: "de", n: "de"}
+        - {t: "nul", n: "nul"}
+        - {t: "autres", n: "autres"}
+        - {t: "homes,", n: "homes"}
+        - {t: "for", n: "fors"}
+        - {t: "qe", n: "que"}
+        - {t: "d’", n: "d’", glue: true}
+        - {t: "eles", n: "eles"}
+        - {t: "meisme.", n: "meismes"}
+      - tokens:
+        - {t: "Et", n: "et"}
+        - {t: "si", n: "si"}
+        - {t: "voz", n: "vos"}
+        - {t: "di", n: "di"}
+        - {t: "qu’", n: "qu’", glue: true}
+        - {t: "il", n: "il"}
+        - {t: "ont", n: "ont"}
+        - {t: "or", n: "or"}
+        - {t: "en", n: "en"}
+        - {t: "grandismes", n: "grandismes"}
+        - {t: "abundance,", n: "abondance"}
+        - {t: "por", n: "por"}
+        - {t: "ce", n: "ce"}
+        - {t: "qe", n: "que"}
+        - {t: "le", n: "le"}
+        - {t: "or", n: "or"}
+        - {t: "hi", n: "i"}
+        - {t: "se", n: "se"}
+        - {t: "trovent", n: "trovent"}
+        - {t: "outre", n: "outre"}
+        - {t: "mesure.", n: "mesure"}
+      - tokens:
+        - {t: "Et", n: "et"}
+        - {t: "si", n: "si"}
+        - {t: "voz", n: "vos"}
+        - {t: "di", n: "di"}
+        - {t: "que", n: "que"}
+        - {t: "nulz", n: "nuls"}
+        - {t: "home", n: "home"}
+        - {t: "ne", n: "ne"}
+        - {t: "trait", n: "trait"}
+        - {t: "hor", n: "hors"}
+        - {t: "de", n: "de"}
+        - {t: "celle", n: "cele"}
+        - {t: "ysle,", n: "isle"}
+        - {t: "por", n: "por"}
+        - {t: "ce", n: "ce"}
+        - {t: "que", n: "que"}
+        - {t: "nulz", n: "nuls"}
+        - {t: "merchant", n: "marcheant"}
+        - {t: "ne", n: "ne"}
+        - {t: "autre", n: "autre"}
+        - {t: "home", n: "home"}
+        - {t: "hi", n: "i"}
+        - {t: "ala", n: "ala"}
+        - {t: "de", n: "de"}
+        - {t: "la", n: "la"}
+        - {t: "terre", n: "terre"}
+        - {t: "ferme,", n: "ferme"}
+        - {t: "e", n: "et"}
+        - {t: "por", n: "por"}
+        - {t: "ce", n: "ce"}
+        - {t: "voz", n: "vos"}
+        - {t: "di", n: "di"}
+        - {t: "qu’", n: "qu’", glue: true}
+        - {t: "il", n: "il"}
+        - {t: "ont", n: "ont"}
+        - {t: "tant", n: "tant"}
+        - {t: "or", n: "or"}
+        - {t: "con", n: "com"}
+        - {t: "jeo", n: "je"}
+        - {t: "voz", n: "vos"}
+        - {t: "ai", n: "ai"}
+        - {t: "dit.", n: "dit"}
+      - tokens:
+        - {t: "Et", n: "et"}
+        - {t: "si", n: "si"}
+        - {t: "voz", n: "vos"}
+        - {t: "conterai", n: "conterai"}
+        - {t: "une", n: "une"}
+        - {t: "grant", n: "grant"}
+        - {t: "mervoie", n: "merveille"}
+        - {t: "d’", n: "d’", glue: true}
+        - {t: "un", n: "un"}
+        - {t: "palais", n: "palais"}
+        - {t: "dou", n: "dou"}
+        - {t: "seingnor", n: "seignor"}
+        - {t: "de", n: "de"}
+        - {t: "ceste", n: "ceste"}
+        - {t: "ville.", n: "ville"}
+      - tokens:
+        - {t: "Je", n: "je"}
+        - {t: "voz", n: "vos"}
+        - {t: "di", n: "di"}
+        - {t: "tout", n: "tout"}
+        - {t: "voiramant", n: "voirement"}
+        - {t: "qe", n: "que"}
+        - {t: "il", n: "il"}
+        - {t: "ha", n: "a"}
+        - {t: "un", n: "un"}
+        - {t: "grandisme", n: "grandisme"}
+        - {t: "palais", n: "palais"}
+        - {t: "les", n: "les"}
+        - {t: "que", n: "que"}
+        - {t: "est", n: "est"}
+        - {t: "tout", n: "tout"}
+        - {t: "coverto", n: "covert"}
+        - {t: "d’", n: "d’", glue: true}
+        - {t: "or", n: "or"}
+        - {t: "fin,", n: "fin"}
+        - {t: "tout", n: "tout"}
+        - {t: "en", n: "en"}
+        - {t: "tel", n: "tel"}
+        - {t: "mainer", n: "maniere"}
+        - {t: "come", n: "come"}
+        - {t: "nos", n: "nos"}
+        - {t: "covron", n: "covrons"}
+        - {t: "nostre", n: "nostre"}
+        - {t: "maison", n: "maison"}
+        - {t: "de", n: "de"}
+        - {t: "plombe", n: "plomb"}
+        - {t: "e", n: "et"}
+        - {t: "nostre", n: "nostre"}
+        - {t: "yglise,", n: "eglise"}
+      - tokens:
+        - {t: "tout", n: "tout"}
+        - {t: "en", n: "en"}
+        - {t: "tel", n: "tel"}
+        - {t: "mainere", n: "maniere"}
+        - {t: "est", n: "est"}
+        - {t: "cest", n: "cest"}
+        - {t: "palais", n: "palais"}
+        - {t: "covert", n: "covert"}
+        - {t: "d’", n: "d’", glue: true}
+        - {t: "or", n: "or"}
+        - {t: "fin,", n: "fin"}
+        - {t: "qe", n: "que"}
+        - {t: "ce", n: "ce"}
+        - {t: "vaut", n: "vaut"}
+        - {t: "tant", n: "tant"}
+        - {t: "ch’", n: "qu’", glue: true}
+        - {t: "à", n: "a"}
+        - {t: "poine", n: "poine"}
+        - {t: "se", n: "se"}
+        - {t: "poroit", n: "porroit"}
+        - {t: "conter.", n: "conter"}
+      - tokens:
+        - {t: "Et", n: "et"}
+        - {t: "encore", n: "encore"}
+        - {t: "vos", n: "vos"}
+        - {t: "di", n: "di"}
+        - {t: "qe", n: "que"}
+        - {t: "tout", n: "tout"}
+        - {t: "le", n: "le"}
+        - {t: "pavimant", n: "pavement"}
+        - {t: "de", n: "de"}
+        - {t: "sez", n: "ses"}
+        - {t: "canbres", n: "chambres"}
+        - {t: "qe", n: "que"}
+        - {t: "asez", n: "asez"}
+        - {t: "hi", n: "i"}
+        - {t: "nia,", n: "n’i a"}
+        - {t: "sunt", n: "sont"}
+        - {t: "ausint", n: "ausi"}
+        - {t: "d’", n: "d’", glue: true}
+        - {t: "or", n: "or"}
+        - {t: "fin", n: "fin"}
+        - {t: "bien", n: "bien"}
+        - {t: "gros", n: "gros"}
+        - {t: "plus", n: "plus"}
+        - {t: "de", n: "de"}
+        - {t: "deus", n: "deus"}
+        - {t: "doies,", n: "doiz"}
+      - tokens:
+        - {t: "et", n: "et"}
+        - {t: "toutes", n: "toutes"}
+        - {t: "les", n: "les"}
+        - {t: "autres", n: "autres"}
+        - {t: "part", n: "parz"}
+        - {t: "dou", n: "dou"}
+        - {t: "palais,", n: "palais"}
+        - {t: "e", n: "et"}
+        - {t: "la", n: "la"}
+        - {t: "sale", n: "sale"}
+        - {t: "e", n: "et"}
+        - {t: "les", n: "les"}
+        - {t: "fenestre", n: "fenestres"}
+        - {t: "sunt", n: "sont"}
+        - {t: "ausint", n: "ausi"}
+        - {t: "aornés", n: "aornees"}
+        - {t: "d’", n: "d’", glue: true}
+        - {t: "or.", n: "or"}
+      - tokens:
+        - {t: "Je", n: "je"}
+        - {t: "voz", n: "vos"}
+        - {t: "di", n: "di"}
+        - {t: "que", n: "que"}
+        - {t: "cest", n: "cest"}
+        - {t: "palais", n: "palais"}
+        - {t: "est", n: "est"}
+        - {t: "de", n: "de"}
+        - {t: "si", n: "si"}
+        - {t: "desmesurée", n: "desmesuree"}
+        - {t: "richesse,", n: "richesse"}
+        - {t: "qe", n: "que"}
+        - {t: "trop", n: "trop"}
+        - {t: "seroit", n: "seroit"}
+        - {t: "grandisme", n: "grandisme"}
+        - {t: "meraveie", n: "merveille"}
+        - {t: "qui", n: "qui"}
+        - {t: "peusse", n: "peust"}
+        - {t: "dir", n: "dire"}
+        - {t: "sa", n: "sa"}
+        - {t: "vailance;", n: "vaillance"}
+      - tokens:
+        - {t: "et", n: "et"}
+        - {t: "il", n: "il"}
+        - {t: "ont", n: "ont"}
+        - {t: "perles", n: "perles"}
+        - {t: "en", n: "en"}
+        - {t: "abondance,", n: "abondance"}
+        - {t: "et", n: "et"}
+        - {t: "sunt", n: "sont"}
+        - {t: "rojes,", n: "roges"}
+        - {t: "mous", n: "mout"}
+        - {t: "bielle", n: "beles"}
+        - {t: "e", n: "et"}
+        - {t: "reonde", n: "reondes"}
+        - {t: "e", n: "et"}
+        - {t: "groses.", n: "grosses"}
+      - tokens:
+        - {t: "Elle", n: "eles"}
+        - {t: "sunt", n: "sont"}
+        - {t: "de", n: "de"}
+        - {t: "si", n: "si"}
+        - {t: "grant", n: "grant"}
+        - {t: "vailance", n: "vaillance"}
+        - {t: "con", n: "com"}
+        - {t: "les", n: "les"}
+        - {t: "blances;", n: "blanches"}
+      - tokens:
+        - {t: "e", n: "et"}
+        - {t: "plus", n: "plus"}
+        - {t: "il", n: "il"}
+        - {t: "ont", n: "ont"}
+        - {t: "encore", n: "encore"}
+        - {t: "maintes", n: "maintes"}
+        - {t: "autres", n: "autres"}
+        - {t: "pieres", n: "pierres"}
+        - {t: "presioses", n: "precioses"}
+        - {t: "asez.", n: "asez"}
+      - tokens:
+        - {t: "Elle", n: "ele"}
+        - {t: "est", n: "est"}
+        - {t: "riche", n: "riche"}
+        - {t: "isle", n: "isle"}
+        - {t: "que", n: "que"}
+        - {t: "nulz", n: "nuls"}
+        - {t: "poroit", n: "porroit"}
+        - {t: "conter", n: "conter"}
+        - {t: "sa", n: "sa"}
+        - {t: "richesse.", n: "richesse"}
+      - tokens:
+        - {t: "Et", n: "et"}
+        - {t: "si", n: "si"}
+        - {t: "voz", n: "vos"}
+        - {t: "di", n: "di"}
+        - {t: "qe", n: "que"}
+        - {t: "por", n: "por"}
+        - {t: "la", n: "la"}
+        - {t: "grant", n: "grant"}
+        - {t: "richesse", n: "richesse"}
+        - {t: "qe", n: "que"}
+        - {t: "l’", n: "l’", glue: true}
+        - {t: "en", n: "en"}
+        - {t: "contoit", n: "contoit"}
+        - {t: "au", n: "au"}
+        - {t: "grant", n: "grant"}
+        - {t: "Chan,", n: "Chan"}
+        - {t: "ce", n: "ce"}
+        - {t: "fui", n: "fu"}
+        - {t: "cestui", n: "cestui"}
+        - {t: "Cublai", n: "Cublai"}
+        - {t: "qe", n: "que"}
+        - {t: "ore", n: "ore"}
+        - {t: "reingne,", n: "regne"}
+        - {t: "qe", n: "que"}
+        - {t: "en", n: "en"}
+        - {t: "cest", n: "cest"}
+        - {t: "isle", n: "isle"}
+        - {t: "avoit,", n: "avoit"}
+      - tokens:
+        - {t: "il", n: "il"}
+        - {t: "dit", n: "dit"}
+        - {t: "qu’", n: "qu’", glue: true}
+        - {t: "il", n: "il"}
+        - {t: "la", n: "la"}
+        - {t: "voloit", n: "voloit"}
+        - {t: "faire", n: "faire"}
+        - {t: "prendre,", n: "prendre"}
+        - {t: "et", n: "et"}
+        - {t: "adonc", n: "adonc"}
+        - {t: "hi", n: "i"}
+        - {t: "mande", n: "mande"}
+        - {t: "deus", n: "deus"}
+        - {t: "sez", n: "ses"}
+        - {t: "baronz", n: "barons"}
+        - {t: "cum", n: "cum"}
+        - {t: "grandismes", n: "grandismes"}
+        - {t: "quantité", n: "quantité"}
+        - {t: "de", n: "de"}
+        - {t: "nés", n: "nes"}
+        - {t: "con", n: "con"}
+        - {t: "homes", n: "homes"}
+        - {t: "à", n: "a"}
+        - {t: "chevalz", n: "chevaus"}
+        - {t: "et", n: "et"}
+        - {t: "à", n: "a"}
+        - {t: "piés.", n: "piez"}
+      - tokens:
+        - {t: "Le", n: "le"}
+        - {t: "un", n: "un"}
+        - {t: "de", n: "de"}
+        - {t: "cesti", n: "cist"}
+        - {t: "baronz", n: "barons"}
+        - {t: "avoit", n: "avoit"}
+        - {t: "à", n: "a"}
+        - {t: "no", n: "non"}
+        - {t: "Abatan", n: "Abatan"}
+        - {t: "e", n: "et"}
+        - {t: "l’", n: "l’", glue: true}
+        - {t: "autre", n: "autre"}
+        - {t: "Vonsanicin.", n: "Vonsanicin"}
+      - tokens:
+        - {t: "Cesti", n: "cist"}
+        - {t: "deus", n: "deus"}
+        - {t: "barons", n: "barons"}
+        - {t: "estoient", n: "estoient"}
+        - {t: "sajes", n: "sages"}
+        - {t: "et", n: "et"}
+        - {t: "vailanz.", n: "vaillanz"}
+      - tokens:
+        - {t: "Et", n: "et"}
+        - {t: "qe", n: "que"}
+        - {t: "voz", n: "vos"}
+        - {t: "en", n: "en"}
+        - {t: "diroie?", n: "diroie"}
+      - tokens:
+        - {t: "Il", n: "il"}
+        - {t: "najerent", n: "nagierent"}
+        - {t: "da", n: "da"}
+        - {t: "Zaiton", n: "Zaiton"}
+        - {t: "e", n: "et"}
+        - {t: "da", n: "da"}
+        - {t: "Quinsai,", n: "Quinsai"}
+        - {t: "e", n: "et"}
+        - {t: "si", n: "si"}
+        - {t: "mistrent", n: "mistrent"}
+        - {t: "en", n: "en"}
+        - {t: "la", n: "la"}
+        - {t: "mer", n: "mer"}
+        - {t: "et", n: "et"}
+        - {t: "alent", n: "alent"}
+        - {t: "jusque", n: "jusque"}
+        - {t: "à", n: "a"}
+        - {t: "ceste", n: "ceste"}
+        - {t: "isle", n: "isle"}
+        - {t: "e", n: "et"}
+        - {t: "desenderent", n: "descendirent"}
+        - {t: "en", n: "en"}
+        - {t: "tere,", n: "terre"}
+      - tokens:
+        - {t: "e", n: "et"}
+        - {t: "prestrent", n: "pristrent"}
+        - {t: "des", n: "des"}
+        - {t: "plain", n: "plains"}
+        - {t: "e", n: "et"}
+        - {t: "des", n: "des"}
+        - {t: "casaus", n: "casaus"}
+        - {t: "asez,", n: "asez"}
+        - {t: "mès", n: "mes"}
+        - {t: "nulle", n: "nule"}
+        - {t: "cité", n: "cité"}
+        - {t: "ne", n: "ne"}
+        - {t: "chastiaus", n: "chastiaus"}
+        - {t: "ne", n: "ne"}
+        - {t: "avoient", n: "avoient"}
+        - {t: "encore", n: "encore"}
+        - {t: "pris,", n: "pris"}
+      - tokens:
+        - {t: "quant", n: "quant"}
+        - {t: "il", n: "il"}
+        - {t: "avint", n: "avint"}
+        - {t: "lor", n: "lor"}
+        - {t: "une", n: "une"}
+        - {t: "male", n: "male"}
+        - {t: "aventure", n: "aventure"}
+        - {t: "tel", n: "tele"}
+        - {t: "con", n: "com"}
+        - {t: "je", n: "je"}
+        - {t: "voz", n: "vos"}
+        - {t: "deviserai.", n: "deviserai"}
+      - tokens:
+        - {t: "Or", n: "or"}
+        - {t: "sachiés", n: "sachiez"}
+        - {t: "que", n: "que"}
+        - {t: "entre", n: "entre"}
+        - {t: "cesti", n: "cist"}
+        - {t: "deus", n: "deus"}
+        - {t: "baronz", n: "barons"}
+        - {t: "avoit", n: "avoit"}
+        - {t: "grant", n: "grant"}
+        - {t: "envie", n: "envie"}
+        - {t: "e", n: "et"}
+        - {t: "ne", n: "ne"}
+        - {t: "faisoit", n: "faisoit"}
+        - {t: "le", n: "le"}
+        - {t: "un", n: "un"}
+        - {t: "por", n: "por"}
+        - {t: "l’", n: "l’", glue: true}
+        - {t: "autre.", n: "autre"}
+      - tokens:
+        - {t: "Or", n: "or"}
+        - {t: "avent", n: "avint"}
+        - {t: "un", n: "un"}
+        - {t: "jor", n: "jor"}
+        - {t: "que", n: "que"}
+        - {t: "le", n: "le"}
+        - {t: "lune", n: "lune"}
+        - {t: "à", n: "a"}
+        - {t: "tramontaine", n: "tramontaine"}
+        - {t: "vent", n: "vente"}
+        - {t: "si", n: "si"}
+        - {t: "fort,", n: "fort"}
+        - {t: "qe", n: "que"}
+        - {t: "celz", n: "cels"}
+        - {t: "de", n: "de"}
+        - {t: "l’", n: "l’", glue: true}
+        - {t: "ost", n: "ost"}
+        - {t: "distrent", n: "distrent"}
+        - {t: "qe", n: "que"}
+        - {t: "se", n: "se"}
+        - {t: "il", n: "il"}
+        - {t: "ne", n: "ne"}
+        - {t: "se", n: "se"}
+        - {t: "partent", n: "partent"}
+        - {t: "qe", n: "que"}
+        - {t: "toutes", n: "toutes"}
+        - {t: "lor", n: "lor"}
+        - {t: "nés", n: "nes"}
+        - {t: "se", n: "se"}
+        - {t: "ronperont.", n: "romperont"}
+      - tokens:
+        - {t: "Et", n: "et"}
+        - {t: "adonc", n: "adonc"}
+        - {t: "montent", n: "montent"}
+        - {t: "tuit", n: "tuit"}
+        - {t: "en", n: "en"}
+        - {t: "lor", n: "lor"}
+        - {t: "nés", n: "nes"}
+        - {t: "e", n: "et"}
+        - {t: "se", n: "se"}
+        - {t: "partire", n: "partirent"}
+        - {t: "de", n: "de"}
+        - {t: "celle", n: "cele"}
+        - {t: "isle", n: "isle"}
+        - {t: "e", n: "et"}
+        - {t: "se", n: "se"}
+        - {t: "mistrent", n: "mistrent"}
+        - {t: "en", n: "en"}
+        - {t: "la", n: "la"}
+        - {t: "mer,", n: "mer"}
+      - tokens:
+        - {t: "et", n: "et"}
+        - {t: "voz", n: "vos"}
+        - {t: "di", n: "di"}
+        - {t: "qe", n: "que"}
+        - {t: "quant", n: "quant"}
+        - {t: "il", n: "il"}
+        - {t: "furent", n: "furent"}
+        - {t: "alés", n: "alez"}
+        - {t: "entor", n: "entor"}
+        - {t: "quatre", n: "quatre"}
+        - {t: "miles,", n: "miles"}
+        - {t: "adonc", n: "adonc"}
+        - {t: "treuvent", n: "truevent"}
+        - {t: "une", n: "une"}
+        - {t: "autre", n: "autre"}
+        - {t: "ysle", n: "isle"}
+        - {t: "ne", n: "ne"}
+        - {t: "trop", n: "trop"}
+        - {t: "grant,", n: "grant"}
+      - tokens:
+        - {t: "e", n: "et"}
+        - {t: "celz", n: "cels"}
+        - {t: "qe", n: "que"}
+        - {t: "postrent", n: "porent"}
+        - {t: "monter", n: "monter"}
+        - {t: "celle", n: "cele"}
+        - {t: "isle", n: "isle"}
+        - {t: "escanpent,", n: "eschapent"}
+        - {t: "mès", n: "mes"}
+        - {t: "celz", n: "cels"}
+        - {t: "qe", n: "que"}
+        - {t: "ne", n: "ne"}
+        - {t: "postrent", n: "porent"}
+        - {t: "monter", n: "monter"}
+        - {t: "ronperent", n: "romperent"}
+        - {t: "à", n: "a"}
+        - {t: "cel", n: "cel"}
+        - {t: "isle,", n: "isle"}
+      - tokens:
+        - {t: "e", n: "et"}
+        - {t: "ce", n: "ce"}
+        - {t: "furent", n: "furent"}
+        - {t: "bien", n: "bien"}
+        - {t: "trente", n: "trente"}
+        - {t: "mille", n: "mille"}
+        - {t: "homes", n: "homes"}
+        - {t: "qe", n: "que"}
+        - {t: "sus", n: "sus"}
+        - {t: "ceste", n: "ceste"}
+        - {t: "isle", n: "isle"}
+        - {t: "escanpent,", n: "eschapent"}
+      - tokens:
+        - {t: "e", n: "et"}
+        - {t: "cesti", n: "cist"}
+        - {t: "se", n: "se"}
+        - {t: "tenoient", n: "tenoient"}
+        - {t: "tuit", n: "tuit"}
+        - {t: "mors", n: "morz"}
+        - {t: "et", n: "et"}
+        - {t: "avoient", n: "avoient"}
+        - {t: "grant", n: "grant"}
+        - {t: "doulor", n: "dolor"}
+        - {t: "por", n: "por"}
+        - {t: "ce", n: "ce"}
+        - {t: "qu’", n: "qu’", glue: true}
+        - {t: "il", n: "il"}
+        - {t: "voient", n: "voient"}
+        - {t: "qu’", n: "qu’", glue: true}
+        - {t: "il", n: "il"}
+        - {t: "ne", n: "ne"}
+        - {t: "poient", n: "pooient"}
+        - {t: "escanper,", n: "eschaper"}
+      - tokens:
+        - {t: "e", n: "et"}
+        - {t: "veoent", n: "veoient"}
+        - {t: "qe", n: "que"}
+        - {t: "les", n: "les"}
+        - {t: "autres", n: "autres"}
+        - {t: "nés", n: "nes"}
+        - {t: "qe", n: "que"}
+        - {t: "escanpés", n: "eschapees"}
+        - {t: "estoient", n: "estoient"}
+        - {t: "s’", n: "s’", glue: true}
+        - {t: "en", n: "en"}
+        - {t: "aloient", n: "aloient"}
+        - {t: "ver", n: "vers"}
+        - {t: "lor", n: "lor"}
+        - {t: "contrée;", n: "contree"}
+      - tokens:
+        - {t: "et", n: "et"}
+        - {t: "elle", n: "eles"}
+        - {t: "ensi", n: "ensi"}
+        - {t: "font", n: "font"}
+        - {t: "qe", n: "que"}
+        - {t: "je", n: "je"}
+        - {t: "voz", n: "vos"}
+        - {t: "di", n: "di"}
+        - {t: "q’", n: "qu’", glue: true}
+        - {t: "ele", n: "eles"}
+        - {t: "najent", n: "nagent"}
+        - {t: "tant", n: "tant"}
+        - {t: "qu’", n: "qu’", glue: true}
+        - {t: "il", n: "il"}
+        - {t: "s’", n: "s’", glue: true}
+        - {t: "en", n: "en"}
+        - {t: "tornent", n: "tornent"}
+        - {t: "en", n: "en"}
+        - {t: "lor", n: "lor"}
+        - {t: "païs.", n: "païs"}
+      - tokens:
+        - {t: "Or", n: "or"}
+        - {t: "laison", n: "laissons"}
+        - {t: "de", n: "de"}
+        - {t: "cesti", n: "cist"}
+        - {t: "qe", n: "que"}
+        - {t: "s’", n: "s’", glue: true}
+        - {t: "en", n: "en"}
+        - {t: "sunt", n: "sont"}
+        - {t: "alés,", n: "alez"}
+        - {t: "et", n: "et"}
+        - {t: "noz", n: "nos"}
+        - {t: "retorneron", n: "retornerons"}
+        - {t: "à", n: "a"}
+        - {t: "celz", n: "cels"}
+        - {t: "de", n: "de"}
+        - {t: "l’", n: "l’", glue: true}
+        - {t: "isle", n: "isle"}
+        - {t: "qe", n: "que"}
+        - {t: "mort", n: "morz"}
+        - {t: "se", n: "se"}
+        - {t: "tenoient.", n: "tenoient"}

@@ -1,0 +1,82 @@
+work: luther-bible
+title: "Luther's German Bible: John 1:1-14 and Psalm 23"
+author: Martin Luther (1483–1546), translator
+language: de
+lang_name: Early New High German           # shown on the page and in the library instead of "German"
+prefix: lb                        # lb.<section>.<verse>[.<token>]; sections jn1 (John 1) and ps23 (Psalm 23)
+urn: urn:weft:de:luther-bible      # Weft-local identifier
+unit: section
+section_noun: passage
+written: {year: 1545, label: "Biblia: das ist: Die gantze Heilige Schrifft: Deudsch, printed at Wittenberg by Hans Lufft in 1545, the last edition printed in Luther's lifetime; the New Testament first appeared in September 1522, the complete Bible in 1534"}
+status: phase-0
+pilot: {sections: ["jn1", "ps23"]}
+edition:
+  id: luther1545
+  name: "Weft's edition of two passages of Biblia: das ist: Die gantze Heilige Schrifft: Deudsch. Auffs new zugericht (Wittenberg: Hans Lufft, 1545): John 1:1-14 and Psalm 23, in the transcription of the Zeno.org Digitale Bibliothek as published in the TextGrid Repository (textgrid:s71f.0), which Zeno states follows the 1545 edition by way of Hans Volz's edition (D. Martin Luther, Die gantze Heilige Schrifft Deudsch 1545, Munich: Rogner and Bernhard, 1972)"
+  format: weft-edition
+  file: edition.yaml
+  license: "Luther's text is public domain; the TextGrid Digitale Bibliothek transcription is CC BY 3.0 DE (attribution: TextGrid), as stated in its TEI header; Weft's line division, modern spellings, reading forms and annotation CC BY-SA 4.0"
+treebank: null                    # no open treebank for Early New High German Bible text; lemma, morphology and gloss by hand, draft
+schemes: [ecg1545, modern]        # default = East Central German of Wittenberg in the 1540s (approximate); then modern Standard German
+scheme_labels:
+  ecg1545: "East Central German of Wittenberg, 1540s: Luther's day (approximate)"
+  modern: "Modern Standard German"
+sources_extra:
+  - id: textgrid-luther1545
+    name: "Luther-Bibel 1545, TextGrid Repository, Digitale Bibliothek, TEI (textgrid:s71f.0, hdl:11858/00-1734-0000-0004-258A-D), revision 0 of 2012-01-30; the Zeno.org transcription of the 1545 Wittenberg Bible"
+    file: sources/textgrid-luther1545.xml
+    url: https://textgridlab.org/1.0/tgcrud-public/rest/textgrid:s71f.0/data
+    sha256: 9a3b7dbb98da3278ed4bed697a7d76e2a70c9e4ca4da3b2843350292e9c84835
+    license: "public domain text; TextGrid's annotated data CC BY 3.0 DE, attribution TextGrid (licence statement in the TEI header)"
+    license_url: https://creativecommons.org/licenses/by/3.0/de/
+  - id: kjv-psalms
+    name: "King James Version, Psalms, eBible.org USFM (eng-kjv), the member 20-PSAeng-kjv.usfm of the zip"
+    file: sources/kjv-psalms.usfm
+    url: https://ebible.org/Scriptures/eng-kjv_usfm.zip
+    extract: "PSA"
+    sha256: da64243944525513b329b9acf52d20b3a49cebd26e12577c1a85c2847d1bc90f   # of the extracted member
+    license: public-domain
+    license_url: https://ebible.org/find/details.php?id=eng-kjv
+translations:
+  - id: tyndale1534
+    translator: William Tyndale
+    year: 1534
+    form: "prose, the New Testament of 1534 (Antwerp), eBible.org USFM (engtnt), as used by Weft's edition of John (nt-john)"
+    partial: "John only; Tyndale did not translate the Psalms"
+    format: usfm
+    license: public-domain
+    license_url: https://ebible.org/find/details.php?id=engtnt
+    file: sources/tyndale1534-john.usfm
+    sha256: ff486531846bb16340bab129c7004aa92ba133d2c7fdb2b0f1519ce0b52128c5   # of the extracted member
+    url: https://ebible.org/Scriptures/engtnt_usfm.zip
+    extract: "JHN"
+  - id: coverdale1535
+    translator: Miles Coverdale
+    year: 1535
+    form: "prose, Biblia: The Bible, that is, the holy Scripture of the Olde and New Testament (1535), the Psalter, folio cccxxxix (339) as the reprint's running head gives it; text of Samuel Bagster's reprint, which keeps the 1535 spelling and folio numbers, dated 1847 ('second modern edition') by the Internet Archive item. Internet Archive OCR, corrected against the page image (see the file header)"
+    partial: "Psalm 23 only"
+    license: public-domain
+    license_url: https://archive.org/details/coverdale-miles-bible-1847-the-holy-scriptures-of-the-old-and-new-testament-with-the-apocripha
+    file: sources/coverdale1535-bagster.txt
+    url: "https://archive.org/download/coverdale-miles-bible-1847-the-holy-scriptures-of-the-old-and-new-testament-with-the-apocripha/Coverdale%20Miles%20Bible%201847%20The%20Holy%20Scriptures%20of%20the%20Old%20and%20New%20Testament%20with%20the%20Apocripha_djvu.txt"
+    sha256: 9b3e71a0a50b8be9bb8cf9c460931b26806b3d42dd99956ce195d35d659e48eb
+  - id: kjv1769
+    translator: King James Version
+    year: 1611
+    form: "prose, 1769 standard text, eBible.org USFM (eng-kjv); John from 73-JHNeng-kjv.usfm, Psalm 23 from 20-PSAeng-kjv.usfm (listed under sources_extra)"
+    format: usfm
+    license: public-domain
+    license_url: https://ebible.org/find/details.php?id=eng-kjv
+    file: sources/kjv-john.usfm
+    sha256: 2af0ac3b8cfab9740ab364ba0923425a92a959c89b74fbbdcea404b33fe27bf8   # of the extracted member
+    url: https://ebible.org/Scriptures/eng-kjv_usfm.zip
+    extract: "JHN"
+predicted_gaps:
+  - "the text is verified against the Zeno.org transcription as published by TextGrid, not against the page images of the 1545 print; the transcription prints long s as s and the superscript e of the Fraktur umlauts (uͤ) as ü, and its TEI header names the Weimar edition as its source while Zeno names Volz's edition of 1972"
+  - "the transcription marks John 1:1-2 and the first words of Psalm 23 as set in a different type (rend italic); the edition does not mark it"
+  - "the first scheme is a reconstruction of East Central German of the 1540s and is approximate; the values of the diphthongs, the extent of the lenis merger of p/b and t/d, the value of w and whether the region's unrounding of ü and ö reached a reading of Scripture are all uncertain; there is no description of Luther's own speech specific enough to model"
+  - "the first scheme is computed from the 1545 form of each word (o, or old_form of the print); vowel length is that of the modern word unless the old form shows otherwise"
+  - "Dauid is said with f in the first scheme, the German reading of Latin v; this is a judgment, not attested for this text"
+  - "no treebank; lemma, morphology and gloss by hand, draft"
+  - "translations: Tyndale 1534 and the King James text for John; Coverdale 1535 and the King James text for Psalm 23; the King James text is the 1769 standard text, not the 1611 printing; Psalm 23's title is taken from the KJV's \\d line"
+  - "the sense files are aligned by verse number by hand; weft align is not used because the line ids carry the section (lb.jn1.1), not the chapter"

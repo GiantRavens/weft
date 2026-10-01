@@ -1,0 +1,77 @@
+work: nietzsche
+title: "Nietzsche: The madman and Zarathustra's descent"
+author: Friedrich Nietzsche (1844–1900)
+language: de
+lang_name: German of the 1880s           # shown on the page and in the library instead of "German"
+prefix: nz                        # nz.<section>.<line>[.<token>]; sections fw125 (1882) and za1 (1883)
+urn: urn:weft:de:nietzsche         # Weft-local identifier
+unit: section
+section_noun: passage
+written: {year: 1882, label: "Die fröhliche Wissenschaft was printed at Chemnitz by Ernst Schmeitzner in 1882; the first part of Also sprach Zarathustra followed from the same publisher in 1883"}
+status: phase-0
+pilot: {sections: ["fw125", "za1"]}
+edition:
+  id: nietzsche-firsteds
+  name: "Weft's edition of two passages in the spelling of their first editions: (1) Die fröhliche Wissenschaft (Chemnitz: Ernst Schmeitzner, 1882), §125, Der tolle Mensch, pages 153-155, read from the scan of the Zentralbibliothek Zürich copy on e-rara and checked against its OCR; (2) Also sprach Zarathustra, [first part] (Chemnitz: Ernst Schmeitzner, 1883), Zarathustra's Vorrede, section 1, pages 5-6, as transcribed by the Deutsches Textarchiv (nietzsche_zarathustra01_1883)"
+  format: weft-edition
+  file: edition.yaml
+  license: "Nietzsche's texts are public domain; the e-rara scan and OCR are marked Public Domain Mark; the Deutsches Textarchiv transcription is CC BY-SA 4.0; Weft's transcription, line division, modern spellings and annotation CC BY-SA 4.0"
+treebank: null                    # no treebank for 19th-century German prose of this kind; lemma, morphology and gloss by hand, draft
+schemes: [northern, modern]       # default = educated northern German before the stage norm, here the 1880s (approximate)
+scheme_labels:
+  northern: "Educated German of the 1880s: Nietzsche's day (approximate)"
+  modern: "Modern Standard German"
+sources_extra:
+  - id: erara-fw1882
+    name: "Friedrich Nietzsche, Die fröhliche Wissenschaft (Chemnitz: Schmeitzner, 1882), Zentralbibliothek Zürich, 43.271, e-rara (doi:10.3931/e-rara-72849): full-text OCR, plain text"
+    file: sources/erara-fw1882.txt
+    url: https://www.e-rara.ch/download/ftpack/plain/20144693
+    sha256: 4b353c082c2f79e17edfa9cc4ac8b90dc6d341e3a43dc7f5c70a53f069043b47
+    license: public domain (Public Domain Mark 1.0, as stated by e-rara)
+    license_url: https://creativecommons.org/publicdomain/mark/1.0/
+  - id: dta-za1883
+    name: "Friedrich Nietzsche, Also sprach Zarathustra. Ein Buch für Alle und Keinen [Teil 1] (Chemnitz: Schmeitzner, 1883), Deutsches Textarchiv TEI (nietzsche_zarathustra01_1883), as captured by the Internet Archive on 2024-08-03 (the DTA site now serves downloads only to browsers)"
+    file: sources/dta-za1883.xml
+    url: "https://web.archive.org/web/20240803174743id_/https://www.deutschestextarchiv.de/book/download_xml/nietzsche_zarathustra01_1883"
+    sha256: 6feb1f17390d3f5550334efa7abd1f4de631ab5905b600b79da77b5c2891ffc5
+    license: "public domain text; DTA transcription CC BY-SA 4.0 (licence statement in the TEI header)"
+    license_url: https://creativecommons.org/licenses/by-sa/4.0/
+translations:
+  - id: common1910
+    translator: Thomas Common
+    year: 1910
+    form: "prose, The Joyful Wisdom (\"La Gaya Scienza\"), translated by Thomas Common, with poetry rendered by Paul V. Cohn and Maude D. Petre, volume 10 of The Complete Works of Friedrich Nietzsche, ed. Oscar Levy (Edinburgh and London: T. N. Foulis, 1910); Project Gutenberg #52881"
+    partial: "§125 only"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/common-pg52881.txt
+    url: https://www.gutenberg.org/cache/epub/52881/pg52881.txt
+    sha256: a8bd1dff6679eebef87ab4ff870888bfee4a31651ad5cb655e80bc306e9ae5db
+  - id: common1909
+    translator: Thomas Common
+    year: 1909
+    form: "prose, Thus Spake Zarathustra: A Book for All and None, volume 11 of The Complete Works of Friedrich Nietzsche, ed. Oscar Levy (1909); Project Gutenberg #1998"
+    partial: "the Vorrede, section 1, only"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/common-pg1998.txt
+    url: https://www.gutenberg.org/cache/epub/1998/pg1998.txt
+    sha256: b15af49b26b9329c52b8de3567d047312360d9afde964182e70ce260e125a72c
+  - id: tille1896
+    translator: Alexander Tille
+    year: 1896
+    form: "prose, Thus Spake Zarathustra: A Book for All and None (New York and London: Macmillan, 1896), volume 8 of The Works of Friedrich Nietzsche, ed. Alexander Tille; the first English translation. Internet Archive OCR (thusspakezarathu00nietiala), corrected for line-end hyphens and spacing (see the file header)"
+    partial: "the Vorrede, section 1, only"
+    license: public-domain
+    license_url: https://archive.org/details/thusspakezarathu00nietiala
+    file: sources/tille1896.txt
+    url: https://archive.org/download/thusspakezarathu00nietiala/thusspakezarathu00nietiala_djvu.txt
+    sha256: 3fabf3f35f4156e21e73ee51903cdd361d8c35e9ac7cb7fa5dfef00cd983b9cb
+predicted_gaps:
+  - "§125 is read from the scan of the 1882 print and checked against the e-rara OCR, not against a proofread transcription; one token (um, line 24) carries the OCR's reading because the OCR reads a speck on the page as a full stop"
+  - "the 1882 print sets emphasis by letter-spacing (Der tolle Mensch, Wir haben ihn getödtet, und doch haben sie dieselbe gethan); the edition does not mark it"
+  - "the Vorrede is verified against the Deutsches Textarchiv transcription of the 1883 print, fetched from an Internet Archive capture because the DTA site no longer serves plain downloads"
+  - "the pronunciation of educated German in the 1880s is reconstructed from the descriptions of northern educated speech before the stage norm of 1898; Nietzsche's own speech (he grew up in the Prussian province of Saxony and was schooled at Schulpforta) is not described closely enough to model, and its regional features are not modelled; the value of postvocalic r and of long ä is uncertain"
+  - "the sound is computed from the modern spelling of each word form; the spellings todt, That and gieng carry no sound difference from tot, Tat and ging, but diess may stand for a short vowel where modern dies has a long one"
+  - "no treebank; lemma, morphology and gloss by hand, draft"
+  - "one public-domain English translation of §125 (Common, 1910); two of the Vorrede (Tille, 1896; Common, 1909)"

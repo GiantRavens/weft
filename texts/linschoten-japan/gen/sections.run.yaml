@@ -1,0 +1,22 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '26'
+counts:
+  lines: 22
+  tokens: 426
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- the edition is the 1910 reprint of the 1596 text, not the 1596 print itself; the 1596 gothic type was not checked letter by letter for this passage
+- 'the edition is checked against OCR, not a proofread transcription: the scan was read by hand, and each place where the OCR misreads the scan is declared per token (ocr) and listed in edition.yaml'
+- the chapter is long; this edition covers its opening (the land, food, houses, the silver trade, the people's skill and courtesy) and stops before the passages on punishment, the origin story, customs,
+  government, religion and the Jesuits, which the notes summarize from the 1598 English
+- the pronunciation of Holland about 1596 is reconstructed from the spelling of the period and the grammarians; the value of ij (diphthong or still a long i), the n of -en, and the stress of French and
+  Latin loans are uncertain
+- the sound is computed from the modern spelling of each word form; distinctions the modern spelling does not keep (sharp-long and soft-long ee and oo) are not shown
+- Nangasache is read with ch as in Dutch [x]; the Portuguese forms (Nangasaque) suggest [k] may have been meant
+- no treebank; lemma, morphology and gloss by hand, draft
+- 'one English translation only: the 1598 version is the only public-domain English one; it adds words to the Dutch, which Burnell marks with square brackets'

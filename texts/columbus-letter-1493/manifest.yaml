@@ -1,0 +1,62 @@
+work: columbus-letter-1493
+title: Letter announcing the first voyage (Carta a Luis de Santángel), opening
+author: Christopher Columbus (Cristóbal Colón, 1451–1506)
+language: es
+prefix: col                          # col.<section>.<line>[.<token>]
+urn: urn:weft:es:colon.carta1493     # Weft-local identifier
+unit: section
+section_noun: passage
+written: {year: 1493, label: "dated on the caravel off the Canary Islands, 15 February 1493, with a postscript at Lisbon, 14 March; printed at Barcelona, probably by Pere Posa, by early April 1493"}
+status: phase-0
+pilot: {sections: ["1", "2", "3"]}
+edition:
+  id: barcelona1493
+  name: "The Spanish letter as printed at Barcelona in 1493 (folio, the first printing; unique copy in the New York Public Library), in the transcription on Spanish Wikisource, which keeps the printed letters and adds modern accents"
+  format: weft-edition
+  file: edition.yaml
+  license: the text is public domain; Wikisource transcription CC BY-SA 4.0; Weft line division and modern spellings CC BY-SA 4.0
+treebank: null                       # no treebank; lemma, morphology and gloss by hand, draft
+schemes: [c1492, modern]             # default = Castilian of about 1492 (approximate)
+sources_extra:
+  - id: barcelona1493-wikisource
+    name: "Carta de Colón al escribano de ración (impreso), Spanish Wikisource revision 888747 (30 January 2018), a transcription of the Barcelona printing of 1493"
+    file: sources/barcelona1493-wikisource.txt
+    url: "https://es.wikisource.org/w/index.php?title=Carta_de_Col%C3%B3n_al_escribano_de_raci%C3%B3n_(impreso)&oldid=888747&action=raw"
+    sha256: 56433e54bf4ec20fc8708cfc8fa970ae8bd8e7f388d503f88e65c1ce0922434b
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0/
+  - id: simancas-wikisource
+    name: "Carta de Colón al escribano de ración (manuscrito), Spanish Wikisource revision 1559394 (17 June 2025): the manuscript copy in the Archivo General de Simancas, in the transcription of Francisco Morales Padrón, Primeras cartas sobre América (Sevilla, 1990), as the page states. Used in the notes for comparison only"
+    file: sources/simancas-wikisource.txt
+    url: "https://es.wikisource.org/w/index.php?title=Carta_de_Col%C3%B3n_al_escribano_de_raci%C3%B3n_(manuscrito)&oldid=1559394&action=raw"
+    sha256: 5a91611cf43e930b3d6d474884766c531978321c6718670ab4f8a39c5901cb8a
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0/
+translations:
+  - id: major1870
+    translator: R. H. Major
+    year: 1870
+    form: "prose; Select Letters of Christopher Columbus, second edition (London: Hakluyt Society, 1870), 'A Letter sent by Columbus to [Luis de Santangel]'. Major translates the Spanish text of the Ambrosian printing (the second Spanish edition, quarto, undated), not the Barcelona one; his first edition (1847) translated the Latin letter instead. Project Gutenberg #77820"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/major1870.txt
+    url: https://www.gutenberg.org/cache/epub/77820/pg77820.txt
+    sha256: 338059ebd3af242322a2acb7602bdcb905beccb0a00a2724b48e9655dcd5c4ee
+  - id: quaritch1893
+    translator: "Quaritch translation, revised by E. G. Bourne"
+    year: 1893
+    form: "prose; from The Spanish Letter of Columbus to Luis de Sant' Angel (London: Quaritch, 1893), which translates the Barcelona printing, as reprinted 'with a few minor changes in the wording' in J. E. Olson and E. G. Bourne, The Northmen, Columbus and Cabot, 985-1503 (New York, 1906), Original Narratives of Early American History. Project Gutenberg #18571"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/bourne1906.txt
+    url: https://www.gutenberg.org/cache/epub/18571/pg18571.txt
+    sha256: b543b4d9fd9f9e4f0fb40edd45b3ed5c8c0d7aa5738fbd6395f6a9a2ed3bcf77
+predicted_gaps:
+  - "the Wikisource transcription adds modern accents, punctuation and capitals to the printed letters and does not name the edition it was taken from (its talk page credits a now-defunct web page); it has not been collated against the facsimile of the Barcelona print"
+  - "three passages are taken, not one continuous text: the opening (sections 1 and 2) and the description of Española and its people (section 3); the journey along Juana and the sighting of Española between them are omitted"
+  - "the Castilian of about 1492 is reconstructed from Nebrija and the historical grammars; the value of initial h from Latin f, the b and v distinction, and the exact quality of the sibilants are uncertain"
+  - "Columbus's own speech (Genoese by birth, with Portuguese features in his Spanish) is not modelled; the c1492 scheme models a Castilian reader of the print"
+  - "print-sibilant-differs: the print writes single s in words that the Spanish of the period spelled and said with ss (pasé, posesión, así, gruesas); the lexicon follows the period form"
+  - "stress-differs-between-schemes: Catayo (the print's form) and Catay (the modern name) are different forms, so the sensor is right to flag the one token; no lexicon error"
+  - "no treebank; lemma, morphology and gloss by hand, draft"
+  - "Major translates the Ambrosian text, which differs from the Barcelona print in two places in these lines (thirty-three days, not twenty; the fourth island Ysabella, not isla Bella); the notes say where"

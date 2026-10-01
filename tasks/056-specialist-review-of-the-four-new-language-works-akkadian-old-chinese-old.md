@@ -10,7 +10,7 @@ tags:
   - tamil
   - persian
 created_at: 2026-09-30T14:52:43.29374-05:00
-updated_at: 2026-10-01T04:40:09.026233-05:00
+updated_at: 2026-10-01T06:35:57.472528-05:00
 ---
 
 # Specialist review of the four new-language works (Akkadian, Old Chinese, Old Tamil, Classical Persian)
@@ -22,6 +22,9 @@ updated_at: 2026-10-01T04:40:09.026233-05:00
 - 2026-10-01T01:00:36Z: Renaissance works (2026-09-30): Italian e/o quality carried back from modern Tuscan; gorgia omitted; pentersi, sieno, lione readings. Kennett attribution of Gutenberg #30201 unconfirmed; Utopia suibus vs ouibus (check the 1518 scan) and its base text; Tudor and Low Countries vowel values. Montaigne: visue/vifue; oi [wɛ]; -er infinitive r in liaison; final consonants in pause. Licensing to confirm: Petrarch text is Contini 1964 via Liber Liber (Italian 20-year critical-edition term); Ricci 1903 translator's death date unknown (PD in the US).
 - 2026-10-01T09:05:35Z: Dante (2026-10-01): open/closed e/o in queta, vegna, veltro, feltro, pianeta; -ai endings tronco or not; hand dialefe/synaeresis at 11, 104, 113, 130; desse/venisse/tremesse rhyme (44-48) and manuscript readings; treebank lemma choices (diserta, ché ADV, li as il at 136, ritorni person) as UD Italian-Old is under revision. Bashō: ye for え/ゑ in 1680s Edo; -au merger; Azuma Nikki variant and 1680 date from standard chronology, unverified; 立石亭 misprint; glosses of けり and subject の.
 - 2026-10-01T09:40:09Z: Expansions (2026-10-01): Genesis glosses (firmament, luminaries, creature living, ceased for shavat), 2:2 'sixth day' witnesses and LXX 1:8 'it was good' from memory; John 1:18 theos/huios witnesses and 1 Cor 13:3 kauthēsomai/kauchēsōmai witnesses from memory; Iliad 1.18 θεοί synizesis, 1.39 χαρίεντʼ case, 1.45 and 1.51 lengthenings, 1.20 λύσαιτε vs λῦσαί τε; Marcus Leopold deletions not printed (2.2 books), 2.14 Long's text differs, 2.12 Casaubon 'diffused'; Hávamál 33.4 'str' for sitr, 26.3 vá/vrá, 57.6 dul, 66.6 líð, 70.1 emendation, 73 and 80 fragments.
+- 2026-10-01T10:23:16Z: Voyages (2026-10-01): Polo 'le lune' for a wind, 'à no Abatan', 'asez hi nia', 'maintes' through damaged type, Yule's identifications, when Columbus read his Polo; Columbus transcription accents and supplied letters unverified against the facsimile, 'ueinte' vs thirty-three days, f as [h], island identifications, Quaritch translator; Linschoten ij [ei] in 1596, -en n, Nangasache ch, Kern 1910 not collated with 1596 gothic print.
+- 2026-10-01T10:55:28Z: Theses (2026-10-01): German-manner Latin v as [f] and s- as [z] inferred from German letter values; vowel length rule; Wikisource text is a composite (Basel 1517 spelling to ~thesis 29, WA 1 after), collated only to thesis 12; poenitentia glossed 'penitence'; verify Rörer note date, Adam Petri as Basel printer, early-1518 Nuremberg German translation, WA Br 1 no. 48; Pape (56) and Basilicam (51) readings; medieval lemmas against Du Cange/Niermeyer.
+- 2026-10-01T11:35:57Z: German works (2026-10-01): g after vowels fricative?, uvular r spread, long ä/e merger; one scheme for Kant and Nietzsche; KpV 'zunehmenden'; Kaliningrad plaque location; Richardson 1798 OCR corrections; Luther 1545: TextGrid/Zeno text not checked against page images (Volz 1972 vs Weimar), wonet/wandert/habens readings, jm/dasselbige referent, ecg1545 diphthongs and lenis stops and omitted unrounding, Table Talk citation, Lufft copy count.
 
 ## Log
 

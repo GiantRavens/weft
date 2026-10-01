@@ -1,0 +1,24 @@
+run:
+  weft: 0.1.0
+  sections:
+  - jn1
+  - ps23
+counts:
+  lines: 20
+  tokens: 312
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- the text is verified against the Zeno.org transcription as published by TextGrid, not against the page images of the 1545 print; the transcription prints long s as s and the superscript e of the Fraktur
+  umlauts (uͤ) as ü, and its TEI header names the Weimar edition as its source while Zeno names Volz's edition of 1972
+- the transcription marks John 1:1-2 and the first words of Psalm 23 as set in a different type (rend italic); the edition does not mark it
+- the first scheme is a reconstruction of East Central German of the 1540s and is approximate; the values of the diphthongs, the extent of the lenis merger of p/b and t/d, the value of w and whether the
+  region's unrounding of ü and ö reached a reading of Scripture are all uncertain; there is no description of Luther's own speech specific enough to model
+- the first scheme is computed from the 1545 form of each word (o, or old_form of the print); vowel length is that of the modern word unless the old form shows otherwise
+- Dauid is said with f in the first scheme, the German reading of Latin v; this is a judgment, not attested for this text
+- no treebank; lemma, morphology and gloss by hand, draft
+- 'translations: Tyndale 1534 and the King James text for John; Coverdale 1535 and the King James text for Psalm 23; the King James text is the 1769 standard text, not the 1611 printing; Psalm 23''s title
+  is taken from the KJV''s \d line'
+- the sense files are aligned by verse number by hand; weft align is not used because the line ids carry the section (lb.jn1.1), not the chapter

@@ -76,7 +76,7 @@ server, so a page or the whole folder can be sent as an attachment.
 
 ## Status
 
-Thirty-two works built across fourteen languages, oldest first in the library:
+Thirty-nine works built across nineteen languages, oldest first in the library:
 
 | Work | Passage | Schemes | Translations |
 |---|---|---|---|
@@ -101,15 +101,22 @@ Thirty-two works built across fourteen languages, oldest first in the library:
 | Runic inscriptions: Kylver, Gallehus, Rök | 3 inscriptions | Proto-Norse, Old East Norse | Stephens 1884; Weft editorial reading |
 | Beowulf | 1-11 | late West Saxon | Gummere 1910, Morris and Wyatt 1895 |
 | Rubaiyat, quatrains attributed to Omar Khayyam | 6 quatrains | Early New Persian (about 1100), modern Persian | FitzGerald 1889, Heron-Allen 1899 |
+| Marco Polo, on Cipangu (Japan) | the whole chapter, F text | Franco-Italian: French of about 1300, and an Italian reader's reading | Yule 1903, Marsden 1818 |
 | Magna Carta | chapters 39-40 | Anglo-Latin (England, 1215), classical | McKechnie 1905, Bell 1910 |
 | Dante, Inferno 1 | the whole canto, 136 lines | Florentine (about 1307), modern Italian; lemma and form from UD Italian-Old | Longfellow 1867, Cary 1814 |
+| Columbus, letter of 1493 | the landfall and first description | Castilian of about 1492, modern Spanish | Major 1870, Quaritch 1893 |
 | Petrarch, Canzoniere 1 | sonnet, 14 lines | Florentine (about 1350), modern Italian | Nott in Bohn 1859, Higginson 1903; Auslander 1931 cited |
 | Pico della Mirandola, Oration on the Dignity of Man | opening and God's speech to Adam | Italian humanist Latin (1480s), classical | Greswell 1805 (partial), Weft editorial; Forbes 1948 and Caponigri 1956 cited |
 | Erasmus, The Praise of Folly | Folly's opening | Low Countries Latin (about 1500), classical | Wilson 1668, Kennett 1683 |
 | Machiavelli, The Prince | chapters 17-18 | Florentine (about 1513), modern Italian | Marriott 1908, Ricci 1903 |
+| Luther's German Bible (1545) | John 1:1-14, Psalm 23 | East Central German of the 1540s, modern German | Tyndale 1534, Coverdale 1535, King James |
+| Luther, the Ninety-five Theses | all 95, with the preamble | Latin as read in Saxony (about 1517), ecclesiastical, classical | Works of Martin Luther (Philadelphia, 1915) |
 | More, Utopia | Book 1, the sheep that devour men | Tudor English Latin (about 1516), classical | Robinson 1551, Burnet 1684 |
+| Linschoten, Itinerario: Japan | chapter 26, opening | Holland Dutch of about 1596, modern Dutch | Phillip 1598 |
 | Montaigne, Essais | To the Reader; I.19 opening | French of about 1580, modern French | Florio 1603, Cotton 1685, Hazlitt 1877 |
+| Kant: What is Enlightenment? and the starry heavens | 1784 essay, opening; 1788 Critique of Practical Reason, conclusion | northern German before 1898, modern German | Richardson 1798, Abbott |
 | Science in Latin: Descartes, Newton | cogito (1644); laws of motion (1687) | as first read (French, English manner), classical | Veitch 1853, Motte 1729 |
+| Nietzsche: the madman and Zarathustra's descent | Gay Science 125 (1882); Zarathustra, prologue 1 (1883) | northern German before 1898, modern German | Common 1909 and 1910, Tille 1896 |
 | Haiku of Bashō | 9 haiku, 1680-1694 | Edo (1680s-90s), modern | Chamberlain 1902, Aston 1899, Hearn 1898 and 1900, Noguchi 1914; Yuasa 1966 cited |
 | Grettis saga | chapter 14, sentences 1-9 | modern Icelandic, Old Norse | Morris and Magnússon 1869, Hight 1914 |
 

@@ -357,7 +357,7 @@ def test_reference_translation_is_cited_not_inlined(tmp_path):
 
 def test_renaissance_works_check():
     """Italian, Renaissance Latin and Middle French works pass their checks."""
-    for work in ("dante-inferno-1", "petrarch-canzoniere-1", "pico-oration", "erasmus-praise-of-folly", "machiavelli-prince",
+    for work in ("dante-inferno-1", "petrarch-canzoniere-1", "pico-oration", "luther-95-theses", "erasmus-praise-of-folly", "machiavelli-prince",
                  "more-utopia", "montaigne-essais"):
         r = check.run(REPO, work)
         assert r["ok"], (work, r["problems"])
@@ -389,3 +389,17 @@ def test_glaux_works_keep_treebank_lemmas():
         toks = [t for l in g["lines"] for t in l["tokens"]]
         with_lemma = sum(1 for t in toks if t.get("lemma"))
         assert with_lemma / len(toks) > 0.98, (work, with_lemma, len(toks))
+
+
+def test_voyages_check():
+    """The voyages strand: Spanish, Franco-Italian and early modern Dutch works pass their checks."""
+    for work in ("polo-cipangu", "columbus-letter-1493", "linschoten-japan"):
+        r = check.run(REPO, work)
+        assert r["ok"], (work, r["problems"])
+
+
+def test_german_works_check():
+    """Kant and Nietzsche (German, first editions) pass their checks."""
+    for work in ("kant", "nietzsche", "luther-bible"):
+        r = check.run(REPO, work)
+        assert r["ok"], (work, r["problems"])

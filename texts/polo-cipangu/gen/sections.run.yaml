@@ -1,0 +1,24 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '159'
+counts:
+  lines: 34
+  tokens: 618
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- the language is Franco-Italian, French written by Italians, not the Old French of France; the page's language label (Old French, from the registered code fro) is the nearest available. The title, the
+  scheme labels and the notes say Franco-Italian
+- no clean open transcription of the chapter exists; Weft's transcription is checked against uncorrected OCR through 39 declared corrections read from the scan, not against a proofread text
+- the 1824 print is itself a transcription of the manuscript; its readings (le lune for a wind, à no for à non, les que) are kept as printed, and the manuscript was not consulted
+- the type is damaged at maintes (line 15); the reading rests on the visible letters and the sense
+- the first scheme is French of about 1300 in the Paris norm and is approximate; the date by which final consonants fell silent before consonants, and whether ch and j were still affricates, are the least
+  certain points
+- the second scheme is a hypothesis built from the letter values of Italian spelling; no source of the period describes how Italians read Franco-Italian aloud
+- the normalized central-French spelling in n is Weft's editorial choice and normalizes letters only
+- no treebank; lemma, morphology and gloss by hand, draft; lemmas follow the headwords of Godefroy's and Tobler-Lommatzsch's dictionaries as far as the forms allow
+- Yule's text is a composite of several versions, and Marsden translates Ramusio's Italian; neither translates the F text as printed here
+- Marsden's translation is transcribed from the page images; its OCR text, pinned for provenance, is not usable for this chapter

@@ -1,0 +1,38 @@
+# Miles Coverdale's Bible of 1535, Psalm 23 (The xxiij. A psalme of Dauid.), from Samuel Bagster's
+# reprint, which keeps the 1535 spelling and folio numbers (Internet Archive item
+# coverdale-miles-bible-1847-..., leaf 550; the running head reads Fo. cccxxxix). The reprint keeps the 1535 spelling and its abbreviations: ā for an (ād,
+# and), ō for om (cōforte, comforte), and a Tironian sign for and, given here as &. The 1535 Psalter has
+# no verse numbers; the text is divided here at the verse divisions of the King James text.
+# The Internet Archive OCR was corrected against the page image; corrections, all of OCR errors:
+#   "HE LORDE is my shepherde,” I can / T wante" -> "THE LORDE is my shepherde, I can wante" (the
+#   two-line initial T read apart; the superscript reference mark m dropped); "mẹ" -> "me"; "q", "¢"
+#   -> "&" (the Tironian sign, four times); "”Though" -> "Though" (the reference mark n dropped);
+#   "coforte" -> "cōforte" (the macron, visible on the page). The marginal references (Iohn 10, 1 Pet 2)
+#   are not kept.
+translation: coverdale1535
+aligned_by: hand, by verse number
+spans:
+- lines:
+  - lb.ps23.1
+  - lb.ps23.1
+  text: A psalme of Dauid. THE LORDE is my shepherde, I can wante nothinge.
+- lines:
+  - lb.ps23.2
+  - lb.ps23.2
+  text: He fedeth me in a grene pasture, ād ledeth me to a fresh water.
+- lines:
+  - lb.ps23.3
+  - lb.ps23.3
+  text: He quickeneth my soule, & bringeth me forth in the waye of rightuousnes for his names sake.
+- lines:
+  - lb.ps23.4
+  - lb.ps23.4
+  text: 'Though I shulde walke now in the valley of the shadowe of death, yet I feare no euell, for thou art with me: thy staffe & thy shepehoke cōforte me.'
+- lines:
+  - lb.ps23.5
+  - lb.ps23.5
+  text: 'Thou preparest a table before me agaynst mine enemies: thou anoyntest my heade with oyle, & fyllest my cuppe full.'
+- lines:
+  - lb.ps23.6
+  - lb.ps23.6
+  text: Oh let thy louynge kyndnes & mercy folowe me all the dayes off my life, that I maye dwell in the house off the LORDE for euer.

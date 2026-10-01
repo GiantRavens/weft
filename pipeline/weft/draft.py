@@ -14,13 +14,13 @@ from pathlib import Path
 
 import yaml
 
-from . import __version__, akkadian, chinese, dutch, french, greek, hebrew, italian, japanese, latin, norse, oldenglish, oldfrench, persian, runic, sanskrit, spanish, tamil, treebank
+from . import __version__, akkadian, chinese, dutch, egyptian, french, german, greek, hebrew, italian, japanese, latin, norse, oldenglish, oldfrench, persian, runic, sanskrit, spanish, sumerian, tamil, treebank
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
 INDECLINABLE = set("dcgriebz")   # b: GLAUx coordinating conjunction
 PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebrew, "lzh": chinese, "runic": runic, "ja": japanese, "san": sanskrit,
         "akk": akkadian, "fa": persian, "ta": tamil, "it": italian, "fr": french,
-        "es": spanish, "nl": dutch, "fro": oldfrench}
+        "es": spanish, "nl": dutch, "fro": oldfrench, "de": german, "egy": egyptian, "sux": sumerian}
 NORMALIZE = {"heyne-to-macron": oldenglish.heyne_to_macron}
 LEAD = re.compile(r"^([(\[“«‹]+|[-–—]\u00a0)")
 TRAIL = re.compile(r"((?:[,.·;:!?)\]”»›\u0387\u037e]|\u00a0[-–—])+)$")

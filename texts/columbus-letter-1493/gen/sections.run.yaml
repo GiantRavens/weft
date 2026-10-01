@@ -1,0 +1,36 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+  - '2'
+  - '3'
+counts:
+  lines: 23
+  tokens: 346
+failures:
+  print-sibilant-differs: 5
+  stress-differs-between-schemes: 1
+samples:
+  print-sibilant-differs:
+  - 1.2 pasé / passé
+  - 1.5 posesión / possessión
+  - 1.9 así / assí
+  - 3.2 gruesas / gruessas
+  - 3.9 así / assí
+  stress-differs-between-schemes:
+  - 2.2 Catayo. kaˈta.ʝo / kaˈtaj
+failure_rate:
+  print-sibilant-differs: 0.014
+  stress-differs-between-schemes: 0.003
+shift_left: []
+predicted_gaps:
+- the Wikisource transcription adds modern accents, punctuation and capitals to the printed letters and does not name the edition it was taken from (its talk page credits a now-defunct web page); it has
+  not been collated against the facsimile of the Barcelona print
+- 'three passages are taken, not one continuous text: the opening (sections 1 and 2) and the description of Española and its people (section 3); the journey along Juana and the sighting of Española between
+  them are omitted'
+- the Castilian of about 1492 is reconstructed from Nebrija and the historical grammars; the value of initial h from Latin f, the b and v distinction, and the exact quality of the sibilants are uncertain
+- Columbus's own speech (Genoese by birth, with Portuguese features in his Spanish) is not modelled; the c1492 scheme models a Castilian reader of the print
+- 'print-sibilant-differs: the print writes single s in words that the Spanish of the period spelled and said with ss (pasé, posesión, así, gruesas); the lexicon follows the period form'
+- 'stress-differs-between-schemes: Catayo (the print''s form) and Catay (the modern name) are different forms, so the sensor is right to flag the one token; no lexicon error'
+- no treebank; lemma, morphology and gloss by hand, draft
+- Major translates the Ambrosian text, which differs from the Barcelona print in two places in these lines (thirty-three days, not twenty; the fourth island Ysabella, not isla Bella); the notes say where

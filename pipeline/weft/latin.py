@@ -627,3 +627,147 @@ KEY["italian-humanist"] = [
 SCHEME_LABELS["low-countries"] = "As first read: Latin in the Low Countries around 1500 (approximate)"
 SCHEME_LABELS["tudor-english"] = "As first read: Latin in England around 1516 (approximate)"
 SCHEME_LABELS["italian-humanist"] = "As first read: Latin in northern Italy in the 1480s (approximate)"
+
+
+# ---------------------------------------------------------------- German reading, about 1517
+# Latin as read in Saxony around 1517 (Luther at Wittenberg). Added as its own scheme, after the
+# humanist ones, so that no existing scheme changes. The evidence is indirect: the later German
+# school pronunciation of Latin (which kept c = ts, qu = kv, hard g, ti = tsi into the 1800s), the
+# sound system of Early New High German (open-syllable lengthening, final devoicing, z = ts, the
+# letter v = f), and humanist complaints about German habits of reading, such as Erasmus's in
+# De recta pronuntiatione (1528). No description of Luther's own Latin survives. Approximate.
+#
+#   german-humanist   stressed vowels in open syllables long, all others short (the German
+#                     lengthening rule); ae and oe = long e; c before e, i, y, ae, oe = ts, so sc
+#                     there = sts; g always hard; qu = kv; consonantal u/v = f (the weakest point:
+#                     v or w is also possible); z = ts; ti before a vowel = tsi; s before a vowel at
+#                     the start of a word or between vowels = z; final b, d, g devoiced to p, t, k;
+#                     h sounded; ch = k, ph = f, th = t. Stress by the classical penultimate rule.
+#
+# Abbreviations in early prints (.i. for id est, S. for sacrae, R. P. for reverendo patre) are read
+# through the quantity table. A work may key the printed form with its punctuation or capital
+# (".i", "S"); this lookup applies only when such a key exists, so works without one are unchanged.
+
+_DE_LONG = {"a": ("aː", "aa"), "e": ("eː", "ay"), "i": ("iː", "ee"), "y": ("yː", "üü"), "o": ("oː", "oh"),
+            "u": ("uː", "oo"), "ae": ("eː", "ay"), "oe": ("eː", "ay"), "au": ("au", "ow")}
+_DE_SHORT = {"a": ("a", "a"), "e": ("ɛ", "e"), "i": ("ɪ", "i"), "y": ("ʏ", "ü"), "o": ("ɔ", "o"),
+             "u": ("ʊ", "u"), "ae": ("eː", "ay"), "oe": ("eː", "ay"), "au": ("au", "ow")}
+_DE_DEVOICE = {"b": ("p", "p"), "d": ("t", "t"), "g": ("k", "k")}
+
+
+def _german(syls: list[Syl], stress: int) -> list[tuple[str, str]]:
+    """(ipa, respell) per syllable for the German reading of about 1517."""
+    flat: list[tuple[int, Seg]] = []
+    for n, s in enumerate(syls):
+        for seg in s.onset + [s.nucleus] + s.coda:
+            flat.append((n, seg))
+    ipa = [""] * len(syls)
+    sp = [""] * len(syls)
+
+    def front(seg: Seg | None) -> bool:
+        return seg is not None and seg.vowel and (seg.text[0] in "eiy" or seg.text in ("ae", "oe"))
+
+    for k, (n, seg) in enumerate(flat):
+        nxt = flat[k + 1][1] if k + 1 < len(flat) else None
+        nxt2 = flat[k + 2][1] if k + 2 < len(flat) else None
+        prev = flat[k - 1][1] if k > 0 else None
+        t = seg.text
+        if seg.vowel:
+            open_ = not syls[n].coda
+            a, b = (_DE_LONG if (n == stress and open_) else _DE_SHORT).get(t, (t, t))
+            ipa[n] += a; sp[n] += b
+            continue
+        if t == "c":
+            a, b = ("ts", "ts") if front(nxt) else ("k", "k")
+        elif t in ("v", "u"):
+            a, b = ("f", "f")
+        elif t == "qu":
+            a, b = ("kv", "kv")
+        elif t == "j":
+            a, b = ("j", "y")
+        elif t == "z":
+            a, b = ("ts", "ts")
+        elif t == "t" and nxt is not None and nxt.text == "i" and nxt2 is not None and nxt2.vowel and k > 0 \
+                and not (prev is not None and prev.text in ("s", "t", "k")):
+            a, b = ("ts", "ts")
+        elif t == "s" and nxt is not None and nxt.vowel and (prev is None or prev.vowel):
+            a, b = ("z", "z")
+        elif t in _DE_DEVOICE and nxt is None:
+            a, b = _DE_DEVOICE[t]
+        elif t == "g":
+            a, b = ("ɡ", "g")
+        elif t == "ch":
+            a, b = ("k", "k")
+        elif t == "ph":
+            a, b = ("f", "f")
+        elif t == "th":
+            a, b = ("t", "t")
+        elif t == "n" and nxt is not None and nxt.text in ("c", "g", "qu", "k"):
+            a, b = ("ŋ", "ng")
+        else:
+            a, b = (t, t)
+        ipa[n] += a; sp[n] += b
+    return list(zip(ipa, sp))
+
+
+def german(word: str, quantities: dict[str, str] | None = None) -> dict:
+    w = "".join(ch for ch in word if ch not in PUNCT)
+    known = False
+    if quantities is not None:
+        w, known = apply_quantity(w, quantities)
+    host_len = None
+    if "+" in w:
+        host, enc = w.split("+", 1)
+        host_len = len(syllabify(host))
+        w = host + enc
+    syls = syllabify(w)
+    if not syls:
+        return {"ipa": w, "respell": w, "syllables": 0, "known": known}
+    stress = stress_index(syls, host_len)
+    parts = _german(syls, stress)
+    one = len(syls) == 1
+    ipa = ".".join(("ˈ" if j == stress and not one else "") + p[0] for j, p in enumerate(parts))
+    resp = "-".join(p[1].upper() if j == stress and not one else p[1] for j, p in enumerate(parts))
+    return {"ipa": ipa, "respell": resp, "syllables": len(syls), "known": known}
+
+
+def _printed_key(word: str, quantities: dict[str, str] | None):
+    """A table may key an abbreviation as printed (".i", "S", "XII"). Only such keys change the
+    lookup: the entry is moved under the plain form for this one word."""
+    if not quantities:
+        return quantities
+    plain = "".join(ch for ch in word if ch not in PUNCT).lower()
+    for raw in (word, word.lower()):
+        if raw != plain and raw in quantities:
+            from collections import ChainMap
+            return ChainMap({plain: quantities[raw]}, quantities)
+    return quantities
+
+
+_phonemize_v02 = phonemize
+
+
+def phonemize(word: str, scheme: str, quantities: dict[str, str] | None = None, dialect: str | None = None, **kw) -> dict:  # noqa: F811
+    """Adds the German reading and printed-form abbreviation keys; everything else unchanged."""
+    quantities = _printed_key(word, quantities)
+    if scheme == "german-humanist" or (scheme == "as-first-read" and dialect == "german"):
+        return german(word, quantities)
+    return _phonemize_v02(word, scheme, quantities, dialect=dialect, **kw)
+
+
+KEY["german-humanist"] = [
+    ("", "Latin as read in Saxony around 1517, Luther's country and decade. Reconstructed from the later German school pronunciation of Latin and from the sound history of Early New High German; no description of Luther's own Latin survives. Approximate."),
+    ("aa, ay, ee, oh, oo", "a stressed vowel in an open syllable is long: a as in father, e as in they (no glide), i as in machine, o as in go (no glide), u as in food"),
+    ("a, e, i, o, u", "every other vowel is short: u as in put"),
+    ("ay", "ae and oe are both long e; the prints often write plain e (pena for poena)"),
+    ("ts", "c before e, i, y, ae, oe, as in German Zeit: Cicero = TSEE-tse-ro; also z, and ti before a vowel (gratia = GRAA-tsi-a)"),
+    ("sts", "sc before e and i: scilicet = stsi-LI-tset"),
+    ("g", "g is always hard, as in get, even before e and i"),
+    ("kv", "qu, as in German Quelle"),
+    ("f", "consonantal u or v, as German v in Vater: vita = FEE-ta. The least certain point: v or w is also possible"),
+    ("z", "s before a vowel at the start of a word or between vowels, as in German Sonne"),
+    ("t, p, k (final)", "final d, b, g lose their voice, as in German: ad = at, quod = kvot"),
+    ("ü", "y, as in German über"),
+    ("CAPS", "stressed syllable, by the classical penultimate rule"),
+]
+SCHEME_LABELS["german-humanist"] = "As first read: Latin in Saxony around 1517 (approximate)"

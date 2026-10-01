@@ -15,9 +15,9 @@ import yaml
 from . import __version__, treebank
 from .draft import PHON, load_manifest
 
-HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "lzh": "lzh", "runic": "gmq", "ja": "ja", "san": "sa", "akk": "akk", "fa": "fa", "ta": "ta", "it": "it", "fr": "fr", "es": "es", "nl": "nl", "fro": "fro"}
+HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "lzh": "lzh", "runic": "gmq", "ja": "ja", "san": "sa", "akk": "akk", "fa": "fa", "ta": "ta", "it": "it", "fr": "fr", "es": "es", "nl": "nl", "fro": "fro", "de": "de", "egy": "egy", "sux": "sux"}
 RTL = {"hbo", "fa"}
-LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "lzh": "Classical Chinese", "runic": "Runic Norse", "ja": "Early modern Japanese", "san": "Vedic Sanskrit", "akk": "Akkadian", "fa": "Classical Persian", "ta": "Old Tamil", "it": "Renaissance Italian", "fr": "Middle French", "es": "Early Modern Spanish", "nl": "Early Modern Dutch", "fro": "Old French"}
+LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "lzh": "Classical Chinese", "runic": "Runic Norse", "ja": "Early modern Japanese", "san": "Vedic Sanskrit", "akk": "Akkadian", "fa": "Classical Persian", "ta": "Old Tamil", "it": "Renaissance Italian", "fr": "Middle French", "es": "Early Modern Spanish", "nl": "Early Modern Dutch", "fro": "Old French", "de": "German", "egy": "Old Egyptian", "sux": "Sumerian"}
 
 
 def _load_yaml_dir(d: Path) -> list[tuple[Path, object]]:
@@ -91,7 +91,7 @@ def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
         "work": dict({k: m.get(k) for k in ("work", "title", "author", "language", "urn", "unit", "section_noun")},
                      lang_html=HTML_LANG.get(m["language"], m["language"]),
                      dir="rtl" if m["language"] in RTL else "ltr",
-                     lang_name=LANG_NAMES.get(m["language"], m["language"]),
+                     lang_name=m.get("lang_name") or LANG_NAMES.get(m["language"], m["language"]),
                      script_label=getattr(PHON[m["language"]], "SCRIPT_LABEL", "Script (runes)"),
                      script_word=getattr(PHON[m["language"]], "SCRIPT_WORD", "runes"),
                      show_translit=getattr(PHON[m["language"]], "SHOW_TRANSLIT", m["language"] == "san"),
@@ -275,7 +275,7 @@ def write_index(repo: Path, out_dir: Path) -> Path:
         rows.append(f'<li>{thumb}<div class="body"><a href="{H.escape(page.name)}"><span class="t">{H.escape(m["title"])}</span>'
                     f'<span class="a">{H.escape(m["author"])} · {span}</span></a>'
                     + (f'<p class="w">{H.escape(written[:1].upper() + written[1:])}</p>' if written else "")
-                    + f'<p>{H.escape(LANG_NAMES.get(m["language"], m["language"]))}{" (reads right to left)" if m["language"] in RTL else ""} · '
+                    + f'<p>{H.escape(m.get("lang_name") or LANG_NAMES.get(m["language"], m["language"]))}{" (reads right to left)" if m["language"] in RTL else ""} · '
                     f'{H.escape(", ".join(m["schemes"]))} · {H.escape(trs)}</p></div></li>')
     if age is not None:
         rows.append("</ul></section>")

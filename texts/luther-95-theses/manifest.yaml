@@ -1,0 +1,54 @@
+work: luther-95-theses
+title: The Ninety-five Theses
+author: Martin Luther
+language: lat
+prefix: l95                      # l95.<section>.<line>[.<token>]; in section th the line is the thesis number
+urn: urn:weft:lat:disputatio-indulgentiarum   # Weft-local identifier
+unit: section
+section_noun: part
+written: {year: 1517, label: "dated 31 October 1517, Wittenberg; printed in Nuremberg, Leipzig and Basel before the end of 1517"}
+status: phase-0
+pilot: {sections: [prooem, th]}
+edition:
+  id: la-wikisource-disputatio
+  name: "Disputatio pro declaratione virtutis indulgentiarum as on Latin Wikisource (a composite: the Weimar edition, WA 1, 233-238, with the preamble and theses 1-29 brought close to the spelling of the 1517 Basel pamphlet printing)"
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain; Weft line division CC BY-SA 4.0
+treebank: null                   # no treebank covers Luther; hand annotation, draft
+schemes: [german-humanist, ecclesiastical, classical]   # default: Latin as read in Saxony around 1517
+scheme_labels:
+  german-humanist: "As first read: in the German manner of Luther's Wittenberg, around 1517 (approximate)"
+  ecclesiastical: "Ecclesiastical: Italianate church Latin, the later Roman reading"
+quantities:
+  - pipeline/weft/data/lat_quantities.yaml
+  - pipeline/weft/data/lat_quantities_luther.yaml
+sources_extra:
+  - id: disputatio-la
+    name: "Luther, Disputatio pro declaratione virtutis indulgentiarum, Latin Wikisource revision 129494 (11 May 2020)"
+    file: sources/disputatio-la.txt
+    url: "https://la.wikisource.org/w/index.php?title=Disputatio_pro_declaratione_virtutis_indulgentiarum&oldid=129494&action=raw"
+    sha256: b7566c62280b8964718faa27ac829cec94d4e1cc8acb95eeb53ef9f4e297b674
+    license: public domain (text); Wikisource CC BY-SA 4.0
+    license_url: https://la.wikisource.org/wiki/Disputatio_pro_declaratione_virtutis_indulgentiarum
+translations:
+  - id: works1915
+    translator: "Adolph Spaeth, L. D. Reed, Henry Eyster Jacobs, et al."
+    year: 1915
+    form: "prose, from Works of Martin Luther, vol. 1 (Philadelphia: A. J. Holman, 1915), pp. 29-38, as transcribed by Project Wittenberg (Project Gutenberg eBook #274, which also carries the Latin of WA 1)"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/pg274.txt
+    url: https://www.gutenberg.org/cache/epub/274/pg274.txt
+    sha256: edb5dbcb5363073aa8392f40ebc9696ed566dc7e4143bce23440cff1f411b1c2
+predicted_gaps:
+  - "no treebank: lemma and morphology hand-annotated (Lewis and Short; Medieval Latin headwords from Du Cange and Niermeyer where Lewis and Short lacks the word), draft"
+  - "the German reading of about 1517 is reconstructed from the later German school pronunciation of Latin and Early New High German sound history; no description of Luther's own Latin survives; approximate, and v as f is its least certain point"
+  - "the Wikisource text is a composite: theses 1-29 and the preamble use classical ae and oe (poenitentia, Papae), theses 30-95 keep the e of WA 1 (penitentia, Pape); the quantity table restores ae and oe for the sound, and the page keeps the printed letters"
+  - "the Wikisource text keeps misprints of the WA transcription it descends from (prorus 7, purgaturium 16, versus for verus 37, idulgentias 45, Multomagnis for Multo magis 74, laicorm 81); the page keeps them and the sound reads the intended word"
+  - "abbreviations are read through the quantity table: .i. and i. e. as id est, R. P. as reverendo patre, S. as sacrae, s. as sancti (in 59 and 77 the sense is sanctus; one table entry serves all four), &c. and etc. as etcetera, Co. XII as Corinthios duodecimo"
+  - "forms that differ only in a final long vowel (poena and poenā, papa and papā) share one table entry, so the classical reading shows one length for both; stress is unaffected"
+  - "seu is read as two syllables: the Latin module has no eu diphthong"
+  - "Luther is read with a short u (the table spells it Lutther, as WA's preamble does), matching German usage; the name's vowel in Luther's own Latin is not attested"
+  - "the closing date line of the source (M.D.Xvii.) is not included"
+  - "the English is the 1915 Philadelphia translation; its bracketed words are the translators' additions and are kept"
