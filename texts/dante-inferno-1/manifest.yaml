@@ -1,0 +1,67 @@
+work: dante-inferno-1
+title: "Inferno 1: Nel mezzo del cammin di nostra vita"
+author: "Dante Alighieri (1265–1321)"
+language: it
+prefix: inf                           # inf.<canto>.<line>[.<token>]: Inferno, canto 1
+urn: urn:weft:it:dante.commedia.inferno   # Weft-local identifier
+unit: section
+section_noun: canto
+pilot: {sections: ["1"]}
+written: {year: 1307, label: "the Commedia was begun about 1306–1308 and finished shortly before Dante's death in 1321; the journey is set at Easter 1300"}
+status: phase-0
+edition:
+  id: petrocchi1966
+  name: "Dante Alighieri, La Commedia secondo l'antica vulgata, critical text by Giorgio Petrocchi (Milan: Mondadori, 1966–67; Florence: Le Lettere, 1994), via the Società Dantesca Italiana's Dante Online and Italian Wikisource"
+  format: weft-edition
+  file: edition.yaml
+  license: "Petrocchi's critical text (1966–67, revised reprint 1994) no longer protected (Italian law, art. 85-quater L. 633/1941, gives critical editions 20 years); Wikisource transcription CC BY-SA 4.0; Weft token division CC BY-SA 4.0"
+treebank:
+  # UD Italian-Old annotates the whole Commedia on Petrocchi's text, and this canto's 993 words
+  # align with the edition one to one. weft draft cannot yet read a UD file keyed by canto and line
+  # (MISC Canto=, Verso=), so `format: none`: the lemma and morphology are copied from the treebank
+  # into curated/ by a script, in a changeset that names it, until the core gains that reader.
+  id: ud-italian-old
+  name: "UD Italian-Old (C. Corbetta, M. Passarotti, F. M. Cecchini, G. Moretti), from the DanteSearch corpus (University of Pisa), Universal Dependencies, commit a82abc4"
+  format: none
+  file: sources/it_old-ud-train.conllu
+  url: "https://raw.githubusercontent.com/UniversalDependencies/UD_Italian-Old/a82abc49afb8b3605eda5b85a9c3a23f480d82a7/it_old-ud-train.conllu"
+  sha256: 9e94e25d826632a005adc2a8a1daa88f46bdd1509d56090b4c82d27779e1a5e0
+  license: "CC BY-SA 4.0"
+  license_url: "https://github.com/UniversalDependencies/UD_Italian-Old/blob/master/LICENSE.txt"
+schemes: [florentine, modern]         # default = Florentine of Dante's day (approximate)
+scheme_labels:
+  florentine: "Florentine as Dante and his first readers likely spoke it, around 1307 (approximate)"
+quantities: pipeline/weft/data/it_lexicon.yaml   # stress, open and closed e and o, voiced s and z
+sources_extra:
+  - id: ws-inf1
+    name: "Italian Wikisource, 'Divina Commedia/Inferno/Canto I', revision 3857646 (Petrocchi's text, from Dante Online)"
+    file: sources/ws-inf1.txt
+    url: "https://it.wikisource.org/w/index.php?oldid=3857646&action=raw"
+    sha256: 532edee2ab8d1b132563929a941fdb812122e38419880fc2a526dc4ad5ab7113
+    license: "Wikisource CC BY-SA 4.0"
+    license_url: "https://it.wikisource.org/wiki/Discussione:Divina_Commedia"
+translations:
+  - id: longfellow1867
+    translator: Henry Wadsworth Longfellow
+    year: 1867
+    form: "verse, line for line in unrhymed tercets, The Divine Comedy of Dante Alighieri: Inferno (Boston: Ticknor and Fields, 1867); Project Gutenberg eBook 1001"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/longfellow1867.txt
+    url: https://www.gutenberg.org/cache/epub/1001/pg1001.txt
+    sha256: 10fad2f10aaffec3bfe3fd63266544f7fd5bba576cd5c63afe68e8212849754d
+  - id: cary1814
+    translator: Henry Francis Cary
+    year: 1814
+    form: "blank verse, The Vision; or Hell, Purgatory, and Paradise (London, 1814; the Gutenberg text does not name the edition it follows); Project Gutenberg eBook 1005"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/cary1814.txt
+    url: https://www.gutenberg.org/cache/epub/1005/pg1005.txt
+    sha256: c7dd11b94757124998fea8d916ab4f43bbb79fbbbd9e9698efa188cfd12d1ae4
+predicted_gaps:
+  - "the Florentine of about 1307 is reconstructed; open and closed e and o come from a lexicon built on the modern Tuscan standard and the Latin source vowels, and the gorgia toscana is left out"
+  - "the metre counts synalepha across words and synaeresis in mio, io, sia, sua, tuo; where Dante's count differs (parea, avea, l'aere, dialefe after a pause) the edition marks the token by hand, and a reader may divide differently"
+  - "the rhyme is checked by spelling across the canto's terza rima: legge (law, closed e) rhymes with regge and elegge (open e)"
+  - "lemma and morphology are UD Italian-Old's, copied into curated/ until draft can read the treebank; the gloss is by hand, draft"
+  - "Cary's blank verse does not follow Dante's lines, so his spans cover passages; Longfellow's follow the tercets"

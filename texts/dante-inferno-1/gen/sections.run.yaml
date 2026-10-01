@@ -1,0 +1,25 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+counts:
+  lines: 136
+  tokens: 945
+failures:
+  terza-rima-mismatch: 4
+samples:
+  terza-rima-mismatch:
+  - 1.44 -esse vs line 46 -isse (rhyme P)
+  - 1.46 -isse vs line 44 -esse (rhyme P)
+  - 1.46 -isse vs line 48 -esse (rhyme P)
+  - 1.48 -esse vs line 46 -isse (rhyme P)
+failure_rate:
+  terza-rima-mismatch: 0.004
+shift_left: []
+predicted_gaps:
+- the Florentine of about 1307 is reconstructed; open and closed e and o come from a lexicon built on the modern Tuscan standard and the Latin source vowels, and the gorgia toscana is left out
+- the metre counts synalepha across words and synaeresis in mio, io, sia, sua, tuo; where Dante's count differs (parea, avea, l'aere, dialefe after a pause) the edition marks the token by hand, and a reader
+  may divide differently
+- 'the rhyme is checked by spelling across the canto''s terza rima: legge (law, closed e) rhymes with regge and elegge (open e)'
+- lemma and morphology are UD Italian-Old's, copied into curated/ until draft can read the treebank; the gloss is by hand, draft
+- Cary's blank verse does not follow Dante's lines, so his spans cover passages; Longfellow's follow the tercets

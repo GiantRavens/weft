@@ -1,22 +1,24 @@
-work: basho-furuike
-title: The Old Pond (古池や)
+work: basho-furuike              # id kept from the single-poem pilot so existing links keep working
+title: Haiku of Bashō (古池や and others)
 author: Matsuo Bashō (1644–1694)
 language: ja
-prefix: ba                       # ba.1686.<line>[.<token>]
+prefix: ba                       # ba.<year>[a-d].<line>[.<token>]; the frog poem keeps ba.1686.*
 urn: urn:weft:ja:basho.furuike   # Weft-local identifier
 unit: section
 section_noun: poem
-written: {year: 1686, label: "published 1686, in the anthology Haru no Hi (Spring Days)"}
+written: {year: 1686, label: "nine poems composed between 1680 and 1694, in order of composition; the old-pond poem was published in 1686, in the anthology Haru no Hi (Spring Days)"}
 status: phase-0
-pilot: {sections: ["1686"]}
+pilot: {sections: ["1680", "1684", "1686", "1689a", "1689b", "1689c", "1689d", "1690", "1694"]}
 edition:
   id: otsuka1903
-  name: Ōtsuka Kōzan, ed., Bashō Haiku Zenshū (1903), page 23, via Japanese Wikisource
+  name: Ōtsuka Kōzan, ed., Bashō Haiku Zenshū (1903), scan pages 23, 77, 82, 96, 107, 108, 119 and 200, via Japanese Wikisource
   format: weft-edition
   file: edition.yaml
-  license: public domain; Weft line division CC BY-SA 4.0
+  license: public domain; Weft line division and ordering CC BY-SA 4.0
 treebank: null                   # hand annotation, draft
-schemes: [edo-1686, modern]      # default = Japanese as spoken in Edo in the 1680s (approximate)
+schemes: [edo-1686, modern]      # default = Japanese as spoken in Edo in Bashō's lifetime (approximate); key kept from the pilot
+scheme_labels:
+  edo-1686: "Edo, 1680s and 1690s: as Bashō's contemporaries spoke (approximate)"
 sources_extra:
   - id: otsuka1903-p23
     name: Bashō Haiku Zenshū (1903), scan page 23, Japanese Wikisource revision 171655
@@ -25,11 +27,61 @@ sources_extra:
     sha256: 99dc63fddca44229b52d0d6aa607e4ffdd6057aaf2cac5437ff5903c901430e5
     license: public domain (PD-old); Wikisource CC BY-SA 4.0
     license_url: https://ja.wikisource.org/wiki/芭蕉俳句全集
+  - id: otsuka1903-p77
+    name: Bashō Haiku Zenshū (1903), scan page 77 (printed 72), Japanese Wikisource revision 80552
+    file: sources/otsuka1903-p77.txt
+    url: "https://ja.wikisource.org/w/index.php?title=Page:Basho_Haiku_Zenshu.djvu/77&oldid=80552&action=raw"
+    sha256: d85d8fcb5b56c98ec6152f882f5eb60e16ac5fd59cf320ec9ac3acf692a58809
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://ja.wikisource.org/wiki/芭蕉俳句全集
+  - id: otsuka1903-p82
+    name: Bashō Haiku Zenshū (1903), scan page 82, Japanese Wikisource revision 80644
+    file: sources/otsuka1903-p82.txt
+    url: "https://ja.wikisource.org/w/index.php?title=Page:Basho_Haiku_Zenshu.djvu/82&oldid=80644&action=raw"
+    sha256: 7b93d6322c933204562e7c5b3f7b1170471c3f1208754ef8bf512d7ba33801d7
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://ja.wikisource.org/wiki/芭蕉俳句全集
+  - id: otsuka1903-p96
+    name: Bashō Haiku Zenshū (1903), scan page 96, Japanese Wikisource revision 81592
+    file: sources/otsuka1903-p96.txt
+    url: "https://ja.wikisource.org/w/index.php?title=Page:Basho_Haiku_Zenshu.djvu/96&oldid=81592&action=raw"
+    sha256: 10d01384d2de4c7bcd8feaaa2243789ed4ebe65379e08a94b4f541f6384844bb
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://ja.wikisource.org/wiki/芭蕉俳句全集
+  - id: otsuka1903-p107
+    name: Bashō Haiku Zenshū (1903), scan page 107, Japanese Wikisource revision 80737
+    file: sources/otsuka1903-p107.txt
+    url: "https://ja.wikisource.org/w/index.php?title=Page:Basho_Haiku_Zenshu.djvu/107&oldid=80737&action=raw"
+    sha256: 949bcd0c694ce9bfdd964200ebf1ce41c1812016ca1e3abfa11a5bb0f21ad92c
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://ja.wikisource.org/wiki/芭蕉俳句全集
+  - id: otsuka1903-p108
+    name: Bashō Haiku Zenshū (1903), scan page 108, Japanese Wikisource revision 80749
+    file: sources/otsuka1903-p108.txt
+    url: "https://ja.wikisource.org/w/index.php?title=Page:Basho_Haiku_Zenshu.djvu/108&oldid=80749&action=raw"
+    sha256: 478ab6fdbdb80381c341540556b801aca34aae4f44bedd6365ff7e09fdf47690
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://ja.wikisource.org/wiki/芭蕉俳句全集
+  - id: otsuka1903-p119
+    name: Bashō Haiku Zenshū (1903), scan page 119, Japanese Wikisource revision 80794
+    file: sources/otsuka1903-p119.txt
+    url: "https://ja.wikisource.org/w/index.php?title=Page:Basho_Haiku_Zenshu.djvu/119&oldid=80794&action=raw"
+    sha256: b85a3b22a48043c7851d5bdc1db9475bae5c0182072a4ac09f99c2bcc9f7e098
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://ja.wikisource.org/wiki/芭蕉俳句全集
+  - id: otsuka1903-p200
+    name: Bashō Haiku Zenshū (1903), scan page 200, Japanese Wikisource revision 81416
+    file: sources/otsuka1903-p200.txt
+    url: "https://ja.wikisource.org/w/index.php?title=Page:Basho_Haiku_Zenshu.djvu/200&oldid=81416&action=raw"
+    sha256: f117bc6ed9d286b9410658f90933bbe2ce6977aa1f74799fe15c8690d39d6f89
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://ja.wikisource.org/wiki/芭蕉俳句全集
 translations:
   - id: hearn1898
     translator: Lafcadio Hearn
     year: 1898
     form: prose, in Exotics and Retrospectives
+    partial: "Hearn's 'Frogs' covers the old-pond poem only"
     license: public-domain
     license_url: https://www.gutenberg.org/policy/license.html
     file: sources/hearn1898.txt
@@ -38,14 +90,57 @@ translations:
   - id: chamberlain1902
     translator: Basil Hall Chamberlain
     year: 1902
-    form: prose, in Bashō and the Japanese Poetical Epigram
+    form: prose for the old pond, rhymeless couplets for the others, in Bashō and the Japanese Poetical Epigram
+    partial: "Chamberlain does not translate the 1684 poem or the 1689 poems on stillness and the Mogami River"
     license: public domain (Public Domain Mark)
     license_url: https://archive.org/details/basho-and-the-japanses-poetical-epigram
     file: sources/chamberlain1902.txt
     url: https://archive.org/download/basho-and-the-japanses-poetical-epigram/87b3b0e22e3c341d29c3f58aa3666d5c_djvu.txt
     sha256: 8f50bea31d66d956c181eead18d970b0e341365ebb1f59c7d6727bfffa286f95
+  - id: aston1899
+    translator: William George Aston
+    year: 1899
+    form: verse, in A History of Japanese Literature (New York, D. Appleton), p. 295
+    partial: "Aston translates three of these poems: 1680, 1686 and 1690"
+    license: public domain (published 1899; Aston died 1911)
+    license_url: https://archive.org/details/historyjapanese00asto
+    file: sources/aston1899.txt
+    url: https://archive.org/download/historyjapanese00asto/historyjapanese00asto_djvu.txt
+    sha256: 09494872e2c7d701ab2bc51679f84a392f316f86df05ebc60062432df42b5513
+  - id: hearn1900
+    translator: Lafcadio Hearn
+    year: 1900
+    form: verse, in the essay 'Semi', in Shadowings
+    partial: "covers the 1690 cicada poem only"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/hearn1900.txt
+    url: https://www.gutenberg.org/cache/epub/34215/pg34215.txt
+    sha256: 53f54a6e44b24c095f4561f4f8c0be31a3ea733b2e9605a5fbbafdfad0d8e697
+  - id: noguchi1914
+    translator: Yone Noguchi
+    year: 1914
+    form: verse, in The Spirit of Japanese Poetry (London, John Murray), pp. 38 and 45
+    partial: "Noguchi translates the 1686 and 1694 poems only"
+    license: public domain (published 1914; Noguchi died 1947)
+    license_url: https://archive.org/details/spiritofjapanese00nogu_2
+    file: sources/noguchi1914.txt
+    url: https://archive.org/download/spiritofjapanese00nogu_2/spiritofjapanese00nogu_2_djvu.txt
+    sha256: fd0941bcc90b19f12a4c909d35c075c3612722d5ff0f27b63b7ef2d250be1faa
+  - id: yuasa1966
+    kind: reference
+    translator: Nobuyuki Yuasa
+    year: 1966
+    title: "The Narrow Road to the Deep North and Other Travel Sketches"
+    publisher: "Penguin Books, Harmondsworth (Penguin Classics)"
+    note: "It translates the travel journals in which the 1684 poem and the four 1689 poems first appeared, including the three that have no public-domain English translation here"
 predicted_gaps:
   - "the 1686 first printing writes 蛙飛こむ水のおと; the 1903 edition used here writes 蛙とびこむ水の音"
-  - "Edo pronunciation of the 1680s is reconstructed; the dzu of づ is uncertain by then"
+  - "the 1903 edition's spellings differ from the first printings in places (沁む for しむ, 橫ふ for よこたふ, 病んで for 病で, かけめぐる for かけ廻る, しみ入るせみ for しみ入蝉); the 1903 text is reproduced as printed and the notes name the differences"
+  - "the 1903 edition prints the headnote 立石亭 for the 閑さや poem (scan checked); the place is the temple 立石寺, Risshakuji"
+  - "dates of composition are Weft's, from the standard chronology; the 1903 edition arranges poems by season word and gives no dates"
+  - "Edo pronunciation of the 1680s and 1690s is reconstructed; the dzu of づ, the ye of え and ゑ, and the ō of medial -afu are each uncertain by then"
+  - "no public-domain English translation was found for the 1684, 1689b and 1689c poems; the gloss carries them and Yuasa (1966) is cited"
   - "no treebank; hand annotation, draft"
-  - "Chamberlain's OCR text garbles his romanization; only his translation line, which is clean, is used"
+  - "the Chamberlain and Aston texts are OCR; clear OCR errors are corrected and listed in each sense file's header"
+  - "Chamberlain's OCR text garbles his romanization; only his translation lines are used"

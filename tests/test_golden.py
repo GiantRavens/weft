@@ -297,10 +297,10 @@ def test_japanese_and_basho():
         before = (work / "gen/sections.yaml").read_text()
         report = draft.run(work)
         assert (work / "gen/sections.yaml").read_text() == before
-        assert report["counts"] == {"lines": 3, "tokens": 7}
+        assert report["counts"] == {"lines": 27, "tokens": 68}   # nine haiku, 1680-1694
         assert report["failures"] == {}
     g = yaml.safe_load((work / "gen/sections.yaml").read_text())
-    assert [l["metre"] for l in g["lines"]] == ["5 morae", "7 morae", "5 morae"]
+    assert [l["metre"] for l in g["lines"] if l["id"].startswith("ba.1686.")] == ["5 morae", "7 morae", "5 morae"]
     r = check.run(REPO, "basho-furuike")
     assert r["ok"], r["problems"]
 
@@ -347,7 +347,7 @@ def test_reference_translation_is_cited_not_inlined(tmp_path):
                               "year": 2000, "title": "Haiku", "publisher": "A Press"})
     (work / "manifest.yaml").write_text(yaml.dump(m, allow_unicode=True))
     data = build.assemble(work)
-    assert [r["id"] for r in data["references"]] == ["later2000"]
+    assert "later2000" in [r["id"] for r in data["references"]]
     assert "later2000" not in [t["id"] for t in data["translations"]]
     assert all(s["tr"] != "later2000" for s in data["sense"])
 

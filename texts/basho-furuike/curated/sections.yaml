@@ -1,4 +1,4 @@
-# Human overlay for Bashō's frog poem. No treebank; lemma and part of speech by hand.
+# Human overlay for the Bashō selection. No treebank; lemma and part of speech by hand.
 - by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
   date: 2026-09-29
   why: pilot; hand annotation
@@ -11,3 +11,77 @@
     ba.1686.3.1: {lemma: "水", morph: "NOUN", gloss: "water"}   # 水
     ba.1686.3.2: {lemma: "の", morph: "ADP", gloss: "'s"}   # の
     ba.1686.3.3: {lemma: "音", morph: "NOUN", gloss: "sound"}   # 音
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-01
+  why: selection expanded from one poem to nine; hand annotation
+  status: draft
+  set:
+    # 1680
+    ba.1680.1.1: {lemma: "枯枝", morph: "NOUN", gloss: "withered-branch"}   # 枯枝
+    ba.1680.1.2: {lemma: "に", morph: "ADP", gloss: "on"}   # に
+    ba.1680.2.1: {lemma: "烏", morph: "NOUN", gloss: "crow"}   # 烏
+    ba.1680.2.2: {lemma: "の", morph: "ADP", gloss: "(subject)"}   # の
+    ba.1680.2.3: {lemma: "止まる", morph: "VERB", gloss: "perched"}   # とまり
+    ba.1680.2.4: {lemma: "けり", morph: "AUX|Tense=Past", gloss: "has-(I-see)"}   # けり
+    ba.1680.3.1: {lemma: "秋", morph: "NOUN", gloss: "autumn"}   # 秋
+    ba.1680.3.2: {lemma: "の", morph: "ADP", gloss: "'s"}   # の
+    ba.1680.3.3: {lemma: "暮れ", morph: "NOUN", gloss: "dusk"}   # 暮
+    # 1684
+    ba.1684.1.1: {lemma: "野ざらし", morph: "NOUN", gloss: "field-bleached-bones"}   # 野ざらし
+    ba.1684.1.2: {lemma: "を", morph: "ADP|Case=Acc", gloss: "(object)"}   # を
+    ba.1684.2.1: {lemma: "心", morph: "NOUN", gloss: "heart"}   # 心
+    ba.1684.2.2: {lemma: "に", morph: "ADP", gloss: "in"}   # に
+    ba.1684.2.3: {lemma: "風", morph: "NOUN", gloss: "wind"}   # 風
+    ba.1684.2.4: {lemma: "の", morph: "ADP", gloss: "(subject)"}   # の
+    ba.1684.3.1: {lemma: "沁む", morph: "VERB", gloss: "piercing"}   # 沁む
+    ba.1684.3.2: {lemma: "身", morph: "NOUN", gloss: "body"}   # 身
+    ba.1684.3.3: {lemma: "かな", morph: "PART|PartType=Kireji", gloss: "ah!"}   # 哉
+    # 1689a
+    ba.1689a.1.1: {lemma: "夏草", morph: "NOUN", gloss: "summer-grass"}   # 夏草
+    ba.1689a.1.2: {lemma: "や", morph: "PART|PartType=Kireji", gloss: "ah!"}   # や
+    ba.1689a.2.1: {lemma: "兵", morph: "NOUN", gloss: "warrior"}   # 兵
+    ba.1689a.2.2: {lemma: "ども", morph: "PART|Number=Plur", gloss: "-s"}   # ども
+    ba.1689a.2.3: {lemma: "が", morph: "ADP|Case=Gen", gloss: "'s"}   # が
+    ba.1689a.3.1: {lemma: "夢", morph: "NOUN", gloss: "dream"}   # 夢
+    ba.1689a.3.2: {lemma: "の", morph: "ADP", gloss: "'s"}   # の
+    ba.1689a.3.3: {lemma: "跡", morph: "NOUN", gloss: "traces"}   # 跡
+    # 1689b
+    ba.1689b.1.1: {lemma: "静かさ", morph: "NOUN", gloss: "stillness"}   # 閑さ
+    ba.1689b.1.2: {lemma: "や", morph: "PART|PartType=Kireji", gloss: "ah!"}   # や
+    ba.1689b.2.1: {lemma: "岩", morph: "NOUN", gloss: "rock"}   # 岩
+    ba.1689b.2.2: {lemma: "に", morph: "ADP", gloss: "into"}   # に
+    ba.1689b.2.3: {lemma: "染み入る", morph: "VERB", gloss: "soaking-in"}   # しみ入る
+    ba.1689b.3.1: {lemma: "蟬", morph: "NOUN", gloss: "cicada"}   # せみ
+    ba.1689b.3.2: {lemma: "の", morph: "ADP", gloss: "'s"}   # の
+    ba.1689b.3.3: {lemma: "声", morph: "NOUN", gloss: "voice"}   # 聲
+    # 1689c
+    ba.1689c.1.1: {lemma: "五月雨", morph: "NOUN", gloss: "fifth-month-rain"}   # 五月雨
+    ba.1689c.1.2: {lemma: "を", morph: "ADP|Case=Acc", gloss: "(object)"}   # を
+    ba.1689c.2.1: {lemma: "集める", morph: "VERB", gloss: "gathering"}   # 集めて
+    ba.1689c.2.2: {lemma: "早し", morph: "ADJ", gloss: "swift-is"}   # 早し
+    ba.1689c.3.1: {lemma: "最上川", morph: "PROPN", gloss: "Mogami-River"}   # 最上川
+    # 1689d
+    ba.1689d.1.1: {lemma: "荒海", morph: "NOUN", gloss: "rough-sea"}   # 荒海
+    ba.1689d.1.2: {lemma: "や", morph: "PART|PartType=Kireji", gloss: "ah!"}   # や
+    ba.1689d.2.1: {lemma: "佐渡", morph: "PROPN", gloss: "Sado"}   # 佐渡
+    ba.1689d.2.2: {lemma: "に", morph: "ADP", gloss: "to"}   # に
+    ba.1689d.2.3: {lemma: "横たふ", morph: "VERB", gloss: "lies-across"}   # 橫ふ
+    ba.1689d.3.1: {lemma: "天の川", morph: "PROPN", gloss: "heaven's-river"}   # 天の川
+    # 1690
+    ba.1690.1.1: {lemma: "やがて", morph: "ADV", gloss: "soon"}   # 頓て
+    ba.1690.1.2: {lemma: "死ぬ", morph: "VERB", gloss: "to-die"}   # 死ぬ
+    ba.1690.2.1: {lemma: "気色", morph: "NOUN", gloss: "sign"}   # けしき
+    ba.1690.2.2: {lemma: "は", morph: "ADP", gloss: "(topic)"}   # は
+    ba.1690.2.3: {lemma: "見ゆ", morph: "VERB|Polarity=Neg", gloss: "is-not-seen"}   # 見えず
+    ba.1690.3.1: {lemma: "蟬", morph: "NOUN", gloss: "cicada"}   # 蟬
+    ba.1690.3.2: {lemma: "の", morph: "ADP", gloss: "'s"}   # の
+    ba.1690.3.3: {lemma: "声", morph: "NOUN", gloss: "voice"}   # 聲
+    # 1694
+    ba.1694.1.1: {lemma: "旅", morph: "NOUN", gloss: "journey"}   # 旅
+    ba.1694.1.2: {lemma: "に", morph: "ADP", gloss: "on"}   # に
+    ba.1694.1.3: {lemma: "病む", morph: "VERB", gloss: "falling-ill"}   # 病んで
+    ba.1694.2.1: {lemma: "夢", morph: "NOUN", gloss: "dream"}   # 夢
+    ba.1694.2.2: {lemma: "は", morph: "ADP", gloss: "(topic)"}   # は
+    ba.1694.2.3: {lemma: "枯野", morph: "NOUN", gloss: "withered-moor"}   # 枯野
+    ba.1694.2.4: {lemma: "を", morph: "ADP|Case=Acc", gloss: "over"}   # を
+    ba.1694.3.1: {lemma: "駆け巡る", morph: "VERB", gloss: "runs-about"}   # かけめぐる

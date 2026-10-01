@@ -1,16 +1,30 @@
 run:
   weft: 0.1.0
   sections:
+  - '1680'
+  - '1684'
   - '1686'
+  - 1689a
+  - 1689b
+  - 1689c
+  - 1689d
+  - '1690'
+  - '1694'
 counts:
-  lines: 3
-  tokens: 7
+  lines: 27
+  tokens: 68
 failures: {}
 samples: {}
 failure_rate: {}
 shift_left: []
 predicted_gaps:
 - the 1686 first printing writes 蛙飛こむ水のおと; the 1903 edition used here writes 蛙とびこむ水の音
-- Edo pronunciation of the 1680s is reconstructed; the dzu of づ is uncertain by then
+- the 1903 edition's spellings differ from the first printings in places (沁む for しむ, 橫ふ for よこたふ, 病んで for 病で, かけめぐる for かけ廻る, しみ入るせみ for しみ入蝉); the 1903 text is reproduced as printed and the notes name
+  the differences
+- the 1903 edition prints the headnote 立石亭 for the 閑さや poem (scan checked); the place is the temple 立石寺, Risshakuji
+- dates of composition are Weft's, from the standard chronology; the 1903 edition arranges poems by season word and gives no dates
+- Edo pronunciation of the 1680s and 1690s is reconstructed; the dzu of づ, the ye of え and ゑ, and the ō of medial -afu are each uncertain by then
+- no public-domain English translation was found for the 1684, 1689b and 1689c poems; the gloss carries them and Yuasa (1966) is cited
 - no treebank; hand annotation, draft
-- Chamberlain's OCR text garbles his romanization; only his translation line, which is clean, is used
+- the Chamberlain and Aston texts are OCR; clear OCR errors are corrected and listed in each sense file's header
+- Chamberlain's OCR text garbles his romanization; only his translation lines are used

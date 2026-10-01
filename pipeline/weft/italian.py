@@ -1,12 +1,13 @@
 """Italian sound layer (weft.italian): Florentine of the author's day, then standard modern Italian.
 
-Scope. Two works use this module: Petrarch's Canzoniere, sonnet 1 (composed about 1350) and
-Machiavelli's Il Principe, chapters 17 and 18 (written 1513). Both wrote a literary Florentine.
+Scope. Three works use this module: Dante's Inferno, canto 1 (the Commedia was begun about
+1306-1308), Petrarch's Canzoniere, sonnet 1 (composed about 1350) and Machiavelli's Il Principe,
+chapters 17 and 18 (written 1513). All three wrote a literary Florentine.
 
-Scheme `florentine` (first, the default) is one reconstruction for both dates. The evidence does
-not support a separate reconstruction for 1350 and 1513 in the features a per-word respelling can
-show, so the two works share it and each dates it through `scheme_labels` in its manifest. The
-reconstruction is approximate. What it assumes:
+Scheme `florentine` (first, the default) is one reconstruction for all three dates. The evidence
+does not support a separate reconstruction for 1307, 1350 and 1513 in the features a per-word
+respelling can show, so the works share it and each dates it through `scheme_labels` in its
+manifest. The reconstruction is approximate. What it assumes:
 
 - Spelling is read as written. Latinizing spellings of the period (et, cognoscere, esperienzia,
   osservanzia) are pronounced from the letters, except `et`, which the lexicon reads as e, as
@@ -42,11 +43,20 @@ trovandosi); ẑ a voiced z [dz]. An entry with no mark is unstressed (an articl
 preposition). A word missing from the lexicon is stressed by rule (a written final accent, else
 the next-to-last vowel), read with closed e and o, and reported as pron-not-in-lexicon.
 
-Verse metre (`line_metre`, used by the sonnet): the Italian count of an endecasillabo, syllables
-up to and including the one after the last accent, with synalepha across words, synaeresis of a
-stressed i before a final vowel (mio, io, sia), and accents from the lexicon. The rhyme is compared
-by spelling from the stressed vowel to the end of the line, as Italian poets rhymed (open and
-closed vowels may rhyme). A token's `m` field in the edition overrides its metrical syllables.
+Verse metre (`line_metre`, used by the sonnet and the canto): the Italian count of an
+endecasillabo, syllables up to and including the one after the last accent, with synalepha across
+words, synaeresis of a stressed i or u before a final vowel (mio, io, sia, sua, tuo) except in the
+last word of the line, where the two vowels stay apart (via, ria at the rhyme), and accents from the
+lexicon. The rhyme is compared by spelling from the stressed vowel to the end of the line, as
+Italian poets rhymed (open and closed vowels may rhyme). Edition token fields: `m` overrides the
+token's metrical syllables; `dialefe: true` keeps its first vowel apart from the vowel ending the
+word before (no synalepha).
+
+Rhyme schemes: a fixed scheme per section (`rhyme: "ABBA ABBA CDE CDE"`, the sonnet), or
+`rhyme: terza` for terza rima (ABA BCB CDC ... YZY Z), counted across the whole edition: in tercet
+t (from 0) the first and third lines carry rhyme t, the middle line rhyme t+1, and a closing single
+line carries the rhyme of the last tercet's middle line. Every line must rhyme by spelling with the
+other lines of its rhyme; a mismatch is reported as terza-rima-mismatch.
 """
 from __future__ import annotations
 
@@ -69,8 +79,8 @@ def lexicon() -> dict:
     return _LEX
 
 
-PUNCT_TRAIL = re.compile(r"([,.;:!?»”)]+)$")
-PUNCT_LEAD = re.compile(r"^([«“(]+)")
+PUNCT_TRAIL = re.compile(r"([,.;:!?»”)\"]+)$")
+PUNCT_LEAD = re.compile(r"^([«“(\"]+)")
 STRESS_MARKS = {"à": "a", "è": "ɛ", "é": "e", "ì": "i", "í": "i", "ò": "ɔ", "ó": "o", "ù": "u", "ú": "u"}
 VOWELS = set("aeiou") | set(STRESS_MARKS) | {"ï", "ü"}
 FRONT = set("eiéèìí")
@@ -322,8 +332,9 @@ def token_fields(surface: str, et: dict, group: dict):
     return fields, fails
 
 
-def _metrical(et: dict) -> tuple[list[dict], bool, bool]:
-    """Metrical syllables of one token: [{stress}], starts with a vowel, ends with a vowel."""
+def _metrical(et: dict, final: bool = False) -> tuple[list[dict], bool, bool]:
+    """Metrical syllables of one token: [{stress}], starts with a vowel, ends with a vowel.
+    `final`: the last word of the line, where synaeresis is not applied."""
     word = et.get("n") or et["t"]
     if et.get("m"):
         # explicit scansion: syllables separated by '.', the accented one in CAPS or marked
@@ -337,11 +348,12 @@ def _metrical(et: dict) -> tuple[list[dict], bool, bool]:
     if not syls:
         return [], False, False
     out = [{"s": any(p["s"] for p in s)} for s in syls]
-    # synaeresis: a stressed i before a final unstressed vowel (mio, io, sia, ond'io) is one syllable
-    if len(syls) >= 2:
+    # synaeresis: a stressed i or u before a final unstressed vowel (mio, io, sia, ond'io, sua, tuo)
+    # is one syllable; not in the line's last word, where the vowels stay apart (via, ria)
+    if len(syls) >= 2 and not final:
         last, prev = syls[-1], syls[-2]
         if (len(last) == 1 and last[0]["v"] and not last[0]["s"]
-                and prev[-1]["v"] and prev[-1]["s"] and prev[-1]["p"] == "i"):
+                and prev[-1]["v"] and prev[-1]["s"] and prev[-1]["p"] in "iu"):
             out = out[:-1]
     ends_v = ph[-1]["v"]
     return out, bool(ph[0]["v"]), ends_v
@@ -366,13 +378,13 @@ def scan(etoks: list[dict]) -> tuple[int, list[int]]:
     """Positions (1-based) and accented positions, with synalepha across words."""
     pos, accents = 0, []
     prev_ends_v = False
-    for et in etoks:
-        syl, starts_v, ends_v = _metrical(et)
+    for j, et in enumerate(etoks):
+        syl, starts_v, ends_v = _metrical(et, final=(j == len(etoks) - 1))
         if not syl:                          # 'l, 'n: no vowel, leans on the syllable before
             prev_ends_v = False
             continue
         for k, s in enumerate(syl):
-            if k == 0 and starts_v and prev_ends_v and pos:
+            if k == 0 and starts_v and prev_ends_v and pos and not et.get("dialefe"):
                 if s["s"] and pos not in accents:
                     accents.append(pos)       # synalepha: the vowels share one position
                 continue
@@ -398,6 +410,10 @@ def line_metre(etoks: list[dict], edition: dict):
             else "a maiore" if 6 in accents else None)
     if not kind:
         fails.append(("metre-no-accent-4-or-6", "-".join(map(str, accents))))
+    if spec.get("rhyme") == "terza":
+        s = f"{count} syllables · accents {'-'.join(map(str, accents))}" + (f" · {kind}" if kind else "")
+        tag, tfails = _terza(etoks, edition)
+        return s + tag, fails + tfails
     # rhyme: find this line in the edition, then compare it with the lines its letter pairs it with
     scheme = (spec.get("rhyme") or "").replace(" ", "")
     letter = ""
@@ -418,6 +434,31 @@ def line_metre(etoks: list[dict], edition: dict):
     if letter:
         s += f" · rhyme {letter} (-{_rhyme(etoks[-1])})"
     return s, fails
+
+
+def _letters(k: int) -> str:
+    """Rhyme number 0, 1, ... as A, B, ... Z, AA, AB, ..."""
+    out = ""
+    k += 1
+    while k:
+        k, r = divmod(k - 1, 26)
+        out = chr(65 + r) + out
+    return out
+
+
+def _terza(etoks: list[dict], edition: dict) -> tuple[str, list[tuple[str, str]]]:
+    """Terza rima across the whole edition: tercet t's outer lines rhyme t, its middle line t+1."""
+    all_lines = [ln["tokens"] for g in edition.get("sections") or [] for ln in g["lines"] if not isinstance(ln, str)]
+    idx = next((i for i, toks in enumerate(all_lines) if toks is etoks), None)
+    if idx is None:
+        return "", []
+    group = lambda i: i // 3 + (1 if i % 3 == 1 else 0)
+    mine, g = _rhyme(etoks[-1]), group(idx)
+    fails = []
+    for j, toks in enumerate(all_lines):
+        if j != idx and group(j) == g and _rhyme(toks[-1]) != mine:
+            fails.append(("terza-rima-mismatch", f"-{mine} vs line {j + 1} -{_rhyme(toks[-1])} (rhyme {_letters(g)})"))
+    return f" · tercet {idx // 3 + 1} · rhyme {_letters(g)} (-{mine})", fails
 
 
 LAYERS = {

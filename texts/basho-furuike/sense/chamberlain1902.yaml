@@ -1,8 +1,42 @@
-# B. H. Chamberlain, Bashō and the Japanese Poetical Epigram (1902), p. 279, verbatim.
+# B. H. Chamberlain, Bashō and the Japanese Poetical Epigram (1902), verbatim. Old pond: p. 279.
+# Others by his anthology numbers: 1680 = no. 37 (p. 288), 1694 = no. 38 (p. 289), 1689a = no. 46
+# (p. 305), 1690 = no. 80, 1689d = no. 84 (p. 322).
+# OCR corrections: 1680 a stray opening quotation mark removed; 1689a 'Ifaply' to 'Haply', 'summer:' to
+# 'summer', 'warriors!' to 'warriors''; 1689d a stray '^^' removed.
 translation: chamberlain1902
-aligned_by: hand, phase 0; one span for the whole poem
+aligned_by: hand, phase 0; one span per poem
 spans:
+- lines:
+  - ba.1680.1
+  - ba.1680.3
+  text: 'The end of autumn, and some rooks
+
+    Are perched upon a withered branch'
 - lines:
   - ba.1686.1
   - ba.1686.3
   text: The old pond, aye! and the sound of a frog leaping into the water.
+- lines:
+  - ba.1689a.1
+  - ba.1689a.3
+  text: 'Haply the summer grasses are
+
+    A relic of the warriors'' dream.'
+- lines:
+  - ba.1689d.1
+  - ba.1689d.3
+  text: 'A rough sea, and the Milky Way
+
+    Stretching across to Sado''s isle.'
+- lines:
+  - ba.1690.1
+  - ba.1690.3
+  text: 'Nothing in the cicada’s voice
+
+    Gives token of a speedy death.'
+- lines:
+  - ba.1694.1
+  - ba.1694.3
+  text: 'Ta''en ill while journeying, I dreamt
+
+    I wandered o’er a withered moor.'

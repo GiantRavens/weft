@@ -1,0 +1,163 @@
+# Weft edition of Dante, Commedia, Inferno 1, from Giorgio Petrocchi's critical text, La Commedia
+# secondo l'antica vulgata (first published Milan: Mondadori, 1966-67; reprinted Florence: Le Lettere,
+# 1994), as transcribed on Italian Wikisource from the Società Dantesca Italiana's Dante Online,
+# revision 3857646. Checked verbatim against that page (verify_in); verify_strip sets aside the page's
+# markup: the line-number templates ({{R|3}}), the anchor templates ({{§|cammin}}, and the opening
+# of {{§|Ed ecco|...}}, which wraps lines 31-36 and keeps them as its text), the link template
+# around Virgilio ({{AutoreCitato|Publio Virgilio Marone|Virgilio}}), a stray </span> and closing
+# braces.
+#
+# One section, the canto, so that line IDs are the canto's own line numbers (inf.1.31 is Inferno
+# 1.31). The tercet each line belongs to is given in its metre string. Each token's t is the word as
+# printed with any punctuation after it, and any opening quotation mark before it; `weft draft`
+# moves both to their own fields (weft.italian token_fields), so the line still reproduces the
+# source. Petrocchi's diaeresis marks (patrïa, Ilïón, vïaggio, sapïenza) are his, and the metre
+# reads them as separate syllables.
+#   m        (where present) the token's metrical syllables, separated by '.', the accented one
+#            in capitals; used where Dante's count differs from the word read alone (synaeresis in
+#            parea, avea, l'aere; the rhyme words fui, lui, ambedui read with two syllables)
+#   dialefe  (where present) the token's first vowel is not joined to the vowel before it
+joiner: " "
+verify_in: sources/ws-inf1.txt
+verify_strip: '\{\{§\|[^|{}]*\}\}|\{\{§\|[^|{}]*\||\{\{AutoreCitato\|[^|{}]*\||\{\{R\|\d+\}\}|</?span[^>]*>|\}\}'
+metre: {name: endecasillabo, rhyme: terza}
+sections:
+  - id: "1"
+    title: "Canto 1"
+    lines:
+      - tokens: [{t: "Nel"}, {t: "mezzo"}, {t: "del"}, {t: "cammin"}, {t: "di"}, {t: "nostra"}, {t: "vita"}]   # 1
+      - tokens: [{t: "mi"}, {t: "ritrovai"}, {t: "per"}, {t: "una"}, {t: "selva"}, {t: "oscura,"}]   # 2
+      - tokens: [{t: "ché"}, {t: "la"}, {t: "diritta"}, {t: "via", m: "VI.a"}, {t: "era"}, {t: "smarrita."}]   # 3
+      - tokens: [{t: "Ahi"}, {t: "quanto"}, {t: "a"}, {t: "dir"}, {t: "qual"}, {t: "era"}, {t: "è"}, {t: "cosa"}, {t: "dura"}]   # 4
+      - tokens: [{t: "esta"}, {t: "selva"}, {t: "selvaggia"}, {t: "e"}, {t: "aspra", dialefe: true}, {t: "e"}, {t: "forte"}]   # 5
+      - tokens: [{t: "che"}, {t: "nel"}, {t: "pensier"}, {t: "rinova"}, {t: "la"}, {t: "paura!"}]   # 6
+      - tokens: [{t: "Tant’è"}, {t: "amara", dialefe: true}, {t: "che"}, {t: "poco"}, {t: "è"}, {t: "più"}, {t: "morte;"}]   # 7
+      - tokens: [{t: "ma"}, {t: "per"}, {t: "trattar"}, {t: "del"}, {t: "ben"}, {t: "ch’i’"}, {t: "vi"}, {t: "trovai,"}]   # 8
+      - tokens: [{t: "dirò"}, {t: "de"}, {t: "l’altre"}, {t: "cose"}, {t: "ch’i’"}, {t: "v’"}, {t: "ho"}, {t: "scorte."}]   # 9
+      - tokens: [{t: "Io"}, {t: "non"}, {t: "so"}, {t: "ben"}, {t: "ridir"}, {t: "com’i’"}, {t: "v’intrai,"}]   # 10
+      - tokens: [{t: "tant’era"}, {t: "pien"}, {t: "di"}, {t: "sonno"}, {t: "a", dialefe: true}, {t: "quel"}, {t: "punto"}]   # 11
+      - tokens: [{t: "che"}, {t: "la"}, {t: "verace"}, {t: "via", m: "VI.a"}, {t: "abbandonai."}]   # 12
+      - tokens: [{t: "Ma"}, {t: "poi"}, {t: "ch’i’"}, {t: "fui"}, {t: "al"}, {t: "piè"}, {t: "d’un"}, {t: "colle"}, {t: "giunto,"}]   # 13
+      - tokens: [{t: "là"}, {t: "dove"}, {t: "terminava"}, {t: "quella"}, {t: "valle"}]   # 14
+      - tokens: [{t: "che"}, {t: "m’avea", m: "ma.VEA"}, {t: "di"}, {t: "paura"}, {t: "il"}, {t: "cor"}, {t: "compunto,"}]   # 15
+      - tokens: [{t: "guardai"}, {t: "in"}, {t: "alto"}, {t: "e"}, {t: "vidi"}, {t: "le"}, {t: "sue"}, {t: "spalle"}]   # 16
+      - tokens: [{t: "vestite"}, {t: "già"}, {t: "de’"}, {t: "raggi"}, {t: "del"}, {t: "pianeta"}]   # 17
+      - tokens: [{t: "che"}, {t: "mena"}, {t: "dritto"}, {t: "altrui"}, {t: "per"}, {t: "ogne"}, {t: "calle."}]   # 18
+      - tokens: [{t: "Allor"}, {t: "fu"}, {t: "la"}, {t: "paura"}, {t: "un"}, {t: "poco"}, {t: "queta,"}]   # 19
+      - tokens: [{t: "che"}, {t: "nel"}, {t: "lago"}, {t: "del"}, {t: "cor"}, {t: "m’era"}, {t: "durata"}]   # 20
+      - tokens: [{t: "la"}, {t: "notte"}, {t: "ch’i’"}, {t: "passai"}, {t: "con"}, {t: "tanta"}, {t: "pieta."}]   # 21
+      - tokens: [{t: "E"}, {t: "come"}, {t: "quei"}, {t: "che"}, {t: "con"}, {t: "lena"}, {t: "affannata,"}]   # 22
+      - tokens: [{t: "uscito"}, {t: "fuor"}, {t: "del"}, {t: "pelago"}, {t: "a"}, {t: "la"}, {t: "riva,"}]   # 23
+      - tokens: [{t: "si"}, {t: "volge"}, {t: "a"}, {t: "l’acqua"}, {t: "perigliosa"}, {t: "e"}, {t: "guata,"}]   # 24
+      - tokens: [{t: "così"}, {t: "l’animo"}, {t: "mio,"}, {t: "ch’ancor"}, {t: "fuggiva,"}]   # 25
+      - tokens: [{t: "si"}, {t: "volse"}, {t: "a"}, {t: "retro"}, {t: "a"}, {t: "rimirar"}, {t: "lo"}, {t: "passo"}]   # 26
+      - tokens: [{t: "che"}, {t: "non"}, {t: "lasciò"}, {t: "già"}, {t: "mai"}, {t: "persona"}, {t: "viva."}]   # 27
+      - tokens: [{t: "Poi"}, {t: "ch’èi"}, {t: "posato"}, {t: "un"}, {t: "poco"}, {t: "il"}, {t: "corpo"}, {t: "lasso,"}]   # 28
+      - tokens: [{t: "ripresi"}, {t: "via"}, {t: "per"}, {t: "la"}, {t: "piaggia"}, {t: "diserta,"}]   # 29
+      - tokens: [{t: "sì"}, {t: "che"}, {t: "’l"}, {t: "piè"}, {t: "fermo"}, {t: "sempre"}, {t: "era"}, {t: "’l"}, {t: "più"}, {t: "basso."}]   # 30
+      - tokens: [{t: "Ed"}, {t: "ecco,"}, {t: "quasi"}, {t: "al"}, {t: "cominciar"}, {t: "de"}, {t: "l’erta,"}]   # 31
+      - tokens: [{t: "una"}, {t: "lonza"}, {t: "leggera"}, {t: "e"}, {t: "presta"}, {t: "molto,"}]   # 32
+      - tokens: [{t: "che"}, {t: "di"}, {t: "pel"}, {t: "macolato"}, {t: "era"}, {t: "coverta;"}]   # 33
+      - tokens: [{t: "e"}, {t: "non"}, {t: "mi"}, {t: "si"}, {t: "partia"}, {t: "dinanzi"}, {t: "al"}, {t: "volto,"}]   # 34
+      - tokens: [{t: "anzi"}, {t: "’mpediva"}, {t: "tanto"}, {t: "il"}, {t: "mio"}, {t: "cammino,"}]   # 35
+      - tokens: [{t: "ch’i’"}, {t: "fui"}, {t: "per"}, {t: "ritornar"}, {t: "più"}, {t: "volte"}, {t: "vòlto."}]   # 36
+      - tokens: [{t: "Temp’era"}, {t: "dal"}, {t: "principio"}, {t: "del"}, {t: "mattino,"}]   # 37
+      - tokens: [{t: "e"}, {t: "’l"}, {t: "sol"}, {t: "montava"}, {t: "’n"}, {t: "sù"}, {t: "con"}, {t: "quelle"}, {t: "stelle"}]   # 38
+      - tokens: [{t: "ch’eran"}, {t: "con"}, {t: "lui"}, {t: "quando"}, {t: "l’amor"}, {t: "divino"}]   # 39
+      - tokens: [{t: "mosse"}, {t: "di"}, {t: "prima"}, {t: "quelle"}, {t: "cose"}, {t: "belle;"}]   # 40
+      - tokens: [{t: "sì"}, {t: "ch’a"}, {t: "bene"}, {t: "sperar"}, {t: "m’era"}, {t: "cagione"}]   # 41
+      - tokens: [{t: "di"}, {t: "quella"}, {t: "fiera"}, {t: "a"}, {t: "la"}, {t: "gaetta"}, {t: "pelle"}]   # 42
+      - tokens: [{t: "l’ora"}, {t: "del"}, {t: "tempo"}, {t: "e"}, {t: "la"}, {t: "dolce"}, {t: "stagione;"}]   # 43
+      - tokens: [{t: "ma"}, {t: "non"}, {t: "sì"}, {t: "che"}, {t: "paura"}, {t: "non"}, {t: "mi"}, {t: "desse"}]   # 44
+      - tokens: [{t: "la"}, {t: "vista"}, {t: "che"}, {t: "m’apparve"}, {t: "d’un"}, {t: "leone."}]   # 45
+      - tokens: [{t: "Questi"}, {t: "parea", m: "pa.REA"}, {t: "che"}, {t: "contra"}, {t: "me"}, {t: "venisse"}]   # 46
+      - tokens: [{t: "con"}, {t: "la"}, {t: "test’alta"}, {t: "e"}, {t: "con"}, {t: "rabbiosa"}, {t: "fame,"}]   # 47
+      - tokens: [{t: "sì"}, {t: "che"}, {t: "parea", m: "pa.REA"}, {t: "che"}, {t: "l’aere", m: "LAE.re"}, {t: "ne"}, {t: "tremesse."}]   # 48
+      - tokens: [{t: "Ed"}, {t: "una"}, {t: "lupa,"}, {t: "che"}, {t: "di"}, {t: "tutte"}, {t: "brame"}]   # 49
+      - tokens: [{t: "sembiava"}, {t: "carca"}, {t: "ne"}, {t: "la"}, {t: "sua"}, {t: "magrezza,"}]   # 50
+      - tokens: [{t: "e"}, {t: "molte"}, {t: "genti"}, {t: "fé"}, {t: "già"}, {t: "viver"}, {t: "grame,"}]   # 51
+      - tokens: [{t: "questa"}, {t: "mi"}, {t: "porse"}, {t: "tanto"}, {t: "di"}, {t: "gravezza"}]   # 52
+      - tokens: [{t: "con"}, {t: "la"}, {t: "paura"}, {t: "ch’uscia"}, {t: "di"}, {t: "sua"}, {t: "vista,"}]   # 53
+      - tokens: [{t: "ch’io"}, {t: "perdei"}, {t: "la"}, {t: "speranza"}, {t: "de"}, {t: "l’altezza."}]   # 54
+      - tokens: [{t: "E"}, {t: "qual"}, {t: "è"}, {t: "quei"}, {t: "che"}, {t: "volontieri"}, {t: "acquista,"}]   # 55
+      - tokens: [{t: "e"}, {t: "giugne"}, {t: "’l"}, {t: "tempo"}, {t: "che"}, {t: "perder"}, {t: "lo"}, {t: "face,"}]   # 56
+      - tokens: [{t: "che"}, {t: "’n"}, {t: "tutti"}, {t: "suoi"}, {t: "pensier"}, {t: "piange"}, {t: "e"}, {t: "s’attrista;"}]   # 57
+      - tokens: [{t: "tal"}, {t: "mi"}, {t: "fece"}, {t: "la"}, {t: "bestia"}, {t: "sanza"}, {t: "pace,"}]   # 58
+      - tokens: [{t: "che,"}, {t: "venendomi"}, {t: "’ncontro,"}, {t: "a"}, {t: "poco"}, {t: "a"}, {t: "poco"}]   # 59
+      - tokens: [{t: "mi"}, {t: "ripigneva"}, {t: "là"}, {t: "dove"}, {t: "’l"}, {t: "sol"}, {t: "tace."}]   # 60
+      - tokens: [{t: "Mentre"}, {t: "ch’i’"}, {t: "rovinava"}, {t: "in"}, {t: "basso"}, {t: "loco,"}]   # 61
+      - tokens: [{t: "dinanzi"}, {t: "a"}, {t: "li"}, {t: "occhi"}, {t: "mi"}, {t: "si"}, {t: "fu"}, {t: "offerto", dialefe: true}]   # 62
+      - tokens: [{t: "chi"}, {t: "per"}, {t: "lungo"}, {t: "silenzio"}, {t: "parea", m: "pa.REA"}, {t: "fioco."}]   # 63
+      - tokens: [{t: "Quando"}, {t: "vidi"}, {t: "costui"}, {t: "nel"}, {t: "gran"}, {t: "diserto,"}]   # 64
+      - tokens: [{t: '"Miserere'}, {t: "di"}, {t: 'me",'}, {t: "gridai"}, {t: "a"}, {t: "lui,", m: "LU.i"}]   # 65
+      - tokens: [{t: '"qual'}, {t: "che"}, {t: "tu"}, {t: "sii,"}, {t: "od"}, {t: "ombra"}, {t: "od"}, {t: "omo"}, {t: 'certo!".'}]   # 66
+      - tokens: [{t: "Rispuosemi:"}, {t: '"Non'}, {t: "omo,"}, {t: "omo"}, {t: "già"}, {t: "fui,", m: "FU.i"}]   # 67
+      - tokens: [{t: "e"}, {t: "li"}, {t: "parenti"}, {t: "miei"}, {t: "furon"}, {t: "lombardi,"}]   # 68
+      - tokens: [{t: "mantoani"}, {t: "per"}, {t: "patrïa"}, {t: "ambedui.", m: "am.be.DU.i"}]   # 69
+      - tokens: [{t: "Nacqui"}, {t: "sub"}, {t: "Iulio,"}, {t: "ancor"}, {t: "che"}, {t: "fosse"}, {t: "tardi,"}]   # 70
+      - tokens: [{t: "e"}, {t: "vissi"}, {t: "a"}, {t: "Roma"}, {t: "sotto"}, {t: "’l"}, {t: "buono"}, {t: "Augusto"}]   # 71
+      - tokens: [{t: "nel"}, {t: "tempo"}, {t: "de"}, {t: "li"}, {t: "dèi"}, {t: "falsi"}, {t: "e"}, {t: "bugiardi."}]   # 72
+      - tokens: [{t: "Poeta"}, {t: "fui,"}, {t: "e"}, {t: "cantai"}, {t: "di"}, {t: "quel"}, {t: "giusto"}]   # 73
+      - tokens: [{t: "figliuol"}, {t: "d’Anchise"}, {t: "che"}, {t: "venne"}, {t: "di"}, {t: "Troia,"}]   # 74
+      - tokens: [{t: "poi"}, {t: "che"}, {t: "’l"}, {t: "superbo"}, {t: "Ilïón"}, {t: "fu"}, {t: "combusto."}]   # 75
+      - tokens: [{t: "Ma"}, {t: "tu"}, {t: "perché"}, {t: "ritorni"}, {t: "a"}, {t: "tanta"}, {t: "noia?"}]   # 76
+      - tokens: [{t: "perché"}, {t: "non"}, {t: "sali"}, {t: "il"}, {t: "dilettoso"}, {t: "monte"}]   # 77
+      - tokens: [{t: "ch’è"}, {t: "principio"}, {t: "e"}, {t: "cagion"}, {t: "di"}, {t: "tutta"}, {t: 'gioia?".'}]   # 78
+      - tokens: [{t: '"Or'}, {t: "se’"}, {t: "tu"}, {t: "quel"}, {t: "Virgilio"}, {t: "e"}, {t: "quella"}, {t: "fonte"}]   # 79
+      - tokens: [{t: "che"}, {t: "spandi"}, {t: "di"}, {t: "parlar"}, {t: "sì"}, {t: "largo"}, {t: 'fiume?",'}]   # 80
+      - tokens: [{t: "rispuos’io"}, {t: "lui"}, {t: "con"}, {t: "vergognosa"}, {t: "fronte."}]   # 81
+      - tokens: [{t: '"O'}, {t: "de"}, {t: "li"}, {t: "altri"}, {t: "poeti"}, {t: "onore"}, {t: "e"}, {t: "lume,"}]   # 82
+      - tokens: [{t: "vagliami"}, {t: "’l"}, {t: "lungo"}, {t: "studio"}, {t: "e"}, {t: "’l"}, {t: "grande"}, {t: "amore"}]   # 83
+      - tokens: [{t: "che"}, {t: "m’"}, {t: "ha"}, {t: "fatto"}, {t: "cercar"}, {t: "lo"}, {t: "tuo"}, {t: "volume."}]   # 84
+      - tokens: [{t: "Tu"}, {t: "se’"}, {t: "lo"}, {t: "mio"}, {t: "maestro"}, {t: "e"}, {t: "’l"}, {t: "mio"}, {t: "autore,", dialefe: true}]   # 85
+      - tokens: [{t: "tu"}, {t: "se’"}, {t: "solo"}, {t: "colui"}, {t: "da"}, {t: "cu’"}, {t: "io", dialefe: true}, {t: "tolsi"}]   # 86
+      - tokens: [{t: "lo"}, {t: "bello"}, {t: "stilo"}, {t: "che"}, {t: "m’"}, {t: "ha"}, {t: "fatto"}, {t: "onore."}]   # 87
+      - tokens: [{t: "Vedi"}, {t: "la"}, {t: "bestia"}, {t: "per"}, {t: "cu’"}, {t: "io", dialefe: true}, {t: "mi"}, {t: "volsi;"}]   # 88
+      - tokens: [{t: "aiutami"}, {t: "da"}, {t: "lei,"}, {t: "famoso"}, {t: "saggio,"}]   # 89
+      - tokens: [{t: "ch’ella"}, {t: "mi"}, {t: "fa"}, {t: "tremar"}, {t: "le"}, {t: "vene"}, {t: "e"}, {t: "i"}, {t: 'polsi".'}]   # 90
+      - tokens: [{t: '"A'}, {t: "te"}, {t: "convien"}, {t: "tenere"}, {t: "altro"}, {t: 'vïaggio",'}]   # 91
+      - tokens: [{t: "rispuose,"}, {t: "poi"}, {t: "che"}, {t: "lagrimar"}, {t: "mi"}, {t: "vide,"}]   # 92
+      - tokens: [{t: '"se'}, {t: "vuo’"}, {t: "campar"}, {t: "d’esto"}, {t: "loco"}, {t: "selvaggio;"}]   # 93
+      - tokens: [{t: "ché"}, {t: "questa"}, {t: "bestia,"}, {t: "per"}, {t: "la"}, {t: "qual"}, {t: "tu"}, {t: "gride,"}]   # 94
+      - tokens: [{t: "non"}, {t: "lascia"}, {t: "altrui"}, {t: "passar"}, {t: "per"}, {t: "la"}, {t: "sua"}, {t: "via,"}]   # 95
+      - tokens: [{t: "ma"}, {t: "tanto"}, {t: "lo"}, {t: "’mpedisce"}, {t: "che"}, {t: "l’uccide;"}]   # 96
+      - tokens: [{t: "e"}, {t: "ha", dialefe: true}, {t: "natura"}, {t: "sì"}, {t: "malvagia"}, {t: "e"}, {t: "ria,"}]   # 97
+      - tokens: [{t: "che"}, {t: "mai"}, {t: "non"}, {t: "empie"}, {t: "la"}, {t: "bramosa"}, {t: "voglia,"}]   # 98
+      - tokens: [{t: "e"}, {t: "dopo"}, {t: "’l"}, {t: "pasto"}, {t: "ha"}, {t: "più"}, {t: "fame"}, {t: "che"}, {t: "pria."}]   # 99
+      - tokens: [{t: "Molti"}, {t: "son"}, {t: "li"}, {t: "animali"}, {t: "a"}, {t: "cui"}, {t: "s’ammoglia,"}]   # 100
+      - tokens: [{t: "e"}, {t: "più"}, {t: "saranno"}, {t: "ancora,"}, {t: "infin"}, {t: "che"}, {t: "’l"}, {t: "veltro"}]   # 101
+      - tokens: [{t: "verrà,"}, {t: "che"}, {t: "la"}, {t: "farà"}, {t: "morir"}, {t: "con"}, {t: "doglia."}]   # 102
+      - tokens: [{t: "Questi"}, {t: "non"}, {t: "ciberà"}, {t: "terra"}, {t: "né"}, {t: "peltro,"}]   # 103
+      - tokens: [{t: "ma"}, {t: "sapïenza,"}, {t: "amore", dialefe: true}, {t: "e"}, {t: "virtute,"}]   # 104
+      - tokens: [{t: "e"}, {t: "sua"}, {t: "nazion"}, {t: "sarà"}, {t: "tra"}, {t: "feltro"}, {t: "e"}, {t: "feltro."}]   # 105
+      - tokens: [{t: "Di"}, {t: "quella"}, {t: "umile"}, {t: "Italia"}, {t: "fia"}, {t: "salute"}]   # 106
+      - tokens: [{t: "per"}, {t: "cui"}, {t: "morì"}, {t: "la"}, {t: "vergine"}, {t: "Cammilla,"}]   # 107
+      - tokens: [{t: "Eurialo", m: "eu.RIA.lo"}, {t: "e"}, {t: "Turno"}, {t: "e"}, {t: "Niso"}, {t: "di"}, {t: "ferute."}]   # 108
+      - tokens: [{t: "Questi"}, {t: "la"}, {t: "caccerà"}, {t: "per"}, {t: "ogne"}, {t: "villa,"}]   # 109
+      - tokens: [{t: "fin"}, {t: "che"}, {t: "l’avrà"}, {t: "rimessa"}, {t: "ne"}, {t: "lo"}, {t: "’nferno,"}]   # 110
+      - tokens: [{t: "là"}, {t: "onde", dialefe: true}, {t: "’nvidia"}, {t: "prima"}, {t: "dipartilla."}]   # 111
+      - tokens: [{t: "Ond’io"}, {t: "per"}, {t: "lo"}, {t: "tuo"}, {t: "me’"}, {t: "penso"}, {t: "e"}, {t: "discerno"}]   # 112
+      - tokens: [{t: "che"}, {t: "tu"}, {t: "mi"}, {t: "segui,"}, {t: "e"}, {t: "io", dialefe: true}, {t: "sarò"}, {t: "tua"}, {t: "guida,"}]   # 113
+      - tokens: [{t: "e"}, {t: "trarrotti"}, {t: "di"}, {t: "qui"}, {t: "per"}, {t: "loco"}, {t: "etterno;"}]   # 114
+      - tokens: [{t: "ove"}, {t: "udirai"}, {t: "le"}, {t: "disperate"}, {t: "strida,"}]   # 115
+      - tokens: [{t: "vedrai"}, {t: "li"}, {t: "antichi"}, {t: "spiriti"}, {t: "dolenti,"}]   # 116
+      - tokens: [{t: "ch’a"}, {t: "la"}, {t: "seconda"}, {t: "morte"}, {t: "ciascun"}, {t: "grida;"}]   # 117
+      - tokens: [{t: "e"}, {t: "vederai"}, {t: "color"}, {t: "che"}, {t: "son"}, {t: "contenti"}]   # 118
+      - tokens: [{t: "nel"}, {t: "foco,"}, {t: "perché"}, {t: "speran"}, {t: "di"}, {t: "venire"}]   # 119
+      - tokens: [{t: "quando"}, {t: "che"}, {t: "sia", m: "SI.a"}, {t: "a"}, {t: "le"}, {t: "beate"}, {t: "genti."}]   # 120
+      - tokens: [{t: "A"}, {t: "le"}, {t: "quai"}, {t: "poi"}, {t: "se"}, {t: "tu"}, {t: "vorrai"}, {t: "salire,"}]   # 121
+      - tokens: [{t: "anima"}, {t: "fia", m: "FI.a"}, {t: "a"}, {t: "ciò"}, {t: "più"}, {t: "di"}, {t: "me"}, {t: "degna:"}]   # 122
+      - tokens: [{t: "con"}, {t: "lei"}, {t: "ti"}, {t: "lascerò"}, {t: "nel"}, {t: "mio"}, {t: "partire;"}]   # 123
+      - tokens: [{t: "ché"}, {t: "quello"}, {t: "imperador"}, {t: "che"}, {t: "là"}, {t: "sù"}, {t: "regna,"}]   # 124
+      - tokens: [{t: "perch’i’"}, {t: "fu’"}, {t: "ribellante"}, {t: "a"}, {t: "la"}, {t: "sua"}, {t: "legge,"}]   # 125
+      - tokens: [{t: "non"}, {t: "vuol"}, {t: "che"}, {t: "’n"}, {t: "sua"}, {t: "città"}, {t: "per"}, {t: "me"}, {t: "si"}, {t: "vegna."}]   # 126
+      - tokens: [{t: "In"}, {t: "tutte"}, {t: "parti"}, {t: "impera"}, {t: "e"}, {t: "quivi"}, {t: "regge;"}]   # 127
+      - tokens: [{t: "quivi"}, {t: "è"}, {t: "la"}, {t: "sua"}, {t: "città"}, {t: "e", dialefe: true}, {t: "l’alto"}, {t: "seggio:"}]   # 128
+      - tokens: [{t: "oh"}, {t: "felice"}, {t: "colui"}, {t: "cu’"}, {t: "ivi", dialefe: true}, {t: 'elegge!".'}]   # 129
+      - tokens: [{t: "E"}, {t: "io", dialefe: true}, {t: "a", dialefe: true}, {t: "lui:"}, {t: '"Poeta,'}, {t: "io"}, {t: "ti"}, {t: "richeggio"}]   # 130
+      - tokens: [{t: "per"}, {t: "quello"}, {t: "Dio"}, {t: "che"}, {t: "tu"}, {t: "non"}, {t: "conoscesti,"}]   # 131
+      - tokens: [{t: "acciò"}, {t: "ch’io"}, {t: "fugga"}, {t: "questo"}, {t: "male"}, {t: "e"}, {t: "peggio,"}]   # 132
+      - tokens: [{t: "che"}, {t: "tu"}, {t: "mi"}, {t: "meni"}, {t: "là"}, {t: "dov’or"}, {t: "dicesti,"}]   # 133
+      - tokens: [{t: "sì"}, {t: "ch’io"}, {t: "veggia"}, {t: "la"}, {t: "porta"}, {t: "di"}, {t: "san"}, {t: "Pietro"}]   # 134
+      - tokens: [{t: "e"}, {t: "color"}, {t: "cui"}, {t: "tu"}, {t: "fai"}, {t: "cotanto"}, {t: 'mesti".'}]   # 135
+      - tokens: [{t: "Allor"}, {t: "si"}, {t: "mosse,"}, {t: "e"}, {t: "io", dialefe: true}, {t: "li"}, {t: "tenni"}, {t: "dietro."}]   # 136

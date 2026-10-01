@@ -1,13 +1,70 @@
-# Weft edition of Bashō's frog poem, as printed in Ōtsuka Kōzan's Bashō Haiku Zenshū (1903),
-# checked verbatim against the Wikisource scan page. Weft divides the single printed line into
-# its three 5-7-5 phrases. Each token gives its reading in historical kana (n), from which the
-# sound and the mora count are derived.
+# Weft edition of nine haiku by Bashō, in order of composition, as printed in Ōtsuka Kōzan's
+# Bashō Haiku Zenshū (1903), each checked verbatim against its Wikisource scan page (verify_in).
+# The 1903 edition arranges poems by season word, not by date; the order and dates here are
+# Weft's. Weft divides each single printed line into its three phrases. Each token gives its
+# reading in historical kana (n), from which the sound and the mora count are derived.
 joiner: ""
 verify_in: sources/otsuka1903-p23.txt
 sections:
+  - id: "1680"
+    title: "Bashō, 1680: a crow on a withered branch"
+    verify_in: sources/otsuka1903-p108.txt
+    lines:
+      - tokens: [{t: 枯枝, n: かれえだ}, {t: に, n: に}]
+      - tokens: [{t: 烏, n: からす}, {t: の, n: の}, {t: とまり, n: とまり}, {t: けり, n: けり}]
+      - tokens: [{t: 秋, n: あき}, {t: の, n: の}, {t: 暮, n: くれ}]
+  - id: "1684"
+    title: "Bashō, 1684: setting out, bones bleaching in the fields"
+    verify_in: sources/otsuka1903-p107.txt
+    lines:
+      - tokens: [{t: 野ざらし, n: のざらし}, {t: を, n: を}]
+      - tokens: [{t: 心, n: こころ}, {t: に, n: に}, {t: 風, n: かぜ}, {t: の, n: の}]
+      - tokens: [{t: 沁む, n: しむ}, {t: 身, n: み}, {t: 哉, n: かな}]
   - id: "1686"
     title: "Bashō, 1686: the old pond"
     lines:
       - tokens: [{t: 古池, n: ふるいけ}, {t: や, n: や}]
       - tokens: [{t: 蛙, n: かはづ}, {t: とびこむ, n: とびこむ}]
       - tokens: [{t: 水, n: みづ}, {t: の, n: の}, {t: 音, n: おと}]
+  - id: "1689a"
+    title: "Bashō, 1689: summer grasses at Hiraizumi"
+    verify_in: sources/otsuka1903-p82.txt
+    lines:
+      - tokens: [{t: 夏草, n: なつくさ}, {t: や, n: や}]
+      - tokens: [{t: 兵, n: つはもの}, {t: ども, n: ども}, {t: が, n: が}]
+      - tokens: [{t: 夢, n: ゆめ}, {t: の, n: の}, {t: 跡, n: あと}]
+  - id: "1689b"
+    title: "Bashō, 1689: stillness at Risshakuji"
+    verify_in: sources/otsuka1903-p77.txt
+    lines:
+      - tokens: [{t: 閑さ, n: しづかさ}, {t: や, n: や}]
+      - tokens: [{t: 岩, n: いは}, {t: に, n: に}, {t: しみ入る, n: しみいる}]
+      - tokens: [{t: せみ, n: せみ}, {t: の, n: の}, {t: 聲, n: こゑ}]
+  - id: "1689c"
+    title: "Bashō, 1689: the Mogami River in the early-summer rains"
+    verify_in: sources/otsuka1903-p96.txt
+    lines:
+      - tokens: [{t: 五月雨, n: さみだれ}, {t: を, n: を}]
+      - tokens: [{t: 集めて, n: あつめて}, {t: 早し, n: はやし}]
+      - tokens: [{t: 最上川, n: もがみがは}]
+  - id: "1689d"
+    title: "Bashō, 1689: the rough sea, Sado, and the River of Heaven"
+    verify_in: sources/otsuka1903-p119.txt
+    lines:
+      - tokens: [{t: 荒海, n: あらうみ}, {t: や, n: や}]
+      - tokens: [{t: 佐渡, n: さど}, {t: に, n: に}, {t: 橫ふ, n: よこたふ}]
+      - tokens: [{t: 天の川, n: あまのがは}]
+  - id: "1690"
+    title: "Bashō, 1690: the cicada's voice"
+    verify_in: sources/otsuka1903-p77.txt
+    lines:
+      - tokens: [{t: 頓て, n: やがて}, {t: 死ぬ, n: しぬ}]
+      - tokens: [{t: けしき, n: けしき}, {t: は, n: は}, {t: 見えず, n: みえず}]
+      - tokens: [{t: 蟬, n: せみ}, {t: の, n: の}, {t: 聲, n: こゑ}]
+  - id: "1694"
+    title: "Bashō, 1694: ill on a journey, his last poem"
+    verify_in: sources/otsuka1903-p200.txt
+    lines:
+      - tokens: [{t: 旅, n: たび}, {t: に, n: に}, {t: 病んで, n: やんで}]
+      - tokens: [{t: 夢, n: ゆめ}, {t: は, n: は}, {t: 枯野, n: かれの}, {t: を, n: を}]
+      - tokens: [{t: かけめぐる, n: かけめぐる}]

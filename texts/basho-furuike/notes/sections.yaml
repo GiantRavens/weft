@@ -1,4 +1,4 @@
-# Notes for Bashō's frog poem.
+# Notes for the Bashō selection. The frog-poem notes (n.ba.*) are kept from the single-poem pilot.
 - id: n.ba.sound
   attach: ba.1686.1
   kind: editorial
@@ -34,3 +34,64 @@
   kind: quoted
   source: "B. H. Chamberlain, Bashō and the Japanese Poetical Epigram (1902), p. 279 (a stray OCR period removed)"
   text: "The following epigram, which every Japanese has by heart, also probably dates from this period"
+- id: n.ba.1680.kure
+  attach: ba.1680.3.3
+  kind: editorial
+  status: draft
+  text: "Aki no kure can mean an evening in autumn or the end of the autumn season, and the line does not choose. Chamberlain took it as 'the end of autumn', Aston as 'this autumn eve'. Number is open in the same way: Japanese nouns do not mark it, so Chamberlain has 'some rooks' and Aston 'a crow'."
+- id: n.ba.1680.metre
+  attach: ba.1680.2
+  kind: editorial
+  status: draft
+  leans_on: "B. H. Chamberlain, Bashō and the Japanese Poetical Epigram (1902), p. 288"
+  text: "The middle phrase counts nine morae, not seven. Chamberlain noted the excess and judged that Bashō allowed it for the sake of the image. The earliest printed version, in the anthology Azuma Nikki (1681), is longer still: its middle phrase reads とまりたるや. The version given here, with とまりけり, is the one later anthologies print. The dates of composition in this selection are Weft's, from the usual chronology; the 1903 edition arranges poems by season word and gives no dates."
+- id: n.ba.1684.nozarashi
+  attach: ba.1684.1.1
+  kind: editorial
+  status: draft
+  text: "Nozarashi is a skull or skeleton left out in a field and bleached by the weather. The poem opens the travel journal named after it, Nozarashi Kikō, which records the journey Bashō began from Edo in the autumn of 1684. The sense is that he sets out prepared to die on the road. No public-domain English translation of this poem was found; the gloss row carries it, and Yuasa's 1966 translation of the journal is cited."
+- id: n.ba.1684.text
+  attach: ba.1684.3.1
+  kind: editorial
+  status: draft
+  text: "The 1903 edition writes 沁む for shimu, to pierce or soak into; the journal's text usually writes the word in kana, しむ. The poem is otherwise the same."
+- id: n.ba.1689.oku
+  attach: ba.1689a.1
+  kind: editorial
+  status: draft
+  text: "The four poems of 1689 come from the journey recorded in Oku no Hosomichi (The Narrow Road to the Interior), a prose travel journal with poems. Bashō left Edo in the spring of 1689 and walked north and then down the Japan Sea coast for about five months, ending at Ōgaki. The journal was printed in 1702, after his death. The poems were revised for it, so some differ from the forms first recorded on the road."
+- id: n.ba.1689a.hiraizumi
+  attach: ba.1689a.3
+  kind: editorial
+  status: draft
+  text: "The occasion was a visit to Takadachi at Hiraizumi, where the warrior Minamoto no Yoshitsune died in 1189; the 1903 edition's headnote reads 奧州高舘にて, 'at Takadachi in Ōshū'. In Oku no Hosomichi the poem follows Bashō's paraphrase of a line by the Chinese poet Du Fu, that the state is broken but the mountains and rivers remain. Ga in tsuwamono-domo ga is the classical genitive, 'the warriors' dream', not the modern subject marker."
+- id: n.ba.1689b.risshakuji
+  attach: ba.1689b.1
+  kind: editorial
+  status: draft
+  text: "Written at Risshakuji (also read Ryūshakuji), the mountain temple called Yamadera, in present Yamagata. The 1903 edition prints the headnote as 立石亭, with 亭, pavilion, where the temple's name has 寺, temple; the scan agrees with the transcription, so this appears to be the 1903 printing's error. Oku no Hosomichi writes the last two phrases 岩にしみ入蝉の声, with 蝉 in kanji and no る. In the 1920s the poet Saitō Mokichi and the scholar Komiya Toyotaka disputed which species of cicada was meant. No public-domain English translation was found."
+- id: n.ba.1689c.mogami
+  attach: ba.1689c.2.2
+  kind: editorial
+  status: draft
+  text: "Samidare are the rains of the fifth lunar month, roughly June to early July, a season word for summer. An earlier version ended its middle phrase with suzushi, cool, and opened a linked-verse session at Ōishida on the river; the version in Oku no Hosomichi has hayashi, swift, after Bashō had gone down the river by boat. No public-domain English translation was found."
+- id: n.ba.1689d.sado
+  attach: ba.1689d.2.3
+  kind: editorial
+  status: draft
+  text: "Written on the Echigo coast, facing the island of Sado, which had long been a place of exile. Ama no gawa, the River of Heaven, is the Milky Way, a season word for autumn. The 1903 edition writes 橫ふ and Oku no Hosomichi よこたふ, yokotau, to lie across. Chamberlain romanized it yokotau, following the spelling; by Bashō's time the ending was probably said yokotō, as both sound schemes here give it, with the long ō counting two morae."
+- id: n.ba.1690.cicada
+  attach: ba.1690.1
+  kind: editorial
+  status: draft
+  text: "The 1903 edition's headnote is 無常迅速, a Buddhist phrase: impermanence comes swiftly. The poem was printed in the anthology Sarumino (1691). Chamberlain says it was a parting word to a visitor at Bashō's hut by Lake Biwa. Hearn quotes it in his essay 'Semi' among poems that liken the cicadas' brief clamor to the passing generations of men."
+- id: n.ba.1694.last
+  attach: ba.1694.1
+  kind: editorial
+  status: draft
+  text: "Bashō composed this in Osaka in the tenth month of 1694, a few days before he died there; it is usually treated as his last poem. The first phrase counts six morae, one over the five of the form. The record kept by his pupils writes the last word かけ廻る, which Chamberlain read kake-mawaru; the 1903 edition prints かけめぐる, kake-meguru, the reading now usual."
+- id: n.ba.1694.chamberlain
+  attach: ba.1694.3
+  kind: quoted
+  source: "B. H. Chamberlain, Bashō and the Japanese Poetical Epigram (1902), p. 289, reporting Bashō's words"
+  text: "Neither is this a death-bed stanza, nor is it not one."
