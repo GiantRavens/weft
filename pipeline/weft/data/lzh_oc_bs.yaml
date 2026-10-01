@@ -9,6 +9,29 @@
 # Module:zh/data/och-pron-ZS/<character>, marked system: ZS; fields: oc, rime_group, phonetic.
 # Regenerate with a fetch of the pinned revisions; do not hand-edit the readings.
 
+一:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/一", oldid: 58461134}
+  readings:
+  - {pinyin: "yī", mc: "ʔjit", oc: "*ʔi[t]", en: "one"}
+七:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/七", oldid: 58461137}
+  readings:
+  - {pinyin: "qī", mc: "tshit", oc: "*[tsʰ]i[t]", en: "seven"}
+三:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/三", oldid: 58461139}
+  readings:
+  - {pinyin: "sān", mc: "sam", oc: "*s.rum (*s.r- > s-; infl. by 四 *s-?)", en: "three"}
+  - {pinyin: "sān", mc: "samH", oc: "*s.r[u]m-s (*s.r- > *s-, infl. by 四 *s-?)", en: "three times"}
+上:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/上", oldid: 58461140}
+  readings:
+  - {pinyin: "shàng", mc: "dzyangX", oc: "*Cə-daŋʔ", en: "ascend"}
+  - {pinyin: "shàng", mc: "dzyangX", oc: "*m-daŋʔ", en: "to put up"}
+  - {pinyin: "shàng", mc: "dzyangH", oc: "*daŋʔ-s", en: "top, above (n.)"}
 下:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/下", oldid: 58461141}
@@ -21,55 +44,162 @@
   readings:
   - {pinyin: "bù", mc: "pjuw", oc: "*pə", en: "not"}
   - {pinyin: "bù", mc: "pjuw", oc: "*pə", en: "不律 writing brush (pron. in Wú 吳 ap. Shuōwén; E. Hàn)"}
+主:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/主", oldid: 58461161}
+  readings:
+  - {pinyin: "zhǔ", mc: "tsyuX", oc: "*toʔ", en: "master; host"}
+乃:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/乃", oldid: 58461164}
+  readings:
+  - {pinyin: "nǎi", mc: "nojX", oc: "*nˤə(ŋ)ʔ", en: "your"}
+  - {pinyin: "nǎi", mc: "nojX", oc: "*nˤəʔ", en: "then"}
 之:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/之", oldid: 58461167}
   readings:
   - {pinyin: "zhī", mc: "tsyi", oc: "*tə", en: "go to"}
   - {pinyin: "zhī", mc: "tsyi", oc: "*tə", en: "(3p object pronoun; attributive particle)"}
+乎:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/乎", oldid: 58461169}
+  readings:
+  - {pinyin: "hū", mc: "hu", oc: "*ɢˤa", en: "(Q particle)"}
+  - {pinyin: "hū", mc: "hu", oc: "*ɢˤa", en: "in, at"}
+也:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/也", oldid: 58461176}
+  readings:
+  - {pinyin: "yě", mc: "yæX", oc: "*lAjʔ", en: "(final particle)"}
+亂:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/亂", oldid: 58461179}
+  readings:
+  - {pinyin: "luàn", mc: "lwanH", oc: "*[r]ˤo[n]-s", en: "disorder, rebellion"}
 事:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/事", oldid: 58461181}
   readings:
   - {pinyin: "shì", mc: "dzriH", oc: "*[m-s-]rəʔ-s", en: "serve; service, affair"}
+二:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/二", oldid: 58461182}
+  readings:
+  - {pinyin: "èr", mc: "nyijH", oc: "*ni[j]-s", en: "two"}
+五:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/五", oldid: 58461186}
+  readings:
+  - {pinyin: "wǔ", mc: "nguX", oc: "*C.ŋˤaʔ", en: "five"}
+亡:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/亡", oldid: 58461192}
+  readings:
+  - {pinyin: "wáng", mc: "mjang", oc: "*maŋ", en: "flee; disappear; die"}
 人:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/人", oldid: 58461204}
   readings:
   - {pinyin: "rén", mc: "nyin", oc: "*ni[ŋ]", en: "(other) person"}
+仁:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/仁", oldid: 58461206}
+  readings:
+  - {pinyin: "rén", mc: "nyin", oc: "*niŋ", en: "kind"}
+令:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/令", oldid: 58461220}
+  readings:
+  - {pinyin: "líng", mc: "leng", oc: "*[r]ˤiŋ", en: "脊令 tsjek.leng (a kind of water bird)"}
+  - {pinyin: "líng", mc: "ljeng", oc: "*riŋ", en: "send (a person)"}
+  - {pinyin: "lìng", mc: "ljengH", oc: "*riŋ-s", en: "issue a command"}
 以:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/以", oldid: 58461221}
   readings:
   - {pinyin: "yǐ", mc: "yiX", oc: "*ləʔ", en: "take, use"}
+佐:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/佐", oldid: 58461241}
+  readings:
+  - {pinyin: "zuǒ", mc: "tsaH", oc: "*tsˤarʔ-s (dialect: *-r > *-j)", en: "aid, assist"}
+佚:
+  system: ZS
+  src: {page: "Module:zh/data/och-pron-ZS/佚", oldid: 58447111}
+  readings:
+  - {oc: "*liɡ", rime_group: "質", phonetic: "失", mc_rhyme_char: "逸", note: ""}
 作:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/作", oldid: 58461247}
   readings:
   - {pinyin: "zuò", mc: "tsak", oc: "*[ts]ˤak", en: "do, work"}
   - {pinyin: "zuò", mc: "tsuH", oc: "*[ts]ˤak-s", en: "do, work"}
+信:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/信", oldid: 58461276}
+  readings:
+  - {pinyin: "xìn", mc: "sinH", oc: "*s-ni[ŋ]-s", en: "truthful"}
+備:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/備", oldid: 58461316}
+  readings:
+  - {pinyin: "bèi", mc: "bijH", oc: "*[b]rək-s", en: "complete (adj.)"}
+傳:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/傳", oldid: 58461320}
+  readings:
+  - {pinyin: "chuán", mc: "drjwen", oc: "*m-tron", en: "transmit"}
+  - {pinyin: "zhuàn", mc: "drjwenH", oc: "*N-tron-s", en: "what has been transmitted"}
+  - {pinyin: "zhuàn", mc: "trjwenH", oc: "*tron-s", en: "relay post"}
 傾:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/傾", oldid: 58461324}
   readings:
   - {pinyin: "qīng", mc: "khjwieng", oc: "*[k]ʷʰeŋ", en: "incline (v.)"}
+先:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/先", oldid: 58461358}
+  readings:
+  - {pinyin: "xiān", mc: "sen", oc: "*sˤər", en: "first"}
+  - {pinyin: "xiàn", mc: "senH", oc: "*sˤər-s", en: "go first"}
 兩:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/兩", oldid: 58461372}
   readings:
   - {pinyin: "liǎng", mc: "ljangX", oc: "*p.raŋʔ", en: "a pair"}
+兵:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/兵", oldid: 58461378}
+  readings:
+  - {pinyin: "bīng", mc: "pjæng", oc: "*praŋ", en: "weapon"}
 其:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/其", oldid: 58461379}
   readings:
   - {pinyin: "qí", mc: "gi", oc: "*ɡə", en: "modal particle"}
   - {pinyin: "qí", mc: "gi", oc: "*ɡə", en: "(3p possessive)"}
+凡:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/凡", oldid: 58461412}
+  readings:
+  - {pinyin: "fán", mc: "bjom", oc: "*[b]rom", en: "in every case"}
 出:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/出", oldid: 58461416}
   readings:
   - {pinyin: "chū", mc: "tsyhwit", oc: "*t-kʰut", en: "go or come out"}
   - {pinyin: "chuì", mc: "tsyhwijH", oc: "*t-kʰut-s", en: "bring or take out"}
+利:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/利", oldid: 58461433}
+  readings:
+  - {pinyin: "lì", mc: "lijH", oc: "*C.ri[t]-s", en: "sharp; profit"}
+制:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/制", oldid: 58461436}
+  readings:
+  - {pinyin: "zhì", mc: "tsyejH", oc: "*tet-s", en: "cut out, prepare"}
 前:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/前", oldid: 58461446}
@@ -80,6 +210,45 @@
   src: {page: "Module:zh/data/och-pron-BS/功", oldid: 58461464}
   readings:
   - {pinyin: "gōng", mc: "kuwng", oc: "*kˤoŋ", en: "work, effort"}
+勇:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/勇", oldid: 58461475}
+  readings:
+  - {pinyin: "yǒng", mc: "yowngX", oc: "*loŋʔ", en: "brave"}
+勝:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/勝", oldid: 58461480}
+  readings:
+  - {pinyin: "shēng", mc: "sying", oc: "*l̥ əŋ", en: "equal to, capable of"}
+  - {pinyin: "shèng", mc: "syingH", oc: "*l̥ əŋ-s", en: "overcome; surpass"}
+勞:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/勞", oldid: 58461481}
+  readings:
+  - {pinyin: "láo", mc: "law", oc: "*[r]ˤaw", en: "toil"}
+  - {pinyin: "lào", mc: "lawH", oc: "*[r]ˤaw-s", en: "to reward for toil"}
+勢:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/勢", oldid: 58461483}
+  readings:
+  - {pinyin: "shì", mc: "syejH", oc: "*ŋ̊ et-s", en: "circumstances, setting"}
+卑:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/卑", oldid: 58461518}
+  readings:
+  - {pinyin: "bēi", mc: "pjie", oc: "*pe", en: "low, humble"}
+  - {pinyin: "bēi", mc: "pjie", oc: "*pe", en: "鮮卑 *s[a]r.pe Xiānbēi"}
+卒:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/卒", oldid: 58461519}
+  readings:
+  - {pinyin: "zú", mc: "tswit", oc: "*[ts]ut", en: "finish, die"}
+  - {pinyin: "zú", mc: "tswot", oc: "*[ts]ˤut", en: "soldier"}
+危:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/危", oldid: 58461533}
+  readings:
+  - {pinyin: "wēi", mc: "ngjwe", oc: "*[ŋ](r)[o]j", en: "in danger"}
 去:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/去", oldid: 58461555}
@@ -91,6 +260,13 @@
   src: {page: "Module:zh/data/och-pron-BS/又", oldid: 58461558}
   readings:
   - {pinyin: "yòu", mc: "hjuwH", oc: "*[ɢ]ʷəʔ-s", en: "also, in addition"}
+取:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/取", oldid: 58461565}
+  readings:
+  - {pinyin: "cǒu", mc: "tshuwX", oc: "*tsʰˤoʔ", en: "take"}
+  - {pinyin: "qǔ", mc: "tshjuX", oc: "*tsʰoʔ", en: "take"}
+  - {pinyin: "qù", mc: "tshjuH", oc: "*[ts]ʰoʔ-s", en: "take (a wife)"}
 可:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/可", oldid: 58461577}
@@ -106,6 +282,11 @@
   src: {page: "Module:zh/data/och-pron-BS/名", oldid: 58461591}
   readings:
   - {pinyin: "míng", mc: "mjieng", oc: "*C.meŋ", en: "name"}
+吾:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/吾", oldid: 58461610}
+  readings:
+  - {pinyin: "wú", mc: "ngu", oc: "*ŋˤa", en: "I, my"}
 和:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/和", oldid: 58461623}
@@ -122,11 +303,52 @@
   src: {page: "Module:zh/data/och-pron-BS/善", oldid: 58461663}
   readings:
   - {pinyin: "shàn", mc: "dzyenX", oc: "*[ɡ]e[n]ʔ", en: "good"}
+嚴:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/嚴", oldid: 58461707}
+  readings:
+  - {pinyin: "yán", mc: "ngjæm", oc: "*ŋ(r)am", en: "stern, majestic"}
+四:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/四", oldid: 58461712}
+  readings:
+  - {pinyin: "sì", mc: "sijH", oc: "*s.li[j]-s", en: "four"}
+因:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/因", oldid: 58461715}
+  readings:
+  - {pinyin: "yīn", mc: "ʔjin", oc: "*ʔi[n]", en: "rely on"}
+國:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/國", oldid: 58461725}
+  readings:
+  - {pinyin: "guó", mc: "kwok", oc: "*[C.q]ʷˤək", en: "state (n.)"}
 地:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/地", oldid: 58461736}
   readings:
   - {pinyin: "dì", mc: "dijH", oc: "*[l]ˤej-s", en: "earth, ground"}
+士:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/士", oldid: 58461809}
+  readings:
+  - {pinyin: "shì", mc: "dzriX", oc: "*[m-s-]rəʔ", en: "officer; gentleman"}
+外:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/外", oldid: 58461824}
+  readings:
+  - {pinyin: "wài", mc: "ngwajH", oc: "*[ŋ]ʷˤa[t]-s", en: "outside"}
+多:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/多", oldid: 58461827}
+  readings:
+  - {pinyin: "duō", mc: "ta", oc: "*[t.l]ˤaj", en: "many"}
+大:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/大", oldid: 58461832}
+  readings:
+  - {pinyin: "dà", mc: "daH", oc: "*lˤat-s (MC F!)", en: "big"}
+  - {pinyin: "dà", mc: "dajH", oc: "*lˤa[t]-s", en: "big"}
 天:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/天", oldid: 58461834}
@@ -150,6 +372,64 @@
   src: {page: "Module:zh/data/och-pron-BS/始", oldid: 58461883}
   readings:
   - {pinyin: "shǐ", mc: "syiX", oc: "*l̥ əʔ", en: "begin"}
+子:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/子", oldid: 58461920}
+  readings:
+  - {pinyin: "zǐ", mc: "tsiX", oc: "*[ts]əʔ", en: "1st earthly branch"}
+  - {pinyin: "zǐ", mc: "tsiX", oc: "*tsəʔ", en: "child; gentleman, master"}
+存:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/存", oldid: 58461924}
+  readings:
+  - {pinyin: "cún", mc: "dzwon", oc: "*[dz]ˤə[n]", en: "exist"}
+孫:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/孫", oldid: 58461931}
+  readings:
+  - {pinyin: "sūn", mc: "swon", oc: "*[s]ˤu[n]", en: "grandchild; descendant"}
+孰:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/孰", oldid: 58461932}
+  readings:
+  - {pinyin: "shú", mc: "dzyuwk", oc: "*[d]uk", en: "who"}
+官:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/官", oldid: 58461949}
+  readings:
+  - {pinyin: "guān", mc: "kwan", oc: "*kʷˤa[n]", en: "official (n.)"}
+家:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/家", oldid: 58461963}
+  readings:
+  - {pinyin: "jiā", mc: "kæ", oc: "*kˤra", en: "household"}
+寒:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/寒", oldid: 58461974}
+  readings:
+  - {pinyin: "hán", mc: "han", oc: "*Cə.[ɡ]ˤa[n]", en: "cold"}
+察:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/察", oldid: 58461977}
+  readings:
+  - {pinyin: "chá", mc: "tsrhɛt", oc: "*[tsʰ]ˤret", en: "examine"}
+實:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/實", oldid: 58461981}
+  readings:
+  - {pinyin: "shí", mc: "zyit", oc: "*mə.li[t]", en: "fruit; full"}
+將:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/將", oldid: 58461992}
+  readings:
+  - {pinyin: "jiāng", mc: "tsjang", oc: "*[ts]aŋ", en: "bring"}
+  - {pinyin: "jiàng", mc: "tsjangH", oc: "*[ts]aŋ-s", en: "lead (v.); leader"}
+少:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/少", oldid: 58462000}
+  readings:
+  - {pinyin: "shǎo", mc: "syewX", oc: "*[s.t]ewʔ", en: "few"}
+  - {pinyin: "shào", mc: "syewH", oc: "*[s-t]ewʔ-s", en: "young"}
 居:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/居", oldid: 58462017}
@@ -167,6 +447,17 @@
   src: {page: "Module:zh/data/och-pron-BS/常", oldid: 58462094}
   readings:
   - {pinyin: "cháng", mc: "dzyang", oc: "*[d]aŋ", en: "constant"}
+廟:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/廟", oldid: 58462146}
+  readings:
+  - {pinyin: "miào", mc: "mjewH", oc: "*[m]raw-s", en: "a kind of building with side rooms"}
+廣:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/廣", oldid: 58462148}
+  readings:
+  - {pinyin: "guǎng", mc: "kwangX", oc: "*kʷˤaŋʔ", en: "wide"}
+  - {pinyin: "guǎng", mc: "kwangH", oc: "*kʷˤaŋʔ-s", en: "distance from east to west"}
 弗:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/弗", oldid: 58462169}
@@ -174,41 +465,96 @@
   - {pinyin: "fú", mc: "pjut", oc: "*p[u]t", en: "(negation)"}
   - {pinyin: "fú", mc: "pjut", oc: "*put", en: "gust of wind"}
   - {pinyin: "fú", mc: "pjut", oc: "*put", en: "writing brush (pron. in Yān 燕, ap. Shuōwén, E. Hàn)"}
+強:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/強", oldid: 60034508}
+  readings:
+  - {pinyin: "qiáng", mc: "gjang", oc: "*N-kaŋ", en: "strong"}
+  - {pinyin: "qiǎng", mc: "gjangX", oc: "*m-kaŋʔ", en: "make an effort"}
 後:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/後", oldid: 58462215}
   readings:
   - {pinyin: "hòu", mc: "huwX", oc: "*[ɢ]ˤ(r)oʔ", en: "after"}
   - {pinyin: "hòu", mc: "huwH", oc: "*[ɢ]ˤ(r)oʔ-s", en: "put after ?"}
+得:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/得", oldid: 58462219}
+  readings:
+  - {pinyin: "dé", mc: "tok", oc: "*tˤək", en: "obtain"}
 徼:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/徼", oldid: 58462233}
   readings:
   - {pinyin: "jiāo", mc: "kew", oc: "*[k]ˤew", en: "seek; follow a course"}
   - {pinyin: "jiào", mc: "kewH", oc: "*[k]ˤew(k)-s", en: "limit"}
+必:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/必", oldid: 58462236}
+  readings:
+  - {pinyin: "bì", mc: "pjit", oc: "*pi[t]", en: "necessarily"}
+怒:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/怒", oldid: 58462251}
+  readings:
+  - {pinyin: "nù", mc: "nuX", oc: "*C.nˤaʔ", en: "angry"}
+  - {pinyin: "nù", mc: "nuH", oc: "*C.nˤaʔ-s", en: "anger, angry; vigorous"}
 恃:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/恃", oldid: 58462264}
   readings:
   - {pinyin: "shì", mc: "dzyiX", oc: "*[d]əʔ", en: "depend on"}
+情:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/情", oldid: 58462288}
+  readings:
+  - {pinyin: "qíng", mc: "dzjeng", oc: "*[dz]eŋ", en: "affections; response to circumstances"}
 惡:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/惡", oldid: 58462297}
   readings:
   - {pinyin: "è", mc: "ʔak", oc: "*ʔˤak", en: "bad, ugly"}
   - {pinyin: "wù", mc: "ʔuH", oc: "*ʔˤak-s", en: "hate (v.)"}
+意:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/意", oldid: 58462304}
+  readings:
+  - {pinyin: "yì", mc: "ʔiH", oc: "*ʔ(r)ək-s", en: "thought (n.)"}
 成:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/成", oldid: 58462371}
   readings:
   - {pinyin: "chéng", mc: "dzyeng", oc: "*[d]eŋ", en: "to become (v.i.)"}
   - {pinyin: "chéng", mc: "dzyeng", oc: "*m-[d]eŋ", en: "to complete (tr. v)"}
+戰:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/戰", oldid: 58462384}
+  readings:
+  - {pinyin: "zhàn", mc: "tsyenH", oc: "*tar-s", en: "to fear"}
+  - {pinyin: "zhàn", mc: "tsyenH", oc: "*tar-s", en: "battle"}
+撓:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/撓", oldid: 58462504}
+  readings:
+  - {pinyin: "náo", mc: "nræwX", oc: "*m-[q]ʰˤrewʔ", en: "bend (v.); flinch"}
+  - {pinyin: "náo", mc: "nræwX", oc: "*nˤ<r>[a]wʔ", en: "disturb"}
+攻:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/攻", oldid: 58462543}
+  readings:
+  - {pinyin: "gōng", mc: "kuwng", oc: "*kˤoŋ", en: "attack"}
 故:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/故", oldid: 58462546}
   readings:
   - {pinyin: "gù", mc: "kuH", oc: "*kˤa(ʔ)-s", en: "fact; reason"}
   - {pinyin: "gù", mc: "kuH", oc: "*kˤaʔ-s", en: "old (not new)"}
+敗:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/敗", oldid: 58462553}
+  readings:
+  - {pinyin: "bài", mc: "bæjH", oc: "*N-pˤra[t]-s", en: "suffer defeat"}
+  - {pinyin: "bài", mc: "pæjH", oc: "*pˤra[t]-s", en: "defeat (v.t.)"}
 教:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/教", oldid: 58462555}
@@ -222,6 +568,17 @@
   - {pinyin: "sī", mc: "sje", oc: "*[s]e", en: "split (v.)"}
   - {pinyin: "sī", mc: "sje", oc: "*[s]e", en: "this"}
   - {pinyin: "sī", mc: "sje", oc: "*se", en: "斯須 a short time"}
+於:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/於", oldid: 58462590}
+  readings:
+  - {pinyin: "wū", mc: "ʔu", oc: "*[ʔ]ˤa", en: "oh!"}
+  - {pinyin: "yú", mc: "ʔjo", oc: "*[ʔ]a", en: "at (locative preposition)"}
+明:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/明", oldid: 58462619}
+  readings:
+  - {pinyin: "míng", mc: "mjæng", oc: "*mraŋ", en: "bright"}
 易:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/易", oldid: 58462621}
@@ -233,11 +590,53 @@
   src: {page: "Module:zh/data/och-pron-BS/是", oldid: 58462630}
   readings:
   - {pinyin: "shì", mc: "dzyeX", oc: "*[d]eʔ", en: "this"}
+時:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/時", oldid: 58462635}
+  readings:
+  - {pinyin: "shí", mc: "dzyi", oc: "*[d]ə (~ *[d]əʔ)", en: "time"}
+智:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/智", oldid: 58462649}
+  readings:
+  - {pinyin: "zhì", mc: "trjeH", oc: "*tre-s", en: "knowledge"}
+暑:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/暑", oldid: 58462653}
+  readings:
+  - {pinyin: "shǔ", mc: "syoX", oc: "*s-tʰaʔ", en: "heat"}
+曰:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/曰", oldid: 58462669}
+  readings:
+  - {pinyin: "yuē", mc: "hjwot", oc: "*[ɢ]ʷat", en: "say"}
+曲:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/曲", oldid: 58462670}
+  readings:
+  - {pinyin: "qū", mc: "khjowk", oc: "*kʰ(r)ok", en: "to bend"}
 有:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/有", oldid: 58462683}
   readings:
   - {pinyin: "yǒu", mc: "hjuwX", oc: "*[ɢ]ʷəʔ", en: "have, exist"}
+未:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/未", oldid: 58462695}
+  readings:
+  - {pinyin: "wèi", mc: "mjɨjH", oc: "*m[ə]t-s", en: "not yet"}
+  - {pinyin: "wèi", mc: "mjɨjH", oc: "*m[ə]t-s", en: "8th earthly branch"}
+校:
+  system: ZS
+  src: {page: "Module:zh/data/och-pron-ZS/校", oldid: 58451466}
+  readings:
+  - {oc: "*kreːws", rime_group: "宵", phonetic: "交", mc_rhyme_char: "敎", note: ""}
+  - {oc: "*ɡreːws", rime_group: "宵", phonetic: "交", mc_rhyme_char: "效", note: ""}
+權:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/權", oldid: 58462865}
+  readings:
+  - {pinyin: "quán", mc: "gjwen", oc: "*[ɡ]ʷrar", en: "weight of a steelyard"}
 欲:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/欲", oldid: 58462872}
@@ -248,11 +647,32 @@
   src: {page: "Module:zh/data/och-pron-BS/此", oldid: 58462887}
   readings:
   - {pinyin: "cǐ", mc: "tshjeX", oc: "*[tsʰ]e(j)ʔ", en: "this"}
+死:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/死", oldid: 58462894}
+  readings:
+  - {pinyin: "sǐ", mc: "sijX", oc: "*sijʔ", en: "die (v.)"}
 母:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/母", oldid: 58462917}
   readings:
   - {pinyin: "mǔ", mc: "muwX", oc: "*məʔ (? or *mˤoʔ)", en: "mother"}
+民:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/民", oldid: 58462931}
+  readings:
+  - {pinyin: "mín", mc: "mjin", oc: "*mi[ŋ]", en: "people"}
+況:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/況", oldid: 58462975}
+  readings:
+  - {pinyin: "kuàng", mc: "xjwangH", oc: "*[m̥ ]aŋ-s", en: "compare with, be equal to"}
+  - {pinyin: "kuàng", mc: "xjwangH", oc: "*[m̥ ]aŋ-s", en: "how much the more"}
+法:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/法", oldid: 58462983}
+  readings:
+  - {pinyin: "fǎ", mc: "pjop", oc: "*[p.k]ap", en: "model, law"}
 為:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/為", oldid: 58463173}
@@ -277,6 +697,11 @@
   src: {page: "Module:zh/data/och-pron-BS/物", oldid: 58463252}
   readings:
   - {pinyin: "wù", mc: "mjut", oc: "*C.mut", en: "thing"}
+狹:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/狹", oldid: 58463278}
+  readings:
+  - {pinyin: "xiá", mc: "hɛp", oc: "*N-kˤ<r>ep", en: "narrow"}
 玄:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/玄", oldid: 58463298}
@@ -289,6 +714,21 @@
   - {pinyin: "shēng", mc: "sræng", oc: "*sreŋ (MC srj- > sr-; or *s.reŋ ?)", en: "bear, be born; live"}
   - {pinyin: "shēng", mc: "sræng", oc: "*sreŋ", en: "fresh, raw"}
   - {pinyin: "shēng", mc: "srjæng", oc: "*sreŋ (or *s.reŋ ?)", en: "bear, be born; live"}
+用:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/用", oldid: 58463346}
+  readings:
+  - {pinyin: "yòng", mc: "yowngH", oc: "*loŋ-s", en: "use (v.)"}
+畏:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/畏", oldid: 58463361}
+  readings:
+  - {pinyin: "wèi", mc: "ʔjwɨjH", oc: "*ʔuj-s", en: "fear (v.); threaten"}
+留:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/留", oldid: 58463364}
+  readings:
+  - {pinyin: "liú", mc: "ljuw", oc: "*C.ru", en: "stay, remain"}
 異:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/異", oldid: 58463376}
@@ -310,6 +750,11 @@
   src: {page: "Module:zh/data/och-pron-BS/眾", oldid: 58463464}
   readings:
   - {pinyin: "zhòng", mc: "tsyuwngH", oc: "*tuŋ-s", en: "numerous"}
+矣:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/矣", oldid: 58463488}
+  readings:
+  - {pinyin: "yǐ", mc: "hiX", oc: "*qəʔ (atonic)", en: "(final particle)"}
 知:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/知", oldid: 58463489}
@@ -320,6 +765,38 @@
   src: {page: "Module:zh/data/och-pron-BS/短", oldid: 58463491}
   readings:
   - {pinyin: "duǎn", mc: "twanX", oc: "*tˤorʔ", en: "short"}
+示:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/示", oldid: 58463515}
+  readings:
+  - {pinyin: "shì", mc: "zyijH", oc: "*s-ɡijʔ-s", en: "show (v.)"}
+  - {pinyin: "zhì", mc: "tsyeH", oc: "*ke-s", en: "put (= 寘)"}
+算:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/算", oldid: 58463662}
+  readings:
+  - {pinyin: "suàn", mc: "swanH", oc: "*[s]ˤorʔ-s", en: "calculate; tally"}
+索:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/索", oldid: 58463743}
+  readings:
+  - {pinyin: "suǒ", mc: "sak", oc: "*[s]ˤak", en: "twist a rope"}
+  - {pinyin: "suǒ", mc: "sak", oc: "*[s]ˤak", en: "search (v.)"}
+經:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/經", oldid: 58463765}
+  readings:
+  - {pinyin: "jīng", mc: "keng", oc: "*k-lˤeŋ", en: "loom; regulate; norm"}
+練:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/練", oldid: 58463790}
+  readings:
+  - {pinyin: "liàn", mc: "lenH", oc: "*[r]ˤen-s", en: "sized white silk"}
+罰:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/罰", oldid: 58463847}
+  readings:
+  - {pinyin: "fá", mc: "bjot", oc: "*[b][a]t", en: "punish"}
 美:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/美", oldid: 58463860}
@@ -340,11 +817,41 @@
   src: {page: "Module:zh/data/och-pron-BS/聖", oldid: 58463915}
   readings:
   - {pinyin: "shèng", mc: "syengH", oc: "*l̥ eŋ-s", en: "sage (n.)"}
+聞:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/聞", oldid: 58463918}
+  readings:
+  - {pinyin: "wén", mc: "mjun", oc: "*mu[n]", en: "hear (v.)"}
 聲:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/聲", oldid: 58463920}
   readings:
   - {pinyin: "shēng", mc: "syeng", oc: "*[l̥ ]eŋ", en: "sound (n.)"}
+聽:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/聽", oldid: 58463924}
+  readings:
+  - {pinyin: "tīng", mc: "theng", oc: "*l̥ ˤeŋ", en: "listen"}
+  - {pinyin: "tìng", mc: "thengH", oc: "*l̥ ˤeŋ-s", en: "listen to; obey"}
+能:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/能", oldid: 58463961}
+  readings:
+  - {pinyin: "néng", mc: "noj", oc: "*nˤə", en: "a kind of bear"}
+  - {pinyin: "néng", mc: "nong", oc: "*nˤə(ŋ)", en: "a kind of bear"}
+  - {pinyin: "néng", mc: "nong", oc: "*nˤə(ʔ) (~ *nˤəŋ)", en: "able; ability"}
+與:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/與", oldid: 58464032}
+  readings:
+  - {pinyin: "yǔ", mc: "yoX", oc: "*m-q(r)aʔ", en: "give; for; and"}
+  - {pinyin: "yù", mc: "yoH", oc: "*ɢ(r)aʔ-s", en: "participate in"}
+莫:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/莫", oldid: 58464115}
+  readings:
+  - {pinyin: "mò", mc: "mak", oc: "*mˤak", en: "there is no X such that X"}
+  - {pinyin: "mò", mc: "mak", oc: "*mˤak", en: "deliberate (v.) (loan)"}
 萬:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/萬", oldid: 58464126}
@@ -363,6 +870,18 @@
   - {pinyin: "háng", mc: "hang", oc: "*[ɡ]ˤaŋ", en: "rank, row"}
   - {pinyin: "xíng", mc: "hæng", oc: "*Cə.[ɡ]ˤraŋ", en: "walk (v.)"}
   - {pinyin: "xíng", mc: "hængH", oc: "*[ɡ]ˤraŋ-s", en: "action"}
+見:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/見", oldid: 58464348}
+  readings:
+  - {pinyin: "jiàn", mc: "kenH", oc: "*[k]ˤen-s", en: "see (v.)"}
+  - {pinyin: "xiàn", mc: "henH", oc: "*N-[k]ˤen-s", en: "appear"}
+  - {pinyin: "xiàn", mc: "henH", oc: "*m-[k]ˤen-s", en: "cause to appear, introduce"}
+親:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/親", oldid: 58464351}
+  readings:
+  - {pinyin: "qīn", mc: "tshin", oc: "*[tsʰ]i[n]", en: "close; parents"}
 觀:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/觀", oldid: 58464354}
@@ -378,11 +897,36 @@
   - {pinyin: "yán", mc: "ngjon", oc: "*ŋa[n]", en: "I, we"}
   - {pinyin: "yán", mc: "ngjon", oc: "*ŋa[n]", en: "speak; speech"}
   - {pinyin: "yán", mc: "ngjon", oc: "*ŋa[r]", en: "tall"}
+計:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/計", oldid: 58464364}
+  readings:
+  - {pinyin: "jì", mc: "kejH", oc: "*kˤij-s", en: "calculate"}
+詭:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/詭", oldid: 58464401}
+  readings:
+  - {pinyin: "guǐ", mc: "kjweX", oc: "*[k](r)ojʔ", en: "perverse"}
+誘:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/誘", oldid: 58464414}
+  readings:
+  - {pinyin: "yòu", mc: "yuwX", oc: "*luʔ", en: "lead; influence"}
 謂:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/謂", oldid: 58464451}
   readings:
   - {pinyin: "wèi", mc: "hjw+jH", oc: "*[ɢ]ʷə[t]-s", en: "say, tell, call"}
+負:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/負", oldid: 58464514}
+  readings:
+  - {pinyin: "fù", mc: "bjuwX", oc: "*[b]əʔ", en: "carry on the back"}
+賞:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/賞", oldid: 58464545}
+  readings:
+  - {pinyin: "shǎng", mc: "syangX", oc: "*s-taŋʔ", en: "reward (v.)"}
 較:
   system: ZS
   src: {page: "Module:zh/data/och-pron-ZS/較", oldid: 58458348}
@@ -394,12 +938,28 @@
   src: {page: "Module:zh/data/och-pron-BS/辭", oldid: 58464662}
   readings:
   - {pinyin: "cí", mc: "zi", oc: "*sə.lə", en: "words"}
+近:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/近", oldid: 58464672}
+  readings:
+  - {pinyin: "jìn", mc: "gjɨnX", oc: "*N-kərʔ", en: "near"}
+  - {pinyin: "jìn", mc: "gjɨnH", oc: "*s-N-kərʔ-s", en: "be near to (v.t.)"}
 道:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/道", oldid: 58464719}
   readings:
   - {pinyin: "dǎo", mc: "dawH", oc: "*lˤuʔ-s", en: "show the way"}
   - {pinyin: "dào", mc: "dawX", oc: "*[kə.l]ˤuʔ", en: "way"}
+遠:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/遠", oldid: 58464725}
+  readings:
+  - {pinyin: "yuǎn", mc: "hjwonX", oc: "*C.ɢʷanʔ", en: "far"}
+避:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/避", oldid: 58464741}
+  readings:
+  - {pinyin: "bì", mc: "bjieH", oc: "*[b]ek-s", en: "avoid"}
 長:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/長", oldid: 58464870}
@@ -411,11 +971,34 @@
   src: {page: "Module:zh/data/och-pron-BS/門", oldid: 58464871}
   readings:
   - {pinyin: "mén", mc: "mwon", oc: "*mˤə[r]", en: "gate, door"}
+陰:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/陰", oldid: 58464914}
+  readings:
+  - {pinyin: "yīn", mc: "ʔim", oc: "*q(r)um", en: "dark"}
+陽:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/陽", oldid: 58464921}
+  readings:
+  - {pinyin: "yáng", mc: "yang", oc: "*laŋ", en: "bright"}
 隨:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/隨", oldid: 58464937}
   readings:
   - {pinyin: "suí", mc: "zjwe", oc: "*sə.loj", en: "follow"}
+險:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/險", oldid: 58464938}
+  readings:
+  - {pinyin: "xiǎn", mc: "xjæmX", oc: "*qʰr[a]mʔ", en: "precipitous, dangerous"}
+  - {pinyin: "xiǎn", mc: "xjemX", oc: "*qʰr[a]mʔ", en: "precipitous, dangerous"}
+離:
+  system: BS
+  src: {page: "Module:zh/data/och-pron-BS/離", oldid: 58464968}
+  readings:
+  - {pinyin: "lí", mc: "lje", oc: "*[r]aj", en: "meet with, encounter"}
+  - {pinyin: "lí", mc: "lje", oc: "*[r]aj", en: "depart from"}
+  - {pinyin: "lì", mc: "ljeH", oc: "*raj-s", en: "reject"}
 難:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/難", oldid: 58464969}
@@ -432,6 +1015,11 @@
   src: {page: "Module:zh/data/och-pron-BS/音", oldid: 58465016}
   readings:
   - {pinyin: "yīn", mc: "ʔim", oc: "*[q](r)əm", en: "sound, tone"}
+驕:
+  system: ZS
+  src: {page: "Module:zh/data/och-pron-ZS/驕", oldid: 58460189}
+  readings:
+  - {oc: "*krew", rime_group: "宵", phonetic: "喬", mc_rhyme_char: "驕", note: ""}
 高:
   system: BS
   src: {page: "Module:zh/data/och-pron-BS/高", oldid: 58465134}

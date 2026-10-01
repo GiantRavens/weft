@@ -96,6 +96,24 @@ A translation entry may carry `partial: "<reason>"` when it covers only some lin
 predates the Kylver find), and `kind: editorial` when the text is Weft's own translation rather
 than a published one. The page labels editorial translations "editorial, draft" with a dashed rule.
 
+## Translations still in copyright: kind: reference
+
+A translation that is still in copyright can be cited without being reproduced. In the manifest,
+give it `kind: reference` with `translator`, `year`, `title`, `publisher` and an optional `note`, and
+no file or url. The page shows a notice naming it; the gloss row carries the meaning. If you own the
+translation, put it in `private/<work>/` under the same id: `weft build --private` then shows it inline
+and drops the notice.
+
+```yaml
+translations:
+  - id: harris1974
+    kind: reference
+    translator: Victor Harris
+    year: 1974
+    title: A Book of Five Rings
+    publisher: Overlook Press
+```
+
 ## notes/bookNN.yaml
 
 ```yaml

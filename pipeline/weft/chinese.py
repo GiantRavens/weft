@@ -112,7 +112,7 @@ KEY = {
         ("hl", "a voiceless l, breathed rather than voiced"),
         ("ng", "can begin a word: ŋa[n] 言 is ngan"),
         ("kw, ɢw", "k or ɢ with rounded lips"),
-        ("ː", "only in 較, from Zhengzhang Shangfang's system (Baxter-Sagart list no reading): his long vowel, which corresponds to their ˤ"),
+        ("ː", "only in words taken from Zhengzhang Shangfang's system where the Baxter-Sagart list has no reading (較, 校): his long vowel, which corresponds to their ˤ"),
     ],
     "tang": [
         ("ɑ, æ, ə, ɛ", "ɑ as in father, æ as in cat, ə as in about, ɛ as in pet"),
@@ -128,7 +128,7 @@ KEY = {
     "cantonese": [("Jyutping", "number = tone 1-6; Cantonese keeps final -p -t -k and -m")],
 }
 SCHEME_LABELS = {
-    "old-chinese": "Old Chinese: as the text may have sounded when compiled, 4th to 3rd century BC (Baxter-Sagart 2014, via Wiktionary; approximate)",
+    "old-chinese": "Old Chinese: as the text may have sounded when first written down (Baxter-Sagart 2014, via Wiktionary; approximate)",
     "tang": "Tang: as Li Bai's generation read it, 8th century (Stimson, via Unicode)",
     "mandarin": "Modern Mandarin",
     "cantonese": "Cantonese, which keeps many Tang sounds",

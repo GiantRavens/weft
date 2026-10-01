@@ -1,0 +1,59 @@
+# Notes for Sunzi chapter 1. Editorial notes are draft; quoted notes are Giles's own words (1910,
+# public domain), from sources/giles1910-full.txt (Project Gutenberg #66706), the complete edition
+# with his Chinese text. Gutenberg #132, the translation shown on the page, abridges these notes.
+- id: n.sz.1.1.sound
+  attach: sz.1.1
+  kind: editorial
+  status: draft
+  leans_on: "William H. Baxter and Laurent Sagart, Old Chinese: A New Reconstruction (2014), readings as published in English Wiktionary (pipeline/weft/data/lzh_oc_bs.yaml)"
+  text: "The default sound row is Old Chinese as reconstructed by Baxter and Sagart, a model of the language before about 200 BC. The date of this text is uncertain, but the dates usually proposed for it, from the 6th to the 4th century BC, fall within the period the model covers. The reconstruction is approximate: brackets in the scholarly form, shown in each word's details, mark sounds they could not pin down. In their model the language had no tones yet. A final -s later became the departing tone, which is why 勝 'win', hləngs here, is shiə̀ng in the Tang row, with the departing-tone mark, and shèng in Mandarin. Three characters, 佚, 校 and 驕, are missing from the Baxter-Sagart list and take Zhengzhang Shangfang's reconstruction instead; six have no Tang reading in the source Weft uses and show a question mark."
+- id: n.sz.1.4.qiji
+  attach: sz.1.4
+  kind: editorial
+  status: draft
+  leans_on: "Lionel Giles, Sun Tzŭ on the Art of War (1910), notes to §§ 3 and 12 (sources/giles1910-full.txt)"
+  text: "This line and line 17 read 五事 'five matters' and 七計 'seven reckonings'. The Chinese text Giles printed in 1910 has neither 事 nor 七 here (故經之以五校之以計而索其情), and in line 17 it has 校之以計 without 七. Giles reports that the old text of the Tongdian (通典) had 故經之以五校之計, and that later editors added 事 and 以. He considered the whole clause from 校 to 情 a possible interpolation, and read 計 as the seven questions of lines 18 to 21. The Wikisource text makes that reading explicit with 七. The page does not say which edition it transcribes, so the source of its 七 is not established here."
+- id: n.sz.1.6.dao
+  attach: sz.1.6.3
+  kind: editorial
+  status: draft
+  text: "道 is glossed 'way', its ordinary sense. The text defines it at once, in lines 8 to 10: what makes the people share the intent of those above them, so that they will die or live with them. Giles renders it 'the Moral Law' and relates it to the Tao of the Laozi 'in its moral aspect'; Calthrop keeps 'the Way'. In line 18 the ruler, not the general, is the one who 'has the way', which Giles takes as harmony between a ruler and his subjects."
+- id: n.sz.1.8.witnesses
+  attach: sz.1.8
+  kind: editorial
+  status: draft
+  leans_on: "Lionel Giles (1910), note to §§ 5 and 6 (sources/giles1910-full.txt)"
+  text: "Lines 8 to 10 differ in small ways from the text Giles printed, 道者令民與上同意也 故可與之死可與之生而民不畏危. His has a closing 也 after 同意, 故 'therefore' before 可, and 民 'people' after 而; the Wikisource text has none of these and ends with 也. Giles also records an older text that lacks 令民 'makes the people' and has 以 after each 可. The sense is the same in each version: the people will die or live with their ruler without fear of danger."
+- id: n.sz.1.12.gaoxia
+  attach: sz.1.12.3
+  kind: editorial
+  status: draft
+  leans_on: "Lionel Giles (1910), § 8 and note (sources/giles1910-full.txt)"
+  text: "The list of what 'earth' covers opens here with 高下 'high and low'. The text Giles printed lacks it (地者遠近險易廣狹死生也), and so does his translation, which begins with distances. Many modern editions include 高下, and it is commonly attributed to the bamboo-slip text excavated at Yinqueshan in 1972; Weft has not checked the slip edition itself, so that attribution is recorded as unverified. Calthrop's four terms do not map clearly onto either list."
+- id: n.sz.1.14.giles
+  attach: sz.1.14
+  kind: quoted
+  source: "Lionel Giles, Sun Tzŭ on the Art of War (1910), note to § 10"
+  text: "The Chinese of this sentence is so concise as to be practically unintelligible without commentary. I have followed the interpretation of Ts‘ao Kung, who joins 曲制 and again 主用. Others take each of the six predicates separately. 曲 has the somewhat uncommon sense of “cohort” or division of an army."
+- id: n.sz.1.23.jiang
+  attach: sz.1.23.1
+  kind: editorial
+  status: draft
+  leans_on: "Lionel Giles (1910), note to § 15 (sources/giles1910-full.txt)"
+  text: "將 is read here as jiàng 'general', as in lines 7, 13, 15 and 18, and the sound rows follow that reading. Giles takes it so, and adds that it is not necessary to take 將 as 'generals under my command', or to supply 'I' before 留之 'keep him', as some commentators do. Another reading takes 將 as jiāng, a particle meaning 'if', with the sentence addressed to the ruler: if you heed my reckonings, employ me and you will win, and I will stay. Weft has not traced that reading to a named early commentator; it is recorded for review. The grammar allows both, and the choice changes who is kept or dismissed."
+- id: n.sz.1.25.shi
+  attach: sz.1.25.8
+  kind: editorial
+  status: draft
+  text: "勢 is glossed 'configuration', a placeholder for a term that has no settled English equivalent. Its basic sense is the force a thing has from its position or setting. Line 27 gives the text's own definition: 勢 is acting on advantage so as to control the 權, the movable weight of a steelyard balance. Giles translates the sentence with 'circumstances', Calthrop with 'a situation which promises victory'. The term returns as the title of chapter 5, 兵勢, on the same Wikisource page."
+- id: n.sz.1.31.giles
+  attach: sz.1.31
+  kind: quoted
+  source: "Lionel Giles, Sun Tzŭ on the Art of War (1910), note to § 20"
+  text: "取, as often in Sun Tzŭ, is used in the sense of 擊. It is rather remarkable that all the commentators, with the exception of Chang Yü, refer 亂 to the enemy: “when he is in disorder, crush him.” It is more natural to suppose that Sun Tzŭ is still illustrating the uses of deception in war."
+- id: n.sz.1.37.suan
+  attach: sz.1.37.6
+  kind: editorial
+  status: draft
+  leans_on: "Lionel Giles (1910), notes to the chapter title and § 26 (sources/giles1910-full.txt)"
+  text: "廟算 is literally 'temple count': 廟 is the ancestral temple, and 算 means to count or calculate, or the count itself. The chapter title, 始計 on Wikisource and 計 in Giles's text, names the same activity of reckoning. Giles, following the commentators Cao Cao (Ts‘ao Kung) and Zhang Yu (Chang Yü), explains it as deliberation held in a temple before a campaign, and translates 'calculations in his temple'; Calthrop has 'the reckoning in the Sanctuary'. Whether 算 here means an actual tally, for example of the seven comparisons scored side by side, or calculation in general, the text does not say."

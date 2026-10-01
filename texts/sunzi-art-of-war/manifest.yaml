@@ -1,0 +1,92 @@
+work: sunzi-art-of-war
+title: Sunzi, The Art of War (孫子兵法), chapter 1
+author: Sunzi (孫子), traditionally Sun Wu (孫武), general to King Helü of Wu; the transmitted text
+language: lzh
+prefix: sz                       # sz.<chapter>.<line>[.<char>]
+urn: urn:weft:lzh:sunzi.bingfa   # no CTS URN for Chinese texts; Weft-local identifier
+unit: section
+section_noun: chapter
+written: {year: -400, label: "traditionally by Sun Wu, who served King Helü of Wu (reigned 514 to 496 BC); most scholars date the text as transmitted to the Warring States period, 5th to 4th century BC. The oldest manuscript is the bamboo-slip text from the Han tomb at Yinqueshan, closed in the 2nd century BC; Weft prints the transmitted text"}
+status: phase-0
+pilot: {sections: ["1"]}
+edition:
+  id: wikisource-sunzi
+  name: 孫子兵法, Chinese Wikisource revision 7906064 (2026-07-02), chapter 始計第一; the page does not name the edition it transcribes; Weft line division
+  format: weft-edition
+  file: edition.yaml
+  license: public domain (PD-old); Wikisource page CC BY-SA 4.0; Weft line division CC BY-SA 4.0
+treebank: null                   # none exists for this text; hand annotation, draft
+readings:
+  table: sources/Unihan_Readings.txt
+  variants: sources/Unihan_Variants.txt
+sources_extra:
+  - id: wikisource-sunzi-r7906064
+    name: 孫子兵法, Chinese Wikisource, revision 7906064 (2026-07-02), raw wikitext
+    file: sources/wikisource-sunzi.txt
+    url: "https://zh.wikisource.org/w/index.php?title=%E5%AD%AB%E5%AD%90%E5%85%B5%E6%B3%95&oldid=7906064&action=raw"
+    sha256: b64a959ee36b213f9fdb863f37629928a56da7bfc3e7c5b89739aa468354e08e
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://zh.wikisource.org/wiki/孫子兵法
+  - id: giles1910-full
+    name: Lionel Giles, Sun Tzŭ on the Art of War (London, Luzac, 1910), complete with the Chinese text and critical notes, Project Gutenberg #66706; used for the notes only
+    file: sources/giles1910-full.txt
+    url: https://www.gutenberg.org/cache/epub/66706/pg66706.txt
+    sha256: 934b3b4b8736a0d5d73542085cff419dd3c907250005969216f481c8267af3e8
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+  - id: unihan-readings
+    name: Unicode Han Database 18.0, readings (kTang after Stimson 1976, kMandarin)
+    file: sources/Unihan_Readings.txt
+    sha256: 9d39995b5de714e8ce93716ed5d15eaa0792d68e407cdf8a0add2893b8f4150b   # of the extracted member
+    url: https://www.unicode.org/Public/18.0.0/ucd/Unihan.zip
+    extract: "Unihan_Readings.txt"
+    license: Unicode License v3
+    license_url: https://www.unicode.org/license.txt
+  - id: unihan-variants
+    name: Unicode Han Database 18.0, variants
+    file: sources/Unihan_Variants.txt
+    sha256: 4ccfd34b08ac7b9c14353f6668ba43e3796d85c4cdce7952b635be16015aafa2   # of the extracted member
+    url: https://www.unicode.org/Public/18.0.0/ucd/Unihan.zip
+    extract: "Unihan_Variants.txt"
+    license: Unicode License v3
+    license_url: https://www.unicode.org/license.txt
+  - id: oc-baxter-sagart-wiktionary
+    name: Baxter-Sagart Old Chinese (2014, v1.1) from English Wiktionary's Module:zh/data/och-pron-BS/<character>, one pinned revision per character; 佚, 校 and 驕 from Module:zh/data/och-pron-ZS (Zhengzhang 2003)
+    data: pipeline/weft/data/lzh_oc_bs.yaml   # a committed CC BY-SA extract, not fetched by acquire
+    sha256: a8eb7a2386dc63c3b612c5c34b32e040fa41abd9a1b9f352f1f464fdf3340562   # of the data file
+    url: https://en.wiktionary.org/wiki/Module:zh/data/och-pron-BS
+    license: CC BY-SA 4.0 (Wiktionary)
+    license_url: https://en.wiktionary.org/wiki/Wiktionary:Copyrights
+    terms: "The Baxter-Sagart data release (ocbaxtersagart.lsait.lsa.umich.edu) states no open license that Weft could verify, so the Wiktionary copy is used."
+scheme_labels:
+  old-chinese: "Old Chinese: as the text may have sounded when compiled, 5th to 4th century BC (Baxter-Sagart 2014, via Wiktionary; approximate)"
+schemes: [old-chinese, tang, mandarin]   # default = Old Chinese (Baxter-Sagart, approximate); Tang and Mandarin are later readings
+translations:
+  - id: giles1910
+    translator: Lionel Giles
+    year: 1910
+    form: prose, numbered paragraphs, with a selection of Giles's notes; Project Gutenberg #132
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/giles1910.txt
+    url: https://www.gutenberg.org/cache/epub/132/pg132.txt
+    sha256: c478f7e05a07bf190585fcea0bc4658ce22e47949ac18444eca53fb274878ffe
+  - id: calthrop1908
+    translator: E. F. Calthrop
+    year: 1908
+    form: prose, in The Book of War (London, John Murray, 1908), "The Articles of Suntzu", chapter I, "Preliminary Reckoning"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/calthrop1908.txt
+    url: https://www.gutenberg.org/cache/epub/44024/pg44024.txt
+    sha256: e7c0c40f0eb0113715f009977b1bf249cfac8d67f0b6be1a3498290ddb25ade9
+predicted_gaps:
+  - "Old Chinese is a reconstruction (Baxter-Sagart 2014), approximate; brackets and parentheses in the scholarly form mark uncertain segments"
+  - "佚, 校 and 驕 have no Baxter-Sagart reading; they fall back to Zhengzhang Shangfang (failure class oc-from-zhengzhang, 4 tokens)"
+  - "校 is read jiào 'compare'; the Zhengzhang entry carries no pinyin, so the Mandarin choice cannot be checked against it (mandarin-reading-unattested, 2 tokens). Unihan gives only xiào, the 'school' reading"
+  - "佐, 佚, 察, 算, 詭 and 誘 have no Tang reading in Unihan (Stimson's list lacks them) and no variant to borrow one from: the Tang row shows ? (reading-missing)"
+  - "為, 眾 and 於 take their Tang readings from the glyph variants 爲, 衆 and 于 (reading-from-variant)"
+  - "Wikisource prints modern punctuation and links 孫子 to Wikipedia; Weft's lines follow the punctuation but do not reproduce it (the source is checked with punctuation and link markup stripped)"
+  - "no treebank; lemma, part of speech and gloss by hand, draft"
+  - "prose: no metre row"
+  - "Calthrop's 1908 version is free and omits several clauses; its spans are wide and the alignment is approximate"

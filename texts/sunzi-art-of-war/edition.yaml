@@ -1,0 +1,61 @@
+# Weft edition of Sunzi, chapter 1 (始計第一), as printed on Chinese Wikisource (孫子兵法,
+# revision 7906064, 2026-07-02). The page does not name the edition it transcribes. Each line is
+# checked verbatim against that page with its modern punctuation and its one wiki link stripped
+# (verify_strip); the punctuation is the Wikisource editor's, not the text's, and is not
+# reproduced. Weft divides the chapter into lines at that punctuation, keeping short clauses
+# together and joining two parallel clauses into one line where they form a pair; `caesura`
+# marks where the second clause starts. The whole chapter is here: 340 characters, 41 lines.
+#
+# One token per character. Where a character has more than one reading, the token names the one
+# this passage needs: oc = which Baxter-Sagart reading in pipeline/weft/data/lzh_oc_bs.yaml
+# (1-based), tang = which of Unihan's kTang readings, mandarin = the modern reading. Unmarked
+# tokens take the first listed reading. The choices are editorial and follow the gloss (將 read
+# jiàng "general" throughout, 見 read xiàn "appear", 校 read jiào "compare").
+joiner: ""
+verify_in: sources/wikisource-sunzi.txt
+verify_strip: "\\[\\[[^|\\]]*\\||\\]\\]|[，。；：、？「」！]"
+sections:
+  - id: "1"
+    title: "Chapter 1: 始計, laying plans"
+    lines:
+      - tokens: [{t: 孫}, {t: 子, oc: 2}, {t: 曰}, {t: 兵}, {t: 者}, {t: 國, caesura: true}, {t: 之}, {t: 大}, {t: 事}]   # 孫子曰：兵者，國之大事
+      - tokens: [{t: 死}, {t: 生}, {t: 之}, {t: 地, mandarin: dì}, {t: 存, caesura: true}, {t: 亡}, {t: 之}, {t: 道, oc: 2, tang: 2}]   # 死生之地，存亡之道
+      - tokens: [{t: 不}, {t: 可}, {t: 不}, {t: 察}, {t: 也}]   # 不可不察也
+      - tokens: [{t: 故}, {t: 經}, {t: 之}, {t: 以}, {t: 五}, {t: 事}, {t: 校, mandarin: jiào, caesura: true}, {t: 之}, {t: 以}, {t: 七}, {t: 計}]   # 故經之以五事，校之以七計
+      - tokens: [{t: 而}, {t: 索, oc: 2}, {t: 其, oc: 2}, {t: 情}]   # 而索其情
+      - tokens: [{t: 一}, {t: 曰}, {t: 道, oc: 2, tang: 2}, {t: 二}, {t: 曰}, {t: 天}, {t: 三}, {t: 曰}, {t: 地, mandarin: dì}]   # 一曰道，二曰天，三曰地
+      - tokens: [{t: 四}, {t: 曰}, {t: 將, oc: 2, tang: 2, mandarin: jiàng}, {t: 五, caesura: true}, {t: 曰}, {t: 法}]   # 四曰將，五曰法
+      - tokens: [{t: 道, oc: 2, tang: 2}, {t: 者}, {t: 令, oc: 3}, {t: 民}, {t: 與}, {t: 上, oc: 3}, {t: 同}, {t: 意}]   # 道者，令民與上同意
+      - tokens: [{t: 可}, {t: 與}, {t: 之}, {t: 死}, {t: 可, caesura: true}, {t: 與}, {t: 之}, {t: 生}]   # 可與之死，可與之生
+      - tokens: [{t: 而}, {t: 不}, {t: 畏}, {t: 危}, {t: 也}]   # 而不畏危也
+      - tokens: [{t: 天}, {t: 者}, {t: 陰}, {t: 陽}, {t: 寒}, {t: 暑}, {t: 時}, {t: 制}, {t: 也}]   # 天者，陰陽、寒暑、時制也
+      - tokens: [{t: 地, mandarin: dì}, {t: 者}, {t: 高}, {t: 下, tang: 2}, {t: 遠}, {t: 近}, {t: 險}, {t: 易}, {t: 廣}, {t: 狹}, {t: 死}, {t: 生}, {t: 也}]   # 地者，高下、遠近、險易、廣狹、死生也
+      - tokens: [{t: 將, oc: 2, tang: 2, mandarin: jiàng}, {t: 者}, {t: 智}, {t: 信}, {t: 仁}, {t: 勇}, {t: 嚴}, {t: 也}]   # 將者，智、信、仁、勇、嚴也
+      - tokens: [{t: 法}, {t: 者}, {t: 曲}, {t: 制}, {t: 官}, {t: 道, oc: 2, tang: 2}, {t: 主}, {t: 用}, {t: 也}]   # 法者，曲制、官道、主用也
+      - tokens: [{t: 凡}, {t: 此}, {t: 五}, {t: 者}, {t: 將, oc: 2, tang: 2, mandarin: jiàng, caesura: true}, {t: 莫}, {t: 不}, {t: 聞}]   # 凡此五者，將莫不聞
+      - tokens: [{t: 知}, {t: 之}, {t: 者}, {t: 勝, oc: 2}, {t: 不, caesura: true}, {t: 知}, {t: 者}, {t: 不}, {t: 勝, oc: 2}]   # 知之者勝，不知者不勝
+      - tokens: [{t: 故}, {t: 校, mandarin: jiào}, {t: 之}, {t: 以}, {t: 七}, {t: 計}, {t: 而}, {t: 索, oc: 2}, {t: 其, oc: 2}, {t: 情}, {t: 曰}]   # 故校之以七計而索其情，曰
+      - tokens: [{t: 主}, {t: 孰}, {t: 有}, {t: 道, oc: 2, tang: 2}, {t: 將, oc: 2, tang: 2, mandarin: jiàng, caesura: true}, {t: 孰}, {t: 有}, {t: 能, oc: 3}]   # 主孰有道？將孰有能
+      - tokens: [{t: 天}, {t: 地, mandarin: dì}, {t: 孰}, {t: 得}, {t: 法, caesura: true}, {t: 令, oc: 3}, {t: 孰}, {t: 行, oc: 2}]   # 天地孰得？法令孰行
+      - tokens: [{t: 兵}, {t: 眾}, {t: 孰}, {t: 強}, {t: 士, caesura: true}, {t: 卒, oc: 2}, {t: 孰}, {t: 練}]   # 兵眾孰強？士卒孰練
+      - tokens: [{t: 賞}, {t: 罰, tang: 2}, {t: 孰}, {t: 明}]   # 賞罰孰明
+      - tokens: [{t: 吾}, {t: 以}, {t: 此}, {t: 知}, {t: 勝, oc: 2}, {t: 負}, {t: 矣}]   # 吾以此知勝負矣
+      - tokens: [{t: 將, oc: 2, tang: 2, mandarin: jiàng}, {t: 聽, oc: 2, tang: 2}, {t: 吾}, {t: 計}, {t: 用}, {t: 之}, {t: 必}, {t: 勝, oc: 2}, {t: 留}, {t: 之}]   # 將聽吾計，用之必勝，留之
+      - tokens: [{t: 將, oc: 2, tang: 2, mandarin: jiàng}, {t: 不}, {t: 聽, oc: 2, tang: 2}, {t: 吾}, {t: 計}, {t: 用}, {t: 之}, {t: 必}, {t: 敗}, {t: 去}, {t: 之}]   # 將不聽吾計，用之必敗，去之
+      - tokens: [{t: 計}, {t: 利}, {t: 以}, {t: 聽, oc: 2, tang: 2}, {t: 乃, oc: 2, caesura: true}, {t: 為, mandarin: wéi}, {t: 之}, {t: 勢}]   # 計利以聽，乃為之勢
+      - tokens: [{t: 以}, {t: 佐}, {t: 其, oc: 2}, {t: 外}]   # 以佐其外
+      - tokens: [{t: 勢}, {t: 者}, {t: 因}, {t: 利}, {t: 而}, {t: 制}, {t: 權}, {t: 也}]   # 勢者，因利而制權也
+      - tokens: [{t: 兵}, {t: 者}, {t: 詭}, {t: 道, oc: 2, tang: 2}, {t: 也}]   # 兵者，詭道也
+      - tokens: [{t: 故}, {t: 能, oc: 3}, {t: 而}, {t: 示}, {t: 之}, {t: 不}, {t: 能, oc: 3}, {t: 用, caesura: true}, {t: 而}, {t: 示}, {t: 之}, {t: 不}, {t: 用}]   # 故能而示之不能，用而示之不用
+      - tokens: [{t: 近}, {t: 而}, {t: 示}, {t: 之}, {t: 遠}, {t: 遠, caesura: true}, {t: 而}, {t: 示}, {t: 之}, {t: 近}]   # 近而示之遠，遠而示之近
+      - tokens: [{t: 利}, {t: 而}, {t: 誘}, {t: 之}, {t: 亂, caesura: true}, {t: 而}, {t: 取}, {t: 之}]   # 利而誘之，亂而取之
+      - tokens: [{t: 實}, {t: 而}, {t: 備}, {t: 之}, {t: 強, caesura: true}, {t: 而}, {t: 避}, {t: 之}]   # 實而備之，強而避之
+      - tokens: [{t: 怒}, {t: 而}, {t: 撓, oc: 2}, {t: 之}, {t: 卑, caesura: true}, {t: 而}, {t: 驕}, {t: 之}]   # 怒而撓之，卑而驕之
+      - tokens: [{t: 佚}, {t: 而}, {t: 勞}, {t: 之}, {t: 親, caesura: true}, {t: 而}, {t: 離, oc: 2}, {t: 之}]   # 佚而勞之，親而離之
+      - tokens: [{t: 攻}, {t: 其, oc: 2}, {t: 無}, {t: 備}, {t: 出, caesura: true}, {t: 其, oc: 2}, {t: 不}, {t: 意}]   # 攻其無備，出其不意
+      - tokens: [{t: 此}, {t: 兵}, {t: 家}, {t: 之}, {t: 勝, oc: 2}, {t: 不, caesura: true}, {t: 可}, {t: 先}, {t: 傳}, {t: 也}]   # 此兵家之勝，不可先傳也
+      - tokens: [{t: 夫, oc: 2, tang: 2, mandarin: fú}, {t: 未}, {t: 戰, oc: 2}, {t: 而}, {t: 廟}, {t: 算}, {t: 勝, oc: 2}, {t: 者}, {t: 得, caesura: true}, {t: 算}, {t: 多}, {t: 也}]   # 夫未戰而廟算勝者，得算多也
+      - tokens: [{t: 未}, {t: 戰, oc: 2}, {t: 而}, {t: 廟}, {t: 算}, {t: 不}, {t: 勝, oc: 2}, {t: 者}, {t: 得, caesura: true}, {t: 算}, {t: 少, tang: 2}, {t: 也}]   # 未戰而廟算不勝者，得算少也
+      - tokens: [{t: 多}, {t: 算}, {t: 勝, oc: 2}, {t: 少, tang: 2, caesura: true}, {t: 算}, {t: 不}, {t: 勝, oc: 2}]   # 多算勝，少算不勝
+      - tokens: [{t: 而}, {t: 況, oc: 2}, {t: 於, oc: 2}, {t: 無}, {t: 算}, {t: 乎}]   # 而況於無算乎
+      - tokens: [{t: 吾}, {t: 以}, {t: 此}, {t: 觀}, {t: 之}, {t: 勝, oc: 2, caesura: true}, {t: 負}, {t: 見, oc: 2, mandarin: xiàn}, {t: 矣}]   # 吾以此觀之，勝負見矣

@@ -76,7 +76,7 @@ server, so a page or the whole folder can be sent as an attachment.
 
 ## Status
 
-Twenty-two works built across twelve languages, oldest first in the library:
+Twenty-three works built across twelve languages, oldest first in the library:
 
 | Work | Passage | Schemes | Translations |
 |---|---|---|---|
@@ -88,6 +88,7 @@ Twenty-two works built across twelve languages, oldest first in the library:
 | Genesis (Bereshit) | 1:1-5 | Tiberian, modern Israeli | JPS 1917, Geneva 1599, King James 1611 |
 | Gospel of John | 1:1-5 | Koine, Erasmian | Tyndale 1534, Geneva 1599, King James 1611 |
 | Ovid, Metamorphoses | 1.1-9 | classical, ecclesiastical | Golding 1567, More 1922 |
+| Sunzi, The Art of War | chapter 1, Laying Plans | Old Chinese (Baxter-Sagart), Tang, Mandarin | Giles 1910, Calthrop 1908 |
 | Daodejing (Laozi) | chapters 1-2 | Old Chinese (Baxter-Sagart), Tang, Mandarin | Legge 1891, Chalmers 1868 |
 | Epictetus, Enchiridion | 1.1-3 | Koine, restored, Erasmian | Long 1877, Higginson 1865 |
 | Marcus Aurelius, Meditations | 2.1 | Koine, restored, Erasmian | Long 1862, Casaubon 1634 |

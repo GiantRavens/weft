@@ -51,14 +51,18 @@ def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
                     target.setdefault("curated", {}).update({f: {"by": cs.get("by"), "date": str(cs.get("date")), "status": cs.get("status", "draft")} for f in fields})
 
     # translations: public from manifest, private ones from private/<work>/manifest.yaml
+    # a reference translation (kind: reference) is still in copyright: the page cites it and never inlines it
     translations = {t["id"]: {k: v for k, v in t.items() if k in ("id", "translator", "year", "form", "license", "kind", "partial")}
-                    for t in m.get("translations", [])}
+                    for t in m.get("translations", []) if t.get("kind") != "reference"}
+    references = {t["id"]: {k: v for k, v in t.items() if k in ("id", "translator", "year", "title", "publisher", "note")}
+                  for t in m.get("translations", []) if t.get("kind") == "reference"}
     sense_roots = [work_dir / "sense"]
     if private_dir:
         pm = private_dir / "manifest.yaml"
         if pm.exists():
             for t in (yaml.safe_load(pm.read_text()) or {}).get("translations", []):
                 translations[t["id"]] = {k: v for k, v in t.items() if k in ("id", "translator", "year", "form", "license")}
+                references.pop(t["id"], None)      # owned copy in private/: shown inline, no citation notice
         sense_roots.append(private_dir / "sense")
     sense = []
     for d in sense_roots:
@@ -97,8 +101,10 @@ def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
                      else {"id": "hand annotation", "name": "no treebank: hand annotation, draft", "license": "CC BY-SA 4.0"}),
         "schemes": m["schemes"],
         "keys": {s: PHON[m["language"]].KEY[s] for s in m["schemes"]},
-        "scheme_labels": {s: PHON[m["language"]].SCHEME_LABELS.get(s, s) for s in m["schemes"]},
+        # a work may override a scheme's label, e.g. to give its own date for a shared reconstruction
+        "scheme_labels": {s: (m.get("scheme_labels") or {}).get(s) or PHON[m["language"]].SCHEME_LABELS.get(s, s) for s in m["schemes"]},
         "translations": list(translations.values()),
+        "references": list(references.values()),
         "lines": lines,
         "sense": sense,
         "notes": notes,
@@ -245,7 +251,7 @@ def write_index(repo: Path, out_dir: Path) -> Path:
         if pl.get("sections"):
             noun = m.get("section_noun", "section")
             k = len(pl["sections"])
-            span = (f"{noun}s " + ", ".join(pl["sections"])) if noun == "chapter" else f"{k} {noun}{'' if k == 1 else 's'}"
+            span = (f"{noun}{'' if k == 1 else 's'} " + stanza_ranges([int(x) if str(x).isdigit() else x for x in pl["sections"]])) if noun == "chapter" else f"{k} {noun}{'' if k == 1 else 's'}"
         elif pl.get("inscriptions"):
             span = f"{len(pl['inscriptions'])} inscriptions"
         elif pl.get("stanzas"):
@@ -254,7 +260,8 @@ def write_index(repo: Path, out_dir: Path) -> Path:
             span = (f"{pl.get('book')}.{pl.get('first')}–{pl.get('last')}" if pl.get("book")
                     else f"chapter {pl['chapter']}, {m.get('unit', 'line')}s {pl.get('first')}–{pl.get('last')}" if pl.get("chapter")
                     else f"lines {pl.get('first')}–{pl.get('last')}") if pl else ""
-        trs = ", ".join(f"{t['translator']} ({t['year']})" for t in m.get("translations", []))
+        trs = ", ".join(f"{t['translator']} ({t['year']}" + (", cited, in copyright)" if t.get("kind") == "reference" else ")")
+                        for t in m.get("translations", []))
         this_age = age_of((m.get("written") or {}).get("year"))
         if this_age != age:
             if age is not None:

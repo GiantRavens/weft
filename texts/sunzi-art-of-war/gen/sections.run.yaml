@@ -1,0 +1,47 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+counts:
+  lines: 41
+  tokens: 340
+failures:
+  reading-missing: 12
+  oc-from-zhengzhang: 4
+  mandarin-reading-unattested: 2
+  reading-from-variant: 3
+samples:
+  reading-missing:
+  - 3 察
+  - 26 佐
+  - 28 詭
+  - 31 誘
+  - 34 佚
+  oc-from-zhengzhang:
+  - 1.4 校
+  - 1.17 校
+  - 1.33 驕
+  - 1.34 佚
+  mandarin-reading-unattested:
+  - 1.4 校 jiào
+  - 1.17 校 jiào
+  reading-from-variant:
+  - 20 眾->衆
+  - 25 為->爲
+  - 40 於->于
+failure_rate:
+  reading-missing: 0.035
+  oc-from-zhengzhang: 0.012
+  mandarin-reading-unattested: 0.006
+  reading-from-variant: 0.009
+shift_left: []
+predicted_gaps:
+- Old Chinese is a reconstruction (Baxter-Sagart 2014), approximate; brackets and parentheses in the scholarly form mark uncertain segments
+- 佚, 校 and 驕 have no Baxter-Sagart reading; they fall back to Zhengzhang Shangfang (failure class oc-from-zhengzhang, 4 tokens)
+- 校 is read jiào 'compare'; the Zhengzhang entry carries no pinyin, so the Mandarin choice cannot be checked against it (mandarin-reading-unattested, 2 tokens). Unihan gives only xiào, the 'school' reading
+- '佐, 佚, 察, 算, 詭 and 誘 have no Tang reading in Unihan (Stimson''s list lacks them) and no variant to borrow one from: the Tang row shows ? (reading-missing)'
+- 為, 眾 and 於 take their Tang readings from the glyph variants 爲, 衆 and 于 (reading-from-variant)
+- Wikisource prints modern punctuation and links 孫子 to Wikipedia; Weft's lines follow the punctuation but do not reproduce it (the source is checked with punctuation and link markup stripped)
+- no treebank; lemma, part of speech and gloss by hand, draft
+- 'prose: no metre row'
+- Calthrop's 1908 version is free and omits several clauses; its spans are wide and the alignment is approximate

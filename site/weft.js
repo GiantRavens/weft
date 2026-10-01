@@ -87,7 +87,8 @@
     ? `${D.work.author} · ${new Set(D.lines.map((l) => l.stanza)).size} inscriptions`
     : D.work.unit === "section"
     ? (D.work.section_noun === "chapter"
-        ? `${D.work.author} · chapters ${[...new Set(D.lines.map((l) => l.stanza))].join(", ")}`
+        ? (() => { const cs = [...new Set(D.lines.map((l) => l.stanza))];
+                   return `${D.work.author} · chapter${cs.length === 1 ? "" : "s"} ${ranges(cs.map((c) => (/^\d+$/.test(c) ? +c : c)))}`; })()
         : (() => { const n = new Set(D.lines.map((l) => l.stanza)).size, noun = D.work.section_noun || "section";
                    return `${D.work.author} · ${n} ${noun}${n === 1 ? "" : "s"}`; })())
     : STANZAS
@@ -96,7 +97,8 @@
   const anyDraft = D.lines.some((l) => l.curated || l.tokens.some((t) => t.curated && Object.values(t.curated).some((c) => c.status !== "reviewed")));
   $("#colophon").append(
     h("p", { text: `Text: ${D.edition.name} (${D.edition.license}). Lemma and morphology: ${D.treebank.name} (${D.treebank.license}).` }),
-    h("p", { text: "Translations: " + D.translations.map((t) => `${t.translator}, ${t.year} (${t.license})`).join("; ") + "." }),
+    h("p", { text: "Translations: " + D.translations.map((t) => `${t.translator}, ${t.year} (${t.license})`).join("; ") + "."
+      + ((D.references || []).length ? " Cited, in copyright: " + D.references.map((r) => `${r.translator}, ${r.year}`).join("; ") + "." : "") }),
     anyDraft ? h("p", { text: "Glosses, scansion and editorial notes are a phase 0 draft awaiting scholarly review." }) : null,
     h("p", { text: `Built with Weft ${D.build.weft}${D.build.private ? " · private build, includes licensed translations" : ""}.` }),
   );
@@ -273,6 +275,14 @@
     note.append(h("span", { class: "arrow", "aria-hidden": "true", text: "←" }),
       h("strong", { text: "Read right to left. " }),
       `${D.work.lang_name || "This text"} runs from right to left: each ${D.work.unit === "verse" ? "verse" : "line"} begins at the right edge, and its first word is the rightmost. The pronunciation and gloss under each word read left to right.`);
+    note.hidden = false;
+  }
+  // translations still in copyright: cited here, never reproduced
+  if ((D.references || []).length) {
+    const note = $("#ref-note");
+    note.append(h("strong", { text: "In copyright, not reproduced: " }),
+      D.references.map((r) => `${r.translator}, ${r.title ? r.title + " " : ""}(${r.publisher ? r.publisher + ", " : ""}${r.year})${r.note ? ". " + r.note : ""}`).join("; ") + ". ",
+      "The gloss row gives the meaning word for word.");
     note.hidden = false;
   }
   // Hebrew: show the text without cantillation unless the reader asks for it

@@ -331,6 +331,22 @@ def test_voluspa_complete_and_annotated():
 
 def test_new_languages_check():
     """Akkadian, Classical Chinese prose, Old Tamil and Classical Persian works pass their checks."""
-    for work in ("akkadian-hammurabi", "daodejing", "tamil-tirukkural", "persian-rubaiyat"):
+    for work in ("akkadian-hammurabi", "daodejing", "sunzi-art-of-war", "tamil-tirukkural", "persian-rubaiyat"):
         r = check.run(REPO, work)
         assert r["ok"], (work, r["problems"])
+
+
+def test_reference_translation_is_cited_not_inlined(tmp_path):
+    """A kind: reference translation (still in copyright) appears as a citation, never as text."""
+    import shutil
+    from weft import build
+    work = tmp_path / "texts" / "basho-furuike"
+    shutil.copytree(REPO / "texts" / "basho-furuike", work, ignore=shutil.ignore_patterns("sources"))
+    m = yaml.safe_load((work / "manifest.yaml").read_text())
+    m["translations"].append({"id": "later2000", "kind": "reference", "translator": "A. Translator",
+                              "year": 2000, "title": "Haiku", "publisher": "A Press"})
+    (work / "manifest.yaml").write_text(yaml.dump(m, allow_unicode=True))
+    data = build.assemble(work)
+    assert [r["id"] for r in data["references"]] == ["later2000"]
+    assert "later2000" not in [t["id"] for t in data["translations"]]
+    assert all(s["tr"] != "later2000" for s in data["sense"])
