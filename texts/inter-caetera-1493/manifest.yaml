@@ -1,0 +1,63 @@
+work: inter-caetera-1493
+title: The bull Inter caetera (4 May 1493)
+author: Pope Alexander VI (Rodrigo de Borja, pope 1492–1503)
+language: lat
+lang_name: Latin of the papal chancery
+prefix: ic                       # ic.<section>.<line>[.<token>]
+urn: urn:weft:lat:alexander6.intercaetera.1493-05-04   # Weft-local identifier
+unit: section
+section_noun: passage
+written: {year: 1493, display: "1493", label: "dated at Rome, 4 May 1493 (quarto nonas Maii), seven weeks after Columbus landed at Palos on his return; the chancery issued it in June and dated it back to May"}
+status: phase-0
+pilot: {sections: [salutatio, arenga, narratio, donatio, datum]}
+edition:
+  id: la-wikisource-intercaetera
+  name: "Inter caetera (quarto nonas Maii 1493) as on Latin Wikisource, which reproduces the Latin printed by Frances Gardiner Davenport (1917) from the promulgated original in the Archivo General de Indias, Seville (Patronato 1-1-1, no. 3)"
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain; Wikisource transcription CC BY-SA 4.0; Weft line division CC BY-SA 4.0
+treebank: null                   # no treebank covers papal bulls; hand annotation, draft
+schemes: [italian-humanist, classical]   # default: Latin as read in Italy, here papal Rome in 1493
+scheme_labels:
+  italian-humanist: "As first read: in the Italian manner of papal Rome, 1493 (approximate)"
+sound_confidence: medium         # the page invites specialists to correct the sound guide or record it
+quantities:
+  - pipeline/weft/data/lat_quantities.yaml
+  - pipeline/weft/data/lat_quantities_intercaetera.yaml
+sources_extra:
+  - id: intercaetera-la
+    name: "Alexander VI, Inter caetera (quarto nonas Maii 1493), Latin Wikisource revision 129534 (12 May 2020). The page names no source; its text agrees word for word in these lines with Davenport (1917), including Davenport's signatories, and was evidently taken from it"
+    file: sources/intercaetera-la.txt
+    url: "https://la.wikisource.org/w/index.php?title=Inter_caetera_(quarto_nonas_Maii_1493)&oldid=129534&action=raw"
+    sha256: d53aa7e185e48ba31ca3be1d999089c5202875af4f483e4f9395daabddeb814e
+    license: public domain (text); Wikisource CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0/
+translations:
+  - id: davenport1917
+    translator: Frances Gardiner Davenport
+    year: 1917
+    form: "prose; European Treaties bearing on the History of the United States and its Dependencies to 1648 (Washington: Carnegie Institution of Washington, 1917), Doc. 7, pp. 75-78, beside her Latin text on pp. 72-75. Davenport says she made 'free use' of Blair and Robertson's translation for this bull. Internet Archive, University of Toronto copy, OCR text"
+    license: public-domain
+    license_url: https://archive.org/details/europeantreaties01daveuoft
+    file: sources/davenport1917.txt
+    url: https://archive.org/download/europeantreaties01daveuoft/europeantreaties01daveuoft_djvu.txt
+    sha256: 58eba163d857b3547361831b17fe54b524ad6e5496735440b6892d15784fc190
+  - id: blair-robertson1903
+    translator: "Emma Helen Blair and James Alexander Robertson (eds.)"
+    year: 1903
+    form: "prose; The Philippine Islands, 1493-1803, vol. 1 (Cleveland: Arthur H. Clark, 1903), pp. 105-111, 'Inter Cætera--May 4'. Translated from the copy in the Vatican register (it reads lex, 'law', where the Seville original reads religio, and abridges the formulas with 'etc.'). Project Gutenberg #13255"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/blair-robertson1903.txt
+    url: https://www.gutenberg.org/cache/epub/13255/pg13255.txt
+    sha256: 1ff7a0f39756cdf999ebfcb9403146a5f3eaee4eaab78a1284785e41c316f402
+predicted_gaps:
+  - "no treebank: lemma and morphology hand-annotated (Lewis and Short; chancery and Medieval Latin words after Niermeyer and Du Cange), draft"
+  - "five passages, not the whole bull: the long sentence praising the conquest of Granada, the paragraph on the sovereigns' purpose, the exhortation to send missionaries, the prohibition on others sailing west of the line, and the closing formulas are omitted"
+  - "the Wikisource page names no source; its agreement with Davenport's printed Latin, word for word in these lines, was checked against the Internet Archive OCR of Davenport, not against the manuscript or a facsimile"
+  - "the original's e for ae and oe (cetera, regine, presertim) is kept on the page; the quantity table restores the diphthong in the classical reading, and the Italian reading says e for both, as Italian readers did"
+  - "the Italian reading of 1493 is the module's italian-humanist scheme, built for Pico's northern Italy in the 1480s and reconstructed from Italian sound history and the later ecclesiastical tradition; it marks s between vowels as z, a northern trait that a Roman or Spanish-born chancery reader may not have had; approximate"
+  - "Spanish and Latinized names (Fernando, Elisabeth, Colon, de los Azores, Caboverde) are read by the Latin rules; their Castilian sound is not modelled"
+  - "the dating formula's numerals (millesimo quadringentesimo nonagesimo tertio) are written out in the original as here, so no numerals need expanding"
+  - "Davenport's English rearranges the grant sentence (the authority clause comes before the grant, the line after it), so the grant is one span; Blair and Robertson do the same"
+  - "Blair and Robertson translate the Vatican register text, which differs from the Seville original in a few words (lex for religio in the opening clause); their English is aligned to the Seville Latin here, and the notes name the differences that touch these lines"

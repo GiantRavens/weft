@@ -1,0 +1,30 @@
+run:
+  weft: 0.1.0
+  sections:
+  - salutatio
+  - arenga
+  - narratio
+  - donatio
+  - datum
+counts:
+  lines: 47
+  tokens: 635
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank: lemma and morphology hand-annotated (Lewis and Short; chancery and Medieval Latin words after Niermeyer and Du Cange), draft'
+- 'five passages, not the whole bull: the long sentence praising the conquest of Granada, the paragraph on the sovereigns'' purpose, the exhortation to send missionaries, the prohibition on others sailing
+  west of the line, and the closing formulas are omitted'
+- the Wikisource page names no source; its agreement with Davenport's printed Latin, word for word in these lines, was checked against the Internet Archive OCR of Davenport, not against the manuscript or
+  a facsimile
+- the original's e for ae and oe (cetera, regine, presertim) is kept on the page; the quantity table restores the diphthong in the classical reading, and the Italian reading says e for both, as Italian
+  readers did
+- the Italian reading of 1493 is the module's italian-humanist scheme, built for Pico's northern Italy in the 1480s and reconstructed from Italian sound history and the later ecclesiastical tradition; it
+  marks s between vowels as z, a northern trait that a Roman or Spanish-born chancery reader may not have had; approximate
+- Spanish and Latinized names (Fernando, Elisabeth, Colon, de los Azores, Caboverde) are read by the Latin rules; their Castilian sound is not modelled
+- the dating formula's numerals (millesimo quadringentesimo nonagesimo tertio) are written out in the original as here, so no numerals need expanding
+- Davenport's English rearranges the grant sentence (the authority clause comes before the grant, the line after it), so the grant is one span; Blair and Robertson do the same
+- Blair and Robertson translate the Vatican register text, which differs from the Seville original in a few words (lex for religio in the opening clause); their English is aligned to the Seville Latin here,
+  and the notes name the differences that touch these lines

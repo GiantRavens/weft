@@ -1,0 +1,105 @@
+# Weft edition of Snorri Sturluson, Gylfaginning, chapters 5-8 (the making of the world from the
+# body of Ymir) and the opening of chapter 49 (the death of Baldr), from Guðni Jónsson's normalized
+# text of Edda Snorra Sturlusonar as published on heimskringla.no and pinned in the CLTK Old Norse
+# corpus (commit 2fb9652). Chapter numbers and titles are the edition's.
+#
+# A selection: the verse quotations Snorri cites (Völuspá, Vafþrúðnismál, Grímnismál) and some
+# sentences between the chosen lines are left out. Each line is checked verbatim against the pinned
+# file (verify_in). verify_strip sets aside the edition's straight quotation marks ("), which the
+# tokenizer would otherwise leave attached to the words; speech is still marked by the colon after
+# the verb of saying (Þá mælti Hárr:).
+#
+# Prose: one line per sentence, or per clause where a sentence is long.
+joiner: " "
+verify_in: sources/gylfaginning.txt
+verify_strip: '"'
+sections:
+  - id: "5"
+    title: "Chapter 5, The origin of Ymir and the rime-giants (Upphaf Ymis ok hrímþursa), from Third's answer"
+    lines:
+      - "Ok þá er mættist hrímin ok blær hitans, svá at bráðnaði ok draup,"
+      - "ok af þeim kvikudropum kviknaði með krafti þess, er til sendi hitann, ok varð manns líkandi,"
+      - "ok var sá nefndr Ymir, en hrímþursar kalla hann Aurgelmi,"
+      - "Þá svarar Hárr: Fyr engan mun játum vér hann guð."
+      - "Hann er illr ok allir hans ættmenn."
+      - "Þá köllum vér hrímþursa."
+      - "En svá er sagt, at þá er hann svaf, fekk hann sveita."
+      - "Þá óx undir vinstri hendi honum maðr ok kona,"
+      - "ok annarr fótr hans gat son við öðrum, en þaðan af kómu ættir."
+  - id: "6"
+    title: "Chapter 6, Of Auðhumla and the origin of Odin (Frá Auðhumlu ok upphafi Óðins)"
+    figure:
+      file: art/works/snorri-gylfaginning/audhumla-74r.jpg
+      caption: "The cow Auðhumla licking Búri out of the salty rime-stones, with the four rivers of milk running from her udder. Drawing by Jakob Sigurðsson in an Icelandic paper manuscript of the Edda, 1765–1766 (SÁM 66, fol. 74r, Árni Magnússon Institute, Reykjavík)."
+      alt: "Pen drawing, lightly coloured, of a horned cow licking the head of a man who emerges from a rock, with four streams flowing from her udder"
+      credit: "Jakob Sigurðsson, 1765–1766; SÁM 66, Árni Magnússon Institute for Icelandic Studies"
+      license: "Public domain"
+      source: "https://commons.wikimedia.org/wiki/File:S%C3%81M_66,_74r,_Au%C3%B0umbla_and_B%C3%BAri.jpg"
+    lines:
+      - "Þá mælti Gangleri: Hvar byggði Ymir, eða við hvat lifði hann?"
+      - "Hárr svarar: Næst var þat, þá er hrímit draup, at þar varð af kýr sú, er Auðhumla hét,"
+      - "en fjórar mjólkár runnu ór spenum hennar, ok fæddi hon Ymi."
+      - "Hon sleikði hrímsteinana, er saltir váru,"
+      - "ok inn fyrsta dag, er hon sleikði steinana, kom ór steininum at kveldi manns hár,"
+      - "annan dag manns höfuð, þriðja dag var þar allr maðr."
+      - "Sá er nefndr Búri."
+      - "Hann gat son þann, er Borr hét,"
+      - "hann fekk þeirar konu, er Bestla hét, dóttir Bölþorns jötuns, ok fengu þau þrjá sonu."
+      - "Hét einn Óðinn, annarr Vili, þriði Vé,"
+  - id: "7"
+    title: "Chapter 7, The killing of Ymir, and of Bergelmir (Dráp Ymis ok frá Bergelmi)"
+    lines:
+      - "Synir Bors drápu Ymi jötun,"
+      - "en er hann féll, þá hljóp svá mikit blóð ór sárum hans,"
+      - "at með því drekkðu þeir allri ætt hrímþursa,"
+      - "nema einn komst undan með sínu hýski."
+      - "Hann kalla jötnar Bergelmi."
+      - "Hann fór upp á lúðr sinn ok kona hans ok helzt þar,"
+  - id: "8"
+    title: "Chapter 8, The sons of Borr made earth and heaven (Borssynir skópu jörð ok himinn)"
+    lines:
+      - "Þeir tóku Ymi ok fluttu í mitt Ginnungagap ok gerðu af honum jörðina,"
+      - "af blóði hans sæinn ok vötnin."
+      - "Jörðin var ger af holdinu, en björgin af beinunum."
+      - "Grjót ok urðir gerðu þeir af tönnum ok jöxlum ok af þeim beinum, er brotin váru."
+      - "Þá mælti Þriði: Tóku þeir ok haus hans ok gerðu þar af himin"
+      - "ok settu hann upp yfir jörðina með fjórum skautum, ok undir hvert horn settu þeir dverg."
+      - "Þeir heita svá: Austri, Vestri, Norðri, Suðri."
+      - "en til þeirar borgar höfðu þeir brár Ymis jötuns ok kölluðu þá borg Miðgarð."
+      - "Þeir tóku ok heila hans ok köstuðu í loft ok gerðu af skýin,"
+  - id: "49"
+    title: "Chapter 49, The death of Baldr the Good (Dauði Baldrs ins góða), the opening"
+    figure:
+      file: art/works/snorri-gylfaginning/baldr-75v.jpg
+      caption: "The blind Höðr, with Loki at his shoulder, strikes Baldr with the mistletoe. Drawing by Jakob Sigurðsson in an Icelandic paper manuscript of the Edda, 1765–1766 (SÁM 66, fol. 75v, Árni Magnússon Institute, Reykjavík). The artist shows a thrust at close range; the text says Höðr threw or shot it."
+      alt: "Pen drawing, lightly coloured, of a man in a cap guided from behind by another figure, driving a curved branch into a second man who reels back"
+      credit: "Jakob Sigurðsson, 1765–1766; SÁM 66, Árni Magnússon Institute for Icelandic Studies"
+      license: "Public domain"
+      source: "https://commons.wikimedia.org/wiki/File:S%C3%81M_66,_75v,_death_of_Baldr.jpg"
+    lines:
+      - "En þat er upphaf þeirar sögu, at Baldr inn góða dreymði drauma stóra ok hættliga um líf sitt."
+      - "En er hann sagði ásunum draumana, þá báru þeir saman ráð sín,"
+      - "ok var þat gert at beiða griða Baldri fyrir allskonar háska,"
+      - "ok Frigg tók svardaga til þess, at eira skyldu Baldri eldr ok vatn, járn ok alls konar málmr,"
+      - "steinar, jörðin, viðirnir, sóttirnar, dýrin, fuglarnir, eitrit, ormarnir."
+      - "En er þetta var gert ok vitat, þá var þat skemmtun Baldrs ok ásanna, at hann skyldi standa upp á þingum,"
+      - "en allir aðrir skyldu sumir skjóta á hann, sumir höggva til, sumir berja grjóti,"
+      - "en hvat sem at var gert, sakaði hann ekki, ok þótti þetta öllum mikill frami."
+      - "En er þetta sá Loki Laufeyjarson, þá líkaði honum illa, er Baldr sakaði ekki."
+      - "Hann gekk til Fensalar til Friggjar ok brá sér í konu líki."
+      - "Þá mælti Frigg: Eigi munu vápn eða viðir granda Baldri."
+      - "Eiða hefi ek þegit af öllum þeim."
+      - "Þá spyr konan: Hafa allir hlutir eiða unnit at eira Baldri?"
+      - "Þá svarar Frigg: Vex viðarteinungr einn fyrir vestan Valhöll."
+      - "Sá er mistilteinn kallaðr."
+      - "Sá þótti mér ungr at krefja eiðsins."
+      - "Því næst hvarf konan á braut, en Loki tók mistiltein ok sleit upp ok gekk til þings."
+      - "En Höðr stóð útarliga í mannhringnum, því at hann var blindr."
+      - "Þá mælti Loki við hann: Hví skýtr þú ekki at Baldri?"
+      - "Hann svarar: Því, at ek sé eigi, hvar Baldr er, ok þat annat, at ek em vápnlauss."
+      - "Þá mælti Loki: Gerðu þó í líking annarra manna ok veit Baldri sæmð sem aðrir menn."
+      - "Ek mun vísa þér til, hvar hann stendr."
+      - "Skjót at honum vendi þessum."
+      - "Höðr tók mistiltein ok skaut at Baldri at tilvísun Loka."
+      - "Flaug skotit í gegnum Baldr, ok féll hann dauðr til jarðar,"
+      - "ok hefir þat mest óhapp verit unnit með goðum ok mönnum."

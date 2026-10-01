@@ -75,8 +75,17 @@ def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
         for _, ns in _load_yaml_dir(root / "notes"):
             notes.extend(ns or [])
 
-    # render-time conveniences: readable morphology; Hebrew without cantillation for easy reading
+    # render-time conveniences: readable morphology; Hebrew without cantillation for easy reading;
+    # section images embedded so the page stays one file
+    import base64
+    repo_root = work_dir.parents[1]
     for line in lines:
+        fig = line.get("figure")
+        if isinstance(fig, dict) and fig.get("file") and not fig.get("src"):
+            fp = repo_root / fig["file"]
+            if fp.exists():
+                kind = "png" if fp.suffix.lower() == ".png" else "jpeg"
+                fig["src"] = f"data:image/{kind};base64," + base64.b64encode(fp.read_bytes()).decode()
         for t in line["tokens"]:
             if t.get("morph"):
                 t["morph_text"] = treebank.decode_morph(t["morph"])
@@ -244,7 +253,7 @@ def stanza_ranges(xs: list) -> str:
     """1, 2, 3, 76, 77 -> '1–3, 76–77'."""
     out: list[list] = []
     for x in xs:
-        if out and isinstance(x, int) and x == out[-1][1] + 1:
+        if out and isinstance(x, int) and isinstance(out[-1][1], int) and x == out[-1][1] + 1:
             out[-1][1] = x
         else:
             out.append([x, x])

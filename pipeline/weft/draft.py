@@ -22,8 +22,8 @@ PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebr
         "akk": akkadian, "fa": persian, "ta": tamil, "it": italian, "fr": french,
         "es": spanish, "nl": dutch, "fro": oldfrench, "de": german, "egy": egyptian, "sux": sumerian}
 NORMALIZE = {"heyne-to-macron": oldenglish.heyne_to_macron}
-LEAD = re.compile(r"^([(\[“«‹]+|[-–—]\u00a0)")
-TRAIL = re.compile(r"((?:[,.·;:!?)\]”»›\u0387\u037e]|\u00a0[-–—])+)$")
+LEAD = re.compile(r"^([(\[“«‹\"]+|[-–—]\u00a0)")
+TRAIL = re.compile(r"((?:[,.·;:!?)\]”»›\"\u0387\u037e]|\u00a0[-–—])+)$")
 
 
 def load_manifest(work_dir: Path) -> dict:
@@ -435,6 +435,8 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             "cite": f"{m['urn']}.{m['edition']['id']}:" + (f"{book}.{n}" if book is not None else f"{n}"),
             **({"stanza": book} if ed_fmt == "stanza-text" else {}),
             **({"stanza": book, "stanza_title": groups[book]["title"]} if ed_fmt == "weft-edition" else {}),
+            # a section may carry an image of its own (a tapestry scene, a manuscript page), shown above it
+            **({"figure": groups[book]["figure"]} if ed_fmt == "weft-edition" and n == 1 and groups[book].get("figure") else {}),
             "text": text,
             "tokens": toks,
         }

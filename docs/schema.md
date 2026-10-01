@@ -96,6 +96,14 @@ A translation entry may carry `partial: "<reason>"` when it covers only some lin
 predates the Kylver find), and `kind: editorial` when the text is Weft's own translation rather
 than a published one. The page labels editorial translations "editorial, draft" with a dashed rule.
 
+## Section images
+
+A section in a Weft edition file may carry `figure: {file, caption, alt, credit, license, source}`,
+with `file` a path from the repository root (for example `art/works/<work>/scene-57.jpg`). The build
+embeds it, so the page stays one file, and shows it under the section heading. Use it for an image that
+belongs to that passage only: a tapestry scene, a manuscript page, an inscription. Images must be
+public domain or openly licensed, like every other source.
+
 ## The date in the library
 
 `written: {year, display, label}` in the manifest. `year` sorts the library and places the work in an

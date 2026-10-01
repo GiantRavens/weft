@@ -1,0 +1,371 @@
+# Weft edition of Þrymskviða, from Guðni Jónsson's normalized text as published by heimskringla.no
+# and kept in the CLTK Old Norse corpus (complete.txt, pinned by sha256 in the manifest). Each line
+# is checked verbatim against that file (verify_in).
+#
+# Why a Weft edition file and not the stanza-text reader used for Völuspá and Hávamál: in the source,
+# stanza 7 is printed as four numbered lines, the label "Loki kvað:", and four further lines with no
+# number of their own. The stanza-text reader ends a stanza at the blank line and would drop Loki's
+# four lines. Here they are lines 7.5-7.8, as in the usual numbering of the poem (Bellows prints them
+# under his stanza 6, Thorpe as his stanza 8).
+#
+# The speaker labels the source prints between stanzas ("Freyja kvað:") are not lines of the poem;
+# they are kept in the section titles (kvað, "said"). Obvious slips in the source are kept as printed and noted in
+# curated/ (25.1 kvat for kvað; 8.1 a full stop where the sentence runs on).
+joiner: " "
+verify_in: sources/thrymskvida.txt
+metre: {name: fornyrðislag}
+sections:
+  - id: "1"
+    title: "Stanza 1"
+    lines:
+      - 'Vreiðr var þá Vingþórr'
+      - 'er hann vaknaði'
+      - 'ok síns hamars'
+      - 'of saknaði,'
+      - 'skegg nam at hrista,'
+      - 'skör nam at dýja,'
+      - 'réð Jarðar burr'
+      - 'um at þreifask.'
+  - id: "2"
+    title: "Stanza 2"
+    lines:
+      - 'Ok hann þat orða'
+      - 'alls fyrst of kvað:'
+      - '"Heyrðu nú, Loki,'
+      - 'hvat ek nú mæli'
+      - 'er eigi veit'
+      - 'jarðar hvergi'
+      - 'né upphimins:'
+      - 'áss er stolinn hamri!"'
+  - id: "3"
+    title: "Stanza 3"
+    lines:
+      - 'Gengu þeir fagra'
+      - 'Freyju túna,'
+      - 'ok hann þat orða'
+      - 'alls fyrst of kvað:'
+      - '"Muntu mér, Freyja,'
+      - 'fjaðrhams léa,'
+      - 'ef ek minn hamar'
+      - 'mættak hitta?".'
+  - id: "4"
+    title: "Stanza 4 · Freyja kvað"
+    lines:
+      - '"Þó munda ek gefa þér'
+      - 'þótt ór gulli væri,'
+      - 'ok þó selja,'
+      - 'at væri ór silfri."'
+  - id: "5"
+    title: "Stanza 5"
+    lines:
+      - 'Fló þá Loki,'
+      - '- fjaðrhamr dunði, -'
+      - 'unz fyr útan kom'
+      - 'ása garða'
+      - 'ok fyr innan kom'
+      - 'jötna heima.'
+  - id: "6"
+    title: "Stanza 6"
+    lines:
+      - 'Þrymr sat á haugi,'
+      - 'þursa dróttinn,'
+      - 'greyjum sínum'
+      - 'gullbönd sneri'
+      - 'ok mörum sínum'
+      - 'mön jafnaði.'
+  - id: "7"
+    title: "Stanza 7 · Þrymr kvað; from line 5, Loki kvað"
+    lines:
+      - '"Hvat er með ásum?'
+      - 'Hvat er með alfum?'
+      - 'Hví ertu einn kominn'
+      - 'í Jötunheima?"'
+      - '"Illt er með ásum,'
+      - 'illt er með alfum;'
+      - 'hefr þú Hlórriða'
+      - 'hamar of folginn?"'
+  - id: "8"
+    title: "Stanza 8 · Þrymr kvað"
+    lines:
+      - '"Ek hef Hlórriða.'
+      - 'hamar of folginn'
+      - 'átta röstum'
+      - 'fyr jörð neðan;'
+      - 'hann engi maðr'
+      - 'aftr of heimtir,'
+      - 'nema færi mér'
+      - 'Freyju at kvæn."'
+  - id: "9"
+    title: "Stanza 9"
+    lines:
+      - 'Fló þá Loki,'
+      - '- fjaðrhamr dunði, -'
+      - 'unz fyr útan kom'
+      - 'jötna heima'
+      - 'ok fyr innan kom'
+      - 'ása garða.'
+      - 'Mætti hann Þór'
+      - 'miðra garða,'
+      - 'ok þat hann orða'
+      - 'alls fyrst of kvað:'
+  - id: "10"
+    title: "Stanza 10"
+    lines:
+      - '"Hefr þú erendi'
+      - 'sem erfiði?'
+      - 'Segðu á lofti'
+      - 'löng tíðendi,'
+      - 'oft sitjanda'
+      - 'sögur of fallask'
+      - 'ok liggjandi'
+      - 'lygi of bellir."'
+  - id: "11"
+    title: "Stanza 11 · Loki kvað"
+    lines:
+      - '"Hef ek erfiði'
+      - 'ok erendi;'
+      - 'Þrymr hefr þinn hamar,'
+      - 'þursa dróttinn;'
+      - 'hann engi maðr'
+      - 'aftr of heimtir,'
+      - 'nema hánum færi'
+      - 'Freyju at kván.'
+  - id: "12"
+    title: "Stanza 12"
+    lines:
+      - 'Ganga þeir fagra'
+      - 'Freyju at hitta,'
+      - 'ok hann þat orða'
+      - 'alls fyrst of kvað:'
+      - '"Bittu þik, Freyja,'
+      - 'brúðar líni;'
+      - 'vit skulum aka tvau'
+      - 'í Jötunheima."'
+  - id: "13"
+    title: "Stanza 13"
+    lines:
+      - 'Reið varð þá Freyja'
+      - 'ok fnasaði,'
+      - 'allr ása salr'
+      - 'undir bifðisk,'
+      - 'stökk þat it mikla'
+      - 'men Brísinga:'
+      - '"Mik veiztu verða'
+      - 'vergjarnasta,'
+      - 'ef ek ek með þér'
+      - 'í Jötunheima."'
+  - id: "14"
+    title: "Stanza 14"
+    lines:
+      - 'Senn váru æsir'
+      - 'allir á þingi'
+      - 'ok ásynjur'
+      - 'allar á máli,'
+      - 'ok um þat réðu'
+      - 'ríkir tívar'
+      - 'hvé þeir Hlórriða'
+      - 'hamar of sætti.'
+  - id: "15"
+    title: "Stanza 15"
+    lines:
+      - 'Þá kvað þat Heimdallr,'
+      - 'hvítastr ása,'
+      - 'vissi hann vel fram'
+      - 'sem vanir aðrir:'
+      - '"Bindum vér Þór þá'
+      - 'brúðar líni,'
+      - 'hafi hann it mikla'
+      - 'men Brísinga.'
+  - id: "16"
+    title: "Stanza 16"
+    lines:
+      - 'Látum und hánum'
+      - 'hrynja lukla'
+      - 'ok kvenváðir'
+      - 'um kné falla,'
+      - 'en á brjósti'
+      - 'breiða steina'
+      - 'ok hagliga'
+      - 'um höfuð typpum."'
+  - id: "17"
+    title: "Stanza 17"
+    lines:
+      - 'Þá kvað þat Þór,'
+      - 'þrúðugr áss:'
+      - '"Mik munu æsir'
+      - 'argan kalla,'
+      - 'ef ek bindask læt'
+      - 'brúðar líni!"'
+  - id: "18"
+    title: "Stanza 18"
+    lines:
+      - 'Þá kvað þat Loki'
+      - 'Laufeyjar sonr:'
+      - '"Þegi þú, Þórr,'
+      - 'þeira orða.'
+      - 'Þegar munu jötnar'
+      - 'Ásgarð búa,'
+      - 'nema þú þinn hamar'
+      - 'þér of heimtir."'
+  - id: "19"
+    title: "Stanza 19"
+    lines:
+      - 'Bundu þeir Þór þá'
+      - 'brúðar líni'
+      - 'ok inu mikla'
+      - 'meni Brísinga,'
+      - 'létu und hánum'
+      - 'hrynja lukla'
+      - 'ok kvenváðir'
+      - 'um kné falla,'
+      - 'en á brjósti'
+      - 'breiða steina,'
+      - 'ok hagliga'
+      - 'um höfuð typpðu.'
+  - id: "20"
+    title: "Stanza 20"
+    lines:
+      - 'Þá kvað Loki'
+      - 'Laufeyjar sonr:'
+      - '"Mun ek ok með þér'
+      - 'ambótt vera,'
+      - 'vit skulum aka tvær'
+      - 'í Jötunheima."'
+  - id: "21"
+    title: "Stanza 21"
+    lines:
+      - 'Senn váru hafrar'
+      - 'heim of reknir,'
+      - 'skyndir at sköklum,'
+      - 'skyldu vel renna;'
+      - 'björg brotnuðu,'
+      - 'brann jörð loga,'
+      - 'ók Óðins sonr'
+      - 'í Jötunheima.'
+  - id: "22"
+    title: "Stanza 22"
+    lines:
+      - 'Þá kvað þat Þrymr,'
+      - 'þursa dróttinn:'
+      - '"Standið upp, jötnar,'
+      - 'ok stráið bekki,'
+      - 'nú færa mér'
+      - 'Freyju at kván'
+      - 'Njarðar dóttur'
+      - 'ór Nóatúnum.'
+  - id: "23"
+    title: "Stanza 23"
+    lines:
+      - 'Ganga hér at garði'
+      - 'gullhyrnðar kýr,'
+      - 'öxn alsvartir'
+      - 'jötni at gamni;'
+      - 'fjölð á ek meiðma,'
+      - 'fjölð á ek menja,'
+      - 'einnar mér Freyju'
+      - 'ávant þykkir."'
+  - id: "24"
+    title: "Stanza 24"
+    lines:
+      - 'Var þar at kveldi'
+      - 'of komit snemma'
+      - 'ok fyr jötna'
+      - 'öl fram borit;'
+      - 'einn át oxa,'
+      - 'átta laxa,'
+      - 'krásir allar,'
+      - 'þær er konur skyldu,'
+      - 'drakk Sifjar verr'
+      - 'sáld þrjú mjaðar.'
+  - id: "25"
+    title: "Stanza 25"
+    lines:
+      - 'Þá kvat þat Þrymr,'
+      - 'þursa dróttinn:'
+      - '"Hvar sáttu brúðir'
+      - 'bíta hvassara?'
+      - 'Sák-a ek brúðir'
+      - 'bíta breiðara,'
+      - 'né inn meira mjöð'
+      - 'mey of drekka."'
+  - id: "26"
+    title: "Stanza 26"
+    lines:
+      - 'Sat in alsnotra'
+      - 'ambótt fyrir,'
+      - 'er orð of fann'
+      - 'við jötuns máli:'
+      - '"Át vætr Freyja'
+      - 'átta nóttum,'
+      - 'svá var hon óðfús'
+      - 'í Jötunheima."'
+  - id: "27"
+    title: "Stanza 27"
+    lines:
+      - 'Laut und línu,'
+      - 'lysti at kyssa,'
+      - 'en hann útan stökk'
+      - 'endlangan sal:'
+      - '"Hví eru öndótt'
+      - 'augu Freyju?'
+      - 'Þykki mér ór augum'
+      - 'eldr of brenna."'
+  - id: "28"
+    title: "Stanza 28"
+    lines:
+      - 'Sat in alsnotra'
+      - 'ambótt fyrir,'
+      - 'er orð of fann'
+      - 'við jötuns máli:'
+      - '"Svaf vætr Freyja'
+      - 'átta nóttum,'
+      - 'svá var hon óðfús'
+      - 'í Jötunheima."'
+  - id: "29"
+    title: "Stanza 29"
+    lines:
+      - 'Inn kom in arma'
+      - 'jötna systir,'
+      - 'hin er brúðféar'
+      - 'biðja þorði:'
+      - '"Láttu þér af höndum'
+      - 'hringa rauða,'
+      - 'ef þú öðlask vill'
+      - 'ástir mínar,'
+      - 'ástir mínar,'
+      - 'alla hylli.'
+  - id: "30"
+    title: "Stanza 30"
+    lines:
+      - 'Þá kvað þat Þrymr,'
+      - 'þursa dróttinn:'
+      - '"Berið inn hamar'
+      - 'brúði at vígja,'
+      - 'lekkið Mjöllni'
+      - 'í meyjar kné,'
+      - 'vígið okkr saman'
+      - 'Várar hendi."'
+  - id: "31"
+    title: "Stanza 31"
+    lines:
+      - 'Hló Hlórriða'
+      - 'hugr í brjósti,'
+      - 'er harðhugaðr'
+      - 'hamar of þekkði;'
+      - 'Þrym drap hann fyrstan,'
+      - 'þursa dróttin,'
+      - 'ok ætt jötuns'
+      - 'alla lamði.'
+  - id: "32"
+    title: "Stanza 32"
+    lines:
+      - 'Drap hann ina öldnu'
+      - 'jötna systur,'
+      - 'hin er brúðféar'
+      - 'of beðit hafði;'
+      - 'hon skell of hlaut'
+      - 'fyr skillinga,'
+      - 'en högg hamars'
+      - 'fyr hringa fjölð.'
+      - 'Svá kom Óðins sonr'
+      - 'endr at hamri.'

@@ -1,0 +1,109 @@
+work: snorri-gylfaginning
+title: "Gylfaginning (The Deluding of Gylfi): the making of the world from Ymir, and the death of Baldr"
+author: "Snorri Sturluson (1179–1241), Prose Edda"
+language: non
+prefix: gyl                          # gyl.<chapter>.<line>[.<token>]; chapters as numbered in the edition
+urn: urn:weft:non:snorri.gylfaginning   # no CTS URN exists for the Prose Edda; Weft-local identifier
+unit: section
+section_noun: chapter
+pilot: {sections: ["5", "6", "7", "8", "49"]}
+written: {year: 1220, display: "c. 1220", label: "written by Snorri Sturluson about 1220 as part of a handbook for poets; the main manuscripts date from the first half of the 1300s"}
+status: phase-0
+edition:
+  id: jonsson-heimskringla
+  name: "Guðni Jónsson's normalized text of Edda Snorra Sturlusonar, via heimskringla.no and the CLTK Old Norse corpus (commit 2fb9652), as Weft's line division"
+  format: weft-edition
+  file: edition.yaml
+  license: "text public domain; normalized text credited to Guðni Jónsson and heimskringla.no; Weft line division CC BY-SA 4.0"
+treebank: null                       # IcePaHC has no Snorra Edda text (checked train, dev and test); hand annotation, draft
+schemes: [old-norse, modern-icelandic]   # see pipeline/weft/norse.py
+scheme_labels:
+  old-norse: "Old Norse: reconstructed Old Icelandic of Snorri's time, around 1220 (approximate)"
+sound_confidence: medium
+sources_extra:
+  - id: gylfaginning-cltk
+    name: "Gylfaginning, normalized text from heimskringla.no (Guðni Jónsson), CLTK old_norse_texts_heimskringla, commit 2fb9652585dbb159404b480330a7167f4c34af1b"
+    file: sources/gylfaginning.txt
+    url: "https://raw.githubusercontent.com/cltk/old_norse_texts_heimskringla/2fb9652585dbb159404b480330a7167f4c34af1b/Snorra-Edda/txt_files/gylfaginning.txt"
+    sha256: d076b089c80ea61ad71b87c11e4faafe468e80fc191ae0ee873d06467fed05aa
+    license: "text public domain; normalized text credited to Guðni Jónsson and heimskringla.no"
+    license_url: "http://heimskringla.no/wiki/Heimskringla.no:Copyright"
+  - id: brodeur1916-p49
+    name: "Brodeur, The Prose Edda (1916), scan page 49 (printed p. 17), English Wikisource revision 13242267"
+    file: sources/brodeur1916-p49.txt
+    url: "https://en.wikisource.org/w/index.php?title=Page:The_Prose_Edda_(1916_translation_by_Arthur_Gilchrist_Brodeur).pdf/49&oldid=13242267&action=raw"
+    sha256: 6bd7463766dcd5339a536cfd5382e49ede77d8cfa07d74c3f9409a2ab1833d40
+    license: "public domain in the US (published 1916); Wikisource CC BY-SA 4.0"
+    license_url: "https://en.wikisource.org/wiki/The_Prose_Edda_(Brodeur_1916)"
+  - id: brodeur1916-p50
+    name: "Brodeur, The Prose Edda (1916), scan page 50 (printed p. 18), English Wikisource revision 13242255"
+    file: sources/brodeur1916-p50.txt
+    url: "https://en.wikisource.org/w/index.php?title=Page:The_Prose_Edda_(1916_translation_by_Arthur_Gilchrist_Brodeur).pdf/50&oldid=13242255&action=raw"
+    sha256: da3e6d30b87f489c245701b3eceb6ead4d23cb5a711cabec156f0aa6637b18a6
+    license: "public domain in the US (published 1916); Wikisource CC BY-SA 4.0"
+    license_url: "https://en.wikisource.org/wiki/The_Prose_Edda_(Brodeur_1916)"
+  - id: brodeur1916-p51
+    name: "Brodeur, The Prose Edda (1916), scan page 51 (printed p. 19), English Wikisource revision 13241428"
+    file: sources/brodeur1916-p51.txt
+    url: "https://en.wikisource.org/w/index.php?title=Page:The_Prose_Edda_(1916_translation_by_Arthur_Gilchrist_Brodeur).pdf/51&oldid=13241428&action=raw"
+    sha256: 94e97158b576a85eca62d20f87f76ae864146a6189f6b8dfd65322f8e2288e1b
+    license: "public domain in the US (published 1916); Wikisource CC BY-SA 4.0"
+    license_url: "https://en.wikisource.org/wiki/The_Prose_Edda_(Brodeur_1916)"
+  - id: brodeur1916-p52
+    name: "Brodeur, The Prose Edda (1916), scan page 52 (printed p. 20), English Wikisource revision 13242715"
+    file: sources/brodeur1916-p52.txt
+    url: "https://en.wikisource.org/w/index.php?title=Page:The_Prose_Edda_(1916_translation_by_Arthur_Gilchrist_Brodeur).pdf/52&oldid=13242715&action=raw"
+    sha256: b65befce6f04a2ce1c8b351c3e2056b5eaf44f75cabdccd7e07ec9003284260f
+    license: "public domain in the US (published 1916); Wikisource CC BY-SA 4.0"
+    license_url: "https://en.wikisource.org/wiki/The_Prose_Edda_(Brodeur_1916)"
+  - id: brodeur1916-p53
+    name: "Brodeur, The Prose Edda (1916), scan page 53 (printed p. 21), English Wikisource revision 13241424"
+    file: sources/brodeur1916-p53.txt
+    url: "https://en.wikisource.org/w/index.php?title=Page:The_Prose_Edda_(1916_translation_by_Arthur_Gilchrist_Brodeur).pdf/53&oldid=13241424&action=raw"
+    sha256: f7e58ce66cfcb8292d0dbf15150c8dd60bde67fef9cf2cdb76cbbefab7932e3a
+    license: "public domain in the US (published 1916); Wikisource CC BY-SA 4.0"
+    license_url: "https://en.wikisource.org/wiki/The_Prose_Edda_(Brodeur_1916)"
+  - id: brodeur1916-p102
+    name: "Brodeur, The Prose Edda (1916), scan page 102 (printed p. 70), English Wikisource revision 13242134"
+    file: sources/brodeur1916-p102.txt
+    url: "https://en.wikisource.org/w/index.php?title=Page:The_Prose_Edda_(1916_translation_by_Arthur_Gilchrist_Brodeur).pdf/102&oldid=13242134&action=raw"
+    sha256: 3e61a7baed6df26864de012ced03832a35514ef9b7727b33bc925a20ab0f5720
+    license: "public domain in the US (published 1916); Wikisource CC BY-SA 4.0"
+    license_url: "https://en.wikisource.org/wiki/The_Prose_Edda_(Brodeur_1916)"
+  - id: brodeur1916-p103
+    name: "Brodeur, The Prose Edda (1916), scan page 103 (printed p. 71), English Wikisource revision 13242147"
+    file: sources/brodeur1916-p103.txt
+    url: "https://en.wikisource.org/w/index.php?title=Page:The_Prose_Edda_(1916_translation_by_Arthur_Gilchrist_Brodeur).pdf/103&oldid=13242147&action=raw"
+    sha256: ec60fd33567a29f42ee92bf2a73d2ce56c8dcad54e11557f7555eed2e1096581
+    license: "public domain in the US (published 1916); Wikisource CC BY-SA 4.0"
+    license_url: "https://en.wikisource.org/wiki/The_Prose_Edda_(Brodeur_1916)"
+  - id: brodeur1916-p104
+    name: "Brodeur, The Prose Edda (1916), scan page 104 (printed p. 72), English Wikisource revision 13242152"
+    file: sources/brodeur1916-p104.txt
+    url: "https://en.wikisource.org/w/index.php?title=Page:The_Prose_Edda_(1916_translation_by_Arthur_Gilchrist_Brodeur).pdf/104&oldid=13242152&action=raw"
+    sha256: e0f438f3407a0ebfa97e5171dad60f5795cf4dee11c1c7505da370987e5b6fee
+    license: "public domain in the US (published 1916); Wikisource CC BY-SA 4.0"
+    license_url: "https://en.wikisource.org/wiki/The_Prose_Edda_(Brodeur_1916)"
+translations:
+  - id: brodeur1916
+    translator: Arthur Gilchrist Brodeur
+    year: 1916
+    form: "prose, The Prose Edda (American-Scandinavian Foundation, 1916), as proofread on English Wikisource; the pages are pinned above as brodeur1916-p49 to -p104"
+    license: "public domain in the US (published 1916); Wikisource transcription CC BY-SA 4.0"
+    license_url: "https://en.wikisource.org/wiki/The_Prose_Edda_(Brodeur_1916)"
+  - id: anderson1880
+    translator: Rasmus B. Anderson
+    year: 1880
+    form: "prose, The Younger Edda (Chicago, 1880); Project Gutenberg eBook 18947"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/anderson1880.txt
+    url: https://www.gutenberg.org/cache/epub/18947/pg18947.txt
+    sha256: 2a0cec457e5dc1fe669f76fbf278e1921b8d7dedc8cb92bfd2bca8b5b57f108f
+predicted_gaps:
+  - "no treebank: IcePaHC, the treebank used for Grettis saga, has no Snorra Edda text; every lemma and parse is hand-annotated (Zoëga as reference) and stays draft until reviewed"
+  - "the edition's straight quotation marks are set aside (verify_strip) because the tokenizer does not separate them; speech is marked by the colon after the verb of saying"
+  - "a selection, not the whole text: the verse quotations and some sentences between the chosen lines are left out, so each chapter's lines are excerpts, and each translation span is the matching excerpt"
+  - "the edition's ö covers both old ǫ and ø; read as ǫ by default, which is right for every ö in these lines"
+  - "Snorri wrote about 1220, when ǫ and ø were merging and long vowels may have begun to change; the old-norse reading is the standard reconstruction for about 1200 and is approximate"
+  - "Brodeur and Anderson translated from earlier editions (Anderson names Egilsson's, Thorleif Jónsson's and Wilken's), which differ from this text in places: in chapter 5 Brodeur has Jafnhárr answer where this text has Hárr"

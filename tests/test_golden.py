@@ -410,3 +410,10 @@ def test_oldest_texts_check():
     for work in ("pyramid-texts-unas", "enheduanna-temple-hymns"):
         r = check.run(REPO, work)
         assert r["ok"], (work, r["problems"])
+
+
+def test_norse_norman_and_papal_works_check():
+    """The 2026-10-01 batch: Þrymskviða, the Bayeux Tapestry captions, Inter caetera, Gylfaginning, the Res Gestae."""
+    for work in ("edda-thrymskvida", "bayeux-tapestry", "inter-caetera-1493", "res-gestae-augusti", "snorri-gylfaginning"):
+        r = check.run(REPO, work)
+        assert r["ok"], (work, r["problems"])

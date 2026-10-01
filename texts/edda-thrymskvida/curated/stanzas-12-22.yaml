@@ -1,0 +1,352 @@
+# Human overlay for Þrymskviða stanzas 12 to 22. Lemmas follow Zoëga, A Concise Dictionary of Old Icelandic
+# (1910), in the edition's spelling; morphology uses Universal Dependencies features. Staves (stave: true)
+# mark the alliterating words; metre gives each line's role in the fornyrðislag long line.
+- by: Claude (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-01
+  why: hand lemma, morphology, gloss, staves and metre; no treebank exists for Eddic poetry
+  status: draft
+  set:
+    thr.12.1: {metre: "a-verse · stave f"}
+    thr.12.1.1: {lemma: "ganga", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "go"}   # Ganga
+    thr.12.1.2: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur", gloss: "they"}   # þeir
+    thr.12.1.3: {lemma: "fagr", morph: "ADJ|Case=Acc|Gender=Fem|Number=Sing", gloss: "fair", stave: true}   # fagra
+    thr.12.2: {metre: "b-verse · stave f"}
+    thr.12.2.1: {lemma: "Freyja", morph: "PROPN|Case=Acc|Gender=Fem|Number=Sing", gloss: "Freyja", stave: true}   # Freyju
+    thr.12.2.2: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    thr.12.2.3: {lemma: "hitta", morph: "VERB|VerbForm=Inf", gloss: "find"}   # hitta
+    thr.12.3: {metre: "a-verse · stave vowel"}
+    thr.12.3.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    thr.12.3.2: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    thr.12.3.3: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing", gloss: "that"}   # þat
+    thr.12.3.4: {lemma: "orð", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-words", stave: true}   # orða
+    thr.12.4: {metre: "b-verse · stave vowel"}
+    thr.12.4.1: {lemma: "allr", morph: "ADJ|Case=Gen|Gender=Neut|Number=Sing", gloss: "of-all", stave: true}   # alls
+    thr.12.4.2: {lemma: "fyrst", morph: "ADV|Degree=Sup", gloss: "first"}   # fyrst
+    thr.12.4.3: {lemma: "of", morph: "PART", gloss: "(particle)"}   # of
+    thr.12.4.4: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    thr.12.5: {metre: "a-verse · stave b"}
+    thr.12.5.1: {lemma: "binda", morph: "VERB|Mood=Imp|Number=Sing|Person=2", gloss: "bind-you", stave: true}   # "Bittu
+    thr.12.5.2: {lemma: "þú", morph: "PRON|Case=Acc|Number=Sing|Person=2", gloss: "yourself"}   # þik
+    thr.12.5.3: {lemma: "Freyja", morph: "PROPN|Case=Nom|Gender=Fem|Number=Sing", gloss: "Freyja"}   # Freyja
+    thr.12.6: {metre: "b-verse · stave b"}
+    thr.12.6.1: {lemma: "brúðr", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "bride's", stave: true}   # brúðar
+    thr.12.6.2: {lemma: "lín", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "linen"}   # líni
+    thr.12.7: {metre: "a-verse · stave vowel"}
+    thr.12.7.1: {lemma: "vit", morph: "PRON|Case=Nom|Number=Dual|Person=1", gloss: "we-two"}   # vit
+    thr.12.7.2: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "shall"}   # skulum
+    thr.12.7.3: {lemma: "aka", morph: "VERB|VerbForm=Inf", gloss: "drive", stave: true}   # aka
+    thr.12.7.4: {lemma: "tveir", morph: "NUM|Case=Nom|Gender=Neut|Number=Plur", gloss: "two"}   # tvau
+    thr.12.8: {metre: "b-verse · stave vowel (j)"}
+    thr.12.8.1: {lemma: "í", morph: "ADP", gloss: "into"}   # í
+    thr.12.8.2: {lemma: "Jötunheimar", morph: "PROPN|Case=Acc|Gender=Masc|Number=Plur", gloss: "Giant-homes", stave: true}   # Jötunheima."
+    thr.13.1: {metre: "a-verse · stave f"}
+    thr.13.1.1: {lemma: "reiðr", morph: "ADJ|Case=Nom|Gender=Fem|Number=Sing", gloss: "angry"}   # Reið
+    thr.13.1.2: {lemma: "verða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "became"}   # varð
+    thr.13.1.3: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    thr.13.1.4: {lemma: "Freyja", morph: "PROPN|Case=Nom|Gender=Fem|Number=Sing", gloss: "Freyja", stave: true}   # Freyja
+    thr.13.2: {metre: "b-verse · stave f"}
+    thr.13.2.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    thr.13.2.2: {lemma: "fnasa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "snorted", stave: true}   # fnasaði
+    thr.13.3: {metre: "a-verse · staves vowel"}
+    thr.13.3.1: {lemma: "allr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "all", stave: true}   # allr
+    thr.13.3.2: {lemma: "áss", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-Æsir", stave: true}   # ása
+    thr.13.3.3: {lemma: "salr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "hall"}   # salr
+    thr.13.4: {metre: "b-verse · stave vowel"}
+    thr.13.4.1: {lemma: "undir", morph: "ADV", gloss: "beneath", stave: true}   # undir
+    thr.13.4.2: {lemma: "bifa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Mid", gloss: "shook"}   # bifðisk
+    thr.13.5: {metre: "a-verse · stave m"}
+    thr.13.5.1: {lemma: "stökkva", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "burst"}   # stökk
+    thr.13.5.2: {lemma: "sá", morph: "DET|Case=Nom|Gender=Neut|Number=Sing", gloss: "that"}   # þat
+    thr.13.5.3: {lemma: "inn", morph: "DET|Case=Nom|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    thr.13.5.4: {lemma: "mikill", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "great", stave: true}   # mikla
+    thr.13.6: {metre: "b-verse · stave m"}
+    thr.13.6.1: {lemma: "men", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "necklace", stave: true}   # men
+    thr.13.6.2: {lemma: "Brísingar", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-Brisings"}   # Brísinga
+    thr.13.7: {metre: "a-verse · staves v"}
+    thr.13.7.1: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # "Mik
+    thr.13.7.2: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "know-you", stave: true}   # veiztu
+    thr.13.7.3: {lemma: "verða", morph: "VERB|VerbForm=Inf", gloss: "become", stave: true}   # verða
+    thr.13.8: {metre: "b-verse · stave v"}
+    thr.13.8.1: {lemma: "vergjarn", morph: "ADJ|Case=Acc|Degree=Sup|Gender=Fem|Number=Sing", gloss: "most-man-eager", stave: true}   # vergjarnasta
+    thr.13.9: {metre: "a-verse · stave vowel"}
+    thr.13.9.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    thr.13.9.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    thr.13.9.3: {lemma: "aka", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "drive", stave: true}   # ek
+    thr.13.9.4: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    thr.13.9.5: {lemma: "þú", morph: "PRON|Case=Dat|Number=Sing|Person=2", gloss: "you"}   # þér
+    thr.13.10: {metre: "b-verse · stave vowel (j)"}
+    thr.13.10.1: {lemma: "í", morph: "ADP", gloss: "into"}   # í
+    thr.13.10.2: {lemma: "Jötunheimar", morph: "PROPN|Case=Acc|Gender=Masc|Number=Plur", gloss: "Giant-homes", stave: true}   # Jötunheima."
+    thr.14.1: {metre: "a-verse · stave vowel"}
+    thr.14.1.1: {lemma: "senn", morph: "ADV", gloss: "at-once"}   # Senn
+    thr.14.1.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "were"}   # váru
+    thr.14.1.3: {lemma: "áss", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "Æsir", stave: true}   # æsir
+    thr.14.2: {metre: "b-verse · stave vowel"}
+    thr.14.2.1: {lemma: "allr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "all", stave: true}   # allir
+    thr.14.2.2: {lemma: "á", morph: "ADP", gloss: "at"}   # á
+    thr.14.2.3: {lemma: "þing", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "assembly"}   # þingi
+    thr.14.3: {metre: "a-verse · stave vowel"}
+    thr.14.3.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    thr.14.3.2: {lemma: "ásynja", morph: "NOUN|Case=Nom|Gender=Fem|Number=Plur", gloss: "goddesses", stave: true}   # ásynjur
+    thr.14.4: {metre: "b-verse · stave vowel"}
+    thr.14.4.1: {lemma: "allr", morph: "ADJ|Case=Nom|Gender=Fem|Number=Plur", gloss: "all", stave: true}   # allar
+    thr.14.4.2: {lemma: "á", morph: "ADP", gloss: "at"}   # á
+    thr.14.4.3: {lemma: "mál", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "speech"}   # máli
+    thr.14.5: {metre: "a-verse · stave r"}
+    thr.14.5.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    thr.14.5.2: {lemma: "um", morph: "ADP", gloss: "about"}   # um
+    thr.14.5.3: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing", gloss: "that"}   # þat
+    thr.14.5.4: {lemma: "ráða", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "counselled", stave: true}   # réðu
+    thr.14.6: {metre: "b-verse · stave r"}
+    thr.14.6.1: {lemma: "ríkr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "mighty", stave: true}   # ríkir
+    thr.14.6.2: {lemma: "tívar", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "gods"}   # tívar
+    thr.14.7: {metre: "a-verse · stave h"}
+    thr.14.7.1: {lemma: "hvé", morph: "ADV", gloss: "how"}   # hvé
+    thr.14.7.2: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur", gloss: "they"}   # þeir
+    thr.14.7.3: {lemma: "Hlórriði", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Hlorridi's", stave: true}   # Hlórriða
+    thr.14.8: {metre: "b-verse · stave h"}
+    thr.14.8.1: {lemma: "hamarr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "hammer", stave: true}   # hamar
+    thr.14.8.2: {lemma: "of", morph: "PART", gloss: "(particle)"}   # of
+    thr.14.8.3: {lemma: "sækja", morph: "VERB|Mood=Sub|Number=Plur|Person=3|Tense=Past", gloss: "might-fetch"}   # sætti
+    thr.15.1: {metre: "a-verse · stave h"}
+    thr.15.1.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # Þá
+    thr.15.1.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "said"}   # kvað
+    thr.15.1.3: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing", gloss: "that"}   # þat
+    thr.15.1.4: {lemma: "Heimdallr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Heimdall", stave: true}   # Heimdallr
+    thr.15.2: {metre: "b-verse · stave h"}
+    thr.15.2.1: {lemma: "hvítr", morph: "ADJ|Case=Nom|Degree=Sup|Gender=Masc|Number=Sing", gloss: "whitest", stave: true}   # hvítastr
+    thr.15.2.2: {lemma: "áss", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-Æsir"}   # ása
+    thr.15.3: {metre: "a-verse · staves v"}
+    thr.15.3.1: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "knew", stave: true}   # vissi
+    thr.15.3.2: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    thr.15.3.3: {lemma: "vel", morph: "ADV", gloss: "well", stave: true}   # vel
+    thr.15.3.4: {lemma: "fram", morph: "ADV", gloss: "ahead"}   # fram
+    thr.15.4: {metre: "b-verse · stave v"}
+    thr.15.4.1: {lemma: "sem", morph: "SCONJ", gloss: "like"}   # sem
+    thr.15.4.2: {lemma: "vanr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "Vanir", stave: true}   # vanir
+    thr.15.4.3: {lemma: "annarr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "other"}   # aðrir
+    thr.15.5: {metre: "a-verse · stave b"}
+    thr.15.5.1: {lemma: "binda", morph: "VERB|Mood=Sub|Number=Plur|Person=1|Tense=Pres", gloss: "let-us-bind", stave: true}   # "Bindum
+    thr.15.5.2: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    thr.15.5.3: {lemma: "Þórr", morph: "PROPN|Case=Acc|Gender=Masc|Number=Sing", gloss: "Thor"}   # Þór
+    thr.15.5.4: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    thr.15.6: {metre: "b-verse · stave b"}
+    thr.15.6.1: {lemma: "brúðr", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "bride's", stave: true}   # brúðar
+    thr.15.6.2: {lemma: "lín", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "linen"}   # líni
+    thr.15.7: {metre: "a-verse · stave m"}
+    thr.15.7.1: {lemma: "hafa", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "let-have"}   # hafi
+    thr.15.7.2: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    thr.15.7.3: {lemma: "inn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    thr.15.7.4: {lemma: "mikill", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "great", stave: true}   # mikla
+    thr.15.8: {metre: "b-verse · stave m"}
+    thr.15.8.1: {lemma: "men", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "necklace", stave: true}   # men
+    thr.15.8.2: {lemma: "Brísingar", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-Brisings"}   # Brísinga
+    thr.16.1: {metre: "a-verse · stave h (on the pronoun)"}
+    thr.16.1.1: {lemma: "láta", morph: "VERB|Mood=Sub|Number=Plur|Person=1|Tense=Pres", gloss: "let-us-let"}   # Látum
+    thr.16.1.2: {lemma: "und", morph: "ADP", gloss: "under"}   # und
+    thr.16.1.3: {lemma: "hann", morph: "PRON|Case=Dat|Gender=Masc|Number=Sing|Person=3", gloss: "him", stave: true}   # hánum
+    thr.16.2: {metre: "b-verse · stave h"}
+    thr.16.2.1: {lemma: "hrynja", morph: "VERB|VerbForm=Inf", gloss: "jingle", stave: true}   # hrynja
+    thr.16.2.2: {lemma: "lykill", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "keys"}   # lukla
+    thr.16.3: {metre: "a-verse · stave k"}
+    thr.16.3.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    thr.16.3.2: {lemma: "kvenváðir", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "woman-weeds", stave: true}   # kvenváðir
+    thr.16.4: {metre: "b-verse · stave k"}
+    thr.16.4.1: {lemma: "um", morph: "ADP", gloss: "about"}   # um
+    thr.16.4.2: {lemma: "kné", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "knees", stave: true}   # kné
+    thr.16.4.3: {lemma: "falla", morph: "VERB|VerbForm=Inf", gloss: "fall"}   # falla
+    thr.16.5: {metre: "a-verse · stave b"}
+    thr.16.5.1: {lemma: "en", morph: "CCONJ", gloss: "and"}   # en
+    thr.16.5.2: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    thr.16.5.3: {lemma: "brjóst", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "breast", stave: true}   # brjósti
+    thr.16.6: {metre: "b-verse · stave b"}
+    thr.16.6.1: {lemma: "breiðr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Plur", gloss: "broad", stave: true}   # breiða
+    thr.16.6.2: {lemma: "steinn", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "stones"}   # steina
+    thr.16.7: {metre: "a-verse · stave h"}
+    thr.16.7.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    thr.16.7.2: {lemma: "hagliga", morph: "ADV", gloss: "deftly", stave: true}   # hagliga
+    thr.16.8: {metre: "b-verse · stave h"}
+    thr.16.8.1: {lemma: "um", morph: "ADP", gloss: "about"}   # um
+    thr.16.8.2: {lemma: "höfuð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "head", stave: true}   # höfuð
+    thr.16.8.3: {lemma: "typpa", morph: "VERB|Mood=Sub|Number=Plur|Person=1|Tense=Pres", gloss: "let-us-top"}   # typpum."
+    thr.17.1: {metre: "a-verse · stave þ"}
+    thr.17.1.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # Þá
+    thr.17.1.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "said"}   # kvað
+    thr.17.1.3: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing", gloss: "that"}   # þat
+    thr.17.1.4: {lemma: "Þórr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Thor", stave: true}   # Þór
+    thr.17.2: {metre: "b-verse · stave þ"}
+    thr.17.2.1: {lemma: "þrúðugr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "mighty", stave: true}   # þrúðugr
+    thr.17.2.2: {lemma: "áss", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "god"}   # áss
+    thr.17.3: {metre: "a-verse · stave vowel"}
+    thr.17.3.1: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # "Mik
+    thr.17.3.2: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "will"}   # munu
+    thr.17.3.3: {lemma: "áss", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "Æsir", stave: true}   # æsir
+    thr.17.4: {metre: "b-verse · stave vowel"}
+    thr.17.4.1: {lemma: "argr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "unmanly", stave: true}   # argan
+    thr.17.4.2: {lemma: "kalla", morph: "VERB|VerbForm=Inf", gloss: "call"}   # kalla
+    thr.17.5: {metre: "a-verse · stave b"}
+    thr.17.5.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    thr.17.5.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    thr.17.5.3: {lemma: "binda", morph: "VERB|VerbForm=Inf|Voice=Mid", gloss: "be-bound", stave: true}   # bindask
+    thr.17.5.4: {lemma: "láta", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "let"}   # læt
+    thr.17.6: {metre: "b-verse · stave b"}
+    thr.17.6.1: {lemma: "brúðr", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "bride's", stave: true}   # brúðar
+    thr.17.6.2: {lemma: "lín", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "linen"}   # líni!"
+    thr.18.1: {metre: "a-verse · stave l"}
+    thr.18.1.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # Þá
+    thr.18.1.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "said"}   # kvað
+    thr.18.1.3: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing", gloss: "that"}   # þat
+    thr.18.1.4: {lemma: "Loki", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Loki", stave: true}   # Loki
+    thr.18.2: {metre: "b-verse · stave l"}
+    thr.18.2.1: {lemma: "Laufey", morph: "PROPN|Case=Gen|Gender=Fem|Number=Sing", gloss: "Laufey's", stave: true}   # Laufeyjar
+    thr.18.2.2: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "son"}   # sonr
+    thr.18.3: {metre: "a-verse · staves þ"}
+    thr.18.3.1: {lemma: "þegja", morph: "VERB|Mood=Imp|Number=Sing|Person=2", gloss: "be-silent", stave: true}   # "Þegi
+    thr.18.3.2: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "you"}   # þú
+    thr.18.3.3: {lemma: "Þórr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Thor", stave: true}   # Þórr
+    thr.18.4: {metre: "b-verse · stave þ"}
+    thr.18.4.1: {lemma: "sá", morph: "PRON|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-those", stave: true}   # þeira
+    thr.18.4.2: {lemma: "orð", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "words"}   # orða
+    thr.18.5: {metre: "a-verse · stave vowel (j)"}
+    thr.18.5.1: {lemma: "þegar", morph: "ADV", gloss: "at-once"}   # Þegar
+    thr.18.5.2: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "will"}   # munu
+    thr.18.5.3: {lemma: "jötunn", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "giants", stave: true}   # jötnar
+    thr.18.6: {metre: "b-verse · stave vowel"}
+    thr.18.6.1: {lemma: "Ásgarðr", morph: "PROPN|Case=Acc|Gender=Masc|Number=Sing", gloss: "Asgard", stave: true}   # Ásgarð
+    thr.18.6.2: {lemma: "búa", morph: "VERB|VerbForm=Inf", gloss: "dwell-in"}   # búa
+    thr.18.7: {metre: "a-verse · stave h"}
+    thr.18.7.1: {lemma: "nema", morph: "SCONJ", gloss: "unless"}   # nema
+    thr.18.7.2: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "you"}   # þú
+    thr.18.7.3: {lemma: "þinn", morph: "DET|Case=Acc|Gender=Masc|Number=Sing|Poss=Yes", gloss: "your"}   # þinn
+    thr.18.7.4: {lemma: "hamarr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "hammer", stave: true}   # hamar
+    thr.18.8: {metre: "b-verse · stave h"}
+    thr.18.8.1: {lemma: "þú", morph: "PRON|Case=Dat|Number=Sing|Person=2", gloss: "for-yourself"}   # þér
+    thr.18.8.2: {lemma: "of", morph: "PART", gloss: "(particle)"}   # of
+    thr.18.8.3: {lemma: "heimta", morph: "VERB|Mood=Sub|Number=Sing|Person=2|Tense=Pres", gloss: "fetch", stave: true}   # heimtir."
+    thr.19.1: {metre: "a-verse · stave b"}
+    thr.19.1.1: {lemma: "binda", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "bound", stave: true}   # Bundu
+    thr.19.1.2: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur", gloss: "they"}   # þeir
+    thr.19.1.3: {lemma: "Þórr", morph: "PROPN|Case=Acc|Gender=Masc|Number=Sing", gloss: "Thor"}   # Þór
+    thr.19.1.4: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    thr.19.2: {metre: "b-verse · stave b"}
+    thr.19.2.1: {lemma: "brúðr", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "bride's", stave: true}   # brúðar
+    thr.19.2.2: {lemma: "lín", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "with-linen"}   # líni
+    thr.19.3: {metre: "a-verse · stave m"}
+    thr.19.3.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    thr.19.3.2: {lemma: "inn", morph: "DET|Case=Dat|Gender=Neut|Number=Sing", gloss: "with-the"}   # inu
+    thr.19.3.3: {lemma: "mikill", morph: "ADJ|Case=Dat|Gender=Neut|Number=Sing", gloss: "great", stave: true}   # mikla
+    thr.19.4: {metre: "b-verse · stave m"}
+    thr.19.4.1: {lemma: "men", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "necklace", stave: true}   # meni
+    thr.19.4.2: {lemma: "Brísingar", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-Brisings"}   # Brísinga
+    thr.19.5: {metre: "a-verse · stave h (on the pronoun)"}
+    thr.19.5.1: {lemma: "láta", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "let"}   # létu
+    thr.19.5.2: {lemma: "und", morph: "ADP", gloss: "under"}   # und
+    thr.19.5.3: {lemma: "hann", morph: "PRON|Case=Dat|Gender=Masc|Number=Sing|Person=3", gloss: "him", stave: true}   # hánum
+    thr.19.6: {metre: "b-verse · stave h"}
+    thr.19.6.1: {lemma: "hrynja", morph: "VERB|VerbForm=Inf", gloss: "jingle", stave: true}   # hrynja
+    thr.19.6.2: {lemma: "lykill", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "keys"}   # lukla
+    thr.19.7: {metre: "a-verse · stave k"}
+    thr.19.7.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    thr.19.7.2: {lemma: "kvenváðir", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "woman-weeds", stave: true}   # kvenváðir
+    thr.19.8: {metre: "b-verse · stave k"}
+    thr.19.8.1: {lemma: "um", morph: "ADP", gloss: "about"}   # um
+    thr.19.8.2: {lemma: "kné", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "knees", stave: true}   # kné
+    thr.19.8.3: {lemma: "falla", morph: "VERB|VerbForm=Inf", gloss: "fall"}   # falla
+    thr.19.9: {metre: "a-verse · stave b"}
+    thr.19.9.1: {lemma: "en", morph: "CCONJ", gloss: "and"}   # en
+    thr.19.9.2: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    thr.19.9.3: {lemma: "brjóst", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "breast", stave: true}   # brjósti
+    thr.19.10: {metre: "b-verse · stave b"}
+    thr.19.10.1: {lemma: "breiðr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Plur", gloss: "broad", stave: true}   # breiða
+    thr.19.10.2: {lemma: "steinn", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "stones"}   # steina
+    thr.19.11: {metre: "a-verse · stave h"}
+    thr.19.11.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    thr.19.11.2: {lemma: "hagliga", morph: "ADV", gloss: "deftly", stave: true}   # hagliga
+    thr.19.12: {metre: "b-verse · stave h"}
+    thr.19.12.1: {lemma: "um", morph: "ADP", gloss: "about"}   # um
+    thr.19.12.2: {lemma: "höfuð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "head", stave: true}   # höfuð
+    thr.19.12.3: {lemma: "typpa", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "topped"}   # typpðu
+    thr.20.1: {metre: "a-verse · stave l"}
+    thr.20.1.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # Þá
+    thr.20.1.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "said"}   # kvað
+    thr.20.1.3: {lemma: "Loki", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Loki", stave: true}   # Loki
+    thr.20.2: {metre: "b-verse · stave l"}
+    thr.20.2.1: {lemma: "Laufey", morph: "PROPN|Case=Gen|Gender=Fem|Number=Sing", gloss: "Laufey's", stave: true}   # Laufeyjar
+    thr.20.2.2: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "son"}   # sonr
+    thr.20.3: {metre: "a-verse · stave vowel (on ok, 'also')"}
+    thr.20.3.1: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "will"}   # "Mun
+    thr.20.3.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    thr.20.3.3: {lemma: "ok", morph: "ADV", gloss: "also", stave: true}   # ok
+    thr.20.3.4: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    thr.20.3.5: {lemma: "þú", morph: "PRON|Case=Dat|Number=Sing|Person=2", gloss: "you"}   # þér
+    thr.20.4: {metre: "b-verse · stave vowel"}
+    thr.20.4.1: {lemma: "ambátt", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "bondmaid", stave: true}   # ambótt
+    thr.20.4.2: {lemma: "vera", morph: "VERB|VerbForm=Inf", gloss: "be"}   # vera
+    thr.20.5: {metre: "a-verse · stave vowel"}
+    thr.20.5.1: {lemma: "vit", morph: "PRON|Case=Nom|Number=Dual|Person=1", gloss: "we-two"}   # vit
+    thr.20.5.2: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "shall"}   # skulum
+    thr.20.5.3: {lemma: "aka", morph: "VERB|VerbForm=Inf", gloss: "drive", stave: true}   # aka
+    thr.20.5.4: {lemma: "tveir", morph: "NUM|Case=Nom|Gender=Fem|Number=Plur", gloss: "two"}   # tvær
+    thr.20.6: {metre: "b-verse · stave vowel (j)"}
+    thr.20.6.1: {lemma: "í", morph: "ADP", gloss: "into"}   # í
+    thr.20.6.2: {lemma: "Jötunheimar", morph: "PROPN|Case=Acc|Gender=Masc|Number=Plur", gloss: "Giant-homes", stave: true}   # Jötunheima."
+    thr.21.1: {metre: "a-verse · stave h"}
+    thr.21.1.1: {lemma: "senn", morph: "ADV", gloss: "at-once"}   # Senn
+    thr.21.1.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "were"}   # váru
+    thr.21.1.3: {lemma: "hafr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "he-goats", stave: true}   # hafrar
+    thr.21.2: {metre: "b-verse · stave h"}
+    thr.21.2.1: {lemma: "heim", morph: "ADV", gloss: "home", stave: true}   # heim
+    thr.21.2.2: {lemma: "of", morph: "PART", gloss: "(particle)"}   # of
+    thr.21.2.3: {lemma: "reka", morph: "VERB|Case=Nom|Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part", gloss: "driven"}   # reknir
+    thr.21.3: {metre: "a-verse · staves sk"}
+    thr.21.3.1: {lemma: "skynda", morph: "VERB|Case=Nom|Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part", gloss: "hurried", stave: true}   # skyndir
+    thr.21.3.2: {lemma: "at", morph: "ADP", gloss: "to"}   # at
+    thr.21.3.3: {lemma: "skökull", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "shafts", stave: true}   # sköklum
+    thr.21.4: {metre: "b-verse · stave sk"}
+    thr.21.4.1: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "had-to", stave: true}   # skyldu
+    thr.21.4.2: {lemma: "vel", morph: "ADV", gloss: "well"}   # vel
+    thr.21.4.3: {lemma: "renna", morph: "VERB|VerbForm=Inf", gloss: "run"}   # renna
+    thr.21.5: {metre: "a-verse · staves b"}
+    thr.21.5.1: {lemma: "bjarg", morph: "NOUN|Case=Nom|Gender=Neut|Number=Plur", gloss: "rocks", stave: true}   # björg
+    thr.21.5.2: {lemma: "brotna", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "broke", stave: true}   # brotnuðu
+    thr.21.6: {metre: "b-verse · stave b"}
+    thr.21.6.1: {lemma: "brenna", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "burned", stave: true}   # brann
+    thr.21.6.2: {lemma: "jörð", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "earth"}   # jörð
+    thr.21.6.3: {lemma: "logi", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "with-flame"}   # loga
+    thr.21.7: {metre: "a-verse · staves vowel"}
+    thr.21.7.1: {lemma: "aka", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "drove", stave: true}   # ók
+    thr.21.7.2: {lemma: "Óðinn", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Odin's", stave: true}   # Óðins
+    thr.21.7.3: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "son"}   # sonr
+    thr.21.8: {metre: "b-verse · stave vowel (j)"}
+    thr.21.8.1: {lemma: "í", morph: "ADP", gloss: "into"}   # í
+    thr.21.8.2: {lemma: "Jötunheimar", morph: "PROPN|Case=Acc|Gender=Masc|Number=Plur", gloss: "Giant-homes", stave: true}   # Jötunheima
+    thr.22.1: {metre: "a-verse · stave þ"}
+    thr.22.1.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # Þá
+    thr.22.1.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "said"}   # kvað
+    thr.22.1.3: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing", gloss: "that"}   # þat
+    thr.22.1.4: {lemma: "Þrymr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Thrym", stave: true}   # Þrymr
+    thr.22.2: {metre: "b-verse · stave þ"}
+    thr.22.2.1: {lemma: "þurs", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-thurses", stave: true}   # þursa
+    thr.22.2.2: {lemma: "dróttinn", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "lord"}   # dróttinn
+    thr.22.3: {metre: "a-verse · stave st"}
+    thr.22.3.1: {lemma: "standa", morph: "VERB|Mood=Imp|Number=Plur|Person=2", gloss: "stand", stave: true}   # "Standið
+    thr.22.3.2: {lemma: "upp", morph: "ADV", gloss: "up"}   # upp
+    thr.22.3.3: {lemma: "jötunn", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "giants"}   # jötnar
+    thr.22.4: {metre: "b-verse · stave st"}
+    thr.22.4.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    thr.22.4.2: {lemma: "strá", morph: "VERB|Mood=Imp|Number=Plur|Person=2", gloss: "strew", stave: true}   # stráið
+    thr.22.4.3: {lemma: "bekkr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "benches"}   # bekki
+    thr.22.5: {metre: "a-verse · stave f"}
+    thr.22.5.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    thr.22.5.2: {lemma: "færa", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "they-bring", stave: true}   # færa
+    thr.22.5.3: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "to-me"}   # mér
+    thr.22.6: {metre: "b-verse · stave f"}
+    thr.22.6.1: {lemma: "Freyja", morph: "PROPN|Case=Acc|Gender=Fem|Number=Sing", gloss: "Freyja", stave: true}   # Freyju
+    thr.22.6.2: {lemma: "at", morph: "ADP", gloss: "as"}   # at
+    thr.22.6.3: {lemma: "kván", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "wife"}   # kván
+    thr.22.7: {metre: "a-verse · stave n"}
+    thr.22.7.1: {lemma: "Njörðr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Njord's", stave: true}   # Njarðar
+    thr.22.7.2: {lemma: "dóttir", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "daughter"}   # dóttur
+    thr.22.8: {metre: "b-verse · stave n"}
+    thr.22.8.1: {lemma: "ór", morph: "ADP", gloss: "from"}   # ór
+    thr.22.8.2: {lemma: "Nóatún", morph: "PROPN|Case=Dat|Gender=Neut|Number=Plur", gloss: "Ship-yards", stave: true}   # Nóatúnum

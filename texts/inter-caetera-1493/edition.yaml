@@ -1,0 +1,84 @@
+# Weft edition: the bull Inter caetera of Alexander VI, dated 4 May 1493. Five passages: the
+# address to Ferdinand and Isabella, the opening clause (arenga), the account of Columbus's
+# voyage, the grant with the line of demarcation, and the date.
+#
+# The text is the one on Latin Wikisource ('Inter caetera (quarto nonas Maii 1493)', revision
+# 129534), which reproduces, word for word in these lines, the Latin printed by Frances Gardiner
+# Davenport (1917) from the promulgated original in the Archivo General de Indias, Seville
+# (Patronato 1-1-1, no. 3). It keeps the original's spelling: e for ae and oe (cetera, regine,
+# presertim, que), j for consonantal i (Majestati, hujusmodi), and the Jhesu, Cristophorum and
+# nichilominus of the chancery. Every line is checked verbatim against the Wikisource page by
+# `weft draft`; the space the page sets before a semicolon or colon is stripped first. Weft divides the
+# long sentences into lines at their clauses.
+verify_in: sources/intercaetera-la.txt
+verify_strip: " (?=[;:])"
+sections:
+  - id: salutatio
+    title: "The address: Alexander to Ferdinand and Isabella"
+    lines:
+      - "Alexander episcopus, servus servorum Dei:"
+      - "carissimo in Christo filio Fernando regi,"
+      - "et carissime in Christo filie Elisabeth regine Castelle, Legionis, Aragonum, Sicilie, et Granate, illustribus,"
+      - "salutem et apostolicam benedictionem."
+  - id: arenga
+    title: "Among other works pleasing to God"
+    lines:
+      - "Inter cetera Divine Majestati beneplacita opera et cordis nostri desiderabilia,"
+      - "illud profecto potissimum existit,"
+      - "ut fides Catholica et Christiana religio nostris presertim temporibus exaltetur,"
+      - "ac ubilibet amplietur et dilatetur, animarumque salus procuretur,"
+      - "ac barbare nationes deprimantur et ad fidem ipsam reducantur."
+  - id: narratio
+    title: "The voyage of Christopher Columbus"
+    lines:
+      - "Sane accepimus quod vos,"
+      - "qui dudum animo proposueratis aliquas insulas et terras firmas, remotas et incognitas ac per alios hactenus non repertas, querere et invenire,"
+      - "ut illarum incolas et habitatores ad colendum Redemptorem nostrum et fidem Catholicam profitendum reduceretis,"
+      - "hactenus in expugnatione et recuperatione ipsius regni Granate plurimum occupati,"
+      - "hujusmodi sanctum et laudabile propositum vestrum ad optatum finem perducere nequivistis;"
+      - "sed tandem, sicut Domino placuit, regno predicto recuperato, volentes desiderium adimplere vestrum,"
+      - "dilectum filium Cristophorum Colon, virum utique dignum et plurimum commendandum, ac tanto negotio aptum,"
+      - "cum navigiis et hominibus ad similia instructis, non sine maximis laboribus et periculis ac expensis, destinastis,"
+      - "ut terras firmas et insulas remotas et incognitas hujusmodi per mare, ubi hactenus navigatum non fuerat, diligenter inquireret;"
+      - "qui tandem, divino auxilio, facta extrema diligentia, in mari oceano navigantes,"
+      - "certas insulas remotissimas, et etiam terras firmas, que per alios hactenus reperte non fuerant, invenerunt,"
+      - "in quibus quamplurime gentes, pacifice viventes, et, ut asseritur, nudi incedentes, nec carnibus vescentes, inhabitant;"
+      - "et, ut prefati nuntii vestri possunt opinari, gentes ipse in insulis et terris predictis habitantes credunt unum Deum Creatorem in celis esse,"
+      - "ac ad fidem Catholicam amplexandum et bonis moribus imbuendum satis apti videntur,"
+      - "spesque habetur quod, si erudirentur, nomen Salvatoris, Domini nostri Jhesu Christi, in terris et insulis predictis facile induceretur;"
+      - "ac prefatus Cristophorus in una ex principalibus insulis predictis jam unam turrim satis munitam,"
+      - "in qua certos Christianos qui secum iverant, in custodiam, et ut alias insulas et terras firmas remotas et incognitas inquirerent, posuit, construi et edificari fecit;"
+      - "in quibusquidem insulis et terris jam repertis, aurum, aromata, et alie quamplurime res preciose diversi generis et diverse qualitatis reperiuntur."
+  - id: donatio
+    title: "The grant and the line one hundred leagues west"
+    figure:
+      file: art/works/inter-caetera-1493/cantino-1502.jpg
+      caption: "The Cantino planisphere, a Portuguese world chart of 1502 (Biblioteca Estense, Modena). The blue meridian at the left is the line agreed at Tordesillas in 1494, 370 leagues west of the Cape Verde islands, not the line of this bull; the islands Columbus reached are west of it, at the upper left."
+      alt: "A painted world chart on parchment with Africa at the centre, the Caribbean islands and a strip of South American coast at the left, and a vertical line running from top to bottom west of Africa"
+      credit: "Anonymous Portuguese cartographer, 1502; Biblioteca Estense Universitaria, Modena"
+      license: "Public domain"
+      source: "https://commons.wikimedia.org/wiki/File:Cantino_planisphere_(1502).jpg"
+    lines:
+      - "Et, ut tanti negotii provinciam apostolice gratie largitate donati liberius et audacius assumatis,"
+      - "motu proprio, non ad vestram vel alterius pro vobis super hoc nobis oblate petitionis instanciam,"
+      - "sed de nostra mera liberalitate et ex certa scientia ac de apostolice potestatis plenitudine,"
+      - "omnes insulas et terras firmas inventas et inveniendas, detectas et detegendas versus occidentem et meridiem"
+      - "fabricando et constituendo unam lineam a polo Arctico scilicet septentrione ad polum Antarcticum scilicet meridiem,"
+      - "sive terre firme et insule invente et inveniende sint versus Indiam aut versus aliam quancunque partem,"
+      - "que linea distet a qualibet insularum, que vulgariter nuncupantur de los Azores et Caboverde, centum leucis versus occidentem et meridiem,"
+      - "ita quod omnes insule et terre firme reperte et reperiende, detecte et detegende, a prefata linea versus occidentem et meridiem,"
+      - "per alium regem aut principem Christianum non fuerint actualiter possesse usque ad diem nativitatis domini nostri Jhesu Christi proxime preteritum"
+      - "a quo incipit annus presens millesimus quadringentesimus nonagesimus tertius,"
+      - "quando fuerunt per nuntios et capitaneos vestros invente alique predictarum insularum,"
+      - "auctoritate Omnipotentis Dei nobis in beato Petro concessa, ac vicariatus Jhesu Christi, qua fungimur in terris,"
+      - "cum omnibus illarum dominiis, civitatibus, castris, locis et villis, juribusque et jurisdictionibus ac pertinentiis universis,"
+      - "vobis heredibusque et successoribus vestris, Castelle et Legionis regibus, in perpetuum tenore presentium donamus, concedimus, et assignamus,"
+      - "vosque et heredes ac successores prefatos illarum dominos cum plena, libera, et omnimoda potestate, auctoritate, et jurisdictione, facimus, constituimus, et deputamus;"
+      - "decernentes nichilominus per hujusmodi donationem, concessionem, et assignationem nostram nulli Christiano principi,"
+      - "qui actualiter prefatas insulas aut terras firmas possederit usque ad predictum diem Nativitatis Domini nostri Jhesu Christi,"
+      - "jus quesitum sublatum intelligi posse aut auferri debere."
+  - id: datum
+    title: "The date: Rome, 4 May 1493"
+    lines:
+      - "Datum Rome apud Sanctum Petrum, anno Incarnationis Dominice millesimo quadringentesimo nonagesimo tertio,"
+      - "quarto nonas Maii, pontificatus nostri anno primo."

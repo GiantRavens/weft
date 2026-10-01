@@ -1,0 +1,68 @@
+work: res-gestae-augusti
+title: Res Gestae Divi Augusti
+author: Augustus
+language: lat
+prefix: rga                      # rga.<section>.<line>[.<token>]; section = chapter number, praef = the heading
+urn: urn:weft:lat:res-gestae-divi-augusti   # Weft-local identifier (the treebank's CTS work is phi1221.phi007)
+unit: section
+section_noun: chapter
+written: {year: 14, display: "AD 14", label: "Augustus's account of his deeds, left with his will at his death in AD 14 and set up on bronze before his mausoleum in Rome; known from the copy on the temple of Rome and Augustus at Ancyra (Ankara)"}
+status: phase-0
+pilot: {sections: ["1", "2", "3", "4", "34", "35"]}   # the heading (praef) is drafted and shown too; left out here so the index reads "chapters 1–4, 34–35"
+edition:
+  id: la-wikisource-res-gestae
+  name: "Res gestae Divi Augusti as on Latin Wikisource, revision 194194 (20 May 2023). The page names no edition ('editio: incognita'); its text is a composite, with editors' restorations in square brackets"
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain; Weft line division CC BY-SA 4.0
+treebank: null                   # the Latin Dependency Treebank covers the Res Gestae, but on a different, unbracketed text; see predicted_gaps
+schemes: [classical, ecclesiastical]   # default: the restored pronunciation of Augustus's Rome
+scheme_labels:
+  classical: "As first written: the restored pronunciation of Rome in Augustus's time"
+  ecclesiastical: "Ecclesiastical: Italianate church Latin, a later tradition"
+quantities:
+  - pipeline/weft/data/lat_quantities.yaml
+  - pipeline/weft/data/lat_quantities_resgestae.yaml
+sources_extra:
+  - id: rg-la
+    name: "Res gestae (Augustus), Latin Wikisource revision 194194"
+    file: sources/rg-la.txt
+    url: "https://la.wikisource.org/w/index.php?title=Res_gestae&oldid=194194&action=raw"
+    sha256: 1b187b094ec6fc0c3b283ee8217caf7fea4a54170d50c8b9d6897cd0f4af3117
+    license: public domain (text); Wikisource CC BY-SA 4.0
+    license_url: https://la.wikisource.org/wiki/Res_gestae
+  - id: ldt-rg
+    name: "Latin Dependency Treebank 2.1, Res Gestae (phi1221.phi007, on perseus-lat1); used only to cross-check the hand annotation"
+    file: sources/ldt-rg.tb.xml
+    url: https://raw.githubusercontent.com/PerseusDL/treebank_data/58190cd0dcd787599e94a623a85357befdc39f77/v2.1/Latin/texts/phi1221.phi007.perseus-lat1.tb.xml
+    sha256: 9130f3e018588eafa7295b717507104cc409d38d887b39d318aae85c460e1760
+    license: CC BY-SA 3.0
+    license_url: https://github.com/PerseusDL/treebank_data#license
+translations:
+  - id: fairley1898
+    translator: William Fairley
+    year: 1898
+    form: "prose, from Monumentum Ancyranum: The Deeds of Augustus, Translations and Reprints from the Original Sources of European History, vol. 5, no. 1 (Philadelphia: Department of History, University of Pennsylvania, 1898); translates Mommsen's text of 1883"
+    license: public-domain
+    license_url: https://archive.org/details/monumentumancyr01fairgoog
+    file: sources/fairley1898.txt
+    url: https://archive.org/download/monumentumancyr01fairgoog/monumentumancyr01fairgoog_djvu.txt
+    sha256: 2e48fa51acdc669afe28ef398664c3d8c881dd9afc0e82a210a0d9bc5acfa02e
+  - id: shipley1924
+    translator: Frederick W. Shipley
+    year: 1924
+    form: "prose, from Velleius Paterculus, Compendium of Roman History; Res Gestae Divi Augusti, Loeb Classical Library (London: Heinemann; New York: Putnam, 1924), pp. 345-401; translates a text based on Mommsen (1883) and Diehl (1918). Public domain in the United States since 2020 (published 1924); Shipley died in 1945, so it is also public domain where the term is the author's life plus 70 years"
+    license: public-domain
+    license_url: https://archive.org/details/compendiumofroma00velluoft
+    file: sources/shipley1924.txt
+    url: https://archive.org/download/compendiumofroma00velluoft/compendiumofroma00velluoft_djvu.txt
+    sha256: 19a6a671e27f7bd29daf55c62efaaf41a479666a3d612390c0ad305b4691a5a9
+predicted_gaps:
+  - "no treebank on this text: the Latin Dependency Treebank 2.1 annotates the Res Gestae on an unbracketed text close to the one on The Latin Library whose wording differs from the Wikisource text in several places (ch. 1 sententiae dicendae tribuens for simul dans sententiae ferendae, ch. 2 trucidaverunt for interfecerunt, ch. 4 Cum autem pluris ... decrevisset for decernente pluris), and the stream alignment cannot skip from ch. 4 to ch. 34; lemma and morphology are hand-annotated (Lewis and Short), draft, and cross-checked against the treebank where the words agree"
+  - "the Wikisource page names no edition; its text is a composite whose restorations come from different editors (Mommsen's sententiae ferendae in ch. 1, the later veniam petentibus in ch. 3 and auctoritate in ch. 34), so the two translations, which follow Mommsen's text of 1883, differ from it at those places; ch. 1 brackets only one restoration although much of it is lost at Ancyra, and reads a dominatione and Eo nomine, which are not Mommsen's"
+  - "square brackets are kept as the source prints them, including unpaired ones (ch. 3 coloni]as, ch. 4 DC[CCLXXXX, ch. 34 potest]atis, ch. 35 pat]rem); a bracket inside a word stays in the word, and the sound reads the whole word"
+  - "the source has errors that the page keeps: costituendae (ch. 1) for constituendae, order (ch. 35) for ordo, annus agebam (ch. 35) for annum agebam; the sound reads constituendae and ordo through the quantity table, and annus as printed"
+  - "abbreviations are read through the quantity table as the words they stand for: C. = Gaio, A. = Aulo, cos. = consul, Aug. = Augusto; s.c. (senatus consulto) and the numeral DCCCLXXXX are read as one word each, so the respelling shows a single stress for each"
+  - "the classical reading needs vowel length; lengths come from Lewis and Short and the inflectional endings, in pipeline/weft/data/lat_quantities_resgestae.yaml; hidden quantities (vowel length before two consonants) are marked where the handbooks agree and listed in that file's header where they do not"
+  - "each word is phonemized alone: elision and assimilation across words are not modeled (this is prose, so there is no metre)"
+  - "the ecclesiastical reading is the later Italianate church tradition, offered for comparison; it is not how Augustus's Latin sounded"

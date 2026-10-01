@@ -1,0 +1,46 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+  - '2'
+  - '4'
+  - '5'
+  - '7'
+  - '13'
+  - '22'
+  - '23'
+  - '24'
+  - '25'
+  - '26'
+  - '27'
+  - '29'
+  - '30'
+  - '32'
+  - '35'
+  - '38'
+  - '39'
+  - '43'
+  - '45'
+  - '48'
+  - '52'
+  - '54'
+  - '57'
+counts:
+  lines: 28
+  tokens: 171
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank: lemma and morphology hand-annotated against Lewis and Short, with Medieval Latin senses from Niermeyer and Du Cange; draft'
+- the Norman reading of about 1070 is reconstructed from Old French and Anglo-Norman sound history and spelling and from later accounts of French reading of Latin; no description from the period survives;
+  approximate, and u as French u and silent h (Harold) are its least certain points
+- the transcription normalizes letter forms (U for V, W for VV, J for I) and expands abbreviations in square brackets; the sound reads the expanded word, as a reader of the cloth would have
+- 'the cloth''s spellings are kept and read as written: names in English or Norman form (Harold, Willelm, Wilgelm, Edward, Eadward, Wido, Lewine, Gyrð, Stigant), places (Bosham, Bagias, Pevenesæ, Hestenga
+  ceastra), at for ad, and e for ae and oe (PR[O]ELIUM, [A]EDIFICARE are printed with the transcription''s brackets); names take no long vowels in the classical reading, since none is attested'
+- HIE in scene 22 is a slip of the needle for HIC and is read as hic
+- the cross that opens scene 38 is kept as a token; it has no sound
+- 'scene 21 is omitted: the transcription gives HIC WILLELM[US] DEDIT ARMA HAROLDO, while the cloth reads HIC WILLELM DEDIT HAROLDO ARMA (checked against the photograph)'
+- Fowke's English comes from OCR of the 1898 printing; clear OCR errors are corrected and listed in the sense file; Bruce's renderings are Project Gutenberg's proofread text
+- Bruce gives no rendering for some captions (scenes 1, 4, 7, 23, 38, 39 and Stigand in 30); his translation is marked partial

@@ -1,0 +1,34 @@
+run:
+  weft: 0.1.0
+  sections:
+  - praef
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '34'
+  - '35'
+counts:
+  lines: 43
+  tokens: 444
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank on this text: the Latin Dependency Treebank 2.1 annotates the Res Gestae on an unbracketed text close to the one on The Latin Library whose wording differs from the Wikisource text in several
+  places (ch. 1 sententiae dicendae tribuens for simul dans sententiae ferendae, ch. 2 trucidaverunt for interfecerunt, ch. 4 Cum autem pluris ... decrevisset for decernente pluris), and the stream alignment
+  cannot skip from ch. 4 to ch. 34; lemma and morphology are hand-annotated (Lewis and Short), draft, and cross-checked against the treebank where the words agree'
+- the Wikisource page names no edition; its text is a composite whose restorations come from different editors (Mommsen's sententiae ferendae in ch. 1, the later veniam petentibus in ch. 3 and auctoritate
+  in ch. 34), so the two translations, which follow Mommsen's text of 1883, differ from it at those places; ch. 1 brackets only one restoration although much of it is lost at Ancyra, and reads a dominatione
+  and Eo nomine, which are not Mommsen's
+- square brackets are kept as the source prints them, including unpaired ones (ch. 3 coloni]as, ch. 4 DC[CCLXXXX, ch. 34 potest]atis, ch. 35 pat]rem); a bracket inside a word stays in the word, and the
+  sound reads the whole word
+- 'the source has errors that the page keeps: costituendae (ch. 1) for constituendae, order (ch. 35) for ordo, annus agebam (ch. 35) for annum agebam; the sound reads constituendae and ordo through the
+  quantity table, and annus as printed'
+- 'abbreviations are read through the quantity table as the words they stand for: C. = Gaio, A. = Aulo, cos. = consul, Aug. = Augusto; s.c. (senatus consulto) and the numeral DCCCLXXXX are read as one word
+  each, so the respelling shows a single stress for each'
+- the classical reading needs vowel length; lengths come from Lewis and Short and the inflectional endings, in pipeline/weft/data/lat_quantities_resgestae.yaml; hidden quantities (vowel length before two
+  consonants) are marked where the handbooks agree and listed in that file's header where they do not
+- 'each word is phonemized alone: elision and assimilation across words are not modeled (this is prose, so there is no metre)'
+- the ecclesiastical reading is the later Italianate church tradition, offered for comparison; it is not how Augustus's Latin sounded

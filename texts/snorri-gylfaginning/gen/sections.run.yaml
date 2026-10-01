@@ -1,0 +1,23 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '49'
+counts:
+  lines: 60
+  tokens: 661
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank: IcePaHC, the treebank used for Grettis saga, has no Snorra Edda text; every lemma and parse is hand-annotated (Zoëga as reference) and stays draft until reviewed'
+- the edition's straight quotation marks are set aside (verify_strip) because the tokenizer does not separate them; speech is marked by the colon after the verb of saying
+- 'a selection, not the whole text: the verse quotations and some sentences between the chosen lines are left out, so each chapter''s lines are excerpts, and each translation span is the matching excerpt'
+- the edition's ö covers both old ǫ and ø; read as ǫ by default, which is right for every ö in these lines
+- Snorri wrote about 1220, when ǫ and ø were merging and long vowels may have begun to change; the old-norse reading is the standard reconstruction for about 1200 and is approximate
+- 'Brodeur and Anderson translated from earlier editions (Anderson names Egilsson''s, Thorleif Jónsson''s and Wilken''s), which differ from this text in places: in chapter 5 Brodeur has Jafnhárr answer
+  where this text has Hárr'

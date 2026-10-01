@@ -1,0 +1,49 @@
+# Notes for Gylfaginning, chapters 5-8 and 49. Editorial notes are drafts until a reviewer lifts them.
+- id: n.gyl.snorri
+  attach: gyl.5.1
+  kind: editorial
+  status: draft
+  leans_on: "Anthony Faulkes, ed., Snorri Sturluson: Edda. Prologue and Gylfaginning (1982; 2nd ed. 2005), introduction"
+  text: "Snorri Sturluson (1179–1241) was an Icelandic chieftain, twice lawspeaker of the Althing, a poet, and the author to whom Heimskringla, the history of the kings of Norway, is also attributed. The Prose Edda has four parts: a Prologue, Gylfaginning, Skáldskaparmál ('the language of poetry') and Háttatal ('the list of verse forms'), a long poem in praise of King Hákon and Earl Skúli that demonstrates the metres. Taken together the work reads as a handbook for poets: skaldic verse refers to gods, giants and their stories through kennings and poetic names, and a poet needed to know the stories to use or understand them. Gylfaginning supplies that background. The attribution to Snorri rests mainly on a heading in the Codex Upsaliensis, written in the early 1300s, which says that Snorri compiled the book. The date of about 1220 is an estimate; Háttatal is usually dated to the years after Snorri's visit to Norway in 1218–1220, and the other parts are not dated independently."
+- id: n.gyl.frame
+  attach: gyl.5.4.3
+  kind: editorial
+  status: draft
+  leans_on: "Gylfaginning chapters 1-2, 20 and 54 in this edition; Faulkes 2005, introduction"
+  text: "Gylfaginning means 'the deluding of Gylfi'. Gylfi, a king in Sweden, travels in disguise to the Æsir under the name Gangleri, and in a great hall finds three figures on high seats, one above another: Hárr ('High') on the lowest, Jafnhárr ('Just-as-high') above him, and Þriði ('Third') on the highest. Gangleri asks questions and the three answer in turn, which is why the speaker changes from line to line here. All four names occur among the names of Odin that Snorri quotes from the poem Grímnismál in chapter 20. At the end of the work (chapter 54) the hall vanishes and Gylfi stands on an open plain, so the whole account is framed as something told to him inside an illusion. The editions differ in places over who speaks: in chapter 5 this text gives the answer about Ymir's evil to Hárr, while Brodeur's translation gives it to Jafnhárr."
+- id: n.gyl.ymir-voluspa
+  attach: gyl.5.3.5
+  kind: editorial
+  status: draft
+  leans_on: "Völuspá stanza 3 and Vafþrúðnismál stanza 31, as quoted in Gylfaginning chapters 4-5; Faulkes 2005, notes"
+  text: "Ymir is the first being in Snorri's account, formed where the rime from the cold north met the heat from Múspell in the empty Ginnungagap. In chapter 4 Snorri quotes Völuspá stanza 3 ('Ár var alda, þat er ekki var', 'it was early in time, when nothing was'), and Weft's Völuspá, which uses the same normalized edition, has that reading (vsp.3.1-2). The two manuscripts of the poem itself, the Codex Regius and Hauksbók, read instead '... er Ymir byggði', 'when (or where) Ymir lived', so the poem as preserved there names Ymir in the same stanza. Snorri's account of how Ymir came into being draws on Vafþrúðnismál, which he quotes at this point in the chapter (stanza 31, left out of this selection); the same poem calls the first giant Aurgelmir. The details of drops quickened 'by the power of that which sent the heat' are found only in Snorri."
+- id: n.gyl.sources
+  attach: gyl.6.2.17
+  kind: editorial
+  status: draft
+  leans_on: "Faulkes 2005, introduction; John Lindow, Norse Mythology: A Guide to the Gods, Heroes, Rituals, and Beliefs (2001)"
+  text: "Snorri wrote more than two hundred years after Iceland accepted Christianity in about 1000. His sources were older poems, some of which survive (Völuspá, Vafþrúðnismál, Grímnismál, all quoted in these chapters), skaldic verse, and probably oral tradition that cannot now be checked. Some details have no surviving source outside his work: the cow Auðhumla, who feeds Ymir and licks Búri out of the salty rime-stones, is one of them. How far his account reflects what pagans believed is debated. He arranges the material into a connected sequence that the poems do not give, and his Prologue explains the Æsir as men from Troy who were later taken for gods (the 'Trója' of chapter 9 belongs to this frame). Some scholars treat him as a careful collector of old tradition; others stress how much of the system is his own arrangement, shaped by Christian learning. The two views are not exclusive, and the evidence for deciding case by case is often thin."
+- id: n.gyl.ludr
+  attach: gyl.7.6.5
+  kind: editorial
+  status: draft
+  leans_on: "Zoëga, A Concise Dictionary of Old Icelandic (1910), s.v. lúðr; Vafþrúðnismál stanza 35; Brodeur 1916, footnote to this passage"
+  text: "lúðr is the object Bergelmir climbs onto to survive the flood of Ymir's blood. Snorri's source is Vafþrúðnismál stanza 35, quoted at this point, which says only that the giant 'á var lúðr of lagiðr', 'was laid on a lúðr'. Elsewhere the word means the frame or box in which a hand-mill stands, and also a kind of trumpet. Snorri's prose seems to read it as a vessel that floats, and translators have followed him (Brodeur 'ship', with a footnote 'Literally, mill-bench or mortar'; Anderson 'ark'). Whether the poem meant a boat, or a cradle or coffin in which the infant giant was laid, is not settled, and the comparison with Noah's ark that Anderson's word suggests may come from Snorri rather than the older tradition. The gloss row keeps the word."
+- id: n.gyl.world
+  attach: gyl.8.1
+  kind: editorial
+  status: draft
+  leans_on: "Grímnismál stanzas 40-41, as quoted at the end of Gylfaginning chapter 8; Zoëga 1910, s.v. brá"
+  text: "The making of the world from Ymir's body is told in three voices: Hárr gives earth, sea, crags and stones; Jafnhárr the ocean ringing the earth (left out of this selection); Þriði the sky from the skull, set on four corners held by dwarfs named for the four directions. The verse Snorri quotes at the end of the chapter, from Grímnismál, gives a shorter list: earth from flesh, sea from sweat, crags from bones, trees from hair, sky from skull, Miðgarðr from the brár, clouds from the brain. Snorri's prose has the sea from blood rather than sweat, and adds the stones from teeth and broken bones and the four dwarfs, which the poem does not mention. brár is glossed 'eyelashes', the sense Zoëga gives for brá; both translators render it 'brows' or 'eyebrows'. Miðgarðr, 'the middle enclosure', is here a wall or stronghold built against the giants, and only by extension the world of humans."
+- id: n.gyl.baldr
+  attach: gyl.49.1
+  kind: editorial
+  status: draft
+  leans_on: "Völuspá stanzas 31-32; Lokasenna stanza 28; Saxo Grammaticus, Gesta Danorum book 3; Lindow 2001"
+  text: "Chapter 49 is the fullest surviving account of Baldr's death. The poems allude to it without telling it: Völuspá stanzas 31-32 (vsp.31-32 in Weft's Völuspá) name the mistletoe and say that Höðr shot, and the dream that opens Snorri's chapter is the subject of the short poem Baldrs draumar. Loki's part is stated in Snorri; in Lokasenna stanza 28 Loki claims that he caused Baldr's absence, without saying how. The Danish historian Saxo Grammaticus, writing about the same time as Snorri, tells a different story in Latin, in which Hotherus kills Balderus with a sword in a rivalry over a woman. Snorri's version is therefore one of at least two medieval tellings, and the only one in which every creature but the mistletoe swears not to harm Baldr."
+- id: n.gyl.mistletoe
+  attach: gyl.49.15.3
+  kind: editorial
+  status: draft
+  leans_on: "Völuspá stanza 31; Gylfaginning chapter 49"
+  text: "mistilteinn is the ordinary word for the mistletoe plant. Frigg calls it a viðarteinungr, a 'tree-shoot', growing west of Valhöll, and Loki pulls it up, as if it were rooted in the ground. Völuspá stanza 31 also has it 'stóð of vaxinn völlum hæri', 'standing grown, higher than the fields'. Botanical mistletoe grows on the branches of trees, and does not grow wild in Iceland. Some readers take this as a sign that the tradition reached Iceland without knowledge of the plant; others suppose that the word once named something else. Neither view can be confirmed from the texts, which agree with each other in treating it as a slender, upright growth."

@@ -771,3 +771,140 @@ KEY["german-humanist"] = [
     ("CAPS", "stressed syllable, by the classical penultimate rule"),
 ]
 SCHEME_LABELS["german-humanist"] = "As first read: Latin in Saxony around 1517 (approximate)"
+
+
+# ---------------------------------------------------------------- Norman reading, about 1070
+# Latin as a cleric trained in Normandy, or in England after 1066, most likely read it around
+# 1070 (the captions of the Bayeux Tapestry). Added as its own scheme, after all the others, so no
+# existing scheme changes. The evidence is indirect and later than the text in several places:
+#
+#   - Old French sound history. Latin c before e and i had become [ts] in French (cent, cire),
+#     and g before e and i, with consonantal i, had become [dʒ] (gent, jeune); both kept those
+#     values until the 1200s, when they simplified to [s] and [ʒ]. Clerks are assumed to have read
+#     Latin letters with the values the same letters had in their French (Roger Wright's argument
+#     that Latin was read aloud in the vernacular manner until the Carolingian reform, and that
+#     the reform restored one sound per letter but not Roman values).
+#   - Anglo-Norman and Old French spelling, which write ce/ci for [ts] and g/j for [dʒ], drop
+#     Latin h (ome, ore), and write e for Latin ae and oe; the captions themselves write
+#     PRELIUM and EDIFICARE for proelium and aedificare.
+#   - Later descriptions of French reading of Latin (the French method of the 1500s to 1800s,
+#     W. S. Allen, Vox Latina, appendix), which keeps soft c as s, soft g as zh, u as French u,
+#     and final stress. Of these only u as [y] is projected back here: French had fronted Latin u
+#     to [y] well before 1066, so a French-speaking reader most likely said [y] in Latin too.
+#     Final stress is not projected back: rhythmic Latin verse and the cursus of 11th-century
+#     prose still depend on the Latin penultimate accent, so clerks of this date kept it.
+#
+#   anglo-norman   c before e, i, y, ae, oe = ts; g there and the letter j = dʒ; h silent;
+#                  consonantal u/v = v; w (VV on the tapestry) = w; qu = kw; ti before a vowel
+#                  = tsi; s between vowels = z; ae and oe = e; u = y (French u); length is not
+#                  heard, only stress; ch = k, ph = f, th = t, x = ks, ð (Old English) = ð.
+#                  Stress by the classical penultimate rule.
+#
+# Weakest points: u as [y] (some scholars date the fronting later or doubt it carried over to
+# Latin); h, which Norman French kept in Germanic words (hache, haste), so Harold may have
+# kept his h; and whether qu was still [kw]. Names (Harold, Willelm, Bagias, Pevenese, Hestinga)
+# are read as written, through the same rules.
+
+_NOR_V = {"a": ("a", "a"), "e": ("ɛ", "e"), "i": ("i", "ee"), "y": ("i", "ee"), "o": ("ɔ", "o"),
+          "u": ("y", "ü"), "ae": ("ɛ", "e"), "oe": ("ɛ", "e"), "au": ("au", "ow")}
+
+
+def _norman(syls: list[Syl]) -> list[tuple[str, str]]:
+    """(ipa, respell) per syllable for the Norman reading of about 1070."""
+    flat: list[tuple[int, Seg]] = []
+    for n, s in enumerate(syls):
+        for seg in s.onset + [s.nucleus] + s.coda:
+            flat.append((n, seg))
+    ipa = [""] * len(syls)
+    sp = [""] * len(syls)
+
+    def front(seg: Seg | None) -> bool:
+        return seg is not None and seg.vowel and (seg.text[0] in "eiy" or seg.text in ("ae", "oe"))
+
+    for k, (n, seg) in enumerate(flat):
+        nxt = flat[k + 1][1] if k + 1 < len(flat) else None
+        nxt2 = flat[k + 2][1] if k + 2 < len(flat) else None
+        prev = flat[k - 1][1] if k > 0 else None
+        t = seg.text
+        if seg.vowel:
+            a, b = _NOR_V.get(t, (t, t))
+            ipa[n] += a; sp[n] += b
+            continue
+        if t == "c":
+            a, b = ("ts", "ts") if front(nxt) else ("k", "k")
+        elif t == "g":
+            a, b = ("dʒ", "j") if front(nxt) else ("ɡ", "g")
+        elif t == "j":
+            a, b = ("dʒ", "j")
+        elif t == "qu":
+            a, b = ("kw", "kw")
+        elif t == "t" and nxt is not None and nxt.text == "i" and nxt2 is not None and nxt2.vowel and k > 0 \
+                and not (prev is not None and prev.text in ("s", "t", "k")):
+            a, b = ("ts", "ts")
+        elif t == "s" and prev is not None and prev.vowel and nxt is not None and nxt.vowel:
+            a, b = ("z", "z")
+        elif t == "h":
+            a, b = ("", "")
+        elif t in ("ch", "k"):
+            a, b = ("k", "k")
+        elif t == "ph":
+            a, b = ("f", "f")
+        elif t == "th":
+            a, b = ("t", "t")
+        elif t == "ð":
+            a, b = ("ð", "dh")
+        elif t == "z":
+            a, b = ("dz", "dz")
+        elif t == "n" and nxt is not None and nxt.text in ("c", "g", "qu", "k"):
+            a, b = ("ŋ", "ng")
+        else:
+            a, b = (t, t)
+        ipa[n] += a; sp[n] += b
+    return list(zip(ipa, sp))
+
+
+def norman(word: str, quantities: dict[str, str] | None = None) -> dict:
+    w = "".join(ch for ch in word if ch not in PUNCT)
+    known = False
+    if quantities is not None:
+        w, known = apply_quantity(w, quantities)
+    host_len = None
+    if "+" in w:
+        host, enc = w.split("+", 1)
+        host_len = len(syllabify(host))
+        w = host + enc
+    syls = syllabify(w)
+    if not syls:
+        return {"ipa": w, "respell": w, "syllables": 0, "known": known}
+    stress = stress_index(syls, host_len)
+    parts = _norman(syls)
+    one = len(syls) == 1
+    ipa = ".".join(("ˈ" if j == stress and not one else "") + p[0] for j, p in enumerate(parts))
+    resp = "-".join(p[1].upper() if j == stress and not one else p[1] for j, p in enumerate(parts))
+    return {"ipa": ipa, "respell": resp, "syllables": len(syls), "known": known}
+
+
+_phonemize_v03 = phonemize
+
+
+def phonemize(word: str, scheme: str, quantities: dict[str, str] | None = None, dialect: str | None = None, **kw) -> dict:  # noqa: F811
+    """Adds the Norman reading of about 1070; every other scheme goes through unchanged."""
+    if scheme == "anglo-norman" or (scheme == "as-first-read" and dialect == "norman"):
+        return norman(word, _printed_key(word, quantities))
+    return _phonemize_v03(word, scheme, quantities, dialect=dialect, **kw)
+
+
+KEY["anglo-norman"] = [
+    ("", "Latin as a cleric trained in Normandy, or in England after 1066, most likely read it around 1070. Reconstructed from Old French and Anglo-Norman sound history and spelling, and from later accounts of French reading of Latin; no description of the period survives. Approximate."),
+    ("a e ee o", "plain vowels; long and short no longer differ in sound, only in where the stress falls"),
+    ("ü", "u, as in French tu: the French fronting of Latin u, assumed to carry over into Latin. The least certain point; oo is also possible"),
+    ("e", "ae and oe are both e; the captions themselves write PRELIUM and EDIFICARE"),
+    ("ts", "c before e and i, as in bits: Old French cent was tsent until the 1200s; also ti before a vowel"),
+    ("j", "g before e and i, and the letter j, as in judge: Old French gent was jent"),
+    ("(silent)", "h is not sounded: hic = eek. Norman French kept h in Germanic words, so Harold may have kept his"),
+    ("v, w", "v as in English; w (written VV on the tapestry) as in English"),
+    ("z", "s between vowels, as in French rose"),
+    ("dh", "ð, the Old English letter in GYRÐ, as th in this"),
+    ("CAPS", "stressed syllable, by the classical penultimate rule, which clerks of this date still kept"),
+]
+SCHEME_LABELS["anglo-norman"] = "As first read: Latin in Normandy and Norman England around 1070 (approximate)"

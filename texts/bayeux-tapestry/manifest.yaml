@@ -1,0 +1,67 @@
+work: bayeux-tapestry
+title: The Bayeux Tapestry captions
+author: Unknown designer and embroiderers, probably for Bishop Odo of Bayeux
+language: lat
+lang_name: Medieval Latin
+prefix: bt                       # bt.<scene>.<line>[.<token>]; the section id is the backing-cloth scene number
+urn: urn:weft:lat:bayeux-tapestry-tituli   # Weft-local identifier
+unit: section
+section_noun: scene
+written: {year: 1075, display: "c. 1070s", label: "embroidered most likely in England in the decade after 1066, probably for Bishop Odo of Bayeux; recorded at Bayeux Cathedral in 1476"}
+status: phase-0
+pilot: {sections: ["1", "2", "4", "5", "7", "13", "22", "23", "24", "25", "26", "27", "29", "30", "32", "35", "38", "39", "43", "45", "48", "52", "54", "57"]}
+edition:
+  id: enwiki-tituli
+  name: "The Latin captions (tituli) of the Bayeux Tapestry, as transcribed in the English Wikipedia article \"Bayeux Tapestry tituli\" (revision 1375979759, 21 September 2026): letter forms normalized (U, W, J), abbreviations expanded in square brackets, scene numbers from the tapestry's backing cloth; twenty-four scenes selected"
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain; transcription CC BY-SA 4.0 (Wikipedia contributors); Weft line division CC BY-SA 4.0
+treebank: null                   # no treebank covers the tituli; hand annotation, draft
+schemes: [anglo-norman, classical]   # default: Latin as read in Normandy and Norman England around 1070
+sound_confidence: medium
+quantities:
+  - pipeline/weft/data/lat_quantities.yaml
+  - pipeline/weft/data/lat_quantities_bayeux.yaml
+sources_extra:
+  - id: tituli-enwiki
+    name: "Bayeux Tapestry tituli, English Wikipedia, revision 1375979759 (21 September 2026), wikitext"
+    file: sources/tituli-en-wikipedia.txt
+    url: "https://en.wikipedia.org/w/index.php?title=Bayeux_Tapestry_tituli&oldid=1375979759&action=raw"
+    sha256: c856dc9e76dfbd7c8f72719c00e9724cbdea57c7e35b93479cea6925020b92ac
+    license: CC BY-SA 4.0 (transcription and notes); the medieval text is public domain
+    license_url: https://creativecommons.org/licenses/by-sa/4.0/
+  - id: scene-photographs
+    name: "Scene photographs of the Bayeux Tapestry on Wikimedia Commons (2017 photographic campaign, Université de Caen Normandie, CNRS, ENSICAEN), resized to art/works/bayeux-tapestry/scene-NN.jpg; each file's Commons page and license template is recorded in that section's figure in edition.yaml"
+    url: "https://commons.wikimedia.org/wiki/Category:Bayeux_Tapestry"
+    license: "public domain ({{PD-Art|PD-old-100-1923}} with {{PD-France}}, or {{PD-Art|PD-old-100-expired}}, per file)"
+    license_url: https://commons.wikimedia.org/wiki/Template:PD-Art
+translations:
+  - id: fowke1898
+    translator: Frank Rede Fowke
+    year: 1898
+    form: "prose captions, from The Bayeux Tapestry: A History and Description (London: George Bell and Sons, 1898), Ex-Libris Series; Internet Archive OCR text of the Brigham Young University copy"
+    license: public-domain
+    license_url: https://archive.org/details/bayeuxtapestryhi00fowk_0
+    file: sources/fowke1898.txt
+    url: https://archive.org/download/bayeuxtapestryhi00fowk_0/bayeuxtapestryhi00fowk_0_djvu.txt
+    sha256: 344b7990a18d51229c98afb86e7964f06995ab65e8aad94f18779f865b4346ec
+  - id: bruce1856
+    translator: John Collingwood Bruce
+    year: 1856
+    partial: "Bruce quotes the captions inside his narrative and does not render every one (none for scenes 1, 4, 7, 23, 38 and 39, or for Stigand in 30)"
+    form: "prose renderings set after each caption in The Bayeux Tapestry Elucidated (London: J. Russell Smith, 1856), as transcribed by Project Gutenberg (eBook #55614)"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/pg55614.txt
+    url: https://www.gutenberg.org/cache/epub/55614/pg55614.txt
+    sha256: c4555273d282d5a5ae7c475963c7a5d534342fd359d8d60dda5f576d6f19a9e3
+predicted_gaps:
+  - "no treebank: lemma and morphology hand-annotated against Lewis and Short, with Medieval Latin senses from Niermeyer and Du Cange; draft"
+  - "the Norman reading of about 1070 is reconstructed from Old French and Anglo-Norman sound history and spelling and from later accounts of French reading of Latin; no description from the period survives; approximate, and u as French u and silent h (Harold) are its least certain points"
+  - "the transcription normalizes letter forms (U for V, W for VV, J for I) and expands abbreviations in square brackets; the sound reads the expanded word, as a reader of the cloth would have"
+  - "the cloth's spellings are kept and read as written: names in English or Norman form (Harold, Willelm, Wilgelm, Edward, Eadward, Wido, Lewine, Gyrð, Stigant), places (Bosham, Bagias, Pevenesæ, Hestenga ceastra), at for ad, and e for ae and oe (PR[O]ELIUM, [A]EDIFICARE are printed with the transcription's brackets); names take no long vowels in the classical reading, since none is attested"
+  - "HIE in scene 22 is a slip of the needle for HIC and is read as hic"
+  - "the cross that opens scene 38 is kept as a token; it has no sound"
+  - "scene 21 is omitted: the transcription gives HIC WILLELM[US] DEDIT ARMA HAROLDO, while the cloth reads HIC WILLELM DEDIT HAROLDO ARMA (checked against the photograph)"
+  - "Fowke's English comes from OCR of the 1898 printing; clear OCR errors are corrected and listed in the sense file; Bruce's renderings are Project Gutenberg's proofread text"
+  - "Bruce gives no rendering for some captions (scenes 1, 4, 7, 23, 38, 39 and Stigand in 30); his translation is marked partial"

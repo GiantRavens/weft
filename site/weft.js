@@ -94,8 +94,9 @@
     ? `${D.work.author} · ${new Set(D.lines.map((l) => l.stanza)).size} inscriptions`
     : D.work.unit === "section"
     ? (D.work.section_noun === "chapter"
-        ? (() => { const cs = [...new Set(D.lines.map((l) => l.stanza))];
-                   return `${D.work.author} · chapter${cs.length === 1 ? "" : "s"} ${ranges(cs.map((c) => (/^\d+$/.test(c) ? +c : c)))}`; })()
+        ? (() => { // numbered chapters only; a named section such as a heading ("praef") shows on the page
+                   const cs = [...new Set(D.lines.map((l) => l.stanza))].filter((c) => /^\d+$/.test(c)).map(Number);
+                   return `${D.work.author} · chapter${cs.length === 1 ? "" : "s"} ${ranges(cs)}`; })()
         : (() => { const n = new Set(D.lines.map((l) => l.stanza)).size, noun = D.work.section_noun || "section";
                    return `${D.work.author} · ${n} ${noun}${n === 1 ? "" : "s"}`; })())
     : STANZAS
@@ -161,6 +162,14 @@
       }
       const newStanza = STANZAS && line.stanza !== prevStanza;
       if (newStanza) text.append(h("h2", { class: "stanza-head", text: line.stanza_title || `Stanza ${line.stanza}` }));
+      if (newStanza && line.figure && line.figure.src) {
+        const f = line.figure;
+        text.append(h("figure", { class: "sec-fig" },
+          h("img", { src: f.src, alt: f.alt || f.caption || "" }),
+          h("figcaption", {}, f.caption || "",
+            (f.credit || f.license || f.source) ? h("span", { class: "cred" }, [f.credit, f.license].filter(Boolean).join(" · "),
+              f.source ? " · " : "", f.source ? h("a", { href: f.source, text: "source" }) : null) : null)));
+      }
       prevStanza = line.stanza;
       text.append(h("section", { class: "lineset" + (newStanza ? " stanza-first" : ""), id: line.id },
         gutter, h("div", { class: "body" }, strip, metre, spans.length ? sense : null)));

@@ -262,3 +262,11 @@ body.rtl .src[lang="fa"] { font-family: "Noto Naskh Arabic", "Geeza Pro", "Times
 /* invitation to specialists where the pronunciation is reconstructed */
 .sound-note { border-left: 3px solid var(--accent); padding-left: 12px; margin-top: 10px; }
 .sound-note a, .colophon a { color: var(--accent); }
+
+/* an image belonging to one section (a tapestry scene, a manuscript page) */
+.sec-fig { margin: 0 0 18px 3.8rem; max-width: 720px; }
+.sec-fig img { display: block; max-width: 100%; max-height: 320px; width: auto; border-radius: 6px; border: 1px solid var(--rule); }
+.sec-fig figcaption { font: 0.82rem/1.5 var(--serif); color: var(--ink-soft); margin-top: 6px; }
+.sec-fig .cred { display: block; font: 0.7rem/1.5 var(--sans); color: var(--ink-faint); }
+.sec-fig .cred a { color: inherit; }
+@media (max-width: 720px) { .sec-fig { margin-left: 0; } }

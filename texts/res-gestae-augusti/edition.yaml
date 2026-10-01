@@ -1,0 +1,72 @@
+# Weft edition: the heading and chapters 1-4, 34 and 35 of the Res Gestae Divi Augusti, from the
+# text on Latin Wikisource (page "Res gestae", revision 194194). Every line is checked verbatim
+# against that page by `weft draft`. Square brackets are the source's: they enclose letters lost
+# from the stone and restored by editors, and they are kept as printed, including the places where
+# the source opens or closes a bracket without its partner (ch. 34, potest]atis; ch. 35, pat]rem).
+# Weft divides the sentences into lines at their clause boundaries.
+verify_in: sources/rg-la.txt
+sections:
+  - id: praef
+    title: "The heading: what the copy contains and where the original stood"
+    lines:
+      - "Rerum gestarum divi Augusti, quibus orbem terra[rum] imperio populi Romani subiecit,"
+      - "et impensarum, quas in rem publicam populumque Romanum fecit,"
+      - "incisarum in duabus aheneis pilis, quae su[n]t Romae positae, exemplar sub[i]ectum"
+  - id: "1"
+    title: "Chapter 1: the private army of 44 BC and the offices of 43 BC"
+    lines:
+      - "Annos undeviginti natus exercitum privato consilio et privata impensa comparavi,"
+      - "per quem rem publicam a dominatione factionis oppressam in libertatem vindicavi."
+      - "Eo nomine senatus decretis honorificis in ordinem suum me adlegit C. Pansa et A. Hirtio consulibus,"
+      - "consularem locum simul dans sententiae ferendae, et imperium mihi dedit."
+      - "Res publica, ne quid detrimenti caperet, a me pro praetore simul cum consulibus pro[viden]dum iussit."
+      - "Populus autem eodem anno me consulem, cum cos. uterque in bello cecidisset, et triumvirum rei publicae costituendae creavit."
+  - id: "2"
+    title: "Chapter 2: the killers of his father"
+    lines:
+      - "Qui parentem meum [interfecer]un[t eo]s in exilium expuli"
+      - "iudiciis legitimis ultus eorum [fa]cin[us,"
+      - "e]t postea bellum inferentis rei publicae vici b[is a]cie."
+  - id: "3"
+    title: "Chapter 3: wars, clemency, veterans and ships"
+    lines:
+      - "Bella terra et mari civilia externaque toto in orbe terrarum saepe gessi"
+      - "victorque omnibus v[eniam petentib]us civibus peperci."
+      - "Externas gentes, quibus tuto ignosci potuit, conservare quam excidere malui."
+      - "Millia civium Romanorum sub sacramento meo fuerunt circiter quingenta."
+      - "Ex quibus deduxi in coloni]as aut remisi in municipia sua stipendis emeritis millia aliquanto plura quam trecenta"
+      - "et iis omnibus agros adsignavi aut pecuniam pro praemis militiae dedi."
+      - "Naves cepi sescentas praeter eas, si quae minores quam triremes fuerunt."
+  - id: "4"
+    title: "Chapter 4: triumphs, salutations and thanksgivings"
+    lines:
+      - "Bis ovans triumphavi et tri[s egi] curulis triumphos et appella[tus sum v]iciens et semel imperator."
+      - "[decernente plu]ris triumphos mihi sena[t]u, qua[ter eis su]persedi."
+      - "L[aurum de f]asc[i]bus deposui in Capi[tolio votis, quae] quoque bello nuncupaveram, [sol]utis."
+      - "Ob res a [me aut per legatos] meos auspicis meis terra ma[riqu]e pr[o]spere gestas"
+      - "qui[nquageniens et q]uinquiens decrevit senatus supp[lica]ndum esse dis immortalibus."
+      - "Dies a[utem, pe]r quos ex senatus consulto [s]upplicatum est, fuere DC[CCLXXXX."
+      - "In triumphis meis] ducti sunt ante currum meum reges aut r[eg]um lib[eri novem."
+      - "Consul f]ueram terdeciens, cum [scribeb]a[m] haec, [et eram se]p[timum et] tricen[simu]m tribuniciae potestatis."
+  - id: "34"
+    title: "Chapter 34: the settlement of 28-27 BC and the name Augustus"
+    lines:
+      - "In consulatu sexto et septimo, po[stquam b]ella [civil]ia exstinxeram,"
+      - "per consensum universorum potitus rerum omnium,"
+      - "rem publicam ex mea potestate in senatus populique Romani arbitrium transtuli."
+      - "Quo pro merito meo senatu[s consulto Au]gust[us appe]llatus sum"
+      - "et laureis postes aedium mearum vestiti publice"
+      - "coronaque civica super ianuam meam fixa est"
+      - "et clupeus aureus in curia Iulia positus,"
+      - "quem mihi senatum pop[ulumq]ue Rom[anu]m dare virtutis clementiaeque iustitiae et pieta[tis caus]sa"
+      - "testatu[m] est pe[r e]ius clupei [inscription]em."
+      - "Post id tempus auctoritate omnibus praestiti,"
+      - "potest]atis au[tem n]ihilo ampliu[s habu]i quam cet[eri qui m]ihi quoque in magistratu conlegae fuerunt."
+  - id: "35"
+    title: "Chapter 35: father of the fatherland, and the date of writing"
+    lines:
+      - "Tertium decimum consulatum cum gerebam,"
+      - "senatus et equester order populusq[ue] Romanus universus appellavit me pat]rem patriae"
+      - "idque in vestibulo aedium mearum inscribendum"
+      - "et in curia Iulia et in foro Aug. sub quadrigis, quae mihi ex s.c. positae sunt, decrevit."
+      - "Cum scripsi haec, annus agebam septuagensumum sextum."

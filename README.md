@@ -76,7 +76,7 @@ server, so a page or the whole folder can be sent as an attachment.
 
 ## Status
 
-Forty-one works built across twenty-one languages, oldest first in the library:
+Forty-six works built across twenty-one languages, oldest first in the library:
 
 | Work | Passage | Schemes | Translations |
 |---|---|---|---|
@@ -92,23 +92,28 @@ Forty-one works built across twenty-one languages, oldest first in the library:
 | The Beatitudes (Matthew 5:3-12) | 10 verses | Koine, Erasmian | Tyndale 1534, Geneva 1599, King James 1611 |
 | 1 Corinthians 13 | the whole chapter | Koine, Erasmian | Tyndale 1534, Geneva 1599, King James 1611 |
 | Ovid, Metamorphoses | 1.1-9 | classical, ecclesiastical | Golding 1567, More 1922 |
+| Res Gestae Divi Augusti | heading, chapters 1-4, 34-35 | classical (Rome under Augustus), ecclesiastical | Fairley 1898, Shipley 1924 |
 | Sunzi, The Art of War | chapter 1, Laying Plans | Old Chinese (Baxter-Sagart), Tang, Mandarin | Giles 1910, Calthrop 1908 |
 | Daodejing (Laozi) | chapters 1-2 | Old Chinese (Baxter-Sagart), Tang, Mandarin | Legge 1891, Chalmers 1868 |
 | Epictetus, Enchiridion | 1.1-3 | Koine, restored, Erasmian | Long 1877, Higginson 1865 |
 | Marcus Aurelius, Meditations | Book 2, complete | Koine, restored, Erasmian | Long 1862, Casaubon 1634 |
 | Völuspá (Poetic Edda) | complete, stanzas 1-66 | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
 | Hávamál (Poetic Edda) | stanzas 1-80, the guest's wisdom | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
+| Þrymskviða (Poetic Edda) | complete, stanzas 1-32 | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
+| Snorri, Gylfaginning (Prose Edda) | chapters 5-8, the making of the world from Ymir; 49, the death of Baldr | Old Norse (about 1220), modern Icelandic | Brodeur 1916, Anderson 1880 |
 | Li Bai, Quiet Night Thought | 4 lines | Tang, Mandarin, Cantonese | Cranmer-Byng 1909 |
 | Tirukkural | chapter 1, kurals 1-10 | Old Tamil (reconstructed), modern | Pope 1886, Drew 1840 |
 | Runic inscriptions: Kylver, Gallehus, Rök | 3 inscriptions | Proto-Norse, Old East Norse | Stephens 1884; Weft editorial reading |
 | Beowulf | 1-11 | late West Saxon | Gummere 1910, Morris and Wyatt 1895 |
 | Rubaiyat, quatrains attributed to Omar Khayyam | 6 quatrains | Early New Persian (about 1100), modern Persian | FitzGerald 1889, Heron-Allen 1899 |
 | Marco Polo, on Cipangu (Japan) | the whole chapter, F text | Franco-Italian: French of about 1300, and an Italian reader's reading | Yule 1903, Marsden 1818 |
+| Bayeux Tapestry, the embroidered captions | 24 scenes, Edward to the English in flight; a picture of each scene | Anglo-Norman Latin (about 1070), classical | Fowke 1898, Bruce 1856 (partial) |
 | Magna Carta | chapters 39-40 | Anglo-Latin (England, 1215), classical | McKechnie 1905, Bell 1910 |
 | Dante, Inferno 1 | the whole canto, 136 lines | Florentine (about 1307), modern Italian; lemma and form from UD Italian-Old | Longfellow 1867, Cary 1814 |
 | Columbus, letter of 1493 | the landfall and first description | Castilian of about 1492, modern Spanish | Major 1870, Quaritch 1893 |
 | Petrarch, Canzoniere 1 | sonnet, 14 lines | Florentine (about 1350), modern Italian | Nott in Bohn 1859, Higginson 1903; Auslander 1931 cited |
 | Pico della Mirandola, Oration on the Dignity of Man | opening and God's speech to Adam | Italian humanist Latin (1480s), classical | Greswell 1805 (partial), Weft editorial; Forbes 1948 and Caponigri 1956 cited |
+| Alexander VI, the bull Inter caetera | 4 May 1493: the address, Columbus's voyage, the grant and the line | Latin of the papal chancery (Italian manner, 1493), classical | Davenport 1917, Blair and Robertson 1903 |
 | Erasmus, The Praise of Folly | Folly's opening | Low Countries Latin (about 1500), classical | Wilson 1668, Kennett 1683 |
 | Machiavelli, The Prince | chapters 17-18 | Florentine (about 1513), modern Italian | Marriott 1908, Ricci 1903 |
 | Luther's German Bible (1545) | John 1:1-14, Psalm 23 | East Central German of the 1540s, modern German | Tyndale 1534, Coverdale 1535, King James |
@@ -123,7 +128,7 @@ Forty-one works built across twenty-one languages, oldest first in the library:
 | Grettis saga | chapter 14, sentences 1-9 | modern Icelandic, Old Norse | Morris and Magnússon 1869, Hight 1914 |
 
 Homer, Ovid, John, Grettis saga and the Rigveda take lemma and grammar from treebanks (AGDT, LDT, MorphGNT, IcePaHC, the Vedic Treebank); Aristotle, Epictetus and Marcus Aurelius from GLAUx, an automatic parse, corrected by hand where it errs; Genesis from the Open Scriptures Hebrew Bible; Li Bai from the Kyoto Classical Chinese treebank, with Tang readings from Unicode's Unihan database. No open
-treebank covers Eddic or Old English poetry or runic inscriptions, so Hávamál, the complete Völuspá, Beowulf and the
+treebank covers Eddic or Old English poetry or runic inscriptions, so Hávamál, the complete Völuspá, Þrymskviða, Snorri's Gylfaginning, Beowulf and the
 runes are hand-annotated and marked draft (see CLAUDE.md rule 3). The runic page adds a script
 row, generated from the transliteration, and a labelled Weft translation where no public-domain
 modern one exists. The Rigveda page reads the accent strokes of the Devanagari back into pitch
