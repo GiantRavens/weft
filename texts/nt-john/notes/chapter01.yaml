@@ -1,4 +1,4 @@
-# Notes for John 1:1-5.
+# Notes for John 1:1-18.
 - id: n.jn.1.1.enarche
   attach: jn.1.1.1
   kind: editorial
@@ -29,3 +29,21 @@
   kind: editorial
   status: draft
   text: "Κατέλαβεν can mean 'grasped, understood' or 'seized, overcame'. All three English versions here choose understanding: 'comprehended it not'. Many modern translations choose conflict: 'the darkness has not overcome it'."
+- id: n.jn.1.6.en-egeneto
+  attach: jn.1.6.1
+  kind: editorial
+  status: draft
+  leans_on: "MorphGNT parsing of ἦν (imperfect of εἰμί) and ἐγένετο (aorist of γίνομαι), John 1:1-18"
+  text: "The prologue uses two verbs for being. Ἦν, the imperfect of εἰμί, 'was', describes a state without a starting point, and it is used of the Word in verses 1 and 2. Ἐγένετο, the aorist of γίνομαι, 'came to be', describes an event, and it is used of everything made (verse 3), of John the Baptist here ('there came to be a man'), and of the Word in verse 14: ὁ λόγος σὰρξ ἐγένετο, 'the Word became flesh'. Many commentators read the contrast as deliberate. The King James Version renders ἐγένετο as 'were made' or 'was made' in verses 3, 10 and 14 and as 'There was' in verse 6, so in verse 6 the contrast with verse 1 does not show in English."
+- id: n.jn.1.14.eskenosen
+  attach: jn.1.14.7
+  kind: editorial
+  status: draft
+  leans_on: "LSJ s.v. σκηνόω, σκηνή"
+  text: "Ἐσκήνωσεν is the aorist of σκηνόω, from σκηνή, 'tent'. Its plain sense is 'pitched a tent' or 'lived in a tent', and so 'took up residence'. In the Septuagint σκηνή is the word for the tabernacle, the tent of meeting in the wilderness, and the next clause speaks of seeing 'glory', which in Exodus fills that tent. Some commentators also hear the Hebrew root שׁכן, 'to dwell', behind the Greek, because its consonants, š-k-n, are close to the Greek s-k-n. All three English versions here say 'dwelt', which keeps the residence and drops the tent."
+- id: n.jn.1.18.monogenes
+  attach: jn.1.18.5
+  kind: editorial
+  status: draft
+  leans_on: "SBLGNT apparatus at John 1:18; B. M. Metzger, A Textual Commentary on the Greek New Testament (2nd ed. 1994), on John 1:18"
+  text: "The manuscripts differ here; the SBLGNT text marks the two words with half-brackets, ⸂ ⸃. The text printed, μονογενὴς θεός, 'only-one God', is the reading of the earliest papyri (P66, P75) and of Codex Sinaiticus and Codex Vaticanus. Codex Alexandrinus and most later manuscripts read ὁ μονογενὴς υἱός, 'the only Son', and that is the text all three English versions here translate: 'the only begotten Son'. Μονογενής means 'only' or 'one of a kind'; 'only begotten' follows the Latin unigenitus. Scholars who prefer θεός point to the age of its witnesses and argue that a scribe was more likely to change the unusual phrase to the familiar one than the reverse. Those who prefer υἱός point to John's usage elsewhere (3:16, 3:18), where μονογενής goes with 'Son'."

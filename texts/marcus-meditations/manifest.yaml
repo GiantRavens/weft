@@ -13,9 +13,25 @@ status: phase-0
 pilot:
   sections:
   - '2.1'
+  - '2.2'
+  - '2.3'
+  - '2.4'
+  - '2.5'
+  - '2.6'
+  - '2.7'
+  - '2.8'
+  - '2.9'
+  - '2.10'
+  - '2.11'
+  - '2.12'
+  - '2.13'
+  - '2.14'
+  - '2.15'
+  - '2.16'
+  - '2.17'
 edition:
   id: perseus-grc2
-  name: Perseus perseus-grc2 (Leopold 1908), passage in a Weft edition file
+  name: Perseus perseus-grc2 (Leopold 1908), Book 2 in a Weft edition file
   format: weft-edition
   file: edition.yaml
   license: CC BY-SA 4.0
@@ -24,7 +40,28 @@ treebank:
   name: 'GLAUx, the Greek Language Automated corpus (Keersmaekers), Meditations: automatic parse, not hand-checked'
   format: glaux
   subdocs:
-  - 2.1.1
+  - '2.1.1'
+  - '2.2.1'
+  - '2.3.1'
+  - '2.4.1'
+  - '2.5.1'
+  - '2.6.1'
+  - '2.7.1'
+  - '2.8.1'
+  - '2.9.1'
+  - '2.10.1'
+  - '2.11.1'
+  - '2.11.2'
+  - '2.11.3'
+  - '2.11.4'
+  - '2.12.1'
+  - '2.13.1'
+  - '2.14.1'
+  - '2.14.2'
+  - '2.15.1'
+  - '2.16.1'
+  - '2.17.1'
+  - '2.17.2'
   file: sources/glaux-0562-001.xml
   url: https://raw.githubusercontent.com/perseids-publications/glaux-trees/12606b3426f1e5245413f3a8e1c5e0b22348a13c/public/xml/0562-001.xml
   sha256: 5ab4e31ceceeeb3743c7fde542405a3ed20512d6c4d3d806cc557a6f6357e24c
@@ -34,7 +71,9 @@ schemes:
 - koine
 - restored
 - erasmian
-quantities: pipeline/weft/data/grc_quantities.yaml
+quantities:
+- pipeline/weft/data/grc_quantities.yaml
+- pipeline/weft/data/grc_quantities_marcus.yaml
 sources_extra:
 - id: perseus-grc2
   name: Perseus canonical-greekLit TEI edition
@@ -63,5 +102,8 @@ translations:
   url: https://www.gutenberg.org/cache/epub/2680/pg2680.txt
   sha256: 6977474f82a39dd88a4af31a59504821658174d33c177732c54357e4d680b96c
 predicted_gaps:
-- lemma and morphology are an automatic parse (GLAUx), not hand-checked; expect some errors
+- lemma and morphology are an automatic parse (GLAUx), not hand-checked; expect some errors (Book 2 review corrected 142 of 1409 tokens in 2.2-2.17, see curated/)
 - Koine pronunciation of the late 2nd century is reconstructed; Marcus was a Latin speaker writing Greek
+- 'form-mismatch and no-treebank-word, 2 each, in 2.13: the Perseus text prints the Pindar quotation in ʽ ʼ marks, which the tokenizer keeps on τὰ and ἐρευνῶντος; lemma and morph for both are supplied in curated/'
+- 'morph-empty-declinable, 2, in 2.14: GLAUx tags the indeclinable numerals δύο and ἑκατόν as adjectives with no inflection; the tag is filled in curated/'
+- 'words Leopold deletes (Perseus <del>: 2.2 ἄφες ... ἀποθνῄσκων, 2.4 οἰχήσῃ, 2.12 ἔχῃ) are not printed; GLAUx keeps an empty-form placeholder for each, which the treebank loader must skip (core change requested: treebank.load_glaux skips words with an empty form; _norm strips a trailing hyphen so the crasis split τ- + αὐτὸν rejoins as ταὐτὸν)'

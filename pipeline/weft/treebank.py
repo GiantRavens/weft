@@ -1,6 +1,8 @@
 """AGDT treebank access and edition-to-treebank token reconciliation."""
 from __future__ import annotations
 
+import re
+
 import unicodedata as ud
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -186,7 +188,7 @@ def _bare(lemma: str) -> str:
 
 
 def _norm(form: str) -> str:
-    return ud.normalize("NFC", (form or "").lower().lstrip("-"))
+    return ud.normalize("NFC", (form or "").lower().strip("-"))   # GLAUx splits crasis as τ- + αὐτὸν
 
 
 def reconcile_stream(tokens: list[str], stream: list[dict], cursor: int) -> tuple[list[dict | None], list[str], int]:
@@ -332,7 +334,8 @@ def load_morphgnt(path: Path, chapter: int, first: int, last: int) -> dict[int, 
         if ch != chapter or not first <= vs <= last:
             continue
         rows = out.setdefault(vs, [])
-        rows.append({"text": c[3], "word": c[4], "lemma": c[6], "postag": morphgnt_to_ud(c[1], c[2]),
+        # SBLGNT marks variant readings with ⸀⸁⸂⸃⸄⸅; they are apparatus signs, not text
+        rows.append({"text": re.sub("[\u2e00-\u2e05]", "", c[3]), "word": re.sub("[\u2e00-\u2e05]", "", c[4]), "lemma": c[6], "postag": morphgnt_to_ud(c[1], c[2]),
                      "ref": f"{bcv}/{len(rows) + 1}"})
     return out
 
@@ -453,6 +456,17 @@ def load_oshb(path: Path, book: str, chapter: int, first: int, last: int, lexico
                 pf = OSHB_PREFIX.get(lp.strip(), (lp, lp))
                 prefixes.append({"form": text_parts[k] if k < len(text_parts) else pf[0],
                                  "gloss": pf[1], "morph": oshb_to_ud(morph_parts[k]) if k < len(morph_parts) else ""})
+            if main_i is None and prefixes:
+                # a preposition carrying a pronoun suffix (בּוֹ 'in it', לָהֶם 'to them'): OSHB gives
+                # only the prefix lemma (b, l), so the preposition itself is the word
+                pf = prefixes.pop()
+                rows.append({"word": (el.text or "").replace("/", ""),
+                             "lemma": OSHB_PREFIX.get(lem_parts[-1].strip(), (lem_parts[-1],))[0],
+                             "lexgloss": pf["gloss"], "strong": None,
+                             "postag": oshb_to_ud(morph_parts[len(lem_parts) - 1]) if len(lem_parts) - 1 < len(morph_parts) else "ADP",
+                             "prefixes": prefixes,
+                             "ref": f"{verse.get('osisID')}/{el.get('id')}"})
+                continue
             num = re.match(r"(\d+)", lem_parts[main_i]).group(1) if main_i is not None else None
             lex = lexicon.get(f"H{num}", {}) if num else {}
             main_morph = morph_parts[main_i] if main_i is not None and main_i < len(morph_parts) else ""
@@ -540,10 +554,50 @@ def load_glaux(path: Path, subdocs: list[str]) -> list[dict]:
             continue
         if (el.get("subdoc") or "") in want:
             for w in el.findall("word"):
-                if (w.get("postag") or "").startswith("u"):
+                # punctuation, and the empty placeholders GLAUx keeps for words the editor deletes
+                if (w.get("postag") or "").startswith("u") or not w.get("form"):
                     continue
                 words.append({"sentence": el.get("id"), "word": w.get("id"), "form": w.get("form"),
                               "lemma": w.get("lemma"), "postag": w.get("postag"),
                               "relation": w.get("relation"), "head": w.get("head")})
         el.clear()
     return words
+
+
+# ---------------------------------------------------------------- verse-keyed UD (UD Italian-Old)
+def load_conllu_verse(path: Path, token_prefix: str, verse_key: str = "Verso",
+                      match: dict | None = None) -> dict[int, list[dict]]:
+    """{verse number: [printed token]} for the UD rows whose MISC UniqueTokenId starts with
+    `token_prefix` (e.g. 'OldItalian_Dante_Inferno-', the part before the sentence number) and whose
+    MISC fields equal `match` (e.g. {'Canto': '1'}). A printed token is a plain word or a UD
+    multiword token (Nel = in + il) with its words: {form, words: [{lemma, upos, feats}], ref}."""
+    out: dict[int, list[dict]] = {}
+    span_end, cur = 0, None
+    with Path(path).open(encoding="utf-8") as f:
+        for line in f:
+            if not line.strip() or line.startswith("#"):
+                span_end, cur = 0, None
+                continue
+            c = line.rstrip("\n").split("\t")
+            misc = dict(kv.split("=", 1) for kv in c[9].split("|") if "=" in kv) if len(c) > 9 else {}
+            uid = misc.get("UniqueTokenId", "")
+            if not uid.startswith(token_prefix) or any(misc.get(k) != str(v) for k, v in (match or {}).items()):
+                continue
+            ref = "/".join(uid.rsplit("_", 1))
+            verse = int(misc.get(verse_key, "0"))
+            if "-" in c[0]:
+                a, b = (int(x) for x in c[0].split("-"))
+                cur = {"form": c[1], "words": [], "ref": ref}
+                out.setdefault(verse, []).append(cur)
+                span_end = b
+                continue
+            if "." in c[0]:
+                continue
+            word = {"lemma": c[2], "upos": c[3], "feats": c[5]}
+            if cur is not None and int(c[0]) <= span_end:
+                cur["words"].append(word)
+                if int(c[0]) == span_end:
+                    cur, span_end = None, 0
+                continue
+            out.setdefault(verse, []).append({"form": c[1], "words": [word], "ref": ref})
+    return out

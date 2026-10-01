@@ -7,18 +7,20 @@ from __future__ import annotations
 
 import hashlib
 import re
+import unicodedata
 import xml.etree.ElementTree as ET
 from collections import Counter
 from pathlib import Path
 
 import yaml
 
-from . import __version__, akkadian, chinese, french, greek, hebrew, italian, japanese, latin, norse, oldenglish, persian, runic, sanskrit, tamil, treebank
+from . import __version__, akkadian, chinese, dutch, french, greek, hebrew, italian, japanese, latin, norse, oldenglish, oldfrench, persian, runic, sanskrit, spanish, tamil, treebank
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
 INDECLINABLE = set("dcgriebz")   # b: GLAUx coordinating conjunction
 PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebrew, "lzh": chinese, "runic": runic, "ja": japanese, "san": sanskrit,
-        "akk": akkadian, "fa": persian, "ta": tamil, "it": italian, "fr": french}
+        "akk": akkadian, "fa": persian, "ta": tamil, "it": italian, "fr": french,
+        "es": spanish, "nl": dutch, "fro": oldfrench}
 NORMALIZE = {"heyne-to-macron": oldenglish.heyne_to_macron}
 LEAD = re.compile(r"^([(\[“«‹]+|[-–—]\u00a0)")
 TRAIL = re.compile(r"((?:[,.·;:!?)\]”»›\u0387\u037e]|\u00a0[-–—])+)$")
@@ -82,6 +84,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
     m = load_manifest(work_dir)
     pilot = m.get("pilot", {})
     ed_fmt = m["edition"].get("format", "tei")
+    more: list = []          # further chapters to draft after this one (pilot.also), set below
     if ed_fmt in ("stanza-text", "weft-edition"):
         book = first = last = None
     elif ed_fmt == "conllu" and m["edition"].get("sent_prefix"):
@@ -89,7 +92,8 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         first = first or pilot["first"]
         last = last or pilot["last"]
     elif ed_fmt in ("conllu", "morphgnt", "oshb"):
-        book = pilot["chapter"]
+        more = [] if book else pilot.get("also", [])     # further chapters, e.g. Genesis 2:1-3
+        book = book or pilot["chapter"]
         first = first or pilot["first"]
         last = last or pilot["last"]
     elif ed_fmt == "verse-text":
@@ -102,6 +106,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         last = last or pilot["last"]
     repo = work_dir.parents[1]
     failures: Counter[str] = Counter()
+    metre_flags: Counter[str] = Counter()   # licences the hexameter scanner used
     samples: dict[str, list[str]] = {}
 
     def fail(cls: str, sample: str):
@@ -121,8 +126,13 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         if spec.get("sha256") and sha256(p) != spec["sha256"]:
             fail("source-hash-drift", spec["file"])
 
-    quant_path = repo / m["quantities"] if m.get("quantities") else None
-    quantities = yaml.safe_load(quant_path.read_text()) if quant_path else {}
+    # quantities: one table, or a list of tables merged in order (a work may add its own file beside
+    # the shared one, so parallel work on different texts never edits the same table)
+    qspec = m.get("quantities") or []
+    quantities = {}
+    for qp in ([qspec] if isinstance(qspec, str) else qspec):
+        quantities.update(yaml.safe_load((repo / qp).read_text()) or {})
+    quant_path = (repo / qspec) if isinstance(qspec, str) else None
 
     # units: (book-or-stanza, line number, text)
     if ed_fmt == "weft-edition":
@@ -209,6 +219,9 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         tb = treebank.load_lines(tb_path, book, first, last)
     elif tb_fmt == "ldt-stream":
         stream, cursor = treebank.load_stream(tb_path, book, first, last), 0
+    elif tb_fmt == "conllu-verse":
+        verses = treebank.load_conllu_verse(tb_path, m["treebank"]["token_prefix"], m["treebank"].get("verse_key", "Verso"),
+                                            m["treebank"].get("match"))
     elif tb_fmt == "glaux":
         stream, cursor = treebank.load_glaux(tb_path, [str(x) for x in m["treebank"]["subdocs"]]), 0
     elif tb_fmt == "conllu-citation":
@@ -285,6 +298,27 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             pairs, fl = conllu_pairs, []
         elif tb_fmt == "agdt-cite":
             pairs, fl = treebank.reconcile(surfaces, tb.get(f"{book}.{n}", []))
+        elif tb_fmt == "conllu-verse":
+            # group the verse's treebank tokens under each edition word: the treebank splits elisions
+            # the edition prints as one word (Tant'è = Tant' + è), so take tokens until the letters match
+            tb_toks = verses.get(n, [])
+            letters = lambda x: re.sub(r"[^\w]", "", "".join(ch for ch in unicodedata.normalize("NFD", x.lower()) if not unicodedata.combining(ch)))
+            tag = lambda w: w["upos"] + ("" if w["feats"] in ("_", "") else "|" + w["feats"])
+            pairs, fl, j = [], [], 0
+            for s_ in surfaces:
+                want, got, grp = letters(s_), "", []
+                while j < len(tb_toks) and len(got) < len(want):
+                    grp.append(tb_toks[j]); got += letters(tb_toks[j]["form"]); j += 1
+                if not grp or got != want:
+                    fl.append(f"tb-form-mismatch: line {n}: {s_} vs {' '.join(t['form'] for t in grp) or '(none)'}")
+                if not grp:
+                    pairs.append(None); continue
+                words = [w for t in grp for w in t["words"]]
+                pairs.append({"lemma": " + ".join(w["lemma"] for w in words),
+                              "postag": " + ".join(tag(w) for w in words),
+                              "ref": ", ".join(t["ref"] for t in grp)})
+            if j != len(tb_toks):
+                fl.append(f"tb-token-count: line {n}: {len(tb_toks) - j} treebank tokens left over")
         elif tb_fmt in ("ldt-stream", "glaux"):
             pairs, fl, cursor = treebank.reconcile_stream(surfaces, stream, cursor)
         elif tb_fmt == "conllu-citation":
@@ -407,6 +441,17 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         if lang == "ja" and toks:
             # Japanese verse counts morae; the first scheme is the as-first-spoken reading
             line_rec["metre"] = f"{sum(t.get('morae', 0) for t in toks)} morae"
+        if lang == "grc" and m.get("metre") == "hexameter" and toks:
+            # dactylic hexameter scanned from the printed words; the licences it used (lengthening,
+            # synizesis, correption...) are features of the verse, kept as telemetry, not failures
+            hx, hflags = greek.scan_hexameter(text.split(), quantities)
+            if hx:
+                line_rec["metre"] = hx
+            for cls, sample in hflags:
+                if cls in ("metre-no-fit", "metre-ambiguous"):
+                    fail(cls, f"{book}.{n} {sample}")
+                else:
+                    metre_flags[cls] += 1
         if token_edition and toks and hasattr(phon, "line_metre"):
             # language hook: metre computed from the line's tokens, with its own failure classes
             m_str, mfails = phon.line_metre(etoks, edition)
@@ -475,6 +520,8 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
     }
     if hasattr(phon, "LAYERS"):
         gen["layers"].update(phon.LAYERS)
+    if lang == "grc" and m.get("metre") == "hexameter":
+        gen["layers"]["metre"] = {"src": f"weft.greek hexameter scanner {greek.SCANNER_VERSION}"}
     stem = ("inscriptions" if "inscriptions" in (yaml.safe_load((work_dir / m["edition"]["file"]).read_text()) or {}) else "sections") if ed_fmt == "weft-edition" else "lines" if book is None and ed_fmt != "stanza-text" else {"stanza-text": "stanzas", "verse-text": "lines"}.get(ed_fmt) or (
         f"chapter{book:02d}" if ed_fmt in ("conllu", "morphgnt", "oshb") else f"book{book:02d}")
     (work_dir / "gen").mkdir(exist_ok=True)
@@ -489,6 +536,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                                           else {"book": book, "lines": f"{first}-{last}"})},
         "counts": {"lines": len(lines), "tokens": ntok},
         "failures": dict(failures),
+        **({"metre_licences": dict(metre_flags)} if metre_flags else {}),
         "samples": samples,
         "failure_rate": {k: round(v / max(ntok, 1), 3) for k, v in failures.items()},
         "shift_left": [k for k, v in failures.items() if v / max(ntok, 1) > 0.15],
@@ -496,4 +544,9 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
     }
     (work_dir / "gen" / f"{stem}.run.yaml").write_text(
         yaml.dump(report, allow_unicode=True, sort_keys=False, width=200))
+    for extra in (more if ed_fmt in ("conllu", "morphgnt", "oshb") else []):
+        r2 = run(work_dir, extra["chapter"], extra["first"], extra["last"])
+        report["counts"] = {k: report["counts"][k] + r2["counts"][k] for k in report["counts"]}
+        for k, v in r2["failures"].items():
+            report["failures"][k] = report["failures"].get(k, 0) + v
     return report

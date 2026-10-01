@@ -606,3 +606,4410 @@ lines:
     sound:
       tiberian: {ipa: ʔɛ.ˈħɔːð, respell: ʾe-ḤAWDH}
       modern-israeli: {ipa: ʔe.ˈχad, respell: e-KHAD}
+- id: gen.1.6
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.6
+  text: וַיֹּ֣אמֶר אֱלֹהִ֔ים יְהִ֥י רָקִ֖יעַ בְּת֣וֹךְ הַמָּ֑יִם וִיהִ֣י מַבְדִּ֔יל בֵּ֥ין מַ֖יִם לָמָֽיִם׃
+  tokens:
+  - id: gen.1.6.1
+    surface: וַיֹּ֣אמֶר
+    lemma: אָמַר
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.6/017am
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: say
+    strong: H559
+    sound:
+      tiberian: {ipa: vaj.ˈjoː.mɛʀ, respell: vay-YOH-mer}
+      modern-israeli: {ipa: va.ˈjo.meʁ, respell: va-YO-mer}
+  - id: gen.1.6.2
+    surface: אֱלֹהִ֔ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.6/01hh7
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.6.3
+    surface: יְהִ֥י
+    lemma: הָיָה
+    morph: VERB|Conj=Jussive|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.6/01BsK
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: jă.ˈhiː, respell: ya-HEE}
+      modern-israeli: {ipa: je.ˈhi, respell: ye-HEE}
+  - id: gen.1.6.4
+    surface: רָקִ֖יעַ
+    lemma: רָקִיעַ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.6/01fsu
+    lexgloss: expanse
+    strong: H7549
+    sound:
+      tiberian: {ipa: ʀɔː.ˈqiː.aʕ, respell: raw-QEE-aʿ}
+      modern-israeli: {ipa: ʁa.ˈki.aʔ, respell: ra-KEE-a}
+  - id: gen.1.6.5
+    surface: בְּת֣וֹךְ
+    lemma: תָּוֶךְ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.6/018M6
+    prefixes:
+    - {form: בְּ, gloss: in, morph: ADP}
+    lexgloss: bisection
+    strong: H8432
+    sound:
+      tiberian: {ipa: bă.ˈθoːx, respell: ba-THOHKH}
+      modern-israeli: {ipa: be.ˈtoχ, respell: be-TOKH}
+  - id: gen.1.6.6
+    surface: הַמָּ֑יִם
+    lemma: מַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.6/01wM5
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: water
+    strong: H4325
+    sound:
+      tiberian: {ipa: ham.ˈmɔː.jim, respell: ham-MAW-yim}
+      modern-israeli: {ipa: ha.ˈma.jim, respell: ha-MA-yeem}
+  - id: gen.1.6.7
+    surface: וִיהִ֣י
+    lemma: הָיָה
+    morph: VERB|Conj=Yiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.6/01qty
+    prefixes:
+    - {form: וִ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: viː.ˈhiː, respell: vee-HEE}
+      modern-israeli: {ipa: vi.ˈhi, respell: vee-HEE}
+  - id: gen.1.6.8
+    surface: מַבְדִּ֔יל
+    lemma: בָּדַל
+    morph: VERB|Conj=PartAct|Gender=Masc|Number=Sing|State=Abs|Stem=Hiphil
+    tb: Gen.1.6/015gQ
+    lexgloss: divide
+    strong: H914
+    sound:
+      tiberian: {ipa: mav.ˈdiːl, respell: mav-DEEL}
+      modern-israeli: {ipa: mav.ˈdil, respell: mav-DEEL}
+  - id: gen.1.6.9
+    surface: בֵּ֥ין
+    lemma: בֵּין
+    morph: ADP
+    tb: Gen.1.6/01Xw6
+    lexgloss: between
+    strong: H996
+    sound:
+      tiberian: {ipa: beːn, respell: bayn}
+      modern-israeli: {ipa: ben, respell: ben}
+  - id: gen.1.6.10
+    surface: מַ֖יִם
+    lemma: מַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.6/01eHJ
+    lexgloss: water
+    strong: H4325
+    sound:
+      tiberian: {ipa: ˈma.jim, respell: MA-yim}
+      modern-israeli: {ipa: ˈma.jim, respell: MA-yeem}
+  - id: gen.1.6.11
+    surface: לָמָֽיִם
+    punct: ׃
+    lemma: מַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.6/01H6L
+    prefixes:
+    - {form: לָ, gloss: to, morph: ADP}
+    lexgloss: water
+    strong: H4325
+    sound:
+      tiberian: {ipa: lɔː.ˈmɔː.jim, respell: law-MAW-yim}
+      modern-israeli: {ipa: la.ˈma.jim, respell: la-MA-yeem}
+- id: gen.1.7
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.7
+  text: וַיַּ֣עַשׂ אֱלֹהִים֮ אֶת־ הָרָקִיעַ֒ וַיַּבְדֵּ֗ל בֵּ֤ין הַמַּ֨יִם֙ אֲשֶׁר֙ מִתַּ֣חַת לָרָקִ֔יעַ וּבֵ֣ין הַמַּ֔יִם אֲשֶׁ֖ר מֵעַ֣ל לָרָקִ֑יעַ וַֽיְהִי־ כֵֽן׃
+  tokens:
+  - id: gen.1.7.1
+    surface: וַיַּ֣עַשׂ
+    lemma: עָשָׂה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.7/01bmv
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: do
+    strong: H6213
+    sound:
+      tiberian: {ipa: vaj.ˈja.ʕas, respell: vay-YA-ʿas}
+      modern-israeli: {ipa: va.ˈja.ʔas, respell: va-YA-as}
+  - id: gen.1.7.2
+    surface: אֱלֹהִים֮
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.7/01FV9
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.7.3
+    surface: אֶת
+    punct: ־
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.7/01Xm1
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: ʔɛθ, respell: ʾeth}
+      modern-israeli: {ipa: ʔet, respell: et}
+  - id: gen.1.7.4
+    surface: הָרָקִיעַ֒
+    lemma: רָקִיעַ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.7/01UE6
+    prefixes:
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: expanse
+    strong: H7549
+    sound:
+      tiberian: {ipa: hɔː.ʀɔː.qiː.ˈaʕ, respell: haw-raw-qee-Aʿ}
+      modern-israeli: {ipa: ha.ʁa.ki.ˈaʔ, respell: ha-ra-kee-A}
+  - id: gen.1.7.5
+    surface: וַיַּבְדֵּ֗ל
+    lemma: בָּדַל
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Hiphil
+    tb: Gen.1.7/01goK
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: divide
+    strong: H914
+    sound:
+      tiberian: {ipa: vaj.jav.ˈdeːl, respell: vay-yav-DAYL}
+      modern-israeli: {ipa: va.jav.ˈdel, respell: va-yav-DEL}
+  - id: gen.1.7.6
+    surface: בֵּ֤ין
+    lemma: בֵּין
+    morph: ADP
+    tb: Gen.1.7/01CyH
+    lexgloss: between
+    strong: H996
+    sound:
+      tiberian: {ipa: beːn, respell: bayn}
+      modern-israeli: {ipa: ben, respell: ben}
+  - id: gen.1.7.7
+    surface: הַמַּ֨יִם֙
+    lemma: מַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.7/01A4a
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: water
+    strong: H4325
+    sound:
+      tiberian: {ipa: ham.ˈma.jim, respell: ham-MA-yim}
+      modern-israeli: {ipa: ha.ˈma.jim, respell: ha-MA-yeem}
+  - id: gen.1.7.8
+    surface: אֲשֶׁר֙
+    lemma: אֲשֶׁר
+    morph: PRON|PartType=Rel
+    tb: Gen.1.7/015Pr
+    lexgloss: who
+    strong: H834
+    sound:
+      tiberian: {ipa: ʔă.ˈʃɛʀ, respell: ʾa-SHER}
+      modern-israeli: {ipa: ʔa.ˈʃeʁ, respell: a-SHER}
+  - id: gen.1.7.9
+    surface: מִתַּ֣חַת
+    lemma: תַּחַת
+    morph: ADP
+    tb: Gen.1.7/01L4k
+    prefixes:
+    - {form: מִ, gloss: from, morph: ADP}
+    lexgloss: bottom
+    strong: H8478
+    sound:
+      tiberian: {ipa: mit.ˈta.ħaθ, respell: mit-TA-ḥath}
+      modern-israeli: {ipa: mi.ˈta.χat, respell: mee-TA-khat}
+  - id: gen.1.7.10
+    surface: לָרָקִ֔יעַ
+    lemma: רָקִיעַ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.7/01Mnv
+    prefixes:
+    - {form: לָ, gloss: to, morph: ADP}
+    lexgloss: expanse
+    strong: H7549
+    sound:
+      tiberian: {ipa: lɔː.ʀɔː.ˈqiː.aʕ, respell: law-raw-QEE-aʿ}
+      modern-israeli: {ipa: la.ʁa.ˈki.aʔ, respell: la-ra-KEE-a}
+  - id: gen.1.7.11
+    surface: וּבֵ֣ין
+    lemma: בֵּין
+    morph: ADP
+    tb: Gen.1.7/01mwU
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    lexgloss: between
+    strong: H996
+    sound:
+      tiberian: {ipa: uː.ˈveːn, respell: oo-VAYN}
+      modern-israeli: {ipa: u.ˈven, respell: oo-VEN}
+  - id: gen.1.7.12
+    surface: הַמַּ֔יִם
+    lemma: מַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.7/01tKT
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: water
+    strong: H4325
+    sound:
+      tiberian: {ipa: ham.ˈma.jim, respell: ham-MA-yim}
+      modern-israeli: {ipa: ha.ˈma.jim, respell: ha-MA-yeem}
+  - id: gen.1.7.13
+    surface: אֲשֶׁ֖ר
+    lemma: אֲשֶׁר
+    morph: PRON|PartType=Rel
+    tb: Gen.1.7/01NRT
+    lexgloss: who
+    strong: H834
+    sound:
+      tiberian: {ipa: ʔă.ˈʃɛʀ, respell: ʾa-SHER}
+      modern-israeli: {ipa: ʔa.ˈʃeʁ, respell: a-SHER}
+  - id: gen.1.7.14
+    surface: מֵעַ֣ל
+    lemma: עַל
+    morph: ADP
+    tb: Gen.1.7/01sRU
+    prefixes:
+    - {form: מֵ, gloss: from, morph: ADP}
+    lexgloss: above
+    strong: H5921
+    sound:
+      tiberian: {ipa: meː.ˈʕal, respell: may-ʿAL}
+      modern-israeli: {ipa: me.ˈʔal, respell: me-AL}
+  - id: gen.1.7.15
+    surface: לָרָקִ֑יעַ
+    lemma: רָקִיעַ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.7/01Wxq
+    prefixes:
+    - {form: לָ, gloss: to, morph: ADP}
+    lexgloss: expanse
+    strong: H7549
+    sound:
+      tiberian: {ipa: lɔː.ʀɔː.ˈqiː.aʕ, respell: law-raw-QEE-aʿ}
+      modern-israeli: {ipa: la.ʁa.ˈki.aʔ, respell: la-ra-KEE-a}
+  - id: gen.1.7.16
+    surface: וַֽיְהִי
+    punct: ־
+    lemma: הָיָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.7/019qY
+    prefixes:
+    - {form: וַֽ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: vaj.hiː, respell: vay-hee}
+      modern-israeli: {ipa: vaj.hi, respell: vay-hee}
+  - id: gen.1.7.17
+    surface: כֵֽן
+    punct: ׃
+    lemma: כֵּן
+    morph: ADV
+    tb: Gen.1.7/01n5f
+    lexgloss: set upright
+    strong: H3651
+    sound:
+      tiberian: {ipa: xeːn, respell: khayn}
+      modern-israeli: {ipa: χen, respell: khen}
+- id: gen.1.8
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.8
+  text: וַיִּקְרָ֧א אֱלֹהִ֛ים לָֽרָקִ֖יעַ שָׁמָ֑יִם וַֽיְהִי־ עֶ֥רֶב וַֽיְהִי־ בֹ֖קֶר י֥וֹם שֵׁנִֽי׃פ
+  tokens:
+  - id: gen.1.8.1
+    surface: וַיִּקְרָ֧א
+    lemma: קָרָא
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.8/01YUq
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: call out to
+    strong: H7121
+    sound:
+      tiberian: {ipa: vaj.jiq.ˈʀɔː, respell: vay-yiq-RAW}
+      modern-israeli: {ipa: va.jik.ˈʁa, respell: va-yeek-RA}
+  - id: gen.1.8.2
+    surface: אֱלֹהִ֛ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.8/01fQr
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.8.3
+    surface: לָֽרָקִ֖יעַ
+    lemma: רָקִיעַ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.8/01L7t
+    prefixes:
+    - {form: לָֽ, gloss: to, morph: ADP}
+    lexgloss: expanse
+    strong: H7549
+    sound:
+      tiberian: {ipa: lɔː.ʀɔː.ˈqiː.aʕ, respell: law-raw-QEE-aʿ}
+      modern-israeli: {ipa: la.ʁa.ˈki.aʔ, respell: la-ra-KEE-a}
+  - id: gen.1.8.4
+    surface: שָׁמָ֑יִם
+    lemma: שָׁמַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.8/01A74
+    lexgloss: sky
+    strong: H8064
+    sound:
+      tiberian: {ipa: ʃɔː.ˈmɔː.jim, respell: shaw-MAW-yim}
+      modern-israeli: {ipa: ʃa.ˈma.jim, respell: sha-MA-yeem}
+  - id: gen.1.8.5
+    surface: וַֽיְהִי
+    punct: ־
+    lemma: הָיָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.8/01dNE
+    prefixes:
+    - {form: וַֽ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: vaj.hiː, respell: vay-hee}
+      modern-israeli: {ipa: vaj.hi, respell: vay-hee}
+  - id: gen.1.8.6
+    surface: עֶ֥רֶב
+    lemma: עֶרֶב
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.8/01xdF
+    lexgloss: dusk
+    strong: H6153
+    sound:
+      tiberian: {ipa: ˈʕɛ.ʀɛv, respell: ʿE-rev}
+      modern-israeli: {ipa: ˈʔe.ʁev, respell: E-rev}
+  - id: gen.1.8.7
+    surface: וַֽיְהִי
+    punct: ־
+    lemma: הָיָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.8/01AYg
+    prefixes:
+    - {form: וַֽ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: vaj.hiː, respell: vay-hee}
+      modern-israeli: {ipa: vaj.hi, respell: vay-hee}
+  - id: gen.1.8.8
+    surface: בֹ֖קֶר
+    lemma: בֹּקֶר
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.8/01Ls9
+    lexgloss: dawn
+    strong: H1242
+    sound:
+      tiberian: {ipa: ˈvoː.qɛʀ, respell: VOH-qer}
+      modern-israeli: {ipa: ˈvo.keʁ, respell: VO-ker}
+  - id: gen.1.8.9
+    surface: י֥וֹם
+    lemma: יוֹם
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.8/01Snp
+    lexgloss: day
+    strong: H3117
+    sound:
+      tiberian: {ipa: joːm, respell: yohm}
+      modern-israeli: {ipa: jom, respell: yom}
+  - id: gen.1.8.10
+    surface: שֵׁנִֽי
+    punct: ׃פ
+    lemma: שֵׁנִי
+    morph: NUM|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.8/0187B
+    lexgloss: double
+    strong: H8145
+    sound:
+      tiberian: {ipa: ʃeː.ˈniː, respell: shay-NEE}
+      modern-israeli: {ipa: ʃe.ˈni, respell: she-NEE}
+- id: gen.1.9
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.9
+  text: וַיֹּ֣אמֶר אֱלֹהִ֗ים יִקָּו֨וּ הַמַּ֜יִם מִתַּ֤חַת הַשָּׁמַ֨יִם֙ אֶל־ מָק֣וֹם אֶחָ֔ד וְתֵרָאֶ֖ה הַיַּבָּשָׁ֑ה וַֽיְהִי־ כֵֽן׃
+  tokens:
+  - id: gen.1.9.1
+    surface: וַיֹּ֣אמֶר
+    lemma: אָמַר
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.9/01nLp
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: say
+    strong: H559
+    sound:
+      tiberian: {ipa: vaj.ˈjoː.mɛʀ, respell: vay-YOH-mer}
+      modern-israeli: {ipa: va.ˈjo.meʁ, respell: va-YO-mer}
+  - id: gen.1.9.2
+    surface: אֱלֹהִ֗ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.9/01PzC
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.9.3
+    surface: יִקָּו֨וּ
+    lemma: קָוָה
+    morph: VERB|Conj=Jussive|Gender=Masc|Number=Plur|Person=3|Stem=Niphal
+    tb: Gen.1.9/01NPq
+    lexgloss: bind
+    strong: H6960
+    sound:
+      tiberian: {ipa: jiq.qɔː.ˈvuː, respell: yiq-qaw-VOO}
+      modern-israeli: {ipa: ji.ka.ˈvu, respell: yee-ka-VOO}
+  - id: gen.1.9.4
+    surface: הַמַּ֜יִם
+    lemma: מַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.9/01d5m
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: water
+    strong: H4325
+    sound:
+      tiberian: {ipa: ham.ˈma.jim, respell: ham-MA-yim}
+      modern-israeli: {ipa: ha.ˈma.jim, respell: ha-MA-yeem}
+  - id: gen.1.9.5
+    surface: מִתַּ֤חַת
+    lemma: תַּחַת
+    morph: ADP
+    tb: Gen.1.9/01BYa
+    prefixes:
+    - {form: מִ, gloss: from, morph: ADP}
+    lexgloss: bottom
+    strong: H8478
+    sound:
+      tiberian: {ipa: mit.ˈta.ħaθ, respell: mit-TA-ḥath}
+      modern-israeli: {ipa: mi.ˈta.χat, respell: mee-TA-khat}
+  - id: gen.1.9.6
+    surface: הַשָּׁמַ֨יִם֙
+    lemma: שָׁמַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.9/01LJh
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: sky
+    strong: H8064
+    sound:
+      tiberian: {ipa: haʃ.ʃɔː.ˈma.jim, respell: hash-shaw-MA-yim}
+      modern-israeli: {ipa: ha.ʃa.ˈma.jim, respell: ha-sha-MA-yeem}
+  - id: gen.1.9.7
+    surface: אֶל
+    punct: ־
+    lemma: אֵל
+    morph: ADP
+    tb: Gen.1.9/01tRR
+    lexgloss: near
+    strong: H413
+    sound:
+      tiberian: {ipa: ʔɛl, respell: ʾel}
+      modern-israeli: {ipa: ʔel, respell: el}
+  - id: gen.1.9.8
+    surface: מָק֣וֹם
+    lemma: מָקוֹם
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.9/01Q7E
+    lexgloss: standing
+    strong: H4725
+    sound:
+      tiberian: {ipa: mɔː.ˈqoːm, respell: maw-QOHM}
+      modern-israeli: {ipa: ma.ˈkom, respell: ma-KOM}
+  - id: gen.1.9.9
+    surface: אֶחָ֔ד
+    lemma: אֶחָד
+    morph: NUM|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.9/01dv1
+    lexgloss: united
+    strong: H259
+    sound:
+      tiberian: {ipa: ʔɛ.ˈħɔːð, respell: ʾe-ḤAWDH}
+      modern-israeli: {ipa: ʔe.ˈχad, respell: e-KHAD}
+  - id: gen.1.9.10
+    surface: וְתֵרָאֶ֖ה
+    lemma: רָאָה
+    morph: VERB|Conj=Yiqtol|Gender=Fem|Number=Sing|Person=3|Stem=Niphal
+    tb: Gen.1.9/01QwM
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    lexgloss: see
+    strong: H7200
+    sound:
+      tiberian: {ipa: vă.θeː.ʀɔː.ˈʔɛː, respell: va-thay-raw-ʾEH}
+      modern-israeli: {ipa: ve.te.ʁa.ˈʔe, respell: ve-te-ra-E}
+  - id: gen.1.9.11
+    surface: הַיַּבָּשָׁ֑ה
+    lemma: יַבָּשָׁה
+    morph: NOUN|Gender=Fem|Number=Sing|State=Abs
+    tb: Gen.1.9/01a62
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: dry ground
+    strong: H3004
+    sound:
+      tiberian: {ipa: haj.jab.bɔː.ˈʃɔː, respell: hay-yab-baw-SHAW}
+      modern-israeli: {ipa: ha.ja.ba.ˈʃa, respell: ha-ya-ba-SHA}
+  - id: gen.1.9.12
+    surface: וַֽיְהִי
+    punct: ־
+    lemma: הָיָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.9/01KvD
+    prefixes:
+    - {form: וַֽ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: vaj.hiː, respell: vay-hee}
+      modern-israeli: {ipa: vaj.hi, respell: vay-hee}
+  - id: gen.1.9.13
+    surface: כֵֽן
+    punct: ׃
+    lemma: כֵּן
+    morph: ADV
+    tb: Gen.1.9/01GLz
+    lexgloss: set upright
+    strong: H3651
+    sound:
+      tiberian: {ipa: xeːn, respell: khayn}
+      modern-israeli: {ipa: χen, respell: khen}
+- id: gen.1.10
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.10
+  text: וַיִּקְרָ֨א אֱלֹהִ֤ים׀ לַיַּבָּשָׁה֙ אֶ֔רֶץ וּלְמִקְוֵ֥ה הַמַּ֖יִם קָרָ֣א יַמִּ֑ים וַיַּ֥רְא אֱלֹהִ֖ים כִּי־ טֽוֹב׃
+  tokens:
+  - id: gen.1.10.1
+    surface: וַיִּקְרָ֨א
+    lemma: קָרָא
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.10/01BU7
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: call out to
+    strong: H7121
+    sound:
+      tiberian: {ipa: vaj.jiq.ˈʀɔː, respell: vay-yiq-RAW}
+      modern-israeli: {ipa: va.jik.ˈʁa, respell: va-yeek-RA}
+  - id: gen.1.10.2
+    surface: אֱלֹהִ֤ים
+    punct: ׀
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.10/01iy2
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.10.3
+    surface: לַיַּבָּשָׁה֙
+    lemma: יַבָּשָׁה
+    morph: NOUN|Gender=Fem|Number=Sing|State=Abs
+    tb: Gen.1.10/01zQ2
+    prefixes:
+    - {form: לַ, gloss: to, morph: ADP}
+    lexgloss: dry ground
+    strong: H3004
+    sound:
+      tiberian: {ipa: laj.jab.bɔː.ˈʃɔː, respell: lay-yab-baw-SHAW}
+      modern-israeli: {ipa: la.ja.ba.ˈʃa, respell: la-ya-ba-SHA}
+  - id: gen.1.10.4
+    surface: אֶ֔רֶץ
+    lemma: אֶרֶץ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.10/01Wxx
+    lexgloss: earth
+    strong: H776
+    sound:
+      tiberian: {ipa: ˈʔɛ.ʀɛsˁ, respell: ʾE-reṣ}
+      modern-israeli: {ipa: ˈʔe.ʁets, respell: E-rets}
+  - id: gen.1.10.5
+    surface: וּלְמִקְוֵ֥ה
+    lemma: מִקְוֶה
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.10/01jQ8
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: waited
+    strong: H4723
+    sound:
+      tiberian: {ipa: uːl.miq.ˈveː, respell: ool-miq-VAY}
+      modern-israeli: {ipa: ul.mik.ˈve, respell: ool-meek-VE}
+  - id: gen.1.10.6
+    surface: הַמַּ֖יִם
+    lemma: מַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.10/01Haa
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: water
+    strong: H4325
+    sound:
+      tiberian: {ipa: ham.ˈma.jim, respell: ham-MA-yim}
+      modern-israeli: {ipa: ha.ˈma.jim, respell: ha-MA-yeem}
+  - id: gen.1.10.7
+    surface: קָרָ֣א
+    lemma: קָרָא
+    morph: VERB|Conj=Qatal|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.10/01fJN
+    lexgloss: call out to
+    strong: H7121
+    sound:
+      tiberian: {ipa: qɔː.ˈʀɔː, respell: qaw-RAW}
+      modern-israeli: {ipa: ka.ˈʁa, respell: ka-RA}
+  - id: gen.1.10.8
+    surface: יַמִּ֑ים
+    lemma: יָם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.10/019KV
+    lexgloss: sea
+    strong: H3220
+    sound:
+      tiberian: {ipa: jam.ˈmiːm, respell: yam-MEEM}
+      modern-israeli: {ipa: ja.ˈmim, respell: ya-MEEM}
+  - id: gen.1.10.9
+    surface: וַיַּ֥רְא
+    lemma: רָאָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.10/01F1s
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: see
+    strong: H7200
+    sound:
+      tiberian: {ipa: vaj.ˈjaʀ, respell: vay-YAR}
+      modern-israeli: {ipa: va.ˈjaʁ, respell: va-YAR}
+  - id: gen.1.10.10
+    surface: אֱלֹהִ֖ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.10/01dns
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.10.11
+    surface: כִּי
+    punct: ־
+    lemma: כִּי
+    morph: CCONJ
+    tb: Gen.1.10/01GK3
+    lexgloss: relative conjunction
+    strong: H3588
+    sound:
+      tiberian: {ipa: kiː, respell: kee}
+      modern-israeli: {ipa: ki, respell: kee}
+  - id: gen.1.10.12
+    surface: טֽוֹב
+    punct: ׃
+    lemma: טוֹב
+    morph: ADJ|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.10/01nRZ
+    lexgloss: good
+    strong: H2896
+    sound:
+      tiberian: {ipa: tˁoːv, respell: ṭohv}
+      modern-israeli: {ipa: tov, respell: tov}
+- id: gen.1.11
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.11
+  text: וַיֹּ֣אמֶר אֱלֹהִ֗ים תַּֽדְשֵׁ֤א הָאָ֨רֶץ֙ דֶּ֔שֶׁא עֵ֚שֶׂב מַזְרִ֣יעַ זֶ֔רַע עֵ֣ץ פְּרִ֞י עֹ֤שֶׂה פְּרִי֙ לְמִינ֔וֹ אֲשֶׁ֥ר זַרְעוֹ־ ב֖וֹ עַל־ הָאָ֑רֶץ וַֽיְהִי־ כֵֽן׃
+  tokens:
+  - id: gen.1.11.1
+    surface: וַיֹּ֣אמֶר
+    lemma: אָמַר
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.11/01cpb
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: say
+    strong: H559
+    sound:
+      tiberian: {ipa: vaj.ˈjoː.mɛʀ, respell: vay-YOH-mer}
+      modern-israeli: {ipa: va.ˈjo.meʁ, respell: va-YO-mer}
+  - id: gen.1.11.2
+    surface: אֱלֹהִ֗ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.11/01zio
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.11.3
+    surface: תַּֽדְשֵׁ֤א
+    lemma: דָּשָׁא
+    morph: VERB|Conj=Jussive|Gender=Fem|Number=Sing|Person=3|Stem=Hiphil
+    tb: Gen.1.11/01Qsh
+    lexgloss: sprout
+    strong: H1876
+    sound:
+      tiberian: {ipa: tað.ˈʃeː, respell: tadh-SHAY}
+      modern-israeli: {ipa: tad.ˈʃe, respell: tad-SHE}
+  - id: gen.1.11.4
+    surface: הָאָ֨רֶץ֙
+    lemma: אֶרֶץ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.11/01zTj
+    prefixes:
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: earth
+    strong: H776
+    sound:
+      tiberian: {ipa: hɔː.ˈʔɔː.ʀɛsˁ, respell: haw-ʾAW-reṣ}
+      modern-israeli: {ipa: ha.ˈʔa.ʁets, respell: ha-A-rets}
+  - id: gen.1.11.5
+    surface: דֶּ֔שֶׁא
+    lemma: דֶּשֶׁא
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.11/01fPi
+    lexgloss: sprout
+    strong: H1877
+    sound:
+      tiberian: {ipa: ˈdɛ.ʃɛː, respell: DE-sheh}
+      modern-israeli: {ipa: ˈde.ʃe, respell: DE-she}
+  - id: gen.1.11.6
+    surface: עֵ֚שֶׂב
+    lemma: עֶשֶׂב
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.11/01GYe
+    lexgloss: grass
+    strong: H6212
+    sound:
+      tiberian: {ipa: ʕeː.ˈsɛv, respell: ʿay-SEV}
+      modern-israeli: {ipa: ʔe.ˈsev, respell: e-SEV}
+  - id: gen.1.11.7
+    surface: מַזְרִ֣יעַ
+    lemma: זָרַע
+    morph: VERB|Conj=PartAct|Gender=Masc|Number=Sing|State=Abs|Stem=Hiphil
+    tb: Gen.1.11/01Bbz
+    lexgloss: sow
+    strong: H2232
+    sound:
+      tiberian: {ipa: maz.ˈʀiː.aʕ, respell: maz-REE-aʿ}
+      modern-israeli: {ipa: maz.ˈʁi.aʔ, respell: maz-REE-a}
+  - id: gen.1.11.8
+    surface: זֶ֔רַע
+    lemma: זֶרַע
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.11/01VA9
+    lexgloss: seed
+    strong: H2233
+    sound:
+      tiberian: {ipa: ˈzɛ.ʀaʕ, respell: ZE-raʿ}
+      modern-israeli: {ipa: ˈze.ʁaʔ, respell: ZE-ra}
+  - id: gen.1.11.9
+    surface: עֵ֣ץ
+    lemma: עֵץ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.11/01fV3
+    lexgloss: tree
+    strong: H6086
+    sound:
+      tiberian: {ipa: ʕeːsˁ, respell: ʿayṣ}
+      modern-israeli: {ipa: ʔets, respell: ets}
+  - id: gen.1.11.10
+    surface: פְּרִ֞י
+    lemma: פְּרִי
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.11/01Sov
+    lexgloss: fruit
+    strong: H6529
+    sound:
+      tiberian: {ipa: pă.ˈʀiː, respell: pa-REE}
+      modern-israeli: {ipa: pe.ˈʁi, respell: pe-REE}
+  - id: gen.1.11.11
+    surface: עֹ֤שֶׂה
+    lemma: עָשָׂה
+    morph: VERB|Conj=PartAct|Gender=Masc|Number=Sing|State=Abs|Stem=Qal
+    tb: Gen.1.11/01V27
+    lexgloss: do
+    strong: H6213
+    sound:
+      tiberian: {ipa: ˈʕoː.sɛː, respell: ʿOH-seh}
+      modern-israeli: {ipa: ˈʔo.se, respell: O-se}
+  - id: gen.1.11.12
+    surface: פְּרִי֙
+    lemma: פְּרִי
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.11/01ifp
+    lexgloss: fruit
+    strong: H6529
+    sound:
+      tiberian: {ipa: pă.ˈʀiː, respell: pa-REE}
+      modern-israeli: {ipa: pe.ˈʁi, respell: pe-REE}
+  - id: gen.1.11.13
+    surface: לְמִינ֔וֹ
+    lemma: מִין
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.11/017ZG
+    prefixes:
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: sort
+    strong: H4327
+    sound:
+      tiberian: {ipa: lă.miː.ˈnoː, respell: la-mee-NOH}
+      modern-israeli: {ipa: le.mi.ˈno, respell: le-mee-NO}
+  - id: gen.1.11.14
+    surface: אֲשֶׁ֥ר
+    lemma: אֲשֶׁר
+    morph: PRON|PartType=Rel
+    tb: Gen.1.11/01B2d
+    lexgloss: who
+    strong: H834
+    sound:
+      tiberian: {ipa: ʔă.ˈʃɛʀ, respell: ʾa-SHER}
+      modern-israeli: {ipa: ʔa.ˈʃeʁ, respell: a-SHER}
+  - id: gen.1.11.15
+    surface: זַרְעוֹ
+    punct: ־
+    lemma: זֶרַע
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.11/01ewe
+    lexgloss: seed
+    strong: H2233
+    sound:
+      tiberian: {ipa: zaʀ.ʕoː, respell: zar-ʿoh}
+      modern-israeli: {ipa: zaʁ.ʔo, respell: zar-o}
+  - id: gen.1.11.16
+    surface: ב֖וֹ
+    lemma: בְּ
+    morph: ADP
+    tb: Gen.1.11/01SV6
+    lexgloss: in
+    sound:
+      tiberian: {ipa: voː, respell: voh}
+      modern-israeli: {ipa: vo, respell: vo}
+  - id: gen.1.11.17
+    surface: עַל
+    punct: ־
+    lemma: עַל
+    morph: ADP
+    tb: Gen.1.11/01G83
+    lexgloss: above
+    strong: H5921
+    sound:
+      tiberian: {ipa: ʕal, respell: ʿal}
+      modern-israeli: {ipa: ʔal, respell: al}
+  - id: gen.1.11.18
+    surface: הָאָ֑רֶץ
+    lemma: אֶרֶץ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.11/01vzS
+    prefixes:
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: earth
+    strong: H776
+    sound:
+      tiberian: {ipa: hɔː.ˈʔɔː.ʀɛsˁ, respell: haw-ʾAW-reṣ}
+      modern-israeli: {ipa: ha.ˈʔa.ʁets, respell: ha-A-rets}
+  - id: gen.1.11.19
+    surface: וַֽיְהִי
+    punct: ־
+    lemma: הָיָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.11/01Gq9
+    prefixes:
+    - {form: וַֽ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: vaj.hiː, respell: vay-hee}
+      modern-israeli: {ipa: vaj.hi, respell: vay-hee}
+  - id: gen.1.11.20
+    surface: כֵֽן
+    punct: ׃
+    lemma: כֵּן
+    morph: ADV
+    tb: Gen.1.11/013y8
+    lexgloss: set upright
+    strong: H3651
+    sound:
+      tiberian: {ipa: xeːn, respell: khayn}
+      modern-israeli: {ipa: χen, respell: khen}
+- id: gen.1.12
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.12
+  text: וַתּוֹצֵ֨א הָאָ֜רֶץ דֶּ֠שֶׁא עֵ֣שֶׂב מַזְרִ֤יעַ זֶ֨רַע֙ לְמִינֵ֔הוּ וְעֵ֧ץ עֹֽשֶׂה־ פְּרִ֛י אֲשֶׁ֥ר זַרְעוֹ־ ב֖וֹ לְמִינֵ֑הוּ וַיַּ֥רְא אֱלֹהִ֖ים כִּי־ טֽוֹב׃
+  tokens:
+  - id: gen.1.12.1
+    surface: וַתּוֹצֵ֨א
+    lemma: יָצָא
+    morph: VERB|Conj=Wayyiqtol|Gender=Fem|Number=Sing|Person=3|Stem=Hiphil
+    tb: Gen.1.12/01TXw
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: go
+    strong: H3318
+    sound:
+      tiberian: {ipa: vat.toː.ˈsˁeː, respell: vat-toh-ṢAY}
+      modern-israeli: {ipa: va.to.ˈtse, respell: va-to-TSE}
+  - id: gen.1.12.2
+    surface: הָאָ֜רֶץ
+    lemma: אֶרֶץ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.12/01Y4K
+    prefixes:
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: earth
+    strong: H776
+    sound:
+      tiberian: {ipa: hɔː.ˈʔɔː.ʀɛsˁ, respell: haw-ʾAW-reṣ}
+      modern-israeli: {ipa: ha.ˈʔa.ʁets, respell: ha-A-rets}
+  - id: gen.1.12.3
+    surface: דֶּ֠שֶׁא
+    lemma: דֶּשֶׁא
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.12/01C32
+    lexgloss: sprout
+    strong: H1877
+    sound:
+      tiberian: {ipa: dɛ.ˈʃɛː, respell: de-SHEH}
+      modern-israeli: {ipa: de.ˈʃe, respell: de-SHE}
+  - id: gen.1.12.4
+    surface: עֵ֣שֶׂב
+    lemma: עֶשֶׂב
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.12/01aMT
+    lexgloss: grass
+    strong: H6212
+    sound:
+      tiberian: {ipa: ˈʕeː.sɛv, respell: ʿAY-sev}
+      modern-israeli: {ipa: ˈʔe.sev, respell: E-sev}
+  - id: gen.1.12.5
+    surface: מַזְרִ֤יעַ
+    lemma: זָרַע
+    morph: VERB|Conj=PartAct|Gender=Masc|Number=Sing|State=Abs|Stem=Hiphil
+    tb: Gen.1.12/01Cof
+    lexgloss: sow
+    strong: H2232
+    sound:
+      tiberian: {ipa: maz.ˈʀiː.aʕ, respell: maz-REE-aʿ}
+      modern-israeli: {ipa: maz.ˈʁi.aʔ, respell: maz-REE-a}
+  - id: gen.1.12.6
+    surface: זֶ֨רַע֙
+    lemma: זֶרַע
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.12/01YWU
+    lexgloss: seed
+    strong: H2233
+    sound:
+      tiberian: {ipa: ˈzɛ.ʀaʕ, respell: ZE-raʿ}
+      modern-israeli: {ipa: ˈze.ʁaʔ, respell: ZE-ra}
+  - id: gen.1.12.7
+    surface: לְמִינֵ֔הוּ
+    lemma: מִין
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.12/01rAQ
+    prefixes:
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: sort
+    strong: H4327
+    sound:
+      tiberian: {ipa: lă.miː.ˈneː.huː, respell: la-mee-NAY-hoo}
+      modern-israeli: {ipa: le.mi.ˈne.hu, respell: le-mee-NE-hoo}
+  - id: gen.1.12.8
+    surface: וְעֵ֧ץ
+    lemma: עֵץ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.12/01fLi
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    lexgloss: tree
+    strong: H6086
+    sound:
+      tiberian: {ipa: vă.ˈʕeːsˁ, respell: va-ʿAYṢ}
+      modern-israeli: {ipa: ve.ˈʔets, respell: ve-ETS}
+  - id: gen.1.12.9
+    surface: עֹֽשֶׂה
+    punct: ־
+    lemma: עָשָׂה
+    morph: VERB|Conj=PartAct|Gender=Masc|Number=Sing|State=Abs|Stem=Qal
+    tb: Gen.1.12/01Ptj
+    lexgloss: do
+    strong: H6213
+    sound:
+      tiberian: {ipa: ʕoː.sɛː, respell: ʿoh-seh}
+      modern-israeli: {ipa: ʔo.se, respell: o-se}
+  - id: gen.1.12.10
+    surface: פְּרִ֛י
+    lemma: פְּרִי
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.12/01AJj
+    lexgloss: fruit
+    strong: H6529
+    sound:
+      tiberian: {ipa: pă.ˈʀiː, respell: pa-REE}
+      modern-israeli: {ipa: pe.ˈʁi, respell: pe-REE}
+  - id: gen.1.12.11
+    surface: אֲשֶׁ֥ר
+    lemma: אֲשֶׁר
+    morph: PRON|PartType=Rel
+    tb: Gen.1.12/019Hv
+    lexgloss: who
+    strong: H834
+    sound:
+      tiberian: {ipa: ʔă.ˈʃɛʀ, respell: ʾa-SHER}
+      modern-israeli: {ipa: ʔa.ˈʃeʁ, respell: a-SHER}
+  - id: gen.1.12.12
+    surface: זַרְעוֹ
+    punct: ־
+    lemma: זֶרַע
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.12/01j1i
+    lexgloss: seed
+    strong: H2233
+    sound:
+      tiberian: {ipa: zaʀ.ʕoː, respell: zar-ʿoh}
+      modern-israeli: {ipa: zaʁ.ʔo, respell: zar-o}
+  - id: gen.1.12.13
+    surface: ב֖וֹ
+    lemma: בְּ
+    morph: ADP
+    tb: Gen.1.12/01J9J
+    lexgloss: in
+    sound:
+      tiberian: {ipa: voː, respell: voh}
+      modern-israeli: {ipa: vo, respell: vo}
+  - id: gen.1.12.14
+    surface: לְמִינֵ֑הוּ
+    lemma: מִין
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.12/01U4n
+    prefixes:
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: sort
+    strong: H4327
+    sound:
+      tiberian: {ipa: lă.miː.ˈneː.huː, respell: la-mee-NAY-hoo}
+      modern-israeli: {ipa: le.mi.ˈne.hu, respell: le-mee-NE-hoo}
+  - id: gen.1.12.15
+    surface: וַיַּ֥רְא
+    lemma: רָאָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.12/012Kt
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: see
+    strong: H7200
+    sound:
+      tiberian: {ipa: vaj.ˈjaʀ, respell: vay-YAR}
+      modern-israeli: {ipa: va.ˈjaʁ, respell: va-YAR}
+  - id: gen.1.12.16
+    surface: אֱלֹהִ֖ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.12/01RmH
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.12.17
+    surface: כִּי
+    punct: ־
+    lemma: כִּי
+    morph: CCONJ
+    tb: Gen.1.12/01SWL
+    lexgloss: relative conjunction
+    strong: H3588
+    sound:
+      tiberian: {ipa: kiː, respell: kee}
+      modern-israeli: {ipa: ki, respell: kee}
+  - id: gen.1.12.18
+    surface: טֽוֹב
+    punct: ׃
+    lemma: טוֹב
+    morph: ADJ|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.12/0175P
+    lexgloss: good
+    strong: H2896
+    sound:
+      tiberian: {ipa: tˁoːv, respell: ṭohv}
+      modern-israeli: {ipa: tov, respell: tov}
+- id: gen.1.13
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.13
+  text: וַֽיְהִי־ עֶ֥רֶב וַֽיְהִי־ בֹ֖קֶר י֥וֹם שְׁלִישִֽׁי׃פ
+  tokens:
+  - id: gen.1.13.1
+    surface: וַֽיְהִי
+    punct: ־
+    lemma: הָיָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.13/013Lj
+    prefixes:
+    - {form: וַֽ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: vaj.hiː, respell: vay-hee}
+      modern-israeli: {ipa: vaj.hi, respell: vay-hee}
+  - id: gen.1.13.2
+    surface: עֶ֥רֶב
+    lemma: עֶרֶב
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.13/01Qa3
+    lexgloss: dusk
+    strong: H6153
+    sound:
+      tiberian: {ipa: ˈʕɛ.ʀɛv, respell: ʿE-rev}
+      modern-israeli: {ipa: ˈʔe.ʁev, respell: E-rev}
+  - id: gen.1.13.3
+    surface: וַֽיְהִי
+    punct: ־
+    lemma: הָיָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.13/01WTe
+    prefixes:
+    - {form: וַֽ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: vaj.hiː, respell: vay-hee}
+      modern-israeli: {ipa: vaj.hi, respell: vay-hee}
+  - id: gen.1.13.4
+    surface: בֹ֖קֶר
+    lemma: בֹּקֶר
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.13/016VM
+    lexgloss: dawn
+    strong: H1242
+    sound:
+      tiberian: {ipa: ˈvoː.qɛʀ, respell: VOH-qer}
+      modern-israeli: {ipa: ˈvo.keʁ, respell: VO-ker}
+  - id: gen.1.13.5
+    surface: י֥וֹם
+    lemma: יוֹם
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.13/01sKn
+    lexgloss: day
+    strong: H3117
+    sound:
+      tiberian: {ipa: joːm, respell: yohm}
+      modern-israeli: {ipa: jom, respell: yom}
+  - id: gen.1.13.6
+    surface: שְׁלִישִֽׁי
+    punct: ׃פ
+    lemma: שְׁלִישִׁי
+    morph: NUM|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.13/01oAj
+    lexgloss: third
+    strong: H7992
+    sound:
+      tiberian: {ipa: ʃă.liː.ˈʃiː, respell: sha-lee-SHEE}
+      modern-israeli: {ipa: ʃe.li.ˈʃi, respell: she-lee-SHEE}
+- id: gen.1.14
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.14
+  text: וַיֹּ֣אמֶר אֱלֹהִ֗ים יְהִ֤י מְאֹרֹת֙ בִּרְקִ֣יעַ הַשָּׁמַ֔יִם לְהַבְדִּ֕יל בֵּ֥ין הַיּ֖וֹם וּבֵ֣ין הַלָּ֑יְלָה וְהָי֤וּ לְאֹתֹת֙ וּלְמ֣וֹעֲדִ֔ים וּלְיָמִ֖ים וְשָׁנִֽים׃
+  tokens:
+  - id: gen.1.14.1
+    surface: וַיֹּ֣אמֶר
+    lemma: אָמַר
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.14/01AxB
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: say
+    strong: H559
+    sound:
+      tiberian: {ipa: vaj.ˈjoː.mɛʀ, respell: vay-YOH-mer}
+      modern-israeli: {ipa: va.ˈjo.meʁ, respell: va-YO-mer}
+  - id: gen.1.14.2
+    surface: אֱלֹהִ֗ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.14/01Ap3
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.14.3
+    surface: יְהִ֤י
+    lemma: הָיָה
+    morph: VERB|Conj=Jussive|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.14/01CEu
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: jă.ˈhiː, respell: ya-HEE}
+      modern-israeli: {ipa: je.ˈhi, respell: ye-HEE}
+  - id: gen.1.14.4
+    surface: מְאֹרֹת֙
+    lemma: מָאוֹר
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.14/01zpy
+    lexgloss: luminous
+    strong: H3974
+    sound:
+      tiberian: {ipa: mă.ʔoː.ˈʀoːθ, respell: ma-ʾoh-ROHTH}
+      modern-israeli: {ipa: me.ʔo.ˈʁot, respell: me-o-ROT}
+  - id: gen.1.14.5
+    surface: בִּרְקִ֣יעַ
+    lemma: רָקִיעַ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.14/01FiN
+    prefixes:
+    - {form: בִּ, gloss: in, morph: ADP}
+    lexgloss: expanse
+    strong: H7549
+    sound:
+      tiberian: {ipa: biʀ.ˈqiː.aʕ, respell: bir-QEE-aʿ}
+      modern-israeli: {ipa: biʁ.ˈki.aʔ, respell: beer-KEE-a}
+  - id: gen.1.14.6
+    surface: הַשָּׁמַ֔יִם
+    lemma: שָׁמַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.14/01cLk
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: sky
+    strong: H8064
+    sound:
+      tiberian: {ipa: haʃ.ʃɔː.ˈma.jim, respell: hash-shaw-MA-yim}
+      modern-israeli: {ipa: ha.ʃa.ˈma.jim, respell: ha-sha-MA-yeem}
+  - id: gen.1.14.7
+    surface: לְהַבְדִּ֕יל
+    lemma: בָּדַל
+    morph: VERB|Conj=InfCons|Stem=Hiphil
+    tb: Gen.1.14/0192v
+    prefixes:
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: divide
+    strong: H914
+    sound:
+      tiberian: {ipa: lă.hav.ˈdiːl, respell: la-hav-DEEL}
+      modern-israeli: {ipa: le.hav.ˈdil, respell: le-hav-DEEL}
+  - id: gen.1.14.8
+    surface: בֵּ֥ין
+    lemma: בֵּין
+    morph: ADP
+    tb: Gen.1.14/01j63
+    lexgloss: between
+    strong: H996
+    sound:
+      tiberian: {ipa: beːn, respell: bayn}
+      modern-israeli: {ipa: ben, respell: ben}
+  - id: gen.1.14.9
+    surface: הַיּ֖וֹם
+    lemma: יוֹם
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.14/01LFW
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: day
+    strong: H3117
+    sound:
+      tiberian: {ipa: haj.ˈjoːm, respell: hay-YOHM}
+      modern-israeli: {ipa: ha.ˈjom, respell: ha-YOM}
+  - id: gen.1.14.10
+    surface: וּבֵ֣ין
+    lemma: בֵּין
+    morph: ADP
+    tb: Gen.1.14/01FbT
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    lexgloss: between
+    strong: H996
+    sound:
+      tiberian: {ipa: uː.ˈveːn, respell: oo-VAYN}
+      modern-israeli: {ipa: u.ˈven, respell: oo-VEN}
+  - id: gen.1.14.11
+    surface: הַלָּ֑יְלָה
+    lemma: לַיִל
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.14/01Bx7
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: twist
+    strong: H3915
+    sound:
+      tiberian: {ipa: hal.ˈlɔːj.lɔː, respell: hal-LAWY-law}
+      modern-israeli: {ipa: ha.ˈlaj.la, respell: ha-LAY-la}
+  - id: gen.1.14.12
+    surface: וְהָי֤וּ
+    lemma: הָיָה
+    morph: VERB|Conj=Weqatal|Gender=Com|Number=Plur|Person=3|Stem=Qal
+    tb: Gen.1.14/01btu
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: vă.hɔː.ˈjuː, respell: va-haw-YOO}
+      modern-israeli: {ipa: ve.ha.ˈju, respell: ve-ha-YOO}
+  - id: gen.1.14.13
+    surface: לְאֹתֹת֙
+    lemma: אוֹת
+    morph: NOUN|Gender=Both|Number=Plur|State=Abs
+    tb: Gen.1.14/01rTK
+    prefixes:
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: signal
+    strong: H226
+    sound:
+      tiberian: {ipa: lă.ʔoː.ˈθoːθ, respell: la-ʾoh-THOHTH}
+      modern-israeli: {ipa: le.ʔo.ˈtot, respell: le-o-TOT}
+  - id: gen.1.14.14
+    surface: וּלְמ֣וֹעֲדִ֔ים
+    lemma: מוֹעֵד
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.14/01SHw
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: appointment
+    strong: H4150
+    sound:
+      tiberian: {ipa: uːl.moː.ʕă.ˈðiːm, respell: ool-moh-ʿa-DHEEM}
+      modern-israeli: {ipa: ul.mo.ʔa.ˈdim, respell: ool-mo-a-DEEM}
+  - id: gen.1.14.15
+    surface: וּלְיָמִ֖ים
+    lemma: יוֹם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.14/01VuH
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: day
+    strong: H3117
+    sound:
+      tiberian: {ipa: uːl.jɔː.ˈmiːm, respell: ool-yaw-MEEM}
+      modern-israeli: {ipa: ul.ja.ˈmim, respell: ool-ya-MEEM}
+  - id: gen.1.14.16
+    surface: וְשָׁנִֽים
+    punct: ׃
+    lemma: שָׁנֶה
+    morph: NOUN|Gender=Fem|Number=Plur|State=Abs
+    tb: Gen.1.14/01Axb
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    lexgloss: year
+    strong: H8141
+    sound:
+      tiberian: {ipa: vă.ʃɔː.ˈniːm, respell: va-shaw-NEEM}
+      modern-israeli: {ipa: ve.ʃa.ˈnim, respell: ve-sha-NEEM}
+- id: gen.1.15
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.15
+  text: וְהָי֤וּ לִמְאוֹרֹת֙ בִּרְקִ֣יעַ הַשָּׁמַ֔יִם לְהָאִ֖יר עַל־ הָאָ֑רֶץ וַֽיְהִי־ כֵֽן׃
+  tokens:
+  - id: gen.1.15.1
+    surface: וְהָי֤וּ
+    lemma: הָיָה
+    morph: VERB|Conj=Weqatal|Gender=Com|Number=Plur|Person=3|Stem=Qal
+    tb: Gen.1.15/01xva
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: vă.hɔː.ˈjuː, respell: va-haw-YOO}
+      modern-israeli: {ipa: ve.ha.ˈju, respell: ve-ha-YOO}
+  - id: gen.1.15.2
+    surface: לִמְאוֹרֹת֙
+    lemma: מָאוֹר
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.15/01NrT
+    prefixes:
+    - {form: לִ, gloss: to, morph: ADP}
+    lexgloss: luminous
+    strong: H3974
+    sound:
+      tiberian: {ipa: lim.ʔoː.ˈʀoːθ, respell: lim-ʾoh-ROHTH}
+      modern-israeli: {ipa: lim.ʔo.ˈʁot, respell: leem-o-ROT}
+  - id: gen.1.15.3
+    surface: בִּרְקִ֣יעַ
+    lemma: רָקִיעַ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.15/01iAD
+    prefixes:
+    - {form: בִּ, gloss: in, morph: ADP}
+    lexgloss: expanse
+    strong: H7549
+    sound:
+      tiberian: {ipa: biʀ.ˈqiː.aʕ, respell: bir-QEE-aʿ}
+      modern-israeli: {ipa: biʁ.ˈki.aʔ, respell: beer-KEE-a}
+  - id: gen.1.15.4
+    surface: הַשָּׁמַ֔יִם
+    lemma: שָׁמַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.15/01372
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: sky
+    strong: H8064
+    sound:
+      tiberian: {ipa: haʃ.ʃɔː.ˈma.jim, respell: hash-shaw-MA-yim}
+      modern-israeli: {ipa: ha.ʃa.ˈma.jim, respell: ha-sha-MA-yeem}
+  - id: gen.1.15.5
+    surface: לְהָאִ֖יר
+    lemma: אוֹר
+    morph: VERB|Conj=InfCons|Stem=Hiphil
+    tb: Gen.1.15/01FMU
+    prefixes:
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: be
+    strong: H215
+    sound:
+      tiberian: {ipa: lă.hɔː.ˈʔiːʀ, respell: la-haw-ʾEER}
+      modern-israeli: {ipa: le.ha.ˈʔiʁ, respell: le-ha-EER}
+  - id: gen.1.15.6
+    surface: עַל
+    punct: ־
+    lemma: עַל
+    morph: ADP
+    tb: Gen.1.15/01SaV
+    lexgloss: above
+    strong: H5921
+    sound:
+      tiberian: {ipa: ʕal, respell: ʿal}
+      modern-israeli: {ipa: ʔal, respell: al}
+  - id: gen.1.15.7
+    surface: הָאָ֑רֶץ
+    lemma: אֶרֶץ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.15/014W9
+    prefixes:
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: earth
+    strong: H776
+    sound:
+      tiberian: {ipa: hɔː.ˈʔɔː.ʀɛsˁ, respell: haw-ʾAW-reṣ}
+      modern-israeli: {ipa: ha.ˈʔa.ʁets, respell: ha-A-rets}
+  - id: gen.1.15.8
+    surface: וַֽיְהִי
+    punct: ־
+    lemma: הָיָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.15/01MmM
+    prefixes:
+    - {form: וַֽ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: vaj.hiː, respell: vay-hee}
+      modern-israeli: {ipa: vaj.hi, respell: vay-hee}
+  - id: gen.1.15.9
+    surface: כֵֽן
+    punct: ׃
+    lemma: כֵּן
+    morph: ADV
+    tb: Gen.1.15/01wJn
+    lexgloss: set upright
+    strong: H3651
+    sound:
+      tiberian: {ipa: xeːn, respell: khayn}
+      modern-israeli: {ipa: χen, respell: khen}
+- id: gen.1.16
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.16
+  text: וַיַּ֣עַשׂ אֱלֹהִ֔ים אֶת־ שְׁנֵ֥י הַמְּאֹרֹ֖ת הַגְּדֹלִ֑ים אֶת־ הַמָּא֤וֹר הַגָּדֹל֙ לְמֶמְשֶׁ֣לֶת הַיּ֔וֹם וְאֶת־ הַמָּא֤וֹר הַקָּטֹן֙ לְמֶמְשֶׁ֣לֶת הַלַּ֔יְלָה וְאֵ֖ת הַכּוֹכָבִֽים׃
+  tokens:
+  - id: gen.1.16.1
+    surface: וַיַּ֣עַשׂ
+    lemma: עָשָׂה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.16/01CQo
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: do
+    strong: H6213
+    sound:
+      tiberian: {ipa: vaj.ˈja.ʕas, respell: vay-YA-ʿas}
+      modern-israeli: {ipa: va.ˈja.ʔas, respell: va-YA-as}
+  - id: gen.1.16.2
+    surface: אֱלֹהִ֔ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.16/01XyU
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.16.3
+    surface: אֶת
+    punct: ־
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.16/01BG4
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: ʔɛθ, respell: ʾeth}
+      modern-israeli: {ipa: ʔet, respell: et}
+  - id: gen.1.16.4
+    surface: שְׁנֵ֥י
+    lemma: שְׁנַיִם
+    morph: NUM|Gender=Masc|Number=Dual|State=Cons
+    tb: Gen.1.16/01YHH
+    lexgloss: two
+    strong: H8147
+    sound:
+      tiberian: {ipa: ʃă.ˈneː, respell: sha-NAY}
+      modern-israeli: {ipa: ʃe.ˈne, respell: she-NE}
+  - id: gen.1.16.5
+    surface: הַמְּאֹרֹ֖ת
+    lemma: מָאוֹר
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.16/01sHf
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: luminous
+    strong: H3974
+    sound:
+      tiberian: {ipa: ham.mă.ʔoː.ˈʀoːθ, respell: ham-ma-ʾoh-ROHTH}
+      modern-israeli: {ipa: ha.me.ʔo.ˈʁot, respell: ha-me-o-ROT}
+  - id: gen.1.16.6
+    surface: הַגְּדֹלִ֑ים
+    lemma: גָּדוֹל
+    morph: ADJ|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.16/01iee
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: great
+    strong: H1419
+    sound:
+      tiberian: {ipa: haɡ.ɡă.ðoː.ˈliːm, respell: hag-ga-dhoh-LEEM}
+      modern-israeli: {ipa: ha.ɡe.do.ˈlim, respell: ha-ge-do-LEEM}
+  - id: gen.1.16.7
+    surface: אֶת
+    punct: ־
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.16/013eS
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: ʔɛθ, respell: ʾeth}
+      modern-israeli: {ipa: ʔet, respell: et}
+  - id: gen.1.16.8
+    surface: הַמָּא֤וֹר
+    lemma: מָאוֹר
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.16/01ddd
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: luminous
+    strong: H3974
+    sound:
+      tiberian: {ipa: ham.mɔː.ˈʔoːʀ, respell: ham-maw-ʾOHR}
+      modern-israeli: {ipa: ha.ma.ˈʔoʁ, respell: ha-ma-OR}
+  - id: gen.1.16.9
+    surface: הַגָּדֹל֙
+    lemma: גָּדוֹל
+    morph: ADJ|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.16/01hxo
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: great
+    strong: H1419
+    sound:
+      tiberian: {ipa: haɡ.ɡɔː.ˈðoːl, respell: hag-gaw-DHOHL}
+      modern-israeli: {ipa: ha.ɡa.ˈdol, respell: ha-ga-DOL}
+  - id: gen.1.16.10
+    surface: לְמֶמְשֶׁ֣לֶת
+    lemma: מֶמְשָׁלָה
+    morph: NOUN|Gender=Both|Number=Sing|State=Cons
+    tb: Gen.1.16/01TW6
+    prefixes:
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: rule
+    strong: H4475
+    sound:
+      tiberian: {ipa: lă.mɛm.ˈʃɛ.lɛθ, respell: la-mem-SHE-leth}
+      modern-israeli: {ipa: le.mem.ˈʃe.let, respell: le-mem-SHE-let}
+  - id: gen.1.16.11
+    surface: הַיּ֔וֹם
+    lemma: יוֹם
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.16/01PVx
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: day
+    strong: H3117
+    sound:
+      tiberian: {ipa: haj.ˈjoːm, respell: hay-YOHM}
+      modern-israeli: {ipa: ha.ˈjom, respell: ha-YOM}
+  - id: gen.1.16.12
+    surface: וְאֶת
+    punct: ־
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.16/01PGK
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: vă.ʔɛθ, respell: va-ʾeth}
+      modern-israeli: {ipa: ve.ʔet, respell: ve-et}
+  - id: gen.1.16.13
+    surface: הַמָּא֤וֹר
+    lemma: מָאוֹר
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.16/01U4a
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: luminous
+    strong: H3974
+    sound:
+      tiberian: {ipa: ham.mɔː.ˈʔoːʀ, respell: ham-maw-ʾOHR}
+      modern-israeli: {ipa: ha.ma.ˈʔoʁ, respell: ha-ma-OR}
+  - id: gen.1.16.14
+    surface: הַקָּטֹן֙
+    lemma: קָטָן
+    morph: ADJ|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.16/01dSQ
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: abbreviated
+    strong: H6996
+    sound:
+      tiberian: {ipa: haq.qɔː.ˈtˁoːn, respell: haq-qaw-ṬOHN}
+      modern-israeli: {ipa: ha.ka.ˈton, respell: ha-ka-TON}
+  - id: gen.1.16.15
+    surface: לְמֶמְשֶׁ֣לֶת
+    lemma: מֶמְשָׁלָה
+    morph: NOUN|Gender=Both|Number=Sing|State=Cons
+    tb: Gen.1.16/01Qbs
+    prefixes:
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: rule
+    strong: H4475
+    sound:
+      tiberian: {ipa: lă.mɛm.ˈʃɛ.lɛθ, respell: la-mem-SHE-leth}
+      modern-israeli: {ipa: le.mem.ˈʃe.let, respell: le-mem-SHE-let}
+  - id: gen.1.16.16
+    surface: הַלַּ֔יְלָה
+    lemma: לַיִל
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.16/01ndZ
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: twist
+    strong: H3915
+    sound:
+      tiberian: {ipa: hal.ˈlaj.lɔː, respell: hal-LAY-law}
+      modern-israeli: {ipa: ha.ˈlaj.la, respell: ha-LAY-la}
+  - id: gen.1.16.17
+    surface: וְאֵ֖ת
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.16/01Xa1
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: vă.ˈʔeːθ, respell: va-ʾAYTH}
+      modern-israeli: {ipa: ve.ˈʔet, respell: ve-ET}
+  - id: gen.1.16.18
+    surface: הַכּוֹכָבִֽים
+    punct: ׃
+    lemma: כּוֹכָב
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.16/013yJ
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: star
+    strong: H3556
+    sound:
+      tiberian: {ipa: hak.koː.xɔː.ˈviːm, respell: hak-koh-khaw-VEEM}
+      modern-israeli: {ipa: ha.ko.χa.ˈvim, respell: ha-ko-kha-VEEM}
+- id: gen.1.17
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.17
+  text: וַיִּתֵּ֥ן אֹתָ֛ם אֱלֹהִ֖ים בִּרְקִ֣יעַ הַשָּׁמָ֑יִם לְהָאִ֖יר עַל־ הָאָֽרֶץ׃
+  tokens:
+  - id: gen.1.17.1
+    surface: וַיִּתֵּ֥ן
+    lemma: נָתַן
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.17/01B6c
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: give
+    strong: H5414
+    sound:
+      tiberian: {ipa: vaj.jit.ˈteːn, respell: vay-yit-TAYN}
+      modern-israeli: {ipa: va.ji.ˈten, respell: va-yee-TEN}
+  - id: gen.1.17.2
+    surface: אֹתָ֛ם
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.17/01bju
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: ʔoː.ˈθɔːm, respell: ʾoh-THAWM}
+      modern-israeli: {ipa: ʔo.ˈtam, respell: o-TAM}
+  - id: gen.1.17.3
+    surface: אֱלֹהִ֖ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.17/01cn3
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.17.4
+    surface: בִּרְקִ֣יעַ
+    lemma: רָקִיעַ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.17/017mS
+    prefixes:
+    - {form: בִּ, gloss: in, morph: ADP}
+    lexgloss: expanse
+    strong: H7549
+    sound:
+      tiberian: {ipa: biʀ.ˈqiː.aʕ, respell: bir-QEE-aʿ}
+      modern-israeli: {ipa: biʁ.ˈki.aʔ, respell: beer-KEE-a}
+  - id: gen.1.17.5
+    surface: הַשָּׁמָ֑יִם
+    lemma: שָׁמַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.17/01dJe
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: sky
+    strong: H8064
+    sound:
+      tiberian: {ipa: haʃ.ʃɔː.ˈmɔː.jim, respell: hash-shaw-MAW-yim}
+      modern-israeli: {ipa: ha.ʃa.ˈma.jim, respell: ha-sha-MA-yeem}
+  - id: gen.1.17.6
+    surface: לְהָאִ֖יר
+    lemma: אוֹר
+    morph: VERB|Conj=InfCons|Stem=Hiphil
+    tb: Gen.1.17/01WvG
+    prefixes:
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: be
+    strong: H215
+    sound:
+      tiberian: {ipa: lă.hɔː.ˈʔiːʀ, respell: la-haw-ʾEER}
+      modern-israeli: {ipa: le.ha.ˈʔiʁ, respell: le-ha-EER}
+  - id: gen.1.17.7
+    surface: עַל
+    punct: ־
+    lemma: עַל
+    morph: ADP
+    tb: Gen.1.17/01RXg
+    lexgloss: above
+    strong: H5921
+    sound:
+      tiberian: {ipa: ʕal, respell: ʿal}
+      modern-israeli: {ipa: ʔal, respell: al}
+  - id: gen.1.17.8
+    surface: הָאָֽרֶץ
+    punct: ׃
+    lemma: אֶרֶץ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.17/01pqY
+    prefixes:
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: earth
+    strong: H776
+    sound:
+      tiberian: {ipa: hɔː.ˈʔɔː.ʀɛsˁ, respell: haw-ʾAW-reṣ}
+      modern-israeli: {ipa: ha.ˈʔa.ʁets, respell: ha-A-rets}
+- id: gen.1.18
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.18
+  text: וְלִמְשֹׁל֙ בַּיּ֣וֹם וּבַלַּ֔יְלָה וּֽלֲהַבְדִּ֔יל בֵּ֥ין הָא֖וֹר וּבֵ֣ין הַחֹ֑שֶׁךְ וַיַּ֥רְא אֱלֹהִ֖ים כִּי־ טֽוֹב׃
+  tokens:
+  - id: gen.1.18.1
+    surface: וְלִמְשֹׁל֙
+    lemma: מָשַׁל
+    morph: VERB|Conj=InfCons|Stem=Qal
+    tb: Gen.1.18/01n9v
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    - {form: לִ, gloss: to, morph: ADP}
+    lexgloss: rule
+    strong: H4910
+    sound:
+      tiberian: {ipa: vă.lim.ˈʃoːl, respell: va-lim-SHOHL}
+      modern-israeli: {ipa: ve.lim.ˈʃol, respell: ve-leem-SHOL}
+  - id: gen.1.18.2
+    surface: בַּיּ֣וֹם
+    lemma: יוֹם
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.18/01gYe
+    prefixes:
+    - {form: בַּ, gloss: in, morph: ADP}
+    lexgloss: day
+    strong: H3117
+    sound:
+      tiberian: {ipa: baj.ˈjoːm, respell: bay-YOHM}
+      modern-israeli: {ipa: ba.ˈjom, respell: ba-YOM}
+  - id: gen.1.18.3
+    surface: וּבַלַּ֔יְלָה
+    lemma: לַיִל
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.18/01eXj
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    - {form: בַ, gloss: in, morph: ADP}
+    lexgloss: twist
+    strong: H3915
+    sound:
+      tiberian: {ipa: uː.val.ˈlaj.lɔː, respell: oo-val-LAY-law}
+      modern-israeli: {ipa: u.va.ˈlaj.la, respell: oo-va-LAY-la}
+  - id: gen.1.18.4
+    surface: וּֽלֲהַבְדִּ֔יל
+    lemma: בָּדַל
+    morph: VERB|Conj=InfCons|Stem=Hiphil
+    tb: Gen.1.18/018ro
+    prefixes:
+    - {form: וּֽ, gloss: and, morph: CCONJ}
+    - {form: לֲ, gloss: to, morph: ADP}
+    lexgloss: divide
+    strong: H914
+    sound:
+      tiberian: {ipa: uː.lă.hav.ˈdiːl, respell: oo-la-hav-DEEL}
+      modern-israeli: {ipa: u.la.hav.ˈdil, respell: oo-la-hav-DEEL}
+  - id: gen.1.18.5
+    surface: בֵּ֥ין
+    lemma: בֵּין
+    morph: ADP
+    tb: Gen.1.18/01v5z
+    lexgloss: between
+    strong: H996
+    sound:
+      tiberian: {ipa: beːn, respell: bayn}
+      modern-israeli: {ipa: ben, respell: ben}
+  - id: gen.1.18.6
+    surface: הָא֖וֹר
+    lemma: אוֹר
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.18/01bCC
+    prefixes:
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: illumination
+    strong: H216
+    sound:
+      tiberian: {ipa: hɔː.ˈʔoːʀ, respell: haw-ʾOHR}
+      modern-israeli: {ipa: ha.ˈʔoʁ, respell: ha-OR}
+  - id: gen.1.18.7
+    surface: וּבֵ֣ין
+    lemma: בֵּין
+    morph: ADP
+    tb: Gen.1.18/016By
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    lexgloss: between
+    strong: H996
+    sound:
+      tiberian: {ipa: uː.ˈveːn, respell: oo-VAYN}
+      modern-israeli: {ipa: u.ˈven, respell: oo-VEN}
+  - id: gen.1.18.8
+    surface: הַחֹ֑שֶׁךְ
+    lemma: חֹשֶׁךְ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.18/01CZB
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: dark
+    strong: H2822
+    sound:
+      tiberian: {ipa: ha.ˈħoː.ʃɛx, respell: ha-ḤOH-shekh}
+      modern-israeli: {ipa: ha.ˈχo.ʃeχ, respell: ha-KHO-shekh}
+  - id: gen.1.18.9
+    surface: וַיַּ֥רְא
+    lemma: רָאָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.18/01VTb
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: see
+    strong: H7200
+    sound:
+      tiberian: {ipa: vaj.ˈjaʀ, respell: vay-YAR}
+      modern-israeli: {ipa: va.ˈjaʁ, respell: va-YAR}
+  - id: gen.1.18.10
+    surface: אֱלֹהִ֖ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.18/016qf
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.18.11
+    surface: כִּי
+    punct: ־
+    lemma: כִּי
+    morph: CCONJ
+    tb: Gen.1.18/01efz
+    lexgloss: relative conjunction
+    strong: H3588
+    sound:
+      tiberian: {ipa: kiː, respell: kee}
+      modern-israeli: {ipa: ki, respell: kee}
+  - id: gen.1.18.12
+    surface: טֽוֹב
+    punct: ׃
+    lemma: טוֹב
+    morph: ADJ|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.18/01QG5
+    lexgloss: good
+    strong: H2896
+    sound:
+      tiberian: {ipa: tˁoːv, respell: ṭohv}
+      modern-israeli: {ipa: tov, respell: tov}
+- id: gen.1.19
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.19
+  text: וַֽיְהִי־ עֶ֥רֶב וַֽיְהִי־ בֹ֖קֶר י֥וֹם רְבִיעִֽי׃פ
+  tokens:
+  - id: gen.1.19.1
+    surface: וַֽיְהִי
+    punct: ־
+    lemma: הָיָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.19/013k3
+    prefixes:
+    - {form: וַֽ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: vaj.hiː, respell: vay-hee}
+      modern-israeli: {ipa: vaj.hi, respell: vay-hee}
+  - id: gen.1.19.2
+    surface: עֶ֥רֶב
+    lemma: עֶרֶב
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.19/011rL
+    lexgloss: dusk
+    strong: H6153
+    sound:
+      tiberian: {ipa: ˈʕɛ.ʀɛv, respell: ʿE-rev}
+      modern-israeli: {ipa: ˈʔe.ʁev, respell: E-rev}
+  - id: gen.1.19.3
+    surface: וַֽיְהִי
+    punct: ־
+    lemma: הָיָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.19/01W2c
+    prefixes:
+    - {form: וַֽ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: vaj.hiː, respell: vay-hee}
+      modern-israeli: {ipa: vaj.hi, respell: vay-hee}
+  - id: gen.1.19.4
+    surface: בֹ֖קֶר
+    lemma: בֹּקֶר
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.19/01mL3
+    lexgloss: dawn
+    strong: H1242
+    sound:
+      tiberian: {ipa: ˈvoː.qɛʀ, respell: VOH-qer}
+      modern-israeli: {ipa: ˈvo.keʁ, respell: VO-ker}
+  - id: gen.1.19.5
+    surface: י֥וֹם
+    lemma: יוֹם
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.19/01zfc
+    lexgloss: day
+    strong: H3117
+    sound:
+      tiberian: {ipa: joːm, respell: yohm}
+      modern-israeli: {ipa: jom, respell: yom}
+  - id: gen.1.19.6
+    surface: רְבִיעִֽי
+    punct: ׃פ
+    lemma: רְבִיעִי
+    morph: NUM|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.19/01sYp
+    lexgloss: fourth
+    strong: H7243
+    sound:
+      tiberian: {ipa: ʀă.viː.ˈʕiː, respell: ra-vee-ʿEE}
+      modern-israeli: {ipa: ʁe.vi.ˈʔi, respell: re-vee-EE}
+- id: gen.1.20
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.20
+  text: וַיֹּ֣אמֶר אֱלֹהִ֔ים יִשְׁרְצ֣וּ הַמַּ֔יִם שֶׁ֖רֶץ נֶ֣פֶשׁ חַיָּ֑ה וְעוֹף֙ יְעוֹפֵ֣ף עַל־ הָאָ֔רֶץ עַל־ פְּנֵ֖י רְקִ֥יעַ הַשָּׁמָֽיִם׃
+  tokens:
+  - id: gen.1.20.1
+    surface: וַיֹּ֣אמֶר
+    lemma: אָמַר
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.20/01GvF
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: say
+    strong: H559
+    sound:
+      tiberian: {ipa: vaj.ˈjoː.mɛʀ, respell: vay-YOH-mer}
+      modern-israeli: {ipa: va.ˈjo.meʁ, respell: va-YO-mer}
+  - id: gen.1.20.2
+    surface: אֱלֹהִ֔ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.20/01dAC
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.20.3
+    surface: יִשְׁרְצ֣וּ
+    lemma: שָׁרַץ
+    morph: VERB|Conj=Yiqtol|Gender=Masc|Number=Plur|Person=3|Stem=Qal
+    tb: Gen.1.20/01i4W
+    lexgloss: wriggle
+    strong: H8317
+    sound:
+      tiberian: {ipa: jiʃ.ʀă.ˈsˁuː, respell: yish-ra-ṢOO}
+      modern-israeli: {ipa: jiʃ.ʁe.ˈtsu, respell: yeesh-re-TSOO}
+  - id: gen.1.20.4
+    surface: הַמַּ֔יִם
+    lemma: מַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.20/01chR
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: water
+    strong: H4325
+    sound:
+      tiberian: {ipa: ham.ˈma.jim, respell: ham-MA-yim}
+      modern-israeli: {ipa: ha.ˈma.jim, respell: ha-MA-yeem}
+  - id: gen.1.20.5
+    surface: שֶׁ֖רֶץ
+    lemma: שֶׁרֶץ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.20/01Ddq
+    lexgloss: swarm
+    strong: H8318
+    sound:
+      tiberian: {ipa: ˈʃɛ.ʀɛsˁ, respell: SHE-reṣ}
+      modern-israeli: {ipa: ˈʃe.ʁets, respell: SHE-rets}
+  - id: gen.1.20.6
+    surface: נֶ֣פֶשׁ
+    lemma: נֶפֶשׁ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.20/01dSp
+    lexgloss: breathing creature
+    strong: H5315
+    sound:
+      tiberian: {ipa: ˈnɛ.fɛʃ, respell: NE-fesh}
+      modern-israeli: {ipa: ˈne.feʃ, respell: NE-fesh}
+  - id: gen.1.20.7
+    surface: חַיָּ֑ה
+    lemma: חַי
+    morph: ADJ|Gender=Fem|Number=Sing|State=Abs
+    tb: Gen.1.20/01ecS
+    lexgloss: alive
+    strong: H2416
+    sound:
+      tiberian: {ipa: ħaj.ˈjɔː, respell: ḥay-YAW}
+      modern-israeli: {ipa: χa.ˈja, respell: kha-YA}
+  - id: gen.1.20.8
+    surface: וְעוֹף֙
+    lemma: עוֹף
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.20/012tG
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    lexgloss: bird
+    strong: H5775
+    sound:
+      tiberian: {ipa: vă.ˈʕoːf, respell: va-ʿOHF}
+      modern-israeli: {ipa: ve.ˈʔof, respell: ve-OF}
+  - id: gen.1.20.9
+    surface: יְעוֹפֵ֣ף
+    lemma: עוּף
+    morph: VERB|Conj=Yiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Polel
+    tb: Gen.1.20/01Xzm
+    lexgloss: fly
+    strong: H5774
+    sound:
+      tiberian: {ipa: jă.ʕoː.ˈfeːf, respell: ya-ʿoh-FAYF}
+      modern-israeli: {ipa: je.ʔo.ˈfef, respell: ye-o-FEF}
+  - id: gen.1.20.10
+    surface: עַל
+    punct: ־
+    lemma: עַל
+    morph: ADP
+    tb: Gen.1.20/01CCj
+    lexgloss: above
+    strong: H5921
+    sound:
+      tiberian: {ipa: ʕal, respell: ʿal}
+      modern-israeli: {ipa: ʔal, respell: al}
+  - id: gen.1.20.11
+    surface: הָאָ֔רֶץ
+    lemma: אֶרֶץ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.20/01gV8
+    prefixes:
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: earth
+    strong: H776
+    sound:
+      tiberian: {ipa: hɔː.ˈʔɔː.ʀɛsˁ, respell: haw-ʾAW-reṣ}
+      modern-israeli: {ipa: ha.ˈʔa.ʁets, respell: ha-A-rets}
+  - id: gen.1.20.12
+    surface: עַל
+    punct: ־
+    lemma: עַל
+    morph: ADP
+    tb: Gen.1.20/01Czz
+    lexgloss: above
+    strong: H5921
+    sound:
+      tiberian: {ipa: ʕal, respell: ʿal}
+      modern-israeli: {ipa: ʔal, respell: al}
+  - id: gen.1.20.13
+    surface: פְּנֵ֖י
+    lemma: פָּנִים
+    morph: NOUN|Gender=Both|Number=Plur|State=Cons
+    tb: Gen.1.20/01uXX
+    lexgloss: face
+    strong: H6440
+    sound:
+      tiberian: {ipa: pă.ˈneː, respell: pa-NAY}
+      modern-israeli: {ipa: pe.ˈne, respell: pe-NE}
+  - id: gen.1.20.14
+    surface: רְקִ֥יעַ
+    lemma: רָקִיעַ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.20/01xCL
+    lexgloss: expanse
+    strong: H7549
+    sound:
+      tiberian: {ipa: ʀă.ˈqiː.aʕ, respell: ra-QEE-aʿ}
+      modern-israeli: {ipa: ʁe.ˈki.aʔ, respell: re-KEE-a}
+  - id: gen.1.20.15
+    surface: הַשָּׁמָֽיִם
+    punct: ׃
+    lemma: שָׁמַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.20/01Qnr
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: sky
+    strong: H8064
+    sound:
+      tiberian: {ipa: haʃ.ʃɔː.ˈmɔː.jim, respell: hash-shaw-MAW-yim}
+      modern-israeli: {ipa: ha.ʃa.ˈma.jim, respell: ha-sha-MA-yeem}
+- id: gen.1.21
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.21
+  text: וַיִּבְרָ֣א אֱלֹהִ֔ים אֶת־ הַתַּנִּינִ֖ם הַגְּדֹלִ֑ים וְאֵ֣ת כָּל־ נֶ֣פֶשׁ הַֽחַיָּ֣ה׀ הָֽרֹמֶ֡שֶׂת אֲשֶׁר֩ שָׁרְצ֨וּ הַמַּ֜יִם לְמִֽינֵהֶ֗ם וְאֵ֨ת כָּל־ ע֤וֹף כָּנָף֙ לְמִינֵ֔הוּ וַיַּ֥רְא אֱלֹהִ֖ים
+    כִּי־ טֽוֹב׃
+  tokens:
+  - id: gen.1.21.1
+    surface: וַיִּבְרָ֣א
+    lemma: בָּרָא
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.21/016kU
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: create
+    strong: H1254
+    sound:
+      tiberian: {ipa: vaj.jiv.ˈʀɔː, respell: vay-yiv-RAW}
+      modern-israeli: {ipa: va.jiv.ˈʁa, respell: va-yeev-RA}
+  - id: gen.1.21.2
+    surface: אֱלֹהִ֔ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.21/01qry
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.21.3
+    surface: אֶת
+    punct: ־
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.21/01bvP
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: ʔɛθ, respell: ʾeth}
+      modern-israeli: {ipa: ʔet, respell: et}
+  - id: gen.1.21.4
+    surface: הַתַּנִּינִ֖ם
+    lemma: תַּנִּין
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.21/01wjj
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: monster
+    strong: H8577
+    sound:
+      tiberian: {ipa: hat.tan.niː.ˈnim, respell: hat-tan-nee-NIM}
+      modern-israeli: {ipa: ha.ta.ni.ˈnim, respell: ha-ta-nee-NEEM}
+  - id: gen.1.21.5
+    surface: הַגְּדֹלִ֑ים
+    lemma: גָּדוֹל
+    morph: ADJ|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.21/01Tn7
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: great
+    strong: H1419
+    sound:
+      tiberian: {ipa: haɡ.ɡă.ðoː.ˈliːm, respell: hag-ga-dhoh-LEEM}
+      modern-israeli: {ipa: ha.ɡe.do.ˈlim, respell: ha-ge-do-LEEM}
+  - id: gen.1.21.6
+    surface: וְאֵ֣ת
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.21/01hEs
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: vă.ˈʔeːθ, respell: va-ʾAYTH}
+      modern-israeli: {ipa: ve.ˈʔet, respell: ve-ET}
+  - id: gen.1.21.7
+    surface: כָּל
+    punct: ־
+    lemma: כֹּל
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.21/01xAF
+    lexgloss: whole
+    strong: H3605
+    sound:
+      tiberian: {ipa: kɔːl, respell: kawl}
+      modern-israeli: {ipa: kal, respell: kal}
+  - id: gen.1.21.8
+    surface: נֶ֣פֶשׁ
+    lemma: נֶפֶשׁ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.21/01qg1
+    lexgloss: breathing creature
+    strong: H5315
+    sound:
+      tiberian: {ipa: ˈnɛ.fɛʃ, respell: NE-fesh}
+      modern-israeli: {ipa: ˈne.feʃ, respell: NE-fesh}
+  - id: gen.1.21.9
+    surface: הַֽחַיָּ֣ה
+    punct: ׀
+    lemma: חַי
+    morph: ADJ|Gender=Fem|Number=Sing|State=Abs
+    tb: Gen.1.21/016w9
+    prefixes:
+    - {form: הַֽ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: alive
+    strong: H2416
+    sound:
+      tiberian: {ipa: ha.ħaj.ˈjɔː, respell: ha-ḥay-YAW}
+      modern-israeli: {ipa: ha.χa.ˈja, respell: ha-kha-YA}
+  - id: gen.1.21.10
+    surface: הָֽרֹמֶ֡שֶׂת
+    lemma: רָמַשׂ
+    morph: VERB|Conj=PartAct|Gender=Fem|Number=Sing|State=Abs|Stem=Qal
+    tb: Gen.1.21/01wA4
+    prefixes:
+    - {form: הָֽ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: glide swiftly
+    strong: H7430
+    sound:
+      tiberian: {ipa: hɔː.ʀoː.mɛ.ˈsɛθ, respell: haw-roh-me-SETH}
+      modern-israeli: {ipa: ha.ʁo.me.ˈset, respell: ha-ro-me-SET}
+  - id: gen.1.21.11
+    surface: אֲשֶׁר֩
+    lemma: אֲשֶׁר
+    morph: PRON|PartType=Rel
+    tb: Gen.1.21/01ibe
+    lexgloss: who
+    strong: H834
+    sound:
+      tiberian: {ipa: ʔă.ˈʃɛʀ, respell: ʾa-SHER}
+      modern-israeli: {ipa: ʔa.ˈʃeʁ, respell: a-SHER}
+  - id: gen.1.21.12
+    surface: שָׁרְצ֨וּ
+    lemma: שָׁרַץ
+    morph: VERB|Conj=Qatal|Gender=Com|Number=Plur|Person=3|Stem=Qal
+    tb: Gen.1.21/01v8V
+    lexgloss: wriggle
+    strong: H8317
+    sound:
+      tiberian: {ipa: ʃɔːʀ.ˈsˁuː, respell: shawr-ṢOO}
+      modern-israeli: {ipa: ʃaʁ.ˈtsu, respell: shar-TSOO}
+  - id: gen.1.21.13
+    surface: הַמַּ֜יִם
+    lemma: מַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.21/01T2S
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: water
+    strong: H4325
+    sound:
+      tiberian: {ipa: ham.ˈma.jim, respell: ham-MA-yim}
+      modern-israeli: {ipa: ha.ˈma.jim, respell: ha-MA-yeem}
+  - id: gen.1.21.14
+    surface: לְמִֽינֵהֶ֗ם
+    lemma: מִין
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.21/01tkJ
+    prefixes:
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: sort
+    strong: H4327
+    sound:
+      tiberian: {ipa: lă.miː.neː.ˈhɛm, respell: la-mee-nay-HEM}
+      modern-israeli: {ipa: le.mi.ne.ˈhem, respell: le-mee-ne-HEM}
+  - id: gen.1.21.15
+    surface: וְאֵ֨ת
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.21/01EXL
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: vă.ˈʔeːθ, respell: va-ʾAYTH}
+      modern-israeli: {ipa: ve.ˈʔet, respell: ve-ET}
+  - id: gen.1.21.16
+    surface: כָּל
+    punct: ־
+    lemma: כֹּל
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.21/01ZPN
+    lexgloss: whole
+    strong: H3605
+    sound:
+      tiberian: {ipa: kɔːl, respell: kawl}
+      modern-israeli: {ipa: kal, respell: kal}
+  - id: gen.1.21.17
+    surface: ע֤וֹף
+    lemma: עוֹף
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.21/01q1G
+    lexgloss: bird
+    strong: H5775
+    sound:
+      tiberian: {ipa: ʕoːf, respell: ʿohf}
+      modern-israeli: {ipa: ʔof, respell: of}
+  - id: gen.1.21.18
+    surface: כָּנָף֙
+    lemma: כָּנָף
+    morph: NOUN|Gender=Fem|Number=Sing|State=Abs
+    tb: Gen.1.21/01bYD
+    lexgloss: edge
+    strong: H3671
+    sound:
+      tiberian: {ipa: kɔː.ˈnɔːf, respell: kaw-NAWF}
+      modern-israeli: {ipa: ka.ˈnaf, respell: ka-NAF}
+  - id: gen.1.21.19
+    surface: לְמִינֵ֔הוּ
+    lemma: מִין
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.21/01v2F
+    prefixes:
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: sort
+    strong: H4327
+    sound:
+      tiberian: {ipa: lă.miː.ˈneː.huː, respell: la-mee-NAY-hoo}
+      modern-israeli: {ipa: le.mi.ˈne.hu, respell: le-mee-NE-hoo}
+  - id: gen.1.21.20
+    surface: וַיַּ֥רְא
+    lemma: רָאָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.21/017vt
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: see
+    strong: H7200
+    sound:
+      tiberian: {ipa: vaj.ˈjaʀ, respell: vay-YAR}
+      modern-israeli: {ipa: va.ˈjaʁ, respell: va-YAR}
+  - id: gen.1.21.21
+    surface: אֱלֹהִ֖ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.21/01kDm
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.21.22
+    surface: כִּי
+    punct: ־
+    lemma: כִּי
+    morph: CCONJ
+    tb: Gen.1.21/01doW
+    lexgloss: relative conjunction
+    strong: H3588
+    sound:
+      tiberian: {ipa: kiː, respell: kee}
+      modern-israeli: {ipa: ki, respell: kee}
+  - id: gen.1.21.23
+    surface: טֽוֹב
+    punct: ׃
+    lemma: טוֹב
+    morph: ADJ|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.21/01eRa
+    lexgloss: good
+    strong: H2896
+    sound:
+      tiberian: {ipa: tˁoːv, respell: ṭohv}
+      modern-israeli: {ipa: tov, respell: tov}
+- id: gen.1.22
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.22
+  text: וַיְבָ֧רֶךְ אֹתָ֛ם אֱלֹהִ֖ים לֵאמֹ֑ר פְּר֣וּ וּרְב֗וּ וּמִלְא֤וּ אֶת־ הַמַּ֨יִם֙ בַּיַּמִּ֔ים וְהָע֖וֹף יִ֥רֶב בָּאָֽרֶץ׃
+  tokens:
+  - id: gen.1.22.1
+    surface: וַיְבָ֧רֶךְ
+    lemma: בָּרַךְ
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Piel
+    tb: Gen.1.22/01kDf
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: kneel
+    strong: H1288
+    sound:
+      tiberian: {ipa: vaj.ˈvɔː.ʀɛx, respell: vay-VAW-rekh}
+      modern-israeli: {ipa: vaj.ˈva.ʁeχ, respell: vay-VA-rekh}
+  - id: gen.1.22.2
+    surface: אֹתָ֛ם
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.22/0163G
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: ʔoː.ˈθɔːm, respell: ʾoh-THAWM}
+      modern-israeli: {ipa: ʔo.ˈtam, respell: o-TAM}
+  - id: gen.1.22.3
+    surface: אֱלֹהִ֖ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.22/01WPn
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.22.4
+    surface: לֵאמֹ֑ר
+    lemma: אָמַר
+    morph: VERB|Conj=InfCons|Stem=Qal
+    tb: Gen.1.22/011jv
+    prefixes:
+    - {form: לֵ, gloss: to, morph: ADP}
+    lexgloss: say
+    strong: H559
+    sound:
+      tiberian: {ipa: leː.ˈmoːʀ, respell: lay-MOHR}
+      modern-israeli: {ipa: le.ˈmoʁ, respell: le-MOR}
+  - id: gen.1.22.5
+    surface: פְּר֣וּ
+    lemma: פָּרָה
+    morph: VERB|Conj=Imperative|Gender=Masc|Number=Plur|Person=2|Stem=Qal
+    tb: Gen.1.22/01cK8
+    lexgloss: bear fruit
+    strong: H6509
+    sound:
+      tiberian: {ipa: pă.ˈʀuː, respell: pa-ROO}
+      modern-israeli: {ipa: pe.ˈʁu, respell: pe-ROO}
+  - id: gen.1.22.6
+    surface: וּרְב֗וּ
+    lemma: רָבָה
+    morph: VERB|Conj=Imperative|Gender=Masc|Number=Plur|Person=2|Stem=Qal
+    tb: Gen.1.22/01DDb
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    lexgloss: increase
+    strong: H7235
+    sound:
+      tiberian: {ipa: uːʀ.ˈvuː, respell: oor-VOO}
+      modern-israeli: {ipa: uʁ.ˈvu, respell: oor-VOO}
+  - id: gen.1.22.7
+    surface: וּמִלְא֤וּ
+    lemma: מָלֵא
+    morph: VERB|Conj=Imperative|Gender=Masc|Number=Plur|Person=2|Stem=Qal
+    tb: Gen.1.22/01RCg
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    lexgloss: fill
+    strong: H4390
+    sound:
+      tiberian: {ipa: uː.mil.ˈʔuː, respell: oo-mil-ʾOO}
+      modern-israeli: {ipa: u.mil.ˈʔu, respell: oo-meel-OO}
+  - id: gen.1.22.8
+    surface: אֶת
+    punct: ־
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.22/015KE
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: ʔɛθ, respell: ʾeth}
+      modern-israeli: {ipa: ʔet, respell: et}
+  - id: gen.1.22.9
+    surface: הַמַּ֨יִם֙
+    lemma: מַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.22/01qVd
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: water
+    strong: H4325
+    sound:
+      tiberian: {ipa: ham.ˈma.jim, respell: ham-MA-yim}
+      modern-israeli: {ipa: ha.ˈma.jim, respell: ha-MA-yeem}
+  - id: gen.1.22.10
+    surface: בַּיַּמִּ֔ים
+    lemma: יָם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.22/01koG
+    prefixes:
+    - {form: בַּ, gloss: in, morph: ADP}
+    lexgloss: sea
+    strong: H3220
+    sound:
+      tiberian: {ipa: baj.jam.ˈmiːm, respell: bay-yam-MEEM}
+      modern-israeli: {ipa: ba.ja.ˈmim, respell: ba-ya-MEEM}
+  - id: gen.1.22.11
+    surface: וְהָע֖וֹף
+    lemma: עוֹף
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.22/01e6B
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: bird
+    strong: H5775
+    sound:
+      tiberian: {ipa: vă.hɔː.ˈʕoːf, respell: va-haw-ʿOHF}
+      modern-israeli: {ipa: ve.ha.ˈʔof, respell: ve-ha-OF}
+  - id: gen.1.22.12
+    surface: יִ֥רֶב
+    lemma: רָבָה
+    morph: VERB|Conj=Jussive|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.22/018GY
+    lexgloss: increase
+    strong: H7235
+    sound:
+      tiberian: {ipa: ˈji.ʀɛv, respell: YI-rev}
+      modern-israeli: {ipa: ˈji.ʁev, respell: YEE-rev}
+  - id: gen.1.22.13
+    surface: בָּאָֽרֶץ
+    punct: ׃
+    lemma: אֶרֶץ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.22/01GpK
+    prefixes:
+    - {form: בָּ, gloss: in, morph: ADP}
+    lexgloss: earth
+    strong: H776
+    sound:
+      tiberian: {ipa: bɔː.ˈʔɔː.ʀɛsˁ, respell: baw-ʾAW-reṣ}
+      modern-israeli: {ipa: ba.ˈʔa.ʁets, respell: ba-A-rets}
+- id: gen.1.23
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.23
+  text: וַֽיְהִי־ עֶ֥רֶב וַֽיְהִי־ בֹ֖קֶר י֥וֹם חֲמִישִֽׁי׃פ
+  tokens:
+  - id: gen.1.23.1
+    surface: וַֽיְהִי
+    punct: ־
+    lemma: הָיָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.23/0168C
+    prefixes:
+    - {form: וַֽ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: vaj.hiː, respell: vay-hee}
+      modern-israeli: {ipa: vaj.hi, respell: vay-hee}
+  - id: gen.1.23.2
+    surface: עֶ֥רֶב
+    lemma: עֶרֶב
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.23/01CMz
+    lexgloss: dusk
+    strong: H6153
+    sound:
+      tiberian: {ipa: ˈʕɛ.ʀɛv, respell: ʿE-rev}
+      modern-israeli: {ipa: ˈʔe.ʁev, respell: E-rev}
+  - id: gen.1.23.3
+    surface: וַֽיְהִי
+    punct: ־
+    lemma: הָיָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.23/01D4c
+    prefixes:
+    - {form: וַֽ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: vaj.hiː, respell: vay-hee}
+      modern-israeli: {ipa: vaj.hi, respell: vay-hee}
+  - id: gen.1.23.4
+    surface: בֹ֖קֶר
+    lemma: בֹּקֶר
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.23/01ta1
+    lexgloss: dawn
+    strong: H1242
+    sound:
+      tiberian: {ipa: ˈvoː.qɛʀ, respell: VOH-qer}
+      modern-israeli: {ipa: ˈvo.keʁ, respell: VO-ker}
+  - id: gen.1.23.5
+    surface: י֥וֹם
+    lemma: יוֹם
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.23/01JnD
+    lexgloss: day
+    strong: H3117
+    sound:
+      tiberian: {ipa: joːm, respell: yohm}
+      modern-israeli: {ipa: jom, respell: yom}
+  - id: gen.1.23.6
+    surface: חֲמִישִֽׁי
+    punct: ׃פ
+    lemma: חֲמִישִׁי
+    morph: NUM|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.23/01jfz
+    lexgloss: fifth
+    strong: H2549
+    sound:
+      tiberian: {ipa: ħă.miː.ˈʃiː, respell: ḥa-mee-SHEE}
+      modern-israeli: {ipa: χa.mi.ˈʃi, respell: kha-mee-SHEE}
+- id: gen.1.24
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.24
+  text: וַיֹּ֣אמֶר אֱלֹהִ֗ים תּוֹצֵ֨א הָאָ֜רֶץ נֶ֤פֶשׁ חַיָּה֙ לְמִינָ֔הּ בְּהֵמָ֥ה וָרֶ֛מֶשׂ וְחַֽיְתוֹ־ אֶ֖רֶץ לְמִינָ֑הּ וַֽיְהִי־ כֵֽן׃
+  tokens:
+  - id: gen.1.24.1
+    surface: וַיֹּ֣אמֶר
+    lemma: אָמַר
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.24/01ErQ
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: say
+    strong: H559
+    sound:
+      tiberian: {ipa: vaj.ˈjoː.mɛʀ, respell: vay-YOH-mer}
+      modern-israeli: {ipa: va.ˈjo.meʁ, respell: va-YO-mer}
+  - id: gen.1.24.2
+    surface: אֱלֹהִ֗ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.24/014fv
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.24.3
+    surface: תּוֹצֵ֨א
+    lemma: יָצָא
+    morph: VERB|Conj=Jussive|Gender=Fem|Number=Sing|Person=3|Stem=Hiphil
+    tb: Gen.1.24/01yDv
+    lexgloss: go
+    strong: H3318
+    sound:
+      tiberian: {ipa: toː.ˈsˁeː, respell: toh-ṢAY}
+      modern-israeli: {ipa: to.ˈtse, respell: to-TSE}
+  - id: gen.1.24.4
+    surface: הָאָ֜רֶץ
+    lemma: אֶרֶץ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.24/01jyT
+    prefixes:
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: earth
+    strong: H776
+    sound:
+      tiberian: {ipa: hɔː.ˈʔɔː.ʀɛsˁ, respell: haw-ʾAW-reṣ}
+      modern-israeli: {ipa: ha.ˈʔa.ʁets, respell: ha-A-rets}
+  - id: gen.1.24.5
+    surface: נֶ֤פֶשׁ
+    lemma: נֶפֶשׁ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.24/01Unh
+    lexgloss: breathing creature
+    strong: H5315
+    sound:
+      tiberian: {ipa: ˈnɛ.fɛʃ, respell: NE-fesh}
+      modern-israeli: {ipa: ˈne.feʃ, respell: NE-fesh}
+  - id: gen.1.24.6
+    surface: חַיָּה֙
+    lemma: חַי
+    morph: ADJ|Gender=Fem|Number=Sing|State=Abs
+    tb: Gen.1.24/01QH2
+    lexgloss: alive
+    strong: H2416
+    sound:
+      tiberian: {ipa: ħaj.ˈjɔː, respell: ḥay-YAW}
+      modern-israeli: {ipa: χa.ˈja, respell: kha-YA}
+  - id: gen.1.24.7
+    surface: לְמִינָ֔הּ
+    lemma: מִין
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.24/01xxn
+    prefixes:
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: sort
+    strong: H4327
+    sound:
+      tiberian: {ipa: lă.miː.ˈnɔːh, respell: la-mee-NAWH}
+      modern-israeli: {ipa: le.mi.ˈnah, respell: le-mee-NAH}
+  - id: gen.1.24.8
+    surface: בְּהֵמָ֥ה
+    lemma: בְּהֵמָה
+    morph: NOUN|Gender=Fem|Number=Sing|State=Abs
+    tb: Gen.1.24/01ou4
+    lexgloss: dumb
+    strong: H929
+    sound:
+      tiberian: {ipa: bă.heː.ˈmɔː, respell: ba-hay-MAW}
+      modern-israeli: {ipa: be.he.ˈma, respell: be-he-MA}
+  - id: gen.1.24.9
+    surface: וָרֶ֛מֶשׂ
+    lemma: רֶמֶשׂ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.24/013KZ
+    prefixes:
+    - {form: וָ, gloss: and, morph: CCONJ}
+    lexgloss: reptile
+    strong: H7431
+    sound:
+      tiberian: {ipa: vɔː.ˈʀɛ.mɛs, respell: vaw-RE-mes}
+      modern-israeli: {ipa: va.ˈʁe.mes, respell: va-RE-mes}
+  - id: gen.1.24.10
+    surface: וְחַֽיְתוֹ
+    punct: ־
+    lemma: חַי
+    morph: NOUN|Gender=Fem|Number=Sing|State=Cons
+    tb: Gen.1.24/01jNE
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    lexgloss: alive
+    strong: H2416
+    sound:
+      tiberian: {ipa: vă.ħaj.θoː, respell: va-ḥay-thoh}
+      modern-israeli: {ipa: ve.χaj.to, respell: ve-khay-to}
+  - id: gen.1.24.11
+    surface: אֶ֖רֶץ
+    lemma: אֶרֶץ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.24/01hj3
+    lexgloss: earth
+    strong: H776
+    sound:
+      tiberian: {ipa: ˈʔɛ.ʀɛsˁ, respell: ʾE-reṣ}
+      modern-israeli: {ipa: ˈʔe.ʁets, respell: E-rets}
+  - id: gen.1.24.12
+    surface: לְמִינָ֑הּ
+    lemma: מִין
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.24/01iDs
+    prefixes:
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: sort
+    strong: H4327
+    sound:
+      tiberian: {ipa: lă.miː.ˈnɔːh, respell: la-mee-NAWH}
+      modern-israeli: {ipa: le.mi.ˈnah, respell: le-mee-NAH}
+  - id: gen.1.24.13
+    surface: וַֽיְהִי
+    punct: ־
+    lemma: הָיָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.24/016Lo
+    prefixes:
+    - {form: וַֽ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: vaj.hiː, respell: vay-hee}
+      modern-israeli: {ipa: vaj.hi, respell: vay-hee}
+  - id: gen.1.24.14
+    surface: כֵֽן
+    punct: ׃
+    lemma: כֵּן
+    morph: ADV
+    tb: Gen.1.24/01JZq
+    lexgloss: set upright
+    strong: H3651
+    sound:
+      tiberian: {ipa: xeːn, respell: khayn}
+      modern-israeli: {ipa: χen, respell: khen}
+- id: gen.1.25
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.25
+  text: וַיַּ֣עַשׂ אֱלֹהִים֩ אֶת־ חַיַּ֨ת הָאָ֜רֶץ לְמִינָ֗הּ וְאֶת־ הַבְּהֵמָה֙ לְמִינָ֔הּ וְאֵ֛ת כָּל־ רֶ֥מֶשׂ הָֽאֲדָמָ֖ה לְמִינֵ֑הוּ וַיַּ֥רְא אֱלֹהִ֖ים כִּי־ טֽוֹב׃
+  tokens:
+  - id: gen.1.25.1
+    surface: וַיַּ֣עַשׂ
+    lemma: עָשָׂה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.25/01ZpQ
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: do
+    strong: H6213
+    sound:
+      tiberian: {ipa: vaj.ˈja.ʕas, respell: vay-YA-ʿas}
+      modern-israeli: {ipa: va.ˈja.ʔas, respell: va-YA-as}
+  - id: gen.1.25.2
+    surface: אֱלֹהִים֩
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.25/019gS
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.25.3
+    surface: אֶת
+    punct: ־
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.25/01LAe
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: ʔɛθ, respell: ʾeth}
+      modern-israeli: {ipa: ʔet, respell: et}
+  - id: gen.1.25.4
+    surface: חַיַּ֨ת
+    lemma: חַי
+    morph: NOUN|Gender=Fem|Number=Sing|State=Cons
+    tb: Gen.1.25/01qK3
+    lexgloss: alive
+    strong: H2416
+    sound:
+      tiberian: {ipa: ħaj.ˈjaθ, respell: ḥay-YATH}
+      modern-israeli: {ipa: χa.ˈjat, respell: kha-YAT}
+  - id: gen.1.25.5
+    surface: הָאָ֜רֶץ
+    lemma: אֶרֶץ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.25/011Cv
+    prefixes:
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: earth
+    strong: H776
+    sound:
+      tiberian: {ipa: hɔː.ˈʔɔː.ʀɛsˁ, respell: haw-ʾAW-reṣ}
+      modern-israeli: {ipa: ha.ˈʔa.ʁets, respell: ha-A-rets}
+  - id: gen.1.25.6
+    surface: לְמִינָ֗הּ
+    lemma: מִין
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.25/01PBQ
+    prefixes:
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: sort
+    strong: H4327
+    sound:
+      tiberian: {ipa: lă.miː.ˈnɔːh, respell: la-mee-NAWH}
+      modern-israeli: {ipa: le.mi.ˈnah, respell: le-mee-NAH}
+  - id: gen.1.25.7
+    surface: וְאֶת
+    punct: ־
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.25/01mr5
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: vă.ʔɛθ, respell: va-ʾeth}
+      modern-israeli: {ipa: ve.ʔet, respell: ve-et}
+  - id: gen.1.25.8
+    surface: הַבְּהֵמָה֙
+    lemma: בְּהֵמָה
+    morph: NOUN|Gender=Fem|Number=Sing|State=Abs
+    tb: Gen.1.25/01QDu
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: dumb
+    strong: H929
+    sound:
+      tiberian: {ipa: hab.bă.heː.ˈmɔː, respell: hab-ba-hay-MAW}
+      modern-israeli: {ipa: ha.be.he.ˈma, respell: ha-be-he-MA}
+  - id: gen.1.25.9
+    surface: לְמִינָ֔הּ
+    lemma: מִין
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.25/01PbY
+    prefixes:
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: sort
+    strong: H4327
+    sound:
+      tiberian: {ipa: lă.miː.ˈnɔːh, respell: la-mee-NAWH}
+      modern-israeli: {ipa: le.mi.ˈnah, respell: le-mee-NAH}
+  - id: gen.1.25.10
+    surface: וְאֵ֛ת
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.25/01Ew6
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: vă.ˈʔeːθ, respell: va-ʾAYTH}
+      modern-israeli: {ipa: ve.ˈʔet, respell: ve-ET}
+  - id: gen.1.25.11
+    surface: כָּל
+    punct: ־
+    lemma: כֹּל
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.25/0174R
+    lexgloss: whole
+    strong: H3605
+    sound:
+      tiberian: {ipa: kɔːl, respell: kawl}
+      modern-israeli: {ipa: kal, respell: kal}
+  - id: gen.1.25.12
+    surface: רֶ֥מֶשׂ
+    lemma: רֶמֶשׂ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.25/016zt
+    lexgloss: reptile
+    strong: H7431
+    sound:
+      tiberian: {ipa: ˈʀɛ.mɛs, respell: RE-mes}
+      modern-israeli: {ipa: ˈʁe.mes, respell: RE-mes}
+  - id: gen.1.25.13
+    surface: הָֽאֲדָמָ֖ה
+    lemma: אֲדָמָה
+    morph: NOUN|Gender=Fem|Number=Sing|State=Abs
+    tb: Gen.1.25/01zEm
+    prefixes:
+    - {form: הָֽ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: soil
+    strong: H127
+    sound:
+      tiberian: {ipa: hɔː.ʔă.ðɔː.ˈmɔː, respell: haw-ʾa-dhaw-MAW}
+      modern-israeli: {ipa: ha.ʔa.da.ˈma, respell: ha-a-da-MA}
+  - id: gen.1.25.14
+    surface: לְמִינֵ֑הוּ
+    lemma: מִין
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.25/012dm
+    prefixes:
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: sort
+    strong: H4327
+    sound:
+      tiberian: {ipa: lă.miː.ˈneː.huː, respell: la-mee-NAY-hoo}
+      modern-israeli: {ipa: le.mi.ˈne.hu, respell: le-mee-NE-hoo}
+  - id: gen.1.25.15
+    surface: וַיַּ֥רְא
+    lemma: רָאָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.25/01uYh
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: see
+    strong: H7200
+    sound:
+      tiberian: {ipa: vaj.ˈjaʀ, respell: vay-YAR}
+      modern-israeli: {ipa: va.ˈjaʁ, respell: va-YAR}
+  - id: gen.1.25.16
+    surface: אֱלֹהִ֖ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.25/01YxK
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.25.17
+    surface: כִּי
+    punct: ־
+    lemma: כִּי
+    morph: CCONJ
+    tb: Gen.1.25/01aSJ
+    lexgloss: relative conjunction
+    strong: H3588
+    sound:
+      tiberian: {ipa: kiː, respell: kee}
+      modern-israeli: {ipa: ki, respell: kee}
+  - id: gen.1.25.18
+    surface: טֽוֹב
+    punct: ׃
+    lemma: טוֹב
+    morph: ADJ|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.25/01Kz2
+    lexgloss: good
+    strong: H2896
+    sound:
+      tiberian: {ipa: tˁoːv, respell: ṭohv}
+      modern-israeli: {ipa: tov, respell: tov}
+- id: gen.1.26
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.26
+  text: וַיֹּ֣אמֶר אֱלֹהִ֔ים נַֽעֲשֶׂ֥ה אָדָ֛ם בְּצַלְמֵ֖נוּ כִּדְמוּתֵ֑נוּ וְיִרְדּוּ֩ בִדְגַ֨ת הַיָּ֜ם וּבְע֣וֹף הַשָּׁמַ֗יִם וּבַבְּהֵמָה֙ וּבְכָל־ הָאָ֔רֶץ וּבְכָל־ הָרֶ֖מֶשׂ הָֽרֹמֵ֥שׂ עַל־ הָאָֽרֶץ׃
+  tokens:
+  - id: gen.1.26.1
+    surface: וַיֹּ֣אמֶר
+    lemma: אָמַר
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.26/01YhQ
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: say
+    strong: H559
+    sound:
+      tiberian: {ipa: vaj.ˈjoː.mɛʀ, respell: vay-YOH-mer}
+      modern-israeli: {ipa: va.ˈjo.meʁ, respell: va-YO-mer}
+  - id: gen.1.26.2
+    surface: אֱלֹהִ֔ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.26/01azZ
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.26.3
+    surface: נַֽעֲשֶׂ֥ה
+    lemma: עָשָׂה
+    morph: VERB|Conj=Yiqtol|Gender=Com|Number=Plur|Person=1|Stem=Qal
+    tb: Gen.1.26/01oiy
+    lexgloss: do
+    strong: H6213
+    sound:
+      tiberian: {ipa: na.ʕă.ˈsɛː, respell: na-ʿa-SEH}
+      modern-israeli: {ipa: na.ʔa.ˈse, respell: na-a-SE}
+  - id: gen.1.26.4
+    surface: אָדָ֛ם
+    lemma: אָדָם
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.26/01gPX
+    lexgloss: ruddy
+    strong: H120
+    sound:
+      tiberian: {ipa: ʔɔː.ˈðɔːm, respell: ʾaw-DHAWM}
+      modern-israeli: {ipa: ʔa.ˈdam, respell: a-DAM}
+  - id: gen.1.26.5
+    surface: בְּצַלְמֵ֖נוּ
+    lemma: צֶלֶם
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.26/01gtq
+    prefixes:
+    - {form: בְּ, gloss: in, morph: ADP}
+    lexgloss: phantom
+    strong: H6754
+    sound:
+      tiberian: {ipa: bă.sˁal.ˈmeː.nuː, respell: ba-ṣal-MAY-noo}
+      modern-israeli: {ipa: be.tsal.ˈme.nu, respell: be-tsal-ME-noo}
+  - id: gen.1.26.6
+    surface: כִּדְמוּתֵ֑נוּ
+    lemma: דְּמוּת
+    morph: NOUN|Gender=Fem|Number=Sing|State=Cons
+    tb: Gen.1.26/01HSQ
+    prefixes:
+    - {form: כִּ, gloss: like, morph: ADP}
+    lexgloss: resemblance
+    strong: H1823
+    sound:
+      tiberian: {ipa: kið.muː.ˈθeː.nuː, respell: kidh-moo-THAY-noo}
+      modern-israeli: {ipa: kid.mu.ˈte.nu, respell: keed-moo-TE-noo}
+  - id: gen.1.26.7
+    surface: וְיִרְדּוּ֩
+    lemma: רָדָה
+    morph: VERB|Conj=Jussive|Gender=Masc|Number=Plur|Person=3|Stem=Qal
+    tb: Gen.1.26/01fbB
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    lexgloss: tread
+    strong: H7287
+    sound:
+      tiberian: {ipa: vă.jiʀ.ˈduː, respell: va-yir-DOO}
+      modern-israeli: {ipa: ve.jiʁ.ˈdu, respell: ve-yeer-DOO}
+  - id: gen.1.26.8
+    surface: בִדְגַ֨ת
+    lemma: דָּגָה
+    morph: NOUN|Gender=Fem|Number=Sing|State=Cons
+    tb: Gen.1.26/01k1L
+    prefixes:
+    - {form: בִ, gloss: in, morph: ADP}
+    strong: H1710
+    sound:
+      tiberian: {ipa: við.ˈɣaθ, respell: vidh-GHATH}
+      modern-israeli: {ipa: vid.ˈɡat, respell: veed-GAT}
+  - id: gen.1.26.9
+    surface: הַיָּ֜ם
+    lemma: יָם
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.26/012tS
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: sea
+    strong: H3220
+    sound:
+      tiberian: {ipa: haj.ˈjɔːm, respell: hay-YAWM}
+      modern-israeli: {ipa: ha.ˈjam, respell: ha-YAM}
+  - id: gen.1.26.10
+    surface: וּבְע֣וֹף
+    lemma: עוֹף
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.26/01EVu
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    - {form: בְ, gloss: in, morph: ADP}
+    lexgloss: bird
+    strong: H5775
+    sound:
+      tiberian: {ipa: uːv.ˈʕoːf, respell: oov-ʿOHF}
+      modern-israeli: {ipa: uv.ˈʔof, respell: oov-OF}
+  - id: gen.1.26.11
+    surface: הַשָּׁמַ֗יִם
+    lemma: שָׁמַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.26/01ygU
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: sky
+    strong: H8064
+    sound:
+      tiberian: {ipa: haʃ.ʃɔː.ˈma.jim, respell: hash-shaw-MA-yim}
+      modern-israeli: {ipa: ha.ʃa.ˈma.jim, respell: ha-sha-MA-yeem}
+  - id: gen.1.26.12
+    surface: וּבַבְּהֵמָה֙
+    lemma: בְּהֵמָה
+    morph: NOUN|Gender=Fem|Number=Sing|State=Abs
+    tb: Gen.1.26/01swV
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    - {form: בַ, gloss: in, morph: ADP}
+    lexgloss: dumb
+    strong: H929
+    sound:
+      tiberian: {ipa: uː.vab.bă.heː.ˈmɔː, respell: oo-vab-ba-hay-MAW}
+      modern-israeli: {ipa: u.va.be.he.ˈma, respell: oo-va-be-he-MA}
+  - id: gen.1.26.13
+    surface: וּבְכָל
+    punct: ־
+    lemma: כֹּל
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.26/01HjU
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    - {form: בְ, gloss: in, morph: ADP}
+    lexgloss: whole
+    strong: H3605
+    sound:
+      tiberian: {ipa: uːv.xɔːl, respell: oov-khawl}
+      modern-israeli: {ipa: uv.χal, respell: oov-khal}
+  - id: gen.1.26.14
+    surface: הָאָ֔רֶץ
+    lemma: אֶרֶץ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.26/01d3U
+    prefixes:
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: earth
+    strong: H776
+    sound:
+      tiberian: {ipa: hɔː.ˈʔɔː.ʀɛsˁ, respell: haw-ʾAW-reṣ}
+      modern-israeli: {ipa: ha.ˈʔa.ʁets, respell: ha-A-rets}
+  - id: gen.1.26.15
+    surface: וּבְכָל
+    punct: ־
+    lemma: כֹּל
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.26/01NtK
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    - {form: בְ, gloss: in, morph: ADP}
+    lexgloss: whole
+    strong: H3605
+    sound:
+      tiberian: {ipa: uːv.xɔːl, respell: oov-khawl}
+      modern-israeli: {ipa: uv.χal, respell: oov-khal}
+  - id: gen.1.26.16
+    surface: הָרֶ֖מֶשׂ
+    lemma: רֶמֶשׂ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.26/01U94
+    prefixes:
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: reptile
+    strong: H7431
+    sound:
+      tiberian: {ipa: hɔː.ˈʀɛ.mɛs, respell: haw-RE-mes}
+      modern-israeli: {ipa: ha.ˈʁe.mes, respell: ha-RE-mes}
+  - id: gen.1.26.17
+    surface: הָֽרֹמֵ֥שׂ
+    lemma: רָמַשׂ
+    morph: VERB|Conj=PartAct|Gender=Masc|Number=Sing|State=Abs|Stem=Qal
+    tb: Gen.1.26/01zqr
+    prefixes:
+    - {form: הָֽ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: glide swiftly
+    strong: H7430
+    sound:
+      tiberian: {ipa: hɔː.ʀoː.ˈmeːs, respell: haw-roh-MAYS}
+      modern-israeli: {ipa: ha.ʁo.ˈmes, respell: ha-ro-MES}
+  - id: gen.1.26.18
+    surface: עַל
+    punct: ־
+    lemma: עַל
+    morph: ADP
+    tb: Gen.1.26/016JA
+    lexgloss: above
+    strong: H5921
+    sound:
+      tiberian: {ipa: ʕal, respell: ʿal}
+      modern-israeli: {ipa: ʔal, respell: al}
+  - id: gen.1.26.19
+    surface: הָאָֽרֶץ
+    punct: ׃
+    lemma: אֶרֶץ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.26/01JyD
+    prefixes:
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: earth
+    strong: H776
+    sound:
+      tiberian: {ipa: hɔː.ˈʔɔː.ʀɛsˁ, respell: haw-ʾAW-reṣ}
+      modern-israeli: {ipa: ha.ˈʔa.ʁets, respell: ha-A-rets}
+- id: gen.1.27
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.27
+  text: וַיִּבְרָ֨א אֱלֹהִ֤ים׀ אֶת־ הָֽאָדָם֙ בְּצַלְמ֔וֹ בְּצֶ֥לֶם אֱלֹהִ֖ים בָּרָ֣א אֹת֑וֹ זָכָ֥ר וּנְקֵבָ֖ה בָּרָ֥א אֹתָֽם׃
+  tokens:
+  - id: gen.1.27.1
+    surface: וַיִּבְרָ֨א
+    lemma: בָּרָא
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.27/01jjy
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: create
+    strong: H1254
+    sound:
+      tiberian: {ipa: vaj.jiv.ˈʀɔː, respell: vay-yiv-RAW}
+      modern-israeli: {ipa: va.jiv.ˈʁa, respell: va-yeev-RA}
+  - id: gen.1.27.2
+    surface: אֱלֹהִ֤ים
+    punct: ׀
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.27/0179E
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.27.3
+    surface: אֶת
+    punct: ־
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.27/01Zuo
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: ʔɛθ, respell: ʾeth}
+      modern-israeli: {ipa: ʔet, respell: et}
+  - id: gen.1.27.4
+    surface: הָֽאָדָם֙
+    lemma: אָדָם
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.27/01LXS
+    prefixes:
+    - {form: הָֽ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: ruddy
+    strong: H120
+    sound:
+      tiberian: {ipa: hɔː.ʔɔː.ˈðɔːm, respell: haw-ʾaw-DHAWM}
+      modern-israeli: {ipa: ha.ʔa.ˈdam, respell: ha-a-DAM}
+  - id: gen.1.27.5
+    surface: בְּצַלְמ֔וֹ
+    lemma: צֶלֶם
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.27/01mR4
+    prefixes:
+    - {form: בְּ, gloss: in, morph: ADP}
+    lexgloss: phantom
+    strong: H6754
+    sound:
+      tiberian: {ipa: bă.sˁal.ˈmoː, respell: ba-ṣal-MOH}
+      modern-israeli: {ipa: be.tsal.ˈmo, respell: be-tsal-MO}
+  - id: gen.1.27.6
+    surface: בְּצֶ֥לֶם
+    lemma: צֶלֶם
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.27/01MC8
+    prefixes:
+    - {form: בְּ, gloss: in, morph: ADP}
+    lexgloss: phantom
+    strong: H6754
+    sound:
+      tiberian: {ipa: bă.ˈsˁɛ.lɛm, respell: ba-ṢE-lem}
+      modern-israeli: {ipa: be.ˈtse.lem, respell: be-TSE-lem}
+  - id: gen.1.27.7
+    surface: אֱלֹהִ֖ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.27/01BnR
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.27.8
+    surface: בָּרָ֣א
+    lemma: בָּרָא
+    morph: VERB|Conj=Qatal|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.27/01PUg
+    lexgloss: create
+    strong: H1254
+    sound:
+      tiberian: {ipa: bɔː.ˈʀɔː, respell: baw-RAW}
+      modern-israeli: {ipa: ba.ˈʁa, respell: ba-RA}
+  - id: gen.1.27.9
+    surface: אֹת֑וֹ
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.27/01pUN
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: ʔoː.ˈθoː, respell: ʾoh-THOH}
+      modern-israeli: {ipa: ʔo.ˈto, respell: o-TO}
+  - id: gen.1.27.10
+    surface: זָכָ֥ר
+    lemma: זָכָר
+    morph: ADJ|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.27/01gc8
+    lexgloss: remembered
+    strong: H2145
+    sound:
+      tiberian: {ipa: zɔː.ˈxɔːʀ, respell: zaw-KHAWR}
+      modern-israeli: {ipa: za.ˈχaʁ, respell: za-KHAR}
+  - id: gen.1.27.11
+    surface: וּנְקֵבָ֖ה
+    lemma: נְקֵבָה
+    morph: NOUN|Gender=Fem|Number=Sing|State=Abs
+    tb: Gen.1.27/01Lsp
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    lexgloss: female
+    strong: H5347
+    sound:
+      tiberian: {ipa: uːn.qeː.ˈvɔː, respell: oon-qay-VAW}
+      modern-israeli: {ipa: un.ke.ˈva, respell: oon-ke-VA}
+  - id: gen.1.27.12
+    surface: בָּרָ֥א
+    lemma: בָּרָא
+    morph: VERB|Conj=Qatal|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.27/01SAE
+    lexgloss: create
+    strong: H1254
+    sound:
+      tiberian: {ipa: bɔː.ˈʀɔː, respell: baw-RAW}
+      modern-israeli: {ipa: ba.ˈʁa, respell: ba-RA}
+  - id: gen.1.27.13
+    surface: אֹתָֽם
+    punct: ׃
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.27/013gY
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: ʔoː.ˈθɔːm, respell: ʾoh-THAWM}
+      modern-israeli: {ipa: ʔo.ˈtam, respell: o-TAM}
+- id: gen.1.28
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.28
+  text: וַיְבָ֣רֶךְ אֹתָם֮ אֱלֹהִים֒ וַיֹּ֨אמֶר לָהֶ֜ם אֱלֹהִ֗ים פְּר֥וּ וּרְב֛וּ וּמִלְא֥וּ אֶת־ הָאָ֖רֶץ וְכִבְשֻׁ֑הָ וּרְד֞וּ בִּדְגַ֤ת הַיָּם֙ וּבְע֣וֹף הַשָּׁמַ֔יִם וּבְכָל־ חַיָּ֖ה הָֽרֹמֶ֥שֶׂת עַל־
+    הָאָֽרֶץ׃
+  tokens:
+  - id: gen.1.28.1
+    surface: וַיְבָ֣רֶךְ
+    lemma: בָּרַךְ
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Piel
+    tb: Gen.1.28/01RuM
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: kneel
+    strong: H1288
+    sound:
+      tiberian: {ipa: vaj.ˈvɔː.ʀɛx, respell: vay-VAW-rekh}
+      modern-israeli: {ipa: vaj.ˈva.ʁeχ, respell: vay-VA-rekh}
+  - id: gen.1.28.2
+    surface: אֹתָם֮
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.28/01WFU
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: ʔoː.ˈθɔːm, respell: ʾoh-THAWM}
+      modern-israeli: {ipa: ʔo.ˈtam, respell: o-TAM}
+  - id: gen.1.28.3
+    surface: אֱלֹהִים֒
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.28/01BJv
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.28.4
+    surface: וַיֹּ֨אמֶר
+    lemma: אָמַר
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.28/01ExP
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: say
+    strong: H559
+    sound:
+      tiberian: {ipa: vaj.ˈjoː.mɛʀ, respell: vay-YOH-mer}
+      modern-israeli: {ipa: va.ˈjo.meʁ, respell: va-YO-mer}
+  - id: gen.1.28.5
+    surface: לָהֶ֜ם
+    lemma: לְ
+    morph: ADP
+    tb: Gen.1.28/01ypu
+    lexgloss: to
+    sound:
+      tiberian: {ipa: lɔː.ˈhɛm, respell: law-HEM}
+      modern-israeli: {ipa: la.ˈhem, respell: la-HEM}
+  - id: gen.1.28.6
+    surface: אֱלֹהִ֗ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.28/01mP3
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.28.7
+    surface: פְּר֥וּ
+    lemma: פָּרָה
+    morph: VERB|Conj=Imperative|Gender=Masc|Number=Plur|Person=2|Stem=Qal
+    tb: Gen.1.28/01V8b
+    lexgloss: bear fruit
+    strong: H6509
+    sound:
+      tiberian: {ipa: pă.ˈʀuː, respell: pa-ROO}
+      modern-israeli: {ipa: pe.ˈʁu, respell: pe-ROO}
+  - id: gen.1.28.8
+    surface: וּרְב֛וּ
+    lemma: רָבָה
+    morph: VERB|Conj=Imperative|Gender=Masc|Number=Plur|Person=2|Stem=Qal
+    tb: Gen.1.28/01suQ
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    lexgloss: increase
+    strong: H7235
+    sound:
+      tiberian: {ipa: uːʀ.ˈvuː, respell: oor-VOO}
+      modern-israeli: {ipa: uʁ.ˈvu, respell: oor-VOO}
+  - id: gen.1.28.9
+    surface: וּמִלְא֥וּ
+    lemma: מָלֵא
+    morph: VERB|Conj=Imperative|Gender=Masc|Number=Plur|Person=2|Stem=Qal
+    tb: Gen.1.28/011Su
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    lexgloss: fill
+    strong: H4390
+    sound:
+      tiberian: {ipa: uː.mil.ˈʔuː, respell: oo-mil-ʾOO}
+      modern-israeli: {ipa: u.mil.ˈʔu, respell: oo-meel-OO}
+  - id: gen.1.28.10
+    surface: אֶת
+    punct: ־
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.28/01MEz
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: ʔɛθ, respell: ʾeth}
+      modern-israeli: {ipa: ʔet, respell: et}
+  - id: gen.1.28.11
+    surface: הָאָ֖רֶץ
+    lemma: אֶרֶץ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.28/01Q2u
+    prefixes:
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: earth
+    strong: H776
+    sound:
+      tiberian: {ipa: hɔː.ˈʔɔː.ʀɛsˁ, respell: haw-ʾAW-reṣ}
+      modern-israeli: {ipa: ha.ˈʔa.ʁets, respell: ha-A-rets}
+  - id: gen.1.28.12
+    surface: וְכִבְשֻׁ֑הָ
+    lemma: כָּבַשׁ
+    morph: VERB|Conj=Imperative|Gender=Masc|Number=Plur|Person=2|Stem=Qal
+    tb: Gen.1.28/01yT5
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    lexgloss: tread down
+    strong: H3533
+    sound:
+      tiberian: {ipa: vă.xiv.ˈʃu.hɔː, respell: va-khiv-SHU-haw}
+      modern-israeli: {ipa: ve.χiv.ˈʃu.ha, respell: ve-kheev-SHOO-ha}
+  - id: gen.1.28.13
+    surface: וּרְד֞וּ
+    lemma: רָדָה
+    morph: VERB|Conj=Imperative|Gender=Masc|Number=Plur|Person=2|Stem=Qal
+    tb: Gen.1.28/01b5Q
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    lexgloss: tread
+    strong: H7287
+    sound:
+      tiberian: {ipa: uːʀ.ˈðuː, respell: oor-DHOO}
+      modern-israeli: {ipa: uʁ.ˈdu, respell: oor-DOO}
+  - id: gen.1.28.14
+    surface: בִּדְגַ֤ת
+    lemma: דָּגָה
+    morph: NOUN|Gender=Fem|Number=Sing|State=Cons
+    tb: Gen.1.28/01F88
+    prefixes:
+    - {form: בִּ, gloss: in, morph: ADP}
+    strong: H1710
+    sound:
+      tiberian: {ipa: bið.ˈɣaθ, respell: bidh-GHATH}
+      modern-israeli: {ipa: bid.ˈɡat, respell: beed-GAT}
+  - id: gen.1.28.15
+    surface: הַיָּם֙
+    lemma: יָם
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.28/01AXb
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: sea
+    strong: H3220
+    sound:
+      tiberian: {ipa: haj.ˈjɔːm, respell: hay-YAWM}
+      modern-israeli: {ipa: ha.ˈjam, respell: ha-YAM}
+  - id: gen.1.28.16
+    surface: וּבְע֣וֹף
+    lemma: עוֹף
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.28/01Wjz
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    - {form: בְ, gloss: in, morph: ADP}
+    lexgloss: bird
+    strong: H5775
+    sound:
+      tiberian: {ipa: uːv.ˈʕoːf, respell: oov-ʿOHF}
+      modern-israeli: {ipa: uv.ˈʔof, respell: oov-OF}
+  - id: gen.1.28.17
+    surface: הַשָּׁמַ֔יִם
+    lemma: שָׁמַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.28/01bPJ
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: sky
+    strong: H8064
+    sound:
+      tiberian: {ipa: haʃ.ʃɔː.ˈma.jim, respell: hash-shaw-MA-yim}
+      modern-israeli: {ipa: ha.ʃa.ˈma.jim, respell: ha-sha-MA-yeem}
+  - id: gen.1.28.18
+    surface: וּבְכָל
+    punct: ־
+    lemma: כֹּל
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.28/01hS1
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    - {form: בְ, gloss: in, morph: ADP}
+    lexgloss: whole
+    strong: H3605
+    sound:
+      tiberian: {ipa: uːv.xɔːl, respell: oov-khawl}
+      modern-israeli: {ipa: uv.χal, respell: oov-khal}
+  - id: gen.1.28.19
+    surface: חַיָּ֖ה
+    lemma: חַי
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.28/01h53
+    lexgloss: alive
+    strong: H2416
+    sound:
+      tiberian: {ipa: ħaj.ˈjɔː, respell: ḥay-YAW}
+      modern-israeli: {ipa: χa.ˈja, respell: kha-YA}
+  - id: gen.1.28.20
+    surface: הָֽרֹמֶ֥שֶׂת
+    lemma: רָמַשׂ
+    morph: VERB|Conj=PartAct|Gender=Fem|Number=Sing|State=Abs|Stem=Qal
+    tb: Gen.1.28/01vpK
+    prefixes:
+    - {form: הָֽ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: glide swiftly
+    strong: H7430
+    sound:
+      tiberian: {ipa: hɔː.ʀoː.ˈmɛ.sɛθ, respell: haw-roh-ME-seth}
+      modern-israeli: {ipa: ha.ʁo.ˈme.set, respell: ha-ro-ME-set}
+  - id: gen.1.28.21
+    surface: עַל
+    punct: ־
+    lemma: עַל
+    morph: ADP
+    tb: Gen.1.28/01G6E
+    lexgloss: above
+    strong: H5921
+    sound:
+      tiberian: {ipa: ʕal, respell: ʿal}
+      modern-israeli: {ipa: ʔal, respell: al}
+  - id: gen.1.28.22
+    surface: הָאָֽרֶץ
+    punct: ׃
+    lemma: אֶרֶץ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.28/014vX
+    prefixes:
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: earth
+    strong: H776
+    sound:
+      tiberian: {ipa: hɔː.ˈʔɔː.ʀɛsˁ, respell: haw-ʾAW-reṣ}
+      modern-israeli: {ipa: ha.ˈʔa.ʁets, respell: ha-A-rets}
+- id: gen.1.29
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.29
+  text: וַיֹּ֣אמֶר אֱלֹהִ֗ים הִנֵּה֩ נָתַ֨תִּי לָכֶ֜ם אֶת־ כָּל־ עֵ֣שֶׂב׀ זֹרֵ֣עַ זֶ֗רַע אֲשֶׁר֙ עַל־ פְּנֵ֣י כָל־ הָאָ֔רֶץ וְאֶת־ כָּל־ הָעֵ֛ץ אֲשֶׁר־ בּ֥וֹ פְרִי־ עֵ֖ץ זֹרֵ֣עַ זָ֑רַע לָכֶ֥ם יִֽהְיֶ֖ה
+    לְאָכְלָֽה׃
+  tokens:
+  - id: gen.1.29.1
+    surface: וַיֹּ֣אמֶר
+    lemma: אָמַר
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.29/01X1R
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: say
+    strong: H559
+    sound:
+      tiberian: {ipa: vaj.ˈjoː.mɛʀ, respell: vay-YOH-mer}
+      modern-israeli: {ipa: va.ˈjo.meʁ, respell: va-YO-mer}
+  - id: gen.1.29.2
+    surface: אֱלֹהִ֗ים
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.29/01bsu
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.29.3
+    surface: הִנֵּה֩
+    lemma: הִנֵּה
+    morph: PRON|PartType=Dem
+    tb: Gen.1.29/01Ygn
+    lexgloss: lo!
+    strong: H2009
+    sound:
+      tiberian: {ipa: hin.ˈneː, respell: hin-NAY}
+      modern-israeli: {ipa: hi.ˈne, respell: hee-NE}
+  - id: gen.1.29.4
+    surface: נָתַ֨תִּי
+    lemma: נָתַן
+    morph: VERB|Conj=Qatal|Gender=Com|Number=Sing|Person=1|Stem=Qal
+    tb: Gen.1.29/012gM
+    lexgloss: give
+    strong: H5414
+    sound:
+      tiberian: {ipa: nɔː.ˈθat.tiː, respell: naw-THAT-tee}
+      modern-israeli: {ipa: na.ˈta.ti, respell: na-TA-tee}
+  - id: gen.1.29.5
+    surface: לָכֶ֜ם
+    lemma: לְ
+    morph: ADP
+    tb: Gen.1.29/01pAw
+    lexgloss: to
+    sound:
+      tiberian: {ipa: lɔː.ˈxɛm, respell: law-KHEM}
+      modern-israeli: {ipa: la.ˈχem, respell: la-KHEM}
+  - id: gen.1.29.6
+    surface: אֶת
+    punct: ־
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.29/01mVV
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: ʔɛθ, respell: ʾeth}
+      modern-israeli: {ipa: ʔet, respell: et}
+  - id: gen.1.29.7
+    surface: כָּל
+    punct: ־
+    lemma: כֹּל
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.29/01FMa
+    lexgloss: whole
+    strong: H3605
+    sound:
+      tiberian: {ipa: kɔːl, respell: kawl}
+      modern-israeli: {ipa: kal, respell: kal}
+  - id: gen.1.29.8
+    surface: עֵ֣שֶׂב
+    punct: ׀
+    lemma: עֶשֶׂב
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.29/01KPU
+    lexgloss: grass
+    strong: H6212
+    sound:
+      tiberian: {ipa: ˈʕeː.sɛv, respell: ʿAY-sev}
+      modern-israeli: {ipa: ˈʔe.sev, respell: E-sev}
+  - id: gen.1.29.9
+    surface: זֹרֵ֣עַ
+    lemma: זָרַע
+    morph: VERB|Conj=PartAct|Gender=Masc|Number=Sing|State=Abs|Stem=Qal
+    tb: Gen.1.29/01ki2
+    lexgloss: sow
+    strong: H2232
+    sound:
+      tiberian: {ipa: zoː.ˈʀeː.aʕ, respell: zoh-RAY-aʿ}
+      modern-israeli: {ipa: zo.ˈʁe.aʔ, respell: zo-RE-a}
+  - id: gen.1.29.10
+    surface: זֶ֗רַע
+    lemma: זֶרַע
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.29/015pZ
+    lexgloss: seed
+    strong: H2233
+    sound:
+      tiberian: {ipa: ˈzɛ.ʀaʕ, respell: ZE-raʿ}
+      modern-israeli: {ipa: ˈze.ʁaʔ, respell: ZE-ra}
+  - id: gen.1.29.11
+    surface: אֲשֶׁר֙
+    lemma: אֲשֶׁר
+    morph: PRON|PartType=Rel
+    tb: Gen.1.29/01HWo
+    lexgloss: who
+    strong: H834
+    sound:
+      tiberian: {ipa: ʔă.ˈʃɛʀ, respell: ʾa-SHER}
+      modern-israeli: {ipa: ʔa.ˈʃeʁ, respell: a-SHER}
+  - id: gen.1.29.12
+    surface: עַל
+    punct: ־
+    lemma: עַל
+    morph: ADP
+    tb: Gen.1.29/01zkA
+    lexgloss: above
+    strong: H5921
+    sound:
+      tiberian: {ipa: ʕal, respell: ʿal}
+      modern-israeli: {ipa: ʔal, respell: al}
+  - id: gen.1.29.13
+    surface: פְּנֵ֣י
+    lemma: פָּנִים
+    morph: NOUN|Gender=Both|Number=Plur|State=Cons
+    tb: Gen.1.29/01JMT
+    lexgloss: face
+    strong: H6440
+    sound:
+      tiberian: {ipa: pă.ˈneː, respell: pa-NAY}
+      modern-israeli: {ipa: pe.ˈne, respell: pe-NE}
+  - id: gen.1.29.14
+    surface: כָל
+    punct: ־
+    lemma: כֹּל
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.29/01jEX
+    lexgloss: whole
+    strong: H3605
+    sound:
+      tiberian: {ipa: xɔːl, respell: khawl}
+      modern-israeli: {ipa: χal, respell: khal}
+  - id: gen.1.29.15
+    surface: הָאָ֔רֶץ
+    lemma: אֶרֶץ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.29/01uUA
+    prefixes:
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: earth
+    strong: H776
+    sound:
+      tiberian: {ipa: hɔː.ˈʔɔː.ʀɛsˁ, respell: haw-ʾAW-reṣ}
+      modern-israeli: {ipa: ha.ˈʔa.ʁets, respell: ha-A-rets}
+  - id: gen.1.29.16
+    surface: וְאֶת
+    punct: ־
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.29/01tKf
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: vă.ʔɛθ, respell: va-ʾeth}
+      modern-israeli: {ipa: ve.ʔet, respell: ve-et}
+  - id: gen.1.29.17
+    surface: כָּל
+    punct: ־
+    lemma: כֹּל
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.29/01awE
+    lexgloss: whole
+    strong: H3605
+    sound:
+      tiberian: {ipa: kɔːl, respell: kawl}
+      modern-israeli: {ipa: kal, respell: kal}
+  - id: gen.1.29.18
+    surface: הָעֵ֛ץ
+    lemma: עֵץ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.29/01yNT
+    prefixes:
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: tree
+    strong: H6086
+    sound:
+      tiberian: {ipa: hɔː.ˈʕeːsˁ, respell: haw-ʿAYṢ}
+      modern-israeli: {ipa: ha.ˈʔets, respell: ha-ETS}
+  - id: gen.1.29.19
+    surface: אֲשֶׁר
+    punct: ־
+    lemma: אֲשֶׁר
+    morph: PRON|PartType=Rel
+    tb: Gen.1.29/01Azu
+    lexgloss: who
+    strong: H834
+    sound:
+      tiberian: {ipa: ʔă.ʃɛʀ, respell: ʾa-sher}
+      modern-israeli: {ipa: ʔa.ʃeʁ, respell: a-sher}
+  - id: gen.1.29.20
+    surface: בּ֥וֹ
+    lemma: בְּ
+    morph: ADP
+    tb: Gen.1.29/01884
+    lexgloss: in
+    sound:
+      tiberian: {ipa: boː, respell: boh}
+      modern-israeli: {ipa: bo, respell: bo}
+  - id: gen.1.29.21
+    surface: פְרִי
+    punct: ־
+    lemma: פְּרִי
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.29/01XMu
+    lexgloss: fruit
+    strong: H6529
+    sound:
+      tiberian: {ipa: fă.ʀiː, respell: fa-ree}
+      modern-israeli: {ipa: fe.ʁi, respell: fe-ree}
+  - id: gen.1.29.22
+    surface: עֵ֖ץ
+    lemma: עֵץ
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.29/01mrn
+    lexgloss: tree
+    strong: H6086
+    sound:
+      tiberian: {ipa: ʕeːsˁ, respell: ʿayṣ}
+      modern-israeli: {ipa: ʔets, respell: ets}
+  - id: gen.1.29.23
+    surface: זֹרֵ֣עַ
+    lemma: זָרַע
+    morph: VERB|Conj=PartAct|Gender=Masc|Number=Sing|State=Abs|Stem=Qal
+    tb: Gen.1.29/01Xh9
+    lexgloss: sow
+    strong: H2232
+    sound:
+      tiberian: {ipa: zoː.ˈʀeː.aʕ, respell: zoh-RAY-aʿ}
+      modern-israeli: {ipa: zo.ˈʁe.aʔ, respell: zo-RE-a}
+  - id: gen.1.29.24
+    surface: זָ֑רַע
+    lemma: זֶרַע
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.29/01D3a
+    lexgloss: seed
+    strong: H2233
+    sound:
+      tiberian: {ipa: ˈzɔː.ʀaʕ, respell: ZAW-raʿ}
+      modern-israeli: {ipa: ˈza.ʁaʔ, respell: ZA-ra}
+  - id: gen.1.29.25
+    surface: לָכֶ֥ם
+    lemma: לְ
+    morph: ADP
+    tb: Gen.1.29/01wEr
+    lexgloss: to
+    sound:
+      tiberian: {ipa: lɔː.ˈxɛm, respell: law-KHEM}
+      modern-israeli: {ipa: la.ˈχem, respell: la-KHEM}
+  - id: gen.1.29.26
+    surface: יִֽהְיֶ֖ה
+    lemma: הָיָה
+    morph: VERB|Conj=Yiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.29/01Rvc
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: jih.ˈjɛː, respell: yih-YEH}
+      modern-israeli: {ipa: jih.ˈje, respell: yeeh-YE}
+  - id: gen.1.29.27
+    surface: לְאָכְלָֽה
+    punct: ׃
+    lemma: אׇכְלָה
+    morph: NOUN|Gender=Fem|Number=Sing|State=Abs
+    tb: Gen.1.29/01c6V
+    prefixes:
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: food
+    strong: H402
+    sound:
+      tiberian: {ipa: lă.ʔɔːx.ˈlɔː, respell: la-ʾawkh-LAW}
+      modern-israeli: {ipa: le.ʔaχ.ˈla, respell: le-akh-LA}
+- id: gen.1.30
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.30
+  text: וּֽלְכָל־ חַיַּ֣ת הָ֠אָרֶץ וּלְכָל־ ע֨וֹף הַשָּׁמַ֜יִם וּלְכֹ֣ל׀ רוֹמֵ֣שׂ עַל־ הָאָ֗רֶץ אֲשֶׁר־ בּוֹ֙ נֶ֣פֶשׁ חַיָּ֔ה אֶת־ כָּל־ יֶ֥רֶק עֵ֖שֶׂב לְאָכְלָ֑ה וַֽיְהִי־ כֵֽן׃
+  tokens:
+  - id: gen.1.30.1
+    surface: וּֽלְכָל
+    punct: ־
+    lemma: כֹּל
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.30/018eM
+    prefixes:
+    - {form: וּֽ, gloss: and, morph: CCONJ}
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: whole
+    strong: H3605
+    sound:
+      tiberian: {ipa: uː.lă.xɔːl, respell: oo-la-khawl}
+      modern-israeli: {ipa: u.le.χal, respell: oo-le-khal}
+  - id: gen.1.30.2
+    surface: חַיַּ֣ת
+    lemma: חַי
+    morph: NOUN|Gender=Fem|Number=Sing|State=Cons
+    tb: Gen.1.30/01xkK
+    lexgloss: alive
+    strong: H2416
+    sound:
+      tiberian: {ipa: ħaj.ˈjaθ, respell: ḥay-YATH}
+      modern-israeli: {ipa: χa.ˈjat, respell: kha-YAT}
+  - id: gen.1.30.3
+    surface: הָ֠אָרֶץ
+    lemma: אֶרֶץ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.30/01rGa
+    prefixes:
+    - {form: הָ֠, gloss: the, morph: DET|PartType=Art}
+    lexgloss: earth
+    strong: H776
+    sound:
+      tiberian: {ipa: hɔː.ʔɔː.ˈʀɛsˁ, respell: haw-ʾaw-REṢ}
+      modern-israeli: {ipa: ha.ʔa.ˈʁets, respell: ha-a-RETS}
+  - id: gen.1.30.4
+    surface: וּלְכָל
+    punct: ־
+    lemma: כֹּל
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.30/01fp1
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: whole
+    strong: H3605
+    sound:
+      tiberian: {ipa: uːl.xɔːl, respell: ool-khawl}
+      modern-israeli: {ipa: ul.χal, respell: ool-khal}
+  - id: gen.1.30.5
+    surface: ע֨וֹף
+    lemma: עוֹף
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.30/01Y9g
+    lexgloss: bird
+    strong: H5775
+    sound:
+      tiberian: {ipa: ʕoːf, respell: ʿohf}
+      modern-israeli: {ipa: ʔof, respell: of}
+  - id: gen.1.30.6
+    surface: הַשָּׁמַ֜יִם
+    lemma: שָׁמַיִם
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.30/01mGU
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: sky
+    strong: H8064
+    sound:
+      tiberian: {ipa: haʃ.ʃɔː.ˈma.jim, respell: hash-shaw-MA-yim}
+      modern-israeli: {ipa: ha.ʃa.ˈma.jim, respell: ha-sha-MA-yeem}
+  - id: gen.1.30.7
+    surface: וּלְכֹ֣ל
+    punct: ׀
+    lemma: כֹּל
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.30/01gBW
+    prefixes:
+    - {form: וּ, gloss: and, morph: CCONJ}
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: whole
+    strong: H3605
+    sound:
+      tiberian: {ipa: uːl.ˈxoːl, respell: ool-KHOHL}
+      modern-israeli: {ipa: ul.ˈχol, respell: ool-KHOL}
+  - id: gen.1.30.8
+    surface: רוֹמֵ֣שׂ
+    lemma: רָמַשׂ
+    morph: VERB|Conj=PartAct|Gender=Masc|Number=Sing|State=Abs|Stem=Qal
+    tb: Gen.1.30/01eLD
+    lexgloss: glide swiftly
+    strong: H7430
+    sound:
+      tiberian: {ipa: ʀoː.ˈmeːs, respell: roh-MAYS}
+      modern-israeli: {ipa: ʁo.ˈmes, respell: ro-MES}
+  - id: gen.1.30.9
+    surface: עַל
+    punct: ־
+    lemma: עַל
+    morph: ADP
+    tb: Gen.1.30/0193F
+    lexgloss: above
+    strong: H5921
+    sound:
+      tiberian: {ipa: ʕal, respell: ʿal}
+      modern-israeli: {ipa: ʔal, respell: al}
+  - id: gen.1.30.10
+    surface: הָאָ֗רֶץ
+    lemma: אֶרֶץ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.30/01eyL
+    prefixes:
+    - {form: הָ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: earth
+    strong: H776
+    sound:
+      tiberian: {ipa: hɔː.ˈʔɔː.ʀɛsˁ, respell: haw-ʾAW-reṣ}
+      modern-israeli: {ipa: ha.ˈʔa.ʁets, respell: ha-A-rets}
+  - id: gen.1.30.11
+    surface: אֲשֶׁר
+    punct: ־
+    lemma: אֲשֶׁר
+    morph: PRON|PartType=Rel
+    tb: Gen.1.30/01pm7
+    lexgloss: who
+    strong: H834
+    sound:
+      tiberian: {ipa: ʔă.ʃɛʀ, respell: ʾa-sher}
+      modern-israeli: {ipa: ʔa.ʃeʁ, respell: a-sher}
+  - id: gen.1.30.12
+    surface: בּוֹ֙
+    lemma: בְּ
+    morph: ADP
+    tb: Gen.1.30/01teU
+    lexgloss: in
+    sound:
+      tiberian: {ipa: boː, respell: boh}
+      modern-israeli: {ipa: bo, respell: bo}
+  - id: gen.1.30.13
+    surface: נֶ֣פֶשׁ
+    lemma: נֶפֶשׁ
+    morph: NOUN|Gender=Both|Number=Sing|State=Abs
+    tb: Gen.1.30/01c58
+    lexgloss: breathing creature
+    strong: H5315
+    sound:
+      tiberian: {ipa: ˈnɛ.fɛʃ, respell: NE-fesh}
+      modern-israeli: {ipa: ˈne.feʃ, respell: NE-fesh}
+  - id: gen.1.30.14
+    surface: חַיָּ֔ה
+    lemma: חַי
+    morph: ADJ|Gender=Fem|Number=Sing|State=Abs
+    tb: Gen.1.30/01MRA
+    lexgloss: alive
+    strong: H2416
+    sound:
+      tiberian: {ipa: ħaj.ˈjɔː, respell: ḥay-YAW}
+      modern-israeli: {ipa: χa.ˈja, respell: kha-YA}
+  - id: gen.1.30.15
+    surface: אֶת
+    punct: ־
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.30/01xp4
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: ʔɛθ, respell: ʾeth}
+      modern-israeli: {ipa: ʔet, respell: et}
+  - id: gen.1.30.16
+    surface: כָּל
+    punct: ־
+    lemma: כֹּל
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.30/01Hki
+    lexgloss: whole
+    strong: H3605
+    sound:
+      tiberian: {ipa: kɔːl, respell: kawl}
+      modern-israeli: {ipa: kal, respell: kal}
+  - id: gen.1.30.17
+    surface: יֶ֥רֶק
+    lemma: יֶרֶק
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.30/01QvZ
+    lexgloss: pallor
+    strong: H3418
+    sound:
+      tiberian: {ipa: ˈjɛ.ʀɛq, respell: YE-req}
+      modern-israeli: {ipa: ˈje.ʁek, respell: YE-rek}
+  - id: gen.1.30.18
+    surface: עֵ֖שֶׂב
+    lemma: עֶשֶׂב
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.30/01S38
+    lexgloss: grass
+    strong: H6212
+    sound:
+      tiberian: {ipa: ˈʕeː.sɛv, respell: ʿAY-sev}
+      modern-israeli: {ipa: ˈʔe.sev, respell: E-sev}
+  - id: gen.1.30.19
+    surface: לְאָכְלָ֑ה
+    lemma: אׇכְלָה
+    morph: NOUN|Gender=Fem|Number=Sing|State=Abs
+    tb: Gen.1.30/01eN1
+    prefixes:
+    - {form: לְ, gloss: to, morph: ADP}
+    lexgloss: food
+    strong: H402
+    sound:
+      tiberian: {ipa: lă.ʔɔːx.ˈlɔː, respell: la-ʾawkh-LAW}
+      modern-israeli: {ipa: le.ʔaχ.ˈla, respell: le-akh-LA}
+  - id: gen.1.30.20
+    surface: וַֽיְהִי
+    punct: ־
+    lemma: הָיָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.30/01HoD
+    prefixes:
+    - {form: וַֽ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: vaj.hiː, respell: vay-hee}
+      modern-israeli: {ipa: vaj.hi, respell: vay-hee}
+  - id: gen.1.30.21
+    surface: כֵֽן
+    punct: ׃
+    lemma: כֵּן
+    morph: ADV
+    tb: Gen.1.30/01P5s
+    lexgloss: set upright
+    strong: H3651
+    sound:
+      tiberian: {ipa: xeːn, respell: khayn}
+      modern-israeli: {ipa: χen, respell: khen}
+- id: gen.1.31
+  cite: urn:weft:hbo:tanakh.genesis.wlc-oshb:1.31
+  text: וַיַּ֤רְא אֱלֹהִים֙ אֶת־ כָּל־ אֲשֶׁ֣ר עָשָׂ֔ה וְהִנֵּה־ ט֖וֹב מְאֹ֑ד וַֽיְהִי־ עֶ֥רֶב וַֽיְהִי־ בֹ֖קֶר י֥וֹם הַשִּׁשִּֽׁי׃פ
+  tokens:
+  - id: gen.1.31.1
+    surface: וַיַּ֤רְא
+    lemma: רָאָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.31/015QX
+    prefixes:
+    - {form: וַ, gloss: and, morph: CCONJ}
+    lexgloss: see
+    strong: H7200
+    sound:
+      tiberian: {ipa: vaj.ˈjaʀ, respell: vay-YAR}
+      modern-israeli: {ipa: va.ˈjaʁ, respell: va-YAR}
+  - id: gen.1.31.2
+    surface: אֱלֹהִים֙
+    lemma: אֱלֹהִים
+    morph: NOUN|Gender=Masc|Number=Plur|State=Abs
+    tb: Gen.1.31/01Mxy
+    lexgloss: gods
+    strong: H430
+    sound:
+      tiberian: {ipa: ʔɛ̆.loː.ˈhiːm, respell: ʾe-loh-HEEM}
+      modern-israeli: {ipa: ʔe.lo.ˈhim, respell: e-lo-HEEM}
+  - id: gen.1.31.3
+    surface: אֶת
+    punct: ־
+    lemma: אֵת
+    morph: PART|PartType=Obj
+    tb: Gen.1.31/01w6u
+    lexgloss: self
+    strong: H853
+    sound:
+      tiberian: {ipa: ʔɛθ, respell: ʾeth}
+      modern-israeli: {ipa: ʔet, respell: et}
+  - id: gen.1.31.4
+    surface: כָּל
+    punct: ־
+    lemma: כֹּל
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.31/01e3z
+    lexgloss: whole
+    strong: H3605
+    sound:
+      tiberian: {ipa: kɔːl, respell: kawl}
+      modern-israeli: {ipa: kal, respell: kal}
+  - id: gen.1.31.5
+    surface: אֲשֶׁ֣ר
+    lemma: אֲשֶׁר
+    morph: PRON|PartType=Rel
+    tb: Gen.1.31/012c6
+    lexgloss: who
+    strong: H834
+    sound:
+      tiberian: {ipa: ʔă.ˈʃɛʀ, respell: ʾa-SHER}
+      modern-israeli: {ipa: ʔa.ˈʃeʁ, respell: a-SHER}
+  - id: gen.1.31.6
+    surface: עָשָׂ֔ה
+    lemma: עָשָׂה
+    morph: VERB|Conj=Qatal|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.31/013RL
+    lexgloss: do
+    strong: H6213
+    sound:
+      tiberian: {ipa: ʕɔː.ˈsɔː, respell: ʿaw-SAW}
+      modern-israeli: {ipa: ʔa.ˈsa, respell: a-SA}
+  - id: gen.1.31.7
+    surface: וְהִנֵּה
+    punct: ־
+    lemma: הִנֵּה
+    morph: PRON|PartType=Dem
+    tb: Gen.1.31/01JUf
+    prefixes:
+    - {form: וְ, gloss: and, morph: CCONJ}
+    lexgloss: lo!
+    strong: H2009
+    sound:
+      tiberian: {ipa: vă.hin.neː, respell: va-hin-nay}
+      modern-israeli: {ipa: ve.hi.ne, respell: ve-hee-ne}
+  - id: gen.1.31.8
+    surface: ט֖וֹב
+    lemma: טוֹב
+    morph: ADJ|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.31/01ce9
+    lexgloss: good
+    strong: H2896
+    sound:
+      tiberian: {ipa: tˁoːv, respell: ṭohv}
+      modern-israeli: {ipa: tov, respell: tov}
+  - id: gen.1.31.9
+    surface: מְאֹ֑ד
+    lemma: מְאֹד
+    morph: ADV
+    tb: Gen.1.31/01dPK
+    lexgloss: vehemence
+    strong: H3966
+    sound:
+      tiberian: {ipa: mă.ˈʔoːð, respell: ma-ʾOHDH}
+      modern-israeli: {ipa: me.ˈʔod, respell: me-OD}
+  - id: gen.1.31.10
+    surface: וַֽיְהִי
+    punct: ־
+    lemma: הָיָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.31/01vLv
+    prefixes:
+    - {form: וַֽ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: vaj.hiː, respell: vay-hee}
+      modern-israeli: {ipa: vaj.hi, respell: vay-hee}
+  - id: gen.1.31.11
+    surface: עֶ֥רֶב
+    lemma: עֶרֶב
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.31/01UrG
+    lexgloss: dusk
+    strong: H6153
+    sound:
+      tiberian: {ipa: ˈʕɛ.ʀɛv, respell: ʿE-rev}
+      modern-israeli: {ipa: ˈʔe.ʁev, respell: E-rev}
+  - id: gen.1.31.12
+    surface: וַֽיְהִי
+    punct: ־
+    lemma: הָיָה
+    morph: VERB|Conj=Wayyiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal
+    tb: Gen.1.31/01Sxc
+    prefixes:
+    - {form: וַֽ, gloss: and, morph: CCONJ}
+    lexgloss: exist
+    strong: H1961
+    sound:
+      tiberian: {ipa: vaj.hiː, respell: vay-hee}
+      modern-israeli: {ipa: vaj.hi, respell: vay-hee}
+  - id: gen.1.31.13
+    surface: בֹ֖קֶר
+    lemma: בֹּקֶר
+    morph: NOUN|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.31/01xwN
+    lexgloss: dawn
+    strong: H1242
+    sound:
+      tiberian: {ipa: ˈvoː.qɛʀ, respell: VOH-qer}
+      modern-israeli: {ipa: ˈvo.keʁ, respell: VO-ker}
+  - id: gen.1.31.14
+    surface: י֥וֹם
+    lemma: יוֹם
+    morph: NOUN|Gender=Masc|Number=Sing|State=Cons
+    tb: Gen.1.31/01GjY
+    lexgloss: day
+    strong: H3117
+    sound:
+      tiberian: {ipa: joːm, respell: yohm}
+      modern-israeli: {ipa: jom, respell: yom}
+  - id: gen.1.31.15
+    surface: הַשִּׁשִּֽׁי
+    punct: ׃פ
+    lemma: שִׁשִּׁי
+    morph: NUM|Gender=Masc|Number=Sing|State=Abs
+    tb: Gen.1.31/01KNo
+    prefixes:
+    - {form: הַ, gloss: the, morph: DET|PartType=Art}
+    lexgloss: sixth
+    strong: H8345
+    sound:
+      tiberian: {ipa: haʃ.ʃiʃ.ˈʃiː, respell: hash-shish-SHEE}
+      modern-israeli: {ipa: ha.ʃi.ˈʃi, respell: ha-shee-SHEE}

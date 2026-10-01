@@ -1,4 +1,4 @@
-# Notes for Genesis 1:1-5.
+# Notes for Genesis 1.
 - id: n.gen.1.1.sound
   attach: gen.1.1
   kind: editorial
@@ -39,3 +39,45 @@
   kind: editorial
   status: draft
   text: "Yôm ʾeḥāḏ is 'day one', a cardinal number, where the later days use ordinals: second, third. JPS 1917 keeps it: 'one day'. Geneva and the King James render it 'the first day'. The verse counts the day from evening to morning; Jewish practice, which begins the day at sunset, cites this pattern."
+- id: n.gen.1.6.raqia
+  attach: gen.1.6.4
+  kind: editorial
+  status: draft
+  leans_on: "Strong's Hebrew lexicon, H7549 and H7554; Numbers 17:3 (16:38 in English Bibles)"
+  text: "Rāqîaʿ, 'firmament', is a noun from the root r-q-ʿ, which elsewhere in the Hebrew Bible means to beat or spread out, as metal is hammered into thin plates (Numbers 17:3, 16:38 in English Bibles). The Greek translators rendered it stereōma, a firm or solid thing; the Latin firmamentum follows the Greek, and the English word comes from the Latin. Strong's lexicon gives 'expanse'. Whether the word pictured a solid dome or the visible sky is debated. The chapter says only that it divides the waters above from the waters below, and that God named it 'heavens'."
+- id: n.gen.1.8.refrain
+  attach: gen.1.8
+  kind: editorial
+  status: draft
+  text: "Each day closes with the same two clauses, wayhî ʿereḇ wayhî ḇōqer, 'and there was evening and there was morning', followed by the day's number. The Hebrew has no verb joining evening and morning to the number. JPS 1917 keeps the clauses apart, 'a second day'; Geneva and the King James join them, 'the evening and the morning were the second day'. The first day is counted with the cardinal 'one' (verse 5); from here the days take ordinals: second, third."
+- id: n.gen.1.10.good
+  attach: gen.1.10.12
+  kind: editorial
+  status: draft
+  leans_on: "Septuagint, Genesis 1:8"
+  text: "The days follow a recurring sequence: a command ('and God said, let...'), its fulfilment ('and it was so'), in places a naming, and an approval ('and God saw that it was good'), before the closing refrain. The sequence is not rigid. The second day (verses 6-8) has no approval in the Hebrew text. The Greek Septuagint has one at verse 8, which may reflect a different Hebrew text or a translator filling the pattern. The third day has the approval twice, here and again after the plants (verse 12)."
+- id: n.gen.1.21.tanninim
+  attach: gen.1.21.4
+  kind: editorial
+  status: draft
+  text: "Tannînim is rendered 'great whales' by Geneva and the King James and 'great sea-monsters' by JPS 1917. Elsewhere in the Hebrew Bible tannîn names the serpent that Aaron's staff becomes (Exodus 7:9-12) and a sea creature that God defeats in poetic passages (Isaiah 27:1; Psalm 74:13). Some scholars read its appearance here, as one created kind among others, as a reply to older stories in which a creator god fights the sea; the verse itself says only that God created them. The verb bārāʾ, 'created', returns here for the first time since verse 1."
+- id: n.gen.1.26.letus
+  attach: gen.1.26.3
+  kind: editorial
+  status: draft
+  text: "Naʿăśeh, 'let us make', is first person plural, while the other verbs with ʾĕlōhîm as subject in this chapter are singular (see the note at 1:1). The text does not say whom the plural includes. Readings include a plural of majesty or of self-deliberation, an address to a heavenly court (compare 1 Kings 22:19-22 and Isaiah 6:8), and, in later Christian interpretation, a reference to the Trinity. The next verse returns to the singular: 'in his image'."
+- id: n.gen.1.26.image
+  attach: gen.1.26.5
+  kind: editorial
+  status: draft
+  text: "Ṣelem, 'image', elsewhere usually names a made object, such as cast idols (Numbers 33:52) or the gold models of tumors and mice (1 Samuel 6:5). Dəmûṯ, 'likeness', is a more abstract word for resemblance. Here the two stand in parallel with different prepositions: bə-, 'in', and kə-, 'as' or 'like'. Verse 27 repeats only 'image'. What the image consists of (a physical resemblance, a capacity such as reason, or a role as God's representative, which the following clause on rule may suggest) is a long-standing question that the text does not settle."
+- id: n.gen.1.27.adam
+  attach: gen.1.27.4
+  kind: editorial
+  status: draft
+  text: "ʾĀḏām here reads as a collective, 'humankind': verse 26 continues with a plural verb, 'and let them rule', and this verse moves from 'him' (ʾōṯô) to 'them' (ʾōṯām), 'male and female'. The word shares its consonants with ʾăḏāmâ, 'ground' (verse 25). Bārāʾ, 'created', occurs three times in this verse."
+- id: n.gen.1.31.sixth
+  attach: gen.1.31.15
+  kind: editorial
+  status: draft
+  text: "The sixth day differs from the five before it in two small ways. Its number takes the article, haššiššî, 'the sixth', where days two to five have none (JPS 1917: 'a second day'). Its approval is ṭôḇ məʾōḏ, 'very good', the only intensified approval in the chapter. The seventh day (2:2-3) also takes the article. Some readers take these marks as setting the last two days apart; the text does not comment on them."

@@ -363,3 +363,210 @@ def phonemize(word: str, scheme: str, quantities: dict[str, str] | None = None) 
     if elided:
         resp += "’"
     return {"ipa": ipa, "respell": resp, "syllables": len(syls)}
+
+
+# ---------------------------------------------------------------- hexameter scanner
+# Scans one dactylic hexameter from its words and returns the Weft metre string
+# ("—◡◡|——|...|—×"). Each syllable of the line gets the weights it can bear and a cost for each:
+# a long vowel or diphthong, or a vowel before two consonants, is long at no cost; a short vowel
+# before one consonant is short at no cost. The rules that let a syllable go the other way carry
+# a cost (epic correption, muta cum liquida, metrical lengthening, an alpha, iota or upsilon
+# whose length the quantity table does not give). Every scheme of five dactyls or spondees plus
+# a final —× is tried, and the cheapest one that fits wins. Each costed choice the winner used is
+# reported as a failure class, so a reviewer sees where the scan leaned on a rule.
+# Not modeled: digamma beyond the short list below, lengthening before initial liquids other than
+# as a costed option, and synizesis beyond word-final -εω (others are tried at a cost).
+
+SCANNER_VERSION = "0.1"
+DOUBLE_CONS = {"ζ", "ξ", "ψ"}
+STOPS, LIQUIDS = set("πβφτδθκγχ"), set("λρμν")
+# words that began with digamma (ϝ) in Homer's language, unaccented and lowercase stems; the lost
+# consonant can block correption and resyllabification, so it is offered as an optional consonant
+DIGAMMA_STEMS = ("αναξ", "ανακτ", "ανασσ", "οικ", "ιφι", "εκηβολ", "εκαεργ", "εκαστ", "εργ",
+                 "εοικ", "οινο", "αστυ", "ιδε", "ιδω", "ειδ")
+# word-internal digamma after the augment: ἔδϝεισεν makes the first syllable heavy
+INTERNAL_DIGAMMA = ("εδεισ",)
+COST = {
+    "correption-kept-long": 0.05,   # long final vowel before a vowel, scanned long
+    "mcl-short": 0.4,               # stop + liquid not making position
+    "digamma-neglected": 0.4,       # the lost ϝ not counted
+    "lengthening-final-consonant": 1.0,
+    "lengthening-before-liquid": 1.5,
+    "internal-correption": 1.5,
+    "synizesis-assumed": 1.5,
+    "dichronon-long": 2.0,          # an unlisted α ι υ scanned long
+    "lengthening": 3.0,             # a short vowel scanned long with nothing to make it so
+    "position-ignored": 4.0,
+}
+FLAGGED = {"internal-correption", "synizesis-assumed", "dichronon-long", "lengthening",
+           "lengthening-before-liquid", "lengthening-final-consonant", "position-ignored"}
+
+
+def _bare(w: str) -> str:
+    return "".join(c for c in ud.normalize("NFD", w.lower()) if not ud.combining(c)).replace("ς", "σ")
+
+
+def _scan_units(words: list[str], quantities: dict | None, merge: set[tuple[int, int]]):
+    """-> list of nuclei, each a dict: word index, Letter list, consonants after it (with the word
+    index each consonant belongs to)."""
+    units = []  # ("V", wi, [Letter]) or ("C", wi, Letter)
+    for wi, raw in enumerate(words):
+        w = normalize_elision(raw)
+        for p in PUNCT:
+            w = w.replace(p, "")
+        w = w.rstrip("’")
+        if quantities:
+            w, _ = apply_quantity(w, quantities)
+        seq = nuclei_split(letters(w))
+        vi = [k for k, x in enumerate(seq) if isinstance(x, list)]
+        # synizesis: two adjacent nuclei in one word sounded as one syllable
+        for k in range(len(vi) - 1, 0, -1):
+            a, b = vi[k - 1], vi[k]
+            if b == a + 1 and (wi, k - 1) in merge:
+                seq[a] = seq[a] + seq[b] + [Letter("·")]   # "·" marks a merged, long nucleus
+                del seq[b]
+        for x in seq:
+            units.append(("V", wi, x) if isinstance(x, list) else ("C", wi, x))
+    nuclei = []
+    for k, u in enumerate(units):
+        if u[0] != "V":
+            continue
+        cons = []
+        j = k + 1
+        while j < len(units) and units[j][0] == "C":
+            cons.append((units[j][1], units[j][2].base))
+            j += 1
+        nxt_wi = units[j][1] if j < len(units) else None
+        nuclei.append({"wi": u[1], "nuc": u[2], "cons": cons, "next_wi": nxt_wi})
+    return nuclei
+
+
+def _synizesis_candidates(words: list[str], quantities, marked: set[str]):
+    """-> (forced merges, optional merges): (word index, nucleus index) pairs whose nucleus joins
+    the next. Word-final -εω (the Homeric genitive) and marked words are forced; any other ε
+    before a vowel is optional at a cost."""
+    forced, optional = set(), set()
+    for wi, raw in enumerate(words):
+        w = normalize_elision(raw)
+        for p in PUNCT:
+            w = w.replace(p, "")
+        w = w.rstrip("’")
+        if quantities:
+            w, _ = apply_quantity(w, quantities)
+        seq = nuclei_split(letters(w))
+        vi = [k for k, x in enumerate(seq) if isinstance(x, list)]
+        for k in range(len(vi) - 1):
+            a, b = vi[k], vi[k + 1]
+            if b != a + 1 or seq[a][-1].base != "ε" or len(seq[a]) != 1 or DIAER in seq[b][0].marks:
+                continue
+            is_final = k + 1 == len(vi) - 1 and b == len(seq) - 1
+            if (is_final and _bare(seq[b][0].base) == "ω" and len(seq[b]) == 1) or _bare(raw).rstrip("’") in marked:
+                forced.add((wi, k))
+            else:
+                optional.add((wi, k))
+    return forced, optional
+
+
+def _options(n: dict, words: list[str], last: bool, digamma) -> dict:
+    """-> {"L": (cost, reason), "S": (cost, reason)} for one syllable."""
+    if last:
+        return {"L": (0, None), "S": (0, None)}
+    nuc = n["nuc"]
+    merged = nuc[-1].base == "·"
+    letters_ = [l for l in nuc if l.base != "·"]
+    if merged or len(letters_) > 1:
+        length = "long"
+    else:
+        l = letters_[0]
+        if l.base in "ηω" or l.marks & {CIRC, IOTA_SUB, MACRON}:
+            length = "long"
+        elif l.base in "εο":
+            length = "short"
+        else:
+            length = "unknown"   # α ι υ with no mark and no table entry
+    cons = n["cons"]
+    wi, nwi = n["wi"], n["next_wi"]
+    word_final = nwi is not None and nwi != wi
+    nxt_digamma = word_final and digamma(words[nwi])
+    units = sum(2 if c in DOUBLE_CONS else 1 for _, c in cons)
+    if not word_final and n.get("first_in_word") and len(cons) == 1 \
+            and _bare(normalize_elision(words[wi])).startswith(INTERNAL_DIGAMMA):
+        units += 1
+    if units >= 2:
+        if length == "long":
+            return {"L": (0, None)}
+        if len(cons) == 2 and cons[0][1] in STOPS and cons[1][1] in LIQUIDS and cons[0][0] == cons[1][0]:
+            return {"L": (0, None), "S": (COST["mcl-short"], "mcl-short")}
+        return {"L": (0, None), "S": (COST["position-ignored"], "position-ignored")}
+    # open syllable, or one consonant that goes to the next syllable
+    if nxt_digamma:
+        if units == 1 or length == "long":
+            return {"L": (0, None), "S": (COST["digamma-neglected"], "digamma-neglected")}
+    if length == "long":
+        if units == 0 and word_final:
+            return {"L": (COST["correption-kept-long"], None), "S": (0, "correption")}
+        if units == 0:
+            return {"L": (0, None), "S": (COST["internal-correption"], "internal-correption")}
+        return {"L": (0, None)}
+    if word_final and units == 1 and cons[0][0] == wi:
+        # a short final syllable closed by its own consonant, before a vowel: the consonant goes
+        # to the next word, but Homer often scans such a syllable long in the princeps
+        return {"S": (0, None), "L": (COST["lengthening-final-consonant"], "lengthening-final-consonant")}
+    if length == "unknown":
+        return {"S": (0, None), "L": (COST["dichronon-long"], "dichronon-long")}
+    if word_final and units == 1 and not cons[0][0] == wi and cons[0][1] in LIQUIDS | {"σ"}:
+        return {"S": (0, None), "L": (COST["lengthening-before-liquid"], "lengthening-before-liquid")}
+    return {"S": (0, None), "L": (COST["lengthening"], "lengthening")}
+
+
+def _feet_patterns():
+    for mask in range(32):
+        feet = ["D" if mask >> (4 - i) & 1 else "S" for i in range(5)]
+        yield feet
+
+
+def scan_hexameter(words: list[str], quantities: dict | None = None, synizesis: set[str] | None = None,
+                   digamma_stems: tuple[str, ...] = DIGAMMA_STEMS) -> tuple[str | None, list[tuple[str, str]]]:
+    """Scan one dactylic hexameter. ``words`` are the line's surfaces as printed (elision marks
+    kept, punctuation tolerated). ``quantities`` is the work's merged quantity table; ``synizesis``
+    names words (unaccented, lowercase) to read with synizesis. Returns (metre string or None,
+    [(failure class, sample)])."""
+    marked = {_bare(s) for s in (synizesis or set())}
+    digamma = lambda w: _bare(normalize_elision(w)).startswith(digamma_stems)
+    forced, optional = _synizesis_candidates(words, quantities, marked)
+    optional = sorted(optional)
+    best = []   # (cost, metre, flags)
+    for m in range(1 << len(optional)):
+        use = {optional[k] for k in range(len(optional)) if m >> k & 1}
+        nuclei = _scan_units(words, quantities, forced | use)
+        seen = set()
+        for n in nuclei:
+            n["first_in_word"] = n["wi"] not in seen
+            seen.add(n["wi"])
+        opts = [_options(n, words, k == len(nuclei) - 1, digamma) for k, n in enumerate(nuclei)]
+        base = COST["synizesis-assumed"] * len(use)
+        for feet in _feet_patterns():
+            tmpl = [w for f in feet for w in ("LSS" if f == "D" else "LL")] + ["L", "X"]
+            if len(tmpl) != len(opts):
+                continue
+            cost, flags = base, [("metre-synizesis-assumed", words[wi]) for wi, _ in sorted(use)]
+            for k, (t, o) in enumerate(zip(tmpl, opts)):
+                if t == "X":
+                    continue
+                if t not in o:
+                    break
+                c, why = o[t]
+                cost += c
+                if why in FLAGGED:
+                    flags.append((f"metre-{why}", f"{words[nuclei[k]['wi']]} (syllable {k + 1})"))
+            else:
+                metre = "|".join({"D": "—◡◡", "S": "——"}[f] for f in feet) + "|—×"
+                best.append((round(cost, 3), metre, flags))
+    if not best:
+        return None, [("metre-no-fit", " ".join(words))]
+    best.sort(key=lambda b: b[0])
+    cost, metre, flags = best[0]
+    ties = [b for b in best[1:] if b[0] == cost and b[1] != metre]
+    if ties:
+        flags = flags + [("metre-ambiguous", f"{metre} or {ties[0][1]}")]
+    return metre, flags

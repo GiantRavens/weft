@@ -114,7 +114,7 @@ def test_havamal_draft_and_check():
         before = (work / "gen/stanzas.yaml").read_text()
         report = draft.run(work)
         assert (work / "gen/stanzas.yaml").read_text() == before
-        assert report["counts"] == {"lines": 19, "tokens": 58}
+        assert report["counts"] == {"lines": 485, "tokens": 1734}
     r = check.run(REPO, "edda-havamal")
     assert r["ok"], r["problems"]
 
@@ -173,7 +173,7 @@ def test_koine_and_john():
         before = (work / "gen/chapter01.yaml").read_text()
         report = draft.run(work)
         assert (work / "gen/chapter01.yaml").read_text() == before
-        assert report["counts"] == {"lines": 5, "tokens": 61}
+        assert report["counts"] == {"lines": 18, "tokens": 252}   # John 1:1-18, the prologue
     r = check.run(REPO, "nt-john")
     assert r["ok"], r["problems"]
 
@@ -197,7 +197,10 @@ def test_hebrew_and_genesis():
         before = (work / "gen/chapter01.yaml").read_text()
         report = draft.run(work)
         assert (work / "gen/chapter01.yaml").read_text() == before
-        assert report["counts"] == {"lines": 5, "tokens": 52}
+        assert report["counts"] == {"lines": 34, "tokens": 469}   # Genesis 1:1-2:3, the creation account
+    g1 = yaml.safe_load((work / "gen/chapter01.yaml").read_text())
+    lahem = next(t for l in g1["lines"] for t in l["tokens"] if t["id"] == "gen.1.28.5")
+    assert lahem["lemma"] == "לְ"            # a preposition with a pronoun suffix is its own word
     r = check.run(REPO, "tanakh-genesis")
     assert r["ok"], r["problems"]
 
@@ -354,7 +357,35 @@ def test_reference_translation_is_cited_not_inlined(tmp_path):
 
 def test_renaissance_works_check():
     """Italian, Renaissance Latin and Middle French works pass their checks."""
-    for work in ("petrarch-canzoniere-1", "pico-oration", "erasmus-praise-of-folly", "machiavelli-prince",
+    for work in ("dante-inferno-1", "petrarch-canzoniere-1", "pico-oration", "erasmus-praise-of-folly", "machiavelli-prince",
                  "more-utopia", "montaigne-essais"):
         r = check.run(REPO, work)
         assert r["ok"], (work, r["problems"])
+
+
+def test_hexameter_scanner_matches_hand_scansion():
+    """The generated metre row equals every hand scansion in curated/ (Odyssey 1.1-10, Iliad 1.1-52):
+    the hand work is the scanner's regression test."""
+    for work in ("homer-odyssey", "homer-iliad"):
+        wd = REPO / "texts" / work
+        gen = yaml.safe_load((wd / "gen" / "book01.yaml").read_text())
+        made = {l["id"]: l.get("metre") for l in gen["lines"]}
+        hand = {}
+        for f in sorted((wd / "curated").glob("*.yaml")):
+            for cs in yaml.safe_load(f.read_text()) or []:
+                for k, v in (cs.get("set") or {}).items():
+                    if isinstance(v, dict) and "metre" in v:
+                        hand[k] = v["metre"]
+        assert hand, work
+        wrong = {k: (made.get(k), v) for k, v in hand.items() if made.get(k) != v}
+        assert not wrong, (work, wrong)
+
+
+def test_glaux_works_keep_treebank_lemmas():
+    """A GLAUx work whose reconciliation breaks loses lemmas silently (Marcus once lost 91%):
+    nearly every generated token must carry a treebank lemma."""
+    for work in ("marcus-meditations", "epictetus-enchiridion", "aristotle-metaphysics"):
+        g = yaml.safe_load((REPO / "texts" / work / "gen" / "sections.yaml").read_text())
+        toks = [t for l in g["lines"] for t in l["tokens"]]
+        with_lemma = sum(1 for t in toks if t.get("lemma"))
+        assert with_lemma / len(toks) > 0.98, (work, with_lemma, len(toks))

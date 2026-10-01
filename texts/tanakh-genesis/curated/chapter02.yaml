@@ -1,0 +1,42 @@
+# Human overlay for Genesis 2:1-3, the seventh day. Lemma and morphology come from OSHB; this file adds glosses.
+# [obj] marks אֵת, the sign of a definite direct object. shavat is glossed "ceased", its plain sense; see the note.
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-01
+  why: verses 2:1-3, hand gloss in the style of chapter 1
+  status: draft
+  set:
+    gen.2.1.1: {gloss: "and-were-finished"}   # כָּלָה
+    gen.2.1.2: {gloss: "the-heavens"}   # שָׁמַיִם
+    gen.2.1.3: {gloss: "and-the-earth"}   # אֶרֶץ
+    gen.2.1.4: {gloss: "and-all-of"}   # כֹּל
+    gen.2.1.5: {gloss: "their-host"}   # צָבָא
+    gen.2.2.1: {gloss: "and-finished"}   # כָּלָה
+    gen.2.2.2: {gloss: "God"}   # אֱלֹהִים
+    gen.2.2.3: {gloss: "in-the-day"}   # יוֹם
+    gen.2.2.4: {gloss: "the-seventh"}   # שְׁבִיעִי
+    gen.2.2.5: {gloss: "his-work"}   # מְלָאכָה
+    gen.2.2.6: {gloss: "which"}   # אֲשֶׁר
+    gen.2.2.7: {gloss: "he-made"}   # עָשָׂה
+    gen.2.2.8: {gloss: "and-ceased"}   # שָׁבַת
+    gen.2.2.9: {gloss: "in-the-day"}   # יוֹם
+    gen.2.2.10: {gloss: "the-seventh"}   # שְׁבִיעִי
+    gen.2.2.11: {gloss: "from-all-of"}   # כֹּל
+    gen.2.2.12: {gloss: "his-work"}   # מְלָאכָה
+    gen.2.2.13: {gloss: "which"}   # אֲשֶׁר
+    gen.2.2.14: {gloss: "he-made"}   # עָשָׂה
+    gen.2.3.1: {gloss: "and-blessed"}   # בָּרַךְ
+    gen.2.3.2: {gloss: "God"}   # אֱלֹהִים
+    gen.2.3.3: {gloss: "[obj]"}   # אֵת
+    gen.2.3.4: {gloss: "day"}   # יוֹם
+    gen.2.3.5: {gloss: "the-seventh"}   # שְׁבִיעִי
+    gen.2.3.6: {gloss: "and-made-holy"}   # קָדַשׁ
+    gen.2.3.7: {gloss: "it"}   # אֵת
+    gen.2.3.8: {gloss: "because"}   # כִּי
+    gen.2.3.9: {gloss: "in-it"}   # בְּ
+    gen.2.3.10: {gloss: "he-ceased"}   # שָׁבַת
+    gen.2.3.11: {gloss: "from-all-of"}   # כֹּל
+    gen.2.3.12: {gloss: "his-work"}   # מְלָאכָה
+    gen.2.3.13: {gloss: "which"}   # אֲשֶׁר
+    gen.2.3.14: {gloss: "created"}   # בָּרָא
+    gen.2.3.15: {gloss: "God"}   # אֱלֹהִים
+    gen.2.3.16: {gloss: "to-make"}   # עָשָׂה

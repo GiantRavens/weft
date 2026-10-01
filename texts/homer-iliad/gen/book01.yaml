@@ -6,6 +6,7 @@ layers:
   lemma: {src: agdt-2.1}
   morph: {src: agdt-2.1}
   sound: {src: weft.greek 0.1}
+  metre: {src: weft.greek hexameter scanner 0.1}
 lines:
 - id: il.1.1
   cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.1
@@ -52,6 +53,7 @@ lines:
     sound:
       restored: {ipa: a.kʰi.lɛ̂ː.os, respell: a-kʰi-LÊ-os}
       erasmian: {ipa: a.xi.ˈlɛː.os, respell: a-khi-LAY-os}
+  metre: —◡◡|—◡◡|——|—◡◡|—◡◡|—×
 - id: il.1.2
   cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.2
   text: οὐλομένην, ἣ μυρίʼ Ἀχαιοῖς ἄλγεʼ ἔθηκε,
@@ -107,6 +109,7 @@ lines:
     sound:
       restored: {ipa: é.tʰɛː.ke, respell: E-tʰê-ke}
       erasmian: {ipa: ˈe.θɛː.ke, respell: E-thay-ke}
+  metre: —◡◡|——|—◡◡|——|—◡◡|—×
 - id: il.1.3
   cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.3
   text: πολλὰς δʼ ἰφθίμους ψυχὰς Ἄϊδι προΐαψεν
@@ -162,6 +165,7 @@ lines:
     sound:
       restored: {ipa: pro.í.a.psen, respell: pro-I-a-psen}
       erasmian: {ipa: pro.ˈi.a.psen, respell: pro-I-a-psen}
+  metre: ——|——|——|—◡◡|—◡◡|—×
 - id: il.1.4
   cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.4
   text: ἡρώων, αὐτοὺς δὲ ἑλώρια τεῦχε κύνεσσιν
@@ -215,6 +219,7 @@ lines:
     sound:
       restored: {ipa: ký.nes.sin, respell: KÜ-nes-sin}
       erasmian: {ipa: ˈky.nes.sin, respell: KÜ-nes-sin}
+  metre: ——|——|—◡◡|—◡◡|—◡◡|—×
 - id: il.1.5
   cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.5
   text: οἰωνοῖσί τε πᾶσι, Διὸς δʼ ἐτελείετο βουλή,
@@ -277,6 +282,7 @@ lines:
     sound:
       restored: {ipa: buː.lɛ́ː, respell: boo-LÊ}
       erasmian: {ipa: buː.ˈlɛː, respell: boo-LAY}
+  metre: ——|—◡◡|—◡◡|—◡◡|—◡◡|—×
 - id: il.1.6
   cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.6
   text: ἐξ οὗ δὴ τὰ πρῶτα διαστήτην ἐρίσαντε
@@ -337,6 +343,7 @@ lines:
     sound:
       restored: {ipa: e.rí.san.te, respell: e-RI-san-te}
       erasmian: {ipa: e.ˈri.san.te, respell: e-RI-san-te}
+  metre: ——|——|—◡◡|——|—◡◡|—×
 - id: il.1.7
   cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.7
   text: Ἀτρεΐδης τε ἄναξ ἀνδρῶν καὶ δῖος Ἀχιλλεύς.
@@ -398,3 +405,2884 @@ lines:
     sound:
       restored: {ipa: a.kʰil.leús, respell: a-kʰil-LEUS}
       erasmian: {ipa: a.xil.ˈleus, respell: a-khil-LYOOS}
+  metre: —◡◡|—◡◡|——|——|—◡◡|—×
+- id: il.1.8
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.8
+  text: τίς τʼ ἄρ σφωε θεῶν ἔριδι ξυνέηκε μάχεσθαι;
+  tokens:
+  - id: il.1.8.1
+    surface: τίς
+    lemma: τίς
+    morph: x--------
+    tb: 2274107/1
+    sound:
+      restored: {ipa: tís, respell: TIS}
+      erasmian: {ipa: ˈtis, respell: TIS}
+  - id: il.1.8.2
+    surface: τʼ
+    lemma: τε
+    morph: g--------
+    tb: 2274107/2
+    sound:
+      restored: {ipa: t, respell: t’}
+      erasmian: {ipa: t, respell: t’}
+  - id: il.1.8.3
+    surface: ἄρ
+    lemma: ἄρα
+    morph: g--------
+    tb: 2274107/3
+    sound:
+      restored: {ipa: ár, respell: AR}
+      erasmian: {ipa: ˈar, respell: AR}
+  - id: il.1.8.4
+    surface: σφωε
+    lemma: σφεῖς
+    morph: p-d---ma-
+    tb: 2274107/4
+    sound:
+      restored: {ipa: spʰɔː.e, respell: spʰaw-e}
+      erasmian: {ipa: sfɔː.e, respell: sfoh-e}
+  - id: il.1.8.5
+    surface: θεῶν
+    lemma: θεός
+    morph: n-p---mg-
+    tb: 2274107/5
+    sound:
+      restored: {ipa: tʰe.ɔ̂ːn, respell: tʰe-AWN}
+      erasmian: {ipa: θe.ˈɔːn, respell: the-OHN}
+  - id: il.1.8.6
+    surface: ἔριδι
+    lemma: ἔρις
+    morph: n-s---fd-
+    tb: 2274107/6
+    sound:
+      restored: {ipa: é.ri.di, respell: E-ri-di}
+      erasmian: {ipa: ˈe.ri.di, respell: E-ri-di}
+  - id: il.1.8.7
+    surface: ξυνέηκε
+    lemma: συνίημι
+    morph: v3saia---
+    tb: 2274107/7
+    sound:
+      restored: {ipa: ksy.né.ɛː.ke, respell: ksü-NE-ê-ke}
+      erasmian: {ipa: ksy.ˈne.ɛː.ke, respell: ksü-NE-ay-ke}
+  - id: il.1.8.8
+    surface: μάχεσθαι
+    punct: ;
+    lemma: μάχομαι
+    morph: v--pne---
+    tb: 2274107/8
+    sound:
+      restored: {ipa: má.kʰes.tʰai, respell: MA-kʰes-tʰai}
+      erasmian: {ipa: ˈma.xes.θai, respell: MA-khes-thai}
+  metre: ——|—◡◡|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.9
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.9
+  text: Λητοῦς καὶ Διὸς υἱός· ὃ γὰρ βασιλῆϊ χολωθεὶς
+  tokens:
+  - id: il.1.9.1
+    surface: Λητοῦς
+    lemma: Λητώ
+    morph: n-s---fg-
+    tb: 2274108/1
+    sound:
+      restored: {ipa: lɛː.tûːs, respell: lê-TOOS}
+      erasmian: {ipa: lɛː.ˈtuːs, respell: lay-TOOS}
+  - id: il.1.9.2
+    surface: καὶ
+    lemma: καί
+    morph: c--------
+    tb: 2274108/2
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: il.1.9.3
+    surface: Διὸς
+    lemma: Ζεύς
+    morph: n-s---mg-
+    tb: 2274108/3
+    sound:
+      restored: {ipa: di.òs, respell: di-os}
+      erasmian: {ipa: di.ˈos, respell: di-OS}
+  - id: il.1.9.4
+    surface: υἱός
+    punct: ·
+    lemma: υἱός
+    morph: n-s---mn-
+    tb: 2274108/4
+    sound:
+      restored: {ipa: hyi.ós, respell: hüi-OS}
+      erasmian: {ipa: hyi.ˈos, respell: hwee-OS}
+  - id: il.1.9.5
+    surface: ὃ
+    lemma: ὁ
+    morph: p-s---mn-
+    tb: 2274109/1
+    sound:
+      restored: {ipa: hò, respell: ho}
+      erasmian: {ipa: ˈho, respell: HO}
+  - id: il.1.9.6
+    surface: γὰρ
+    lemma: γάρ
+    morph: g--------
+    tb: 2274109/2
+    sound:
+      restored: {ipa: ɡàr, respell: gar}
+      erasmian: {ipa: ˈɡar, respell: GAR}
+  - id: il.1.9.7
+    surface: βασιλῆϊ
+    lemma: βασιλεύς
+    morph: n-s---md-
+    tb: 2274109/3
+    sound:
+      restored: {ipa: ba.si.lɛ̂ː.i, respell: ba-si-LÊ-i}
+      erasmian: {ipa: ba.si.ˈlɛː.i, respell: ba-si-LAY-i}
+  - id: il.1.9.8
+    surface: χολωθεὶς
+    lemma: χολόω
+    morph: v-sappmn-
+    tb: 2274109/4
+    sound:
+      restored: {ipa: kʰo.lɔː.tʰèːs, respell: kʰo-law-tʰays}
+      erasmian: {ipa: xo.lɔː.ˈθeis, respell: kho-loh-THAYS}
+  metre: ——|—◡◡|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.10
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.10
+  text: νοῦσον ἀνὰ στρατὸν ὄρσε κακήν, ὀλέκοντο δὲ λαοί,
+  tokens:
+  - id: il.1.10.1
+    surface: νοῦσον
+    lemma: νόσος
+    morph: n-s---fa-
+    tb: 2274109/5
+    sound:
+      restored: {ipa: nûː.son, respell: NOO-son}
+      erasmian: {ipa: ˈnuː.son, respell: NOO-son}
+  - id: il.1.10.2
+    surface: ἀνὰ
+    lemma: ἀνά
+    morph: r--------
+    tb: 2274109/6
+    sound:
+      restored: {ipa: a.nà, respell: a-na}
+      erasmian: {ipa: a.ˈna, respell: a-NA}
+  - id: il.1.10.3
+    surface: στρατὸν
+    lemma: στρατός
+    morph: n-s---ma-
+    tb: 2274109/7
+    sound:
+      restored: {ipa: stra.tòn, respell: stra-ton}
+      erasmian: {ipa: stra.ˈton, respell: stra-TON}
+  - id: il.1.10.4
+    surface: ὄρσε
+    lemma: ὄρνυμι
+    morph: v3saia---
+    tb: 2274109/8
+    sound:
+      restored: {ipa: ór.se, respell: OR-se}
+      erasmian: {ipa: ˈor.se, respell: OR-se}
+  - id: il.1.10.5
+    surface: κακήν
+    punct: ','
+    lemma: κακός
+    morph: a-s---fa-
+    tb: 2274109/9
+    sound:
+      restored: {ipa: ka.kɛ́ːn, respell: ka-KÊN}
+      erasmian: {ipa: ka.ˈkɛːn, respell: ka-KAYN}
+  - id: il.1.10.6
+    surface: ὀλέκοντο
+    lemma: ὀλέκω
+    morph: v3piie---
+    tb: 2274109/11
+    sound:
+      restored: {ipa: o.lé.kon.to, respell: o-LE-kon-to}
+      erasmian: {ipa: o.ˈle.kon.to, respell: o-LE-kon-to}
+  - id: il.1.10.7
+    surface: δὲ
+    lemma: δέ
+    morph: g--------
+    tb: 2274109/12
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: il.1.10.8
+    surface: λαοί
+    punct: ','
+    lemma: λαός
+    morph: n-p---mn-
+    tb: 2274109/13
+    sound:
+      restored: {ipa: laː.oí, respell: laa-OY}
+      erasmian: {ipa: laː.ˈoi, respell: laa-OY}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  metre: —◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.11
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.11
+  text: οὕνεκα τὸν Χρύσην ἠτίμασεν ἀρητῆρα
+  tokens:
+  - id: il.1.11.1
+    surface: οὕνεκα
+    lemma: οὕνεκα
+    morph: c--------
+    tb: 2274109/15
+    sound:
+      restored: {ipa: húː.ne.ka, respell: HOO-ne-ka}
+      erasmian: {ipa: ˈhuː.ne.ka, respell: HOO-ne-ka}
+  - id: il.1.11.2
+    surface: τὸν
+    lemma: ὁ
+    morph: l-s---ma-
+    tb: 2274109/16
+    sound:
+      restored: {ipa: tòn, respell: ton}
+      erasmian: {ipa: ˈton, respell: TON}
+  - id: il.1.11.3
+    surface: Χρύσην
+    lemma: Χρύσης
+    morph: n-s---ma-
+    tb: 2274109/17
+    sound:
+      restored: {ipa: kʰrýː.sɛːn, respell: KʰRÜÜ-sên}
+      erasmian: {ipa: ˈxryː.sɛːn, respell: KHRÜÜ-sayn}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  - id: il.1.11.4
+    surface: ἠτίμασεν
+    lemma: ἀτιμάζω
+    morph: v3saia---
+    tb: 2274109/18
+    sound:
+      restored: {ipa: ɛː.tíː.ma.sen, respell: ê-TEE-ma-sen}
+      erasmian: {ipa: ɛː.ˈtiː.ma.sen, respell: ay-TEE-ma-sen}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  - id: il.1.11.5
+    surface: ἀρητῆρα
+    lemma: ἀρητήρ
+    morph: n-s---fa-
+    tb: 2274109/19
+    sound:
+      restored: {ipa: aː.rɛː.tɛ̂ː.ra, respell: aa-rê-TÊ-ra}
+      erasmian: {ipa: aː.rɛː.ˈtɛː.ra, respell: aa-ray-TAY-ra}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  metre: —◡◡|——|——|—◡◡|——|—×
+- id: il.1.12
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.12
+  text: Ἀτρεΐδης· ὃ γὰρ ἦλθε θοὰς ἐπὶ νῆας Ἀχαιῶν
+  tokens:
+  - id: il.1.12.1
+    surface: Ἀτρεΐδης
+    punct: ·
+    lemma: Ἀτρείδης
+    morph: n-s---mn-
+    tb: 2274109/20
+    sound:
+      restored: {ipa: a.tre.í.dɛːs, respell: a-tre-I-dês}
+      erasmian: {ipa: a.tre.ˈi.dɛːs, respell: a-tre-I-days}
+  - id: il.1.12.2
+    surface: ὃ
+    lemma: ὁ
+    morph: p-s---mn-
+    tb: 2274110/1
+    sound:
+      restored: {ipa: hò, respell: ho}
+      erasmian: {ipa: ˈho, respell: HO}
+  - id: il.1.12.3
+    surface: γὰρ
+    lemma: γάρ
+    morph: g--------
+    tb: 2274110/2
+    sound:
+      restored: {ipa: ɡàr, respell: gar}
+      erasmian: {ipa: ˈɡar, respell: GAR}
+  - id: il.1.12.4
+    surface: ἦλθε
+    lemma: ἔρχομαι
+    morph: v3saia---
+    tb: 2274110/3
+    sound:
+      restored: {ipa: ɛ̂ːl.tʰe, respell: ÊL-tʰe}
+      erasmian: {ipa: ˈɛːl.θe, respell: AYL-the}
+  - id: il.1.12.5
+    surface: θοὰς
+    lemma: θοός
+    morph: a-p---fa-
+    tb: 2274110/4
+    sound:
+      restored: {ipa: tʰo.àːs, respell: tʰo-aas}
+      erasmian: {ipa: θo.ˈaːs, respell: tho-AAS}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  - id: il.1.12.6
+    surface: ἐπὶ
+    lemma: ἐπί
+    morph: r--------
+    tb: 2274110/5
+    sound:
+      restored: {ipa: e.pì, respell: e-pi}
+      erasmian: {ipa: e.ˈpi, respell: e-PI}
+  - id: il.1.12.7
+    surface: νῆας
+    lemma: ναῦς
+    morph: n-p---fa-
+    tb: 2274110/6
+    sound:
+      restored: {ipa: nɛ̂ː.as, respell: NÊ-as}
+      erasmian: {ipa: ˈnɛː.as, respell: NAY-as}
+  - id: il.1.12.8
+    surface: Ἀχαιῶν
+    lemma: Ἀχαιός
+    morph: a-p---mg-
+    tb: 2274110/7
+    sound:
+      restored: {ipa: a.kʰai.ɔ̂ːn, respell: a-kʰai-AWN}
+      erasmian: {ipa: a.xai.ˈɔːn, respell: a-khai-OHN}
+  metre: —◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.13
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.13
+  text: λυσόμενός τε θύγατρα φέρων τʼ ἀπερείσιʼ ἄποινα,
+  tokens:
+  - id: il.1.13.1
+    surface: λυσόμενός
+    lemma: λύω
+    morph: v-sfpmmn-
+    tb: 2274110/8
+    sound:
+      restored: {ipa: lyː.só.me.nós, respell: lüü-SO-me-NOS}
+      erasmian: {ipa: lyː.ˈso.me.ˈnos, respell: lüü-SO-me-NOS}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  - id: il.1.13.2
+    surface: τε
+    lemma: τε
+    morph: g--------
+    tb: 2274110/9
+    sound:
+      restored: {ipa: te, respell: te}
+      erasmian: {ipa: te, respell: te}
+  - id: il.1.13.3
+    surface: θύγατρα
+    lemma: θυγάτηρ
+    morph: n-s---fa-
+    tb: 2274110/10
+    sound:
+      restored: {ipa: tʰý.ɡa.tra, respell: TʰÜ-ga-tra}
+      erasmian: {ipa: ˈθy.ɡa.tra, respell: THÜ-ga-tra}
+  - id: il.1.13.4
+    surface: φέρων
+    lemma: φέρω
+    morph: v-sppamn-
+    tb: 2274110/11
+    sound:
+      restored: {ipa: pʰé.rɔːn, respell: PʰE-rawn}
+      erasmian: {ipa: ˈfe.rɔːn, respell: FE-rohn}
+  - id: il.1.13.5
+    surface: τʼ
+    lemma: τε
+    morph: g--------
+    tb: 2274110/12
+    sound:
+      restored: {ipa: t, respell: t’}
+      erasmian: {ipa: t, respell: t’}
+  - id: il.1.13.6
+    surface: ἀπερείσιʼ
+    lemma: ἀπερείσιος
+    morph: a-p---na-
+    tb: 2274110/13
+    sound:
+      restored: {ipa: a.pe.réː.si, respell: a-pe-RAY-si’}
+      erasmian: {ipa: a.pe.ˈrei.si, respell: a-pe-RAY-si’}
+  - id: il.1.13.7
+    surface: ἄποινα
+    punct: ','
+    lemma: ἄποινα
+    morph: n-p---na-
+    tb: 2274110/14
+    sound:
+      restored: {ipa: á.poi.na, respell: A-poy-na}
+      erasmian: {ipa: ˈa.poi.na, respell: A-poy-na}
+  metre: —◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.14
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.14
+  text: στέμματʼ ἔχων ἐν χερσὶν ἑκηβόλου Ἀπόλλωνος
+  tokens:
+  - id: il.1.14.1
+    surface: στέμματʼ
+    lemma: στέμμα
+    morph: n-p---na-
+    tb: 2274110/16
+    sound:
+      restored: {ipa: stém.mat, respell: STEM-mat’}
+      erasmian: {ipa: ˈstem.mat, respell: STEM-mat’}
+  - id: il.1.14.2
+    surface: ἔχων
+    lemma: ἔχω
+    morph: v-sppamn-
+    tb: 2274110/17
+    sound:
+      restored: {ipa: é.kʰɔːn, respell: E-kʰawn}
+      erasmian: {ipa: ˈe.xɔːn, respell: E-khohn}
+  - id: il.1.14.3
+    surface: ἐν
+    lemma: ἐν
+    morph: r--------
+    tb: 2274110/18
+    sound:
+      restored: {ipa: en, respell: en}
+      erasmian: {ipa: en, respell: en}
+  - id: il.1.14.4
+    surface: χερσὶν
+    lemma: χείρ
+    morph: n-p---fd-
+    tb: 2274110/19
+    sound:
+      restored: {ipa: kʰer.sìn, respell: kʰer-sin}
+      erasmian: {ipa: xer.ˈsin, respell: kher-SIN}
+  - id: il.1.14.5
+    surface: ἑκηβόλου
+    lemma: ἑκηβόλος
+    morph: a-s---mg-
+    tb: 2274110/20
+    sound:
+      restored: {ipa: he.kɛː.bó.luː, respell: he-kê-BO-loo}
+      erasmian: {ipa: he.kɛː.ˈbo.luː, respell: he-kay-BO-loo}
+  - id: il.1.14.6
+    surface: Ἀπόλλωνος
+    lemma: Ἀπόλλων
+    morph: n-s---mg-
+    tb: 2274110/21
+    sound:
+      restored: {ipa: a.pól.lɔː.nos, respell: a-POL-law-nos}
+      erasmian: {ipa: a.ˈpol.lɔː.nos, respell: a-POL-loh-nos}
+  metre: —◡◡|——|—◡◡|—◡◡|——|—×
+- id: il.1.15
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.15
+  text: χρυσέῳ ἀνὰ σκήπτρῳ, καὶ λίσσετο πάντας Ἀχαιούς,
+  tokens:
+  - id: il.1.15.1
+    surface: χρυσέῳ
+    lemma: χρύσεος
+    morph: a-s---nd-
+    tb: 2274110/22
+    sound:
+      restored: {ipa: kʰryː.sé.ɔːi, respell: kʰrüü-SE-awi}
+      erasmian: {ipa: xryː.ˈse.ɔː, respell: khrüü-SE-oh}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  - id: il.1.15.2
+    surface: ἀνὰ
+    lemma: ἀνά
+    morph: r--------
+    tb: 2274110/23
+    sound:
+      restored: {ipa: a.nà, respell: a-na}
+      erasmian: {ipa: a.ˈna, respell: a-NA}
+  - id: il.1.15.3
+    surface: σκήπτρῳ
+    punct: ','
+    lemma: σκῆπτρον
+    morph: n-s---nd-
+    tb: 2274110/24
+    sound:
+      restored: {ipa: skɛ́ːp.trɔːi, respell: SKÊP-trawi}
+      erasmian: {ipa: ˈskɛːp.trɔː, respell: SKAYP-troh}
+  - id: il.1.15.4
+    surface: καὶ
+    lemma: καί
+    morph: c--------
+    tb: 2274110/26
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: il.1.15.5
+    surface: λίσσετο
+    lemma: λίσσομαι
+    morph: v3siie---
+    tb: 2274110/27
+    sound:
+      restored: {ipa: lís.se.to, respell: LIS-se-to}
+      erasmian: {ipa: ˈlis.se.to, respell: LIS-se-to}
+  - id: il.1.15.6
+    surface: πάντας
+    lemma: πᾶς
+    morph: a-p---ma-
+    tb: 2274110/28
+    sound:
+      restored: {ipa: pán.tas, respell: PAN-tas}
+      erasmian: {ipa: ˈpan.tas, respell: PAN-tas}
+  - id: il.1.15.7
+    surface: Ἀχαιούς
+    punct: ','
+    lemma: Ἀχαιός
+    morph: a-p---ma-
+    tb: 2274110/29
+    sound:
+      restored: {ipa: a.kʰai.úːs, respell: a-kʰai-OOS}
+      erasmian: {ipa: a.xai.ˈuːs, respell: a-khai-OOS}
+  metre: —◡◡|——|——|—◡◡|—◡◡|—×
+- id: il.1.16
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.16
+  text: Ἀτρεΐδα δὲ μάλιστα δύω, κοσμήτορε λαῶν·
+  tokens:
+  - id: il.1.16.1
+    surface: Ἀτρεΐδα
+    lemma: Ἀτρείδης
+    morph: n-d---ma-
+    tb: 2274110/31
+    sound:
+      restored: {ipa: a.tre.í.daː, respell: a-tre-I-daa}
+      erasmian: {ipa: a.tre.ˈi.daː, respell: a-tre-I-daa}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  - id: il.1.16.2
+    surface: δὲ
+    lemma: δέ
+    morph: g--------
+    tb: 2274110/32
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: il.1.16.3
+    surface: μάλιστα
+    lemma: μάλιστα
+    morph: d--------
+    tb: 2274110/33
+    sound:
+      restored: {ipa: má.lis.ta, respell: MA-lis-ta}
+      erasmian: {ipa: ˈma.lis.ta, respell: MA-lis-ta}
+  - id: il.1.16.4
+    surface: δύω
+    punct: ','
+    lemma: δύο
+    morph: m--------
+    tb: 2274110/34
+    sound:
+      restored: {ipa: dý.ɔː, respell: DÜ-aw}
+      erasmian: {ipa: ˈdy.ɔː, respell: DÜ-oh}
+  - id: il.1.16.5
+    surface: κοσμήτορε
+    lemma: κοσμήτωρ
+    morph: n-d---ma-
+    tb: 2274110/36
+    sound:
+      restored: {ipa: koz.mɛ́ː.to.re, respell: koz-MÊ-to-re}
+      erasmian: {ipa: kos.ˈmɛː.to.re, respell: kos-MAY-to-re}
+  - id: il.1.16.6
+    surface: λαῶν
+    punct: ·
+    lemma: λαός
+    morph: n-p---mg-
+    tb: 2274110/37
+    sound:
+      restored: {ipa: laː.ɔ̂ːn, respell: laa-AWN}
+      erasmian: {ipa: laː.ˈɔːn, respell: laa-OHN}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  metre: —◡◡|—◡◡|—◡◡|——|—◡◡|—×
+- id: il.1.17
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.17
+  text: Ἀτρεΐδαι τε καὶ ἄλλοι ἐϋκνήμιδες Ἀχαιοί,
+  tokens:
+  - id: il.1.17.1
+    surface: Ἀτρεΐδαι
+    lemma: Ἀτρείδης
+    morph: n-p---mv-
+    tb: 2274111/1
+    sound:
+      restored: {ipa: a.tre.í.dai, respell: a-tre-I-dai}
+      erasmian: {ipa: a.tre.ˈi.dai, respell: a-tre-I-dai}
+  - id: il.1.17.2
+    surface: τε
+    lemma: τε
+    morph: g--------
+    tb: 2274111/2
+    sound:
+      restored: {ipa: te, respell: te}
+      erasmian: {ipa: te, respell: te}
+  - id: il.1.17.3
+    surface: καὶ
+    lemma: καί
+    morph: c--------
+    tb: 2274111/3
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: il.1.17.4
+    surface: ἄλλοι
+    lemma: ἄλλος
+    morph: a-p---mv-
+    tb: 2274111/4
+    sound:
+      restored: {ipa: ál.loi, respell: AL-loy}
+      erasmian: {ipa: ˈal.loi, respell: AL-loy}
+  - id: il.1.17.5
+    surface: ἐϋκνήμιδες
+    lemma: ἐυκνήμις
+    morph: a-p---mv-
+    tb: 2274111/5
+    sound:
+      restored: {ipa: e.yk.nɛ́ː.miː.des, respell: e-ük-NÊ-mee-des}
+      erasmian: {ipa: e.yk.ˈnɛː.miː.des, respell: e-ük-NAY-mee-des}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  - id: il.1.17.6
+    surface: Ἀχαιοί
+    punct: ','
+    lemma: Ἀχαιός
+    morph: a-p---mv-
+    tb: 2274111/6
+    sound:
+      restored: {ipa: a.kʰai.oí, respell: a-kʰai-OY}
+      erasmian: {ipa: a.xai.ˈoi, respell: a-khai-OY}
+  metre: —◡◡|—◡◡|—◡◡|——|—◡◡|—×
+- id: il.1.18
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.18
+  text: ὑμῖν μὲν θεοὶ δοῖεν Ὀλύμπια δώματʼ ἔχοντες
+  tokens:
+  - id: il.1.18.1
+    surface: ὑμῖν
+    lemma: σύ
+    morph: p-p----d-
+    tb: 2274111/8
+    sound:
+      restored: {ipa: hyː.mîːn, respell: hüü-MEEN}
+      erasmian: {ipa: hyː.ˈmiːn, respell: hüü-MEEN}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  - id: il.1.18.2
+    surface: μὲν
+    lemma: μέν
+    morph: g--------
+    tb: 2274111/9
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: il.1.18.3
+    surface: θεοὶ
+    lemma: θεός
+    morph: n-p---mn-
+    tb: 2274111/10
+    sound:
+      restored: {ipa: tʰe.oì, respell: tʰe-oy}
+      erasmian: {ipa: θe.ˈoi, respell: the-OY}
+  - id: il.1.18.4
+    surface: δοῖεν
+    lemma: δίδωμι
+    morph: v3paoa---
+    tb: 2274111/11
+    sound:
+      restored: {ipa: dôi.en, respell: DOY-en}
+      erasmian: {ipa: ˈdoi.en, respell: DOY-en}
+  - id: il.1.18.5
+    surface: Ὀλύμπια
+    lemma: Ὀλύμπιος
+    morph: a-p---na-
+    tb: 2274111/12
+    sound:
+      restored: {ipa: o.lým.pi.a, respell: o-LÜM-pi-a}
+      erasmian: {ipa: o.ˈlym.pi.a, respell: o-LÜM-pi-a}
+  - id: il.1.18.6
+    surface: δώματʼ
+    lemma: δῶμα
+    morph: n-p---na-
+    tb: 2274111/13
+    sound:
+      restored: {ipa: dɔ́ː.mat, respell: DAW-mat’}
+      erasmian: {ipa: ˈdɔː.mat, respell: DOH-mat’}
+  - id: il.1.18.7
+    surface: ἔχοντες
+    lemma: ἔχω
+    morph: v-pppamn-
+    tb: 2274111/14
+    sound:
+      restored: {ipa: é.kʰon.tes, respell: E-kʰon-tes}
+      erasmian: {ipa: ˈe.xon.tes, respell: E-khon-tes}
+  metre: ——|——|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.19
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.19
+  text: ἐκπέρσαι Πριάμοιο πόλιν, εὖ δʼ οἴκαδʼ ἱκέσθαι·
+  tokens:
+  - id: il.1.19.1
+    surface: ἐκπέρσαι
+    lemma: ἐκπέρθω
+    morph: v--ana---
+    tb: 2274111/15
+    sound:
+      restored: {ipa: ek.pér.sai, respell: ek-PER-sai}
+      erasmian: {ipa: ek.ˈper.sai, respell: ek-PER-sai}
+  - id: il.1.19.2
+    surface: Πριάμοιο
+    lemma: Πρίαμος
+    morph: n-s---mg-
+    tb: 2274111/16
+    sound:
+      restored: {ipa: pri.á.moi.o, respell: pri-A-moy-o}
+      erasmian: {ipa: pri.ˈa.moi.o, respell: pri-A-moy-o}
+  - id: il.1.19.3
+    surface: πόλιν
+    punct: ','
+    lemma: πόλις
+    morph: n-s---fa-
+    tb: 2274111/17
+    sound:
+      restored: {ipa: pó.lin, respell: PO-lin}
+      erasmian: {ipa: ˈpo.lin, respell: PO-lin}
+  - id: il.1.19.4
+    surface: εὖ
+    lemma: εὖ
+    morph: d--------
+    tb: 2274111/19
+    sound:
+      restored: {ipa: êu, respell: EU}
+      erasmian: {ipa: ˈeu, respell: YOO}
+  - id: il.1.19.5
+    surface: δʼ
+    lemma: δέ
+    morph: g--------
+    tb: 2274111/20
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: il.1.19.6
+    surface: οἴκαδʼ
+    lemma: οἴκαδε
+    morph: d--------
+    tb: 2274111/21
+    sound:
+      restored: {ipa: oí.kad, respell: OY-kad’}
+      erasmian: {ipa: ˈoi.kad, respell: OY-kad’}
+  - id: il.1.19.7
+    surface: ἱκέσθαι
+    punct: ·
+    lemma: ἱκνέομαι
+    morph: v--anm---
+    tb: 2274111/22
+    sound:
+      restored: {ipa: hi.kés.tʰai, respell: hi-KES-tʰai}
+      erasmian: {ipa: hi.ˈkes.θai, respell: hi-KES-thai}
+  metre: ——|—◡◡|—◡◡|——|—◡◡|—×
+- id: il.1.20
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.20
+  text: παῖδα δʼ ἐμοὶ λύσαιτε φίλην, τὰ δʼ ἄποινα δέχεσθαι,
+  tokens:
+  - id: il.1.20.1
+    surface: παῖδα
+    lemma: παῖς
+    morph: n-s---fa-
+    tb: 2274112/1
+    sound:
+      restored: {ipa: pâi.da, respell: PAI-da}
+      erasmian: {ipa: ˈpai.da, respell: PAI-da}
+  - id: il.1.20.2
+    surface: δʼ
+    lemma: δέ
+    morph: g--------
+    tb: 2274112/2
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: il.1.20.3
+    surface: ἐμοὶ
+    lemma: ἐγώ
+    morph: p-s---md-
+    tb: 2274112/3
+    sound:
+      restored: {ipa: e.moì, respell: e-moy}
+      erasmian: {ipa: e.ˈmoi, respell: e-MOY}
+  - id: il.1.20.4
+    surface: λύσαιτε
+    lemma: λύω
+    morph: v2paoa---
+    tb: 2274112/4
+    sound:
+      restored: {ipa: lýː.sai.te, respell: LÜÜ-sai-te}
+      erasmian: {ipa: ˈlyː.sai.te, respell: LÜÜ-sai-te}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  - id: il.1.20.5
+    surface: φίλην
+    punct: ','
+    lemma: φίλος
+    morph: a-s---fa-
+    tb: 2274112/5
+    sound:
+      restored: {ipa: pʰí.lɛːn, respell: PʰI-lên}
+      erasmian: {ipa: ˈfi.lɛːn, respell: FI-layn}
+  - id: il.1.20.6
+    surface: τὰ
+    lemma: ὁ
+    morph: l-p---na-
+    tb: 2274112/7
+    sound:
+      restored: {ipa: tà, respell: ta}
+      erasmian: {ipa: ˈta, respell: TA}
+  - id: il.1.20.7
+    surface: δʼ
+    lemma: δέ
+    morph: g--------
+    tb: 2274112/8
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: il.1.20.8
+    surface: ἄποινα
+    lemma: ἄποινα
+    morph: n-p---na-
+    tb: 2274112/9
+    sound:
+      restored: {ipa: á.poi.na, respell: A-poy-na}
+      erasmian: {ipa: ˈa.poi.na, respell: A-poy-na}
+  - id: il.1.20.9
+    surface: δέχεσθαι
+    punct: ','
+    lemma: δέχομαι
+    morph: v--pne---
+    tb: 2274112/10
+    sound:
+      restored: {ipa: dé.kʰes.tʰai, respell: DE-kʰes-tʰai}
+      erasmian: {ipa: ˈde.xes.θai, respell: DE-khes-thai}
+  metre: —◡◡|——|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.21
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.21
+  text: ἁζόμενοι Διὸς υἱὸν ἑκηβόλον Ἀπόλλωνα.
+  tokens:
+  - id: il.1.21.1
+    surface: ἁζόμενοι
+    lemma: ἅζομαι
+    morph: v-pppemn-
+    tb: 2274112/12
+    sound:
+      restored: {ipa: ha.zdó.me.noi, respell: ha-ZDO-me-noy}
+      erasmian: {ipa: ha.ˈdzo.me.noi, respell: ha-DZO-me-noy}
+  - id: il.1.21.2
+    surface: Διὸς
+    lemma: Ζεύς
+    morph: n-s---mg-
+    tb: 2274112/13
+    sound:
+      restored: {ipa: di.òs, respell: di-os}
+      erasmian: {ipa: di.ˈos, respell: di-OS}
+  - id: il.1.21.3
+    surface: υἱὸν
+    lemma: υἱός
+    morph: n-s---ma-
+    tb: 2274112/14
+    sound:
+      restored: {ipa: hyi.òn, respell: hüi-on}
+      erasmian: {ipa: hyi.ˈon, respell: hwee-ON}
+  - id: il.1.21.4
+    surface: ἑκηβόλον
+    lemma: ἑκηβόλος
+    morph: a-s---ma-
+    tb: 2274112/15
+    sound:
+      restored: {ipa: he.kɛː.bó.lon, respell: he-kê-BO-lon}
+      erasmian: {ipa: he.kɛː.ˈbo.lon, respell: he-kay-BO-lon}
+  - id: il.1.21.5
+    surface: Ἀπόλλωνα
+    punct: .
+    lemma: Ἀπόλλων
+    morph: n-s---ma-
+    tb: 2274112/16
+    sound:
+      restored: {ipa: a.pól.lɔː.na, respell: a-POL-law-na}
+      erasmian: {ipa: a.ˈpol.lɔː.na, respell: a-POL-loh-na}
+  metre: —◡◡|—◡◡|—◡◡|—◡◡|——|—×
+- id: il.1.22
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.22
+  text: ἔνθʼ ἄλλοι μὲν πάντες ἐπευφήμησαν Ἀχαιοὶ
+  tokens:
+  - id: il.1.22.1
+    surface: ἔνθʼ
+    lemma: ἔνθα
+    morph: d--------
+    tb: 2274113/1
+    sound:
+      restored: {ipa: éntʰ, respell: ENTʰ’}
+      erasmian: {ipa: ˈenθ, respell: ENTH’}
+  - id: il.1.22.2
+    surface: ἄλλοι
+    lemma: ἄλλος
+    morph: a-p---mn-
+    tb: 2274113/2
+    sound:
+      restored: {ipa: ál.loi, respell: AL-loy}
+      erasmian: {ipa: ˈal.loi, respell: AL-loy}
+  - id: il.1.22.3
+    surface: μὲν
+    lemma: μέν
+    morph: g--------
+    tb: 2274113/3
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: il.1.22.4
+    surface: πάντες
+    lemma: πᾶς
+    morph: a-p---mn-
+    tb: 2274113/4
+    sound:
+      restored: {ipa: pán.tes, respell: PAN-tes}
+      erasmian: {ipa: ˈpan.tes, respell: PAN-tes}
+  - id: il.1.22.5
+    surface: ἐπευφήμησαν
+    lemma: ἐπευφημέω
+    morph: v3paia---
+    tb: 2274113/5
+    sound:
+      restored: {ipa: e.peu.pʰɛ́ː.mɛː.san, respell: e-peu-PʰÊ-mê-san}
+      erasmian: {ipa: e.peu.ˈfɛː.mɛː.san, respell: e-pyoo-FAY-may-san}
+  - id: il.1.22.6
+    surface: Ἀχαιοὶ
+    lemma: Ἀχαιός
+    morph: a-p---mn-
+    tb: 2274113/6
+    sound:
+      restored: {ipa: a.kʰai.oì, respell: a-kʰai-oy}
+      erasmian: {ipa: a.xai.ˈoi, respell: a-khai-OY}
+  metre: ——|——|—◡◡|——|—◡◡|—×
+- id: il.1.23
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.23
+  text: αἰδεῖσθαί θʼ ἱερῆα καὶ ἀγλαὰ δέχθαι ἄποινα·
+  tokens:
+  - id: il.1.23.1
+    surface: αἰδεῖσθαί
+    lemma: αἰδέομαι
+    morph: v--pne---
+    tb: 2274113/7
+    sound:
+      restored: {ipa: ai.dêːs.tʰaí, respell: ai-DAYS-TʰAI}
+      erasmian: {ipa: ai.ˈdeis.ˈθai, respell: ai-DAYS-THAI}
+  - id: il.1.23.2
+    surface: θʼ
+    lemma: τε
+    morph: g--------
+    tb: 2274113/8
+    sound:
+      restored: {ipa: tʰ, respell: tʰ’}
+      erasmian: {ipa: θ, respell: th’}
+  - id: il.1.23.3
+    surface: ἱερῆα
+    lemma: ἱερεύς
+    morph: n-s---ma-
+    tb: 2274113/9
+    sound:
+      restored: {ipa: hi.e.rɛ̂ː.a, respell: hi-e-RÊ-a}
+      erasmian: {ipa: hi.e.ˈrɛː.a, respell: hi-e-RAY-a}
+  - id: il.1.23.4
+    surface: καὶ
+    lemma: καί
+    morph: c--------
+    tb: 2274113/10
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: il.1.23.5
+    surface: ἀγλαὰ
+    lemma: ἀγλαός
+    morph: a-p---na-
+    tb: 2274113/11
+    sound:
+      restored: {ipa: a.ɡla.à, respell: a-gla-a}
+      erasmian: {ipa: a.ɡla.ˈa, respell: a-gla-A}
+  - id: il.1.23.6
+    surface: δέχθαι
+    lemma: δέχομαι
+    morph: v--anm---
+    tb: 2274113/12
+    sound:
+      restored: {ipa: dékʰ.tʰai, respell: DEKʰ-tʰai}
+      erasmian: {ipa: ˈdex.θai, respell: DEKH-thai}
+  - id: il.1.23.7
+    surface: ἄποινα
+    punct: ·
+    lemma: ἄποινα
+    morph: n-p---na-
+    tb: 2274113/13
+    sound:
+      restored: {ipa: á.poi.na, respell: A-poy-na}
+      erasmian: {ipa: ˈa.poi.na, respell: A-poy-na}
+  metre: ——|—◡◡|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.24
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.24
+  text: ἀλλʼ οὐκ Ἀτρεΐδῃ Ἀγαμέμνονι ἥνδανε θυμῷ,
+  tokens:
+  - id: il.1.24.1
+    surface: ἀλλʼ
+    lemma: ἀλλά
+    morph: d--------
+    tb: 2274114/1
+    sound:
+      restored: {ipa: all, respell: all’}
+      erasmian: {ipa: all, respell: all’}
+  - id: il.1.24.2
+    surface: οὐκ
+    lemma: οὐ
+    morph: d--------
+    tb: 2274114/2
+    sound:
+      restored: {ipa: uːk, respell: ook}
+      erasmian: {ipa: uːk, respell: ook}
+  - id: il.1.24.3
+    surface: Ἀτρεΐδῃ
+    lemma: Ἀτρείδης
+    morph: n-s---md-
+    tb: 2274114/3
+    sound:
+      restored: {ipa: a.tre.í.dɛːi, respell: a-tre-I-dêi}
+      erasmian: {ipa: a.tre.ˈi.dɛː, respell: a-tre-I-day}
+  - id: il.1.24.4
+    surface: Ἀγαμέμνονι
+    lemma: Ἀγαμέμνων
+    morph: n-s---md-
+    tb: 2274114/4
+    sound:
+      restored: {ipa: a.ɡa.mém.no.ni, respell: a-ga-MEM-no-ni}
+      erasmian: {ipa: a.ɡa.ˈmem.no.ni, respell: a-ga-MEM-no-ni}
+  - id: il.1.24.5
+    surface: ἥνδανε
+    lemma: ἁνδάνω
+    morph: v3siia---
+    tb: 2274114/5
+    sound:
+      restored: {ipa: hɛ́ːn.da.ne, respell: HÊN-da-ne}
+      erasmian: {ipa: ˈhɛːn.da.ne, respell: HAYN-da-ne}
+  - id: il.1.24.6
+    surface: θυμῷ
+    punct: ','
+    lemma: θυμός
+    morph: n-s---md-
+    tb: 2274114/6
+    sound:
+      restored: {ipa: tʰyː.mɔ̂ːi, respell: tʰüü-MAWI}
+      erasmian: {ipa: θyː.ˈmɔː, respell: thüü-MOH}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  metre: ——|—◡◡|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.25
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.25
+  text: ἀλλὰ κακῶς ἀφίει, κρατερὸν δʼ ἐπὶ μῦθον ἔτελλε·
+  tokens:
+  - id: il.1.25.1
+    surface: ἀλλὰ
+    lemma: ἀλλά
+    morph: c--------
+    tb: 2274114/8
+    sound:
+      restored: {ipa: al.là, respell: al-la}
+      erasmian: {ipa: al.ˈla, respell: al-LA}
+  - id: il.1.25.2
+    surface: κακῶς
+    lemma: κακός
+    morph: d--------
+    tb: 2274114/9
+    sound:
+      restored: {ipa: ka.kɔ̂ːs, respell: ka-KAWS}
+      erasmian: {ipa: ka.ˈkɔːs, respell: ka-KOHS}
+  - id: il.1.25.3
+    surface: ἀφίει
+    punct: ','
+    lemma: ἀφίημι
+    morph: v3siia---
+    tb: 2274114/10
+    sound:
+      restored: {ipa: a.pʰí.eː, respell: a-PʰI-ay}
+      erasmian: {ipa: a.ˈfi.ei, respell: a-FI-ay}
+  - id: il.1.25.4
+    surface: κρατερὸν
+    lemma: κρατερός
+    morph: a-s---ma-
+    tb: 2274114/12
+    sound:
+      restored: {ipa: kra.te.ròn, respell: kra-te-ron}
+      erasmian: {ipa: kra.te.ˈron, respell: kra-te-RON}
+  - id: il.1.25.5
+    surface: δʼ
+    lemma: δέ
+    morph: g--------
+    tb: 2274114/13
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: il.1.25.6
+    surface: ἐπὶ
+    lemma: ἐπί
+    morph: r--------
+    tb: 2274114/14
+    sound:
+      restored: {ipa: e.pì, respell: e-pi}
+      erasmian: {ipa: e.ˈpi, respell: e-PI}
+  - id: il.1.25.7
+    surface: μῦθον
+    lemma: μῦθος
+    morph: n-s---ma-
+    tb: 2274114/15
+    sound:
+      restored: {ipa: mŷː.tʰon, respell: MÜÜ-tʰon}
+      erasmian: {ipa: ˈmyː.θon, respell: MÜÜ-thon}
+  - id: il.1.25.8
+    surface: ἔτελλε
+    punct: ·
+    lemma: τέλλω
+    morph: v3siia---
+    tb: 2274114/16
+    sound:
+      restored: {ipa: é.tel.le, respell: E-tel-le}
+      erasmian: {ipa: ˈe.tel.le, respell: E-tel-le}
+  metre: —◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.26
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.26
+  text: μή σε γέρον κοίλῃσιν ἐγὼ παρὰ νηυσὶ κιχείω
+  tokens:
+  - id: il.1.26.1
+    surface: μή
+    lemma: μή
+    morph: d--------
+    tb: 2274115/1
+    sound:
+      restored: {ipa: mɛ́ː, respell: MÊ}
+      erasmian: {ipa: ˈmɛː, respell: MAY}
+  - id: il.1.26.2
+    surface: σε
+    lemma: σύ
+    morph: p-s----a-
+    tb: 2274115/2
+    sound:
+      restored: {ipa: se, respell: se}
+      erasmian: {ipa: se, respell: se}
+  - id: il.1.26.3
+    surface: γέρον
+    lemma: γέρων
+    morph: n-s---mv-
+    tb: 2274115/3
+    sound:
+      restored: {ipa: ɡé.ron, respell: GE-ron}
+      erasmian: {ipa: ˈɡe.ron, respell: GE-ron}
+  - id: il.1.26.4
+    surface: κοίλῃσιν
+    lemma: κοῖλος
+    morph: a-p---fd-
+    tb: 2274115/4
+    sound:
+      restored: {ipa: koí.lɛːi.sin, respell: KOY-lêi-sin}
+      erasmian: {ipa: ˈkoi.lɛː.sin, respell: KOY-lay-sin}
+  - id: il.1.26.5
+    surface: ἐγὼ
+    lemma: ἐγώ
+    morph: p-s---mn-
+    tb: 2274115/5
+    sound:
+      restored: {ipa: e.ɡɔ̀ː, respell: e-gaw}
+      erasmian: {ipa: e.ˈɡɔː, respell: e-GOH}
+  - id: il.1.26.6
+    surface: παρὰ
+    lemma: παρά
+    morph: r--------
+    tb: 2274115/6
+    sound:
+      restored: {ipa: pa.rà, respell: pa-ra}
+      erasmian: {ipa: pa.ˈra, respell: pa-RA}
+  - id: il.1.26.7
+    surface: νηυσὶ
+    lemma: ναῦς
+    morph: n-p---fd-
+    tb: 2274115/7
+    sound:
+      restored: {ipa: nɛːu.sì, respell: nêu-si}
+      erasmian: {ipa: nɛːu.ˈsi, respell: nayoo-SI}
+  - id: il.1.26.8
+    surface: κιχείω
+    lemma: κιχάνω
+    morph: v1sasa---
+    tb: 2274115/8
+    sound:
+      restored: {ipa: ki.kʰéː.ɔː, respell: ki-KʰAY-aw}
+      erasmian: {ipa: ki.ˈxei.ɔː, respell: ki-KHAY-oh}
+  metre: —◡◡|——|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.27
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.27
+  text: ἢ νῦν δηθύνοντʼ ἢ ὕστερον αὖτις ἰόντα,
+  tokens:
+  - id: il.1.27.1
+    surface: ἢ
+    lemma: ἤ
+    morph: c--------
+    tb: 2274115/9
+    sound:
+      restored: {ipa: ɛ̀ː, respell: ê}
+      erasmian: {ipa: ˈɛː, respell: AY}
+  - id: il.1.27.2
+    surface: νῦν
+    lemma: νῦν
+    morph: d--------
+    tb: 2274115/10
+    sound:
+      restored: {ipa: nŷːn, respell: NÜÜN}
+      erasmian: {ipa: ˈnyːn, respell: NÜÜN}
+  - id: il.1.27.3
+    surface: δηθύνοντʼ
+    lemma: δηθύνω
+    morph: v-sppama-
+    tb: 2274115/11
+    sound:
+      restored: {ipa: dɛː.tʰýː.nont, respell: dê-TʰÜÜ-nont’}
+      erasmian: {ipa: dɛː.ˈθyː.nont, respell: day-THÜÜ-nont’}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  - id: il.1.27.4
+    surface: ἢ
+    lemma: ἤ
+    morph: c--------
+    tb: 2274115/12
+    sound:
+      restored: {ipa: ɛ̀ː, respell: ê}
+      erasmian: {ipa: ˈɛː, respell: AY}
+  - id: il.1.27.5
+    surface: ὕστερον
+    lemma: ὕστερος
+    morph: a-s---na-
+    tb: 2274115/13
+    sound:
+      restored: {ipa: hýs.te.ron, respell: HÜS-te-ron}
+      erasmian: {ipa: ˈhys.te.ron, respell: HÜS-te-ron}
+  - id: il.1.27.6
+    surface: αὖτις
+    lemma: αὖθις
+    morph: d--------
+    tb: 2274115/14
+    sound:
+      restored: {ipa: âu.tis, respell: OW-tis}
+      erasmian: {ipa: ˈau.tis, respell: OW-tis}
+  - id: il.1.27.7
+    surface: ἰόντα
+    punct: ','
+    lemma: εἶμι
+    morph: v-sppama-
+    tb: 2274115/15
+    sound:
+      restored: {ipa: i.ón.ta, respell: i-ON-ta}
+      erasmian: {ipa: i.ˈon.ta, respell: i-ON-ta}
+  metre: ——|——|——|—◡◡|—◡◡|—×
+- id: il.1.28
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.28
+  text: μή νύ τοι οὐ χραίσμῃ σκῆπτρον καὶ στέμμα θεοῖο·
+  tokens:
+  - id: il.1.28.1
+    surface: μή
+    lemma: μή
+    morph: c--------
+    tb: 2274115/17
+    sound:
+      restored: {ipa: mɛ́ː, respell: MÊ}
+      erasmian: {ipa: ˈmɛː, respell: MAY}
+  - id: il.1.28.2
+    surface: νύ
+    lemma: νῦν
+    morph: d--------
+    tb: 2274115/18
+    sound:
+      restored: {ipa: ný, respell: NÜ}
+      erasmian: {ipa: ˈny, respell: NÜ}
+  - id: il.1.28.3
+    surface: τοι
+    lemma: σύ
+    morph: p-s----d-
+    tb: 2274115/19
+    sound:
+      restored: {ipa: toi, respell: toy}
+      erasmian: {ipa: toi, respell: toy}
+  - id: il.1.28.4
+    surface: οὐ
+    lemma: οὐ
+    morph: d--------
+    tb: 2274115/20
+    sound:
+      restored: {ipa: uː, respell: oo}
+      erasmian: {ipa: uː, respell: oo}
+  - id: il.1.28.5
+    surface: χραίσμῃ
+    lemma: χραισμέω
+    morph: v3sasa---
+    tb: 2274115/21
+    sound:
+      restored: {ipa: kʰraíz.mɛːi, respell: KʰRAIZ-mêi}
+      erasmian: {ipa: ˈxrais.mɛː, respell: KHRAIS-may}
+  - id: il.1.28.6
+    surface: σκῆπτρον
+    lemma: σκῆπτρον
+    morph: n-s---nn-
+    tb: 2274115/22
+    sound:
+      restored: {ipa: skɛ̂ːp.tron, respell: SKÊP-tron}
+      erasmian: {ipa: ˈskɛːp.tron, respell: SKAYP-tron}
+  - id: il.1.28.7
+    surface: καὶ
+    lemma: καί
+    morph: c--------
+    tb: 2274115/23
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: il.1.28.8
+    surface: στέμμα
+    lemma: στέμμα
+    morph: n-s---nn-
+    tb: 2274115/24
+    sound:
+      restored: {ipa: stém.ma, respell: STEM-ma}
+      erasmian: {ipa: ˈstem.ma, respell: STEM-ma}
+  - id: il.1.28.9
+    surface: θεοῖο
+    punct: ·
+    lemma: θεός
+    morph: n-s---mg-
+    tb: 2274115/25
+    sound:
+      restored: {ipa: tʰe.ôi.o, respell: tʰe-OY-o}
+      erasmian: {ipa: θe.ˈoi.o, respell: the-OY-o}
+  metre: —◡◡|——|——|——|—◡◡|—×
+- id: il.1.29
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.29
+  text: τὴν δʼ ἐγὼ οὐ λύσω· πρίν μιν καὶ γῆρας ἔπεισιν
+  tokens:
+  - id: il.1.29.1
+    surface: τὴν
+    lemma: ὁ
+    morph: p-s---fa-
+    tb: 2274116/1
+    sound:
+      restored: {ipa: tɛ̀ːn, respell: tên}
+      erasmian: {ipa: ˈtɛːn, respell: TAYN}
+  - id: il.1.29.2
+    surface: δʼ
+    lemma: δέ
+    morph: g--------
+    tb: 2274116/2
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: il.1.29.3
+    surface: ἐγὼ
+    lemma: ἐγώ
+    morph: p-s---mn-
+    tb: 2274116/3
+    sound:
+      restored: {ipa: e.ɡɔ̀ː, respell: e-gaw}
+      erasmian: {ipa: e.ˈɡɔː, respell: e-GOH}
+  - id: il.1.29.4
+    surface: οὐ
+    lemma: οὐ
+    morph: d--------
+    tb: 2274116/4
+    sound:
+      restored: {ipa: uː, respell: oo}
+      erasmian: {ipa: uː, respell: oo}
+  - id: il.1.29.5
+    surface: λύσω
+    punct: ·
+    lemma: λύω
+    morph: v1sfia---
+    tb: 2274116/5
+    sound:
+      restored: {ipa: lýː.sɔː, respell: LÜÜ-saw}
+      erasmian: {ipa: ˈlyː.sɔː, respell: LÜÜ-soh}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  - id: il.1.29.6
+    surface: πρίν
+    lemma: πρίν
+    morph: d--------
+    tb: 2274117/1
+    sound:
+      restored: {ipa: prín, respell: PRIN}
+      erasmian: {ipa: ˈprin, respell: PRIN}
+  - id: il.1.29.7
+    surface: μιν
+    lemma: μιν
+    morph: p-s---fa-
+    tb: 2274117/2
+    sound:
+      restored: {ipa: min, respell: min}
+      erasmian: {ipa: min, respell: min}
+  - id: il.1.29.8
+    surface: καὶ
+    lemma: καί
+    morph: d--------
+    tb: 2274117/3
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: il.1.29.9
+    surface: γῆρας
+    lemma: γῆρας
+    morph: n-s---nn-
+    tb: 2274117/4
+    sound:
+      restored: {ipa: ɡɛ̂ː.ras, respell: GÊ-ras}
+      erasmian: {ipa: ˈɡɛː.ras, respell: GAY-ras}
+  - id: il.1.29.10
+    surface: ἔπεισιν
+    lemma: ἔπειμι
+    morph: v3spia---
+    tb: 2274117/5
+    sound:
+      restored: {ipa: é.peː.sin, respell: E-pay-sin}
+      erasmian: {ipa: ˈe.pei.sin, respell: E-pay-sin}
+  metre: —◡◡|——|——|——|—◡◡|—×
+- id: il.1.30
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.30
+  text: ἡμετέρῳ ἐνὶ οἴκῳ ἐν Ἄργεϊ τηλόθι πάτρης
+  tokens:
+  - id: il.1.30.1
+    surface: ἡμετέρῳ
+    lemma: ἡμέτερος
+    morph: a-s---md-
+    tb: 2274117/6
+    sound:
+      restored: {ipa: hɛː.me.té.rɔːi, respell: hê-me-TE-rawi}
+      erasmian: {ipa: hɛː.me.ˈte.rɔː, respell: hay-me-TE-roh}
+  - id: il.1.30.2
+    surface: ἐνὶ
+    lemma: ἐν
+    morph: r--------
+    tb: 2274117/7
+    sound:
+      restored: {ipa: e.nì, respell: e-ni}
+      erasmian: {ipa: e.ˈni, respell: e-NI}
+  - id: il.1.30.3
+    surface: οἴκῳ
+    lemma: οἶκος
+    morph: n-s---md-
+    tb: 2274117/8
+    sound:
+      restored: {ipa: oí.kɔːi, respell: OY-kawi}
+      erasmian: {ipa: ˈoi.kɔː, respell: OY-koh}
+  - id: il.1.30.4
+    surface: ἐν
+    lemma: ἐν
+    morph: r--------
+    tb: 2274117/9
+    sound:
+      restored: {ipa: en, respell: en}
+      erasmian: {ipa: en, respell: en}
+  - id: il.1.30.5
+    surface: Ἄργεϊ
+    lemma: Ἄργος
+    morph: n-s---nd-
+    tb: 2274117/10
+    sound:
+      restored: {ipa: ár.ɡe.i, respell: AR-ge-i}
+      erasmian: {ipa: ˈar.ɡe.i, respell: AR-ge-i}
+  - id: il.1.30.6
+    surface: τηλόθι
+    lemma: τηλόθι
+    morph: r--------
+    tb: 2274117/11
+    sound:
+      restored: {ipa: tɛː.ló.tʰi, respell: tê-LO-tʰi}
+      erasmian: {ipa: tɛː.ˈlo.θi, respell: tay-LO-thi}
+  - id: il.1.30.7
+    surface: πάτρης
+    lemma: πάτρη
+    morph: n-s---fg-
+    tb: 2274117/12
+    sound:
+      restored: {ipa: pá.trɛːs, respell: PA-três}
+      erasmian: {ipa: ˈpa.trɛːs, respell: PA-trays}
+  metre: —◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.31
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.31
+  text: ἱστὸν ἐποιχομένην καὶ ἐμὸν λέχος ἀντιόωσαν·
+  tokens:
+  - id: il.1.31.1
+    surface: ἱστὸν
+    lemma: ἱστός
+    morph: n-s---ma-
+    tb: 2274117/13
+    sound:
+      restored: {ipa: his.tòn, respell: his-ton}
+      erasmian: {ipa: his.ˈton, respell: his-TON}
+  - id: il.1.31.2
+    surface: ἐποιχομένην
+    lemma: ἐποίχομαι
+    morph: v-sppefa-
+    tb: 2274117/14
+    sound:
+      restored: {ipa: e.poi.kʰo.mé.nɛːn, respell: e-poy-kʰo-ME-nên}
+      erasmian: {ipa: e.poi.xo.ˈme.nɛːn, respell: e-poy-kho-ME-nayn}
+  - id: il.1.31.3
+    surface: καὶ
+    lemma: καί
+    morph: c--------
+    tb: 2274117/15
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: il.1.31.4
+    surface: ἐμὸν
+    lemma: ἐμός
+    morph: a-s---na-
+    tb: 2274117/16
+    sound:
+      restored: {ipa: e.mòn, respell: e-mon}
+      erasmian: {ipa: e.ˈmon, respell: e-MON}
+  - id: il.1.31.5
+    surface: λέχος
+    lemma: λέχος
+    morph: n-s---na-
+    tb: 2274117/17
+    sound:
+      restored: {ipa: lé.kʰos, respell: LE-kʰos}
+      erasmian: {ipa: ˈle.xos, respell: LE-khos}
+  - id: il.1.31.6
+    surface: ἀντιόωσαν
+    punct: ·
+    lemma: ἀντιάω
+    morph: v-sppafa-
+    tb: 2274117/18
+    sound:
+      restored: {ipa: an.ti.ó.ɔː.san, respell: an-ti-O-aw-san}
+      erasmian: {ipa: an.ti.ˈo.ɔː.san, respell: an-ti-O-oh-san}
+  metre: —◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.32
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.32
+  text: ἀλλʼ ἴθι μή μʼ ἐρέθιζε σαώτερος ὥς κε νέηαι.
+  tokens:
+  - id: il.1.32.1
+    surface: ἀλλʼ
+    lemma: ἀλλά
+    morph: d--------
+    tb: 2274118/1
+    sound:
+      restored: {ipa: all, respell: all’}
+      erasmian: {ipa: all, respell: all’}
+  - id: il.1.32.2
+    surface: ἴθι
+    lemma: εἶμι
+    morph: v2spma---
+    tb: 2274118/2
+    sound:
+      restored: {ipa: í.tʰi, respell: I-tʰi}
+      erasmian: {ipa: ˈi.θi, respell: I-thi}
+  - id: il.1.32.3
+    surface: μή
+    lemma: μή
+    morph: d--------
+    tb: 2274118/3
+    sound:
+      restored: {ipa: mɛ́ː, respell: MÊ}
+      erasmian: {ipa: ˈmɛː, respell: MAY}
+  - id: il.1.32.4
+    surface: μʼ
+    lemma: ἐγώ
+    morph: p-s---ma-
+    tb: 2274118/4
+    sound:
+      restored: {ipa: m, respell: m’}
+      erasmian: {ipa: m, respell: m’}
+  - id: il.1.32.5
+    surface: ἐρέθιζε
+    lemma: ἐρεθίζω
+    morph: v2spma---
+    tb: 2274118/5
+    sound:
+      restored: {ipa: e.ré.tʰi.zde, respell: e-RE-tʰi-zde}
+      erasmian: {ipa: e.ˈre.θi.dze, respell: e-RE-thi-dze}
+  - id: il.1.32.6
+    surface: σαώτερος
+    lemma: σῶς
+    morph: a-s---mnc
+    tb: 2274118/6
+    sound:
+      restored: {ipa: sa.ɔ́ː.te.ros, respell: sa-AW-te-ros}
+      erasmian: {ipa: sa.ˈɔː.te.ros, respell: sa-OH-te-ros}
+  - id: il.1.32.7
+    surface: ὥς
+    lemma: ὡς
+    morph: c--------
+    tb: 2274118/7
+    sound:
+      restored: {ipa: hɔ́ːs, respell: HAWS}
+      erasmian: {ipa: ˈhɔːs, respell: HOHS}
+  - id: il.1.32.8
+    surface: κε
+    lemma: ἄν
+    morph: g--------
+    tb: 2274118/8
+    sound:
+      restored: {ipa: ke, respell: ke}
+      erasmian: {ipa: ke, respell: ke}
+  - id: il.1.32.9
+    surface: νέηαι
+    punct: .
+    lemma: νέομαι
+    morph: v2spse---
+    tb: 2274118/9
+    sound:
+      restored: {ipa: né.ɛː.ai, respell: NE-ê-ai}
+      erasmian: {ipa: ˈne.ɛː.ai, respell: NE-ay-ai}
+  metre: —◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.33
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.33
+  text: ὣς ἔφατʼ, ἔδεισεν δʼ ὃ γέρων καὶ ἐπείθετο μύθῳ·
+  tokens:
+  - id: il.1.33.1
+    surface: ὣς
+    lemma: ὡς
+    morph: d--------
+    tb: 2274119/1
+    sound:
+      restored: {ipa: hɔ̀ːs, respell: haws}
+      erasmian: {ipa: ˈhɔːs, respell: HOHS}
+  - id: il.1.33.2
+    surface: ἔφατʼ
+    punct: ','
+    lemma: φημί
+    morph: v3siie---
+    tb: 2274119/2
+    sound:
+      restored: {ipa: é.pʰat, respell: E-pʰat’}
+      erasmian: {ipa: ˈe.fat, respell: E-fat’}
+  - id: il.1.33.3
+    surface: ἔδεισεν
+    lemma: δείδω
+    morph: v3saia---
+    tb: 2274119/4
+    sound:
+      restored: {ipa: é.deː.sen, respell: E-day-sen}
+      erasmian: {ipa: ˈe.dei.sen, respell: E-day-sen}
+  - id: il.1.33.4
+    surface: δʼ
+    lemma: δέ
+    morph: g--------
+    tb: 2274119/5
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: il.1.33.5
+    surface: ὃ
+    lemma: ὁ
+    morph: l-s---mn-
+    tb: 2274119/6
+    sound:
+      restored: {ipa: hò, respell: ho}
+      erasmian: {ipa: ˈho, respell: HO}
+  - id: il.1.33.6
+    surface: γέρων
+    lemma: γέρων
+    morph: n-s---mn-
+    tb: 2274119/7
+    sound:
+      restored: {ipa: ɡé.rɔːn, respell: GE-rawn}
+      erasmian: {ipa: ˈɡe.rɔːn, respell: GE-rohn}
+  - id: il.1.33.7
+    surface: καὶ
+    lemma: καί
+    morph: c--------
+    tb: 2274119/8
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: il.1.33.8
+    surface: ἐπείθετο
+    lemma: πείθω
+    morph: v3siie---
+    tb: 2274119/9
+    sound:
+      restored: {ipa: e.péː.tʰe.to, respell: e-PAY-tʰe-to}
+      erasmian: {ipa: e.ˈpei.θe.to, respell: e-PAY-the-to}
+  - id: il.1.33.9
+    surface: μύθῳ
+    punct: ·
+    lemma: μῦθος
+    morph: n-s---md-
+    tb: 2274119/10
+    sound:
+      restored: {ipa: mýː.tʰɔːi, respell: MÜÜ-tʰawi}
+      erasmian: {ipa: ˈmyː.θɔː, respell: MÜÜ-thoh}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  metre: —◡◡|——|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.34
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.34
+  text: βῆ δʼ ἀκέων παρὰ θῖνα πολυφλοίσβοιο θαλάσσης·
+  tokens:
+  - id: il.1.34.1
+    surface: βῆ
+    lemma: βαίνω
+    morph: v3saia---
+    tb: 2274120/1
+    sound:
+      restored: {ipa: bɛ̂ː, respell: BÊ}
+      erasmian: {ipa: ˈbɛː, respell: BAY}
+  - id: il.1.34.2
+    surface: δʼ
+    lemma: δέ
+    morph: g--------
+    tb: 2274120/2
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: il.1.34.3
+    surface: ἀκέων
+    lemma: ἀκέων
+    morph: a-s---mn-
+    tb: 2274120/3
+    sound:
+      restored: {ipa: a.ké.ɔːn, respell: a-KE-awn}
+      erasmian: {ipa: a.ˈke.ɔːn, respell: a-KE-ohn}
+  - id: il.1.34.4
+    surface: παρὰ
+    lemma: παρά
+    morph: r--------
+    tb: 2274120/4
+    sound:
+      restored: {ipa: pa.rà, respell: pa-ra}
+      erasmian: {ipa: pa.ˈra, respell: pa-RA}
+  - id: il.1.34.5
+    surface: θῖνα
+    lemma: θίς
+    morph: n-s---fa-
+    tb: 2274120/5
+    sound:
+      restored: {ipa: tʰîː.na, respell: TʰEE-na}
+      erasmian: {ipa: ˈθiː.na, respell: THEE-na}
+  - id: il.1.34.6
+    surface: πολυφλοίσβοιο
+    lemma: πολύφλοισβος
+    morph: a-s---fg-
+    tb: 2274120/6
+    sound:
+      restored: {ipa: po.ly.pʰloíz.boi.o, respell: po-lü-PʰLOYZ-boy-o}
+      erasmian: {ipa: po.ly.ˈflois.boi.o, respell: po-lü-FLOYS-boy-o}
+  - id: il.1.34.7
+    surface: θαλάσσης
+    punct: ·
+    lemma: θάλασσα
+    morph: n-s---fg-
+    tb: 2274120/7
+    sound:
+      restored: {ipa: tʰa.lás.sɛːs, respell: tʰa-LAS-sês}
+      erasmian: {ipa: θa.ˈlas.sɛːs, respell: tha-LAS-says}
+  metre: —◡◡|—◡◡|—◡◡|——|—◡◡|—×
+- id: il.1.35
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.35
+  text: πολλὰ δʼ ἔπειτʼ ἀπάνευθε κιὼν ἠρᾶθʼ ὁ γεραιὸς
+  tokens:
+  - id: il.1.35.1
+    surface: πολλὰ
+    lemma: πολύς
+    morph: a-p---na-
+    tb: 2274121/1
+    sound:
+      restored: {ipa: pol.là, respell: pol-la}
+      erasmian: {ipa: pol.ˈla, respell: pol-LA}
+  - id: il.1.35.2
+    surface: δʼ
+    lemma: δέ
+    morph: g--------
+    tb: 2274121/2
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: il.1.35.3
+    surface: ἔπειτʼ
+    lemma: ἔπειτα
+    morph: d--------
+    tb: 2274121/3
+    sound:
+      restored: {ipa: é.peːt, respell: E-payt’}
+      erasmian: {ipa: ˈe.peit, respell: E-payt’}
+  - id: il.1.35.4
+    surface: ἀπάνευθε
+    lemma: ἀπάνευθε
+    morph: d--------
+    tb: 2274121/4
+    sound:
+      restored: {ipa: a.pá.neu.tʰe, respell: a-PA-neu-tʰe}
+      erasmian: {ipa: a.ˈpa.neu.θe, respell: a-PA-nyoo-the}
+  - id: il.1.35.5
+    surface: κιὼν
+    lemma: κίω
+    morph: v-sapamn-
+    tb: 2274121/5
+    sound:
+      restored: {ipa: ki.ɔ̀ːn, respell: ki-awn}
+      erasmian: {ipa: ki.ˈɔːn, respell: ki-OHN}
+  - id: il.1.35.6
+    surface: ἠρᾶθʼ
+    lemma: ἀράομαι
+    morph: v3siie---
+    tb: 2274121/6
+    sound:
+      restored: {ipa: ɛː.râːtʰ, respell: ê-RAATʰ’}
+      erasmian: {ipa: ɛː.ˈraːθ, respell: ay-RAATH’}
+  - id: il.1.35.7
+    surface: ὁ
+    lemma: ὁ
+    morph: l-s---mn-
+    tb: 2274121/7
+    sound:
+      restored: {ipa: ho, respell: ho}
+      erasmian: {ipa: ho, respell: ho}
+  - id: il.1.35.8
+    surface: γεραιὸς
+    lemma: γεραιός
+    morph: a-s---mn-
+    tb: 2274121/8
+    sound:
+      restored: {ipa: ɡe.rai.òs, respell: ge-rai-os}
+      erasmian: {ipa: ɡe.rai.ˈos, respell: ge-rai-OS}
+  metre: —◡◡|—◡◡|—◡◡|——|—◡◡|—×
+- id: il.1.36
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.36
+  text: Ἀπόλλωνι ἄνακτι, τὸν ἠΰκομος τέκε Λητώ·
+  tokens:
+  - id: il.1.36.1
+    surface: Ἀπόλλωνι
+    lemma: Ἀπόλλων
+    morph: n-s---md-
+    tb: 2274121/9
+    sound:
+      restored: {ipa: a.pól.lɔː.ni, respell: a-POL-law-ni}
+      erasmian: {ipa: a.ˈpol.lɔː.ni, respell: a-POL-loh-ni}
+  - id: il.1.36.2
+    surface: ἄνακτι
+    punct: ','
+    lemma: ἄναξ
+    morph: n-s---md-
+    tb: 2274121/10
+    sound:
+      restored: {ipa: á.nak.ti, respell: A-nak-ti}
+      erasmian: {ipa: ˈa.nak.ti, respell: A-nak-ti}
+  - id: il.1.36.3
+    surface: τὸν
+    lemma: ὁ
+    morph: p-s---ma-
+    tb: 2274121/12
+    sound:
+      restored: {ipa: tòn, respell: ton}
+      erasmian: {ipa: ˈton, respell: TON}
+  - id: il.1.36.4
+    surface: ἠΰκομος
+    lemma: εὔκομος
+    morph: a-s---fn-
+    tb: 2274121/13
+    sound:
+      restored: {ipa: ɛː.ý.ko.mos, respell: ê-Ü-ko-mos}
+      erasmian: {ipa: ɛː.ˈy.ko.mos, respell: ay-Ü-ko-mos}
+  - id: il.1.36.5
+    surface: τέκε
+    lemma: τίκτω
+    morph: v3saia---
+    tb: 2274121/14
+    sound:
+      restored: {ipa: té.ke, respell: TE-ke}
+      erasmian: {ipa: ˈte.ke, respell: TE-ke}
+  - id: il.1.36.6
+    surface: Λητώ
+    punct: ·
+    lemma: Λητώ
+    morph: n-s---fn-
+    tb: 2274121/15
+    sound:
+      restored: {ipa: lɛː.tɔ́ː, respell: lê-TAW}
+      erasmian: {ipa: lɛː.ˈtɔː, respell: lay-TOH}
+  metre: ——|—◡◡|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.37
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.37
+  text: κλῦθί μευ ἀργυρότοξʼ, ὃς Χρύσην ἀμφιβέβηκας
+  tokens:
+  - id: il.1.37.1
+    surface: κλῦθί
+    lemma: κλύω
+    morph: v2sama---
+    tb: 2274122/1
+    sound:
+      restored: {ipa: klŷː.tʰí, respell: KLÜÜ-TʰI}
+      erasmian: {ipa: ˈklyː.ˈθi, respell: KLÜÜ-THI}
+  - id: il.1.37.2
+    surface: μευ
+    lemma: ἐγώ
+    morph: p-s---mg-
+    tb: 2274122/2
+    sound:
+      restored: {ipa: meu, respell: meu}
+      erasmian: {ipa: meu, respell: myoo}
+  - id: il.1.37.3
+    surface: ἀργυρότοξʼ
+    punct: ','
+    lemma: ἀργυρότοξος
+    morph: a-s---mv-
+    tb: 2274122/3
+    sound:
+      restored: {ipa: ar.ɡy.ró.toks, respell: ar-gü-RO-toks’}
+      erasmian: {ipa: ar.ɡy.ˈro.toks, respell: ar-gü-RO-toks’}
+  - id: il.1.37.4
+    surface: ὃς
+    lemma: ὅς
+    morph: p-s---mn-
+    tb: 2274122/5
+    sound:
+      restored: {ipa: hòs, respell: hos}
+      erasmian: {ipa: ˈhos, respell: HOS}
+  - id: il.1.37.5
+    surface: Χρύσην
+    lemma: Χρύση
+    morph: n-s---fa-
+    tb: 2274122/6
+    sound:
+      restored: {ipa: kʰrýː.sɛːn, respell: KʰRÜÜ-sên}
+      erasmian: {ipa: ˈxryː.sɛːn, respell: KHRÜÜ-sayn}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  - id: il.1.37.6
+    surface: ἀμφιβέβηκας
+    lemma: ἀμφιβαίνω
+    morph: v2sria---
+    tb: 2274122/7
+    sound:
+      restored: {ipa: am.pʰi.bé.bɛː.kas, respell: am-pʰi-BE-bê-kas}
+      erasmian: {ipa: am.fi.ˈbe.bɛː.kas, respell: am-fi-BE-bay-kas}
+  metre: —◡◡|—◡◡|——|——|—◡◡|—×
+- id: il.1.38
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.38
+  text: Κίλλαν τε ζαθέην Τενέδοιό τε ἶφι ἀνάσσεις,
+  tokens:
+  - id: il.1.38.1
+    surface: Κίλλαν
+    lemma: Κίλλα
+    morph: n-s---fa-
+    tb: 2274122/8
+    sound:
+      restored: {ipa: kíl.lan, respell: KIL-lan}
+      erasmian: {ipa: ˈkil.lan, respell: KIL-lan}
+  - id: il.1.38.2
+    surface: τε
+    lemma: τε
+    morph: g--------
+    tb: 2274122/9
+    sound:
+      restored: {ipa: te, respell: te}
+      erasmian: {ipa: te, respell: te}
+  - id: il.1.38.3
+    surface: ζαθέην
+    lemma: ζάθεος
+    morph: a-s---fa-
+    tb: 2274122/10
+    sound:
+      restored: {ipa: zda.tʰé.ɛːn, respell: zda-TʰE-ên}
+      erasmian: {ipa: dza.ˈθe.ɛːn, respell: dza-THE-ayn}
+  - id: il.1.38.4
+    surface: Τενέδοιό
+    lemma: Τένεδος
+    morph: n-s---fg-
+    tb: 2274122/11
+    sound:
+      restored: {ipa: te.né.doi.ó, respell: te-NE-doy-O}
+      erasmian: {ipa: te.ˈne.doi.ˈo, respell: te-NE-doy-O}
+  - id: il.1.38.5
+    surface: τε
+    lemma: τε
+    morph: g--------
+    tb: 2274122/12
+    sound:
+      restored: {ipa: te, respell: te}
+      erasmian: {ipa: te, respell: te}
+  - id: il.1.38.6
+    surface: ἶφι
+    lemma: ἶφι
+    morph: d--------
+    tb: 2274122/13
+    sound:
+      restored: {ipa: îː.pʰi, respell: EE-pʰi}
+      erasmian: {ipa: ˈiː.fi, respell: EE-fi}
+  - id: il.1.38.7
+    surface: ἀνάσσεις
+    punct: ','
+    lemma: ἀνάσσω
+    morph: v2spia---
+    tb: 2274122/14
+    sound:
+      restored: {ipa: a.nás.seːs, respell: a-NAS-says}
+      erasmian: {ipa: a.ˈnas.seis, respell: a-NAS-says}
+  metre: ——|—◡◡|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.39
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.39
+  text: Σμινθεῦ εἴ ποτέ τοι χαρίεντʼ ἐπὶ νηὸν ἔρεψα,
+  tokens:
+  - id: il.1.39.1
+    surface: Σμινθεῦ
+    lemma: Σμινθεύς
+    morph: n-s---mv-
+    tb: 2274122/16
+    sound:
+      restored: {ipa: zmin.tʰêu, respell: zmin-TʰEU}
+      erasmian: {ipa: smin.ˈθeu, respell: smin-THYOO}
+  - id: il.1.39.2
+    surface: εἴ
+    lemma: εἰ
+    morph: c--------
+    tb: 2274122/17
+    sound:
+      restored: {ipa: éː, respell: AY}
+      erasmian: {ipa: ˈei, respell: AY}
+  - id: il.1.39.3
+    surface: ποτέ
+    lemma: ποτέ
+    morph: g--------
+    tb: 2274122/18
+    sound:
+      restored: {ipa: po.té, respell: po-TE}
+      erasmian: {ipa: po.ˈte, respell: po-TE}
+  - id: il.1.39.4
+    surface: τοι
+    lemma: σύ
+    morph: p-s----d-
+    tb: 2274122/19
+    sound:
+      restored: {ipa: toi, respell: toy}
+      erasmian: {ipa: toi, respell: toy}
+  - id: il.1.39.5
+    surface: χαρίεντʼ
+    lemma: χαρίεις
+    morph: a-s---md-
+    tb: 2274122/20
+    sound:
+      restored: {ipa: kʰa.rí.ent, respell: kʰa-RI-ent’}
+      erasmian: {ipa: xa.ˈri.ent, respell: kha-RI-ent’}
+  - id: il.1.39.6
+    surface: ἐπὶ
+    lemma: ἐπί
+    morph: r--------
+    tb: 2274122/21
+    sound:
+      restored: {ipa: e.pì, respell: e-pi}
+      erasmian: {ipa: e.ˈpi, respell: e-PI}
+  - id: il.1.39.7
+    surface: νηὸν
+    lemma: ναός
+    morph: n-s---ma-
+    tb: 2274122/22
+    sound:
+      restored: {ipa: nɛː.òn, respell: nê-on}
+      erasmian: {ipa: nɛː.ˈon, respell: nay-ON}
+  - id: il.1.39.8
+    surface: ἔρεψα
+    punct: ','
+    lemma: ἐρέφω
+    morph: v1saia---
+    tb: 2274122/23
+    sound:
+      restored: {ipa: é.re.psa, respell: E-re-psa}
+      erasmian: {ipa: ˈe.re.psa, respell: E-re-psa}
+  metre: ——|—◡◡|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.40
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.40
+  text: ἢ εἰ δή ποτέ τοι κατὰ πίονα μηρίʼ ἔκηα
+  tokens:
+  - id: il.1.40.1
+    surface: ἢ
+    lemma: ἤ
+    morph: c--------
+    tb: 2274122/25
+    sound:
+      restored: {ipa: ɛ̀ː, respell: ê}
+      erasmian: {ipa: ˈɛː, respell: AY}
+  - id: il.1.40.2
+    surface: εἰ
+    lemma: εἰ
+    morph: c--------
+    tb: 2274122/26
+    sound:
+      restored: {ipa: eː, respell: ay}
+      erasmian: {ipa: ei, respell: ay}
+  - id: il.1.40.3
+    surface: δή
+    lemma: δή
+    morph: g--------
+    tb: 2274122/27
+    sound:
+      restored: {ipa: dɛ́ː, respell: DÊ}
+      erasmian: {ipa: ˈdɛː, respell: DAY}
+  - id: il.1.40.4
+    surface: ποτέ
+    lemma: ποτέ
+    morph: g--------
+    tb: 2274122/28
+    sound:
+      restored: {ipa: po.té, respell: po-TE}
+      erasmian: {ipa: po.ˈte, respell: po-TE}
+  - id: il.1.40.5
+    surface: τοι
+    lemma: σύ
+    morph: p-s----d-
+    tb: 2274122/29
+    sound:
+      restored: {ipa: toi, respell: toy}
+      erasmian: {ipa: toi, respell: toy}
+  - id: il.1.40.6
+    surface: κατὰ
+    lemma: κατά
+    morph: r--------
+    tb: 2274122/30
+    sound:
+      restored: {ipa: ka.tà, respell: ka-ta}
+      erasmian: {ipa: ka.ˈta, respell: ka-TA}
+  - id: il.1.40.7
+    surface: πίονα
+    lemma: πίων
+    morph: a-p---na-
+    tb: 2274122/31
+    sound:
+      restored: {ipa: píː.o.na, respell: PEE-o-na}
+      erasmian: {ipa: ˈpiː.o.na, respell: PEE-o-na}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  - id: il.1.40.8
+    surface: μηρίʼ
+    lemma: μηρία
+    morph: n-p---na-
+    tb: 2274122/32
+    sound:
+      restored: {ipa: mɛː.rí, respell: mê-RI’}
+      erasmian: {ipa: mɛː.ˈri, respell: may-RI’}
+  - id: il.1.40.9
+    surface: ἔκηα
+    lemma: καίω
+    morph: v1saia---
+    tb: 2274122/33
+    sound:
+      restored: {ipa: é.kɛː.a, respell: E-kê-a}
+      erasmian: {ipa: ˈe.kɛː.a, respell: E-kay-a}
+  metre: ——|—◡◡|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.41
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.41
+  text: ταύρων ἠδʼ αἰγῶν, τὸ δέ μοι κρήηνον ἐέλδωρ·
+  tokens:
+  - id: il.1.41.1
+    surface: ταύρων
+    lemma: ταῦρος
+    morph: n-p---mg-
+    tb: 2274122/34
+    sound:
+      restored: {ipa: taú.rɔːn, respell: TOW-rawn}
+      erasmian: {ipa: ˈtau.rɔːn, respell: TOW-rohn}
+  - id: il.1.41.2
+    surface: ἠδʼ
+    lemma: ἠδέ
+    morph: c--------
+    tb: 2274122/35
+    sound:
+      restored: {ipa: ɛːd, respell: êd’}
+      erasmian: {ipa: ɛːd, respell: ayd’}
+  - id: il.1.41.3
+    surface: αἰγῶν
+    punct: ','
+    lemma: αἴξ
+    morph: n-p---mg-
+    tb: 2274122/36
+    sound:
+      restored: {ipa: ai.ɡɔ̂ːn, respell: ai-GAWN}
+      erasmian: {ipa: ai.ˈɡɔːn, respell: ai-GOHN}
+  - id: il.1.41.4
+    surface: τὸ
+    lemma: ὁ
+    morph: p-s---na-
+    tb: 2274122/38
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: il.1.41.5
+    surface: δέ
+    lemma: δέ
+    morph: g--------
+    tb: 2274122/39
+    sound:
+      restored: {ipa: dé, respell: DE}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: il.1.41.6
+    surface: μοι
+    lemma: ἐγώ
+    morph: p-s---md-
+    tb: 2274122/40
+    sound:
+      restored: {ipa: moi, respell: moy}
+      erasmian: {ipa: moi, respell: moy}
+  - id: il.1.41.7
+    surface: κρήηνον
+    lemma: κραίνω
+    morph: v2sama---
+    tb: 2274122/41
+    sound:
+      restored: {ipa: krɛ́ː.ɛː.non, respell: KRÊ-ê-non}
+      erasmian: {ipa: ˈkrɛː.ɛː.non, respell: KRAY-ay-non}
+  - id: il.1.41.8
+    surface: ἐέλδωρ
+    punct: ·
+    lemma: ἔλδωρ
+    morph: n-s---na-
+    tb: 2274122/42
+    sound:
+      restored: {ipa: e.él.dɔːr, respell: e-EL-dawr}
+      erasmian: {ipa: e.ˈel.dɔːr, respell: e-EL-dohr}
+  metre: ——|——|—◡◡|——|—◡◡|—×
+- id: il.1.42
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.42
+  text: τίσειαν Δαναοὶ ἐμὰ δάκρυα σοῖσι βέλεσσιν.
+  tokens:
+  - id: il.1.42.1
+    surface: τίσειαν
+    lemma: τίνω
+    morph: v3paoa---
+    tb: 2274123/1
+    sound:
+      restored: {ipa: tíː.seː.an, respell: TEE-say-an}
+      erasmian: {ipa: ˈtiː.sei.an, respell: TEE-say-an}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  - id: il.1.42.2
+    surface: Δαναοὶ
+    lemma: Δαναοί
+    morph: n-p---mn-
+    tb: 2274123/2
+    sound:
+      restored: {ipa: da.na.oì, respell: da-na-oy}
+      erasmian: {ipa: da.na.ˈoi, respell: da-na-OY}
+  - id: il.1.42.3
+    surface: ἐμὰ
+    lemma: ἐμός
+    morph: a-p---na-
+    tb: 2274123/3
+    sound:
+      restored: {ipa: e.mà, respell: e-ma}
+      erasmian: {ipa: e.ˈma, respell: e-MA}
+  - id: il.1.42.4
+    surface: δάκρυα
+    lemma: δάκρυον
+    morph: n-p---na-
+    tb: 2274123/4
+    sound:
+      restored: {ipa: dá.kry.a, respell: DA-krü-a}
+      erasmian: {ipa: ˈda.kry.a, respell: DA-krü-a}
+  - id: il.1.42.5
+    surface: σοῖσι
+    lemma: σός
+    morph: a-p---nd-
+    tb: 2274123/5
+    sound:
+      restored: {ipa: sôi.si, respell: SOY-si}
+      erasmian: {ipa: ˈsoi.si, respell: SOY-si}
+  - id: il.1.42.6
+    surface: βέλεσσιν
+    punct: .
+    lemma: βέλος
+    morph: n-p---nd-
+    tb: 2274123/6
+    sound:
+      restored: {ipa: bé.les.sin, respell: BE-les-sin}
+      erasmian: {ipa: ˈbe.les.sin, respell: BE-les-sin}
+  metre: ——|—◡◡|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.43
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.43
+  text: ὣς ἔφατʼ εὐχόμενος, τοῦ δʼ ἔκλυε Φοῖβος Ἀπόλλων,
+  tokens:
+  - id: il.1.43.1
+    surface: ὣς
+    lemma: ὡς
+    morph: d--------
+    tb: 2274124/1
+    sound:
+      restored: {ipa: hɔ̀ːs, respell: haws}
+      erasmian: {ipa: ˈhɔːs, respell: HOHS}
+  - id: il.1.43.2
+    surface: ἔφατʼ
+    lemma: φημί
+    morph: v3siie---
+    tb: 2274124/2
+    sound:
+      restored: {ipa: é.pʰat, respell: E-pʰat’}
+      erasmian: {ipa: ˈe.fat, respell: E-fat’}
+  - id: il.1.43.3
+    surface: εὐχόμενος
+    punct: ','
+    lemma: εὔχομαι
+    morph: v-sppemn-
+    tb: 2274124/3
+    sound:
+      restored: {ipa: eu.kʰó.me.nos, respell: eu-KʰO-me-nos}
+      erasmian: {ipa: eu.ˈxo.me.nos, respell: yoo-KHO-me-nos}
+  - id: il.1.43.4
+    surface: τοῦ
+    lemma: ὁ
+    morph: p-s---mg-
+    tb: 2274124/5
+    sound:
+      restored: {ipa: tûː, respell: TOO}
+      erasmian: {ipa: ˈtuː, respell: TOO}
+  - id: il.1.43.5
+    surface: δʼ
+    lemma: δέ
+    morph: g--------
+    tb: 2274124/6
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: il.1.43.6
+    surface: ἔκλυε
+    lemma: κλύω
+    morph: v3siia---
+    tb: 2274124/7
+    sound:
+      restored: {ipa: é.kly.e, respell: E-klü-e}
+      erasmian: {ipa: ˈe.kly.e, respell: E-klü-e}
+  - id: il.1.43.7
+    surface: Φοῖβος
+    lemma: Φοῖβος
+    morph: n-s---mn-
+    tb: 2274124/8
+    sound:
+      restored: {ipa: pʰôi.bos, respell: PʰOY-bos}
+      erasmian: {ipa: ˈfoi.bos, respell: FOY-bos}
+  - id: il.1.43.8
+    surface: Ἀπόλλων
+    punct: ','
+    lemma: Ἀπόλλων
+    morph: n-s---mn-
+    tb: 2274124/9
+    sound:
+      restored: {ipa: a.pól.lɔːn, respell: a-POL-lawn}
+      erasmian: {ipa: a.ˈpol.lɔːn, respell: a-POL-lohn}
+  metre: —◡◡|—◡◡|——|—◡◡|—◡◡|—×
+- id: il.1.44
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.44
+  text: βῆ δὲ κατʼ Οὐλύμποιο καρήνων χωόμενος κῆρ,
+  tokens:
+  - id: il.1.44.1
+    surface: βῆ
+    lemma: βαίνω
+    morph: v3saia---
+    tb: 2274124/11
+    sound:
+      restored: {ipa: bɛ̂ː, respell: BÊ}
+      erasmian: {ipa: ˈbɛː, respell: BAY}
+  - id: il.1.44.2
+    surface: δὲ
+    lemma: δέ
+    morph: g--------
+    tb: 2274124/12
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: il.1.44.3
+    surface: κατʼ
+    lemma: κατά
+    morph: r--------
+    tb: 2274124/13
+    sound:
+      restored: {ipa: kat, respell: kat’}
+      erasmian: {ipa: kat, respell: kat’}
+  - id: il.1.44.4
+    surface: Οὐλύμποιο
+    lemma: Ὄλυμπος
+    morph: n-s---mg-
+    tb: 2274124/14
+    sound:
+      restored: {ipa: uː.lým.poi.o, respell: oo-LÜM-poy-o}
+      erasmian: {ipa: uː.ˈlym.poi.o, respell: oo-LÜM-poy-o}
+  - id: il.1.44.5
+    surface: καρήνων
+    lemma: κάρηνον
+    morph: n-p---ng-
+    tb: 2274124/15
+    sound:
+      restored: {ipa: ka.rɛ́ː.nɔːn, respell: ka-RÊ-nawn}
+      erasmian: {ipa: ka.ˈrɛː.nɔːn, respell: ka-RAY-nohn}
+  - id: il.1.44.6
+    surface: χωόμενος
+    lemma: χώομαι
+    morph: v-sppemn-
+    tb: 2274124/16
+    sound:
+      restored: {ipa: kʰɔː.ó.me.nos, respell: kʰaw-O-me-nos}
+      erasmian: {ipa: xɔː.ˈo.me.nos, respell: khoh-O-me-nos}
+  - id: il.1.44.7
+    surface: κῆρ
+    punct: ','
+    lemma: κῆρ
+    morph: n-s---na-
+    tb: 2274124/17
+    sound:
+      restored: {ipa: kɛ̂ːr, respell: KÊR}
+      erasmian: {ipa: ˈkɛːr, respell: KAYR}
+  metre: —◡◡|——|—◡◡|——|—◡◡|—×
+- id: il.1.45
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.45
+  text: τόξʼ ὤμοισιν ἔχων ἀμφηρεφέα τε φαρέτρην·
+  tokens:
+  - id: il.1.45.1
+    surface: τόξʼ
+    lemma: τόξον
+    morph: n-p---na-
+    tb: 2274124/19
+    sound:
+      restored: {ipa: tóks, respell: TOKS’}
+      erasmian: {ipa: ˈtoks, respell: TOKS’}
+  - id: il.1.45.2
+    surface: ὤμοισιν
+    lemma: ὦμος
+    morph: n-p---md-
+    tb: 2274124/20
+    sound:
+      restored: {ipa: ɔ́ː.moi.sin, respell: AW-moy-sin}
+      erasmian: {ipa: ˈɔː.moi.sin, respell: OH-moy-sin}
+  - id: il.1.45.3
+    surface: ἔχων
+    lemma: ἔχω
+    morph: v-sppamn-
+    tb: 2274124/21
+    sound:
+      restored: {ipa: é.kʰɔːn, respell: E-kʰawn}
+      erasmian: {ipa: ˈe.xɔːn, respell: E-khohn}
+  - id: il.1.45.4
+    surface: ἀμφηρεφέα
+    lemma: ἀμφηρεφής
+    morph: a-s---fa-
+    tb: 2274124/22
+    sound:
+      restored: {ipa: am.pʰɛː.re.pʰé.a, respell: am-pʰê-re-PʰE-a}
+      erasmian: {ipa: am.fɛː.re.ˈfe.a, respell: am-fay-re-FE-a}
+  - id: il.1.45.5
+    surface: τε
+    lemma: τε
+    morph: g--------
+    tb: 2274124/23
+    sound:
+      restored: {ipa: te, respell: te}
+      erasmian: {ipa: te, respell: te}
+  - id: il.1.45.6
+    surface: φαρέτρην
+    punct: ·
+    lemma: φαρέτρα
+    morph: n-s---fa-
+    tb: 2274124/24
+    sound:
+      restored: {ipa: pʰa.ré.trɛːn, respell: pʰa-RE-trên}
+      erasmian: {ipa: fa.ˈre.trɛːn, respell: fa-RE-trayn}
+  metre: ——|—◡◡|——|—◡◡|—◡◡|—×
+- id: il.1.46
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.46
+  text: ἔκλαγξαν δʼ ἄρʼ ὀϊστοὶ ἐπʼ ὤμων χωομένοιο,
+  tokens:
+  - id: il.1.46.1
+    surface: ἔκλαγξαν
+    lemma: κλάζω
+    morph: v3paia---
+    tb: 2274125/1
+    sound:
+      restored: {ipa: é.klaŋ.ksan, respell: E-klang-ksan}
+      erasmian: {ipa: ˈe.klaŋ.ksan, respell: E-klang-ksan}
+  - id: il.1.46.2
+    surface: δʼ
+    lemma: δέ
+    morph: g--------
+    tb: 2274125/2
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: il.1.46.3
+    surface: ἄρʼ
+    lemma: ἄρα
+    morph: g--------
+    tb: 2274125/3
+    sound:
+      restored: {ipa: ár, respell: AR’}
+      erasmian: {ipa: ˈar, respell: AR’}
+  - id: il.1.46.4
+    surface: ὀϊστοὶ
+    lemma: ὀιστός
+    morph: n-p---mn-
+    tb: 2274125/4
+    sound:
+      restored: {ipa: o.is.toì, respell: o-is-toy}
+      erasmian: {ipa: o.is.ˈtoi, respell: o-is-TOY}
+  - id: il.1.46.5
+    surface: ἐπʼ
+    lemma: ἐπί
+    morph: r--------
+    tb: 2274125/5
+    sound:
+      restored: {ipa: ep, respell: ep’}
+      erasmian: {ipa: ep, respell: ep’}
+  - id: il.1.46.6
+    surface: ὤμων
+    lemma: ὦμος
+    morph: n-p---mg-
+    tb: 2274125/6
+    sound:
+      restored: {ipa: ɔ́ː.mɔːn, respell: AW-mawn}
+      erasmian: {ipa: ˈɔː.mɔːn, respell: OH-mohn}
+  - id: il.1.46.7
+    surface: χωομένοιο
+    punct: ','
+    lemma: χώομαι
+    morph: v-sppemg-
+    tb: 2274125/7
+    sound:
+      restored: {ipa: kʰɔː.o.mé.noi.o, respell: kʰaw-o-ME-noy-o}
+      erasmian: {ipa: xɔː.o.ˈme.noi.o, respell: khoh-o-ME-noy-o}
+  metre: ——|—◡◡|—◡◡|——|—◡◡|—×
+- id: il.1.47
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.47
+  text: αὐτοῦ κινηθέντος· ὃ δʼ ἤϊε νυκτὶ ἐοικώς.
+  tokens:
+  - id: il.1.47.1
+    surface: αὐτοῦ
+    lemma: αὐτός
+    morph: a-s---mg-
+    tb: 2274125/9
+    sound:
+      restored: {ipa: au.tûː, respell: ow-TOO}
+      erasmian: {ipa: au.ˈtuː, respell: ow-TOO}
+  - id: il.1.47.2
+    surface: κινηθέντος
+    punct: ·
+    lemma: κινέω
+    morph: v-sappmg-
+    tb: 2274125/10
+    sound:
+      restored: {ipa: kiː.nɛː.tʰén.tos, respell: kee-nê-TʰEN-tos}
+      erasmian: {ipa: kiː.nɛː.ˈθen.tos, respell: kee-nay-THEN-tos}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  - id: il.1.47.3
+    surface: ὃ
+    lemma: ὁ
+    morph: p-s---mn-
+    tb: 2274126/1
+    sound:
+      restored: {ipa: hò, respell: ho}
+      erasmian: {ipa: ˈho, respell: HO}
+  - id: il.1.47.4
+    surface: δʼ
+    lemma: δέ
+    morph: g--------
+    tb: 2274126/2
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: il.1.47.5
+    surface: ἤϊε
+    lemma: εἶμι
+    morph: v3siia---
+    tb: 2274126/3
+    sound:
+      restored: {ipa: ɛ́ː.i.e, respell: Ê-i-e}
+      erasmian: {ipa: ˈɛː.i.e, respell: AY-i-e}
+  - id: il.1.47.6
+    surface: νυκτὶ
+    lemma: νύξ
+    morph: n-s---fd-
+    tb: 2274126/4
+    sound:
+      restored: {ipa: nyk.tì, respell: nük-ti}
+      erasmian: {ipa: nyk.ˈti, respell: nük-TI}
+  - id: il.1.47.7
+    surface: ἐοικώς
+    punct: .
+    lemma: ἔοικα
+    morph: v-srpamn-
+    tb: 2274126/5
+    sound:
+      restored: {ipa: e.oi.kɔ́ːs, respell: e-oy-KAWS}
+      erasmian: {ipa: e.oi.ˈkɔːs, respell: e-oy-KOHS}
+  metre: ——|——|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.48
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.48
+  text: ἕζετʼ ἔπειτʼ ἀπάνευθε νεῶν, μετὰ δʼ ἰὸν ἕηκε·
+  tokens:
+  - id: il.1.48.1
+    surface: ἕζετʼ
+    lemma: ἕζομαι
+    morph: v3spie---
+    tb: 2274127/1
+    sound:
+      restored: {ipa: hé.zdet, respell: HE-zdet’}
+      erasmian: {ipa: ˈhe.dzet, respell: HE-dzet’}
+  - id: il.1.48.2
+    surface: ἔπειτʼ
+    lemma: ἔπειτα
+    morph: d--------
+    tb: 2274127/2
+    sound:
+      restored: {ipa: é.peːt, respell: E-payt’}
+      erasmian: {ipa: ˈe.peit, respell: E-payt’}
+  - id: il.1.48.3
+    surface: ἀπάνευθε
+    lemma: ἀπάνευθε
+    morph: r--------
+    tb: 2274127/3
+    sound:
+      restored: {ipa: a.pá.neu.tʰe, respell: a-PA-neu-tʰe}
+      erasmian: {ipa: a.ˈpa.neu.θe, respell: a-PA-nyoo-the}
+  - id: il.1.48.4
+    surface: νεῶν
+    punct: ','
+    lemma: ναῦς
+    morph: n-p---fg-
+    tb: 2274127/4
+    sound:
+      restored: {ipa: ne.ɔ̂ːn, respell: ne-AWN}
+      erasmian: {ipa: ne.ˈɔːn, respell: ne-OHN}
+  - id: il.1.48.5
+    surface: μετὰ
+    lemma: μετά
+    morph: r--------
+    tb: 2274127/6
+    sound:
+      restored: {ipa: me.tà, respell: me-ta}
+      erasmian: {ipa: me.ˈta, respell: me-TA}
+  - id: il.1.48.6
+    surface: δʼ
+    lemma: δέ
+    morph: g--------
+    tb: 2274127/7
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: il.1.48.7
+    surface: ἰὸν
+    lemma: ἰός
+    morph: n-s---ma-
+    tb: 2274127/8
+    sound:
+      restored: {ipa: iː.òn, respell: ee-on}
+      erasmian: {ipa: iː.ˈon, respell: ee-ON}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  - id: il.1.48.8
+    surface: ἕηκε
+    punct: ·
+    lemma: ἵημι
+    morph: v3saia---
+    tb: 2274127/9
+    sound:
+      restored: {ipa: hé.ɛː.ke, respell: HE-ê-ke}
+      erasmian: {ipa: ˈhe.ɛː.ke, respell: HE-ay-ke}
+  metre: —◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.49
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.49
+  text: δεινὴ δὲ κλαγγὴ γένετʼ ἀργυρέοιο βιοῖο·
+  tokens:
+  - id: il.1.49.1
+    surface: δεινὴ
+    lemma: δεινός
+    morph: a-s---fn-
+    tb: 2274128/1
+    sound:
+      restored: {ipa: deː.nɛ̀ː, respell: day-nê}
+      erasmian: {ipa: dei.ˈnɛː, respell: day-NAY}
+  - id: il.1.49.2
+    surface: δὲ
+    lemma: δέ
+    morph: g--------
+    tb: 2274128/2
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: il.1.49.3
+    surface: κλαγγὴ
+    lemma: κλαγγή
+    morph: n-s---fn-
+    tb: 2274128/3
+    sound:
+      restored: {ipa: klaŋ.ɡɛ̀ː, respell: klang-gê}
+      erasmian: {ipa: klaŋ.ˈɡɛː, respell: klang-GAY}
+  - id: il.1.49.4
+    surface: γένετʼ
+    lemma: γίγνομαι
+    morph: v3saim---
+    tb: 2274128/4
+    sound:
+      restored: {ipa: ɡé.net, respell: GE-net’}
+      erasmian: {ipa: ˈɡe.net, respell: GE-net’}
+  - id: il.1.49.5
+    surface: ἀργυρέοιο
+    lemma: ἀργύρεος
+    morph: a-s---mg-
+    tb: 2274128/5
+    sound:
+      restored: {ipa: ar.ɡy.ré.oi.o, respell: ar-gü-RE-oy-o}
+      erasmian: {ipa: ar.ɡy.ˈre.oi.o, respell: ar-gü-RE-oy-o}
+  - id: il.1.49.6
+    surface: βιοῖο
+    punct: ·
+    lemma: βιός
+    morph: n-s---mg-
+    tb: 2274128/6
+    sound:
+      restored: {ipa: bi.ôi.o, respell: bi-OY-o}
+      erasmian: {ipa: bi.ˈoi.o, respell: bi-OY-o}
+  metre: ——|——|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.50
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.50
+  text: οὐρῆας μὲν πρῶτον ἐπῴχετο καὶ κύνας ἀργούς,
+  tokens:
+  - id: il.1.50.1
+    surface: οὐρῆας
+    lemma: ὀρεύς
+    morph: n-p---ma-
+    tb: 2274129/1
+    sound:
+      restored: {ipa: uː.rɛ̂ː.as, respell: oo-RÊ-as}
+      erasmian: {ipa: uː.ˈrɛː.as, respell: oo-RAY-as}
+  - id: il.1.50.2
+    surface: μὲν
+    lemma: μέν
+    morph: g--------
+    tb: 2274129/2
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: il.1.50.3
+    surface: πρῶτον
+    lemma: πρῶτος
+    morph: a-s---na-
+    tb: 2274129/3
+    sound:
+      restored: {ipa: prɔ̂ː.ton, respell: PRAW-ton}
+      erasmian: {ipa: ˈprɔː.ton, respell: PROH-ton}
+  - id: il.1.50.4
+    surface: ἐπῴχετο
+    lemma: ἐποίχομαι
+    morph: v3siie---
+    tb: 2274129/4
+    sound:
+      restored: {ipa: e.pɔːí.kʰe.to, respell: e-PAWI-kʰe-to}
+      erasmian: {ipa: e.ˈpɔː.xe.to, respell: e-POH-khe-to}
+  - id: il.1.50.5
+    surface: καὶ
+    lemma: καί
+    morph: c--------
+    tb: 2274129/5
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: il.1.50.6
+    surface: κύνας
+    lemma: κύων
+    morph: n-p---ma-
+    tb: 2274129/6
+    sound:
+      restored: {ipa: ký.nas, respell: KÜ-nas}
+      erasmian: {ipa: ˈky.nas, respell: KÜ-nas}
+  - id: il.1.50.7
+    surface: ἀργούς
+    punct: ','
+    lemma: ἀργός
+    morph: a-p---ma-
+    tb: 2274129/7
+    sound:
+      restored: {ipa: ar.ɡúːs, respell: ar-GOOS}
+      erasmian: {ipa: ar.ˈɡuːs, respell: ar-GOOS}
+  metre: ——|——|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.51
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.51
+  text: αὐτὰρ ἔπειτʼ αὐτοῖσι βέλος ἐχεπευκὲς ἐφιεὶς
+  tokens:
+  - id: il.1.51.1
+    surface: αὐτὰρ
+    lemma: ἀτάρ
+    morph: c--------
+    tb: 2274129/9
+    sound:
+      restored: {ipa: au.tàr, respell: ow-tar}
+      erasmian: {ipa: au.ˈtar, respell: ow-TAR}
+  - id: il.1.51.2
+    surface: ἔπειτʼ
+    lemma: ἔπειτα
+    morph: d--------
+    tb: 2274129/10
+    sound:
+      restored: {ipa: é.peːt, respell: E-payt’}
+      erasmian: {ipa: ˈe.peit, respell: E-payt’}
+  - id: il.1.51.3
+    surface: αὐτοῖσι
+    lemma: αὐτός
+    morph: a-p---md-
+    tb: 2274129/11
+    sound:
+      restored: {ipa: au.tôi.si, respell: ow-TOY-si}
+      erasmian: {ipa: au.ˈtoi.si, respell: ow-TOY-si}
+  - id: il.1.51.4
+    surface: βέλος
+    lemma: βέλος
+    morph: n-s---na-
+    tb: 2274129/12
+    sound:
+      restored: {ipa: bé.los, respell: BE-los}
+      erasmian: {ipa: ˈbe.los, respell: BE-los}
+  - id: il.1.51.5
+    surface: ἐχεπευκὲς
+    lemma: ἐχεπευκής
+    morph: a-s---na-
+    tb: 2274129/13
+    sound:
+      restored: {ipa: e.kʰe.peu.kès, respell: e-kʰe-peu-kes}
+      erasmian: {ipa: e.xe.peu.ˈkes, respell: e-khe-pyoo-KES}
+  - id: il.1.51.6
+    surface: ἐφιεὶς
+    lemma: ἐφίημι
+    morph: v-sppamn-
+    tb: 2274129/14
+    sound:
+      restored: {ipa: e.pʰiː.èːs, respell: e-pʰee-ays}
+      erasmian: {ipa: e.fiː.ˈeis, respell: e-fee-AYS}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  metre: —◡◡|——|—◡◡|—◡◡|—◡◡|—×
+- id: il.1.52
+  cite: urn:cts:greekLit:tlg0012.tlg001.perseus-grc2:1.52
+  text: βάλλʼ· αἰεὶ δὲ πυραὶ νεκύων καίοντο θαμειαί.
+  tokens:
+  - id: il.1.52.1
+    surface: βάλλʼ
+    punct: ·
+    lemma: βάλλω
+    morph: v3siia---
+    tb: 2274129/15
+    sound:
+      restored: {ipa: báll, respell: BALL’}
+      erasmian: {ipa: ˈball, respell: BALL’}
+  - id: il.1.52.2
+    surface: αἰεὶ
+    lemma: ἀεί
+    morph: d--------
+    tb: 2274130/1
+    sound:
+      restored: {ipa: ai.èː, respell: ai-ay}
+      erasmian: {ipa: ai.ˈei, respell: ai-AY}
+  - id: il.1.52.3
+    surface: δὲ
+    lemma: δέ
+    morph: g--------
+    tb: 2274130/2
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: il.1.52.4
+    surface: πυραὶ
+    lemma: πυρή
+    morph: n-p---fn-
+    tb: 2274130/3
+    sound:
+      restored: {ipa: py.raì, respell: pü-rai}
+      erasmian: {ipa: py.ˈrai, respell: pü-RAI}
+  - id: il.1.52.5
+    surface: νεκύων
+    lemma: νέκυς
+    morph: n-p---mg-
+    tb: 2274130/4
+    sound:
+      restored: {ipa: ne.ký.ɔːn, respell: ne-KÜ-awn}
+      erasmian: {ipa: ne.ˈky.ɔːn, respell: ne-KÜ-ohn}
+  - id: il.1.52.6
+    surface: καίοντο
+    lemma: καίω
+    morph: v3piie---
+    tb: 2274130/5
+    sound:
+      restored: {ipa: kaí.on.to, respell: KAI-on-to}
+      erasmian: {ipa: ˈkai.on.to, respell: KAI-on-to}
+  - id: il.1.52.7
+    surface: θαμειαί
+    punct: .
+    lemma: θαμέες
+    morph: a-p---fn-
+    tb: 2274130/6
+    sound:
+      restored: {ipa: tʰa.meː.aí, respell: tʰa-may-AI}
+      erasmian: {ipa: θa.mei.ˈai, respell: tha-may-AI}
+  metre: ——|—◡◡|—◡◡|——|—◡◡|—×

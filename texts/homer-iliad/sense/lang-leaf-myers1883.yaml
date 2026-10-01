@@ -1,7 +1,58 @@
 # Andrew Lang, Walter Leaf and Ernest Myers, The Iliad of Homer (1883), book I, verbatim from
-# Project Gutenberg #3059.
+# Project Gutenberg #3059. Split at sentence ends, and at the colon that opens a speech
+# (1.16/17, 1.25/26, 1.36/37), where the sentence runs on into the next Greek line. No corrections.
 translation: lang-leaf-myers1883
-aligned_by: hand, phase 0; one span for the proem
+aligned_by: hand, by sentence (phase 0 proem; extended to 1.52)
 spans:
-- lines: [il.1.1, il.1.7]
-  text: "Sing, goddess, the wrath of Achilles Peleus’ son, the ruinous wrath that brought on the Achaians woes innumerable, and hurled down into Hades many strong souls of heroes, and gave their bodies to be a prey to dogs and all winged fowls; and so the counsel of Zeus wrought out its accomplishment from the day when first strife parted Atreides king of men and noble Achilles."
+- lines:
+  - il.1.1
+  - il.1.7
+  text: Sing, goddess, the wrath of Achilles Peleus’ son, the ruinous wrath that brought on the Achaians woes innumerable, and hurled down into Hades many strong souls of heroes, and gave their bodies to be a prey to dogs and all winged fowls; and so the counsel of Zeus wrought out its accomplishment from the day when first strife parted Atreides king of men and noble Achilles.
+- lines:
+  - il.1.8
+  - il.1.8
+  text: Who then among the gods set the twain at strife and variance?
+- lines:
+  - il.1.9
+  - il.1.11
+  text: Even the son of Leto and of Zeus; for he in anger at the king sent a sore plague upon the host, that the folk began to perish, because Atreides had done dishonour to Chryses the priest.
+- lines:
+  - il.1.12
+  - il.1.16
+  text: 'For he had come to the Achaians’ fleet ships to win his daughter’s freedom, and brought a ransom beyond telling; and bare in his hands the fillet of Apollo the Far-darter upon a golden staff; and made his prayer unto all the Achaians, and most of all to the two sons of Atreus, orderers of the host:'
+- lines:
+  - il.1.17
+  - il.1.21
+  text: “Ye sons of Atreus and all ye well-greaved Achaians, now may the gods that dwell in the mansions of Olympus grant you to lay waste the city of Priam, and to fare happily homeward; only set ye my dear child free, and accept the ransom in reverence to the son of Zeus, far-darting Apollo.”
+- lines:
+  - il.1.22
+  - il.1.25
+  text: 'Then all the other Achaians cried assent, to reverence the priest and accept his goodly ransom; yet the thing pleased not the heart of Agamemnon son of Atreus, but he roughly sent him away, and laid stern charge upon him, saying:'
+- lines:
+  - il.1.26
+  - il.1.28
+  text: “Let me not find thee, old man, amid the hollow ships, whether tarrying now or returning again hereafter, lest the staff and fillet of the god avail thee naught.
+- lines:
+  - il.1.29
+  - il.1.32
+  text: And her will I not set free; nay, ere that shall old age come on her in our house, in Argos, far from her native land, where she shall ply the loom and serve my couch. But depart, provoke me not, that thou mayest the rather go in peace.”
+- lines:
+  - il.1.33
+  - il.1.36
+  text: 'So said he, and the old man was afraid and obeyed his word, and fared silently along the shore of the loud-sounding sea. Then went that aged man apart and prayed aloud to king Apollo, whom Leto of the fair locks bare:'
+- lines:
+  - il.1.37
+  - il.1.42
+  text: “Hear me, god of the silver bow, that standest over Chryse and holy Killa, and rulest Tenedos with might, O Smintheus! If ever I built a temple gracious in thine eyes, or if ever I burnt to thee fat flesh of thighs of bulls or goats, fulfil thou this my desire; let the Danaans pay by thine arrows for my tears.”
+- lines:
+  - il.1.43
+  - il.1.47
+  text: So spake he in prayer, and Phoebus Apollo heard him, and came down from the peaks of Olympus wroth at heart, bearing on his shoulders his bow and covered quiver. And the arrows clanged upon his shoulders in wrath, as the god moved; and he descended like to night.
+- lines:
+  - il.1.48
+  - il.1.49
+  text: Then he sate him aloof from the ships, and let an arrow fly; and there was heard a dread clanging of the silver bow.
+- lines:
+  - il.1.50
+  - il.1.52
+  text: First did he assail the mules and fleet dogs, but afterward, aiming at the men his piercing dart, he smote; and the pyres of the dead burnt continually in multitude.

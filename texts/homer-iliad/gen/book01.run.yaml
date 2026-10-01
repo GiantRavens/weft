@@ -1,24 +1,36 @@
 run:
   weft: 0.1.0
   book: 1
-  lines: 1-7
+  lines: 1-52
 counts:
-  lines: 7
-  tokens: 44
+  lines: 52
+  tokens: 367
 failures:
-  form-mismatch: 1
-  morph-empty-declinable: 1
+  form-mismatch: 5
+  morph-empty-declinable: 3
+metre_licences:
+  metre-dichronon-long: 4
+  metre-synizesis-assumed: 1
+  metre-lengthening-final-consonant: 2
 samples:
   form-mismatch:
   - 1.2 ἄλγεʼ|ἄλγἐ
+  - 1.13 ἀπερείσιʼ|ἀπερείσἰ
+  - 1.35 ὁ|ὃ
+  - 1.38 Κίλλαν|Κίλλάν
+  - 1.46 ἄρʼ|ἄῤ
   morph-empty-declinable:
   - 1.3 Ἄϊδι (---------)
+  - 1.8 τίς (x--------)
+  - 1.16 δύω (m--------)
 failure_rate:
-  form-mismatch: 0.023
-  morph-empty-declinable: 0.023
+  form-mismatch: 0.014
+  morph-empty-declinable: 0.008
 shift_left: []
 predicted_gaps:
-- a/i/u vowel length not marked in the spelling; the quantity table covers the pilot words it lists, others default to short
+- a/i/u vowel length not marked in the spelling; the two quantity tables cover the words they list (long by LSJ and confirmed by the metre), others default to short
 - treebank is on perseus-grc1, edition is grc2; expect form and elision-mark differences
-- both translations are prose paragraphs; one span covers the whole proem
+- both translations are prose paragraphs; spans follow sentences (one span still covers the whole proem, 1.1-7, and Butler 1.43-49)
 - the editor's accentuation of Πηληϊάδεω and the synizesis of -εω are not modeled by the sound layer
+- 'treebank tags are empty for Ἄϊδι (1.3), τίς (1.8) and δύω (1.16): morph-empty-declinable 3; Ἄϊδι and τίς are filled in curated/, δύω is left as the indeclinable Homeric numeral'
+- metre for 1.8-52 is the hexameter scanner's output (weft.greek.scan_hexameter), checked by hand and stored in curated/ until the scanner writes to gen

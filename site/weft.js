@@ -93,7 +93,7 @@
                    return `${D.work.author} · ${n} ${noun}${n === 1 ? "" : "s"}`; })())
     : STANZAS
     ? `${D.work.author} · stanzas ${ranges([...new Set(D.lines.map((l) => l.stanza))])}`
-    : `${D.work.author} · ${shortRef(first.id)}–${lineNo(last.id)}`;
+    : `${D.work.author} · ${shortRef(first.id)}–${shortRef(first.id).split(".")[0] === shortRef(last.id).split(".")[0] ? lineNo(last.id) : shortRef(last.id)}`;
   const anyDraft = D.lines.some((l) => l.curated || l.tokens.some((t) => t.curated && Object.values(t.curated).some((c) => c.status !== "reviewed")));
   $("#colophon").append(
     h("p", { text: `Text: ${D.edition.name} (${D.edition.license}). Lemma and morphology: ${D.treebank.name} (${D.treebank.license}).` }),
@@ -191,7 +191,7 @@
       ...(t.script ? [h("dt", { text: D.work.script_word || "runes" }), h("dd", { class: "scr-big", text: t.script })] : []),
       ...(t.norm ? [h("dt", { text: { ja: "reading" }[D.work.language] || (D.work.show_translit ? (D.work.translit_label || "Transliteration").toLowerCase() : "normalized") }), h("dd", { lang: D.work.show_translit ? null : LANG, text: t.norm })] : []),
       ...(t.metre_form ? [h("dt", { text: "metrical reading" }), h("dd", { text: `${t.metre_form}: the metre sounds a syllable the written form lost` })] : []),
-      ...(t.enclitic ? [h("dt", { text: "enclitic" }), h("dd", { lang: LANG, text: `${t.enclitic.form} (${t.enclitic.lemma}, 'and'), attached to the end of the word` })] : []),
+      ...(t.enclitic ? [h("dt", { text: "enclitic" }), h("dd", { lang: LANG, text: `${t.enclitic.form} (${t.enclitic.lemma}${t.enclitic.gloss ? ", '" + t.enclitic.gloss + "'" : t.enclitic.lemma === "que" ? ", 'and'" : ""}), attached to the word` })] : []),
       ...(t.prefixes || []).flatMap((pf) => [h("dt", { text: "prefix" }),
         h("dd", {}, h("span", { lang: LANG, text: pf.form + " " }), `'${pf.gloss}'${pf.morph_text ? ", " + pf.morph_text : ""}`)]),
       ...(t.lexgloss ? [h("dt", { text: "dictionary" }), h("dd", { text: `${t.lexgloss}${t.strong ? " (Strong's " + t.strong + ")" : ""}` })] : []),

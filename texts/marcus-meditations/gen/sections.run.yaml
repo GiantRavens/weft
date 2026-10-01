@@ -2,13 +2,49 @@ run:
   weft: 0.1.0
   sections:
   - '2.1'
+  - '2.2'
+  - '2.3'
+  - '2.4'
+  - '2.5'
+  - '2.6'
+  - '2.7'
+  - '2.8'
+  - '2.9'
+  - '2.10'
+  - '2.11'
+  - '2.12'
+  - '2.13'
+  - '2.14'
+  - '2.15'
+  - '2.16'
+  - '2.17'
 counts:
-  lines: 8
-  tokens: 105
-failures: {}
-samples: {}
-failure_rate: {}
+  lines: 110
+  tokens: 1514
+failures:
+  form-mismatch: 2
+  no-treebank-word: 2
+  morph-empty-declinable: 2
+samples:
+  form-mismatch:
+  - 2.13.1 ʽτὰ|τὰ
+  - 2.13.1 ἐρευνῶντοςʼ|ἐρευνῶντος
+  no-treebank-word:
+  - 2.13.1 ʽτὰ
+  - 2.13.1 ἐρευνῶντοςʼ
+  morph-empty-declinable:
+  - 2.14.7 δύο (a--------)
+  - 2.14.8 ἑκατὸν (a--------)
+failure_rate:
+  form-mismatch: 0.001
+  no-treebank-word: 0.001
+  morph-empty-declinable: 0.001
 shift_left: []
 predicted_gaps:
-- lemma and morphology are an automatic parse (GLAUx), not hand-checked; expect some errors
+- lemma and morphology are an automatic parse (GLAUx), not hand-checked; expect some errors (Book 2 review corrected 142 of 1409 tokens in 2.2-2.17, see curated/)
 - Koine pronunciation of the late 2nd century is reconstructed; Marcus was a Latin speaker writing Greek
+- 'form-mismatch and no-treebank-word, 2 each, in 2.13: the Perseus text prints the Pindar quotation in ʽ ʼ marks, which the tokenizer keeps on τὰ and ἐρευνῶντος; lemma and morph for both are supplied in
+  curated/'
+- 'morph-empty-declinable, 2, in 2.14: GLAUx tags the indeclinable numerals δύο and ἑκατόν as adjectives with no inflection; the tag is filled in curated/'
+- 'words Leopold deletes (Perseus <del>: 2.2 ἄφες ... ἀποθνῄσκων, 2.4 οἰχήσῃ, 2.12 ἔχῃ) are not printed; GLAUx keeps an empty-form placeholder for each, which the treebank loader must skip (core change
+  requested: treebank.load_glaux skips words with an empty form; _norm strips a trailing hyphen so the crasis split τ- + αὐτὸν rejoins as ταὐτὸν)'

@@ -1,4 +1,4 @@
-# Notes for Marcus Aurelius, Meditations 2.1. Editorial notes are drafts until a reviewer lifts them.
+# Notes for Marcus Aurelius, Meditations Book 2. Editorial notes are drafts until a reviewer lifts them.
 - id: n.med.greek
   attach: med.2.1.1
   kind: editorial
@@ -19,3 +19,60 @@
   kind: editorial
   status: draft
   text: "Casaubon's version of 1634, the first in English, expands freely: where the Greek says only that the good is καλόν, 'beautiful', he writes that it only is to be desired. Long's version of 1862 keeps closer to the words."
+- id: n.med.2.2.three-parts
+  attach: med.2.2.1
+  kind: editorial
+  status: draft
+  leans_on: LSJ s.vv. σαρκίον, πνευμάτιον, ἡγεμονικός; Meditations 12.3
+  text: "Marcus divides the self into three parts. σαρκία, 'bits of flesh', is a diminutive of σάρξ, flesh. πνευμάτιον, 'a little breath', is a diminutive of πνεῦμα, the breath or vital spirit that the Stoics held to run through the body. τὸ ἡγεμονικόν, 'the ruling part', is the Stoic term for the commanding faculty of the soul, the part that judges impressions and assents to them or not. The first two are named with diminutives and then dismissed; the third is not, and the rest of the section is addressed to it. The same three return in 12.3 as σωμάτιον, πνευμάτιον and νοῦς."
+- id: n.med.2.2.books
+  attach: med.2.2.2
+  kind: editorial
+  status: draft
+  text: "Before this line the Perseus file carries the words ἄφες τὰ βιβλία· μηκέτι σπῶ. οὐ δέδοται, ἀλλ’ ὡς ἤδη ἀποθνῄσκων, 'let the books go; be pulled about no longer; it is not granted; but as one already dying'. Leopold's edition marks them as deleted, the GLAUx parse leaves them out, and this page follows that text, so they are not printed here. Long and Casaubon both translate them ('Throw away thy books'), which is why their versions of 2.2 are longer than the Greek shown. Section 2.3 ends with a similar instruction about books; one possible reason to doubt the words here is that they repeat it, but the Perseus file does not record the editor's grounds."
+- id: n.med.2.4.time
+  attach: med.2.4.2
+  kind: editorial
+  status: draft
+  leans_on: LSJ s.vv. προθεσμία, ἀπαιθριάζω
+  text: "Two images of time carry this section. A προθεσμία, glossed 'set term', is an appointed day; in law it is the time limit within which an action must be brought. Marcus says the gods have given him such days and he has let them pass. The ὅρος περιγεγραμμένος is a limit 'drawn around' him, a boundary line. ἀπαιθριάσαι, 'to clear the sky', describes clearing weather; Long expands it as 'clearing away the clouds from thy mind'. The section ends with οἰχήσεται, 'it will be gone', said of the time. The Perseus file also carries οἰχήσῃ, 'you will be gone', marked as deleted by the editor, so the line breaks after the first verb; Long's 'it will go and thou wilt go' translates both."
+- id: n.med.2.11.leaving
+  attach: med.2.11.1
+  kind: editorial
+  status: draft
+  leans_on: Long 1862, note on 2.11
+  text: "The section argues in two branches. If gods exist, leaving human life is nothing to fear, since they would not involve a person in evil. If they do not exist, or do not care, Marcus asks what point there is in living in a world empty of them. He then asserts that they exist and care, and that they put real evils within each person's power to avoid. What remains outside that power, such as death and life, fame and obscurity, pain and pleasure, wealth and poverty, falls equally to good and bad people, and he concludes that it is therefore neither good nor bad. The opening words, ὡς ἤδη δυνατοῦ ὄντος ἐξιέναι τοῦ βίου, can mean 'since it is possible that you leave life now' or 'since it is in your power to leave'. Long translates the first and gives the second in a note; the Greek allows both."
+- id: n.med.2.12.disposed
+  attach: med.2.12.9
+  kind: editorial
+  status: draft
+  text: "The section ends with a question in three parts: how a human touches god, by what part of himself, and how that part is disposed when it does. Between ὅταν πῶς and διακέηται the Perseus file carries ἔχῃ, marked as deleted; both verbs can mean 'is in a certain state', and the deleted one may be a variant of the other. The line is broken where it stood. Casaubon's 'when it is said to be diffused' does not match διακέηται, 'is disposed'; it would fit a form of διαχέω, 'pour out, diffuse', which suggests his text read differently here. That is an inference from his English, not a reading Weft has checked."
+- id: n.med.2.13.daimon
+  attach: med.2.13.2.11
+  kind: editorial
+  status: draft
+  leans_on: Long 1862, note on 2.13
+  text: "δαίμων here is the divine part within each person, which Marcus elsewhere also calls mind and the ruling part. To serve it, he says, is to keep it clear of passion, of randomness and of discontent with what comes from gods and humans. The gloss keeps 'daimon' rather than 'genius' or 'spirit' because the same word sits inside κακοδαιμονέω in 2.8, 'to have a bad daimon', the ordinary Greek for being unhappy, and returns in 2.17. The quoted phrase τὰ νέρθεν γᾶς, 'the things beneath the earth', is identified by Long as Pindar, quoted in Plato's Theaetetus; the form γᾶς for γῆς is the poet's, not Marcus's."
+- id: n.med.2.14.present
+  attach: med.2.14.10
+  kind: editorial
+  status: draft
+  leans_on: LSJ s.vv. ἀκαριαῖος, ἀκαρής; Long 1862, note on 2.14
+  text: "The argument of 2.14 rests on the premise stated in this line: a person has only the present, so the present is the only thing a person can lose. Two consequences are drawn from it. First, no one loses a life other than the one being lived now, so the longest and the shortest life lose the same amount at death, a moment; ἀκαριαῖον, 'momentary', is related to ἀκαρής, 'too small to be cut'. Second, since things recur in the same forms, seeing them for a hundred years, two hundred or without limit makes no difference. Long's version of one clause, 'though that which perish is not the same', does not match the Greek printed here, which says that what is lost is also equal; Long marks the passage and refers to Gataker, so his text or his reading of it probably differed."
+- id: n.med.2.15.monimus
+  attach: med.2.15.2.8
+  kind: editorial
+  status: draft
+  leans_on: Diogenes Laertius 6.82-83
+  text: "Monimus of Syracuse was a Cynic philosopher of the 4th century BC, described by Diogenes Laertius as a follower of Diogenes and Crates. Diogenes Laertius reports that he called everything τῦφος, 'smoke' or 'vanity'. Marcus does not quote the saying; he only says that what was said to or about Monimus is clear, and that it is useful if its palatable part is taken only as far as it is true. The link to the saying in Diogenes Laertius is the usual explanation, not something the text states."
+- id: n.med.2.17.philosophy
+  attach: med.2.17.4
+  kind: editorial
+  status: draft
+  leans_on: LSJ s.vv. παραπέμπω, ῥόμβος
+  text: "The section moves from a list to a question. The list gives each part of human life one predicate: time a point, substance flowing, perception dim, the body's compound easily rotting, the soul a ῥόμβος (something that spins, such as a top), fortune hard to read, fame without judgment, life a war and a stranger's stay abroad. The question is what can παραπέμψαι, 'escort' a person, a verb used of seeing a traveller on the way. The answer is philosophy, described here as a practice rather than a doctrine: keeping the daimon within unharmed and above pleasure and pain, acting with a purpose and without pretence, accepting what happens, and awaiting death as the loosing of the elements a living thing is made of. The last argument is from nature: the elements change into one another without harm, and nothing that accords with nature is bad."
+- id: n.med.carnuntum
+  attach: med.2.17.11
+  kind: editorial
+  status: draft
+  text: "Τὰ ἐν Καρνούντῳ, 'the things at Carnuntum', is a note of place like the one before 2.1 that names the Quadi and the Granua. Carnuntum was a Roman legionary base and town on the Danube, east of present-day Vienna, where Marcus had his headquarters during the wars of the 170s. Long prints the note after section 17 ('This in Carnuntum'); Casaubon gives it as 'Whilst I was at Carnuntum'. Whether it closes Book 2 or heads Book 3 is not settled; Weft keeps it where the Perseus file has it, at the end of 2.17."

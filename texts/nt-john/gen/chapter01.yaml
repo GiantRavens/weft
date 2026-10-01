@@ -525,3 +525,1615 @@ lines:
     sound:
       koine: {ipa: ka.ˈtɛ.la.vɛn, respell: ka-TE-la-ven}
       erasmian: {ipa: ka.ˈte.la.ben, respell: ka-TE-la-ben}
+- id: jn.1.6
+  cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.6
+  text: Ἐγένετο ἄνθρωπος ἀπεσταλμένος παρὰ θεοῦ, ὄνομα αὐτῷ Ἰωάννης·
+  tokens:
+  - id: jn.1.6.1
+    surface: Ἐγένετο
+    lemma: γίνομαι
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Aor|Voice=Mid
+    tb: 040106/1
+    sound:
+      koine: {ipa: ɛ.ˈjɛ.nɛ.to, respell: e-YE-ne-to}
+      erasmian: {ipa: e.ˈɡe.ne.to, respell: e-GE-ne-to}
+  - id: jn.1.6.2
+    surface: ἄνθρωπος
+    lemma: ἄνθρωπος
+    morph: NOUN|Case=Nom|Gender=Masc|Number=Sing
+    tb: 040106/2
+    sound:
+      koine: {ipa: ˈan.θro.pos, respell: AN-thro-pos}
+      erasmian: {ipa: ˈan.θrɔː.pos, respell: AN-throh-pos}
+  - id: jn.1.6.3
+    surface: ἀπεσταλμένος
+    lemma: ἀποστέλλω
+    morph: VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Perf|VerbForm=Part|Voice=Pass
+    tb: 040106/3
+    sound:
+      koine: {ipa: a.pɛs.tal.ˈmɛ.nos, respell: a-pes-tal-ME-nos}
+      erasmian: {ipa: a.pes.tal.ˈme.nos, respell: a-pes-tal-ME-nos}
+  - id: jn.1.6.4
+    surface: παρὰ
+    lemma: παρά
+    morph: ADP
+    tb: 040106/4
+    sound:
+      koine: {ipa: pa.ˈra, respell: pa-RA}
+      erasmian: {ipa: pa.ˈra, respell: pa-RA}
+  - id: jn.1.6.5
+    surface: θεοῦ
+    punct: ','
+    lemma: θεός
+    morph: NOUN|Case=Gen|Gender=Masc|Number=Sing
+    tb: 040106/5
+    sound:
+      koine: {ipa: θɛ.ˈu, respell: the-OO}
+      erasmian: {ipa: θe.ˈuː, respell: the-OO}
+  - id: jn.1.6.6
+    surface: ὄνομα
+    lemma: ὄνομα
+    morph: NOUN|Case=Nom|Gender=Neut|Number=Sing
+    tb: 040106/6
+    sound:
+      koine: {ipa: ˈo.no.ma, respell: O-no-ma}
+      erasmian: {ipa: ˈo.no.ma, respell: O-no-ma}
+  - id: jn.1.6.7
+    surface: αὐτῷ
+    lemma: αὐτός
+    morph: PRON|Case=Dat|Gender=Masc|Number=Sing|PronType=Prs
+    tb: 040106/7
+    sound:
+      koine: {ipa: av.ˈto, respell: av-TO}
+      erasmian: {ipa: au.ˈtɔː, respell: ow-TOH}
+  - id: jn.1.6.8
+    surface: Ἰωάννης
+    punct: ·
+    lemma: Ἰωάννης
+    morph: NOUN|Case=Nom|Gender=Masc|Number=Sing
+    tb: 040106/8
+    sound:
+      koine: {ipa: i.o.ˈan.nes, respell: ee-o-AN-nays}
+      erasmian: {ipa: i.ɔː.ˈan.nɛːs, respell: i-oh-AN-nays}
+- id: jn.1.7
+  cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.7
+  text: οὗτος ἦλθεν εἰς μαρτυρίαν, ἵνα μαρτυρήσῃ περὶ τοῦ φωτός, ἵνα πάντες πιστεύσωσιν δι’ αὐτοῦ.
+  tokens:
+  - id: jn.1.7.1
+    surface: οὗτος
+    lemma: οὗτος
+    morph: PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Dem
+    tb: 040107/1
+    sound:
+      koine: {ipa: ˈu.tos, respell: OO-tos}
+      erasmian: {ipa: ˈhuː.tos, respell: HOO-tos}
+  - id: jn.1.7.2
+    surface: ἦλθεν
+    lemma: ἔρχομαι
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Aor|Voice=Act
+    tb: 040107/2
+    sound:
+      koine: {ipa: ˈel.θɛn, respell: AYL-then}
+      erasmian: {ipa: ˈɛːl.θen, respell: AYL-then}
+  - id: jn.1.7.3
+    surface: εἰς
+    lemma: εἰς
+    morph: ADP
+    tb: 040107/3
+    sound:
+      koine: {ipa: is, respell: ees}
+      erasmian: {ipa: eis, respell: ays}
+  - id: jn.1.7.4
+    surface: μαρτυρίαν
+    punct: ','
+    lemma: μαρτυρία
+    morph: NOUN|Case=Acc|Gender=Fem|Number=Sing
+    tb: 040107/4
+    sound:
+      koine: {ipa: mar.ty.ˈri.an, respell: mar-tü-REE-an}
+      erasmian: {ipa: mar.ty.ˈri.an, respell: mar-tü-RI-an}
+  - id: jn.1.7.5
+    surface: ἵνα
+    lemma: ἵνα
+    morph: CCONJ
+    tb: 040107/5
+    sound:
+      koine: {ipa: ˈi.na, respell: EE-na}
+      erasmian: {ipa: ˈhi.na, respell: HI-na}
+  - id: jn.1.7.6
+    surface: μαρτυρήσῃ
+    lemma: μαρτυρέω
+    morph: VERB|Mood=Sub|Number=Sing|Person=3|Tense=Aor|Voice=Act
+    tb: 040107/6
+    sound:
+      koine: {ipa: mar.ty.ˈre.se, respell: mar-tü-RAY-say}
+      erasmian: {ipa: mar.ty.ˈrɛː.sɛː, respell: mar-tü-RAY-say}
+  - id: jn.1.7.7
+    surface: περὶ
+    lemma: περί
+    morph: ADP
+    tb: 040107/7
+    sound:
+      koine: {ipa: pɛ.ˈri, respell: pe-REE}
+      erasmian: {ipa: pe.ˈri, respell: pe-RI}
+  - id: jn.1.7.8
+    surface: τοῦ
+    lemma: ὁ
+    morph: DET|Case=Gen|Gender=Neut|Number=Sing
+    tb: 040107/8
+    sound:
+      koine: {ipa: ˈtu, respell: TOO}
+      erasmian: {ipa: ˈtuː, respell: TOO}
+  - id: jn.1.7.9
+    surface: φωτός
+    punct: ','
+    lemma: φῶς
+    morph: NOUN|Case=Gen|Gender=Neut|Number=Sing
+    tb: 040107/9
+    sound:
+      koine: {ipa: fo.ˈtos, respell: fo-TOS}
+      erasmian: {ipa: fɔː.ˈtos, respell: foh-TOS}
+  - id: jn.1.7.10
+    surface: ἵνα
+    lemma: ἵνα
+    morph: CCONJ
+    tb: 040107/10
+    sound:
+      koine: {ipa: ˈi.na, respell: EE-na}
+      erasmian: {ipa: ˈhi.na, respell: HI-na}
+  - id: jn.1.7.11
+    surface: πάντες
+    lemma: πᾶς
+    morph: ADJ|Case=Nom|Gender=Masc|Number=Plur
+    tb: 040107/11
+    sound:
+      koine: {ipa: ˈpan.tɛs, respell: PAN-tes}
+      erasmian: {ipa: ˈpan.tes, respell: PAN-tes}
+  - id: jn.1.7.12
+    surface: πιστεύσωσιν
+    lemma: πιστεύω
+    morph: VERB|Mood=Sub|Number=Plur|Person=3|Tense=Aor|Voice=Act
+    tb: 040107/12
+    sound:
+      koine: {ipa: pis.ˈtev.so.sin, respell: pees-TAYV-so-seen}
+      erasmian: {ipa: pis.ˈteu.sɔː.sin, respell: pis-TYOO-soh-sin}
+  - id: jn.1.7.13
+    surface: δι’
+    lemma: διά
+    morph: ADP
+    tb: 040107/13
+    sound:
+      koine: {ipa: ði, respell: dhee’}
+      erasmian: {ipa: di, respell: di’}
+  - id: jn.1.7.14
+    surface: αὐτοῦ
+    punct: .
+    lemma: αὐτός
+    morph: PRON|Case=Gen|Gender=Masc|Number=Sing|PronType=Prs
+    tb: 040107/14
+    sound:
+      koine: {ipa: av.ˈtu, respell: av-TOO}
+      erasmian: {ipa: au.ˈtuː, respell: ow-TOO}
+- id: jn.1.8
+  cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.8
+  text: οὐκ ἦν ἐκεῖνος τὸ φῶς, ἀλλ’ ἵνα μαρτυρήσῃ περὶ τοῦ φωτός.
+  tokens:
+  - id: jn.1.8.1
+    surface: οὐκ
+    lemma: οὐ
+    morph: ADV
+    tb: 040108/1
+    sound:
+      koine: {ipa: uk, respell: ook}
+      erasmian: {ipa: uːk, respell: ook}
+  - id: jn.1.8.2
+    surface: ἦν
+    lemma: εἰμί
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imperf|Voice=Act
+    tb: 040108/2
+    sound:
+      koine: {ipa: ˈen, respell: AYN}
+      erasmian: {ipa: ˈɛːn, respell: AYN}
+  - id: jn.1.8.3
+    surface: ἐκεῖνος
+    lemma: ἐκεῖνος
+    morph: PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Dem
+    tb: 040108/3
+    sound:
+      koine: {ipa: ɛ.ˈki.nos, respell: e-KEE-nos}
+      erasmian: {ipa: e.ˈkei.nos, respell: e-KAY-nos}
+  - id: jn.1.8.4
+    surface: τὸ
+    lemma: ὁ
+    morph: DET|Case=Nom|Gender=Neut|Number=Sing
+    tb: 040108/4
+    sound:
+      koine: {ipa: ˈto, respell: TO}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: jn.1.8.5
+    surface: φῶς
+    punct: ','
+    lemma: φῶς
+    morph: NOUN|Case=Nom|Gender=Neut|Number=Sing
+    tb: 040108/5
+    sound:
+      koine: {ipa: ˈfos, respell: FOS}
+      erasmian: {ipa: ˈfɔːs, respell: FOHS}
+  - id: jn.1.8.6
+    surface: ἀλλ’
+    lemma: ἀλλά
+    morph: CCONJ
+    tb: 040108/6
+    sound:
+      koine: {ipa: all, respell: all’}
+      erasmian: {ipa: all, respell: all’}
+  - id: jn.1.8.7
+    surface: ἵνα
+    lemma: ἵνα
+    morph: CCONJ
+    tb: 040108/7
+    sound:
+      koine: {ipa: ˈi.na, respell: EE-na}
+      erasmian: {ipa: ˈhi.na, respell: HI-na}
+  - id: jn.1.8.8
+    surface: μαρτυρήσῃ
+    lemma: μαρτυρέω
+    morph: VERB|Mood=Sub|Number=Sing|Person=3|Tense=Aor|Voice=Act
+    tb: 040108/8
+    sound:
+      koine: {ipa: mar.ty.ˈre.se, respell: mar-tü-RAY-say}
+      erasmian: {ipa: mar.ty.ˈrɛː.sɛː, respell: mar-tü-RAY-say}
+  - id: jn.1.8.9
+    surface: περὶ
+    lemma: περί
+    morph: ADP
+    tb: 040108/9
+    sound:
+      koine: {ipa: pɛ.ˈri, respell: pe-REE}
+      erasmian: {ipa: pe.ˈri, respell: pe-RI}
+  - id: jn.1.8.10
+    surface: τοῦ
+    lemma: ὁ
+    morph: DET|Case=Gen|Gender=Neut|Number=Sing
+    tb: 040108/10
+    sound:
+      koine: {ipa: ˈtu, respell: TOO}
+      erasmian: {ipa: ˈtuː, respell: TOO}
+  - id: jn.1.8.11
+    surface: φωτός
+    punct: .
+    lemma: φῶς
+    morph: NOUN|Case=Gen|Gender=Neut|Number=Sing
+    tb: 040108/11
+    sound:
+      koine: {ipa: fo.ˈtos, respell: fo-TOS}
+      erasmian: {ipa: fɔː.ˈtos, respell: foh-TOS}
+- id: jn.1.9
+  cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.9
+  text: ἦν τὸ φῶς τὸ ἀληθινὸν ὃ φωτίζει πάντα ἄνθρωπον ἐρχόμενον εἰς τὸν κόσμον.
+  tokens:
+  - id: jn.1.9.1
+    surface: ἦν
+    lemma: εἰμί
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imperf|Voice=Act
+    tb: 040109/1
+    sound:
+      koine: {ipa: ˈen, respell: AYN}
+      erasmian: {ipa: ˈɛːn, respell: AYN}
+  - id: jn.1.9.2
+    surface: τὸ
+    lemma: ὁ
+    morph: DET|Case=Nom|Gender=Neut|Number=Sing
+    tb: 040109/2
+    sound:
+      koine: {ipa: ˈto, respell: TO}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: jn.1.9.3
+    surface: φῶς
+    lemma: φῶς
+    morph: NOUN|Case=Nom|Gender=Neut|Number=Sing
+    tb: 040109/3
+    sound:
+      koine: {ipa: ˈfos, respell: FOS}
+      erasmian: {ipa: ˈfɔːs, respell: FOHS}
+  - id: jn.1.9.4
+    surface: τὸ
+    lemma: ὁ
+    morph: DET|Case=Nom|Gender=Neut|Number=Sing
+    tb: 040109/4
+    sound:
+      koine: {ipa: ˈto, respell: TO}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: jn.1.9.5
+    surface: ἀληθινὸν
+    lemma: ἀληθινός
+    morph: ADJ|Case=Nom|Gender=Neut|Number=Sing
+    tb: 040109/5
+    sound:
+      koine: {ipa: a.le.θi.ˈnon, respell: a-lay-thee-NON}
+      erasmian: {ipa: a.lɛː.θi.ˈnon, respell: a-lay-thi-NON}
+  - id: jn.1.9.6
+    surface: ὃ
+    lemma: ὅς
+    morph: PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Rel
+    tb: 040109/6
+    sound:
+      koine: {ipa: ˈo, respell: O}
+      erasmian: {ipa: ˈho, respell: HO}
+  - id: jn.1.9.7
+    surface: φωτίζει
+    lemma: φωτίζω
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Act
+    tb: 040109/7
+    sound:
+      koine: {ipa: fo.ˈti.zi, respell: fo-TEE-zee}
+      erasmian: {ipa: fɔː.ˈti.dzei, respell: foh-TI-dzay}
+  - id: jn.1.9.8
+    surface: πάντα
+    lemma: πᾶς
+    morph: ADJ|Case=Acc|Gender=Masc|Number=Sing
+    tb: 040109/8
+    sound:
+      koine: {ipa: ˈpan.ta, respell: PAN-ta}
+      erasmian: {ipa: ˈpan.ta, respell: PAN-ta}
+  - id: jn.1.9.9
+    surface: ἄνθρωπον
+    lemma: ἄνθρωπος
+    morph: NOUN|Case=Acc|Gender=Masc|Number=Sing
+    tb: 040109/9
+    sound:
+      koine: {ipa: ˈan.θro.pon, respell: AN-thro-pon}
+      erasmian: {ipa: ˈan.θrɔː.pon, respell: AN-throh-pon}
+  - id: jn.1.9.10
+    surface: ἐρχόμενον
+    lemma: ἔρχομαι
+    morph: VERB|Case=Acc|Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Mid
+    tb: 040109/10
+    sound:
+      koine: {ipa: ɛr.ˈxo.mɛ.non, respell: er-KHO-me-non}
+      erasmian: {ipa: er.ˈxo.me.non, respell: er-KHO-me-non}
+  - id: jn.1.9.11
+    surface: εἰς
+    lemma: εἰς
+    morph: ADP
+    tb: 040109/11
+    sound:
+      koine: {ipa: is, respell: ees}
+      erasmian: {ipa: eis, respell: ays}
+  - id: jn.1.9.12
+    surface: τὸν
+    lemma: ὁ
+    morph: DET|Case=Acc|Gender=Masc|Number=Sing
+    tb: 040109/12
+    sound:
+      koine: {ipa: ˈton, respell: TON}
+      erasmian: {ipa: ˈton, respell: TON}
+  - id: jn.1.9.13
+    surface: κόσμον
+    punct: .
+    lemma: κόσμος
+    morph: NOUN|Case=Acc|Gender=Masc|Number=Sing
+    tb: 040109/13
+    sound:
+      koine: {ipa: ˈkos.mon, respell: KOS-mon}
+      erasmian: {ipa: ˈkos.mon, respell: KOS-mon}
+- id: jn.1.10
+  cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.10
+  text: Ἐν τῷ κόσμῳ ἦν, καὶ ὁ κόσμος δι’ αὐτοῦ ἐγένετο, καὶ ὁ κόσμος αὐτὸν οὐκ ἔγνω.
+  tokens:
+  - id: jn.1.10.1
+    surface: Ἐν
+    lemma: ἐν
+    morph: ADP
+    tb: 040110/1
+    sound:
+      koine: {ipa: ɛn, respell: en}
+      erasmian: {ipa: en, respell: en}
+  - id: jn.1.10.2
+    surface: τῷ
+    lemma: ὁ
+    morph: DET|Case=Dat|Gender=Masc|Number=Sing
+    tb: 040110/2
+    sound:
+      koine: {ipa: ˈto, respell: TO}
+      erasmian: {ipa: ˈtɔː, respell: TOH}
+  - id: jn.1.10.3
+    surface: κόσμῳ
+    lemma: κόσμος
+    morph: NOUN|Case=Dat|Gender=Masc|Number=Sing
+    tb: 040110/3
+    sound:
+      koine: {ipa: ˈkos.mo, respell: KOS-mo}
+      erasmian: {ipa: ˈkos.mɔː, respell: KOS-moh}
+  - id: jn.1.10.4
+    surface: ἦν
+    punct: ','
+    lemma: εἰμί
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imperf|Voice=Act
+    tb: 040110/4
+    sound:
+      koine: {ipa: ˈen, respell: AYN}
+      erasmian: {ipa: ˈɛːn, respell: AYN}
+  - id: jn.1.10.5
+    surface: καὶ
+    lemma: καί
+    morph: CCONJ
+    tb: 040110/5
+    sound:
+      koine: {ipa: ˈkɛ, respell: KE}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: jn.1.10.6
+    surface: ὁ
+    lemma: ὁ
+    morph: DET|Case=Nom|Gender=Masc|Number=Sing
+    tb: 040110/6
+    sound:
+      koine: {ipa: o, respell: o}
+      erasmian: {ipa: ho, respell: ho}
+  - id: jn.1.10.7
+    surface: κόσμος
+    lemma: κόσμος
+    morph: NOUN|Case=Nom|Gender=Masc|Number=Sing
+    tb: 040110/7
+    sound:
+      koine: {ipa: ˈkos.mos, respell: KOS-mos}
+      erasmian: {ipa: ˈkos.mos, respell: KOS-mos}
+  - id: jn.1.10.8
+    surface: δι’
+    lemma: διά
+    morph: ADP
+    tb: 040110/8
+    sound:
+      koine: {ipa: ði, respell: dhee’}
+      erasmian: {ipa: di, respell: di’}
+  - id: jn.1.10.9
+    surface: αὐτοῦ
+    lemma: αὐτός
+    morph: PRON|Case=Gen|Gender=Masc|Number=Sing|PronType=Prs
+    tb: 040110/9
+    sound:
+      koine: {ipa: av.ˈtu, respell: av-TOO}
+      erasmian: {ipa: au.ˈtuː, respell: ow-TOO}
+  - id: jn.1.10.10
+    surface: ἐγένετο
+    punct: ','
+    lemma: γίνομαι
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Aor|Voice=Mid
+    tb: 040110/10
+    sound:
+      koine: {ipa: ɛ.ˈjɛ.nɛ.to, respell: e-YE-ne-to}
+      erasmian: {ipa: e.ˈɡe.ne.to, respell: e-GE-ne-to}
+  - id: jn.1.10.11
+    surface: καὶ
+    lemma: καί
+    morph: CCONJ
+    tb: 040110/11
+    sound:
+      koine: {ipa: ˈkɛ, respell: KE}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: jn.1.10.12
+    surface: ὁ
+    lemma: ὁ
+    morph: DET|Case=Nom|Gender=Masc|Number=Sing
+    tb: 040110/12
+    sound:
+      koine: {ipa: o, respell: o}
+      erasmian: {ipa: ho, respell: ho}
+  - id: jn.1.10.13
+    surface: κόσμος
+    lemma: κόσμος
+    morph: NOUN|Case=Nom|Gender=Masc|Number=Sing
+    tb: 040110/13
+    sound:
+      koine: {ipa: ˈkos.mos, respell: KOS-mos}
+      erasmian: {ipa: ˈkos.mos, respell: KOS-mos}
+  - id: jn.1.10.14
+    surface: αὐτὸν
+    lemma: αὐτός
+    morph: PRON|Case=Acc|Gender=Masc|Number=Sing|PronType=Prs
+    tb: 040110/14
+    sound:
+      koine: {ipa: av.ˈton, respell: av-TON}
+      erasmian: {ipa: au.ˈton, respell: ow-TON}
+  - id: jn.1.10.15
+    surface: οὐκ
+    lemma: οὐ
+    morph: ADV
+    tb: 040110/15
+    sound:
+      koine: {ipa: uk, respell: ook}
+      erasmian: {ipa: uːk, respell: ook}
+  - id: jn.1.10.16
+    surface: ἔγνω
+    punct: .
+    lemma: γινώσκω
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Aor|Voice=Act
+    tb: 040110/16
+    sound:
+      koine: {ipa: ˈɛɣ.no, respell: EGH-no}
+      erasmian: {ipa: ˈeɡ.nɔː, respell: EG-noh}
+- id: jn.1.11
+  cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.11
+  text: εἰς τὰ ἴδια ἦλθεν, καὶ οἱ ἴδιοι αὐτὸν οὐ παρέλαβον.
+  tokens:
+  - id: jn.1.11.1
+    surface: εἰς
+    lemma: εἰς
+    morph: ADP
+    tb: 040111/1
+    sound:
+      koine: {ipa: is, respell: ees}
+      erasmian: {ipa: eis, respell: ays}
+  - id: jn.1.11.2
+    surface: τὰ
+    lemma: ὁ
+    morph: DET|Case=Acc|Gender=Neut|Number=Plur
+    tb: 040111/2
+    sound:
+      koine: {ipa: ˈta, respell: TA}
+      erasmian: {ipa: ˈta, respell: TA}
+  - id: jn.1.11.3
+    surface: ἴδια
+    lemma: ἴδιος
+    morph: ADJ|Case=Acc|Gender=Neut|Number=Plur
+    tb: 040111/3
+    sound:
+      koine: {ipa: ˈi.ði.a, respell: EE-dhee-a}
+      erasmian: {ipa: ˈi.di.a, respell: I-di-a}
+  - id: jn.1.11.4
+    surface: ἦλθεν
+    punct: ','
+    lemma: ἔρχομαι
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Aor|Voice=Act
+    tb: 040111/4
+    sound:
+      koine: {ipa: ˈel.θɛn, respell: AYL-then}
+      erasmian: {ipa: ˈɛːl.θen, respell: AYL-then}
+  - id: jn.1.11.5
+    surface: καὶ
+    lemma: καί
+    morph: CCONJ
+    tb: 040111/5
+    sound:
+      koine: {ipa: ˈkɛ, respell: KE}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: jn.1.11.6
+    surface: οἱ
+    lemma: ὁ
+    morph: DET|Case=Nom|Gender=Masc|Number=Plur
+    tb: 040111/6
+    sound:
+      koine: {ipa: y, respell: ü}
+      erasmian: {ipa: hoi, respell: hoy}
+  - id: jn.1.11.7
+    surface: ἴδιοι
+    lemma: ἴδιος
+    morph: ADJ|Case=Nom|Gender=Masc|Number=Plur
+    tb: 040111/7
+    sound:
+      koine: {ipa: ˈi.ði.y, respell: EE-dhee-ü}
+      erasmian: {ipa: ˈi.di.oi, respell: I-di-oy}
+  - id: jn.1.11.8
+    surface: αὐτὸν
+    lemma: αὐτός
+    morph: PRON|Case=Acc|Gender=Masc|Number=Sing|PronType=Prs
+    tb: 040111/8
+    sound:
+      koine: {ipa: av.ˈton, respell: av-TON}
+      erasmian: {ipa: au.ˈton, respell: ow-TON}
+  - id: jn.1.11.9
+    surface: οὐ
+    lemma: οὐ
+    morph: ADV
+    tb: 040111/9
+    sound:
+      koine: {ipa: u, respell: oo}
+      erasmian: {ipa: uː, respell: oo}
+  - id: jn.1.11.10
+    surface: παρέλαβον
+    punct: .
+    lemma: παραλαμβάνω
+    morph: VERB|Mood=Ind|Number=Plur|Person=3|Tense=Aor|Voice=Act
+    tb: 040111/10
+    sound:
+      koine: {ipa: pa.ˈrɛ.la.von, respell: pa-RE-la-von}
+      erasmian: {ipa: pa.ˈre.la.bon, respell: pa-RE-la-bon}
+- id: jn.1.12
+  cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.12
+  text: ὅσοι δὲ ἔλαβον αὐτόν, ἔδωκεν αὐτοῖς ἐξουσίαν τέκνα θεοῦ γενέσθαι, τοῖς πιστεύουσιν εἰς τὸ ὄνομα αὐτοῦ,
+  tokens:
+  - id: jn.1.12.1
+    surface: ὅσοι
+    lemma: ὅσος
+    morph: PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Rel
+    tb: 040112/1
+    sound:
+      koine: {ipa: ˈo.sy, respell: O-sü}
+      erasmian: {ipa: ˈho.soi, respell: HO-soy}
+  - id: jn.1.12.2
+    surface: δὲ
+    lemma: δέ
+    morph: CCONJ
+    tb: 040112/2
+    sound:
+      koine: {ipa: ˈðɛ, respell: DHE}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: jn.1.12.3
+    surface: ἔλαβον
+    lemma: λαμβάνω
+    morph: VERB|Mood=Ind|Number=Plur|Person=3|Tense=Aor|Voice=Act
+    tb: 040112/3
+    sound:
+      koine: {ipa: ˈɛ.la.von, respell: E-la-von}
+      erasmian: {ipa: ˈe.la.bon, respell: E-la-bon}
+  - id: jn.1.12.4
+    surface: αὐτόν
+    punct: ','
+    lemma: αὐτός
+    morph: PRON|Case=Acc|Gender=Masc|Number=Sing|PronType=Prs
+    tb: 040112/4
+    sound:
+      koine: {ipa: av.ˈton, respell: av-TON}
+      erasmian: {ipa: au.ˈton, respell: ow-TON}
+  - id: jn.1.12.5
+    surface: ἔδωκεν
+    lemma: δίδωμι
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Aor|Voice=Act
+    tb: 040112/5
+    sound:
+      koine: {ipa: ˈɛ.ðo.kɛn, respell: E-dho-ken}
+      erasmian: {ipa: ˈe.dɔː.ken, respell: E-doh-ken}
+  - id: jn.1.12.6
+    surface: αὐτοῖς
+    lemma: αὐτός
+    morph: PRON|Case=Dat|Gender=Masc|Number=Plur|PronType=Prs
+    tb: 040112/6
+    sound:
+      koine: {ipa: av.ˈtys, respell: av-TÜS}
+      erasmian: {ipa: au.ˈtois, respell: ow-TOYS}
+  - id: jn.1.12.7
+    surface: ἐξουσίαν
+    lemma: ἐξουσία
+    morph: NOUN|Case=Acc|Gender=Fem|Number=Sing
+    tb: 040112/7
+    sound:
+      koine: {ipa: ɛ.ksu.ˈsi.an, respell: e-ksoo-SEE-an}
+      erasmian: {ipa: e.ksuː.ˈsi.an, respell: e-ksoo-SI-an}
+  - id: jn.1.12.8
+    surface: τέκνα
+    lemma: τέκνον
+    morph: NOUN|Case=Acc|Gender=Neut|Number=Plur
+    tb: 040112/8
+    sound:
+      koine: {ipa: ˈtɛk.na, respell: TEK-na}
+      erasmian: {ipa: ˈtek.na, respell: TEK-na}
+  - id: jn.1.12.9
+    surface: θεοῦ
+    lemma: θεός
+    morph: NOUN|Case=Gen|Gender=Masc|Number=Sing
+    tb: 040112/9
+    sound:
+      koine: {ipa: θɛ.ˈu, respell: the-OO}
+      erasmian: {ipa: θe.ˈuː, respell: the-OO}
+  - id: jn.1.12.10
+    surface: γενέσθαι
+    punct: ','
+    lemma: γίνομαι
+    morph: VERB|Tense=Aor|VerbForm=Inf|Voice=Mid
+    tb: 040112/10
+    sound:
+      koine: {ipa: jɛ.ˈnɛs.θɛ, respell: ye-NES-the}
+      erasmian: {ipa: ɡe.ˈnes.θai, respell: ge-NES-thai}
+  - id: jn.1.12.11
+    surface: τοῖς
+    lemma: ὁ
+    morph: DET|Case=Dat|Gender=Masc|Number=Plur
+    tb: 040112/11
+    sound:
+      koine: {ipa: ˈtys, respell: TÜS}
+      erasmian: {ipa: ˈtois, respell: TOYS}
+  - id: jn.1.12.12
+    surface: πιστεύουσιν
+    lemma: πιστεύω
+    morph: VERB|Case=Dat|Gender=Masc|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act
+    tb: 040112/12
+    sound:
+      koine: {ipa: pis.ˈtev.u.sin, respell: pees-TAYV-oo-seen}
+      erasmian: {ipa: pis.ˈteu.uː.sin, respell: pis-TYOO-oo-sin}
+  - id: jn.1.12.13
+    surface: εἰς
+    lemma: εἰς
+    morph: ADP
+    tb: 040112/13
+    sound:
+      koine: {ipa: is, respell: ees}
+      erasmian: {ipa: eis, respell: ays}
+  - id: jn.1.12.14
+    surface: τὸ
+    lemma: ὁ
+    morph: DET|Case=Acc|Gender=Neut|Number=Sing
+    tb: 040112/14
+    sound:
+      koine: {ipa: ˈto, respell: TO}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: jn.1.12.15
+    surface: ὄνομα
+    lemma: ὄνομα
+    morph: NOUN|Case=Acc|Gender=Neut|Number=Sing
+    tb: 040112/15
+    sound:
+      koine: {ipa: ˈo.no.ma, respell: O-no-ma}
+      erasmian: {ipa: ˈo.no.ma, respell: O-no-ma}
+  - id: jn.1.12.16
+    surface: αὐτοῦ
+    punct: ','
+    lemma: αὐτός
+    morph: PRON|Case=Gen|Gender=Masc|Number=Sing|PronType=Prs
+    tb: 040112/16
+    sound:
+      koine: {ipa: av.ˈtu, respell: av-TOO}
+      erasmian: {ipa: au.ˈtuː, respell: ow-TOO}
+- id: jn.1.13
+  cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.13
+  text: οἳ οὐκ ἐξ αἱμάτων οὐδὲ ἐκ θελήματος σαρκὸς οὐδὲ ἐκ θελήματος ἀνδρὸς ἀλλ’ ἐκ θεοῦ ἐγεννήθησαν.
+  tokens:
+  - id: jn.1.13.1
+    surface: οἳ
+    lemma: ὅς
+    morph: PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Rel
+    tb: 040113/1
+    sound:
+      koine: {ipa: ˈy, respell: Ü}
+      erasmian: {ipa: ˈhoi, respell: HOY}
+  - id: jn.1.13.2
+    surface: οὐκ
+    lemma: οὐ
+    morph: ADV
+    tb: 040113/2
+    sound:
+      koine: {ipa: uk, respell: ook}
+      erasmian: {ipa: uːk, respell: ook}
+  - id: jn.1.13.3
+    surface: ἐξ
+    lemma: ἐκ
+    morph: ADP
+    tb: 040113/3
+    sound:
+      koine: {ipa: ɛks, respell: eks}
+      erasmian: {ipa: eks, respell: eks}
+  - id: jn.1.13.4
+    surface: αἱμάτων
+    lemma: αἷμα
+    morph: NOUN|Case=Gen|Gender=Neut|Number=Plur
+    tb: 040113/4
+    sound:
+      koine: {ipa: ɛ.ˈma.ton, respell: e-MA-ton}
+      erasmian: {ipa: hai.ˈma.tɔːn, respell: hai-MA-tohn}
+  - id: jn.1.13.5
+    surface: οὐδὲ
+    lemma: οὐδέ
+    morph: CCONJ
+    tb: 040113/5
+    sound:
+      koine: {ipa: u.ˈðɛ, respell: oo-DHE}
+      erasmian: {ipa: uː.ˈde, respell: oo-DE}
+  - id: jn.1.13.6
+    surface: ἐκ
+    lemma: ἐκ
+    morph: ADP
+    tb: 040113/6
+    sound:
+      koine: {ipa: ɛk, respell: ek}
+      erasmian: {ipa: ek, respell: ek}
+  - id: jn.1.13.7
+    surface: θελήματος
+    lemma: θέλημα
+    morph: NOUN|Case=Gen|Gender=Neut|Number=Sing
+    tb: 040113/7
+    sound:
+      koine: {ipa: θɛ.ˈle.ma.tos, respell: the-LAY-ma-tos}
+      erasmian: {ipa: θe.ˈlɛː.ma.tos, respell: the-LAY-ma-tos}
+  - id: jn.1.13.8
+    surface: σαρκὸς
+    lemma: σάρξ
+    morph: NOUN|Case=Gen|Gender=Fem|Number=Sing
+    tb: 040113/8
+    sound:
+      koine: {ipa: sar.ˈkos, respell: sar-KOS}
+      erasmian: {ipa: sar.ˈkos, respell: sar-KOS}
+  - id: jn.1.13.9
+    surface: οὐδὲ
+    lemma: οὐδέ
+    morph: CCONJ
+    tb: 040113/9
+    sound:
+      koine: {ipa: u.ˈðɛ, respell: oo-DHE}
+      erasmian: {ipa: uː.ˈde, respell: oo-DE}
+  - id: jn.1.13.10
+    surface: ἐκ
+    lemma: ἐκ
+    morph: ADP
+    tb: 040113/10
+    sound:
+      koine: {ipa: ɛk, respell: ek}
+      erasmian: {ipa: ek, respell: ek}
+  - id: jn.1.13.11
+    surface: θελήματος
+    lemma: θέλημα
+    morph: NOUN|Case=Gen|Gender=Neut|Number=Sing
+    tb: 040113/11
+    sound:
+      koine: {ipa: θɛ.ˈle.ma.tos, respell: the-LAY-ma-tos}
+      erasmian: {ipa: θe.ˈlɛː.ma.tos, respell: the-LAY-ma-tos}
+  - id: jn.1.13.12
+    surface: ἀνδρὸς
+    lemma: ἀνήρ
+    morph: NOUN|Case=Gen|Gender=Masc|Number=Sing
+    tb: 040113/12
+    sound:
+      koine: {ipa: an.ˈðros, respell: an-DHROS}
+      erasmian: {ipa: an.ˈdros, respell: an-DROS}
+  - id: jn.1.13.13
+    surface: ἀλλ’
+    lemma: ἀλλά
+    morph: CCONJ
+    tb: 040113/13
+    sound:
+      koine: {ipa: all, respell: all’}
+      erasmian: {ipa: all, respell: all’}
+  - id: jn.1.13.14
+    surface: ἐκ
+    lemma: ἐκ
+    morph: ADP
+    tb: 040113/14
+    sound:
+      koine: {ipa: ɛk, respell: ek}
+      erasmian: {ipa: ek, respell: ek}
+  - id: jn.1.13.15
+    surface: θεοῦ
+    lemma: θεός
+    morph: NOUN|Case=Gen|Gender=Masc|Number=Sing
+    tb: 040113/15
+    sound:
+      koine: {ipa: θɛ.ˈu, respell: the-OO}
+      erasmian: {ipa: θe.ˈuː, respell: the-OO}
+  - id: jn.1.13.16
+    surface: ἐγεννήθησαν
+    punct: .
+    lemma: γεννάω
+    morph: VERB|Mood=Ind|Number=Plur|Person=3|Tense=Aor|Voice=Pass
+    tb: 040113/16
+    sound:
+      koine: {ipa: ɛ.jɛn.ˈne.θe.san, respell: e-yen-NAY-thay-san}
+      erasmian: {ipa: e.ɡen.ˈnɛː.θɛː.san, respell: e-gen-NAY-thay-san}
+- id: jn.1.14
+  cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.14
+  text: Καὶ ὁ λόγος σὰρξ ἐγένετο καὶ ἐσκήνωσεν ἐν ἡμῖν, καὶ ἐθεασάμεθα τὴν δόξαν αὐτοῦ, δόξαν ὡς μονογενοῦς παρὰ πατρός, πλήρης χάριτος καὶ ἀληθείας·
+  tokens:
+  - id: jn.1.14.1
+    surface: Καὶ
+    lemma: καί
+    morph: CCONJ
+    tb: 040114/1
+    sound:
+      koine: {ipa: ˈkɛ, respell: KE}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: jn.1.14.2
+    surface: ὁ
+    lemma: ὁ
+    morph: DET|Case=Nom|Gender=Masc|Number=Sing
+    tb: 040114/2
+    sound:
+      koine: {ipa: o, respell: o}
+      erasmian: {ipa: ho, respell: ho}
+  - id: jn.1.14.3
+    surface: λόγος
+    lemma: λόγος
+    morph: NOUN|Case=Nom|Gender=Masc|Number=Sing
+    tb: 040114/3
+    sound:
+      koine: {ipa: ˈlo.ɣos, respell: LO-ghos}
+      erasmian: {ipa: ˈlo.ɡos, respell: LO-gos}
+  - id: jn.1.14.4
+    surface: σὰρξ
+    lemma: σάρξ
+    morph: NOUN|Case=Nom|Gender=Fem|Number=Sing
+    tb: 040114/4
+    sound:
+      koine: {ipa: ˈsarks, respell: SARKS}
+      erasmian: {ipa: ˈsarks, respell: SARKS}
+  - id: jn.1.14.5
+    surface: ἐγένετο
+    lemma: γίνομαι
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Aor|Voice=Mid
+    tb: 040114/5
+    sound:
+      koine: {ipa: ɛ.ˈjɛ.nɛ.to, respell: e-YE-ne-to}
+      erasmian: {ipa: e.ˈɡe.ne.to, respell: e-GE-ne-to}
+  - id: jn.1.14.6
+    surface: καὶ
+    lemma: καί
+    morph: CCONJ
+    tb: 040114/6
+    sound:
+      koine: {ipa: ˈkɛ, respell: KE}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: jn.1.14.7
+    surface: ἐσκήνωσεν
+    lemma: σκηνόω
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Aor|Voice=Act
+    tb: 040114/7
+    sound:
+      koine: {ipa: ɛs.ˈke.no.sɛn, respell: es-KAY-no-sen}
+      erasmian: {ipa: es.ˈkɛː.nɔː.sen, respell: es-KAY-noh-sen}
+  - id: jn.1.14.8
+    surface: ἐν
+    lemma: ἐν
+    morph: ADP
+    tb: 040114/8
+    sound:
+      koine: {ipa: ɛn, respell: en}
+      erasmian: {ipa: en, respell: en}
+  - id: jn.1.14.9
+    surface: ἡμῖν
+    punct: ','
+    lemma: ἐγώ
+    morph: PRON|Case=Dat|Number=Plur|PronType=Prs
+    tb: 040114/9
+    sound:
+      koine: {ipa: e.ˈmin, respell: ay-MEEN}
+      erasmian: {ipa: hɛː.ˈmiːn, respell: hay-MEEN}
+  - id: jn.1.14.10
+    surface: καὶ
+    lemma: καί
+    morph: CCONJ
+    tb: 040114/10
+    sound:
+      koine: {ipa: ˈkɛ, respell: KE}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: jn.1.14.11
+    surface: ἐθεασάμεθα
+    lemma: θεάομαι
+    morph: VERB|Mood=Ind|Number=Plur|Person=1|Tense=Aor|Voice=Mid
+    tb: 040114/11
+    sound:
+      koine: {ipa: ɛ.θɛ.a.ˈsa.mɛ.θa, respell: e-the-a-SA-me-tha}
+      erasmian: {ipa: e.θe.a.ˈsa.me.θa, respell: e-the-a-SA-me-tha}
+  - id: jn.1.14.12
+    surface: τὴν
+    lemma: ὁ
+    morph: DET|Case=Acc|Gender=Fem|Number=Sing
+    tb: 040114/12
+    sound:
+      koine: {ipa: ˈten, respell: TAYN}
+      erasmian: {ipa: ˈtɛːn, respell: TAYN}
+  - id: jn.1.14.13
+    surface: δόξαν
+    lemma: δόξα
+    morph: NOUN|Case=Acc|Gender=Fem|Number=Sing
+    tb: 040114/13
+    sound:
+      koine: {ipa: ˈðo.ksan, respell: DHO-ksan}
+      erasmian: {ipa: ˈdo.ksan, respell: DO-ksan}
+  - id: jn.1.14.14
+    surface: αὐτοῦ
+    punct: ','
+    lemma: αὐτός
+    morph: PRON|Case=Gen|Gender=Masc|Number=Sing|PronType=Prs
+    tb: 040114/14
+    sound:
+      koine: {ipa: av.ˈtu, respell: av-TOO}
+      erasmian: {ipa: au.ˈtuː, respell: ow-TOO}
+  - id: jn.1.14.15
+    surface: δόξαν
+    lemma: δόξα
+    morph: NOUN|Case=Acc|Gender=Fem|Number=Sing
+    tb: 040114/15
+    sound:
+      koine: {ipa: ˈðo.ksan, respell: DHO-ksan}
+      erasmian: {ipa: ˈdo.ksan, respell: DO-ksan}
+  - id: jn.1.14.16
+    surface: ὡς
+    lemma: ὡς
+    morph: CCONJ
+    tb: 040114/16
+    sound:
+      koine: {ipa: os, respell: os}
+      erasmian: {ipa: hɔːs, respell: hohs}
+  - id: jn.1.14.17
+    surface: μονογενοῦς
+    lemma: μονογενής
+    morph: ADJ|Case=Gen|Gender=Masc|Number=Sing
+    tb: 040114/17
+    sound:
+      koine: {ipa: mo.no.jɛ.ˈnus, respell: mo-no-ye-NOOS}
+      erasmian: {ipa: mo.no.ɡe.ˈnuːs, respell: mo-no-ge-NOOS}
+  - id: jn.1.14.18
+    surface: παρὰ
+    lemma: παρά
+    morph: ADP
+    tb: 040114/18
+    sound:
+      koine: {ipa: pa.ˈra, respell: pa-RA}
+      erasmian: {ipa: pa.ˈra, respell: pa-RA}
+  - id: jn.1.14.19
+    surface: πατρός
+    punct: ','
+    lemma: πατήρ
+    morph: NOUN|Case=Gen|Gender=Masc|Number=Sing
+    tb: 040114/19
+    sound:
+      koine: {ipa: pa.ˈtros, respell: pa-TROS}
+      erasmian: {ipa: pa.ˈtros, respell: pa-TROS}
+  - id: jn.1.14.20
+    surface: πλήρης
+    lemma: πλήρης
+    morph: ADJ|Case=Nom|Gender=Masc|Number=Sing
+    tb: 040114/20
+    sound:
+      koine: {ipa: ˈple.res, respell: PLAY-rays}
+      erasmian: {ipa: ˈplɛː.rɛːs, respell: PLAY-rays}
+  - id: jn.1.14.21
+    surface: χάριτος
+    lemma: χάρις
+    morph: NOUN|Case=Gen|Gender=Fem|Number=Sing
+    tb: 040114/21
+    sound:
+      koine: {ipa: ˈxa.ri.tos, respell: KHA-ree-tos}
+      erasmian: {ipa: ˈxa.ri.tos, respell: KHA-ri-tos}
+  - id: jn.1.14.22
+    surface: καὶ
+    lemma: καί
+    morph: CCONJ
+    tb: 040114/22
+    sound:
+      koine: {ipa: ˈkɛ, respell: KE}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: jn.1.14.23
+    surface: ἀληθείας
+    punct: ·
+    lemma: ἀλήθεια
+    morph: NOUN|Case=Gen|Gender=Fem|Number=Sing
+    tb: 040114/23
+    sound:
+      koine: {ipa: a.le.ˈθi.as, respell: a-lay-THEE-as}
+      erasmian: {ipa: a.lɛː.ˈθei.as, respell: a-lay-THAY-as}
+- id: jn.1.15
+  cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.15
+  text: (Ἰωάννης μαρτυρεῖ περὶ αὐτοῦ καὶ κέκραγεν λέγων· Οὗτος ἦν ὃν εἶπον· Ὁ ὀπίσω μου ἐρχόμενος ἔμπροσθέν μου γέγονεν, ὅτι πρῶτός μου ἦν·)
+  tokens:
+  - id: jn.1.15.1
+    surface: Ἰωάννης
+    punct: ς
+    lemma: Ἰωάννης
+    morph: NOUN|Case=Nom|Gender=Masc|Number=Sing
+    tb: 040115/1
+    sound:
+      koine: {ipa: i.o.ˈan.nes, respell: ee-o-AN-nays}
+      erasmian: {ipa: i.ɔː.ˈan.nɛːs, respell: i-oh-AN-nays}
+  - id: jn.1.15.2
+    surface: μαρτυρεῖ
+    lemma: μαρτυρέω
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Act
+    tb: 040115/2
+    sound:
+      koine: {ipa: mar.ty.ˈri, respell: mar-tü-REE}
+      erasmian: {ipa: mar.ty.ˈrei, respell: mar-tü-RAY}
+  - id: jn.1.15.3
+    surface: περὶ
+    lemma: περί
+    morph: ADP
+    tb: 040115/3
+    sound:
+      koine: {ipa: pɛ.ˈri, respell: pe-REE}
+      erasmian: {ipa: pe.ˈri, respell: pe-RI}
+  - id: jn.1.15.4
+    surface: αὐτοῦ
+    lemma: αὐτός
+    morph: PRON|Case=Gen|Gender=Masc|Number=Sing|PronType=Prs
+    tb: 040115/4
+    sound:
+      koine: {ipa: av.ˈtu, respell: av-TOO}
+      erasmian: {ipa: au.ˈtuː, respell: ow-TOO}
+  - id: jn.1.15.5
+    surface: καὶ
+    lemma: καί
+    morph: CCONJ
+    tb: 040115/5
+    sound:
+      koine: {ipa: ˈkɛ, respell: KE}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: jn.1.15.6
+    surface: κέκραγεν
+    lemma: κράζω
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Perf|Voice=Act
+    tb: 040115/6
+    sound:
+      koine: {ipa: ˈkɛ.kra.jɛn, respell: KE-kra-yen}
+      erasmian: {ipa: ˈke.kra.ɡen, respell: KE-kra-gen}
+  - id: jn.1.15.7
+    surface: λέγων
+    punct: ·
+    lemma: λέγω
+    morph: VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act
+    tb: 040115/7
+    sound:
+      koine: {ipa: ˈlɛ.ɣon, respell: LE-ghon}
+      erasmian: {ipa: ˈle.ɡɔːn, respell: LE-gohn}
+  - id: jn.1.15.8
+    surface: Οὗτος
+    lemma: οὗτος
+    morph: PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Dem
+    tb: 040115/8
+    sound:
+      koine: {ipa: ˈu.tos, respell: OO-tos}
+      erasmian: {ipa: ˈhuː.tos, respell: HOO-tos}
+  - id: jn.1.15.9
+    surface: ἦν
+    lemma: εἰμί
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imperf|Voice=Act
+    tb: 040115/9
+    sound:
+      koine: {ipa: ˈen, respell: AYN}
+      erasmian: {ipa: ˈɛːn, respell: AYN}
+  - id: jn.1.15.10
+    surface: ὃν
+    lemma: ὅς
+    morph: PRON|Case=Acc|Gender=Masc|Number=Sing|PronType=Rel
+    tb: 040115/10
+    sound:
+      koine: {ipa: ˈon, respell: 'ON'}
+      erasmian: {ipa: ˈhon, respell: HON}
+  - id: jn.1.15.11
+    surface: εἶπον
+    punct: ·
+    lemma: λέγω
+    morph: VERB|Mood=Ind|Number=Sing|Person=1|Tense=Aor|Voice=Act
+    tb: 040115/11
+    sound:
+      koine: {ipa: ˈi.pon, respell: EE-pon}
+      erasmian: {ipa: ˈei.pon, respell: AY-pon}
+  - id: jn.1.15.12
+    surface: Ὁ
+    lemma: ὁ
+    morph: DET|Case=Nom|Gender=Masc|Number=Sing
+    tb: 040115/12
+    sound:
+      koine: {ipa: o, respell: o}
+      erasmian: {ipa: ho, respell: ho}
+  - id: jn.1.15.13
+    surface: ὀπίσω
+    lemma: ὀπίσω
+    morph: ADP
+    tb: 040115/13
+    sound:
+      koine: {ipa: o.ˈpi.so, respell: o-PEE-so}
+      erasmian: {ipa: o.ˈpi.sɔː, respell: o-PI-soh}
+  - id: jn.1.15.14
+    surface: μου
+    lemma: ἐγώ
+    morph: PRON|Case=Gen|Number=Sing|PronType=Prs
+    tb: 040115/14
+    sound:
+      koine: {ipa: mu, respell: moo}
+      erasmian: {ipa: muː, respell: moo}
+  - id: jn.1.15.15
+    surface: ἐρχόμενος
+    lemma: ἔρχομαι
+    morph: VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Mid
+    tb: 040115/15
+    sound:
+      koine: {ipa: ɛr.ˈxo.mɛ.nos, respell: er-KHO-me-nos}
+      erasmian: {ipa: er.ˈxo.me.nos, respell: er-KHO-me-nos}
+  - id: jn.1.15.16
+    surface: ἔμπροσθέν
+    lemma: ἔμπροσθεν
+    morph: ADP
+    tb: 040115/16
+    sound:
+      koine: {ipa: ˈɛm.pros.ˈθɛn, respell: EM-pros-THEN}
+      erasmian: {ipa: ˈem.pros.ˈθen, respell: EM-pros-THEN}
+  - id: jn.1.15.17
+    surface: μου
+    lemma: ἐγώ
+    morph: PRON|Case=Gen|Number=Sing|PronType=Prs
+    tb: 040115/17
+    sound:
+      koine: {ipa: mu, respell: moo}
+      erasmian: {ipa: muː, respell: moo}
+  - id: jn.1.15.18
+    surface: γέγονεν
+    punct: ','
+    lemma: γίνομαι
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Perf|Voice=Act
+    tb: 040115/18
+    sound:
+      koine: {ipa: ˈjɛ.ɣo.nɛn, respell: YE-gho-nen}
+      erasmian: {ipa: ˈɡe.ɡo.nen, respell: GE-go-nen}
+  - id: jn.1.15.19
+    surface: ὅτι
+    lemma: ὅτι
+    morph: CCONJ
+    tb: 040115/19
+    sound:
+      koine: {ipa: ˈo.ti, respell: O-tee}
+      erasmian: {ipa: ˈho.ti, respell: HO-ti}
+  - id: jn.1.15.20
+    surface: πρῶτός
+    lemma: πρῶτος
+    morph: ADJ|Case=Nom|Gender=Masc|Number=Sing
+    tb: 040115/20
+    sound:
+      koine: {ipa: ˈpro.ˈtos, respell: PRO-TOS}
+      erasmian: {ipa: ˈprɔː.ˈtos, respell: PROH-TOS}
+  - id: jn.1.15.21
+    surface: μου
+    lemma: ἐγώ
+    morph: PRON|Case=Gen|Number=Sing|PronType=Prs
+    tb: 040115/21
+    sound:
+      koine: {ipa: mu, respell: moo}
+      erasmian: {ipa: muː, respell: moo}
+  - id: jn.1.15.22
+    surface: ἦν
+    punct: ·)
+    lemma: εἰμί
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imperf|Voice=Act
+    tb: 040115/22
+    sound:
+      koine: {ipa: ˈen, respell: AYN}
+      erasmian: {ipa: ˈɛːn, respell: AYN}
+- id: jn.1.16
+  cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.16
+  text: ὅτι ἐκ τοῦ πληρώματος αὐτοῦ ἡμεῖς πάντες ἐλάβομεν, καὶ χάριν ἀντὶ χάριτος·
+  tokens:
+  - id: jn.1.16.1
+    surface: ὅτι
+    lemma: ὅτι
+    morph: CCONJ
+    tb: 040116/1
+    sound:
+      koine: {ipa: ˈo.ti, respell: O-tee}
+      erasmian: {ipa: ˈho.ti, respell: HO-ti}
+  - id: jn.1.16.2
+    surface: ἐκ
+    lemma: ἐκ
+    morph: ADP
+    tb: 040116/2
+    sound:
+      koine: {ipa: ɛk, respell: ek}
+      erasmian: {ipa: ek, respell: ek}
+  - id: jn.1.16.3
+    surface: τοῦ
+    lemma: ὁ
+    morph: DET|Case=Gen|Gender=Neut|Number=Sing
+    tb: 040116/3
+    sound:
+      koine: {ipa: ˈtu, respell: TOO}
+      erasmian: {ipa: ˈtuː, respell: TOO}
+  - id: jn.1.16.4
+    surface: πληρώματος
+    lemma: πλήρωμα
+    morph: NOUN|Case=Gen|Gender=Neut|Number=Sing
+    tb: 040116/4
+    sound:
+      koine: {ipa: ple.ˈro.ma.tos, respell: play-RO-ma-tos}
+      erasmian: {ipa: plɛː.ˈrɔː.ma.tos, respell: play-ROH-ma-tos}
+  - id: jn.1.16.5
+    surface: αὐτοῦ
+    lemma: αὐτός
+    morph: PRON|Case=Gen|Gender=Masc|Number=Sing|PronType=Prs
+    tb: 040116/5
+    sound:
+      koine: {ipa: av.ˈtu, respell: av-TOO}
+      erasmian: {ipa: au.ˈtuː, respell: ow-TOO}
+  - id: jn.1.16.6
+    surface: ἡμεῖς
+    lemma: ἐγώ
+    morph: PRON|Case=Nom|Number=Plur|PronType=Prs
+    tb: 040116/6
+    sound:
+      koine: {ipa: e.ˈmis, respell: ay-MEES}
+      erasmian: {ipa: hɛː.ˈmeis, respell: hay-MAYS}
+  - id: jn.1.16.7
+    surface: πάντες
+    lemma: πᾶς
+    morph: ADJ|Case=Nom|Gender=Masc|Number=Plur
+    tb: 040116/7
+    sound:
+      koine: {ipa: ˈpan.tɛs, respell: PAN-tes}
+      erasmian: {ipa: ˈpan.tes, respell: PAN-tes}
+  - id: jn.1.16.8
+    surface: ἐλάβομεν
+    punct: ','
+    lemma: λαμβάνω
+    morph: VERB|Mood=Ind|Number=Plur|Person=1|Tense=Aor|Voice=Act
+    tb: 040116/8
+    sound:
+      koine: {ipa: ɛ.ˈla.vo.mɛn, respell: e-LA-vo-men}
+      erasmian: {ipa: e.ˈla.bo.men, respell: e-LA-bo-men}
+  - id: jn.1.16.9
+    surface: καὶ
+    lemma: καί
+    morph: ADV
+    tb: 040116/9
+    sound:
+      koine: {ipa: ˈkɛ, respell: KE}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: jn.1.16.10
+    surface: χάριν
+    lemma: χάρις
+    morph: NOUN|Case=Acc|Gender=Fem|Number=Sing
+    tb: 040116/10
+    sound:
+      koine: {ipa: ˈxa.rin, respell: KHA-reen}
+      erasmian: {ipa: ˈxa.rin, respell: KHA-rin}
+  - id: jn.1.16.11
+    surface: ἀντὶ
+    lemma: ἀντί
+    morph: ADP
+    tb: 040116/11
+    sound:
+      koine: {ipa: an.ˈti, respell: an-TEE}
+      erasmian: {ipa: an.ˈti, respell: an-TI}
+  - id: jn.1.16.12
+    surface: χάριτος
+    punct: ·
+    lemma: χάρις
+    morph: NOUN|Case=Gen|Gender=Fem|Number=Sing
+    tb: 040116/12
+    sound:
+      koine: {ipa: ˈxa.ri.tos, respell: KHA-ree-tos}
+      erasmian: {ipa: ˈxa.ri.tos, respell: KHA-ri-tos}
+- id: jn.1.17
+  cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.17
+  text: ὅτι ὁ νόμος διὰ Μωϋσέως ἐδόθη, ἡ χάρις καὶ ἡ ἀλήθεια διὰ Ἰησοῦ Χριστοῦ ἐγένετο.
+  tokens:
+  - id: jn.1.17.1
+    surface: ὅτι
+    lemma: ὅτι
+    morph: CCONJ
+    tb: 040117/1
+    sound:
+      koine: {ipa: ˈo.ti, respell: O-tee}
+      erasmian: {ipa: ˈho.ti, respell: HO-ti}
+  - id: jn.1.17.2
+    surface: ὁ
+    lemma: ὁ
+    morph: DET|Case=Nom|Gender=Masc|Number=Sing
+    tb: 040117/2
+    sound:
+      koine: {ipa: o, respell: o}
+      erasmian: {ipa: ho, respell: ho}
+  - id: jn.1.17.3
+    surface: νόμος
+    lemma: νόμος
+    morph: NOUN|Case=Nom|Gender=Masc|Number=Sing
+    tb: 040117/3
+    sound:
+      koine: {ipa: ˈno.mos, respell: NO-mos}
+      erasmian: {ipa: ˈno.mos, respell: NO-mos}
+  - id: jn.1.17.4
+    surface: διὰ
+    lemma: διά
+    morph: ADP
+    tb: 040117/4
+    sound:
+      koine: {ipa: ði.ˈa, respell: dhee-A}
+      erasmian: {ipa: di.ˈa, respell: di-A}
+  - id: jn.1.17.5
+    surface: Μωϋσέως
+    lemma: Μωϋσῆς
+    morph: NOUN|Case=Gen|Gender=Masc|Number=Sing
+    tb: 040117/5
+    sound:
+      koine: {ipa: mo.y.ˈsɛ.os, respell: mo-ü-SE-os}
+      erasmian: {ipa: mɔː.y.ˈse.ɔːs, respell: moh-ü-SE-ohs}
+  - id: jn.1.17.6
+    surface: ἐδόθη
+    punct: ','
+    lemma: δίδωμι
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Aor|Voice=Pass
+    tb: 040117/6
+    sound:
+      koine: {ipa: ɛ.ˈðo.θe, respell: e-DHO-thay}
+      erasmian: {ipa: e.ˈdo.θɛː, respell: e-DO-thay}
+  - id: jn.1.17.7
+    surface: ἡ
+    lemma: ὁ
+    morph: DET|Case=Nom|Gender=Fem|Number=Sing
+    tb: 040117/7
+    sound:
+      koine: {ipa: e, respell: ay}
+      erasmian: {ipa: hɛː, respell: hay}
+  - id: jn.1.17.8
+    surface: χάρις
+    lemma: χάρις
+    morph: NOUN|Case=Nom|Gender=Fem|Number=Sing
+    tb: 040117/8
+    sound:
+      koine: {ipa: ˈxa.ris, respell: KHA-rees}
+      erasmian: {ipa: ˈxa.ris, respell: KHA-ris}
+  - id: jn.1.17.9
+    surface: καὶ
+    lemma: καί
+    morph: CCONJ
+    tb: 040117/9
+    sound:
+      koine: {ipa: ˈkɛ, respell: KE}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: jn.1.17.10
+    surface: ἡ
+    lemma: ὁ
+    morph: DET|Case=Nom|Gender=Fem|Number=Sing
+    tb: 040117/10
+    sound:
+      koine: {ipa: e, respell: ay}
+      erasmian: {ipa: hɛː, respell: hay}
+  - id: jn.1.17.11
+    surface: ἀλήθεια
+    lemma: ἀλήθεια
+    morph: NOUN|Case=Nom|Gender=Fem|Number=Sing
+    tb: 040117/11
+    sound:
+      koine: {ipa: a.ˈle.θi.a, respell: a-LAY-thee-a}
+      erasmian: {ipa: a.ˈlɛː.θei.a, respell: a-LAY-thay-a}
+  - id: jn.1.17.12
+    surface: διὰ
+    lemma: διά
+    morph: ADP
+    tb: 040117/12
+    sound:
+      koine: {ipa: ði.ˈa, respell: dhee-A}
+      erasmian: {ipa: di.ˈa, respell: di-A}
+  - id: jn.1.17.13
+    surface: Ἰησοῦ
+    lemma: Ἰησοῦς
+    morph: NOUN|Case=Gen|Gender=Masc|Number=Sing
+    tb: 040117/13
+    sound:
+      koine: {ipa: i.e.ˈsu, respell: ee-ay-SOO}
+      erasmian: {ipa: i.ɛː.ˈsuː, respell: i-ay-SOO}
+  - id: jn.1.17.14
+    surface: Χριστοῦ
+    lemma: Χριστός
+    morph: NOUN|Case=Gen|Gender=Masc|Number=Sing
+    tb: 040117/14
+    sound:
+      koine: {ipa: xris.ˈtu, respell: khrees-TOO}
+      erasmian: {ipa: xris.ˈtuː, respell: khris-TOO}
+  - id: jn.1.17.15
+    surface: ἐγένετο
+    punct: .
+    lemma: γίνομαι
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Aor|Voice=Mid
+    tb: 040117/15
+    sound:
+      koine: {ipa: ɛ.ˈjɛ.nɛ.to, respell: e-YE-ne-to}
+      erasmian: {ipa: e.ˈɡe.ne.to, respell: e-GE-ne-to}
+- id: jn.1.18
+  cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.18
+  text: θεὸν οὐδεὶς ἑώρακεν πώποτε· μονογενὴς θεὸς ὁ ὢν εἰς τὸν κόλπον τοῦ πατρὸς ἐκεῖνος ἐξηγήσατο.
+  tokens:
+  - id: jn.1.18.1
+    surface: θεὸν
+    lemma: θεός
+    morph: NOUN|Case=Acc|Gender=Masc|Number=Sing
+    tb: 040118/1
+    sound:
+      koine: {ipa: θɛ.ˈon, respell: the-ON}
+      erasmian: {ipa: θe.ˈon, respell: the-ON}
+  - id: jn.1.18.2
+    surface: οὐδεὶς
+    lemma: οὐδείς
+    morph: ADJ|Case=Nom|Gender=Masc|Number=Sing
+    tb: 040118/2
+    sound:
+      koine: {ipa: u.ˈðis, respell: oo-DHEES}
+      erasmian: {ipa: uː.ˈdeis, respell: oo-DAYS}
+  - id: jn.1.18.3
+    surface: ἑώρακεν
+    lemma: ὁράω
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Perf|Voice=Act
+    tb: 040118/3
+    sound:
+      koine: {ipa: ɛ.ˈo.ra.kɛn, respell: e-O-ra-ken}
+      erasmian: {ipa: he.ˈɔː.ra.ken, respell: he-OH-ra-ken}
+  - id: jn.1.18.4
+    surface: πώποτε
+    punct: ·
+    lemma: πώποτε
+    morph: ADV
+    tb: 040118/4
+    sound:
+      koine: {ipa: ˈpo.po.tɛ, respell: PO-po-te}
+      erasmian: {ipa: ˈpɔː.po.te, respell: POH-po-te}
+  - id: jn.1.18.5
+    surface: μονογενὴς
+    lemma: μονογενής
+    morph: ADJ|Case=Nom|Gender=Masc|Number=Sing
+    tb: 040118/5
+    sound:
+      koine: {ipa: mo.no.jɛ.ˈnes, respell: mo-no-ye-NAYS}
+      erasmian: {ipa: mo.no.ɡe.ˈnɛːs, respell: mo-no-ge-NAYS}
+  - id: jn.1.18.6
+    surface: θεὸς
+    lemma: θεός
+    morph: NOUN|Case=Nom|Gender=Masc|Number=Sing
+    tb: 040118/6
+    sound:
+      koine: {ipa: θɛ.ˈos, respell: the-OS}
+      erasmian: {ipa: θe.ˈos, respell: the-OS}
+  - id: jn.1.18.7
+    surface: ὁ
+    lemma: ὁ
+    morph: DET|Case=Nom|Gender=Masc|Number=Sing
+    tb: 040118/7
+    sound:
+      koine: {ipa: o, respell: o}
+      erasmian: {ipa: ho, respell: ho}
+  - id: jn.1.18.8
+    surface: ὢν
+    lemma: εἰμί
+    morph: VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act
+    tb: 040118/8
+    sound:
+      koine: {ipa: ˈon, respell: 'ON'}
+      erasmian: {ipa: ˈɔːn, respell: OHN}
+  - id: jn.1.18.9
+    surface: εἰς
+    lemma: εἰς
+    morph: ADP
+    tb: 040118/9
+    sound:
+      koine: {ipa: is, respell: ees}
+      erasmian: {ipa: eis, respell: ays}
+  - id: jn.1.18.10
+    surface: τὸν
+    lemma: ὁ
+    morph: DET|Case=Acc|Gender=Masc|Number=Sing
+    tb: 040118/10
+    sound:
+      koine: {ipa: ˈton, respell: TON}
+      erasmian: {ipa: ˈton, respell: TON}
+  - id: jn.1.18.11
+    surface: κόλπον
+    lemma: κόλπος
+    morph: NOUN|Case=Acc|Gender=Masc|Number=Sing
+    tb: 040118/11
+    sound:
+      koine: {ipa: ˈkol.pon, respell: KOL-pon}
+      erasmian: {ipa: ˈkol.pon, respell: KOL-pon}
+  - id: jn.1.18.12
+    surface: τοῦ
+    lemma: ὁ
+    morph: DET|Case=Gen|Gender=Masc|Number=Sing
+    tb: 040118/12
+    sound:
+      koine: {ipa: ˈtu, respell: TOO}
+      erasmian: {ipa: ˈtuː, respell: TOO}
+  - id: jn.1.18.13
+    surface: πατρὸς
+    lemma: πατήρ
+    morph: NOUN|Case=Gen|Gender=Masc|Number=Sing
+    tb: 040118/13
+    sound:
+      koine: {ipa: pa.ˈtros, respell: pa-TROS}
+      erasmian: {ipa: pa.ˈtros, respell: pa-TROS}
+  - id: jn.1.18.14
+    surface: ἐκεῖνος
+    lemma: ἐκεῖνος
+    morph: PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Dem
+    tb: 040118/14
+    sound:
+      koine: {ipa: ɛ.ˈki.nos, respell: e-KEE-nos}
+      erasmian: {ipa: e.ˈkei.nos, respell: e-KAY-nos}
+  - id: jn.1.18.15
+    surface: ἐξηγήσατο
+    punct: .
+    lemma: ἐξηγέομαι
+    morph: VERB|Mood=Ind|Number=Sing|Person=3|Tense=Aor|Voice=Mid
+    tb: 040118/15
+    sound:
+      koine: {ipa: ɛ.kse.ˈje.sa.to, respell: e-ksay-YAY-sa-to}
+      erasmian: {ipa: e.ksɛː.ˈɡɛː.sa.to, respell: e-ksay-GAY-sa-to}

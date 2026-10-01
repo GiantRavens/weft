@@ -1,0 +1,65 @@
+# Long alpha, iota and upsilon in Meditations Book 2 that the orthography does not mark.
+# Merged after the shared grc_quantities.yaml (manifest `quantities` list). Same format: key = lowercase
+# surface form as printed, value = the form with U+0304 on each long dichronon. Entries are limited to
+# lengths that are regular (first-declension -ᾱ/-ᾱς/-ᾱν after ε, ι, ρ; genitive singular -ᾱς) or given in
+# LSJ for the stem. The Koine scheme does not use length; the restored and Erasmian schemes do.
+"γίνεσθαι": "γῑ́νεσθαι"   # γῑ́νομαι (Koine for γίγνομαι), LSJ
+"γίνεται": "γῑ́νεται"   # γῑ́νομαι, LSJ
+"γινομένων": "γῑνομένων"   # γῑ́νομαι, LSJ
+"γινόμενα": "γῑνόμενα"   # γῑ́νομαι, LSJ
+"διακρίνειν": "διακρῑ́νειν"   # κρῑ́νω, LSJ
+"συγκρίνειε": "συγκρῑ́νειε"   # κρῑ́νω, LSJ
+"συγκρίνεται": "συγκρῑ́νεται"   # κρῑ́νω, LSJ
+"ὑποκρίνηται": "ὑποκρῑ́νηται"   # κρῑ́νω, LSJ
+"διαλύσῃ": "διαλῡ́σῃ"   # aorist stem λῡσ-, LSJ λύω
+"λύπης": "λῡ́πης"   # λῡ́πη, LSJ
+"τύφῳ": "τῡ́φῳ"   # τῦφος, LSJ
+"θυμόν": "θῡμόν"   # θῡμός, LSJ
+"θυμούμενος": "θῡμούμενος"   # θῡμόω, LSJ
+"θυμωθῆναι": "θῡμωθῆναι"   # θῡμόω, LSJ
+"ἐπιθυμίαν": "ἐπιθῡμίᾱν"   # ἐπιθῡμίᾱ, LSJ; accusative -ᾱν
+"ψυχή": "ψῡχή"   # ψῡχή, LSJ
+"ψυχὴ": "ψῡχὴ"   # ψῡχή, LSJ
+"ψυχῆς": "ψῡχῆς"   # ψῡχή, LSJ
+"ψυχῇ": "ψῡχῇ"   # ψῡχή, LSJ
+"ψυχαῖς": "ψῡχαῖς"   # ψῡχή, LSJ
+"κινήμασι": "κῑνήμασι"   # κῑνέω, LSJ
+"μικρότατα": "μῑκρότατα"   # μῑκρός, LSJ
+"τιμῆσαι": "τῑμῆσαι"   # τῑμάω, LSJ
+"χίλια": "χῑ́λια"   # χῑ́λιοι, LSJ
+"μύρια": "μῡ́ρια"   # μῡρίος, LSJ
+"ἀκριβοῦς": "ἀκρῑβοῦς"   # ἀκρῑβής, LSJ
+"ἐάσῃς": "ἐᾱ́σῃς"   # ἐάω, aorist ἐᾱσα, LSJ
+"θέασαι": "θέᾱσαι"   # θεᾱ́ομαι, LSJ
+"πάσης": "πᾱ́σης"   # πᾶς, long ᾱ throughout, LSJ
+"πασῶν": "πᾱσῶν"   # πᾶς, LSJ
+"πράσσειν": "πρᾱ́σσειν"   # πρᾱ́σσω, LSJ
+"πράξεων": "πρᾱ́ξεων"   # πρᾶξις, LSJ
+"ἀμυδρά": "ἀμυδρᾱ́"   # feminine nominative -ᾱ after ρ
+"οὐσία": "οὐσίᾱ"   # -ᾱ after ι, LSJ οὐσίᾱ
+"πενία": "πενίᾱ"   # -ᾱ after ι, LSJ πενίᾱ
+"ἀδοξία": "ἀδοξίᾱ"   # -ᾱ after ι
+"φιλοσοφία": "φιλοσοφίᾱ"   # -ᾱ after ι
+"ἐπιδημία": "ἐπιδημίᾱ"   # -ᾱ after ι
+"ὑστεροφημία": "ὑστεροφημίᾱ"   # -ᾱ after ι
+"θεραπεία": "θεραπείᾱ"   # θεραπείᾱ, from θεραπεύω, LSJ
+"εὐδοξίαν": "εὐδοξίᾱν"   # accusative -ᾱν after ι
+"εὐμοιρίαν": "εὐμοιρίᾱν"   # accusative -ᾱν after ι
+"φαντασίαν": "φαντασίᾱν"   # accusative -ᾱν after ι
+"ἀδυναμίαν": "ἀδυναμίᾱν"   # accusative -ᾱν after ι
+"ἀτεχνίαν": "ἀτεχνίᾱν"   # accusative -ᾱν after ι
+"ἑτέραν": "ἑτέρᾱν"   # accusative -ᾱν after ρ
+"περιφορὰν": "περιφορᾱ̀ν"   # φορᾱ́, LSJ; accusative -ᾱν
+"ἀναφορὰν": "ἀναφορᾱ̀ν"   # accusative -ᾱν after ρ
+"ὥρας": "ὥρᾱς"   # genitive singular -ᾱς
+"καρδίας": "καρδίᾱς"   # genitive singular -ᾱς
+"πολιτείας": "πολιτείᾱς"   # genitive singular -ᾱς
+"ἐλευθερίας": "ἐλευθερίᾱς"   # genitive singular -ᾱς
+"φιλαυτίας": "φιλαυτίᾱς"   # genitive singular -ᾱς
+"φιλοσοφίας": "φιλοσοφίᾱς"   # genitive singular -ᾱς
+"φιλοστοργίας": "φιλοστοργίᾱς"   # genitive singular -ᾱς
+"ἰδίας": "ἰδίᾱς"   # genitive singular -ᾱς
+"προνοίας": "προνοίᾱς"   # genitive singular -ᾱς
+"ἐννοίας": "ἐννοίᾱς"   # genitive singular -ᾱς
+"λεληθυίας": "λεληθυίᾱς"   # genitive singular -ᾱς
+"προθεσμίας": "προθεσμίᾱς"   # accusative plural -ᾱς

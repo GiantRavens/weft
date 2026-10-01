@@ -21,5 +21,7 @@ predicted_gaps:
 - the metre counts synalepha across words and synaeresis in mio, io, sia, sua, tuo; where Dante's count differs (parea, avea, l'aere, dialefe after a pause) the edition marks the token by hand, and a reader
   may divide differently
 - 'the rhyme is checked by spelling across the canto''s terza rima: legge (law, closed e) rhymes with regge and elegge (open e)'
-- lemma and morphology are UD Italian-Old's, copied into curated/ until draft can read the treebank; the gloss is by hand, draft
+- 'one rhyme set does not agree by spelling: desse, venisse, tremesse (lines 44, 46, 48); the check reports it as terza-rima-mismatch (4 samples, one per pair) and the text stands as printed (see the note
+  on terza rima)'
+- lemma and morphology are UD Italian-Old's (an annotation still under revision, per its README); the gloss is by hand, draft
 - Cary's blank verse does not follow Dante's lines, so his spans cover passages; Longfellow's follow the tercets

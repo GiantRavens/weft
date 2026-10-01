@@ -16,13 +16,12 @@ edition:
   file: edition.yaml
   license: "Petrocchi's critical text (1966–67, revised reprint 1994) no longer protected (Italian law, art. 85-quater L. 633/1941, gives critical editions 20 years); Wikisource transcription CC BY-SA 4.0; Weft token division CC BY-SA 4.0"
 treebank:
-  # UD Italian-Old annotates the whole Commedia on Petrocchi's text, and this canto's 993 words
-  # align with the edition one to one. weft draft cannot yet read a UD file keyed by canto and line
-  # (MISC Canto=, Verso=), so `format: none`: the lemma and morphology are copied from the treebank
-  # into curated/ by a script, in a changeset that names it, until the core gains that reader.
+  # UD Italian-Old annotates the whole Commedia on Petrocchi's text; read by canto and line (MISC Verso=)
   id: ud-italian-old
   name: "UD Italian-Old (C. Corbetta, M. Passarotti, F. M. Cecchini, G. Moretti), from the DanteSearch corpus (University of Pisa), Universal Dependencies, commit a82abc4"
-  format: none
+  format: conllu-verse
+  token_prefix: OldItalian_Dante_Inferno-
+  match: {Canto: "1"}
   file: sources/it_old-ud-train.conllu
   url: "https://raw.githubusercontent.com/UniversalDependencies/UD_Italian-Old/a82abc49afb8b3605eda5b85a9c3a23f480d82a7/it_old-ud-train.conllu"
   sha256: 9e94e25d826632a005adc2a8a1daa88f46bdd1509d56090b4c82d27779e1a5e0
@@ -63,5 +62,6 @@ predicted_gaps:
   - "the Florentine of about 1307 is reconstructed; open and closed e and o come from a lexicon built on the modern Tuscan standard and the Latin source vowels, and the gorgia toscana is left out"
   - "the metre counts synalepha across words and synaeresis in mio, io, sia, sua, tuo; where Dante's count differs (parea, avea, l'aere, dialefe after a pause) the edition marks the token by hand, and a reader may divide differently"
   - "the rhyme is checked by spelling across the canto's terza rima: legge (law, closed e) rhymes with regge and elegge (open e)"
-  - "lemma and morphology are UD Italian-Old's, copied into curated/ until draft can read the treebank; the gloss is by hand, draft"
+  - "one rhyme set does not agree by spelling: desse, venisse, tremesse (lines 44, 46, 48); the check reports it as terza-rima-mismatch (4 samples, one per pair) and the text stands as printed (see the note on terza rima)"
+  - "lemma and morphology are UD Italian-Old's (an annotation still under revision, per its README); the gloss is by hand, draft"
   - "Cary's blank verse does not follow Dante's lines, so his spans cover passages; Longfellow's follow the tercets"

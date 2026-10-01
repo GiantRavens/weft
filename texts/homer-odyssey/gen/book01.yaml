@@ -6,6 +6,7 @@ layers:
   lemma: {src: agdt-2.1}
   morph: {src: agdt-2.1}
   sound: {src: weft.greek 0.1}
+  metre: {src: weft.greek hexameter scanner 0.1}
 lines:
 - id: od.1.1
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.1
@@ -78,6 +79,7 @@ lines:
     sound:
       restored: {ipa: pol.là, respell: pol-la}
       erasmian: {ipa: pol.ˈla, respell: pol-LA}
+  metre: —◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×
 - id: od.1.2
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.2
   text: πλάγχθη, ἐπεὶ Τροίης ἱερὸν πτολίεθρον ἔπερσεν·
@@ -132,6 +134,7 @@ lines:
     sound:
       restored: {ipa: é.per.sen, respell: E-per-sen}
       erasmian: {ipa: ˈe.per.sen, respell: E-per-sen}
+  metre: —◡◡|——|—◡◡|—◡◡|—◡◡|—×
 - id: od.1.3
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.3
   text: πολλῶν δʼ ἀνθρώπων ἴδεν ἄστεα καὶ νόον ἔγνω,
@@ -201,6 +204,7 @@ lines:
     sound:
       restored: {ipa: éɡ.nɔː, respell: EG-naw}
       erasmian: {ipa: ˈeɡ.nɔː, respell: EG-noh}
+  metre: ——|——|—◡◡|—◡◡|—◡◡|—×
 - id: od.1.4
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.4
   text: πολλὰ δʼ ὅ γʼ ἐν πόντῳ πάθεν ἄλγεα ὃν κατὰ θυμόν,
@@ -295,6 +299,7 @@ lines:
       restored: {ipa: tʰyː.món, respell: tʰüü-MON}
       erasmian: {ipa: θyː.ˈmon, respell: thüü-MON}
     prov: {sound: weft.greek 0.1 + quantity table}
+  metre: —◡◡|——|—◡◡|—◡◡|—◡◡|—×
 - id: od.1.5
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.5
   text: ἀρνύμενος ἥν τε ψυχὴν καὶ νόστον ἑταίρων.
@@ -357,6 +362,7 @@ lines:
     sound:
       restored: {ipa: he.taí.rɔːn, respell: he-TAI-rawn}
       erasmian: {ipa: he.ˈtai.rɔːn, respell: he-TAI-rohn}
+  metre: —◡◡|——|——|——|—◡◡|—×
 - id: od.1.6
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.6
   text: ἀλλʼ οὐδʼ ὣς ἑτάρους ἐρρύσατο, ἱέμενός περ·
@@ -421,6 +427,7 @@ lines:
     sound:
       restored: {ipa: per, respell: per}
       erasmian: {ipa: per, respell: per}
+  metre: ——|—◡◡|——|—◡◡|—◡◡|—×
 - id: od.1.7
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.7
   text: αὐτῶν γὰρ σφετέρῃσιν ἀτασθαλίῃσιν ὄλοντο,
@@ -466,6 +473,7 @@ lines:
     sound:
       restored: {ipa: ó.lon.to, respell: O-lon-to}
       erasmian: {ipa: ˈo.lon.to, respell: O-lon-to}
+  metre: ——|—◡◡|—◡◡|—◡◡|—◡◡|—×
 - id: od.1.8
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.8
   text: νήπιοι, οἳ κατὰ βοῦς Ὑπερίονος Ἠελίοιο
@@ -520,6 +528,7 @@ lines:
     sound:
       restored: {ipa: ɛː.e.lí.oi.o, respell: ê-e-LI-oy-o}
       erasmian: {ipa: ɛː.e.ˈli.oi.o, respell: ay-e-LI-oy-o}
+  metre: —◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×
 - id: od.1.9
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.9
   text: ἤσθιον· αὐτὰρ ὁ τοῖσιν ἀφείλετο νόστιμον ἦμαρ.
@@ -582,6 +591,7 @@ lines:
     sound:
       restored: {ipa: ɛ̂ː.mar, respell: Ê-mar}
       erasmian: {ipa: ˈɛː.mar, respell: AY-mar}
+  metre: —◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×
 - id: od.1.10
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.10
   text: τῶν ἁμόθεν γε, θεά, θύγατερ Διός, εἰπὲ καὶ ἡμῖν.
@@ -663,3 +673,4 @@ lines:
     sound:
       restored: {ipa: hɛː.mîːn, respell: hê-MEEN}
       erasmian: {ipa: hɛː.ˈmiːn, respell: hay-MEEN}
+  metre: —◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×

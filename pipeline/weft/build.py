@@ -15,9 +15,9 @@ import yaml
 from . import __version__, treebank
 from .draft import PHON, load_manifest
 
-HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "lzh": "lzh", "runic": "gmq", "ja": "ja", "san": "sa", "akk": "akk", "fa": "fa", "ta": "ta", "it": "it", "fr": "fr"}
+HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "lzh": "lzh", "runic": "gmq", "ja": "ja", "san": "sa", "akk": "akk", "fa": "fa", "ta": "ta", "it": "it", "fr": "fr", "es": "es", "nl": "nl", "fro": "fro"}
 RTL = {"hbo", "fa"}
-LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "lzh": "Classical Chinese", "runic": "Runic Norse", "ja": "Early modern Japanese", "san": "Vedic Sanskrit", "akk": "Akkadian", "fa": "Classical Persian", "ta": "Old Tamil", "it": "Renaissance Italian", "fr": "Middle French"}
+LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "lzh": "Classical Chinese", "runic": "Runic Norse", "ja": "Early modern Japanese", "san": "Vedic Sanskrit", "akk": "Akkadian", "fa": "Classical Persian", "ta": "Old Tamil", "it": "Renaissance Italian", "fr": "Middle French", "es": "Early Modern Spanish", "nl": "Early Modern Dutch", "fro": "Old French"}
 
 
 def _load_yaml_dir(d: Path) -> list[tuple[Path, object]]:
@@ -258,7 +258,8 @@ def write_index(repo: Path, out_dir: Path) -> Path:
             span = "stanzas " + stanza_ranges(pl["stanzas"])
         else:
             span = (f"{pl.get('book')}.{pl.get('first')}–{pl.get('last')}" if pl.get("book")
-                    else f"chapter {pl['chapter']}, {m.get('unit', 'line')}s {pl.get('first')}–{pl.get('last')}" if pl.get("chapter")
+                    else (f"{pl['chapter']}:{pl.get('first')}–{pl['also'][-1]['chapter']}:{pl['also'][-1]['last']}" if pl.get("also")
+                          else f"chapter {pl['chapter']}, {m.get('unit', 'line')}s {pl.get('first')}–{pl.get('last')}") if pl.get("chapter")
                     else f"lines {pl.get('first')}–{pl.get('last')}") if pl else ""
         trs = ", ".join(f"{t['translator']} ({t['year']}" + (", cited, in copyright)" if t.get("kind") == "reference" else ")")
                         for t in m.get("translations", []))

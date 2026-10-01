@@ -1,0 +1,28 @@
+# Long alpha / iota / upsilon for Iliad 1.8-52 that the orthography does not mark.
+# Merged after the shared grc_quantities.yaml (manifest `quantities` is a list). Same format:
+# key = lowercase surface as printed (elision mark dropped), value = the same form with U+0304
+# on each long dichronon. Each entry cites LSJ and the foot where the hexameter shows the length.
+# Not entered: lengths the verse shows but the word does not have (metrical lengthening), e.g.
+# Ἀπόλλωνος at 1.14 and 1.21, Ἀπόλλωνι at the start of 1.36, ἀμφηρεφέα at 1.45; the scanner
+# reports those as lengthening.
+"λαοί": "λᾱοί"                      # λᾱός, LSJ; Il. 1.10 foot 6
+"λαῶν": "λᾱῶν"                      # λᾱός, LSJ; Il. 1.16 foot 6
+"χρύσην": "χρῡ́σην"                 # Χρῡ́σης (the priest) and Χρῡ́ση (the town), LSJ; Il. 1.11 foot 2, 1.37 foot 4
+"ἠτίμασεν": "ἠτῑ́μασεν"             # ἀτῑμάζω (τῑμή), LSJ; Il. 1.11 foot 4
+"ἀρητῆρα": "ᾱ̓ρητῆρα"               # ἀρητήρ with ᾱ (Ep. ἀρᾱ́ομαι), LSJ; Il. 1.11 foot 5, a spondee
+"θοὰς": "θοᾱ̀ς"                     # accusative plural -ᾱς; Il. 1.12 foot 4
+"λυσόμενός": "λῡσόμενός"            # λῡ́σω, future of λύω, LSJ; Il. 1.13 foot 1
+"χρυσέῳ": "χρῡσέῳ"                  # χρῡ́σεος, LSJ; Il. 1.15 foot 1 (-έῳ in synizesis)
+"ἀτρεΐδα": "ἀτρεΐδᾱ"                # dual -ᾱ; Il. 1.16 foot 2
+"ἐϋκνήμιδες": "ἐϋκνήμῑδες"          # κνημῑ́ς, -ῖδος, LSJ; Il. 1.17 foot 5
+"ὑμῖν": "ῡ̔μῖν"                     # Ep. ῡ̔μῖν, LSJ s.v. ὑμεῖς; Il. 1.18 foot 1
+"λύσαιτε": "λῡ́σαιτε"               # λῦσαι, aorist of λύω, LSJ; Il. 1.20 foot 2
+"θυμῷ": "θῡμῷ"                      # θῡμός, LSJ; Il. 1.24 foot 6
+"δηθύνοντ": "δηθῡ́νοντ"             # δηθῡ́νω, LSJ; Il. 1.27 foot 2 (elided δηθύνοντα)
+"λύσω": "λῡ́σω"                     # λῡ́σω, LSJ; Il. 1.29 foot 2
+"μύθῳ": "μῡ́θῳ"                     # μῦθος, LSJ; Il. 1.33 foot 6
+"πίονα": "πῑ́ονα"                   # πῑ́ων, LSJ; Il. 1.40 foot 4
+"τίσειαν": "τῑ́σειαν"               # τῑ́σω, future of τίνω, Ep. ῑ, LSJ; Il. 1.42 foot 1
+"κινηθέντος": "κῑνηθέντος"          # κῑνέω, LSJ; Il. 1.47 foot 2
+"ἰὸν": "ῑ̓ὸν"                       # ῑ̓ός, arrow, LSJ; Il. 1.48 foot 5
+"ἐφιεὶς": "ἐφῑεὶς"                  # ἵημι, Ep. ῑ, LSJ; Il. 1.51 foot 6

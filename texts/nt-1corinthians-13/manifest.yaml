@@ -1,0 +1,63 @@
+work: nt-1corinthians-13
+title: 1 Corinthians 13
+author: Paul, in Koine Greek (about 53–55)
+language: grc
+prefix: 1cor                   # 1cor.<chapter>.<verse>[.<token>]
+urn: urn:cts:greekLit:tlg0031.tlg007
+unit: verse
+written: {year: 54, label: "written about AD 53–55"}   # composition date; the library sorts by year
+status: draft
+pilot: {chapter: 13, first: 1, last: 13}
+edition:
+  id: sblgnt
+  name: SBL Greek New Testament (2010), via MorphGNT
+  format: morphgnt               # text and morphology in one file, one word per row
+  file: sources/morphgnt-1corinthians.txt
+  url: https://raw.githubusercontent.com/morphgnt/sblgnt/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/67-1Co-morphgnt.txt
+  sha256: 5233a5b099e2499baed34ec2d6f53ae44545d532a7e2fb12acafcf39ff6fdbf3
+  license: SBLGNT text CC BY 4.0; MorphGNT parsing and lemmas CC BY-SA 3.0
+  license_url: https://sblgnt.com/license/
+treebank:
+  id: morphgnt-6.12
+  name: MorphGNT SBLGNT edition (Tauber), lemma and parsing
+  format: morphgnt-edition       # lemma and morphology come from the edition file itself
+  license: CC BY-SA 3.0
+schemes: [koine, erasmian]       # default = first-century Koine, as first written; Erasmian = the seminary tradition
+translations:
+  - id: tyndale1534
+    translator: William Tyndale
+    year: 1534
+    form: prose
+    format: usfm
+    license: public-domain
+    license_url: https://ebible.org/find/details.php?id=engtnt
+    file: sources/tyndale1534-1corinthians.usfm
+    sha256: 76356ec96d557d54dd1e3be0bc5a6b4e1950f2ffe520390aa4a0a86f95dc4d7f   # of the extracted member
+    url: https://ebible.org/Scriptures/engtnt_usfm.zip
+    extract: "1CO"
+  - id: geneva1599
+    translator: Geneva Bible
+    year: 1599
+    form: prose
+    format: usfm
+    license: public-domain
+    license_url: https://ebible.org/find/details.php?id=enggnv
+    file: sources/geneva1599-1corinthians.usfm
+    sha256: 653ba4c1a8527f97ba1d2b32bfff3ac1324a745677929dda6a7a8f57156d6b2a   # of the extracted member
+    url: https://ebible.org/Scriptures/enggnv_usfm.zip
+    extract: "1CO"
+  - id: kjv1769
+    translator: King James Version
+    year: 1611
+    form: prose, 1769 standard text
+    format: usfm
+    license: public-domain
+    license_url: https://ebible.org/find/details.php?id=eng-kjv
+    file: sources/kjv-1corinthians.usfm
+    sha256: 56417a4bd04abf50a58cc83e923e230304453fd9d41828476e7605f2164e9a71   # of the extracted member
+    url: https://ebible.org/Scriptures/eng-kjv_usfm.zip
+    extract: "1CO"
+predicted_gaps:
+  - "Koine reconstruction follows Buth; scholars differ on how far η and υ had moved by the first century"
+  - "translations align exactly by verse number; no hand alignment needed"
+  - "KJV here is the 1769 standard text most readers know, not the 1611 printing"
