@@ -61,7 +61,7 @@ UD_VAL = {"Sing": "singular", "Plur": "plural", "Dual": "dual", "Pres": "present
 
 
 # Case values decoded on their own: Com is "common gender" elsewhere (Hebrew) but "comitative" as a case
-CASE_VAL = {"Com": "comitative", "Erg": "ergative", "Equ": "equative", "Ter": "terminative",
+CASE_VAL = {"Poss": "possessive-adjectival", "Com": "comitative", "Erg": "ergative", "Equ": "equative", "Ter": "terminative",
             "Abs": "absolutive", "All": "allative", "Abl": "ablative", "Loc": "locative", "Dir": "directive"}
 
 
@@ -84,6 +84,10 @@ def _decode_ud(tag: str) -> str:
             parts.append(ASPECT_VAL.get(v, v.lower() + " aspect"))
         elif k == "NounClass":                 # Bantu noun classes, Bleek-Meinhof numbering
             parts.append("class " + v[5:] if v.startswith("Bantu") else v)
+        elif k == "Mutation":                  # Celtic-style initial mutation (Sindarin aear from gaear)
+            parts.append(v.lower() + " mutation")
+        elif k == "Possessive":                # a possessive suffix carried on the noun (Quenya máryat)
+            parts.append("with possessive suffix '" + v.lower() + "'")
         elif k == "Person":
             parts.append({"1": "1st person", "2": "2nd person", "3": "3rd person"}.get(v, v))
         elif k == "Compound" and v == "Yes":

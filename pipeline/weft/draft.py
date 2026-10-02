@@ -14,13 +14,14 @@ from pathlib import Path
 
 import yaml
 
-from . import __version__, akkadian, chinese, coptic, dutch, egyptian, french, german, greek, hebrew, italian, japanese, latin, mongolian, norse, oldeastslavic, oldenglish, oldfrench, persian, runic, sanskrit, spanish, sumerian, swahili, tamil, treebank
+from . import __version__, akkadian, chinese, coptic, dutch, egyptian, elvish, french, german, greek, hebrew, italian, japanese, latin, mongolian, norse, oldeastslavic, oldenglish, oldfrench, persian, runic, sanskrit, spanish, sumerian, swahili, tamil, treebank
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
 INDECLINABLE = set("dcgriebz")   # b: GLAUx coordinating conjunction
 PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebrew, "lzh": chinese, "runic": runic, "ja": japanese, "san": sanskrit,
         "akk": akkadian, "fa": persian, "ta": tamil, "it": italian, "fr": french,
-        "es": spanish, "nl": dutch, "fro": oldfrench, "de": german, "egy": egyptian, "sux": sumerian, "orv": oldeastslavic, "xng": mongolian, "cop": coptic, "sw": swahili}
+        "es": spanish, "nl": dutch, "fro": oldfrench, "de": german, "egy": egyptian, "sux": sumerian, "orv": oldeastslavic, "xng": mongolian, "cop": coptic, "sw": swahili,
+        "qya": elvish, "sjn": elvish}      # Quenya and Sindarin share one module; private works only
 NORMALIZE = {"heyne-to-macron": oldenglish.heyne_to_macron}
 LEAD = re.compile(r"^([(\[“«‹\"]+|[-–—]\u00a0)")
 TRAIL = re.compile(r"((?:[,.·;:!?)\]”»›\"\u0387\u037e]|\u00a0[-–—])+)$")
@@ -223,6 +224,8 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                 units.append((book, n, ed[n]))
     lang = m["language"]
     phon = PHON[lang]
+    if hasattr(phon, "set_language"):     # one module serving two languages (Quenya and Sindarin)
+        phon.set_language(lang)
     tb_fmt = m["treebank"].get("format", "agdt-cite") if m.get("treebank") else "none"
     tb_path = work_dir / m["treebank"]["file"] if m.get("treebank", {}) and m["treebank"].get("file") else None
     if tb_fmt == "agdt-cite":

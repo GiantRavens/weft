@@ -29,7 +29,7 @@ that use it. Where the repository names no source, this page says so.
 - **Confidence.** A manifest may set `sound_confidence`. At `low` the page opens with "The
   pronunciation here is a reconstruction"; at `medium`, "Parts of the pronunciation here are
   reconstructed". Both link to the Pronunciation and Recording forms and to this page. Works with
-  no value show no invitation. Twenty-four of the fifty-seven works set a value (see the table, and the
+  no value show no invitation. Twenty-four of the fifty-seven public works set a value (see the table, and the
   last section).
 - **Each word alone.** Unless a section below says otherwise, each word is phonemized on its own:
   elision, sandhi and assimilation across words are not modelled in the sound row.
@@ -99,6 +99,7 @@ the page shows no invitation.
 | German | `german` | Kant, Nietzsche | northern (first), modern | not set |
 | | | Luther's Bible | ecg1545 (first), modern | not set |
 | Swahili | `swahili` | Steere, The Kites and the Crows | z1870 (first), modern | medium |
+| Quenya, Sindarin | `elvish` | private works only (Tolkien, in copyright) | tolkien (only) | not set |
 
 The registry that maps a manifest's `language` code to a module is `PHON` in
 `pipeline/weft/draft.py`.
@@ -759,6 +760,42 @@ drop one of them (module and manifest).
 **What a specialist could improve.** The syllabic-nasal rule and the a + e coalescence in
 `swahili.py`; the modern forms in `texts/swahili-tales-steere/edition.yaml`; aspiration where a
 nasal was lost.
+
+## Quenya and Sindarin (Tolkien)
+
+No public work is in either language: Tolkien's texts are in copyright until 2043, so Namárië and
+the hymn to Elbereth exist only as private works built from a reader's own copy (`private/README.md`).
+The module is public because it states pronunciation rules and holds no text.
+
+**Scheme.**
+- `tolkien`, "As Tolkien described it: Appendix E (1955)", the only scheme: c always k, qu kw, ch
+  the sound of German bach, dh and th as in these and thin, r trilled everywhere, s always voiceless,
+  f at the end of a word v; a e i o u as in father, were, machine, for, brute, long with the acute
+  (Quenya long é and ó closer than the short vowels; Sindarin long vowels the same quality held);
+  Sindarin y the French u; the diphthongs ai au eu iu oi ui (Quenya) and ae ai ei oe ui au
+  (Sindarin), all falling; every other vowel pair two syllables; final e always sounded. Stress by
+  Tolkien's rule: the first of two syllables; otherwise the last but one when it holds a long vowel,
+  a diphthong or a vowel before two consonants, else the third from the end.
+
+**What it rests on.** Appendix E, part I, "Pronunciation of Words and Names", in The Lord of the
+Rings (1955): the author's own account of how his transcription is to be read. This is the one
+language in the library whose author wrote down its pronunciation, so the scheme is a statement of
+his rules rather than a reconstruction. The twelve stress examples Tolkien gives there are the
+module's regression tests, and so are the stress marks he printed on Namárië in The Road Goes Ever
+On (1967), as recorded word by word in Eldamo (P. Strack, eldamo.org): the module reproduces every
+one. Lemma and gloss in the private works follow Tolkien's own word glosses through Eldamo's
+citations to the page and line; Eldamo's neo-Eldarin forms (fan reconstructions) are never used.
+
+**Where it is weakest.** Appendix E gives letter values "approximately" and only by English
+keywords, so the IPA is broad. The quality of Sindarin ae and oe is not described (the respelling
+reads them as ai, oi, which Appendix E allows). Written th in Quenya is read θ, though Tolkien says
+the sound had become s in speech. Secondary stress in compounds, which Tolkien marks with a grave
+in 1967, is not shown. Tolkien's 1952 recordings are not used: they differ from the printed text in
+places and are a performance, not a rule.
+
+**What a specialist could improve.** The digraph list and the syllable split in `elvish.py`;
+whether ly, ny, ry count as one consonant or two for stress (Tolkien's 1967 marks on ómaryo and
+Calaciryo support two, as the module has it); the Sindarin long-vowel qualities.
 
 ## Open inconsistencies
 

@@ -543,3 +543,27 @@ def test_render_confines_data_to_data(tmp_path):
     gen.write_text(yaml.dump(g, allow_unicode=True, sort_keys=False))
     with pytest.raises(SystemExit, match="escapes the repository"):
         build.assemble(work)
+
+
+def test_elvish_stress_matches_tolkien():
+    """Quenya and Sindarin: the stress rule of Appendix E reproduces Tolkien's twelve worked examples
+    (stressed vowel in capitals, his notation) and the stress he marked on words of Namárië in
+    The Road Goes Ever On (1967), as cited by Eldamo."""
+    from weft import elvish as E
+    appendix_e = {"Isildur": "i-SIL-dur", "Oromë": "O-ro-me", "Eressëa": "e-RES-se-a", "Fëanor": "FE-a-nor", "ancalima": "an-KA-li-ma",
+                  "Elentári": "e-len-TAA-ri", "Andúnë": "an-DOO-ne"}
+    for w, want in appendix_e.items():
+        assert E.word_sound(w, "qya")[1] == want, w
+    for w, want in {"Denethor": "DE-ne-thor", "Periannath": "pe-ri-AN-nath", "Ecthelion": "ek-THE-li-on", "Pelargir": "pe-LAR-gir", "silivren": "si-LIV-ren"}.items():
+        assert E.word_sound(w, "sjn")[1] == want, w
+    rgeo = {"súrinen": "SOO-ri-nen", "únótimë": "oo-NOH-ti-me", "oromardi": "o-ro-MAR-di", "tellumar": "TEL-lu-mar", "ómaryo": "oh-MAR-yo",
+            "Oiolossëo": "oy-o-LOS-se-o", "máryat": "MAAR-yat", "Calaciryo": "ka-la-KIR-yo", "Rómello": "roh-MEL-lo", "hiruvalyë": "hi-ru-VAL-ye",
+            "enquantuva": "en-KWAN-tu-va", "falmalinnar": "fal-ma-LIN-nar", "Valimar": "VA-li-mar"}
+    for w, want in rgeo.items():
+        assert E.word_sound(w, "qya")[1] == want, w
+    # letter values: c = k, qu = kw, final f = v, Sindarin y = ü, ae read as ai, ng final as in sing
+    assert E.word_sound("Calacirya", "qya")[0].startswith("ka.la.")
+    assert E.word_sound("nef", "sjn")[0] == "nɛv"
+    assert E.word_sound("emyn", "sjn")[1] == "E-mün"
+    assert E.word_sound("aear", "sjn")[1] == "AI-ar"
+    assert E.word_sound("thalion", "sjn")[0].endswith("ɔn")
