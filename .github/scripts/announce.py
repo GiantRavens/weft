@@ -44,7 +44,7 @@ SITE = "https://giantravens.github.io/weft/"
 PDS = "https://bsky.social/xrpc/"
 LIMIT = 300            # Bluesky's limit is 300 graphemes; characters are a safe stand-in here
 UPDATE_MIN = 300       # changed lines in one work's folder that count as an update worth a post
-URL_RE = re.compile(r"https?://\S+")
+URL_RE = re.compile(r"https?://\S+?(?=[.,;:!?)\]]*(?:\s|$))")   # the sentence's punctuation is not part of the link
 X_API = "https://api.x.com/2/tweets"
 X_LIMIT = 280          # weighted: see x_length
 X_URL = 23             # every link counts as a t.co link of 23

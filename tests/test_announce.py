@@ -22,3 +22,9 @@ def test_x_length_counts_links_as_23_and_cjk_as_2():
     url = "https://giantravens.github.io/weft/secret-history-mongols.html"
     assert announce.x_length("New in Weft: Völuspá.\n" + url) == len("New in Weft: Völuspá.\n") + 23
     assert announce.x_length("孫子") == 4
+
+
+def test_url_regex_leaves_the_sentence_punctuation():
+    url = "https://giantravens.github.io/weft/x.html"
+    for text in (f"See {url}.", f"({url})", f"{url}, and more", f"{url}\nnext", url):
+        assert announce.URL_RE.search(text).group() == url, text
