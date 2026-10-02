@@ -1,0 +1,420 @@
+# Weft edition: the Tale of Bygone Years (Повѣсть временьныхъ лѣтъ), the entries for 6367-6370
+# (859-862 AD), in the Laurentian copy (Russian National Library, St Petersburg, F.п.IV.2, written by
+# the monk Lavrentii in 1377). The text is that of Полное собрание русских летописей, vol. 1, part 1
+# (Leningrad, 1926), edited by E. F. Karsky, pp. 19-20, read from the scan in the Internet Archive.
+#
+# Transcription. Letters as printed: ѣ ъ ь ѧ ꙗ ѡ ѿ і, and оу as two letters. A letter the print sets
+# above the line is lowered into it in parentheses: пр(а)вды, им(а)ху, н(а)ми, Сл(о)вѣне, лѣ(т),
+# находн(и)ци. An abbreviation mark (pokrytie) is replaced by the letter it stands for, also in
+# parentheses: ни(х) for нихъ, Полѧнѣ(х) and Сѣверѣ(х) for the locative plural in -хъ, лѣ(т) in 6369.
+# The titlo over the letter numerals is not shown (҂ѕ·т·ѯ·з for 6367). Both choices are forced by
+# the page's web font, which is split into Unicode subsets: a Cyrillic letter and a combining mark
+# over it come from different font files and show as an empty box. Square brackets enclose what
+# Karsky supplied from the other copies (T = Trinity, R = Radziwiłł, A = Academy), as he prints
+# them: the heading of 6370, four instances of и, [въ], [Варѧгъ], and [сѣде Новѣгородѣ], which the
+# Laurentian copy lacks. Karsky's variant numbers and footnote letters are left out. The middle dots
+# are the manuscript's punctuation as printed; the line-ending ornament after 6369 is left out.
+# Weft divides the entries into lines at sense breaks.
+#
+# Readings of the scan that are uncertain: the superscript letter in находн(и)ци is read as и (the
+# Radziwiłł copy has находници, and Karsky gives no footnote here); the expansions of the pokrytie
+# are editorial; the last numeral of 6369 is read
+# as ѳ (9), the value Karsky's dating requires; Вятичѣхъ is printed with a letter of the shape я,
+# kept as printed.
+#
+#   t   the word as printed, without the punctuation that follows
+#   n   the reading form, typed by hand: abbreviations and raised letters written out (ни(х) -> нихъ,
+#       лѣ(т) -> лѣто, Полѧнѣ(х) -> Полянѣхъ), ѡ as о, ѿ as отъ, оу as у, ѧ and ꙗ as я, і as и, an acute
+#       on the stressed vowel (editorial, approximate), and a letter numeral as its value. The page
+#       shows it as the reading form; both sound schemes read it.
+#   p   the punctuation that follows
+#   num a letter numeral (its reading is a number; the spelling sensor skips it)
+#
+# Check. The printed source exists openly only as a scan with an uncorrected OCR text, so each line
+# is checked by the ocr_verify sensor in pipeline/weft/oldeastslavic.py: the OCR between the two
+# markers is corrected by the list below (each correction a reading of the scan), reduced to letters
+# (letters in parentheses, punctuation, digits and Karsky's footnote marks dropped; ѧ ꙗ я а, о ѡ, и і
+# folded together, because the OCR does not tell them apart), and every line's letters must then
+# appear in it in order and unbroken. `weft draft` reports edition-not-in-source otherwise, and
+# ocr-correction-unused for a correction that no longer matches the OCR.
+joiner: " "
+ocr_verify:
+  file: texts/primary-chronicle-varangians/sources/psrl1-1926-djvu.txt
+  start: "с Болгары"
+  end: "него Г- мужа"
+  strip: ['л\. 7 об']
+  corrections:
+    - {ocr: "Бг * лѣ 1 - :•", print: "Въ лѣ ѕ т ѯ з :·", why: "the year 6367: the OCR loses the letter numerals; read from the scan"}
+    - {ocr: "давъ", print: "дань", why: "misread by the OCR; read from the scan"}
+    - {ocr: "заморы**", print: "заморьꙗ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "Чюдн", print: "Чюди", why: "misread by the OCR; read from the scan"}
+    - {ocr: "Сл*вѣне х", print: "Слвѣне", why: "a footnote letter read into the text; read from the scan"}
+    - {ocr: "Мери*- я на", print: "Мери· и на", why: "misread by the OCR; read from the scan"}
+    - {ocr: "Крвввчѣхъ г", print: "Кривичѣхъ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "Коз&ри", print: "Козари", why: "misread by the OCR; read from the scan"}
+    - {ocr: "нмаху", print: "имаху", why: "misread by the OCR; read from the scan"}
+    - {ocr: "По лань", print: "Полѧнѣ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "Сѣверъ", print: "Сѣверѣ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "Вятнчѣхъ", print: "Вятичѣхъ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "нм*ху", print: "имху", why: "misread by the OCR; read from the scan"}
+    - {ocr: "бѣлѣй", print: "бѣлѣи", why: "misread by the OCR; read from the scan"}
+    - {ocr: "вѣвѳрицѣ", print: "вѣверицѣ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "ш дыма", print: "ѿ дыма", why: "misread by the OCR; read from the scan"}
+    - {ocr: "Бъ лѣ* * г 5**т-||*и*", print: "Въ лѣ ѕ т ѯ и", why: "the year 6368: the OCR loses the letter numerals; read from the scan"}
+    - {ocr: "Въ А^Г *^І , Т*3*Д'|*Ч»‘—", print: "Въ лѣ ѕ т ѯ ѳ :·", why: "the year 6369: the OCR loses the letter numerals; read from the scan"}
+    - {ocr: "[В лѣ* *^*-т-о-] я", print: "[В лѣ ѕ т о]", why: "the year 6370: the OCR loses the letter numerals and reads a footnote letter; read from the scan"}
+    - {ocr: "и ниъ", print: "имъ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "во л о дѣти", print: "володѣти", why: "misread by the OCR; read from the scan"}
+    - {ocr: "нить", print: "нихъ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "пр*вдъх", print: "првды", why: "misread by the OCR; read from the scan"}
+    - {ocr: "вгьста", print: "въста", why: "misread by the OCR; read from the scan"}
+    - {ocr: "воевать", print: "воевати", why: "misread by the OCR; read from the scan"}
+    - {ocr: "дѣлъ и нами", print: "дѣлъ нами", why: "a footnote mark read as a letter; read from the scan"}
+    - {ocr: "въ ВарАгомъ", print: "къ Варѧгомъ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "вардзисуть", print: "варѧзи суть", why: "misread by the OCR; read from the scan"}
+    - {ocr: "«косе", print: "ꙗко се", why: "misread by the OCR; read from the scan"}
+    - {ocr: "зъвутсд", print: "зъвутсѧ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "друзнн", print: "друзии", why: "misread by the OCR; read from the scan"}
+    - {ocr: "друзш", print: "друзии", why: "misread by the OCR; read from the scan"}
+    - {ocr: "Гьте", print: "Гъте", why: "misread by the OCR; read from the scan"}
+    - {ocr: "ней", print: "и си", why: "misread by the OCR; read from the scan"}
+    - {ocr: "земіА", print: "землѧ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "ваша", print: "наша", why: "misread by the OCR; read from the scan"}
+    - {ocr: "великан", print: "велика и", why: "misread by the OCR; read from the scan"}
+    - {ocr: "шбнлна", print: "ѡбилна", why: "misread by the OCR; read from the scan"}
+    - {ocr: "нардда", print: "нарѧда", why: "misread by the OCR; read from the scan"}
+    - {ocr: "нен", print: "неи", why: "misread by the OCR; read from the scan"}
+    - {ocr: "кнд", print: "кнѧ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "вол о дѣти", print: "володѣти", why: "misread by the OCR; read from the scan"}
+    - {ocr: "н*ми м", print: "нми", why: "a footnote letter read into the text; read from the scan"}
+    - {ocr: "братьи", print: "братьꙗ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "поиша", print: "поꙗша", why: "misread by the OCR; read from the scan"}
+    - {ocr: "другин", print: "другии", why: "misread by the OCR; read from the scan"}
+    - {ocr: "Синѳоусъ", print: "Синеоусъ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "Бѣлѣшзерѣ", print: "Бѣлѣѡзерѣ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "третьи", print: "третии", why: "misread by the OCR; read from the scan"}
+    - {ocr: "СС", print: "ѿ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "[ВарАгь]", print: "[Варѧгъ]", why: "misread by the OCR; read from the scan"}
+    - {ocr: "Рускаи", print: "Рускаꙗ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "Новугородьцн", print: "Новугородьци", why: "misread by the OCR; read from the scan"}
+    - {ocr: "тн", print: "ти", why: "misread by the OCR; read from the scan"}
+    - {ocr: "іо", print: "ѿ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "Варджьска", print: "Варѧжьска", why: "misread by the OCR; read from the scan"}
+    - {ocr: "прига ж", print: "приꙗ", why: "a footnote letter read into the text; read from the scan"}
+    - {ocr: "раздай", print: "раздаꙗ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "новому", print: "ѡвому", why: "misread by the OCR; read from the scan"}
+    - {ocr: "Бѣлошзеро", print: "Бѣлоѡзеро", why: "misread by the OCR; read from the scan"}
+    - {ocr: "находи* [|ци", print: "находнци", why: "the folio break (||) and a superscript letter; read from the scan"}
+    - {ocr: "Вардзи", print: "Варѧзи", why: "misread by the OCR; read from the scan"}
+    - {ocr: "васельшщи", print: "насельници", why: "misread by the OCR; read from the scan"}
+    - {ocr: "Словѣве", print: "Словѣне", why: "misread by the OCR; read from the scan"}
+    - {ocr: "Бѣлѣшзѳрѣ", print: "Бѣлѣѡзерѣ", why: "misread by the OCR; read from the scan"}
+    - {ocr: "шбладаше", print: "ѡбладаше", why: "misread by the OCR; read from the scan"}
+sections:
+  - id: "6367"
+    title: "6367 (859): the tribute"
+    lines:
+      - tokens:
+        - {t: "Въ", n: "въ"}
+        - {t: "лѣ(т)", n: "лѣ́то", p: "·"}
+        - {t: "҂ѕ·т·ѯ·з", n: "6367", p: ":·", num: true}
+      - tokens:
+        - {t: "[И]маху", n: "има́ху"}
+        - {t: "дань", n: "да́нь"}
+        - {t: "Варѧзи", n: "Варя́зи"}
+        - {t: "изъ", n: "изъ"}
+        - {t: "заморьꙗ", n: "замо́рья", p: "·"}
+      - tokens:
+        - {t: "на", n: "на"}
+        - {t: "Чюди", n: "Чю́ди"}
+        - {t: "и", n: "и"}
+        - {t: "на", n: "на"}
+        - {t: "Сл(о)вѣне", n: "Словѣ́не", p: "·"}
+        - {t: "на", n: "на"}
+        - {t: "Мери", n: "Ме́ри", p: "·"}
+        - {t: "и", n: "и"}
+        - {t: "на", n: "на"}
+        - {t: "всѣхъ", n: "всѣ́хъ"}
+        - {t: "Кривичѣхъ", n: "Кри́вичѣхъ", p: "·"}
+      - tokens:
+        - {t: "а", n: "а"}
+        - {t: "Козари", n: "Коза́ри"}
+        - {t: "имаху", n: "има́ху"}
+        - {t: "на", n: "на"}
+        - {t: "Полѧнѣ(х)", n: "Поля́нѣхъ", p: "·"}
+        - {t: "и", n: "и"}
+        - {t: "на", n: "на"}
+        - {t: "Сѣверѣ(х)", n: "Сѣ́верѣхъ"}
+        - {t: "и", n: "и"}
+        - {t: "на", n: "на"}
+        - {t: "Вятичѣхъ", n: "Вя́тичѣхъ", p: "·"}
+      - tokens:
+        - {t: "им(а)ху", n: "има́ху"}
+        - {t: "по", n: "по"}
+        - {t: "бѣлѣи", n: "бѣ́лѣи"}
+        - {t: "вѣверицѣ", n: "вѣ́верицѣ"}
+        - {t: "ѿ", n: "отъ"}
+        - {t: "дыма", n: "ды́ма", p: ":·"}
+  - id: "6368"
+    title: "6368 (860)"
+    lines:
+      - tokens:
+        - {t: "Въ", n: "въ"}
+        - {t: "лѣ(т)", n: "лѣ́то"}
+        - {t: "·҂ѕ·т·ѯ·и·", n: "6368", num: true}
+  - id: "6369"
+    title: "6369 (861)"
+    lines:
+      - tokens:
+        - {t: "Въ", n: "въ"}
+        - {t: "лѣ(т)", n: "лѣ́то"}
+        - {t: "·҂ѕ·т·ѯ·ѳ", n: "6369", p: ":·", num: true}
+  - id: "6370"
+    title: "6370 (862): the expulsion and the invitation"
+    figure:
+      file: "art/works/primary-chronicle-varangians/rurik-sineus-truvor.jpg"
+      caption: "Radziwiłł Chronicle, late 15th century: the three brothers seated in their towns, each approached by a standing figure; the labels beside the figures name Beloozero and Izborsk. The Radziwiłł text, written above, differs from the Laurentian here: it seats Rurik at Ladoga."
+      alt: "Pen and wash miniature of three seated men in red robes beside towers, with standing men in green robes between them gesturing toward them"
+      credit: "Unknown illuminator, Radziwiłł (Königsberg) Chronicle, Library of the Russian Academy of Sciences, St Petersburg; image via Runivers and Wikimedia Commons"
+      license: "Public domain (Commons template PD-old-70-expired)"
+      source: "https://commons.wikimedia.org/wiki/File:Княжение_варяжских_братьев_Рюрика,_Синеуса_и_Трувора.jpg"
+    lines:
+      - tokens:
+        - {t: "[В", n: "въ"}
+        - {t: "лѣ(т)", n: "лѣ́то"}
+        - {t: "·҂ѕ·т·о·]", n: "6370", num: true}
+      - tokens:
+        - {t: "Изъгнаша", n: "Изъгна́ша"}
+        - {t: "Варѧги", n: "Варя́ги"}
+        - {t: "за", n: "за"}
+        - {t: "море", n: "мо́ре"}
+        - {t: "и", n: "и"}
+        - {t: "не", n: "не"}
+        - {t: "даша", n: "да́ша"}
+        - {t: "имъ", n: "имъ"}
+        - {t: "дани", n: "да́ни", p: "·"}
+      - tokens:
+        - {t: "и", n: "и"}
+        - {t: "почаша", n: "поча́ша"}
+        - {t: "сами", n: "са́ми"}
+        - {t: "в", n: "въ"}
+        - {t: "собѣ", n: "собѣ́"}
+        - {t: "володѣти", n: "володѣ́ти", p: "·"}
+      - tokens:
+        - {t: "и", n: "и"}
+        - {t: "не", n: "не"}
+        - {t: "бѣ", n: "бѣ́"}
+        - {t: "в", n: "въ"}
+        - {t: "нихъ", n: "ни́хъ"}
+        - {t: "пр(а)вды", n: "пра́вды", p: "·"}
+        - {t: "и", n: "и"}
+        - {t: "въста", n: "въста́"}
+        - {t: "родъ", n: "ро́дъ"}
+        - {t: "на", n: "на"}
+        - {t: "родъ", n: "ро́дъ", p: "·"}
+      - tokens:
+        - {t: "[и]", n: "и"}
+        - {t: "быша", n: "бы́ша"}
+        - {t: "в", n: "въ"}
+        - {t: "ни(х)", n: "ни́хъ"}
+        - {t: "усобицѣ", n: "усо́бицѣ", p: "·"}
+        - {t: "и", n: "и"}
+        - {t: "воевати", n: "воева́ти"}
+        - {t: "почаша", n: "поча́ша"}
+        - {t: "сами", n: "са́ми"}
+        - {t: "на", n: "на"}
+        - {t: "сѧ", n: "ся"}
+      - tokens:
+        - {t: "[и]", n: "и"}
+        - {t: "рѣша", n: "рѣ́ша"}
+        - {t: "сами", n: "са́ми"}
+        - {t: "в", n: "въ"}
+        - {t: "себѣ", n: "себѣ́", p: "·"}
+        - {t: "поищемъ", n: "пои́щемъ"}
+        - {t: "собѣ", n: "собѣ́"}
+        - {t: "кнѧзѧ", n: "кня́зя", p: "·"}
+      - tokens:
+        - {t: "иже", n: "и́же"}
+        - {t: "бы", n: "бы"}
+        - {t: "володѣлъ", n: "володѣ́лъ"}
+        - {t: "нами", n: "на́ми", p: "·"}
+        - {t: "и", n: "и"}
+        - {t: "судилъ", n: "суди́лъ"}
+        - {t: "по", n: "по"}
+        - {t: "праву", n: "пра́ву", p: "·"}
+      - tokens:
+        - {t: "[и]", n: "и"}
+        - {t: "идаша", n: "ида́ша"}
+        - {t: "за", n: "за"}
+        - {t: "море", n: "мо́ре"}
+        - {t: "къ", n: "къ"}
+        - {t: "Варѧгомъ", n: "Варя́гомъ"}
+        - {t: "к", n: "къ"}
+        - {t: "Русі", n: "Ру́си", p: "·"}
+      - tokens:
+        - {t: "сице", n: "си́це"}
+        - {t: "бо", n: "бо"}
+        - {t: "сѧ", n: "ся"}
+        - {t: "звахуть", n: "зва́хуть"}
+        - {t: "и", n: "и", p: "·"}
+        - {t: "варѧзи", n: "варя́зи"}
+        - {t: "суть", n: "су́ть", p: "·"}
+      - tokens:
+        - {t: "ꙗко", n: "я́ко"}
+        - {t: "се", n: "се"}
+        - {t: "друзии", n: "дру́зии"}
+        - {t: "зъвутсѧ", n: "зъву́тся"}
+        - {t: "Свое", n: "Сво́е", p: "·"}
+        - {t: "друзии", n: "дру́зии"}
+        - {t: "же", n: "же"}
+        - {t: "Оурмане", n: "Урма́не", p: "·"}
+      - tokens:
+        - {t: "Анъглѧне", n: "Анъгля́не"}
+        - {t: "друзии", n: "дру́зии"}
+        - {t: "Гъте", n: "Гъте́", p: "·"}
+        - {t: "тако", n: "та́ко"}
+        - {t: "и", n: "и"}
+        - {t: "си", n: "си́"}
+        - {t: "рѣша", n: "рѣ́ша", p: "·"}
+      - tokens:
+        - {t: "Русь", n: "Ру́сь", p: "·"}
+        - {t: "Чюдь", n: "Чю́дь"}
+        - {t: "[и]", n: "и"}
+        - {t: "Словѣни", n: "Словѣ́ни", p: "·"}
+        - {t: "и", n: "и"}
+        - {t: "Кривичи", n: "Кри́вичи", p: "·"}
+      - tokens:
+        - {t: "всѧ", n: "вся́"}
+        - {t: "землѧ", n: "земля́"}
+        - {t: "наша", n: "на́ша"}
+        - {t: "велика", n: "вели́ка"}
+        - {t: "и", n: "и"}
+        - {t: "ѡбилна", n: "оби́лна", p: "·"}
+        - {t: "а", n: "а"}
+        - {t: "нарѧда", n: "наря́да"}
+        - {t: "в", n: "въ"}
+        - {t: "неи", n: "не́и"}
+        - {t: "нѣтъ", n: "нѣ́тъ", p: "·"}
+      - tokens:
+        - {t: "да", n: "да"}
+        - {t: "поидѣте", n: "поидѣ́те"}
+        - {t: "кнѧжитъ", n: "княжи́тъ"}
+        - {t: "и", n: "и"}
+        - {t: "володѣти", n: "володѣ́ти"}
+        - {t: "н(а)ми", n: "на́ми", p: "·"}
+      - tokens:
+        - {t: "и", n: "и"}
+        - {t: "изъбрашасѧ", n: "изъбра́шася"}
+        - {t: "·г·", n: "три́е", num: true}
+        - {t: "братьꙗ", n: "бра́тья", p: "·"}
+        - {t: "с", n: "съ"}
+        - {t: "роды", n: "ро́ды"}
+        - {t: "своими", n: "свои́ми", p: "·"}
+      - tokens:
+        - {t: "[и]", n: "и"}
+        - {t: "поꙗша", n: "поя́ша"}
+        - {t: "по", n: "по"}
+        - {t: "собѣ", n: "собѣ́"}
+        - {t: "всю", n: "всю́"}
+        - {t: "Русь", n: "Ру́сь", p: "·"}
+      - tokens:
+        - {t: "и", n: "и"}
+        - {t: "придоша", n: "придо́ша"}
+        - {t: "старѣишии", n: "старѣ́ишии"}
+        - {t: "Рюрикъ", n: "Рю́рикъ"}
+        - {t: "[сѣде", n: "сѣ́де"}
+        - {t: "Новѣгородѣ]", n: "Но́вѣгородѣ", p: "·"}
+      - tokens:
+        - {t: "а", n: "а"}
+        - {t: "другии", n: "дру́гии"}
+        - {t: "Синеоусъ", n: "Сине́усъ"}
+        - {t: "на", n: "на"}
+        - {t: "Бѣлѣѡзерѣ", n: "Бѣлѣо́зерѣ", p: "·"}
+        - {t: "а", n: "а"}
+        - {t: "третии", n: "тре́тии"}
+        - {t: "Изборьстѣ", n: "И́зборьстѣ", p: "·"}
+        - {t: "Труворъ", n: "Тру́воръ", p: "·"}
+      - tokens:
+        - {t: "[и]", n: "и"}
+        - {t: "ѿ", n: "отъ"}
+        - {t: "тѣхъ", n: "тѣ́хъ"}
+        - {t: "[Варѧгъ]", n: "варя́гъ"}
+        - {t: "прозвасѧ", n: "прозва́ся"}
+        - {t: "Рускаꙗ", n: "Ру́ская"}
+        - {t: "землѧ", n: "земля́"}
+      - tokens:
+        - {t: "Новугородьци", n: "Новугоро́дьци"}
+        - {t: "ти", n: "ти́"}
+        - {t: "суть", n: "су́ть"}
+        - {t: "людье", n: "лю́дье"}
+        - {t: "Нооугородьци", n: "Новугоро́дьци"}
+        - {t: "ѿ", n: "отъ"}
+        - {t: "рода", n: "ро́да"}
+        - {t: "Варѧжьска", n: "Варя́жьска", p: "·"}
+      - tokens:
+        - {t: "преже", n: "пре́же"}
+        - {t: "бо", n: "бо"}
+        - {t: "бѣша", n: "бѣ́ша"}
+        - {t: "Словѣни", n: "Словѣ́ни", p: "·"}
+      - tokens:
+        - {t: "по", n: "по"}
+        - {t: "дву", n: "дву́"}
+        - {t: "же", n: "же"}
+        - {t: "лѣту", n: "лѣ́ту", p: "·"}
+        - {t: "Синеоусъ", n: "Сине́усъ"}
+        - {t: "оумре", n: "у́мре", p: "·"}
+        - {t: "а", n: "а"}
+        - {t: "братъ", n: "бра́тъ"}
+        - {t: "его", n: "его́"}
+        - {t: "Труворъ", n: "Тру́воръ", p: "·"}
+      - tokens:
+        - {t: "и", n: "и"}
+        - {t: "приꙗ", n: "прия́"}
+        - {t: "власть", n: "вла́сть"}
+        - {t: "Рюрикъ", n: "Рю́рикъ", p: "·"}
+        - {t: "и", n: "и"}
+        - {t: "раздаꙗ", n: "раздая́"}
+        - {t: "мужемъ", n: "му́жемъ"}
+        - {t: "своимъ", n: "свои́мъ"}
+        - {t: "грады", n: "гра́ды", p: "·"}
+      - tokens:
+        - {t: "ѡвому", n: "ово́му"}
+        - {t: "Полотескъ", n: "По́лотескъ"}
+        - {t: "ѡвому", n: "ово́му"}
+        - {t: "Ростовъ", n: "Ро́стовъ"}
+        - {t: "другому", n: "друго́му"}
+        - {t: "Бѣлоѡзеро", n: "Бѣлоо́зеро", p: "·"}
+      - tokens:
+        - {t: "и", n: "и"}
+        - {t: "по", n: "по"}
+        - {t: "тѣмъ", n: "тѣ́мъ"}
+        - {t: "городомъ", n: "городо́мъ"}
+        - {t: "суть", n: "су́ть"}
+        - {t: "находн(и)ци", n: "нахо́дници"}
+        - {t: "Варѧзи", n: "Варя́зи"}
+      - tokens:
+        - {t: "а", n: "а"}
+        - {t: "перьвии", n: "пе́рьвии"}
+        - {t: "насельници", n: "насе́льници"}
+        - {t: "в", n: "въ"}
+        - {t: "Новѣгородѣ", n: "Но́вѣгородѣ"}
+        - {t: "Словѣне", n: "Словѣ́не", p: "·"}
+        - {t: "[въ]", n: "въ"}
+        - {t: "Полотьски", n: "По́лотьски"}
+        - {t: "Кривичи", n: "Кри́вичи", p: "·"}
+      - tokens:
+        - {t: "в", n: "въ"}
+        - {t: "Ростовѣ", n: "Ро́стовѣ"}
+        - {t: "Мерѧ", n: "Ме́ря", p: "·"}
+        - {t: "в", n: "въ"}
+        - {t: "Бѣлѣѡзерѣ", n: "Бѣлѣо́зерѣ"}
+        - {t: "Весь", n: "Ве́сь", p: "·"}
+        - {t: "в", n: "въ"}
+        - {t: "Муромѣ", n: "Му́ромѣ"}
+        - {t: "Мурома", n: "Му́рома", p: "·"}
+      - tokens:
+        - {t: "и", n: "и"}
+        - {t: "тѣми", n: "тѣ́ми"}
+        - {t: "всѣми", n: "всѣ́ми"}
+        - {t: "ѡбладаше", n: "облада́ше"}
+        - {t: "Рюрикъ", n: "Рю́рикъ", p: "·"}

@@ -33,6 +33,8 @@ def main(argv: list[str] | None = None) -> int:
     b = sub.add_parser("build", help="assemble all layers into one self-contained HTML page")
     b.add_argument("work", help="a work's folder name, or 'all' for the whole library")
     b.add_argument("--private", action="store_true", help="include private/ overlays and private works; writes to private/build/")
+    pv = sub.add_parser("previews", help="screenshot built pages for link cards (needs the previews extra)")
+    pv.add_argument("work", help="a work's folder name, or 'all' for every built page")
     c = sub.add_parser("check", help="selftest: every token has every layer, every reference resolves")
     c.add_argument("work")
     al = sub.add_parser("align", help="align verse-numbered translations (USFM) to the work automatically")
@@ -62,6 +64,14 @@ def main(argv: list[str] | None = None) -> int:
         for w in works:
             out = build.run(repo, w, a.private)
             print(f"built {out.relative_to(repo)} ({out.stat().st_size // 1024} KB)")
+    elif a.cmd == "previews":
+        from . import build, previews
+        out = repo / "site" / "build"
+        works = ([m["work"] for m in build.library_order(repo) if (out / f"{m['work']}.html").exists()]
+                 if a.work == "all" else [a.work])
+        r = previews.run(out, works)
+        show(r)
+        return 0 if not (r["not_rendered"] or r["oversize"] or r["missing_page"]) else 1
     elif a.cmd == "check":
         from . import check
         r = check.run(repo, a.work)

@@ -178,6 +178,10 @@ def _syl_ipa(syls: list[Syl], scheme: str) -> list[str]:
                 parts[n] += "ts"; continue
             if scheme == "anglo-latin" and seg.text == "s" and prev and prev.vowel and nxt and nxt.vowel:
                 parts[n] += "z"; continue                  # French-style: s between vowels = z
+            # n before a soft c or g stays n (incipit, quinci, angelus); ŋ only before a hard velar
+            if (scheme in ("ecclesiastical", "anglo-latin") and seg.text == "n" and nxt and nxt.text in ("c", "g")
+                    and k + 2 < len(flat) and _front(flat[k + 2][1])):
+                parts[n] += "n"; continue
             parts[n] += _cons_ipa(seg, nxt, prev, scheme)
     return parts
 

@@ -10,7 +10,7 @@ tags:
   - tamil
   - persian
 created_at: 2026-09-30T14:52:43.29374-05:00
-updated_at: 2026-10-01T16:58:37.292457-05:00
+updated_at: 2026-10-01T18:21:23.791248-05:00
 ---
 
 # Specialist review of the four new-language works (Akkadian, Old Chinese, Old Tamil, Classical Persian)
@@ -30,6 +30,7 @@ updated_at: 2026-10-01T16:58:37.292457-05:00
 - 2026-10-01T20:19:48Z: Fáfnismál cruxes: 1.6 stöndumk (-mk with 3rd-person subject); 5.6 'óbornum skjór á skeið' provisional; 6.5 hröðask; 19.3 galzt (gjalda vs gjalla); 27.4 eisköld; bird count and address in 34/37/38; 42.8 Ógnar ljóma; 44.5 Sigrdrífa name vs epithet; Hylestad (late 1100s) and Ramsund (about 1030) dates to check
 - 2026-10-01T21:14:16Z: Yijing cruxes: 貞 'divining' vs 'correct and firm'; 孚 trust vs captives; 亨/享; unnamed Wikisource base text differs from Wang Bi in 48 places (e.g. 9.4, 13.5, 16.5, 35.6 矢/失, 41.2 祀/已); 38.4 𧤊 shown as 掣 (font); 滅 cut-off vs cover (21, 28); 34.6 易 as place name; 48.1 井井; Shaughnessy/Gu Jiegang/Zhang Zhenglang dating claims and the Song coin-method claim to verify
 - 2026-10-01T21:58:37Z: Japanese cruxes: all yomikudashi and okurigana are Weft's (治にして, 者 read ば, 將 まさに…とす); return marks are the 1903/1910 editors'; Buke art. 8 Kui hexagram line; Sūden vs Hayashi Razan attribution (Murdoch); 1615 and 1371 sound values indirect; rōnin text copy variants (故/歟, 難遁/難忍); Heike Buddhist-source claims; Atsuta manuscript date unverified; Sadler 1918 is PD in the US only (d. 1970)
+- 2026-10-01T23:21:23Z: Batch of six cruxes: Secret History word division vs Shiratori, Burqan Bosqaγsan, wolf/doe as animals or names, colophon year (1228/1240); Primary Chronicle 'рѣша Русь' (who speaks the invitation), Cross 1930 periodical renewal not searched; Coptic supralinear-stroke over-application, Greco-Bohairic values, ℵ* at 1:1; Berlin Act Wikisource unproofread (art. 34 comma vs Gallica); Swahili 'Sultani ya kunguru' class agreement; Saer: Gask date (1218), Duglyn place, Albeinr = d'Aubigny?, death Acre vs Damietta
 
 ## Log
 

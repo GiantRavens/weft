@@ -1,0 +1,266 @@
+# Human overlay for Mark 1:1-20 (Sahidic). Lemma and morphology come from UD_Coptic-Scriptorium
+# (weft.coptic reads them through the token hook); this file adds the English gloss only. Each gloss
+# covers the whole bound group, morpheme by morpheme in Coptic order where English allows
+# (ⲁϥϫⲓⲧϥ it-took-him). Conventions: the conjugation bases are glossed by their English
+# equivalents (perfect ⲁϥ- he-...ed; circumstantial ⲉϥ- he-...ing or while-...; preterit ⲛⲉϥ- he-was-;
+# conjunctive ⲛϥ-/ⲛⲧⲉⲧⲛ- and-he-will-/and-you-; future ⲛⲁ- will-); the particle ⲛϭⲓ, which introduces a
+# subject placed after its verb, is glossed "namely"; ϫⲉ introducing speech "that:". Glosses checked
+# against the treebank lemma and Crum, A Coptic Dictionary (1939).
+- by: Claude (Weft phase 0), for review by Skip and a Coptologist
+  date: 2026-10-01
+  why: English word glosses; the treebank carries none
+  status: draft
+  set:
+    mk.1.1.1: {gloss: "the-beginning"}   # ⲧⲁⲣⲭⲏ | ⲡ + ⲁⲣⲭⲏ
+    mk.1.1.2: {gloss: "of-the-gospel"}   # ⲙⲡⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ | ⲛ + ⲡ + ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ
+    mk.1.1.3: {gloss: "of-Jesus"}   # ⲛⲓⲏⲥ | ⲛ + ⲓⲏⲥⲟⲩⲥ
+    mk.1.1.4: {gloss: "the-Christ"}   # ⲡⲉⲭⲥ | ⲡ + ⲭⲣⲓⲥⲧⲟⲥ
+    mk.1.1.5: {gloss: "the-son"}   # ⲡϣⲏⲣⲉ | ⲡ + ϣⲏⲣⲉ
+    mk.1.1.6: {gloss: "of-God"}   # ⲙⲡⲛⲟⲩⲧⲉ | ⲛ + ⲡ + ⲛⲟⲩⲧⲉ
+    mk.1.2.1: {gloss: "according-to"}   # ⲕⲁⲧⲁ | ⲕⲁⲧⲁ
+    mk.1.2.2: {gloss: "what-is-written"}   # ⲡⲉⲧⲥⲏϩ | ⲡ + ⲉⲧⲉⲣⲉ + ⲥϩⲁⲓ
+    mk.1.2.3: {gloss: "in"}   # ϩⲛ | ϩⲛ
+    mk.1.2.4: {gloss: "Isaiah"}   # ⲏⲥⲁⲓⲁⲥ | ⲏⲥⲁⲓⲁⲥ
+    mk.1.2.5: {gloss: "the-prophet"}   # ⲡⲉⲡⲣⲟⲫⲏⲧⲏⲥ | ⲡ + ⲡⲣⲟⲫⲏⲧⲏⲥ
+    mk.1.2.6: {gloss: "that:"}   # ϫⲉ | ϫⲉ
+    mk.1.2.7: {gloss: "behold"}   # ⲉⲓⲥ | ⲉⲓⲥ
+    mk.1.2.8: {gloss: "here"}   # ϩⲏⲏⲧⲉ | ϩⲏⲏⲧⲉ
+    mk.1.2.9: {gloss: "I-will-send"}   # ϯⲛⲁϫⲉⲩ | ⲁⲛⲟⲕ + ⲛⲁ + ϫⲓ
+    mk.1.2.10: {gloss: "my-messenger"}   # ⲡⲁⲁⲅⲅⲉⲗⲟⲥ | ⲡⲁ + ⲁⲅⲅⲉⲗⲟⲥ
+    mk.1.2.11: {gloss: "before-the-face"}   # ϩⲓϩⲏ | ϩⲓ + ϩⲏ
+    mk.1.2.12: {gloss: "of-you"}   # ⲙⲙⲟⲕ | ⲛ + ⲛⲧⲟⲕ
+    mk.1.2.13: {gloss: "and-he-will-prepare"}   # ⲛϥⲥⲃⲧⲉ | ⲛⲧⲉ + ⲛⲧⲟϥ + ⲥⲃⲧⲉ
+    mk.1.2.14: {gloss: "your-way"}   # ⲧⲉⲕϩⲓⲏ | ⲡⲉⲕ + ϩⲓⲏ
+    mk.1.3.1: {gloss: "the-voice"}   # ⲡⲉϩⲣⲟⲟⲩ | ⲡ + ϩⲣⲟⲟⲩ
+    mk.1.3.2: {gloss: "of-the-one-who-cries"}   # ⲙⲡⲉⲧⲱϣ | ⲛ + ⲡ + ⲉⲧⲉⲣⲉ + ⲱϣ
+    mk.1.3.3: {gloss: "out"}   # ⲉⲃⲟⲗ | ⲉⲃⲟⲗ
+    mk.1.3.4: {gloss: "in"}   # ϩⲛ | ϩⲛ
+    mk.1.3.5: {gloss: "the-desert"}   # ⲧⲉⲣⲏⲙⲟⲥ | ⲡ + ⲉⲣⲏⲙⲟⲥ
+    mk.1.3.6: {gloss: "that:"}   # ϫⲉ | ϫⲉ
+    mk.1.3.7: {gloss: "make-straight"}   # ⲥⲟⲩⲧⲛ | ⲥⲟⲟⲩⲧⲛ
+    mk.1.3.8: {gloss: "the-way"}   # ⲧⲉϩⲓⲏ | ⲡ + ϩⲓⲏ
+    mk.1.3.9: {gloss: "of-the-Lord"}   # ⲙⲡϫⲟⲉⲓⲥ | ⲛ + ⲡ + ϫⲟⲉⲓⲥ
+    mk.1.3.10: {gloss: "and-you(pl.)-make-straight"}   # ⲛⲧⲉⲧⲛⲥⲟⲩⲧⲛ | ⲛⲧⲉ + ⲛⲧⲱⲧⲛ + ⲥⲟⲟⲩⲧⲛ
+    mk.1.3.11: {gloss: "his-paths"}   # ⲛⲉϥⲙⲟⲓⲧ | ⲡⲉϥ + ⲙⲟⲉⲓⲧ
+    mk.1.4.1: {gloss: "he-came-to-be"}   # ⲁϥϣⲱⲡⲉ | ⲁ + ⲛⲧⲟϥ + ϣⲱⲡⲉ
+    mk.1.4.2: {gloss: "now"}   # ⲇⲉ | ⲇⲉ
+    mk.1.4.3: {gloss: "namely"}   # ⲛϭⲓ | ⲛϭⲓ
+    mk.1.4.4: {gloss: "John"}   # ⲓⲱϩⲁⲛⲛⲏⲥ | ⲓⲱϩⲁⲛⲛⲏⲥ
+    mk.1.4.5: {gloss: "he-giving-baptism"}   # ⲉϥϯⲃⲁⲡⲧⲓⲥⲙⲁ | ⲉⲣⲉ + ⲛⲧⲟϥ + ϯⲃⲁⲡⲧⲓⲥⲙⲁ
+    mk.1.4.6: {gloss: "in-the-desert"}   # ⲙⲡϫⲁⲓⲉ | ⲛ + ⲡ + ϫⲁⲓⲉ
+    mk.1.4.7: {gloss: "he-preaching"}   # ⲉϥⲕⲏⲣⲩⲥⲥⲉ | ⲉⲣⲉ + ⲛⲧⲟϥ + ⲕⲏⲣⲩⲥⲥⲉ
+    mk.1.4.8: {gloss: "a-baptism"}   # ⲛⲟⲩⲃⲁⲡⲧⲓⲥⲙⲁ | ⲛ + ⲟⲩ + ⲃⲁⲡⲧⲓⲥⲙⲁ
+    mk.1.4.9: {gloss: "of-repentance"}   # ⲙⲙⲉⲧⲁⲛⲟⲓⲁ | ⲛ + ⲙⲉⲧⲁⲛⲟⲓⲁ
+    mk.1.4.10: {gloss: "for-the-putting"}   # ⲉⲡⲕⲱ | ⲉ + ⲡ + ⲕⲱ
+    mk.1.4.11: {gloss: "away"}   # ⲉⲃⲟⲗ | ⲉⲃⲟⲗ
+    mk.1.4.12: {gloss: "of-the-sins"}   # ⲛⲛⲛⲟⲃⲉ | ⲛ + ⲡ + ⲛⲟⲃⲉ
+    mk.1.5.1: {gloss: "and"}   # ⲁⲩⲱ | ⲁⲩⲱ
+    mk.1.5.2: {gloss: "she-went"}   # ⲁⲥⲃⲱⲕ | ⲁ + ⲛⲧⲟⲥ + ⲃⲱⲕ
+    mk.1.5.3: {gloss: "to-him"}   # ⲛⲁϥ | ⲛⲁ + ⲛⲧⲟϥ
+    mk.1.5.4: {gloss: "out"}   # ⲉⲃⲟⲗ | ⲉⲃⲟⲗ
+    mk.1.5.5: {gloss: "namely"}   # ⲛϭⲓ | ⲛϭⲓ
+    mk.1.5.6: {gloss: "the-country"}   # ⲧⲉⲭⲱⲣⲁ | ⲡ + ⲭⲱⲣⲁ
+    mk.1.5.7: {gloss: "all-of-her"}   # ⲧⲏⲣⲥ | ⲧⲏⲣ + ⲛⲧⲟⲥ
+    mk.1.5.8: {gloss: "of-the-Judea"}   # ⲛϯⲟⲩⲇⲁⲓⲁ | ⲛ + ⲡ + ⲓⲟⲩⲇⲁⲓⲁ
+    mk.1.5.9: {gloss: "with-those-of"}   # ⲛⲙⲛⲁ | ⲙⲛ + ⲡⲁ
+    mk.1.5.10: {gloss: "the-Jerusalem"}   # ⲑⲓⲉⲣⲟⲥⲟⲗⲩⲙⲁ | ⲡ + ϩⲓⲉⲣⲟⲥⲟⲗⲩⲙⲁ
+    mk.1.5.11: {gloss: "all-of-them"}   # ⲧⲏⲣⲟⲩ | ⲧⲏⲣ + ⲛⲧⲟⲟⲩ
+    mk.1.5.12: {gloss: "they-received"}   # ⲁⲩϫⲓ | ⲁ + ⲛⲧⲟⲟⲩ + ϫⲓⲃⲁⲡⲧⲓⲥⲙⲁ
+    mk.1.5.13: {gloss: "baptism"}   # ⲃⲁⲡⲧⲓⲥⲙⲁ | ϫⲓⲃⲁⲡⲧⲓⲥⲙⲁ
+    mk.1.5.14: {gloss: "by-his-hand"}   # ⲛⲧⲟⲟⲧϥ | ⲛⲧⲛ + ⲛⲧⲟϥ
+    mk.1.5.15: {gloss: "in"}   # ϩⲙ | ϩⲛ
+    mk.1.5.16: {gloss: "the-Jordan"}   # ⲡⲓⲟⲣⲇⲁⲛⲏⲥ | ⲡ + ⲓⲟⲣⲇⲁⲛⲏⲥ
+    mk.1.5.17: {gloss: "the-river"}   # ⲡⲓⲉⲣⲟ | ⲡ + ⲓⲉⲣⲟ
+    mk.1.5.18: {gloss: "they-confessing"}   # ⲉⲩⲉⲝⲟⲙⲟⲗⲟⲅⲓ | ⲉⲣⲉ + ⲛⲧⲟⲟⲩ + ⲉⲝⲟⲙⲟⲗⲟⲅⲉⲓ
+    mk.1.5.19: {gloss: "their-sins"}   # ⲛⲛⲉⲩⲛⲟⲃⲉ | ⲛ + ⲡⲉⲩ + ⲛⲟⲃⲉ
+    mk.1.6.1: {gloss: "and"}   # ⲁⲩⲱ | ⲁⲩⲱ
+    mk.1.6.2: {gloss: "John"}   # ⲓⲱϩⲁⲛⲛⲏⲥ | ⲓⲱϩⲁⲛⲛⲏⲥ
+    mk.1.6.3: {gloss: "there-were-hairs"}   # ⲛⲉⲣⲉϩⲉⲛϥⲱ | ⲛⲉⲣⲉ + ⲟⲩ + ϥⲱ
+    mk.1.6.4: {gloss: "of-camel"}   # ⲛϭⲁⲙⲟⲩⲗ | ⲛ + ϭⲁⲙⲟⲩⲗ
+    mk.1.6.5: {gloss: "placed"}   # ⲧⲟ | ⲧⲟ
+    mk.1.6.6: {gloss: "on-him"}   # ϩⲓⲱⲱϥ | ϩⲓ + ⲛⲧⲟϥ
+    mk.1.6.7: {gloss: "a-belt-being"}   # ⲉⲣⲉⲟⲩⲙⲟϫ | ⲉⲣⲉ + ⲟⲩ + ⲙⲟϫ
+    mk.1.6.8: {gloss: "of-leather"}   # ⲛϣⲁⲁⲣ | ⲛ + ϣⲁⲁⲣ
+    mk.1.6.9: {gloss: "bound"}   # ⲙⲏⲣ | ⲙⲟⲩⲣ
+    mk.1.6.10: {gloss: "to-his-loins"}   # ⲉⲧⲉϥϯⲡⲉ | ⲉ + ⲡⲉϥ + ϯⲡⲉ
+    mk.1.6.11: {gloss: "he-eating-locusts"}   # ⲉϥⲟⲩⲉⲙϣϫⲉ | ⲉⲣⲉ + ⲛⲧⲟϥ + ⲟⲩⲱⲙ + ϣϫⲉ
+    mk.1.6.12: {gloss: "and-honey"}   # ϩⲓⲉⲃⲓⲱ | ϩⲓ + ⲉⲃⲓⲱ
+    mk.1.6.13: {gloss: "wild"}   # ⲛϩⲟⲟⲩⲧ | ⲛ + ϩⲟⲟⲩⲧ
+    mk.1.7.1: {gloss: "and"}   # ⲁⲩⲱ | ⲁⲩⲱ
+    mk.1.7.2: {gloss: "he-was-preaching"}   # ⲛⲉϥⲧⲁϣⲉⲟⲓϣ | ⲛⲉⲣⲉ + ⲛⲧⲟϥ + ⲧⲁϣⲉⲟⲉⲓϣ
+    mk.1.7.3: {gloss: "he-saying"}   # ⲉϥϫⲱ | ⲉⲣⲉ + ⲛⲧⲟϥ + ϫⲱ
+    mk.1.7.4: {gloss: "it"}   # ⲙⲙⲟⲥ | ⲛ + ⲛⲧⲟⲥ
+    mk.1.7.5: {gloss: "that:"}   # ϫⲉ | ϫⲉ
+    mk.1.7.6: {gloss: "he-comes"}   # ϥⲛⲏⲩ | ⲛⲧⲟϥ + ⲉⲓ
+    mk.1.7.7: {gloss: "after-me"}   # ⲙⲛⲛⲥⲱⲉⲓ | ⲙⲛⲛⲥⲁ + ⲁⲛⲟⲕ
+    mk.1.7.8: {gloss: "namely"}   # ⲛϭⲓ | ⲛϭⲓ
+    mk.1.7.9: {gloss: "the-one-who-is-strong"}   # ⲡⲉⲧϫⲟⲟⲣ | ⲡ + ⲉⲧⲉⲣⲉ + ϫⲣⲟ
+    mk.1.7.10: {gloss: "than-me"}   # ⲉⲣⲟⲉⲓ | ⲉ + ⲁⲛⲟⲕ
+    mk.1.7.11: {gloss: "I-being-a-worthy-one"}   # ⲉⲁⲛⲅⲟⲩϩⲓⲕⲁⲛⲟⲥ | ⲉⲣⲉ + ⲁⲛⲟⲕ + ⲟⲩ + ϩⲓⲕⲁⲛⲟⲥ
+    mk.1.7.12: {gloss: "not"}   # ⲁⲛ | ⲁⲛ
+    mk.1.7.13: {gloss: "to-bend-down"}   # ⲉⲡⲁϩⲧ | ⲉ + ⲡⲱϩⲧ
+    mk.1.7.14: {gloss: "to-loosen"}   # ⲉⲃⲱⲗ | ⲉ + ⲃⲱⲗ
+    mk.1.7.15: {gloss: "away"}   # ⲉⲃⲟⲗ | ⲉⲃⲟⲗ
+    mk.1.7.16: {gloss: "the-strap"}   # ⲙⲡⲙⲟⲩⲥ | ⲛ + ⲡ + ⲙⲟⲩⲥ
+    mk.1.7.17: {gloss: "of-his-shoe"}   # ⲙⲡⲉϥⲧⲟⲟⲩⲉ | ⲛ + ⲡⲉϥ + ⲧⲟⲟⲩⲉ
+    mk.1.8.1: {gloss: "I"}   # ⲁⲛⲟⲕ | ⲁⲛⲟⲕ
+    mk.1.8.2: {gloss: "I-gave-baptism"}   # ⲁⲉⲓϯⲃⲁⲡⲧⲓⲥⲙⲁ | ⲁ + ⲁⲛⲟⲕ + ϯⲃⲁⲡⲧⲓⲥⲙⲁ
+    mk.1.8.3: {gloss: "to-you(pl.)"}   # ⲛⲏⲧⲛ | ⲛⲁ + ⲛⲧⲱⲧⲛ
+    mk.1.8.4: {gloss: "in"}   # ϩⲛ | ϩⲛ
+    mk.1.8.5: {gloss: "a-water"}   # ⲟⲩⲙⲟⲟⲩ | ⲟⲩ + ⲙⲟⲟⲩ
+    mk.1.8.6: {gloss: "he"}   # ⲛⲧⲟϥ | ⲛⲧⲟϥ
+    mk.1.8.7: {gloss: "but"}   # ⲇⲉ | ⲇⲉ
+    mk.1.8.8: {gloss: "he-will-baptize"}   # ⲉϥⲛⲁⲃⲁⲡⲧⲓⲍⲉ | ⲉⲣⲉ + ⲛⲧⲟϥ + ⲛⲁ + ⲃⲁⲡⲧⲓⲍⲉ
+    mk.1.8.9: {gloss: "you(pl.)"}   # ⲙⲙⲱⲧⲛ | ⲛ + ⲛⲧⲱⲧⲛ
+    mk.1.8.10: {gloss: "in"}   # ϩⲛ | ϩⲛ
+    mk.1.8.11: {gloss: "a-spirit"}   # ⲟⲩⲡⲛⲁ | ⲟⲩ + ⲡⲛⲉⲩⲙⲁ
+    mk.1.8.12: {gloss: "it-being-holy"}   # ⲉϥⲟⲩⲁⲁⲃ | ⲉⲧⲉⲣⲉ + ⲛⲧⲟϥ + ⲟⲩⲟⲡ
+    mk.1.9.1: {gloss: "and"}   # ⲁⲩⲱ | ⲁⲩⲱ
+    mk.1.9.2: {gloss: "it-came-to-be"}   # ⲁⲥϣⲱⲡⲉ | ⲁ + ⲛⲧⲟⲥ + ϣⲱⲡⲉ
+    mk.1.9.3: {gloss: "in"}   # ϩⲛ | ϩⲛ
+    mk.1.9.4: {gloss: "the-days"}   # ⲛⲉϩⲟⲟⲩ | ⲡ + ϩⲟⲟⲩ
+    mk.1.9.5: {gloss: "those"}   # ⲉⲧⲙⲙⲁⲩ | ⲉⲧⲉⲣⲉ + ⲙⲙⲁⲩ
+    mk.1.9.6: {gloss: "he-came"}   # ⲁϥⲉⲓ | ⲁ + ⲛⲧⲟϥ + ⲉⲓ
+    mk.1.9.7: {gloss: "namely"}   # ⲛϭⲓ | ⲛϭⲓ
+    mk.1.9.8: {gloss: "Jesus"}   # ⲓⲏⲥ | ⲓⲏⲥⲟⲩⲥ
+    mk.1.9.9: {gloss: "out"}   # ⲉⲃⲟⲗ | ⲉⲃⲟⲗ
+    mk.1.9.10: {gloss: "from"}   # ϩⲛ | ϩⲛ
+    mk.1.9.11: {gloss: "Nazareth"}   # ⲛⲁⲍⲁⲣⲉⲑ | ⲛⲁⲍⲁⲣⲉⲑ
+    mk.1.9.12: {gloss: "of-the-Galilee"}   # ⲛⲧⲉⲧⲅⲁⲗⲓⲗⲁⲓⲁ | ⲛⲧⲉ + ⲡ + ⲅⲁⲗⲓⲗⲁⲓⲁ
+    mk.1.9.13: {gloss: "and"}   # ⲁⲩⲱ | ⲁⲩⲱ
+    mk.1.9.14: {gloss: "he-received"}   # ⲁϥϫⲓ | ⲁ + ⲛⲧⲟϥ + ϫⲓⲃⲁⲡⲧⲓⲥⲙⲁ
+    mk.1.9.15: {gloss: "baptism"}   # ⲃⲁⲡⲧⲓⲥⲙⲁ | ϫⲓⲃⲁⲡⲧⲓⲥⲙⲁ
+    mk.1.9.16: {gloss: "in"}   # ϩⲙ | ϩⲛ
+    mk.1.9.17: {gloss: "the-Jordan"}   # ⲡⲓⲟⲣⲇⲁⲛⲏⲥ | ⲡ + ⲓⲟⲣⲇⲁⲛⲏⲥ
+    mk.1.9.18: {gloss: "by-John"}   # ⲛⲧⲛⲓⲱϩⲁⲛⲛⲏⲥ | ⲛⲧⲛ + ⲓⲱϩⲁⲛⲛⲏⲥ
+    mk.1.10.1: {gloss: "in-the-hour"}   # ⲛⲧⲉⲩⲛⲟⲩ | ⲛ + ⲡ + ⲟⲩⲛⲟⲩ
+    mk.1.10.2: {gloss: "and"}   # ⲇⲉ | ⲇⲉ
+    mk.1.10.3: {gloss: "he-coming"}   # ⲉϥⲛⲏⲩ | ⲉⲣⲉ + ⲛⲧⲟϥ + ⲉⲓ
+    mk.1.10.4: {gloss: "up"}   # ⲉϩⲣⲁⲓ | ⲉϩⲣⲁⲓ
+    mk.1.10.5: {gloss: "from-the-water"}   # ⲙⲡⲙⲟⲟⲩ | ⲛ + ⲡ + ⲙⲟⲟⲩ
+    mk.1.10.6: {gloss: "he-saw"}   # ⲁϥⲛⲁⲩ | ⲁ + ⲛⲧⲟϥ + ⲛⲁⲩ
+    mk.1.10.7: {gloss: "at-the-heavens"}   # ⲉⲙⲡⲏⲩⲉ | ⲉ + ⲡ + ⲡⲉ
+    mk.1.10.8: {gloss: "they-having-opened"}   # ⲉⲁⲩⲟⲩⲱⲛ | ⲉⲣⲉ + ⲁ + ⲛⲧⲟⲟⲩ + ⲟⲩⲱⲛ
+    mk.1.10.9: {gloss: "and"}   # ⲁⲩⲱ | ⲁⲩⲱ
+    mk.1.10.10: {gloss: "the-spirit"}   # ⲡⲉⲡⲛⲁ | ⲡ + ⲡⲛⲉⲩⲙⲁ
+    mk.1.10.11: {gloss: "it-coming"}   # ⲉϥⲛⲏⲩ | ⲉⲣⲉ + ⲛⲧⲟϥ + ⲉⲓ
+    mk.1.10.12: {gloss: "down"}   # ⲉⲡⲉⲥⲏⲧ | ⲉ + ⲡ + ⲉⲥⲏⲧ
+    mk.1.10.13: {gloss: "upon-him"}   # ⲉϫⲱϥ | ⲉϫⲛ + ⲛⲧⲟϥ
+    mk.1.10.14: {gloss: "in-the-manner"}   # ⲛⲑⲉ | ⲛ + ⲡ + ϩⲉ
+    mk.1.10.15: {gloss: "of-a-dove"}   # ⲛⲟⲩϭⲣⲟⲟⲙⲡⲉ | ⲛ + ⲟⲩ + ϭⲣⲟⲟⲙⲡⲉ
+    mk.1.11.1: {gloss: "and"}   # ⲁⲩⲱ | ⲁⲩⲱ
+    mk.1.11.2: {gloss: "a-voice"}   # ⲟⲩⲥⲙⲏ | ⲟⲩ + ⲥⲙⲏ
+    mk.1.11.3: {gloss: "she-came-to-be"}   # ⲁⲥϣⲱⲡⲉ | ⲁ + ⲛⲧⲟⲥ + ϣⲱⲡⲉ
+    mk.1.11.4: {gloss: "out"}   # ⲉⲃⲟⲗ | ⲉⲃⲟⲗ
+    mk.1.11.5: {gloss: "from"}   # ϩⲛ | ϩⲛ
+    mk.1.11.6: {gloss: "the-heavens"}   # ⲙⲡⲏⲩⲉ | ⲡ + ⲡⲉ
+    mk.1.11.7: {gloss: "that:"}   # ϫⲉ | ϫⲉ
+    mk.1.11.8: {gloss: "you"}   # ⲛⲧⲟⲕ | ⲛⲧⲟⲕ
+    mk.1.11.9: {gloss: "it-is"}   # ⲡⲉ | ⲡⲉ
+    mk.1.11.10: {gloss: "my-son"}   # ⲡⲁϣⲏⲣⲉ | ⲡⲁ + ϣⲏⲣⲉ
+    mk.1.11.11: {gloss: "my-beloved"}   # ⲡⲁⲙⲉⲣⲓⲧ | ⲡⲁ + ⲙⲉⲣⲓⲧ
+    mk.1.11.12: {gloss: "whom-my-wish-did"}   # ⲉⲛⲧⲁⲡⲁⲟⲩⲱϣ | ⲉⲧⲉⲣⲉ + ⲁ + ⲡⲁ + ⲟⲩⲱϣ
+    mk.1.11.13: {gloss: "come-to-be"}   # ϣⲱⲡⲉ | ϣⲱⲡⲉ
+    mk.1.11.14: {gloss: "in-you"}   # ⲛϩⲏⲧⲕ | ϩⲛ + ⲛⲧⲟⲕ
+    mk.1.12.1: {gloss: "and"}   # ⲁⲩⲱ | ⲁⲩⲱ
+    mk.1.12.2: {gloss: "the-hour"}   # ⲧⲉⲩⲛⲟⲩ | ⲡ + ⲟⲩⲛⲟⲩ
+    mk.1.12.3: {gloss: "the-spirit"}   # ⲡⲉⲡⲛⲁ | ⲡ + ⲡⲛⲉⲩⲙⲁ
+    mk.1.12.4: {gloss: "it-took-him"}   # ⲁϥϫⲓⲧϥ | ⲁ + ⲛⲧⲟϥ + ϫⲓ + ⲛⲧⲟϥ
+    mk.1.12.5: {gloss: "out"}   # ⲉⲃⲟⲗ | ⲉⲃⲟⲗ
+    mk.1.12.6: {gloss: "to-the-desert"}   # ⲉⲧⲉⲣⲏⲙⲟⲥ | ⲉ + ⲡ + ⲉⲣⲏⲙⲟⲥ
+    mk.1.13.1: {gloss: "and"}   # ⲁⲩⲱ | ⲁⲩⲱ
+    mk.1.13.2: {gloss: "he-was-in"}   # ⲛⲉϥϩⲛ | ⲛⲉⲣⲉ + ⲛⲧⲟϥ + ϩⲛ
+    mk.1.13.3: {gloss: "the-desert"}   # ⲧⲉⲣⲏⲙⲟⲥ | ⲡ + ⲉⲣⲏⲙⲟⲥ
+    mk.1.13.4: {gloss: "for-forty"}   # ⲛϩⲙⲉ | ⲛ + ϩⲙⲉ
+    mk.1.13.5: {gloss: "days"}   # ⲛϩⲟⲟⲩ | ⲛ + ϩⲟⲟⲩ
+    mk.1.13.6: {gloss: "while-the-Satan"}   # ⲉⲣⲉⲡⲥⲁⲧⲁⲛⲁⲥ | ⲉⲣⲉ + ⲡ + ⲥⲁⲧⲁⲛⲁⲥ
+    mk.1.13.7: {gloss: "tempting"}   # ⲡⲉⲓⲣⲁⲍⲉ | ⲡⲉⲓⲣⲁⲍⲉ
+    mk.1.13.8: {gloss: "him"}   # ⲙⲙⲟϥ | ⲛ + ⲛⲧⲟϥ
+    mk.1.13.9: {gloss: "he-being"}   # ⲉϥϣⲟⲟⲡ | ⲉⲣⲉ + ⲛⲧⲟϥ + ϣⲱⲡⲉ
+    mk.1.13.10: {gloss: "with"}   # ⲙⲛ | ⲙⲛ
+    mk.1.13.11: {gloss: "the-wild-beasts"}   # ⲛⲉⲑⲏⲣⲓⲟⲛ | ⲡ + ⲑⲏⲣⲓⲟⲛ
+    mk.1.13.12: {gloss: "and"}   # ⲁⲩⲱ | ⲁⲩⲱ
+    mk.1.13.13: {gloss: "the-angels"}   # ⲛⲁⲅⲅⲉⲗⲟⲥ | ⲡ + ⲁⲅⲅⲉⲗⲟⲥ
+    mk.1.13.14: {gloss: "they-were-serving"}   # ⲛⲉⲩⲇⲓⲁⲕⲟⲛⲓ | ⲛⲉⲣⲉ + ⲛⲧⲟⲟⲩ + ⲇⲓⲁⲕⲟⲛⲉⲓ
+    mk.1.13.15: {gloss: "to-him"}   # ⲛⲁϥ | ⲛⲁ + ⲛⲧⲟϥ
+    mk.1.14.1: {gloss: "after-they-handed-over"}   # ⲙⲛⲛⲥⲁⲛⲥⲉⲡⲁⲣⲁⲇⲓⲇⲟⲩ | ⲙⲛⲛⲥⲁ + ⲛⲧⲉ + ⲛⲧⲟⲟⲩ + ⲡⲁⲣⲁⲇⲓⲇⲟⲩ
+    mk.1.14.2: {gloss: "John"}   # ⲛⲓⲱϩⲁⲛⲛⲏⲥ | ⲛ + ⲓⲱϩⲁⲛⲛⲏⲥ
+    mk.1.14.3: {gloss: "he-came"}   # ⲁϥⲉⲓ | ⲁ + ⲛⲧⲟϥ + ⲉⲓ
+    mk.1.14.4: {gloss: "namely"}   # ⲛϭⲓ | ⲛϭⲓ
+    mk.1.14.5: {gloss: "Jesus"}   # ⲓⲏⲥ | ⲓⲏⲥⲟⲩⲥ
+    mk.1.14.6: {gloss: "to-the-Galilee"}   # ⲉⲧⲅⲁⲗⲓⲗⲁⲓⲁ | ⲉ + ⲡ + ⲅⲁⲗⲓⲗⲁⲓⲁ
+    mk.1.14.7: {gloss: "he-preaching"}   # ⲉϥⲕⲏⲣⲩⲥⲥⲉ | ⲉⲣⲉ + ⲛⲧⲟϥ + ⲕⲏⲣⲩⲥⲥⲉ
+    mk.1.14.8: {gloss: "the-gospel"}   # ⲙⲡⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ | ⲛ + ⲡ + ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ
+    mk.1.14.9: {gloss: "of-God"}   # ⲙⲡⲛⲟⲩⲧⲉ | ⲛ + ⲡ + ⲛⲟⲩⲧⲉ
+    mk.1.15.1: {gloss: "that:"}   # ϫⲉ | ϫⲉ
+    mk.1.15.2: {gloss: "the-time-did"}   # ⲁⲡⲉⲩⲟⲓϣ | ⲁ + ⲡ + ⲟⲩⲟⲉⲓϣ
+    mk.1.15.3: {gloss: "be-completed"}   # ϫⲱⲕ | ϫⲱⲕ
+    mk.1.15.4: {gloss: "out"}   # ⲉⲃⲟⲗ | ⲉⲃⲟⲗ
+    mk.1.15.5: {gloss: "and"}   # ⲁⲩⲱ | ⲁⲩⲱ
+    mk.1.15.6: {gloss: "she-drew"}   # ⲁⲥϩⲱⲛ | ⲁ + ⲛⲧⲟⲥ + ϩⲱⲛ
+    mk.1.15.7: {gloss: "near"}   # ⲉϩⲟⲩⲛ | ⲉϩⲟⲩⲛ
+    mk.1.15.8: {gloss: "namely"}   # ⲛϭⲓ | ⲛϭⲓ
+    mk.1.15.9: {gloss: "the-kingdom"}   # ⲧⲙⲛⲧⲣⲣⲟ | ⲡ + ⲙⲛⲧⲣⲣⲟ
+    mk.1.15.10: {gloss: "of-God"}   # ⲙⲡⲛⲟⲩⲧⲉ | ⲛ + ⲡ + ⲛⲟⲩⲧⲉ
+    mk.1.15.11: {gloss: "repent"}   # ⲙⲉⲧⲁⲛⲟⲓ | ⲙⲉⲧⲁⲛⲟⲉⲓ
+    mk.1.15.12: {gloss: "and-you(pl.)-believe"}   # ⲛⲧⲉⲧⲛⲡⲓⲥⲧⲉⲩⲉ | ⲛⲧⲉ + ⲛⲧⲱⲧⲛ + ⲡⲓⲥⲧⲉⲩⲉ
+    mk.1.15.13: {gloss: "in"}   # ϩⲙ | ϩⲛ
+    mk.1.15.14: {gloss: "the-gospel"}   # ⲡⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ | ⲡ + ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ
+    mk.1.16.1: {gloss: "and"}   # ⲁⲩⲱ | ⲁⲩⲱ
+    mk.1.16.2: {gloss: "he-walking"}   # ⲉϥⲙⲟⲟϣⲉ | ⲉⲣⲉ + ⲛⲧⲟϥ + ⲙⲟⲟϣⲉ
+    mk.1.16.3: {gloss: "beside-the-sea"}   # ϩⲁⲧⲛⲧⲉⲑⲁⲗⲁⲥⲥⲁ | ϩⲁⲧⲛ + ⲡ + ⲑⲁⲗⲁⲥⲥⲁ
+    mk.1.16.4: {gloss: "of-the-Galilee"}   # ⲛⲧⲅⲁⲗⲓⲗⲁⲓⲁ | ⲛ + ⲡ + ⲅⲁⲗⲓⲗⲁⲓⲁ
+    mk.1.16.5: {gloss: "he-saw"}   # ⲁϥⲛⲁⲩ | ⲁ + ⲛⲧⲟϥ + ⲛⲁⲩ
+    mk.1.16.6: {gloss: "at-Simon"}   # ⲉⲥⲓⲙⲱⲛ | ⲉ + ⲥⲓⲙⲱⲛ
+    mk.1.16.7: {gloss: "with-Andrew"}   # ⲛⲙⲁⲛⲇⲣⲉⲁⲥ | ⲙⲛ + ⲁⲛⲇⲣⲉⲁⲥ
+    mk.1.16.8: {gloss: "the-brother"}   # ⲡⲥⲟⲛ | ⲡ + ⲥⲟⲛ
+    mk.1.16.9: {gloss: "of-Simon"}   # ⲛⲥⲓⲙⲱⲛ | ⲛ + ⲥⲓⲙⲱⲛ
+    mk.1.16.10: {gloss: "they-casting-net"}   # ⲉⲩⲛⲟⲩϫϣⲛⲉ | ⲉⲣⲉ + ⲛⲧⲟⲟⲩ + ⲛⲟⲩϫϣⲛⲉ
+    mk.1.16.11: {gloss: "into-the-sea"}   # ⲉⲧⲉⲑⲁⲗⲁⲥⲥⲁ | ⲉ + ⲡ + ⲑⲁⲗⲁⲥⲥⲁ
+    mk.1.16.12: {gloss: "were-fishermen"}   # ⲛⲉϩⲉⲛⲟⲩⲱϩⲉ | ⲛⲉⲣⲉ + ⲟⲩ + ⲟⲩⲱϩⲉ
+    mk.1.16.13: {gloss: "for"}   # ⲅⲁⲣ | ⲅⲁⲣ
+    mk.1.16.14: {gloss: "they(copula)"}   # ⲛⲉ | ⲡⲉ
+    mk.1.17.1: {gloss: "said-he"}   # ⲡⲉϫⲁϥ | ⲡⲉϫⲉ + ⲛⲧⲟϥ
+    mk.1.17.2: {gloss: "to-them"}   # ⲛⲁⲩ | ⲛⲁ + ⲛⲧⲟⲟⲩ
+    mk.1.17.3: {gloss: "namely"}   # ⲛϭⲓ | ⲛϭⲓ
+    mk.1.17.4: {gloss: "Jesus"}   # ⲓⲏⲥ | ⲓⲏⲥⲟⲩⲥ
+    mk.1.17.5: {gloss: "that:"}   # ϫⲉ | ϫⲉ
+    mk.1.17.6: {gloss: "come(pl.)"}   # ⲁⲙⲏⲉⲓⲛ | ⲉⲓ
+    mk.1.17.7: {gloss: "place-yourselves"}   # ⲟⲩⲉϩⲧⲏⲩⲧⲛ | ⲟⲩⲱϩ + ⲛⲧⲱⲧⲛ
+    mk.1.17.8: {gloss: "after-me"}   # ⲛⲥⲱⲉⲓ | ⲛⲥⲁ + ⲁⲛⲟⲕ
+    mk.1.17.9: {gloss: "and"}   # ⲁⲩⲱ | ⲁⲩⲱ
+    mk.1.17.10: {gloss: "I-will-make-you"}   # ϯⲛⲁⲣⲧⲏⲩⲧⲛ | ⲁⲛⲟⲕ + ⲛⲁ + ⲉⲓⲣⲉ + ⲛⲧⲱⲧⲛ
+    mk.1.17.11: {gloss: "fishermen"}   # ⲛⲟⲩⲱϩⲉ | ⲛ + ⲟⲩⲱϩⲉ
+    mk.1.17.12: {gloss: "people-catching"}   # ⲛⲣⲉϥϭⲉⲡⲣⲱⲙⲉ | ⲛ + ⲣⲉϥϭⲉⲡⲣⲱⲙⲉ
+    mk.1.18.1: {gloss: "in-the-hour"}   # ⲛⲧⲉⲩⲛⲟⲩ | ⲛ + ⲡ + ⲟⲩⲛⲟⲩ
+    mk.1.18.2: {gloss: "and"}   # ⲇⲉ | ⲇⲉ
+    mk.1.18.3: {gloss: "they-left-their-nets"}   # ⲁⲩⲕⲁⲛⲉⲩϣⲛⲏⲩ | ⲁ + ⲛⲧⲟⲟⲩ + ⲕⲱ + ⲡⲉⲩ + ϣⲛⲉ
+    mk.1.18.4: {gloss: "they-put-themselves"}   # ⲁⲩⲟⲩⲁϩⲟⲩ | ⲁ + ⲛⲧⲟⲟⲩ + ⲟⲩⲱϩ + ⲛⲧⲟⲟⲩ
+    mk.1.18.5: {gloss: "after-him"}   # ⲛⲥⲱϥ | ⲛⲥⲁ + ⲛⲧⲟϥ
+    mk.1.19.1: {gloss: "and"}   # ⲁⲩⲱ | ⲁⲩⲱ
+    mk.1.19.2: {gloss: "when-he-had-walked"}   # ⲛⲧⲉⲣⲉϥⲙⲟⲟϣⲉ | ⲛⲧⲉⲣⲉ + ⲛⲧⲟϥ + ⲙⲟⲟϣⲉ
+    mk.1.19.3: {gloss: "forward"}   # ⲉⲑⲏ | ⲉ + ⲡ + ϩⲏ
+    mk.1.19.4: {gloss: "a-little"}   # ⲛⲟⲩⲕⲟⲩⲉⲓ | ⲛ + ⲟⲩ + ⲕⲟⲩⲓ
+    mk.1.19.5: {gloss: "he-saw"}   # ⲁϥⲛⲁⲩ | ⲁ + ⲛⲧⲟϥ + ⲛⲁⲩ
+    mk.1.19.6: {gloss: "at-James"}   # ⲉⲓⲁⲕⲱⲃⲟⲥ | ⲉ + ⲓⲁⲕⲱⲃⲟⲥ
+    mk.1.19.7: {gloss: "the-son"}   # ⲡϣⲏⲣⲉ | ⲡ + ϣⲏⲣⲉ
+    mk.1.19.8: {gloss: "of-Zebedee"}   # ⲛⲍⲉⲃⲉⲇⲁⲓⲟⲥ | ⲛ + ⲍⲉⲃⲉⲇⲁⲓⲟⲥ
+    mk.1.19.9: {gloss: "with-John"}   # ⲛⲙⲓⲱϩⲁⲛⲛⲏⲥ | ⲙⲛ + ⲓⲱϩⲁⲛⲛⲏⲥ
+    mk.1.19.10: {gloss: "his-brother"}   # ⲡⲉϥⲥⲟⲛ | ⲡⲉϥ + ⲥⲟⲛ
+    mk.1.19.11: {gloss: "they"}   # ⲛⲧⲟⲟⲩ | ⲛⲧⲟⲟⲩ
+    mk.1.19.12: {gloss: "too"}   # ϩⲱⲟⲩ | ϩⲱⲱ + ⲛⲧⲟⲟⲩ
+    mk.1.19.13: {gloss: "they-being-in-the-boat"}   # ⲉⲩϩⲙⲡϫⲟⲉⲓ | ⲉⲣⲉ + ⲛⲧⲟⲟⲩ + ϩⲛ + ⲡ + ϫⲟⲉⲓ
+    mk.1.19.14: {gloss: "they-preparing"}   # ⲉⲩⲥⲟⲃⲧⲉ | ⲉⲣⲉ + ⲛⲧⲟⲟⲩ + ⲥⲟⲃⲧⲉ
+    mk.1.19.15: {gloss: "their-nets"}   # ⲛⲛⲉⲩϣⲛⲏⲩ | ⲛ + ⲡⲉⲩ + ϣⲛⲉ
+    mk.1.20.1: {gloss: "in-the-hour"}   # ⲛⲧⲉⲩⲛⲟⲩ | ⲛ + ⲡ + ⲟⲩⲛⲟⲩ
+    mk.1.20.2: {gloss: "he-called"}   # ⲁϥⲙⲟⲩⲧⲉ | ⲁ + ⲛⲧⲟϥ + ⲙⲟⲩⲧⲉ
+    mk.1.20.3: {gloss: "to-them"}   # ⲉⲣⲟⲟⲩ | ⲉ + ⲛⲧⲟⲟⲩ
+    mk.1.20.4: {gloss: "and"}   # ⲁⲩⲱ | ⲁⲩⲱ
+    mk.1.20.5: {gloss: "they-left-their-father"}   # ⲁⲩⲕⲁⲡⲉⲩⲓⲱⲧ | ⲁ + ⲛⲧⲟⲟⲩ + ⲕⲱ + ⲡⲉⲩ + ⲉⲓⲱⲧ
+    mk.1.20.6: {gloss: "Zebedee"}   # ⲍⲉⲃⲉⲇⲁⲓⲟⲥ | ⲍⲉⲃⲉⲇⲁⲓⲟⲥ
+    mk.1.20.7: {gloss: "in"}   # ϩⲙ | ϩⲛ
+    mk.1.20.8: {gloss: "the-boat"}   # ⲡϫⲟⲉⲓ | ⲡ + ϫⲟⲉⲓ
+    mk.1.20.9: {gloss: "with-the-hired-men"}   # ⲙⲛⲛϫⲁⲓⲃⲉⲕⲉ | ⲙⲛ + ⲡ + ϫⲁⲓⲃⲉⲕⲉ
+    mk.1.20.10: {gloss: "they-went"}   # ⲁⲩⲃⲱⲕ | ⲁ + ⲛⲧⲟⲟⲩ + ⲃⲱⲕ
+    mk.1.20.11: {gloss: "they-put-themselves"}   # ⲁⲩⲟⲩⲁϩⲟⲩ | ⲁ + ⲛⲧⲟⲟⲩ + ⲟⲩⲱϩ + ⲛⲧⲟⲟⲩ
+    mk.1.20.12: {gloss: "after-him"}   # ⲛⲥⲱϥ | ⲛⲥⲁ + ⲛⲧⲟϥ

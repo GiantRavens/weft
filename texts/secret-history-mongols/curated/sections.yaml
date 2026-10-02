@@ -1,0 +1,241 @@
+# Human overlay for the Secret History of the Mongols, sections 1 to 10. No treebank exists for
+# Middle Mongolian; lemma, morphology and gloss are hand annotation, draft.
+# Lemmas are Middle Mongolian citation forms in Weft's romanization: nouns in the nominative, verbs
+# as the bare stem with a hyphen (töre- 'be born'), names as written. The Ming word gloss (旁譯),
+# shown in its own row, was the guide for every English gloss; where they differ the note says why.
+# Morphology uses Universal Dependencies features. Case=Dat stands for the dative-locative (-a, -e,
+# -dur, -tur), Case=Com for the comitative (-lü'e); VerbForm=Converb for the Mongolian converbs
+# (-ju, -n, -run); Mood=Cnd for the conditional converb (-'esü), Mood=Purposive for -re, and
+# Mood=Voluntative for the first-person -ya. Reflex=Yes marks the reflexive possessive (-be'en,
+# -yan). Possessive and person sense rides in the English gloss (his, for-my-own-younger-brother).
+- by: Claude (Weft phase 0), for review by Skip and a Mongolist
+  date: 2026-10-01
+  why: hand lemma, morphology and gloss; no treebank covers the Secret History
+  status: draft
+  set:
+    shm.1.1.1: {lemma: "Činggis", morph: "PROPN", gloss: "Činggis"}   # 成吉思
+    shm.1.1.2: {lemma: "qaγan", morph: "NOUN|Case=Gen", gloss: "of-the-Qaγan"}   # 合罕訥
+    shm.1.1.3: {lemma: "huja'ur", morph: "NOUN", gloss: "origin"}   # 忽札兀兒
+    shm.1.2.1: {lemma: "de'ere", morph: "ADP", gloss: "above"}   # 迭額列
+    shm.1.2.2: {lemma: "tenggeri", morph: "NOUN|Case=Abl", gloss: "from-Heaven"}   # 騰格理額扯
+    shm.1.2.3: {lemma: "jaya'atu", morph: "ADJ", gloss: "destiny-having"}   # 札牙阿禿
+    shm.1.2.4: {lemma: "töre-", morph: "VERB|Tense=Past|VerbForm=Part", gloss: "born"}   # 脫列克先
+    shm.1.2.5: {lemma: "börte", morph: "ADJ", gloss: "grey-blue"}   # 孛兒帖
+    shm.1.2.6: {lemma: "čino", morph: "NOUN", gloss: "wolf"}   # 赤那
+    shm.1.2.7: {lemma: "a-", morph: "AUX|Tense=Past|Mood=Ind", gloss: "there-was"}   # 阿主兀
+    shm.1.3.1: {lemma: "gergei", morph: "NOUN", gloss: "wife"}   # 格兒該
+    shm.1.3.2: {lemma: "inu", morph: "PRON|Person=3|Case=Gen", gloss: "his"}   # 亦訥
+    shm.1.3.3: {lemma: "qo'ai", morph: "ADJ", gloss: "fallow"}   # 豁埃
+    shm.1.3.4: {lemma: "maral", morph: "NOUN", gloss: "doe"}   # 馬闌勒
+    shm.1.3.5: {lemma: "a-", morph: "AUX|Tense=Past|Mood=Ind", gloss: "was"}   # 阿只埃
+    shm.1.3.6: {lemma: "Tenggis", morph: "PROPN", gloss: "the-Tenggis"}   # 騰汲思
+    shm.1.3.7: {lemma: "ketül-", morph: "VERB|VerbForm=Converb", gloss: "crossing"}   # 客禿勒周
+    shm.1.3.8: {lemma: "ire-", morph: "VERB|Tense=Past|Mood=Ind", gloss: "they-came"}   # 亦列罷
+    shm.1.4.1: {lemma: "Onan", morph: "PROPN", gloss: "Onan"}   # 斡難
+    shm.1.4.2: {lemma: "mören", morph: "NOUN|Case=Gen", gloss: "of-the-river"}   # 沐漣訥
+    shm.1.4.3: {lemma: "teri'ün", morph: "NOUN|Case=Dat", gloss: "at-the-source"}   # 帖里兀捏
+    shm.1.4.4: {lemma: "Burqan Qaldun", morph: "PROPN|Case=Dat", gloss: "at-Burqan-Qaldun"}   # 不峏罕合勒敦納
+    shm.1.4.5: {lemma: "nutuγla-", morph: "VERB|VerbForm=Converb", gloss: "camping"}   # 嫰禿黑剌周
+    shm.1.5.1: {lemma: "töre-", morph: "VERB|Tense=Past|VerbForm=Part", gloss: "born"}   # 脫列克先
+    shm.1.5.2: {lemma: "Batačiγan", morph: "PROPN", gloss: "Batačiγan"}   # 巴塔赤罕
+    shm.1.5.3: {lemma: "a-", morph: "AUX|Tense=Past|Mood=Ind", gloss: "was"}   # 阿主兀
+    shm.2.1.1: {lemma: "Batačiγan", morph: "PROPN|Case=Gen", gloss: "of-Batačiγan"}   # 巴塔赤罕訥
+    shm.2.1.2: {lemma: "kö'ün", morph: "NOUN", gloss: "son"}   # 可溫
+    shm.2.1.3: {lemma: "Tamača", morph: "PROPN", gloss: "Tamača"}   # 塔馬察
+    shm.2.1.4: {lemma: "Tamača", morph: "PROPN|Case=Gen", gloss: "of-Tamača"}   # 塔馬察因
+    shm.2.1.5: {lemma: "kö'ün", morph: "NOUN", gloss: "son"}   # 可溫
+    shm.2.1.6: {lemma: "Qoričar Mergen", morph: "PROPN", gloss: "Qoričar-Mergen"}   # 豁里察兒篾兒干
+    shm.2.2.1: {lemma: "Qoričar Mergen", morph: "PROPN|Case=Gen", gloss: "of-Qoričar-Mergen"}   # 豁里察兒篾兒干訥
+    shm.2.2.2: {lemma: "kö'ün", morph: "NOUN", gloss: "son"}   # 可溫
+    shm.2.2.3: {lemma: "A'ujam Boro'ul", morph: "PROPN", gloss: "A'ujam-Boro'ul"}   # 阿兀站孛羅溫勒
+    shm.2.2.4: {lemma: "A'ujam Boro'ul", morph: "PROPN|Case=Gen", gloss: "of-A'ujam-Boro'ul"}   # 阿兀站孛羅兀侖
+    shm.2.2.5: {lemma: "kö'ün", morph: "NOUN", gloss: "son"}   # 可溫
+    shm.2.3.1: {lemma: "Sali Qača'u", morph: "PROPN", gloss: "Sali-Qača'u"}   # 撒里合察兀
+    shm.2.3.2: {lemma: "Sali Qača'u", morph: "PROPN|Case=Gen", gloss: "of-Sali-Qača'u"}   # 撒里合察兀因
+    shm.2.3.3: {lemma: "kö'ün", morph: "NOUN", gloss: "son"}   # 可溫
+    shm.2.3.4: {lemma: "Yeke Nidün", morph: "PROPN", gloss: "Yeke-Nidün"}   # 也客你敦
+    shm.2.3.5: {lemma: "Yeke Nidün", morph: "PROPN|Case=Gen", gloss: "of-Yeke-Nidün"}   # 也客你敦訥
+    shm.2.3.6: {lemma: "kö'ün", morph: "NOUN", gloss: "son"}   # 可溫
+    shm.2.3.7: {lemma: "Simsoči", morph: "PROPN", gloss: "Simsoči"}   # 撏鎻赤
+    shm.2.4.1: {lemma: "Simsoči", morph: "PROPN|Case=Gen", gloss: "of-Simsoči"}   # 撏鎻赤因
+    shm.2.4.2: {lemma: "kö'ün", morph: "NOUN", gloss: "son"}   # 可溫
+    shm.2.4.3: {lemma: "Qarču", morph: "PROPN", gloss: "Qarču"}   # 合兒出
+    shm.3.1.1: {lemma: "Qarču", morph: "PROPN|Case=Gen", gloss: "of-Qarču"}   # 合兒出因
+    shm.3.1.2: {lemma: "kö'ün", morph: "NOUN", gloss: "son"}   # 可溫
+    shm.3.1.3: {lemma: "Borjigidai Mergen", morph: "PROPN", gloss: "Borjigidai-Mergen"}   # 孛兒只吉歹篾兒干
+    shm.3.1.4: {lemma: "Mongγoljin Qo'a", morph: "PROPN", gloss: "Mongγoljin-Qo'a"}   # 忙豁勤眞豁阿
+    shm.3.1.5: {lemma: "gergeitü", morph: "ADJ", gloss: "wife-having"}   # 格兒該禿
+    shm.3.1.6: {lemma: "a-", morph: "AUX|Tense=Past|Mood=Ind", gloss: "was"}   # 阿主兀
+    shm.3.2.1: {lemma: "Borjigidai Mergen", morph: "PROPN|Case=Gen", gloss: "of-Borjigidai-Mergen"}   # 孛兒只吉歹篾兒干訥
+    shm.3.2.2: {lemma: "kö'ün", morph: "NOUN", gloss: "son"}   # 可溫
+    shm.3.2.3: {lemma: "Toroγoljin Bayan", morph: "PROPN", gloss: "Toroγoljin-Bayan"}   # 脫羅豁勒眞伯顏
+    shm.3.2.4: {lemma: "Boroγčin Qo'a", morph: "PROPN", gloss: "Boroγčin-Qo'a"}   # 孛羅黑臣豁阿
+    shm.3.2.5: {lemma: "gergeitü", morph: "ADJ", gloss: "wife-having"}   # 格兒該禿
+    shm.3.3.1: {lemma: "Boroldai Suyalbi", morph: "PROPN", gloss: "Boroldai-Suyalbi"}   # 孛羅勒歹速牙勒必
+    shm.3.3.2: {lemma: "jala'utu", morph: "ADJ", gloss: "young-servant-having"}   # 札剌兀禿
+    shm.3.3.3: {lemma: "Dayir", morph: "PROPN", gloss: "Dayir"}   # 荅驛兒
+    shm.3.3.4: {lemma: "Boro", morph: "PROPN", gloss: "Boro"}   # 孛騾
+    shm.3.3.5: {lemma: "qoyar", morph: "NUM", gloss: "two"}   # 豁牙兒
+    shm.3.3.6: {lemma: "külü'üd", morph: "NOUN|Number=Plur", gloss: "fine-steeds"}   # 曲騄兀惕
+    shm.3.3.7: {lemma: "aγtastu", morph: "ADJ", gloss: "geldings-having"}   # 阿黑𩥑思禿
+    shm.3.4.1: {lemma: "bü-", morph: "AUX|Tense=Past|Mood=Ind", gloss: "he-was"}   # 不列額
+    shm.3.4.2: {lemma: "Toroγoljin", morph: "PROPN|Case=Gen", gloss: "of-Toroγoljin"}   # 脫羅豁勒眞訥
+    shm.3.4.3: {lemma: "kö'ün", morph: "NOUN", gloss: "son"}   # 可溫
+    shm.3.4.4: {lemma: "Duwa Soqor", morph: "PROPN", gloss: "Duwa-Soqor"}   # 都蛙鎻豁兒
+    shm.3.4.5: {lemma: "Dobun Mergen", morph: "PROPN", gloss: "Dobun-Mergen"}   # 朶奔篾兒干
+    shm.3.5.1: {lemma: "qoyar", morph: "NUM", gloss: "two"}   # 豁牙兒
+    shm.3.5.2: {lemma: "bü-", morph: "AUX|Tense=Past|Mood=Ind", gloss: "were"}   # 不列額
+    shm.4.1.1: {lemma: "Duwa Soqor", morph: "PROPN", gloss: "Duwa-Soqor"}   # 都蛙鎻豁兒
+    shm.4.1.2: {lemma: "manglai", morph: "NOUN", gloss: "forehead"}   # 莽來
+    shm.4.1.3: {lemma: "dumda", morph: "NOUN", gloss: "middle"}   # 敦荅
+    shm.4.1.4: {lemma: "qaγča", morph: "ADJ", gloss: "single"}   # 合黑察
+    shm.4.1.5: {lemma: "nidütü", morph: "ADJ", gloss: "eye-having"}   # 你都禿
+    shm.4.1.6: {lemma: "qurban", morph: "NUM", gloss: "three"}   # 忽兒班
+    shm.4.1.7: {lemma: "ne'üri", morph: "NOUN|Number=Plur", gloss: "stages-of-migration"}   # 捏兀里惕
+    shm.4.1.8: {lemma: "qajar", morph: "NOUN|Case=Dat", gloss: "at-land"}   # 合札剌
+    shm.4.2.1: {lemma: "qara-", morph: "VERB|Tense=Pres|VerbForm=Part", gloss: "looking-out"}   # 合𥈙忽
+    shm.4.2.2: {lemma: "bü-", morph: "AUX|Tense=Past|Mood=Ind", gloss: "he-was"}   # 不列額
+    shm.5.1.1: {lemma: "nigen", morph: "NUM", gloss: "one"}   # 你刊
+    shm.5.1.2: {lemma: "üdür", morph: "NOUN", gloss: "day"}   # 兀都兒
+    shm.5.1.3: {lemma: "Duwa Soqor", morph: "PROPN", gloss: "Duwa-Soqor"}   # 都蛙鎻豁兒
+    shm.5.1.4: {lemma: "Dobun Mergen", morph: "PROPN", gloss: "Dobun-Mergen"}   # 朶奔篾兒干
+    shm.5.1.5: {lemma: "de'ü", morph: "NOUN|Case=Com|Reflex=Yes", gloss: "with-his-own-younger-brother"}   # 迭兀魯額別延
+    shm.5.1.6: {lemma: "Burqan Qaldun", morph: "PROPN", gloss: "Burqan-Qaldun"}   # 不峏罕(合)勒敦
+    shm.5.2.1: {lemma: "de'ere", morph: "ADP", gloss: "upon"}   # 迭額列
+    shm.5.2.2: {lemma: "qar-", morph: "VERB|Tense=Past|Mood=Ind", gloss: "climbed"}   # 合兒罷
+    shm.5.2.3: {lemma: "Duwa Soqor", morph: "PROPN", gloss: "Duwa-Soqor"}   # 都蛙鎻豁兒
+    shm.5.2.4: {lemma: "Burqan Qaldun", morph: "PROPN", gloss: "Burqan-Qaldun"}   # 不峏罕(合)勒敦
+    shm.5.2.5: {lemma: "de'ere", morph: "ADP|Case=Abl", gloss: "from-upon"}   # 迭額列址
+    shm.5.2.6: {lemma: "qara-", morph: "VERB|VerbForm=Converb", gloss: "looking"}   # 合𥈙周
+    shm.5.3.1: {lemma: "Tünggelig", morph: "PROPN", gloss: "Tünggelig"}   # 統格黎克
+    shm.5.3.2: {lemma: "qoroqan", morph: "NOUN", gloss: "stream"}   # 豁羅罕
+    shm.5.3.3: {lemma: "huru'u", morph: "ADP", gloss: "down-along"}   # 忽魯兀
+    shm.5.3.4: {lemma: "nigen", morph: "NUM", gloss: "one"}   # 你刊
+    shm.5.3.5: {lemma: "böleg", morph: "NOUN", gloss: "group"}   # 孛𪭺克
+    shm.5.3.6: {lemma: "irgen", morph: "NOUN", gloss: "people"}   # 亦兒堅
+    shm.5.3.7: {lemma: "ne'ü-", morph: "VERB|VerbForm=Converb", gloss: "migrating"}   # 耨兀周
+    shm.5.3.8: {lemma: "oro-", morph: "VERB|VerbForm=Converb", gloss: "entering"}   # 斡羅周
+    shm.5.4.1: {lemma: "ayis-", morph: "VERB|Tense=Pres|VerbForm=Part|Case=Acc", gloss: "coming"}   # 阿亦速忽冝
+    shm.5.4.2: {lemma: "qara-", morph: "VERB|VerbForm=Converb", gloss: "looking"}   # 合𥈙周
+    shm.5.4.3: {lemma: "üje-", morph: "VERB|VerbForm=Converb", gloss: "seeing"}   # 兀者周
+    shm.6.1.1: {lemma: "ügüle-", morph: "VERB|VerbForm=Converb", gloss: "saying"}   # 嗚詁列論
+    shm.6.1.2: {lemma: "tede", morph: "PRON|PronType=Dem|Number=Plur", gloss: "those"}   # 帖迭
+    shm.6.1.3: {lemma: "ne'ü-", morph: "VERB|VerbForm=Converb", gloss: "migrating"}   # 耨兀周
+    shm.6.1.4: {lemma: "ayis-", morph: "VERB|Tense=Pres|VerbForm=Part", gloss: "coming"}   # 阿亦速渾
+    shm.6.1.5: {lemma: "irgen", morph: "NOUN|Case=Gen", gloss: "of-people"}   # 亦兒堅訥
+    shm.6.1.6: {lemma: "dotora", morph: "ADP", gloss: "among"}   # 朶脫剌
+    shm.6.2.1: {lemma: "nigen", morph: "NUM", gloss: "one"}   # 你刊
+    shm.6.2.2: {lemma: "qara'utai", morph: "ADJ", gloss: "black-covered"}   # 合剌兀台
+    shm.6.2.3: {lemma: "tergen", morph: "NOUN|Case=Gen", gloss: "of-cart"}   # 帖兒格訥
+    shm.6.2.4: {lemma: "öljige", morph: "NOUN|Case=Dat", gloss: "at-the-front"}   # 完勒只格迭
+    shm.6.2.5: {lemma: "nigen", morph: "NUM", gloss: "one"}   # 你刊
+    shm.6.2.6: {lemma: "ökin", morph: "NOUN", gloss: "girl"}   # 斡勤
+    shm.6.2.7: {lemma: "sayin", morph: "ADJ", gloss: "good"}   # 撒因
+    shm.6.2.8: {lemma: "bü-", morph: "AUX|Tense=Pres|Mood=Ind", gloss: "there-is"}   # 備由
+    shm.6.2.9: {lemma: "kü'ün", morph: "NOUN|Case=Dat", gloss: "to-a-person"}   # 古溫捏
+    shm.6.2.10: {lemma: "ese", morph: "PART|Polarity=Neg", gloss: "not"}   # 額薛
+    shm.6.3.1: {lemma: "ög-", morph: "VERB|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "given"}   # 斡克帖克先
+    shm.6.3.2: {lemma: "bö-", morph: "AUX|VerbForm=Converb|Mood=Cnd", gloss: "if-she-is"}   # 孛額速
+    shm.6.3.3: {lemma: "Dobun Mergen", morph: "PROPN", gloss: "Dobun-Mergen"}   # 朶奔篾兒干
+    shm.6.3.4: {lemma: "de'ü", morph: "NOUN|Case=Dat|Reflex=Yes", gloss: "for-my-own-younger-brother"}   # 迭兀迭延
+    shm.6.3.5: {lemma: "či", morph: "PRON|Person=2|Case=Dat", gloss: "for-you"}   # 赤馬荅
+    shm.6.3.6: {lemma: "quyu-", morph: "VERB|Person=1|Mood=Voluntative", gloss: "let-me-ask"}   # 忽余牙
+    shm.6.3.7: {lemma: "ke'e-", morph: "VERB|VerbForm=Converb", gloss: "saying"}   # 客額周
+    shm.6.4.1: {lemma: "Dobun Mergen", morph: "PROPN", gloss: "Dobun-Mergen"}   # 朶奔篾兒干
+    shm.6.4.2: {lemma: "de'ü", morph: "NOUN|Case=Acc|Reflex=Yes", gloss: "his-own-younger-brother"}   # 迭兀余延
+    shm.6.4.3: {lemma: "üje-", morph: "VERB|VerbForm=Converb|Mood=Purposive", gloss: "to-see"}   # 兀者列
+    shm.6.4.4: {lemma: "ile-", morph: "VERB|Tense=Past|Mood=Ind", gloss: "he-sent"}   # 亦列罷
+    shm.7.1.1: {lemma: "Dobun Mergen", morph: "PROPN", gloss: "Dobun-Mergen"}   # 朶奔篾兒干
+    shm.7.1.2: {lemma: "tede", morph: "PRON|PronType=Dem|Number=Plur", gloss: "those"}   # 帖迭
+    shm.7.1.3: {lemma: "irgen", morph: "NOUN|Case=Dat", gloss: "to-the-people"}   # 亦兒堅都兒
+    shm.7.1.4: {lemma: "kürü-", morph: "VERB|VerbForm=Converb|Mood=Cnd", gloss: "when-he-reached"}   # 古魯額速
+    shm.7.1.5: {lemma: "ünen", morph: "ADV", gloss: "truly-indeed"}   # 兀年古
+    shm.7.1.6: {lemma: "qo'a", morph: "ADJ", gloss: "beautiful"}   # 豁阿
+    shm.7.1.7: {lemma: "sayin", morph: "ADJ", gloss: "good"}   # 撒因
+    shm.7.2.1: {lemma: "aldar", morph: "NOUN", gloss: "fame"}   # 阿勒荅兒
+    shm.7.2.2: {lemma: "nere", morph: "NOUN", gloss: "name"}   # 捏列
+    shm.7.2.3: {lemma: "yeketei", morph: "ADJ", gloss: "great-having"}   # 也客台
+    shm.7.2.4: {lemma: "Alan Qo'a", morph: "PROPN", gloss: "Alan-Qo'a"}   # 阿闌豁阿
+    shm.7.2.5: {lemma: "neretei", morph: "ADJ", gloss: "named"}   # 捏列台
+    shm.7.2.6: {lemma: "kü'ün", morph: "NOUN|Case=Dat", gloss: "to-a-person"}   # 古溫捏
+    shm.7.2.7: {lemma: "ber", morph: "PART", gloss: "even"}   # 別兒
+    shm.7.2.8: {lemma: "ög-", morph: "VERB|VerbForm=Part|Voice=Pass", gloss: "given"}   # 斡克帖埃
+    shm.7.2.9: {lemma: "üdü'üi", morph: "PART|Polarity=Neg", gloss: "not-yet"}   # 兀都爲
+    shm.7.3.1: {lemma: "ökin", morph: "NOUN", gloss: "girl"}   # 斡勤
+    shm.7.3.2: {lemma: "a-", morph: "AUX|Tense=Past|Mood=Ind", gloss: "she-was"}   # 阿主兀
+    shm.8.1.1: {lemma: "tede", morph: "PRON|PronType=Dem|Number=Plur", gloss: "those"}   # 帖迭
+    shm.8.1.2: {lemma: "böleg", morph: "NOUN", gloss: "group"}   # 孛𪭺克
+    shm.8.1.3: {lemma: "irgen", morph: "NOUN", gloss: "people"}   # 亦兒堅
+    shm.8.1.4: {lemma: "ber", morph: "PART", gloss: "as-for"}   # 別兒
+    shm.8.1.5: {lemma: "Köl Barγujin", morph: "PROPN", gloss: "Köl-Barγujin"}   # 闊勒巴兒忽眞
+    shm.8.1.6: {lemma: "tögüm", morph: "NOUN|Case=Gen", gloss: "of-the-hollow"}   # 脫古門
+    shm.8.1.7: {lemma: "ejen", morph: "NOUN", gloss: "lord"}   # 額氊
+    shm.8.2.1: {lemma: "Barγudai Mergen", morph: "PROPN|Case=Gen", gloss: "of-Barγudai-Mergen"}   # 巴兒忽歹篾兒干訥
+    shm.8.2.2: {lemma: "ökin", morph: "NOUN", gloss: "daughter"}   # 斡勤
+    shm.8.2.3: {lemma: "Barγujin Qo'a", morph: "PROPN", gloss: "Barγujin-Qo'a"}   # 巴兒忽眞豁阿
+    shm.8.2.4: {lemma: "neretei", morph: "ADJ", gloss: "named"}   # 捏列台
+    shm.8.2.5: {lemma: "ökin", morph: "NOUN|Case=Acc", gloss: "daughter"}   # 斡勤泥
+    shm.8.2.6: {lemma: "Qori Tumad", morph: "PROPN|Case=Gen", gloss: "of-the-Qori-Tumad"}   # 豁里禿馬敦
+    shm.8.2.7: {lemma: "noyan", morph: "NOUN", gloss: "noyan"}   # 那顏
+    shm.8.3.1: {lemma: "Qorilartai Mergen", morph: "PROPN|Case=Dat", gloss: "to-Qorilartai-Mergen"}   # 豁里剌兒台篾兒干捏
+    shm.8.3.2: {lemma: "ög-", morph: "VERB|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "given"}   # 斡克迭克先
+    shm.8.3.3: {lemma: "a-", morph: "AUX|Tense=Past|Mood=Ind", gloss: "was"}   # 阿主兀
+    shm.8.3.4: {lemma: "Qori Tumad", morph: "PROPN|Case=Gen", gloss: "of-the-Qori-Tumad"}   # 豁里禿馬敦
+    shm.8.3.5: {lemma: "qajar", morph: "NOUN|Case=Dat", gloss: "in-the-land"}   # 合札剌
+    shm.8.4.1: {lemma: "Ariγ Usun", morph: "PROPN|Case=Dat", gloss: "at-Ariγ-Usun"}   # 阿里黑兀孫納
+    shm.8.4.2: {lemma: "Qorilartai Mergen", morph: "PROPN|Case=Gen", gloss: "of-Qorilartai-Mergen"}   # 豁里剌兒台篾兒干訥
+    shm.8.4.3: {lemma: "Barγujin Qo'a", morph: "PROPN|Case=Abl", gloss: "from-Barγujin-Qo'a"}   # 巴兒忽眞豁阿察
+    shm.8.5.1: {lemma: "töre-", morph: "VERB|Tense=Past|VerbForm=Part", gloss: "born"}   # 脫列克先
+    shm.8.5.2: {lemma: "Alan Qo'a", morph: "PROPN", gloss: "Alan-Qo'a"}   # 阿闌豁阿
+    shm.8.5.3: {lemma: "neretei", morph: "ADJ", gloss: "named"}   # 捏列台
+    shm.8.5.4: {lemma: "ökin", morph: "NOUN", gloss: "girl"}   # 斡勤
+    shm.8.5.5: {lemma: "tere", morph: "PRON|PronType=Dem", gloss: "that-one"}   # 帖列
+    shm.9.1.1: {lemma: "Qorilartai Mergen", morph: "PROPN", gloss: "Qorilartai-Mergen"}   # 豁里剌兒台篾兒干
+    shm.9.1.2: {lemma: "Qori Tumad", morph: "PROPN|Case=Gen", gloss: "of-the-Qori-Tumad"}   # 豁里禿馬敦
+    shm.9.1.3: {lemma: "qajar", morph: "NOUN|Case=Dat|Reflex=Yes", gloss: "in-their-own-land"}   # 合札兒禿里顏
+    shm.9.1.4: {lemma: "buluγan", morph: "NOUN", gloss: "sable"}   # 不𪖌罕
+    shm.9.1.5: {lemma: "keremün", morph: "NOUN", gloss: "squirrel"}   # 客列門
+    shm.9.2.1: {lemma: "göre'etei", morph: "ADJ", gloss: "game-having"}   # 戈劣額台
+    shm.9.2.2: {lemma: "qajar", morph: "NOUN|Case=Acc|Reflex=Yes", gloss: "their-own-land"}   # 合札里顏
+    shm.9.2.3: {lemma: "qorilaldu-", morph: "VERB|VerbForm=Converb|Voice=Reciprocal", gloss: "forbidding-one-another"}   # 豁里剌勒都周
+    shm.9.2.4: {lemma: "ma'ulaldu-", morph: "VERB|VerbForm=Converb|Voice=Reciprocal", gloss: "falling-out"}   # 卯兀剌勒都周
+    shm.9.3.1: {lemma: "Qorilar", morph: "PROPN", gloss: "Qorilar"}   # 豁里剌兒
+    shm.9.3.2: {lemma: "oboγtu", morph: "ADJ", gloss: "clan-name-having"}   # 斡孛黑圖
+    shm.9.3.3: {lemma: "bol-", morph: "VERB|VerbForm=Converb", gloss: "becoming"}   # 孛勒周
+    shm.9.3.4: {lemma: "Burqan Qaldun", morph: "PROPN|Case=Gen", gloss: "of-Burqan-Qaldun"}   # 不峏罕(合)勒敦訥
+    shm.9.3.5: {lemma: "göre'esün", morph: "NOUN", gloss: "game"}   # 戈劣額孫
+    shm.9.4.1: {lemma: "görü'üli", morph: "NOUN", gloss: "for-hunting"}   # 戈魯兀黎
+    shm.9.4.2: {lemma: "sayitu", morph: "ADJ", gloss: "good-having"}   # 撒亦禿
+    shm.9.4.3: {lemma: "qajar", morph: "NOUN", gloss: "land"}   # 合札兒
+    shm.9.4.4: {lemma: "sayin", morph: "ADJ", gloss: "good"}   # 撒因
+    shm.9.4.5: {lemma: "ke'e-", morph: "VERB|VerbForm=Converb", gloss: "saying"}   # 客延
+    shm.9.4.6: {lemma: "Burqan Qaldun", morph: "PROPN|Case=Gen", gloss: "of-Burqan-Qaldun"}   # 不峏罕合勒敦訥
+    shm.9.4.7: {lemma: "ejen", morph: "NOUN|Number=Plur", gloss: "lords"}   # 額者惕
+    shm.9.5.1: {lemma: "Burqan Bosqaγsan", morph: "PROPN", gloss: "Burqan-Bosqaγsan"}   # 不峏罕孛思合黑三
+    shm.9.5.2: {lemma: "Sinči Bayan", morph: "PROPN", gloss: "Sinči-Bayan"}   # 哂赤伯顏
+    shm.9.5.3: {lemma: "Uriangqai", morph: "PROPN|Case=Dat", gloss: "to-the-Uriangqai"}   # 兀良孩途兒
+    shm.9.5.4: {lemma: "ne'ü-", morph: "VERB|VerbForm=Converb", gloss: "migrating"}   # 耨兀周
+    shm.9.5.5: {lemma: "ayis-", morph: "VERB|VerbForm=Converb", gloss: "coming"}   # 阿亦孫
+    shm.9.5.6: {lemma: "a-", morph: "AUX|Tense=Past|Mood=Ind", gloss: "he-was"}   # 阿主兀
+    shm.9.6.1: {lemma: "Qori Tumad", morph: "PROPN|Case=Gen", gloss: "of-the-Qori-Tumad"}   # 豁里禿馬敦
+    shm.9.6.2: {lemma: "Qorilartai Mergen", morph: "PROPN|Case=Gen", gloss: "of-Qorilartai-Mergen"}   # 豁里剌兒台篾兒干訥
+    shm.9.6.3: {lemma: "ökin", morph: "NOUN", gloss: "daughter"}   # 斡勤
+    shm.9.6.4: {lemma: "Ariγ Usun", morph: "PROPN|Case=Dat", gloss: "at-Ariγ-Usun"}   # 阿里黑兀孫納
+    shm.9.7.1: {lemma: "töre-", morph: "VERB|Tense=Past|VerbForm=Part", gloss: "born"}   # 脫列克先
+    shm.9.7.2: {lemma: "Alan Qo'a", morph: "PROPN|Case=Acc", gloss: "Alan-Qo'a"}   # 阿闌豁阿冝
+    shm.9.7.3: {lemma: "tende", morph: "ADV", gloss: "there"}   # 田迭
+    shm.9.7.4: {lemma: "quyu-", morph: "VERB|VerbForm=Converb", gloss: "asking-for"}   # 忽余周
+    shm.9.7.5: {lemma: "Dobun Mergen", morph: "PROPN|Case=Gen", gloss: "of-Dobun-Mergen"}   # 朶奔篾兒干訥
+    shm.9.7.6: {lemma: "abu-", morph: "VERB|Tense=Past|VerbForm=Part", gloss: "taking"}   # 阿卜黑三
+    shm.9.8.1: {lemma: "yosun", morph: "NOUN", gloss: "way"}   # 約孫
+    shm.9.8.2: {lemma: "teyimü", morph: "ADV", gloss: "such"}   # 帖亦木
+    shm.10.1.1: {lemma: "Alan Qo'a", morph: "PROPN", gloss: "Alan-Qo'a"}   # 阿闌豁阿
+    shm.10.1.2: {lemma: "Dobun Mergen", morph: "PROPN|Case=Dat", gloss: "to-Dobun-Mergen"}   # 朶奔篾兒干途兒
+    shm.10.1.3: {lemma: "ire-", morph: "VERB|VerbForm=Converb", gloss: "coming"}   # 亦列周
+    shm.10.1.4: {lemma: "qoyar", morph: "NUM", gloss: "two"}   # 豁牙兒
+    shm.10.1.5: {lemma: "kö'ün", morph: "NOUN", gloss: "son"}   # 可溫
+    shm.10.1.6: {lemma: "töre'ül-", morph: "VERB|Tense=Past|Mood=Ind|Voice=Causative", gloss: "bore"}   # 脫列兀勒畢
+    shm.10.2.1: {lemma: "Bügünütei", morph: "PROPN", gloss: "Bügünütei"}   # 不古訥台
+    shm.10.2.2: {lemma: "Belgünütei", morph: "PROPN", gloss: "Belgünütei"}   # 別勒古訥台
+    shm.10.2.3: {lemma: "neretü", morph: "ADJ|Number=Plur", gloss: "named"}   # 捏列田
+    shm.10.2.4: {lemma: "bü-", morph: "AUX|Tense=Past|Mood=Ind", gloss: "they-were"}   # 不列額

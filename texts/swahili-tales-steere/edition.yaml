@@ -1,0 +1,377 @@
+# Weft edition of "Kisa cha mwewe na kunguru" (The Kites and the Crows), the whole tale, from
+# Edward Steere, Swahili Tales, as told by Natives of Zanzibar (London, 1870), pages 364 and 366.
+# Steere prints the Swahili on the left-hand page and his English on the right. The tale was told
+# to him by Hamisi wa Kayi (preface, p. ix).
+#
+# The text was transcribed from the page scans of the archive.org copy (swahilitalesast00steegoog)
+# and is checked two ways by `weft draft`:
+#   1. verbatim against the proofread transcription on multilingual Wikisource (verify_in, one
+#      page file per section; verify_strip removes the small-capitals template {{sc|...}} around
+#      the first word);
+#   2. against the archive.org OCR of the same scan (ocr_check; the sensor is line_checks in
+#      pipeline/weft/swahili.py, failure class edition-not-in-ocr). The sensor rejoins words broken
+#      at a line end and compares without spaces. Where the OCR misreads the scan, the token gives
+#      the OCR's reading (ocr); each was checked against the scan.
+# Steere's paragraphs are the sections. Weft divides them into lines at the sentence, and the
+# longest sentences at a clause.
+#
+#   t     the word as printed in 1870, punctuation attached (kunguru,)
+#   n     the modern standard Swahili form of the same word (hatta: hata, asikari: askari,
+#         Muungu: Mungu, mgine: mwingine). Spelling and word shape only; grammar is kept
+#         (Sultani ya, naliwaambia). The page shows it as "Modern standard form"; the modern
+#         sound scheme is computed from it, the 1870 scheme from t
+#   glue  no space follows in the print (akawaambia—tukimbie)
+#   ocr   the OCR's reading of this token where it differs from the scan
+#   ipa   {scheme: ipa} override for this occurrence
+work: swahili-tales-steere
+joiner: " "
+verify_strip: '\{\{sc\||\}\}'
+ocr_check:
+  file: sources/steere1870-ocr.txt
+sections:
+  - id: "1"
+    title: "Paragraph 1"
+    verify_in: sources/ws-page364.txt
+    lines:
+      - tokens:
+        - {t: "Aliondoka", n: "aliondoka", ocr: "Aliondoea"}
+        - {t: "Sultani", n: "sultani"}
+        - {t: "ya", n: "ya"}
+        - {t: "kunguru,", n: "kunguru", ocr: "knngnra,"}
+        - {t: "akampelekea", n: "akampelekea"}
+        - {t: "waraka", n: "waraka"}
+        - {t: "Sultani", n: "sultani", ocr: "Saltan!"}
+        - {t: "ya", n: "ya"}
+        - {t: "mwewe,", n: "mwewe"}
+        - {t: "akamwambia,", n: "akamwambia"}
+        - {t: "nataka", n: "nataka"}
+        - {t: "uwe", n: "uwe"}
+        - {t: "asikari", n: "askari"}
+        - {t: "yangu.", n: "yangu"}
+      - tokens:
+        - {t: "Akamwambia", n: "akamwambia"}
+        - {t: "sikubali.", n: "sikubali"}
+      - tokens:
+        - {t: "Akamwambia,", n: "akamwambia"}
+        - {t: "kama", n: "kama"}
+        - {t: "hukubali", n: "hukubali"}
+        - {t: "tutapigana,", n: "tutapigana"}
+        - {t: "mimi", n: "mimi"}
+        - {t: "nawe.", n: "nawe"}
+      - tokens:
+        - {t: "Akamwambia,", n: "akamwambia"}
+        - {t: "na", n: "na"}
+        - {t: "tupigane,", n: "tupigane", ocr: "tnpigane,"}
+        - {t: "ukinishinda", n: "ukinishinda", ocr: "ukinisbinda"}
+        - {t: "nitakufuata,", n: "nitakufuata"}
+        - {t: "nikikushinda", n: "nikikushinda", ocr: "nikikusbinda"}
+        - {t: "weye", n: "wewe"}
+        - {t: "utanifuata.", n: "utanifuata"}
+  - id: "2"
+    title: "Paragraph 2"
+    verify_in: sources/ws-page364.txt
+    lines:
+      - tokens:
+        - {t: "Wakapigana,", n: "wakapigana"}
+        - {t: "kunguru", n: "kunguru", ocr: "knngiirn"}
+        - {t: "wakashindwa.", n: "wakashindwa", ocr: "wakasbindwa."}
+      - tokens:
+        - {t: "Akaondoka", n: "akaondoka"}
+        - {t: "mzee", n: "mzee"}
+        - {t: "mmoja,", n: "mmoja"}
+        - {t: "akawaambia—", n: "akawaambia", glue: true}
+        - {t: "tukimbie.", n: "tukimbie"}
+      - tokens:
+        - {t: "Wakakimbia", n: "wakakimbia"}
+        - {t: "katika", n: "katika"}
+        - {t: "mji", n: "mji"}
+        - {t: "wao,", n: "wao"}
+        - {t: "wakaenenda", n: "wakaenenda"}
+        - {t: "mji", n: "mji"}
+        - {t: "mgine.", n: "mwingine"}
+      - tokens:
+        - {t: "Mwewe", n: "mwewe"}
+        - {t: "walipokuja", n: "walipokuja"}
+        - {t: "wasimwone", n: "wasimwone"}
+        - {t: "mtu,", n: "mtu"}
+        - {t: "wakakaa", n: "wakakaa"}
+        - {t: "katika", n: "katika"}
+        - {t: "mji", n: "mji"}
+        - {t: "wa", n: "wa"}
+        - {t: "kunguru.", n: "kunguru", ocr: "kungaru."}
+  - id: "3"
+    title: "Paragraph 3"
+    verify_in: sources/ws-page364.txt
+    lines:
+      - tokens:
+        - {t: "Hatta", n: "hata"}
+        - {t: "siku", n: "siku"}
+        - {t: "nyingi", n: "nyingi"}
+        - {t: "kunguru", n: "kunguru"}
+        - {t: "wakafanya", n: "wakafanya"}
+        - {t: "shauri.", n: "shauri", ocr: "sbanri."}
+      - tokens:
+        - {t: "Akaondoka", n: "akaondoka"}
+        - {t: "mzee,", n: "mzee"}
+        - {t: "akasema,", n: "akasema"}
+        - {t: "ninyonyoeni", n: "ninyonyoeni"}
+        - {t: "manyoya", n: "manyoya"}
+        - {t: "mkanitupe", n: "mkanitupe"}
+        - {t: "mjini", n: "mjini"}
+        - {t: "mwa", n: "mwa"}
+        - {t: "mwewe.", n: "mwewe"}
+      - tokens:
+        - {t: "Wakamnyonyoa,", n: "wakamnyonyoa", ocr: "Wakanmyonyoa,"}
+        - {t: "wakaenda,", n: "wakaenda"}
+        - {t: "wakamtupa.", n: "wakamtupa", ocr: "wakamtnpa."}
+  - id: "4"
+    title: "Paragraph 4"
+    verify_in: sources/ws-page364.txt
+    lines:
+      - tokens:
+        - {t: "Walipopita", n: "walipopita"}
+        - {t: "mwewe,", n: "mwewe"}
+        - {t: "wakamwona,", n: "wakamwona"}
+        - {t: "wakamwambia,", n: "wakamwambia"}
+        - {t: "wafanya", n: "wafanya"}
+        - {t: "nini", n: "nini"}
+        - {t: "huku", n: "huku", ocr: "buku"}
+        - {t: "mjini", n: "mjini"}
+        - {t: "kwetu?", n: "kwetu"}
+      - tokens:
+        - {t: "Akawaambia,", n: "akawaambia"}
+        - {t: "wenzangu", n: "wenzangu", ocr: "wenzanga"}
+        - {t: "wamenipiga", n: "wamenipiga"}
+        - {t: "wamenitoa", n: "wamenitoa"}
+        - {t: "mji", n: "mji"}
+        - {t: "kwa", n: "kwa"}
+        - {t: "sababu", n: "sababu"}
+        - {t: "nimewaambia,", n: "nimewaambia"}
+        - {t: "mfuateni", n: "mfuateni", ocr: "mfaateni"}
+        - {t: "mwewe.", n: "mwewe"}
+  - id: "5"
+    title: "Paragraph 5"
+    verify_in: sources/ws-page364.txt
+    lines:
+      - tokens:
+        - {t: "Wale", n: "wale"}
+        - {t: "wakamchukua,", n: "wakamchukua", ocr: "wakamcbukua,"}
+        - {t: "wakaenda", n: "wakaenda"}
+        - {t: "naye", n: "naye"}
+        - {t: "kwa", n: "kwa"}
+        - {t: "Sultani", n: "sultani", ocr: "Saltan!"}
+        - {t: "yao,", n: "yao"}
+      - tokens:
+        - {t: "wakamwambia,", n: "wakamwambia"}
+        - {t: "huyu", n: "huyu", ocr: "baya"}
+        - {t: "kunguru", n: "kunguru", ocr: "kangara"}
+        - {t: "tumemwokota,", n: "tumemwokota", ocr: "tamemwokota,"}
+        - {t: "naye", n: "naye"}
+        - {t: "mwulize,", n: "muulize", ocr: "mwolize,"}
+        - {t: "atasema", n: "atasema"}
+        - {t: "maneno", n: "maneno"}
+        - {t: "yake.", n: "yake"}
+  - id: "6"
+    title: "Paragraph 6"
+    verify_in: sources/ws-page366.txt
+    lines:
+      - tokens:
+        - {t: "Sultani", n: "sultani", ocr: "Saltani"}
+        - {t: "akamwuliza,", n: "akamuuliza"}
+        - {t: "akamwambia,", n: "akamwambia"}
+        - {t: "wenzangu", n: "wenzangu"}
+        - {t: "wamenipiga,", n: "wamenipiga"}
+        - {t: "wamenitoa", n: "wamenitoa"}
+        - {t: "mji", n: "mji"}
+        - {t: "kwa", n: "kwa"}
+        - {t: "sababu", n: "sababu"}
+        - {t: "naliwaambia", n: "naliwaambia"}
+        - {t: "kweli,", n: "kweli"}
+      - tokens:
+        - {t: "mfuateni", n: "mfuateni"}
+        - {t: "mwewe,", n: "mwewe"}
+        - {t: "ndio", n: "ndio"}
+        - {t: "Sultani,", n: "sultani"}
+        - {t: "wakanipiga.", n: "wakanipiga"}
+      - tokens:
+        - {t: "Sultani", n: "sultani", ocr: "Saltani"}
+        - {t: "ya", n: "ya"}
+        - {t: "mwewe", n: "mwewe"}
+        - {t: "akamwambia,", n: "akamwambia"}
+        - {t: "kaa", n: "kaa"}
+        - {t: "kitako", n: "kitako"}
+        - {t: "hapa.", n: "hapa"}
+  - id: "7"
+    title: "Paragraph 7"
+    verify_in: sources/ws-page366.txt
+    lines:
+      - tokens:
+        - {t: "Akakaa", n: "akakaa"}
+        - {t: "kitako", n: "kitako"}
+        - {t: "siku", n: "siku", ocr: "sika"}
+        - {t: "nyingi.", n: "nyingi"}
+      - tokens:
+        - {t: "Hatta", n: "hata"}
+        - {t: "siku", n: "siku", ocr: "sikn"}
+        - {t: "moja", n: "moja"}
+        - {t: "wakaenda", n: "wakaenda"}
+        - {t: "kanisani,", n: "kanisani"}
+        - {t: "nayee", n: "naye"}
+        - {t: "wakamchukua,", n: "wakamchukua", ocr: "wakamcbukna,"}
+        - {t: "wakasali", n: "wakasali"}
+        - {t: "pamoja,", n: "pamoja"}
+      - tokens:
+        - {t: "hatta", n: "hata"}
+        - {t: "walipotoka,", n: "walipotoka"}
+        - {t: "wakamwuliza,", n: "wakamuuliza"}
+        - {t: "sisi", n: "sisi"}
+        - {t: "na", n: "na"}
+        - {t: "ninyi,", n: "ninyi"}
+        - {t: "nani", n: "nani"}
+        - {t: "anaabudu", n: "anaabudu"}
+        - {t: "sana", n: "sana", ocr: "Sana"}
+        - {t: "Muungu?", n: "Mungu"}
+      - tokens:
+        - {t: "Akawaambia,", n: "akawaambia"}
+        - {t: "ninyi.", n: "ninyi"}
+  - id: "8"
+    title: "Paragraph 8"
+    verify_in: sources/ws-page366.txt
+    lines:
+      - tokens:
+        - {t: "Akakaa", n: "akakaa"}
+        - {t: "kitako", n: "kitako"}
+        - {t: "wakampenda", n: "wakampenda"}
+        - {t: "sana.", n: "sana"}
+      - tokens:
+        - {t: "Hatta", n: "hata"}
+        - {t: "siku", n: "siku", ocr: "sika"}
+        - {t: "kuu", n: "kuu", ocr: "kaa"}
+        - {t: "yao", n: "yao"}
+        - {t: "ikikaribia,", n: "ikikaribia"}
+        - {t: "akatoka", n: "akatoka"}
+        - {t: "usiku,", n: "usiku", ocr: "nsikn,"}
+        - {t: "akaenda,", n: "akaenda"}
+      - tokens:
+        - {t: "akawaambia", n: "akawaambia"}
+        - {t: "wenziwe,", n: "wenziwe"}
+        - {t: "kesho", n: "kesho"}
+        - {t: "watakwenda", n: "watakwenda"}
+        - {t: "kanisani", n: "kanisani"}
+        - {t: "wote,", n: "wote"}
+        - {t: "njooni", n: "njooni"}
+        - {t: "nje", n: "nje"}
+        - {t: "ya", n: "ya"}
+        - {t: "mlango", n: "mlango"}
+        - {t: "wa", n: "wa"}
+        - {t: "kanisa,", n: "kanisa"}
+        - {t: "mutie", n: "mtie"}
+        - {t: "moto.", n: "moto"}
+      - tokens:
+        - {t: "Wale", n: "wale"}
+        - {t: "wakatoka,", n: "wakatoka"}
+        - {t: "wakaenda", n: "wakaenda"}
+        - {t: "kutafuta", n: "kutafuta", ocr: "kntafata"}
+        - {t: "kuni", n: "kuni"}
+        - {t: "na", n: "na"}
+        - {t: "wangine", n: "wengine"}
+        - {t: "wakachukua", n: "wakachukua"}
+        - {t: "moto.", n: "moto"}
+  - id: "9"
+    title: "Paragraph 9"
+    verify_in: sources/ws-page366.txt
+    lines:
+      - tokens:
+        - {t: "Hatta", n: "hata"}
+        - {t: "assubui", n: "asubuhi"}
+        - {t: "wakaenda", n: "wakaenda"}
+        - {t: "zao", n: "zao"}
+        - {t: "kanisani,", n: "kanisani"}
+        - {t: "asisalie", n: "asisalie"}
+        - {t: "mtu", n: "mtu", ocr: "mta"}
+        - {t: "katika", n: "katika"}
+        - {t: "mji,", n: "mji"}
+        - {t: "ela", n: "ila"}
+        - {t: "yule", n: "yule"}
+        - {t: "mzee", n: "mzee"}
+        - {t: "kunguru.", n: "kunguru"}
+      - tokens:
+        - {t: "Wakamwambia,", n: "wakamwambia"}
+        - {t: "kwa", n: "kwa"}
+        - {t: "nini", n: "nini"}
+        - {t: "huenendi", n: "huenendi", ocr: "hnenendi"}
+        - {t: "kanisani", n: "kanisani"}
+        - {t: "leo?", n: "leo"}
+      - tokens:
+        - {t: "Akawaambia,", n: "akawaambia"}
+        - {t: "tumbo", n: "tumbo"}
+        - {t: "linaniuma", n: "linaniuma"}
+        - {t: "sana.", n: "sana"}
+      - tokens:
+        - {t: "Wakamwambia,", n: "wakamwambia"}
+        - {t: "bass.", n: "basi"}
+      - tokens:
+        - {t: "Akaenda,", n: "akaenda"}
+        - {t: "akawaita", n: "akawaita"}
+        - {t: "wenziwe.", n: "wenziwe"}
+      - tokens:
+        - {t: "Akawaambia,", n: "akawaambia"}
+        - {t: "wamekwisha", n: "wamekwisha", ocr: "wamekwisba"}
+        - {t: "kuingia", n: "kuingia"}
+        - {t: "kanisani", n: "kanisani"}
+        - {t: "wote.", n: "wote"}
+  - id: "10"
+    title: "Paragraph 10"
+    verify_in: sources/ws-page366.txt
+    lines:
+      - tokens:
+        - {t: "Wakaenda", n: "wakaenda"}
+        - {t: "wale,", n: "wale"}
+        - {t: "wakatia", n: "wakatia"}
+        - {t: "kuni", n: "kuni"}
+        - {t: "katika", n: "katika"}
+        - {t: "mlango", n: "mlango"}
+        - {t: "wa", n: "wa"}
+        - {t: "kanisa,", n: "kanisa"}
+        - {t: "na", n: "na"}
+        - {t: "wangine", n: "wengine"}
+        - {t: "wakatia", n: "wakatia"}
+        - {t: "moto.", n: "moto"}
+      - tokens:
+        - {t: "Moto", n: "moto"}
+        - {t: "ukawaka.", n: "ukawaka"}
+      - tokens:
+        - {t: "Wakaona", n: "wakaona"}
+        - {t: "moshi", n: "moshi"}
+        - {t: "waingia", n: "waingia"}
+        - {t: "ndani", n: "ndani"}
+        - {t: "ya", n: "ya"}
+        - {t: "kanisa,", n: "kanisa"}
+        - {t: "wakakimbia", n: "wakakimbia", ocr: "wakaktmbia"}
+        - {t: "madirishani", n: "madirishani", ocr: "madirlshani"}
+      - tokens:
+        - {t: "na", n: "na"}
+        - {t: "wangine", n: "wengine"}
+        - {t: "wakafa", n: "wakafa"}
+        - {t: "wengi", n: "wengi"}
+        - {t: "sana", n: "sana"}
+        - {t: "na", n: "na"}
+        - {t: "Sultani", n: "sultani"}
+        - {t: "pia", n: "pia"}
+        - {t: "akafa.", n: "akafa"}
+      - tokens:
+        - {t: "Kunguru", n: "kunguru"}
+        - {t: "wakatwaa", n: "wakatwaa"}
+        - {t: "mji.", n: "mji"}
+  - id: "11"
+    title: "Paragraph 11"
+    verify_in: sources/ws-page366.txt
+    lines:
+      - tokens:
+        - {t: "Wale", n: "wale"}
+        - {t: "waliobaki", n: "waliobaki", ocr: "wallobaki"}
+        - {t: "mwewe", n: "mwewe"}
+        - {t: "wakawakimbia", n: "wakawakimbia"}
+        - {t: "kunguru", n: "kunguru"}
+        - {t: "hatta", n: "hata"}
+        - {t: "leo.", n: "leo"}

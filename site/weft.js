@@ -21,7 +21,7 @@
   const LAYERS = [
     ...(D.lines.some((l) => l.tokens.some((t) => t.script)) ? [["script", D.work.script_label || "Script (runes)"]] : []),
     ["source", "Source text"],
-    ...(D.work.show_translit ? [["translit", D.work.translit_label || "Transliteration"]] : []), ["sound", "Sound"], ["gloss", "Gloss, word for word"],
+    ...(D.work.show_translit && D.lines.some((l) => l.tokens.some((t) => t.norm)) ? [["translit", D.work.translit_label || "Transliteration"]] : []), ["sound", "Sound"], ["gloss", "Gloss, word for word"],
     ...(D.lines.some((l) => l.reading) ? [["reading", D.work.reading_label || "Reading aloud, whole line"]] : []),
     ["metre", "Metre"], ["sense", "Translations"], ["notes", "Note markers"],
   ];
@@ -33,6 +33,7 @@
     ["--word-gap", "Space between words", 0.3, 3, 0.05, "rem", 1.1],
     ["--set-gap", "Space between line sets", 0.4, 5, 0.1, "rem", 2.4],
   ];
+  const plural = (w) => (/[^aeiou]y$/.test(w) ? w.slice(0, -1) + "ies" : w + "s");   // entry -> entries
   const STORE = "weft:" + D.work.work;
   document.body.classList.add("lang-" + D.work.language);
   const defaults = () => ({
@@ -105,7 +106,7 @@
         : (() => { // count numbered sections only: prose links (p0, p22) and headings are not stanzas
                    const all = [...new Set(D.lines.map((l) => l.stanza))], num = all.filter((c) => /^\d+$/.test(c));
                    const n = num.length || all.length, noun = D.work.section_noun || "section";
-                   return `${D.work.author} · ${n} ${noun}${n === 1 ? "" : "s"}`; })())
+                   return `${D.work.author} · ${n} ${n === 1 ? noun : plural(noun)}`; })())
     : STANZAS
     ? `${D.work.author} · stanzas ${ranges([...new Set(D.lines.map((l) => l.stanza))])}`
     : `${D.work.author} · ${shortRef(first.id)}–${shortRef(first.id).split(".")[0] === shortRef(last.id).split(".")[0] ? lineNo(last.id) : shortRef(last.id)}`;

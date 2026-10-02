@@ -77,7 +77,7 @@ server, so a page or the whole folder can be sent as an attachment.
 
 ## Status
 
-Fifty-one works built across twenty languages, oldest first in the library:
+Fifty-seven works built across twenty-four languages, oldest first in the library:
 
 | Work | Passage | Schemes | Translations |
 |---|---|---|---|
@@ -97,6 +97,7 @@ Fifty-one works built across twenty languages, oldest first in the library:
 | Yijing (I Ching), the Zhouyi | all 64 hexagrams: names, judgments and line statements; a three-coin casting panel | Old Chinese (Baxter-Sagart), Tang, Mandarin | Legge 1882; Wilhelm and Baynes 1950 cited |
 | Sunzi, The Art of War | chapter 1, Laying Plans | Old Chinese (Baxter-Sagart), Tang, Mandarin | Giles 1910, Calthrop 1908 |
 | Daodejing (Laozi) | chapters 1-2 | Old Chinese (Baxter-Sagart), Tang, Mandarin | Legge 1891, Chalmers 1868 |
+| The Gospel of Mark in Sahidic Coptic | 1:1-20 | Sahidic (approximate, 4th-5th c.), Bohairic church reading | Horner 1911 (from the Coptic), King James 1611 |
 | Epictetus, Enchiridion | 1.1-3 | Koine, restored, Erasmian | Long 1877, Higginson 1865 |
 | Marcus Aurelius, Meditations | Book 2, complete | Koine, restored, Erasmian | Long 1862, Casaubon 1634 |
 | Völuspá (Poetic Edda) | complete, stanzas 1-66 | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
@@ -111,7 +112,10 @@ Fifty-one works built across twenty languages, oldest first in the library:
 | Rubaiyat, quatrains attributed to Omar Khayyam | 6 quatrains | Early New Persian (about 1100), modern Persian | FitzGerald 1889, Heron-Allen 1899 |
 | Marco Polo, on Cipangu (Japan) | the whole chapter, F text | Franco-Italian: French of about 1300, and an Italian reader's reading | Yule 1903, Marsden 1818 |
 | Bayeux Tapestry, the embroidered captions | 24 scenes, Edward to the English in flight; a picture of each scene | Anglo-Norman Latin (about 1070), classical | Fowke 1898, Bruce 1856 (partial) |
+| The Rus' Primary Chronicle: the calling of the Varangians | annals 859-862 | Old East Slavic about 1100 (approximate), modern Russian reading | Cross 1930; Cross and Sherbowitz-Wetzor 1953 cited |
+| The charters of Saer de Quincy, earl of Winchester | two grants: Gask to Brackley Hospital (1218-19) and Duglyn to Cambuskenneth (c. 1207-14) | Anglo-Latin (England, early 13th c.), classical | the 1908 and 1872 editors' English abstracts, Weft editorial |
 | Magna Carta | chapters 39-40 | Anglo-Latin (England, 1215), classical | McKechnie 1905, Bell 1910 |
+| The Secret History of the Mongols | sections 1-10, the wolf and the doe to Alan Qo'a's sons; Ming transcription with its own word glosses | Middle Mongolian about 1250 (reconstructed) | Weft editorial, the Ming summary translation; de Rachewiltz 2015 cited |
 | Dante, Inferno 1 | the whole canto, 136 lines | Florentine (about 1307), modern Italian; lemma and form from UD Italian-Old | Longfellow 1867, Cary 1814 |
 | Columbus, letter of 1493 | the landfall and first description | Castilian of about 1492, modern Spanish | Major 1870, Quaritch 1893 |
 | Petrarch, Canzoniere 1 | sonnet, 14 lines | Florentine (about 1350), modern Italian | Nott in Bohn 1859, Higginson 1903; Auslander 1931 cited |
@@ -129,7 +133,9 @@ Fifty-one works built across twenty languages, oldest first in the library:
 | The Akō retainers' statement (the Forty-seven Rōnin) | the declaration of 1703 | Genroku Edo (1703), modern | Mitford 1871, Weft editorial |
 | Kant: What is Enlightenment? and the starry heavens | 1784 essay, opening; 1788 Critique of Practical Reason, conclusion | northern German before 1898, modern German | Richardson 1798, Abbott |
 | Science in Latin: Descartes, Newton | cogito (1644); laws of motion (1687) | as first read (French, English manner), classical | Veitch 1853, Motte 1729 |
+| Swahili tales from Zanzibar: The Kites and the Crows | the whole tale (Steere 1870) | Zanzibar Swahili about 1870, modern standard | Steere 1870 |
 | Nietzsche: the madman and Zarathustra's descent | Gay Science 125 (1882); Zarathustra, prologue 1 (1883) | northern German before 1898, modern German | Common 1909 and 1910, Tille 1896 |
+| General Act of the Berlin Conference | the preamble, chapter I (free trade in the Congo basin) and articles 34-35 (effective occupation) | diplomatic French of 1885, modern | Hertslet's Foreign Office translation, American Journal of International Law 1909 |
 | Haiku of Bashō | 9 haiku, 1680-1694 | Edo (1680s-90s), modern | Chamberlain 1902, Aston 1899, Hearn 1898 and 1900, Noguchi 1914; Yuasa 1966 cited |
 | Grettis saga | chapter 14, sentences 1-9 | Old Norse, modern Icelandic | Morris and Magnússon 1869, Hight 1914 |
 

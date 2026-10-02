@@ -1,0 +1,70 @@
+# Announce what a deploy published, on Bluesky, after the library is live.
+#
+# compose: decides whether this deploy is worth a post (a new work, a substantially updated
+#          work, or an `Announce:` commit trailer) and writes the exact post into the run summary.
+#          Minor pushes (README, docs, small fixes) end here, quietly, with no approval request.
+# post:    runs only when compose wrote a post, in the `announce` environment, which requires the
+#          owner's approval. The post is read in the summary first, then approved.
+# Kept out of pages.yml on purpose: that workflow cancels in-progress runs, which would cancel a
+# post still waiting for approval.
+name: Announce on Bluesky
+
+on:
+  workflow_run:
+    workflows: ["Library to GitHub Pages"]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  compose:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    outputs:
+      has_post: ${{ steps.compose.outputs.has_post }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          fetch-depth: 0
+      - name: Find the previous successful deploy
+        id: range
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          base=$(gh api "repos/${{ github.repository }}/actions/workflows/pages.yml/runs?branch=main&status=success&per_page=10" \
+                   --jq '[.workflow_runs[] | select(.id != ${{ github.event.workflow_run.id }})][0].head_sha // empty')
+          # First deploy with this workflow, or history rewritten: consider only this commit.
+          git cat-file -e "${base}^{commit}" 2>/dev/null || base=$(git rev-parse "${{ github.event.workflow_run.head_sha }}~1")
+          echo "base=$base" >> "$GITHUB_OUTPUT"
+      - name: Compose
+        id: compose
+        run: python3 .github/scripts/announce.py compose "${{ steps.range.outputs.base }}" "${{ github.event.workflow_run.head_sha }}" post.json
+      - uses: actions/upload-artifact@v4
+        if: steps.compose.outputs.has_post == 'true'
+        with:
+          name: post
+          path: post.json
+
+  post:
+    needs: compose
+    if: needs.compose.outputs.has_post == 'true'
+    runs-on: ubuntu-latest
+    environment: announce
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          sparse-checkout: .github/scripts
+      - uses: actions/download-artifact@v4
+        with:
+          name: post
+      - name: Post
+        env:
+          BLUESKY_IDENTIFIER: ${{ vars.BLUESKY_IDENTIFIER }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          DRY_RUN: ${{ vars.ANNOUNCE_DRY_RUN }}
+        run: python3 .github/scripts/announce.py send post.json

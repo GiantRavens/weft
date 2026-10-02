@@ -1,0 +1,23 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '6367'
+  - '6368'
+  - '6369'
+  - '6370'
+counts:
+  lines: 35
+  tokens: 253
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no openly licensed digital Laurentian text: the edition is Weft''s transcription of the 1926 printing, checked against an uncorrected OCR with declared corrections; Russian Wikisource carries only the
+  Hypatian copy (Библиотека литературы Древней Руси, 1997)'
+- 'no treebank: TOROT covers the chronicle but is CC BY-NC-SA; lemma, morphology and gloss are hand-annotated, draft'
+- 'the 1100 reading is reconstructed: the value of the jers, of ѣ and of г in Kiev, and the place of stress (hand-entered from Russian and Ukrainian) are its least certain points'
+- raised letters are lowered into the line in parentheses and abbreviation marks replaced by the letter they stand for (ни(х)); the titlo over numerals is not shown, because combining marks break on the
+  split web font; the expansions Полѧнѣ(х), Сѣверѣ(х) and находн(и)ци are editorial
+- letter numerals (the years and ·г·, three) are given as numbers in the sound row; the number words are not reconstructed
+- Cross's 1930 English follows a composite text in places (it adds the Ves among the tributaries and a beaver-skin to the tribute, and has Rurik in Novgorod); these differences are discussed in the notes

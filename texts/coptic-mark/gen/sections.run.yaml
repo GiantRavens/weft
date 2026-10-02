@@ -1,0 +1,21 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+counts:
+  lines: 20
+  tokens: 253
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no public-domain or openly licensed plain-text Sahidic Mark was found: Sahidica (the treebank''s text) is for academic use only, and the CrossWire ''Horner'' module does not reproduce Horner. The edition
+  is the CC BY-SA Sahidic Bible 2, whose editors print no supralinear strokes and no punctuation, so the syllabic vowel is supplied by rule and the line is the verse'
+- the verbatim check runs in weft.coptic (line_checks) because draft's verify_in reads only plain-text files and the SWORD module is compressed; its failure class is the same, edition-not-in-source
+- lemma and morphology come from the treebank's annotation of a different digital text; spelling differences (ⲙⲟⲓⲧ / ⲙⲟⲉⲓⲧ, ⲑ / ⲧϩ, ϯ / ⲧⲓ, abbreviated sacred names) are normalized before comparing, and
+  the remaining differences are reported as edition-differs-from-treebank
+- 'the sound row is an approximate reconstruction: letter values after Peust (1999), stress by rule for Egyptian words and by the Greek accent for Greek loanwords (an assumption), and each word is phonemized
+  alone'
+- the second scheme applies the modern church (Greco-Bohairic) letter values to Sahidic spellings; the church reads Bohairic, so this is a convention, not a tradition of reading this text
+- glosses are hand-written (draft) against the treebank's lemmas, with Crum's Coptic Dictionary (1939) and Lambdin's Introduction to Sahidic Coptic (1983) as references

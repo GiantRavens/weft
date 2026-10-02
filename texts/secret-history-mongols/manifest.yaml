@@ -1,0 +1,65 @@
+work: secret-history-mongols
+title: The Secret History of the Mongols, sections 1–10 (元朝秘史)
+author: Anonymous, Mongol court; Ming transcription
+language: xng
+lang_name: "Middle Mongolian (Ming transcription)"
+prefix: shm                      # shm.<section>.<column>[.<word>]: the section numbers are the Ming text's own
+urn: urn:weft:xng:secret-history   # no CTS URN; Weft-local identifier
+unit: section
+section_noun: section
+written: {year: 1240, display: "13th c.", label: "composed at the Mongol court in a Year of the Rat, seventh month, as its colophon says; the year is usually taken as 1228 or 1240. The Mongolian original is lost; it survives in a transcription into Chinese characters with word glosses, made at the Ming court in the late 14th century"}
+status: phase-0
+pilot: {sections: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]}
+edition:
+  id: shiratori1943
+  name: "Shiratori Kurakichi, Onyaku Mōbun Genchō hishi (音譯蒙文元朝祕史, Tōyō Bunko, 1943), reprinting the Ye Dehui edition of 1908, sections 1-10, via Japanese Wikisource"
+  format: weft-edition
+  file: edition.yaml
+  license: "public domain (Ming text; Shiratori d. 1942, published 1943); Wikisource transcription CC BY-SA 4.0; Weft line division and romanization CC BY-SA 4.0"
+treebank: null                   # hand annotation, draft
+sound_confidence: low            # the page invites specialists to correct the sound guide or record it
+schemes: [mm-1250]               # Middle Mongolian, mid-13th century (approximate); no second scheme, see weft.mongolian
+sources_extra:
+  - id: shiratori1943-wikisource
+    name: "Shiratori (1943), the Lua module of Japanese Wikisource that holds the transcription of every juan (モジュール:音訳蒙文元朝秘史🛐阿備巴備), revision 211577; sections 1-10 are in 巻一-1. Transcription quality marked 75% by the transcriber"
+    file: sources/shiratori1943-module.lua
+    url: "https://ja.wikisource.org/w/index.php?title=%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB:%E9%9F%B3%E8%A8%B3%E8%92%99%E6%96%87%E5%85%83%E6%9C%9D%E7%A7%98%E5%8F%B2%F0%9F%9B%90%E9%98%BF%E5%82%99%E5%B7%B4%E5%82%99&oldid=211577&action=raw"
+    sha256: 593c2871d30aa6ab4d89f8ffb17d2fba2ad20383f99218be1b4668c11419f585
+    license: "public domain (Shiratori Kurakichi, 1865-1942; the Ming text); Wikisource CC BY-SA 4.0"
+    license_url: https://ja.wikisource.org/wiki/%E9%9F%B3%E8%A8%B3%E8%92%99%E6%96%87%E5%85%83%E6%9C%9D%E7%A7%98%E5%8F%B2
+  - id: sibu-congkan-facsimile
+    name: "元朝祕史, Sibu congkan sanbian (Shanghai, 1936), photographic reprint of a Ming-era manuscript copy, juan 1; Wikimedia Commons. Consulted by eye for the opening page; the illustration is its page 6"
+    url: "https://commons.wikimedia.org/wiki/File:Sibu_Congkan_Sanbian055-%E9%97%95%E5%90%8D-%E5%85%83%E6%9C%9D%E7%A5%95%E5%8F%B2-10-01.djvu"
+    license: public domain (Commons LicenseShortName)
+    license_url: "https://commons.wikimedia.org/wiki/File:Sibu_Congkan_Sanbian055-%E9%97%95%E5%90%8D-%E5%85%83%E6%9C%9D%E7%A5%95%E5%8F%B2-10-01.djvu"
+translations:
+  - id: weft-editorial
+    kind: editorial
+    translator: Weft editorial translation
+    year: 2026
+    form: "prose, close to the Middle Mongolian and to the gloss row; draft, for review"
+    license: CC BY-SA 4.0
+  - id: zongyi
+    translator: "Ming court translators, the summary translation (總譯) into Chinese"
+    year: "late 14th c."
+    form: "Chinese prose summary, one after each section, as printed by Shiratori (1943)"
+    license: public-domain
+    license_url: https://ja.wikisource.org/wiki/%E9%9F%B3%E8%A8%B3%E8%92%99%E6%96%87%E5%85%83%E6%9C%9D%E7%A7%98%E5%8F%B2
+    file: sources/shiratori1943-module.lua
+    url: "https://ja.wikisource.org/w/index.php?title=%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB:%E9%9F%B3%E8%A8%B3%E8%92%99%E6%96%87%E5%85%83%E6%9C%9D%E7%A7%98%E5%8F%B2%F0%9F%9B%90%E9%98%BF%E5%82%99%E5%B7%B4%E5%82%99&oldid=211577&action=raw"
+    sha256: 593c2871d30aa6ab4d89f8ffb17d2fba2ad20383f99218be1b4668c11419f585
+  - id: derachewiltz2015
+    kind: reference
+    translator: Igor de Rachewiltz
+    year: 2015
+    title: "The Secret History of the Mongols: A Mongolian Epic Chronicle of the Thirteenth Century, shorter version, ed. John C. Street (from the Brill edition of 2004 and 2013)"
+    publisher: "Western Washington University, Western CEDAR (Books and Monographs 4)"
+    note: "Free to read online, but licensed CC BY-NC-ND 4.0, which forbids commercial use and derivatives; Weft cites it and does not reproduce it"
+predicted_gaps:
+  - "no public-domain English translation exists; the English is Weft's editorial draft, and de Rachewiltz's open-access translation (CC BY-NC-ND 4.0) is cited, not reproduced"
+  - "Chinese Wikisource (元朝秘史/卷01, revision 2139867) has the transcription with word glosses only for sections 1-5, and omits the last three words of section 1; Shiratori on Japanese Wikisource has all ten, so it is the edition here"
+  - "Shiratori normalized the Ming word glosses (名 to 人名, 婦人名, 兒名) and unified some characters (宜 to 冝, 囙 to 因); his parentheses mark additions, but his changes to the shoulder marks 中 and 舌 are not marked (凡例). The gloss row is therefore Shiratori's text of the Ming gloss, not a facsimile"
+  - "the romanization is converted by rule from Shiratori's and hand-corrected for 18 words; it is a transcription of the Ming spelling, not a reconstruction of the Uyghur-script original"
+  - "the Ming shoulder marks are checked against the romanization (marker-r-mismatch, marker-q-mismatch); disagreements are kept as telemetry, since the base text sometimes omits a mark"
+  - "Middle Mongolian pronunciation is reconstructed: the aspiration contrast is inferred from the Chinese characters, the hiatus (') may already have been a long vowel, and first-syllable stress is assumed"
+  - "no treebank; lemma, morphology and gloss are hand annotation, draft"

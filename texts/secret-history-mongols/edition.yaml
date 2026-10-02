@@ -1,0 +1,321 @@
+# Weft edition of the Secret History of the Mongols, sections 1 to 10: from the blue-grey wolf and
+# the fallow doe to the marriage of Dobun Mergen and Alan Qo'a and their two sons.
+#
+# The text is the Ming transcription (Middle Mongolian written in Chinese characters) as printed by
+# Shiratori Kurakichi, Onyaku Mōbun Genchō hishi (Tōyō Bunko, 1943), which reprints the edition of
+# Ye Dehui (1908) column for column and adds a romanization. It is checked verbatim against the
+# Japanese Wikisource transcription of Shiratori, pinned as sources/shiratori1943-module.lua.
+#
+# One Weft line is one column of the Ye Dehui print (Shiratori's numbering: juan, leaf, column).
+# One token is one word as Shiratori groups it (the Ming gloss stands beside each such group).
+#
+#   t    the characters, verbatim, without the shoulder marks 中 and 舌, with the small characters at
+#        full size; Shiratori's hyphens and the wiki text's variation selectors are set aside
+#        (verify_strip). His parentheses, which mark his own corrections, are kept: 不峏罕(合)勒敦
+#   pr   the same with the marks: 〈中〉 and 〈舌〉 before the character they stand beside, small
+#        characters in angle brackets after the syllable they close
+#   pz   the Ming word gloss (旁譯), verbatim as Shiratori prints it (his parentheses are his additions)
+#   sh   Shiratori's romanization, verbatim
+#   n    Weft's romanization where the rule in weft.mongolian does not give it (see the module)
+joiner: " "
+verify_in: sources/shiratori1943-module.lua
+verify_strip: '\{\{ϴ\|入力者注=(?:[^{}]|\{\{[^{}]*\}\})*\}\}|\{\{ϕ\|L=.\}\}|\{\{ϕ\|R=|(?<=R=.)\}\}|\{\{ϕ\||\|[^{}|]*\|[^{}|]*\}\}|-|[\ufe00-\ufe0f]'
+sections:
+  - id: "1"
+    title: "§1 The blue-grey wolf and the fallow doe"
+    lines:
+      - tokens:   # Ye Dehui edition, juan 1, leaf 1, column 2
+        - {t: "成吉思", pz: "(太祖)名", sh: "Čiṅgis"}
+        - {t: "合罕訥", pr: "〈中〉合〈中〉罕訥", pz: "皇帝 的", sh: "Qaγan-(n)u"}
+        - {t: "忽札兀兒", pr: "忽札兀〈舌〉兒", pz: "根源", sh: "hužaγ̇ur"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 1, column 3
+        - {t: "迭額列", pr: "迭額〈舌〉列", pz: "上", sh: "deġere"}
+        - {t: "騰格理額扯", pr: "騰格〈舌〉理額扯", pz: "天 處", sh: "teṅgeri-eče"}
+        - {t: "札牙阿禿", pz: "命 有的", sh: "žajaγ̇atu"}
+        - {t: "脫列克先", pr: "脫〈舌〉列〈克〉先", pz: "生了的", sh: "töregsen"}
+        - {t: "孛兒帖", pr: "孛〈舌〉兒帖", pz: "蒼色", sh: "börte"}
+        - {t: "赤那", pz: "狼", sh: "čino"}
+        - {t: "阿主兀", pz: "有(來)", sh: "ažuγ̇u."}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 1, column 4
+        - {t: "格兒該", pr: "格〈舌〉兒該", pz: "妻", sh: "Gergei"}
+        - {t: "亦訥", pz: "他的", sh: "in-ü", n: "inu"}
+        - {t: "豁埃", pr: "〈中〉豁埃", pz: "慘白色", sh: "γoγ̇ai"}
+        - {t: "馬闌勒", pr: "馬〈舌〉闌〈勒〉", pz: "鹿", sh: "maral"}
+        - {t: "阿只埃", pz: "有來", sh: "ažiγ̇ai."}
+        - {t: "騰汲思", pz: "水名", sh: "Teṅgis"}
+        - {t: "客禿勒周", pr: "客禿〈勒〉周", pz: "渡着", sh: "ketülžü"}
+        - {t: "亦列罷", pr: "亦〈舌〉列罷", pz: "來了", sh: "irebe."}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 1, column 5
+        - {t: "斡難", pz: "河名", sh: "Onan"}
+        - {t: "沐漣訥", pr: "沐〈舌〉漣訥", pz: "河 的", sh: "müren-(n)ü"}
+        - {t: "帖里兀捏", pr: "帖〈舌〉里兀捏", pz: "源行", sh: "teriġün-e"}
+        - {t: "不峏罕合勒敦納", pr: "不〈舌〉峏〈中〉罕〈中〉合〈勒〉敦納", pz: "山名 行", sh: "Burqan-Qaldun-(n)a"}
+        - {t: "嫰禿黑剌周", pr: "嫰禿〈黑〉剌周", pz: "營盤做着", sh: "nutuγlažu"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 1, column 6
+        - {t: "脫列克先", pr: "脫〈舌〉列〈克〉先", pz: "生(了)的", sh: "töregsen"}
+        - {t: "巴塔赤罕", pr: "巴塔赤〈中〉罕", pz: "人名", sh: "Batačiγan"}
+        - {t: "阿主兀", pz: "有來", sh: "ažuγ̇u."}
+  - id: "2"
+    title: "§2 From Batachiqan to Qarchu"
+    lines:
+      - tokens:   # Ye Dehui edition, juan 1, leaf 1, column 9
+        - {t: "巴塔赤罕訥", pr: "巴塔赤〈中〉罕訥", pz: "(人名) 的", sh: "Batačiγan-(n)u"}
+        - {t: "可溫", pz: "子", sh: "köġün"}
+        - {t: "塔馬察", pz: "(兒)名", sh: "Tamača,"}
+        - {t: "塔馬察因", pz: "(人) 的", sh: "Tamača-jin"}
+        - {t: "可溫", pz: "子", sh: "köġün"}
+        - {t: "豁里察兒篾兒干", pr: "〈中〉豁〈舌〉里察〈舌〉兒篾〈舌〉兒干", pz: "(兒)名", sh: "Qoričar-Mergen,"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 1, column 10
+        - {t: "豁里察兒篾兒干訥", pr: "〈中〉豁〈舌〉里察〈舌〉兒篾〈舌〉兒干訥", pz: "(人名) 的", sh: "Qoričar-Mergen-(n)ü"}
+        - {t: "可溫", pz: "子", sh: "köġün"}
+        - {t: "阿兀站孛羅溫勒", pr: "阿兀站孛〈舌〉羅溫〈勒〉", pz: "(兒)名", sh: "Aγ̇užam-Boroγ̇ul,"}
+        - {t: "阿兀站孛羅兀侖", pr: "阿兀站孛〈舌〉羅〈中〉兀侖", pz: "(人名) 的", sh: "Aγ̇užam-Boroγ̇ul-un", n: "A'ujam Boroγul-un"}
+        - {t: "可溫", pz: "子", sh: "köġün"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 2, column 1
+        - {t: "撒里合察兀", pr: "撒里〈中〉合察兀", pz: "(兒)名", sh: "Sali-Qačaγ̇u,"}
+        - {t: "撒里合察兀因", pr: "撒里〈中〉合察兀因", pz: "(人名) 的", sh: "Sali-Qačaγ̇u-jin"}
+        - {t: "可溫", pz: "子", sh: "köġün"}
+        - {t: "也客你敦", pz: "(兒)名", sh: "Jeke-Nidün,"}
+        - {t: "也客你敦訥", pz: "(人名) 的", sh: "Jeke-Nidün-(n)u", n: "Yeke Nidün-ü"}
+        - {t: "可溫", pz: "子", sh: "köġün"}
+        - {t: "撏鎻赤", pz: "(兒)名", sh: "Simsoči,"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 2, column 2
+        - {t: "撏鎻赤因", pz: "(人名) 的", sh: "Simsoči-jin"}
+        - {t: "可溫", pz: "子", sh: "köġün"}
+        - {t: "合兒出", pr: "〈中〉合〈舌〉兒出", pz: "(兒)名", sh: "Qarču,"}
+  - id: "3"
+    title: "§3 Borjigidai Mergen to Duwa Soqor and Dobun Mergen"
+    lines:
+      - tokens:   # Ye Dehui edition, juan 1, leaf 2, column 6
+        - {t: "合兒出因", pr: "〈中〉合〈舌〉兒出因", pz: "(人名) 的", sh: "Qarču-jin"}
+        - {t: "可溫", pz: "子", sh: "köġün"}
+        - {t: "孛兒只吉歹篾兒干", pr: "孛〈舌〉兒只吉歹篾〈舌〉兒干", pz: "(兒)名", sh: "Boržigidai-Mergen,"}
+        - {t: "忙豁勤眞豁阿", pr: "忙〈中〉豁勤眞〈中〉豁阿", pz: "婦人名", sh: "Monγolžin-Toγ̇a", n: "Mongγoljin Qo'a"}
+        - {t: "格兒該禿", pr: "格〈舌〉兒該禿", pz: "妻(有的)", sh: "gergeitü"}
+        - {t: "阿主兀", pz: "有來", sh: "ažuγ̇u."}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 2, column 7
+        - {t: "孛兒只吉歹篾兒干訥", pr: "孛〈舌〉兒只吉歹篾〈舌〉兒干訥", pz: "(人名) 的", sh: "Boržigidai-Mergen-(n)ü"}
+        - {t: "可溫", pz: "子", sh: "köġün"}
+        - {t: "脫羅豁勒眞伯顏", pr: "脫〈舌〉羅〈中〉豁〈勒〉眞伯顏", pz: "(兒)名", sh: "Toroγolžin-Bajan,"}
+        - {t: "孛羅黑臣豁阿", pr: "孛〈舌〉羅〈黑〉臣〈中〉豁阿", pz: "婦人名", sh: "Boroγčin-Γoγ̇a"}
+        - {t: "格兒該禿", pr: "格〈舌〉兒該禿", pz: "妻 有的", sh: "gergeitü,"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 2, column 8
+        - {t: "孛羅勒歹速牙勒必", pr: "孛〈舌〉羅〈勒〉歹速牙〈勒〉必", pz: "人名", sh: "Boroldai-Sujalbi"}
+        - {t: "札剌兀禿", pz: "後生(有的)", sh: "žalaγ̇utu,"}
+        - {t: "荅驛兒", pr: "荅驛〈舌〉兒", pz: "(馬名)", sh: "dair", n: "Dayir"}
+        - {t: "孛騾", pr: "孛〈舌〉騾", pz: "(馬名)", sh: "boro"}
+        - {t: "豁牙兒", pr: "〈中〉豁牙〈舌〉兒", pz: "兩箇", sh: "qojar"}
+        - {t: "曲騄兀惕", pr: "曲騄兀〈惕〉", pz: "駿(每)", sh: "külüġüd"}
+        - {t: "阿黑𩥑思禿", pr: "阿〈黑〉𩥑思禿", pz: "騸馬(每有的)", sh: "aγtastu"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 2, column 9
+        - {t: "不列額", pz: "有來", sh: "büleġe."}
+        - {t: "脫羅豁勒眞訥", pr: "脫〈舌〉羅〈中〉豁〈勒〉眞訥", pz: "(人名) 的", sh: "Toroγolžin-(n)u"}
+        - {t: "可溫", pz: "子", sh: "köġün"}
+        - {t: "都蛙鎻豁兒", pr: "都蛙鎻〈中〉豁〈舌〉兒", pz: "(兒)名", sh: "Duwa-Soqor,"}
+        - {t: "朶奔篾兒干", pr: "朶奔篾〈舌〉兒干", pz: "(兒)名", sh: "Dobun-Mergen"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 2, column 10
+        - {t: "豁牙兒", pr: "〈中〉豁牙〈舌〉兒", pz: "兩箇", sh: "qojar"}
+        - {t: "不列額", pz: "有來", sh: "büleġe."}
+  - id: "4"
+    title: "§4 Duwa Soqor's single eye"
+    lines:
+      - tokens:   # Ye Dehui edition, juan 1, leaf 3, column 4
+        - {t: "都蛙鎻豁兒", pr: "都蛙鎻〈中〉豁〈舌〉兒", pz: "(人名)", sh: "Duwa-Soqor"}
+        - {t: "莽來", pz: "額", sh: "maṅlai"}
+        - {t: "敦荅", pz: "中", sh: "dunda"}
+        - {t: "合黑察", pr: "〈中〉合〈黑〉察", pz: "獨", sh: "γaγča"}
+        - {t: "你都禿", pz: "眼(有的)", sh: "nidütü"}
+        - {t: "忽兒班", pr: "〈中〉忽〈舌〉兒班", pz: "三", sh: "γurban"}
+        - {t: "捏兀里惕", pr: "捏兀〈舌〉里〈惕〉", pz: "程", sh: "neġürid"}
+        - {t: "合札剌", pr: "〈中〉合札〈舌〉剌", pz: "地行", sh: "γažar-a"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 3, column 5
+        - {t: "合𥈙忽", pr: "〈中〉合〈舌〉𥈙〈中〉忽", pz: "望見", sh: "qaraqu"}
+        - {t: "不列額", pz: "有來", sh: "büleġe."}
+  - id: "5"
+    title: "§5 From Burqan Qaldun, a people coming down the Tünggelig"
+    lines:
+      - tokens:   # Ye Dehui edition, juan 1, leaf 3, column 7
+        - {t: "你刊", pz: "一", sh: "Nigen"}
+        - {t: "兀都兒", pr: "兀都〈舌〉兒", pz: "日", sh: "üdür"}
+        - {t: "都蛙鎻豁兒", pr: "都蛙鎻〈中〉豁〈舌〉兒", pz: "(人名)", sh: "Duwa-Soqor"}
+        - {t: "朶奔篾兒干", pr: "朶奔篾〈舌〉兒干", pz: "(人名)", sh: "Dobun-Mergen"}
+        - {t: "迭兀魯額別延", pz: "弟 一同 自的", sh: "deġü-lüġe-beġen"}
+        - {t: "不峏罕(合)勒敦", pr: "不〈舌〉峏〈中〉罕(〈中〉合)〈勒〉敦", pz: "山名", sh: "Burqan-Qaldun"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 3, column 8
+        - {t: "迭額列", pr: "迭額〈舌〉列", pz: "上", sh: "deġere"}
+        - {t: "合兒罷", pr: "〈中〉合〈舌〉兒罷", pz: "上去了", sh: "γarba."}
+        - {t: "都蛙鎻豁兒", pr: "都蛙鎻〈中〉豁〈舌〉兒", pz: "(人名)", sh: "Duwa-Soqor"}
+        - {t: "不峏罕(合)勒敦", pr: "不〈舌〉峏〈中〉罕(〈中〉合)〈勒〉敦", pz: "山名", sh: "Burqan-Qaldun"}
+        - {t: "迭額列址", pr: "迭額〈舌〉列址", pz: "上(自)", sh: "deġereče"}
+        - {t: "合𥈙周", pr: "〈中〉合〈舌〉𥈙周", pz: "望着", sh: "qaražu"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 3, column 9
+        - {t: "統格黎克", pr: "統格黎〈克〉", pz: "水名", sh: "Tüṅgelig"}
+        - {t: "豁羅罕", pr: "〈中〉豁〈舌〉羅〈中〉罕", pz: "小河", sh: "γoroqan"}
+        - {t: "忽魯兀", pr: "忽〈舌〉魯兀", pz: "順", sh: "huruγ̇u"}
+        - {t: "你刊", pz: "一", sh: "nigen"}
+        - {t: "孛𪭺克", pr: "孛𪭺〈克〉", pz: "叢", sh: "böleg"}
+        - {t: "亦兒堅", pr: "亦〈舌〉兒堅", pz: "百姓", sh: "irgen"}
+        - {t: "耨兀周", pz: "起着", sh: "neġüžü"}
+        - {t: "斡羅周", pr: "斡〈舌〉羅周", pz: "入着", sh: "orožu"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 3, column 10
+        - {t: "阿亦速忽冝", pr: "阿亦速〈中〉忽冝", pz: "來的 行", sh: "aisuqu-ji", n: "ayisuqu-yi"}
+        - {t: "合𥈙周", pr: "〈中〉合〈舌〉𥈙周", pz: "望着", sh: "qaražu"}
+        - {t: "兀者周", pz: "見着", sh: "üžežü"}
+  - id: "6"
+    title: "§6 A girl at the front of a black cart"
+    lines:
+      - tokens:   # Ye Dehui edition, juan 1, leaf 4, column 3
+        - {t: "嗚詁列論", pr: "嗚詁列〈舌〉論", pz: "說", sh: "ügülerün:"}
+        - {t: "帖迭", pz: "那的每", sh: "\"Tede"}
+        - {t: "耨兀周", pz: "起着", sh: "neġüžü"}
+        - {t: "阿亦速渾", pr: "阿亦速〈中〉渾", pz: "來的每", sh: "aisunqun", n: "ayisuqun"}
+        - {t: "亦兒堅訥", pr: "亦〈舌〉兒堅訥", pz: "百姓 的", sh: "irgen-(n)ü"}
+        - {t: "朶脫剌", pr: "朶脫〈舌〉剌", pz: "內", sh: "dotora"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 4, column 4
+        - {t: "你刊", pz: "一", sh: "nigen"}
+        - {t: "合剌兀台", pr: "〈中〉合〈舌〉剌兀台", pz: "黑", sh: "qaraγ̇utai"}
+        - {t: "帖兒格訥", pr: "帖〈舌〉兒格訥", pz: "車 的", sh: "tergen-ü"}
+        - {t: "完勒只格迭", pr: "完〈勒〉只格迭", pz: "前 行", sh: "ölžige-de"}
+        - {t: "你刊", pz: "一箇", sh: "nigen"}
+        - {t: "斡勤", pz: "女", sh: "ökin"}
+        - {t: "撒因", pz: "好", sh: "sain", n: "sayin"}
+        - {t: "備由", pz: "有", sh: "bijü."}
+        - {t: "古溫捏", pz: "人 行", sh: "Küġün-(n)e"}
+        - {t: "額薛", pz: "不曾", sh: "ese"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 4, column 5
+        - {t: "斡克帖克先", pr: "斡〈克〉帖〈克〉先", pz: "與了的", sh: "ögdegsen"}
+        - {t: "孛額速", pz: "有來", sh: "böġesü"}
+        - {t: "朶奔篾兒干", pr: "朶奔篾〈舌〉兒干", pz: "(人名)", sh: "Dobün-Mergen", n: "Dobun Mergen"}
+        - {t: "迭兀迭延", pz: "弟 (自的)行", sh: "deġü-deġen"}
+        - {t: "赤馬荅", pz: "你 行", sh: "čima-da"}
+        - {t: "忽余牙", pr: "〈中〉忽余牙", pz: "索", sh: "γujuja\""}
+        - {t: "客額周", pz: "說着", sh: "keġežü"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 4, column 6
+        - {t: "朶奔篾兒干", pr: "朶奔篾〈舌〉兒干", pz: "(人名)", sh: "Dobun-Mergen"}
+        - {t: "迭兀余延", pz: "弟 (自的)行", sh: "deġü-jüġen"}
+        - {t: "兀者列", pr: "兀者〈舌〉列", pz: "看", sh: "üžere"}
+        - {t: "亦列罷", pz: "敎去了", sh: "ilebe."}
+  - id: "7"
+    title: "§7 Alan Qo'a, not yet given to anyone"
+    lines:
+      - tokens:   # Ye Dehui edition, juan 1, leaf 4, column 9
+        - {t: "朶奔篾兒干", pr: "朶奔篾〈舌〉兒干", pz: "(人名)", sh: "Dobun-Mergen"}
+        - {t: "帖迭", pz: "那的(每)", sh: "tede"}
+        - {t: "亦兒堅都兒", pr: "亦〈舌〉兒堅都〈舌〉兒", pz: "百姓 裏", sh: "irgen-dür"}
+        - {t: "古魯額速", pr: "古〈舌〉魯額速", pz: "到呵", sh: "kürüġesü"}
+        - {t: "兀年古", pz: "實 也", sh: "ünen-kü"}
+        - {t: "豁阿", pr: "〈中〉豁阿", pz: "美", sh: "γoγ̇a"}
+        - {t: "撒因", pz: "好", sh: "sain", n: "sayin"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 4, column 10
+        - {t: "阿勒荅兒", pr: "阿〈勒〉荅〈舌〉兒", pz: "聲", sh: "aldar"}
+        - {t: "捏列", pr: "捏〈舌〉列", pz: "名", sh: "nere"}
+        - {t: "也客台", pz: "大 有的", sh: "jeketei"}
+        - {t: "阿闌豁阿", pr: "阿闌〈中〉豁阿", pz: "(女名)", sh: "Alan-Γoγ̇a"}
+        - {t: "捏列台", pr: "捏〈舌〉列台", pz: "名(有的)", sh: "neretei"}
+        - {t: "古溫捏", pz: "人 行", sh: "küġün-(n)e"}
+        - {t: "別兒", pr: "別〈舌〉兒", pz: "也", sh: "ber"}
+        - {t: "斡克帖埃", pr: "斡〈克〉帖埃", pz: "與", sh: "ögteġei"}
+        - {t: "兀都爲", pz: "未的", sh: "üdüġüi"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 5, column 1
+        - {t: "斡勤", pz: "女", sh: "ökin"}
+        - {t: "阿主兀", pz: "有來", sh: "ažuγ̇u."}
+  - id: "8"
+    title: "§8 Alan Qo'a's descent"
+    lines:
+      - tokens:   # Ye Dehui edition, juan 1, leaf 5, column 3
+        - {t: "帖迭", pz: "那(的每)", sh: "Tede"}
+        - {t: "孛𪭺克", pr: "孛𪭺〈克〉", pz: "叢", sh: "böleg"}
+        - {t: "亦兒堅", pr: "亦〈舌〉兒堅", pz: "百姓", sh: "irgen"}
+        - {t: "別兒", pr: "別〈舌〉兒", pz: "也", sh: "ber"}
+        - {t: "闊勒巴兒忽眞", pr: "闊〈勒〉巴〈舌〉兒〈中〉忽眞", pz: "地名", sh: "Köl-Barγužin"}
+        - {t: "脫古門", pz: "窊的", sh: "Tögüm-ün"}
+        - {t: "額氊", pz: "主人", sh: "ežen"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 5, column 4
+        - {t: "巴兒忽歹篾兒干訥", pr: "巴〈舌〉兒〈中〉忽歹篾〈舌〉兒干訥", pz: "人名 的", sh: "Barγudai-Mergen-(n)ü"}
+        - {t: "斡勤", pz: "女", sh: "ökin"}
+        - {t: "巴兒忽眞豁阿", pr: "巴〈舌〉兒〈中〉忽眞〈中〉豁阿", pz: "女名", sh: "Barγužin-Γoγ̇a"}
+        - {t: "捏列台", pr: "捏〈舌〉列台", pz: "名(有)的", sh: "neretei"}
+        - {t: "斡勤泥", pz: "女 行", sh: "ökin-(n)i"}
+        - {t: "豁里禿馬敦", pr: "〈中〉豁〈舌〉里禿馬敦", pz: "部落名(的)", sh: "Qori-Tumad-un"}
+        - {t: "那顏", pz: "官人", sh: "nojan"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 5, column 5
+        - {t: "豁里剌兒台篾兒干捏", pr: "〈中〉豁〈舌〉里剌〈舌〉兒台篾〈舌〉兒干捏", pz: "人名 行", sh: "Qorilartai-Mergen-(n)e"}
+        - {t: "斡克迭克先", pr: "斡〈克〉迭〈克〉先", pz: "與了的", sh: "ögdegsen"}
+        - {t: "阿主兀", pz: "有來", sh: "ažuγ̇u."}
+        - {t: "豁里禿馬敦", pr: "〈中〉豁〈舌〉里禿馬敦", pz: "部落名(的)", sh: "Qori-Tumad-un"}
+        - {t: "合札剌", pr: "〈中〉合札〈舌〉剌", pz: "地行", sh: "γažar-a"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 5, column 6
+        - {t: "阿里黑兀孫納", pr: "阿〈舌〉里〈黑〉兀孫納", pz: "地名 行", sh: "Ariγ-Usun-(n)a"}
+        - {t: "豁里剌兒台篾兒干訥", pr: "〈中〉豁〈舌〉里剌〈舌〉兒台篾〈舌〉兒干訥", pz: "(人)名 的", sh: "Qorilartai-Mergen-(n)ü"}
+        - {t: "巴兒忽眞豁阿察", pr: "巴〈舌〉兒〈中〉忽眞〈中〉豁阿察", pz: "婦人名(自)", sh: "Barγužin-Γoγ̇ača"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 5, column 7
+        - {t: "脫列克先", pr: "脫〈舌〉列〈克〉先", pz: "生了的", sh: "töregsen"}
+        - {t: "阿闌豁阿", pr: "阿闌〈中〉豁阿", pz: "女名", sh: "Alan-Γoγ̇a"}
+        - {t: "捏列台", pr: "捏〈舌〉列台", pz: "名(有)的", sh: "neretei"}
+        - {t: "斡勤", pz: "女", sh: "ökin"}
+        - {t: "帖列", pr: "帖〈舌〉列", pz: "那般", sh: "tere."}
+  - id: "9"
+    title: "§9 How the Qorilar came to Burqan Qaldun"
+    lines:
+      - tokens:   # Ye Dehui edition, juan 1, leaf 6, column 1
+        - {t: "豁里剌兒台篾兒干", pr: "〈中〉豁〈舌〉里剌〈舌〉兒台篾〈舌〉兒干", pz: "人名", sh: "Qorilartai-Mergen"}
+        - {t: "豁里禿馬敦", pr: "〈中〉豁〈舌〉里禿馬敦", pz: "部落名(的)", sh: "Qori-Tumad-un"}
+        - {t: "合札兒禿里顏", pr: "〈中〉合札〈舌〉兒禿〈舌〉里顏", pz: "地 自的行", sh: "γažar-tur(i)-jan", n: "qajar-turiyan"}
+        - {t: "不𪖌罕", pr: "不𪖌〈中〉罕", pz: "貂鼠", sh: "buluγan"}
+        - {t: "客列門", pr: "客〈舌〉列門", pz: "靑鼠", sh: "keremün"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 6, column 2
+        - {t: "戈劣額台", pr: "戈〈舌〉劣額台", pz: "野物 有的", sh: "göreġetei"}
+        - {t: "合札里顏", pr: "〈中〉合札〈舌〉里顏", pz: "地 自的(行)", sh: "γažar(i)-jan", n: "qajar-iyan"}
+        - {t: "豁里剌勒都周", pr: "〈中〉豁〈舌〉里剌〈勒〉都周", pz: "相禁約着", sh: "qorilaldužu"}
+        - {t: "卯兀剌勒都周", pr: "卯兀剌〈勒〉都周", pz: "煩惱着", sh: "maγ̇ulaldužu"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 6, column 3
+        - {t: "豁里剌兒", pr: "〈中〉豁〈舌〉里剌〈舌〉兒", pz: "姓氏", sh: "Qorilar"}
+        - {t: "斡孛黑圖", pr: "斡孛〈黑〉圖", pz: "姓(有的)", sh: "oboγtu"}
+        - {t: "孛勒周", pr: "孛〈勒〉周", pz: "做着", sh: "bolžu"}
+        - {t: "不峏罕(合)勒敦訥", pr: "不〈舌〉峏〈中〉罕(〈中〉合)〈勒〉敦訥", pz: "山名 的", sh: "Burqan-Qaldun-(n)u"}
+        - {t: "戈劣額孫", pr: "戈〈舌〉劣額孫", pz: "野物", sh: "göreġesün"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 6, column 4
+        - {t: "戈魯兀黎", pr: "戈〈舌〉魯兀黎", pz: "可捕", sh: "görüġüli"}
+        - {t: "撒亦禿", pz: "好有的", sh: "saitu", n: "sayitu"}
+        - {t: "合札兒", pr: "〈中〉合札〈舌〉兒", pz: "地", sh: "γažar"}
+        - {t: "撒因", pz: "好", sh: "sain", n: "sayin"}
+        - {t: "客延", pz: "麽道", sh: "keġen"}
+        - {t: "不峏罕合勒敦訥", pr: "不〈舌〉峏〈中〉罕〈中〉合〈勒〉敦訥", pz: "山名 的", sh: "Burqan-Qaldun-(n)u"}
+        - {t: "額者惕", pr: "額者〈惕〉", pz: "主每", sh: "ežed"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 6, column 5
+        - {t: "不峏罕孛思合黑三", pr: "不〈舌〉峏〈中〉罕孛思〈中〉合〈黑〉三", pz: "人名", sh: "Burqan-Bosqaγsan"}
+        - {t: "哂赤伯顏", pz: "人名", sh: "Sinči-Bajan"}
+        - {t: "兀良孩途兒", pr: "兀〈舌〉良〈中〉孩途〈舌〉兒", pz: "部落名 裏", sh: "Urjaṅqai-dur"}
+        - {t: "耨兀周", pz: "起着", sh: "neġüžü"}
+        - {t: "阿亦孫", pz: "來", sh: "aisun", n: "ayisun"}
+        - {t: "阿主兀", pz: "有來", sh: "ažuγ̇u."}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 6, column 6
+        - {t: "豁里禿馬敦", pr: "〈中〉豁〈舌〉里禿馬敦", pz: "部落名(的)", sh: "Qori-Tumad-un"}
+        - {t: "豁里剌兒台篾兒干訥", pr: "〈中〉豁〈舌〉里剌〈舌〉兒台篾〈舌〉兒干訥", pz: "人名 的", sh: "Qorilartai-Mergen-(n)ü"}
+        - {t: "斡勤", pz: "女", sh: "ökin"}
+        - {t: "阿里黑兀孫納", pr: "阿〈舌〉里〈黑〉兀孫納", pz: "地名 行", sh: "Ariγ-Usun-(n)a"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 6, column 7
+        - {t: "脫列克先", pr: "脫〈舌〉列〈克〉先", pz: "生(了)的", sh: "töregsen"}
+        - {t: "阿闌豁阿冝", pr: "阿闌〈中〉豁阿冝", pz: "(女名) 行", sh: "Alan-Γoγ̇a-ji"}
+        - {t: "田迭", pz: "那裏", sh: "tende"}
+        - {t: "忽余周", pr: "〈中〉忽余周", pz: "索着", sh: "γujužu"}
+        - {t: "朶奔篾兒干訥", pr: "朶奔篾〈舌〉兒干訥", pz: "人名 的", sh: "Dobun-Mergen-(n)ü"}
+        - {t: "阿卜黑三", pr: "阿卜〈黑〉三", pz: "要了的", sh: "abuγsan"}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 6, column 8
+        - {t: "約孫", pz: "理", sh: "josun"}
+        - {t: "帖亦木", pz: "那般", sh: "teimü.", n: "teyimü"}
+  - id: "10"
+    title: "§10 Two sons"
+    lines:
+      - tokens:   # Ye Dehui edition, juan 1, leaf 7, column 2
+        - {t: "阿闌豁阿", pr: "阿闌〈中〉豁阿", pz: "(婦人名)", sh: "Alan-Γoγ̇a"}
+        - {t: "朶奔篾兒干途兒", pr: "朶奔篾〈舌〉兒干途〈舌〉兒", pz: "(人)名 行", sh: "Dobün-Mergen-dür", n: "Dobun Mergen-dür"}
+        - {t: "亦列周", pr: "亦〈舌〉列周", pz: "來着", sh: "irežü"}
+        - {t: "豁牙兒", pr: "〈中〉豁牙〈舌〉兒", pz: "兩箇", sh: "qojar"}
+        - {t: "可溫", pz: "子", sh: "köġün"}
+        - {t: "脫列兀勒畢", pr: "脫〈舌〉列兀〈勒〉畢", pz: "生了", sh: "töreġülbi."}
+      - tokens:   # Ye Dehui edition, juan 1, leaf 7, column 3
+        - {t: "不古訥台", pz: "人名", sh: "Bügünütei,"}
+        - {t: "別勒古訥台", pr: "別〈勒〉古訥台", pz: "人起", sh: "Belgünütei", n: "Belgünütei"}
+        - {t: "捏列田", pr: "捏〈舌〉列田", pz: "名(有)的(每)", sh: "nereten"}
+        - {t: "不列額", pz: "有來", sh: "büleġe."}

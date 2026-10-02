@@ -1,0 +1,62 @@
+work: saer-de-quincy-charters
+title: Two charters of Saer de Quincy, earl of Winchester
+author: Saer de Quincy, earl of Winchester (d. 1219), and his clerks
+language: lat
+lang_name: "Latin of the charters (England and Scotland, early 13th century)"
+prefix: sq                       # sq.<charter>.<line>[.<token>]; charter = gask | duglyn
+urn: urn:weft:lat:saer-de-quincy-charters   # Weft-local identifier
+unit: section
+section_noun: charter
+written: {year: 1213, display: "c. 1207–1219", label: "two grants by the same earl, known only from later copies: the land of Duglyn to the canons of Cambuskenneth, between his creation as earl in 1207 and the death of King William of Scots in December 1214; and the church of Gask to the Hospital of Brackley, dated by its 1908 editors to 1218 or early 1219, shortly before he left on crusade"}
+status: phase-0
+pilot: {sections: [gask, duglyn]}
+edition:
+  id: quincy-charters
+  name: "The two charters as printed in Charters, Bulls and Other Documents relating to the Abbey of Inchaffray (Scottish History Society, 1908), Appendix IV A, pp. 157-158, from a copy of about 1350 at Magdalen College, Oxford; and in Registrum Monasterii S. Marie de Cambuskenneth (Grampian Club, 1872), no. 70, pp. 91-92, from the abbey's register of 1535; divided into lines by Weft"
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain; Weft line division CC BY-SA 4.0
+treebank: null                   # no treebank covers these charters; hand annotation, draft
+schemes: [anglo-latin, classical]   # default: Latin as a clerk of the earl's household read it
+scheme_labels:
+  anglo-latin: "As first read: Latin as a clerk in England or Scotland read it, about 1207–1219 (approximate)"
+sound_confidence: medium         # the page invites specialists to correct the sound guide or record it
+quantities:
+  - pipeline/weft/data/lat_quantities.yaml
+  - pipeline/weft/data/lat_quantities_quincy.yaml
+translations:
+  - id: inchaffray1908
+    translator: "William Alexander Lindsay, John Dowden and John Maitland Thomson (eds.)"
+    year: 1908
+    form: "English abstract, Appendix IV A, p. 245 of Charters, Bulls and Other Documents relating to the Abbey of Inchaffray (Edinburgh: Scottish History Society, vol. 56, 1908); Internet Archive OCR text of the Boston College copy, which also carries the Latin of the edition"
+    partial: "abstract, not a translation; it summarises the Gask charter and does not cover the Duglyn charter"
+    license: public-domain
+    license_url: https://archive.org/details/chartersbullsoth00inch
+    file: sources/inchaffray1908.txt
+    url: https://archive.org/download/chartersbullsoth00inch/chartersbullsoth00inch_djvu.txt
+    sha256: f2ca358fbef42a4f3a8abd3015e917ea6967ea23f7cd89091fee202bc7ba2fb6
+  - id: cambuskenneth1872
+    translator: "William Fraser (ed.)"
+    year: 1872
+    form: "English abstract of no. 70 in the 'Abstract of the Register', p. 345 of Registrum Monasterii S. Marie de Cambuskenneth, A.D. 1147-1535 (Edinburgh: Grampian Club, 1872); Internet Archive OCR text of the University of Toronto copy, which also carries the Latin of the edition"
+    partial: "abstract, not a translation; it summarises the Duglyn charter, leaves out the witnesses, and does not cover the Gask charter"
+    license: public-domain
+    license_url: https://archive.org/details/registrummonaste00cambuoft
+    file: sources/cambuskenneth1872.txt
+    url: https://archive.org/download/registrummonaste00cambuoft/registrummonaste00cambuoft_djvu.txt
+    sha256: 5087190bb761caa8dc38a9991715fc8d4052fc82063ea3bf1830f07c3fa5a1c3
+  - id: weft-editorial
+    kind: editorial
+    translator: Weft editorial translation
+    year: 2026
+    form: "prose, clause by clause, close to the Latin; draft, for review"
+    license: CC BY-SA 4.0
+predicted_gaps:
+  - "no treebank: lemma and morphology hand-annotated against Lewis and Short, with the charter vocabulary (elemosina, warantizo, ius patronatus) after Niermeyer and Du Cange; draft"
+  - "the Anglo-Latin reading is the one built for Magna Carta (England, about 1215) and is reconstructed from spelling and from French and English sound history; the Duglyn charter was most likely written by a clerk in Scotland, whose Latin may have differed in ways not modelled; approximate"
+  - "both texts come from OCR of the printed editions: each line is checked against the OCR with the misreadings declared as verify_corrections in edition.yaml, each a reading of the page image (gask.15; duglyn.1, 3, 8, 12); duglyn.7 has an OCR misreading too but passes, because the same clause is read correctly in no. 73 of the same volume"
+  - "the Gask charter keeps the 1908 edition's medieval punctuation, a raised point and a slanted stroke, as separate marks after the word; they carry no sound or gloss"
+  - "the 1908 edition prints Albeinr (sic) for the witness its editors take to be William d'Aubigny; the name is read as printed"
+  - "medieval spellings are shown as written (Vniuersis, vxoris, hec, sustentacionem, Scocie); the quantity table restores the classical spelling (ūniversīs, uxōris, haec, sustentātiōnem, Scotiae) so the classical reading is classical, and the Anglo-Latin reading says ae as e and ci or ti as tsi either way; hiis is read as written"
+  - "personal and place names (Quency, Quinci, Gasc, Brackele, Duglyn, Malueisin, Huntingfelde, Burhame) take no long vowels unless a Latin form is attested; their stress follows the spelling"
+  - "the abstracts of 1872 and 1908 are summaries, each covering one charter; the Weft editorial translation covers both and is a draft"

@@ -14,13 +14,13 @@ from pathlib import Path
 
 import yaml
 
-from . import __version__, akkadian, chinese, dutch, egyptian, french, german, greek, hebrew, italian, japanese, latin, norse, oldenglish, oldfrench, persian, runic, sanskrit, spanish, sumerian, tamil, treebank
+from . import __version__, akkadian, chinese, coptic, dutch, egyptian, french, german, greek, hebrew, italian, japanese, latin, mongolian, norse, oldeastslavic, oldenglish, oldfrench, persian, runic, sanskrit, spanish, sumerian, swahili, tamil, treebank
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
 INDECLINABLE = set("dcgriebz")   # b: GLAUx coordinating conjunction
 PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebrew, "lzh": chinese, "runic": runic, "ja": japanese, "san": sanskrit,
         "akk": akkadian, "fa": persian, "ta": tamil, "it": italian, "fr": french,
-        "es": spanish, "nl": dutch, "fro": oldfrench, "de": german, "egy": egyptian, "sux": sumerian}
+        "es": spanish, "nl": dutch, "fro": oldfrench, "de": german, "egy": egyptian, "sux": sumerian, "orv": oldeastslavic, "xng": mongolian, "cop": coptic, "sw": swahili}
 NORMALIZE = {"heyne-to-macron": oldenglish.heyne_to_macron}
 LEAD = re.compile(r"^([(\[“«‹\"]+|[-–—]\u00a0)")
 TRAIL = re.compile(r"((?:[,.·;:!?)\]”»›\"\u0387\u037e]|\u00a0[-–—])+)$")
@@ -166,7 +166,17 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                 raw_src = (work_dir / vpath).read_text(encoding="utf-8")
                 if edition.get("verify_strip"):       # verse labels printed inside the source lines
                     raw_src = re.sub(edition["verify_strip"], "", raw_src)
-                cache[vpath] = " ".join(raw_src.split())
+                raw_src = " ".join(raw_src.split())
+                # declared OCR corrections, each a reading of the page image: {ocr, print, in (optional path)}.
+                # Applied as whole words; a correction that matches nothing is itself reported.
+                for c in edition.get("verify_corrections") or []:
+                    if c.get("in") and c["in"] != vpath:
+                        continue
+                    pat = r"(?<![\w])" + re.escape(" ".join(str(c["ocr"]).split())) + r"(?![\w])"
+                    raw_src, k = re.subn(pat, " ".join(str(c["print"]).split()).replace("\\", "\\\\"), raw_src)
+                    if k == 0:
+                        fail("ocr-correction-unused", str(c["ocr"]))
+                cache[vpath] = raw_src
             if " ".join(text.split()) not in cache[vpath]:
                 fail("edition-not-in-source", f"{gid}.{i}")
     elif ed_fmt == "stanza-text":

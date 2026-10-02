@@ -1,0 +1,82 @@
+work: berlin-act-1885
+title: General Act of the Berlin Conference (26 February 1885)
+author: "The plenipotentiaries of fourteen states at the Berlin Conference (15 November 1884 to 26 February 1885)"
+language: fr
+lang_name: French, diplomatic
+prefix: ba                        # ba.<section>.<line>[.<token>]; sections pre, dec, a1-a5, a34, a35
+urn: urn:weft:fr:berlin.acte-general.1885-02-26   # Weft-local identifier
+unit: section
+section_noun: article
+written: {year: 1885, display: "1885", label: "signed at Berlin on 26 February 1885 by the plenipotentiaries of fourteen states; ratified at Berlin on 19 April 1886. the Act was drawn up and signed in French; the English versions are translations"}
+status: phase-0
+pilot: {sections: [pre, dec, a1, a2, a3, a4, a5, a34, a35]}
+edition:
+  id: mae1898-acte-general
+  name: "Acte général de la Conférence africaine signé à Berlin le 26 février 1885, as printed by the French Ministry of Foreign Affairs in Afrique. Arrangements, actes et conventions concernant le nord, l'ouest et le centre de l'Afrique (1881-1898), Documents diplomatiques (Paris: Imprimerie nationale, 1898), no. 4, pp. 93-107, via French Wikisource"
+  format: weft-edition
+  file: edition.yaml
+  license: the text is public domain (an official act, printed 1898); Wikisource transcription CC BY-SA 4.0; Weft line division CC BY-SA 4.0
+treebank: null                    # no treebank; lemma, morphology and gloss by hand, draft
+schemes: [fr1885, modern]         # default = formal Paris reading of the 1880s
+scheme_labels:
+  fr1885: "As first read: formal Paris French of the 1880s"
+# sound_confidence is not set: French of 1885 is described directly by Passy (1887) and Littré,
+# and differs from modern French in a few features the KEY lists
+sources_extra:
+  - id: mae1898-p93
+    name: "Afrique. Arrangements, actes et conventions (1898), page 93 (title, preamble), French Wikisource Page: revision 13562994"
+    file: sources/p101.txt
+    url: "https://fr.wikisource.org/w/index.php?oldid=13562994&action=raw"
+    sha256: e85bf0959b1198301b372169ca2cb58cb203f1104e9ffb5d75ce5b7349a7e21e
+    license: public domain; Wikisource CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0/
+  - id: mae1898-p96
+    name: "Afrique. Arrangements, actes et conventions (1898), page 96 (end of the preamble, Chapter I article 1), French Wikisource Page: revision 13076049"
+    file: sources/p104.txt
+    url: "https://fr.wikisource.org/w/index.php?oldid=13076049&action=raw"
+    sha256: 4d65c77d5c64bb68debac6fcd47591048460bd734f1d45d777fefb0dd1bcbfed
+    license: public domain; Wikisource CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0/
+  - id: mae1898-p97
+    name: "Afrique. Arrangements, actes et conventions (1898), page 97 (articles 2-5), French Wikisource Page: revision 13579614"
+    file: sources/p105.txt
+    url: "https://fr.wikisource.org/w/index.php?oldid=13579614&action=raw"
+    sha256: 78bc67cde0109cd72a256b2db092d7556e565c3608e4d181bda99617924d3feb
+    license: public domain; Wikisource CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0/
+  - id: mae1898-p107
+    name: "Afrique. Arrangements, actes et conventions (1898), page 107 (Chapter VI, articles 34-35), French Wikisource Page: revision 8619939"
+    file: sources/p115.txt
+    url: "https://fr.wikisource.org/w/index.php?oldid=8619939&action=raw"
+    sha256: 7fd97dd5824f8a098d01f1b26643780392b664c5dbeb8595964bc69d3d10d8c7
+    license: public domain; Wikisource CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0/
+translations:
+  - id: hertslet1909
+    translator: "British Foreign Office translation, as printed by Sir Edward Hertslet"
+    year: 1909
+    form: "prose; 'General Act of the Conference of Berlin', marked '(Translation.)', in E. Hertslet, The Map of Africa by Treaty, 3rd ed., revised by R. W. Brant and H. L. Sherwood (London: HMSO, 1909), vol. 2, No. 128, pp. 468-487. Internet Archive, Smithsonian Libraries copy, OCR text"
+    license: public-domain
+    license_url: https://archive.org/details/mapofafricabytre02hert
+    file: sources/hertslet1909-v2.txt
+    url: https://archive.org/download/mapofafricabytre02hert/mapofafricabytre02hert_djvu.txt
+    sha256: 40aaed5a4649d0ce506b568dca701759869a0592a02d8854d345fc8b65cee1f0
+  - id: ajil1909
+    translator: "Unnamed translator, in the Supplement to the American Journal of International Law"
+    year: 1909
+    form: "prose; 'General Act of the Conference of Berlin concerning the Congo', Supplement to the American Journal of International Law, vol. 3 (1909), Official Documents, pp. 7-25. A close, literal rendering that differs from the British one. Internet Archive, OCR text"
+    license: public-domain
+    license_url: https://archive.org/details/sim_american-journal-of-international-law_1909_3_supplement
+    file: sources/ajil1909-supp.txt
+    url: https://archive.org/download/sim_american-journal-of-international-law_1909_3_supplement/sim_american-journal-of-international-law_1909_3_supplement_djvu.txt
+    sha256: 66cfe4c62b6aac64a626be8340db2a705486fab4fc730629a0c80ef0b961bcde
+predicted_gaps:
+  - "a selection, not the whole Act: the list of plenipotentiaries, the six declarations but the last, article 1's eastern and southern boundary lines, articles 6-33 (protection of natives and missions, slave trade, neutrality, navigation of the Congo and Niger) and articles 36-38 are omitted"
+  - "the Wikisource pages are not yet proofread (quality level 1); the edition reproduces them verbatim, including the stray comma in 'viendrait, à en acquérir' (article 34), which the English translations do not reflect; not yet checked against the Gallica scan of the 1898 print"
+  - "the 1898 print is a later official reprint, not the 1885 signed instrument or the Reichsgesetzblatt text"
+  - "the fr1885 scheme follows Passy (1887) and Littré for the Paris norm; the delegates who negotiated the Act spoke French with their own accents, which are not modelled"
+  - "vowel length in fr1885 is shown for the word said alone; inside a phrase it was reduced"
+  - "the edition marks optional liaisons made in formal reading (zf) by judgment, following Littré's notes where he gives one; formal practice varied"
+  - "the numbering 1°, 2°, 3°, 6° is read as premièrement, deuxièmement ...; a reader might equally have said primo, secundo"
+  - "no treebank; lemma, morphology and gloss by hand, draft"
+  - "both English translations are OCR text; clear OCR errors are corrected and listed in each sense file"

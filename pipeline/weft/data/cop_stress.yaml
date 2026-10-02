@@ -1,0 +1,47 @@
+# Stress for weft.coptic (Sahidic Coptic). Used by the coptic-mark edition; add entries for new texts
+# in a per-work file rather than editing these.
+#
+# stress: Greek loanwords, as spelled in Coptic, with the stressed syllable counted from the end of
+#   the word (1 = last). The value follows the accent of the Greek word (LSJ / BDAG headword and
+#   the inflected form the Coptic borrows: ⲡⲉⲓⲣⲁⲍⲉ from πειράζειν, ⲙⲉⲧⲁⲛⲟⲓ from μετανοεῖτε).
+#   That Sahidic speakers kept the Greek accent position is an assumption of this edition. A key
+#   matches the end of a token, so prefixes (ⲙⲡⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ) do not change the count.
+# unstressed: whole tokens read without stress (proclitic and postpositive particles).
+# names: proper names, for the church scheme (ⲇ is d in a name, dh elsewhere).
+stress:
+  ⲁⲣⲭⲏ: 1                 # ἀρχή
+  ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: 3           # εὐαγγέλιον
+  ⲓⲏⲥⲟⲩⲥ: 1               # Ἰησοῦς
+  ⲭⲣⲓⲥⲧⲟⲥ: 1              # Χριστός
+  ⲏⲥⲁⲓⲁⲥ: 1               # Ἠσαΐας (the ι is read y after a vowel, so its syllable is the last)
+  ⲡⲣⲟⲫⲏⲧⲏⲥ: 2             # προφήτης
+  ⲁⲅⲅⲉⲗⲟⲥ: 3              # ἄγγελος
+  ⲉⲣⲏⲙⲟⲥ: 3               # ἔρημος
+  ⲃⲁⲡⲧⲓⲥⲙⲁ: 3             # βάπτισμα
+  ⲕⲏⲣⲩⲥⲥⲉ: 2              # κηρύσσειν
+  ⲙⲉⲧⲁⲛⲟⲓⲁ: 3             # μετάνοια
+  ⲭⲱⲣⲁ: 2                 # χώρα
+  ⲓⲟⲩⲇⲁⲓⲁ: 2              # Ἰουδαία
+  ⲓⲉⲣⲟⲥⲟⲗⲩⲙⲁ: 3           # Ἱεροσόλυμα
+  ⲓⲟⲣⲇⲁⲛⲏⲥ: 2             # Ἰορδάνης
+  ⲉⲝⲟⲙⲟⲗⲟⲅⲓ: 1            # ἐξομολογεῖσθαι
+  ⲓⲱϩⲁⲛⲛⲏⲥ: 2             # Ἰωάννης
+  ϩⲓⲕⲁⲛⲟⲥ: 1              # ἱκανός
+  ⲃⲁⲡⲧⲓⲍⲉ: 2              # βαπτίζειν
+  ⲡⲛⲉⲩⲙⲁ: 2               # πνεῦμα
+  ⲛⲁⲍⲁⲣⲉⲑ: 1              # Ναζαρέθ
+  ⲅⲁⲗⲓⲗⲁⲓⲁ: 2             # Γαλιλαία
+  ⲥⲁⲧⲁⲛⲁⲥ: 1              # Σατανᾶς
+  ⲡⲉⲓⲣⲁⲍⲉ: 2              # πειράζειν
+  ⲑⲏⲣⲓⲟⲛ: 2               # θηρίον
+  ⲇⲓⲁⲕⲟⲛⲓ: 1              # διακονεῖν
+  ⲡⲁⲣⲁⲇⲓⲇⲟⲩ: 1            # παραδιδοῦναι
+  ⲙⲉⲧⲁⲛⲟⲓ: 1              # μετανοεῖτε
+  ⲡⲓⲥⲧⲉⲩⲉ: 2              # πιστεύετε
+  ⲑⲁⲗⲁⲥⲥⲁ: 3              # θάλασσα
+  ⲥⲓⲙⲱⲛ: 2                # Σίμων
+  ⲁⲛⲇⲣⲉⲁⲥ: 2              # Ἀνδρέας
+  ⲓⲁⲕⲱⲃⲟⲥ: 3              # Ἰάκωβος
+  ⲍⲉⲃⲉⲇⲁⲓⲟⲥ: 2            # Ζεβεδαῖος
+unstressed: [ⲕⲁⲧⲁ, ⲇⲉ, ⲅⲁⲣ, ϫⲉ, ⲛϭⲓ, ϩⲛ, ϩⲙ, ⲙⲛ, ⲡⲉ, ⲛⲉ, ⲁⲛ]
+names: [ⲓⲟⲩⲇⲁⲓⲁ, ⲓⲟⲣⲇⲁⲛⲏⲥ, ⲁⲛⲇⲣⲉⲁⲥ, ⲍⲉⲃⲉⲇⲁⲓⲟⲥ, ⲛⲁⲍⲁⲣⲉⲑ]

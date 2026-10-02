@@ -1,0 +1,961 @@
+# Weft edition of the General Act of the Berlin Conference (Acte général de la Conférence
+# africaine, Berlin, 26 February 1885): the preamble's statement of purpose, Chapter I articles 1-5
+# (freedom of trade in the Congo basin) and Chapter VI articles 34-35 (new occupations on the coasts).
+# Text as printed by the French Ministry of Foreign Affairs in Afrique. Arrangements, actes et
+# conventions concernant le nord, l'ouest et le centre de l'Afrique (1881-1898), Documents
+# diplomatiques (Paris: Imprimerie nationale, 1898; Gallica bpt6k56134609), pp. 93-107, transcribed on French Wikisource
+# (pages not yet proofread there) and checked verbatim against the pinned page revisions
+# (`weft draft` reports edition-not-in-source otherwise). verify_strip sets aside the wiki markup
+# for small capitals, bold and superscripts.
+#
+# The print is in modern spelling, so tokens carry no n except where the print differs (Etat).
+#   t     the word as printed, punctuation attached; elided c’ d’ l’ n’ qu’ s’ jusqu’ glued to the next word
+#   p     punctuation set off by a space in the print (French " :" and " ;")
+#   z     liaison in both schemes; zf liaison in formal reading of the 1880s only (fr1885)
+#   Lines are Weft's division of the text at its commas and semicolons; sections are articles.
+joiner: " "
+verify_strip: "'''|\\{\\{AN\\||\\{\\{uc\\||\\{\\{sc\\||\\}\\}|<sup>|</sup>"
+sections:
+  - id: "pre"
+    title: "Preamble: the parties and the purpose of the conference"
+    verify_in: sources/p101.txt
+    lines:
+      - tokens:
+        - {t: "Au"}
+        - {t: "Nom"}
+        - {t: "de"}
+        - {t: "Dieu"}
+        - {t: "Tout-Puissant,"}
+      - tokens:
+        - {t: "Voulant"}
+        - {t: "régler,"}
+        - {t: "dans", z: true}
+        - {t: "un"}
+        - {t: "esprit"}
+        - {t: "de"}
+        - {t: "bonne"}
+        - {t: "entente"}
+        - {t: "mutuelle,"}
+        - {t: "les"}
+        - {t: "conditions"}
+        - {t: "les"}
+        - {t: "plus"}
+        - {t: "favorables"}
+        - {t: "au"}
+        - {t: "développement"}
+        - {t: "du"}
+        - {t: "commerce"}
+        - {t: "et"}
+        - {t: "de"}
+        - {t: "la"}
+        - {t: "civilisation"}
+        - {t: "dans"}
+        - {t: "certaines"}
+        - {t: "régions"}
+        - {t: "de"}
+        - {t: "l’", glue: true}
+        - {t: "Afrique,"}
+      - tokens:
+        - {t: "et"}
+        - {t: "assurer"}
+        - {t: "à"}
+        - {t: "tous"}
+        - {t: "les"}
+        - {t: "peuples"}
+        - {t: "les", z: true}
+        - {t: "avantages"}
+        - {t: "de"}
+        - {t: "la"}
+        - {t: "libre"}
+        - {t: "navigation"}
+        - {t: "sur"}
+        - {t: "les"}
+        - {t: "deux"}
+        - {t: "principaux"}
+        - {t: "fleuves", zf: true}
+        - {t: "africains"}
+        - {t: "qui"}
+        - {t: "se"}
+        - {t: "déversent"}
+        - {t: "dans"}
+        - {t: "l’", glue: true}
+        - {t: "Océan"}
+        - {t: "Atlantique", p: ";"}
+      - tokens:
+        - {t: "désireux,"}
+        - {t: "d’", glue: true}
+        - {t: "autre"}
+        - {t: "part,"}
+        - {t: "de"}
+        - {t: "prévenir"}
+        - {t: "les"}
+        - {t: "malentendus"}
+        - {t: "et"}
+        - {t: "les"}
+        - {t: "contestations"}
+        - {t: "que"}
+        - {t: "pourraient"}
+        - {t: "soulever"}
+        - {t: "à"}
+        - {t: "l’", glue: true}
+        - {t: "avenir"}
+        - {t: "les"}
+        - {t: "prises"}
+        - {t: "de"}
+        - {t: "possessions"}
+        - {t: "nouvelles"}
+        - {t: "sur"}
+        - {t: "les"}
+        - {t: "côtes"}
+        - {t: "de"}
+        - {t: "l’", glue: true}
+        - {t: "Afrique,"}
+      - tokens:
+        - {t: "et"}
+        - {t: "préoccupés"}
+        - {t: "en"}
+        - {t: "même"}
+        - {t: "temps"}
+        - {t: "des"}
+        - {t: "moyens"}
+        - {t: "d’", glue: true}
+        - {t: "accroître"}
+        - {t: "le"}
+        - {t: "bien-être"}
+        - {t: "moral"}
+        - {t: "et"}
+        - {t: "matériel"}
+        - {t: "des"}
+        - {t: "populations", zf: true}
+        - {t: "indigènes,"}
+      - tokens:
+        - {t: "ont"}
+        - {t: "résolu,"}
+        - {t: "sur"}
+        - {t: "l’", glue: true}
+        - {t: "invitation"}
+        - {t: "qui"}
+        - {t: "leur"}
+        - {t: "a"}
+        - {t: "été"}
+        - {t: "adressée"}
+        - {t: "par"}
+        - {t: "le"}
+        - {t: "Gouvernement", zf: true}
+        - {t: "Impérial"}
+        - {t: "d’", glue: true}
+        - {t: "Allemagne"}
+        - {t: "d’", glue: true}
+        - {t: "accord"}
+        - {t: "avec"}
+        - {t: "le"}
+        - {t: "Gouvernement"}
+        - {t: "de"}
+        - {t: "la"}
+        - {t: "République"}
+        - {t: "Française,"}
+      - tokens:
+        - {t: "de"}
+        - {t: "réunir"}
+        - {t: "à"}
+        - {t: "cette"}
+        - {t: "fin"}
+        - {t: "une"}
+        - {t: "conférence"}
+        - {t: "à"}
+        - {t: "Berlin,"}
+        - {t: "et"}
+        - {t: "ont"}
+        - {t: "nommé"}
+        - {t: "pour"}
+        - {t: "Leurs"}
+        - {t: "Plénipotentiaires,"}
+        - {t: "savoir", p: ":"}
+  - id: "dec"
+    title: "Preamble: the sixth declaration, and the single act"
+    verify_in: sources/p104.txt
+    lines:
+      - tokens:
+        - {t: "6°"}
+        - {t: "Une"}
+        - {t: "déclaration"}
+        - {t: "introduisant"}
+        - {t: "dans"}
+        - {t: "les"}
+        - {t: "rapports", zf: true}
+        - {t: "internationaux"}
+        - {t: "des"}
+        - {t: "règles", zf: true}
+        - {t: "uniformes"}
+        - {t: "relatives"}
+        - {t: "aux", z: true}
+        - {t: "occupations"}
+        - {t: "qui"}
+        - {t: "pourront", zf: true}
+        - {t: "avoir"}
+        - {t: "lieu"}
+        - {t: "à"}
+        - {t: "l’", glue: true}
+        - {t: "avenir"}
+        - {t: "sur"}
+        - {t: "les"}
+        - {t: "côtes"}
+        - {t: "du"}
+        - {t: "continent"}
+        - {t: "africain."}
+      - tokens:
+        - {t: "Et"}
+        - {t: "ayant"}
+        - {t: "jugé"}
+        - {t: "que"}
+        - {t: "ces"}
+        - {t: "différents"}
+        - {t: "documents"}
+        - {t: "pourraient", zf: true}
+        - {t: "être"}
+        - {t: "utilement"}
+        - {t: "coordonnés"}
+        - {t: "en", z: true}
+        - {t: "un"}
+        - {t: "seul"}
+        - {t: "instrument,"}
+        - {t: "les", z: true}
+        - {t: "ont"}
+        - {t: "réunis", zf: true}
+        - {t: "en"}
+        - {t: "un", z: true}
+        - {t: "Acte"}
+        - {t: "général"}
+        - {t: "composé"}
+        - {t: "des", z: true}
+        - {t: "articles"}
+        - {t: "suivants", p: ":"}
+  - id: "a1"
+    title: "Chapter I, Article 1: the area of free trade"
+    verify_in: sources/p104.txt
+    lines:
+      - tokens:
+        - {t: "Déclaration"}
+        - {t: "relative"}
+        - {t: "à"}
+        - {t: "la"}
+        - {t: "liberté"}
+        - {t: "du"}
+        - {t: "commerce"}
+        - {t: "dans"}
+        - {t: "le"}
+        - {t: "bassin"}
+        - {t: "du"}
+        - {t: "Congo,"}
+        - {t: "ses"}
+        - {t: "embouchures"}
+        - {t: "et"}
+        - {t: "pays"}
+        - {t: "circonvoisins,"}
+        - {t: "et"}
+        - {t: "dispositions"}
+        - {t: "connexes."}
+      - tokens:
+        - {t: "Le"}
+        - {t: "commerce"}
+        - {t: "de"}
+        - {t: "toutes"}
+        - {t: "les"}
+        - {t: "nations"}
+        - {t: "jouira"}
+        - {t: "d’", glue: true}
+        - {t: "une"}
+        - {t: "complète"}
+        - {t: "liberté", p: ":"}
+      - tokens:
+        - {t: "1°"}
+        - {t: "Dans"}
+        - {t: "tous"}
+        - {t: "les"}
+        - {t: "territoires"}
+        - {t: "constituant"}
+        - {t: "le"}
+        - {t: "bassin"}
+        - {t: "du"}
+        - {t: "Congo"}
+        - {t: "et"}
+        - {t: "de"}
+        - {t: "ses"}
+        - {t: "affluents."}
+      - tokens:
+        - {t: "Ce"}
+        - {t: "bassin"}
+        - {t: "est"}
+        - {t: "délimité"}
+        - {t: "par"}
+        - {t: "les"}
+        - {t: "crêtes"}
+        - {t: "des"}
+        - {t: "bassins"}
+        - {t: "contigus,"}
+        - {t: "à"}
+        - {t: "savoir,"}
+        - {t: "notamment,"}
+        - {t: "les"}
+        - {t: "bassins"}
+        - {t: "du"}
+        - {t: "Niari,"}
+        - {t: "de"}
+        - {t: "l’", glue: true}
+        - {t: "Ogowé,"}
+        - {t: "du"}
+        - {t: "Schari"}
+        - {t: "et"}
+        - {t: "du"}
+        - {t: "Nil,"}
+        - {t: "au"}
+        - {t: "Nord", p: ";"}
+      - tokens:
+        - {t: "Il"}
+        - {t: "embrasse,"}
+        - {t: "en"}
+        - {t: "conséquence,"}
+        - {t: "tous"}
+        - {t: "les"}
+        - {t: "territoires"}
+        - {t: "drainés"}
+        - {t: "par"}
+        - {t: "le"}
+        - {t: "Congo"}
+        - {t: "et"}
+        - {t: "ses", z: true}
+        - {t: "affluents,"}
+        - {t: "y"}
+        - {t: "compris"}
+        - {t: "le"}
+        - {t: "lac"}
+        - {t: "Tanganyka"}
+        - {t: "et"}
+        - {t: "ses"}
+        - {t: "tributaires", zf: true}
+        - {t: "orientaux", p: ";"}
+      - tokens:
+        - {t: "2°"}
+        - {t: "Dans"}
+        - {t: "la"}
+        - {t: "zone"}
+        - {t: "maritime"}
+        - {t: "s’", glue: true}
+        - {t: "étendant"}
+        - {t: "sur"}
+        - {t: "l’", glue: true}
+        - {t: "Océan"}
+        - {t: "Atlantique"}
+        - {t: "depuis"}
+        - {t: "le"}
+        - {t: "parallèle"}
+        - {t: "situé"}
+        - {t: "par"}
+        - {t: "2°30’"}
+        - {t: "de"}
+        - {t: "latitude"}
+        - {t: "Sud"}
+        - {t: "jusqu’", glue: true}
+        - {t: "à"}
+        - {t: "l’", glue: true}
+        - {t: "embouchure"}
+        - {t: "de"}
+        - {t: "la"}
+        - {t: "Logé."}
+      - tokens:
+        - {t: "3°"}
+        - {t: "Dans"}
+        - {t: "la"}
+        - {t: "zone"}
+        - {t: "se"}
+        - {t: "prolongeant"}
+        - {t: "à"}
+        - {t: "l’", glue: true}
+        - {t: "Est"}
+        - {t: "du"}
+        - {t: "bassin"}
+        - {t: "du"}
+        - {t: "Congo,"}
+        - {t: "tel"}
+        - {t: "qu’", glue: true}
+        - {t: "il"}
+        - {t: "est"}
+        - {t: "délimité"}
+        - {t: "ci-dessus"}
+        - {t: "jusqu’", glue: true}
+        - {t: "à"}
+        - {t: "l’", glue: true}
+        - {t: "Océan"}
+        - {t: "Indien,"}
+        - {t: "depuis"}
+        - {t: "le"}
+        - {t: "cinquième"}
+        - {t: "degré"}
+        - {t: "de"}
+        - {t: "latitude"}
+        - {t: "Nord"}
+        - {t: "jusqu’", glue: true}
+        - {t: "à"}
+        - {t: "l’", glue: true}
+        - {t: "embouchure"}
+        - {t: "du"}
+        - {t: "Zambèze,"}
+        - {t: "au"}
+        - {t: "Sud", p: ";"}
+      - tokens:
+        - {t: "Il"}
+        - {t: "est", z: true}
+        - {t: "expressément", zf: true}
+        - {t: "entendu"}
+        - {t: "qu’", glue: true}
+        - {t: "en", z: true}
+        - {t: "étendant"}
+        - {t: "à"}
+        - {t: "cette"}
+        - {t: "zone"}
+        - {t: "orientale"}
+        - {t: "le"}
+        - {t: "principe"}
+        - {t: "de"}
+        - {t: "la"}
+        - {t: "liberté"}
+        - {t: "commerciale,"}
+        - {t: "les"}
+        - {t: "Puissances"}
+        - {t: "représentées"}
+        - {t: "à"}
+        - {t: "la"}
+        - {t: "Conférence"}
+        - {t: "ne"}
+        - {t: "s’", glue: true}
+        - {t: "engagent"}
+        - {t: "que"}
+        - {t: "pour"}
+        - {t: "elles-mêmes"}
+      - tokens:
+        - {t: "et"}
+        - {t: "que"}
+        - {t: "ce"}
+        - {t: "principe"}
+        - {t: "ne"}
+        - {t: "s’", glue: true}
+        - {t: "appliquera"}
+        - {t: "aux"}
+        - {t: "territoires", zf: true}
+        - {t: "appartenant"}
+        - {t: "actuellement"}
+        - {t: "à"}
+        - {t: "quelque"}
+        - {t: "Etat", n: "État", zf: true}
+        - {t: "indépendant"}
+        - {t: "et"}
+        - {t: "souverain"}
+        - {t: "qu’", glue: true}
+        - {t: "autant"}
+        - {t: "que"}
+        - {t: "celui-ci"}
+        - {t: "y"}
+        - {t: "donnera"}
+        - {t: "son"}
+        - {t: "consentement."}
+  - id: "a2"
+    title: "Article 2: access for all flags"
+    verify_in: sources/p105.txt
+    lines:
+      - tokens:
+        - {t: "Tous"}
+        - {t: "les"}
+        - {t: "pavillons,"}
+        - {t: "sans"}
+        - {t: "distinction"}
+        - {t: "de"}
+        - {t: "nationalité,"}
+        - {t: "auront"}
+        - {t: "libre"}
+        - {t: "accès"}
+        - {t: "à"}
+        - {t: "tout"}
+        - {t: "le"}
+        - {t: "littoral"}
+        - {t: "des"}
+        - {t: "territoires", zf: true}
+        - {t: "énumérés"}
+        - {t: "ci-dessus,"}
+      - tokens:
+        - {t: "aux"}
+        - {t: "rivières"}
+        - {t: "qui"}
+        - {t: "s’", glue: true}
+        - {t: "y"}
+        - {t: "déversent"}
+        - {t: "dans"}
+        - {t: "la"}
+        - {t: "mer,"}
+        - {t: "à"}
+        - {t: "toutes"}
+        - {t: "les", z: true}
+        - {t: "eaux"}
+        - {t: "du"}
+        - {t: "Congo"}
+        - {t: "et"}
+        - {t: "de"}
+        - {t: "ses", z: true}
+        - {t: "affluents,"}
+        - {t: "y"}
+        - {t: "compris"}
+        - {t: "les"}
+        - {t: "lacs,"}
+        - {t: "à"}
+        - {t: "tous"}
+        - {t: "les"}
+        - {t: "ports"}
+        - {t: "situés"}
+        - {t: "sur"}
+        - {t: "les"}
+        - {t: "bords"}
+        - {t: "de"}
+        - {t: "ces", z: true}
+        - {t: "eaux,"}
+      - tokens:
+        - {t: "ainsi"}
+        - {t: "qu’", glue: true}
+        - {t: "à"}
+        - {t: "tous"}
+        - {t: "les"}
+        - {t: "canaux"}
+        - {t: "qui"}
+        - {t: "pourraient", zf: true}
+        - {t: "être"}
+        - {t: "creusés"}
+        - {t: "à"}
+        - {t: "l’", glue: true}
+        - {t: "avenir"}
+        - {t: "dans"}
+        - {t: "le"}
+        - {t: "but"}
+        - {t: "de"}
+        - {t: "relier"}
+        - {t: "entre"}
+        - {t: "eux"}
+        - {t: "les"}
+        - {t: "cours"}
+        - {t: "d’", glue: true}
+        - {t: "eau"}
+        - {t: "ou"}
+        - {t: "les"}
+        - {t: "lacs"}
+        - {t: "compris"}
+        - {t: "dans"}
+        - {t: "toute"}
+        - {t: "l’", glue: true}
+        - {t: "étendue"}
+        - {t: "des"}
+        - {t: "territoires"}
+        - {t: "décrits", zf: true}
+        - {t: "à"}
+        - {t: "l’", glue: true}
+        - {t: "article"}
+        - {t: "Ier."}
+      - tokens:
+        - {t: "Ils"}
+        - {t: "pourront", zf: true}
+        - {t: "entreprendre"}
+        - {t: "toute"}
+        - {t: "espèce"}
+        - {t: "de"}
+        - {t: "transports"}
+        - {t: "et"}
+        - {t: "exercer"}
+        - {t: "le"}
+        - {t: "cabotage"}
+        - {t: "maritime"}
+        - {t: "et"}
+        - {t: "fluvial"}
+        - {t: "ainsi"}
+        - {t: "que"}
+        - {t: "la"}
+        - {t: "batellerie"}
+        - {t: "sur"}
+        - {t: "le"}
+        - {t: "même"}
+        - {t: "pied"}
+        - {t: "que"}
+        - {t: "les"}
+        - {t: "nationaux."}
+  - id: "a3"
+    title: "Article 3: no taxes but fair compensation"
+    verify_in: sources/p105.txt
+    lines:
+      - tokens:
+        - {t: "Les"}
+        - {t: "marchandises"}
+        - {t: "de"}
+        - {t: "toute"}
+        - {t: "provenance"}
+        - {t: "importées"}
+        - {t: "dans"}
+        - {t: "ces"}
+        - {t: "territoires,"}
+        - {t: "sous"}
+        - {t: "quelque"}
+        - {t: "pavillon"}
+        - {t: "que"}
+        - {t: "ce"}
+        - {t: "soit,"}
+        - {t: "par"}
+        - {t: "la"}
+        - {t: "voie"}
+        - {t: "maritime"}
+        - {t: "ou"}
+        - {t: "fluviale"}
+        - {t: "ou"}
+        - {t: "par"}
+        - {t: "celle"}
+        - {t: "de"}
+        - {t: "terre,"}
+      - tokens:
+        - {t: "n’", glue: true}
+        - {t: "auront", zf: true}
+        - {t: "à"}
+        - {t: "acquitter"}
+        - {t: "d’", glue: true}
+        - {t: "autres"}
+        - {t: "taxes"}
+        - {t: "que"}
+        - {t: "celles"}
+        - {t: "qui"}
+        - {t: "pourraient", zf: true}
+        - {t: "être"}
+        - {t: "perçues"}
+        - {t: "comme"}
+        - {t: "une"}
+        - {t: "équitable"}
+        - {t: "compensation"}
+        - {t: "de"}
+        - {t: "dépenses", zf: true}
+        - {t: "utiles"}
+        - {t: "pour"}
+        - {t: "le"}
+        - {t: "commerce"}
+      - tokens:
+        - {t: "et"}
+        - {t: "qui,"}
+        - {t: "à"}
+        - {t: "ce"}
+        - {t: "titre,"}
+        - {t: "devront", zf: true}
+        - {t: "être"}
+        - {t: "également"}
+        - {t: "supportées"}
+        - {t: "par"}
+        - {t: "les"}
+        - {t: "nationaux"}
+        - {t: "et"}
+        - {t: "par"}
+        - {t: "les", z: true}
+        - {t: "étrangers"}
+        - {t: "de"}
+        - {t: "toute"}
+        - {t: "nationalité."}
+      - tokens:
+        - {t: "Tout"}
+        - {t: "traitement"}
+        - {t: "différentiel"}
+        - {t: "est", zf: true}
+        - {t: "interdit"}
+        - {t: "à"}
+        - {t: "l’", glue: true}
+        - {t: "égard"}
+        - {t: "des"}
+        - {t: "navires"}
+        - {t: "comme"}
+        - {t: "des"}
+        - {t: "marchandises."}
+  - id: "a4"
+    title: "Article 4: no import or transit duties, for twenty years"
+    verify_in: sources/p105.txt
+    lines:
+      - tokens:
+        - {t: "Les"}
+        - {t: "marchandises", zf: true}
+        - {t: "importées"}
+        - {t: "dans"}
+        - {t: "ces"}
+        - {t: "territoires"}
+        - {t: "resteront", zf: true}
+        - {t: "affranchies"}
+        - {t: "de"}
+        - {t: "droits"}
+        - {t: "d’", glue: true}
+        - {t: "entrée"}
+        - {t: "et"}
+        - {t: "de"}
+        - {t: "transit."}
+      - tokens:
+        - {t: "Les"}
+        - {t: "Puissances"}
+        - {t: "se"}
+        - {t: "réservent"}
+        - {t: "de"}
+        - {t: "décider,"}
+        - {t: "au"}
+        - {t: "terme"}
+        - {t: "d’", glue: true}
+        - {t: "une"}
+        - {t: "période"}
+        - {t: "de"}
+        - {t: "vingt", z: true}
+        - {t: "années,"}
+        - {t: "si"}
+        - {t: "la"}
+        - {t: "franchise"}
+        - {t: "d’", glue: true}
+        - {t: "entrée"}
+        - {t: "sera"}
+        - {t: "ou"}
+        - {t: "non"}
+        - {t: "maintenue."}
+  - id: "a5"
+    title: "Article 5: no monopoly, equal treatment of foreigners"
+    verify_in: sources/p105.txt
+    lines:
+      - tokens:
+        - {t: "Toute"}
+        - {t: "Puissance"}
+        - {t: "qui"}
+        - {t: "exerce"}
+        - {t: "ou"}
+        - {t: "exercera"}
+        - {t: "des"}
+        - {t: "droits"}
+        - {t: "de"}
+        - {t: "souveraineté"}
+        - {t: "dans"}
+        - {t: "les"}
+        - {t: "territoires"}
+        - {t: "susvisés"}
+        - {t: "ne"}
+        - {t: "pourra"}
+        - {t: "y"}
+        - {t: "concéder"}
+        - {t: "ni"}
+        - {t: "monopole"}
+        - {t: "ni"}
+        - {t: "privilège"}
+        - {t: "d’", glue: true}
+        - {t: "aucune"}
+        - {t: "espèce"}
+        - {t: "en"}
+        - {t: "matière"}
+        - {t: "commerciale."}
+      - tokens:
+        - {t: "Les", z: true}
+        - {t: "étrangers", zf: true}
+        - {t: "y"}
+        - {t: "jouiront", zf: true}
+        - {t: "indistinctement,"}
+        - {t: "pour"}
+        - {t: "la"}
+        - {t: "protection"}
+        - {t: "de"}
+        - {t: "leurs"}
+        - {t: "personnes"}
+        - {t: "et"}
+        - {t: "de"}
+        - {t: "leurs"}
+        - {t: "biens,"}
+      - tokens:
+        - {t: "l’", glue: true}
+        - {t: "acquisition"}
+        - {t: "et"}
+        - {t: "la"}
+        - {t: "transmission"}
+        - {t: "de"}
+        - {t: "leurs"}
+        - {t: "propriétés"}
+        - {t: "mobilières"}
+        - {t: "et"}
+        - {t: "immobilières"}
+        - {t: "et"}
+        - {t: "pour"}
+        - {t: "l’", glue: true}
+        - {t: "exercice"}
+        - {t: "des"}
+        - {t: "professions,"}
+        - {t: "du"}
+        - {t: "même"}
+        - {t: "traitement"}
+        - {t: "et"}
+        - {t: "des"}
+        - {t: "mêmes"}
+        - {t: "droits"}
+        - {t: "que"}
+        - {t: "les"}
+        - {t: "nationaux."}
+  - id: "a34"
+    title: "Chapter VI, Article 34: notification"
+    verify_in: sources/p115.txt
+    lines:
+      - tokens:
+        - {t: "Déclaration"}
+        - {t: "relative"}
+        - {t: "aux"}
+        - {t: "conditions", zf: true}
+        - {t: "essentielles"}
+        - {t: "à"}
+        - {t: "remplir"}
+        - {t: "pour"}
+        - {t: "que"}
+        - {t: "des"}
+        - {t: "occupations"}
+        - {t: "nouvelles"}
+        - {t: "sur"}
+        - {t: "les"}
+        - {t: "côtes"}
+        - {t: "du"}
+        - {t: "continent"}
+        - {t: "Africain"}
+        - {t: "soient"}
+        - {t: "considérées"}
+        - {t: "comme"}
+        - {t: "effectives."}
+      - tokens:
+        - {t: "La"}
+        - {t: "Puissance"}
+        - {t: "qui,"}
+        - {t: "dorénavant,"}
+        - {t: "prendra"}
+        - {t: "possession"}
+        - {t: "d’", glue: true}
+        - {t: "un"}
+        - {t: "territoire"}
+        - {t: "sur"}
+        - {t: "les"}
+        - {t: "côtes"}
+        - {t: "du"}
+        - {t: "Continent"}
+        - {t: "africain"}
+        - {t: "situé"}
+        - {t: "en"}
+        - {t: "dehors"}
+        - {t: "de"}
+        - {t: "ses"}
+        - {t: "possessions", zf: true}
+        - {t: "actuelles,"}
+      - tokens:
+        - {t: "ou"}
+        - {t: "qui,"}
+        - {t: "n’", glue: true}
+        - {t: "en", z: true}
+        - {t: "ayant"}
+        - {t: "pas", zf: true}
+        - {t: "eu"}
+        - {t: "jusque-là,"}
+        - {t: "viendrait,"}
+        - {t: "à"}
+        - {t: "en", z: true}
+        - {t: "acquérir,"}
+      - tokens:
+        - {t: "et"}
+        - {t: "de"}
+        - {t: "même"}
+        - {t: "la"}
+        - {t: "Puissance"}
+        - {t: "qui"}
+        - {t: "y"}
+        - {t: "assumera"}
+        - {t: "un"}
+        - {t: "protectorat,"}
+      - tokens:
+        - {t: "accompagnera"}
+        - {t: "l’", glue: true}
+        - {t: "Acte"}
+        - {t: "respectif"}
+        - {t: "d’", glue: true}
+        - {t: "une"}
+        - {t: "notification"}
+        - {t: "adressée"}
+        - {t: "aux", z: true}
+        - {t: "autres"}
+        - {t: "Puissances"}
+        - {t: "signataires"}
+        - {t: "du"}
+        - {t: "présent", z: true}
+        - {t: "Acte,"}
+      - tokens:
+        - {t: "afin"}
+        - {t: "de"}
+        - {t: "les"}
+        - {t: "mettre"}
+        - {t: "à"}
+        - {t: "même"}
+        - {t: "de"}
+        - {t: "faire"}
+        - {t: "valoir,"}
+        - {t: "s’", glue: true}
+        - {t: "il"}
+        - {t: "y"}
+        - {t: "a"}
+        - {t: "lieu,"}
+        - {t: "leurs"}
+        - {t: "réclamations."}
+  - id: "a35"
+    title: "Article 35: an authority sufficient"
+    verify_in: sources/p115.txt
+    lines:
+      - tokens:
+        - {t: "Les"}
+        - {t: "Puissances"}
+        - {t: "signataires"}
+        - {t: "du"}
+        - {t: "présent", z: true}
+        - {t: "Acte"}
+        - {t: "reconnaissent"}
+        - {t: "l’", glue: true}
+        - {t: "obligation"}
+        - {t: "d’", glue: true}
+        - {t: "assurer,"}
+        - {t: "dans"}
+        - {t: "les"}
+        - {t: "territoires", zf: true}
+        - {t: "occupés"}
+        - {t: "par"}
+        - {t: "elles,"}
+        - {t: "sur"}
+        - {t: "les"}
+        - {t: "côtes"}
+        - {t: "du"}
+        - {t: "Continent"}
+        - {t: "africain,"}
+      - tokens:
+        - {t: "l’", glue: true}
+        - {t: "existence"}
+        - {t: "d’", glue: true}
+        - {t: "une"}
+        - {t: "autorité"}
+        - {t: "suffisante"}
+        - {t: "pour"}
+        - {t: "faire"}
+        - {t: "respecter"}
+        - {t: "les"}
+        - {t: "droits", zf: true}
+        - {t: "acquis"}
+      - tokens:
+        - {t: "et,"}
+        - {t: "le"}
+        - {t: "cas"}
+        - {t: "échéant,"}
+        - {t: "la"}
+        - {t: "liberté"}
+        - {t: "du"}
+        - {t: "commerce"}
+        - {t: "et"}
+        - {t: "du"}
+        - {t: "transit"}
+        - {t: "dans"}
+        - {t: "les"}
+        - {t: "conditions", zf: true}
+        - {t: "où"}
+        - {t: "elle"}
+        - {t: "serait"}
+        - {t: "stipulée."}

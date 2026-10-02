@@ -1,0 +1,74 @@
+work: swahili-tales-steere
+title: The Kites and the Crows (Kisa cha mwewe na kunguru)
+author: told by Hamisi wa Kayi (Khamis bin Abubekr); taken down and translated by Edward Steere (1828–1882)
+language: sw
+lang_name: Swahili (Zanzibar, 1870)
+prefix: kites                     # kites.<paragraph>.<line>[.<token>]; Steere's paragraphs
+urn: urn:weft:sw:steere.swahilitales.kites   # Weft-local identifier
+unit: section
+section_noun: paragraph
+written: {year: 1870, display: "1870", label: "told at Zanzibar in the later 1860s and printed by Edward Steere in Swahili Tales, as told by Natives of Zanzibar (London, 1870), pages 364-367"}
+status: phase-0
+pilot: {sections: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]}
+edition:
+  id: steere1870
+  name: "Swahili Tales, as told by Natives of Zanzibar, with an English translation, by Edward Steere (London: Bell and Daldy, 1870), pages 364 and 366, Kisa cha mwewe na kunguru, the whole tale. Transcribed by Weft from the page scans of the archive.org copy (swahilitalesast00steegoog, Oxford University), checked verbatim against the proofread transcription on multilingual Wikisource and against the archive.org OCR"
+  format: weft-edition
+  file: edition.yaml
+  license: "the tale and Steere's edition (1870) are public domain; Wikisource transcription CC BY-SA 4.0; Weft's line division, modern forms and annotation CC BY-SA 4.0"
+treebank: null                    # no treebank for 19th-century Swahili; lemma, morphology and gloss by hand, draft
+schemes: [z1870, modern]          # default = Zanzibar Swahili about 1870, read from Steere's letters (approximate)
+sound_confidence: medium          # reconstructed from Steere's own description of the sounds; no recording
+sources_extra:
+  - id: ws-page364
+    name: "Page:Swahili tales.djvu/384 (printed page 364), multilingual Wikisource, revision 603286, proofread (level 3)"
+    file: sources/ws-page364.txt
+    url: "https://wikisource.org/w/index.php?oldid=603286&action=raw"
+    sha256: d824c3277e2f5a0bad69aa9c8669b9607f8550673866c6f75dc79432a7c9eff2
+    license: public domain text (1870); Wikisource transcription CC BY-SA 4.0
+    license_url: https://wikisource.org/wiki/Swahili_Tales/Kisa_cha_mwewe_na_kunguru
+  - id: ws-page366
+    name: "Page:Swahili tales.djvu/386 (printed page 366), multilingual Wikisource, revision 603287, proofread (level 3)"
+    file: sources/ws-page366.txt
+    url: "https://wikisource.org/w/index.php?oldid=603287&action=raw"
+    sha256: 3ac5c767a996e94ae1d0682160d7af4de43c53ac0d1068db17538dcd4c2ecc9f
+    license: public domain text (1870); Wikisource transcription CC BY-SA 4.0
+    license_url: https://wikisource.org/wiki/Swahili_Tales/Kisa_cha_mwewe_na_kunguru
+  - id: steere1870-ocr
+    name: "Swahili Tales (1870), full-text OCR of the Internet Archive item swahilitalesast00steegoog (Google scan of the Oxford University copy); used by the OCR sensor in pipeline/weft/swahili.py"
+    file: sources/steere1870-ocr.txt
+    url: https://archive.org/download/swahilitalesast00steegoog/swahilitalesast00steegoog_djvu.txt
+    sha256: c0479b51364cdf6d5ad849e299d602ffd2868201ac4131d05c585eab4874cf31
+    license: "public domain (published 1870; Steere died 1882). The scan carries Google's request to limit use to non-commercial purposes, which is a request, not a license condition on a public-domain text; it is used here only as a check and is never committed"
+    license_url: https://archive.org/details/swahilitalesast00steegoog
+  - id: en-page367
+    name: "Page:Swahili tales.djvu/387 (printed page 367, Steere's English, second page), English Wikisource, revision 8309970, proofread (level 3)"
+    file: sources/en-page367.txt
+    url: "https://en.wikisource.org/w/index.php?oldid=8309970&action=raw"
+    sha256: 537048a278920c8cb2d6c0fef613a097f5b4eba70cee428d59e872729b19905e
+    license: public domain text (1870); Wikisource transcription CC BY-SA 4.0
+    license_url: https://en.wikisource.org/wiki/Swahili_Tales/The_Kites_and_the_Crows
+  - id: steere-handbook
+    name: "Edward Steere, A Handbook of the Swahili Language as Spoken at Zanzibar, third edition revised by A. C. Madan (London: SPCK, 1884; printing of 1919), OCR of the Cornell University Library copy, Internet Archive item cu31924075787907. The source for the letter values of the first sound scheme (pages 8-15) and for the notes on the Arabic script (pages 5-6) and the noun classes (page 16)"
+    file: sources/steere-handbook.txt
+    url: https://archive.org/download/cu31924075787907/cu31924075787907_djvu.txt
+    sha256: 054dbef698b7fe0b974768ea444a6e1df7d1fbcbfafed12a4a852e0a18722069
+    license: "public domain (Steere died 1882, Madan 1917; this printing 1919)"
+    license_url: https://archive.org/details/cu31924075787907
+translations:
+  - id: steere1870
+    translator: Edward Steere
+    year: 1870
+    form: "prose, on the facing pages of Swahili Tales (1870), pages 365 and 367; Steere says he made it \"as literal as possible\" for learners. Text of the proofread English Wikisource transcription, checked against the page scans"
+    license: public-domain
+    license_url: https://en.wikisource.org/wiki/Swahili_Tales/The_Kites_and_the_Crows
+    file: sources/en-page365.txt
+    url: "https://en.wikisource.org/w/index.php?oldid=8309969&action=raw"
+    sha256: 875e3b389596bb5973b910c3a90749857068db557e6009cf90a7f1741d2969ae
+predicted_gaps:
+  - "one English translation only: no other public-domain English translation of this tale was found. The Sheldon Press selection of 1927 (The Hare and the Lion, and other tales from Bishop Steere's Swahili Tales) reprints Steere's own English"
+  - "the archive.org OCR misreads Steere's type often (n for u, b for h, a for u); each of the 37 tokens where it differs from the scan declares the OCR reading (ocr field in edition.yaml), checked against the scan"
+  - "the 1870 sound scheme reads Steere's letters by the values his Handbook gives them; the Handbook used is the third edition (1884), revised by A. C. Madan after Steere's death, and no recording exists. The aspirated p, t, k Steere describes, implosive b, d, g and tone are not modelled"
+  - "double consonants in Arabic loans (hatta, assubui) are sounded as written in the 1870 scheme; Steere's Handbook says they were often reduced to one"
+  - "the modern standard form (n) modernizes spelling and the shape of a word, not grammar: Sultani ya, naliwaambia, ndio and the verb enenda are kept as the narrator said them"
+  - "no treebank; lemma, morphology and gloss by hand, draft. Noun classes use the UD feature NounClass (Bantu1-Bantu18); the build's morphology display does not yet decode NounClass or Aspect, so the class shows in the gloss of agreeing words"

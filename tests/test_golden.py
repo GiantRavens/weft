@@ -490,3 +490,17 @@ def test_japanese_kanbun_and_heike_check():
         assert r["ok"], (work, r["problems"])
     g = yaml.safe_load((REPO / "texts" / "buke-shohatto-1615" / "gen" / "sections.yaml").read_text())
     assert all(l.get("reading") for l in g["lines"])
+
+
+def test_mongol_rus_coptic_swahili_and_charters_check():
+    """Middle Mongolian, Old East Slavic, Sahidic Coptic, Swahili, and the Berlin Act's 1885 French pass their checks."""
+    for work in ("secret-history-mongols", "primary-chronicle-varangians", "coptic-mark", "swahili-tales-steere", "berlin-act-1885", "saer-de-quincy-charters"):
+        r = check.run(REPO, work)
+        assert r["ok"], (work, r["problems"])
+
+
+def test_no_shadowed_tests():
+    """Sensor: two test functions with the same name silently replace each other, so one never runs."""
+    import collections, re
+    names = re.findall(r"^def (test_\w+)", Path(__file__).read_text(), re.M)
+    assert [n for n, k in collections.Counter(names).items() if k > 1] == []

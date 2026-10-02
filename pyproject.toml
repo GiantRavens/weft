@@ -6,6 +6,9 @@ requires-python = ">=3.11"
 dependencies = ["pyyaml>=6"]
 license = "MIT"
 
+[project.optional-dependencies]
+previews = ["playwright>=1.45"]
+
 [project.scripts]
 weft = "weft.cli:main"
 

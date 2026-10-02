@@ -1,0 +1,28 @@
+# The Ming summary translation (總譯, zongyi) that follows each section in the Ming text, in Chinese,
+# verbatim as Shiratori (1943) prints it, from the pinned Japanese Wikisource transcription
+# (sources/shiratori1943-module.lua). The column breaks of the print are joined; Shiratori's hyphens
+# inside names are removed (he inserted them, 凡例); his parentheses, which mark his corrections, are
+# kept, and the shoulder marks 中 and 舌 are set aside as in the surface row. No other changes.
+translation: zongyi
+aligned_by: hand, phase 0; one span per section, as the Ming text places it
+spans:
+- lines: [shm.1.1, shm.1.5]
+  text: "當初元朝的人祖。是天生一箇蒼色的狼。與一箇慘白色的鹿相配了。同渡過騰吉思名字的水來。到於斡難名字的河源頭。不兒罕名字的山前住着。產了一箇人名字喚作巴塔赤罕。"
+- lines: [shm.2.1, shm.2.4]
+  text: "巴塔赤罕生的子。名塔馬察。塔馬察生的子。名豁里察兒篾兒干。豁里察兒篾兒干生的子。名阿兀站孛羅溫(勒)。阿兀站孛羅(勒)生的子。名撒里合察兀。撒里合察兀生的子。名也客你敦。也客你敦生的子。名撏鎻赤。撏鎻赤生的子。名合兒出。"
+- lines: [shm.3.1, shm.3.5]
+  text: "合兒出生的子。名孛兒只吉歹篾兒干。孛兒只吉歹篾兒干的妻。名忙豁勒眞豁阿。他生的子名脫羅豁勒眞伯顏。脫羅豁勒眞的妻。名孛羅黑臣豁阿。他有一箇家奴後生。名孛羅(勒)歹速牙勒必。又有兩箇好騸馬。一箇荅亦兒馬。一箇孛羅馬。脫羅豁勒眞生二子。一箇名都蛙鎻豁兒。一箇名朶奔篾兒干。"
+- lines: [shm.4.1, shm.4.2]
+  text: "都蛙鎻豁兒獨額中生一隻眼。望見三程遠地的勢物。"
+- lines: [shm.5.1, shm.5.4]
+  text: "一日都蛙鎖豁兒。同弟朶奔篾兒干。上不兒罕山上去。都蛙鎖豁兒。自那山上望見統格黎(克)名字的河邊。有一叢百姓順水行將來。"
+- lines: [shm.6.1, shm.6.4]
+  text: "都蛙鎻豁兒說。那一叢起來的百姓裏頭。有一箇黑車子前頭。有一箇女兒生得好。若是不曾嫁人呵。索與弟朶奔篾兒干做妻。就敎朶奔篾兒干去看了。"
+- lines: [shm.7.1, shm.7.3]
+  text: "朶奔篾兒干。到那一叢百姓裏頭看了。這女兒名阿闌豁阿。果然生得好。也不曾嫁人。"
+- lines: [shm.8.1, shm.8.5]
+  text: "那叢百姓。是豁里剌兒台篾兒干一家當初闊勒巴兒忽眞地面的主人。名巴兒忽歹篾兒干有一箇女兒。名巴兒忽眞豁阿嫁與豁里禿馬(惕)部落的官人。名豁里剌兒台篾兒干爲妻。在阿里黑兀孫地面。生了這阿闌豁阿名字的女兒。"
+- lines: [shm.9.1, shm.9.8]
+  text: "豁里剌兒台篾兒干起來的緣故。爲豁里禿馬(惕)地面貂鼠靑鼠野物。被自火裏禁約。不得打捕的上頭煩惱了。聽得不兒罕山野物廣有。全家起來。投奔不兒罕山的主人名哂赤伯顏。因此就做了豁里剌兒姓。朶奔篾兒干取了阿闌豁阿爲妻的緣故。是這般。"
+- lines: [shm.10.1, shm.10.2]
+  text: "阿闌豁阿。朶奔篾兒干取了爲妻的後頭。生二子。一箇名不古訥台。一箇名別勒古訥台。"

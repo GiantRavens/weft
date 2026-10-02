@@ -1,0 +1,183 @@
+# Weft edition: two charters of Saer de Quincy, earl of Winchester (d. 1219).
+#
+# gask    Grant of the church of Gask (Perthshire) to the Hospital of SS. James and John, Brackley
+#         (Northamptonshire), as printed in Charters, Bulls and Other Documents relating to the Abbey
+#         of Inchaffray (Scottish History Society, 1908), Appendix IV A, pp. 157-158. The 1908 text
+#         was transcribed from a copy of about 1350 at Magdalen College, Oxford (Brackley D 116), on a
+#         piece of parchment sewn to the lease of 1266 printed as Appendix IV (note to IV, p. 155).
+# duglyn  Grant of the land of Duglyn to the canons of St. Mary of Stirling (Cambuskenneth), as
+#         printed in Registrum Monasterii S. Marie de Cambuskenneth (Grampian Club, 1872), no. 70,
+#         pp. 91-92, from the abbey's register of 1535.
+#
+# Each section is checked line by line against the Internet Archive OCR text of its volume
+# (`weft draft`, edition-not-in-source). Before the check, verify_strip joins words hyphenated at a
+# line end, removes the 1908 running head that falls inside the Gask charter (158 CHARTERS OF THE
+# ABBEY OF INCHAFFRAY), the footnote number after Albeinr, the space the 1872 print sets before a
+# colon or semicolon, and stray quotation marks the OCR reads from specks.
+#
+# Readings of the page images that differ from the OCR (archive.org scans chartersbullsoth00inch,
+# leaves n266-n267, and registrummonaste00cambuoft, leaves n314-n315), each listed here. All but one
+# are declared below as verify_corrections, so the verbatim check passes with them applied:
+#   sq.gask.15     filio         OCR Alio
+#   sq.duglyn.1    Seherus de Quinci   printed in small capitals, OCR SEHERUS DE QUINCI; set here in
+#                                upper and lower case
+#   sq.duglyn.3    anime, Regis  OCR aniine, Eegis (the 1872 type's R is regularly read as E)
+#   sq.duglyn.7    seruituris    OCR seraituris; the line still passes the check, because the same
+#                                clause stands, correctly read, in no. 73 on p. 93 (the check looks
+#                                for the line anywhere in the volume)
+#   sq.duglyn.8    eam           OCR earn
+#   sq.duglyn.12   Seherus, terram   OCR Seheras, terrain; the line also crosses the page break
+#                                (marginal CLACMANAN. and DUGLYN., running head 92 REGISTRUM MONASTERII,
+#                                removed by verify_strip)
+#
+# The Gask charter keeps the 1908 edition's punctuation, which follows the copy: a raised point
+# (OCR •) and a slanted stroke (OCR /). They are kept as marks set after the word (p), as printed;
+# they are not words. contu[li]sse keeps the editors' brackets, which supply letters lost in the
+# damaged copy. Albeinr is printed so, with the footnote "Sic, with a mark of contraction. The
+# person meant is probably William de Albenie (Aubigni)."
+# No abbreviation is expanded here: both editions print the words in full, apart from Albeinr.
+#
+# Weft divides each charter into lines at its clauses (address, notification, grant, beneficiary,
+# tenure, prayers for souls, sealing or warranty, witnesses); the witness lists are split into
+# lines of a few names each.
+verify_corrections:              # readings of the page images (see the header); applied before the check
+  - {ocr: "Alio", print: "filio", in: "sources/inchaffray1908.txt"}
+  - {ocr: "SEHERUS DE QUINCI", print: "Seherus de Quinci", in: "sources/cambuskenneth1872.txt"}
+  - {ocr: "aniine", print: "anime", in: "sources/cambuskenneth1872.txt"}
+  - {ocr: "Eegis", print: "Regis", in: "sources/cambuskenneth1872.txt"}
+  - {ocr: "earn", print: "eam", in: "sources/cambuskenneth1872.txt"}
+  - {ocr: "Seheras", print: "Seherus", in: "sources/cambuskenneth1872.txt"}
+  - {ocr: "terrain", print: "terram", in: "sources/cambuskenneth1872.txt"}
+verify_strip: 'CLACMANAN\*?\.\s+DUGLYN\.\s+92\s+[ER]EGISTRUM\s+MONASTERII\s+DUGLYN\.\s+|-\s*\n\s*|\d+\s+CHARTERS\s+OF\s+THE\s+ABBEY\s+OF\s+\S+|(?<=Albeinr)1|\s+(?=[;:])|"'
+sections:
+  - id: gask
+    title: "The church of Gask to the Hospital of Brackley (1218 or early 1219)"
+    verify_in: sources/inchaffray1908.txt
+    figure:
+      file: "art/works/saer-de-quincy-charters/paris-shield.jpg"
+      caption: "The shield Matthew Paris drew for Saer de Quincy in his chronicle in the 1250s: seven gold mascles (hollow lozenges) on red. These are the arms of his son Roger's seal and of the later family; Saer's own seal, as Laing described it in 1850, bore a fess and a label (see the note on the seal)."
+      alt: "A small hand-drawn heraldic shield, red with seven gold lozenge outlines in rows of three, three and one"
+      credit: "Matthew Paris; British Library, Royal MS 14 C VII (as identified on Wikimedia Commons); via Wikimedia Commons"
+      license: "Public domain (Commons template: PD-Art|PD-old-auto-expired)"
+      source: "https://commons.wikimedia.org/wiki/File:Saer_de_Quincy.png"
+    lines:
+      - "Vniuersis sancte Matris ecclesie filiis ad quos presens scriptum peruenerit"
+      - "Seherus de Quency Comes Wintonie salutem in domino eternam."
+      - "Nouerit vniuersitas vestra nos intuitu dei contu[li]sse et concessisse et hac presenti carta nostra confirmasse"
+      - "deo et sancte Marie et hospitali sancti Iohannis de Brackele et Canonicis et fratribus ibidem deo seruientibus"
+      - tokens:
+          - {t: "ecclesiam"}
+          - {t: "de"}
+          - {t: "Gasc"}
+          - {t: "cum"}
+          - {t: "omnibus"}
+          - {t: "pertinenciis"}
+          - {t: "suis"}
+          - {t: "cuius"}
+          - {t: "ius"}
+          - {t: "patronatus"}
+          - {t: "ad"}
+          - {t: "nos"}
+          - {t: "spectat", p: "/"}
+      - "in puram et perpetuam elemosinam"
+      - tokens:
+          - {t: "pro"}
+          - {t: "anima"}
+          - {t: "patris"}
+          - {t: "nostri"}
+          - {t: "bone"}
+          - {t: "memorie"}
+          - {t: "Roberti"}
+          - {t: "de"}
+          - {t: "Quency"}
+          - {t: "et"}
+          - {t: "pro"}
+          - {t: "anima"}
+          - {t: "Matris"}
+          - {t: "nostre"}
+          - {t: "Orable", p: "/"}
+      - "et pro anima Roberti de Quency primogeniti nostri"
+      - "et pro salute anime nostre et Margarete vxoris nostre et omnium antecessorum et successorum nostrorum"
+      - tokens:
+          - {t: "ad"}
+          - {t: "sustentacionem"}
+          - {t: "predictorum"}
+          - {t: "canonicorum"}
+          - {t: "et"}
+          - {t: "fratrum"}
+          - {t: "ibidem"}
+          - {t: "deo"}
+          - {t: "seruiencium"}
+          - {t: "et"}
+          - {t: "infirmis"}
+          - {t: "ministrancium", p: "/"}
+      - tokens:
+          - {t: "Et"}
+          - {t: "vt"}
+          - {t: "hec"}
+          - {t: "nostra"}
+          - {t: "donacio"}
+          - {t: "et"}
+          - {t: "concessio"}
+          - {t: "rata"}
+          - {t: "et"}
+          - {t: "inconcussa"}
+          - {t: "inposterum"}
+          - {t: "perseueret", p: "/"}
+      - tokens:
+          - {t: "presens"}
+          - {t: "scriptum"}
+          - {t: "sigilli"}
+          - {t: "nostri"}
+          - {t: "munimine"}
+          - {t: "duximus"}
+          - {t: "roborandum", p: "•"}
+      - tokens:
+          - {t: "Hiis"}
+          - {t: "testibus", p: "•"}
+          - {t: "domino"}
+          - {t: "Petro"}
+          - {t: "de"}
+          - {t: "Roches"}
+          - {t: "Episcopo"}
+          - {t: "Wyntoniensi", p: "•"}
+      - tokens:
+          - {t: "Domino"}
+          - {t: "Willelmo"}
+          - {t: "Malueisin"}
+          - {t: "Episcopo"}
+          - {t: "sancti"}
+          - {t: "Andree", p: "•"}
+      - tokens:
+          - {t: "Roberto"}
+          - {t: "filio"}
+          - {t: "Walteri", p: "•"}
+      - tokens:
+          - {t: "Willelmo"}
+          - {t: "de"}
+          - {t: "Albeinr", p: "•"}
+          - {t: "Willelmo"}
+          - {t: "de"}
+          - {t: "Huntingfelde", p: "•"}
+          - {t: "et"}
+          - {t: "aliis."}
+  - id: duglyn
+    title: "The land of Duglyn to the canons of Cambuskenneth (1207–1214)"
+    verify_in: sources/cambuskenneth1872.txt
+    lines:
+      - "Seherus de Quinci, comes Wintonie, omnibus presens scriptum visuris vel audituris, salutem:"
+      - "Nouerit vniuersitas vestra me,"
+      - "pro salute anime domini mei Willelmi illustris Regis Scocie et antecessorum et successorum eius,"
+      - "et pro salute anime mee et antecessorum et successorum meorum,"
+      - "concessione et assensu Roberti filii mei,"
+      - "dedisse et concessisse et hac carta mea confirmasse"
+      - "Deo et ecclesie Sancte Marie de Striueling et canonicis ibidem Deo seruientibus et seruituris,"
+      - "totam terram de Duglyn per easdem diuisas per quas Nesus filius Willelmi, auus meus, eam tenuit:"
+      - "Tenendam de me et heredibus meis in liberam et puram et perpetuam elemosinam, cum omnibus iustis pertinenciis suis,"
+      - "ita libere et quiete, plenarie et honorifice"
+      - "sicut aliqua elemosina liberius et quietius, plenius et honorificentius, ab aliquibus religiosis viris in regno Scotie tenetur et possidetur:"
+      - "Et ego Seherus et heredes mei warantizabimus eis totam predictam terram contra Duncanum filium Hamelini et contra omnes homines;"
+      - "hiis testibus, Roberto filio Seheri comitis, Rogero priore de insula episcopi, Waltero capellano Regis,"
+      - "Willelmo de Bosco, Hugone de Prebenda, Gilberto clerico Regis, Willelmo de Selford, Milone Senescallo,"
+      - "Henrico de Brebot, Roberto Carnane, Rogero filio Henrici, Willelmo de Burhame, Willelmo de Finelei,"
+      - "Willelmo de Salle, Ricardo clerico, Johanne Waleram, Willelmo capellano et multis aliis."

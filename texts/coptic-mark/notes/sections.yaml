@@ -1,0 +1,49 @@
+# Notes for Mark 1:1-20 in Sahidic Coptic. Editorial notes are drafts until a reviewer lifts them.
+- id: n.mk.egyptian
+  attach: mk.1.1
+  kind: editorial
+  status: draft
+  leans_on: "B. Layton, A Coptic Grammar (3rd ed., 2011), introduction; A. Loprieno, Ancient Egyptian: A Linguistic Introduction (1995), chapter 1; Weft's edition of Pyramid Text 273 (pyramid-texts-unas), vocalization notes"
+  text: "Coptic is the last stage of the Egyptian language. Egyptian is written from about 3000 BC, and scholars divide its history into stages: Old, Middle and Late Egyptian, Demotic, and Coptic. Coptic is the name for the language once it was written in an alphabet, which became the regular practice in the 3rd and 4th centuries AD, among Egypt's Christians. It remained a spoken language for several centuries after the Arab conquest of the 7th century, was gradually replaced by Arabic, and survives as the liturgical language of the Coptic Church. Many words in this passage descend from words written in hieroglyphs two and a half thousand years earlier. ⲛⲟⲩⲧⲉ 'god' (1:1) continues nṯr, ⲣⲱⲙⲉ 'person' (in ⲣⲉϥϭⲉⲡⲣⲱⲙⲉ, 1:17) continues rmṯ, and ϩⲟⲟⲩ 'day' (1:9, 1:13) continues hrw. Weft's edition of the Pyramid Texts of Unas uses these three Coptic forms as its evidence for the vowels of the older words. The direction of evidence matters: Coptic writes vowels, hieroglyphs do not, so Coptic is one of the main sources for how earlier Egyptian may have sounded."
+- id: n.mk.alphabet
+  attach: mk.1.2.9
+  kind: editorial
+  status: draft
+  leans_on: "B. Layton, A Coptic Grammar (3rd ed., 2011), §§ 7-20; C. Peust, Egyptian Phonology (1999)"
+  text: "The Coptic alphabet is the Greek alphabet with six further letters for Egyptian sounds that Greek did not write. The six are taken from Demotic, the cursive Egyptian script that preceded Coptic: ϣ (sh), ϥ (f), ϩ (h), ϫ (ch, or a palatal stop), ϭ (a palatalized k) and ϯ (the syllable ti). This word, ϯⲛⲁϫⲉⲩ 'I will send', has two of them. Bohairic, the dialect of the Nile Delta, has a seventh, ϧ (kh); Sahidic does not use it. Several Greek letters (ⲅ ⲇ ⲍ ⲝ ⲯ) appear mainly in Greek loanwords, and in Egyptian words ⲑ ⲫ ⲭ stand for t, p, k followed by h, so a scribe can write ⲑ or ⲧϩ for the same sounds. Sahidic manuscripts also write a short stroke over a consonant that carries a syllable without a written vowel (ⲛ̄ for ən). The digital text used here leaves the stroke out, so the sound row supplies that vowel by rule."
+- id: n.mk.nomina-sacra
+  attach: mk.1.1.3
+  kind: editorial
+  status: draft
+  leans_on: "Sahidic Bible 2 (CopSahBible2) module notes; B. Layton, A Coptic Grammar (3rd ed., 2011), § 21; J. Warren Wells, notes to Sahidica (CrossWire module CopSahidica)"
+  text: "Sahidic is the dialect of Upper Egypt (the south, around Thebes) that served as the main literary dialect of Coptic from the 4th century until Bohairic, the dialect of the Delta, displaced it in church use in the later Middle Ages. This edition's text is Sahidic Bible 2, a digital New Testament prepared by Christian Askeland and Matthias Schulz at the Institute for New Testament Textual Research in Münster. Its editors standardize the spelling and divide the words, and they print no punctuation. Like the manuscripts, it abbreviates the sacred names: ⲓⲏⲥ for ⲓⲏⲥⲟⲩⲥ 'Jesus', ⲡⲉⲭⲥ for ⲡⲉⲭⲣⲓⲥⲧⲟⲥ 'the Christ', ⲡⲛⲁ for ⲡⲛⲉⲩⲙⲁ 'spirit'. Scholars call these forms nomina sacra; Greek Christian manuscripts use the same practice, and Coptic scribes mark them with a stroke above. A reader would have said the full word, so the sound row is made from the full form, which the token's details show as the normalized form."
+- id: n.mk.bound-groups
+  attach: mk.1.1.2
+  kind: editorial
+  status: draft
+  leans_on: "B. Layton, A Coptic Grammar (3rd ed., 2011), §§ 22-29 (the bound group); UD_Coptic-Scriptorium README and annotation guidelines"
+  text: "Coptic manuscripts run the words together without spaces. Modern editions divide the text, and the usual unit, which Layton calls the bound group, is a word together with the small elements that cannot stand alone: articles, prepositions, conjugation prefixes and pronoun suffixes. ⲙⲡⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ is one bound group of three parts, ⲛ 'of' + ⲡ 'the' + ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ 'gospel', with ⲛ written ⲙ before ⲡ. Each Weft token is one word as this edition prints it, and its lemma and part-of-speech rows list the parts, joined by +. They come from the Coptic Scriptorium treebank, which segments each bound group into its parts. The treebank annotates a different digital text (Sahidica), so Weft attaches its annotation by reference and checks the letters. Where this edition prints two bound groups as one word (ⲛⲧⲉⲧⲛⲥⲟⲩⲧⲛⲛⲉϥⲙⲟⲓⲧ in 1:3) the token is split; where it prints one treebank word as two (ⲁⲩϫⲓ ⲃⲁⲡⲧⲓⲥⲙⲁ 'they received baptism', 1:5) each token carries its part."
+- id: n.mk.conjugation
+  attach: mk.1.4.1
+  kind: editorial
+  status: draft
+  leans_on: "B. Layton, A Coptic Grammar (3rd ed., 2011), chapters on the conjugation bases and the circumstantial; T. O. Lambdin, Introduction to Sahidic Coptic (1983), lessons 9-20"
+  text: "Most Coptic verbs are conjugated by a prefix, then the subject, then the verb: ⲁ-ϥ-ϣⲱⲡⲉ 'he came to be' is the perfect base ⲁ, the pronoun ϥ 'he', and ϣⲱⲡⲉ 'become'. When the subject is a noun, Sahidic often states it first as a pronoun and names it after the verb with the particle ⲛϭⲓ: ⲁϥϣⲱⲡⲉ ⲇⲉ ⲛϭⲓ ⲓⲱϩⲁⲛⲛⲏⲥ, word for word 'he came to be, now, namely John'. The gloss renders ⲛϭⲓ as 'namely'. This passage uses several of these forms: the perfect for events (ⲁϥⲛⲁⲩ 'he saw'), the circumstantial ⲉϥ- for a state or action alongside the main verb (ⲉϥⲕⲏⲣⲩⲥⲥⲉ 'preaching', where the Greek has a participle), the preterit ⲛⲉϥ- for a continuing past (ⲛⲉϥⲧⲁϣⲉⲟⲓϣ 'he was preaching'), the future ⲛⲁ- (ϯⲛⲁϫⲉⲩ 'I will send') and the conjunctive ⲛϥ-, which continues a preceding verb (ⲛϥⲥⲃⲧⲉ 'and he will prepare'). The part-of-speech row names the base of each auxiliary."
+- id: n.mk.greek
+  attach: mk.1.4.9
+  kind: editorial
+  status: draft
+  leans_on: "B. Layton, A Coptic Grammar (3rd ed., 2011), on Greek loanwords; G. W. Horner, The Coptic Version of the New Testament in the Southern Dialect, vol. 1 (1911), translation pages"
+  text: "Sahidic took many words from Greek, the language of administration and of the church in Egypt. In these twenty verses ⲁⲣⲭⲏ 'beginning', ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ 'gospel', ⲃⲁⲡⲧⲓⲥⲙⲁ 'baptism', ⲙⲉⲧⲁⲛⲟⲓⲁ 'repentance', ⲁⲅⲅⲉⲗⲟⲥ 'messenger, angel' and ⲑⲁⲗⲁⲥⲥⲁ 'sea' are Greek, as are the particles ⲇⲉ and ⲅⲁⲣ. Greek verbs enter in one fixed form and take Coptic prefixes: ⲉϥⲕⲏⲣⲩⲥⲥⲉ 'he preaching' is the circumstantial ⲉϥ- with κηρύσσειν. A Greek word can stand beside a native one with a similar meaning: the translator writes ⲉⲣⲏⲙⲟⲥ (Greek) for 'desert' in 1:3, 1:12 and 1:13, and ϫⲁⲓⲉ (Egyptian) in 1:4. Horner's English translation sets in italics the words that are Greek in his Coptic, though this page does not keep the italics. In the first sound scheme the stress of a Greek word follows its Greek accent; that Sahidic speakers kept the Greek accent position is this edition's assumption."
+- id: n.mk.son-of-god
+  attach: mk.1.1.5
+  kind: editorial
+  status: draft
+  leans_on: "G. W. Horner, The Coptic Version of the New Testament in the Southern Dialect, vol. 1 (1911), apparatus to Mark 1:1, page 355; UD_Coptic-Scriptorium, Mark 1 sentence 1 (Sahidica text)"
+  text: "The words ⲡϣⲏⲣⲉ ⲙⲡⲛⲟⲩⲧⲉ 'the son of God' stand in this edition's text and in Horner's. The Greek manuscripts differ at this point. Horner's apparatus records that the first hand of Codex Sinaiticus (ℵ*) and some early writers, among them Irenaeus and Origen in places, have the verse without the phrase. Sahidica, the text on which the treebank was made, prints it in square brackets, the convention of Greek critical editions for words whose place in the text is doubtful. The Coptic evidence alone does not settle what Mark wrote; it shows that the Sahidic translation, in the copies these editions follow, read the phrase."
+- id: n.mk.manuscripts
+  attach: mk.1.20
+  kind: editorial
+  status: draft
+  leans_on: "G. W. Horner, The Coptic Version of the New Testament in the Southern Dialect, vol. 1 (1911), Mark 1:19-21, pages 360-361; J. Warren Wells, notes to Sahidica (CrossWire module CopSahidica)"
+  text: "The Sahidic New Testament survives in many manuscripts, most of them fragments. Horner's edition of 1911 was assembled from such fragments, many of them leaves from the library of the White Monastery near Sohag that are now dispersed among European collections, and where his witnesses fail his text has gaps. For this passage his Coptic and his English stop after 'his brother' in 1:19 and resume in 1:21, so his translation does not cover 1:20. Complete or nearly complete codices of Mark became known later. According to the notes to the Sahidica edition, its text of Mark follows P. Palau Rib. inv. 182 in Barcelona, collated against Pierpont Morgan Library M569. The digital texts used here, Sahidic Bible 2 for the edition and Sahidica for the treebank, are close in these verses. Neither is a transcription of a single manuscript, and neither prints the variant readings of individual manuscripts."

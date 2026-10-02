@@ -1,0 +1,50 @@
+# Notes for the Secret History of the Mongols, sections 1 to 10. Editorial notes are drafts until a
+# reviewer lifts them.
+- id: n.shm.text
+  attach: shm.1.1
+  kind: editorial
+  status: draft
+  leans_on: "Shiratori Kurakichi, Onyaku Mōbun Genchō hishi (1943), preface (序) and conventions (凡例)"
+  text: "The Secret History survives in a form made at the early Ming court for learning Mongolian. Each Mongolian word is spelled out in Chinese characters chosen for their sound; a Chinese word gloss (旁譯) stands beside each word; and a short Chinese summary (總譯) follows each section. The Mongolian original, in Uyghur script, is lost. On this page the surface row is the transcription and the row above it is the Ming word gloss, which was made together with the transcription. It is an interlinear gloss in the same sense as the English gloss row below it, written for Chinese readers about six centuries earlier. The Ming summary is given with the translations. The section numbers are those of the Ming text."
+- id: n.shm.marks
+  attach: shm.1.2.4
+  kind: editorial
+  status: draft
+  leans_on: "Shiratori (1943), conventions (凡例), on 中, 舌 and the small characters"
+  text: "This word, töregsen 'born', shows the transcribers' devices. Chinese of the time had no r, and no syllable could end in g. So a small 舌 'tongue' is set at the left shoulder of 列 (le) to make it re, and a small 克 is set beside the line to stand for the g with no vowel: 脫 tö, 列 re, 克 g, 先 sen. A small 中 at the shoulder of an h- character marks the uvular q or γ (中合 qa against 合 ha), and the small characters 勒 木 思 惕 黑 克 stand for final l, m, s, d, γ, g. The surface row prints the characters without the shoulder marks and the small characters at full size. The word panel gives the marked form: 〈舌〉 before the character it stands beside, a small character in angle brackets after its syllable. A sensor compares the marks with the romanization. In these ten sections every 舌 matches an r and every 中 a q or γ, once Boroγul in section 2 is read with the γ that its 中 marks."
+- id: n.shm.shiratori
+  attach: shm.1.1.1
+  kind: editorial
+  status: draft
+  leans_on: "Shiratori (1943), conventions (凡例); 元朝祕史, Sibu congkan sanbian (1936), juan 1, first page (Wikimedia Commons)"
+  text: "The text is Shiratori Kurakichi's edition (1943), which reprints Ye Dehui's edition of 1908 column for column and adds a romanization. Shiratori says he normalized the word glosses, writing 人名 'personal name', 婦人名 'woman's name' or 兒名 'son's name' where the base text has 名 or nothing, and that parentheses mark his corrections and additions. Here the gloss reads (太祖)名, 'name (of Taizu)'; the copy reproduced in the Sibu congkan (the illustration) has 名 alone beside 成吉思. The Japanese Wikisource transcription used here rates itself 75 percent checked. Three of its slips are corrected in the romanization row only: Toγ̇a for Qo'a in section 3, Dobün for Dobun in sections 6 and 10, and the gloss 人起 for 人名 in section 10, which the gloss row keeps as printed. Four characters here (𩥑 in section 3, 𥈙 in sections 4 and 5, 𪭺 in sections 5 and 8, 𪖌 in section 9) lie in the Unicode extensions that many systems have no font for, and may show as empty boxes."
+- id: n.shm.wolf
+  attach: shm.1.2.5
+  kind: editorial
+  status: draft
+  leans_on: "the Ming word glosses and summary of section 1, as printed by Shiratori (1943)"
+  text: "The Ming gloss reads börte as 蒼色 'grey-blue colour' and čino as 狼 'wolf', and in the next column qo'ai as 慘白色 'pale white colour' and maral as 鹿 'deer'. The Ming summary says that a grey-blue wolf born of Heaven was joined with a pale deer. The Mongolian says that the wolf was born with a destiny from Heaven above and that his wife was the doe. It does not say whether these are animals, ancestors who bore animal names, or both, and this page does not decide. The gloss row follows the Ming glosses."
+- id: n.shm.division
+  attach: shm.1.3.6
+  kind: editorial
+  status: draft
+  leans_on: "Shiratori (1943), section 1; Sibu congkan sanbian (1936), juan 1, first page; Chinese Wikisource, 元朝秘史/卷01, revision 2139867"
+  text: "The gloss 水名 'name of a water' stands beside 騰汲思 Tenggis, and 渡着 'crossing' beside 客禿勒周 ketüljü, so Shiratori divides the words as here. In the Sibu congkan copy the bracket that ties 渡着 to its word begins at 禿, leaving 客 outside it, and Chinese Wikisource follows the bracket and joins 客 to the river name. The same copy brackets 河的 'of the river' against 漣訥 and leaves 沐 beside 斡難 Onan, where Shiratori reads Onan müren-ü. The brackets are a scribe's placement and do not always follow Mongolian word boundaries. Later Mongolian tenggis means 'sea' or 'large lake'; which water is meant here the text does not say."
+- id: n.shm.soqor
+  attach: shm.4.1.1
+  kind: editorial
+  status: draft
+  leans_on: "the Ming word glosses and summary of section 4, as printed by Shiratori (1943)"
+  text: "In later Mongolian soqor means 'blind'. Section 4 says that Duwa Soqor had a single eye in the middle of his forehead and could see over land three ne'ürid away. The Ming gloss renders ne'ürid as 程, the stages of a journey, and the summary as 三程遠地, 'land three stages distant'; a ne'üri is the distance of one move of a nomad camp. The text does not comment on the name."
+- id: n.shm.aspiration
+  attach: shm.4.1.3
+  kind: editorial
+  status: draft
+  leans_on: "Shiratori (1943), conventions (凡例), on aspirated and unaspirated characters"
+  text: "The transcribers wrote this word, dunda 'middle', with 敦 and 荅, whose Chinese initials are unaspirated, and wrote Tamača in section 2 with 塔 and 察, which are aspirated. Shiratori's preface states the pattern as his rule: aspirated characters for t and č, unaspirated ones for d and j. The pronunciation row reads this as a contrast of aspiration in 13th-century Mongolian, as in the modern language, rather than of voicing. It is an inference from how a Chinese spelling system was used, and the Chinese of the transcribers is itself a reconstruction, so the row marks the sound as approximate."
+- id: n.shm.bosqagsan
+  attach: shm.9.5.1
+  kind: editorial
+  status: draft
+  leans_on: "the Ming word glosses and summary of section 9, as printed by Shiratori (1943)"
+  text: "The Ming gloss marks 不峏罕孛思合黑三 as a personal name (人名), and Shiratori romanizes it as one name, Burqan Bosqaγsan. As Mongolian the words can also be read 'who had set up a burqan', with burqan an image of a deity and bosqa- 'to set up', which would make it a description of Sinči Bayan rather than a second person. The Ming summary names only one lord of Burqan mountain, Sinči Bayan. These sources do not settle whether one person or two is meant; the gloss row follows the Ming gloss, and the translation lists both names."

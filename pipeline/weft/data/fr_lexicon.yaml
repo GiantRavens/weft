@@ -6,6 +6,11 @@
 #           (ə) is written where the grammarians of the period still count it; french.py drops it
 #           before a vowel.
 #   modern  IPA, standard modern French, the word said alone.
+#   fr1885  IPA, formal Paris reading of the 1880s (the Berlin Act), only where it differs from what
+#           french.py derives from the modern form (the length rule). Each such form follows Littré,
+#           Dictionnaire de la langue française (1863-1872): pas (pâ), cas (kâ), but (bu), droits
+#           (droî), même (mê-m'), être (ê-tr'), côte (kô-t'), crête (krê-t'), accroître (a-kroî-tr').
+#           Words used only by the Berlin Act have no m1580 form.
 #   lz      the latent final consonant sounded in liaison before a vowel (z t n r k l), if any.
 #           In m1580 french.py sounds it before any vowel-initial word with no pause between;
 #           in modern only where the edition token sets z: true.
@@ -143,7 +148,7 @@
 "parents": {m1580: "pa.rɑ̃", modern: "pa.ʁɑ̃", lz: "z"}
 "part": {m1580: "par", modern: "paʁ"}
 "particulière": {m1580: "par.ti.ky.ljɛ.rə", modern: "paʁ.ti.ky.ljɛʁ"}
-"pas": {m1580: "pa", modern: "pa", lz: "z"}
+"pas": {m1580: "pa", modern: "pa", lz: "z", fr1885: "pɑ"}
 "peins": {m1580: "pɛ̃", modern: "pɛ̃", lz: "z"}
 "peint": {m1580: "pɛ̃", modern: "pɛ̃", lz: "t"}
 "perdu": {m1580: "pɛr.dy", modern: "pɛʁ.dy"}
@@ -200,3 +205,317 @@
 "voué": {m1580: "vu.e", modern: "vwe"}
 "y": {m1580: "i", modern: "i"}
 "âme": {m1580: "aː.mə", modern: "ɑm"}
+
+# ---- words of the General Act of the Berlin Conference (1885); modern spelling = print
+# 1°, 2°, 3°, 6° are read as premièrement, deuxièmement ...; 2°30’ as deux degrés trente minutes; Ier as premier
+"1°": {modern: "pʁə.mjɛʁ.mɑ̃"}
+"2°": {modern: "dø.zjɛm.mɑ̃"}
+"3°": {modern: "tʁwa.zjɛm.mɑ̃"}
+"6°": {modern: "si.zjɛm.mɑ̃"}
+"2°30’": {modern: "dø.də.ɡʁe.tʁɑ̃t.mi.nyt"}
+"accompagnera": {modern: "a.kɔ̃.pa.ɲə.ʁa"}
+"accord": {modern: "a.kɔʁ"}
+"accroître": {modern: "a.kʁwatʁ", fr1885: "a.kʁwɑːtʁ"}
+"accès": {modern: "ak.sɛ", lz: "z"}
+"acquis": {modern: "a.ki", lz: "z"}
+"acquisition": {modern: "a.ki.zi.sjɔ̃"}
+"acquitter": {modern: "a.ki.te", lz: "ʁ"}
+"acquérir": {modern: "a.ke.ʁiʁ"}
+"acte": {modern: "akt"}
+"actuellement": {modern: "ak.tɥɛl.mɑ̃", lz: "t"}
+"actuelles": {modern: "ak.tɥɛl", lz: "z"}
+"adressée": {modern: "a.dʁɛ.se"}
+"affluents": {modern: "a.fly.ɑ̃", lz: "z"}
+"affranchies": {modern: "a.fʁɑ̃.ʃi", lz: "z"}
+"afin": {modern: "a.fɛ̃"}
+"africain": {modern: "a.fʁi.kɛ̃"}
+"africains": {modern: "a.fʁi.kɛ̃", lz: "z"}
+"afrique": {modern: "a.fʁik"}
+"allemagne": {modern: "al.maɲ"}
+"années": {modern: "a.ne", lz: "z"}
+"appartenant": {modern: "a.paʁ.tə.nɑ̃", lz: "t"}
+"appliquera": {modern: "a.pli.kə.ʁa"}
+"article": {modern: "aʁ.tikl"}
+"articles": {modern: "aʁ.tikl", lz: "z"}
+"assumera": {modern: "a.sy.mə.ʁa"}
+"assurer": {modern: "a.sy.ʁe", lz: "ʁ"}
+"atlantique": {modern: "at.lɑ̃.tik"}
+"auront": {modern: "o.ʁɔ̃", lz: "t"}
+"autorité": {modern: "o.tɔ.ʁi.te"}
+"autres": {modern: "otʁ", lz: "z"}
+"aux": {modern: "o", lz: "z"}
+"avantages": {modern: "a.vɑ̃.taʒ", lz: "z"}
+"avec": {modern: "a.vɛk"}
+"avenir": {modern: "av.niʁ"}
+"avoir": {modern: "a.vwaʁ"}
+"bassin": {modern: "ba.sɛ̃"}
+"bassins": {modern: "ba.sɛ̃", lz: "z"}
+"batellerie": {modern: "ba.tɛl.ʁi"}
+"berlin": {modern: "bɛʁ.lɛ̃"}
+"bien-être": {modern: "bjɛ̃.nɛtʁ", fr1885: "bjɛ̃.nɛːtʁ"}
+"biens": {modern: "bjɛ̃", lz: "z"}
+"bords": {modern: "bɔʁ", lz: "z"}
+"but": {modern: "byt", lz: "t", fr1885: "by"}
+"cabotage": {modern: "ka.bɔ.taʒ"}
+"canaux": {modern: "ka.no", lz: "z"}
+"cas": {modern: "ka", lz: "z", fr1885: "kɑ"}
+"celle": {modern: "sɛl"}
+"celles": {modern: "sɛl", lz: "z"}
+"celui-ci": {modern: "sə.lɥi.si"}
+"certaines": {modern: "sɛʁ.tɛn", lz: "z"}
+"cette": {modern: "sɛt"}
+"ci-dessus": {modern: "si.də.sy"}
+"cinquième": {modern: "sɛ̃.kjɛm"}
+"circonvoisins": {modern: "siʁ.kɔ̃.vwa.zɛ̃", lz: "z"}
+"civilisation": {modern: "si.vi.li.za.sjɔ̃"}
+"comme": {modern: "kɔm"}
+"commerce": {modern: "kɔ.mɛʁs"}
+"commerciale": {modern: "kɔ.mɛʁ.sjal"}
+"compensation": {modern: "kɔ̃.pɑ̃.sa.sjɔ̃"}
+"complète": {modern: "kɔ̃.plɛt"}
+"composé": {modern: "kɔ̃.po.ze"}
+"compris": {modern: "kɔ̃.pʁi", lz: "z"}
+"concéder": {modern: "kɔ̃.se.de", lz: "ʁ"}
+"conférence": {modern: "kɔ̃.fe.ʁɑ̃s"}
+"congo": {modern: "kɔ̃.ɡo"}
+"connexes": {modern: "kɔ.nɛks", lz: "z"}
+"consentement": {modern: "kɔ̃.sɑ̃t.mɑ̃", lz: "t"}
+"considérées": {modern: "kɔ̃.si.de.ʁe", lz: "z"}
+"constituant": {modern: "kɔ̃s.ti.tɥɑ̃", lz: "t"}
+"conséquence": {modern: "kɔ̃.se.kɑ̃s"}
+"contestations": {modern: "kɔ̃.tɛs.ta.sjɔ̃", lz: "z"}
+"contigus": {modern: "kɔ̃.ti.ɡy", lz: "z"}
+"continent": {modern: "kɔ̃.ti.nɑ̃", lz: "t"}
+"coordonnés": {modern: "ko.ɔʁ.dɔ.ne", lz: "z"}
+"cours": {modern: "kuʁ", lz: "z"}
+"creusés": {modern: "kʁø.ze", lz: "z"}
+"crêtes": {modern: "kʁɛt", lz: "z", fr1885: "kʁɛːt"}
+"côtes": {modern: "kot", lz: "z", fr1885: "koːt"}
+"dans": {modern: "dɑ̃", lz: "z"}
+"degré": {modern: "də.ɡʁe"}
+"dehors": {modern: "də.ɔʁ"}
+"depuis": {modern: "də.pɥi"}
+"deux": {modern: "dø", lz: "z"}
+"devront": {modern: "də.vʁɔ̃", lz: "t"}
+"différentiel": {modern: "di.fe.ʁɑ̃.sjɛl"}
+"différents": {modern: "di.fe.ʁɑ̃", lz: "z"}
+"dispositions": {modern: "dis.po.zi.sjɔ̃", lz: "z"}
+"distinction": {modern: "dis.tɛ̃k.sjɔ̃"}
+"documents": {modern: "dɔ.ky.mɑ̃", lz: "z"}
+"donnera": {modern: "dɔn.ʁa"}
+"dorénavant": {modern: "dɔ.ʁe.na.vɑ̃", lz: "t"}
+"drainés": {modern: "dʁe.ne", lz: "z"}
+"droits": {modern: "dʁwa", lz: "z", fr1885: "dʁwɑ"}
+"décider": {modern: "de.si.de", lz: "ʁ"}
+"déclaration": {modern: "de.kla.ʁa.sjɔ̃"}
+"décrits": {modern: "de.kʁi", lz: "z"}
+"délimité": {modern: "de.li.mi.te"}
+"dépenses": {modern: "de.pɑ̃s", lz: "z"}
+"désireux": {modern: "de.zi.ʁø", lz: "z"}
+"développement": {modern: "de.vlɔp.mɑ̃", lz: "t"}
+"déversent": {modern: "de.vɛʁs", lz: "t"}
+"eau": {modern: "o"}
+"eaux": {modern: "o", lz: "z"}
+"effectives": {modern: "e.fɛk.tiv", lz: "z"}
+"elle": {modern: "ɛl"}
+"elles": {modern: "ɛl", lz: "z"}
+"elles-mêmes": {modern: "ɛl.mɛm", lz: "z", fr1885: "ɛl.mɛːm"}
+"embouchure": {modern: "ɑ̃.bu.ʃyʁ"}
+"embouchures": {modern: "ɑ̃.bu.ʃyʁ", lz: "z"}
+"embrasse": {modern: "ɑ̃.bʁas"}
+"engagent": {modern: "ɑ̃.ɡaʒ", lz: "t"}
+"entendu": {modern: "ɑ̃.tɑ̃.dy"}
+"entente": {modern: "ɑ̃.tɑ̃t"}
+"entreprendre": {modern: "ɑ̃.tʁə.pʁɑ̃dʁ"}
+"esprit": {modern: "ɛs.pʁi", lz: "t"}
+"espèce": {modern: "ɛs.pɛs"}
+"essentielles": {modern: "e.sɑ̃.sjɛl", lz: "z"}
+"état": {modern: "e.ta", lz: "t"}
+"eux": {modern: "ø", lz: "z"}
+"exerce": {modern: "ɛɡ.zɛʁs"}
+"exercer": {modern: "ɛɡ.zɛʁ.se", lz: "ʁ"}
+"exercera": {modern: "ɛɡ.zɛʁ.sə.ʁa"}
+"exercice": {modern: "ɛɡ.zɛʁ.sis"}
+"existence": {modern: "ɛɡ.zis.tɑ̃s"}
+"expressément": {modern: "ɛks.pʁɛ.se.mɑ̃", lz: "t"}
+"favorables": {modern: "fa.vɔ.ʁabl", lz: "z"}
+"fleuves": {modern: "flœv", lz: "z"}
+"fluvial": {modern: "fly.vjal"}
+"fluviale": {modern: "fly.vjal"}
+"franchise": {modern: "fʁɑ̃.ʃiz"}
+"française": {modern: "fʁɑ̃.sɛz"}
+"gouvernement": {modern: "ɡu.vɛʁ.nə.mɑ̃", lz: "t"}
+"général": {modern: "ʒe.ne.ʁal"}
+"ier": {modern: "pʁə.mje"}
+"immobilières": {modern: "i.mɔ.bi.ljɛʁ", lz: "z"}
+"importées": {modern: "ɛ̃.pɔʁ.te", lz: "z"}
+"impérial": {modern: "ɛ̃.pe.ʁjal"}
+"indien": {modern: "ɛ̃.djɛ̃"}
+"indigènes": {modern: "ɛ̃.di.ʒɛn", lz: "z"}
+"indistinctement": {modern: "ɛ̃.dis.tɛ̃k.tə.mɑ̃", lz: "t"}
+"indépendant": {modern: "ɛ̃.de.pɑ̃.dɑ̃", lz: "t"}
+"instrument": {modern: "ɛ̃s.tʁy.mɑ̃", lz: "t"}
+"interdit": {modern: "ɛ̃.tɛʁ.di", lz: "t"}
+"internationaux": {modern: "ɛ̃.tɛʁ.na.sjɔ.no", lz: "z"}
+"introduisant": {modern: "ɛ̃.tʁɔ.dɥi.zɑ̃", lz: "t"}
+"invitation": {modern: "ɛ̃.vi.ta.sjɔ̃"}
+"jouira": {modern: "ʒwi.ʁa"}
+"jouiront": {modern: "ʒwi.ʁɔ̃", lz: "t"}
+"jugé": {modern: "ʒy.ʒe"}
+"jusque-là": {modern: "ʒys.kə.la"}
+"jusqu’": {modern: "ʒysk"}
+"lac": {modern: "lak"}
+"lacs": {modern: "lak", lz: "z"}
+"latitude": {modern: "la.ti.tyd"}
+"le": {modern: "lə"}
+"les": {modern: "le", lz: "z"}
+"leur": {modern: "lœʁ"}
+"leurs": {modern: "lœʁ", lz: "z"}
+"libre": {modern: "libʁ"}
+"lieu": {modern: "ljø"}
+"littoral": {modern: "li.tɔ.ʁal"}
+"logé": {modern: "lɔ.ʒe"}
+"maintenue": {modern: "mɛ̃t.ny"}
+"malentendus": {modern: "ma.lɑ̃.tɑ̃.dy", lz: "z"}
+"marchandises": {modern: "maʁ.ʃɑ̃.diz", lz: "z"}
+"maritime": {modern: "ma.ʁi.tim"}
+"matériel": {modern: "ma.te.ʁjɛl"}
+"mer": {modern: "mɛʁ"}
+"mettre": {modern: "mɛtʁ"}
+"mobilières": {modern: "mɔ.bi.ljɛʁ", lz: "z"}
+"monopole": {modern: "mɔ.nɔ.pɔl"}
+"moral": {modern: "mɔ.ʁal"}
+"moyens": {modern: "mwa.jɛ̃", lz: "z"}
+"mutuelle": {modern: "my.tɥɛl"}
+"même": {modern: "mɛm", fr1885: "mɛːm"}
+"mêmes": {modern: "mɛm", lz: "z", fr1885: "mɛːm"}
+"nationalité": {modern: "na.sjɔ.na.li.te"}
+"nationaux": {modern: "na.sjɔ.no", lz: "z"}
+"navigation": {modern: "na.vi.ɡa.sjɔ̃"}
+"navires": {modern: "na.viʁ", lz: "z"}
+"niari": {modern: "nja.ʁi"}
+"nil": {modern: "nil"}
+"nom": {modern: "nɔ̃"}
+"nommé": {modern: "nɔ.me"}
+"non": {modern: "nɔ̃"}
+"nord": {modern: "nɔʁ"}
+"notamment": {modern: "nɔ.ta.mɑ̃", lz: "t"}
+"notification": {modern: "nɔ.ti.fi.ka.sjɔ̃"}
+"nouvelles": {modern: "nu.vɛl", lz: "z"}
+"obligation": {modern: "ɔ.bli.ɡa.sjɔ̃"}
+"occupations": {modern: "ɔ.ky.pa.sjɔ̃", lz: "z"}
+"occupés": {modern: "ɔ.ky.pe", lz: "z"}
+"océan": {modern: "ɔ.se.ɑ̃"}
+"ogowé": {modern: "ɔ.ɡɔ.we"}
+"orientale": {modern: "ɔ.ʁjɑ̃.tal"}
+"orientaux": {modern: "ɔ.ʁjɑ̃.to", lz: "z"}
+"où": {modern: "u"}
+"parallèle": {modern: "pa.ʁa.lɛl"}
+"pavillon": {modern: "pa.vi.jɔ̃"}
+"pavillons": {modern: "pa.vi.jɔ̃", lz: "z"}
+"pays": {modern: "pe.i", lz: "z"}
+"personnes": {modern: "pɛʁ.sɔn", lz: "z"}
+"perçues": {modern: "pɛʁ.sy", lz: "z"}
+"peuples": {modern: "pœpl", lz: "z"}
+"pied": {modern: "pje", lz: "t"}
+"plénipotentiaires": {modern: "ple.ni.pɔ.tɑ̃.sjɛʁ", lz: "z"}
+"populations": {modern: "pɔ.py.la.sjɔ̃", lz: "z"}
+"ports": {modern: "pɔʁ", lz: "z"}
+"possession": {modern: "pɔ.se.sjɔ̃"}
+"possessions": {modern: "pɔ.se.sjɔ̃", lz: "z"}
+"pourra": {modern: "pu.ʁa"}
+"pourraient": {modern: "pu.ʁɛ", lz: "t"}
+"pourront": {modern: "pu.ʁɔ̃", lz: "t"}
+"prendra": {modern: "pʁɑ̃.dʁa"}
+"principaux": {modern: "pʁɛ̃.si.po", lz: "z"}
+"principe": {modern: "pʁɛ̃.sip"}
+"prises": {modern: "pʁiz", lz: "z"}
+"privilège": {modern: "pʁi.vi.lɛʒ"}
+"professions": {modern: "pʁɔ.fɛ.sjɔ̃", lz: "z"}
+"prolongeant": {modern: "pʁɔ.lɔ̃.ʒɑ̃", lz: "t"}
+"propriétés": {modern: "pʁɔ.pʁi.je.te", lz: "z"}
+"protection": {modern: "pʁɔ.tɛk.sjɔ̃"}
+"protectorat": {modern: "pʁɔ.tɛk.tɔ.ʁa", lz: "t"}
+"provenance": {modern: "pʁɔv.nɑ̃s"}
+"préoccupés": {modern: "pʁe.ɔ.ky.pe", lz: "z"}
+"présent": {modern: "pʁe.zɑ̃", lz: "t"}
+"prévenir": {modern: "pʁev.niʁ"}
+"puissance": {modern: "pɥi.sɑ̃s"}
+"puissances": {modern: "pɥi.sɑ̃s", lz: "z"}
+"période": {modern: "pe.ʁjɔd"}
+"rapports": {modern: "ʁa.pɔʁ", lz: "z"}
+"reconnaissent": {modern: "ʁə.kɔ.nɛs", lz: "t"}
+"relative": {modern: "ʁə.la.tiv"}
+"relatives": {modern: "ʁə.la.tiv", lz: "z"}
+"relier": {modern: "ʁə.lje", lz: "ʁ"}
+"remplir": {modern: "ʁɑ̃.pliʁ"}
+"représentées": {modern: "ʁə.pʁe.zɑ̃.te", lz: "z"}
+"respecter": {modern: "ʁɛs.pɛk.te", lz: "ʁ"}
+"respectif": {modern: "ʁɛs.pɛk.tif"}
+"resteront": {modern: "ʁɛs.tə.ʁɔ̃", lz: "t"}
+"rivières": {modern: "ʁi.vjɛʁ", lz: "z"}
+"règles": {modern: "ʁɛɡl", lz: "z"}
+"réclamations": {modern: "ʁe.kla.ma.sjɔ̃", lz: "z"}
+"régions": {modern: "ʁe.ʒjɔ̃", lz: "z"}
+"régler": {modern: "ʁe.ɡle", lz: "ʁ"}
+"république": {modern: "ʁe.py.blik"}
+"réservent": {modern: "ʁe.zɛʁv", lz: "t"}
+"résolu": {modern: "ʁe.zɔ.ly"}
+"réunir": {modern: "ʁe.y.niʁ"}
+"réunis": {modern: "ʁe.y.ni", lz: "z"}
+"savoir": {modern: "sa.vwaʁ"}
+"schari": {modern: "ʃa.ʁi"}
+"sera": {modern: "sə.ʁa"}
+"serait": {modern: "sə.ʁɛ", lz: "t"}
+"ses": {modern: "se", lz: "z"}
+"seul": {modern: "sœl"}
+"signataires": {modern: "si.ɲa.tɛʁ", lz: "z"}
+"situé": {modern: "si.tɥe"}
+"situés": {modern: "si.tɥe", lz: "z"}
+"soient": {modern: "swa", lz: "t"}
+"soit": {modern: "swa", lz: "t"}
+"son": {modern: "sɔ̃", lz: "n"}
+"soulever": {modern: "sul.ve", lz: "ʁ"}
+"souverain": {modern: "su.vʁɛ̃"}
+"souveraineté": {modern: "su.vʁɛn.te"}
+"stipulée": {modern: "sti.py.le"}
+"sud": {modern: "syd"}
+"suffisante": {modern: "sy.fi.zɑ̃t"}
+"suivants": {modern: "sɥi.vɑ̃", lz: "z"}
+"supportées": {modern: "sy.pɔʁ.te", lz: "z"}
+"sur": {modern: "syʁ"}
+"susvisés": {modern: "sys.vi.ze", lz: "z"}
+"tanganyka": {modern: "tɑ̃.ɡa.ni.ka"}
+"taxes": {modern: "taks", lz: "z"}
+"temps": {modern: "tɑ̃", lz: "z"}
+"terme": {modern: "tɛʁm"}
+"terre": {modern: "tɛʁ"}
+"territoire": {modern: "tɛ.ʁi.twaʁ"}
+"territoires": {modern: "tɛ.ʁi.twaʁ", lz: "z"}
+"titre": {modern: "titʁ"}
+"tous": {modern: "tu", lz: "z"}
+"tout-puissant": {modern: "tu.pɥi.sɑ̃", lz: "t"}
+"toutes": {modern: "tut", lz: "z"}
+"traitement": {modern: "tʁɛt.mɑ̃", lz: "t"}
+"transit": {modern: "tʁɑ̃.zit"}
+"transmission": {modern: "tʁɑ̃s.mi.sjɔ̃"}
+"transports": {modern: "tʁɑ̃s.pɔʁ", lz: "z"}
+"tributaires": {modern: "tʁi.by.tɛʁ", lz: "z"}
+"uniformes": {modern: "y.ni.fɔʁm", lz: "z"}
+"utilement": {modern: "y.til.mɑ̃", lz: "t"}
+"utiles": {modern: "y.til", lz: "z"}
+"valoir": {modern: "va.lwaʁ"}
+"viendrait": {modern: "vjɛ̃.dʁɛ", lz: "t"}
+"vingt": {modern: "vɛ̃", lz: "t"}
+"voulant": {modern: "vu.lɑ̃", lz: "t"}
+"zambèze": {modern: "zɑ̃.bɛz"}
+"zone": {modern: "zon"}
+"échéant": {modern: "e.ʃe.ɑ̃", lz: "t"}
+"également": {modern: "e.ɡal.mɑ̃", lz: "t"}
+"égard": {modern: "e.ɡaʁ"}
+"énumérés": {modern: "e.ny.me.ʁe", lz: "z"}
+"équitable": {modern: "e.ki.tabl"}
+"étendant": {modern: "e.tɑ̃.dɑ̃", lz: "t"}
+"étendue": {modern: "e.tɑ̃.dy"}
+"étrangers": {modern: "e.tʁɑ̃.ʒe", lz: "z"}
+"être": {modern: "ɛtʁ", fr1885: "ɛːtʁ"}

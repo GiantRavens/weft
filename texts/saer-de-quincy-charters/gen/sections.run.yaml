@@ -1,0 +1,24 @@
+run:
+  weft: 0.1.0
+  sections:
+  - gask
+  - duglyn
+counts:
+  lines: 32
+  tokens: 364
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank: lemma and morphology hand-annotated against Lewis and Short, with the charter vocabulary (elemosina, warantizo, ius patronatus) after Niermeyer and Du Cange; draft'
+- the Anglo-Latin reading is the one built for Magna Carta (England, about 1215) and is reconstructed from spelling and from French and English sound history; the Duglyn charter was most likely written
+  by a clerk in Scotland, whose Latin may have differed in ways not modelled; approximate
+- 'both texts come from OCR of the printed editions: each line is checked against the OCR with the misreadings declared as verify_corrections in edition.yaml, each a reading of the page image (gask.15;
+  duglyn.1, 3, 8, 12); duglyn.7 has an OCR misreading too but passes, because the same clause is read correctly in no. 73 of the same volume'
+- the Gask charter keeps the 1908 edition's medieval punctuation, a raised point and a slanted stroke, as separate marks after the word; they carry no sound or gloss
+- the 1908 edition prints Albeinr (sic) for the witness its editors take to be William d'Aubigny; the name is read as printed
+- medieval spellings are shown as written (Vniuersis, vxoris, hec, sustentacionem, Scocie); the quantity table restores the classical spelling (ūniversīs, uxōris, haec, sustentātiōnem, Scotiae) so the classical
+  reading is classical, and the Anglo-Latin reading says ae as e and ci or ti as tsi either way; hiis is read as written
+- personal and place names (Quency, Quinci, Gasc, Brackele, Duglyn, Malueisin, Huntingfelde, Burhame) take no long vowels unless a Latin form is attested; their stress follows the spelling
+- the abstracts of 1872 and 1908 are summaries, each covering one charter; the Weft editorial translation covers both and is a draft

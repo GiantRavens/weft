@@ -7,6 +7,7 @@ writes to private/build/, which is gitignored, so licensed translations never le
 from __future__ import annotations
 
 import json
+import os
 import re
 from pathlib import Path
 
@@ -15,9 +16,9 @@ import yaml
 from . import __version__, treebank
 from .draft import PHON, load_manifest
 
-HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "lzh": "lzh", "runic": "gmq", "ja": "ja", "san": "sa", "akk": "akk", "fa": "fa", "ta": "ta", "it": "it", "fr": "fr", "es": "es", "nl": "nl", "fro": "fro", "de": "de", "egy": "egy", "sux": "sux"}
+HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "lzh": "lzh", "runic": "gmq", "ja": "ja", "san": "sa", "akk": "akk", "fa": "fa", "ta": "ta", "it": "it", "fr": "fr", "es": "es", "nl": "nl", "fro": "fro", "de": "de", "egy": "egy", "sux": "sux", "orv": "orv", "xng": "xng", "cop": "cop", "sw": "sw"}
 RTL = {"hbo", "fa"}
-LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "lzh": "Classical Chinese", "runic": "Runic Norse", "ja": "Early modern Japanese", "san": "Vedic Sanskrit", "akk": "Akkadian", "fa": "Classical Persian", "ta": "Old Tamil", "it": "Renaissance Italian", "fr": "Middle French", "es": "Early Modern Spanish", "nl": "Early Modern Dutch", "fro": "Old French", "de": "German", "egy": "Old Egyptian", "sux": "Sumerian"}
+LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "lzh": "Classical Chinese", "runic": "Runic Norse", "ja": "Early modern Japanese", "san": "Vedic Sanskrit", "akk": "Akkadian", "fa": "Classical Persian", "ta": "Old Tamil", "it": "Renaissance Italian", "fr": "Middle French", "es": "Early Modern Spanish", "nl": "Early Modern Dutch", "fro": "Old French", "de": "German", "egy": "Old Egyptian", "sux": "Sumerian", "orv": "Old East Slavic", "xng": "Middle Mongolian", "cop": "Sahidic Coptic", "sw": "Swahili"}
 
 
 def _load_yaml_dir(d: Path) -> list[tuple[Path, object]]:
@@ -187,7 +188,7 @@ def frontispiece(ill: dict | None) -> str:
     import html as H
     if not ill:
         return ""
-    credit = ", ".join(x for x in (ill.get("credit"), ill.get("date")) if x and x.lower() != "unknown")
+    credit = ", ".join(str(x) for x in (ill.get("credit"), ill.get("date")) if x and str(x).lower() != "unknown")
     return (f'<figure class="frontis"><img src="{ill["src"]}" alt="{H.escape(ill["alt"])}">'
             f'<figcaption><span class="cap">{H.escape(ill["caption"])}</span>'
             f'<span class="cred">{H.escape(credit + " · " if credit else "")}{H.escape(ill.get("license", ""))} · '
@@ -207,6 +208,29 @@ def library_order(repo: Path, private: bool = False) -> list[dict]:
     return ms
 
 
+SITE_URL = os.environ.get("WEFT_SITE_URL", "https://giantravens.github.io/weft/")
+
+
+def preview_meta(data: dict) -> str:
+    """Link-card tags (Open Graph and Twitter) for a public page. The image is the page's own
+    screenshot from `weft previews`; a private build gets no tags, so nothing points outward."""
+    import html as H
+    if data.get("build", {}).get("private"):
+        return ""
+    w = data["work"]
+    slug = w["work"]
+    title = f"{w['title']} · Weft"
+    by = f"{w['author']}. " if w.get("author") else ""
+    desc = f"{by}The original text line by line, with sound and gloss."
+    url, img = f"{SITE_URL}{slug}.html", f"{SITE_URL}previews/{slug}.jpg"
+    tags = [("property", "og:type", "article"), ("property", "og:site_name", "Weft"),
+            ("property", "og:title", title), ("property", "og:description", desc),
+            ("property", "og:url", url), ("property", "og:image", img),
+            ("property", "og:image:width", "1200"), ("property", "og:image:height", "630"),
+            ("name", "twitter:card", "summary_large_image"), ("name", "description", desc)]
+    return "\n".join(f'<meta {k}="{v}" content="{H.escape(c)}">' for k, v, c in tags)
+
+
 def render(data: dict, site_dir: Path) -> str:
     tpl = (site_dir / "template.html").read_text()
     css = (site_dir / "weft.css").read_text()
@@ -218,6 +242,7 @@ def render(data: dict, site_dir: Path) -> str:
               .replace("{{FAVICON}}", art.get("favicon", ""))
               .replace("{{FRONTIS}}", frontispiece(data.pop("_illustration", None))))
     return (tpl.replace("{{TITLE}}", title)
+               .replace("{{META}}", preview_meta(data))
                .replace("/*{{CSS}}*/", css)
                .replace("/*{{DATA}}*/", f"window.WEFT = {payload};")
                .replace("/*{{JS}}*/", js))
@@ -288,7 +313,7 @@ def write_index(repo: Path, out_dir: Path, private: bool = False) -> Path:
         if pl.get("sections"):
             noun = m.get("section_noun", "section")
             k = len(pl["sections"])
-            span = (f"{noun}{'' if k == 1 else 's'} " + stanza_ranges([int(x) if str(x).isdigit() else x for x in pl["sections"]])) if noun == "chapter" else f"{k} {noun}{'' if k == 1 else 's'}"
+            span = (f"{noun}{'' if k == 1 else 's'} " + stanza_ranges([int(x) if str(x).isdigit() else x for x in pl["sections"]])) if noun == "chapter" else f"{k} {noun if k == 1 else (noun[:-1] + 'ies' if noun.endswith('y') and noun[-2:-1] not in 'aeiou' else noun + 's')}"
         elif pl.get("inscriptions"):
             span = f"{len(pl['inscriptions'])} inscriptions"
         elif pl.get("stanzas"):

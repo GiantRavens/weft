@@ -33,7 +33,7 @@ UD_POS = {"NOUN": "noun", "PROPN": "proper noun", "VERB": "verb", "AUX": "auxili
           "ADJ": "adjective", "ADV": "adverb", "ADP": "preposition", "PRON": "pronoun", "DET": "article",
           "NUM": "numeral", "CCONJ": "conjunction", "SCONJ": "subordinating conjunction",
           "PART": "particle", "INTJ": "interjection"}
-UD_ORDER = ["Stem", "Conj", "Person", "Number", "Tense", "Mood", "VerbForm", "Voice", "Gender", "Case",
+UD_ORDER = ["Stem", "Conj", "Person", "Number", "Tense", "Aspect", "Mood", "VerbForm", "Voice", "Gender", "NounClass", "Case",
             "State", "Degree", "Reflex", "PronType", "PartType", "Polarity", "Compound"]
 UD_VAL = {"Sing": "singular", "Plur": "plural", "Dual": "dual", "Pres": "present", "Past": "past",
           "Pret": "past", "Ind": "indicative", "Sub": "subjunctive", "Imp": "imperative",
@@ -65,6 +65,10 @@ CASE_VAL = {"Com": "comitative", "Erg": "ergative", "Equ": "equative", "Ter": "t
             "Abs": "absolutive", "All": "allative", "Abl": "ablative", "Loc": "locative", "Dir": "directive"}
 
 
+ASPECT_VAL = {"Perf": "perfect", "Imp": "imperfective", "Prog": "progressive", "Hab": "habitual",
+              "Prosp": "prospective", "Iter": "iterative"}
+
+
 def _decode_ud(tag: str) -> str:
     """'VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres' -> 'verb, 3rd person, singular, present, indicative'."""
     pos, *feats = tag.split("|")
@@ -76,6 +80,10 @@ def _decode_ud(tag: str) -> str:
             continue
         if k == "Case" and v in CASE_VAL:      # case names that clash with other features' values
             parts.append(CASE_VAL[v])
+        elif k == "Aspect":                    # Imp is imperfective here, not imperative
+            parts.append(ASPECT_VAL.get(v, v.lower() + " aspect"))
+        elif k == "NounClass":                 # Bantu noun classes, Bleek-Meinhof numbering
+            parts.append("class " + v[5:] if v.startswith("Bantu") else v)
         elif k == "Person":
             parts.append({"1": "1st person", "2": "2nd person", "3": "3rd person"}.get(v, v))
         elif k == "Compound" and v == "Yes":

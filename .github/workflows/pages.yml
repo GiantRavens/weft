@@ -33,6 +33,13 @@ jobs:
         run: uv run --with pytest pytest -q tests
       - name: Build the library
         run: .venv/bin/weft build all
+      - name: Link-preview images
+        # a missing card image is a visible warning on the run, not a reason to hold the library back
+        continue-on-error: true
+        run: |
+          uv pip install -e '.[previews]'
+          .venv/bin/python -m playwright install --with-deps chromium-headless-shell
+          .venv/bin/weft previews all
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:

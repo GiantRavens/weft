@@ -47,6 +47,30 @@ m1580    French as an educated reader would have said it about 1580, approximate
          Vowel length is marked only where the loss of s or of a final e left a long vowel.
 modern   Standard modern French, the word said alone, with the liaisons that today's careful
          reading makes (those the edition marks z: true).
+fr1885   French as an educated Parisian reader of the 1880s would have read a formal text aloud,
+         used for the General Act of the Berlin Conference (1885). French of 1885 is close to
+         modern standard French: the spelling had been fixed since the Academy's dictionary of 1835
+         and is the modern one, and most sounds are the modern ones. Evidence is direct, not
+         reconstructed from rhymes or spelling: Paul Passy, Les sons du français (1887) and the
+         phonetic transcriptions of Le Maître phonétique (from 1886), and Émile Littré's
+         Dictionnaire de la langue française (1863-1872), which gives a pronunciation for each word.
+         What the scheme shows differently from modern:
+         - vowel length. Passy hears a long vowel in a final syllable closed by r, z, zh or v
+           (commerce no, affaires yes: a.fɛːʁ) and in many words with a circumflex (même, mɛːm).
+           Length was then partly distinctive (maître, mettre); it is now an automatic effect of
+           position, and the modern scheme does not mark it.
+         - a back a, [ɑ], in words where Littré marks it with a circumflex in his respelling (pas,
+           pâ; the plural droits, droî). Paris speech has since largely merged it with front a.
+           These forms are written word by word in the lexicon (fr1885), each from Littré.
+         - more liaisons. Formal reading of the period sounded final consonants before a vowel in
+           places today's reading leaves silent (the edition marks these zf); liaisons marked z
+           are made in both schemes.
+         - a few words where Littré gives a silent final consonant now often sounded (but, bu).
+         The r is the uvular r, which Passy reports as the usual Paris r in the 1880s, with the
+         tongue-tip r still used in the provinces and on the stage. The conference met in Berlin
+         and its delegates were not French; the scheme models the Paris norm of the language they
+         wrote in, not any delegate's own accent. Where the lexicon has no fr1885 form the word is
+         taken from its modern form with the length rule applied.
 
 French has no word stress that distinguishes meaning: the last full syllable of a phrase is
 lengthened. No syllable is written in capitals.
@@ -55,11 +79,14 @@ Edition token fields (texts/<work>/edition.yaml)
 -----------------------------------------------
 t      the word as printed, with any punctuation attached to it (foy,); the punctuation is split
        off into the token's punct
-n      the modern spelling (lowercase except proper names); the lexicon key
+n      the modern spelling (lowercase except proper names); the lexicon key. A work printed in
+       modern spelling (the Berlin Act) gives n only where the print differs (Etat, État); the
+       lexicon key is then the printed word, lowercased, without its punctuation
 p      punctuation set off by a space in the print (French " :")
 glue   no space follows (the elided c', l', qu')
 z      modern liaison: the final consonant is sounded before the next word in the modern scheme
 nz     no liaison in m1580 for this word, where the general rule would make one
+zf     liaison in fr1885 only: made in formal reading of the 1880s, not in the modern scheme
 ipa    {scheme: ipa} override for this occurrence
 """
 from __future__ import annotations
@@ -70,7 +97,7 @@ from pathlib import Path
 
 import yaml
 
-VERSION = "0.1"
+VERSION = "0.2"
 SHOW_TRANSLIT = True
 TRANSLIT_LABEL = "Modern spelling"
 
@@ -79,7 +106,8 @@ _CTX: dict = {}            # the current token's context, set by token_fields fo
 
 LEAD_P = re.compile(r"^([(\[«“]+)")
 TRAIL_P = re.compile(r"([,.;:!?)\]»”]+)$")
-VOWELS = set("aeiouyɑɛɔøœəɥ")       # a word beginning with one of these takes liaison and elision
+VOWELS = set("aeiouyɑɛɔøœəɥ")
+ELIDED = re.compile(r"^[^\W\d_]+[’']$")       # a word beginning with one of these takes liaison and elision
 
 
 def lexicon() -> dict:
@@ -94,9 +122,36 @@ def key(word: str) -> str:
     return ud.normalize("NFC", word.replace("'", "’")).lower()
 
 
+LENGTHENING = ("ʁ", "z", "ʒ", "v", "vʁ")   # a final syllable closed by these lengthens its vowel
+ORAL = "aɑeɛiouyøœə"
+
+
+def lengthen_1885(ipa: str) -> str:
+    """fr1885 from a modern form: the vowel of a final syllable closed by r, z, zh, v (or vr) is long,
+    as Passy (1887) marks it. Other period forms (pas, pɑ) are written in the lexicon."""
+    if "ː" in ipa:
+        return ipa
+    head, _, last = ipa.rpartition(".")
+    for c in sorted(LENGTHENING, key=len, reverse=True):
+        if last.endswith(c) and len(last) > len(c) and last[-len(c) - 1] in ORAL and last[-len(c) - 1] != "ə":
+            last = last[:-len(c)] + "ː" + c
+            break
+    return (head + "." if head else "") + last
+
+
 def base_ipa(word: str, scheme: str) -> str | None:
     e = lexicon().get(key(word))
-    return e.get(scheme) if e else None
+    if not e:
+        return None
+    if scheme == "fr1885" and "fr1885" not in e and e.get("modern"):
+        return lengthen_1885(e["modern"])
+    return e.get(scheme)
+
+
+def bare(word: str) -> str:
+    """The printed word without leading or trailing punctuation."""
+    word = LEAD_P.sub("", word or "")
+    return TRAIL_P.sub("", word)
 
 
 def begins_with_vowel(ipa: str | None) -> bool:
@@ -105,7 +160,8 @@ def begins_with_vowel(ipa: str | None) -> bool:
 
 # ---------------------------------------------------------------- IPA -> respelling
 NASAL = {"ɑ": "ahⁿ", "a": "ahⁿ", "ɛ": "ehⁿ", "e": "ehⁿ", "ɔ": "ohⁿ", "o": "ohⁿ", "œ": "öⁿ", "y": "üⁿ"}
-LONG = {"a": "aa", "ɑ": "aa", "e": "ayy", "ɛ": "ehh", "o": "ohh", "ɔ": "ohh", "y": "üü", "i": "eee", "u": "ooo"}
+LONG = {"a": "aa", "ɑ": "aa", "e": "ayy", "ɛ": "ehh", "o": "ohh", "ɔ": "ohh", "y": "üü", "i": "eee", "u": "ooo",
+        "ø": "öö", "œ": "öö"}
 PLAIN = {"a": "a", "ɑ": "ah", "e": "ay", "ɛ": "eh", "i": "ee", "o": "oh", "ɔ": "o", "u": "oo", "y": "ü",
          "ø": "ö", "œ": "ö", "ə": "uh", "ʃ": "sh", "ʒ": "zh", "ɲ": "ny", "ʎ": "ly", "j": "y", "w": "w",
          "ɥ": "ü", "r": "r", "ʁ": "r", "ɡ": "g", ".": "-", "‿": "‿"}
@@ -155,23 +211,24 @@ def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[
         word = word[:mt.start()]
     if word != surface:
         fields["surface"] = word
-    n = et.get("n")
-    if not n:
-        fails.append(("modern-spelling-missing", surface))
-    elif key(n) not in lexicon() and not et.get("ipa"):
+    # the lexicon key: the modern spelling, or the printed word when the print is modern
+    n = et.get("n") or word
+    if key(n) not in lexicon() and not et.get("ipa"):
         fails.append(("lexicon-missing", n))
     toks = _flat(group)
     k = next((i for i, t in enumerate(toks) if t is et), None)
     nxt = toks[k + 1] if k is not None and k + 1 < len(toks) else None
     pause = bool(mt) or bool(et.get("p")) or nxt is None or bool(nxt and LEAD_P.search(nxt["t"]))
-    _CTX = {"n": n, "next": (nxt or {}).get("n"), "pause": pause, "z": bool(et.get("z")),
+    _CTX = {"n": n, "next": (nxt or {}).get("n") or (bare(nxt["t"]) if nxt else None), "pause": pause,
+            "z": bool(et.get("z")), "zf": bool(et.get("zf")),
             "nz": bool(et.get("nz")), "ipa": et.get("ipa") or {}, "glue": bool(et.get("glue"))}
-    if et.get("z"):
-        lz = (lexicon().get(key(n or "")) or {}).get("lz")
-        if not lz:
-            fails.append(("liaison-no-consonant", n or surface))
-        elif pause or not begins_with_vowel(base_ipa(_CTX["next"] or "", "modern")):
-            fails.append(("liaison-not-before-vowel", f"{n} {_CTX['next']}"))
+    for mark in ("z", "zf"):
+        if et.get(mark):
+            lz = (lexicon().get(key(n or "")) or {}).get("lz")
+            if not lz:
+                fails.append(("liaison-no-consonant", n or surface))
+            elif pause or not begins_with_vowel(base_ipa(_CTX["next"] or "", "modern")):
+                fails.append(("liaison-not-before-vowel", f"{n} {_CTX['next']}"))
     return fields, fails
 
 
@@ -198,7 +255,7 @@ def in_context(word: str, scheme: str) -> str:
         if lz and not ctx.get("nz"):
             return ipa + lz + "‿"
         return ipa
-    if lz and ctx.get("z"):
+    if lz and (ctx.get("z") or (scheme == "fr1885" and ctx.get("zf"))):
         return ipa + lz + "‿"
     return ipa
 
@@ -212,8 +269,8 @@ def syllables(ipa: str) -> int:
 
 
 def phonemize(word: str, scheme: str = "m1580", quantities=None, **_) -> dict:
-    """`word` is the token's modern spelling (n)."""
-    ipa = in_context(word, scheme)
+    """`word` is the token's modern spelling (n), or the printed word when the edition gives no n."""
+    ipa = in_context(bare(word), scheme)
     return {"ipa": ipa, "respell": respell(ipa) if ipa != "?" else "?", "syllables": syllables(ipa)}
 
 
@@ -222,7 +279,8 @@ def line_checks(text: str, etoks: list[dict], edition: dict) -> list[tuple[str, 
     glued token must be an elision."""
     out = []
     for t in etoks:
-        el = t["t"].endswith(("’", "'"))
+        # an elision is letters and an apostrophe (c’, qu’); 2°30’ (minutes of arc) is not one
+        el = bool(ELIDED.match(t["t"]))
         if el and not t.get("glue"):
             out.append(("elision-not-glued", t["t"]))
         if t.get("glue") and not el:
@@ -257,6 +315,21 @@ KEY = {
         ("zh", "the s of measure"),
         ("ny", "the gn of Montaigne, as in canyon"),
     ],
+    "fr1885": [
+        ("", "French as an educated Parisian would have read a formal text in the 1880s, after Passy (1887) and Littré. It is close to modern French; the differences shown are vowel length, a back a in some words, and more liaisons."),
+        ("", "Hyphens divide syllables; no capitals, since French has no distinctive word stress. The word is shown as said alone; inside a phrase the long vowels were shorter."),
+        ("aa ehh ohh eee ooo üü öö", "long vowels: in a final syllable closed by r, z, zh or v (sur, süür; fleuves, flööv), and in some words with a circumflex (même, mehhm)"),
+        ("ah", "a back a, as in father, in words where Littré gives it (pas, pah; droits, drwah)"),
+        ("uh", "the e caduc (ə), kept in de, le, que, ne, ce, se and where careful reading keeps it inside a word"),
+        ("‿", "liaison: the final consonant is sounded and runs into the next word, including liaisons formal reading made then and seldom makes now (marked in the edition)"),
+        ("ahⁿ ehⁿ ohⁿ öⁿ", "nasal vowels: the vowel said through the nose, no n sound after it; öⁿ (un) was kept apart from ehⁿ (in)"),
+        ("ü", "French u: say ee with rounded lips"),
+        ("ö", "the vowel of peu and of fleur: say ay with rounded lips"),
+        ("r", "the uvular r, at the back of the throat, which Passy reports as the usual Paris r of the 1880s"),
+        ("zh", "the s of measure"),
+        ("ny", "the gn of signataires, as in canyon"),
+    ],
 }
 SCHEME_LABELS = {"m1580": "French about 1580: Montaigne's day (approximate)",
-                 "modern": "Modern French"}
+                 "modern": "Modern French",
+                 "fr1885": "French of the 1880s: formal Paris reading"}

@@ -1,0 +1,30 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '10'
+counts:
+  lines: 42
+  tokens: 226
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- no public-domain English translation exists; the English is Weft's editorial draft, and de Rachewiltz's open-access translation (CC BY-NC-ND 4.0) is cited, not reproduced
+- Chinese Wikisource (元朝秘史/卷01, revision 2139867) has the transcription with word glosses only for sections 1-5, and omits the last three words of section 1; Shiratori on Japanese Wikisource has all ten,
+  so it is the edition here
+- Shiratori normalized the Ming word glosses (名 to 人名, 婦人名, 兒名) and unified some characters (宜 to 冝, 囙 to 因); his parentheses mark additions, but his changes to the shoulder marks 中 and 舌 are not marked
+  (凡例). The gloss row is therefore Shiratori's text of the Ming gloss, not a facsimile
+- the romanization is converted by rule from Shiratori's and hand-corrected for 18 words; it is a transcription of the Ming spelling, not a reconstruction of the Uyghur-script original
+- the Ming shoulder marks are checked against the romanization (marker-r-mismatch, marker-q-mismatch); disagreements are kept as telemetry, since the base text sometimes omits a mark
+- 'Middle Mongolian pronunciation is reconstructed: the aspiration contrast is inferred from the Chinese characters, the hiatus ('') may already have been a long vowel, and first-syllable stress is assumed'
+- no treebank; lemma, morphology and gloss are hand annotation, draft

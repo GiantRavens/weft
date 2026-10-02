@@ -1,0 +1,31 @@
+run:
+  weft: 0.1.0
+  sections:
+  - pre
+  - dec
+  - a1
+  - a2
+  - a3
+  - a4
+  - a5
+  - a34
+  - a35
+counts:
+  lines: 40
+  tokens: 867
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'a selection, not the whole Act: the list of plenipotentiaries, the six declarations but the last, article 1''s eastern and southern boundary lines, articles 6-33 (protection of natives and missions,
+  slave trade, neutrality, navigation of the Congo and Niger) and articles 36-38 are omitted'
+- the Wikisource pages are not yet proofread (quality level 1); the edition reproduces them verbatim, including the stray comma in 'viendrait, à en acquérir' (article 34), which the English translations
+  do not reflect; not yet checked against the Gallica scan of the 1898 print
+- the 1898 print is a later official reprint, not the 1885 signed instrument or the Reichsgesetzblatt text
+- the fr1885 scheme follows Passy (1887) and Littré for the Paris norm; the delegates who negotiated the Act spoke French with their own accents, which are not modelled
+- vowel length in fr1885 is shown for the word said alone; inside a phrase it was reduced
+- the edition marks optional liaisons made in formal reading (zf) by judgment, following Littré's notes where he gives one; formal practice varied
+- the numbering 1°, 2°, 3°, 6° is read as premièrement, deuxièmement ...; a reader might equally have said primo, secundo
+- no treebank; lemma, morphology and gloss by hand, draft
+- both English translations are OCR text; clear OCR errors are corrected and listed in each sense file

@@ -1,0 +1,59 @@
+work: primary-chronicle-varangians
+title: The Calling of the Varangians (Tale of Bygone Years, 859-862)
+author: The Kievan chronicle tradition; the compilation of about 1113 is attributed to Nestor, a monk of the Kiev Caves Monastery
+language: orv
+lang_name: Old East Slavic
+prefix: pvl                      # pvl.<annal year AM>.<line>[.<token>]; 6367 AM = 859 AD
+urn: urn:weft:orv:pvl.laurentian.6367-6370   # Weft-local identifier
+unit: section
+section_noun: year
+written: {year: 1113, display: "c. 1113", label: "compiled in Kiev in the early 12th century from older annals; this text is the Laurentian copy, written in 1377"}
+status: phase-0
+pilot: {sections: ["6367", "6368", "6369", "6370"]}
+edition:
+  id: psrl1-1926
+  name: "Лаврентьевская летопись, Вып. 1: Повесть временных лет, Полное собрание русских летописей, т. 1 (Leningrad: Academy of Sciences of the USSR, 1926), ed. E. F. Karsky, pp. 19-20; the Laurentian copy of 1377 (Russian National Library, F.п.IV.2); Weft transcription from the Internet Archive scan, checked against its OCR text with declared corrections"
+  format: weft-edition
+  file: edition.yaml
+  license: medieval text public domain; the 1926 edition public domain (Karsky died 1931; published 1926); Weft transcription and line division CC BY-SA 4.0
+treebank: null                   # TOROT covers the chronicle but is CC BY-NC-SA, which Weft cannot use; hand annotation, draft
+schemes: [orv1100, ru]           # default: Old East Slavic about 1100 (approximate); second: Russian reading today
+sound_confidence: low            # jer values, the place of stress and the yat vowel are reconstructed from indirect evidence
+sources_extra:
+  - id: psrl1-1926-ocr
+    name: "Полное собрание русских летописей, т. 1, вып. 1 (1926), Internet Archive item Complete_Collection_of_Russian_Chronicles_1926_Vol_1_Laurentian_Chronicle, OCR text (djvu.txt)"
+    file: sources/psrl1-1926-djvu.txt
+    url: "https://archive.org/download/Complete_Collection_of_Russian_Chronicles_1926_Vol_1_Laurentian_Chronicle/%D0%9F%D0%A1%D0%A0%D0%9B.%20%D0%A2%D0%BE%D0%BC%201.%20%D0%9B%D0%B0%D0%B2%D1%80%D0%B5%D0%BD%D1%82%D1%8C%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BB%D0%B5%D1%82%D0%BE%D0%BF%D0%B8%D1%81%D1%8C.%20%D0%92%D1%8B%D0%BF.1.%20%D0%9F%D0%BE%D0%B2%D0%B5%D1%81%D1%82%D1%8C%20%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%BB%D0%B5%D1%82.%201926_djvu.txt"
+    sha256: adf8587f7be1e7893107651418314ccedfb39ea12577553ab590752c5a9abef3
+    license: public domain (edition of 1926; editor died 1931; the medieval text is public domain)
+    license_url: https://archive.org/details/Complete_Collection_of_Russian_Chronicles_1926_Vol_1_Laurentian_Chronicle
+  - id: radziwill-miniatures
+    name: "Two miniatures of the Radziwiłł Chronicle (late 15th century) on Wikimedia Commons: the work's illustration and the figure for entry 6370 (art/works/primary-chronicle-varangians/)"
+    url: "https://commons.wikimedia.org/wiki/Category:Calling_of_varangians"
+    license: "public domain (PD-old-100-expired; PD-old-70-expired)"
+    license_url: https://commons.wikimedia.org/wiki/Template:PD-old-100-expired
+translations:
+  - id: cross1930
+    translator: Samuel Hazzard Cross
+    year: 1930
+    form: "prose, The Russian Primary Chronicle, in Harvard Studies and Notes in Philology and Literature 12 (Cambridge, MA: Harvard University Press, 1930), pp. 144-145; translated from the Laurentian text with readings from other copies; Internet Archive OCR text"
+    license: public-domain
+    license_note: "US: published 1930; no renewal found under Cross, the title or Harvard in the book renewals of 1957 and 1958 (Catalog of Copyright Entries, as transcribed by Project Gutenberg, ebooks 11815-11818); the periodical renewal lists were not searched. Life plus 70: Cross died in 1946, so the translation is public domain since 2017 in those countries."
+    license_url: https://archive.org/details/doncarlosthemeha0000fred
+    file: sources/cross1930.txt
+    url: https://archive.org/download/doncarlosthemeha0000fred/doncarlosthemeha0000fred_djvu.txt
+    sha256: 85a792dc1b407e95277e12baa8034fe93f65ac06f86d05eb7e32347d5295d53e
+  - id: cross1953
+    kind: reference
+    translator: Samuel Hazzard Cross and Olgerd P. Sherbowitz-Wetzor
+    year: 1953
+    title: "The Russian Primary Chronicle: Laurentian Text"
+    publisher: Mediaeval Academy of America
+    note: "The revised translation of 1953; in copyright, cited only."
+predicted_gaps:
+  - "no openly licensed digital Laurentian text: the edition is Weft's transcription of the 1926 printing, checked against an uncorrected OCR with declared corrections; Russian Wikisource carries only the Hypatian copy (Библиотека литературы Древней Руси, 1997)"
+  - "no treebank: TOROT covers the chronicle but is CC BY-NC-SA; lemma, morphology and gloss are hand-annotated, draft"
+  - "the 1100 reading is reconstructed: the value of the jers, of ѣ and of г in Kiev, and the place of stress (hand-entered from Russian and Ukrainian) are its least certain points"
+  - "raised letters are lowered into the line in parentheses and abbreviation marks replaced by the letter they stand for (ни(х)); the titlo over numerals is not shown, because combining marks break on the split web font; the expansions Полѧнѣ(х), Сѣверѣ(х) and находн(и)ци are editorial"
+  - "the years, written in letter numerals, are given as numbers in the sound row; the number words are not reconstructed. ·г· (three) is read трие, the form Karsky reports for the Radziwiłł and Academy copies (г-е)"
+  - "Cross's 1930 English follows a composite text in places (it adds the Ves among the tributaries and a beaver-skin to the tribute, and has Rurik in Novgorod); these differences are discussed in the notes"
