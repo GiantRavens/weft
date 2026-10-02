@@ -1,4 +1,4 @@
-# Announce what a deploy published, on Bluesky, after the library is live.
+# Announce what a deploy published, on Bluesky and X, after the library is live.
 #
 # compose: decides whether this deploy is worth a post (a new work, a substantially updated
 #          work, or an `Announce:` commit trailer) and writes the exact post into the run summary.
@@ -7,7 +7,7 @@
 #          owner's approval. The post is read in the summary first, then approved.
 # Kept out of pages.yml on purpose: that workflow cancels in-progress runs, which would cancel a
 # post still waiting for approval.
-name: Announce on Bluesky
+name: Announce on Bluesky and X
 
 on:
   workflow_run:
@@ -66,5 +66,9 @@ jobs:
         env:
           BLUESKY_IDENTIFIER: ${{ vars.BLUESKY_IDENTIFIER }}
           BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
           DRY_RUN: ${{ vars.ANNOUNCE_DRY_RUN }}
         run: python3 .github/scripts/announce.py send post.json

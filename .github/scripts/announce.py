@@ -1,8 +1,9 @@
-"""Announce what a Weft deploy published, on Bluesky.
+"""Announce what a Weft deploy published, on Bluesky and X.
 
 Two steps, so the owner approves a post after reading it:
   compose BASE HEAD OUT.json   classify the deploy; write the post (or nothing) and a summary
-  send OUT.json                post it, with the featured work's rendered page as the link card
+  send OUT.json                post it, with the featured work's rendered page as the link card;
+                               to Bluesky, and to X when its four OAuth 1.0a secrets are set
 
 The range BASE..HEAD runs from the previous successful deploy to this one, so commits whose own
 deploy was cancelled are still covered, and nothing is announced twice.
@@ -14,12 +15,24 @@ What makes a deploy worth a post (measured on weft's history, 2026-10-02):
   - README, docs, tasks, site, pipeline and test changes never trigger a post on their own
   - an `Announce: <your words>` commit trailer always posts, in those words
 One post per deploy. The work with the most changed lines is named first, and the card shows
-the first work the post mentions. Stdlib only. DRY_RUN=1 or no app password: print, do not send.
+the first work the post mentions. Stdlib only. DRY_RUN=1, or a network with no credentials: print,
+do not send. Each network is sent independently: one failing does not hold back the other.
+
+X: the same text, checked at compose time against X's 280-unit count (a link counts 23, CJK and
+most non-Latin characters 2). X draws the link card itself from the page's og: tags, so no image is
+uploaded. Billing (pay-per-use, checked 2026-10-02): $0.20 per post that carries a URL.
 """
 from __future__ import annotations
 
+import base64
+import hashlib
+import hmac
 import json
 import os
+import secrets
+import time
+import urllib.error
+import urllib.parse
 import re
 import subprocess
 import sys
@@ -32,6 +45,12 @@ PDS = "https://bsky.social/xrpc/"
 LIMIT = 300            # Bluesky's limit is 300 graphemes; characters are a safe stand-in here
 UPDATE_MIN = 300       # changed lines in one work's folder that count as an update worth a post
 URL_RE = re.compile(r"https?://\S+")
+X_API = "https://api.x.com/2/tweets"
+X_LIMIT = 280          # weighted: see x_length
+X_URL = 23             # every link counts as a t.co link of 23
+X_KEYS = ("X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_SECRET")
+# twitter-text v3 weighting: these code point ranges count 1, everything else 2
+X_LIGHT = ((0, 4351), (8192, 8205), (8208, 8223), (8242, 8247))
 
 
 def git(*args: str) -> str:
@@ -133,6 +152,8 @@ def compose(base: str, head: str) -> dict | None:
         return None
     if len(text) > LIMIT:
         raise SystemExit(f"post is {len(text)} characters, over {LIMIT}; shorten the Announce line:\n{text}")
+    if x_length(text) > X_LIMIT:
+        raise SystemExit(f"post counts {x_length(text)} on X, over {X_LIMIT}; shorten the Announce line:\n{text}")
     card = featured or {"work": "index", "title": "Weft", "author": "", "url": SITE}
     link = URL_RE.search(text)
     return {"text": text, "card": {"uri": link.group() if link else card["url"],
@@ -180,6 +201,42 @@ def send(post: dict, identifier: str, password: str) -> str:
     return f"https://bsky.app/profile/{s['handle']}/post/{r['uri'].rsplit('/', 1)[-1]}"
 
 
+def x_length(text: str) -> int:
+    """The length X counts: links are 23, characters outside the light ranges are 2."""
+    n, pos = 0, 0
+    for m in URL_RE.finditer(text):
+        n += sum(1 if any(a <= ord(c) <= b for a, b in X_LIGHT) else 2 for c in text[pos:m.start()]) + X_URL
+        pos = m.end()
+    return n + sum(1 if any(a <= ord(c) <= b for a, b in X_LIGHT) else 2 for c in text[pos:])
+
+
+def oauth1_header(method: str, url: str, keys: dict, params: dict | None = None,
+                  nonce: str | None = None, timestamp: str | None = None) -> str:
+    """OAuth 1.0a user-context Authorization header (HMAC-SHA1). A JSON body is not signed;
+    only query or form parameters are. Access tokens made in the X console do not expire."""
+    q = lambda s: urllib.parse.quote(str(s), safe="~")
+    oauth = {"oauth_consumer_key": keys["X_API_KEY"], "oauth_nonce": nonce or secrets.token_hex(16),
+             "oauth_signature_method": "HMAC-SHA1", "oauth_timestamp": timestamp or str(int(time.time())),
+             "oauth_token": keys["X_ACCESS_TOKEN"], "oauth_version": "1.0"}
+    pairs = sorted((q(k), q(v)) for k, v in {**oauth, **(params or {})}.items())
+    base = "&".join([method.upper(), q(url), q("&".join(f"{k}={v}" for k, v in pairs))])
+    signing_key = f"{q(keys['X_API_SECRET'])}&{q(keys['X_ACCESS_SECRET'])}"
+    oauth["oauth_signature"] = base64.b64encode(hmac.new(signing_key.encode(), base.encode(), hashlib.sha1).digest()).decode()
+    return "OAuth " + ", ".join(f'{q(k)}="{q(v)}"' for k, v in sorted(oauth.items()))
+
+
+def send_x(post: dict, keys: dict) -> str:
+    req = urllib.request.Request(X_API, data=json.dumps({"text": post["text"]}).encode(), method="POST",
+                                 headers={"Content-Type": "application/json",
+                                          "Authorization": oauth1_header("POST", X_API, keys)})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            data = json.load(r)["data"]
+    except urllib.error.HTTPError as e:   # X explains a refusal (credits, permissions) in the body
+        raise RuntimeError(f"X {e.code}: {e.read().decode(errors='replace')[:500]}") from None
+    return f"https://x.com/i/web/status/{data['id']}"
+
+
 def summary(md: str) -> None:
     path = os.environ.get("GITHUB_STEP_SUMMARY")
     if path:
@@ -195,10 +252,12 @@ def main(argv: list[str]) -> int:
         print(f"range {base[:8]}..{head[:8]}: {verdict}")
         if post:
             print(post["text"])
-            summary(f"### Bluesky post awaiting approval\n\n```\n{post['text']}\n```\n\n"
-                    f"Card: {post['card']['title']}, image {post['card']['thumb'] or 'none'}")
+            # compose runs outside the announce environment and cannot see its secrets; the post job reports per network
+            summary(f"### Post awaiting approval (Bluesky, and X where its secrets are set)\n\n```\n{post['text']}\n```\n\n"
+                    f"Card: {post['card']['title']}, image {post['card']['thumb'] or 'none'}. "
+                    f"Length: {len(post['text'])}/{LIMIT} on Bluesky, {x_length(post['text'])}/{X_LIMIT} on X.")
         else:
-            summary(f"### No Bluesky post\n\n{verdict}")
+            summary(f"### No post\n\n{verdict}")
         with open(out, "w") as f:
             json.dump(post, f, ensure_ascii=False)
         gh_out = os.environ.get("GITHUB_OUTPUT")
@@ -208,16 +267,30 @@ def main(argv: list[str]) -> int:
         return 0
     if argv[0] == "send":
         post = json.load(open(argv[1]))
-        password = os.environ.get("BLUESKY_APP_PASSWORD", "")
         if not post:
             print("nothing to send")
-        elif os.environ.get("DRY_RUN") == "1" or not password:
-            print("dry run, not sent:\n" + post["text"])
-        else:
-            url = send(post, os.environ["BLUESKY_IDENTIFIER"], password)
-            print(f"posted: {url}")
-            summary(f"Posted: {url}")
-        return 0
+            return 0
+        dry = os.environ.get("DRY_RUN") == "1"
+        password = os.environ.get("BLUESKY_APP_PASSWORD", "")
+        xkeys = {k: os.environ.get(k, "") for k in X_KEYS}
+        targets = [("Bluesky", bool(password), lambda: send(post, os.environ["BLUESKY_IDENTIFIER"], password)),
+                   ("X", all(xkeys.values()), lambda: send_x(post, xkeys))]
+        failed = False
+        for name, ready, go in targets:
+            if dry or not ready:
+                why = "DRY_RUN=1" if dry else "no credentials"
+                print(f"{name}: not sent ({why}):\n{post['text']}")
+                summary(f"{name}: not sent ({why})")
+                continue
+            try:
+                url = go()
+                print(f"{name}: posted {url}")
+                summary(f"{name}: posted {url}")
+            except Exception as e:   # the other network still gets its post
+                failed = True
+                print(f"::error::{name} not posted: {e}")
+                summary(f"{name}: FAILED, {e}")
+        return 1 if failed else 0
     raise SystemExit("usage: announce.py compose BASE HEAD OUT.json | send OUT.json")
 
 

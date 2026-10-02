@@ -4,7 +4,7 @@ Weft is a library of interlinear editions. Each page sets a passage of a classic
 under every word, two further rows: how the word most likely sounded when the text was first
 written, and a literal word-for-word English gloss. Under each line come one or more published
 translations. Notes attach to words and lines. The library runs from the Pyramid Texts of Unas
-(about 2350 BC) to Nietzsche (1883), in twenty languages.
+(about 2350 BC) to the General Act of the Berlin Conference (1885), in twenty-four languages.
 
 It is dedicated to Neith, goddess of the loom, and to the author's mother. The weft is the thread
 carried back and forth across the warp; the source text is the warp, and sound, gloss and sense are

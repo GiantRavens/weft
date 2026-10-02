@@ -29,7 +29,7 @@ that use it. Where the repository names no source, this page says so.
 - **Confidence.** A manifest may set `sound_confidence`. At `low` the page opens with "The
   pronunciation here is a reconstruction"; at `medium`, "Parts of the pronunciation here are
   reconstructed". Both link to the Pronunciation and Recording forms and to this page. Works with
-  no value show no invitation. Fourteen of the forty-six works set a value (see the table, and the
+  no value show no invitation. Twenty-four of the fifty-seven works set a value (see the table, and the
   last section).
 - **Each word alone.** Unless a section below says otherwise, each word is phonemized on its own:
   elision, sandhi and assimilation across words are not modelled in the sound row.
@@ -70,9 +70,11 @@ the page shows no invitation.
 | Biblical Hebrew | `hebrew` | Genesis | tiberian (first), modern-israeli | not set |
 | Classical Chinese | `chinese` | Sunzi, Daodejing | old-chinese (first), tang, mandarin | medium |
 | | | Li Bai | tang (first), mandarin, cantonese | medium |
+| Sahidic Coptic | `coptic` | Gospel of Mark 1 | sahidic (first), bohairic | medium |
 | Latin | `latin` | Ovid, Res Gestae | classical (first), ecclesiastical | not set |
 | | | Bayeux Tapestry | anglo-norman (first), classical | medium |
 | | | Magna Carta | anglo-latin (first), classical | not set |
+| | | Saer de Quincy, two charters | anglo-latin (first), classical | medium |
 | | | Pico | italian-humanist (first), classical | not set |
 | | | Inter caetera | italian-humanist (first), classical | medium |
 | | | Erasmus | low-countries (first), classical | not set |
@@ -84,15 +86,19 @@ the page shows no invitation.
 | Old English | `oldenglish` | Beowulf | west-saxon (only) | not set |
 | Old Norse | `norse` | Völuspá, Hávamál, Þrymskviða, Grettis saga | old-norse (first), modern-icelandic | not set |
 | | | Snorri, Gylfaginning | old-norse (first), modern-icelandic | medium |
+| Old East Slavic | `oldeastslavic` | Primary Chronicle, 859-862 | orv1100 (first), ru | low |
 | Persian | `persian` | Rubaiyat | early (first), modern | medium |
+| Middle Mongolian | `mongolian` | Secret History of the Mongols, 1-10 | mm-1250 (only) | low |
 | Japanese | `japanese` | Bashō | edo-1686 (first), modern | not set |
 | Franco-Italian | `oldfrench` | Marco Polo, Cipangu | fr1300 (first), it1300 | medium |
 | Italian | `italian` | Dante, Petrarch, Machiavelli | florentine (first), modern | not set |
 | Spanish | `spanish` | Columbus, 1493 | c1492 (first), modern | not set |
 | Dutch | `dutch` | Linschoten | h1596 (first), modern | not set |
 | French | `french` | Montaigne | m1580 (first), modern | not set |
+| | | Berlin Act, 1885 | fr1885 (first), modern | not set |
 | German | `german` | Kant, Nietzsche | northern (first), modern | not set |
 | | | Luther's Bible | ecg1545 (first), modern | not set |
+| Swahili | `swahili` | Steere, The Kites and the Crows | z1870 (first), modern | medium |
 
 The registry that maps a manifest's `language` code to a module is `PHON` in
 `pipeline/weft/draft.py`.
@@ -304,8 +310,8 @@ need a source other than Unihan; Mandarin choices for polyphonic characters.
 
 All Latin schemes keep the classical penultimate stress rule (except the French method, below), so
 every word needs its vowel length from a quantity table: `pipeline/weft/data/lat_quantities.yaml`,
-plus per-work tables for the Bayeux Tapestry, Inter caetera, the Ninety-five Theses and the Res
-Gestae. Entries follow Lewis and Short headword quantities plus inflectional endings, confirmed
+plus per-work tables for the Bayeux Tapestry, Inter caetera, the Ninety-five Theses, the Res
+Gestae and the Saer de Quincy charters. Entries follow Lewis and Short headword quantities plus inflectional endings, confirmed
 against the hexameter for Ovid. A word missing from the table is reported as `quantity-unknown`.
 
 **Schemes.**
@@ -315,7 +321,7 @@ against the hexameter for Ovid. A word missing from the table is reported as `qu
 | `classical` | Classical: restored pronunciation of Cicero's and Ovid's Rome | first for Ovid and the Res Gestae; third for Luther; second elsewhere | after W. S. Allen, *Vox Latina*: c and g hard, v as w, ae as ai, length audible |
 | `ecclesiastical` | Ecclesiastical: Italianate church Latin | second for Ovid and the Res Gestae; second of three for Luther | soft c and g before front vowels, v as v, ae as e, length heard only in stress |
 | `anglo-norman` | As first read: Latin in Normandy and Norman England around 1070 (approximate) | Bayeux Tapestry | c before front vowels ts, g and j dʒ, h silent, u as French u, s between vowels z |
-| `anglo-latin` | Anglo-Latin: as a clerk in England read Latin around 1215 (approximate) | Magna Carta | soft c ts, soft g and j dʒ, h silent, v as v, s between vowels z |
+| `anglo-latin` | Anglo-Latin: as a clerk in England read Latin around 1215 (approximate) | Magna Carta; the Saer de Quincy charters | soft c ts, soft g and j dʒ, h silent, v as v, s between vowels z |
 | `italian-humanist` | As first read: Latin in northern Italy in the 1480s (approximate) | Pico; Inter caetera | Italian vowels, soft c ch, gn ny, sc sh, ti ts, h silent, s between vowels z |
 | `low-countries` | As first read: Latin in the Low Countries around 1500 (approximate) | Erasmus | Dutch vowel values long in open syllables, u as Dutch uu, g a fricative, ch kh, ti ts |
 | `tudor-english` | As first read: Latin in England around 1516 (approximate) | More | English long values in stressed open syllables at an earlier stage of the Great Vowel Shift, ti as si |
@@ -340,7 +346,9 @@ Res Gestae).
   (PRELIUM, EDIFICARE), Roger Wright's argument on the reading of Latin before and after the
   Carolingian reform, and Allen's appendix on French reading (module). The notes cite Pope, *From
   Latin to Modern French* (1934), and Wright, *Late Latin and Early Romance* (1982).
-- `anglo-latin`: spelling and French and English sound history (key); no work is named.
+- `anglo-latin`: spelling and French and English sound history (key); no work is named. The
+  charters' quantity table follows Lewis and Short, with the charter vocabulary (elemosina,
+  warantizo, ius patronatus) after Niermeyer and Du Cange (manifest).
 
 **Where it is weakest.**
 - Every national scheme is labelled approximate. None rests on a description by the author.
@@ -354,12 +362,50 @@ Res Gestae).
   manifests), so a table entry decides both length and the word that is sounded. Forms that differ
   only in a final long vowel share one entry, so the classical reading shows one length for both
   (Luther manifest).
+- `anglo-latin` on the Duglyn charter: the scheme was built for England about 1215, and the charter
+  was most likely written by a clerk in Scotland, whose Latin may have differed in ways not
+  modelled (manifest). Medieval spellings (Vniuersis, hec, Scocie) are shown as written, and the
+  quantity table restores the classical spelling so that the classical reading is classical
+  (manifest). Personal and place names take no long vowels unless a Latin form is attested.
 - Each word is phonemized alone; verse elision is not modelled (Ovid manifest).
 
 **What a specialist could improve.** Quantity-table entries, especially hidden quantities and
 medieval words keyed by their classical stems; the rule functions in `latin.py` (`_humanist`,
 `_german`, `_norman`, `_national`) for a named period grammar; an eu diphthong; a separate
 southern Italian or Roman reading for the papal chancery.
+
+## Sahidic Coptic
+
+**Schemes.**
+- `sahidic`, "Sahidic, 4th-5th century (approximate reconstruction)": letter values after Peust: ⲃ a
+  bilabial fricative, ⲏ a close e against ⲉ an open e (reduced to ə when unstressed), ⲟ an open o
+  against ⲱ a close o, ϫ the affricate of church, ϭ a palatalized k, ⲑ ⲫ ⲭ aspirates. The Greek
+  letters for voiced sounds in Greek words (ⲅ ⲇ ⲍ) are read k t s. A consonant with no vowel beside
+  it is read as syllabic, with ə before it. A doubled vowel is read as the vowel followed by a glottal
+  stop. Stress falls on the last syllable with a full vowel; Greek loanwords keep the Greek accent.
+- `bohairic`, "Modern Coptic church pronunciation (Greco-Bohairic), applied to Sahidic spelling": the
+  reformed pronunciation taught since the 1850s, how a reader trained in today's liturgy would sound
+  the letters. The church reads Bohairic, not Sahidic, so this is a convention applied to a text it
+  was not made for, not a tradition of reading this text (module).
+
+**What it rests on.** Peust, *Egyptian Phonology* (1999), for the letter values; Layton for the
+reading of a doubled vowel; the letter table published by the Coptic Orthodox Diocese of the
+Southern United States for `bohairic` (module). The accent of Greek loanwords and the list of
+unstressed particles are in `pipeline/weft/data/cop_stress.yaml`. Lemma and morphology come from
+UD_Coptic-Scriptorium (CC BY 4.0), which annotates a different digital text of Mark; spelling
+differences are normalized before the two are compared, and what remains is reported as
+`edition-differs-from-treebank` (manifest). Glosses are hand-written against the treebank's lemmas,
+with Crum's *Coptic Dictionary* (1939) and Lambdin's *Introduction to Sahidic Coptic* (1983) as
+references (manifest).
+
+**Where it is weakest.** The edition prints no supralinear strokes and no punctuation, so the
+syllabic vowel is supplied by rule rather than read from the manuscript (manifest). That Greek
+loanwords keep the Greek accent is an assumption (manifest). The value of ⲩ standing alone in Greek
+words may already have shifted (key). Each word is phonemized alone.
+
+**What a specialist could improve.** The stress table and the particle list in `cop_stress.yaml`;
+the syllabic-consonant rule and the Greek-letter values in `coptic.py`; the normalization list used
+to compare the edition with the treebank's text.
 
 ## Old Tamil
 
@@ -441,6 +487,37 @@ is reconstructed from modern forms; its notes date the saga to about 1310, later
 **What a specialist could improve.** A per-word distinction of ǫ and ø; rules in `norse.py` for a
 later date (about 1300) as a separate scheme; old forms for Grettis saga.
 
+## Old East Slavic
+
+**Schemes.**
+- `orv1100`, "Old East Slavic about 1100 (approximate)": the language of Rus' when the chronicle was
+  compiled in Kiev. The jers ъ and ь are still sounded, as very short vowels; ѣ is a close e,
+  distinct from е; ѧ and ꙗ are the same sound as я, the nasal vowels having been lost; ы is a back
+  i; г is a stop; consonants before ь, я and ю are soft; syllables are open. Both schemes read the
+  hand-typed reading form `n` of the edition (abbreviations written out, superscripts lowered), not
+  the manuscript spelling.
+- `ru`, "Read as Russian today (a convention)": the text as a reader of Russian reads it aloud in a
+  class on the history of the language: ъ silent, ь a soft consonant, ѣ as е, modern vowel
+  reduction, final devoicing. A convention of reading, not a reconstruction.
+
+**What it rests on.** The handbooks of Russian historical phonology, which rest on the spelling of
+dated manuscripts and birchbark letters: Shakhmatov; Kuznetsov; Shevelov, *A Prehistory of Slavic*
+(1964); Schenker, *The Dawn of Slavic* (1995) (module). The text is Weft's transcription of the
+Laurentian copy of 1377 as printed by Karsky in *Полное собрание русских летописей*, vol. 1 (1926),
+checked against the OCR of the scan with declared corrections (manifest). No treebank is used:
+TOROT covers the chronicle but is licensed NC (manifest).
+
+**Where it is weakest.** The jers: their loss in weak position is dated to the 12th century, so at
+1100 the weak ones were fading, and the scheme treats every written jer alike; the module calls this
+its weakest point. The value of ѣ varied by region, and г in Kiev was probably a fricative, which is
+not shown. The manuscript does not mark stress; it is hand-entered in `n` from the stress of the
+same words in Russian and Ukrainian and from the accent paradigms of the handbooks (module and
+manifest). Softening before е, ѣ and и is assumed and not marked. The years, written in letter
+numerals, are read as numbers; the number words are not reconstructed (manifest).
+
+**What a specialist could improve.** The stress marks in `texts/primary-chronicle-varangians/edition.yaml`;
+the jer rule and a southern variant with fricative г in `oldeastslavic.py`; the regional value of ѣ.
+
 ## Persian
 
 **Schemes.**
@@ -462,6 +539,36 @@ the script only for its letters. The metre's licences are a reciter's judgment.
 
 **What a specialist could improve.** The stress rule and the ð rule in `persian.py`; the
 transliterations in `texts/persian-rubaiyat/edition.yaml`.
+
+## Middle Mongolian
+
+**Scheme.**
+- `mm-1250`, "Middle Mongolian, mid-13th century (approximate)", the only scheme: vowels a e i o u ö
+  ü, with ö and ü front rounded; stops and affricates contrast in aspiration rather than voicing;
+  q uvular and γ a voiced uvular fricative; h a plain h; two vowels in hiatus said as two
+  syllables; stress on the first syllable. There is no second scheme because a modern Khalkha
+  reading would mean substituting modern words, not reading these (module).
+
+**What it rests on.** The Ming transcription itself: which Chinese characters the transcribers chose
+for which sounds (aspirated initials for t, č, k, q and unaspirated for d, j, g, b, as Shiratori's
+preface also notes); the Uyghur-script spelling of later Mongolian; and comparison with modern
+Mongolian (module). The sound is derived from the romanization row, not from the Chinese characters
+read aloud. That row is Shiratori's romanization (1943) converted by rule into current conventions
+and hand-corrected for eighteen words, each correction marked in the word's provenance (module and
+manifest). Two sensors test it against the Ming spelling: the shoulder marks 舌 and 中 (every r has
+its mark, every mark its r or q) and vowel harmony (manifest).
+
+**Where it is weakest.** The whole scheme is a reconstruction (manifest `sound_confidence: low`). The
+aspiration contrast is inferred from the Chinese characters; the hiatus written ' may already have
+been a long vowel by the 14th century, and the scheme does not decide where; first-syllable stress
+is assumed and not attested for the period (module and manifest). The romanization is a
+transcription of the Ming spelling, not a reconstruction of the lost Uyghur-script original. The
+shoulder-mark sensors report disagreements as telemetry rather than failures, because the base text
+sometimes omits a mark.
+
+**What a specialist could improve.** The conversion rule and the eighteen `n` overrides in
+`texts/secret-history-mongols/edition.yaml`; the vowel values and the aspiration reading in
+`mongolian.py`; evidence for where hiatus had become length.
 
 ## Japanese
 
@@ -565,23 +672,36 @@ sharp-long and soft-long ee and oo are not shown.
 **What a specialist could improve.** Lexicon entries; the two long ee and oo, if a per-word source
 exists.
 
-## French (Middle French)
+## French
 
 **Schemes.**
 - `m1580`, "French about 1580: Montaigne's day (approximate)": liaison, s before a consonant silent,
   oi as [wɛ], un as [ỹ], nasal vowels before a following vowel, e caduc counted, tongue-tip r.
+- `fr1885`, "French of the 1880s: formal Paris reading", for the General Act of the Berlin Conference
+  (1885): close to modern French, with the differences the period's phoneticians record: long
+  vowels in a final syllable closed by r, z, zh or v and in many words with a circumflex; a back a
+  where Littré marks one (pas, droits); more liaisons in formal reading (marked `zf` in the
+  edition); a few words whose final consonant was then silent (but); the uvular r.
 - `modern`, "Modern French".
 
 No syllable is capitalized: the module states that French has no distinctive word stress.
 
-**What it rests on.** Meigret (1542, 1550), Peletier du Mans (1550), Ramus (1562, 1572), Bèze
+**What it rests on.** For `m1580`: Meigret (1542, 1550), Peletier du Mans (1550), Ramus (1562, 1572), Bèze
 (1584) and Henri Estienne (1578), as collected by Thurot (1881-1883); Palsgrave (1530) on final
-consonants (module). The sound comes from `pipeline/weft/data/fr_lexicon.yaml`.
+consonants (module). For `fr1885` the evidence is direct, not reconstructed from rhymes or spelling:
+Passy, *Les sons du français* (1887), the transcriptions of *Le Maître phonétique* (from 1886), and
+Littré's *Dictionnaire de la langue française* (1863-1872), which gives a pronunciation for each
+word (module). The sound comes from `pipeline/weft/data/fr_lexicon.yaml`; where the lexicon has no
+`fr1885` form, the word is taken from its modern form with the length rule applied.
 
-**Where it is weakest.** The value of oi, the r of -er infinitives, and the strength of the e caduc
-(manifest). Montaigne's Gascon-coloured speech is not modelled.
+**Where it is weakest.** `m1580`: the value of oi, the r of -er infinitives, and the strength of the e caduc
+(manifest). Montaigne's Gascon-coloured speech is not modelled. `fr1885`: vowel length is shown for
+the word said alone and was reduced inside a phrase; the optional liaisons of formal reading are
+marked by judgment, following Littré where he gives a note; the scheme models the Paris norm of the
+language the Act was written in, not the accents of the delegates, who were not French (manifest).
 
-**What a specialist could improve.** Lexicon entries; the liaison exceptions (`nz` in the edition).
+**What a specialist could improve.** Lexicon entries, including `fr1885` forms from Littré; the
+liaison exceptions (`nz`) and formal liaisons (`zf`) in the editions; the length rule in `french.py`.
 
 ## German
 
@@ -609,6 +729,37 @@ Scripture (manifest). Dauid with f is a judgment (manifest).
 **What a specialist could improve.** Lexicon entries, including old vowel lengths where they differ
 from modern ones; the lenis rule and w in `german.py`.
 
+## Swahili
+
+**Schemes.**
+- `z1870`, "Zanzibar Swahili about 1870: Steere's day (approximate)": Steere's letters read by the
+  values his Handbook gives them. Five vowels, each its own syllable, e and o open; a and e run
+  together into a long e where they meet before a consonant; m and n before most consonants form a
+  syllable of their own and can carry the accent; double consonants in Arabic loans sounded as
+  written; the accent on the last syllable but one.
+- `modern`, "Modern Standard Swahili": the same rules applied to the modern standard form of each
+  word, typed by hand in `n`, without the a + e coalescence. The standard was fixed in the 1930s on
+  the Zanzibar town dialect, so the two schemes differ mainly where the spelling of a word has
+  changed (hatta/hata, assubui/asubuhi). The modern form changes spelling and the shape of a word,
+  never its grammar (module).
+
+**What it rests on.** Steere's own account of his spelling in *Swahili Tales* (1870), preface,
+p. xiv ("the vowels are pronounced as in Italian, the consonants as in English, and ... there is
+always an accent on the last syllable but one"), and the letter values in *A Handbook of the Swahili
+Language as Spoken at Zanzibar*, third edition (1884), pp. 8-15 (module). The text is Weft's
+transcription from the page scans, checked against the Wikisource transcription and the OCR, with the
+OCR's misreadings declared token by token (manifest).
+
+**Where it is weakest.** The Handbook used is the third edition, revised by Madan after Steere's
+death, and no recording exists (manifest). Not modelled: the aspirated p, t and k Steere hears where
+a nasal has been lost; the implosive b, d and g that later descriptions report; tone and intonation
+(module). The long consonants of Arabic loans are uncertain, since the Handbook notes a tendency to
+drop one of them (module and manifest).
+
+**What a specialist could improve.** The syllabic-nasal rule and the a + e coalescence in
+`swahili.py`; the modern forms in `texts/swahili-tales-steere/edition.yaml`; aspiration where a
+nasal was lost.
+
 ## Open inconsistencies
 
 Known inconsistencies between the modules, the manifests and other documentation, listed so a
@@ -625,6 +776,9 @@ the README sample respelling, the Grettis saga scheme order, a Spanish key examp
   them approximate. Homer, Bashō, Genesis, the Koine works, Beowulf and every Italian, Spanish, Dutch,
   French and German work set none, although their manifests or modules call the first scheme
   reconstructed or approximate. Which pages carry the invitation is a policy still to be settled.
+- **Swahili manifest.** Its predicted gaps say the morphology display does not decode `NounClass`
+  or `Aspect`; `treebank.py` now decodes both, so the page shows the class and the aspect, and the
+  gap text is out of date until the work is next drafted.
 - **Latin docstring.** The opening docstring of `latin.py` describes two schemes and stress "in both
   schemes"; seven more were added later, and the French method of `as-first-read` puts stress on
   the last syllable.
