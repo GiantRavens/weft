@@ -4,6 +4,8 @@
   "use strict";
   const D = window.WEFT;
   const $ = (s, el = document) => el.querySelector(s);
+  // a link or image address that came in with the data: http(s) only (images may also be inline data:)
+  const safeUrl = (u, img = false) => (typeof u === "string" && (/^https?:\/\//i.test(u) || (img && /^data:image\//i.test(u)))) ? u : null;
   const h = (tag, attrs = {}, ...kids) => {
     const el = document.createElement(tag);
     for (const [k, v] of Object.entries(attrs)) {
@@ -179,10 +181,10 @@
       if (newStanza && line.figure && line.figure.src) {
         const f = line.figure;
         text.append(h("figure", { class: "sec-fig" },
-          h("img", { src: f.src, alt: f.alt || f.caption || "" }),
+          h("img", { src: safeUrl(f.src, true), alt: f.alt || f.caption || "" }),
           h("figcaption", {}, f.caption || "",
             (f.credit || f.license || f.source) ? h("span", { class: "cred" }, [f.credit, f.license].filter(Boolean).join(" · "),
-              f.source ? " · " : "", f.source ? h("a", { href: f.source, text: "source" }) : null) : null)));
+              safeUrl(f.source) ? " · " : "", safeUrl(f.source) ? h("a", { href: safeUrl(f.source), text: "source" }) : null) : null)));
       }
       prevStanza = line.stanza;
       text.append(h("section", { class: "lineset" + (newStanza ? " stanza-first" : ""), id: line.id },

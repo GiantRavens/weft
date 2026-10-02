@@ -5,7 +5,7 @@ Read `README.md` first, then `docs/lifecycle.md` and `docs/schema.md`. Tasks liv
 ## Hard rules
 
 1. Never edit anything under `texts/*/sources/` or `texts/*/gen/` by hand. Sources are fetched; gen is produced by `pipeline/`. Human corrections go in `texts/*/curated/`.
-2. Every generated field carries `src` (what produced it, with version) and, where a judgment was made, `conf` (0 to 1). Low confidence goes to the review queue, not silently into the page.
+2. Every generated field carries `src` (what produced it, with version) and, where a judgment was made, `conf` (0 to 1). Low confidence goes to the review queue, not silently into the page. (The `conf` field and the review queue belong to the generated gloss step, which is phase 4; today glosses are hand-written in `curated/` and carry `status: draft` instead.)
 3. Lemma and morphology come from the treebank. An LLM may pick a sense from the lexicon entry for that lemma; it may not invent a lemma or a parse. **Exception, declared in the manifest (`treebank: null`):** when no treebank exists for a text (Eddic poetry, Chaucer), lemma and morphology are hand-annotated in `curated/` against a named dictionary, marked `status: draft`, and the page says so. The draft status is only lifted by a human reviewer.
 4. Third-party sources are never committed: `texts/*/sources/` is gitignored and each user fetches their own copy with `weft acquire`, which shows the licenses first and verifies the manifest's sha256. Nothing copyrighted enters `texts/`. It goes in `private/` with the same layout, and the pipeline reads both.
 5. Line IDs are CTS URNs or a CTS-style short form (`od.1.1`). Every layer, note and audio timing hangs off them.

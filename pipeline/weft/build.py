@@ -27,6 +27,19 @@ def _load_yaml_dir(d: Path) -> list[tuple[Path, object]]:
     return [(p, yaml.safe_load(p.read_text())) for p in sorted(d.glob("*.yaml")) if not p.name.endswith(".run.yaml")]
 
 
+def inside(repo: Path, rel: str, what: str) -> Path:
+    """A repository-relative path from committed data (a figure, an illustration), confined to the
+    repository. Data files are reviewed as text, so a path that climbs out ('../', an absolute path)
+    is refused loudly rather than read into a published page."""
+    # lexical, not resolved: a symlink inside the repository (as the test fixtures use) stays inside;
+    # an absolute path or a path with enough '..' to climb out does not
+    root = Path(os.path.normpath(repo))
+    p = Path(os.path.normpath(root / rel))
+    if Path(rel).is_absolute() or not p.is_relative_to(root):
+        raise SystemExit(f"weft: {what} path escapes the repository: {rel}")
+    return p
+
+
 def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
     m = load_manifest(work_dir)
     lines, index = [], {}
@@ -83,7 +96,7 @@ def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
     for line in lines:
         fig = line.get("figure")
         if isinstance(fig, dict) and fig.get("file") and not fig.get("src"):
-            fp = repo_root / fig["file"]
+            fp = inside(repo_root, fig["file"], "figure")
             if fp.exists():
                 kind = "png" if fp.suffix.lower() == ".png" else "jpeg"
                 fig["src"] = f"data:image/{kind};base64," + base64.b64encode(fp.read_bytes()).decode()
@@ -178,9 +191,9 @@ def load_illustration(repo: Path, work: str, size: str = "image", private: bool 
             rec = (yaml.safe_load(cf.read_text(encoding="utf-8")) or {}).get(work)
             if rec:
                 break
-    if not rec or not (repo / rec[size]).exists():
+    if not rec or not inside(repo, rec[size], "illustration").exists():
         return None
-    b = (repo / rec[size]).read_bytes()
+    b = inside(repo, rec[size], "illustration").read_bytes()
     return {**rec, "src": "data:image/jpeg;base64," + base64.b64encode(b).decode()}
 
 
@@ -232,15 +245,22 @@ def preview_meta(data: dict) -> str:
 
 
 def render(data: dict, site_dir: Path) -> str:
+    import html as H
     tpl = (site_dir / "template.html").read_text()
     css = (site_dir / "weft.css").read_text()
     js = (site_dir / "weft.js").read_text()
-    payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-    title = f"{data['work']['title']} · Weft"
+    # the art and the frontispiece go into the HTML, not into the data payload (they were once in
+    # both, which doubled the image in every page); _curated_missing is check's, not the page's
     art = data.pop("_art", {})
+    frontis = frontispiece(data.pop("_illustration", None))
+    data.pop("_curated_missing", None)
+    # every < becomes \u003c, so no string in the data can open or close a tag or a comment inside
+    # the <script> that carries it (</script>, <!--<script>); JSON reads the escape as a plain <
+    payload = json.dumps(data, ensure_ascii=False).replace("<", "\\u003c")
+    title = H.escape(f"{data['work']['title']} · Weft")
     tpl = (tpl.replace("{{LOCKUP}}", art.get("weft-lockup", "Weft"))
               .replace("{{FAVICON}}", art.get("favicon", ""))
-              .replace("{{FRONTIS}}", frontispiece(data.pop("_illustration", None))))
+              .replace("{{FRONTIS}}", frontis))
     return (tpl.replace("{{TITLE}}", title)
                .replace("{{META}}", preview_meta(data))
                .replace("/*{{CSS}}*/", css)

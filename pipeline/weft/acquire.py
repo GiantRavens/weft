@@ -10,6 +10,8 @@ Each user reads the licenses and fetches their own copy:
 from __future__ import annotations
 
 import hashlib
+import os
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -36,8 +38,20 @@ def sha256(p: Path) -> str:
     return h.hexdigest()
 
 
+def target(work_dir: Path, s: dict) -> Path:
+    """Where a source lands: inside the work's folder. A manifest is reviewed as text, so a `file`
+    that climbs out of the folder, or a url that is not http(s), is refused before anything is written."""
+    root = Path(os.path.normpath(work_dir))
+    p = Path(os.path.normpath(root / s["file"]))
+    if Path(s["file"]).is_absolute() or not p.is_relative_to(root):
+        raise SystemExit(f"weft: source path escapes the work folder: {s['file']}")
+    if s.get("url") and urllib.parse.urlsplit(s["url"]).scheme not in ("http", "https"):
+        raise SystemExit(f"weft: source url must be http or https: {s['url']}")
+    return p
+
+
 def status(work_dir: Path, s: dict) -> str:
-    p = work_dir / s["file"]
+    p = target(work_dir, s)
     if not p.exists():
         return "missing"
     if s.get("sha256") and sha256(p) != s["sha256"]:
@@ -53,7 +67,7 @@ def run(work_dir: Path, accept: bool = False) -> dict:
         if st != "ok" and accept and s.get("local"):
             st = "local-" + st          # nothing to download: put your own copy at this path
         elif st != "ok" and accept:
-            p = work_dir / s["file"]
+            p = target(work_dir, s)
             p.parent.mkdir(parents=True, exist_ok=True)
             tmp = p.with_suffix(p.suffix + ".part")
             req = urllib.request.Request(s["url"], headers={"User-Agent": "weft-acquire/0.1"})

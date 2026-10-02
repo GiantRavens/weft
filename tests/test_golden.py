@@ -473,7 +473,10 @@ def test_private_never_tracked():
     and the public site output holds no page for a private work."""
     import subprocess
     from weft import paths
-    tracked = subprocess.run(["git", "ls-files", "private", "texts"], cwd=REPO, capture_output=True, text=True).stdout.split()
+    r = subprocess.run(["git", "ls-files", "private", "texts"], cwd=REPO, capture_output=True, text=True)
+    assert r.returncode == 0, r.stderr          # no git, no sensor: fail loudly rather than pass on nothing
+    tracked = r.stdout.split()
+    assert "texts/homer-odyssey/manifest.yaml" in tracked, "git ls-files returned nothing: the sensor is blind"
     leaks = [f for f in tracked if (f.startswith("private/") and f != "private/README.md")
              or ("/sources/" in f and not f.endswith("/sources/README.md"))]
     assert leaks == [], leaks
@@ -504,3 +507,39 @@ def test_no_shadowed_tests():
     import collections, re
     names = re.findall(r"^def (test_\w+)", Path(__file__).read_text(), re.M)
     assert [n for n, k in collections.Counter(names).items() if k > 1] == []
+
+
+def test_every_built_work_passes_check():
+    """Every work with generated layers passes `weft check`, whether or not a test above names it.
+    `weft build` does not run check, so this is the gate between a broken layer and a deployed page."""
+    works = sorted(p.parent.parent.name for p in (REPO / "texts").glob("*/gen/*.yaml") if not p.name.endswith(".run.yaml"))
+    assert len(works) >= 57
+    bad = {w: check.run(REPO, w)["problems"] for w in works}
+    assert {w: p for w, p in bad.items() if p} == {}
+
+
+def test_render_confines_data_to_data(tmp_path):
+    """Committed YAML cannot write markup into the page or read files from outside the repository:
+    the title is escaped, every < in the payload is \\u003c, and a figure path that climbs out is refused."""
+    from weft import build
+    repo = tmp_path
+    for d in ("site", "art", "docs", "pipeline"):
+        (repo / d).symlink_to(REPO / d)
+    work = repo / "texts" / "basho-furuike"
+    shutil.copytree(REPO / "texts" / "basho-furuike", work, ignore=shutil.ignore_patterns("sources"))
+    m = yaml.safe_load((work / "manifest.yaml").read_text())
+    m["title"] = 'X</title><script>window.pwned=1</script> & co'
+    (work / "manifest.yaml").write_text(yaml.dump(m, allow_unicode=True, sort_keys=False))
+    gen = [p for p in sorted((work / "gen").glob("*.yaml")) if not p.name.endswith(".run.yaml")][0]
+    g = yaml.safe_load(gen.read_text())
+    g["lines"][0]["tokens"][0]["surface"] = "枯枝<!--<script>"
+    gen.write_text(yaml.dump(g, allow_unicode=True, sort_keys=False))
+    page = build.run(repo, "basho-furuike").read_text()
+    head = page.split("<body>", 1)[0]
+    assert "<script>window.pwned" not in head and "&lt;script&gt;window.pwned" in head and "&amp; co" in head
+    payload = page.split("window.WEFT = ", 1)[1].split("</script>", 1)[0]
+    assert "<" not in payload and "\\u003c!--\\u003cscript>" in payload
+    g["lines"][0]["figure"] = {"file": "../../etc/hostname", "caption": "x"}
+    gen.write_text(yaml.dump(g, allow_unicode=True, sort_keys=False))
+    with pytest.raises(SystemExit, match="escapes the repository"):
+        build.assemble(work)
