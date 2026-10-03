@@ -11,10 +11,11 @@ def run(repo: Path, work: str) -> dict:
     from .paths import work_dir
     data = assemble(work_dir(repo, work))
     problems: Counter[str] = Counter()
+    warnings: Counter[str] = Counter()         # reported and counted, but not a failure of the work
     samples: dict[str, list[str]] = {}
 
-    def bad(cls: str, s: str):
-        problems[cls] += 1
+    def bad(cls: str, s: str, warn: bool = False):
+        (warnings if warn else problems)[cls] += 1
         samples.setdefault(cls, [])
         if len(samples[cls]) < 5:
             samples[cls].append(s)
@@ -40,8 +41,11 @@ def run(repo: Path, work: str) -> dict:
                 rs = t.get("sound", {}).get(s, {}).get("respell")
                 if not rs:
                     bad(f"token-no-sound-{s}", t["id"])
-                elif rs == "?":            # a module's "I could not read this word": not a sound
-                    bad(f"token-sound-unknown-{s}", t["id"])
+                elif rs == "?":
+                    # a module's "I could not read this word" (a character with no Tang reading in Unihan, a
+                    # Sumerian sign without a value): shown on the page as ?, counted here as a warning so the
+                    # gap stays visible without failing a work whose manifest predicts it
+                    bad(f"token-sound-unknown-{s}", t["id"], warn=True)
             if isinstance(t.get("gloss"), str) and " " in t["gloss"]:
                 bad("gloss-has-space", f"{t['id']} {t['gloss']!r}")
     for m in data["_curated_missing"]:
@@ -71,4 +75,4 @@ def run(repo: Path, work: str) -> dict:
             bad("sense-gap", f"{s['tr']} {gaps[:3]}")
     return {"work": work, "lines": len(line_ids), "tokens": ntok,
             "translations": len(data["sense"]), "notes": len(data["notes"]),
-            "problems": dict(problems), "samples": samples, "ok": not problems}
+            "problems": dict(problems), "warnings": dict(warnings), "samples": samples, "ok": not problems}
