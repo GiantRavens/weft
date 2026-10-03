@@ -1,0 +1,43 @@
+# Notes on Daniel 5.
+- id: n.dan.5.1.aramaic
+  attach: dan.5.1
+  kind: editorial
+  status: draft
+  leans_on: the Masoretic text (Daniel 2:4b-7:28 is in Aramaic); Rosenthal, A Grammar of Biblical Aramaic (1961)
+  text: The book of Daniel changes language at 2:4, where the Chaldeans begin to speak, and stays in Aramaic to the end of chapter 7. This is the Aramaic of the Persian and early Hellenistic chanceries,
+    the lingua franca of the Near East, pointed by the same Masoretes who pointed the Hebrew. The sound row applies their Tiberian pointing; the gloss row keeps the Aramaic order, which puts the subject
+    after the verb and marks the definite noun with a final -ā.
+- id: n.dan.5.7.ketiv
+  attach: dan.5.7.6
+  kind: editorial
+  status: draft
+  leans_on: the Westminster Leningrad Codex, Ketiv and Qere; OSHB encoding
+  text: 'Written כשדיא but read kaśdāʾē, ''Chaldeans'': a Ketiv (what is written) with a Qere (what is read). The Leningrad Codex gives the consonants in the text and the reading in the margin; the digital
+    text carries the consonants without vowels, so the sound row for this word and the other unpointed words of the chapter (נפקו, עללין, אנתה, תוכל, עליא) is a reading supplied by the reader.'
+- id: n.dan.5.25.mene
+  attach: dan.5.25
+  kind: editorial
+  status: draft
+  leans_on: Clermont-Ganneau, 'Mané, thécel, pharès et le festin de Balthasar', Journal asiatique (1886); the interpretation in verses 26-28
+  text: 'Four words the wise men could not read. Each is a weight: mənē a mina, təqēl a shekel, parsīn two half-minas. Daniel reads them as verbs with the same letters: ''numbered'', ''weighed'', ''divided'',
+    and hears in parsīn the name of Persia (pārās). The gloss row gives the verbal readings, since that is how the text itself explains them.'
+- id: n.dan.5.30.numbering
+  attach: dan.5.30
+  kind: editorial
+  status: draft
+  leans_on: the Masoretic chapter division against the Vulgate and English Bibles
+  text: The Hebrew Bible ends the chapter here. The sentence that English Bibles print as 5:31, 'And Darius the Mede received the kingdom', is 6:1 in the Masoretic text, so it is not in this passage; the
+    translations' verse 31 is omitted with it.
+- id: n.dan.5.22.bar
+  attach: dan.5.22.2
+  kind: editorial
+  status: draft
+  leans_on: the usage of bar and ab in Aramaic royal inscriptions; Daniel 5:2, 11, 13, 18
+  text: bar 'son' and ab 'father', used of Belshazzar and Nebuchadnezzar throughout the chapter, cover descent and succession generally in Aramaic royal usage; Belshazzar was the son of Nabonidus, who is
+    not named in Daniel.
+- id: n.dan.5.11.gods
+  attach: dan.5.11.6
+  kind: editorial
+  status: draft
+  leans_on: Rosenthal, A Grammar of Biblical Aramaic, on ʾĕlāhīn; Daniel 4:5-6 in the Hebrew numbering
+  text: 'ʾĕlāhīn qaddīšīn, ''holy gods'', with a plural adjective: the queen speaks as a Babylonian. The Jewish Publication Society and the King James render it ''holy gods''; the gloss keeps the plural.'

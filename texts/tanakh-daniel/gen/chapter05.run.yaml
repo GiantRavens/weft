@@ -1,0 +1,20 @@
+run:
+  weft: 0.1.0
+  book: 5
+  lines: 1-30
+counts:
+  lines: 30
+  tokens: 524
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'the text is Aramaic but its vowels are the Tiberian Masoretes'' (about AD 900): ''as first written'' can only reach the pointing, not the 2nd century BC; the Hebrew module''s Tiberian rules are applied
+  unchanged, which the pointing warrants'
+- 'verse numbering: the Hebrew text ends the chapter at 5:30 and begins chapter 6 with Darius; the English Bibles print that sentence as 5:31. The pilot stops at 5:30, so the translations'' verse 31 is
+  not shown'
+- the Aramaic verb stems (Peal, Pael, Haphel, Hithpeel...) are decoded from the OSHB parsing with the Aramaic letter table; the Hebrew table shares the letters with other meanings
+- 'Strong''s lexicon gives an English sense per lemma, not per verse: the gloss row is hand-made, draft'
+- 'the modern reading is a convention: Aramaic is not a spoken language of Israel, so this is how a Hebrew reader sounds the pointed text, not a living tradition of Daniel'
+- 'right-to-left script: the word strip runs right to left, English rows stay left to right'

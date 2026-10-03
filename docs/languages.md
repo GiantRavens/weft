@@ -29,7 +29,7 @@ that use it. Where the repository names no source, this page says so.
 - **Confidence.** A manifest may set `sound_confidence`. At `low` the page opens with "The
   pronunciation here is a reconstruction"; at `medium`, "Parts of the pronunciation here are
   reconstructed". Both link to the Pronunciation and Recording forms and to this page. Works with
-  no value show no invitation. Twenty-four of the fifty-seven public works set a value (see the table, and the
+  no value show no invitation. Twenty-five of the fifty-eight public works set a value (see the table, and the
   last section).
 - **Each word alone.** Unless a section below says otherwise, each word is phonemized on its own:
   elision, sandhi and assimilation across words are not modelled in the sound row.
@@ -68,6 +68,7 @@ the page shows no invitation.
 | | | John, Beatitudes, 1 Corinthians 13 | koine (first), erasmian | not set |
 | | | Epictetus, Marcus Aurelius | koine (first), restored, erasmian | not set |
 | Biblical Hebrew | `hebrew` | Genesis | tiberian (first), modern-israeli | not set |
+| Biblical Aramaic | `hebrew` | Daniel 5 | tiberian (first), modern-israeli | medium |
 | Classical Chinese | `chinese` | Sunzi, Daodejing | old-chinese (first), tang, mandarin | medium |
 | | | Li Bai | tang (first), mandarin, cantonese | medium |
 | Sahidic Coptic | `coptic` | Gospel of Mark 1 | sahidic (first), bohairic | medium |
@@ -275,6 +276,13 @@ recovered from the sof pasuq.
 **What a specialist could improve.** The shewa and qamets heuristics in `hebrew.py`, with a named
 grammar; an earlier reconstruction as a scheme placed before `tiberian`, if one can be stated per
 word.
+
+**Aramaic.** The Aramaic chapters of Daniel carry the same Tiberian pointing, so Daniel 5 is read by this
+module unchanged, under the language code `arc`. What differs is the morphology: the OSHB parsing strings are
+prefixed A, and the verb-stem letters then mean the Aramaic stems (Peal, Pael, Haphel, Hithpeel and the rest),
+which `treebank.py` decodes from its own table. Words written one way and read another (Ketiv and Qere) reach
+the digital text as consonants without vowels, and their sound row is a reading supplied by the reader, which
+the page's notes say.
 
 ## Classical Chinese
 

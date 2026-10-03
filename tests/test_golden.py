@@ -567,3 +567,21 @@ def test_elvish_stress_matches_tolkien():
     assert E.word_sound("emyn", "sjn")[1] == "E-mün"
     assert E.word_sound("aear", "sjn")[1] == "AI-ar"
     assert E.word_sound("thalion", "sjn")[0].endswith("ɔn")
+
+
+def test_aramaic_daniel():
+    """Daniel 5 (Biblical Aramaic) reads through the Hebrew module: the OSHB's Aramaic verb stems decode
+    from their own table, and a Ketiv (unpointed, as written) takes its sound from the Qere reading."""
+    from weft import treebank as T
+    assert "Stem=Peal" in T.oshb_to_ud("Vqp3ms", "A")
+    assert "Stem=Qal" in T.oshb_to_ud("Vqp3ms", "H") and "Stem=Haphel" in T.oshb_to_ud("Vhp3ms", "A")
+    g = yaml.safe_load((REPO / "texts/tanakh-daniel/gen/chapter05.yaml").read_text())
+    toks = {t["id"]: t for l in g["lines"] for t in l["tokens"]}
+    kasdaye = toks["dan.5.7.6"]
+    import unicodedata
+    letters = lambda x: "".join(c for c in x if not unicodedata.combining(c))
+    assert kasdaye["surface"] == "כשדיא" and letters(kasdaye["norm"]) == "כשדאי"
+    assert kasdaye["sound"]["tiberian"]["respell"] == "kas-daw-ʾAY"
+    assert sum(1 for t in toks.values() if t.get("norm")) == 24
+    r = check.run(REPO, "tanakh-daniel")
+    assert r["ok"], r["problems"]

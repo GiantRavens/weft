@@ -77,7 +77,7 @@ server, so a page or the whole folder can be sent as an attachment.
 
 ## Status
 
-Fifty-seven works built across twenty-four languages, oldest first in the library:
+Fifty-eight works built across twenty-five languages, oldest first in the library:
 
 | Work | Passage | Schemes | Translations |
 |---|---|---|---|
@@ -89,6 +89,7 @@ Fifty-seven works built across twenty-four languages, oldest first in the librar
 | Homer, Odyssey | 1.1-10 | restored, Erasmian | Butler 1900, Butcher and Lang 1879 |
 | Aristotle, Metaphysics | A.1, 980a21-27 | restored, Erasmian | Taylor 1801, M'Mahon 1857 |
 | Genesis (Bereshit) | 1:1-2:3, the creation account | Tiberian, modern Israeli | JPS 1917, Geneva 1599, King James 1611 |
+| Daniel 5: Belshazzar's feast | the whole chapter (Hebrew numbering, 30 verses), in Biblical Aramaic | Tiberian, modern reading | JPS 1917, Geneva 1599, King James 1611 |
 | Gospel of John | 1:1-18, the prologue | Koine, Erasmian | Tyndale 1534, Geneva 1599, King James 1611 |
 | The Beatitudes (Matthew 5:3-12) | 10 verses | Koine, Erasmian | Tyndale 1534, Geneva 1599, King James 1611 |
 | 1 Corinthians 13 | the whole chapter | Koine, Erasmian | Tyndale 1534, Geneva 1599, King James 1611 |
@@ -139,7 +140,7 @@ Fifty-seven works built across twenty-four languages, oldest first in the librar
 | Haiku of Bashō | 9 haiku, 1680-1694 | Edo (1680s-90s), modern | Chamberlain 1902, Aston 1899, Hearn 1898 and 1900, Noguchi 1914; Yuasa 1966 cited |
 | Grettis saga | chapter 14, sentences 1-9 | Old Norse, modern Icelandic | Morris and Magnússon 1869, Hight 1914 |
 
-Homer, Ovid, John, Grettis saga and the Rigveda take lemma and grammar from treebanks (AGDT, LDT, MorphGNT, IcePaHC, the Vedic Treebank); Aristotle, Epictetus and Marcus Aurelius from GLAUx, an automatic parse, corrected by hand where it errs; Genesis from the Open Scriptures Hebrew Bible; Li Bai from the Kyoto Classical Chinese treebank, with Tang readings from Unicode's Unihan database. No open
+Homer, Ovid, John, Grettis saga and the Rigveda take lemma and grammar from treebanks (AGDT, LDT, MorphGNT, IcePaHC, the Vedic Treebank); Aristotle, Epictetus and Marcus Aurelius from GLAUx, an automatic parse, corrected by hand where it errs; Genesis and the Aramaic of Daniel 5 from the Open Scriptures Hebrew Bible; Li Bai from the Kyoto Classical Chinese treebank, with Tang readings from Unicode's Unihan database. No open
 treebank covers Eddic or Old English poetry or runic inscriptions, so Hávamál, the complete Völuspá, Þrymskviða, Fáfnismál, Snorri's Gylfaginning, Beowulf and the
 runes are hand-annotated and marked draft (see CLAUDE.md rule 3). The runic page adds a script
 row, generated from the transliteration, and a labelled Weft translation where no public-domain

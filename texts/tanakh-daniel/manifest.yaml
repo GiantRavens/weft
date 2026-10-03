@@ -1,0 +1,77 @@
+work: tanakh-daniel
+title: "Daniel 5: Belshazzar's feast and the writing on the wall"
+author: Book of Daniel, in Biblical Aramaic
+language: arc
+lang_name: Biblical Aramaic
+prefix: dan                      # dan.<chapter>.<verse>[.<token>]
+urn: urn:weft:arc:tanakh.daniel  # no CTS URN; Weft-local identifier
+unit: verse
+written: {year: -165, display: "160s BC", label: "the Aramaic chapters of Daniel (2:4 to 7:28) are usually dated to the 160s BC, with older court tales behind them; the vowel points were added about AD 900"}
+status: phase-0
+pilot: {chapter: 5, first: 1, last: 30}
+edition:
+  id: wlc-oshb
+  name: Westminster Leningrad Codex (from the Leningrad Codex, AD 1008), via the Open Scriptures Hebrew Bible; the Aramaic morphology is the OSHB's own
+  format: oshb
+  osis_book: Dan
+  file: sources/oshb-daniel.xml
+  url: https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Dan.xml
+  sha256: bc69d0fa9708dacb11ea6d587509250bf1bcc1b4343eac2d6e97f8b41518fc0d
+  lexicon: sources/hebrew-strong.xml
+  license: WLC text public domain; OSHB lemma and morphology CC BY 4.0
+  license_url: https://github.com/openscriptures/morphhb/blob/master/LICENSE.md
+treebank:
+  id: oshb
+  name: Open Scriptures Hebrew Bible morphology (Aramaic parsing, language prefix A), with Strong's lexicon for the lemma and its sense
+  format: oshb-edition           # lemma and morphology come from the edition file itself
+  file: sources/hebrew-strong.xml
+  url: https://raw.githubusercontent.com/openscriptures/HebrewLexicon/21c9add13bc727d3a951361778e97e3ff7afd1ce/HebrewStrong.xml
+  sha256: a628f4f89f8bdaf2483fd3faf1abc8653cc6717758dfc9f24beb7571d9bdd0c4
+  license: CC BY 4.0 (OSHB); Strong's lexicon public domain
+  license_url: https://github.com/openscriptures/HebrewLexicon
+schemes: [tiberian, modern-israeli]   # default = the pointing itself, the earliest pronunciation preserved in full
+scheme_labels:
+  tiberian: "Tiberian: the Masoretic vowel points (about AD 900) read as the Masoretes heard them; the same pointing serves the Aramaic chapters"
+  modern-israeli: "Read as an Israeli reader reads the Aramaic of Daniel aloud today (a convention)"
+sound_confidence: medium
+translations:
+  - id: jps1917
+    translator: Jewish Publication Society
+    year: 1917
+    form: prose
+    format: usfm
+    license: public-domain
+    license_url: https://ebible.org/find/details.php?id=engjps
+    file: sources/jps1917-daniel.usfm
+    sha256: d6e979b9249f33e19a21aff71a02267502d8e2999401931bbd3184543826f402   # of the extracted member
+    url: https://ebible.org/Scriptures/engjps_usfm.zip
+    extract: "DAN"
+  - id: geneva1599
+    translator: Geneva Bible
+    year: 1599
+    form: prose
+    format: usfm
+    license: public-domain
+    license_url: https://ebible.org/find/details.php?id=enggnv
+    file: sources/geneva1599-daniel.usfm
+    sha256: 20c131dbb393fa8401ed37a9ae6ade8095add3eb849465555923493b35dd05f6   # of the extracted member
+    url: https://ebible.org/Scriptures/enggnv_usfm.zip
+    extract: "DAN"
+  - id: kjv1611
+    translator: King James Version
+    year: 1611
+    form: prose, 1769 standard text
+    format: usfm
+    license: public-domain
+    license_url: https://ebible.org/find/details.php?id=eng-kjv
+    file: sources/kjv-daniel.usfm
+    sha256: 1d3dbb03c2104b67b4a29f060feb376b953560a098699d0712822c538140a2b3   # of the extracted member
+    url: https://ebible.org/Scriptures/eng-kjv_usfm.zip
+    extract: "DAN"
+predicted_gaps:
+  - "the text is Aramaic but its vowels are the Tiberian Masoretes' (about AD 900): 'as first written' can only reach the pointing, not the 2nd century BC; the Hebrew module's Tiberian rules are applied unchanged, which the pointing warrants"
+  - "verse numbering: the Hebrew text ends the chapter at 5:30 and begins chapter 6 with Darius; the English Bibles print that sentence as 5:31. The pilot stops at 5:30, so the translations' verse 31 is not shown"
+  - "the Aramaic verb stems (Peal, Pael, Haphel, Hithpeel...) are decoded from the OSHB parsing with the Aramaic letter table; the Hebrew table shares the letters with other meanings"
+  - "Strong's lexicon gives an English sense per lemma, not per verse: the gloss row is hand-made, draft"
+  - "the modern reading is a convention: Aramaic is not a spoken language of Israel, so this is how a Hebrew reader sounds the pointed text, not a living tradition of Daniel"
+  - "right-to-left script: the word strip runs right to left, English rows stay left to right"

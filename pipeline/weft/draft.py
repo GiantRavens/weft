@@ -18,7 +18,7 @@ from . import __version__, akkadian, chinese, coptic, dutch, egyptian, elvish, f
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
 INDECLINABLE = set("dcgriebz")   # b: GLAUx coordinating conjunction
-PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebrew, "lzh": chinese, "runic": runic, "ja": japanese, "san": sanskrit,
+PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebrew, "arc": hebrew, "lzh": chinese, "runic": runic, "ja": japanese, "san": sanskrit,
         "akk": akkadian, "fa": persian, "ta": tamil, "it": italian, "fr": french,
         "es": spanish, "nl": dutch, "fro": oldfrench, "de": german, "egy": egyptian, "sux": sumerian, "orv": oldeastslavic, "xng": mongolian, "cop": coptic, "sw": swahili,
         "qya": elvish, "sjn": elvish}      # Quenya and Sindarin share one module; private works only
@@ -290,7 +290,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             surfaces = [r["word"] for r in verses[n]]
             puncts = [r.get("punct") for r in verses[n]]
             leads = [None] * len(surfaces)
-            conllu_pairs = [{k: r[k] for k in ("lemma", "postag", "ref", "lexgloss", "strong", "prefixes", "silluq") if r.get(k)}
+            conllu_pairs = [{k: r[k] for k in ("lemma", "postag", "ref", "lexgloss", "strong", "prefixes", "silluq", "qere") if r.get(k)}
                             for r in verses[n]]
         if ed_fmt == "morphgnt":
             surfaces = [r["word"] for r in verses[n]]
@@ -398,6 +398,10 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                 tok["lemma"] = w["lemma"]
                 tok["morph"] = w["postag"]
                 tok["tb"] = w.get("ref") or f"{w['sentence']}/{w['word']}"
+                if w.get("qere"):
+                    # Ketiv in the text, Qere in the margin: the reading is sounded, the writing is shown
+                    tok["norm"] = w["qere"]
+                    tok["prov"] = {"sound": "from the Qere (the margin reading); the surface is the Ketiv, the consonants as written"}
                 if w.get("enclitic"):
                     tok["enclitic"] = w["enclitic"]
                 for k in ("prefixes", "lexgloss", "strong"):

@@ -365,6 +365,11 @@ OSHB_PREFIX = {"b": ("בְּ", "in"), "c": ("וְ", "and"), "d": ("הַ", "the")
 OSHB_STEM = {"q": "Qal", "N": "Niphal", "p": "Piel", "P": "Pual", "h": "Hiphil", "H": "Hophal",
              "t": "Hithpael", "o": "Polel", "O": "Polal", "r": "Hithpolel", "m": "Poel", "M": "Poal",
              "Q": "QalPassive", "l": "Pilpel"}
+# the same letters mean other stems when the parsing string is prefixed A (Aramaic): OSHM code table
+OSHB_STEM_A = {"q": "Peal", "Q": "Peil", "u": "Hithpeel", "p": "Pael", "P": "Ithpaal", "M": "Hithpaal", "a": "Aphel",
+               "h": "Haphel", "s": "Saphel", "e": "Shaphel", "H": "Hophal", "i": "Ithpeel", "t": "Hishtaphel",
+               "v": "Ishtaphel", "w": "Hithaphel", "o": "Polel", "z": "Ithpoel", "r": "Hithpolel", "f": "Hithpalpel",
+               "b": "Hephal", "c": "Tiphel", "m": "Poel", "l": "Palpel", "L": "Ithpalpel", "O": "Ithpolel", "G": "Ittaphal"}
 OSHB_CONJ = {"p": "Qatal", "q": "Weqatal", "i": "Yiqtol", "w": "Wayyiqtol", "h": "Cohortative",
              "j": "Jussive", "v": "Imperative", "r": "PartAct", "s": "PartPass", "a": "InfAbs", "c": "InfCons"}
 OSHB_GEN = {"m": "Masc", "f": "Fem", "b": "Both", "c": "Com"}
@@ -375,12 +380,13 @@ OSHB_PART = {"o": ("PART", "Obj"), "d": ("DET", "Art"), "n": ("PART", "Neg"), "i
              "j": ("INTJ", None)}
 
 
-def oshb_to_ud(seg: str) -> str:
-    """One OSHB morph segment ('Vqw3ms', 'Ncfsa', 'To', 'R') -> a UD-style string."""
+def oshb_to_ud(seg: str, lang: str = "H") -> str:
+    """One OSHB morph segment ('Vqw3ms', 'Ncfsa', 'To', 'R') -> a UD-style string. `lang` is the
+    parsing string's language prefix, H (Hebrew) or A (Aramaic): the verb-stem letters differ."""
     pos, rest = seg[:1], seg[1:]
     f: dict[str, str] = {}
     if pos == "V":
-        f["Stem"] = OSHB_STEM.get(rest[:1], rest[:1])
+        f["Stem"] = (OSHB_STEM_A if lang == "A" else OSHB_STEM).get(rest[:1], rest[:1])
         conj = rest[1:2]
         f["Conj"] = OSHB_CONJ.get(conj, conj)
         tail = rest[2:]
@@ -461,10 +467,19 @@ def load_oshb(path: Path, book: str, chapter: int, first: int, last: int, lexico
                 if el.get("type") == "x-sof-pasuq":
                     rows[-1]["silluq"] = True
                 continue
+            if tag == "note" and el.get("type") == "variant" and rows and rows[-1].get("ketiv"):
+                # Ketiv and Qere: the text carries the consonants as written (type x-ketiv, unpointed);
+                # the margin reading, pointed, follows in a variant note. The reading is what is sounded.
+                q = el.find(f"{ns}rdg/{ns}w")
+                if q is not None and q.text:
+                    rows[-1]["qere"] = q.text.replace("/", "")
+                continue
             if tag != "w":
                 continue
+            ketiv = el.get("type") == "x-ketiv"
             lem_parts = el.get("lemma", "").split("/")
             morph = el.get("morph", "")
+            mlang = morph[:1] if morph[:1] in "HA" else "H"
             morph_parts = morph[1:].split("/") if morph[:1] in "HA" else morph.split("/")
             text_parts = (el.text or "").split("/")
             prefixes, main_i = [], None
@@ -474,7 +489,7 @@ def load_oshb(path: Path, book: str, chapter: int, first: int, last: int, lexico
                     break
                 pf = OSHB_PREFIX.get(lp.strip(), (lp, lp))
                 prefixes.append({"form": text_parts[k] if k < len(text_parts) else pf[0],
-                                 "gloss": pf[1], "morph": oshb_to_ud(morph_parts[k]) if k < len(morph_parts) else ""})
+                                 "gloss": pf[1], "morph": oshb_to_ud(morph_parts[k], mlang) if k < len(morph_parts) else ""})
             if main_i is None and prefixes:
                 # a preposition carrying a pronoun suffix (בּוֹ 'in it', לָהֶם 'to them'): OSHB gives
                 # only the prefix lemma (b, l), so the preposition itself is the word
@@ -482,8 +497,8 @@ def load_oshb(path: Path, book: str, chapter: int, first: int, last: int, lexico
                 rows.append({"word": (el.text or "").replace("/", ""),
                              "lemma": OSHB_PREFIX.get(lem_parts[-1].strip(), (lem_parts[-1],))[0],
                              "lexgloss": pf["gloss"], "strong": None,
-                             "postag": oshb_to_ud(morph_parts[len(lem_parts) - 1]) if len(lem_parts) - 1 < len(morph_parts) else "ADP",
-                             "prefixes": prefixes,
+                             "postag": oshb_to_ud(morph_parts[len(lem_parts) - 1], mlang) if len(lem_parts) - 1 < len(morph_parts) else "ADP",
+                             "prefixes": prefixes, "ketiv": ketiv,
                              "ref": f"{verse.get('osisID')}/{el.get('id')}"})
                 continue
             num = re.match(r"(\d+)", lem_parts[main_i]).group(1) if main_i is not None else None
@@ -493,8 +508,8 @@ def load_oshb(path: Path, book: str, chapter: int, first: int, last: int, lexico
                          "lemma": lex.get("lemma") or (f"H{num}" if num else ""),
                          "lexgloss": lex.get("def") or None,
                          "strong": f"H{num}" if num else None,
-                         "postag": oshb_to_ud(main_morph) if main_morph else "X",
-                         "prefixes": prefixes,
+                         "postag": oshb_to_ud(main_morph, mlang) if main_morph else "X",
+                         "prefixes": prefixes, "ketiv": ketiv,
                          "ref": f"{verse.get('osisID')}/{el.get('id')}"})
         out[int(vs)] = rows
     return out
