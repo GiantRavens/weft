@@ -175,9 +175,13 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                 raw_src = " ".join(raw_src.split())
                 # declared OCR corrections, each a reading of the page image: {ocr, print, in (optional path)}.
                 # Applied as whole words; a correction that matches nothing is itself reported.
+                seen: set = set()
                 for c in edition.get("verify_corrections") or []:
                     if c.get("in") and c["in"] not in vpath.split("+"):
                         continue
+                    if (c["ocr"], c["print"]) in seen:      # the same join declared for two pages read together
+                        continue
+                    seen.add((c["ocr"], c["print"]))
                     pat = r"(?<![\w])" + re.escape(" ".join(str(c["ocr"]).split())) + r"(?![\w])"
                     raw_src, k = re.subn(pat, " ".join(str(c["print"]).split()).replace("\\", "\\\\"), raw_src)
                     if k == 0:

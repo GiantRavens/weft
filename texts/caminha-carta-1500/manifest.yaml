@@ -1,5 +1,6 @@
 work: caminha-carta-1500
-title: 'Pero Vaz de Caminha, letter to King Manuel on the finding of Brazil (1 May 1500): the opening and the first sight of land'
+title: 'Pero Vaz de Caminha, letter to King Manuel on the finding of Brazil (1 May 1500): the opening, the first sight of land, and
+  the people of the coast'
 short_title: Caminha's letter
 author: Pero Vaz de Caminha (about 1450-1500), scrivener of Cabral's fleet
 language: pt
@@ -18,11 +19,14 @@ pilot:
   sections:
   - '1'
   - '2'
+  - '3'
+  - '4'
+  - '5'
 edition:
   id: ws-folio-transcription
   name: 'Carta a El Rei D. Manuel (ortografia original), Portuguese Wikisource: a folio-by-folio transcription of the Torre do Tombo
-    autograph keeping its spelling and line breaks; pages folio01r (revision 547300) and folio01v (revision 540860), not yet proofread
-    there'
+    autograph keeping its spelling and line breaks; pages folio01r to folio03r (revisions 547300, 540860, 342992, 359839, 359840), not
+    yet proofread there'
   format: weft-edition
   file: edition.yaml
   license: text public domain (1500); Wikisource transcription CC BY-SA 4.0; Weft line division and modern spellings CC BY-SA 4.0
@@ -49,6 +53,27 @@ sources_extra:
   sha256: f5c94be11b88ea1f3c20838101dea326d531a10c56aff45289b1bf116f0b0d51
   license: public domain text; Wikisource CC BY-SA 4.0
   license_url: https://pt.wikisource.org/wiki/Carta_a_El_Rei_D._Manuel_(ortografia_original)
+- id: ws-f2r
+  name: Página:Carta-caminha-folio02r.jpg, Portuguese Wikisource, revision 342992
+  file: sources/f2r.txt
+  url: https://pt.wikisource.org/w/index.php?oldid=342992&action=raw
+  sha256: badb8d1930ee725cdcefd87e5b56c4801187202627059ea8e376a77211dbbba1
+  license: public domain text; Wikisource CC BY-SA 4.0
+  license_url: https://pt.wikisource.org/wiki/Carta_a_El_Rei_D._Manuel_(ortografia_original)
+- id: ws-f2v
+  name: Página:Carta-caminha-folio02v.jpg, Portuguese Wikisource, revision 359839
+  file: sources/f2v.txt
+  url: https://pt.wikisource.org/w/index.php?oldid=359839&action=raw
+  sha256: 5f80ecd0e91e3621317da883050f260a5b5fdb02903832b5eae2bfc39b7fa5e8
+  license: public domain text; Wikisource CC BY-SA 4.0
+  license_url: https://pt.wikisource.org/wiki/Carta_a_El_Rei_D._Manuel_(ortografia_original)
+- id: ws-f3r
+  name: Página:Carta-caminha-folio03r.jpg, Portuguese Wikisource, revision 359840
+  file: sources/f3r.txt
+  url: https://pt.wikisource.org/w/index.php?oldid=359840&action=raw
+  sha256: c90875c47212b3b4e428600aee1ae97113f68a5aba325e8c839358af95af40f5
+  license: public domain text; Wikisource CC BY-SA 4.0
+  license_url: https://pt.wikisource.org/wiki/Carta_a_El_Rei_D._Manuel_(ortografia_original)
 translations:
 - id: weft-editorial
   kind: editorial
@@ -67,6 +92,8 @@ predicted_gaps:
 - 'the Wikisource transcription is unproofread (quality level 1): spot-checked against the standard editions (Cortesão 1943; the Torre
   do Tombo facsimile) for the pilot folios, where it agrees except ''aas xiij xij oras'' (folio 1v), which the editions read ''às dez
   horas''; the edition follows the transcription and the note says so'
+- the enclitic spellings of the manuscript (trouueos, deranlhes, tomauamonos) are one token each, with the modern form hyphenated (trouxe-os)
+  and the parse split into verb and pronoun
 - no public-domain English translation was found (Greenlee 1938 is the first full one); the page carries Weft's own, marked editorial
   and draft
 - 'no treebank: lemma and morphology are an automatic parse (spaCy pt_core_news_md 3.8) of the modern spelling corrected by hand; glosses

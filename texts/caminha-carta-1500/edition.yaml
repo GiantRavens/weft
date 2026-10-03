@@ -1,6 +1,6 @@
 # Weft edition of the opening of Pero Vaz de Caminha's letter to King Manuel (Porto Seguro, 1 May 1500): the
-# first paragraph of folio 1r and the whole of folio 1v, from the folio-by-folio transcription on Portuguese
-# Wikisource (Página:Carta-caminha-folio01r.png, -folio01v.jpg), which keeps the manuscript's spelling
+# first paragraph of folio 1r and the whole of folios 1v, 2r, 2v and 3r, from the folio-by-folio transcription on Portuguese
+# Wikisource (Página:Carta-caminha-folio01r.png to -folio03r.jpg), which keeps the manuscript's spelling
 # (capitam, ouuemos, homeës, the tildes and doubled vowels) and its line breaks. The transcription is not yet
 # proofread there (pagequality 1); each line is checked verbatim against the pinned page revisions, with the
 # words the transcriber broke at a manuscript line end rejoined (verify_corrections) and the superscript of
@@ -54,6 +54,93 @@ verify_corrections:
 - ocr: marinha jem
   print: marinhajem
   in: sources/f1r.txt
+- ocr: capita na
+  print: capitana
+  in: sources/f2r.txt
+- ocr: ma is
+  print: mais
+  in: sources/f2r.txt
+- ocr: ca pitam
+  print: capitam
+  in: sources/f2r.txt
+- ocr: al guűa
+  print: alguűa
+  in: sources/f2r.txt
+- ocr: dee stro
+  print: deestro
+  in: sources/f2r.txt
+- ocr: cor pos
+  print: corpos
+  in: sources/f2r.txt
+- ocr: Ao lopez
+  print: Aᵒ lopez
+  in: sources/f2r.txt
+- ocr: pra zer
+  print: prazer
+  in: sources/f2v.txt
+- ocr: dauerme lhados
+  print: dauermelhados
+  in: sources/f2v.txt
+- ocr: am dam
+  print: amdam
+  in: sources/f2v.txt
+- ocr: ne nhuűa
+  print: nenhuűa
+  in: sources/f2v.txt
+- ocr: bei ço
+  print: beiço
+  in: sources/f2v.txt
+- ocr: tor ua
+  print: torua
+  in: sources/f2v.txt
+- ocr: ama rela
+  print: amarela
+  in: sources/f2v.txt
+- ocr: ore lhas
+  print: orelhas
+  in: sources/f2v.txt
+- ocr: ca pitam
+  print: capitam
+  in: sources/f2v.txt
+- ocr: nj colaao
+  print: njcolaao
+  in: sources/f2v.txt
+- ocr: per a terra
+  print: pera terra
+  in: sources/f3r.txt
+- ocr: mostrarã lhes
+  print: mostrarãlhes
+  in: sources/f3r.txt
+- ocr: ga casy
+  print: gᵃ casy
+  in: sources/f3r.txt
+- ocr: de ranlhes
+  print: deranlhes
+  in: sources/f3r.txt
+- ocr: confej tos
+  print: confejtos
+  in: sources/f3r.txt
+- ocr: lam çaram
+  print: lamçaram
+  in: sources/f3r.txt
+- ocr: enb rulhouas
+  print: enbrulhouas
+  in: sources/f3r.txt
+- ocr: de sejarmos
+  print: desejarmos
+  in: sources/f3r.txt
+- ocr: despo is
+  print: despois
+  in: sources/f3r.txt
+- ocr: estira ranse
+  print: estiraranse
+  in: sources/f3r.txt
+- ocr: Rapa das
+  print: Rapadas
+  in: sources/f3r.txt
+- ocr: con sentiram
+  print: consentiram
+  in: sources/f3r.txt
 sections:
 - id: '1'
   title: 'Folio 1r: Caminha presents his account to the King'
@@ -718,3 +805,1492 @@ sections:
       n: um
     - t: sombreiro
     - t: preto.
+- id: '3'
+  title: 'Folio 2r: the gifts, the move up the coast, two men brought aboard'
+  verify_in:
+  - sources/f1v.txt
+  - sources/f2r.txt
+  lines:
+  - tokens:
+    - t: E
+    - t: huű
+      n: um
+    - t: deles
+    - t: lhe
+    - t: deu
+    - t: huű
+      n: um
+    - t: sombreiro
+    - t: de
+    - t: penas
+    - t: daues
+      n: de aves
+    - t: compridas
+  - tokens:
+    - t: com
+    - t: huűa
+      n: uma
+    - t: copezinha
+    - t: pequena
+    - t: de
+    - t: penas
+    - t: vermelhas
+    - t: e
+    - t: pardas
+    - t: coma
+      n: como
+    - t: de
+    - t: papagayo
+      n: papagaio
+  - tokens:
+    - t: e
+    - t: outro
+    - t: lhe
+    - t: deu
+    - t: huű
+      n: um
+    - t: ramal
+    - t: grande
+    - t: de
+    - t: comtinhas
+      n: continhas
+    - t: brancas
+    - t: meudas
+      n: miúdas
+    - t: que
+    - t: querem
+    - t: pareçer
+      n: parecer
+    - t: daljaueira
+      n: de aljaveira
+  - tokens:
+    - t: asquaes
+      n: as quais
+    - t: peças
+    - t: creo
+      n: creio
+    - t: que
+    - t: o
+    - t: capitam
+      n: capitão
+    - t: manda
+    - t: a
+    - t: vossa
+    - t: alteza
+  - tokens:
+    - t: e
+    - t: com
+    - t: isto
+    - t: se
+    - t: volues
+      n: volveu
+    - t: aas
+      n: às
+    - t: naaos
+      n: naus
+    - t: por
+    - t: seer
+      n: ser
+    - t: tarde
+  - tokens:
+    - t: e
+    - t: nom
+      n: não
+    - t: poder
+    - t: deles
+    - t: auer
+      n: haver
+    - t: mais
+    - t: fala
+    - t: por
+    - t: aazo
+      n: azo
+    - t: do
+    - t: mar.
+      p: /
+  - tokens:
+    - t: a
+    - t: noute
+      n: noite
+    - t: segujmte
+      n: seguinte
+    - t: ventou
+    - t: tamto
+      n: tanto
+    - t: sueste
+    - t: com
+    - t: chuuaçeiros
+      n: chuvaceiros
+    - t: que
+    - t: fez
+    - t: caçar
+    - t: as
+    - t: naaos
+      n: naus
+    - t: e
+    - t: especialmente
+    - t: a
+    - t: capitana.
+  - tokens:
+    - t: E
+    - t: aa
+      n: à
+    - t: sesta
+    - t: pola
+      n: pela
+    - t: manhaã
+      n: manhã
+    - t: aas
+      n: às
+    - t: biij
+      n: oito
+    - t: oras
+      n: horas
+    - t: pouco
+    - t: mais
+    - t: ou
+    - t: menos
+    - t: per
+      n: por
+    - t: conselho
+    - t: dos
+    - t: pilotos
+  - tokens:
+    - t: mandou
+    - t: o
+    - t: capitam
+      n: capitão
+    - t: leuamtar
+      n: levantar
+    - t: amcoras
+      n: âncoras
+    - t: e
+    - t: fazer
+    - t: vela
+  - tokens:
+    - t: e
+    - t: fomos
+    - t: de
+    - t: lomgo
+      n: longo
+    - t: da
+    - t: costa
+    - t: com
+    - t: os
+    - t: batees
+      n: batéis
+    - t: e
+    - t: esquife
+    - t: amarados
+      n: amarrados
+    - t: per
+      n: por
+    - t: popa
+    - t: comtra
+      n: contra
+    - t: o
+    - t: norte
+  - tokens:
+    - t: pera
+      n: para
+    - t: veer
+      n: ver
+    - t: se
+    - t: achauamos
+      n: achávamos
+    - t: alguűa
+      n: alguma
+    - t: abrigada
+    - t: e
+    - t: boo
+      n: bom
+    - t: pouso
+    - t: omde
+      n: onde
+    - t: jouuesemos
+      n: jouvéssemos
+    - t: pera
+      n: para
+    - t: tomar
+    - t: agoa
+      n: água
+    - t: e
+    - t: lenha.
+  - tokens:
+    - t: nom
+      n: não
+    - t: por
+    - t: nos
+    - t: ja
+      n: já
+    - t: mjnguar
+      n: minguar
+    - t: mas
+    - t: por
+    - t: nos
+    - t: acertarmos
+    - t: aquy.
+      n: aqui
+  - tokens:
+    - t: e
+    - t: quamdo
+      n: quando
+    - t: fezemos
+      n: fizemos
+    - t: vela
+    - t: seriam
+    - t: ja
+      n: já
+    - t: na
+    - t: praya
+      n: praia
+    - t: asentados
+      n: assentados
+    - t: jumto
+      n: junto
+    - t: cõ
+      n: com
+    - t: o
+    - t: Rio
+    - t: obrra
+      n: obra
+    - t: de
+    - t: lx
+      n: sessenta
+    - t: ou
+    - t: lxx
+      n: setenta
+    - t: homeës
+      n: homens
+    - t: que
+    - t: se
+    - t: jumtaram
+      n: juntaram
+    - t: aly
+      n: ali
+    - t: poucos
+    - t: e
+    - t: poucos.
+  - tokens:
+    - t: fomos
+    - t: de
+    - t: lomgo
+      n: longo
+    - t: e
+    - t: mandou
+    - t: o
+    - t: capitam
+      n: capitão
+    - t: aos
+    - t: nauios
+      n: navios
+    - t: pequenos
+    - t: que
+    - t: fosem
+      n: fossem
+    - t: mais
+    - t: chegados
+    - t: aa
+      n: à
+    - t: terra
+  - tokens:
+    - t: e
+    - t: que
+    - t: se
+    - t: achassem
+    - t: pouso
+    - t: seguro
+    - t: pera
+      n: para
+    - t: as
+    - t: naaos
+      n: naus
+    - t: que
+    - t: amaynasem.
+      n: amainassem
+  - tokens:
+    - t: E
+    - t: seendo
+      n: sendo
+    - t: nos
+      n: nós
+    - t: pela
+    - t: costa
+    - t: obra
+    - t: de
+    - t: x
+      n: dez
+    - t: legoas
+      n: léguas
+    - t: domde
+      n: de onde
+    - t: nos
+    - t: leuamtamos
+      n: levantámos
+  - tokens:
+    - t: acharam
+    - t: os
+    - t: ditos
+    - t: nauios
+      n: navios
+    - t: pequenos
+    - t: huű
+      n: um
+    - t: aReçife
+      n: arrecife
+    - t: com
+    - t: huű
+      n: um
+    - t: porto
+    - t: dentro
+    - t: muito
+    - t: boo
+      n: bom
+    - t: e
+    - t: muito
+    - t: seguro
+    - t: com
+    - t: huä
+      n: uma
+    - t: muy
+      n: mui
+    - t: larga
+    - t: entrada
+  - tokens:
+    - t: e
+    - t: meteramse
+      n: meteram-se
+    - t: dentro
+    - t: e
+    - t: amaynaram.
+      n: amainaram
+  - tokens:
+    - t: e
+    - t: as
+    - t: naaos
+      n: naus
+    - t: aRibaram
+      n: arribaram
+    - t: sobreles,
+      n: sobre eles
+  - tokens:
+    - t: e
+    - t: huű
+      n: um
+    - t: pouco
+    - t: amte
+      n: ante
+    - t: sol
+    - t: posto
+    - t: amaynarom
+      n: amainaram
+    - t: obra
+    - t: d
+      n: de
+    - t: huűa
+      n: uma
+    - t: legoa
+      n: légua
+    - t: do
+    - t: areçife
+      n: arrecife
+    - t: e
+    - t: ancoraramse
+      n: ancoraram-se
+    - t: em
+    - t: xj
+      n: onze
+    - t: braças.
+  - tokens:
+    - t: E
+    - t: seendo
+      n: sendo
+    - t: Aᵒ
+      n: Afonso
+    - t: lopez
+      n: Lopes
+    - t: nosso
+    - t: piloto
+    - t: em
+    - t: huű
+      n: um
+    - t: daqueles
+    - t: nauios
+      n: navios
+    - t: pequenos
+    - t: per
+      n: por
+    - t: mandado
+    - t: do
+    - t: capitam
+      n: capitão
+  - tokens:
+    - t: por
+    - t: seer
+      n: ser
+    - t: homem
+    - t: viuo
+      n: vivo
+    - t: e
+    - t: deestro
+      n: destro
+    - t: pera
+      n: para
+    - t: jsso
+      n: isso
+    - t: meteose
+      n: meteu-se
+    - t: loguo
+      n: logo
+    - t: 'no'
+    - t: esquife
+    - t: a
+    - t: somdar
+      n: sondar
+    - t: o
+    - t: porto
+    - t: demtro
+      n: dentro
+  - tokens:
+    - t: e
+    - t: tomou
+    - t: em
+    - t: huűa
+      n: uma
+    - t: almaadia
+      n: almadia
+    - t: dous
+      n: dois
+    - t: daqueles
+    - t: homeës
+      n: homens
+    - t: da
+    - t: terra
+    - t: mançebos
+      n: mancebos
+    - t: e
+    - t: de
+    - t: boos
+      n: bons
+    - t: corpos,
+  - tokens:
+    - t: e
+    - t: huű
+      n: um
+    - t: deles
+    - t: trazia
+    - t: huű
+      n: um
+    - t: arco
+    - t: e
+    - t: bj
+      n: seis
+    - t: ou
+    - t: bij
+      n: sete
+    - t: seetas
+      n: setas
+- id: '4'
+  title: 'Folio 2v: the people, their lip-plugs and hair; the captain receives them'
+  verify_in:
+  - sources/f2r.txt
+  - sources/f2v.txt
+  lines:
+  - tokens:
+    - t: e
+    - t: na
+    - t: praya
+      n: praia
+    - t: amdauam
+      n: andavam
+    - t: mujtos
+      n: muitos
+    - t: cõ
+      n: com
+    - t: seus
+    - t: arcos
+    - t: e
+    - t: seetas
+      n: setas
+  - tokens:
+    - t: e
+    - t: nom
+      n: não
+    - t: lhe
+    - t: aproueitaram.
+      n: aproveitaram
+  - tokens:
+    - t: trouueos
+      n: trouxe-os
+    - t: logo
+    - t: ja
+      n: já
+    - t: de
+    - t: noute
+      n: noite
+    - t: ao
+    - t: capitam
+      n: capitão
+  - tokens:
+    - t: omde
+      n: onde
+    - t: foram
+    - t: Recebidos
+    - t: com
+    - t: muito
+    - t: prazer
+    - t: e
+    - t: festa.
+      p: /
+  - tokens:
+    - t: a
+    - t: feiçam
+      n: feição
+    - t: deles
+    - t: he
+      n: é
+    - t: seerem
+      n: serem
+    - t: pardos
+    - t: maneira
+    - t: dauermelhados
+      n: de avermelhados
+  - tokens:
+    - t: de
+    - t: boõs
+      n: bons
+    - t: Rostros
+      n: rostos
+    - t: e
+    - t: boos
+      n: bons
+    - t: narizes
+    - t: bem
+    - t: feitos.
+  - tokens:
+    - t: amdam
+      n: andam
+    - t: nuus
+      n: nus
+    - t: sem
+    - t: nenhuűa
+      n: nenhuma
+    - t: cubertura
+      n: cobertura
+  - tokens:
+    - t: nem
+    - t: estimam
+    - t: nenhuűa
+      n: nenhuma
+    - t: coussa
+      n: coisa
+    - t: cobrir
+    - t: nem
+    - t: mostrar
+    - t: suas
+    - t: vergonhas,
+  - tokens:
+    - t: e
+    - t: estam
+      n: estão
+    - t: açerqua
+      n: acerca
+    - t: disso
+    - t: com
+    - t: tamta
+      n: tanta
+    - t: jnocemçia
+      n: inocência
+    - t: como
+    - t: teem
+      n: têm
+    - t: em
+    - t: mostrar
+    - t: o
+    - t: Rostro.
+      n: rosto
+  - tokens:
+    - t: traziam
+    - t: ambos
+    - t: os
+    - t: beiços
+    - t: de
+    - t: baixo
+    - t: furados
+  - tokens:
+    - t: e
+    - t: metidos
+    - t: per
+      n: por
+    - t: eles
+    - t: senhos
+    - t: osos
+      n: ossos
+    - t: doso
+      n: de osso
+    - t: bramcos
+      n: brancos
+  - tokens:
+    - t: de
+    - t: compridam
+      n: comprimento
+    - t: d
+      n: de
+    - t: huűa
+      n: uma
+    - t: maão
+      n: mão
+    - t: travessa
+  - tokens:
+    - t: e
+    - t: de
+    - t: grosura
+      n: grossura
+    - t: d
+      n: de
+    - t: huű
+      n: um
+    - t: fuso
+    - t: dalgodam
+      n: de algodão
+    - t: e
+    - t: agudo
+    - t: na
+    - t: põta
+      n: ponta
+    - t: coma
+      n: como
+    - t: furador.
+  - tokens:
+    - t: metemnos
+      n: metem-nos
+    - t: pela
+    - t: parte
+    - t: de
+    - t: dentro
+    - t: do
+    - t: beiço
+  - tokens:
+    - t: e
+    - t: o
+    - t: que
+    - t: lhe
+    - t: fica
+    - t: antre
+      n: entre
+    - t: o
+    - t: beiço
+    - t: e
+    - t: os
+    - t: demtes
+      n: dentes
+    - t: he
+      n: é
+    - t: feito
+    - t: coma
+      n: como
+    - t: Roque
+    - t: denxadrez
+      n: de enxadrez
+  - tokens:
+    - t: e
+    - t: em
+    - t: tal
+    - t: maneira
+    - t: o
+    - t: trazem
+    - t: aly
+      n: ali
+    - t: encaxado
+      n: encaixado
+  - tokens:
+    - t: que
+    - t: lhes
+    - t: nom
+      n: não
+    - t: da
+      n: dá
+    - t: paixã
+      n: paixão
+    - t: nem
+    - t: lhes
+    - t: torua
+      n: torva
+    - t: a
+    - t: fala
+    - t: nem
+    - t: comer
+    - t: nem
+    - t: beber.
+  - tokens:
+    - t: os
+    - t: cabelos
+    - t: seus
+    - t: sam
+      n: são
+    - t: coredios
+      n: corredios
+  - tokens:
+    - t: e
+    - t: anduã
+      n: andam
+    - t: trosquiados
+      n: tosquiados
+    - t: de
+    - t: trosquya
+      n: tosquia
+    - t: alta
+    - t: mais
+    - t: que
+    - t: de
+    - t: sobre
+    - t: pemtem
+      n: pente
+    - t: de
+    - t: boa
+    - t: gramdura
+      n: grandura
+  - tokens:
+    - t: e
+    - t: Rapados
+    - t: ataa
+      n: até
+    - t: per
+      n: por
+    - t: cjma
+      n: cima
+    - t: das
+    - t: orelhas,
+  - tokens:
+    - t: e
+    - t: huű
+      n: um
+    - t: deles
+    - t: trazia
+    - t: per
+      n: por
+    - t: baixo
+    - t: da
+    - t: solapa
+    - t: de
+    - t: fonte
+    - t: a
+    - t: fonte
+    - t: pera
+      n: para
+    - t: detras
+      n: detrás
+  - tokens:
+    - t: huűa
+      n: uma
+    - t: maneira
+    - t: de
+    - t: cabeleira
+    - t: de
+    - t: penas
+    - t: daue
+      n: de ave
+    - t: amarela
+  - tokens:
+    - t: que
+    - t: seria
+    - t: de
+    - t: compridam
+      n: comprimento
+    - t: d
+      n: de
+    - t: huű
+      n: um
+    - t: couto
+    - t: muy
+      n: mui
+    - t: basta
+    - t: e
+    - t: muy
+      n: mui
+    - t: çarada
+      n: cerrada
+  - tokens:
+    - t: que
+    - t: lhe
+    - t: cobria
+    - t: o
+    - t: toutuço
+      n: toutiço
+    - t: e
+    - t: as
+    - t: orelhas
+  - tokens:
+    - t: a
+    - t: qual
+    - t: amdaua
+      n: andava
+    - t: pegada
+    - t: nos
+    - t: cabelos
+    - t: pena
+    - t: e
+    - t: pena
+    - t: com
+    - t: huűa
+      n: uma
+    - t: comfeiçam
+      n: confeição
+    - t: branda
+    - t: coma
+      n: como
+    - t: çera
+      n: cera
+  - tokens:
+    - t: e
+    - t: nõ
+      n: não
+    - t: 'no'
+      n: o
+    - t: era
+    - t: de
+    - t: maneira
+    - t: que
+    - t: amdaua
+      n: andava
+    - t: a
+    - t: cabeleira
+    - t: muy
+      n: mui
+    - t: Redomda
+      n: redonda
+    - t: e
+    - t: muy
+      n: mui
+    - t: basta
+    - t: e
+    - t: muy
+      n: mui
+    - t: jgual
+      n: igual
+  - tokens:
+    - t: que
+    - t: nõ
+      n: não
+    - t: fazia
+    - t: mingoa
+      n: míngua
+    - t: mais
+    - t: lauagem
+      n: lavagem
+    - t: pera
+      n: para
+    - t: a
+    - t: leuantar
+      n: levantar
+  - tokens:
+    - t: o
+    - t: capitam
+      n: capitão
+    - t: quando
+    - t: eles
+    - t: vieram
+    - t: estaua
+      n: estava
+    - t: asentado
+      n: assentado
+    - t: em
+    - t: huűa
+      n: uma
+    - t: cadeira
+  - tokens:
+    - t: e
+    - t: huűa
+      n: uma
+    - t: alcatifa
+    - t: aos
+    - t: pees
+      n: pés
+    - t: por
+    - t: estrado
+  - tokens:
+    - t: e
+    - t: bem
+    - t: vestido
+    - t: com
+    - t: huű
+      n: um
+    - t: colar
+    - t: douro
+      n: de ouro
+    - t: muy
+      n: mui
+    - t: grande
+    - t: ao
+    - t: pescoço
+  - tokens:
+    - t: e
+    - t: sancho
+      n: Sancho
+    - t: de
+    - t: tora
+      n: Tovar
+    - t: e
+    - t: simam
+      n: Simão
+    - t: de
+    - t: miranda
+      n: Miranda
+    - t: e
+    - t: njcolaao
+      n: Nicolau
+    - t: coelho
+      n: Coelho
+    - t: e
+    - t: aires
+      n: Aires
+    - t: corea
+      n: Correia
+  - tokens:
+    - t: e
+    - t: nos
+      n: nós
+    - t: outros
+    - t: que
+    - t: aquy
+      n: aqui
+    - t: na
+    - t: naao
+      n: nau
+    - t: com
+    - t: ele
+    - t: himos
+      n: imos
+    - t: asentados
+      n: assentados
+    - t: 'no'
+    - t: chaão
+      n: chão
+- id: '5'
+  title: 'Folio 3r: aboard the captain''s ship: gold and silver, food refused, the rosary, sleep'
+  verify_in:
+  - sources/f2v.txt
+  - sources/f3r.txt
+  lines:
+  - tokens:
+    - t: per
+      n: por
+    - t: esa
+      n: essa
+    - t: alcatifa
+      p: /
+  - tokens:
+    - t: acemderam
+      n: acenderam
+    - t: tochas
+    - t: e
+    - t: emtraram
+      n: entraram
+  - tokens:
+    - t: e
+    - t: nõ
+      n: não
+    - t: fezeram
+      n: fizeram
+    - t: nhuűa
+      n: nenhuma
+    - t: mençam
+      n: menção
+    - t: de
+    - t: cortesia
+    - t: nem
+    - t: de
+    - t: falar
+    - t: ao
+    - t: capitam
+      n: capitão
+    - t: nem
+    - t: a
+    - t: njmguem
+      n: ninguém
+  - tokens:
+    - t: pero
+    - t: huű
+      n: um
+    - t: deles
+    - t: pos
+      n: pôs
+    - t: olho
+    - t: 'no'
+    - t: colar
+    - t: do
+    - t: capitam
+      n: capitão
+  - tokens:
+    - t: e
+    - t: começou
+    - t: daçenar
+      n: de acenar
+    - t: cõ
+      n: com
+    - t: a
+    - t: maão
+      n: mão
+    - t: pera
+      n: para
+    - t: terra
+    - t: e
+    - t: despois
+      n: depois
+    - t: pera
+      n: para
+    - t: o
+    - t: colar
+  - tokens:
+    - t: como
+    - t: que
+    - t: nos
+    - t: dezia
+      n: dizia
+    - t: que
+    - t: avia
+      n: havia
+    - t: em
+    - t: tera
+      n: terra
+    - t: ouro
+  - tokens:
+    - t: e
+    - t: tambem
+      n: também
+    - t: vio
+      n: viu
+    - t: huű
+      n: um
+    - t: castical
+      n: castiçal
+    - t: de
+    - t: prata
+  - tokens:
+    - t: e
+    - t: asy
+      n: assim
+    - t: meesmo
+      n: mesmo
+    - t: acenaua
+      n: acenava
+    - t: pera
+      n: para
+    - t: a
+    - t: tera
+      n: terra
+    - t: e
+    - t: entã
+      n: então
+    - t: pera
+      n: para
+    - t: o
+    - t: castical
+      n: castiçal
+    - t: como
+    - t: que
+    - t: avia
+      n: havia
+    - t: tambem
+      n: também
+    - t: prata
+      p: /
+  - tokens:
+    - t: mostrarãlhes
+      n: mostraram-lhes
+    - t: huű
+      n: um
+    - t: papagayo
+      n: papagaio
+    - t: pardo
+    - t: que
+    - t: aquy
+      n: aqui
+    - t: o
+    - t: capitam
+      n: capitão
+    - t: traz
+  - tokens:
+    - t: tomaramno
+      n: tomaram-no
+    - t: logo
+    - t: na
+    - t: maão
+      n: mão
+    - t: e
+    - t: acenaram
+    - t: pera
+      n: para
+    - t: a
+    - t: terra
+    - t: como
+    - t: que
+    - t: os
+    - t: avia
+      n: havia
+    - t: hy
+      n: aí
+      p: /
+  - tokens:
+    - t: mostraranlhes
+      n: mostraram-lhes
+    - t: huű
+      n: um
+    - t: carn.ro
+      n: carneiro
+    - t: nom
+      n: não
+    - t: fizeram
+    - t: dele
+    - t: mençam.
+      n: menção
+  - tokens:
+    - t: mostraranlhes
+      n: mostraram-lhes
+    - t: huűa
+      n: uma
+    - t: gᵃ
+      n: galinha
+    - t: casy
+      n: quase
+    - t: aviam
+      n: haviam
+    - t: medo
+    - t: dela
+  - tokens:
+    - t: e
+    - t: nõ
+      n: não
+    - t: queriam
+    - t: poer
+      n: pôr
+    - t: a
+    - t: maão
+      n: mão
+    - t: e
+    - t: despois
+      n: depois
+    - t: a
+    - t: tomaram
+    - t: coma
+      n: como
+    - t: espamtados
+      n: espantados
+      p: /
+  - tokens:
+    - t: deranlhes
+      n: deram-lhes
+    - t: aly
+      n: ali
+    - t: de
+    - t: comer
+    - t: pam
+      n: pão
+    - t: e
+    - t: pescado
+    - t: cozido,
+    - t: confejtos
+      n: confeitos
+    - t: fartees
+      n: fartéis
+    - t: mel
+    - t: e
+    - t: figos
+    - t: pasados
+      n: passados
+  - tokens:
+    - t: nõ
+      n: não
+    - t: quiseram
+    - t: comer
+    - t: daquilo
+    - t: casy
+      n: quase
+    - t: nada
+  - tokens:
+    - t: e
+    - t: alguűa
+      n: alguma
+    - t: coussa
+      n: coisa
+    - t: se
+    - t: a
+    - t: prouauam
+      n: provavam
+    - t: lamçauamna
+      n: lançavam-na
+    - t: logo
+    - t: fora.
+  - tokens:
+    - t: trouueranlhes
+      n: trouxeram-lhes
+    - t: vinho
+    - t: per
+      n: por
+    - t: hűa
+      n: uma
+    - t: taça,
+  - tokens:
+    - t: poseranlhe
+      n: puseram-lhe
+    - t: asy
+      n: assim
+    - t: a
+    - t: boca
+    - t: tã
+      n: tão
+    - t: malaues
+      n: malavez
+    - t: e
+    - t: nõ
+      n: não
+    - t: gostarã
+      n: gostaram
+    - t: dele
+    - t: nada
+    - t: nem
+    - t: o
+    - t: quiseram
+    - t: mais.
+  - tokens:
+    - t: trouueramlhes
+      n: trouxeram-lhes
+    - t: agoa
+      n: água
+    - t: per
+      n: por
+    - t: huűa
+      n: uma
+    - t: albarada
+    - t: tomaram
+    - t: dela
+    - t: senhos
+    - t: bocados
+    - t: e
+    - t: nom
+      n: não
+    - t: beberam,
+  - tokens:
+    - t: soom.te
+      n: somente
+    - t: lauarã
+      n: lavaram
+    - t: as
+    - t: bocas
+    - t: e
+    - t: lamçaram
+      n: lançaram
+    - t: fora.
+  - tokens:
+    - t: Vio
+      n: Viu
+    - t: huű
+      n: um
+    - t: deles
+    - t: huűas
+      n: umas
+    - t: contas
+    - t: de
+    - t: Rosairo
+      n: rosário
+    - t: brancas
+  - tokens:
+    - t: açenou
+      n: acenou
+    - t: que
+    - t: lhas
+    - t: desem
+      n: dessem
+    - t: e
+    - t: folgou
+    - t: muito
+    - t: com
+    - t: elas
+  - tokens:
+    - t: e
+    - t: lançouas
+      n: lançou-as
+    - t: ao
+    - t: pescoço
+    - t: e
+    - t: despois
+      n: depois
+    - t: tirouas
+      n: tirou-as
+    - t: e
+    - t: enbrulhouas
+      n: embrulhou-as
+    - t: 'no'
+    - t: braço
+  - tokens:
+    - t: e
+    - t: acenaua
+      n: acenava
+    - t: pera
+      n: para
+    - t: a
+    - t: tera
+      n: terra
+    - t: e
+    - t: entã
+      n: então
+    - t: pera
+      n: para
+    - t: as
+    - t: contas
+    - t: e
+    - t: pera
+      n: para
+    - t: o
+    - t: colar
+    - t: do
+    - t: capitam
+      n: capitão
+    - t: como
+    - t: que
+    - t: dariam
+    - t: ouro
+    - t: por
+    - t: aquilo.
+      p: /
+  - tokens:
+    - t: Isto
+    - t: tomauamonos
+      n: tomávamo-nos
+    - t: asy
+      n: assim
+    - t: polo
+      n: pelo
+    - t: desejarmos,
+  - tokens:
+    - t: mas
+    - t: se
+    - t: ele
+    - t: queria
+    - t: dizer
+    - t: que
+    - t: leuaria
+      n: levaria
+    - t: as
+    - t: contas
+    - t: e
+    - t: mais
+    - t: o
+    - t: colar
+  - tokens:
+    - t: isto
+    - t: nom
+      n: não
+    - t: queriamonos
+      n: queríamo-nos
+    - t: emtender
+      n: entender
+    - t: porque
+    - t: lho
+    - t: nom
+      n: não
+    - t: aviamos
+      n: havíamos
+    - t: de
+    - t: dar
+  - tokens:
+    - t: e
+    - t: despois
+      n: depois
+    - t: tornou
+    - t: as
+    - t: contas
+    - t: a
+    - t: quem
+    - t: lhas
+    - t: deu
+  - tokens:
+    - t: e
+    - t: entam
+      n: então
+    - t: estiraranse
+      n: estiraram-se
+    - t: asy
+      n: assim
+    - t: de
+    - t: costas
+    - t: na
+    - t: alcatifa
+    - t: a
+    - t: dormir
+  - tokens:
+    - t: sem
+    - t: teer
+      n: ter
+    - t: nenhuűa
+      n: nenhuma
+    - t: maneira
+    - t: de
+    - t: cobrirem
+    - t: suas
+    - t: verginhas
+      n: vergonhas
+    - t: as
+    - t: quaaes
+      n: quais
+    - t: nom
+      n: não
+    - t: erã
+      n: eram
+    - t: fanadas
+  - tokens:
+    - t: e
+    - t: as
+    - t: cabeleiras
+    - t: delas
+    - t: bem
+    - t: Rapadas
+    - t: e
+    - t: feitas.
+  - tokens:
+    - t: o
+    - t: capitã
+      n: capitão
+    - t: lhes
+    - t: mandou
+    - t: poer
+      n: pôr
+    - t: aas
+      n: às
+    - t: cabeças
+    - t: senhos
+    - t: coxijs
+      n: coxins
+  - tokens:
+    - t: e
+    - t: o
+    - t: da
+    - t: cabeleira
+    - t: precuraua
+      n: procurava
+    - t: asaz
+    - t: polla
+      n: pela
+    - t: nom
+      n: não
+    - t: quebrar
+  - tokens:
+    - t: e
+    - t: lançaranlhes
+      n: lançaram-lhes
+    - t: huű
+      n: um
+    - t: manto
+    - t: ë
+      n: em
+    - t: cima
+    - t: e
+    - t: eles
+    - t: consentiram
+    - t: e
+    - t: jouueram
+      n: jouveram
+    - t: e
+    - t: dormjram.
+      n: dormiram
+      p: /
