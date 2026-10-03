@@ -163,15 +163,19 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             vpath = groups[gid].get("verify_in") or edition.get("verify_in")
             if not vpath:
                 continue
+            # a passage that runs across page files (a Wikisource Page: per printed page) names them as
+            # a list; they are read in order and joined, so a line that crosses a page is still found
+            if isinstance(vpath, list):
+                vpath = "+".join(vpath)
             if vpath not in cache:
-                raw_src = (work_dir / vpath).read_text(encoding="utf-8")
+                raw_src = " ".join((work_dir / vp).read_text(encoding="utf-8") for vp in vpath.split("+"))
                 if edition.get("verify_strip"):       # verse labels printed inside the source lines
                     raw_src = re.sub(edition["verify_strip"], "", raw_src)
                 raw_src = " ".join(raw_src.split())
                 # declared OCR corrections, each a reading of the page image: {ocr, print, in (optional path)}.
                 # Applied as whole words; a correction that matches nothing is itself reported.
                 for c in edition.get("verify_corrections") or []:
-                    if c.get("in") and c["in"] != vpath:
+                    if c.get("in") and c["in"] not in vpath.split("+"):
                         continue
                     pat = r"(?<![\w])" + re.escape(" ".join(str(c["ocr"]).split())) + r"(?![\w])"
                     raw_src, k = re.subn(pat, " ".join(str(c["print"]).split()).replace("\\", "\\\\"), raw_src)

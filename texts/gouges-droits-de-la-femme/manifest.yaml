@@ -1,0 +1,118 @@
+work: gouges-droits-de-la-femme
+title: Declaration of the Rights of Woman and of the Female Citizen
+short_title: Rights of Woman
+author: Olympe de Gouges (Marie Gouze, 1748-1793)
+language: fr
+lang_name: French of 1791
+prefix: ddf
+urn: urn:weft:fr:gouges.droits-de-la-femme.1791
+unit: section
+section_noun: article
+written:
+  year: 1791
+  display: '1791'
+  label: written and printed in Paris in September 1791, two years after the Declaration of the Rights of Man and of the Citizen, whose
+    seventeen articles it answers one by one; addressed to the queen. De Gouges was guillotined in November 1793
+status: phase-0
+pilot:
+  sections:
+  - pre
+  - a1
+  - a2
+  - a3
+  - a4
+  - a5
+  - a6
+  - a7
+  - a8
+  - a9
+  - a10
+  - a11
+  - a12
+  - a13
+  - a14
+  - a15
+  - a16
+  - a17
+edition:
+  id: gouges1791
+  name: 'Les Droits de la femme. À la reine (Paris, 1791), the pamphlet''s own printing, pages 5-10: the Déclaration''s preamble and
+    seventeen articles, as transcribed and validated on French Wikisource (Page:De Gouges - Les Droits de la femme, 1791.djvu/8-13);
+    the 1791 spelling is kept'
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain (1791); Wikisource transcription CC BY-SA 4.0; Weft line division CC BY-SA 4.0
+treebank: null
+schemes:
+- fr1791
+- modern
+scheme_labels:
+  fr1791: 'As first read: Paris, 1791 (approximate)'
+sources_extra:
+- id: ws-p8
+  name: Page:De Gouges - Les Droits de la femme, 1791.djvu/8, French Wikisource, revision 12057343 (validated)
+  file: sources/p8.txt
+  url: https://fr.wikisource.org/w/index.php?oldid=12057343&action=raw
+  sha256: f65065f0d5ed3c5ed30fdc9b010ae7efe89ae06c9b158bbe53be759729d400bb
+  license: text public domain (1791); Wikisource transcription CC BY-SA 4.0
+  license_url: https://fr.wikisource.org/wiki/Les_Droits_de_la_femme._%C3%80_la_reine
+- id: ws-p9
+  name: Page:De Gouges - Les Droits de la femme, 1791.djvu/9, French Wikisource, revision 12057351 (validated)
+  file: sources/p9.txt
+  url: https://fr.wikisource.org/w/index.php?oldid=12057351&action=raw
+  sha256: 39a7b2e829b08072af90327dfc567c26bb16f872712da22aad1794e9784d0752
+  license: text public domain (1791); Wikisource transcription CC BY-SA 4.0
+  license_url: https://fr.wikisource.org/wiki/Les_Droits_de_la_femme._%C3%80_la_reine
+- id: ws-p10
+  name: Page:De Gouges - Les Droits de la femme, 1791.djvu/10, French Wikisource, revision 12057354 (validated)
+  file: sources/p10.txt
+  url: https://fr.wikisource.org/w/index.php?oldid=12057354&action=raw
+  sha256: 59b9e0d2bbebcd6fe93843c5430f985dd9b9271efdf2656ea0539adeaaedabbc
+  license: text public domain (1791); Wikisource transcription CC BY-SA 4.0
+  license_url: https://fr.wikisource.org/wiki/Les_Droits_de_la_femme._%C3%80_la_reine
+- id: ws-p11
+  name: Page:De Gouges - Les Droits de la femme, 1791.djvu/11, French Wikisource, revision 12057359 (validated)
+  file: sources/p11.txt
+  url: https://fr.wikisource.org/w/index.php?oldid=12057359&action=raw
+  sha256: 5fc466542786f6a71a07db9b6ea46de780943978468319819a49415a9bea6f0f
+  license: text public domain (1791); Wikisource transcription CC BY-SA 4.0
+  license_url: https://fr.wikisource.org/wiki/Les_Droits_de_la_femme._%C3%80_la_reine
+- id: ws-p12
+  name: Page:De Gouges - Les Droits de la femme, 1791.djvu/12, French Wikisource, revision 12057365 (validated)
+  file: sources/p12.txt
+  url: https://fr.wikisource.org/w/index.php?oldid=12057365&action=raw
+  sha256: 9617e123fbc8a117eb40e322bb908b22f4d7bbf456f67f2d19bd664d352ec36a
+  license: text public domain (1791); Wikisource transcription CC BY-SA 4.0
+  license_url: https://fr.wikisource.org/wiki/Les_Droits_de_la_femme._%C3%80_la_reine
+- id: ws-p13
+  name: Page:De Gouges - Les Droits de la femme, 1791.djvu/13, French Wikisource, revision 12057369 (validated)
+  file: sources/p13.txt
+  url: https://fr.wikisource.org/w/index.php?oldid=12057369&action=raw
+  sha256: 9c944750a660e9bc4fea219f29434f1a2fc0075cb08693a357f1fb4838bba021
+  license: text public domain (1791); Wikisource transcription CC BY-SA 4.0
+  license_url: https://fr.wikisource.org/wiki/Les_Droits_de_la_femme._%C3%80_la_reine
+translations:
+- id: weft-editorial
+  kind: editorial
+  translator: Weft editorial translation, draft
+  year: 2026
+  form: prose, article by article, close to the French
+  license: CC BY-SA 4.0
+- id: levy1979
+  kind: reference
+  translator: Darline Gay Levy, Harriet Branson Applewhite and Mary Durham Johnson
+  year: 1979
+  title: Women in Revolutionary Paris, 1789-1795
+  publisher: University of Illinois Press
+  note: the standard English translation, in copyright; cited, not printed
+predicted_gaps:
+- no public-domain English translation was found (the text was little translated before the 1970s), so the page carries Weft's own,
+  marked editorial and draft, with the 1979 Levy, Applewhite and Johnson translation cited
+- 'no treebank covers the text: lemma and morphology are an automatic parse (spaCy fr_core_news_md 3.8, UD French-GSD conventions) corrected
+  by hand, declared as such in the overlay; glosses are hand-written; all draft'
+- the 1791 reading rests on Féraud (1787-88) and differs from modern French in little that this text shows (l mouillé in filles); it
+  is approximate and says so
+- the print's spelling is kept (loix, enfans, représentans, solemnelle, sur-tout, impreſcriptibles, the ampersand) with the modern spelling
+  as n; the Wikisource transcription corrects soeurs and moeurs to the ligature, which the edition follows
+- three lines cross a page of the pamphlet (the preamble, articles III and XI); the verbatim check reads the section's pages together
+- the Postambule ('Femme, réveille-toi') and the Forme du contrat social that follow in the pamphlet are not yet included

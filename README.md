@@ -77,7 +77,7 @@ server, so a page or the whole folder can be sent as an attachment.
 
 ## Status
 
-Fifty-eight works built across twenty-five languages, oldest first in the library:
+Fifty-nine works built across twenty-five languages, oldest first in the library:
 
 | Work | Passage | Schemes | Translations |
 |---|---|---|---|
@@ -132,6 +132,7 @@ Fifty-eight works built across twenty-five languages, oldest first in the librar
 | Montaigne, Essais | To the Reader; I.19 opening | French of about 1580, modern French | Florio 1603, Cotton 1685, Hazlitt 1877 |
 | Laws for the Military Houses (Buke shohatto) | the 1615 text, 13 articles, with return marks and a whole-line Japanese reading | as read about 1615, modern | Murdoch 1903 (digest, partial), Weft editorial |
 | The Akō retainers' statement (the Forty-seven Rōnin) | the declaration of 1703 | Genroku Edo (1703), modern | Mitford 1871, Weft editorial |
+| Olympe de Gouges, Declaration of the Rights of Woman and of the Female Citizen | the preamble and all seventeen articles (1791), in the pamphlet's spelling | Paris reading of 1791, modern | Weft editorial (draft); Levy, Applewhite and Johnson 1979 cited |
 | Kant: What is Enlightenment? and the starry heavens | 1784 essay, opening; 1788 Critique of Practical Reason, conclusion | northern German before 1898, modern German | Richardson 1798, Abbott |
 | Science in Latin: Descartes, Newton | cogito (1644); laws of motion (1687) | as first read (French, English manner), classical | Veitch 1853, Motte 1729 |
 | Swahili tales from Zanzibar: The Kites and the Crows | the whole tale (Steere 1870) | Zanzibar Swahili about 1870, modern standard | Steere 1870 |

@@ -1,0 +1,38 @@
+run:
+  weft: 0.1.0
+  sections:
+  - pre
+  - a1
+  - a2
+  - a3
+  - a4
+  - a5
+  - a6
+  - a7
+  - a8
+  - a9
+  - a10
+  - a11
+  - a12
+  - a13
+  - a14
+  - a15
+  - a16
+  - a17
+counts:
+  lines: 104
+  tokens: 915
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- no public-domain English translation was found (the text was little translated before the 1970s), so the page carries Weft's own, marked editorial and draft, with the 1979 Levy, Applewhite and Johnson
+  translation cited
+- 'no treebank covers the text: lemma and morphology are an automatic parse (spaCy fr_core_news_md 3.8, UD French-GSD conventions) corrected by hand, declared as such in the overlay; glosses are hand-written;
+  all draft'
+- the 1791 reading rests on Féraud (1787-88) and differs from modern French in little that this text shows (l mouillé in filles); it is approximate and says so
+- the print's spelling is kept (loix, enfans, représentans, solemnelle, sur-tout, impreſcriptibles, the ampersand) with the modern spelling as n; the Wikisource transcription corrects soeurs and moeurs
+  to the ligature, which the edition follows
+- three lines cross a page of the pamphlet (the preamble, articles III and XI); the verbatim check reads the section's pages together
+- the Postambule ('Femme, réveille-toi') and the Forme du contrat social that follow in the pamphlet are not yet included

@@ -29,7 +29,7 @@ that use it. Where the repository names no source, this page says so.
 - **Confidence.** A manifest may set `sound_confidence`. At `low` the page opens with "The
   pronunciation here is a reconstruction"; at `medium`, "Parts of the pronunciation here are
   reconstructed". Both link to the Pronunciation and Recording forms and to this page. Works with
-  no value show no invitation. Twenty-five of the fifty-eight public works set a value (see the table, and the
+  no value show no invitation. Twenty-five of the fifty-nine public works set a value (see the table, and the
   last section).
 - **Each word alone.** Unless a section below says otherwise, each word is phonemized on its own:
   elision, sandhi and assimilation across words are not modelled in the sound row.
@@ -96,6 +96,7 @@ the page shows no invitation.
 | Spanish | `spanish` | Columbus, 1493 | c1492 (first), modern | not set |
 | Dutch | `dutch` | Linschoten | h1596 (first), modern | not set |
 | French | `french` | Montaigne | m1580 (first), modern | not set |
+| | | de Gouges, Rights of Woman (1791) | fr1791 (first), modern | not set |
 | | | Berlin Act, 1885 | fr1885 (first), modern | not set |
 | German | `german` | Kant, Nietzsche | northern (first), modern | not set |
 | | | Luther's Bible | ecg1545 (first), modern | not set |
@@ -686,6 +687,10 @@ exists.
 **Schemes.**
 - `m1580`, "French about 1580: Montaigne's day (approximate)": liaison, s before a consonant silent,
   oi as [wɛ], un as [ỹ], nasal vowels before a following vowel, e caduc counted, tongue-tip r.
+- `fr1791`, "French of 1791: a Paris reading (approximate)", for Olympe de Gouges's Declaration of the Rights
+  of Woman: the modern values for nearly everything, after Féraud's dictionary of 1787-88 (oi already [wa] in
+  loi and droit, the Paris uvular r, final consonants silent as today), with l mouillé, the palatal l of filles,
+  still a lateral; written in the lexicon only where a word differs.
 - `fr1885`, "French of the 1880s: formal Paris reading", for the General Act of the Berlin Conference
   (1885): close to modern French, with the differences the period's phoneticians record: long
   vowels in a final syllable closed by r, z, zh or v and in many words with a circumflex; a back a
@@ -695,7 +700,8 @@ exists.
 
 No syllable is capitalized: the module states that French has no distinctive word stress.
 
-**What it rests on.** For `m1580`: Meigret (1542, 1550), Peletier du Mans (1550), Ramus (1562, 1572), Bèze
+**What it rests on.** For `fr1791`: Féraud, *Dictionnaire critique de la langue française* (1787-88), and the
+grammarians of the decade as collected by Thurot (module). For `m1580`: Meigret (1542, 1550), Peletier du Mans (1550), Ramus (1562, 1572), Bèze
 (1584) and Henri Estienne (1578), as collected by Thurot (1881-1883); Palsgrave (1530) on final
 consonants (module). For `fr1885` the evidence is direct, not reconstructed from rhymes or spelling:
 Passy, *Les sons du français* (1887), the transcriptions of *Le Maître phonétique* (from 1886), and

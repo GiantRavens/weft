@@ -1,0 +1,1212 @@
+# Weft edition of the Déclaration des droits de la femme et de la citoyenne (Olympe de Gouges, Paris, September
+# 1791): the preamble and the seventeen articles. Text as printed in the 1791 pamphlet (Les Droits de la femme.
+# À la reine), transcribed on French Wikisource page by page (Page:De Gouges - Les Droits de la femme, 1791.djvu/8-13,
+# validated); each line is checked verbatim against the pinned page revisions, a section naming its pages in order
+# so a line that crosses a page is found. verify_strip sets aside the wiki templates ({{corr|soeurs|sœurs}} leaves
+# the corrected word), tags and italics.
+#
+# The print keeps its 1791 spelling: loix, enfans, représentans, suivans, solemnelle, personellement, sur-tout,
+# the long s of impreſcriptibles, and the ampersand. Those tokens carry n, the modern spelling the lexicon is
+# keyed by; the page shows the print and sounds the word.
+#   t     the word as printed, punctuation attached; an elision (l’, d’, qu’) is its own token, glued to the next
+#   n     the modern spelling where the print differs
+#   p     punctuation the print sets off by a space (French " :" and " ;")
+#   Lines are Weft's division of the text at its stops and commas; sections are the preamble and the articles.
+work: gouges-droits-de-la-femme
+joiner: ' '
+verify_strip: \{\{corr\|[^|}]*\||\{\{[^{}]*\}\}|\}\}|<[^>]+>|''|__NOTOC__
+sections:
+- id: pre
+  title: Préambule
+  verify_in:
+  - sources/p8.txt
+  - sources/p9.txt
+  lines:
+  - tokens:
+    - t: Les
+    - t: mères,
+    - t: les
+    - t: filles,
+    - t: les
+    - t: sœurs,
+  - tokens:
+    - t: représentantes
+    - t: de
+    - t: la
+    - t: nation,
+  - tokens:
+    - t: demandent
+    - t: d’
+      glue: true
+    - t: être
+    - t: constituées
+    - t: en
+    - t: assemblée
+    - t: nationale.
+  - tokens:
+    - t: Considérant
+    - t: que
+    - t: l’
+      glue: true
+    - t: ignorance,
+  - tokens:
+    - t: l’
+      glue: true
+    - t: oubli
+    - t: ou
+    - t: le
+    - t: mépris
+    - t: des
+    - t: droits
+    - t: de
+    - t: la
+    - t: femme,
+  - tokens:
+    - t: sont
+    - t: les
+    - t: seules
+    - t: causes
+    - t: des
+    - t: malheurs
+    - t: publics
+    - t: et
+    - t: de
+    - t: la
+    - t: corruption
+    - t: des
+    - t: gouvernements,
+  - tokens:
+    - t: ont
+    - t: résolu
+    - t: d’
+      glue: true
+    - t: exposer
+    - t: dans
+    - t: une
+    - t: déclaration
+    - t: solemnelle,
+      n: solennelle
+  - tokens:
+    - t: les
+    - t: droits
+    - t: naturels,
+  - tokens:
+    - t: inaliénables
+    - t: et
+    - t: sacrés
+    - t: de
+    - t: la
+    - t: femme,
+  - tokens:
+    - t: afin
+    - t: que
+    - t: cette
+    - t: déclaration,
+  - tokens:
+    - t: constamment
+    - t: présente
+    - t: à
+    - t: tous
+    - t: les
+    - t: membres
+    - t: du
+    - t: corps
+    - t: social,
+  - tokens:
+    - t: leur
+    - t: rappelle
+    - t: sans
+    - t: cesse
+    - t: leurs
+    - t: droits
+    - t: et
+    - t: leurs
+    - t: devoirs,
+  - tokens:
+    - t: afin
+    - t: que
+    - t: les
+    - t: actes
+    - t: du
+    - t: pouvoir
+    - t: des
+    - t: femmes,
+  - tokens:
+    - t: et
+    - t: ceux
+    - t: du
+    - t: pouvoir
+    - t: des
+    - t: hommes
+    - t: pouvant
+    - t: être
+    - t: à
+    - t: chaque
+    - t: instant
+    - t: comparés
+    - t: avec
+    - t: le
+    - t: but
+    - t: de
+    - t: toute
+    - t: institution
+    - t: politique,
+  - tokens:
+    - t: en
+    - t: soient
+    - t: plus
+    - t: respectés,
+  - tokens:
+    - t: afin
+    - t: que
+    - t: les
+    - t: réclamations
+    - t: des
+    - t: citoyennes,
+  - tokens:
+    - t: fondées
+    - t: désormais
+    - t: sur
+    - t: des
+    - t: principes
+    - t: simples
+    - t: et
+    - t: incontestables,
+  - tokens:
+    - t: tournent
+    - t: toujours
+    - t: au
+    - t: maintien
+    - t: de
+    - t: la
+    - t: constitution,
+  - tokens:
+    - t: des
+    - t: bonnes
+    - t: mœurs,
+  - tokens:
+    - t: et
+    - t: au
+    - t: bonheur
+    - t: de
+    - t: tous.
+  - tokens:
+    - t: En
+    - t: conséquence,
+    - t: le
+    - t: sexe
+    - t: supérieur
+    - t: en
+    - t: beauté
+    - t: comme
+    - t: en
+    - t: courage,
+  - tokens:
+    - t: dans
+    - t: les
+    - t: souffrances
+    - t: maternelles,
+  - tokens:
+    - t: reconnaît
+    - t: et
+    - t: déclare,
+  - tokens:
+    - t: en
+    - t: présence
+    - t: et
+    - t: sous
+    - t: les
+    - t: auspices
+    - t: de
+    - t: l’
+      glue: true
+    - t: Être
+    - t: suprême,
+  - tokens:
+    - t: les
+    - t: Droits
+    - t: suivans
+      n: suivants
+    - t: de
+    - t: la
+    - t: Femme
+    - t: et
+    - t: de
+    - t: la
+    - t: Citoyenne.
+- id: a1
+  title: Article premier
+  verify_in:
+  - sources/p9.txt
+  lines:
+  - tokens:
+    - t: La
+    - t: Femme
+    - t: naît
+    - t: libre
+    - t: et
+    - t: demeure
+    - t: égale
+    - t: à
+    - t: l’
+      glue: true
+    - t: homme
+    - t: en
+    - t: droits.
+  - tokens:
+    - t: Les
+    - t: distinctions
+    - t: sociales
+    - t: ne
+    - t: peuvent
+    - t: être
+    - t: fondées
+    - t: que
+    - t: sur
+    - t: l’
+      glue: true
+    - t: utilité
+    - t: commune.
+- id: a2
+  title: Article II
+  verify_in:
+  - sources/p9.txt
+  lines:
+  - tokens:
+    - t: Le
+    - t: but
+    - t: de
+    - t: toute
+    - t: association
+    - t: politique
+    - t: est
+    - t: la
+    - t: conservation
+    - t: des
+    - t: droits
+    - t: naturels
+    - t: et
+    - t: impreſcriptibles
+      n: imprescriptibles
+    - t: de
+    - t: la
+    - t: Femme
+    - t: et
+    - t: de
+    - t: l’
+      glue: true
+    - t: Homme
+      p: ':'
+  - tokens:
+    - t: ces
+    - t: droits
+    - t: sont
+    - t: la
+    - t: liberté,
+    - t: la
+    - t: propriété,
+    - t: la
+    - t: sûreté,
+  - tokens:
+    - t: et
+    - t: sur-tout
+      n: surtout
+    - t: la
+    - t: résistance
+    - t: à
+    - t: l’
+      glue: true
+    - t: oppression.
+- id: a3
+  title: Article III
+  verify_in:
+  - sources/p9.txt
+  - sources/p10.txt
+  lines:
+  - tokens:
+    - t: Le
+    - t: principe
+    - t: de
+    - t: toute
+    - t: souveraineté
+    - t: réside
+    - t: essentiellement
+    - t: dans
+    - t: la
+    - t: Nation,
+  - tokens:
+    - t: qui
+    - t: n’
+      glue: true
+    - t: est
+    - t: que
+    - t: la
+    - t: réunion
+    - t: de
+    - t: la
+    - t: Femme
+    - t: et
+    - t: de
+    - t: l’
+      glue: true
+    - t: Homme
+      p: ':'
+    - t: nul
+    - t: corps,
+    - t: nul
+    - t: individu,
+  - tokens:
+    - t: ne
+    - t: peut
+    - t: exercer
+    - t: d’
+      glue: true
+    - t: autorité
+    - t: qui
+    - t: n’
+      glue: true
+    - t: en
+    - t: émane
+    - t: expressément.
+- id: a4
+  title: Article IV
+  verify_in:
+  - sources/p10.txt
+  lines:
+  - tokens:
+    - t: La
+    - t: liberté
+    - t: et
+    - t: la
+    - t: justice
+    - t: consistent
+    - t: à
+    - t: rendre
+    - t: tout
+    - t: ce
+    - t: qui
+    - t: appartient
+    - t: à
+    - t: autrui
+      p: ;
+  - tokens:
+    - t: ainsi
+    - t: l’
+      glue: true
+    - t: exercice
+    - t: des
+    - t: droits
+    - t: naturels
+    - t: de
+    - t: la
+    - t: femme
+    - t: n’
+      glue: true
+    - t: a
+    - t: de
+    - t: bornes
+    - t: que
+    - t: la
+    - t: tyrannie
+    - t: perpétuelle
+    - t: que
+    - t: l’
+      glue: true
+    - t: homme
+    - t: lui
+    - t: oppose
+      p: ;
+  - tokens:
+    - t: ces
+    - t: bornes
+    - t: doivent
+    - t: être
+    - t: réformées
+    - t: par
+    - t: les
+    - t: loix
+      n: lois
+    - t: de
+    - t: la
+    - t: nature
+    - t: et
+    - t: de
+    - t: la
+    - t: raison.
+- id: a5
+  title: Article V
+  verify_in:
+  - sources/p10.txt
+  lines:
+  - tokens:
+    - t: Les
+    - t: loix
+      n: lois
+    - t: de
+    - t: la
+    - t: nature
+    - t: et
+    - t: de
+    - t: la
+    - t: raison
+    - t: défendent
+    - t: toutes
+    - t: actions
+    - t: nuisibles
+    - t: à
+    - t: la
+    - t: société
+      p: ':'
+  - tokens:
+    - t: tout
+    - t: ce
+    - t: qui
+    - t: n’
+      glue: true
+    - t: est
+    - t: pas
+    - t: défendu
+    - t: par
+    - t: ces
+    - t: loix,
+      n: lois
+  - tokens:
+    - t: sages
+    - t: et
+    - t: divines,
+  - tokens:
+    - t: ne
+    - t: peut
+    - t: être
+    - t: empêché,
+  - tokens:
+    - t: et
+    - t: nul
+    - t: ne
+    - t: peut
+    - t: être
+    - t: contraint
+    - t: à
+    - t: faire
+    - t: ce
+    - t: qu’
+      glue: true
+    - t: elles
+    - t: n’
+      glue: true
+    - t: ordonnent
+    - t: pas.
+- id: a6
+  title: Article VI
+  verify_in:
+  - sources/p10.txt
+  - sources/p11.txt
+  lines:
+  - tokens:
+    - t: La
+    - t: Loi
+    - t: doit
+    - t: être
+    - t: l’
+      glue: true
+    - t: expression
+    - t: de
+    - t: la
+    - t: volonté
+    - t: générale
+      p: ;
+  - tokens:
+    - t: toutes
+    - t: les
+    - t: Citoyennes
+    - t: et
+    - t: Citoyens
+    - t: doivent
+    - t: concourir
+    - t: personellement,
+      n: personnellement
+  - tokens:
+    - t: ou
+    - t: par
+    - t: leurs
+    - t: représentans,
+      n: représentants
+  - tokens:
+    - t: à
+    - t: sa
+    - t: formation
+      p: ;
+  - tokens:
+    - t: elle
+    - t: doit
+    - t: être
+    - t: la
+    - t: même
+    - t: pour
+    - t: tous
+      p: ':'
+  - tokens:
+    - t: toutes
+    - t: les
+    - t: citoyennes
+    - t: et
+    - t: tous
+    - t: les
+    - t: citoyens,
+  - tokens:
+    - t: étant
+    - t: égaux
+    - t: à
+    - t: ses
+    - t: yeux,
+  - tokens:
+    - t: doivent
+    - t: être
+    - t: également
+    - t: admissibles
+    - t: à
+    - t: toutes
+    - t: dignités,
+  - tokens:
+    - t: places
+    - t: et
+    - t: emplois
+    - t: publics,
+  - tokens:
+    - t: selon
+    - t: leurs
+    - t: capacités,
+  - tokens:
+    - t: '&'
+      n: et
+    - t: sans
+    - t: autres
+    - t: distinctions
+    - t: que
+    - t: celles
+    - t: de
+    - t: leurs
+    - t: vertus
+    - t: et
+    - t: de
+    - t: leurs
+    - t: talents.
+- id: a7
+  title: Article VII
+  verify_in:
+  - sources/p11.txt
+  lines:
+  - tokens:
+    - t: Nulle
+    - t: femme
+    - t: n’
+      glue: true
+    - t: est
+    - t: exceptée
+      p: ;
+  - tokens:
+    - t: elle
+    - t: est
+    - t: accusée,
+    - t: arrêtée,
+  - tokens:
+    - t: '&'
+      n: et
+    - t: détenue
+    - t: dans
+    - t: les
+    - t: cas
+    - t: déterminés
+    - t: par
+    - t: la
+    - t: Loi.
+  - tokens:
+    - t: Les
+    - t: femmes
+    - t: obéissent
+    - t: comme
+    - t: les
+    - t: hommes
+    - t: à
+    - t: cette
+    - t: Loi
+    - t: rigoureuse.
+- id: a8
+  title: Article VIII
+  verify_in:
+  - sources/p11.txt
+  lines:
+  - tokens:
+    - t: La
+    - t: loi
+    - t: ne
+    - t: doit
+    - t: établir
+    - t: que
+    - t: des
+    - t: peines
+    - t: strictement
+    - t: '&'
+      n: et
+    - t: évidemment
+    - t: nécessaires,
+  - tokens:
+    - t: '&'
+      n: et
+    - t: nul
+    - t: ne
+    - t: peut
+    - t: être
+    - t: puni
+    - t: qu’
+      glue: true
+    - t: en
+    - t: vertu
+    - t: d’
+      glue: true
+    - t: une
+    - t: Loi
+    - t: établie
+    - t: et
+    - t: promulguée
+    - t: antérieurement
+    - t: au
+    - t: délit
+    - t: et
+    - t: légalement
+    - t: appliquée
+    - t: aux
+    - t: femmes.
+- id: a9
+  title: Article IX
+  verify_in:
+  - sources/p11.txt
+  lines:
+  - tokens:
+    - t: Toute
+    - t: femme
+    - t: étant
+    - t: déclarée
+    - t: coupable,
+  - tokens:
+    - t: toute
+    - t: rigueur
+    - t: est
+    - t: exercée
+    - t: par
+    - t: la
+    - t: Loi.
+- id: a10
+  title: Article X
+  verify_in:
+  - sources/p11.txt
+  lines:
+  - tokens:
+    - t: Nul
+    - t: ne
+    - t: doit
+    - t: être
+    - t: inquiété
+    - t: pour
+    - t: ses
+    - t: opinions
+    - t: mêmes
+    - t: fondamentales,
+  - tokens:
+    - t: la
+    - t: femme
+    - t: a
+    - t: le
+    - t: droit
+    - t: de
+    - t: monter
+    - t: sur
+    - t: l’
+      glue: true
+    - t: échafaud
+      p: ;
+  - tokens:
+    - t: elle
+    - t: doit
+    - t: avoir
+    - t: également
+    - t: celui
+    - t: de
+    - t: monter
+    - t: à
+    - t: la
+    - t: Tribune
+      p: ;
+  - tokens:
+    - t: pourvu
+    - t: que
+    - t: ses
+    - t: manifestations
+    - t: ne
+    - t: troublent
+    - t: pas
+    - t: l’
+      glue: true
+    - t: ordre
+    - t: public
+    - t: établi
+    - t: par
+    - t: la
+    - t: Loi.
+- id: a11
+  title: Article XI
+  verify_in:
+  - sources/p11.txt
+  - sources/p12.txt
+  lines:
+  - tokens:
+    - t: La
+    - t: libre
+    - t: communication
+    - t: des
+    - t: pensées
+    - t: et
+    - t: des
+    - t: opinions
+    - t: est
+    - t: un
+    - t: des
+    - t: droits
+    - t: les
+    - t: plus
+    - t: précieux
+    - t: de
+    - t: la
+    - t: femme,
+  - tokens:
+    - t: puisque
+    - t: cette
+    - t: liberté
+    - t: assure
+    - t: la
+    - t: légitimité
+    - t: des
+    - t: pères
+    - t: envers
+    - t: les
+    - t: enfans.
+      n: enfants
+  - tokens:
+    - t: Toute
+    - t: Citoyenne
+    - t: peut
+    - t: donc
+    - t: dire
+    - t: librement,
+  - tokens:
+    - t: je
+    - t: suis
+    - t: mère
+    - t: d’
+      glue: true
+    - t: un
+    - t: enfant
+    - t: qui
+    - t: vous
+    - t: appartient,
+  - tokens:
+    - t: sans
+    - t: qu’
+      glue: true
+    - t: un
+    - t: préjugé
+    - t: barbare
+    - t: la
+    - t: force
+    - t: à
+    - t: dissimuler
+    - t: la
+    - t: vérité
+      p: ;
+  - tokens:
+    - t: sauf
+    - t: à
+    - t: répondre
+    - t: de
+    - t: l’
+      glue: true
+    - t: abus
+    - t: de
+    - t: cette
+    - t: liberté
+    - t: dans
+    - t: les
+    - t: cas
+    - t: déterminés
+    - t: par
+    - t: la
+    - t: Loi.
+- id: a12
+  title: Article XII
+  verify_in:
+  - sources/p12.txt
+  lines:
+  - tokens:
+    - t: La
+    - t: garantie
+    - t: des
+    - t: droits
+    - t: de
+    - t: la
+    - t: femme
+    - t: et
+    - t: de
+    - t: la
+    - t: Citoyenne
+    - t: nécessite
+    - t: une
+    - t: utilité
+    - t: majeure
+      p: ;
+  - tokens:
+    - t: cette
+    - t: garantie
+    - t: doit
+    - t: être
+    - t: instituée
+    - t: pour
+    - t: l’
+      glue: true
+    - t: avantage
+    - t: de
+    - t: tous,
+  - tokens:
+    - t: '&'
+      n: et
+    - t: non
+    - t: pour
+    - t: l’
+      glue: true
+    - t: utilité
+    - t: particulière
+    - t: de
+    - t: celles
+    - t: à
+    - t: qui
+    - t: elle
+    - t: est
+    - t: confiée.
+- id: a13
+  title: Article XIII
+  verify_in:
+  - sources/p12.txt
+  lines:
+  - tokens:
+    - t: Pour
+    - t: l’
+      glue: true
+    - t: entretien
+    - t: de
+    - t: la
+    - t: force
+    - t: publique,
+  - tokens:
+    - t: '&'
+      n: et
+    - t: pour
+    - t: les
+    - t: dépenses
+    - t: d’
+      glue: true
+    - t: administration,
+  - tokens:
+    - t: les
+    - t: contributions
+    - t: de
+    - t: la
+    - t: femme
+    - t: et
+    - t: de
+    - t: l’
+      glue: true
+    - t: homme
+    - t: sont
+    - t: égales
+      p: ;
+  - tokens:
+    - t: elle
+    - t: a
+    - t: part
+    - t: à
+    - t: toutes
+    - t: les
+    - t: corvées,
+  - tokens:
+    - t: à
+    - t: toutes
+    - t: les
+    - t: tâches
+    - t: pénibles
+      p: ;
+  - tokens:
+    - t: elle
+    - t: doit
+    - t: donc
+    - t: avoir
+    - t: de
+    - t: même
+    - t: part
+    - t: à
+    - t: la
+    - t: distribution
+    - t: des
+    - t: places,
+    - t: des
+    - t: emplois,
+    - t: des
+    - t: charges,
+  - tokens:
+    - t: des
+    - t: dignités
+    - t: et
+    - t: de
+    - t: l’
+      glue: true
+    - t: industrie.
+- id: a14
+  title: Article XIV
+  verify_in:
+  - sources/p12.txt
+  - sources/p13.txt
+  lines:
+  - tokens:
+    - t: Les
+    - t: Citoyennes
+    - t: et
+    - t: Citoyens
+    - t: ont
+    - t: le
+    - t: droit
+    - t: de
+    - t: constater
+    - t: par
+    - t: eux-mêmes,
+  - tokens:
+    - t: ou
+    - t: par
+    - t: leurs
+    - t: représentans,
+      n: représentants
+  - tokens:
+    - t: la
+    - t: nécessité
+    - t: de
+    - t: la
+    - t: contribution
+    - t: publique.
+  - tokens:
+    - t: Les
+    - t: Citoyennes
+    - t: ne
+    - t: peuvent
+    - t: y
+    - t: adhérer
+    - t: que
+    - t: par
+    - t: l’
+      glue: true
+    - t: admission
+    - t: d’
+      glue: true
+    - t: un
+    - t: partage
+    - t: égal,
+  - tokens:
+    - t: non-seulement
+    - t: dans
+    - t: la
+    - t: fortune,
+  - tokens:
+    - t: mais
+    - t: encore
+    - t: dans
+    - t: l’
+      glue: true
+    - t: administration
+    - t: publique,
+  - tokens:
+    - t: et
+    - t: de
+    - t: déterminer
+    - t: la
+    - t: quotité,
+    - t: l’
+      glue: true
+    - t: assiette,
+  - tokens:
+    - t: le
+    - t: recouvrement
+    - t: et
+    - t: la
+    - t: durée
+    - t: de
+    - t: l’
+      glue: true
+    - t: impôt.
+- id: a15
+  title: Article XV
+  verify_in:
+  - sources/p13.txt
+  lines:
+  - tokens:
+    - t: La
+    - t: masse
+    - t: des
+    - t: femmes,
+  - tokens:
+    - t: coalisée
+    - t: pour
+    - t: la
+    - t: contribution
+    - t: à
+    - t: celle
+    - t: des
+    - t: hommes,
+  - tokens:
+    - t: a
+    - t: le
+    - t: droit
+    - t: de
+    - t: demander
+    - t: compte,
+  - tokens:
+    - t: à
+    - t: tout
+    - t: agent
+    - t: public,
+  - tokens:
+    - t: de
+    - t: son
+    - t: administration.
+- id: a16
+  title: Article XVI
+  verify_in:
+  - sources/p13.txt
+  lines:
+  - tokens:
+    - t: Toute
+    - t: société,
+    - t: dans
+    - t: laquelle
+    - t: la
+    - t: garantie
+    - t: des
+    - t: droits
+    - t: n’
+      glue: true
+    - t: est
+    - t: pas
+    - t: assurée,
+  - tokens:
+    - t: ni
+    - t: la
+    - t: séparation
+    - t: des
+    - t: pouvoirs
+    - t: déterminée,
+  - tokens:
+    - t: n’
+      glue: true
+    - t: a
+    - t: point
+    - t: de
+    - t: constitution
+      p: ;
+  - tokens:
+    - t: la
+    - t: constitution
+    - t: est
+    - t: nulle,
+  - tokens:
+    - t: si
+    - t: la
+    - t: majorité
+    - t: des
+    - t: individus
+    - t: qui
+    - t: composent
+    - t: la
+    - t: Nation,
+  - tokens:
+    - t: n’
+      glue: true
+    - t: a
+    - t: pas
+    - t: coopéré
+    - t: à
+    - t: sa
+    - t: rédaction.
+- id: a17
+  title: Article XVII
+  verify_in:
+  - sources/p13.txt
+  lines:
+  - tokens:
+    - t: Les
+    - t: propriétés
+    - t: sont
+    - t: à
+    - t: tous
+    - t: les
+    - t: sexes
+    - t: réunis
+    - t: ou
+    - t: séparés
+      p: ;
+  - tokens:
+    - t: elles
+    - t: ont
+    - t: pour
+    - t: chacun
+    - t: un
+    - t: droit
+    - t: inviolable
+    - t: et
+    - t: sacré
+      p: ;
+  - tokens:
+    - t: nul
+    - t: ne
+    - t: peut
+    - t: en
+    - t: être
+    - t: privé
+    - t: comme
+    - t: vrai
+    - t: patrimoine
+    - t: de
+    - t: la
+    - t: nature,
+  - tokens:
+    - t: si
+    - t: ce
+    - t: n’
+      glue: true
+    - t: est
+    - t: lorsque
+    - t: la
+    - t: nécessité
+    - t: publique,
+    - t: légalement
+    - t: constatée,
+    - t: l’
+      glue: true
+    - t: exige
+    - t: évidemment,
+  - tokens:
+    - t: et
+    - t: sous
+    - t: la
+    - t: condition
+    - t: d’
+      glue: true
+    - t: une
+    - t: juste
+    - t: et
+    - t: préalable
+    - t: indemnité.

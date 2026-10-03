@@ -47,6 +47,17 @@ m1580    French as an educated reader would have said it about 1580, approximate
          Vowel length is marked only where the loss of s or of a final e left a long vowel.
 modern   Standard modern French, the word said alone, with the liaisons that today's careful
          reading makes (those the edition marks z: true).
+fr1791   French as a Paris reader would have read a public text aloud in 1791, used for Olympe de
+         Gouges's Déclaration des droits de la femme et de la citoyenne. Evidence: Féraud, Dictionnaire
+         critique de la langue française (1787-88), which gives a pronunciation for each word, and the
+         grammarians of the decade (Domergue 1778, 1805) as collected by Thurot (1881-83). By 1791 the
+         Paris norm had most of its modern values: oi is [wa] in loi, droit (Féraud writes loa, droa;
+         the older [wɛ] survived in the -ois endings and in some words, none of them in this text);
+         the r is the Paris uvular r; final consonants fall as today; the e caduc is sounded more
+         often in careful reading, as the lexicon already keeps it. What differed and is shown:
+         l mouillé, the palatal l of fille (fiʎ), which became [j] in the 19th century, written in the
+         lexicon as fr1791 where a word has it. Everything else is taken from the modern form; the
+         scheme says so and is approximate.
 fr1885   French as an educated Parisian reader of the 1880s would have read a formal text aloud,
          used for the General Act of the Berlin Conference (1885). French of 1885 is close to
          modern standard French: the spelling had been fixed since the Academy's dictionary of 1835
@@ -86,7 +97,7 @@ p      punctuation set off by a space in the print (French " :")
 glue   no space follows (the elided c', l', qu')
 z      modern liaison: the final consonant is sounded before the next word in the modern scheme
 nz     no liaison in m1580 for this word, where the general rule would make one
-zf     liaison in fr1885 only: made in formal reading of the 1880s, not in the modern scheme
+zf     liaison in fr1885 and fr1791 only: made in formal reading then, not in the modern scheme
 ipa    {scheme: ipa} override for this occurrence
 """
 from __future__ import annotations
@@ -97,7 +108,7 @@ from pathlib import Path
 
 import yaml
 
-VERSION = "0.2"
+VERSION = "0.3"
 SHOW_TRANSLIT = True
 TRANSLIT_LABEL = "Modern spelling"
 
@@ -145,6 +156,8 @@ def base_ipa(word: str, scheme: str) -> str | None:
         return None
     if scheme == "fr1885" and "fr1885" not in e and e.get("modern"):
         return lengthen_1885(e["modern"])
+    if scheme == "fr1791" and "fr1791" not in e:
+        return e.get("modern")
     return e.get(scheme)
 
 
@@ -255,7 +268,7 @@ def in_context(word: str, scheme: str) -> str:
         if lz and not ctx.get("nz"):
             return ipa + lz + "‿"
         return ipa
-    if lz and (ctx.get("z") or (scheme == "fr1885" and ctx.get("zf"))):
+    if lz and (ctx.get("z") or (scheme in ("fr1885", "fr1791") and ctx.get("zf"))):
         return ipa + lz + "‿"
     return ipa
 
@@ -315,6 +328,20 @@ KEY = {
         ("zh", "the s of measure"),
         ("ny", "the gn of Montaigne, as in canyon"),
     ],
+    "fr1791": [
+        ("", "French as a Paris reader would have read a public text aloud in 1791, after Féraud's dictionary (1787-88) and the grammarians of the decade; approximate. Most values are the modern ones."),
+        ("", "Hyphens divide syllables; no capitals, since French has no distinctive word stress."),
+        ("ly", "l mouillé: the palatal l of filles (fee-ly), still a lateral in 1791; it became the y of modern fille in the 19th century"),
+        ("wa", "oi as in loi, droit: already wa in Paris by Féraud's account (he writes loa, droa)"),
+        ("uh", "the e caduc (ə), sounded in careful reading where the lexicon keeps it"),
+        ("‿", "liaison: the final consonant is sounded and runs into the next word, including the liaisons of formal reading marked in the edition"),
+        ("ahⁿ ehⁿ ohⁿ öⁿ", "nasal vowels: the vowel said through the nose, no n sound after it; öⁿ (un) distinct from ehⁿ (in)"),
+        ("ü", "French u: say ee with rounded lips"),
+        ("ö", "the vowel of peu and of fleur: say ay with rounded lips"),
+        ("r", "the uvular r of Paris"),
+        ("zh", "the s of measure"),
+        ("ny", "gn, as in canyon (dignités)"),
+    ],
     "fr1885": [
         ("", "French as an educated Parisian would have read a formal text in the 1880s, after Passy (1887) and Littré. It is close to modern French; the differences shown are vowel length, a back a in some words, and more liaisons."),
         ("", "Hyphens divide syllables; no capitals, since French has no distinctive word stress. The word is shown as said alone; inside a phrase the long vowels were shorter."),
@@ -331,5 +358,6 @@ KEY = {
     ],
 }
 SCHEME_LABELS = {"m1580": "French about 1580: Montaigne's day (approximate)",
+                 "fr1791": "French of 1791: a Paris reading (approximate)",
                  "modern": "Modern French",
                  "fr1885": "French of the 1880s: formal Paris reading"}
