@@ -6,7 +6,7 @@ written, and a literal word-for-word English gloss. Under each line come one or 
 translations. Notes attach to words and lines. The library runs from the Pyramid Texts of Unas
 (about 2350 BC) to the General Act of the Berlin Conference (1885), in twenty-five languages.
 
-It is dedicated to Neith, goddess of the loom, and to the author's mother. The weft is the thread
+It is dedicated to Neith, goddess of the loom, and to the author's mother. Weft is an independent project by Skip Levens; it is not affiliated with any company, product or project that also uses the name. The weft is the thread
 carried back and forth across the warp; the source text is the warp, and sound, gloss and sense are
 the weft.
 

@@ -402,6 +402,25 @@
     box.hidden = false;
   })();
 
+  /* ---------- lightbox: a figure opens full size; click, Escape or the close button dismisses it */
+  (function lightbox() {
+    const dlg = h("dialog", { class: "lightbox", "aria-label": "Image, full size" },
+      h("button", { type: "button", class: "close", "aria-label": "Close image", onclick: () => dlg.close() }, "×"),
+      h("img", { alt: "" }), h("p", { class: "cap" }));
+    document.body.append(dlg);
+    dlg.addEventListener("click", (e) => { if (e.target === dlg || e.target.tagName === "IMG") dlg.close(); });
+    document.addEventListener("click", (e) => {
+      const img = e.target.closest("figure.frontis img, figure.sec-fig img");
+      if (!img || !dlg.showModal) return;
+      const cap = img.closest("figure").querySelector("figcaption");
+      dlg.querySelector("img").src = img.src;
+      dlg.querySelector("img").alt = img.alt || "";
+      dlg.querySelector(".cap").textContent = cap ? cap.textContent : "";
+      dlg.showModal();
+    });
+    document.querySelectorAll("figure.frontis img, figure.sec-fig img").forEach((i) => { i.style.cursor = "zoom-in"; i.title = "Click to enlarge"; });
+  })();
+
   /* ---------- sound key */
   const keyDlg = $("#key");
   function fillKey() {

@@ -352,8 +352,9 @@ def language_index(ms: list[dict], out_dir: Path) -> str:
     items = "".join(f'<li><b>{H.escape(lang)}</b> ' + " · ".join(f'<a href="{H.escape(href)}">{H.escape(t)}</a>' for t, href in works) + "</li>"
                     for lang, works in sorted(by.items(), key=lambda kv: kv[0].lower()))
     n_works = sum(len(v) for v in by.values())
-    return (f'<section class="langs"><h2>By language<span>{len(by)} languages, {n_works} works</span></h2>'
-            f'<ul>{items}</ul></section>')
+    # a disclosure, closed by default: the library opens on its date order, and the index unfolds on request
+    return (f'<details class="langs"><summary><span class="k2">By language</span><span class="n">{len(by)} languages, {n_works} works</span></summary>'
+            f'<ul>{items}</ul></details>')
 
 
 def write_index(repo: Path, out_dir: Path, private: bool = False) -> Path:
@@ -444,10 +445,12 @@ li p{margin:6px 0 0;font:.85rem/1.5 Inter,system-ui,sans-serif;color:var(--soft)
 .docnav a{color:var(--accent);text-decoration:none}.docnav a:hover{text-decoration:underline}.docnav span{color:var(--ink)}
 p.pv{font:600 .72rem/1.4 Inter,system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin:4px 0 0}
 li p.w{margin-top:4px;font:italic .95rem/1.4 "Gentium Book Plus",Palatino,serif;color:var(--accent)}
-.langs{margin:1.6rem 0 0;padding:14px 0 6px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
-.langs h2{font:600 .75rem/1 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 10px;display:flex;gap:12px;align-items:baseline}
-.langs h2 span{letter-spacing:.04em;text-transform:none;font-weight:400;color:var(--soft)}
-.langs ul{columns:2;column-gap:28px;list-style:none;padding:0;margin:0}
+.langs{margin:1.6rem 0 0;padding:10px 0 8px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.langs summary{cursor:pointer;list-style:none;display:flex;gap:12px;align-items:baseline;font:600 .75rem/1 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.langs summary::-webkit-details-marker{display:none}
+.langs summary::before{content:"▸";font-size:.8rem;transition:transform .15s}.langs[open] summary::before{transform:rotate(90deg)}
+.langs summary .n{letter-spacing:.04em;text-transform:none;font-weight:400;color:var(--soft)}
+.langs ul{columns:2;column-gap:28px;list-style:none;padding:0;margin:12px 0 0}
 .langs li{font:.82rem/1.5 Inter,system-ui,sans-serif;color:var(--soft);margin:0 0 5px;padding:0;border:0;display:block;break-inside:avoid}
 .langs li b{color:var(--ink);font-weight:600;margin-right:4px}
 .langs li a{color:var(--accent);text-decoration:none}.langs li a:hover{text-decoration:underline}

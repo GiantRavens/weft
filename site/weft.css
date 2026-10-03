@@ -308,3 +308,11 @@ body.hide-reading .reading { display: none; }
 .lang-xng .w .scr { font-family: "Noto Serif TC", "Songti TC", var(--sans); font-size: 0.72rem; letter-spacing: 0; }
 .src[lang="xng"], .src[lang="lzh"] { font-family: "Noto Serif TC", "Songti TC", "PMingLiU", "PMingLiU-ExtB", "SimSun-ExtB", "HanaMinB", "BabelStone Han", serif; }
 .src[lang="xng"] { font-size: calc(var(--src-size) * 1.1); }
+
+/* lightbox: an embedded figure at full size, on the page's own backdrop */
+.lightbox { border: 0; padding: 0; background: transparent; max-width: 96vw; max-height: 96vh; }
+.lightbox::backdrop { background: rgba(10, 8, 5, 0.86); }
+.lightbox img { display: block; max-width: 96vw; max-height: 88vh; width: auto; height: auto; margin: 0 auto; cursor: zoom-out; box-shadow: 0 8px 40px rgba(0,0,0,.5); }
+.lightbox .cap { font: 0.85rem/1.4 var(--sans); color: #e8e0cf; text-align: center; margin: 10px 0 0; max-width: 90vw; }
+.lightbox .close { position: fixed; top: 10px; right: 14px; font-size: 2rem; line-height: 1; color: #fff; background: none; border: 0; cursor: pointer; }
+@media print { .lightbox { display: none; } }
