@@ -1,0 +1,450 @@
+# Human overlay for Caminha's letter, folios 1r-1v. No treebank covers the text, so lemma and morphology are an
+# automatic parse (spaCy pt_core_news_md 3.8.0, Universal Dependencies conventions) of each word's modern
+# spelling, corrected by hand where it erred (marked, about a fifth of the tokens: the parser does not know
+# leixar, pero, ca, the future subjunctive poder, or the scribe's numerals); glosses are hand-written. Grammar
+# rides in the English: of-the for da/do, I-will-fail for a first-person future, let-take for a subjunctive
+# addressed to the king.
+- by: spaCy pt_core_news_md 3.8.0 (automatic parse), corrected and glossed by Claude (Weft phase 0); for review by Skip and a scholar
+  date: 2026-10-03
+  why: no treebank for the text; an automatic parse corrected by hand, with hand glosses
+  status: draft
+  set:
+    cam.1.1.1: {lemma: "Senhor", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "Sir"}   # Snõr
+    cam.1.2.1: {lemma: "posto", morph: "SCONJ", gloss: "although"}   # posto  [parse corrected]
+    cam.1.2.2: {lemma: "que", morph: "SCONJ", gloss: "that"}   # que
+    cam.1.2.3: {lemma: "o", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # o
+    cam.1.2.4: {lemma: "capitão", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "captain"}   # capitam
+    cam.1.2.5: {lemma: "mor", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "major"}   # moor  [parse corrected]
+    cam.1.2.6: {lemma: "de este", morph: "ADP + DET|Gender=Fem|Number=Sing|PronType=Dem", gloss: "of-this"}   # desta  [parse corrected]
+    cam.1.2.7: {lemma: "vosso", morph: "DET|Gender=Fem|Number=Sing|PronType=Prs", gloss: "your"}   # vossa
+    cam.1.2.8: {lemma: "frota", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "fleet"}   # frota
+    cam.1.3.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.1.3.2: {lemma: "assim", morph: "ADV", gloss: "likewise"}   # asy
+    cam.1.3.3: {lemma: "o", morph: "DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # os
+    cam.1.3.4: {lemma: "outro", morph: "DET|Gender=Masc|Number=Plur|PronType=Ind", gloss: "other"}   # outros
+    cam.1.3.5: {lemma: "capitães", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "captains"}   # capitaães
+    cam.1.3.6: {lemma: "escrever", morph: "VERB|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "write"}   # screpuam  [parse corrected]
+    cam.1.3.7: {lemma: "o", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "to"}   # a
+    cam.1.3.8: {lemma: "vosso", morph: "DET|Gender=Fem|Number=Sing|PronType=Prs", gloss: "your"}   # vossa
+    cam.1.3.9: {lemma: "alteza", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "Highness"}   # alteza
+    cam.1.4.1: {lemma: "o", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # a
+    cam.1.4.2: {lemma: "nova", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "news"}   # noua
+    cam.1.4.3: {lemma: "de o", morph: "ADP|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "of-the"}   # do
+    cam.1.4.4: {lemma: "achamento", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "finding"}   # achamento
+    cam.1.4.5: {lemma: "de este", morph: "ADP + DET|Gender=Fem|Number=Sing|PronType=Dem", gloss: "of-this"}   # desta  [parse corrected]
+    cam.1.4.6: {lemma: "vosso", morph: "DET|Gender=Fem|Number=Sing|PronType=Prs", gloss: "your"}   # vossa
+    cam.1.4.7: {lemma: "terra", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "land"}   # terra
+    cam.1.4.8: {lemma: "novo", morph: "ADJ|Gender=Fem|Number=Sing", gloss: "new"}   # noua
+    cam.1.5.1: {lemma: "que", morph: "SCONJ", gloss: "which"}   # que
+    cam.1.5.2: {lemma: "se", morph: "PRON|Person=3|PronType=Prs|Reflex=Yes", gloss: "itself"}   # se  [parse corrected]
+    cam.1.5.3: {lemma: "ora", morph: "ADV", gloss: "now"}   # ora
+    cam.1.5.4: {lemma: "em este", morph: "ADP + DET|Gender=Fem|Number=Sing|PronType=Dem", gloss: "in-this"}   # neesta  [parse corrected]
+    cam.1.5.5: {lemma: "navegação", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "navigation"}   # nauegaçom
+    cam.1.5.6: {lemma: "achar", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin", gloss: "was-found"}   # achou
+    cam.1.6.1: {lemma: "não", morph: "ADV|Polarity=Neg", gloss: "not"}   # nom
+    cam.1.6.2: {lemma: "leixar", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin", gloss: "I-will-fail"}   # leixarey  [parse corrected]
+    cam.1.6.3: {lemma: "também", morph: "ADV", gloss: "also"}   # tambem
+    cam.1.6.4: {lemma: "de", morph: "ADP", gloss: "to"}   # de  [parse corrected]
+    cam.1.6.5: {lemma: "dar", morph: "VERB|VerbForm=Inf", gloss: "give"}   # dar
+    cam.1.6.6: {lemma: "de isso", morph: "ADP + PRON|Gender=Masc|Number=Sing|PronType=Dem", gloss: "of-it"}   # disso  [parse corrected]
+    cam.1.6.7: {lemma: "meu", morph: "DET|Gender=Fem|Number=Sing|PronType=Prs", gloss: "my"}   # minha
+    cam.1.6.8: {lemma: "conta", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "account"}   # comta  [parse corrected]
+    cam.1.6.9: {lemma: "o", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "to"}   # a
+    cam.1.6.10: {lemma: "vosso", morph: "DET|Gender=Fem|Number=Sing|PronType=Prs", gloss: "your"}   # vossa
+    cam.1.6.11: {lemma: "alteza", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "Highness"}   # alteza
+    cam.1.7.1: {lemma: "assim", morph: "ADV", gloss: "so"}   # asy
+    cam.1.7.2: {lemma: "como", morph: "ADP", gloss: "as"}   # como
+    cam.1.7.3: {lemma: "eu", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs", gloss: "I"}   # eu
+    cam.1.7.4: {lemma: "bem", morph: "ADV|Degree=Cmp", gloss: "best"}   # milhor  [parse corrected]
+    cam.1.7.5: {lemma: "poder", morph: "VERB|Mood=Sub|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin", gloss: "can"}   # poder  [parse corrected]
+    cam.1.8.1: {lemma: "ainda", morph: "ADV", gloss: "even"}   # ajmda
+    cam.1.8.2: {lemma: "que", morph: "SCONJ", gloss: "though"}   # que
+    cam.1.8.3: {lemma: "para", morph: "ADP", gloss: "for"}   # pera
+    cam.1.8.4: {lemma: "o", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # o
+    cam.1.8.5: {lemma: "bem", morph: "ADV", gloss: "well"}   # bem  [parse corrected]
+    cam.1.8.6: {lemma: "contar", morph: "VERB|VerbForm=Inf", gloss: "telling"}   # contar
+    cam.1.8.7: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.1.8.8: {lemma: "falar", morph: "VERB|VerbForm=Inf", gloss: "speaking"}   # falar
+    cam.1.8.9: {lemma: "ele", morph: "PRON|Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "it"}   # o  [parse corrected]
+    cam.1.8.10: {lemma: "saber", morph: "VERB|Mood=Sub|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin", gloss: "I-may-know"}   # saiba  [parse corrected]
+    cam.1.8.11: {lemma: "mal", morph: "ADV|Degree=Cmp", gloss: "worse"}   # pior  [parse corrected]
+    cam.1.8.12: {lemma: "que", morph: "SCONJ", gloss: "than"}   # que
+    cam.1.8.13: {lemma: "todo", morph: "PRON|Gender=Masc|Number=Plur|PronType=Tot", gloss: "all"}   # todos
+    cam.1.8.14: {lemma: "fazer", morph: "VERB|VerbForm=Inf", gloss: "to-do"}   # fazer
+    cam.1.9.1: {lemma: "pero", morph: "CCONJ", gloss: "but"}   # pero  [parse corrected]
+    cam.1.9.2: {lemma: "tomar", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "let-take"}   # tome
+    cam.1.9.3: {lemma: "vosso", morph: "DET|Gender=Fem|Number=Sing|PronType=Prs", gloss: "your"}   # vossa
+    cam.1.9.4: {lemma: "alteza", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "Highness"}   # alteza
+    cam.1.9.5: {lemma: "meu", morph: "DET|Gender=Fem|Number=Sing|PronType=Prs", gloss: "my"}   # minha
+    cam.1.9.6: {lemma: "ignorância", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "ignorance"}   # jnoramçia
+    cam.1.9.7: {lemma: "por", morph: "ADP", gloss: "for"}   # por
+    cam.1.9.8: {lemma: "bom", morph: "ADJ|Gender=Fem|Number=Sing", gloss: "good"}   # boa
+    cam.1.9.9: {lemma: "vontade", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "will"}   # comtade  [parse corrected]
+    cam.1.10.1: {lemma: "o", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # a
+    cam.1.10.2: {lemma: "qual", morph: "PRON|Gender=Fem|Number=Sing|PronType=Rel", gloss: "which"}   # qual
+    cam.1.10.3: {lemma: "bem", morph: "ADV", gloss: "well"}   # bem  [parse corrected]
+    cam.1.10.4: {lemma: "certo", morph: "ADV", gloss: "certainly"}   # çerto  [parse corrected]
+    cam.1.10.5: {lemma: "crer", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "let-believe"}   # crea  [parse corrected]
+    cam.1.10.6: {lemma: "que", morph: "SCONJ", gloss: "that"}   # que
+    cam.1.10.7: {lemma: "por", morph: "ADP", gloss: "for"}   # por  [parse corrected]
+    cam.1.10.8: {lemma: "aformosentar", morph: "VERB|VerbForm=Inf", gloss: "beautifying"}   # afremosentar
+    cam.1.10.9: {lemma: "nem", morph: "CCONJ", gloss: "nor"}   # nem
+    cam.1.10.10: {lemma: "afear", morph: "VERB|VerbForm=Inf", gloss: "uglifying"}   # afear
+    cam.1.11.1: {lemma: "haver", morph: "VERB|Mood=Sub|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin", gloss: "I-may-have"}   # aja  [parse corrected]
+    cam.1.11.2: {lemma: "aqui", morph: "ADV", gloss: "here"}   # aquy
+    cam.1.11.3: {lemma: "de", morph: "ADP", gloss: "to"}   # de  [parse corrected]
+    cam.1.11.4: {lemma: "pôr", morph: "VERB|VerbForm=Inf", gloss: "put"}   # poer
+    cam.1.11.5: {lemma: "mais", morph: "ADV", gloss: "more"}   # mais
+    cam.1.11.6: {lemma: "ca", morph: "SCONJ", gloss: "than"}   # ca  [parse corrected]
+    cam.1.11.7: {lemma: "aquilo", morph: "PRON|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # aquilo
+    cam.1.11.8: {lemma: "que", morph: "PRON|Gender=Masc|Number=Sing|PronType=Rel", gloss: "which"}   # que
+    cam.1.11.9: {lemma: "ver", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin", gloss: "I-saw"}   # vy
+    cam.1.11.10: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.1.11.11: {lemma: "eu", morph: "PRON|Case=Acc|Number=Sing|Person=1|PronType=Prs", gloss: "to-me"}   # me
+    cam.1.11.12: {lemma: "parecer", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin", gloss: "seemed"}   # pareçeo
+    cam.1.12.1: {lemma: "de o", morph: "ADP|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "of-the"}   # da
+    cam.1.12.2: {lemma: "marinhagem", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "seamanship"}   # marinhajem
+    cam.1.12.3: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.1.12.4: {lemma: "singradura", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "courses"}   # simgraduras
+    cam.1.12.5: {lemma: "de o", morph: "ADP|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "of-the"}   # do
+    cam.1.12.6: {lemma: "caminho", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "way"}   # caminho
+    cam.1.12.7: {lemma: "não", morph: "ADV|Polarity=Neg", gloss: "not"}   # nõ
+    cam.1.12.8: {lemma: "dar", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin", gloss: "I-will-give"}   # darey
+    cam.1.12.9: {lemma: "aqui", morph: "ADV", gloss: "here"}   # aquy
+    cam.1.12.10: {lemma: "conta", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "account"}   # cõta  [parse corrected]
+    cam.1.12.11: {lemma: "o", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "to"}   # a
+    cam.1.12.12: {lemma: "vosso", morph: "DET|Gender=Fem|Number=Sing|PronType=Prs", gloss: "your"}   # vossa
+    cam.1.12.13: {lemma: "alteza", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "Highness"}   # alteza
+    cam.1.13.1: {lemma: "porque", morph: "SCONJ", gloss: "because"}   # porque
+    cam.1.13.2: {lemma: "ele", morph: "PRON|Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "it"}   # o  [parse corrected]
+    cam.1.13.3: {lemma: "não", morph: "ADV|Polarity=Neg", gloss: "not"}   # nom
+    cam.1.13.4: {lemma: "saber", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin", gloss: "I-would-know"}   # saberey  [parse corrected]
+    cam.1.13.5: {lemma: "fazer", morph: "VERB|VerbForm=Inf", gloss: "to-do"}   # fazer
+    cam.1.14.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.1.14.2: {lemma: "o", morph: "DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # os
+    cam.1.14.3: {lemma: "piloto", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "pilots"}   # pilotos
+    cam.1.14.4: {lemma: "dever", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "must"}   # deuem
+    cam.1.14.5: {lemma: "ter", morph: "VERB|VerbForm=Inf", gloss: "have"}   # teer
+    cam.1.14.6: {lemma: "esse", morph: "DET|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # ese
+    cam.1.14.7: {lemma: "cuidado", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "care"}   # cuidado
+    cam.1.15.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.1.15.2: {lemma: "por", morph: "ADP", gloss: "for"}   # por
+    cam.1.15.3: {lemma: "tanto", morph: "ADV", gloss: "so-much"}   # tamto  [parse corrected]
+    cam.1.15.4: {lemma: "senhor", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "Sir"}   # Snõr  [parse corrected]
+    cam.1.15.5: {lemma: "de o", morph: "ADP + PRON|Gender=Masc|Number=Sing|PronType=Dem", gloss: "of-that"}   # do  [parse corrected]
+    cam.1.15.6: {lemma: "que", morph: "PRON|Gender=Masc|Number=Sing|PronType=Rel", gloss: "which"}   # que
+    cam.1.15.7: {lemma: "haver", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin", gloss: "I-have"}   # ey  [parse corrected]
+    cam.1.15.8: {lemma: "de", morph: "ADP", gloss: "to"}   # de  [parse corrected]
+    cam.1.15.9: {lemma: "falar", morph: "VERB|VerbForm=Inf", gloss: "tell"}   # falar
+    cam.1.15.10: {lemma: "começar", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin", gloss: "I-begin"}   # começo  [parse corrected]
+    cam.1.15.11: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.1.15.12: {lemma: "dizer", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin", gloss: "I-say"}   # diguo
+    cam.2.1.1: {lemma: "topar", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin", gloss: "we-met"}   # topamos  [parse corrected]
+    cam.2.1.2: {lemma: "ave", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "birds"}   # aves
+    cam.2.1.3: {lemma: "a", morph: "ADP", gloss: "to"}   # a
+    cam.2.1.4: {lemma: "que", morph: "PRON|Gender=Fem|Number=Plur|PronType=Rel", gloss: "which"}   # que
+    cam.2.1.5: {lemma: "chamar", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "they-call"}   # chamam
+    cam.2.1.6: {lemma: "furar", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "pierce-"}   # fura
+    cam.2.1.7: {lemma: "bucho", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "bellies"}   # buchos
+    cam.2.2.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.2.2: {lemma: "em este", morph: "ADP + DET|Gender=Masc|Number=Sing|PronType=Dem", gloss: "on-this"}   # neeste  [parse corrected]
+    cam.2.2.3: {lemma: "dia", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "day"}   # dia
+    cam.2.2.4: {lemma: "a", morph: "ADP", gloss: "at"}   # a
+    cam.2.2.5: {lemma: "hora", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "hours"}   # oras
+    cam.2.2.6: {lemma: "de", morph: "ADP", gloss: "of"}   # de
+    cam.2.2.7: {lemma: "véspera", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "vespers"}   # bespera
+    cam.2.2.8: {lemma: "haver", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin", gloss: "we-had"}   # ouuemos  [parse corrected]
+    cam.2.2.9: {lemma: "vista", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "sight"}   # vista
+    cam.2.2.10: {lemma: "de", morph: "ADP", gloss: "of"}   # de
+    cam.2.2.11: {lemma: "terra", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "land"}   # terra
+    cam.2.2.12: {lemma: "scilicet", morph: "ADV", gloss: "namely"}   # .s  [parse corrected]
+    cam.2.3.1: {lemma: "primeiramente", morph: "ADV", gloss: "first"}   # primeiramente
+    cam.2.3.2: {lemma: "de", morph: "ADP", gloss: "of"}   # d
+    cam.2.3.3: {lemma: "um", morph: "DET|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art", gloss: "a"}   # huű
+    cam.2.3.4: {lemma: "grande", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "great"}   # gramde
+    cam.2.3.5: {lemma: "monte", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "mountain"}   # monte
+    cam.2.3.6: {lemma: "mui", morph: "ADV", gloss: "very"}   # muy
+    cam.2.3.7: {lemma: "alto", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "high"}   # alto
+    cam.2.3.8: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.3.9: {lemma: "redondo", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "round"}   # rredondo  [parse corrected]
+    cam.2.4.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.4.2: {lemma: "de outro", morph: "ADP + DET|Gender=Fem|Number=Plur|PronType=Ind", gloss: "of-other"}   # doutras  [parse corrected]
+    cam.2.4.3: {lemma: "serra", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "ranges"}   # serras
+    cam.2.4.4: {lemma: "mais", morph: "ADV", gloss: "more"}   # mais
+    cam.2.4.5: {lemma: "baixo", morph: "ADJ|Gender=Fem|Number=Plur", gloss: "low"}   # baixas
+    cam.2.4.6: {lemma: "a o", morph: "ADP|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "to-the"}   # ao
+    cam.2.4.7: {lemma: "sul", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "south"}   # sul
+    cam.2.4.8: {lemma: "de ele", morph: "ADP + PRON|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "of-it"}   # dele  [parse corrected]
+    cam.2.5.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.5.2: {lemma: "de", morph: "ADP", gloss: "of"}   # de
+    cam.2.5.3: {lemma: "terra", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "land"}   # terra
+    cam.2.5.4: {lemma: "chão", morph: "ADJ|Gender=Fem|Number=Sing", gloss: "flat"}   # chaã  [parse corrected]
+    cam.2.5.5: {lemma: "com", morph: "ADP", gloss: "with"}   # com
+    cam.2.5.6: {lemma: "grande", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "great"}   # grandes
+    cam.2.5.7: {lemma: "arvoredo", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "groves"}   # aruoredos
+    cam.2.6.1: {lemma: "a o", morph: "ADP|Gender=Masc|Number=Sing|PronType=Art", gloss: "to-the"}   # ao
+    cam.2.6.2: {lemma: "qual", morph: "PRON|Gender=Masc|Number=Sing|PronType=Rel", gloss: "which"}   # qual
+    cam.2.6.3: {lemma: "monte", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "mountain"}   # monte
+    cam.2.6.4: {lemma: "alto", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "high"}   # alto
+    cam.2.6.5: {lemma: "o", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # o
+    cam.2.6.6: {lemma: "capitão", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "captain"}   # capitam
+    cam.2.6.7: {lemma: "pôr", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin", gloss: "put"}   # pos  [parse corrected]
+    cam.2.6.8: {lemma: "nome", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "name"}   # nome
+    cam.2.6.9: {lemma: "o", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # o
+    cam.2.6.10: {lemma: "monte", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "Mount"}   # monte
+    cam.2.6.11: {lemma: "Pascoal", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Pascoal"}   # pascoal
+    cam.2.7.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.7.2: {lemma: "a o", morph: "ADP|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "to-the"}   # aa
+    cam.2.7.3: {lemma: "terra", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "land"}   # tera
+    cam.2.7.4: {lemma: "o", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # a
+    cam.2.7.5: {lemma: "terra", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "Land"}   # tera
+    cam.2.7.6: {lemma: "de o", morph: "ADP|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "of-the"}   # da
+    cam.2.7.7: {lemma: "Vera", morph: "PROPN|Gender=Fem|Number=Sing", gloss: "True"}   # Vera
+    cam.2.7.8: {lemma: "Cruz", morph: "PROPN|Number=Sing", gloss: "Cross"}   # cruz
+    cam.2.8.1: {lemma: "mandar", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin", gloss: "he-ordered"}   # mandou
+    cam.2.8.2: {lemma: "lançar", morph: "VERB|VerbForm=Inf", gloss: "to-cast"}   # lamçar
+    cam.2.8.3: {lemma: "o", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # o
+    cam.2.8.4: {lemma: "prumo", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "lead"}   # prumo
+    cam.2.8.5: {lemma: "achar", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "they-found"}   # acharam  [parse corrected]
+    cam.2.8.6: {lemma: "vinte e cinco", morph: "NUM|NumType=Card", gloss: "twenty-five"}   # xxb  [parse corrected]
+    cam.2.8.7: {lemma: "braça", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "fathoms"}   # braças
+    cam.2.9.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.9.2: {lemma: "a o", morph: "ADP|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "at-the"}   # ao
+    cam.2.9.3: {lemma: "sol", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "sun"}   # sol
+    cam.2.9.4: {lemma: "pôr", morph: "VERB|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "set"}   # posto  [parse corrected]
+    cam.2.9.5: {lemma: "obra", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "about"}   # obra
+    cam.2.9.6: {lemma: "seis", morph: "NUM|NumType=Card", gloss: "six"}   # bj
+    cam.2.9.7: {lemma: "légua", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "leagues"}   # legoas
+    cam.2.9.8: {lemma: "de", morph: "ADP", gloss: "from"}   # de
+    cam.2.9.9: {lemma: "terra", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "land"}   # terra
+    cam.2.9.10: {lemma: "surgir", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin", gloss: "we-dropped"}   # surgimos  [parse corrected]
+    cam.2.9.11: {lemma: "âncora", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "anchors"}   # amcoras
+    cam.2.9.12: {lemma: "em", morph: "ADP", gloss: "in"}   # em
+    cam.2.9.13: {lemma: "dezanove", morph: "NUM|NumType=Card", gloss: "nineteen"}   # xix
+    cam.2.9.14: {lemma: "braça", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "fathoms"}   # braças
+    cam.2.9.15: {lemma: "ancoragem", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "anchorage"}   # amcorajem  [parse corrected]
+    cam.2.9.16: {lemma: "limpo", morph: "ADJ|Gender=Fem|Number=Sing", gloss: "clean"}   # limpa  [parse corrected]
+    cam.2.10.1: {lemma: "ali", morph: "ADV", gloss: "there"}   # aly
+    cam.2.10.2: {lemma: "jazer", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin", gloss: "we-lay"}   # jouuemos  [parse corrected]
+    cam.2.10.3: {lemma: "todo", morph: "DET|Gender=Fem|Number=Sing|PronType=Tot", gloss: "all"}   # toda
+    cam.2.10.4: {lemma: "aquele", morph: "DET|Gender=Fem|Number=Sing|PronType=Dem", gloss: "that"}   # aquela
+    cam.2.10.5: {lemma: "noite", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "night"}   # noute
+    cam.2.11.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.11.2: {lemma: "a o", morph: "ADP|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "on-the"}   # aa
+    cam.2.11.3: {lemma: "quinta", morph: "ADJ|Gender=Fem|NumType=Ord|Number=Sing", gloss: "fifth"}   # quimta
+    cam.2.11.4: {lemma: "feira", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "fair-day"}   # feira
+    cam.2.11.5: {lemma: "por o", morph: "ADP|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "by-the"}   # pola
+    cam.2.11.6: {lemma: "manhã", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "morning"}   # manhaã
+    cam.2.11.7: {lemma: "fazer", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin", gloss: "we-made"}   # fezemos  [parse corrected]
+    cam.2.11.8: {lemma: "vela", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "sail"}   # vella
+    cam.2.11.9: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.11.10: {lemma: "seguir", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin", gloss: "we-steered"}   # segujmos  [parse corrected]
+    cam.2.11.11: {lemma: "direito", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "straight"}   # dir.tos  [parse corrected]
+    cam.2.11.12: {lemma: "a o", morph: "ADP|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "to-the"}   # aa
+    cam.2.11.13: {lemma: "terra", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "land"}   # terra
+    cam.2.12.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.12.2: {lemma: "o", morph: "DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # os
+    cam.2.12.3: {lemma: "navio", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "ships"}   # naujos
+    cam.2.12.4: {lemma: "pequeno", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "small"}   # pequenos
+    cam.2.12.5: {lemma: "diante", morph: "ADV", gloss: "ahead"}   # diãte
+    cam.2.12.6: {lemma: "ir", morph: "VERB|VerbForm=Ger", gloss: "going"}   # himdo
+    cam.2.12.7: {lemma: "por", morph: "ADP", gloss: "through"}   # per
+    cam.2.12.8: {lemma: "dezassete", morph: "NUM|NumType=Card", gloss: "seventeen"}   # xbij
+    cam.2.12.9: {lemma: "dezasseis", morph: "NUM|NumType=Card", gloss: "sixteen"}   # xbj
+    cam.2.12.10: {lemma: "catorze", morph: "NUM|NumType=Card", gloss: "fourteen"}   # xiiij
+    cam.2.12.11: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.12.12: {lemma: "nove", morph: "NUM|NumType=Card", gloss: "nine"}   # ix
+    cam.2.12.13: {lemma: "braça", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "fathoms"}   # braças
+    cam.2.12.14: {lemma: "até", morph: "ADP", gloss: "until"}   # ataa
+    cam.2.12.15: {lemma: "meia", morph: "ADJ|Gender=Fem|Number=Sing", gloss: "half"}   # mea
+    cam.2.12.16: {lemma: "légua", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "league"}   # legoa
+    cam.2.12.17: {lemma: "de", morph: "ADP", gloss: "from"}   # de
+    cam.2.12.18: {lemma: "terra", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "land"}   # terra
+    cam.2.13.1: {lemma: "onde", morph: "ADV|PronType=Rel", gloss: "where"}   # omde  [parse corrected]
+    cam.2.13.2: {lemma: "todo", morph: "PRON|Gender=Masc|Number=Plur|PronType=Tot", gloss: "all"}   # todos
+    cam.2.13.3: {lemma: "lançar", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin", gloss: "we-dropped"}   # lançamos  [parse corrected]
+    cam.2.13.4: {lemma: "âncora", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "anchors"}   # amcoras
+    cam.2.13.5: {lemma: "em", morph: "ADP", gloss: "in"}   # em
+    cam.2.13.6: {lemma: "direito", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "front"}   # dir.to
+    cam.2.13.7: {lemma: "de o", morph: "ADP|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "of-the"}   # da
+    cam.2.13.8: {lemma: "boca", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "mouth"}   # boca
+    cam.2.13.9: {lemma: "de", morph: "ADP", gloss: "of"}   # d
+    cam.2.13.10: {lemma: "um", morph: "DET|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art", gloss: "a"}   # huű
+    cam.2.13.11: {lemma: "rio", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "river"}   # Rio  [parse corrected]
+    cam.2.14.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.14.2: {lemma: "chegar", morph: "VERB|Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin", gloss: "we-would-reach"}   # chegariamos  [parse corrected]
+    cam.2.14.3: {lemma: "a", morph: "ADP", gloss: "to"}   # a
+    cam.2.14.4: {lemma: "este", morph: "DET|Gender=Fem|Number=Sing|PronType=Dem", gloss: "this"}   # esta
+    cam.2.14.5: {lemma: "ancoragem", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "anchorage"}   # amcorajem
+    cam.2.14.6: {lemma: "a o", morph: "ADP|Definite=Def|Gender=Fem|Number=Plur|PronType=Art", gloss: "at-the"}   # aas
+    cam.2.14.7: {lemma: "treze", morph: "NUM|NumType=Card", gloss: "thirteen"}   # xiij
+    cam.2.14.8: {lemma: "doze", morph: "NUM|NumType=Card", gloss: "twelve"}   # xij
+    cam.2.14.9: {lemma: "hora", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "hours"}   # oras
+    cam.2.14.10: {lemma: "pouco", morph: "ADV", gloss: "little"}   # pouco
+    cam.2.14.11: {lemma: "mais", morph: "ADV", gloss: "more"}   # mais
+    cam.2.14.12: {lemma: "ou", morph: "CCONJ", gloss: "or"}   # ou  [parse corrected]
+    cam.2.14.13: {lemma: "menos", morph: "ADV", gloss: "less"}   # menos  [parse corrected]
+    cam.2.15.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.15.2: {lemma: "de ali", morph: "ADP + ADV", gloss: "from-there"}   # daly  [parse corrected]
+    cam.2.15.3: {lemma: "haver", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin", gloss: "we-had"}   # ouuemos  [parse corrected]
+    cam.2.15.4: {lemma: "vista", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "sight"}   # vista  [parse corrected]
+    cam.2.15.5: {lemma: "de", morph: "ADP", gloss: "of"}   # d
+    cam.2.15.6: {lemma: "homem", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "men"}   # homeës
+    cam.2.15.7: {lemma: "que", morph: "PRON|Gender=Masc|Number=Plur|PronType=Rel", gloss: "who"}   # q
+    cam.2.15.8: {lemma: "andar", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin", gloss: "were-walking"}   # amdauam
+    cam.2.15.9: {lemma: "por o", morph: "ADP|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "along-the"}   # pela
+    cam.2.15.10: {lemma: "praia", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "beach"}   # praya  [parse corrected]
+    cam.2.15.11: {lemma: "obra", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "about"}   # obra
+    cam.2.15.12: {lemma: "de", morph: "ADP", gloss: "of"}   # de
+    cam.2.15.13: {lemma: "dez", morph: "NUM|NumType=Card", gloss: "ten"}   # x
+    cam.2.15.14: {lemma: "ou", morph: "CCONJ", gloss: "or"}   # ou
+    cam.2.15.15: {lemma: "sete", morph: "NUM|NumType=Card", gloss: "seven"}   # bij
+    cam.2.15.16: {lemma: "oito", morph: "NUM|NumType=Card", gloss: "eight"}   # biij
+    cam.2.15.17: {lemma: "segundo", morph: "ADP", gloss: "according-to"}   # segᵒ
+    cam.2.15.18: {lemma: "o", morph: "DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # os
+    cam.2.15.19: {lemma: "navio", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "ships"}   # nauios
+    cam.2.15.20: {lemma: "pequeno", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "small"}   # pequenos
+    cam.2.15.21: {lemma: "dizer", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "they-said"}   # diseram
+    cam.2.15.22: {lemma: "por", morph: "ADP", gloss: "for"}   # por  [parse corrected]
+    cam.2.15.23: {lemma: "chegar", morph: "VERB|Number=Plur|Person=3|VerbForm=Inf", gloss: "arriving"}   # chegarem
+    cam.2.15.24: {lemma: "primeiro", morph: "ADV", gloss: "first"}   # primeiro
+    cam.2.16.1: {lemma: "ali", morph: "ADV", gloss: "there"}   # aly
+    cam.2.16.2: {lemma: "lançar", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin", gloss: "we-put"}   # lançamos
+    cam.2.16.3: {lemma: "o", morph: "DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # os
+    cam.2.16.4: {lemma: "batel", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "boats"}   # batees  [parse corrected]
+    cam.2.16.5: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.16.6: {lemma: "esquife", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "skiffs"}   # esquifes
+    cam.2.16.7: {lemma: "fora", morph: "ADV", gloss: "out"}   # fora
+    cam.2.17.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.17.2: {lemma: "vir", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "came"}   # vieram  [parse corrected]
+    cam.2.17.3: {lemma: "logo", morph: "ADV", gloss: "at-once"}   # logo
+    cam.2.17.4: {lemma: "todo o", morph: "DET|Gender=Masc|Number=Plur|PronType=Tot + DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "all-the"}   # todolos  [parse corrected]
+    cam.2.17.5: {lemma: "capitão", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "captains"}   # capitaães  [parse corrected]
+    cam.2.17.6: {lemma: "de o", morph: "ADP|Definite=Def|Gender=Fem|Number=Plur|PronType=Art", gloss: "of-the"}   # das
+    cam.2.17.7: {lemma: "nau", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "ships"}   # naaos  [parse corrected]
+    cam.2.17.8: {lemma: "a", morph: "ADP", gloss: "to"}   # a
+    cam.2.17.9: {lemma: "este", morph: "DET|Gender=Fem|Number=Sing|PronType=Dem", gloss: "this"}   # esta
+    cam.2.17.10: {lemma: "nau", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "ship"}   # naao
+    cam.2.17.11: {lemma: "de o", morph: "ADP|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "of-the"}   # do
+    cam.2.17.12: {lemma: "capitão", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "captain"}   # capitam
+    cam.2.17.13: {lemma: "mor", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "major"}   # moor
+    cam.2.17.14: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.17.15: {lemma: "ali", morph: "ADV", gloss: "there"}   # aly
+    cam.2.17.16: {lemma: "falar", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "they-spoke"}   # falaram
+    cam.2.18.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.18.2: {lemma: "o", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # o
+    cam.2.18.3: {lemma: "capitão", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "captain"}   # capitam
+    cam.2.18.4: {lemma: "mandar", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin", gloss: "sent"}   # mandou
+    cam.2.18.5: {lemma: "em o", morph: "ADP|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "in-the"}   # no
+    cam.2.18.6: {lemma: "batel", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "boat"}   # batel
+    cam.2.18.7: {lemma: "em", morph: "ADP", gloss: "to"}   # em
+    cam.2.18.8: {lemma: "terra", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "land"}   # terra
+    cam.2.18.9: {lemma: "Nicolau", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Nicolau"}   # nicolaao
+    cam.2.18.10: {lemma: "Coelho", morph: "PROPN|Number=Sing", gloss: "Coelho"}   # coelho
+    cam.2.18.11: {lemma: "para", morph: "ADP", gloss: "to"}   # pera  [parse corrected]
+    cam.2.18.12: {lemma: "ver", morph: "VERB|VerbForm=Inf", gloss: "see"}   # veer
+    cam.2.18.13: {lemma: "aquele", morph: "DET|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # aqle
+    cam.2.18.14: {lemma: "rio", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "river"}   # Rio  [parse corrected]
+    cam.2.19.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.19.2: {lemma: "tanto", morph: "ADV", gloss: "as-soon"}   # tanto  [parse corrected]
+    cam.2.19.3: {lemma: "que", morph: "SCONJ", gloss: "as"}   # que
+    cam.2.19.4: {lemma: "ele", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "he"}   # ele
+    cam.2.19.5: {lemma: "começar", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin", gloss: "began"}   # comecou
+    cam.2.19.6: {lemma: "para", morph: "ADP", gloss: "towards"}   # pera
+    cam.2.19.7: {lemma: "lá", morph: "ADV", gloss: "there"}   # la
+    cam.2.19.8: {lemma: "de ir", morph: "ADP + VERB|VerbForm=Inf", gloss: "to-go"}   # dhir  [parse corrected]
+    cam.2.19.9: {lemma: "acudir", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "came-running"}   # acodirã  [parse corrected]
+    cam.2.19.10: {lemma: "por o", morph: "ADP|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "along-the"}   # pel
+    cam.2.19.11: {lemma: "praia", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "beach"}   # praya  [parse corrected]
+    cam.2.19.12: {lemma: "homem", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "men"}   # homeës
+    cam.2.19.13: {lemma: "quando", morph: "ADV", gloss: "now"}   # quando
+    cam.2.19.14: {lemma: "dois", morph: "NUM|NumType=Card", gloss: "two"}   # dous
+    cam.2.19.15: {lemma: "quando", morph: "ADV", gloss: "now"}   # quando
+    cam.2.19.16: {lemma: "três", morph: "NUM|NumType=Card", gloss: "three"}   # tres
+    cam.2.20.1: {lemma: "de", morph: "ADP", gloss: "of"}   # de
+    cam.2.20.2: {lemma: "maneira", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "manner"}   # maneira
+    cam.2.20.3: {lemma: "que", morph: "SCONJ", gloss: "that"}   # que  [parse corrected]
+    cam.2.20.4: {lemma: "quando", morph: "ADV", gloss: "when"}   # quando
+    cam.2.20.5: {lemma: "o", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # o
+    cam.2.20.6: {lemma: "batel", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "boat"}   # batel
+    cam.2.20.7: {lemma: "chegar", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin", gloss: "arrived"}   # chegou
+    cam.2.20.8: {lemma: "a o", morph: "ADP|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "to-the"}   # aa
+    cam.2.20.9: {lemma: "boca", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "mouth"}   # boca
+    cam.2.20.10: {lemma: "de o", morph: "ADP|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "of-the"}   # do
+    cam.2.20.11: {lemma: "rio", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "river"}   # Rio  [parse corrected]
+    cam.2.20.12: {lemma: "ser", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin", gloss: "were"}   # heram
+    cam.2.20.13: {lemma: "ali", morph: "ADV", gloss: "there"}   # aly
+    cam.2.20.14: {lemma: "dezoito", morph: "NUM|NumType=Card", gloss: "eighteen"}   # xbiij
+    cam.2.20.15: {lemma: "ou", morph: "CCONJ", gloss: "or"}   # ou
+    cam.2.20.16: {lemma: "vinte", morph: "NUM|NumType=Card", gloss: "twenty"}   # xx
+    cam.2.20.17: {lemma: "homem", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "men"}   # homeës
+    cam.2.20.18: {lemma: "pardo", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "dark"}   # pardos  [parse corrected]
+    cam.2.21.1: {lemma: "todo", morph: "DET|Gender=Masc|Number=Plur|PronType=Tot", gloss: "all"}   # todos
+    cam.2.21.2: {lemma: "nu", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "naked"}   # nuus  [parse corrected]
+    cam.2.21.3: {lemma: "sem", morph: "ADP", gloss: "without"}   # sem
+    cam.2.21.4: {lemma: "nenhum", morph: "DET|Gender=Fem|Number=Sing|PronType=Neg", gloss: "any"}   # nenhuűa
+    cam.2.21.5: {lemma: "coisa", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "thing"}   # cousa
+    cam.2.21.6: {lemma: "que", morph: "PRON|Gender=Fem|Number=Sing|PronType=Rel", gloss: "that"}   # que
+    cam.2.21.7: {lemma: "cobrir", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin", gloss: "might-cover"}   # cobrisse
+    cam.2.21.8: {lemma: "seu", morph: "DET|Gender=Fem|Number=Plur|PronType=Prs", gloss: "their"}   # suas
+    cam.2.21.9: {lemma: "vergonha", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "shame"}   # vergonhas
+    cam.2.22.1: {lemma: "trazer", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin", gloss: "they-carried"}   # traziam
+    cam.2.22.2: {lemma: "arco", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "bows"}   # arcos
+    cam.2.22.3: {lemma: "em o", morph: "ADP|Definite=Def|Gender=Fem|Number=Plur|PronType=Art", gloss: "in-the"}   # nas
+    cam.2.22.4: {lemma: "mão", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "hands"}   # maãos
+    cam.2.22.5: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.22.6: {lemma: "seu", morph: "DET|Gender=Fem|Number=Plur|PronType=Prs", gloss: "their"}   # suas
+    cam.2.22.7: {lemma: "seta", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "arrows"}   # seetas
+    cam.2.23.1: {lemma: "vir", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin", gloss: "they-came"}   # vijnham  [parse corrected]
+    cam.2.23.2: {lemma: "todo", morph: "DET|Gender=Masc|Number=Plur|PronType=Tot", gloss: "all"}   # todos
+    cam.2.23.3: {lemma: "rijo", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "stiff"}   # Rijos  [parse corrected]
+    cam.2.23.4: {lemma: "para", morph: "ADP", gloss: "towards"}   # pera
+    cam.2.23.5: {lemma: "o", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # o
+    cam.2.23.6: {lemma: "batel", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "boat"}   # batel  [parse corrected]
+    cam.2.24.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.24.2: {lemma: "Nicolau", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Nicolau"}   # nicolaao
+    cam.2.24.3: {lemma: "Coelho", morph: "PROPN|Number=Sing", gloss: "Coelho"}   # coelho
+    cam.2.24.4: {lemma: "eles", morph: "PRON|Case=Dat|Gender=Masc|Number=Plur|Person=3|PronType=Prs", gloss: "to-them"}   # lhes
+    cam.2.24.5: {lemma: "fazer", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin", gloss: "made"}   # fez
+    cam.2.24.6: {lemma: "sinal", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "sign"}   # sinal
+    cam.2.24.7: {lemma: "que", morph: "SCONJ", gloss: "that"}   # que
+    cam.2.24.8: {lemma: "pôr", morph: "VERB|Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin", gloss: "they-should-put-down"}   # posessem  [parse corrected]
+    cam.2.24.9: {lemma: "o", morph: "DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # os
+    cam.2.24.10: {lemma: "arco", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "bows"}   # arcos
+    cam.2.24.11: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.24.12: {lemma: "ele", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs", gloss: "they"}   # eles
+    cam.2.24.13: {lemma: "eles", morph: "PRON|Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs", gloss: "them"}   # os
+    cam.2.24.14: {lemma: "pôr", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "put-down"}   # poseram  [parse corrected]
+    cam.2.25.1: {lemma: "ali", morph: "ADV", gloss: "there"}   # aly
+    cam.2.25.2: {lemma: "não", morph: "ADV|Polarity=Neg", gloss: "not"}   # nom
+    cam.2.25.3: {lemma: "poder", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin", gloss: "he-could"}   # pode
+    cam.2.25.4: {lemma: "de ele", morph: "ADP + PRON|Gender=Masc|Number=Plur|Person=3|PronType=Prs", gloss: "of-them"}   # deles  [parse corrected]
+    cam.2.25.5: {lemma: "haver", morph: "VERB|VerbForm=Inf", gloss: "have"}   # auer
+    cam.2.25.6: {lemma: "fala", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "speech"}   # fala  [parse corrected]
+    cam.2.25.7: {lemma: "nem", morph: "CCONJ", gloss: "nor"}   # nem
+    cam.2.25.8: {lemma: "entendimento", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "understanding"}   # antëdimento
+    cam.2.25.9: {lemma: "que", morph: "PRON|Gender=Masc|Number=Sing|PronType=Rel", gloss: "that"}   # que
+    cam.2.25.10: {lemma: "aproveitar", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin", gloss: "might-avail"}   # aproueitasse
+    cam.2.25.11: {lemma: "por o", morph: "ADP|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "because-of-the"}   # polo
+    cam.2.25.12: {lemma: "mar", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "sea"}   # mar
+    cam.2.25.13: {lemma: "quebrar", morph: "VERB|VerbForm=Inf", gloss: "breaking"}   # quebrar
+    cam.2.25.14: {lemma: "em o", morph: "ADP|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "on-the"}   # na
+    cam.2.25.15: {lemma: "costa", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "shore"}   # costa  [parse corrected]
+    cam.2.26.1: {lemma: "somente", morph: "ADV", gloss: "only"}   # soomente
+    cam.2.26.2: {lemma: "dar lhe", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin + PRON|Case=Dat|Number=Plur|Person=3|PronType=Prs", gloss: "he-gave-them"}   # deu;hes  [parse corrected]
+    cam.2.26.3: {lemma: "um", morph: "DET|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art", gloss: "a"}   # huum
+    cam.2.26.4: {lemma: "barrete", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "cap"}   # barete
+    cam.2.26.5: {lemma: "vermelho", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "red"}   # vermelho
+    cam.2.26.6: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.26.7: {lemma: "um", morph: "DET|Definite=Ind|Gender=Fem|Number=Sing|PronType=Art", gloss: "a"}   # huűa
+    cam.2.26.8: {lemma: "carapuça", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "hood"}   # carapuça
+    cam.2.26.9: {lemma: "de", morph: "ADP", gloss: "of"}   # de
+    cam.2.26.10: {lemma: "linho", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "linen"}   # linho
+    cam.2.26.11: {lemma: "que", morph: "PRON|Gender=Masc|Number=Sing|PronType=Rel", gloss: "which"}   # que
+    cam.2.26.12: {lemma: "levar", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin", gloss: "he-wore"}   # leuaua
+    cam.2.26.13: {lemma: "em o", morph: "ADP|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "on-the"}   # na
+    cam.2.26.14: {lemma: "cabeça", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "head"}   # cabeça
+    cam.2.26.15: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    cam.2.26.16: {lemma: "um", morph: "DET|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art", gloss: "a"}   # huű
+    cam.2.26.17: {lemma: "sombreiro", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "sombrero"}   # sombreiro
+    cam.2.26.18: {lemma: "preto", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "black"}   # preto

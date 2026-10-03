@@ -29,7 +29,7 @@ that use it. Where the repository names no source, this page says so.
 - **Confidence.** A manifest may set `sound_confidence`. At `low` the page opens with "The
   pronunciation here is a reconstruction"; at `medium`, "Parts of the pronunciation here are
   reconstructed". Both link to the Pronunciation and Recording forms and to this page. Works with
-  no value show no invitation. Twenty-six of the sixty public works set a value (see the table, and the
+  no value show no invitation. Twenty-seven of the sixty-one public works set a value (see the table, and the
   last section).
 - **Each word alone.** Unless a section below says otherwise, each word is phonemized on its own:
   elision, sandhi and assimilation across words are not modelled in the sound row.
@@ -95,6 +95,7 @@ the page shows no invitation.
 | Italian | `italian` | Dante, Petrarch, Machiavelli | florentine (first), modern | not set |
 | Spanish | `spanish` | Columbus, 1493 | c1492 (first), modern | not set |
 | Portuguese | `portuguese` | Camões, Os Lusíadas I.1-3 | lisboa1540 (first), europeu, brasileiro | medium |
+| | | Caminha, letter of 1500 | lisboa1540 (first), europeu, brasileiro | medium |
 | Dutch | `dutch` | Linschoten | h1596 (first), modern | not set |
 | French | `french` | Montaigne | m1580 (first), modern | not set |
 | | | de Gouges, Rights of Woman (1791) | fr1791 (first), modern | not set |

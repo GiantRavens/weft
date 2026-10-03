@@ -1,0 +1,20 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+  - '2'
+counts:
+  lines: 41
+  tokens: 439
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'the Wikisource transcription is unproofread (quality level 1): spot-checked against the standard editions (Cortesão 1943; the Torre do Tombo facsimile) for the pilot folios, where it agrees except ''aas
+  xiij xij oras'' (folio 1v), which the editions read ''às dez horas''; the edition follows the transcription and the note says so'
+- no public-domain English translation was found (Greenlee 1938 is the first full one); the page carries Weft's own, marked editorial and draft
+- 'no treebank: lemma and morphology are an automatic parse (spaCy pt_core_news_md 3.8) of the modern spelling corrected by hand; glosses hand-written; draft'
+- 'the 1500 reading uses the 1540 scheme: Oliveira and Barros describe the language of a generation later; the differences are not reconstructed'
+- the scribe's abbreviations (.s., segᵒ, dir.tos) and numerals (xxb, bj) are shown as written and sounded by their modern words
+- the manuscript's own line breaks, kept by the transcription, are not shown; Weft divides at the clause

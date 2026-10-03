@@ -1,0 +1,720 @@
+# Weft edition of the opening of Pero Vaz de Caminha's letter to King Manuel (Porto Seguro, 1 May 1500): the
+# first paragraph of folio 1r and the whole of folio 1v, from the folio-by-folio transcription on Portuguese
+# Wikisource (Página:Carta-caminha-folio01r.png, -folio01v.jpg), which keeps the manuscript's spelling
+# (capitam, ouuemos, homeës, the tildes and doubled vowels) and its line breaks. The transcription is not yet
+# proofread there (pagequality 1); each line is checked verbatim against the pinned page revisions, with the
+# words the transcriber broke at a manuscript line end rejoined (verify_corrections) and the superscript of
+# the abbreviation seg(und)o written ᵒ.
+#   t   the word as transcribed, punctuation attached; .s. is the abbreviation scilicet; xxb, bj, xix... are the
+#       scribe's numerals (b = v)
+#   n   the modern spelling, typed by hand; the lexicon key and the page's "normalized" form; two words for a
+#       contraction (doutras: de outras; todolos: todos os)
+#   p   the scribe's / mark, set off by a space
+#   Lines are Weft's division at the sentence and the clause; sections are the two folios.
+work: caminha-carta-1500
+joiner: ' '
+verify_strip: <noinclude>.*?</noinclude>|<[^>]+>|\{\{c\||\{\{pt\|[^|]*\||\}\}
+verify_corrections:
+- ocr: acha mento
+  print: achamento
+  in: sources/f1r.txt
+- ocr: naue gaçom
+  print: nauegaçom
+  in: sources/f1r.txt
+- ocr: ma is ca
+  print: mais ca
+  in: sources/f1r.txt
+- ocr: cõ ta
+  print: cõta
+  in: sources/f1r.txt
+- ocr: nou te
+  print: noute
+  in: sources/f1v.txt
+- ocr: diã te
+  print: diãte
+  in: sources/f1v.txt
+- ocr: p rumo
+  print: prumo
+  in: sources/f1v.txt
+- ocr: co elho
+  print: coelho
+  in: sources/f1v.txt
+- ocr: man dou
+  print: mandou
+  in: sources/f1v.txt
+- ocr: see tas
+  print: seetas
+  in: sources/f1v.txt
+- ocr: antë dimento
+  print: antëdimento
+  in: sources/f1v.txt
+- ocr: sego os
+  print: segᵒ os
+  in: sources/f1v.txt
+- ocr: marinha jem
+  print: marinhajem
+  in: sources/f1r.txt
+sections:
+- id: '1'
+  title: 'Folio 1r: Caminha presents his account to the King'
+  verify_in: sources/f1r.txt
+  lines:
+  - tokens:
+    - t: Snõr
+      n: Senhor
+  - tokens:
+    - t: posto
+    - t: que
+    - t: o
+    - t: capitam
+      n: capitão
+    - t: moor
+      n: mor
+    - t: desta
+    - t: vossa
+    - t: frota
+  - tokens:
+    - t: e
+    - t: asy
+      n: assim
+    - t: os
+    - t: outros
+    - t: capitaães
+      n: capitães
+    - t: screpuam
+      n: escrevam
+    - t: a
+    - t: vossa
+    - t: alteza
+  - tokens:
+    - t: a
+    - t: noua
+      n: nova
+    - t: do
+    - t: achamento
+    - t: desta
+    - t: vossa
+    - t: terra
+    - t: noua
+      n: nova
+  - tokens:
+    - t: que
+    - t: se
+    - t: ora
+    - t: neesta
+      n: nesta
+    - t: nauegaçom
+      n: navegação
+    - t: achou,
+  - tokens:
+    - t: nom
+      n: não
+    - t: leixarey
+      n: leixarei
+    - t: tambem
+      n: também
+    - t: de
+    - t: dar
+    - t: disso
+    - t: minha
+    - t: comta
+      n: conta
+    - t: a
+    - t: vossa
+    - t: alteza
+  - tokens:
+    - t: asy
+      n: assim
+    - t: como
+    - t: eu
+    - t: milhor
+      n: melhor
+    - t: poder
+  - tokens:
+    - t: ajmda
+      n: ainda
+    - t: que
+    - t: pera
+      n: para
+    - t: o
+    - t: bem
+    - t: contar
+    - t: e
+    - t: falar
+    - t: o
+    - t: saiba
+    - t: pior
+    - t: que
+    - t: todos
+    - t: fazer,
+  - tokens:
+    - t: pero
+    - t: tome
+    - t: vossa
+    - t: alteza
+    - t: minha
+    - t: jnoramçia
+      n: ignorância
+    - t: por
+    - t: boa
+    - t: comtade,
+      n: vontade
+  - tokens:
+    - t: a
+    - t: qual
+    - t: bem
+    - t: çerto
+      n: certo
+    - t: crea
+      n: creia
+    - t: que
+    - t: por
+    - t: afremosentar
+      n: aformosentar
+    - t: nem
+    - t: afear
+  - tokens:
+    - t: aja
+      n: haja
+    - t: aquy
+      n: aqui
+    - t: de
+    - t: poer
+      n: pôr
+    - t: mais
+    - t: ca
+    - t: aquilo
+    - t: que
+    - t: vy
+      n: vi
+    - t: e
+    - t: me
+    - t: pareçeo.
+      n: pareceu
+      p: /
+  - tokens:
+    - t: da
+    - t: marinhajem
+      n: marinhagem
+    - t: e
+    - t: simgraduras
+      n: singraduras
+    - t: do
+    - t: caminho
+    - t: nõ
+      n: não
+    - t: darey
+      n: darei
+    - t: aquy
+      n: aqui
+    - t: cõta
+      n: conta
+    - t: a
+    - t: vossa
+    - t: alteza
+  - tokens:
+    - t: porque
+    - t: o
+    - t: nom
+      n: não
+    - t: saberey
+      n: saberei
+    - t: fazer
+  - tokens:
+    - t: e
+    - t: os
+    - t: pilotos
+    - t: deuem
+      n: devem
+    - t: teer
+      n: ter
+    - t: ese
+      n: esse
+    - t: cuidado
+  - tokens:
+    - t: e
+    - t: por
+    - t: tamto
+      n: tanto
+    - t: Snõr
+      n: Senhor
+    - t: do
+    - t: que
+    - t: ey
+      n: hei
+    - t: de
+    - t: falar
+    - t: começo
+    - t: e
+    - t: diguo.
+      n: digo
+      p: /
+- id: '2'
+  title: 'Folio 1v: the sighting of land, Monte Pascoal, the first men on the beach'
+  verify_in: sources/f1v.txt
+  lines:
+  - tokens:
+    - t: topamos
+    - t: aves
+    - t: a
+    - t: que
+    - t: chamam
+    - t: fura
+    - t: buchos,
+  - tokens:
+    - t: e
+    - t: neeste
+      n: neste
+    - t: dia
+    - t: a
+    - t: oras
+      n: horas
+    - t: de
+    - t: bespera
+      n: véspera
+    - t: ouuemos
+      n: houvemos
+    - t: vista
+    - t: de
+    - t: terra
+    - t: .s.,
+      n: scilicet
+  - tokens:
+    - t: primeiramente
+    - t: d
+      n: de
+    - t: huű
+      n: um
+    - t: gramde
+      n: grande
+    - t: monte
+    - t: muy
+      n: mui
+    - t: alto
+    - t: e
+    - t: rredondo
+      n: redondo
+  - tokens:
+    - t: e
+    - t: doutras
+      n: de outras
+    - t: serras
+    - t: mais
+    - t: baixas
+    - t: ao
+    - t: sul
+    - t: dele
+  - tokens:
+    - t: e
+    - t: de
+    - t: terra
+    - t: chaã
+      n: chã
+    - t: com
+    - t: grandes
+    - t: aruoredos,
+      n: arvoredos
+  - tokens:
+    - t: ao
+    - t: qual
+    - t: monte
+    - t: alto
+    - t: o
+    - t: capitam
+      n: capitão
+    - t: pos
+      n: pôs
+    - t: nome
+    - t: o
+    - t: monte
+    - t: pascoal
+      n: Pascoal
+  - tokens:
+    - t: e
+    - t: aa
+      n: à
+    - t: tera
+      n: terra
+    - t: a
+    - t: tera
+      n: terra
+    - t: da
+    - t: Vera
+    - t: cruz.
+      n: Cruz
+  - tokens:
+    - t: mandou
+    - t: lamçar
+      n: lançar
+    - t: o
+    - t: prumo
+    - t: acharam
+    - t: xxb
+      n: vinte e cinco
+    - t: braças
+  - tokens:
+    - t: e
+    - t: ao
+    - t: sol
+    - t: posto
+    - t: obra
+    - t: bj
+      n: seis
+    - t: legoas
+      n: léguas
+    - t: de
+    - t: terra
+    - t: surgimos
+    - t: amcoras
+      n: âncoras
+    - t: em
+    - t: xix
+      n: dezanove
+    - t: braças
+    - t: amcorajem
+      n: ancoragem
+    - t: limpa.
+  - tokens:
+    - t: aly
+      n: ali
+    - t: jouuemos
+      n: jouvemos
+    - t: toda
+    - t: aquela
+    - t: noute,
+      n: noite
+  - tokens:
+    - t: e
+    - t: aa
+      n: à
+    - t: quimta
+      n: quinta
+    - t: feira
+    - t: pola
+      n: pela
+    - t: manhaã
+      n: manhã
+    - t: fezemos
+      n: fizemos
+    - t: vella
+      n: vela
+    - t: e
+    - t: segujmos
+      n: seguimos
+    - t: dir.tos
+      n: direitos
+    - t: aa
+      n: à
+    - t: terra
+  - tokens:
+    - t: e
+    - t: os
+    - t: naujos
+      n: navios
+    - t: pequenos
+    - t: diãte
+      n: diante
+    - t: himdo
+      n: indo
+    - t: per
+      n: por
+    - t: xbij
+      n: dezassete
+    - t: xbj
+      n: dezasseis
+    - t: xiiij
+      n: catorze
+    - t: e
+    - t: ix
+      n: nove
+    - t: braças
+    - t: ataa
+      n: até
+    - t: mea
+      n: meia
+    - t: legoa
+      n: légua
+    - t: de
+    - t: terra
+  - tokens:
+    - t: omde
+      n: onde
+    - t: todos
+    - t: lançamos
+    - t: amcoras
+      n: âncoras
+    - t: em
+    - t: dir.to
+      n: direito
+    - t: da
+    - t: boca
+    - t: d
+      n: de
+    - t: huű
+      n: um
+    - t: Rio
+  - tokens:
+    - t: e
+    - t: chegariamos
+      n: chegaríamos
+    - t: a
+    - t: esta
+    - t: amcorajem
+      n: ancoragem
+    - t: aas
+      n: às
+    - t: xiij
+      n: treze
+    - t: xij
+      n: doze
+    - t: oras
+      n: horas
+    - t: pouco
+    - t: mais
+    - t: ou
+    - t: menos
+  - tokens:
+    - t: e
+    - t: daly
+      n: dali
+    - t: ouuemos
+      n: houvemos
+    - t: vista
+    - t: d
+      n: de
+    - t: homeës
+      n: homens
+    - t: q
+      n: que
+    - t: amdauam
+      n: andavam
+    - t: pela
+    - t: praya
+      n: praia
+    - t: obra
+    - t: de
+    - t: x
+      n: dez
+    - t: ou
+    - t: bij
+      n: sete
+    - t: biij
+      n: oito
+    - t: segᵒ
+      n: segundo
+    - t: os
+    - t: nauios
+      n: navios
+    - t: pequenos
+    - t: diseram
+      n: disseram
+    - t: por
+    - t: chegarem
+    - t: primeiro.
+  - tokens:
+    - t: aly
+      n: ali
+    - t: lançamos
+    - t: os
+    - t: batees
+      n: batéis
+    - t: e
+    - t: esquifes
+    - t: fora
+  - tokens:
+    - t: e
+    - t: vieram
+    - t: logo
+    - t: todolos
+      n: todos os
+    - t: capitaães
+      n: capitães
+    - t: das
+    - t: naaos
+      n: naus
+    - t: a
+    - t: esta
+    - t: naao
+      n: nau
+    - t: do
+    - t: capitam
+      n: capitão
+    - t: moor
+      n: mor
+    - t: e
+    - t: aly
+      n: ali
+    - t: falaram.
+  - tokens:
+    - t: e
+    - t: o
+    - t: capitam
+      n: capitão
+    - t: mandou
+    - t: 'no'
+    - t: batel
+    - t: em
+    - t: terra
+    - t: nicolaao
+      n: Nicolau
+    - t: coelho
+      n: Coelho
+    - t: pera
+      n: para
+    - t: veer
+      n: ver
+    - t: aqle
+      n: aquele
+    - t: Rio
+  - tokens:
+    - t: e
+    - t: tanto
+    - t: que
+    - t: ele
+    - t: comecou
+      n: começou
+    - t: pera
+      n: para
+    - t: la
+      n: lá
+    - t: dhir
+      n: de ir
+    - t: acodirã
+      n: acudiram
+    - t: pel
+      n: pela
+    - t: praya
+      n: praia
+    - t: homeës
+      n: homens
+    - t: quando
+    - t: dous
+      n: dois
+    - t: quando
+    - t: tres
+      n: três
+  - tokens:
+    - t: de
+    - t: maneira
+    - t: que
+    - t: quando
+    - t: o
+    - t: batel
+    - t: chegou
+    - t: aa
+      n: à
+    - t: boca
+    - t: do
+    - t: Rio
+    - t: heram
+      n: eram
+    - t: aly
+      n: ali
+    - t: xbiij
+      n: dezoito
+    - t: ou
+    - t: xx
+      n: vinte
+    - t: homeës
+      n: homens
+    - t: pardos
+  - tokens:
+    - t: todos
+    - t: nuus
+      n: nus
+    - t: sem
+    - t: nenhuűa
+      n: nenhuma
+    - t: cousa
+      n: coisa
+    - t: que
+    - t: cobrisse
+    - t: suas
+    - t: vergonhas.
+  - tokens:
+    - t: traziam
+    - t: arcos
+    - t: nas
+    - t: maãos
+      n: mãos
+    - t: e
+    - t: suas
+    - t: seetas.
+      n: setas
+  - tokens:
+    - t: vijnham
+      n: vinham
+    - t: todos
+    - t: Rijos
+    - t: pera
+      n: para
+    - t: o
+    - t: batel
+  - tokens:
+    - t: e
+    - t: nicolaao
+      n: Nicolau
+    - t: coelho
+      n: Coelho
+    - t: lhes
+    - t: fez
+    - t: sinal
+    - t: que
+    - t: posessem
+      n: pusessem
+    - t: os
+    - t: arcos,
+    - t: e
+    - t: eles
+    - t: os
+    - t: poseram.
+      n: puseram
+  - tokens:
+    - t: aly
+      n: ali
+    - t: nom
+      n: não
+    - t: pode
+      n: pôde
+    - t: deles
+    - t: auer
+      n: haver
+    - t: fala
+    - t: nem
+    - t: antëdimento
+      n: entendimento
+    - t: que
+    - t: aproueitasse
+      n: aproveitasse
+    - t: polo
+      n: pelo
+    - t: mar
+    - t: quebrar
+    - t: na
+    - t: costa.
+  - tokens:
+    - t: soomente
+      n: somente
+    - t: deu;hes
+      n: deu lhes
+    - t: huum
+      n: um
+    - t: barete
+      n: barrete
+    - t: vermelho
+    - t: e
+    - t: huűa
+      n: uma
+    - t: carapuça
+    - t: de
+    - t: linho
+    - t: que
+    - t: leuaua
+      n: levava
+    - t: na
+    - t: cabeça
+    - t: e
+    - t: huű
+      n: um
+    - t: sombreiro
+    - t: preto.

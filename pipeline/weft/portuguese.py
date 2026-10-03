@@ -350,13 +350,15 @@ def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[
     if word != surface:
         fields["surface"] = word
     n = et.get("n") or word
-    o = et.get("o") or (lexicon().get(key(n)) or {}).get("o")
-    if not o and not et.get("ipa"):
+    # n may be two words for a contraction (doutras: de outras); each must be in the lexicon
+    os_ = [et.get("o")] if et.get("o") else [(lexicon().get(key(w)) or {}).get("o") for w in n.split()]
+    if not all(os_) and not et.get("ipa"):
         fails.append(("lexicon-missing", n))
-    if o:
-        _, _, fl = word_ipa(o, "lisboa1540")
-        fails += fl
-        fields["prov"] = {"sound": f"weft.portuguese {VERSION}, from the lexicon's normalized 1540 spelling {o}"}
+    elif all(os_):
+        for o in os_:
+            _, _, fl = word_ipa(o, "lisboa1540")
+            fails += fl
+        fields["prov"] = {"sound": f"weft.portuguese {VERSION}, from the lexicon's normalized 1540 spelling {' '.join(os_)}"}
     _CTX = {"n": n, "o": et.get("o"), "ipa": et.get("ipa") or {}}
     return fields, fails
 

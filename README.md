@@ -77,7 +77,7 @@ server, so a page or the whole folder can be sent as an attachment.
 
 ## Status
 
-Sixty works built across twenty-six languages, oldest first in the library:
+Sixty-one works built across twenty-six languages, oldest first in the library:
 
 | Work | Passage | Schemes | Translations |
 |---|---|---|---|
@@ -118,6 +118,7 @@ Sixty works built across twenty-six languages, oldest first in the library:
 | Magna Carta | chapters 39-40 | Anglo-Latin (England, 1215), classical | McKechnie 1905, Bell 1910 |
 | The Secret History of the Mongols | sections 1-10, the wolf and the doe to Alan Qo'a's sons; Ming transcription with its own word glosses | Middle Mongolian about 1250 (reconstructed) | Weft editorial, the Ming summary translation; de Rachewiltz 2015 cited |
 | Dante, Inferno 1 | the whole canto, 136 lines | Florentine (about 1307), modern Italian; lemma and form from UD Italian-Old | Longfellow 1867, Cary 1814 |
+| Pero Vaz de Caminha, letter on the finding of Brazil | folios 1r-1v (1 May 1500): the salutation, the sighting of Monte Pascoal, the first men on the beach; the manuscript's spelling | Lisbon about 1500-1540, modern European, modern Brazilian | Weft editorial (draft); Greenlee 1938 cited |
 | Columbus, letter of 1493 | the landfall and first description | Castilian of about 1492, modern Spanish | Major 1870, Quaritch 1893 |
 | Petrarch, Canzoniere 1 | sonnet, 14 lines | Florentine (about 1350), modern Italian | Nott in Bohn 1859, Higginson 1903; Auslander 1931 cited |
 | Pico della Mirandola, Oration on the Dignity of Man | opening and God's speech to Adam | Italian humanist Latin (1480s), classical | Greswell 1805 (partial), Weft editorial; Forbes 1948 and Caponigri 1956 cited |

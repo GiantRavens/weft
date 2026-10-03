@@ -1,0 +1,76 @@
+work: caminha-carta-1500
+title: 'Pero Vaz de Caminha, letter to King Manuel on the finding of Brazil (1 May 1500): the opening and the first sight of land'
+short_title: Caminha's letter
+author: Pero Vaz de Caminha (about 1450-1500), scrivener of Cabral's fleet
+language: pt
+lang_name: Portuguese of 1500
+prefix: cam
+urn: urn:weft:pt:caminha.carta.1500
+unit: section
+section_noun: folio
+written:
+  year: 1500
+  display: '1500'
+  label: written at Porto Seguro, Brazil, between 26 April and 1 May 1500, and sent to the king with the supply ship; the autograph
+    is in the Torre do Tombo, Lisbon (gaveta 8, maço 2, no. 8), and was first printed in 1817
+status: phase-0
+pilot:
+  sections:
+  - '1'
+  - '2'
+edition:
+  id: ws-folio-transcription
+  name: 'Carta a El Rei D. Manuel (ortografia original), Portuguese Wikisource: a folio-by-folio transcription of the Torre do Tombo
+    autograph keeping its spelling and line breaks; pages folio01r (revision 547300) and folio01v (revision 540860), not yet proofread
+    there'
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain (1500); Wikisource transcription CC BY-SA 4.0; Weft line division and modern spellings CC BY-SA 4.0
+treebank: null
+schemes:
+- lisboa1540
+- europeu
+- brasileiro
+scheme_labels:
+  lisboa1540: 'As first read: Lisbon about 1500-1540, after Oliveira (1536) and Barros (1540) (approximate)'
+sound_confidence: medium
+sources_extra:
+- id: ws-f1r
+  name: Página:Carta-caminha-folio01r.png, Portuguese Wikisource, revision 547300
+  file: sources/f1r.txt
+  url: https://pt.wikisource.org/w/index.php?oldid=547300&action=raw
+  sha256: a4aa978e62c952b5e639aefa4a8b53f8808be334c7181c47a5984965afa3a613
+  license: public domain text; Wikisource CC BY-SA 4.0
+  license_url: https://pt.wikisource.org/wiki/Carta_a_El_Rei_D._Manuel_(ortografia_original)
+- id: ws-f1v
+  name: Página:Carta-caminha-folio01v.jpg, Portuguese Wikisource, revision 540860
+  file: sources/f1v.txt
+  url: https://pt.wikisource.org/w/index.php?oldid=540860&action=raw
+  sha256: f5c94be11b88ea1f3c20838101dea326d531a10c56aff45289b1bf116f0b0d51
+  license: public domain text; Wikisource CC BY-SA 4.0
+  license_url: https://pt.wikisource.org/wiki/Carta_a_El_Rei_D._Manuel_(ortografia_original)
+translations:
+- id: weft-editorial
+  kind: editorial
+  translator: Weft editorial translation, draft
+  year: 2026
+  form: prose, close to the Portuguese, by section
+  license: CC BY-SA 4.0
+- id: greenlee1938
+  kind: reference
+  translator: William Brooks Greenlee
+  year: 1938
+  title: The Voyage of Pedro Álvares Cabral to Brazil and India
+  publisher: Hakluyt Society
+  note: the standard English translation, in copyright; cited, not printed
+predicted_gaps:
+- 'the Wikisource transcription is unproofread (quality level 1): spot-checked against the standard editions (Cortesão 1943; the Torre
+  do Tombo facsimile) for the pilot folios, where it agrees except ''aas xiij xij oras'' (folio 1v), which the editions read ''às dez
+  horas''; the edition follows the transcription and the note says so'
+- no public-domain English translation was found (Greenlee 1938 is the first full one); the page carries Weft's own, marked editorial
+  and draft
+- 'no treebank: lemma and morphology are an automatic parse (spaCy pt_core_news_md 3.8) of the modern spelling corrected by hand; glosses
+  hand-written; draft'
+- 'the 1500 reading uses the 1540 scheme: Oliveira and Barros describe the language of a generation later; the differences are not reconstructed'
+- the scribe's abbreviations (.s., segᵒ, dir.tos) and numerals (xxb, bj) are shown as written and sounded by their modern words
+- the manuscript's own line breaks, kept by the transcription, are not shown; Weft divides at the clause
