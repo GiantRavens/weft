@@ -29,7 +29,7 @@ that use it. Where the repository names no source, this page says so.
 - **Confidence.** A manifest may set `sound_confidence`. At `low` the page opens with "The
   pronunciation here is a reconstruction"; at `medium`, "Parts of the pronunciation here are
   reconstructed". Both link to the Pronunciation and Recording forms and to this page. Works with
-  no value show no invitation. Twenty-five of the fifty-nine public works set a value (see the table, and the
+  no value show no invitation. Twenty-six of the sixty public works set a value (see the table, and the
   last section).
 - **Each word alone.** Unless a section below says otherwise, each word is phonemized on its own:
   elision, sandhi and assimilation across words are not modelled in the sound row.
@@ -94,6 +94,7 @@ the page shows no invitation.
 | Franco-Italian | `oldfrench` | Marco Polo, Cipangu | fr1300 (first), it1300 | medium |
 | Italian | `italian` | Dante, Petrarch, Machiavelli | florentine (first), modern | not set |
 | Spanish | `spanish` | Columbus, 1493 | c1492 (first), modern | not set |
+| Portuguese | `portuguese` | Camões, Os Lusíadas I.1-3 | lisboa1540 (first), europeu, brasileiro | medium |
 | Dutch | `dutch` | Linschoten | h1596 (first), modern | not set |
 | French | `french` | Montaigne | m1580 (first), modern | not set |
 | | | de Gouges, Rights of Woman (1791) | fr1791 (first), modern | not set |
@@ -644,6 +645,32 @@ manifests).
 
 **What a specialist could improve.** Lexicon entries, especially those marked `# learned`; a
 separate scheme for 1513 if the evidence supports one; the metre rules for synaeresis and dialefe.
+
+## Portuguese
+
+**Schemes.**
+- `lisboa1540`, "Lisbon about 1540: Oliveira's and Barros's day (approximate)": four sibilants (dental ç and z,
+  apical s and ss), ch still the affricate, unstressed vowels unreduced except a final o read u, ei and ou
+  still diphthongs, a trilled r, final -em a plain nasal e.
+- `europeu`, "Modern European Portuguese (Lisbon)": unstressed a, e, o reduced to [ɐ ɨ u], ei as [ɐj], ou as
+  [o], uvular r, s at the end of a syllable [ʃ].
+- `brasileiro`, "Modern Brazilian Portuguese (São Paulo norm)": final e and o as [i u], t and d before [i] as
+  [tʃ dʒ], syllable-final l as [w], initial r as [h].
+
+All three read one normalized spelling per word, written by hand in `pipeline/weft/data/pt_lexicon.yaml`
+with the stressed e and o marked for quality; a stressed e or o left unmarked is reported.
+
+**What it rests on.** Fernão de Oliveira, *Grammatica da lingoagem portuguesa* (1536), and João de Barros,
+*Grammatica da lingua portuguesa* (1540), the first native descriptions of the sounds; Paul Teyssier,
+*História da língua portuguesa* (1980), and Ivo Castro, *Introdução à história do português* (2006), for the
+dating of the changes (module). Stress follows the written rule of modern Portuguese.
+
+**Where it is weakest.** The final unstressed o read u in 1540, which Teyssier dates to that century but
+not to a year; the exact values of the apical and dental sibilants; the metre's elisions, which are not
+modelled since each word is sounded alone (manifest). Camões's own speech is not modelled.
+
+**What a specialist could improve.** The quality marks in the lexicon; the unstressed-vowel rules of the
+1540 scheme in `portuguese.py`; a rule for synalepha in the decasyllable.
 
 ## Spanish
 

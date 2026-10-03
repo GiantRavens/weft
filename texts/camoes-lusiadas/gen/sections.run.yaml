@@ -1,0 +1,21 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+  - '2'
+  - '3'
+counts:
+  lines: 24
+  tokens: 148
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'the edition is the modernized Wikisource text, not the 1572 print: the print''s spelling (Lvsiadas, long s, the Ee/E issues) is not shown. The 1540 reading comes from the lexicon''s normalized spelling,
+  word by word, so it does not depend on the print'
+- the 1540 reading is reconstructed from the grammarians (Oliveira 1536, Barros 1540) and Teyssier; its least certain points are the final unstressed o (read u) and the exact values of the four sibilants,
+  which the KEY marks
+- 'no treebank: lemma and morphology are an automatic parse (spaCy pt_core_news_md 3.8, UD Portuguese conventions) corrected by hand, declared in the overlay; glosses hand-written; draft'
+- 'the decasyllable and its elisions (synalepha between words) are not modelled: each word is sounded alone'
+- Burton's 1880 version keeps the stanza but not the word order; Mickle's 1776 paraphrase is cited, not aligned; Aubertin's literal 1878 version (archive.org) is a candidate for a second aligned translation

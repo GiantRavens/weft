@@ -37,8 +37,11 @@ def run(repo: Path, work: str) -> dict:
                     # YAML 1.1 turns bare on/off/yes/no into booleans: quote them in the overlay
                     bad(f"{f}-not-string", f"{t['id']} {v!r}")
             for s in data["schemes"]:
-                if not (t.get("sound", {}).get(s, {}).get("respell")):
+                rs = t.get("sound", {}).get(s, {}).get("respell")
+                if not rs:
                     bad(f"token-no-sound-{s}", t["id"])
+                elif rs == "?":            # a module's "I could not read this word": not a sound
+                    bad(f"token-sound-unknown-{s}", t["id"])
             if isinstance(t.get("gloss"), str) and " " in t["gloss"]:
                 bad("gloss-has-space", f"{t['id']} {t['gloss']!r}")
     for m in data["_curated_missing"]:

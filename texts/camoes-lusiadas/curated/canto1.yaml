@@ -1,0 +1,157 @@
+# Human overlay for Os Lusíadas I.1-3. No treebank covers the text, so lemma and morphology are an automatic
+# parse (spaCy pt_core_news_md 3.8.0, Universal Dependencies conventions) corrected by hand where it erred
+# (marked); glosses are hand-written. Grammar rides in the English: of-the for the contracted da/do/das,
+# they-passed for a third-person plural, let-cease for the subjunctive used as a command.
+- by: spaCy pt_core_news_md 3.8.0 (automatic parse), corrected and glossed by Claude (Weft phase 0); for review by Skip and a scholar
+  date: 2026-10-02
+  why: no treebank for the text; an automatic parse corrected by hand, with hand glosses
+  status: draft
+  set:
+    lus.1.1.1: {lemma: "o", morph: "DET|Definite=Def|Gender=Fem|Number=Plur|PronType=Art", gloss: "the"}   # As
+    lus.1.1.2: {lemma: "arma", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "arms"}   # armas
+    lus.1.1.3: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    lus.1.1.4: {lemma: "o", morph: "DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # os
+    lus.1.1.5: {lemma: "barão", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "barons"}   # barões
+    lus.1.1.6: {lemma: "assinalado", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "distinguished"}   # assinalados  [parse corrected]
+    lus.1.2.1: {lemma: "que", morph: "PRON|PronType=Rel", gloss: "who"}   # Que  [parse corrected]
+    lus.1.2.2: {lemma: "de o", morph: "ADP|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "from-the"}   # da  [parse corrected]
+    lus.1.2.3: {lemma: "ocidental", morph: "ADJ|Gender=Fem|Number=Sing", gloss: "western"}   # ocidental  [parse corrected]
+    lus.1.2.4: {lemma: "praia", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "shore"}   # praia  [parse corrected]
+    lus.1.2.5: {lemma: "lusitano", morph: "ADJ|Gender=Fem|Number=Sing", gloss: "Lusitanian"}   # Lusitana  [parse corrected]
+    lus.1.3.1: {lemma: "por", morph: "ADP", gloss: "through"}   # Por
+    lus.1.3.2: {lemma: "mar", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "seas"}   # mares
+    lus.1.3.3: {lemma: "nunca", morph: "ADV", gloss: "never"}   # nunca
+    lus.1.3.4: {lemma: "de", morph: "ADP", gloss: "of"}   # de
+    lus.1.3.5: {lemma: "antes", morph: "ADV", gloss: "before"}   # antes
+    lus.1.3.6: {lemma: "navegar", morph: "VERB|Gender=Masc|Number=Plur|VerbForm=Part", gloss: "sailed"}   # navegados  [parse corrected]
+    lus.1.4.1: {lemma: "passar", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "they-passed"}   # Passaram  [parse corrected]
+    lus.1.4.2: {lemma: "ainda", morph: "ADV", gloss: "even"}   # ainda
+    lus.1.4.3: {lemma: "além", morph: "ADV", gloss: "beyond"}   # além
+    lus.1.4.4: {lemma: "de o", morph: "ADP|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "of-the"}   # da  [parse corrected]
+    lus.1.4.5: {lemma: "Taprobana", morph: "PROPN|Gender=Fem|Number=Sing", gloss: "Taprobana"}   # Taprobana  [parse corrected]
+    lus.1.5.1: {lemma: "em", morph: "ADP", gloss: "in"}   # Em
+    lus.1.5.2: {lemma: "perigo", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "perils"}   # perigos
+    lus.1.5.3: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    lus.1.5.4: {lemma: "guerra", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "wars"}   # guerras
+    lus.1.5.5: {lemma: "esforçado", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "valiant"}   # esforçados  [parse corrected]
+    lus.1.6.1: {lemma: "mais", morph: "ADV", gloss: "more"}   # Mais
+    lus.1.6.2: {lemma: "de o", morph: "ADP|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "of-the"}   # do  [parse corrected]
+    lus.1.6.3: {lemma: "que", morph: "SCONJ", gloss: "than"}   # que  [parse corrected]
+    lus.1.6.4: {lemma: "prometer", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin", gloss: "was-promising"}   # prometia  [parse corrected]
+    lus.1.6.5: {lemma: "o", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # a
+    lus.1.6.6: {lemma: "força", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "strength"}   # força
+    lus.1.6.7: {lemma: "humano", morph: "ADJ|Gender=Fem|Number=Sing", gloss: "human"}   # humana
+    lus.1.7.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # E
+    lus.1.7.2: {lemma: "entre", morph: "ADP", gloss: "among"}   # entre
+    lus.1.7.3: {lemma: "gente", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "people"}   # gente
+    lus.1.7.4: {lemma: "remoto", morph: "ADJ|Gender=Fem|Number=Sing", gloss: "remote"}   # remota
+    lus.1.7.5: {lemma: "edificar", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "they-built"}   # edificaram
+    lus.1.8.1: {lemma: "novo", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "new"}   # Novo  [parse corrected]
+    lus.1.8.2: {lemma: "reino", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "Kingdom"}   # Reino  [parse corrected]
+    lus.1.8.3: {lemma: "que", morph: "PRON|Gender=Masc|Number=Sing|PronType=Rel", gloss: "which"}   # que
+    lus.1.8.4: {lemma: "tanto", morph: "ADV", gloss: "so-much"}   # tanto
+    lus.1.8.5: {lemma: "sublimar", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "they-exalted"}   # sublimaram  [parse corrected]
+    lus.2.1.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # E
+    lus.2.1.2: {lemma: "também", morph: "ADV", gloss: "also"}   # também
+    lus.2.1.3: {lemma: "o", morph: "DET|Definite=Def|Gender=Fem|Number=Plur|PronType=Art", gloss: "the"}   # as
+    lus.2.1.4: {lemma: "memória", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "memories"}   # memórias
+    lus.2.1.5: {lemma: "glorioso", morph: "ADJ|Gender=Fem|Number=Plur", gloss: "glorious"}   # gloriosas
+    lus.2.2.1: {lemma: "de aquele", morph: "ADP + PRON|Gender=Masc|Number=Plur|PronType=Dem", gloss: "of-those"}   # Daqueles  [parse corrected]
+    lus.2.2.2: {lemma: "rei", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "Kings"}   # Reis  [parse corrected]
+    lus.2.2.3: {lemma: "que", morph: "PRON|Gender=Masc|Number=Plur|PronType=Rel", gloss: "who"}   # que
+    lus.2.2.4: {lemma: "ir", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "went"}   # foram
+    lus.2.2.5: {lemma: "dilatar", morph: "VERB|VerbForm=Ger", gloss: "extending"}   # dilatando
+    lus.2.3.1: {lemma: "o", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # A
+    lus.2.3.2: {lemma: "fé", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "Faith"}   # Fé  [parse corrected]
+    lus.2.3.3: {lemma: "o", morph: "DET|Number=Sing|PronType=Art", gloss: "the"}   # o
+    lus.2.3.4: {lemma: "império", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "Empire"}   # Império  [parse corrected]
+    lus.2.3.5: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    lus.2.3.6: {lemma: "o", morph: "DET|Definite=Def|Gender=Fem|Number=Plur|PronType=Art", gloss: "the"}   # as
+    lus.2.3.7: {lemma: "terra", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "lands"}   # terras
+    lus.2.3.8: {lemma: "vicioso", morph: "ADJ|Gender=Fem|Number=Plur", gloss: "vicious"}   # viciosas
+    lus.2.4.1: {lemma: "de", morph: "ADP", gloss: "of"}   # De
+    lus.2.4.2: {lemma: "África", morph: "PROPN|Gender=Fem|Number=Sing", gloss: "Africa"}   # África
+    lus.2.4.3: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    lus.2.4.4: {lemma: "de", morph: "ADP", gloss: "of"}   # de
+    lus.2.4.5: {lemma: "Ásia", morph: "PROPN|Gender=Fem|Number=Sing", gloss: "Asia"}   # Ásia
+    lus.2.4.6: {lemma: "andar", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "they-went"}   # andaram  [parse corrected]
+    lus.2.4.7: {lemma: "devastar", morph: "VERB|VerbForm=Ger", gloss: "devastating"}   # devastando
+    lus.2.5.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # E
+    lus.2.5.2: {lemma: "aquele", morph: "PRON|Gender=Masc|Number=Plur|PronType=Dem", gloss: "those"}   # aqueles
+    lus.2.5.3: {lemma: "que", morph: "PRON|Gender=Masc|Number=Plur|PronType=Rel", gloss: "who"}   # que
+    lus.2.5.4: {lemma: "por", morph: "ADP", gloss: "by"}   # por
+    lus.2.5.5: {lemma: "obra", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "deeds"}   # obras
+    lus.2.5.6: {lemma: "valeroso", morph: "ADJ|Gender=Fem|Number=Plur", gloss: "valorous"}   # valerosas
+    lus.2.6.1: {lemma: "se", morph: "PRON|Person=3|PronType=Prs|Reflex=Yes", gloss: "themselves"}   # Se  [parse corrected]
+    lus.2.6.2: {lemma: "ir", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "go"}   # vão
+    lus.2.6.3: {lemma: "de o", morph: "ADP|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "from-the"}   # da
+    lus.2.6.4: {lemma: "lei", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "law"}   # lei
+    lus.2.6.5: {lemma: "de o", morph: "ADP|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "of-the"}   # da
+    lus.2.6.6: {lemma: "morte", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "death"}   # morte
+    lus.2.6.7: {lemma: "libertar", morph: "VERB|VerbForm=Ger", gloss: "freeing"}   # libertando
+    lus.2.7.1: {lemma: "cantar", morph: "VERB|VerbForm=Ger", gloss: "singing"}   # Cantando  [parse corrected]
+    lus.2.7.2: {lemma: "espalhar", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin", gloss: "I-will-spread"}   # espalharei  [parse corrected]
+    lus.2.7.3: {lemma: "por", morph: "ADP", gloss: "through"}   # por
+    lus.2.7.4: {lemma: "todo", morph: "DET|Gender=Fem|Number=Sing|PronType=Tot", gloss: "every"}   # toda
+    lus.2.7.5: {lemma: "parte", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "part"}   # parte
+    lus.2.8.1: {lemma: "se", morph: "SCONJ", gloss: "if"}   # Se
+    lus.2.8.2: {lemma: "a", morph: "ADP", gloss: "to"}   # a
+    lus.2.8.3: {lemma: "tanto", morph: "ADV", gloss: "so-much"}   # tanto
+    lus.2.8.4: {lemma: "eu", morph: "PRON|Case=Acc|Number=Sing|Person=1|PronType=Prs", gloss: "me"}   # me
+    lus.2.8.5: {lemma: "ajudar", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin", gloss: "helps"}   # ajudar  [parse corrected]
+    lus.2.8.6: {lemma: "o", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # o
+    lus.2.8.7: {lemma: "engenho", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "wit"}   # engenho
+    lus.2.8.8: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    lus.2.8.9: {lemma: "arte", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "art"}   # arte
+    lus.3.1.1: {lemma: "cessar", morph: "VERB|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin", gloss: "let-cease"}   # Cessem  [parse corrected]
+    lus.3.1.2: {lemma: "de o", morph: "ADP|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "of-the"}   # do
+    lus.3.1.3: {lemma: "sábio", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "wise"}   # sábio  [parse corrected]
+    lus.3.1.4: {lemma: "grego", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "Greek"}   # Grego  [parse corrected]
+    lus.3.1.5: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    lus.3.1.6: {lemma: "de o", morph: "ADP|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "of-the"}   # do
+    lus.3.1.7: {lemma: "troiano", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "Trojan"}   # Troiano  [parse corrected]
+    lus.3.2.1: {lemma: "o", morph: "DET|Definite=Def|Gender=Fem|Number=Plur|PronType=Art", gloss: "the"}   # As
+    lus.3.2.2: {lemma: "navegação", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "voyages"}   # navegações
+    lus.3.2.3: {lemma: "grande", morph: "ADJ|Gender=Fem|Number=Plur", gloss: "great"}   # grandes
+    lus.3.2.4: {lemma: "que", morph: "PRON|Gender=Masc|Number=Plur|PronType=Rel", gloss: "which"}   # que
+    lus.3.2.5: {lemma: "fazer", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "they-made"}   # fizeram
+    lus.3.3.1: {lemma: "calar", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "let-fall-silent"}   # Cale-se  [parse corrected]
+    lus.3.3.2: {lemma: "de", morph: "ADP", gloss: "of"}   # de
+    lus.3.3.3: {lemma: "Alexandro", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Alexander"}   # Alexandro  [parse corrected]
+    lus.3.3.4: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    lus.3.3.5: {lemma: "de", morph: "ADP", gloss: "of"}   # de
+    lus.3.3.6: {lemma: "Trajano", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Trajan"}   # Trajano  [parse corrected]
+    lus.3.4.1: {lemma: "o", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # A
+    lus.3.4.2: {lemma: "fama", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "fame"}   # fama
+    lus.3.4.3: {lemma: "de o", morph: "ADP|Definite=Def|Gender=Fem|Number=Plur|PronType=Art", gloss: "of-the"}   # das
+    lus.3.4.4: {lemma: "vitória", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "victories"}   # vitórias
+    lus.3.4.5: {lemma: "que", morph: "PRON|Gender=Fem|Number=Plur|PronType=Rel", gloss: "which"}   # que
+    lus.3.4.6: {lemma: "ter", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "they-had"}   # tiveram
+    lus.3.5.1: {lemma: "que", morph: "SCONJ", gloss: "for"}   # Que
+    lus.3.5.2: {lemma: "eu", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs", gloss: "I"}   # eu
+    lus.3.5.3: {lemma: "cantar", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin", gloss: "sing"}   # canto
+    lus.3.5.4: {lemma: "o", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # o
+    lus.3.5.5: {lemma: "peito", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "breast"}   # peito
+    lus.3.5.6: {lemma: "ilustre", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "illustrious"}   # ilustre
+    lus.3.5.7: {lemma: "lusitano", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "Lusitanian"}   # Lusitano  [parse corrected]
+    lus.3.6.1: {lemma: "a", morph: "ADP", gloss: "to"}   # A
+    lus.3.6.2: {lemma: "quem", morph: "PRON|PronType=Rel", gloss: "whom"}   # quem  [parse corrected]
+    lus.3.6.3: {lemma: "Neptuno", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Neptune"}   # Neptuno  [parse corrected]
+    lus.3.6.4: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    lus.3.6.5: {lemma: "Marte", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Mars"}   # Marte  [parse corrected]
+    lus.3.6.6: {lemma: "obedecer", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin", gloss: "obeyed"}   # obedeceram
+    lus.3.7.1: {lemma: "cessar", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "let-cease"}   # Cesse  [parse corrected]
+    lus.3.7.2: {lemma: "tudo", morph: "PRON|PronType=Ind", gloss: "all"}   # tudo  [parse corrected]
+    lus.3.7.3: {lemma: "o", morph: "PRON|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # o  [parse corrected]
+    lus.3.7.4: {lemma: "que", morph: "PRON|PronType=Rel", gloss: "which"}   # que  [parse corrected]
+    lus.3.7.5: {lemma: "o", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # a
+    lus.3.7.6: {lemma: "Musa", morph: "PROPN|Gender=Fem|Number=Sing", gloss: "Muse"}   # Musa  [parse corrected]
+    lus.3.7.7: {lemma: "antigo", morph: "ADJ|Gender=Fem|Number=Sing", gloss: "ancient"}   # antiga
+    lus.3.7.8: {lemma: "cantar", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "sings"}   # canta
+    lus.3.8.1: {lemma: "que", morph: "SCONJ", gloss: "for"}   # Que
+    lus.3.8.2: {lemma: "outro", morph: "DET|Gender=Masc|Number=Sing|PronType=Ind", gloss: "another"}   # outro
+    lus.3.8.3: {lemma: "valor", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "valour"}   # valor
+    lus.3.8.4: {lemma: "mais", morph: "ADV", gloss: "more"}   # mais
+    lus.3.8.5: {lemma: "alto", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "high"}   # alto
+    lus.3.8.6: {lemma: "se", morph: "PRON|Person=3|PronType=Prs|Reflex=Yes", gloss: "itself"}   # se  [parse corrected]
+    lus.3.8.7: {lemma: "alevantar", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "raises"}   # alevanta

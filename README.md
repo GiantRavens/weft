@@ -77,7 +77,7 @@ server, so a page or the whole folder can be sent as an attachment.
 
 ## Status
 
-Fifty-nine works built across twenty-five languages, oldest first in the library:
+Sixty works built across twenty-six languages, oldest first in the library:
 
 | Work | Passage | Schemes | Translations |
 |---|---|---|---|
@@ -122,6 +122,7 @@ Fifty-nine works built across twenty-five languages, oldest first in the library
 | Petrarch, Canzoniere 1 | sonnet, 14 lines | Florentine (about 1350), modern Italian | Nott in Bohn 1859, Higginson 1903; Auslander 1931 cited |
 | Pico della Mirandola, Oration on the Dignity of Man | opening and God's speech to Adam | Italian humanist Latin (1480s), classical | Greswell 1805 (partial), Weft editorial; Forbes 1948 and Caponigri 1956 cited |
 | Alexander VI, the bull Inter caetera | 4 May 1493: the address, Columbus's voyage, the grant and the line | Latin of the papal chancery (Italian manner, 1493), classical | Davenport 1917, Blair and Robertson 1903 |
+| Camões, Os Lusíadas | Canto I, stanzas 1-3, the proposition | Lisbon about 1540 (after Oliveira and Barros), modern European, modern Brazilian | Burton 1880; Mickle 1776 cited |
 | Erasmus, The Praise of Folly | Folly's opening | Low Countries Latin (about 1500), classical | Wilson 1668, Kennett 1683 |
 | Tale of the Heike, the opening | Gion shōja, 11 lines (vulgate text) | as recited about 1371, modern | Sadler 1918 (public domain in the US only), Weft editorial |
 | Machiavelli, The Prince | chapters 17-18 | Florentine (about 1513), modern Italian | Marriott 1908, Ricci 1903 |

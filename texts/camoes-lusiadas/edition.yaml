@@ -1,0 +1,193 @@
+# Weft edition of Camões, Os Lusíadas, Canto I, stanzas 1-3 (1572), in the modern spelling of the Portuguese
+# Wikisource text ("grafia atualizada", from the first edition), checked verbatim against the pinned page
+# revision; verify_strip sets aside the page's wikilinks. The 1572 print's own spelling (Lvsiadas, assinalados
+# with long s, barões/barões) is not reproduced here: the sound of the 1540s comes from the lexicon's
+# normalized spelling, not from the print.
+#   t   the word as printed, punctuation attached; split off into punct
+#   Lines are the verses; sections are the stanzas (ottava rima, eight decasyllables, ABABABCC).
+work: camoes-lusiadas
+joiner: ' '
+verify_in: sources/canto1-ws.txt
+verify_strip: \[\[(?:wikt|w|:w):[^|\]]*\||\]\]|^::::\d+$
+sections:
+- id: '1'
+  title: Canto I, stanza 1
+  lines:
+  - tokens:
+    - t: As
+    - t: armas
+    - t: e
+    - t: os
+    - t: barões
+    - t: assinalados,
+  - tokens:
+    - t: Que
+    - t: da
+    - t: ocidental
+    - t: praia
+    - t: Lusitana,
+  - tokens:
+    - t: Por
+    - t: mares
+    - t: nunca
+    - t: de
+    - t: antes
+    - t: navegados,
+  - tokens:
+    - t: Passaram
+    - t: ainda
+    - t: além
+    - t: da
+    - t: Taprobana,
+  - tokens:
+    - t: Em
+    - t: perigos
+    - t: e
+    - t: guerras
+    - t: esforçados,
+  - tokens:
+    - t: Mais
+    - t: do
+    - t: que
+    - t: prometia
+    - t: a
+    - t: força
+    - t: humana,
+  - tokens:
+    - t: E
+    - t: entre
+    - t: gente
+    - t: remota
+    - t: edificaram
+  - tokens:
+    - t: Novo
+    - t: Reino,
+    - t: que
+    - t: tanto
+    - t: sublimaram;
+- id: '2'
+  title: Canto I, stanza 2
+  lines:
+  - tokens:
+    - t: E
+    - t: também
+    - t: as
+    - t: memórias
+    - t: gloriosas
+  - tokens:
+    - t: Daqueles
+    - t: Reis,
+    - t: que
+    - t: foram
+    - t: dilatando
+  - tokens:
+    - t: A
+    - t: Fé,
+    - t: o
+    - t: Império,
+    - t: e
+    - t: as
+    - t: terras
+    - t: viciosas
+  - tokens:
+    - t: De
+    - t: África
+    - t: e
+    - t: de
+    - t: Ásia
+    - t: andaram
+    - t: devastando;
+  - tokens:
+    - t: E
+    - t: aqueles,
+    - t: que
+    - t: por
+    - t: obras
+    - t: valerosas
+  - tokens:
+    - t: Se
+    - t: vão
+    - t: da
+    - t: lei
+    - t: da
+    - t: morte
+    - t: libertando;
+  - tokens:
+    - t: Cantando
+    - t: espalharei
+    - t: por
+    - t: toda
+    - t: parte,
+  - tokens:
+    - t: Se
+    - t: a
+    - t: tanto
+    - t: me
+    - t: ajudar
+    - t: o
+    - t: engenho
+    - t: e
+    - t: arte.
+- id: '3'
+  title: Canto I, stanza 3
+  lines:
+  - tokens:
+    - t: Cessem
+    - t: do
+    - t: sábio
+    - t: Grego
+    - t: e
+    - t: do
+    - t: Troiano
+  - tokens:
+    - t: As
+    - t: navegações
+    - t: grandes
+    - t: que
+    - t: fizeram;
+  - tokens:
+    - t: Cale-se
+    - t: de
+    - t: Alexandro
+    - t: e
+    - t: de
+    - t: Trajano
+  - tokens:
+    - t: A
+    - t: fama
+    - t: das
+    - t: vitórias
+    - t: que
+    - t: tiveram;
+  - tokens:
+    - t: Que
+    - t: eu
+    - t: canto
+    - t: o
+    - t: peito
+    - t: ilustre
+    - t: Lusitano,
+  - tokens:
+    - t: A
+    - t: quem
+    - t: Neptuno
+    - t: e
+    - t: Marte
+    - t: 'obedeceram:'
+  - tokens:
+    - t: Cesse
+    - t: tudo
+    - t: o
+    - t: que
+    - t: a
+    - t: Musa
+    - t: antiga
+    - t: canta,
+  - tokens:
+    - t: Que
+    - t: outro
+    - t: valor
+    - t: mais
+    - t: alto
+    - t: se
+    - t: alevanta.

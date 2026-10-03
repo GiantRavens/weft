@@ -16,9 +16,9 @@ import yaml
 from . import __version__, treebank
 from .draft import PHON, load_manifest
 
-HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "arc": "arc", "lzh": "lzh", "runic": "gmq", "ja": "ja", "san": "sa", "akk": "akk", "fa": "fa", "ta": "ta", "it": "it", "fr": "fr", "es": "es", "nl": "nl", "fro": "fro", "de": "de", "egy": "egy", "sux": "sux", "orv": "orv", "xng": "xng", "cop": "cop", "sw": "sw", "qya": "qya", "sjn": "sjn"}
+HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "arc": "arc", "lzh": "lzh", "runic": "gmq", "ja": "ja", "san": "sa", "akk": "akk", "fa": "fa", "ta": "ta", "it": "it", "fr": "fr", "es": "es", "nl": "nl", "fro": "fro", "de": "de", "egy": "egy", "sux": "sux", "orv": "orv", "xng": "xng", "cop": "cop", "sw": "sw", "qya": "qya", "sjn": "sjn", "pt": "pt"}
 RTL = {"hbo", "arc", "fa"}
-LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "arc": "Biblical Aramaic", "lzh": "Classical Chinese", "runic": "Runic Norse", "ja": "Early modern Japanese", "san": "Vedic Sanskrit", "akk": "Akkadian", "fa": "Classical Persian", "ta": "Old Tamil", "it": "Renaissance Italian", "fr": "Middle French", "es": "Early Modern Spanish", "nl": "Early Modern Dutch", "fro": "Old French", "de": "German", "egy": "Old Egyptian", "sux": "Sumerian", "orv": "Old East Slavic", "xng": "Middle Mongolian", "cop": "Sahidic Coptic", "sw": "Swahili", "qya": "Quenya", "sjn": "Sindarin"}
+LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "arc": "Biblical Aramaic", "lzh": "Classical Chinese", "runic": "Runic Norse", "ja": "Early modern Japanese", "san": "Vedic Sanskrit", "akk": "Akkadian", "fa": "Classical Persian", "ta": "Old Tamil", "it": "Renaissance Italian", "fr": "Middle French", "es": "Early Modern Spanish", "nl": "Early Modern Dutch", "fro": "Old French", "de": "German", "egy": "Old Egyptian", "sux": "Sumerian", "orv": "Old East Slavic", "xng": "Middle Mongolian", "cop": "Sahidic Coptic", "sw": "Swahili", "qya": "Quenya", "sjn": "Sindarin", "pt": "Portuguese"}
 
 
 def _load_yaml_dir(d: Path) -> list[tuple[Path, object]]:
@@ -331,7 +331,7 @@ def short_title(m: dict) -> str:
 
 
 # the index files a language under its plain name where the works span periods (Montaigne and the Berlin Act are both French)
-INDEX_FAMILY = {"fr": "French", "it": "Italian", "es": "Spanish", "nl": "Dutch", "ja": "Japanese"}
+INDEX_FAMILY = {"fr": "French", "it": "Italian", "es": "Spanish", "nl": "Dutch", "ja": "Japanese", "pt": "Portuguese"}
 
 
 def language_index(ms: list[dict], out_dir: Path) -> str:

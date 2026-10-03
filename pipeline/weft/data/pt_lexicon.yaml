@@ -1,0 +1,115 @@
+# Pronunciation lexicon for Weft's Portuguese texts, keyed by the modern spelling of each word (the token's
+# n, else the printed word, lowercased). Hand-written, one entry per word form.
+#
+#   o   the word in a normalized spelling of the 1540s, one letter per sound in the manner of Fernão de
+#       Oliveira (1536) and João de Barros (1540): ç and c before e/i are the dental sibilant, z its voiced
+#       pair, s/ss and single s between vowels the apical pair, x = sh, ch the affricate, j and g before e/i
+#       = zh, lh, nh. The stressed e and o carry their quality (é ó open, ê ô closed); other accents mark
+#       stress where the written rule would not place it; an unmarked stressed e or o is reported by the
+#       module as mid-vowel-unknown. All three schemes read this spelling (pipeline/weft/portuguese.py).
+#
+# Words of Camões, Os Lusíadas I.1-3 (1572). Quality marks follow the standard dictionaries of European
+# Portuguese (Porto Editora; Houaiss for the Brazilian norm, which agrees for these words).
+"as": {o: "as"}
+"armas": {o: "ármas"}
+"e": {o: "e"}
+"os": {o: "os"}
+"barões": {o: "barões"}
+"assinalados": {o: "assinaládos"}
+"que": {o: "que"}
+"da": {o: "da"}
+"ocidental": {o: "oçidentál"}
+"praia": {o: "práia"}
+"lusitana": {o: "lusitâna"}
+"por": {o: "por"}
+"mares": {o: "máres"}
+"nunca": {o: "núnca"}
+"de": {o: "de"}
+"antes": {o: "ântes"}
+"navegados": {o: "navegádos"}
+"passaram": {o: "passáram"}
+"ainda": {o: "aínda"}
+"além": {o: "além"}
+"taprobana": {o: "taprobâna"}
+"em": {o: "em"}
+"perigos": {o: "perígos"}
+"guerras": {o: "guérras"}
+"esforçados": {o: "esforçádos"}
+"mais": {o: "mais"}
+"do": {o: "do"}
+"prometia": {o: "prometía"}
+"a": {o: "a"}
+"força": {o: "fôrça"}
+"humana": {o: "humâna"}
+"entre": {o: "êntre"}
+"gente": {o: "gênte"}
+"remota": {o: "remóta"}
+"edificaram": {o: "edificáram"}
+"novo": {o: "nôvo"}
+"reino": {o: "rêino"}
+"tanto": {o: "tânto"}
+"sublimaram": {o: "sublimáram"}
+"também": {o: "também"}
+"memórias": {o: "memórias"}
+"gloriosas": {o: "gloriósas"}
+"daqueles": {o: "daquêles"}
+"reis": {o: "rêis"}
+"foram": {o: "fôram"}
+"dilatando": {o: "dilatândo"}
+"fé": {o: "fé"}
+"o": {o: "o"}
+"império": {o: "império"}
+"terras": {o: "térras"}
+"viciosas": {o: "viçiósas"}
+"áfrica": {o: "áfrica"}
+"ásia": {o: "ásia"}
+"andaram": {o: "andáram"}
+"devastando": {o: "devastândo"}
+"aqueles": {o: "aquêles"}
+"obras": {o: "óbras"}
+"valerosas": {o: "valerósas"}
+"se": {o: "se"}
+"vão": {o: "vão"}
+"lei": {o: "lêi"}
+"morte": {o: "mórte"}
+"libertando": {o: "libertândo"}
+"cantando": {o: "cantândo"}
+"espalharei": {o: "espalharêi"}
+"toda": {o: "tôda"}
+"parte": {o: "párte"}
+"me": {o: "me"}
+"ajudar": {o: "ajudár"}
+"engenho": {o: "engênho"}
+"arte": {o: "árte"}
+"cessem": {o: "céssem"}
+"sábio": {o: "sábio"}
+"grego": {o: "grêgo"}
+"troiano": {o: "troiâno"}
+"navegações": {o: "navegações"}
+"grandes": {o: "grândes"}
+"fizeram": {o: "fizéram"}
+"cale-se": {o: "cále-se"}
+"alexandro": {o: "alexândro"}
+"trajano": {o: "trajâno"}
+"fama": {o: "fâma"}
+"das": {o: "das"}
+"vitórias": {o: "vitórias"}
+"tiveram": {o: "tivéram"}
+"eu": {o: "êu"}
+"canto": {o: "cânto"}
+"canta": {o: "cânta"}
+"peito": {o: "pêito"}
+"ilustre": {o: "ilústre"}
+"lusitano": {o: "lusitâno"}
+"quem": {o: "quêm"}
+"neptuno": {o: "neptúno"}
+"marte": {o: "márte"}
+"obedeceram": {o: "obedecêram"}
+"cesse": {o: "césse"}
+"tudo": {o: "túdo"}
+"musa": {o: "músa"}
+"antiga": {o: "antíga"}
+"outro": {o: "ôutro"}
+"valor": {o: "valôr"}
+"alto": {o: "álto"}
+"alevanta": {o: "alevânta"}

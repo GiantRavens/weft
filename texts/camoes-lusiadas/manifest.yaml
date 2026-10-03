@@ -1,0 +1,71 @@
+work: camoes-lusiadas
+title: 'Os Lusíadas, Canto I, stanzas 1-3: the proposition'
+short_title: Os Lusíadas
+author: Luís Vaz de Camões (about 1524-1580)
+language: pt
+lang_name: Portuguese of 1572
+prefix: lus
+urn: urn:weft:pt:camoes.lusiadas
+unit: section
+section_noun: stanza
+written:
+  year: 1572
+  display: '1572'
+  label: printed at Lisbon in 1572 by António Gonçalves, in two issues of the same year; composed over the two decades before, in Portugal
+    and in the East
+status: phase-0
+pilot:
+  sections:
+  - '1'
+  - '2'
+  - '3'
+edition:
+  id: ws-grafia-atualizada
+  name: 'Os Lusíadas (grafia atualizada), Canto I, Portuguese Wikisource, revision 509045: the 1572 text in modern spelling'
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain (1572); Wikisource transcription CC BY-SA 4.0; Weft line division CC BY-SA 4.0
+treebank: null
+schemes:
+- lisboa1540
+- europeu
+- brasileiro
+scheme_labels:
+  lisboa1540: 'As first read: Lisbon in Camões''s day, after Oliveira (1536) and Barros (1540) (approximate)'
+sound_confidence: medium
+sources_extra:
+- id: ws-canto1
+  name: Os Lusíadas (grafia atualizada)/I, Portuguese Wikisource, revision 509045
+  file: sources/canto1-ws.txt
+  url: https://pt.wikisource.org/w/index.php?oldid=509045&action=raw
+  sha256: 0b82a5f539aa69bc0d21dfb9ad215f3db3ca58908fa3983aa554b56f6827b969
+  license: public domain text; Wikisource CC BY-SA 4.0
+  license_url: https://pt.wikisource.org/wiki/Os_Lus%C3%ADadas
+translations:
+- id: burton1880
+  translator: Richard Francis Burton
+  year: 1880
+  form: verse, ottava rima stanza for stanza (Os Lusiadas (The Lusiads), vol. 1, London 1880; Project Gutenberg 77660)
+  license: public-domain
+  license_url: https://www.gutenberg.org/ebooks/77660
+  file: sources/burton1880-vol1.txt
+  url: https://www.gutenberg.org/cache/epub/77660/pg77660.txt
+  sha256: 7554f5cebb4f1d4ab224728374fe3f2104145e3110d3c339e3e8d189ab77359a
+- id: mickle1776
+  kind: reference
+  translator: William Julius Mickle
+  year: 1776
+  title: The Lusiad; or, the Discovery of India
+  publisher: Oxford
+  note: public domain (Project Gutenberg 32528) but a free paraphrase in heroic couplets that does not follow the stanzas; cited until
+    it is aligned
+predicted_gaps:
+- 'the edition is the modernized Wikisource text, not the 1572 print: the print''s spelling (Lvsiadas, long s, the Ee/E issues) is not
+  shown. The 1540 reading comes from the lexicon''s normalized spelling, word by word, so it does not depend on the print'
+- the 1540 reading is reconstructed from the grammarians (Oliveira 1536, Barros 1540) and Teyssier; its least certain points are the
+  final unstressed o (read u) and the exact values of the four sibilants, which the KEY marks
+- 'no treebank: lemma and morphology are an automatic parse (spaCy pt_core_news_md 3.8, UD Portuguese conventions) corrected by hand,
+  declared in the overlay; glosses hand-written; draft'
+- 'the decasyllable and its elisions (synalepha between words) are not modelled: each word is sounded alone'
+- Burton's 1880 version keeps the stanza but not the word order; Mickle's 1776 paraphrase is cited, not aligned; Aubertin's literal
+  1878 version (archive.org) is a candidate for a second aligned translation
