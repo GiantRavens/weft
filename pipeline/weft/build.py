@@ -319,6 +319,43 @@ def stanza_ranges(xs: list) -> str:
     return ", ".join(str(a) if a == b else f"{a}–{b}" for a, b in out)
 
 
+def short_title(m: dict) -> str:
+    """The name a list can carry: 'Völuspá (The Seeress's Prophecy)' -> 'Völuspá'; 'Il Principe, chapters 17 and
+    18: ...' -> 'Il Principe'. A manifest's short_title overrides this."""
+    if m.get("short_title"):
+        return str(m["short_title"])
+    t = re.sub(r"\s*\([^)]*\)", "", str(m["title"]))
+    t = t.split(":", 1)[0]
+    t = re.split(r",\s+(?=[a-z0-9])", t, maxsplit=1)[0]
+    return t.strip() or str(m["title"])
+
+
+# the index files a language under its plain name where the works span periods (Montaigne and the Berlin Act are both French)
+INDEX_FAMILY = {"fr": "French", "it": "Italian", "es": "Spanish", "nl": "Dutch", "ja": "Japanese"}
+
+
+def language_index(ms: list[dict], out_dir: Path) -> str:
+    """The library by language: every language that has a built page, alphabetically, with its works
+    in the library's date order. Plain HTML, so the index page stays script-free."""
+    import html as H
+    by: dict[str, list[tuple[str, str]]] = {}
+    for m in ms:
+        page = out_dir / f"{m['work']}.html"
+        if not page.exists():
+            continue
+        name = m.get("lang_name") or LANG_NAMES.get(m["language"], m["language"])
+        # one entry per language family name: 'Latin of the charters (...)' and 'Medieval Latin' both file under Latin
+        family = INDEX_FAMILY.get(m["language"]) or LANG_NAMES.get(m["language"], name)
+        by.setdefault(family, []).append((short_title(m), page.name))
+    if not by:
+        return ""
+    items = "".join(f'<li><b>{H.escape(lang)}</b> ' + " · ".join(f'<a href="{H.escape(href)}">{H.escape(t)}</a>' for t, href in works) + "</li>"
+                    for lang, works in sorted(by.items(), key=lambda kv: kv[0].lower()))
+    n_works = sum(len(v) for v in by.values())
+    return (f'<section class="langs"><h2>By language<span>{len(by)} languages, {n_works} works</span></h2>'
+            f'<ul>{items}</ul></section>')
+
+
 def write_index(repo: Path, out_dir: Path, private: bool = False) -> Path:
     """A plain front door listing every built work in out_dir. A private build lists the
     private works with the public ones, each marked."""
@@ -371,6 +408,7 @@ def write_index(repo: Path, out_dir: Path, private: bool = False) -> Path:
     docs.build_docs(repo, out_dir, art)
     html = INDEX if not private else INDEX.replace("<h1>Interlinear library</h1>", "<h1>Interlinear library</h1><p class=\"pv\">Private build: includes your own texts and licensed material. Do not publish this folder.</p>")
     idx.write_text(html.replace("{{ROWS}}", "\n".join(rows)).replace("{{NAV}}", docs.nav_html("index.html"))
+                        .replace("{{LANGS}}", language_index(library_order(repo, private), out_dir))
                         .replace("{{LOCKUP}}", art.get("weft-lockup", "Weft"))
                         .replace("{{FAVICON}}", art.get("favicon", "")))
     return idx
@@ -406,9 +444,18 @@ li p{margin:6px 0 0;font:.85rem/1.5 Inter,system-ui,sans-serif;color:var(--soft)
 .docnav a{color:var(--accent);text-decoration:none}.docnav a:hover{text-decoration:underline}.docnav span{color:var(--ink)}
 p.pv{font:600 .72rem/1.4 Inter,system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin:4px 0 0}
 li p.w{margin-top:4px;font:italic .95rem/1.4 "Gentium Book Plus",Palatino,serif;color:var(--accent)}
+.langs{margin:1.6rem 0 0;padding:14px 0 6px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.langs h2{font:600 .75rem/1 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 10px;display:flex;gap:12px;align-items:baseline}
+.langs h2 span{letter-spacing:.04em;text-transform:none;font-weight:400;color:var(--soft)}
+.langs ul{columns:2;column-gap:28px;list-style:none;padding:0;margin:0}
+.langs li{font:.82rem/1.5 Inter,system-ui,sans-serif;color:var(--soft);margin:0 0 5px;padding:0;border:0;display:block;break-inside:avoid}
+.langs li b{color:var(--ink);font-weight:600;margin-right:4px}
+.langs li a{color:var(--accent);text-decoration:none}.langs li a:hover{text-decoration:underline}
+@media (max-width:560px){.langs ul{columns:1}}
 </style></head><body><main><div class="lockup" role="img" aria-label="Weft">{{LOCKUP}}</div><h1>Interlinear library</h1>
 <p class="lede">Classic texts ordered by date: the original text, a phonetic guide to pronouncing it in English, a literal word-for-word translation called a 'gloss', and well-known published translations, together in one evolving, community-led interlinear presentation.</p>
 {{NAV}}
+{{LANGS}}
 {{ROWS}}
 </main></body></html>
 """
