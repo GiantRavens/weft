@@ -3,7 +3,7 @@ name = "weft"
 version = "0.1.0"
 description = "Living interlinear editions of classical texts"
 requires-python = ">=3.11"
-dependencies = ["pyyaml>=6"]
+dependencies = ["pyyaml>=6", "latex2mathml>=3.77"]   # latex2mathml: display equations in a weft-edition (Einstein)
 license = "MIT"
 
 [project.optional-dependencies]

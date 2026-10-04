@@ -3,6 +3,26 @@ translation: weft-editorial
 aligned_by: 'hand: one span per passage'
 spans:
 - lines:
+  - ein.herleitung1.1
+  - ein.herleitung1.8
+  text: 'Relying on these foundations I derived there, among other things, the following result (loc. cit. § 8): Let a system of plane light waves, referred to the coordinate system (x, y, z), possess the
+    energy l; let the direction of the ray (the wave normal) make the angle φ with the x-axis of the system. If one introduces a new coordinate system (ξ, η, ζ), in uniform parallel translation relative
+    to the system (x, y, z), whose origin moves with the velocity v along the x-axis, then the said quantity of light, measured in the system (ξ, η, ζ), possesses the energy [equation], where V denotes
+    the speed of light. Of this result we make use in what follows.'
+- lines:
+  - ein.herleitung2.1
+  - ein.herleitung2.24
+  text: Let there now be in the system (x, y, z) a body at rest, whose energy, referred to the system (x, y, z), is E₀. Relative to the system (ξ, η, ζ), moving as above with the velocity v, let the energy
+    of the body be H₀. Let this body send out, in a direction making the angle φ with the x-axis, plane light waves of the energy L/2 (measured relative to (x, y, z)), and at the same time an equal quantity
+    of light in the opposite direction. Meanwhile the body remains at rest with respect to the system (x, y, z). For this process the principle of energy must hold, and (by the principle of relativity)
+    with respect to both coordinate systems. If we call E₁ and H₁ respectively the energy of the body after the emission of light, measured relative to the system (x, y, z) and (ξ, η, ζ) respectively, we
+    obtain, using the relation given above, [two equations]. By subtraction one obtains from these equations [equation]. The two differences of the form H − E that occur in this expression have simple physical
+    meanings. H and E are energy values of the same body, referred to two coordinate systems moving relative to each other, the body being at rest in one of them (the system (x, y, z)). It is therefore
+    clear that the difference H − E can differ from the kinetic energy K of the body with respect to the other system (the system (ξ, η, ζ)) only by an additive constant C, which depends on the choice of
+    the arbitrary additive constants of the energies H and E. We may therefore set [two equations], since C does not change during the emission of light. We thus obtain [equation]. The kinetic energy of
+    the body with respect to (ξ, η, ζ) decreases in consequence of the emission of light, and by an amount independent of the qualities of the body. The difference K₀ − K₁ depends on the velocity, moreover,
+    in the same way as the kinetic energy of the electron (loc. cit. § 10). Neglecting quantities of the fourth and higher orders we may set [equation].
+- lines:
   - ein.intro.1
   - ein.intro.4
   text: 'The results of an electrodynamic investigation I published recently in these Annals lead to a very interesting conclusion, which is to be derived here. I there took as a basis the Maxwell-Hertz

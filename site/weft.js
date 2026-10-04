@@ -140,6 +140,18 @@
     nav.append(card(D.nav.prev, "← Older", "prev"), lib, card(D.nav.next, "Newer →", "next"));
   })();
 
+  /* ---------- MathML from the data tree ({t, a, c}); only known elements and attributes are built */
+  const MML = "http://www.w3.org/1998/Math/MathML";
+  const MML_TAGS = new Set(["math", "mrow", "mi", "mn", "mo", "mfrac", "msup", "msub", "msubsup", "msqrt", "mroot", "mtext", "mspace", "mtable", "mtr", "mtd", "mover", "munder", "munderover", "mstyle", "mpadded", "mphantom", "mfenced"]);
+  const MML_ATTRS = new Set(["display", "mathvariant", "stretchy", "fence", "separator", "lspace", "rspace", "accent", "accentunder", "columnalign", "rowalign", "columnspacing", "rowspacing", "linethickness", "form", "largeop", "movablelimits", "displaystyle", "scriptlevel", "width", "height", "depth", "open", "close"]);
+  function mathEl(node) {
+    if (typeof node === "string") return document.createTextNode(node);
+    const el = document.createElementNS(MML, MML_TAGS.has(node.t) ? node.t : "mrow");
+    for (const [k, v] of Object.entries(node.a || {})) if (MML_ATTRS.has(k)) el.setAttribute(k, String(v));
+    for (const c of node.c || []) el.append(mathEl(c));
+    return el;
+  }
+
   /* ---------- the text */
   const text = $("#text");
   function renderText() {
@@ -149,7 +161,12 @@
       const lnotes = notesByAttach[line.id] || [];
       const gutter = h("div", { class: "lnum" }, lineNo(line.id),
         lnotes.length ? h("button", { class: "lnote", type: "button", title: `Notes on this ${UNIT}`, "aria-label": `Notes on ${UNIT} ${lineNo(line.id)}`, onclick: () => showLine(line) }, "¶") : null);
-      const strip = h("div", { class: "strip", role: "group", "aria-label": `${Unit} ${lineNo(line.id)}` });
+      const strip = h("div", { class: "strip" + (line.equation ? " eq" : ""), role: "group", "aria-label": `${Unit} ${lineNo(line.id)}` });
+      if (line.equation) {
+        // a displayed equation: MathML built from the data (never markup), then its sound and gloss rows
+        const eq = line.equation, esnd = (eq.sound && eq.sound[S.scheme]) || {};
+        strip.append(mathEl(eq.mathml), h("span", { class: "snd", text: esnd.respell || "" }), h("span", { class: "gls", text: eq.gloss || "" }));
+      }
       for (const t of line.tokens) {
         const snd = (t.sound && t.sound[S.scheme]) || {};
         const w = h("button", {

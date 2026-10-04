@@ -316,3 +316,8 @@ body.hide-reading .reading { display: none; }
 .lightbox .cap { font: 0.85rem/1.4 var(--sans); color: #e8e0cf; text-align: center; margin: 10px 0 0; max-width: 90vw; }
 .lightbox .close { position: fixed; top: 10px; right: 14px; font-size: 2rem; line-height: 1; color: #fff; background: none; border: 0; cursor: pointer; }
 @media print { .lightbox { display: none; } }
+
+/* a displayed equation stands as one wide "word": the formula, then its sound and gloss rows */
+.strip.eq { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
+.strip.eq math { font-size: 1.3em; margin: 2px 0 2px 4px; color: var(--ink); }
+.strip.eq .snd, .strip.eq .gls { white-space: normal; max-width: 60ch; margin-left: 4px; }

@@ -2,17 +2,20 @@ run:
   weft: 0.1.0
   sections:
   - intro
+  - herleitung1
+  - herleitung2
   - schluss
 counts:
-  lines: 13
-  tokens: 214
+  lines: 45
+  tokens: 598
 failures: {}
 samples: {}
 failure_rate: {}
 shift_left: []
 predicted_gaps:
-- 'two passages, not the whole: the derivation on pp. 639-641 with its displayed equations is left to a later pilot, when Weft has a way to show an equation as an equation'
+- the whole paper, with its eight displayed equations as equation lines (MathML from the TeX of the Wikisource transcription), each with the words a German physicist says for it and an English reading;
+  whether the page should treat mathematics this way is an open design question
 - 'no treebank covers the text: lemma, morphology and gloss are by hand (UD German-HDT conventions), draft'
-- the formulas are tokens with a spoken reading in n and their sound given outright; whether that is how the page should treat mathematics is an open design question
+- the inline symbols (E₀, H−E, (ξ,η,ζ)) are tokens printed as the paper prints them, with the TeX of the transcription declared as their source reading and the words said for them in n
 - the northern scheme is the module's educated northern German, labelled for 1905; Einstein's own Swabian-coloured speech is not modelled
 - the transcription's Baum for Raum (p. 639) is corrected as declared; the page is proofread once, not validated

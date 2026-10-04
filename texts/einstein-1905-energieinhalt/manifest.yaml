@@ -1,5 +1,5 @@
 work: einstein-1905-energieinhalt
-title: 'Einstein, Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig? (1905): the opening and the conclusion'
+title: 'Einstein, Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig? (1905): the whole paper, with its equations'
 short_title: Einstein, E = mc²
 author: Albert Einstein (1879-1955)
 language: de
@@ -18,11 +18,13 @@ status: phase-0
 pilot:
   sections:
   - intro
+  - herleitung1
+  - herleitung2
   - schluss
 edition:
   id: annalen1905
-  name: 'Annalen der Physik (ser. 4) 18 (Leipzig: Barth, 1905), pp. 639 and 641, as transcribed on German Wikisource (Seite:Einstein-Energieinhalt.djvu/1
-    and 3, proofread); the print''s spelling (daß, in bezug) is kept'
+  name: 'Annalen der Physik (ser. 4) 18 (Leipzig: Barth, 1905), pp. 639-641, as transcribed on German Wikisource (Seite:Einstein-Energieinhalt.djvu/1-3,
+    proofread; the equations in its TeX); the print''s spelling (daß, in bezug) is kept'
   format: weft-edition
   file: edition.yaml
   license: text public domain (Einstein d. 1955; life + 70 from 1 January 2026); Wikisource transcription CC BY-SA 4.0; Weft line division
@@ -72,10 +74,11 @@ translations:
   publisher: Methuen
   note: the standard English translation; public domain in the United States, in copyright elsewhere (Jeffery d. 1957); cited, not printed
 predicted_gaps:
-- 'two passages, not the whole: the derivation on pp. 639-641 with its displayed equations is left to a later pilot, when Weft has a
-  way to show an equation as an equation'
+- the whole paper, with its eight displayed equations as equation lines (MathML from the TeX of the Wikisource transcription), each
+  with the words a German physicist says for it and an English reading; whether the page should treat mathematics this way is an open
+  design question
 - 'no treebank covers the text: lemma, morphology and gloss are by hand (UD German-HDT conventions), draft'
-- the formulas are tokens with a spoken reading in n and their sound given outright; whether that is how the page should treat mathematics
-  is an open design question
+- the inline symbols (E₀, H−E, (ξ,η,ζ)) are tokens printed as the paper prints them, with the TeX of the transcription declared as their
+  source reading and the words said for them in n
 - the northern scheme is the module's educated northern German, labelled for 1905; Einstein's own Swabian-coloured speech is not modelled
 - the transcription's Baum for Raum (p. 639) is corrected as declared; the page is proofread once, not validated

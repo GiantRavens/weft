@@ -8,7 +8,7 @@ tags:
   - german
   - pilot
 created_at: 2026-10-02T19:35:03.37788319-05:00
-updated_at: 2026-10-04T11:09:52.43893204-05:00
+updated_at: 2026-10-04T15:37:48.350385426-05:00
 started_at: 2026-10-04T10:57:26.767278045-05:00
 ---
 
@@ -17,6 +17,7 @@ started_at: 2026-10-04T10:57:26.767278045-05:00
 ## Notes
 
 - 2026-10-04T16:09:52Z: Einstein 1905 Energieinhalt built 2026-10-04: texts/einstein-1905-energieinhalt (opening + conclusion, 214 tokens hand-parsed; formulas as SYM tokens with spoken n + ipa); Perrett-Jeffery cited; de_lexicon +84
+- 2026-10-04T20:37:48Z: 2026-10-04 later: whole paper now, 8 displayed equations as equation lines (MathML from TeX; say/gloss rows); latex2mathml dependency; generic token src for verify
 
 ## Log
 

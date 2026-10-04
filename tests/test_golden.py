@@ -647,3 +647,20 @@ def test_german_fraktur_ocr_normalizer(tmp_path):
     assert "DerVogelfängerbinichja,Stetslustig,heißa!hopsasa!" in src
     assert "wennichdichverstehensoll!" in src and "89" not in src
     assert "Ichfing’fie." in src and "Ichfing’sie." not in src
+
+
+def test_equation_lines_in_einstein():
+    """A displayed equation is a line of its own: its TeX is checked against the source like any line, the page
+    gets a MathML tree (never markup), and the words a reader says for it carry a sound row. The tree holds only
+    MathML element names, so the page's builder can whitelist them."""
+    import json
+    from weft import draft
+    gen = yaml.safe_load((Path(__file__).resolve().parents[1] / "texts" / "einstein-1905-energieinhalt" / "gen" / "sections.yaml").read_text())
+    eqs = [l for l in gen["lines"] if l.get("equation")]
+    assert len(eqs) == 8 and not any(l["tokens"] for l in eqs)
+    e = eqs[-1]["equation"]
+    assert e["tex"].startswith("K_{0}-K_{1}=") and e["mathml"]["t"] == "math" and e["mathml"]["a"]["display"] == "block"
+    def tags(n): return {n["t"]} | set().union(*(tags(c) for c in n.get("c", []) if isinstance(c, dict)))
+    assert tags(e["mathml"]) <= {"math", "mrow", "mi", "mn", "mo", "mfrac", "msup", "msub", "msqrt", "mtext", "mspace", "mstyle", "mpadded"}
+    assert "<" not in json.dumps(e["mathml"]) and e["sound"]["modern"]["respell"]
+    assert draft.mathml_tree(r"\frac{a}{b}")["c"][0]["c"][0]["t"] == "mfrac"

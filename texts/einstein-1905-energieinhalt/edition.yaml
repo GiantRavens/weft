@@ -1,10 +1,12 @@
-# Weft edition of two passages of Einstein's 'Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig?'
-# (Annalen der Physik 18, 1905, pp. 639-641): the opening, which states the principle of relativity, and the conclusion,
-# which states that a body's mass is a measure of its energy content. Text of German Wikisource (Seite:Einstein-
+# Weft edition of Einstein's 'Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig?'
+# (Annalen der Physik 18, 1905, pp. 639-641), the whole paper: the opening, which states the principle of relativity,
+# the derivation with its eight displayed equations, and the conclusion, that a body's mass is a measure of its energy content. Text of German Wikisource (Seite:Einstein-
 # Energieinhalt.djvu/1 and 3), checked verbatim against the pinned page revisions. verify_strip sets aside the page
 # templates, the spaced-type markup round the physicists' names, the footnotes and the <math> tags; the formulas
-# are kept as the print sets them (L/V², L/9.10²⁰), declared as corrections of the transcription's TeX, and the
-# derivation between the two passages (pp. 639-641, with its displayed equations) is left to a later pilot.
+# of the conclusion are kept as the print sets them (L/V², L/9.10²⁰), declared as corrections of the transcription's
+# TeX. A displayed equation is a line of its own ({equation: {tex, say, gloss}}): its TeX, checked against the source,
+# the words a German physicist says for it (sounded in both schemes) and an English reading; the page builds MathML.
+# An inline symbol (E₀, (ξ,η,ζ)) is a token printed as the paper prints it, with the transcription's TeX as src.
 #   t     the word as printed, punctuation attached; a formula is one token (L, L/V²)
 #   n     the modern spelling (daß: dass); for a formula or a number, the words a reader says for it
 #         (L durch V Quadrat), from which the sound is read; ipa gives the reading outright
@@ -187,6 +189,994 @@ sections:
       n: werden
     - t: (Relativitätsprinzip).
       n: Relativitätsprinzip
+- id: herleitung1
+  title: 'The derivation, 1: the energy of light in a moving frame'
+  verify_in: sources/p1.txt
+  lines:
+  - tokens:
+    - t: Gestützt
+      n: Gestützt
+    - t: auf
+      n: auf
+    - t: diese
+      n: diese
+    - t: Grundlagen
+      n: Grundlagen
+    - t: leitete
+      n: leitete
+    - t: ich
+      n: ich
+    - t: unter
+      n: unter
+    - t: anderem
+      n: anderem
+    - t: das
+      n: das
+    - t: nachfolgende
+      n: nachfolgende
+    - t: Resultat
+      n: Resultat
+    - t: ab
+      n: ab
+    - t: (l.
+      n: loco
+      ipa:
+        northern: ˈloː.ko
+        modern: ˈloː.ko
+    - t: c.
+      n: citato
+      ipa:
+        northern: tsi.ˈtaː.to
+        modern: tsi.ˈtaː.to
+    - t: §
+      n: Paragraph
+      ipa:
+        northern: pa.ra.ˈɡraːf
+        modern: pa.ra.ˈɡʁaːf
+    - t: '8):'
+      n: acht
+      ipa:
+        northern: axt
+        modern: axt
+  - tokens:
+    - t: Ein
+      n: Ein
+    - t: System
+      n: System
+    - t: von
+      n: von
+    - t: ebenen
+      n: ebenen
+    - t: Lichtwellen
+      n: Lichtwellen
+    - t: besitze,
+      n: besitze
+    - t: auf
+      n: auf
+    - t: das
+      n: das
+    - t: Koordinatensystem
+      n: Koordinatensystem
+    - t: (x,y,z)
+      n: x y z
+      ipa:
+        northern: ɪks ˈʏp.si.lɔn tsɛt
+        modern: ɪks ˈʏp.si.lɔn tsɛt
+    - t: bezogen,
+      n: bezogen
+    - t: die
+      n: die
+    - t: Energie
+      n: Energie
+    - t: l;
+      n: klein El
+      ipa:
+        northern: klaɪn ɛl
+        modern: klaɪn ɛl
+  - tokens:
+    - t: die
+      n: die
+    - t: Strahlrichtung
+      n: Strahlrichtung
+    - t: (Wellennormale)
+      n: Wellennormale
+    - t: bilde
+      n: bilde
+    - t: den
+      n: den
+    - t: Winkel
+      n: Winkel
+    - t: φ
+      n: Phi
+      ipa:
+        northern: fiː
+        modern: fiː
+      src: \varphi
+    - t: mit
+      n: mit
+    - t: der
+      n: der
+    - t: x-Achse
+      n: x-Achse
+    - t: des
+      n: des
+    - t: Systems.
+      n: Systems
+  - tokens:
+    - t: Führt
+      n: Führt
+    - t: man
+      n: man
+    - t: ein
+      n: ein
+    - t: neues,
+      n: neues
+    - t: gegen
+      n: gegen
+    - t: das
+      n: das
+    - t: System
+      n: System
+    - t: (x,y,z)
+      n: x y z
+      ipa:
+        northern: ɪks ˈʏp.si.lɔn tsɛt
+        modern: ɪks ˈʏp.si.lɔn tsɛt
+    - t: in
+      n: in
+    - t: gleichförmiger
+      n: gleichförmiger
+    - t: Paralleltranslation
+      n: Paralleltranslation
+    - t: begriffenes
+      n: begriffenes
+    - t: Koordinatensystem
+      n: Koordinatensystem
+    - t: (ξ,η,ζ)
+      n: Xi Eta Zeta
+      ipa:
+        northern: ksiː ˈeː.ta ˈtseː.ta
+        modern: ksiː ˈeː.ta ˈtseː.ta
+      src: (\xi,\eta,\zeta )
+    - t: ein,
+      n: ein
+    - t: dessen
+      n: dessen
+    - t: Ursprung
+      n: Ursprung
+    - t: sich
+      n: sich
+    - t: mit
+      n: mit
+    - t: der
+      n: der
+    - t: Geschwindigkeit
+      n: Geschwindigkeit
+    - t: v
+      n: klein Fau
+      ipa:
+        northern: klaɪn faʊ
+        modern: klaɪn faʊ
+    - t: längs
+      n: längs
+    - t: der
+      n: der
+    - t: x-Achse
+      n: x-Achse
+    - t: bewegt,
+      n: bewegt
+  - tokens:
+    - t: so
+      n: so
+    - t: besitzt
+      n: besitzt
+    - t: die
+      n: die
+    - t: genannte
+      n: genannte
+    - t: Lichtmenge —
+      n: Lichtmenge —
+    - t: im
+      n: im
+    - t: System
+      n: System
+    - t: (ξ,η,ζ)
+      n: Xi Eta Zeta
+      ipa:
+        northern: ksiː ˈeː.ta ˈtseː.ta
+        modern: ksiː ˈeː.ta ˈtseː.ta
+      src: (\xi,\eta,\zeta )
+    - t: gemessen —
+      n: gemessen —
+    - t: die
+      n: die
+    - t: 'Energie:'
+      n: Energie
+  - equation:
+      tex: l^{*}=l\frac{1-\frac{v}{V}\cos\varphi}{\sqrt{1-\left(\frac{v}{V}\right)^{2}}},
+      say: El Stern gleich El mal eins minus klein Fau durch groß Fau Kosinus Phi geteilt durch Wurzel aus eins minus klein
+        Fau durch groß Fau zum Quadrat
+      gloss: l-star equals l times one minus v-over-V cosine phi, divided by the square root of one minus v-over-V squared
+  - tokens:
+    - t: wobei
+      n: wobei
+    - t: V
+      n: groß Fau
+      ipa:
+        northern: ɡroːs faʊ
+        modern: ɡroːs faʊ
+    - t: die
+      n: die
+    - t: Lichtgeschwindigkeit
+      n: Lichtgeschwindigkeit
+    - t: bedeutet.
+      n: bedeutet
+  - tokens:
+    - t: Von
+      n: Von
+    - t: diesem
+      n: diesem
+    - t: Resultat
+      n: Resultat
+    - t: machen
+      n: machen
+    - t: wir
+      n: wir
+    - t: im
+      n: im
+    - t: folgenden
+      n: folgenden
+    - t: Gebrauch.
+      n: Gebrauch
+- id: herleitung2
+  title: 'The derivation, 2: a body that emits light in two directions'
+  verify_in:
+  - sources/p2.txt
+  - sources/p3.txt
+  lines:
+  - tokens:
+    - t: Es
+      n: Es
+    - t: befinde
+      n: befinde
+    - t: sich
+      n: sich
+    - t: nun
+      n: nun
+    - t: im
+      n: im
+    - t: System
+      n: System
+    - t: (x,y,z)
+      n: x y z
+      ipa:
+        northern: ɪks ˈʏp.si.lɔn tsɛt
+        modern: ɪks ˈʏp.si.lɔn tsɛt
+    - t: ein
+      n: ein
+    - t: ruhender
+      n: ruhender
+    - t: Körper,
+      n: Körper
+    - t: dessen
+      n: dessen
+    - t: Energie —
+      n: Energie —
+    - t: auf
+      n: auf
+    - t: das
+      n: das
+    - t: System
+      n: System
+    - t: (x,y,z)
+      n: x y z
+      ipa:
+        northern: ɪks ˈʏp.si.lɔn tsɛt
+        modern: ɪks ˈʏp.si.lɔn tsɛt
+    - t: bezogen —
+      n: bezogen —
+    - t: E₀
+      n: E null
+      ipa:
+        northern: eː nʊl
+        modern: eː nʊl
+      src: E_{0}
+    - t: sei.
+      n: sei
+  - tokens:
+    - t: Relativ
+      n: Relativ
+    - t: zu
+      n: zu
+    - t: dem
+      n: dem
+    - t: wie
+      n: wie
+    - t: oben
+      n: oben
+    - t: mit
+      n: mit
+    - t: der
+      n: der
+    - t: Geschwindigkeit
+      n: Geschwindigkeit
+    - t: v
+      n: klein Fau
+      ipa:
+        northern: klaɪn faʊ
+        modern: klaɪn faʊ
+    - t: bewegten
+      n: bewegten
+    - t: System
+      n: System
+    - t: (ξ,η,ζ)
+      n: Xi Eta Zeta
+      ipa:
+        northern: ksiː ˈeː.ta ˈtseː.ta
+        modern: ksiː ˈeː.ta ˈtseː.ta
+      src: (\xi,\eta,\zeta )
+    - t: sei
+      n: sei
+    - t: die
+      n: die
+    - t: Energie
+      n: Energie
+    - t: des
+      n: des
+    - t: Körpers
+      n: Körpers
+    - t: H₀.
+      n: Ha null
+      ipa:
+        northern: haː nʊl
+        modern: haː nʊl
+      src: H_{0}.
+  - tokens:
+    - t: Dieser
+      n: Dieser
+    - t: Körper
+      n: Körper
+    - t: sende
+      n: sende
+    - t: in
+      n: in
+    - t: einer
+      n: einer
+    - t: mit
+      n: mit
+    - t: der
+      n: der
+    - t: x-Achse
+      n: x-Achse
+    - t: den
+      n: den
+    - t: Winkel
+      n: Winkel
+    - t: φ
+      n: Phi
+      ipa:
+        northern: fiː
+        modern: fiː
+      src: \varphi
+    - t: bildenden
+      n: bildenden
+    - t: Richtung
+      n: Richtung
+    - t: ebene
+      n: ebene
+    - t: Lichtwellen
+      n: Lichtwellen
+    - t: von
+      n: von
+    - t: der
+      n: der
+    - t: Energie
+      n: Energie
+    - t: L/2
+      n: El halbe
+      ipa:
+        northern: ɛl ˈhal.bə
+        modern: ɛl ˈhal.bə
+    - t: (relativ
+      n: relativ
+    - t: zu
+      n: zu
+    - t: (x,y,z)
+      n: x y z
+      ipa:
+        northern: ɪks ˈʏp.si.lɔn tsɛt
+        modern: ɪks ˈʏp.si.lɔn tsɛt
+    - t: gemessen)
+      n: gemessen
+    - t: und
+      n: und
+    - t: gleichzeitig
+      n: gleichzeitig
+    - t: eine
+      n: eine
+    - t: gleich
+      n: gleich
+    - t: große
+      n: große
+    - t: Lichtmenge
+      n: Lichtmenge
+    - t: nach
+      n: nach
+    - t: der
+      n: der
+    - t: entgegengesetzten
+      n: entgegengesetzten
+    - t: Richtung.
+      n: Richtung
+  - tokens:
+    - t: Hierbei
+      n: Hierbei
+    - t: bleibt
+      n: bleibt
+    - t: der
+      n: der
+    - t: Körper
+      n: Körper
+    - t: in
+      n: in
+    - t: Ruhe
+      n: Ruhe
+    - t: in
+      n: in
+    - t: bezug
+      n: Bezug
+    - t: auf
+      n: auf
+    - t: das
+      n: das
+    - t: System
+      n: System
+    - t: (x,y,z).
+      n: x y z
+      ipa:
+        northern: ɪks ˈʏp.si.lɔn tsɛt
+        modern: ɪks ˈʏp.si.lɔn tsɛt
+  - tokens:
+    - t: Für
+      n: Für
+    - t: diesen
+      n: diesen
+    - t: Vorgang
+      n: Vorgang
+    - t: muß
+      n: muss
+    - t: das
+      n: das
+    - t: Energieprinzip
+      n: Energieprinzip
+    - t: gelten
+      n: gelten
+    - t: und
+      n: und
+    - t: zwar
+      n: zwar
+    - t: (nach
+      n: nach
+    - t: dem
+      n: dem
+    - t: Prinzip
+      n: Prinzip
+    - t: der
+      n: der
+    - t: Relativität)
+      n: Relativität
+    - t: in
+      n: in
+    - t: bezug
+      n: Bezug
+    - t: auf
+      n: auf
+    - t: beide
+      n: beide
+    - t: Koordinatensysteme.
+      n: Koordinatensysteme
+  - tokens:
+    - t: Nennen
+      n: Nennen
+    - t: wir
+      n: wir
+    - t: E₁
+      n: E eins
+      ipa:
+        northern: eː aɪns
+        modern: eː aɪns
+      src: E_{1}
+    - t: bez.
+      n: bez
+    - t: H₁
+      n: Ha eins
+      ipa:
+        northern: haː aɪns
+        modern: haː aɪns
+      src: H_{1}
+    - t: die
+      n: die
+    - t: Energie
+      n: Energie
+    - t: des
+      n: des
+    - t: Körpers
+      n: Körpers
+    - t: nach
+      n: nach
+    - t: der
+      n: der
+    - t: Lichtaussendung
+      n: Lichtaussendung
+    - t: relativ
+      n: relativ
+    - t: zum
+      n: zum
+    - t: System
+      n: System
+    - t: (x,y,z)
+      n: x y z
+      ipa:
+        northern: ɪks ˈʏp.si.lɔn tsɛt
+        modern: ɪks ˈʏp.si.lɔn tsɛt
+    - t: bez.
+      n: bez
+    - t: (ξ,η,ζ)
+      n: Xi Eta Zeta
+      ipa:
+        northern: ksiː ˈeː.ta ˈtseː.ta
+        modern: ksiː ˈeː.ta ˈtseː.ta
+      src: (\xi,\eta,\zeta )
+    - t: gemessen,
+      n: gemessen
+    - t: so
+      n: so
+    - t: erhalten
+      n: erhalten
+    - t: wir
+      n: wir
+    - t: mit
+      n: mit
+    - t: Benutzung
+      n: Benutzung
+    - t: der
+      n: der
+    - t: oben
+      n: oben
+    - t: angegebenen
+      n: angegebenen
+    - t: 'Relation:'
+      n: Relation
+  - equation:
+      tex: E_{0}=E_{1}+\left[\frac{L}{2}+\frac{L}{2}\right],
+      say: E null gleich E eins plus El halbe plus El halbe
+      gloss: E-zero equals E-one plus L-over-two plus L-over-two
+  - equation:
+      tex: H_{0}=H_{1}+\left[\frac{L}{2}\frac{1-\frac{v}{V}\cos\varphi}{\sqrt{1-\left(\frac{v}{V}\right)^{2}}}+\frac{L}{2}\frac{1+\frac{v}{V}\cos\varphi}{\sqrt{1-\left(\frac{v}{V}\right)^{2}}}\right]=H_{1}+\frac{L}{\sqrt{1-\left(\frac{v}{V}\right)^{2}}}
+      say: Ha null gleich Ha eins plus El halbe mal eins minus klein Fau durch groß Fau Kosinus Phi geteilt durch Wurzel aus
+        eins minus klein Fau durch groß Fau zum Quadrat plus El halbe mal eins plus klein Fau durch groß Fau Kosinus Phi geteilt
+        durch Wurzel aus eins minus klein Fau durch groß Fau zum Quadrat gleich Ha eins plus El durch Wurzel aus eins minus
+        klein Fau durch groß Fau zum Quadrat
+      gloss: H-zero equals H-one plus L-over-two times one minus v-over-V cosine phi over the square root of one minus v-over-V
+        squared, plus L-over-two times one plus v-over-V cosine phi over the same root, which equals H-one plus L over the
+        square root of one minus v-over-V squared
+  - tokens:
+    - t: Durch
+      n: Durch
+    - t: Subtraktion
+      n: Subtraktion
+    - t: erhält
+      n: erhält
+    - t: man
+      n: man
+    - t: aus
+      n: aus
+    - t: diesen
+      n: diesen
+    - t: 'Gleichungen:'
+      n: Gleichungen
+  - equation:
+      tex: \left(H_{0}+E_{0}\right)-\left(H_{1}+E_{1}\right)=L\left\{ \frac{1}{\sqrt{1-\left(\frac{v}{V}\right)^{2}}}-1\right\}
+        .
+      say: Ha null plus E null minus Ha eins plus E eins gleich El mal eins durch Wurzel aus eins minus klein Fau durch groß
+        Fau zum Quadrat minus eins
+      gloss: H-zero plus E-zero, minus H-one plus E-one, equals L times one over the square root of one minus v-over-V squared,
+        minus one
+  - tokens:
+    - t: Die
+      n: Die
+    - t: beiden
+      n: beiden
+    - t: in
+      n: in
+    - t: diesem
+      n: diesem
+    - t: Ausdruck
+      n: Ausdruck
+    - t: auftretenden
+      n: auftretenden
+    - t: Differenzen
+      n: Differenzen
+    - t: von
+      n: von
+    - t: der
+      n: der
+    - t: Form
+      n: Form
+    - t: H−E
+      n: Ha minus E
+      ipa:
+        northern: haː ˈmiː.nʊs eː
+        modern: haː ˈmiː.nʊs eː
+      src: H-E
+    - t: haben
+      n: haben
+    - t: einfache
+      n: einfache
+    - t: physikalische
+      n: physikalische
+    - t: Bedeutungen.
+      n: Bedeutungen
+  - tokens:
+    - t: H
+      n: Ha
+      ipa:
+        northern: haː
+        modern: haː
+    - t: und
+      n: und
+    - t: E
+      n: E
+      ipa:
+        northern: eː
+        modern: eː
+    - t: sind
+      n: sind
+    - t: Energiewerte
+      n: Energiewerte
+    - t: desselben
+      n: desselben
+    - t: Körpers,
+      n: Körpers
+    - t: bezogen
+      n: bezogen
+    - t: auf
+      n: auf
+    - t: zwei
+      n: zwei
+    - t: relativ
+      n: relativ
+    - t: zueinander
+      n: zueinander
+    - t: bewegte
+      n: bewegte
+    - t: Koordinatensysteme,
+      n: Koordinatensysteme
+    - t: wobei
+      n: wobei
+    - t: der
+      n: der
+    - t: Körper
+      n: Körper
+    - t: in
+      n: in
+    - t: dem
+      n: dem
+    - t: einen
+      n: einen
+    - t: System
+      n: System
+    - t: (System
+      n: System
+    - t: (x,y,z))
+      n: x y z
+      ipa:
+        northern: ɪks ˈʏp.si.lɔn tsɛt
+        modern: ɪks ˈʏp.si.lɔn tsɛt
+    - t: ruht.
+      n: ruht
+  - tokens:
+    - t: Es
+      n: Es
+    - t: ist
+      n: ist
+    - t: also
+      n: also
+    - t: klar,
+      n: klar
+    - t: daß
+      n: dass
+    - t: die
+      n: die
+    - t: Differenz
+      n: Differenz
+    - t: H−E
+      n: Ha minus E
+      ipa:
+        northern: haː ˈmiː.nʊs eː
+        modern: haː ˈmiː.nʊs eː
+      src: H-E
+    - t: sich
+      n: sich
+    - t: von
+      n: von
+    - t: der
+      n: der
+    - t: kinetischen
+      n: kinetischen
+    - t: Energie
+      n: Energie
+    - t: K
+      n: Ka
+      ipa:
+        northern: kaː
+        modern: kaː
+    - t: des
+      n: des
+    - t: Körpers
+      n: Körpers
+    - t: in
+      n: in
+    - t: bezug
+      n: Bezug
+    - t: auf
+      n: auf
+    - t: das
+      n: das
+    - t: andere
+      n: andere
+    - t: System
+      n: System
+    - t: (System
+      n: System
+    - t: (ξ,η,ζ))
+      n: Xi Eta Zeta
+      ipa:
+        northern: ksiː ˈeː.ta ˈtseː.ta
+        modern: ksiː ˈeː.ta ˈtseː.ta
+      src: (\xi,\eta,\zeta ))
+    - t: nur
+      n: nur
+    - t: durch
+      n: durch
+    - t: eine
+      n: eine
+    - t: additive
+      n: additive
+    - t: Konstante
+      n: Konstante
+    - t: C
+      n: Tse
+      ipa:
+        northern: tseː
+        modern: tseː
+    - t: unterscheiden
+      n: unterscheiden
+    - t: kann,
+      n: kann
+  - tokens:
+    - t: welche
+      n: welche
+    - t: von
+      n: von
+    - t: der
+      n: der
+    - t: Wahl
+      n: Wahl
+    - t: der
+      n: der
+    - t: willkürlichen
+      n: willkürlichen
+    - t: additiven
+      n: additiven
+    - t: Konstanten
+      n: Konstanten
+    - t: der
+      n: der
+    - t: Energien
+      n: Energien
+    - t: H
+      n: Ha
+      ipa:
+        northern: haː
+        modern: haː
+    - t: und
+      n: und
+    - t: E
+      n: E
+      ipa:
+        northern: eː
+        modern: eː
+    - t: abhängt.
+      n: abhängt
+  - tokens:
+    - t: Wir
+      n: Wir
+    - t: können
+      n: können
+    - t: also
+      n: also
+    - t: 'setzen:'
+      n: setzen
+  - equation:
+      tex: H_{0}-E_{0}=K_{0}+C,
+      say: Ha null minus E null gleich Ka null plus Tse
+      gloss: H-zero minus E-zero equals K-zero plus C
+  - equation:
+      tex: H_{1}-E_{1}=K_{1}+C,
+      say: Ha eins minus E eins gleich Ka eins plus Tse
+      gloss: H-one minus E-one equals K-one plus C
+  - tokens:
+    - t: da
+      n: da
+    - t: C
+      n: Tse
+      ipa:
+        northern: tseː
+        modern: tseː
+    - t: sich
+      n: sich
+    - t: während
+      n: während
+    - t: der
+      n: der
+    - t: Lichtaussendung
+      n: Lichtaussendung
+    - t: nicht
+      n: nicht
+    - t: ändert.
+      n: ändert
+  - tokens:
+    - t: Wir
+      n: Wir
+    - t: erhalten
+      n: erhalten
+    - t: 'also:'
+      n: also
+  - equation:
+      tex: K_{0}-K_{1}=L\left\{ \frac{1}{\sqrt{1-\left(\frac{v}{V}\right)^{2}}}-1\right\} .
+      say: Ka null minus Ka eins gleich El mal eins durch Wurzel aus eins minus klein Fau durch groß Fau zum Quadrat minus
+        eins
+      gloss: K-zero minus K-one equals L times one over the square root of one minus v-over-V squared, minus one
+  - tokens:
+    - t: Die
+      n: Die
+    - t: kinetische
+      n: kinetische
+    - t: Energie
+      n: Energie
+    - t: des
+      n: des
+    - t: Körpers
+      n: Körpers
+    - t: in
+      n: in
+    - t: bezug
+      n: Bezug
+    - t: auf
+      n: auf
+    - t: (ξ,η,ζ)
+      n: Xi Eta Zeta
+      ipa:
+        northern: ksiː ˈeː.ta ˈtseː.ta
+        modern: ksiː ˈeː.ta ˈtseː.ta
+      src: (\xi,\eta,\zeta )
+    - t: nimmt
+      n: nimmt
+    - t: infolge
+      n: infolge
+    - t: der
+      n: der
+    - t: Lichtaussendung
+      n: Lichtaussendung
+    - t: ab,
+      n: ab
+    - t: und
+      n: und
+    - t: zwar
+      n: zwar
+    - t: um
+      n: um
+    - t: einen
+      n: einen
+    - t: von
+      n: von
+    - t: den
+      n: den
+    - t: Qualitäten
+      n: Qualitäten
+    - t: des
+      n: des
+    - t: Körpers
+      n: Körpers
+    - t: unabhängigen
+      n: unabhängigen
+    - t: Betrag,
+      n: Betrag
+  - tokens:
+    - t: Die
+      n: Die
+    - t: Differenz
+      n: Differenz
+    - t: K₀−K₁
+      n: Ka null minus Ka eins
+      ipa:
+        northern: kaː nʊl ˈmiː.nʊs kaː aɪns
+        modern: kaː nʊl ˈmiː.nʊs kaː aɪns
+      src: K_{0}-K_{1}
+    - t: hängt
+      n: hängt
+    - t: ferner
+      n: ferner
+    - t: von
+      n: von
+    - t: der
+      n: der
+    - t: Geschwindigkeit
+      n: Geschwindigkeit
+    - t: ebenso
+      n: ebenso
+    - t: ab
+      n: ab
+    - t: wie
+      n: wie
+    - t: die
+      n: die
+    - t: kinetische
+      n: kinetische
+    - t: Energie
+      n: Energie
+    - t: des
+      n: des
+    - t: Elektrons
+      n: Elektrons
+    - t: (l.
+      n: loco
+      ipa:
+        northern: ˈloː.ko
+        modern: ˈloː.ko
+    - t: c.
+      n: citato
+      ipa:
+        northern: tsi.ˈtaː.to
+        modern: tsi.ˈtaː.to
+    - t: §
+      n: Paragraph
+      ipa:
+        northern: pa.ra.ˈɡraːf
+        modern: pa.ra.ˈɡʁaːf
+    - t: 10).
+      n: zehn
+      ipa:
+        northern: tseːn
+        modern: tseːn
+  - tokens:
+    - t: Unter
+      n: Unter
+    - t: Vernachlässigung
+      n: Vernachlässigung
+    - t: von
+      n: von
+    - t: Größen
+      n: Größen
+    - t: vierter
+      n: vierter
+    - t: und
+      n: und
+    - t: höherer
+      n: höherer
+    - t: Ordnung
+      n: Ordnung
+    - t: können
+      n: können
+    - t: wir
+      n: wir
+    - t: 'setzen:'
+      n: setzen
+  - equation:
+      tex: K_{0}-K_{1}=\frac{L}{V^{2}}\frac{v^{2}}{2}.
+      say: Ka null minus Ka eins gleich El durch groß Fau Quadrat mal klein Fau Quadrat halbe
+      gloss: K-zero minus K-one equals L over V squared times v squared over two
 - id: schluss
   title: 'The conclusion: mass and energy'
   verify_in: sources/p3.txt

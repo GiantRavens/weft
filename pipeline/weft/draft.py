@@ -82,6 +82,51 @@ def verse_lines(path: Path, start_after: str, first: int, last: int) -> dict[int
     return {k: v for k, v in out.items() if first <= k <= last}
 
 
+def mathml_tree(tex: str) -> dict:
+    """TeX -> MathML -> a plain tree {t: tag, a: {attr: value}, c: [children]} the page builds into
+    elements with createElementNS; no markup string reaches the page."""
+    import xml.etree.ElementTree as ET
+    import latex2mathml.converter as l2m
+    root = ET.fromstring(l2m.convert(tex))
+
+    def node(el):
+        tag = el.tag.split("}")[-1]
+        rec: dict = {"t": tag}
+        attrs = {k.split("}")[-1]: v for k, v in el.attrib.items() if not k.startswith("xmlns")}
+        if attrs:
+            rec["a"] = attrs
+        kids: list = []
+        if el.text and el.text.strip():
+            kids.append(el.text.strip())
+        for ch in el:
+            kids.append(node(ch))
+            if ch.tail and ch.tail.strip():
+                kids.append(ch.tail.strip())
+        if kids:
+            rec["c"] = kids
+        return rec
+    rec = node(root)
+    rec.setdefault("a", {})["display"] = "block"
+    return rec
+
+
+def equation_record(eq: dict, phon, schemes: list[str], quantities) -> dict:
+    """The page record of a displayed equation: its TeX, the MathML tree, the spoken words (say) with
+    their sound in each scheme, and the English reading (gloss)."""
+    rec = {"tex": eq["tex"], "mathml": mathml_tree(eq["tex"]), "say": eq.get("say", ""), "gloss": eq.get("gloss", "")}
+    if eq.get("say"):
+        snd = {}
+        for scheme in schemes:
+            parts = []
+            for w in eq["say"].split():
+                if hasattr(phon, "token_fields"):
+                    phon.token_fields(w, {"n": w}, {})
+                parts.append(phon.phonemize(w, scheme, quantities).get("respell") or "")
+            snd[scheme] = {"respell": " ".join(parts)}
+        rec["sound"] = snd
+    return rec
+
+
 def run(work_dir: Path, book: int | None = None, first: int | None = None, last: int | None = None) -> dict:
     m = load_manifest(work_dir)
     pilot = m.get("pilot", {})
@@ -151,11 +196,14 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             # word's vowel); p: a danda, set off by a space as the source prints it
             out = ""
             for k, t in enumerate(toks):
-                out += t["t"] + (" " + t["p"] if t.get("p") else "")
+                # src: the source's spelling of this token where the edition prints it otherwise (TeX for a symbol)
+                out += (t.get("src") or t["t"]) + (" " + t["p"] if t.get("p") else "")
                 if k + 1 < len(toks) and not t.get("glue"):
                     out += joiner
             return out
-        units = [(str(g["id"]), i, ln if isinstance(ln, str) else token_line(ln["tokens"]))
+        # a line may be a displayed equation ({equation: {tex, say, gloss}}): its text, for the verbatim
+        # check and the page, is its TeX, which the source carries inside <math> tags
+        units = [(str(g["id"]), i, ln if isinstance(ln, str) else ln["equation"]["tex"] if "equation" in ln else token_line(ln["tokens"]))
                  for g in glist for i, ln in enumerate(g["lines"], start=1)]
         # Weft's edition must reproduce its cited source verbatim, line by line; a section may
         # name its own source (verify_in), otherwise the edition-wide one applies
@@ -290,9 +338,11 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             merged.append(t)
         raw = merged
         surfaces, puncts, leads = [], [], []
+        equation = None
         if token_edition:
             g = groups[book]
-            etoks = g["lines"][n - 1]["tokens"]
+            equation = g["lines"][n - 1].get("equation")
+            etoks = g["lines"][n - 1].get("tokens") or []
             surfaces = [t["t"] for t in etoks]
             puncts, leads = [t.get("p") for t in etoks], [None] * len(surfaces)
         if ed_fmt == "oshb":
@@ -469,6 +519,10 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             "text": text,
             "tokens": toks,
         }
+        if equation:
+            # a displayed equation: MathML from its TeX for the page, and the words a reader says for it
+            # (say) sounded in each scheme, so the equation has a sound row and a gloss row like a word
+            line_rec["equation"] = equation_record(equation, phon, m["schemes"], quantities)
         if lang == "ja" and toks:
             # Japanese verse counts morae; the first scheme is the as-first-spoken reading
             line_rec["metre"] = f"{sum(t.get('morae', 0) for t in toks)} morae"
