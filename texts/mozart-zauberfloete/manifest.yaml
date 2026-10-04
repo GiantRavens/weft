@@ -1,0 +1,78 @@
+work: mozart-zauberfloete
+title: 'Schikaneder and Mozart, Die Zauberflöte (1791): Der Vogelfänger, Dies Bildniß, Der Hölle Rache, In diesen heil''gen Hallen,
+  Ein Mädchen oder Weibchen'
+short_title: Die Zauberflöte
+author: Emanuel Schikaneder (1751-1812), librettist, for Wolfgang Amadeus Mozart (1756-1791)
+language: de
+lang_name: German of the Vienna stage, 1791
+prefix: zf
+urn: urn:weft:de:schikaneder.zauberfloete.1791
+unit: section
+section_noun: number
+written:
+  year: 1791
+  display: '1791'
+  label: libretto written in Vienna in 1791 for Schikaneder's Theater auf der Wieden; first sung there on 30 September 1791, Mozart
+    conducting, nine weeks before his death
+status: phase-0
+pilot:
+  sections:
+  - vogelfaenger
+  - bildnis
+  - hoelle
+  - hallen
+  - maedchen
+edition:
+  id: alberti1791
+  name: 'Die Zauberflöte. Eine große Oper in zwey Aufzügen (Vienna: Ignaz Alberti, 1791), the first edition of the libretto, Bayerische
+    Staatsbibliothek copy, read in the OCR text of the scan on the Internet Archive (00074489bsb); the 1791 spelling kept, the OCR''s
+    misreadings declared in edition.yaml'
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain (Schikaneder d. 1812); scan and OCR Bayerische Staatsbibliothek, public domain; Weft line division CC
+    BY-SA 4.0
+treebank: null
+schemes:
+- northern
+- modern
+scheme_labels:
+  northern: Educated German of the 1790s, the reading norm the stage was taught; Viennese speech not modelled (approximate)
+  modern: Modern Standard German
+sound_confidence: medium
+sources_extra:
+- id: ia-00074489bsb
+  name: 'Die Zauberflöte (Vienna: Alberti, 1791), OCR text of the BSB scan, Internet Archive 00074489bsb'
+  file: sources/libretto-1791-ocr.txt
+  url: https://archive.org/download/00074489bsb/00074489bsb_djvu.txt
+  sha256: 2aca2441e17e7dd20abd626d194e0dbf5aef9b1ce3d14cc1cf467e734a21ce8b
+  license: 'public domain (scan: Bayerische Staatsbibliothek, Munich)'
+  license_url: https://archive.org/details/00074489bsb
+translations:
+- id: weft-editorial
+  kind: editorial
+  translator: Weft editorial translation, draft
+  year: 2026
+  form: prose, number by number, close to the German
+  license: CC BY-SA 4.0
+- id: macfarren
+  kind: reference
+  translator: Natalia Macfarren
+  year: 1870
+  title: 'Il flauto magico (Die Zauberflöte), vocal score with English version (London: Novello)'
+  publisher: Novello
+  note: the Victorian singing version (Macfarren d. 1916), fitted to the music; cited, not printed
+- id: dent1911
+  kind: reference
+  translator: Edward J. Dent
+  year: 1911
+  title: The Magic Flute, English version (Cambridge, 1911; revised Oxford University Press)
+  publisher: Oxford University Press
+  note: the standard English singing version, in copyright; cited, not printed
+predicted_gaps:
+- five numbers, not the libretto; the Pamina-Papageno duet Bei Männern, the Three Boys and the finales are a later pilot
+- 'the source is the OCR of a Fraktur print, not a transcription: every line is checked against it with the misreadings declared in
+  src; the first stanza of Der Vogelfänger is unreadable in the OCR and is omitted; a check against the scan''s page images is wanted'
+- 'no treebank covers the libretto: lemma, morphology and gloss are by hand (UD German-HDT conventions), draft'
+- the northern scheme is the module's educated reading norm; the Viennese German the singers spoke is not modelled, and the sung vowels
+  not at all
+- 'the singing versions are cited, not printed: Macfarren by life + 70, Dent in copyright'

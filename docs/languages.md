@@ -108,6 +108,7 @@ the page shows no invitation.
 | German | `german` | Kant, Nietzsche | northern (first), modern | not set |
 | | | Marx and Engels, Manifest (1848) | northern (first), modern | medium |
 | | | Einstein, inertia and energy content (1905) | northern (first), modern | medium |
+| | | Schikaneder, Die Zauberflöte (1791) | northern (first), modern | medium |
 | | | Luther's Bible | ecg1545 (first), modern | not set |
 | Swahili | `swahili` | Steere, The Kites and the Crows | z1870 (first), modern | medium |
 | Esperanto | `esperanto` | Zamenhof, Unua Libro specimens (1887) | zamenhof (only) | not set |

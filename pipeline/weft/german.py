@@ -128,8 +128,9 @@ ipa    {scheme: ipa} override for this occurrence
 Section field (edition.yaml): `check: {file, format}` names the source the section's lines are
 compared against, for sources that verify_in cannot read: `dta-tei` (a Deutsches Textarchiv TEI
 file, read with long s, the superscript e of the umlauts, line-end hyphens and running heads
-normalized) or `plain` (an OCR text); `strip`, a regular expression removed from the source first
-(running page numbers).
+normalized), `fraktur-ocr` (an OCR text of a Fraktur print: long s, superscript-e umlauts and the ⸗
+hyphen normalized, misreadings declared in src) or `plain`; `strip`, a regular expression removed
+from the source first (running page numbers).
 """
 from __future__ import annotations
 
@@ -528,6 +529,16 @@ def normalize_dta(xml: str) -> str:
     return ud.normalize("NFC", body)
 
 
+def normalize_fraktur_ocr(txt: str) -> str:
+    """An OCR text of a Fraktur print (the Internet Archive's djvu.txt of a BSB scan) as running text:
+    long s to s, the superscript e of the umlauts (aͤ) to the umlaut, the Fraktur hyphen (⸗) at a
+    line end rejoined. Misreadings stay (f for ſ, R for N) and are declared token by token in src."""
+    txt = re.sub(r"⸗\s*", "", txt)
+    txt = txt.replace("ſ", "s")
+    txt = txt.replace("aͤ", "ä").replace("oͤ", "ö").replace("uͤ", "ü").replace("Aͤ", "Ä").replace("Oͤ", "Ö").replace("Uͤ", "Ü")
+    return ud.normalize("NFC", txt)
+
+
 def normalize_textgrid(xml: str) -> str:
     """A TextGrid Digitale Bibliothek TEI file (the Zeno.org text) as running text: body only;
     the verse numbers and note anchors (ref type="noteAnchor") dropped, tags removed."""
@@ -542,7 +553,7 @@ def source_text(path: Path, fmt: str, strip: str | None = None) -> str:
     if k not in _SRC:
         raw = path.read_text(encoding="utf-8")
         txt = (normalize_dta(raw) if fmt == "dta-tei" else normalize_textgrid(raw) if fmt == "textgrid-tei"
-               else ud.normalize("NFC", raw))
+               else normalize_fraktur_ocr(raw) if fmt == "fraktur-ocr" else ud.normalize("NFC", raw))
         if strip:                          # running page numbers inside an OCR text
             txt = re.sub(strip, "", txt)
         _SRC[k] = re.sub(r"\s+", "", txt)

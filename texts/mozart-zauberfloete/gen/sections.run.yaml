@@ -1,0 +1,22 @@
+run:
+  weft: 0.1.0
+  sections:
+  - vogelfaenger
+  - bildnis
+  - hoelle
+  - hallen
+  - maedchen
+counts:
+  lines: 66
+  tokens: 360
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- five numbers, not the libretto; the Pamina-Papageno duet Bei Männern, the Three Boys and the finales are a later pilot
+- 'the source is the OCR of a Fraktur print, not a transcription: every line is checked against it with the misreadings declared in src; the first stanza of Der Vogelfänger is unreadable in the OCR and
+  is omitted; a check against the scan''s page images is wanted'
+- 'no treebank covers the libretto: lemma, morphology and gloss are by hand (UD German-HDT conventions), draft'
+- the northern scheme is the module's educated reading norm; the Viennese German the singers spoke is not modelled, and the sung vowels not at all
+- 'the singing versions are cited, not printed: Macfarren by life + 70, Dent in copyright'

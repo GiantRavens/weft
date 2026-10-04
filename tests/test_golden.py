@@ -634,3 +634,16 @@ def test_esperanto_rules():
     assert E.analyze("ni'a'j'n") == ("nia", "DET|Poss=Yes|PronType=Prs|Person=1|Case=Acc|Number=Plur")
     assert E.analyze("kor’") == ("koro", "NOUN|Case=Nom|Number=Sing") and E.analyze("kiu") == ("kiu", "PRON|PronType=Rel")
     assert E.analyze("konduku") == ("konduki", "VERB|Mood=Imp|VerbForm=Fin")   # an undivided word, read from its ending
+
+
+def test_german_fraktur_ocr_normalizer(tmp_path):
+    """The fraktur-ocr source format: long s to s, superscript-e umlauts to umlauts, the Fraktur hyphen
+    rejoined, page numbers stripped; the comparison is without spaces, and a misreading left in the OCR
+    (fie for sie) is not matched unless the token declares it in src."""
+    from weft import german
+    p = tmp_path / "ocr.txt"
+    p.write_text("Der Vogelfaͤnger bin ich ja,\nStets luſtig, heißa! hopſaſa!\n89\nwenn ich dich ver⸗\nſtehen ſoll! Ich fing’ fie.\n", encoding="utf-8")
+    src = german.source_text(p, "fraktur-ocr", r"(?m)^\s*\d+\s*$")
+    assert "DerVogelfängerbinichja,Stetslustig,heißa!hopsasa!" in src
+    assert "wennichdichverstehensoll!" in src and "89" not in src
+    assert "Ichfing’fie." in src and "Ichfing’sie." not in src

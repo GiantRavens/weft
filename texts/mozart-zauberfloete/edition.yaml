@@ -1,0 +1,860 @@
+# Weft edition of five numbers from Die Zauberflöte (Vienna, 1791), libretto by Emanuel Schikaneder: Papageno's Der
+# Vogelfänger bin ich ja (the second stanza; the first is unreadable in the scan's OCR), Tamino's Dies Bildniß ist
+# bezaubernd schön, the Queen of the Night's Der Hölle Rache, Sarastro's In diesen heil'gen Hallen, and Papageno's Ein
+# Mädchen oder Weibchen. Text of the first edition of the libretto (Vienna: Alberti, 1791), from the Bayerische
+# Staatsbibliothek's scan on the Internet Archive (00074489bsb), read as its OCR text: each line is checked against it
+# by pipeline/weft/german.py (section field check, format fraktur-ocr), which reads long s as s, the superscript e of
+# the umlauts as the umlaut and rejoins words divided at line ends; the OCR's misreadings (fie for sie, Retz for Netz,
+# Negung for Regung, Murter for Mutter) are declared token by token in src, so the check still reproduces the scan.
+# The 1791 spelling is kept: Bey, seyn, Bildniß, Dieß, Verstossen, Verräther, vergiebt, Noth, reitzenden, muß, küßt,
+# Seeligkeit beside Seligkeit, and the elisions geseh'n, heil'gen, bess're, erfreu'n.
+#   t     the word as printed, punctuation attached ("allein. —")
+#   n     the modern spelling of the same form; an elided form is given joined (heil'gen: heilgen), for the sound
+#   src   the OCR's reading where it differs from the print
+#   Lines are the verses; sections are the five numbers.
+work: mozart-zauberfloete
+joiner: ' '
+sections:
+- id: vogelfaenger
+  title: 'Papageno: Der Vogelfänger bin ich ja (Act I, scene 2), the second stanza'
+  check:
+    file: sources/libretto-1791-ocr.txt
+    format: fraktur-ocr
+    strip: (?m)^\s*\d+\s*$
+  lines:
+  - tokens:
+    - t: Der
+      n: Der
+    - t: Vogelfänger
+      n: Vogelfänger
+    - t: bin
+      n: bin
+    - t: ich
+      n: ich
+    - t: ja,
+      n: ja
+  - tokens:
+    - t: Stets
+      n: Stets
+    - t: lustig,
+      n: lustig
+    - t: heißa!
+      n: heißa
+    - t: hopsasa!
+      n: hopsasa
+  - tokens:
+    - t: Der
+      n: Der
+    - t: Vogelfänger
+      n: Vogelfänger
+    - t: ist
+      n: ist
+    - t: bekannt,
+      n: bekannt
+  - tokens:
+    - t: Bey
+      n: Bei
+    - t: Alt
+      n: Alt
+    - t: und
+      n: und
+    - t: Jung
+      n: Jung
+    - t: im
+      n: im
+    - t: ganzen
+      n: ganzen
+    - t: Land.
+      n: Land
+  - tokens:
+    - t: Ein
+      n: Ein
+    - t: Netz
+      n: Netz
+      src: Retz
+    - t: für
+      n: für
+    - t: Mädchen
+      n: Mädchen
+    - t: möchte
+      n: möchte
+    - t: ich!
+      n: ich
+  - tokens:
+    - t: Ich
+      n: Ich
+    - t: fing’
+      n: fing
+    - t: sie
+      n: sie
+      src: fie
+    - t: dutzendweis
+      n: dutzendweis
+    - t: für
+      n: für
+    - t: mich.
+      n: mich
+  - tokens:
+    - t: Dann
+      n: Dann
+    - t: sperrte
+      n: sperrte
+      src: fperrte
+    - t: ich
+      n: ich
+    - t: sie
+      n: sie
+      src: fie
+    - t: bey
+      n: bei
+    - t: mir
+      n: mir
+    - t: ein,
+      n: ein
+  - tokens:
+    - t: Und
+      n: Und
+    - t: alle
+      n: alle
+    - t: Mädchen
+      n: Mädchen
+    - t: wären
+      n: wären
+    - t: mein.
+      n: mein
+- id: bildnis
+  title: 'Tamino: Dies Bildniß ist bezaubernd schön (Act I, scene 4)'
+  check:
+    file: sources/libretto-1791-ocr.txt
+    format: fraktur-ocr
+    strip: (?m)^\s*\d+\s*$
+  lines:
+  - tokens:
+    - t: Dies
+      n: Dies
+    - t: Bildniß
+      n: Bildnis
+    - t: ist
+      n: ist
+    - t: bezaubernd
+      n: bezaubernd
+    - t: schön,
+      n: schön
+  - tokens:
+    - t: Wie
+      n: Wie
+    - t: noch
+      n: noch
+    - t: kein
+      n: kein
+    - t: Auge
+      n: Auge
+    - t: je
+      n: je
+    - t: geseh'n!
+      n: gesehn
+  - tokens:
+    - t: Ich
+      n: Ich
+    - t: fühl’
+      n: fühl
+    - t: es,
+      n: es
+    - t: wie
+      n: wie
+    - t: dies
+      n: dies
+    - t: Götterbild
+      n: Götterbild
+  - tokens:
+    - t: Mein
+      n: Mein
+    - t: Herz
+      n: Herz
+    - t: mit
+      n: mit
+    - t: neuer
+      n: neuer
+    - t: Regung
+      n: Regung
+      src: Negung
+    - t: füllt.
+      n: füllt
+  - tokens:
+    - t: Dieß
+      n: Dies
+    - t: Etwas
+      n: Etwas
+    - t: kann
+      n: kann
+    - t: ich
+      n: ich
+    - t: zwar
+      n: zwar
+    - t: nicht
+      n: nicht
+    - t: nennen;
+      n: nennen
+  - tokens:
+    - t: Doch
+      n: Doch
+    - t: fühl
+      n: fühl
+    - t: ichs
+      n: ichs
+    - t: hier
+      n: hier
+    - t: wie
+      n: wie
+    - t: Feuer
+      n: Feuer
+    - t: brennen.
+      n: brennen
+  - tokens:
+    - t: Soll
+      n: Soll
+    - t: die
+      n: die
+    - t: Empfindung
+      n: Empfindung
+    - t: Liebe
+      n: Liebe
+    - t: seyn?
+      n: sein
+  - tokens:
+    - t: Ja,
+      n: Ja
+    - t: ja!
+      n: ja
+    - t: die
+      n: die
+    - t: Liebe
+      n: Liebe
+    - t: ist's
+      n: ists
+    - t: allein. —
+      n: allein
+  - tokens:
+    - t: O
+      n: O
+    - t: wenn
+      n: wenn
+    - t: ich
+      n: ich
+    - t: sie
+      n: sie
+      src: fie
+    - t: nur
+      n: nur
+    - t: finden
+      n: finden
+    - t: könnte!
+      n: könnte
+      src: konnte!
+  - tokens:
+    - t: O
+      n: O
+    - t: wenn
+      n: wenn
+    - t: sie
+      n: sie
+      src: fie
+    - t: doch
+      n: doch
+    - t: schon
+      n: schon
+    - t: vor
+      n: vor
+    - t: mir
+      n: mir
+    - t: stände!
+      n: stände
+  - tokens:
+    - t: Ich
+      n: Ich
+    - t: würde —
+      n: würde —
+    - t: würde —
+      n: würde —
+    - t: warm
+      n: warm
+    - t: und
+      n: und
+    - t: rein —
+      n: rein —
+  - tokens:
+    - t: Was
+      n: Was
+    - t: würde
+      n: würde
+    - t: ich! —
+      n: ich
+    - t: Sie
+      n: Sie
+    - t: voll
+      n: voll
+    - t: Entzücken
+      n: Entzücken
+  - tokens:
+    - t: An
+      n: An
+    - t: diesen
+      n: diesen
+    - t: heißen
+      n: heißen
+    - t: Busen
+      n: Busen
+    - t: drücken,
+      n: drücken
+  - tokens:
+    - t: Und
+      n: Und
+    - t: ewig
+      n: ewig
+    - t: wäre
+      n: wäre
+    - t: sie
+      n: sie
+      src: fie
+    - t: dann
+      n: dann
+    - t: mein.
+      n: mein
+- id: hoelle
+  title: 'The Queen of the Night: Der Hölle Rache (Act II, scene 8)'
+  check:
+    file: sources/libretto-1791-ocr.txt
+    format: fraktur-ocr
+    strip: (?m)^\s*\d+\s*$
+  lines:
+  - tokens:
+    - t: Der
+      n: Der
+    - t: Hölle
+      n: Hölle
+    - t: Rache
+      n: Rache
+    - t: kocht
+      n: kocht
+    - t: in
+      n: in
+    - t: meinem
+      n: meinem
+    - t: Herzen,
+      n: Herzen
+  - tokens:
+    - t: Tod
+      n: Tod
+    - t: und
+      n: und
+    - t: Verzweiflung
+      n: Verzweiflung
+    - t: flammet
+      n: flammet
+    - t: um
+      n: um
+    - t: mich
+      n: mich
+    - t: her!
+      n: her
+  - tokens:
+    - t: Fühlt
+      n: Fühlt
+    - t: nicht
+      n: nicht
+    - t: durch
+      n: durch
+    - t: dich
+      n: dich
+    - t: Sarastro
+      n: Sarastro
+    - t: Todesschmerzen,
+      n: Todesschmerzen
+  - tokens:
+    - t: So
+      n: So
+    - t: bist
+      n: bist
+    - t: du
+      n: du
+    - t: meine
+      n: meine
+    - t: Tochter
+      n: Tochter
+    - t: nimmermehr.
+      n: nimmermehr
+  - tokens:
+    - t: Verstossen
+      n: Verstoßen
+    - t: sey
+      n: sei
+    - t: auf
+      n: auf
+    - t: ewig
+      n: ewig
+    - t: und
+      n: und
+    - t: verlassen,
+      n: verlassen
+      src: verlaffen,
+  - tokens:
+    - t: Zertrümmert
+      n: Zertrümmert
+    - t: alle
+      n: alle
+    - t: Bande
+      n: Bande
+    - t: der
+      n: der
+    - t: Natur,
+      n: Natur
+  - tokens:
+    - t: Wenn
+      n: Wenn
+    - t: nicht
+      n: nicht
+    - t: durch
+      n: durch
+    - t: dich
+      n: dich
+    - t: Sarastro
+      n: Sarastro
+    - t: wird
+      n: wird
+    - t: erblassen!
+      n: erblassen
+  - tokens:
+    - t: Hört
+      n: Hört
+    - t: Rache, —
+      n: Rache
+    - t: Götter! —
+      n: Götter
+    - t: Hört
+      n: Hört
+    - t: der
+      n: der
+    - t: Mutter
+      n: Mutter
+      src: Murter
+    - t: Schwur.
+      n: Schwur
+- id: hallen
+  title: 'Sarastro: In diesen heil''gen Hallen (Act II, scene 12)'
+  check:
+    file: sources/libretto-1791-ocr.txt
+    format: fraktur-ocr
+    strip: (?m)^\s*\d+\s*$
+  lines:
+  - tokens:
+    - t: In
+      n: In
+    - t: diesen
+      n: diesen
+    - t: heil'gen
+      n: heilgen
+    - t: Hallen,
+      n: Hallen
+  - tokens:
+    - t: Kennt
+      n: Kennt
+    - t: man
+      n: man
+    - t: die
+      n: die
+    - t: Rache
+      n: Rache
+    - t: nicht. —
+      n: nicht
+  - tokens:
+    - t: Und
+      n: Und
+    - t: ist
+      n: ist
+    - t: ein
+      n: ein
+    - t: Mensch
+      n: Mensch
+    - t: gefallen;
+      n: gefallen
+  - tokens:
+    - t: Führt
+      n: Führt
+    - t: Liebe
+      n: Liebe
+    - t: ihn
+      n: ihn
+    - t: zur
+      n: zur
+    - t: Pflicht.
+      n: Pflicht
+  - tokens:
+    - t: Dann
+      n: Dann
+    - t: wandelt
+      n: wandelt
+    - t: er
+      n: er
+    - t: an
+      n: an
+    - t: Freundeshand,
+      n: Freundeshand
+  - tokens:
+    - t: Vergnügt
+      n: Vergnügt
+    - t: und
+      n: und
+    - t: froh
+      n: froh
+    - t: ins
+      n: ins
+    - t: bess're
+      n: bessre
+    - t: Land.
+      n: Land
+  - tokens:
+    - t: In
+      n: In
+    - t: diesen
+      n: diesen
+    - t: heiligen
+      n: heiligen
+    - t: Mauern
+      n: Mauern
+  - tokens:
+    - t: Wo
+      n: Wo
+    - t: Mensch
+      n: Mensch
+    - t: den
+      n: den
+    - t: Menschen
+      n: Menschen
+    - t: liebt,
+      n: liebt
+  - tokens:
+    - t: Kann
+      n: Kann
+    - t: kein
+      n: kein
+    - t: Verräther
+      n: Verräter
+    - t: lauern,
+      n: lauern
+  - tokens:
+    - t: Weil
+      n: Weil
+    - t: man
+      n: man
+    - t: dem
+      n: dem
+    - t: Feind
+      n: Feind
+    - t: vergiebt.
+      n: vergibt
+  - tokens:
+    - t: Wen
+      n: Wen
+    - t: solche
+      n: solche
+    - t: Lehren
+      n: Lehren
+    - t: nicht
+      n: nicht
+    - t: erfreu'n,
+      n: erfreun
+  - tokens:
+    - t: Verdienet
+      n: Verdienet
+    - t: nicht
+      n: nicht
+    - t: ein
+      n: ein
+    - t: Mensch
+      n: Mensch
+    - t: zu
+      n: zu
+    - t: seyn.
+      n: sein
+- id: maedchen
+  title: 'Papageno: Ein Mädchen oder Weibchen (Act II, scene 23)'
+  check:
+    file: sources/libretto-1791-ocr.txt
+    format: fraktur-ocr
+    strip: (?m)^\s*\d+\s*$
+  lines:
+  - tokens:
+    - t: Ein
+      n: Ein
+    - t: Mädchen
+      n: Mädchen
+    - t: oder
+      n: oder
+    - t: Weibchen
+      n: Weibchen
+  - tokens:
+    - t: Wünscht
+      n: Wünscht
+    - t: Papageno
+      n: Papageno
+    - t: sich!
+      n: sich
+  - tokens:
+    - t: O
+      n: O
+    - t: so
+      n: so
+      src: fo
+    - t: ein
+      n: ein
+    - t: sanftes
+      n: sanftes
+      src: fanftes
+    - t: Täubchen
+      n: Täubchen
+  - tokens:
+    - t: Wär’
+      n: Wär
+    - t: Seligkeit
+      n: Seligkeit
+    - t: für
+      n: für
+      src: fir
+    - t: mich! —
+      n: mich
+  - tokens:
+    - t: Dann
+      n: Dann
+    - t: schmeckte
+      n: schmeckte
+    - t: mir
+      n: mir
+    - t: Trinken
+      n: Trinken
+    - t: und
+      n: und
+    - t: Essen;
+      n: Essen
+      src: Effen ;
+  - tokens:
+    - t: Dann
+      n: Dann
+    - t: könnt'
+      n: könnt
+    - t: ich
+      n: ich
+    - t: mit
+      n: mit
+    - t: Fürsten
+      n: Fürsten
+    - t: mich
+      n: mich
+    - t: messen,
+      n: messen
+  - tokens:
+    - t: Des
+      n: Des
+    - t: Lebens
+      n: Lebens
+    - t: als
+      n: als
+    - t: Weiser
+      n: Weiser
+    - t: mich
+      n: mich
+    - t: freu'n,
+      n: freun
+  - tokens:
+    - t: Und
+      n: Und
+    - t: wie
+      n: wie
+    - t: im
+      n: im
+    - t: Elysium
+      n: Elysium
+    - t: seyn.
+      n: sein
+  - tokens:
+    - t: Ein
+      n: Ein
+    - t: Mädchen
+      n: Mädchen
+    - t: oder
+      n: oder
+    - t: Weibchen
+      n: Weibchen
+  - tokens:
+    - t: Wünscht
+      n: Wünscht
+    - t: Papageno
+      n: Papageno
+    - t: sich!
+      n: sich
+  - tokens:
+    - t: O
+      n: O
+    - t: so
+      n: so
+    - t: ein
+      n: ein
+    - t: sanftes
+      n: sanftes
+    - t: Täubchen
+      n: Täubchen
+  - tokens:
+    - t: Wär'
+      n: Wär
+    - t: Seeligkeit
+      n: Seligkeit
+    - t: für
+      n: für
+    - t: mich! —
+      n: mich
+  - tokens:
+    - t: Ach
+      n: Ach
+    - t: kann
+      n: kann
+    - t: ich
+      n: ich
+    - t: denn
+      n: denn
+    - t: keiner
+      n: keiner
+    - t: von
+      n: von
+    - t: allen
+      n: allen
+  - tokens:
+    - t: Den
+      n: Den
+    - t: reitzenden
+      n: reizenden
+    - t: Mädchen
+      n: Mädchen
+    - t: gefallen?
+      n: gefallen
+  - tokens:
+    - t: Helf’
+      n: Helf
+    - t: eine
+      n: eine
+    - t: mir
+      n: mir
+    - t: nur
+      n: nur
+    - t: aus
+      n: aus
+    - t: der
+      n: der
+    - t: Noth,
+      n: Not
+  - tokens:
+    - t: Sonst
+      n: Sonst
+    - t: gräm'
+      n: gräm
+    - t: ich
+      n: ich
+    - t: mich
+      n: mich
+    - t: wahrlich
+      n: wahrlich
+    - t: zu
+      n: zu
+    - t: Tod'
+      n: Tod
+      src: Tod‘
+  - tokens:
+    - t: Ein
+      n: Ein
+    - t: Mädchen
+      n: Mädchen
+    - t: oder
+      n: oder
+    - t: Weibchen,
+      n: Weibchen
+  - tokens:
+    - t: Wünscht
+      n: Wünscht
+    - t: Papageno
+      n: Papageno
+    - t: sich!
+      n: sich
+  - tokens:
+    - t: O
+      n: O
+    - t: so
+      n: so
+      src: fo
+    - t: ein
+      n: ein
+    - t: sanftes
+      n: sanftes
+      src: fanftes
+    - t: Täubchen
+      n: Täubchen
+  - tokens:
+    - t: Wär’
+      n: Wär
+      src: Mär’
+    - t: Seligkeit
+      n: Seligkeit
+    - t: für
+      n: für
+    - t: mich.
+      n: mich
+  - tokens:
+    - t: Wird
+      n: Wird
+    - t: keine
+      n: keine
+    - t: mir
+      n: mir
+    - t: Liebe
+      n: Liebe
+      src: Liehe
+    - t: gewähren,
+      n: gewähren
+  - tokens:
+    - t: So
+      n: So
+    - t: muß
+      n: muss
+    - t: mich
+      n: mich
+    - t: die
+      n: die
+    - t: Flamme
+      n: Flamme
+    - t: verzehren!
+      n: verzehren
+  - tokens:
+    - t: Doch
+      n: Doch
+    - t: küßt
+      n: küsst
+      src: Füßt
+    - t: mich
+      n: mich
+    - t: ein
+      n: ein
+    - t: weiblicher
+      n: weiblicher
+    - t: Mund,
+      n: Mund
+  - tokens:
+    - t: So
+      n: So
+    - t: bin
+      n: bin
+    - t: ich
+      n: ich
+    - t: schon
+      n: schon
+    - t: wieder
+      n: wieder
+    - t: gesund.
+      n: gesund
+      src: gefund,
