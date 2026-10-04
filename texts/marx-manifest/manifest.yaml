@@ -1,0 +1,112 @@
+work: marx-manifest
+title: 'Manifest der Kommunistischen Partei (1848): the opening, the first lines of section I, the ten measures, and the closing call'
+short_title: Communist Manifesto
+author: Karl Marx and Friedrich Engels
+language: de
+lang_name: German of 1848
+prefix: mkp
+urn: urn:weft:de:marx-engels.manifest.1848
+unit: section
+section_noun: passage
+written:
+  year: 1848
+  display: '1848'
+  label: written by Marx in Brussels in January 1848 on the commission of the Communist League, after drafts by Engels; printed anonymously
+    in London in February 1848, days before the revolution in Paris
+status: phase-0
+pilot:
+  sections:
+  - pre
+  - i
+  - ii
+  - iv
+edition:
+  id: london1848
+  name: 'Manifest der Kommunistischen Partei (London: Office der Bildungs-Gesellschaft für Arbeiter, 1848), the first printing, pages
+    3, 16 and 23, as transcribed on German Wikisource (Seite:Manifest der kom Partei 1848-1.djvu/003, 016, 023, proofread twice); the
+    1848 spelling is kept'
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain (1848); Wikisource transcription CC BY-SA 2.0 DE; Weft line division CC BY-SA 4.0
+treebank: null
+schemes:
+- northern
+- modern
+scheme_labels:
+  northern: Educated German of the 1840s, as read aloud among the London emigrants (approximate)
+  modern: Modern Standard German
+sound_confidence: medium
+sources_extra:
+- id: ws-p003
+  name: Seite:Manifest der kom Partei 1848-1.djvu/003, German Wikisource, revision 3349740 (proofread twice)
+  file: sources/p003.txt
+  url: https://de.wikisource.org/w/index.php?oldid=3349740&action=raw
+  sha256: 7b7fb6d3400486f37a938bdfe4f2b82165522f521360ca2a1430530c92af5cbb
+  license: text public domain; Wikisource transcription CC BY-SA 2.0 DE
+  license_url: https://de.wikisource.org/wiki/Manifest_der_Kommunistischen_Partei_(1848)
+- id: ws-p016
+  name: Seite:Manifest der kom Partei 1848-1.djvu/016, German Wikisource, revision 3349753 (proofread twice)
+  file: sources/p016.txt
+  url: https://de.wikisource.org/w/index.php?oldid=3349753&action=raw
+  sha256: 2ed01d20821f94a6f032c90020440d5c909ed0c23b26cf3808a6550d4c67448a
+  license: text public domain; Wikisource transcription CC BY-SA 2.0 DE
+  license_url: https://de.wikisource.org/wiki/Manifest_der_Kommunistischen_Partei_(1848)
+- id: ws-p023
+  name: Seite:Manifest der kom Partei 1848-1.djvu/023, German Wikisource, revision 3349759 (proofread twice)
+  file: sources/p023.txt
+  url: https://de.wikisource.org/w/index.php?oldid=3349759&action=raw
+  sha256: fc4e67e15d4cbd980e47d67e8dab65dedc15873eb8eed3fb051b2caacceaff77
+  license: text public domain; Wikisource transcription CC BY-SA 2.0 DE
+  license_url: https://de.wikisource.org/wiki/Manifest_der_Kommunistischen_Partei_(1848)
+- id: ws-en-p15
+  name: Page:Manifesto of the Communist Party.djvu/15, English Wikisource, revision 7862335 (Kerr edition, Chicago 1910)
+  file: sources/en-p15.txt
+  url: https://en.wikisource.org/w/index.php?oldid=7862335&action=raw
+  sha256: 1b549de8b7e03dbd9ff4babc1166c5d364d64c75d6d3190d1dcbd1822f3d161b
+  license: translation public domain (Moore d. 1911, Engels d. 1895); Wikisource transcription CC BY-SA 4.0
+  license_url: https://en.wikisource.org/wiki/Manifesto_of_the_Communist_Party
+- id: ws-en-p16
+  name: Page:Manifesto of the Communist Party.djvu/16, English Wikisource, revision 7862336 (Kerr edition, Chicago 1910)
+  file: sources/en-p16.txt
+  url: https://en.wikisource.org/w/index.php?oldid=7862336&action=raw
+  sha256: 77e9aca0870d84da89d6a01095d19bbaa93a149afd6083b31b210fb449c5fbb6
+  license: translation public domain (Moore d. 1911, Engels d. 1895); Wikisource transcription CC BY-SA 4.0
+  license_url: https://en.wikisource.org/wiki/Manifesto_of_the_Communist_Party
+- id: ws-en-p45
+  name: Page:Manifesto of the Communist Party.djvu/45, English Wikisource, revision 7862387 (Kerr edition, Chicago 1910)
+  file: sources/en-p45.txt
+  url: https://en.wikisource.org/w/index.php?oldid=7862387&action=raw
+  sha256: ca1b58a0b61b2680cddeaedf50aa9f942c259296ce4d4e7ca0432c5efa4e1319
+  license: translation public domain (Moore d. 1911, Engels d. 1895); Wikisource transcription CC BY-SA 4.0
+  license_url: https://en.wikisource.org/wiki/Manifesto_of_the_Communist_Party
+- id: ws-en-p46
+  name: Page:Manifesto of the Communist Party.djvu/46, English Wikisource, revision 7862389 (Kerr edition, Chicago 1910)
+  file: sources/en-p46.txt
+  url: https://en.wikisource.org/w/index.php?oldid=7862389&action=raw
+  sha256: a6adedb7abdfc3049c9626f1f7d7e0a9994d585a5e6440182d984e13831bd346
+  license: translation public domain (Moore d. 1911, Engels d. 1895); Wikisource transcription CC BY-SA 4.0
+  license_url: https://en.wikisource.org/wiki/Manifesto_of_the_Communist_Party
+- id: ws-en-p62
+  name: Page:Manifesto of the Communist Party.djvu/62, English Wikisource, revision 7862413 (Kerr edition, Chicago 1910)
+  file: sources/en-p62.txt
+  url: https://en.wikisource.org/w/index.php?oldid=7862413&action=raw
+  sha256: c2c4ac5b01288f1825a761bb42ff72a9748589e603abeba8abc3252407e7337b
+  license: translation public domain (Moore d. 1911, Engels d. 1895); Wikisource transcription CC BY-SA 4.0
+  license_url: https://en.wikisource.org/wiki/Manifesto_of_the_Communist_Party
+translations:
+- id: moore1888
+  translator: Samuel Moore, with Friedrich Engels
+  year: 1888
+  form: prose, the authorised English translation of 1888, in the text of the Charles H. Kerr edition (Chicago, 1910) on English Wikisource
+    (pages 15-16, 45-46 and 62, pinned in sources_extra)
+  license: public-domain
+  license_url: https://en.wikisource.org/wiki/Manifesto_of_the_Communist_Party
+predicted_gaps:
+- 'four passages, not the whole: the opening, the first two paragraphs of section I, the ten measures, and the last paragraph of section
+  IV; the rest of the 23 pages is a later pilot'
+- 'no treebank covers the text: lemma, morphology and gloss are by hand (UD German-HDT conventions), draft'
+- the northern scheme models educated German of the 1840s as the Kant and Nietzsche works do, with no evidence specific to the London
+  emigrants' speech; approximate and labelled so
+- the loanwords (Expropriation, Zentralisation, Patrizier, Guizot) carry hand IPA in the lexicon, as Kant's Latin does; the rest is
+  computed from the modern spelling
+- the numbers of the ten measures are not tokens; Moore's English keeps them; u. s. w. is three tokens as the print spaces it

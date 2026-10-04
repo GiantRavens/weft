@@ -1,0 +1,890 @@
+# Weft edition of four passages of the Manifest der Kommunistischen Partei (London, February 1848), in the spelling of
+# the first printing: the opening (Ein Gespenst geht um in Europa), the first lines of section I (Die Geschichte aller
+# bisherigen Gesellschaft ist die Geschichte von Klassenkämpfen), the ten measures of section II, and the closing of
+# section IV with the call Proletarier aller Länder vereinigt Euch. Text of German Wikisource (Seite:Manifest der kom
+# Partei 1848-1.djvu/003, 016, 023, all proofread twice), checked verbatim against the pinned page revisions;
+# verify_strip sets aside the page templates, the bold and spaced type, and the numbers of the ten measures, which
+# the edition does not tokenize (Moore's English carries them).
+#
+# The 1848 spelling is kept: Thatsache, Mährchen, daß, Czar, Maaßregeln, Eigenthum, Centralisation, Oeffentliche,
+# allmählige, verschrieen, Leibeigner, Gesell. n gives the modern spelling; the sound of both schemes is computed from
+# it (pipeline/weft/german.py with pipeline/weft/data/de_lexicon.yaml).
+#   t     the word as printed, punctuation attached
+#   n     the modern spelling of the same word form, German capitalization kept
+#   p     the dash the print sets off by spaces (Europa – das Gespenst)
+#   Weft divides the text into lines at the sentence and, in long sentences, at a clause; u. s. w. is three tokens.
+work: marx-manifest
+joiner: ' '
+verify_strip: (?s)<noinclude>.*?</noinclude>|\{\{Center\||\{\{SperrSchrift\||'''|</?big>|<br />|\{\{[^{}]*\}\}|\}\}|<[^>]+>|\d+\)\s
+sections:
+- id: pre
+  title: The opening
+  verify_in: sources/p003.txt
+  lines:
+  - tokens:
+    - t: Ein
+      n: Ein
+    - t: Gespenst
+      n: Gespenst
+    - t: geht
+      n: geht
+    - t: um
+      n: um
+    - t: in
+      n: in
+    - t: Europa
+      n: Europa
+      p: –
+    - t: das
+      n: das
+    - t: Gespenst
+      n: Gespenst
+    - t: des
+      n: des
+    - t: Kommunismus.
+      n: Kommunismus
+  - tokens:
+    - t: Alle
+      n: alle
+    - t: Mächte
+      n: Mächte
+    - t: des
+      n: des
+    - t: alten
+      n: alten
+    - t: Europa
+      n: Europa
+    - t: haben
+      n: haben
+    - t: sich
+      n: sich
+    - t: zu
+      n: zu
+    - t: einer
+      n: einer
+    - t: heiligen
+      n: heiligen
+    - t: Hetzjagd
+      n: Hetzjagd
+    - t: gegen
+      n: gegen
+    - t: dies
+      n: dies
+    - t: Gespenst
+      n: Gespenst
+    - t: verbündet,
+      n: verbündet
+  - tokens:
+    - t: der
+      n: der
+    - t: Papst
+      n: Papst
+    - t: und
+      n: und
+    - t: der
+      n: der
+    - t: Czar,
+      n: Zar
+    - t: Metternich
+      n: Metternich
+    - t: und
+      n: und
+    - t: Guizot,
+      n: Guizot
+    - t: französische
+      n: französische
+    - t: Radikale
+      n: Radikale
+    - t: und
+      n: und
+    - t: deutsche
+      n: deutsche
+    - t: Polizisten.
+      n: Polizisten
+  - tokens:
+    - t: Wo
+      n: Wo
+    - t: ist
+      n: ist
+    - t: die
+      n: die
+    - t: Oppositionspartei,
+      n: Oppositionspartei
+    - t: die
+      n: die
+    - t: nicht
+      n: nicht
+    - t: von
+      n: von
+    - t: ihren
+      n: ihren
+    - t: regierenden
+      n: regierenden
+    - t: Gegnern
+      n: Gegnern
+    - t: als
+      n: als
+    - t: kommunistisch
+      n: kommunistisch
+    - t: verschrieen
+      n: verschrien
+    - t: worden
+      n: worden
+    - t: wäre,
+      n: wäre
+  - tokens:
+    - t: wo
+      n: wo
+    - t: die
+      n: die
+    - t: Oppositionspartei,
+      n: Oppositionspartei
+    - t: die
+      n: die
+    - t: den
+      n: den
+    - t: fortgeschritteneren
+      n: fortgeschritteneren
+    - t: Oppositionsleuten
+      n: Oppositionsleuten
+    - t: sowohl,
+      n: sowohl
+    - t: wie
+      n: wie
+    - t: ihren
+      n: ihren
+    - t: reaktionären
+      n: reaktionären
+    - t: Gegnern
+      n: Gegnern
+    - t: den
+      n: den
+    - t: brandmarkenden
+      n: brandmarkenden
+    - t: Vorwurf
+      n: Vorwurf
+    - t: des
+      n: des
+    - t: Kommunismus
+      n: Kommunismus
+    - t: nicht
+      n: nicht
+    - t: zurückgeschleudert
+      n: zurückgeschleudert
+    - t: hätte?
+      n: hätte
+  - tokens:
+    - t: Zweierlei
+      n: Zweierlei
+    - t: geht
+      n: geht
+    - t: aus
+      n: aus
+    - t: dieser
+      n: dieser
+    - t: Thatsache
+      n: Tatsache
+    - t: hervor.
+      n: hervor
+  - tokens:
+    - t: Der
+      n: Der
+    - t: Kommunismus
+      n: Kommunismus
+    - t: wird
+      n: wird
+    - t: bereits
+      n: bereits
+    - t: von
+      n: von
+    - t: allen
+      n: allen
+    - t: europäischen
+      n: europäischen
+    - t: Mächten
+      n: Mächten
+    - t: als
+      n: als
+    - t: eine
+      n: eine
+    - t: Macht
+      n: Macht
+    - t: anerkannt.
+      n: anerkannt
+  - tokens:
+    - t: Es
+      n: Es
+    - t: ist
+      n: ist
+    - t: hohe
+      n: hohe
+    - t: Zeit
+      n: Zeit
+    - t: daß
+      n: dass
+    - t: die
+      n: die
+    - t: Kommunisten
+      n: Kommunisten
+    - t: ihre
+      n: ihre
+    - t: Anschauungsweise,
+      n: Anschauungsweise
+    - t: ihre
+      n: ihre
+    - t: Zwecke,
+      n: Zwecke
+    - t: ihre
+      n: ihre
+    - t: Tendenzen
+      n: Tendenzen
+    - t: vor
+      n: vor
+    - t: der
+      n: der
+    - t: ganzen
+      n: ganzen
+    - t: Welt
+      n: Welt
+    - t: offen
+      n: offen
+    - t: darlegen,
+      n: darlegen
+  - tokens:
+    - t: und
+      n: und
+    - t: den
+      n: den
+    - t: Mährchen
+      n: Märchen
+    - t: vom
+      n: vom
+    - t: Gespenst
+      n: Gespenst
+    - t: des
+      n: des
+    - t: Kommunismus
+      n: Kommunismus
+    - t: ein
+      n: ein
+    - t: Manifest
+      n: Manifest
+    - t: der
+      n: der
+    - t: Partei
+      n: Partei
+    - t: selbst
+      n: selbst
+    - t: entgegenstellen.
+      n: entgegenstellen
+  - tokens:
+    - t: Zu
+      n: Zu
+    - t: diesem
+      n: diesem
+    - t: Zweck
+      n: Zweck
+    - t: haben
+      n: haben
+    - t: sich
+      n: sich
+    - t: Kommunisten
+      n: Kommunisten
+    - t: der
+      n: der
+    - t: verschiedensten
+      n: verschiedensten
+    - t: Nationalität
+      n: Nationalität
+    - t: in
+      n: in
+    - t: London
+      n: London
+    - t: versammelt
+      n: versammelt
+    - t: und
+      n: und
+    - t: das
+      n: das
+    - t: folgende
+      n: folgende
+    - t: Manifest
+      n: Manifest
+    - t: entworfen,
+      n: entworfen
+  - tokens:
+    - t: das
+      n: das
+    - t: in
+      n: in
+    - t: englischer,
+      n: englischer
+    - t: französischer,
+      n: französischer
+    - t: deutscher,
+      n: deutscher
+    - t: italienischer,
+      n: italienischer
+    - t: flämmischer
+      n: flämischer
+    - t: und
+      n: und
+    - t: dänischer
+      n: dänischer
+    - t: Sprache
+      n: Sprache
+    - t: veröffentlicht
+      n: veröffentlicht
+    - t: wird.
+      n: wird
+- id: i
+  title: 'I. Bourgeois und Proletarier: the opening'
+  verify_in: sources/p003.txt
+  lines:
+  - tokens:
+    - t: Die
+      n: Die
+    - t: Geschichte
+      n: Geschichte
+    - t: aller
+      n: aller
+    - t: bisherigen
+      n: bisherigen
+    - t: Gesellschaft
+      n: Gesellschaft
+    - t: ist
+      n: ist
+    - t: die
+      n: die
+    - t: Geschichte
+      n: Geschichte
+    - t: von
+      n: von
+    - t: Klassenkämpfen.
+      n: Klassenkämpfen
+  - tokens:
+    - t: Freier
+      n: Freier
+    - t: und
+      n: und
+    - t: Sklave,
+      n: Sklave
+    - t: Patrizier
+      n: Patrizier
+    - t: und
+      n: und
+    - t: Plebejer,
+      n: Plebejer
+    - t: Baron
+      n: Baron
+    - t: und
+      n: und
+    - t: Leibeigner,
+      n: Leibeigener
+    - t: Zunftbürger
+      n: Zunftbürger
+    - t: und
+      n: und
+    - t: Gesell,
+      n: Geselle
+    - t: kurz,
+      n: kurz
+    - t: Unterdrücker
+      n: Unterdrücker
+    - t: und
+      n: und
+    - t: Unterdrückte
+      n: Unterdrückte
+    - t: standen
+      n: standen
+    - t: in
+      n: in
+    - t: stetem
+      n: stetem
+    - t: Gegensatz
+      n: Gegensatz
+    - t: zu
+      n: zu
+    - t: einander,
+      n: einander
+  - tokens:
+    - t: führten
+      n: führten
+    - t: einen
+      n: einen
+    - t: ununterbrochenen,
+      n: ununterbrochenen
+    - t: bald
+      n: bald
+    - t: versteckten
+      n: versteckten
+    - t: bald
+      n: bald
+    - t: offenen
+      n: offenen
+    - t: Kampf,
+      n: Kampf
+  - tokens:
+    - t: einen
+      n: einen
+    - t: Kampf,
+      n: Kampf
+    - t: der
+      n: der
+    - t: jedesmal
+      n: jedesmal
+    - t: mit
+      n: mit
+    - t: einer
+      n: einer
+    - t: revolutionären
+      n: revolutionären
+    - t: Umgestaltung
+      n: Umgestaltung
+    - t: der
+      n: der
+    - t: ganzen
+      n: ganzen
+    - t: Gesellschaft
+      n: Gesellschaft
+    - t: endete,
+      n: endete
+    - t: oder
+      n: oder
+    - t: mit
+      n: mit
+    - t: dem
+      n: dem
+    - t: gemeinsamen
+      n: gemeinsamen
+    - t: Untergang
+      n: Untergang
+    - t: der
+      n: der
+    - t: kämpfenden
+      n: kämpfenden
+    - t: Klassen.
+      n: Klassen
+- id: ii
+  title: II. The ten measures
+  verify_in: sources/p016.txt
+  lines:
+  - tokens:
+    - t: Diese
+      n: Diese
+    - t: Maaßregeln
+      n: Maßregeln
+    - t: werden
+      n: werden
+    - t: natürlich
+      n: natürlich
+    - t: je
+      n: je
+    - t: nach
+      n: nach
+    - t: den
+      n: den
+    - t: verschiedenen
+      n: verschiedenen
+    - t: Ländern
+      n: Ländern
+    - t: verschieden
+      n: verschieden
+    - t: sein.
+      n: sein
+  - tokens:
+    - t: Für
+      n: Für
+    - t: die
+      n: die
+    - t: fortgeschrittensten
+      n: fortgeschrittensten
+    - t: Länder
+      n: Länder
+    - t: werden
+      n: werden
+    - t: jedoch
+      n: jedoch
+    - t: die
+      n: die
+    - t: folgenden
+      n: folgenden
+    - t: ziemlich
+      n: ziemlich
+    - t: allgemein
+      n: allgemein
+    - t: in
+      n: in
+    - t: Anwendung
+      n: Anwendung
+    - t: kommen
+      n: kommen
+    - t: 'können:'
+      n: können
+  - tokens:
+    - t: Expropriation
+      n: Expropriation
+    - t: des
+      n: des
+    - t: Grundeigenthums
+      n: Grundeigentums
+    - t: und
+      n: und
+    - t: Verwendung
+      n: Verwendung
+    - t: der
+      n: der
+    - t: Grundrente
+      n: Grundrente
+    - t: zu
+      n: zu
+    - t: Staatsausgaben.
+      n: Staatsausgaben
+  - tokens:
+    - t: Starke
+      n: Starke
+    - t: Progressiv-Steuer.
+      n: Progressivsteuer
+  - tokens:
+    - t: Abschaffung
+      n: Abschaffung
+    - t: des
+      n: des
+    - t: Erbrechts.
+      n: Erbrechts
+  - tokens:
+    - t: Konfiskation
+      n: Konfiskation
+    - t: des
+      n: des
+    - t: Eigenthums
+      n: Eigentums
+    - t: aller
+      n: aller
+    - t: Emigranten
+      n: Emigranten
+    - t: und
+      n: und
+    - t: Rebellen.
+      n: Rebellen
+  - tokens:
+    - t: Centralisation
+      n: Zentralisation
+    - t: des
+      n: des
+    - t: Kredits
+      n: Kredits
+    - t: in
+      n: in
+    - t: den
+      n: den
+    - t: Händen
+      n: Händen
+    - t: des
+      n: des
+    - t: Staats
+      n: Staats
+    - t: durch
+      n: durch
+    - t: eine
+      n: eine
+    - t: Nationalbank
+      n: Nationalbank
+    - t: mit
+      n: mit
+    - t: Staatskapital
+      n: Staatskapital
+    - t: und
+      n: und
+    - t: ausschließlichem
+      n: ausschließlichem
+    - t: Monopol.
+      n: Monopol
+  - tokens:
+    - t: Centralisation
+      n: Zentralisation
+    - t: alles
+      n: alles
+    - t: Transportwesens
+      n: Transportwesens
+    - t: in
+      n: in
+    - t: den
+      n: den
+    - t: Händen
+      n: Händen
+    - t: des
+      n: des
+    - t: Staats.
+      n: Staats
+  - tokens:
+    - t: Vermehrung
+      n: Vermehrung
+    - t: der
+      n: der
+    - t: Nationalfabriken,
+      n: Nationalfabriken
+    - t: Produktions-Instrumente,
+      n: Produktionsinstrumente
+    - t: Urbarmachung
+      n: Urbarmachung
+    - t: und
+      n: und
+    - t: Verbesserung
+      n: Verbesserung
+    - t: der
+      n: der
+    - t: Ländereien
+      n: Ländereien
+    - t: nach
+      n: nach
+    - t: einem
+      n: einem
+    - t: gemeinschaftlichen
+      n: gemeinschaftlichen
+    - t: Plan.
+      n: Plan
+  - tokens:
+    - t: Gleicher
+      n: Gleicher
+    - t: Arbeitszwang
+      n: Arbeitszwang
+    - t: für
+      n: für
+    - t: Alle,
+      n: alle
+    - t: Errichtung
+      n: Errichtung
+    - t: industrieller
+      n: industrieller
+    - t: Armeen
+      n: Armeen
+    - t: besonders
+      n: besonders
+    - t: für
+      n: für
+    - t: den
+      n: den
+    - t: Ackerbau.
+      n: Ackerbau
+  - tokens:
+    - t: Vereinigung
+      n: Vereinigung
+    - t: des
+      n: des
+    - t: Betriebs
+      n: Betriebs
+    - t: von
+      n: von
+    - t: Ackerbau
+      n: Ackerbau
+    - t: und
+      n: und
+    - t: Industrie,
+      n: Industrie
+    - t: Hinwirken
+      n: Hinwirken
+    - t: auf
+      n: auf
+    - t: die
+      n: die
+    - t: allmählige
+      n: allmähliche
+    - t: Beseitigung
+      n: Beseitigung
+    - t: des
+      n: des
+    - t: Gegensatzes
+      n: Gegensatzes
+    - t: von
+      n: von
+    - t: Stadt
+      n: Stadt
+    - t: und
+      n: und
+    - t: Land.
+      n: Land
+  - tokens:
+    - t: Oeffentliche
+      n: Öffentliche
+    - t: und
+      n: und
+    - t: unentgeltliche
+      n: unentgeltliche
+    - t: Erziehung
+      n: Erziehung
+    - t: aller
+      n: aller
+    - t: Kinder.
+      n: Kinder
+    - t: Beseitigung
+      n: Beseitigung
+    - t: der
+      n: der
+    - t: Fabrikarbeit
+      n: Fabrikarbeit
+    - t: der
+      n: der
+    - t: Kinder
+      n: Kinder
+    - t: in
+      n: in
+    - t: ihrer
+      n: ihrer
+    - t: heutigen
+      n: heutigen
+    - t: Form.
+      n: Form
+    - t: Vereinigung
+      n: Vereinigung
+    - t: der
+      n: der
+    - t: Erziehung
+      n: Erziehung
+    - t: mit
+      n: mit
+    - t: der
+      n: der
+    - t: materiellen
+      n: materiellen
+    - t: Produktion
+      n: Produktion
+    - t: u.
+      n: u.
+    - t: s.
+      n: s.
+    - t: w.,
+      n: w.
+    - t: u.
+      n: u.
+    - t: s.
+      n: s.
+    - t: w.
+      n: w.
+- id: iv
+  title: IV. The closing
+  verify_in: sources/p023.txt
+  lines:
+  - tokens:
+    - t: Die
+      n: Die
+    - t: Kommunisten
+      n: Kommunisten
+    - t: verschmähen
+      n: verschmähen
+    - t: es,
+      n: es
+    - t: ihre
+      n: ihre
+    - t: Ansichten
+      n: Ansichten
+    - t: und
+      n: und
+    - t: Absichten
+      n: Absichten
+    - t: zu
+      n: zu
+    - t: verheimlichen.
+      n: verheimlichen
+  - tokens:
+    - t: Sie
+      n: Sie
+    - t: erklären
+      n: erklären
+    - t: es
+      n: es
+    - t: offen,
+      n: offen
+    - t: daß
+      n: dass
+    - t: ihre
+      n: ihre
+    - t: Zwecke
+      n: Zwecke
+    - t: nur
+      n: nur
+    - t: erreicht
+      n: erreicht
+    - t: werden
+      n: werden
+    - t: können
+      n: können
+    - t: durch
+      n: durch
+    - t: den
+      n: den
+    - t: gewaltsamen
+      n: gewaltsamen
+    - t: Umsturz
+      n: Umsturz
+    - t: aller
+      n: aller
+    - t: bisherigen
+      n: bisherigen
+    - t: Gesellschaftsordnung.
+      n: Gesellschaftsordnung
+  - tokens:
+    - t: Mögen
+      n: Mögen
+    - t: die
+      n: die
+    - t: herrschenden
+      n: herrschenden
+    - t: Klassen
+      n: Klassen
+    - t: vor
+      n: vor
+    - t: einer
+      n: einer
+    - t: Kommunistischen
+      n: Kommunistischen
+    - t: Revolution
+      n: Revolution
+    - t: zittern.
+      n: zittern
+  - tokens:
+    - t: Die
+      n: Die
+    - t: Proletarier
+      n: Proletarier
+    - t: haben
+      n: haben
+    - t: nichts
+      n: nichts
+    - t: in
+      n: in
+    - t: ihr
+      n: ihr
+    - t: zu
+      n: zu
+    - t: verlieren
+      n: verlieren
+    - t: als
+      n: als
+    - t: ihre
+      n: ihre
+    - t: Ketten.
+      n: Ketten
+    - t: Sie
+      n: Sie
+    - t: haben
+      n: haben
+    - t: eine
+      n: eine
+    - t: Welt
+      n: Welt
+    - t: zu
+      n: zu
+    - t: gewinnen.
+      n: gewinnen
+  - tokens:
+    - t: Proletarier
+      n: Proletarier
+    - t: aller
+      n: aller
+    - t: Länder
+      n: Länder
+    - t: vereinigt
+      n: vereinigt
+    - t: Euch!
+      n: euch

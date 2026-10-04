@@ -1,0 +1,20 @@
+run:
+  weft: 0.1.0
+  sections:
+  - pre
+  - i
+  - ii
+  - iv
+counts:
+  lines: 32
+  tokens: 411
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'four passages, not the whole: the opening, the first two paragraphs of section I, the ten measures, and the last paragraph of section IV; the rest of the 23 pages is a later pilot'
+- 'no treebank covers the text: lemma, morphology and gloss are by hand (UD German-HDT conventions), draft'
+- the northern scheme models educated German of the 1840s as the Kant and Nietzsche works do, with no evidence specific to the London emigrants' speech; approximate and labelled so
+- the loanwords (Expropriation, Zentralisation, Patrizier, Guizot) carry hand IPA in the lexicon, as Kant's Latin does; the rest is computed from the modern spelling
+- the numbers of the ten measures are not tokens; Moore's English keeps them; u. s. w. is three tokens as the print spaces it
