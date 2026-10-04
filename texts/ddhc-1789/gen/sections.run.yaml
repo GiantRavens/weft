@@ -1,0 +1,37 @@
+run:
+  weft: 0.1.0
+  sections:
+  - pre
+  - a1
+  - a2
+  - a3
+  - a4
+  - a5
+  - a6
+  - a7
+  - a8
+  - a9
+  - a10
+  - a11
+  - a12
+  - a13
+  - a14
+  - a15
+  - a16
+  - a17
+counts:
+  lines: 42
+  tokens: 792
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank covers the text: lemma and morphology come from the reviewed overlay of the de Gouges Declaration of 1791, which copies this text, with the remaining words and every context-dependent sense
+  written by hand; all draft'
+- 'the 1789 reading rests on Féraud (1787-88): François, reconnoît and seroit are sounded with the open e their modern spellings have; the lexicon is keyed by the modern spelling and the page shows the
+  print; it is approximate and says so'
+- Paine's translation is of the first printing and is free in places (article 3 'the nation is essentially the source of all sovereignty'; article 16 'wants a constitution'); it is kept verbatim as the
+  historic English, not corrected
+- four articles cross a page of the print (V, VII, X, XVII) and the preamble runs over two; the verbatim check reads each section's pages together, and the one hyphenation across pages (opi-nions) is declared
+- the title page and the closing extract of 1 October (Mounier sent to the king) are not tokenized; the note on the date carries them

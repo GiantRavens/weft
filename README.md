@@ -134,8 +134,10 @@ Sixty-one works built across twenty-six languages, oldest first in the library:
 | Montaigne, Essais | To the Reader; I.19 opening | French of about 1580, modern French | Florio 1603, Cotton 1685, Hazlitt 1877 |
 | Laws for the Military Houses (Buke shohatto) | the 1615 text, 13 articles, with return marks and a whole-line Japanese reading | as read about 1615, modern | Murdoch 1903 (digest, partial), Weft editorial |
 | The Akō retainers' statement (the Forty-seven Rōnin) | the declaration of 1703 | Genroku Edo (1703), modern | Mitford 1871, Weft editorial |
+| National Assembly, Declaration of the Rights of Man and of the Citizen | the preamble and all seventeen articles (1789), in the official printing's spelling; the text de Gouges answered | Paris reading of 1789, modern | Thomas Paine 1791 (Rights of Man) |
 | Olympe de Gouges, Declaration of the Rights of Woman and of the Female Citizen | the preamble and all seventeen articles (1791), in the pamphlet's spelling | Paris reading of 1791, modern | Weft editorial (draft); Levy, Applewhite and Johnson 1979 cited |
 | Rouget de Lisle, La Marseillaise | the six couplets and the refrain of the Chant de guerre pour l'Armée du Rhin (1792), in Fiaux's 1918 printing of the 1792 text | Paris reading of 1792, modern | Weft editorial (draft); the English singing version 'Ye sons of France' (1795, couplets 1-2) |
+| Marx and Engels, Manifest der Kommunistischen Partei | the opening, the first lines of section I, the ten measures and the closing call (London, 1848), in the first printing's spelling | educated German of the 1840s, modern | Samuel Moore 1888 (Kerr edition, 1910) |
 | Kant: What is Enlightenment? and the starry heavens | 1784 essay, opening; 1788 Critique of Practical Reason, conclusion | northern German before 1898, modern German | Richardson 1798, Abbott |
 | Science in Latin: Descartes, Newton | cogito (1644); laws of motion (1687) | as first read (French, English manner), classical | Veitch 1853, Motte 1729 |
 | Swahili tales from Zanzibar: The Kites and the Crows | the whole tale (Steere 1870) | Zanzibar Swahili about 1870, modern standard | Steere 1870 |

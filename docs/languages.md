@@ -98,10 +98,12 @@ the page shows no invitation.
 | | | Caminha, letter of 1500 | lisboa1540 (first), europeu, brasileiro | medium |
 | Dutch | `dutch` | Linschoten | h1596 (first), modern | not set |
 | French | `french` | Montaigne | m1580 (first), modern | not set |
+| | | Declaration of the Rights of Man (1789) | fr1791 (first), modern | medium |
 | | | de Gouges, Rights of Woman (1791) | fr1791 (first), modern | not set |
 | | | Rouget de Lisle, La Marseillaise (1792) | fr1791 (first), modern | medium |
 | | | Berlin Act, 1885 | fr1885 (first), modern | not set |
 | German | `german` | Kant, Nietzsche | northern (first), modern | not set |
+| | | Marx and Engels, Manifest (1848) | northern (first), modern | medium |
 | | | Luther's Bible | ecg1545 (first), modern | not set |
 | Swahili | `swahili` | Steere, The Kites and the Crows | z1870 (first), modern | medium |
 | Quenya, Sindarin | `elvish` | private works only (Tolkien, in copyright) | tolkien (only) | not set |

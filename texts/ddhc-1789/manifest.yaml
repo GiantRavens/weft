@@ -1,0 +1,130 @@
+work: ddhc-1789
+title: 'Declaration of the Rights of Man and of the Citizen (1789): the preamble and the seventeen articles'
+short_title: Rights of Man (1789)
+author: The National Constituent Assembly of France, 20-26 August 1789
+language: fr
+lang_name: French of 1789
+prefix: ddh
+urn: urn:weft:fr:assemblee.declaration-des-droits.1789
+unit: section
+section_noun: article
+written:
+  year: 1789
+  display: '1789'
+  label: voted by the National Constituent Assembly at Versailles between 20 and 26 August 1789 and accepted by Louis XVI on 5 October;
+    printed as an extract of the Assembly's minutes; the model of the declarations of 1793 and 1795 and the text that de Gouges answered
+    in 1791
+status: phase-0
+pilot:
+  sections:
+  - pre
+  - a1
+  - a2
+  - a3
+  - a4
+  - a5
+  - a6
+  - a7
+  - a8
+  - a9
+  - a10
+  - a11
+  - a12
+  - a13
+  - a14
+  - a15
+  - a16
+  - a17
+edition:
+  id: pv1789
+  name: 'Extrait des procès-verbaux de l''Assemblée nationale, des 20, 21, 22, 23, 24, 26 août et premier octobre 1789: Déclaration
+    des droits de l''homme en société (Paris, 1789), the official printing, as transcribed and validated on French Wikisource (Page:Déclaration
+    des Droits de l''Homme.djvu/1-8); the 1789 spelling is kept'
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain (1789); Wikisource transcription CC BY-SA 4.0; Weft line division CC BY-SA 4.0
+treebank: null
+schemes:
+- fr1791
+- modern
+scheme_labels:
+  fr1791: 'As first read: Versailles and Paris, 1789 (approximate)'
+sound_confidence: medium
+sources_extra:
+- id: ws-p1
+  name: Page:Déclaration des Droits de l'Homme.djvu/1, French Wikisource, revision 13478953 (validated)
+  file: sources/p1.txt
+  url: https://fr.wikisource.org/w/index.php?oldid=13478953&action=raw
+  sha256: eee0ddf6e8813587359b1484da3d3c5ae79391e3a330f084d6802109a97727af
+  license: text public domain (1789); Wikisource transcription CC BY-SA 4.0
+  license_url: https://fr.wikisource.org/wiki/D%C3%A9claration_des_Droits_de_l%E2%80%99Homme_et_du_Citoyen_de_1789
+- id: ws-p2
+  name: Page:Déclaration des Droits de l'Homme.djvu/2, French Wikisource, revision 7686902 (validated)
+  file: sources/p2.txt
+  url: https://fr.wikisource.org/w/index.php?oldid=7686902&action=raw
+  sha256: 15c419d1fdb0a12fbe975ffe4e989e6da9de6bdcb887dff77439a13927acae2d
+  license: text public domain (1789); Wikisource transcription CC BY-SA 4.0
+  license_url: https://fr.wikisource.org/wiki/D%C3%A9claration_des_Droits_de_l%E2%80%99Homme_et_du_Citoyen_de_1789
+- id: ws-p3
+  name: Page:Déclaration des Droits de l'Homme.djvu/3, French Wikisource, revision 7686903 (validated)
+  file: sources/p3.txt
+  url: https://fr.wikisource.org/w/index.php?oldid=7686903&action=raw
+  sha256: 49d0277d26c90469986db86a2a9f2a4227f21e09c272748aaf7990877e06f4d1
+  license: text public domain (1789); Wikisource transcription CC BY-SA 4.0
+  license_url: https://fr.wikisource.org/wiki/D%C3%A9claration_des_Droits_de_l%E2%80%99Homme_et_du_Citoyen_de_1789
+- id: ws-p4
+  name: Page:Déclaration des Droits de l'Homme.djvu/4, French Wikisource, revision 7686904 (validated)
+  file: sources/p4.txt
+  url: https://fr.wikisource.org/w/index.php?oldid=7686904&action=raw
+  sha256: 75db065cbc257ceb2cbea724a45c416e7047fdda605ba7ba67ea03ba8fd5146a
+  license: text public domain (1789); Wikisource transcription CC BY-SA 4.0
+  license_url: https://fr.wikisource.org/wiki/D%C3%A9claration_des_Droits_de_l%E2%80%99Homme_et_du_Citoyen_de_1789
+- id: ws-p5
+  name: Page:Déclaration des Droits de l'Homme.djvu/5, French Wikisource, revision 7686905 (validated)
+  file: sources/p5.txt
+  url: https://fr.wikisource.org/w/index.php?oldid=7686905&action=raw
+  sha256: 6c45d6f2b45f6a98ae5201286d8366ba89f66b15744c774de54fbdcd63bad156
+  license: text public domain (1789); Wikisource transcription CC BY-SA 4.0
+  license_url: https://fr.wikisource.org/wiki/D%C3%A9claration_des_Droits_de_l%E2%80%99Homme_et_du_Citoyen_de_1789
+- id: ws-p6
+  name: Page:Déclaration des Droits de l'Homme.djvu/6, French Wikisource, revision 7686906 (validated)
+  file: sources/p6.txt
+  url: https://fr.wikisource.org/w/index.php?oldid=7686906&action=raw
+  sha256: 89acce9484109670df3a560f42547ba6fd71abd3ce316ca2d97594a1c746d8fb
+  license: text public domain (1789); Wikisource transcription CC BY-SA 4.0
+  license_url: https://fr.wikisource.org/wiki/D%C3%A9claration_des_Droits_de_l%E2%80%99Homme_et_du_Citoyen_de_1789
+- id: ws-p7
+  name: Page:Déclaration des Droits de l'Homme.djvu/7, French Wikisource, revision 7686907 (validated)
+  file: sources/p7.txt
+  url: https://fr.wikisource.org/w/index.php?oldid=7686907&action=raw
+  sha256: d7a65d636faef9bc53db58e66cdde6329b8a46bb0afd71d2a52cfe85e4e2434e
+  license: text public domain (1789); Wikisource transcription CC BY-SA 4.0
+  license_url: https://fr.wikisource.org/wiki/D%C3%A9claration_des_Droits_de_l%E2%80%99Homme_et_du_Citoyen_de_1789
+- id: ws-p8
+  name: Page:Déclaration des Droits de l'Homme.djvu/8, French Wikisource, revision 7686908 (validated)
+  file: sources/p8.txt
+  url: https://fr.wikisource.org/w/index.php?oldid=7686908&action=raw
+  sha256: f9dd7870a65384823eb32b15b7390651cfa8f9cd4841e3d4fec807808bb8f19f
+  license: text public domain (1789); Wikisource transcription CC BY-SA 4.0
+  license_url: https://fr.wikisource.org/wiki/D%C3%A9claration_des_Droits_de_l%E2%80%99Homme_et_du_Citoyen_de_1789
+translations:
+- id: paine1791
+  translator: Thomas Paine
+  year: 1791
+  form: prose, article by article, in Rights of Man, Part One (London, 1791); the text of Moncure Conway's edition of The Writings of
+    Thomas Paine (1894) on English Wikisource (Rights of Man, revision 15009930)
+  license: public-domain
+  license_url: https://en.wikisource.org/wiki/Rights_of_Man
+  file: sources/paine-rights-of-man.txt
+  url: https://en.wikisource.org/w/index.php?oldid=15009930&action=raw
+  sha256: 3c6e9b1263d2897caf0b436565a10675562cafe9b3e533e5ec5d0a00312eb7dd
+predicted_gaps:
+- 'no treebank covers the text: lemma and morphology come from the reviewed overlay of the de Gouges Declaration of 1791, which copies
+  this text, with the remaining words and every context-dependent sense written by hand; all draft'
+- 'the 1789 reading rests on Féraud (1787-88): François, reconnoît and seroit are sounded with the open e their modern spellings have;
+  the lexicon is keyed by the modern spelling and the page shows the print; it is approximate and says so'
+- Paine's translation is of the first printing and is free in places (article 3 'the nation is essentially the source of all sovereignty';
+  article 16 'wants a constitution'); it is kept verbatim as the historic English, not corrected
+- four articles cross a page of the print (V, VII, X, XVII) and the preamble runs over two; the verbatim check reads each section's
+  pages together, and the one hyphenation across pages (opi-nions) is declared
+- the title page and the closing extract of 1 October (Mounier sent to the king) are not tokenized; the note on the date carries them

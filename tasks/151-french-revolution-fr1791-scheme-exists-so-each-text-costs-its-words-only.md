@@ -8,7 +8,7 @@ tags:
   - french
   - revolution
 created_at: 2026-10-02T20:47:46.885639262-05:00
-updated_at: 2026-10-03T20:08:20.433019355-05:00
+updated_at: 2026-10-03T20:37:06.268672971-05:00
 started_at: 2026-10-03T19:50:29.582028088-05:00
 ---
 
@@ -17,6 +17,7 @@ started_at: 2026-10-03T19:50:29.582028088-05:00
 ## Notes
 
 - 2026-10-04T01:08:20Z: La Marseillaise built 2026-10-03: texts/rouget-marseillaise, 6 couplets + 2 refrains (275 tokens), Fiaux 1918 text via fr.wikisource, fr1791+modern, Sheridan singing version partial; Pils 1849 image
+- 2026-10-04T01:37:06Z: Declaration of the Rights of Man 1789 built 2026-10-03: texts/ddhc-1789 (792 tokens, 18 sections, Paine 1791 translation, Le Barbier image); overlay seeded from de Gouges
 
 ## Log
 
