@@ -1,0 +1,28 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+  - r
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - r5
+  - '6'
+counts:
+  lines: 52
+  tokens: 275
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- the text is Fiaux's 1918 printing of the 1792 song, not a scan of a 1792 broadside; it keeps enfans and the early readings but modernizes the verb endings (-aient for the 1792 -oient); a 1792 print on
+  Wikisource or Gallica would replace it
+- '''forme ; vos bataillons'' on page 27 is read as an OCR error for ''formez vos bataillons'' (the page is proofread, not validated); declared as a verify_correction, to be checked against the scan'
+- 'no treebank covers the text: lemma and morphology are a hand parse (UD French-GSD conventions) begun from a spaCy fr_core_news_md 3.8 parse that misread many verbs; glosses are hand-written; all draft'
+- the 1792 reading rests on Féraud (1787-88) and differs from modern French in l mouillé (bataillons, sillons, Bouillé) and the sounded e of ennemi; the liaisons marked z are those of modern singing (sang-k-impur);
+  it is approximate and says so
+- the English singing version is a free version of 1794-95 that answers only the first two couplets; the song book's attribution to Sheridan is traditional and not securely established, and the year given
+  is the version's first currency, not the book's
+- the couplet des enfants (October 1792, not by Rouget de Lisle) is not included; Fiaux's two full refrains are given, the 'etc.' lines are not

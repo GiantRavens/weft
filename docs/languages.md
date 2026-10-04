@@ -99,6 +99,7 @@ the page shows no invitation.
 | Dutch | `dutch` | Linschoten | h1596 (first), modern | not set |
 | French | `french` | Montaigne | m1580 (first), modern | not set |
 | | | de Gouges, Rights of Woman (1791) | fr1791 (first), modern | not set |
+| | | Rouget de Lisle, La Marseillaise (1792) | fr1791 (first), modern | medium |
 | | | Berlin Act, 1885 | fr1885 (first), modern | not set |
 | German | `german` | Kant, Nietzsche | northern (first), modern | not set |
 | | | Luther's Bible | ecg1545 (first), modern | not set |

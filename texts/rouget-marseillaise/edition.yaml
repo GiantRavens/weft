@@ -1,0 +1,425 @@
+# Weft edition of La Marseillaise: Rouget de Lisle's Chant de guerre pour l'Armée du Rhin (Strasbourg, April 1792),
+# the six couplets and the refrain, in the text printed by Louis Fiaux, La Marseillaise, son histoire dans l'histoire
+# des Français depuis 1792 (Paris, 1918), pp. 26-27, as transcribed on French Wikisource (Page:Fiaux - La Marseillaise.djvu/26-27);
+# each line is checked verbatim against the pinned page revisions. Fiaux keeps the 1792 plural enfans and the early
+# readings (Égorger vos fils, vos compagnes; Tremble, tyrans), and prints the refrain in full after the first and the
+# fifth couplet, with 'etc.' after the others; the edition gives the refrain once after each of those two, and leaves
+# out the 'etc.' lines and the '(bis)' marks. verify_strip sets aside the page's templates and tags.
+#   t     the word as printed, punctuation attached; an elision (L’, qu’, C’) is its own token, glued to the next
+#   n     the modern spelling where the print differs (enfans, enchainées)
+#   p     punctuation the print sets off by a space, as French does before ! ? ; :
+#   z     liaison made in modern singing (est‿arrivé, sang‿impur, Aux‿armes); zf: made in the formal reading of 1792 only
+#   Lines are the verses; sections are the couplets and the two printed refrains.
+work: rouget-marseillaise
+joiner: ' '
+verify_in:
+- sources/fiaux26.txt
+- sources/fiaux27.txt
+verify_strip: '\{\{FlotteADroite\|\(\{\{sc\|bis\}\}\)\|marge=25%\}\}|\s*\(\{\{sc\|bis\}\}\)|\s*\{\{sc\|\(bis\)\}\}|<ref>[^<]*</ref>|<[^>]+>|\{\{[^{}]*\}\}|''''|::'
+verify_corrections:
+- ocr: forme ; vos
+  print: formez vos
+  in: sources/fiaux27.txt
+sections:
+- id: '1'
+  title: Couplet 1
+  lines:
+  - tokens:
+    - t: Allons,
+    - t: enfans
+      n: enfants
+    - t: de
+    - t: la
+    - t: Patrie
+      p: '!'
+  - tokens:
+    - t: Le
+    - t: jour
+    - t: de
+    - t: gloire
+    - t: est
+      z: true
+    - t: arrivé.
+  - tokens:
+    - t: Contre
+    - t: nous
+    - t: de
+    - t: la
+    - t: tyrannie
+  - tokens:
+    - t: L’
+      glue: true
+    - t: étendard
+    - t: sanglant
+    - t: est
+    - t: levé.
+  - tokens:
+    - t: Entendez-vous
+    - t: dans
+    - t: les
+    - t: campagnes
+  - tokens:
+    - t: Mugir
+    - t: ces
+    - t: féroces
+    - t: soldats
+      p: '?'
+  - tokens:
+    - t: Ils
+    - t: viennent
+    - t: jusque
+    - t: dans
+    - t: nos
+    - t: bras,
+  - tokens:
+    - t: Égorger
+    - t: vos
+    - t: fils,
+    - t: vos
+    - t: compagnes
+      p: '!…'
+- id: r
+  title: Refrain
+  lines:
+  - tokens:
+    - t: Aux
+      z: true
+    - t: armes,
+    - t: citoyens
+      p: '!'
+    - t: formez
+    - t: vos
+    - t: bataillons.
+  - tokens:
+    - t: Marchons,
+    - t: qu’
+      glue: true
+    - t: un
+    - t: sang
+      z: true
+    - t: impur
+    - t: abreuve
+    - t: nos
+    - t: sillons
+      p: '!'
+- id: '2'
+  title: Couplet 2
+  lines:
+  - tokens:
+    - t: Que
+    - t: veut
+    - t: cette
+    - t: horde
+    - t: d’
+      glue: true
+    - t: esclaves
+  - tokens:
+    - t: De
+    - t: traîtres,
+    - t: de
+    - t: rois
+    - t: conjurés
+      p: '?'
+  - tokens:
+    - t: Pour
+    - t: qui
+    - t: ces
+      z: true
+    - t: ignobles
+    - t: entraves,
+  - tokens:
+    - t: Ces
+    - t: fers
+    - t: dès
+    - t: longtemps
+    - t: préparés
+      p: '?'
+  - tokens:
+    - t: Français
+      p: '!'
+    - t: pour
+    - t: nous,
+    - t: ah
+      p: '!'
+    - t: quel
+      z: true
+    - t: outrage
+      p: '!'
+  - tokens:
+    - t: Quels
+    - t: transports
+    - t: il
+    - t: doit
+    - t: exciter
+      p: '?'
+  - tokens:
+    - t: C’
+      glue: true
+    - t: est
+    - t: nous
+    - t: qu’
+      glue: true
+    - t: 'on'
+      z: true
+    - t: ose
+    - t: méditer
+  - tokens:
+    - t: De
+    - t: rendre
+    - t: à
+    - t: l’
+      glue: true
+    - t: antique
+    - t: esclavage…
+- id: '3'
+  title: Couplet 3
+  lines:
+  - tokens:
+    - t: Quoi
+    - t: des
+    - t: cohortes
+    - t: étrangères
+  - tokens:
+    - t: Feraient
+    - t: la
+    - t: loi
+    - t: dans
+    - t: nos
+    - t: foyers
+      p: '!'
+  - tokens:
+    - t: Quoi
+    - t: ces
+    - t: phalanges
+    - t: mercenaires
+  - tokens:
+    - t: Terrasseraient
+    - t: nos
+    - t: fiers
+    - t: guerriers
+      p: '!'
+  - tokens:
+    - t: Grand
+    - t: Dieu
+      p: '!..'
+    - t: Par
+    - t: des
+    - t: mains
+      zf: true
+    - t: enchainées.
+      n: enchaînées
+  - tokens:
+    - t: Nos
+    - t: fronts
+    - t: sous
+    - t: le
+    - t: joug
+    - t: ploiraient
+      p: ;
+  - tokens:
+    - t: De
+    - t: vils
+    - t: despotes
+    - t: deviendraient
+  - tokens:
+    - t: Les
+    - t: maîtres
+    - t: de
+    - t: nos
+    - t: destinées
+      p: '!…'
+- id: '4'
+  title: Couplet 4
+  lines:
+  - tokens:
+    - t: Tremble,
+    - t: tyrans
+      p: '!'
+    - t: et
+    - t: vous,
+    - t: perfides.
+  - tokens:
+    - t: L’
+      glue: true
+    - t: opprobre
+    - t: de
+    - t: tous
+    - t: les
+    - t: partis.
+  - tokens:
+    - t: Tremblez
+      p: '!…'
+    - t: Vos
+    - t: projets
+    - t: parricides
+  - tokens:
+    - t: Vont
+      z: true
+    - t: enfin
+    - t: recevoir
+    - t: leur
+    - t: prix.
+  - tokens:
+    - t: Tout
+      z: true
+    - t: est
+    - t: soldat
+    - t: pour
+    - t: vous
+    - t: combattre.
+  - tokens:
+    - t: S’
+      glue: true
+    - t: ils
+    - t: tombent
+    - t: nos
+    - t: jeunes
+    - t: héros,
+  - tokens:
+    - t: La
+    - t: terre
+    - t: en
+    - t: produit
+    - t: de
+    - t: nouveaux
+  - tokens:
+    - t: Contre
+    - t: vous
+    - t: tous
+    - t: prêts
+    - t: à
+    - t: se
+    - t: battre
+- id: '5'
+  title: Couplet 5
+  lines:
+  - tokens:
+    - t: Français
+      p: '!'
+    - t: en
+    - t: guerriers
+    - t: magnanimes
+  - tokens:
+    - t: Portez
+    - t: ou
+    - t: retenez
+    - t: vos
+    - t: coups.
+  - tokens:
+    - t: Épargnez
+    - t: ces
+    - t: tristes
+    - t: victimes
+  - tokens:
+    - t: À
+    - t: regret
+    - t: s’
+      glue: true
+    - t: armant
+    - t: contre
+    - t: nous.
+  - tokens:
+    - t: Mais
+    - t: le
+    - t: despote
+    - t: sanguinaire
+      p: '!'
+  - tokens:
+    - t: Mais
+    - t: les
+    - t: complices
+    - t: de
+    - t: Bouillé
+      p: '!'
+  - tokens:
+    - t: Tous
+    - t: ces
+    - t: tigres
+    - t: qui
+    - t: sans
+    - t: pitié
+  - tokens:
+    - t: Déchirent
+    - t: le
+    - t: sein
+    - t: de
+    - t: leur
+    - t: mère.
+- id: r5
+  title: Refrain, after the fifth couplet
+  lines:
+  - tokens:
+    - t: Aux
+      z: true
+    - t: armes,
+    - t: citoyens
+      p: '!'
+    - t: formez
+    - t: vos
+    - t: bataillons.
+  - tokens:
+    - t: Marchons
+      p: ;
+    - t: que
+    - t: tout
+    - t: leur
+    - t: sang
+    - t: abreuve
+    - t: nos
+    - t: sillons
+      p: '!'
+- id: '6'
+  title: Couplet 6
+  lines:
+  - tokens:
+    - t: Amour
+    - t: sacré
+    - t: de
+    - t: la
+    - t: Patrie,
+  - tokens:
+    - t: Conduis,
+    - t: soutiens
+    - t: nos
+    - t: bras
+    - t: vengeurs
+      p: ':'
+  - tokens:
+    - t: Liberté
+      p: '!'
+    - t: liberté
+    - t: chérie
+  - tokens:
+    - t: Combats
+    - t: avec
+    - t: tes
+    - t: défenseurs.
+  - tokens:
+    - t: Sous
+    - t: nos
+    - t: drapeaux
+    - t: que
+    - t: la
+    - t: Victoire
+  - tokens:
+    - t: Accoure
+    - t: à
+    - t: tes
+    - t: mâles
+      z: true
+    - t: accents
+      p: ':'
+  - tokens:
+    - t: Que
+    - t: tes
+      z: true
+    - t: ennemis
+      z: true
+    - t: expirants
+  - tokens:
+    - t: Voient
+    - t: ton
+    - t: triomphe
+    - t: et
+    - t: notre
+    - t: gloire.

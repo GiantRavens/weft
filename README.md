@@ -135,6 +135,7 @@ Sixty-one works built across twenty-six languages, oldest first in the library:
 | Laws for the Military Houses (Buke shohatto) | the 1615 text, 13 articles, with return marks and a whole-line Japanese reading | as read about 1615, modern | Murdoch 1903 (digest, partial), Weft editorial |
 | The Akō retainers' statement (the Forty-seven Rōnin) | the declaration of 1703 | Genroku Edo (1703), modern | Mitford 1871, Weft editorial |
 | Olympe de Gouges, Declaration of the Rights of Woman and of the Female Citizen | the preamble and all seventeen articles (1791), in the pamphlet's spelling | Paris reading of 1791, modern | Weft editorial (draft); Levy, Applewhite and Johnson 1979 cited |
+| Rouget de Lisle, La Marseillaise | the six couplets and the refrain of the Chant de guerre pour l'Armée du Rhin (1792), in Fiaux's 1918 printing of the 1792 text | Paris reading of 1792, modern | Weft editorial (draft); the English singing version 'Ye sons of France' (1795, couplets 1-2) |
 | Kant: What is Enlightenment? and the starry heavens | 1784 essay, opening; 1788 Critique of Practical Reason, conclusion | northern German before 1898, modern German | Richardson 1798, Abbott |
 | Science in Latin: Descartes, Newton | cogito (1644); laws of motion (1687) | as first read (French, English manner), classical | Veitch 1853, Motte 1729 |
 | Swahili tales from Zanzibar: The Kites and the Crows | the whole tale (Steere 1870) | Zanzibar Swahili about 1870, modern standard | Steere 1870 |

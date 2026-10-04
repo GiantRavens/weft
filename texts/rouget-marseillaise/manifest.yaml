@@ -1,0 +1,87 @@
+work: rouget-marseillaise
+title: 'La Marseillaise (1792): Rouget de Lisle''s Chant de guerre pour l''Armée du Rhin, the six couplets and the refrain'
+short_title: La Marseillaise
+author: Claude Joseph Rouget de Lisle (1760-1836)
+language: fr
+lang_name: French of 1792
+prefix: mar
+urn: urn:weft:fr:rouget.marseillaise.1792
+unit: section
+section_noun: couplet
+written:
+  year: 1792
+  display: '1792'
+  label: written at Strasbourg on the night of 25-26 April 1792 as the Chant de guerre pour l'Armée du Rhin; sung by the Marseille volunteers
+    on their way to Paris that July, and named after them; decreed the national song in 1795
+status: phase-0
+pilot:
+  sections:
+  - '1'
+  - r
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - r5
+  - '6'
+edition:
+  id: fiaux1918
+  name: Louis Fiaux, La Marseillaise, son histoire dans l'histoire des Français depuis 1792 (Paris, 1918), pp. 26-27, the 1792 text
+    with its early readings, as transcribed on French Wikisource (Page:Fiaux - La Marseillaise.djvu/26-27)
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain (1792; Fiaux d. 1936, the quoted text is Rouget de Lisle's); Wikisource transcription CC BY-SA 4.0; Weft
+    line division CC BY-SA 4.0
+treebank: null
+schemes:
+- fr1791
+- modern
+scheme_labels:
+  fr1791: 'As first sung: Strasbourg and Paris, 1792 (approximate)'
+sound_confidence: medium
+sources_extra:
+- id: ws-fiaux26
+  name: Page:Fiaux - La Marseillaise.djvu/26, French Wikisource, revision 9467932 (validated)
+  file: sources/fiaux26.txt
+  url: https://fr.wikisource.org/w/index.php?oldid=9467932&action=raw
+  sha256: f2369f9f081cae7aed1af9dde2b6e0e63042889a076210935b3b2510da147962
+  license: text public domain; Wikisource transcription CC BY-SA 4.0
+  license_url: https://fr.wikisource.org/wiki/La_Marseillaise_(1792)
+- id: ws-fiaux27
+  name: Page:Fiaux - La Marseillaise.djvu/27, French Wikisource, revision 12849007 (proofread, not yet validated)
+  file: sources/fiaux27.txt
+  url: https://fr.wikisource.org/w/index.php?oldid=12849007&action=raw
+  sha256: d66bd6945bec612040b85781fc568391ba26a689283ab48bab69e6898b9fd19d
+  license: text public domain; Wikisource transcription CC BY-SA 4.0
+  license_url: https://fr.wikisource.org/wiki/La_Marseillaise_(1792)
+translations:
+- id: weft-editorial
+  kind: editorial
+  translator: Weft editorial translation, draft
+  year: 2026
+  form: prose, couplet by couplet, close to the French
+  license: CC BY-SA 4.0
+- id: sheridan
+  translator: attributed to Richard Brinsley Sheridan
+  year: 1795
+  form: the English singing version 'Ye sons of France, awake to glory', couplets 1-2 and the refrain only, as printed in The Canadian
+    Soldiers' Song Book (First World War), English Wikisource (Page:The Canadian soldiers' song book.djvu/12, revision 14748810)
+  license: public-domain
+  license_url: https://en.wikisource.org/wiki/The_Canadian_Soldiers%27_Song_Book/La_Marseillaise
+  file: sources/cssb12.txt
+  url: https://en.wikisource.org/w/index.php?oldid=14748810&action=raw
+  sha256: 407a4b3c9b5f9bf7487918ab6539e9b8cd907e0d18f11d7699c5861b9cdd8220
+  partial: true
+predicted_gaps:
+- the text is Fiaux's 1918 printing of the 1792 song, not a scan of a 1792 broadside; it keeps enfans and the early readings but modernizes
+  the verb endings (-aient for the 1792 -oient); a 1792 print on Wikisource or Gallica would replace it
+- '''forme ; vos bataillons'' on page 27 is read as an OCR error for ''formez vos bataillons'' (the page is proofread, not validated);
+  declared as a verify_correction, to be checked against the scan'
+- 'no treebank covers the text: lemma and morphology are a hand parse (UD French-GSD conventions) begun from a spaCy fr_core_news_md
+  3.8 parse that misread many verbs; glosses are hand-written; all draft'
+- the 1792 reading rests on Féraud (1787-88) and differs from modern French in l mouillé (bataillons, sillons, Bouillé) and the sounded
+  e of ennemi; the liaisons marked z are those of modern singing (sang-k-impur); it is approximate and says so
+- the English singing version is a free version of 1794-95 that answers only the first two couplets; the song book's attribution to
+  Sheridan is traditional and not securely established, and the year given is the version's first currency, not the book's
+- the couplet des enfants (October 1792, not by Rouget de Lisle) is not included; Fiaux's two full refrains are given, the 'etc.' lines
+  are not

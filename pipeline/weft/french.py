@@ -116,7 +116,7 @@ _LEX: dict | None = None
 _CTX: dict = {}            # the current token's context, set by token_fields for phonemize
 
 LEAD_P = re.compile(r"^([(\[«“]+)")
-TRAIL_P = re.compile(r"([,.;:!?)\]»”]+)$")
+TRAIL_P = re.compile(r"([,.;:!?)\]»”…]+)$")
 VOWELS = set("aeiouyɑɛɔøœəɥ")
 ELIDED = re.compile(r"^[^\W\d_]+[’']$")       # a word beginning with one of these takes liaison and elision
 
