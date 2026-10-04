@@ -10,7 +10,7 @@ tags:
   - german
   - french
 created_at: 2026-10-04T11:16:05.136298227-05:00
-updated_at: 2026-10-04T11:32:40.227070525-05:00
+updated_at: 2026-10-04T13:08:51.015640909-05:00
 started_at: 2026-10-04T11:18:40.497593831-05:00
 ---
 
@@ -19,6 +19,7 @@ started_at: 2026-10-04T11:18:40.497593831-05:00
 ## Notes
 
 - 2026-10-04T16:32:40Z: Verdi built 2026-10-04: texts/verdi-libretti (Traviata Brindisi + Otello Credo, 276 tokens hand-parsed; it_lexicon +112; Macfarren/Hueffer cited). Next: Figaro/Zauberfloete
+- 2026-10-04T18:08:51Z: Figaro built 2026-10-04: texts/mozart-figaro (Se vuol ballare, Non piu andrai, Voi che sapete, Dove sono; 318 tokens hand-parsed; it_lexicon +131). Next: Zauberfloete / Don Giovanni
 
 ## Log
 

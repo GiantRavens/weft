@@ -1,0 +1,20 @@
+run:
+  weft: 0.1.0
+  sections:
+  - sevuol
+  - nonpiu
+  - voiche
+  - dovesono
+counts:
+  lines: 90
+  tokens: 318
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- four numbers, not the libretto; the ensembles and the recitatives, where Da Ponte's comedy lives, are a later pilot
+- 'no treebank covers the libretto: lemma, morphology and gloss are by hand (UD Italian conventions), draft'
+- the sound is the Florentine-based standard; the Italian of a Vienna court theatre in 1786, sung by Italian and Austrian singers, is not separately modelled
+- the Wikisource libretto names no printed edition; a check against the 1786 Vienna libretto (Kurzböck) or the Neue Mozart-Ausgabe is wanted
+- 'the singing versions are cited, not printed: Macfarren by life + 70, Dent in copyright'

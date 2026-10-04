@@ -1,0 +1,97 @@
+work: mozart-figaro
+title: 'Da Ponte and Mozart, Le nozze di Figaro (1786): Se vuol ballare, Non più andrai, Voi che sapete, Dove sono'
+short_title: Le nozze di Figaro
+author: Lorenzo Da Ponte (1749-1838), librettist, for Wolfgang Amadeus Mozart (1756-1791), after Beaumarchais
+language: it
+lang_name: Italian of the opera house
+prefix: fig
+urn: urn:weft:it:daponte.nozze-di-figaro.1786
+unit: section
+section_noun: number
+written:
+  year: 1786
+  display: '1786'
+  label: libretto written in Vienna in the winter of 1785-86 after Beaumarchais's Le Mariage de Figaro (1784); first sung at the Burgtheater,
+    Vienna, 1 May 1786
+status: phase-0
+pilot:
+  sections:
+  - sevuol
+  - nonpiu
+  - voiche
+  - dovesono
+edition:
+  id: ws-figaro
+  name: Le nozze di Figaro, libretto by scene, Italian Wikisource (Atto Primo scene 2 and 8, Atto Secondo scene 3, Atto Terzo scene
+    8), the revisions pinned in sources_extra; the transcription follows the Ricordi libretto's text with the numbers and scoring of
+    each piece
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain (Da Ponte d. 1838); Wikisource transcription CC BY-SA 4.0; Weft line division CC BY-SA 4.0
+treebank: null
+schemes:
+- florentine
+- modern
+scheme_labels:
+  florentine: 'Stage Italian of the Vienna court theatre, 1786: the Florentine-based standard (approximate)'
+  modern: Standard modern Italian
+quantities: pipeline/weft/data/it_lexicon.yaml
+sound_confidence: medium
+sources_extra:
+- id: ws-figaro-I-2
+  name: Le nozze di Figaro/Atto Primo/Scena seconda, Italian Wikisource, revision 3722308
+  file: sources/figaro-I-2.txt
+  url: https://it.wikisource.org/w/index.php?oldid=3722308&action=raw
+  sha256: b632e7831134e47ba271d80043a94a929c0176b7a696658c1192b0e25b8a7b96
+  license: text public domain; Wikisource transcription CC BY-SA 4.0
+  license_url: https://it.wikisource.org/wiki/Le_nozze_di_Figaro
+- id: ws-figaro-I-8
+  name: Le nozze di Figaro/Atto Primo/Scena ottava, Italian Wikisource, revision 3722304
+  file: sources/figaro-I-8.txt
+  url: https://it.wikisource.org/w/index.php?oldid=3722304&action=raw
+  sha256: a313ca441e8f8ba2f04e237236df3c4d3e795562063ba78de7050668c407236b
+  license: text public domain; Wikisource transcription CC BY-SA 4.0
+  license_url: https://it.wikisource.org/wiki/Le_nozze_di_Figaro
+- id: ws-figaro-II-3
+  name: Le nozze di Figaro/Atto Secondo/Scena terza, Italian Wikisource, revision 3722336
+  file: sources/figaro-II-3.txt
+  url: https://it.wikisource.org/w/index.php?oldid=3722336&action=raw
+  sha256: f92d2c20aaa5aeb9b7ec48ab4dc31d005a9c3ffdcb7ddb6d7ad5572f3b10efcb
+  license: text public domain; Wikisource transcription CC BY-SA 4.0
+  license_url: https://it.wikisource.org/wiki/Le_nozze_di_Figaro
+- id: ws-figaro-III-8
+  name: Le nozze di Figaro/Atto Terzo/Scena ottava, Italian Wikisource, revision 3722342
+  file: sources/figaro-III-8.txt
+  url: https://it.wikisource.org/w/index.php?oldid=3722342&action=raw
+  sha256: 6f20c6775314ccef33a14cd1fc38af09d86cdbe27915c3b6fdb487014c8ac4d5
+  license: text public domain; Wikisource transcription CC BY-SA 4.0
+  license_url: https://it.wikisource.org/wiki/Le_nozze_di_Figaro
+translations:
+- id: weft-editorial
+  kind: editorial
+  translator: Weft editorial translation, draft
+  year: 2026
+  form: prose, number by number, close to the Italian
+  license: CC BY-SA 4.0
+- id: macfarren
+  kind: reference
+  translator: Natalia Macfarren
+  year: 1870
+  title: 'Le nozze di Figaro, vocal score with English version (London: Novello)'
+  publisher: Novello
+  note: the Victorian singing version (Macfarren d. 1916), a free text fitted to the music; cited, not printed
+- id: dent1937
+  kind: reference
+  translator: Edward J. Dent
+  year: 1937
+  title: The Marriage of Figaro, English version (Oxford University Press)
+  publisher: Oxford University Press
+  note: the standard English singing version of the twentieth century, in copyright; cited, not printed
+predicted_gaps:
+- four numbers, not the libretto; the ensembles and the recitatives, where Da Ponte's comedy lives, are a later pilot
+- 'no treebank covers the libretto: lemma, morphology and gloss are by hand (UD Italian conventions), draft'
+- the sound is the Florentine-based standard; the Italian of a Vienna court theatre in 1786, sung by Italian and Austrian singers, is
+  not separately modelled
+- the Wikisource libretto names no printed edition; a check against the 1786 Vienna libretto (Kurzböck) or the Neue Mozart-Ausgabe is
+  wanted
+- 'the singing versions are cited, not printed: Macfarren by life + 70, Dent in copyright'

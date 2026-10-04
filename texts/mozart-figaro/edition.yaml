@@ -1,0 +1,438 @@
+# Weft edition of four numbers from Le nozze di Figaro (Vienna, 1786), libretto by Lorenzo Da Ponte after Beaumarchais:
+# Figaro's cavatina Se vuol ballare (I.2) and aria Non più andrai (I.8), Cherubino's canzone Voi che sapete (II.3) and the
+# Countess's aria Dove sono (III.8). Text of Italian Wikisource's libretto (Le nozze di Figaro, by scene); each line is
+# checked verbatim against the pinned revisions. verify_strip sets aside the speaker labels, the italic stage and tempo
+# directions, the line-leading colons, the <nowiki> around a colon and the page templates. The repeats the libretto
+# prints (the return of Se vuol ballare, of Voi che sapete) are kept as printed.
+# Da Ponte's forms stand: the apocopes amor, color, onor, cor, desir, martir, saper, piacer, menzogner, almen, ognor;
+# the elisions s'io, ch'io, ch'ora, cos'è, 'l; sciabla, adoprando, andaro (for andarono), pugnendo.
+#   t     the word as printed, punctuation attached (the ellipsis of Saprò... is the libretto's)
+#   Lines are the verses; sections are the four numbers.
+work: mozart-figaro
+joiner: ' '
+verify_strip: (?sm)<noinclude>.*?</noinclude>|''[^'\n]*''|<nowiki>|</nowiki>|\{\{[^{}]*\}\}|<[^>]+>|^[:;]+
+sections:
+- id: sevuol
+  title: 'Figaro: Se vuol ballare (Act I, scene 2)'
+  verify_in: sources/figaro-I-2.txt
+  lines:
+  - tokens:
+    - t: Se
+    - t: vuol
+    - t: ballare,
+  - tokens:
+    - t: Signor
+    - t: Contino,
+  - tokens:
+    - t: Il
+    - t: chitarrino
+  - tokens:
+    - t: Le
+    - t: suonerò.
+  - tokens:
+    - t: Se
+    - t: vuol
+    - t: venire
+  - tokens:
+    - t: Nella
+    - t: mia
+    - t: scuola,
+  - tokens:
+    - t: La
+    - t: capriola
+  - tokens:
+    - t: Le
+    - t: insegnerò.
+  - tokens:
+    - t: Saprò...
+    - t: Ma,
+    - t: 'piano:'
+  - tokens:
+    - t: Meglio
+    - t: ogni
+    - t: arcano,
+  - tokens:
+    - t: Dissimulando,
+  - tokens:
+    - t: Scoprir
+    - t: potrò.
+  - tokens:
+    - t: L’arte
+    - t: schermendo,
+  - tokens:
+    - t: L’arte
+    - t: adoprando,
+  - tokens:
+    - t: Di
+    - t: qua
+    - t: pugnendo,
+  - tokens:
+    - t: Di
+    - t: là
+    - t: scherzando,
+  - tokens:
+    - t: Tutte
+    - t: le
+    - t: macchine
+  - tokens:
+    - t: Rovescerò.
+  - tokens:
+    - t: Se
+    - t: vuol
+    - t: ballare,
+  - tokens:
+    - t: Signor
+    - t: Contino,
+  - tokens:
+    - t: Il
+    - t: chitarrino
+  - tokens:
+    - t: Le
+    - t: suonerò.
+- id: nonpiu
+  title: 'Figaro: Non più andrai (Act I, scene 8)'
+  verify_in: sources/figaro-I-8.txt
+  lines:
+  - tokens:
+    - t: Non
+    - t: più
+    - t: andrai,
+    - t: farfallone
+    - t: amoroso,
+  - tokens:
+    - t: Notte
+    - t: e
+    - t: giorno
+    - t: d’intorno
+    - t: girando,
+  - tokens:
+    - t: Delle
+    - t: belle
+    - t: turbando
+    - t: il
+    - t: riposo,
+  - tokens:
+    - t: Narcisetto,
+    - t: Adoncino
+    - t: d’amor.
+  - tokens:
+    - t: Non
+    - t: più
+    - t: avrai
+    - t: questi
+    - t: bei
+    - t: pennacchini,
+  - tokens:
+    - t: Quel
+    - t: cappello
+    - t: leggero
+    - t: e
+    - t: galante,
+  - tokens:
+    - t: Quella
+    - t: chioma,
+    - t: quell’aria
+    - t: brillante,
+  - tokens:
+    - t: Quel
+    - t: vermiglio,
+    - t: donnesco
+    - t: color.
+  - tokens:
+    - t: Tra
+    - t: guerrieri,
+    - t: poffar
+    - t: Bacco!
+  - tokens:
+    - t: Gran
+    - t: mustacchi,
+    - t: stretto
+    - t: sacco,
+  - tokens:
+    - t: Schioppo
+    - t: in
+    - t: spalla,
+    - t: sciabla
+    - t: al
+    - t: fianco,
+  - tokens:
+    - t: Collo
+    - t: dritto,
+    - t: muso
+    - t: franco,
+  - tokens:
+    - t: Un
+    - t: gran
+    - t: casco,
+    - t: o
+    - t: un
+    - t: gran
+    - t: turbante,
+  - tokens:
+    - t: Molto
+    - t: onor,
+    - t: poco
+    - t: contante,
+  - tokens:
+    - t: Ed
+    - t: invece
+    - t: del
+    - t: fandango,
+  - tokens:
+    - t: Una
+    - t: marcia
+    - t: per
+    - t: il
+    - t: fango.
+  - tokens:
+    - t: Per
+    - t: montagne,
+    - t: per
+    - t: valloni,
+  - tokens:
+    - t: Con
+    - t: le
+    - t: nevi
+    - t: e
+    - t: i
+    - t: sollioni,
+  - tokens:
+    - t: Al
+    - t: concerto
+    - t: di
+    - t: tromboni,
+  - tokens:
+    - t: Di
+    - t: bombarde,
+    - t: di
+    - t: cannoni,
+  - tokens:
+    - t: Che
+    - t: le
+    - t: palle
+    - t: in
+    - t: tutti
+    - t: i
+    - t: tuoni
+  - tokens:
+    - t: All’orecchio
+    - t: fan
+    - t: fischiar.
+  - tokens:
+    - t: Cherubino,
+    - t: alla
+    - t: vittoria!
+  - tokens:
+    - t: Alla
+    - t: gloria
+    - t: militar!
+- id: voiche
+  title: 'Cherubino: Voi che sapete (Act II, scene 3)'
+  verify_in: sources/figaro-II-3.txt
+  lines:
+  - tokens:
+    - t: Voi
+    - t: che
+    - t: sapete
+  - tokens:
+    - t: Che
+    - t: cosa
+    - t: è
+    - t: amor,
+  - tokens:
+    - t: Donne,
+    - t: vedete
+  - tokens:
+    - t: S’io
+    - t: l’ho
+    - t: nel
+    - t: cor.
+  - tokens:
+    - t: Quello
+    - t: ch’io
+    - t: provo
+  - tokens:
+    - t: Vi
+    - t: ridirò;
+  - tokens:
+    - t: È
+    - t: per
+    - t: me
+    - t: nuovo,
+  - tokens:
+    - t: Capir
+    - t: nol
+    - t: so.
+  - tokens:
+    - t: Sento
+    - t: un
+    - t: affetto
+  - tokens:
+    - t: Pien
+    - t: di
+    - t: desir
+  - tokens:
+    - t: Ch’ora
+    - t: è
+    - t: diletto,
+  - tokens:
+    - t: Ch’ora
+    - t: è
+    - t: martir.
+  - tokens:
+    - t: Gelo,
+    - t: e
+    - t: poi
+    - t: sento
+  - tokens:
+    - t: L’alma
+    - t: avvampar,
+  - tokens:
+    - t: E
+    - t: in
+    - t: un
+    - t: momento
+  - tokens:
+    - t: Torno
+    - t: a
+    - t: gelar.
+  - tokens:
+    - t: Ricerco
+    - t: un
+    - t: bene
+  - tokens:
+    - t: Fuori
+    - t: di
+    - t: me,
+  - tokens:
+    - t: Non
+    - t: so
+    - t: chi
+    - t: ’l
+    - t: tiene,
+  - tokens:
+    - t: Non
+    - t: so
+    - t: cos’è.
+  - tokens:
+    - t: Sospiro
+    - t: e
+    - t: gemo
+  - tokens:
+    - t: Senza
+    - t: voler,
+  - tokens:
+    - t: Palpito
+    - t: e
+    - t: tremo
+  - tokens:
+    - t: Senza
+    - t: saper,
+  - tokens:
+    - t: Non
+    - t: trovo
+    - t: pace
+  - tokens:
+    - t: Notte
+    - t: né
+    - t: 'dì:'
+  - tokens:
+    - t: Ma
+    - t: pur
+    - t: mi
+    - t: piace
+  - tokens:
+    - t: Languir
+    - t: così.
+  - tokens:
+    - t: Voi
+    - t: che
+    - t: sapete
+  - tokens:
+    - t: Che
+    - t: cosa
+    - t: è
+    - t: amor,
+  - tokens:
+    - t: Donne,
+    - t: vedete
+  - tokens:
+    - t: S’io
+    - t: l’ho
+    - t: nel
+    - t: cor.
+- id: dovesono
+  title: 'The Countess: Dove sono (Act III, scene 8)'
+  verify_in: sources/figaro-III-8.txt
+  lines:
+  - tokens:
+    - t: Dove
+    - t: sono
+    - t: i
+    - t: bei
+    - t: momenti
+  - tokens:
+    - t: Di
+    - t: dolcezza
+    - t: e
+    - t: di
+    - t: piacer,
+  - tokens:
+    - t: Dove
+    - t: andaro
+    - t: i
+    - t: giuramenti
+  - tokens:
+    - t: Di
+    - t: quel
+    - t: labbro
+    - t: menzogner?
+  - tokens:
+    - t: Perché
+    - t: mai,
+    - t: se
+    - t: in
+    - t: pianti
+    - t: e
+    - t: in
+    - t: pene
+  - tokens:
+    - t: Per
+    - t: me
+    - t: tutto
+    - t: si
+    - t: cangiò,
+  - tokens:
+    - t: La
+    - t: memoria
+    - t: di
+    - t: quel
+    - t: bene
+  - tokens:
+    - t: Dal
+    - t: mio
+    - t: sen
+    - t: non
+    - t: trapassò?
+  - tokens:
+    - t: Ah!
+    - t: Se
+    - t: almen
+    - t: la
+    - t: mia
+    - t: costanza
+  - tokens:
+    - t: Nel
+    - t: languire
+    - t: amando
+    - t: ognor
+  - tokens:
+    - t: Mi
+    - t: portasse
+    - t: una
+    - t: speranza
+  - tokens:
+    - t: Di
+    - t: cangiar
+    - t: l’ingrato
+    - t: cor.

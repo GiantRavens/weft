@@ -94,6 +94,7 @@ the page shows no invitation.
 | Japanese | `japanese` | Bashō | edo-1686 (first), modern | not set |
 | Franco-Italian | `oldfrench` | Marco Polo, Cipangu | fr1300 (first), it1300 | medium |
 | Italian | `italian` | Dante, Petrarch, Machiavelli | florentine (first), modern | not set |
+| | | Da Ponte, Le nozze di Figaro (1786) | florentine (first), modern | medium |
 | | | Verdi, Brindisi and Credo (1853, 1887) | florentine (first), modern | medium |
 | Spanish | `spanish` | Columbus, 1493 | c1492 (first), modern | not set |
 | Portuguese | `portuguese` | Camões, Os Lusíadas I.1-3 | lisboa1540 (first), europeu, brasileiro | medium |
