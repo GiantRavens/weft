@@ -5,7 +5,7 @@
   </picture>
 </h1>
 
-<p align="center"><strong><a href="https://giantravens.github.io/weft/">Read the library</a></strong> · <a href="docs/about.md">About Weft, for readers and scholars</a> · <a href="docs/languages.md">Languages and pronunciation</a></p>
+<p align="center"><strong><a href="https://weftlibrary.org/">Read the library</a></strong> · <a href="docs/about.md">About Weft, for readers and scholars</a> · <a href="docs/languages.md">Languages and pronunciation</a></p>
 
 Living interlinear editions of classical texts. Every line of the source is stitched to
 its sound, its literal word-for-word gloss, and one or more published translations,
@@ -56,8 +56,8 @@ Later layers: metre, notes, audio. Layers are named, never numbered.
 
 ## Viewing
 
-The library is published to GitHub Pages on every push to `main`:
-<https://giantravens.github.io/weft/>. The workflow in `.github/workflows/pages.yml` runs the
+The library is published to GitHub Pages on every push to `main`, at its own domain:
+<https://weftlibrary.org/> (the older address giantravens.github.io/weft redirects there). The workflow in `.github/workflows/pages.yml` runs the
 tests, builds every work with `weft build all`, and deploys `site/build/`. It needs no source
 files, because the build reads only what is committed.
 
@@ -93,6 +93,7 @@ Sixty-one works built across twenty-six languages, oldest first in the library:
 | Gospel of John | 1:1-18, the prologue | Koine, Erasmian | Tyndale 1534, Geneva 1599, King James 1611 |
 | The Beatitudes (Matthew 5:3-12) | 10 verses | Koine, Erasmian | Tyndale 1534, Geneva 1599, King James 1611 |
 | 1 Corinthians 13 | the whole chapter | Koine, Erasmian | Tyndale 1534, Geneva 1599, King James 1611 |
+| The Nicene-Constantinopolitan Creed | the exposition of the 150 fathers (381), the conciliar text in the plural | Koine of 381, Erasmian | Schaff 1877 |
 | Ovid, Metamorphoses | 1.1-9 | classical, ecclesiastical | Golding 1567, More 1922 |
 | Res Gestae Divi Augusti | heading, chapters 1-4, 34-35 | classical (Rome under Augustus), ecclesiastical | Fairley 1898, Shipley 1924 |
 | Yijing (I Ching), the Zhouyi | all 64 hexagrams: names, judgments and line statements; a three-coin casting panel | Old Chinese (Baxter-Sagart), Tang, Mandarin | Legge 1882; Wilhelm and Baynes 1950 cited |
@@ -143,6 +144,7 @@ Sixty-one works built across twenty-six languages, oldest first in the library:
 | Swahili tales from Zanzibar: The Kites and the Crows | the whole tale (Steere 1870) | Zanzibar Swahili about 1870, modern standard | Steere 1870 |
 | Nietzsche: the madman and Zarathustra's descent | Gay Science 125 (1882); Zarathustra, prologue 1 (1883) | northern German before 1898, modern German | Common 1909 and 1910, Tille 1896 |
 | General Act of the Berlin Conference | the preamble, chapter I (free trade in the Congo basin) and articles 34-35 (effective occupation) | diplomatic French of 1885, modern | Hertslet's Foreign Office translation, American Journal of International Law 1909 |
+| Zamenhof, the Unua Libro specimens | the Lord's Prayer, Mi'a pens'o, El Heine and Ho, mi'a kor’ (1887), in the print's divided spelling; the first invented language in the public library | as Zamenhof described it | Weft editorial (draft); the King James prayer |
 | Haiku of Bashō | 9 haiku, 1680-1694 | Edo (1680s-90s), modern | Chamberlain 1902, Aston 1899, Hearn 1898 and 1900, Noguchi 1914; Yuasa 1966 cited |
 | Grettis saga | chapter 14, sentences 1-9 | Old Norse, modern Icelandic | Morris and Magnússon 1869, Hight 1914 |
 

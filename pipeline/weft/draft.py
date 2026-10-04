@@ -14,14 +14,14 @@ from pathlib import Path
 
 import yaml
 
-from . import __version__, akkadian, chinese, coptic, dutch, egyptian, elvish, french, german, greek, hebrew, italian, japanese, latin, mongolian, norse, oldeastslavic, oldenglish, oldfrench, persian, portuguese, runic, sanskrit, spanish, sumerian, swahili, tamil, treebank
+from . import __version__, akkadian, chinese, coptic, dutch, egyptian, elvish, esperanto, french, german, greek, hebrew, italian, japanese, latin, mongolian, norse, oldeastslavic, oldenglish, oldfrench, persian, portuguese, runic, sanskrit, spanish, sumerian, swahili, tamil, treebank
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
 INDECLINABLE = set("dcgriebz")   # b: GLAUx coordinating conjunction
 PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebrew, "arc": hebrew, "lzh": chinese, "runic": runic, "ja": japanese, "san": sanskrit,
         "akk": akkadian, "fa": persian, "ta": tamil, "it": italian, "fr": french,
         "es": spanish, "nl": dutch, "fro": oldfrench, "de": german, "egy": egyptian, "sux": sumerian, "orv": oldeastslavic, "xng": mongolian, "cop": coptic, "sw": swahili,
-        "qya": elvish, "sjn": elvish,      # Quenya and Sindarin share one module; private works only
+        "qya": elvish, "sjn": elvish, "eo": esperanto,      # Quenya and Sindarin share one module; private works only
         "pt": portuguese}
 NORMALIZE = {"heyne-to-macron": oldenglish.heyne_to_macron}
 LEAD = re.compile(r"^([(\[“«‹\"]+|[-–—]\u00a0)")

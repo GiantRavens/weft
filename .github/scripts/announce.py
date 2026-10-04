@@ -40,7 +40,7 @@ import urllib.request
 from collections import Counter
 from datetime import datetime, timezone
 
-SITE = "https://giantravens.github.io/weft/"
+SITE = "https://weftlibrary.org/"
 PDS = "https://bsky.social/xrpc/"
 LIMIT = 300            # Bluesky's limit is 300 graphemes; characters are a safe stand-in here
 UPDATE_MIN = 300       # changed lines in one work's folder that count as an update worth a post

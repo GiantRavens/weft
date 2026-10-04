@@ -1,0 +1,243 @@
+# Weft edition of the Nicene-Constantinopolitan Creed, the ῎Εκθεσις τῶν ρν' πατέρων, the exposition of the hundred and
+# fifty fathers of the Council of Constantinople (381), in the Greek text transmitted in the acts of the Council of
+# Chalcedon (451), as transcribed on Greek Wikisource; each line is checked verbatim against the pinned revision.
+# verify_strip sets aside the page's bold title and category; the transcription's four slips (συμπροσκυνούμνον,
+# προφηῶν, ἐκκησίαν, ἕσται) and its detached breathing in ᾽Ιησοῦν are declared as corrections to the standard text.
+# This is the conciliar text in the first person plural (Πιστεύομεν, ὁμολογοῦμεν, προσδοκῶμεν); the liturgical form
+# that the Greek church recites has the singular (Πιστεύω) and ἐκ δεξιῶν for ἐν δεξιᾷ, and the Latin West added
+# καὶ τοῦ Υἱοῦ (filioque) to the procession of the Spirit: see the notes.
+#   t     the word as transcribed, polytonic, punctuation attached; the elision δι᾽ keeps its mark
+#   Lines are Weft's division at the clauses; sections are the creed's articles.
+work: nicene-creed
+joiner: ' '
+verify_in: sources/ekthesis-150.txt
+verify_strip: '''''''[^'']*''''''|\[\[[^\]]*\]\]'
+verify_corrections:
+- ocr: συμπροσκυνούμνον
+  print: συμπροσκυνούμενον
+- ocr: προφηῶν·
+  print: προφητῶν·
+- ocr: ἐκκησίαν·
+  print: ἐκκλησίαν·
+- ocr: ἕσται
+  print: ἔσται
+- ocr: ᾽Ιησοῦν
+  print: Ἰησοῦν
+sections:
+- id: pater
+  title: The Father
+  lines:
+  - tokens:
+    - t: Πιστεύομεν
+    - t: εἰς
+    - t: ἕνα
+    - t: θεὸν
+    - t: πατέρα
+    - t: παντοκράτορα,
+  - tokens:
+    - t: ποιητήν
+    - t: οὐρανοῦ
+    - t: καὶ
+    - t: γῆς
+    - t: ὁρατῶν
+    - t: τε
+    - t: πάντων
+    - t: καὶ
+    - t: ἀοράτων·
+- id: hyios
+  title: The Son, begotten before the ages
+  lines:
+  - tokens:
+    - t: καὶ
+    - t: εἰς
+    - t: ἕνα
+    - t: κύριον
+    - t: Ἰησοῦν
+    - t: Χριστὸν
+  - tokens:
+    - t: τὸν
+    - t: υἱὸν
+    - t: τοῦ
+    - t: θεοῦ
+    - t: τὸν
+    - t: μονογενῆ,
+  - tokens:
+    - t: τὸν
+    - t: ἐκ
+    - t: τοῦ
+    - t: πατρὸς
+    - t: γεννηθέντα
+    - t: πρὸ
+    - t: πάντων
+    - t: τῶν
+    - t: αἰώνων,
+  - tokens:
+    - t: φῶς
+    - t: ἐκ
+    - t: φωτός,
+    - t: θεὸν
+    - t: ἀληθινὸν
+    - t: ἐκ
+    - t: θεοῦ
+    - t: ἀληθινοῦ,
+  - tokens:
+    - t: γεννηθέντα
+    - t: οὐ
+    - t: ποιηθέντα,
+    - t: ὁμοούσιον
+    - t: τῷ
+    - t: πατρί,
+  - tokens:
+    - t: δι᾽
+    - t: οὗ
+    - t: τὰ
+    - t: πάντα
+    - t: ἐγένετο,
+- id: oikonomia
+  title: The Son made man, crucified, risen, to come again
+  lines:
+  - tokens:
+    - t: τὸν
+    - t: δι᾽
+    - t: ἡμᾶς
+    - t: τοὺς
+    - t: ἀνθρώπους
+    - t: καὶ
+    - t: διὰ
+    - t: τὴν
+    - t: ἡμετέραν
+    - t: σωτηρίαν
+  - tokens:
+    - t: κατελθόντα
+    - t: ἐκ
+    - t: τῶν
+    - t: οὐρανῶν
+  - tokens:
+    - t: καὶ
+    - t: σαρκωθέντα
+    - t: ἐκ
+    - t: πνεύματος
+    - t: ἁγίου
+    - t: καὶ
+    - t: Μαρίας
+    - t: τῆς
+    - t: παρθένου
+    - t: καὶ
+    - t: ἐνανθρωπήσαντα,
+  - tokens:
+    - t: σταυρωθέντα
+    - t: τε
+    - t: ὑπὲρ
+    - t: ἡμῶν
+    - t: ἐπὶ
+    - t: Ποντίου
+    - t: Πιλάτου
+  - tokens:
+    - t: καὶ
+    - t: παθόντα
+    - t: καὶ
+    - t: ταφέντα
+  - tokens:
+    - t: καὶ
+    - t: ἀναστάντα
+    - t: τῇ
+    - t: τρίτῃ
+    - t: ἡμέρᾳ
+    - t: κατὰ
+    - t: τὰς
+    - t: γραφὰς
+  - tokens:
+    - t: καὶ
+    - t: ἀνελθόντα
+    - t: εἰς
+    - t: τοὺς
+    - t: οὐρανούς
+    - t: καὶ
+    - t: καθεζόμενον
+    - t: ἐν
+    - t: δεξιᾷ
+    - t: τοῦ
+    - t: πατρὸς
+  - tokens:
+    - t: καὶ
+    - t: πάλιν
+    - t: ἐρχόμενον
+    - t: μετὰ
+    - t: δόξης
+    - t: κρῖναι
+    - t: ζῶντας
+    - t: καὶ
+    - t: νεκρούς,
+  - tokens:
+    - t: οὗ
+    - t: τῆς
+    - t: βασιλείας
+    - t: οὐκ
+    - t: ἔσται
+    - t: τέλος·
+- id: pneuma
+  title: The Holy Spirit
+  lines:
+  - tokens:
+    - t: καὶ
+    - t: εἰς
+    - t: τὸ
+    - t: πνεῦμα
+    - t: τὸ
+    - t: ἅγιον,
+  - tokens:
+    - t: τὸ
+    - t: κύριον
+    - t: καὶ
+    - t: ζωοποιόν,
+  - tokens:
+    - t: τὸ
+    - t: ἐκ
+    - t: τοῦ
+    - t: πατρὸς
+    - t: ἐκπορευόμενον,
+  - tokens:
+    - t: τὸ
+    - t: σὺν
+    - t: πατρὶ
+    - t: καὶ
+    - t: υἱῷ
+    - t: συμπροσκυνούμενον
+    - t: καὶ
+    - t: συνδοξαζόμενον,
+  - tokens:
+    - t: τὸ
+    - t: λαλῆσαν
+    - t: διὰ
+    - t: τῶν
+    - t: προφητῶν·
+- id: ekklesia
+  title: The Church, baptism, the resurrection
+  lines:
+  - tokens:
+    - t: εἰς
+    - t: μίαν
+    - t: ἁγίαν
+    - t: καθολικὴν
+    - t: καὶ
+    - t: ἀποστολικὴν
+    - t: ἐκκλησίαν·
+  - tokens:
+    - t: ὁμολογοῦμεν
+    - t: ἓν
+    - t: βάπτισμα
+    - t: εἰς
+    - t: ἄφεσιν
+    - t: ἁμαρτιῶν·
+  - tokens:
+    - t: προσδοκῶμεν
+    - t: ἀνάστασιν
+    - t: νεκρῶν
+  - tokens:
+    - t: καὶ
+    - t: ζωὴν
+    - t: τοῦ
+    - t: μέλλοντος
+    - t: αἰῶνος.
+  - tokens:
+    - t: ἀμήν.

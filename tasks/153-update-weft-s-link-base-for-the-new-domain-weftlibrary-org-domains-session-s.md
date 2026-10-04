@@ -1,13 +1,15 @@
 ---
 id: 153
 title: Update weft's link base for the new domain weftlibrary.org (domains session s...
-state: TODO
+state: DONE
 priority: 2
 tags:
   - domain
   - announce
 created_at: 2026-10-02T20:52:18.053107548-05:00
-updated_at: 2026-10-02T22:16:11.462960949-05:00
+updated_at: 2026-10-04T10:22:50.890576301-05:00
+started_at: 2026-10-04T10:16:19.014359816-05:00
+completed_at: 2026-10-04T10:22:50.890563724-05:00
 ---
 
 # Update weft's link base for the new domain weftlibrary.org (domains session sets the GitHub Pages custom domain; old giantravens.github.io/weft/* links will redirect)
@@ -20,3 +22,5 @@ updated_at: 2026-10-02T22:16:11.462960949-05:00
 ## Log
 
 - 2026-10-03T01:52:18Z: Created task
+- 2026-10-04T15:16:19Z: State changed from TODO to BEGUN
+- 2026-10-04T15:22:50Z: State changed from BEGUN to DONE

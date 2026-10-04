@@ -1,0 +1,22 @@
+run:
+  weft: 0.1.0
+  sections:
+  - pater
+  - hyios
+  - oikonomia
+  - pneuma
+  - ekklesia
+counts:
+  lines: 27
+  tokens: 175
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- the Greek is the Wikisource transcription of the Chalcedonian text, which names no printed edition; its four slips and one detached breathing are corrected as declared, and a check against a critical
+  text (Kelly; Denzinger) is wanted
+- 'no treebank covers the text: lemma, morphology and gloss are by hand (MorphGNT conventions), draft'
+- the Koine scheme is Buth's first-century reconstruction applied to 381; by then η had likely merged with ι in many speakers, and the scheme is labelled approximate
+- Schaff's English is typed from the OCR of the 1919 printing and checked against it phrase by phrase, not transcribed from a page scan
+- the Shema and the Kaddish, the companion texts of this strand, are not yet built

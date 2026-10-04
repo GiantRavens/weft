@@ -16,9 +16,9 @@ import yaml
 from . import __version__, treebank
 from .draft import PHON, load_manifest
 
-HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "arc": "arc", "lzh": "lzh", "runic": "gmq", "ja": "ja", "san": "sa", "akk": "akk", "fa": "fa", "ta": "ta", "it": "it", "fr": "fr", "es": "es", "nl": "nl", "fro": "fro", "de": "de", "egy": "egy", "sux": "sux", "orv": "orv", "xng": "xng", "cop": "cop", "sw": "sw", "qya": "qya", "sjn": "sjn", "pt": "pt"}
+HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "arc": "arc", "lzh": "lzh", "runic": "gmq", "ja": "ja", "san": "sa", "akk": "akk", "fa": "fa", "ta": "ta", "it": "it", "fr": "fr", "es": "es", "nl": "nl", "fro": "fro", "de": "de", "egy": "egy", "sux": "sux", "orv": "orv", "xng": "xng", "cop": "cop", "sw": "sw", "qya": "qya", "sjn": "sjn", "pt": "pt", "eo": "eo"}
 RTL = {"hbo", "arc", "fa"}
-LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "arc": "Biblical Aramaic", "lzh": "Classical Chinese", "runic": "Runic Norse", "ja": "Early modern Japanese", "san": "Vedic Sanskrit", "akk": "Akkadian", "fa": "Classical Persian", "ta": "Old Tamil", "it": "Renaissance Italian", "fr": "Middle French", "es": "Early Modern Spanish", "nl": "Early Modern Dutch", "fro": "Old French", "de": "German", "egy": "Old Egyptian", "sux": "Sumerian", "orv": "Old East Slavic", "xng": "Middle Mongolian", "cop": "Sahidic Coptic", "sw": "Swahili", "qya": "Quenya", "sjn": "Sindarin", "pt": "Portuguese"}
+LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "arc": "Biblical Aramaic", "lzh": "Classical Chinese", "runic": "Runic Norse", "ja": "Early modern Japanese", "san": "Vedic Sanskrit", "akk": "Akkadian", "fa": "Classical Persian", "ta": "Old Tamil", "it": "Renaissance Italian", "fr": "Middle French", "es": "Early Modern Spanish", "nl": "Early Modern Dutch", "fro": "Old French", "de": "German", "egy": "Old Egyptian", "sux": "Sumerian", "orv": "Old East Slavic", "xng": "Middle Mongolian", "cop": "Sahidic Coptic", "sw": "Swahili", "qya": "Quenya", "sjn": "Sindarin", "pt": "Portuguese", "eo": "Esperanto"}
 
 
 def _load_yaml_dir(d: Path) -> list[tuple[Path, object]]:
@@ -221,7 +221,7 @@ def library_order(repo: Path, private: bool = False) -> list[dict]:
     return ms
 
 
-SITE_URL = os.environ.get("WEFT_SITE_URL", "https://giantravens.github.io/weft/")
+SITE_URL = os.environ.get("WEFT_SITE_URL", "https://weftlibrary.org/")   # the library's own domain since 2026-10-02; the GitHub Pages address redirects to it
 
 
 def preview_meta(data: dict) -> str:

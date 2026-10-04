@@ -1,0 +1,94 @@
+work: zamenhof-unua-libro
+title: 'Dr. Esperanto''s Unua Libro (1887): the specimen texts, Patr''o ni''a, Mi''a pens''o, El Heine and Ho, mi''a kor’'
+short_title: Unua Libro
+author: L. L. Zamenhof, as Doktoro Esperanto (1859-1917)
+language: eo
+lang_name: Esperanto of 1887
+prefix: ul
+urn: urn:weft:eo:zamenhof.unua-libro.1887
+unit: section
+section_noun: text
+written:
+  year: 1887
+  display: '1887'
+  label: published at Warsaw on 26 July 1887 in Russian, the first book of the language; Polish, French and German editions the same
+    year; the English edition by Geoghegan, whose text this is, in 1889
+status: phase-0
+pilot:
+  sections:
+  - patro
+  - penso
+  - heine
+  - kor
+edition:
+  id: geoghegan1889
+  name: 'Dr. Esperanto''s International Language, Introduction and Complete Grammar, Por Angloj, translated by R. H. Geoghegan (Warsaw:
+    Kelter, 1889), pages 19 and 21-23, the specimens, as transcribed on English Wikisource (Page:Dr. Esperanto''s International Language
+    ... Warsaw, 1889.pdf/19-23); the print''s commas between the parts of words appear as apostrophes in the transcription'
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain (Zamenhof d. 1917, Geoghegan d. 1943); Wikisource transcription CC BY-SA 4.0; Weft line division CC BY-SA
+    4.0
+treebank: null
+schemes:
+- zamenhof
+sources_extra:
+- id: ws-g19
+  name: Page:Dr. Esperanto's International Language. Introduction and complete grammar. Por angloj. Warsaw, 1889.pdf/19, English Wikisource,
+    revision 13738530 (validated)
+  file: sources/g19.txt
+  url: https://en.wikisource.org/w/index.php?oldid=13738530&action=raw
+  sha256: 46769d71653094127fe3740c5160adb5db11ee68e9b736412d9a29fa0ca31cf8
+  license: text public domain; Wikisource transcription CC BY-SA 4.0
+  license_url: https://en.wikisource.org/wiki/Dr._Esperanto%27s_International_Language_(1889)
+- id: ws-g21
+  name: Page:Dr. Esperanto's International Language. Introduction and complete grammar. Por angloj. Warsaw, 1889.pdf/21, English Wikisource,
+    revision 14305183 (validated)
+  file: sources/g21.txt
+  url: https://en.wikisource.org/w/index.php?oldid=14305183&action=raw
+  sha256: 0fbb9660dc84f60ec555445535dddc7b44372f11b3aa82091129dfb4679f0913
+  license: text public domain; Wikisource transcription CC BY-SA 4.0
+  license_url: https://en.wikisource.org/wiki/Dr._Esperanto%27s_International_Language_(1889)
+- id: ws-g22
+  name: Page:Dr. Esperanto's International Language. Introduction and complete grammar. Por angloj. Warsaw, 1889.pdf/22, English Wikisource,
+    revision 14306177 (validated)
+  file: sources/g22.txt
+  url: https://en.wikisource.org/w/index.php?oldid=14306177&action=raw
+  sha256: 2aa920ffc740baff004715ffa0076d559f2872e8758ba31376df759d841545a3
+  license: text public domain; Wikisource transcription CC BY-SA 4.0
+  license_url: https://en.wikisource.org/wiki/Dr._Esperanto%27s_International_Language_(1889)
+- id: ws-g23
+  name: Page:Dr. Esperanto's International Language. Introduction and complete grammar. Por angloj. Warsaw, 1889.pdf/23, English Wikisource,
+    revision 14305185 (validated)
+  file: sources/g23.txt
+  url: https://en.wikisource.org/w/index.php?oldid=14305185&action=raw
+  sha256: cea6b68e63d3e444e315bbb6e67c3a33375f5fdb2d736fb29ae4fdec8746bcf3
+  license: text public domain; Wikisource transcription CC BY-SA 4.0
+  license_url: https://en.wikisource.org/wiki/Dr._Esperanto%27s_International_Language_(1889)
+translations:
+- id: weft-editorial
+  kind: editorial
+  translator: Weft editorial translation, draft
+  year: 2026
+  form: prose, text by text, close to the Esperanto
+  license: CC BY-SA 4.0
+- id: kjv1611
+  translator: King James Bible
+  year: 1611
+  partial: true
+  form: Matthew 6:9-13, the Lord's Prayer, set against Zamenhof's version only
+  license: public-domain
+  license_url: https://ebible.org/eng-kjv/
+predicted_gaps:
+- the text is Geoghegan's 1889 English edition, not the Russian first printing of 26 July 1887; the specimens are the same texts, and
+  the Russian edition's pages (Commons, Unua Libro ru 1st ed.pdf) would allow a check
+- Si rakont'as (for Ŝi) and tranquil'iĝ'u (for trankvil'iĝ'u) are kept as printed with the regular forms in n; whether they are the
+  author's or the printer's is not settled here
+- the transcription's slips (Cyrillic о in seven word-endings, est,as) are declared as corrections against the print and should be checked
+  against the scan
+- lemma and morphology are a rule-based analysis (esperanto.analyze) checked by hand, declared as such; glosses are hand-written; all
+  draft
+- the vowel qualities are Zamenhof's comparisons, not measurements; the division of consonant clusters between syllables is Weft's rule,
+  not his
+- Geoghegan's book gives the specimens without English; the prayer has the King James text beside it, the three poems only Weft's editorial
+  prose

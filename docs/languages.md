@@ -65,6 +65,7 @@ the page shows no invitation.
 | Akkadian | `akkadian` | Hammurabi, prologue | ob-1750 (first), classroom | low |
 | Vedic Sanskrit | `sanskrit` | Rigveda 1.1 | vedic (first), modern | medium |
 | Ancient Greek | `greek` | Iliad, Odyssey, Aristotle | restored (first), erasmian | not set |
+| | | Nicene Creed (381) | koine (first), erasmian | medium |
 | | | John, Beatitudes, 1 Corinthians 13 | koine (first), erasmian | not set |
 | | | Epictetus, Marcus Aurelius | koine (first), restored, erasmian | not set |
 | Biblical Hebrew | `hebrew` | Genesis | tiberian (first), modern-israeli | not set |
@@ -106,6 +107,7 @@ the page shows no invitation.
 | | | Marx and Engels, Manifest (1848) | northern (first), modern | medium |
 | | | Luther's Bible | ecg1545 (first), modern | not set |
 | Swahili | `swahili` | Steere, The Kites and the Crows | z1870 (first), modern | medium |
+| Esperanto | `esperanto` | Zamenhof, Unua Libro specimens (1887) | zamenhof (only) | not set |
 | Quenya, Sindarin | `elvish` | private works only (Tolkien, in copyright) | tolkien (only) | not set |
 
 The registry that maps a manifest's `language` code to a module is `PHON` in
@@ -805,6 +807,27 @@ drop one of them (module and manifest).
 **What a specialist could improve.** The syllabic-nasal rule and the a + e coalescence in
 `swahili.py`; the modern forms in `texts/swahili-tales-steere/edition.yaml`; aspiration where a
 nasal was lost.
+
+## Esperanto
+
+The first invented language in the public library, and the second (after Tolkien's, private) whose
+author wrote down its pronunciation. Zamenhof's Unua Libro (1887) gives the alphabet with a sound for
+each letter and the rule that the accent falls on the last syllable but one; the Fundamento (1905)
+fixed both (rules 9 and 10). So the one scheme is the author's rule, not a reconstruction:
+
+- `zamenhof`, "As Zamenhof described it: Unua Libro (1887), Fundamento (1905)": a e i o u one sound
+  each; c ts, ĉ ch, ĝ j, ĥ the ch of Bach, ĵ the j of French jour, ŝ sh, ŭ w, j y, r trilled, g and
+  s always hard; aj ej oj uj aŭ eŭ one syllable; stress on the penult, an elided final o (kor’, l’)
+  leaving it where it was.
+
+What the rule leaves open and Weft decides: the exact vowel qualities (Zamenhof gave them by
+comparison with other languages), and where a consonant cluster divides between syllables (es.tas,
+pa.tro: s + stop divides, obstruent + liquid holds). No lexicon is needed; the sound follows from the
+letters. The module also reads the grammar: the 1887 print divides each word into its parts
+(Patr'o ni'a), and `esperanto.analyze` turns the division into lemma and Universal Dependencies
+features by the Fundamento's rules, which the overlay declares as an automatic analysis checked by
+hand. The 1887 spellings that differ from later usage (Si for Ŝi, tranquil- for trankvil-) are kept
+in t with the regular form in n.
 
 ## Quenya and Sindarin (Tolkien)
 

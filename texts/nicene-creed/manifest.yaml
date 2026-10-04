@@ -1,0 +1,77 @@
+work: nicene-creed
+title: 'The Nicene-Constantinopolitan Creed (381): the exposition of the hundred and fifty fathers'
+short_title: Nicene Creed
+author: The Council of Constantinople (381), enlarging the Council of Nicaea (325)
+language: grc
+lang_name: Koine Greek
+prefix: nc
+urn: urn:weft:grc:concilia.constantinopolitanum.381
+unit: section
+section_noun: article
+written:
+  year: 381
+  display: '381'
+  label: the faith of the hundred and fifty fathers of the Council of Constantinople (381), transmitted in the acts of the Council of
+    Chalcedon (451); it enlarges the creed of Nicaea (325) and is the creed the churches of East and West still recite
+status: phase-0
+pilot:
+  sections:
+  - pater
+  - hyios
+  - oikonomia
+  - pneuma
+  - ekklesia
+edition:
+  id: ws-ekthesis-150
+  name: '῎Εκθεσις τῶν ρν'' πατέρων, Greek Wikisource, revision 91962: the Constantinopolitan text as read at Chalcedon, polytonic; the
+    transcription''s slips corrected as declared in edition.yaml'
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain; Wikisource transcription CC BY-SA 4.0; Weft line division CC BY-SA 4.0
+treebank: null
+schemes:
+- koine
+- erasmian
+scheme_labels:
+  koine: Koine as read in Constantinople in 381 (after Randall Buth; approximate)
+  erasmian: 'Erasmian: the schoolroom tradition'
+sound_confidence: medium
+sources_extra:
+- id: ws-ekthesis-150
+  name: ῎Εκθεσις τῶν ρν' πατέρων, Greek Wikisource, revision 91962
+  file: sources/ekthesis-150.txt
+  url: https://el.wikisource.org/w/index.php?oldid=91962&action=raw
+  sha256: ade56f2e5497da46c00e225437704c192285db2d625ea0f1e57cc753c243f1a6
+  license: text public domain; Wikisource transcription CC BY-SA 4.0
+  license_url: https://el.wikisource.org/wiki/%CE%88%CE%BA%CE%B8%CE%B5%CF%83%CE%B9%CF%82_%CF%84%CF%89%CE%BD_%CF%81%CE%BD%27_%CF%80%CE%B1%CF%84%CE%AD%CF%81%CF%89%CE%BD
+- id: ws-ekthesis-318
+  name: ῎Εκθεσις τῶν τιη' πατέρων (the Nicene Creed of 325, for the notes), Greek Wikisource, revision 91963
+  file: sources/ekthesis-318.txt
+  url: https://el.wikisource.org/w/index.php?oldid=91963&action=raw
+  sha256: e45074c5519e93536eafa6581ec2c1d041d5f1e8f7eb04264840c2ebfd1abedc
+  license: text public domain; Wikisource transcription CC BY-SA 4.0
+  license_url: https://el.wikisource.org/wiki/%CE%88%CE%BA%CE%B8%CE%B5%CF%83%CE%B9%CF%82_%CF%84%CF%89%CE%BD_%CF%84%CE%B9%CE%B7%27_%CF%80%CE%B1%CF%84%CE%AD%CF%81%CF%89%CE%BD
+- id: schaff-vol2
+  name: 'Philip Schaff, The Creeds of Christendom, vol. 2: The Greek and Latin Creeds (1877; 1919 printing), OCR text from the Internet
+    Archive (bibliothecasymbo020scha)'
+  file: sources/schaff-creeds-vol2.txt
+  url: https://archive.org/download/bibliothecasymbo020scha/bibliothecasymbo020scha_djvu.txt
+  sha256: c8374293893bf75749fa1f55d35d747b59cab79b16acec45b3cd3c8ee11d4e0d
+  license: public domain (Schaff d. 1893)
+  license_url: https://archive.org/details/bibliothecasymbo020scha
+translations:
+- id: schaff1877
+  translator: Philip Schaff
+  year: 1877
+  form: prose, article by article; The Creeds of Christendom, vol. 2, § 8, the Constantinopolitan text in parallel with the Greek; keeps
+    the council's plural and has no filioque
+  license: public-domain
+  license_url: https://archive.org/details/bibliothecasymbo020scha
+predicted_gaps:
+- the Greek is the Wikisource transcription of the Chalcedonian text, which names no printed edition; its four slips and one detached
+  breathing are corrected as declared, and a check against a critical text (Kelly; Denzinger) is wanted
+- 'no treebank covers the text: lemma, morphology and gloss are by hand (MorphGNT conventions), draft'
+- the Koine scheme is Buth's first-century reconstruction applied to 381; by then η had likely merged with ι in many speakers, and the
+  scheme is labelled approximate
+- Schaff's English is typed from the OCR of the 1919 printing and checked against it phrase by phrase, not transcribed from a page scan
+- the Shema and the Kaddish, the companion texts of this strand, are not yet built

@@ -439,10 +439,21 @@ def test_docs_render_clean(tmp_path):
             assert target == "index" or f"{target}.html" in pages, (name, target)
 
 
+
+def _link_site(tmp_path):
+    """site/ for a fixture repo: the template, script and stylesheet linked, but its own empty build/,
+    so a fixture build never writes into the real site/build (it once overwrote the library index
+    with a fixture's title)."""
+    (tmp_path / "site").mkdir()
+    for f in ("template.html", "weft.css", "weft.js"):
+        (tmp_path / "site" / f).symlink_to(REPO / "site" / f)
+    (tmp_path / "site" / "build").mkdir()
+
 def _private_fixture(tmp_path):
     """A repo whose private/ holds one private work (a copy of the Bashō work under a new name)."""
-    for d in ("texts", "site", "art", "docs", "pipeline"):
+    for d in ("texts", "art", "docs", "pipeline"):
         (tmp_path / d).symlink_to(REPO / d)
+    _link_site(tmp_path)
     pw = tmp_path / "private" / "basho-private"
     shutil.copytree(REPO / "texts" / "basho-furuike", pw, ignore=shutil.ignore_patterns("sources"))
     m = yaml.safe_load((pw / "manifest.yaml").read_text())
@@ -523,8 +534,9 @@ def test_render_confines_data_to_data(tmp_path):
     the title is escaped, every < in the payload is \\u003c, and a figure path that climbs out is refused."""
     from weft import build
     repo = tmp_path
-    for d in ("site", "art", "docs", "pipeline"):
+    for d in ("art", "docs", "pipeline"):
         (repo / d).symlink_to(REPO / d)
+    _link_site(repo)
     work = repo / "texts" / "basho-furuike"
     shutil.copytree(REPO / "texts" / "basho-furuike", work, ignore=shutil.ignore_patterns("sources"))
     m = yaml.safe_load((work / "manifest.yaml").read_text())
@@ -604,3 +616,21 @@ def test_index_newest_strip():
         assert 1 <= len(shown) <= 4 and shown == sorted(shown, reverse=True)
     ghost = dict(ms[0], work="not-in-git-" + ms[0]["work"])
     assert re.match(r"\d{4}-\d{2}-\d{2}T", build.added_dates(repo, [ghost])[ghost["work"]])
+
+
+def test_esperanto_rules():
+    """Esperanto: one letter one sound, penultimate stress, glides in one syllable, the elided o leaving the
+    stress in place, and the rule-based reading of the 1887 divided words (Fundamento rules 9, 10, 16)."""
+    from weft import esperanto as E
+    assert E.word_sound("ĉielo") == ("tʃi.ˈe.lo", "chee-E-lo", 3)
+    assert E.word_sound("kaj")[2] == 1 and E.word_sound("ankaŭ")[1] == "AN-kow" and E.word_sound("hodiaŭ")[1] == "ho-DEE-ow"
+    assert E.word_sound("estas")[0] == "ˈes.tas" and E.word_sound("patro")[0] == "ˈpa.tro"
+    assert E.word_sound("kor’")[1] == "kor" and E.word_sound("l’mondo")[1] == "LMON-do"
+    assert E.word_sound("senmoveco")[0] == "sen.mo.ˈve.tso" and E.word_sound("ĝi")[0] == "dʒi" and E.word_sound("ŝuldantoj")[0] == "ʃul.ˈdan.toj"
+    assert E.analyze("Pan'o'n") == ("pano", "NOUN|Case=Acc|Number=Sing")
+    assert E.analyze("ŝuld'ant'o'j") == ("ŝuldanto", "NOUN|VerbForm=Part|Tense=Pres|Voice=Act|Case=Nom|Number=Plur")
+    assert E.analyze("liber'ig'u") == ("liberigi", "VERB|Mood=Imp|VerbForm=Fin")
+    assert E.analyze("detru'it'a")[0] == "detrui" and "Voice=Pass" in E.analyze("detru'it'a")[1]
+    assert E.analyze("ni'a'j'n") == ("nia", "DET|Poss=Yes|PronType=Prs|Person=1|Case=Acc|Number=Plur")
+    assert E.analyze("kor’") == ("koro", "NOUN|Case=Nom|Number=Sing") and E.analyze("kiu") == ("kiu", "PRON|PronType=Rel")
+    assert E.analyze("konduku") == ("konduki", "VERB|Mood=Imp|VerbForm=Fin")   # an undivided word, read from its ending

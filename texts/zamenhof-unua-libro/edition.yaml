@@ -1,0 +1,741 @@
+# Weft edition of four specimens from Zamenhof's Unua Libro (1887): the Lord's Prayer (Patr'o ni'a), the poems Mi'a
+# pens'o and Ho, mi'a kor’, and the translation from Heine. Text of the English edition, Dr. Esperanto's International
+# Language, Introduction and Complete Grammar, Por Angloj (Warsaw, 1889), pages 19 and 21-23, as transcribed on English
+# Wikisource; each line is checked verbatim against the pinned page revisions, a section naming its pages in order.
+# The 1887 print divides every word into its parts with commas (Patr,o ni,a), so that a reader can find each part in
+# the vocabulary; the transcription writes the division with an apostrophe, and the edition follows the transcription.
+# verify_strip sets aside the page templates, the italics and the stanza stars; the transcriber's slips (a Cyrillic о
+# in seven words, est,as for est'as) are declared as corrections. Si rakont'as and tranquil'iĝ'u stand as printed, with
+# the regular forms (Ŝi, trankviliĝu) in n; see the manifest's predicted_gaps.
+#   t     the word as printed, divided, punctuation attached; the elision apostrophe ’ (kor’, l’mond'o) is the word's own
+#   n     the word in the Fundamento's spelling, parts joined; the sound and the morphology are read from the division
+#   glue  the dash the print runs into the next word (jun'ec'o'n–mi) stays with the first word, and no space follows
+#   Lines are the verses of the poems and, in the prayer, Weft's division at the clauses; sections are the four texts.
+work: zamenhof-unua-libro
+joiner: ' '
+verify_strip: (?s)<noinclude>.*?</noinclude>|\{\{em\|\d\}\}\* \* \*|\{\{center\|[^{}]*\}\}|\{\{[^{}]*\}\}|<[^>]+>|''
+verify_corrections:
+- ocr: parol'ad'о
+  print: parol'ad'o
+  in: sources/g22.txt
+- ocr: promen'ad'о
+  print: promen'ad'o
+  in: sources/g22.txt
+- ocr: pens'о
+  print: pens'o
+  in: sources/g22.txt
+- ocr: silent'о
+  print: silent'o
+  in: sources/g22.txt
+- ocr: dev'о
+  print: dev'o
+  in: sources/g22.txt
+- ocr: labor'о
+  print: labor'o
+  in: sources/g22.txt
+- ocr: est,as
+  print: est'as
+  in: sources/g23.txt
+sections:
+- id: patro
+  title: Patr'o ni'a (the Lord's Prayer)
+  verify_in:
+  - sources/g19.txt
+  lines:
+  - tokens:
+    - t: Patr'o
+      n: Patro
+    - t: ni'a
+      n: nia
+    - t: kiu
+      n: kiu
+    - t: est'as
+      n: estas
+    - t: en
+      n: en
+    - t: la
+      n: la
+    - t: ĉiel'o,
+      n: ĉielo
+  - tokens:
+    - t: sankt'a
+      n: sankta
+    - t: est'u
+      n: estu
+    - t: Vi'a
+      n: Via
+    - t: nom'o,
+      n: nomo
+    - t: ven'u
+      n: venu
+    - t: reĝ'ec'o
+      n: reĝeco
+    - t: Vi'a,
+      n: Via
+    - t: est'u
+      n: estu
+    - t: vol'o
+      n: volo
+    - t: Vi'a,
+      n: Via
+    - t: kiel
+      n: kiel
+    - t: en
+      n: en
+    - t: la
+      n: la
+    - t: ĉiel'o,
+      n: ĉielo
+    - t: tiel
+      n: tiel
+    - t: ankaŭ
+      n: ankaŭ
+    - t: sur
+      n: sur
+    - t: la
+      n: la
+    - t: ter'o.
+      n: tero
+  - tokens:
+    - t: Pan'o'n
+      n: Panon
+    - t: ni'a'n
+      n: nian
+    - t: ĉiu'tag'a'n
+      n: ĉiutagan
+    - t: don'u
+      n: donu
+    - t: al
+      n: al
+    - t: ni
+      n: ni
+    - t: hodiaŭ,
+      n: hodiaŭ
+  - tokens:
+    - t: kaj
+      n: kaj
+    - t: pardon'u
+      n: pardonu
+    - t: al
+      n: al
+    - t: ni
+      n: ni
+    - t: ŝuld'o'j'n
+      n: ŝuldojn
+    - t: ni'a'j'n,
+      n: niajn
+    - t: kiel
+      n: kiel
+    - t: ni
+      n: ni
+    - t: ankaŭ
+      n: ankaŭ
+    - t: pardon'as
+      n: pardonas
+    - t: al
+      n: al
+    - t: ni'a'j
+      n: niaj
+    - t: ŝuld'ant'o'j;
+      n: ŝuldantoj
+  - tokens:
+    - t: ne
+      n: ne
+    - t: konduku
+      n: konduku
+    - t: ni'n
+      n: nin
+    - t: en
+      n: en
+    - t: tent'o'n;
+      n: tenton
+  - tokens:
+    - t: sed
+      n: sed
+    - t: liber'ig'u
+      n: liberigu
+    - t: ni'n
+      n: nin
+    - t: de
+      n: de
+    - t: la
+      n: la
+    - t: mal'ver'a,
+      n: malvera
+    - t: ĉar
+      n: ĉar
+    - t: Vi'a
+      n: Via
+    - t: est'as
+      n: estas
+    - t: la
+      n: la
+    - t: reg'ad'o,
+      n: regado
+    - t: la
+      n: la
+    - t: fort'o
+      n: forto
+    - t: kaj
+      n: kaj
+    - t: la
+      n: la
+    - t: gloro
+      n: gloro
+    - t: eterne.
+      n: eterne
+    - t: Amen!
+      n: Amen
+- id: penso
+  title: Mi'a pens'o (My thought)
+  verify_in:
+  - sources/g21.txt
+  - sources/g22.txt
+  lines:
+  - tokens:
+    - t: Sur
+      n: Sur
+    - t: la
+      n: la
+    - t: kamp'o,
+      n: kampo
+    - t: for
+      n: for
+    - t: de
+      n: de
+    - t: l’mond'o,
+      n: l’mondo
+  - tokens:
+    - t: Antaŭ
+      n: Antaŭ
+    - t: nokt'o
+      n: nokto
+    - t: de
+      n: de
+    - t: somer'o
+      n: somero
+  - tokens:
+    - t: Amik'in'o
+      n: Amikino
+    - t: en
+      n: en
+    - t: la
+      n: la
+    - t: rond'o
+      n: rondo
+  - tokens:
+    - t: Kant'as
+      n: Kantas
+    - t: kant'o'n
+      n: kanton
+    - t: pri
+      n: pri
+    - t: l’esper'o.
+      n: l’espero
+  - tokens:
+    - t: Kaj
+      n: Kaj
+    - t: pri
+      n: pri
+    - t: viv'o
+      n: vivo
+    - t: detru'it'a
+      n: detruita
+  - tokens:
+    - t: Si
+      n: Ŝi
+    - t: rakont'as
+      n: rakontas
+    - t: kompat'ant'e,–
+      n: kompatante
+  - tokens:
+    - t: Mi'a
+      n: Mia
+    - t: vund'o
+      n: vundo
+    - t: re'frap'it'a
+      n: refrapita
+  - tokens:
+    - t: Mi'n
+      n: Min
+    - t: dolor'as
+      n: doloras
+    - t: re'sang'ant'e.
+      n: resangante
+  - tokens:
+    - t: „Ĉu
+      n: Ĉu
+    - t: vi
+      n: vi
+    - t: dorm'as?
+      n: dormas
+    - t: Ho,
+      n: Ho
+    - t: sinjor'o,
+      n: sinjoro
+  - tokens:
+    - t: Kial
+      n: Kial
+    - t: tia
+      n: tia
+    - t: sen'mov'ec'o?
+      n: senmoveco
+  - tokens:
+    - t: Ha,
+      n: Ha
+    - t: kred'ebl'e
+      n: kredeble
+    - t: re'memor'o
+      n: rememoro
+  - tokens:
+    - t: El
+      n: El
+    - t: la
+      n: la
+    - t: kar'a
+      n: kara
+    - t: infan'ec'o?“
+      n: infaneco
+  - tokens:
+    - t: Kio'n
+      n: Kion
+    - t: dir'i?
+      n: diri
+    - t: Ne
+      n: Ne
+    - t: plor'ant'a
+      n: ploranta
+  - tokens:
+    - t: Pov'is
+      n: Povis
+    - t: est'i
+      n: esti
+    - t: parol'ad'o
+      n: parolado
+  - tokens:
+    - t: Kun
+      n: Kun
+    - t: fraŭl'in'o
+      n: fraŭlino
+    - t: ripoz'ant'a
+      n: ripozanta
+  - tokens:
+    - t: Post
+      n: Post
+    - t: somer'a
+      n: somera
+    - t: promen'ad'o!
+      n: promenado
+  - tokens:
+    - t: Mi'a
+      n: Mia
+    - t: pens'o
+      n: penso
+    - t: kaj
+      n: kaj
+    - t: turment'o,
+      n: turmento
+  - tokens:
+    - t: Kaj
+      n: Kaj
+    - t: dolor'o'j
+      n: doloroj
+    - t: kaj
+      n: kaj
+    - t: esper'o'j!
+      n: esperoj
+  - tokens:
+    - t: Kiom
+      n: Kiom
+    - t: de
+      n: de
+    - t: mi
+      n: mi
+    - t: en
+      n: en
+    - t: silent'o
+      n: silento
+  - tokens:
+    - t: Al
+      n: Al
+    - t: vi
+      n: vi
+    - t: ir'is
+      n: iris
+    - t: jam
+      n: jam
+    - t: ofer'o'j!
+      n: oferoj
+  - tokens:
+    - t: Kio'n
+      n: Kion
+    - t: hav'is
+      n: havis
+    - t: mi
+      n: mi
+    - t: plej
+      n: plej
+    - t: kar'a'n–
+      n: karan
+  - tokens:
+    - t: La
+      n: La
+    - t: jun'ec'o'n–
+      n: junecon
+      glue: true
+    - t: mi
+      n: mi
+    - t: plor'ant'a
+      n: ploranta
+  - tokens:
+    - t: Met'is
+      n: Metis
+    - t: mem
+      n: mem
+    - t: sur
+      n: sur
+    - t: la
+      n: la
+    - t: altar'o'n
+      n: altaron
+  - tokens:
+    - t: De
+      n: De
+    - t: la
+      n: la
+    - t: dev'o
+      n: devo
+    - t: ordon'ant'a!
+      n: ordonanta
+  - tokens:
+    - t: Fajr'o'n
+      n: Fajron
+    - t: sent'as
+      n: sentas
+    - t: mi
+      n: mi
+    - t: intern'e,
+      n: interne
+  - tokens:
+    - t: Viv'i
+      n: Vivi
+    - t: ankaŭ
+      n: ankaŭ
+    - t: mi
+      n: mi
+    - t: dezir'as,–
+      n: deziras
+  - tokens:
+    - t: Io
+      n: Io
+    - t: pel'as
+      n: pelas
+    - t: mi'n
+      n: min
+    - t: etern'e,
+      n: eterne
+  - tokens:
+    - t: Se
+      n: Se
+    - t: mi
+      n: mi
+    - t: al
+      n: al
+    - t: gaj'ul'o'j
+      n: gajuloj
+    - t: ir'as...
+      n: iras
+  - tokens:
+    - t: Se
+      n: Se
+    - t: ne
+      n: ne
+    - t: plaĉ'as
+      n: plaĉas
+    - t: al
+      n: al
+    - t: la
+      n: la
+    - t: sort'o
+      n: sorto
+  - tokens:
+    - t: Mi'a
+      n: Mia
+    - t: pen'o
+      n: peno
+    - t: kaj
+      n: kaj
+    - t: labor'o–
+      n: laboro
+  - tokens:
+    - t: Ven'u
+      n: Venu
+    - t: tuj
+      n: tuj
+    - t: al
+      n: al
+    - t: mi
+      n: mi
+    - t: la
+      n: la
+    - t: mort'o,
+      n: morto
+  - tokens:
+    - t: En
+      n: En
+    - t: esper'o–
+      n: espero
+      glue: true
+    - t: sen
+      n: sen
+    - t: dolor'o!
+      n: doloro
+- id: heine
+  title: El Heine (from Heine)
+  verify_in:
+  - sources/g22.txt
+  - sources/g23.txt
+  lines:
+  - tokens:
+    - t: En
+      n: En
+    - t: sonĝ'o
+      n: sonĝo
+    - t: princ'in'o'n
+      n: princinon
+    - t: mi
+      n: mi
+    - t: vid'is
+      n: vidis
+  - tokens:
+    - t: Kun
+      n: Kun
+    - t: vang'o'j
+      n: vangoj
+    - t: mal'sek'a'j
+      n: malsekaj
+    - t: de
+      n: de
+    - t: plor'o,–
+      n: ploro
+  - tokens:
+    - t: Sub
+      n: Sub
+    - t: arb'o,
+      n: arbo
+    - t: sub
+      n: sub
+    - t: verd'a
+      n: verda
+    - t: ni
+      n: ni
+    - t: sid'is
+      n: sidis
+  - tokens:
+    - t: Ten'ant'e
+      n: Tenante
+    - t: si'n
+      n: sin
+    - t: kor'o
+      n: koro
+    - t: ĉe
+      n: ĉe
+    - t: kor'o.
+      n: koro
+  - tokens:
+    - t: „De
+      n: De
+    - t: l’patr'o
+      n: l’patro
+    - t: de
+      n: de
+    - t: l’vi'a
+      n: l’via
+    - t: la
+      n: la
+    - t: kron'o
+      n: krono
+  - tokens:
+    - t: Por
+      n: Por
+    - t: mi
+      n: mi
+    - t: ĝi
+      n: ĝi
+    - t: ne
+      n: ne
+    - t: est'as
+      n: estas
+    - t: hav'ind'a!
+      n: havinda
+  - tokens:
+    - t: For,
+      n: For
+    - t: for
+      n: for
+    - t: li'a
+      n: lia
+    - t: sceptr'o
+      n: sceptro
+    - t: kaj
+      n: kaj
+    - t: tron'o–
+      n: trono
+  - tokens:
+    - t: Vi'n
+      n: Vin
+    - t: mem
+      n: mem
+    - t: mi
+      n: mi
+    - t: dezir'as,
+      n: deziras
+    - t: am'ind'a!“
+      n: aminda
+  - tokens:
+    - t: —„Ne
+      n: Ne
+    - t: ebl'e!“
+      n: eble
+    - t: ŝi
+      n: ŝi
+    - t: al
+      n: al
+    - t: mi
+      n: mi
+    - t: 're''dir''as:'
+      n: rediras
+  - tokens:
+    - t: „En
+      n: En
+    - t: tomb'o
+      n: tombo
+    - t: mi
+      n: mi
+    - t: est'as
+      n: estas
+    - t: ten'at'a,
+      n: tenata
+  - tokens:
+    - t: Mi
+      n: Mi
+    - t: nur
+      n: nur
+    - t: en
+      n: en
+    - t: la
+      n: la
+    - t: nokt'o
+      n: nokto
+    - t: el'ir'as
+      n: eliras
+  - tokens:
+    - t: Al
+      n: Al
+    - t: vi,
+      n: vi
+    - t: mi'a
+      n: mia
+    - t: sol'e
+      n: sole
+    - t: am'at'a!“
+      n: amata
+- id: kor
+  title: Ho, mi'a kor’ (Oh, my heart)
+  verify_in:
+  - sources/g23.txt
+  lines:
+  - tokens:
+    - t: Ho,
+      n: Ho
+    - t: mi'a
+      n: mia
+    - t: kor’,
+      n: kor’
+    - t: ne
+      n: ne
+    - t: bat'u
+      n: batu
+    - t: mal'trankvil'e,
+      n: maltrankvile
+  - tokens:
+    - t: El
+      n: El
+    - t: mi'a
+      n: mia
+    - t: brust'o
+      n: brusto
+    - t: nun
+      n: nun
+    - t: ne
+      n: ne
+    - t: salt'u
+      n: saltu
+    - t: for!
+      n: for
+  - tokens:
+    - t: Jam
+      n: Jam
+    - t: ten'i
+      n: teni
+    - t: mi'n
+      n: min
+    - t: ne
+      n: ne
+    - t: pov'as
+      n: povas
+    - t: mi
+      n: mi
+    - t: facil'e
+      n: facile
+  - tokens:
+    - t: Ho,
+      n: Ho
+    - t: mi'a
+      n: mia
+    - t: kor’!
+      n: kor’
+  - tokens:
+    - t: Ho,
+      n: Ho
+    - t: mi'a
+      n: mia
+    - t: kor’!
+      n: kor’
+    - t: Post
+      n: Post
+    - t: long'a
+      n: longa
+    - t: labor'ad'o
+      n: laborado
+  - tokens:
+    - t: Ĉu
+      n: Ĉu
+    - t: mi
+      n: mi
+    - t: ne
+      n: ne
+    - t: venk'os
+      n: venkos
+    - t: en
+      n: en
+    - t: decid'a
+      n: decida
+    - t: hor’!
+      n: hor’
+  - tokens:
+    - t: Sufiĉ'e!
+      n: Sufiĉe
+    - t: tranquil'iĝ'u
+      n: trankviliĝu
+    - t: de
+      n: de
+    - t: l’bat'ad'o,
+      n: l’batado
+  - tokens:
+    - t: Ho,
+      n: Ho
+    - t: mi'a
+      n: mia
+    - t: kor’!
+      n: kor’

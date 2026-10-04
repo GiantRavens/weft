@@ -1,0 +1,22 @@
+run:
+  weft: 0.1.0
+  sections:
+  - patro
+  - penso
+  - heine
+  - kor
+counts:
+  lines: 58
+  tokens: 310
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- the text is Geoghegan's 1889 English edition, not the Russian first printing of 26 July 1887; the specimens are the same texts, and the Russian edition's pages (Commons, Unua Libro ru 1st ed.pdf) would
+  allow a check
+- Si rakont'as (for Ŝi) and tranquil'iĝ'u (for trankvil'iĝ'u) are kept as printed with the regular forms in n; whether they are the author's or the printer's is not settled here
+- the transcription's slips (Cyrillic о in seven word-endings, est,as) are declared as corrections against the print and should be checked against the scan
+- lemma and morphology are a rule-based analysis (esperanto.analyze) checked by hand, declared as such; glosses are hand-written; all draft
+- the vowel qualities are Zamenhof's comparisons, not measurements; the division of consonant clusters between syllables is Weft's rule, not his
+- Geoghegan's book gives the specimens without English; the prayer has the King James text beside it, the three poems only Weft's editorial prose
