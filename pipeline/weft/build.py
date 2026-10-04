@@ -357,6 +357,54 @@ def language_index(ms: list[dict], out_dir: Path) -> str:
             f'<ul>{items}</ul></details>')
 
 
+def added_dates(repo: Path, ms: list[dict]) -> dict[str, str]:
+    """When each work arrived, as an ISO timestamp: the commit that first added its manifest, read from
+    git in one call. A work git does not know (uncommitted, a private work, no git at all) dates by
+    its manifest's modification time. CI must check out the full history (fetch-depth: 0), or every
+    work looks added in the one commit it can see."""
+    import datetime as dt
+    import subprocess
+    dates: dict[str, str] = {}
+    try:
+        out = subprocess.run(["git", "-C", str(repo), "log", "--diff-filter=A", "--format=%x00%ad", "--date=iso-strict",
+                              "--name-only", "--", "texts/*/manifest.yaml"], capture_output=True, text=True, timeout=30).stdout
+        day = ""
+        for line in out.splitlines():
+            if line.startswith("\x00"):
+                day = line[1:].strip()
+            elif line.strip():
+                dates[line.split("/")[1]] = day   # newest first in the log, so the earliest add wins
+    except (OSError, subprocess.SubprocessError):
+        pass
+    for m in ms:
+        if m["work"] not in dates:
+            mp = (repo / ("private" if m.get("_private") else "texts") / m["work"] / "manifest.yaml")
+            dates[m["work"]] = (dt.datetime.fromtimestamp(mp.stat().st_mtime) if mp.exists() else dt.datetime.now()).isoformat(timespec="seconds")
+    return dates
+
+
+def newest_index(ms: list[dict], out_dir: Path, dates: dict[str, str], n: int = 6) -> str:
+    """The n works added most recently, newest first, each with the day it arrived. Plain HTML; it
+    sits above the by-language disclosure so a returning reader sees what is new without unfolding anything."""
+    import datetime as dt
+    import html as H
+    built = [m for m in ms if (out_dir / f"{m['work']}.html").exists()]
+    order = {m["work"]: i for i, m in enumerate(built)}
+    # the full timestamp orders works that landed on the same day; the library order breaks remaining ties
+    newest = sorted(built, key=lambda m: (dates.get(m["work"], ""), -order[m["work"]]), reverse=True)[:n]
+    if not newest:
+        return ""
+    def day(iso: str) -> str:
+        try:
+            d = dt.datetime.fromisoformat(iso).date()
+            return f"{d.day} {d.strftime('%b %Y')}"
+        except ValueError:
+            return iso
+    items = "".join(f'<li><a href="{H.escape(m["work"])}.html">{H.escape(short_title(m))}</a>'
+                    f'<time datetime="{H.escape(dates[m["work"]][:10])}">{H.escape(day(dates[m["work"]]))}</time></li>' for m in newest)
+    return f'<section class="newest"><h2>Newest texts</h2><ul>{items}</ul></section>'
+
+
 def write_index(repo: Path, out_dir: Path, private: bool = False) -> Path:
     """A plain front door listing every built work in out_dir. A private build lists the
     private works with the public ones, each marked."""
@@ -404,12 +452,14 @@ def write_index(repo: Path, out_dir: Path, private: bool = False) -> Path:
     if age is not None:
         rows.append("</ul></section>")
     idx = out_dir / "index.html"
+    ms = library_order(repo, private)
     art = load_art(repo)
     from . import docs
     docs.build_docs(repo, out_dir, art)
     html = INDEX if not private else INDEX.replace("<h1>Interlinear library</h1>", "<h1>Interlinear library</h1><p class=\"pv\">Private build: includes your own texts and licensed material. Do not publish this folder.</p>")
     idx.write_text(html.replace("{{ROWS}}", "\n".join(rows)).replace("{{NAV}}", docs.nav_html("index.html"))
-                        .replace("{{LANGS}}", language_index(library_order(repo, private), out_dir))
+                        .replace("{{NEWEST}}", newest_index(ms, out_dir, added_dates(repo, ms)))
+                        .replace("{{LANGS}}", language_index(ms, out_dir))
                         .replace("{{LOCKUP}}", art.get("weft-lockup", "Weft"))
                         .replace("{{FAVICON}}", art.get("favicon", "")))
     return idx
@@ -445,7 +495,11 @@ li p{margin:6px 0 0;font:.85rem/1.5 Inter,system-ui,sans-serif;color:var(--soft)
 .docnav a{color:var(--accent);text-decoration:none}.docnav a:hover{text-decoration:underline}.docnav span{color:var(--ink)}
 p.pv{font:600 .72rem/1.4 Inter,system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin:4px 0 0}
 li p.w{margin-top:4px;font:italic .95rem/1.4 "Gentium Book Plus",Palatino,serif;color:var(--accent)}
-.langs{margin:1.6rem 0 0;padding:10px 0 8px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.newest{margin:1.6rem 0 0}.newest h2{font:600 .75rem/1 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+.newest ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:4px 22px}
+.newest li{font:.84rem/1.5 Inter,system-ui,sans-serif;display:block;border:0;padding:0;margin:0;color:var(--soft)}
+.newest li a{color:var(--ink);text-decoration:none;font-weight:600}.newest li a:hover{color:var(--accent)}.newest li time{margin-left:7px;font-size:.78rem}
+.langs{margin:1rem 0 0;padding:10px 0 8px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
 .langs summary{cursor:pointer;list-style:none;display:flex;gap:12px;align-items:baseline;font:600 .75rem/1 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
 .langs summary::-webkit-details-marker{display:none}
 .langs summary::before{content:"▸";font-size:.8rem;transition:transform .15s}.langs[open] summary::before{transform:rotate(90deg)}
@@ -458,6 +512,7 @@ li p.w{margin-top:4px;font:italic .95rem/1.4 "Gentium Book Plus",Palatino,serif;
 </style></head><body><main><div class="lockup" role="img" aria-label="Weft">{{LOCKUP}}</div><h1>Interlinear library</h1>
 <p class="lede">Classic texts ordered by date: the original text, a phonetic guide to pronouncing it in English, a literal word-for-word translation called a 'gloss', and well-known published translations, together in one evolving, community-led interlinear presentation.</p>
 {{NAV}}
+{{NEWEST}}
 {{LANGS}}
 {{ROWS}}
 </main></body></html>

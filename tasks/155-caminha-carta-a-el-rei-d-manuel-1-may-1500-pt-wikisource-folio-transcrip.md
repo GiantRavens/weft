@@ -8,7 +8,7 @@ tags:
   - age-of-sail
   - pilot
 created_at: 2026-10-03T16:24:15.928803105-05:00
-updated_at: 2026-10-03T16:34:17.603153727-05:00
+updated_at: 2026-10-03T17:08:05.915215507-05:00
 completed_at: 2026-10-03T16:34:17.597477883-05:00
 ---
 
@@ -17,6 +17,7 @@ completed_at: 2026-10-03T16:34:17.597477883-05:00
 ## Notes
 
 - 2026-10-03T21:34:17Z: 2026-10-03 BUILT: texts/caminha-carta-1500 (folio 1r para 1 + folio 1v, 439 tokens, 41 lines); sources = pt.wikisource Página:Carta-caminha-folio01r.png rev 547300 + folio01v.jpg rev 540860 (pagequality 1); verify_corrections rejoin 12 line-broken words; 231 lexicon entries added; 'aas xiij xij oras' kept as transcribed, editions read 'dez'. NEXT: folios 2r-3r (the exchange of gifts, the description of the people), proofread against the facsimile, Aubertin/Camões second translation.
+- 2026-10-03T22:08:05Z: folios 2r-3r (sections 3-5) shipped 2026-10-03: 1423 tokens, description of the people
 
 ## Log
 

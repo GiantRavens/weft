@@ -585,3 +585,22 @@ def test_aramaic_daniel():
     assert sum(1 for t in toks.values() if t.get("norm")) == 24
     r = check.run(REPO, "tanakh-daniel")
     assert r["ok"], r["problems"]
+
+
+def test_index_newest_strip():
+    """The library's 'newest texts' strip: every committed work has an arrival date from git, the strip
+    lists the newest first, and a work git does not know still gets a date (from its manifest's mtime)."""
+    import re
+    from weft import build
+    repo = Path(__file__).resolve().parents[1]
+    ms = build.library_order(repo)
+    dates = build.added_dates(repo, ms)
+    assert set(dates) >= {m["work"] for m in ms}
+    assert all(re.match(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}", d) for d in dates.values())
+    out = repo / "site" / "build"
+    html = build.newest_index(ms, out, dates, n=4)
+    if any((out / f"{m['work']}.html").exists() for m in ms):
+        shown = re.findall(r'datetime="([^"]+)"', html)
+        assert 1 <= len(shown) <= 4 and shown == sorted(shown, reverse=True)
+    ghost = dict(ms[0], work="not-in-git-" + ms[0]["work"])
+    assert re.match(r"\d{4}-\d{2}-\d{2}T", build.added_dates(repo, [ghost])[ghost["work"]])
