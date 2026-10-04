@@ -1,0 +1,81 @@
+work: einstein-1905-energieinhalt
+title: 'Einstein, Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig? (1905): the opening and the conclusion'
+short_title: Einstein, E = mc²
+author: Albert Einstein (1879-1955)
+language: de
+lang_name: German of 1905
+prefix: ein
+urn: urn:weft:de:einstein.energieinhalt.1905
+unit: section
+section_noun: passage
+written:
+  year: 1905
+  display: '1905'
+  label: written at Bern in September 1905 and received by the Annalen der Physik on 27 September; printed in volume 18, pages 639-641,
+    the last of the year's four papers on relativity and the quantum; Einstein's works entered the public domain in life-plus-seventy
+    countries on 1 January 2026
+status: phase-0
+pilot:
+  sections:
+  - intro
+  - schluss
+edition:
+  id: annalen1905
+  name: 'Annalen der Physik (ser. 4) 18 (Leipzig: Barth, 1905), pp. 639 and 641, as transcribed on German Wikisource (Seite:Einstein-Energieinhalt.djvu/1
+    and 3, proofread); the print''s spelling (daß, in bezug) is kept'
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain (Einstein d. 1955; life + 70 from 1 January 2026); Wikisource transcription CC BY-SA 4.0; Weft line division
+    CC BY-SA 4.0
+treebank: null
+schemes:
+- northern
+- modern
+scheme_labels:
+  northern: Educated German of 1905, the stage norm of Siebs (1898) newly published (approximate)
+  modern: Modern Standard German
+sound_confidence: medium
+sources_extra:
+- id: ws-p1
+  name: Seite:Einstein-Energieinhalt.djvu/1, German Wikisource, revision 5050967 (proofread)
+  file: sources/p1.txt
+  url: https://de.wikisource.org/w/index.php?oldid=5050967&action=raw
+  sha256: 86d539a525a95f06838d3bf7d39daae99fed24ed90a68683ae2a94bf9e0b3698
+  license: text public domain; Wikisource transcription CC BY-SA 4.0
+  license_url: https://de.wikisource.org/wiki/Ist_die_Tr%C3%A4gheit_eines_K%C3%B6rpers_von_seinem_Energieinhalt_abh%C3%A4ngig%3F
+- id: ws-p2
+  name: Seite:Einstein-Energieinhalt.djvu/2, German Wikisource, revision 5050706 (proofread)
+  file: sources/p2.txt
+  url: https://de.wikisource.org/w/index.php?oldid=5050706&action=raw
+  sha256: 5834a3f4cacb479a2bdac4fcbe1db236eec6bc0df5b147d416d15f95b46ea1cd
+  license: text public domain; Wikisource transcription CC BY-SA 4.0
+  license_url: https://de.wikisource.org/wiki/Ist_die_Tr%C3%A4gheit_eines_K%C3%B6rpers_von_seinem_Energieinhalt_abh%C3%A4ngig%3F
+- id: ws-p3
+  name: Seite:Einstein-Energieinhalt.djvu/3, German Wikisource, revision 5050707 (proofread)
+  file: sources/p3.txt
+  url: https://de.wikisource.org/w/index.php?oldid=5050707&action=raw
+  sha256: 3bd7cc8c1bc7369ad5dcb12421c5ad2362210141f8e79cc6ee89220ddd70c3b9
+  license: text public domain; Wikisource transcription CC BY-SA 4.0
+  license_url: https://de.wikisource.org/wiki/Ist_die_Tr%C3%A4gheit_eines_K%C3%B6rpers_von_seinem_Energieinhalt_abh%C3%A4ngig%3F
+translations:
+- id: weft-editorial
+  kind: editorial
+  translator: Weft editorial translation, draft
+  year: 2026
+  form: prose, passage by passage, close to the German
+  license: CC BY-SA 4.0
+- id: perrett-jeffery1923
+  kind: reference
+  translator: W. Perrett and G. B. Jeffery
+  year: 1923
+  title: 'The Principle of Relativity (London: Methuen, 1923), ''Does the Inertia of a Body Depend upon its Energy-Content?'''
+  publisher: Methuen
+  note: the standard English translation; public domain in the United States, in copyright elsewhere (Jeffery d. 1957); cited, not printed
+predicted_gaps:
+- 'two passages, not the whole: the derivation on pp. 639-641 with its displayed equations is left to a later pilot, when Weft has a
+  way to show an equation as an equation'
+- 'no treebank covers the text: lemma, morphology and gloss are by hand (UD German-HDT conventions), draft'
+- the formulas are tokens with a spoken reading in n and their sound given outright; whether that is how the page should treat mathematics
+  is an open design question
+- the northern scheme is the module's educated northern German, labelled for 1905; Einstein's own Swabian-coloured speech is not modelled
+- the transcription's Baum for Raum (p. 639) is corrected as declared; the page is proofread once, not validated

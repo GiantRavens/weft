@@ -1,0 +1,47 @@
+# Notes on Einstein's 1905 note on inertia and energy content.
+- id: n.ein.intro.1.paper
+  attach: ein.intro.1.2
+  kind: editorial
+  status: draft
+  leans_on: Einstein, Annalen der Physik 17 (1905) 891-921 and 18 (1905) 639-641; Pais, Subtle is the Lord (1982), ch. 7; The Collected Papers of Albert Einstein, vol. 2 (1989)
+  text: The 'investigation recently published in these Annals' is Zur Elektrodynamik bewegter Körper, received by the Annalen on 30 June 1905, the paper of special relativity. This three-page note followed
+    on 27 September; it is the fourth of the five papers of Einstein's annus mirabilis, written in Bern while he worked as a technical expert, third class, at the Swiss patent office. The result it ends
+    with, Δm = L/V², is the one later written E = mc².
+- id: n.ein.intro.2.baum
+  attach: ein.intro.2.10
+  kind: editorial
+  status: draft
+  leans_on: the Wikisource transcription against the Annalen print (Internet Archive, annalenderphysi143unkngoog, p. 639)
+  text: 'Raum, ''space'': the transcription reads Baum, ''tree'', an OCR slip for the print''s Raum (the Fraktur R and B are alike); declared as a correction in edition.yaml. The Maxwell-Hertz equations
+    are Maxwell''s equations in the form Hertz gave them for a vacuum; Einstein writes the physicists'' names in spaced type, as German print did.'
+- id: n.ein.intro.4.prinzip
+  attach: ein.intro.4.16
+  kind: editorial
+  status: draft
+  leans_on: Zur Elektrodynamik bewegter Körper, § 2; Pais 1982
+  text: 'Relativitätsprinzip, ''principle of relativity'': stated here as it was in June, that the laws of physics are the same in any two coordinate systems moving uniformly relative to each other. The
+    second postulate, that light moves at a speed independent of its source, is only alluded to in a footnote (''the principle of the constancy of the velocity of light used there is of course contained
+    in Maxwell''s equations'').'
+- id: n.ein.schluss.2.lv2
+  attach: ein.schluss.2.18
+  kind: editorial
+  status: draft
+  leans_on: the paper's final equations, pp. 640-641; Pais 1982, ch. 7; Einstein, 'E = mc²' (Science Illustrated, 1946)
+  text: 'L/V²: L is the energy the body radiates, V the speed of light, Einstein''s symbol in 1905 (he adopted c after 1907). The derivation he omits in this edition compares the body''s kinetic energy
+    before and after it emits light in two directions, as seen from two frames, and keeps only terms of second order in v/V. The 1905 claim is about mass lost with energy radiated; the general equivalence,
+    every mass having an energy mc², he stated in 1907.'
+- id: n.ein.schluss.5.erg
+  attach: ein.schluss.5.16
+  kind: editorial
+  status: draft
+  leans_on: the paper, p. 641
+  text: 'L/9.10²⁰: the number is V² in the units named, the speed of light being 3·10¹⁰ centimetres a second, so that one erg of energy weighs 1/(9·10²⁰) gram; the print writes the multiplication with a
+    point. The row under the formula gives the words a German reader says for it.'
+- id: n.ein.schluss.6.radium
+  attach: ein.schluss.6.19
+  kind: editorial
+  status: draft
+  leans_on: Pais 1982; Cockcroft and Walton, Proc. Roy. Soc. A 137 (1932)
+  text: 'Radiumsalzen, ''radium salts'': Einstein''s one experimental hope, that the energy radium gives off would show as a loss of mass. The effect was far too small to weigh in 1905; the relation was
+    first checked in a nuclear reaction by Cockcroft and Walton in 1932. The last sentence, that radiation carries inertia between the emitting and absorbing bodies, is the paper''s own summary of what
+    it has shown.'

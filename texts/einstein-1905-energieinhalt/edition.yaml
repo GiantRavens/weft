@@ -1,0 +1,495 @@
+# Weft edition of two passages of Einstein's 'Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig?'
+# (Annalen der Physik 18, 1905, pp. 639-641): the opening, which states the principle of relativity, and the conclusion,
+# which states that a body's mass is a measure of its energy content. Text of German Wikisource (Seite:Einstein-
+# Energieinhalt.djvu/1 and 3), checked verbatim against the pinned page revisions. verify_strip sets aside the page
+# templates, the spaced-type markup round the physicists' names, the footnotes and the <math> tags; the formulas
+# are kept as the print sets them (L/V², L/9.10²⁰), declared as corrections of the transcription's TeX, and the
+# derivation between the two passages (pp. 639-641, with its displayed equations) is left to a later pilot.
+#   t     the word as printed, punctuation attached; a formula is one token (L, L/V²)
+#   n     the modern spelling (daß: dass); for a formula or a number, the words a reader says for it
+#         (L durch V Quadrat), from which the sound is read; ipa gives the reading outright
+#   Weft divides the text at sentences and, in the long sentences, at a clause.
+work: einstein-1905-energieinhalt
+joiner: ' '
+verify_strip: (?s)<noinclude>.*?</noinclude>|\{\{CRef\|\|(?:[^{}]|\{\{[^{}]*\}\})*\}\}|\{\{ss\||\|\.2\}\}|\{\{[^{}]*\}\}|<[^>]+>|'''''
+verify_corrections:
+- ocr: Baum
+  print: Raum
+  in: sources/p1.txt
+- ocr: L/V^{2}
+  print: L/V²
+  in: sources/p3.txt
+- ocr: L/9.10^{20}
+  print: L/9.10²⁰
+  in: sources/p3.txt
+sections:
+- id: intro
+  title: 'The opening: the principle of relativity'
+  verify_in: sources/p1.txt
+  lines:
+  - tokens:
+    - t: Die
+      n: Die
+    - t: Resultate
+      n: Resultate
+    - t: einer
+      n: einer
+    - t: jüngst
+      n: jüngst
+    - t: in
+      n: in
+    - t: diesen
+      n: diesen
+    - t: Annalen
+      n: Annalen
+    - t: von
+      n: von
+    - t: mir
+      n: mir
+    - t: publizierten
+      n: publizierten
+    - t: elektrodynamischen
+      n: elektrodynamischen
+    - t: Untersuchung
+      n: Untersuchung
+    - t: führen
+      n: führen
+    - t: zu
+      n: zu
+    - t: einer
+      n: einer
+    - t: sehr
+      n: sehr
+    - t: interessanten
+      n: interessanten
+    - t: Folgerung,
+      n: Folgerung
+    - t: die
+      n: die
+    - t: hier
+      n: hier
+    - t: abgeleitet
+      n: abgeleitet
+    - t: werden
+      n: werden
+    - t: soll.
+      n: soll
+  - tokens:
+    - t: Ich
+      n: Ich
+    - t: legte
+      n: legte
+    - t: dort
+      n: dort
+    - t: die
+      n: die
+    - t: Maxwell-Hertzschen
+      n: Maxwell-Hertzschen
+    - t: Gleichungen
+      n: Gleichungen
+    - t: für
+      n: für
+    - t: den
+      n: den
+    - t: leeren
+      n: leeren
+    - t: Raum
+      n: Raum
+    - t: nebst
+      n: nebst
+    - t: dem
+      n: dem
+    - t: Maxwellschen
+      n: Maxwellschen
+    - t: Ausdruck
+      n: Ausdruck
+    - t: für
+      n: für
+    - t: die
+      n: die
+    - t: elektromagnetische
+      n: elektromagnetische
+    - t: Energie
+      n: Energie
+    - t: des
+      n: des
+    - t: Raumes
+      n: Raumes
+    - t: zugrunde
+      n: zugrunde
+    - t: und
+      n: und
+    - t: außerdem
+      n: außerdem
+    - t: das
+      n: das
+    - t: 'Prinzip:'
+      n: Prinzip
+  - tokens:
+    - t: Die
+      n: Die
+    - t: Gesetze,
+      n: Gesetze
+    - t: nach
+      n: nach
+    - t: denen
+      n: denen
+    - t: sich
+      n: sich
+    - t: die
+      n: die
+    - t: Zustände
+      n: Zustände
+    - t: der
+      n: der
+    - t: physikalischen
+      n: physikalischen
+    - t: Systeme
+      n: Systeme
+    - t: ändern,
+      n: ändern
+    - t: sind
+      n: sind
+    - t: unabhängig
+      n: unabhängig
+    - t: davon,
+      n: davon
+  - tokens:
+    - t: auf
+      n: auf
+    - t: welches
+      n: welches
+    - t: von
+      n: von
+    - t: zwei
+      n: zwei
+    - t: relativ
+      n: relativ
+    - t: zueinander
+      n: zueinander
+    - t: in
+      n: in
+    - t: gleichförmiger
+      n: gleichförmiger
+    - t: Parallel-Translationsbewegung
+      n: Parallel-Translationsbewegung
+    - t: befindlichen
+      n: befindlichen
+    - t: Koordinatensystemen
+      n: Koordinatensystemen
+    - t: diese
+      n: diese
+    - t: Zustandsänderungen
+      n: Zustandsänderungen
+    - t: bezogen
+      n: bezogen
+    - t: werden
+      n: werden
+    - t: (Relativitätsprinzip).
+      n: Relativitätsprinzip
+- id: schluss
+  title: 'The conclusion: mass and energy'
+  verify_in: sources/p3.txt
+  lines:
+  - tokens:
+    - t: Aus
+      n: Aus
+    - t: dieser
+      n: dieser
+    - t: Gleichung
+      n: Gleichung
+    - t: folgt
+      n: folgt
+    - t: 'unmittelbar:'
+      n: unmittelbar
+  - tokens:
+    - t: Gibt
+      n: Gibt
+    - t: ein
+      n: ein
+    - t: Körper
+      n: Körper
+    - t: die
+      n: die
+    - t: Energie
+      n: Energie
+    - t: L
+      n: L
+      ipa:
+        northern: ɛl
+        modern: ɛl
+    - t: in
+      n: in
+    - t: Form
+      n: Form
+    - t: von
+      n: von
+    - t: Strahlung
+      n: Strahlung
+    - t: ab,
+      n: ab
+    - t: so
+      n: so
+    - t: verkleinert
+      n: verkleinert
+    - t: sich
+      n: sich
+    - t: seine
+      n: seine
+    - t: Masse
+      n: Masse
+    - t: um
+      n: um
+    - t: L/V².
+      n: L durch V Quadrat
+      ipa:
+        northern: ɛl dʊrç faʊ kva.ˈdraːt
+        modern: ɛl dʊʁç faʊ kva.ˈdʁaːt
+  - tokens:
+    - t: Hierbei
+      n: Hierbei
+    - t: ist
+      n: ist
+    - t: es
+      n: es
+    - t: offenbar
+      n: offenbar
+    - t: unwesentlich,
+      n: unwesentlich
+    - t: daß
+      n: dass
+    - t: die
+      n: die
+    - t: dem
+      n: dem
+    - t: Körper
+      n: Körper
+    - t: entzogene
+      n: entzogene
+    - t: Energie
+      n: Energie
+    - t: gerade
+      n: gerade
+    - t: in
+      n: in
+    - t: Energie
+      n: Energie
+    - t: der
+      n: der
+    - t: Strahlung
+      n: Strahlung
+    - t: übergeht,
+      n: übergeht
+    - t: so
+      n: so
+    - t: daß
+      n: dass
+    - t: wir
+      n: wir
+    - t: zu
+      n: zu
+    - t: der
+      n: der
+    - t: allgemeineren
+      n: allgemeineren
+    - t: Folgerung
+      n: Folgerung
+    - t: geführt
+      n: geführt
+    - t: 'werden:'
+      n: werden
+  - tokens:
+    - t: Die
+      n: Die
+    - t: Masse
+      n: Masse
+    - t: eines
+      n: eines
+    - t: Körpers
+      n: Körpers
+    - t: ist
+      n: ist
+    - t: ein
+      n: ein
+    - t: Maß
+      n: Maß
+    - t: für
+      n: für
+    - t: dessen
+      n: dessen
+    - t: Energieinhalt;
+      n: Energieinhalt
+  - tokens:
+    - t: ändert
+      n: ändert
+    - t: sich
+      n: sich
+    - t: die
+      n: die
+    - t: Energie
+      n: Energie
+    - t: um
+      n: um
+    - t: L,
+      n: L,
+      ipa:
+        northern: ɛl
+        modern: ɛl
+    - t: so
+      n: so
+    - t: ändert
+      n: ändert
+    - t: sich
+      n: sich
+    - t: die
+      n: die
+    - t: Masse
+      n: Masse
+    - t: in
+      n: in
+    - t: demselben
+      n: demselben
+    - t: Sinne
+      n: Sinne
+    - t: um
+      n: um
+    - t: L/9.10²⁰,
+      n: L durch neun mal zehn hoch zwanzig
+      ipa:
+        northern: ɛl dʊrç nɔʏn maːl tseːn hoːx ˈtsvan.tsɪç
+        modern: ɛl dʊʁç nɔʏn maːl tseːn hoːx ˈtsvan.tsɪç
+    - t: wenn
+      n: wenn
+    - t: die
+      n: die
+    - t: Energie
+      n: Energie
+    - t: in
+      n: in
+    - t: Erg
+      n: Erg
+    - t: und
+      n: und
+    - t: die
+      n: die
+    - t: Masse
+      n: Masse
+    - t: in
+      n: in
+    - t: Grammen
+      n: Grammen
+    - t: gemessen
+      n: gemessen
+    - t: wird.
+      n: wird
+  - tokens:
+    - t: Es
+      n: Es
+    - t: ist
+      n: ist
+    - t: nicht
+      n: nicht
+    - t: ausgeschlossen,
+      n: ausgeschlossen
+    - t: daß
+      n: dass
+    - t: bei
+      n: bei
+    - t: Körpern,
+      n: Körpern
+    - t: deren
+      n: deren
+    - t: Energieinhalt
+      n: Energieinhalt
+    - t: in
+      n: in
+    - t: hohem
+      n: hohem
+    - t: Maße
+      n: Maße
+    - t: veränderlich
+      n: veränderlich
+    - t: ist
+      n: ist
+    - t: (z.
+      n: zum
+    - t: B.
+      n: Beispiel
+    - t: bei
+      n: bei
+    - t: den
+      n: den
+    - t: Radiumsalzen),
+      n: Radiumsalzen
+    - t: eine
+      n: eine
+    - t: Prüfung
+      n: Prüfung
+    - t: der
+      n: der
+    - t: Theorie
+      n: Theorie
+    - t: gelingen
+      n: gelingen
+    - t: wird.
+      n: wird
+  - tokens:
+    - t: Wenn
+      n: Wenn
+    - t: die
+      n: die
+    - t: Theorie
+      n: Theorie
+    - t: den
+      n: den
+    - t: Tatsachen
+      n: Tatsachen
+    - t: entspricht,
+      n: entspricht
+    - t: so
+      n: so
+    - t: überträgt
+      n: überträgt
+    - t: die
+      n: die
+    - t: Strahlung
+      n: Strahlung
+    - t: Trägheit
+      n: Trägheit
+    - t: zwischen
+      n: zwischen
+    - t: den
+      n: den
+    - t: emittierenden
+      n: emittierenden
+    - t: und
+      n: und
+    - t: absorbierenden
+      n: absorbierenden
+    - t: Körpern.
+      n: Körpern
+  - tokens:
+    - t: Bern,
+      n: Bern
+    - t: September
+      n: September
+    - t: '1905.'
+      n: neunzehnhundertfünf
+      ipa:
+        northern: ˈnɔʏn.tseːn.ˌhʊn.dɛrt.fʏnf
+        modern: ˈnɔʏn.tseːn.ˌhʊn.dɛʁt.fʏnf
+  - tokens:
+    - t: (Eingegangen
+      n: Eingegangen
+    - t: '27.'
+      n: siebenundzwanzigsten
+      ipa:
+        northern: ˈziː.bən.ʊnt.ˌtsvan.tsɪçs.tən
+        modern: ˈziː.bən.ʊnt.ˌtsvan.tsɪçs.tən
+    - t: September
+      n: September
+    - t: 1905.)
+      n: neunzehnhundertfünf
+      ipa:
+        northern: ˈnɔʏn.tseːn.ˌhʊn.dɛrt.fʏnf
+        modern: ˈnɔʏn.tseːn.ˌhʊn.dɛʁt.fʏnf

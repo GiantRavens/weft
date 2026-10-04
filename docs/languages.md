@@ -94,6 +94,7 @@ the page shows no invitation.
 | Japanese | `japanese` | Bashō | edo-1686 (first), modern | not set |
 | Franco-Italian | `oldfrench` | Marco Polo, Cipangu | fr1300 (first), it1300 | medium |
 | Italian | `italian` | Dante, Petrarch, Machiavelli | florentine (first), modern | not set |
+| | | Verdi, Brindisi and Credo (1853, 1887) | florentine (first), modern | medium |
 | Spanish | `spanish` | Columbus, 1493 | c1492 (first), modern | not set |
 | Portuguese | `portuguese` | Camões, Os Lusíadas I.1-3 | lisboa1540 (first), europeu, brasileiro | medium |
 | | | Caminha, letter of 1500 | lisboa1540 (first), europeu, brasileiro | medium |
@@ -105,6 +106,7 @@ the page shows no invitation.
 | | | Berlin Act, 1885 | fr1885 (first), modern | not set |
 | German | `german` | Kant, Nietzsche | northern (first), modern | not set |
 | | | Marx and Engels, Manifest (1848) | northern (first), modern | medium |
+| | | Einstein, inertia and energy content (1905) | northern (first), modern | medium |
 | | | Luther's Bible | ecg1545 (first), modern | not set |
 | Swahili | `swahili` | Steere, The Kites and the Crows | z1870 (first), modern | medium |
 | Esperanto | `esperanto` | Zamenhof, Unua Libro specimens (1887) | zamenhof (only) | not set |
