@@ -1,0 +1,889 @@
+# Human overlay for Hávamál stanzas 138-164. Lemmas follow Zoëga, A Concise Dictionary of Old
+# Icelandic (1910); morphology uses Universal Dependencies features. Staves and metre by hand; where the
+# alliteration of a line is irregular or the line is one of the list forms (144, the Veistu lines; the
+# Loddfáfnir formula), the metre string says so.
+- by: "Claude (Weft phase 0), for review by Skip and a scholar"
+  date: "2026-10-04"
+  why: "hand lemma, morphology, gloss, staves and metre for stanzas 138-164; no treebank exists for Eddic poetry; the first 80 were done the same way"
+  status: "draft"
+  set:
+    hav.138.1: {metre: "long line, a-verse · stave v"}
+    hav.138.1.1: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know", stave: true}   # Veit
+    hav.138.1.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.138.1.3: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    hav.138.1.4: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.138.1.5: {lemma: "hanga", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "hung"}   # hekk
+    hav.138.2: {metre: "long line, b-verse · stave v"}
+    hav.138.2.1: {lemma: "vindugr", morph: "ADJ|Case=Dat|Gender=Masc|Number=Sing", gloss: "wind-swept", stave: true}   # vindga
+    hav.138.2.2: {lemma: "meiðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "tree"}   # meiði
+    hav.138.2.3: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    hav.138.3: {metre: "full line · staves n"}
+    hav.138.3.1: {lemma: "nótt", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "nights", stave: true}   # nætr
+    hav.138.3.2: {lemma: "allr", morph: "ADJ|Case=Acc|Gender=Fem|Number=Plur", gloss: "all"}   # allar
+    hav.138.3.3: {lemma: "níu", morph: "NUM", gloss: "nine", stave: true}   # níu
+    hav.138.4: {metre: "long line, a-verse · stave g"}
+    hav.138.4.1: {lemma: "geirr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "with-a-spear", stave: true}   # geiri
+    hav.138.4.2: {lemma: "unda", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "wounded"}   # undaðr
+    hav.138.5: {metre: "long line, b-verse · stave g"}
+    hav.138.5.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.138.5.2: {lemma: "gefa", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "given", stave: true}   # gefinn
+    hav.138.5.3: {lemma: "Óðinn", morph: "PROPN|Case=Dat|Gender=Masc|Number=Sing", gloss: "to-Odin"}   # Óðni
+    hav.138.6: {metre: "full line · staves s"}
+    hav.138.6.1: {lemma: "sjalfr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "myself", stave: true}   # sjalfr
+    hav.138.6.2: {lemma: "sjalfr", morph: "ADJ|Case=Dat|Gender=Masc|Number=Sing", gloss: "to-myself", stave: true}   # sjalfum
+    hav.138.6.3: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "me"}   # mér
+    hav.138.7: {metre: "long line, a-verse · stave m"}
+    hav.138.7.1: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    hav.138.7.2: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # þeim
+    hav.138.7.3: {lemma: "meiðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "tree", stave: true}   # meiði
+    hav.138.8: {metre: "long line, b-verse · stave m"}
+    hav.138.8.1: {lemma: "er", morph: "SCONJ", gloss: "of-which"}   # er
+    hav.138.8.2: {lemma: "manngi", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Ind", gloss: "no-one", stave: true}   # manngi
+    hav.138.8.3: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "knows"}   # veit
+    hav.138.9: {metre: "full line · staves r"}
+    hav.138.9.1: {lemma: "hverr", morph: "PRON|Case=Gen|Gender=Neut|Number=Sing|PronType=Int", gloss: "from-what"}   # hvers
+    hav.138.9.2: {lemma: "af", morph: "ADP", gloss: "of"}   # af
+    hav.138.9.3: {lemma: "rót", morph: "NOUN|Case=Dat|Gender=Fem|Number=Plur", gloss: "roots", stave: true}   # rótum
+    hav.138.9.4: {lemma: "renna", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "it-runs", stave: true}   # renn
+    hav.139.1: {metre: "long line, a-verse · stave h"}
+    hav.139.1.1: {lemma: "við", morph: "ADP", gloss: "with"}   # Við
+    hav.139.1.2: {lemma: "hleifr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "a-loaf", stave: true}   # hleifi
+    hav.139.1.3: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # mik
+    hav.139.1.4: {lemma: "sæla", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "they-blessed"}   # sældu
+    hav.139.2: {metre: "long line, b-verse · stave h"}
+    hav.139.2.1: {lemma: "né", morph: "CCONJ", gloss: "nor"}   # né
+    hav.139.2.2: {lemma: "við", morph: "ADP", gloss: "with"}   # við
+    hav.139.2.3: {lemma: "horn", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing|Polarity=Neg", gloss: "a-horn", stave: true}   # hornigi
+    hav.139.3: {metre: "full line · staves n"}
+    hav.139.3.1: {lemma: "nýsa", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "peered", stave: true}   # nýsta
+    hav.139.3.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.139.3.3: {lemma: "niðr", morph: "ADV", gloss: "down", stave: true}   # niðr
+    hav.139.4: {metre: "long line, a-verse · stave n"}
+    hav.139.4.1: {lemma: "nema", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "took", stave: true}   # nam
+    hav.139.4.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.139.4.3: {lemma: "upp", morph: "ADV", gloss: "up"}   # upp
+    hav.139.4.4: {lemma: "rún", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "runes"}   # rúnar
+    hav.139.5: {metre: "long line, b-verse · stave vowel · irregular (vowel against n)"}
+    hav.139.5.1: {lemma: "æpa", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Part", gloss: "screaming", stave: true}   # æpandi
+    hav.139.5.2: {lemma: "nema", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "took"}   # nam
+    hav.139.6: {metre: "full line · staves f · irregular (f and þ)"}
+    hav.139.6.1: {lemma: "falla", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "fell", stave: true}   # fell
+    hav.139.6.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.139.6.3: {lemma: "aftr", morph: "ADV", gloss: "back"}   # aftr
+    hav.139.6.4: {lemma: "þaðan", morph: "ADV", gloss: "from-there", stave: true}   # þaðan
+    hav.140.1: {metre: "long line, a-verse · stave f"}
+    hav.140.1.1: {lemma: "fimbulljóð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "mighty-songs", stave: true}   # Fimbulljóð
+    hav.140.1.2: {lemma: "níu", morph: "NUM", gloss: "nine"}   # níu
+    hav.140.2: {metre: "long line, b-verse · stave f"}
+    hav.140.2.1: {lemma: "nema", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "took"}   # nam
+    hav.140.2.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.140.2.3: {lemma: "af", morph: "ADP", gloss: "from"}   # af
+    hav.140.2.4: {lemma: "inn", morph: "DET|Case=Dat|Gender=Masc|Number=Sing", gloss: "the"}   # inum
+    hav.140.2.5: {lemma: "frægr", morph: "ADJ|Case=Dat|Gender=Masc|Number=Sing", gloss: "famous", stave: true}   # frægja
+    hav.140.2.6: {lemma: "sonr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "son"}   # syni
+    hav.140.3: {metre: "full line · staves b"}
+    hav.140.3.1: {lemma: "Bölþorn", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-Bolthorn", stave: true}   # Bölþorns
+    hav.140.3.2: {lemma: "Bestla", morph: "PROPN|Case=Gen|Gender=Fem|Number=Sing", gloss: "Bestla's", stave: true}   # Bestlu
+    hav.140.3.3: {lemma: "faðir", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "father"}   # föður
+    hav.140.4: {metre: "long line, a-verse · stave d"}
+    hav.140.4.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.140.4.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.140.4.3: {lemma: "drykkr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "a-drink", stave: true}   # drykk
+    hav.140.4.4: {lemma: "of", morph: "PART", gloss: "(particle)"}   # of
+    hav.140.4.5: {lemma: "geta", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "got"}   # gat
+    hav.140.5: {metre: "long line, b-verse · stave d"}
+    hav.140.5.1: {lemma: "inn", morph: "DET|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-the"}   # ins
+    hav.140.5.2: {lemma: "dýrr", morph: "ADJ|Case=Gen|Gender=Masc|Number=Sing", gloss: "precious", stave: true}   # dýra
+    hav.140.5.3: {lemma: "mjöðr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "mead"}   # mjaðar
+    hav.140.6: {metre: "full line · staves vowel"}
+    hav.140.6.1: {lemma: "ausa", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "sprinkled", stave: true}   # ausinn
+    hav.140.6.2: {lemma: "Óðrerir", morph: "PROPN|Case=Dat|Gender=Masc|Number=Sing", gloss: "from-Odrerir", stave: true}   # Óðreri
+    hav.141.1: {metre: "long line, a-verse · stave f"}
+    hav.141.1.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # Þá
+    hav.141.1.2: {lemma: "nema", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "began"}   # nam
+    hav.141.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.141.1.4: {lemma: "fræva", morph: "VERB|VerbForm=Inf|Voice=Mid", gloss: "to-be-fruitful", stave: true}   # frævask
+    hav.141.2: {metre: "long line, b-verse · stave f"}
+    hav.141.2.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.141.2.2: {lemma: "fróðr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "wise", stave: true}   # fróðr
+    hav.141.2.3: {lemma: "vera", morph: "VERB|VerbForm=Inf", gloss: "to-be"}   # vera
+    hav.141.3: {metre: "full line · staves v"}
+    hav.141.3.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.141.3.2: {lemma: "vaxa", morph: "VERB|VerbForm=Inf", gloss: "to-grow", stave: true}   # vaxa
+    hav.141.3.3: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.141.3.4: {lemma: "vel", morph: "ADV", gloss: "well", stave: true}   # vel
+    hav.141.3.5: {lemma: "hafa", morph: "VERB|VerbForm=Inf|Voice=Mid", gloss: "to-thrive"}   # hafask
+    hav.141.4: {metre: "long line, a-verse · stave vowel"}
+    hav.141.4.1: {lemma: "orð", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "a-word", stave: true}   # orð
+    hav.141.4.2: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "for-me"}   # mér
+    hav.141.4.3: {lemma: "af", morph: "ADP", gloss: "from"}   # af
+    hav.141.4.4: {lemma: "orð", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "a-word", stave: true}   # orði
+    hav.141.5: {metre: "long line, b-verse · stave vowel"}
+    hav.141.5.1: {lemma: "orð", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "a-word", stave: true}   # orðs
+    hav.141.5.2: {lemma: "leita", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "sought"}   # leitaði
+    hav.141.6: {metre: "long line, a-verse · stave v"}
+    hav.141.6.1: {lemma: "verk", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "a-deed", stave: true}   # verk
+    hav.141.6.2: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "for-me"}   # mér
+    hav.141.6.3: {lemma: "af", morph: "ADP", gloss: "from"}   # af
+    hav.141.6.4: {lemma: "verk", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "a-deed", stave: true}   # verki
+    hav.141.7: {metre: "long line, b-verse · stave v"}
+    hav.141.7.1: {lemma: "verk", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "a-deed", stave: true}   # verks
+    hav.141.7.2: {lemma: "leita", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "sought"}   # leitaði
+    hav.142.1: {metre: "long line, a-verse · stave r"}
+    hav.142.1.1: {lemma: "rún", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "runes", stave: true}   # Rúnar
+    hav.142.1.2: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "wilt"}   # munt
+    hav.142.1.3: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "thou"}   # þú
+    hav.142.1.4: {lemma: "finna", morph: "VERB|VerbForm=Inf", gloss: "find"}   # finna
+    hav.142.2: {metre: "long line, b-verse · stave r"}
+    hav.142.2.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.142.2.2: {lemma: "ráða", morph: "VERB|Case=Acc|Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part", gloss: "read", stave: true}   # ráðna
+    hav.142.2.3: {lemma: "stafr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "staves"}   # stafi
+    hav.142.3: {metre: "full line · staves st"}
+    hav.142.3.1: {lemma: "mjök", morph: "ADV", gloss: "very"}   # mjök
+    hav.142.3.2: {lemma: "stórr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Plur", gloss: "great", stave: true}   # stóra
+    hav.142.3.3: {lemma: "stafr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "staves", stave: true}   # stafi
+    hav.142.4: {metre: "full line · staves st"}
+    hav.142.4.1: {lemma: "mjök", morph: "ADV", gloss: "very"}   # mjök
+    hav.142.4.2: {lemma: "stinnr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Plur", gloss: "strong", stave: true}   # stinna
+    hav.142.4.3: {lemma: "stafr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "staves", stave: true}   # stafi
+    hav.142.5: {metre: "long line, a-verse · stave f"}
+    hav.142.5.1: {lemma: "er", morph: "SCONJ", gloss: "which"}   # er
+    hav.142.5.2: {lemma: "fá", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "painted", stave: true}   # fáði
+    hav.142.5.3: {lemma: "fimbulþulr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "the-mighty-sage", stave: true}   # fimbulþulr
+    hav.142.6: {metre: "long line, b-verse · stave g · irregular (g against f)"}
+    hav.142.6.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.142.6.2: {lemma: "gera", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "made", stave: true}   # gerðu
+    hav.142.6.3: {lemma: "ginnregin", morph: "NOUN|Case=Nom|Gender=Neut|Number=Plur", gloss: "the-great-powers", stave: true}   # ginnregin
+    hav.142.7: {metre: "full line · staves r"}
+    hav.142.7.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.142.7.2: {lemma: "rísta", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "carved", stave: true}   # reist
+    hav.142.7.3: {lemma: "Hroftr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "the-Hropt"}   # hroftr
+    hav.142.7.4: {lemma: "regin", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-the-gods", stave: true}   # rögna
+    hav.143.1: {metre: "long line, a-verse · stave vowel"}
+    hav.143.1.1: {lemma: "Óðinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Odin", stave: true}   # Óðinn
+    hav.143.1.2: {lemma: "með", morph: "ADP", gloss: "among"}   # með
+    hav.143.1.3: {lemma: "áss", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "the-Æsir", stave: true}   # ásum
+    hav.143.2: {metre: "long line, b-verse · stave vowel"}
+    hav.143.2.1: {lemma: "en", morph: "CCONJ", gloss: "but"}   # en
+    hav.143.2.2: {lemma: "fyr", morph: "ADP", gloss: "for"}   # fyr
+    hav.143.2.3: {lemma: "alfr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "the-elves", stave: true}   # alfum
+    hav.143.2.4: {lemma: "Dáinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Dain"}   # Dáinn
+    hav.143.3: {metre: "full line · staves d"}
+    hav.143.3.1: {lemma: "Dvalinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Dvalin", stave: true}   # Dvalinn
+    hav.143.3.2: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.143.3.3: {lemma: "dvergr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "for-the-dwarfs", stave: true}   # dvergum
+    hav.143.3.4: {lemma: "fyrir", morph: "ADP", gloss: "for"}   # fyrir
+    hav.143.4: {metre: "long line, a-verse · stave vowel"}
+    hav.143.4.1: {lemma: "Ásviðr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Asvid", stave: true}   # Ásviðr
+    hav.143.4.2: {lemma: "jötunn", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "for-the-giants", stave: true}   # jötnum
+    hav.143.4.3: {lemma: "fyrir", morph: "ADP", gloss: "for"}   # fyrir
+    hav.143.5: {metre: "long line, b-verse · stave s · irregular (s against vowel)"}
+    hav.143.5.1: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.143.5.2: {lemma: "rísta", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "carved"}   # reist
+    hav.143.5.3: {lemma: "sjalfr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "myself", stave: true}   # sjalfr
+    hav.143.5.4: {lemma: "sumr", morph: "PRON|Case=Acc|Gender=Fem|Number=Plur", gloss: "some", stave: true}   # sumar
+    hav.144.1: {metre: "full line · staves r · irregular (v and r; the list)"}
+    hav.144.1.1: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "knowest-thou", stave: true}   # Veistu
+    hav.144.1.2: {lemma: "hvé", morph: "ADV", gloss: "how"}   # hvé
+    hav.144.1.3: {lemma: "rísta", morph: "VERB|VerbForm=Inf", gloss: "one-carves", stave: true}   # rísta
+    hav.144.1.4: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    hav.144.2: {metre: "full line · staves r · irregular (v and r; the list)"}
+    hav.144.2.1: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "knowest-thou", stave: true}   # Veistu
+    hav.144.2.2: {lemma: "hvé", morph: "ADV", gloss: "how"}   # hvé
+    hav.144.2.3: {lemma: "ráða", morph: "VERB|VerbForm=Inf", gloss: "one-reads", stave: true}   # ráða
+    hav.144.2.4: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    hav.144.3: {metre: "full line · staves f · irregular (v and f; the list)"}
+    hav.144.3.1: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "knowest-thou", stave: true}   # Veistu
+    hav.144.3.2: {lemma: "hvé", morph: "ADV", gloss: "how"}   # hvé
+    hav.144.3.3: {lemma: "fá", morph: "VERB|VerbForm=Inf", gloss: "one-paints", stave: true}   # fáa
+    hav.144.3.4: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    hav.144.4: {metre: "full line · staves f · irregular (v and f; the list)"}
+    hav.144.4.1: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "knowest-thou", stave: true}   # Veistu
+    hav.144.4.2: {lemma: "hvé", morph: "ADV", gloss: "how"}   # hvé
+    hav.144.4.3: {lemma: "freista", morph: "VERB|VerbForm=Inf", gloss: "one-tries", stave: true}   # freista
+    hav.144.4.4: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    hav.144.5: {metre: "full line · staves b · irregular (v and b; the list)"}
+    hav.144.5.1: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "knowest-thou", stave: true}   # Veistu
+    hav.144.5.2: {lemma: "hvé", morph: "ADV", gloss: "how"}   # hvé
+    hav.144.5.3: {lemma: "biðja", morph: "VERB|VerbForm=Inf", gloss: "one-prays", stave: true}   # biðja
+    hav.144.5.4: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    hav.144.6: {metre: "full line · staves b · irregular (v and b; the list)"}
+    hav.144.6.1: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "knowest-thou", stave: true}   # Veistu
+    hav.144.6.2: {lemma: "hvé", morph: "ADV", gloss: "how"}   # hvé
+    hav.144.6.3: {lemma: "blóta", morph: "VERB|VerbForm=Inf", gloss: "one-sacrifices", stave: true}   # blóta
+    hav.144.6.4: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    hav.144.7: {metre: "full line · staves s · irregular (v and s; the list)"}
+    hav.144.7.1: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "knowest-thou", stave: true}   # Veistu
+    hav.144.7.2: {lemma: "hvé", morph: "ADV", gloss: "how"}   # hvé
+    hav.144.7.3: {lemma: "senda", morph: "VERB|VerbForm=Inf", gloss: "one-sends", stave: true}   # senda
+    hav.144.7.4: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    hav.144.8: {metre: "full line · staves s · irregular (v and s; the list)"}
+    hav.144.8.1: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "knowest-thou", stave: true}   # Veistu
+    hav.144.8.2: {lemma: "hvé", morph: "ADV", gloss: "how"}   # hvé
+    hav.144.8.3: {lemma: "sóa", morph: "VERB|VerbForm=Inf", gloss: "one-offers", stave: true}   # sóa
+    hav.144.8.4: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    hav.145.1: {metre: "long line, a-verse · stave b"}
+    hav.145.1.1: {lemma: "góðr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing|Degree=Cmp", gloss: "better", stave: true}   # Betra
+    hav.145.1.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    hav.145.1.3: {lemma: "óbeðinn", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "unprayed"}   # óbeðit
+    hav.145.2: {metre: "long line, b-verse · stave b"}
+    hav.145.2.1: {lemma: "en", morph: "SCONJ", gloss: "than"}   # en
+    hav.145.2.2: {lemma: "vera", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "be"}   # sé
+    hav.145.2.3: {lemma: "ofblótinn", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "over-sacrificed", stave: true}   # ofblótit
+    hav.145.3: {metre: "full line · staves g"}
+    hav.145.3.1: {lemma: "ey", morph: "ADV", gloss: "ever"}   # ey
+    hav.145.3.2: {lemma: "sjá", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "looks"}   # sér
+    hav.145.3.3: {lemma: "til", morph: "ADP", gloss: "for"}   # til
+    hav.145.3.4: {lemma: "gildi", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "repayment", stave: true}   # gildis
+    hav.145.3.5: {lemma: "gjöf", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "a-gift", stave: true}   # gjöf
+    hav.145.4: {metre: "long line, a-verse · stave s · irregular (b and s)"}
+    hav.145.4.1: {lemma: "góðr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing|Degree=Cmp", gloss: "better", stave: true}   # betra
+    hav.145.4.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    hav.145.4.3: {lemma: "ósendr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "unsent", stave: true}   # ósent
+    hav.145.5: {metre: "long line, b-verse · stave s"}
+    hav.145.5.1: {lemma: "en", morph: "SCONJ", gloss: "than"}   # en
+    hav.145.5.2: {lemma: "vera", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "be"}   # sé
+    hav.145.5.3: {lemma: "ofsóinn", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "over-offered", stave: true}   # ofsóit
+    hav.145.6: {metre: "full line · staves þ"}
+    hav.145.6.1: {lemma: "svá", morph: "ADV", gloss: "so"}   # Svá
+    hav.145.6.2: {lemma: "Þundr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Thund", stave: true}   # Þundr
+    hav.145.6.3: {lemma: "of", morph: "PART", gloss: "(particle)"}   # of
+    hav.145.6.4: {lemma: "rísta", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "carved"}   # reist
+    hav.145.7: {metre: "full line · staves þ · irregular (one lift)"}
+    hav.145.7.1: {lemma: "fyr", morph: "ADP", gloss: "before"}   # fyr
+    hav.145.7.2: {lemma: "þjóð", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "of-peoples", stave: true}   # þjóða
+    hav.145.7.3: {lemma: "rök", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "the-doom"}   # rök
+    hav.145.8: {metre: "long line, a-verse · stave r"}
+    hav.145.8.1: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    hav.145.8.2: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    hav.145.8.3: {lemma: "upp", morph: "ADV", gloss: "up"}   # upp
+    hav.145.8.4: {lemma: "of", morph: "PART", gloss: "(particle)"}   # of
+    hav.145.8.5: {lemma: "rísa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "rose", stave: true}   # reis
+    hav.145.9: {metre: "long line, b-verse · stave k · irregular (k against r)"}
+    hav.145.9.1: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    hav.145.9.2: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    hav.145.9.3: {lemma: "aftr", morph: "ADV", gloss: "back"}   # aftr
+    hav.145.9.4: {lemma: "of", morph: "PART", gloss: "(particle)"}   # of
+    hav.145.9.5: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "came", stave: true}   # kom
+    hav.146.1: {metre: "long line, a-verse · stave l"}
+    hav.146.1.1: {lemma: "ljóð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "songs", stave: true}   # Ljóð
+    hav.146.1.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.146.1.3: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Plur|PronType=Dem", gloss: "those"}   # þau
+    hav.146.1.4: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know"}   # kann
+    hav.146.2: {metre: "long line, b-verse · stave k · irregular (k against l)"}
+    hav.146.2.1: {lemma: "er", morph: "SCONJ", gloss: "which"}   # er
+    hav.146.2.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Polarity=Neg", gloss: "knows-not", stave: true}   # kann-at
+    hav.146.2.3: {lemma: "þjóðann", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "a-king's"}   # þjóðans
+    hav.146.2.4: {lemma: "kona", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "wife"}   # kona
+    hav.146.3: {metre: "full line · staves m"}
+    hav.146.3.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.146.3.2: {lemma: "manngi", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|PronType=Ind", gloss: "no-man's", stave: true}   # mannskis
+    hav.146.3.3: {lemma: "mögr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "son", stave: true}   # mögr
+    hav.146.4: {metre: "long line, a-verse · stave h"}
+    hav.146.4.1: {lemma: "hjalp", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "help", stave: true}   # Hjalp
+    hav.146.4.2: {lemma: "heita", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is-called"}   # heitir
+    hav.146.4.3: {lemma: "einn", morph: "NUM|Case=Nom|Gender=Neut|Number=Sing", gloss: "one"}   # eitt
+    hav.146.5: {metre: "long line, b-verse · stave h"}
+    hav.146.5.1: {lemma: "en", morph: "CCONJ", gloss: "and"}   # en
+    hav.146.5.2: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "it"}   # þat
+    hav.146.5.3: {lemma: "þú", morph: "PRON|Case=Dat|Number=Sing|Person=2", gloss: "thee"}   # þér
+    hav.146.5.4: {lemma: "hjalpa", morph: "VERB|VerbForm=Inf", gloss: "help", stave: true}   # hjalpa
+    hav.146.5.5: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "will"}   # mun
+    hav.146.6: {metre: "full line · staves s"}
+    hav.146.6.1: {lemma: "við", morph: "ADP", gloss: "against"}   # við
+    hav.146.6.2: {lemma: "sök", morph: "NOUN|Case=Dat|Gender=Fem|Number=Plur", gloss: "lawsuits", stave: true}   # sökum
+    hav.146.6.3: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.146.6.4: {lemma: "sorg", morph: "NOUN|Case=Dat|Gender=Fem|Number=Plur", gloss: "sorrows", stave: true}   # sorgum
+    hav.146.7: {metre: "full line · staves s"}
+    hav.146.7.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.146.7.2: {lemma: "sút", morph: "NOUN|Case=Dat|Gender=Fem|Number=Plur", gloss: "griefs", stave: true}   # sútum
+    hav.146.7.3: {lemma: "görvallr", morph: "ADJ|Case=Dat|Gender=Fem|Number=Plur", gloss: "all", stave: true}   # görvöllum
+    hav.147.1: {metre: "long line, a-verse · stave vowel"}
+    hav.147.1.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    hav.147.1.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know"}   # kann
+    hav.147.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.147.1.4: {lemma: "annarr", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "the-second", stave: true}   # annat
+    hav.147.2: {metre: "long line, b-verse · stave vowel"}
+    hav.147.2.1: {lemma: "er", morph: "SCONJ", gloss: "which"}   # er
+    hav.147.2.2: {lemma: "þurfa", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "need"}   # þurfu
+    hav.147.2.3: {lemma: "ýtr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-men", stave: true}   # ýta
+    hav.147.2.4: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "the-sons"}   # synir
+    hav.147.3: {metre: "full line · staves l"}
+    hav.147.3.1: {lemma: "þeir", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|Person=3", gloss: "those"}   # þeir
+    hav.147.3.2: {lemma: "er", morph: "SCONJ", gloss: "who"}   # er
+    hav.147.3.3: {lemma: "vilja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "wish"}   # vilja
+    hav.147.3.4: {lemma: "læknir", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "as-healers", stave: true}   # læknar
+    hav.147.3.5: {lemma: "lifa", morph: "VERB|VerbForm=Inf", gloss: "to-live", stave: true}   # lifa
+    hav.148.1: {metre: "long line, a-verse · stave þ"}
+    hav.148.1.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Það
+    hav.148.1.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know"}   # kann
+    hav.148.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.148.1.4: {lemma: "þriði", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "the-third", stave: true}   # þriðja
+    hav.148.2: {metre: "long line, b-verse · stave þ"}
+    hav.148.2.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    hav.148.2.2: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "to-me"}   # mér
+    hav.148.2.3: {lemma: "verða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "becomes"}   # verðr
+    hav.148.2.4: {lemma: "þörf", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "need", stave: true}   # þörf
+    hav.148.2.5: {lemma: "mikill", morph: "ADJ|Case=Nom|Gender=Fem|Number=Sing", gloss: "great"}   # mikil
+    hav.148.3: {metre: "full line · staves h"}
+    hav.148.3.1: {lemma: "haft", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "of-a-fetter", stave: true}   # hafts
+    hav.148.3.2: {lemma: "við", morph: "ADP", gloss: "against"}   # við
+    hav.148.3.3: {lemma: "minn", morph: "DET|Case=Acc|Gender=Masc|Number=Plur|Poss=Yes", gloss: "my"}   # mína
+    hav.148.3.4: {lemma: "heiftmögr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "foes", stave: true}   # heiftmögu
+    hav.148.4: {metre: "long line, a-verse · stave vowel"}
+    hav.148.4.1: {lemma: "egg", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "the-edges", stave: true}   # eggjar
+    hav.148.4.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.148.4.3: {lemma: "deyfa", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "blunt"}   # deyfi
+    hav.148.5: {metre: "long line, b-verse · stave vowel"}
+    hav.148.5.1: {lemma: "minn", morph: "DET|Case=Gen|Gender=Masc|Number=Plur|Poss=Yes", gloss: "of-my"}   # minna
+    hav.148.5.2: {lemma: "andskoti", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "adversaries", stave: true}   # andskota
+    hav.148.6: {metre: "full line · staves v"}
+    hav.148.6.1: {lemma: "bíta", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|Polarity=Neg", gloss: "bite-not", stave: true}   # bíta-t
+    hav.148.6.2: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Masc|Number=Plur|PronType=Dem", gloss: "for-them"}   # þeim
+    hav.148.6.3: {lemma: "vápn", morph: "NOUN|Case=Nom|Gender=Neut|Number=Plur", gloss: "weapons", stave: true}   # vápn
+    hav.148.6.4: {lemma: "né", morph: "CCONJ", gloss: "nor"}   # né
+    hav.148.6.5: {lemma: "vél", morph: "NOUN|Case=Nom|Gender=Fem|Number=Plur", gloss: "wiles", stave: true}   # velir
+    hav.149.1: {metre: "long line, a-verse · stave k"}
+    hav.149.1.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    hav.149.1.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know", stave: true}   # kann
+    hav.149.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.149.1.4: {lemma: "inn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    hav.149.1.5: {lemma: "fjórði", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "fourth"}   # fjórða
+    hav.149.2: {metre: "long line, b-verse · stave f"}
+    hav.149.2.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    hav.149.2.2: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "on-me"}   # mér
+    hav.149.2.3: {lemma: "fyrðar", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "men", stave: true}   # fyrðar
+    hav.149.2.4: {lemma: "bera", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "lay"}   # bera
+    hav.149.3: {metre: "full line · staves b"}
+    hav.149.3.1: {lemma: "band", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "bonds", stave: true}   # bönd
+    hav.149.3.2: {lemma: "at", morph: "ADP", gloss: "on"}   # að
+    hav.149.3.3: {lemma: "boglimr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "my-limbs", stave: true}   # boglimum
+    hav.149.4: {metre: "long line, a-verse · stave g"}
+    hav.149.4.1: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    hav.149.4.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.149.4.3: {lemma: "gala", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "chant", stave: true}   # gel
+    hav.149.5: {metre: "long line, b-verse · stave g"}
+    hav.149.5.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    hav.149.5.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.149.5.3: {lemma: "ganga", morph: "VERB|VerbForm=Inf", gloss: "walk", stave: true}   # ganga
+    hav.149.5.4: {lemma: "mega", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "can"}   # má
+    hav.149.6: {metre: "full line · staves f"}
+    hav.149.6.1: {lemma: "spretta", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "springs"}   # sprettr
+    hav.149.6.2: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "from-me"}   # mér
+    hav.149.6.3: {lemma: "af", morph: "ADP", gloss: "from"}   # af
+    hav.149.6.4: {lemma: "fótr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "my-feet", stave: true}   # fótum
+    hav.149.6.5: {lemma: "fjöturr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "the-fetter", stave: true}   # fjöturr
+    hav.149.7: {metre: "full line · staves h"}
+    hav.149.7.1: {lemma: "en", morph: "CCONJ", gloss: "and"}   # en
+    hav.149.7.2: {lemma: "af", morph: "ADP", gloss: "from"}   # af
+    hav.149.7.3: {lemma: "hönd", morph: "NOUN|Case=Dat|Gender=Fem|Number=Plur", gloss: "my-hands", stave: true}   # höndum
+    hav.149.7.4: {lemma: "haft", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "the-bond", stave: true}   # haft
+    hav.150.1: {metre: "long line, a-verse · stave k"}
+    hav.150.1.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    hav.150.1.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know", stave: true}   # kann
+    hav.150.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.150.1.4: {lemma: "inn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    hav.150.1.5: {lemma: "fimmti", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "fifth"}   # fimmta
+    hav.150.2: {metre: "long line, b-verse · stave f"}
+    hav.150.2.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    hav.150.2.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.150.2.3: {lemma: "sjá", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "see"}   # sé
+    hav.150.2.4: {lemma: "af", morph: "ADP", gloss: "from"}   # af
+    hav.150.2.5: {lemma: "fár", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "malice", stave: true}   # fári
+    hav.150.2.6: {lemma: "skjóta", morph: "VERB|Case=Acc|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "shot"}   # skotinn
+    hav.150.3: {metre: "full line · staves f"}
+    hav.150.3.1: {lemma: "fleinn", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "a-dart", stave: true}   # flein
+    hav.150.3.2: {lemma: "í", morph: "ADP", gloss: "into"}   # í
+    hav.150.3.3: {lemma: "folk", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "the-host", stave: true}   # folki
+    hav.150.3.4: {lemma: "vaða", morph: "VERB|VerbForm=Inf", gloss: "fly"}   # vaða
+    hav.150.4: {metre: "long line, a-verse · stave f"}
+    hav.150.4.1: {lemma: "fjúka", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Polarity=Neg", gloss: "flies-not", stave: true}   # fýgr-a
+    hav.150.4.2: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "it"}   # hann
+    hav.150.4.3: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    hav.150.4.4: {lemma: "stinnr", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "hard"}   # stinnt
+    hav.150.5: {metre: "long line, b-verse · stave st · irregular (st against f)"}
+    hav.150.5.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    hav.150.5.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.150.5.3: {lemma: "stöðva", morph: "VERB|Mood=Sub|Number=Sing|Person=1|Tense=Pres|Polarity=Neg", gloss: "stop-not-I", stave: true}   # stöðvig-a-k
+    hav.150.6: {metre: "full line · staves s"}
+    hav.150.6.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    hav.150.6.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.150.6.3: {lemma: "hann", morph: "PRON|Case=Acc|Gender=Masc|Number=Sing|Person=3", gloss: "it"}   # hann
+    hav.150.6.4: {lemma: "sjón", morph: "NOUN|Case=Dat|Gender=Fem|Number=Plur", gloss: "with-my-eyes", stave: true}   # sjónum
+    hav.150.6.5: {lemma: "of", morph: "PART", gloss: "(particle)"}   # of
+    hav.150.6.6: {lemma: "sjá", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "see-I", stave: true}   # sék
+    hav.151.1: {metre: "long line, a-verse · stave k"}
+    hav.151.1.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    hav.151.1.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know", stave: true}   # kann
+    hav.151.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.151.1.4: {lemma: "inn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    hav.151.1.5: {lemma: "sétti", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "sixth"}   # sétta
+    hav.151.2: {metre: "long line, b-verse · stave s"}
+    hav.151.2.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    hav.151.2.2: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # mik
+    hav.151.2.3: {lemma: "særa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "wounds", stave: true}   # særir
+    hav.151.2.4: {lemma: "þegn", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "a-man"}   # þegn
+    hav.151.3: {metre: "full line · staves h · irregular (one lift)"}
+    hav.151.3.1: {lemma: "á", morph: "ADP", gloss: "with"}   # á
+    hav.151.3.2: {lemma: "rót", morph: "NOUN|Case=Dat|Gender=Fem|Number=Plur", gloss: "roots"}   # vrótum
+    hav.151.3.3: {lemma: "hrár", morph: "ADJ|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-green", stave: true}   # hrás
+    hav.151.3.4: {lemma: "viðr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "wood"}   # viðar
+    hav.151.4: {metre: "long line, a-verse · stave h"}
+    hav.151.4.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.151.4.2: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # þann
+    hav.151.4.3: {lemma: "halr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "man", stave: true}   # hal
+    hav.151.5: {metre: "long line, b-verse · stave h"}
+    hav.151.5.1: {lemma: "er", morph: "SCONJ", gloss: "who"}   # er
+    hav.151.5.2: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # mik
+    hav.151.5.3: {lemma: "heift", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "with-hate", stave: true}   # heifta
+    hav.151.5.4: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "charms"}   # kveðr
+    hav.151.6: {metre: "full line · staves m"}
+    hav.151.6.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Masc|Number=Sing|PronType=Dem", gloss: "him"}   # þann
+    hav.151.6.2: {lemma: "eta", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "eat"}   # eta
+    hav.151.6.3: {lemma: "mein", morph: "NOUN|Case=Nom|Gender=Neut|Number=Plur", gloss: "the-harms", stave: true}   # mein
+    hav.151.6.4: {lemma: "heldr", morph: "ADV", gloss: "rather"}   # heldr
+    hav.151.6.5: {lemma: "en", morph: "SCONJ", gloss: "than"}   # en
+    hav.151.6.6: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me", stave: true}   # mik
+    hav.152.1: {metre: "long line, a-verse · stave k"}
+    hav.152.1.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    hav.152.1.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know", stave: true}   # kann
+    hav.152.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.152.1.4: {lemma: "inn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    hav.152.1.5: {lemma: "sjaundi", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "seventh"}   # sjaunda
+    hav.152.2: {metre: "long line, b-verse · stave h · irregular (h against s)"}
+    hav.152.2.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    hav.152.2.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.152.2.3: {lemma: "sjá", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "see"}   # sé
+    hav.152.2.4: {lemma: "hár", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "a-high", stave: true}   # hávan
+    hav.152.2.5: {lemma: "logi", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "flame"}   # loga
+    hav.152.3: {metre: "full line · staves s"}
+    hav.152.3.1: {lemma: "salr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "the-hall", stave: true}   # sal
+    hav.152.3.2: {lemma: "of", morph: "ADP", gloss: "about"}   # of
+    hav.152.3.3: {lemma: "sessmögr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "the-bench-mates", stave: true}   # sessmögum
+    hav.152.4: {metre: "long line, a-verse · stave b"}
+    hav.152.4.1: {lemma: "brenna", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Polarity=Neg", gloss: "burns-not", stave: true}   # brennr-at
+    hav.152.4.2: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    hav.152.4.3: {lemma: "breiðr", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "broad", stave: true}   # breitt
+    hav.152.5: {metre: "long line, b-verse · stave b"}
+    hav.152.5.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    hav.152.5.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.152.5.3: {lemma: "hann", morph: "PRON|Case=Dat|Gender=Masc|Number=Sing|Person=3", gloss: "it"}   # hánum
+    hav.152.5.4: {lemma: "bjarga", morph: "VERB|Mood=Sub|Number=Sing|Person=1|Tense=Pres|Polarity=Neg", gloss: "save-not-I", stave: true}   # bjargig-a-k
+    hav.152.6: {metre: "full line · staves g"}
+    hav.152.6.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # þann
+    hav.152.6.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know"}   # kann
+    hav.152.6.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.152.6.4: {lemma: "galdr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "charm", stave: true}   # galdr
+    hav.152.6.5: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    hav.152.6.6: {lemma: "gala", morph: "VERB|VerbForm=Inf", gloss: "chant", stave: true}   # gala
+    hav.153.1: {metre: "long line, a-verse · stave vowel"}
+    hav.153.1.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    hav.153.1.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know"}   # kann
+    hav.153.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.153.1.4: {lemma: "inn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    hav.153.1.5: {lemma: "átti", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "eighth", stave: true}   # átta
+    hav.153.2: {metre: "long line, b-verse · stave vowel"}
+    hav.153.2.1: {lemma: "er", morph: "SCONJ", gloss: "which"}   # er
+    hav.153.2.2: {lemma: "allr", morph: "ADJ|Case=Dat|Gender=Masc|Number=Plur", gloss: "for-all", stave: true}   # öllum
+    hav.153.2.3: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    hav.153.3: {metre: "full line · staves n"}
+    hav.153.3.1: {lemma: "nytsamligr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "useful", stave: true}   # nytsamligt
+    hav.153.3.2: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    hav.153.3.3: {lemma: "nema", morph: "VERB|VerbForm=Inf", gloss: "learn", stave: true}   # nema
+    hav.153.4: {metre: "long line, a-verse · stave h"}
+    hav.153.4.1: {lemma: "hvars", morph: "SCONJ", gloss: "wherever"}   # hvars
+    hav.153.4.2: {lemma: "hatr", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "hate", stave: true}   # hatr
+    hav.153.4.3: {lemma: "vaxa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "grows"}   # vex
+    hav.153.5: {metre: "long line, b-verse · stave h"}
+    hav.153.5.1: {lemma: "með", morph: "ADP", gloss: "among"}   # með
+    hav.153.5.2: {lemma: "hildingr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "a-warrior's", stave: true}   # hildings
+    hav.153.5.3: {lemma: "sonr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "sons"}   # sonum
+    hav.153.6: {metre: "full line · staves b"}
+    hav.153.6.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    hav.153.6.2: {lemma: "mega", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "can"}   # má
+    hav.153.6.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.153.6.4: {lemma: "bæta", morph: "VERB|VerbForm=Inf", gloss: "mend", stave: true}   # bæta
+    hav.153.6.5: {lemma: "brátt", morph: "ADV", gloss: "quickly", stave: true}   # brátt
+    hav.154.1: {metre: "long line, a-verse · stave k"}
+    hav.154.1.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    hav.154.1.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know", stave: true}   # kann
+    hav.154.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.154.1.4: {lemma: "inn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    hav.154.1.5: {lemma: "níundi", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "ninth"}   # níunda
+    hav.154.2: {metre: "long line, b-verse · stave n"}
+    hav.154.2.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    hav.154.2.2: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # mik
+    hav.154.2.3: {lemma: "nauðr", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "need", stave: true}   # nauðr
+    hav.154.2.4: {lemma: "of", morph: "PART", gloss: "(particle)"}   # of
+    hav.154.2.5: {lemma: "standa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "presses"}   # stendr
+    hav.154.3: {metre: "full line · staves f"}
+    hav.154.3.1: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    hav.154.3.2: {lemma: "bjarga", morph: "VERB|VerbForm=Inf", gloss: "save", stave: true}   # bjarga
+    hav.154.3.3: {lemma: "far", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "my-ship", stave: true}   # fari
+    hav.154.3.4: {lemma: "minn", morph: "DET|Case=Dat|Gender=Neut|Number=Sing|Poss=Yes", gloss: "my"}   # mínu
+    hav.154.3.5: {lemma: "á", morph: "ADP", gloss: "a"}   # á
+    hav.154.3.6: {lemma: "floti", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "float"}   # floti
+    hav.154.4: {metre: "long line, a-verse · stave v"}
+    hav.154.4.1: {lemma: "vindr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "the-wind", stave: true}   # vind
+    hav.154.4.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.154.4.3: {lemma: "kyrra", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "still"}   # kyrri
+    hav.154.5: {metre: "long line, b-verse · stave v"}
+    hav.154.5.1: {lemma: "vágr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "on-the-wave", stave: true}   # vági
+    hav.154.5.2: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    hav.154.6: {metre: "full line · staves s"}
+    hav.154.6.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.154.6.2: {lemma: "svæfa", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "lull-I", stave: true}   # svæfik
+    hav.154.6.3: {lemma: "allr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "all"}   # allan
+    hav.154.6.4: {lemma: "sær", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "the-sea", stave: true}   # sæ
+    hav.155.1: {metre: "long line, a-verse · stave k"}
+    hav.155.1.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    hav.155.1.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know", stave: true}   # kann
+    hav.155.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.155.1.4: {lemma: "inn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    hav.155.1.5: {lemma: "tíundi", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "tenth"}   # tíunda
+    hav.155.2: {metre: "long line, b-verse · stave t"}
+    hav.155.2.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    hav.155.2.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.155.2.3: {lemma: "sjá", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "see"}   # sé
+    hav.155.2.4: {lemma: "túnriða", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "hedge-riders", stave: true}   # túnriður
+    hav.155.3: {metre: "full line · staves l"}
+    hav.155.3.1: {lemma: "leika", morph: "VERB|VerbForm=Inf", gloss: "sporting", stave: true}   # leika
+    hav.155.3.2: {lemma: "loft", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "in-the-air", stave: true}   # lofti
+    hav.155.3.3: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    hav.155.4: {metre: "long line, a-verse · stave v"}
+    hav.155.4.1: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.155.4.2: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    hav.155.4.3: {lemma: "vinna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "work-I", stave: true}   # vinnk
+    hav.155.5: {metre: "long line, b-verse · stave v"}
+    hav.155.5.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    hav.155.5.2: {lemma: "þær", morph: "PRON|Case=Nom|Gender=Fem|Number=Plur|Person=3", gloss: "they"}   # þær
+    hav.155.5.3: {lemma: "villr", morph: "ADJ|Case=Nom|Gender=Fem|Number=Plur", gloss: "astray", stave: true}   # villar
+    hav.155.5.4: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "go"}   # fara
+    hav.155.6: {metre: "full line · staves h"}
+    hav.155.6.1: {lemma: "sinn", morph: "DET|Case=Gen|Gender=Masc|Number=Plur|Poss=Yes", gloss: "of-their"}   # sinna
+    hav.155.6.2: {lemma: "heimhamr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "home-shapes", stave: true}   # heimhama
+    hav.155.7: {metre: "full line · staves h"}
+    hav.155.7.1: {lemma: "sinn", morph: "DET|Case=Gen|Gender=Masc|Number=Plur|Poss=Yes", gloss: "of-their"}   # sinna
+    hav.155.7.2: {lemma: "heimhugr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "home-minds", stave: true}   # heimhuga
+    hav.156.1: {metre: "long line, a-verse · stave k"}
+    hav.156.1.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    hav.156.1.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know", stave: true}   # kann
+    hav.156.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.156.1.4: {lemma: "inn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    hav.156.1.5: {lemma: "ellifti", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "eleventh"}   # ellifta
+    hav.156.2: {metre: "long line, b-verse · stave vowel · irregular (vowel against l)"}
+    hav.156.2.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    hav.156.2.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.156.2.3: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "shall"}   # skal
+    hav.156.2.4: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    hav.156.2.5: {lemma: "orrosta", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "battle", stave: true}   # orrostu
+    hav.156.3: {metre: "full line · staves l"}
+    hav.156.3.1: {lemma: "leiða", morph: "VERB|VerbForm=Inf", gloss: "lead", stave: true}   # leiða
+    hav.156.3.2: {lemma: "langvinr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "old-friends", stave: true}   # langvini
+    hav.156.4: {metre: "long line, a-verse · stave r"}
+    hav.156.4.1: {lemma: "und", morph: "ADP", gloss: "under"}   # und
+    hav.156.4.2: {lemma: "rönd", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "the-shields", stave: true}   # randir
+    hav.156.4.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.156.4.4: {lemma: "gala", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "chant"}   # gel
+    hav.156.5: {metre: "long line, b-verse · stave r"}
+    hav.156.5.1: {lemma: "en", morph: "CCONJ", gloss: "and"}   # en
+    hav.156.5.2: {lemma: "þeir", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|Person=3", gloss: "they"}   # þeir
+    hav.156.5.3: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    hav.156.5.4: {lemma: "ríki", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "power", stave: true}   # ríki
+    hav.156.5.5: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "go"}   # fara
+    hav.156.6: {metre: "full line · staves h"}
+    hav.156.6.1: {lemma: "heill", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "whole", stave: true}   # heilir
+    hav.156.6.2: {lemma: "hildr", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "to-battle", stave: true}   # hildar
+    hav.156.6.3: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    hav.156.7: {metre: "full line · staves h"}
+    hav.156.7.1: {lemma: "heill", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "whole", stave: true}   # heilir
+    hav.156.7.2: {lemma: "hildr", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "from-battle", stave: true}   # hildi
+    hav.156.7.3: {lemma: "frá", morph: "ADP", gloss: "from"}   # frá
+    hav.156.8: {metre: "full line · staves h"}
+    hav.156.8.1: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "they-come"}   # koma
+    hav.156.8.2: {lemma: "þeir", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|Person=3", gloss: "they"}   # þeir
+    hav.156.8.3: {lemma: "heill", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "whole", stave: true}   # heilir
+    hav.156.8.4: {lemma: "hvaðan", morph: "ADV", gloss: "from-wherever", stave: true}   # hvaðan
+    hav.157.1: {metre: "long line, a-verse · stave k"}
+    hav.157.1.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    hav.157.1.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know", stave: true}   # kann
+    hav.157.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.157.1.4: {lemma: "inn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    hav.157.1.5: {lemma: "tolfti", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "twelfth"}   # tolfta
+    hav.157.2: {metre: "long line, b-verse · stave t"}
+    hav.157.2.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    hav.157.2.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.157.2.3: {lemma: "sjá", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "see"}   # sé
+    hav.157.2.4: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    hav.157.2.5: {lemma: "tré", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "a-tree", stave: true}   # tré
+    hav.157.2.6: {lemma: "uppi", morph: "ADV", gloss: "up"}   # uppi
+    hav.157.3: {metre: "full line · staves v"}
+    hav.157.3.1: {lemma: "váfa", morph: "VERB|VerbForm=Inf", gloss: "swaying", stave: true}   # váfa
+    hav.157.3.2: {lemma: "virgilnár", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "a-halter-corpse", stave: true}   # virgilná
+    hav.157.4: {metre: "long line, a-verse · stave r"}
+    hav.157.4.1: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    hav.157.4.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.157.4.3: {lemma: "rísta", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "carve", stave: true}   # ríst
+    hav.157.5: {metre: "long line, b-verse · stave r"}
+    hav.157.5.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.157.5.2: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    hav.157.5.3: {lemma: "rún", morph: "NOUN|Case=Dat|Gender=Fem|Number=Plur", gloss: "runes", stave: true}   # rúnum
+    hav.157.5.4: {lemma: "fá", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "paint-I"}   # fák
+    hav.157.6: {metre: "full line · staves g"}
+    hav.157.6.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    hav.157.6.2: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # sá
+    hav.157.6.3: {lemma: "ganga", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "walks", stave: true}   # gengr
+    hav.157.6.4: {lemma: "gumi", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "man", stave: true}   # gumi
+    hav.157.7: {metre: "full line · staves m"}
+    hav.157.7.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.157.7.2: {lemma: "mæla", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "speaks", stave: true}   # mælir
+    hav.157.7.3: {lemma: "við", morph: "ADP", gloss: "with"}   # við
+    hav.157.7.4: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me", stave: true}   # mik
+    hav.158.1: {metre: "long line, a-verse · stave k"}
+    hav.158.1.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    hav.158.1.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know", stave: true}   # kann
+    hav.158.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.158.1.4: {lemma: "inn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    hav.158.1.5: {lemma: "þrettándi", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "thirteenth"}   # þrettánda
+    hav.158.2: {metre: "long line, b-verse · stave þ"}
+    hav.158.2.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    hav.158.2.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.158.2.3: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "shall"}   # skal
+    hav.158.2.4: {lemma: "þegn", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "a-man", stave: true}   # þegn
+    hav.158.2.5: {lemma: "ungr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "young"}   # ungan
+    hav.158.3: {metre: "full line · staves v"}
+    hav.158.3.1: {lemma: "verpa", morph: "VERB|VerbForm=Inf", gloss: "sprinkle", stave: true}   # verpa
+    hav.158.3.2: {lemma: "vatn", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "with-water", stave: true}   # vatni
+    hav.158.3.3: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    hav.158.4: {metre: "long line, a-verse · stave f · irregular (m and f)"}
+    hav.158.4.1: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Polarity=Neg", gloss: "will-not", stave: true}   # mun-at
+    hav.158.4.2: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    hav.158.4.3: {lemma: "falla", morph: "VERB|VerbForm=Inf", gloss: "fall", stave: true}   # falla
+    hav.158.5: {metre: "long line, b-verse · stave f"}
+    hav.158.5.1: {lemma: "þótt", morph: "SCONJ", gloss: "though"}   # þótt
+    hav.158.5.2: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    hav.158.5.3: {lemma: "í", morph: "ADP", gloss: "into"}   # í
+    hav.158.5.4: {lemma: "folk", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "the-host", stave: true}   # folk
+    hav.158.5.5: {lemma: "koma", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "come"}   # komi
+    hav.158.6: {metre: "full line · staves h"}
+    hav.158.6.1: {lemma: "hníga", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Polarity=Neg", gloss: "sinks-not", stave: true}   # hnígr-a
+    hav.158.6.2: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # sá
+    hav.158.6.3: {lemma: "halr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "man", stave: true}   # halr
+    hav.158.6.4: {lemma: "fyr", morph: "ADP", gloss: "before"}   # fyr
+    hav.158.6.5: {lemma: "hjörr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "swords", stave: true}   # hjörum
+    hav.159.1: {metre: "long line, a-verse · stave k"}
+    hav.159.1.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    hav.159.1.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know", stave: true}   # kann
+    hav.159.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.159.1.4: {lemma: "inn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    hav.159.1.5: {lemma: "fjögurtándi", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "fourteenth"}   # fjögurtánda
+    hav.159.2: {metre: "long line, b-verse · stave f"}
+    hav.159.2.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    hav.159.2.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.159.2.3: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "shall"}   # skal
+    hav.159.2.4: {lemma: "fyrðar", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-men", stave: true}   # fyrða
+    hav.159.2.5: {lemma: "lið", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "a-host"}   # liði
+    hav.159.3: {metre: "full line · staves t"}
+    hav.159.3.1: {lemma: "telja", morph: "VERB|VerbForm=Inf", gloss: "tell", stave: true}   # telja
+    hav.159.3.2: {lemma: "tívar", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "the-gods", stave: true}   # tíva
+    hav.159.3.3: {lemma: "fyrir", morph: "ADP", gloss: "before"}   # fyrir
+    hav.159.4: {metre: "long line, a-verse · stave vowel"}
+    hav.159.4.1: {lemma: "áss", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-Æsir", stave: true}   # ása
+    hav.159.4.2: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.159.4.3: {lemma: "alfr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-elves", stave: true}   # alfa
+    hav.159.5: {metre: "long line, b-verse · stave vowel"}
+    hav.159.5.1: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.159.5.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know"}   # kann
+    hav.159.5.3: {lemma: "allr", morph: "ADJ|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-all", stave: true}   # allra
+    hav.159.5.4: {lemma: "skil", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "the-lore"}   # skil
+    hav.159.6: {metre: "full line · staves f"}
+    hav.159.6.1: {lemma: "fár", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "few", stave: true}   # fár
+    hav.159.6.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "knows"}   # kann
+    hav.159.6.3: {lemma: "ósnotr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "an-unwise-man"}   # ósnotr
+    hav.159.6.4: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    hav.160.1: {metre: "long line, a-verse · stave k"}
+    hav.160.1.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    hav.160.1.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know", stave: true}   # kann
+    hav.160.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.160.1.4: {lemma: "inn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    hav.160.1.5: {lemma: "fimmtándi", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "fifteenth"}   # fimmtánda
+    hav.160.2: {metre: "long line, b-verse · stave þ · irregular (þ against f)"}
+    hav.160.2.1: {lemma: "er", morph: "SCONJ", gloss: "which"}   # er
+    hav.160.2.2: {lemma: "gala", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "chanted"}   # gól
+    hav.160.2.3: {lemma: "Þjóðrerir", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Thjodrerir", stave: true}   # Þjóðrerir
+    hav.160.3: {metre: "full line · staves d"}
+    hav.160.3.1: {lemma: "dvergr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "the-dwarf", stave: true}   # dvergr
+    hav.160.3.2: {lemma: "fyr", morph: "ADP", gloss: "before"}   # fyr
+    hav.160.3.3: {lemma: "Dellingr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Delling's", stave: true}   # Dellings
+    hav.160.3.4: {lemma: "dyrr", morph: "NOUN|Case=Dat|Gender=Fem|Number=Plur", gloss: "doors"}   # durum
+    hav.160.4: {metre: "long line, a-verse · stave vowel"}
+    hav.160.4.1: {lemma: "afl", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "strength", stave: true}   # afl
+    hav.160.4.2: {lemma: "gala", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "chanted"}   # gól
+    hav.160.4.3: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    hav.160.4.4: {lemma: "áss", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "to-the-Æsir", stave: true}   # ásum
+    hav.160.5: {metre: "long line, b-verse · stave vowel"}
+    hav.160.5.1: {lemma: "en", morph: "CCONJ", gloss: "and"}   # en
+    hav.160.5.2: {lemma: "alfr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "to-the-elves", stave: true}   # alfum
+    hav.160.5.3: {lemma: "frami", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "fortune"}   # frama
+    hav.160.6: {metre: "full line · staves h"}
+    hav.160.6.1: {lemma: "hyggja", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "wisdom", stave: true}   # hyggju
+    hav.160.6.2: {lemma: "Hroftatýr", morph: "PROPN|Case=Dat|Gender=Masc|Number=Sing", gloss: "to-Hroptatyr", stave: true}   # Hroftatý
+    hav.161.1: {metre: "long line, a-verse · stave k"}
+    hav.161.1.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    hav.161.1.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know", stave: true}   # kann
+    hav.161.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.161.1.4: {lemma: "inn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    hav.161.1.5: {lemma: "sextándi", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "sixteenth"}   # sextánda
+    hav.161.2: {metre: "long line, b-verse · stave s"}
+    hav.161.2.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    hav.161.2.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.161.2.3: {lemma: "vilja", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "wish"}   # vil
+    hav.161.2.4: {lemma: "inn", morph: "DET|Case=Gen|Gender=Neut|Number=Sing", gloss: "of-the"}   # ins
+    hav.161.2.5: {lemma: "svinnr", morph: "ADJ|Case=Gen|Gender=Neut|Number=Sing", gloss: "wise", stave: true}   # svinna
+    hav.161.2.6: {lemma: "man", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "maid"}   # mans
+    hav.161.3: {metre: "full line · staves g"}
+    hav.161.3.1: {lemma: "hafa", morph: "VERB|VerbForm=Inf", gloss: "to-have"}   # hafa
+    hav.161.3.2: {lemma: "geð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "the-heart", stave: true}   # geð
+    hav.161.3.3: {lemma: "allr", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "all"}   # allt
+    hav.161.3.4: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.161.3.5: {lemma: "gaman", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "the-love", stave: true}   # gaman
+    hav.161.4: {metre: "long line, a-verse · stave h"}
+    hav.161.4.1: {lemma: "hugr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "the-mind", stave: true}   # hugi
+    hav.161.4.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.161.4.3: {lemma: "hverfa", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "turn", stave: true}   # hverfi
+    hav.161.5: {metre: "long line, b-verse · stave h"}
+    hav.161.5.1: {lemma: "hvítarmr", morph: "ADJ|Case=Dat|Gender=Fem|Number=Sing", gloss: "of-the-white-armed", stave: true}   # hvítarmri
+    hav.161.5.2: {lemma: "kona", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "woman"}   # konu
+    hav.161.6: {metre: "full line · staves s"}
+    hav.161.6.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    hav.161.6.2: {lemma: "snúa", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "turn", stave: true}   # sný
+    hav.161.6.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.161.6.4: {lemma: "hon", morph: "PRON|Case=Gen|Gender=Fem|Number=Sing|Person=3", gloss: "her"}   # hennar
+    hav.161.6.5: {lemma: "allr", morph: "ADJ|Case=Dat|Gender=Masc|Number=Sing", gloss: "whole"}   # öllum
+    hav.161.6.6: {lemma: "sefi", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "mind", stave: true}   # sefa
+    hav.162.1: {metre: "long line, a-verse · stave k"}
+    hav.162.1.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    hav.162.1.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know", stave: true}   # kann
+    hav.162.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.162.1.4: {lemma: "inn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    hav.162.1.5: {lemma: "sjautjándi", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "seventeenth"}   # sjautjánda
+    hav.162.2: {metre: "long line, b-verse · stave s"}
+    hav.162.2.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    hav.162.2.2: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # mik
+    hav.162.2.3: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "will"}   # mun
+    hav.162.2.4: {lemma: "seint", morph: "ADV", gloss: "slowly", stave: true}   # seint
+    hav.162.2.5: {lemma: "firra", morph: "VERB|VerbForm=Inf|Voice=Mid", gloss: "shun"}   # firrask
+    hav.162.3: {metre: "full line · staves m"}
+    hav.162.3.1: {lemma: "inn", morph: "DET|Case=Nom|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    hav.162.3.2: {lemma: "manungr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "young", stave: true}   # manunga
+    hav.162.3.3: {lemma: "man", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "maid", stave: true}   # man
+    hav.162.4: {metre: "long line, a-verse · stave l"}
+    hav.162.4.1: {lemma: "ljóð", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-songs", stave: true}   # Ljóða
+    hav.162.4.2: {lemma: "þessi", morph: "PRON|Case=Gen|Gender=Neut|Number=Plur|PronType=Dem", gloss: "these"}   # þessa
+    hav.162.5: {metre: "long line, b-verse · stave l"}
+    hav.162.5.1: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "wilt"}   # mun
+    hav.162.5.2: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "thou"}   # þú
+    hav.162.5.3: {lemma: "Loddfáfnir", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Loddfafnir", stave: true}   # Loddfáfnir
+    hav.162.6: {metre: "full line · staves l"}
+    hav.162.6.1: {lemma: "lengi", morph: "ADV", gloss: "long", stave: true}   # lengi
+    hav.162.6.2: {lemma: "vanr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "lacking"}   # vanr
+    hav.162.6.3: {lemma: "vera", morph: "VERB|VerbForm=Inf", gloss: "be", stave: true}   # vera
+    hav.162.7: {metre: "full line · staves g"}
+    hav.162.7.1: {lemma: "þó", morph: "ADV", gloss: "yet"}   # þó
+    hav.162.7.2: {lemma: "vera", morph: "AUX|Mood=Sub|Number=Plur|Person=3|Tense=Pres", gloss: "be"}   # sé
+    hav.162.7.3: {lemma: "þú", morph: "PRON|Case=Dat|Number=Sing|Person=2", gloss: "to-thee"}   # þér
+    hav.162.7.4: {lemma: "góðr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Plur", gloss: "good", stave: true}   # góð
+    hav.162.7.5: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    hav.162.7.6: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "thou"}   # þú
+    hav.162.7.7: {lemma: "geta", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "gettest-them", stave: true}   # getr
+    hav.162.8: {metre: "full line · staves n"}
+    hav.162.8.1: {lemma: "nýtr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Plur", gloss: "useful", stave: true}   # nýt
+    hav.162.8.2: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    hav.162.8.3: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "thou"}   # þú
+    hav.162.8.4: {lemma: "nema", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "learnest", stave: true}   # nemr
+    hav.162.9: {metre: "full line · staves þ"}
+    hav.162.9.1: {lemma: "þörf", morph: "ADJ|Case=Nom|Gender=Neut|Number=Plur", gloss: "needful", stave: true}   # þörf
+    hav.162.9.2: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    hav.162.9.3: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "thou"}   # þú
+    hav.162.9.4: {lemma: "þiggja", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "receivest", stave: true}   # þiggr
+    hav.163.1: {metre: "long line, a-verse · stave k"}
+    hav.163.1.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    hav.163.1.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know", stave: true}   # kann
+    hav.163.1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.163.1.4: {lemma: "inn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing", gloss: "the"}   # it
+    hav.163.1.5: {lemma: "átjándi", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "eighteenth"}   # átjánda
+    hav.163.2: {metre: "long line, b-verse · stave vowel · irregular (vowel against t)"}
+    hav.163.2.1: {lemma: "er", morph: "SCONJ", gloss: "which"}   # er
+    hav.163.2.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    hav.163.2.3: {lemma: "æva", morph: "ADV", gloss: "never", stave: true}   # æva
+    hav.163.2.4: {lemma: "kenna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "teach-I"}   # kennik
+    hav.163.3: {metre: "full line · staves m"}
+    hav.163.3.1: {lemma: "mær", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "to-maid", stave: true}   # mey
+    hav.163.3.2: {lemma: "né", morph: "CCONJ", gloss: "nor"}   # né
+    hav.163.3.3: {lemma: "maðr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "a-man's", stave: true}   # manns
+    hav.163.3.4: {lemma: "kona", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "wife"}   # konu
+    hav.163.4: {metre: "long line, a-verse · stave b · irregular (vowel and b)"}
+    hav.163.4.1: {lemma: "allr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "all", stave: true}   # allt
+    hav.163.4.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    hav.163.4.3: {lemma: "góðr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing|Degree=Cmp", gloss: "better", stave: true}   # betra
+    hav.163.5: {metre: "long line, b-verse · stave vowel"}
+    hav.163.5.1: {lemma: "er", morph: "SCONJ", gloss: "which"}   # er
+    hav.163.5.2: {lemma: "einn", morph: "NUM|Case=Nom|Gender=Masc|Number=Sing", gloss: "one", stave: true}   # einn
+    hav.163.5.3: {lemma: "of", morph: "PART", gloss: "(particle)"}   # of
+    hav.163.5.4: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "knows"}   # kann
+    hav.163.6: {metre: "full line · staves l"}
+    hav.163.6.1: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    hav.163.6.2: {lemma: "fylgja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "follows"}   # fylgir
+    hav.163.6.3: {lemma: "ljóð", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-the-songs", stave: true}   # ljóða
+    hav.163.6.4: {lemma: "lok", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "the-end", stave: true}   # lokum
+    hav.163.7: {metre: "long line, a-verse · stave vowel"}
+    hav.163.7.1: {lemma: "nema", morph: "SCONJ", gloss: "except"}   # nema
+    hav.163.7.2: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Fem|Number=Sing|PronType=Dem", gloss: "her"}   # þeiri
+    hav.163.7.3: {lemma: "einn", morph: "NUM|Case=Dat|Gender=Fem|Number=Sing", gloss: "alone", stave: true}   # einni
+    hav.163.8: {metre: "long line, b-verse · stave vowel"}
+    hav.163.8.1: {lemma: "er", morph: "SCONJ", gloss: "who"}   # er
+    hav.163.8.2: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # mik
+    hav.163.8.3: {lemma: "armr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "in-her-arm", stave: true}   # armi
+    hav.163.8.4: {lemma: "verja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "wraps"}   # verr
+    hav.163.9: {metre: "full line · staves s"}
+    hav.163.9.1: {lemma: "eða", morph: "CCONJ", gloss: "or"}   # eða
+    hav.163.9.2: {lemma: "minn", morph: "DET|Case=Nom|Gender=Fem|Number=Sing|Poss=Yes", gloss: "my"}   # mín
+    hav.163.9.3: {lemma: "systir", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "sister", stave: true}   # systir
+    hav.163.9.4: {lemma: "vera", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "be", stave: true}   # sé
+    hav.164.1: {metre: "long line, a-verse · stave h"}
+    hav.164.1.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    hav.164.1.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "are"}   # eru
+    hav.164.1.3: {lemma: "Hávi", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "the-High-One's", stave: true}   # Háva
+    hav.164.1.4: {lemma: "mál", morph: "NOUN|Case=Nom|Gender=Neut|Number=Plur", gloss: "words"}   # mál
+    hav.164.2: {metre: "long line, b-verse · stave h"}
+    hav.164.2.1: {lemma: "kveða", morph: "VERB|Case=Nom|Gender=Neut|Number=Plur|Tense=Past|VerbForm=Part", gloss: "spoken"}   # kveðin
+    hav.164.2.2: {lemma: "Hávi", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "the-High-One's", stave: true}   # Háva
+    hav.164.2.3: {lemma: "höll", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "hall", stave: true}   # höllu
+    hav.164.2.4: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    hav.164.3: {metre: "full line · staves vowel"}
+    hav.164.3.1: {lemma: "allþarfr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Plur", gloss: "most-needful", stave: true}   # allþörf
+    hav.164.3.2: {lemma: "ýtr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-men", stave: true}   # ýta
+    hav.164.3.3: {lemma: "sonr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "to-the-sons"}   # sonum
+    hav.164.4: {metre: "full line · staves vowel"}
+    hav.164.4.1: {lemma: "óþarfr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Plur", gloss: "unneedful", stave: true}   # óþörf
+    hav.164.4.2: {lemma: "jötunn", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-giants", stave: true}   # jötna
+    hav.164.4.3: {lemma: "sonr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "to-the-sons"}   # sonum
+    hav.164.5: {metre: "long line, a-verse · stave h"}
+    hav.164.5.1: {lemma: "heill", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "hail", stave: true}   # heill
+    hav.164.5.2: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Dem", gloss: "to-him"}   # sá
+    hav.164.5.3: {lemma: "er", morph: "SCONJ", gloss: "who"}   # er
+    hav.164.5.4: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    hav.164.6: {metre: "long line, b-verse · stave h · irregular (h and k)"}
+    hav.164.6.1: {lemma: "heill", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "hail", stave: true}   # heill
+    hav.164.6.2: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Dem", gloss: "to-him"}   # sá
+    hav.164.6.3: {lemma: "er", morph: "SCONJ", gloss: "who"}   # er
+    hav.164.6.4: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "knows", stave: true}   # kann
+    hav.164.7: {metre: "full line · staves n"}
+    hav.164.7.1: {lemma: "njóta", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "may-he-profit", stave: true}   # njóti
+    hav.164.7.2: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Dem", gloss: "he"}   # sá
+    hav.164.7.3: {lemma: "er", morph: "SCONJ", gloss: "who"}   # er
+    hav.164.7.4: {lemma: "nema", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "learned", stave: true}   # nam
+    hav.164.8: {metre: "full line · staves h"}
+    hav.164.8.1: {lemma: "heill", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "hail", stave: true}   # heilir
+    hav.164.8.2: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "to-those-who"}   # þeirs
+    hav.164.8.3: {lemma: "hlýða", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "listened", stave: true}   # hlýddu

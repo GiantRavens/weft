@@ -2,45 +2,227 @@ work: edda-havamal
 title: Hávamál
 author: Poetic Edda
 language: non
-prefix: hav                      # hav.<stanza>.<line>[.<token>]
-urn: urn:weft:non:edda.havamal   # no CTS URN exists for the Edda; Weft-local identifier
+prefix: hav
+urn: urn:weft:non:edda.havamal
 unit: stanza-line
-written: {year: 900, display: "800s–900s", label: "composed in the Viking Age, 800s–900s; written down about 1270"}   # composition date; the library sorts by year
+written:
+  year: 900
+  display: 800s–900s
+  label: composed in the Viking Age, 800s–900s; written down about 1270
 status: phase-0
-pilot: {stanzas: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80]}
+pilot:
+  stanzas:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 49
+  - 50
+  - 51
+  - 52
+  - 53
+  - 54
+  - 55
+  - 56
+  - 57
+  - 58
+  - 59
+  - 60
+  - 61
+  - 62
+  - 63
+  - 64
+  - 65
+  - 66
+  - 67
+  - 68
+  - 69
+  - 70
+  - 71
+  - 72
+  - 73
+  - 74
+  - 75
+  - 76
+  - 77
+  - 78
+  - 79
+  - 80
+  - 81
+  - 82
+  - 83
+  - 84
+  - 85
+  - 86
+  - 87
+  - 88
+  - 89
+  - 90
+  - 91
+  - 92
+  - 93
+  - 94
+  - 95
+  - 96
+  - 97
+  - 98
+  - 99
+  - 100
+  - 101
+  - 102
+  - 103
+  - 104
+  - 105
+  - 106
+  - 107
+  - 108
+  - 109
+  - 110
+  - 111
+  - 112
+  - 113
+  - 114
+  - 115
+  - 116
+  - 117
+  - 118
+  - 119
+  - 120
+  - 121
+  - 122
+  - 123
+  - 124
+  - 125
+  - 126
+  - 127
+  - 128
+  - 129
+  - 130
+  - 131
+  - 132
+  - 133
+  - 134
+  - 135
+  - 136
+  - 137
+  - 138
+  - 139
+  - 140
+  - 141
+  - 142
+  - 143
+  - 144
+  - 145
+  - 146
+  - 147
+  - 148
+  - 149
+  - 150
+  - 151
+  - 152
+  - 153
+  - 154
+  - 155
+  - 156
+  - 157
+  - 158
+  - 159
+  - 160
+  - 161
+  - 162
+  - 163
+  - 164
 edition:
   id: jonsson-heimskringla
-  name: Guðni Jónsson's normalized text, via heimskringla.no and the CLTK Old Norse corpus
+  name: Guðni Jónsson's normalized text (Eddukvæði, 1949), via heimskringla.no, all 164 stanzas; stanzas 1-145 are letter for letter
+    the CLTK copy of the same text that the work was first built on (kept beside it)
   format: stanza-text
   file: sources/havamal.txt
+  url: https://heimskringla.no/index.php?title=H%C3%A1vam%C3%A1l&oldid=65513
+  sha256: 03baaa309461cb3095c65a2061336ebd6a9dd4d4d61002cd807120fded71f024
+  license: poem public domain; normalized text credited to Guðni Jónsson and heimskringla.no
+  license_url: http://heimskringla.no/wiki/Heimskringla.no:Copyright
+  note: the file is the page's text as extracted by weft (stanza numbers kept, markup dropped); the CLTK file stops at stanza 145
+treebank: null
+schemes:
+- old-norse
+- modern-icelandic
+translations:
+- id: bellows1923
+  translator: Henry Adams Bellows
+  year: 1923
+  form: alliterative verse
+  license: public-domain
+  license_url: https://www.gutenberg.org/policy/license.html
+  file: sources/bellows1923.txt
+  url: https://www.gutenberg.org/cache/epub/73533/pg73533.txt
+  sha256: be983f2e4f2f97a57bb72095354eb9574bb656d185f16ce460efc7da2574438b
+- id: thorpe1866
+  translator: Benjamin Thorpe
+  year: 1866
+  form: prose
+  license: public-domain
+  license_url: https://www.gutenberg.org/policy/license.html
+  file: sources/thorpe1866.txt
+  url: https://www.gutenberg.org/cache/epub/14726/pg14726.txt
+  sha256: ef59192fd7f1f94011765f6becb108b32ed18fdbf906a6dec180f490a54778f9
+predicted_gaps:
+- 'no treebank: every lemma and parse is hand-annotated (Zoëga as reference) and stays draft until reviewed'
+- normalized edition marks vowel length, so no quantity table is needed
+- 'metre is alliterative (ljóðaháttr): the metre layer records half-line roles and staves, not feet'
+- the edition's ö covers both old ǫ and ø; read as ǫ by default
+- stanza numbering is the standard one (Neckel-Kuhn, 164 stanzas); Bellows and Thorpe each number differently from 103 and 138 on, and
+  their spans are aligned by content (see the sense files)
+- the CLTK copy of the text stopped at stanza 145; the Ljóðatal (146-163) and the closing stanza come from heimskringla.no's own page,
+  the same edition
+sources_extra:
+- id: cltk-1-145
+  name: The CLTK Old Norse corpus copy of the heimskringla text, stanzas 1-145 (the file the work was built on until 2026-10-04)
+  file: sources/havamal-cltk-1-145.txt
   url: https://raw.githubusercontent.com/cltk/old_norse_texts_heimskringla/master/S%C3%A6mundar-Edda/H%C3%A1vam%C3%A1l/txt_files/complete.txt
   sha256: 9c708035def8bdbf8c8480539cbf7574a3a5c721d437d95c7d3d9be91d2e228d
   license: poem public domain; normalized text credited to Guðni Jónsson and heimskringla.no
-  license_url: http://heimskringla.no/wiki/Heimskringla.no:Copyright
-treebank: null                   # none exists for Eddic poetry; lemma and morph are hand-annotated in curated/
-schemes: [old-norse, modern-icelandic]   # see pipeline/weft/norse.py
-translations:
-  - id: bellows1923
-    translator: Henry Adams Bellows
-    year: 1923
-    form: alliterative verse
-    license: public-domain
-    license_url: https://www.gutenberg.org/policy/license.html
-    file: sources/bellows1923.txt
-    url: https://www.gutenberg.org/cache/epub/73533/pg73533.txt
-    sha256: be983f2e4f2f97a57bb72095354eb9574bb656d185f16ce460efc7da2574438b
-  - id: thorpe1866
-    translator: Benjamin Thorpe
-    year: 1866
-    form: prose
-    license: public-domain
-    license_url: https://www.gutenberg.org/policy/license.html
-    file: sources/thorpe1866.txt
-    url: https://www.gutenberg.org/cache/epub/14726/pg14726.txt
-    sha256: ef59192fd7f1f94011765f6becb108b32ed18fdbf906a6dec180f490a54778f9
-predicted_gaps:
-  - "no treebank: every lemma and parse is hand-annotated (Zoëga as reference) and stays draft until reviewed"
-  - "normalized edition marks vowel length, so no quantity table is needed"
-  - "Bellows numbers stanzas one higher from stanza 76 on (his 77 = standard 76); align by content"
-  - "metre is alliterative (ljóðaháttr): the metre layer records half-line roles and staves, not feet"
-  - "the edition's ö covers both old ǫ and ø; read as ǫ by default"

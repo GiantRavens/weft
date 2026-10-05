@@ -117,7 +117,7 @@ def test_havamal_draft_and_check():
         before = (work / "gen/stanzas.yaml").read_text()
         report = draft.run(work)
         assert (work / "gen/stanzas.yaml").read_text() == before
-        assert report["counts"] == {"lines": 485, "tokens": 1734}
+        assert report["counts"] == {"lines": 1086, "tokens": 4046}   # all 164 stanzas (2026-10-04)
     r = check.run(REPO, "edda-havamal")
     assert r["ok"], r["problems"]
 
