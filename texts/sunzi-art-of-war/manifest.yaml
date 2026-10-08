@@ -2,6 +2,7 @@ work: sunzi-art-of-war
 title: Sunzi, The Art of War (孫子兵法), chapter 1
 author: Sunzi (孫子), traditionally Sun Wu (孫武), general to King Helü of Wu; the transmitted text
 language: lzh
+kind: philosophy
 prefix: sz                       # sz.<chapter>.<line>[.<char>]
 urn: urn:weft:lzh:sunzi.bingfa   # no CTS URN for Chinese texts; Weft-local identifier
 unit: section

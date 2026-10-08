@@ -2,6 +2,7 @@ work: snorri-gylfaginning
 title: "Gylfaginning (The Deluding of Gylfi): the making of the world from Ymir, and the death of Baldr"
 author: "Snorri Sturluson (1179–1241), Prose Edda"
 language: non
+kind: epic-and-myth
 prefix: gyl                          # gyl.<chapter>.<line>[.<token>]; chapters as numbered in the edition
 urn: urn:weft:non:snorri.gylfaginning   # no CTS URN exists for the Prose Edda; Weft-local identifier
 unit: section

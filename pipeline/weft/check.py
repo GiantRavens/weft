@@ -10,6 +10,9 @@ from .build import assemble
 def run(repo: Path, work: str) -> dict:
     from .paths import work_dir
     data = assemble(work_dir(repo, work))
+    import yaml
+    from .build import KINDS
+    manifest = yaml.safe_load((work_dir(repo, work) / "manifest.yaml").read_text()) or {}
     problems: Counter[str] = Counter()
     warnings: Counter[str] = Counter()         # reported and counted, but not a failure of the work
     samples: dict[str, list[str]] = {}
@@ -20,6 +23,8 @@ def run(repo: Path, work: str) -> dict:
         if len(samples[cls]) < 5:
             samples[cls].append(s)
 
+    if manifest.get("kind") not in KINDS:
+        bad("manifest-kind", f"{manifest.get('kind')!r}; one of {', '.join(KINDS)}")
     ids, line_ids, order = set(), [], {}
     ntok = 0
     for i, line in enumerate(data["lines"]):

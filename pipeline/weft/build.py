@@ -334,6 +334,28 @@ def short_title(m: dict) -> str:
 INDEX_FAMILY = {"fr": "French", "it": "Italian", "es": "Spanish", "nl": "Dutch", "ja": "Japanese", "pt": "Portuguese"}
 
 
+KINDS = {"epic-and-myth": "Epic and myth", "scripture": "Scripture", "philosophy": "Philosophy", "poetry": "Poetry",
+         "law": "Law", "correspondence": "Correspondence", "science": "Science"}      # manifest kind -> index heading, in this order
+
+
+def kind_index(ms: list[dict], out_dir: Path) -> str:
+    """The library by kind: the seven kinds in their fixed order, each with its built works in the library's
+    date order. A manifest's `kind` is one of KINDS; weft check refuses any other value."""
+    import html as H
+    by: dict[str, list[tuple[str, str]]] = {}
+    for m in ms:
+        page = out_dir / f"{m['work']}.html"
+        if page.exists() and m.get("kind") in KINDS:
+            by.setdefault(m["kind"], []).append((short_title(m), page.name))
+    if not by:
+        return ""
+    items = "".join(f'<li><b>{H.escape(KINDS[k])}</b> ' + " · ".join(f'<a href="{H.escape(href)}">{H.escape(t)}</a>' for t, href in by[k]) + "</li>"
+                    for k in KINDS if k in by)
+    n_works = sum(len(v) for v in by.values())
+    return (f'<details class="langs kinds"><summary><span class="k2">By kind</span><span class="n">{len(by)} kinds, {n_works} works</span></summary>'
+            f'<ul>{items}</ul></details>')
+
+
 def language_index(ms: list[dict], out_dir: Path) -> str:
     """The library by language: every language that has a built page, alphabetically, with its works
     in the library's date order. Plain HTML, so the index page stays script-free."""
@@ -460,6 +482,7 @@ def write_index(repo: Path, out_dir: Path, private: bool = False) -> Path:
     idx.write_text(html.replace("{{ROWS}}", "\n".join(rows)).replace("{{NAV}}", docs.nav_html("index.html"))
                         .replace("{{NEWEST}}", newest_index(ms, out_dir, added_dates(repo, ms)))
                         .replace("{{LANGS}}", language_index(ms, out_dir))
+                        .replace("{{KINDS}}", kind_index(ms, out_dir))
                         .replace("{{LOCKUP}}", art.get("weft-lockup", "Weft"))
                         .replace("{{FAVICON}}", art.get("favicon", "")))
     return idx
@@ -504,6 +527,7 @@ li p.w{margin-top:4px;font:italic .95rem/1.4 "Gentium Book Plus",Palatino,serif;
 .langs summary::-webkit-details-marker{display:none}
 .langs summary::before{content:"▸";font-size:.8rem;transition:transform .15s}.langs[open] summary::before{transform:rotate(90deg)}
 .langs summary .n{letter-spacing:.04em;text-transform:none;font-weight:400;color:var(--soft)}
+.kinds ul{columns:1}.kinds li{margin-bottom:8px}
 .langs ul{columns:2;column-gap:28px;list-style:none;padding:0;margin:12px 0 0}
 .langs li{font:.82rem/1.5 Inter,system-ui,sans-serif;color:var(--soft);margin:0 0 5px;padding:0;border:0;display:block;break-inside:avoid}
 .langs li b{color:var(--ink);font-weight:600;margin-right:4px}
@@ -513,6 +537,7 @@ li p.w{margin-top:4px;font:italic .95rem/1.4 "Gentium Book Plus",Palatino,serif;
 <p class="lede">Classic texts ordered by date: the original text, a phonetic guide to pronouncing it in English, a literal word-for-word translation called a 'gloss', and well-known published translations, together in one evolving, community-led interlinear presentation.</p>
 {{NAV}}
 {{NEWEST}}
+{{KINDS}}
 {{LANGS}}
 {{ROWS}}
 </main></body></html>

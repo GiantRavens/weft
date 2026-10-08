@@ -239,7 +239,8 @@ def scaffold(repo: Path, work: str, lang: str, title: str | None = None, author:
     prefix = prefix or re.sub(r"[^a-z]", "", work.split("-")[0])[:4] or "w"
     manifest = {
         "work": work, "title": title or f"TODO: {work}", "short_title": "TODO", "author": author or "TODO", "language": lang,
-        "lang_name": f"TODO: {getattr(mod, '__name__', lang).split('.')[-1]} of <year>", "prefix": prefix, "urn": f"urn:weft:{lang}:TODO.{work}",
+        "lang_name": f"TODO: {getattr(mod, '__name__', lang).split('.')[-1]} of <year>",
+        "kind": "TODO: epic-and-myth | scripture | philosophy | poetry | law | correspondence | science", "prefix": prefix, "urn": f"urn:weft:{lang}:TODO.{work}",
         "unit": "stanza-line" if unit == "stanza" else unit, **({"section_noun": "section"} if unit != "stanza" else {}),
         "written": {"year": 0, "display": "TODO", "label": "TODO: when, where, by whom; the library sorts by year"},
         "status": "phase-0", "pilot": ({"stanzas": []} if fmt == "stanza-text" else {"sections": []}),

@@ -3,6 +3,7 @@ title: "The book of Marco Polo: the island of Cipangu (Franco-Italian F text)"
 author: Marco Polo (1254–1324) and Rustichello of Pisa
 language: fro                   # registered as Old French; the text is Franco-Italian (see predicted_gaps)
 lang_name: Franco-Italian         # shown on the page and in the library instead of "Old French"
+kind: correspondence
 prefix: polo                      # polo.<chapter>.<line>[.<token>]; chapter 159 of the 1824 edition
 urn: urn:weft:fro:polo.devisement  # Weft-local identifier
 unit: section

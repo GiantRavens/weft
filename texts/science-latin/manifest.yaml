@@ -2,6 +2,7 @@ work: science-latin
 title: Science in Latin
 author: Descartes and Newton
 language: lat
+kind: science
 prefix: sci                      # sci.<section>.<line>[.<token>]
 urn: urn:weft:lat:science        # Weft-local identifier
 unit: section

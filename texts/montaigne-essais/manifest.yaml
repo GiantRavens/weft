@@ -2,6 +2,7 @@ work: montaigne-essais
 title: Essais (Au lecteur; Que philosopher c'est apprendre à mourir)
 author: Michel de Montaigne (1533–1592)
 language: fr
+kind: philosophy
 prefix: ess                       # ess.<section>.<line>[.<token>]; sections pref and 1.19
 urn: urn:weft:fr:montaigne.essais  # Weft-local identifier
 unit: section

@@ -661,6 +661,23 @@ def test_index_newest_strip():
     assert re.match(r"\d{4}-\d{2}-\d{2}T", build.added_dates(repo, [ghost])[ghost["work"]])
 
 
+def test_every_work_has_a_kind_and_the_index_groups_them():
+    """Every manifest names one of the seven kinds, and the library page's 'By kind' disclosure lists the
+    kinds in their fixed order with every built work under exactly one of them."""
+    import re
+    from weft import build
+    repo = Path(__file__).resolve().parents[1]
+    ms = build.library_order(repo)
+    assert all(m.get("kind") in build.KINDS for m in ms), [m["work"] for m in ms if m.get("kind") not in build.KINDS]
+    out = repo / "site" / "build"
+    html = build.kind_index(ms, out)
+    built = [m for m in ms if (out / f"{m['work']}.html").exists()]
+    if built:
+        heads = re.findall(r"<li><b>([^<]+)</b>", html)
+        assert heads == [build.KINDS[k] for k in build.KINDS if any(m["kind"] == k for m in built)]
+        assert html.count("<a href=") == len(built)
+
+
 def test_esperanto_rules():
     """Esperanto: one letter one sound, penultimate stress, glides in one syllable, the elided o leaving the
     stress in place, and the rule-based reading of the 1887 divided words (Fundamento rules 9, 10, 16)."""

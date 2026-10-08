@@ -2,6 +2,7 @@ work: persian-rubaiyat
 title: "Quatrains attributed to Omar Khayyam, set against FitzGerald"
 author: "Omar Khayyam (1048–1131), by attribution"
 language: fa
+kind: poetry
 prefix: rub                           # rub.<Whinfield number>.<line>[.<token>]
 urn: urn:weft:fa:khayyam.rubaiyat     # Weft-local identifier
 unit: section

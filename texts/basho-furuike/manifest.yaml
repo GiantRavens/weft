@@ -2,6 +2,7 @@ work: basho-furuike              # id kept from the single-poem pilot so existin
 title: Haiku of Bashō (古池や and others)
 author: Matsuo Bashō (1644–1694)
 language: ja
+kind: poetry
 prefix: ba                       # ba.<year>[a-d].<line>[.<token>]; the frog poem keeps ba.1686.*
 urn: urn:weft:ja:basho.furuike   # Weft-local identifier
 unit: section

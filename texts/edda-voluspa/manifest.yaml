@@ -2,6 +2,7 @@ work: edda-voluspa
 title: Völuspá (The Seeress's Prophecy)
 author: Poetic Edda
 language: non
+kind: epic-and-myth
 prefix: vsp                      # vsp.<stanza>.<line>[.<token>]
 urn: urn:weft:non:edda.voluspa   # no CTS URN exists for the Edda; Weft-local identifier
 unit: stanza-line

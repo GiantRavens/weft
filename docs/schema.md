@@ -112,6 +112,16 @@ the language: a single year ("1517"), a range ("1755–1750 BC"), or an approxim
 "4th–3rd c. BC"). Without it the column shows the year. `label` is the longer sentence under the
 title. A work can override the language name shown there with `lang_name`.
 
+## The kind of a work
+
+`kind` in the manifest places the work in one of seven groups on the library page, under "By kind":
+`epic-and-myth` (narrative verse and prose, and the Norse poems with Snorri), `scripture` (sacred text,
+hymn, creed), `philosophy` (thought, including the Daodejing, the Yijing and Sunzi), `poetry` (lyric,
+song and the opera libretti), `law` (codes, charters, bulls, declarations and manifestos),
+`correspondence` (letters, chronicles, travel accounts and inscriptions) and `science`. One value per
+work; `weft check` refuses a manifest without one. A translation record's `kind: reference` or
+`kind: editorial` is a different field and unrelated.
+
 ## Translations still in copyright: kind: reference
 
 A translation that is still in copyright can be cited without being reproduced. In the manifest,

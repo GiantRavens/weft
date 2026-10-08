@@ -2,6 +2,7 @@ work: luther-95-theses
 title: The Ninety-five Theses
 author: Martin Luther
 language: lat
+kind: law
 prefix: l95                      # l95.<section>.<line>[.<token>]; in section th the line is the thesis number
 urn: urn:weft:lat:disputatio-indulgentiarum   # Weft-local identifier
 unit: section

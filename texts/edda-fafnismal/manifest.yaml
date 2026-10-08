@@ -3,6 +3,7 @@ title: Fáfnismál (The Lay of Fafnir)
 author: Poetic Edda
 language: non
 lang_name: Old Norse
+kind: epic-and-myth
 prefix: faf                          # faf.<stanza>.<line>[.<token>]; prose passages are sections p0, p1, p22, p26, p31, p39, p44
 urn: urn:weft:non:edda.fafnismal     # no CTS URN exists for the Edda; Weft-local identifier
 unit: section

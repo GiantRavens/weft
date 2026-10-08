@@ -3,6 +3,7 @@ title: Yijing (易經), the Zhouyi (周易) core text, hexagrams 1 to 64
 author: anonymous; traditionally King Wen of Zhou (the judgments) and the Duke of Zhou (the line statements), an attribution modern scholarship does not accept
 language: lzh
 lang_name: "Old Chinese (Western Zhou)"
+kind: philosophy
 prefix: yj                       # yj.<hexagram>.<line>[.<char>]; line 1 = name and judgment, lines 2-7 = line statements, bottom first
 urn: urn:weft:lzh:zhouyi         # no CTS URN for Chinese texts; Weft-local identifier
 unit: section

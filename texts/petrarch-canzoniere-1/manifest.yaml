@@ -2,6 +2,7 @@ work: petrarch-canzoniere-1
 title: "Canzoniere 1: Voi ch'ascoltate in rime sparse il suono"
 author: "Francesco Petrarca (1304–1374)"
 language: it
+kind: poetry
 prefix: rvf                           # rvf.<poem>.<line>[.<token>]: Rerum vulgarium fragmenta
 urn: urn:weft:it:petrarca.rvf         # Weft-local identifier
 unit: section

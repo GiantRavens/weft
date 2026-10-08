@@ -2,6 +2,7 @@ work: dante-inferno-1
 title: "Inferno 1: Nel mezzo del cammin di nostra vita"
 author: "Dante Alighieri (1265–1321)"
 language: it
+kind: poetry
 prefix: inf                           # inf.<canto>.<line>[.<token>]: Inferno, canto 1
 urn: urn:weft:it:dante.commedia.inferno   # Weft-local identifier
 unit: section
