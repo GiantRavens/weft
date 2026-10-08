@@ -77,7 +77,7 @@ def stanza_speakers(path: Path) -> dict[int, str]:
             if pending:
                 out[int(line[:-1])] = pending
             pending = None
-        elif alone and line.endswith(":") and not line.startswith(('"', "\u201c")) and len(line.split()) <= 4:
+        elif alone and line.endswith(":") and not line.startswith(('"', "\u201c")) and len(line.split()) <= 6:
             pending = line[:-1]
         elif line:
             pending = None      # a stanza's own last line may end in a colon; it is not a speaker

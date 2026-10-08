@@ -86,7 +86,7 @@ def wikitext_to_stanza_text(data: bytes) -> bytes:
         raise SystemExit("weft pin: no '::1.' stanza marker in the wikitext; is this a poem page?")
     pre = raw[:i.start()].rstrip().splitlines()
     last = pre[-1].strip() if pre else ""
-    head = [last] if last.endswith(":") and len(last.split()) <= 4 else []     # a speaker line, not a prose paragraph ending in "kvað:"
+    head = [last] if last.endswith(":") and len(last.split()) <= 6 else []     # a speaker line, not a prose paragraph ending in "kvað:"
     body = raw[i.start():]
     for stop in ("{{DEFAULTSORT", "[[Kategori:", "[[Category:"):
         if stop in body:

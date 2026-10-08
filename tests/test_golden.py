@@ -150,6 +150,21 @@ def test_grimnismal_draft_and_check():
     assert r["ok"], r["problems"]
 
 
+def test_lokasenna_draft_and_check():
+    work = REPO / "texts" / "edda-lokasenna"
+    if sources_present(work):
+        before = (work / "gen/stanzas.yaml").read_text()
+        report = draft.run(work)
+        assert (work / "gen/stanzas.yaml").read_text() == before
+        assert report["counts"] == {"lines": 390, "tokens": 1461}   # all 65 stanzas (2026-10-08)
+    gen = yaml.safe_load((work / "gen/stanzas.yaml").read_text())
+    titles = {l["stanza"]: l.get("stanza_title") for l in gen["lines"]}
+    assert titles[1] is None and titles[2] == "Stanza 2 · Eldir kvað" and titles[57] == "Stanza 57 · Þá kom Þórr at ok kvað"
+    assert sum(1 for t in titles.values() if t) == 59
+    r = check.run(REPO, "edda-lokasenna")
+    assert r["ok"], r["problems"]
+
+
 def test_heyne_and_old_english():
     from weft import oldenglish as oe
     assert oe.heyne_to_macron("Hwät") == "Hwæt"            # ä is short æ
