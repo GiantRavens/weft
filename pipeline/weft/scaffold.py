@@ -27,9 +27,19 @@ UA = "Weft/0.1 (https://weftlibrary.org; a living interlinear library)"
 
 
 def fetch(url: str, timeout: int = 60) -> bytes:
+    """One retry after a server-side error: heimskringla's API answers 500 now and then and 200 a moment later."""
+    import time
+    import urllib.error
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read()
+    for attempt in (1, 2):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code < 500 or attempt == 2:
+                raise SystemExit(f"weft: {url} answered HTTP {e.code}" + (" twice" if attempt == 2 else ""))
+            time.sleep(3)
+    raise AssertionError("unreachable")
 
 
 def fetch_json(url: str) -> dict:
@@ -41,6 +51,58 @@ def sha256(data: bytes) -> str:
 
 
 # ---------------------------------------------------------------- pin
+HK = re.compile(r"^https?://(?:www\.)?heimskringla\.no/(?:wiki/(?P<title>[^?#]+)|index\.php\?(?P<q>.*))$")
+
+
+def resolve_heimskringla(url: str) -> tuple[str, str, int | None, str | None, str | None]:
+    """heimskringla.no refuses action=raw; its API serves the wikitext of a revision as JSON.
+    -> (api url for the wikitext, display name, revid, title, page url by oldid)."""
+    m = HK.match(url)
+    if not m:
+        return url, url, None, None, None
+    if m.group("q"):
+        q = urllib.parse.parse_qs(m.group("q")); title = q.get("title", [""])[0]; rev = int(q["oldid"][0]) if "oldid" in q else None
+    else:
+        title, rev = urllib.parse.unquote(m.group("title")), None
+    if rev is None:
+        pages = fetch_json("https://heimskringla.no/api.php?action=query&prop=revisions&rvprop=ids&format=json&titles=" + urllib.parse.quote(title))["query"]["pages"]
+        page = next(iter(pages.values()))
+        if "revisions" not in page:
+            raise SystemExit(f"weft pin: no such page on heimskringla.no: {title}")
+        rev = page["revisions"][0]["revid"]
+    api = f"https://heimskringla.no/api.php?action=parse&oldid={rev}&prop=wikitext&format=json"
+    page_url = f"https://heimskringla.no/index.php?title={urllib.parse.quote(title)}&oldid={rev}"
+    return api, f"{title}, heimskringla.no, revision {rev}", rev, title, page_url
+
+
+def wikitext_to_stanza_text(data: bytes) -> bytes:
+    """A heimskringla poem page (API parse JSON, or bare wikitext) -> the stanza-text layout draft reads:
+    a speaker line where the page has one, the stanza number on its own line, the lines, a blank line."""
+    raw = data.decode("utf-8")
+    if raw.lstrip().startswith('{"'):          # the API envelope; bare wikitext may itself start with a table ({|)
+        raw = json.loads(raw)["parse"]["wikitext"]["*"]
+    i = re.search(r"^::\s*1\.\s*$", raw, re.M)
+    if not i:
+        raise SystemExit("weft pin: no '::1.' stanza marker in the wikitext; is this a poem page?")
+    pre = raw[:i.start()].rstrip().splitlines()
+    head = [pre[-1].strip()] if pre and pre[-1].strip().endswith(":") else []
+    body = raw[i.start():]
+    for stop in ("{{DEFAULTSORT", "[[Kategori:", "[[Category:"):
+        if stop in body:
+            body = body[:body.index(stop)]
+    out = []
+    for l in head + body.splitlines():
+        l = l.strip()
+        if l.startswith("::"):
+            l = l[2:].strip()
+        l = re.sub(r"<[^>]+>", "", l.replace("&nbsp;", "").replace("'''", "").replace("''", "")).strip()
+        out.append(l)
+    txt = re.sub(r"\n{3,}", "\n\n", "\n".join(out)).strip() + "\n"
+    return txt.encode("utf-8")
+
+
+CONVERTERS = {"heimskringla-stanza-text": wikitext_to_stanza_text}
+
 WS = re.compile(r"^https?://(?P<lang>[a-z\-]+)\.wikisource\.org/(?:wiki/(?P<title>[^?#]+)|w/index\.php\?(?P<q>.*))$")
 
 
@@ -69,28 +131,47 @@ def resolve_wikisource(url: str) -> tuple[str, str, int | None, str | None]:
 
 
 def pin(repo: Path, work: str, url: str, sid: str | None = None, name: str | None = None, license_: str | None = None,
-        license_url: str | None = None, edition: bool = False) -> dict:
+        license_url: str | None = None, edition: bool = False, as_: str | None = None) -> dict:
     from .paths import work_dir
     wd = work_dir(repo, work)
     mp = wd / "manifest.yaml"
     if not mp.exists():
         raise SystemExit(f"weft pin: {mp} does not exist; scaffold the work first")
-    raw_url, display, rev, title = resolve_wikisource(url)
+    convert = page_url = None
+    if HK.match(url):
+        raw_url, display, rev, title, page_url = resolve_heimskringla(url)
+        if as_ == "stanza-text":
+            convert = "heimskringla-stanza-text"
+        elif as_:
+            raise SystemExit(f"weft pin: unknown conversion {as_!r}")
+    else:
+        raw_url, display, rev, title = resolve_wikisource(url)
     data = fetch(raw_url)
+    if convert:
+        data = CONVERTERS[convert](data)
     stem = sid or (re.sub(r"[^a-z0-9]+", "-", (title or Path(urllib.parse.urlparse(url).path).stem).lower()).strip("-")[:40] or "source")
     if rev and not sid:
         stem = f"{stem}-{rev}"
-    ext = ".txt" if rev or not Path(urllib.parse.urlparse(raw_url).path).suffix else Path(urllib.parse.urlparse(raw_url).path).suffix
+    ext = ".txt" if rev or convert or not Path(urllib.parse.urlparse(raw_url).path).suffix else Path(urllib.parse.urlparse(raw_url).path).suffix
+    if page_url and not convert:
+        ext = ".json"      # the API's wikitext envelope, as fetched
     (wd / "sources").mkdir(exist_ok=True)
     out = wd / "sources" / f"{stem}{ext}"
     out.write_bytes(data)
     rec = {"id": sid or stem, "name": name or display, "file": f"sources/{out.name}", "url": raw_url, "sha256": sha256(data),
-           "license": license_ or ("text public domain; Wikisource transcription CC BY-SA 4.0" if rev else "TODO: the source's licence"),
-           **({"license_url": license_url} if license_url else {})}
+           "license": license_ or ("poem public domain; normalized text credited to heimskringla.no" if page_url else
+                                   "text public domain; Wikisource transcription CC BY-SA 4.0" if rev else "TODO: the source's licence"),
+           **({"license_url": license_url} if license_url else {"license_url": "http://heimskringla.no/wiki/Heimskringla.no:Copyright"} if page_url else {}),
+           **({"page": page_url} if page_url else {}),
+           **({"convert": convert, "note": "the file is the page's wikitext converted by weft to the stanza-text layout (speaker lines and stanza numbers kept, markup dropped); weft acquire reproduces it"} if convert else {})}
     m = yaml.safe_load(mp.read_text())
     if edition:
-        m.setdefault("edition", {}).update({"file": rec["file"], "url": rec["url"], "sha256": rec["sha256"]})
-        m["edition"].setdefault("name", rec["name"]); m["edition"].setdefault("license", rec["license"])
+        m.setdefault("edition", {}).update({"file": rec["file"], "url": rec["url"], "sha256": rec["sha256"],
+                                            **{k: rec[k] for k in ("page", "convert", "note", "license_url") if k in rec}})
+        if sid: m["edition"]["id"] = sid
+        if name or str(m["edition"].get("name", "TODO")).startswith("TODO"): m["edition"]["name"] = rec["name"]
+        if str(m["edition"].get("license", "TODO")).startswith("TODO"): m["edition"]["license"] = rec["license"]
+        if convert == "heimskringla-stanza-text": m["edition"]["format"] = "stanza-text"
     else:
         m.setdefault("sources_extra", [])
         m["sources_extra"] = [s for s in m["sources_extra"] if s.get("id") != rec["id"]] + [rec]
@@ -142,7 +223,8 @@ def image(repo: Path, work: str, commons_file: str, caption: str | None = None, 
 
 
 # ---------------------------------------------------------------- scaffold
-def scaffold(repo: Path, work: str, lang: str, title: str | None = None, author: str | None = None, prefix: str | None = None, unit: str = "section") -> list[Path]:
+def scaffold(repo: Path, work: str, lang: str, title: str | None = None, author: str | None = None, prefix: str | None = None, unit: str = "section",
+             fmt: str = "weft-edition") -> list[Path]:
     from .draft import PHON
     if lang not in PHON:
         raise SystemExit(f"weft scaffold: no language module for {lang!r}; known: {', '.join(sorted(PHON))}")
@@ -157,10 +239,11 @@ def scaffold(repo: Path, work: str, lang: str, title: str | None = None, author:
     manifest = {
         "work": work, "title": title or f"TODO: {work}", "short_title": "TODO", "author": author or "TODO", "language": lang,
         "lang_name": f"TODO: {getattr(mod, '__name__', lang).split('.')[-1]} of <year>", "prefix": prefix, "urn": f"urn:weft:{lang}:TODO.{work}",
-        "unit": unit, "section_noun": "section",
+        "unit": "stanza-line" if unit == "stanza" else unit, **({"section_noun": "section"} if unit != "stanza" else {}),
         "written": {"year": 0, "display": "TODO", "label": "TODO: when, where, by whom; the library sorts by year"},
-        "status": "phase-0", "pilot": {"sections": []},
-        "edition": {"id": "TODO", "name": "TODO: the edition, its date, and the transcription used (pin it with weft pin --edition)", "format": "weft-edition", "file": "edition.yaml",
+        "status": "phase-0", "pilot": ({"stanzas": []} if fmt == "stanza-text" else {"sections": []}),
+        "edition": {"id": "TODO", "name": "TODO: the edition, its date, and the transcription used (pin it with weft pin --edition)", "format": fmt,
+                    "file": "edition.yaml" if fmt == "weft-edition" else "sources/TODO.txt",
                     "license": "TODO: text public domain (author d. ...); transcription CC BY-SA 4.0; Weft line division CC BY-SA 4.0"},
         "treebank": None, "schemes": schemes, "scheme_labels": {s: "TODO: the time and place this scheme models for this work" for s in schemes[:1]},
         "sound_confidence": "medium", "sources_extra": [],
@@ -169,6 +252,8 @@ def scaffold(repo: Path, work: str, lang: str, title: str | None = None, author:
     }
     (wd / "manifest.yaml").write_text("# Scaffolded by weft scaffold; every TODO must go before the work is built. docs/building.md is the playbook.\n"
                                       + yaml.dump(manifest, allow_unicode=True, sort_keys=False, width=130))
+    if fmt != "weft-edition":
+        return [wd / "manifest.yaml"]
     (wd / "edition.yaml").write_text(f"""# Weft edition of TODO. Text of TODO (pinned in the manifest); each line is checked verbatim against the pinned
 # source. verify_strip sets aside the page's markup. See docs/building.md, "Patterns in the edition file".
 #   t     the word as printed, punctuation attached
@@ -276,6 +361,7 @@ def expand_code(code: str) -> str:
     return "|".join([pos] + [f"{k}={feats[k]}" for k in ORDER if k in feats])
 
 
+EDGE_PUNCT = ",.;:!?\"“”«»‘’()[]-–—"
 METRE_ROLE = {"a": "long line, a-verse · stave {s}", "b": "long line, b-verse · stave {s}", "f": "full line · staves {s}"}
 
 
@@ -302,7 +388,10 @@ def parse_line_spec(spec: str) -> tuple[str | None, list[dict]]:
             raise ValueError(f"token needs Surface|gloss|lemma|code: {item!r}")
         surf, gloss, lemma = parts[0], parts[1], parts[2]
         code = "|".join(parts[3:])
-        toks.append({"surface": surf.lstrip("*"), "stave": surf.startswith("*"), "gloss": gloss, "lemma": lemma, "morph": expand_code(code)})
+        bare = surf.lstrip("*").strip(EDGE_PUNCT)       # gen surfaces carry no punctuation; the spec may copy the print's
+        if lemma != lemma.strip(EDGE_PUNCT) or not lemma:
+            raise ValueError(f"lemma {lemma!r} carries punctuation (a template slip?) in {item!r}")
+        toks.append({"surface": bare, "stave": surf.startswith("*"), "gloss": gloss, "lemma": lemma, "morph": expand_code(code)})
     return metre, toks
 
 
@@ -333,9 +422,10 @@ def overlay(repo: Path, work: str, spec_path: Path, out_name: str) -> dict:
         if [t["surface"] for t in toks] != lines[lid]:
             problems.append(f"{lid}: spec {[t['surface'] for t in toks]} vs gen {lines[lid]}"); continue
         if metre:
-            out.append(f'    {lid}: {{metre: "{metre}"}}')
+            out.append(f'    {lid}: {{metre: {json.dumps(metre, ensure_ascii=False)}}}')
         for i, t in enumerate(toks, 1):
-            out.append(f'    {lid}.{i}: {{lemma: "{t["lemma"]}", morph: "{t["morph"]}", gloss: "{t["gloss"]}"' + (", stave: true" if t["stave"] else "") + f'}}   # {t["surface"]}')
+            q = lambda v: json.dumps(v, ensure_ascii=False)     # JSON strings are valid YAML flow scalars, quotes included
+            out.append(f'    {lid}.{i}: {{lemma: {q(t["lemma"])}, morph: {q(t["morph"])}, gloss: {q(t["gloss"])}' + (", stave: true" if t["stave"] else "") + f'}}   # {t["surface"]}')
             ntok += 1
     if problems:
         raise SystemExit("weft overlay: the spec does not match the text:\n  " + "\n  ".join(problems[:20]))

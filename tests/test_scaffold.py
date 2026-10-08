@@ -48,7 +48,7 @@ def test_expand_code_reproduces_a_committed_overlay():
 def test_parse_line_spec_metre_staves_and_note():
     metre, toks = scaffold.parse_line_spec("a g :: *Gáttir|doorways|gátt|N.nfp ;; allar,|all|allr|A.nfp | irregular")
     assert metre == "long line, a-verse · stave g · irregular"
-    assert [t["surface"] for t in toks] == ["Gáttir", "allar,"]
+    assert [t["surface"] for t in toks] == ["Gáttir", "allar"]        # the print's punctuation is dropped: gen surfaces are bare
     assert toks[0]["stave"] and not toks[1]["stave"]
     assert toks[0]["morph"] == "NOUN|Case=Nom|Gender=Fem|Number=Plur"
     metre, toks = scaffold.parse_line_spec("f sk :: skal|shall|skulu|AUX.i3s.pr")
@@ -72,7 +72,7 @@ def _fake_work(tmp_path: Path, surfaces) -> Path:
 def test_overlay_expands_a_spec_and_refuses_a_mismatch(tmp_path, monkeypatch):
     from weft import paths
     monkeypatch.setattr(paths, "work_dir", lambda repo, work: tmp_path / "texts" / work)
-    _fake_work(tmp_path, ["Gáttir", "allar,"])
+    _fake_work(tmp_path, ["Gáttir", "allar"])
     spec = tmp_path / "spec.yaml"
     spec.write_text(yaml.dump({"by": "test", "date": "2026-10-05", "why": "test", "status": "draft",
                                "lines": {"fk.1.1": "a g :: *Gáttir|doorways|gátt|N.nfp ;; allar,|all|allr|A.nfp"}}, allow_unicode=True))
@@ -85,7 +85,7 @@ def test_overlay_expands_a_spec_and_refuses_a_mismatch(tmp_path, monkeypatch):
     assert s["fk.1.1.1"] == {"lemma": "gátt", "morph": "NOUN|Case=Nom|Gender=Fem|Number=Plur", "gloss": "doorways", "stave": True}
     assert s["fk.1.1.2"] == {"lemma": "allr", "morph": "ADJ|Case=Nom|Gender=Fem|Number=Plur", "gloss": "all"}
     # a surface that is not the text's: refused, nothing written
-    spec.write_text(yaml.dump({"lines": {"fk.1.1": "Gáttir|doorways|gátt|N.nfp ;; allir,|all|allr|A.nmp"}}, allow_unicode=True))
+    spec.write_text(yaml.dump({"lines": {"fk.1.1": "Gáttir|doorways|gátt|N.nfp ;; allir|all|allr|A.nmp"}}, allow_unicode=True))
     with pytest.raises(SystemExit, match="does not match"):
         scaffold.overlay(tmp_path, "fake-work", spec, "bad.yaml")
     assert not (tmp_path / "texts/fake-work/curated/bad.yaml").exists()
@@ -104,7 +104,7 @@ def test_scaffold_writes_manifest_and_edition_skeletons(tmp_path):
     files = scaffold.scaffold(tmp_path, "test-work", "non", title="A test", author="Nobody", unit="stanza")
     assert [f.name for f in files] == ["manifest.yaml", "edition.yaml"]
     m = yaml.safe_load(files[0].read_text())
-    assert m["work"] == "test-work" and m["language"] == "non" and m["unit"] == "stanza"
+    assert m["work"] == "test-work" and m["language"] == "non" and m["unit"] == "stanza-line"
     assert m["schemes"][0] == "old-norse"                       # the module's first scheme is the default (rule 8)
     assert m["treebank"] is None and m["edition"]["format"] == "weft-edition"
     assert m["predicted_gaps"] and m["sources_extra"] == []
@@ -144,3 +144,34 @@ def test_pin_records_a_source_in_the_manifest(tmp_path, monkeypatch):
     r = scaffold.pin(tmp_path, "fake-work", "https://example.org/text.txt", sid="ed", edition=True)
     m = yaml.safe_load((wd / "manifest.yaml").read_text())
     assert r["manifest"] == "edition" and m["edition"]["file"] == "sources/ed.txt" and m["edition"]["sha256"] == r["sha256"]
+
+
+def test_heimskringla_wikitext_to_stanza_text_and_speakers(tmp_path):
+    from weft.draft import stanza_lines, stanza_speakers
+    wikitext = ("{| table |}\n<center>'''Vafþrúðnismál'''</center>\n\n\nÓðinn kvað:\n\n::1.\n::\"Ráð þú mér nú, Frigg,\n::alls mik fara tíðir\n::&nbsp;\n"
+                "Frigg kvað:\n\n::2.\n::\"Heima letja\n::ek mynda Herjaföðr\n::&nbsp;\n\n::3.\n::Fór þá Óðinn\n\n{{DEFAULTSORT:Vaftrudnismal}}\n[[Kategori:Den eldre Edda]]\n")
+    env = '{"parse": {"wikitext": {"*": ' + __import__("json").dumps(wikitext) + '}}}'
+    txt = scaffold.wikitext_to_stanza_text(env.encode()).decode()
+    assert txt == 'Óðinn kvað:\n1.\n"Ráð þú mér nú, Frigg,\nalls mik fara tíðir\n\nFrigg kvað:\n\n2.\n"Heima letja\nek mynda Herjaföðr\n\n3.\nFór þá Óðinn\n'
+    assert scaffold.wikitext_to_stanza_text(wikitext.encode()) == txt.encode()      # bare wikitext too
+    p = tmp_path / "s.txt"; p.write_text(txt)
+    assert stanza_lines(p, [1, 2, 3]) == {1: ['"Ráð þú mér nú, Frigg,', "alls mik fara tíðir"], 2: ['"Heima letja', "ek mynda Herjaföðr"], 3: ["Fór þá Óðinn"]}
+    assert stanza_speakers(p) == {1: "Óðinn kvað", 2: "Frigg kvað"}                # stanza 3 is narrative: no speaker
+    with pytest.raises(SystemExit, match="stanza marker"):
+        scaffold.wikitext_to_stanza_text(b"no poem here")
+
+
+def test_resolve_heimskringla_offline():
+    api, name, rev, title, page = scaffold.resolve_heimskringla("https://heimskringla.no/index.php?title=Vaf%C3%BEr%C3%BA%C3%B0nism%C3%A1l&oldid=65548")
+    assert api == "https://heimskringla.no/api.php?action=parse&oldid=65548&prop=wikitext&format=json" and rev == 65548
+    assert page.endswith("oldid=65548") and name.endswith("revision 65548")
+    assert scaffold.resolve_heimskringla("https://archive.org/x.txt")[2] is None
+
+
+def test_parse_line_spec_refuses_a_lemma_with_punctuation():
+    """A template slip (replace hitting the lemma field) is the known class; the parser is its sensor."""
+    with pytest.raises(ValueError, match="carries punctuation"):
+        scaffold.parse_line_spec('logi?"|flame|logi?"|N.nms')
+    with pytest.raises(ValueError, match="carries punctuation"):
+        scaffold.parse_line_spec("logi,|flame|logi,|N.nms")
+    assert scaffold.parse_line_spec("verðr-at|comes-not|verða|V.i3s.pr.neg")[1][0]["lemma"] == "verða"

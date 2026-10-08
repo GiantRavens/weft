@@ -45,11 +45,13 @@ def main(argv: list[str] | None = None) -> int:
     sc.add_argument("work"); sc.add_argument("--lang", required=True, help="language code of a pipeline module (grc, lat, non, de, ...)")
     sc.add_argument("--title"); sc.add_argument("--author"); sc.add_argument("--prefix", help="line-id prefix (default: first letters of the folder name)")
     sc.add_argument("--unit", default="section", help="section or stanza")
+    sc.add_argument("--format", dest="fmt", default="weft-edition", help="weft-edition (default; writes edition.yaml) or stanza-text (a numbered-stanza text file, pinned with weft pin --edition --as stanza-text)")
     pn = sub.add_parser("pin", help="fetch a source, save it under sources/, hash it, record it in the manifest (Wikisource pages pinned by revision)")
     pn.add_argument("work"); pn.add_argument("url")
     pn.add_argument("--id", help="source id (default from the title and revision)"); pn.add_argument("--name", help="citation text")
     pn.add_argument("--license", dest="license_"); pn.add_argument("--license-url")
     pn.add_argument("--edition", action="store_true", help="record as the manifest's edition file rather than in sources_extra")
+    pn.add_argument("--as", dest="as_", help="convert the fetched page: stanza-text (heimskringla.no poem pages)")
     im = sub.add_parser("image", help="fetch a Commons image, write the 760 and 220 px JPEGs under art/works/, append the credits record")
     im.add_argument("work"); im.add_argument("commons_file", help='"File:Name.jpg"')
     im.add_argument("--caption"); im.add_argument("--alt")
@@ -106,12 +108,12 @@ def main(argv: list[str] | None = None) -> int:
                 print(f"{w}\t{s}\t{r['respell']}\t/{r['ipa']}/")
     elif a.cmd == "scaffold":
         from . import scaffold
-        for f in scaffold.scaffold(repo, a.work, a.lang, a.title, a.author, a.prefix, a.unit):
+        for f in scaffold.scaffold(repo, a.work, a.lang, a.title, a.author, a.prefix, a.unit, a.fmt):
             print(f"wrote {f.relative_to(repo)}")
         print("next: weft pin <work> <url> [--edition]; then fill every TODO in manifest.yaml. Playbook: docs/building.md")
     elif a.cmd == "pin":
         from . import scaffold
-        show(scaffold.pin(repo, a.work, a.url, a.id, a.name, a.license_, a.license_url, a.edition))
+        show(scaffold.pin(repo, a.work, a.url, a.id, a.name, a.license_, a.license_url, a.edition, a.as_))
     elif a.cmd == "image":
         from . import scaffold
         show(scaffold.image(repo, a.work, a.commons_file, a.caption, a.alt))

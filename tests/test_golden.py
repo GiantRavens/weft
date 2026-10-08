@@ -122,6 +122,21 @@ def test_havamal_draft_and_check():
     assert r["ok"], r["problems"]
 
 
+def test_vafthrudnismal_draft_and_check():
+    """The first work built end to end with weft scaffold, pin (heimskringla, converted to stanza-text), overlay and image."""
+    work = REPO / "texts" / "edda-vafthrudnismal"
+    if sources_present(work):
+        before = (work / "gen/stanzas.yaml").read_text()
+        report = draft.run(work)
+        assert (work / "gen/stanzas.yaml").read_text() == before
+        assert report["counts"] == {"lines": 335, "tokens": 1235}   # all 55 stanzas (2026-10-08)
+    gen = yaml.safe_load((work / "gen/stanzas.yaml").read_text())
+    titles = {l["stanza"]: l.get("stanza_title") for l in gen["lines"]}
+    assert titles[1] == "Stanza 1 · Óðinn kvað" and titles[2] == "Stanza 2 · Frigg kvað" and titles[5] is None   # 5 is narrative
+    r = check.run(REPO, "edda-vafthrudnismal")
+    assert r["ok"], r["problems"]
+
+
 def test_heyne_and_old_english():
     from weft import oldenglish as oe
     assert oe.heyne_to_macron("Hwät") == "Hwæt"            # ä is short æ

@@ -104,6 +104,7 @@ Sixty-one works built across twenty-six languages, oldest first in the library:
 | Marcus Aurelius, Meditations | Book 2, complete | Koine, restored, Erasmian | Long 1862, Casaubon 1634 |
 | Völuspá (Poetic Edda) | complete, stanzas 1-66 | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
 | Hávamál (Poetic Edda) | all 164 stanzas: the guest's wisdom, Odin's loves, the counsels to Loddfáfnir, the Rúnatal and the eighteen charms | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
+| Vafþrúðnismál (Poetic Edda) | all 55 stanzas: Odin's contest of knowledge with the giant Vafþrúðnir, from the making of the world from Ymir to the question no one but Odin can answer | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
 | Þrymskviða (Poetic Edda) | complete, stanzas 1-32 | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
 | Fáfnismál (Poetic Edda) | complete, 44 stanzas and the prose links | Old Norse, modern Icelandic | Bellows 1923, Thorpe 1866 |
 | Snorri, Gylfaginning (Prose Edda) | chapters 5-8, the making of the world from Ymir; 49, the death of Baldr | Old Norse (about 1220), modern Icelandic | Brodeur 1916, Anderson 1880 |

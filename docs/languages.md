@@ -86,7 +86,7 @@ the page shows no invitation.
 | Old Tamil | `tamil` | Tirukkural | old-tamil (first), modern | medium |
 | Runic | `runic` | Kylver, Gallehus, Rök | as-carved (only) | low |
 | Old English | `oldenglish` | Beowulf | west-saxon (only) | not set |
-| Old Norse | `norse` | Völuspá, Hávamál, Þrymskviða, Grettis saga | old-norse (first), modern-icelandic | not set |
+| Old Norse | `norse` | Völuspá, Hávamál, Vafþrúðnismál, Þrymskviða, Grettis saga | old-norse (first), modern-icelandic | not set |
 | | | Snorri, Gylfaginning | old-norse (first), modern-icelandic | medium |
 | Old East Slavic | `oldeastslavic` | Primary Chronicle, 859-862 | orv1100 (first), ru | low |
 | Persian | `persian` | Rubaiyat | early (first), modern | medium |

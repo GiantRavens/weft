@@ -82,6 +82,10 @@ def run(work_dir: Path, accept: bool = False) -> dict:
                     names = [n for n in z.namelist() if re.search(s["extract"], n)]
                     data = z.read(names[0]) if names else b""
                 tmp.write_bytes(data)
+            if s.get("convert"):
+                # the pinned file is derived from the download by a named, deterministic conversion
+                from .scaffold import CONVERTERS
+                tmp.write_bytes(CONVERTERS[s["convert"]](tmp.read_bytes()))
             got = sha256(tmp)
             if s.get("sha256") and got != s["sha256"]:
                 # upstream changed since the manifest was pinned: keep it aside, do not use it

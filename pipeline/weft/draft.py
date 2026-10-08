@@ -65,6 +65,26 @@ def stanza_lines(path: Path, stanzas: list[int]) -> dict[int, list[str]]:
     return {k: v for k, v in out.items() if k in stanzas}
 
 
+def stanza_speakers(path: Path) -> dict[int, str]:
+    """Dialogue poems name the speaker above a stanza ("Óðinn kvað:"). A line ending in a colon that stands
+    right before a stanza number is that stanza's speaker; it is not a line of the stanza."""
+    out: dict[int, str] = {}
+    pending = None
+    alone = True            # the previous line was blank (or this is the start): a speaker line stands by itself
+    for raw in path.read_text(encoding="utf-8").splitlines():
+        line = " ".join(raw.split())
+        if re.fullmatch(r"\d+\.", line):
+            if pending:
+                out[int(line[:-1])] = pending
+            pending = None
+        elif alone and line.endswith(":") and not line.startswith(('"', "\u201c")) and len(line.split()) <= 4:
+            pending = line[:-1]
+        elif line:
+            pending = None      # a stanza's own last line may end in a colon; it is not a speaker
+        alone = not line
+    return out
+
+
 def verse_lines(path: Path, start_after: str, first: int, last: int) -> dict[int, str]:
     """A plain-text poem after a heading, one verse per line, margin line numbers optional.
     Lines are counted from the heading; wide gaps (the caesura) are kept."""
@@ -132,6 +152,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
     pilot = m.get("pilot", {})
     ed_fmt = m["edition"].get("format", "tei")
     more: list = []          # further chapters to draft after this one (pilot.also), set below
+    speakers: dict = {}      # stanza -> speaker, for dialogue poems in stanza-text
     if ed_fmt in ("stanza-text", "weft-edition"):
         book = first = last = None
     elif ed_fmt == "conllu" and m["edition"].get("sent_prefix"):
@@ -239,6 +260,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                 fail("edition-not-in-source", f"{gid}.{i}")
     elif ed_fmt == "stanza-text":
         st = stanza_lines(work_dir / m["edition"]["file"], pilot["stanzas"])
+        speakers = stanza_speakers(work_dir / m["edition"]["file"])
         units = [(k, i, t) for k in pilot["stanzas"] for i, t in enumerate(st.get(k, []), start=1)]
         for k in pilot["stanzas"]:
             if k not in st:
@@ -510,6 +532,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             "id": lid(book, n),
             "cite": f"{m['urn']}.{m['edition']['id']}:" + (f"{book}.{n}" if book is not None else f"{n}"),
             **({"stanza": book} if ed_fmt == "stanza-text" else {}),
+            **({"stanza_title": f"Stanza {book} · {speakers[book]}"} if ed_fmt == "stanza-text" and speakers.get(book) else {}),
             **({"stanza": book, "stanza_title": groups[book]["title"]} if ed_fmt == "weft-edition" else {}),
             # a section may carry an image of its own (a tapestry scene, a manuscript page), shown above it
             # section-level fields carried on the section's first line: an image, and for the Yijing

@@ -71,6 +71,14 @@ names its pages as a list in `verify_in`, and the pages are read together. `weft
 resolution and the hashing. Always send a User-Agent that names Weft and a contact; the APIs
 refuse anonymous bursts.
 
+**heimskringla.no** (the Eddic poems and sagas in Guðni Jónsson's normalized text) refuses `action=raw`
+and answers 500 now and then; `weft pin` reads the revision through its API and retries once. A poem page
+is pinned as the edition with `weft pin <work> 'https://heimskringla.no/wiki/<Title>' --edition --as
+stanza-text`, which converts the wikitext to the stanza-text layout (speaker lines such as `Óðinn kvað:`
+and the stanza numbers kept, markup dropped), records the conversion in the manifest, and lets
+`weft acquire` reproduce the file and verify its sha. A dialogue poem's speaker lines become the stanza
+headings on the page. Scaffold such a work with `--unit stanza --format stanza-text`.
+
 **Internet Archive.** `https://archive.org/download/<id>/<id>_djvu.txt` is the OCR text of a scan.
 Fraktur OCR is usable with the German module's `check` (below); the long s, the superscript-e
 umlauts and the Fraktur hyphen are normalized, and the misreadings are declared token by token.
@@ -158,5 +166,8 @@ stays until a human reviewer lifts it.
 - A run that pipes `pytest` into `tail` hides the exit code; use `pipefail` and print the code.
 - Bellows's Hávamál, Thorpe's Edda, and the Kerr Manifesto number differently from the standard
   text in places; align by content and say so in the sense file's `aligned_by`.
+- In a spec written with Python templates, `.replace("logi|", ...)` on a refrain line hits the lemma field
+  as well as the surface; replace a longer key (`"logi|flame"`). `weft overlay` refuses a lemma that
+  carries punctuation, which is how that slip shows itself.
 - The CLTK copy of the heimskringla Hávamál stops at stanza 145. Check a "complete" file against
   the standard count before building on it.
