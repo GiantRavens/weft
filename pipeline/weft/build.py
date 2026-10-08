@@ -244,6 +244,20 @@ def preview_meta(data: dict) -> str:
     return "\n".join(f'<meta {k}="{v}" content="{H.escape(c)}">' for k, v, c in tags)
 
 
+def copy_fonts(site_dir: Path, out_dir: Path) -> None:
+    """The self-hosted fonts (site/fonts) sit beside the pages as build/fonts, so the pages' relative
+    @font-face urls resolve on the published site and from file://. Copied only when changed."""
+    import shutil
+    src = site_dir / "fonts"
+    if not src.is_dir():
+        return
+    dst = out_dir / "fonts"
+    dst.mkdir(parents=True, exist_ok=True)
+    for f in src.iterdir():
+        if f.is_file() and (not (dst / f.name).exists() or (dst / f.name).stat().st_size != f.stat().st_size):
+            shutil.copy2(f, dst / f.name)
+
+
 def render(data: dict, site_dir: Path) -> str:
     import html as H
     tpl = (site_dir / "template.html").read_text()
@@ -289,6 +303,7 @@ def run(repo: Path, work: str, private: bool = False) -> Path:
     data["_illustration"] = load_illustration(repo, work, private=private)
     html = render(data, repo / "site")
     out_dir = (repo / "private" / "build") if private else (repo / "site" / "build")
+    copy_fonts(repo / "site", out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     out = out_dir / f"{work}.html"
     out.write_text(html)
@@ -334,8 +349,8 @@ def short_title(m: dict) -> str:
 INDEX_FAMILY = {"fr": "French", "it": "Italian", "es": "Spanish", "nl": "Dutch", "ja": "Japanese", "pt": "Portuguese"}
 
 
-KINDS = {"epic-and-myth": "Epic and myth", "scripture": "Scripture", "philosophy": "Philosophy", "poetry": "Poetry",
-         "law": "Law", "correspondence": "Correspondence", "science": "Science"}      # manifest kind -> index heading, in this order
+KINDS = {"epic-and-myth": "Epic and myth", "scripture": "Sacred texts", "philosophy": "Philosophy", "poetry": "Poetry, literature and music",
+         "law": "Law and politics", "correspondence": "Correspondence", "science": "Science"}      # manifest kind -> index heading, in this order
 
 
 def kind_index(ms: list[dict], out_dir: Path) -> str:

@@ -1,4 +1,11 @@
 /* Weft: one column per source word, layers stacked inside it, so the lines stay aligned. */
+/* Gentium Book Plus is served from the site itself (site/fonts, SIL Open Font License), whole: the IPA and the
+   respellings use combining marks, superscripts and subscripts that Google Fonts' subsets leave out, and a phone
+   without those glyphs drew them from another face or not at all. The relative path resolves from site/build/. */
+@font-face { font-family: "Gentium Book Plus"; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/GentiumBookPlus-Regular.woff2") format("woff2"); }
+@font-face { font-family: "Gentium Book Plus"; font-style: italic; font-weight: 400; font-display: swap; src: url("fonts/GentiumBookPlus-Italic.woff2") format("woff2"); }
+@font-face { font-family: "Gentium Book Plus"; font-style: normal; font-weight: 700; font-display: swap; src: url("fonts/GentiumBookPlus-Bold.woff2") format("woff2"); }
+@font-face { font-family: "Gentium Book Plus"; font-style: italic; font-weight: 700; font-display: swap; src: url("fonts/GentiumBookPlus-BoldItalic.woff2") format("woff2"); }
 :root {
   --bg: #f6f1e6;
   --surface: #fbf8f1;
@@ -21,7 +28,7 @@
   --set-gap: 2.4rem;
 
   --serif: "Gentium Book Plus", "Gentium Plus", "GFS Didot", "Noto Serif", "Palatino Linotype", Palatino, serif;
-  --sans: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --sans: Inter, "Gentium Book Plus", system-ui, -apple-system, "Segoe UI", sans-serif;   /* Gentium second: the marks and superscripts Inter's subsets lack */
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {

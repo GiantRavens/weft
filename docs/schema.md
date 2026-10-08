@@ -115,9 +115,10 @@ title. A work can override the language name shown there with `lang_name`.
 ## The kind of a work
 
 `kind` in the manifest places the work in one of seven groups on the library page, under "By kind":
-`epic-and-myth` (narrative verse and prose, and the Norse poems with Snorri), `scripture` (sacred text,
-hymn, creed), `philosophy` (thought, including the Daodejing, the Yijing and Sunzi), `poetry` (lyric,
-song and the opera libretti), `law` (codes, charters, bulls, declarations and manifestos),
+`epic-and-myth` (narrative verse and prose, and the Norse poems with Snorri), `scripture`, shown as "Sacred texts" (scripture,
+hymn, creed), `philosophy` (thought, including the Daodejing, the Yijing and Sunzi), `poetry`, shown as "Poetry,
+literature and music" (lyric, song and the opera libretti), `law`, shown as "Law and politics" (codes,
+charters, bulls, declarations and manifestos),
 `correspondence` (letters, chronicles, travel accounts and inscriptions) and `science`. One value per
 work; `weft check` refuses a manifest without one. A translation record's `kind: reference` or
 `kind: editorial` is a different field and unrelated.
