@@ -1,6 +1,8 @@
 # Weft: agent orientation
 
-Read `README.md` first, then `docs/lifecycle.md` and `docs/schema.md`. Tasks live in Pin (`pin ls`).
+Read `README.md` first, then `docs/lifecycle.md` and `docs/schema.md`. Before building or extending a work, read
+`docs/building.md`: the order of operations, the source recipes, the edition patterns, and the gotchas already paid for.
+Tasks live in Pin (`pin ls`).
 
 ## Hard rules
 

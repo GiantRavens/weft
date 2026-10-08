@@ -41,6 +41,22 @@ def main(argv: list[str] | None = None) -> int:
     al.add_argument("work")
     ph = sub.add_parser("say", help="phonemize Greek words in every scheme")
     ph.add_argument("words", nargs="+")
+    sc = sub.add_parser("scaffold", help="start a work: folder, manifest skeleton with the language's schemes, edition skeleton")
+    sc.add_argument("work"); sc.add_argument("--lang", required=True, help="language code of a pipeline module (grc, lat, non, de, ...)")
+    sc.add_argument("--title"); sc.add_argument("--author"); sc.add_argument("--prefix", help="line-id prefix (default: first letters of the folder name)")
+    sc.add_argument("--unit", default="section", help="section or stanza")
+    pn = sub.add_parser("pin", help="fetch a source, save it under sources/, hash it, record it in the manifest (Wikisource pages pinned by revision)")
+    pn.add_argument("work"); pn.add_argument("url")
+    pn.add_argument("--id", help="source id (default from the title and revision)"); pn.add_argument("--name", help="citation text")
+    pn.add_argument("--license", dest="license_"); pn.add_argument("--license-url")
+    pn.add_argument("--edition", action="store_true", help="record as the manifest's edition file rather than in sources_extra")
+    im = sub.add_parser("image", help="fetch a Commons image, write the 760 and 220 px JPEGs under art/works/, append the credits record")
+    im.add_argument("work"); im.add_argument("commons_file", help='"File:Name.jpg"')
+    im.add_argument("--caption"); im.add_argument("--alt")
+    ov = sub.add_parser("overlay", help="expand a compact overlay spec into curated/ (docs/building.md, 'The overlay'), or print a reuse map")
+    ov.add_argument("work"); ov.add_argument("spec", nargs="?", help="spec YAML: lines: {id: 'Surface|gloss|lemma|code ;; ...'}")
+    ov.add_argument("--out", help="file name under curated/")
+    ov.add_argument("--reuse", nargs="+", metavar="WORK", help="print surface -> annotation hints from these works' overlays and exit")
     a = ap.parse_args(argv)
     repo = repo_root()
     from . import paths
@@ -88,6 +104,25 @@ def main(argv: list[str] | None = None) -> int:
             for s in ("restored", "erasmian"):
                 r = greek.phonemize(w, s, q)
                 print(f"{w}\t{s}\t{r['respell']}\t/{r['ipa']}/")
+    elif a.cmd == "scaffold":
+        from . import scaffold
+        for f in scaffold.scaffold(repo, a.work, a.lang, a.title, a.author, a.prefix, a.unit):
+            print(f"wrote {f.relative_to(repo)}")
+        print("next: weft pin <work> <url> [--edition]; then fill every TODO in manifest.yaml. Playbook: docs/building.md")
+    elif a.cmd == "pin":
+        from . import scaffold
+        show(scaffold.pin(repo, a.work, a.url, a.id, a.name, a.license_, a.license_url, a.edition))
+    elif a.cmd == "image":
+        from . import scaffold
+        show(scaffold.image(repo, a.work, a.commons_file, a.caption, a.alt))
+    elif a.cmd == "overlay":
+        from . import scaffold
+        if a.reuse:
+            show(scaffold.reuse_map(repo, a.reuse))
+        else:
+            if not (a.spec and a.out):
+                ap.error("overlay needs <spec> and --out, or --reuse WORK...")
+            show(scaffold.overlay(repo, a.work, Path(a.spec), a.out))
     return 0
 
 

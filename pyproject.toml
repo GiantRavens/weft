@@ -8,6 +8,7 @@ license = "MIT"
 
 [project.optional-dependencies]
 previews = ["playwright>=1.45"]
+images = ["pillow>=10"]
 
 [project.scripts]
 weft = "weft.cli:main"
