@@ -85,7 +85,8 @@ def wikitext_to_stanza_text(data: bytes) -> bytes:
     if not i:
         raise SystemExit("weft pin: no '::1.' stanza marker in the wikitext; is this a poem page?")
     pre = raw[:i.start()].rstrip().splitlines()
-    head = [pre[-1].strip()] if pre and pre[-1].strip().endswith(":") else []
+    last = pre[-1].strip() if pre else ""
+    head = [last] if last.endswith(":") and len(last.split()) <= 4 else []     # a speaker line, not a prose paragraph ending in "kvað:"
     body = raw[i.start():]
     for stop in ("{{DEFAULTSORT", "[[Kategori:", "[[Category:"):
         if stop in body:
@@ -362,7 +363,8 @@ def expand_code(code: str) -> str:
 
 
 EDGE_PUNCT = ",.;:!?\"“”«»‘’()[]-–—"
-METRE_ROLE = {"a": "long line, a-verse · stave {s}", "b": "long line, b-verse · stave {s}", "f": "full line · staves {s}"}
+METRE_ROLE = {"a": "long line, a-verse · stave {s}", "b": "long line, b-verse · stave {s}", "f": "full line · staves {s}",
+              "list": "line of a name list{s}"}      # list lines (þulur) often rhyme or pair names without a stave
 
 
 def parse_line_spec(spec: str) -> tuple[str | None, list[dict]]:

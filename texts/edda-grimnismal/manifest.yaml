@@ -1,0 +1,122 @@
+work: edda-grimnismal
+title: 'Grímnismál (Poetic Edda): Odin between the fires in Geirröðr''s hall names the halls of the gods and himself, all 54 stanzas'
+short_title: Grímnismál
+author: anonymous, Old Norse (Codex Regius, about 1270; the poem about the tenth century)
+language: non
+lang_name: Old Norse
+prefix: grm
+urn: urn:weft:non:edda.grimnismal
+unit: stanza-line
+written:
+  year: 950
+  display: about 950
+  label: composed in the tenth century on the usual dating; written down in the Codex Regius about 1270, where it follows Vafþrúðnismál,
+    and complete in AM 748 I 4to
+status: phase-0
+pilot:
+  stanzas:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 49
+  - 50
+  - 51
+  - 52
+  - 53
+  - 54
+edition:
+  id: jonsson-heimskringla
+  name: Guðni Jónsson's normalized text (Eddukvæði, 1949), via heimskringla.no, all 54 stanzas; the prose frame of the Codex Regius
+    is kept in the source file and summarized in the notes
+  format: stanza-text
+  file: sources/jonsson-heimskringla.txt
+  license: poem public domain; normalized text credited to Guðni Jónsson and heimskringla.no
+  url: https://heimskringla.no/api.php?action=parse&oldid=65575&prop=wikitext&format=json
+  sha256: baa7a3905920c40a13328afd7ca1336915f23f7e76950cd6e632a7e90d385815
+  page: https://heimskringla.no/index.php?title=Gr%C3%ADmnism%C3%A1l&oldid=65575
+  convert: heimskringla-stanza-text
+  note: the file is the page's wikitext converted by weft to the stanza-text layout (speaker lines and stanza numbers kept, markup dropped);
+    weft acquire reproduces it
+  license_url: http://heimskringla.no/wiki/Heimskringla.no:Copyright
+treebank: null
+schemes:
+- old-norse
+- modern-icelandic
+sound_confidence: medium
+translations:
+- id: bellows1923
+  translator: Henry Adams Bellows
+  year: 1923
+  form: alliterative verse
+  license: public-domain
+  license_url: https://www.gutenberg.org/policy/license.html
+  file: sources/bellows1923.txt
+  url: https://www.gutenberg.org/cache/epub/73533/pg73533.txt
+  sha256: be983f2e4f2f97a57bb72095354eb9574bb656d185f16ce460efc7da2574438b
+- id: thorpe1866
+  translator: Benjamin Thorpe
+  year: 1866
+  form: prose
+  license: public-domain
+  license_url: https://www.gutenberg.org/policy/license.html
+  file: sources/thorpe1866.txt
+  url: https://www.gutenberg.org/cache/epub/14726/pg14726.txt
+  sha256: ef59192fd7f1f94011765f6becb108b32ed18fdbf906a6dec180f490a54778f9
+predicted_gaps:
+- 'no treebank: every lemma and parse is hand-annotated (Zoëga as reference) and stays draft until reviewed'
+- normalized edition marks vowel length, so no quantity table is needed
+- 'metre is alliterative (ljóðaháttr, with some stanzas in fornyrðislag or irregular): the metre layer records half-line roles and staves,
+  not feet'
+- the edition's ö covers both old ǫ and ø; read as ǫ by default
+- the prose frame (Frá sonum Hrauðungs konungs, and the closing lines on Geirröðr's death) stands in the source file but is not a stanza;
+  the notes summarize it, and Bellows's translation of it is cited there
+- the poem is a monologue by Grímnir (Odin) spoken between the fires; the edition names the speaker only inside the prose, so the stanzas
+  carry no speaker heading
+- the last forty-seven stanzas are largely lists of names (halls, rivers, horses, names of Odin); glosses give the name and, where a
+  sense is agreed, its meaning
+sources_extra: []

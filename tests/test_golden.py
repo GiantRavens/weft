@@ -137,6 +137,19 @@ def test_vafthrudnismal_draft_and_check():
     assert r["ok"], r["problems"]
 
 
+def test_grimnismal_draft_and_check():
+    work = REPO / "texts" / "edda-grimnismal"
+    if sources_present(work):
+        before = (work / "gen/stanzas.yaml").read_text()
+        report = draft.run(work)
+        assert (work / "gen/stanzas.yaml").read_text() == before
+        assert report["counts"] == {"lines": 361, "tokens": 1216}   # all 54 stanzas (2026-10-08)
+    gen = yaml.safe_load((work / "gen/stanzas.yaml").read_text())
+    assert all(l.get("stanza_title") is None for l in gen["lines"])   # a monologue: the prose names the speaker, the stanzas do not
+    r = check.run(REPO, "edda-grimnismal")
+    assert r["ok"], r["problems"]
+
+
 def test_heyne_and_old_english():
     from weft import oldenglish as oe
     assert oe.heyne_to_macron("Hwät") == "Hwæt"            # ä is short æ
