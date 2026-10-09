@@ -20,6 +20,18 @@ Two sources, two licenses:
 about.yaml is regenerable: never edit it by hand. Correct the manifest's `wikipedia` field and rerun,
 or override in curated/.
 
+A hand-written about lives in curated/about.yaml: the work's only about when no article fits
+(match: none), or an overlay on the fetched one (its subjects are added, its summary wins):
+
+    by: A. Scholar
+    date: 2026-10-09
+    status: draft                  # draft | reviewed
+    leans_on: "what the summary rests on"
+    summary: "Weft's own words: what the work is"
+    subjects: [fable, animal tale]
+
+load() merges the two into the one record that search and the page read.
+
 `weft about all --suggest` writes nothing: for each work without a `wikipedia` field it lists search
 candidates, so the field is filled with evidence in view.
 """
@@ -239,4 +251,43 @@ def suggest(work_dirs: list[Path], get=fetch_json) -> dict:
             if c["title"] not in seen:
                 seen.add(c["title"]); uniq.append(c)
         out[wd.name] = {"title": m["title"], "author": m.get("author"), "candidates": uniq[:5]}
+    return out
+
+
+# ---------------------------------------------------------------- reading: fetched + curated -> one record
+
+CURATED_FIELDS = ("by", "date", "status", "summary", "subjects")
+
+
+def curated_problems(rec: dict) -> list[str]:
+    """What is wrong with a hand-written about, as failure classes."""
+    out = [f"about-curated-no-{f}" for f in CURATED_FIELDS if not rec.get(f)]
+    if rec.get("status") and rec["status"] not in ("draft", "reviewed"):
+        out.append("about-curated-status")
+    if rec.get("subjects") and (not isinstance(rec["subjects"], list) or not all(isinstance(x, str) and x.strip() for x in rec["subjects"])):
+        out.append("about-curated-subjects")
+    return out
+
+
+def load(work_dir: Path) -> dict | None:
+    """The work's about as one record: {summary, subjects, description, source, match, title, url,
+    attribution, status}. The fetched Wikipedia lead is the summary unless a curated one is written;
+    subjects are the Wikidata labels plus any curated ones, without repeats. None when neither exists."""
+    fetched = yaml.safe_load(p.read_text()) if (p := work_dir / "about.yaml").exists() else None
+    cur = yaml.safe_load(p.read_text()) if (p := work_dir / "curated" / "about.yaml").exists() else None
+    if not fetched and not cur:
+        return None
+    out: dict = {"subjects": []}
+    if fetched:
+        wp, wd = fetched.get("wikipedia") or {}, fetched.get("wikidata") or {}
+        out.update(source="wikipedia", match=fetched.get("match"), summary=wp.get("lead", ""), title=wp.get("title"),
+                   url=wp.get("url"), attribution=wp.get("attribution"), description=wd.get("description"))
+        out["subjects"] = [v["label"] for k in PROPS.values() for v in wd.get(k, []) if v.get("label")]
+    if cur:
+        if cur.get("summary"):
+            out.update(summary=cur["summary"], source="curated", status=cur.get("status", "draft"),
+                       attribution=f"Weft, {cur.get('status', 'draft')}" + (f"; leans on {cur['leans_on']}" if cur.get("leans_on") else ""))
+        out["subjects"] += [x for x in cur.get("subjects") or [] if isinstance(x, str)]
+    seen: set[str] = set()
+    out["subjects"] = [x for x in out["subjects"] if not (x.lower() in seen or seen.add(x.lower()))]
     return out

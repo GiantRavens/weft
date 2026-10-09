@@ -54,7 +54,8 @@ is "done" before that.
    them, since search returns near misses ("Genesis" finds the album) and a redirect can land on a
    general article ("Old pond" redirects to Haiku). The step writes `about.yaml`: the article's lead,
    quoted verbatim and pinned by revision, and the Wikidata item's description, instance of, genre
-   and main subject, which search reads.
+   and main subject, which search reads. With `match: none`, write `curated/about.yaml` by hand
+   (`docs/schema.md`): a summary in Weft's own words and the subjects a reader would search for.
 10. **Image:** `weft image <work> "File:Name.jpg"` fetches a Commons image, writes the two sizes
    under `art/works/`, and appends the credits record; the caption and alt text are yours.
 11. **Rows:** add the work to the table in `README.md` and to the summary table in

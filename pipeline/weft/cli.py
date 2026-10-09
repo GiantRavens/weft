@@ -59,6 +59,8 @@ def main(argv: list[str] | None = None) -> int:
     ov.add_argument("work"); ov.add_argument("spec", nargs="?", help="spec YAML: lines: {id: 'Surface|gloss|lemma|code ;; ...'}")
     ov.add_argument("--out", help="file name under curated/")
     ov.add_argument("--reuse", nargs="+", metavar="WORK", help="print surface -> annotation hints from these works' overlays and exit")
+    ix = sub.add_parser("index", help="write the library's search index (search-index.js) and search page beside the built pages")
+    ix.add_argument("--private", action="store_true", help="index the private build in private/build")
     ab = sub.add_parser("about", help="fetch the Wikipedia lead and Wikidata subjects named in the manifest into about.yaml")
     ab.add_argument("work", help="a work's folder name, or 'all' for every public work")
     ab.add_argument("--suggest", action="store_true", help="write nothing: list article candidates for works without a wikipedia field")
@@ -85,6 +87,10 @@ def main(argv: list[str] | None = None) -> int:
         for w in works:
             out = build.run(repo, w, a.private)
             print(f"built {out.relative_to(repo)} ({out.stat().st_size // 1024} KB)")
+        if a.work == "all":
+            from . import search
+            r = search.write(repo, (repo / "private" / "build") if a.private else (repo / "site" / "build"), a.private)
+            print(f"indexed {r['works']} works, {r['tokens']} tokens ({r['bytes'] // 1024} KB)" + (f"; {r['failures']}" if r["failures"] else ""))
     elif a.cmd == "previews":
         from . import build, previews
         out = repo / "site" / "build"
@@ -120,6 +126,11 @@ def main(argv: list[str] | None = None) -> int:
     elif a.cmd == "image":
         from . import scaffold
         show(scaffold.image(repo, a.work, a.commons_file, a.caption, a.alt))
+    elif a.cmd == "index":
+        from . import search
+        r = search.write(repo, (repo / "private" / "build") if a.private else (repo / "site" / "build"), a.private)
+        show(r)
+        return 0 if not r["failures"] else 1
     elif a.cmd == "about":
         from . import about
         dirs = (sorted(d for d in (repo / "texts").iterdir() if (d / "manifest.yaml").exists())

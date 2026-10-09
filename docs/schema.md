@@ -152,6 +152,40 @@ manifest and rerun. `weft check` fails a bad `wikipedia` field or an incomplete 
 warns where the field is missing, the record not yet fetched, or `match: none` leaves the about to
 be written by hand.
 
+### When no article fits: curated/about.yaml
+
+A work with `match: none` gets its about by hand, in `curated/about.yaml`, marked draft until a
+reviewer lifts it. The same file on a work that has an article is an overlay: its subjects are added
+to the Wikidata ones and its summary replaces the Wikipedia lead.
+
+```yaml
+by: A. Scholar
+date: 2026-10-09
+status: draft                # draft | reviewed
+leans_on: "what the summary rests on: the text, a preface, the notes on the page"
+summary: "Weft's own words: what the work is, scoped to what the text and its sources say"
+subjects: [fable, animal tale, folk tale]
+```
+
+`weft check` fails a curated about that lacks `by`, `date`, `status`, `summary` or `subjects`, and
+warns while a `match: none` work has none. `weft.about.load` merges the fetched and the curated record
+into the one that search reads.
+
+## Search: search-index.js
+
+`weft build all` ends by writing `search-index.js` and `search.html` beside the pages (`weft index`
+writes them alone). The index is a script (`window.WEFT_INDEX = {...}`), not JSON, so the search page
+works from `file://`. It is built from the same assembled data as the pages, so the public index holds
+only what the public pages show: no private work, no `kind: reference` translation. A private build
+indexes into `private/build`. Per work it holds the about record, each line's text with every token's
+surface, lemma and gloss, the translation spans and the notes. Token IDs are not stored: a token's ID is
+its line's ID and its position from 1.
+
+The matching is in `site/search.js`, shared by the page and the tests. Text and query are folded the
+same way (accents and marks dropped, ß ss, þ th, ð d), words match whole with a plural -s or -es, and
+Chinese and Japanese match within the text. A link to a line or a word, `work.html#od.1.1.5`, opens
+the page scrolled to it with the line marked.
+
 ## The kind of a work
 
 `kind` in the manifest places the work in one of seven groups on the library page, under "By kind":

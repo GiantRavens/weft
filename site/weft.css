@@ -222,6 +222,12 @@ body.rtl .w.caesura { border-left: 0; border-right: 1px dotted var(--rule); }
 .worknav .next { text-align: right; }
 .worknav .lib { align-self: center; text-align: center; }
 .worknav .lib svg { height: 28px; width: auto; display: block; margin: 0 auto 4px; }
+.worknav .lib .srch { border: 0; background: none; padding: 8px 0 0; font: 600 0.66rem/1 var(--sans); letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+.worknav .lib .srch:hover { text-decoration: underline; }
+/* the line or word a link points to (from search or a citation) */
+.lineset { scroll-margin-top: calc(var(--head-h, 130px) + 16px); }
+.lineset.hit { background: var(--accent-soft); border-radius: 8px; transition: background 1.2s; }
+.w.hit { box-shadow: inset 0 0 0 2px var(--accent); }
 .worknav .empty { visibility: hidden; }
 @media (max-width: 720px) {
   .home svg { height: 20px; }

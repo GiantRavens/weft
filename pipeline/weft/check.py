@@ -22,8 +22,13 @@ def check_about(wd: Path, manifest: dict, bad) -> None:
         bad("wikipedia-unnamed", "add wikipedia: {title, match} to the manifest (weft about <work> --suggest)", warn=True)
         return
     p = wd / "about.yaml"
+    cp = wd / "curated" / "about.yaml"
+    if cp.exists():
+        for cls in about.curated_problems(yaml.safe_load(cp.read_text()) or {}):
+            bad(cls, str(cp.relative_to(wd)))
     if w["match"] == "none":
-        bad("about-none", "no article fits: write the about by hand", warn=True)
+        if not cp.exists():
+            bad("about-none", "no article fits: write the about by hand in curated/about.yaml", warn=True)
         return
     if not p.exists():
         bad("about-not-fetched", "run weft about " + wd.name, warn=True)

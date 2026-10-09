@@ -64,6 +64,8 @@ def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
     roots = [work_dir] + ([private_dir] if private_dir else [])
     for root in roots:
         for path, sets in _load_yaml_dir(root / "curated"):
+            if path.name == "about.yaml":      # the hand-written about (weft about), not a changeset
+                continue
             for cs in sets or []:
                 for key, fields in (cs.get("set") or {}).items():
                     target = index.get(key)
@@ -580,6 +582,8 @@ li p{margin:6px 0 0;font:.85rem/1.5 Inter,system-ui,sans-serif;color:var(--soft)
 .docnav a{color:var(--accent);text-decoration:none}.docnav a:hover{text-decoration:underline}.docnav span{color:var(--ink)}
 p.pv{font:600 .72rem/1.4 Inter,system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin:4px 0 0}
 li p.w{margin-top:4px;font:italic .95rem/1.4 "Gentium Book Plus",Palatino,serif;color:var(--accent)}
+.search{margin:1.2rem 0 0}.search input{width:100%;box-sizing:border-box;font:1.05rem/1.4 "Gentium Book Plus",Palatino,serif;padding:9px 13px;border:1px solid var(--rule);border-radius:8px;background:transparent;color:var(--ink)}
+.search input:focus{outline:2px solid var(--accent);outline-offset:1px}
 .newest{margin:1.6rem 0 0}.newest h2{font:600 .75rem/1 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
 .newest ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:4px 22px}
 .newest li{font:.84rem/1.5 Inter,system-ui,sans-serif;display:block;border:0;padding:0;margin:0;color:var(--soft)}
@@ -598,6 +602,7 @@ li p.w{margin-top:4px;font:italic .95rem/1.4 "Gentium Book Plus",Palatino,serif;
 </style></head><body><main><div class="lockup" role="img" aria-label="Weft">{{LOCKUP}}</div><h1>Interlinear library</h1>
 <p class="lede">Classic texts ordered by date: the original text, a phonetic guide to pronouncing it in English, a literal word-for-word translation called a 'gloss', and well-known published translations, together in one evolving, community-led interlinear presentation.</p>
 {{NAV}}
+<form class="search" action="search.html" role="search"><input type="search" name="q" placeholder="Search the library: a word in any language, a name, a subject" aria-label="Search the library"></form>
 {{NEWEST}}
 {{KINDS}}
 {{LANGS}}

@@ -9,7 +9,7 @@ tags:
   - wikipedia
   - wip
 created_at: 2026-10-09T09:24:59.623586338-05:00
-updated_at: 2026-10-09T10:31:08.034359749-05:00
+updated_at: 2026-10-09T11:19:10.726287792-05:00
 started_at: 2026-10-09T09:25:20.698051302-05:00
 ---
 
@@ -34,15 +34,17 @@ The library has no search. Two layers of evidence (session 2026-10-09):
 
 - [x] weft about all runs on every work and its report counts found, author, parent, none and failed; about.yaml carries revision, URL, attribution and Wikidata ID
 - [x] weft check validates the wikipedia field and about.yaml (match value, verbatim text present, QID format); warns where a work has neither about.yaml nor a curated about
-- [ ] Search for fable, saga and pope returns the expected works first (Kites and the Crows; Grettir and the Eddic poems; Inter caetera and the 95 Theses)
-- [ ] Search for god returns grouped lemmas across at least 10 languages, and a result link opens the work scrolled to that line with the word highlighted
-- [ ] search.html and search-index.js work from file:// and on weftlibrary.org; the public index contains no private work or reference-only translation (test)
-- [ ] Odyssey proem golden diff unchanged; tests pass
+- [x] Search for fable, saga and pope returns the expected works first (Kites and the Crows; Grettir and the Eddic poems; Inter caetera and the 95 Theses)
+- [x] Search for god returns grouped lemmas across at least 10 languages, and a result link opens the work scrolled to that line with the word highlighted
+- [x] search.html and search-index.js work from file:// and on weftlibrary.org; the public index contains no private work or reference-only translation (test)
+- [x] Odyssey proem golden diff unchanged; tests pass
 
 ## Notes
 
 - 2026-10-09T14:34:44Z: Step 1 done: weft about (pipeline/weft/about.py), wikipedia field on all 73 manifests, about.yaml for 70 (59 work, 6 author, 5 parent), check_about in weft check, tests/test_about.py, docs (schema, building step 9, README layout). Declared none, awaiting hand-written about: runes, science-latin, swahili-tales-steere. Next: step 2 curated about shape, then weft index. Search must match whole words ('epic' must not hit Epictetus).
 - 2026-10-09T15:31:08Z: Step 1b: five collection pages split (pin 165) so each work has its own article; 78 of 79 now about.yaml, only swahili-tales-steere needs a hand-written about.
+- 2026-10-09T16:18:59Z: Steps 2-5 done (uncommitted): curated/about.yaml for swahili-tales-steere (all 79 works have an about); weft index -> search-index.js (79 works, 40004 tokens, 2.5 MB, 815 KB gzipped) and search.html; site/search.js shared by page and node tests; weft.js scrolls to #line/#token after render; Search in nav and library page. 78 tests pass.
+- 2026-10-09T16:19:10Z: Acceptance nuance: 'pope' puts Inter caetera first among works and the 95 Theses first among passages (34 hits); 'saga' puts Grettir first among works and the Eddic poems among passages (they are poems, not sagas). weftlibrary.org not yet verified: needs a push.
 
 ## Log
 

@@ -49,6 +49,7 @@ Later layers: metre, notes, audio. Layers are named, never numbered.
     texts/<work>/curated/        human overlay, sparse, wins on conflict
     texts/<work>/notes/          harvested and authored commentary
     texts/<work>/about.yaml      what the work is: Wikipedia lead and Wikidata subjects (weft about)
+    texts/<work>/curated/about.yaml  the same, by hand, where no article fits
         private/                     your own layer: licensed material and private works, never committed
     pipeline/                    the lifecycle steps as CLI commands
     site/                        renderer
@@ -61,6 +62,11 @@ The library is published to GitHub Pages on every push to `main`, at its own dom
 <https://weftlibrary.org/> (the older address giantravens.github.io/weft redirects there). The workflow in `.github/workflows/pages.yml` runs the
 tests, builds every work with `weft build all`, and deploys `site/build/`. It needs no source
 files, because the build reads only what is committed.
+
+The library is searchable at `search.html`: a word in any of its languages or in English, a name, or a
+subject. An English word lists the source words glossed by it across the languages ("god" finds
+אֱלֹהִים, θεός, deus, Gott and nṯr), a source word is found without its accents, and every result
+links to its line.
 
 Each page is also a single self-contained file. `site/build/<work>.html` opens from disk with no
 server, so a page or the whole folder can be sent as an attachment.

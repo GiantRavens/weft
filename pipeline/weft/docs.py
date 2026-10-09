@@ -137,7 +137,7 @@ def render(md: str) -> tuple[str, list[tuple[int, str, str]]]:
     return "\n".join(out), heads
 
 
-NAV = [("index.html", "The library"), ("about.html", "About Weft"), ("languages.html", "Languages and pronunciation")]
+NAV = [("index.html", "The library"), ("search.html", "Search"), ("about.html", "About Weft"), ("languages.html", "Languages and pronunciation")]
 
 
 def nav_html(current: str) -> str:

@@ -136,7 +136,9 @@
       ? h("a", { class: cls, href: w.href }, h("span", { class: "dir", text: dir }), h("span", { class: "t", text: w.title }))
       : h("span", { class: cls + " empty" });
     const mark = document.querySelector(".home svg");
-    const lib = h("a", { class: "lib", href: "index.html" }, mark ? mark.cloneNode(true) : null, h("span", { class: "dir", text: "The library" }));
+    const lib = h("div", { class: "lib" },
+      h("a", { class: "home-card", href: "index.html" }, mark ? mark.cloneNode(true) : null, h("span", { class: "dir", text: "The library" })),
+      h("a", { class: "srch", href: "search.html" }, "Search the library"));
     nav.append(card(D.nav.prev, "← Older", "prev"), lib, card(D.nav.next, "Newer →", "next"));
   })();
 
@@ -459,4 +461,23 @@
   renderText();
   applySettings();
   fillKey();
+
+  /* a link to a line or a word (work.html#od.1.1, #od.1.1.5, from search or a citation): the page is
+     drawn by script, so the browser's own jump to the anchor finds nothing; go there once it is drawn */
+  function goToHash() {
+    let id = "";
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch (e) { return; }
+    if (!id) return;
+    const el = document.getElementById(id) || document.querySelector(`.w[data-id="${CSS.escape(id)}"]`);
+    if (!el) return;
+    document.querySelectorAll(".hit").forEach((x) => x.classList.remove("hit"));
+    const line = el.closest(".lineset") || el;
+    line.classList.add("hit");
+    if (el.classList.contains("w")) el.classList.add("hit");
+    const head = document.querySelector(".masthead");
+    if (head) document.documentElement.style.setProperty("--head-h", head.offsetHeight + "px");
+    line.scrollIntoView({ block: "start" });     // scroll-margin-top (weft.css) keeps it clear of the sticky header
+  }
+  window.addEventListener("hashchange", goToHash);
+  goToHash();
 })();

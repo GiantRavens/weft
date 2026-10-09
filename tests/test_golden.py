@@ -484,7 +484,7 @@ def test_docs_render_clean(tmp_path):
         for anchor in re.findall(r'href="#([^"]+)"', body):
             assert f'id="{anchor}"' in body, (name, anchor)
         for target in re.findall(r'href="([a-z-]+)\.html', body):
-            assert target == "index" or f"{target}.html" in pages, (name, target)
+            assert target in ("index", "search") or f"{target}.html" in pages, (name, target)   # search.html is written by weft index
 
 
 
