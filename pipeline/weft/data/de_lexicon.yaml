@@ -15,8 +15,8 @@
 #
 # Stress and length follow the Duden Aussprachewörterbuch for the modern scheme; the same stress
 # and length are used for the northern scheme. Monosyllables need an entry only when their vowel is
-# long in a closed syllable (der, Mut, groß) or when a content word would otherwise be read as an
-# unstressed function word. A polysyllable missing here is divided by rule and reported as
+# long in a closed syllable (der, Mut, groß). A monosyllable needs no ˈ: it is stressed unless it is a
+# function word listed in UNSTRESSED (pipeline/weft/german.py), with or without an entry here. A polysyllable missing here is divided by rule and reported as
 # syllables-by-rule.
 "ab": "ab"
 "abends": "ˈa.bends"

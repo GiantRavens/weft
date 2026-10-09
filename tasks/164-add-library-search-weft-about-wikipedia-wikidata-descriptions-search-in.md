@@ -1,7 +1,7 @@
 ---
 id: 164
 title: 'Add library search: weft about (Wikipedia + Wikidata descriptions), search in...'
-state: BEGUN
+state: DONE
 priority: 1
 tags:
   - search
@@ -9,8 +9,9 @@ tags:
   - wikipedia
   - wip
 created_at: 2026-10-09T09:24:59.623586338-05:00
-updated_at: 2026-10-09T11:19:10.726287792-05:00
+updated_at: 2026-10-09T11:33:49.557724337-05:00
 started_at: 2026-10-09T09:25:20.698051302-05:00
+completed_at: 2026-10-09T11:33:49.557715377-05:00
 ---
 
 # Add library search: weft about (Wikipedia + Wikidata descriptions), search index, search page, line deep links
@@ -45,8 +46,10 @@ The library has no search. Two layers of evidence (session 2026-10-09):
 - 2026-10-09T15:31:08Z: Step 1b: five collection pages split (pin 165) so each work has its own article; 78 of 79 now about.yaml, only swahili-tales-steere needs a hand-written about.
 - 2026-10-09T16:18:59Z: Steps 2-5 done (uncommitted): curated/about.yaml for swahili-tales-steere (all 79 works have an about); weft index -> search-index.js (79 works, 40004 tokens, 2.5 MB, 815 KB gzipped) and search.html; site/search.js shared by page and node tests; weft.js scrolls to #line/#token after render; Search in nav and library page. 78 tests pass.
 - 2026-10-09T16:19:10Z: Acceptance nuance: 'pope' puts Inter caetera first among works and the 95 Theses first among passages (34 hits); 'saga' puts Grettir first among works and the Eddic poems among passages (they are poems, not sagas). weftlibrary.org not yet verified: needs a push.
+- 2026-10-09T16:33:49Z: Verified live on weftlibrary.org after 37df1f1 deployed: search (god, fable), deep links (kant.kpv.5, hav.76.1.2 word), moved page runes.html and kant.html forwarding; no page errors.
 
 ## Log
 
 - 2026-10-09T14:24:59Z: Created task
 - 2026-10-09T14:25:20Z: State changed from TODO to BEGUN
+- 2026-10-09T16:33:49Z: State changed from BEGUN to DONE

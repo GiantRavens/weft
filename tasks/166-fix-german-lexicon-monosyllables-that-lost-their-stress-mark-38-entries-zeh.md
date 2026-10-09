@@ -1,14 +1,15 @@
 ---
 id: 166
 title: 'Fix German lexicon monosyllables that lost their stress mark (38 entries: zeh...'
-state: TODO
+state: DONE
 priority: 2
 tags:
   - german
   - sound
   - bug
 created_at: 2026-10-09T09:41:32.540258449-05:00
-updated_at: 2026-10-09T09:41:47.126518924-05:00
+updated_at: 2026-10-09T14:42:45.251890493-05:00
+completed_at: 2026-10-09T14:42:45.251883549-05:00
 ---
 
 # Fix German lexicon monosyllables that lost their stress mark (38 entries: zehn, gleich, Papst, Tod, schön, führt ...)
@@ -24,9 +25,14 @@ Decide per entry (ists, ichs and the spoken letter names may be deliberate), the
 
 ## Acceptance
 
-- [ ] a test fails when a monosyllabic de_lexicon entry outside UNSTRESSED lacks a stress mark and is not declared deliberately unstressed
-- [ ] every German work redrafted; the gen diff shows only stress changes; weft check passes on all
+- [x] a test fails when a monosyllabic de_lexicon entry outside UNSTRESSED lacks a stress mark and is not declared deliberately unstressed
+- [x] every German work redrafted; the gen diff shows only stress changes; weft check passes on all
+
+## Notes
+
+- 2026-10-09T19:31:58Z: Fixed upstream: german.lex_entry gives a monosyllabic entry without ˈ the same stress as no entry (stressed unless UNSTRESSED); word_ipa stresses a monosyllable given as IPA (el, fau, phi, tse, xi) by the same rule; an explicit ˈ still wins (war). Per-entry review: 32 stressed (content words, separable particles ab/dar, adverbs, numerals, letter names, units); 6 added to UNSTRESSED as function words (fur, wen, wär, nebst, ichs, ists). All 8 German works redrafted: 144 sound fields changed across 7 works, every change stress-only (verified against HEAD with marks and case stripped). Test: test_german_monosyllables_stress_by_one_rule.
 
 ## Log
 
 - 2026-10-09T14:41:32Z: Created task
+- 2026-10-09T19:42:45Z: State changed from TODO to DONE

@@ -729,3 +729,20 @@ def test_equation_lines_in_einstein():
     assert tags(e["mathml"]) <= {"math", "mrow", "mi", "mn", "mo", "mfrac", "msup", "msub", "msqrt", "mtext", "mspace", "mstyle", "mpadded"}
     assert "<" not in json.dumps(e["mathml"]) and e["sound"]["modern"]["respell"]
     assert draft.mathml_tree(r"\frac{a}{b}")["c"][0]["c"][0]["t"] == "mfrac"
+
+
+def test_german_monosyllables_stress_by_one_rule():
+    """Every monosyllable in the German lexicon is stressed unless it is a function word (UNSTRESSED) or its
+    entry says otherwise with ˈ: an entry made for a long vowel (zehn: ze:hn) once silently unstressed the word."""
+    from weft import german
+    for k, v in german.lexicon().items():
+        syl = v.get("syl") if isinstance(v, dict) else v
+        if not isinstance(syl, str) or "." in syl:
+            continue
+        ipa = german.word_ipa(k, "modern")[0]
+        # an explicit ˈ is a judgment and wins (war, marked stressed); otherwise the rule decides
+        assert ipa.startswith("ˈ") == ("ˈ" in syl or k not in german.UNSTRESSED), (k, syl, ipa)
+    assert german.phonemize("zehn", "northern")["respell"] == "TSAYN"
+    assert german.phonemize("gleich", "northern")["respell"] == "GLAIHY"
+    assert german.phonemize("wär", "northern")["respell"] == "vehr"        # an auxiliary, as war
+    assert german.phonemize("el", "modern")["respell"] == "EL"             # a letter name given as IPA

@@ -164,7 +164,8 @@ UNSTRESSED = {"der", "die", "das", "den", "dem", "des", "ein", "eine", "einen", 
               "seines", "meines", "ihre", "ihrer", "ihren", "nicht", "noch", "nur", "schon", "wohl",
               "da", "dort", "hier", "je", "wo", "was", "wer", "hat", "ist", "sind", "war", "wird",
               "hin", "nun", "dann",
-              "bey", "auff", "umb"}             # Luther's 1545 forms of bei, auf, um
+              "bey", "auff", "umb", "fur",      # Luther's 1545 forms of bei, auf, um, für
+              "wen", "wär", "nebst", "ichs", "ists"}   # as wer, war, mit; ich's and ist's are ich and ist with 's
 
 
 def lexicon() -> dict:
@@ -244,6 +245,10 @@ def lex_entry(word: str) -> tuple[list[str], int | None, dict]:
     if isinstance(e, str):
         sylls = e.split(".")
         st = next((i for i, s in enumerate(sylls) if s.startswith("ˈ")), None)
+        if st is None and len(sylls) == 1:
+            # a monosyllable takes the same stress with an entry as without one: stressed unless it is
+            # a function word (UNSTRESSED). An entry for a long vowel (zehn: ze:hn) does not unstress it.
+            st = None if k in UNSTRESSED else 0
         return [s.lstrip("ˈ") for s in sylls], st, over
     sylls = syllabify_rule(k)
     if len(sylls) == 1:
@@ -371,6 +376,8 @@ def word_ipa(word: str, scheme: str) -> tuple[str, int, bool]:
     sylls, st, over = lex_entry(word)
     if over.get(scheme):
         ipa = over[scheme]
+        if len(ipa.split(".")) == 1 and st is not None and not ipa.startswith("ˈ"):
+            ipa = "ˈ" + ipa        # a monosyllable given as IPA (el, fau) is stressed by the same rule
         return ipa, len(ipa.split(".")), True
     parts = []
     prev_v, prev_stressed, prev_open, prev_long = "", False, False, False

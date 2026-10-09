@@ -35,8 +35,8 @@ lines:
     surface: jüngst
     norm: jüngst
     sound:
-      northern: {ipa: jʏŋst, respell: yüngst}
-      modern: {ipa: jʏŋst, respell: yüngst}
+      northern: {ipa: ˈjʏŋst, respell: YÜNGST}
+      modern: {ipa: ˈjʏŋst, respell: YÜNGST}
   - id: ein.intro.1.5
     surface: in
     norm: in
@@ -583,8 +583,8 @@ lines:
     surface: ab
     norm: ab
     sound:
-      northern: {ipa: ap, respell: ahp}
-      modern: {ipa: ap, respell: ahp}
+      northern: {ipa: ˈap, respell: AHP}
+      modern: {ipa: ˈap, respell: AHP}
   - id: ein.herleitung1.1.13
     surface: l
     norm: loco
@@ -799,8 +799,8 @@ lines:
     surface: Führt
     norm: Führt
     sound:
-      northern: {ipa: fyːrt, respell: füürt}
-      modern: {ipa: fyːɐt, respell: füüat}
+      northern: {ipa: ˈfyːrt, respell: FÜÜRT}
+      modern: {ipa: ˈfyːɐt, respell: FÜÜAT}
   - id: ein.herleitung1.4.2
     surface: man
     norm: man
@@ -1122,8 +1122,8 @@ lines:
     say: El Stern gleich El mal eins minus klein Fau durch groß Fau Kosinus Phi geteilt durch Wurzel aus eins minus klein Fau durch groß Fau zum Quadrat
     gloss: l-star equals l times one minus v-over-V cosine phi, divided by the square root of one minus v-over-V squared
     sound:
-      northern: {respell: el shtern glaihy el maal ains MEE-nus klain fow durhy GROHS fow KOH-zee-nus fee guh-TAILT durhy VUR-tsuhl ows ains MEE-nus klain fow durhy GROHS fow tsum kfah-DRAAT}
-      modern: {respell: el shtern glaihy el maal ains MEE-nus klain fow durhy GROHS fow KOH-zee-nus fee guh-TAILT durhy VUR-tsuhl ows ains MEE-nus klain fow durhy GROHS fow tsum kfah-DRAAT}
+      northern: {respell: EL SHTERN GLAIHY EL MAAL AINS MEE-nus KLAIN FOW durhy GROHS FOW KOH-zee-nus FEE guh-TAILT durhy VUR-tsuhl ows AINS MEE-nus KLAIN FOW durhy GROHS FOW tsum kfah-DRAAT}
+      modern: {respell: EL SHTERN GLAIHY EL MAAL AINS MEE-nus KLAIN FOW durhy GROHS FOW KOH-zee-nus FEE guh-TAILT durhy VUR-tsuhl ows AINS MEE-nus KLAIN FOW durhy GROHS FOW tsum kfah-DRAAT}
 - id: ein.herleitung1.7
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:herleitung1.7
   stanza: herleitung1
@@ -1632,8 +1632,8 @@ lines:
     surface: gleich
     norm: gleich
     sound:
-      northern: {ipa: glaɪç, respell: glaihy}
-      modern: {ipa: glaɪç, respell: glaihy}
+      northern: {ipa: ˈglaɪç, respell: GLAIHY}
+      modern: {ipa: ˈglaɪç, respell: GLAIHY}
   - id: ein.herleitung2.3.28
     surface: große
     norm: große
@@ -1809,8 +1809,8 @@ lines:
     surface: zwar
     norm: zwar
     sound:
-      northern: {ipa: tsvaːr, respell: tsvaar}
-      modern: {ipa: tsvaːɐ, respell: tsvaa}
+      northern: {ipa: ˈtsvaːr, respell: TSVAAR}
+      modern: {ipa: ˈtsvaːɐ, respell: TSVAA}
   - id: ein.herleitung2.5.10
     surface: nach
     norm: nach
@@ -2125,8 +2125,8 @@ lines:
     say: E null gleich E eins plus El halbe plus El halbe
     gloss: E-zero equals E-one plus L-over-two plus L-over-two
     sound:
-      northern: {respell: AY nul glaihy AY ains plus el HAHL-buh plus el HAHL-buh}
-      modern: {respell: AY nul glaihy AY ains plus el HAHL-buh plus el HAHL-buh}
+      northern: {respell: AY NUL GLAIHY AY AINS PLUS EL HAHL-buh PLUS EL HAHL-buh}
+      modern: {respell: AY NUL GLAIHY AY AINS PLUS EL HAHL-buh PLUS EL HAHL-buh}
 - id: ein.herleitung2.8
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:herleitung2.8
   stanza: herleitung2
@@ -2360,12 +2360,12 @@ lines:
     gloss: H-zero equals H-one plus L-over-two times one minus v-over-V cosine phi over the square root of one minus v-over-V squared, plus L-over-two times one plus v-over-V cosine phi over the same root,
       which equals H-one plus L over the square root of one minus v-over-V squared
     sound:
-      northern: {respell: haa nul glaihy haa ains plus el HAHL-buh maal ains MEE-nus klain fow durhy GROHS fow KOH-zee-nus fee guh-TAILT durhy VUR-tsuhl ows ains MEE-nus klain fow durhy GROHS fow tsum kfah-DRAAT
-          plus el HAHL-buh maal ains plus klain fow durhy GROHS fow KOH-zee-nus fee guh-TAILT durhy VUR-tsuhl ows ains MEE-nus klain fow durhy GROHS fow tsum kfah-DRAAT glaihy haa ains plus el durhy VUR-tsuhl
-          ows ains MEE-nus klain fow durhy GROHS fow tsum kfah-DRAAT}
-      modern: {respell: haa nul glaihy haa ains plus el HAHL-buh maal ains MEE-nus klain fow durhy GROHS fow KOH-zee-nus fee guh-TAILT durhy VUR-tsuhl ows ains MEE-nus klain fow durhy GROHS fow tsum kfah-DRAAT
-          plus el HAHL-buh maal ains plus klain fow durhy GROHS fow KOH-zee-nus fee guh-TAILT durhy VUR-tsuhl ows ains MEE-nus klain fow durhy GROHS fow tsum kfah-DRAAT glaihy haa ains plus el durhy VUR-tsuhl
-          ows ains MEE-nus klain fow durhy GROHS fow tsum kfah-DRAAT}
+      northern: {respell: HAA NUL GLAIHY HAA AINS PLUS EL HAHL-buh MAAL AINS MEE-nus KLAIN FOW durhy GROHS FOW KOH-zee-nus FEE guh-TAILT durhy VUR-tsuhl ows AINS MEE-nus KLAIN FOW durhy GROHS FOW tsum kfah-DRAAT
+          PLUS EL HAHL-buh MAAL AINS PLUS KLAIN FOW durhy GROHS FOW KOH-zee-nus FEE guh-TAILT durhy VUR-tsuhl ows AINS MEE-nus KLAIN FOW durhy GROHS FOW tsum kfah-DRAAT GLAIHY HAA AINS PLUS EL durhy VUR-tsuhl
+          ows AINS MEE-nus KLAIN FOW durhy GROHS FOW tsum kfah-DRAAT}
+      modern: {respell: HAA NUL GLAIHY HAA AINS PLUS EL HAHL-buh MAAL AINS MEE-nus KLAIN FOW durhy GROHS FOW KOH-zee-nus FEE guh-TAILT durhy VUR-tsuhl ows AINS MEE-nus KLAIN FOW durhy GROHS FOW tsum kfah-DRAAT
+          PLUS EL HAHL-buh MAAL AINS PLUS KLAIN FOW durhy GROHS FOW KOH-zee-nus FEE guh-TAILT durhy VUR-tsuhl ows AINS MEE-nus KLAIN FOW durhy GROHS FOW tsum kfah-DRAAT GLAIHY HAA AINS PLUS EL durhy VUR-tsuhl
+          ows AINS MEE-nus KLAIN FOW durhy GROHS FOW tsum kfah-DRAAT}
 - id: ein.herleitung2.9
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:herleitung2.9
   stanza: herleitung2
@@ -2544,8 +2544,8 @@ lines:
     say: Ha null plus E null minus Ha eins plus E eins gleich El mal eins durch Wurzel aus eins minus klein Fau durch groß Fau zum Quadrat minus eins
     gloss: H-zero plus E-zero, minus H-one plus E-one, equals L times one over the square root of one minus v-over-V squared, minus one
     sound:
-      northern: {respell: haa nul plus AY nul MEE-nus haa ains plus AY ains glaihy el maal ains durhy VUR-tsuhl ows ains MEE-nus klain fow durhy GROHS fow tsum kfah-DRAAT MEE-nus ains}
-      modern: {respell: haa nul plus AY nul MEE-nus haa ains plus AY ains glaihy el maal ains durhy VUR-tsuhl ows ains MEE-nus klain fow durhy GROHS fow tsum kfah-DRAAT MEE-nus ains}
+      northern: {respell: HAA NUL PLUS AY NUL MEE-nus HAA AINS PLUS AY AINS GLAIHY EL MAAL AINS durhy VUR-tsuhl ows AINS MEE-nus KLAIN FOW durhy GROHS FOW tsum kfah-DRAAT MEE-nus AINS}
+      modern: {respell: HAA NUL PLUS AY NUL MEE-nus HAA AINS PLUS AY AINS GLAIHY EL MAAL AINS durhy VUR-tsuhl ows AINS MEE-nus KLAIN FOW durhy GROHS FOW tsum kfah-DRAAT MEE-nus AINS}
 - id: ein.herleitung2.11
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:herleitung2.11
   stanza: herleitung2
@@ -3030,8 +3030,8 @@ lines:
     surface: Wahl
     norm: Wahl
     sound:
-      northern: {ipa: vaːl, respell: vaal}
-      modern: {ipa: vaːl, respell: vaal}
+      northern: {ipa: ˈvaːl, respell: VAAL}
+      modern: {ipa: ˈvaːl, respell: VAAL}
   - id: ein.herleitung2.14.5
     surface: der
     norm: der
@@ -3175,8 +3175,8 @@ lines:
     say: Ha null minus E null gleich Ka null plus Tse
     gloss: H-zero minus E-zero equals K-zero plus C
     sound:
-      northern: {respell: haa nul MEE-nus AY nul glaihy kaa nul plus tsay}
-      modern: {respell: haa nul MEE-nus AY nul glaihy kaa nul plus tsay}
+      northern: {respell: HAA NUL MEE-nus AY NUL GLAIHY KAA NUL PLUS TSAY}
+      modern: {respell: HAA NUL MEE-nus AY NUL GLAIHY KAA NUL PLUS TSAY}
 - id: ein.herleitung2.17
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:herleitung2.17
   stanza: herleitung2
@@ -3228,8 +3228,8 @@ lines:
     say: Ha eins minus E eins gleich Ka eins plus Tse
     gloss: H-one minus E-one equals K-one plus C
     sound:
-      northern: {respell: haa ains MEE-nus AY ains glaihy kaa ains plus tsay}
-      modern: {respell: haa ains MEE-nus AY ains glaihy kaa ains plus tsay}
+      northern: {respell: HAA AINS MEE-nus AY AINS GLAIHY KAA AINS PLUS TSAY}
+      modern: {respell: HAA AINS MEE-nus AY AINS GLAIHY KAA AINS PLUS TSAY}
 - id: ein.herleitung2.18
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:herleitung2.18
   stanza: herleitung2
@@ -3403,8 +3403,8 @@ lines:
     say: Ka null minus Ka eins gleich El mal eins durch Wurzel aus eins minus klein Fau durch groß Fau zum Quadrat minus eins
     gloss: K-zero minus K-one equals L times one over the square root of one minus v-over-V squared, minus one
     sound:
-      northern: {respell: kaa nul MEE-nus kaa ains glaihy el maal ains durhy VUR-tsuhl ows ains MEE-nus klain fow durhy GROHS fow tsum kfah-DRAAT MEE-nus ains}
-      modern: {respell: kaa nul MEE-nus kaa ains glaihy el maal ains durhy VUR-tsuhl ows ains MEE-nus klain fow durhy GROHS fow tsum kfah-DRAAT MEE-nus ains}
+      northern: {respell: KAA NUL MEE-nus KAA AINS GLAIHY EL MAAL AINS durhy VUR-tsuhl ows AINS MEE-nus KLAIN FOW durhy GROHS FOW tsum kfah-DRAAT MEE-nus AINS}
+      modern: {respell: KAA NUL MEE-nus KAA AINS GLAIHY EL MAAL AINS durhy VUR-tsuhl ows AINS MEE-nus KLAIN FOW durhy GROHS FOW tsum kfah-DRAAT MEE-nus AINS}
 - id: ein.herleitung2.21
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:herleitung2.21
   stanza: herleitung2
@@ -3471,8 +3471,8 @@ lines:
     surface: nimmt
     norm: nimmt
     sound:
-      northern: {ipa: nɪmt, respell: nimt}
-      modern: {ipa: nɪmt, respell: nimt}
+      northern: {ipa: ˈnɪmt, respell: NIMT}
+      modern: {ipa: ˈnɪmt, respell: NIMT}
   - id: ein.herleitung2.21.11
     surface: infolge
     norm: infolge
@@ -3496,8 +3496,8 @@ lines:
     norm: ab
     punct: ','
     sound:
-      northern: {ipa: ap, respell: ahp}
-      modern: {ipa: ap, respell: ahp}
+      northern: {ipa: ˈap, respell: AHP}
+      modern: {ipa: ˈap, respell: AHP}
   - id: ein.herleitung2.21.15
     surface: und
     norm: und
@@ -3508,8 +3508,8 @@ lines:
     surface: zwar
     norm: zwar
     sound:
-      northern: {ipa: tsvaːr, respell: tsvaar}
-      modern: {ipa: tsvaːɐ, respell: tsvaa}
+      northern: {ipa: ˈtsvaːr, respell: TSVAAR}
+      modern: {ipa: ˈtsvaːɐ, respell: TSVAA}
   - id: ein.herleitung2.21.17
     surface: um
     norm: um
@@ -3629,8 +3629,8 @@ lines:
     surface: ab
     norm: ab
     sound:
-      northern: {ipa: ap, respell: ahp}
-      modern: {ipa: ap, respell: ahp}
+      northern: {ipa: ˈap, respell: AHP}
+      modern: {ipa: ˈap, respell: AHP}
   - id: ein.herleitung2.22.11
     surface: wie
     norm: wie
@@ -3839,8 +3839,8 @@ lines:
     say: Ka null minus Ka eins gleich El durch groß Fau Quadrat mal klein Fau Quadrat halbe
     gloss: K-zero minus K-one equals L over V squared times v squared over two
     sound:
-      northern: {respell: kaa nul MEE-nus kaa ains glaihy el durhy GROHS fow kfah-DRAAT maal klain fow kfah-DRAAT HAHL-buh}
-      modern: {respell: kaa nul MEE-nus kaa ains glaihy el durhy GROHS fow kfah-DRAAT maal klain fow kfah-DRAAT HAHL-buh}
+      northern: {respell: KAA NUL MEE-nus KAA AINS GLAIHY EL durhy GROHS FOW kfah-DRAAT MAAL KLAIN FOW kfah-DRAAT HAHL-buh}
+      modern: {respell: KAA NUL MEE-nus KAA AINS GLAIHY EL durhy GROHS FOW kfah-DRAAT MAAL KLAIN FOW kfah-DRAAT HAHL-buh}
 - id: ein.schluss.1
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:schluss.1
   stanza: schluss
@@ -3949,8 +3949,8 @@ lines:
     norm: ab
     punct: ','
     sound:
-      northern: {ipa: ap, respell: ahp}
-      modern: {ipa: ap, respell: ahp}
+      northern: {ipa: ˈap, respell: AHP}
+      modern: {ipa: ˈap, respell: AHP}
   - id: ein.schluss.2.12
     surface: so
     norm: so
@@ -4358,8 +4358,8 @@ lines:
     surface: Erg
     norm: Erg
     sound:
-      northern: {ipa: ɛrk, respell: erk}
-      modern: {ipa: ɛʁk, respell: erk}
+      northern: {ipa: ˈɛrk, respell: ERK}
+      modern: {ipa: ˈɛʁk, respell: ERK}
   - id: ein.schluss.5.22
     surface: und
     norm: und
