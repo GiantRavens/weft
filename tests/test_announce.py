@@ -28,3 +28,19 @@ def test_url_regex_leaves_the_sentence_punctuation():
     url = "https://weftlibrary.org/x.html"
     for text in (f"See {url}.", f"({url})", f"{url}, and more", f"{url}\nnext", url):
         assert announce.URL_RE.search(text).group() == url, text
+
+
+def test_a_split_work_is_not_announced_as_new(monkeypatch):
+    """A work split from an older page (manifest split_from) is added in git but is not a new text."""
+    def git(*args):
+        if args[0] == "diff" and "--diff-filter=A" in args:
+            return "texts/kant-aufklaerung/manifest.yaml\ntexts/grettis-new/manifest.yaml\n"
+        if args[0] == "diff":
+            return ""
+        if args[0] == "show":
+            return "work: kant-aufklaerung\nsplit_from: kant            # comment\n" if "kant-aufklaerung" in args[1] else "work: grettis-new\n"
+        raise AssertionError(args)
+    monkeypatch.setattr(announce, "git", git)
+    works = {w: {"work": w, "title": w} for w in ("kant-aufklaerung", "grettis-new")}
+    new, _ = announce.classify("a", "b", works)
+    assert [x["work"] for x in new] == ["grettis-new"]

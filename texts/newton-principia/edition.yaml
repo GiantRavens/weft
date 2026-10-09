@@ -1,0 +1,25 @@
+# Weft edition of Newton's three laws of motion (Principia, 1687), in the Latin its author published. Each section is checked
+# verbatim against its source by `weft draft`, and carries the English reading dialect of the author's
+# country (see pipeline/weft/latin.py, as-first-read).
+sections:
+  - id: newton-1
+    title: "Newton, Principia (1687), Law I"
+    dialect: english
+    verify_in: sources/newton1687.txt
+    lines:
+      - "Corpus omne perseverare in statu suo quiescendi vel movendi uniformiter in directum,"
+      - "nisi quatenus a viribus impressis cogitur statum illum mutare."
+  - id: newton-2
+    title: "Newton, Principia (1687), Law II"
+    dialect: english
+    verify_in: sources/newton1687.txt
+    lines:
+      - "Mutationem motus proportionalem esse vi motrici impressæ,"
+      - "& fieri secundum lineam rectam qua vis illa imprimitur."
+  - id: newton-3
+    title: "Newton, Principia (1687), Law III"
+    dialect: english
+    verify_in: sources/newton1687.txt
+    lines:
+      - "Actioni contrariam semper & æqualem esse reactionem:"
+      - "sive corporum duorum actiones in se mutuo semper esse æquales & in partes contrarias dirigi."

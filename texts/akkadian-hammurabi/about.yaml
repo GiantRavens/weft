@@ -1,0 +1,45 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: akkadian-hammurabi
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Code of Hammurabi
+  lang: en
+  revision: 1379098230
+  url: https://en.wikipedia.org/w/index.php?title=Code_of_Hammurabi&oldid=1379098230
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Code of Hammurabi” (en.wikipedia.org, revision 1379098230),
+    CC BY-SA 4.0
+  lead: The Code of Hammurabi is a Babylonian legal text composed c. 1753 BC. It is the longest, best-organized,
+    and best-preserved legal text from the ancient Near East. It is written in the Old Babylonian dialect
+    of Akkadian, purportedly by Hammurabi, sixth king of the First Dynasty of Babylon. The primary copy
+    of the text is inscribed on a basalt stele 2.25 m (7 ft 4+1⁄2 in) tall.
+wikidata:
+  id: Q93304
+  revision: 2548716015
+  license: CC0
+  description: Babylonian code of law or conduct
+  instance_of:
+  - id: Q922203
+    label: code of law
+  main_subject:
+  - id: Q1400881
+    label: property
+  - id: Q384014
+    label: family law
+  - id: Q4122235
+    label: private law
+  - id: Q146491
+    label: criminal law
+  - id: Q200303
+    label: inheritance
+  - id: Q7079040
+    label: offence against the person
+  - id: Q157171
+    label: renting
+  - id: Q10825785
+    label: service contract
+  - id: Q5167661
+    label: justice

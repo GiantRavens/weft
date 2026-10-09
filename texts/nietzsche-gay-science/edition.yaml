@@ -1,0 +1,576 @@
+# Weft edition of a passage by Friedrich Nietzsche, in the spelling of its first edition.
+#
+# fw125  Die fröhliche Wissenschaft (Chemnitz: Ernst Schmeitzner, 1882), §125, Der tolle Mensch,
+#        pages 153-155, whole. Transcribed by Weft from the scan of the Zentralbibliothek Zürich copy
+#        on e-rara (doi:10.3931/e-rara-72849) and checked against e-rara's OCR of the same copy by
+#        the sensor in pipeline/weft/german.py (section field check: the OCR text with its running
+#        page numbers set aside, compared without spaces). The OCR agrees with the scan except at one
+#        token: on line 24 the page has a speck before um that the OCR reads as a full stop; the token
+#        carries the OCR's reading in src. The print is in roman type and writes ss for ß (grosses,
+#        besass) and the spellings todt, getödtet, That, diess, Giebt; it sets emphasis by spacing
+#        the letters (Der tolle Mensch; Wir haben ihn getödtet; und doch haben sie dieselbe gethan),
+#        which this edition does not mark.
+#
+# Weft divides the text into lines at the sentence; several short questions share a line.
+#
+#   t     the word as printed, punctuation and dashes attached ("Mensch. —", "„Ich", "— Also")
+#   n     the modern spelling of the same word form (todt: tot, That: Tat);
+#         Nietzsche's capitals on pronouns (Viele, Denen, Nichts) are lowercased. The page shows it
+#         as "Modern spelling"; the sound of both schemes is computed from it
+#         (pipeline/weft/german.py with pipeline/weft/data/de_lexicon.yaml)
+#   src   the source's reading where it differs from the page (line 24, um)
+work: nietzsche-gay-science
+joiner: " "
+sections:
+  - id: "fw125"
+    title: "Die fröhliche Wissenschaft (1882), §125: Der tolle Mensch (The madman)"
+    check: {file: sources/erara-fw1882.txt, format: plain, strip: "\\n\\d{3}( —)?\\n"}
+    lines:
+      - tokens:
+        - {t: "Der", n: "Der"}
+        - {t: "tolle", n: "tolle"}
+        - {t: "Mensch. —", n: "Mensch"}
+      - tokens:
+        - {t: "Habt", n: "Habt"}
+        - {t: "ihr", n: "ihr"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "von", n: "von"}
+        - {t: "jenem", n: "jenem"}
+        - {t: "tollen", n: "tollen"}
+        - {t: "Menschen", n: "Menschen"}
+        - {t: "gehört,", n: "gehört"}
+        - {t: "der", n: "der"}
+        - {t: "am", n: "am"}
+        - {t: "hellen", n: "hellen"}
+        - {t: "Vormittage", n: "Vormittage"}
+        - {t: "eine", n: "eine"}
+        - {t: "Laterne", n: "Laterne"}
+        - {t: "anzündete,", n: "anzündete"}
+        - {t: "auf", n: "auf"}
+        - {t: "den", n: "den"}
+        - {t: "Markt", n: "Markt"}
+        - {t: "lief", n: "lief"}
+        - {t: "und", n: "und"}
+        - {t: "unaufhörlich", n: "unaufhörlich"}
+        - {t: "schrie:", n: "schrie"}
+      - tokens:
+        - {t: "„Ich", n: "Ich"}
+        - {t: "suche", n: "suche"}
+        - {t: "Gott!", n: "Gott"}
+        - {t: "Ich", n: "Ich"}
+        - {t: "suche", n: "suche"}
+        - {t: "Gott!“ —", n: "Gott"}
+      - tokens:
+        - {t: "Da", n: "Da"}
+        - {t: "dort", n: "dort"}
+        - {t: "gerade", n: "gerade"}
+        - {t: "Viele", n: "viele"}
+        - {t: "von", n: "von"}
+        - {t: "Denen", n: "denen"}
+        - {t: "zusammen", n: "zusammen"}
+        - {t: "standen,", n: "standen"}
+        - {t: "welche", n: "welche"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "an", n: "an"}
+        - {t: "Gott", n: "Gott"}
+        - {t: "glaubten,", n: "glaubten"}
+        - {t: "so", n: "so"}
+        - {t: "erregte", n: "erregte"}
+        - {t: "er", n: "er"}
+        - {t: "ein", n: "ein"}
+        - {t: "grosses", n: "großes"}
+        - {t: "Gelächter.", n: "Gelächter"}
+      - tokens:
+        - {t: "Ist", n: "Ist"}
+        - {t: "er", n: "er"}
+        - {t: "denn", n: "denn"}
+        - {t: "verloren", n: "verloren"}
+        - {t: "gegangen?", n: "gegangen"}
+        - {t: "sagte", n: "sagte"}
+        - {t: "der", n: "der"}
+        - {t: "Eine.", n: "eine"}
+      - tokens:
+        - {t: "Hat", n: "Hat"}
+        - {t: "er", n: "er"}
+        - {t: "sich", n: "sich"}
+        - {t: "verlaufen", n: "verlaufen"}
+        - {t: "wie", n: "wie"}
+        - {t: "ein", n: "ein"}
+        - {t: "Kind?", n: "Kind"}
+        - {t: "sagte", n: "sagte"}
+        - {t: "der", n: "der"}
+        - {t: "Andere.", n: "andere"}
+      - tokens:
+        - {t: "Oder", n: "Oder"}
+        - {t: "hält", n: "hält"}
+        - {t: "er", n: "er"}
+        - {t: "sich", n: "sich"}
+        - {t: "versteckt?", n: "versteckt"}
+        - {t: "Fürchtet", n: "Fürchtet"}
+        - {t: "er", n: "er"}
+        - {t: "sich", n: "sich"}
+        - {t: "vor", n: "vor"}
+        - {t: "uns?", n: "uns"}
+        - {t: "Ist", n: "Ist"}
+        - {t: "er", n: "er"}
+        - {t: "zu", n: "zu"}
+        - {t: "Schiff", n: "Schiff"}
+        - {t: "gegangen?", n: "gegangen"}
+        - {t: "ausgewandert? —", n: "ausgewandert"}
+        - {t: "so", n: "so"}
+        - {t: "schrieen", n: "schrien"}
+        - {t: "und", n: "und"}
+        - {t: "lachten", n: "lachten"}
+        - {t: "sie", n: "sie"}
+        - {t: "durcheinander.", n: "durcheinander"}
+      - tokens:
+        - {t: "Der", n: "Der"}
+        - {t: "tolle", n: "tolle"}
+        - {t: "Mensch", n: "Mensch"}
+        - {t: "sprang", n: "sprang"}
+        - {t: "mitten", n: "mitten"}
+        - {t: "unter", n: "unter"}
+        - {t: "sie", n: "sie"}
+        - {t: "und", n: "und"}
+        - {t: "durchbohrte", n: "durchbohrte"}
+        - {t: "sie", n: "sie"}
+        - {t: "mit", n: "mit"}
+        - {t: "seinen", n: "seinen"}
+        - {t: "Blicken.", n: "Blicken"}
+      - tokens:
+        - {t: "„Wohin", n: "Wohin"}
+        - {t: "ist", n: "ist"}
+        - {t: "Gott?", n: "Gott"}
+        - {t: "rief", n: "rief"}
+        - {t: "er,", n: "er"}
+        - {t: "ich", n: "ich"}
+        - {t: "will", n: "will"}
+        - {t: "es", n: "es"}
+        - {t: "euch", n: "euch"}
+        - {t: "sagen!", n: "sagen"}
+      - tokens:
+        - {t: "Wir", n: "Wir"}
+        - {t: "haben", n: "haben"}
+        - {t: "ihn", n: "ihn"}
+        - {t: "getödtet, —", n: "getötet"}
+        - {t: "ihr", n: "ihr"}
+        - {t: "und", n: "und"}
+        - {t: "ich!", n: "ich"}
+        - {t: "Wir", n: "Wir"}
+        - {t: "Alle", n: "alle"}
+        - {t: "sind", n: "sind"}
+        - {t: "seine", n: "seine"}
+        - {t: "Mörder!", n: "Mörder"}
+      - tokens:
+        - {t: "Aber", n: "Aber"}
+        - {t: "wie", n: "wie"}
+        - {t: "haben", n: "haben"}
+        - {t: "wir", n: "wir"}
+        - {t: "diess", n: "dies"}
+        - {t: "gemacht?", n: "gemacht"}
+        - {t: "Wie", n: "Wie"}
+        - {t: "vermochten", n: "vermochten"}
+        - {t: "wir", n: "wir"}
+        - {t: "das", n: "das"}
+        - {t: "Meer", n: "Meer"}
+        - {t: "auszutrinken?", n: "auszutrinken"}
+      - tokens:
+        - {t: "Wer", n: "Wer"}
+        - {t: "gab", n: "gab"}
+        - {t: "uns", n: "uns"}
+        - {t: "den", n: "den"}
+        - {t: "Schwamm,", n: "Schwamm"}
+        - {t: "um", n: "um"}
+        - {t: "den", n: "den"}
+        - {t: "ganzen", n: "ganzen"}
+        - {t: "Horizont", n: "Horizont"}
+        - {t: "wegzuwischen?", n: "wegzuwischen"}
+      - tokens:
+        - {t: "Was", n: "Was"}
+        - {t: "thaten", n: "taten"}
+        - {t: "wir,", n: "wir"}
+        - {t: "als", n: "als"}
+        - {t: "wir", n: "wir"}
+        - {t: "diese", n: "diese"}
+        - {t: "Erde", n: "Erde"}
+        - {t: "von", n: "von"}
+        - {t: "ihrer", n: "ihrer"}
+        - {t: "Sonne", n: "Sonne"}
+        - {t: "losketteten?", n: "losketteten"}
+      - tokens:
+        - {t: "Wohin", n: "Wohin"}
+        - {t: "bewegt", n: "bewegt"}
+        - {t: "sie", n: "sie"}
+        - {t: "sich", n: "sich"}
+        - {t: "nun?", n: "nun"}
+        - {t: "Wohin", n: "Wohin"}
+        - {t: "bewegen", n: "bewegen"}
+        - {t: "wir", n: "wir"}
+        - {t: "uns?", n: "uns"}
+        - {t: "Fort", n: "Fort"}
+        - {t: "von", n: "von"}
+        - {t: "allen", n: "allen"}
+        - {t: "Sonnen?", n: "Sonnen"}
+      - tokens:
+        - {t: "Stürzen", n: "Stürzen"}
+        - {t: "wir", n: "wir"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "fortwährend?", n: "fortwährend"}
+        - {t: "Und", n: "Und"}
+        - {t: "rückwärts,", n: "rückwärts"}
+        - {t: "seitwärts,", n: "seitwärts"}
+        - {t: "vorwärts,", n: "vorwärts"}
+        - {t: "nach", n: "nach"}
+        - {t: "allen", n: "allen"}
+        - {t: "Seiten?", n: "Seiten"}
+      - tokens:
+        - {t: "Giebt", n: "Gibt"}
+        - {t: "es", n: "es"}
+        - {t: "noch", n: "noch"}
+        - {t: "ein", n: "ein"}
+        - {t: "Oben", n: "Oben"}
+        - {t: "und", n: "und"}
+        - {t: "ein", n: "ein"}
+        - {t: "Unten?", n: "Unten"}
+        - {t: "Irren", n: "Irren"}
+        - {t: "wir", n: "wir"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "wie", n: "wie"}
+        - {t: "durch", n: "durch"}
+        - {t: "ein", n: "ein"}
+        - {t: "unendliches", n: "unendliches"}
+        - {t: "Nichts?", n: "nichts"}
+      - tokens:
+        - {t: "Haucht", n: "Haucht"}
+        - {t: "uns", n: "uns"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "der", n: "der"}
+        - {t: "leere", n: "leere"}
+        - {t: "Raum", n: "Raum"}
+        - {t: "an?", n: "an"}
+        - {t: "Ist", n: "Ist"}
+        - {t: "es", n: "es"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "kälter", n: "kälter"}
+        - {t: "geworden?", n: "geworden"}
+        - {t: "Kommt", n: "Kommt"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "immerfort", n: "immerfort"}
+        - {t: "die", n: "die"}
+        - {t: "Nacht", n: "Nacht"}
+        - {t: "und", n: "und"}
+        - {t: "mehr", n: "mehr"}
+        - {t: "Nacht?", n: "Nacht"}
+      - tokens:
+        - {t: "Müssen", n: "Müssen"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "Laternen", n: "Laternen"}
+        - {t: "am", n: "am"}
+        - {t: "Vormittage", n: "Vormittage"}
+        - {t: "angezündet", n: "angezündet"}
+        - {t: "werden?", n: "werden"}
+      - tokens:
+        - {t: "Hören", n: "Hören"}
+        - {t: "wir", n: "wir"}
+        - {t: "noch", n: "noch"}
+        - {t: "Nichts", n: "nichts"}
+        - {t: "von", n: "von"}
+        - {t: "dem", n: "dem"}
+        - {t: "Lärm", n: "Lärm"}
+        - {t: "der", n: "der"}
+        - {t: "Todtengräber,", n: "Totengräber"}
+        - {t: "welche", n: "welche"}
+        - {t: "Gott", n: "Gott"}
+        - {t: "begraben?", n: "begraben"}
+        - {t: "Riechen", n: "Riechen"}
+        - {t: "wir", n: "wir"}
+        - {t: "noch", n: "noch"}
+        - {t: "Nichts", n: "nichts"}
+        - {t: "von", n: "von"}
+        - {t: "der", n: "der"}
+        - {t: "göttlichen", n: "göttlichen"}
+        - {t: "Verwesung? —", n: "Verwesung"}
+        - {t: "auch", n: "auch"}
+        - {t: "Götter", n: "Götter"}
+        - {t: "verwesen!", n: "verwesen"}
+      - tokens:
+        - {t: "Gott", n: "Gott"}
+        - {t: "ist", n: "ist"}
+        - {t: "todt!", n: "tot"}
+        - {t: "Gott", n: "Gott"}
+        - {t: "bleibt", n: "bleibt"}
+        - {t: "todt!", n: "tot"}
+        - {t: "Und", n: "Und"}
+        - {t: "wir", n: "wir"}
+        - {t: "haben", n: "haben"}
+        - {t: "ihn", n: "ihn"}
+        - {t: "getödtet!", n: "getötet"}
+      - tokens:
+        - {t: "Wie", n: "Wie"}
+        - {t: "trösten", n: "trösten"}
+        - {t: "wir", n: "wir"}
+        - {t: "uns,", n: "uns"}
+        - {t: "die", n: "die"}
+        - {t: "Mörder", n: "Mörder"}
+        - {t: "aller", n: "aller"}
+        - {t: "Mörder?", n: "Mörder"}
+      - tokens:
+        - {t: "Das", n: "Das"}
+        - {t: "Heiligste", n: "Heiligste"}
+        - {t: "und", n: "und"}
+        - {t: "Mächtigste,", n: "Mächtigste"}
+        - {t: "was", n: "was"}
+        - {t: "die", n: "die"}
+        - {t: "Welt", n: "Welt"}
+        - {t: "bisher", n: "bisher"}
+        - {t: "besass,", n: "besaß"}
+        - {t: "es", n: "es"}
+        - {t: "ist", n: "ist"}
+        - {t: "unter", n: "unter"}
+        - {t: "unseren", n: "unseren"}
+        - {t: "Messern", n: "Messern"}
+        - {t: "verblutet, —", n: "verblutet"}
+        - {t: "wer", n: "wer"}
+        - {t: "wischt", n: "wischt"}
+        - {t: "diess", n: "dies"}
+        - {t: "Blut", n: "Blut"}
+        - {t: "von", n: "von"}
+        - {t: "uns", n: "uns"}
+        - {t: "ab?", n: "ab"}
+      - tokens:
+        - {t: "Mit", n: "Mit"}
+        - {t: "welchem", n: "welchem"}
+        - {t: "Wasser", n: "Wasser"}
+        - {t: "könnten", n: "könnten"}
+        - {t: "wir", n: "wir"}
+        - {t: "uns", n: "uns"}
+        - {t: "reinigen?", n: "reinigen"}
+        - {t: "Welche", n: "Welche"}
+        - {t: "Sühnfeiern,", n: "Sühnfeiern"}
+        - {t: "welche", n: "welche"}
+        - {t: "heiligen", n: "heiligen"}
+        - {t: "Spiele", n: "Spiele"}
+        - {t: "werden", n: "werden"}
+        - {t: "wir", n: "wir"}
+        - {t: "erfinden", n: "erfinden"}
+        - {t: "müssen?", n: "müssen"}
+      - tokens:
+        - {t: "Ist", n: "Ist"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "die", n: "die"}
+        - {t: "Grösse", n: "Größe"}
+        - {t: "dieser", n: "dieser"}
+        - {t: "That", n: "Tat"}
+        - {t: "zu", n: "zu"}
+        - {t: "gross", n: "groß"}
+        - {t: "für", n: "für"}
+        - {t: "uns?", n: "uns"}
+        - {t: "Müssen", n: "Müssen"}
+        - {t: "wir", n: "wir"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "selber", n: "selber"}
+        - {t: "zu", n: "zu"}
+        - {t: "Göttern", n: "Göttern"}
+        - {t: "werden,", n: "werden"}
+        - {t: "um", n: "um", src: ".um"}
+        - {t: "nur", n: "nur"}
+        - {t: "ihrer", n: "ihrer"}
+        - {t: "würdig", n: "würdig"}
+        - {t: "zu", n: "zu"}
+        - {t: "erscheinen?", n: "erscheinen"}
+      - tokens:
+        - {t: "Es", n: "Es"}
+        - {t: "gab", n: "gab"}
+        - {t: "nie", n: "nie"}
+        - {t: "eine", n: "eine"}
+        - {t: "grössere", n: "größere"}
+        - {t: "That, —", n: "Tat"}
+        - {t: "und", n: "und"}
+        - {t: "wer", n: "wer"}
+        - {t: "nur", n: "nur"}
+        - {t: "immer", n: "immer"}
+        - {t: "nach", n: "nach"}
+        - {t: "uns", n: "uns"}
+        - {t: "geboren", n: "geboren"}
+        - {t: "wird,", n: "wird"}
+        - {t: "gehört", n: "gehört"}
+        - {t: "um", n: "um"}
+        - {t: "dieser", n: "dieser"}
+        - {t: "That", n: "Tat"}
+        - {t: "willen", n: "willen"}
+        - {t: "in", n: "in"}
+        - {t: "eine", n: "eine"}
+        - {t: "höhere", n: "höhere"}
+        - {t: "Geschichte,", n: "Geschichte"}
+        - {t: "als", n: "als"}
+        - {t: "alle", n: "alle"}
+        - {t: "Geschichte", n: "Geschichte"}
+        - {t: "bisher", n: "bisher"}
+        - {t: "war!“ —", n: "war"}
+      - tokens:
+        - {t: "Hier", n: "Hier"}
+        - {t: "schwieg", n: "schwieg"}
+        - {t: "der", n: "der"}
+        - {t: "tolle", n: "tolle"}
+        - {t: "Mensch", n: "Mensch"}
+        - {t: "und", n: "und"}
+        - {t: "sah", n: "sah"}
+        - {t: "wieder", n: "wieder"}
+        - {t: "seine", n: "seine"}
+        - {t: "Zuhörer", n: "Zuhörer"}
+        - {t: "an:", n: "an"}
+        - {t: "auch", n: "auch"}
+        - {t: "sie", n: "sie"}
+        - {t: "schwiegen", n: "schwiegen"}
+        - {t: "und", n: "und"}
+        - {t: "blickten", n: "blickten"}
+        - {t: "befremdet", n: "befremdet"}
+        - {t: "auf", n: "auf"}
+        - {t: "ihn.", n: "ihn"}
+      - tokens:
+        - {t: "Endlich", n: "Endlich"}
+        - {t: "warf", n: "warf"}
+        - {t: "er", n: "er"}
+        - {t: "seine", n: "seine"}
+        - {t: "Laterne", n: "Laterne"}
+        - {t: "auf", n: "auf"}
+        - {t: "den", n: "den"}
+        - {t: "Boden,", n: "Boden"}
+        - {t: "dass", n: "dass"}
+        - {t: "sie", n: "sie"}
+        - {t: "in", n: "in"}
+        - {t: "Stücke", n: "Stücke"}
+        - {t: "sprang", n: "sprang"}
+        - {t: "und", n: "und"}
+        - {t: "erlosch.", n: "erlosch"}
+      - tokens:
+        - {t: "„Ich", n: "Ich"}
+        - {t: "komme", n: "komme"}
+        - {t: "zu", n: "zu"}
+        - {t: "früh,", n: "früh"}
+        - {t: "sagte", n: "sagte"}
+        - {t: "er", n: "er"}
+        - {t: "dann,", n: "dann"}
+        - {t: "ich", n: "ich"}
+        - {t: "bin", n: "bin"}
+        - {t: "noch", n: "noch"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "an", n: "an"}
+        - {t: "der", n: "der"}
+        - {t: "Zeit.", n: "Zeit"}
+      - tokens:
+        - {t: "Diess", n: "Dies"}
+        - {t: "ungeheure", n: "ungeheure"}
+        - {t: "Ereigniss", n: "Ereignis"}
+        - {t: "ist", n: "ist"}
+        - {t: "noch", n: "noch"}
+        - {t: "unterwegs", n: "unterwegs"}
+        - {t: "und", n: "und"}
+        - {t: "wandert, —", n: "wandert"}
+        - {t: "es", n: "es"}
+        - {t: "ist", n: "ist"}
+        - {t: "noch", n: "noch"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "bis", n: "bis"}
+        - {t: "zu", n: "zu"}
+        - {t: "den", n: "den"}
+        - {t: "Ohren", n: "Ohren"}
+        - {t: "der", n: "der"}
+        - {t: "Menschen", n: "Menschen"}
+        - {t: "gedrungen.", n: "gedrungen"}
+      - tokens:
+        - {t: "Blitz", n: "Blitz"}
+        - {t: "und", n: "und"}
+        - {t: "Donner", n: "Donner"}
+        - {t: "brauchen", n: "brauchen"}
+        - {t: "Zeit,", n: "Zeit"}
+        - {t: "das", n: "das"}
+        - {t: "Licht", n: "Licht"}
+        - {t: "der", n: "der"}
+        - {t: "Gestirne", n: "Gestirne"}
+        - {t: "braucht", n: "braucht"}
+        - {t: "Zeit,", n: "Zeit"}
+        - {t: "Thaten", n: "Taten"}
+        - {t: "brauchen", n: "brauchen"}
+        - {t: "Zeit,", n: "Zeit"}
+        - {t: "auch", n: "auch"}
+        - {t: "nachdem", n: "nachdem"}
+        - {t: "sie", n: "sie"}
+        - {t: "gethan", n: "getan"}
+        - {t: "sind,", n: "sind"}
+        - {t: "um", n: "um"}
+        - {t: "gesehen", n: "gesehen"}
+        - {t: "und", n: "und"}
+        - {t: "gehört", n: "gehört"}
+        - {t: "zu", n: "zu"}
+        - {t: "werden.", n: "werden"}
+      - tokens:
+        - {t: "Diese", n: "Diese"}
+        - {t: "That", n: "Tat"}
+        - {t: "ist", n: "ist"}
+        - {t: "ihnen", n: "ihnen"}
+        - {t: "immer", n: "immer"}
+        - {t: "noch", n: "noch"}
+        - {t: "ferner,", n: "ferner"}
+        - {t: "als", n: "als"}
+        - {t: "die", n: "die"}
+        - {t: "fernsten", n: "fernsten"}
+        - {t: "Gestirne, —", n: "Gestirne"}
+        - {t: "und", n: "und"}
+        - {t: "doch", n: "doch"}
+        - {t: "haben", n: "haben"}
+        - {t: "sie", n: "sie"}
+        - {t: "dieselbe", n: "dieselbe"}
+        - {t: "gethan!“ —", n: "getan"}
+      - tokens:
+        - {t: "Man", n: "Man"}
+        - {t: "erzählt", n: "erzählt"}
+        - {t: "noch,", n: "noch"}
+        - {t: "dass", n: "dass"}
+        - {t: "der", n: "der"}
+        - {t: "tolle", n: "tolle"}
+        - {t: "Mensch", n: "Mensch"}
+        - {t: "des", n: "des"}
+        - {t: "selbigen", n: "selbigen"}
+        - {t: "Tages", n: "Tages"}
+        - {t: "in", n: "in"}
+        - {t: "verschiedene", n: "verschiedene"}
+        - {t: "Kirchen", n: "Kirchen"}
+        - {t: "eingedrungen", n: "eingedrungen"}
+        - {t: "sei", n: "sei"}
+        - {t: "und", n: "und"}
+        - {t: "darin", n: "darin"}
+        - {t: "sein", n: "sein"}
+        - {t: "Requiem", n: "Requiem"}
+        - {t: "aeternam", n: "aeternam"}
+        - {t: "deo", n: "deo"}
+        - {t: "angestimmt", n: "angestimmt"}
+        - {t: "habe.", n: "habe"}
+      - tokens:
+        - {t: "Hinausgeführt", n: "Hinausgeführt"}
+        - {t: "und", n: "und"}
+        - {t: "zur", n: "zur"}
+        - {t: "Rede", n: "Rede"}
+        - {t: "gesetzt,", n: "gesetzt"}
+        - {t: "habe", n: "habe"}
+        - {t: "er", n: "er"}
+        - {t: "immer", n: "immer"}
+        - {t: "nur", n: "nur"}
+        - {t: "diess", n: "dies"}
+        - {t: "entgegnet:", n: "entgegnet"}
+      - tokens:
+        - {t: "„Was", n: "Was"}
+        - {t: "sind", n: "sind"}
+        - {t: "denn", n: "denn"}
+        - {t: "diese", n: "diese"}
+        - {t: "Kirchen", n: "Kirchen"}
+        - {t: "noch,", n: "noch"}
+        - {t: "wenn", n: "wenn"}
+        - {t: "sie", n: "sie"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "die", n: "die"}
+        - {t: "Grüfte", n: "Grüfte"}
+        - {t: "und", n: "und"}
+        - {t: "Grabmäler", n: "Grabmäler"}
+        - {t: "Gottes", n: "Gottes"}
+        - {t: "sind?“ —", n: "sind"}

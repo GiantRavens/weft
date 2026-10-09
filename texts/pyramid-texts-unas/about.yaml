@@ -1,0 +1,37 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: pyramid-texts-unas
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: parent
+wikipedia:
+  title: Pyramid Texts
+  lang: en
+  revision: 1369704891
+  url: https://en.wikipedia.org/w/index.php?title=Pyramid_Texts&oldid=1369704891
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Pyramid Texts” (en.wikipedia.org, revision 1369704891), CC
+    BY-SA 4.0
+  lead: The Pyramid Texts are the oldest ancient Egyptian funerary texts, dating to the late Old Kingdom.
+    They are the earliest known corpus of ancient Egyptian religious texts. Written in Old Egyptian, the
+    Pyramid Texts were carved onto the subterranean walls and sarcophagi of pyramids at Saqqara from the
+    end of the Fifth Dynasty, and throughout the Sixth Dynasty of the Old Kingdom, and into the Eighth
+    Dynasty of the First Intermediate Period. The oldest of the texts have been dated to c. 2400–2300
+    BCE.
+wikidata:
+  id: Q645882
+  revision: 2464010555
+  license: CC0
+  description: corpus of ancient Egyptian religious texts dating to the Old Kingdom in Old Egyptian, carved
+    onto the subterranean walls and sarcophagi of pyramids at Saqqara
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q2986441
+    label: ancient Egyptian funerary texts
+  - id: Q1999796
+    label: incantation
+  main_subject:
+  - id: Q447131
+    label: religion of ancient Egypt

@@ -1,0 +1,24 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: runes-kylver
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Kylver Stone
+  lang: en
+  revision: 1341117728
+  url: https://en.wikipedia.org/w/index.php?title=Kylver_Stone&oldid=1341117728
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Kylver Stone” (en.wikipedia.org, revision 1341117728), CC BY-SA
+    4.0
+  lead: The Kylver stone, listed in the Rundata catalog as runic inscription G 88, is a Swedish runestone
+    which dates from about 400 AD. It is notable for its listing of each of the runes in the Elder Futhark.
+wikidata:
+  id: Q1795104
+  revision: 2433439734
+  license: CC0
+  description: 5th-century runestone in Sweden
+  instance_of:
+  - id: Q24566025
+    label: Norse runestone

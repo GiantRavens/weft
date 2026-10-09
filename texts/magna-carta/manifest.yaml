@@ -3,6 +3,7 @@ title: Magna Carta
 author: King John and the barons, Runnymede
 language: lat
 kind: law
+wikipedia: {title: "Magna Carta", match: work}
 prefix: mc                       # mc.<chapter>.<line>[.<token>]
 urn: urn:weft:lat:magna-carta-1215   # Weft-local identifier
 unit: section

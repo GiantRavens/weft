@@ -1,0 +1,28 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: marcus-meditations
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Meditations
+  lang: en
+  revision: 1370141510
+  url: https://en.wikipedia.org/w/index.php?title=Meditations&oldid=1370141510
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Meditations” (en.wikipedia.org, revision 1370141510), CC BY-SA
+    4.0
+  lead: 'Meditations (Koine Greek: Τὰ εἰς ἑαυτόν, romanized: Ta eis heauton, lit. ''''Things Unto Himself'''')
+    is a collection of personal writings by Marcus Aurelius, Roman Emperor from 161–180 AD, which record
+    his private notes to himself and his reflections on Stoic philosophy.'
+wikidata:
+  id: Q1152283
+  revision: 2549123253
+  license: CC0
+  description: essay by Marcus Aurelius
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  main_subject:
+  - id: Q48235
+    label: stoicism

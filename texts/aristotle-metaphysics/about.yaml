@@ -1,0 +1,35 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: aristotle-metaphysics
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Metaphysics (Aristotle)
+  lang: en
+  revision: 1365953324
+  url: https://en.wikipedia.org/w/index.php?title=Metaphysics_%28Aristotle%29&oldid=1365953324
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Metaphysics (Aristotle)” (en.wikipedia.org, revision 1365953324),
+    CC BY-SA 4.0
+  lead: 'Metaphysics (Greek: τὰ μετὰ τὰ φυσικά, "those after the physics"; Latin: Metaphysica) is one
+    of the principal works of Aristotle, in which he develops the doctrine that he calls First Philosophy.
+    The work is a compilation of various texts treating abstract subjects, notably substance theory, different
+    kinds of causation, form and matter, the existence of mathematical objects and the cosmos, which together
+    constitute much of the branch of philosophy later known as metaphysics.'
+wikidata:
+  id: Q661655
+  revision: 2542981538
+  license: CC0
+  description: work by Aristotle
+  instance_of:
+  - id: Q47461344
+    label: written work
+  genre:
+  - id: Q384515
+    label: treatise
+  main_subject:
+  - id: Q35277
+    label: metaphysics
+  - id: Q3855427
+    label: Aristotelian metaphysics

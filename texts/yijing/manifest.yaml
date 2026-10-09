@@ -4,6 +4,7 @@ author: anonymous; traditionally King Wen of Zhou (the judgments) and the Duke o
 language: lzh
 lang_name: "Old Chinese (Western Zhou)"
 kind: philosophy
+wikipedia: {title: "I Ching", match: work}
 prefix: yj                       # yj.<hexagram>.<line>[.<char>]; line 1 = name and judgment, lines 2-7 = line statements, bottom first
 urn: urn:weft:lzh:zhouyi         # no CTS URN for Chinese texts; Weft-local identifier
 unit: section

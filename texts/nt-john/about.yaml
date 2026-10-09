@@ -1,0 +1,34 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: nt-john
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Gospel of John
+  lang: en
+  revision: 1379227794
+  url: https://en.wikipedia.org/w/index.php?title=Gospel_of_John&oldid=1379227794
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Gospel of John” (en.wikipedia.org, revision 1379227794), CC
+    BY-SA 4.0
+  lead: The Gospel of John is the fourth gospel of the canonical Gospels in the New Testament. The first
+    section of the gospel presents a short introduction followed by a schematic account of the ministry
+    of Jesus, with seven signs that culminate in the raising of Lazarus and validate the truth of his
+    words. The second part of the text portrays the final week of Jesus’s life, recounting the Farewell
+    Discourse and the passion and resurrection narratives.
+wikidata:
+  id: Q36766
+  revision: 2553248611
+  license: CC0
+  description: one of the four canonical gospels in the New Testament
+  instance_of:
+  - id: Q34274
+    label: Gospel
+  - id: Q29154430
+    label: book of the Bible
+  - id: Q47461344
+    label: written work
+  genre:
+  - id: Q34274
+    label: Gospel

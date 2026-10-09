@@ -1,0 +1,60 @@
+work: nietzsche-zarathustra
+split_from: nietzsche            # was one page with its sibling works; line IDs kept
+title: "Nietzsche, Also sprach Zarathustra (1883): Zarathustra's Vorrede, section 1"
+short_title: "Also sprach Zarathustra"
+author: Friedrich Nietzsche (1844–1900)
+language: de
+lang_name: German of the 1880s           # shown on the page and in the library instead of "German"
+kind: philosophy
+wikipedia: {title: "Thus Spoke Zarathustra", match: work}
+prefix: nz                        # nz.<section>.<line>[.<token>]; the line IDs of the page this work was split from
+urn: urn:weft:de:nietzsche   # kept from the page this work was split from, so line citations stay valid
+unit: section
+section_noun: passage
+written: {year: 1883, display: "1883", label: "the first part was printed at Chemnitz by Ernst Schmeitzner in 1883"}
+status: phase-0
+pilot: {sections: [za1]}
+edition:
+  id: nietzsche-firsteds
+  name: "Weft's edition of Also sprach Zarathustra, [first part] (Chemnitz: Ernst Schmeitzner, 1883), Zarathustra's Vorrede, section 1, pages 5-6, in the spelling of the first edition, as transcribed by the Deutsches Textarchiv (nietzsche_zarathustra01_1883)"
+  format: weft-edition
+  file: edition.yaml
+  license: "Nietzsche's text is public domain; the Deutsches Textarchiv transcription is CC BY-SA 4.0; Weft's line division, modern spellings and annotation CC BY-SA 4.0"
+treebank: null                    # no treebank for 19th-century German prose of this kind; lemma, morphology and gloss by hand, draft
+schemes: [northern, modern]       # default = educated northern German before the stage norm, here the 1880s (approximate)
+scheme_labels:
+  northern: "Educated German of the 1880s: Nietzsche's day (approximate)"
+  modern: "Modern Standard German"
+sources_extra:
+  - id: dta-za1883
+    name: "Friedrich Nietzsche, Also sprach Zarathustra. Ein Buch für Alle und Keinen [Teil 1] (Chemnitz: Schmeitzner, 1883), Deutsches Textarchiv TEI (nietzsche_zarathustra01_1883), as captured by the Internet Archive on 2024-08-03 (the DTA site now serves downloads only to browsers)"
+    file: sources/dta-za1883.xml
+    url: "https://web.archive.org/web/20240803174743id_/https://www.deutschestextarchiv.de/book/download_xml/nietzsche_zarathustra01_1883"
+    sha256: 6feb1f17390d3f5550334efa7abd1f4de631ab5905b600b79da77b5c2891ffc5
+    license: "public domain text; DTA transcription CC BY-SA 4.0 (licence statement in the TEI header)"
+    license_url: https://creativecommons.org/licenses/by-sa/4.0/
+translations:
+  - id: common1909
+    translator: Thomas Common
+    year: 1909
+    form: "prose, Thus Spake Zarathustra: A Book for All and None, volume 11 of The Complete Works of Friedrich Nietzsche, ed. Oscar Levy (1909); Project Gutenberg #1998"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/common-pg1998.txt
+    url: https://www.gutenberg.org/cache/epub/1998/pg1998.txt
+    sha256: b15af49b26b9329c52b8de3567d047312360d9afde964182e70ce260e125a72c
+  - id: tille1896
+    translator: Alexander Tille
+    year: 1896
+    form: "prose, Thus Spake Zarathustra: A Book for All and None (New York and London: Macmillan, 1896), volume 8 of The Works of Friedrich Nietzsche, ed. Alexander Tille; the first English translation. Internet Archive OCR (thusspakezarathu00nietiala), corrected for line-end hyphens and spacing (see the file header)"
+    license: public-domain
+    license_url: https://archive.org/details/thusspakezarathu00nietiala
+    file: sources/tille1896.txt
+    url: https://archive.org/download/thusspakezarathu00nietiala/thusspakezarathu00nietiala_djvu.txt
+    sha256: 3fabf3f35f4156e21e73ee51903cdd361d8c35e9ac7cb7fa5dfef00cd983b9cb
+predicted_gaps:
+  - "the Vorrede is verified against the Deutsches Textarchiv transcription of the 1883 print, fetched from an Internet Archive capture because the DTA site no longer serves plain downloads"
+  - "the pronunciation of educated German in the 1880s is reconstructed from the descriptions of northern educated speech before the stage norm of 1898; Nietzsche's own speech (he grew up in the Prussian province of Saxony and was schooled at Schulpforta) is not described closely enough to model, and its regional features are not modelled; the value of postvocalic r and of long ä is uncertain"
+  - "the sound is computed from the modern spelling of each word form; the spelling gieng carries no sound difference from ging"
+  - "no treebank; lemma, morphology and gloss by hand, draft"
+  - "two public-domain English translations (Tille, 1896; Common, 1909)"

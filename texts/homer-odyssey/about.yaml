@@ -1,0 +1,38 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: homer-odyssey
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Odyssey
+  lang: en
+  revision: 1378786303
+  url: https://en.wikipedia.org/w/index.php?title=Odyssey&oldid=1378786303
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Odyssey” (en.wikipedia.org, revision 1378786303), CC BY-SA
+    4.0
+  lead: 'The Odyssey (, ODD-iss-ee; Ancient Greek: Ὀδύσσεια, romanized: Odýsseia [odyˈsːeːˌja]) is one
+    of two major epics of ancient Greek literature attributed to Homer. It is one of the oldest surviving
+    works of literature and remains popular with modern audiences. Like the Iliad, the Odyssey is divided
+    into 24 books. It follows the heroic king of Ithaca, Odysseus, also known by the Latin variant Ulysses,
+    and his homecoming journey after the ten-year-long Trojan War. His journey from Troy to Ithaca lasts
+    an additional ten years, during which time he encounters many perils and all of his crewmates are
+    killed. In Odysseus''s long absence, he is presumed dead, leaving his wife Penelope and son Telemachus
+    to contend with a group of unruly suitors competing for Penelope''s hand in marriage.'
+wikidata:
+  id: Q35160
+  revision: 2552378719
+  license: CC0
+  description: epic poem attributed to Homer
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q37484
+    label: epic poem
+  - id: Q21802675
+    label: adventure fiction
+  main_subject:
+  - id: Q7317385
+    label: Returns from Troy

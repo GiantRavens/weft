@@ -1,0 +1,31 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: tanakh-daniel
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Belshazzar's feast
+  lang: en
+  revision: 1373926397
+  url: https://en.wikipedia.org/w/index.php?title=Belshazzar%27s_feast&oldid=1373926397
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Belshazzar's feast” (en.wikipedia.org, revision 1373926397),
+    CC BY-SA 4.0
+  lead: 'The story of Belshazzar''s feast (the writing on the wall) is contained in chapter 5 of the Book
+    of Daniel. In the story, Neo-Babylonian royal Belshazzar holds a feast and drinks from vessels looted
+    from the First Temple. A hand appears and writes on the wall and Belshazzar calls for his wise men,
+    but they cannot read the writing. The queen advises him to send for Daniel, who reminds Belshazzar
+    about Nebuchadnezzar''s arrogance and subsequent humiliation (Daniel 4). Daniel reads and interprets
+    the message: God has numbered Belshazzar''s days, he has been weighed and found wanting, and his kingdom
+    will be given to the Medes and the Persians.'
+wikidata:
+  id: Q4884683
+  revision: 2553041791
+  license: CC0
+  description: Bible story in the Book of Daniel
+  instance_of:
+  - id: Q856663
+    label: Bible story
+  - id: Q29154515
+    label: chapter of the Bible

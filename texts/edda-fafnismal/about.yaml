@@ -1,0 +1,25 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: edda-fafnismal
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Fáfnismál
+  lang: en
+  revision: 1324461880
+  url: https://en.wikipedia.org/w/index.php?title=F%C3%A1fnism%C3%A1l&oldid=1324461880
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Fáfnismál” (en.wikipedia.org, revision 1324461880), CC BY-SA
+    4.0
+  lead: Fáfnismál (Fáfnir's sayings) is an Eddic poem, found in the Codex Regius manuscript. The poem
+    is unnamed in the manuscript, where it follows Reginsmál and precedes Sigrdrífumál, but modern scholars
+    regard it as a separate poem and have assigned it a name for convenience.
+wikidata:
+  id: Q1478663
+  revision: 2546755792
+  license: CC0
+  description: Eddic poem
+  instance_of:
+  - id: Q24457192
+    label: eddic poem

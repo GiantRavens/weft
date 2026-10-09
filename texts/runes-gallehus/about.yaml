@@ -1,0 +1,31 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: runes-gallehus
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Golden Horns of Gallehus
+  lang: en
+  revision: 1379049745
+  url: https://en.wikipedia.org/w/index.php?title=Golden_Horns_of_Gallehus&oldid=1379049745
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Golden Horns of Gallehus” (en.wikipedia.org, revision 1379049745),
+    CC BY-SA 4.0
+  lead: 'The Golden Horns of Gallehus were two horns made of sheet gold, discovered in Gallehus, north
+    of Møgeltønder in Southern Jutland, Denmark.
+
+
+    The horns dated to the early 5th century, i.e. the beginning of the Germanic Iron Age.'
+wikidata:
+  id: Q1394096
+  revision: 2550157187
+  license: CC0
+  description: archaeological artefact
+  instance_of:
+  - id: Q192771
+    label: drinking horn
+  - id: Q10855061
+    label: archaeological find
+  - id: Q220659
+    label: archaeological artefact

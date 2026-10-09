@@ -1,0 +1,39 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: tanakh-genesis
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Book of Genesis
+  lang: en
+  revision: 1378152197
+  url: https://en.wikipedia.org/w/index.php?title=Book_of_Genesis&oldid=1378152197
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Book of Genesis” (en.wikipedia.org, revision 1378152197), CC
+    BY-SA 4.0
+  lead: 'The Book of Genesis (from Greek Γένεσις, Génesis, ''Origin''; Biblical Hebrew: בְּרֵאשִׁית, romanized:
+    Bərēʾšīṯ, lit. ''In [the] Beginning''; Latin: Liber Genesis) is the first book of the Hebrew Bible
+    and the Christian Old Testament. The Hebrew name bereshit (''in the beginning'') is taken directly
+    from the first word. The primary narrative of Genesis includes a legendary account of the creation
+    of the world, the early history of the human race, and the origins of the Jewish people. In Judaism,
+    the theological importance of Genesis centers on the covenants linking God to his chosen people and
+    the people to the Promised Land.'
+wikidata:
+  id: Q9184
+  revision: 2549173058
+  license: CC0
+  description: first book of the Bible
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  - id: Q29154430
+    label: book of the Bible
+  genre:
+  - id: Q179461
+    label: religious text
+  main_subject:
+  - id: Q170835
+    label: cosmogony
+  - id: Q961603
+    label: Jewish history

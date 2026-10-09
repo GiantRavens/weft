@@ -1,0 +1,29 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: persian-rubaiyat
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Rubaiyat of Omar Khayyam
+  lang: en
+  revision: 1377020693
+  url: https://en.wikipedia.org/w/index.php?title=Rubaiyat_of_Omar_Khayyam&oldid=1377020693
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Rubaiyat of Omar Khayyam” (en.wikipedia.org, revision 1377020693),
+    CC BY-SA 4.0
+  lead: The Rubáiyát of Omar Khayyám is an 1859 translation from Persian to English by Edward FitzGerald
+    of a selection of quatrains (rubāʿiyāt) attributed to Omar Khayyam (1048–1131), dubbed "the Astronomer-Poet
+    of Persia".
+wikidata:
+  id: Q1059358
+  revision: 2551359859
+  license: CC0
+  description: Persian poetry. Omar Khayyam’s robāʿiyyāt (“quatrains”). Also Persian-English quatrains
+    translations by Edward Fitzgerald.
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q250090
+    label: ruba'i

@@ -48,6 +48,7 @@ Later layers: metre, notes, audio. Layers are named, never numbered.
     texts/<work>/gen/            machine output, fully regenerable
     texts/<work>/curated/        human overlay, sparse, wins on conflict
     texts/<work>/notes/          harvested and authored commentary
+    texts/<work>/about.yaml      what the work is: Wikipedia lead and Wikidata subjects (weft about)
         private/                     your own layer: licensed material and private works, never committed
     pipeline/                    the lifecycle steps as CLI commands
     site/                        renderer
@@ -77,7 +78,7 @@ server, so a page or the whole folder can be sent as an attachment.
 
 ## Status
 
-Sixty-one works built across twenty-six languages, oldest first in the library:
+Seventy-nine works built across twenty-seven languages, oldest first in the library:
 
 | Work | Passage | Schemes | Translations |
 |---|---|---|---|
@@ -112,7 +113,9 @@ Sixty-one works built across twenty-six languages, oldest first in the library:
 | Snorri, Gylfaginning (Prose Edda) | chapters 5-8, the making of the world from Ymir; 49, the death of Baldr | Old Norse (about 1220), modern Icelandic | Brodeur 1916, Anderson 1880 |
 | Li Bai, Quiet Night Thought | 4 lines | Tang, Mandarin, Cantonese | Cranmer-Byng 1909 |
 | Tirukkural | chapter 1, kurals 1-10 | Old Tamil (reconstructed), modern | Pope 1886, Drew 1840 |
-| Runic inscriptions: Kylver, Gallehus, Rök | 3 inscriptions | Proto-Norse, Old East Norse | Stephens 1884; Weft editorial reading |
+| The Kylver stone (G 88) | the earliest complete futhark, about 400 | Proto-Norse | Weft editorial reading |
+| The golden horn of Gallehus (DR 12) | the maker's inscription, about 400 | Proto-Norse | Stephens 1884; Weft editorial reading |
+| The Rök runestone (Ög 136) | the opening, about 800 | Old East Norse | Stephens 1884; Weft editorial reading |
 | Beowulf | 1-11 | late West Saxon | Gummere 1910, Morris and Wyatt 1895 |
 | Rubaiyat, quatrains attributed to Omar Khayyam | 6 quatrains | Early New Persian (about 1100), modern Persian | FitzGerald 1889, Heron-Allen 1899 |
 | Marco Polo, on Cipangu (Japan) | the whole chapter, F text | Franco-Italian: French of about 1300, and an Italian reader's reading | Yule 1903, Marsden 1818 |
@@ -144,12 +147,16 @@ Sixty-one works built across twenty-six languages, oldest first in the library:
 | Olympe de Gouges, Declaration of the Rights of Woman and of the Female Citizen | the preamble and all seventeen articles (1791), in the pamphlet's spelling | Paris reading of 1791, modern | Weft editorial (draft); Levy, Applewhite and Johnson 1979 cited |
 | Rouget de Lisle, La Marseillaise | the six couplets and the refrain of the Chant de guerre pour l'Armée du Rhin (1792), in Fiaux's 1918 printing of the 1792 text | Paris reading of 1792, modern | Weft editorial (draft); the English singing version 'Ye sons of France' (1795, couplets 1-2) |
 | Marx and Engels, Manifest der Kommunistischen Partei | the opening, the first lines of section I, the ten measures and the closing call (London, 1848), in the first printing's spelling | educated German of the 1840s, modern | Samuel Moore 1888 (Kerr edition, 1910) |
-| Verdi: the Brindisi and Iago's Credo | 'Libiam ne' lieti calici' from La traviata (Piave, 1853) and 'Credo in un Dio crudel' from Otello (Boito, 1887) | stage Italian of Verdi's day, modern | Weft editorial (draft); Macfarren and Hueffer cited |
+| Verdi, La traviata: the Brindisi | 'Libiam ne' lieti calici' (Piave, 1853) | stage Italian of Verdi's day, modern | Weft editorial (draft); Macfarren cited |
+| Verdi, Otello: Iago's Credo | 'Credo in un Dio crudel' and the lines before it (Boito, 1887) | stage Italian of Verdi's day, modern | Weft editorial (draft); Hueffer cited |
 | Einstein, Is the inertia of a body dependent on its energy content? | the whole three-page note of 1905, its eight equations shown as equations, each with the words a physicist says for it | educated German of 1905, modern | Weft editorial (draft); Perrett and Jeffery 1923 cited |
-| Kant: What is Enlightenment? and the starry heavens | 1784 essay, opening; 1788 Critique of Practical Reason, conclusion | northern German before 1898, modern German | Richardson 1798, Abbott |
-| Science in Latin: Descartes, Newton | cogito (1644); laws of motion (1687) | as first read (French, English manner), classical | Veitch 1853, Motte 1729 |
+| Kant, Was ist Aufklärung? | the 1784 essay, opening | northern German before 1898, modern German | Richardson 1798 |
+| Kant, Critik der practischen Vernunft | the 1788 conclusion, first paragraph (the starry heavens) | northern German before 1898, modern German | Abbott |
+| Descartes, Principia philosophiae | part 1, section 7, the cogito (1644) | as first read (French manner), classical | Veitch 1853 |
+| Newton, Principia | the three laws of motion (1687) | as first read (English manner), classical | Motte 1729 |
 | Swahili tales from Zanzibar: The Kites and the Crows | the whole tale (Steere 1870) | Zanzibar Swahili about 1870, modern standard | Steere 1870 |
-| Nietzsche: the madman and Zarathustra's descent | Gay Science 125 (1882); Zarathustra, prologue 1 (1883) | northern German before 1898, modern German | Common 1909 and 1910, Tille 1896 |
+| Nietzsche, Die fröhliche Wissenschaft | §125, the madman (1882) | northern German before 1898, modern German | Common 1910 |
+| Nietzsche, Also sprach Zarathustra | the Vorrede, section 1 (1883) | northern German before 1898, modern German | Tille 1896, Common 1909 |
 | General Act of the Berlin Conference | the preamble, chapter I (free trade in the Congo basin) and articles 34-35 (effective occupation) | diplomatic French of 1885, modern | Hertslet's Foreign Office translation, American Journal of International Law 1909 |
 | Zamenhof, the Unua Libro specimens | the Lord's Prayer, Mi'a pens'o, El Heine and Ho, mi'a kor’ (1887), in the print's divided spelling; the first invented language in the public library | as Zamenhof described it | Weft editorial (draft); the King James prayer |
 | Haiku of Bashō | 9 haiku, 1680-1694 | Edo (1680s-90s), modern | Chamberlain 1902, Aston 1899, Hearn 1898 and 1900, Noguchi 1914; Yuasa 1966 cited |
@@ -157,7 +164,7 @@ Sixty-one works built across twenty-six languages, oldest first in the library:
 
 Homer, Ovid, John, Grettis saga and the Rigveda take lemma and grammar from treebanks (AGDT, LDT, MorphGNT, IcePaHC, the Vedic Treebank); Aristotle, Epictetus and Marcus Aurelius from GLAUx, an automatic parse, corrected by hand where it errs; Genesis and the Aramaic of Daniel 5 from the Open Scriptures Hebrew Bible; Li Bai from the Kyoto Classical Chinese treebank, with Tang readings from Unicode's Unihan database. No open
 treebank covers Eddic or Old English poetry or runic inscriptions, so Hávamál, the complete Völuspá, Þrymskviða, Fáfnismál, Snorri's Gylfaginning, Beowulf and the
-runes are hand-annotated and marked draft (see CLAUDE.md rule 3). The runic page adds a script
+runes are hand-annotated and marked draft (see CLAUDE.md rule 3). The runic pages add a script
 row, generated from the transliteration, and a labelled Weft translation where no public-domain
 modern one exists. The Rigveda page reads the accent strokes of the Devanagari back into pitch
 accents, checks them against the transliteration, and computes the gāyatrī metre.

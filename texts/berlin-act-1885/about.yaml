@@ -1,0 +1,33 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: berlin-act-1885
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: parent
+wikipedia:
+  title: Berlin Conference
+  lang: en
+  revision: 1379242830
+  url: https://en.wikipedia.org/w/index.php?title=Berlin_Conference&oldid=1379242830
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Berlin Conference” (en.wikipedia.org, revision 1379242830),
+    CC BY-SA 4.0
+  lead: The Berlin Conference of 1884–1885 was a meeting of colonial powers that concluded with the signing
+    of the General Act of Berlin, an agreement regulating European colonisation and trade in Africa during
+    the New Imperialism period. The conference of fourteen countries was organised by Otto von Bismarck,
+    the first chancellor of Germany, at the request of Leopold II of Belgium at a building (No. 77, now
+    No. 92) on Berlin's central Wilhelmstrasse. It met on 15 November 1884 and, after an adjournment,
+    concluded on 26 February 1885 with the signing of the General Act. During the conference, attendees
+    also discussed other related issues and agreed on a common framework for the recognition of European
+    ''effective occupation'' of African coastal territory elsewhere on the continent. After the conference,
+    European claims on African territory increased with international legal recognition, having a newly
+    established legal framework for establishing colonies.
+wikidata:
+  id: Q13582
+  revision: 2527437239
+  license: CC0
+  description: international conference that regulated the distribution of European colonization and trade
+    in Africa
+  instance_of:
+  - id: Q18564543
+    label: international conference

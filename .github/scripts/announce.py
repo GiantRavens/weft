@@ -94,6 +94,9 @@ def classify(base: str, head: str, works: dict) -> tuple[list[dict], list[dict]]
         m = re.match(r"texts/([^/]+)/", path)
         if m and m.group(1) in works:
             lines[m.group(1)] += (0 if a == "-" else int(a)) + (0 if d == "-" else int(d))
+    # a work split from an older page (manifest split_from) is the same text under a new address, not a new work
+    split = {w for w in added if w in works and manifest_field(git("show", f"{head}:texts/{w}/manifest.yaml"), "split_from")}
+    added -= split
     new = [dict(works[w], lines=lines[w]) for w in added if w in works]
     upd = [dict(works[w], lines=n) for w, n in lines.items() if w not in added and n >= UPDATE_MIN]
     by_size = lambda xs: sorted(xs, key=lambda x: -x["lines"])

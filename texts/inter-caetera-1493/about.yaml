@@ -1,0 +1,31 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: inter-caetera-1493
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Inter caetera
+  lang: en
+  revision: 1367216393
+  url: https://en.wikipedia.org/w/index.php?title=Inter_caetera&oldid=1367216393
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Inter caetera” (en.wikipedia.org, revision 1367216393), CC
+    BY-SA 4.0
+  lead: Inter caetera ('Among other [works]') was a papal bull issued by Pope Alexander VI on 4 May 1493,
+    which granted to the Catholic Monarchs King Ferdinand II of Aragon and Queen Isabella I of Castile
+    all lands to the "west and south" of a pole-to-pole line 100 leagues west and south of any of the
+    islands of the Azores or the Cape Verde islands.
+wikidata:
+  id: Q1134342
+  revision: 2489002486
+  license: CC0
+  description: papal bull by Alexander VI (4 May 1493) which granted to the Catholic Kings Ferdinand II
+    of Aragon and Isabella I of Castile all lands to the "west and south" of a line 100 leagues west and
+    south of any of the islands of the Azores or of Cape Verde
+  instance_of:
+  - id: Q189867
+    label: papal bull
+  main_subject:
+  - id: Q127834
+    label: New World

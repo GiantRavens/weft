@@ -1,0 +1,32 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: montaigne-essais
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Essays (Montaigne)
+  lang: en
+  revision: 1368043761
+  url: https://en.wikipedia.org/w/index.php?title=Essays_%28Montaigne%29&oldid=1368043761
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Essays (Montaigne)” (en.wikipedia.org, revision 1368043761),
+    CC BY-SA 4.0
+  lead: 'The Essays (French: Essais, pronounced [esɛ]) of Michel de Montaigne are contained in three books
+    and 107 chapters of varying length. They were originally written in Middle French and published in
+    the Kingdom of France. Montaigne''s stated design in writing, publishing and revising the Essays over
+    the period from approximately 1570 to 1592 was to record "some traits of my character and of my humours."
+    The Essays were first published in 1580 and cover a wide range of topics.'
+wikidata:
+  id: Q624852
+  revision: 2515875465
+  license: CC0
+  description: work by Michel de Montaigne
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q4184
+    label: autobiography
+  - id: Q35760
+    label: essay

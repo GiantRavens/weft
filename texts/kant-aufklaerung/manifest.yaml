@@ -1,0 +1,53 @@
+work: kant-aufklaerung
+split_from: kant            # was one page with its sibling works; line IDs kept
+title: "Kant, Beantwortung der Frage: Was ist Aufklärung? (1784), the opening"
+short_title: "Was ist Aufklärung?"
+author: Immanuel Kant (1724–1804)
+language: de
+lang_name: German of the 1780s           # shown on the page and in the library instead of "German"
+kind: philosophy
+wikipedia: {title: "What Is Enlightenment?", match: work}
+prefix: kant                      # kant.<section>.<line>[.<token>]; the line IDs of the page this work was split from
+urn: urn:weft:de:kant   # kept from the page this work was split from, so line citations stay valid
+unit: section
+section_noun: passage
+written: {year: 1784, display: "1784", label: "dated Königsberg, 30 September 1784, and printed in the Berlinische Monatsschrift for December 1784"}
+status: phase-0
+pilot: {sections: [auf]}
+edition:
+  id: kant-firsteds
+  name: "Weft's edition of the opening of Beantwortung der Frage: Was ist Aufklärung?, Berlinische Monatsschrift 4 (1784), Zwölftes Stück (December), pages 481-482, in the spelling of the first printing, as transcribed on German Wikisource (revision 3778353, from the Bielefeld University Library scan)"
+  format: weft-edition
+  file: edition.yaml
+  license: "Kant's text is public domain; the Wikisource transcription is CC BY-SA 4.0; Weft's line division, modern spellings and annotation CC BY-SA 4.0"
+treebank: null                    # no treebank for 18th-century German prose; lemma, morphology and gloss by hand, draft
+schemes: [northern, modern]       # default = educated northern German before the stage norm, here Königsberg in the 1780s (approximate)
+scheme_labels:
+  northern: "Educated Königsberg German of the 1780s: Kant's day (approximate)"
+  modern: "Modern Standard German"
+sources_extra:
+  - id: wikisource-aufklaerung
+    name: "Beantwortung der Frage: Was ist Aufklärung?, German Wikisource, revision 3778353 (2021-05-14), wiki source text; transcribes the Berlinische Monatsschrift, Bd. 4, 1784, S. 481-494"
+    file: sources/wikisource-aufklaerung.txt
+    url: "https://de.wikisource.org/w/index.php?title=Beantwortung_der_Frage:_Was_ist_Aufkl%C3%A4rung%3F&oldid=3778353&action=raw"
+    sha256: 6b18418f10703cdaac92bce1ddf21079d4f2dc3a904575a766d29bd86bf426a2
+    license: public domain (PD-old); Wikisource CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0/
+translations:
+  - id: richardson1798
+    translator: John Richardson
+    year: 1798
+    form: "prose, 'Answer to the question, What is Enlightening?', in Essays and Treatises on Moral, Political, and Various Philosophical Subjects, by Emanuel Kant (London, 1798), volume 1, pages 3-4; the first English translation of the essay. Internet Archive OCR of a Google scan, corrected against the page images (see the file header)"
+    license: public-domain
+    license_url: https://archive.org/details/essaysandtreati01kantgoog
+    file: sources/richardson1798.txt
+    url: https://archive.org/download/essaysandtreati01kantgoog/essaysandtreati01kantgoog_djvu.txt
+    sha256: 3ea1ef81904d0ab0455f94eaaaae628a672606170fcf15a9455dd62b7ad4801c
+predicted_gaps:
+  - "the text is verified against the Wikisource transcription of the 1784 print, not against the page images; Wikisource prints ß and umlauts where the Fraktur print has them, and long s as s"
+  - "the print's 'u. s. w.' is one token, u.s.w., because the Wikisource text joins its parts with non-breaking spaces"
+  - "the pronunciation of educated Königsberg German in the 1780s is reconstructed from later descriptions of northern educated speech before the stage norm of 1898; no description of Kant's own speech specific enough to model has been used; the value of postvocalic r and of long ä is uncertain"
+  - "the sound is computed from the modern spelling of each word form; the spellings Muth, Theil and seyn carry no sound difference"
+  - "the Latin of the text (Sapere aude, naturaliter majorennes) is given in the German school pronunciation of Latin"
+  - "no treebank; lemma, morphology and gloss by hand, draft"
+  - "one English translation: Richardson's of 1798 (the modern translations are in copyright)"

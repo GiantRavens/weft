@@ -1,0 +1,18 @@
+run:
+  weft: 0.1.0
+  sections:
+  - za1
+counts:
+  lines: 14
+  tokens: 260
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- the Vorrede is verified against the Deutsches Textarchiv transcription of the 1883 print, fetched from an Internet Archive capture because the DTA site no longer serves plain downloads
+- the pronunciation of educated German in the 1880s is reconstructed from the descriptions of northern educated speech before the stage norm of 1898; Nietzsche's own speech (he grew up in the Prussian province
+  of Saxony and was schooled at Schulpforta) is not described closely enough to model, and its regional features are not modelled; the value of postvocalic r and of long ä is uncertain
+- the sound is computed from the modern spelling of each word form; the spelling gieng carries no sound difference from ging
+- no treebank; lemma, morphology and gloss by hand, draft
+- two public-domain English translations (Tille, 1896; Common, 1909)

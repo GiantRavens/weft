@@ -1,0 +1,35 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: nt-1corinthians-13
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: 1 Corinthians 13
+  lang: en
+  revision: 1370022828
+  url: https://en.wikipedia.org/w/index.php?title=1_Corinthians_13&oldid=1370022828
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “1 Corinthians 13” (en.wikipedia.org, revision 1370022828),
+    CC BY-SA 4.0
+  lead: '1 Corinthians 13 is the thirteenth chapter of the First Epistle to the Corinthians in the New
+    Testament of the Christian Bible. Authored by Paul the Apostle at Ephesus in the mid-50s AD, it is
+    a sustained praise of love (ἀγάπη, agapē), the word rendered "charity" in the King James Version and
+    "love" in most other English translations. The chapter stands at the centre of Paul''s discussion
+    of spiritual gifts in chapters 12 to 14: Paul argues that no gift, however impressive, has any value
+    without love, and that love, unlike the gifts, will never end.'
+wikidata:
+  id: Q128195
+  revision: 2552381120
+  license: CC0
+  description: chapter of the New Testament
+  instance_of:
+  - id: Q179461
+    label: religious text
+  - id: Q29154515
+    label: chapter of the Bible
+  main_subject:
+  - id: Q456673
+    label: charity
+  - id: Q18401779
+    label: Faith, Hope and Charity

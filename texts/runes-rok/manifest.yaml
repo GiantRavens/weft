@@ -1,0 +1,45 @@
+work: runes-rok
+split_from: runes            # was one page with its sibling works; line IDs kept
+title: "The Rök runestone (Ög 136): the opening"
+author: "Varinn, who names himself as the carver, for his dead son Væmōð"
+language: runic
+prefix: run                      # run.<inscription>.<line>[.<token>]
+urn: urn:weft:runic:anthology   # kept from the page this work was split from, so line citations stay valid
+unit: inscription
+written: {year: 800, display: "c. 800", label: "carved about 800 at Rök, Östergötland"}
+status: phase-0
+pilot: {inscriptions: [rok]}
+edition:
+  id: weft-runic
+  name: "Weft edition of the standard transliteration, cited to Rundata (Ög 136)"
+  format: weft-edition
+  file: edition.yaml              # committed with the work: short factual readings, no download
+  license: CC BY-SA 4.0
+treebank: null                   # no treebank exists for runic inscriptions; hand annotation, draft
+sound_confidence: low              # the page invites specialists to correct the sound guide or record it
+lang_name: "Proto-Norse and Old Norse (runic)"
+kind: correspondence
+wikipedia: {title: "Rök runestone", match: work}
+schemes: [as-carved]             # each inscription in the language of its own date
+translations:
+  - id: stephens1884
+    translator: George Stephens
+    year: 1884
+    form: word-for-word, with a free rendering; readings now superseded
+    license: public-domain
+    license_url: https://archive.org/details/cu31924026355499
+    file: sources/stephens1884.txt
+    url: https://archive.org/download/cu31924026355499/cu31924026355499_djvu.txt
+    sha256: 6a6fbb66b9749da318bf849204ab5552cb7e22f622e4c0c200fa71d14573cacc
+  - id: weft-editorial
+    translator: Weft editorial translation of the modern reading (draft)
+    year: 2026
+    form: literal
+    kind: editorial                # Weft's own words, not a published translation
+    license: CC BY-SA 4.0
+predicted_gaps:
+  - "runes do not mark vowel length or many consonant contrasts: sound comes from each word's normalization"
+  - "no public-domain modern translation exists; Stephens (1884) is public domain but his reading is superseded, so a labelled Weft translation of the modern reading sits beside it"
+  - "Stephens is quoted from the scanned page (the OCR text garbles words); spans were checked against page 36 of the scan"
+  - "Rök uses short-twig runes; Unicode short-twig forms stand in for the carved shapes"
+  - "only the opening of the inscription; the rest of the stone, the longest runic text known, is not yet in the edition"

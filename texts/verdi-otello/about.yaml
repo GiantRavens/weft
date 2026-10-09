@@ -1,0 +1,27 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: verdi-otello
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Otello
+  lang: en
+  revision: 1370124892
+  url: https://en.wikipedia.org/w/index.php?title=Otello&oldid=1370124892
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Otello” (en.wikipedia.org, revision 1370124892), CC BY-SA 4.0
+  lead: 'Otello (Italian pronunciation: [oˈtɛllo]) is an opera in four acts by Giuseppe Verdi to an Italian
+    libretto by Arrigo Boito, based on Shakespeare''s play Othello. It was Verdi''s penultimate opera,
+    first performed at the Teatro alla Scala, Milan, on 5 February 1887.'
+wikidata:
+  id: Q172324
+  revision: 2535049904
+  license: CC0
+  description: opera by Giuseppe Verdi
+  instance_of:
+  - id: Q58483083
+    label: dramatico-musical work
+  genre:
+  - id: Q1344
+    label: opera

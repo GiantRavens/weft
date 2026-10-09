@@ -1,0 +1,40 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: rigveda-1-1
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: parent
+wikipedia:
+  title: Rigveda
+  lang: en
+  revision: 1379167949
+  url: https://en.wikipedia.org/w/index.php?title=Rigveda&oldid=1379167949
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Rigveda” (en.wikipedia.org, revision 1379167949), CC BY-SA
+    4.0
+  lead: 'The Rigveda or Rig Veda (Sanskrit: ऋग्वेद, IAST: ṛgvedá, from ऋच्, "praise" and वेद, "knowledge")
+    is an ancient Indian collection of Vedic Sanskrit hymns (sūktas). It is one of the four sacred canonical
+    Hindu texts (śruti) known as the Vedas. Only one Shakha of the many survive today, namely the Śakalya
+    Shakha. Much of the contents contained in the remaining Shakhas are now lost or are not available
+    in the public forum.'
+wikidata:
+  id: Q727413
+  revision: 2532454957
+  license: CC0
+  description: most ancient Veda of the Hindus
+  instance_of:
+  - id: Q1194040
+    label: Hindu text
+  - id: Q63203971
+    label: religious hymn
+  - id: Q47148
+    label: Śruti
+  - id: Q1295240
+    label: miscellany
+  - id: Q2668072
+    label: collection
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q12617225
+    label: religious literature

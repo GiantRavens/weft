@@ -1,0 +1,29 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: pico-oration
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Oration on the Dignity of Man
+  lang: en
+  revision: 1335590410
+  url: https://en.wikipedia.org/w/index.php?title=Oration_on_the_Dignity_of_Man&oldid=1335590410
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Oration on the Dignity of Man” (en.wikipedia.org, revision
+    1335590410), CC BY-SA 4.0
+  lead: 'The Oration on the Dignity of Man (Latin: Oratio de hominis dignitate) is a public discourse
+    composed in 1486 by Pico della Mirandola, an Italian scholar and philosopher of the Renaissance. It
+    remained unpublished until 1496. The Pico Project–a collaboration between the University of Bologna
+    and Brown University–and others have called it the "Manifesto of the Renaissance".'
+wikidata:
+  id: Q2085760
+  revision: 2550027958
+  license: CC0
+  description: public discourse by Giovanni Pico della Mirandola
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q384515
+    label: treatise

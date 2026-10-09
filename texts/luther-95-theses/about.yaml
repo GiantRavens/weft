@@ -1,0 +1,34 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: luther-95-theses
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Ninety-five Theses
+  lang: en
+  revision: 1378374690
+  url: https://en.wikipedia.org/w/index.php?title=Ninety-five_Theses&oldid=1378374690
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Ninety-five Theses” (en.wikipedia.org, revision 1378374690),
+    CC BY-SA 4.0
+  lead: The Ninety-five Theses or Disputation on the Power and Efficacy of Indulgences is a list of propositions
+    for an academic disputation written in 1517 by Martin Luther, then a professor of moral theology at
+    the University of Wittenberg, Germany. The Theses are retrospectively considered to have launched
+    the Protestant Reformation and the birth of Protestantism, despite various quasi- or proto-Protestant
+    groups having existed previously.
+wikidata:
+  id: Q157506
+  revision: 2543377440
+  license: CC0
+  description: disputation by Martin Luther on indulgences
+  instance_of:
+  - id: Q234460
+    label: text
+  - id: Q49848
+    label: document
+  - id: Q13418847
+    label: historical event
+  main_subject:
+  - id: Q44777
+    label: indulgence

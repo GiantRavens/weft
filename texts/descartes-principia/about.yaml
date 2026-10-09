@@ -1,0 +1,27 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: descartes-principia
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Principles of Philosophy
+  lang: en
+  revision: 1371389920
+  url: https://en.wikipedia.org/w/index.php?title=Principles_of_Philosophy&oldid=1371389920
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Principles of Philosophy” (en.wikipedia.org, revision 1371389920),
+    CC BY-SA 4.0
+  lead: 'Principles of Philosophy (Latin: Principia Philosophiae) is a book by the French philosopher
+    and scientist René Descartes. In essence, it is a synthesis of the Discourse on Method and Meditations
+    on First Philosophy. It was written in Latin, published in 1644 and dedicated to Elisabeth of Bohemia,
+    with whom Descartes had a long-standing friendship. A French version (Les Principes de la Philosophie)
+    followed in 1647.'
+wikidata:
+  id: Q1195384
+  revision: 2515896872
+  license: CC0
+  description: book by Descartes
+  instance_of:
+  - id: Q7725634
+    label: literary work

@@ -4,6 +4,7 @@ author: "Mark, translated from Greek into Sahidic Coptic by an unknown translato
 language: cop
 lang_name: Sahidic Coptic
 kind: scripture
+wikipedia: {title: "Gospel of Mark", match: parent}
 prefix: mk                       # mk.1.<verse>[.<token>]
 urn: urn:weft:cop:nt.mark.sahidic   # Weft-local identifier
 unit: verse

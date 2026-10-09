@@ -1,0 +1,32 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: ovid-metamorphoses
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Metamorphoses
+  lang: en
+  revision: 1375882658
+  url: https://en.wikipedia.org/w/index.php?title=Metamorphoses&oldid=1375882658
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Metamorphoses” (en.wikipedia.org, revision 1375882658), CC
+    BY-SA 4.0
+  lead: 'The Metamorphoses (Latin: Metamorphoses, from Ancient Greek μεταμορφώσεις [metamorphṓseis], lit. ''Transformations'')
+    is a Latin narrative poem from 8 CE by the Roman poet Ovid. It is considered his magnum opus. The
+    poem chronicles the history of the world from its creation to the deification of Julius Caesar in
+    a mythico-historical framework comprising over 250 myths, 15 books, and 11,995 lines.'
+wikidata:
+  id: Q184742
+  revision: 2555325591
+  license: CC0
+  description: narrative poem by Ovid
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q37484
+    label: epic poem
+  main_subject:
+  - id: Q122173
+    label: Roman mythology

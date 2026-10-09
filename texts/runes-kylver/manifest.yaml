@@ -1,0 +1,33 @@
+work: runes-kylver
+split_from: runes            # was one page with its sibling works; line IDs kept
+title: "The Kylver stone (G 88)"
+author: "Unknown carver, Gotland"
+language: runic
+prefix: run                      # run.<inscription>.<line>[.<token>]
+urn: urn:weft:runic:anthology   # kept from the page this work was split from, so line citations stay valid
+unit: inscription
+written: {year: 400, display: "c. 400", label: "carved on Gotland about 400: the earliest complete futhark"}
+status: phase-0
+pilot: {inscriptions: [kylver]}
+edition:
+  id: weft-runic
+  name: "Weft edition of the standard transliteration, cited to Rundata (G 88)"
+  format: weft-edition
+  file: edition.yaml              # committed with the work: short factual readings, no download
+  license: CC BY-SA 4.0
+treebank: null                   # no treebank exists for runic inscriptions; hand annotation, draft
+sound_confidence: low              # the page invites specialists to correct the sound guide or record it
+lang_name: "Proto-Norse and Old Norse (runic)"
+kind: correspondence
+wikipedia: {title: "Kylver Stone", match: work}
+schemes: [as-carved]             # each inscription in the language of its own date
+translations:
+  - id: weft-editorial
+    translator: Weft editorial translation of the modern reading (draft)
+    year: 2026
+    form: literal
+    kind: editorial                # Weft's own words, not a published translation
+    license: CC BY-SA 4.0
+predicted_gaps:
+  - "the futhark is a row of letters, not words: each rune's lemma is its reconstructed Proto-Germanic name, and the gloss is that name's meaning"
+  - "no published translation applies: Stephens (1884) predates the stone's discovery in 1903, so the only translation is a labelled Weft reading (draft)"

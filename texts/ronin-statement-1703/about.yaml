@@ -1,0 +1,29 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: ronin-statement-1703
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: author
+wikipedia:
+  title: Forty-seven rōnin
+  lang: en
+  revision: 1376202714
+  url: https://en.wikipedia.org/w/index.php?title=Forty-seven_r%C5%8Dnin&oldid=1376202714
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Forty-seven rōnin” (en.wikipedia.org, revision 1376202714),
+    CC BY-SA 4.0
+  lead: The revenge of the forty-seven rōnin (四十七士, Shijūshichishi), also known as the Akō incident (赤穂事件,
+    Akō jiken) or Akō vendetta, was a historical event in Japan in which a band of rōnin (lordless samurai)
+    avenged the death of their former master on 31 January 1703. The incident has since become legendary.
+    It is among the three major vengeance (adauchi 仇討ち) incidents in Japan, along with the Revenge of
+    the Soga Brothers and the Igagoe vendetta.
+wikidata:
+  id: Q822472
+  revision: 2528820557
+  license: CC0
+  description: 18th century samurai battle
+  instance_of:
+  - id: Q44342
+    label: legend
+  - id: Q11499675
+    label: katakiuchi

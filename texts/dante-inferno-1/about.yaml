@@ -1,0 +1,36 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: dante-inferno-1
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Inferno (Dante)
+  lang: en
+  revision: 1377738444
+  url: https://en.wikipedia.org/w/index.php?title=Inferno_%28Dante%29&oldid=1377738444
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Inferno (Dante)” (en.wikipedia.org, revision 1377738444), CC
+    BY-SA 4.0
+  lead: 'Inferno (Italian: [iɱˈfɛrno]; Italian for ''Hell'') is the first part of the Italian writer Dante
+    Alighieri''s 14th-century narrative poem the Divine Comedy, followed by Purgatorio and Paradiso. The
+    Inferno describes the journey of a fictionalised version of Dante himself through Hell, guided by
+    the ancient Roman poet Virgil. In the poem, Hell is depicted as nine concentric circles of torment
+    located within the Earth; it is the "realm [...] of those who have rejected spiritual values by yielding
+    to bestial appetites or violence, or by perverting their human intellect to fraud or malice against
+    their fellowmen". As an allegory, the Divine Comedy represents the journey of the soul toward God,
+    with the Inferno describing the recognition and rejection of sin.'
+wikidata:
+  id: Q4509219
+  revision: 2487974674
+  license: CC0
+  description: first part of Dante Alighieri's "Divine Comedy"
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q37484
+    label: epic poem
+  main_subject:
+  - id: Q564
+    label: hell

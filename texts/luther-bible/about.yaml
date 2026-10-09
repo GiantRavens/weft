@@ -1,0 +1,31 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: luther-bible
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Luther Bible
+  lang: en
+  revision: 1378888451
+  url: https://en.wikipedia.org/w/index.php?title=Luther_Bible&oldid=1378888451
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Luther Bible” (en.wikipedia.org, revision 1378888451), CC BY-SA
+    4.0
+  lead: 'The Luther Bible (German: Lutherbibel) is a German language Bible translation by the Protestant
+    reformer Martin Luther. A New Testament translation by Luther was first published in September 1522;
+    the completed Bible contained 75 books, including the Old Testament, Apocrypha and New Testament,
+    which was printed in 1534. Luther continued to make improvements to the text until 1545. It was one
+    of the first full translations of the Bible into German that used not only the Latin Vulgate but the
+    original Hebrew and Greek.'
+wikidata:
+  id: Q1571095
+  revision: 2550915277
+  license: CC0
+  description: German-language translation of the Bible by Martin Luther
+  instance_of:
+  - id: Q3997226
+    label: Bible translation into German
+  genre:
+  - id: Q179461
+    label: religious text

@@ -4,6 +4,7 @@ author: Unknown priestly authors; carved for King Unas, last king of the Fifth D
 language: egy
 lang_name: Old Egyptian
 kind: scripture
+wikipedia: {title: "Pyramid Texts", match: parent}
 prefix: pt                       # pt.<utterance>.<line>[.<token>]: Sethe's utterance number; line k is Unas column 495+k
 urn: urn:weft:egy:pyramidtexts.unas   # Weft-local identifier
 unit: section

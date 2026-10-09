@@ -7,6 +7,39 @@ from pathlib import Path
 from .build import assemble
 
 
+def check_about(wd: Path, manifest: dict, bad) -> None:
+    """The manifest's wikipedia field and the about.yaml `weft about` wrote from it. A bad field or a
+    malformed record fails; an article named but not yet fetched, or none to fetch, is a warning, so the
+    gap stays in view until the about is fetched or written by hand."""
+    import yaml
+    from . import about
+    try:
+        w = about.field(manifest)
+    except ValueError as e:
+        bad("wikipedia-field", str(e))
+        return
+    if w is None:
+        bad("wikipedia-unnamed", "add wikipedia: {title, match} to the manifest (weft about <work> --suggest)", warn=True)
+        return
+    p = wd / "about.yaml"
+    if w["match"] == "none":
+        bad("about-none", "no article fits: write the about by hand", warn=True)
+        return
+    if not p.exists():
+        bad("about-not-fetched", "run weft about " + wd.name, warn=True)
+        return
+    rec = yaml.safe_load(p.read_text()) or {}
+    wp, wdat = rec.get("wikipedia") or {}, rec.get("wikidata") or {}
+    if rec.get("work") != manifest.get("work"):
+        bad("about-wrong-work", f"{rec.get('work')!r}")
+    if rec.get("match") != w["match"]:
+        bad("about-stale", f"about.yaml has match {rec.get('match')!r}, the manifest {w['match']!r}: rerun weft about")
+    if not wp.get("lead") or not isinstance(wp.get("revision"), int) or "oldid=" not in str(wp.get("url")) or not wp.get("attribution"):
+        bad("about-incomplete", "lead, revision, url and attribution are all required")
+    if wdat and not about.QID.match(str(wdat.get("id"))):
+        bad("about-bad-qid", str(wdat.get("id")))
+
+
 def run(repo: Path, work: str) -> dict:
     from .paths import work_dir
     data = assemble(work_dir(repo, work))
@@ -25,6 +58,7 @@ def run(repo: Path, work: str) -> dict:
 
     if manifest.get("kind") not in KINDS:
         bad("manifest-kind", f"{manifest.get('kind')!r}; one of {', '.join(KINDS)}")
+    check_about(work_dir(repo, work), manifest, bad)
     ids, line_ids, order = set(), [], {}
     ntok = 0
     for i, line in enumerate(data["lines"]):
@@ -79,5 +113,6 @@ def run(repo: Path, work: str) -> dict:
         if gaps and not partial:            # a translation declared partial may skip lines
             bad("sense-gap", f"{s['tr']} {gaps[:3]}")
     return {"work": work, "lines": len(line_ids), "tokens": ntok,
+            "about": (manifest.get("wikipedia") or {}).get("match", "unnamed"),
             "translations": len(data["sense"]), "notes": len(data["notes"]),
             "problems": dict(problems), "warnings": dict(warnings), "samples": samples, "ok": not problems}

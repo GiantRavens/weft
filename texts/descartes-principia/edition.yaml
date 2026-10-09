@@ -1,0 +1,13 @@
+# Weft edition of Descartes's statement of the cogito (Principia philosophiae, 1644, part 1, section 7), in the Latin its author published. Each section is checked
+# verbatim against its source by `weft draft`, and carries the French reading dialect of the author's
+# country (see pipeline/weft/latin.py, as-first-read).
+sections:
+  - id: descartes
+    title: "Descartes, Principles of Philosophy (1644), part 1, section 7"
+    dialect: french
+    verify_in: sources/descartes1644-la.txt
+    lines:
+      - "repugnat enim, ut putemus id quod cogitat, eo ipso tempore quo cogitat, non existere."
+      - "Ac proinde haec cognitio:"
+      - "Ego cogito, ergo sum"
+      - "est omnium prima et certissima, quae cuilibet ordine philosophanti occurrat."

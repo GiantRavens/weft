@@ -3,6 +3,7 @@ title: Haiku of Bashō (古池や and others)
 author: Matsuo Bashō (1644–1694)
 language: ja
 kind: poetry
+wikipedia: {title: "Matsuo Bashō", match: author}
 prefix: ba                       # ba.<year>[a-d].<line>[.<token>]; the frog poem keeps ba.1686.*
 urn: urn:weft:ja:basho.furuike   # Weft-local identifier
 unit: section

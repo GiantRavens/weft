@@ -1,0 +1,59 @@
+work: verdi-traviata
+split_from: verdi-libretti            # was one page with its sibling works; line IDs kept
+title: "Verdi, La traviata (1853): the Brindisi, Libiam ne' lieti calici"
+short_title: "La traviata"
+author: "Francesco Maria Piave (1810-1876), librettist, for Giuseppe Verdi (1813-1901)"
+language: it
+lang_name: Italian of the opera house
+kind: poetry
+wikipedia: {title: "La traviata", match: work}
+prefix: vl
+urn: urn:weft:it:verdi.traviata-otello.numbers   # kept from the page this work was split from, so line citations stay valid
+unit: section
+section_noun: speech
+written: {year: 1853, display: "1853", label: "libretto by Piave after Dumas, first sung at La Fenice, Venice, 6 March 1853"}
+status: phase-0
+pilot: {sections: [alfredo1, tutti1, violetta1, tutti2, violetta2, alfredo2, violetta3, alfredo3]}
+edition:
+  id: ws-libretti
+  name: "La traviata, libretto (Milan: Ricordi), Pagina:La traviata.djvu/7, Italian Wikisource, revision 2430585 (validated); the librettist's spelling kept"
+  format: weft-edition
+  file: edition.yaml
+  license: "text public domain (Piave d. 1876); Wikisource transcription CC BY-SA 4.0; Weft line division CC BY-SA 4.0"
+treebank: null
+schemes:
+- florentine
+- modern
+scheme_labels:
+  florentine: 'Stage Italian of Verdi''s day: the Florentine-based standard the singers were taught (approximate)'
+  modern: Standard modern Italian
+quantities: pipeline/weft/data/it_lexicon.yaml
+sound_confidence: medium
+sources_extra:
+- id: ws-traviata-p7
+  name: Pagina:La traviata.djvu/7, Italian Wikisource, revision 2430585 (validated)
+  file: sources/traviata-p7.txt
+  url: https://it.wikisource.org/w/index.php?oldid=2430585&action=raw
+  sha256: 7774f92235a6f1fdd2b320869862db83134f0404915ed51a5cfa5e02c451dd33
+  license: text public domain; Wikisource transcription CC BY-SA 4.0
+  license_url: https://it.wikisource.org/wiki/La_traviata
+translations:
+- id: weft-editorial
+  kind: editorial
+  translator: Weft editorial translation, draft
+  year: 2026
+  form: prose, speech by speech, close to the Italian
+  license: CC BY-SA 4.0
+- id: macfarren
+  kind: reference
+  translator: Natalia Macfarren
+  year: 1870
+  title: 'La traviata, vocal score with English version (London: Novello)'
+  publisher: Novello
+  note: the Victorian singing version (Macfarren d. 1916); a free text fitted to the music, cited, not printed
+predicted_gaps:
+  - "one number from the opera, not the libretto: the Brindisi"
+  - "no treebank covers the libretti: lemma, morphology and gloss are by hand (UD Italian conventions), draft"
+  - "the sound is the Florentine-based standard the opera house taught, read from the work's own lexicon; the singers' regional accents and the sung vowels (open on high notes) are not modelled"
+  - "the text is a validated scan page of the Ricordi libretto"
+  - "the Victorian singing version (Macfarren) is cited and not printed: in copyright by life + 70"

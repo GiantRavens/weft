@@ -1,0 +1,25 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: nt-matthew-beatitudes
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Beatitudes
+  lang: en
+  revision: 1377033759
+  url: https://en.wikipedia.org/w/index.php?title=Beatitudes&oldid=1377033759
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Beatitudes” (en.wikipedia.org, revision 1377033759), CC BY-SA
+    4.0
+  lead: The Beatitudes () are eight or nine blessings recounted by Jesus in Matthew 5:3–10 within the
+    Sermon on the Mount in the Gospel of Matthew, and four in the Sermon on the Plain in the Gospel of
+    Luke, followed by four woes which mirror the blessings.
+wikidata:
+  id: Q51643
+  revision: 2552705962
+  license: CC0
+  description: part of Jesus’ sermon on the mount
+  instance_of:
+  - id: Q7725634
+    label: literary work

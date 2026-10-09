@@ -4,6 +4,7 @@ author: "The plenipotentiaries of fourteen states at the Berlin Conference (15 N
 language: fr
 lang_name: French, diplomatic
 kind: law
+wikipedia: {title: "Berlin Conference", match: parent}
 prefix: ba                        # ba.<section>.<line>[.<token>]; sections pre, dec, a1-a5, a34, a35
 urn: urn:weft:fr:berlin.acte-general.1885-02-26   # Weft-local identifier
 unit: section

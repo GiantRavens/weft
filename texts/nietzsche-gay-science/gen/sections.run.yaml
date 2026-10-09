@@ -1,0 +1,21 @@
+run:
+  weft: 0.1.0
+  sections:
+  - fw125
+counts:
+  lines: 34
+  tokens: 514
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- §125 is read from the scan of the 1882 print and checked against the e-rara OCR, not against a proofread transcription; one token (um, line 24) carries the OCR's reading because the OCR reads a speck
+  on the page as a full stop
+- the 1882 print sets emphasis by letter-spacing (Der tolle Mensch, Wir haben ihn getödtet, und doch haben sie dieselbe gethan); the edition does not mark it
+- the pronunciation of educated German in the 1880s is reconstructed from the descriptions of northern educated speech before the stage norm of 1898; Nietzsche's own speech (he grew up in the Prussian province
+  of Saxony and was schooled at Schulpforta) is not described closely enough to model, and its regional features are not modelled; the value of postvocalic r and of long ä is uncertain
+- the sound is computed from the modern spelling of each word form; the spellings todt and That carry no sound difference from tot and Tat, but diess may stand for a short vowel where modern dies has a
+  long one
+- no treebank; lemma, morphology and gloss by hand, draft
+- one public-domain English translation (Common, 1910)

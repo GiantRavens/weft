@@ -1,0 +1,34 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: verdi-traviata
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: La traviata
+  lang: en
+  revision: 1377547941
+  url: https://en.wikipedia.org/w/index.php?title=La_traviata&oldid=1377547941
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “La traviata” (en.wikipedia.org, revision 1377547941), CC BY-SA
+    4.0
+  lead: 'La traviata (Italian: [la traviˈaːta, -aˈvjaː-]; The Wayward Woman) is an opera in three acts
+    by Giuseppe Verdi set to an Italian libretto by Francesco Maria Piave. It is based on La Dame aux
+    camélias (1852), a play by Alexandre Dumas fils, which he adapted from his own 1848 novel. The opera
+    was originally titled Violetta, after the main character. It was first performed on 6 March 1853 at
+    La Fenice opera house in Venice.'
+wikidata:
+  id: Q186162
+  revision: 2554962459
+  license: CC0
+  description: opera by Giuseppe Verdi
+  instance_of:
+  - id: Q58483083
+    label: dramatico-musical work
+  - id: Q785522
+    label: Italian opera
+  genre:
+  - id: Q80930
+    label: tragedy
+  - id: Q1344
+    label: opera

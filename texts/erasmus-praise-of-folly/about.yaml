@@ -1,0 +1,33 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: erasmus-praise-of-folly
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: In Praise of Folly
+  lang: en
+  revision: 1361391829
+  url: https://en.wikipedia.org/w/index.php?title=In_Praise_of_Folly&oldid=1361391829
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “In Praise of Folly” (en.wikipedia.org, revision 1361391829),
+    CC BY-SA 4.0
+  lead: 'In Praise of Folly, also translated as The Praise of Folly (Latin: Stultitiae Laus or Moriae
+    Encomium), is an oration written in Latin in 1509 by Desiderius Erasmus of Rotterdam and first printed
+    in June 1511. Inspired by previous works of the Italian humanist Faustino Perisauli''s De Triumpho
+    Stultitiae, it is a spiralling satirical attack on all aspects of human life, not ignoring superstitions
+    and religious corruption, but with a pivot into an orthodox religious purpose.'
+wikidata:
+  id: Q569869
+  revision: 2534191860
+  license: CC0
+  description: 1509 essay by Desiderius Erasmus
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q128758
+    label: satire
+  main_subject:
+  - id: Q5891
+    label: philosophy

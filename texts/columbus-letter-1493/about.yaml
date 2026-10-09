@@ -1,0 +1,29 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: columbus-letter-1493
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Columbus's letter on the first voyage
+  lang: en
+  revision: 1352083379
+  url: https://en.wikipedia.org/w/index.php?title=Columbus%27s_letter_on_the_first_voyage&oldid=1352083379
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Columbus's letter on the first voyage” (en.wikipedia.org, revision
+    1352083379), CC BY-SA 4.0
+  lead: A letter written by Christopher Columbus on 15 February 1493, is the first known document announcing
+    the completion of his first voyage across the Atlantic, which set out in 1492 and reached the Americas.
+    The letter was ostensibly written by Columbus himself, aboard the caravel Niña, on the return leg
+    of his voyage. A postscript was added upon his arrival in Lisbon on 4 March 1493, and it was probably
+    from there that Columbus dispatched two copies of his letter to the Spanish court.
+wikidata:
+  id: Q3825721
+  revision: 2555006553
+  license: CC0
+  description: 1493 Columbus letter on the first voyage
+  instance_of:
+  - id: Q133492
+    label: letter
+  - id: Q3331189
+    label: version, edition or translation

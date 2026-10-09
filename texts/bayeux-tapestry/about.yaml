@@ -1,0 +1,27 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: bayeux-tapestry
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Bayeux Tapestry tituli
+  lang: en
+  revision: 1375979759
+  url: https://en.wikipedia.org/w/index.php?title=Bayeux_Tapestry_tituli&oldid=1375979759
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Bayeux Tapestry tituli” (en.wikipedia.org, revision 1375979759),
+    CC BY-SA 4.0
+  lead: The Bayeux Tapestry tituli are Medieval Latin captions embroidered on the Bayeux Tapestry, which
+    describe the 58 scenes portrayed on the tapestry. These help describe the main events depicted, which
+    lead up to the Norman conquest of England concerning William, Duke of Normandy, and Harold, Earl of
+    Wessex, later King of England, culminating in the Battle of Hastings. The tituli, composed of 2,226
+    characters and symbols, is the longest known text of its kind.
+wikidata:
+  id: Q4874488
+  revision: 2517063586
+  license: CC0
+  description: captions on the Bayeux Embroidery
+  instance_of:
+  - id: Q1438140
+    label: titulus

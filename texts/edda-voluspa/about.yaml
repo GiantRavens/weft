@@ -1,0 +1,37 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: edda-voluspa
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Völuspá
+  lang: en
+  revision: 1315226517
+  url: https://en.wikipedia.org/w/index.php?title=V%C3%B6lusp%C3%A1&oldid=1315226517
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Völuspá” (en.wikipedia.org, revision 1315226517), CC BY-SA
+    4.0
+  lead: 'Völuspá (also Vǫluspá, Vǫlospá, or Vǫluspǫ́; Old Norse: ''Prophecy of the völva, a seeress'')
+    is the best known poem of the Poetic Edda. It dates back to the tenth century and tells the story
+    from Norse Mythology of the creation of the world, its coming end, and its subsequent rebirth that
+    is related to the audience by a völva addressing Odin. Her name is given twice as Heiðr. The poem
+    is one of the most important primary sources for the study of Norse mythology. Parts of the poem appear
+    in the Prose Edda, but the earliest known wholly preserved version of the poem is in the Codex Regius
+    and Hauksbók manuscripts.'
+wikidata:
+  id: Q940563
+  revision: 2550199994
+  license: CC0
+  description: poem from the Poetic Edda
+  instance_of:
+  - id: Q24457192
+    label: eddic poem
+  genre:
+  - id: Q3481604
+    label: Fornyrðislag
+  - id: Q474090
+    label: narrative poetry
+  main_subject:
+  - id: Q128285
+    label: Norse mythology

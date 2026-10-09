@@ -1,0 +1,36 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: nietzsche-gay-science
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: The Gay Science
+  lang: en
+  revision: 1376150793
+  url: https://en.wikipedia.org/w/index.php?title=The_Gay_Science&oldid=1376150793
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “The Gay Science” (en.wikipedia.org, revision 1376150793), CC
+    BY-SA 4.0
+  lead: 'The Gay Science (German: Die fröhliche Wissenschaft; sometimes translated as The Joyful Wisdom
+    or The Joyous Science) is a book by Friedrich Nietzsche published in 1882, and was followed by a second
+    edition in 1887, after the completion of Thus Spoke Zarathustra and Beyond Good and Evil. This substantial
+    expansion includes the addition of a fifth book to the existing four books of The Gay Science, as
+    well as an appendix of songs. It was described by Nietzsche as "the most personal of all my books",
+    and contains more poems than any of his other works.'
+wikidata:
+  id: Q1061693
+  revision: 2489372646
+  license: CC0
+  description: book by Friedrich Nietzsche
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q5891
+    label: philosophy
+  main_subject:
+  - id: Q192614
+    label: God is dead
+  - id: Q2002653
+    label: amor fati

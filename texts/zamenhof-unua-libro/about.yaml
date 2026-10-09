@@ -1,0 +1,33 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: zamenhof-unua-libro
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Unua Libro
+  lang: en
+  revision: 1378292583
+  url: https://en.wikipedia.org/w/index.php?title=Unua_Libro&oldid=1378292583
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Unua Libro” (en.wikipedia.org, revision 1378292583), CC BY-SA
+    4.0
+  lead: 'Dr. Esperanto''s International Language (Russian: Международный язык), commonly referred to as
+    Unua Libro (First Book), is an 1887 book by L. L. Zamenhof, in which he first introduced and described
+    the constructed language Esperanto. First published in Russian on 26 July [O.S. 14 July] 1887, the
+    publication of Unua Libro marks the formal beginning of the Esperanto movement.'
+wikidata:
+  id: Q81413
+  revision: 2517065811
+  license: CC0
+  description: pamphlet by L. L. Zamenhof, first published in 1887 in Russian and subsequently in other
+    languages, introducing the language Esperanto for the first time
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q83790
+    label: textbook
+  main_subject:
+  - id: Q143
+    label: Esperanto

@@ -1,0 +1,27 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: edda-havamal
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Hávamál
+  lang: en
+  revision: 1370002198
+  url: https://en.wikipedia.org/w/index.php?title=H%C3%A1vam%C3%A1l&oldid=1370002198
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Hávamál” (en.wikipedia.org, revision 1370002198), CC BY-SA
+    4.0
+  lead: Hávamál ("Words of Hávi [the High One]" in Old Norse) is presented as a single poem in the Codex
+    Regius, a collection of Old Norse poems from the Viking age. A scholarly estimate of Hávamál's age
+    dates the poem to between 900 and 1000 A.D. The poem, itself a combination of numerous shorter poems,
+    is largely gnomic, presenting advice for living, proper conduct and wisdom. It is considered an important
+    source of Old Norse philosophy.
+wikidata:
+  id: Q1359571
+  revision: 2536589604
+  license: CC0
+  description: poem in the Poetic Edda
+  instance_of:
+  - id: Q24457192
+    label: eddic poem

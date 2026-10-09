@@ -1,0 +1,29 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: petrarch-canzoniere-1
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Il Canzoniere
+  lang: en
+  revision: 1269748254
+  url: https://en.wikipedia.org/w/index.php?title=Il_Canzoniere&oldid=1269748254
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Il Canzoniere” (en.wikipedia.org, revision 1269748254), CC
+    BY-SA 4.0
+  lead: 'Il Canzoniere (Italian pronunciation: [il kantsoˈnjɛːre]; English: Song Book), also known as
+    the Rime Sparse (English: Scattered Rhymes), but originally titled Rerum vulgarium fragmenta (English:
+    Fragments of common things, that is Fragments composed in vernacular), is a collection of poems written
+    in the Italian language by Petrarch.'
+wikidata:
+  id: Q777574
+  revision: 2534867845
+  license: CC0
+  description: poetry anthology by Petrarch
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q11690026
+    label: chansonnier

@@ -1,0 +1,28 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: edda-thrymskvida
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Þrymskviða
+  lang: en
+  revision: 1375465685
+  url: https://en.wikipedia.org/w/index.php?title=%C3%9Erymskvi%C3%B0a&oldid=1375465685
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Þrymskviða” (en.wikipedia.org, revision 1375465685), CC BY-SA
+    4.0
+  lead: Þrymskviða (Þrym's Poem; the name can be anglicised as Thrymskviða, Thrymskvitha, Thrymskvidha
+    or Thrymskvida) is one of the best known poems from the Poetic Edda. The Norse myth had enduring popularity
+    in Scandinavia and continued to be told and sung in several forms until the 19th century.
+wikidata:
+  id: Q2276114
+  revision: 2529148225
+  license: CC0
+  description: poem
+  instance_of:
+  - id: Q24457192
+    label: eddic poem
+  main_subject:
+  - id: Q2727213
+    label: theft

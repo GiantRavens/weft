@@ -1,0 +1,31 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: basho-furuike
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: author
+wikipedia:
+  title: Matsuo Bashō
+  lang: en
+  revision: 1371370484
+  url: https://en.wikipedia.org/w/index.php?title=Matsuo_Bash%C5%8D&oldid=1371370484
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Matsuo Bashō” (en.wikipedia.org, revision 1371370484), CC BY-SA
+    4.0
+  lead: 'Matsuo Bashō (松尾 芭蕉; Japanese pronunciation: [ma.tsɯ.o (|) ba.ɕoː], 1644 – November 28, 1694);
+    born Matsuo Kinsaku (松尾 金作), later known as Matsuo Chūemon Munefusa (松尾 忠右衛門 宗房) was the most famous
+    Japanese poet of the Edo period. During his lifetime, Bashō was recognized for his works in the collaborative
+    haikai no renga form; today, after centuries of commentary, he is recognized as the greatest master
+    of haiku (then called hokku). He is also well known for his travel essays beginning with Records of
+    a Weather-Exposed Skeleton (1684), written after his journey west to Kyoto and Nara.'
+wikidata:
+  id: Q5676
+  revision: 2553080139
+  license: CC0
+  description: Japanese poet（1644–1694）
+  instance_of:
+  - id: Q5
+    label: human
+  genre:
+  - id: Q17049321
+    label: haikai

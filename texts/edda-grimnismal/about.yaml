@@ -1,0 +1,34 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: edda-grimnismal
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Grímnismál
+  lang: en
+  revision: 1351591399
+  url: https://en.wikipedia.org/w/index.php?title=Gr%C3%ADmnism%C3%A1l&oldid=1351591399
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Grímnismál” (en.wikipedia.org, revision 1351591399), CC BY-SA
+    4.0
+  lead: 'Grímnismál (Old Norse: [ˈɡriːmnesˌmɔːl]; ''The Speech of Grímnir'') is one of the mythological
+    poems of the Poetic Edda. It is preserved in the Codex Regius manuscript and the AM 748 I 4to fragment.
+    It is spoken through the voice of Grímnir, one of the many guises of the god Odin. The very name suggests
+    guise, or mask or hood. Through an error, King Geirröth tortured Odin-as-Grímnir, a fatal mistake,
+    since Odin caused him to fall upon his own sword. The poem is written mostly in the ljóðaháttr metre,
+    typical for wisdom verse.'
+wikidata:
+  id: Q1429923
+  revision: 2550191281
+  license: CC0
+  description: poem from the Poetic Edda
+  instance_of:
+  - id: Q24457192
+    label: eddic poem
+  genre:
+  - id: Q474090
+    label: narrative poetry
+  main_subject:
+  - id: Q43610
+    label: Odin

@@ -1,0 +1,13 @@
+# Weft edition of the golden horn of Gallehus: the standard scholarly transliteration, cited to its
+# catalogue number in the Scandinavian Runic-text Database (Rundata). Runic
+# transliteration is conventionally lowercase; R is the Old Norse R rune (ᛦ/ᛧ).
+# Each token: t = transliteration (what the runes spell), n = normalized form (what it says).
+# The runes are generated from t; the sound is generated from n.
+inscriptions:
+  - id: gallehus
+    title: "The golden horn of Gallehus (DR 12), Denmark, about 400"
+    alphabet: elder
+    dialect: pn
+    lines:
+      - tokens: [{t: ek, n: ek}, {t: hlewagastiz, n: Hlewagastiz}, {t: holtijaz, n: Holtijaz},
+                 {t: horna, n: horna}, {t: tawido, n: tawidō}]

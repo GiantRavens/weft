@@ -4,6 +4,7 @@ author: Anonymous, Mongol court; Ming transcription
 language: xng
 lang_name: "Middle Mongolian (Ming transcription)"
 kind: epic-and-myth
+wikipedia: {title: "Secret History of the Mongols", match: work}
 prefix: shm                      # shm.<section>.<column>[.<word>]: the section numbers are the Ming text's own
 urn: urn:weft:xng:secret-history   # no CTS URN; Weft-local identifier
 unit: section

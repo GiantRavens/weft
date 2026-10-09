@@ -1,0 +1,18 @@
+run:
+  weft: 0.1.0
+  sections:
+  - jago1
+  - credo
+counts:
+  lines: 28
+  tokens: 156
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'one number from the opera, not the libretto: Iago''s Credo with the lines before it'
+- 'no treebank covers the libretti: lemma, morphology and gloss are by hand (UD Italian conventions), draft'
+- the sound is the Florentine-based standard the opera house taught, read from the work's own lexicon; the singers' regional accents and the sung vowels (open on high notes) are not modelled
+- the text is a transcription without a named print; the guisto is corrected as declared
+- 'the first English singing version (Hueffer, 1887) is cited and not printed: not yet transcribed'

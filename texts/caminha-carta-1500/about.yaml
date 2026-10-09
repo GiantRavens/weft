@@ -1,0 +1,36 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: caminha-carta-1500
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Letter of Pero Vaz de Caminha
+  lang: en
+  revision: 1327341929
+  url: https://en.wikipedia.org/w/index.php?title=Letter_of_Pero_Vaz_de_Caminha&oldid=1327341929
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Letter of Pero Vaz de Caminha” (en.wikipedia.org, revision
+    1327341929), CC BY-SA 4.0
+  lead: In his letter to Manuel I of Portugal, Pero Vaz de Caminha narrates to the Portuguese king what
+    was then the Europeans’ first encounter with South American natives, alongside what is considered
+    by many today as being one of the most accurate accounts of what Brazil used to look like in 1500.
+    "[...] Esse arvoredo, que é tanto, tamanho, tão basto e de tantas prumagens, que homens as não podem
+    contar.", which roughly translates as "Such vastness of the enormous treeline, with abundant foliage,
+    that is incalculable", is one of Pero's most famous descriptions. He describes in a diary from the
+    first journey from Portugal to Brazil and their arrival in this country. This letter is considered
+    to be the first document of Brazilian history as much as its first literary text. The original of
+    this 27-page document can be found in the Arquivo Nacional da Torre do Tombo, Lisbon.
+wikidata:
+  id: Q2090656
+  revision: 2551834711
+  license: CC0
+  description: Letter accounting Portuguese arrival into present-day Brazil
+  instance_of:
+  - id: Q49848
+    label: document
+  - id: Q133492
+    label: letter
+  main_subject:
+  - id: Q3042917
+    label: discovery of Brazil

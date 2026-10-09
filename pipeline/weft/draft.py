@@ -212,16 +212,19 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         # token lines join with the edition's joiner: a space for runes, nothing for Japanese
         joiner = edition.get("joiner", " ")
 
-        def token_line(toks: list[dict]) -> str:
+        def token_line(toks: list[dict], verify: bool = False) -> str:
             # glue: no space after this word (Devanagari writes a final consonant with the next
             # word's vowel); p: a danda, set off by a space as the source prints it
             out = ""
             for k, t in enumerate(toks):
-                # src: the source's spelling of this token where the edition prints it otherwise (TeX for a symbol)
-                out += (t.get("src") or t["t"]) + (" " + t["p"] if t.get("p") else "")
+                # src: the source's spelling of this token where the edition prints it otherwise (TeX for a
+                # symbol, an OCR misreading); used for the verbatim check only, never for the line's text
+                out += ((t.get("src") if verify else None) or t["t"]) + (" " + t["p"] if t.get("p") else "")
                 if k + 1 < len(toks) and not t.get("glue"):
                     out += joiner
             return out
+        verify_text = {(str(g["id"]), i): token_line(ln["tokens"], verify=True)
+                       for g in glist for i, ln in enumerate(g["lines"], start=1) if isinstance(ln, dict) and "tokens" in ln}
         # a line may be a displayed equation ({equation: {tex, say, gloss}}): its text, for the verbatim
         # check and the page, is its TeX, which the source carries inside <math> tags
         units = [(str(g["id"]), i, ln if isinstance(ln, str) else ln["equation"]["tex"] if "equation" in ln else token_line(ln["tokens"]))
@@ -256,7 +259,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                     if k == 0:
                         fail("ocr-correction-unused", str(c["ocr"]))
                 cache[vpath] = raw_src
-            if " ".join(text.split()) not in cache[vpath]:
+            if " ".join(verify_text.get((gid, i), text).split()) not in cache[vpath]:
                 fail("edition-not-in-source", f"{gid}.{i}")
     elif ed_fmt == "stanza-text":
         st = stanza_lines(work_dir / m["edition"]["file"], pilot["stanzas"])

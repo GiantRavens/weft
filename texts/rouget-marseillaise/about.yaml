@@ -1,0 +1,33 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: rouget-marseillaise
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: La Marseillaise
+  lang: en
+  revision: 1374251828
+  url: https://en.wikipedia.org/w/index.php?title=La_Marseillaise&oldid=1374251828
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “La Marseillaise” (en.wikipedia.org, revision 1374251828), CC
+    BY-SA 4.0
+  lead: '"La Marseillaise" is the national anthem of France. It was written in 1792 by Claude Joseph Rouget
+    de Lisle in Strasbourg after the First French Republic declared war against Austria, and was originally
+    titled "Chant de Guerre pour l''Armée du Rhin" ("War Song for the Army of the Rhine").'
+wikidata:
+  id: Q41180
+  revision: 2533818051
+  license: CC0
+  description: national anthem of France
+  instance_of:
+  - id: Q23691
+    label: national anthem
+  genre:
+  - id: Q211025
+    label: march
+  - id: Q7366
+    label: song
+  main_subject:
+  - id: Q52197736
+    label: defence of the State

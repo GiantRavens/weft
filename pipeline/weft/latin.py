@@ -425,7 +425,37 @@ KEY["as-first-read"] = [
     ("zh", "French method: g before e and i, and j, as in measure"),
     ("CAPS", "stress: Latin position in the English method; always the last syllable in the French method"),
 ]
-SCHEME_LABELS["as-first-read"] = "As first read: Newton in the English manner, Descartes in the French (approximate)"
+# as-first-read reads each section in its author's national manner (the section's `dialect`); a work
+# shows only the key rows for the dialects it uses (key_for), so a page on Descartes does not explain
+# the English method
+KEY_BY_DIALECT = {"as-first-read": {
+    "english": [
+        ("", "Latin as read in England in the 1680s: the English method. Reconstructed from contemporary grammars; approximate."),
+        ("ay, ee, eye, oh, yoo", "a stressed vowel in an open syllable takes its English long value, so statu = STAY-tyoo"),
+        ("sh", "ti before a vowel, as in mutation"),
+        ("ee (final e), eye (final i)", "omne = OM-nee, dirigi = DI-ri-jye"),
+        ("CAPS", "stress: in the Latin position"),
+    ],
+    "french": [
+        ("", "Latin as read in France in the 1640s: the French method. Reconstructed from contemporary grammars; approximate."),
+        ("ü", "u as in French tu"),
+        ("an, on, in", "nasal vowels before m or n"),
+        ("zh", "g before e and i, and j, as in measure"),
+        ("CAPS", "stress: always the last syllable"),
+    ],
+}}
+SCHEME_LABELS["as-first-read"] = "As first read: in the author's own country's manner (approximate)"
+
+
+def key_for(scheme: str, dialects: set[str]) -> list:
+    """The key for a scheme, narrowed to the dialects a work uses where the scheme is read by dialect.
+    A work with a dialect the narrowed key does not cover gets the whole key."""
+    by = KEY_BY_DIALECT.get(scheme)
+    if not by or not dialects or not dialects <= set(by):
+        return KEY[scheme]
+    if len(dialects) == 1:
+        return by[next(iter(dialects))]
+    return KEY[scheme]
 
 
 # ---------------------------------------------------------------- humanist readings, 1480s to 1510s

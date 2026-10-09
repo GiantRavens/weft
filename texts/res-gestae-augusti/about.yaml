@@ -1,0 +1,34 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: res-gestae-augusti
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Res Gestae Divi Augusti
+  lang: en
+  revision: 1368089001
+  url: https://en.wikipedia.org/w/index.php?title=Res_Gestae_Divi_Augusti&oldid=1368089001
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Res Gestae Divi Augusti” (en.wikipedia.org, revision 1368089001),
+    CC BY-SA 4.0
+  lead: 'Res Gestae Divi Augusti (contemporaneous and authorised Ancient Greek translation: πράξεις τε
+    καὶ δωρεαὶ Σεβαστοῦ θεοῦ; Eng. The Deeds of the Divine Augustus) is a monumental inscription composed
+    by the first Roman emperor, Augustus, giving a first-person record of his life and accomplishments.
+    The Res Gestae is especially significant because it gives an insight into the image Augustus presented
+    to the Roman people. Various portions of the Res Gestae have been found in modern Turkey. The inscription
+    itself is a monument to the establishment of the Julio-Claudian dynasty that was to follow Augustus.'
+wikidata:
+  id: Q734095
+  revision: 2540199000
+  license: CC0
+  description: autobiographical inscription of Augustus Caesar, at Temple of Rome and Augustus at Ankara,
+    Turkey
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q4184
+    label: autobiography
+  - id: Q7281
+    label: propaganda

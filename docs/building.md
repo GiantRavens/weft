@@ -47,17 +47,25 @@ is "done" before that.
    label, the edition record, schemes and their labels for this time and place,
    `sound_confidence`, translations with licences, and `predicted_gaps`, which states what the
    work does not yet do and what is approximate.
-9. **Image:** `weft image <work> "File:Name.jpg"` fetches a Commons image, writes the two sizes
+9. **About:** name the work's Wikipedia article in the manifest, `wikipedia: {title, match}`, then
+   run `weft about <work>`. `match` says what the article describes: `work` (this text, or the work
+   an excerpt comes from), `author`, `parent` (the collection or book that contains it), or `none`
+   when nothing fits. `weft about <work> --suggest` lists search candidates and writes nothing; read
+   them, since search returns near misses ("Genesis" finds the album) and a redirect can land on a
+   general article ("Old pond" redirects to Haiku). The step writes `about.yaml`: the article's lead,
+   quoted verbatim and pinned by revision, and the Wikidata item's description, instance of, genre
+   and main subject, which search reads.
+10. **Image:** `weft image <work> "File:Name.jpg"` fetches a Commons image, writes the two sizes
    under `art/works/`, and appends the credits record; the caption and alt text are yours.
-10. **Rows:** add the work to the table in `README.md` and to the summary table in
+11. **Rows:** add the work to the table in `README.md` and to the summary table in
     `docs/languages.md` (and a language section there if the language is new).
-11. **Gate:** `weft check <work>`, `weft build <work>`, `weft build all`, then the suite. Run the
+12. **Gate:** `weft check <work>`, `weft build <work>`, `weft build all`, then the suite. Run the
     suite so a failure cannot hide behind a pipe:
 
         set -o pipefail; uv run --with pytest pytest -q tests | tail -3; echo rc=$?
 
     Re-check the other works in the language after any change to a module or a shared lexicon.
-12. **Record** the work in its Pin task, and leave the commit to the owner of the repository.
+13. **Record** the work in its Pin task, and leave the commit to the owner of the repository.
 
 ## Recipes
 

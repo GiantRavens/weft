@@ -1,0 +1,46 @@
+work: descartes-principia
+split_from: science-latin            # was one page with its sibling works; line IDs kept
+title: "Descartes, Principia philosophiae (1644), part 1, section 7"
+author: "René Descartes (1596–1650)"
+language: lat
+kind: science
+wikipedia: {title: "Principles of Philosophy", match: work}
+prefix: sci                      # sci.<section>.<line>[.<token>]
+urn: urn:weft:lat:science   # kept from the page this work was split from, so line citations stay valid
+unit: section
+section_noun: text
+written: {year: 1644, display: "1644", label: "Principia philosophiae, 1644: part 1, section 7, where the cogito is stated in Latin"}
+status: phase-0
+pilot: {sections: [descartes]}
+edition:
+  id: weft-science
+  name: "Descartes's Latin as on Latin Wikisource (after Adam and Tannery)"
+  format: weft-edition
+  file: edition.yaml
+  license: texts public domain; Weft line division CC BY-SA 4.0
+treebank: null                   # no treebank covers these texts; hand annotation, draft
+schemes: [as-first-read, classical]
+scheme_labels:
+  as-first-read: "As first read: Latin in the French manner of Descartes's day (approximate)"   # default: each author's own national manner of reading Latin
+quantities: pipeline/weft/data/lat_quantities.yaml
+sources_extra:
+  - id: descartes1644-la
+    name: Descartes, Principia philosophiae, Latin Wikisource revision 130858
+    file: sources/descartes1644-la.txt
+    url: "https://la.wikisource.org/w/index.php?title=Principia_philosophiae&oldid=130858&action=raw"
+    sha256: 73d305def3e4348238b68ba14f3cbf06c3fb5c22338c0145c964d47df03dc4f9
+    license: public domain (text); Wikisource CC BY-SA 4.0
+    license_url: https://la.wikisource.org/wiki/Principia_philosophiae
+translations:
+  - id: veitch1853
+    translator: John Veitch
+    year: 1853
+    form: prose
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/veitch1853.txt
+    url: https://www.gutenberg.org/cache/epub/4391/pg4391.txt
+    sha256: 562a81e0587f5d1ca706c116b01e9e24da5f6b2d15dbf69322df0f7816a79b1c
+predicted_gaps:
+  - "no treebank: lemma and morphology hand-annotated (Lewis and Short), draft"
+  - "the French manner of reading Latin is reconstructed from contemporary grammars; approximate"

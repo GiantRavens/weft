@@ -1,0 +1,13 @@
+# Human overlay for the golden horn of Gallehus. No treebank exists for runic texts, so this
+# file carries lemma and morphology too (rule 3 exception).
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a runologist
+  date: 2026-09-29
+  why: pilot inscriptions; hand annotation, no treebank
+  status: draft
+  set:
+    run.gallehus.1: {metre: "alliterative long line · staves h (hlewagastiz, holtijaz, horna)"}
+    run.gallehus.1.1: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    run.gallehus.1.2: {lemma: "Hlewagastiz", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Hlewagastiz", stave: true}   # hlewagastiz
+    run.gallehus.1.3: {lemma: "holtijaz", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "of-Holt", stave: true}   # holtijaz
+    run.gallehus.1.4: {lemma: "horna", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "horn", stave: true}   # horna
+    run.gallehus.1.5: {lemma: "tawidō", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "made"}   # tawido

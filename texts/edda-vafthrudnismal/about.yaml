@@ -1,0 +1,29 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: edda-vafthrudnismal
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Vafþrúðnismál
+  lang: en
+  revision: 1366150244
+  url: https://en.wikipedia.org/w/index.php?title=Vaf%C3%BEr%C3%BA%C3%B0nism%C3%A1l&oldid=1366150244
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Vafþrúðnismál” (en.wikipedia.org, revision 1366150244), CC
+    BY-SA 4.0
+  lead: 'Vafþrúðnismál (Old Norse: ''The Lay of Vafþrúðnir'') is the third poem in the Poetic Edda. It
+    is a conversation in verse form conducted initially between the Æsir Odin and Frigg, and subsequently
+    between Odin and the jötunn Vafþrúðnir, as they engage in a battle of wits. The poem goes into detail
+    about the Norse cosmogony and was evidently used extensively as a source document by Snorri Sturluson
+    in the construction of the Prose Edda who quotes it. The poem is preserved in Codex Regius and partially
+    in AM 748 I 4to. There are preservation problems relating to stanzas 40-41. Vafþrúðnismál is believed
+    to be a 10th century poem.'
+wikidata:
+  id: Q1546735
+  revision: 2509477837
+  license: CC0
+  description: Eddic poem
+  instance_of:
+  - id: Q24457192
+    label: eddic poem

@@ -1,0 +1,17 @@
+run:
+  weft: 0.1.0
+  sections:
+  - rok
+counts:
+  lines: 2
+  tokens: 12
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'runes do not mark vowel length or many consonant contrasts: sound comes from each word''s normalization'
+- no public-domain modern translation exists; Stephens (1884) is public domain but his reading is superseded, so a labelled Weft translation of the modern reading sits beside it
+- Stephens is quoted from the scanned page (the OCR text garbles words); spans were checked against page 36 of the scan
+- Rök uses short-twig runes; Unicode short-twig forms stand in for the carved shapes
+- only the opening of the inscription; the rest of the stone, the longest runic text known, is not yet in the edition

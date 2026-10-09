@@ -1,0 +1,37 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: secret-history-mongols
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Secret History of the Mongols
+  lang: en
+  revision: 1372015757
+  url: https://en.wikipedia.org/w/index.php?title=Secret_History_of_the_Mongols&oldid=1372015757
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Secret History of the Mongols” (en.wikipedia.org, revision
+    1372015757), CC BY-SA 4.0
+  lead: The Secret History of the Mongols is the oldest surviving literary work in the Mongolic languages.
+    Written for the Mongol royal family some time after the death of Genghis Khan in 1227, it recounts
+    his life and conquests, and partially the reign of his successor Ögedei Khan.
+wikidata:
+  id: Q469930
+  revision: 2532650544
+  license: CC0
+  description: work about the life of Genghis Khan and Ögedei Khan
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q10916116
+    label: history book
+  - id: Q36279
+    label: biography
+  main_subject:
+  - id: Q720
+    label: Genghis Khan
+  - id: Q7519
+    label: Ögedei Khan
+  - id: Q12557
+    label: Mongol Empire

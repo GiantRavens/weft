@@ -3,6 +3,7 @@ title: Genesis (Bereshit)
 author: Torah, in Biblical Hebrew
 language: hbo
 kind: scripture
+wikipedia: {title: "Book of Genesis", match: work}
 prefix: gen                      # gen.<chapter>.<verse>[.<token>]
 urn: urn:weft:hbo:tanakh.genesis # no CTS URN; Weft-local identifier
 unit: verse

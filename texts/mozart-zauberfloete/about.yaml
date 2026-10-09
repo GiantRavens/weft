@@ -1,0 +1,33 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: mozart-zauberfloete
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: The Magic Flute
+  lang: en
+  revision: 1379178516
+  url: https://en.wikipedia.org/w/index.php?title=The_Magic_Flute&oldid=1379178516
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “The Magic Flute” (en.wikipedia.org, revision 1379178516), CC
+    BY-SA 4.0
+  lead: 'The Magic Flute (German: Die Zauberflöte, pronounced [diː ˈtsaʊbɐˌfløːtə] ), K. 620, is an opera
+    in two acts by Wolfgang Amadeus Mozart to a German libretto by Emanuel Schikaneder. It is a Singspiel,
+    a popular form that included both singing and spoken dialogue. The work premiered on 30 September
+    1791 at Schikaneder''s theatre, the Freihaus-Theater auf der Wieden in Vienna, just two months before
+    Mozart''s death. It was Mozart''s last opera. It was an outstanding success from its first performances,
+    and remains a staple of the opera repertory.'
+wikidata:
+  id: Q5064
+  revision: 2554655139
+  license: CC0
+  description: 1791 opera by Wolfgang Amadeus Mozart
+  instance_of:
+  - id: Q58483083
+    label: dramatico-musical work
+  genre:
+  - id: Q377258
+    label: singspiel
+  - id: Q1344
+    label: opera

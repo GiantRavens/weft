@@ -1,0 +1,14 @@
+run:
+  weft: 0.1.0
+  sections:
+  - kylver
+counts:
+  lines: 1
+  tokens: 24
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'the futhark is a row of letters, not words: each rune''s lemma is its reconstructed Proto-Germanic name, and the gloss is that name''s meaning'
+- 'no published translation applies: Stephens (1884) predates the stone''s discovery in 1903, so the only translation is a labelled Weft reading (draft)'

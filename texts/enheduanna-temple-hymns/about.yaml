@@ -1,0 +1,28 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: enheduanna-temple-hymns
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: author
+wikipedia:
+  title: Enheduanna
+  lang: en
+  revision: 1372885241
+  url: https://en.wikipedia.org/w/index.php?title=Enheduanna&oldid=1372885241
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Enheduanna” (en.wikipedia.org, revision 1372885241), CC BY-SA
+    4.0
+  lead: 'Enheduanna (Sumerian: 𒂗𒃶𒌌𒀭𒈾 Enḫéduanna, also transliterated as Enheduana, En-he2-du7-an-na, or
+    variants; fl. c. 2300 BC) was the entu (high) priestess of the moon god Nanna (Sīn) in the Sumerian
+    city-state of Ur in the reign of her father, Sargon of Akkad (r. c. 2334 – c. 2279 BCE). She was likely
+    appointed by her father as the leader of the religious group at Ur to cement ties between the Akkadian
+    religion of her father and the native Sumerian religion. Enheduanna has been celebrated as the earliest
+    known named author in world history.'
+wikidata:
+  id: Q232505
+  revision: 2553830787
+  license: CC0
+  description: Akkadian princess; Sumerian high priestess of Nanna at Ur; poet and philosopher
+  instance_of:
+  - id: Q5
+    label: human

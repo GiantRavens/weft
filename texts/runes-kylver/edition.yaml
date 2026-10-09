@@ -1,0 +1,14 @@
+# Weft edition of the Kylver stone: the standard scholarly transliteration, cited to its
+# catalogue number in the Scandinavian Runic-text Database (Rundata). Runic
+# transliteration is conventionally lowercase; R is the Old Norse R rune (ᛦ/ᛧ).
+# Each token: t = transliteration (what the runes spell), n = normalized form (what it says).
+# The runes are generated from t; the sound is generated from n.
+inscriptions:
+  - id: kylver
+    title: "The Kylver stone (G 88), Gotland, about 400: the earliest complete futhark"
+    alphabet: elder
+    dialect: pn
+    lines:
+      - tokens: [{t: f}, {t: u}, {t: þ}, {t: a}, {t: r}, {t: k}, {t: g}, {t: w},
+                 {t: h}, {t: n}, {t: i}, {t: j}, {t: p}, {t: ï}, {t: z}, {t: s},
+                 {t: t}, {t: b}, {t: e}, {t: m}, {t: l}, {t: ŋ}, {t: d}, {t: o}]

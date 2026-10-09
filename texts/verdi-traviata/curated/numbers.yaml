@@ -1,0 +1,129 @@
+# Human overlay for the Verdi number. No treebank covers the libretti; lemma, morphology and gloss are by hand (UD
+# Italian conventions, as for the Dante and Petrarch works): the poetic apocopes keep the full lemma (amor: amore,
+# fior: fiore, cuor: cuore, avel: avello), the elided forms are glossed as one word (l'uom man, dell'avel of-the-grave),
+# and the first-person plural imperatives of the Brindisi as let-us- (Libiam let-us-drink, Godiam let-us-enjoy).
+- by: Claude (Weft phase 0), hand parse and gloss; for review by Skip and an Italianist
+  date: 2026-10-04
+  why: no treebank for the libretti; hand parse with hand glosses
+  status: draft
+  set:
+    vl.alfredo1.1.1: {lemma: "libare", morph: "VERB|Mood=Imp|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin", gloss: "let-us-drink"}   # Libiam
+    vl.alfredo1.1.2: {lemma: "in", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "in-the"}   # ne’
+    vl.alfredo1.1.3: {lemma: "lieto", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "joyful"}   # lieti
+    vl.alfredo1.1.4: {lemma: "calice", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "cups"}   # calici
+    vl.alfredo1.2.1: {lemma: "che", morph: "PRON|PronType=Rel", gloss: "which"}   # Che
+    vl.alfredo1.2.2: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # la
+    vl.alfredo1.2.3: {lemma: "bellezza", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "beauty"}   # bellezza
+    vl.alfredo1.2.4: {lemma: "infiorare", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "adorns-with-flowers"}   # infiora,
+    vl.alfredo1.3.1: {lemma: "e", morph: "CCONJ", gloss: "and"}   # E
+    vl.alfredo1.3.2: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # la
+    vl.alfredo1.3.3: {lemma: "fuggevole", morph: "ADJ|Gender=Fem|Number=Sing", gloss: "fleeting"}   # fuggevol
+    vl.alfredo1.3.4: {lemma: "ora", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "hour"}   # ora
+    vl.alfredo1.4.1: {lemma: "inebriare", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "may-grow-drunk"}   # S’innebrii
+    vl.alfredo1.4.2: {lemma: "a", morph: "ADP", gloss: "with"}   # a
+    vl.alfredo1.4.3: {lemma: "voluttà", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "pleasure"}   # voluttà.
+    vl.alfredo1.5.1: {lemma: "libare", morph: "VERB|Mood=Imp|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin", gloss: "let-us-drink"}   # Libiam
+    vl.alfredo1.5.2: {lemma: "in", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "in-the"}   # ne’
+    vl.alfredo1.5.3: {lemma: "dolce", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "sweet"}   # dolci
+    vl.alfredo1.5.4: {lemma: "fremito", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "tremblings"}   # fremiti
+    vl.alfredo1.6.1: {lemma: "che", morph: "PRON|PronType=Rel", gloss: "which"}   # Che
+    vl.alfredo1.6.2: {lemma: "suscitare", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "arouses"}   # suscita
+    vl.alfredo1.6.3: {lemma: "amore", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "love"}   # l’amore,
+    vl.alfredo1.7.1: {lemma: "poiché", morph: "SCONJ", gloss: "since"}   # Poichè
+    vl.alfredo1.7.2: {lemma: "occhio", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "that-eye"}   # quell’occhio
+    vl.alfredo1.7.3: {lemma: "a", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "to-the"}   # al
+    vl.alfredo1.7.4: {lemma: "core", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "heart"}   # core
+    vl.alfredo1.8.1: {lemma: "onnipotente", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "all-powerful"}   # Onnipotente
+    vl.alfredo1.8.2: {lemma: "andare", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "goes"}   # va.
+    vl.tutti1.1.1: {lemma: "libare", morph: "VERB|Mood=Imp|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin", gloss: "let-us-drink"}   # Libiamo;
+    vl.tutti1.1.2: {lemma: "amore", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "love"}   # amor
+    vl.tutti1.1.3: {lemma: "fra", morph: "ADP", gloss: "among"}   # fra
+    vl.tutti1.1.4: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # i
+    vl.tutti1.1.5: {lemma: "calice", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "cups"}   # calici
+    vl.tutti1.2.1: {lemma: "più", morph: "ADV", gloss: "more"}   # Più
+    vl.tutti1.2.2: {lemma: "caldo", morph: "ADJ|Gender=Masc|Number=Plur", gloss: "warm"}   # caldi
+    vl.tutti1.2.3: {lemma: "bacio", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "kisses"}   # baci
+    vl.tutti1.2.4: {lemma: "avere", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin", gloss: "will-have"}   # avrà.
+    vl.violetta1.1.1: {lemma: "tra", morph: "ADP", gloss: "among"}   # Tra
+    vl.violetta1.1.2: {lemma: "voi", morph: "PRON|Person=2|Number=Plur|PronType=Prs", gloss: "you"}   # voi,
+    vl.violetta1.1.3: {lemma: "sapere", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin", gloss: "I-shall-know-how"}   # saprò
+    vl.violetta1.1.4: {lemma: "dividere", morph: "VERB|VerbForm=Inf", gloss: "to-share"}   # dividere
+    vl.violetta1.2.1: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # Il
+    vl.violetta1.2.2: {lemma: "tempo", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "time"}   # tempo
+    vl.violetta1.2.3: {lemma: "mio", morph: "DET|Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs", gloss: "my"}   # mio
+    vl.violetta1.2.4: {lemma: "giocondo", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "merry"}   # giocondo;
+    vl.violetta1.3.1: {lemma: "tutto", morph: "PRON|Gender=Masc|Number=Sing|PronType=Ind", gloss: "all"}   # Tutto
+    vl.violetta1.3.2: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # è
+    vl.violetta1.3.3: {lemma: "follia", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "folly"}   # follia
+    vl.violetta1.3.4: {lemma: "in", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "in-the"}   # nel
+    vl.violetta1.3.5: {lemma: "mondo", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "world"}   # mondo
+    vl.violetta1.4.1: {lemma: "ciò", morph: "PRON|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # Ciò
+    vl.violetta1.4.2: {lemma: "che", morph: "PRON|PronType=Rel", gloss: "which"}   # che
+    vl.violetta1.4.3: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    vl.violetta1.4.4: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # è
+    vl.violetta1.4.5: {lemma: "piacere", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "pleasure"}   # piacer.
+    vl.violetta1.5.1: {lemma: "godere", morph: "VERB|Mood=Imp|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin", gloss: "let-us-enjoy"}   # Godiam,
+    vl.violetta1.5.2: {lemma: "fugace", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "fleeting"}   # fugace
+    vl.violetta1.5.3: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    vl.violetta1.5.4: {lemma: "rapido", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "swift"}   # rapido
+    vl.violetta1.6.1: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # È
+    vl.violetta1.6.2: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # il
+    vl.violetta1.6.3: {lemma: "gaudio", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "joy"}   # gaudio
+    vl.violetta1.6.4: {lemma: "amore", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "of-love"}   # dell’amore;
+    vl.violetta1.7.1: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # È
+    vl.violetta1.7.2: {lemma: "fiore", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "flower"}   # fior
+    vl.violetta1.7.3: {lemma: "che", morph: "PRON|PronType=Rel", gloss: "which"}   # che
+    vl.violetta1.7.4: {lemma: "nascere", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is-born"}   # nasce
+    vl.violetta1.7.5: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    vl.violetta1.7.6: {lemma: "morire", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "dies"}   # muore,
+    vl.violetta1.8.1: {lemma: "né", morph: "CCONJ", gloss: "nor"}   # Nè
+    vl.violetta1.8.2: {lemma: "più", morph: "ADV", gloss: "more"}   # più
+    vl.violetta1.8.3: {lemma: "si", morph: "PRON|Person=3|PronType=Prs|Reflex=Yes", gloss: "one"}   # si
+    vl.violetta1.8.4: {lemma: "potere", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "can"}   # può
+    vl.violetta1.8.5: {lemma: "godere", morph: "VERB|VerbForm=Inf", gloss: "enjoy"}   # goder.
+    vl.tutti2.1.1: {lemma: "godere", morph: "VERB|Mood=Imp|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin", gloss: "let-us-enjoy"}   # Godiam...
+    vl.tutti2.1.2: {lemma: "invitare", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "us-invites"}   # c’invita
+    vl.tutti2.1.3: {lemma: "un", morph: "DET|Definite=Ind|Gender=Masc|Number=Sing|PronType=Art", gloss: "a"}   # un
+    vl.tutti2.1.4: {lemma: "fervido", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "fervent"}   # fervido
+    vl.tutti2.2.1: {lemma: "accento", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "accent"}   # Accento
+    vl.tutti2.2.2: {lemma: "lusinghiero", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "flattering"}   # lusinghier.
+    vl.tutti2.3.1: {lemma: "godere", morph: "VERB|Mood=Imp|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin", gloss: "let-us-enjoy"}   # Godiam...
+    vl.tutti2.3.2: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # la
+    vl.tutti2.3.3: {lemma: "tazza", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "cup"}   # tazza
+    vl.tutti2.3.4: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    vl.tutti2.3.5: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # il
+    vl.tutti2.3.6: {lemma: "cantico", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "song"}   # cantico
+    vl.tutti2.4.1: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Plur|PronType=Art", gloss: "the"}   # Le
+    vl.tutti2.4.2: {lemma: "notte", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "nights"}   # notti
+    vl.tutti2.4.3: {lemma: "abbellare", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "makes-fair"}   # abbella
+    vl.tutti2.4.4: {lemma: "e", morph: "CCONJ", gloss: "and"}   # e
+    vl.tutti2.4.5: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # il
+    vl.tutti2.4.6: {lemma: "riso", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "laughter"}   # riso;
+    vl.tutti2.5.1: {lemma: "in", morph: "ADP", gloss: "in"}   # In
+    vl.tutti2.5.2: {lemma: "questo", morph: "DET|Gender=Masc|Number=Sing|PronType=Dem", gloss: "this"}   # questo
+    vl.tutti2.5.3: {lemma: "paradiso", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "paradise"}   # paradiso
+    vl.tutti2.6.1: {lemma: "noi", morph: "PRON|Person=1|Number=Plur|Case=Acc|PronType=Prs", gloss: "us"}   # Ne
+    vl.tutti2.6.2: {lemma: "scoprire", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "may-find"}   # scopra
+    vl.tutti2.6.3: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # il
+    vl.tutti2.6.4: {lemma: "nuovo", morph: "ADJ|Gender=Masc|Number=Sing", gloss: "new"}   # nuovo
+    vl.tutti2.6.5: {lemma: "dì", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "day"}   # dì.
+    vl.violetta2.1.1: {lemma: "il", morph: "DET|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # La
+    vl.violetta2.1.2: {lemma: "vita", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "life"}   # vita
+    vl.violetta2.1.3: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # è
+    vl.violetta2.1.4: {lemma: "in", morph: "ADP + DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "in-the"}   # nel
+    vl.violetta2.1.5: {lemma: "tripudio", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "revelry"}   # tripudio...
+    vl.alfredo2.1.1: {lemma: "quando", morph: "SCONJ", gloss: "when"}   # Quando
+    vl.alfredo2.1.2: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not"}   # non
+    vl.alfredo2.1.3: {lemma: "amare", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "one-loves"}   # s’ami
+    vl.alfredo2.1.4: {lemma: "ancora", morph: "ADV", gloss: "yet"}   # ancora.
+    vl.violetta3.1.1: {lemma: "non", morph: "ADV|Polarity=Neg", gloss: "not-it"}   # Nol
+    vl.violetta3.1.2: {lemma: "dire", morph: "VERB|Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin", gloss: "say"}   # dite
+    vl.violetta3.1.3: {lemma: "a", morph: "ADP", gloss: "to"}   # a
+    vl.violetta3.1.4: {lemma: "chi", morph: "PRON|PronType=Rel", gloss: "one-who"}   # chi
+    vl.violetta3.1.5: {lemma: "lo", morph: "PRON|Person=3|Number=Sing|Gender=Masc|Case=Acc|PronType=Prs", gloss: "it"}   # lo
+    vl.violetta3.1.6: {lemma: "ignorare", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "knows-not"}   # ignora...
+    vl.alfredo3.1.1: {lemma: "essere", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin", gloss: "is"}   # È
+    vl.alfredo3.1.2: {lemma: "il", morph: "DET|Definite=Def|Gender=Masc|Number=Sing|PronType=Art", gloss: "the"}   # il
+    vl.alfredo3.1.3: {lemma: "mio", morph: "DET|Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs", gloss: "my"}   # mio
+    vl.alfredo3.1.4: {lemma: "destino", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "destiny"}   # destin
+    vl.alfredo3.1.5: {lemma: "così", morph: "ADV", gloss: "so"}   # così...

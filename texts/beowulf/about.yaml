@@ -1,0 +1,38 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: beowulf
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Beowulf
+  lang: en
+  revision: 1379320205
+  url: https://en.wikipedia.org/w/index.php?title=Beowulf&oldid=1379320205
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Beowulf” (en.wikipedia.org, revision 1379320205), CC BY-SA
+    4.0
+  lead: 'Beowulf ( ; Old English: Bēowulf [ˈbeːo.wuɫf]) is an Old English poem, an epic in the tradition
+    of Germanic heroic legend consisting of 3,182 alliterative lines, contained in the Nowell Codex. It
+    is one of the most important and most often translated works of Old English literature. The date of
+    composition is a matter of contention among scholars; the only certain dating is for the manuscript,
+    which was produced between AD 975 and 1025. Scholars call the anonymous author the "Beowulf poet".
+    The story is set in pagan Scandinavia in the 5th and 6th centuries. Beowulf, a hero of the Geats,
+    comes to the aid of Hrothgar, the king of the Danes, whose mead hall Heorot has been under attack
+    by the monster Grendel for twelve years. After Beowulf slays him, Grendel''s mother tries to take
+    revenge and is in turn defeated. Victorious, Beowulf goes home to Geatland and becomes king of the
+    Geats. Fifty years later, Beowulf defeats a dragon, but is mortally wounded in the battle. After his
+    death, his attendants cremate his body and erect a barrow on a headland in his memory.'
+wikidata:
+  id: Q48328
+  revision: 2546353268
+  license: CC0
+  description: Old English heroic epic poem
+  instance_of:
+  - id: Q37484
+    label: epic poem
+  genre:
+  - id: Q1601739
+    label: heroic poetry
+  - id: Q37484
+    label: epic poem

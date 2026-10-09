@@ -1,0 +1,35 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: heike-gion-shoja
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: The Tale of the Heike
+  lang: en
+  revision: 1377034635
+  url: https://en.wikipedia.org/w/index.php?title=The_Tale_of_the_Heike&oldid=1377034635
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “The Tale of the Heike” (en.wikipedia.org, revision 1377034635),
+    CC BY-SA 4.0
+  lead: The Tale of the Heike (平家物語, Heike Monogatari) is an epic account compiled prior to 1330 of the
+    struggle between the Taira clan and Minamoto clan for control of Japan at the end of the 12th century
+    in the Genpei War (1180–1185).
+wikidata:
+  id: Q830740
+  revision: 2539965193
+  license: CC0
+  description: Japanese book compiled prior to 1330
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  - id: Q47461344
+    label: written work
+  genre:
+  - id: Q587327
+    label: gunki monogatari
+  - id: Q2367164
+    label: epic
+  main_subject:
+  - id: Q737542
+    label: Genpei War

@@ -1,0 +1,26 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: runes-rok
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Rök runestone
+  lang: en
+  revision: 1375109222
+  url: https://en.wikipedia.org/w/index.php?title=R%C3%B6k_runestone&oldid=1375109222
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Rök runestone” (en.wikipedia.org, revision 1375109222), CC
+    BY-SA 4.0
+  lead: 'The Rök runestone (Swedish: Rökstenen; Ög 136) is one of the most famous runestones, featuring
+    the longest known runic inscription in stone. It can now be seen beside the church in Rök, Ödeshög
+    Municipality, Östergötland, Sweden. It is considered the first known piece of written Swedish literature
+    and thus it marks the beginning of the history of Swedish literature.'
+wikidata:
+  id: Q472975
+  revision: 2433439714
+  license: CC0
+  description: runestone
+  instance_of:
+  - id: Q24566025
+    label: Norse runestone

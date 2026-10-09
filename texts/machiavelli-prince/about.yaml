@@ -1,0 +1,34 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: machiavelli-prince
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: The Prince
+  lang: en
+  revision: 1379050480
+  url: https://en.wikipedia.org/w/index.php?title=The_Prince&oldid=1379050480
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “The Prince” (en.wikipedia.org, revision 1379050480), CC BY-SA
+    4.0
+  lead: 'The Prince (Italian: Il Principe [il ˈprintʃipe]; Latin: De Principatibus) is a 16th-century
+    political treatise written by the Italian diplomat and political philosopher Niccolò Machiavelli in
+    the form of an instruction guide for new princes. Many commentators have viewed that one of the main
+    themes of The Prince is that immoral acts are sometimes necessary to achieve political glory.'
+wikidata:
+  id: Q131719
+  revision: 2554983926
+  license: CC0
+  description: political treatise by Niccolò Machiavelli
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q35760
+    label: essay
+  main_subject:
+  - id: Q7163
+    label: politics
+  - id: Q36442
+    label: political science

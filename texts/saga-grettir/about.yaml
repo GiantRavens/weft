@@ -1,0 +1,29 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: saga-grettir
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Grettis saga
+  lang: en
+  revision: 1366081412
+  url: https://en.wikipedia.org/w/index.php?title=Grettis_saga&oldid=1366081412
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Grettis saga” (en.wikipedia.org, revision 1366081412), CC BY-SA
+    4.0
+  lead: 'Grettis saga Ásmundarsonar (modern Icelandic pronunciation: [ˈkrɛhtɪs ˈsaːɣa ˈauːsˌmʏntarˌsɔːnar̥]
+    , reconstructed Old Norse pronunciation: [ˈɡrɛtːɪs ˈsaɣa ˈɒːsˌmʊndarˌsɔnar]), also known as Grettla,
+    Grettir''s Saga or The Saga of Grettir the Strong, is one of the Icelanders'' sagas. It details the
+    life of Grettir Ásmundarson, a bellicose Icelandic outlaw, and is set in the eleventh century.'
+wikidata:
+  id: Q913267
+  revision: 2499653406
+  license: CC0
+  description: 13th-century Icelandic saga
+  instance_of:
+  - id: Q20022348
+    label: Outlaw sagas
+  genre:
+  - id: Q676
+    label: prose

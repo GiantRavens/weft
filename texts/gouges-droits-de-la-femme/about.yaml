@@ -1,0 +1,32 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: gouges-droits-de-la-femme
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Declaration of the Rights of Woman and of the Female Citizen
+  lang: en
+  revision: 1379053974
+  url: https://en.wikipedia.org/w/index.php?title=Declaration_of_the_Rights_of_Woman_and_of_the_Female_Citizen&oldid=1379053974
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Declaration of the Rights of Woman and of the Female Citizen”
+    (en.wikipedia.org, revision 1379053974), CC BY-SA 4.0
+  lead: 'The Declaration of the Rights of Woman and of the Female Citizen (French: Déclaration des droits
+    de la femme et de la citoyenne), also known as the Declaration of the Rights of Woman, was written
+    on 14 September 1791 by French activist, feminist, and playwright Olympe de Gouges in response to
+    the 1789 Declaration of the Rights of Man and of the Citizen. By publishing this document on 15 September,
+    de Gouges hoped to expose the failures of the French Revolution in the recognition of gender equality.
+    As a constitutional monarchist opposed to the execution of the King, de Gouges was accused, tried
+    and convicted of treason, resulting in her immediate execution, along with other Girondists.'
+wikidata:
+  id: Q730868
+  revision: 2550284030
+  license: CC0
+  description: feminist critique of the Declaration of the Rights of Man
+  instance_of:
+  - id: Q49848
+    label: document
+  main_subject:
+  - id: Q223569
+    label: women's rights

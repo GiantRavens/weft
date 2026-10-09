@@ -4,6 +4,7 @@ author: Book of Daniel, in Biblical Aramaic
 language: arc
 lang_name: Biblical Aramaic
 kind: scripture
+wikipedia: {title: "Belshazzar's feast", match: work}
 prefix: dan                      # dan.<chapter>.<verse>[.<token>]
 urn: urn:weft:arc:tanakh.daniel  # no CTS URN; Weft-local identifier
 unit: verse

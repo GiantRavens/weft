@@ -1,0 +1,32 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: nietzsche-zarathustra
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Thus Spoke Zarathustra
+  lang: en
+  revision: 1376650051
+  url: https://en.wikipedia.org/w/index.php?title=Thus_Spoke_Zarathustra&oldid=1376650051
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Thus Spoke Zarathustra” (en.wikipedia.org, revision 1376650051),
+    CC BY-SA 4.0
+  lead: 'Thus Spoke Zarathustra: A Book for All and None (German: Also sprach Zarathustra: Ein Buch für
+    Alle und Keinen), also translated as Thus Spake Zarathustra, is a work of philosophical fiction written
+    by German philosopher Friedrich Nietzsche and published in four volumes between 1883 and 1885. The
+    protagonist is nominally the historical Zarathustra, more commonly called Zoroaster in the West.'
+wikidata:
+  id: Q199774
+  revision: 2546565183
+  license: CC0
+  description: philosophical novel by Friedrich Nietzsche
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q2016518
+    label: philosophical novel
+  main_subject:
+  - id: Q5891
+    label: philosophy

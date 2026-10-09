@@ -40,6 +40,15 @@ def inside(repo: Path, rel: str, what: str) -> Path:
     return p
 
 
+def edition_dialects(work_dir: Path, m: dict) -> set[str]:
+    """The reading dialects a Weft edition's sections declare (`dialect`), for a key narrowed to them."""
+    ed = m.get("edition") or {}
+    if ed.get("format") != "weft-edition" or not (work_dir / str(ed.get("file"))).exists():
+        return set()
+    e = yaml.safe_load((work_dir / ed["file"]).read_text()) or {}
+    return {str(g["dialect"]) for g in (e.get("sections") or e.get("inscriptions") or []) if g.get("dialect")}
+
+
 def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
     m = load_manifest(work_dir)
     lines, index = [], {}
@@ -125,7 +134,8 @@ def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
         "treebank": ({k: m["treebank"].get(k) for k in ("id", "name", "license")} if m.get("treebank")
                      else {"id": "hand annotation", "name": "no treebank: hand annotation, draft", "license": "CC BY-SA 4.0"}),
         "schemes": m["schemes"],
-        "keys": {s: PHON[m["language"]].KEY[s] for s in m["schemes"]},
+        "keys": {s: (PHON[m["language"]].key_for(s, edition_dialects(work_dir, m)) if hasattr(PHON[m["language"]], "key_for")
+                     else PHON[m["language"]].KEY[s]) for s in m["schemes"]},
         # a work may override a scheme's label, e.g. to give its own date for a shared reconstruction
         "scheme_labels": {s: (m.get("scheme_labels") or {}).get(s) or PHON[m["language"]].SCHEME_LABELS.get(s, s) for s in m["schemes"]},
         "translations": list(translations.values()),
@@ -414,6 +424,9 @@ def added_dates(repo: Path, ms: list[dict]) -> dict[str, str]:
     except (OSError, subprocess.SubprocessError):
         pass
     for m in ms:
+        # a work split from an older page arrived when that page did; git still knows the old manifest's add
+        if m.get("split_from") and m["split_from"] in dates:
+            dates[m["work"]] = dates[m["split_from"]]
         if m["work"] not in dates:
             mp = (repo / ("private" if m.get("_private") else "texts") / m["work"] / "manifest.yaml")
             dates[m["work"]] = (dt.datetime.fromtimestamp(mp.stat().st_mtime) if mp.exists() else dt.datetime.now()).isoformat(timespec="seconds")
@@ -440,6 +453,39 @@ def newest_index(ms: list[dict], out_dir: Path, dates: dict[str, str], n: int = 
     items = "".join(f'<li><a href="{H.escape(m["work"])}.html">{H.escape(short_title(m))}</a>'
                     f'<time datetime="{H.escape(dates[m["work"]][:10])}">{H.escape(day(dates[m["work"]]))}</time></li>' for m in newest)
     return f'<section class="newest"><h2>Newest texts</h2><ul>{items}</ul></section>'
+
+
+def moved_pages(repo: Path, out_dir: Path, art: dict, private: bool = False) -> list[Path]:
+    """A page at each old address of a work that was split into several (manifest `split_from`), so
+    links already shared keep working. It lists the works the page became; a link to a line
+    (old.html#kant.kpv.3) goes on to the work that now holds that line, since the split kept the IDs."""
+    import html as H
+    from . import docs
+    ms = library_order(repo, private)
+    live = {m["work"] for m in ms}
+    groups: dict[str, list[dict]] = {}
+    for m in ms:
+        if m.get("split_from") and m["split_from"] not in live and (out_dir / f"{m['work']}.html").exists():
+            groups.setdefault(m["split_from"], []).append(m)
+    written = []
+    for old, parts in groups.items():
+        by_section = {str(s): f"{m['work']}.html" for m in parts
+                      for s in ((m.get("pilot") or {}).get("sections") or (m.get("pilot") or {}).get("inscriptions") or [])}
+        items = "".join(f'<li><a href="{H.escape(m["work"])}.html">{H.escape(m["title"])}</a> · {H.escape(display_date(m.get("written") or {}))}</li>'
+                        for m in parts)
+        body = (f"<h1>This page is now {len(parts)} works</h1>"
+                f"<p>The texts that were together on this page each have a page of their own. Every line keeps its "
+                f"identifier, so a link to a line opens it on its new page.</p><ul>{items}</ul>")
+        # the line ID's second part is its section; the map sends a link to a line on to the work that holds it
+        script = ("<script>(function(){var m=" + json.dumps(by_section) + ";var h=location.hash.slice(1);"
+                  "var d=decodeURIComponent(h);var s=d.indexOf('sec-')===0?d.slice(4):d.split('.')[1];"
+                  "if(s&&m[s])location.replace(m[s]+location.hash);})();</script>")
+        page = out_dir / f"{old}.html"
+        page.write_text(docs.PAGE.replace("{{TITLE}}", "Moved").replace("{{NAV}}", docs.nav_html(page.name))
+                        .replace("{{BODY}}", body + script)
+                        .replace("{{LOCKUP}}", art.get("weft-lockup", "Weft")).replace("{{FAVICON}}", art.get("favicon", "")))
+        written.append(page)
+    return written
 
 
 def write_index(repo: Path, out_dir: Path, private: bool = False) -> Path:
@@ -493,6 +539,7 @@ def write_index(repo: Path, out_dir: Path, private: bool = False) -> Path:
     art = load_art(repo)
     from . import docs
     docs.build_docs(repo, out_dir, art)
+    moved_pages(repo, out_dir, art, private)
     html = INDEX if not private else INDEX.replace("<h1>Interlinear library</h1>", "<h1>Interlinear library</h1><p class=\"pv\">Private build: includes your own texts and licensed material. Do not publish this folder.</p>")
     idx.write_text(html.replace("{{ROWS}}", "\n".join(rows)).replace("{{NAV}}", docs.nav_html("index.html"))
                         .replace("{{NEWEST}}", newest_index(ms, out_dir, added_dates(repo, ms)))

@@ -283,15 +283,18 @@ def test_runes():
              ("faigian", "oen"): "FAI-ghi-an"}
     for (w, d), want in cases.items():
         assert runic.phonemize(w, dialect=d)["respell"] == want, w
-    work = REPO / "texts" / "runes"
-    if sources_present(work):
-        before = (work / "gen/inscriptions.yaml").read_text()
-        report = draft.run(work)
-        assert (work / "gen/inscriptions.yaml").read_text() == before
-        assert report["counts"] == {"lines": 4, "tokens": 41}
-        assert report["failures"] == {}
-    r = check.run(REPO, "runes")
-    assert r["ok"], r["problems"]
+    # one inscription per work since the 2026-10-09 split; together the same 4 lines and 41 tokens
+    for name, counts in (("runes-kylver", {"lines": 1, "tokens": 24}), ("runes-gallehus", {"lines": 1, "tokens": 5}),
+                         ("runes-rok", {"lines": 2, "tokens": 12})):
+        work = REPO / "texts" / name
+        if sources_present(work):
+            before = (work / "gen/inscriptions.yaml").read_text()
+            report = draft.run(work)
+            assert (work / "gen/inscriptions.yaml").read_text() == before
+            assert report["counts"] == counts
+            assert report["failures"] == {}
+        r = check.run(REPO, name)
+        assert r["ok"], (name, r["problems"])
 
 
 def test_anglo_latin_and_magna_carta():
@@ -325,15 +328,17 @@ def test_national_latin_and_science():
         assert latin.phonemize(w, "as-first-read", q, dialect="english")["respell"] == want, w
     for w, want in fr.items():
         assert latin.phonemize(w, "as-first-read", q, dialect="french")["respell"] == want, w
-    work = REPO / "texts" / "science-latin"
-    if sources_present(work):
-        before = (work / "gen/sections.yaml").read_text()
-        report = draft.run(work)
-        assert (work / "gen/sections.yaml").read_text() == before
-        assert report["counts"] == {"lines": 10, "tokens": 91}
-        assert report["failures"] == {}             # every line verbatim in its own source
-    r = check.run(REPO, "science-latin")
-    assert r["ok"], r["problems"]
+    # Descartes and Newton, one page each since the 2026-10-09 split; together the same 10 lines and 91 tokens
+    for name, counts in (("descartes-principia", {"lines": 4, "tokens": 32}), ("newton-principia", {"lines": 6, "tokens": 59})):
+        work = REPO / "texts" / name
+        if sources_present(work):
+            before = (work / "gen/sections.yaml").read_text()
+            report = draft.run(work)
+            assert (work / "gen/sections.yaml").read_text() == before
+            assert report["counts"] == counts
+            assert report["failures"] == {}             # every line verbatim in its own source
+        r = check.run(REPO, name)
+        assert r["ok"], (name, r["problems"])
 
 
 def test_japanese_and_basho():
@@ -446,7 +451,7 @@ def test_voyages_check():
 
 def test_german_works_check():
     """Kant and Nietzsche (German, first editions) pass their checks."""
-    for work in ("kant", "nietzsche", "luther-bible"):
+    for work in ("kant-aufklaerung", "kant-practical-reason", "nietzsche-gay-science", "nietzsche-zarathustra", "luther-bible"):
         r = check.run(REPO, work)
         assert r["ok"], (work, r["problems"])
 

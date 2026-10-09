@@ -347,7 +347,7 @@ against the hexameter for Ovid. A word missing from the table is reported as `qu
 | `low-countries` | As first read: Latin in the Low Countries around 1500 (approximate) | Erasmus | Dutch vowel values long in open syllables, u as Dutch uu, g a fricative, ch kh, ti ts |
 | `tudor-english` | As first read: Latin in England around 1516 (approximate) | More | English long values in stressed open syllables at an earlier stage of the Great Vowel Shift, ti as si |
 | `german-humanist` | As first read: Latin in Saxony around 1517 (approximate) | Luther, Ninety-five Theses | German lengthening rule, c before front vowels ts, g hard, qu kv, v as f, final devoicing |
-| `as-first-read` | As first read: Newton in the English manner, Descartes in the French (approximate) | Descartes and Newton | per section `dialect`: english (1680s English method) or french (1640s French method, final stress, nasal vowels) |
+| `as-first-read` | As first read: in the author's own country's manner (approximate); each work names its manner | Descartes and Newton | per section `dialect`: english (1680s English method) or french (1640s French method, final stress, nasal vowels) |
 
 Manifests relabel some of these for their page (Erasmus, Pico, Inter caetera, More, Luther, the
 Res Gestae).
@@ -459,7 +459,7 @@ Norse ʀ is "between z and r"; v and w are both w; stress always on the first sy
 second scheme.
 
 **What it rests on.** The module does not cite a source. Sound is derived from each word's scholarly
-normalization in `texts/runes/edition.yaml`, never from the runes, because the younger futhark has
+normalization in each runic work's `edition.yaml` (`texts/runes-*/`), never from the runes, because the younger futhark has
 16 runes for about 30 sounds.
 
 **Where it is weakest.** Runes do not mark vowel length or many consonant contrasts; the sound

@@ -1,0 +1,52 @@
+work: nietzsche-gay-science
+split_from: nietzsche            # was one page with its sibling works; line IDs kept
+title: "Nietzsche, Die fröhliche Wissenschaft (1882), §125: Der tolle Mensch (The madman)"
+short_title: "Die fröhliche Wissenschaft"
+author: Friedrich Nietzsche (1844–1900)
+language: de
+lang_name: German of the 1880s           # shown on the page and in the library instead of "German"
+kind: philosophy
+wikipedia: {title: "The Gay Science", match: work}
+prefix: nz                        # nz.<section>.<line>[.<token>]; the line IDs of the page this work was split from
+urn: urn:weft:de:nietzsche   # kept from the page this work was split from, so line citations stay valid
+unit: section
+section_noun: passage
+written: {year: 1882, display: "1882", label: "printed at Chemnitz by Ernst Schmeitzner in 1882"}
+status: phase-0
+pilot: {sections: [fw125]}
+edition:
+  id: nietzsche-firsteds
+  name: "Weft's edition of Die fröhliche Wissenschaft (Chemnitz: Ernst Schmeitzner, 1882), §125, Der tolle Mensch, pages 153-155, in the spelling of the first edition, read from the scan of the Zentralbibliothek Zürich copy on e-rara and checked against its OCR"
+  format: weft-edition
+  file: edition.yaml
+  license: "Nietzsche's text is public domain; the e-rara scan and OCR are marked Public Domain Mark; Weft's transcription, line division, modern spellings and annotation CC BY-SA 4.0"
+treebank: null                    # no treebank for 19th-century German prose of this kind; lemma, morphology and gloss by hand, draft
+schemes: [northern, modern]       # default = educated northern German before the stage norm, here the 1880s (approximate)
+scheme_labels:
+  northern: "Educated German of the 1880s: Nietzsche's day (approximate)"
+  modern: "Modern Standard German"
+sources_extra:
+  - id: erara-fw1882
+    name: "Friedrich Nietzsche, Die fröhliche Wissenschaft (Chemnitz: Schmeitzner, 1882), Zentralbibliothek Zürich, 43.271, e-rara (doi:10.3931/e-rara-72849): full-text OCR, plain text"
+    file: sources/erara-fw1882.txt
+    url: https://www.e-rara.ch/download/ftpack/plain/20144693
+    sha256: 4b353c082c2f79e17edfa9cc4ac8b90dc6d341e3a43dc7f5c70a53f069043b47
+    license: public domain (Public Domain Mark 1.0, as stated by e-rara)
+    license_url: https://creativecommons.org/publicdomain/mark/1.0/
+translations:
+  - id: common1910
+    translator: Thomas Common
+    year: 1910
+    form: "prose, The Joyful Wisdom (\"La Gaya Scienza\"), translated by Thomas Common, with poetry rendered by Paul V. Cohn and Maude D. Petre, volume 10 of The Complete Works of Friedrich Nietzsche, ed. Oscar Levy (Edinburgh and London: T. N. Foulis, 1910); Project Gutenberg #52881"
+    license: public-domain
+    license_url: https://www.gutenberg.org/policy/license.html
+    file: sources/common-pg52881.txt
+    url: https://www.gutenberg.org/cache/epub/52881/pg52881.txt
+    sha256: a8bd1dff6679eebef87ab4ff870888bfee4a31651ad5cb655e80bc306e9ae5db
+predicted_gaps:
+  - "§125 is read from the scan of the 1882 print and checked against the e-rara OCR, not against a proofread transcription; one token (um, line 24) carries the OCR's reading because the OCR reads a speck on the page as a full stop"
+  - "the 1882 print sets emphasis by letter-spacing (Der tolle Mensch, Wir haben ihn getödtet, und doch haben sie dieselbe gethan); the edition does not mark it"
+  - "the pronunciation of educated German in the 1880s is reconstructed from the descriptions of northern educated speech before the stage norm of 1898; Nietzsche's own speech (he grew up in the Prussian province of Saxony and was schooled at Schulpforta) is not described closely enough to model, and its regional features are not modelled; the value of postvocalic r and of long ä is uncertain"
+  - "the sound is computed from the modern spelling of each word form; the spellings todt and That carry no sound difference from tot and Tat, but diess may stand for a short vowel where modern dies has a long one"
+  - "no treebank; lemma, morphology and gloss by hand, draft"
+  - "one public-domain English translation (Common, 1910)"

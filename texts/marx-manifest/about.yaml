@@ -1,0 +1,46 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: marx-manifest
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: The Communist Manifesto
+  lang: en
+  revision: 1378846411
+  url: https://en.wikipedia.org/w/index.php?title=The_Communist_Manifesto&oldid=1378846411
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “The Communist Manifesto” (en.wikipedia.org, revision 1378846411),
+    CC BY-SA 4.0
+  lead: The Communist Manifesto, originally the Manifesto of the Communist Party, is a political pamphlet
+    written by Karl Marx and Friedrich Engels. It was commissioned by the Communist League and published
+    in London in 1848. The text represents the first and most systematic attempt by the two founders of
+    scientific socialism to codify for wide consumption the historical materialist idea; namely, that
+    "the history of all hitherto existing society is the history of class struggles", in which social
+    classes are defined by the relationship of people to the means of production. Published amid the Revolutions
+    of 1848 in Europe, the manifesto has become one of the world's most influential political documents.
+    "A spectre is haunting Europe — the spectre of communism." and "Workers of the world, unite!" stand
+    as two iconic lines that frame the text, marking its opening and its close, respectively, with the
+    latter being reworked and popularized into a famous slogan of working-class solidarity.
+wikidata:
+  id: Q40591
+  revision: 2546296127
+  license: CC0
+  description: 1848 publication written by Karl Marx and Friedrich Engels
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  - id: Q46337
+    label: manifesto
+  genre:
+  - id: Q104783349
+    label: political manifesto
+  main_subject:
+  - id: Q233591
+    label: communist party
+  - id: Q2415843
+    label: communist revolution
+  - id: Q7272
+    label: socialism
+  - id: Q6186
+    label: communism

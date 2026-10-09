@@ -1,0 +1,34 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: buke-shohatto-1615
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Buke shohatto
+  lang: en
+  revision: 1376226779
+  url: https://en.wikipedia.org/w/index.php?title=Buke_shohatto&oldid=1376226779
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Buke shohatto” (en.wikipedia.org, revision 1376226779), CC
+    BY-SA 4.0
+  lead: The Buke shohatto (武家諸法度, lit. Various Points of Laws for Warrior Houses), commonly known in English
+    as the Laws for the Military Houses, was a collection of edicts issued by Japan's Tokugawa shogunate
+    governing the responsibilities and activities of daimyō (feudal lords) and the rest of the samurai
+    warrior aristocracy. These formed the basis of the bakuhan taisei (shogunate-domains system) which
+    lay at the foundation of the Tokugawa regime. The contents of the edicts were seen as a code of conduct,
+    a description of proper honorable daimyō behavior, and not solely laws which had to be obeyed. By
+    appealing to notions of morality and honor, therefore, the shogunate was able to see its strictures
+    followed despite its inability to enforce them directly.
+wikidata:
+  id: Q289817
+  revision: 2547487518
+  license: CC0
+  description: collection of laws issued by Japan's Tokugawa shogunate
+  instance_of:
+  - id: Q820655
+    label: statute
+  - id: Q87167
+    label: manuscript
+  - id: Q732577
+    label: publication

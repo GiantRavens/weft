@@ -1,0 +1,37 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: tamil-tirukkural
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Kural
+  lang: en
+  revision: 1379269903
+  url: https://en.wikipedia.org/w/index.php?title=Kural&oldid=1379269903
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Kural” (en.wikipedia.org, revision 1379269903), CC BY-SA 4.0
+  lead: 'The Tirukkuṟaḷ (Tamil: திருக்குறள், lit. ''sacred verses''), or shortened to the Kural (Tamil:
+    குறள்), is a classic Tamil language text on commoner''s morality consisting of 1,330 short couplets,
+    or kurals, of seven words each. The text is divided into three books with aphoristic teachings on
+    virtue (aram), wealth (porul) and love (inbam), respectively. It is widely admired for the universal
+    and non-sectarian character of its ethical teachings. Its authorship is traditionally attributed to
+    Valluvar, also known in full as Thiruvalluvar. The text has been dated variously from 300 BCE to 5th
+    century CE. The traditional accounts describe it as the last work of the third Sangam, but linguistic
+    analysis suggests a later date of 450 to 500 CE and that it was composed after the Sangam period.'
+wikidata:
+  id: Q2167085
+  revision: 2553711162
+  license: CC0
+  description: Classic Tamil-language sacred poetic text
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  - id: Q3331189
+    label: version, edition or translation
+  genre:
+  - id: Q482
+    label: poetry
+  main_subject:
+  - id: Q1275188
+    label: Secular ethics

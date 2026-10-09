@@ -1,0 +1,31 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: coptic-mark
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: parent
+wikipedia:
+  title: Gospel of Mark
+  lang: en
+  revision: 1379073613
+  url: https://en.wikipedia.org/w/index.php?title=Gospel_of_Mark&oldid=1379073613
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Gospel of Mark” (en.wikipedia.org, revision 1379073613), CC
+    BY-SA 4.0
+  lead: The Gospel of Mark is the second of the four canonical Gospels and one of the three Synoptic Gospels.
+    It narrates the ministry of Jesus from his baptism by John the Baptist to his crucifixion, his burial,
+    and the discovery of his empty tomb. It portrays Jesus as a teacher, an exorcist, a healer, and a
+    miracle worker.
+wikidata:
+  id: Q107388
+  revision: 2551517795
+  license: CC0
+  description: canonical Gospel of the New Testament
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  - id: Q29154430
+    label: book of the Bible
+  genre:
+  - id: Q34274
+    label: Gospel

@@ -1,0 +1,39 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: sunzi-art-of-war
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: The Art of War
+  lang: en
+  revision: 1379357659
+  url: https://en.wikipedia.org/w/index.php?title=The_Art_of_War&oldid=1379357659
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “The Art of War” (en.wikipedia.org, revision 1379357659), CC
+    BY-SA 4.0
+  lead: The Art of War is an ancient Chinese military treatise dating from the late Spring and Autumn
+    period (roughly 5th century BC). The work, which is attributed to the ancient Chinese military strategist
+    Sun Tzu ("Master Sun"), is composed of 13 chapters. Each chapter is devoted to a different set of
+    skills or arts related to warfare, finance and how they apply to military strategy and tactics. For
+    almost 1,500 years, it was the lead text in an anthology that was formalized as the Seven Military
+    Classics by Emperor Shenzong of Song in 1080. The Art of War remains one of the most influential works
+    on strategy of all time and has shaped both East Asian and Western military theory and thinking.
+wikidata:
+  id: Q8251
+  revision: 2551175788
+  license: CC0
+  description: 5th century BC Chinese military treatise
+  instance_of:
+  - id: Q47461344
+    label: written work
+  genre:
+  - id: Q8134
+    label: economics
+  - id: Q384515
+    label: treatise
+  - id: Q81178297
+    label: treatise on war
+  main_subject:
+  - id: Q2560087
+    label: military art

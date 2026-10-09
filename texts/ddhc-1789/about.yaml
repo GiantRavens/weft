@@ -1,0 +1,33 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: ddhc-1789
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Declaration of the Rights of Man and of the Citizen
+  lang: en
+  revision: 1375474466
+  url: https://en.wikipedia.org/w/index.php?title=Declaration_of_the_Rights_of_Man_and_of_the_Citizen&oldid=1375474466
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Declaration of the Rights of Man and of the Citizen” (en.wikipedia.org,
+    revision 1375474466), CC BY-SA 4.0
+  lead: 'The Declaration of the Rights of Man and of the Citizen (French: Déclaration des droits de l''Homme
+    et du citoyen de 1789), set by France''s National Constituent Assembly in 1789, is a human and civil
+    rights document from the French Revolution; the French title can be translated in the modern era as
+    "Declaration of Human and Civil Rights". Inspired by Enlightenment philosophers, the declaration was
+    a core statement of the values of the French Revolution and had a significant impact on the development
+    of popular conceptions of individual liberty and democracy in Europe and worldwide.'
+wikidata:
+  id: Q169759
+  revision: 2541845710
+  license: CC0
+  description: foundational document of the French Revolution
+  instance_of:
+  - id: Q49848
+    label: document
+  - id: Q2620826
+    label: declaration
+  main_subject:
+  - id: Q8458
+    label: human rights

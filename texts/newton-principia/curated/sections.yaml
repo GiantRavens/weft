@@ -1,0 +1,66 @@
+# Human overlay for Newton's three laws of motion (Principia, 1687). No treebank covers the text, so this file carries
+# lemma and morphology too (rule 3 exception). Lemmas follow Lewis and Short.
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-09-29
+  why: Descartes I.7 and Newton's three laws; hand annotation, no treebank
+  status: draft
+  set:
+    sci.newton-1.1.1: {lemma: "corpus", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "body"}   # Corpus
+    sci.newton-1.1.2: {lemma: "omnis", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "every"}   # omne
+    sci.newton-1.1.3: {lemma: "persevero", morph: "VERB|Tense=Pres|VerbForm=Inf|Voice=Act", gloss: "to-persevere"}   # perseverare
+    sci.newton-1.1.4: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    sci.newton-1.1.5: {lemma: "status", morph: "NOUN|Case=Abl|Gender=Masc|Number=Sing", gloss: "state"}   # statu
+    sci.newton-1.1.6: {lemma: "suus", morph: "DET|Case=Abl|Gender=Masc|Number=Sing", gloss: "its-own"}   # suo
+    sci.newton-1.1.7: {lemma: "quiesco", morph: "VERB|Case=Gen|VerbForm=Ger", gloss: "of-resting"}   # quiescendi
+    sci.newton-1.1.8: {lemma: "vel", morph: "CCONJ", gloss: "or"}   # vel
+    sci.newton-1.1.9: {lemma: "moveo", morph: "VERB|Case=Gen|VerbForm=Ger", gloss: "of-moving"}   # movendi
+    sci.newton-1.1.10: {lemma: "uniformiter", morph: "ADV", gloss: "uniformly"}   # uniformiter
+    sci.newton-1.1.11: {lemma: "in", morph: "ADP", gloss: "into"}   # in
+    sci.newton-1.1.12: {lemma: "directus", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "a-straight-line"}   # directum
+    sci.newton-1.2.1: {lemma: "nisi", morph: "SCONJ", gloss: "unless"}   # nisi
+    sci.newton-1.2.2: {lemma: "quatenus", morph: "ADV", gloss: "insofar-as"}   # quatenus
+    sci.newton-1.2.3: {lemma: "ab", morph: "ADP", gloss: "by"}   # a
+    sci.newton-1.2.4: {lemma: "vis", morph: "NOUN|Case=Abl|Gender=Fem|Number=Plur", gloss: "forces"}   # viribus
+    sci.newton-1.2.5: {lemma: "imprimo", morph: "VERB|Case=Abl|Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "impressed"}   # impressis
+    sci.newton-1.2.6: {lemma: "cogo", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Pass", gloss: "it-is-compelled"}   # cogitur
+    sci.newton-1.2.7: {lemma: "status", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "state"}   # statum
+    sci.newton-1.2.8: {lemma: "ille", morph: "DET|Case=Acc|Gender=Masc|Number=Sing", gloss: "that"}   # illum
+    sci.newton-1.2.9: {lemma: "muto", morph: "VERB|Tense=Pres|VerbForm=Inf|Voice=Act", gloss: "to-change"}   # mutare
+    sci.newton-2.1.1: {lemma: "mutatio", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "change"}   # Mutationem
+    sci.newton-2.1.2: {lemma: "motus", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-motion"}   # motus
+    sci.newton-2.1.3: {lemma: "proportionalis", morph: "ADJ|Case=Acc|Gender=Fem|Number=Sing", gloss: "proportional"}   # proportionalem
+    sci.newton-2.1.4: {lemma: "sum", morph: "AUX|Tense=Pres|VerbForm=Inf", gloss: "to-be"}   # esse
+    sci.newton-2.1.5: {lemma: "vis", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "to-force"}   # vi
+    sci.newton-2.1.6: {lemma: "motrix", morph: "ADJ|Case=Dat|Gender=Fem|Number=Sing", gloss: "motive"}   # motrici
+    sci.newton-2.1.7: {lemma: "imprimo", morph: "VERB|Case=Dat|Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "impressed"}   # impressæ
+    sci.newton-2.2.1: {lemma: "et", morph: "CCONJ", gloss: "and"}   # &
+    sci.newton-2.2.2: {lemma: "fio", morph: "VERB|Tense=Pres|VerbForm=Inf", gloss: "to-be-made"}   # fieri
+    sci.newton-2.2.3: {lemma: "secundum", morph: "ADP", gloss: "along"}   # secundum
+    sci.newton-2.2.4: {lemma: "linea", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "line"}   # lineam
+    sci.newton-2.2.5: {lemma: "rectus", morph: "ADJ|Case=Acc|Gender=Fem|Number=Sing", gloss: "straight"}   # rectam
+    sci.newton-2.2.6: {lemma: "qui", morph: "PRON|Case=Abl|Gender=Fem|Number=Sing|PronType=Rel", gloss: "along-which"}   # qua
+    sci.newton-2.2.7: {lemma: "vis", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "force"}   # vis
+    sci.newton-2.2.8: {lemma: "ille", morph: "DET|Case=Nom|Gender=Fem|Number=Sing", gloss: "that"}   # illa
+    sci.newton-2.2.9: {lemma: "imprimo", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Pass", gloss: "is-impressed"}   # imprimitur
+    sci.newton-3.1.1: {lemma: "actio", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "to-action"}   # Actioni
+    sci.newton-3.1.2: {lemma: "contrarius", morph: "ADJ|Case=Acc|Gender=Fem|Number=Sing", gloss: "contrary"}   # contrariam
+    sci.newton-3.1.3: {lemma: "semper", morph: "ADV", gloss: "always"}   # semper
+    sci.newton-3.1.4: {lemma: "et", morph: "CCONJ", gloss: "and"}   # &
+    sci.newton-3.1.5: {lemma: "aequalis", morph: "ADJ|Case=Acc|Gender=Fem|Number=Sing", gloss: "equal"}   # æqualem
+    sci.newton-3.1.6: {lemma: "sum", morph: "AUX|Tense=Pres|VerbForm=Inf", gloss: "to-be"}   # esse
+    sci.newton-3.1.7: {lemma: "reactio", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "reaction"}   # reactionem
+    sci.newton-3.2.1: {lemma: "sive", morph: "CCONJ", gloss: "or"}   # sive
+    sci.newton-3.2.2: {lemma: "corpus", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-bodies"}   # corporum
+    sci.newton-3.2.3: {lemma: "duo", morph: "NUM|Case=Gen|Gender=Neut|Number=Plur", gloss: "two"}   # duorum
+    sci.newton-3.2.4: {lemma: "actio", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "actions"}   # actiones
+    sci.newton-3.2.5: {lemma: "in", morph: "ADP", gloss: "upon"}   # in
+    sci.newton-3.2.6: {lemma: "sui", morph: "PRON|Case=Acc|Reflex=Yes", gloss: "each-other"}   # se
+    sci.newton-3.2.7: {lemma: "mutuo", morph: "ADV", gloss: "mutually"}   # mutuo
+    sci.newton-3.2.8: {lemma: "semper", morph: "ADV", gloss: "always"}   # semper
+    sci.newton-3.2.9: {lemma: "sum", morph: "AUX|Tense=Pres|VerbForm=Inf", gloss: "to-be"}   # esse
+    sci.newton-3.2.10: {lemma: "aequalis", morph: "ADJ|Case=Acc|Gender=Fem|Number=Plur", gloss: "equal"}   # æquales
+    sci.newton-3.2.11: {lemma: "et", morph: "CCONJ", gloss: "and"}   # &
+    sci.newton-3.2.12: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    sci.newton-3.2.13: {lemma: "pars", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "directions"}   # partes
+    sci.newton-3.2.14: {lemma: "contrarius", morph: "ADJ|Case=Acc|Gender=Fem|Number=Plur", gloss: "contrary"}   # contrarias
+    sci.newton-3.2.15: {lemma: "dirigo", morph: "VERB|Tense=Pres|VerbForm=Inf|Voice=Pass", gloss: "to-be-directed"}   # dirigi

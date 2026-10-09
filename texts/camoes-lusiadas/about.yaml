@@ -1,0 +1,40 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: camoes-lusiadas
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Os Lusíadas
+  lang: en
+  revision: 1375257556
+  url: https://en.wikipedia.org/w/index.php?title=Os_Lus%C3%ADadas&oldid=1375257556
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Os Lusíadas” (en.wikipedia.org, revision 1375257556), CC BY-SA
+    4.0
+  lead: 'Os Lusíadas (Portuguese pronunciation: [uʒ luˈzi.ɐðɐʃ]), usually translated as The Lusiads, is
+    a Portuguese epic poem written by Luís Vaz de Camões (c. 1524/5 – 1580) and first published in 1572.
+    It is widely regarded as the most important work of Portuguese-language literature and is frequently
+    compared to Virgil''s Aeneid (1st c. BC). The work celebrates the discovery of a sea route to India
+    by the Portuguese explorer Vasco da Gama (1469–1524). The ten cantos of the poem are in ottava rima
+    and total 1,102 stanzas.'
+wikidata:
+  id: Q781898
+  revision: 2548770997
+  license: CC0
+  description: Portuguese epic poem by Luís de Camões
+  instance_of:
+  - id: Q1521512
+    label: national epic
+  - id: Q11396303
+    label: printed book
+  genre:
+  - id: Q37484
+    label: epic poem
+  main_subject:
+  - id: Q7790
+    label: history of Portugal
+  - id: Q1570124
+    label: Portuguese discoveries
+  - id: Q951383
+    label: The Portuguese discovery of the sea route to India

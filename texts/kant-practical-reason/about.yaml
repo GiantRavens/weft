@@ -1,0 +1,37 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: kant-practical-reason
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Critique of Practical Reason
+  lang: en
+  revision: 1369272463
+  url: https://en.wikipedia.org/w/index.php?title=Critique_of_Practical_Reason&oldid=1369272463
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Critique of Practical Reason” (en.wikipedia.org, revision 1369272463),
+    CC BY-SA 4.0
+  lead: 'The Critique of Practical Reason (German: Kritik der praktischen Vernunft) is the second of Immanuel
+    Kant''s three critiques, published in 1788. Hence, it is sometimes referred to as the "second critique".
+    It follows on from Kant''s first critique, the Critique of Pure Reason, and is one of his major works
+    on moral philosophy. While Kant had already published one significant work in moral philosophy, the
+    Groundwork of the Metaphysics of Morals (1785), the Critique of Practical Reason was intended to develop
+    his account of the will as determinable by (or able to act from) the moral law alone, place his ethical
+    views within the larger framework of his system of critical philosophy, and expand on certain themes
+    in his moral philosophy such as the feeling of respect for the moral law and the concept of the highest
+    good.'
+wikidata:
+  id: Q870851
+  revision: 2515886642
+  license: CC0
+  description: 1788 work by Immanuel Kant
+  instance_of:
+  - id: Q12765855
+    label: philosophical work
+  genre:
+  - id: Q35760
+    label: essay
+  main_subject:
+  - id: Q2689619
+    label: Kantian ethics

@@ -1,0 +1,36 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: more-utopia
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Utopia (book)
+  lang: en
+  revision: 1375013643
+  url: https://en.wikipedia.org/w/index.php?title=Utopia_%28book%29&oldid=1375013643
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Utopia (book)” (en.wikipedia.org, revision 1375013643), CC
+    BY-SA 4.0
+  lead: 'Utopia (Latin: Libellus vere aureus, nec minus salutaris quam festivus, de optimo rei publicae
+    statu deque nova insula Utopia, "A truly golden little book, not less beneficial than enjoyable, about
+    how things should be in a state and about the new island Utopia") is a work of fiction and socio-political
+    satire by Thomas More (1478–1535), written in Latin and published in 1516 and revised in 1518. The
+    book is a frame narrative primarily depicting a fictional island society and its religious, social
+    and political customs. Many aspects of More''s description of Utopia are reminiscent of life in monasteries.'
+wikidata:
+  id: Q404158
+  revision: 2532192711
+  license: CC0
+  description: 1516 book by Thomas More
+  instance_of:
+  - id: Q47461344
+    label: written work
+  genre:
+  - id: Q179805
+    label: political philosophy
+  - id: Q8242
+    label: literature
+  main_subject:
+  - id: Q131156
+    label: utopia

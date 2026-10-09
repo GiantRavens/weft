@@ -1,0 +1,41 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: newton-principia
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Philosophiæ Naturalis Principia Mathematica
+  lang: en
+  revision: 1378557022
+  url: https://en.wikipedia.org/w/index.php?title=Philosophi%C3%A6_Naturalis_Principia_Mathematica&oldid=1378557022
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Philosophiæ Naturalis Principia Mathematica” (en.wikipedia.org,
+    revision 1378557022), CC BY-SA 4.0
+  lead: 'Philosophiæ Naturalis Principia Mathematica (English: The Mathematical Principles of Natural
+    Philosophy), often called simply the Principia (), is a book by Sir Isaac Newton that expounds Newton''s
+    laws of motion and his law of universal gravitation.'
+wikidata:
+  id: Q205921
+  revision: 2541614929
+  license: CC0
+  description: 1687 work by Isaac Newton describing his laws of motion and gravitation
+  instance_of:
+  - id: Q47461344
+    label: written work
+  - id: Q384515
+    label: treatise
+  - id: Q10383930
+    label: academic work
+  genre:
+  - id: Q269323
+    label: natural philosophy
+  - id: Q11397
+    label: classical mechanics
+  main_subject:
+  - id: Q81745
+    label: classical physics
+  - id: Q38433
+    label: Newton's laws of motion
+  - id: Q11412
+    label: gravity

@@ -1,0 +1,196 @@
+# Weft edition of the Brindisi of La traviata (Act I; libretto by Francesco Maria Piave, Venice 1853), from Alfredo's
+# 'Libiam ne' lieti calici' to the exchange with Violetta. Text of Italian Wikisource, from the Ricordi libretto scan
+# (Pagina:La traviata.djvu/7, validated); each line is checked verbatim against the pinned revision. verify_strip sets
+# aside the speaker templates, the italic stage directions, the line-leading colons and the page templates.
+# The librettist's spelling is kept (Poichè, Nè, perchè, sè with the grave; innebrii; lagrima); the work's own
+# lexicon.yaml gives each word its stress and vowel quality.
+#   t     the word as printed, punctuation attached (the ellipses of Godiam... are the libretto's)
+#   Lines are the verses; sections are the speeches, named for the singer.
+work: verdi-traviata
+joiner: ' '
+verify_strip: (?sm)<noinclude>.*?</noinclude>|\{\{T\|(?:[^{}]|\{\{[^{}]*\}\})*\}\}|''\([^)]*\)''|''[^']*''|\{\{[^{}]*\}\}|<[^>]+>|^[:;]+
+verify_corrections:
+- ocr: guisto
+  print: giusto
+  in: sources/otello-2-2.txt
+sections:
+- id: alfredo1
+  title: Alfredo
+  verify_in: sources/traviata-p7.txt
+  lines:
+  - tokens:
+    - t: Libiam
+    - t: ne’
+    - t: lieti
+    - t: calici
+  - tokens:
+    - t: Che
+    - t: la
+    - t: bellezza
+    - t: infiora,
+  - tokens:
+    - t: E
+    - t: la
+    - t: fuggevol
+    - t: ora
+  - tokens:
+    - t: S’innebrii
+    - t: a
+    - t: voluttà.
+  - tokens:
+    - t: Libiam
+    - t: ne’
+    - t: dolci
+    - t: fremiti
+  - tokens:
+    - t: Che
+    - t: suscita
+    - t: l’amore,
+  - tokens:
+    - t: Poichè
+    - t: quell’occhio
+    - t: al
+    - t: core
+  - tokens:
+    - t: Onnipotente
+    - t: va.
+- id: tutti1
+  title: All
+  verify_in: sources/traviata-p7.txt
+  lines:
+  - tokens:
+    - t: Libiamo;
+    - t: amor
+    - t: fra
+    - t: i
+    - t: calici
+  - tokens:
+    - t: Più
+    - t: caldi
+    - t: baci
+    - t: avrà.
+- id: violetta1
+  title: Violetta
+  verify_in: sources/traviata-p7.txt
+  lines:
+  - tokens:
+    - t: Tra
+    - t: voi,
+    - t: saprò
+    - t: dividere
+  - tokens:
+    - t: Il
+    - t: tempo
+    - t: mio
+    - t: giocondo;
+  - tokens:
+    - t: Tutto
+    - t: è
+    - t: follia
+    - t: nel
+    - t: mondo
+  - tokens:
+    - t: Ciò
+    - t: che
+    - t: non
+    - t: è
+    - t: piacer.
+  - tokens:
+    - t: Godiam,
+    - t: fugace
+    - t: e
+    - t: rapido
+  - tokens:
+    - t: È
+    - t: il
+    - t: gaudio
+    - t: dell’amore;
+  - tokens:
+    - t: È
+    - t: fior
+    - t: che
+    - t: nasce
+    - t: e
+    - t: muore,
+  - tokens:
+    - t: Nè
+    - t: più
+    - t: si
+    - t: può
+    - t: goder.
+- id: tutti2
+  title: All
+  verify_in: sources/traviata-p7.txt
+  lines:
+  - tokens:
+    - t: Godiam...
+    - t: c’invita
+    - t: un
+    - t: fervido
+  - tokens:
+    - t: Accento
+    - t: lusinghier.
+  - tokens:
+    - t: Godiam...
+    - t: la
+    - t: tazza
+    - t: e
+    - t: il
+    - t: cantico
+  - tokens:
+    - t: Le
+    - t: notti
+    - t: abbella
+    - t: e
+    - t: il
+    - t: riso;
+  - tokens:
+    - t: In
+    - t: questo
+    - t: paradiso
+  - tokens:
+    - t: Ne
+    - t: scopra
+    - t: il
+    - t: nuovo
+    - t: dì.
+- id: violetta2
+  title: Violetta
+  verify_in: sources/traviata-p7.txt
+  lines:
+  - tokens:
+    - t: La
+    - t: vita
+    - t: è
+    - t: nel
+    - t: tripudio...
+- id: alfredo2
+  title: Alfredo
+  verify_in: sources/traviata-p7.txt
+  lines:
+  - tokens:
+    - t: Quando
+    - t: non
+    - t: s’ami
+    - t: ancora.
+- id: violetta3
+  title: Violetta
+  verify_in: sources/traviata-p7.txt
+  lines:
+  - tokens:
+    - t: Nol
+    - t: dite
+    - t: a
+    - t: chi
+    - t: lo
+    - t: ignora...
+- id: alfredo3
+  title: Alfredo
+  verify_in: sources/traviata-p7.txt
+  lines:
+  - tokens:
+    - t: È
+    - t: il
+    - t: mio
+    - t: destin
+    - t: così...

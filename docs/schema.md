@@ -14,6 +14,7 @@ A work lives in `texts/<work>/`:
 | `curated/bookNN.yaml`| humans            | overlay changesets; win over gen on conflict              |
 | `sense/<tr>.yaml`    | align (hand in phase 0) | one file per translation, spans keyed to line IDs  |
 | `notes/bookNN.yaml`  | harvest + humans  | notes attached to token or line IDs                       |
+| `about.yaml`         | `weft about`      | what the work is: Wikipedia lead and Wikidata subjects. Regenerable |
 
 `private/<work>/` mirrors this layout for licensed material, with its own `manifest.yaml`
 listing private translations. Only `weft build --private` reads it.
@@ -111,6 +112,45 @@ age (negative for BC). `display` is the short date shown in bold in the library'
 the language: a single year ("1517"), a range ("1755–1750 BC"), or an approximate date ("c. 2350 BC",
 "4th–3rd c. BC"). Without it the column shows the year. `label` is the longer sentence under the
 title. A work can override the language name shown there with `lang_name`.
+
+## About the work: wikipedia and about.yaml
+
+`wikipedia: {title, match, lang}` in the manifest names the Wikipedia article that describes the work.
+`match` is one of `work` (the article is on this text, or on the work an excerpt comes from), `author`,
+`parent` (a collection or book containing the text) or `none`; `lang` defaults to `en`. A human names
+the article; `weft about` never guesses one. The page and search label an `author` or `parent` article
+as such, so an article on Enheduanna is never presented as an article on the Temple Hymns.
+
+`weft about <work>` writes `about.yaml`:
+
+```yaml
+work: inter-caetera-1493
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:                  # quoted verbatim, CC BY-SA 4.0 (the license of texts/), pinned by revision
+  title: Inter caetera
+  lang: en
+  revision: 1367216393
+  url: https://en.wikipedia.org/w/index.php?title=Inter_caetera&oldid=1367216393
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Inter caetera” (en.wikipedia.org, revision 1367216393), CC BY-SA 4.0
+  lead: Inter caetera ('Among other [works]') was a papal bull issued by Pope Alexander VI ...
+wikidata:                   # CC0; English labels, ids kept so a missing label is never invented
+  id: Q1134342
+  revision: 2489002486
+  license: CC0
+  description: papal bull by Alexander VI (4 May 1493) ...
+  instance_of: [{id: Q189867, label: papal bull}]
+  main_subject: [{id: Q127834, label: New World}]
+```
+
+The lead is the article's first paragraph, with the second when the first is under 200 characters.
+Unlike `sources/`, the file is committed: the build reads only what is committed, and the text is
+under the same license as `texts/`. It is regenerable, so it is never edited by hand; correct the
+manifest and rerun. `weft check` fails a bad `wikipedia` field or an incomplete or stale record, and
+warns where the field is missing, the record not yet fetched, or `match: none` leaves the about to
+be written by hand.
 
 ## The kind of a work
 

@@ -1,0 +1,36 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: einstein-1905-energieinhalt
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: parent
+wikipedia:
+  title: Annus mirabilis papers
+  lang: en
+  revision: 1375054824
+  url: https://en.wikipedia.org/w/index.php?title=Annus_mirabilis_papers&oldid=1375054824
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Annus mirabilis papers” (en.wikipedia.org, revision 1375054824),
+    CC BY-SA 4.0
+  lead: 'The annus mirabilis papers (from Latin: annus mirabilis, lit. ''miraculous year'') are four papers
+    that Albert Einstein published in the scientific journal Annalen der Physik (Annals of Physics) in
+    1905. As major contributions to the foundation of modern physics, these scientific publications were
+    the ones for which he gained fame among physicists. They revolutionized science''s understanding of
+    the fundamental concepts of space, time, mass, and energy.'
+wikidata:
+  id: Q51497
+  revision: 2413202654
+  license: CC0
+  description: papers of Albert Einstein published in the Annalen der Physik scientific journal in 1905
+  instance_of:
+  - id: Q16887380
+    label: group
+  main_subject:
+  - id: Q83213
+    label: photoelectric effect
+  - id: Q178036
+    label: Brownian motion
+  - id: Q11455
+    label: special relativity
+  - id: Q35875
+    label: mass–energy equivalence

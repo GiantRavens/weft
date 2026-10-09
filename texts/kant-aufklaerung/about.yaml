@@ -1,0 +1,31 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: kant-aufklaerung
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: What Is Enlightenment?
+  lang: en
+  revision: 1369990548
+  url: https://en.wikipedia.org/w/index.php?title=What_Is_Enlightenment%3F&oldid=1369990548
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “What Is Enlightenment?” (en.wikipedia.org, revision 1369990548),
+    CC BY-SA 4.0
+  lead: '"Answering the Question: What is Enlightenment?" (German: Beantwortung der Frage: Was ist Aufklärung?),
+    often referred to simply as "What is Enlightenment?" (Was ist Aufklärung?), is a 1784 essay by the
+    philosopher Immanuel Kant.'
+wikidata:
+  id: Q812981
+  revision: 2515883230
+  license: CC0
+  description: 1784 essay by Immanuel Kant
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q35760
+    label: essay
+  main_subject:
+  - id: Q12539
+    label: Age of Enlightenment

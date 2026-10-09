@@ -1,0 +1,36 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: linschoten-japan
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Itinerario
+  lang: en
+  revision: 1344946559
+  url: https://en.wikipedia.org/w/index.php?title=Itinerario&oldid=1344946559
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Itinerario” (en.wikipedia.org, revision 1344946559), CC BY-SA
+    4.0
+  lead: Itinerario is a peer-reviewed academic journal of history published three times a year by Cambridge
+    University Press on behalf of the Leiden Institute for History (Leiden University). It covers research
+    on the expansion of Europe in the context of colonialism between about 1500 and 1950. The journal
+    publishes original research articles, archival notes, interviews, and reviews. Itinerario is also
+    affiliated to the Forum for European Expansion and Global Interaction.
+wikidata:
+  id: Q6094746
+  revision: 2514892424
+  license: CC0
+  description: academic journal
+  instance_of:
+  - id: Q627517
+    label: history journal
+  main_subject:
+  - id: Q309
+    label: history
+  - id: Q1066186
+    label: study of history
+  - id: Q55022436
+    label: history of international relations
+  - id: Q3245246
+    label: history of colonialism

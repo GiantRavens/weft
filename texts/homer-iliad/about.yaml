@@ -1,0 +1,35 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: homer-iliad
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Iliad
+  lang: en
+  revision: 1377844937
+  url: https://en.wikipedia.org/w/index.php?title=Iliad&oldid=1377844937
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Iliad” (en.wikipedia.org, revision 1377844937), CC BY-SA 4.0
+  lead: 'The Iliad ( ILL-ee-əd; Ancient Greek: Ἰλιάς, romanized: Iliás [iːliás]; lit. ''[a poem] about
+    Ilion (Troy)'') is one of two major surviving ancient Greek epic poems attributed to Homer. It is
+    one of the oldest extant works of literature still widely read by modern readers. Like the Odyssey,
+    the poem is divided into 24 books and was written in dactylic hexameter. It contains 15,693 lines
+    in its standard edition. The Iliad is often regarded as the first substantial piece of European literature
+    and is central to the study of classical philology.'
+wikidata:
+  id: Q8275
+  revision: 2546571896
+  license: CC0
+  description: epic poem attributed to Homer
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  - id: Q7099402
+    label: oral poetry
+  genre:
+  - id: Q37484
+    label: epic poem
+  main_subject:
+  - id: Q136337874
+    label: wrath of Achilles

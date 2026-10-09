@@ -4,6 +4,7 @@ author: Unknown designer and embroiderers, probably for Bishop Odo of Bayeux
 language: lat
 lang_name: Medieval Latin
 kind: correspondence
+wikipedia: {title: "Bayeux Tapestry tituli", match: work}
 prefix: bt                       # bt.<scene>.<line>[.<token>]; the section id is the backing-cloth scene number
 urn: urn:weft:lat:bayeux-tapestry-tituli   # Weft-local identifier
 unit: section

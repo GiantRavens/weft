@@ -1,0 +1,31 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: nicene-creed
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Nicene Creed
+  lang: en
+  revision: 1372935758
+  url: https://en.wikipedia.org/w/index.php?title=Nicene_Creed&oldid=1372935758
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Nicene Creed” (en.wikipedia.org, revision 1372935758), CC BY-SA
+    4.0
+  lead: 'The Nicene Creed is the defining statement of belief of Nicene Christianity and in those Christian
+    denominations that adhere to it.
+
+
+    The original Nicene Creed was first adopted at the First Council of Nicaea in 325. According to the
+    traditional view, forwarded by the Council of Chalcedon of 451, the Creed was amended in 381 by the
+    First Council of Constantinople as "consonant to the holy and great Synod of Nice". Further, a creed
+    "almost identical in form" was used as early as 374 by St. Epiphanius of Salamis. The amended form
+    is presently referred to as the Niceno-Constantinopolitan Creed.'
+wikidata:
+  id: Q207937
+  revision: 2551862333
+  license: CC0
+  description: statement of belief adopted at the First Ecumenical Council in 325
+  instance_of:
+  - id: Q183770
+    label: Christian creed

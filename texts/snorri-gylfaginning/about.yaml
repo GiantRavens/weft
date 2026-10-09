@@ -1,0 +1,32 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: snorri-gylfaginning
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Gylfaginning
+  lang: en
+  revision: 1326514829
+  url: https://en.wikipedia.org/w/index.php?title=Gylfaginning&oldid=1326514829
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Gylfaginning” (en.wikipedia.org, revision 1326514829), CC BY-SA
+    4.0
+  lead: 'Gylfaginning (Old Norse: ''The Beguiling of Gylfi'' or ''The Deluding of Gylfi''; 13th century
+    Old Norse pronunciation [ˈɟʏlvaˌɟɪnːɪŋɡ]) is the first main part of the 13th-century Prose Edda, after
+    the initial Prologue. The Gylfaginning takes the form of a dialogue between a Swedish King Gylfi and
+    three men on thrones in Asgard called High, Just-As-High, and Third. Gylfi asks many questions of
+    the three men on the history and future of the Æsir. The creation and eventual destruction of the
+    world are described, as are many other aspects of Norse mythology. While the Gylfaginning never makes
+    it explicit, the three are often presumed to be guises of Odin.'
+wikidata:
+  id: Q1134288
+  revision: 2516881635
+  license: CC0
+  description: second part of the Prose Edda
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q1072723
+    label: travel literature

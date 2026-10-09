@@ -41,9 +41,9 @@ nt-john:
   license: Public domain
   source: https://commons.wikimedia.org/wiki/File:Papyrus66.jpg
   commons_file: File:Papyrus66.jpg
-runes:
-  image: art/works/runes.jpg
-  thumb: art/works/thumb/runes.jpg
+runes-kylver:
+  image: art/works/runes-kylver.jpg
+  thumb: art/works/thumb/runes-kylver.jpg
   caption: The Kylver stone, Gotland, about 400, carved with the complete futhark; Swedish History Museum.
   alt: Grey limestone slab with a line of runes carved along its upper edge
   credit: Photograph, unknown
@@ -101,9 +101,9 @@ saga-grettir:
   license: Public domain
   source: https://commons.wikimedia.org/wiki/File:AM426_Grettir.jpg
   commons_file: File:AM426 Grettir.jpg
-science-latin:
-  image: art/works/science-latin.jpg
-  thumb: art/works/thumb/science-latin.jpg
+newton-principia:
+  image: art/works/newton-principia.jpg
+  thumb: art/works/thumb/newton-principia.jpg
   caption: Title page of the first edition of Newton's Principia, London, 1687, with the imprimatur of Samuel Pepys as President of the Royal Society.
   alt: Printed title page reading Philosophiae Naturalis Principia Mathematica
   credit: Printed by Joseph Streater, London
@@ -380,9 +380,9 @@ luther-95-theses:
   source: https://commons.wikimedia.org/wiki/File:Ninety-five_Theses_(Basel).jpg
   commons_file: File:Ninety-five Theses (Basel).jpg
 
-kant:
-  image: art/works/kant.jpg
-  thumb: art/works/thumb/kant.jpg
+kant-aufklaerung:
+  image: art/works/kant-aufklaerung.jpg
+  thumb: art/works/thumb/kant-aufklaerung.jpg
   caption: 'The opening of Beantwortung der Frage: Was ist Aufklärung? in Fraktur, as reprinted in Immanuel Kants vermischte Schriften, edited by Johann Heinrich Tieftrunk, volume 2 (Halle, 1799). The essay first appeared in the Berlinische Monatsschrift in December 1784.'
   alt: Printed page in German Fraktur type beginning with the words Aufklärung ist der Ausgang des Menschen
   credit: Immanuel Kant; edition of J. H. Tieftrunk
@@ -391,9 +391,9 @@ kant:
   source: https://commons.wikimedia.org/wiki/File:KantWasIstAufkl%C3%A4rung.png
   commons_file: File:KantWasIstAufklärung.png
 
-nietzsche:
-  image: art/works/nietzsche.jpg
-  thumb: art/works/thumb/nietzsche.jpg
+nietzsche-gay-science:
+  image: art/works/nietzsche-gay-science.jpg
+  thumb: art/works/thumb/nietzsche-gay-science.jpg
   caption: Friedrich Nietzsche in profile, photographed by Gustav Schultze at Naumburg in early September 1882, the year Die fröhliche Wissenschaft was published.
   alt: Black and white photograph of a man with a large moustache, seen in profile, his head resting on his hand
   credit: Gustav Schultze
@@ -680,9 +680,9 @@ einstein-1905-energieinhalt:
   license: Public domain
   source: https://commons.wikimedia.org/wiki/File:Einstein_patentoffice.jpg
   commons_file: File:Einstein patentoffice.jpg
-verdi-libretti:
-  image: art/works/verdi-libretti.jpg
-  thumb: art/works/thumb/verdi-libretti.jpg
+verdi-otello:
+  image: art/works/verdi-otello.jpg
+  thumb: art/works/thumb/verdi-otello.jpg
   caption: "Giuseppe Verdi in a top hat, by Giovanni Boldini, 1886, painted in Paris the winter before Otello opened; Galleria Nazionale d'Arte Moderna, Rome."
   alt: Pastel portrait of an elderly bearded man in a top hat and white scarf, looking at the viewer
   credit: Giovanni Boldini
@@ -740,3 +740,63 @@ edda-lokasenna:
   license: Public domain
   source: "https://commons.wikimedia.org/wiki/File:Loki_taunts_Bragi.jpg"
   commons_file: "File:Loki taunts Bragi.jpg"
+runes-gallehus:
+  image: art/works/runes-gallehus.jpg
+  thumb: art/works/thumb/runes-gallehus.jpg
+  caption: Replicas of the golden horns of Gallehus in the National Museum of Denmark, Copenhagen; the originals were stolen and melted in 1802.
+  alt: "Two pairs of curved gold horns in a museum case, banded with rows of small figures, beside an eighteenth-century printed drawing of a horn."
+  credit: Lestat (Jan Mehlich)
+  date: 2005-05-10
+  license: CC BY-SA 3.0
+  source: "https://commons.wikimedia.org/wiki/File:Copenhagen_-_Nationalmuseet_-_Golden_horns_of_Gallehus.JPG"
+  commons_file: "File:Copenhagen - Nationalmuseet - Golden horns of Gallehus.JPG"
+runes-rok:
+  image: art/works/runes-rok.jpg
+  thumb: art/works/thumb/runes-rok.jpg
+  caption: The Rök runestone beside the church at Rök, Östergötland, under its shelter.
+  alt: A tall grey stone slab covered in rows of carved runes, standing outdoors under a roof.
+  credit: L'imaginaire
+  date: "2024-08-11 16:15:08"
+  license: CC0
+  source: "https://commons.wikimedia.org/wiki/File:R%C3%B6k_runestone_(R%C3%B6k%2C_%C3%96desh%C3%B6g_Municipality%2C_%C3%96sterg%C3%B6tland%2C_Sweden).jpg"
+  commons_file: "File:Rök runestone (Rök, Ödeshög Municipality, Östergötland, Sweden).jpg"
+descartes-principia:
+  image: art/works/descartes-principia.jpg
+  thumb: art/works/thumb/descartes-principia.jpg
+  caption: Title page of the first edition of Descartes's Principia philosophiae, Amsterdam, Louis Elzevir, 1644.
+  alt: A printed title page in Latin with a printer's emblem.
+  credit: René Descartes
+  date: '1644'
+  license: Public domain
+  source: "https://commons.wikimedia.org/wiki/File:Ren%C3%A9_Descartes_1644_Principia_philosophiae.jpg"
+  commons_file: "File:René Descartes 1644 Principia philosophiae.jpg"
+kant-practical-reason:
+  image: art/works/kant-practical-reason.jpg
+  thumb: art/works/thumb/kant-practical-reason.jpg
+  caption: Title page of the first edition of Kant's Critik der practischen Vernunft, Riga, 1788.
+  alt: "A printed German title page in Fraktur type, with a wreath ornament above the imprint."
+  credit: Immanuel Kant
+  date: 1788
+  license: Public domain
+  source: "https://commons.wikimedia.org/wiki/File:Critique_of_Practical_Reason_(German_edition).jpg"
+  commons_file: "File:Critique of Practical Reason (German edition).jpg"
+nietzsche-zarathustra:
+  image: art/works/nietzsche-zarathustra.jpg
+  thumb: art/works/thumb/nietzsche-zarathustra.jpg
+  caption: Nietzsche announces the title of his new book in a letter to Heinrich Köselitz, 1 February 1883.
+  alt: A handwritten page with the title Also sprach Zarathustra set out on it.
+  credit: Friedrich Nietzsche
+  date: 1883-02-01
+  license: Public domain
+  source: "https://commons.wikimedia.org/wiki/File:ASZ_Titelentwurf.JPG"
+  commons_file: "File:ASZ Titelentwurf.JPG"
+verdi-traviata:
+  image: art/works/verdi-traviata.jpg
+  thumb: art/works/thumb/verdi-traviata.jpg
+  caption: Poster for the first performance of La traviata, Teatro La Fenice, Venice, 1853.
+  alt: A printed theatre poster with the opera's title and cast list.
+  credit: Unknown
+  date: 1853
+  license: Public domain
+  source: "https://commons.wikimedia.org/wiki/File:Traviata.jpg"
+  commons_file: "File:Traviata.jpg"

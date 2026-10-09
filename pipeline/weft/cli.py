@@ -59,6 +59,9 @@ def main(argv: list[str] | None = None) -> int:
     ov.add_argument("work"); ov.add_argument("spec", nargs="?", help="spec YAML: lines: {id: 'Surface|gloss|lemma|code ;; ...'}")
     ov.add_argument("--out", help="file name under curated/")
     ov.add_argument("--reuse", nargs="+", metavar="WORK", help="print surface -> annotation hints from these works' overlays and exit")
+    ab = sub.add_parser("about", help="fetch the Wikipedia lead and Wikidata subjects named in the manifest into about.yaml")
+    ab.add_argument("work", help="a work's folder name, or 'all' for every public work")
+    ab.add_argument("--suggest", action="store_true", help="write nothing: list article candidates for works without a wikipedia field")
     a = ap.parse_args(argv)
     repo = repo_root()
     from . import paths
@@ -117,6 +120,16 @@ def main(argv: list[str] | None = None) -> int:
     elif a.cmd == "image":
         from . import scaffold
         show(scaffold.image(repo, a.work, a.commons_file, a.caption, a.alt))
+    elif a.cmd == "about":
+        from . import about
+        dirs = (sorted(d for d in (repo / "texts").iterdir() if (d / "manifest.yaml").exists())
+                if a.work == "all" else [paths.work_dir(repo, a.work)])
+        if a.suggest:
+            show(about.suggest(dirs))
+        else:
+            r = about.run(dirs)
+            show(r)
+            return 0 if r["predicted_found"] == r["actual_found"] else 1
     elif a.cmd == "overlay":
         from . import scaffold
         if a.reuse:

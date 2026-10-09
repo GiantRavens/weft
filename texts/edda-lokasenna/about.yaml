@@ -1,0 +1,30 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: edda-lokasenna
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Lokasenna
+  lang: en
+  revision: 1333710087
+  url: https://en.wikipedia.org/w/index.php?title=Lokasenna&oldid=1333710087
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Lokasenna” (en.wikipedia.org, revision 1333710087), CC BY-SA
+    4.0
+  lead: 'Lokasenna (Old Norse: ''The Flyting of Loki'', or ''Loki''s Verbal Duel'') is one of the poems
+    of the Poetic Edda. The poem presents flyting between the gods and Loki. It is written in the ljóðaháttr
+    metre, typical for wisdom verse. Lokasenna is believed to be a 10th-century poem.'
+wikidata:
+  id: Q1536612
+  revision: 2491475686
+  license: CC0
+  description: Old Norse poem from the Poetic Edda
+  instance_of:
+  - id: Q24457192
+    label: eddic poem
+  - id: Q24491885
+    label: Norse myth
+  main_subject:
+  - id: Q5463686
+    label: flyting

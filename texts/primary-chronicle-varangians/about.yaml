@@ -1,0 +1,29 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: primary-chronicle-varangians
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Calling of the Varangians
+  lang: en
+  revision: 1374934629
+  url: https://en.wikipedia.org/w/index.php?title=Calling_of_the_Varangians&oldid=1374934629
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Calling of the Varangians” (en.wikipedia.org, revision 1374934629),
+    CC BY-SA 4.0
+  lead: 'The calling of the Varangians, calling of the (Varangian) princes or invitation to the Varangians
+    (Russian: призвание варягов, romanized: prizvaniye varyagov; Ukrainian: покликання варягів, romanized:
+    poklykannya varyahiv) is a legend about the origins of the Rus'' people, the Rurik dynasty and the
+    Kievan Rus'' state, recorded in many divergent versions in various manuscripts and compilations of
+    Rus'' chronicles. These include the six main witnesses of the Primary Chronicle (PVL; mainly the Laurentian
+    (Lav.), Hypatian (Ipat.), and Radziwiłł (Rad.)) and the Novgorod First Chronicle (NPL), as well as
+    later textual witnesses such as the Sofia First Chronicle and the Pskov Third Chronicle.'
+wikidata:
+  id: Q4378226
+  revision: 2472138448
+  license: CC0
+  description: historical legend about the origins of Rus
+  instance_of:
+  - id: Q24336466
+    label: mythical event

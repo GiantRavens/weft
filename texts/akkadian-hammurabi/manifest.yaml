@@ -19,6 +19,7 @@ treebank: null                   # hand annotation, draft
 sound_confidence: low              # the page invites specialists to correct the sound guide or record it
 lang_name: "Old Babylonian Akkadian"
 kind: law
+wikipedia: {title: "Code of Hammurabi", match: work}
 schemes: [ob-1750, classroom]    # default = Old Babylonian around 1750 BC (approximate)
 sources_extra:
   - id: harper1904-p22

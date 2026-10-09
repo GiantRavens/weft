@@ -1,0 +1,15 @@
+# Weft edition of the Rök runestone: the standard scholarly transliteration, cited to its
+# catalogue number in the Scandinavian Runic-text Database (Rundata). Runic
+# transliteration is conventionally lowercase; R is the Old Norse R rune (ᛦ/ᛧ).
+# Each token: t = transliteration (what the runes spell), n = normalized form (what it says).
+# The runes are generated from t; the sound is generated from n.
+inscriptions:
+  - id: rok
+    title: "The Rök runestone (Ög 136), Östergötland, about 800: the opening"
+    alphabet: younger-short-twig
+    dialect: oen
+    lines:
+      - tokens: [{t: aft, n: aft}, {t: uamuþ, n: Væmōð}, {t: stonta, n: standa},
+                 {t: runaR, n: rūnaR}, {t: þaR, n: þaR}]
+      - tokens: [{t: n, n: æn}, {t: uarin, n: Varinn}, {t: faþi, n: fāði}, {t: faþiR, n: faðiR},
+                 {t: aft, n: aft}, {t: faikion, n: faigian}, {t: sunu, n: sunu}]

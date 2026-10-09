@@ -1,0 +1,303 @@
+# Weft edition of a passage by Immanuel Kant, in the spelling of its first printing.
+#
+# kpv  Critik der practischen Vernunft (Riga: Johann Friedrich Hartknoch, 1788), Beschluß, the first
+#      paragraph, pages 288-290. Text of the Deutsches Textarchiv (kant_pvernunft_1788), which
+#      transcribes the 1788 print; checked against the DTA TEI file by the sensor in
+#      pipeline/weft/german.py (section field check), which reads long s as s and the superscript
+#      e of the Fraktur umlauts (uͤ) as ü and rejoins words divided at line ends. The 1788 spelling
+#      is kept: Zwey, Gemüth, beschäfftigt, Ueberschwenglichen, blos, Bewußtseyn, Punct.
+#
+# Weft divides the text into lines at the sentence and, in long sentences, at a clause.
+#
+#   t     the word as printed, punctuation attached ("Unmündigkeit.", "(naturaliter")
+#   n     the modern spelling of the same word form (Zwey: zwei, Bewußtseyn:
+#         Bewusstsein); the form is kept (drohet, einsperreten, zunehmenden). The page shows it as
+#         "Modern spelling"; the sound of both schemes is computed from it
+#         (pipeline/weft/german.py with pipeline/weft/data/de_lexicon.yaml)
+work: kant-practical-reason
+joiner: " "
+verify_strip: "<ref>.*?</ref>|'''|\\{\\{SperrSchrift\\||\\}\\}|</?tt>|\\{\\{Seite\\|\\d+\\}\\}|&nbsp;"
+sections:
+  - id: "kpv"
+    title: "Critik der practischen Vernunft (1788), Beschluß (Conclusion): the first paragraph"
+    check: {file: sources/dta-kpv1788.xml, format: dta-tei}
+    lines:
+      - tokens:
+        - {t: "Zwey", n: "Zwei"}
+        - {t: "Dinge", n: "Dinge"}
+        - {t: "erfüllen", n: "erfüllen"}
+        - {t: "das", n: "das"}
+        - {t: "Gemüth", n: "Gemüt"}
+        - {t: "mit", n: "mit"}
+        - {t: "immer", n: "immer"}
+        - {t: "neuer", n: "neuer"}
+        - {t: "und", n: "und"}
+        - {t: "zunehmenden", n: "zunehmenden"}
+        - {t: "Bewunderung", n: "Bewunderung"}
+        - {t: "und", n: "und"}
+        - {t: "Ehrfurcht,", n: "Ehrfurcht"}
+        - {t: "je", n: "je"}
+        - {t: "öfter", n: "öfter"}
+        - {t: "und", n: "und"}
+        - {t: "anhaltender", n: "anhaltender"}
+        - {t: "sich", n: "sich"}
+        - {t: "das", n: "das"}
+        - {t: "Nachdenken", n: "Nachdenken"}
+        - {t: "damit", n: "damit"}
+        - {t: "beschäfftigt:", n: "beschäftigt"}
+      - tokens:
+        - {t: "Der", n: "Der"}
+        - {t: "bestirnte", n: "bestirnte"}
+        - {t: "Himmel", n: "Himmel"}
+        - {t: "über", n: "über"}
+        - {t: "mir,", n: "mir"}
+        - {t: "und", n: "und"}
+        - {t: "das", n: "das"}
+        - {t: "moralische", n: "moralische"}
+        - {t: "Gesetz", n: "Gesetz"}
+        - {t: "in", n: "in"}
+        - {t: "mir.", n: "mir"}
+      - tokens:
+        - {t: "Beide", n: "Beide"}
+        - {t: "darf", n: "darf"}
+        - {t: "ich", n: "ich"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "als", n: "als"}
+        - {t: "in", n: "in"}
+        - {t: "Dunkelheiten", n: "Dunkelheiten"}
+        - {t: "verhüllt,", n: "verhüllt"}
+        - {t: "oder", n: "oder"}
+        - {t: "im", n: "im"}
+        - {t: "Ueberschwenglichen,", n: "Überschwänglichen"}
+        - {t: "außer", n: "außer"}
+        - {t: "meinem", n: "meinem"}
+        - {t: "Gesichtskreise,", n: "Gesichtskreise"}
+        - {t: "suchen", n: "suchen"}
+        - {t: "und", n: "und"}
+        - {t: "blos", n: "bloß"}
+        - {t: "vermuthen;", n: "vermuten"}
+      - tokens:
+        - {t: "ich", n: "ich"}
+        - {t: "sehe", n: "sehe"}
+        - {t: "sie", n: "sie"}
+        - {t: "vor", n: "vor"}
+        - {t: "mir", n: "mir"}
+        - {t: "und", n: "und"}
+        - {t: "verknüpfe", n: "verknüpfe"}
+        - {t: "sie", n: "sie"}
+        - {t: "unmittelbar", n: "unmittelbar"}
+        - {t: "mit", n: "mit"}
+        - {t: "dem", n: "dem"}
+        - {t: "Bewußtseyn", n: "Bewusstsein"}
+        - {t: "meiner", n: "meiner"}
+        - {t: "Existenz.", n: "Existenz"}
+      - tokens:
+        - {t: "Das", n: "Das"}
+        - {t: "erste", n: "erste"}
+        - {t: "fängt", n: "fängt"}
+        - {t: "von", n: "von"}
+        - {t: "dem", n: "dem"}
+        - {t: "Platze", n: "Platze"}
+        - {t: "an,", n: "an"}
+        - {t: "den", n: "den"}
+        - {t: "ich", n: "ich"}
+        - {t: "in", n: "in"}
+        - {t: "der", n: "der"}
+        - {t: "äußern", n: "äußern"}
+        - {t: "Sinnenwelt", n: "Sinnenwelt"}
+        - {t: "einnehme,", n: "einnehme"}
+      - tokens:
+        - {t: "und", n: "und"}
+        - {t: "erweitert", n: "erweitert"}
+        - {t: "die", n: "die"}
+        - {t: "Verknüpfung,", n: "Verknüpfung"}
+        - {t: "darin", n: "darin"}
+        - {t: "ich", n: "ich"}
+        - {t: "stehe,", n: "stehe"}
+        - {t: "ins", n: "ins"}
+        - {t: "unabsehlich-Große", n: "unabsehlich-Große"}
+        - {t: "mit", n: "mit"}
+        - {t: "Welten", n: "Welten"}
+        - {t: "über", n: "über"}
+        - {t: "Welten", n: "Welten"}
+        - {t: "und", n: "und"}
+        - {t: "Systemen", n: "Systemen"}
+        - {t: "von", n: "von"}
+        - {t: "Systemen,", n: "Systemen"}
+      - tokens:
+        - {t: "überdem", n: "überdem"}
+        - {t: "noch", n: "noch"}
+        - {t: "in", n: "in"}
+        - {t: "grenzenlose", n: "grenzenlose"}
+        - {t: "Zeiten", n: "Zeiten"}
+        - {t: "ihrer", n: "ihrer"}
+        - {t: "periodischen", n: "periodischen"}
+        - {t: "Bewegung,", n: "Bewegung"}
+        - {t: "deren", n: "deren"}
+        - {t: "Anfang", n: "Anfang"}
+        - {t: "und", n: "und"}
+        - {t: "Fortdauer.", n: "Fortdauer"}
+      - tokens:
+        - {t: "Das", n: "Das"}
+        - {t: "zweyte", n: "zweite"}
+        - {t: "fängt", n: "fängt"}
+        - {t: "von", n: "von"}
+        - {t: "meinem", n: "meinem"}
+        - {t: "unsichtbaren", n: "unsichtbaren"}
+        - {t: "Selbst,", n: "Selbst"}
+        - {t: "meiner", n: "meiner"}
+        - {t: "Persönlichkeit,", n: "Persönlichkeit"}
+        - {t: "an,", n: "an"}
+        - {t: "und", n: "und"}
+        - {t: "stellt", n: "stellt"}
+        - {t: "mich", n: "mich"}
+        - {t: "in", n: "in"}
+        - {t: "einer", n: "einer"}
+        - {t: "Welt", n: "Welt"}
+        - {t: "dar,", n: "dar"}
+        - {t: "die", n: "die"}
+        - {t: "wahre", n: "wahre"}
+        - {t: "Unendlichkeit", n: "Unendlichkeit"}
+        - {t: "hat,", n: "hat"}
+        - {t: "aber", n: "aber"}
+        - {t: "nur", n: "nur"}
+        - {t: "dem", n: "dem"}
+        - {t: "Verstande", n: "Verstande"}
+        - {t: "spürbar", n: "spürbar"}
+        - {t: "ist,", n: "ist"}
+      - tokens:
+        - {t: "und", n: "und"}
+        - {t: "mit", n: "mit"}
+        - {t: "welcher", n: "welcher"}
+        - {t: "(dadurch", n: "dadurch"}
+        - {t: "aber", n: "aber"}
+        - {t: "auch", n: "auch"}
+        - {t: "zugleich", n: "zugleich"}
+        - {t: "mit", n: "mit"}
+        - {t: "allen", n: "allen"}
+        - {t: "jenen", n: "jenen"}
+        - {t: "sichtbaren", n: "sichtbaren"}
+        - {t: "Welten)", n: "Welten"}
+        - {t: "ich", n: "ich"}
+        - {t: "mich,", n: "mich"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "wie", n: "wie"}
+        - {t: "dort,", n: "dort"}
+        - {t: "in", n: "in"}
+        - {t: "blos", n: "bloß"}
+        - {t: "zufälliger,", n: "zufälliger"}
+        - {t: "sondern", n: "sondern"}
+        - {t: "allgemeiner", n: "allgemeiner"}
+        - {t: "und", n: "und"}
+        - {t: "nothwendiger", n: "notwendiger"}
+        - {t: "Verknüpfung", n: "Verknüpfung"}
+        - {t: "erkenne.", n: "erkenne"}
+      - tokens:
+        - {t: "Der", n: "Der"}
+        - {t: "erstere", n: "erstere"}
+        - {t: "Anblick", n: "Anblick"}
+        - {t: "einer", n: "einer"}
+        - {t: "zahllosen", n: "zahllosen"}
+        - {t: "Weltenmenge", n: "Weltenmenge"}
+        - {t: "vernichtet", n: "vernichtet"}
+        - {t: "gleichsam", n: "gleichsam"}
+        - {t: "meine", n: "meine"}
+        - {t: "Wichtigkeit,", n: "Wichtigkeit"}
+        - {t: "als", n: "als"}
+        - {t: "eines", n: "eines"}
+        - {t: "thierischen", n: "tierischen"}
+        - {t: "Geschöpfs,", n: "Geschöpfs"}
+      - tokens:
+        - {t: "das", n: "das"}
+        - {t: "die", n: "die"}
+        - {t: "Materie,", n: "Materie"}
+        - {t: "daraus", n: "daraus"}
+        - {t: "es", n: "es"}
+        - {t: "ward,", n: "ward"}
+        - {t: "dem", n: "dem"}
+        - {t: "Planeten", n: "Planeten"}
+        - {t: "(einem", n: "einem"}
+        - {t: "bloßen", n: "bloßen"}
+        - {t: "Punct", n: "Punkt"}
+        - {t: "im", n: "im"}
+        - {t: "Weltall)", n: "Weltall"}
+        - {t: "wieder", n: "wieder"}
+        - {t: "zurückgeben", n: "zurückgeben"}
+        - {t: "muß,", n: "muss"}
+        - {t: "nachdem", n: "nachdem"}
+        - {t: "es", n: "es"}
+        - {t: "eine", n: "eine"}
+        - {t: "kurze", n: "kurze"}
+        - {t: "Zeit", n: "Zeit"}
+        - {t: "(man", n: "man"}
+        - {t: "weiß", n: "weiß"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "wie)", n: "wie"}
+        - {t: "mit", n: "mit"}
+        - {t: "Lebenskraft", n: "Lebenskraft"}
+        - {t: "versehen", n: "versehen"}
+        - {t: "gewesen.", n: "gewesen"}
+      - tokens:
+        - {t: "Der", n: "Der"}
+        - {t: "zweyte", n: "zweite"}
+        - {t: "erhebt", n: "erhebt"}
+        - {t: "dagegen", n: "dagegen"}
+        - {t: "meinen", n: "meinen"}
+        - {t: "Werth,", n: "Wert"}
+        - {t: "als", n: "als"}
+        - {t: "einer", n: "einer"}
+        - {t: "Intelligenz,", n: "Intelligenz"}
+        - {t: "unendlich,", n: "unendlich"}
+        - {t: "durch", n: "durch"}
+        - {t: "meine", n: "meine"}
+        - {t: "Persönlichkeit,", n: "Persönlichkeit"}
+      - tokens:
+        - {t: "in", n: "in"}
+        - {t: "welcher", n: "welcher"}
+        - {t: "das", n: "das"}
+        - {t: "moralische", n: "moralische"}
+        - {t: "Gesetz", n: "Gesetz"}
+        - {t: "mir", n: "mir"}
+        - {t: "ein", n: "ein"}
+        - {t: "von", n: "von"}
+        - {t: "der", n: "der"}
+        - {t: "Thierheit", n: "Tierheit"}
+        - {t: "und", n: "und"}
+        - {t: "selbst", n: "selbst"}
+        - {t: "von", n: "von"}
+        - {t: "der", n: "der"}
+        - {t: "ganzen", n: "ganzen"}
+        - {t: "Sinnenwelt", n: "Sinnenwelt"}
+        - {t: "unabhängiges", n: "unabhängiges"}
+        - {t: "Leben", n: "Leben"}
+        - {t: "offenbart,", n: "offenbart"}
+      - tokens:
+        - {t: "wenigstens", n: "wenigstens"}
+        - {t: "so", n: "so"}
+        - {t: "viel", n: "viel"}
+        - {t: "sich", n: "sich"}
+        - {t: "aus", n: "aus"}
+        - {t: "der", n: "der"}
+        - {t: "zweckmäßigen", n: "zweckmäßigen"}
+        - {t: "Bestimmung", n: "Bestimmung"}
+        - {t: "meines", n: "meines"}
+        - {t: "Daseyns", n: "Daseins"}
+        - {t: "durch", n: "durch"}
+        - {t: "dieses", n: "dieses"}
+        - {t: "Gesetz,", n: "Gesetz"}
+        - {t: "welche", n: "welche"}
+        - {t: "nicht", n: "nicht"}
+        - {t: "auf", n: "auf"}
+        - {t: "Bedingungen", n: "Bedingungen"}
+        - {t: "und", n: "und"}
+        - {t: "Grenzen", n: "Grenzen"}
+        - {t: "dieses", n: "dieses"}
+        - {t: "Lebens", n: "Lebens"}
+        - {t: "eingeschränkt", n: "eingeschränkt"}
+        - {t: "ist,", n: "ist"}
+        - {t: "sondern", n: "sondern"}
+        - {t: "ins", n: "ins"}
+        - {t: "Unendliche", n: "Unendliche"}
+        - {t: "geht,", n: "geht"}
+        - {t: "abnehmen", n: "abnehmen"}
+        - {t: "läßt.", n: "lässt"}

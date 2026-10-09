@@ -712,7 +712,7 @@ lines:
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:herleitung1.3
   stanza: herleitung1
   stanza_title: 'The derivation, 1: the energy of light in a moving frame'
-  text: die Strahlrichtung (Wellennormale) bilde den Winkel \varphi mit der x-Achse des Systems.
+  text: die Strahlrichtung (Wellennormale) bilde den Winkel φ mit der x-Achse des Systems.
   tokens:
   - id: ein.herleitung1.3.1
     surface: die
@@ -793,8 +793,7 @@ lines:
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:herleitung1.4
   stanza: herleitung1
   stanza_title: 'The derivation, 1: the energy of light in a moving frame'
-  text: Führt man ein neues, gegen das System (x,y,z) in gleichförmiger Paralleltranslation begriffenes Koordinatensystem (\xi,\eta,\zeta ) ein, dessen Ursprung sich mit der Geschwindigkeit v längs der
-    x-Achse bewegt,
+  text: Führt man ein neues, gegen das System (x,y,z) in gleichförmiger Paralleltranslation begriffenes Koordinatensystem (ξ,η,ζ) ein, dessen Ursprung sich mit der Geschwindigkeit v längs der x-Achse bewegt,
   tokens:
   - id: ein.herleitung1.4.1
     surface: Führt
@@ -963,7 +962,7 @@ lines:
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:herleitung1.5
   stanza: herleitung1
   stanza_title: 'The derivation, 1: the energy of light in a moving frame'
-  text: 'so besitzt die genannte Lichtmenge — im System (\xi,\eta,\zeta ) gemessen — die Energie:'
+  text: 'so besitzt die genannte Lichtmenge — im System (ξ,η,ζ) gemessen — die Energie:'
   tokens:
   - id: ein.herleitung1.5.1
     surface: so
@@ -1221,7 +1220,7 @@ lines:
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:herleitung2.1
   stanza: herleitung2
   stanza_title: 'The derivation, 2: a body that emits light in two directions'
-  text: Es befinde sich nun im System (x,y,z) ein ruhender Körper, dessen Energie — auf das System (x,y,z) bezogen — E_{0} sei.
+  text: Es befinde sich nun im System (x,y,z) ein ruhender Körper, dessen Energie — auf das System (x,y,z) bezogen — E₀ sei.
   tokens:
   - id: ein.herleitung2.1.1
     surface: Es
@@ -1349,7 +1348,7 @@ lines:
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:herleitung2.2
   stanza: herleitung2
   stanza_title: 'The derivation, 2: a body that emits light in two directions'
-  text: Relativ zu dem wie oben mit der Geschwindigkeit v bewegten System (\xi,\eta,\zeta ) sei die Energie des Körpers H_{0}.
+  text: Relativ zu dem wie oben mit der Geschwindigkeit v bewegten System (ξ,η,ζ) sei die Energie des Körpers H₀.
   tokens:
   - id: ein.herleitung2.2.1
     surface: Relativ
@@ -1466,8 +1465,8 @@ lines:
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:herleitung2.3
   stanza: herleitung2
   stanza_title: 'The derivation, 2: a body that emits light in two directions'
-  text: Dieser Körper sende in einer mit der x-Achse den Winkel \varphi bildenden Richtung ebene Lichtwellen von der Energie L/2 (relativ zu (x,y,z) gemessen) und gleichzeitig eine gleich große Lichtmenge
-    nach der entgegengesetzten Richtung.
+  text: Dieser Körper sende in einer mit der x-Achse den Winkel φ bildenden Richtung ebene Lichtwellen von der Energie L/2 (relativ zu (x,y,z) gemessen) und gleichzeitig eine gleich große Lichtmenge nach
+    der entgegengesetzten Richtung.
   tokens:
   - id: ein.herleitung2.3.1
     surface: Dieser
@@ -1879,7 +1878,7 @@ lines:
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:herleitung2.6
   stanza: herleitung2
   stanza_title: 'The derivation, 2: a body that emits light in two directions'
-  text: 'Nennen wir E_{1} bez. H_{1} die Energie des Körpers nach der Lichtaussendung relativ zum System (x,y,z) bez. (\xi,\eta,\zeta ) gemessen, so erhalten wir mit Benutzung der oben angegebenen Relation:'
+  text: 'Nennen wir E₁ bez. H₁ die Energie des Körpers nach der Lichtaussendung relativ zum System (x,y,z) bez. (ξ,η,ζ) gemessen, so erhalten wir mit Benutzung der oben angegebenen Relation:'
   tokens:
   - id: ein.herleitung2.6.1
     surface: Nennen
@@ -2551,7 +2550,7 @@ lines:
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:herleitung2.11
   stanza: herleitung2
   stanza_title: 'The derivation, 2: a body that emits light in two directions'
-  text: Die beiden in diesem Ausdruck auftretenden Differenzen von der Form H-E haben einfache physikalische Bedeutungen.
+  text: Die beiden in diesem Ausdruck auftretenden Differenzen von der Form H−E haben einfache physikalische Bedeutungen.
   tokens:
   - id: ein.herleitung2.11.1
     surface: Die
@@ -2804,8 +2803,7 @@ lines:
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:herleitung2.13
   stanza: herleitung2
   stanza_title: 'The derivation, 2: a body that emits light in two directions'
-  text: Es ist also klar, daß die Differenz H-E sich von der kinetischen Energie K des Körpers in bezug auf das andere System (System (\xi,\eta,\zeta )) nur durch eine additive Konstante C unterscheiden
-    kann,
+  text: Es ist also klar, daß die Differenz H−E sich von der kinetischen Energie K des Körpers in bezug auf das andere System (System (ξ,η,ζ)) nur durch eine additive Konstante C unterscheiden kann,
   tokens:
   - id: ein.herleitung2.13.1
     surface: Es
@@ -3411,7 +3409,7 @@ lines:
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:herleitung2.21
   stanza: herleitung2
   stanza_title: 'The derivation, 2: a body that emits light in two directions'
-  text: Die kinetische Energie des Körpers in bezug auf (\xi,\eta,\zeta ) nimmt infolge der Lichtaussendung ab, und zwar um einen von den Qualitäten des Körpers unabhängigen Betrag,
+  text: Die kinetische Energie des Körpers in bezug auf (ξ,η,ζ) nimmt infolge der Lichtaussendung ab, und zwar um einen von den Qualitäten des Körpers unabhängigen Betrag,
   tokens:
   - id: ein.herleitung2.21.1
     surface: Die
@@ -3571,7 +3569,7 @@ lines:
   cite: urn:weft:de:einstein.energieinhalt.1905.annalen1905:herleitung2.22
   stanza: herleitung2
   stanza_title: 'The derivation, 2: a body that emits light in two directions'
-  text: Die Differenz K_{0}-K_{1} hängt ferner von der Geschwindigkeit ebenso ab wie die kinetische Energie des Elektrons (l. c. § 10).
+  text: Die Differenz K₀−K₁ hängt ferner von der Geschwindigkeit ebenso ab wie die kinetische Energie des Elektrons (l. c. § 10).
   tokens:
   - id: ein.herleitung2.22.1
     surface: Die

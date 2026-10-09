@@ -1,0 +1,34 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: libai-jingyesi
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Quiet Night Thought
+  lang: en
+  revision: 1369447692
+  url: https://en.wikipedia.org/w/index.php?title=Quiet_Night_Thought&oldid=1369447692
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Quiet Night Thought” (en.wikipedia.org, revision 1369447692),
+    CC BY-SA 4.0
+  lead: 'Quiet Night Thought (simplified Chinese: 静夜思; traditional Chinese: 靜夜思; pinyin: Jìng Yè Sī) is
+    a famous poem written by the Tang dynasty poet Li Bai.'
+wikidata:
+  id: Q4391398
+  revision: 2436136235
+  license: CC0
+  description: poem by Li Bai
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q3236984
+    label: Tang poetry
+  main_subject:
+  - id: Q405
+    label: Moon
+  - id: Q9581
+    label: Confucianism
+  - id: Q8436
+    label: family

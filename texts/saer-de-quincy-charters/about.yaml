@@ -1,0 +1,25 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: saer-de-quincy-charters
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: author
+wikipedia:
+  title: Saer de Quincy, 1st Earl of Winchester
+  lang: en
+  revision: 1362368811
+  url: https://en.wikipedia.org/w/index.php?title=Saer_de_Quincy%2C_1st_Earl_of_Winchester&oldid=1362368811
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Saer de Quincy, 1st Earl of Winchester” (en.wikipedia.org,
+    revision 1362368811), CC BY-SA 4.0
+  lead: Saer de Quincy, 1st Earl of Winchester (c. 1155 – 3 November 1219) was one of the leaders of the
+    baronial rebellion against John, King of England, and a major figure in both the kingdoms of Scotland
+    and England in the decades around the turn of the twelfth and thirteenth centuries.
+wikidata:
+  id: Q1703908
+  revision: 2554073080
+  license: CC0
+  description: Scottish Earl
+  instance_of:
+  - id: Q5
+    label: human

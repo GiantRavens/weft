@@ -1,0 +1,43 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: daodejing
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Tao Te Ching
+  lang: en
+  revision: 1379195320
+  url: https://en.wikipedia.org/w/index.php?title=Tao_Te_Ching&oldid=1379195320
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Tao Te Ching” (en.wikipedia.org, revision 1379195320), CC BY-SA
+    4.0
+  lead: 'The Tao Te Ching or Dào Dé Jīng, (traditional Chinese: 道德經; simplified Chinese: 道德经; lit. ''Classic
+    of the Way and its Virtue'') also known simply as the Laozi, is an ancient Chinese classic text traditionally
+    credited to the sage Laozi, regarded as the foundational Taoist text. Central to both philosophical
+    and religious Taoism, it has been "profoundly influential" more broadly in Chinese culture, art and
+    medicine.'
+wikidata:
+  id: Q134425
+  revision: 2539965548
+  license: CC0
+  description: Chinese classic text
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  - id: Q576921
+    label: Chinese classics
+  - id: Q179461
+    label: religious text
+  - id: Q47461344
+    label: written work
+  genre:
+  - id: Q179461
+    label: religious text
+  - id: Q10552833
+    label: Taoist literature
+  main_subject:
+  - id: Q184663
+    label: Chinese philosophy
+  - id: Q6138759
+    label: Lao–Zhuang school

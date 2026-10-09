@@ -1,0 +1,38 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: magna-carta
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Magna Carta
+  lang: en
+  revision: 1379092417
+  url: https://en.wikipedia.org/w/index.php?title=Magna_Carta&oldid=1379092417
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Magna Carta” (en.wikipedia.org, revision 1379092417), CC BY-SA
+    4.0
+  lead: Magna Carta (Medieval Latin for "Great Charter"), sometimes spelled Magna Charta, is a royal charter
+    of rights sealed by King John of England at Runnymede, near Windsor, on 15 June 1215. First drafted
+    by the Archbishop of Canterbury, Cardinal Stephen Langton, to make peace between the unpopular king
+    and a group of rebel barons who demanded that the King confirm the Charter of Liberties, it promised
+    the protection of church rights, protection for the barons from illegal imprisonment, access to swift
+    and impartial justice, and limitations on feudal payments to the Crown, to be implemented through
+    a council of 25 barons. Neither side stood by their commitments, and the charter was annulled by Pope
+    Innocent III, leading to the First Barons' War.
+wikidata:
+  id: Q12519
+  revision: 2554913227
+  license: CC0
+  description: charter of rights agreed between King John of England and the nobility in 1215
+  instance_of:
+  - id: Q727002
+    label: charter
+  - id: Q93288
+    label: contract
+  - id: Q87167
+    label: manuscript
+  - id: Q18009587
+    label: Act of the Parliament of England
+  - id: Q7755
+    label: constitution

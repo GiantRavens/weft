@@ -1,0 +1,36 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: epictetus-enchiridion
+src: weft.about 0.1
+fetched: '2026-10-09'
+match: work
+wikipedia:
+  title: Enchiridion of Epictetus
+  lang: en
+  revision: 1323633951
+  url: https://en.wikipedia.org/w/index.php?title=Enchiridion_of_Epictetus&oldid=1323633951
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Enchiridion of Epictetus” (en.wikipedia.org, revision 1323633951),
+    CC BY-SA 4.0
+  lead: 'The Enchiridion or Handbook of Epictetus (Ancient Greek: Ἐγχειρίδιον Ἐπικτήτου, Enkheirídion
+    Epiktḗtou) is a short manual of Stoic ethical advice compiled by Arrian, a 2nd-century disciple of
+    the Greek philosopher Epictetus. Although the content is mostly derived from the Discourses of Epictetus,
+    it is not a summary of the Discourses but rather a compilation of practical precepts. Eschewing metaphysics,
+    Arrian focuses his attention on Epictetus''s work applying philosophy to daily life. Thus, the book
+    is a manual to show the way to achieve mental freedom and happiness in all circumstances.'
+wikidata:
+  id: Q2137133
+  revision: 2495452473
+  license: CC0
+  description: Stoic ethical advice compiled by Arrian
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q5891
+    label: philosophy
+  main_subject:
+  - id: Q9465
+    label: ethics
+  - id: Q183144
+    label: Epictetus
