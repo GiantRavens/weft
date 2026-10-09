@@ -114,18 +114,20 @@
     : `${D.work.author} · ${shortRef(first.id)}–${shortRef(first.id).split(".")[0] === shortRef(last.id).split(".")[0] ? lineNo(last.id) : shortRef(last.id)}`;
   const unreviewed = (c) => c && Object.values(c).some((x) => x.status !== "reviewed");
   const anyDraft = D.lines.some((l) => unreviewed(l.curated) || l.tokens.some((t) => t.curated && Object.values(t.curated).some((c) => c.status !== "reviewed")));
+  // the notes about the page are divs, not paragraphs: Safari's Reader counts paragraph text, and these
+  // would make a work page look like an article whose text Reader then drops (the interlinear lines)
   $("#colophon").append(
-    h("p", { text: `Text: ${D.edition.name} (${D.edition.license}). Lemma and morphology: ${D.treebank.name} (${D.treebank.license}).` }),
-    h("p", { text: "Translations: " + D.translations.map((t) => `${t.translator}, ${t.year} (${t.license})`).join("; ") + "."
+    h("div", { text: `Text: ${D.edition.name} (${D.edition.license}). Lemma and morphology: ${D.treebank.name} (${D.treebank.license}).` }),
+    h("div", { text: "Translations: " + D.translations.map((t) => `${t.translator}, ${t.year} (${t.license})`).join("; ") + "."
       + ((D.references || []).length ? " Cited, in copyright: " + D.references.map((r) => `${r.translator}, ${r.year}`).join("; ") + "." : "") }),
-    anyDraft ? h("p", { text: "Glosses, scansion and editorial notes are a phase 0 draft awaiting scholarly review." }) : null,
-    D.work.private_work ? h("p", { text: "A private work: it exists only in your own build, and has no public issue links." }) :
-    h("p", {}, "Corrections and recordings are welcome: ",
+    anyDraft ? h("div", { text: "Glosses, scansion and editorial notes are a phase 0 draft awaiting scholarly review." }) : null,
+    D.work.private_work ? h("div", { text: "A private work: it exists only in your own build, and has no public issue links." }) :
+    h("div", {}, "Corrections and recordings are welcome: ",
       issueLink("Correction", "a gloss, reading or note"), ", ",
       issueLink("Pronunciation", "the pronunciation"), ", ",
       issueLink("Recording", "a recording"), ". You do not need git. ",
       h("a", { href: "about.html", text: "About Weft" }), "."),
-    h("p", { text: `Built with Weft ${D.build.weft}${D.build.private ? " · private build, includes your own or licensed material; do not publish" : ""}.` }),
+    h("div", { text: `Built with Weft ${D.build.weft}${D.build.private ? " · private build, includes your own or licensed material; do not publish" : ""}.` }),
   );
 
   /* ---------- the collection: previous and next work in date order, and the library */
@@ -403,13 +405,13 @@
           h("div", {}, hexFigure(bits, changing), h("p", {}, a ? link(a) : `hexagram ${bits} is not in this edition`)),
           b ? h("div", { class: "arrow", "aria-hidden": "true", text: "→" }) : null,
           b ? h("div", {}, hexFigure(after), h("p", {}, link(b))) : null),
-        h("p", { class: "cast-how", text: changing.length
+        h("div", { class: "cast-how", text: changing.length
           ? `Changing lines: ${changing.map((i) => POS[i]).join(", ")}. They are marked in the text. Read the judgment and the changing lines of the first hexagram, then the judgment of the second.`
           : "No changing lines: read the judgment of this hexagram." }));
     }
     box.append(
       h("h2", { text: "Cast a hexagram" }),
-      h("p", { class: "cast-intro", text: "The three-coin method, as traditionally practised: three coins are thrown six times, building the hexagram from the bottom line up. Heads count 3 and tails 2, so each throw totals 6, 7, 8 or 9. Odd totals give an unbroken line, even totals a broken one; 6 and 9 are 'old' lines that change into their opposite, giving a second hexagram. This page describes the practice; it makes no claim about what the result means." }),
+      h("div", { class: "cast-intro", text: "The three-coin method, as traditionally practised: three coins are thrown six times, building the hexagram from the bottom line up. Heads count 3 and tails 2, so each throw totals 6, 7, 8 or 9. Odd totals give an unbroken line, even totals a broken one; 6 and 9 are 'old' lines that change into their opposite, giving a second hexagram. This page describes the practice; it makes no claim about what the result means." }),
       h("div", { class: "cast-controls" },
         h("button", { type: "button", class: "tool tool-primary", onclick: () => { throws = Array.from({ length: 6 }, coin); show(); }, text: "Throw the coins" }),
         h("details", {}, h("summary", { text: "Enter your own throws" }),
@@ -446,7 +448,7 @@
     $("#key-title").textContent = "Sound key · " + S.scheme;
     const rows = (D.keys[S.scheme] || []).map(([sym, desc]) => h("tr", {}, h("td", { text: sym }), h("td", { text: desc })));
     $("#key-body").replaceChildren(
-      h("p", { class: "scheme-note", text: schemeLabel(S.scheme) + ". Syllables are hyphenated; long vowels are doubled or written with their own symbol." }),
+      h("div", { class: "scheme-note", text: schemeLabel(S.scheme) + ". Syllables are hyphenated; long vowels are doubled or written with their own symbol." }),
       h("table", {}, h("tbody", {}, rows)));
   }
   $("#open-key").addEventListener("click", () => { fillKey(); if (keyDlg.showModal) keyDlg.showModal(); else keyDlg.setAttribute("open", ""); });
