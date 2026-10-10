@@ -108,6 +108,15 @@ Each page links to the correction, pronunciation and recording forms from its fo
 from its top. Contributors who do use git can submit the correction directly;
 [Contributing](../CONTRIBUTING.md) describes both routes.
 
+## Privacy
+
+I count visits to see which texts interest readers. On weftlibrary.org, PostHog records page views
+without cookies and without storing your IP address; it is set up so that I cannot identify you from
+it. Nothing is recorded when a page is opened from a downloaded copy. The pages are served by GitHub
+Pages and load their fonts from Google Fonts, and both services receive the ordinary request your
+browser makes, as described in their own privacy policies. To ask what I hold about you, or to have
+it deleted, write to [skip@weftlibrary.org](mailto:skip@weftlibrary.org).
+
 ## Further reading
 
 - [Contributing](../CONTRIBUTING.md): how corrections, recordings and new texts are submitted and reviewed.

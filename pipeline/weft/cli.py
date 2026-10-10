@@ -91,6 +91,9 @@ def main(argv: list[str] | None = None) -> int:
             from . import search
             r = search.write(repo, (repo / "private" / "build") if a.private else (repo / "site" / "build"), a.private)
             print(f"indexed {r['works']} works, {r['tokens']} tokens ({r['bytes'] // 1024} KB)" + (f"; {r['failures']}" if r["failures"] else ""))
+        if not a.private:   # visit counting on the published pages only (pipeline/weft/analytics.py)
+            from . import analytics
+            print(f"analytics: stamped {analytics.stamp_dir(repo / 'site' / 'build')} pages")
     elif a.cmd == "previews":
         from . import build, previews
         out = repo / "site" / "build"
