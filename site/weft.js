@@ -174,7 +174,7 @@
       for (const t of line.tokens) {
         const snd = (t.sound && t.sound[S.scheme]) || {};
         const w = h("button", {
-          type: "button", class: "w" + ((notesByAttach[t.id] || []).length ? " has-note" : "") + (t.stave ? " stave" : "") + (t.caesura ? " caesura" : ""),
+          type: "button", class: "w" + ((notesByAttach[t.id] || []).length ? " has-note" : "") + (t.stave ? " stave" : "") + (t.caesura ? " caesura" : "") + (t.uncertain ? " uncertain" : ""),
           "data-id": t.id, onclick: () => showWord(t, line),
           "aria-label": `${t.surface}${t.gloss ? ", " + t.gloss : ""}`,
         },
@@ -263,6 +263,7 @@
     if (t.stave) prov.push("Stave: an alliterating sound that binds the verse");
     if (t.printed) prov.push(`Printed in the edition as ${t.printed}`);
     if (t.prov && t.prov.sound) prov.push(`Sound: ${t.prov.sound}`);
+    if (t.prov && t.prov.text) prov.push(`Reading: ${t.prov.text}`);
     if (t.curated) for (const [f, c] of Object.entries(t.curated)) prov.push(`${f}: ${c.by}, ${c.date} (${c.status})`);
     wordBody.replaceChildren(
       h("div", { class: "big", lang: LANG, text: t.surface }),

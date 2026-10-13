@@ -113,6 +113,7 @@ the page shows no invitation.
 | | | Schikaneder, Die Zauberflöte (1791) | northern (first), modern | medium |
 | | | Luther's Bible | ecg1545 (first), modern | not set |
 | Swahili | `swahili` | Steere, The Kites and the Crows | z1870 (first), modern | medium |
+| Cherokee | `cherokee` | Constitution of the Cherokee Nation (1827), the preamble | c1828 (first), modern | low |
 | Esperanto | `esperanto` | Zamenhof, Unua Libro specimens (1887) | zamenhof (only) | not set |
 | Quenya, Sindarin | `elvish` | private works only (Tolkien, in copyright) | tolkien (only) | not set |
 
@@ -828,6 +829,59 @@ drop one of them (module and manifest).
 **What a specialist could improve.** The syllabic-nasal rule and the a + e coalescence in
 `swahili.py`; the modern forms in `texts/swahili-tales-steere/edition.yaml`; aspiration where a
 nasal was lost.
+
+## Cherokee
+
+**Schemes.**
+- `c1828`, "Cherokee of the New Echota press, 1828 (approximate)": each sign of Sequoyah's syllabary
+  read by the values Samuel Worcester gives in 1828. The g-row and d-row are unaspirated stops,
+  between English g and k, d and t; ka and the t-row (ta, te, ti) are aspirated; v is a nasal
+  vowel; the ts-row is ts; tl and dl are laterals.
+- `modern`, "Cherokee as read in Oklahoma today": the same signs with the ts-row as j (dʒ), the
+  g- and d-rows as plain k and t, and w as an unrounded glide.
+
+Both schemes give one syllable per sign. A lone s (Ꮝ) closes the syllable before it, or begins
+the first syllable of a word. A romanization row under the text is generated from the signs in
+the transliteration that descends from Worcester's chart and that the Unicode character names use.
+The module reads its sign table from those names, so no sign value is typed by hand (module).
+
+**What it rests on.** Worcester's answer to Rafinesque's questions, *Cherokee Phoenix*, vol. 1,
+no. 23 (6 August 1828), p. 2, as transcribed by Western Carolina University's Hunter Library. Of the
+gi in the nation's name he writes "G. as pronounced by Germans represents it best", and of five
+g-signs that "the sound of German G is most common". Of six signs that write English D, "the
+consonant sound of the three first of which is always, and that of the three latter often, better
+represented by D. than by T."; the letter does not name the six, and the module takes them to be
+da, de, di and do, du, dv from the recitation order. v has "nearly the sound of *un* French". English
+*J*, *Ch* and soft *G* in proper names are written with the ts-row (*Tsa-tsi*, George), and the
+press's dialect has *l* where "one dialect" has *r*. Everything else in the first scheme (ka and the
+t-row aspirated, hna voiceless, the laterals, w and y) and all of the modern scheme follow present
+descriptions of the syllabary's values (module).
+
+**Where it is weakest.** The syllabary does not write tone, pitch accent, vowel length, a
+syllable-final h or glottal stop, or whether a written vowel is said. A vowel may be written only
+to carry a consonant cluster (ᏧᎾᏍᏗ is said with no vowel after n). The sound row therefore says
+every written vowel, carries no accent, and gives no length or pitch. It is a reading of the signs,
+not a record of a speaker. Worcester notes that many syllables are "sometimes aspirated" (*hwi*,
+*hli*, and no "as if written *hno*"); the row does not model this. The ts-row is read as ts in the
+first scheme, as Worcester spells it, but his letter does not settle between ts and the j of jam,
+and present descriptions give both by dialect. The obsolete sign Ᏽ is read as mv, after its Unicode
+name. Worcester's letter describes two aspirated nasal syllables without naming the signs, and
+Walker and Sarbaugh (1993), as cited by Wikipedia, read him as placing this one near hv; the press
+cast no type for it (module).
+
+**The first work.** The preamble of the Constitution of 1827, from the bilingual printing of 1828,
+transcribed by hand and by Tesseract and settled on a scan of about 180 pixels to the inch. Two
+habits of the 1828 type matter for any reader of it, by eye or machine: Ꮩ (do) is cast as a Λ, an
+A without its crossbar, and Ꮅ (li) as a plain F; Tesseract's model reads them as Ꭺ (go) and Ꮲ (tlv).
+Where the scan alone did not settle a sign, the word was looked for in the 1860 New Testament and
+the dictionaries at cherokeedictionary.net, and two signs are left uncertain on the page. The
+glosses are drafted against Feeling's dictionary, the New Testament and Wiktionary, and are held
+as a draft until a Cherokee speaker has reviewed them (work).
+
+**What a specialist could improve.** Where written vowels go unsaid; the aspiration Worcester
+describes; tone, from a dictionary that marks it (Feeling, *Cherokee-English Dictionary*, 1975)
+word by word in the edition. Corrections from speakers come first (see
+[About Weft](about.md#texts-of-living-communities)).
 
 ## Esperanto
 

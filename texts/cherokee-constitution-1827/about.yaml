@@ -1,0 +1,33 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: cherokee-constitution-1827
+src: weft.about 0.1
+fetched: '2026-10-13'
+match: parent
+wikipedia:
+  title: Cherokee Nation (1794–1907)
+  lang: en
+  revision: 1371364423
+  url: https://en.wikipedia.org/w/index.php?title=Cherokee_Nation_%281794%E2%80%931907%29&oldid=1371364423
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Cherokee Nation (1794–1907)” (en.wikipedia.org, revision 1371364423),
+    CC BY-SA 4.0
+  lead: 'The Cherokee Nation (Cherokee: ᏣᎳᎩᎯ ᎠᏰᎵ) was an autonomous tribal government of the Cherokee
+    people that existed from 1794 to 1907. Often referred to as "The Nation" by its inhabitants, the government
+    was centered first at New Echota in present-day Georgia and, after removal to Indian Territory, at
+    Tahlequah. In 1827 the Nation adopted a written constitution with legislative, executive, and judicial
+    branches, and in 1832 the United States Supreme Court affirmed in Worcester v. Georgia that the Cherokee
+    Nation was a "distinct political community" in which state laws had no force.'
+wikidata:
+  id: Q5092177
+  revision: 2470404266
+  license: CC0
+  description: autonomous tribal Native American government in North America; recognized from 1794 to
+    1907
+  instance_of:
+  - id: Q6266
+    label: nation
+  - id: Q471855
+    label: jurisdiction
+  - id: Q43229
+    label: organization

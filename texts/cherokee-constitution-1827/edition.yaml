@@ -1,0 +1,106 @@
+# Weft edition of the Cherokee text of the preamble to the Constitution of the Cherokee Nation (New Echota, July 1827), as
+# printed in the bilingual edition of 1828 (Newberry Library, VAULT Ayer 251 .C211 1828; the scan pinned as scan-p1).
+# The text was read from the scan by hand and by Tesseract (gen/ocr/p1.txt, made by weft ocr) and settled sign by sign
+# on the scan; where a reading turned on a word, the word was looked for in the Cherokee New Testament of 1860 and the
+# dictionaries searched at cherokeedictionary.net. The words the print hyphenates across its lines are joined.
+#   t          the word as printed, punctuation attached
+#   ocr        the OCR's reading, where the print (settled on the scan) differs from it; "" for a word it dropped
+#   uncertain  {alt, why}: a sign the scan does not settle; t is the reading kept, alt the other
+# Four readings rest on a word found in the 1860 New Testament or Feeling's dictionary as well as on the scan, and are
+# marked below with a comment: ᎠᏫᏂᏗᏢ (Ꮧ, not the OCR's Ꮨ), ᏙᎯ (the Λ-shaped sign read as Ꮩ, do), ᎣᏣᎵᎡᎵᏥᏏ and ᎤᎾᏤᎵ (the
+# plain F-shaped sign read as Ꮅ, li). Punctuation is checked by eye only: the OCR comparison is by letters.
+# Lines are Weft's division of the text at its commas, semicolons and stops; the one section is the preamble.
+work: cherokee-constitution-1827
+joiner: ' '
+ocr_check: {file: gen/ocr/p1.txt}
+sections:
+- id: pre
+  title: Preamble
+  lines:
+  - tokens:
+    - t: ᎠᏴ
+    - t: ᎬᏂᏉ
+    - t: ᎠᏫᏂᏗᏢ          # Ꮧ: ᎠᏫᏂᏗᏢ, "within", NT Matthew 23:25
+      ocr: ᎠᏫᏂᏘᏢ
+    - t: ᏙᎦᏙᎥ
+      ocr: ᎪᎦᎪᎥ
+    - t: ᎪᎪᏪᎳ,
+    - t: ᏣᎳᎩ
+    - t: ᎾᏅᎾᏛ
+    - t: ᎪᎩᏁᏤᎸᎯ,
+  - tokens:
+    - t: ᏚᏳᎪᏛ
+      ocr: ᏚᏨᎪᏛ
+    - t: ᎣᎩᏁᎢᏍᏗᏱ,
+    - t: ᎠᎴ
+    - t: ᏙᎯ          # Ꮩ: ᏙᎯ, Feeling "well (health)"; beside "ensure tranquility"
+      ocr: ᎪᎯ
+    - t: ᎣᎩᎾᏄᎪᏫᏍᏗᏱ,
+  - tokens:
+    - t: ᎠᎴ
+    - t: ᎣᏒ
+    - t: ᎢᏂᎦᎵᏍᏓᏁᏗ
+      ocr: ᎢᏲᎦᏢᏍᏖᏓᏁᏗ
+      uncertain: {alt: ᎢᏲᎦᎵᏍᏓᏁᏗ, why: 'the second sign is Ꮒ (ni) or Ᏺ (yo): the curl that marks Ᏺ (clear in ᏲᏏ, line 8) is not seen here, which favours Ꮒ, but the scan''s resolution leaves it open, and neither form was found in the dictionaries or the 1860 New Testament'}
+    - t: ᎨᏒ
+    - t: ᏃᏥᎥ
+    - t: ᏣᎳᎩ
+    - t: ᏙᎦᏙᎥ
+      ocr: ᏁᎪ
+    - t: ᏦᎩᎸᏫᏍᏓᏁᏗᏱ,
+      ocr: ᏦᎩᏑᎰᎥᏫᏍᏓᏁᏗᏱ
+  - tokens:
+    - t: ᎾᏍᏉ
+    - t: ᎣᎩᏍᏓᏱᏗᏍᏗᏱ
+      ocr: ᎣᎩᏍᏱᏗᏍᎢᏱ
+    - t: ᎣᏤᎲ
+    - t: ᏦᎩᎾᏝᎢ
+      ocr: ᎬᎩᏮᏝᎢ
+    - t: ᏂᎨᏒᎾ
+    - t: ᏥᎩ,
+    - t: ᎠᎴ
+    - t: ᏦᎨᏥ
+    - t: ᎾᏍᏉ
+    - t: ᎢᏳᏍᏗ
+    - t: ᏦᏥᏍᏓᏱᏕᏗᏱ,
+  - tokens:
+    - t: ᏦᎩᎳᏫᏨᎯ,
+    - t: ᎯᎠ
+    - t: ᏗᎧᎾᏩᏛᏍᏗ
+      ocr: ᏗᎧᎾᏩᏛᏍᏗᎥ
+    - t: ᏣᎳᎩ
+    - t: ᎤᎾᏤᎵ          # Ꮅ: ᎤᎾᏤᎵ, "theirs", NT
+      ocr: ᎤᎧᏤᏢ
+    - t: ᎣᏦᏢᎾ.
+      ocr: ᎣᏦᏢᏮ
+  - tokens:
+    - t: ᎦᎸᎳᏗᏗᎾ
+    - t: ᎡᎯ,
+    - t: ᏂᎬᎾᏛ
+    - t: ᎤᎬᏫᏳᎯ,
+    - t: ᎣᏥᏁᎢᏍᏓ;
+      ocr: ᎣᏥᏁᎢᏍᏖ
+      uncertain: {alt: ᎣᏥᏁᎢᏍᏖ, why: 'the last sign is Ꮣ (da) or Ꮦ (te), which differ by a stroke the scan does not show clearly; ᏁᎢᏍᏓ is found in the 1860 New Testament (ᏥᏁᎢᏍᏓ) and in Feeling''s dictionary (ᎯᏁᎢᏍᏓ), ᏁᎢᏍᏖ was not; the curled top of the sign is nearer the page''s other Ꮣ'}
+  - tokens:
+    - t: ᎠᎴ
+    - t: ᎣᏣᎵᎡᎵᏥᏏ          # Ꮅ: the stem of ᎦᎵᎡᎵᎦ, "I am thankful", NT
+      ocr: ᎣᏣᎵᎡᏢᏥᏏ
+    - t: ᎾᏍᎩ
+    - t: ᎢᏳᏩᏂᏌᏛ
+      ocr: ᎢᏅᏩᏂᏌᏛ
+    - t: ᏥᎩ
+    - t: ᎯᎠ
+    - t: ᎾᏍᎩ
+    - t: ᎢᏳᏍᏗ
+      ocr: ᎢᎹᎴᏍᏗ
+    - t: ᏦᎩᎸᏫᏍᏓᏁᏗ
+    - t: ᏂᏥᎦᎵᏍᏓᏂᎦ,
+      ocr: ᏂᏥᎦᏢᏍᏓᏂᎦ
+  - tokens:
+    - t: ᎠᎴ
+    - t: ᎾᏍᎩ
+    - t: ᎣᎩᏍᏕᎸᏗᏱ,
+      ocr: ᎣᎩᏯᏐᎸᏗᏱ
+    - t: ᎠᎴ
+    - t: ᎣᎨᏂᏗᏱ,
+    - t: ᎣᏥᏔᏲᏏ.

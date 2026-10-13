@@ -266,6 +266,10 @@ body.rtl .src[lang="fa"] { font-family: "Noto Naskh Arabic", "Geeza Pro", "Times
 .word .big[lang="fa"] { font-family: "Noto Naskh Arabic", "Geeza Pro", serif; direction: rtl; }
 .src[lang="ta"] { font-family: "Noto Serif Tamil", "Tamil Sangam MN", serif; font-size: calc(var(--src-size) * 0.95); line-height: 1.5; }
 .word .big[lang="ta"] { font-family: "Noto Serif Tamil", "Tamil Sangam MN", serif; }
+.src[lang="chr"] { font-family: "Noto Sans Cherokee", "Plantagenet Cherokee", "Gadugi", sans-serif; font-size: calc(var(--src-size) * 1.05); }
+.word .big[lang="chr"], .word .lemma[lang="chr"] { font-family: "Noto Sans Cherokee", "Plantagenet Cherokee", "Gadugi", sans-serif; }
+/* a sign the scan cannot settle: the word's detail gives both readings */
+.w.uncertain .form { text-decoration: underline dotted; text-underline-offset: 0.2em; }
 
 /* a translation still in copyright: cited, not reproduced */
 .ref-note { max-width: 1120px; margin: 14px auto 0; padding: 0 16px; font: 0.85rem/1.55 var(--sans); color: var(--ink-soft); }
