@@ -1,0 +1,57 @@
+# Human overlay for Deuteronomy 6:4-9, the first paragraph of the Shema. Lemma and morphology come from the
+# OSHB; this file adds glosses. Grammar rides in the English: and-you-shall-love (the converted perfect,
+# וְ + perfect, read as a future command), our-God (pronoun suffix), to-your-sons (lamed + suffix).
+# The divine name is glossed LORD, as the Jewish and English Bibles render the word read in its place.
+- by: Claude (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-10
+  why: hand gloss; Strong's gives a sense per lemma, not per verse
+  status: draft
+  set:
+    deut.6.4.1: {gloss: "hear"}   # שְׁמַע
+    deut.6.4.2: {gloss: "Israel"}   # יִשְׂרָאֵל
+    deut.6.4.3: {gloss: "LORD"}   # יְהוָה
+    deut.6.4.4: {gloss: "our-God"}   # אֱלֹהֵינוּ
+    deut.6.4.5: {gloss: "LORD"}   # יְהוָה
+    deut.6.4.6: {gloss: "one"}   # אֶחָד
+    deut.6.5.1: {gloss: "and-you-shall-love"}   # וְאָהַבְתָּ
+    deut.6.5.2: {gloss: "[obj]"}   # אֵת
+    deut.6.5.3: {gloss: "LORD"}   # יְהוָה
+    deut.6.5.4: {gloss: "your-God"}   # אֱלֹהֶיךָ
+    deut.6.5.5: {gloss: "with-all"}   # בְּכָל
+    deut.6.5.6: {gloss: "your-heart"}   # לְבָבְךָ
+    deut.6.5.7: {gloss: "and-with-all"}   # וּבְכָל
+    deut.6.5.8: {gloss: "your-soul"}   # נַפְשְׁךָ
+    deut.6.5.9: {gloss: "and-with-all"}   # וּבְכָל
+    deut.6.5.10: {gloss: "your-might"}   # מְאֹדֶךָ
+    deut.6.6.1: {gloss: "and-shall-be"}   # וְהָיוּ
+    deut.6.6.2: {gloss: "the-words"}   # הַדְּבָרִים
+    deut.6.6.3: {gloss: "these"}   # הָאֵלֶּה
+    deut.6.6.4: {gloss: "which"}   # אֲשֶׁר
+    deut.6.6.5: {gloss: "I"}   # אָנֹכִי
+    deut.6.6.6: {gloss: "command-you"}   # מְצַוְּךָ
+    deut.6.6.7: {gloss: "the-day"}   # הַיּוֹם
+    deut.6.6.8: {gloss: "upon"}   # עַל
+    deut.6.6.9: {gloss: "your-heart"}   # לְבָבֶךָ
+    deut.6.7.1: {gloss: "and-you-shall-repeat-them"}   # וְשִׁנַּנְתָּם
+    deut.6.7.2: {gloss: "to-your-sons"}   # לְבָנֶיךָ
+    deut.6.7.3: {gloss: "and-you-shall-speak"}   # וְדִבַּרְתָּ
+    deut.6.7.4: {gloss: "of-them"}   # בָּם
+    deut.6.7.5: {gloss: "in-your-sitting"}   # בְּשִׁבְתְּךָ
+    deut.6.7.6: {gloss: "in-your-house"}   # בְּבֵיתֶךָ
+    deut.6.7.7: {gloss: "and-in-your-going"}   # וּבְלֶכְתְּךָ
+    deut.6.7.8: {gloss: "on-the-way"}   # בַדֶּרֶךְ
+    deut.6.7.9: {gloss: "and-in-your-lying-down"}   # וּֽבְשָׁכְבְּךָ
+    deut.6.7.10: {gloss: "and-in-your-rising"}   # וּבְקוּמֶךָ
+    deut.6.8.1: {gloss: "and-you-shall-bind-them"}   # וּקְשַׁרְתָּם
+    deut.6.8.2: {gloss: "as-a-sign"}   # לְאוֹת
+    deut.6.8.3: {gloss: "upon"}   # עַל
+    deut.6.8.4: {gloss: "your-hand"}   # יָדֶךָ
+    deut.6.8.5: {gloss: "and-they-shall-be"}   # וְהָיוּ
+    deut.6.8.6: {gloss: "as-frontlets"}   # לְטֹטָפֹת
+    deut.6.8.7: {gloss: "between"}   # בֵּין
+    deut.6.8.8: {gloss: "your-eyes"}   # עֵינֶיךָ
+    deut.6.9.1: {gloss: "and-you-shall-write-them"}   # וּכְתַבְתָּם
+    deut.6.9.2: {gloss: "upon"}   # עַל
+    deut.6.9.3: {gloss: "the-doorposts-of"}   # מְזֻזוֹת
+    deut.6.9.4: {gloss: "your-house"}   # בֵּיתֶךָ
+    deut.6.9.5: {gloss: "and-in-your-gates"}   # וּבִשְׁעָרֶיךָ

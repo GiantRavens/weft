@@ -1,0 +1,86 @@
+# Human overlay for the Mourner's Kaddish. No treebank covers the liturgy; lemma, morphology and gloss are by hand,
+# in the conventions of the OSHB-derived Aramaic of Daniel 5 (Stem=Peal/Pael/Aphel/Hithpaal, State=Abs/Cons/Det).
+# Lemmas are dictionary forms after Jastrow, A Dictionary of the Targumim (1903). The eight verbs of praise are
+# Hithpaal jussives, 'may it be magnified...'; the gloss row gives the first in full and the rest as and-praised.
+# The last line and a half (וְחַיִּים עָלֵינוּ..., עֹשֶׂה שָׁלוֹם...) are Hebrew, glossed the same way. A noun with a
+# pronoun suffix (שְׁמֵהּ, his-name) is State=Cons, as the OSHB marks it.
+- by: Claude (Weft phase 0), hand parse and gloss; for review by Skip and a scholar
+  date: 2026-10-10
+  why: no treebank for the liturgy; a hand parse with hand glosses, as for the Nicene Creed
+  status: draft
+  set:
+    kadd.yitgadal.1.1: {lemma: "גְּדַל", morph: "VERB|Conj=Yiqtol|Gender=Masc|Mood=Jus|Number=Sing|Person=3|Stem=Hithpaal", gloss: "may-be-magnified"}   # יִתְגַּדַּל
+    kadd.yitgadal.1.2: {lemma: "קְדַשׁ", morph: "VERB|Conj=Yiqtol|Gender=Masc|Mood=Jus|Number=Sing|Person=3|Stem=Hithpaal", gloss: "and-be-sanctified"}   # וְיִתְקַדַּשׁ
+    kadd.yitgadal.1.3: {lemma: "שֻׁם", morph: "NOUN|Gender=Masc|Number=Sing|State=Cons", gloss: "his-name"}   # שְׁמֵהּ
+    kadd.yitgadal.1.4: {lemma: "רַב", morph: "ADJ|Gender=Masc|Number=Sing|State=Det", gloss: "great"}   # רַבָּא
+    kadd.yitgadal.2.1: {lemma: "עָלַם", morph: "NOUN|Gender=Masc|Number=Sing|State=Det", gloss: "in-the-world"}   # בְּעָלְמָא
+    kadd.yitgadal.2.2: {lemma: "דִּי", morph: "PRON|PartType=Rel", gloss: "which"}   # דִי
+    kadd.yitgadal.2.3: {lemma: "בְּרָא", morph: "VERB|Conj=Qatal|Gender=Masc|Number=Sing|Person=3|Stem=Peal", gloss: "he-created"}   # בְרָא
+    kadd.yitgadal.2.4: {lemma: "רְעוּת", morph: "NOUN|Gender=Fem|Number=Sing|State=Cons", gloss: "according-to-his-will"}   # כִרְעוּתֵהּ,
+    kadd.yitgadal.3.1: {lemma: "מְלַךְ", morph: "VERB|Conj=Yiqtol|Gender=Masc|Mood=Jus|Number=Sing|Person=3|Stem=Aphel", gloss: "and-may-he-make-reign"}   # וְיַמְלִיךְ
+    kadd.yitgadal.3.2: {lemma: "מַלְכוּ", morph: "NOUN|Gender=Fem|Number=Sing|State=Cons", gloss: "his-kingship"}   # מַלְכוּתֵהּ,
+    kadd.yitgadal.4.1: {lemma: "חַיִּין", morph: "NOUN|Gender=Masc|Number=Plur|State=Cons", gloss: "in-your-lives"}   # בְּחַיֵּיכוֹן
+    kadd.yitgadal.4.2: {lemma: "יוֹם", morph: "NOUN|Gender=Masc|Number=Plur|State=Cons", gloss: "and-in-your-days"}   # וּבְיוֹמֵיכוֹן
+    kadd.yitgadal.4.3: {lemma: "חַיִּין", morph: "NOUN|Gender=Masc|Number=Plur|State=Cons", gloss: "and-in-the-lives"}   # וּבְחַיֵּי
+    kadd.yitgadal.4.4: {lemma: "כֹּל", morph: "NOUN|Gender=Masc|Number=Sing|State=Cons", gloss: "of-all"}   # דְּכָל
+    kadd.yitgadal.4.5: {lemma: "בַּיִת", morph: "NOUN|Gender=Masc|Number=Sing|State=Cons", gloss: "the-house-of"}   # בֵּית
+    kadd.yitgadal.4.6: {lemma: "יִשְׂרָאֵל", morph: "PROPN", gloss: "Israel"}   # יִשְׂרָאֵל,
+    kadd.yitgadal.5.1: {lemma: "עֲגָלָא", morph: "NOUN|Gender=Masc|Number=Sing|State=Det", gloss: "in-haste"}   # בַּעֲגָלָא
+    kadd.yitgadal.5.2: {lemma: "זְמַן", morph: "NOUN|Gender=Masc|Number=Sing|State=Abs", gloss: "and-in-a-time"}   # וּבִזְמַן
+    kadd.yitgadal.5.3: {lemma: "קְרִיב", morph: "ADJ|Gender=Masc|Number=Sing|State=Abs", gloss: "near"}   # קָרִיב,
+    kadd.yitgadal.5.4: {lemma: "אֲמַר", morph: "VERB|Gender=Masc|Mood=Imp|Number=Plur|Person=2|Stem=Peal", gloss: "and-say"}   # וְאִמְרוּ
+    kadd.yitgadal.5.5: {lemma: "אָמֵן", morph: "INTJ", gloss: "amen"}   # אָמֵן.
+    kadd.yehe-shmeh.1.1: {lemma: "הֲוָה", morph: "VERB|Conj=Yiqtol|Gender=Masc|Mood=Jus|Number=Sing|Person=3|Stem=Peal", gloss: "may-be"}   # יְהֵא
+    kadd.yehe-shmeh.1.2: {lemma: "שֻׁם", morph: "NOUN|Gender=Masc|Number=Sing|State=Cons", gloss: "his-name"}   # שְׁמֵהּ
+    kadd.yehe-shmeh.1.3: {lemma: "רַב", morph: "ADJ|Gender=Masc|Number=Sing|State=Det", gloss: "great"}   # רַבָּא
+    kadd.yehe-shmeh.1.4: {lemma: "בְּרַךְ", morph: "VERB|Conj=PartPass|Gender=Masc|Number=Sing|State=Abs|Stem=Pael", gloss: "blessed"}   # מְבָרַךְ
+    kadd.yehe-shmeh.1.5: {lemma: "עָלַם", morph: "NOUN|Gender=Masc|Number=Sing|State=Abs", gloss: "for-ever"}   # לְעָלַם
+    kadd.yehe-shmeh.1.6: {lemma: "עָלַם", morph: "NOUN|Gender=Masc|Number=Plur|State=Cons", gloss: "and-for-ages-of"}   # וּלְעָלְמֵי
+    kadd.yehe-shmeh.1.7: {lemma: "עָלַם", morph: "NOUN|Gender=Masc|Number=Plur|State=Det", gloss: "the-ages"}   # עָלְמַיָּא.
+    kadd.yitbarakh.1.1: {lemma: "בְּרַךְ", morph: "VERB|Conj=Yiqtol|Gender=Masc|Mood=Jus|Number=Sing|Person=3|Stem=Hithpaal", gloss: "may-be-blessed"}   # יִתְבָּרַךְ
+    kadd.yitbarakh.1.2: {lemma: "שְׁבַח", morph: "VERB|Conj=Yiqtol|Gender=Masc|Mood=Jus|Number=Sing|Person=3|Stem=Hithpaal", gloss: "and-praised"}   # וְיִשְׁתַּבַּח
+    kadd.yitbarakh.1.3: {lemma: "פְּאַר", morph: "VERB|Conj=Yiqtol|Gender=Masc|Mood=Jus|Number=Sing|Person=3|Stem=Hithpaal", gloss: "and-glorified"}   # וְיִתְפָּאַר
+    kadd.yitbarakh.1.4: {lemma: "רוּם", morph: "VERB|Conj=Yiqtol|Gender=Masc|Mood=Jus|Number=Sing|Person=3|Stem=Hithpolel", gloss: "and-exalted"}   # וְיִתְרוֹמַם
+    kadd.yitbarakh.2.1: {lemma: "נְשָׂא", morph: "VERB|Conj=Yiqtol|Gender=Masc|Mood=Jus|Number=Sing|Person=3|Stem=Hithpaal", gloss: "and-extolled"}   # וְיִתְנַשֵּׂא
+    kadd.yitbarakh.2.2: {lemma: "הֲדַר", morph: "VERB|Conj=Yiqtol|Gender=Masc|Mood=Jus|Number=Sing|Person=3|Stem=Hithpaal", gloss: "and-honoured"}   # וְיִתְהַדַּר
+    kadd.yitbarakh.2.3: {lemma: "עֲלָה", morph: "VERB|Conj=Yiqtol|Gender=Masc|Mood=Jus|Number=Sing|Person=3|Stem=Hithpaal", gloss: "and-elevated"}   # וְיִתְעַלֶּה
+    kadd.yitbarakh.2.4: {lemma: "הֲלַל", morph: "VERB|Conj=Yiqtol|Gender=Masc|Mood=Jus|Number=Sing|Person=3|Stem=Hithpaal", gloss: "and-lauded"}   # וְיִתְהַלַּל
+    kadd.yitbarakh.3.1: {lemma: "שֻׁם", morph: "NOUN|Gender=Masc|Number=Sing|State=Cons", gloss: "his-name"}   # שְׁמֵהּ
+    kadd.yitbarakh.3.2: {lemma: "קֻדְשָׁא", morph: "NOUN|Gender=Masc|Number=Sing|State=Det", gloss: "of-the-Holy-One"}   # דְּקֻדְשָׁא
+    kadd.yitbarakh.3.3: {lemma: "בְּרַךְ", morph: "VERB|Conj=PartPass|Gender=Masc|Number=Sing|State=Abs|Stem=Peal", gloss: "blessed"}   # בְּרִיךְ
+    kadd.yitbarakh.3.4: {lemma: "הוּא", morph: "PRON|Gender=Masc|Number=Sing|Person=3", gloss: "[be]-he"}   # הוּא,
+    kadd.yitbarakh.4.1: {lemma: "עֵלָּא", morph: "ADV", gloss: "above"}   # לְעֵלָּא
+    kadd.yitbarakh.4.2: {lemma: "מִן", morph: "ADP", gloss: "from"}   # מִן
+    kadd.yitbarakh.4.3: {lemma: "כֹּל", morph: "NOUN|Gender=Masc|Number=Sing|State=Cons", gloss: "all"}   # כָּל
+    kadd.yitbarakh.4.4: {lemma: "בִּרְכָה", morph: "NOUN|Gender=Fem|Number=Plur|State=Det", gloss: "the-blessings"}   # בִּרְכָתָא
+    kadd.yitbarakh.4.5: {lemma: "שִׁירָה", morph: "NOUN|Gender=Fem|Number=Plur|State=Det", gloss: "and-the-songs"}   # וְשִׁירָתָא
+    kadd.yitbarakh.5.1: {lemma: "תֻּשְׁבְּחָה", morph: "NOUN|Gender=Fem|Number=Plur|State=Det", gloss: "the-praises"}   # תֻּשְׁבְּחָתָא
+    kadd.yitbarakh.5.2: {lemma: "נֶחָמָה", morph: "NOUN|Gender=Fem|Number=Plur|State=Det", gloss: "and-the-consolations"}   # וְנֶחָמָתָא
+    kadd.yitbarakh.5.3: {lemma: "אֲמַר", morph: "VERB|Conj=PartPass|Gender=Fem|Number=Plur|State=Abs|Stem=Peal", gloss: "which-are-said"}   # דַּאֲמִירָן
+    kadd.yitbarakh.5.4: {lemma: "עָלַם", morph: "NOUN|Gender=Masc|Number=Sing|State=Det", gloss: "in-the-world"}   # בְּעָלְמָא,
+    kadd.yitbarakh.5.5: {lemma: "אֲמַר", morph: "VERB|Gender=Masc|Mood=Imp|Number=Plur|Person=2|Stem=Peal", gloss: "and-say"}   # וְאִמְרוּ
+    kadd.yitbarakh.5.6: {lemma: "אָמֵן", morph: "INTJ", gloss: "amen"}   # אָמֵן.
+    kadd.yehe-shlama.1.1: {lemma: "הֲוָה", morph: "VERB|Conj=Yiqtol|Gender=Masc|Mood=Jus|Number=Sing|Person=3|Stem=Peal", gloss: "may-be"}   # יְהֵא
+    kadd.yehe-shlama.1.2: {lemma: "שְׁלָם", morph: "NOUN|Gender=Masc|Number=Sing|State=Det", gloss: "peace"}   # שְׁלָמָא
+    kadd.yehe-shlama.1.3: {lemma: "רַב", morph: "ADJ|Gender=Masc|Number=Sing|State=Det", gloss: "great"}   # רַבָּא
+    kadd.yehe-shlama.1.4: {lemma: "מִן", morph: "ADP", gloss: "from"}   # מִן
+    kadd.yehe-shlama.1.5: {lemma: "שְׁמַיִן", morph: "NOUN|Gender=Masc|Number=Plur|State=Det", gloss: "the-heavens"}   # שְׁמַיָּא
+    kadd.yehe-shlama.2.1: {lemma: "חַיִּים", morph: "NOUN|Gender=Masc|Number=Plur|State=Abs", gloss: "and-life"}   # וְחַיִּים
+    kadd.yehe-shlama.2.2: {lemma: "עַל", morph: "ADP", gloss: "upon-us"}   # עָלֵינוּ
+    kadd.yehe-shlama.2.3: {lemma: "עַל", morph: "ADP", gloss: "and-upon"}   # וְעַל
+    kadd.yehe-shlama.2.4: {lemma: "כֹּל", morph: "NOUN|Gender=Masc|Number=Sing|State=Cons", gloss: "all"}   # כָּל
+    kadd.yehe-shlama.2.5: {lemma: "יִשְׂרָאֵל", morph: "PROPN", gloss: "Israel"}   # יִשְׂרָאֵל,
+    kadd.yehe-shlama.2.6: {lemma: "אֲמַר", morph: "VERB|Gender=Masc|Mood=Imp|Number=Plur|Person=2|Stem=Peal", gloss: "and-say"}   # וְאִמְרוּ
+    kadd.yehe-shlama.2.7: {lemma: "אָמֵן", morph: "INTJ", gloss: "amen"}   # אָמֵן.
+    kadd.oseh-shalom.1.1: {lemma: "עָשָׂה", morph: "VERB|Conj=PartAct|Gender=Masc|Number=Sing|State=Abs|Stem=Qal", gloss: "who-makes"}   # עֹשֶׂה
+    kadd.oseh-shalom.1.2: {lemma: "שָׁלוֹם", morph: "NOUN|Gender=Masc|Number=Sing|State=Abs", gloss: "peace"}   # שָׁלוֹם
+    kadd.oseh-shalom.1.3: {lemma: "מָרוֹם", morph: "NOUN|Gender=Masc|Number=Plur|State=Cons", gloss: "in-his-heights"}   # בִּמְרוֹמָיו
+    kadd.oseh-shalom.2.1: {lemma: "הוּא", morph: "PRON|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # הוּא
+    kadd.oseh-shalom.2.2: {lemma: "עָשָׂה", morph: "VERB|Conj=Yiqtol|Gender=Masc|Number=Sing|Person=3|Stem=Qal", gloss: "will-make"}   # יַעֲשֶׂה
+    kadd.oseh-shalom.2.3: {lemma: "שָׁלוֹם", morph: "NOUN|Gender=Masc|Number=Sing|State=Abs", gloss: "peace"}   # שָׁלוֹם
+    kadd.oseh-shalom.2.4: {lemma: "עַל", morph: "ADP", gloss: "upon-us"}   # עָלֵינוּ
+    kadd.oseh-shalom.2.5: {lemma: "עַל", morph: "ADP", gloss: "and-upon"}   # וְעַל
+    kadd.oseh-shalom.2.6: {lemma: "כֹּל", morph: "NOUN|Gender=Masc|Number=Sing|State=Cons", gloss: "all"}   # כָּל
+    kadd.oseh-shalom.2.7: {lemma: "יִשְׂרָאֵל", morph: "PROPN", gloss: "Israel"}   # יִשְׂרָאֵל,
+    kadd.oseh-shalom.2.8: {lemma: "אֲמַר", morph: "VERB|Gender=Masc|Mood=Imp|Number=Plur|Person=2|Stem=Peal", gloss: "and-say"}   # וְאִמְרוּ
+    kadd.oseh-shalom.2.9: {lemma: "אָמֵן", morph: "INTJ", gloss: "amen"}   # אָמֵן.

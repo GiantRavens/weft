@@ -1,0 +1,27 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: tanakh-shema
+src: weft.about 0.1
+fetched: '2026-10-10'
+match: work
+wikipedia:
+  title: Shema
+  lang: en
+  revision: 1379164246
+  url: https://en.wikipedia.org/w/index.php?title=Shema&oldid=1379164246
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Shema” (en.wikipedia.org, revision 1379164246), CC BY-SA 4.0
+  lead: 'Shema Yisrael (Shema Israel or Sh''ma Yisrael; Hebrew: שְׁמַע יִשְׂרָאֵל, lit. ''Hear, Israel'')
+    is a Jewish prayer (known as the Shema) that serves as a centerpiece of the morning and evening Jewish
+    prayer services. Its first verse, Deuteronomy 6:4, encapsulates the monotheistic essence of Judaism:
+    "Hear, O Israel: YHWH our God, YHWH is one" (שְׁמַע יִשְׂרָאֵל יְהוָה אֱלֹהֵינוּ יְהוָה אֶחָֽד׃).'
+wikidata:
+  id: Q207607
+  revision: 2548519405
+  license: CC0
+  description: prayer
+  instance_of:
+  - id: Q1777205
+    label: Jewish prayer
+  - id: Q29154550
+    label: verse of the Bible

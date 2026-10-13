@@ -69,7 +69,9 @@ the page shows no invitation.
 | | | John, Beatitudes, 1 Corinthians 13 | koine (first), erasmian | not set |
 | | | Epictetus, Marcus Aurelius | koine (first), restored, erasmian | not set |
 | Biblical Hebrew | `hebrew` | Genesis | tiberian (first), modern-israeli | not set |
+| | | The Shema (Deuteronomy 6:4-9) | tiberian (first), modern-israeli | medium |
 | Biblical Aramaic | `hebrew` | Daniel 5 | tiberian (first), modern-israeli | medium |
+| Jewish Aramaic (liturgy) | `hebrew` | The Kaddish | tiberian (first), modern-israeli | low |
 | Classical Chinese | `chinese` | Sunzi, Daodejing | old-chinese (first), tang, mandarin | medium |
 | | | Li Bai | tang (first), mandarin, cantonese | medium |
 | Sahidic Coptic | `coptic` | Gospel of Mark 1 | sahidic (first), bohairic | medium |
@@ -285,6 +287,13 @@ written" reaches the pointing, not the period of composition. Vocal against sile
 qamets gadol against qatan are guessed where the pointing is ambiguous. The verse-final silluq is
 recovered from the sof pasuq.
 
+**The divine name.** The Leningrad Codex writes YHWH with the vowels of the word read in its place
+(the qere perpetuum, Gesenius §17c): יְהוָה is read ʾăḏōnāy and יֱהֹוִה ʾĕlōhîm. The sound row gives the
+reading, with the written word's accent moved onto its stressed syllable, and the surface keeps
+what is written. After a prefix (לַיהוָה) the reading changes the prefix vowel; that case is not
+derived and is reported as `qere-perpetuum-prefixed`. The Shema is the first work where the name
+occurs. How the name itself was pronounced before it was replaced in reading is not reconstructed.
+
 **What a specialist could improve.** The shewa and qamets heuristics in `hebrew.py`, with a named
 grammar; an earlier reconstruction as a scheme placed before `tiberian`, if one can be stated per
 word.
@@ -295,6 +304,14 @@ prefixed A, and the verb-stem letters then mean the Aramaic stems (Peal, Pael, H
 which `treebank.py` decodes from its own table. Words written one way and read another (Ketiv and Qere) reach
 the digital text as consonants without vowels, and their sound row is a reading supplied by the reader, which
 the page's notes say.
+
+**The Kaddish.** The Kaddish is Jewish Aramaic of the Talmudic period, known from prayer books rather than from a
+Masoretic manuscript, and its pointing is a modern prayer-book pointing without cantillation. The Tiberian scheme
+applies the Masoretes' sound values to that pointing: the nearest fully recorded reading, not a reconstruction
+of the prayer's own time and place, so the work's confidence is low. With no accents to read, the stress is
+declared in the edition (`stress_default: 1`, the final syllable, and `stress: 2` on the few words stressed on
+the penult). The prayer-book text writes כָּל without maqaf; the module reads it, after any prefixes, as
+qamets qatan (kol). The Ashkenazi pronunciation of the prayer (yisgadal v'yiskadash) is not yet a scheme.
 
 ## Classical Chinese
 

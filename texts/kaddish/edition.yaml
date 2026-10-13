@@ -1,0 +1,123 @@
+# Weft edition of the Mourner's Kaddish (Kaddish Yatom) in the Ashkenazi rite, as pointed on Hebrew Wikisource
+# (סידור/נוסח אשכנז/קדיש, pinned by revision); each line is checked verbatim against that page. verify_strip sets
+# aside the page's footnotes (noinclude), the congregation's bracketed responses ({{ק|...}}), the variants for the
+# Ten Days of Repentance ({{הור1|...}}), bold marks and section tags, so the text checked is the weekday text.
+# The page gives the Half Kaddish, then the variable middle paragraphs, then the closing lines; the Mourner's
+# Kaddish is the Half Kaddish followed by the last two (יְהֵא שְׁלָמָא, עֹשֶׂה שָׁלוֹם).
+#   t       the word as pointed, punctuation attached
+#   stress  syllables from the end, where the stress is not on the final syllable (the text has no accents;
+#           stress_default declares the final syllable for the rest)
+#   Lines are Weft's division at the phrases; sections are the prayer's paragraphs and responses.
+work: kaddish
+joiner: ' '
+verify_in: sources/ws-kaddish-ashkenaz.txt
+verify_strip: (?s)<noinclude>.*?</noinclude>|\{\{הור1\|(?:[^{}]|\{\{[^{}]*\}\})*\}\}|\{\{ק\|[^{}]*\}\}|'''|<[^>]+>
+stress_default: 1
+sections:
+- id: yitgadal
+  title: Magnified and sanctified
+  lines:
+  - tokens:
+    - t: יִתְגַּדַּל
+    - t: וְיִתְקַדַּשׁ
+    - t: שְׁמֵהּ
+    - t: רַבָּא
+  - tokens:
+    - t: בְּעָלְמָא
+    - t: דִי
+    - t: בְרָא
+    - t: כִרְעוּתֵהּ,
+  - tokens:
+    - t: וְיַמְלִיךְ
+    - t: מַלְכוּתֵהּ,
+  - tokens:
+    - t: בְּחַיֵּיכוֹן
+    - t: וּבְיוֹמֵיכוֹן
+    - t: וּבְחַיֵּי
+    - t: דְּכָל
+    - t: בֵּית
+    - t: יִשְׂרָאֵל,
+  - tokens:
+    - t: בַּעֲגָלָא
+    - t: וּבִזְמַן
+    - t: קָרִיב,
+    - t: וְאִמְרוּ
+    - t: אָמֵן.
+- id: yehe-shmeh
+  title: The congregation's response
+  lines:
+  - tokens:
+    - t: יְהֵא
+    - t: שְׁמֵהּ
+    - t: רַבָּא
+    - t: מְבָרַךְ
+    - t: לְעָלַם
+    - t: וּלְעָלְמֵי
+    - t: עָלְמַיָּא.
+- id: yitbarakh
+  title: Blessed and praised
+  lines:
+  - tokens:
+    - t: יִתְבָּרַךְ
+    - t: וְיִשְׁתַּבַּח
+    - t: וְיִתְפָּאַר
+    - t: וְיִתְרוֹמַם
+  - tokens:
+    - t: וְיִתְנַשֵּׂא
+    - t: וְיִתְהַדַּר
+    - t: וְיִתְעַלֶּה
+    - t: וְיִתְהַלַּל
+  - tokens:
+    - t: שְׁמֵהּ
+    - t: דְּקֻדְשָׁא
+    - t: בְּרִיךְ
+    - t: הוּא,
+  - tokens:
+    - t: לְעֵלָּא
+    - t: מִן
+    - t: כָּל
+    - t: בִּרְכָתָא
+    - t: וְשִׁירָתָא
+  - tokens:
+    - t: תֻּשְׁבְּחָתָא
+    - t: וְנֶחָמָתָא
+    - t: דַּאֲמִירָן
+    - t: בְּעָלְמָא,
+    - t: וְאִמְרוּ
+    - t: אָמֵן.
+- id: yehe-shlama
+  title: Abundant peace
+  lines:
+  - tokens:
+    - t: יְהֵא
+    - t: שְׁלָמָא
+    - t: רַבָּא
+    - t: מִן
+    - t: שְׁמַיָּא
+  - tokens:
+    - t: וְחַיִּים
+    - t: עָלֵינוּ
+      stress: 2
+    - t: וְעַל
+    - t: כָּל
+    - t: יִשְׂרָאֵל,
+    - t: וְאִמְרוּ
+    - t: אָמֵן.
+- id: oseh-shalom
+  title: He who makes peace
+  lines:
+  - tokens:
+    - t: עֹשֶׂה
+    - t: שָׁלוֹם
+    - t: בִּמְרוֹמָיו
+  - tokens:
+    - t: הוּא
+    - t: יַעֲשֶׂה
+    - t: שָׁלוֹם
+    - t: עָלֵינוּ
+      stress: 2
+    - t: וְעַל
+    - t: כָּל
+    - t: יִשְׂרָאֵל,
+    - t: וְאִמְרוּ
+    - t: אָמֵן.

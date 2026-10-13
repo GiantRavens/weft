@@ -1,0 +1,71 @@
+work: kaddish
+title: 'The Kaddish: the Mourner''s Kaddish (Kaddish Yatom), Ashkenazi rite'
+short_title: The Kaddish
+author: Jewish liturgy, in Jewish Aramaic with closing lines in Hebrew
+language: arc
+lang_name: Jewish Aramaic of the liturgy, with Hebrew
+kind: scripture
+wikipedia:
+  title: Kaddish
+  match: work
+prefix: kadd
+urn: urn:weft:arc:liturgy.kaddish.yatom
+unit: section
+section_noun: paragraph
+written:
+  year: 600
+  display: c. 200-800
+  label: the response 'May his great name be blessed' is quoted in the Talmud (Berakhot 3a, Sotah 49a); the full text is first written down in
+    the prayer book of Amram Gaon (Babylonia, about 860); its use by mourners is attested from the 13th century
+status: phase-0
+pilot:
+  sections:
+  - yitgadal
+  - yehe-shmeh
+  - yitbarakh
+  - yehe-shlama
+  - oseh-shalom
+edition:
+  id: ws-ashkenaz
+  name: the Ashkenazi text as pointed on Hebrew Wikisource (סידור/נוסח אשכנז/קדיש, revision 3077440), the weekday form without the variants for
+    the Ten Days of Repentance
+  format: weft-edition
+  file: edition.yaml
+  license: liturgical text public domain; Wikisource pointing and transcription CC BY-SA 4.0; Weft line division CC BY-SA 4.0
+treebank: null
+schemes:
+- tiberian
+- modern-israeli
+scheme_labels:
+  tiberian: 'Tiberian values applied to the prayer-book pointing (approximate): the nearest fully recorded reading of Jewish Aramaic to the period
+    of the prayer'
+  modern-israeli: As the Kaddish is recited in Israel today
+sound_confidence: low
+sources_extra:
+- id: ws-kaddish-ashkenaz
+  name: סידור/נוסח אשכנז/קדיש (the Kaddish, Ashkenazi rite), Hebrew Wikisource
+  file: sources/ws-kaddish-ashkenaz.txt
+  url: https://he.wikisource.org/w/index.php?oldid=3077440&action=raw
+  sha256: 209f0d02ee3737210efb8ab9a3ac939816457ae1665e8120585e7399a4256549
+  license: liturgical text public domain; Wikisource transcription and pointing CC BY-SA 4.0
+translations:
+- id: singer1904
+  translator: Simeon Singer
+  year: 1890
+  form: prose; The Authorised Daily Prayer Book of the United Hebrew Congregations of the British Empire, 7th edition (London, 1904), pp. 77-78,
+    the Mourner's Kaddish, from the archive.org scan (authoriseddailyp00sing)
+  license: public-domain
+  license_url: https://archive.org/details/authoriseddailyp00sing
+predicted_gaps:
+- the pointing is a modern prayer-book pointing, not a manuscript's; the Tiberian scheme applies the Masoretes' sound values to it, which approximates
+  the reading of the period and does not reconstruct the Aramaic of Babylonia or Palestine in the first millennium
+- 'the text carries no cantillation accents, so the stress is declared: the final syllable, the usual place in Tiberian Hebrew and Aramaic, with
+  עָלֵינוּ on the penult; this is a rule applied, not a reading of marks'
+- the Ashkenazi reading most English speakers know (yisgadal v'yiskadash, with s for soft ת and o for qamets) is not offered as a scheme; the
+  Hebrew module has no Ashkenazi scheme yet
+- this is the Ashkenazi weekday text; the Sephardi and Hasidic rites add 'and cause his salvation to sprout and bring near his messiah' within
+  the first paragraph, after וְיַמְלִיךְ מַלְכוּתֵהּ, and the Ten Days of Repentance change לְעֵלָּא מִן כָּל to לְעֵלָּא וּלְעֵלָּא מִכָּל
+- 'no treebank covers the liturgy: lemma, morphology and gloss are by hand against Jastrow, A Dictionary of the Targumim (1903), draft'
+- the congregation's responses (Amen, and 'blessed be he') are left out of the text line, as the edition prints them apart; the notes say where
+  they fall
+- 'right-to-left script: the word strip runs right to left, English rows stay left to right'

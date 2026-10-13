@@ -261,6 +261,10 @@ may be quoted at length as `kind: quoted`.
 - Long alpha, iota and upsilon not marked in the orthography come from
   `pipeline/weft/data/grc_quantities.yaml`, each entry citing LSJ and the metrical foot.
 - Each word is phonemized alone. Sandhi, elision across words and correption are not modeled.
+- A pointed Hebrew or Aramaic text without cantillation (a prayer book) has no accent to read the stress
+  from. Its `edition.yaml` declares it: `stress_default: 1` puts the stress on the final syllable, and a
+  token's own `stress: 2` (syllables from the end) overrides it. An accent in the word, where there is one,
+  wins. The manifest's `predicted_gaps` says the stress is supplied by rule.
 
 ## Metre
 

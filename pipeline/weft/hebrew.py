@@ -16,6 +16,9 @@ modern-israeli  Modern Israeli Hebrew reading of the same text: gutturals weaken
 
 Rules for the shewa (vocal or silent) and for begadkefat softening follow the standard
 grammars; see the functions below. Both are heuristics where the pointing is ambiguous.
+
+A text pointed without cantillation (the Kaddish, from a prayer book) has no accent to read the stress
+from; its edition declares it (`stress_default`, and `stress` on a token, in syllables from the end).
 """
 from __future__ import annotations
 
@@ -65,6 +68,15 @@ def letters(word: str) -> list[Letter]:
     return out
 
 
+def _qamats_qatan_kol(ls: list[Letter]) -> None:
+    """The word כָּל, alone or after the prefixes ו ב ל ד ה מ ש: the qamets is qatan (kol). In the Masoretic
+    text this is כָּל־ before maqaf (the stressed form is written כֹּל); a prayer book writes it without the maqaf.
+    Words that merely end in -כָל (וַתּוּכָל, מַאֲכָל) are left alone, as is a kaf carrying an accent or meteg."""
+    if len(ls) >= 2 and ls[-1].ch == "ל" and ls[-1].vowel is None and ls[-2].ch == "כ" and QAMATS in ls[-2].marks \
+            and not ls[-2].marks & (ACCENTS | {METEG}) and len(ls) <= 5 and all(l.ch in "ובלדהמש" for l in ls[:-2]):
+        ls[-2].marks = (ls[-2].marks - {QAMATS}) | {QAMATS_QATAN}
+
+
 def strip_cantillation(word: str) -> str:
     return "".join(c for c in word if c not in ACCENTS and c != METEG)
 
@@ -94,6 +106,9 @@ def _is_mater(ls: list[Letter], i: int) -> str | None:
     if l.ch == "י" and not has_vowel and DAGESH not in l.marks and prev is not None and \
             prev.vowel in (HIRIQ, TSERE, SEGOL):
         return ""                                          # hiriq-yod, tsere-yod
+    if l.ch == "י" and not has_vowel and prev is not None and prev.vowel == QAMATS and nxt is not None and \
+            nxt.ch == "ו" and i + 1 == len(ls) - 1 and not nxt.marks:
+        return ""                                          # the suffix ָיו, -āw: the yod is not sounded
     if l.ch == "ה" and i == len(ls) - 1 and not has_vowel and DAGESH not in l.marks:
         return ""                                          # final he as a vowel letter
     if l.ch == "א" and not has_vowel and prev is not None and not (
@@ -130,6 +145,7 @@ def _vowel_ipa(point: str, scheme: str, long_: bool) -> str:
 
 def segments(word: str, scheme: str) -> list[Seg]:
     ls = letters(word.replace("/", ""))
+    _qamats_qatan_kol(ls)
     n = len(ls)
     segs: list[Seg] = []
     prev_vowel_long = False
@@ -244,7 +260,10 @@ def _respell(ipa: str, scheme: str) -> str:
     return "".join(out)
 
 
-def phonemize(word: str, scheme: str = "tiberian", quantities=None, silluq: bool = False, **_) -> dict:
+def phonemize(word: str, scheme: str = "tiberian", quantities=None, silluq: bool = False, stress: int | None = None,
+              **_) -> dict:
+    """`stress` is a declared stress for a pointed text without cantillation (a prayer book), counted in
+    syllables from the end (1 the final, 2 the penult); an accent in the word, where there is one, wins."""
     segs = segments(word, scheme)
     vi = [k for k, s in enumerate(segs) if s.vowel]
     if not vi:
@@ -258,8 +277,10 @@ def phonemize(word: str, scheme: str = "tiberian", quantities=None, silluq: bool
     bounds.append(len(segs))
     syls = [segs[bounds[j]:bounds[j + 1]] for j in range(len(vi))]
     sl = _stress_letter(word, silluq)
-    stress = None
-    if sl is not None:
+    declared, stress = stress, None
+    if sl is None and declared:
+        stress = max(0, len(syls) - declared)
+    elif sl is not None:
         for j, syl in enumerate(syls):
             if any(s.vowel and s.source >= sl for s in syl) or any(s.source == sl and s.vowel for s in syl):
                 stress = j

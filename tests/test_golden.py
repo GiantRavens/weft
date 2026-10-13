@@ -647,6 +647,49 @@ def test_aramaic_daniel():
     assert r["ok"], r["problems"]
 
 
+def test_shema_large_letters_and_the_divine_name(tmp_path):
+    """The OSHB wraps the Shema's enlarged ayin and dalet in a <seg> inside the word, and the reader keeps
+    their text; the divine name is sounded as the word read in its place (qere perpetuum), accent carried
+    over, and a prefixed form is reported rather than guessed."""
+    from weft import treebank as T
+    osis = tmp_path / "x.xml"
+    osis.write_text('<osis xmlns="http://www.bibletechnologies.net/2003/OSIS/namespace"><verse osisID="Deut.6.4">'
+                    '<w lemma="8085" morph="HVqv2ms">שְׁמַ֖<seg type="x-large">ע</seg></w>'
+                    '<w lemma="3068" morph="HNp">יְהוָ֥ה</w>'
+                    '<w lemma="l/3068" morph="HR/Np">לַ/יהוָ֥ה</w></verse></osis>', encoding="utf-8")
+    rows = T.load_oshb(osis, "Deut", 6, 4, 4, {})[4]
+    assert rows[0]["word"] == "שְׁמַ֖ע"
+    assert rows[1]["qere"] == "אֲדֹנָ֥י" and rows[1]["perpetuum"]
+    assert "qere" not in rows[2] and rows[2]["qere_unread"]
+    from weft import hebrew as he   # a verse-final name: the silluq (written as meteg) carries over to the reading
+    osis.write_text('<osis xmlns="http://www.bibletechnologies.net/2003/OSIS/namespace"><verse osisID="Deut.6.4">'
+                    '<w lemma="3068" morph="HNp">יְהוָֽה</w></verse></osis>', encoding="utf-8")
+    q = T.load_oshb(osis, "Deut", 6, 4, 4, {})[4][0]["qere"]
+    assert he.phonemize(q, "tiberian", silluq=True)["respell"] == "ʾa-dhoh-NAWY"
+    g = yaml.safe_load((REPO / "texts/tanakh-shema/gen/chapter06.yaml").read_text())
+    toks = {t["id"]: t for l in g["lines"] for t in l["tokens"]}
+    assert toks["deut.6.4.1"]["sound"]["tiberian"]["respell"] == "sha-MAʿ"
+    assert toks["deut.6.4.6"]["sound"]["tiberian"]["respell"] == "ʾe-ḤAWDH"
+    assert toks["deut.6.4.3"]["sound"]["tiberian"]["respell"] == "ʾa-dhoh-NAWY"
+    r = check.run(REPO, "tanakh-shema")
+    assert r["ok"], r["problems"]
+
+
+def test_kaddish_prayer_book_pointing():
+    """The Kaddish is pointed without cantillation: the stress is declared (final by default, the penult where the
+    edition says so); כָּל standing alone is qamets qatan; the yod of the suffix ָיו is not sounded."""
+    from weft import hebrew as he
+    assert he.phonemize("יִתְגַּדַּל", "tiberian", stress=1)["respell"] == "yith-gad-DAL"
+    assert he.phonemize("עָלֵינוּ", "modern-israeli", stress=2)["respell"] == "a-LE-noo"
+    assert he.phonemize("דְּכָל", "modern-israeli", stress=1)["respell"] == "de-KHOL"
+    assert he.phonemize("בִּמְרוֹמָיו", "tiberian", stress=1)["respell"] == "bim-roh-MAWV"
+    for w in ("וַתּוּכָֽל", "מַאֲכָל֙", "הֵיכָל"):   # only כל and its prefixes, not any word ending in -כָל
+        assert "KHOL" not in he.phonemize(w, "modern-israeli", stress=1)["respell"].upper(), w
+    assert he.phonemize("בְּרֵאשִׁ֖ית", "tiberian", stress=1)["respell"] == "ba-ray-SHEETH"   # an accent wins
+    r = check.run(REPO, "kaddish")
+    assert r["ok"], r["problems"]
+
+
 def test_index_newest_strip():
     """The library's 'newest texts' strip: every committed work has an arrival date from git, the strip
     lists the newest first, and a work git does not know still gets a date (from its manifest's mtime)."""

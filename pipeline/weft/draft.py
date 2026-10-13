@@ -374,7 +374,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             surfaces = [r["word"] for r in verses[n]]
             puncts = [r.get("punct") for r in verses[n]]
             leads = [None] * len(surfaces)
-            conllu_pairs = [{k: r[k] for k in ("lemma", "postag", "ref", "lexgloss", "strong", "prefixes", "silluq", "qere") if r.get(k)}
+            conllu_pairs = [{k: r[k] for k in ("lemma", "postag", "ref", "lexgloss", "strong", "prefixes", "silluq", "qere", "qere_unread", "perpetuum") if r.get(k)}
                             for r in verses[n]]
         if ed_fmt == "morphgnt":
             surfaces = [r["word"] for r in verses[n]]
@@ -485,7 +485,10 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                 if w.get("qere"):
                     # Ketiv in the text, Qere in the margin: the reading is sounded, the writing is shown
                     tok["norm"] = w["qere"]
-                    tok["prov"] = {"sound": "from the Qere (the margin reading); the surface is the Ketiv, the consonants as written"}
+                    tok["prov"] = {"sound": "from the Qere perpetuum: the divine name is written with the vowels of the word read in its place, and the reading is sounded"
+                                   if w.get("perpetuum") else "from the Qere (the margin reading); the surface is the Ketiv, the consonants as written"}
+                elif w.get("qere_unread"):
+                    fail("qere-perpetuum-prefixed", f"{book}.{n} {s}: the reading {w['qere_unread']} after a prefix is not derived; sounded as written")
                 if w.get("enclitic"):
                     tok["enclitic"] = w["enclitic"]
                 for k in ("prefixes", "lexgloss", "strong"):
@@ -505,8 +508,13 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             say = tok.get("norm", s)          # runic: sound comes from the normalized form
             if ed_fmt == "weft-edition" and groups[book].get("dialect"):
                 extra["dialect"] = groups[book]["dialect"]
+            # pointed Hebrew or Aramaic without cantillation (a prayer book): the stress is declared, the
+            # edition's stress_default (syllables from the end) unless the token gives its own `stress`
+            hint = {}
+            if token_edition and lang in ("hbo", "arc") and (et.get("stress") or edition.get("stress_default")):
+                hint = {"stress": et.get("stress") or edition["stress_default"]}
             for k_s, scheme in enumerate(m["schemes"]):
-                r = phon.phonemize(say, scheme, quantities, **extra,
+                r = phon.phonemize(say, scheme, quantities, **extra, **hint,
                                    **({"silluq": True} if w and w.get("silluq") else {}))
                 snd[scheme] = {"ipa": r["ipa"], "respell": r["respell"]}
                 if k_s == 0:

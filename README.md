@@ -96,11 +96,13 @@ Seventy-nine works built across twenty-seven languages, oldest first in the libr
 | Homer, Odyssey | 1.1-10 | restored, Erasmian | Butler 1900, Butcher and Lang 1879 |
 | Aristotle, Metaphysics | A.1, 980a21-27 | restored, Erasmian | Taylor 1801, M'Mahon 1857 |
 | Genesis (Bereshit) | 1:1-2:3, the creation account | Tiberian, modern Israeli | JPS 1917, Geneva 1599, King James 1611 |
+| The Shema (Deuteronomy 6:4-9) | the first paragraph, 'Hear, O Israel' | Tiberian, modern Israeli | JPS 1917, Geneva 1599, King James 1611 |
 | Daniel 5: Belshazzar's feast | the whole chapter (Hebrew numbering, 30 verses), in Biblical Aramaic | Tiberian, modern reading | JPS 1917, Geneva 1599, King James 1611 |
 | Gospel of John | 1:1-18, the prologue | Koine, Erasmian | Tyndale 1534, Geneva 1599, King James 1611 |
 | The Beatitudes (Matthew 5:3-12) | 10 verses | Koine, Erasmian | Tyndale 1534, Geneva 1599, King James 1611 |
 | 1 Corinthians 13 | the whole chapter | Koine, Erasmian | Tyndale 1534, Geneva 1599, King James 1611 |
 | The Nicene-Constantinopolitan Creed | the exposition of the 150 fathers (381), the conciliar text in the plural | Koine of 381, Erasmian | Schaff 1877 |
+| The Kaddish (Mourner's Kaddish) | the whole prayer, Ashkenazi weekday text, in Jewish Aramaic with closing lines in Hebrew | Tiberian values (approximate), modern Israeli | Singer 1904 |
 | Ovid, Metamorphoses | 1.1-9 | classical, ecclesiastical | Golding 1567, More 1922 |
 | Res Gestae Divi Augusti | heading, chapters 1-4, 34-35 | classical (Rome under Augustus), ecclesiastical | Fairley 1898, Shipley 1924 |
 | Yijing (I Ching), the Zhouyi | all 64 hexagrams: names, judgments and line statements; a three-coin casting panel | Old Chinese (Baxter-Sagart), Tang, Mandarin | Legge 1882; Wilhelm and Baynes 1950 cited |
@@ -168,7 +170,7 @@ Seventy-nine works built across twenty-seven languages, oldest first in the libr
 | Haiku of Bashō | 9 haiku, 1680-1694 | Edo (1680s-90s), modern | Chamberlain 1902, Aston 1899, Hearn 1898 and 1900, Noguchi 1914; Yuasa 1966 cited |
 | Grettis saga | chapter 14, sentences 1-9 | Old Norse, modern Icelandic | Morris and Magnússon 1869, Hight 1914 |
 
-Homer, Ovid, John, Grettis saga and the Rigveda take lemma and grammar from treebanks (AGDT, LDT, MorphGNT, IcePaHC, the Vedic Treebank); Aristotle, Epictetus and Marcus Aurelius from GLAUx, an automatic parse, corrected by hand where it errs; Genesis and the Aramaic of Daniel 5 from the Open Scriptures Hebrew Bible; Li Bai from the Kyoto Classical Chinese treebank, with Tang readings from Unicode's Unihan database. No open
+Homer, Ovid, John, Grettis saga and the Rigveda take lemma and grammar from treebanks (AGDT, LDT, MorphGNT, IcePaHC, the Vedic Treebank); Aristotle, Epictetus and Marcus Aurelius from GLAUx, an automatic parse, corrected by hand where it errs; Genesis, the Shema and the Aramaic of Daniel 5 from the Open Scriptures Hebrew Bible; Li Bai from the Kyoto Classical Chinese treebank, with Tang readings from Unicode's Unihan database. No open
 treebank covers Eddic or Old English poetry or runic inscriptions, so Hávamál, the complete Völuspá, Þrymskviða, Fáfnismál, Snorri's Gylfaginning, Beowulf and the
 runes are hand-annotated and marked draft (see CLAUDE.md rule 3). The runic pages add a script
 row, generated from the transliteration, and a labelled Weft translation where no public-domain

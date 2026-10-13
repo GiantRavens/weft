@@ -1,0 +1,82 @@
+work: tanakh-shema
+title: "The Shema: Deuteronomy 6:4-9, Hear, O Israel"
+short_title: The Shema
+author: Torah (Deuteronomy), in Biblical Hebrew
+lang_name: Biblical Hebrew
+language: hbo
+kind: scripture
+wikipedia: {title: "Shema Yisrael", match: work}
+prefix: deut                     # deut.<chapter>.<verse>[.<token>]
+urn: urn:weft:hbo:tanakh.deuteronomy.shema # no CTS URN; Weft-local identifier
+unit: verse
+written: {year: -620, display: "600s BC", label: "the core of Deuteronomy is usually tied to the reform of Josiah (about 622 BC), with the book taking its final form in the exile and after; the vowel points were added about AD 900; the passage is recited morning and evening as the first paragraph of the Shema"}
+status: phase-0
+pilot: {chapter: 6, first: 4, last: 9}
+edition:
+  id: wlc-oshb
+  name: Westminster Leningrad Codex (from the Leningrad Codex, AD 1008), via the Open Scriptures Hebrew Bible
+  format: oshb
+  osis_book: Deut
+  file: sources/oshb-deuteronomy.xml
+  url: https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Deut.xml
+  sha256: 04f8087442a1e67a631cd70f2ac4e42fe0a780ae132edb165a3a29f3f290358f
+  lexicon: sources/hebrew-strong.xml
+  license: WLC text public domain; OSHB lemma and morphology CC BY 4.0
+  license_url: https://github.com/openscriptures/morphhb/blob/master/LICENSE.md
+treebank:
+  id: oshb
+  name: Open Scriptures Hebrew Bible morphology, with Strong's Hebrew lexicon
+  format: oshb-edition           # lemma and morphology come from the edition file itself
+  file: sources/hebrew-strong.xml
+  url: https://raw.githubusercontent.com/openscriptures/HebrewLexicon/21c9add13bc727d3a951361778e97e3ff7afd1ce/HebrewStrong.xml
+  sha256: a628f4f89f8bdaf2483fd3faf1abc8653cc6717758dfc9f24beb7571d9bdd0c4
+  license: CC BY 4.0 (OSHB); Strong's lexicon public domain
+  license_url: https://github.com/openscriptures/HebrewLexicon
+schemes: [tiberian, modern-israeli]   # default = the earliest pronunciation preserved in full (the pointing itself)
+scheme_labels:
+  tiberian: "Tiberian: the Masoretic vowel points (about AD 900) read as the Masoretes heard them"
+  modern-israeli: "As the Shema is recited in Israeli Hebrew today"
+sound_confidence: medium
+translations:
+  - id: jps1917
+    translator: Jewish Publication Society
+    year: 1917
+    form: prose
+    format: usfm
+    license: public-domain
+    license_url: https://ebible.org/find/details.php?id=engjps
+    file: sources/jps1917-deuteronomy.usfm
+    sha256: d7e43580d750179214e553014f321a55ece20ca414648d3fd30097b47a21c998   # of the extracted member
+    url: https://ebible.org/Scriptures/engjps_usfm.zip
+    extract: "DEU"
+  - id: geneva1599
+    translator: Geneva Bible
+    year: 1599
+    form: prose
+    format: usfm
+    license: public-domain
+    license_url: https://ebible.org/find/details.php?id=enggnv
+    file: sources/geneva1599-deuteronomy.usfm
+    sha256: 1f50d6f8f753e6656f5e7f89c107b9851c73df6b94307d6f748f6c9559f492f9   # of the extracted member
+    url: https://ebible.org/Scriptures/enggnv_usfm.zip
+    extract: "DEU"
+  - id: kjv1611
+    translator: King James Version
+    year: 1611
+    form: prose, 1769 standard text
+    format: usfm
+    license: public-domain
+    license_url: https://ebible.org/find/details.php?id=eng-kjv
+    file: sources/kjv-deuteronomy.usfm
+    sha256: e99c5be28ab2b38ce373ebf369e16cf98117aafc6b079d326daae239cac9f53c   # of the extracted member
+    url: https://ebible.org/Scriptures/eng-kjv_usfm.zip
+    extract: "DEU"
+predicted_gaps:
+  - "the text is ancient but its vowels are the Tiberian Masoretes' (about AD 900): 'as first written' can only reach the pointing, not the Iron Age"
+  - "the liturgical Shema has three paragraphs (Deuteronomy 6:4-9, 11:13-21, Numbers 15:37-41) and a response after the first verse; this work gives the first paragraph only, and the response 'Blessed be the name...' is not in the biblical text"
+  - "the enlarged ayin of שְׁמַע and dalet of אֶחָד are marked in the OSHB (seg type x-large) and read as ordinary letters; the page sets them in ordinary type and the notes describe them"
+  - "qamets qatan is not marked in the Leningrad pointing and is guessed by rule: וּבְשָׁכְבְּךָ is read with a long qamets (shawkh), where the usual reading has qamets qatan (uvshokhbekha)"
+  - "vocal versus silent shewa and qamets gadol versus qatan are guessed from the pointing where it is ambiguous"
+  - "the Leningrad text writes the verse-final silluq with the meteg sign; the reader marks it from the sof pasuq"
+  - "Strong's lexicon gives an English sense per lemma, not per verse: the gloss row stays hand-made"
+  - "right-to-left script: the word strip runs right to left, English rows stay left to right"

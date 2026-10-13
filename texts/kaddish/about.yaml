@@ -1,0 +1,26 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: kaddish
+src: weft.about 0.1
+fetched: '2026-10-10'
+match: work
+wikipedia:
+  title: Kaddish
+  lang: en
+  revision: 1375263927
+  url: https://en.wikipedia.org/w/index.php?title=Kaddish&oldid=1375263927
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Kaddish” (en.wikipedia.org, revision 1375263927), CC BY-SA
+    4.0
+  lead: 'The Kaddish (Hebrew: קַדִּישׁ, ''holy'' or ''sanctification''), also transliterated as Qaddish,
+    is a hymn praising God that is recited during Jewish prayer services. The central theme of the Kaddish
+    is the magnification and sanctification of God''s name. In the liturgy, different versions of the
+    Kaddish are functionally chanted or sung to separate the sections of the service.'
+wikidata:
+  id: Q732195
+  revision: 2521167653
+  license: CC0
+  description: Jewish prayer
+  instance_of:
+  - id: Q1777205
+    label: Jewish prayer

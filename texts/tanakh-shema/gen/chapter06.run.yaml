@@ -1,0 +1,21 @@
+run:
+  weft: 0.1.0
+  book: 6
+  lines: 4-9
+counts:
+  lines: 6
+  tokens: 48
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'the text is ancient but its vowels are the Tiberian Masoretes'' (about AD 900): ''as first written'' can only reach the pointing, not the Iron Age'
+- the liturgical Shema has three paragraphs (Deuteronomy 6:4-9, 11:13-21, Numbers 15:37-41) and a response after the first verse; this work gives the first paragraph only, and the response 'Blessed be the
+  name...' is not in the biblical text
+- the enlarged ayin of שְׁמַע and dalet of אֶחָד are marked in the OSHB (seg type x-large) and read as ordinary letters; the page sets them in ordinary type and the notes describe them
+- 'qamets qatan is not marked in the Leningrad pointing and is guessed by rule: וּבְשָׁכְבְּךָ is read with a long qamets (shawkh), where the usual reading has qamets qatan (uvshokhbekha)'
+- vocal versus silent shewa and qamets gadol versus qatan are guessed from the pointing where it is ambiguous
+- the Leningrad text writes the verse-final silluq with the meteg sign; the reader marks it from the sof pasuq
+- 'Strong''s lexicon gives an English sense per lemma, not per verse: the gloss row stays hand-made'
+- 'right-to-left script: the word strip runs right to left, English rows stay left to right'

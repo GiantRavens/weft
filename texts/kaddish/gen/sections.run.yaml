@@ -1,0 +1,26 @@
+run:
+  weft: 0.1.0
+  sections:
+  - yitgadal
+  - yehe-shmeh
+  - yitbarakh
+  - yehe-shlama
+  - oseh-shalom
+counts:
+  lines: 15
+  tokens: 75
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- the pointing is a modern prayer-book pointing, not a manuscript's; the Tiberian scheme applies the Masoretes' sound values to it, which approximates the reading of the period and does not reconstruct
+  the Aramaic of Babylonia or Palestine in the first millennium
+- 'the text carries no cantillation accents, so the stress is declared: the final syllable, the usual place in Tiberian Hebrew and Aramaic, with עָלֵינוּ on the penult; this is a rule applied, not a reading
+  of marks'
+- the Ashkenazi reading most English speakers know (yisgadal v'yiskadash, with s for soft ת and o for qamets) is not offered as a scheme; the Hebrew module has no Ashkenazi scheme yet
+- this is the Ashkenazi weekday text; the Sephardi and Hasidic rites add 'and cause his salvation to sprout and bring near his messiah' within the first paragraph, after וְיַמְלִיךְ מַלְכוּתֵהּ, and the
+  Ten Days of Repentance change לְעֵלָּא מִן כָּל to לְעֵלָּא וּלְעֵלָּא מִכָּל
+- 'no treebank covers the liturgy: lemma, morphology and gloss are by hand against Jastrow, A Dictionary of the Targumim (1903), draft'
+- the congregation's responses (Amen, and 'blessed be he') are left out of the text line, as the edition prints them apart; the notes say where they fall
+- 'right-to-left script: the word strip runs right to left, English rows stay left to right'

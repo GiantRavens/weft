@@ -449,6 +449,12 @@ def load_strong_lexicon(path: Path) -> dict[str, dict]:
     return out
 
 
+# Strong's number -> the word read aloud for the divine name (the Masoretes' qere perpetuum):
+# יְהוָה is pointed with the vowels of אֲדֹנָי, יֱהֹוִה with those of אֱלֹהִים. Each reading is split at its
+# stressed syllable, where the written word's cantillation accent is placed so the stress carries over.
+QERE_PERPETUUM = {"3068": ("אֲדֹנָ", "י"), "3069": ("אֱלֹהִ", "ים")}
+
+
 def load_oshb(path: Path, book: str, chapter: int, first: int, last: int, lexicon: dict) -> dict[int, list[dict]]:
     """{verse: [ {word, punct, lemma, lexgloss, postag, prefixes, ref, silluq} ]} from OSHB OSIS XML."""
     import re
@@ -477,11 +483,14 @@ def load_oshb(path: Path, book: str, chapter: int, first: int, last: int, lexico
             if tag != "w":
                 continue
             ketiv = el.get("type") == "x-ketiv"
+            # the word's whole text: a scribal mark inside it (<seg type="x-large"> for the enlarged
+            # ayin and dalet of the Shema) holds letters that el.text alone would drop
+            wtext = "".join(el.itertext())
             lem_parts = el.get("lemma", "").split("/")
             morph = el.get("morph", "")
             mlang = morph[:1] if morph[:1] in "HA" else "H"
             morph_parts = morph[1:].split("/") if morph[:1] in "HA" else morph.split("/")
-            text_parts = (el.text or "").split("/")
+            text_parts = wtext.split("/")
             prefixes, main_i = [], None
             for k, lp in enumerate(lem_parts):
                 if re.match(r"^\d", lp.strip()):
@@ -494,7 +503,7 @@ def load_oshb(path: Path, book: str, chapter: int, first: int, last: int, lexico
                 # a preposition carrying a pronoun suffix (בּוֹ 'in it', לָהֶם 'to them'): OSHB gives
                 # only the prefix lemma (b, l), so the preposition itself is the word
                 pf = prefixes.pop()
-                rows.append({"word": (el.text or "").replace("/", ""),
+                rows.append({"word": wtext.replace("/", ""),
                              "lemma": OSHB_PREFIX.get(lem_parts[-1].strip(), (lem_parts[-1],))[0],
                              "lexgloss": pf["gloss"], "strong": None,
                              "postag": oshb_to_ud(morph_parts[len(lem_parts) - 1], mlang) if len(lem_parts) - 1 < len(morph_parts) else "ADP",
@@ -504,13 +513,22 @@ def load_oshb(path: Path, book: str, chapter: int, first: int, last: int, lexico
             num = re.match(r"(\d+)", lem_parts[main_i]).group(1) if main_i is not None else None
             lex = lexicon.get(f"H{num}", {}) if num else {}
             main_morph = morph_parts[main_i] if main_i is not None and main_i < len(morph_parts) else ""
-            rows.append({"word": (el.text or "").replace("/", ""),
+            rows.append({"word": wtext.replace("/", ""),
                          "lemma": lex.get("lemma") or (f"H{num}" if num else ""),
                          "lexgloss": lex.get("def") or None,
                          "strong": f"H{num}" if num else None,
                          "postag": oshb_to_ud(main_morph, mlang) if main_morph else "X",
                          "prefixes": prefixes, "ketiv": ketiv,
                          "ref": f"{verse.get('osisID')}/{el.get('id')}"})
+            if num in QERE_PERPETUUM:
+                # the divine name is written with the vowels of the word read in its place (qere
+                # perpetuum): the reading is sounded. A prefix changes its vowel before the reading
+                # (לַיהוָה, laʾdōnāy), which is not derived here and is reported instead.
+                head, tail = QERE_PERPETUUM[num]
+                # the accents, and the meteg with which the Leningrad text writes a verse-final silluq
+                accents = "".join(c for c in wtext if "\u0591" <= c <= "\u05AE" or c == "\u05BD")
+                rows[-1]["qere" if not prefixes else "qere_unread"] = head + accents + tail
+                rows[-1]["perpetuum"] = True
         out[int(vs)] = rows
     return out
 
