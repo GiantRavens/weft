@@ -80,6 +80,39 @@ Generated material is labelled by what produced it. Material produced by rule or
 not reviewed by default either; where a value is doubtful, the corrections overlay is where the
 better reading goes.
 
+## Texts of living communities
+
+Most of the library is in languages with no living community of first-language speakers, or in
+the languages of large literate traditions. Some texts belong to communities that exist now and
+have their own views on how their languages and documents are published. For texts in the
+languages of Indigenous peoples of North America, the first such strand planned for the library,
+Weft follows the CARE Principles for Indigenous Data Governance (Global Indigenous Data Alliance,
+2019): Collective benefit, Authority to control, Responsibility, and Ethics. The principles were
+written for data about Indigenous peoples; applying them to published historical texts is Weft's
+extension of their scope, not a use their authors named. In practice:
+
+- **Each page states whose transcription and translation it is**, and whether the person stood
+  inside or outside the community. Many historical transcriptions and translations were made by
+  missionaries and ethnographers from outside. Where Weft transcribes a text itself, Weft is also
+  an outsider, and the page says so.
+- **Each page states the community's own published position** on editions of its texts, with the
+  source, where one can be found. Where none can be found, the page says so and names what was
+  searched. A page does not imply an endorsement that the community has not given.
+- **Published secular texts come first:** newspapers, constitutions and laws, council records,
+  letters, and poetry written for print. Ceremonial texts are not set out without the community's
+  recorded consent, and the pipeline's check refuses such a work without it.
+- **Readers from the community come first in corrections.** Their readings take precedence over
+  Weft's, and each page invites them.
+- **The method of transcription is stated, with how often it errs.** Weft reads a scan of Cherokee
+  twice, once by hand and once by machine (OCR), and settles every disagreement on the scan. In a
+  calibration on 299 signs of the 1860 Cherokee New Testament, a hand reading made without looking
+  at any other transcription erred on 14 signs (4.7 percent) and archive.org's OCR on 21 (7.0
+  percent), with different kinds of error, and no error was found where those two readings agreed;
+  2 signs could not be settled at the scan's resolution. Tesseract, the OCR Weft runs itself,
+  differed from that agreed text on 6 to 7 percent of signs at its usual settings, and on up to 14
+  percent at a poor binarization threshold. Each Cherokee page will state the rates measured on its
+  own scan.
+
 ## Sources and licences
 
 - Every source text, treebank and translation is public domain or openly licensed (CC BY-SA, CC BY, CC0,

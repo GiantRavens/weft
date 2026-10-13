@@ -61,6 +61,8 @@ def main(argv: list[str] | None = None) -> int:
     ov.add_argument("--reuse", nargs="+", metavar="WORK", help="print surface -> annotation hints from these works' overlays and exit")
     ix = sub.add_parser("index", help="write the library's search index (search-index.js) and search page beside the built pages")
     ix.add_argument("--private", action="store_true", help="index the private build in private/build")
+    oc = sub.add_parser("ocr", help="read the manifest's pinned page scans with Tesseract into gen/ocr/ (a witness) and collate with the edition")
+    oc.add_argument("work")
     ab = sub.add_parser("about", help="fetch the Wikipedia lead and Wikidata subjects named in the manifest into about.yaml")
     ab.add_argument("work", help="a work's folder name, or 'all' for every public work")
     ab.add_argument("--suggest", action="store_true", help="write nothing: list article candidates for works without a wikipedia field")
@@ -134,6 +136,9 @@ def main(argv: list[str] | None = None) -> int:
         r = search.write(repo, (repo / "private" / "build") if a.private else (repo / "site" / "build"), a.private)
         show(r)
         return 0 if not r["failures"] else 1
+    elif a.cmd == "ocr":
+        from . import ocr
+        show(ocr.run(paths.work_dir(repo, a.work)))
     elif a.cmd == "about":
         from . import about
         dirs = (sorted(d for d in (repo / "texts").iterdir() if (d / "manifest.yaml").exists())

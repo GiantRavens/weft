@@ -93,6 +93,21 @@ headings on the page. Scaffold such a work with `--unit stanza --format stanza-t
 Fraktur OCR is usable with the German module's `check` (below); the long s, the superscript-e
 umlauts and the Fraktur hyphen are normalized, and the misreadings are declared token by token.
 
+**A scan with no usable text layer** (Cherokee in the New Echota type, which archive.org's OCR
+reads as Latin letters) is transcribed by hand and read a second time by machine. Pin the page image
+in `sources_extra`, name the Tesseract model by a commit-pinned URL and its sha256 in the manifest's
+`ocr` block (the fields are in the docstring of `pipeline/weft/ocr.py`), and run `weft ocr <work>`.
+It writes the machine reading to `gen/ocr/<page>.txt` with its provenance beside it, and reports each
+edition line against the stretch of the witness that matches it best, sign by sign (`Ꮒ[Ꮧ/Ꮨ]Ꮲ`: the
+edition has Ꮧ where the witness has Ꮨ). Settle each difference on the scan. Where the print agrees
+with the edition, the token carries the OCR's reading as `ocr`; the edition's `ocr_check: {file}`
+then ties every line to the witness, compared by letters only, and an undeclared difference fails
+the draft. The two readings fail differently: a hand confuses look-alike signs, and the machine
+inserts noise and misses line starts. Keep the first hand reading, made before you look at the
+witness, in `curated/` and name it as `hand` in the `ocr` block, so the report can state each reading's
+error rate against the settled text. Crop to the column: a crop that clips the first sign of an
+indented paragraph's later lines reads as an OCR error on every line. Needs `tesseract` 5 and Pillow.
+
 **Commons.** The imageinfo query returns the original's URL and the metadata (artist, date,
 licence) that the credits record needs:
 

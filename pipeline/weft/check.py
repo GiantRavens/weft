@@ -64,6 +64,10 @@ def run(repo: Path, work: str) -> dict:
     if manifest.get("kind") not in KINDS:
         bad("manifest-kind", f"{manifest.get('kind')!r}; one of {', '.join(KINDS)}")
     check_about(work_dir(repo, work), manifest, bad)
+    from . import stewardship
+    from .draft import PHON
+    for cls, detail in stewardship.problems(manifest, stewardship.indigenous(PHON.get(manifest.get("language")))):
+        bad(cls, detail)
     ids, line_ids, order = set(), [], {}
     ntok = 0
     for i, line in enumerate(data["lines"]):

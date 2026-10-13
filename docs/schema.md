@@ -215,6 +215,33 @@ translations:
     publisher: Overlook Press
 ```
 
+## Stewardship: texts of living communities
+
+A work in the language of a living Indigenous community carries a `stewardship` block in its manifest.
+The language module marks the strand with `INDIGENOUS = True`, and `weft check` then refuses a manifest
+without the block. A work in any other language may carry the block too, and is held to the same rules.
+The doctrine behind it is in [About Weft](about.md#texts-of-living-communities).
+
+```yaml
+stewardship:
+  community: Cherokee Nation, Eastern Band of Cherokee Indians, United Keetoowah Band
+  content: secular                # secular | ceremonial
+  transcription:
+    by: Weft (Skip Levens)
+    relation: outsider            # community | outsider | mixed
+    method: read by hand and by Tesseract OCR, the two readings collated against the scan
+  translations:
+    original1828: {relation: mixed}
+  position:
+    none_found: searched the Cherokee Nation language department and EBCI Kituwah sites, 2026-10-13
+    # or: source: <url>, summary: <the community's stated position, in a short quotation or paraphrase>
+```
+
+Every translation in the manifest needs a `relation` here. `position` is either a `source` with a
+`summary` or `none_found`, which names what was searched and when. `content: ceremonial` needs
+`consent: {source, summary}`, the community's recorded consent; without it the check fails. The page
+shows the block in a notice above the text.
+
 ## notes/bookNN.yaml
 
 ```yaml

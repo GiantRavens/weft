@@ -9,7 +9,7 @@ tags:
   - script
   - pilot
 created_at: 2026-10-02T19:33:06.62895023-05:00
-updated_at: 2026-10-10T16:08:08.182780553-05:00
+updated_at: 2026-10-13T09:39:47.224706638-05:00
 ---
 
 # Indigenous: Cherokee: Sequoyah's syllabary as a generated script row (like the runes); texts: Cherokee Phoenix 1828-34 (bilingual newspaper, PD), Cherokee Constitution 1827; Cherokee NT 1860; tone is under-recorded in old texts: say so; Feeling 1975 dictionary as reference; Cherokee Nation language program position
@@ -17,6 +17,7 @@ updated_at: 2026-10-10T16:08:08.182780553-05:00
 ## Notes
 
 - 2026-10-10T21:08:08Z: Calibration 2026-10-10, John 1 (1860 Worcester-Boudinot NT, IA itsekanohedvdatl00worc leaf n139): blind hand reading of v10-12,17-20 (299 signs) vs IA Cherokee OCR, disagreements adjudicated on the full-res scan. Hand: 14 errors (4.7%), systematic glyph pairs (Ꮟ/Ꮣ x5, Ᏹ/Ꮝ x2, ℓ read Ꮭ for Ꮅ, Ꮒ/Ꮵ, Ꮪ/Ꮥ, Ꮔ/Ꮈ, Ꮧ/Ꮨ). OCR: 21 (7.0%), mostly insertions and noise; gets the look-alike pairs right. Where the two independent readings agreed, no error found in the sample. 2 signs unresolvable at this res (Ꮤ/Ꮃ in v17, first sign of v12 ᏚᎤᎵ/ᎦᎤᎵ). Wikisource ᎪᏪᎭᎨᏛ/ᏣᏂ (rev 901723, anonymous edit, no edition named) stops at 1:10 and has errors of the same classes (Latin U in v7; v3 omits ᏥᎩ and reads ᎸᏬᏢᏅᎾ for ᏄᏬᏢᏅᎾ; v5 Ꮭ for Ꮅ, Ꮟ for Ꮣ). Method that works: two independent witnesses (hand + OCR), collate, adjudicate disagreements on the scan, flag unresolved signs.
+- 2026-10-13T14:39:47Z: 2026-10-13: weft ocr landed (pipeline/weft/ocr.py): pinned scan -> Tesseract chr (tessdata_best commit 9ddc24e, sha256 b3a0da90...) -> gen/ocr/<page>.txt + provenance; sign-level collation report; ocr.witness_check for the Cherokee module's line_checks (edition ocr_check + token ocr). Tesseract chr on the 1860 NT page: 6.3-6.7% on hand+IA consensus signs, binarized slightly better. Pilot candidate: Constitution of the Cherokee Nation (New Echota 1828, Newberry Ayer 251 C211 1828 on archive.org, bilingual, same press/type as the Phoenix); archive.org OCR reads its Cherokee as Latin, so Tesseract is the machine witness. Preamble OCR'd (crop 815,1500,950,1180 of image 00007_o2_right); first two lines settled; uncertain Ꮧ/Ꮨ in ᎠᏫᏂᏗᏢ; lexical check settled ᏚᏳᎪᏛ. My reading of that page is NOT blind (saw OCR first): the published hand error rate for 1828 type needs a blind reading of another page (Article I). Next: Cherokee module (syllabary->romanization, INDIGENOUS = True, line_checks via ocr.witness_check).
 
 ## Log
 

@@ -335,6 +335,28 @@
       `${D.work.lang_name || "This text"} runs from right to left: each ${D.work.unit === "verse" ? "verse" : "line"} begins at the right edge, and its first word is the rightmost. The pronunciation and gloss under each word read left to right.`);
     note.hidden = false;
   }
+  // a living community's text: whose transcription and translation this is, and the community's own position
+  const W = D.work.stewardship;
+  if (W) {
+    const note = $("#steward-note");
+    const rel = { community: "from within the community", outsider: "from outside the community",
+                  mixed: "by community members and outsiders together" };
+    const pos = W.position || {}, tr = W.transcription || {};
+    // only what the block states: a field weft check would refuse is left out rather than printed as "undefined"
+    const who = (by, relation) => [by, rel[relation]].filter(Boolean).join(", ");
+    note.append(h("strong", { text: "Whose text this is. " }),
+      W.community ? `This is a text of the ${W.community}. ` : "",
+      tr.by ? `Transcription: ${who(tr.by, tr.relation)}${tr.method ? "; " + tr.method : ""}. ` : "",
+      (W.translations || []).length ? `Translation: ${W.translations.map((t) => who(t.who, t.relation)).join("; ")}. ` : "",
+      pos.summary ? h("span", {}, "The community's stated position: ", pos.summary,
+                      pos.source ? h("span", {}, " (", h("a", { href: pos.source, text: "source" }), ")") : "", ". ")
+        : pos.none_found ? `No published position of the community on editions such as this one was found (${pos.none_found}). `
+        : "",
+      "Corrections from readers in the community take precedence: ",
+      issueLink("Correction", "suggest one"), ". ",
+      h("a", { href: "about.html#texts-of-living-communities", text: "How Weft handles these texts" }), ".");
+    note.hidden = false;
+  }
   // an invitation to specialists: corrections to a reconstructed pronunciation, or recordings
   if (!D.work.private_work && (D.work.sound_confidence === "low" || D.work.sound_confidence === "medium")) {
     const note = $("#sound-note");

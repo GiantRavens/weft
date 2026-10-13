@@ -13,7 +13,7 @@ from pathlib import Path
 
 import yaml
 
-from . import __version__, treebank
+from . import __version__, stewardship, treebank
 from .draft import PHON, load_manifest
 
 HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "arc": "arc", "lzh": "lzh", "runic": "gmq", "ja": "ja", "san": "sa", "akk": "akk", "fa": "fa", "ta": "ta", "it": "it", "fr": "fr", "es": "es", "nl": "nl", "fro": "fro", "de": "de", "egy": "egy", "sux": "sux", "orv": "orv", "xng": "xng", "cop": "cop", "sw": "sw", "qya": "qya", "sjn": "sjn", "pt": "pt", "eo": "eo"}
@@ -131,6 +131,7 @@ def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
                      show_translit=getattr(PHON[m["language"]], "SHOW_TRANSLIT", m["language"] == "san"),
                      translit_label=getattr(PHON[m["language"]], "TRANSLIT_LABEL", "Transliteration"),
                      sound_confidence=m.get("sound_confidence"),
+                     stewardship=stewardship.for_page(m, list(translations.values()) + list(references.values())),
                      repo_url=REPO_URL),
         "edition": {k: m["edition"].get(k) for k in ("id", "name", "license")},
         "treebank": ({k: m["treebank"].get(k) for k in ("id", "name", "license")} if m.get("treebank")
