@@ -226,11 +226,15 @@
 
   /* ---------- word and line detail */
   const wordPanel = $("#word"), wordBody = $("#word-body");
-  function openPanel(p) { p.hidden = false; }
+  function openPanel(p) {
+    p.hidden = false;
+    if (p.id !== "nav") closePanel($("#nav"));     // the navigator shares the phone's bottom sheet with the word panel
+  }
   function closePanel(p) {
     p.hidden = true;
     if (p === wordPanel) document.querySelectorAll(".w.active").forEach((x) => x.classList.remove("active"));
     if (p.id === "loom") $("#open-loom").setAttribute("aria-expanded", "false");
+    if (p.id === "nav") $("#open-nav").setAttribute("aria-expanded", "false");
   }
   function noteEl(n) {
     const badges = [h("span", { class: "badge", text: n.kind === "quoted" ? "quoted" : "editorial" })];
@@ -513,7 +517,7 @@
   keyDlg.addEventListener("click", (e) => { if (e.target === keyDlg) keyDlg.close(); });
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") { closePanel(wordPanel); closePanel($("#loom")); }
+    if (e.key === "Escape") { closePanel(wordPanel); closePanel($("#loom")); closePanel($("#nav")); }
   });
 
   buildLoom();
@@ -523,6 +527,70 @@
 
   /* a link to a line or a word (work.html#od.1.1, #od.1.1.5, from search or a citation): the page is
      drawn by script, so the browser's own jump to the anchor finds nothing; go there once it is drawn */
+  /* ---------- navigator: where the reader is, and a list to jump from. Sections when the work has twelve or
+     more; otherwise lines, when the page runs past a screenful; a short page gets none. The masthead label
+     and the grid panel serve every width; the rail in the left gutter shows from 1250px (weft.css). */
+  (() => {
+    const pos = $("#open-nav"), rail = $("#rail"), track = $("#rail-track"), panel = $("#nav"), grid = $("#navgrid");
+    const cap = (w) => w.charAt(0).toUpperCase() + w.slice(1);
+    const secIds = STANZAS ? [...new Set(D.lines.map((l) => l.stanza))] : [];
+    const total = D.lines.length;
+    let items, noun;
+    if (secIds.length >= 12) {
+      noun = D.work.unit === "inscription" ? "Inscription" : D.work.unit === "section" ? cap(D.work.section_noun || "section") : "Stanza";
+      const first = {};
+      D.lines.forEach((l, i) => { if (!(l.stanza in first)) first[l.stanza] = i; });
+      items = secIds.map((s) => ({ id: `sec-${s}`, label: String(s), title: D.lines[first[s]].stanza_title || `${noun} ${s}`, at: first[s] }));
+    } else if (total >= 40) {
+      noun = cap(UNIT);
+      items = D.lines.map((l, i) => ({ id: l.id, label: lineNo(l.id), title: `${noun} ${lineNo(l.id)}`, at: i }));
+    } else return;
+    const n = items.length;
+    const byLine = new Array(total);                       // line index -> item index
+    items.forEach((it, k) => { const end = k + 1 < n ? items[k + 1].at : total; for (let i = it.at; i < end; i++) byLine[i] = k; });
+    const many = `${n} ${n === 1 ? noun.toLowerCase() : plural(noun.toLowerCase())}`;
+    $("#nav-title").textContent = many;
+    const cells = items.map((it) => h("a", { href: `#${it.id}`, title: it.title, text: it.label, onclick: () => closePanel(panel) }));
+    grid.replaceChildren(...cells);
+    const ticks = items.map((it, k) => h("a", { class: "tick", href: `#${it.id}`, title: it.title,
+      style: `top:${((it.at / total) * 100).toFixed(3)}%;height:${((((k + 1 < n ? items[k + 1].at : total) - it.at) / total) * 100).toFixed(3)}%` }, h("span", { text: it.label })));
+    track.replaceChildren(...ticks);
+    $("#rail-head").textContent = many;
+    rail.classList.add("on"); pos.classList.add("on");
+    const headH = () => $(".masthead").offsetHeight;
+    const setHead = () => document.documentElement.style.setProperty("--head-h", headH() + "px");
+    function labelStep() {                                  // label every k-th tick so labels stay 16px apart
+      const k = Math.max(1, Math.ceil((n * 16) / (track.clientHeight || 600)));
+      ticks.forEach((t, i) => t.classList.toggle("lbl", i % k === 0));
+    }
+    let cur = -1;
+    function update() {
+      const sets = text.querySelectorAll(".lineset");
+      if (!sets.length) return;
+      const top = headH() + 8;
+      let lo = 0, hi = sets.length - 1;                     // first line whose bottom is below the masthead
+      while (lo < hi) { const mid = (lo + hi) >> 1; if (sets[mid].getBoundingClientRect().bottom > top) hi = mid; else lo = mid + 1; }
+      const k = byLine[lo] ?? n - 1;
+      if (k === cur) return;
+      cur = k;
+      pos.textContent = `${noun} ${items[k].label} of ${n}`;
+      ticks.forEach((t, i) => t.classList.toggle("current", i === k));
+      cells.forEach((c, i) => c.classList.toggle("current", i === k));
+    }
+    const toggle = () => {
+      if (panel.hidden) {
+        closePanel(wordPanel); closePanel($("#loom")); openPanel(panel); pos.setAttribute("aria-expanded", "true");
+        const c = grid.querySelector("a.current"); if (c) c.scrollIntoView({ block: "center" });
+      } else closePanel(panel);
+    };
+    pos.addEventListener("click", toggle);
+    $("#rail-head").addEventListener("click", toggle);
+    let queued = false;
+    window.addEventListener("scroll", () => { if (!queued) { queued = true; requestAnimationFrame(() => { queued = false; update(); }); } }, { passive: true });
+    window.addEventListener("resize", () => { setHead(); labelStep(); cur = -1; update(); });
+    setHead(); labelStep(); update();
+  })();
+
   function goToHash() {
     let id = "";
     try { id = decodeURIComponent(location.hash.slice(1)); } catch (e) { return; }
@@ -530,12 +598,17 @@
     const el = document.getElementById(id) || document.querySelector(`.w[data-id="${CSS.escape(id)}"]`);
     if (!el) return;
     document.querySelectorAll(".hit").forEach((x) => x.classList.remove("hit"));
-    const line = el.closest(".lineset") || el;
-    line.classList.add("hit");
+    let line = el.closest(".lineset");
+    if (!line && el.classList.contains("stanza-head")) {   // a section link: scroll to the heading, light the first line under it
+      let x = el.nextElementSibling;
+      while (x && !x.classList.contains("lineset")) x = x.nextElementSibling;
+      line = x;
+    }
+    (line || el).classList.add("hit");
     if (el.classList.contains("w")) el.classList.add("hit");
     const head = document.querySelector(".masthead");
     if (head) document.documentElement.style.setProperty("--head-h", head.offsetHeight + "px");
-    line.scrollIntoView({ block: "start" });     // scroll-margin-top (weft.css) keeps it clear of the sticky header
+    (el.classList.contains("stanza-head") ? el : line || el).scrollIntoView({ block: "start" });     // scroll-margin-top (weft.css) keeps it clear of the sticky header
   }
   window.addEventListener("hashchange", goToHash);
   goToHash();

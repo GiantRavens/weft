@@ -20,6 +20,7 @@
       <a class="home" href="index.html" title="Back to the Weft library" aria-label="Weft: back to the library">{{LOCKUP}}</a>
       <h1 id="work-title"></h1>
       <div class="byline" id="work-byline"></div>
+      <button type="button" id="open-nav" class="pos" aria-controls="nav" aria-expanded="false" title="Where you are in the text; opens the list to jump from"></button>
     </div>
     <nav class="tools" aria-label="Reading controls">
       <button type="button" id="open-key" class="tool" title="What each letter and mark in the blue sound line stands for, in the pronunciation now chosen">Sound key</button>
@@ -27,6 +28,8 @@
     </nav>
   </div>
 </header>
+
+<nav id="rail" class="rail" aria-label="Position in the text"><button type="button" class="rail-head" id="rail-head" title="Open the list to jump from"></button><div class="rail-track" id="rail-track"></div></nav>
 
 {{FRONTIS}}
 
@@ -78,6 +81,14 @@
     <button type="button" class="close" data-close="word" aria-label="Close word detail">×</button>
   </div>
   <div id="word-body"></div>
+</aside>
+
+<aside id="nav" class="panel nav" aria-label="Go to a section" hidden>
+  <div class="panel-head">
+    <h2 id="nav-title">Go to</h2>
+    <button type="button" class="close" data-close="nav" aria-label="Close the list">×</button>
+  </div>
+  <div class="navgrid" id="navgrid"></div>
 </aside>
 
 <dialog id="key" class="keydialog" aria-label="Pronunciation key">
