@@ -9,6 +9,7 @@ urn: urn:cts:latinLit:phi0959.phi006
 unit: line
 written: {year: 8, display: "AD 8", label: "completed about AD 8"}   # composition date; the library sorts by year
 status: phase-0
+extent: {is: excerpt, of: "book 1, lines 1 to 9 of 779; the Metamorphoses has 15 books"}
 pilot: {book: 1, first: 1, last: 9}
 edition:
   id: perseus-lat2

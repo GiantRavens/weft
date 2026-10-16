@@ -11,6 +11,7 @@ section_noun: chapter
 pilot: {sections: ["5", "6", "7", "8", "49"]}
 written: {year: 1220, display: "c. 1220", label: "written by Snorri Sturluson about 1220 as part of a handbook for poets; the main manuscripts date from the first half of the 1300s"}
 status: phase-0
+extent: {is: section, of: "chapters 5 to 8 and 49 of Gylfaginning's 54"}
 edition:
   id: jonsson-heimskringla
   name: "Guðni Jónsson's normalized text of Edda Snorra Sturlusonar, via heimskringla.no and the CLTK Old Norse corpus (commit 2fb9652), as Weft's line division"

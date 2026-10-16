@@ -58,6 +58,9 @@ button { font: inherit; color: inherit; }
 .kicker { margin: 0; font: 600 0.68rem/1 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
 h1 { margin: 4px 0 0; font-size: 1.5rem; font-weight: 700; line-height: 1.1; }
 .byline { margin: 2px 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+.pill { display: inline-block; vertical-align: 2px; font: 600 0.6rem/1 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 7px; border-radius: 999px; border: 1px solid var(--rule); color: var(--ink-soft); white-space: nowrap; }
+.pill.whole { border-color: var(--accent); color: var(--accent); }
+.pill.section { color: var(--ink); }
 .tools { display: flex; gap: 8px; flex-shrink: 0; }
 .tool {
   font: 500 0.82rem/1 var(--sans); padding: 9px 13px; border-radius: 999px;

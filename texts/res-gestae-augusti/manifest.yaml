@@ -10,6 +10,7 @@ unit: section
 section_noun: chapter
 written: {year: 14, display: "AD 14", label: "Augustus's account of his deeds, left with his will at his death in AD 14 and set up on bronze before his mausoleum in Rome; known from the copy on the temple of Rome and Augustus at Ancyra (Ankara)"}
 status: phase-0
+extent: {is: excerpt, of: "the heading and chapters 1 to 4 and 34 to 35 of 35"}
 pilot: {sections: ["1", "2", "3", "4", "34", "35"]}   # the heading (praef) is drafted and shown too; left out here so the index reads "chapters 1–4, 34–35"
 edition:
   id: la-wikisource-res-gestae

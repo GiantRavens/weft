@@ -178,6 +178,11 @@ row, generated from the transliteration, and a labelled Weft translation where n
 modern one exists. The Rigveda page reads the accent strokes of the Devanagari back into pitch
 accents, checks them against the transliteration, and computes the gāyatrī metre.
 
+Each page and library card carries an extent pill: complete work (22 works, among them the seven
+Eddic poems and the Zhouyi), complete section (a canto, a chapter, a hymn: 32 works) or excerpt (28
+works). Every built line is glossed; the pill says how much of the work is built, and it changes as
+more lands. The field is `extent` in the manifest (`docs/schema.md`).
+
 `weft build` also writes `site/build/index.html`, a library page listing every built work.
 Glosses, scansion, treebank corrections and editorial notes are drafts awaiting scholarly
 review. See `docs/lifecycle.md` and `pin ls`.

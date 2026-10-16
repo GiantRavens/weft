@@ -112,6 +112,8 @@
     : STANZAS
     ? `${D.work.author} · stanzas ${ranges([...new Set(D.lines.map((l) => l.stanza))])}`
     : `${D.work.author} · ${shortRef(first.id)}–${shortRef(first.id).split(".")[0] === shortRef(last.id).split(".")[0] ? lineNo(last.id) : shortRef(last.id)}`;
+  if (D.work.extent) // how much of the work this page holds; the title carries the denominator
+    $("#work-byline").append(" ", h("span", { class: `pill ${D.work.extent.is}`, title: D.work.extent.of, text: D.work.extent.label }));
   const unreviewed = (c) => c && Object.values(c).some((x) => x.status !== "reviewed");
   const anyDraft = D.lines.some((l) => unreviewed(l.curated) || l.tokens.some((t) => t.curated && Object.values(t.curated).some((c) => c.status !== "reviewed")));
   // the notes about the page are divs, not paragraphs: Safari's Reader counts paragraph text, and these

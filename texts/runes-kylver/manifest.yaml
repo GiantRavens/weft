@@ -8,6 +8,7 @@ urn: urn:weft:runic:anthology   # kept from the page this work was split from, s
 unit: inscription
 written: {year: 400, display: "c. 400", label: "carved on Gotland about 400: the earliest complete futhark"}
 status: phase-0
+extent: {is: whole, of: "the whole inscription"}
 pilot: {inscriptions: [kylver]}
 edition:
   id: weft-runic

@@ -9,6 +9,7 @@ urn: urn:weft:non:grettis-saga   # no CTS URN; Weft-local identifier
 unit: sentence
 written: {year: 1315, display: "1310–1320", label: "written about 1310–1320"}   # composition date; the library sorts by year
 status: phase-0
+extent: {is: excerpt, of: "the first 9 sentences of chapter 14; the saga has more than 90 chapters"}
 pilot: {chapter: 14, first: 1, last: 9}    # IcePaHC sentence numbers within the text; its excerpt opens chapter 14
 edition:
   id: icepahc

@@ -9,6 +9,7 @@ urn: urn:cts:greekLit:tlg0012.tlg002
 unit: line
 written: {year: -700, display: "725–675 BC", label: "composed about 725–675 BC"}   # composition date; the library sorts by year
 status: phase-0
+extent: {is: excerpt, of: "book 1, lines 1 to 10 of 444; the Odyssey has 24 books"}
 pilot: {book: 1, first: 1, last: 10}
 edition:
   id: perseus-grc2

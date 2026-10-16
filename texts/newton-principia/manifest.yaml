@@ -11,6 +11,7 @@ unit: section
 section_noun: text
 written: {year: 1687, display: "1687", label: "Philosophiae Naturalis Principia Mathematica, first edition, London, 1687: the Axiomata, sive Leges Motus"}
 status: phase-0
+extent: {is: section, of: "the three laws of motion, whole; the Axioms continue with corollaries"}
 pilot: {sections: ['newton-1', 'newton-2', 'newton-3']}
 edition:
   id: weft-science

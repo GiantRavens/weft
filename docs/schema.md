@@ -197,6 +197,19 @@ charters, bulls, declarations and manifestos),
 work; `weft check` refuses a manifest without one. A translation record's `kind: reference` or
 `kind: editorial` is a different field and unrelated.
 
+## The extent of a work
+
+`extent: {is, of}` in the manifest says how much of the work the page holds, and the page and the
+library card show it as a pill. `is` takes one of three values. `whole`: the work, as the edition
+defines it, is all here (Völuspá, the 95 Theses, the Zhouyi core text without the Ten Wings).
+`section`: a self-contained unit of a larger work (a canto, a chapter, a hymn, a sonnet from a
+collection, a number from an opera). `excerpt`: an opening or a selection that is not a unit of the
+work (Iliad 1.1 to 52, the Cherokee preamble and Article I). `of` is the denominator in words, shown
+when the pointer rests on the pill: "canto 1 of the Inferno's 34", "lines 1 to 10 of 444". When more
+of a work lands, its extent changes with it; the field is a reading of the current build, not a plan.
+`weft check` refuses a manifest without a valid extent. Gloss coverage is not part of it: every
+built line is glossed, so the only variable is how much of the work is built.
+
 ## Translations still in copyright: kind: reference
 
 A translation that is still in copyright can be cited without being reproduced. In the manifest,

@@ -10,6 +10,7 @@ unit: section
 section_noun: chapter
 written: {year: -300, display: "4th–3rd c. BC", label: "compiled in the Warring States period, 4th to 3rd century BC; chapter 2 is on the Guodian bamboo slips (buried about 300 BC), chapter 1 first on the Mawangdui silk manuscripts (before 168 BC); this text is Wang Bi's recension (about AD 240)"}
 status: phase-0
+extent: {is: section, of: "chapters 1 and 2 of 81"}
 pilot: {sections: ["1", "2"]}
 edition:
   id: wangbi-wikisource

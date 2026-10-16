@@ -11,6 +11,7 @@ urn: urn:weft:hbo:tanakh.deuteronomy.shema # no CTS URN; Weft-local identifier
 unit: verse
 written: {year: -620, display: "600s BC", label: "the core of Deuteronomy is usually tied to the reform of Josiah (about 622 BC), with the book taking its final form in the exile and after; the vowel points were added about AD 900; the passage is recited morning and evening as the first paragraph of the Shema"}
 status: phase-0
+extent: {is: section, of: "the whole first paragraph, Deuteronomy 6:4 to 9; the liturgical Shema adds two more"}
 pilot: {chapter: 6, first: 4, last: 9}
 edition:
   id: wlc-oshb

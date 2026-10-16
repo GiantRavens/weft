@@ -43,7 +43,8 @@ is "done" before that.
    the print, the two or three passages a reader will ask about, and the connections to works
    already in the library. Every note names what it leans on.
 8. **Finish the manifest:** title, `short_title`, author with dates, `lang_name`, `kind` (one of the
-   seven in `docs/schema.md`), `written` with a
+   seven in `docs/schema.md`), `extent` (`whole`, `section` or `excerpt`, with the denominator in
+   words; `docs/schema.md`), `written` with a
    label, the edition record, schemes and their labels for this time and place,
    `sound_confidence`, translations with licences, and `predicted_gaps`, which states what the
    work does not yet do and what is approximate.

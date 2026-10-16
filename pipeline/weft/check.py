@@ -49,7 +49,7 @@ def run(repo: Path, work: str) -> dict:
     from .paths import work_dir
     data = assemble(work_dir(repo, work))
     import yaml
-    from .build import KINDS
+    from .build import EXTENTS, KINDS
     manifest = yaml.safe_load((work_dir(repo, work) / "manifest.yaml").read_text()) or {}
     problems: Counter[str] = Counter()
     warnings: Counter[str] = Counter()         # reported and counted, but not a failure of the work
@@ -63,6 +63,11 @@ def run(repo: Path, work: str) -> dict:
 
     if manifest.get("kind") not in KINDS:
         bad("manifest-kind", f"{manifest.get('kind')!r}; one of {', '.join(KINDS)}")
+    ext = manifest.get("extent")
+    if not isinstance(ext, dict) or ext.get("is") not in EXTENTS:
+        bad("manifest-extent", f"{ext!r}; extent: {{is: one of {', '.join(EXTENTS)}, of: \"the denominator in words\"}}")
+    elif not isinstance(ext.get("of"), str) or not ext["of"].strip():
+        bad("manifest-extent-of", "extent.of says how much of the work this is, in words (canto 1 of 34)")
     check_about(work_dir(repo, work), manifest, bad)
     from . import stewardship
     from .draft import PHON

@@ -10,6 +10,7 @@ urn: urn:weft:arc:tanakh.daniel  # no CTS URN; Weft-local identifier
 unit: verse
 written: {year: -165, display: "160s BC", label: "the Aramaic chapters of Daniel (2:4 to 7:28) are usually dated to the 160s BC, with older court tales behind them; the vowel points were added about AD 900"}
 status: phase-0
+extent: {is: section, of: "the whole of chapter 5; Daniel has 12"}
 pilot: {chapter: 5, first: 1, last: 30}
 edition:
   id: wlc-oshb

@@ -11,6 +11,7 @@ unit: section
 section_noun: chapter
 written: {year: 1298, display: "1298", label: "written down at Genoa in 1298 by Rustichello of Pisa from Marco Polo's account, as the book's prologue states; the text here is the Franco-Italian manuscript BnF fr. 1116, copied in the early 14th century, as printed in 1824"}
 status: phase-0
+extent: {is: section, of: "the whole chapter on Cipangu, one of more than 200 in the F text"}
 pilot: {sections: ["159"]}
 edition:
   id: sdg1824-f

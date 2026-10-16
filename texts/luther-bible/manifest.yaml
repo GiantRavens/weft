@@ -11,6 +11,7 @@ unit: section
 section_noun: passage
 written: {year: 1545, display: "1545", label: "Biblia: das ist: Die gantze Heilige Schrifft: Deudsch, printed at Wittenberg by Hans Lufft in 1545, the last edition printed in Luther's lifetime; the New Testament first appeared in September 1522, the complete Bible in 1534"}
 status: phase-0
+extent: {is: excerpt, of: "John 1:1 to 14 and the whole of Psalm 23, from a Bible of 66 books"}
 pilot: {sections: ["jn1", "ps23"]}
 edition:
   id: luther1545

@@ -131,6 +131,7 @@ def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
                      show_translit=getattr(PHON[m["language"]], "SHOW_TRANSLIT", m["language"] == "san"),
                      translit_label=getattr(PHON[m["language"]], "TRANSLIT_LABEL", "Transliteration"),
                      sound_confidence=m.get("sound_confidence"),
+                     extent=extent_of(m),
                      stewardship=stewardship.for_page(m, list(translations.values()) + list(references.values())),
                      repo_url=REPO_URL),
         "edition": {k: m["edition"].get(k) for k in ("id", "name", "license")},
@@ -347,6 +348,15 @@ def stanza_ranges(xs: list) -> str:
     return ", ".join(str(a) if a == b else f"{a}–{b}" for a, b in out)
 
 
+def extent_of(m: dict) -> dict | None:
+    """The manifest's `extent: {is, of}` with its pill label, or None when the manifest has none
+    (weft check reports that as manifest-extent)."""
+    e = m.get("extent")
+    if not isinstance(e, dict) or e.get("is") not in EXTENTS:
+        return None
+    return {"is": e["is"], "label": EXTENTS[e["is"]], "of": str(e.get("of") or "")}
+
+
 def short_title(m: dict) -> str:
     """The name a list can carry: 'Völuspá (The Seeress's Prophecy)' -> 'Völuspá'; 'Il Principe, chapters 17 and
     18: ...' -> 'Il Principe'. A manifest's short_title overrides this."""
@@ -361,6 +371,12 @@ def short_title(m: dict) -> str:
 # the index files a language under its plain name where the works span periods (Montaigne and the Berlin Act are both French)
 INDEX_FAMILY = {"fr": "French", "it": "Italian", "es": "Spanish", "nl": "Dutch", "ja": "Japanese", "pt": "Portuguese"}
 
+
+EXTENTS = {"whole": "Complete work", "section": "Complete section", "excerpt": "Excerpt"}
+# manifest extent.is -> the pill on the page and the library card. whole: the work as the edition
+# defines it is all here. section: a self-contained unit of a larger work (a canto, a chapter, a hymn,
+# a whole poem from a collection). excerpt: an opening or a selection that is not a unit of the work.
+# extent.of says the denominator in words ("canto 1 of 34"). A work's extent changes when more lands.
 
 KINDS = {"epic-and-myth": "Epic and myth", "scripture": "Sacred texts", "philosophy": "Philosophy", "poetry": "Poetry, literature and music",
          "law": "Law and politics", "correspondence": "Correspondence", "science": "Science"}      # manifest kind -> index heading, in this order
@@ -530,7 +546,9 @@ def write_index(repo: Path, out_dir: Path, private: bool = False) -> Path:
         when = f'<div class="when"><span class="yr">{H.escape(display_date(m.get("written") or {}))}</span>' \
                f'<span class="lg">{H.escape(lang_name)}</span></div>'
         rows.append(f'<li>{when}{thumb}<div class="body"><a href="{H.escape(page.name)}"><span class="t">{H.escape(m["title"])}</span>'
-                    f'<span class="a">{H.escape(m["author"])} · {span}</span></a>'
+                    f'<span class="a">{H.escape(m["author"])} · {span}</span>'
+                    + (f'<span class="pill {H.escape(ext["is"])}" title="{H.escape(ext["of"])}">{H.escape(ext["label"])}</span>' if (ext := extent_of(m)) else "")
+                    + '</a>'
                     + ('<p class="pv">Private: in your build only</p>' if m.get("_private") else "")
                     + (f'<p class="w">{H.escape(written[:1].upper() + written[1:])}</p>' if written else "")
                     + f'<p>{"Reads right to left · " if m["language"] in RTL else ""}'
@@ -578,6 +596,8 @@ ul{list-style:none;padding:0;margin:0}li{border-top:1px solid var(--rule);paddin
 @media (max-width:560px){li{flex-wrap:wrap;gap:10px 14px}.when{flex:0 0 100%;flex-direction:row;align-items:baseline;gap:10px;padding-top:0}
 .th{flex-basis:64px;width:64px;height:64px}}
 .body>a:hover .t{color:var(--accent)}.t{font-size:1.6rem;font-weight:700}.a{color:var(--soft)}
+.pill{display:inline-block;font:600 .62rem/1 Inter,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:4px 7px;border-radius:999px;border:1px solid var(--rule);color:var(--soft);white-space:nowrap;align-self:center}
+.pill.whole{border-color:var(--accent);color:var(--accent)}.pill.section{color:var(--ink)}
 li p{margin:6px 0 0;font:.85rem/1.5 Inter,system-ui,sans-serif;color:var(--soft)}
 .docnav{font:600 .78rem/1.4 Inter,system-ui,sans-serif;letter-spacing:.04em;color:var(--soft);margin:.4rem 0 0}
 .docnav a{color:var(--accent);text-decoration:none}.docnav a:hover{text-decoration:underline}.docnav span{color:var(--ink)}

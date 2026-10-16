@@ -9,6 +9,7 @@ urn: urn:cts:greekLit:tlg0031.tlg001
 unit: verse
 written: {year: 85, display: "AD 80–90", label: "written about AD 80–90"}   # composition date; the library sorts by year
 status: draft
+extent: {is: section, of: "the whole of the Beatitudes, 5:3 to 12; Matthew has 28 chapters"}
 pilot: {chapter: 5, first: 3, last: 12}
 edition:
   id: sblgnt

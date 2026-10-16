@@ -9,6 +9,7 @@ urn: urn:weft:hbo:tanakh.genesis # no CTS URN; Weft-local identifier
 unit: verse
 written: {year: -550, display: "500s–400s BC", label: "composed in the first millennium BC, taking its final form around the 500s–400s BC; the vowel points were added about AD 900"}
 status: phase-0
+extent: {is: section, of: "the whole creation account, 1:1 to 2:3; Genesis has 50 chapters"}
 pilot: {chapter: 1, first: 1, last: 31, also: [{chapter: 2, first: 1, last: 3}]}
 edition:
   id: wlc-oshb
