@@ -432,3 +432,2160 @@ lines:
     sound:
       c1828: {ipa: o.t͡si.tʰa.jo.si, respell: oh-tsee-tah-yoh-see}
       modern: {ipa: o.d͡ʒi.tʰa.jo.si, respell: oh-jee-tah-yoh-see}
+- id: chcon.a1s1.1
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.1
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎠᏟᎶᏛ ᏥᏕᎬᎫᏗ ᎠᏂᏣᎳᎩ ᎤᎾᏤᎵᎪᎯ ᎦᏙᎯ,
+  tokens:
+  - id: chcon.a1s1.1.1
+    surface: ᎠᏟᎶᏛ
+    norm: atlilodv
+    sound:
+      c1828: {ipa: a.t͡ɬi.lo.d̥ə̃, respell: ah-tlee-loh-duhn}
+      modern: {ipa: a.t͡ɬi.lo.tə̃, respell: ah-tlee-loh-duhn}
+  - id: chcon.a1s1.1.2
+    surface: ᏥᏕᎬᎫᏗ
+    norm: tsidegvgudi
+    uncertain: true
+    prov: {text: 'an uncertain sign; the scan also allows ᏥᎦᎬᎫᏗ (tsigagvgudi); the second sign is Ꮥ (de) or Ꭶ (ga): the bar is faint at this resolution; neither form was found in the dictionaries or the
+        1860 New Testament'}
+    sound:
+      c1828: {ipa: t͡si.d̥e.ɡ̊ə̃.ɡ̊u.d̥i, respell: tsee-day-guhn-goo-dee}
+      modern: {ipa: d͡ʒi.te.kə̃.ku.ti, respell: jee-day-guhn-goo-dee}
+  - id: chcon.a1s1.1.3
+    surface: ᎠᏂᏣᎳᎩ
+    norm: anitsalagi
+    sound:
+      c1828: {ipa: a.ni.t͡sa.la.ɡ̊i, respell: ah-nee-tsah-lah-gee}
+      modern: {ipa: a.ni.d͡ʒa.la.ki, respell: ah-nee-jah-lah-gee}
+  - id: chcon.a1s1.1.4
+    surface: ᎤᎾᏤᎵᎪᎯ
+    norm: unatseligohi
+    sound:
+      c1828: {ipa: u.na.t͡se.li.ɡ̊o.hi, respell: oo-nah-tsay-lee-goh-hee}
+      modern: {ipa: u.na.d͡ʒe.li.ko.hi, respell: oo-nah-jay-lee-goh-hee}
+  - id: chcon.a1s1.1.5
+    surface: ᎦᏙᎯ
+    punct: ','
+    norm: gadohi
+    sound:
+      c1828: {ipa: ɡ̊a.d̥o.hi, respell: gah-doh-hee}
+      modern: {ipa: ka.to.hi, respell: gah-doh-hee}
+- id: chcon.a1s1.2
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.2
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎤᏂᎬᏫᏳᎯ ᏗᎬᏩᏂᏂᎯᏎᎸ ᏚᏳᎪᏛ, ᎠᎴ ᎬᏩᏏᎯᏰᎸ ᏥᎩ,
+  tokens:
+  - id: chcon.a1s1.2.1
+    surface: ᎤᏂᎬᏫᏳᎯ
+    norm: unigvwiyuhi
+    sound:
+      c1828: {ipa: u.ni.ɡ̊ə̃.wi.ju.hi, respell: oo-nee-guhn-wee-yoo-hee}
+      modern: {ipa: u.ni.kə̃.ɰi.ju.hi, respell: oo-nee-guhn-wee-yoo-hee}
+  - id: chcon.a1s1.2.2
+    surface: ᏗᎬᏩᏂᏂᎯᏎᎸ
+    norm: digvwaninihiselv
+    sound:
+      c1828: {ipa: d̥i.ɡ̊ə̃.wa.ni.ni.hi.se.lə̃, respell: dee-guhn-wah-nee-nee-hee-say-luhn}
+      modern: {ipa: ti.kə̃.ɰa.ni.ni.hi.se.lə̃, respell: dee-guhn-wah-nee-nee-hee-say-luhn}
+  - id: chcon.a1s1.2.3
+    surface: ᏚᏳᎪᏛ
+    punct: ','
+    norm: duyugodv
+    sound:
+      c1828: {ipa: d̥u.ju.ɡ̊o.d̥ə̃, respell: doo-yoo-goh-duhn}
+      modern: {ipa: tu.ju.ko.tə̃, respell: doo-yoo-goh-duhn}
+  - id: chcon.a1s1.2.4
+    surface: ᎠᎴ
+    norm: ale
+    sound:
+      c1828: {ipa: a.le, respell: ah-lay}
+      modern: {ipa: a.le, respell: ah-lay}
+  - id: chcon.a1s1.2.5
+    surface: ᎬᏩᏏᎯᏰᎸ
+    norm: gvwasihiyelv
+    uncertain: true
+    prov: {text: 'an uncertain sign; the scan also allows ᎬᏩᏖᎯᏰᎸ (gvwatehiyelv); the third sign is Ꮟ (si) or Ꮦ (te), which the scan does not separate clearly'}
+    sound:
+      c1828: {ipa: ɡ̊ə̃.wa.si.hi.je.lə̃, respell: guhn-wah-see-hee-yay-luhn}
+      modern: {ipa: kə̃.ɰa.si.hi.je.lə̃, respell: guhn-wah-see-hee-yay-luhn}
+  - id: chcon.a1s1.2.6
+    surface: ᏥᎩ
+    punct: ','
+    norm: tsigi
+    sound:
+      c1828: {ipa: t͡si.ɡ̊i, respell: tsee-gee}
+      modern: {ipa: d͡ʒi.ki, respell: jee-gee}
+- id: chcon.a1s1.3
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.3
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎧᏃᎮᏛ ᏚᎾᏠᎯᏍᏓᏅ, ᎯᎠ ᏄᏍᏗ;
+  tokens:
+  - id: chcon.a1s1.3.1
+    surface: ᎧᏃᎮᏛ
+    norm: kanohedv
+    sound:
+      c1828: {ipa: kʰa.no.he.d̥ə̃, respell: kah-noh-hay-duhn}
+      modern: {ipa: kʰa.no.he.tə̃, respell: kah-noh-hay-duhn}
+  - id: chcon.a1s1.3.2
+    surface: ᏚᎾᏠᎯᏍᏓᏅ
+    punct: ','
+    norm: dunatlohisdanv
+    sound:
+      c1828: {ipa: d̥u.na.t͡ɬo.his.d̥a.nə̃, respell: doo-nah-tloh-hees-dah-nuhn}
+      modern: {ipa: tu.na.t͡ɬo.his.ta.nə̃, respell: doo-nah-tloh-hees-dah-nuhn}
+  - id: chcon.a1s1.3.3
+    surface: ᎯᎠ
+    norm: hia
+    sound:
+      c1828: {ipa: hi.a, respell: hee-ah}
+      modern: {ipa: hi.a, respell: hee-ah}
+  - id: chcon.a1s1.3.4
+    surface: ᏄᏍᏗ
+    punct: ;
+    norm: nusdi
+    sound:
+      c1828: {ipa: nus.d̥i, respell: noos-dee}
+      modern: {ipa: nus.ti, respell: noos-dee}
+- id: chcon.a1s1.4
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.4
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎠᎴ ᎾᏍᎩᏉ ᏄᏍᏕᏍᏗ ᏂᎪᎯᎸ ᎤᏓᏁᏟᏴᏍᏗ ᏂᎨᏒᎾ ᎨᏎᏍᏗ.
+  tokens:
+  - id: chcon.a1s1.4.1
+    surface: ᎠᎴ
+    norm: ale
+    sound:
+      c1828: {ipa: a.le, respell: ah-lay}
+      modern: {ipa: a.le, respell: ah-lay}
+  - id: chcon.a1s1.4.2
+    surface: ᎾᏍᎩᏉ
+    norm: nasgiquo
+    sound:
+      c1828: {ipa: nas.ɡ̊i.kʷo, respell: nahs-gee-kwoh}
+      modern: {ipa: nas.ki.kʷo, respell: nahs-gee-kwoh}
+  - id: chcon.a1s1.4.3
+    surface: ᏄᏍᏕᏍᏗ
+    norm: nusdesdi
+    sound:
+      c1828: {ipa: nus.d̥es.d̥i, respell: noos-days-dee}
+      modern: {ipa: nus.tes.ti, respell: noos-days-dee}
+  - id: chcon.a1s1.4.4
+    surface: ᏂᎪᎯᎸ
+    norm: nigohilv
+    sound:
+      c1828: {ipa: ni.ɡ̊o.hi.lə̃, respell: nee-goh-hee-luhn}
+      modern: {ipa: ni.ko.hi.lə̃, respell: nee-goh-hee-luhn}
+  - id: chcon.a1s1.4.5
+    surface: ᎤᏓᏁᏟᏴᏍᏗ
+    norm: udanetliyvsdi
+    sound:
+      c1828: {ipa: u.d̥a.ne.t͡ɬi.jə̃s.d̥i, respell: oo-dah-nay-tlee-yuhns-dee}
+      modern: {ipa: u.ta.ne.t͡ɬi.jə̃s.ti, respell: oo-dah-nay-tlee-yuhns-dee}
+  - id: chcon.a1s1.4.6
+    surface: ᏂᎨᏒᎾ
+    norm: nigesvna
+    sound:
+      c1828: {ipa: ni.ɡ̊e.sə̃.na, respell: nee-gay-suhn-nah}
+      modern: {ipa: ni.ke.sə̃.na, respell: nee-gay-suhn-nah}
+  - id: chcon.a1s1.4.7
+    surface: ᎨᏎᏍᏗ
+    punct: .
+    norm: gesesdi
+    sound:
+      c1828: {ipa: ɡ̊e.ses.d̥i, respell: gay-says-dee}
+      modern: {ipa: ke.ses.ti, respell: gay-says-dee}
+- id: chcon.a1s1.5
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.5
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᏥᎦᏌ ᎤᏂᏚᏅᎢ ᏔᎾᏏ ᎤᏪᏴᎢ ᏗᏓᎴᏂᎭ,
+  tokens:
+  - id: chcon.a1s1.5.1
+    surface: ᏥᎦᏌ
+    norm: tsigasa
+    sound:
+      c1828: {ipa: t͡si.ɡ̊a.sa, respell: tsee-gah-sah}
+      modern: {ipa: d͡ʒi.ka.sa, respell: jee-gah-sah}
+  - id: chcon.a1s1.5.2
+    surface: ᎤᏂᏚᏅᎢ
+    norm: unidunvi
+    sound:
+      c1828: {ipa: u.ni.d̥u.nə̃.i, respell: oo-nee-doo-nuhn-ee}
+      modern: {ipa: u.ni.tu.nə̃.i, respell: oo-nee-doo-nuhn-ee}
+  - id: chcon.a1s1.5.3
+    surface: ᏔᎾᏏ
+    norm: tanasi
+    sound:
+      c1828: {ipa: tʰa.na.si, respell: tah-nah-see}
+      modern: {ipa: tʰa.na.si, respell: tah-nah-see}
+  - id: chcon.a1s1.5.4
+    surface: ᎤᏪᏴᎢ
+    norm: uweyvi
+    sound:
+      c1828: {ipa: u.we.jə̃.i, respell: oo-way-yuhn-ee}
+      modern: {ipa: u.ɰe.jə̃.i, respell: oo-way-yuhn-ee}
+  - id: chcon.a1s1.5.5
+    surface: ᏗᏓᎴᏂᎭ
+    punct: ','
+    norm: didaleniha
+    sound:
+      c1828: {ipa: d̥i.d̥a.le.ni.ha, respell: dee-dah-lay-nee-hah}
+      modern: {ipa: ti.ta.le.ni.ha, respell: dee-dah-lay-nee-hah}
+- id: chcon.a1s1.6
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.6
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎾᏍᎩ ᎾᏉ ᎬᏓᎵᏱᎭ, ᏂᎦᏛ ᎠᎹᏰᎵ ᏚᏪᎦᎲ ᏣᎳᎩ ᏧᎾᏤᎵᎦ,
+  tokens:
+  - id: chcon.a1s1.6.1
+    surface: ᎾᏍᎩ
+    norm: nasgi
+    sound:
+      c1828: {ipa: nas.ɡ̊i, respell: nahs-gee}
+      modern: {ipa: nas.ki, respell: nahs-gee}
+  - id: chcon.a1s1.6.2
+    surface: ᎾᏉ
+    norm: naquo
+    sound:
+      c1828: {ipa: na.kʷo, respell: nah-kwoh}
+      modern: {ipa: na.kʷo, respell: nah-kwoh}
+  - id: chcon.a1s1.6.3
+    surface: ᎬᏓᎵᏱᎭ
+    punct: ','
+    norm: gvdaliyiha
+    sound:
+      c1828: {ipa: ɡ̊ə̃.d̥a.li.ji.ha, respell: guhn-dah-lee-yee-hah}
+      modern: {ipa: kə̃.ta.li.ji.ha, respell: guhn-dah-lee-yee-hah}
+  - id: chcon.a1s1.6.4
+    surface: ᏂᎦᏛ
+    norm: nigadv
+    sound:
+      c1828: {ipa: ni.ɡ̊a.d̥ə̃, respell: nee-gah-duhn}
+      modern: {ipa: ni.ka.tə̃, respell: nee-gah-duhn}
+  - id: chcon.a1s1.6.5
+    surface: ᎠᎹᏰᎵ
+    norm: amayeli
+    sound:
+      c1828: {ipa: a.ma.je.li, respell: ah-mah-yay-lee}
+      modern: {ipa: a.ma.je.li, respell: ah-mah-yay-lee}
+  - id: chcon.a1s1.6.6
+    surface: ᏚᏪᎦᎲ
+    norm: duwegahv
+    sound:
+      c1828: {ipa: d̥u.we.ɡ̊a.hə̃, respell: doo-way-gah-huhn}
+      modern: {ipa: tu.ɰe.ka.hə̃, respell: doo-way-gah-huhn}
+  - id: chcon.a1s1.6.7
+    surface: ᏣᎳᎩ
+    norm: tsalagi
+    sound:
+      c1828: {ipa: t͡sa.la.ɡ̊i, respell: tsah-lah-gee}
+      modern: {ipa: d͡ʒa.la.ki, respell: jah-lah-gee}
+  - id: chcon.a1s1.6.8
+    surface: ᏧᎾᏤᎵᎦ
+    punct: ','
+    norm: tsunatseliga
+    sound:
+      c1828: {ipa: t͡su.na.t͡se.li.ɡ̊a, respell: tsoo-nah-tsay-lee-gah}
+      modern: {ipa: d͡ʒu.na.d͡ʒe.li.ka, respell: joo-nah-jay-lee-gah}
+- id: chcon.a1s1.7
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.7
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎠᏳᏩᏏ ᎤᏪᎪᏨ ᎢᏯᏍᏗ,
+  tokens:
+  - id: chcon.a1s1.7.1
+    surface: ᎠᏳᏩᏏ
+    norm: ayuwasi
+    sound:
+      c1828: {ipa: a.ju.wa.si, respell: ah-yoo-wah-see}
+      modern: {ipa: a.ju.ɰa.si, respell: ah-yoo-wah-see}
+  - id: chcon.a1s1.7.2
+    surface: ᎤᏪᎪᏨ
+    norm: uwegotsv
+    sound:
+      c1828: {ipa: u.we.ɡ̊o.t͡sə̃, respell: oo-way-goh-tsuhn}
+      modern: {ipa: u.ɰe.ko.d͡ʒə̃, respell: oo-way-goh-juhn}
+  - id: chcon.a1s1.7.3
+    surface: ᎢᏯᏍᏗ
+    punct: ','
+    norm: iyasdi
+    sound:
+      c1828: {ipa: i.jas.d̥i, respell: ee-yahs-dee}
+      modern: {ipa: i.jas.ti, respell: ee-yahs-dee}
+- id: chcon.a1s1.8
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.8
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎾᏉᏃ ᎾᏍᎩ ᎠᏳᏩᏏ ᎤᏪᏴ ᎠᏍᏓᏩᏕᎦ ᎠᏳᏩᏏ ᎤᎧᏔᏂᎸᎢᏯᏍᏗ,
+  tokens:
+  - id: chcon.a1s1.8.1
+    surface: ᎾᏉᏃ
+    norm: naquono
+    sound:
+      c1828: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+      modern: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+  - id: chcon.a1s1.8.2
+    surface: ᎾᏍᎩ
+    norm: nasgi
+    sound:
+      c1828: {ipa: nas.ɡ̊i, respell: nahs-gee}
+      modern: {ipa: nas.ki, respell: nahs-gee}
+  - id: chcon.a1s1.8.3
+    surface: ᎠᏳᏩᏏ
+    norm: ayuwasi
+    sound:
+      c1828: {ipa: a.ju.wa.si, respell: ah-yoo-wah-see}
+      modern: {ipa: a.ju.ɰa.si, respell: ah-yoo-wah-see}
+  - id: chcon.a1s1.8.4
+    surface: ᎤᏪᏴ
+    norm: uweyv
+    sound:
+      c1828: {ipa: u.we.jə̃, respell: oo-way-yuhn}
+      modern: {ipa: u.ɰe.jə̃, respell: oo-way-yuhn}
+  - id: chcon.a1s1.8.5
+    surface: ᎠᏍᏓᏩᏕᎦ
+    norm: asdawadega
+    sound:
+      c1828: {ipa: as.d̥a.wa.d̥e.ɡ̊a, respell: ahs-dah-wah-day-gah}
+      modern: {ipa: as.ta.ɰa.te.ka, respell: ahs-dah-wah-day-gah}
+  - id: chcon.a1s1.8.6
+    surface: ᎠᏳᏩᏏ
+    norm: ayuwasi
+    sound:
+      c1828: {ipa: a.ju.wa.si, respell: ah-yoo-wah-see}
+      modern: {ipa: a.ju.ɰa.si, respell: ah-yoo-wah-see}
+  - id: chcon.a1s1.8.7
+    surface: ᎤᎧᏔᏂᎸᎢᏯᏍᏗ
+    punct: ','
+    norm: ukatanilviyasdi
+    sound:
+      c1828: {ipa: u.kʰa.tʰa.ni.lə̃.i.jas.d̥i, respell: oo-kah-tah-nee-luhn-ee-yahs-dee}
+      modern: {ipa: u.kʰa.tʰa.ni.lə̃.i.jas.ti, respell: oo-kah-tah-nee-luhn-ee-yahs-dee}
+- id: chcon.a1s1.9
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.9
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᏔᎵ ᎢᏳᏟᎶᏛ ᏦᎩ ᎠᏳᏩᏏ ᎦᏚᏅᎢ,
+  tokens:
+  - id: chcon.a1s1.9.1
+    surface: ᏔᎵ
+    norm: tali
+    sound:
+      c1828: {ipa: tʰa.li, respell: tah-lee}
+      modern: {ipa: tʰa.li, respell: tah-lee}
+  - id: chcon.a1s1.9.2
+    surface: ᎢᏳᏟᎶᏛ
+    norm: iyutlilodv
+    sound:
+      c1828: {ipa: i.ju.t͡ɬi.lo.d̥ə̃, respell: ee-yoo-tlee-loh-duhn}
+      modern: {ipa: i.ju.t͡ɬi.lo.tə̃, respell: ee-yoo-tlee-loh-duhn}
+  - id: chcon.a1s1.9.3
+    surface: ᏦᎩ
+    norm: tsogi
+    sound:
+      c1828: {ipa: t͡so.ɡ̊i, respell: tsoh-gee}
+      modern: {ipa: d͡ʒo.ki, respell: joh-gee}
+  - id: chcon.a1s1.9.4
+    surface: ᎠᏳᏩᏏ
+    norm: ayuwasi
+    sound:
+      c1828: {ipa: a.ju.wa.si, respell: ah-yoo-wah-see}
+      modern: {ipa: a.ju.ɰa.si, respell: ah-yoo-wah-see}
+  - id: chcon.a1s1.9.5
+    surface: ᎦᏚᏅᎢ
+    punct: ','
+    norm: gadunvi
+    sound:
+      c1828: {ipa: ɡ̊a.d̥u.nə̃.i, respell: gah-doo-nuhn-ee}
+      modern: {ipa: ka.tu.nə̃.i, respell: gah-doo-nuhn-ee}
+- id: chcon.a1s1.10
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.10
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎠᎹᏰᎵ ᎠᎴ ᏚᏪᎧᎲ ᎾᏍᏉ ᏣᎳᎩ ᏧᎾᏤᎵᎦ.
+  tokens:
+  - id: chcon.a1s1.10.1
+    surface: ᎠᎹᏰᎵ
+    norm: amayeli
+    sound:
+      c1828: {ipa: a.ma.je.li, respell: ah-mah-yay-lee}
+      modern: {ipa: a.ma.je.li, respell: ah-mah-yay-lee}
+  - id: chcon.a1s1.10.2
+    surface: ᎠᎴ
+    norm: ale
+    sound:
+      c1828: {ipa: a.le, respell: ah-lay}
+      modern: {ipa: a.le, respell: ah-lay}
+  - id: chcon.a1s1.10.3
+    surface: ᏚᏪᎧᎲ
+    norm: duwekahv
+    sound:
+      c1828: {ipa: d̥u.we.kʰa.hə̃, respell: doo-way-kah-huhn}
+      modern: {ipa: tu.ɰe.kʰa.hə̃, respell: doo-way-kah-huhn}
+  - id: chcon.a1s1.10.4
+    surface: ᎾᏍᏉ
+    norm: nasquo
+    sound:
+      c1828: {ipa: nas.kʷo, respell: nahs-kwoh}
+      modern: {ipa: nas.kʷo, respell: nahs-kwoh}
+  - id: chcon.a1s1.10.5
+    surface: ᏣᎳᎩ
+    norm: tsalagi
+    sound:
+      c1828: {ipa: t͡sa.la.ɡ̊i, respell: tsah-lah-gee}
+      modern: {ipa: d͡ʒa.la.ki, respell: jah-lah-gee}
+  - id: chcon.a1s1.10.6
+    surface: ᏧᎾᏤᎵᎦ
+    punct: .
+    norm: tsunatseliga
+    sound:
+      c1828: {ipa: t͡su.na.t͡se.li.ɡ̊a, respell: tsoo-nah-tsay-lee-gah}
+      modern: {ipa: d͡ʒu.na.d͡ʒe.li.ka, respell: joo-nah-jay-lee-gah}
+- id: chcon.a1s1.11
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.11
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎾᏉᏃ ᎤᏅᏓᏝᏗᏒ, ᎠᏳᏩᏏ ᏓᎵᏆᏃ ᏚᏪᏴ ᏥᏓᎦᎴᏅᏗᎭ,
+  tokens:
+  - id: chcon.a1s1.11.1
+    surface: ᎾᏉᏃ
+    norm: naquono
+    sound:
+      c1828: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+      modern: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+  - id: chcon.a1s1.11.2
+    surface: ᎤᏅᏓᏝᏗᏒ
+    punct: ','
+    norm: unvdatladisv
+    sound:
+      c1828: {ipa: u.nə̃.d̥a.t͡ɬa.d̥i.sə̃, respell: oo-nuhn-dah-tlah-dee-suhn}
+      modern: {ipa: u.nə̃.ta.t͡ɬa.ti.sə̃, respell: oo-nuhn-dah-tlah-dee-suhn}
+  - id: chcon.a1s1.11.3
+    surface: ᎠᏳᏩᏏ
+    norm: ayuwasi
+    sound:
+      c1828: {ipa: a.ju.wa.si, respell: ah-yoo-wah-see}
+      modern: {ipa: a.ju.ɰa.si, respell: ah-yoo-wah-see}
+  - id: chcon.a1s1.11.4
+    surface: ᏓᎵᏆᏃ
+    norm: daliquano
+    sound:
+      c1828: {ipa: d̥a.li.kʷa.no, respell: dah-lee-kwah-noh}
+      modern: {ipa: ta.li.kʷa.no, respell: dah-lee-kwah-noh}
+  - id: chcon.a1s1.11.5
+    surface: ᏚᏪᏴ
+    norm: duweyv
+    sound:
+      c1828: {ipa: d̥u.we.jə̃, respell: doo-way-yuhn}
+      modern: {ipa: tu.ɰe.jə̃, respell: doo-way-yuhn}
+  - id: chcon.a1s1.11.6
+    surface: ᏥᏓᎦᎴᏅᏗᎭ
+    punct: ','
+    norm: tsidagalenvdiha
+    sound:
+      c1828: {ipa: t͡si.d̥a.ɡ̊a.le.nə̃.d̥i.ha, respell: tsee-dah-gah-lay-nuhn-dee-hah}
+      modern: {ipa: d͡ʒi.ta.ka.le.nə̃.ti.ha, respell: jee-dah-gah-lay-nuhn-dee-hah}
+- id: chcon.a1s1.12
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.12
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎠᏍᏓᏩᏕᎦ, ᏓᏔᏏ ᏔᎾᏏ ᎤᏪᏴ ᏩᎨᏏᏠᏥᎯᎭ.—
+  tokens:
+  - id: chcon.a1s1.12.1
+    surface: ᎠᏍᏓᏩᏕᎦ
+    punct: ','
+    norm: asdawadega
+    sound:
+      c1828: {ipa: as.d̥a.wa.d̥e.ɡ̊a, respell: ahs-dah-wah-day-gah}
+      modern: {ipa: as.ta.ɰa.te.ka, respell: ahs-dah-wah-day-gah}
+  - id: chcon.a1s1.12.2
+    surface: ᏓᏔᏏ
+    norm: datasi
+    sound:
+      c1828: {ipa: d̥a.tʰa.si, respell: dah-tah-see}
+      modern: {ipa: ta.tʰa.si, respell: dah-tah-see}
+  - id: chcon.a1s1.12.3
+    surface: ᏔᎾᏏ
+    norm: tanasi
+    sound:
+      c1828: {ipa: tʰa.na.si, respell: tah-nah-see}
+      modern: {ipa: tʰa.na.si, respell: tah-nah-see}
+  - id: chcon.a1s1.12.4
+    surface: ᎤᏪᏴ
+    norm: uweyv
+    sound:
+      c1828: {ipa: u.we.jə̃, respell: oo-way-yuhn}
+      modern: {ipa: u.ɰe.jə̃, respell: oo-way-yuhn}
+  - id: chcon.a1s1.12.5
+    surface: ᏩᎨᏏᏠᏥᎯᎭ
+    punct: .—
+    norm: wagesitlotsihiha
+    uncertain: true
+    prov: {text: 'an uncertain sign; the scan also allows ᏩᎨᏏᏌᏥᎯᎭ (wagesisatsihiha); the curled U-shaped sign is read Ꮰ (tlo), as Tesseract read it, where the hand reading had Ꮜ (sa), the plain U with a
+        bar; the stem of ᏚᎾᏠᎯᏍᏓᏅ and ᏚᏠᏏᎸ, with this sign, is attested in the word lists and the 1860 New Testament, but this word was not found'}
+    sound:
+      c1828: {ipa: wa.ɡ̊e.si.t͡ɬo.t͡si.hi.ha, respell: wah-gay-see-tloh-tsee-hee-hah}
+      modern: {ipa: ɰa.ke.si.t͡ɬo.d͡ʒi.hi.ha, respell: wah-gay-see-tloh-jee-hee-hah}
+- id: chcon.a1s1.13
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.13
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎾᏉ ᎠᎴ ᎾᏍᎩᏉ ᎢᎬᏓᎵᏱᎭ, ᎧᏫᏱ ᏅᏓᏰᎵᏃ ᏚᏠᏏᎸ ᎢᏯᏍᏗ;
+  tokens:
+  - id: chcon.a1s1.13.1
+    surface: ᎾᏉ
+    norm: naquo
+    sound:
+      c1828: {ipa: na.kʷo, respell: nah-kwoh}
+      modern: {ipa: na.kʷo, respell: nah-kwoh}
+  - id: chcon.a1s1.13.2
+    surface: ᎠᎴ
+    norm: ale
+    sound:
+      c1828: {ipa: a.le, respell: ah-lay}
+      modern: {ipa: a.le, respell: ah-lay}
+  - id: chcon.a1s1.13.3
+    surface: ᎾᏍᎩᏉ
+    norm: nasgiquo
+    sound:
+      c1828: {ipa: nas.ɡ̊i.kʷo, respell: nahs-gee-kwoh}
+      modern: {ipa: nas.ki.kʷo, respell: nahs-gee-kwoh}
+  - id: chcon.a1s1.13.4
+    surface: ᎢᎬᏓᎵᏱᎭ
+    punct: ','
+    norm: igvdaliyiha
+    sound:
+      c1828: {ipa: i.ɡ̊ə̃.d̥a.li.ji.ha, respell: ee-guhn-dah-lee-yee-hah}
+      modern: {ipa: i.kə̃.ta.li.ji.ha, respell: ee-guhn-dah-lee-yee-hah}
+  - id: chcon.a1s1.13.5
+    surface: ᎧᏫᏱ
+    norm: kawiyi
+    sound:
+      c1828: {ipa: kʰa.wi.ji, respell: kah-wee-yee}
+      modern: {ipa: kʰa.ɰi.ji, respell: kah-wee-yee}
+  - id: chcon.a1s1.13.6
+    surface: ᏅᏓᏰᎵᏃ
+    norm: nvdayelino
+    sound:
+      c1828: {ipa: nə̃.d̥a.je.li.no, respell: nuhn-dah-yay-lee-noh}
+      modern: {ipa: nə̃.ta.je.li.no, respell: nuhn-dah-yay-lee-noh}
+  - id: chcon.a1s1.13.7
+    surface: ᏚᏠᏏᎸ
+    norm: dutlosilv
+    sound:
+      c1828: {ipa: d̥u.t͡ɬo.si.lə̃, respell: doo-tloh-see-luhn}
+      modern: {ipa: tu.t͡ɬo.si.lə̃, respell: doo-tloh-see-luhn}
+  - id: chcon.a1s1.13.8
+    surface: ᎢᏯᏍᏗ
+    punct: ;
+    norm: iyasdi
+    sound:
+      c1828: {ipa: i.jas.d̥i, respell: ee-yahs-dee}
+      modern: {ipa: i.jas.ti, respell: ee-yahs-dee}
+- id: chcon.a1s1.14
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.14
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎠᎹᏰᎵ ᎠᎴ ᏣᎳᎩ ᏧᎾᏤᎵᎦ.
+  tokens:
+  - id: chcon.a1s1.14.1
+    surface: ᎠᎹᏰᎵ
+    norm: amayeli
+    sound:
+      c1828: {ipa: a.ma.je.li, respell: ah-mah-yay-lee}
+      modern: {ipa: a.ma.je.li, respell: ah-mah-yay-lee}
+  - id: chcon.a1s1.14.2
+    surface: ᎠᎴ
+    norm: ale
+    sound:
+      c1828: {ipa: a.le, respell: ah-lay}
+      modern: {ipa: a.le, respell: ah-lay}
+  - id: chcon.a1s1.14.3
+    surface: ᏣᎳᎩ
+    norm: tsalagi
+    sound:
+      c1828: {ipa: t͡sa.la.ɡ̊i, respell: tsah-lah-gee}
+      modern: {ipa: d͡ʒa.la.ki, respell: jah-lah-gee}
+  - id: chcon.a1s1.14.4
+    surface: ᏧᎾᏤᎵᎦ
+    punct: .
+    norm: tsunatseliga
+    sound:
+      c1828: {ipa: t͡su.na.t͡se.li.ɡ̊a, respell: tsoo-nah-tsay-lee-gah}
+      modern: {ipa: d͡ʒu.na.d͡ʒe.li.ka, respell: joo-nah-jay-lee-gah}
+- id: chcon.a1s1.15
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.15
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎾᏉᏃ ᏚᎶᎦᎸ ᎤᏅᏓᏝᏗᏒ ᎠᏍᏓᏩᏕᎦ ᎤᏁᎬᏱ ᎣᏓᎵ ᎦᏚᏏ ᎢᏯᏍᏗ.
+  tokens:
+  - id: chcon.a1s1.15.1
+    surface: ᎾᏉᏃ
+    norm: naquono
+    sound:
+      c1828: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+      modern: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+  - id: chcon.a1s1.15.2
+    surface: ᏚᎶᎦᎸ
+    norm: dulogalv
+    sound:
+      c1828: {ipa: d̥u.lo.ɡ̊a.lə̃, respell: doo-loh-gah-luhn}
+      modern: {ipa: tu.lo.ka.lə̃, respell: doo-loh-gah-luhn}
+  - id: chcon.a1s1.15.3
+    surface: ᎤᏅᏓᏝᏗᏒ
+    norm: unvdatladisv
+    sound:
+      c1828: {ipa: u.nə̃.d̥a.t͡ɬa.d̥i.sə̃, respell: oo-nuhn-dah-tlah-dee-suhn}
+      modern: {ipa: u.nə̃.ta.t͡ɬa.ti.sə̃, respell: oo-nuhn-dah-tlah-dee-suhn}
+  - id: chcon.a1s1.15.4
+    surface: ᎠᏍᏓᏩᏕᎦ
+    norm: asdawadega
+    sound:
+      c1828: {ipa: as.d̥a.wa.d̥e.ɡ̊a, respell: ahs-dah-wah-day-gah}
+      modern: {ipa: as.ta.ɰa.te.ka, respell: ahs-dah-wah-day-gah}
+  - id: chcon.a1s1.15.5
+    surface: ᎤᏁᎬᏱ
+    norm: unegvyi
+    sound:
+      c1828: {ipa: u.ne.ɡ̊ə̃.ji, respell: oo-nay-guhn-yee}
+      modern: {ipa: u.ne.kə̃.ji, respell: oo-nay-guhn-yee}
+  - id: chcon.a1s1.15.6
+    surface: ᎣᏓᎵ
+    norm: odali
+    sound:
+      c1828: {ipa: o.d̥a.li, respell: oh-dah-lee}
+      modern: {ipa: o.ta.li, respell: oh-dah-lee}
+  - id: chcon.a1s1.15.7
+    surface: ᎦᏚᏏ
+    norm: gadusi
+    sound:
+      c1828: {ipa: ɡ̊a.d̥u.si, respell: gah-doo-see}
+      modern: {ipa: ka.tu.si, respell: gah-doo-see}
+  - id: chcon.a1s1.15.8
+    surface: ᎢᏯᏍᏗ
+    punct: .
+    norm: iyasdi
+    sound:
+      c1828: {ipa: i.jas.d̥i, respell: ee-yahs-dee}
+      modern: {ipa: i.jas.ti, respell: ee-yahs-dee}
+- id: chcon.a1s1.16
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.16
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎾᏉᏃ ᎤᏁᎬᏱ ᎣᏓᎵ ᎤᏅᏓᏝᏗᏒ ᎠᏍᏓᏩᏕᎦ ᏩᎶᏏᏱ ᏅᏃᎯ ᏫᎦᎾᏄᎪᎦ.
+  tokens:
+  - id: chcon.a1s1.16.1
+    surface: ᎾᏉᏃ
+    norm: naquono
+    sound:
+      c1828: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+      modern: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+  - id: chcon.a1s1.16.2
+    surface: ᎤᏁᎬᏱ
+    norm: unegvyi
+    sound:
+      c1828: {ipa: u.ne.ɡ̊ə̃.ji, respell: oo-nay-guhn-yee}
+      modern: {ipa: u.ne.kə̃.ji, respell: oo-nay-guhn-yee}
+  - id: chcon.a1s1.16.3
+    surface: ᎣᏓᎵ
+    norm: odali
+    sound:
+      c1828: {ipa: o.d̥a.li, respell: oh-dah-lee}
+      modern: {ipa: o.ta.li, respell: oh-dah-lee}
+  - id: chcon.a1s1.16.4
+    surface: ᎤᏅᏓᏝᏗᏒ
+    norm: unvdatladisv
+    sound:
+      c1828: {ipa: u.nə̃.d̥a.t͡ɬa.d̥i.sə̃, respell: oo-nuhn-dah-tlah-dee-suhn}
+      modern: {ipa: u.nə̃.ta.t͡ɬa.ti.sə̃, respell: oo-nuhn-dah-tlah-dee-suhn}
+  - id: chcon.a1s1.16.5
+    surface: ᎠᏍᏓᏩᏕᎦ
+    norm: asdawadega
+    sound:
+      c1828: {ipa: as.d̥a.wa.d̥e.ɡ̊a, respell: ahs-dah-wah-day-gah}
+      modern: {ipa: as.ta.ɰa.te.ka, respell: ahs-dah-wah-day-gah}
+  - id: chcon.a1s1.16.6
+    surface: ᏩᎶᏏᏱ
+    norm: walosiyi
+    sound:
+      c1828: {ipa: wa.lo.si.ji, respell: wah-loh-see-yee}
+      modern: {ipa: ɰa.lo.si.ji, respell: wah-loh-see-yee}
+  - id: chcon.a1s1.16.7
+    surface: ᏅᏃᎯ
+    norm: nvnohi
+    sound:
+      c1828: {ipa: nə̃.no.hi, respell: nuhn-noh-hee}
+      modern: {ipa: nə̃.no.hi, respell: nuhn-noh-hee}
+  - id: chcon.a1s1.16.8
+    surface: ᏫᎦᎾᏄᎪᎦ
+    punct: .
+    norm: wigananugoga
+    sound:
+      c1828: {ipa: wi.ɡ̊a.na.nu.ɡ̊o.ɡ̊a, respell: wee-gah-nah-noo-goh-gah}
+      modern: {ipa: ɰi.ka.na.nu.ko.ka, respell: wee-gah-nah-noo-goh-gah}
+- id: chcon.a1s1.17
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.17
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎾᏉᏃ ᏩᎶᏏᏱ ᎤᎨᏏᏠᏥᎸᎢ ᎢᎠᏓᎴᏂᎭ ᎠᏨᏍᏙᏗᏱ ᏧᎵᏍᏗᏂᎸᎢ ᏫᎦᎾᏄᎪᎦ.
+  tokens:
+  - id: chcon.a1s1.17.1
+    surface: ᎾᏉᏃ
+    norm: naquono
+    sound:
+      c1828: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+      modern: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+  - id: chcon.a1s1.17.2
+    surface: ᏩᎶᏏᏱ
+    norm: walosiyi
+    sound:
+      c1828: {ipa: wa.lo.si.ji, respell: wah-loh-see-yee}
+      modern: {ipa: ɰa.lo.si.ji, respell: wah-loh-see-yee}
+  - id: chcon.a1s1.17.3
+    surface: ᎤᎨᏏᏠᏥᎸᎢ
+    norm: ugesitlotsilvi
+    uncertain: true
+    prov: {text: 'an uncertain sign; the scan also allows ᎤᎨᏏᏌᏥᎸᎢ (ugesisatsilvi); the curled U-shaped sign is read Ꮰ (tlo), as Tesseract read it, where the hand reading had Ꮜ (sa), the plain U with a bar;
+        the stem of ᏚᎾᏠᎯᏍᏓᏅ and ᏚᏠᏏᎸ, with this sign, is attested in the word lists and the 1860 New Testament, but this word was not found'}
+    sound:
+      c1828: {ipa: u.ɡ̊e.si.t͡ɬo.t͡si.lə̃.i, respell: oo-gay-see-tloh-tsee-luhn-ee}
+      modern: {ipa: u.ke.si.t͡ɬo.d͡ʒi.lə̃.i, respell: oo-gay-see-tloh-jee-luhn-ee}
+  - id: chcon.a1s1.17.4
+    surface: ᎢᎠᏓᎴᏂᎭ
+    norm: iadaleniha
+    sound:
+      c1828: {ipa: i.a.d̥a.le.ni.ha, respell: ee-ah-dah-lay-nee-hah}
+      modern: {ipa: i.a.ta.le.ni.ha, respell: ee-ah-dah-lay-nee-hah}
+  - id: chcon.a1s1.17.5
+    surface: ᎠᏨᏍᏙᏗᏱ
+    norm: atsvsdodiyi
+    sound:
+      c1828: {ipa: a.t͡sə̃s.d̥o.d̥i.ji, respell: ah-tsuhns-doh-dee-yee}
+      modern: {ipa: a.d͡ʒə̃s.to.ti.ji, respell: ah-juhns-doh-dee-yee}
+  - id: chcon.a1s1.17.6
+    surface: ᏧᎵᏍᏗᏂᎸᎢ
+    norm: tsulisdinilvi
+    sound:
+      c1828: {ipa: t͡su.lis.d̥i.ni.lə̃.i, respell: tsoo-lees-dee-nee-luhn-ee}
+      modern: {ipa: d͡ʒu.lis.ti.ni.lə̃.i, respell: joo-lees-dee-nee-luhn-ee}
+  - id: chcon.a1s1.17.7
+    surface: ᏫᎦᎾᏄᎪᎦ
+    punct: .
+    norm: wigananugoga
+    sound:
+      c1828: {ipa: wi.ɡ̊a.na.nu.ɡ̊o.ɡ̊a, respell: wee-gah-nah-noo-goh-gah}
+      modern: {ipa: ɰi.ka.na.nu.ko.ka, respell: wee-gah-nah-noo-goh-gah}
+- id: chcon.a1s1.18
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.18
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎾᏉᏃ ᎾᏍᎩ ᏫᎬᏬᎣᏍᎦ ᎠᎺᏉᎯ ᎤᏪᏴ ᏫᎦᎾᏄᎪᎦ;
+  tokens:
+  - id: chcon.a1s1.18.1
+    surface: ᎾᏉᏃ
+    norm: naquono
+    sound:
+      c1828: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+      modern: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+  - id: chcon.a1s1.18.2
+    surface: ᎾᏍᎩ
+    norm: nasgi
+    sound:
+      c1828: {ipa: nas.ɡ̊i, respell: nahs-gee}
+      modern: {ipa: nas.ki, respell: nahs-gee}
+  - id: chcon.a1s1.18.3
+    surface: ᏫᎬᏬᎣᏍᎦ
+    norm: wigvwoosga
+    sound:
+      c1828: {ipa: wi.ɡ̊ə̃.wo.os.ɡ̊a, respell: wee-guhn-woh-ohs-gah}
+      modern: {ipa: ɰi.kə̃.ɰo.os.ka, respell: wee-guhn-woh-ohs-gah}
+  - id: chcon.a1s1.18.4
+    surface: ᎠᎺᏉᎯ
+    norm: amequohi
+    sound:
+      c1828: {ipa: a.me.kʷo.hi, respell: ah-may-kwoh-hee}
+      modern: {ipa: a.me.kʷo.hi, respell: ah-may-kwoh-hee}
+  - id: chcon.a1s1.18.5
+    surface: ᎤᏪᏴ
+    norm: uweyv
+    sound:
+      c1828: {ipa: u.we.jə̃, respell: oo-way-yuhn}
+      modern: {ipa: u.ɰe.jə̃, respell: oo-way-yuhn}
+  - id: chcon.a1s1.18.6
+    surface: ᏫᎦᎾᏄᎪᎦ
+    punct: ;
+    norm: wigananugoga
+    sound:
+      c1828: {ipa: wi.ɡ̊a.na.nu.ɡ̊o.ɡ̊a, respell: wee-gah-nah-noo-goh-gah}
+      modern: {ipa: ɰi.ka.na.nu.ko.ka, respell: wee-gah-nah-noo-goh-gah}
+- id: chcon.a1s1.19
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.19
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎠᎹᏰᎵᏃ ᏣᎳᎩ ᏧᎾᏤᎵᎦ.
+  tokens:
+  - id: chcon.a1s1.19.1
+    surface: ᎠᎹᏰᎵᏃ
+    norm: amayelino
+    sound:
+      c1828: {ipa: a.ma.je.li.no, respell: ah-mah-yay-lee-noh}
+      modern: {ipa: a.ma.je.li.no, respell: ah-mah-yay-lee-noh}
+  - id: chcon.a1s1.19.2
+    surface: ᏣᎳᎩ
+    norm: tsalagi
+    sound:
+      c1828: {ipa: t͡sa.la.ɡ̊i, respell: tsah-lah-gee}
+      modern: {ipa: d͡ʒa.la.ki, respell: jah-lah-gee}
+  - id: chcon.a1s1.19.3
+    surface: ᏧᎾᏤᎵᎦ
+    punct: .
+    norm: tsunatseliga
+    sound:
+      c1828: {ipa: t͡su.na.t͡se.li.ɡ̊a, respell: tsoo-nah-tsay-lee-gah}
+      modern: {ipa: d͡ʒu.na.d͡ʒe.li.ka, respell: joo-nah-jay-lee-gah}
+- id: chcon.a1s1.20
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.20
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎾᏉ ᎠᎴ ᎾᏍᎩ ᏫᎬᏬᎣᏍᎦ ᏑᎵ ᎤᎾᎭᏗᏍᏗᏱ,
+  tokens:
+  - id: chcon.a1s1.20.1
+    surface: ᎾᏉ
+    norm: naquo
+    sound:
+      c1828: {ipa: na.kʷo, respell: nah-kwoh}
+      modern: {ipa: na.kʷo, respell: nah-kwoh}
+  - id: chcon.a1s1.20.2
+    surface: ᎠᎴ
+    norm: ale
+    sound:
+      c1828: {ipa: a.le, respell: ah-lay}
+      modern: {ipa: a.le, respell: ah-lay}
+  - id: chcon.a1s1.20.3
+    surface: ᎾᏍᎩ
+    norm: nasgi
+    sound:
+      c1828: {ipa: nas.ɡ̊i, respell: nahs-gee}
+      modern: {ipa: nas.ki, respell: nahs-gee}
+  - id: chcon.a1s1.20.4
+    surface: ᏫᎬᏬᎣᏍᎦ
+    norm: wigvwoosga
+    sound:
+      c1828: {ipa: wi.ɡ̊ə̃.wo.os.ɡ̊a, respell: wee-guhn-woh-ohs-gah}
+      modern: {ipa: ɰi.kə̃.ɰo.os.ka, respell: wee-guhn-woh-ohs-gah}
+  - id: chcon.a1s1.20.5
+    surface: ᏑᎵ
+    norm: suli
+    sound:
+      c1828: {ipa: su.li, respell: soo-lee}
+      modern: {ipa: su.li, respell: soo-lee}
+  - id: chcon.a1s1.20.6
+    surface: ᎤᎾᎭᏗᏍᏗᏱ
+    punct: ','
+    norm: unahadisdiyi
+    sound:
+      c1828: {ipa: u.na.ha.d̥is.d̥i.ji, respell: oo-nah-hah-dees-dee-yee}
+      modern: {ipa: u.na.ha.tis.ti.ji, respell: oo-nah-hah-dees-dee-yee}
+- id: chcon.a1s1.21
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.21
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎠᏂᏣᎳᎩ ᎠᏂᎫᏌᏃ ᎠᏟᎶᏛ ᏚᎾᏓᎯᏠᏛ ᎤᎨᏏᏠᏥᎸᎢ, ᏫᎦᎾᏄᎪᎦ.
+  tokens:
+  - id: chcon.a1s1.21.1
+    surface: ᎠᏂᏣᎳᎩ
+    norm: anitsalagi
+    sound:
+      c1828: {ipa: a.ni.t͡sa.la.ɡ̊i, respell: ah-nee-tsah-lah-gee}
+      modern: {ipa: a.ni.d͡ʒa.la.ki, respell: ah-nee-jah-lah-gee}
+  - id: chcon.a1s1.21.2
+    surface: ᎠᏂᎫᏌᏃ
+    norm: anigusano
+    sound:
+      c1828: {ipa: a.ni.ɡ̊u.sa.no, respell: ah-nee-goo-sah-noh}
+      modern: {ipa: a.ni.ku.sa.no, respell: ah-nee-goo-sah-noh}
+  - id: chcon.a1s1.21.3
+    surface: ᎠᏟᎶᏛ
+    norm: atlilodv
+    sound:
+      c1828: {ipa: a.t͡ɬi.lo.d̥ə̃, respell: ah-tlee-loh-duhn}
+      modern: {ipa: a.t͡ɬi.lo.tə̃, respell: ah-tlee-loh-duhn}
+  - id: chcon.a1s1.21.4
+    surface: ᏚᎾᏓᎯᏠᏛ
+    norm: dunadahitlodv
+    uncertain: true
+    prov: {text: 'an uncertain sign; the scan also allows ᏚᎾᏓᎯᏌᏛ (dunadahisadv); the curled U-shaped sign is read Ꮰ (tlo), as Tesseract read it, where the hand reading had Ꮜ (sa), the plain U with a bar;
+        the stem of ᏚᎾᏠᎯᏍᏓᏅ and ᏚᏠᏏᎸ, with this sign, is attested in the word lists and the 1860 New Testament, but this word was not found'}
+    sound:
+      c1828: {ipa: d̥u.na.d̥a.hi.t͡ɬo.d̥ə̃, respell: doo-nah-dah-hee-tloh-duhn}
+      modern: {ipa: tu.na.ta.hi.t͡ɬo.tə̃, respell: doo-nah-dah-hee-tloh-duhn}
+  - id: chcon.a1s1.21.5
+    surface: ᎤᎨᏏᏠᏥᎸᎢ
+    punct: ','
+    norm: ugesitlotsilvi
+    uncertain: true
+    prov: {text: 'an uncertain sign; the scan also allows ᎤᎨᏏᏌᏥᎸᎢ (ugesisatsilvi); the curled U-shaped sign is read Ꮰ (tlo), as Tesseract read it, where the hand reading had Ꮜ (sa), the plain U with a bar;
+        the stem of ᏚᎾᏠᎯᏍᏓᏅ and ᏚᏠᏏᎸ, with this sign, is attested in the word lists and the 1860 New Testament, but this word was not found'}
+    sound:
+      c1828: {ipa: u.ɡ̊e.si.t͡ɬo.t͡si.lə̃.i, respell: oo-gay-see-tloh-tsee-luhn-ee}
+      modern: {ipa: u.ke.si.t͡ɬo.d͡ʒi.lə̃.i, respell: oo-gay-see-tloh-jee-luhn-ee}
+  - id: chcon.a1s1.21.6
+    surface: ᏫᎦᎾᏄᎪᎦ
+    punct: .
+    norm: wigananugoga
+    sound:
+      c1828: {ipa: wi.ɡ̊a.na.nu.ɡ̊o.ɡ̊a, respell: wee-gah-nah-noo-goh-gah}
+      modern: {ipa: ɰi.ka.na.nu.ko.ka, respell: wee-gah-nah-noo-goh-gah}
+- id: chcon.a1s1.22
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.22
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎾᏉᏃ ᎾᏍᎩᏉ ᎠᏟᎶᏛ ᎬᎫᏛᎢ ᎠᏍᏓᏩᏕᎦ ᏫᎵ ᎤᏪᏴ ᎤᏪᎪᏥᎸᎢ ᏫᎦᎾᏄᎪᎦ.
+  tokens:
+  - id: chcon.a1s1.22.1
+    surface: ᎾᏉᏃ
+    norm: naquono
+    sound:
+      c1828: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+      modern: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+  - id: chcon.a1s1.22.2
+    surface: ᎾᏍᎩᏉ
+    norm: nasgiquo
+    sound:
+      c1828: {ipa: nas.ɡ̊i.kʷo, respell: nahs-gee-kwoh}
+      modern: {ipa: nas.ki.kʷo, respell: nahs-gee-kwoh}
+  - id: chcon.a1s1.22.3
+    surface: ᎠᏟᎶᏛ
+    norm: atlilodv
+    sound:
+      c1828: {ipa: a.t͡ɬi.lo.d̥ə̃, respell: ah-tlee-loh-duhn}
+      modern: {ipa: a.t͡ɬi.lo.tə̃, respell: ah-tlee-loh-duhn}
+  - id: chcon.a1s1.22.4
+    surface: ᎬᎫᏛᎢ
+    norm: gvgudvi
+    sound:
+      c1828: {ipa: ɡ̊ə̃.ɡ̊u.d̥ə̃.i, respell: guhn-goo-duhn-ee}
+      modern: {ipa: kə̃.ku.tə̃.i, respell: guhn-goo-duhn-ee}
+  - id: chcon.a1s1.22.5
+    surface: ᎠᏍᏓᏩᏕᎦ
+    norm: asdawadega
+    sound:
+      c1828: {ipa: as.d̥a.wa.d̥e.ɡ̊a, respell: ahs-dah-wah-day-gah}
+      modern: {ipa: as.ta.ɰa.te.ka, respell: ahs-dah-wah-day-gah}
+  - id: chcon.a1s1.22.6
+    surface: ᏫᎵ
+    norm: wili
+    sound:
+      c1828: {ipa: wi.li, respell: wee-lee}
+      modern: {ipa: ɰi.li, respell: wee-lee}
+  - id: chcon.a1s1.22.7
+    surface: ᎤᏪᏴ
+    norm: uweyv
+    sound:
+      c1828: {ipa: u.we.jə̃, respell: oo-way-yuhn}
+      modern: {ipa: u.ɰe.jə̃, respell: oo-way-yuhn}
+  - id: chcon.a1s1.22.8
+    surface: ᎤᏪᎪᏥᎸᎢ
+    norm: uwegotsilvi
+    sound:
+      c1828: {ipa: u.we.ɡ̊o.t͡si.lə̃.i, respell: oo-way-goh-tsee-luhn-ee}
+      modern: {ipa: u.ɰe.ko.d͡ʒi.lə̃.i, respell: oo-way-goh-jee-luhn-ee}
+  - id: chcon.a1s1.22.9
+    surface: ᏫᎦᎾᏄᎪᎦ
+    punct: .
+    norm: wigananugoga
+    sound:
+      c1828: {ipa: wi.ɡ̊a.na.nu.ɡ̊o.ɡ̊a, respell: wee-gah-nah-noo-goh-gah}
+      modern: {ipa: ɰi.ka.na.nu.ko.ka, respell: wee-gah-nah-noo-goh-gah}
+- id: chcon.a1s1.23
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.23
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎾᏉᏃ ᎾᏍᎩ ᎡᏉᏂ, ᎠᏂᎫᏌ ᎤᎾᏤᎵᎪᎯᏗᏢ ᎤᏩᏝᎲ, ᏫᎬᏬᎣᏍᎦ ᎠᎹᏰᎳᏍᎪᎯᏱ ᎢᏯᏍᏗ.
+  tokens:
+  - id: chcon.a1s1.23.1
+    surface: ᎾᏉᏃ
+    norm: naquono
+    sound:
+      c1828: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+      modern: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+  - id: chcon.a1s1.23.2
+    surface: ᎾᏍᎩ
+    norm: nasgi
+    sound:
+      c1828: {ipa: nas.ɡ̊i, respell: nahs-gee}
+      modern: {ipa: nas.ki, respell: nahs-gee}
+  - id: chcon.a1s1.23.3
+    surface: ᎡᏉᏂ
+    punct: ','
+    norm: equoni
+    sound:
+      c1828: {ipa: e.kʷo.ni, respell: ay-kwoh-nee}
+      modern: {ipa: e.kʷo.ni, respell: ay-kwoh-nee}
+  - id: chcon.a1s1.23.4
+    surface: ᎠᏂᎫᏌ
+    norm: anigusa
+    sound:
+      c1828: {ipa: a.ni.ɡ̊u.sa, respell: ah-nee-goo-sah}
+      modern: {ipa: a.ni.ku.sa, respell: ah-nee-goo-sah}
+  - id: chcon.a1s1.23.5
+    surface: ᎤᎾᏤᎵᎪᎯᏗᏢ
+    norm: unatseligohiditlv
+    sound:
+      c1828: {ipa: u.na.t͡se.li.ɡ̊o.hi.d̥i.t͡ɬə̃, respell: oo-nah-tsay-lee-goh-hee-dee-tluhn}
+      modern: {ipa: u.na.d͡ʒe.li.ko.hi.ti.t͡ɬə̃, respell: oo-nah-jay-lee-goh-hee-dee-tluhn}
+  - id: chcon.a1s1.23.6
+    surface: ᎤᏩᏝᎲ
+    punct: ','
+    norm: uwatlahv
+    sound:
+      c1828: {ipa: u.wa.t͡ɬa.hə̃, respell: oo-wah-tlah-huhn}
+      modern: {ipa: u.ɰa.t͡ɬa.hə̃, respell: oo-wah-tlah-huhn}
+  - id: chcon.a1s1.23.7
+    surface: ᏫᎬᏬᎣᏍᎦ
+    norm: wigvwoosga
+    sound:
+      c1828: {ipa: wi.ɡ̊ə̃.wo.os.ɡ̊a, respell: wee-guhn-woh-ohs-gah}
+      modern: {ipa: ɰi.kə̃.ɰo.os.ka, respell: wee-guhn-woh-ohs-gah}
+  - id: chcon.a1s1.23.8
+    surface: ᎠᎹᏰᎳᏍᎪᎯᏱ
+    norm: amayelasgohiyi
+    sound:
+      c1828: {ipa: a.ma.je.las.ɡ̊o.hi.ji, respell: ah-mah-yay-lahs-goh-hee-yee}
+      modern: {ipa: a.ma.je.las.ko.hi.ji, respell: ah-mah-yay-lahs-goh-hee-yee}
+  - id: chcon.a1s1.23.9
+    surface: ᎢᏯᏍᏗ
+    punct: .
+    norm: iyasdi
+    sound:
+      c1828: {ipa: i.jas.d̥i, respell: ee-yahs-dee}
+      modern: {ipa: i.jas.ti, respell: ee-yahs-dee}
+- id: chcon.a1s1.24
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.24
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎾᏉᏃ ᏗᎬᏓᎵᏱ ᏐᎢᏱ ᎤᏩᏝᎲ ᏫᎵ ᎤᏪᏴ ᎤᏪᎪᏥᎸ ᏗᎦᎾᏄᎪᎦ.
+  tokens:
+  - id: chcon.a1s1.24.1
+    surface: ᎾᏉᏃ
+    norm: naquono
+    sound:
+      c1828: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+      modern: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+  - id: chcon.a1s1.24.2
+    surface: ᏗᎬᏓᎵᏱ
+    norm: digvdaliyi
+    sound:
+      c1828: {ipa: d̥i.ɡ̊ə̃.d̥a.li.ji, respell: dee-guhn-dah-lee-yee}
+      modern: {ipa: ti.kə̃.ta.li.ji, respell: dee-guhn-dah-lee-yee}
+  - id: chcon.a1s1.24.3
+    surface: ᏐᎢᏱ
+    norm: soiyi
+    sound:
+      c1828: {ipa: so.i.ji, respell: soh-ee-yee}
+      modern: {ipa: so.i.ji, respell: soh-ee-yee}
+  - id: chcon.a1s1.24.4
+    surface: ᎤᏩᏝᎲ
+    norm: uwatlahv
+    sound:
+      c1828: {ipa: u.wa.t͡ɬa.hə̃, respell: oo-wah-tlah-huhn}
+      modern: {ipa: u.ɰa.t͡ɬa.hə̃, respell: oo-wah-tlah-huhn}
+  - id: chcon.a1s1.24.5
+    surface: ᏫᎵ
+    norm: wili
+    sound:
+      c1828: {ipa: wi.li, respell: wee-lee}
+      modern: {ipa: ɰi.li, respell: wee-lee}
+  - id: chcon.a1s1.24.6
+    surface: ᎤᏪᏴ
+    norm: uweyv
+    sound:
+      c1828: {ipa: u.we.jə̃, respell: oo-way-yuhn}
+      modern: {ipa: u.ɰe.jə̃, respell: oo-way-yuhn}
+  - id: chcon.a1s1.24.7
+    surface: ᎤᏪᎪᏥᎸ
+    norm: uwegotsilv
+    sound:
+      c1828: {ipa: u.we.ɡ̊o.t͡si.lə̃, respell: oo-way-goh-tsee-luhn}
+      modern: {ipa: u.ɰe.ko.d͡ʒi.lə̃, respell: oo-way-goh-jee-luhn}
+  - id: chcon.a1s1.24.8
+    surface: ᏗᎦᎾᏄᎪᎦ
+    punct: .
+    norm: digananugoga
+    sound:
+      c1828: {ipa: d̥i.ɡ̊a.na.nu.ɡ̊o.ɡ̊a, respell: dee-gah-nah-noo-goh-gah}
+      modern: {ipa: ti.ka.na.nu.ko.ka, respell: dee-gah-nah-noo-goh-gah}
+- id: chcon.a1s1.25
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.25
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎾᏉᏃ ᎾᏍᎩ ᏫᎵ ᎤᏪᏴ ᎢᎬᏓᎵᏱ ᎡᏍᎦ ᎢᏗᏢ ᎤᏩᏝᎲ ᏫᏚᎶᎦᎸ ᎢᏯᏍᏗ.
+  tokens:
+  - id: chcon.a1s1.25.1
+    surface: ᎾᏉᏃ
+    norm: naquono
+    sound:
+      c1828: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+      modern: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+  - id: chcon.a1s1.25.2
+    surface: ᎾᏍᎩ
+    norm: nasgi
+    sound:
+      c1828: {ipa: nas.ɡ̊i, respell: nahs-gee}
+      modern: {ipa: nas.ki, respell: nahs-gee}
+  - id: chcon.a1s1.25.3
+    surface: ᏫᎵ
+    norm: wili
+    sound:
+      c1828: {ipa: wi.li, respell: wee-lee}
+      modern: {ipa: ɰi.li, respell: wee-lee}
+  - id: chcon.a1s1.25.4
+    surface: ᎤᏪᏴ
+    norm: uweyv
+    sound:
+      c1828: {ipa: u.we.jə̃, respell: oo-way-yuhn}
+      modern: {ipa: u.ɰe.jə̃, respell: oo-way-yuhn}
+  - id: chcon.a1s1.25.5
+    surface: ᎢᎬᏓᎵᏱ
+    norm: igvdaliyi
+    sound:
+      c1828: {ipa: i.ɡ̊ə̃.d̥a.li.ji, respell: ee-guhn-dah-lee-yee}
+      modern: {ipa: i.kə̃.ta.li.ji, respell: ee-guhn-dah-lee-yee}
+  - id: chcon.a1s1.25.6
+    surface: ᎡᏍᎦ
+    norm: esga
+    sound:
+      c1828: {ipa: es.ɡ̊a, respell: ays-gah}
+      modern: {ipa: es.ka, respell: ays-gah}
+  - id: chcon.a1s1.25.7
+    surface: ᎢᏗᏢ
+    norm: iditlv
+    sound:
+      c1828: {ipa: i.d̥i.t͡ɬə̃, respell: ee-dee-tluhn}
+      modern: {ipa: i.ti.t͡ɬə̃, respell: ee-dee-tluhn}
+  - id: chcon.a1s1.25.8
+    surface: ᎤᏩᏝᎲ
+    norm: uwatlahv
+    sound:
+      c1828: {ipa: u.wa.t͡ɬa.hə̃, respell: oo-wah-tlah-huhn}
+      modern: {ipa: u.ɰa.t͡ɬa.hə̃, respell: oo-wah-tlah-huhn}
+  - id: chcon.a1s1.25.9
+    surface: ᏫᏚᎶᎦᎸ
+    norm: widulogalv
+    sound:
+      c1828: {ipa: wi.d̥u.lo.ɡ̊a.lə̃, respell: wee-doo-loh-gah-luhn}
+      modern: {ipa: ɰi.tu.lo.ka.lə̃, respell: wee-doo-loh-gah-luhn}
+  - id: chcon.a1s1.25.10
+    surface: ᎢᏯᏍᏗ
+    punct: .
+    norm: iyasdi
+    sound:
+      c1828: {ipa: i.jas.d̥i, respell: ee-yahs-dee}
+      modern: {ipa: i.jas.ti, respell: ee-yahs-dee}
+- id: chcon.a1s1.26
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.26
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎾᏉᏃ ᏅᏙ ᏭᏕᎵᎬ ᎢᏗᏢ ᎤᏪᏯᏗᏍᏛ- ᏫᎬᏓᎵᏱ ᏭᎵᏍᏛ ᎢᏯᏍᏗ.
+  tokens:
+  - id: chcon.a1s1.26.1
+    surface: ᎾᏉᏃ
+    norm: naquono
+    sound:
+      c1828: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+      modern: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+  - id: chcon.a1s1.26.2
+    surface: ᏅᏙ
+    norm: nvdo
+    sound:
+      c1828: {ipa: nə̃.d̥o, respell: nuhn-doh}
+      modern: {ipa: nə̃.to, respell: nuhn-doh}
+  - id: chcon.a1s1.26.3
+    surface: ᏭᏕᎵᎬ
+    norm: wudeligv
+    sound:
+      c1828: {ipa: wu.d̥e.li.ɡ̊ə̃, respell: woo-day-lee-guhn}
+      modern: {ipa: ɰu.te.li.kə̃, respell: woo-day-lee-guhn}
+  - id: chcon.a1s1.26.4
+    surface: ᎢᏗᏢ
+    norm: iditlv
+    sound:
+      c1828: {ipa: i.d̥i.t͡ɬə̃, respell: ee-dee-tluhn}
+      modern: {ipa: i.ti.t͡ɬə̃, respell: ee-dee-tluhn}
+  - id: chcon.a1s1.26.5
+    surface: ᎤᏪᏯᏗᏍᏛ
+    punct: '-'
+    norm: uweyadisdv
+    sound:
+      c1828: {ipa: u.we.ja.d̥is.d̥ə̃, respell: oo-way-yah-dees-duhn}
+      modern: {ipa: u.ɰe.ja.tis.tə̃, respell: oo-way-yah-dees-duhn}
+  - id: chcon.a1s1.26.6
+    surface: ᏫᎬᏓᎵᏱ
+    norm: wigvdaliyi
+    sound:
+      c1828: {ipa: wi.ɡ̊ə̃.d̥a.li.ji, respell: wee-guhn-dah-lee-yee}
+      modern: {ipa: ɰi.kə̃.ta.li.ji, respell: wee-guhn-dah-lee-yee}
+  - id: chcon.a1s1.26.7
+    surface: ᏭᎵᏍᏛ
+    norm: wulisdv
+    sound:
+      c1828: {ipa: wu.lis.d̥ə̃, respell: woo-lees-duhn}
+      modern: {ipa: ɰu.lis.tə̃, respell: woo-lees-duhn}
+  - id: chcon.a1s1.26.8
+    surface: ᎢᏯᏍᏗ
+    punct: .
+    norm: iyasdi
+    sound:
+      c1828: {ipa: i.jas.d̥i, respell: ee-yahs-dee}
+      modern: {ipa: i.jas.ti, respell: ee-yahs-dee}
+- id: chcon.a1s1.27
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.27
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎾᏉᏃ ᎤᏅᏓᏢ ᏔᎾᏏ ᎦᎾᏫᎵᏃ ᎦᎤᏪᏴ ᏥᏓᎦᎴᏅᏗ ᎢᎠᏍᏓᏩᏕᎦ, ᏫᎦᎾᎷᏐᎲᏍᎬ ᎢᏯᏍᏗ.
+  tokens:
+  - id: chcon.a1s1.27.1
+    surface: ᎾᏉᏃ
+    norm: naquono
+    sound:
+      c1828: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+      modern: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+  - id: chcon.a1s1.27.2
+    surface: ᎤᏅᏓᏢ
+    norm: unvdatlv
+    sound:
+      c1828: {ipa: u.nə̃.d̥a.t͡ɬə̃, respell: oo-nuhn-dah-tluhn}
+      modern: {ipa: u.nə̃.ta.t͡ɬə̃, respell: oo-nuhn-dah-tluhn}
+  - id: chcon.a1s1.27.3
+    surface: ᏔᎾᏏ
+    norm: tanasi
+    sound:
+      c1828: {ipa: tʰa.na.si, respell: tah-nah-see}
+      modern: {ipa: tʰa.na.si, respell: tah-nah-see}
+  - id: chcon.a1s1.27.4
+    surface: ᎦᎾᏫᎵᏃ
+    norm: ganawilino
+    sound:
+      c1828: {ipa: ɡ̊a.na.wi.li.no, respell: gah-nah-wee-lee-noh}
+      modern: {ipa: ka.na.ɰi.li.no, respell: gah-nah-wee-lee-noh}
+  - id: chcon.a1s1.27.5
+    surface: ᎦᎤᏪᏴ
+    norm: gauweyv
+    sound:
+      c1828: {ipa: ɡ̊a.u.we.jə̃, respell: gah-oo-way-yuhn}
+      modern: {ipa: ka.u.ɰe.jə̃, respell: gah-oo-way-yuhn}
+  - id: chcon.a1s1.27.6
+    surface: ᏥᏓᎦᎴᏅᏗ
+    norm: tsidagalenvdi
+    sound:
+      c1828: {ipa: t͡si.d̥a.ɡ̊a.le.nə̃.d̥i, respell: tsee-dah-gah-lay-nuhn-dee}
+      modern: {ipa: d͡ʒi.ta.ka.le.nə̃.ti, respell: jee-dah-gah-lay-nuhn-dee}
+  - id: chcon.a1s1.27.7
+    surface: ᎢᎠᏍᏓᏩᏕᎦ
+    punct: ','
+    norm: iasdawadega
+    sound:
+      c1828: {ipa: i.as.d̥a.wa.d̥e.ɡ̊a, respell: ee-ahs-dah-wah-day-gah}
+      modern: {ipa: i.as.ta.ɰa.te.ka, respell: ee-ahs-dah-wah-day-gah}
+  - id: chcon.a1s1.27.8
+    surface: ᏫᎦᎾᎷᏐᎲᏍᎬ
+    norm: wiganalusohvsgv
+    sound:
+      c1828: {ipa: wi.ɡ̊a.na.lu.so.hə̃s.ɡ̊ə̃, respell: wee-gah-nah-loo-soh-huhns-guhn}
+      modern: {ipa: ɰi.ka.na.lu.so.hə̃s.kə̃, respell: wee-gah-nah-loo-soh-huhns-guhn}
+  - id: chcon.a1s1.27.9
+    surface: ᎢᏯᏍᏗ
+    punct: .
+    norm: iyasdi
+    sound:
+      c1828: {ipa: i.jas.d̥i, respell: ee-yahs-dee}
+      modern: {ipa: i.jas.ti, respell: ee-yahs-dee}
+- id: chcon.a1s1.28
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.28
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎾᏉᏃ ᏧᏳᎪᏗ ᏧᏴᏢ ᎢᏗᏢ ᏫᏗᎫᎪᏗ ᎧᏫ ᎤᎡᎸ ᏥᎦᏌ ᎠᎹᏰᎵ ᎤᏪᎧᎲ ᏔᎾᏏ ᎤᏪᏯᏗᏒ. ᏫᎦᎾᏄᎪᎦ;
+  tokens:
+  - id: chcon.a1s1.28.1
+    surface: ᎾᏉᏃ
+    norm: naquono
+    sound:
+      c1828: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+      modern: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+  - id: chcon.a1s1.28.2
+    surface: ᏧᏳᎪᏗ
+    norm: tsuyugodi
+    sound:
+      c1828: {ipa: t͡su.ju.ɡ̊o.d̥i, respell: tsoo-yoo-goh-dee}
+      modern: {ipa: d͡ʒu.ju.ko.ti, respell: joo-yoo-goh-dee}
+  - id: chcon.a1s1.28.3
+    surface: ᏧᏴᏢ
+    norm: tsuyvtlv
+    sound:
+      c1828: {ipa: t͡su.jə̃.t͡ɬə̃, respell: tsoo-yuhn-tluhn}
+      modern: {ipa: d͡ʒu.jə̃.t͡ɬə̃, respell: joo-yuhn-tluhn}
+  - id: chcon.a1s1.28.4
+    surface: ᎢᏗᏢ
+    norm: iditlv
+    sound:
+      c1828: {ipa: i.d̥i.t͡ɬə̃, respell: ee-dee-tluhn}
+      modern: {ipa: i.ti.t͡ɬə̃, respell: ee-dee-tluhn}
+  - id: chcon.a1s1.28.5
+    surface: ᏫᏗᎫᎪᏗ
+    norm: widigugodi
+    sound:
+      c1828: {ipa: wi.d̥i.ɡ̊u.ɡ̊o.d̥i, respell: wee-dee-goo-goh-dee}
+      modern: {ipa: ɰi.ti.ku.ko.ti, respell: wee-dee-goo-goh-dee}
+  - id: chcon.a1s1.28.6
+    surface: ᎧᏫ
+    norm: kawi
+    sound:
+      c1828: {ipa: kʰa.wi, respell: kah-wee}
+      modern: {ipa: kʰa.ɰi, respell: kah-wee}
+  - id: chcon.a1s1.28.7
+    surface: ᎤᎡᎸ
+    norm: uelv
+    sound:
+      c1828: {ipa: u.e.lə̃, respell: oo-ay-luhn}
+      modern: {ipa: u.e.lə̃, respell: oo-ay-luhn}
+  - id: chcon.a1s1.28.8
+    surface: ᏥᎦᏌ
+    norm: tsigasa
+    sound:
+      c1828: {ipa: t͡si.ɡ̊a.sa, respell: tsee-gah-sah}
+      modern: {ipa: d͡ʒi.ka.sa, respell: jee-gah-sah}
+  - id: chcon.a1s1.28.9
+    surface: ᎠᎹᏰᎵ
+    norm: amayeli
+    sound:
+      c1828: {ipa: a.ma.je.li, respell: ah-mah-yay-lee}
+      modern: {ipa: a.ma.je.li, respell: ah-mah-yay-lee}
+  - id: chcon.a1s1.28.10
+    surface: ᎤᏪᎧᎲ
+    norm: uwekahv
+    sound:
+      c1828: {ipa: u.we.kʰa.hə̃, respell: oo-way-kah-huhn}
+      modern: {ipa: u.ɰe.kʰa.hə̃, respell: oo-way-kah-huhn}
+  - id: chcon.a1s1.28.11
+    surface: ᏔᎾᏏ
+    norm: tanasi
+    sound:
+      c1828: {ipa: tʰa.na.si, respell: tah-nah-see}
+      modern: {ipa: tʰa.na.si, respell: tah-nah-see}
+  - id: chcon.a1s1.28.12
+    surface: ᎤᏪᏯᏗᏒ
+    punct: .
+    norm: uweyadisv
+    sound:
+      c1828: {ipa: u.we.ja.d̥i.sə̃, respell: oo-way-yah-dee-suhn}
+      modern: {ipa: u.ɰe.ja.ti.sə̃, respell: oo-way-yah-dee-suhn}
+  - id: chcon.a1s1.28.13
+    surface: ᏫᎦᎾᏄᎪᎦ
+    punct: ;
+    norm: wigananugoga
+    sound:
+      c1828: {ipa: wi.ɡ̊a.na.nu.ɡ̊o.ɡ̊a, respell: wee-gah-nah-noo-goh-gah}
+      modern: {ipa: ɰi.ka.na.nu.ko.ka, respell: wee-gah-nah-noo-goh-gah}
+- id: chcon.a1s1.29
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s1.29
+  stanza: a1s1
+  stanza_title: 'Article I, Section 1: the boundaries of the Nation'
+  text: ᎾᏉᏃ ᏗᎴᏂᏍᎬ ᏩᎨᏏᏠᏥᎯᎭ.
+  tokens:
+  - id: chcon.a1s1.29.1
+    surface: ᎾᏉᏃ
+    norm: naquono
+    sound:
+      c1828: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+      modern: {ipa: na.kʷo.no, respell: nah-kwoh-noh}
+  - id: chcon.a1s1.29.2
+    surface: ᏗᎴᏂᏍᎬ
+    norm: dilenisgv
+    sound:
+      c1828: {ipa: d̥i.le.nis.ɡ̊ə̃, respell: dee-lay-nees-guhn}
+      modern: {ipa: ti.le.nis.kə̃, respell: dee-lay-nees-guhn}
+  - id: chcon.a1s1.29.3
+    surface: ᏩᎨᏏᏠᏥᎯᎭ
+    punct: .
+    norm: wagesitlotsihiha
+    uncertain: true
+    prov: {text: 'an uncertain sign; the scan also allows ᏩᎨᏏᏌᏥᎯᎭ (wagesisatsihiha); the curled U-shaped sign is read Ꮰ (tlo), as Tesseract read it, where the hand reading had Ꮜ (sa), the plain U with a
+        bar; the stem of ᏚᎾᏠᎯᏍᏓᏅ and ᏚᏠᏏᎸ, with this sign, is attested in the word lists and the 1860 New Testament, but this word was not found'}
+    sound:
+      c1828: {ipa: wa.ɡ̊e.si.t͡ɬo.t͡si.hi.ha, respell: wah-gay-see-tloh-tsee-hee-hah}
+      modern: {ipa: ɰa.ke.si.t͡ɬo.d͡ʒi.hi.ha, respell: wah-gay-see-tloh-jee-hee-hah}
+- id: chcon.a1s2.1
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s2.1
+  stanza: a1s2
+  stanza_title: 'Article I, Section 2: sovereignty, the common land, and the improvements of citizens'
+  text: ᏣᎳᎩ ᎤᎾᏤᎵ ᎠᏰᎵ ᎨᏒ, ᎠᎴ ᎤᏂᏁᎢᏍᏗ ᎨᏒ,
+  tokens:
+  - id: chcon.a1s2.1.1
+    surface: ᏣᎳᎩ
+    norm: tsalagi
+    sound:
+      c1828: {ipa: t͡sa.la.ɡ̊i, respell: tsah-lah-gee}
+      modern: {ipa: d͡ʒa.la.ki, respell: jah-lah-gee}
+  - id: chcon.a1s2.1.2
+    surface: ᎤᎾᏤᎵ
+    norm: unatseli
+    sound:
+      c1828: {ipa: u.na.t͡se.li, respell: oo-nah-tsay-lee}
+      modern: {ipa: u.na.d͡ʒe.li, respell: oo-nah-jay-lee}
+  - id: chcon.a1s2.1.3
+    surface: ᎠᏰᎵ
+    norm: ayeli
+    sound:
+      c1828: {ipa: a.je.li, respell: ah-yay-lee}
+      modern: {ipa: a.je.li, respell: ah-yay-lee}
+  - id: chcon.a1s2.1.4
+    surface: ᎨᏒ
+    punct: ','
+    norm: gesv
+    sound:
+      c1828: {ipa: ɡ̊e.sə̃, respell: gay-suhn}
+      modern: {ipa: ke.sə̃, respell: gay-suhn}
+  - id: chcon.a1s2.1.5
+    surface: ᎠᎴ
+    norm: ale
+    sound:
+      c1828: {ipa: a.le, respell: ah-lay}
+      modern: {ipa: a.le, respell: ah-lay}
+  - id: chcon.a1s2.1.6
+    surface: ᎤᏂᏁᎢᏍᏗ
+    norm: unineisdi
+    sound:
+      c1828: {ipa: u.ni.ne.is.d̥i, respell: oo-nee-nay-ees-dee}
+      modern: {ipa: u.ni.ne.is.ti, respell: oo-nee-nay-ees-dee}
+  - id: chcon.a1s2.1.7
+    surface: ᎨᏒ
+    punct: ','
+    norm: gesv
+    sound:
+      c1828: {ipa: ɡ̊e.sə̃, respell: gay-suhn}
+      modern: {ipa: ke.sə̃, respell: gay-suhn}
+- id: chcon.a1s2.2
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s2.2
+  stanza: a1s2
+  stanza_title: 'Article I, Section 2: sovereignty, the common land, and the improvements of citizens'
+  text: ᎾᏍᎩ ᎯᎠ ᎩᎳᏉ ᏥᎦᎼᏦᏣ ᎠᏟᎶᏛ ᎬᎫᏛ ᏩᏍᏓᏍᏗ,
+  tokens:
+  - id: chcon.a1s2.2.1
+    surface: ᎾᏍᎩ
+    norm: nasgi
+    sound:
+      c1828: {ipa: nas.ɡ̊i, respell: nahs-gee}
+      modern: {ipa: nas.ki, respell: nahs-gee}
+  - id: chcon.a1s2.2.2
+    surface: ᎯᎠ
+    norm: hia
+    sound:
+      c1828: {ipa: hi.a, respell: hee-ah}
+      modern: {ipa: hi.a, respell: hee-ah}
+  - id: chcon.a1s2.2.3
+    surface: ᎩᎳᏉ
+    norm: gilaquo
+    uncertain: true
+    prov: {text: 'an uncertain sign; the scan also allows ᎩᏔᏉ (gitaquo); the second sign is Ꮃ (la) or Ꮤ (ta): the W shows a stroke inside it that may be the mark of Ꮤ or a flaw in the type'}
+    sound:
+      c1828: {ipa: ɡ̊i.la.kʷo, respell: gee-lah-kwoh}
+      modern: {ipa: ki.la.kʷo, respell: gee-lah-kwoh}
+  - id: chcon.a1s2.2.4
+    surface: ᏥᎦᎼᏦᏣ
+    norm: tsigamotsotsa
+    sound:
+      c1828: {ipa: t͡si.ɡ̊a.mo.t͡so.t͡sa, respell: tsee-gah-moh-tsoh-tsah}
+      modern: {ipa: d͡ʒi.ka.mo.d͡ʒo.d͡ʒa, respell: jee-gah-moh-joh-jah}
+  - id: chcon.a1s2.2.5
+    surface: ᎠᏟᎶᏛ
+    norm: atlilodv
+    sound:
+      c1828: {ipa: a.t͡ɬi.lo.d̥ə̃, respell: ah-tlee-loh-duhn}
+      modern: {ipa: a.t͡ɬi.lo.tə̃, respell: ah-tlee-loh-duhn}
+  - id: chcon.a1s2.2.6
+    surface: ᎬᎫᏛ
+    norm: gvgudv
+    sound:
+      c1828: {ipa: ɡ̊ə̃.ɡ̊u.d̥ə̃, respell: guhn-goo-duhn}
+      modern: {ipa: kə̃.ku.tə̃, respell: guhn-goo-duhn}
+  - id: chcon.a1s2.2.7
+    surface: ᏩᏍᏓᏍᏗ
+    punct: ','
+    norm: wasdasdi
+    sound:
+      c1828: {ipa: was.d̥as.d̥i, respell: wahs-dahs-dee}
+      modern: {ipa: ɰas.tas.ti, respell: wahs-dahs-dee}
+- id: chcon.a1s2.3
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s2.3
+  stanza: a1s2
+  stanza_title: 'Article I, Section 2: sovereignty, the common land, and the improvements of citizens'
+  text: ᎦᏓᏃ ᎾᏍᎩ ᎢᏯᏍᏗ, ᎠᏰᎵ ᎤᎾᏤᎵ ᎨᏎᏍᏗ,
+  tokens:
+  - id: chcon.a1s2.3.1
+    surface: ᎦᏓᏃ
+    norm: gadano
+    sound:
+      c1828: {ipa: ɡ̊a.d̥a.no, respell: gah-dah-noh}
+      modern: {ipa: ka.ta.no, respell: gah-dah-noh}
+  - id: chcon.a1s2.3.2
+    surface: ᎾᏍᎩ
+    norm: nasgi
+    sound:
+      c1828: {ipa: nas.ɡ̊i, respell: nahs-gee}
+      modern: {ipa: nas.ki, respell: nahs-gee}
+  - id: chcon.a1s2.3.3
+    surface: ᎢᏯᏍᏗ
+    punct: ','
+    norm: iyasdi
+    sound:
+      c1828: {ipa: i.jas.d̥i, respell: ee-yahs-dee}
+      modern: {ipa: i.jas.ti, respell: ee-yahs-dee}
+  - id: chcon.a1s2.3.4
+    surface: ᎠᏰᎵ
+    norm: ayeli
+    sound:
+      c1828: {ipa: a.je.li, respell: ah-yay-lee}
+      modern: {ipa: a.je.li, respell: ah-yay-lee}
+  - id: chcon.a1s2.3.5
+    surface: ᎤᎾᏤᎵ
+    norm: unatseli
+    sound:
+      c1828: {ipa: u.na.t͡se.li, respell: oo-nah-tsay-lee}
+      modern: {ipa: u.na.d͡ʒe.li, respell: oo-nah-jay-lee}
+  - id: chcon.a1s2.3.6
+    surface: ᎨᏎᏍᏗ
+    punct: ','
+    norm: gesesdi
+    sound:
+      c1828: {ipa: ɡ̊e.ses.d̥i, respell: gay-says-dee}
+      modern: {ipa: ke.ses.ti, respell: gay-says-dee}
+- id: chcon.a1s2.4
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s2.4
+  stanza: a1s2
+  stanza_title: 'Article I, Section 2: sovereignty, the common land, and the improvements of citizens'
+  text: ᎠᎴ ᎾᏂᎥᏉ ᎠᏂᏣᎳᎩ ᎤᎾᎦᏆᎶᏎᏍᏗ ᎤᎾᏤᎵ ᎨᏎᏍᏗ-
+  tokens:
+  - id: chcon.a1s2.4.1
+    surface: ᎠᎴ
+    norm: ale
+    sound:
+      c1828: {ipa: a.le, respell: ah-lay}
+      modern: {ipa: a.le, respell: ah-lay}
+  - id: chcon.a1s2.4.2
+    surface: ᎾᏂᎥᏉ
+    norm: nanivquo
+    sound:
+      c1828: {ipa: na.ni.ə̃.kʷo, respell: nah-nee-uhn-kwoh}
+      modern: {ipa: na.ni.ə̃.kʷo, respell: nah-nee-uhn-kwoh}
+  - id: chcon.a1s2.4.3
+    surface: ᎠᏂᏣᎳᎩ
+    norm: anitsalagi
+    sound:
+      c1828: {ipa: a.ni.t͡sa.la.ɡ̊i, respell: ah-nee-tsah-lah-gee}
+      modern: {ipa: a.ni.d͡ʒa.la.ki, respell: ah-nee-jah-lah-gee}
+  - id: chcon.a1s2.4.4
+    surface: ᎤᎾᎦᏆᎶᏎᏍᏗ
+    norm: unagaqualosesdi
+    sound:
+      c1828: {ipa: u.na.ɡ̊a.kʷa.lo.ses.d̥i, respell: oo-nah-gah-kwah-loh-says-dee}
+      modern: {ipa: u.na.ka.kʷa.lo.ses.ti, respell: oo-nah-gah-kwah-loh-says-dee}
+  - id: chcon.a1s2.4.5
+    surface: ᎤᎾᏤᎵ
+    norm: unatseli
+    sound:
+      c1828: {ipa: u.na.t͡se.li, respell: oo-nah-tsay-lee}
+      modern: {ipa: u.na.d͡ʒe.li, respell: oo-nah-jay-lee}
+  - id: chcon.a1s2.4.6
+    surface: ᎨᏎᏍᏗ
+    punct: '-'
+    norm: gesesdi
+    sound:
+      c1828: {ipa: ɡ̊e.ses.d̥i, respell: gay-says-dee}
+      modern: {ipa: ke.ses.ti, respell: gay-says-dee}
+- id: chcon.a1s2.5
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s2.5
+  stanza: a1s2
+  stanza_title: 'Article I, Section 2: sovereignty, the common land, and the improvements of citizens'
+  text: ᏕᎦᎶᎨᏒ ᎤᏩᏒ ᎾᏂᎪ ᏧᏂᎶᎨᏛ, ᎾᎿ ᎠᎴ ᏚᏂᎸᏫᏍᏓᏁᎸ, ᏧᎾᏤᎵᎦᏯ ᎨᏎᏍᏗ,
+  tokens:
+  - id: chcon.a1s2.5.1
+    surface: ᏕᎦᎶᎨᏒ
+    norm: degalogesv
+    sound:
+      c1828: {ipa: d̥e.ɡ̊a.lo.ɡ̊e.sə̃, respell: day-gah-loh-gay-suhn}
+      modern: {ipa: te.ka.lo.ke.sə̃, respell: day-gah-loh-gay-suhn}
+  - id: chcon.a1s2.5.2
+    surface: ᎤᏩᏒ
+    norm: uwasv
+    sound:
+      c1828: {ipa: u.wa.sə̃, respell: oo-wah-suhn}
+      modern: {ipa: u.ɰa.sə̃, respell: oo-wah-suhn}
+  - id: chcon.a1s2.5.3
+    surface: ᎾᏂᎪ
+    norm: nanigo
+    sound:
+      c1828: {ipa: na.ni.ɡ̊o, respell: nah-nee-goh}
+      modern: {ipa: na.ni.ko, respell: nah-nee-goh}
+  - id: chcon.a1s2.5.4
+    surface: ᏧᏂᎶᎨᏛ
+    punct: ','
+    norm: tsunilogedv
+    sound:
+      c1828: {ipa: t͡su.ni.lo.ɡ̊e.d̥ə̃, respell: tsoo-nee-loh-gay-duhn}
+      modern: {ipa: d͡ʒu.ni.lo.ke.tə̃, respell: joo-nee-loh-gay-duhn}
+  - id: chcon.a1s2.5.5
+    surface: ᎾᎿ
+    norm: nahna
+    sound:
+      c1828: {ipa: na.n̥a, respell: nah-hnah}
+      modern: {ipa: na.n̥a, respell: nah-hnah}
+  - id: chcon.a1s2.5.6
+    surface: ᎠᎴ
+    norm: ale
+    sound:
+      c1828: {ipa: a.le, respell: ah-lay}
+      modern: {ipa: a.le, respell: ah-lay}
+  - id: chcon.a1s2.5.7
+    surface: ᏚᏂᎸᏫᏍᏓᏁᎸ
+    punct: ','
+    norm: dunilvwisdanelv
+    sound:
+      c1828: {ipa: d̥u.ni.lə̃.wis.d̥a.ne.lə̃, respell: doo-nee-luhn-wees-dah-nay-luhn}
+      modern: {ipa: tu.ni.lə̃.ɰis.ta.ne.lə̃, respell: doo-nee-luhn-wees-dah-nay-luhn}
+  - id: chcon.a1s2.5.8
+    surface: ᏧᎾᏤᎵᎦᏯ
+    norm: tsunatseligaya
+    sound:
+      c1828: {ipa: t͡su.na.t͡se.li.ɡ̊a.ja, respell: tsoo-nah-tsay-lee-gah-yah}
+      modern: {ipa: d͡ʒu.na.d͡ʒe.li.ka.ja, respell: joo-nah-jay-lee-gah-yah}
+  - id: chcon.a1s2.5.9
+    surface: ᎨᏎᏍᏗ
+    punct: ','
+    norm: gesesdi
+    sound:
+      c1828: {ipa: ɡ̊e.ses.d̥i, respell: gay-says-dee}
+      modern: {ipa: ke.ses.ti, respell: gay-says-dee}
+- id: chcon.a1s2.6
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s2.6
+  stanza: a1s2
+  stanza_title: 'Article I, Section 2: sovereignty, the common land, and the improvements of citizens'
+  text: ᏝᏍᎩᏂᏃᏅ ᎯᎠ ᎡᏍᎦᏂ ᎠᏁᎯ ᏚᏂᎶᎨᏒ ᏧᎾᏤᎵᎦᏯ ᏥᏂᏙᏨᏂᏏ,
+  tokens:
+  - id: chcon.a1s2.6.1
+    surface: ᏝᏍᎩᏂᏃᏅ
+    norm: tlasgininonv
+    sound:
+      c1828: {ipa: t͡ɬas.ɡ̊i.ni.no.nə̃, respell: tlahs-gee-nee-noh-nuhn}
+      modern: {ipa: t͡ɬas.ki.ni.no.nə̃, respell: tlahs-gee-nee-noh-nuhn}
+  - id: chcon.a1s2.6.2
+    surface: ᎯᎠ
+    norm: hia
+    sound:
+      c1828: {ipa: hi.a, respell: hee-ah}
+      modern: {ipa: hi.a, respell: hee-ah}
+  - id: chcon.a1s2.6.3
+    surface: ᎡᏍᎦᏂ
+    norm: esgani
+    sound:
+      c1828: {ipa: es.ɡ̊a.ni, respell: ays-gah-nee}
+      modern: {ipa: es.ka.ni, respell: ays-gah-nee}
+  - id: chcon.a1s2.6.4
+    surface: ᎠᏁᎯ
+    norm: anehi
+    sound:
+      c1828: {ipa: a.ne.hi, respell: ah-nay-hee}
+      modern: {ipa: a.ne.hi, respell: ah-nay-hee}
+  - id: chcon.a1s2.6.5
+    surface: ᏚᏂᎶᎨᏒ
+    norm: dunilogesv
+    sound:
+      c1828: {ipa: d̥u.ni.lo.ɡ̊e.sə̃, respell: doo-nee-loh-gay-suhn}
+      modern: {ipa: tu.ni.lo.ke.sə̃, respell: doo-nee-loh-gay-suhn}
+  - id: chcon.a1s2.6.6
+    surface: ᏧᎾᏤᎵᎦᏯ
+    norm: tsunatseligaya
+    sound:
+      c1828: {ipa: t͡su.na.t͡se.li.ɡ̊a.ja, respell: tsoo-nah-tsay-lee-gah-yah}
+      modern: {ipa: d͡ʒu.na.d͡ʒe.li.ka.ja, respell: joo-nah-jay-lee-gah-yah}
+  - id: chcon.a1s2.6.7
+    surface: ᏥᏂᏙᏨᏂᏏ
+    punct: ','
+    norm: tsinidotsvnisi
+    sound:
+      c1828: {ipa: t͡si.ni.d̥o.t͡sə̃.ni.si, respell: tsee-nee-doh-tsuhn-nee-see}
+      modern: {ipa: d͡ʒi.ni.to.d͡ʒə̃.ni.si, respell: jee-nee-doh-juhn-nee-see}
+- id: chcon.a1s2.7
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s2.7
+  stanza: a1s2
+  stanza_title: 'Article I, Section 2: sovereignty, the common land, and the improvements of citizens'
+  text: ᎤᏂᎬᏫᏳᎯ ᏴᏫᏁᎬ, ᎠᎴ ᎾᏂᎥᏉ ᏴᏫᏁᎬ ᏗᎬᏩᏂᏁᏗ ᏱᎨᏎᏍᏗ.
+  tokens:
+  - id: chcon.a1s2.7.1
+    surface: ᎤᏂᎬᏫᏳᎯ
+    norm: unigvwiyuhi
+    sound:
+      c1828: {ipa: u.ni.ɡ̊ə̃.wi.ju.hi, respell: oo-nee-guhn-wee-yoo-hee}
+      modern: {ipa: u.ni.kə̃.ɰi.ju.hi, respell: oo-nee-guhn-wee-yoo-hee}
+  - id: chcon.a1s2.7.2
+    surface: ᏴᏫᏁᎬ
+    punct: ','
+    norm: yvwinegv
+    sound:
+      c1828: {ipa: jə̃.wi.ne.ɡ̊ə̃, respell: yuhn-wee-nay-guhn}
+      modern: {ipa: jə̃.ɰi.ne.kə̃, respell: yuhn-wee-nay-guhn}
+  - id: chcon.a1s2.7.3
+    surface: ᎠᎴ
+    norm: ale
+    sound:
+      c1828: {ipa: a.le, respell: ah-lay}
+      modern: {ipa: a.le, respell: ah-lay}
+  - id: chcon.a1s2.7.4
+    surface: ᎾᏂᎥᏉ
+    norm: nanivquo
+    sound:
+      c1828: {ipa: na.ni.ə̃.kʷo, respell: nah-nee-uhn-kwoh}
+      modern: {ipa: na.ni.ə̃.kʷo, respell: nah-nee-uhn-kwoh}
+  - id: chcon.a1s2.7.5
+    surface: ᏴᏫᏁᎬ
+    norm: yvwinegv
+    sound:
+      c1828: {ipa: jə̃.wi.ne.ɡ̊ə̃, respell: yuhn-wee-nay-guhn}
+      modern: {ipa: jə̃.ɰi.ne.kə̃, respell: yuhn-wee-nay-guhn}
+  - id: chcon.a1s2.7.6
+    surface: ᏗᎬᏩᏂᏁᏗ
+    norm: digvwaninedi
+    sound:
+      c1828: {ipa: d̥i.ɡ̊ə̃.wa.ni.ne.d̥i, respell: dee-guhn-wah-nee-nay-dee}
+      modern: {ipa: ti.kə̃.ɰa.ni.ne.ti, respell: dee-guhn-wah-nee-nay-dee}
+  - id: chcon.a1s2.7.7
+    surface: ᏱᎨᏎᏍᏗ
+    punct: .
+    norm: yigesesdi
+    sound:
+      c1828: {ipa: ji.ɡ̊e.ses.d̥i, respell: yee-gay-says-dee}
+      modern: {ipa: ji.ke.ses.ti, respell: yee-gay-says-dee}
+- id: chcon.a1s2.8
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s2.8
+  stanza: a1s2
+  stanza_title: 'Article I, Section 2: sovereignty, the common land, and the improvements of citizens'
+  text: ᎩᎶᏃ ᎡᏍᎦᏂ ᎡᎯ ᎠᎴ ᎠᏁᎯ ᎢᎠᏓᏅᏍᎨᏍᏗ ᎠᎴ ᎢᎠᎾᏓᏅᏍᎨᏍᏗ,
+  tokens:
+  - id: chcon.a1s2.8.1
+    surface: ᎩᎶᏃ
+    norm: gilono
+    sound:
+      c1828: {ipa: ɡ̊i.lo.no, respell: gee-loh-noh}
+      modern: {ipa: ki.lo.no, respell: gee-loh-noh}
+  - id: chcon.a1s2.8.2
+    surface: ᎡᏍᎦᏂ
+    norm: esgani
+    sound:
+      c1828: {ipa: es.ɡ̊a.ni, respell: ays-gah-nee}
+      modern: {ipa: es.ka.ni, respell: ays-gah-nee}
+  - id: chcon.a1s2.8.3
+    surface: ᎡᎯ
+    norm: ehi
+    sound:
+      c1828: {ipa: e.hi, respell: ay-hee}
+      modern: {ipa: e.hi, respell: ay-hee}
+  - id: chcon.a1s2.8.4
+    surface: ᎠᎴ
+    norm: ale
+    sound:
+      c1828: {ipa: a.le, respell: ah-lay}
+      modern: {ipa: a.le, respell: ah-lay}
+  - id: chcon.a1s2.8.5
+    surface: ᎠᏁᎯ
+    norm: anehi
+    sound:
+      c1828: {ipa: a.ne.hi, respell: ah-nay-hee}
+      modern: {ipa: a.ne.hi, respell: ah-nay-hee}
+  - id: chcon.a1s2.8.6
+    surface: ᎢᎠᏓᏅᏍᎨᏍᏗ
+    norm: iadanvsgesdi
+    sound:
+      c1828: {ipa: i.a.d̥a.nə̃s.ɡ̊es.d̥i, respell: ee-ah-dah-nuhns-gays-dee}
+      modern: {ipa: i.a.ta.nə̃s.kes.ti, respell: ee-ah-dah-nuhns-gays-dee}
+  - id: chcon.a1s2.8.7
+    surface: ᎠᎴ
+    norm: ale
+    sound:
+      c1828: {ipa: a.le, respell: ah-lay}
+      modern: {ipa: a.le, respell: ah-lay}
+  - id: chcon.a1s2.8.8
+    surface: ᎢᎠᎾᏓᏅᏍᎨᏍᏗ
+    punct: ','
+    norm: ianadanvsgesdi
+    sound:
+      c1828: {ipa: i.a.na.d̥a.nə̃s.ɡ̊es.d̥i, respell: ee-ah-nah-dah-nuhns-gays-dee}
+      modern: {ipa: i.a.na.ta.nə̃s.kes.ti, respell: ee-ah-nah-dah-nuhns-gays-dee}
+- id: chcon.a1s2.9
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s2.9
+  stanza: a1s2
+  stanza_title: 'Article I, Section 2: sovereignty, the common land, and the improvements of citizens'
+  text: ᎠᏟᎶᏛ ᎬᎫᏛ ᎠᏓᏬᎯᎳᏗᏍᎨᏍᏗ ᎠᎴ ᎠᎾᏓᏬᎯᎳᏗᏍᎨᏍᏗ,
+  tokens:
+  - id: chcon.a1s2.9.1
+    surface: ᎠᏟᎶᏛ
+    norm: atlilodv
+    sound:
+      c1828: {ipa: a.t͡ɬi.lo.d̥ə̃, respell: ah-tlee-loh-duhn}
+      modern: {ipa: a.t͡ɬi.lo.tə̃, respell: ah-tlee-loh-duhn}
+  - id: chcon.a1s2.9.2
+    surface: ᎬᎫᏛ
+    norm: gvgudv
+    sound:
+      c1828: {ipa: ɡ̊ə̃.ɡ̊u.d̥ə̃, respell: guhn-goo-duhn}
+      modern: {ipa: kə̃.ku.tə̃, respell: guhn-goo-duhn}
+  - id: chcon.a1s2.9.3
+    surface: ᎠᏓᏬᎯᎳᏗᏍᎨᏍᏗ
+    norm: adawohiladisgesdi
+    sound:
+      c1828: {ipa: a.d̥a.wo.hi.la.d̥is.ɡ̊es.d̥i, respell: ah-dah-woh-hee-lah-dees-gays-dee}
+      modern: {ipa: a.ta.ɰo.hi.la.tis.kes.ti, respell: ah-dah-woh-hee-lah-dees-gays-dee}
+  - id: chcon.a1s2.9.4
+    surface: ᎠᎴ
+    norm: ale
+    sound:
+      c1828: {ipa: a.le, respell: ah-lay}
+      modern: {ipa: a.le, respell: ah-lay}
+  - id: chcon.a1s2.9.5
+    surface: ᎠᎾᏓᏬᎯᎳᏗᏍᎨᏍᏗ
+    punct: ','
+    norm: anadawohiladisgesdi
+    sound:
+      c1828: {ipa: a.na.d̥a.wo.hi.la.d̥is.ɡ̊es.d̥i, respell: ah-nah-dah-woh-hee-lah-dees-gays-dee}
+      modern: {ipa: a.na.ta.ɰo.hi.la.tis.kes.ti, respell: ah-nah-dah-woh-hee-lah-dees-gays-dee}
+- id: chcon.a1s2.10
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s2.10
+  stanza: a1s2
+  stanza_title: 'Article I, Section 2: sovereignty, the common land, and the improvements of citizens'
+  text: ᎯᎸ ᎤᏣᏘᏂ ᏩᏂᎶᏍᎨᏍᏗ,
+  tokens:
+  - id: chcon.a1s2.10.1
+    surface: ᎯᎸ
+    norm: hilv
+    sound:
+      c1828: {ipa: hi.lə̃, respell: hee-luhn}
+      modern: {ipa: hi.lə̃, respell: hee-luhn}
+  - id: chcon.a1s2.10.2
+    surface: ᎤᏣᏘᏂ
+    norm: utsatini
+    sound:
+      c1828: {ipa: u.t͡sa.tʰi.ni, respell: oo-tsah-tee-nee}
+      modern: {ipa: u.d͡ʒa.tʰi.ni, respell: oo-jah-tee-nee}
+  - id: chcon.a1s2.10.3
+    surface: ᏩᏂᎶᏍᎨᏍᏗ
+    punct: ','
+    norm: wanilosgesdi
+    sound:
+      c1828: {ipa: wa.ni.los.ɡ̊es.d̥i, respell: wah-nee-lohs-gays-dee}
+      modern: {ipa: ɰa.ni.los.kes.ti, respell: wah-nee-lohs-gays-dee}
+- id: chcon.a1s2.11
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s2.11
+  stanza: a1s2
+  stanza_title: 'Article I, Section 2: sovereignty, the common land, and the improvements of citizens'
+  text: ᎾᏍᏉᏍᎩᏂ ᎡᏍᎦᏂ ᎤᎾᏤᎵ ᎤᏂᏰᎸᏒ ᎠᏂᎨᏍᏗ.
+  tokens:
+  - id: chcon.a1s2.11.1
+    surface: ᎾᏍᏉᏍᎩᏂ
+    norm: nasquosgini
+    sound:
+      c1828: {ipa: nas.kʷos.ɡ̊i.ni, respell: nahs-kwohs-gee-nee}
+      modern: {ipa: nas.kʷos.ki.ni, respell: nahs-kwohs-gee-nee}
+  - id: chcon.a1s2.11.2
+    surface: ᎡᏍᎦᏂ
+    norm: esgani
+    sound:
+      c1828: {ipa: es.ɡ̊a.ni, respell: ays-gah-nee}
+      modern: {ipa: es.ka.ni, respell: ays-gah-nee}
+  - id: chcon.a1s2.11.3
+    surface: ᎤᎾᏤᎵ
+    norm: unatseli
+    sound:
+      c1828: {ipa: u.na.t͡se.li, respell: oo-nah-tsay-lee}
+      modern: {ipa: u.na.d͡ʒe.li, respell: oo-nah-jay-lee}
+  - id: chcon.a1s2.11.4
+    surface: ᎤᏂᏰᎸᏒ
+    norm: uniyelvsv
+    sound:
+      c1828: {ipa: u.ni.je.lə̃.sə̃, respell: oo-nee-yay-luhn-suhn}
+      modern: {ipa: u.ni.je.lə̃.sə̃, respell: oo-nee-yay-luhn-suhn}
+  - id: chcon.a1s2.11.5
+    surface: ᎠᏂᎨᏍᏗ
+    punct: .
+    norm: anigesdi
+    sound:
+      c1828: {ipa: a.ni.ɡ̊es.d̥i, respell: ah-nee-gays-dee}
+      modern: {ipa: a.ni.kes.ti, respell: ah-nee-gays-dee}
+- id: chcon.a1s2.12
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s2.12
+  stanza: a1s2
+  stanza_title: 'Article I, Section 2: sovereignty, the common land, and the improvements of citizens'
+  text: ᎠᏰᎵᏍᎩᏂᏃᏅ ᎬᏩᎵᏁᎢᏍᏗ ᎢᎨᏎᏍᏗ ᎤᏂᎷᏥᎮᏗᏱ ᎩᎶ ᎾᏍᎩ ᏂᎦᏛᎦ ᎢᎡᎵᏍᎨᏍᏗ.
+  tokens:
+  - id: chcon.a1s2.12.1
+    surface: ᎠᏰᎵᏍᎩᏂᏃᏅ
+    norm: ayelisgininonv
+    sound:
+      c1828: {ipa: a.je.lis.ɡ̊i.ni.no.nə̃, respell: ah-yay-lees-gee-nee-noh-nuhn}
+      modern: {ipa: a.je.lis.ki.ni.no.nə̃, respell: ah-yay-lees-gee-nee-noh-nuhn}
+  - id: chcon.a1s2.12.2
+    surface: ᎬᏩᎵᏁᎢᏍᏗ
+    norm: gvwalineisdi
+    sound:
+      c1828: {ipa: ɡ̊ə̃.wa.li.ne.is.d̥i, respell: guhn-wah-lee-nay-ees-dee}
+      modern: {ipa: kə̃.ɰa.li.ne.is.ti, respell: guhn-wah-lee-nay-ees-dee}
+  - id: chcon.a1s2.12.3
+    surface: ᎢᎨᏎᏍᏗ
+    norm: igesesdi
+    sound:
+      c1828: {ipa: i.ɡ̊e.ses.d̥i, respell: ee-gay-says-dee}
+      modern: {ipa: i.ke.ses.ti, respell: ee-gay-says-dee}
+  - id: chcon.a1s2.12.4
+    surface: ᎤᏂᎷᏥᎮᏗᏱ
+    norm: unilutsihediyi
+    sound:
+      c1828: {ipa: u.ni.lu.t͡si.he.d̥i.ji, respell: oo-nee-loo-tsee-hay-dee-yee}
+      modern: {ipa: u.ni.lu.d͡ʒi.he.ti.ji, respell: oo-nee-loo-jee-hay-dee-yee}
+  - id: chcon.a1s2.12.5
+    surface: ᎩᎶ
+    norm: gilo
+    sound:
+      c1828: {ipa: ɡ̊i.lo, respell: gee-loh}
+      modern: {ipa: ki.lo, respell: gee-loh}
+  - id: chcon.a1s2.12.6
+    surface: ᎾᏍᎩ
+    norm: nasgi
+    sound:
+      c1828: {ipa: nas.ɡ̊i, respell: nahs-gee}
+      modern: {ipa: nas.ki, respell: nahs-gee}
+  - id: chcon.a1s2.12.7
+    surface: ᏂᎦᏛᎦ
+    norm: nigadvga
+    sound:
+      c1828: {ipa: ni.ɡ̊a.d̥ə̃.ɡ̊a, respell: nee-gah-duhn-gah}
+      modern: {ipa: ni.ka.tə̃.ka, respell: nee-gah-duhn-gah}
+  - id: chcon.a1s2.12.8
+    surface: ᎢᎡᎵᏍᎨᏍᏗ
+    punct: .
+    norm: ielisgesdi
+    sound:
+      c1828: {ipa: i.e.lis.ɡ̊es.d̥i, respell: ee-ay-lees-gays-dee}
+      modern: {ipa: i.e.lis.kes.ti, respell: ee-ay-lees-gays-dee}
+- id: chcon.a1s2.13
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s2.13
+  stanza: a1s2
+  stanza_title: 'Article I, Section 2: sovereignty, the common land, and the improvements of citizens'
+  text: ᏓᏂᎳᏫᎥᏗᎾ ᎪᏪᎵ ᎤᏅᏗ ᎤᏓᏙᎵᏍᏙᏗ ᎨᏎᏍᏗ.
+  tokens:
+  - id: chcon.a1s2.13.1
+    surface: ᏓᏂᎳᏫᎥᏗᎾ
+    norm: danilawivdina
+    sound:
+      c1828: {ipa: d̥a.ni.la.wi.ə̃.d̥i.na, respell: dah-nee-lah-wee-uhn-dee-nah}
+      modern: {ipa: ta.ni.la.ɰi.ə̃.ti.na, respell: dah-nee-lah-wee-uhn-dee-nah}
+  - id: chcon.a1s2.13.2
+    surface: ᎪᏪᎵ
+    norm: goweli
+    sound:
+      c1828: {ipa: ɡ̊o.we.li, respell: goh-way-lee}
+      modern: {ipa: ko.ɰe.li, respell: goh-way-lee}
+  - id: chcon.a1s2.13.3
+    surface: ᎤᏅᏗ
+    norm: unvdi
+    sound:
+      c1828: {ipa: u.nə̃.d̥i, respell: oo-nuhn-dee}
+      modern: {ipa: u.nə̃.ti, respell: oo-nuhn-dee}
+  - id: chcon.a1s2.13.4
+    surface: ᎤᏓᏙᎵᏍᏙᏗ
+    norm: udadolisdodi
+    sound:
+      c1828: {ipa: u.d̥a.d̥o.lis.d̥o.d̥i, respell: oo-dah-doh-lees-doh-dee}
+      modern: {ipa: u.ta.to.lis.to.ti, respell: oo-dah-doh-lees-doh-dee}
+  - id: chcon.a1s2.13.5
+    surface: ᎨᏎᏍᏗ
+    punct: .
+    norm: gesesdi
+    sound:
+      c1828: {ipa: ɡ̊e.ses.d̥i, respell: gay-says-dee}
+      modern: {ipa: ke.ses.ti, respell: gay-says-dee}
+- id: chcon.a1s2.14
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s2.14
+  stanza: a1s2
+  stanza_title: 'Article I, Section 2: sovereignty, the common land, and the improvements of citizens'
+  text: ᎠᎴ ᎾᏍᏉ ᏗᏂᎳᏫᎩ ᎬᏩᏂᏁᎢᏍᏗ ᎨᏎᏍᏗ ᎠᏰᎵ ᏗᎧᎾᏩᏛᏍᏗ,
+  tokens:
+  - id: chcon.a1s2.14.1
+    surface: ᎠᎴ
+    norm: ale
+    sound:
+      c1828: {ipa: a.le, respell: ah-lay}
+      modern: {ipa: a.le, respell: ah-lay}
+  - id: chcon.a1s2.14.2
+    surface: ᎾᏍᏉ
+    norm: nasquo
+    sound:
+      c1828: {ipa: nas.kʷo, respell: nahs-kwoh}
+      modern: {ipa: nas.kʷo, respell: nahs-kwoh}
+  - id: chcon.a1s2.14.3
+    surface: ᏗᏂᎳᏫᎩ
+    norm: dinilawigi
+    sound:
+      c1828: {ipa: d̥i.ni.la.wi.ɡ̊i, respell: dee-nee-lah-wee-gee}
+      modern: {ipa: ti.ni.la.ɰi.ki, respell: dee-nee-lah-wee-gee}
+  - id: chcon.a1s2.14.4
+    surface: ᎬᏩᏂᏁᎢᏍᏗ
+    norm: gvwanineisdi
+    sound:
+      c1828: {ipa: ɡ̊ə̃.wa.ni.ne.is.d̥i, respell: guhn-wah-nee-nay-ees-dee}
+      modern: {ipa: kə̃.ɰa.ni.ne.is.ti, respell: guhn-wah-nee-nay-ees-dee}
+  - id: chcon.a1s2.14.5
+    surface: ᎨᏎᏍᏗ
+    norm: gesesdi
+    sound:
+      c1828: {ipa: ɡ̊e.ses.d̥i, respell: gay-says-dee}
+      modern: {ipa: ke.ses.ti, respell: gay-says-dee}
+  - id: chcon.a1s2.14.6
+    surface: ᎠᏰᎵ
+    norm: ayeli
+    sound:
+      c1828: {ipa: a.je.li, respell: ah-yay-lee}
+      modern: {ipa: a.je.li, respell: ah-yay-lee}
+  - id: chcon.a1s2.14.7
+    surface: ᏗᎧᎾᏩᏛᏍᏗ
+    punct: ','
+    norm: dikanawadvsdi
+    sound:
+      c1828: {ipa: d̥i.kʰa.na.wa.d̥ə̃s.d̥i, respell: dee-kah-nah-wah-duhns-dee}
+      modern: {ipa: ti.kʰa.na.ɰa.tə̃s.ti, respell: dee-kah-nah-wah-duhns-dee}
+- id: chcon.a1s2.15
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s2.15
+  stanza: a1s2
+  stanza_title: 'Article I, Section 2: sovereignty, the common land, and the improvements of citizens'
+  text: ᏄᏍᏛ ᎠᎾᏓᏅᏖᏍᎬ, ᎠᎴ ᏰᎵ ᎬᏩᏂᏍᏙᏗ ᏥᎨᏐ,
+  tokens:
+  - id: chcon.a1s2.15.1
+    surface: ᏄᏍᏛ
+    norm: nusdv
+    sound:
+      c1828: {ipa: nus.d̥ə̃, respell: noos-duhn}
+      modern: {ipa: nus.tə̃, respell: noos-duhn}
+  - id: chcon.a1s2.15.2
+    surface: ᎠᎾᏓᏅᏖᏍᎬ
+    punct: ','
+    norm: anadanvtesgv
+    sound:
+      c1828: {ipa: a.na.d̥a.nə̃.tʰes.ɡ̊ə̃, respell: ah-nah-dah-nuhn-tays-guhn}
+      modern: {ipa: a.na.ta.nə̃.tʰes.kə̃, respell: ah-nah-dah-nuhn-tays-guhn}
+  - id: chcon.a1s2.15.3
+    surface: ᎠᎴ
+    norm: ale
+    sound:
+      c1828: {ipa: a.le, respell: ah-lay}
+      modern: {ipa: a.le, respell: ah-lay}
+  - id: chcon.a1s2.15.4
+    surface: ᏰᎵ
+    norm: yeli
+    sound:
+      c1828: {ipa: je.li, respell: yay-lee}
+      modern: {ipa: je.li, respell: yay-lee}
+  - id: chcon.a1s2.15.5
+    surface: ᎬᏩᏂᏍᏙᏗ
+    norm: gvwanisdodi
+    sound:
+      c1828: {ipa: ɡ̊ə̃.wa.nis.d̥o.d̥i, respell: guhn-wah-nees-doh-dee}
+      modern: {ipa: kə̃.ɰa.nis.to.ti, respell: guhn-wah-nees-doh-dee}
+  - id: chcon.a1s2.15.6
+    surface: ᏥᎨᏐ
+    punct: ','
+    norm: tsigeso
+    sound:
+      c1828: {ipa: t͡si.ɡ̊e.so, respell: tsee-gay-soh}
+      modern: {ipa: d͡ʒi.ke.so, respell: jee-gay-soh}
+- id: chcon.a1s2.16
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s2.16
+  stanza: a1s2
+  stanza_title: 'Article I, Section 2: sovereignty, the common land, and the improvements of citizens'
+  text: ᎢᏳᏃ ᎡᏍᎦᏂ ᎠᏁᎯ ᏱᏓᎾᏤᎵᎵᏙᎭ ᏗᎦᎶᎨᏗᏍᏗᏱ,
+  tokens:
+  - id: chcon.a1s2.16.1
+    surface: ᎢᏳᏃ
+    norm: iyuno
+    sound:
+      c1828: {ipa: i.ju.no, respell: ee-yoo-noh}
+      modern: {ipa: i.ju.no, respell: ee-yoo-noh}
+  - id: chcon.a1s2.16.2
+    surface: ᎡᏍᎦᏂ
+    norm: esgani
+    sound:
+      c1828: {ipa: es.ɡ̊a.ni, respell: ays-gah-nee}
+      modern: {ipa: es.ka.ni, respell: ays-gah-nee}
+  - id: chcon.a1s2.16.3
+    surface: ᎠᏁᎯ
+    norm: anehi
+    sound:
+      c1828: {ipa: a.ne.hi, respell: ah-nay-hee}
+      modern: {ipa: a.ne.hi, respell: ah-nay-hee}
+  - id: chcon.a1s2.16.4
+    surface: ᏱᏓᎾᏤᎵᎵᏙᎭ
+    norm: yidanatselilidoha
+    sound:
+      c1828: {ipa: ji.d̥a.na.t͡se.li.li.d̥o.ha, respell: yee-dah-nah-tsay-lee-lee-doh-hah}
+      modern: {ipa: ji.ta.na.d͡ʒe.li.li.to.ha, respell: yee-dah-nah-jay-lee-lee-doh-hah}
+  - id: chcon.a1s2.16.5
+    surface: ᏗᎦᎶᎨᏗᏍᏗᏱ
+    punct: ','
+    norm: digalogedisdiyi
+    sound:
+      c1828: {ipa: d̥i.ɡ̊a.lo.ɡ̊e.d̥is.d̥i.ji, respell: dee-gah-loh-gay-dees-dee-yee}
+      modern: {ipa: ti.ka.lo.ke.tis.ti.ji, respell: dee-gah-loh-gay-dees-dee-yee}
+- id: chcon.a1s2.17
+  cite: urn:weft:chr:cherokee-nation.constitution.1827.weft-scan:a1s2.17
+  stanza: a1s2
+  stanza_title: 'Article I, Section 2: sovereignty, the common land, and the improvements of citizens'
+  text: ᎠᎴ ᎤᏂᏃᏙᏗᏱᏉ, ᏧᎬᏩᎶᏗᏉ ᎤᏂᏩᏛᏗ ᏳᏂᏰᎸ ᏱᏓᏂᎶᎨᏗᎭ.
+  tokens:
+  - id: chcon.a1s2.17.1
+    surface: ᎠᎴ
+    norm: ale
+    sound:
+      c1828: {ipa: a.le, respell: ah-lay}
+      modern: {ipa: a.le, respell: ah-lay}
+  - id: chcon.a1s2.17.2
+    surface: ᎤᏂᏃᏙᏗᏱᏉ
+    punct: ','
+    norm: uninododiyiquo
+    sound:
+      c1828: {ipa: u.ni.no.d̥o.d̥i.ji.kʷo, respell: oo-nee-noh-doh-dee-yee-kwoh}
+      modern: {ipa: u.ni.no.to.ti.ji.kʷo, respell: oo-nee-noh-doh-dee-yee-kwoh}
+  - id: chcon.a1s2.17.3
+    surface: ᏧᎬᏩᎶᏗᏉ
+    norm: tsugvwalodiquo
+    sound:
+      c1828: {ipa: t͡su.ɡ̊ə̃.wa.lo.d̥i.kʷo, respell: tsoo-guhn-wah-loh-dee-kwoh}
+      modern: {ipa: d͡ʒu.kə̃.ɰa.lo.ti.kʷo, respell: joo-guhn-wah-loh-dee-kwoh}
+  - id: chcon.a1s2.17.4
+    surface: ᎤᏂᏩᏛᏗ
+    norm: uniwadvdi
+    sound:
+      c1828: {ipa: u.ni.wa.d̥ə̃.d̥i, respell: oo-nee-wah-duhn-dee}
+      modern: {ipa: u.ni.ɰa.tə̃.ti, respell: oo-nee-wah-duhn-dee}
+  - id: chcon.a1s2.17.5
+    surface: ᏳᏂᏰᎸ
+    norm: yuniyelv
+    sound:
+      c1828: {ipa: ju.ni.je.lə̃, respell: yoo-nee-yay-luhn}
+      modern: {ipa: ju.ni.je.lə̃, respell: yoo-nee-yay-luhn}
+  - id: chcon.a1s2.17.6
+    surface: ᏱᏓᏂᎶᎨᏗᎭ
+    punct: .
+    norm: yidanilogediha
+    sound:
+      c1828: {ipa: ji.d̥a.ni.lo.ɡ̊e.d̥i.ha, respell: yee-dah-nee-loh-gay-dee-hah}
+      modern: {ipa: ji.ta.ni.lo.ke.ti.ha, respell: yee-dah-nee-loh-gay-dee-hah}

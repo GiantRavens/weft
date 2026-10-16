@@ -2,19 +2,26 @@ run:
   weft: 0.1.0
   sections:
   - pre
+  - a1s1
+  - a1s2
 counts:
-  lines: 8
-  tokens: 59
+  lines: 54
+  tokens: 358
 failures: {}
 samples: {}
 failure_rate: {}
 shift_left: []
 predicted_gaps:
-- the preamble only; the six articles, and the Cherokee lines of the title page, are not yet transcribed
-- the transcription rests on a scan of about 180 pixels to the inch; two signs are left uncertain on the page (Ꮒ or Ᏺ in ᎢᏂᎦᎵᏍᏓᏁᏗ, Ꮣ or Ꮦ in ᎣᏥᏁᎢᏍᏓ), and four readings rest on words found in the 1860 New
-  Testament or Feeling's dictionary as well as on the scan (named in edition.yaml); punctuation is checked by eye, since the OCR comparison is by letters
-- Weft's reading of this page was made after seeing the OCR, so it does not measure a hand reading's error rate on the 1828 type; a blind reading of Article I is the next step for that
-- 'no treebank: lemma, morphology and gloss are written by Claude, an AI model, word by word against Feeling''s dictionary (1975), the 1860 New Testament and Wiktionary, all draft; four words (five tokens)
-  were found in none of them and have lemma ?; five glosses, marked ?, are taken from the English beside the text, and one word (ᎬᏂᏉ) has no gloss'
+- the preamble and Article I only; Articles II to VI, and the Cherokee lines of the title page, are not yet transcribed
+- the transcription rests on scans of about 180 pixels to the inch. In the preamble two signs are left uncertain (Ꮒ or Ᏺ in ᎢᏂᎦᎵᏍᏓᏁᏗ, Ꮣ or Ꮦ in ᎣᏥᏁᎢᏍᏓ) and four readings rest on words found in the 1860
+  New Testament or Feeling's dictionary as well as on the scan (named in edition.yaml). In Article I three signs are left uncertain (ᏥᏕᎬᎫᏗ, ᎬᏩᏏᎯᏰᎸ, ᎩᎳᏉ), and a curled U-shaped sign is read Ꮰ (tlo) in seven
+  places, as Tesseract read it where the hand reading had Ꮜ (sa); in two of them the stem, with this sign, is attested in the word lists at cherokeedictionary.net and the 1860 New Testament, and the other
+  five are marked on the page. Punctuation is checked by eye, since the OCR comparison is by letters
+- 'Article I was read by hand before any OCR of its pages and then collated: the hand reading differed from the settled text at 11 of 1,280 signs, Tesseract''s pinned witness at 242 (docs/languages.md).
+  The hand figure is a lower bound, since a sign both readings got wrong is caught only by other evidence, as one was (ᏭᏕᎵᎬ, "west")'
+- 'no treebank: lemma, morphology and gloss are written by Claude, an AI model, word by word against Feeling''s dictionary (1975), the 1860 New Testament and Wiktionary, all draft. In the preamble four
+  words (five tokens) were found in none of them and have lemma ?, five glosses, marked ?, are taken from the English beside the text, and one word (ᎬᏂᏉ) has no gloss. In Article I, annotated also against
+  the other word lists the site serves (Noquisi, the Consortium Word List, Raven Rock, the Cherokee Nation''s list), each named in the overlay, 69 of 299 tokens have lemma ?, 64 glosses are taken from the
+  English, and six tokens have no gloss; the place names are given as the English names them'
 - the glosses have not been reviewed by a Cherokee speaker; the Cherokee Nation asks for fluent speakers' input on machine work with the language (see the stewardship notice)
 - 'the sound rests on the c1828 scheme, which the syllabary leaves approximate: tone, vowel length and the final h are not written, and the page claims none of them'

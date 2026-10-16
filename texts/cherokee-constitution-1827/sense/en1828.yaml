@@ -1,10 +1,12 @@
 # The English preamble printed beside the Cherokee in the bilingual edition (New Echota, 1828), read from the scan; the
 # archive.org OCR of the column is the pinned file, and its misreadings are corrected against the scan. The English runs
-# from the title page to the head of page 3 ("Constitution for the Government of the Cherokee Nation."). One span: the
+# from the title page to the head of page 2 ("Constitution for the Government of the Cherokee Nation."). One span: the
 # Cherokee orders the clauses differently (the enacting clause, ᎯᎠ ᏗᎧᎾᏩᏛᏍᏗ ... ᎣᏦᏢᎾ, comes before the acknowledgment of the
-# Ruler), so the two are aligned as a whole.
+# Ruler), so the two are aligned as a whole. Article I (pages 2 to 5 of the English, scan-p2 to scan-p5) is read from the scans in the same way;
+# the OCR's misreadings (Hi- was6ee, Cliattahoochy, l ights, memorialize) are corrected against the scan, and the words the
+# print divides across its lines are joined.
 translation: en1828
-aligned_by: 'hand: the preamble as one span'
+aligned_by: 'hand: the preamble as one span; Article I by the legs of the boundary in Section 1 and by clause in Section 2, where the Cherokee follows the English in order'
 spans:
 - lines:
   - chcon.pre.1
@@ -14,3 +16,109 @@ spans:
     with humility and gratitude the goodness of the sovereign Ruler of the Universe, in offering us an opportunity so favorable to
     the design, and imploring his aid and direction in its accomplishment, do ordain and establish this Constitution for the
     Government of the Cherokee Nation.'
+- lines:
+  - chcon.a1s1.1
+  - chcon.a1s1.4
+  text: Sec. 1. The Boundaries of this nation, embracing the lands solemnly guarantied and reserved forever to the Cherokee Nation by
+    the Treaties concluded with the United States, are as follows; and shall forever hereafter remain unalterably the same—to wit—
+- lines:
+  - chcon.a1s1.5
+  - chcon.a1s1.7
+  text: Beginning on the North Bank of Tennessee River at the upper part of the Chickasaw old fields; thence along the main channel
+    of said river, including all the islands therein, to the mouth of the Hiwassee river,
+- lines:
+  - chcon.a1s1.8
+  - chcon.a1s1.10
+  text: thence up the main channel of said river, including Islands, to the first hill which closes in on said river about two miles
+    above Hiwassee old Town;
+- lines:
+  - chcon.a1s1.11
+  - chcon.a1s1.12
+  text: thence along the ridge which divides the waters of the Hiwassee and little Tellico, to the Tennessee river at Tallassee;
+- lines:
+  - chcon.a1s1.13
+  - chcon.a1s1.14
+  text: thence along the main channel, including Islands, to the junction of the Cowee and Nanteyalee;
+- lines:
+  - chcon.a1s1.15
+  - chcon.a1s1.15
+  text: thence along the ridge in the fork of said river, to the top of the blue ridge;
+- lines:
+  - chcon.a1s1.16
+  - chcon.a1s1.16
+  text: thence along the blue ridge to the Unicoy Turnpike road;
+- lines:
+  - chcon.a1s1.17
+  - chcon.a1s1.17
+  text: thence by a straight line to the main source of the Chestatee;
+- lines:
+  - chcon.a1s1.18
+  - chcon.a1s1.19
+  text: thence along its main channel, including Islands to the Chattahoochy;
+- lines:
+  - chcon.a1s1.20
+  - chcon.a1s1.21
+  text: and thence down the same to the Creek boundary at Buzzard Roost;
+- lines:
+  - chcon.a1s1.22
+  - chcon.a1s1.22
+  text: thence along the boundary line which separates this and the Creek Nation, to a point on the Coosa river opposite the mouth of
+    Wills Creek;
+- lines:
+  - chcon.a1s1.23
+  - chcon.a1s1.23
+  text: thence down along the South bank of the same to a point opposite to Fort Strother;
+- lines:
+  - chcon.a1s1.24
+  - chcon.a1s1.24
+  text: thence up the river to the mouth of Wills Creek;
+- lines:
+  - chcon.a1s1.25
+  - chcon.a1s1.26
+  text: thence up along the East bank of said creek, to the West branch thereof, and up the same to its source;
+- lines:
+  - chcon.a1s1.27
+  - chcon.a1s1.27
+  text: and thence along the ridge which separates the Tombecbee and Tennessee waters, to a point on the top of said ridge;
+- lines:
+  - chcon.a1s1.28
+  - chcon.a1s1.28
+  text: thence due North to Camp Coffee on Tennessee river, which is opposite the Chickasaw Island;
+- lines:
+  - chcon.a1s1.29
+  - chcon.a1s1.29
+  text: thence to the place of beginning.
+- lines:
+  - chcon.a1s2.1
+  - chcon.a1s2.2
+  text: Sec. 2. The Sovereignty and Jurisdiction of this Government shall extend over the Country within the boundaries above described,
+- lines:
+  - chcon.a1s2.3
+  - chcon.a1s2.4
+  text: and the lands therein are, and shall remain, the common property of the Nation;
+- lines:
+  - chcon.a1s2.5
+  - chcon.a1s2.5
+  text: but the improvements made thereon, and in the possession of the citizens of the Nation, are the exclusive and indefeasible property
+    of the citizens respectively who made, or may rightfully be in possession of them;
+- lines:
+  - chcon.a1s2.6
+  - chcon.a1s2.7
+  text: Provided, That the citizens of the Nation, possessing exclusive and indefeasible right to their respective improvements, as
+    expressed in this article, shall possess no right nor power to dispose of their improvements in any manner whatever to the United
+    States, individual States, nor to individual citizens thereof;
+- lines:
+  - chcon.a1s2.8
+  - chcon.a1s2.11
+  text: and that, whenever any such citizen or citizens shall remove with their effects out of the limits of this Nation, and become
+    citizens of any other Government, all their rights and privileges as citizens of this Nation shall cease;
+- lines:
+  - chcon.a1s2.12
+  - chcon.a1s2.13
+  text: Provided nevertheless, That the Legislature shall have power to re-admit by law to all the rights of citizenship, any such person
+    or persons, who may at any time desire to return to the Nation on their memorializing the General Council for such readmission.
+- lines:
+  - chcon.a1s2.14
+  - chcon.a1s2.17
+  text: Moreover, the Legislature shall have power to adopt such laws and regulations, as its wisdom may deem expedient and proper,
+    to prevent the citizens from monopolizing improvements with the view of speculation.

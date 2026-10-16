@@ -113,7 +113,7 @@ the page shows no invitation.
 | | | Schikaneder, Die Zauberflöte (1791) | northern (first), modern | medium |
 | | | Luther's Bible | ecg1545 (first), modern | not set |
 | Swahili | `swahili` | Steere, The Kites and the Crows | z1870 (first), modern | medium |
-| Cherokee | `cherokee` | Constitution of the Cherokee Nation (1827), the preamble | c1828 (first), modern | low |
+| Cherokee | `cherokee` | Constitution of the Cherokee Nation (1827), the preamble and Article I | c1828 (first), modern | low |
 | Esperanto | `esperanto` | Zamenhof, Unua Libro specimens (1887) | zamenhof (only) | not set |
 | Quenya, Sindarin | `elvish` | private works only (Tolkien, in copyright) | tolkien (only) | not set |
 
@@ -877,6 +877,29 @@ Where the scan alone did not settle a sign, the word was looked for in the 1860 
 the dictionaries at cherokeedictionary.net, and two signs are left uncertain on the page. The
 glosses are drafted against Feeling's dictionary, the New Testament and Wiktionary, and are held
 as a draft until a Cherokee speaker has reviewed them (work).
+
+**Reading the type, measured.** Article I (77 printed lines, 1,280 signs) was read by eye before
+any OCR of its pages, the reading frozen with a hash, and then collated with Tesseract and settled
+on the scan. The hand reading differed from the settled text at 11 signs (0.9 percent), Tesseract's
+witness, as pinned in the edition, at 242 (18.9 percent, by edit distance). The hand figure is a
+lower bound: the places where the two readings disagree were settled, and a sign both misread
+shows only when something else catches it. One was caught while the article was being glossed:
+both readings had Ꭶ (ga) as the second sign of a word the dictionary has with Ꮥ (de), ᏭᏕᎵᎬ,
+"west", and the scan, looked at again, is consistent with Ꮥ. The hand reading was blind to the OCR,
+not to the lexicon, which chose between look-alike forms. Seven of the eleven hand errors are one
+confusion: the type has two U-shaped signs with a bar, a plain one, Ꮜ (sa), as in ᎠᏂᎫᏌ "Creeks",
+and one whose left arm curls. The hand reading took the curled sign for Ꮜ in all seven places;
+Tesseract read Ꮰ (tlo), and the collation settled on Ꮰ by the curl. Two words later bore it out
+by their stems: ᏚᎾᏠᎯᏍᏓᏅ, "they agreed on", beside "the Treaties concluded", shares its stem with
+ᎧᏃᎮᏛᏓᏠᎯᏍᏛ, "treaty", in the Cherokee Nation's word list and with ᎧᏃᎮᏛ ᏚᎾᏠᎯᏍᏛ, "covenant", in the
+1860 New Testament (Galatians 3:15), and ᏚᏠᏏᎸ, where two rivers join, shares its stem with
+ᏕᎬᏩᏠᏏᎴᎢ, "they came out to meet him" (Matthew 8:34). With Ꮜ in its place, neither stem was found.
+The other five places where the sign stands are in words not yet found. The same reading found the
+other pairs a reader of this type must separate: a G with a straight spur is Ꮯ (tli, as in ᎠᏟᎶᏛ),
+with a curled spur Ꮳ (tsa, as in ᏣᎳᎩ), with a spiral inside Ꮆ (lo); Ꮥ (de) has its bar at the
+upper right, Ꭶ (ga) through the middle; Ꮲ (tlv) is a P with a closed bowl, and Ꮅ (li) is an F,
+flat or with its arm curled down; Ꮔ (nu) has a loop at the upper left, Ꮈ (lv) a tick at the middle
+left.
 
 **What a specialist could improve.** Where written vowels go unsaid; the aspiration Worcester
 describes; tone, from a dictionary that marks it (Feeling, *Cherokee-English Dictionary*, 1975)

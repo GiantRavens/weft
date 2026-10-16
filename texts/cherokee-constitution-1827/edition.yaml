@@ -1,6 +1,6 @@
-# Weft edition of the Cherokee text of the preamble to the Constitution of the Cherokee Nation (New Echota, July 1827), as
-# printed in the bilingual edition of 1828 (Newberry Library, VAULT Ayer 251 .C211 1828; the scan pinned as scan-p1).
-# The text was read from the scan by hand and by Tesseract (gen/ocr/p1.txt, made by weft ocr) and settled sign by sign
+# Weft edition of the Cherokee text of the preamble and Article I of the Constitution of the Cherokee Nation (New Echota,
+# July 1827), as printed in the bilingual edition of 1828 (Newberry Library, VAULT Ayer 251 .C211 1828; the scans pinned as
+# scan-p1 to scan-p4). The text was read from the scans by hand and by Tesseract (gen/ocr/, made by weft ocr) and settled sign by sign
 # on the scan; where a reading turned on a word, the word was looked for in the Cherokee New Testament of 1860 and the
 # dictionaries searched at cherokeedictionary.net. The words the print hyphenates across its lines are joined.
 #   t          the word as printed, punctuation attached
@@ -9,10 +9,14 @@
 # Four readings rest on a word found in the 1860 New Testament or Feeling's dictionary as well as on the scan, and are
 # marked below with a comment: ᎠᏫᏂᏗᏢ (Ꮧ, not the OCR's Ꮨ), ᏙᎯ (the Λ-shaped sign read as Ꮩ, do), ᎣᏣᎵᎡᎵᏥᏏ and ᎤᎾᏤᎵ (the
 # plain F-shaped sign read as Ꮅ, li). Punctuation is checked by eye only: the OCR comparison is by letters.
-# Lines are Weft's division of the text at its commas, semicolons and stops; the one section is the preamble.
+# Lines are Weft's division of the text at its commas, semicolons and stops. Sections: the preamble (page 1), and Article I,
+# Section 1 (the boundary) and Section 2 (pages 2 to 4). Article I was read by hand before any OCR of its
+# pages (curated/article1-blind.txt, frozen with a hash), collated with Tesseract and settled on the scans
+# (curated/article1-settled.txt). The printed section numbers (1., 2.) are left to the section titles. Two line-end dashes
+# (after ᎤᏪᏯᏗᏍᏛ and ᎨᏎᏍᏗ) are printed where no word is divided, and are kept as marks, not joins.
 work: cherokee-constitution-1827
 joiner: ' '
-ocr_check: {file: gen/ocr/p1.txt}
+ocr_check: {files: [gen/ocr/p1.txt, gen/ocr/p2.txt, gen/ocr/p3a.txt, gen/ocr/p3b.txt, gen/ocr/p4.txt]}
 sections:
 - id: pre
   title: Preamble
@@ -104,3 +108,514 @@ sections:
     - t: ᎠᎴ
     - t: ᎣᎨᏂᏗᏱ,
     - t: ᎣᏥᏔᏲᏏ.
+- id: a1s1
+  title: 'Article I, Section 1: the boundaries of the Nation'
+  lines:
+  - tokens:
+    - t: ᎠᏟᎶᏛ
+      ocr: 'ᎠᏣᎶᏛ'
+    - t: ᏥᏕᎬᎫᏗ
+      ocr: 'ᏥᏕᎬᎩᏗ'
+      uncertain: {alt: ᏥᎦᎬᎫᏗ, why: 'the second sign is Ꮥ (de) or Ꭶ (ga): the bar is faint at this resolution; neither form was found in the dictionaries or the 1860 New Testament'}
+    - t: ᎠᏂᏣᎳᎩ
+    - t: ᎤᎾᏤᎵᎪᎯ
+      ocr: 'ᎤᎾᏮᏤᏢᎪᎯ'
+    - t: ᎦᏙᎯ,
+      ocr: 'ᎦᎪᎯ'
+  - tokens:
+    - t: ᎤᏂᎬᏫᏳᎯ
+      ocr: 'ᏅᏂᎬᏫᏳᎯ'
+    - t: ᏗᎬᏩᏂᏂᎯᏎᎸ
+      ocr: 'ᏗᎦᏅᏛᏩᏂᎵᎯᏎᎸ'
+    - t: ᏚᏳᎪᏛ,
+    - t: ᎠᎴ
+    - t: ᎬᏩᏏᎯᏰᎸ
+      ocr: 'ᎬᏩᏂᎯᏰᎸ'
+      uncertain: {alt: ᎬᏩᏖᎯᏰᎸ, why: 'the third sign is Ꮟ (si) or Ꮦ (te), which the scan does not separate clearly'}
+    - t: ᏥᎩ,
+  - tokens:
+    - t: ᎧᏃᎮᏛ
+    - t: ᏚᎾᏠᎯᏍᏓᏅ,          # Ꮰ: Cherokee Nation word list ᎧᏃᎮᏛᏓᏠᎯᏍᏛ "Treaty"; NT Galatians 3:15 ᎧᏃᎮᏛ ᏚᎾᏠᎯᏍᏛ
+    - t: ᎯᎠ
+    - t: ᏄᏍᏗ;
+      ocr: 'ᏄᏍᏘ'
+  - tokens:
+    - t: ᎠᎴ
+    - t: ᎾᏍᎩᏉ
+      ocr: 'ᏮᏩᎩᏉ'
+    - t: ᏄᏍᏕᏍᏗ
+    - t: ᏂᎪᎯᎸ
+    - t: ᎤᏓᏁᏟᏴᏍᏗ
+      ocr: 'ᎤᏓᏁᎶᏴᏍᏗ'
+    - t: ᏂᎨᏒᎾ
+    - t: ᎨᏎᏍᏗ.
+  - tokens:
+    - t: ᏥᎦᏌ
+    - t: ᎤᏂᏚᏅᎢ
+    - t: ᏔᎾᏏ
+    - t: ᎤᏪᏴᎢ
+    - t: ᏗᏓᎴᏂᎭ,
+  - tokens:
+    - t: ᎾᏍᎩ
+    - t: ᎾᏉ
+      ocr: 'ᎧᏉ'
+    - t: ᎬᏓᎵᏱᎭ,
+      ocr: 'ᎬᏓᏢᏱᏑᎭ'
+    - t: ᏂᎦᏛ
+    - t: ᎠᎹᏰᎵ
+      ocr: 'ᎠᏑᏰᏢ'
+    - t: ᏚᏪᎦᎲ
+      ocr: 'ᎦᏪᎦᎲ'
+    - t: ᏣᎳᎩ
+    - t: ᏧᎾᏤᎵᎦ,
+      ocr: 'ᏧᎾᏤᏢᎦ'
+  - tokens:
+    - t: ᎠᏳᏩᏏ
+      ocr: 'ᎠᏅᏩᎩᏑᏏ'
+    - t: ᎤᏪᎪᏨ
+    - t: ᎢᏯᏍᏗ,
+      ocr: 'ᎢᏯᏍᏘ'
+  - tokens:
+    - t: ᎾᏉᏃ
+    - t: ᎾᏍᎩ
+    - t: ᎠᏳᏩᏏ
+    - t: ᎤᏪᏴ
+    - t: ᎠᏍᏓᏩᏕᎦ
+    - t: ᎠᏳᏩᏏ
+    - t: ᎤᎧᏔᏂᎸᎢᏯᏍᏗ,
+      ocr: 'ᎤᎶᏔᏂᎸᎢᏯᏍᏗ'
+  - tokens:
+    - t: ᏔᎵ
+      ocr: 'ᏔᏢ'
+    - t: ᎢᏳᏟᎶᏛ
+      ocr: 'ᎢᏳᏣᎶᏛ'
+    - t: ᏦᎩ
+    - t: ᎠᏳᏩᏏ
+    - t: ᎦᏚᏅᎢ,
+  - tokens:
+    - t: ᎠᎹᏰᎵ
+    - t: ᎠᎴ
+    - t: ᏚᏪᎧᎲ
+    - t: ᎾᏍᏉ
+    - t: ᏣᎳᎩ
+      ocr: 'ᏳᎳᎩ'
+    - t: ᏧᎾᏤᎵᎦ.
+      ocr: 'ᏧᏮᏤᎵᏢᎦ'
+  - tokens:
+    - t: ᎾᏉᏃ
+    - t: ᎤᏅᏓᏝᏗᏒ,
+      ocr: 'ᎤᏅᏖᏝᏗᏒ'
+    - t: ᎠᏳᏩᏏ
+      ocr: 'ᎠᏳᏩᏏᏂᏏ'
+    - t: ᏓᎵᏆᏃ
+      ocr: 'ᏓᎱᏆᏃ'
+    - t: ᏚᏪᏴ
+    - t: ᏥᏓᎦᎴᏅᏗᎭ,
+  - tokens:
+    - t: ᎠᏍᏓᏩᏕᎦ,
+    - t: ᏓᏔᏏ
+      ocr: 'ᎿᎳᏏ'
+    - t: ᏔᎾᏏ
+      ocr: 'ᏔᏮᏏ'
+    - t: ᎤᏪᏴ
+    - t: ᏩᎨᏏᏠᏥᎯᎭ.—
+      uncertain: {alt: ᏩᎨᏏᏌᏥᎯᎭ, why: 'the curled U-shaped sign is read Ꮰ (tlo), as Tesseract read it, where the hand reading had Ꮜ (sa), the plain U with a bar; the stem of ᏚᎾᏠᎯᏍᏓᏅ and ᏚᏠᏏᎸ, with this sign, is attested in the word lists and the 1860 New Testament, but this word was not found'}
+  - tokens:
+    - t: ᎾᏉ
+      ocr: 'ᏮᏉ'
+    - t: ᎠᎴ
+    - t: ᎾᏍᎩᏉ
+    - t: ᎢᎬᏓᎵᏱᎭ,
+      ocr: 'ᎢᎬᏓᏢᏱᎭ'
+    - t: ᎧᏫᏱ
+      ocr: 'ᎧᎶᏱ'
+    - t: ᏅᏓᏰᎵᏃ
+      ocr: 'ᏅᏓᏰᏢᏃ'
+    - t: ᏚᏠᏏᎸ          # Ꮰ: NT Matthew 8:34 ᏕᎬᏩᏠᏏᎴᎢ "came out to meet"
+      ocr: 'ᎦᏠᏏᎸ'
+    - t: ᎢᏯᏍᏗ;
+      ocr: 'ᎢᏯᏍᏗᎶ'
+  - tokens:
+    - t: ᎠᎹᏰᎵ
+      ocr: 'ᎠᎹᏰᏢ'
+    - t: ᎠᎴ
+    - t: ᏣᎳᎩ
+    - t: ᏧᎾᏤᎵᎦ.
+      ocr: 'ᎫᏮᏈᎨᎦ'
+  - tokens:
+    - t: ᎾᏉᏃ
+    - t: ᏚᎶᎦᎸ
+    - t: ᎤᏅᏓᏝᏗᏒ
+    - t: ᎠᏍᏓᏩᏕᎦ
+      ocr: 'ᎠᏍᏖᏩᏕᎦ'
+    - t: ᎤᏁᎬᏱ
+      ocr: 'ᎤᏁᎰᎬᏱ'
+    - t: ᎣᏓᎵ
+      ocr: 'ᎣᏓᏖᏢ'
+    - t: ᎦᏚᏏ
+    - t: ᎢᏯᏍᏗ.
+  - tokens:
+    - t: ᎾᏉᏃ
+    - t: ᎤᏁᎬᏱ
+    - t: ᎣᏓᎵ
+      ocr: 'ᎣᏓᏢ'
+    - t: ᎤᏅᏓᏝᏗᏒ
+    - t: ᎠᏍᏓᏩᏕᎦ
+      ocr: 'ᎠᏍᏖᏓᏩᏚᎦ'
+    - t: ᏩᎶᏏᏱ
+    - t: ᏅᏃᎯ
+    - t: ᏫᎦᎾᏄᎪᎦ.
+  - tokens:
+    - t: ᎾᏉᏃ
+    - t: ᏩᎶᏏᏱ
+    - t: ᎤᎨᏏᏠᏥᎸᎢ
+      ocr: 'ᎤᎨᏞᏠᏥᎸᎢ'
+      uncertain: {alt: ᎤᎨᏏᏌᏥᎸᎢ, why: 'the curled U-shaped sign is read Ꮰ (tlo), as Tesseract read it, where the hand reading had Ꮜ (sa), the plain U with a bar; the stem of ᏚᎾᏠᎯᏍᏓᏅ and ᏚᏠᏏᎸ, with this sign, is attested in the word lists and the 1860 New Testament, but this word was not found'}
+    - t: ᎢᎠᏓᎴᏂᎭ
+    - t: ᎠᏨᏍᏙᏗᏱ
+      ocr: 'ᎠᏨᏍᎪᏗᏑᏱ'
+    - t: ᏧᎵᏍᏗᏂᎸᎢ
+    - t: ᏫᎦᎾᏄᎪᎦ.
+      ocr: 'ᎾᎦᎾᏄᎪᎦ'
+  - tokens:
+    - t: ᎾᏉᏃ
+    - t: ᎾᏍᎩ
+      ocr: 'Ꮎ'
+    - t: ᏫᎬᏬᎣᏍᎦ
+      ocr: 'ᏆᎵᎵᏩᎦ'
+    - t: ᎠᎺᏉᎯ
+      ocr: 'ᎠᎶᏄᏜᎹᏉᏊᎯ'
+    - t: ᎤᏪᏴ
+    - t: ᏫᎦᎾᏄᎪᎦ;
+  - tokens:
+    - t: ᎠᎹᏰᎵᏃ
+      ocr: 'ᎠᎹᏰᎰᏃ'
+    - t: ᏣᎳᎩ
+    - t: ᏧᎾᏤᎵᎦ.
+      ocr: 'ᏧᎾᏤᏌᎦ'
+  - tokens:
+    - t: ᎾᏉ
+      ocr: 'ᏮᏉ'
+    - t: ᎠᎴ
+    - t: ᎾᏍᎩ
+      ocr: 'ᎾᏄᏍᎩ'
+    - t: ᏫᎬᏬᎣᏍᎦ
+      ocr: 'ᏫᎬᏬᎣᏜᏍᎦ'
+    - t: ᏑᎵ
+      ocr: 'ᏑᏢ'
+    - t: ᎤᎾᎭᏗᏍᏗᏱ,
+      ocr: 'ᏅᎾᎾᎭᏗᏍᏗᏱ'
+  - tokens:
+    - t: ᎠᏂᏣᎳᎩ
+      ocr: 'ᎠᏞᏣᎳᎩ'
+    - t: ᎠᏂᎫᏌᏃ
+    - t: ᎠᏟᎶᏛ
+      ocr: 'ᎠᏩᏳᎶᎰᏛ'
+    - t: ᏚᎾᏓᎯᏠᏛ
+      uncertain: {alt: ᏚᎾᏓᎯᏌᏛ, why: 'the curled U-shaped sign is read Ꮰ (tlo), as Tesseract read it, where the hand reading had Ꮜ (sa), the plain U with a bar; the stem of ᏚᎾᏠᎯᏍᏓᏅ and ᏚᏠᏏᎸ, with this sign, is attested in the word lists and the 1860 New Testament, but this word was not found'}
+    - t: ᎤᎨᏏᏠᏥᎸᎢ,
+      uncertain: {alt: ᎤᎨᏏᏌᏥᎸᎢ, why: 'the curled U-shaped sign is read Ꮰ (tlo), as Tesseract read it, where the hand reading had Ꮜ (sa), the plain U with a bar; the stem of ᏚᎾᏠᎯᏍᏓᏅ and ᏚᏠᏏᎸ, with this sign, is attested in the word lists and the 1860 New Testament, but this word was not found'}
+    - t: ᏫᎦᎾᏄᎪᎦ.
+  - tokens:
+    - t: ᎾᏉᏃ
+    - t: ᎾᏍᎩᏉ
+      ocr: 'ᎾᏩᎩᏉ'
+    - t: ᎠᏟᎶᏛ
+      ocr: 'ᎠᏣᎶᏛ'
+    - t: ᎬᎫᏛᎢ
+    - t: ᎠᏍᏓᏩᏕᎦ
+    - t: ᏫᎵ
+      ocr: 'ᏫᏢ'
+    - t: ᎤᏪᏴ
+    - t: ᎤᏪᎪᏥᎸᎢ
+      ocr: 'ᎤᏪᎪᏥᏁᎢ'
+    - t: ᏫᎦᎾᏄᎪᎦ.
+  - tokens:
+    - t: ᎾᏉᏃ
+      ocr: 'ᎾᏎᏉᏃ'
+    - t: ᎾᏍᎩ
+      ocr: 'ᎾᏱᎩ'
+    - t: ᎡᏉᏂ,
+      ocr: 'ᎡᏉᎩᎹᏂ'
+    - t: ᎠᏂᎫᏌ
+    - t: ᎤᎾᏤᎵᎪᎯᏗᏢ
+      ocr: 'ᎤᏮᏤᎵᎪᎯᏗᏢ'
+    - t: ᎤᏩᏝᎲ,
+      ocr: 'ᎤᏩᏝᏔᎲ'
+    - t: ᏫᎬᏬᎣᏍᎦ
+      ocr: 'ᏫᎬᏬᎲᎣᏍᎦ'
+    - t: ᎠᎹᏰᎳᏍᎪᎯᏱ
+      ocr: 'ᎠᎹᏰᎳᏱᎪᎯᏱ'
+    - t: ᎢᏯᏍᏗ.
+  - tokens:
+    - t: ᎾᏉᏃ
+      ocr: 'ᎧᏉᏃ'
+    - t: ᏗᎬᏓᎵᏱ
+      ocr: 'ᏗᎬᏓᏢᏱ'
+    - t: ᏐᎢᏱ
+    - t: ᎤᏩᏝᎲ
+    - t: ᏫᎵ
+      ocr: 'ᏫᏢ'
+    - t: ᎤᏪᏴ
+    - t: ᎤᏪᎪᏥᎸ
+    - t: ᏗᎦᎾᏄᎪᎦ.
+      ocr: 'ᏗᎦᏮᏄᎪᎦ'
+  - tokens:
+    - t: ᎾᏉᏃ
+    - t: ᎾᏍᎩ
+      ocr: 'ᏮᏩᎩ'
+    - t: ᏫᎵ
+      ocr: 'ᏫᏢ'
+    - t: ᎤᏪᏴ
+      ocr: 'ᎤᏪᎠ'
+    - t: ᎢᎬᏓᎵᏱ
+      ocr: 'ᎢᎬᏓᏢᏱ'
+    - t: ᎡᏍᎦ
+      ocr: 'ᎠᎭᎦ'
+    - t: ᎢᏗᏢ
+      ocr: 'ᎢᏘᏢ'
+    - t: ᎤᏩᏝᎲ
+      ocr: 'ᏨᏩᏝᎲ'
+    - t: ᏫᏚᎶᎦᎸ
+    - t: ᎢᏯᏍᏗ.
+      ocr: 'ᎢᏯᎣᏗ'
+  - tokens:
+    - t: ᎾᏉᏃ
+      ocr: 'ᎧᏉᏃ'
+    - t: ᏅᏙ
+      ocr: 'ᏅᎪ'
+    - t: ᏭᏕᎵᎬ
+      ocr: 'ᏚᎦᏢᎬ'
+    - t: ᎢᏗᏢ
+    - t: ᎤᏪᏯᏗᏍᏛ-
+      ocr: 'ᎤᏪᏯᏁᏍᏛ'
+    - t: ᏫᎬᏓᎵᏱ
+      ocr: 'ᏫᏚᏓᎬᏱ'
+    - t: ᏭᎵᏍᏛ
+      ocr: 'ᏚᏖᏢᏍᎵ'
+    - t: ᎢᏯᏍᏗ.
+  - tokens:
+    - t: ᎾᏉᏃ
+      ocr: 'ᎾᎸᏎᏉᏃ'
+    - t: ᎤᏅᏓᏢ
+      ocr: 'ᎤᏅᏖᏢ'
+    - t: ᏔᎾᏏ
+    - t: ᎦᎾᏫᎵᏃ
+      ocr: 'ᎦᎾᏭᏤᏃ'
+    - t: ᎦᎤᏪᏴ
+      ocr: 'ᎦᏅᏪᏓ'
+    - t: ᏥᏓᎦᎴᏅᏗ
+      ocr: 'ᎥᏏᎿᎦᎴᏅᏗ'
+    - t: ᎢᎠᏍᏓᏩᏕᎦ,
+      ocr: 'ᎢᎠᏍᏓᏩᏠᎶᎦ'
+    - t: ᏫᎦᎾᎷᏐᎲᏍᎬ
+      ocr: 'ᏫᎦᎴᎷᏐᎵᎲᏍᏓᎬ'
+    - t: ᎢᏯᏍᏗ.
+      ocr: 'ᎢᎲᏍᏳᏗ'
+  - tokens:
+    - t: ᎾᏉᏃ
+      ocr: 'ᏮᎾᏉᏃ'
+    - t: ᏧᏳᎪᏗ
+      ocr: 'ᏧᏣᎶᎪᏗ'
+    - t: ᏧᏴᏢ
+      ocr: 'ᎫᎠᏢ'
+    - t: ᎢᏗᏢ
+      ocr: 'ᏑᏁᏱᏓᏢ'
+    - t: ᏫᏗᎫᎪᏗ
+      ocr: 'ᏫᏗᎫᎪᏘ'
+    - t: ᎧᏫ
+      ocr: 'ᏛᎾ'
+    - t: ᎤᎡᎸ
+      ocr: 'ᎢᏃᎸ'
+    - t: ᏥᎦᏌ
+      ocr: 'ᎥᎦᏌ'
+    - t: ᎠᎹᏰᎵ
+      ocr: 'ᎠᎹᏰᏢ'
+    - t: ᎤᏪᎧᎲ
+      ocr: 'ᎤᏪᏪᎲ'
+    - t: ᏔᎾᏏ
+      ocr: 'ᏔᏭᏏ'
+    - t: ᎤᏪᏯᏗᏒ.
+      ocr: 'ᏅᏪᏪᎲᏁ'
+    - t: ᏫᎦᎾᏄᎪᎦ;
+      ocr: 'ᏎᎸᎾᏄᎦᏣᏄᎪᎦ'
+  - tokens:
+    - t: ᎾᏉᏃ
+      ocr: 'ᎧᏉᏃ'
+    - t: ᏗᎴᏂᏍᎬ
+      ocr: 'ᏗᎴᏂᏍᏩᎬ'
+    - t: ᏩᎨᏏᏠᏥᎯᎭ.
+      ocr: 'ᏩᎨᏢᏏᏠᎥᎵᏱᎭ'
+      uncertain: {alt: ᏩᎨᏏᏌᏥᎯᎭ, why: 'the curled U-shaped sign is read Ꮰ (tlo), as Tesseract read it, where the hand reading had Ꮜ (sa), the plain U with a bar; the stem of ᏚᎾᏠᎯᏍᏓᏅ and ᏚᏠᏏᎸ, with this sign, is attested in the word lists and the 1860 New Testament, but this word was not found'}
+- id: a1s2
+  title: 'Article I, Section 2: sovereignty, the common land, and the improvements of citizens'
+  lines:
+  - tokens:
+    - t: ᏣᎳᎩ
+    - t: ᎤᎾᏤᎵ
+      ocr: 'ᎤᏮᏤᎵ'
+    - t: ᎠᏰᎵ
+    - t: ᎨᏒ,
+    - t: ᎠᎴ
+    - t: ᎤᏂᏁᎢᏍᏗ
+    - t: ᎨᏒ,
+  - tokens:
+    - t: ᎾᏍᎩ
+    - t: ᎯᎠ
+    - t: ᎩᎳᏉ
+      ocr: 'ᎩᏙᏉ'
+      uncertain: {alt: ᎩᏔᏉ, why: 'the second sign is Ꮃ (la) or Ꮤ (ta): the W shows a stroke inside it that may be the mark of Ꮤ or a flaw in the type'}
+    - t: ᏥᎦᎼᏦᏣ
+      ocr: 'ᏥᏕᎣᏜᏦᏣ'
+    - t: ᎠᏟᎶᏛ
+      ocr: 'ᎠᏣᏟᏛ'
+    - t: ᎬᎫᏛ
+    - t: ᏩᏍᏓᏍᏗ,
+      ocr: 'ᏩᏍᎩᎸᎩᏍᏗ'
+  - tokens:
+    - t: ᎦᏓᏃ
+    - t: ᎾᏍᎩ
+      ocr: 'ᎾᏩᏳᎩ'
+    - t: ᎢᏯᏍᏗ,
+    - t: ᎠᏰᎵ
+      ocr: 'ᎠᎴᏢ'
+    - t: ᎤᎾᏤᎵ
+      ocr: 'ᎤᎧᏤᏢ'
+    - t: ᎨᏎᏍᏗ,
+  - tokens:
+    - t: ᎠᎴ
+    - t: ᎾᏂᎥᏉ
+      ocr: 'ᏮᏂᎥᏉ'
+    - t: ᎠᏂᏣᎳᎩ
+    - t: ᎤᎾᎦᏆᎶᏎᏍᏗ
+      ocr: 'ᎤᎾᏐᏆᎶᏎᏍᏗ'
+    - t: ᎤᎾᏤᎵ
+      ocr: 'ᎤᏮᏤᏢ'
+    - t: ᎨᏎᏍᏗ-
+  - tokens:
+    - t: ᏕᎦᎶᎨᏒ
+    - t: ᎤᏩᏒ
+    - t: ᎾᏂᎪ
+      ocr: 'ᎧᏲᎪ'
+    - t: ᏧᏂᎶᎨᏛ,
+      ocr: 'ᏧᏂᎶᎰᏛ'
+    - t: ᎾᎿ
+    - t: ᎠᎴ
+    - t: ᏚᏂᎸᏫᏍᏓᏁᎸ,
+    - t: ᏧᎾᏤᎵᎦᏯ
+      ocr: 'ᏧᎾᏤᏑᎦᏯ'
+    - t: ᎨᏎᏍᏗ,
+  - tokens:
+    - t: ᏝᏍᎩᏂᏃᏅ
+      ocr: 'ᏝᎣᎩᏂᏃᏅ'
+    - t: ᎯᎠ
+    - t: ᎡᏍᎦᏂ
+    - t: ᎠᏁᎯ
+    - t: ᏚᏂᎶᎨᏒ
+    - t: ᏧᎾᏤᎵᎦᏯ
+      ocr: 'ᏧᎾᏤᏢᎦᏯ'
+    - t: ᏥᏂᏙᏨᏂᏏ,
+      ocr: 'ᏥᏂᎪᏨᏂᏏ'
+  - tokens:
+    - t: ᎤᏂᎬᏫᏳᎯ
+    - t: ᏴᏫᏁᎬ,
+    - t: ᎠᎴ
+    - t: ᎾᏂᎥᏉ
+    - t: ᏴᏫᏁᎬ
+      ocr: 'ᏢᏴᏫᏁᎬ'
+    - t: ᏗᎬᏩᏂᏁᏗ
+    - t: ᏱᎨᏎᏍᏗ.
+  - tokens:
+    - t: ᎩᎶᏃ
+    - t: ᎡᏍᎦᏂ
+    - t: ᎡᎯ
+    - t: ᎠᎴ
+    - t: ᎠᏁᎯ
+    - t: ᎢᎠᏓᏅᏍᎨᏍᏗ
+    - t: ᎠᎴ
+    - t: ᎢᎠᎾᏓᏅᏍᎨᏍᏗ,
+      ocr: 'ᎢᎠᎾᏓᏅᏜᎨᏍᏗ'
+  - tokens:
+    - t: ᎠᏟᎶᏛ
+      ocr: 'ᎠᎶᎶᏛ'
+    - t: ᎬᎫᏛ
+    - t: ᎠᏓᏬᎯᎳᏗᏍᎨᏍᏗ
+      ocr: 'ᎠᏓᏬᎯᎸᏙᏗᏍᎨᏍᏗ'
+    - t: ᎠᎴ
+    - t: ᎠᎾᏓᏬᎯᎳᏗᏍᎨᏍᏗ,
+      ocr: 'ᎠᎾᏓᏬᎯᎳᏗᏍᎨᏍᏘ'
+  - tokens:
+    - t: ᎯᎸ
+    - t: ᎤᏣᏘᏂ
+    - t: ᏩᏂᎶᏍᎨᏍᏗ,
+      ocr: 'ᏩᎩᏂᏣᏍᎨᏍᏗ'
+  - tokens:
+    - t: ᎾᏍᏉᏍᎩᏂ
+      ocr: 'ᎾᏍᏉᏳᏩᎩᏂ'
+    - t: ᎡᏍᎦᏂ
+    - t: ᎤᎾᏤᎵ
+      ocr: 'ᎤᎧᏤᎵ'
+    - t: ᎤᏂᏰᎸᏒ
+    - t: ᎠᏂᎨᏍᏗ.
+      ocr: 'ᎠᏲᎰᏍᏗ'
+  - tokens:
+    - t: ᎠᏰᎵᏍᎩᏂᏃᏅ
+      ocr: 'ᎠᏰᏢᏍᎩᏂᏃᏅ'
+    - t: ᎬᏩᎵᏁᎢᏍᏗ
+      ocr: 'ᎬᏩᏢᏁᎢᏍᏗ'
+    - t: ᎢᎨᏎᏍᏗ
+    - t: ᎤᏂᎷᏥᎮᏗᏱ
+      ocr: 'ᎤᏂᎷᏥᎭᏐᏗᏱ'
+    - t: ᎩᎶ
+    - t: ᎾᏍᎩ
+    - t: ᏂᎦᏛᎦ
+      ocr: 'ᏂᎦ'
+    - t: ᎢᎡᎵᏍᎨᏍᏗ.
+  - tokens:
+    - t: ᏓᏂᎳᏫᎥᏗᎾ
+      ocr: 'ᏖᏂᎳᏫᎥᏗᎾ'
+    - t: ᎪᏪᎵ
+      ocr: 'ᎪᏪᏢ'
+    - t: ᎤᏅᏗ
+      ocr: 'ᎤᎤᏅᏗ'
+    - t: ᎤᏓᏙᎵᏍᏙᏗ
+      ocr: 'ᎤᏖᎪᎵᏍᎪᏗ'
+    - t: ᎨᏎᏍᏗ.
+  - tokens:
+    - t: ᎠᎴ
+    - t: ᎾᏍᏉ
+      ocr: 'ᎾᎸᏉ'
+    - t: ᏗᏂᎳᏫᎩ
+    - t: ᎬᏩᏂᏁᎢᏍᏗ
+    - t: ᎨᏎᏍᏗ
+    - t: ᎠᏰᎵ
+      ocr: 'ᎠᏰᏢ'
+    - t: ᏗᎧᎾᏩᏛᏍᏗ,
+  - tokens:
+    - t: ᏄᏍᏛ
+    - t: ᎠᎾᏓᏅᏖᏍᎬ,
+      ocr: 'ᎠᎾᏖᏅᏖᏍᎬ'
+    - t: ᎠᎴ
+    - t: ᏰᎵ
+    - t: ᎬᏩᏂᏍᏙᏗ
+      ocr: 'ᎬᏩᏂᏍᎪᏗ'
+    - t: ᏥᎨᏐ,
+      ocr: 'ᏥᎮᎢ'
+  - tokens:
+    - t: ᎢᏳᏃ
+      ocr: 'ᎢᏅᏃ'
+    - t: ᎡᏍᎦᏂ
+    - t: ᎠᏁᎯ
+    - t: ᏱᏓᎾᏤᎵᎵᏙᎭ
+      ocr: 'ᏱᏖᏓᎾᏤᎵᏢᎬᎪᏱ'
+    - t: ᏗᎦᎶᎨᏗᏍᏗᏱ,
+  - tokens:
+    - t: ᎠᎴ
+    - t: ᎤᏂᏃᏙᏗᏱᏉ,
+      ocr: 'ᎤᏂᏃᎪᏗᏱᎹ'
+    - t: ᏧᎬᏩᎶᏗᏉ
+      ocr: 'ᏧᎬᏩᎶᏁᏉ'
+    - t: ᎤᏂᏩᏛᏗ
+    - t: ᏳᏂᏰᎸ
+    - t: ᏱᏓᏂᎶᎨᏗᎭ.
+      ocr: 'ᏱᏓᏂᏣᎶᎰᏘᎭ'

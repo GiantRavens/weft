@@ -2,7 +2,8 @@
 
 A script without a usable text layer (Cherokee in the 1828 New Echota type, which archive.org's OCR reads as Latin)
 is transcribed by hand into the edition and read a second time by machine. The machine reading is a witness, not the
-text: it is written to gen/ocr/<page>.txt, and the edition names it in `ocr_check: {file}`. Where the print agrees with
+text: it is written to gen/ocr/<page>.txt, and the edition names it in `ocr_check: {file}` (or `{files: [...]}`, the
+pages in reading order, joined into one witness). Where the print agrees with
 the edition and not the witness, the token declares the OCR's reading as `ocr` (an empty string for a word the OCR
 dropped), each settled on the scan; the language module's line_checks call `witness_check`, which compares by letters
 only and refuses a line with an undeclared difference. The two readings make different kinds of error (a hand
@@ -99,11 +100,15 @@ def witness_check(etoks: list[dict], edition: dict, lang: str) -> list[tuple[str
     if not oc:
         return []
     from .paths import work_dir
-    p = work_dir(Path(__file__).resolve().parents[2], edition["work"]) / oc["file"]
+    wd = work_dir(Path(__file__).resolve().parents[2], edition["work"])
+    # one witness file, or several pages read in order and joined, so a word the print carries over a page still matches
+    files = oc.get("files") or [oc["file"]]
+    p = wd / "+".join(files)
     if str(p) not in _WITNESS:
-        if not p.exists():
-            return [("ocr-witness-missing", f"{oc['file']}: run weft ocr {edition['work']}")]
-        _WITNESS[str(p)] = letters(p.read_text(encoding="utf-8"), lang)
+        missing = [f for f in files if not (wd / f).exists()]
+        if missing:
+            return [("ocr-witness-missing", f"{', '.join(missing)}: run weft ocr {edition['work']}")]
+        _WITNESS[str(p)] = "".join(letters((wd / f).read_text(encoding="utf-8"), lang) for f in files)
     out = [("ocr-reading-unneeded", t["t"]) for t in etoks if t.get("ocr") is not None and letters(t["ocr"], lang) == letters(t["t"], lang)]
     want = letters("".join(t["ocr"] if t.get("ocr") is not None else t["t"] for t in etoks), lang)
     if want not in _WITNESS[str(p)]:

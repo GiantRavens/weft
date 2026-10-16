@@ -1,0 +1,322 @@
+# Human overlay for Article I of the Constitution of the Cherokee Nation (1827), Cherokee text of the 1828 printing.
+# No treebank covers Cherokee. Each word was annotated by hand against the references consulted through cherokeedictionary.net
+# and named under Sources below (Feeling's dictionary is in copyright: consulted, not reproduced). The English text printed beside the Cherokee is
+# the guide to sense, word by word where the two run together.
+#   lemma   the headword or form of the same word in the source the comment names; ? where none was found
+#   morph   Universal Dependencies features: the part of speech, and the person and number of the pronominal prefix
+#           where it is clear (ᎣᎩ-, ᎣᏥ-: first person plural exclusive, "we, not you"; ᏦᎩ-, ᏦᏥ- add to these the
+#           distributive prefix, as ᏦᎨᏥ, "our children", does); the -ᏗᏱ ending is the infinitive of purpose ("in order
+#           to"), and the Ꮝ before it in ᏍᏗᏱ belongs to the stem. The pronoun prefixes follow Montgomery-Anderson, A Reference Grammar of
+#           Oklahoma Cherokee (2008). Tone, length and aspect are not annotated: the syllabary does not write the first two.
+#   gloss   one English gloss per word; a gloss ending in ? was taken from the English text beside it, not from an
+#           analysis of the Cherokee word
+#   Sources for Article I. cherokeedictionary.net serves several word lists besides Feeling, and each citation names the
+#   one the entry came from: CED, Feeling's Cherokee-English Dictionary (1975); NOQ, the Noquisi word list; CWL, the
+#   Consortium Word List; RRD, the Raven Rock dictionary; CN, the Cherokee Nation word list; NT, the 1860 New Testament;
+#   "site sentences", the example sentences the site gives with its entries. Each is consulted, not reproduced.
+#   Names of places are given as the English beside them names them; where a gloss is followed by a source in brackets
+#   the word or its stem was found there; "not found" means neither the whole word nor a stem of it was found.
+- by: Claude (an AI model, Weft phase 0), word by word against the references above; for review by a Cherokee speaker and a linguist
+  date: 2026-10-13
+  why: no treebank for Cherokee; the words of a polysynthetic language need a speaker's review before the draft status is lifted
+  status: draft
+  set:
+    chcon.a1s1.1.1: {lemma: "ᎠᏟᎶᏛ", morph: "NOUN", gloss: "boundary?"}   # ᎠᏟᎶᏛ: [NT Luke 6:38, "measure"]; "boundary" from the English
+    chcon.a1s1.1.2: {lemma: "?", morph: "X", gloss: "?"}   # ᏥᏕᎬᎫᏗ: not found; the second sign is uncertain
+    chcon.a1s1.1.3: {lemma: "ᏣᎳᎩ", morph: "PROPN|Number=Plur", gloss: "Cherokees"}   # ᎠᏂᏣᎳᎩ: [site sentences]
+    chcon.a1s1.1.4: {lemma: "ᎤᎾᏤᎵᎪᎯ", morph: "NOUN", gloss: "their-country"}   # ᎤᎾᏤᎵᎪᎯ: [NT Matthew 8:34, "their coasts"]
+    chcon.a1s1.1.5: {lemma: "ᎦᏙᎯ", morph: "NOUN", gloss: "land"}   # ᎦᏙᎯ: [CED "on the ground"; NOQ "land, ground"]
+    chcon.a1s1.2.1: {lemma: "ᎤᎬᏫᏳᎯ", morph: "NOUN|Number=Plur", gloss: "chiefs"}   # ᎤᏂᎬᏫᏳᎯ: [NT "rulers"]
+    chcon.a1s1.2.2: {lemma: "?", morph: "VERB", gloss: "guaranteed-to-them?"}   # ᏗᎬᏩᏂᏂᎯᏎᎸ: not found; beside "solemnly guarantied"
+    chcon.a1s1.2.3: {lemma: "ᏚᏳᎪᏛ", morph: "ADV", gloss: "rightly"}   # ᏚᏳᎪᏛ: [site sentences, "truly"]
+    chcon.a1s1.2.4: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
+    chcon.a1s1.2.5: {lemma: "?", morph: "VERB", gloss: "reserved?"}   # ᎬᏩᏏᎯᏰᎸ: not found; beside "reserved"; the third sign is uncertain
+    chcon.a1s1.2.6: {lemma: "ᏥᎩ", morph: "AUX", gloss: "which-is"}   # ᏥᎩ: [NT]
+    chcon.a1s1.3.1: {lemma: "ᎧᏃᎮᏛ", morph: "NOUN", gloss: "word"}   # ᎧᏃᎮᏛ: with the next word, CN ᎧᏃᎮᏛᏓᏠᎯᏍᏛ "Treaty"
+    chcon.a1s1.3.2: {lemma: "ᏗᏠᎯᏍᏗ", morph: "VERB|Number=Plur|Person=3", gloss: "they-agreed-on"}   # ᏚᎾᏠᎯᏍᏓᏅ: [NOQ ᏗᏠᎯᏍᏗ "meet", CWL "conjunction"; NT Galatians 3:15 ᎧᏃᎮᏛ ᏚᎾᏠᎯᏍᏛ, "covenant", and Romans 1:31]; the word itself not found
+    chcon.a1s1.3.3: {lemma: "ᎯᎠ", morph: "DET|PronType=Dem", gloss: "this"}
+    chcon.a1s1.3.4: {lemma: "ᏄᏍᏗ", morph: "VERB", gloss: "is-so"}   # ᏄᏍᏗ: [NT John 15:17]
+    chcon.a1s1.4.1: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
+    chcon.a1s1.4.2: {lemma: "ᎾᏍᎩ", morph: "PRON|PronType=Dem", gloss: "that-same"}   # ᎾᏍᎩᏉ: [NT]
+    chcon.a1s1.4.3: {lemma: "ᏄᏍᏗ", morph: "VERB|Tense=Fut", gloss: "shall-be-so"}   # ᏄᏍᏕᏍᏗ: [NT Matthew 5:37]
+    chcon.a1s1.4.4: {lemma: "ᏂᎪᎯᎸ", morph: "ADV", gloss: "always"}   # ᏂᎪᎯᎸ: [site sentences]
+    chcon.a1s1.4.5: {lemma: "ᎤᏓᏁᏟᏴᏍᏗ", morph: "VERB|VerbForm=Inf", gloss: "to-be-changed"}   # ᎤᏓᏁᏟᏴᏍᏗ: [NT Titus 3:5, "renewing"]
+    chcon.a1s1.4.6: {lemma: "ᎨᏒ", morph: "AUX|Polarity=Neg|VerbForm=Vnoun", gloss: "not-being"}   # ᏂᎨᏒᎾ: [NT]
+    chcon.a1s1.4.7: {lemma: "ᎨᏒ", morph: "AUX|Tense=Fut", gloss: "shall-be"}   # ᎨᏎᏍᏗ: [NT]
+    chcon.a1s1.5.1: {lemma: "ᏥᎦᏌ", morph: "PROPN", gloss: "Chickasaw"}   # ᏥᎦᏌ: beside "Chickasaw"
+    chcon.a1s1.5.2: {lemma: "?", morph: "NOUN", gloss: "their-old-fields?"}   # ᎤᏂᏚᏅᎢ: not found; beside "old fields"
+    chcon.a1s1.5.3: {lemma: "ᏔᎾᏏ", morph: "PROPN", gloss: "Tennessee"}   # ᏔᎾᏏ: [RRD]
+    chcon.a1s1.5.4: {lemma: "ᎤᏪᏴᎢ", morph: "NOUN", gloss: "river"}   # ᎤᏪᏴᎢ: [CED "creek, river, stream"]
+    chcon.a1s1.5.5: {lemma: "ᎠᏓᎴᏂᎭ", morph: "VERB|Number=Sing|Person=3", gloss: "it-begins"}   # ᏗᏓᎴᏂᎭ: [CED "it's beginning"]
+    chcon.a1s1.6.1: {lemma: "ᎾᏍᎩ", morph: "PRON|PronType=Dem", gloss: "that"}
+    chcon.a1s1.6.2: {lemma: "ᎾᏉ", morph: "ADV", gloss: "then"}   # ᎾᏉ: [RRD "now; there"]
+    chcon.a1s1.6.3: {lemma: "?", morph: "X", gloss: "along?"}   # ᎬᏓᎵᏱᎭ: not found; beside "along"; the same stem as ᎢᎬᏓᎵᏱᎭ and ᏗᎬᏓᎵᏱ below
+    chcon.a1s1.6.4: {lemma: "ᏂᎦᏛ", morph: "PRON|PronType=Tot", gloss: "all"}   # ᏂᎦᏛ: [site sentences]
+    chcon.a1s1.6.5: {lemma: "ᎠᎹᏰᎵ", morph: "NOUN", gloss: "islands"}   # ᎠᎹᏰᎵ: [CWL ᎠᎹᏰᎵ ᏕᎨᏒ "island"; NT Acts 27:16]
+    chcon.a1s1.6.6: {lemma: "ᎤᏪᎧᎲ", morph: "VERB|Person=3", gloss: "lying-there"}   # ᏚᏪᎦᎲ: a distributive form of ᎤᏪᎧᎲ [NT Acts 27:16, ᎠᎹᏰᎵ ᎤᏪᎧᎲ]; printed with Ꭶ here, Ꭷ in line 10
+    chcon.a1s1.6.7: {lemma: "ᏣᎳᎩ", morph: "PROPN", gloss: "Cherokee"}
+    chcon.a1s1.6.8: {lemma: "ᎤᎾᏤᎵ", morph: "PRON|Number=Plur|Person=3|Poss=Yes", gloss: "theirs"}   # ᏧᎾᏤᎵᎦ: [NT]
+    chcon.a1s1.7.1: {lemma: "ᎠᏳᏩᏏ", morph: "PROPN", gloss: "Hiwassee"}   # ᎠᏳᏩᏏ: beside "Hiwassee"
+    chcon.a1s1.7.2: {lemma: "?", morph: "NOUN", gloss: "its-mouth?"}   # ᎤᏪᎪᏨ: not found; beside "the mouth"
+    chcon.a1s1.7.3: {lemma: "ᎢᏯᏍᏗ", morph: "ADP", gloss: "as-far-as"}   # ᎢᏯᏍᏗ: [NT Luke 16:16, "until"]
+    chcon.a1s1.8.1: {lemma: "ᎾᏉ", morph: "ADV", gloss: "and-then"}   # ᎾᏉᏃ: [NT]; -Ᏻ "and"
+    chcon.a1s1.8.2: {lemma: "ᎾᏍᎩ", morph: "PRON|PronType=Dem", gloss: "that"}
+    chcon.a1s1.8.3: {lemma: "ᎠᏳᏩᏏ", morph: "PROPN", gloss: "Hiwassee"}
+    chcon.a1s1.8.4: {lemma: "ᎤᏪᏴᎢ", morph: "NOUN", gloss: "river"}   # ᎤᏪᏴ: [CED]
+    chcon.a1s1.8.5: {lemma: "ᎠᏍᏓᏩᏕᎦ", morph: "VERB|Number=Sing|Person=3", gloss: "it-follows"}   # ᎠᏍᏓᏩᏕᎦ: [CED "he's following him, it"]
+    chcon.a1s1.8.6: {lemma: "ᎠᏳᏩᏏ", morph: "PROPN", gloss: "Hiwassee"}
+    chcon.a1s1.8.7: {lemma: "?", morph: "X", gloss: "to-where-it-closes-in?"}   # ᎤᎧᏔᏂᎸᎢᏯᏍᏗ: not found; printed as one word, ending in ᎢᏯᏍᏗ; beside "to the first hill which closes in"
+    chcon.a1s1.9.1: {lemma: "ᏔᎵ", morph: "NUM", gloss: "two"}   # ᏔᎵ: [CED]
+    chcon.a1s1.9.2: {lemma: "ᎢᏳᏟᎶᏛ", morph: "NOUN", gloss: "miles"}   # ᎢᏳᏟᎶᏛ: [NT Matthew 5:41, ᏔᎵ ᎢᏳᏟᎶᏛ "twain"]
+    chcon.a1s1.9.3: {lemma: "ᏦᎩ", morph: "ADV", gloss: "upstream"}   # ᏦᎩ: [CED "upstream"]; beside "above"
+    chcon.a1s1.9.4: {lemma: "ᎠᏳᏩᏏ", morph: "PROPN", gloss: "Hiwassee"}
+    chcon.a1s1.9.5: {lemma: "?", morph: "NOUN", gloss: "old-town?"}   # ᎦᏚᏅᎢ: not found; beside "old Town"
+    chcon.a1s1.10.1: {lemma: "ᎠᎹᏰᎵ", morph: "NOUN", gloss: "islands"}
+    chcon.a1s1.10.2: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
+    chcon.a1s1.10.3: {lemma: "ᎤᏪᎧᎲ", morph: "VERB|Person=3", gloss: "lying-there"}   # ᏚᏪᎧᎲ: a distributive form of ᎤᏪᎧᎲ [NT Acts 27:16]; the form itself not found
+    chcon.a1s1.10.4: {lemma: "ᎾᏍᏉ", morph: "ADV", gloss: "also"}   # ᎾᏍᏉ: [NT]
+    chcon.a1s1.10.5: {lemma: "ᏣᎳᎩ", morph: "PROPN", gloss: "Cherokee"}
+    chcon.a1s1.10.6: {lemma: "ᎤᎾᏤᎵ", morph: "PRON|Number=Plur|Person=3|Poss=Yes", gloss: "theirs"}
+    chcon.a1s1.11.1: {lemma: "ᎾᏉ", morph: "ADV", gloss: "and-then"}
+    chcon.a1s1.11.2: {lemma: "ᎤᏅᏓᏢ", morph: "NOUN", gloss: "ridge"}   # ᎤᏅᏓᏝᏗᏒ: [CWL ᎤᏅᏓᏢ "ridge"]; the longer form is not found
+    chcon.a1s1.11.3: {lemma: "ᎠᏳᏩᏏ", morph: "PROPN", gloss: "Hiwassee"}
+    chcon.a1s1.11.4: {lemma: "ᏓᎵᏆ", morph: "PROPN", gloss: "and-Tellico"}   # ᏓᎵᏆᏃ: [site sentences, ᏓᎵᏆ]; -Ᏻ "and"
+    chcon.a1s1.11.5: {lemma: "ᎤᏪᏴᎢ", morph: "NOUN|Number=Plur", gloss: "rivers"}   # ᏚᏪᏴ: [CED, NT]
+    chcon.a1s1.11.6: {lemma: "ᏗᎦᎴᏅᏗ", morph: "VERB", gloss: "which-separates"}   # ᏥᏓᎦᎴᏅᏗᎭ: [NOQ ᏗᎦᎴᏅᏗ "divorce", ᏧᎦᎴᏅᏓ "apart"]
+    chcon.a1s1.12.1: {lemma: "ᎠᏍᏓᏩᏕᎦ", morph: "VERB|Number=Sing|Person=3", gloss: "it-follows"}
+    chcon.a1s1.12.2: {lemma: "ᏓᏔᏏ", morph: "PROPN", gloss: "Tallassee"}   # ᏓᏔᏏ: beside "Tallassee"
+    chcon.a1s1.12.3: {lemma: "ᏔᎾᏏ", morph: "PROPN", gloss: "Tennessee"}
+    chcon.a1s1.12.4: {lemma: "ᎤᏪᏴᎢ", morph: "NOUN", gloss: "river"}
+    chcon.a1s1.12.5: {lemma: "?", morph: "VERB", gloss: "it-reaches-there?"}   # ᏩᎨᏏᏠᏥᎯᎭ: not found; Ꮻ- "toward"; the curled sign is uncertain
+    chcon.a1s1.13.1: {lemma: "ᎾᏉ", morph: "ADV", gloss: "then"}
+    chcon.a1s1.13.2: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
+    chcon.a1s1.13.3: {lemma: "ᎾᏍᎩ", morph: "PRON|PronType=Dem", gloss: "that-same"}
+    chcon.a1s1.13.4: {lemma: "?", morph: "X", gloss: "along?"}   # ᎢᎬᏓᎵᏱᎭ: not found; beside "along"
+    chcon.a1s1.13.5: {lemma: "ᎧᏫ", morph: "PROPN", gloss: "at-Cowee"}   # ᎧᏫᏱ: beside "Cowee"; -Ᏹ marks a place
+    chcon.a1s1.13.6: {lemma: "ᏅᏓᏰᎵ", morph: "PROPN", gloss: "and-Nanteyalee"}   # ᏅᏓᏰᎵᏃ: beside "Nanteyalee"; -Ᏻ "and"
+    chcon.a1s1.13.7: {lemma: "ᏗᏠᎯᏍᏗ", morph: "VERB|Number=Plur|Person=3", gloss: "where-they-meet"}   # ᏚᏠᏏᎸ: [NT Matthew 8:34 ᏕᎬᏩᏠᏏᎴᎢ "came out to meet"; Acts 28:15 ᏕᎪᎦᏠᏏᎸᎩ]; beside "the junction"
+    chcon.a1s1.13.8: {lemma: "ᎢᏯᏍᏗ", morph: "ADP", gloss: "as-far-as"}
+    chcon.a1s1.14.1: {lemma: "ᎠᎹᏰᎵ", morph: "NOUN", gloss: "islands"}
+    chcon.a1s1.14.2: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
+    chcon.a1s1.14.3: {lemma: "ᏣᎳᎩ", morph: "PROPN", gloss: "Cherokee"}
+    chcon.a1s1.14.4: {lemma: "ᎤᎾᏤᎵ", morph: "PRON|Number=Plur|Person=3|Poss=Yes", gloss: "theirs"}
+    chcon.a1s1.15.1: {lemma: "ᎾᏉ", morph: "ADV", gloss: "and-then"}
+    chcon.a1s1.15.2: {lemma: "?", morph: "NOUN", gloss: "fork?"}   # ᏚᎶᎦᎸ: not found; beside "the fork"
+    chcon.a1s1.15.3: {lemma: "ᎤᏅᏓᏢ", morph: "NOUN", gloss: "ridge"}
+    chcon.a1s1.15.4: {lemma: "ᎠᏍᏓᏩᏕᎦ", morph: "VERB|Number=Sing|Person=3", gloss: "it-follows"}
+    chcon.a1s1.15.5: {lemma: "ᎤᏁᎬ", morph: "ADJ", gloss: "white"}   # ᎤᏁᎬᏱ: [NOQ ᎤᏁᎬ "white"; CED has ᎤᏁᎦ "white"]; beside "blue ridge"; see the note
+    chcon.a1s1.15.6: {lemma: "ᎣᏓᎵ", morph: "NOUN", gloss: "mountain"}   # ᎣᏓᎵ: [NT Luke 1:39, "the hill country"]
+    chcon.a1s1.15.7: {lemma: "ᎦᏚᏏ", morph: "NOUN", gloss: "hill"}   # ᎦᏚᏏ: [CED "hill"]; beside "the top"
+    chcon.a1s1.15.8: {lemma: "ᎢᏯᏍᏗ", morph: "ADP", gloss: "as-far-as"}
+    chcon.a1s1.16.1: {lemma: "ᎾᏉ", morph: "ADV", gloss: "and-then"}
+    chcon.a1s1.16.2: {lemma: "ᎤᏁᎬ", morph: "ADJ", gloss: "white"}
+    chcon.a1s1.16.3: {lemma: "ᎣᏓᎵ", morph: "NOUN", gloss: "mountain"}
+    chcon.a1s1.16.4: {lemma: "ᎤᏅᏓᏢ", morph: "NOUN", gloss: "ridge"}
+    chcon.a1s1.16.5: {lemma: "ᎠᏍᏓᏩᏕᎦ", morph: "VERB|Number=Sing|Person=3", gloss: "it-follows"}
+    chcon.a1s1.16.6: {lemma: "ᏩᎶᏏ", morph: "PROPN", gloss: "Unicoy?"}   # ᏩᎶᏏᏱ: [CED ᏩᎶᏏ "frog"; RRD, CN "toad"]; -Ᏹ marks a place; beside "Unicoy"; see the note
+    chcon.a1s1.16.7: {lemma: "ᏅᏃᎯ", morph: "NOUN", gloss: "road"}   # ᏅᏃᎯ: [CED "road"]
+    chcon.a1s1.16.8: {lemma: "ᎦᎾᏄᎪᎦ", morph: "VERB|Number=Sing|Person=3", gloss: "it-comes-out-there"}   # ᏫᎦᎾᏄᎪᎦ: [NOQ ᎦᎾᏄᎪᎦ "appears"]; Ꮻ- "toward"
+    chcon.a1s1.17.1: {lemma: "ᎾᏉ", morph: "ADV", gloss: "and-then"}
+    chcon.a1s1.17.2: {lemma: "ᏩᎶᏏ", morph: "PROPN", gloss: "Unicoy?"}
+    chcon.a1s1.17.3: {lemma: "?", morph: "VERB", gloss: "where-it-meets?"}   # ᎤᎨᏏᏠᏥᎸᎢ: not found; the curled sign is uncertain
+    chcon.a1s1.17.4: {lemma: "ᎠᏓᎴᏂᎭ", morph: "VERB|Number=Sing|Person=3", gloss: "it-begins-there"}   # ᎢᎠᏓᎴᏂᎭ: [CED]
+    chcon.a1s1.17.5: {lemma: "ᎠᏨᏍᏙᏗ", morph: "NOUN", gloss: "straight-line?"}   # ᎠᏨᏍᏙᏗᏱ: [RRD, NOQ ᎠᏨᏍᏙᏗ "light, lamp, flare"]; beside "by a straight line"
+    chcon.a1s1.17.6: {lemma: "?", morph: "NOUN", gloss: "source?"}   # ᏧᎵᏍᏗᏂᎸᎢ: not found; beside "the main source of the Chestatee"
+    chcon.a1s1.17.7: {lemma: "ᎦᎾᏄᎪᎦ", morph: "VERB|Number=Sing|Person=3", gloss: "it-comes-out-there"}
+    chcon.a1s1.18.1: {lemma: "ᎾᏉ", morph: "ADV", gloss: "and-then"}
+    chcon.a1s1.18.2: {lemma: "ᎾᏍᎩ", morph: "PRON|PronType=Dem", gloss: "that"}
+    chcon.a1s1.18.3: {lemma: "?", morph: "VERB|Number=Sing|Person=3", gloss: "it-goes-down"}   # ᏫᎬᏬᎣᏍᎦ: [RRD ᎦᏍᏗᏬᎣᏍᎦ "the leaves are falling"]; the two signs ᏬᎣ are read by shape
+    chcon.a1s1.18.4: {lemma: "ᎠᎺᏉᎯ", morph: "NOUN", gloss: "sea"}   # ᎠᎺᏉᎯ: [NOQ "sea"; CED ᎠᎺᏉᎢ "ocean"; NT Acts 27:5]; beside "the Chattahoochy"; see the note
+    chcon.a1s1.18.5: {lemma: "ᎤᏪᏴᎢ", morph: "NOUN", gloss: "river"}
+    chcon.a1s1.18.6: {lemma: "ᎦᎾᏄᎪᎦ", morph: "VERB|Number=Sing|Person=3", gloss: "it-comes-out-there"}
+    chcon.a1s1.19.1: {lemma: "ᎠᎹᏰᎵ", morph: "NOUN", gloss: "and-islands"}   # ᎠᎹᏰᎵᏃ: -Ᏻ "and"
+    chcon.a1s1.19.2: {lemma: "ᏣᎳᎩ", morph: "PROPN", gloss: "Cherokee"}
+    chcon.a1s1.19.3: {lemma: "ᎤᎾᏤᎵ", morph: "PRON|Number=Plur|Person=3|Poss=Yes", gloss: "theirs"}
+    chcon.a1s1.20.1: {lemma: "ᎾᏉ", morph: "ADV", gloss: "then"}
+    chcon.a1s1.20.2: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
+    chcon.a1s1.20.3: {lemma: "ᎾᏍᎩ", morph: "PRON|PronType=Dem", gloss: "that"}
+    chcon.a1s1.20.4: {lemma: "?", morph: "VERB|Number=Sing|Person=3", gloss: "it-goes-down"}
+    chcon.a1s1.20.5: {lemma: "ᏑᎵ", morph: "NOUN", gloss: "buzzard"}   # ᏑᎵ: [CED "buzzard"]
+    chcon.a1s1.20.6: {lemma: "?", morph: "VERB|Number=Plur|Person=3", gloss: "where-they-roost?"}   # ᎤᎾᎭᏗᏍᏗᏱ: not found; beside "Roost"
+    chcon.a1s1.21.1: {lemma: "ᏣᎳᎩ", morph: "PROPN|Number=Plur", gloss: "Cherokees"}
+    chcon.a1s1.21.2: {lemma: "ᎠᏂᎫᏌ", morph: "PROPN|Number=Plur", gloss: "and-Creeks"}   # ᎠᏂᎫᏌᏃ: beside "Creek"; -Ᏻ "and"
+    chcon.a1s1.21.3: {lemma: "ᎠᏟᎶᏛ", morph: "NOUN", gloss: "boundary?"}
+    chcon.a1s1.21.4: {lemma: "?", morph: "VERB|Number=Plur|Person=3", gloss: "where-they-meet?"}   # ᏚᎾᏓᎯᏠᏛ: not found; the curled sign is uncertain
+    chcon.a1s1.21.5: {lemma: "?", morph: "VERB", gloss: "where-it-meets?"}
+    chcon.a1s1.21.6: {lemma: "ᎦᎾᏄᎪᎦ", morph: "VERB|Number=Sing|Person=3", gloss: "it-comes-out-there"}
+    chcon.a1s1.22.1: {lemma: "ᎾᏉ", morph: "ADV", gloss: "and-then"}
+    chcon.a1s1.22.2: {lemma: "ᎾᏍᎩ", morph: "PRON|PronType=Dem", gloss: "that-same"}
+    chcon.a1s1.22.3: {lemma: "ᎠᏟᎶᏛ", morph: "NOUN", gloss: "boundary?"}
+    chcon.a1s1.22.4: {lemma: "?", morph: "NOUN", gloss: "line?"}   # ᎬᎫᏛᎢ: not found; NOQ has ᎠᏟᎶᏛ ᎬᎪᏛ "border", with Ꭺ for this word's Ꭻ; beside "boundary line"
+    chcon.a1s1.22.5: {lemma: "ᎠᏍᏓᏩᏕᎦ", morph: "VERB|Number=Sing|Person=3", gloss: "it-follows"}
+    chcon.a1s1.22.6: {lemma: "ᏫᎵ", morph: "PROPN", gloss: "Wills"}   # ᏫᎵ: [NOQ ᏫᎵ "will"]; beside "Wills"
+    chcon.a1s1.22.7: {lemma: "ᎤᏪᏴᎢ", morph: "NOUN", gloss: "creek"}
+    chcon.a1s1.22.8: {lemma: "?", morph: "NOUN", gloss: "its-mouth?"}   # ᎤᏪᎪᏥᎸᎢ: not found; beside "the mouth"
+    chcon.a1s1.22.9: {lemma: "ᎦᎾᏄᎪᎦ", morph: "VERB|Number=Sing|Person=3", gloss: "it-comes-out-there"}
+    chcon.a1s1.23.1: {lemma: "ᎾᏉ", morph: "ADV", gloss: "and-then"}
+    chcon.a1s1.23.2: {lemma: "ᎾᏍᎩ", morph: "PRON|PronType=Dem", gloss: "that"}
+    chcon.a1s1.23.3: {lemma: "ᎡᏉᏂ", morph: "NOUN", gloss: "river"}   # ᎡᏉᏂ: [CED "sea"; RRD "river"]; beside "the same" (the Coosa)
+    chcon.a1s1.23.4: {lemma: "ᎠᏂᎫᏌ", morph: "PROPN|Number=Plur", gloss: "Creeks"}
+    chcon.a1s1.23.5: {lemma: "ᎤᎾᏤᎵᎪᎯ", morph: "NOUN", gloss: "their-country's-side"}   # ᎤᎾᏤᎵᎪᎯᏗᏢ: [NT]; with ᎢᏗᏢ "side"
+    chcon.a1s1.23.6: {lemma: "?", morph: "NOUN", gloss: "bank?"}   # ᎤᏩᏝᎲ: [CWL ᎤᏩᏝᎥᎢ "ridge", and ᎡᏉᏂ ᎤᏬᏝᎥ "river bank"]; beside "bank"
+    chcon.a1s1.23.7: {lemma: "?", morph: "VERB|Number=Sing|Person=3", gloss: "it-goes-down"}
+    chcon.a1s1.23.8: {lemma: "?", morph: "PROPN", gloss: "Fort-Strother?"}   # ᎠᎹᏰᎳᏍᎪᎯᏱ: not found; beside "Fort Strother"
+    chcon.a1s1.23.9: {lemma: "ᎢᏯᏍᏗ", morph: "ADP", gloss: "as-far-as"}
+    chcon.a1s1.24.1: {lemma: "ᎾᏉ", morph: "ADV", gloss: "and-then"}
+    chcon.a1s1.24.2: {lemma: "?", morph: "X", gloss: "along?"}   # ᏗᎬᏓᎵᏱ: not found
+    chcon.a1s1.24.3: {lemma: "ᏐᎢᏱ", morph: "ADV", gloss: "other-side"}   # ᏐᎢᏱ: [CED "in the next room"; NT Matthew 12:32]
+    chcon.a1s1.24.4: {lemma: "?", morph: "NOUN", gloss: "bank?"}
+    chcon.a1s1.24.5: {lemma: "ᏫᎵ", morph: "PROPN", gloss: "Wills"}
+    chcon.a1s1.24.6: {lemma: "ᎤᏪᏴᎢ", morph: "NOUN", gloss: "creek"}
+    chcon.a1s1.24.7: {lemma: "?", morph: "NOUN", gloss: "its-mouth?"}
+    chcon.a1s1.24.8: {lemma: "ᎦᎾᏄᎪᎦ", morph: "VERB|Number=Sing|Person=3", gloss: "it-comes-out"}
+    chcon.a1s1.25.1: {lemma: "ᎾᏉ", morph: "ADV", gloss: "and-then"}
+    chcon.a1s1.25.2: {lemma: "ᎾᏍᎩ", morph: "PRON|PronType=Dem", gloss: "that"}
+    chcon.a1s1.25.3: {lemma: "ᏫᎵ", morph: "PROPN", gloss: "Wills"}
+    chcon.a1s1.25.4: {lemma: "ᎤᏪᏴᎢ", morph: "NOUN", gloss: "creek"}
+    chcon.a1s1.25.5: {lemma: "?", morph: "X", gloss: "along?"}
+    chcon.a1s1.25.6: {lemma: "?", morph: "X", gloss: "east?"}   # ᎡᏍᎦ: not analysed; beside "East bank"
+    chcon.a1s1.25.7: {lemma: "ᎢᏗᏢ", morph: "NOUN", gloss: "side"}   # ᎢᏗᏢ: [NT]
+    chcon.a1s1.25.8: {lemma: "?", morph: "NOUN", gloss: "bank?"}
+    chcon.a1s1.25.9: {lemma: "?", morph: "NOUN", gloss: "to-the-fork?"}   # ᏫᏚᎶᎦᎸ: not found; Ꮻ- "toward"; beside "the West branch"
+    chcon.a1s1.25.10: {lemma: "ᎢᏯᏍᏗ", morph: "ADP", gloss: "as-far-as"}
+    chcon.a1s1.26.1: {lemma: "ᎾᏉ", morph: "ADV", gloss: "and-then"}
+    chcon.a1s1.26.2: {lemma: "ᏅᏙ", morph: "NOUN", gloss: "sun"}   # ᏅᏙ: [CED ᏅᏙᎯ "on the moon, sun"; NT Luke 12:54, ᏅᏙ ᏭᏕᎵᎬ]
+    chcon.a1s1.26.3: {lemma: "ᏭᏕᎵᎬᎢ", morph: "NOUN", gloss: "west"}   # ᏭᏕᎵᎬ: [CED ᏭᏕᎵᎬᎢ "west"; NT Luke 12:54, ᏅᏙ ᏭᏕᎵᎬ "the west"]
+    chcon.a1s1.26.4: {lemma: "ᎢᏗᏢ", morph: "NOUN", gloss: "side"}
+    chcon.a1s1.26.5: {lemma: "?", morph: "NOUN", gloss: "branch?"}   # ᎤᏪᏯᏗᏍᏛ: [NT Revelation 11:6, ᎠᎹᏱ ᏚᏪᏯᏗᏒ "waters"]; beside "branch"
+    chcon.a1s1.26.6: {lemma: "?", morph: "X", gloss: "along?"}
+    chcon.a1s1.26.7: {lemma: "ᎤᎵᏍᏛ", morph: "NOUN", gloss: "to-its-end"}   # ᏭᎵᏍᏛ: [NOQ ᎤᎵᏍᏛ "end"]; Ꮻ- "toward"; beside "its source"
+    chcon.a1s1.26.8: {lemma: "ᎢᏯᏍᏗ", morph: "ADP", gloss: "as-far-as"}
+    chcon.a1s1.27.1: {lemma: "ᎾᏉ", morph: "ADV", gloss: "and-then"}
+    chcon.a1s1.27.2: {lemma: "ᎤᏅᏓᏢ", morph: "NOUN", gloss: "ridge"}   # ᎤᏅᏓᏢ: [CWL]
+    chcon.a1s1.27.3: {lemma: "ᏔᎾᏏ", morph: "PROPN", gloss: "Tennessee"}
+    chcon.a1s1.27.4: {lemma: "?", morph: "PROPN", gloss: "and-Tombecbee?"}   # ᎦᎾᏫᎵᏃ: not found; beside "Tombecbee"; -Ᏻ "and"
+    chcon.a1s1.27.5: {lemma: "?", morph: "NOUN", gloss: "waters?"}   # ᎦᎤᏪᏴ: not found; beside "waters"
+    chcon.a1s1.27.6: {lemma: "ᏗᎦᎴᏅᏗ", morph: "VERB", gloss: "which-separates"}
+    chcon.a1s1.27.7: {lemma: "ᎠᏍᏓᏩᏕᎦ", morph: "VERB|Number=Sing|Person=3", gloss: "it-follows-there"}
+    chcon.a1s1.27.8: {lemma: "?", morph: "X", gloss: "top?"}   # ᏫᎦᎾᎷᏐᎲᏍᎬ: not found; beside "the top of said ridge"
+    chcon.a1s1.27.9: {lemma: "ᎢᏯᏍᏗ", morph: "ADP", gloss: "as-far-as"}
+    chcon.a1s1.28.1: {lemma: "ᎾᏉ", morph: "ADV", gloss: "and-then"}
+    chcon.a1s1.28.2: {lemma: "ᏧᏳᎪᏗ", morph: "ADV", gloss: "facing"}   # ᏧᏳᎪᏗ: [NT Mark 12:41 and 13:3, "over against"]; beside "due"
+    chcon.a1s1.28.3: {lemma: "ᏧᏴᏢ", morph: "NOUN", gloss: "north"}   # ᏧᏴᏢ: [site sentences]
+    chcon.a1s1.28.4: {lemma: "ᎢᏗᏢ", morph: "NOUN", gloss: "side"}
+    chcon.a1s1.28.5: {lemma: "?", morph: "X", gloss: "toward?"}   # ᏫᏗᎫᎪᏗ: not found
+    chcon.a1s1.28.6: {lemma: "ᎧᏫ", morph: "PROPN", gloss: "Coffee"}   # ᎧᏫ: [CED ᎧᏫ "coffee"]; beside "Camp Coffee"; see the note
+    chcon.a1s1.28.7: {lemma: "?", morph: "NOUN", gloss: "camp?"}   # ᎤᎡᎸ: not found; beside "Camp"
+    chcon.a1s1.28.8: {lemma: "ᏥᎦᏌ", morph: "PROPN", gloss: "Chickasaw"}
+    chcon.a1s1.28.9: {lemma: "ᎠᎹᏰᎵ", morph: "NOUN", gloss: "island"}
+    chcon.a1s1.28.10: {lemma: "ᎤᏪᎧᎲ", morph: "VERB|Number=Sing|Person=3", gloss: "lying-there"}   # ᎤᏪᎧᎲ: [NT Acts 27:16]
+    chcon.a1s1.28.11: {lemma: "ᏔᎾᏏ", morph: "PROPN", gloss: "Tennessee"}
+    chcon.a1s1.28.12: {lemma: "?", morph: "NOUN", gloss: "stream"}   # ᎤᏪᏯᏗᏒ: [NT Revelation 11:6, ᏚᏪᏯᏗᏒ "waters"]
+    chcon.a1s1.28.13: {lemma: "ᎦᎾᏄᎪᎦ", morph: "VERB|Number=Sing|Person=3", gloss: "it-comes-out-there"}
+    chcon.a1s1.29.1: {lemma: "ᎾᏉ", morph: "ADV", gloss: "and-then"}
+    chcon.a1s1.29.2: {lemma: "ᎠᏓᎴᏂᎭ", morph: "NOUN", gloss: "beginning"}   # ᏗᎴᏂᏍᎬ: the stem of ᎠᏓᎴᏂᎭ "it's beginning" [CED]; beside "the place of beginning"
+    chcon.a1s1.29.3: {lemma: "?", morph: "VERB", gloss: "it-reaches-there?"}
+    chcon.a1s2.1.1: {lemma: "ᏣᎳᎩ", morph: "PROPN", gloss: "Cherokee"}
+    chcon.a1s2.1.2: {lemma: "ᎤᎾᏤᎵ", morph: "PRON|Number=Plur|Person=3|Poss=Yes", gloss: "their-own"}
+    chcon.a1s2.1.3: {lemma: "ᎠᏰᎵ", morph: "NOUN", gloss: "nation"}   # ᎠᏰᎵ: [Wikipedia ᏣᎳᎩᎯ ᎠᏰᎵ "Cherokee Nation" (about.yaml)]
+    chcon.a1s2.1.4: {lemma: "ᎨᏒ", morph: "AUX|VerbForm=Vnoun", gloss: "being"}
+    chcon.a1s2.1.5: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
+    chcon.a1s2.1.6: {lemma: "ᎤᏂᏁᎢᏍᏗ", morph: "NOUN", gloss: "their-word"}   # ᎤᏂᏁᎢᏍᏗ: [NT Galatians 3:15, ᏴᏫ ᎤᏂᏁᎢᏍᏗ "after the manner of men"]; beside "Jurisdiction"
+    chcon.a1s2.1.7: {lemma: "ᎨᏒ", morph: "AUX|VerbForm=Vnoun", gloss: "being"}
+    chcon.a1s2.2.1: {lemma: "ᎾᏍᎩ", morph: "PRON|PronType=Dem", gloss: "that"}
+    chcon.a1s2.2.2: {lemma: "ᎯᎠ", morph: "DET|PronType=Dem", gloss: "this"}
+    chcon.a1s2.2.3: {lemma: "ᎩᎳᏉ", morph: "ADV", gloss: "just-now"}   # ᎩᎳᏉ: [NT, "straightway"]; beside "above"
+    chcon.a1s2.2.4: {lemma: "?", morph: "X", gloss: "?"}   # ᏥᎦᎼᏦᏣ: not found; the second sign of ᎩᎳᏉ is uncertain, not this word
+    chcon.a1s2.2.5: {lemma: "ᎠᏟᎶᏛ", morph: "NOUN", gloss: "boundary?"}
+    chcon.a1s2.2.6: {lemma: "?", morph: "NOUN", gloss: "line?"}
+    chcon.a1s2.2.7: {lemma: "?", morph: "VERB", gloss: "shall-reach?"}   # ᏩᏍᏓᏍᏗ: not found; beside "shall extend over"
+    chcon.a1s2.3.1: {lemma: "ᎦᏓ", morph: "NOUN", gloss: "and-the-land"}   # ᎦᏓᏃ: [site sentences ᎦᏓ]; -Ᏻ "and"
+    chcon.a1s2.3.2: {lemma: "ᎾᏍᎩ", morph: "PRON|PronType=Dem", gloss: "that"}
+    chcon.a1s2.3.3: {lemma: "ᎢᏯᏍᏗ", morph: "ADP", gloss: "as-far-as"}
+    chcon.a1s2.3.4: {lemma: "ᎠᏰᎵ", morph: "NOUN", gloss: "nation"}
+    chcon.a1s2.3.5: {lemma: "ᎤᎾᏤᎵ", morph: "PRON|Number=Plur|Person=3|Poss=Yes", gloss: "their-own"}
+    chcon.a1s2.3.6: {lemma: "ᎨᏒ", morph: "AUX|Tense=Fut", gloss: "shall-be"}
+    chcon.a1s2.4.1: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
+    chcon.a1s2.4.2: {lemma: "ᎾᏂᎥ", morph: "PRON|PronType=Tot", gloss: "all-of-them"}   # ᎾᏂᎥᏉ: [NT]
+    chcon.a1s2.4.3: {lemma: "ᏣᎳᎩ", morph: "PROPN|Number=Plur", gloss: "Cherokees"}
+    chcon.a1s2.4.4: {lemma: "?", morph: "VERB|Number=Plur|Person=3", gloss: "shall-share?"}   # ᎤᎾᎦᏆᎶᏎᏍᏗ: not found; beside "common property"
+    chcon.a1s2.4.5: {lemma: "ᎤᎾᏤᎵ", morph: "PRON|Number=Plur|Person=3|Poss=Yes", gloss: "their-own"}
+    chcon.a1s2.4.6: {lemma: "ᎨᏒ", morph: "AUX|Tense=Fut", gloss: "shall-be"}
+    chcon.a1s2.5.1: {lemma: "ᏕᎦᎶᎨᏒ", morph: "NOUN|Number=Plur", gloss: "fields"}   # ᏕᎦᎶᎨᏒ: [NOQ "farms, fields"; CWL "plantation"]; beside "improvements"; see the note
+    chcon.a1s2.5.2: {lemma: "ᎤᏩᏒ", morph: "PRON", gloss: "own"}   # ᎤᏩᏒ: [NT, "himself"]
+    chcon.a1s2.5.3: {lemma: "?", morph: "X", gloss: "?"}   # ᎾᏂᎪ: not found
+    chcon.a1s2.5.4: {lemma: "ᎦᎶᎨᏗᎠ", morph: "VERB|Number=Plur|Person=3", gloss: "which-they-cleared"}   # ᏧᏂᎶᎨᏛ: [RRD ᎦᎶᎨᏗᎠ "he is clearing a field"; CWL ᎦᎶᎨᏛ "clear cut"]
+    chcon.a1s2.5.5: {lemma: "ᎾᎿ", morph: "ADV", gloss: "there"}   # ᎾᎿ: [NT]
+    chcon.a1s2.5.6: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
+    chcon.a1s2.5.7: {lemma: "ᏚᏂᎸᏫᏍᏓᏁᎸ", morph: "NOUN", gloss: "their-works"}   # ᏚᏂᎸᏫᏍᏓᏁᎸ: [NOQ ᏚᏂᎸᏫᏍᏓᏁᎸ "improvements"; NT Luke 11:48, "the deeds (of your fathers)"]
+    chcon.a1s2.5.8: {lemma: "ᎤᎾᏤᎵᎦᏯ", morph: "PRON|Number=Plur|Person=3|Poss=Yes", gloss: "their-very-own"}   # ᏧᎾᏤᎵᎦᏯ: [NT]; beside "exclusive and indefeasible property"
+    chcon.a1s2.5.9: {lemma: "ᎨᏒ", morph: "AUX|Tense=Fut", gloss: "shall-be"}
+    chcon.a1s2.6.1: {lemma: "Ꮭ", morph: "PART|Polarity=Neg", gloss: "but-not"}   # ᏝᏍᎩᏂᏃᏅ: [NT Luke 18:4]; with ᏱᎨᏎᏍᏗ at the end of the clause
+    chcon.a1s2.6.2: {lemma: "ᎯᎠ", morph: "DET|PronType=Dem", gloss: "this"}
+    chcon.a1s2.6.3: {lemma: "?", morph: "X", gloss: "this-side?"}   # ᎡᏍᎦᏂ: not found as a headword; beside "of the Nation"
+    chcon.a1s2.6.4: {lemma: "ᎡᎯ", morph: "NOUN|Number=Plur", gloss: "dwellers"}   # ᎠᏁᎯ: [NT]
+    chcon.a1s2.6.5: {lemma: "ᏕᎦᎶᎨᏒ", morph: "NOUN|Number=Plur", gloss: "their-fields"}   # ᏚᏂᎶᎨᏒ: [NT Acts 2:45, "their possessions"]
+    chcon.a1s2.6.6: {lemma: "ᎤᎾᏤᎵᎦᏯ", morph: "PRON|Number=Plur|Person=3|Poss=Yes", gloss: "their-very-own"}
+    chcon.a1s2.6.7: {lemma: "?", morph: "VERB|Number=Plur|Person=3", gloss: "which-they-hold?"}   # ᏥᏂᏙᏨᏂᏏ: not found; beside "possessing"
+    chcon.a1s2.7.1: {lemma: "ᎤᎬᏫᏳᎯ", morph: "NOUN|Number=Plur", gloss: "chiefs"}
+    chcon.a1s2.7.2: {lemma: "?", morph: "NOUN", gloss: "white-people?"}   # ᏴᏫᏁᎬ: read as ᏴᏫ "person" and ᎤᏁᎬ "white"; beside "the United States"
+    chcon.a1s2.7.3: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
+    chcon.a1s2.7.4: {lemma: "ᎾᏂᎥ", morph: "PRON|PronType=Tot", gloss: "all-of-them"}
+    chcon.a1s2.7.5: {lemma: "?", morph: "NOUN", gloss: "white-people?"}   # ᏴᏫᏁᎬ: beside "individual citizens"
+    chcon.a1s2.7.6: {lemma: "?", morph: "VERB|VerbForm=Inf", gloss: "to-be-given-to"}   # ᏗᎬᏩᏂᏁᏗ: [NT ᎤᏂᏁᏗᏱ, "to give them"]
+    chcon.a1s2.7.7: {lemma: "ᎨᏒ", morph: "AUX|Tense=Fut", gloss: "shall-(not)-be"}   # ᏱᎨᏎᏍᏗ: [NT]; the Ᏹ- of a denied statement
+    chcon.a1s2.8.1: {lemma: "ᎩᎶ", morph: "PRON|PronType=Ind", gloss: "and-whoever"}   # ᎩᎶᏃ: [NT]
+    chcon.a1s2.8.2: {lemma: "?", morph: "X", gloss: "this-side?"}
+    chcon.a1s2.8.3: {lemma: "ᎡᎯ", morph: "NOUN", gloss: "dweller"}   # ᎡᎯ: [NT]
+    chcon.a1s2.8.4: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
+    chcon.a1s2.8.5: {lemma: "ᎡᎯ", morph: "NOUN|Number=Plur", gloss: "dwellers"}
+    chcon.a1s2.8.6: {lemma: "?", morph: "VERB|Tense=Fut", gloss: "shall-move-away?"}   # ᎢᎠᏓᏅᏍᎨᏍᏗ: not found; beside "shall remove"
+    chcon.a1s2.8.7: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
+    chcon.a1s2.8.8: {lemma: "?", morph: "VERB|Number=Plur|Person=3|Tense=Fut", gloss: "they-shall-move-away?"}
+    chcon.a1s2.9.1: {lemma: "ᎠᏟᎶᏛ", morph: "NOUN", gloss: "boundary?"}
+    chcon.a1s2.9.2: {lemma: "?", morph: "NOUN", gloss: "line?"}
+    chcon.a1s2.9.3: {lemma: "ᎠᏓᏬᎯᎳᏗᏍᏗ", morph: "VERB|Tense=Fut", gloss: "shall-cross-over"}   # ᎠᏓᏬᎯᎳᏗᏍᎨᏍᏗ: [NOQ ᎠᏓᏬᎯᎳᏗᏍᏗ "overstep"]
+    chcon.a1s2.9.4: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
+    chcon.a1s2.9.5: {lemma: "ᎠᏓᏬᎯᎳᏗᏍᏗ", morph: "VERB|Number=Plur|Person=3|Tense=Fut", gloss: "they-shall-cross-over"}
+    chcon.a1s2.10.1: {lemma: "?", morph: "X", gloss: "?"}   # ᎯᎸ: not analysed
+    chcon.a1s2.10.2: {lemma: "?", morph: "X", gloss: "other?"}   # ᎤᏣᏘᏂ: [NT ᎤᏣᏘᏂ "wrong", Matthew 20:13, which does not fit]; beside "any other Government"
+    chcon.a1s2.10.3: {lemma: "?", morph: "VERB|Number=Plur|Person=3|Tense=Fut", gloss: "they-shall-pass-there"}   # ᏩᏂᎶᏍᎨᏍᏗ: [NOQ ᏓᏂᎶᏍᎬᎢ "passes"]; Ꮻ- "toward"
+    chcon.a1s2.11.1: {lemma: "ᎾᏍᏉ", morph: "ADV", gloss: "but-then"}   # ᎾᏍᏉᏍᎩᏂ: [NT Matthew 10:30]
+    chcon.a1s2.11.2: {lemma: "?", morph: "X", gloss: "this-side?"}
+    chcon.a1s2.11.3: {lemma: "ᎤᎾᏤᎵ", morph: "PRON|Number=Plur|Person=3|Poss=Yes", gloss: "their-own"}
+    chcon.a1s2.11.4: {lemma: "?", morph: "NOUN", gloss: "their-rights?"}   # ᎤᏂᏰᎸᏒ: [NT Luke 22:45, ᎤᏲ ᎤᏂᏰᎸᏒ "for sorrow"]; beside "rights and privileges"
+    chcon.a1s2.11.5: {lemma: "?", morph: "VERB|Tense=Fut", gloss: "shall-cease?"}   # ᎠᏂᎨᏍᏗ: not found; beside "shall cease"
+    chcon.a1s2.12.1: {lemma: "ᎠᏰᎵ", morph: "NOUN", gloss: "but-the-nation"}   # ᎠᏰᎵᏍᎩᏂᏃᏅ: -ᏍᎩᏂᏃᏅ "but"; beside "the Legislature"
+    chcon.a1s2.12.2: {lemma: "?", morph: "NOUN", gloss: "its-say?"}   # ᎬᏩᎵᏁᎢᏍᏗ: the stem of ᎤᏂᏁᎢᏍᏗ; beside "shall have power"
+    chcon.a1s2.12.3: {lemma: "ᎨᏒ", morph: "AUX|Tense=Fut", gloss: "shall-be"}   # ᎢᎨᏎᏍᏗ: [NT]
+    chcon.a1s2.12.4: {lemma: "?", morph: "VERB|VerbForm=Inf", gloss: "for-them-to-return?"}   # ᎤᏂᎷᏥᎮᏗᏱ: not found; beside "to re-admit"
+    chcon.a1s2.12.5: {lemma: "ᎩᎶ", morph: "PRON|PronType=Ind", gloss: "whoever"}
+    chcon.a1s2.12.6: {lemma: "ᎾᏍᎩ", morph: "PRON|PronType=Dem", gloss: "that"}
+    chcon.a1s2.12.7: {lemma: "?", morph: "X", gloss: "so?"}   # ᏂᎦᏛᎦ: [NT Luke 14:22, "it is done as thou hast commanded"]
+    chcon.a1s2.12.8: {lemma: "?", morph: "VERB|Tense=Fut", gloss: "shall-think"}   # ᎢᎡᎵᏍᎨᏍᏗ: [NT 1 Corinthians 14:37, "if any man think himself"]; beside "desire"
+    chcon.a1s2.13.1: {lemma: "ᏓᏂᎳᏫᎥ", morph: "NOUN", gloss: "to-the-council"}   # ᏓᏂᎳᏫᎥᏗᎾ: [NOQ ᏓᏂᎳᏫᎥ "assembly, session"]; beside "the General Council"
+    chcon.a1s2.13.2: {lemma: "ᎪᏪᎵ", morph: "NOUN", gloss: "paper"}   # ᎪᏪᎵ: [CED]
+    chcon.a1s2.13.3: {lemma: "?", morph: "X", gloss: "?"}   # ᎤᏅᏗ: Feeling's ᎤᏅᏗ is "milk", which does not fit
+    chcon.a1s2.13.4: {lemma: "ᎤᏓᏙᎵᏍᏙᏗ", morph: "NOUN", gloss: "means-of-asking"}   # ᎤᏓᏙᎵᏍᏙᏗ: [NOQ ᎥᏓᏙᎵᏍᏙᏗ "prayer"; NT]; beside "memorializing"
+    chcon.a1s2.13.5: {lemma: "ᎨᏒ", morph: "AUX|Tense=Fut", gloss: "shall-be"}
+    chcon.a1s2.14.1: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
+    chcon.a1s2.14.2: {lemma: "ᎾᏍᏉ", morph: "ADV", gloss: "also"}
+    chcon.a1s2.14.3: {lemma: "ᏗᏂᎳᏫᎩ", morph: "NOUN", gloss: "council"}   # ᏗᏂᎳᏫᎩ: [site sentences]; beside "the Legislature"
+    chcon.a1s2.14.4: {lemma: "ᎧᏁᎦ", morph: "VERB|VerbForm=Inf", gloss: "for-them-to-declare"}   # ᎬᏩᏂᏁᎢᏍᏗ: [NT Acts 2:4]
+    chcon.a1s2.14.5: {lemma: "ᎨᏒ", morph: "AUX|Tense=Fut", gloss: "shall-be"}
+    chcon.a1s2.14.6: {lemma: "ᎠᏰᎵ", morph: "NOUN", gloss: "nation"}
+    chcon.a1s2.14.7: {lemma: "ᏗᎧᎾᏩᏛᏍᏗ", morph: "NOUN|Number=Plur", gloss: "laws"}   # ᏗᎧᎾᏩᏛᏍᏗ: [NT "the law"]
+    chcon.a1s2.15.1: {lemma: "ᏄᏍᏛ", morph: "ADV", gloss: "as"}   # ᏄᏍᏛ: [NT]
+    chcon.a1s2.15.2: {lemma: "ᎠᎾᏓᏅᏖᏍᎬ", morph: "VERB|Number=Plur|Person=3", gloss: "they-think"}   # ᎠᎾᏓᏅᏖᏍᎬ: [CN "thinking"]; beside "as its wisdom may deem"
+    chcon.a1s2.15.3: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
+    chcon.a1s2.15.4: {lemma: "ᏰᎵ", morph: "ADV", gloss: "able"}   # ᏰᎵ: [NT]
+    chcon.a1s2.15.5: {lemma: "?", morph: "NOUN", gloss: "means-for-them?"}   # ᎬᏩᏂᏍᏙᏗ: not found; beside "proper"
+    chcon.a1s2.15.6: {lemma: "ᎨᏒ", morph: "AUX", gloss: "which-is"}   # ᏥᎨᏐ: [NT]
+    chcon.a1s2.16.1: {lemma: "ᎢᏳᏃ", morph: "SCONJ", gloss: "if"}   # ᎢᏳᏃ: [NT]
+    chcon.a1s2.16.2: {lemma: "?", morph: "X", gloss: "this-side?"}
+    chcon.a1s2.16.3: {lemma: "ᎡᎯ", morph: "NOUN|Number=Plur", gloss: "dwellers"}
+    chcon.a1s2.16.4: {lemma: "?", morph: "VERB|Number=Plur|Person=3", gloss: "if-they-take-as-their-own?"}   # ᏱᏓᎾᏤᎵᎵᏙᎭ: not found; the stem of ᎤᎾᏤᎵ; beside "monopolizing"
+    chcon.a1s2.16.5: {lemma: "ᎦᎶᎨᏗᎠ", morph: "VERB|VerbForm=Inf", gloss: "to-clear-fields"}   # ᏗᎦᎶᎨᏗᏍᏗᏱ: [NOQ ᎦᎶᎨᏗᏍᏗ "grub"]; beside "improvements"
+    chcon.a1s2.17.1: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
+    chcon.a1s2.17.2: {lemma: "?", morph: "VERB|VerbForm=Inf", gloss: "?"}   # ᎤᏂᏃᏙᏗᏱᏉ: not found
+    chcon.a1s2.17.3: {lemma: "ᏧᎬᏩᎶᏗ", morph: "NOUN", gloss: "goods"}   # ᏧᎬᏩᎶᏗᏉ: [CED "price, wealth"; NT Acts 2:45 "goods"]
+    chcon.a1s2.17.4: {lemma: "ᎠᏩᏛᏗ", morph: "VERB|VerbForm=Inf", gloss: "for-them-to-get"}   # ᎤᏂᏩᏛᏗ: [NOQ ᎠᏩᏛᏗ "find"; NT Matthew 19:29, "shall receive"]; beside "with the view of speculation"
+    chcon.a1s2.17.5: {lemma: "?", morph: "VERB|Number=Plur|Person=3", gloss: "if-they-want?"}   # ᏳᏂᏰᎸ: not found; Ᏻ- "if"
+    chcon.a1s2.17.6: {lemma: "ᎦᎶᎨᏗᎠ", morph: "VERB|Number=Plur|Person=3", gloss: "if-they-clear-fields"}   # ᏱᏓᏂᎶᎨᏗᎭ: [RRD]; Ᏹ- "if"

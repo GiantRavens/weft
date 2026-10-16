@@ -1,0 +1,13 @@
+page: p3b
+src: 'weft.ocr 0.1: tesseract 5.5.0, model chr sha256 b3a0da90e7744cfec534cdf2dd85860718f32b5595a07d4b7e49113a89bd0f98'
+scan:
+  id: scan-p3
+  sha256: b5da244b209c08af315b22fcc84a14c609fa0d48a133f9613f54f2ee892a1e4b
+crop:
+- 832
+- 2230
+- 670
+- 300
+threshold: 60
+psm: 6
+note: 'a machine witness, not the text: the edition is the settled reading'

@@ -1,11 +1,13 @@
 work: cherokee-constitution-1827
-title: 'Constitution of the Cherokee Nation (1827): the preamble, in Cherokee'
+title: 'Constitution of the Cherokee Nation (1827): the preamble and Article I, in Cherokee'
 short_title: Cherokee Constitution (1827)
 author: The convention of delegates from the districts of the Cherokee Nation, New Echota, July 1827
 language: chr
 lang_name: Cherokee of the New Echota press, 1828
 kind: law
-wikipedia: {title: "Cherokee Nation (1794–1907)", match: parent}
+wikipedia:
+  title: Cherokee Nation (1794–1907)
+  match: parent
 prefix: chcon
 urn: urn:weft:chr:cherokee-nation.constitution.1827
 unit: section
@@ -13,19 +15,21 @@ section_noun: section
 written:
   year: 1827
   display: '1827'
-  label: formed by a convention of delegates from the districts of the Cherokee Nation at New Echota in July 1827, ratified in
-    October 1827, in force from October 1828; printed in English and Cherokee at New Echota in 1828, the year the press there
-    began the Cherokee Phoenix
+  label: formed by a convention of delegates from the districts of the Cherokee Nation at New Echota in July 1827, ratified in October
+    1827, in force from October 1828; printed in English and Cherokee at New Echota in 1828, the year the press there began the Cherokee
+    Phoenix
 status: phase-0
 pilot:
   sections:
   - pre
+  - a1s1
+  - a1s2
 edition:
   id: weft-scan
-  name: 'Constitution of the Cherokee Nation, formed by a convention of delegates from the several districts, at New Echota, July
-    1827 (New Echota, 1828), the bilingual printing; the Newberry Library copy, VAULT Ayer 251 .C211 1828, from the archive.org
-    scan (sources_extra scan-p1); the Cherokee transcribed by Weft from the scan, by hand and by Tesseract, and settled sign by
-    sign on the scan'
+  name: Constitution of the Cherokee Nation, formed by a convention of delegates from the several districts, at New Echota, July 1827
+    (New Echota, 1828), the bilingual printing; the Newberry Library copy, VAULT Ayer 251 .C211 1828, from the archive.org scans (sources_extra
+    scan-p1 to scan-p4); the Cherokee transcribed by Weft from the scans, by hand and by Tesseract, and settled sign by sign on the
+    scans
   format: weft-edition
   file: edition.yaml
   license: text public domain (1828); Weft transcription and line division CC BY-SA 4.0
@@ -45,6 +49,38 @@ sources_extra:
   sha256: ce043366efea7a97e549d444af9edf3a665294927768bc02735e2faa65721956
   license: 'text public domain (1828); scan: the Newberry makes its collections available for any lawful purpose'
   license_url: https://www.newberry.org/policies
+- id: scan-p2
+  name: Constitution of the Cherokee Nation (New Echota, 1828), page 2, Article I in English and Cherokee; Newberry Library, VAULT Ayer
+    251 .C211 1828, scanned for archive.org (image 00008_o2_left)
+  file: sources/scan-p2.jpg
+  url: https://archive.org/download/Ayer_251_C211_1828/Ayer_251_C211_1828_images.zip/Ayer_251_C211_1828_images%2FAyer_251_C211_1828_00008_o2_left.jpg
+  sha256: 7afc24a856931ec3523be683d5ebf2a95db351b413701e2319a9edf00ad16ddd
+  license: 'text public domain (1828); scan: the Newberry makes its collections available for any lawful purpose'
+  license_url: https://www.newberry.org/policies
+- id: scan-p3
+  name: Constitution of the Cherokee Nation (New Echota, 1828), page 3, Article I in English and Cherokee; Newberry Library, VAULT Ayer
+    251 .C211 1828, scanned for archive.org (image 00008_o2_right)
+  file: sources/scan-p3.jpg
+  url: https://archive.org/download/Ayer_251_C211_1828/Ayer_251_C211_1828_images.zip/Ayer_251_C211_1828_images%2FAyer_251_C211_1828_00008_o2_right.jpg
+  sha256: b5da244b209c08af315b22fcc84a14c609fa0d48a133f9613f54f2ee892a1e4b
+  license: 'text public domain (1828); scan: the Newberry makes its collections available for any lawful purpose'
+  license_url: https://www.newberry.org/policies
+- id: scan-p4
+  name: Constitution of the Cherokee Nation (New Echota, 1828), page 4, Article I in English and Cherokee; Newberry Library, VAULT Ayer
+    251 .C211 1828, scanned for archive.org (image 00009_o2_left)
+  file: sources/scan-p4.jpg
+  url: https://archive.org/download/Ayer_251_C211_1828/Ayer_251_C211_1828_images.zip/Ayer_251_C211_1828_images%2FAyer_251_C211_1828_00009_o2_left.jpg
+  sha256: 76203ae05e9d52aa13e669a5135d6657528659c81ba772b745a98666ab24408e
+  license: 'text public domain (1828); scan: the Newberry makes its collections available for any lawful purpose'
+  license_url: https://www.newberry.org/policies
+- id: scan-p5
+  name: Constitution of the Cherokee Nation (New Echota, 1828), page 5, the end of Article I in English; Newberry Library, VAULT Ayer
+    251 .C211 1828, scanned for archive.org (image 00009_o2_right)
+  file: sources/scan-p5.jpg
+  url: https://archive.org/download/Ayer_251_C211_1828/Ayer_251_C211_1828_images.zip/Ayer_251_C211_1828_images%2FAyer_251_C211_1828_00009_o2_right.jpg
+  sha256: 863605b8e33e47c9c97e28193978f177a6016e706953b7de0eae0068a4e8b64c
+  license: 'text public domain (1828); scan: the Newberry makes its collections available for any lawful purpose'
+  license_url: https://www.newberry.org/policies
 ocr:
   model:
     lang: chr
@@ -54,17 +90,64 @@ ocr:
   pages:
   - id: p1
     source: scan-p1
-    crop: [815, 1500, 950, 1180]
+    crop:
+    - 815
+    - 1500
+    - 950
+    - 1180
     threshold: 60
     psm: 6
-    sections: [pre]
+    sections:
+    - pre
+  - id: p2
+    source: scan-p2
+    crop:
+    - 972
+    - 700
+    - 823
+    - 1880
+    threshold: 60
+    psm: 6
+    sections:
+    - a1s1
+  - id: p3a
+    source: scan-p3
+    crop:
+    - 832
+    - 325
+    - 670
+    - 860
+    threshold: 60
+    psm: 6
+    sections: []
+  - id: p3b
+    source: scan-p3
+    crop:
+    - 832
+    - 2230
+    - 670
+    - 300
+    threshold: 60
+    psm: 6
+    sections:
+    - a1s2
+  - id: p4
+    source: scan-p4
+    crop:
+    - 965
+    - 335
+    - 670
+    - 1365
+    threshold: 60
+    psm: 6
+    sections: []
 translations:
 - id: en1828
   translator: the convention's English original
   year: 1828
-  form: 'the English preamble printed beside the Cherokee in the same edition (pages 1 and 3), read from the scan; the archive.org
-    OCR of the English column is pinned as the file, and its misreadings (se* cure, sovereign'', oid, in-its) are corrected
-    against the scan'
+  form: the English printed beside the Cherokee in the same edition (the preamble on pages 1 and 2, Article I on pages 2 to 5), read
+    from the scans; the archive.org OCR of the English column is pinned as the file, and its misreadings (se* cure, sovereign'', oid,
+    in-its, Hi- was6ee, Cliattahoochy, l ights) are corrected against the scans
   license: public-domain
   license_url: https://archive.org/details/Ayer_251_C211_1828
   file: sources/ia-ocr.txt
@@ -76,32 +159,38 @@ stewardship:
   transcription:
     by: Weft (Claude, for Skip Levens)
     relation: outsider
-    method: read from the scan by hand and by Tesseract OCR, each difference settled on the scan, and words in doubt looked
-      for in the Cherokee New Testament of 1860 and the dictionaries at cherokeedictionary.net; lemma, morphology and gloss
-      written by Claude, an AI model, against those references, and held as a draft until a fluent Cherokee speaker has
-      reviewed them, as the Cherokee Nation's policy asks of its own work with the language
+    method: read from the scan by hand and by Tesseract OCR, each difference settled on the scan, and words in doubt looked for in the
+      Cherokee New Testament of 1860 and the dictionaries at cherokeedictionary.net; lemma, morphology and gloss written by Claude,
+      an AI model, against those references, and held as a draft until a fluent Cherokee speaker has reviewed them, as the Cherokee
+      Nation's policy asks of its own work with the language
   translations:
     en1828:
       relation: community
   position:
     source: https://tribalbusinessnews.com/sections/arts-and-culture/15270-cherokee-nation-enacts-ai-policy-to-balance-innovation-with-cultural-protection
-    summary: 'The Cherokee Nation''s policy on artificial intelligence, signed by Principal Chief Chuck Hoskin Jr. on 21 August
-      2025, governs the Nation''s own government and businesses; as reported, it "requires Cherokee language fluent speakers to
-      provide input on any Cherokee language applications". No position on outside publication of historical Cherokee texts was
-      found on the Cherokee Nation Language Department''s site (language.cherokee.org), or for the Eastern Band (ebci.gov, the
-      Kituwah Preservation and Education Program at ebcikpep.com) or the United Keetoowah Band (keetoowahcherokee.org), searched
-      13 October 2026.'
+    summary: The Cherokee Nation's policy on artificial intelligence, signed by Principal Chief Chuck Hoskin Jr. on 21 August 2025,
+      governs the Nation's own government and businesses; as reported, it "requires Cherokee language fluent speakers to provide input
+      on any Cherokee language applications". No position on outside publication of historical Cherokee texts was found on the Cherokee
+      Nation Language Department's site (language.cherokee.org), or for the Eastern Band (ebci.gov, the Kituwah Preservation and Education
+      Program at ebcikpep.com) or the United Keetoowah Band (keetoowahcherokee.org), searched 13 October 2026.
 predicted_gaps:
-- 'the preamble only; the six articles, and the Cherokee lines of the title page, are not yet transcribed'
-- 'the transcription rests on a scan of about 180 pixels to the inch; two signs are left uncertain on the page (Ꮒ or Ᏺ in
-  ᎢᏂᎦᎵᏍᏓᏁᏗ, Ꮣ or Ꮦ in ᎣᏥᏁᎢᏍᏓ), and four readings rest on words found in the 1860 New Testament or Feeling''s dictionary as well as on the scan (named in
-  edition.yaml); punctuation is checked by eye, since the OCR comparison is by letters'
-- 'Weft''s reading of this page was made after seeing the OCR, so it does not measure a hand reading''s error rate on the 1828 type;
-  a blind reading of Article I is the next step for that'
-- 'no treebank: lemma, morphology and gloss are written by Claude, an AI model, word by word against Feeling''s dictionary (1975),
-  the 1860 New Testament and Wiktionary, all draft; four words (five tokens) were found in none of them and have lemma ?;
-  five glosses, marked ?, are taken from the English beside the text, and one word (ᎬᏂᏉ) has no gloss'
-- 'the glosses have not been reviewed by a Cherokee speaker; the Cherokee Nation asks for fluent speakers'' input on machine work
-  with the language (see the stewardship notice)'
-- 'the sound rests on the c1828 scheme, which the syllabary leaves approximate: tone, vowel length and the final h are not
-  written, and the page claims none of them'
+- the preamble and Article I only; Articles II to VI, and the Cherokee lines of the title page, are not yet transcribed
+- the transcription rests on scans of about 180 pixels to the inch. In the preamble two signs are left uncertain (Ꮒ or Ᏺ in ᎢᏂᎦᎵᏍᏓᏁᏗ,
+  Ꮣ or Ꮦ in ᎣᏥᏁᎢᏍᏓ) and four readings rest on words found in the 1860 New Testament or Feeling's dictionary as well as on the scan (named
+  in edition.yaml). In Article I three signs are left uncertain (ᏥᏕᎬᎫᏗ, ᎬᏩᏏᎯᏰᎸ, ᎩᎳᏉ), and a curled U-shaped sign is read Ꮰ (tlo) in
+  seven places, as Tesseract read it where the hand reading had Ꮜ (sa); in two of them the stem, with this sign, is attested in the
+  word lists at cherokeedictionary.net and the 1860 New Testament, and the other five are marked on the page. Punctuation is checked
+  by eye, since the OCR comparison is by letters
+- 'Article I was read by hand before any OCR of its pages and then collated: the hand reading differed from the settled text at 11 of
+  1,280 signs, Tesseract''s pinned witness at 242 (docs/languages.md). The hand figure is a lower bound, since a sign both readings
+  got wrong is caught only by other evidence, as one was (ᏭᏕᎵᎬ, "west")'
+- 'no treebank: lemma, morphology and gloss are written by Claude, an AI model, word by word against Feeling''s dictionary (1975), the
+  1860 New Testament and Wiktionary, all draft. In the preamble four words (five tokens) were found in none of them and have lemma ?,
+  five glosses, marked ?, are taken from the English beside the text, and one word (ᎬᏂᏉ) has no gloss. In Article I, annotated also
+  against the other word lists the site serves (Noquisi, the Consortium Word List, Raven Rock, the Cherokee Nation''s list), each named
+  in the overlay, 69 of 299 tokens have lemma ?, 64 glosses are taken from the English, and six tokens have no gloss; the place names
+  are given as the English names them'
+- the glosses have not been reviewed by a Cherokee speaker; the Cherokee Nation asks for fluent speakers' input on machine work with
+  the language (see the stewardship notice)
+- 'the sound rests on the c1828 scheme, which the syllabary leaves approximate: tone, vowel length and the final h are not written,
+  and the page claims none of them'
