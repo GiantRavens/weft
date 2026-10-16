@@ -30,9 +30,8 @@ the weft.
   chooses translations, and can veil the gloss and translations so you read the original first and
   tap to check yourself. Settings are kept in your browser.
 - **Where you are.** On a long work the masthead says which stanza (or chapter, hexagram or line)
-  is in view, out of how many; tapping it opens a grid of them to jump from. On a wide screen a
-  rail in the left margin shows the same as a ruler, with the place in view marked. Short pages
-  have neither.
+  is in view, out of how many; tapping it opens a grid of them to jump from. Short pages have
+  neither.
 
 Every page is one self-contained file. It opens from disk without a server and prints cleanly; the
 the Gentium Book Plus type for the text, the IPA and the glosses is served from the site itself (SIL Open Font License), so its full set of marks and letters is always present; the fonts for Hebrew, Arabic, Chinese, Japanese, Devanagari, Tamil, runes, cuneiform, hieroglyphs and Coptic load from Google Fonts when you are online, and those scripts need them to display.

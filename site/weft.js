@@ -529,9 +529,9 @@
      drawn by script, so the browser's own jump to the anchor finds nothing; go there once it is drawn */
   /* ---------- navigator: where the reader is, and a list to jump from. Sections when the work has twelve or
      more; otherwise lines, when the page runs past a screenful; a short page gets none. The masthead label
-     and the grid panel serve every width; the rail in the left gutter shows from 1250px (weft.css). */
+     says the place in view and opens the grid panel (a bottom sheet on phones). */
   (() => {
-    const pos = $("#open-nav"), rail = $("#rail"), track = $("#rail-track"), panel = $("#nav"), grid = $("#navgrid");
+    const pos = $("#open-nav"), panel = $("#nav"), grid = $("#navgrid");
     const cap = (w) => w.charAt(0).toUpperCase() + w.slice(1);
     const secIds = STANZAS ? [...new Set(D.lines.map((l) => l.stanza))] : [];
     const total = D.lines.length;
@@ -552,17 +552,8 @@
     $("#nav-title").textContent = many;
     const cells = items.map((it) => h("a", { href: `#${it.id}`, title: it.title, text: it.label, onclick: () => closePanel(panel) }));
     grid.replaceChildren(...cells);
-    const ticks = items.map((it, k) => h("a", { class: "tick", href: `#${it.id}`, title: it.title,
-      style: `top:${((it.at / total) * 100).toFixed(3)}%;height:${((((k + 1 < n ? items[k + 1].at : total) - it.at) / total) * 100).toFixed(3)}%` }, h("span", { text: it.label })));
-    track.replaceChildren(...ticks);
-    $("#rail-head").textContent = many;
-    rail.classList.add("on"); pos.classList.add("on");
+    pos.classList.add("on");
     const headH = () => $(".masthead").offsetHeight;
-    const setHead = () => document.documentElement.style.setProperty("--head-h", headH() + "px");
-    function labelStep() {                                  // label every k-th tick so labels stay 16px apart
-      const k = Math.max(1, Math.ceil((n * 16) / (track.clientHeight || 600)));
-      ticks.forEach((t, i) => t.classList.toggle("lbl", i % k === 0));
-    }
     let cur = -1;
     function update() {
       const sets = text.querySelectorAll(".lineset");
@@ -574,7 +565,6 @@
       if (k === cur) return;
       cur = k;
       pos.textContent = `${noun} ${items[k].label} of ${n}`;
-      ticks.forEach((t, i) => t.classList.toggle("current", i === k));
       cells.forEach((c, i) => c.classList.toggle("current", i === k));
     }
     const toggle = () => {
@@ -584,11 +574,10 @@
       } else closePanel(panel);
     };
     pos.addEventListener("click", toggle);
-    $("#rail-head").addEventListener("click", toggle);
     let queued = false;
     window.addEventListener("scroll", () => { if (!queued) { queued = true; requestAnimationFrame(() => { queued = false; update(); }); } }, { passive: true });
-    window.addEventListener("resize", () => { setHead(); labelStep(); cur = -1; update(); });
-    setHead(); labelStep(); update();
+    window.addEventListener("resize", () => { cur = -1; update(); });
+    update();
   })();
 
   function goToHash() {

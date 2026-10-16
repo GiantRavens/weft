@@ -7,7 +7,7 @@ tags:
   - site
   - reader
 created_at: 2026-10-16T12:54:35.818358726-05:00
-updated_at: 2026-10-16T14:47:35.836527422-05:00
+updated_at: 2026-10-16T15:08:22.679560884-05:00
 started_at: 2026-10-16T14:21:26.238655367-05:00
 completed_at: 2026-10-16T14:47:35.836517199-05:00
 ---
@@ -36,6 +36,7 @@ Both read one list built once from the stanza headings. Named parts (Gestaþátt
 ## Notes
 
 - 2026-10-16T19:34:25Z: Built 2026-10-16. Headless Chromium runs: Hávamál 1440 (rail 164 ticks, click #sec-100 highlights hav.100.1, label 'Stanza 100 of 164'), 1000 (no rail, label), 390 (bottom sheet, cell 50 jumps and closes); Beowulf shows nothing; Iliad and Inferno 1 run in line mode; Yijing says 'Hexagram 1 of 64'. Rail ticks own tiled slices of the track so hit areas never overlap; labels are pointer-transparent; current and hovered labels carry a surface backing. Section links now light the first line under the heading (goToHash).
+- 2026-10-16T20:08:22Z: Rail removed 2026-10-16 at Skip's call: technically neat, too fiddly after a resize. The masthead position label and the grid panel stay; the sticky masthead keeps the work's name in view. Acceptance items 1 and 4 now read as label plus grid only.
 
 ## Log
 

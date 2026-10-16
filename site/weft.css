@@ -72,7 +72,7 @@ h1 { margin: 4px 0 0; font-size: 1.5rem; font-weight: 700; line-height: 1.1; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tool-primary { color: #1a120c; } }
 .tool:focus-visible, .w:focus-visible, .close:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-/* ---------- navigator: the position label in the masthead, the grid panel, and the rail in the left gutter on wide screens.
+/* ---------- navigator: the position label in the masthead and the grid panel it opens.
    Built only for works with twelve or more sections, or more than a screenful of lines (weft.js). */
 .pos { display: none; margin: 0 0 0 12px; padding: 0; border: 0; background: none; cursor: pointer; vertical-align: 1px;
   font: 600 0.68rem/1 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); text-align: left; white-space: nowrap; }
@@ -87,21 +87,6 @@ h1 { margin: 4px 0 0; font-size: 1.5rem; font-weight: 700; line-height: 1.1; }
 .navgrid a.current { background: var(--accent); border-color: var(--accent); color: #fff; }
 :root[data-theme="dark"] .navgrid a.current { color: #1a120c; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .navgrid a.current { color: #1a120c; } }
-.rail { display: none; position: fixed; top: calc(var(--head-h, 96px) + 20px); bottom: 20px; left: max(8px, calc((100vw - 1120px) / 2 - 78px)); width: 62px; z-index: 4; font-family: var(--sans); }
-@media (min-width: 1250px) { .rail.on { display: flex; flex-direction: column; } }
-.rail-head { font: 600 0.58rem/1.3 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); background: none; border: 0; padding: 0 0 8px; cursor: pointer; text-align: left; }
-.rail-head:hover { text-decoration: underline; text-underline-offset: 3px; }
-.rail-track { position: relative; flex: 1; border-left: 2px solid var(--rule); margin-left: 5px; }
-/* each tick owns the slice of track down to the next mark (top and height set by weft.js), so hit areas tile and never overlap;
-   the mark itself is drawn at the top of the slice */
-.rail .tick { position: absolute; left: -6px; width: 22px; display: block; min-height: 2px; }
-.rail .tick::before { content: ""; position: absolute; left: 4px; top: 0; width: 10px; height: 2px; background: var(--ink-faint); pointer-events: none; }
-.rail .tick span { position: absolute; left: 19px; top: -4px; display: none; pointer-events: none; font: 500 0.64rem/1 var(--sans); color: var(--ink-faint); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.rail .tick.lbl span, .rail .tick.current span, .rail .tick:hover span { display: block; }
-.rail .tick:hover::before, .rail .tick.current::before { background: var(--accent); }
-.rail .tick:hover span, .rail .tick.current span { color: var(--accent); font-weight: 600; background: var(--surface); padding: 2px 4px; margin: -2px -4px; border-radius: 3px; z-index: 2; }
-.rail .tick:hover { z-index: 3; }
-.rail .tick.current::before { width: 14px; height: 3px; }
 
 /* ---------- the text */
 /* frontispiece: a public-domain image of the artifact or its world, with caption and credit */
@@ -224,7 +209,7 @@ body.veil .gls, body.veil .tr { cursor: pointer; }
 @media print {
   :root { --bg: #fff; --surface: #fff; --ink: #000; --sound: #234; --gloss: #333; }
   .masthead { position: static; }
-  .tools, .panel, .keydialog, .lnote, .rail, .pos { display: none !important; }
+  .tools, .panel, .keydialog, .lnote, .pos { display: none !important; }
   .strip { flex-wrap: wrap; overflow: visible; }
   .lineset { break-inside: avoid; }
   body.veil .gls, body.veil .tr { color: inherit !important; background: none !important; }
