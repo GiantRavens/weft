@@ -338,6 +338,38 @@
       `${D.work.lang_name || "This text"} runs from right to left: each ${D.work.unit === "verse" ? "verse" : "line"} begins at the right edge, and its first word is the rightmost. The pronunciation and gloss under each word read left to right.`);
     note.hidden = false;
   }
+  // how to read the page: one line per row the page actually has, in the order the rows appear
+  {
+    const guide = $("#howto"), list = $("#howto-list");
+    const has = (f) => D.lines.some((l) => l.tokens.some(f));
+    const sw = (k) => h("span", { class: "sw " + k, "aria-hidden": "true" });
+    const metreText = D.lines.some((l) => l.metre && /[a-z]/i.test(l.metre)), metreMarks = D.lines.some((l) => l.metre && !/[a-z]/i.test(l.metre));
+    const items = [
+      h("li", {}, h("strong", { text: `Each numbered block is one ${UNIT} of the text. ` }), "Click any word for its dictionary form, its grammar, and the notes on it."),
+      has((t) => t.script) ? h("li", {}, `The ${D.work.script_word || "script"} row above the text is generated from the transliteration beneath it.`) : null,
+      h("li", {}, "The large line is the text as the edition prints it; the colophon at the foot names the edition."),
+      h("li", {}, sw("sound"), "The blue line under each word is a respelling in English letters of how the word is thought to have sounded when the text was written. ",
+        "It is a reconstruction, and approximate where the evidence is thin. Sound key, above, says what its letters and marks stand for",
+        D.schemes.length > 1 ? "; Loom offers later traditions of pronunciation after it." : "."),
+      h("li", {}, sw("gloss"), "The green italic line is the gloss: each word rendered on its own, in the order of the original, so a sentence can be followed word by word. ",
+        "A hyphenated gloss is one word of the original. The gloss is not a translation."),
+      has((t) => t.stave) ? h("li", {}, sw("stave"), "A coloured first letter marks a stave, the alliterating sound that binds a verse to its partner. The grey line beneath names the verse and its staves.") : null,
+      !has((t) => t.stave) && metreMarks ? h("li", {}, "The row of long and short marks beneath a line is its metre, divided into feet by bars.") : null,
+      !has((t) => t.stave) && !metreMarks && metreText ? h("li", {}, "The grey line beneath a line describes its metre.") : null,
+      has((t) => t.uncertain) ? h("li", {}, "A dotted underline under a whole word marks a reading or a sound that is uncertain.") : null,
+      D.notes.length ? h("li", {}, "A dotted underline in the text colour marks a word with a note. The ¶ beside a line number opens the notes on that line.") : null,
+      D.translations.length ? h("li", {}, "Translations follow the lines they render, each with its translator and date, so the gloss and a published translation can be read side by side.") : null,
+      h("li", {}, "Loom, above, sets which rows show, the pronunciation, the translations, and the sizes."),
+    ].filter(Boolean);
+    list.replaceChildren(...items);
+    const HOWTO = "weft:howto";
+    // open on a wide screen, closed on a phone where it would push the text a screen down; a reader's choice is remembered
+    let saved = null;
+    try { saved = localStorage.getItem(HOWTO); } catch (e) {}
+    guide.open = saved ? saved === "open" : window.matchMedia("(min-width: 721px)").matches;
+    guide.addEventListener("toggle", () => { try { localStorage.setItem(HOWTO, guide.open ? "open" : "closed"); } catch (e) {} });
+    guide.hidden = false;
+  }
   // a living community's text: whose transcription and translation this is, and the community's own position
   const W = D.work.stewardship;
   if (W) {

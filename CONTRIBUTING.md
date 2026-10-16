@@ -24,6 +24,21 @@ To find what to cite, tap the word on the page: the word panel shows its id (for
 line id. A maintainer writes the correction into the repository,
 credits you as you ask (a name or a pseudonym), and links the change from the issue.
 
+## What is already on the list
+
+The open questions for each work, and the project's own to-do list, are in `tasks/`: one markdown
+file per task, with the state in its front matter. Before opening an issue, a search there shows
+whether the point has been raised (`grep -ril völuspá tasks/`). The board is read-only for
+contributors: an issue is the way in, and a maintainer turns an accepted issue into a task. Nothing
+personal goes in a task, and a task about a named person says only what that person has agreed to
+publish.
+
+The files are kept by [Punchlist](https://github.com/GiantRavens/punchlist), a small command-line
+task manager whose state is the markdown itself, so the list reads fine without it. With it
+installed (`brew install giantravens/tap/punchlist` on a Mac; a Go build elsewhere), `pin ls` in
+the repository shows the open tasks, `pin show 51` one of them, and `pin search norse` the ones on
+a subject.
+
 ## With git: write the correction yourself
 
 ### The one rule

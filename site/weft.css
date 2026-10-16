@@ -115,7 +115,8 @@ body.hide-metre .w.stave .src .form::first-letter { color: inherit; font-weight:
 .snd { font: 500 var(--snd-size)/1.2 var(--sans); letter-spacing: 0.04em; color: var(--sound); white-space: nowrap; }
 .gls { font-style: italic; font-size: var(--gls-size); line-height: 1.2; color: var(--gloss); white-space: nowrap; }
 
-.metre { font: 400 0.9rem/1 var(--sans); letter-spacing: 0.18em; color: var(--ink-faint); margin: 2px 0 0; white-space: nowrap; overflow-x: auto; }
+.metre { font: 400 0.9rem/1.35 var(--sans); letter-spacing: 0.18em; color: var(--ink-faint); margin: 0; white-space: nowrap; overflow-x: auto; overflow-y: hidden; }
+/* overflow-x: auto makes overflow-y auto as well; with line-height 1 the italic descenders spilled a pixel and Safari drew a vertical scrollbar thumb at the right edge of every line */
 .metre .ft { margin-right: 0.35em; }
 .metre.metre-text { letter-spacing: 0.02em; font-size: 0.8rem; font-style: italic; }
 
@@ -245,6 +246,21 @@ body.rtl .w.caesura { border-left: 0; border-right: 1px dotted var(--rule); }
 body.hide-script .scr { display: none; }
 .tr.editorial { border-left-style: dashed; }
 .tr.editorial cite::after { content: " · editorial, draft"; }
+
+/* ---------- how to read this page (under the frontispiece; closed state remembered per browser) */
+.howto { max-width: 1120px; margin: 22px auto 0; padding: 0 16px; box-sizing: border-box; font: 0.88rem/1.5 var(--sans); color: var(--ink-soft); }
+.howto[hidden] { display: none; }
+.howto summary { cursor: pointer; list-style: none; display: inline-flex; gap: 8px; align-items: baseline; font: 600 0.68rem/1 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+.howto summary::-webkit-details-marker { display: none; }
+.howto summary::before { content: "▸"; font-size: 0.8rem; transition: transform .15s; }
+.howto[open] summary::before { transform: rotate(90deg); }
+.howto ul { margin: 10px 0 0; padding: 0 0 0 1.1em; max-width: 72ch; }
+.howto li { margin: 0 0 5px; }
+.howto li::marker { color: var(--ink-faint); }
+.howto .sw { display: inline-block; width: 0.75em; height: 0.75em; border-radius: 50%; vertical-align: -1px; margin-right: 4px; }
+.howto .sw.sound { background: var(--sound); } .howto .sw.gloss { background: var(--gloss); } .howto .sw.stave { background: var(--accent); }
+.howto strong { color: var(--ink); font-weight: 600; }
+@media print { .howto { display: none; } }
 
 /* ---------- reading-direction notice (right-to-left scripts) */
 .dir-note { max-width: 1120px; margin: 18px auto 0; padding: 0 16px; box-sizing: border-box;
