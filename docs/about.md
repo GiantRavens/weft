@@ -79,7 +79,7 @@ Much of the library is draft. Where no treebank exists (Eddic poetry, the Bayeux
 the notes were written for this edition. All of it is marked `draft` on the page. Only a human
 reviewer lifts that status, by checking the material and recording the review under their name.
 
-Generated material is labelled by what produced it. Material produced by rule or by a treebank is
+Generated material is labeled by what produced it. Material produced by rule or by a treebank is
 not reviewed by default either; where a value is doubtful, the corrections overlay is where the
 better reading goes.
 
@@ -116,16 +116,16 @@ extension of their scope, not a use their authors named. In practice:
   percent at a poor binarization threshold. Each Cherokee page will state the rates measured on its
   own scan.
 
-## Sources and licences
+## Sources and licenses
 
 - Every source text, treebank and translation is public domain or openly licensed (CC BY-SA, CC BY, CC0,
-  and the Unicode License for the Chinese reading tables). Material under non-commercial licences is not used. Each work's manifest records the
-  licence, the address and a checksum of every source.
+  and the Unicode License for the Chinese reading tables). Material under non-commercial licenses is not used. Each work's manifest records the
+  license, the address and a checksum of every source.
 - Sources are not stored in the repository. Each reader fetches their own copy with `weft acquire`,
-  which shows the licences first and verifies the checksums.
+  which shows the licenses first and verifies the checksums.
 - Modern scholarship is quoted only in short phrases, attributed, in the notes. Quoted words remain
   under their owners' copyright.
-- Weft's own data is released under CC BY-SA 4.0; the code under the MIT licence.
+- Weft's own data is released under CC BY-SA 4.0; the code under the MIT license.
 
 ## How to take part
 

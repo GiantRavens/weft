@@ -32,7 +32,7 @@ is "done" before that.
    `edition-not-in-source` means a line does not reproduce its source, and that is fixed first.
 5. **Annotate.** Where a treebank exists the draft supplies lemma and morphology and you correct in
    `curated/`. Where none exists, write the overlay by hand: lemma, morphology in Universal
-   Dependencies features, a gloss, and for verse the staves and metre. The compact spec and
+   Dependencies features, a gloss, and for verse the staves and meter. The compact spec and
    `weft overlay` (below) make this a page of text rather than a thousand lines of YAML. Reuse
    from sibling works is a hint, not an answer: the same form means different things in context.
 6. **Align the translations** in `sense/`: one span per unit, verbatim from the pinned translation
@@ -46,7 +46,7 @@ is "done" before that.
    seven in `docs/schema.md`), `extent` (`whole`, `section` or `excerpt`, with the denominator in
    words; `docs/schema.md`), `written` with a
    label, the edition record, schemes and their labels for this time and place,
-   `sound_confidence`, translations with licences, and `predicted_gaps`, which states what the
+   `sound_confidence`, translations with licenses, and `predicted_gaps`, which states what the
    work does not yet do and what is approximate.
 9. **About:** name the work's Wikipedia article in the manifest, `wikipedia: {title, match}`, then
    run `weft about <work>`. `match` says what the article describes: `work` (this text, or the work
@@ -110,7 +110,7 @@ error rate against the settled text. Crop to the column: a crop that clips the f
 indented paragraph's later lines reads as an OCR error on every line. Needs `tesseract` 5 and Pillow.
 
 **Commons.** The imageinfo query returns the original's URL and the metadata (artist, date,
-licence) that the credits record needs:
+license) that the credits record needs:
 
     https://commons.wikimedia.org/w/api.php?action=query&titles=File:<name>&prop=imageinfo&iiprop=url|size|extmetadata&format=json
 
@@ -152,7 +152,7 @@ The verbatim check joins each line's tokens and looks for the result in the sour
 ## The overlay
 
 Where no treebank exists, the overlay carries lemma, morphology and gloss for every token (and for
-verse the metre and staves). Write it in the compact spec and expand it:
+verse the meter and staves). Write it in the compact spec and expand it:
 
     weft overlay <work> <spec.yaml> --out stanzas-81-110.yaml
 

@@ -175,7 +175,7 @@ shift_left: []
 predicted_gaps:
 - 'no treebank: every lemma and parse is hand-annotated (Zoëga as reference) and stays draft until reviewed'
 - normalized edition marks vowel length, so no quantity table is needed
-- 'metre is alliterative (ljóðaháttr): the metre layer records half-line roles and staves, not feet'
+- 'meter is alliterative (ljóðaháttr): the meter layer records half-line roles and staves, not feet'
 - the edition's ö covers both old ǫ and ø; read as ǫ by default
 - stanza numbering is the standard one (Neckel-Kuhn, 164 stanzas); Bellows and Thorpe each number differently from 103 and 138 on, and their spans are aligned by content (see the sense files)
 - the CLTK copy of the text stopped at stanza 145; the Ljóðatal (146-163) and the closing stanza come from heimskringla.no's own page, the same edition

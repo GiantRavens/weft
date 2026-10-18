@@ -30,7 +30,7 @@ manifest. The reconstruction is approximate. What it assumes:
   evidence. The same holds for the softening of intervocalic c and g before e and i to ʃ and ʒ.
 - Each word is phonemized alone. Syntactic doubling (raddoppiamento sintattico: a casa said
   [akˈkaːsa]) and elision across words are not modeled in the sound row; synalepha is modeled in
-  the verse metre only.
+  the verse meter only.
 
 Scheme `modern` is standard Italian today. It differs from `florentine` in one systematic feature
 a per-word respelling can show: s between vowels is voiced [z] in every word, as in most of Italy
@@ -293,7 +293,7 @@ def _fallback(k: str) -> str:
     return k[:j] + acc + k[j + 1:]
 
 
-def analyse(word: str, scheme: str = "florentine", table: dict | None = None) -> dict:
+def analyze(word: str, scheme: str = "florentine", table: dict | None = None) -> dict:
     m, known = marked_form(word, table)
     if not known:
         m = _fallback(m)
@@ -303,7 +303,7 @@ def analyse(word: str, scheme: str = "florentine", table: dict | None = None) ->
 
 
 def phonemize(word: str, scheme: str = "florentine", quantities=None, **_) -> dict:
-    a = analyse(word, scheme, quantities or None)
+    a = analyze(word, scheme, quantities or None)
     if not a["syls"]:
         return {"ipa": "", "respell": "", "syllables": 0}
     ipa, resp, _ = _render(a["syls"])
@@ -342,7 +342,7 @@ def _metrical(et: dict, final: bool = False) -> tuple[list[dict], bool, bool]:
         syl = [{"s": p != p.lower() or any(c in STRESS_MARKS for c in p)} for p in parts]
         low = et["m"].lower()
         return syl, low[:1] in "aeiouàèéìòóù", low[-1:] in "aeiouàèéìòóù"
-    a = analyse(word)
+    a = analyze(word)
     syls = [s for s in a["syls"] if any(p["v"] for p in s)]
     ph = [p for s in a["syls"] for p in s]
     if not syls:

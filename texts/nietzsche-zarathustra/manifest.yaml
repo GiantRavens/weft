@@ -32,7 +32,7 @@ sources_extra:
     file: sources/dta-za1883.xml
     url: "https://web.archive.org/web/20240803174743id_/https://www.deutschestextarchiv.de/book/download_xml/nietzsche_zarathustra01_1883"
     sha256: 6feb1f17390d3f5550334efa7abd1f4de631ab5905b600b79da77b5c2891ffc5
-    license: "public domain text; DTA transcription CC BY-SA 4.0 (licence statement in the TEI header)"
+    license: "public domain text; DTA transcription CC BY-SA 4.0 (license statement in the TEI header)"
     license_url: https://creativecommons.org/licenses/by-sa/4.0/
 translations:
   - id: common1909
@@ -55,7 +55,7 @@ translations:
     sha256: 3fabf3f35f4156e21e73ee51903cdd361d8c35e9ac7cb7fa5dfef00cd983b9cb
 predicted_gaps:
   - "the Vorrede is verified against the Deutsches Textarchiv transcription of the 1883 print, fetched from an Internet Archive capture because the DTA site no longer serves plain downloads"
-  - "the pronunciation of educated German in the 1880s is reconstructed from the descriptions of northern educated speech before the stage norm of 1898; Nietzsche's own speech (he grew up in the Prussian province of Saxony and was schooled at Schulpforta) is not described closely enough to model, and its regional features are not modelled; the value of postvocalic r and of long ä is uncertain"
+  - "the pronunciation of educated German in the 1880s is reconstructed from the descriptions of northern educated speech before the stage norm of 1898; Nietzsche's own speech (he grew up in the Prussian province of Saxony and was schooled at Schulpforta) is not described closely enough to model, and its regional features are not modeled; the value of postvocalic r and of long ä is uncertain"
   - "the sound is computed from the modern spelling of each word form; the spelling gieng carries no sound difference from ging"
   - "no treebank; lemma, morphology and gloss by hand, draft"
   - "two public-domain English translations (Tille, 1896; Common, 1909)"

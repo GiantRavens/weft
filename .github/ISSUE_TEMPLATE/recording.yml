@@ -34,7 +34,7 @@ body:
   - type: dropdown
     id: license
     attributes:
-      label: Licence
+      label: License
       options: [CC BY-SA 4.0, CC0 (public domain dedication)]
     validations:
       required: true

@@ -51,7 +51,7 @@ c1492    Castilian as an educated reader at the court of the Catholic Monarchs w
          - Stress falls where it falls today in every word of the passage, by the same written
            rules. Learned words (illustríssimos, comemoración, concepción) are read with their
            letters.
-         Columbus's own speech is NOT modelled. He was Genoese by birth, lived in Portugal for
+         Columbus's own speech is NOT modeled. He was Genoese by birth, lived in Portugal for
          about a decade before coming to Castile, and his written Spanish shows Portuguese
          features (Ramón Menéndez Pidal, La lengua de Cristóbal Colón, 1940). The scheme models a
          Castilian reader of the printed text, not the writer.
@@ -59,7 +59,7 @@ modern   Standard Castilian of Spain today: c before e, i and z = [θ], j and g 
          h silent, b and v both [b], ll = [ʝ] (yeísmo, the usual modern pronunciation). Broad
          transcription: the softening of b, d, g between vowels ([β ð ɣ]) is not shown.
 
-Each word is phonemized alone. Synalepha and linking between words are not modelled. CAPS mark
+Each word is phonemized alone. Synalepha and linking between words are not modeled. CAPS mark
 the stressed syllable; clitics (articles, most prepositions, object pronouns, que) carry none.
 
 Edition token fields (texts/<work>/edition.yaml)
@@ -441,7 +441,7 @@ def line_checks(text: str, etoks: list[dict], edition: dict) -> list[tuple[str, 
 
 KEY = {
     "c1492": [
-        ("", "Castilian of about 1492, as Nebrija describes the letters; approximate. A Castilian reader of the printed letter is modelled, not Columbus's own Genoese and Portuguese-coloured Spanish."),
+        ("", "Castilian of about 1492, as Nebrija describes the letters; approximate. A Castilian reader of the printed letter is modeled, not Columbus's own Genoese and Portuguese-colored Spanish."),
         ("", "Hyphens divide syllables; CAPS mark the stressed syllable. Articles, most prepositions and object pronouns are unstressed."),
         ("ah eh ee oh oo", "the five vowels, as in father, bet, machine, note, rule, but short and pure"),
         ("ts", "ç, and c before e or i (concepción kohn-tsehp-TSYOHN, conmemoración koh-meh-moh-rah-TSYOHN): t and s together, as in cats"),

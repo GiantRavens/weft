@@ -8,7 +8,7 @@
 # Conventions for this text
 # - Line labels: 初 "first" (NOUN), 上 "top" (NOUN), 九 "nine" and 六 "six" (NUM), 二 to 五 "two" to
 #   "five" (NUM), 用 in 用九 / 用六 "use" (VERB).
-# - Hexagram names at the head of the judgment: PROPN, glossed with a capitalised English word for
+# - Hexagram names at the head of the judgment: PROPN, glossed with a capitalized English word for
 #   the name (乾 "Strength", 小畜 "Small" "Taming"), matching the section title. Where the name is also
 #   the first word of the judgment's sentence (履虎尾, 同人于野), it is glossed as that word.
 #   Elsewhere in the text the same character is glossed as an ordinary word (鳴謙 "sounding" "modesty").
@@ -147,7 +147,7 @@
     yj.2.3.4: {lemma: "方", morph: "VERB|Degree=Pos", gloss: "square"}
     yj.2.3.5: {lemma: "大", morph: "VERB|Degree=Pos", gloss: "great"}
     yj.2.3.6: {lemma: "不", morph: "ADV|Polarity=Neg", gloss: "not"}
-    yj.2.3.7: {lemma: "習", morph: "VERB", gloss: "practised"}
+    yj.2.3.7: {lemma: "習", morph: "VERB", gloss: "practiced"}
     yj.2.3.8: {lemma: "无", morph: "VERB|Polarity=Neg", gloss: "nothing"}
     yj.2.3.9: {lemma: "不", morph: "ADV|Polarity=Neg", gloss: "not"}
     yj.2.3.10: {lemma: "利", morph: "VERB|Degree=Pos", gloss: "beneficial"}
@@ -746,7 +746,7 @@
     yj.9.6.7: {lemma: "富", morph: "VERB|Degree=Pos", gloss: "rich"}
     yj.9.6.8: {lemma: "以", morph: "ADP", gloss: "with"}
     yj.9.6.9: {lemma: "其", morph: "PRON|Person=3|PronType=Prs", gloss: "his"}
-    yj.9.6.10: {lemma: "鄰", morph: "NOUN", gloss: "neighbours"}
+    yj.9.6.10: {lemma: "鄰", morph: "NOUN", gloss: "neighbors"}
     yj.9.7.1: {lemma: "上", morph: "NOUN", gloss: "top"}
     yj.9.7.2: {lemma: "九", morph: "NUM", gloss: "nine"}
     yj.9.7.3: {lemma: "既", morph: "ADV", gloss: "already"}
@@ -899,7 +899,7 @@
     yj.11.5.6: {lemma: "富", morph: "VERB|Degree=Pos", gloss: "rich"}
     yj.11.5.7: {lemma: "以", morph: "ADP", gloss: "with"}
     yj.11.5.8: {lemma: "其", morph: "PRON|Person=3|PronType=Prs", gloss: "his"}
-    yj.11.5.9: {lemma: "鄰", morph: "NOUN", gloss: "neighbours"}
+    yj.11.5.9: {lemma: "鄰", morph: "NOUN", gloss: "neighbors"}
     yj.11.5.10: {lemma: "不", morph: "ADV|Polarity=Neg", gloss: "not"}
     yj.11.5.11: {lemma: "戒", morph: "VERB", gloss: "guarded"}
     yj.11.5.12: {lemma: "以", morph: "ADP", gloss: "by"}
@@ -1183,7 +1183,7 @@
     yj.15.6.4: {lemma: "富", morph: "VERB|Degree=Pos", gloss: "rich"}
     yj.15.6.5: {lemma: "以", morph: "ADP", gloss: "with"}
     yj.15.6.6: {lemma: "其", morph: "PRON|Person=3|PronType=Prs", gloss: "his"}
-    yj.15.6.7: {lemma: "鄰", morph: "NOUN", gloss: "neighbours"}
+    yj.15.6.7: {lemma: "鄰", morph: "NOUN", gloss: "neighbors"}
     yj.15.6.8: {lemma: "利", morph: "VERB|Degree=Pos", gloss: "beneficial"}
     yj.15.6.9: {lemma: "用", morph: "VERB", gloss: "using"}
     yj.15.6.10: {lemma: "侵", morph: "VERB", gloss: "invade"}

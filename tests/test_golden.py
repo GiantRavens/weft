@@ -415,7 +415,7 @@ def test_renaissance_works_check():
 
 
 def test_hexameter_scanner_matches_hand_scansion():
-    """The generated metre row equals every hand scansion in curated/ (Odyssey 1.1-10, Iliad 1.1-52):
+    """The generated meter row equals every hand scansion in curated/ (Odyssey 1.1-10, Iliad 1.1-52):
     the hand work is the scanner's regression test."""
     for work in ("homer-odyssey", "homer-iliad"):
         wd = REPO / "texts" / work

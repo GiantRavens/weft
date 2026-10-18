@@ -1,9 +1,9 @@
 # Human overlay for Lokasenna stanzas 1-22. Lemmas follow Zoëga, A Concise Dictionary of Old
-# Icelandic (1910); morphology uses Universal Dependencies features. Staves and metre by hand; j alliterates
-# with the vowels, as in Eddic practice; where the half-lines do not share a stave the metre string says so.
+# Icelandic (1910); morphology uses Universal Dependencies features. Staves and meter by hand; j alliterates
+# with the vowels, as in Eddic practice; where the half-lines do not share a stave the meter string says so.
 - by: "Claude Fable 5.1 (Weft phase 0), for review by Skip and a scholar"
   date: "2026-10-08"
-  why: "hand lemma, morphology, gloss, staves and metre for stanzas 1-22; no treebank exists for Eddic poetry; written in the compact spec and expanded by weft overlay"
+  why: "hand lemma, morphology, gloss, staves and meter for stanzas 1-22; no treebank exists for Eddic poetry; written in the compact spec and expanded by weft overlay"
   status: "draft"
   set:
     lok.1.1: {metre: "long line, a-verse · stave vowel"}
@@ -435,7 +435,7 @@
     lok.16.2: {metre: "long line, b-verse · stave b"}
     lok.16.2.1: {lemma: "barn", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-children", stave: true}   # barna
     lok.16.2.2: {lemma: "sifjar", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "the-kinship"}   # sifjar
-    lok.16.2.3: {lemma: "duga", morph: "VERB|VerbForm=Inf", gloss: "to-honour"}   # duga
+    lok.16.2.3: {lemma: "duga", morph: "VERB|VerbForm=Inf", gloss: "to-honor"}   # duga
     lok.16.3: {metre: "full line · staves vowel"}
     lok.16.3.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
     lok.16.3.2: {lemma: "allr", morph: "ADJ|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-all", stave: true}   # allra

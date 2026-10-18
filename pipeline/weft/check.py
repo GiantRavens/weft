@@ -77,7 +77,7 @@ def run(repo: Path, work: str) -> dict:
     ntok = 0
     for i, line in enumerate(data["lines"]):
         ids.add(line["id"]); line_ids.append(line["id"]); order[line["id"]] = i
-        # verse carries metre; prose (unit: sentence) has none to carry
+        # verse carries meter; prose (unit: sentence) has none to carry
         if data["work"].get("unit") not in ("sentence", "verse", "inscription", "section") and not line.get("metre"):
             bad("line-no-metre", line["id"])
         for t in line["tokens"]:

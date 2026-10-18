@@ -1,9 +1,9 @@
 # Human overlay for Þrymskviða stanzas 23 to 32. Lemmas follow Zoëga, A Concise Dictionary of Old Icelandic
 # (1910), in the edition's spelling; morphology uses Universal Dependencies features. Staves (stave: true)
-# mark the alliterating words; metre gives each line's role in the fornyrðislag long line.
+# mark the alliterating words; meter gives each line's role in the fornyrðislag long line.
 - by: Claude (Weft phase 0), for review by Skip and a scholar
   date: 2026-10-01
-  why: hand lemma, morphology, gloss, staves and metre; no treebank exists for Eddic poetry
+  why: hand lemma, morphology, gloss, staves and meter; no treebank exists for Eddic poetry
   status: draft
   set:
     thr.23.1: {metre: "a-verse · staves g"}
@@ -239,7 +239,7 @@
     thr.29.9.2: {lemma: "minn", morph: "DET|Case=Acc|Gender=Fem|Number=Plur|Poss=Yes", gloss: "my"}   # mínar
     thr.29.10: {metre: "b-verse · stave vowel"}
     thr.29.10.1: {lemma: "allr", morph: "ADJ|Case=Acc|Gender=Fem|Number=Sing", gloss: "all", stave: true}   # alla
-    thr.29.10.2: {lemma: "hylli", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "favour"}   # hylli
+    thr.29.10.2: {lemma: "hylli", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "favor"}   # hylli
     thr.30.1: {metre: "a-verse · stave þ"}
     thr.30.1.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # Þá
     thr.30.1.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "said"}   # kvað

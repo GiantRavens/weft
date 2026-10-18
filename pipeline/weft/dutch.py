@@ -19,7 +19,7 @@ h1596    The Dutch of Holland (Amsterdam) around 1596, approximate. Evidence: th
          Spiegel; Pontus de Heuiter, Nederduitse orthographie (1581); and the historical grammars
          that weigh them (M. Schönfeld, Historische grammatica van het Nederlands, revised by A.
          van Loey, 1959; C. G. N. de Vooys, Geschiedenis van de Nederlandse taal, 1952). Features
-         modelled:
+         modeled:
          - ij (old long i) is a diphthong, written [ei] here: closer at the start than the modern
            [ɛi], and kept apart from ei (old ai), written [ɛi]. The Twe-spraack still keeps the
            two apart in spelling and treats them as different sounds. The diphthongization of
@@ -34,7 +34,7 @@ h1596    The Dutch of Holland (Amsterdam) around 1596, approximate. Evidence: th
            attested but its date and social spread are uncertain.
          - final obstruents are voiceless (landt, ghedeelt: the print often writes the t).
          - r is a tongue-tip trill.
-         Not modelled: the distinction of sharp-long and soft-long ee and oo (from old long vowels
+         Not modeled: the distinction of sharp-long and soft-long ee and oo (from old long vowels
          against lengthened short ones), which the grammarians describe but which a per-word
          respelling cannot show reliably; the Holland pronunciation of initial z as s, which the
          print reflects in its wavering between seer and zeer.

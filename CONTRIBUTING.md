@@ -110,7 +110,7 @@ collected now and wired in when the audio layer lands:
 A work can be built when four things exist:
 
 1. An edition of the original that is public domain or openly licensed (CC BY-SA, CC BY, CC0).
-   Licences that forbid commercial use cannot be used.
+   Licenses that forbid commercial use cannot be used.
 2. At least one public-domain English translation. Translations still in copyright can be cited as
    references; the page names them without printing them.
 3. A way to establish lemma and grammar: a treebank, or a good dictionary for hand annotation.
@@ -118,13 +118,13 @@ A work can be built when four things exist:
 
 Use the Propose a text form; blanks are fine. To build one yourself, start with the manifest:
 edition, treebank (or `treebank: null`), pronunciation schemes with the as-first-written
-reconstruction first, translations with licences, and the gaps you predict. See
+reconstruction first, translations with licenses, and the gaps you predict. See
 `docs/lifecycle.md` and `docs/schema.md`.
 
 ## Adding a translation
 
 Translations must be public domain or openly licensed. Add the translation to the work's manifest
-with its licence, then align it: verse-numbered Bibles align automatically with `weft align <work>`;
+with its license, then align it: verse-numbered Bibles align automatically with `weft align <work>`;
 other texts get a hand-made file in `texts/<work>/sense/`.
 
 ## Your own layer: private material and private works

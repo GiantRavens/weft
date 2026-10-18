@@ -6,7 +6,7 @@ Two steps, so the owner approves a post after reading it:
                                to Bluesky, and to X when its four OAuth 1.0a secrets are set
 
 The range BASE..HEAD runs from the previous successful deploy to this one, so commits whose own
-deploy was cancelled are still covered, and nothing is announced twice.
+deploy was canceled are still covered, and nothing is announced twice.
 
 What makes a deploy worth a post (measured on weft's history, 2026-10-02):
   - a work is NEW when its texts/<work>/manifest.yaml was added

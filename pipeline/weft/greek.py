@@ -366,7 +366,7 @@ def phonemize(word: str, scheme: str, quantities: dict[str, str] | None = None) 
 
 
 # ---------------------------------------------------------------- hexameter scanner
-# Scans one dactylic hexameter from its words and returns the Weft metre string
+# Scans one dactylic hexameter from its words and returns the Weft meter string
 # ("—◡◡|——|...|—×"). Each syllable of the line gets the weights it can bear and a cost for each:
 # a long vowel or diphthong, or a vowel before two consonants, is long at no cost; a short vowel
 # before one consonant is short at no cost. The rules that let a syllable go the other way carry

@@ -16,7 +16,7 @@ recording differs from the printed text in places, and it is a performance, not 
 
 Languages
 ---------
-qya  Quenya ("High-elven"), the language of Namárië. Spelt by Tolkien "as much like Latin as
+qya  Quenya ("High-elven"), the language of Namárië. Spelled by Tolkien "as much like Latin as
      its sounds allowed" (App. E): c is always k, qu is kw, y is a consonant, final e is always
      sounded (often written ë), diphthongs ai au eu iu oi ui.
 sjn  Sindarin ("Grey-elven"), the language of the hymn A Elbereth Gilthoniel: y is a vowel (French

@@ -13,7 +13,7 @@
 #   (ADV|Polarity=Neg). 爾 "you" PRON|Person=2|PronType=Prs; 是, 斯, 彼 "this" / "that"
 #   PRON|PronType=Dem. 宜 "fitting" (VERB|Degree=Pos, like 利).
 # - Adverbial nouns of manner keep NOUN and take "-like" in the gloss (虎變 "tiger-like" "changes").
-# - Proper names in the lines are PROPN with a capitalised gloss per character, as 帝乙 "Thearch"
+# - Proper names in the lines are PROPN with a capitalized gloss per character, as 帝乙 "Thearch"
 #   "Yi": 高宗 "High" "Ancestor", 鬼方 "Ghost" "Land", the place 易 "Yi".
 # - 有 before a noun with no sense of possession (王假有廟) is PART "(prefix)".
 # - Calendar day 庚 "geng-day" (NOUN), 先庚 / 後庚 "before" / "after" (ADP).
@@ -269,7 +269,7 @@
     yj.51.7.15: {lemma: "躬", morph: "NOUN", gloss: "person"}  # 躬
     yj.51.7.16: {lemma: "于", morph: "ADP", gloss: "at"}  # 于
     yj.51.7.17: {lemma: "其", morph: "PRON|Person=3|PronType=Prs", gloss: "his"}  # 其
-    yj.51.7.18: {lemma: "鄰", morph: "NOUN", gloss: "neighbour"}  # 鄰
+    yj.51.7.18: {lemma: "鄰", morph: "NOUN", gloss: "neighbor"}  # 鄰
     yj.51.7.19: {lemma: "无", morph: "VERB|Polarity=Neg", gloss: "no"}  # 无
     yj.51.7.20: {lemma: "咎", morph: "NOUN", gloss: "blame"}  # 咎
     yj.51.7.21: {lemma: "婚", morph: "NOUN", gloss: "marriage"}  # 婚
@@ -620,15 +620,15 @@
     yj.55.7.18: {lemma: "不", morph: "ADV|Polarity=Neg", gloss: "not"}  # 不
     yj.55.7.19: {lemma: "覿", morph: "VERB", gloss: "seen"}  # 觌
     yj.55.7.20: {lemma: "凶", morph: "VERB|Degree=Pos", gloss: "ominous"}  # 凶
-    yj.56.1.1: {lemma: "旅", morph: "PROPN", gloss: "Traveller"}  # 旅
+    yj.56.1.1: {lemma: "旅", morph: "PROPN", gloss: "Traveler"}  # 旅
     yj.56.1.2: {lemma: "小", morph: "VERB|Degree=Pos", gloss: "small"}  # 小
     yj.56.1.3: {lemma: "亨", morph: "VERB", gloss: "penetrating"}  # 亨
-    yj.56.1.4: {lemma: "旅", morph: "NOUN", gloss: "traveller"}  # 旅
+    yj.56.1.4: {lemma: "旅", morph: "NOUN", gloss: "traveler"}  # 旅
     yj.56.1.5: {lemma: "貞", morph: "VERB", gloss: "divining"}  # 貞
     yj.56.1.6: {lemma: "吉", morph: "VERB|Degree=Pos", gloss: "auspicious"}  # 吉
     yj.56.2.1: {lemma: "初", morph: "NOUN", gloss: "first"}  # 初
     yj.56.2.2: {lemma: "六", morph: "NUM", gloss: "six"}  # 六
-    yj.56.2.3: {lemma: "旅", morph: "NOUN", gloss: "traveller"}  # 旅
+    yj.56.2.3: {lemma: "旅", morph: "NOUN", gloss: "traveler"}  # 旅
     yj.56.2.4: {lemma: "瑣", morph: "VERB|Degree=Pos", gloss: "petty"}  # 瑣
     yj.56.2.5: {lemma: "瑣", morph: "VERB|Degree=Pos", gloss: "petty"}  # 瑣
     yj.56.2.6: {lemma: "斯", morph: "PRON|PronType=Dem", gloss: "this"}  # 斯
@@ -638,7 +638,7 @@
     yj.56.2.10: {lemma: "災", morph: "NOUN", gloss: "disaster"}  # 災
     yj.56.3.1: {lemma: "六", morph: "NUM", gloss: "six"}  # 六
     yj.56.3.2: {lemma: "二", morph: "NUM", gloss: "two"}  # 二
-    yj.56.3.3: {lemma: "旅", morph: "NOUN", gloss: "traveller"}  # 旅
+    yj.56.3.3: {lemma: "旅", morph: "NOUN", gloss: "traveler"}  # 旅
     yj.56.3.4: {lemma: "即", morph: "VERB", gloss: "reaching"}  # 即
     yj.56.3.5: {lemma: "次", morph: "NOUN", gloss: "lodging"}  # 次
     yj.56.3.6: {lemma: "懷", morph: "VERB", gloss: "holding"}  # 懷
@@ -650,7 +650,7 @@
     yj.56.3.12: {lemma: "貞", morph: "VERB", gloss: "divining"}  # 貞
     yj.56.4.1: {lemma: "九", morph: "NUM", gloss: "nine"}  # 九
     yj.56.4.2: {lemma: "三", morph: "NUM", gloss: "three"}  # 三
-    yj.56.4.3: {lemma: "旅", morph: "NOUN", gloss: "traveller"}  # 旅
+    yj.56.4.3: {lemma: "旅", morph: "NOUN", gloss: "traveler"}  # 旅
     yj.56.4.4: {lemma: "焚", morph: "VERB", gloss: "burns"}  # 焚
     yj.56.4.5: {lemma: "其", morph: "PRON|Person=3|PronType=Prs", gloss: "his"}  # 其
     yj.56.4.6: {lemma: "次", morph: "NOUN", gloss: "lodging"}  # 次
@@ -662,7 +662,7 @@
     yj.56.4.12: {lemma: "厲", morph: "NOUN", gloss: "danger"}  # 厲
     yj.56.5.1: {lemma: "九", morph: "NUM", gloss: "nine"}  # 九
     yj.56.5.2: {lemma: "四", morph: "NUM", gloss: "four"}  # 四
-    yj.56.5.3: {lemma: "旅", morph: "NOUN", gloss: "traveller"}  # 旅
+    yj.56.5.3: {lemma: "旅", morph: "NOUN", gloss: "traveler"}  # 旅
     yj.56.5.4: {lemma: "于", morph: "ADP", gloss: "at"}  # 于
     yj.56.5.5: {lemma: "處", morph: "NOUN", gloss: "resting-place"}  # 處
     yj.56.5.6: {lemma: "得", morph: "VERB", gloss: "gets"}  # 得
@@ -690,7 +690,7 @@
     yj.56.7.4: {lemma: "焚", morph: "VERB", gloss: "burns"}  # 焚
     yj.56.7.5: {lemma: "其", morph: "PRON|Person=3|PronType=Prs", gloss: "its"}  # 其
     yj.56.7.6: {lemma: "巢", morph: "NOUN", gloss: "nest"}  # 巢
-    yj.56.7.7: {lemma: "旅", morph: "VERB", gloss: "travelling"}  # 旅
+    yj.56.7.7: {lemma: "旅", morph: "VERB", gloss: "traveling"}  # 旅
     yj.56.7.8: {lemma: "人", morph: "NOUN", gloss: "man"}  # 人
     yj.56.7.9: {lemma: "先", morph: "ADV", gloss: "first"}  # 先
     yj.56.7.10: {lemma: "笑", morph: "VERB", gloss: "laughs"}  # 笑
@@ -1190,13 +1190,13 @@
     yj.63.6.1: {lemma: "九", morph: "NUM", gloss: "nine"}  # 九
     yj.63.6.2: {lemma: "五", morph: "NUM", gloss: "five"}  # 五
     yj.63.6.3: {lemma: "東", morph: "VERB|Degree=Pos", gloss: "eastern"}  # 東
-    yj.63.6.4: {lemma: "鄰", morph: "NOUN", gloss: "neighbour"}  # 鄰
+    yj.63.6.4: {lemma: "鄰", morph: "NOUN", gloss: "neighbor"}  # 鄰
     yj.63.6.5: {lemma: "殺", morph: "VERB", gloss: "kills"}  # 殺
     yj.63.6.6: {lemma: "牛", morph: "NOUN", gloss: "ox"}  # 牛
     yj.63.6.7: {lemma: "不", morph: "ADV|Polarity=Neg", gloss: "not"}  # 不
     yj.63.6.8: {lemma: "如", morph: "VERB", gloss: "as-good-as"}  # 如
     yj.63.6.9: {lemma: "西", morph: "VERB|Degree=Pos", gloss: "western"}  # 西
-    yj.63.6.10: {lemma: "鄰", morph: "NOUN", gloss: "neighbour"}  # 鄰
+    yj.63.6.10: {lemma: "鄰", morph: "NOUN", gloss: "neighbor"}  # 鄰
     yj.63.6.11: {lemma: "之", morph: "SCONJ", gloss: "'s"}  # 之
     yj.63.6.12: {lemma: "禴", morph: "NOUN", gloss: "spring-offering"}  # 禴
     yj.63.6.13: {lemma: "祭", morph: "NOUN", gloss: "sacrifice"}  # 祭

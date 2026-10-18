@@ -7,7 +7,7 @@ The manifest names the article by hand, so a judgment is never made silently:
     wikipedia: {match: none}                          # nothing fits; the about goes in curated/ by hand
 
 `match` says what the article describes. A `work` article describes this text; an `author` or `parent`
-article (the poet, the collection an excerpt comes from) is still shown, labelled as such, so the page
+article (the poet, the collection an excerpt comes from) is still shown, labeled as such, so the page
 never presents an article on Enheduanna as an article on the Temple Hymns. An optional `lang` picks
 another Wikipedia (default en).
 

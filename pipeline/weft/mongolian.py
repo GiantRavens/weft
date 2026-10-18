@@ -198,7 +198,7 @@ def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[
 
 
 def line_metre(etoks, edition):
-    return False, []          # prose: no metre
+    return False, []          # prose: no meter
 
 
 # ---------------------------------------------------------------- sound

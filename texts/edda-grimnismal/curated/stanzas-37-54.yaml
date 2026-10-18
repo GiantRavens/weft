@@ -1,9 +1,9 @@
 # Human overlay for Grímnismál stanzas 37-54. Lemmas follow Zoëga, A Concise Dictionary of Old
-# Icelandic (1910); morphology uses Universal Dependencies features. Staves and metre by hand; j alliterates
-# with the vowels, as in Eddic practice; where the half-lines do not share a stave the metre string says so.
+# Icelandic (1910); morphology uses Universal Dependencies features. Staves and meter by hand; j alliterates
+# with the vowels, as in Eddic practice; where the half-lines do not share a stave the meter string says so.
 - by: "Claude Fable 5.1 (Weft phase 0), for review by Skip and a scholar"
   date: "2026-10-08"
-  why: "hand lemma, morphology, gloss, staves and metre for stanzas 37-54; no treebank exists for Eddic poetry; written in the compact spec and expanded by weft overlay"
+  why: "hand lemma, morphology, gloss, staves and meter for stanzas 37-54; no treebank exists for Eddic poetry; written in the compact spec and expanded by weft overlay"
   status: "draft"
   set:
     grm.37.1: {metre: "long line, a-verse · stave vowel"}
@@ -146,7 +146,7 @@
     grm.41.6.4: {lemma: "skapa", morph: "VERB|Case=Nom|Gender=Neut|Number=Plur|Tense=Past|VerbForm=Part", gloss: "shaped", stave: true}   # sköpuð
     grm.42.1: {metre: "long line, a-verse · stave vowel"}
     grm.42.1.1: {lemma: "Ullr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Ullr's", stave: true}   # Ullar
-    grm.42.1.2: {lemma: "hylli", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "favour"}   # hylli
+    grm.42.1.2: {lemma: "hylli", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "favor"}   # hylli
     grm.42.2: {metre: "long line, b-verse · stave vowel"}
     grm.42.2.1: {lemma: "hafa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "has"}   # hefr
     grm.42.2.2: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
@@ -430,7 +430,7 @@
     grm.51.6: {metre: "long line, b-verse · stave vowel"}
     grm.51.6.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
     grm.51.6.2: {lemma: "Óðinn", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Odin's", stave: true}   # Óðins
-    grm.51.6.3: {lemma: "hylli", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "favour"}   # hylli
+    grm.51.6.3: {lemma: "hylli", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "favor"}   # hylli
     grm.52.1: {metre: "long line, a-verse · stave f"}
     grm.52.1.1: {lemma: "fjölð", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "much", stave: true}   # Fjölð
     grm.52.1.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek

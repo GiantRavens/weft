@@ -1,7 +1,7 @@
 # Human overlay for Tirukkural chapter 1. No treebank exists for Old Tamil: lemma, morphology and gloss
 # are by hand. Lemmas are Tamil Lexicon (University of Madras, 1924-36) headwords; a word the edition
 # prints as one (a compound, or two words joined by sandhi) lists its parts with " + ". Morphology uses
-# Universal Dependencies features. A token that is only the last foot of a word split for the metre
+# Universal Dependencies features. A token that is only the last foot of a word split for the meter
 # (வார், தார்) carries the lemma and features of the whole word; its gloss is the part it adds.
 - by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
   date: 2026-09-30

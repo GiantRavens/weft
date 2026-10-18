@@ -1,9 +1,9 @@
 # Human overlay for Vafþrúðnismál stanzas 19-37. Lemmas follow Zoëga, A Concise Dictionary of Old
-# Icelandic (1910); morphology uses Universal Dependencies features. Staves and metre by hand; j alliterates
-# with the vowels, as in Eddic practice; where the half-lines do not share a stave the metre string says so.
+# Icelandic (1910); morphology uses Universal Dependencies features. Staves and meter by hand; j alliterates
+# with the vowels, as in Eddic practice; where the half-lines do not share a stave the meter string says so.
 - by: "Claude Fable 5.1 (Weft phase 0), for review by Skip and a scholar"
   date: "2026-10-08"
-  why: "hand lemma, morphology, gloss, staves and metre for stanzas 19-37; no treebank exists for Eddic poetry; written in the compact spec and expanded by weft overlay"
+  why: "hand lemma, morphology, gloss, staves and meter for stanzas 19-37; no treebank exists for Eddic poetry; written in the compact spec and expanded by weft overlay"
   status: "draft"
   set:
     vaf.19.1: {metre: "long line, a-verse · stave f"}

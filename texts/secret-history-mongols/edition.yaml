@@ -1,4 +1,4 @@
-# Weft edition of the Secret History of the Mongols, sections 1 to 10: from the blue-grey wolf and
+# Weft edition of the Secret History of the Mongols, sections 1 to 10: from the blue-gray wolf and
 # the fallow doe to the marriage of Dobun Mergen and Alan Qo'a and their two sons.
 #
 # The text is the Ming transcription (Middle Mongolian written in Chinese characters) as printed by
@@ -22,7 +22,7 @@ verify_in: sources/shiratori1943-module.lua
 verify_strip: '\{\{ϴ\|入力者注=(?:[^{}]|\{\{[^{}]*\}\})*\}\}|\{\{ϕ\|L=.\}\}|\{\{ϕ\|R=|(?<=R=.)\}\}|\{\{ϕ\||\|[^{}|]*\|[^{}|]*\}\}|-|[\ufe00-\ufe0f]'
 sections:
   - id: "1"
-    title: "§1 The blue-grey wolf and the fallow doe"
+    title: "§1 The blue-gray wolf and the fallow doe"
     lines:
       - tokens:   # Ye Dehui edition, juan 1, leaf 1, column 2
         - {t: "成吉思", pz: "(太祖)名", sh: "Čiṅgis"}

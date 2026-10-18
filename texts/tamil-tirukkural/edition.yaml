@@ -9,7 +9,7 @@
 #
 #   t   the Tamil script, as printed
 #   n   the transliteration, ISO 15919, typed by hand. `weft draft` converts t to the same
-#       transliteration and reports any difference (translit-mismatch). Sound and metre come from n.
+#       transliteration and reports any difference (translit-mismatch). Sound and meter come from n.
 joiner: " "
 verify_in: sources/srinivasan1997-p9.txt
 verify_strip: '\.?\s*\{\{[Pp]line\|\d+\|r\}\}'

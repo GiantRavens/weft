@@ -41,7 +41,7 @@ northern  Educated northern German before the stage norm, approximate. The same 
             is not known. The trill is the conservative choice and is the r Siebs prescribed.
           - st and sp at the start of a morpheme are [ʃt] and [ʃp] (Stand, verstehen, Sprung),
             elsewhere [st] and [sp] (ist, Fenster). The [st] of Hamburg and Hanover (the
-            "s-pitze S-tein") is a northwestern feature and is not modelled.
+            "s-pitze S-tein") is a northwestern feature and is not modeled.
           - long ä is [ɛː], kept apart from long e [eː]: a reading pronunciation that follows the
             spelling. Many northern speakers merged long ä with long e, and either value may have
             been heard; the evidence does not decide between them for these two speakers.
@@ -51,7 +51,7 @@ northern  Educated northern German before the stage norm, approximate. The same 
           standard pronunciation (Viëtor, Die Aussprache des Schriftdeutschen, 1885 and later
           editions; Siebs, Deutsche Bühnenaussprache, 1898, which records the northern usage it
           set aside; von Polenz, Deutsche Sprachgeschichte, volumes 2 and 3, 1994-1999).
-          Not modelled: the glottal stop before initial vowels; any East Prussian features of
+          Not modeled: the glottal stop before initial vowels; any East Prussian features of
           Kant's own speech, for which the scheme has no reliable description; the Central German
           features of Nietzsche's home region (the
           merger of p and b, t and d, the unrounding of ü and ö), which educated reading avoided
@@ -81,7 +81,7 @@ ecg1545   East Central German as spoken and read in Wittenberg in the 1540s (the
           Orthographia, 1531, which names Luther's prints and the chancery of Emperor Maximilian
           as models); and the histories of the language (von Polenz, Deutsche Sprachgeschichte,
           volume 1, 2nd edition 2000; Besch, Luther und die deutsche Sprache, 2014). Features
-          modelled:
+          modeled:
           - the new diphthongs: MHG î, û, iu were already ei, au, eu in East Central German, as
             Luther's spelling shows (bey, sein, Hause, auff for MHG bî, sîn, hûs, ûf). Their values
             are given as [aɪ], [aʊ], [ɔʏ]; the first element may have been closer ([ɛɪ], [ɔʊ]),
@@ -100,7 +100,7 @@ ecg1545   East Central German as spoken and read in Wittenberg in the 1540s (the
           - r is a tongue-tip trill; g at the end of a syllable after a vowel is a fricative, as in
             the northern scheme; final b d g s are voiceless.
           - the final -e that Luther keeps (Hause, Gnade, Seele) is said.
-          Not modelled: the unrounding of ü, ö and eu to i, e and ei, which the dialects of Upper
+          Not modeled: the unrounding of ü, ö and eu to i, e and ei, which the dialects of Upper
           Saxony show and which the histories date to the late Middle Ages in the region. Luther's
           prints keep ü and ö (Geblüt, trösten), and the scheme follows the print, as a reading
           of Scripture likely would; how far unrounding reached such a reading is not known.
@@ -610,7 +610,7 @@ KEY = {
         ("y", "j before a vowel (Jesus); j before a consonant is the vowel i (jm, IM)"),
     ],
     "northern": [
-        ("", "Educated northern German before the stage norm of 1898, approximate: reconstructed from the grammarians and pronunciation handbooks of the period. The label above gives the time and place modelled for this work."),
+        ("", "Educated northern German before the stage norm of 1898, approximate: reconstructed from the grammarians and pronunciation handbooks of the period. The label above gives the time and place modeled for this work."),
         ("CAPS", "the stressed syllable; hyphens divide syllables. Small words (der, und, zu, ich) are unstressed"),
         ("uh", "the reduced vowel of unstressed syllables (ə), as in the a of about"),
         ("-uhr", "the ending -er, with its r sounded"),

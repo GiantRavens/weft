@@ -2,7 +2,7 @@
 # (1910); morphology uses Universal Dependencies features.
 - by: Claude (Weft phase 0), for review by Skip and a scholar
   date: 2026-10-01
-  why: hand lemma, morphology, gloss, staves and metre; no treebank exists for Eddic poetry
+  why: hand lemma, morphology, gloss, staves and meter; no treebank exists for Eddic poetry
   status: draft
   set:
     hav.21.1: {metre: "long line, a-verse · stave h"}
@@ -320,7 +320,7 @@
     hav.31.6.2: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
     hav.31.6.3: {lemma: "með", morph: "ADP", gloss: "among"}   # með
     hav.31.6.4: {lemma: "gramr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "foes", stave: true}   # grömum
-    hav.31.6.5: {lemma: "glama", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "he-clamour", stave: true}   # glami
+    hav.31.6.5: {lemma: "glama", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "he-clamor", stave: true}   # glami
     hav.32.1: {metre: "long line, a-verse · stave g"}
     hav.32.1.1: {lemma: "gumi", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "men", stave: true}   # Gumnar
     hav.32.1.2: {lemma: "margr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "many"}   # margir

@@ -30,7 +30,7 @@ lisboa1540  Portuguese as an educated Lisbon reader of the 1540s would have read
               [ɾ]; l at the end of a syllable is dark [ɫ].
             - Nasal vowels as today; final -em is [ẽ] rather than today's [ẽj̃]; -am and -ão both [ɐ̃w̃].
             - b and v are distinct, v = [v] (the Lisbon norm; northern speakers merged them).
-            Camões's own speech is not modelled, nor the metre's elisions: each word is phonemized alone.
+            Camões's own speech is not modeled, nor the metre's elisions: each word is phonemized alone.
 europeu     Standard European Portuguese (Lisbon) today: unstressed a [ɐ], e [ɨ], o [u]; ei [ɐj], ou [o];
             initial r and rr the uvular [ʁ]; s at the end of a syllable [ʃ]; ch [ʃ]; final -em [ẽj̃].
 brasileiro  Standard Brazilian Portuguese (the São Paulo norm): final unstressed e [i], o [u]; t and d before

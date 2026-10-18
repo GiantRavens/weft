@@ -25,7 +25,7 @@
     ["source", "Source text"],
     ...(D.work.show_translit && D.lines.some((l) => l.tokens.some((t) => t.norm)) ? [["translit", D.work.translit_label || "Transliteration"]] : []), ["sound", "Sound"], ["gloss", "Gloss, word for word"],
     ...(D.lines.some((l) => l.reading) ? [["reading", D.work.reading_label || "Reading aloud, whole line"]] : []),
-    ["metre", "Metre"], ["sense", "Translations"], ["notes", "Note markers"],
+    ["metre", "Meter"], ["sense", "Translations"], ["notes", "Note markers"],
   ];
   const SLIDERS = [
     ["--src-size", "Source size", 1.0, 3.2, 0.05, "rem", 1.75],
@@ -253,7 +253,7 @@
       h("dt", { text: "form" }), h("dd", { text: t.morph_text || "indeclinable" }),
       ...(t.script ? [h("dt", { text: D.work.script_word || "runes" }), h("dd", { class: "scr-big", text: t.script })] : []),
       ...(t.norm ? [h("dt", { text: { ja: "reading" }[D.work.language] || (D.work.show_translit ? (D.work.translit_label || "Transliteration").toLowerCase() : "normalized") }), h("dd", { lang: D.work.show_translit ? null : LANG, text: t.norm })] : []),
-      ...(t.metre_form ? [h("dt", { text: "metrical reading" }), h("dd", { text: `${t.metre_form}: the metre sounds a syllable the written form lost` })] : []),
+      ...(t.metre_form ? [h("dt", { text: "metrical reading" }), h("dd", { text: `${t.metre_form}: the meter sounds a syllable the written form lost` })] : []),
       ...(t.enclitic ? [h("dt", { text: "enclitic" }), h("dd", { lang: LANG, text: `${t.enclitic.form} (${t.enclitic.lemma}${t.enclitic.gloss ? ", '" + t.enclitic.gloss + "'" : t.enclitic.lemma === "que" ? ", 'and'" : ""}), attached to the word` })] : []),
       ...(t.prefixes || []).flatMap((pf) => [h("dt", { text: "prefix" }),
         h("dd", {}, h("span", { lang: LANG, text: pf.form + " " }), `'${pf.gloss}'${pf.morph_text ? ", " + pf.morph_text : ""}`)]),
@@ -357,11 +357,11 @@
         D.schemes.length > 1 ? "; Loom offers later traditions of pronunciation after it." : "."),
       h("li", {}, sw("gloss"), "The green italic line is the gloss: each word rendered on its own, in the order of the original, so a sentence can be followed word by word. ",
         "A hyphenated gloss is one word of the original. The gloss is not a translation."),
-      has((t) => t.stave) ? h("li", {}, sw("stave"), "A coloured first letter marks a stave, the alliterating sound that binds a verse to its partner. The grey line beneath names the verse and its staves.") : null,
-      !has((t) => t.stave) && metreMarks ? h("li", {}, "The row of long and short marks beneath a line is its metre, divided into feet by bars.") : null,
-      !has((t) => t.stave) && !metreMarks && metreText ? h("li", {}, "The grey line beneath a line describes its metre.") : null,
+      has((t) => t.stave) ? h("li", {}, sw("stave"), "A colored first letter marks a stave, the alliterating sound that binds a verse to its partner. The gray line beneath names the verse and its staves.") : null,
+      !has((t) => t.stave) && metreMarks ? h("li", {}, "The row of long and short marks beneath a line is its meter, divided into feet by bars.") : null,
+      !has((t) => t.stave) && !metreMarks && metreText ? h("li", {}, "The gray line beneath a line describes its meter.") : null,
       has((t) => t.uncertain) ? h("li", {}, "A dotted underline under a whole word marks a reading or a sound that is uncertain.") : null,
-      D.notes.length ? h("li", {}, "A dotted underline in the text colour marks a word with a note. The ¶ beside a line number opens the notes on that line.") : null,
+      D.notes.length ? h("li", {}, "A dotted underline in the text color marks a word with a note. The ¶ beside a line number opens the notes on that line.") : null,
       D.translations.length ? h("li", {}, "Translations follow the lines they render, each with its translator and date, so the gloss and a published translation can be read side by side.") : null,
       h("li", {}, "Loom, above, sets which rows show, the pronunciation, the translations, and the sizes."),
     ].filter(Boolean);
@@ -472,7 +472,7 @@
     }
     box.append(
       h("h2", { text: "Cast a hexagram" }),
-      h("div", { class: "cast-intro", text: "The three-coin method, as traditionally practised: three coins are thrown six times, building the hexagram from the bottom line up. Heads count 3 and tails 2, so each throw totals 6, 7, 8 or 9. Odd totals give an unbroken line, even totals a broken one; 6 and 9 are 'old' lines that change into their opposite, giving a second hexagram. This page describes the practice; it makes no claim about what the result means." }),
+      h("div", { class: "cast-intro", text: "The three-coin method, as traditionally practiced: three coins are thrown six times, building the hexagram from the bottom line up. Heads count 3 and tails 2, so each throw totals 6, 7, 8 or 9. Odd totals give an unbroken line, even totals a broken one; 6 and 9 are 'old' lines that change into their opposite, giving a second hexagram. This page describes the practice; it makes no claim about what the result means." }),
       h("div", { class: "cast-controls" },
         h("button", { type: "button", class: "tool tool-primary", onclick: () => { throws = Array.from({ length: 6 }, coin); show(); }, text: "Throw the coins" }),
         h("details", {}, h("summary", { text: "Enter your own throws" }),

@@ -1,4 +1,4 @@
-"""Vedic Sanskrit: accented transliteration -> sound, Devanagari accent marks -> pitch, and metre.
+"""Vedic Sanskrit: accented transliteration -> sound, Devanagari accent marks -> pitch, and meter.
 
 Each token gives its recited form in IAST transliteration (n), with the Vedic pitch accent written
 the scholarly way: an acute for the raised pitch (udātta, á), a grave for an independent falling
@@ -171,7 +171,7 @@ def phonemize(word: str, scheme: str = "vedic", quantities=None, **_) -> dict:
     return {"ipa": ud.normalize("NFC", ".".join(ipa)), "respell": "-".join(rsp), "syllables": len(sylls)}
 
 
-# ---------------------------------------------------------------- metre
+# ---------------------------------------------------------------- meter
 def line_weights(words: list[str]) -> list[bool]:
     """Heavy (True) or light for each syllable of a line recited as one stream."""
     stream = [s for w in words for s in segments(w)]
@@ -179,7 +179,7 @@ def line_weights(words: list[str]) -> list[bool]:
 
 
 def metre(words: list[str], pada_starts: list[int]) -> tuple[str, list[int]]:
-    """Weft metre string with | between pādas, and the syllable count of each pāda.
+    """Weft meter string with | between pādas, and the syllable count of each pāda.
     pada_starts: indexes into `words` where a new pāda begins (after the first)."""
     counts = [phonemize(w)["syllables"] for w in words]
     cuts = [sum(counts[:k]) for k in pada_starts]

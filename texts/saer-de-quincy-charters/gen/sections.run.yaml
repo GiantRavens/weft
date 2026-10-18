@@ -13,7 +13,7 @@ shift_left: []
 predicted_gaps:
 - 'no treebank: lemma and morphology hand-annotated against Lewis and Short, with the charter vocabulary (elemosina, warantizo, ius patronatus) after Niermeyer and Du Cange; draft'
 - the Anglo-Latin reading is the one built for Magna Carta (England, about 1215) and is reconstructed from spelling and from French and English sound history; the Duglyn charter was most likely written
-  by a clerk in Scotland, whose Latin may have differed in ways not modelled; approximate
+  by a clerk in Scotland, whose Latin may have differed in ways not modeled; approximate
 - 'both texts come from OCR of the printed editions: each line is checked against the OCR with the misreadings declared as verify_corrections in edition.yaml, each a reading of the page image (gask.15;
   duglyn.1, 3, 8, 12); duglyn.7 has an OCR misreading too but passes, because the same clause is read correctly in no. 73 of the same volume'
 - the Gask charter keeps the 1908 edition's medieval punctuation, a raised point and a slanted stroke, as separate marks after the word; they carry no sound or gloss

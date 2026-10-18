@@ -741,7 +741,7 @@ sections:
       - tokens: [{t: 六}, {t: 五}, {t: 來, oc: 2, caesura: true}, {t: 章}, {t: 有, caesura: true}, {t: 慶}, {t: 譽}, {t: 吉, caesura: true}]   # 六五：來章，有慶譽，吉。
       - tokens: [{t: 上, oc: 3}, {t: 六}, {t: 豐, caesura: true}, {t: 其, oc: 2}, {t: 屋}, {t: 蔀, caesura: true}, {t: 其, oc: 2}, {t: 家}, {t: 窺, caesura: true}, {t: 其, oc: 2}, {t: 戶}, {t: 闃, caesura: true}, {t: 其, oc: 2}, {t: 无}, {t: 人}, {t: 三, caesura: true}, {t: 歲}, {t: 不}, {t: 觌}, {t: 凶, caesura: true}]   # 上六：豐其屋，蔀其家，窺其戶，闃其无人，三歲不觌，凶。
   - id: "56"
-    title: "Hexagram 56, Lǚ 旅, the traveller"
+    title: "Hexagram 56, Lǚ 旅, the traveler"
     hexagram: "001101"
     trigrams: {lower: "艮", upper: "離"}
     verify_in: sources/wikisource/56.txt

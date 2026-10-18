@@ -3,7 +3,7 @@
 # Dictionary (1916). Morphology uses Universal Dependencies features.
 - by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
   date: 2026-09-29
-  why: pilot lines 1-11. Hand lemma, morphology, gloss, staves and metre; no treebank exists
+  why: pilot lines 1-11. Hand lemma, morphology, gloss, staves and meter; no treebank exists
   status: draft
   set:
     beo.1: {metre: "long line, two half-lines · stave g"}
@@ -50,7 +50,7 @@
     beo.8.1: {lemma: "weaxan", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "grew", stave: true}   # wēox
     beo.8.2: {lemma: "under", morph: "ADP", gloss: "under"}   # under
     beo.8.3: {lemma: "wolcen", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "clouds", stave: true}   # wolcnum
-    beo.8.4: {lemma: "weorþmynd", morph: "NOUN|Case=Dat|Gender=Fem|Number=Plur", gloss: "in-honours", stave: true}   # weorð-myndum
+    beo.8.4: {lemma: "weorþmynd", morph: "NOUN|Case=Dat|Gender=Fem|Number=Plur", gloss: "in-honors", stave: true}   # weorð-myndum
     beo.8.5: {lemma: "þēon", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "prospered"}   # ðāh
     beo.9: {metre: "long line, two half-lines · stave vowel"}
     beo.9.1: {lemma: "ōþ", morph: "SCONJ", gloss: "until"}   # ōð

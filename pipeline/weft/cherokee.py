@@ -31,7 +31,7 @@ c1828    Cherokee as the New Echota press wrote it in 1828, approximate. What re
          present descriptions give [ts] or [dʒ] by dialect. What rests on present descriptions of the syllabary
          instead: ka and the t-row (ta, te, ti) as aspirated stops, hna as a voiceless n, the laterals tl and dl,
          and w, y, h, l, m, n, s. Worcester's remark that many syllables "are sometimes aspirated" (hwi, hli, and
-         no "as if written hno") is not modelled.
+         no "as if written hno") is not modeled.
 modern   Cherokee as the syllabary is read in Oklahoma today: the same values, with ts as [dʒ] (the j of jam), the
          g- and d-rows as plain unaspirated k and t, and w as a glide made without rounding the lips ([ɰ]).
 

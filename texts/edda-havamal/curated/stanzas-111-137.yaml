@@ -1,10 +1,10 @@
 # Human overlay for Hávamál stanzas 111-137. Lemmas follow Zoëga, A Concise Dictionary of Old
-# Icelandic (1910); morphology uses Universal Dependencies features. Staves and metre by hand; where the
+# Icelandic (1910); morphology uses Universal Dependencies features. Staves and meter by hand; where the
 # alliteration of a line is irregular or the line is one of the list forms (144, the Veistu lines; the
-# Loddfáfnir formula), the metre string says so.
+# Loddfáfnir formula), the meter string says so.
 - by: "Claude (Weft phase 0), for review by Skip and a scholar"
   date: "2026-10-04"
-  why: "hand lemma, morphology, gloss, staves and metre for stanzas 111-137; no treebank exists for Eddic poetry; the first 80 were done the same way"
+  why: "hand lemma, morphology, gloss, staves and meter for stanzas 111-137; no treebank exists for Eddic poetry; the first 80 were done the same way"
   status: "draft"
   set:
     hav.111.1: {metre: "long line, a-verse · stave þ"}
@@ -501,7 +501,7 @@
     hav.123.5.3: {lemma: "gera", morph: "VERB|VerbForm=Inf", gloss: "make", stave: true}   # gerva
     hav.123.5.4: {lemma: "mega", morph: "VERB|VerbForm=Inf", gloss: "be-able"}   # mega
     hav.123.6: {metre: "full line · staves l"}
-    hav.123.6.1: {lemma: "líknfastr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "firm-in-favour", stave: true}   # líknfastan
+    hav.123.6.1: {lemma: "líknfastr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "firm-in-favor", stave: true}   # líknfastan
     hav.123.6.2: {lemma: "at", morph: "ADP", gloss: "by"}   # at
     hav.123.6.3: {lemma: "lof", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "praise", stave: true}   # lofi
     hav.124.1: {metre: "long line, a-verse · stave s"}
@@ -947,7 +947,7 @@
     hav.134.4.6: {lemma: "geta", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "gettest", stave: true}   # getr
     hav.134.5: {metre: "long line, a-verse · stave h"}
     hav.134.5.1: {lemma: "at", morph: "ADP", gloss: "at"}   # at
-    hav.134.5.2: {lemma: "hárr", morph: "ADJ|Case=Dat|Gender=Masc|Number=Sing", gloss: "a-grey-haired", stave: true}   # hárum
+    hav.134.5.2: {lemma: "hárr", morph: "ADJ|Case=Dat|Gender=Masc|Number=Sing", gloss: "a-gray-haired", stave: true}   # hárum
     hav.134.5.3: {lemma: "þulr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "sage"}   # þul
     hav.134.6: {metre: "long line, b-verse · stave h"}
     hav.134.6.1: {lemma: "hlæja", morph: "VERB|Mood=Imp|Number=Sing|Person=2|Tense=Pres", gloss: "laugh", stave: true}   # hlæ

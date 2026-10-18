@@ -528,6 +528,6 @@ predicted_gaps:
   - "the Wikisource pages do not name their base text and in 48 places print one reading with another as 一作; Weft follows the printed reading, which in some places differs from the Wang Bi text Legge translated (see the note)"
   - "Wikisource prints modern punctuation; Weft's tokens follow it as caesura marks but do not reproduce it (the source is checked with punctuation, markup and whitespace stripped)"
   - "no treebank; lemma, part of speech and gloss by hand, draft, for hexagrams 1 to 16 only in this pass: hexagrams 17 to 64 are not yet annotated (token-no-lemma, token-no-morph, token-no-gloss in weft check)"
-  - "prose with some rhyme: no metre row"
+  - "prose with some rhyme: no meter row"
   - "one public-domain English translation (Legge 1882). McClatchie's 1876 translation, the first in English, is public domain but no open digitization of it was found; Wilhelm-Baynes (1950) is cited, not reproduced"
   - "Legge's text is from the Internet Archive OCR; diacritics in his romanized names (â, ă, î, û) are not reliably kept by the OCR and are not restored; corrections are listed in sense/legge1882.yaml"

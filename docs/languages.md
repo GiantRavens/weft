@@ -32,7 +32,7 @@ that use it. Where the repository names no source, this page says so.
   no value show no invitation. Twenty-seven of the sixty-one public works set a value (see the table, and the
   last section).
 - **Each word alone.** Unless a section below says otherwise, each word is phonemized on its own:
-  elision, sandhi and assimilation across words are not modelled in the sound row.
+  elision, sandhi and assimilation across words are not modeled in the sound row.
 
 ### How to propose a change
 
@@ -210,18 +210,18 @@ competing view.
 
 **What it rests on.** The ancient phonetic treatises (prātiśākhyas) and Pāṇini's statement on short
 a (module). The notes cite W. S. Allen, *Phonetics in Ancient India* (1953), and Macdonell, *A Vedic
-Grammar for Students* (1916), appendix III; and Arnold, *Vedic Metre* (1905), for the metre. The
+Grammar for Students* (1916), appendix III; and Arnold, *Vedic Meter* (1905), for the meter. The
 accent is hand-entered in the IAST form `n`; `decode_marks` reads the Devanagari accent strokes back
 into raised syllables so the two can be checked against each other (tested in
 `tests/test_golden.py`).
 
 **Where it is weakest.** The manifest: the treatises are several centuries later than the hymns.
-Some pādas count seven syllables as written where recitation restored a lost syllable; the metre row
+Some pādas count seven syllables as written where recitation restored a lost syllable; the meter row
 shows the written count. The treebank's words are unaccented, so the accent comes from the edition
 alone.
 
 **What a specialist could improve.** Vowel and consonant values in `sanskrit.py`; the accented
-forms in `texts/rigveda-1-1/edition.yaml`; a rule for the restored syllables, which the metre row
+forms in `texts/rigveda-1-1/edition.yaml`; a rule for the restored syllables, which the meter row
 does not yet count.
 
 ## Ancient Greek
@@ -253,7 +253,7 @@ dactyls or spondees plus a final foot, with a cost for each rule it leans on (ep
 cum liquida, metrical lengthening, an unlisted long α ι υ, synizesis, neglected digamma), and
 reports each costed choice as a failure class. `test_hexameter_scanner_matches_hand_scansion` in
 `tests/test_golden.py` requires its output to equal every hand scansion in the curated overlays:
-62 lines (Odyssey 1.1-10 and Iliad 1.1-52). Not modelled: digamma beyond a short list of stems,
+62 lines (Odyssey 1.1-10 and Iliad 1.1-52). Not modeled: digamma beyond a short list of stems,
 lengthening before initial liquids except as a costed option, and synizesis beyond word-final -εω.
 
 **Where it is weakest.**
@@ -262,9 +262,9 @@ lengthening before initial liquids except as a costed option, and synizesis beyo
 - Koine: the New Testament manifests note that scholars differ on how far η and υ had moved by the
   first century. The scheme models the first century; the Epictetus (early second century) and
   Marcus Aurelius (late second century) pages relabel it to say their texts are later.
-- Homer: the editor's accentuation of Πηληϊάδεω and the synizesis of -εω are not modelled in the
+- Homer: the editor's accentuation of Πηληϊάδεω and the synizesis of -εω are not modeled in the
   sound row (Iliad manifest). Each word is phonemized alone, so elision and correption across
-  words appear in the metre row only.
+  words appear in the meter row only.
 
 **What a specialist could improve.** Entries in the quantity tables; the digamma stem list and the
 costs in the scanner; the Koine vowel and consonant tables in `greek.py`; a scheme for the language
@@ -390,7 +390,7 @@ Res Gestae).
   warantizo, ius patronatus) after Niermeyer and Du Cange (manifest).
 
 **Where it is weakest.**
-- Every national scheme is labelled approximate. None rests on a description by the author.
+- Every national scheme is labeled approximate. None rests on a description by the author.
 - `anglo-norman`: u as [y], silent h (Harold may have kept his), and whether qu was still [kw]
   (module).
 - `german-humanist`: v as f; v or w is also possible (module and manifest). The module has no eu
@@ -403,10 +403,10 @@ Res Gestae).
   (Luther manifest).
 - `anglo-latin` on the Duglyn charter: the scheme was built for England about 1215, and the charter
   was most likely written by a clerk in Scotland, whose Latin may have differed in ways not
-  modelled (manifest). Medieval spellings (Vniuersis, hec, Scocie) are shown as written, and the
+  modeled (manifest). Medieval spellings (Vniuersis, hec, Scocie) are shown as written, and the
   quantity table restores the classical spelling so that the classical reading is classical
   (manifest). Personal and place names take no long vowels unless a Latin form is attested.
-- Each word is phonemized alone; verse elision is not modelled (Ovid manifest).
+- Each word is phonemized alone; verse elision is not modeled (Ovid manifest).
 
 **What a specialist could improve.** Quantity-table entries, especially hidden quantities and
 medieval words keyed by their classical stems; the rule functions in `latin.py` (`_humanist`,
@@ -464,7 +464,7 @@ transliteration, checked against the script by `tamil_to_iso`.
 
 **Where it is weakest.** The date of the text is uncertain (4th to 6th century AD, with earlier
 estimates), so the reading is "an approximation of an approximate period" (manifest). The values of
-c, ṟ, ṟṟ, ḻ and the āytam are the least certain. Sandhi across words is written but not modelled.
+c, ṟ, ṟṟ, ḻ and the āytam are the least certain. Sandhi across words is written but not modeled.
 
 **What a specialist could improve.** Consonant allophony and the āytam in `tamil.py`, with a named
 reconstruction; the transliterations in `texts/tamil-tirukkural/edition.yaml`.
@@ -567,14 +567,14 @@ the jer rule and a southern variant with fricative г in `oldeastslavic.py`; the
 
 **What it rests on.** The grammarians, early manuscripts, and Dari and Tajik (module). The notes
 cite Lazard, *La langue des plus anciens monuments de la prose persane* (1963), for phonology, and
-Whinfield's notes; the rubāʿī metre follows Elwell-Sutton, *The Persian Metres* (1976), and
+Whinfield's notes; the rubāʿī meter follows Elwell-Sutton, *The Persian Meters* (1976), and
 Farzaad's division of the line. The sound is computed from a hand transliteration that writes every
 vowel.
 
 **Where it is weakest.** Stress is placed by the modern rules, "the least certain part of the
 reconstruction" (module); the ð rule and the vowel qualities are approximate (manifest). Short
-vowels are supplied from Whinfield's notes, the metre and the dictionaries and are checked against
-the script only for its letters. The metre's licences are a reciter's judgment.
+vowels are supplied from Whinfield's notes, the meter and the dictionaries and are checked against
+the script only for its letters. The metre's licenses are a reciter's judgment.
 
 **What a specialist could improve.** The stress rule and the ð rule in `persian.py`; the
 transliterations in `texts/persian-rubaiyat/edition.yaml`.
@@ -612,7 +612,7 @@ sometimes omits a mark.
 ## Japanese
 
 **Schemes.**
-- `edo-1686`, labelled in the manifest "Edo, 1680s and 1690s: as Bashō's contemporaries spoke
+- `edo-1686`, labeled in the manifest "Edo, 1680s and 1690s: as Bashō's contemporaries spoke
   (approximate)": medial は as wa; づ and ぢ as dzu and dji; え, ゑ and medial へ as ye; medial -afu
   as ō.
 - `modern`, standard Hepburn.
@@ -647,7 +647,7 @@ period describes such a reading.
 
 **Where it is weakest.** When final consonants fell silent before consonants, and whether ch and j
 were still affricates (manifest; the module calls the first "the weakest point of the scheme").
-`it1300` is a hypothesis. The speech of the writers (a Venetian and a Pisan) is not modelled.
+`it1300` is a hypothesis. The speech of the writers (a Venetian and a Pisan) is not modeled.
 
 **What a specialist could improve.** Lexicon entries; the final-consonant rule in `oldfrench.py`;
 evidence for or against the Italian reading.
@@ -672,7 +672,7 @@ than speech. The gorgia is left out as not securely attested this early (module 
 manifests).
 
 **What a specialist could improve.** Lexicon entries, especially those marked `# learned`; a
-separate scheme for 1513 if the evidence supports one; the metre rules for synaeresis and dialefe.
+separate scheme for 1513 if the evidence supports one; the meter rules for synaeresis and dialefe.
 
 ## Portuguese
 
@@ -695,7 +695,7 @@ dating of the changes (module). Stress follows the written rule of modern Portug
 
 **Where it is weakest.** The final unstressed o read u in 1540, which Teyssier dates to that century but
 not to a year; the exact values of the apical and dental sibilants; the metre's elisions, which are not
-modelled since each word is sounded alone (manifest). Camões's own speech is not modelled.
+modeled since each word is sounded alone (manifest). Camões's own speech is not modeled.
 
 **What a specialist could improve.** The quality marks in the lexicon; the unstressed-vowel rules of the
 1540 scheme in `portuguese.py`; a rule for synalepha in the decasyllable.
@@ -714,7 +714,7 @@ española*; Penny, *A History of the Spanish Language* (module). The sound comes
 
 **Where it is weakest.** The value of h from Latin f, the b and v distinction, and the quality of the
 sibilants (manifest). How far ts and dz had lost their stop element by 1492 is uncertain (module).
-Columbus's own Genoese and Portuguese-coloured speech is not modelled.
+Columbus's own Genoese and Portuguese-colored speech is not modeled.
 
 **What a specialist could improve.** Lexicon entries; the b and v assignments word by word.
 
@@ -765,7 +765,7 @@ word (module). The sound comes from `pipeline/weft/data/fr_lexicon.yaml`; where 
 `fr1885` form, the word is taken from its modern form with the length rule applied.
 
 **Where it is weakest.** `m1580`: the value of oi, the r of -er infinitives, and the strength of the e caduc
-(manifest). Montaigne's Gascon-coloured speech is not modelled. `fr1885`: vowel length is shown for
+(manifest). Montaigne's Gascon-colored speech is not modeled. `fr1885`: vowel length is shown for
 the word said alone and was reduced inside a phrase; the optional liaisons of formal reading are
 marked by judgment, following Littré where he gives a note; the scheme models the Paris norm of the
 language the Act was written in, not the accents of the delegates, who were not French (manifest).
@@ -792,7 +792,7 @@ Frangk, *Orthographia* (1531); von Polenz, vol. 1; Besch, *Luther und die deutsc
 are given in the German school pronunciation of Latin (manifest).
 
 **Where it is weakest.** `northern`: postvocalic r and long ä (manifests); no description of either
-author's speech; regional features not modelled. `ecg1545`: the diphthong values, the extent of the
+author's speech; regional features not modeled. `ecg1545`: the diphthong values, the extent of the
 p/b and t/d merger, the value of w, and whether unrounding of ü and ö reached a reading of
 Scripture (manifest). Dauid with f is a judgment (manifest).
 
@@ -821,7 +821,7 @@ transcription from the page scans, checked against the Wikisource transcription 
 OCR's misreadings declared token by token (manifest).
 
 **Where it is weakest.** The Handbook used is the third edition, revised by Madan after Steere's
-death, and no recording exists (manifest). Not modelled: the aspirated p, t and k Steere hears where
+death, and no recording exists (manifest). Not modeled: the aspirated p, t and k Steere hears where
 a nasal has been lost; the implosive b, d and g that later descriptions report; tone and intonation
 (module). The long consonants of Arabic loans are uncertain, since the Handbook notes a tendency to
 drop one of them (module and manifest).

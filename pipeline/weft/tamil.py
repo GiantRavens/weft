@@ -1,8 +1,8 @@
-"""Old Tamil: hand transliteration -> sound, Tamil script -> transliteration sensor, and kural metre.
+"""Old Tamil: hand transliteration -> sound, Tamil script -> transliteration sensor, and kural meter.
 
 Each token gives its transliteration (n) in ISO 15919, typed by hand from the Tamil script (t).
 `tamil_to_iso` converts the script to the same transliteration so `weft draft` can check the two
-against each other. Sound and metre are derived from the transliteration.
+against each other. Sound and meter are derived from the transliteration.
 
 Schemes
 -------
@@ -218,7 +218,7 @@ def phonemize(word: str, scheme: str = "old-tamil", quantities=None, **_) -> dic
     return {"ipa": ud.normalize("NFC", ".".join(ipa)), "respell": "-".join(rsp), "syllables": len(sylls)}
 
 
-# ---------------------------------------------------------------- metre (kuṟaḷ veṇpā)
+# ---------------------------------------------------------------- meter (kuṟaḷ veṇpā)
 NER, NIRAI = "nēr", "nirai"
 FOOT2 = {(NER, NER): "tēmā", (NIRAI, NER): "puḷimā", (NIRAI, NIRAI): "karuviḷam", (NER, NIRAI): "kūviḷam"}
 FINAL = {(NER,): "nāḷ", (NIRAI,): "malar", (NER, "bu"): "kācu", (NIRAI, "bu"): "piṟappu"}

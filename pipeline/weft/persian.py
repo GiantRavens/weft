@@ -1,4 +1,4 @@
-"""Classical Persian: hand transliteration -> sound, a check against the script, and rubāʿī metre.
+"""Classical Persian: hand transliteration -> sound, a check against the script, and rubāʿī meter.
 
 Persian in Arabic script writes long vowels and leaves most short vowels out, so each token carries
 a hand transliteration (n) with every vowel written. The transliteration uses the vowels of Early
@@ -40,7 +40,7 @@ differ only in positions 6 and 7:
     3.3.13   — | — ◡ ◡ — | — ◡ ◡ — | — ◡ ◡ —
 
 The final ◡ ◡ may be one long syllable (about half of all lines), and so, rarely, may the first.
-Recognized licences, each used only when the plain reading does not fit: a word-final consonant
+Recognized licenses, each used only when the plain reading does not fit: a word-final consonant
 before a vowel either joins the next syllable (wasl) or not; the ezafe and the conjunction u may
 count long; a long vowel before a vowel may count short. A line that fits no pattern is reported
 as the failure class metre-not-rubai.
@@ -279,7 +279,7 @@ def token_fields(surface: str, et: dict, group: dict):
     return {}, fails
 
 
-# ---------------------------------------------------------------- metre
+# ---------------------------------------------------------------- meter
 FEET = {
     "5.1.13": ["—", "—◡◡—", "◡—◡—", "—◡◡—"],
     "3.3.13": ["—", "—◡◡—", "—◡◡—", "—◡◡—"],
@@ -309,7 +309,7 @@ TEMPLATES = templates()
 
 def _stream_options(words: list[str], links: tuple[bool, ...]):
     """Syllables of the line for one choice of joins, each with its admissible weights
-    (default first) and whether using the second one is a licence."""
+    (default first) and whether using the second one is a license."""
     stream: list[dict] = []
     junction = 0
     for w_i, w in enumerate(words):
@@ -345,7 +345,7 @@ def _stream_options(words: list[str], links: tuple[bool, ...]):
 
 
 def scan(words: list[str]) -> tuple[str | None, str | None, int]:
-    """Best match: (metre string, pattern name, licences used)."""
+    """Best match: (metre string, pattern name, licenses used)."""
     n_junctions = 0
     for a, b in zip(words, words[1:]):
         sa, sb = segments(a), segments(b)

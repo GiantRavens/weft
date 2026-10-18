@@ -174,7 +174,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         last = last or pilot["last"]
     repo = work_dir.parents[1]
     failures: Counter[str] = Counter()
-    metre_flags: Counter[str] = Counter()   # licences the hexameter scanner used
+    metre_flags: Counter[str] = Counter()   # licenses the hexameter scanner used
     samples: dict[str, list[str]] = {}
 
     def fail(cls: str, sample: str):
@@ -561,7 +561,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             # Japanese verse counts morae; the first scheme is the as-first-spoken reading
             line_rec["metre"] = f"{sum(t.get('morae', 0) for t in toks)} morae"
         if lang == "grc" and m.get("metre") == "hexameter" and toks:
-            # dactylic hexameter scanned from the printed words; the licences it used (lengthening,
+            # dactylic hexameter scanned from the printed words; the licenses it used (lengthening,
             # synizesis, correption...) are features of the verse, kept as telemetry, not failures
             hx, hflags = greek.scan_hexameter(text.split(), quantities)
             if hx:
@@ -572,9 +572,9 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                 else:
                     metre_flags[cls] += 1
         if token_edition and toks and hasattr(phon, "line_metre"):
-            # language hook: metre computed from the line's tokens, with its own failure classes
+            # language hook: meter computed from the line's tokens, with its own failure classes
             m_str, mfails = phon.line_metre(etoks, edition)
-            if m_str is False:            # the hook says this line has no metre (prose)
+            if m_str is False:            # the hook says this line has no meter (prose)
                 line_rec.pop("metre", None)
             elif m_str:
                 line_rec["metre"] = m_str
@@ -615,7 +615,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                     fail("pada-syllables-short" if size < want else "pada-syllables-long", f"{book}.{n} pāda {k + 1}: {size}")
         if lang == "lzh" and toks and not token_edition:
             # Tang level/oblique tones and rhyme: regulated verse only (Li Bai); a Weft edition of
-            # Chinese prose-verse sets its own metre or none
+            # Chinese prose-verse sets its own meter or none
             # regulated verse: level (○) or oblique (●) tone per syllable, and the rhyme of the last
             pattern = "".join("○" if t.get("tone") == "level" else "●" for t in toks)
             line_rec["metre"] = f"{pattern} · rhyme -{toks[-1].get('final', '?')}"

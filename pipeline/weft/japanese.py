@@ -2,7 +2,7 @@
 
 Each token carries its reading in historical kana (the spelling of Bashō's day): 蛙 is かはづ,
 水 is みづ. Rules turn that spelling into sound for each scheme. Japanese verse counts morae
-(on), not syllables, so the mora count is returned for the metre row.
+(on), not syllables, so the mora count is returned for the meter row.
 
 Schemes
 -------
@@ -471,7 +471,7 @@ def line_metre(etoks: list[dict], edition: dict):
     count (the count of a prose sentence is not a metre). Other lines keep the default."""
     ln = _find_line_in_edition(edition, etoks)
     if ln and ln.get("yomi"):
-        return False, []      # a prose kunten line: no metre; its reading is the line's `reading`
+        return False, []      # a prose kunten line: no meter; its reading is the line's `reading`
     return None, []
 
 

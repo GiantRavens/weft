@@ -2,7 +2,7 @@
 # (1910); morphology uses Universal Dependencies features.
 - by: Claude (Weft phase 0), for review by Skip and a scholar
   date: 2026-10-01
-  why: hand lemma, morphology, gloss, staves and metre; no treebank exists for Eddic poetry
+  why: hand lemma, morphology, gloss, staves and meter; no treebank exists for Eddic poetry
   status: draft
   set:
     hav.2.1: {metre: "long line, a-verse · stave g"}
@@ -197,7 +197,7 @@
     hav.8.3: {metre: "full line · staves l"}
     hav.8.3.1: {lemma: "lof", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "praise", stave: true}   # lof
     hav.8.3.2: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
-    hav.8.3.3: {lemma: "líknstafr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "favour-staves", stave: true}   # líknstafi
+    hav.8.3.3: {lemma: "líknstafr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "favor-staves", stave: true}   # líknstafi
     hav.8.4: {metre: "long line, a-verse · stave vowel"}
     hav.8.4.1: {lemma: "ódæll", morph: "ADJ|Case=Nom|Degree=Cmp|Gender=Neut|Number=Sing", gloss: "less-easy", stave: true}   # ódælla
     hav.8.4.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er

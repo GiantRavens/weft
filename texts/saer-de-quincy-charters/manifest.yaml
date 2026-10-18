@@ -32,7 +32,7 @@ translations:
     translator: "William Alexander Lindsay, John Dowden and John Maitland Thomson (eds.)"
     year: 1908
     form: "English abstract, Appendix IV A, p. 245 of Charters, Bulls and Other Documents relating to the Abbey of Inchaffray (Edinburgh: Scottish History Society, vol. 56, 1908); Internet Archive OCR text of the Boston College copy, which also carries the Latin of the edition"
-    partial: "abstract, not a translation; it summarises the Gask charter and does not cover the Duglyn charter"
+    partial: "abstract, not a translation; it summarizes the Gask charter and does not cover the Duglyn charter"
     license: public-domain
     license_url: https://archive.org/details/chartersbullsoth00inch
     file: sources/inchaffray1908.txt
@@ -42,7 +42,7 @@ translations:
     translator: "William Fraser (ed.)"
     year: 1872
     form: "English abstract of no. 70 in the 'Abstract of the Register', p. 345 of Registrum Monasterii S. Marie de Cambuskenneth, A.D. 1147-1535 (Edinburgh: Grampian Club, 1872); Internet Archive OCR text of the University of Toronto copy, which also carries the Latin of the edition"
-    partial: "abstract, not a translation; it summarises the Duglyn charter, leaves out the witnesses, and does not cover the Gask charter"
+    partial: "abstract, not a translation; it summarizes the Duglyn charter, leaves out the witnesses, and does not cover the Gask charter"
     license: public-domain
     license_url: https://archive.org/details/registrummonaste00cambuoft
     file: sources/cambuskenneth1872.txt
@@ -56,7 +56,7 @@ translations:
     license: CC BY-SA 4.0
 predicted_gaps:
   - "no treebank: lemma and morphology hand-annotated against Lewis and Short, with the charter vocabulary (elemosina, warantizo, ius patronatus) after Niermeyer and Du Cange; draft"
-  - "the Anglo-Latin reading is the one built for Magna Carta (England, about 1215) and is reconstructed from spelling and from French and English sound history; the Duglyn charter was most likely written by a clerk in Scotland, whose Latin may have differed in ways not modelled; approximate"
+  - "the Anglo-Latin reading is the one built for Magna Carta (England, about 1215) and is reconstructed from spelling and from French and English sound history; the Duglyn charter was most likely written by a clerk in Scotland, whose Latin may have differed in ways not modeled; approximate"
   - "both texts come from OCR of the printed editions: each line is checked against the OCR with the misreadings declared as verify_corrections in edition.yaml, each a reading of the page image (gask.15; duglyn.1, 3, 8, 12); duglyn.7 has an OCR misreading too but passes, because the same clause is read correctly in no. 73 of the same volume"
   - "the Gask charter keeps the 1908 edition's medieval punctuation, a raised point and a slanted stroke, as separate marks after the word; they carry no sound or gloss"
   - "the 1908 edition prints Albeinr (sic) for the witness its editors take to be William d'Aubigny; the name is read as printed"

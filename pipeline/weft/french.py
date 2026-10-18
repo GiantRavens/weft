@@ -22,7 +22,7 @@ m1580    French as an educated reader would have said it about 1580, approximate
          Bèze (De Francicae linguae recta pronuntiatione, 1584) and Henri Estienne (Deux dialogues
          du nouveau langage françois italianizé, 1578), as collected and weighed by Charles Thurot,
          De la prononciation française depuis le commencement du XVIe siècle (1881-1883). The main
-         features modelled:
+         features modeled:
          - final consonants are silent before a consonant and before a pause, and sounded before a
            vowel when no pause intervenes (liaison). Final r after i (loisir, mourir), final l,
            f and the c of donc are sounded everywhere. Palsgrave (1530) still reports final
@@ -303,7 +303,7 @@ def line_checks(text: str, etoks: list[dict], edition: dict) -> list[tuple[str, 
 
 KEY = {
     "m1580": [
-        ("", "French of about 1580, as the grammarians of the period describe the Paris norm; approximate. Montaigne's own Gascon-coloured accent is not modelled."),
+        ("", "French of about 1580, as the grammarians of the period describe the Paris norm; approximate. Montaigne's own Gascon-colored accent is not modeled."),
         ("", "Hyphens divide syllables. French has no distinctive word stress; the last full syllable of a phrase is lengthened, so no capitals are used."),
         ("uh", "the e caduc (ə), still counted at the end of a word before a consonant or a pause; dropped before a vowel"),
         ("‿", "linked to the next word: a final consonant sounded in liaison (est‿icy), or an e caduc elided before a vowel"),

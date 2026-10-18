@@ -9,7 +9,7 @@ Ten steps. Steps 2 to 5, 7 and 10 are `pipeline/` subcommands (`weft acquire`, `
 | 2 | acquire     | manifest URLs                   | `sources/` with sha256          | no        |
 | 3 | identify    | source text                     | line IDs (CTS)                  | no        |
 | 4 | tokenize    | lines + treebank                | token to treebank mapping       | edge cases|
-| 5 | phonemize   | tokens + scheme                 | IPA, respelling, metre          | no        |
+| 5 | phonemize   | tokens + scheme                 | IPA, respelling, meter          | no        |
 | 6 | gloss       | lemma + morph + lexicon         | gloss cell                      | human (one treebank, Kyoto, supplies one) |
 | 7 | align       | translation text                | span map to line IDs            | some      |
 | 8 | notes       | PD commentaries, authored notes | `notes/` keyed by line/token    | human     |

@@ -1,10 +1,10 @@
 # Human overlay for Hávamál stanzas 138-164. Lemmas follow Zoëga, A Concise Dictionary of Old
-# Icelandic (1910); morphology uses Universal Dependencies features. Staves and metre by hand; where the
+# Icelandic (1910); morphology uses Universal Dependencies features. Staves and meter by hand; where the
 # alliteration of a line is irregular or the line is one of the list forms (144, the Veistu lines; the
-# Loddfáfnir formula), the metre string says so.
+# Loddfáfnir formula), the meter string says so.
 - by: "Claude (Weft phase 0), for review by Skip and a scholar"
   date: "2026-10-04"
-  why: "hand lemma, morphology, gloss, staves and metre for stanzas 138-164; no treebank exists for Eddic poetry; the first 80 were done the same way"
+  why: "hand lemma, morphology, gloss, staves and meter for stanzas 138-164; no treebank exists for Eddic poetry; the first 80 were done the same way"
   status: "draft"
   set:
     hav.138.1: {metre: "long line, a-verse · stave v"}

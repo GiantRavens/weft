@@ -8,10 +8,10 @@
 # braces.
 #
 # One section, the canto, so that line IDs are the canto's own line numbers (inf.1.31 is Inferno
-# 1.31). The tercet each line belongs to is given in its metre string. Each token's t is the word as
+# 1.31). The tercet each line belongs to is given in its meter string. Each token's t is the word as
 # printed with any punctuation after it, and any opening quotation mark before it; `weft draft`
 # moves both to their own fields (weft.italian token_fields), so the line still reproduces the
-# source. Petrocchi's diaeresis marks (patrïa, Ilïón, vïaggio, sapïenza) are his, and the metre
+# source. Petrocchi's diaeresis marks (patrïa, Ilïón, vïaggio, sapïenza) are his, and the meter
 # reads them as separate syllables.
 #   m        (where present) the token's metrical syllables, separated by '.', the accented one
 #            in capitals; used where Dante's count differs from the word read alone (synaeresis in

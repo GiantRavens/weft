@@ -36,7 +36,7 @@ schemes:
 - florentine
 - modern
 scheme_labels:
-  florentine: 'Stage Italian of the Vienna court theatre, 1786: the Florentine-based standard (approximate)'
+  florentine: 'Stage Italian of the Vienna court theater, 1786: the Florentine-based standard (approximate)'
   modern: Standard modern Italian
 quantities: pipeline/weft/data/it_lexicon.yaml
 sound_confidence: medium
@@ -93,8 +93,8 @@ translations:
 predicted_gaps:
 - four numbers, not the libretto; the ensembles and the recitatives, where Da Ponte's comedy lives, are a later pilot
 - 'no treebank covers the libretto: lemma, morphology and gloss are by hand (UD Italian conventions), draft'
-- the sound is the Florentine-based standard; the Italian of a Vienna court theatre in 1786, sung by Italian and Austrian singers, is
-  not separately modelled
+- the sound is the Florentine-based standard; the Italian of a Vienna court theater in 1786, sung by Italian and Austrian singers, is
+  not separately modeled
 - the Wikisource libretto names no printed edition; a check against the 1786 Vienna libretto (Kurzböck) or the Neue Mozart-Ausgabe is
   wanted
 - 'the singing versions are cited, not printed: Macfarren by life + 70, Dent in copyright'

@@ -18,7 +18,7 @@ second from n.
 Schemes
 -------
 z1870    Zanzibar town Swahili about 1870, approximate: Steere's letters read by the values his
-         Handbook gives them. Features modelled:
+         Handbook gives them. Features modeled:
          - five vowels, a e i o u, each its own syllable ("the vowels are all pronounced
            distinctly, and do not form diphthongs"); e is open [ɛ] ("a in chair"), o open [ɔ]
            ("o in boy, more like au than the common English o").
@@ -37,7 +37,7 @@ z1870    Zanzibar town Swahili about 1870, approximate: Steere's letters read by
            drop one of the consonants", so the long consonant is uncertain. A final consonant
            (bass) closes the syllable.
          - the accent on the last syllable but one, counting a syllabic nasal.
-         Not modelled: the "explosive or aspirated" p, t, k that Steere hears where a nasal has
+         Not modeled: the "explosive or aspirated" p, t, k that Steere hears where a nasal has
          been lost (plural pepo), which he says the refined speakers smooth down; implosive b,
          d, g, which later descriptions report and Steere does not mention; tone and intonation.
 modern   Standard Swahili (Kiswahili sanifu), the word said alone, computed from n by the same

@@ -1,9 +1,9 @@
 # Human overlay for Þrymskviða stanzas 12 to 22. Lemmas follow Zoëga, A Concise Dictionary of Old Icelandic
 # (1910), in the edition's spelling; morphology uses Universal Dependencies features. Staves (stave: true)
-# mark the alliterating words; metre gives each line's role in the fornyrðislag long line.
+# mark the alliterating words; meter gives each line's role in the fornyrðislag long line.
 - by: Claude (Weft phase 0), for review by Skip and a scholar
   date: 2026-10-01
-  why: hand lemma, morphology, gloss, staves and metre; no treebank exists for Eddic poetry
+  why: hand lemma, morphology, gloss, staves and meter; no treebank exists for Eddic poetry
   status: draft
   set:
     thr.12.1: {metre: "a-verse · stave f"}

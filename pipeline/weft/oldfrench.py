@@ -445,7 +445,7 @@ def line_checks(text: str, etoks: list[dict], edition: dict) -> list[tuple[str, 
 
 KEY = {
     "fr1300": [
-        ("", "French of about 1300 in the Paris norm, as a French-trained reader would have said this text; approximate. The book was dictated and written down by Italians, whose own reading is modelled in the second scheme."),
+        ("", "French of about 1300 in the Paris norm, as a French-trained reader would have said this text; approximate. The book was dictated and written down by Italians, whose own reading is modeled in the second scheme."),
         ("", "Hyphens divide syllables; CAPS mark the stressed syllable of a word of two or more syllables, the last one that is not a final uh."),
         ("uh", "the final e (ə), still sounded; dropped before a vowel"),
         ("‿", "linked to the next word: a final consonant sounded before a vowel (s then as z), or a final uh dropped before one"),

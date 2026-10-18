@@ -16,7 +16,7 @@ is consulted.
       - id: title                    # writes gen/ocr/title.txt and title.yaml (the provenance)
         source: scan-title           # a sources_extra id: the scan, pinned by sha256
         crop: [960, 1500, 800, 1180] # x, y, width, height in the scan's pixels (optional)
-        threshold: 50                # binarize at this percent of the grey range before reading (optional)
+        threshold: 50                # binarize at this percent of the gray range before reading (optional)
         psm: 6                       # Tesseract page segmentation mode (6: one block of text)
         sections: [preamble]         # the edition sections this page carries, for the collation report
       hand: curated/hand-reading.txt # optional: the first hand reading, made before the collation, kept to measure it
@@ -154,7 +154,7 @@ def read_page(work_dir: Path, page: dict, sources: dict, tessdata: Path, lang: s
         x, y, w, h = page["crop"]
         im = im.crop((x, y, x + w, y + h))
     if page.get("threshold") is not None:
-        # stretch the grey range (as ImageMagick's -normalize does), then cut at the threshold
+        # stretch the gray range (as ImageMagick's -normalize does), then cut at the threshold
         lo, hi = im.getextrema()
         cut = lo + (hi - lo) * page["threshold"] / 100
         im = im.point(lambda v: 255 if v > cut else 0)

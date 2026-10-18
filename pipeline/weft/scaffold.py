@@ -161,7 +161,7 @@ def pin(repo: Path, work: str, url: str, sid: str | None = None, name: str | Non
     out.write_bytes(data)
     rec = {"id": sid or stem, "name": name or display, "file": f"sources/{out.name}", "url": raw_url, "sha256": sha256(data),
            "license": license_ or ("poem public domain; normalized text credited to heimskringla.no" if page_url else
-                                   "text public domain; Wikisource transcription CC BY-SA 4.0" if rev else "TODO: the source's licence"),
+                                   "text public domain; Wikisource transcription CC BY-SA 4.0" if rev else "TODO: the source's license"),
            **({"license_url": license_url} if license_url else {"license_url": "http://heimskringla.no/wiki/Heimskringla.no:Copyright"} if page_url else {}),
            **({"page": page_url} if page_url else {}),
            **({"convert": convert, "note": "the file is the page's wikitext converted by weft to the stanza-text layout (speaker lines and stanza numbers kept, markup dropped); weft acquire reproduces it"} if convert else {})}
@@ -200,7 +200,7 @@ def image(repo: Path, work: str, commons_file: str, caption: str | None = None, 
     ii = page["imageinfo"][0]; em = ii.get("extmetadata", {})
     lic = strip_tags(em.get("LicenseShortName", {}).get("value", ""))
     if not (lic.lower().startswith("public domain") or lic.lower().startswith("cc0") or lic.lower().startswith("pd") or "cc by" in lic.lower()):
-        raise SystemExit(f"weft image: licence is {lic!r}; only public domain, CC0 and CC BY / BY-SA images are used")
+        raise SystemExit(f"weft image: license is {lic!r}; only public domain, CC0 and CC BY / BY-SA images are used")
     url = ii.get("thumburl") if ii.get("width", 0) > 1920 else ii["url"]
     data = fetch(url, timeout=180)
     im = Image.open(io.BytesIO(data)).convert("RGB")
