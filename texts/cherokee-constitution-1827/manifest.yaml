@@ -185,11 +185,11 @@ predicted_gaps:
 - 'Article I was read by hand before any OCR of its pages and then collated: the hand reading differed from the settled text at 11 of
   1,280 signs, Tesseract''s pinned witness at 242 (docs/languages.md). The hand figure is a lower bound, since a sign both readings
   got wrong is caught only by other evidence, as one was (ᏭᏕᎵᎬ, "west")'
-- 'no treebank: lemma, morphology and gloss are written by Claude, an AI model, word by word against Feeling''s dictionary (1975), the
-  1860 New Testament and Wiktionary, all draft. In the preamble four words (five tokens) were found in none of them and have lemma ?,
-  five glosses, marked ?, are taken from the English beside the text, and one word (ᎬᏂᏉ) has no gloss. In Article I, annotated also
-  against the other word lists the site serves (Noquisi, the Consortium Word List, Raven Rock, the Cherokee Nation''s list), each named
-  in the overlay, 69 of 299 tokens have lemma ?, 64 glosses are taken from the English, and six tokens have no gloss; the place names
+- 'no treebank: lemma, morphology and gloss are written by Claude, an AI model, word by word against the word lists served at
+  cherokeedictionary.net (Feeling''s dictionary of 1975, Noquisi, the Consortium Word List, Raven Rock, the Cherokee Nation''s list),
+  the 1860 New Testament and Wiktionary, all draft, with each citation naming the list its entry came from. In the preamble four
+  words (five tokens) were found in none of them and have lemma ?, five glosses, marked ?, are taken from the English beside the
+  text, and one word (ᎬᏂᏉ) has no gloss. In Article I 69 of 299 tokens have lemma ?, 64 glosses are taken from the English, and six tokens have no gloss; the place names
   are given as the English names them'
 - the glosses have not been reviewed by a Cherokee speaker; the Cherokee Nation asks for fluent speakers' input on machine work with
   the language (see the stewardship notice)

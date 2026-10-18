@@ -176,6 +176,21 @@ lines:
     sound:
       anglo-norman: {ipa: ˈkɔ.mi.tis, respell: KO-mee-tees}
       classical: {ipa: ˈkɔ.mɪ.tɪs, respell: KO-mi-tis}
+- id: bt.6.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:6.1
+  stanza: '6'
+  stanza_title: 'Scene 6: Harold comes ashore'
+  figure: {file: art/works/bayeux-tapestry/scene-06.jpg, caption: 'Scene 6. Harold''s ship comes in to the shore. Harold, named above him, stands in the bow, and a man in the water hauls the anchor line.',
+    alt: 'Embroidered ship with a striped hull coming to shore, a man standing in its bow and another in the water holding a line', credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de
+      Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923;
+      PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_06_(cropped).png'}
+  text: HAROLD
+  tokens:
+  - id: bt.6.1.1
+    surface: HAROLD
+    sound:
+      anglo-norman: {ipa: ˈa.rɔld, respell: A-rold}
+      classical: {ipa: ˈha.rɔld, respell: HA-rold}
 - id: bt.7.1
   cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:7.1
   stanza: '7'
@@ -206,6 +221,215 @@ lines:
     sound:
       anglo-norman: {ipa: a.ˈrɔl.dym, respell: a-ROL-düm}
       classical: {ipa: ha.ˈrɔl.dʊm, respell: ha-ROL-dum}
+- id: bt.8.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:8.1
+  stanza: '8'
+  stanza_title: 'Scene 8: Guy leads Harold to Beaurain'
+  figure: {file: art/works/bayeux-tapestry/scene-08.jpg, caption: 'Scene 8. Guy''s party rides with Harold toward Beaurain, hounds running ahead; the rider at the right carries a hawk. The cloth spells
+      the place BELREM.', alt: Embroidered procession of horsemen with hounds and a hawk passing a tree, credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN,
+      after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_08_(cropped).png'}
+  text: ET DUXIT EUM AD BELREM ET IBI EUM TENUIT
+  tokens:
+  - id: bt.8.1.1
+    surface: ET
+    sound:
+      anglo-norman: {ipa: ɛt, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: bt.8.1.2
+    surface: DUXIT
+    sound:
+      anglo-norman: {ipa: ˈdyk.sit, respell: DÜK-seet}
+      classical: {ipa: ˈduːk.sɪt, respell: DOOK-sit}
+  - id: bt.8.1.3
+    surface: EUM
+    sound:
+      anglo-norman: {ipa: ˈɛ.ym, respell: E-üm}
+      classical: {ipa: ˈɛ.ʊm, respell: E-um}
+  - id: bt.8.1.4
+    surface: AD
+    sound:
+      anglo-norman: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: bt.8.1.5
+    surface: BELREM
+    sound:
+      anglo-norman: {ipa: ˈbɛl.rɛm, respell: BEL-rem}
+      classical: {ipa: ˈbɛl.rɛm, respell: BEL-rem}
+  - id: bt.8.1.6
+    surface: ET
+    sound:
+      anglo-norman: {ipa: ɛt, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: bt.8.1.7
+    surface: IBI
+    sound:
+      anglo-norman: {ipa: ˈi.bi, respell: EE-bee}
+      classical: {ipa: ˈɪ.bɪ, respell: I-bi}
+  - id: bt.8.1.8
+    surface: EUM
+    sound:
+      anglo-norman: {ipa: ˈɛ.ym, respell: E-üm}
+      classical: {ipa: ˈɛ.ʊm, respell: E-um}
+  - id: bt.8.1.9
+    surface: TENUIT
+    sound:
+      anglo-norman: {ipa: ˈtɛ.ny.it, respell: TE-nü-eet}
+      classical: {ipa: ˈtɛ.nʊ.ɪt, respell: TE-nu-it}
+- id: bt.9.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:9.1
+  stanza: '9'
+  stanza_title: 'Scene 9: Harold and Guy confer'
+  figure: {file: art/works/bayeux-tapestry/scene-09.jpg, caption: 'Scene 9. Guy, seated, talks with Harold, who stands before him, while armed men look on. The cloth writes the Tironian sign ⁊ for et.',
+    alt: 'Embroidered scene of a seated man gesturing to a standing man, with a group of men to the left', credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN,
+      after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_09_(cropped).png'}
+  text: UBI HAROLD ⁊ WIDO PARABOLANT
+  tokens:
+  - id: bt.9.1.1
+    surface: UBI
+    sound:
+      anglo-norman: {ipa: ˈy.bi, respell: Ü-bee}
+      classical: {ipa: ˈʊ.bɪ, respell: U-bi}
+  - id: bt.9.1.2
+    surface: HAROLD
+    sound:
+      anglo-norman: {ipa: ˈa.rɔld, respell: A-rold}
+      classical: {ipa: ˈha.rɔld, respell: HA-rold}
+  - id: bt.9.1.3
+    surface: ⁊
+    norm: et
+    sound:
+      anglo-norman: {ipa: ɛt, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: bt.9.1.4
+    surface: WIDO
+    sound:
+      anglo-norman: {ipa: ˈwi.dɔ, respell: WEE-do}
+      classical: {ipa: ˈwiː.doː, respell: WEE-doh}
+  - id: bt.9.1.5
+    surface: PARABOLANT
+    sound:
+      anglo-norman: {ipa: pa.ˈra.bɔ.lant, respell: pa-RA-bo-lant}
+      classical: {ipa: pa.ˈra.bɔ.lant, respell: pa-RA-bo-lant}
+- id: bt.10.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:10.1
+  stanza: '10'
+  stanza_title: 'Scene 10: William''s messengers come to Guy'
+  figure: {file: art/works/bayeux-tapestry/scene-10.jpg, caption: Scene 10. William's messengers come to Guy. The small bearded figure holding the horses is named TUROLD on the cloth., alt: 'Embroidered
+      scene of men with spears and an axe meeting, a small figure holding a horse, an arcaded building at right', credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS,
+      ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_10_(cropped)2.png'}
+  text: UBI NUNTII WILLELMI DUCIS VENERUNT AD WIDONE[M]
+  tokens:
+  - id: bt.10.1.1
+    surface: UBI
+    sound:
+      anglo-norman: {ipa: ˈy.bi, respell: Ü-bee}
+      classical: {ipa: ˈʊ.bɪ, respell: U-bi}
+  - id: bt.10.1.2
+    surface: NUNTII
+    sound:
+      anglo-norman: {ipa: ˈnyn.tsi.i, respell: NÜN-tsee-ee}
+      classical: {ipa: ˈnuːn.tɪ.iː, respell: NOON-ti-ee}
+  - id: bt.10.1.3
+    surface: WILLELMI
+    sound:
+      anglo-norman: {ipa: wil.ˈlɛl.mi, respell: weel-LEL-mee}
+      classical: {ipa: wɪl.ˈlɛl.miː, respell: wil-LEL-mee}
+  - id: bt.10.1.4
+    surface: DUCIS
+    sound:
+      anglo-norman: {ipa: ˈdy.tsis, respell: DÜ-tsees}
+      classical: {ipa: ˈdʊ.kɪs, respell: DU-kis}
+  - id: bt.10.1.5
+    surface: VENERUNT
+    sound:
+      anglo-norman: {ipa: vɛ.ˈnɛ.rynt, respell: ve-NE-rünt}
+      classical: {ipa: weː.ˈneː.rʊnt, respell: way-NAY-runt}
+  - id: bt.10.1.6
+    surface: AD
+    sound:
+      anglo-norman: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: bt.10.1.7
+    surface: WIDONE[M
+    punct: ']'
+    sound:
+      anglo-norman: {ipa: wi.ˈdɔ.nɛm, respell: wee-DO-nem}
+      classical: {ipa: wiː.ˈdoː.nɛm, respell: wee-DOH-nem}
+- id: bt.10.2
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:10.2
+  stanza: '10'
+  stanza_title: 'Scene 10: William''s messengers come to Guy'
+  text: TUROLD
+  tokens:
+  - id: bt.10.2.1
+    surface: TUROLD
+    sound:
+      anglo-norman: {ipa: ˈty.rɔld, respell: TÜ-rold}
+      classical: {ipa: ˈtʊ.rɔld, respell: TU-rold}
+- id: bt.11.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:11.1
+  stanza: '11'
+  stanza_title: 'Scene 11: The messengers ride'
+  figure: {file: art/works/bayeux-tapestry/scene-11.jpg, caption: Scene 11. Two of William's messengers gallop with shields and spears., alt: Two embroidered horsemen galloping with shields beside an arcaded
+      building, credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia
+      Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_11_(cropped).png'}
+  text: NUNTII WILLELMI
+  tokens:
+  - id: bt.11.1.1
+    surface: NUNTII
+    sound:
+      anglo-norman: {ipa: ˈnyn.tsi.i, respell: NÜN-tsee-ee}
+      classical: {ipa: ˈnuːn.tɪ.iː, respell: NOON-ti-ee}
+  - id: bt.11.1.2
+    surface: WILLELMI
+    sound:
+      anglo-norman: {ipa: wil.ˈlɛl.mi, respell: weel-LEL-mee}
+      classical: {ipa: wɪl.ˈlɛl.miː, respell: wil-LEL-mee}
+- id: bt.12.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:12.1
+  stanza: '12'
+  stanza_title: 'Scene 12: News reaches William'
+  figure: {file: art/works/bayeux-tapestry/scene-12.jpg, caption: 'Scene 12. A messenger comes before Duke William, who sits with a sword beside a walled palace. A cross stands before the first word on
+      the cloth.', alt: 'Embroidered scene of a seated man with a sword receiving a standing and a crouching man, a towered building at right', credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université
+      de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923;
+      PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_12_(cropped).png'}
+  text: † HIC VENIT NUNTIUS AD WILGELMUM DUCEM
+  tokens:
+  - id: bt.12.1.1
+    surface: †
+    sound:
+      anglo-norman: {ipa: †, respell: †}
+      classical: {ipa: †, respell: †}
+  - id: bt.12.1.2
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.12.1.3
+    surface: VENIT
+    sound:
+      anglo-norman: {ipa: ˈvɛ.nit, respell: VE-neet}
+      classical: {ipa: ˈweː.nɪt, respell: WAY-nit}
+  - id: bt.12.1.4
+    surface: NUNTIUS
+    sound:
+      anglo-norman: {ipa: ˈnyn.tsi.ys, respell: NÜN-tsee-üs}
+      classical: {ipa: ˈnuːn.tɪ.ʊs, respell: NOON-ti-us}
+  - id: bt.12.1.5
+    surface: AD
+    sound:
+      anglo-norman: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: bt.12.1.6
+    surface: WILGELMUM
+    sound:
+      anglo-norman: {ipa: wil.ˈdʒɛl.mym, respell: weel-JEL-müm}
+      classical: {ipa: wɪl.ˈɡɛl.mʊm, respell: wil-GEL-mum}
+  - id: bt.12.1.7
+    surface: DUCEM
+    sound:
+      anglo-norman: {ipa: ˈdy.tsɛm, respell: DÜ-tsem}
+      classical: {ipa: ˈdʊ.kɛm, respell: DU-kem}
 - id: bt.13.1
   cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:13.1
   stanza: '13'
@@ -255,6 +479,404 @@ lines:
     sound:
       anglo-norman: {ipa: ˈdy.tsɛm, respell: DÜ-tsem}
       classical: {ipa: ˈdʊ.kɛm, respell: DU-kem}
+- id: bt.14.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:14.1
+  stanza: '14'
+  stanza_title: 'Scene 14: William brings Harold to his palace'
+  figure: {file: art/works/bayeux-tapestry/scene-14.jpg, caption: 'Scene 14. William and Harold ride to the duke''s palace, where William sits in the hall and a man speaks before him.', alt: Embroidered
+      strip of horsemen riding toward a long arcaded hall where a seated man listens to a standing man, credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN,
+      after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_14_(cropped).png'}
+  text: HIC DUX WILGELM[US] CUM HAROLDO VENIT AD PALATIU[M] SUU[M]
+  tokens:
+  - id: bt.14.1.1
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.14.1.2
+    surface: DUX
+    sound:
+      anglo-norman: {ipa: dyks, respell: düks}
+      classical: {ipa: dʊks, respell: duks}
+  - id: bt.14.1.3
+    surface: WILGELM[US
+    punct: ']'
+    sound:
+      anglo-norman: {ipa: wil.ˈdʒɛl.mys, respell: weel-JEL-müs}
+      classical: {ipa: wɪl.ˈɡɛl.mʊs, respell: wil-GEL-mus}
+  - id: bt.14.1.4
+    surface: CUM
+    sound:
+      anglo-norman: {ipa: kym, respell: küm}
+      classical: {ipa: kʊm, respell: kum}
+  - id: bt.14.1.5
+    surface: HAROLDO
+    sound:
+      anglo-norman: {ipa: a.ˈrɔl.dɔ, respell: a-ROL-do}
+      classical: {ipa: ha.ˈrɔl.doː, respell: ha-ROL-doh}
+  - id: bt.14.1.6
+    surface: VENIT
+    sound:
+      anglo-norman: {ipa: ˈvɛ.nit, respell: VE-neet}
+      classical: {ipa: ˈweː.nɪt, respell: WAY-nit}
+  - id: bt.14.1.7
+    surface: AD
+    sound:
+      anglo-norman: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: bt.14.1.8
+    surface: PALATIU[M
+    punct: ']'
+    sound:
+      anglo-norman: {ipa: pa.ˈla.tsi.ym, respell: pa-LA-tsee-üm}
+      classical: {ipa: pa.ˈlaː.tɪ.ʊm, respell: pa-LAA-ti-um}
+  - id: bt.14.1.9
+    surface: SUU[M
+    punct: ']'
+    sound:
+      anglo-norman: {ipa: ˈsy.ym, respell: SÜ-üm}
+      classical: {ipa: ˈsʊ.ʊm, respell: SU-um}
+- id: bt.15.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:15.1
+  stanza: '15'
+  stanza_title: 'Scene 15: A cleric and Ælfgyva'
+  figure: {file: art/works/bayeux-tapestry/scene-15.jpg, caption: 'Scene 15. A cleric reaches toward the face of a woman named Ælfgyva, who stands between two carved posts. No verb follows her name, and
+      what the scene refers to is not known.', alt: Embroidered scene of a man in a cloak touching the face of a woman framed by two decorated posts, credit: 'Bayeux Tapestry, about 1070s; photograph 2017,
+      Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923;
+      PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_15_(cropped).png'}
+  text: UBI UNUS CLERICUS ET ÆLFGYVA
+  tokens:
+  - id: bt.15.1.1
+    surface: UBI
+    sound:
+      anglo-norman: {ipa: ˈy.bi, respell: Ü-bee}
+      classical: {ipa: ˈʊ.bɪ, respell: U-bi}
+  - id: bt.15.1.2
+    surface: UNUS
+    sound:
+      anglo-norman: {ipa: ˈy.nys, respell: Ü-nüs}
+      classical: {ipa: ˈuː.nʊs, respell: OO-nus}
+  - id: bt.15.1.3
+    surface: CLERICUS
+    sound:
+      anglo-norman: {ipa: ˈklɛ.ri.kys, respell: KLE-ree-küs}
+      classical: {ipa: ˈkleː.rɪ.kʊs, respell: KLAY-ri-kus}
+  - id: bt.15.1.4
+    surface: ET
+    sound:
+      anglo-norman: {ipa: ɛt, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: bt.15.1.5
+    surface: ÆLFGYVA
+    sound:
+      anglo-norman: {ipa: ˈælfdʒi.va, respell: ÆLFJEE-va}
+      classical: {ipa: ˈælfɡʏ.wa, respell: ÆLFGÜ-wa}
+- id: bt.16.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:16.1
+  stanza: '16'
+  stanza_title: 'Scene 16: To Mont Saint-Michel'
+  figure: {file: art/works/bayeux-tapestry/scene-16.jpg, caption: 'Scene 16. William''s army rides toward Mont Saint-Michel, shown at the right as a building on a mound.', alt: Embroidered column of horsemen
+      riding toward a building set on a hill, credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines
+      en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_16_(cropped).png'}
+  text: HIC WILLEM[US] DUX ET EXERCITUS EIUS VENERUNT AD MONTE[M] MICHAELIS
+  tokens:
+  - id: bt.16.1.1
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.16.1.2
+    surface: WILLEM[US
+    punct: ']'
+    sound:
+      anglo-norman: {ipa: ˈwil.lɛ.mys, respell: WEEL-le-müs}
+      classical: {ipa: ˈwɪl.lɛ.mʊs, respell: WIL-le-mus}
+  - id: bt.16.1.3
+    surface: DUX
+    sound:
+      anglo-norman: {ipa: dyks, respell: düks}
+      classical: {ipa: dʊks, respell: duks}
+  - id: bt.16.1.4
+    surface: ET
+    sound:
+      anglo-norman: {ipa: ɛt, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: bt.16.1.5
+    surface: EXERCITUS
+    sound:
+      anglo-norman: {ipa: ɛk.ˈsɛr.tsi.tys, respell: ek-SER-tsee-tüs}
+      classical: {ipa: ɛk.ˈsɛr.kɪ.tʊs, respell: ek-SER-ki-tus}
+  - id: bt.16.1.6
+    surface: EIUS
+    sound:
+      anglo-norman: {ipa: ˈɛ.dʒys, respell: E-jüs}
+      classical: {ipa: ˈɛ.jʊs, respell: E-yus}
+  - id: bt.16.1.7
+    surface: VENERUNT
+    sound:
+      anglo-norman: {ipa: vɛ.ˈnɛ.rynt, respell: ve-NE-rünt}
+      classical: {ipa: weː.ˈneː.rʊnt, respell: way-NAY-runt}
+  - id: bt.16.1.8
+    surface: AD
+    sound:
+      anglo-norman: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: bt.16.1.9
+    surface: MONTE[M
+    punct: ']'
+    sound:
+      anglo-norman: {ipa: ˈmɔn.tɛm, respell: MON-tem}
+      classical: {ipa: ˈmɔn.tɛm, respell: MON-tem}
+  - id: bt.16.1.10
+    surface: MICHAELIS
+    sound:
+      anglo-norman: {ipa: mi.ka.ˈɛ.lis, respell: mee-ka-E-lees}
+      classical: {ipa: mɪ.kʰa.ˈeː.lɪs, respell: mi-kʰa-AY-lis}
+- id: bt.17.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:17.1
+  stanza: '17'
+  stanza_title: 'Scene 17: The crossing of the Couesnon'
+  figure: {file: art/works/bayeux-tapestry/scene-17.jpg, caption: 'Scene 17. The army fords the Couesnon. Men and a horse founder in the sand, and Harold carries one man on his back and pulls another by
+      the hand.', alt: 'Embroidered scene of men wading a river, a horse falling, one man carrying another on his back', credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie,
+      CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)',
+    source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_17_(cropped).png'}
+  text: ET HIC TRANSIERUNT FLUMEN COSNONIS
+  tokens:
+  - id: bt.17.1.1
+    surface: ET
+    sound:
+      anglo-norman: {ipa: ɛt, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: bt.17.1.2
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.17.1.3
+    surface: TRANSIERUNT
+    sound:
+      anglo-norman: {ipa: tran.si.ˈɛ.rynt, respell: tran-see-E-rünt}
+      classical: {ipa: traːn.sɪ.ˈeː.rʊnt, respell: traan-si-AY-runt}
+  - id: bt.17.1.4
+    surface: FLUMEN
+    sound:
+      anglo-norman: {ipa: ˈfly.mɛn, respell: FLÜ-men}
+      classical: {ipa: ˈfluː.mɛn, respell: FLOO-men}
+  - id: bt.17.1.5
+    surface: COSNONIS
+    sound:
+      anglo-norman: {ipa: ˈkɔs.nɔ.nis, respell: KOS-no-nees}
+      classical: {ipa: ˈkɔs.nɔ.nɪs, respell: KOS-no-nis}
+- id: bt.17.2
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:17.2
+  stanza: '17'
+  stanza_title: 'Scene 17: The crossing of the Couesnon'
+  text: HIC HAROLD DUX TRAHEBAT EOS DE ARENA
+  tokens:
+  - id: bt.17.2.1
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.17.2.2
+    surface: HAROLD
+    sound:
+      anglo-norman: {ipa: ˈa.rɔld, respell: A-rold}
+      classical: {ipa: ˈha.rɔld, respell: HA-rold}
+  - id: bt.17.2.3
+    surface: DUX
+    sound:
+      anglo-norman: {ipa: dyks, respell: düks}
+      classical: {ipa: dʊks, respell: duks}
+  - id: bt.17.2.4
+    surface: TRAHEBAT
+    sound:
+      anglo-norman: {ipa: tra.ˈɛ.bat, respell: tra-E-bat}
+      classical: {ipa: tra.ˈheː.bat, respell: tra-HAY-bat}
+  - id: bt.17.2.5
+    surface: EOS
+    sound:
+      anglo-norman: {ipa: ˈɛ.ɔs, respell: E-os}
+      classical: {ipa: ˈɛ.oːs, respell: E-ohs}
+  - id: bt.17.2.6
+    surface: DE
+    sound:
+      anglo-norman: {ipa: dɛ, respell: de}
+      classical: {ipa: deː, respell: day}
+  - id: bt.17.2.7
+    surface: ARENA
+    sound:
+      anglo-norman: {ipa: a.ˈrɛ.na, respell: a-RE-na}
+      classical: {ipa: a.ˈreː.na, respell: a-RAY-na}
+- id: bt.18.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:18.1
+  stanza: '18'
+  stanza_title: 'Scene 18: Dol and Rennes'
+  figure: {file: art/works/bayeux-tapestry/scene-18.jpg, caption: 'Scene 18. The army attacks Dol, and a man lets himself down from the tower on a rope, usually taken to be Conan escaping. The name of Rennes,
+      REDNES, begins at the right edge.', alt: 'Embroidered horsemen charging a tower on a mound, a man sliding down a rope from it', credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de
+      Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923;
+      PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_18_(cropped).png'}
+  text: ET VENERUNT AD DOL ET CONAN FUGA VERTIT
+  tokens:
+  - id: bt.18.1.1
+    surface: ET
+    sound:
+      anglo-norman: {ipa: ɛt, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: bt.18.1.2
+    surface: VENERUNT
+    sound:
+      anglo-norman: {ipa: vɛ.ˈnɛ.rynt, respell: ve-NE-rünt}
+      classical: {ipa: weː.ˈneː.rʊnt, respell: way-NAY-runt}
+  - id: bt.18.1.3
+    surface: AD
+    sound:
+      anglo-norman: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: bt.18.1.4
+    surface: DOL
+    sound:
+      anglo-norman: {ipa: dɔl, respell: dol}
+      classical: {ipa: dɔl, respell: dol}
+  - id: bt.18.1.5
+    surface: ET
+    sound:
+      anglo-norman: {ipa: ɛt, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: bt.18.1.6
+    surface: CONAN
+    sound:
+      anglo-norman: {ipa: ˈkɔ.nan, respell: KO-nan}
+      classical: {ipa: ˈkɔ.nan, respell: KO-nan}
+  - id: bt.18.1.7
+    surface: FUGA
+    sound:
+      anglo-norman: {ipa: ˈfy.ɡa, respell: FÜ-ga}
+      classical: {ipa: ˈfʊ.ɡaː, respell: FU-gaa}
+  - id: bt.18.1.8
+    surface: VERTIT
+    sound:
+      anglo-norman: {ipa: ˈvɛr.tit, respell: VER-teet}
+      classical: {ipa: ˈwɛr.tɪt, respell: WER-tit}
+- id: bt.18.2
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:18.2
+  stanza: '18'
+  stanza_title: 'Scene 18: Dol and Rennes'
+  text: REDNES
+  tokens:
+  - id: bt.18.2.1
+    surface: REDNES
+    sound:
+      anglo-norman: {ipa: ˈrɛd.nɛs, respell: RED-nes}
+      classical: {ipa: ˈrɛd.nɛs, respell: RED-nes}
+- id: bt.19.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:19.1
+  stanza: '19'
+  stanza_title: 'Scene 19: The attack on Dinan'
+  figure: {file: art/works/bayeux-tapestry/scene-19.jpg, caption: 'Scene 19. William''s knights charge the fortress of Dinan on its mound, and two men set torches to the palisade.', alt: Embroidered horsemen
+      with lances charging a fortified mound while men hold torches to its walls, credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic
+      campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_19_(cropped).png'}
+  text: HIC MILITES WILLELMI DUCIS PUGNANT CONTRA DINANTES
+  tokens:
+  - id: bt.19.1.1
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.19.1.2
+    surface: MILITES
+    sound:
+      anglo-norman: {ipa: ˈmi.li.tɛs, respell: MEE-lee-tes}
+      classical: {ipa: ˈmiː.lɪ.teːs, respell: MEE-li-tays}
+  - id: bt.19.1.3
+    surface: WILLELMI
+    sound:
+      anglo-norman: {ipa: wil.ˈlɛl.mi, respell: weel-LEL-mee}
+      classical: {ipa: wɪl.ˈlɛl.miː, respell: wil-LEL-mee}
+  - id: bt.19.1.4
+    surface: DUCIS
+    sound:
+      anglo-norman: {ipa: ˈdy.tsis, respell: DÜ-tsees}
+      classical: {ipa: ˈdʊ.kɪs, respell: DU-kis}
+  - id: bt.19.1.5
+    surface: PUGNANT
+    sound:
+      anglo-norman: {ipa: ˈpyɡ.nant, respell: PÜG-nant}
+      classical: {ipa: ˈpʊɡ.nant, respell: PUG-nant}
+  - id: bt.19.1.6
+    surface: CONTRA
+    sound:
+      anglo-norman: {ipa: ˈkɔn.tra, respell: KON-tra}
+      classical: {ipa: ˈkɔn.traː, respell: KON-traa}
+  - id: bt.19.1.7
+    surface: DINANTES
+    sound:
+      anglo-norman: {ipa: di.ˈnan.tɛs, respell: dee-NAN-tes}
+      classical: {ipa: dɪ.ˈnan.tɛs, respell: di-NAN-tes}
+- id: bt.20.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:20.1
+  stanza: '20'
+  stanza_title: 'Scene 20: Conan surrenders the keys'
+  figure: {file: art/works/bayeux-tapestry/scene-20.jpg, caption: 'Scene 20. The keys of Dinan pass from lance to lance, from the defenders to a mounted knight.', alt: Embroidered scene of keys hanging
+      from the tip of a lance held out to a horseman, credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique
+      de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_20_(cropped).png'}
+  text: ET CUNAN CLAVES PORREXIT
+  tokens:
+  - id: bt.20.1.1
+    surface: ET
+    sound:
+      anglo-norman: {ipa: ɛt, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: bt.20.1.2
+    surface: CUNAN
+    sound:
+      anglo-norman: {ipa: ˈky.nan, respell: KÜ-nan}
+      classical: {ipa: ˈkʊ.nan, respell: KU-nan}
+  - id: bt.20.1.3
+    surface: CLAVES
+    sound:
+      anglo-norman: {ipa: ˈkla.vɛs, respell: KLA-ves}
+      classical: {ipa: ˈklaː.weːs, respell: KLAA-ways}
+  - id: bt.20.1.4
+    surface: PORREXIT
+    sound:
+      anglo-norman: {ipa: pɔr.ˈrɛk.sit, respell: por-REK-seet}
+      classical: {ipa: pɔr.ˈreːk.sɪt, respell: por-RAYK-sit}
+- id: bt.21.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:21.1
+  stanza: '21'
+  stanza_title: 'Scene 21: William gives arms to Harold'
+  figure: {file: art/works/bayeux-tapestry/scene-21.jpg, caption: 'Scene 21. William, in mail, gives arms to Harold, also in mail, laying a hand on his helmet. The cloth reads DEDIT HAROLDO ARMA.', alt: 'Two
+      embroidered men in mail coats facing each other, one touching the other''s helmet', credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the
+      photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_21_(cropped).png'}
+  text: HIC WILLELM[US] DEDIT HAROLDO ARMA
+  tokens:
+  - id: bt.21.1.1
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.21.1.2
+    surface: WILLELM[US
+    punct: ']'
+    sound:
+      anglo-norman: {ipa: wil.ˈlɛl.mys, respell: weel-LEL-müs}
+      classical: {ipa: wɪl.ˈlɛl.mʊs, respell: wil-LEL-mus}
+  - id: bt.21.1.3
+    surface: DEDIT
+    sound:
+      anglo-norman: {ipa: ˈdɛ.dit, respell: DE-deet}
+      classical: {ipa: ˈdɛ.dɪt, respell: DE-dit}
+  - id: bt.21.1.4
+    surface: HAROLDO
+    sound:
+      anglo-norman: {ipa: a.ˈrɔl.dɔ, respell: a-ROL-do}
+      classical: {ipa: ha.ˈrɔl.doː, respell: ha-ROL-doh}
+  - id: bt.21.1.5
+    surface: ARMA
+    sound:
+      anglo-norman: {ipa: ˈar.ma, respell: AR-ma}
+      classical: {ipa: ˈar.ma, respell: AR-ma}
 - id: bt.22.1
   cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:22.1
   stanza: '22'
@@ -472,7 +1094,7 @@ lines:
   stanza: '27'
   stanza_title: 'Scenes 27-28: Edward''s last words and death'
   figure: {file: art/works/bayeux-tapestry/scene-27.jpg, caption: 'Scenes 27-28. Above, Edward in bed speaks to those around him; below, his body is prepared for burial. The scenes run backward: the funeral
-      (26) comes before the death.', alt: 'Embroidered two-storey scene: a dying king in bed above, a body being laid out below', credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen
+      (26) comes before the death.', alt: 'Embroidered two-story scene: a dying king in bed above, a body being laid out below', credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen
       Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923;
       PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_27,28_(cropped).png'}
   text: HIC EADWARDUS REX IN LECTO ALLOQUIT[UR] FIDELES
@@ -650,6 +1272,69 @@ lines:
     sound:
       anglo-norman: {ipa: ˈstɛl.lam, respell: STEL-lam}
       classical: {ipa: ˈsteːl.lam, respell: STAYL-lam}
+- id: bt.33.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:33.1
+  stanza: '33'
+  stanza_title: 'Scene 33: Harold enthroned'
+  figure: {file: art/works/bayeux-tapestry/scene-33.jpg, caption: 'Scene 33. Harold, seated in a hall, turns to a man who leans toward him. In the lower border, ships are drawn in outline only.', alt: 'Embroidered
+      king on a throne under an arch, a man leaning toward him, faint outlined ships below', credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the
+      photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_33_(cropped).png'}
+  text: HAROLD
+  tokens:
+  - id: bt.33.1.1
+    surface: HAROLD
+    sound:
+      anglo-norman: {ipa: ˈa.rɔld, respell: A-rold}
+      classical: {ipa: ˈha.rɔld, respell: HA-rold}
+- id: bt.34.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:34.1
+  stanza: '34'
+  stanza_title: 'Scene 34: An English ship comes to Normandy'
+  figure: {file: art/works/bayeux-tapestry/scene-34.jpg, caption: 'Scene 34. An English ship with a full sail comes to shore, and a man on the beach holds its mooring line.', alt: Embroidered ship with
+      a striped hull and full sail near a shore where a man stands watching, credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic
+      campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_34_(cropped).png'}
+  text: HIC NAVIS ANGLICA VENIT IN TERRAM WILLELMI DUCIS
+  tokens:
+  - id: bt.34.1.1
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.34.1.2
+    surface: NAVIS
+    sound:
+      anglo-norman: {ipa: ˈna.vis, respell: NA-vees}
+      classical: {ipa: ˈnaː.wɪs, respell: NAA-wis}
+  - id: bt.34.1.3
+    surface: ANGLICA
+    sound:
+      anglo-norman: {ipa: ˈaŋ.ɡli.ka, respell: ANG-glee-ka}
+      classical: {ipa: ˈaŋ.ɡlɪ.ka, respell: ANG-gli-ka}
+  - id: bt.34.1.4
+    surface: VENIT
+    sound:
+      anglo-norman: {ipa: ˈvɛ.nit, respell: VE-neet}
+      classical: {ipa: ˈweː.nɪt, respell: WAY-nit}
+  - id: bt.34.1.5
+    surface: IN
+    sound:
+      anglo-norman: {ipa: in, respell: een}
+      classical: {ipa: ɪn, respell: in}
+  - id: bt.34.1.6
+    surface: TERRAM
+    sound:
+      anglo-norman: {ipa: ˈtɛr.ram, respell: TER-ram}
+      classical: {ipa: ˈtɛr.ram, respell: TER-ram}
+  - id: bt.34.1.7
+    surface: WILLELMI
+    sound:
+      anglo-norman: {ipa: wil.ˈlɛl.mi, respell: weel-LEL-mee}
+      classical: {ipa: wɪl.ˈlɛl.miː, respell: wil-LEL-mee}
+  - id: bt.34.1.8
+    surface: DUCIS
+    sound:
+      anglo-norman: {ipa: ˈdy.tsis, respell: DÜ-tsees}
+      classical: {ipa: ˈdʊ.kɪs, respell: DU-kis}
 - id: bt.35.1
   cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:35.1
   stanza: '35'
@@ -691,6 +1376,115 @@ lines:
     sound:
       anglo-norman: {ipa: ɛ.di.fi.ˈka.rɛ, respell: e-dee-fee-KA-re}
       classical: {ipa: ae.dɪ.fɪ.ˈkaː.rɛ, respell: ai-di-fi-KAA-re}
+- id: bt.36.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:36.1
+  stanza: '36'
+  stanza_title: 'Scene 36: The ships are hauled to the sea'
+  figure: {file: art/works/bayeux-tapestry/scene-36.jpg, caption: Scene 36. Men haul the newly built ships down to the water on ropes., alt: Embroidered men pulling ropes attached to a stack of ships, credit: 'Bayeux
+      Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public
+      domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_36_(cropped).png'}
+  text: HIC TRAHUNT NAVES AD MARE
+  tokens:
+  - id: bt.36.1.1
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.36.1.2
+    surface: TRAHUNT
+    sound:
+      anglo-norman: {ipa: ˈtra.ynt, respell: TRA-ünt}
+      classical: {ipa: ˈtra.hʊnt, respell: TRA-hunt}
+  - id: bt.36.1.3
+    surface: NAVES
+    sound:
+      anglo-norman: {ipa: ˈna.vɛs, respell: NA-ves}
+      classical: {ipa: ˈnaː.weːs, respell: NAA-ways}
+  - id: bt.36.1.4
+    surface: AD
+    sound:
+      anglo-norman: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: bt.36.1.5
+    surface: MARE
+    sound:
+      anglo-norman: {ipa: ˈma.rɛ, respell: MA-re}
+      classical: {ipa: ˈma.rɛ, respell: MA-re}
+- id: bt.37.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:37.1
+  stanza: '37'
+  stanza_title: 'Scene 37: Arms and wine for the ships'
+  figure: {file: art/works/bayeux-tapestry/scene-37.jpg, caption: 'Scene 37. Men carry mail coats, helmets, swords and spears, and two men drag a cart loaded with a cask and spears; the caption says they
+      take them to the ships.', alt: 'Embroidered men carrying mail coats and weapons on poles, two men pulling a cart with a barrel', credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université
+      de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923;
+      PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_37_(cropped).png'}
+  text: ISTI PORTANT ARMAS AD NAVES ET HIC TRAHUNT CARRUM CUM VINO ET ARMIS
+  tokens:
+  - id: bt.37.1.1
+    surface: ISTI
+    sound:
+      anglo-norman: {ipa: ˈis.ti, respell: EES-tee}
+      classical: {ipa: ˈɪs.tiː, respell: IS-tee}
+  - id: bt.37.1.2
+    surface: PORTANT
+    sound:
+      anglo-norman: {ipa: ˈpɔr.tant, respell: POR-tant}
+      classical: {ipa: ˈpɔr.tant, respell: POR-tant}
+  - id: bt.37.1.3
+    surface: ARMAS
+    sound:
+      anglo-norman: {ipa: ˈar.mas, respell: AR-mas}
+      classical: {ipa: ˈar.maːs, respell: AR-maas}
+  - id: bt.37.1.4
+    surface: AD
+    sound:
+      anglo-norman: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: bt.37.1.5
+    surface: NAVES
+    sound:
+      anglo-norman: {ipa: ˈna.vɛs, respell: NA-ves}
+      classical: {ipa: ˈnaː.weːs, respell: NAA-ways}
+  - id: bt.37.1.6
+    surface: ET
+    sound:
+      anglo-norman: {ipa: ɛt, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: bt.37.1.7
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.37.1.8
+    surface: TRAHUNT
+    sound:
+      anglo-norman: {ipa: ˈtra.ynt, respell: TRA-ünt}
+      classical: {ipa: ˈtra.hʊnt, respell: TRA-hunt}
+  - id: bt.37.1.9
+    surface: CARRUM
+    sound:
+      anglo-norman: {ipa: ˈkar.rym, respell: KAR-rüm}
+      classical: {ipa: ˈkar.rʊm, respell: KAR-rum}
+  - id: bt.37.1.10
+    surface: CUM
+    sound:
+      anglo-norman: {ipa: kym, respell: küm}
+      classical: {ipa: kʊm, respell: kum}
+  - id: bt.37.1.11
+    surface: VINO
+    sound:
+      anglo-norman: {ipa: ˈvi.nɔ, respell: VEE-no}
+      classical: {ipa: ˈwiː.noː, respell: WEE-noh}
+  - id: bt.37.1.12
+    surface: ET
+    sound:
+      anglo-norman: {ipa: ɛt, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: bt.37.1.13
+    surface: ARMIS
+    sound:
+      anglo-norman: {ipa: ˈar.mis, respell: AR-mees}
+      classical: {ipa: ˈar.miːs, respell: AR-mees}
 - id: bt.38.1
   cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:38.1
   stanza: '38'
@@ -800,12 +1594,129 @@ lines:
     sound:
       anglo-norman: {ipa: ˈna.vi.bys, respell: NA-vee-büs}
       classical: {ipa: ˈnaː.wɪ.bʊs, respell: NAA-wi-bus}
+- id: bt.40.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:40.1
+  stanza: '40'
+  stanza_title: 'Scene 40: Foraging at Hastings'
+  figure: {file: art/works/bayeux-tapestry/scene-40.jpg, caption: 'Scene 40. Mounted knights ride out from the beached ships toward Hastings, and men on foot kill an ox and lead off a sheep.', alt: Embroidered
+      horsemen riding away from beached ships toward men slaughtering an ox, credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic
+      campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_40_(cropped).png'}
+  text: ET HIC MILITES FESTINAVERUNT HESTINGA UT CIBUM RAPERENTUR
+  tokens:
+  - id: bt.40.1.1
+    surface: ET
+    sound:
+      anglo-norman: {ipa: ɛt, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: bt.40.1.2
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.40.1.3
+    surface: MILITES
+    sound:
+      anglo-norman: {ipa: ˈmi.li.tɛs, respell: MEE-lee-tes}
+      classical: {ipa: ˈmiː.lɪ.teːs, respell: MEE-li-tays}
+  - id: bt.40.1.4
+    surface: FESTINAVERUNT
+    sound:
+      anglo-norman: {ipa: fɛs.ti.na.ˈvɛ.rynt, respell: fes-tee-na-VE-rünt}
+      classical: {ipa: fɛs.tiː.naː.ˈweː.rʊnt, respell: fes-tee-naa-WAY-runt}
+  - id: bt.40.1.5
+    surface: HESTINGA
+    sound:
+      anglo-norman: {ipa: ɛs.ˈtiŋ.ɡa, respell: es-TEENG-ga}
+      classical: {ipa: hɛs.ˈtɪŋ.ɡa, respell: hes-TING-ga}
+  - id: bt.40.1.6
+    surface: UT
+    sound:
+      anglo-norman: {ipa: yt, respell: üt}
+      classical: {ipa: ʊt, respell: ut}
+  - id: bt.40.1.7
+    surface: CIBUM
+    sound:
+      anglo-norman: {ipa: ˈtsi.bym, respell: TSEE-büm}
+      classical: {ipa: ˈkɪ.bʊm, respell: KI-bum}
+  - id: bt.40.1.8
+    surface: RAPERENTUR
+    sound:
+      anglo-norman: {ipa: ra.pɛ.ˈrɛn.tyr, respell: ra-pe-REN-tür}
+      classical: {ipa: ra.pɛ.ˈrɛn.tʊr, respell: ra-pe-REN-tur}
+- id: bt.41.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:41.1
+  stanza: '41'
+  stanza_title: 'Scene 41: Wadard'
+  figure: {file: art/works/bayeux-tapestry/scene-41.jpg, caption: 'Scene 41. Wadard, named above him, sits on horseback among men on foot carrying provisions.', alt: Embroidered horseman between two houses
+      with men carrying goods and leading a horse, credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de
+      patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_41_(cropped).png'}
+  text: HIC EST WADARD
+  tokens:
+  - id: bt.41.1.1
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.41.1.2
+    surface: EST
+    sound:
+      anglo-norman: {ipa: ɛst, respell: est}
+      classical: {ipa: ɛst, respell: est}
+  - id: bt.41.1.3
+    surface: WADARD
+    sound:
+      anglo-norman: {ipa: ˈwa.dard, respell: WA-dard}
+      classical: {ipa: ˈwa.dard, respell: WA-dard}
+- id: bt.42.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:42.1
+  stanza: '42'
+  stanza_title: 'Scene 42: Cooking and serving'
+  figure: {file: art/works/bayeux-tapestry/scene-42.jpg, caption: 'Scene 42. Cooks boil meat in a hanging pot and bake on a stove, and servants pass the cooked food on spits.', alt: 'Embroidered cooks at
+      a cauldron and a stove, servants handing food on spits', credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the
+      Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-expired)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_42_(cropped).jpg'}
+  text: HIC COQUITUR CARO ET HIC MINISTRAVERUNT MINISTRI
+  tokens:
+  - id: bt.42.1.1
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.42.1.2
+    surface: COQUITUR
+    sound:
+      anglo-norman: {ipa: ˈkɔ.kwi.tyr, respell: KO-kwee-tür}
+      classical: {ipa: ˈkɔ.kʷɪ.tʊr, respell: KO-kwi-tur}
+  - id: bt.42.1.3
+    surface: CARO
+    sound:
+      anglo-norman: {ipa: ˈka.rɔ, respell: KA-ro}
+      classical: {ipa: ˈka.roː, respell: KA-roh}
+  - id: bt.42.1.4
+    surface: ET
+    sound:
+      anglo-norman: {ipa: ɛt, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: bt.42.1.5
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.42.1.6
+    surface: MINISTRAVERUNT
+    sound:
+      anglo-norman: {ipa: mi.nis.tra.ˈvɛ.rynt, respell: mee-nees-tra-VE-rünt}
+      classical: {ipa: mɪ.nɪs.traː.ˈweː.rʊnt, respell: mi-nis-traa-WAY-runt}
+  - id: bt.42.1.7
+    surface: MINISTRI
+    sound:
+      anglo-norman: {ipa: mi.ˈnis.tri, respell: mee-NEES-tree}
+      classical: {ipa: mɪ.ˈnɪs.triː, respell: mi-NIS-tree}
 - id: bt.43.1
   cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:43.1
   stanza: '43'
   stanza_title: 'Scene 43: The meal and the blessing'
-  figure: {file: art/works/bayeux-tapestry/scene-43.jpg, caption: 'Scene 43. At a curved table Bishop Odo, in the centre, blesses the food and drink; a servant kneels below with a dish.', alt: Embroidered
-      banquet at a curved table with a bishop in the centre blessing a dish, credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic
+  figure: {file: art/works/bayeux-tapestry/scene-43.jpg, caption: 'Scene 43. At a curved table Bishop Odo, in the center, blesses the food and drink; a servant kneels below with a dish.', alt: Embroidered
+      banquet at a curved table with a bishop in the center blessing a dish, credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic
       campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_43_(cropped)2.png'}
   text: HIC FECERUN[T] PRANDIUM
   tokens:
@@ -868,6 +1779,36 @@ lines:
     sound:
       anglo-norman: {ipa: bɛ.nɛ.ˈdi.tsit, respell: be-ne-DEE-tseet}
       classical: {ipa: bɛ.nɛ.ˈdiː.kɪt, respell: be-ne-DEE-kit}
+- id: bt.44.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:44.1
+  stanza: '44'
+  stanza_title: 'Scene 44: Odo, William and Robert'
+  figure: {file: art/works/bayeux-tapestry/scene-44.jpg, caption: 'Scene 44. Bishop Odo, Duke William and Robert, the duke''s half-brothers on either side of him, sit together under a roof.', alt: Three
+      embroidered men seated side by side under a tiled roof, credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the
+      Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_44_(cropped).png'}
+  text: ODO EP[ISCOPU]S WILLELM[US] ROTBERT
+  tokens:
+  - id: bt.44.1.1
+    surface: ODO
+    sound:
+      anglo-norman: {ipa: ˈɔ.dɔ, respell: O-do}
+      classical: {ipa: ˈɔ.doː, respell: O-doh}
+  - id: bt.44.1.2
+    surface: EP[ISCOPU]S
+    sound:
+      anglo-norman: {ipa: ɛ.ˈpis.kɔ.pys, respell: e-PEES-ko-püs}
+      classical: {ipa: ɛ.ˈpɪs.kɔ.pʊs, respell: e-PIS-ko-pus}
+  - id: bt.44.1.3
+    surface: WILLELM[US
+    punct: ']'
+    sound:
+      anglo-norman: {ipa: wil.ˈlɛl.mys, respell: weel-LEL-müs}
+      classical: {ipa: wɪl.ˈlɛl.mʊs, respell: wil-LEL-mus}
+  - id: bt.44.1.4
+    surface: ROTBERT
+    sound:
+      anglo-norman: {ipa: ˈrɔt.bɛrt, respell: ROT-bert}
+      classical: {ipa: ˈrɔt.bɛrt, respell: ROT-bert}
 - id: bt.45.1
   cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:45.1
   stanza: '45'
@@ -923,11 +1864,76 @@ lines:
     sound:
       anglo-norman: {ipa: tsɛ.ˈas.tra, respell: tse-AS-tra}
       classical: {ipa: kɛ.ˈas.tra, respell: ke-AS-tra}
+- id: bt.46.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:46.1
+  stanza: '46'
+  stanza_title: 'Scene 46: News of Harold'
+  figure: {file: art/works/bayeux-tapestry/scene-46.jpg, caption: 'Scene 46. William, seated with a banner, hears news of Harold from a man before him.', alt: 'Embroidered seated man holding a banner, listening
+      to a standing man in a cloak', credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines
+      en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_46_(cropped).png'}
+  text: HIC NUNTIATUM EST WILLELM[O] DE HAROLD[O]
+  tokens:
+  - id: bt.46.1.1
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.46.1.2
+    surface: NUNTIATUM
+    sound:
+      anglo-norman: {ipa: nyn.tsi.ˈa.tym, respell: nün-tsee-A-tüm}
+      classical: {ipa: nuːn.tɪ.ˈaː.tʊm, respell: noon-ti-AA-tum}
+  - id: bt.46.1.3
+    surface: EST
+    sound:
+      anglo-norman: {ipa: ɛst, respell: est}
+      classical: {ipa: ɛst, respell: est}
+  - id: bt.46.1.4
+    surface: WILLELM[O
+    punct: ']'
+    sound:
+      anglo-norman: {ipa: wil.ˈlɛl.mɔ, respell: weel-LEL-mo}
+      classical: {ipa: wɪl.ˈlɛl.moː, respell: wil-LEL-moh}
+  - id: bt.46.1.5
+    surface: DE
+    sound:
+      anglo-norman: {ipa: dɛ, respell: de}
+      classical: {ipa: deː, respell: day}
+  - id: bt.46.1.6
+    surface: HAROLD[O
+    punct: ']'
+    sound:
+      anglo-norman: {ipa: a.ˈrɔl.dɔ, respell: a-ROL-do}
+      classical: {ipa: ha.ˈrɔl.doː, respell: ha-ROL-doh}
+- id: bt.47.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:47.1
+  stanza: '47'
+  stanza_title: 'Scene 47: A house is burned'
+  figure: {file: art/works/bayeux-tapestry/scene-47.jpg, caption: Scene 47. Two men set a house on fire with torches while a woman leads a child out of it., alt: 'Embroidered house in flames, two men holding
+      torches to it, a woman and child at the door', credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique
+      de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_47_(cropped).png'}
+  text: HIC DOMUS INCENDITUR
+  tokens:
+  - id: bt.47.1.1
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.47.1.2
+    surface: DOMUS
+    sound:
+      anglo-norman: {ipa: ˈdɔ.mys, respell: DO-müs}
+      classical: {ipa: ˈdɔ.mʊs, respell: DO-mus}
+  - id: bt.47.1.3
+    surface: INCENDITUR
+    sound:
+      anglo-norman: {ipa: iŋ.ˈtsɛn.di.tyr, respell: eeng-TSEN-dee-tür}
+      classical: {ipa: ɪŋ.ˈkɛn.dɪ.tʊr, respell: ing-KEN-di-tur}
 - id: bt.48.1
   cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:48.1
   stanza: '48'
   stanza_title: 'Scene 48: The army leaves Hastings'
-  figure: {file: art/works/bayeux-tapestry/scene-48.jpg, caption: Scene 48. The knights ride out from Hastings in close order toward the battle., alt: Embroidered strip of armoured horsemen riding out past
+  figure: {file: art/works/bayeux-tapestry/scene-48.jpg, caption: Scene 48. The knights ride out from Hastings in close order toward the battle., alt: Embroidered strip of armored horsemen riding out past
       a building and trees, credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie;
       via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-expired)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_48_(cropped)_(cropped).jpg'}
   text: HIC MILITES EXIERUNT DE HESTENGA ET VENERUNT AD PR[O]ELIUM CONTRA HAROLDUM REGE[M]
@@ -993,6 +1999,210 @@ lines:
     sound:
       anglo-norman: {ipa: ˈrɛ.dʒɛm, respell: RE-jem}
       classical: {ipa: ˈreː.ɡɛm, respell: RAY-gem}
+- id: bt.49.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:49.1
+  stanza: '49'
+  stanza_title: 'Scene 49: William questions Vital'
+  figure: {file: art/works/bayeux-tapestry/scene-49.jpg, caption: 'Scene 49. William, mounted, questions Vital, a knight who points ahead toward the hill.', alt: 'Embroidered horsemen in mail riding toward
+      a hill, one pointing ahead', credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en
+      Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_49_(cropped)2.png'}
+  text: HIC WILLELM[US] DUX INTERROGAT VITAL[EM] SI VIDISSET HAROLDI EXERCITU[M]
+  tokens:
+  - id: bt.49.1.1
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.49.1.2
+    surface: WILLELM[US
+    punct: ']'
+    sound:
+      anglo-norman: {ipa: wil.ˈlɛl.mys, respell: weel-LEL-müs}
+      classical: {ipa: wɪl.ˈlɛl.mʊs, respell: wil-LEL-mus}
+  - id: bt.49.1.3
+    surface: DUX
+    sound:
+      anglo-norman: {ipa: dyks, respell: düks}
+      classical: {ipa: dʊks, respell: duks}
+  - id: bt.49.1.4
+    surface: INTERROGAT
+    sound:
+      anglo-norman: {ipa: in.ˈtɛr.rɔ.ɡat, respell: een-TER-ro-gat}
+      classical: {ipa: ɪn.ˈtɛr.rɔ.ɡat, respell: in-TER-ro-gat}
+  - id: bt.49.1.5
+    surface: VITAL[EM
+    punct: ']'
+    sound:
+      anglo-norman: {ipa: vi.ˈta.lɛm, respell: vee-TA-lem}
+      classical: {ipa: wiː.ˈtaː.lɛm, respell: wee-TAA-lem}
+  - id: bt.49.1.6
+    surface: SI
+    sound:
+      anglo-norman: {ipa: si, respell: see}
+      classical: {ipa: siː, respell: see}
+  - id: bt.49.1.7
+    surface: VIDISSET
+    sound:
+      anglo-norman: {ipa: vi.ˈdis.sɛt, respell: vee-DEES-set}
+      classical: {ipa: wiː.ˈdɪs.sɛt, respell: wee-DIS-set}
+  - id: bt.49.1.8
+    surface: HAROLDI
+    sound:
+      anglo-norman: {ipa: a.ˈrɔl.di, respell: a-ROL-dee}
+      classical: {ipa: ha.ˈrɔl.diː, respell: ha-ROL-dee}
+  - id: bt.49.1.9
+    surface: EXERCITU[M
+    punct: ']'
+    sound:
+      anglo-norman: {ipa: ɛk.ˈsɛr.tsi.tym, respell: ek-SER-tsee-tüm}
+      classical: {ipa: ɛk.ˈsɛr.kɪ.tʊm, respell: ek-SER-ki-tum}
+- id: bt.50.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:50.1
+  stanza: '50'
+  stanza_title: 'Scene 50: Harold hears of William''s army'
+  figure: {file: art/works/bayeux-tapestry/scene-50.jpg, caption: 'Scene 50. An English scout on foot looks out from the hill, and a messenger brings word to Harold on horseback.', alt: 'Embroidered man
+      on foot with a shield on a hillside, a horseman beyond him', credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of
+      the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-expired)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_50_(cropped).jpg'}
+  text: ISTE NUNTIAT HAROLDUM REGE[M] DE EXERCITU WILELMI DUCIS
+  tokens:
+  - id: bt.50.1.1
+    surface: ISTE
+    sound:
+      anglo-norman: {ipa: ˈis.tɛ, respell: EES-te}
+      classical: {ipa: ˈɪs.tɛ, respell: IS-te}
+  - id: bt.50.1.2
+    surface: NUNTIAT
+    sound:
+      anglo-norman: {ipa: ˈnyn.tsi.at, respell: NÜN-tsee-at}
+      classical: {ipa: ˈnuːn.tɪ.at, respell: NOON-ti-at}
+  - id: bt.50.1.3
+    surface: HAROLDUM
+    sound:
+      anglo-norman: {ipa: a.ˈrɔl.dym, respell: a-ROL-düm}
+      classical: {ipa: ha.ˈrɔl.dʊm, respell: ha-ROL-dum}
+  - id: bt.50.1.4
+    surface: REGE[M
+    punct: ']'
+    sound:
+      anglo-norman: {ipa: ˈrɛ.dʒɛm, respell: RE-jem}
+      classical: {ipa: ˈreː.ɡɛm, respell: RAY-gem}
+  - id: bt.50.1.5
+    surface: DE
+    sound:
+      anglo-norman: {ipa: dɛ, respell: de}
+      classical: {ipa: deː, respell: day}
+  - id: bt.50.1.6
+    surface: EXERCITU
+    sound:
+      anglo-norman: {ipa: ɛk.ˈsɛr.tsi.ty, respell: ek-SER-tsee-tü}
+      classical: {ipa: ɛk.ˈsɛr.kɪ.tuː, respell: ek-SER-ki-too}
+  - id: bt.50.1.7
+    surface: WILELMI
+    sound:
+      anglo-norman: {ipa: wi.ˈlɛl.mi, respell: wee-LEL-mee}
+      classical: {ipa: wɪ.ˈlɛl.miː, respell: wi-LEL-mee}
+  - id: bt.50.1.8
+    surface: DUCIS
+    sound:
+      anglo-norman: {ipa: ˈdy.tsis, respell: DÜ-tsees}
+      classical: {ipa: ˈdʊ.kɪs, respell: DU-kis}
+- id: bt.51.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:51.1
+  stanza: '51'
+  stanza_title: 'Scene 51: William speaks to his knights'
+  figure: {file: art/works/bayeux-tapestry/scene-51.jpg, caption: 'Scene 51. William, at the left, turns to address his mounted knights, who ride on ahead of him.', alt: Embroidered line of horsemen in
+      mail riding with lances, credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie;
+      via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-expired)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_51_(cropped)_2.jpg'}
+  text: HIC WILLELM[US] DUX ALLOQUITUR SUIS MILITIBUS UT PREPARAREN[T] SE VIRILITER ET SAPIENTER AD PR[O]ELIUM CONTRA ANGLORUM EXERCITU[M]
+  tokens:
+  - id: bt.51.1.1
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.51.1.2
+    surface: WILLELM[US
+    punct: ']'
+    sound:
+      anglo-norman: {ipa: wil.ˈlɛl.mys, respell: weel-LEL-müs}
+      classical: {ipa: wɪl.ˈlɛl.mʊs, respell: wil-LEL-mus}
+  - id: bt.51.1.3
+    surface: DUX
+    sound:
+      anglo-norman: {ipa: dyks, respell: düks}
+      classical: {ipa: dʊks, respell: duks}
+  - id: bt.51.1.4
+    surface: ALLOQUITUR
+    sound:
+      anglo-norman: {ipa: al.ˈlɔ.kwi.tyr, respell: al-LO-kwee-tür}
+      classical: {ipa: al.ˈlɔ.kʷɪ.tʊr, respell: al-LO-kwi-tur}
+  - id: bt.51.1.5
+    surface: SUIS
+    sound:
+      anglo-norman: {ipa: ˈsy.is, respell: SÜ-ees}
+      classical: {ipa: ˈsʊ.iːs, respell: SU-ees}
+  - id: bt.51.1.6
+    surface: MILITIBUS
+    sound:
+      anglo-norman: {ipa: mi.ˈli.ti.bys, respell: mee-LEE-tee-büs}
+      classical: {ipa: miː.ˈlɪ.tɪ.bʊs, respell: mee-LI-ti-bus}
+  - id: bt.51.1.7
+    surface: UT
+    sound:
+      anglo-norman: {ipa: yt, respell: üt}
+      classical: {ipa: ʊt, respell: ut}
+  - id: bt.51.1.8
+    surface: PREPARAREN[T
+    punct: ']'
+    sound:
+      anglo-norman: {ipa: prɛ.pa.ˈra.rɛnt, respell: pre-pa-RA-rent}
+      classical: {ipa: preː.pa.ˈraː.rɛnt, respell: pray-pa-RAA-rent}
+  - id: bt.51.1.9
+    surface: SE
+    sound:
+      anglo-norman: {ipa: sɛ, respell: se}
+      classical: {ipa: seː, respell: say}
+  - id: bt.51.1.10
+    surface: VIRILITER
+    sound:
+      anglo-norman: {ipa: vi.ˈri.li.tɛr, respell: vee-REE-lee-ter}
+      classical: {ipa: wɪ.ˈriː.lɪ.tɛr, respell: wi-REE-li-ter}
+  - id: bt.51.1.11
+    surface: ET
+    sound:
+      anglo-norman: {ipa: ɛt, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: bt.51.1.12
+    surface: SAPIENTER
+    sound:
+      anglo-norman: {ipa: sa.pi.ˈɛn.tɛr, respell: sa-pee-EN-ter}
+      classical: {ipa: sa.pɪ.ˈɛn.tɛr, respell: sa-pi-EN-ter}
+  - id: bt.51.1.13
+    surface: AD
+    sound:
+      anglo-norman: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: bt.51.1.14
+    surface: PR[O]ELIUM
+    sound:
+      anglo-norman: {ipa: ˈprɛ.li.ym, respell: PRE-lee-üm}
+      classical: {ipa: ˈproe.lɪ.ʊm, respell: PROY-li-um}
+  - id: bt.51.1.15
+    surface: CONTRA
+    sound:
+      anglo-norman: {ipa: ˈkɔn.tra, respell: KON-tra}
+      classical: {ipa: ˈkɔn.traː, respell: KON-traa}
+  - id: bt.51.1.16
+    surface: ANGLORUM
+    sound:
+      anglo-norman: {ipa: aŋ.ˈɡlɔ.rym, respell: ang-GLO-rüm}
+      classical: {ipa: aŋ.ˈɡloː.rʊm, respell: ang-GLOH-rum}
+  - id: bt.51.1.17
+    surface: EXERCITU[M
+    punct: ']'
+    sound:
+      anglo-norman: {ipa: ɛk.ˈsɛr.tsi.tym, respell: ek-SER-tsee-tüm}
+      classical: {ipa: ɛk.ˈsɛr.kɪ.tʊm, respell: ek-SER-ki-tum}
 - id: bt.52.1
   cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:52.1
   stanza: '52'
@@ -1042,6 +2252,55 @@ lines:
     sound:
       anglo-norman: {ipa: ˈrɛ.dʒis, respell: RE-jees}
       classical: {ipa: ˈreː.ɡɪs, respell: RAY-gis}
+- id: bt.53.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:53.1
+  stanza: '53'
+  stanza_title: 'Scene 53: English and French fall together'
+  figure: {file: art/works/bayeux-tapestry/scene-53.jpg, caption: 'Scene 53. Horses tumble and men fall on both sides around a low hillock, and the dead fill the lower border.', alt: Embroidered battle
+      with horses falling headlong and men lying dead in the border, credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign
+      of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_53_(cropped)2.png'}
+  text: HIC CECIDERUNT SIMUL ANGLI ET FRANCI IN PR[O]ELIO
+  tokens:
+  - id: bt.53.1.1
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.53.1.2
+    surface: CECIDERUNT
+    sound:
+      anglo-norman: {ipa: tsɛ.tsi.ˈdɛ.rynt, respell: tse-tsee-DE-rünt}
+      classical: {ipa: kɛ.kɪ.ˈdeː.rʊnt, respell: ke-ki-DAY-runt}
+  - id: bt.53.1.3
+    surface: SIMUL
+    sound:
+      anglo-norman: {ipa: ˈsi.myl, respell: SEE-mül}
+      classical: {ipa: ˈsɪ.mʊl, respell: SI-mul}
+  - id: bt.53.1.4
+    surface: ANGLI
+    sound:
+      anglo-norman: {ipa: ˈaŋ.ɡli, respell: ANG-glee}
+      classical: {ipa: ˈaŋ.ɡliː, respell: ANG-glee}
+  - id: bt.53.1.5
+    surface: ET
+    sound:
+      anglo-norman: {ipa: ɛt, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: bt.53.1.6
+    surface: FRANCI
+    sound:
+      anglo-norman: {ipa: ˈfraŋ.tsi, respell: FRANG-tsee}
+      classical: {ipa: ˈfraŋ.kiː, respell: FRANG-kee}
+  - id: bt.53.1.7
+    surface: IN
+    sound:
+      anglo-norman: {ipa: in, respell: een}
+      classical: {ipa: ɪn, respell: in}
+  - id: bt.53.1.8
+    surface: PR[O]ELIO
+    sound:
+      anglo-norman: {ipa: ˈprɛ.li.ɔ, respell: PRE-lee-o}
+      classical: {ipa: ˈproe.lɪ.oː, respell: PROY-li-oh}
 - id: bt.54.1
   cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:54.1
   stanza: '54'
@@ -1087,6 +2346,102 @@ lines:
     sound:
       anglo-norman: {ipa: ˈpy.ɛ.rɔs, respell: PÜ-e-ros}
       classical: {ipa: ˈpʊ.ɛ.roːs, respell: PU-e-rohs}
+- id: bt.55.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:55.1
+  stanza: '55'
+  stanza_title: 'Scene 55: Here is Duke William'
+  figure: {file: art/works/bayeux-tapestry/scene-55.jpg, caption: 'Scene 55. William, on horseback, raises a hand to his helmet; the scene is usually read as the duke showing his face to his men to prove
+      he was alive.', alt: Embroidered horseman in mail turning and lifting his hand to his helmet, credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN,
+      after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_55_(cropped).png'}
+  text: HIC EST WILEL[MUS] DUX
+  tokens:
+  - id: bt.55.1.1
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.55.1.2
+    surface: EST
+    sound:
+      anglo-norman: {ipa: ɛst, respell: est}
+      classical: {ipa: ɛst, respell: est}
+  - id: bt.55.1.3
+    surface: WILEL[MUS
+    punct: ']'
+    sound:
+      anglo-norman: {ipa: wi.ˈlɛl.mys, respell: wee-LEL-müs}
+      classical: {ipa: wɪ.ˈlɛl.mʊs, respell: wi-LEL-mus}
+  - id: bt.55.1.4
+    surface: DUX
+    sound:
+      anglo-norman: {ipa: dyks, respell: düks}
+      classical: {ipa: dʊks, respell: duks}
+- id: bt.56.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:56.1
+  stanza: '56'
+  stanza_title: 'Scene 56: Eustace, and the French attack'
+  figure: {file: art/works/bayeux-tapestry/scene-56.jpg, caption: 'Scene 56. The French horsemen charge, and the English on foot fall before them. Eustace, named E[USTA]TIUS, rides with a banner at the
+      end of scene 55, just before this photograph begins.', alt: 'Embroidered cavalry charging into men on foot with shields, archers in the lower border', credit: 'Bayeux Tapestry, about 1070s; photograph
+      2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates:
+      PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_56_(cropped).png'}
+  text: E[USTA]TIUS
+  tokens:
+  - id: bt.56.1.1
+    surface: E[USTA]TIUS
+    sound:
+      anglo-norman: {ipa: ɛ.ys.ˈta.tsi.ys, respell: e-üs-TA-tsee-üs}
+      classical: {ipa: ɛ.ʊs.ˈta.tɪ.ʊs, respell: e-us-TA-ti-us}
+- id: bt.56.2
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:56.2
+  stanza: '56'
+  stanza_title: 'Scene 56: Eustace, and the French attack'
+  text: HIC FRANCI PUGNANT ET CECIDERUNT QUI ERANT CUM HAROLDO
+  tokens:
+  - id: bt.56.2.1
+    surface: HIC
+    sound:
+      anglo-norman: {ipa: ik, respell: eek}
+      classical: {ipa: hiːk, respell: heek}
+  - id: bt.56.2.2
+    surface: FRANCI
+    sound:
+      anglo-norman: {ipa: ˈfraŋ.tsi, respell: FRANG-tsee}
+      classical: {ipa: ˈfraŋ.kiː, respell: FRANG-kee}
+  - id: bt.56.2.3
+    surface: PUGNANT
+    sound:
+      anglo-norman: {ipa: ˈpyɡ.nant, respell: PÜG-nant}
+      classical: {ipa: ˈpʊɡ.nant, respell: PUG-nant}
+  - id: bt.56.2.4
+    surface: ET
+    sound:
+      anglo-norman: {ipa: ɛt, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: bt.56.2.5
+    surface: CECIDERUNT
+    sound:
+      anglo-norman: {ipa: tsɛ.tsi.ˈdɛ.rynt, respell: tse-tsee-DE-rünt}
+      classical: {ipa: kɛ.kɪ.ˈdeː.rʊnt, respell: ke-ki-DAY-runt}
+  - id: bt.56.2.6
+    surface: QUI
+    sound:
+      anglo-norman: {ipa: kwi, respell: kwee}
+      classical: {ipa: kʷiː, respell: kwee}
+  - id: bt.56.2.7
+    surface: ERANT
+    sound:
+      anglo-norman: {ipa: ˈɛ.rant, respell: E-rant}
+      classical: {ipa: ˈɛ.rant, respell: E-rant}
+  - id: bt.56.2.8
+    surface: CUM
+    sound:
+      anglo-norman: {ipa: kym, respell: küm}
+      classical: {ipa: kʊm, respell: kum}
+  - id: bt.56.2.9
+    surface: HAROLDO
+    sound:
+      anglo-norman: {ipa: a.ˈrɔl.dɔ, respell: a-ROL-do}
+      classical: {ipa: ha.ˈrɔl.doː, respell: ha-ROL-doh}
 - id: bt.57.1
   cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:57.1
   stanza: '57'
@@ -1122,3 +2477,32 @@ lines:
     sound:
       anglo-norman: {ipa: ɛst, respell: est}
       classical: {ipa: ɛst, respell: est}
+- id: bt.58.1
+  cite: urn:weft:lat:bayeux-tapestry-tituli.enwiki-tituli:58.1
+  stanza: '58'
+  stanza_title: 'Scene 58: The English flee'
+  figure: {file: art/works/bayeux-tapestry/scene-58.jpg, caption: 'Scene 58. The English flee on foot and on horseback, pursued by mounted knights. The cloth ends here; its original end is lost.', alt: 'Embroidered
+      horsemen pursuing men running away past a tree, the cloth frayed at the right edge', credit: 'Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the
+      photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons', license: 'Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)', source: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_58_(cropped).png'}
+  text: ET FUGA VERTERUNT ANGLI
+  tokens:
+  - id: bt.58.1.1
+    surface: ET
+    sound:
+      anglo-norman: {ipa: ɛt, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: bt.58.1.2
+    surface: FUGA
+    sound:
+      anglo-norman: {ipa: ˈfy.ɡa, respell: FÜ-ga}
+      classical: {ipa: ˈfʊ.ɡaː, respell: FU-gaa}
+  - id: bt.58.1.3
+    surface: VERTERUNT
+    sound:
+      anglo-norman: {ipa: vɛr.ˈtɛ.rynt, respell: ver-TE-rünt}
+      classical: {ipa: wɛr.ˈteː.rʊnt, respell: wer-TAY-runt}
+  - id: bt.58.1.4
+    surface: ANGLI
+    sound:
+      anglo-norman: {ipa: ˈaŋ.ɡli, respell: ANG-glee}
+      classical: {ipa: ˈaŋ.ɡliː, respell: ANG-glee}

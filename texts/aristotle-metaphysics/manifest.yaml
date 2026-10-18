@@ -13,10 +13,14 @@ written:
   display: "350–322 BC"
   label: Aristotle's lectures, about 350–322 BC, gathered as the Metaphysics after his death
 status: phase-0
-extent: {is: excerpt, of: "the opening sentences of book A, chapter 1, 980a21 to 27; the Metaphysics has 14 books"}
+extent: {is: section, of: "the whole of book A, chapter 1, 980a21 to 982a3; book A has 10 chapters and the Metaphysics 14 books"}
 pilot:
   sections:
   - 980a
+  - 980b
+  - 981a
+  - 981b
+  - 982a
 edition:
   id: perseus-grc2
   name: Perseus perseus-grc2 (Ross 1924), passage in a Weft edition file
@@ -29,6 +33,10 @@ treebank:
   format: glaux
   subdocs:
   - 1.980a
+  - 1.980b
+  - 1.981a
+  - 1.981b
+  - 1.982a
   file: sources/glaux-0086-025.xml
   url: https://raw.githubusercontent.com/perseids-publications/glaux-trees/12606b3426f1e5245413f3a8e1c5e0b22348a13c/public/xml/0086-025.xml
   sha256: 2bc3a67d84169c487bba1d00501749ad7d2b0316936725c5f97c0cdd69ace48f

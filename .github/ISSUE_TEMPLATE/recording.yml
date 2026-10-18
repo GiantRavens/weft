@@ -9,16 +9,31 @@ body:
         Pages do not play audio yet. Recordings are collected now and added, with credit, when the
         audio layer is built. One file per line, named by the line id (for example gen.1.1.wav);
         WAV or FLAC, 44.1 kHz or better, a quiet room, a natural pace.
+
+        Everything posted here, attachments included, is public as soon as it is posted. To keep the
+        rights to your recording, do not attach it here: write to speakers@weftlibrary.org and Weft
+        will arrange a private way to send it. Fluent speakers of a living language may read in their
+        own way of speaking instead of a scheme; the terms are at https://weftlibrary.org/speakers.html.
   - type: input
     id: work
     attributes:
       label: Work
     validations:
       required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of reading
+      options:
+        - In one of the page's pronunciation schemes
+        - In my own way of speaking, as a fluent speaker
+    validations:
+      required: true
   - type: input
     id: scheme
     attributes:
-      label: Scheme you read in
+      label: Scheme you read in, or your dialect
+      description: A scheme from the page (for example homeric), or for a speaker's own reading the dialect (for example Oklahoma, Kituwah).
     validations:
       required: true
   - type: input
@@ -30,12 +45,15 @@ body:
     id: files
     attributes:
       label: Files or a link
-      description: Attach the files here, or give a link to download them.
+      description: Attach the files here, or give a link to download them. Attachments are public at once; for a recording whose rights you keep, leave this empty and write to speakers@weftlibrary.org.
   - type: dropdown
     id: license
     attributes:
       label: License
-      options: [CC BY-SA 4.0, CC0 (public domain dedication)]
+      options:
+        - CC BY-SA 4.0
+        - CC0 (public domain dedication)
+        - All rights kept by me; I will send the files by email, not attach them here
     validations:
       required: true
   - type: input
@@ -45,3 +63,9 @@ body:
       description: A name or a pseudonym. Weft does not publish contact details.
     validations:
       required: true
+  - type: checkboxes
+    id: conditions
+    attributes:
+      label: Conditions
+      options:
+        - label: Do not use this recording to train AI models (Weft honors this in its own work and states it beside the recording)

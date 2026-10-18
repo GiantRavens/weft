@@ -255,6 +255,37 @@ Every translation in the manifest needs a `relation` here. `position` is either 
 `consent: {source, summary}`, the community's recorded consent; without it the check fails. The page
 shows the block in a notice above the text.
 
+## Audio: audio/recordings.yaml
+
+The audio layer records who read a work aloud, how, and on what terms. Each record is one reading by one
+person. Two kinds are kept apart. A `scheme` reading follows one of the work's pronunciation schemes and
+names it. A `speaker` reading is a fluent speaker's own reading in a named dialect: a modern witness to
+the language, not a reconstruction of how the text sounded when it was written, so it names a dialect
+and never a scheme. The page labels the two differently.
+
+```yaml
+recordings:
+- id: chcon-speaker-1
+  kind: speaker                   # speaker | scheme
+  dialect: Oklahoma               # speaker: required; scheme: absent
+  # scheme: c1828                 # scheme: required, one of the work's schemes; speaker: absent
+  reader: {credit: "Name as the reader asks", anonymous: false}
+  license: rights-retained        # CC BY-SA 4.0 | CC0 | rights-retained
+  conditions: [no-ai-training, display-by-permission]
+  consent: {date: 2026-10-20, sheet: docs/speakers.md}    # speaker: required
+  files: {chcon.pre.1: private/texts/cherokee-constitution-1827/audio/chcon.pre.1.webm}
+  # withdrawn: true               # files removed; the record stays as a note that the reading was withdrawn
+```
+
+`files` maps a line or token id to a file or a URL; a token id is a single word said in isolation.
+`rights-retained` means the reader keeps every right and Weft displays the reading by the reader's
+permission only, so it requires the condition `display-by-permission`, and its files live under
+`private/` or at a URL, never in `texts/`, which is public. Audio formats are gitignored for the same
+reason. `no-ai-training` is required on every speaker's reading: Weft honors it in its own work and
+states it beside the recording, though it cannot enforce it on others. A withdrawn reading keeps its
+record and loses its files. `weft check` enforces each of these rules; it does not yet confirm that a
+listed file exists. The terms a speaker is offered are in [For speakers](speakers.md).
+
 ## notes/bookNN.yaml
 
 ```yaml

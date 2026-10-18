@@ -382,8 +382,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             leads = [None] * len(surfaces)
             conllu_pairs = [{"lemma": r["lemma"], "postag": r["postag"], "ref": r["ref"]} for r in verses[n]]
         if ed_fmt == "conllu":
-            surfaces, puncts, conllu_pairs = treebank.conllu_tokens(sents[n]["rows"], sents[n]["sent_id"])
-            leads = [None] * len(surfaces)
+            surfaces, puncts, conllu_pairs, leads = treebank.conllu_tokens(sents[n]["rows"], sents[n]["sent_id"])
         for t in raw:
             ml = LEAD.search(t)
             leads.append(ml.group(1) if ml else None)

@@ -203,7 +203,7 @@ def test_grettir_draft_and_check():
         before = (work / "gen/chapter14.yaml").read_text()
         report = draft.run(work)
         assert (work / "gen/chapter14.yaml").read_text() == before
-        assert report["counts"] == {"lines": 9, "tokens": 80}
+        assert report["counts"] == {"lines": 104, "tokens": 1163}   # all the prose of chapter 14
         assert report["failures"] == {}
     r = check.run(REPO, "saga-grettir")
     assert r["ok"], r["problems"]

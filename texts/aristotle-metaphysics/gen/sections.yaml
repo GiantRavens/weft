@@ -531,3 +531,5719 @@ lines:
       restored: {ipa: di.a.pʰo.ráːs, respell: di-a-pʰo-RAAS}
       erasmian: {ipa: di.a.fo.ˈraːs, respell: di-a-fo-RAAS}
     prov: {sound: weft.greek 0.1 + quantity table}
+- id: met.980a.5
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:980a.5
+  stanza: 980a
+  stanza_title: Book A (I), chapter 1, Bekker 980a21–27
+  text: φύσει μὲν οὖν αἴσθησιν ἔχοντα γίγνεται τὰ ζῷα, ἐκ δὲ ταύτης τοῖς μὲν αὐτῶν οὐκ ἐγγίγνεται μνήμη, τοῖς δʼ ἐγγίγνεται.
+  tokens:
+  - id: met.980a.5.1
+    surface: φύσει
+    lemma: φύσις
+    morph: n-s---fd-
+    tb: 6/1487027
+    sound:
+      restored: {ipa: pʰý.seː, respell: PʰÜ-say}
+      erasmian: {ipa: ˈfy.sei, respell: FÜ-say}
+  - id: met.980a.5.2
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 6/1487028
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.980a.5.3
+    surface: οὖν
+    lemma: οὖν
+    morph: d--------
+    tb: 6/1487029
+    sound:
+      restored: {ipa: ûːn, respell: OON}
+      erasmian: {ipa: ˈuːn, respell: OON}
+  - id: met.980a.5.4
+    surface: αἴσθησιν
+    lemma: αἴσθησις
+    morph: n-s---fa-
+    tb: 6/1487030
+    sound:
+      restored: {ipa: aís.tʰɛː.sin, respell: AIS-tʰê-sin}
+      erasmian: {ipa: ˈais.θɛː.sin, respell: AIS-thay-sin}
+  - id: met.980a.5.5
+    surface: ἔχοντα
+    lemma: ἔχω
+    morph: v-pppann-
+    tb: 6/1487031
+    sound:
+      restored: {ipa: é.kʰon.ta, respell: E-kʰon-ta}
+      erasmian: {ipa: ˈe.xon.ta, respell: E-khon-ta}
+  - id: met.980a.5.6
+    surface: γίγνεται
+    lemma: γίγνομαι
+    morph: v3spie---
+    tb: 6/1487032
+    sound:
+      restored: {ipa: ɡíɡ.ne.tai, respell: GIG-ne-tai}
+      erasmian: {ipa: ˈɡiɡ.ne.tai, respell: GIG-ne-tai}
+  - id: met.980a.5.7
+    surface: τὰ
+    lemma: ὁ
+    morph: l-p---nn-
+    tb: 6/1487033
+    sound:
+      restored: {ipa: tà, respell: ta}
+      erasmian: {ipa: ˈta, respell: TA}
+  - id: met.980a.5.8
+    surface: ζῷα
+    punct: ','
+    lemma: ζῷον
+    morph: n-p---nn-
+    tb: 6/1487034
+    sound:
+      restored: {ipa: zdɔ̂ːi.a, respell: ZDAWI-a}
+      erasmian: {ipa: ˈdzɔː.a, respell: DZOH-a}
+  - id: met.980a.5.9
+    surface: ἐκ
+    lemma: ἐκ
+    morph: r--------
+    tb: 6/1487036
+    sound:
+      restored: {ipa: ek, respell: ek}
+      erasmian: {ipa: ek, respell: ek}
+  - id: met.980a.5.10
+    surface: δὲ
+    lemma: δέ
+    morph: b--------
+    tb: 6/1487037
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: met.980a.5.11
+    surface: ταύτης
+    lemma: οὗτος
+    morph: a-s---fg-
+    tb: 6/1487038
+    sound:
+      restored: {ipa: taú.tɛːs, respell: TOW-tês}
+      erasmian: {ipa: ˈtau.tɛːs, respell: TOW-tays}
+  - id: met.980a.5.12
+    surface: τοῖς
+    lemma: ὁ
+    morph: l-p---md-
+    tb: 6/1487039
+    sound:
+      restored: {ipa: tôis, respell: TOYS}
+      erasmian: {ipa: ˈtois, respell: TOYS}
+  - id: met.980a.5.13
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 6/1487040
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.980a.5.14
+    surface: αὐτῶν
+    lemma: αὐτός
+    morph: a-p---mg-
+    tb: 6/1487041
+    sound:
+      restored: {ipa: au.tɔ̂ːn, respell: ow-TAWN}
+      erasmian: {ipa: au.ˈtɔːn, respell: ow-TOHN}
+  - id: met.980a.5.15
+    surface: οὐκ
+    lemma: οὐ
+    morph: d--------
+    tb: 6/1487042
+    sound:
+      restored: {ipa: uːk, respell: ook}
+      erasmian: {ipa: uːk, respell: ook}
+  - id: met.980a.5.16
+    surface: ἐγγίγνεται
+    lemma: ἐγγίγνομαι
+    morph: v3spie---
+    tb: 6/1487043
+    sound:
+      restored: {ipa: eŋ.ɡíɡ.ne.tai, respell: eng-GIG-ne-tai}
+      erasmian: {ipa: eŋ.ˈɡiɡ.ne.tai, respell: eng-GIG-ne-tai}
+  - id: met.980a.5.17
+    surface: μνήμη
+    punct: ','
+    lemma: μνήμη
+    morph: n-s---fn-
+    tb: 6/1487044
+    sound:
+      restored: {ipa: mnɛ́ː.mɛː, respell: MNÊ-mê}
+      erasmian: {ipa: ˈmnɛː.mɛː, respell: MNAY-may}
+  - id: met.980a.5.18
+    surface: τοῖς
+    lemma: ὁ
+    morph: l-p---md-
+    tb: 6/1487046
+    sound:
+      restored: {ipa: tôis, respell: TOYS}
+      erasmian: {ipa: ˈtois, respell: TOYS}
+  - id: met.980a.5.19
+    surface: δʼ
+    lemma: δέ
+    morph: b--------
+    tb: 6/1487047
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: met.980a.5.20
+    surface: ἐγγίγνεται
+    punct: .
+    lemma: ἐγγίγνομαι
+    morph: v3spie---
+    tb: 6/1487048
+    sound:
+      restored: {ipa: eŋ.ɡíɡ.ne.tai, respell: eng-GIG-ne-tai}
+      erasmian: {ipa: eŋ.ˈɡiɡ.ne.tai, respell: eng-GIG-ne-tai}
+- id: met.980b.1
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:980b.1
+  stanza: 980b
+  stanza_title: Book A (I), chapter 1, Bekker 980b
+  text: καὶ διὰ τοῦτο ταῦτα φρονιμώτερα καὶ μαθητικώτερα τῶν μὴ δυναμένων μνημονεύειν ἐστί, φρόνιμα μὲν ἄνευ τοῦ μανθάνειν ὅσα μὴ δύναται τῶν ψόφων ἀκούειν (οἷον μέλιττα κἂν εἴ τι τοιοῦτον ἄλλο γένος ζῴων
+    ἔστι), μανθάνει δʼ ὅσα πρὸς τῇ μνήμῃ καὶ ταύτην ἔχει τὴν αἴσθησιν.
+  tokens:
+  - id: met.980b.1.1
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 7/1487050
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.980b.1.2
+    surface: διὰ
+    lemma: διά
+    morph: r--------
+    tb: 7/1487051
+    sound:
+      restored: {ipa: di.à, respell: di-a}
+      erasmian: {ipa: di.ˈa, respell: di-A}
+  - id: met.980b.1.3
+    surface: τοῦτο
+    lemma: οὗτος
+    morph: a-s---na-
+    tb: 7/1487052
+    sound:
+      restored: {ipa: tûː.to, respell: TOO-to}
+      erasmian: {ipa: ˈtuː.to, respell: TOO-to}
+  - id: met.980b.1.4
+    surface: ταῦτα
+    lemma: οὗτος
+    morph: a-p---na-
+    tb: 7/1487053
+    sound:
+      restored: {ipa: tâu.ta, respell: TOW-ta}
+      erasmian: {ipa: ˈtau.ta, respell: TOW-ta}
+  - id: met.980b.1.5
+    surface: φρονιμώτερα
+    lemma: φρόνιμος
+    morph: a-p---nac
+    tb: 7/1487054
+    sound:
+      restored: {ipa: pʰro.ni.mɔ́ː.te.ra, respell: pʰro-ni-MAW-te-ra}
+      erasmian: {ipa: fro.ni.ˈmɔː.te.ra, respell: fro-ni-MOH-te-ra}
+  - id: met.980b.1.6
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 7/1487055
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.980b.1.7
+    surface: μαθητικώτερα
+    lemma: μαθητικός
+    morph: a-p---nac
+    tb: 7/1487056
+    sound:
+      restored: {ipa: ma.tʰɛː.ti.kɔ́ː.te.ra, respell: ma-tʰê-ti-KAW-te-ra}
+      erasmian: {ipa: ma.θɛː.ti.ˈkɔː.te.ra, respell: ma-thay-ti-KOH-te-ra}
+  - id: met.980b.1.8
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---ng-
+    tb: 7/1487057
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.980b.1.9
+    surface: μὴ
+    lemma: μή
+    morph: d--------
+    tb: 7/1487058
+    sound:
+      restored: {ipa: mɛ̀ː, respell: mê}
+      erasmian: {ipa: ˈmɛː, respell: MAY}
+  - id: met.980b.1.10
+    surface: δυναμένων
+    lemma: δύναμαι
+    morph: v-pppeng-
+    tb: 7/1487059
+    sound:
+      restored: {ipa: dy.na.mé.nɔːn, respell: dü-na-ME-nawn}
+      erasmian: {ipa: dy.na.ˈme.nɔːn, respell: dü-na-ME-nohn}
+  - id: met.980b.1.11
+    surface: μνημονεύειν
+    lemma: μνημονεύω
+    morph: v--pna---
+    tb: 7/1487060
+    sound:
+      restored: {ipa: mnɛː.mo.neú.eːn, respell: mnê-mo-NEU-ayn}
+      erasmian: {ipa: mnɛː.mo.ˈneu.ein, respell: mnay-mo-NYOO-ayn}
+  - id: met.980b.1.12
+    surface: ἐστί
+    punct: ','
+    lemma: εἰμί
+    morph: v3spia---
+    tb: 7/1487061
+    sound:
+      restored: {ipa: es.tí, respell: es-TI}
+      erasmian: {ipa: es.ˈti, respell: es-TI}
+  - id: met.980b.1.13
+    surface: φρόνιμα
+    lemma: φρόνιμος
+    morph: a-p---na-
+    tb: 7/1487063
+    sound:
+      restored: {ipa: pʰró.ni.ma, respell: PʰRO-ni-ma}
+      erasmian: {ipa: ˈfro.ni.ma, respell: FRO-ni-ma}
+  - id: met.980b.1.14
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 7/1487064
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.980b.1.15
+    surface: ἄνευ
+    lemma: ἄνευ
+    morph: r--------
+    tb: 7/1487065
+    sound:
+      restored: {ipa: á.neu, respell: A-neu}
+      erasmian: {ipa: ˈa.neu, respell: A-nyoo}
+  - id: met.980b.1.16
+    surface: τοῦ
+    lemma: ὁ
+    morph: l-s---ng-
+    tb: 7/1487066
+    sound:
+      restored: {ipa: tûː, respell: TOO}
+      erasmian: {ipa: ˈtuː, respell: TOO}
+  - id: met.980b.1.17
+    surface: μανθάνειν
+    lemma: μανθάνω
+    morph: v--pna---
+    tb: 7/1487067
+    sound:
+      restored: {ipa: man.tʰá.neːn, respell: man-TʰA-nayn}
+      erasmian: {ipa: man.ˈθa.nein, respell: man-THA-nayn}
+  - id: met.980b.1.18
+    surface: ὅσα
+    lemma: ὅσος
+    morph: p-p---na-
+    tb: 7/1487068
+    sound:
+      restored: {ipa: hó.sa, respell: HO-sa}
+      erasmian: {ipa: ˈho.sa, respell: HO-sa}
+  - id: met.980b.1.19
+    surface: μὴ
+    lemma: μή
+    morph: d--------
+    tb: 7/1487069
+    sound:
+      restored: {ipa: mɛ̀ː, respell: mê}
+      erasmian: {ipa: ˈmɛː, respell: MAY}
+  - id: met.980b.1.20
+    surface: δύναται
+    lemma: δύναμαι
+    morph: v3spie---
+    tb: 7/1487070
+    sound:
+      restored: {ipa: dý.na.tai, respell: DÜ-na-tai}
+      erasmian: {ipa: ˈdy.na.tai, respell: DÜ-na-tai}
+  - id: met.980b.1.21
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 7/1487071
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.980b.1.22
+    surface: ψόφων
+    lemma: ψόφος
+    morph: n-p---mg-
+    tb: 7/1487072
+    sound:
+      restored: {ipa: psó.pʰɔːn, respell: PSO-pʰawn}
+      erasmian: {ipa: ˈpso.fɔːn, respell: PSO-fohn}
+  - id: met.980b.1.23
+    surface: ἀκούειν
+    lemma: ἀκούω
+    morph: v--pna---
+    tb: 7/1487073
+    sound:
+      restored: {ipa: a.kúː.eːn, respell: a-KOO-ayn}
+      erasmian: {ipa: a.ˈkuː.ein, respell: a-KOO-ayn}
+  - id: met.980b.1.24
+    surface: οἷον
+    lead: (
+    lemma: οἷος
+    morph: p-s---ma-
+    tb: 7/1487075
+    sound:
+      restored: {ipa: hôi.on, respell: HOY-on}
+      erasmian: {ipa: ˈhoi.on, respell: HOY-on}
+  - id: met.980b.1.25
+    surface: μέλιττα
+    lemma: μελίζω
+    morph: v1saia---
+    tb: 7/1487076
+    sound:
+      restored: {ipa: mé.lit.ta, respell: ME-lit-ta}
+      erasmian: {ipa: ˈme.lit.ta, respell: ME-lit-ta}
+  - id: met.980b.1.26
+    surface: κἂν
+    lemma: κἄν
+    morph: c--------
+    tb: 7/1487077
+    sound:
+      restored: {ipa: kàn, respell: kan}
+      erasmian: {ipa: ˈkan, respell: KAN}
+  - id: met.980b.1.27
+    surface: εἴ
+    lemma: εἰ
+    morph: c--------
+    tb: 7/1487078
+    sound:
+      restored: {ipa: éː, respell: AY}
+      erasmian: {ipa: ˈei, respell: AY}
+  - id: met.980b.1.28
+    surface: τι
+    lemma: τις
+    morph: a-s---na-
+    tb: 7/1487079
+    sound:
+      restored: {ipa: ti, respell: ti}
+      erasmian: {ipa: ti, respell: ti}
+  - id: met.980b.1.29
+    surface: τοιοῦτον
+    lemma: τοιοῦτος
+    morph: a-s---na-
+    tb: 7/1487080
+    sound:
+      restored: {ipa: toi.ûː.ton, respell: toy-OO-ton}
+      erasmian: {ipa: toi.ˈuː.ton, respell: toy-OO-ton}
+  - id: met.980b.1.30
+    surface: ἄλλο
+    lemma: ἄλλος
+    morph: a-s---na-
+    tb: 7/1487081
+    sound:
+      restored: {ipa: ál.lo, respell: AL-lo}
+      erasmian: {ipa: ˈal.lo, respell: AL-lo}
+  - id: met.980b.1.31
+    surface: γένος
+    lemma: γένος
+    morph: n-s---na-
+    tb: 7/1487082
+    sound:
+      restored: {ipa: ɡé.nos, respell: GE-nos}
+      erasmian: {ipa: ˈɡe.nos, respell: GE-nos}
+  - id: met.980b.1.32
+    surface: ζῴων
+    lemma: ζῷον
+    morph: n-p---ng-
+    tb: 7/1487083
+    sound:
+      restored: {ipa: zdɔːí.ɔːn, respell: ZDAWI-awn}
+      erasmian: {ipa: ˈdzɔː.ɔːn, respell: DZOH-ohn}
+  - id: met.980b.1.33
+    surface: ἔστι
+    punct: ),
+    sound:
+      restored: {ipa: és.ti, respell: ES-ti}
+      erasmian: {ipa: ˈes.ti, respell: ES-ti}
+  - id: met.980b.1.34
+    surface: μανθάνει
+    lemma: μανθάνω
+    morph: v3spia---
+    tb: 7/1487087
+    sound:
+      restored: {ipa: man.tʰá.neː, respell: man-TʰA-nay}
+      erasmian: {ipa: man.ˈθa.nei, respell: man-THA-nay}
+  - id: met.980b.1.35
+    surface: δʼ
+    lemma: δέ
+    morph: b--------
+    tb: 7/1487088
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: met.980b.1.36
+    surface: ὅσα
+    lemma: ὅσος
+    morph: p-p---na-
+    tb: 7/1487089
+    sound:
+      restored: {ipa: hó.sa, respell: HO-sa}
+      erasmian: {ipa: ˈho.sa, respell: HO-sa}
+  - id: met.980b.1.37
+    surface: πρὸς
+    lemma: πρός
+    morph: r--------
+    tb: 7/1487090
+    sound:
+      restored: {ipa: pròs, respell: pros}
+      erasmian: {ipa: ˈpros, respell: PROS}
+  - id: met.980b.1.38
+    surface: τῇ
+    lemma: ὁ
+    morph: l-s---fd-
+    tb: 7/1487091
+    sound:
+      restored: {ipa: tɛ̂ːi, respell: TÊI}
+      erasmian: {ipa: ˈtɛː, respell: TAY}
+  - id: met.980b.1.39
+    surface: μνήμῃ
+    lemma: μνήμη
+    morph: n-s---fd-
+    tb: 7/1487092
+    sound:
+      restored: {ipa: mnɛ́ː.mɛːi, respell: MNÊ-mêi}
+      erasmian: {ipa: ˈmnɛː.mɛː, respell: MNAY-may}
+  - id: met.980b.1.40
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 7/1487093
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.980b.1.41
+    surface: ταύτην
+    lemma: οὗτος
+    morph: a-s---fa-
+    tb: 7/1487094
+    sound:
+      restored: {ipa: taú.tɛːn, respell: TOW-tên}
+      erasmian: {ipa: ˈtau.tɛːn, respell: TOW-tayn}
+  - id: met.980b.1.42
+    surface: ἔχει
+    lemma: ἔχω
+    morph: v3spia---
+    tb: 7/1487095
+    sound:
+      restored: {ipa: é.kʰeː, respell: E-kʰay}
+      erasmian: {ipa: ˈe.xei, respell: E-khay}
+  - id: met.980b.1.43
+    surface: τὴν
+    lemma: ὁ
+    morph: l-s---fa-
+    tb: 7/1487096
+    sound:
+      restored: {ipa: tɛ̀ːn, respell: tên}
+      erasmian: {ipa: ˈtɛːn, respell: TAYN}
+  - id: met.980b.1.44
+    surface: αἴσθησιν
+    punct: .
+    lemma: αἴσθησις
+    morph: n-s---fa-
+    tb: 7/1487097
+    sound:
+      restored: {ipa: aís.tʰɛː.sin, respell: AIS-tʰê-sin}
+      erasmian: {ipa: ˈais.θɛː.sin, respell: AIS-thay-sin}
+- id: met.980b.2
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:980b.2
+  stanza: 980b
+  stanza_title: Book A (I), chapter 1, Bekker 980b
+  text: τὰ μὲν οὖν ἄλλα ταῖς φαντασίαις ζῇ καὶ ταῖς μνήμαις, ἐμπειρίας δὲ μετέχει μικρόν· τὸ δὲ τῶν ἀνθρώπων γένος καὶ τέχνῃ καὶ λογισμοῖς.
+  tokens:
+  - id: met.980b.2.1
+    surface: τὰ
+    lemma: ὁ
+    morph: l-p---na-
+    tb: 8/1487099
+    sound:
+      restored: {ipa: tà, respell: ta}
+      erasmian: {ipa: ˈta, respell: TA}
+  - id: met.980b.2.2
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 8/1487100
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.980b.2.3
+    surface: οὖν
+    lemma: οὖν
+    morph: d--------
+    tb: 8/1487101
+    sound:
+      restored: {ipa: ûːn, respell: OON}
+      erasmian: {ipa: ˈuːn, respell: OON}
+  - id: met.980b.2.4
+    surface: ἄλλα
+    lemma: ἄλλος
+    morph: a-p---na-
+    tb: 8/1487102
+    sound:
+      restored: {ipa: ál.la, respell: AL-la}
+      erasmian: {ipa: ˈal.la, respell: AL-la}
+  - id: met.980b.2.5
+    surface: ταῖς
+    lemma: ὁ
+    morph: l-p---fd-
+    tb: 8/1487103
+    sound:
+      restored: {ipa: tâis, respell: TAIS}
+      erasmian: {ipa: ˈtais, respell: TAIS}
+  - id: met.980b.2.6
+    surface: φαντασίαις
+    lemma: φαντασία
+    morph: n-p---fd-
+    tb: 8/1487104
+    sound:
+      restored: {ipa: pʰan.ta.sí.ais, respell: pʰan-ta-SI-ais}
+      erasmian: {ipa: fan.ta.ˈsi.ais, respell: fan-ta-SI-ais}
+  - id: met.980b.2.7
+    surface: ζῇ
+    lemma: ζάω
+    morph: v3spia---
+    tb: 8/1487105
+    sound:
+      restored: {ipa: zdɛ̂ːi, respell: ZDÊI}
+      erasmian: {ipa: ˈdzɛː, respell: DZAY}
+  - id: met.980b.2.8
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 8/1487106
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.980b.2.9
+    surface: ταῖς
+    lemma: ὁ
+    morph: l-p---fd-
+    tb: 8/1487107
+    sound:
+      restored: {ipa: tâis, respell: TAIS}
+      erasmian: {ipa: ˈtais, respell: TAIS}
+  - id: met.980b.2.10
+    surface: μνήμαις
+    punct: ','
+    lemma: μνήμη
+    morph: n-p---fd-
+    tb: 8/1487108
+    sound:
+      restored: {ipa: mnɛ́ː.mais, respell: MNÊ-mais}
+      erasmian: {ipa: ˈmnɛː.mais, respell: MNAY-mais}
+  - id: met.980b.2.11
+    surface: ἐμπειρίας
+    lemma: ἐμπειρία
+    morph: n-s---fg-
+    tb: 8/1487110
+    sound:
+      restored: {ipa: em.peː.rí.as, respell: em-pay-RI-as}
+      erasmian: {ipa: em.pei.ˈri.as, respell: em-pay-RI-as}
+  - id: met.980b.2.12
+    surface: δὲ
+    lemma: δέ
+    morph: b--------
+    tb: 8/1487111
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: met.980b.2.13
+    surface: μετέχει
+    lemma: μετέχω
+    morph: v3spia---
+    tb: 8/1487112
+    sound:
+      restored: {ipa: me.té.kʰeː, respell: me-TE-kʰay}
+      erasmian: {ipa: me.ˈte.xei, respell: me-TE-khay}
+  - id: met.980b.2.14
+    surface: μικρόν
+    punct: ·
+    lemma: μικρός
+    morph: a-s---nn-
+    tb: 8/1487113
+    sound:
+      restored: {ipa: mi.krón, respell: mi-KRON}
+      erasmian: {ipa: mi.ˈkron, respell: mi-KRON}
+  - id: met.980b.2.15
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---nn-
+    tb: 9/1487115
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.980b.2.16
+    surface: δὲ
+    lemma: δέ
+    morph: b--------
+    tb: 9/1487116
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: met.980b.2.17
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 9/1487117
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.980b.2.18
+    surface: ἀνθρώπων
+    lemma: ἄνθρωπος
+    morph: n-p---mg-
+    tb: 9/1487118
+    sound:
+      restored: {ipa: an.tʰrɔ́ː.pɔːn, respell: an-TʰRAW-pawn}
+      erasmian: {ipa: an.ˈθrɔː.pɔːn, respell: an-THROH-pohn}
+  - id: met.980b.2.19
+    surface: γένος
+    lemma: γένος
+    morph: n-s---nn-
+    tb: 9/1487119
+    sound:
+      restored: {ipa: ɡé.nos, respell: GE-nos}
+      erasmian: {ipa: ˈɡe.nos, respell: GE-nos}
+  - id: met.980b.2.20
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 9/1487120
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.980b.2.21
+    surface: τέχνῃ
+    lemma: τέχνη
+    morph: n-s---fd-
+    tb: 9/1487121
+    sound:
+      restored: {ipa: tékʰ.nɛːi, respell: TEKʰ-nêi}
+      erasmian: {ipa: ˈtex.nɛː, respell: TEKH-nay}
+  - id: met.980b.2.22
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 9/1487122
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.980b.2.23
+    surface: λογισμοῖς
+    punct: .
+    lemma: λογισμός
+    morph: n-p---md-
+    tb: 9/1487123
+    sound:
+      restored: {ipa: lo.ɡiz.môis, respell: lo-giz-MOYS}
+      erasmian: {ipa: lo.ɡis.ˈmois, respell: lo-gis-MOYS}
+- id: met.980b.3
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:980b.3
+  stanza: 980b
+  stanza_title: Book A (I), chapter 1, Bekker 980b
+  text: γίγνεται δʼ ἐκ τῆς μνήμης ἐμπειρία τοῖς ἀνθρώποις· αἱ γὰρ πολλαὶ μνῆμαι τοῦ αὐτοῦ πράγματος μιᾶς ἐμπειρίας δύναμιν ἀποτελοῦσιν.
+  tokens:
+  - id: met.980b.3.1
+    surface: γίγνεται
+    lemma: γίγνομαι
+    morph: v3spie---
+    tb: 10/1487125
+    sound:
+      restored: {ipa: ɡíɡ.ne.tai, respell: GIG-ne-tai}
+      erasmian: {ipa: ˈɡiɡ.ne.tai, respell: GIG-ne-tai}
+  - id: met.980b.3.2
+    surface: δʼ
+    lemma: δέ
+    morph: b--------
+    tb: 10/1487126
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: met.980b.3.3
+    surface: ἐκ
+    lemma: ἐκ
+    morph: r--------
+    tb: 10/1487127
+    sound:
+      restored: {ipa: ek, respell: ek}
+      erasmian: {ipa: ek, respell: ek}
+  - id: met.980b.3.4
+    surface: τῆς
+    lemma: ὁ
+    morph: l-s---fg-
+    tb: 10/1487128
+    sound:
+      restored: {ipa: tɛ̂ːs, respell: TÊS}
+      erasmian: {ipa: ˈtɛːs, respell: TAYS}
+  - id: met.980b.3.5
+    surface: μνήμης
+    lemma: μνήμη
+    morph: n-s---fg-
+    tb: 10/1487129
+    sound:
+      restored: {ipa: mnɛ́ː.mɛːs, respell: MNÊ-mês}
+      erasmian: {ipa: ˈmnɛː.mɛːs, respell: MNAY-mays}
+  - id: met.980b.3.6
+    surface: ἐμπειρία
+    lemma: ἐμπειρία
+    morph: n-s---fn-
+    tb: 10/1487130
+    sound:
+      restored: {ipa: em.peː.rí.a, respell: em-pay-RI-a}
+      erasmian: {ipa: em.pei.ˈri.a, respell: em-pay-RI-a}
+  - id: met.980b.3.7
+    surface: τοῖς
+    lemma: ὁ
+    morph: l-p---md-
+    tb: 10/1487131
+    sound:
+      restored: {ipa: tôis, respell: TOYS}
+      erasmian: {ipa: ˈtois, respell: TOYS}
+  - id: met.980b.3.8
+    surface: ἀνθρώποις
+    punct: ·
+    lemma: ἄνθρωπος
+    morph: n-p---md-
+    tb: 10/1487132
+    sound:
+      restored: {ipa: an.tʰrɔ́ː.pois, respell: an-TʰRAW-poys}
+      erasmian: {ipa: an.ˈθrɔː.pois, respell: an-THROH-poys}
+  - id: met.980b.3.9
+    surface: αἱ
+    lemma: ὁ
+    morph: l-p---fn-
+    tb: 11/1487134
+    sound:
+      restored: {ipa: hai, respell: hai}
+      erasmian: {ipa: hai, respell: hai}
+  - id: met.980b.3.10
+    surface: γὰρ
+    lemma: γάρ
+    morph: d--------
+    tb: 11/1487135
+    sound:
+      restored: {ipa: ɡàr, respell: gar}
+      erasmian: {ipa: ˈɡar, respell: GAR}
+  - id: met.980b.3.11
+    surface: πολλαὶ
+    lemma: πολύς
+    morph: a-p---fn-
+    tb: 11/1487136
+    sound:
+      restored: {ipa: pol.laì, respell: pol-lai}
+      erasmian: {ipa: pol.ˈlai, respell: pol-LAI}
+  - id: met.980b.3.12
+    surface: μνῆμαι
+    lemma: μνήμη
+    morph: n-p---fn-
+    tb: 11/1487137
+    sound:
+      restored: {ipa: mnɛ̂ː.mai, respell: MNÊ-mai}
+      erasmian: {ipa: ˈmnɛː.mai, respell: MNAY-mai}
+  - id: met.980b.3.13
+    surface: τοῦ
+    lemma: ὁ
+    morph: l-s---ng-
+    tb: 11/1487138
+    sound:
+      restored: {ipa: tûː, respell: TOO}
+      erasmian: {ipa: ˈtuː, respell: TOO}
+  - id: met.980b.3.14
+    surface: αὐτοῦ
+    lemma: αὐτός
+    morph: a-s---ng-
+    tb: 11/1487139
+    sound:
+      restored: {ipa: au.tûː, respell: ow-TOO}
+      erasmian: {ipa: au.ˈtuː, respell: ow-TOO}
+  - id: met.980b.3.15
+    surface: πράγματος
+    lemma: πρᾶγμα
+    morph: n-s---ng-
+    tb: 11/1487140
+    sound:
+      restored: {ipa: práɡ.ma.tos, respell: PRAG-ma-tos}
+      erasmian: {ipa: ˈpraɡ.ma.tos, respell: PRAG-ma-tos}
+  - id: met.980b.3.16
+    surface: μιᾶς
+    lemma: εἷς
+    morph: a-s---fg-
+    tb: 11/1487141
+    sound:
+      restored: {ipa: mi.âːs, respell: mi-AAS}
+      erasmian: {ipa: mi.ˈaːs, respell: mi-AAS}
+  - id: met.980b.3.17
+    surface: ἐμπειρίας
+    lemma: ἐμπειρία
+    morph: n-s---fg-
+    tb: 11/1487142
+    sound:
+      restored: {ipa: em.peː.rí.as, respell: em-pay-RI-as}
+      erasmian: {ipa: em.pei.ˈri.as, respell: em-pay-RI-as}
+  - id: met.980b.3.18
+    surface: δύναμιν
+    lemma: δύναμις
+    morph: n-s---fa-
+    tb: 11/1487143
+    sound:
+      restored: {ipa: dý.na.min, respell: DÜ-na-min}
+      erasmian: {ipa: ˈdy.na.min, respell: DÜ-na-min}
+  - id: met.980b.3.19
+    surface: ἀποτελοῦσιν
+    punct: .
+    lemma: ἀποτελέω
+    morph: v3ppia---
+    tb: 11/1487144
+    sound:
+      restored: {ipa: a.po.te.lûː.sin, respell: a-po-te-LOO-sin}
+      erasmian: {ipa: a.po.te.ˈluː.sin, respell: a-po-te-LOO-sin}
+- id: met.981a.1
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981a.1
+  stanza: 981a
+  stanza_title: Book A (I), chapter 1, Bekker 981a
+  text: καὶ δοκεῖ σχεδὸν ἐπιστήμῃ καὶ τέχνῃ ὅμοιον εἶναι καὶ ἐμπειρία, ἀποβαίνει δʼ ἐπιστήμη καὶ τέχνη διὰ τῆς ἐμπειρίας τοῖς ἀνθρώποις· ἡ μὲν γὰρ ἐμπειρία τέχνην ἐποίησεν, ὡς φησὶ Πῶλος, ἡ δʼ ἀπειρία τύχην.
+  tokens:
+  - id: met.981a.1.1
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 12/1487146
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981a.1.2
+    surface: δοκεῖ
+    lemma: δοκέω
+    morph: v3spia---
+    tb: 12/1487147
+    sound:
+      restored: {ipa: do.kêː, respell: do-KAY}
+      erasmian: {ipa: do.ˈkei, respell: do-KAY}
+  - id: met.981a.1.3
+    surface: σχεδὸν
+    lemma: σχεδόν
+    morph: d--------
+    tb: 12/1487148
+    sound:
+      restored: {ipa: skʰe.dòn, respell: skʰe-don}
+      erasmian: {ipa: sxe.ˈdon, respell: skhe-DON}
+  - id: met.981a.1.4
+    surface: ἐπιστήμῃ
+    lemma: ἐπιστήμη
+    morph: n-s---fd-
+    tb: 12/1487149
+    sound:
+      restored: {ipa: e.pis.tɛ́ː.mɛːi, respell: e-pis-TÊ-mêi}
+      erasmian: {ipa: e.pis.ˈtɛː.mɛː, respell: e-pis-TAY-may}
+  - id: met.981a.1.5
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 12/1487150
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981a.1.6
+    surface: τέχνῃ
+    lemma: τέχνη
+    morph: n-s---fd-
+    tb: 12/1487151
+    sound:
+      restored: {ipa: tékʰ.nɛːi, respell: TEKʰ-nêi}
+      erasmian: {ipa: ˈtex.nɛː, respell: TEKH-nay}
+  - id: met.981a.1.7
+    surface: ὅμοιον
+    lemma: ὅμοιος
+    morph: a-s---nn-
+    tb: 12/1487152
+    sound:
+      restored: {ipa: hó.moi.on, respell: HO-moy-on}
+      erasmian: {ipa: ˈho.moi.on, respell: HO-moy-on}
+  - id: met.981a.1.8
+    surface: εἶναι
+    lemma: εἰμί
+    morph: v--pna---
+    tb: 12/1487153
+    sound:
+      restored: {ipa: êː.nai, respell: AY-nai}
+      erasmian: {ipa: ˈei.nai, respell: AY-nai}
+  - id: met.981a.1.9
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 12/1487154
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981a.1.10
+    surface: ἐμπειρία
+    punct: ','
+    lemma: ἐμπειρία
+    morph: n-s---fn-
+    tb: 12/1487155
+    sound:
+      restored: {ipa: em.peː.rí.a, respell: em-pay-RI-a}
+      erasmian: {ipa: em.pei.ˈri.a, respell: em-pay-RI-a}
+  - id: met.981a.1.11
+    surface: ἀποβαίνει
+    lemma: ἀποβαίνω
+    morph: v3spia---
+    tb: 12/1487157
+    sound:
+      restored: {ipa: a.po.baí.neː, respell: a-po-BAI-nay}
+      erasmian: {ipa: a.po.ˈbai.nei, respell: a-po-BAI-nay}
+  - id: met.981a.1.12
+    surface: δʼ
+    lemma: δέ
+    morph: b--------
+    tb: 12/1487158
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: met.981a.1.13
+    surface: ἐπιστήμη
+    lemma: ἐπιστήμη
+    morph: n-s---fn-
+    tb: 12/1487159
+    sound:
+      restored: {ipa: e.pis.tɛ́ː.mɛː, respell: e-pis-TÊ-mê}
+      erasmian: {ipa: e.pis.ˈtɛː.mɛː, respell: e-pis-TAY-may}
+  - id: met.981a.1.14
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 12/1487160
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981a.1.15
+    surface: τέχνη
+    lemma: τέχνη
+    morph: n-s---fn-
+    tb: 12/1487161
+    sound:
+      restored: {ipa: tékʰ.nɛː, respell: TEKʰ-nê}
+      erasmian: {ipa: ˈtex.nɛː, respell: TEKH-nay}
+  - id: met.981a.1.16
+    surface: διὰ
+    lemma: διά
+    morph: r--------
+    tb: 12/1487162
+    sound:
+      restored: {ipa: di.à, respell: di-a}
+      erasmian: {ipa: di.ˈa, respell: di-A}
+  - id: met.981a.1.17
+    surface: τῆς
+    lemma: ὁ
+    morph: l-s---fg-
+    tb: 12/1487163
+    sound:
+      restored: {ipa: tɛ̂ːs, respell: TÊS}
+      erasmian: {ipa: ˈtɛːs, respell: TAYS}
+  - id: met.981a.1.18
+    surface: ἐμπειρίας
+    lemma: ἐμπειρία
+    morph: n-s---fg-
+    tb: 12/1487164
+    sound:
+      restored: {ipa: em.peː.rí.as, respell: em-pay-RI-as}
+      erasmian: {ipa: em.pei.ˈri.as, respell: em-pay-RI-as}
+  - id: met.981a.1.19
+    surface: τοῖς
+    lemma: ὁ
+    morph: l-p---md-
+    tb: 12/1487165
+    sound:
+      restored: {ipa: tôis, respell: TOYS}
+      erasmian: {ipa: ˈtois, respell: TOYS}
+  - id: met.981a.1.20
+    surface: ἀνθρώποις
+    punct: ·
+    lemma: ἄνθρωπος
+    morph: n-p---md-
+    tb: 12/1487166
+    sound:
+      restored: {ipa: an.tʰrɔ́ː.pois, respell: an-TʰRAW-poys}
+      erasmian: {ipa: an.ˈθrɔː.pois, respell: an-THROH-poys}
+  - id: met.981a.1.21
+    surface: ἡ
+    lemma: ὁ
+    morph: l-s---fn-
+    tb: 13/1487168
+    sound:
+      restored: {ipa: hɛː, respell: hê}
+      erasmian: {ipa: hɛː, respell: hay}
+  - id: met.981a.1.22
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 13/1487169
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.981a.1.23
+    surface: γὰρ
+    lemma: γάρ
+    morph: d--------
+    tb: 13/1487170
+    sound:
+      restored: {ipa: ɡàr, respell: gar}
+      erasmian: {ipa: ˈɡar, respell: GAR}
+  - id: met.981a.1.24
+    surface: ἐμπειρία
+    lemma: ἐμπειρία
+    morph: n-s---fn-
+    tb: 13/1487171
+    sound:
+      restored: {ipa: em.peː.rí.a, respell: em-pay-RI-a}
+      erasmian: {ipa: em.pei.ˈri.a, respell: em-pay-RI-a}
+  - id: met.981a.1.25
+    surface: τέχνην
+    lemma: τέχνη
+    morph: n-s---fa-
+    tb: 13/1487172
+    sound:
+      restored: {ipa: tékʰ.nɛːn, respell: TEKʰ-nên}
+      erasmian: {ipa: ˈtex.nɛːn, respell: TEKH-nayn}
+  - id: met.981a.1.26
+    surface: ἐποίησεν
+    punct: ','
+    lemma: ποιέω
+    morph: v3saia---
+    tb: 13/1487173
+    sound:
+      restored: {ipa: e.poí.ɛː.sen, respell: e-POY-ê-sen}
+      erasmian: {ipa: e.ˈpoi.ɛː.sen, respell: e-POY-ay-sen}
+  - id: met.981a.1.27
+    surface: ὡς
+    lemma: ὡς
+    morph: c--------
+    tb: 13/1487175
+    sound:
+      restored: {ipa: hɔːs, respell: haws}
+      erasmian: {ipa: hɔːs, respell: hohs}
+  - id: met.981a.1.28
+    surface: φησὶ
+    lemma: φημί
+    morph: v3spia---
+    tb: 13/1487176
+    sound:
+      restored: {ipa: pʰɛː.sì, respell: pʰê-si}
+      erasmian: {ipa: fɛː.ˈsi, respell: fay-SI}
+  - id: met.981a.1.29
+    surface: Πῶλος
+    punct: ','
+    lemma: Πῶλος
+    morph: n-s---mn-
+    tb: 13/1487177
+    sound:
+      restored: {ipa: pɔ̂ː.los, respell: PAW-los}
+      erasmian: {ipa: ˈpɔː.los, respell: POH-los}
+  - id: met.981a.1.30
+    surface: ἡ
+    lemma: ὁ
+    morph: l-s---fn-
+    tb: 13/1487179
+    sound:
+      restored: {ipa: hɛː, respell: hê}
+      erasmian: {ipa: hɛː, respell: hay}
+  - id: met.981a.1.31
+    surface: δʼ
+    lemma: δέ
+    morph: b--------
+    tb: 13/1487180
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: met.981a.1.32
+    surface: ἀπειρία
+    lemma: ἀπειρία
+    morph: n-s---fn-
+    tb: 13/1487181
+    sound:
+      restored: {ipa: a.peː.rí.a, respell: a-pay-RI-a}
+      erasmian: {ipa: a.pei.ˈri.a, respell: a-pay-RI-a}
+  - id: met.981a.1.33
+    surface: τύχην
+    punct: .
+    lemma: τύχη
+    morph: n-s---fa-
+    tb: 13/1487182
+    sound:
+      restored: {ipa: tý.kʰɛːn, respell: TÜ-kʰên}
+      erasmian: {ipa: ˈty.xɛːn, respell: TÜ-khayn}
+- id: met.981a.2
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981a.2
+  stanza: 981a
+  stanza_title: Book A (I), chapter 1, Bekker 981a
+  text: γίγνεται δὲ τέχνη ὅταν ἐκ πολλῶν τῆς ἐμπειρίας ἐννοημάτων μία καθόλου γένηται περὶ τῶν ὁμοίων ὑπόληψις.
+  tokens:
+  - id: met.981a.2.1
+    surface: γίγνεται
+    lemma: γίγνομαι
+    morph: v3spie---
+    tb: 14/1487184
+    sound:
+      restored: {ipa: ɡíɡ.ne.tai, respell: GIG-ne-tai}
+      erasmian: {ipa: ˈɡiɡ.ne.tai, respell: GIG-ne-tai}
+  - id: met.981a.2.2
+    surface: δὲ
+    lemma: δέ
+    morph: b--------
+    tb: 14/1487185
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: met.981a.2.3
+    surface: τέχνη
+    lemma: τέχνη
+    morph: n-s---fn-
+    tb: 14/1487186
+    sound:
+      restored: {ipa: tékʰ.nɛː, respell: TEKʰ-nê}
+      erasmian: {ipa: ˈtex.nɛː, respell: TEKH-nay}
+  - id: met.981a.2.4
+    surface: ὅταν
+    lemma: ὅταν
+    morph: c--------
+    tb: 14/1487187
+    sound:
+      restored: {ipa: hó.tan, respell: HO-tan}
+      erasmian: {ipa: ˈho.tan, respell: HO-tan}
+  - id: met.981a.2.5
+    surface: ἐκ
+    lemma: ἐκ
+    morph: r--------
+    tb: 14/1487188
+    sound:
+      restored: {ipa: ek, respell: ek}
+      erasmian: {ipa: ek, respell: ek}
+  - id: met.981a.2.6
+    surface: πολλῶν
+    lemma: πολύς
+    morph: a-p---ng-
+    tb: 14/1487189
+    sound:
+      restored: {ipa: pol.lɔ̂ːn, respell: pol-LAWN}
+      erasmian: {ipa: pol.ˈlɔːn, respell: pol-LOHN}
+  - id: met.981a.2.7
+    surface: τῆς
+    lemma: ὁ
+    morph: l-s---fg-
+    tb: 14/1487190
+    sound:
+      restored: {ipa: tɛ̂ːs, respell: TÊS}
+      erasmian: {ipa: ˈtɛːs, respell: TAYS}
+  - id: met.981a.2.8
+    surface: ἐμπειρίας
+    lemma: ἐμπειρία
+    morph: n-s---fg-
+    tb: 14/1487191
+    sound:
+      restored: {ipa: em.peː.rí.as, respell: em-pay-RI-as}
+      erasmian: {ipa: em.pei.ˈri.as, respell: em-pay-RI-as}
+  - id: met.981a.2.9
+    surface: ἐννοημάτων
+    lemma: ἐννόημα
+    morph: n-p---ng-
+    tb: 14/1487192
+    sound:
+      restored: {ipa: en.no.ɛː.má.tɔːn, respell: en-no-ê-MA-tawn}
+      erasmian: {ipa: en.no.ɛː.ˈma.tɔːn, respell: en-no-ay-MA-tohn}
+  - id: met.981a.2.10
+    surface: μία
+    lemma: εἷς
+    morph: a-s---fn-
+    tb: 14/1487193
+    sound:
+      restored: {ipa: mí.a, respell: MI-a}
+      erasmian: {ipa: ˈmi.a, respell: MI-a}
+  - id: met.981a.2.11
+    surface: καθόλου
+    lemma: καθόλου
+    morph: d--------
+    tb: 14/1487194
+    sound:
+      restored: {ipa: ka.tʰó.luː, respell: ka-TʰO-loo}
+      erasmian: {ipa: ka.ˈθo.luː, respell: ka-THO-loo}
+  - id: met.981a.2.12
+    surface: γένηται
+    lemma: γίγνομαι
+    morph: v3sasm---
+    tb: 14/1487195
+    sound:
+      restored: {ipa: ɡé.nɛː.tai, respell: GE-nê-tai}
+      erasmian: {ipa: ˈɡe.nɛː.tai, respell: GE-nay-tai}
+  - id: met.981a.2.13
+    surface: περὶ
+    lemma: περί
+    morph: r--------
+    tb: 14/1487196
+    sound:
+      restored: {ipa: pe.rì, respell: pe-ri}
+      erasmian: {ipa: pe.ˈri, respell: pe-RI}
+  - id: met.981a.2.14
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 14/1487197
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981a.2.15
+    surface: ὁμοίων
+    lemma: ὅμοιος
+    morph: a-p---mg-
+    tb: 14/1487198
+    sound:
+      restored: {ipa: ho.moí.ɔːn, respell: ho-MOY-awn}
+      erasmian: {ipa: ho.ˈmoi.ɔːn, respell: ho-MOY-ohn}
+  - id: met.981a.2.16
+    surface: ὑπόληψις
+    punct: .
+    lemma: ὑπόληψις
+    morph: n-s---fn-
+    tb: 14/1487199
+    sound:
+      restored: {ipa: hy.pó.lɛː.psis, respell: hü-PO-lê-psis}
+      erasmian: {ipa: hy.ˈpo.lɛː.psis, respell: hü-PO-lay-psis}
+- id: met.981a.3
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981a.3
+  stanza: 981a
+  stanza_title: Book A (I), chapter 1, Bekker 981a
+  text: τὸ μὲν γὰρ ἔχειν ὑπόληψιν ὅτι Καλλίᾳ κάμνοντι τηνδὶ τὴν νόσον τοδὶ συνήνεγκε καὶ Σωκράτει καὶ καθʼ ἕκαστον οὕτω πολλοῖς, ἐμπειρίας ἐστίν·
+  tokens:
+  - id: met.981a.3.1
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---nn-
+    tb: 15/1487201
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981a.3.2
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 15/1487202
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.981a.3.3
+    surface: γὰρ
+    lemma: γάρ
+    morph: d--------
+    tb: 15/1487203
+    sound:
+      restored: {ipa: ɡàr, respell: gar}
+      erasmian: {ipa: ˈɡar, respell: GAR}
+  - id: met.981a.3.4
+    surface: ἔχειν
+    lemma: ἔχω
+    morph: v--pna---
+    tb: 15/1487204
+    sound:
+      restored: {ipa: é.kʰeːn, respell: E-kʰayn}
+      erasmian: {ipa: ˈe.xein, respell: E-khayn}
+  - id: met.981a.3.5
+    surface: ὑπόληψιν
+    lemma: ὑπόληψις
+    morph: n-s---fa-
+    tb: 15/1487205
+    sound:
+      restored: {ipa: hy.pó.lɛː.psin, respell: hü-PO-lê-psin}
+      erasmian: {ipa: hy.ˈpo.lɛː.psin, respell: hü-PO-lay-psin}
+  - id: met.981a.3.6
+    surface: ὅτι
+    lemma: ὅτι
+    morph: c--------
+    tb: 15/1487206
+    sound:
+      restored: {ipa: hó.ti, respell: HO-ti}
+      erasmian: {ipa: ˈho.ti, respell: HO-ti}
+  - id: met.981a.3.7
+    surface: Καλλίᾳ
+    lemma: Καλλίας
+    morph: n-s---md-
+    tb: 15/1487207
+    sound:
+      restored: {ipa: kal.lí.aːi, respell: kal-LI-aai}
+      erasmian: {ipa: kal.ˈli.aː, respell: kal-LI-aa}
+  - id: met.981a.3.8
+    surface: κάμνοντι
+    lemma: κάμνω
+    morph: v-sppamd-
+    tb: 15/1487208
+    sound:
+      restored: {ipa: kám.non.ti, respell: KAM-non-ti}
+      erasmian: {ipa: ˈkam.non.ti, respell: KAM-non-ti}
+  - id: met.981a.3.9
+    surface: τηνδὶ
+    lemma: ὅδε
+    morph: a-s---fa-
+    tb: 15/1487209
+    sound:
+      restored: {ipa: tɛːn.dì, respell: tên-di}
+      erasmian: {ipa: tɛːn.ˈdi, respell: tayn-DI}
+  - id: met.981a.3.10
+    surface: τὴν
+    lemma: ὁ
+    morph: l-s---fa-
+    tb: 15/1487210
+    sound:
+      restored: {ipa: tɛ̀ːn, respell: tên}
+      erasmian: {ipa: ˈtɛːn, respell: TAYN}
+  - id: met.981a.3.11
+    surface: νόσον
+    lemma: νόσος
+    morph: n-s---fa-
+    tb: 15/1487211
+    sound:
+      restored: {ipa: nó.son, respell: NO-son}
+      erasmian: {ipa: ˈno.son, respell: NO-son}
+  - id: met.981a.3.12
+    surface: τοδὶ
+    lemma: ὅδε
+    morph: a-s---na-
+    tb: 15/1487212
+    sound:
+      restored: {ipa: to.dì, respell: to-di}
+      erasmian: {ipa: to.ˈdi, respell: to-DI}
+  - id: met.981a.3.13
+    surface: συνήνεγκε
+    lemma: συμφέρω
+    morph: v3saia---
+    tb: 15/1487213
+    sound:
+      restored: {ipa: sy.nɛ́ː.neŋ.ke, respell: sü-NÊ-neng-ke}
+      erasmian: {ipa: sy.ˈnɛː.neŋ.ke, respell: sü-NAY-neng-ke}
+  - id: met.981a.3.14
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 15/1487214
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981a.3.15
+    surface: Σωκράτει
+    lemma: Σωκράτης
+    morph: n-s---md-
+    tb: 15/1487215
+    sound:
+      restored: {ipa: sɔː.krá.teː, respell: saw-KRA-tay}
+      erasmian: {ipa: sɔː.ˈkra.tei, respell: soh-KRA-tay}
+  - id: met.981a.3.16
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 15/1487216
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981a.3.17
+    surface: καθʼ
+    lemma: κατά
+    morph: r--------
+    tb: 15/1487217
+    sound:
+      restored: {ipa: katʰ, respell: katʰ’}
+      erasmian: {ipa: kaθ, respell: kath’}
+  - id: met.981a.3.18
+    surface: ἕκαστον
+    lemma: ἕκαστος
+    morph: a-s---ma-
+    tb: 15/1487218
+    sound:
+      restored: {ipa: hé.kas.ton, respell: HE-kas-ton}
+      erasmian: {ipa: ˈhe.kas.ton, respell: HE-kas-ton}
+  - id: met.981a.3.19
+    surface: οὕτω
+    lemma: οὕτως
+    morph: d--------
+    tb: 15/1487219
+    sound:
+      restored: {ipa: húː.tɔː, respell: HOO-taw}
+      erasmian: {ipa: ˈhuː.tɔː, respell: HOO-toh}
+  - id: met.981a.3.20
+    surface: πολλοῖς
+    punct: ','
+    lemma: πολύς
+    morph: a-p---md-
+    tb: 15/1487220
+    sound:
+      restored: {ipa: pol.lôis, respell: pol-LOYS}
+      erasmian: {ipa: pol.ˈlois, respell: pol-LOYS}
+  - id: met.981a.3.21
+    surface: ἐμπειρίας
+    lemma: ἐμπειρία
+    morph: n-s---fg-
+    tb: 15/1487222
+    sound:
+      restored: {ipa: em.peː.rí.as, respell: em-pay-RI-as}
+      erasmian: {ipa: em.pei.ˈri.as, respell: em-pay-RI-as}
+  - id: met.981a.3.22
+    surface: ἐστίν
+    punct: ·
+    lemma: εἰμί
+    morph: v3spia---
+    tb: 15/1487223
+    sound:
+      restored: {ipa: es.tín, respell: es-TIN}
+      erasmian: {ipa: es.ˈtin, respell: es-TIN}
+- id: met.981a.4
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981a.4
+  stanza: 981a
+  stanza_title: Book A (I), chapter 1, Bekker 981a
+  text: τὸ δʼ ὅτι πᾶσι τοῖς τοιοῖσδε κατʼ εἶδος ἓν ἀφορισθεῖσι, κάμνουσι τηνδὶ τὴν νόσον, συνήνεγκεν, οἷον τοῖς φλεγματώδεσιν ἢ χολώδεσι ἢ πυρέττουσι καύσῳ, τέχνης.—
+  tokens:
+  - id: met.981a.4.1
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---nn-
+    tb: 16/1487225
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981a.4.2
+    surface: δʼ
+    lemma: δέ
+    morph: b--------
+    tb: 16/1487226
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: met.981a.4.3
+    surface: ὅτι
+    lemma: ὅτι
+    morph: c--------
+    tb: 16/1487227
+    sound:
+      restored: {ipa: hó.ti, respell: HO-ti}
+      erasmian: {ipa: ˈho.ti, respell: HO-ti}
+  - id: met.981a.4.4
+    surface: πᾶσι
+    lemma: πᾶς
+    morph: a-p---md-
+    tb: 16/1487228
+    sound:
+      restored: {ipa: pâː.si, respell: PAA-si}
+      erasmian: {ipa: ˈpaː.si, respell: PAA-si}
+  - id: met.981a.4.5
+    surface: τοῖς
+    lemma: ὁ
+    morph: l-p---md-
+    tb: 16/1487229
+    sound:
+      restored: {ipa: tôis, respell: TOYS}
+      erasmian: {ipa: ˈtois, respell: TOYS}
+  - id: met.981a.4.6
+    surface: τοιοῖσδε
+    lemma: τοιόσδε
+    morph: a-p---md-
+    tb: 16/1487230
+    sound:
+      restored: {ipa: toi.ôiz.de, respell: toy-OYZ-de}
+      erasmian: {ipa: toi.ˈois.de, respell: toy-OYS-de}
+  - id: met.981a.4.7
+    surface: κατʼ
+    lemma: κατά
+    morph: r--------
+    tb: 16/1487231
+    sound:
+      restored: {ipa: kat, respell: kat’}
+      erasmian: {ipa: kat, respell: kat’}
+  - id: met.981a.4.8
+    surface: εἶδος
+    lemma: εἶδος
+    morph: n-s---na-
+    tb: 16/1487232
+    sound:
+      restored: {ipa: êː.dos, respell: AY-dos}
+      erasmian: {ipa: ˈei.dos, respell: AY-dos}
+  - id: met.981a.4.9
+    surface: ἓν
+    lemma: εἷς
+    morph: a-s---na-
+    tb: 16/1487233
+    sound:
+      restored: {ipa: hèn, respell: hen}
+      erasmian: {ipa: ˈhen, respell: HEN}
+  - id: met.981a.4.10
+    surface: ἀφορισθεῖσι
+    punct: ','
+    lemma: ἀφορίζω
+    morph: v-pappmd-
+    tb: 16/1487234
+    sound:
+      restored: {ipa: a.pʰo.ris.tʰêː.si, respell: a-pʰo-ris-TʰAY-si}
+      erasmian: {ipa: a.fo.ris.ˈθei.si, respell: a-fo-ris-THAY-si}
+  - id: met.981a.4.11
+    surface: κάμνουσι
+    lemma: κάμνω
+    morph: v-pppamd-
+    tb: 16/1487236
+    sound:
+      restored: {ipa: kám.nuː.si, respell: KAM-noo-si}
+      erasmian: {ipa: ˈkam.nuː.si, respell: KAM-noo-si}
+  - id: met.981a.4.12
+    surface: τηνδὶ
+    lemma: ὅδε
+    morph: a-s---fa-
+    tb: 16/1487237
+    sound:
+      restored: {ipa: tɛːn.dì, respell: tên-di}
+      erasmian: {ipa: tɛːn.ˈdi, respell: tayn-DI}
+  - id: met.981a.4.13
+    surface: τὴν
+    lemma: ὁ
+    morph: l-s---fa-
+    tb: 16/1487238
+    sound:
+      restored: {ipa: tɛ̀ːn, respell: tên}
+      erasmian: {ipa: ˈtɛːn, respell: TAYN}
+  - id: met.981a.4.14
+    surface: νόσον
+    punct: ','
+    lemma: νόσος
+    morph: n-s---fa-
+    tb: 16/1487239
+    sound:
+      restored: {ipa: nó.son, respell: NO-son}
+      erasmian: {ipa: ˈno.son, respell: NO-son}
+  - id: met.981a.4.15
+    surface: συνήνεγκεν
+    punct: ','
+    lemma: συμφέρω
+    morph: v3saia---
+    tb: 16/1487241
+    sound:
+      restored: {ipa: sy.nɛ́ː.neŋ.ken, respell: sü-NÊ-neng-ken}
+      erasmian: {ipa: sy.ˈnɛː.neŋ.ken, respell: sü-NAY-neng-ken}
+  - id: met.981a.4.16
+    surface: οἷον
+    lemma: οἷος
+    morph: p-s---nn-
+    tb: 16/1487243
+    sound:
+      restored: {ipa: hôi.on, respell: HOY-on}
+      erasmian: {ipa: ˈhoi.on, respell: HOY-on}
+  - id: met.981a.4.17
+    surface: τοῖς
+    lemma: ὁ
+    morph: l-p---md-
+    tb: 16/1487244
+    sound:
+      restored: {ipa: tôis, respell: TOYS}
+      erasmian: {ipa: ˈtois, respell: TOYS}
+  - id: met.981a.4.18
+    surface: φλεγματώδεσιν
+    lemma: φλεγματώδης
+    morph: a-p---md-
+    tb: 16/1487245
+    sound:
+      restored: {ipa: pʰleɡ.ma.tɔ́ː.de.sin, respell: pʰleg-ma-TAW-de-sin}
+      erasmian: {ipa: fleɡ.ma.ˈtɔː.de.sin, respell: fleg-ma-TOH-de-sin}
+  - id: met.981a.4.19
+    surface: ἢ
+    lemma: ἤ
+    morph: b--------
+    tb: 16/1487246
+    sound:
+      restored: {ipa: ɛ̀ː, respell: ê}
+      erasmian: {ipa: ˈɛː, respell: AY}
+  - id: met.981a.4.20
+    surface: χολώδεσι
+    lemma: χολώδης
+    morph: a-p---md-
+    tb: 16/1487247
+    sound:
+      restored: {ipa: kʰo.lɔ́ː.de.si, respell: kʰo-LAW-de-si}
+      erasmian: {ipa: xo.ˈlɔː.de.si, respell: kho-LOH-de-si}
+  - id: met.981a.4.21
+    surface: ἢ
+    lemma: ἤ
+    morph: b--------
+    tb: 16/1487248
+    sound:
+      restored: {ipa: ɛ̀ː, respell: ê}
+      erasmian: {ipa: ˈɛː, respell: AY}
+  - id: met.981a.4.22
+    surface: πυρέττουσι
+    lemma: πυρέσσω
+    morph: v-pppamd-
+    tb: 16/1487249
+    sound:
+      restored: {ipa: py.rét.tuː.si, respell: pü-RET-too-si}
+      erasmian: {ipa: py.ˈret.tuː.si, respell: pü-RET-too-si}
+  - id: met.981a.4.23
+    surface: καύσῳ
+    punct: ','
+    lemma: καῦσος
+    morph: n-s---md-
+    tb: 16/1487250
+    sound:
+      restored: {ipa: kaú.sɔːi, respell: KOW-sawi}
+      erasmian: {ipa: ˈkau.sɔː, respell: KOW-soh}
+  - id: met.981a.4.24
+    surface: τέχνης.—
+    lemma: τέχνη
+    morph: n-s---fg-
+    tb: 16/1487252
+    sound:
+      restored: {ipa: tékʰ.nɛːs, respell: TEKʰ-nês}
+      erasmian: {ipa: ˈtex.nɛːs, respell: TEKH-nays}
+- id: met.981a.5
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981a.5
+  stanza: 981a
+  stanza_title: Book A (I), chapter 1, Bekker 981a
+  text: πρὸς μὲν οὖν τὸ πράττειν ἐμπειρία τέχνης οὐδὲν δοκεῖ διαφέρειν, ἀλλὰ καὶ μᾶλλον ἐπιτυγχάνουσιν οἱ ἔμπειροι τῶν ἄνευ τῆς ἐμπειρίας λόγον ἐχόντων (αἴτιον δʼ ὅτι ἡ μὲν ἐμπειρία τῶν καθʼ ἕκαστόν ἐστι
+    γνῶσις ἡ δὲ τέχνη τῶν καθόλου, αἱ δὲ πράξεις καὶ αἱ γενέσεις πᾶσαι περὶ τὸ καθʼ ἕκαστόν εἰσιν·
+  tokens:
+  - id: met.981a.5.1
+    surface: πρὸς
+    lemma: πρός
+    morph: r--------
+    tb: 17/1487254
+    sound:
+      restored: {ipa: pròs, respell: pros}
+      erasmian: {ipa: ˈpros, respell: PROS}
+  - id: met.981a.5.2
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 17/1487255
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.981a.5.3
+    surface: οὖν
+    lemma: οὖν
+    morph: d--------
+    tb: 17/1487256
+    sound:
+      restored: {ipa: ûːn, respell: OON}
+      erasmian: {ipa: ˈuːn, respell: OON}
+  - id: met.981a.5.4
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---na-
+    tb: 17/1487257
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981a.5.5
+    surface: πράττειν
+    lemma: πράσσω
+    morph: v--pna---
+    tb: 17/1487258
+    sound:
+      restored: {ipa: práːt.teːn, respell: PRAAT-tayn}
+      erasmian: {ipa: ˈpraːt.tein, respell: PRAAT-tayn}
+    prov: {sound: weft.greek 0.1 + quantity table}
+  - id: met.981a.5.6
+    surface: ἐμπειρία
+    lemma: ἐμπειρία
+    morph: n-s---fn-
+    tb: 17/1487259
+    sound:
+      restored: {ipa: em.peː.rí.a, respell: em-pay-RI-a}
+      erasmian: {ipa: em.pei.ˈri.a, respell: em-pay-RI-a}
+  - id: met.981a.5.7
+    surface: τέχνης
+    lemma: τέχνη
+    morph: n-s---fg-
+    tb: 17/1487260
+    sound:
+      restored: {ipa: tékʰ.nɛːs, respell: TEKʰ-nês}
+      erasmian: {ipa: ˈtex.nɛːs, respell: TEKH-nays}
+  - id: met.981a.5.8
+    surface: οὐδὲν
+    lemma: οὐδείς
+    morph: a-s---nn-
+    tb: 17/1487261
+    sound:
+      restored: {ipa: uː.dèn, respell: oo-den}
+      erasmian: {ipa: uː.ˈden, respell: oo-DEN}
+  - id: met.981a.5.9
+    surface: δοκεῖ
+    lemma: δοκέω
+    morph: v3spia---
+    tb: 17/1487262
+    sound:
+      restored: {ipa: do.kêː, respell: do-KAY}
+      erasmian: {ipa: do.ˈkei, respell: do-KAY}
+  - id: met.981a.5.10
+    surface: διαφέρειν
+    punct: ','
+    lemma: διαφέρω
+    morph: v--pna---
+    tb: 17/1487263
+    sound:
+      restored: {ipa: di.a.pʰé.reːn, respell: di-a-PʰE-rayn}
+      erasmian: {ipa: di.a.ˈfe.rein, respell: di-a-FE-rayn}
+  - id: met.981a.5.11
+    surface: ἀλλὰ
+    lemma: ἀλλά
+    morph: b--------
+    tb: 17/1487265
+    sound:
+      restored: {ipa: al.là, respell: al-la}
+      erasmian: {ipa: al.ˈla, respell: al-LA}
+  - id: met.981a.5.12
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 17/1487266
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981a.5.13
+    surface: μᾶλλον
+    lemma: μάλα
+    morph: d-------c
+    tb: 17/1487267
+    sound:
+      restored: {ipa: mâːl.lon, respell: MAAL-lon}
+      erasmian: {ipa: ˈmaːl.lon, respell: MAAL-lon}
+  - id: met.981a.5.14
+    surface: ἐπιτυγχάνουσιν
+    lemma: ἐπιτυγχάνω
+    morph: v3ppia---
+    tb: 17/1487268
+    sound:
+      restored: {ipa: e.pi.tyŋ.kʰá.nuː.sin, respell: e-pi-tüng-KʰA-noo-sin}
+      erasmian: {ipa: e.pi.tyŋ.ˈxa.nuː.sin, respell: e-pi-tüng-KHA-noo-sin}
+  - id: met.981a.5.15
+    surface: οἱ
+    lemma: ὁ
+    morph: l-p---mn-
+    tb: 17/1487269
+    sound:
+      restored: {ipa: hoi, respell: hoy}
+      erasmian: {ipa: hoi, respell: hoy}
+  - id: met.981a.5.16
+    surface: ἔμπειροι
+    lemma: ἔμπειρος
+    morph: a-p---mn-
+    tb: 17/1487270
+    sound:
+      restored: {ipa: ém.peː.roi, respell: EM-pay-roy}
+      erasmian: {ipa: ˈem.pei.roi, respell: EM-pay-roy}
+  - id: met.981a.5.17
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 17/1487271
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981a.5.18
+    surface: ἄνευ
+    lemma: ἄνευ
+    morph: r--------
+    tb: 17/1487272
+    sound:
+      restored: {ipa: á.neu, respell: A-neu}
+      erasmian: {ipa: ˈa.neu, respell: A-nyoo}
+  - id: met.981a.5.19
+    surface: τῆς
+    lemma: ὁ
+    morph: l-s---fg-
+    tb: 17/1487273
+    sound:
+      restored: {ipa: tɛ̂ːs, respell: TÊS}
+      erasmian: {ipa: ˈtɛːs, respell: TAYS}
+  - id: met.981a.5.20
+    surface: ἐμπειρίας
+    lemma: ἐμπειρία
+    morph: n-s---fg-
+    tb: 17/1487274
+    sound:
+      restored: {ipa: em.peː.rí.as, respell: em-pay-RI-as}
+      erasmian: {ipa: em.pei.ˈri.as, respell: em-pay-RI-as}
+  - id: met.981a.5.21
+    surface: λόγον
+    lemma: λόγος
+    morph: n-s---ma-
+    tb: 17/1487275
+    sound:
+      restored: {ipa: ló.ɡon, respell: LO-gon}
+      erasmian: {ipa: ˈlo.ɡon, respell: LO-gon}
+  - id: met.981a.5.22
+    surface: ἐχόντων
+    lemma: ἔχω
+    morph: v-pppamg-
+    tb: 17/1487276
+    sound:
+      restored: {ipa: e.kʰón.tɔːn, respell: e-KʰON-tawn}
+      erasmian: {ipa: e.ˈxon.tɔːn, respell: e-KHON-tohn}
+  - id: met.981a.5.23
+    surface: αἴτιον
+    lead: (
+    lemma: αἴτιος
+    morph: a-s---ma-
+    tb: 17/1487278
+    sound:
+      restored: {ipa: aí.ti.on, respell: AI-ti-on}
+      erasmian: {ipa: ˈai.ti.on, respell: AI-ti-on}
+  - id: met.981a.5.24
+    surface: δʼ
+    lemma: δέ
+    morph: b--------
+    tb: 17/1487279
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: met.981a.5.25
+    surface: ὅτι
+    lemma: ὅτι
+    morph: c--------
+    tb: 17/1487280
+    sound:
+      restored: {ipa: hó.ti, respell: HO-ti}
+      erasmian: {ipa: ˈho.ti, respell: HO-ti}
+  - id: met.981a.5.26
+    surface: ἡ
+    lemma: ὁ
+    morph: l-s---fn-
+    tb: 17/1487281
+    sound:
+      restored: {ipa: hɛː, respell: hê}
+      erasmian: {ipa: hɛː, respell: hay}
+  - id: met.981a.5.27
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 17/1487282
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.981a.5.28
+    surface: ἐμπειρία
+    lemma: ἐμπειρία
+    morph: n-s---fn-
+    tb: 17/1487283
+    sound:
+      restored: {ipa: em.peː.rí.a, respell: em-pay-RI-a}
+      erasmian: {ipa: em.pei.ˈri.a, respell: em-pay-RI-a}
+  - id: met.981a.5.29
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 17/1487284
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981a.5.30
+    surface: καθʼ
+    lemma: κατά
+    morph: r--------
+    tb: 17/1487285
+    sound:
+      restored: {ipa: katʰ, respell: katʰ’}
+      erasmian: {ipa: kaθ, respell: kath’}
+  - id: met.981a.5.31
+    surface: ἕκαστόν
+    lemma: ἕκαστος
+    morph: a-s---ma-
+    tb: 17/1487286
+    sound:
+      restored: {ipa: hé.kas.tón, respell: HE-kas-TON}
+      erasmian: {ipa: ˈhe.kas.ˈton, respell: HE-kas-TON}
+  - id: met.981a.5.32
+    surface: ἐστι
+    lemma: εἰμί
+    morph: v3spia---
+    tb: 17/1487287
+    sound:
+      restored: {ipa: es.ti, respell: es-ti}
+      erasmian: {ipa: es.ti, respell: es-ti}
+  - id: met.981a.5.33
+    surface: γνῶσις
+    lemma: γνῶσις
+    morph: n-s---fn-
+    tb: 17/1487288
+    sound:
+      restored: {ipa: ɡnɔ̂ː.sis, respell: GNAW-sis}
+      erasmian: {ipa: ˈɡnɔː.sis, respell: GNOH-sis}
+  - id: met.981a.5.34
+    surface: ἡ
+    lemma: ὁ
+    morph: l-s---fn-
+    tb: 17/1487289
+    sound:
+      restored: {ipa: hɛː, respell: hê}
+      erasmian: {ipa: hɛː, respell: hay}
+  - id: met.981a.5.35
+    surface: δὲ
+    lemma: δέ
+    morph: b--------
+    tb: 17/1487290
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: met.981a.5.36
+    surface: τέχνη
+    lemma: τέχνη
+    morph: n-s---fn-
+    tb: 17/1487291
+    sound:
+      restored: {ipa: tékʰ.nɛː, respell: TEKʰ-nê}
+      erasmian: {ipa: ˈtex.nɛː, respell: TEKH-nay}
+  - id: met.981a.5.37
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 17/1487292
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981a.5.38
+    surface: καθόλου
+    punct: ','
+    lemma: καθόλου
+    morph: d--------
+    tb: 17/1487293
+    sound:
+      restored: {ipa: ka.tʰó.luː, respell: ka-TʰO-loo}
+      erasmian: {ipa: ka.ˈθo.luː, respell: ka-THO-loo}
+  - id: met.981a.5.39
+    surface: αἱ
+    lemma: ὁ
+    morph: l-p---fn-
+    tb: 17/1487295
+    sound:
+      restored: {ipa: hai, respell: hai}
+      erasmian: {ipa: hai, respell: hai}
+  - id: met.981a.5.40
+    surface: δὲ
+    lemma: δέ
+    morph: b--------
+    tb: 17/1487296
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: met.981a.5.41
+    surface: πράξεις
+    lemma: πρᾶξις
+    morph: n-p---fn-
+    tb: 17/1487297
+    sound:
+      restored: {ipa: prá.kseːs, respell: PRA-ksays}
+      erasmian: {ipa: ˈpra.kseis, respell: PRA-ksays}
+  - id: met.981a.5.42
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 17/1487298
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981a.5.43
+    surface: αἱ
+    lemma: ὁ
+    morph: l-p---fn-
+    tb: 17/1487299
+    sound:
+      restored: {ipa: hai, respell: hai}
+      erasmian: {ipa: hai, respell: hai}
+  - id: met.981a.5.44
+    surface: γενέσεις
+    lemma: γένεσις
+    morph: n-p---fn-
+    tb: 17/1487300
+    sound:
+      restored: {ipa: ɡe.né.seːs, respell: ge-NE-says}
+      erasmian: {ipa: ɡe.ˈne.seis, respell: ge-NE-says}
+  - id: met.981a.5.45
+    surface: πᾶσαι
+    lemma: πᾶς
+    morph: a-p---fn-
+    tb: 17/1487301
+    sound:
+      restored: {ipa: pâː.sai, respell: PAA-sai}
+      erasmian: {ipa: ˈpaː.sai, respell: PAA-sai}
+  - id: met.981a.5.46
+    surface: περὶ
+    lemma: περί
+    morph: r--------
+    tb: 17/1487302
+    sound:
+      restored: {ipa: pe.rì, respell: pe-ri}
+      erasmian: {ipa: pe.ˈri, respell: pe-RI}
+  - id: met.981a.5.47
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---na-
+    tb: 17/1487303
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981a.5.48
+    surface: καθʼ
+    lemma: κατά
+    morph: r--------
+    tb: 17/1487304
+    sound:
+      restored: {ipa: katʰ, respell: katʰ’}
+      erasmian: {ipa: kaθ, respell: kath’}
+  - id: met.981a.5.49
+    surface: ἕκαστόν
+    lemma: ἕκαστος
+    morph: a-s---ma-
+    tb: 17/1487305
+    sound:
+      restored: {ipa: hé.kas.tón, respell: HE-kas-TON}
+      erasmian: {ipa: ˈhe.kas.ˈton, respell: HE-kas-TON}
+  - id: met.981a.5.50
+    surface: εἰσιν
+    punct: ·
+    lemma: εἰμί
+    morph: v3ppia---
+    tb: 17/1487306
+    sound:
+      restored: {ipa: eː.sin, respell: ay-sin}
+      erasmian: {ipa: ei.sin, respell: ay-sin}
+- id: met.981a.6
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981a.6
+  stanza: 981a
+  stanza_title: Book A (I), chapter 1, Bekker 981a
+  text: οὐ γὰρ ἄνθρωπον ὑγιάζει ὁ ἰατρεύων ἀλλʼ ἢ κατὰ συμβεβηκός, ἀλλὰ Καλλίαν ἢ Σωκράτην ἢ τῶν ἄλλων τινὰ τῶν οὕτω λεγομένων ᾧ συμβέβηκεν ἀνθρώπῳ εἶναι·
+  tokens:
+  - id: met.981a.6.1
+    surface: οὐ
+    lemma: οὐ
+    morph: d--------
+    tb: 18/1487308
+    sound:
+      restored: {ipa: uː, respell: oo}
+      erasmian: {ipa: uː, respell: oo}
+  - id: met.981a.6.2
+    surface: γὰρ
+    lemma: γάρ
+    morph: d--------
+    tb: 18/1487309
+    sound:
+      restored: {ipa: ɡàr, respell: gar}
+      erasmian: {ipa: ˈɡar, respell: GAR}
+  - id: met.981a.6.3
+    surface: ἄνθρωπον
+    lemma: ἄνθρωπος
+    morph: n-s---ma-
+    tb: 18/1487310
+    sound:
+      restored: {ipa: án.tʰrɔː.pon, respell: AN-tʰraw-pon}
+      erasmian: {ipa: ˈan.θrɔː.pon, respell: AN-throh-pon}
+  - id: met.981a.6.4
+    surface: ὑγιάζει
+    lemma: ὑγιάζω
+    morph: v3spia---
+    tb: 18/1487311
+    sound:
+      restored: {ipa: hy.ɡi.á.zdeː, respell: hü-gi-A-zday}
+      erasmian: {ipa: hy.ɡi.ˈa.dzei, respell: hü-gi-A-dzay}
+  - id: met.981a.6.5
+    surface: ὁ
+    lemma: ὁ
+    morph: l-s---mn-
+    tb: 18/1487312
+    sound:
+      restored: {ipa: ho, respell: ho}
+      erasmian: {ipa: ho, respell: ho}
+  - id: met.981a.6.6
+    surface: ἰατρεύων
+    lemma: ἰατρεύω
+    morph: v-sppamn-
+    tb: 18/1487313
+    sound:
+      restored: {ipa: i.a.treú.ɔːn, respell: i-a-TREU-awn}
+      erasmian: {ipa: i.a.ˈtreu.ɔːn, respell: i-a-TRYOO-ohn}
+  - id: met.981a.6.7
+    surface: ἀλλʼ
+    lemma: ἀλλά
+    morph: b--------
+    tb: 18/1487314
+    sound:
+      restored: {ipa: all, respell: all’}
+      erasmian: {ipa: all, respell: all’}
+  - id: met.981a.6.8
+    surface: ἢ
+    lemma: ἤ
+    morph: b--------
+    tb: 18/1487315
+    sound:
+      restored: {ipa: ɛ̀ː, respell: ê}
+      erasmian: {ipa: ˈɛː, respell: AY}
+  - id: met.981a.6.9
+    surface: κατὰ
+    lemma: κατά
+    morph: r--------
+    tb: 18/1487316
+    sound:
+      restored: {ipa: ka.tà, respell: ka-ta}
+      erasmian: {ipa: ka.ˈta, respell: ka-TA}
+  - id: met.981a.6.10
+    surface: συμβεβηκός
+    punct: ','
+    lemma: συμβαίνω
+    morph: v-srpana-
+    tb: 18/1487317
+    sound:
+      restored: {ipa: sym.be.bɛː.kós, respell: süm-be-bê-KOS}
+      erasmian: {ipa: sym.be.bɛː.ˈkos, respell: süm-be-bay-KOS}
+  - id: met.981a.6.11
+    surface: ἀλλὰ
+    lemma: ἀλλά
+    morph: b--------
+    tb: 18/1487319
+    sound:
+      restored: {ipa: al.là, respell: al-la}
+      erasmian: {ipa: al.ˈla, respell: al-LA}
+  - id: met.981a.6.12
+    surface: Καλλίαν
+    lemma: Καλλίας
+    morph: n-s---ma-
+    tb: 18/1487320
+    sound:
+      restored: {ipa: kal.lí.an, respell: kal-LI-an}
+      erasmian: {ipa: kal.ˈli.an, respell: kal-LI-an}
+  - id: met.981a.6.13
+    surface: ἢ
+    lemma: ἤ
+    morph: b--------
+    tb: 18/1487321
+    sound:
+      restored: {ipa: ɛ̀ː, respell: ê}
+      erasmian: {ipa: ˈɛː, respell: AY}
+  - id: met.981a.6.14
+    surface: Σωκράτην
+    lemma: Σωκράτης
+    morph: n-s---ma-
+    tb: 18/1487322
+    sound:
+      restored: {ipa: sɔː.krá.tɛːn, respell: saw-KRA-tên}
+      erasmian: {ipa: sɔː.ˈkra.tɛːn, respell: soh-KRA-tayn}
+  - id: met.981a.6.15
+    surface: ἢ
+    lemma: ἤ
+    morph: b--------
+    tb: 18/1487323
+    sound:
+      restored: {ipa: ɛ̀ː, respell: ê}
+      erasmian: {ipa: ˈɛː, respell: AY}
+  - id: met.981a.6.16
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 18/1487324
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981a.6.17
+    surface: ἄλλων
+    lemma: ἄλλος
+    morph: a-p---mg-
+    tb: 18/1487325
+    sound:
+      restored: {ipa: ál.lɔːn, respell: AL-lawn}
+      erasmian: {ipa: ˈal.lɔːn, respell: AL-lohn}
+  - id: met.981a.6.18
+    surface: τινὰ
+    lemma: τις
+    morph: a-s---ca-
+    tb: 18/1487326
+    sound:
+      restored: {ipa: ti.nà, respell: ti-na}
+      erasmian: {ipa: ti.ˈna, respell: ti-NA}
+  - id: met.981a.6.19
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 18/1487327
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981a.6.20
+    surface: οὕτω
+    lemma: οὕτως
+    morph: d--------
+    tb: 18/1487328
+    sound:
+      restored: {ipa: húː.tɔː, respell: HOO-taw}
+      erasmian: {ipa: ˈhuː.tɔː, respell: HOO-toh}
+  - id: met.981a.6.21
+    surface: λεγομένων
+    lemma: λέγω
+    morph: v-pppemg-
+    tb: 18/1487329
+    sound:
+      restored: {ipa: le.ɡo.mé.nɔːn, respell: le-go-ME-nawn}
+      erasmian: {ipa: le.ɡo.ˈme.nɔːn, respell: le-go-ME-nohn}
+  - id: met.981a.6.22
+    surface: ᾧ
+    lemma: ὅς
+    morph: p-s---md-
+    tb: 18/1487330
+    sound:
+      restored: {ipa: hɔ̂ːi, respell: HAWI}
+      erasmian: {ipa: ˈhɔː, respell: HOH}
+  - id: met.981a.6.23
+    surface: συμβέβηκεν
+    lemma: συμβαίνω
+    morph: v3plia---
+    tb: 18/1487331
+    sound:
+      restored: {ipa: sym.bé.bɛː.ken, respell: süm-BE-bê-ken}
+      erasmian: {ipa: sym.ˈbe.bɛː.ken, respell: süm-BE-bay-ken}
+  - id: met.981a.6.24
+    surface: ἀνθρώπῳ
+    lemma: ἄνθρωπος
+    morph: n-s---md-
+    tb: 18/1487332
+    sound:
+      restored: {ipa: an.tʰrɔ́ː.pɔːi, respell: an-TʰRAW-pawi}
+      erasmian: {ipa: an.ˈθrɔː.pɔː, respell: an-THROH-poh}
+  - id: met.981a.6.25
+    surface: εἶναι
+    punct: ·
+    lemma: εἰμί
+    morph: v--pna---
+    tb: 18/1487333
+    sound:
+      restored: {ipa: êː.nai, respell: AY-nai}
+      erasmian: {ipa: ˈei.nai, respell: AY-nai}
+- id: met.981a.7
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981a.7
+  stanza: 981a
+  stanza_title: Book A (I), chapter 1, Bekker 981a
+  text: ἐὰν οὖν ἄνευ τῆς ἐμπειρίας ἔχῃ τις τὸν λόγον, καὶ τὸ καθόλου μὲν γνωρίζῃ τὸ δʼ ἐν τούτῳ καθʼ ἕκαστον ἀγνοῇ, πολλάκις διαμαρτήσεται τῆς θεραπείας· θεραπευτὸν γὰρ τὸ καθʼ ἕκαστον)·
+  tokens:
+  - id: met.981a.7.1
+    surface: ἐὰν
+    lemma: ἐάν
+    morph: c--------
+    tb: 19/1487335
+    sound:
+      restored: {ipa: e.àn, respell: e-an}
+      erasmian: {ipa: e.ˈan, respell: e-AN}
+  - id: met.981a.7.2
+    surface: οὖν
+    lemma: οὖν
+    morph: d--------
+    tb: 19/1487336
+    sound:
+      restored: {ipa: ûːn, respell: OON}
+      erasmian: {ipa: ˈuːn, respell: OON}
+  - id: met.981a.7.3
+    surface: ἄνευ
+    lemma: ἄνευ
+    morph: r--------
+    tb: 19/1487337
+    sound:
+      restored: {ipa: á.neu, respell: A-neu}
+      erasmian: {ipa: ˈa.neu, respell: A-nyoo}
+  - id: met.981a.7.4
+    surface: τῆς
+    lemma: ὁ
+    morph: l-s---fg-
+    tb: 19/1487338
+    sound:
+      restored: {ipa: tɛ̂ːs, respell: TÊS}
+      erasmian: {ipa: ˈtɛːs, respell: TAYS}
+  - id: met.981a.7.5
+    surface: ἐμπειρίας
+    lemma: ἐμπειρία
+    morph: n-s---fg-
+    tb: 19/1487339
+    sound:
+      restored: {ipa: em.peː.rí.as, respell: em-pay-RI-as}
+      erasmian: {ipa: em.pei.ˈri.as, respell: em-pay-RI-as}
+  - id: met.981a.7.6
+    surface: ἔχῃ
+    lemma: ἔχω
+    morph: v3spsa---
+    tb: 19/1487340
+    sound:
+      restored: {ipa: é.kʰɛːi, respell: E-kʰêi}
+      erasmian: {ipa: ˈe.xɛː, respell: E-khay}
+  - id: met.981a.7.7
+    surface: τις
+    lemma: τις
+    morph: a-s---cn-
+    tb: 19/1487341
+    sound:
+      restored: {ipa: tis, respell: tis}
+      erasmian: {ipa: tis, respell: tis}
+  - id: met.981a.7.8
+    surface: τὸν
+    lemma: ὁ
+    morph: l-s---ma-
+    tb: 19/1487342
+    sound:
+      restored: {ipa: tòn, respell: ton}
+      erasmian: {ipa: ˈton, respell: TON}
+  - id: met.981a.7.9
+    surface: λόγον
+    punct: ','
+    lemma: λόγος
+    morph: n-s---ma-
+    tb: 19/1487343
+    sound:
+      restored: {ipa: ló.ɡon, respell: LO-gon}
+      erasmian: {ipa: ˈlo.ɡon, respell: LO-gon}
+  - id: met.981a.7.10
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 19/1487345
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981a.7.11
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---na-
+    tb: 19/1487346
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981a.7.12
+    surface: καθόλου
+    lemma: καθόλου
+    morph: d--------
+    tb: 19/1487347
+    sound:
+      restored: {ipa: ka.tʰó.luː, respell: ka-TʰO-loo}
+      erasmian: {ipa: ka.ˈθo.luː, respell: ka-THO-loo}
+  - id: met.981a.7.13
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 19/1487348
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.981a.7.14
+    surface: γνωρίζῃ
+    lemma: γνωρίζω
+    morph: v3spsa---
+    tb: 19/1487349
+    sound:
+      restored: {ipa: ɡnɔː.rí.zdɛːi, respell: gnaw-RI-zdêi}
+      erasmian: {ipa: ɡnɔː.ˈri.dzɛː, respell: gnoh-RI-dzay}
+  - id: met.981a.7.15
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---nn-
+    tb: 19/1487350
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981a.7.16
+    surface: δʼ
+    lemma: δέ
+    morph: b--------
+    tb: 19/1487351
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: met.981a.7.17
+    surface: ἐν
+    lemma: ἐν
+    morph: r--------
+    tb: 19/1487352
+    sound:
+      restored: {ipa: en, respell: en}
+      erasmian: {ipa: en, respell: en}
+  - id: met.981a.7.18
+    surface: τούτῳ
+    lemma: οὗτος
+    morph: a-s---nd-
+    tb: 19/1487353
+    sound:
+      restored: {ipa: túː.tɔːi, respell: TOO-tawi}
+      erasmian: {ipa: ˈtuː.tɔː, respell: TOO-toh}
+  - id: met.981a.7.19
+    surface: καθʼ
+    lemma: κατά
+    morph: r--------
+    tb: 19/1487354
+    sound:
+      restored: {ipa: katʰ, respell: katʰ’}
+      erasmian: {ipa: kaθ, respell: kath’}
+  - id: met.981a.7.20
+    surface: ἕκαστον
+    lemma: ἕκαστος
+    morph: a-s---ma-
+    tb: 19/1487355
+    sound:
+      restored: {ipa: hé.kas.ton, respell: HE-kas-ton}
+      erasmian: {ipa: ˈhe.kas.ton, respell: HE-kas-ton}
+  - id: met.981a.7.21
+    surface: ἀγνοῇ
+    punct: ','
+    lemma: ἀγνοέω
+    morph: v3spsa---
+    tb: 19/1487356
+    sound:
+      restored: {ipa: aɡ.no.ɛ̂ːi, respell: ag-no-ÊI}
+      erasmian: {ipa: aɡ.no.ˈɛː, respell: ag-no-AY}
+  - id: met.981a.7.22
+    surface: πολλάκις
+    lemma: πολλάκις
+    morph: d--------
+    tb: 19/1487358
+    sound:
+      restored: {ipa: pol.lá.kis, respell: pol-LA-kis}
+      erasmian: {ipa: pol.ˈla.kis, respell: pol-LA-kis}
+  - id: met.981a.7.23
+    surface: διαμαρτήσεται
+    lemma: διαμαρτάνω
+    morph: v3sasm---
+    tb: 19/1487359
+    sound:
+      restored: {ipa: di.a.mar.tɛ́ː.se.tai, respell: di-a-mar-TÊ-se-tai}
+      erasmian: {ipa: di.a.mar.ˈtɛː.se.tai, respell: di-a-mar-TAY-se-tai}
+  - id: met.981a.7.24
+    surface: τῆς
+    lemma: ὁ
+    morph: l-s---fg-
+    tb: 19/1487360
+    sound:
+      restored: {ipa: tɛ̂ːs, respell: TÊS}
+      erasmian: {ipa: ˈtɛːs, respell: TAYS}
+  - id: met.981a.7.25
+    surface: θεραπείας
+    punct: ·
+    lemma: θεραπεία
+    morph: n-s---fg-
+    tb: 19/1487361
+    sound:
+      restored: {ipa: tʰe.ra.péː.as, respell: tʰe-ra-PAY-as}
+      erasmian: {ipa: θe.ra.ˈpei.as, respell: the-ra-PAY-as}
+  - id: met.981a.7.26
+    surface: θεραπευτὸν
+    lemma: θεραπευτός
+    morph: a-s---nn-
+    tb: 20/1487363
+    sound:
+      restored: {ipa: tʰe.ra.peu.tòn, respell: tʰe-ra-peu-ton}
+      erasmian: {ipa: θe.ra.peu.ˈton, respell: the-ra-pyoo-TON}
+  - id: met.981a.7.27
+    surface: γὰρ
+    lemma: γάρ
+    morph: d--------
+    tb: 20/1487364
+    sound:
+      restored: {ipa: ɡàr, respell: gar}
+      erasmian: {ipa: ˈɡar, respell: GAR}
+  - id: met.981a.7.28
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---nn-
+    tb: 20/1487365
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981a.7.29
+    surface: καθʼ
+    lemma: κατά
+    morph: r--------
+    tb: 20/1487366
+    sound:
+      restored: {ipa: katʰ, respell: katʰ’}
+      erasmian: {ipa: kaθ, respell: kath’}
+  - id: met.981a.7.30
+    surface: ἕκαστον
+    punct: )·
+    lemma: ἕκαστος
+    morph: a-s---na-
+    tb: 20/1487367
+    sound:
+      restored: {ipa: hé.kas.ton, respell: HE-kas-ton}
+      erasmian: {ipa: ˈhe.kas.ton, respell: HE-kas-ton}
+- id: met.981a.8
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981a.8
+  stanza: 981a
+  stanza_title: Book A (I), chapter 1, Bekker 981a
+  text: ἀλλʼ ὅμως τό γε εἰδέναι καὶ τὸ ἐπαΐειν τῇ τέχνῃ τῆς ἐμπειρίας ὑπάρχειν οἰόμεθα μᾶλλον, καὶ σοφωτέρους τοὺς τεχνίτας τῶν ἐμπείρων ὑπολαμβάνομεν, ὡς κατὰ τὸ εἰδέναι μᾶλλον ἀκολουθοῦσαν τὴν σοφίαν
+    πᾶσι· τοῦτο δʼ ὅτι οἱ μὲν τὴν αἰτίαν ἴσασιν οἱ δʼ οὔ.
+  tokens:
+  - id: met.981a.8.1
+    surface: ἀλλʼ
+    lemma: ἀλλά
+    morph: b--------
+    tb: 21/1487370
+    sound:
+      restored: {ipa: all, respell: all’}
+      erasmian: {ipa: all, respell: all’}
+  - id: met.981a.8.2
+    surface: ὅμως
+    lemma: ὅμως
+    morph: d--------
+    tb: 21/1487371
+    sound:
+      restored: {ipa: hó.mɔːs, respell: HO-maws}
+      erasmian: {ipa: ˈho.mɔːs, respell: HO-mohs}
+  - id: met.981a.8.3
+    surface: τό
+    lemma: ὁ
+    morph: l-s---nn-
+    tb: 21/1487372
+    sound:
+      restored: {ipa: tó, respell: TO}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981a.8.4
+    surface: γε
+    lemma: γε
+    morph: d--------
+    tb: 21/1487373
+    sound:
+      restored: {ipa: ɡe, respell: ge}
+      erasmian: {ipa: ɡe, respell: ge}
+  - id: met.981a.8.5
+    surface: εἰδέναι
+    lemma: οἶδα
+    morph: v--rna---
+    tb: 21/1487374
+    sound:
+      restored: {ipa: eː.dé.nai, respell: ay-DE-nai}
+      erasmian: {ipa: ei.ˈde.nai, respell: ay-DE-nai}
+  - id: met.981a.8.6
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 21/1487375
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981a.8.7
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---nn-
+    tb: 21/1487376
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981a.8.8
+    surface: ἐπαΐειν
+    lemma: ἐπαίω
+    morph: v--pna---
+    tb: 21/1487377
+    sound:
+      restored: {ipa: e.pa.í.eːn, respell: e-pa-I-ayn}
+      erasmian: {ipa: e.pa.ˈi.ein, respell: e-pa-I-ayn}
+  - id: met.981a.8.9
+    surface: τῇ
+    lemma: ὁ
+    morph: l-s---fd-
+    tb: 21/1487378
+    sound:
+      restored: {ipa: tɛ̂ːi, respell: TÊI}
+      erasmian: {ipa: ˈtɛː, respell: TAY}
+  - id: met.981a.8.10
+    surface: τέχνῃ
+    lemma: τέχνη
+    morph: n-s---fd-
+    tb: 21/1487379
+    sound:
+      restored: {ipa: tékʰ.nɛːi, respell: TEKʰ-nêi}
+      erasmian: {ipa: ˈtex.nɛː, respell: TEKH-nay}
+  - id: met.981a.8.11
+    surface: τῆς
+    lemma: ὁ
+    morph: l-s---fg-
+    tb: 21/1487380
+    sound:
+      restored: {ipa: tɛ̂ːs, respell: TÊS}
+      erasmian: {ipa: ˈtɛːs, respell: TAYS}
+  - id: met.981a.8.12
+    surface: ἐμπειρίας
+    lemma: ἐμπειρία
+    morph: n-s---fg-
+    tb: 21/1487381
+    sound:
+      restored: {ipa: em.peː.rí.as, respell: em-pay-RI-as}
+      erasmian: {ipa: em.pei.ˈri.as, respell: em-pay-RI-as}
+  - id: met.981a.8.13
+    surface: ὑπάρχειν
+    lemma: ὑπάρχω
+    morph: v--pna---
+    tb: 21/1487382
+    sound:
+      restored: {ipa: hy.pár.kʰeːn, respell: hü-PAR-kʰayn}
+      erasmian: {ipa: hy.ˈpar.xein, respell: hü-PAR-khayn}
+  - id: met.981a.8.14
+    surface: οἰόμεθα
+    lemma: οἴομαι
+    morph: v1ppie---
+    tb: 21/1487383
+    sound:
+      restored: {ipa: oi.ó.me.tʰa, respell: oy-O-me-tʰa}
+      erasmian: {ipa: oi.ˈo.me.θa, respell: oy-O-me-tha}
+  - id: met.981a.8.15
+    surface: μᾶλλον
+    punct: ','
+    lemma: μάλα
+    morph: d-------c
+    tb: 21/1487384
+    sound:
+      restored: {ipa: mâːl.lon, respell: MAAL-lon}
+      erasmian: {ipa: ˈmaːl.lon, respell: MAAL-lon}
+  - id: met.981a.8.16
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 21/1487386
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981a.8.17
+    surface: σοφωτέρους
+    lemma: σοφός
+    morph: a-p---mac
+    tb: 21/1487387
+    sound:
+      restored: {ipa: so.pʰɔː.té.ruːs, respell: so-pʰaw-TE-roos}
+      erasmian: {ipa: so.fɔː.ˈte.ruːs, respell: so-foh-TE-roos}
+  - id: met.981a.8.18
+    surface: τοὺς
+    lemma: ὁ
+    morph: l-p---ma-
+    tb: 21/1487388
+    sound:
+      restored: {ipa: tùːs, respell: toos}
+      erasmian: {ipa: ˈtuːs, respell: TOOS}
+  - id: met.981a.8.19
+    surface: τεχνίτας
+    lemma: τεχνίτης
+    morph: n-p---ma-
+    tb: 21/1487389
+    sound:
+      restored: {ipa: tekʰ.ní.tas, respell: tekʰ-NI-tas}
+      erasmian: {ipa: tex.ˈni.tas, respell: tekh-NI-tas}
+  - id: met.981a.8.20
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 21/1487390
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981a.8.21
+    surface: ἐμπείρων
+    lemma: ἔμπειρος
+    morph: a-p---mg-
+    tb: 21/1487391
+    sound:
+      restored: {ipa: em.péː.rɔːn, respell: em-PAY-rawn}
+      erasmian: {ipa: em.ˈpei.rɔːn, respell: em-PAY-rohn}
+  - id: met.981a.8.22
+    surface: ὑπολαμβάνομεν
+    punct: ','
+    lemma: ὑπολαμβάνω
+    morph: v1ppia---
+    tb: 21/1487392
+    sound:
+      restored: {ipa: hy.po.lam.bá.no.men, respell: hü-po-lam-BA-no-men}
+      erasmian: {ipa: hy.po.lam.ˈba.no.men, respell: hü-po-lam-BA-no-men}
+  - id: met.981a.8.23
+    surface: ὡς
+    lemma: ὡς
+    morph: c--------
+    tb: 21/1487394
+    sound:
+      restored: {ipa: hɔːs, respell: haws}
+      erasmian: {ipa: hɔːs, respell: hohs}
+  - id: met.981a.8.24
+    surface: κατὰ
+    lemma: κατά
+    morph: r--------
+    tb: 21/1487395
+    sound:
+      restored: {ipa: ka.tà, respell: ka-ta}
+      erasmian: {ipa: ka.ˈta, respell: ka-TA}
+  - id: met.981a.8.25
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---na-
+    tb: 21/1487396
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981a.8.26
+    surface: εἰδέναι
+    lemma: οἶδα
+    morph: v--rna---
+    tb: 21/1487397
+    sound:
+      restored: {ipa: eː.dé.nai, respell: ay-DE-nai}
+      erasmian: {ipa: ei.ˈde.nai, respell: ay-DE-nai}
+  - id: met.981a.8.27
+    surface: μᾶλλον
+    lemma: μάλα
+    morph: d-------c
+    tb: 21/1487398
+    sound:
+      restored: {ipa: mâːl.lon, respell: MAAL-lon}
+      erasmian: {ipa: ˈmaːl.lon, respell: MAAL-lon}
+  - id: met.981a.8.28
+    surface: ἀκολουθοῦσαν
+    lemma: ἀκολουθέω
+    morph: v-sppafa-
+    tb: 21/1487399
+    sound:
+      restored: {ipa: a.ko.luː.tʰûː.san, respell: a-ko-loo-TʰOO-san}
+      erasmian: {ipa: a.ko.luː.ˈθuː.san, respell: a-ko-loo-THOO-san}
+  - id: met.981a.8.29
+    surface: τὴν
+    lemma: ὁ
+    morph: l-s---fa-
+    tb: 21/1487400
+    sound:
+      restored: {ipa: tɛ̀ːn, respell: tên}
+      erasmian: {ipa: ˈtɛːn, respell: TAYN}
+  - id: met.981a.8.30
+    surface: σοφίαν
+    lemma: σοφία
+    morph: n-s---fa-
+    tb: 21/1487401
+    sound:
+      restored: {ipa: so.pʰí.an, respell: so-PʰI-an}
+      erasmian: {ipa: so.ˈfi.an, respell: so-FI-an}
+  - id: met.981a.8.31
+    surface: πᾶσι
+    punct: ·
+    lemma: πᾶς
+    morph: a-p---md-
+    tb: 21/1487402
+    sound:
+      restored: {ipa: pâː.si, respell: PAA-si}
+      erasmian: {ipa: ˈpaː.si, respell: PAA-si}
+  - id: met.981a.8.32
+    surface: τοῦτο
+    lemma: οὗτος
+    morph: a-s---na-
+    tb: 22/1487404
+    sound:
+      restored: {ipa: tûː.to, respell: TOO-to}
+      erasmian: {ipa: ˈtuː.to, respell: TOO-to}
+  - id: met.981a.8.33
+    surface: δʼ
+    lemma: δέ
+    morph: b--------
+    tb: 22/1487405
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: met.981a.8.34
+    surface: ὅτι
+    lemma: ὅτι
+    morph: c--------
+    tb: 22/1487406
+    sound:
+      restored: {ipa: hó.ti, respell: HO-ti}
+      erasmian: {ipa: ˈho.ti, respell: HO-ti}
+  - id: met.981a.8.35
+    surface: οἱ
+    lemma: ὁ
+    morph: l-p---mn-
+    tb: 22/1487407
+    sound:
+      restored: {ipa: hoi, respell: hoy}
+      erasmian: {ipa: hoi, respell: hoy}
+  - id: met.981a.8.36
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 22/1487408
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.981a.8.37
+    surface: τὴν
+    lemma: ὁ
+    morph: l-s---fa-
+    tb: 22/1487409
+    sound:
+      restored: {ipa: tɛ̀ːn, respell: tên}
+      erasmian: {ipa: ˈtɛːn, respell: TAYN}
+  - id: met.981a.8.38
+    surface: αἰτίαν
+    lemma: αἰτία
+    morph: n-s---fa-
+    tb: 22/1487410
+    sound:
+      restored: {ipa: ai.tí.an, respell: ai-TI-an}
+      erasmian: {ipa: ai.ˈti.an, respell: ai-TI-an}
+  - id: met.981a.8.39
+    surface: ἴσασιν
+    lemma: οἶδα
+    morph: v3ppia---
+    tb: 22/1487411
+    sound:
+      restored: {ipa: í.sa.sin, respell: I-sa-sin}
+      erasmian: {ipa: ˈi.sa.sin, respell: I-sa-sin}
+  - id: met.981a.8.40
+    surface: οἱ
+    lemma: ὁ
+    morph: l-p---mn-
+    tb: 22/1487412
+    sound:
+      restored: {ipa: hoi, respell: hoy}
+      erasmian: {ipa: hoi, respell: hoy}
+  - id: met.981a.8.41
+    surface: δʼ
+    lemma: δέ
+    morph: b--------
+    tb: 22/1487413
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: met.981a.8.42
+    surface: οὔ
+    punct: .
+    lemma: οὐ
+    morph: d--------
+    tb: 22/1487414
+    sound:
+      restored: {ipa: úː, respell: OO}
+      erasmian: {ipa: ˈuː, respell: OO}
+- id: met.981a.9
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981a.9
+  stanza: 981a
+  stanza_title: Book A (I), chapter 1, Bekker 981a
+  text: οἱ μὲν γὰρ ἔμπειροι τὸ ὅτι μὲν ἴσασι, διότι δʼ οὐκ ἴσασιν· οἱ δὲ τὸ διότι καὶ τὴν αἰτίαν γνωρίζουσιν.
+  tokens:
+  - id: met.981a.9.1
+    surface: οἱ
+    lemma: ὁ
+    morph: l-p---mn-
+    tb: 23/1487416
+    sound:
+      restored: {ipa: hoi, respell: hoy}
+      erasmian: {ipa: hoi, respell: hoy}
+  - id: met.981a.9.2
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 23/1487417
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.981a.9.3
+    surface: γὰρ
+    lemma: γάρ
+    morph: d--------
+    tb: 23/1487418
+    sound:
+      restored: {ipa: ɡàr, respell: gar}
+      erasmian: {ipa: ˈɡar, respell: GAR}
+  - id: met.981a.9.4
+    surface: ἔμπειροι
+    lemma: ἔμπειρος
+    morph: a-p---mn-
+    tb: 23/1487419
+    sound:
+      restored: {ipa: ém.peː.roi, respell: EM-pay-roy}
+      erasmian: {ipa: ˈem.pei.roi, respell: EM-pay-roy}
+  - id: met.981a.9.5
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---na-
+    tb: 23/1487420
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981a.9.6
+    surface: ὅτι
+    lemma: ὅτι
+    morph: c--------
+    tb: 23/1487421
+    sound:
+      restored: {ipa: hó.ti, respell: HO-ti}
+      erasmian: {ipa: ˈho.ti, respell: HO-ti}
+  - id: met.981a.9.7
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 23/1487422
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.981a.9.8
+    surface: ἴσασι
+    punct: ','
+    lemma: οἶδα
+    morph: v3pria---
+    tb: 23/1487423
+    sound:
+      restored: {ipa: í.sa.si, respell: I-sa-si}
+      erasmian: {ipa: ˈi.sa.si, respell: I-sa-si}
+  - id: met.981a.9.9
+    surface: διότι
+    lemma: διότι
+    morph: c--------
+    tb: 23/1487425
+    sound:
+      restored: {ipa: di.ó.ti, respell: di-O-ti}
+      erasmian: {ipa: di.ˈo.ti, respell: di-O-ti}
+  - id: met.981a.9.10
+    surface: δʼ
+    lemma: δέ
+    morph: b--------
+    tb: 23/1487426
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: met.981a.9.11
+    surface: οὐκ
+    lemma: οὐ
+    morph: d--------
+    tb: 23/1487427
+    sound:
+      restored: {ipa: uːk, respell: ook}
+      erasmian: {ipa: uːk, respell: ook}
+  - id: met.981a.9.12
+    surface: ἴσασιν
+    punct: ·
+    lemma: οἶδα
+    morph: v3pria---
+    tb: 23/1487428
+    sound:
+      restored: {ipa: í.sa.sin, respell: I-sa-sin}
+      erasmian: {ipa: ˈi.sa.sin, respell: I-sa-sin}
+  - id: met.981a.9.13
+    surface: οἱ
+    lemma: ὁ
+    morph: l-p---mn-
+    tb: 24/1487430
+    sound:
+      restored: {ipa: hoi, respell: hoy}
+      erasmian: {ipa: hoi, respell: hoy}
+  - id: met.981a.9.14
+    surface: δὲ
+    lemma: δέ
+    morph: b--------
+    tb: 24/1487431
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: met.981a.9.15
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---na-
+    tb: 24/1487432
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981a.9.16
+    surface: διότι
+    lemma: διότι
+    morph: c--------
+    tb: 24/1487433
+    sound:
+      restored: {ipa: di.ó.ti, respell: di-O-ti}
+      erasmian: {ipa: di.ˈo.ti, respell: di-O-ti}
+  - id: met.981a.9.17
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 24/1487434
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981a.9.18
+    surface: τὴν
+    lemma: ὁ
+    morph: l-s---fa-
+    tb: 24/1487435
+    sound:
+      restored: {ipa: tɛ̀ːn, respell: tên}
+      erasmian: {ipa: ˈtɛːn, respell: TAYN}
+  - id: met.981a.9.19
+    surface: αἰτίαν
+    lemma: αἰτία
+    morph: n-s---fa-
+    tb: 24/1487436
+    sound:
+      restored: {ipa: ai.tí.an, respell: ai-TI-an}
+      erasmian: {ipa: ai.ˈti.an, respell: ai-TI-an}
+  - id: met.981a.9.20
+    surface: γνωρίζουσιν
+    punct: .
+    lemma: γνωρίζω
+    morph: v3ppia---
+    tb: 24/1487437
+    sound:
+      restored: {ipa: ɡnɔː.rí.zduː.sin, respell: gnaw-RI-zdoo-sin}
+      erasmian: {ipa: ɡnɔː.ˈri.dzuː.sin, respell: gnoh-RI-dzoo-sin}
+- id: met.981a.10
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981a.10
+  stanza: 981a
+  stanza_title: Book A (I), chapter 1, Bekker 981a
+  text: διὸ καὶ τοὺς ἀρχιτέκτονας περὶ ἕκαστον τιμιωτέρους καὶ μᾶλλον εἰδέναι νομίζομεν τῶν χειροτεχνῶν καὶ σοφωτέρους,
+  tokens:
+  - id: met.981a.10.1
+    surface: διὸ
+    lemma: διό
+    morph: d--------
+    tb: 25/1487439
+    sound:
+      restored: {ipa: di.ò, respell: di-o}
+      erasmian: {ipa: di.ˈo, respell: di-O}
+  - id: met.981a.10.2
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 25/1487440
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981a.10.3
+    surface: τοὺς
+    lemma: ὁ
+    morph: l-p---ma-
+    tb: 25/1487441
+    sound:
+      restored: {ipa: tùːs, respell: toos}
+      erasmian: {ipa: ˈtuːs, respell: TOOS}
+  - id: met.981a.10.4
+    surface: ἀρχιτέκτονας
+    lemma: ἀρχιτέκτων
+    morph: n-p---ma-
+    tb: 25/1487442
+    sound:
+      restored: {ipa: ar.kʰi.ték.to.nas, respell: ar-kʰi-TEK-to-nas}
+      erasmian: {ipa: ar.xi.ˈtek.to.nas, respell: ar-khi-TEK-to-nas}
+  - id: met.981a.10.5
+    surface: περὶ
+    lemma: περί
+    morph: r--------
+    tb: 25/1487443
+    sound:
+      restored: {ipa: pe.rì, respell: pe-ri}
+      erasmian: {ipa: pe.ˈri, respell: pe-RI}
+  - id: met.981a.10.6
+    surface: ἕκαστον
+    lemma: ἕκαστος
+    morph: a-s---ma-
+    tb: 25/1487444
+    sound:
+      restored: {ipa: hé.kas.ton, respell: HE-kas-ton}
+      erasmian: {ipa: ˈhe.kas.ton, respell: HE-kas-ton}
+  - id: met.981a.10.7
+    surface: τιμιωτέρους
+    lemma: τίμιος
+    morph: a-p---mac
+    tb: 25/1487445
+    sound:
+      restored: {ipa: ti.mi.ɔː.té.ruːs, respell: ti-mi-aw-TE-roos}
+      erasmian: {ipa: ti.mi.ɔː.ˈte.ruːs, respell: ti-mi-oh-TE-roos}
+  - id: met.981a.10.8
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 25/1487446
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981a.10.9
+    surface: μᾶλλον
+    lemma: μάλα
+    morph: d-------c
+    tb: 25/1487447
+    sound:
+      restored: {ipa: mâːl.lon, respell: MAAL-lon}
+      erasmian: {ipa: ˈmaːl.lon, respell: MAAL-lon}
+  - id: met.981a.10.10
+    surface: εἰδέναι
+    lemma: οἶδα
+    morph: v--rna---
+    tb: 25/1487448
+    sound:
+      restored: {ipa: eː.dé.nai, respell: ay-DE-nai}
+      erasmian: {ipa: ei.ˈde.nai, respell: ay-DE-nai}
+  - id: met.981a.10.11
+    surface: νομίζομεν
+    lemma: νομίζω
+    morph: v1ppia---
+    tb: 25/1487449
+    sound:
+      restored: {ipa: no.mí.zdo.men, respell: no-MI-zdo-men}
+      erasmian: {ipa: no.ˈmi.dzo.men, respell: no-MI-dzo-men}
+  - id: met.981a.10.12
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 25/1487450
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981a.10.13
+    surface: χειροτεχνῶν
+    lemma: χειροτέχνης
+    morph: n-p---mg-
+    tb: 25/1487451
+    sound:
+      restored: {ipa: kʰeː.ro.tekʰ.nɔ̂ːn, respell: kʰay-ro-tekʰ-NAWN}
+      erasmian: {ipa: xei.ro.tex.ˈnɔːn, respell: khay-ro-tekh-NOHN}
+  - id: met.981a.10.14
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 25/1487452
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981a.10.15
+    surface: σοφωτέρους
+    punct: ','
+    lemma: σοφός
+    morph: a-p---mac
+    tb: 25/1487453
+    sound:
+      restored: {ipa: so.pʰɔː.té.ruːs, respell: so-pʰaw-TE-roos}
+      erasmian: {ipa: so.fɔː.ˈte.ruːs, respell: so-foh-TE-roos}
+- id: met.981a.11
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981a.11
+  stanza: 981a
+  stanza_title: Book A (I), chapter 1, Bekker 981a
+  text: ὅτι τὰς αἰτίας τῶν ποιουμένων ἴσασιν (τοὺς δʼ, ὥσπερ καὶ τῶν ἀψύχων ἔνια ποιεῖ μέν, οὐκ εἰδότα δὲ ποιεῖ ἃ ποιεῖ, οἷον καίει τὸ πῦρ—τὰ μὲν οὖν ἄψυχα φύσει τινὶ ποιεῖν τούτων ἕκαστον τοὺς δὲ χειροτέχνας
+    διʼ ἔθος),
+  tokens:
+  - id: met.981a.11.1
+    surface: ὅτι
+    lemma: ὅτι
+    morph: c--------
+    tb: 26/1487455
+    sound:
+      restored: {ipa: hó.ti, respell: HO-ti}
+      erasmian: {ipa: ˈho.ti, respell: HO-ti}
+  - id: met.981a.11.2
+    surface: τὰς
+    lemma: ὁ
+    morph: l-p---fa-
+    tb: 26/1487456
+    sound:
+      restored: {ipa: tàs, respell: tas}
+      erasmian: {ipa: ˈtas, respell: TAS}
+  - id: met.981a.11.3
+    surface: αἰτίας
+    lemma: αἰτία
+    morph: n-p---fa-
+    tb: 26/1487457
+    sound:
+      restored: {ipa: ai.tí.as, respell: ai-TI-as}
+      erasmian: {ipa: ai.ˈti.as, respell: ai-TI-as}
+  - id: met.981a.11.4
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 26/1487458
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981a.11.5
+    surface: ποιουμένων
+    lemma: ποιέω
+    morph: v-pppemg-
+    tb: 26/1487459
+    sound:
+      restored: {ipa: poi.uː.mé.nɔːn, respell: poy-oo-ME-nawn}
+      erasmian: {ipa: poi.uː.ˈme.nɔːn, respell: poy-oo-ME-nohn}
+  - id: met.981a.11.6
+    surface: ἴσασιν
+    lemma: οἶδα
+    morph: v3ppia---
+    tb: 26/1487460
+    sound:
+      restored: {ipa: í.sa.sin, respell: I-sa-sin}
+      erasmian: {ipa: ˈi.sa.sin, respell: I-sa-sin}
+  - id: met.981a.11.7
+    surface: (τοὺς
+    lemma: ὁ
+    morph: l-p---ma-
+    tb: 26/1487462
+    sound:
+      restored: {ipa: tùːs, respell: toos}
+      erasmian: {ipa: ˈtuːs, respell: TOOS}
+  - id: met.981a.11.8
+    surface: δʼ,
+    lemma: δέ
+    morph: b--------
+    tb: 26/1487463
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: met.981a.11.9
+    surface: ὥσπερ
+    lemma: ὥσπερ
+    morph: c--------
+    tb: 26/1487465
+    sound:
+      restored: {ipa: hɔ́ːs.per, respell: HAWS-per}
+      erasmian: {ipa: ˈhɔːs.per, respell: HOHS-per}
+  - id: met.981a.11.10
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 26/1487466
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981a.11.11
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---ng-
+    tb: 26/1487467
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981a.11.12
+    surface: ἀψύχων
+    lemma: ἄψυχος
+    morph: a-p---ng-
+    tb: 26/1487468
+    sound:
+      restored: {ipa: a.psý.kʰɔːn, respell: a-PSÜ-kʰawn}
+      erasmian: {ipa: a.ˈpsy.xɔːn, respell: a-PSÜ-khohn}
+  - id: met.981a.11.13
+    surface: ἔνια
+    lemma: ἔνιοι
+    morph: a-p---nn-
+    tb: 26/1487469
+    sound:
+      restored: {ipa: é.ni.a, respell: E-ni-a}
+      erasmian: {ipa: ˈe.ni.a, respell: E-ni-a}
+  - id: met.981a.11.14
+    surface: ποιεῖ
+    lemma: ποιέω
+    morph: v3spia---
+    tb: 26/1487470
+    sound:
+      restored: {ipa: poi.êː, respell: poy-AY}
+      erasmian: {ipa: poi.ˈei, respell: poy-AY}
+  - id: met.981a.11.15
+    surface: μέν,
+    lemma: μέν
+    morph: d--------
+    tb: 26/1487471
+    sound:
+      restored: {ipa: mén, respell: MEN}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.981a.11.16
+    surface: οὐκ
+    lemma: οὐ
+    morph: d--------
+    tb: 26/1487473
+    sound:
+      restored: {ipa: uːk, respell: ook}
+      erasmian: {ipa: uːk, respell: ook}
+  - id: met.981a.11.17
+    surface: εἰδότα
+    lemma: οἶδα
+    morph: v-srpama-
+    tb: 26/1487474
+    sound:
+      restored: {ipa: eː.dó.ta, respell: ay-DO-ta}
+      erasmian: {ipa: ei.ˈdo.ta, respell: ay-DO-ta}
+  - id: met.981a.11.18
+    surface: δὲ
+    lemma: δέ
+    morph: b--------
+    tb: 26/1487475
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: met.981a.11.19
+    surface: ποιεῖ
+    lemma: ποιέω
+    morph: v3spia---
+    tb: 26/1487476
+    sound:
+      restored: {ipa: poi.êː, respell: poy-AY}
+      erasmian: {ipa: poi.ˈei, respell: poy-AY}
+  - id: met.981a.11.20
+    surface: ἃ
+    lemma: ὅς
+    morph: p-p---na-
+    tb: 26/1487477
+    sound:
+      restored: {ipa: hà, respell: ha}
+      erasmian: {ipa: ˈha, respell: HA}
+  - id: met.981a.11.21
+    surface: ποιεῖ,
+    lemma: ποιέω
+    morph: v3spia---
+    tb: 26/1487478
+    sound:
+      restored: {ipa: poi.êː, respell: poy-AY}
+      erasmian: {ipa: poi.ˈei, respell: poy-AY}
+  - id: met.981a.11.22
+    surface: οἷον
+    lemma: οἷος
+    morph: p-s---nn-
+    tb: 26/1487480
+    sound:
+      restored: {ipa: hôi.on, respell: HOY-on}
+      erasmian: {ipa: ˈhoi.on, respell: HOY-on}
+  - id: met.981a.11.23
+    surface: καίει
+    lemma: καίω
+    morph: v3spia---
+    tb: 26/1487481
+    sound:
+      restored: {ipa: kaí.eː, respell: KAI-ay}
+      erasmian: {ipa: ˈkai.ei, respell: KAI-ay}
+  - id: met.981a.11.24
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---nn-
+    tb: 26/1487482
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981a.11.25
+    surface: πῦρ—
+    lemma: πῦρ
+    morph: n-s---nn-
+    tb: 26/1487483
+    sound:
+      restored: {ipa: pŷːr, respell: PÜÜR}
+      erasmian: {ipa: ˈpyːr, respell: PÜÜR}
+  - id: met.981a.11.26
+    surface: τὰ
+    lemma: ὁ
+    morph: l-p---nn-
+    tb: 27/1487485
+    sound:
+      restored: {ipa: tà, respell: ta}
+      erasmian: {ipa: ˈta, respell: TA}
+  - id: met.981a.11.27
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 27/1487486
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.981a.11.28
+    surface: οὖν
+    lemma: οὖν
+    morph: d--------
+    tb: 27/1487487
+    sound:
+      restored: {ipa: ûːn, respell: OON}
+      erasmian: {ipa: ˈuːn, respell: OON}
+  - id: met.981a.11.29
+    surface: ἄψυχα
+    lemma: ἄψυχος
+    morph: a-p---nn-
+    tb: 27/1487488
+    sound:
+      restored: {ipa: á.psy.kʰa, respell: A-psü-kʰa}
+      erasmian: {ipa: ˈa.psy.xa, respell: A-psü-kha}
+  - id: met.981a.11.30
+    surface: φύσει
+    lemma: φύσις
+    morph: n-s---fd-
+    tb: 27/1487489
+    sound:
+      restored: {ipa: pʰý.seː, respell: PʰÜ-say}
+      erasmian: {ipa: ˈfy.sei, respell: FÜ-say}
+  - id: met.981a.11.31
+    surface: τινὶ
+    lemma: τις
+    morph: a-s---cd-
+    tb: 27/1487490
+    sound:
+      restored: {ipa: ti.nì, respell: ti-ni}
+      erasmian: {ipa: ti.ˈni, respell: ti-NI}
+  - id: met.981a.11.32
+    surface: ποιεῖν
+    lemma: ποιέω
+    morph: v--pna---
+    tb: 27/1487491
+    sound:
+      restored: {ipa: poi.êːn, respell: poy-AYN}
+      erasmian: {ipa: poi.ˈein, respell: poy-AYN}
+  - id: met.981a.11.33
+    surface: τούτων
+    lemma: οὗτος
+    morph: a-p---mg-
+    tb: 27/1487492
+    sound:
+      restored: {ipa: túː.tɔːn, respell: TOO-tawn}
+      erasmian: {ipa: ˈtuː.tɔːn, respell: TOO-tohn}
+  - id: met.981a.11.34
+    surface: ἕκαστον
+    lemma: ἕκαστος
+    morph: a-s---ma-
+    tb: 27/1487493
+    sound:
+      restored: {ipa: hé.kas.ton, respell: HE-kas-ton}
+      erasmian: {ipa: ˈhe.kas.ton, respell: HE-kas-ton}
+  - id: met.981a.11.35
+    surface: τοὺς
+    lemma: ὁ
+    morph: l-p---ma-
+    tb: 27/1487494
+    sound:
+      restored: {ipa: tùːs, respell: toos}
+      erasmian: {ipa: ˈtuːs, respell: TOOS}
+  - id: met.981a.11.36
+    surface: δὲ
+    lemma: δέ
+    morph: b--------
+    tb: 27/1487495
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: met.981a.11.37
+    surface: χειροτέχνας
+    lemma: χειροτέχνης
+    morph: n-p---ma-
+    tb: 27/1487496
+    sound:
+      restored: {ipa: kʰeː.ro.tékʰ.nas, respell: kʰay-ro-TEKʰ-nas}
+      erasmian: {ipa: xei.ro.ˈtex.nas, respell: khay-ro-TEKH-nas}
+  - id: met.981a.11.38
+    surface: διʼ
+    lemma: διά
+    morph: r--------
+    tb: 27/1487497
+    sound:
+      restored: {ipa: di, respell: di’}
+      erasmian: {ipa: di, respell: di’}
+  - id: met.981a.11.39
+    surface: ἔθος),
+    lemma: ἔθος
+    morph: n-s---na-
+    tb: 27/1487498
+    sound:
+      restored: {ipa: é.tʰos, respell: E-tʰos}
+      erasmian: {ipa: ˈe.θos, respell: E-thos}
+- id: met.981a.12
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981a.12
+  stanza: 981a
+  stanza_title: Book A (I), chapter 1, Bekker 981a
+  text: ὡς οὐ κατὰ τὸ πρακτικοὺς εἶναι σοφωτέρους ὄντας ἀλλὰ κατὰ τὸ λόγον ἔχειν αὐτοὺς καὶ τὰς αἰτίας γνωρίζειν.
+  tokens:
+  - id: met.981a.12.1
+    surface: ὡς
+    lemma: ὡς
+    morph: c--------
+    tb: 27/1487501
+    sound:
+      restored: {ipa: hɔːs, respell: haws}
+      erasmian: {ipa: hɔːs, respell: hohs}
+  - id: met.981a.12.2
+    surface: οὐ
+    lemma: οὐ
+    morph: d--------
+    tb: 27/1487502
+    sound:
+      restored: {ipa: uː, respell: oo}
+      erasmian: {ipa: uː, respell: oo}
+  - id: met.981a.12.3
+    surface: κατὰ
+    lemma: κατά
+    morph: r--------
+    tb: 27/1487503
+    sound:
+      restored: {ipa: ka.tà, respell: ka-ta}
+      erasmian: {ipa: ka.ˈta, respell: ka-TA}
+  - id: met.981a.12.4
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---na-
+    tb: 27/1487504
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981a.12.5
+    surface: πρακτικοὺς
+    lemma: πρακτικός
+    morph: a-p---ma-
+    tb: 27/1487505
+    sound:
+      restored: {ipa: prak.ti.kùːs, respell: prak-ti-koos}
+      erasmian: {ipa: prak.ti.ˈkuːs, respell: prak-ti-KOOS}
+  - id: met.981a.12.6
+    surface: εἶναι
+    lemma: εἰμί
+    morph: v--pna---
+    tb: 27/1487506
+    sound:
+      restored: {ipa: êː.nai, respell: AY-nai}
+      erasmian: {ipa: ˈei.nai, respell: AY-nai}
+  - id: met.981a.12.7
+    surface: σοφωτέρους
+    lemma: σοφός
+    morph: a-p---mac
+    tb: 27/1487507
+    sound:
+      restored: {ipa: so.pʰɔː.té.ruːs, respell: so-pʰaw-TE-roos}
+      erasmian: {ipa: so.fɔː.ˈte.ruːs, respell: so-foh-TE-roos}
+  - id: met.981a.12.8
+    surface: ὄντας
+    lemma: εἰμί
+    morph: v-pppama-
+    tb: 27/1487508
+    sound:
+      restored: {ipa: ón.tas, respell: ON-tas}
+      erasmian: {ipa: ˈon.tas, respell: ON-tas}
+  - id: met.981a.12.9
+    surface: ἀλλὰ
+    lemma: ἀλλά
+    morph: b--------
+    tb: 27/1487509
+    sound:
+      restored: {ipa: al.là, respell: al-la}
+      erasmian: {ipa: al.ˈla, respell: al-LA}
+  - id: met.981a.12.10
+    surface: κατὰ
+    lemma: κατά
+    morph: r--------
+    tb: 27/1487510
+    sound:
+      restored: {ipa: ka.tà, respell: ka-ta}
+      erasmian: {ipa: ka.ˈta, respell: ka-TA}
+  - id: met.981a.12.11
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---na-
+    tb: 27/1487511
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981a.12.12
+    surface: λόγον
+    lemma: λόγος
+    morph: n-s---ma-
+    tb: 27/1487512
+    sound:
+      restored: {ipa: ló.ɡon, respell: LO-gon}
+      erasmian: {ipa: ˈlo.ɡon, respell: LO-gon}
+  - id: met.981a.12.13
+    surface: ἔχειν
+    lemma: ἔχω
+    morph: v--pna---
+    tb: 27/1487513
+    sound:
+      restored: {ipa: é.kʰeːn, respell: E-kʰayn}
+      erasmian: {ipa: ˈe.xein, respell: E-khayn}
+  - id: met.981a.12.14
+    surface: αὐτοὺς
+    lemma: αὐτός
+    morph: a-p---ma-
+    tb: 27/1487514
+    sound:
+      restored: {ipa: au.tùːs, respell: ow-toos}
+      erasmian: {ipa: au.ˈtuːs, respell: ow-TOOS}
+  - id: met.981a.12.15
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 27/1487515
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981a.12.16
+    surface: τὰς
+    lemma: ὁ
+    morph: l-p---fa-
+    tb: 27/1487516
+    sound:
+      restored: {ipa: tàs, respell: tas}
+      erasmian: {ipa: ˈtas, respell: TAS}
+  - id: met.981a.12.17
+    surface: αἰτίας
+    lemma: αἰτία
+    morph: n-p---fa-
+    tb: 27/1487517
+    sound:
+      restored: {ipa: ai.tí.as, respell: ai-TI-as}
+      erasmian: {ipa: ai.ˈti.as, respell: ai-TI-as}
+  - id: met.981a.12.18
+    surface: γνωρίζειν
+    punct: .
+    lemma: γνωρίζω
+    morph: v--pna---
+    tb: 27/1487518
+    sound:
+      restored: {ipa: ɡnɔː.rí.zdeːn, respell: gnaw-RI-zdayn}
+      erasmian: {ipa: ɡnɔː.ˈri.dzein, respell: gnoh-RI-dzayn}
+- id: met.981b.1
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981b.1
+  stanza: 981b
+  stanza_title: Book A (I), chapter 1, Bekker 981b
+  text: ὅλως τε σημεῖον τοῦ εἰδότος καὶ μὴ εἰδότος τὸ δύνασθαι διδάσκειν ἐστίν, καὶ διὰ τοῦτο τὴν τέχνην τῆς ἐμπειρίας ἡγούμεθα μᾶλλον ἐπιστήμην εἶναι· δύνανται γάρ, οἱ δὲ οὐ δύνανται διδάσκειν.
+  tokens:
+  - id: met.981b.1.1
+    surface: ὅλως
+    lemma: ὅλος
+    morph: d--------
+    tb: 28/1487520
+    sound:
+      restored: {ipa: hó.lɔːs, respell: HO-laws}
+      erasmian: {ipa: ˈho.lɔːs, respell: HO-lohs}
+  - id: met.981b.1.2
+    surface: τε
+    lemma: τε
+    morph: b--------
+    tb: 28/1487521
+    sound:
+      restored: {ipa: te, respell: te}
+      erasmian: {ipa: te, respell: te}
+  - id: met.981b.1.3
+    surface: σημεῖον
+    lemma: σημεῖον
+    morph: n-s---nn-
+    tb: 28/1487522
+    sound:
+      restored: {ipa: sɛː.mêː.on, respell: sê-MAY-on}
+      erasmian: {ipa: sɛː.ˈmei.on, respell: say-MAY-on}
+  - id: met.981b.1.4
+    surface: τοῦ
+    lemma: ὁ
+    morph: l-s---mg-
+    tb: 28/1487523
+    sound:
+      restored: {ipa: tûː, respell: TOO}
+      erasmian: {ipa: ˈtuː, respell: TOO}
+  - id: met.981b.1.5
+    surface: εἰδότος
+    lemma: οἶδα
+    morph: v-srpamg-
+    tb: 28/1487524
+    sound:
+      restored: {ipa: eː.dó.tos, respell: ay-DO-tos}
+      erasmian: {ipa: ei.ˈdo.tos, respell: ay-DO-tos}
+  - id: met.981b.1.6
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 28/1487525
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981b.1.7
+    surface: μὴ
+    lemma: μή
+    morph: d--------
+    tb: 28/1487526
+    sound:
+      restored: {ipa: mɛ̀ː, respell: mê}
+      erasmian: {ipa: ˈmɛː, respell: MAY}
+  - id: met.981b.1.8
+    surface: εἰδότος
+    lemma: οἶδα
+    morph: v-srpamg-
+    tb: 28/1487527
+    sound:
+      restored: {ipa: eː.dó.tos, respell: ay-DO-tos}
+      erasmian: {ipa: ei.ˈdo.tos, respell: ay-DO-tos}
+  - id: met.981b.1.9
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---na-
+    tb: 28/1487528
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981b.1.10
+    surface: δύνασθαι
+    lemma: δύναμαι
+    morph: v--pne---
+    tb: 28/1487529
+    sound:
+      restored: {ipa: dý.nas.tʰai, respell: DÜ-nas-tʰai}
+      erasmian: {ipa: ˈdy.nas.θai, respell: DÜ-nas-thai}
+  - id: met.981b.1.11
+    surface: διδάσκειν
+    lemma: διδάσκω
+    morph: v--pna---
+    tb: 28/1487530
+    sound:
+      restored: {ipa: di.dás.keːn, respell: di-DAS-kayn}
+      erasmian: {ipa: di.ˈdas.kein, respell: di-DAS-kayn}
+  - id: met.981b.1.12
+    surface: ἐστίν
+    punct: ','
+    lemma: εἰμί
+    morph: v3spia---
+    tb: 28/1487531
+    sound:
+      restored: {ipa: es.tín, respell: es-TIN}
+      erasmian: {ipa: es.ˈtin, respell: es-TIN}
+  - id: met.981b.1.13
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 28/1487533
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981b.1.14
+    surface: διὰ
+    lemma: διά
+    morph: r--------
+    tb: 28/1487534
+    sound:
+      restored: {ipa: di.à, respell: di-a}
+      erasmian: {ipa: di.ˈa, respell: di-A}
+  - id: met.981b.1.15
+    surface: τοῦτο
+    lemma: οὗτος
+    morph: a-s---na-
+    tb: 28/1487535
+    sound:
+      restored: {ipa: tûː.to, respell: TOO-to}
+      erasmian: {ipa: ˈtuː.to, respell: TOO-to}
+  - id: met.981b.1.16
+    surface: τὴν
+    lemma: ὁ
+    morph: l-s---fa-
+    tb: 28/1487536
+    sound:
+      restored: {ipa: tɛ̀ːn, respell: tên}
+      erasmian: {ipa: ˈtɛːn, respell: TAYN}
+  - id: met.981b.1.17
+    surface: τέχνην
+    lemma: τέχνη
+    morph: n-s---fa-
+    tb: 28/1487537
+    sound:
+      restored: {ipa: tékʰ.nɛːn, respell: TEKʰ-nên}
+      erasmian: {ipa: ˈtex.nɛːn, respell: TEKH-nayn}
+  - id: met.981b.1.18
+    surface: τῆς
+    lemma: ὁ
+    morph: l-s---fg-
+    tb: 28/1487538
+    sound:
+      restored: {ipa: tɛ̂ːs, respell: TÊS}
+      erasmian: {ipa: ˈtɛːs, respell: TAYS}
+  - id: met.981b.1.19
+    surface: ἐμπειρίας
+    lemma: ἐμπειρία
+    morph: n-s---fg-
+    tb: 28/1487539
+    sound:
+      restored: {ipa: em.peː.rí.as, respell: em-pay-RI-as}
+      erasmian: {ipa: em.pei.ˈri.as, respell: em-pay-RI-as}
+  - id: met.981b.1.20
+    surface: ἡγούμεθα
+    lemma: ἡγέομαι
+    morph: v1ppie---
+    tb: 28/1487540
+    sound:
+      restored: {ipa: hɛː.ɡúː.me.tʰa, respell: hê-GOO-me-tʰa}
+      erasmian: {ipa: hɛː.ˈɡuː.me.θa, respell: hay-GOO-me-tha}
+  - id: met.981b.1.21
+    surface: μᾶλλον
+    lemma: μάλα
+    morph: d-------c
+    tb: 28/1487541
+    sound:
+      restored: {ipa: mâːl.lon, respell: MAAL-lon}
+      erasmian: {ipa: ˈmaːl.lon, respell: MAAL-lon}
+  - id: met.981b.1.22
+    surface: ἐπιστήμην
+    lemma: ἐπιστήμη
+    morph: n-s---fa-
+    tb: 28/1487542
+    sound:
+      restored: {ipa: e.pis.tɛ́ː.mɛːn, respell: e-pis-TÊ-mên}
+      erasmian: {ipa: e.pis.ˈtɛː.mɛːn, respell: e-pis-TAY-mayn}
+  - id: met.981b.1.23
+    surface: εἶναι
+    punct: ·
+    lemma: εἰμί
+    morph: v--pna---
+    tb: 28/1487543
+    sound:
+      restored: {ipa: êː.nai, respell: AY-nai}
+      erasmian: {ipa: ˈei.nai, respell: AY-nai}
+  - id: met.981b.1.24
+    surface: δύνανται
+    lemma: δύναμαι
+    morph: v3ppie---
+    tb: 29/1487545
+    sound:
+      restored: {ipa: dý.nan.tai, respell: DÜ-nan-tai}
+      erasmian: {ipa: ˈdy.nan.tai, respell: DÜ-nan-tai}
+  - id: met.981b.1.25
+    surface: γάρ
+    punct: ','
+    lemma: γάρ
+    morph: d--------
+    tb: 29/1487546
+    sound:
+      restored: {ipa: ɡár, respell: GAR}
+      erasmian: {ipa: ˈɡar, respell: GAR}
+  - id: met.981b.1.26
+    surface: οἱ
+    lemma: ὁ
+    morph: l-p---mn-
+    tb: 29/1487548
+    sound:
+      restored: {ipa: hoi, respell: hoy}
+      erasmian: {ipa: hoi, respell: hoy}
+  - id: met.981b.1.27
+    surface: δὲ
+    lemma: δέ
+    morph: b--------
+    tb: 29/1487549
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: met.981b.1.28
+    surface: οὐ
+    lemma: οὐ
+    morph: d--------
+    tb: 29/1487550
+    sound:
+      restored: {ipa: uː, respell: oo}
+      erasmian: {ipa: uː, respell: oo}
+  - id: met.981b.1.29
+    surface: δύνανται
+    lemma: δύναμαι
+    morph: v3ppie---
+    tb: 29/1487551
+    sound:
+      restored: {ipa: dý.nan.tai, respell: DÜ-nan-tai}
+      erasmian: {ipa: ˈdy.nan.tai, respell: DÜ-nan-tai}
+  - id: met.981b.1.30
+    surface: διδάσκειν
+    punct: .
+    lemma: διδάσκω
+    morph: v--pna---
+    tb: 29/1487552
+    sound:
+      restored: {ipa: di.dás.keːn, respell: di-DAS-kayn}
+      erasmian: {ipa: di.ˈdas.kein, respell: di-DAS-kayn}
+- id: met.981b.2
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981b.2
+  stanza: 981b
+  stanza_title: Book A (I), chapter 1, Bekker 981b
+  text: ἔτι δὲ τῶν αἰσθήσεων οὐδεμίαν ἡγούμεθα εἶναι σοφίαν· καίτοι κυριώταταί γʼ εἰσὶν αὗται τῶν καθʼ ἕκαστα γνώσεις· ἀλλʼ οὐ λέγουσι τὸ διὰ τί περὶ οὐδενός, οἷον διὰ τί θερμὸν τὸ πῦρ, ἀλλὰ μόνον ὅτι θερμόν.
+  tokens:
+  - id: met.981b.2.1
+    surface: ἔτι
+    lemma: ἔτι
+    morph: d--------
+    tb: 30/1487554
+    sound:
+      restored: {ipa: é.ti, respell: E-ti}
+      erasmian: {ipa: ˈe.ti, respell: E-ti}
+  - id: met.981b.2.2
+    surface: δὲ
+    lemma: δέ
+    morph: b--------
+    tb: 30/1487555
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: met.981b.2.3
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---fg-
+    tb: 30/1487556
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981b.2.4
+    surface: αἰσθήσεων
+    lemma: αἴσθησις
+    morph: n-p---fg-
+    tb: 30/1487557
+    sound:
+      restored: {ipa: ais.tʰɛ́ː.se.ɔːn, respell: ais-TʰÊ-se-awn}
+      erasmian: {ipa: ais.ˈθɛː.se.ɔːn, respell: ais-THAY-se-ohn}
+  - id: met.981b.2.5
+    surface: οὐδεμίαν
+    lemma: οὐδείς
+    morph: a-s---fa-
+    tb: 30/1487558
+    sound:
+      restored: {ipa: uː.de.mí.an, respell: oo-de-MI-an}
+      erasmian: {ipa: uː.de.ˈmi.an, respell: oo-de-MI-an}
+  - id: met.981b.2.6
+    surface: ἡγούμεθα
+    lemma: ἡγέομαι
+    morph: v1ppie---
+    tb: 30/1487559
+    sound:
+      restored: {ipa: hɛː.ɡúː.me.tʰa, respell: hê-GOO-me-tʰa}
+      erasmian: {ipa: hɛː.ˈɡuː.me.θa, respell: hay-GOO-me-tha}
+  - id: met.981b.2.7
+    surface: εἶναι
+    lemma: εἰμί
+    morph: v--pna---
+    tb: 30/1487560
+    sound:
+      restored: {ipa: êː.nai, respell: AY-nai}
+      erasmian: {ipa: ˈei.nai, respell: AY-nai}
+  - id: met.981b.2.8
+    surface: σοφίαν
+    punct: ·
+    lemma: σοφία
+    morph: n-s---fa-
+    tb: 30/1487561
+    sound:
+      restored: {ipa: so.pʰí.an, respell: so-PʰI-an}
+      erasmian: {ipa: so.ˈfi.an, respell: so-FI-an}
+  - id: met.981b.2.9
+    surface: καίτοι
+    lemma: καίτοι
+    morph: d--------
+    tb: 31/1487563
+    sound:
+      restored: {ipa: kaí.toi, respell: KAI-toy}
+      erasmian: {ipa: ˈkai.toi, respell: KAI-toy}
+  - id: met.981b.2.10
+    surface: κυριώταταί
+    lemma: κύριος
+    morph: a-p---fns
+    tb: 31/1487564
+    sound:
+      restored: {ipa: ky.ri.ɔ́ː.ta.taí, respell: kü-ri-AW-ta-TAI}
+      erasmian: {ipa: ky.ri.ˈɔː.ta.ˈtai, respell: kü-ri-OH-ta-TAI}
+  - id: met.981b.2.11
+    surface: γʼ
+    lemma: γε
+    morph: d--------
+    tb: 31/1487565
+    sound:
+      restored: {ipa: ɡ, respell: g’}
+      erasmian: {ipa: ɡ, respell: g’}
+  - id: met.981b.2.12
+    surface: εἰσὶν
+    lemma: εἰμί
+    morph: v3ppia---
+    tb: 31/1487566
+    sound:
+      restored: {ipa: eː.sìn, respell: ay-sin}
+      erasmian: {ipa: ei.ˈsin, respell: ay-SIN}
+  - id: met.981b.2.13
+    surface: αὗται
+    lemma: οὗτος
+    morph: a-p---fn-
+    tb: 31/1487567
+    sound:
+      restored: {ipa: hâu.tai, respell: HOW-tai}
+      erasmian: {ipa: ˈhau.tai, respell: HOW-tai}
+  - id: met.981b.2.14
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---fg-
+    tb: 31/1487568
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981b.2.15
+    surface: καθʼ
+    lemma: κατά
+    morph: r--------
+    tb: 31/1487569
+    sound:
+      restored: {ipa: katʰ, respell: katʰ’}
+      erasmian: {ipa: kaθ, respell: kath’}
+  - id: met.981b.2.16
+    surface: ἕκαστα
+    lemma: ἕκαστος
+    morph: a-p---na-
+    tb: 31/1487570
+    sound:
+      restored: {ipa: hé.kas.ta, respell: HE-kas-ta}
+      erasmian: {ipa: ˈhe.kas.ta, respell: HE-kas-ta}
+  - id: met.981b.2.17
+    surface: γνώσεις
+    punct: ·
+    lemma: γνῶσις
+    morph: n-p---fa-
+    tb: 31/1487571
+    sound:
+      restored: {ipa: ɡnɔ́ː.seːs, respell: GNAW-says}
+      erasmian: {ipa: ˈɡnɔː.seis, respell: GNOH-says}
+  - id: met.981b.2.18
+    surface: ἀλλʼ
+    lemma: ἀλλά
+    morph: b--------
+    tb: 32/1487573
+    sound:
+      restored: {ipa: all, respell: all’}
+      erasmian: {ipa: all, respell: all’}
+  - id: met.981b.2.19
+    surface: οὐ
+    lemma: οὐ
+    morph: d--------
+    tb: 32/1487574
+    sound:
+      restored: {ipa: uː, respell: oo}
+      erasmian: {ipa: uː, respell: oo}
+  - id: met.981b.2.20
+    surface: λέγουσι
+    lemma: λέγω
+    morph: v3ppia---
+    tb: 32/1487575
+    sound:
+      restored: {ipa: lé.ɡuː.si, respell: LE-goo-si}
+      erasmian: {ipa: ˈle.ɡuː.si, respell: LE-goo-si}
+  - id: met.981b.2.21
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---na-
+    tb: 32/1487576
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981b.2.22
+    surface: διὰ
+    lemma: διά
+    morph: r--------
+    tb: 32/1487577
+    sound:
+      restored: {ipa: di.à, respell: di-a}
+      erasmian: {ipa: di.ˈa, respell: di-A}
+  - id: met.981b.2.23
+    surface: τί
+    lemma: τίς
+    morph: a-s---na-
+    tb: 32/1487578
+    sound:
+      restored: {ipa: tí, respell: TI}
+      erasmian: {ipa: ˈti, respell: TI}
+  - id: met.981b.2.24
+    surface: περὶ
+    lemma: περί
+    morph: r--------
+    tb: 32/1487579
+    sound:
+      restored: {ipa: pe.rì, respell: pe-ri}
+      erasmian: {ipa: pe.ˈri, respell: pe-RI}
+  - id: met.981b.2.25
+    surface: οὐδενός
+    punct: ','
+    lemma: οὐδείς
+    morph: a-s---ng-
+    tb: 32/1487580
+    sound:
+      restored: {ipa: uː.de.nós, respell: oo-de-NOS}
+      erasmian: {ipa: uː.de.ˈnos, respell: oo-de-NOS}
+  - id: met.981b.2.26
+    surface: οἷον
+    lemma: οἷος
+    morph: p-s---nn-
+    tb: 32/1487582
+    sound:
+      restored: {ipa: hôi.on, respell: HOY-on}
+      erasmian: {ipa: ˈhoi.on, respell: HOY-on}
+  - id: met.981b.2.27
+    surface: διὰ
+    lemma: διά
+    morph: r--------
+    tb: 32/1487583
+    sound:
+      restored: {ipa: di.à, respell: di-a}
+      erasmian: {ipa: di.ˈa, respell: di-A}
+  - id: met.981b.2.28
+    surface: τί
+    lemma: τίς
+    morph: a-s---na-
+    tb: 32/1487584
+    sound:
+      restored: {ipa: tí, respell: TI}
+      erasmian: {ipa: ˈti, respell: TI}
+  - id: met.981b.2.29
+    surface: θερμὸν
+    lemma: θερμός
+    morph: a-s---nn-
+    tb: 32/1487585
+    sound:
+      restored: {ipa: tʰer.mòn, respell: tʰer-mon}
+      erasmian: {ipa: θer.ˈmon, respell: ther-MON}
+  - id: met.981b.2.30
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---nn-
+    tb: 32/1487586
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981b.2.31
+    surface: πῦρ
+    punct: ','
+    lemma: πῦρ
+    morph: n-s---nn-
+    tb: 32/1487587
+    sound:
+      restored: {ipa: pŷːr, respell: PÜÜR}
+      erasmian: {ipa: ˈpyːr, respell: PÜÜR}
+  - id: met.981b.2.32
+    surface: ἀλλὰ
+    lemma: ἀλλά
+    morph: b--------
+    tb: 32/1487589
+    sound:
+      restored: {ipa: al.là, respell: al-la}
+      erasmian: {ipa: al.ˈla, respell: al-LA}
+  - id: met.981b.2.33
+    surface: μόνον
+    lemma: μόνον
+    morph: d--------
+    tb: 32/1487590
+    sound:
+      restored: {ipa: mó.non, respell: MO-non}
+      erasmian: {ipa: ˈmo.non, respell: MO-non}
+  - id: met.981b.2.34
+    surface: ὅτι
+    lemma: ὅτι
+    morph: c--------
+    tb: 32/1487591
+    sound:
+      restored: {ipa: hó.ti, respell: HO-ti}
+      erasmian: {ipa: ˈho.ti, respell: HO-ti}
+  - id: met.981b.2.35
+    surface: θερμόν
+    punct: .
+    lemma: θερμός
+    morph: a-s---nn-
+    tb: 32/1487592
+    sound:
+      restored: {ipa: tʰer.món, respell: tʰer-MON}
+      erasmian: {ipa: θer.ˈmon, respell: ther-MON}
+- id: met.981b.3
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981b.3
+  stanza: 981b
+  stanza_title: Book A (I), chapter 1, Bekker 981b
+  text: τὸ μὲν οὖν πρῶτον εἰκὸς τὸν ὁποιανοῦν εὑρόντα τέχνην παρὰ τὰς κοινὰς αἰσθήσεις θαυμάζεσθαι ὑπὸ τῶν ἀνθρώπων μὴ μόνον διὰ τὸ χρήσιμον εἶναί τι τῶν εὑρεθέντων ἀλλʼ ὡς σοφὸν καὶ διαφέροντα τῶν ἄλλων·
+  tokens:
+  - id: met.981b.3.1
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---na-
+    tb: 33/1487594
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981b.3.2
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 33/1487595
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.981b.3.3
+    surface: οὖν
+    lemma: οὖν
+    morph: d--------
+    tb: 33/1487596
+    sound:
+      restored: {ipa: ûːn, respell: OON}
+      erasmian: {ipa: ˈuːn, respell: OON}
+  - id: met.981b.3.4
+    surface: πρῶτον
+    lemma: πρῶτος
+    morph: a-s---na-
+    tb: 33/1487597
+    sound:
+      restored: {ipa: prɔ̂ː.ton, respell: PRAW-ton}
+      erasmian: {ipa: ˈprɔː.ton, respell: PROH-ton}
+  - id: met.981b.3.5
+    surface: εἰκὸς
+    lemma: ἔοικα
+    morph: v-srpann-
+    tb: 33/1487598
+    sound:
+      restored: {ipa: eː.kòs, respell: ay-kos}
+      erasmian: {ipa: ei.ˈkos, respell: ay-KOS}
+  - id: met.981b.3.6
+    surface: τὸν
+    lemma: ὁ
+    morph: l-s---ma-
+    tb: 33/1487599
+    sound:
+      restored: {ipa: tòn, respell: ton}
+      erasmian: {ipa: ˈton, respell: TON}
+  - id: met.981b.3.7
+    surface: ὁποιανοῦν
+    lemma: ὁποῖος
+    morph: p-s---fa-
+    tb: 33/1487600
+    sound:
+      restored: {ipa: ho.poi.a.nûːn, respell: ho-poy-a-NOON}
+      erasmian: {ipa: ho.poi.a.ˈnuːn, respell: ho-poy-a-NOON}
+  - id: met.981b.3.8
+    surface: εὑρόντα
+    lemma: εὑρίσκω
+    morph: v-sapama-
+    tb: 33/1487601
+    sound:
+      restored: {ipa: heu.rón.ta, respell: heu-RON-ta}
+      erasmian: {ipa: heu.ˈron.ta, respell: hyoo-RON-ta}
+  - id: met.981b.3.9
+    surface: τέχνην
+    lemma: τέχνη
+    morph: n-s---fa-
+    tb: 33/1487602
+    sound:
+      restored: {ipa: tékʰ.nɛːn, respell: TEKʰ-nên}
+      erasmian: {ipa: ˈtex.nɛːn, respell: TEKH-nayn}
+  - id: met.981b.3.10
+    surface: παρὰ
+    lemma: παρά
+    morph: r--------
+    tb: 33/1487603
+    sound:
+      restored: {ipa: pa.rà, respell: pa-ra}
+      erasmian: {ipa: pa.ˈra, respell: pa-RA}
+  - id: met.981b.3.11
+    surface: τὰς
+    lemma: ὁ
+    morph: l-p---fa-
+    tb: 33/1487604
+    sound:
+      restored: {ipa: tàs, respell: tas}
+      erasmian: {ipa: ˈtas, respell: TAS}
+  - id: met.981b.3.12
+    surface: κοινὰς
+    lemma: κοινός
+    morph: a-p---fa-
+    tb: 33/1487605
+    sound:
+      restored: {ipa: koi.nàs, respell: koy-nas}
+      erasmian: {ipa: koi.ˈnas, respell: koy-NAS}
+  - id: met.981b.3.13
+    surface: αἰσθήσεις
+    lemma: αἴσθησις
+    morph: n-p---fa-
+    tb: 33/1487606
+    sound:
+      restored: {ipa: ais.tʰɛ́ː.seːs, respell: ais-TʰÊ-says}
+      erasmian: {ipa: ais.ˈθɛː.seis, respell: ais-THAY-says}
+  - id: met.981b.3.14
+    surface: θαυμάζεσθαι
+    lemma: θαυμάζω
+    morph: v--pne---
+    tb: 33/1487607
+    sound:
+      restored: {ipa: tʰau.má.zdes.tʰai, respell: tʰow-MA-zdes-tʰai}
+      erasmian: {ipa: θau.ˈma.dzes.θai, respell: thow-MA-dzes-thai}
+  - id: met.981b.3.15
+    surface: ὑπὸ
+    lemma: ὑπό
+    morph: r--------
+    tb: 33/1487608
+    sound:
+      restored: {ipa: hy.pò, respell: hü-po}
+      erasmian: {ipa: hy.ˈpo, respell: hü-PO}
+  - id: met.981b.3.16
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 33/1487609
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981b.3.17
+    surface: ἀνθρώπων
+    lemma: ἄνθρωπος
+    morph: n-p---mg-
+    tb: 33/1487610
+    sound:
+      restored: {ipa: an.tʰrɔ́ː.pɔːn, respell: an-TʰRAW-pawn}
+      erasmian: {ipa: an.ˈθrɔː.pɔːn, respell: an-THROH-pohn}
+  - id: met.981b.3.18
+    surface: μὴ
+    lemma: μή
+    morph: d--------
+    tb: 33/1487611
+    sound:
+      restored: {ipa: mɛ̀ː, respell: mê}
+      erasmian: {ipa: ˈmɛː, respell: MAY}
+  - id: met.981b.3.19
+    surface: μόνον
+    lemma: μόνον
+    morph: d--------
+    tb: 33/1487612
+    sound:
+      restored: {ipa: mó.non, respell: MO-non}
+      erasmian: {ipa: ˈmo.non, respell: MO-non}
+  - id: met.981b.3.20
+    surface: διὰ
+    lemma: διά
+    morph: r--------
+    tb: 33/1487613
+    sound:
+      restored: {ipa: di.à, respell: di-a}
+      erasmian: {ipa: di.ˈa, respell: di-A}
+  - id: met.981b.3.21
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---na-
+    tb: 33/1487614
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981b.3.22
+    surface: χρήσιμον
+    lemma: χρήσιμος
+    morph: a-s---na-
+    tb: 33/1487615
+    sound:
+      restored: {ipa: kʰrɛ́ː.si.mon, respell: KʰRÊ-si-mon}
+      erasmian: {ipa: ˈxrɛː.si.mon, respell: KHRAY-si-mon}
+  - id: met.981b.3.23
+    surface: εἶναί
+    lemma: εἰμί
+    morph: v--pna---
+    tb: 33/1487616
+    sound:
+      restored: {ipa: êː.naí, respell: AY-NAI}
+      erasmian: {ipa: ˈei.ˈnai, respell: AY-NAI}
+  - id: met.981b.3.24
+    surface: τι
+    lemma: τις
+    morph: a-s---na-
+    tb: 33/1487617
+    sound:
+      restored: {ipa: ti, respell: ti}
+      erasmian: {ipa: ti, respell: ti}
+  - id: met.981b.3.25
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---ng-
+    tb: 33/1487618
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981b.3.26
+    surface: εὑρεθέντων
+    lemma: εὑρίσκω
+    morph: v-pappng-
+    tb: 33/1487619
+    sound:
+      restored: {ipa: heu.re.tʰén.tɔːn, respell: heu-re-TʰEN-tawn}
+      erasmian: {ipa: heu.re.ˈθen.tɔːn, respell: hyoo-re-THEN-tohn}
+  - id: met.981b.3.27
+    surface: ἀλλʼ
+    lemma: ἀλλά
+    morph: b--------
+    tb: 33/1487620
+    sound:
+      restored: {ipa: all, respell: all’}
+      erasmian: {ipa: all, respell: all’}
+  - id: met.981b.3.28
+    surface: ὡς
+    lemma: ὡς
+    morph: c--------
+    tb: 33/1487621
+    sound:
+      restored: {ipa: hɔːs, respell: haws}
+      erasmian: {ipa: hɔːs, respell: hohs}
+  - id: met.981b.3.29
+    surface: σοφὸν
+    lemma: σοφός
+    morph: a-s---ma-
+    tb: 33/1487622
+    sound:
+      restored: {ipa: so.pʰòn, respell: so-pʰon}
+      erasmian: {ipa: so.ˈfon, respell: so-FON}
+  - id: met.981b.3.30
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 33/1487623
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981b.3.31
+    surface: διαφέροντα
+    lemma: διαφέρω
+    morph: v-pppana-
+    tb: 33/1487624
+    sound:
+      restored: {ipa: di.a.pʰé.ron.ta, respell: di-a-PʰE-ron-ta}
+      erasmian: {ipa: di.a.ˈfe.ron.ta, respell: di-a-FE-ron-ta}
+  - id: met.981b.3.32
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---ng-
+    tb: 33/1487625
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981b.3.33
+    surface: ἄλλων
+    punct: ·
+    lemma: ἄλλος
+    morph: a-p---ng-
+    tb: 33/1487626
+    sound:
+      restored: {ipa: ál.lɔːn, respell: AL-lawn}
+      erasmian: {ipa: ˈal.lɔːn, respell: AL-lohn}
+- id: met.981b.4
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981b.4
+  stanza: 981b
+  stanza_title: Book A (I), chapter 1, Bekker 981b
+  text: πλειόνων δʼ εὑρισκομένων τεχνῶν καὶ τῶν μὲν πρὸς τἀναγκαῖα τῶν δὲ πρὸς διαγωγὴν οὐσῶν, ἀεὶ σοφωτέρους τοὺς τοιούτους ἐκείνων ὑπολαμβάνεσθαι διὰ τὸ μὴ πρὸς χρῆσιν εἶναι τὰς ἐπιστήμας αὐτῶν.
+  tokens:
+  - id: met.981b.4.1
+    surface: πλειόνων
+    lemma: πολύς
+    morph: a-p---mgc
+    tb: 34/1487628
+    sound:
+      restored: {ipa: pleː.ó.nɔːn, respell: play-O-nawn}
+      erasmian: {ipa: plei.ˈo.nɔːn, respell: play-O-nohn}
+  - id: met.981b.4.2
+    surface: δʼ
+    lemma: δέ
+    morph: b--------
+    tb: 34/1487629
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: met.981b.4.3
+    surface: εὑρισκομένων
+    lemma: εὑρίσκω
+    morph: v-pppemg-
+    tb: 34/1487630
+    sound:
+      restored: {ipa: heu.ris.ko.mé.nɔːn, respell: heu-ris-ko-ME-nawn}
+      erasmian: {ipa: heu.ris.ko.ˈme.nɔːn, respell: hyoo-ris-ko-ME-nohn}
+  - id: met.981b.4.4
+    surface: τεχνῶν
+    lemma: τέχνη
+    morph: n-p---fg-
+    tb: 34/1487631
+    sound:
+      restored: {ipa: tekʰ.nɔ̂ːn, respell: tekʰ-NAWN}
+      erasmian: {ipa: tex.ˈnɔːn, respell: tekh-NOHN}
+  - id: met.981b.4.5
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 34/1487632
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981b.4.6
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---fg-
+    tb: 34/1487633
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981b.4.7
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 34/1487634
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.981b.4.8
+    surface: πρὸς
+    lemma: πρός
+    morph: r--------
+    tb: 34/1487635
+    sound:
+      restored: {ipa: pròs, respell: pros}
+      erasmian: {ipa: ˈpros, respell: PROS}
+  - id: met.981b.4.9
+    surface: τἀναγκαῖα
+    lemma: ὁ
+    morph: l-p---na-
+    tb: 34/1487636+1487637
+    enclitic: {form: -ἀναγκαῖα, lemma: ἀναγκαῖος, morph: a-p---na-}
+    sound:
+      restored: {ipa: ta.naŋ.kâi.a, respell: ta-nang-KAI-a}
+      erasmian: {ipa: ta.naŋ.ˈkai.a, respell: ta-nang-KAI-a}
+  - id: met.981b.4.10
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---ng-
+    tb: 34/1487638
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981b.4.11
+    surface: δὲ
+    lemma: δέ
+    morph: b--------
+    tb: 34/1487639
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: met.981b.4.12
+    surface: πρὸς
+    lemma: πρός
+    morph: r--------
+    tb: 34/1487640
+    sound:
+      restored: {ipa: pròs, respell: pros}
+      erasmian: {ipa: ˈpros, respell: PROS}
+  - id: met.981b.4.13
+    surface: διαγωγὴν
+    lemma: διαγωγή
+    morph: n-s---fa-
+    tb: 34/1487641
+    sound:
+      restored: {ipa: di.a.ɡɔː.ɡɛ̀ːn, respell: di-a-gaw-gên}
+      erasmian: {ipa: di.a.ɡɔː.ˈɡɛːn, respell: di-a-goh-GAYN}
+  - id: met.981b.4.14
+    surface: οὐσῶν
+    punct: ','
+    lemma: εἰμί
+    morph: v-pppafg-
+    tb: 34/1487642
+    sound:
+      restored: {ipa: uː.sɔ̂ːn, respell: oo-SAWN}
+      erasmian: {ipa: uː.ˈsɔːn, respell: oo-SOHN}
+  - id: met.981b.4.15
+    surface: ἀεὶ
+    lemma: ἀεί
+    morph: d--------
+    tb: 34/1487644
+    sound:
+      restored: {ipa: a.èː, respell: a-ay}
+      erasmian: {ipa: a.ˈei, respell: a-AY}
+  - id: met.981b.4.16
+    surface: σοφωτέρους
+    lemma: σοφός
+    morph: a-p---mac
+    tb: 34/1487645
+    sound:
+      restored: {ipa: so.pʰɔː.té.ruːs, respell: so-pʰaw-TE-roos}
+      erasmian: {ipa: so.fɔː.ˈte.ruːs, respell: so-foh-TE-roos}
+  - id: met.981b.4.17
+    surface: τοὺς
+    lemma: ὁ
+    morph: l-p---ma-
+    tb: 34/1487646
+    sound:
+      restored: {ipa: tùːs, respell: toos}
+      erasmian: {ipa: ˈtuːs, respell: TOOS}
+  - id: met.981b.4.18
+    surface: τοιούτους
+    lemma: τοιοῦτος
+    morph: a-p---ma-
+    tb: 34/1487647
+    sound:
+      restored: {ipa: toi.úː.tuːs, respell: toy-OO-toos}
+      erasmian: {ipa: toi.ˈuː.tuːs, respell: toy-OO-toos}
+  - id: met.981b.4.19
+    surface: ἐκείνων
+    lemma: ἐκεῖνος
+    morph: a-p---mg-
+    tb: 34/1487648
+    sound:
+      restored: {ipa: e.kéː.nɔːn, respell: e-KAY-nawn}
+      erasmian: {ipa: e.ˈkei.nɔːn, respell: e-KAY-nohn}
+  - id: met.981b.4.20
+    surface: ὑπολαμβάνεσθαι
+    lemma: ὑπολαμβάνω
+    morph: v--pne---
+    tb: 34/1487649
+    sound:
+      restored: {ipa: hy.po.lam.bá.nes.tʰai, respell: hü-po-lam-BA-nes-tʰai}
+      erasmian: {ipa: hy.po.lam.ˈba.nes.θai, respell: hü-po-lam-BA-nes-thai}
+  - id: met.981b.4.21
+    surface: διὰ
+    lemma: διά
+    morph: r--------
+    tb: 34/1487650
+    sound:
+      restored: {ipa: di.à, respell: di-a}
+      erasmian: {ipa: di.ˈa, respell: di-A}
+  - id: met.981b.4.22
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---na-
+    tb: 34/1487651
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981b.4.23
+    surface: μὴ
+    lemma: μή
+    morph: d--------
+    tb: 34/1487652
+    sound:
+      restored: {ipa: mɛ̀ː, respell: mê}
+      erasmian: {ipa: ˈmɛː, respell: MAY}
+  - id: met.981b.4.24
+    surface: πρὸς
+    lemma: πρός
+    morph: r--------
+    tb: 34/1487653
+    sound:
+      restored: {ipa: pròs, respell: pros}
+      erasmian: {ipa: ˈpros, respell: PROS}
+  - id: met.981b.4.25
+    surface: χρῆσιν
+    lemma: χρῆσις
+    morph: n-s---fa-
+    tb: 34/1487654
+    sound:
+      restored: {ipa: kʰrɛ̂ː.sin, respell: KʰRÊ-sin}
+      erasmian: {ipa: ˈxrɛː.sin, respell: KHRAY-sin}
+  - id: met.981b.4.26
+    surface: εἶναι
+    lemma: εἰμί
+    morph: v--pna---
+    tb: 34/1487655
+    sound:
+      restored: {ipa: êː.nai, respell: AY-nai}
+      erasmian: {ipa: ˈei.nai, respell: AY-nai}
+  - id: met.981b.4.27
+    surface: τὰς
+    lemma: ὁ
+    morph: l-p---fa-
+    tb: 34/1487656
+    sound:
+      restored: {ipa: tàs, respell: tas}
+      erasmian: {ipa: ˈtas, respell: TAS}
+  - id: met.981b.4.28
+    surface: ἐπιστήμας
+    lemma: ἐπιστήμη
+    morph: n-p---fa-
+    tb: 34/1487657
+    sound:
+      restored: {ipa: e.pis.tɛ́ː.mas, respell: e-pis-TÊ-mas}
+      erasmian: {ipa: e.pis.ˈtɛː.mas, respell: e-pis-TAY-mas}
+  - id: met.981b.4.29
+    surface: αὐτῶν
+    punct: .
+    lemma: αὐτός
+    morph: a-p---mg-
+    tb: 34/1487658
+    sound:
+      restored: {ipa: au.tɔ̂ːn, respell: ow-TAWN}
+      erasmian: {ipa: au.ˈtɔːn, respell: ow-TOHN}
+- id: met.981b.5
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981b.5
+  stanza: 981b
+  stanza_title: Book A (I), chapter 1, Bekker 981b
+  text: ὅθεν ἤδη πάντων τῶν τοιούτων κατεσκευασμένων αἱ μὴ πρὸς ἡδονὴν μηδὲ πρὸς τἀναγκαῖα τῶν ἐπιστημῶν εὑρέθησαν, καὶ πρῶτον ἐν τούτοις τοῖς τόποις οὗ πρῶτον ἐσχόλασαν· διὸ περὶ Αἴγυπτον αἱ μαθηματικαὶ
+    πρῶτον τέχναι συνέστησαν, ἐκεῖ γὰρ ἀφείθη σχολάζειν τὸ τῶν ἱερέων ἔθνος.
+  tokens:
+  - id: met.981b.5.1
+    surface: ὅθεν
+    lemma: ὅθεν
+    morph: d--------
+    tb: 35/1487660
+    sound:
+      restored: {ipa: hó.tʰen, respell: HO-tʰen}
+      erasmian: {ipa: ˈho.θen, respell: HO-then}
+  - id: met.981b.5.2
+    surface: ἤδη
+    lemma: ἤδη
+    morph: d--------
+    tb: 35/1487661
+    sound:
+      restored: {ipa: ɛ́ː.dɛː, respell: Ê-dê}
+      erasmian: {ipa: ˈɛː.dɛː, respell: AY-day}
+  - id: met.981b.5.3
+    surface: πάντων
+    lemma: πᾶς
+    morph: a-p---ng-
+    tb: 35/1487662
+    sound:
+      restored: {ipa: pán.tɔːn, respell: PAN-tawn}
+      erasmian: {ipa: ˈpan.tɔːn, respell: PAN-tohn}
+  - id: met.981b.5.4
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---ng-
+    tb: 35/1487663
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981b.5.5
+    surface: τοιούτων
+    lemma: τοιοῦτος
+    morph: a-p---ng-
+    tb: 35/1487664
+    sound:
+      restored: {ipa: toi.úː.tɔːn, respell: toy-OO-tawn}
+      erasmian: {ipa: toi.ˈuː.tɔːn, respell: toy-OO-tohn}
+  - id: met.981b.5.6
+    surface: κατεσκευασμένων
+    lemma: κατασκευάζω
+    morph: v-prpeng-
+    tb: 35/1487665
+    sound:
+      restored: {ipa: ka.tes.keu.az.mé.nɔːn, respell: ka-tes-keu-az-ME-nawn}
+      erasmian: {ipa: ka.tes.keu.as.ˈme.nɔːn, respell: ka-tes-kyoo-as-ME-nohn}
+  - id: met.981b.5.7
+    surface: αἱ
+    lemma: ὁ
+    morph: l-p---fn-
+    tb: 35/1487666
+    sound:
+      restored: {ipa: hai, respell: hai}
+      erasmian: {ipa: hai, respell: hai}
+  - id: met.981b.5.8
+    surface: μὴ
+    lemma: μή
+    morph: d--------
+    tb: 35/1487667
+    sound:
+      restored: {ipa: mɛ̀ː, respell: mê}
+      erasmian: {ipa: ˈmɛː, respell: MAY}
+  - id: met.981b.5.9
+    surface: πρὸς
+    lemma: πρός
+    morph: r--------
+    tb: 35/1487668
+    sound:
+      restored: {ipa: pròs, respell: pros}
+      erasmian: {ipa: ˈpros, respell: PROS}
+  - id: met.981b.5.10
+    surface: ἡδονὴν
+    lemma: ἡδονή
+    morph: n-s---fa-
+    tb: 35/1487669
+    sound:
+      restored: {ipa: hɛː.do.nɛ̀ːn, respell: hê-do-nên}
+      erasmian: {ipa: hɛː.do.ˈnɛːn, respell: hay-do-NAYN}
+  - id: met.981b.5.11
+    surface: μηδὲ
+    lemma: μηδέ
+    morph: b--------
+    tb: 35/1487670
+    sound:
+      restored: {ipa: mɛː.dè, respell: mê-de}
+      erasmian: {ipa: mɛː.ˈde, respell: may-DE}
+  - id: met.981b.5.12
+    surface: πρὸς
+    lemma: πρός
+    morph: r--------
+    tb: 35/1487671
+    sound:
+      restored: {ipa: pròs, respell: pros}
+      erasmian: {ipa: ˈpros, respell: PROS}
+  - id: met.981b.5.13
+    surface: τἀναγκαῖα
+    lemma: ὁ
+    morph: l-p---na-
+    tb: 35/1487672+1487673
+    enclitic: {form: -ἀναγκαῖα, lemma: ἀναγκαῖος, morph: a-p---na-}
+    sound:
+      restored: {ipa: ta.naŋ.kâi.a, respell: ta-nang-KAI-a}
+      erasmian: {ipa: ta.naŋ.ˈkai.a, respell: ta-nang-KAI-a}
+  - id: met.981b.5.14
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---fg-
+    tb: 35/1487674
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981b.5.15
+    surface: ἐπιστημῶν
+    lemma: ἐπιστήμη
+    morph: n-p---fg-
+    tb: 35/1487675
+    sound:
+      restored: {ipa: e.pis.tɛː.mɔ̂ːn, respell: e-pis-tê-MAWN}
+      erasmian: {ipa: e.pis.tɛː.ˈmɔːn, respell: e-pis-tay-MOHN}
+  - id: met.981b.5.16
+    surface: εὑρέθησαν
+    punct: ','
+    lemma: εὑρίσκω
+    morph: v3paip---
+    tb: 35/1487676
+    sound:
+      restored: {ipa: heu.ré.tʰɛː.san, respell: heu-RE-tʰê-san}
+      erasmian: {ipa: heu.ˈre.θɛː.san, respell: hyoo-RE-thay-san}
+  - id: met.981b.5.17
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 35/1487678
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981b.5.18
+    surface: πρῶτον
+    lemma: πρῶτος
+    morph: a-s---na-
+    tb: 35/1487679
+    sound:
+      restored: {ipa: prɔ̂ː.ton, respell: PRAW-ton}
+      erasmian: {ipa: ˈprɔː.ton, respell: PROH-ton}
+  - id: met.981b.5.19
+    surface: ἐν
+    lemma: ἐν
+    morph: r--------
+    tb: 35/1487680
+    sound:
+      restored: {ipa: en, respell: en}
+      erasmian: {ipa: en, respell: en}
+  - id: met.981b.5.20
+    surface: τούτοις
+    lemma: οὗτος
+    morph: a-p---md-
+    tb: 35/1487681
+    sound:
+      restored: {ipa: túː.tois, respell: TOO-toys}
+      erasmian: {ipa: ˈtuː.tois, respell: TOO-toys}
+  - id: met.981b.5.21
+    surface: τοῖς
+    lemma: ὁ
+    morph: l-p---md-
+    tb: 35/1487682
+    sound:
+      restored: {ipa: tôis, respell: TOYS}
+      erasmian: {ipa: ˈtois, respell: TOYS}
+  - id: met.981b.5.22
+    surface: τόποις
+    lemma: τόπος
+    morph: n-p---md-
+    tb: 35/1487683
+    sound:
+      restored: {ipa: tó.pois, respell: TO-poys}
+      erasmian: {ipa: ˈto.pois, respell: TO-poys}
+  - id: met.981b.5.23
+    surface: οὗ
+    lemma: οὗ
+    morph: d--------
+    tb: 35/1487684
+    sound:
+      restored: {ipa: hûː, respell: HOO}
+      erasmian: {ipa: ˈhuː, respell: HOO}
+  - id: met.981b.5.24
+    surface: πρῶτον
+    lemma: πρῶτος
+    morph: a-s---na-
+    tb: 35/1487685
+    sound:
+      restored: {ipa: prɔ̂ː.ton, respell: PRAW-ton}
+      erasmian: {ipa: ˈprɔː.ton, respell: PROH-ton}
+  - id: met.981b.5.25
+    surface: ἐσχόλασαν
+    punct: ·
+    lemma: σχολάζω
+    morph: v3paia---
+    tb: 35/1487686
+    sound:
+      restored: {ipa: es.kʰó.la.san, respell: es-KʰO-la-san}
+      erasmian: {ipa: es.ˈxo.la.san, respell: es-KHO-la-san}
+  - id: met.981b.5.26
+    surface: διὸ
+    lemma: διό
+    morph: d--------
+    tb: 36/1487688
+    sound:
+      restored: {ipa: di.ò, respell: di-o}
+      erasmian: {ipa: di.ˈo, respell: di-O}
+  - id: met.981b.5.27
+    surface: περὶ
+    lemma: περί
+    morph: r--------
+    tb: 36/1487689
+    sound:
+      restored: {ipa: pe.rì, respell: pe-ri}
+      erasmian: {ipa: pe.ˈri, respell: pe-RI}
+  - id: met.981b.5.28
+    surface: Αἴγυπτον
+    lemma: Αἴγυπτος
+    morph: n-s---fa-
+    tb: 36/1487690
+    sound:
+      restored: {ipa: aí.ɡyp.ton, respell: AI-güp-ton}
+      erasmian: {ipa: ˈai.ɡyp.ton, respell: AI-güp-ton}
+  - id: met.981b.5.29
+    surface: αἱ
+    lemma: ὁ
+    morph: l-p---fn-
+    tb: 36/1487691
+    sound:
+      restored: {ipa: hai, respell: hai}
+      erasmian: {ipa: hai, respell: hai}
+  - id: met.981b.5.30
+    surface: μαθηματικαὶ
+    lemma: μαθηματικός
+    morph: a-p---fn-
+    tb: 36/1487692
+    sound:
+      restored: {ipa: ma.tʰɛː.ma.ti.kaì, respell: ma-tʰê-ma-ti-kai}
+      erasmian: {ipa: ma.θɛː.ma.ti.ˈkai, respell: ma-thay-ma-ti-KAI}
+  - id: met.981b.5.31
+    surface: πρῶτον
+    lemma: πρῶτος
+    morph: d--------
+    tb: 36/1487693
+    sound:
+      restored: {ipa: prɔ̂ː.ton, respell: PRAW-ton}
+      erasmian: {ipa: ˈprɔː.ton, respell: PROH-ton}
+  - id: met.981b.5.32
+    surface: τέχναι
+    lemma: τέχνη
+    morph: n-p---fn-
+    tb: 36/1487694
+    sound:
+      restored: {ipa: tékʰ.nai, respell: TEKʰ-nai}
+      erasmian: {ipa: ˈtex.nai, respell: TEKH-nai}
+  - id: met.981b.5.33
+    surface: συνέστησαν
+    punct: ','
+    lemma: συνίστημι
+    morph: v3paia---
+    tb: 36/1487695
+    sound:
+      restored: {ipa: sy.nés.tɛː.san, respell: sü-NES-tê-san}
+      erasmian: {ipa: sy.ˈnes.tɛː.san, respell: sü-NES-tay-san}
+  - id: met.981b.5.34
+    surface: ἐκεῖ
+    lemma: ἐκεῖ
+    morph: d--------
+    tb: 36/1487697
+    sound:
+      restored: {ipa: e.kêː, respell: e-KAY}
+      erasmian: {ipa: e.ˈkei, respell: e-KAY}
+  - id: met.981b.5.35
+    surface: γὰρ
+    lemma: γάρ
+    morph: d--------
+    tb: 36/1487698
+    sound:
+      restored: {ipa: ɡàr, respell: gar}
+      erasmian: {ipa: ˈɡar, respell: GAR}
+  - id: met.981b.5.36
+    surface: ἀφείθη
+    lemma: ἀφίημι
+    morph: v3saip---
+    tb: 36/1487699
+    sound:
+      restored: {ipa: a.pʰéː.tʰɛː, respell: a-PʰAY-tʰê}
+      erasmian: {ipa: a.ˈfei.θɛː, respell: a-FAY-thay}
+  - id: met.981b.5.37
+    surface: σχολάζειν
+    lemma: σχολάζω
+    morph: v--pna---
+    tb: 36/1487700
+    sound:
+      restored: {ipa: skʰo.lá.zdeːn, respell: skʰo-LA-zdayn}
+      erasmian: {ipa: sxo.ˈla.dzein, respell: skho-LA-dzayn}
+  - id: met.981b.5.38
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---na-
+    tb: 36/1487701
+    sound:
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: met.981b.5.39
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 36/1487702
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981b.5.40
+    surface: ἱερέων
+    lemma: ἱερεύς
+    morph: n-p---mg-
+    tb: 36/1487703
+    sound:
+      restored: {ipa: hi.e.ré.ɔːn, respell: hi-e-RE-awn}
+      erasmian: {ipa: hi.e.ˈre.ɔːn, respell: hi-e-RE-ohn}
+  - id: met.981b.5.41
+    surface: ἔθνος
+    punct: .
+    lemma: ἔθνος
+    morph: n-s---na-
+    tb: 36/1487704
+    sound:
+      restored: {ipa: étʰ.nos, respell: ETʰ-nos}
+      erasmian: {ipa: ˈeθ.nos, respell: ETH-nos}
+- id: met.981b.6
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981b.6
+  stanza: 981b
+  stanza_title: Book A (I), chapter 1, Bekker 981b
+  text: εἴρηται μὲν οὖν ἐν τοῖς ἠθικοῖς τίς διαφορὰ τέχνης καὶ ἐπιστήμης καὶ τῶν ἄλλων τῶν ὁμογενῶν· οὗ δʼ ἕνεκα νῦν ποιούμεθα τὸν λόγον τοῦτʼ ἐστίν, ὅτι τὴν ὀνομαζομένην σοφίαν περὶ τὰ πρῶτα αἴτια καὶ
+    τὰς ἀρχὰς ὑπολαμβάνουσι πάντες·
+  tokens:
+  - id: met.981b.6.1
+    surface: εἴρηται
+    lemma: λέγω
+    morph: v3srie---
+    tb: 37/1487706
+    sound:
+      restored: {ipa: éː.rɛː.tai, respell: AY-rê-tai}
+      erasmian: {ipa: ˈei.rɛː.tai, respell: AY-ray-tai}
+  - id: met.981b.6.2
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 37/1487707
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.981b.6.3
+    surface: οὖν
+    lemma: οὖν
+    morph: d--------
+    tb: 37/1487708
+    sound:
+      restored: {ipa: ûːn, respell: OON}
+      erasmian: {ipa: ˈuːn, respell: OON}
+  - id: met.981b.6.4
+    surface: ἐν
+    lemma: ἐν
+    morph: r--------
+    tb: 37/1487709
+    sound:
+      restored: {ipa: en, respell: en}
+      erasmian: {ipa: en, respell: en}
+  - id: met.981b.6.5
+    surface: τοῖς
+    lemma: ὁ
+    morph: l-p---md-
+    tb: 37/1487710
+    sound:
+      restored: {ipa: tôis, respell: TOYS}
+      erasmian: {ipa: ˈtois, respell: TOYS}
+  - id: met.981b.6.6
+    surface: ἠθικοῖς
+    lemma: ἠθικός
+    morph: a-p---md-
+    tb: 37/1487711
+    sound:
+      restored: {ipa: ɛː.tʰi.kôis, respell: ê-tʰi-KOYS}
+      erasmian: {ipa: ɛː.θi.ˈkois, respell: ay-thi-KOYS}
+  - id: met.981b.6.7
+    surface: τίς
+    lemma: τις
+    morph: a-s---cn-
+    tb: 37/1487712
+    sound:
+      restored: {ipa: tís, respell: TIS}
+      erasmian: {ipa: ˈtis, respell: TIS}
+  - id: met.981b.6.8
+    surface: διαφορὰ
+    lemma: διαφορά
+    morph: n-s---fn-
+    tb: 37/1487713
+    sound:
+      restored: {ipa: di.a.pʰo.rà, respell: di-a-pʰo-ra}
+      erasmian: {ipa: di.a.fo.ˈra, respell: di-a-fo-RA}
+  - id: met.981b.6.9
+    surface: τέχνης
+    lemma: τέχνη
+    morph: n-s---fg-
+    tb: 37/1487714
+    sound:
+      restored: {ipa: tékʰ.nɛːs, respell: TEKʰ-nês}
+      erasmian: {ipa: ˈtex.nɛːs, respell: TEKH-nays}
+  - id: met.981b.6.10
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 37/1487715
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981b.6.11
+    surface: ἐπιστήμης
+    lemma: ἐπιστήμη
+    morph: n-s---fg-
+    tb: 37/1487716
+    sound:
+      restored: {ipa: e.pis.tɛ́ː.mɛːs, respell: e-pis-TÊ-mês}
+      erasmian: {ipa: e.pis.ˈtɛː.mɛːs, respell: e-pis-TAY-mays}
+  - id: met.981b.6.12
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 37/1487717
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981b.6.13
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 37/1487718
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981b.6.14
+    surface: ἄλλων
+    lemma: ἄλλος
+    morph: a-p---mg-
+    tb: 37/1487719
+    sound:
+      restored: {ipa: ál.lɔːn, respell: AL-lawn}
+      erasmian: {ipa: ˈal.lɔːn, respell: AL-lohn}
+  - id: met.981b.6.15
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 37/1487720
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981b.6.16
+    surface: ὁμογενῶν
+    punct: ·
+    lemma: ὁμογενής
+    morph: a-p---mg-
+    tb: 37/1487721
+    sound:
+      restored: {ipa: ho.mo.ɡe.nɔ̂ːn, respell: ho-mo-ge-NAWN}
+      erasmian: {ipa: ho.mo.ɡe.ˈnɔːn, respell: ho-mo-ge-NOHN}
+  - id: met.981b.6.17
+    surface: οὗ
+    lemma: ὅς
+    morph: p-s---ng-
+    tb: 38/1487723
+    sound:
+      restored: {ipa: hûː, respell: HOO}
+      erasmian: {ipa: ˈhuː, respell: HOO}
+  - id: met.981b.6.18
+    surface: δʼ
+    lemma: δέ
+    morph: b--------
+    tb: 38/1487724
+    sound:
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: met.981b.6.19
+    surface: ἕνεκα
+    lemma: ἕνεκα
+    morph: r--------
+    tb: 38/1487725
+    sound:
+      restored: {ipa: hé.ne.ka, respell: HE-ne-ka}
+      erasmian: {ipa: ˈhe.ne.ka, respell: HE-ne-ka}
+  - id: met.981b.6.20
+    surface: νῦν
+    lemma: νῦν
+    morph: d--------
+    tb: 38/1487726
+    sound:
+      restored: {ipa: nŷːn, respell: NÜÜN}
+      erasmian: {ipa: ˈnyːn, respell: NÜÜN}
+  - id: met.981b.6.21
+    surface: ποιούμεθα
+    lemma: ποιέω
+    morph: v1ppie---
+    tb: 38/1487727
+    sound:
+      restored: {ipa: poi.úː.me.tʰa, respell: poy-OO-me-tʰa}
+      erasmian: {ipa: poi.ˈuː.me.θa, respell: poy-OO-me-tha}
+  - id: met.981b.6.22
+    surface: τὸν
+    lemma: ὁ
+    morph: l-s---ma-
+    tb: 38/1487728
+    sound:
+      restored: {ipa: tòn, respell: ton}
+      erasmian: {ipa: ˈton, respell: TON}
+  - id: met.981b.6.23
+    surface: λόγον
+    lemma: λόγος
+    morph: n-s---ma-
+    tb: 38/1487729
+    sound:
+      restored: {ipa: ló.ɡon, respell: LO-gon}
+      erasmian: {ipa: ˈlo.ɡon, respell: LO-gon}
+  - id: met.981b.6.24
+    surface: τοῦτʼ
+    lemma: οὗτος
+    morph: a-s---na-
+    tb: 38/1487730
+    sound:
+      restored: {ipa: tûːt, respell: TOOT’}
+      erasmian: {ipa: ˈtuːt, respell: TOOT’}
+  - id: met.981b.6.25
+    surface: ἐστίν
+    punct: ','
+    lemma: εἰμί
+    morph: v3spia---
+    tb: 38/1487731
+    sound:
+      restored: {ipa: es.tín, respell: es-TIN}
+      erasmian: {ipa: es.ˈtin, respell: es-TIN}
+  - id: met.981b.6.26
+    surface: ὅτι
+    lemma: ὅτι
+    morph: c--------
+    tb: 38/1487733
+    sound:
+      restored: {ipa: hó.ti, respell: HO-ti}
+      erasmian: {ipa: ˈho.ti, respell: HO-ti}
+  - id: met.981b.6.27
+    surface: τὴν
+    lemma: ὁ
+    morph: l-s---fa-
+    tb: 38/1487734
+    sound:
+      restored: {ipa: tɛ̀ːn, respell: tên}
+      erasmian: {ipa: ˈtɛːn, respell: TAYN}
+  - id: met.981b.6.28
+    surface: ὀνομαζομένην
+    lemma: ὀνομάζω
+    morph: v-sppefa-
+    tb: 38/1487735
+    sound:
+      restored: {ipa: o.no.ma.zdo.mé.nɛːn, respell: o-no-ma-zdo-ME-nên}
+      erasmian: {ipa: o.no.ma.dzo.ˈme.nɛːn, respell: o-no-ma-dzo-ME-nayn}
+  - id: met.981b.6.29
+    surface: σοφίαν
+    lemma: σοφία
+    morph: n-s---fa-
+    tb: 38/1487736
+    sound:
+      restored: {ipa: so.pʰí.an, respell: so-PʰI-an}
+      erasmian: {ipa: so.ˈfi.an, respell: so-FI-an}
+  - id: met.981b.6.30
+    surface: περὶ
+    lemma: περί
+    morph: r--------
+    tb: 38/1487737
+    sound:
+      restored: {ipa: pe.rì, respell: pe-ri}
+      erasmian: {ipa: pe.ˈri, respell: pe-RI}
+  - id: met.981b.6.31
+    surface: τὰ
+    lemma: ὁ
+    morph: l-p---na-
+    tb: 38/1487738
+    sound:
+      restored: {ipa: tà, respell: ta}
+      erasmian: {ipa: ˈta, respell: TA}
+  - id: met.981b.6.32
+    surface: πρῶτα
+    lemma: πρῶτος
+    morph: a-p---na-
+    tb: 38/1487739
+    sound:
+      restored: {ipa: prɔ̂ː.ta, respell: PRAW-ta}
+      erasmian: {ipa: ˈprɔː.ta, respell: PROH-ta}
+  - id: met.981b.6.33
+    surface: αἴτια
+    lemma: αἴτιος
+    morph: a-p---na-
+    tb: 38/1487740
+    sound:
+      restored: {ipa: aí.ti.a, respell: AI-ti-a}
+      erasmian: {ipa: ˈai.ti.a, respell: AI-ti-a}
+  - id: met.981b.6.34
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 38/1487741
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.981b.6.35
+    surface: τὰς
+    lemma: ὁ
+    morph: l-p---fa-
+    tb: 38/1487742
+    sound:
+      restored: {ipa: tàs, respell: tas}
+      erasmian: {ipa: ˈtas, respell: TAS}
+  - id: met.981b.6.36
+    surface: ἀρχὰς
+    lemma: ἀρχή
+    morph: n-p---fa-
+    tb: 38/1487743
+    sound:
+      restored: {ipa: ar.kʰàs, respell: ar-kʰas}
+      erasmian: {ipa: ar.ˈxas, respell: ar-KHAS}
+  - id: met.981b.6.37
+    surface: ὑπολαμβάνουσι
+    lemma: ὑπολαμβάνω
+    morph: v3ppia---
+    tb: 38/1487744
+    sound:
+      restored: {ipa: hy.po.lam.bá.nuː.si, respell: hü-po-lam-BA-noo-si}
+      erasmian: {ipa: hy.po.lam.ˈba.nuː.si, respell: hü-po-lam-BA-noo-si}
+  - id: met.981b.6.38
+    surface: πάντες
+    punct: ·
+    lemma: πᾶς
+    morph: a-p---mn-
+    tb: 38/1487745
+    sound:
+      restored: {ipa: pán.tes, respell: PAN-tes}
+      erasmian: {ipa: ˈpan.tes, respell: PAN-tes}
+- id: met.981b.7
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:981b.7
+  stanza: 981b
+  stanza_title: Book A (I), chapter 1, Bekker 981b
+  text: ὥστε, καθάπερ εἴρηται πρότερον, ὁ μὲν ἔμπειρος τῶν ὁποιανοῦν ἐχόντων αἴσθησιν εἶναι δοκεῖ σοφώτερος, ὁ δὲ τεχνίτης τῶν ἐμπείρων, χειροτέχνου δὲ ἀρχιτέκτων, αἱ δὲ θεωρητικαὶ τῶν ποιητικῶν μᾶλλον.
+  tokens:
+  - id: met.981b.7.1
+    surface: ὥστε
+    punct: ','
+    lemma: ὥστε
+    morph: c--------
+    tb: 39/1487747
+    sound:
+      restored: {ipa: hɔ́ːs.te, respell: HAWS-te}
+      erasmian: {ipa: ˈhɔːs.te, respell: HOHS-te}
+  - id: met.981b.7.2
+    surface: καθάπερ
+    lemma: καθάπερ
+    morph: c--------
+    tb: 39/1487749
+    sound:
+      restored: {ipa: ka.tʰá.per, respell: ka-TʰA-per}
+      erasmian: {ipa: ka.ˈθa.per, respell: ka-THA-per}
+  - id: met.981b.7.3
+    surface: εἴρηται
+    lemma: λέγω
+    morph: v3srie---
+    tb: 39/1487750
+    sound:
+      restored: {ipa: éː.rɛː.tai, respell: AY-rê-tai}
+      erasmian: {ipa: ˈei.rɛː.tai, respell: AY-ray-tai}
+  - id: met.981b.7.4
+    surface: πρότερον
+    punct: ','
+    lemma: πρότερος
+    morph: d-------c
+    tb: 39/1487751
+    sound:
+      restored: {ipa: pró.te.ron, respell: PRO-te-ron}
+      erasmian: {ipa: ˈpro.te.ron, respell: PRO-te-ron}
+  - id: met.981b.7.5
+    surface: ὁ
+    lemma: ὁ
+    morph: l-s---mn-
+    tb: 39/1487753
+    sound:
+      restored: {ipa: ho, respell: ho}
+      erasmian: {ipa: ho, respell: ho}
+  - id: met.981b.7.6
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 39/1487754
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.981b.7.7
+    surface: ἔμπειρος
+    lemma: ἔμπειρος
+    morph: a-s---mn-
+    tb: 39/1487755
+    sound:
+      restored: {ipa: ém.peː.ros, respell: EM-pay-ros}
+      erasmian: {ipa: ˈem.pei.ros, respell: EM-pay-ros}
+  - id: met.981b.7.8
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 39/1487756
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981b.7.9
+    surface: ὁποιανοῦν
+    lemma: ὁποῖος
+    morph: p-s---fa-
+    tb: 39/1487757
+    sound:
+      restored: {ipa: ho.poi.a.nûːn, respell: ho-poy-a-NOON}
+      erasmian: {ipa: ho.poi.a.ˈnuːn, respell: ho-poy-a-NOON}
+  - id: met.981b.7.10
+    surface: ἐχόντων
+    lemma: ἔχω
+    morph: v-pppamg-
+    tb: 39/1487758
+    sound:
+      restored: {ipa: e.kʰón.tɔːn, respell: e-KʰON-tawn}
+      erasmian: {ipa: e.ˈxon.tɔːn, respell: e-KHON-tohn}
+  - id: met.981b.7.11
+    surface: αἴσθησιν
+    lemma: αἴσθησις
+    morph: n-s---fa-
+    tb: 39/1487759
+    sound:
+      restored: {ipa: aís.tʰɛː.sin, respell: AIS-tʰê-sin}
+      erasmian: {ipa: ˈais.θɛː.sin, respell: AIS-thay-sin}
+  - id: met.981b.7.12
+    surface: εἶναι
+    lemma: εἰμί
+    morph: v--pna---
+    tb: 39/1487760
+    sound:
+      restored: {ipa: êː.nai, respell: AY-nai}
+      erasmian: {ipa: ˈei.nai, respell: AY-nai}
+  - id: met.981b.7.13
+    surface: δοκεῖ
+    lemma: δοκέω
+    morph: v3spia---
+    tb: 39/1487761
+    sound:
+      restored: {ipa: do.kêː, respell: do-KAY}
+      erasmian: {ipa: do.ˈkei, respell: do-KAY}
+  - id: met.981b.7.14
+    surface: σοφώτερος
+    punct: ','
+    lemma: σοφός
+    morph: a-s---mnc
+    tb: 39/1487762
+    sound:
+      restored: {ipa: so.pʰɔ́ː.te.ros, respell: so-PʰAW-te-ros}
+      erasmian: {ipa: so.ˈfɔː.te.ros, respell: so-FOH-te-ros}
+  - id: met.981b.7.15
+    surface: ὁ
+    lemma: ὁ
+    morph: l-s---mn-
+    tb: 39/1487764
+    sound:
+      restored: {ipa: ho, respell: ho}
+      erasmian: {ipa: ho, respell: ho}
+  - id: met.981b.7.16
+    surface: δὲ
+    lemma: δέ
+    morph: b--------
+    tb: 39/1487765
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: met.981b.7.17
+    surface: τεχνίτης
+    lemma: τεχνίτης
+    morph: n-s---mn-
+    tb: 39/1487766
+    sound:
+      restored: {ipa: tekʰ.ní.tɛːs, respell: tekʰ-NI-tês}
+      erasmian: {ipa: tex.ˈni.tɛːs, respell: tekh-NI-tays}
+  - id: met.981b.7.18
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 39/1487767
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981b.7.19
+    surface: ἐμπείρων
+    punct: ','
+    lemma: ἔμπειρος
+    morph: a-p---mg-
+    tb: 39/1487768
+    sound:
+      restored: {ipa: em.péː.rɔːn, respell: em-PAY-rawn}
+      erasmian: {ipa: em.ˈpei.rɔːn, respell: em-PAY-rohn}
+  - id: met.981b.7.20
+    surface: χειροτέχνου
+    lemma: χειροτέχνης
+    morph: n-s---mg-
+    tb: 39/1487770
+    sound:
+      restored: {ipa: kʰeː.ro.tékʰ.nuː, respell: kʰay-ro-TEKʰ-noo}
+      erasmian: {ipa: xei.ro.ˈtex.nuː, respell: khay-ro-TEKH-noo}
+  - id: met.981b.7.21
+    surface: δὲ
+    lemma: δέ
+    morph: b--------
+    tb: 39/1487771
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: met.981b.7.22
+    surface: ἀρχιτέκτων
+    punct: ','
+    lemma: ἀρχιτέκτων
+    morph: n-s---mn-
+    tb: 39/1487772
+    sound:
+      restored: {ipa: ar.kʰi.ték.tɔːn, respell: ar-kʰi-TEK-tawn}
+      erasmian: {ipa: ar.xi.ˈtek.tɔːn, respell: ar-khi-TEK-tohn}
+  - id: met.981b.7.23
+    surface: αἱ
+    lemma: ὁ
+    morph: l-p---fn-
+    tb: 39/1487774
+    sound:
+      restored: {ipa: hai, respell: hai}
+      erasmian: {ipa: hai, respell: hai}
+  - id: met.981b.7.24
+    surface: δὲ
+    lemma: δέ
+    morph: b--------
+    tb: 39/1487775
+    sound:
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: met.981b.7.25
+    surface: θεωρητικαὶ
+    lemma: θεωρητικός
+    morph: a-p---fn-
+    tb: 39/1487776
+    sound:
+      restored: {ipa: tʰe.ɔː.rɛː.ti.kaì, respell: tʰe-aw-rê-ti-kai}
+      erasmian: {ipa: θe.ɔː.rɛː.ti.ˈkai, respell: the-oh-ray-ti-KAI}
+  - id: met.981b.7.26
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 39/1487777
+    sound:
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: met.981b.7.27
+    surface: ποιητικῶν
+    lemma: ποιητικός
+    morph: a-p---mg-
+    tb: 39/1487778
+    sound:
+      restored: {ipa: poi.ɛː.ti.kɔ̂ːn, respell: poy-ê-ti-KAWN}
+      erasmian: {ipa: poi.ɛː.ti.ˈkɔːn, respell: poy-ay-ti-KOHN}
+  - id: met.981b.7.28
+    surface: μᾶλλον
+    punct: .
+    lemma: μάλα
+    morph: d-------c
+    tb: 39/1487779
+    sound:
+      restored: {ipa: mâːl.lon, respell: MAAL-lon}
+      erasmian: {ipa: ˈmaːl.lon, respell: MAAL-lon}
+- id: met.982a.1
+  cite: urn:cts:greekLit:tlg0086.tlg025.perseus-grc2:982a.1
+  stanza: 982a
+  stanza_title: Book A (I), chapter 1, Bekker 982a1–3
+  text: ὅτι μὲν οὖν ἡ σοφία περί τινας ἀρχὰς καὶ αἰτίας ἐστὶν ἐπιστήμη, δῆλον.
+  tokens:
+  - id: met.982a.1.1
+    surface: ὅτι
+    lemma: ὅτι
+    morph: c--------
+    tb: 40/1487781
+    sound:
+      restored: {ipa: hó.ti, respell: HO-ti}
+      erasmian: {ipa: ˈho.ti, respell: HO-ti}
+  - id: met.982a.1.2
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 40/1487782
+    sound:
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: met.982a.1.3
+    surface: οὖν
+    lemma: οὖν
+    morph: d--------
+    tb: 40/1487783
+    sound:
+      restored: {ipa: ûːn, respell: OON}
+      erasmian: {ipa: ˈuːn, respell: OON}
+  - id: met.982a.1.4
+    surface: ἡ
+    lemma: ὁ
+    morph: l-s---fn-
+    tb: 40/1487784
+    sound:
+      restored: {ipa: hɛː, respell: hê}
+      erasmian: {ipa: hɛː, respell: hay}
+  - id: met.982a.1.5
+    surface: σοφία
+    lemma: σοφία
+    morph: n-s---fn-
+    tb: 40/1487785
+    sound:
+      restored: {ipa: so.pʰí.a, respell: so-PʰI-a}
+      erasmian: {ipa: so.ˈfi.a, respell: so-FI-a}
+  - id: met.982a.1.6
+    surface: περί
+    lemma: περί
+    morph: r--------
+    tb: 40/1487786
+    sound:
+      restored: {ipa: pe.rí, respell: pe-RI}
+      erasmian: {ipa: pe.ˈri, respell: pe-RI}
+  - id: met.982a.1.7
+    surface: τινας
+    lemma: τις
+    morph: a-p---ca-
+    tb: 40/1487787
+    sound:
+      restored: {ipa: ti.nas, respell: ti-nas}
+      erasmian: {ipa: ti.nas, respell: ti-nas}
+  - id: met.982a.1.8
+    surface: ἀρχὰς
+    lemma: ἀρχή
+    morph: n-p---fa-
+    tb: 40/1487788
+    sound:
+      restored: {ipa: ar.kʰàs, respell: ar-kʰas}
+      erasmian: {ipa: ar.ˈxas, respell: ar-KHAS}
+  - id: met.982a.1.9
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 40/1487789
+    sound:
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: met.982a.1.10
+    surface: αἰτίας
+    lemma: αἰτία
+    morph: n-p---fa-
+    tb: 40/1487790
+    sound:
+      restored: {ipa: ai.tí.as, respell: ai-TI-as}
+      erasmian: {ipa: ai.ˈti.as, respell: ai-TI-as}
+  - id: met.982a.1.11
+    surface: ἐστὶν
+    lemma: εἰμί
+    morph: v3spia---
+    tb: 40/1487791
+    sound:
+      restored: {ipa: es.tìn, respell: es-tin}
+      erasmian: {ipa: es.ˈtin, respell: es-TIN}
+  - id: met.982a.1.12
+    surface: ἐπιστήμη
+    punct: ','
+    lemma: ἐπιστήμη
+    morph: n-s---fn-
+    tb: 40/1487792
+    sound:
+      restored: {ipa: e.pis.tɛ́ː.mɛː, respell: e-pis-TÊ-mê}
+      erasmian: {ipa: e.pis.ˈtɛː.mɛː, respell: e-pis-TAY-may}
+  - id: met.982a.1.13
+    surface: δῆλον
+    punct: .
+    lemma: δῆλος
+    morph: a-s---nn-
+    tb: 40/1487794
+    sound:
+      restored: {ipa: dɛ̂ː.lon, respell: DÊ-lon}
+      erasmian: {ipa: ˈdɛː.lon, respell: DAY-lon}

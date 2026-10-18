@@ -1196,3 +1196,1054 @@ lines:
       koine: {ipa: ˈpi.se, respell: PEE-say}
       restored: {ipa: péː.sɛːi, respell: PAY-sêi}
       erasmian: {ipa: ˈpei.sɛː, respell: PAY-say}
+- id: ench.1.4.1
+  cite: urn:cts:greekLit:tlg0557.tlg002.perseus-grc2:1.4.1
+  stanza: '1.4'
+  stanza_title: Chapter 1, section 4
+  text: τηλικούτων οὖν ἐφιέμενος μέμνησο, ὅτι οὐ δεῖ μετρίως κεκινημένον ἅπτεσθαι αὐτῶν, ἀλλὰ τὰ μὲν ἀφιέναι παντελῶς, τὰ δʼ ὑπερτίθεσθαι πρὸς τὸ παρόν.
+  tokens:
+  - id: ench.1.4.1.1
+    surface: τηλικούτων
+    lemma: τηλικοῦτος
+    morph: a-p---ng-
+    tb: 6/16632585
+    sound:
+      koine: {ipa: te.li.ˈku.ton, respell: tay-lee-KOO-ton}
+      restored: {ipa: tɛː.li.kúː.tɔːn, respell: tê-li-KOO-tawn}
+      erasmian: {ipa: tɛː.li.ˈkuː.tɔːn, respell: tay-li-KOO-tohn}
+  - id: ench.1.4.1.2
+    surface: οὖν
+    lemma: οὖν
+    morph: d--------
+    tb: 6/16632586
+    sound:
+      koine: {ipa: ˈun, respell: OON}
+      restored: {ipa: ûːn, respell: OON}
+      erasmian: {ipa: ˈuːn, respell: OON}
+  - id: ench.1.4.1.3
+    surface: ἐφιέμενος
+    lemma: ἐφίημι
+    morph: v-sppemn-
+    tb: 6/16632587
+    sound:
+      koine: {ipa: ɛ.fi.ˈɛ.mɛ.nos, respell: e-fee-E-me-nos}
+      restored: {ipa: e.pʰi.é.me.nos, respell: e-pʰi-E-me-nos}
+      erasmian: {ipa: e.fi.ˈe.me.nos, respell: e-fi-E-me-nos}
+  - id: ench.1.4.1.4
+    surface: μέμνησο
+    punct: ','
+    lemma: μιμνῄσκω
+    morph: v2srme---
+    tb: 6/16632588
+    sound:
+      koine: {ipa: ˈmɛm.ne.so, respell: MEM-nay-so}
+      restored: {ipa: mém.nɛː.so, respell: MEM-nê-so}
+      erasmian: {ipa: ˈmem.nɛː.so, respell: MEM-nay-so}
+  - id: ench.1.4.1.5
+    surface: ὅτι
+    lemma: ὅτι
+    morph: c--------
+    tb: 6/16632590
+    sound:
+      koine: {ipa: ˈo.ti, respell: O-tee}
+      restored: {ipa: hó.ti, respell: HO-ti}
+      erasmian: {ipa: ˈho.ti, respell: HO-ti}
+  - id: ench.1.4.1.6
+    surface: οὐ
+    lemma: οὐ
+    morph: d--------
+    tb: 6/16632591
+    sound:
+      koine: {ipa: u, respell: oo}
+      restored: {ipa: uː, respell: oo}
+      erasmian: {ipa: uː, respell: oo}
+  - id: ench.1.4.1.7
+    surface: δεῖ
+    lemma: δέω
+    morph: v3spia---
+    tb: 6/16632592
+    sound:
+      koine: {ipa: ˈði, respell: DHEE}
+      restored: {ipa: dêː, respell: DAY}
+      erasmian: {ipa: ˈdei, respell: DAY}
+  - id: ench.1.4.1.8
+    surface: μετρίως
+    lemma: μέτριος
+    morph: d--------
+    tb: 6/16632593
+    sound:
+      koine: {ipa: mɛ.ˈtri.os, respell: me-TREE-os}
+      restored: {ipa: me.trí.ɔːs, respell: me-TRI-aws}
+      erasmian: {ipa: me.ˈtri.ɔːs, respell: me-TRI-ohs}
+  - id: ench.1.4.1.9
+    surface: κεκινημένον
+    lemma: κινέω
+    morph: v-srpenn-
+    tb: 6/16632594
+    sound:
+      koine: {ipa: kɛ.ki.ne.ˈmɛ.non, respell: ke-kee-nay-ME-non}
+      restored: {ipa: ke.ki.nɛː.mé.non, respell: ke-ki-nê-ME-non}
+      erasmian: {ipa: ke.ki.nɛː.ˈme.non, respell: ke-ki-nay-ME-non}
+  - id: ench.1.4.1.10
+    surface: ἅπτεσθαι
+    lemma: ἅπτω
+    morph: v--pne---
+    tb: 6/16632595
+    sound:
+      koine: {ipa: ˈap.tɛs.θɛ, respell: AP-tes-the}
+      restored: {ipa: háp.tes.tʰai, respell: HAP-tes-tʰai}
+      erasmian: {ipa: ˈhap.tes.θai, respell: HAP-tes-thai}
+  - id: ench.1.4.1.11
+    surface: αὐτῶν
+    punct: ','
+    lemma: αὐτός
+    morph: a-p---mg-
+    tb: 6/16632596
+    sound:
+      koine: {ipa: av.ˈton, respell: av-TON}
+      restored: {ipa: au.tɔ̂ːn, respell: ow-TAWN}
+      erasmian: {ipa: au.ˈtɔːn, respell: ow-TOHN}
+  - id: ench.1.4.1.12
+    surface: ἀλλὰ
+    lemma: ἀλλά
+    morph: b--------
+    tb: 6/16632598
+    sound:
+      koine: {ipa: al.ˈla, respell: al-LA}
+      restored: {ipa: al.là, respell: al-la}
+      erasmian: {ipa: al.ˈla, respell: al-LA}
+  - id: ench.1.4.1.13
+    surface: τὰ
+    lemma: ὁ
+    morph: l-p---na-
+    tb: 6/16632599
+    sound:
+      koine: {ipa: ˈta, respell: TA}
+      restored: {ipa: tà, respell: ta}
+      erasmian: {ipa: ˈta, respell: TA}
+  - id: ench.1.4.1.14
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 6/16632600
+    sound:
+      koine: {ipa: ˈmɛn, respell: MEN}
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: ench.1.4.1.15
+    surface: ἀφιέναι
+    lemma: ἀφίημι
+    morph: v--pna---
+    tb: 6/16632601
+    sound:
+      koine: {ipa: a.fi.ˈɛ.nɛ, respell: a-fee-E-ne}
+      restored: {ipa: a.pʰi.é.nai, respell: a-pʰi-E-nai}
+      erasmian: {ipa: a.fi.ˈe.nai, respell: a-fi-E-nai}
+  - id: ench.1.4.1.16
+    surface: παντελῶς
+    punct: ','
+    lemma: παντελής
+    morph: d--------
+    tb: 6/16632602
+    sound:
+      koine: {ipa: pan.tɛ.ˈlos, respell: pan-te-LOS}
+      restored: {ipa: pan.te.lɔ̂ːs, respell: pan-te-LAWS}
+      erasmian: {ipa: pan.te.ˈlɔːs, respell: pan-te-LOHS}
+  - id: ench.1.4.1.17
+    surface: τὰ
+    lemma: ὁ
+    morph: l-p---na-
+    tb: 6/16632604
+    sound:
+      koine: {ipa: ˈta, respell: TA}
+      restored: {ipa: tà, respell: ta}
+      erasmian: {ipa: ˈta, respell: TA}
+  - id: ench.1.4.1.18
+    surface: δʼ
+    lemma: δέ
+    morph: b--------
+    tb: 6/16632605
+    sound:
+      koine: {ipa: ð, respell: dh’}
+      restored: {ipa: d, respell: d’}
+      erasmian: {ipa: d, respell: d’}
+  - id: ench.1.4.1.19
+    surface: ὑπερτίθεσθαι
+    lemma: ὑπερτίθημι
+    morph: v--pne---
+    tb: 6/16632606
+    sound:
+      koine: {ipa: y.pɛr.ˈti.θɛs.θɛ, respell: ü-per-TEE-thes-the}
+      restored: {ipa: hy.per.tí.tʰes.tʰai, respell: hü-per-TI-tʰes-tʰai}
+      erasmian: {ipa: hy.per.ˈti.θes.θai, respell: hü-per-TI-thes-thai}
+  - id: ench.1.4.1.20
+    surface: πρὸς
+    lemma: πρός
+    morph: r--------
+    tb: 6/16632607
+    sound:
+      koine: {ipa: ˈpros, respell: PROS}
+      restored: {ipa: pròs, respell: pros}
+      erasmian: {ipa: ˈpros, respell: PROS}
+  - id: ench.1.4.1.21
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---na-
+    tb: 6/16632608
+    sound:
+      koine: {ipa: ˈto, respell: TO}
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: ench.1.4.1.22
+    surface: παρόν
+    punct: .
+    lemma: πάρειμι
+    morph: v-sppana-
+    tb: 6/16632609
+    sound:
+      koine: {ipa: pa.ˈron, respell: pa-RON}
+      restored: {ipa: pa.rón, respell: pa-RON}
+      erasmian: {ipa: pa.ˈron, respell: pa-RON}
+- id: ench.1.4.2
+  cite: urn:cts:greekLit:tlg0557.tlg002.perseus-grc2:1.4.2
+  stanza: '1.4'
+  stanza_title: Chapter 1, section 4
+  text: ἐὰν δὲ καὶ ταῦτʼ ἐθέλῃς καὶ ἄρχειν καὶ πλουτεῖν, τυχὸν μὲν οὐδʼ αὐτῶν τούτων τεύξῃ διὰ τὸ καὶ τῶν προτέρων ἐφίεσθαι, πάντως γε μὴν ἐκείνων ἀποτεύξη, διʼ ὧν μόνων ἐλευθερία καὶ εὐδαιμονία περιγίνεται.
+  tokens:
+  - id: ench.1.4.2.1
+    surface: ἐὰν
+    lemma: ἐάν
+    morph: c--------
+    tb: 7/16632611
+    sound:
+      koine: {ipa: ɛ.ˈan, respell: e-AN}
+      restored: {ipa: e.àn, respell: e-an}
+      erasmian: {ipa: e.ˈan, respell: e-AN}
+  - id: ench.1.4.2.2
+    surface: δὲ
+    lemma: δέ
+    morph: b--------
+    tb: 7/16632612
+    sound:
+      koine: {ipa: ˈðɛ, respell: DHE}
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: ench.1.4.2.3
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 7/16632613
+    sound:
+      koine: {ipa: ˈkɛ, respell: KE}
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: ench.1.4.2.4
+    surface: ταῦτʼ
+    lemma: οὗτος
+    morph: a-p---nn-
+    tb: 7/16632614
+    sound:
+      koine: {ipa: ˈtavt, respell: TAVT’}
+      restored: {ipa: tâut, respell: TOWT’}
+      erasmian: {ipa: ˈtaut, respell: TOWT’}
+  - id: ench.1.4.2.5
+    surface: ἐθέλῃς
+    lemma: ἐθέλω
+    morph: v2spsa---
+    tb: 7/16632615
+    sound:
+      koine: {ipa: ɛ.ˈθɛ.les, respell: e-THE-lays}
+      restored: {ipa: e.tʰé.lɛːis, respell: e-TʰE-lêis}
+      erasmian: {ipa: e.ˈθe.lɛːs, respell: e-THE-lays}
+  - id: ench.1.4.2.6
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 7/16632616
+    sound:
+      koine: {ipa: ˈkɛ, respell: KE}
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: ench.1.4.2.7
+    surface: ἄρχειν
+    lemma: ἄρχω
+    morph: v--pna---
+    tb: 7/16632617
+    sound:
+      koine: {ipa: ˈar.xin, respell: AR-kheen}
+      restored: {ipa: ár.kʰeːn, respell: AR-kʰayn}
+      erasmian: {ipa: ˈar.xein, respell: AR-khayn}
+  - id: ench.1.4.2.8
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 7/16632618
+    sound:
+      koine: {ipa: ˈkɛ, respell: KE}
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: ench.1.4.2.9
+    surface: πλουτεῖν
+    punct: ','
+    lemma: πλουτέω
+    morph: v--pna---
+    tb: 7/16632619
+    sound:
+      koine: {ipa: plu.ˈtin, respell: ploo-TEEN}
+      restored: {ipa: pluː.têːn, respell: ploo-TAYN}
+      erasmian: {ipa: pluː.ˈtein, respell: ploo-TAYN}
+  - id: ench.1.4.2.10
+    surface: τυχὸν
+    lemma: τυχόν
+    morph: d--------
+    tb: 7/16632621
+    sound:
+      koine: {ipa: ty.ˈxon, respell: tü-KHON}
+      restored: {ipa: ty.kʰòn, respell: tü-kʰon}
+      erasmian: {ipa: ty.ˈxon, respell: tü-KHON}
+  - id: ench.1.4.2.11
+    surface: μὲν
+    lemma: μέν
+    morph: d--------
+    tb: 7/16632622
+    sound:
+      koine: {ipa: ˈmɛn, respell: MEN}
+      restored: {ipa: mèn, respell: men}
+      erasmian: {ipa: ˈmen, respell: MEN}
+  - id: ench.1.4.2.12
+    surface: οὐδʼ
+    lemma: οὐδέ
+    morph: d--------
+    tb: 7/16632623
+    sound:
+      koine: {ipa: uð, respell: oodh’}
+      restored: {ipa: uːd, respell: ood’}
+      erasmian: {ipa: uːd, respell: ood’}
+  - id: ench.1.4.2.13
+    surface: αὐτῶν
+    lemma: αὐτός
+    morph: a-p---mg-
+    tb: 7/16632624
+    sound:
+      koine: {ipa: av.ˈton, respell: av-TON}
+      restored: {ipa: au.tɔ̂ːn, respell: ow-TAWN}
+      erasmian: {ipa: au.ˈtɔːn, respell: ow-TOHN}
+  - id: ench.1.4.2.14
+    surface: τούτων
+    lemma: οὗτος
+    morph: a-p---ng-
+    tb: 7/16632625
+    sound:
+      koine: {ipa: ˈtu.ton, respell: TOO-ton}
+      restored: {ipa: túː.tɔːn, respell: TOO-tawn}
+      erasmian: {ipa: ˈtuː.tɔːn, respell: TOO-tohn}
+  - id: ench.1.4.2.15
+    surface: τεύξῃ
+    lemma: τεύχω
+    morph: v2sfim---
+    tb: 7/16632626
+    sound:
+      koine: {ipa: ˈtev.kse, respell: TAYV-ksay}
+      restored: {ipa: teú.ksɛːi, respell: TEU-ksêi}
+      erasmian: {ipa: ˈteu.ksɛː, respell: TYOO-ksay}
+  - id: ench.1.4.2.16
+    surface: διὰ
+    lemma: διά
+    morph: r--------
+    tb: 7/16632627
+    sound:
+      koine: {ipa: ði.ˈa, respell: dhee-A}
+      restored: {ipa: di.à, respell: di-a}
+      erasmian: {ipa: di.ˈa, respell: di-A}
+  - id: ench.1.4.2.17
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---na-
+    tb: 7/16632628
+    sound:
+      koine: {ipa: ˈto, respell: TO}
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: ench.1.4.2.18
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 7/16632629
+    sound:
+      koine: {ipa: ˈkɛ, respell: KE}
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: ench.1.4.2.19
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---mg-
+    tb: 7/16632630
+    sound:
+      koine: {ipa: ˈton, respell: TON}
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: ench.1.4.2.20
+    surface: προτέρων
+    lemma: πρότερος
+    morph: a-p---mg-
+    tb: 7/16632631
+    sound:
+      koine: {ipa: pro.ˈtɛ.ron, respell: pro-TE-ron}
+      restored: {ipa: pro.té.rɔːn, respell: pro-TE-rawn}
+      erasmian: {ipa: pro.ˈte.rɔːn, respell: pro-TE-rohn}
+  - id: ench.1.4.2.21
+    surface: ἐφίεσθαι
+    punct: ','
+    lemma: ἐφίημι
+    morph: v--pne---
+    tb: 7/16632632
+    sound:
+      koine: {ipa: ɛ.ˈfi.ɛs.θɛ, respell: e-FEE-es-the}
+      restored: {ipa: e.pʰí.es.tʰai, respell: e-PʰI-es-tʰai}
+      erasmian: {ipa: e.ˈfi.es.θai, respell: e-FI-es-thai}
+  - id: ench.1.4.2.22
+    surface: πάντως
+    lemma: πάντως
+    morph: d--------
+    tb: 7/16632634
+    sound:
+      koine: {ipa: ˈpan.tos, respell: PAN-tos}
+      restored: {ipa: pán.tɔːs, respell: PAN-taws}
+      erasmian: {ipa: ˈpan.tɔːs, respell: PAN-tohs}
+  - id: ench.1.4.2.23
+    surface: γε
+    lemma: γε
+    morph: d--------
+    tb: 7/16632635
+    sound:
+      koine: {ipa: jɛ, respell: ye}
+      restored: {ipa: ɡe, respell: ge}
+      erasmian: {ipa: ɡe, respell: ge}
+  - id: ench.1.4.2.24
+    surface: μὴν
+    lemma: μήν
+    morph: d--------
+    tb: 7/16632636
+    sound:
+      koine: {ipa: ˈmen, respell: MAYN}
+      restored: {ipa: mɛ̀ːn, respell: mên}
+      erasmian: {ipa: ˈmɛːn, respell: MAYN}
+  - id: ench.1.4.2.25
+    surface: ἐκείνων
+    lemma: ἐκεῖνος
+    morph: a-p---ng-
+    tb: 7/16632637
+    sound:
+      koine: {ipa: ɛ.ˈki.non, respell: e-KEE-non}
+      restored: {ipa: e.kéː.nɔːn, respell: e-KAY-nawn}
+      erasmian: {ipa: e.ˈkei.nɔːn, respell: e-KAY-nohn}
+  - id: ench.1.4.2.26
+    surface: ἀποτεύξη
+    punct: ','
+    lemma: ἀποτεξαίνω
+    morph: v3saip---
+    tb: 7/16632638
+    sound:
+      koine: {ipa: a.po.ˈtev.kse, respell: a-po-TAYV-ksay}
+      restored: {ipa: a.po.teú.ksɛː, respell: a-po-TEU-ksê}
+      erasmian: {ipa: a.po.ˈteu.ksɛː, respell: a-po-TYOO-ksay}
+  - id: ench.1.4.2.27
+    surface: διʼ
+    lemma: διά
+    morph: r--------
+    tb: 7/16632640
+    sound:
+      koine: {ipa: ði, respell: dhee’}
+      restored: {ipa: di, respell: di’}
+      erasmian: {ipa: di, respell: di’}
+  - id: ench.1.4.2.28
+    surface: ὧν
+    lemma: ὅς
+    morph: p-p---ng-
+    tb: 7/16632641
+    sound:
+      koine: {ipa: ˈon, respell: 'ON'}
+      restored: {ipa: hɔ̂ːn, respell: HAWN}
+      erasmian: {ipa: ˈhɔːn, respell: HOHN}
+  - id: ench.1.4.2.29
+    surface: μόνων
+    lemma: μόνος
+    morph: a-p---ng-
+    tb: 7/16632642
+    sound:
+      koine: {ipa: ˈmo.non, respell: MO-non}
+      restored: {ipa: mó.nɔːn, respell: MO-nawn}
+      erasmian: {ipa: ˈmo.nɔːn, respell: MO-nohn}
+  - id: ench.1.4.2.30
+    surface: ἐλευθερία
+    lemma: ἐλευθερία
+    morph: n-s---fn-
+    tb: 7/16632643
+    sound:
+      koine: {ipa: ɛ.lev.θɛ.ˈri.a, respell: e-layv-the-REE-a}
+      restored: {ipa: e.leu.tʰe.rí.a, respell: e-leu-tʰe-RI-a}
+      erasmian: {ipa: e.leu.θe.ˈri.a, respell: e-lyoo-the-RI-a}
+  - id: ench.1.4.2.31
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 7/16632644
+    sound:
+      koine: {ipa: ˈkɛ, respell: KE}
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: ench.1.4.2.32
+    surface: εὐδαιμονία
+    lemma: εὐδαιμονία
+    morph: n-s---fn-
+    tb: 7/16632645
+    sound:
+      koine: {ipa: ev.ðɛ.mo.ˈni.a, respell: ayv-dhe-mo-NEE-a}
+      restored: {ipa: eu.dai.mo.ní.a, respell: eu-dai-mo-NI-a}
+      erasmian: {ipa: eu.dai.mo.ˈni.a, respell: yoo-dai-mo-NI-a}
+  - id: ench.1.4.2.33
+    surface: περιγίνεται
+    punct: .
+    lemma: περιγίγνομαι
+    morph: v3spie---
+    tb: 7/16632646
+    sound:
+      koine: {ipa: pɛ.ri.ˈji.nɛ.tɛ, respell: pe-ree-YEE-ne-te}
+      restored: {ipa: pe.ri.ɡí.ne.tai, respell: pe-ri-GI-ne-tai}
+      erasmian: {ipa: pe.ri.ˈɡi.ne.tai, respell: pe-ri-GI-ne-tai}
+- id: ench.1.5.1
+  cite: urn:cts:greekLit:tlg0557.tlg002.perseus-grc2:1.5.1
+  stanza: '1.5'
+  stanza_title: Chapter 1, section 5
+  text: εὐθὺς οὖν πάσῃ φαντασίᾳ τραχείᾳ μελέτα ἐπιλέγειν ὅτι φαντασία εἶ καὶ οὐ πάντως τὸ φαινόμενον.
+  tokens:
+  - id: ench.1.5.1.1
+    surface: εὐθὺς
+    lemma: εὐθύς
+    morph: d--------
+    tb: 8/16632648
+    sound:
+      koine: {ipa: ev.ˈθys, respell: ayv-THÜS}
+      restored: {ipa: eu.tʰỳs, respell: eu-tʰüs}
+      erasmian: {ipa: eu.ˈθys, respell: yoo-THÜS}
+  - id: ench.1.5.1.2
+    surface: οὖν
+    lemma: οὖν
+    morph: d--------
+    tb: 8/16632649
+    sound:
+      koine: {ipa: ˈun, respell: OON}
+      restored: {ipa: ûːn, respell: OON}
+      erasmian: {ipa: ˈuːn, respell: OON}
+  - id: ench.1.5.1.3
+    surface: πάσῃ
+    lemma: πᾶς
+    morph: a-s---fd-
+    tb: 8/16632650
+    sound:
+      koine: {ipa: ˈpa.se, respell: PA-say}
+      restored: {ipa: pá.sɛːi, respell: PA-sêi}
+      erasmian: {ipa: ˈpa.sɛː, respell: PA-say}
+  - id: ench.1.5.1.4
+    surface: φαντασίᾳ
+    lemma: φαντασία
+    morph: n-s---fd-
+    tb: 8/16632651
+    sound:
+      koine: {ipa: fan.ta.ˈsi.a, respell: fan-ta-SEE-a}
+      restored: {ipa: pʰan.ta.sí.aːi, respell: pʰan-ta-SI-aai}
+      erasmian: {ipa: fan.ta.ˈsi.aː, respell: fan-ta-SI-aa}
+  - id: ench.1.5.1.5
+    surface: τραχείᾳ
+    lemma: τραχύς
+    morph: a-s---fd-
+    tb: 8/16632652
+    sound:
+      koine: {ipa: tra.ˈxi.a, respell: tra-KHEE-a}
+      restored: {ipa: tra.kʰéː.aːi, respell: tra-KʰAY-aai}
+      erasmian: {ipa: tra.ˈxei.aː, respell: tra-KHAY-aa}
+  - id: ench.1.5.1.6
+    surface: μελέτα
+    lemma: μελετάω
+    morph: v2spma---
+    tb: 8/16632653
+    sound:
+      koine: {ipa: mɛ.ˈlɛ.ta, respell: me-LE-ta}
+      restored: {ipa: me.lé.ta, respell: me-LE-ta}
+      erasmian: {ipa: me.ˈle.ta, respell: me-LE-ta}
+  - id: ench.1.5.1.7
+    surface: ἐπιλέγειν
+    lemma: ἐπιλέγω
+    morph: v--pna---
+    tb: 8/16632654
+    sound:
+      koine: {ipa: ɛ.pi.ˈlɛ.jin, respell: e-pee-LE-yeen}
+      restored: {ipa: e.pi.lé.ɡeːn, respell: e-pi-LE-gayn}
+      erasmian: {ipa: e.pi.ˈle.ɡein, respell: e-pi-LE-gayn}
+  - id: ench.1.5.1.8
+    surface: ὅτι
+    lemma: ὅτι
+    morph: c--------
+    tb: 8/16632655
+    sound:
+      koine: {ipa: ˈo.ti, respell: O-tee}
+      restored: {ipa: hó.ti, respell: HO-ti}
+      erasmian: {ipa: ˈho.ti, respell: HO-ti}
+  - id: ench.1.5.1.9
+    surface: φαντασία
+    lemma: φαντασία
+    morph: n-s---fn-
+    tb: 8/16632656
+    sound:
+      koine: {ipa: fan.ta.ˈsi.a, respell: fan-ta-SEE-a}
+      restored: {ipa: pʰan.ta.sí.a, respell: pʰan-ta-SI-a}
+      erasmian: {ipa: fan.ta.ˈsi.a, respell: fan-ta-SI-a}
+  - id: ench.1.5.1.10
+    surface: εἶ
+    lemma: εἰμί
+    morph: v2spia---
+    tb: 8/16632657
+    sound:
+      koine: {ipa: ˈi, respell: EE}
+      restored: {ipa: êː, respell: AY}
+      erasmian: {ipa: ˈei, respell: AY}
+  - id: ench.1.5.1.11
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 8/16632658
+    sound:
+      koine: {ipa: ˈkɛ, respell: KE}
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: ench.1.5.1.12
+    surface: οὐ
+    lemma: οὐ
+    morph: d--------
+    tb: 8/16632659
+    sound:
+      koine: {ipa: u, respell: oo}
+      restored: {ipa: uː, respell: oo}
+      erasmian: {ipa: uː, respell: oo}
+  - id: ench.1.5.1.13
+    surface: πάντως
+    lemma: πάντως
+    morph: d--------
+    tb: 8/16632660
+    sound:
+      koine: {ipa: ˈpan.tos, respell: PAN-tos}
+      restored: {ipa: pán.tɔːs, respell: PAN-taws}
+      erasmian: {ipa: ˈpan.tɔːs, respell: PAN-tohs}
+  - id: ench.1.5.1.14
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---na-
+    tb: 8/16632661
+    sound:
+      koine: {ipa: ˈto, respell: TO}
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: ench.1.5.1.15
+    surface: φαινόμενον
+    punct: .
+    lemma: φαίνω
+    morph: v-sppena-
+    tb: 8/16632662
+    sound:
+      koine: {ipa: fɛ.ˈno.mɛ.non, respell: fe-NO-me-non}
+      restored: {ipa: pʰai.nó.me.non, respell: pʰai-NO-me-non}
+      erasmian: {ipa: fai.ˈno.me.non, respell: fai-NO-me-non}
+- id: ench.1.5.2
+  cite: urn:cts:greekLit:tlg0557.tlg002.perseus-grc2:1.5.2
+  stanza: '1.5'
+  stanza_title: Chapter 1, section 5
+  text: ἔπειτα ἐξέταζε αὐτὴν καὶ δοκίμαζε τοῖς κανόσι τούτοις οἷς ἔχεις, πρώτῳ δὲ τούτῳ καὶ μάλιστα, πότερον περὶ τὰ ἐφʼ ἡμῖν ἐστιν ἢ περὶ τὰ οὐκ ἐφʼ ἡμῖν·
+  tokens:
+  - id: ench.1.5.2.1
+    surface: ἔπειτα
+    lemma: ἔπειτα
+    morph: d--------
+    tb: 9/16632664
+    sound:
+      koine: {ipa: ˈɛ.pi.ta, respell: E-pee-ta}
+      restored: {ipa: é.peː.ta, respell: E-pay-ta}
+      erasmian: {ipa: ˈe.pei.ta, respell: E-pay-ta}
+  - id: ench.1.5.2.2
+    surface: ἐξέταζε
+    lemma: ἐξετάζω
+    morph: v2spma---
+    tb: 9/16632665
+    sound:
+      koine: {ipa: ɛ.ˈksɛ.ta.zɛ, respell: e-KSE-ta-ze}
+      restored: {ipa: e.ksé.ta.zde, respell: e-KSE-ta-zde}
+      erasmian: {ipa: e.ˈkse.ta.dze, respell: e-KSE-ta-dze}
+  - id: ench.1.5.2.3
+    surface: αὐτὴν
+    lemma: αὐτός
+    morph: a-s---fa-
+    tb: 9/16632666
+    sound:
+      koine: {ipa: av.ˈten, respell: av-TAYN}
+      restored: {ipa: au.tɛ̀ːn, respell: ow-tên}
+      erasmian: {ipa: au.ˈtɛːn, respell: ow-TAYN}
+  - id: ench.1.5.2.4
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 9/16632667
+    sound:
+      koine: {ipa: ˈkɛ, respell: KE}
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: ench.1.5.2.5
+    surface: δοκίμαζε
+    lemma: δοκιμάζω
+    morph: v2spma---
+    tb: 9/16632668
+    sound:
+      koine: {ipa: ðo.ˈki.ma.zɛ, respell: dho-KEE-ma-ze}
+      restored: {ipa: do.kí.ma.zde, respell: do-KI-ma-zde}
+      erasmian: {ipa: do.ˈki.ma.dze, respell: do-KI-ma-dze}
+  - id: ench.1.5.2.6
+    surface: τοῖς
+    lemma: ὁ
+    morph: l-p---md-
+    tb: 9/16632669
+    sound:
+      koine: {ipa: ˈtys, respell: TÜS}
+      restored: {ipa: tôis, respell: TOYS}
+      erasmian: {ipa: ˈtois, respell: TOYS}
+  - id: ench.1.5.2.7
+    surface: κανόσι
+    lemma: κανών
+    morph: n-p---md-
+    tb: 9/16632670
+    sound:
+      koine: {ipa: ka.ˈno.si, respell: ka-NO-see}
+      restored: {ipa: ka.nó.si, respell: ka-NO-si}
+      erasmian: {ipa: ka.ˈno.si, respell: ka-NO-si}
+  - id: ench.1.5.2.8
+    surface: τούτοις
+    lemma: οὗτος
+    morph: a-p---md-
+    tb: 9/16632671
+    sound:
+      koine: {ipa: ˈtu.tys, respell: TOO-tüs}
+      restored: {ipa: túː.tois, respell: TOO-toys}
+      erasmian: {ipa: ˈtuː.tois, respell: TOO-toys}
+  - id: ench.1.5.2.9
+    surface: οἷς
+    lemma: ὅς
+    morph: p-p---md-
+    tb: 9/16632672
+    sound:
+      koine: {ipa: ˈys, respell: ÜS}
+      restored: {ipa: hôis, respell: HOYS}
+      erasmian: {ipa: ˈhois, respell: HOYS}
+  - id: ench.1.5.2.10
+    surface: ἔχεις
+    punct: ','
+    lemma: ἔχω
+    morph: v2spia---
+    tb: 9/16632673
+    sound:
+      koine: {ipa: ˈɛ.xis, respell: E-khees}
+      restored: {ipa: é.kʰeːs, respell: E-kʰays}
+      erasmian: {ipa: ˈe.xeis, respell: E-khays}
+  - id: ench.1.5.2.11
+    surface: πρώτῳ
+    lemma: πρῶτος
+    morph: a-s---md-
+    tb: 9/16632675
+    sound:
+      koine: {ipa: ˈpro.to, respell: PRO-to}
+      restored: {ipa: prɔ́ː.tɔːi, respell: PRAW-tawi}
+      erasmian: {ipa: ˈprɔː.tɔː, respell: PROH-toh}
+  - id: ench.1.5.2.12
+    surface: δὲ
+    lemma: δέ
+    morph: b--------
+    tb: 9/16632676
+    sound:
+      koine: {ipa: ˈðɛ, respell: DHE}
+      restored: {ipa: dè, respell: de}
+      erasmian: {ipa: ˈde, respell: DE}
+  - id: ench.1.5.2.13
+    surface: τούτῳ
+    lemma: οὗτος
+    morph: a-s---nd-
+    tb: 9/16632677
+    sound:
+      koine: {ipa: ˈtu.to, respell: TOO-to}
+      restored: {ipa: túː.tɔːi, respell: TOO-tawi}
+      erasmian: {ipa: ˈtuː.tɔː, respell: TOO-toh}
+  - id: ench.1.5.2.14
+    surface: καὶ
+    lemma: καί
+    morph: b--------
+    tb: 9/16632678
+    sound:
+      koine: {ipa: ˈkɛ, respell: KE}
+      restored: {ipa: kaì, respell: kai}
+      erasmian: {ipa: ˈkai, respell: KAI}
+  - id: ench.1.5.2.15
+    surface: μάλιστα
+    punct: ','
+    lemma: μάλα
+    morph: d-------s
+    tb: 9/16632679
+    sound:
+      koine: {ipa: ˈma.lis.ta, respell: MA-lees-ta}
+      restored: {ipa: má.lis.ta, respell: MA-lis-ta}
+      erasmian: {ipa: ˈma.lis.ta, respell: MA-lis-ta}
+  - id: ench.1.5.2.16
+    surface: πότερον
+    lemma: πότερον
+    morph: d--------
+    tb: 9/16632681
+    sound:
+      koine: {ipa: ˈpo.tɛ.ron, respell: PO-te-ron}
+      restored: {ipa: pó.te.ron, respell: PO-te-ron}
+      erasmian: {ipa: ˈpo.te.ron, respell: PO-te-ron}
+  - id: ench.1.5.2.17
+    surface: περὶ
+    lemma: περί
+    morph: r--------
+    tb: 9/16632682
+    sound:
+      koine: {ipa: pɛ.ˈri, respell: pe-REE}
+      restored: {ipa: pe.rì, respell: pe-ri}
+      erasmian: {ipa: pe.ˈri, respell: pe-RI}
+  - id: ench.1.5.2.18
+    surface: τὰ
+    lemma: ὁ
+    morph: l-p---na-
+    tb: 9/16632683
+    sound:
+      koine: {ipa: ˈta, respell: TA}
+      restored: {ipa: tà, respell: ta}
+      erasmian: {ipa: ˈta, respell: TA}
+  - id: ench.1.5.2.19
+    surface: ἐφʼ
+    lemma: ἐπί
+    morph: r--------
+    tb: 9/16632684
+    sound:
+      koine: {ipa: ɛf, respell: ef’}
+      restored: {ipa: epʰ, respell: epʰ’}
+      erasmian: {ipa: ef, respell: ef’}
+  - id: ench.1.5.2.20
+    surface: ἡμῖν
+    lemma: ἐγώ
+    morph: p-p---cd-
+    tb: 9/16632685
+    sound:
+      koine: {ipa: e.ˈmin, respell: ay-MEEN}
+      restored: {ipa: hɛː.mîːn, respell: hê-MEEN}
+      erasmian: {ipa: hɛː.ˈmiːn, respell: hay-MEEN}
+  - id: ench.1.5.2.21
+    surface: ἐστιν
+    lemma: εἰμί
+    morph: v3spia---
+    tb: 9/16632686
+    sound:
+      koine: {ipa: ɛs.tin, respell: es-teen}
+      restored: {ipa: es.tin, respell: es-tin}
+      erasmian: {ipa: es.tin, respell: es-tin}
+  - id: ench.1.5.2.22
+    surface: ἢ
+    lemma: ἤ
+    morph: b--------
+    tb: 9/16632687
+    sound:
+      koine: {ipa: ˈe, respell: AY}
+      restored: {ipa: ɛ̀ː, respell: ê}
+      erasmian: {ipa: ˈɛː, respell: AY}
+  - id: ench.1.5.2.23
+    surface: περὶ
+    lemma: περί
+    morph: r--------
+    tb: 9/16632688
+    sound:
+      koine: {ipa: pɛ.ˈri, respell: pe-REE}
+      restored: {ipa: pe.rì, respell: pe-ri}
+      erasmian: {ipa: pe.ˈri, respell: pe-RI}
+  - id: ench.1.5.2.24
+    surface: τὰ
+    lemma: ὁ
+    morph: l-p---na-
+    tb: 9/16632689
+    sound:
+      koine: {ipa: ˈta, respell: TA}
+      restored: {ipa: tà, respell: ta}
+      erasmian: {ipa: ˈta, respell: TA}
+  - id: ench.1.5.2.25
+    surface: οὐκ
+    lemma: οὐ
+    morph: d--------
+    tb: 9/16632690
+    sound:
+      koine: {ipa: uk, respell: ook}
+      restored: {ipa: uːk, respell: ook}
+      erasmian: {ipa: uːk, respell: ook}
+  - id: ench.1.5.2.26
+    surface: ἐφʼ
+    lemma: ἐπί
+    morph: r--------
+    tb: 9/16632691
+    sound:
+      koine: {ipa: ɛf, respell: ef’}
+      restored: {ipa: epʰ, respell: epʰ’}
+      erasmian: {ipa: ef, respell: ef’}
+  - id: ench.1.5.2.27
+    surface: ἡμῖν
+    punct: ·
+    lemma: ἐγώ
+    morph: p-p---cd-
+    tb: 9/16632692
+    sound:
+      koine: {ipa: e.ˈmin, respell: ay-MEEN}
+      restored: {ipa: hɛː.mîːn, respell: hê-MEEN}
+      erasmian: {ipa: hɛː.ˈmiːn, respell: hay-MEEN}
+- id: ench.1.5.3
+  cite: urn:cts:greekLit:tlg0557.tlg002.perseus-grc2:1.5.3
+  stanza: '1.5'
+  stanza_title: Chapter 1, section 5
+  text: κἂν περί τι τῶν οὐκ ἐφʼ ἡμῖν ᾖ, πρόχειρον ἔστω τὸ διότι οὐδὲν πρὸς ἐμέ
+  tokens:
+  - id: ench.1.5.3.1
+    surface: κἂν
+    lemma: κἄν
+    morph: c--------
+    tb: 10/16632694
+    sound:
+      koine: {ipa: ˈkan, respell: KAN}
+      restored: {ipa: kàn, respell: kan}
+      erasmian: {ipa: ˈkan, respell: KAN}
+  - id: ench.1.5.3.2
+    surface: περί
+    lemma: περί
+    morph: r--------
+    tb: 10/16632695
+    sound:
+      koine: {ipa: pɛ.ˈri, respell: pe-REE}
+      restored: {ipa: pe.rí, respell: pe-RI}
+      erasmian: {ipa: pe.ˈri, respell: pe-RI}
+  - id: ench.1.5.3.3
+    surface: τι
+    lemma: τις
+    morph: a-s---na-
+    tb: 10/16632696
+    sound:
+      koine: {ipa: ti, respell: tee}
+      restored: {ipa: ti, respell: ti}
+      erasmian: {ipa: ti, respell: ti}
+  - id: ench.1.5.3.4
+    surface: τῶν
+    lemma: ὁ
+    morph: l-p---ng-
+    tb: 10/16632697
+    sound:
+      koine: {ipa: ˈton, respell: TON}
+      restored: {ipa: tɔ̂ːn, respell: TAWN}
+      erasmian: {ipa: ˈtɔːn, respell: TOHN}
+  - id: ench.1.5.3.5
+    surface: οὐκ
+    lemma: οὐ
+    morph: d--------
+    tb: 10/16632698
+    sound:
+      koine: {ipa: uk, respell: ook}
+      restored: {ipa: uːk, respell: ook}
+      erasmian: {ipa: uːk, respell: ook}
+  - id: ench.1.5.3.6
+    surface: ἐφʼ
+    lemma: ἐπί
+    morph: r--------
+    tb: 10/16632699
+    sound:
+      koine: {ipa: ɛf, respell: ef’}
+      restored: {ipa: epʰ, respell: epʰ’}
+      erasmian: {ipa: ef, respell: ef’}
+  - id: ench.1.5.3.7
+    surface: ἡμῖν
+    lemma: ἐγώ
+    morph: p-p---cd-
+    tb: 10/16632700
+    sound:
+      koine: {ipa: e.ˈmin, respell: ay-MEEN}
+      restored: {ipa: hɛː.mîːn, respell: hê-MEEN}
+      erasmian: {ipa: hɛː.ˈmiːn, respell: hay-MEEN}
+  - id: ench.1.5.3.8
+    surface: ᾖ
+    punct: ','
+    lemma: εἰμί
+    morph: v3spsa---
+    tb: 10/16632701
+    sound:
+      koine: {ipa: ˈe, respell: AY}
+      restored: {ipa: ɛ̂ːi, respell: ÊI}
+      erasmian: {ipa: ˈɛː, respell: AY}
+  - id: ench.1.5.3.9
+    surface: πρόχειρον
+    lemma: πρόχειρος
+    morph: a-s---nn-
+    tb: 10/16632703
+    sound:
+      koine: {ipa: ˈpro.xi.ron, respell: PRO-khee-ron}
+      restored: {ipa: pró.kʰeː.ron, respell: PRO-kʰay-ron}
+      erasmian: {ipa: ˈpro.xei.ron, respell: PRO-khay-ron}
+  - id: ench.1.5.3.10
+    surface: ἔστω
+    lemma: εἰμί
+    morph: v3spma---
+    tb: 10/16632704
+    sound:
+      koine: {ipa: ˈɛs.to, respell: ES-to}
+      restored: {ipa: és.tɔː, respell: ES-taw}
+      erasmian: {ipa: ˈes.tɔː, respell: ES-toh}
+  - id: ench.1.5.3.11
+    surface: τὸ
+    lemma: ὁ
+    morph: l-s---nn-
+    tb: 10/16632705
+    sound:
+      koine: {ipa: ˈto, respell: TO}
+      restored: {ipa: tò, respell: to}
+      erasmian: {ipa: ˈto, respell: TO}
+  - id: ench.1.5.3.12
+    surface: διότι
+    lemma: διότι
+    morph: c--------
+    tb: 10/16632706
+    sound:
+      koine: {ipa: ði.ˈo.ti, respell: dhee-O-tee}
+      restored: {ipa: di.ó.ti, respell: di-O-ti}
+      erasmian: {ipa: di.ˈo.ti, respell: di-O-ti}
+  - id: ench.1.5.3.13
+    surface: οὐδὲν
+    lemma: οὐδείς
+    morph: a-s---nn-
+    tb: 10/16632707
+    sound:
+      koine: {ipa: u.ˈðɛn, respell: oo-DHEN}
+      restored: {ipa: uː.dèn, respell: oo-den}
+      erasmian: {ipa: uː.ˈden, respell: oo-DEN}
+  - id: ench.1.5.3.14
+    surface: πρὸς
+    lemma: πρός
+    morph: r--------
+    tb: 10/16632708
+    sound:
+      koine: {ipa: ˈpros, respell: PROS}
+      restored: {ipa: pròs, respell: pros}
+      erasmian: {ipa: ˈpros, respell: PROS}
+  - id: ench.1.5.3.15
+    surface: ἐμέ
+    lemma: ἐγώ
+    morph: p-s---ca-
+    tb: 10/16632709
+    sound:
+      koine: {ipa: ɛ.ˈmɛ, respell: e-ME}
+      restored: {ipa: e.mé, respell: e-ME}
+      erasmian: {ipa: e.ˈme, respell: e-ME}

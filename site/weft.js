@@ -392,7 +392,14 @@
         : pos.none_found ? `No published position of the community on editions such as this one was found (${pos.none_found}). `
         : "",
       "Corrections from readers in the community take precedence: ",
-      issueLink("Correction", "suggest one"), ". ",
+      issueLink("Correction", "suggest one"),
+      W.contact && !D.work.private_work ? h("span", {}, ", or write to ",
+                    h("a", { href: `mailto:${W.contact}?subject=${encodeURIComponent(D.work.title)}`, text: W.contact }),
+                    " (no account needed)") : "",
+      ". ",
+      W.record_page && !D.work.private_work ? h("span", {}, "Fluent speakers can ",
+        h("a", { href: W.record_page, text: "read the text aloud" }), " line by line; ",
+        h("a", { href: "speakers.html", text: "what Weft asks and promises" }), ". ") : "",
       h("a", { href: "about.html#texts-of-living-communities", text: "How Weft handles these texts" }), ".");
     note.hidden = false;
   }

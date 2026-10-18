@@ -282,6 +282,8 @@ POS = {"N": "NOUN", "PN": "PROPN", "A": "ADJ", "ADV": "ADV", "ADP": "ADP", "CC":
        "D": "DET", "Di": "DET", "Dd": "DET", "POSS": "DET", "Dp": "DET", "Dt": "DET",
        "P": "PRON", "PRON": "PRON", "DEM": "PRON", "REL": "PRON", "INT": "PRON", "INDEF": "PRON", "REFL": "PRON", "NEGP": "PRON",
        "V": "VERB", "AUX": "AUX", "SYM": "SYM", "X": "X"}
+# a bare Universal Dependencies tag is its own code (CCONJ, PROPN, PUNCT), so a spec written in UD needs no shorthand
+POS.update({t: t for t in ("NOUN", "PROPN", "ADJ", "CCONJ", "SCONJ", "DET", "VERB", "PUNCT")})
 FIXED = {"D": ["Definite=Def", "PronType=Art"], "Di": ["Definite=Ind", "PronType=Art"], "Dd": ["PronType=Dem"], "POSS": ["Poss=Yes"], "Dp": ["Poss=Yes", "PronType=Prs"],
          "Dt": ["PronType=Tot"], "DEM": ["PronType=Dem"], "REL": ["PronType=Rel"], "INT": ["PronType=Int"], "INDEF": ["PronType=Ind"],
          "REFL": ["PronType=Prs", "Reflex=Yes"], "NEGP": ["PronType=Neg"]}
@@ -314,7 +316,7 @@ def expand_code(code: str) -> str:
       P.ns1 P.as3m P.ds3 (reflexive)                personal pronoun: case, number, person [gender]
       V.i3s.pr  V.s2p.pa  AUX.i3s.pr  V.i3s.pr.neg  finite: mood person number, tense, polarity
       V.inf  V.pp.nms  V.prp.nfs  V.imp2s  V.i1s.pr.m (middle voice)
-      ADV ADP CC SC PART INTJ SYM                   bare heads
+      ADV ADP CC SC PART INTJ SYM                   bare heads; a bare UD tag (CCONJ, PROPN, PUNCT) is accepted too
     A code already in UD form (contains '|' or '=') or a fused form ('X + Y') is returned unchanged."""
     if "|" in code or " + " in code or "=" in code:
         return code

@@ -17,6 +17,8 @@ it is held to the same rules.
 from __future__ import annotations
 
 RELATIONS = ("community", "outsider", "mixed")
+# the route for readers without a GitHub account: shown beside the issue links on every page with this block
+CONTACT = "speakers@weftlibrary.org"
 CONTENT = ("secular", "ceremonial")
 
 
@@ -75,4 +77,7 @@ def for_page(manifest: dict, translations: list[dict]) -> dict | None:
         "translations": [{"who": names.get(k, k), "relation": (v or {}).get("relation")}
                          for k, v in (s.get("translations") or {}).items()],
         "position": {k: (s.get("position") or {}).get(k) for k in ("source", "summary", "none_found")},
+        "contact": CONTACT,
+        # the recording page build writes beside the work page (record.py)
+        "record_page": f"{manifest.get('work')}.record.html",
     }

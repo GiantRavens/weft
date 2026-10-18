@@ -278,26 +278,34 @@ def load_conllu_text(path: Path, text_id: str, first: int, last: int) -> dict[in
     return out
 
 
-def conllu_tokens(rows: list[dict], sent_id: str) -> tuple[list[str], list[str | None], list[dict]]:
-    """Surfaces, trailing punctuation and treebank pairs for one sentence. Punctuation rows attach
-    to the word before them."""
+def conllu_tokens(rows: list[dict], sent_id: str) -> tuple[list[str], list[str | None], list[dict], list[str | None]]:
+    """Surfaces, trailing punctuation, treebank pairs and leading punctuation for one sentence.
+    Punctuation rows attach to the word before them; punctuation before the first word (an opening
+    quotation mark) attaches to the word after it, so it never becomes a token of its own."""
     surfaces: list[str] = []
     puncts: list[str | None] = []
+    leads: list[str | None] = []
     pairs: list[dict] = []
+    pending = ""
     for r in rows:
-        if r["upos"] == "PUNCT" and surfaces:
-            puncts[-1] = (puncts[-1] or "") + r["form"]
+        if r["upos"] == "PUNCT":
+            if surfaces:
+                puncts[-1] = (puncts[-1] or "") + r["form"]
+            else:
+                pending += r["form"]
             continue
         feats = "" if r["feats"] in ("_", "") else "|" + r["feats"]
         surfaces.append(r["form"])
         puncts.append(None)
+        leads.append(pending or None)
+        pending = ""
         pair = {"lemma": r["lemma"], "postag": r["upos"] + feats, "ref": f"{sent_id}/{r['id']}"}
         # some treebanks (Kyoto Classical Chinese) carry an English gloss in MISC
         for kv in (r.get("misc") or "_").split("|"):
             if kv.startswith("Gloss="):
                 pair["tbgloss"] = "-".join(kv[len("Gloss="):].split())
         pairs.append(pair)
-    return surfaces, puncts, pairs
+    return surfaces, puncts, pairs, leads
 
 
 # ---------------------------------------------------------------- MorphGNT (Greek New Testament)

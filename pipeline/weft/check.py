@@ -101,6 +101,9 @@ def run(repo: Path, work: str) -> dict:
                     bad(f"token-sound-unknown-{s}", t["id"], warn=True)
             if isinstance(t.get("gloss"), str) and " " in t["gloss"]:
                 bad("gloss-has-space", f"{t['id']} {t['gloss']!r}")
+    from . import audio
+    for cls, detail in audio.problems(audio.load(work_dir(repo, work)), list(data["schemes"]), ids):
+        bad(cls, detail)
     for m in data["_curated_missing"]:
         bad("curated-unknown-id", m["missing"])
     if not data["notes"]:

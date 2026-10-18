@@ -321,6 +321,9 @@ def run(repo: Path, work: str, private: bool = False) -> Path:
     out_dir.mkdir(parents=True, exist_ok=True)
     out = out_dir / f"{work}.html"
     out.write_text(html)
+    if data["work"].get("stewardship") and not data["work"].get("private_work"):
+        from . import record
+        record.write(data, out_dir, load_art(repo))
     write_index(repo, out_dir, private)
     return out
 

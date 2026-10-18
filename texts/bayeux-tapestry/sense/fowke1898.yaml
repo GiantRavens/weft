@@ -3,8 +3,8 @@
 # Brigham Young University copy (bayeuxtapestryhi00fowk_0). Verbatim apart from these OCR corrections:
 # "Badward" to "Eadward" (27), "Leo f wine" to "Leofwine" and "Gyrtk" to "Gyrth" (52), "Hastings^"
 # to "Hastings," (48). The OCR's final commas, where Fowke's caption runs on to the next caption, are
-# set as periods. "Kings crown" (29) is kept as printed. Where Fowke renders two captions as one
-# sentence (scenes 4-5, 22-23, 43, 38 with its second half), the span covers both lines. Fowke's
+# set as periods. "Kings crown" (29), "Williams" (10, 11, 19) and the other possessives without an apostrophe are kept as printed. Added 2026-10-17: "Willianzs" to "Williams" (10), "yElfgyva" to "Ælfgyva" (15), "Do I" to "Dol" (18), "Dinan^" to "Dinan," (19), "ships ^" to "ships," (37), "Harold' s" to "Harold's" (49), "felL" to "fell" (56). Where Fowke renders two captions as one
+# sentence (scenes 4-5, 19-20, 22-23, 43, 38 with its second half), the span covers both lines. Fowke's
 # "Count Guy" is the cloth's Wido; "the Earl" renders DUX for Harold.
 translation: fowke1898
 aligned_by: hand, phase 0
@@ -15,10 +15,42 @@ spans:
   text: "Where Harold, a chief of the English, and his knights, ride to Bosham. The Church."
 - lines: [bt.4.1, bt.5.1]
   text: "Here Harold set sail upon the sea, and with sails filled by the wind came to the land of Count Guy."
+- lines: [bt.6.1, bt.6.1]
+  text: "Harold."
 - lines: [bt.7.1, bt.7.1]
   text: "Here Guy seizes Harold."
+- lines: [bt.8.1, bt.8.1]
+  text: "And led him to Beaurain and there imprisoned him."
+- lines: [bt.9.1, bt.9.1]
+  text: "Where Harold and Guy converse."
+- lines: [bt.10.1, bt.10.1]
+  text: "Where Duke Williams messengers came to Guy."
+- lines: [bt.10.2, bt.10.2]
+  text: "Turold."
+- lines: [bt.11.1, bt.11.1]
+  text: "Williams Messengers."
+- lines: [bt.12.1, bt.12.1]
+  text: "Here the messenger came to Duke William."
 - lines: [bt.13.1, bt.13.1]
   text: "Here Guy conducted Harold to William Duke of the Normans."
+- lines: [bt.14.1, bt.14.1]
+  text: "Here Duke William, together with Harold came to his palace."
+- lines: [bt.15.1, bt.15.1]
+  text: "Where a certain clerk and Ælfgyva ....."
+- lines: [bt.16.1, bt.16.1]
+  text: "Here Duke William and his army came to Mont Saint-Michel."
+- lines: [bt.17.1, bt.17.1]
+  text: "And here they crossed the River Couesnon."
+- lines: [bt.17.2, bt.17.2]
+  text: "Here Harold the Earl dragged them out of the Quicksand."
+- lines: [bt.18.1, bt.18.1]
+  text: "And they came to Dol and Conan fled."
+- lines: [bt.18.2, bt.18.2]
+  text: "Rennes."
+- lines: [bt.19.1, bt.20.1]
+  text: "Here Duke Williams soldiers fight against the men of Dinan, and Conan reached out the keys."
+- lines: [bt.21.1, bt.21.1]
+  text: "Here William gave arms to Harold."
 - lines: [bt.22.1, bt.23.1]
   text: "Here William came to Bayeux, where Harold made an oath to Duke William."
 - lines: [bt.24.1, bt.24.1]
@@ -39,23 +71,59 @@ spans:
   text: "Archbishop Stigand."
 - lines: [bt.32.1, bt.32.1]
   text: "These men are dismayed at the Star."
+- lines: [bt.33.1, bt.33.1]
+  text: "Harold."
+- lines: [bt.34.1, bt.34.1]
+  text: "Here an English ship came into the territory of Duke William."
 - lines: [bt.35.1, bt.35.1]
   text: "Here Duke William gave orders to build ships."
+- lines: [bt.36.1, bt.36.1]
+  text: "Here they drag the ships to the sea."
+- lines: [bt.37.1, bt.37.1]
+  text: "These men carry the arms to the ships, and here they drag a cart with wine and arms."
 - lines: [bt.38.1, bt.38.1]
   text: "Here Duke William crossed over the sea in a great ship. And came to Pevensey."
 - lines: [bt.39.1, bt.39.1]
   text: "Here the horses go out of the ships."
+- lines: [bt.40.1, bt.40.1]
+  text: "And here the knights pushed on to Hastings to find food."
+- lines: [bt.41.1, bt.41.1]
+  text: "Here is Wadard."
+- lines: [bt.42.1, bt.42.1]
+  text: "Here meat is cooked and here the servants serve."
 - lines: [bt.43.1, bt.43.2]
   text: "Here they make a feast, and here the Bishop blesses the food and drink."
+- lines: [bt.44.1, bt.44.1]
+  text: "Bishop Odo. William. Robert."
 - lines: [bt.45.1, bt.45.1]
   text: "The latter commanded that a rampart should be thrown up at Hastings."
 - lines: [bt.45.2, bt.45.2]
   text: "The Camp."
+- lines: [bt.46.1, bt.46.1]
+  text: "Here tidings of Harold are brought to William."
+- lines: [bt.47.1, bt.47.1]
+  text: "Here a house is burnt."
 - lines: [bt.48.1, bt.48.1]
   text: "Here the Knights left Hastings, and came to give battle to King Harold."
+- lines: [bt.49.1, bt.49.1]
+  text: "Here Duke William asks Vital if he had seen Harold's army."
+- lines: [bt.50.1, bt.50.1]
+  text: "One informs King Harold concerning the army of Duke William."
+- lines: [bt.51.1, bt.51.1]
+  text: "Here Duke William exhorts his soldiers to prepare themselves manfully and discreetly for the battle against the army of the English."
 - lines: [bt.52.1, bt.52.1]
   text: "Here fell Leofwine and Gyrth, the brothers of King Harold."
+- lines: [bt.53.1, bt.53.1]
+  text: "Here English and French fell at the same time in the battle."
 - lines: [bt.54.1, bt.54.1]
   text: "Here Bishop Odo, holding a club, rallies the young troops."
+- lines: [bt.55.1, bt.55.1]
+  text: "Here is Duke William."
+- lines: [bt.56.1, bt.56.1]
+  text: "Eustace."
+- lines: [bt.56.2, bt.56.2]
+  text: "Here the French fight and those who were with Harold fell."
 - lines: [bt.57.1, bt.57.1]
   text: "Here King Harold was slain."
+- lines: [bt.58.1, bt.58.1]
+  text: "And the English fled."

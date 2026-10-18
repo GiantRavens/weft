@@ -1,14 +1,15 @@
 ---
 id: 168
 title: 'Build speaker-review intake for Cherokee pages: recording page, consent sheet...'
-state: TODO
+state: BEGUN
 priority: 2
 tags:
   - cherokee
   - stewardship
   - audio
 created_at: 2026-10-13T15:16:46.374594428-05:00
-updated_at: 2026-10-13T15:17:06.753354905-05:00
+updated_at: 2026-10-17T19:44:59.104502499-05:00
+started_at: 2026-10-17T19:36:23.343476033-05:00
 ---
 
 # Build speaker-review intake for Cherokee pages: recording page, consent sheet, non-GitHub correction route
@@ -28,15 +29,18 @@ Skip intends to send the Cherokee Constitution page (cherokee-constitution-1827)
 ## Acceptance
 
 - [ ] Recording page records, replays and exports one file per line id for the preamble from file:// and from weftlibrary.org, romanization hidden while recording
-- [ ] Consent sheet exists in docs/ and is linked from the Cherokee page's stewardship notice
-- [ ] Cherokee page shows a non-GitHub contact route (address chosen by Skip) beside the issue links
-- [ ] recording.yml and the schema accept a speaker-held licence and a no-AI-training condition; weft check passes on all works
-- [ ] Audio layer schema can label a recording as a modern speaker's reading with dialect, distinct from scheme c1828
+- [x] Consent sheet exists in docs/ and is linked from the Cherokee page's stewardship notice
+- [x] Cherokee page shows a non-GitHub contact route (address chosen by Skip) beside the issue links
+- [x] recording.yml and the schema accept a speaker-held licence and a no-AI-training condition; weft check passes on all works
+- [x] Audio layer schema can label a recording as a modern speaker's reading with dialect, distinct from scheme c1828
 
 ## Notes
 
 - 2026-10-13T20:17:06Z: context: Article I calibration and the pronunciation-capture recommendation are in pin 134 and docs/languages.md (Cherokee).
+- 2026-10-18T00:36:23Z: 2026-10-17: built. record.py writes <work>.record.html for every stewardship work (syllabary only, MediaRecorder, store-zip export with speaker.json; doubtful-word pass = lemma ? or uncertain sign, optional). Verified in headless Chromium from file:// with a fake mic: record/listen/re-record/save, zip valid, no romanization in DOM. docs/speakers.md (consent sheet; no honorarium line per Skip) -> speakers.html, linked from the stewardship notice. stewardship.CONTACT = speakers@weftlibrary.org (Skip's choice) shown as mailto. recording.yml: speaker reading kind, rights-kept license, no-AI checkbox. audio.py + schema section: speaker vs scheme readings, consent, withdrawal; wired into weft check; all 82 works ok; tests/test_audio.py. OPEN: (1) acceptance 1 weftlibrary.org half needs a deploy; (2) speakers@ currently hits the Cloudflare catch-all (domains@legacyportal.com), add a routing rule to skip@ if wanted.
+- 2026-10-18T00:44:59Z: skeptic round 2026-10-17 fixed: GitHub attachments are public, so rights-kept readings go by email (recording.yml); *.webm/m4a/ogg/flac gitignored; check refuses rights-retained files outside private/ or a URL; no-ai-training required on speaker readings; speakers.md: publication scope, ~70 unknown words, no playback yet, withdrawal cannot revoke open licenses, opt-out of AI handling of corrections (hand entry); record page: mic released after each take, valid zip dates, optional sense box per doubtful word; contact link hidden on private works.
 
 ## Log
 
 - 2026-10-13T20:16:46Z: Created task
+- 2026-10-18T00:36:23Z: State changed from TODO to BEGUN

@@ -13,12 +13,14 @@ written:
   display: "c. AD 125"
   label: compiled by Arrian from Epictetus's teaching, about AD 125
 status: phase-0
-extent: {is: excerpt, of: "chapter 1, sections 1 to 3; the Enchiridion has 53 chapters"}
+extent: {is: section, of: "the whole of chapter 1, sections 1 to 5; the Enchiridion has 53 chapters"}
 pilot:
   sections:
   - '1.1'
   - '1.2'
   - '1.3'
+  - '1.4'
+  - '1.5'
 edition:
   id: perseus-grc2
   name: Perseus perseus-grc2 (Schenkl 1916), passage in a Weft edition file
@@ -32,6 +34,8 @@ treebank:
   subdocs:
   - '1.1'
   - '1.2'
+  - '1.4'
+  - '1.5'
   file: sources/glaux-0557-002.xml
   url: https://raw.githubusercontent.com/perseids-publications/glaux-trees/12606b3426f1e5245413f3a8e1c5e0b22348a13c/public/xml/0557-002.xml
   sha256: 5de7618b57cff7724dbd60081596badf884140bb50865842a8e5770ec454477b

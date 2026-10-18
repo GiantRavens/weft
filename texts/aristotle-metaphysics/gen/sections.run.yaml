@@ -2,12 +2,24 @@ run:
   weft: 0.1.0
   sections:
   - 980a
+  - 980b
+  - 981a
+  - 981b
+  - 982a
 counts:
-  lines: 4
-  tokens: 61
-failures: {}
-samples: {}
-failure_rate: {}
+  lines: 28
+  tokens: 748
+failures:
+  form-mismatch: 1
+  no-treebank-word: 1
+samples:
+  form-mismatch:
+  - 980b.1 ἔστι|ἔσι
+  no-treebank-word:
+  - 980b.1 ἔστι
+failure_rate:
+  form-mismatch: 0.001
+  no-treebank-word: 0.001
 shift_left: []
 predicted_gaps:
 - lemma and morphology are an automatic parse (GLAUx), not hand-checked; expect some errors

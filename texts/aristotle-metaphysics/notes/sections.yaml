@@ -19,4 +19,22 @@
   attach: met.980a.1.5
   kind: editorial
   status: draft
-  text: "Lemma and form for each word come from GLAUx, a corpus of Greek parsed automatically rather than by hand. In this passage the parse needed no correction; in the Enchiridion and the Meditations on this site it needed ten and six."
+  text: "Lemma and form for each word come from GLAUx, a corpus of Greek parsed automatically rather than by hand. The first four sentences, 980a21-27, needed no correction. The rest of the chapter needed 57, each recorded in the curated overlay: most concern agreement with a word outside the phrase (things and arts parsed as masculine), and a few are outright misreadings, such as μέλιττα, 'bee', parsed as a verb. The Enchiridion chapter on this site needed nineteen, and book 2 of the Meditations 150."
+- id: n.met.ladder
+  attach: met.981a.1.10
+  kind: editorial
+  status: draft
+  leans_on: "the Greek text of the chapter; the two translations on this page"
+  text: "The chapter sets out a sequence. Animals have sensation (αἴσθησις); some keep memory (μνήμη) of it; many memories of the same thing make one experience (ἐμπειρία); and art (τέχνη) arises when, from many notions gathered by experience, one general judgment is formed about similar cases. The example is medical. To know that a remedy helped Callias and Socrates, each suffering from this disease, belongs to experience; to know that it helps everyone of a given kind, the phlegmatic or the bilious, belongs to art. Experience can act as well as art, or better, since action is always about a particular patient; art is ranked higher because it knows the cause and can be taught. The saying that experience made art and inexperience chance is attributed to Polus, the speaker of that name in Plato's Gorgias, as M'Mahon's footnote notes."
+- id: n.met.phantasia
+  attach: met.980b.2.6
+  kind: editorial
+  status: draft
+  leans_on: "Taylor (1801) and M'Mahon (1857), with M'Mahon's footnote on the word"
+  text: "φαντασίαις, glossed here 'appearances', is the plural of φαντασία, the way a thing appears or presents itself to the mind. Taylor renders it 'phantasy'. M'Mahon renders it 'impressions' and objects in a footnote that Taylor's word conveys little meaning and ignores the plural; he takes Aristotle to mean the ideas conveyed into the minds of animals by their representative power. The same word is the Stoic term in Epictetus, Enchiridion 1.5, on this site, where it is glossed 'impression'."
+- id: n.met.egypt
+  attach: met.981b.5.28
+  kind: editorial
+  status: draft
+  leans_on: "the Greek text; Herodotus 2.109 (geometry from Egypt); Plato, Phaedrus 274c-d (the Egyptian god Theuth as inventor of number and geometry)"
+  text: "The argument ranks theoretical knowledge above the rest because it is not pursued for use: the sciences that serve neither need nor pleasure were found last, once the others were in place, and only where people had leisure (σχολάζειν, from σχολή, leisure, the word behind English 'school'). Aristotle's example is the priests of Egypt, among whom the mathematical arts first arose. Herodotus also places the origin of geometry in Egypt, but gives it a practical cause, the re-measuring of land after the Nile's floods, where Aristotle gives leisure; Plato makes the Egyptian god Theuth the inventor of number and geometry. This note does not assess the claim as history. The chapter ends by naming what it has been leading to: wisdom (σοφία) is knowledge of certain principles and causes, the subject of the books that follow."

@@ -1,10 +1,10 @@
 run:
   weft: 0.1.0
   book: 14
-  lines: 1-9
+  lines: 1-104
 counts:
-  lines: 9
-  tokens: 80
+  lines: 104
+  tokens: 1163
 failures: {}
 samples: {}
 failure_rate: {}
@@ -13,4 +13,8 @@ predicted_gaps:
 - 'IcePaHC spells the saga in modern Icelandic (kallaður, not kallaðr): the old-norse reading is approximate'
 - 'UD layer is an automatic conversion of hand-made Penn parses: expect some wrong case and part-of-speech tags'
 - 'unit is the sentence: a saga is prose, so lines are sentences and spans are clauses'
-- the treebank file is 61 MB for a nine-sentence pilot; acceptable, but a slicing acquire step would help
+- 'the three verses of chapter 14 (after sentences 31, 53 and 94: Grettir on the geese, Grettir on the back-scratching, Asmund on Kengala) are not in IcePaHC, which leaves out verse; they are not yet edited
+  here, and their translations are left out of the spans, so the chapter''s prose is complete and its verse is not'
+- the UD conversion needed 54 corrections in sentences 10-104 (case, person and gender features, the preterite infinitive mundu tagged as finite, pronouns converted as proper nouns, a few lemmas), each
+  recorded in the curated overlay
+- the treebank file is 61 MB for one chapter; acceptable, but a slicing acquire step would help

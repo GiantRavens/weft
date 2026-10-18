@@ -1,10 +1,8 @@
 # Human overlay for the preamble of the Constitution of the Cherokee Nation (1827), Cherokee text of the 1828 printing.
-# No treebank covers Cherokee. Each word was annotated by hand against three references, consulted through
-# cherokeedictionary.net: Durbin Feeling's Cherokee-English Dictionary (1975; in copyright, consulted, not reproduced),
-# the Cherokee New Testament (1860), and Wiktionary's Cherokee entries. The English text printed beside the Cherokee is
+# No treebank covers Cherokee. Each word was annotated by hand against the references consulted through cherokeedictionary.net
+# and named under Sources below, and against Wiktionary's Cherokee entries. The English text printed beside the Cherokee is
 # the guide to sense, word by word where the two run together.
-#   lemma   Feeling's headword (the third person present) where the verb or noun was found there [CED]; otherwise a form
-#           of the same word found in the 1860 New Testament [NT] or on Wiktionary [Wikt]; ? where neither was found
+#   lemma   the headword or form of the same word in the source the comment names; ? where none was found
 #   morph   Universal Dependencies features: the part of speech, and the person and number of the pronominal prefix
 #           where it is clear (ᎣᎩ-, ᎣᏥ-: first person plural exclusive, "we, not you"; ᏦᎩ-, ᏦᏥ- add to these the
 #           distributive prefix, as ᏦᎨᏥ, "our children", does); the -ᏗᏱ ending is the infinitive of purpose ("in order
@@ -12,6 +10,11 @@
 #           Oklahoma Cherokee (2008). Tone, length and aspect are not annotated: the syllabary does not write the first two.
 #   gloss   one English gloss per word; a gloss ending in ? was taken from the English text beside it, not from an
 #           analysis of the Cherokee word
+#   Sources for the preamble. cherokeedictionary.net serves several word lists besides Feeling, and each citation names the
+#   one the entry came from: CED, Feeling's Cherokee-English Dictionary (1975); NOQ, the Noquisi word list; CWL, the
+#   Consortium Word List; RRD, the Raven Rock dictionary; CN, the Cherokee Nation word list; NT, the 1860 New Testament;
+#   Wikt, Wiktionary. Each is consulted, not reproduced. The citations were rechecked on 17 October 2026 by exact-match
+#   search, which reports the list each entry belongs to; an earlier draft had tagged entries from other lists as CED.
 - by: Claude (an AI model, Weft phase 0), word by word against the references above; for review by a Cherokee speaker and a linguist
   date: 2026-10-13
   why: no treebank for Cherokee; the words of a polysynthetic language need a speaker's review before the draft status is lifted
@@ -25,8 +28,8 @@
     chcon.pre.1.6: {lemma: "ᏣᎳᎩ", morph: "PROPN", gloss: "Cherokee"}   # [Wikt]
     chcon.pre.1.7: {lemma: "ᎾᏅᎾᏛ", morph: "ADV", gloss: "all-around"}   # [NT Matthew 3:5, "the region round about"]
     chcon.pre.1.8: {lemma: "ᎤᏁᏤᎸ", morph: "VERB|Number[obj]=Plur|Number[subj]=Plur|Person[obj]=1|Person[subj]=3|VerbForm=Part", gloss: "who-instructed-us"}   # ᎪᎩ-: they to us; ᎤᏁᏤᎸ(Ꭹ) "he commanded" [NT]
-    chcon.pre.2.1: {lemma: "ᏚᏳᎪᏛ", morph: "NOUN", gloss: "justice"}   # [Wikt; CED "the truth"]
-    chcon.pre.2.2: {lemma: "ᎧᏁᎦ", morph: "VERB|Clusivity=Ex|Number=Plur|Person=1|VerbForm=Inf", gloss: "for-us-to-declare"}   # [CED, "he's speaking"; NT ᎧᏁᎢᏍᏗ]
+    chcon.pre.2.1: {lemma: "ᏚᏳᎪᏛ", morph: "NOUN", gloss: "justice"}   # [Wikt; CN "truth"; NOQ "justice", "right", "honest"]
+    chcon.pre.2.2: {lemma: "ᎧᏁᎢᏍᏗᎭ", morph: "VERB|Clusivity=Ex|Number=Plur|Person=1|VerbForm=Inf", gloss: "for-us-to-declare"}   # [CED ᎧᏁᎢᏍᏗᎭ, "he's mentioning it"; NT ᎧᏁᎢᏍᏗ]
     chcon.pre.2.3: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}   # [Wikt]
     chcon.pre.2.4: {lemma: "ᏙᎯ", morph: "NOUN", gloss: "peace"}   # [CED, "well (health)"]
     chcon.pre.2.5: {lemma: "ᎦᎾᏄᎪᏫᏍᎦ", morph: "VERB|Clusivity=Ex|Number=Plur|Person=1|VerbForm=Inf", gloss: "for-us-to-bring-forth"}   # [NT, "it appears"]
@@ -41,7 +44,7 @@
     chcon.pre.4.1: {lemma: "ᎾᏍᏉ", morph: "ADV", gloss: "also"}   # [NT]
     chcon.pre.4.2: {lemma: "ᎠᏍᏓᏱᏗᏍᏗ", morph: "VERB|Clusivity=Ex|Number=Plur|Person=1|VerbForm=Inf", gloss: "for-us-to-make-firm"}   # [NT]
     chcon.pre.4.3: {lemma: "ᎡᎲ", morph: "VERB|Clusivity=Ex|Number=Plur|Person=1", gloss: "we-live"}   # ᎣᏤᎲ [NT, two places]
-    chcon.pre.4.4: {lemma: "ᎤᎾᏝᎢ", morph: "NOUN|Clusivity[psor]=Ex|Number[psor]=Plur|Person[psor]=1", gloss: "our-owner"}   # [NT; ᏦᎩᎾᏝᎢ Galatians 2:4, in "that they might bring us into bondage"]
+    chcon.pre.4.4: {lemma: "ᎠᏥᎾᏝᎢ", morph: "NOUN|Clusivity=Ex|Number=Plur|Person=1", gloss: "we-bondservants"}   # ᏦᎩᎾᏝᎢ [NT Galatians 2:4, in "that they might bring us into bondage"]; ᎠᏥᎾᏝᎢ [NOQ "slave, servant"]; ᏗᎨᏥᎾᏝᎢ "bond" against ᏂᏗᎨᏥᎾᏝᎥᎾ "free" [NT Revelation 6:15]; see the note
     chcon.pre.4.5: {lemma: "ᎨᏒ", morph: "AUX|Polarity=Neg|VerbForm=Vnoun", gloss: "not-being"}   # ᏂᎨᏒᎾ [NT]
     chcon.pre.4.6: {lemma: "ᏥᎩ", morph: "AUX", gloss: "which-is"}   # [NT]
     chcon.pre.4.7: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
@@ -51,15 +54,15 @@
     chcon.pre.4.11: {lemma: "ᎠᏍᏓᏱᏗᏍᏗ", morph: "VERB|Clusivity=Ex|Number=Plur|Person=1|VerbForm=Inf", gloss: "for-us-to-secure-for-them"}   # ᏍᏓᏱᏕ- with an object [NT ᎡᏥᏍᏓᏱᏕᏗᏱ]
     chcon.pre.5.1: {lemma: "ᏚᏂᎳᏫᏨ", morph: "VERB|Clusivity=Ex|Number=Plur|Person=1|VerbForm=Part", gloss: "we-who-assembled"}   # [NT, "they assembled"]
     chcon.pre.5.2: {lemma: "ᎯᎠ", morph: "DET|PronType=Dem", gloss: "this"}   # [Wikt]
-    chcon.pre.5.3: {lemma: "ᏗᎧᏃᏩᏛᏍᏗ", morph: "NOUN", gloss: "law"}   # [CED; NT spelling ᏗᎧᎿᏩᏛᏍᏗ]
+    chcon.pre.5.3: {lemma: "ᏗᎧᏃᏩᏛᏍᏗ", morph: "NOUN", gloss: "law"}   # [CED "law"; NT spelling ᏗᎧᎿᏩᏛᏍᏗ]
     chcon.pre.5.4: {lemma: "ᏣᎳᎩ", morph: "PROPN", gloss: "Cherokee"}
     chcon.pre.5.5: {lemma: "ᎤᎾᏤᎵ", morph: "PRON|Number=Plur|Person=3|Poss=Yes", gloss: "their-own"}   # [NT]
     chcon.pre.5.6: {lemma: "ᎪᏢᏍᎦ", morph: "VERB|Clusivity=Ex|Number=Plur|Person=1", gloss: "we-have-made"}   # [CED, "he's making it"; NT ᏦᏢᏅᎯ Revelation 4:11]
     chcon.pre.6.1: {lemma: "ᎦᎸᎳᏗ", morph: "ADV", gloss: "above"}   # [Wikt]
     chcon.pre.6.2: {lemma: "ᎡᎯ", morph: "NOUN", gloss: "who-dwells"}   # [Wikt]
-    chcon.pre.6.3: {lemma: "ᏂᎬᎾᏛ", morph: "ADJ", gloss: "all"}   # [CED]
+    chcon.pre.6.3: {lemma: "ᏂᎬᎾᏛ", morph: "ADV", gloss: "everywhere"}   # [NT Matthew 4:23, "went about all Galilee"; 4:24, "into all Syria"]; not a separate entry in the word lists, which have ᏂᎬᎾᏛᎢ "country" [CWL] and ᏂᎬᎾᏛ ᎠᏰᎵ "federal" [NOQ]
     chcon.pre.6.4: {lemma: "ᎤᎬᏫᏳᎯ", morph: "NOUN", gloss: "ruler"}   # [Wikt]
-    chcon.pre.6.5: {lemma: "ᎧᏁᎦ", morph: "VERB|Clusivity=Ex|Number=Plur|Person=1", gloss: "we-speak-of"}   # last sign uncertain
+    chcon.pre.6.5: {lemma: "ᎧᏁᎢᏍᏗᎭ", morph: "VERB|Clusivity=Ex|Number=Plur|Person=1", gloss: "we-speak-of"}   # [CED ᎧᏁᎢᏍᏗᎭ, "he's mentioning it", which lists ᎯᏁᎢᏍᏓ]; last sign uncertain
     chcon.pre.7.1: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
     chcon.pre.7.2: {lemma: "ᎠᎵᎮᎵᎦ", morph: "VERB|Clusivity=Ex|Number=Plur|Person=1", gloss: "we-give-thanks"}   # [CED, "he's happy/thankful"; NT ᎯᏯᎵᎡᎵᏥᏏ]
     chcon.pre.7.3: {lemma: "ᎾᏍᎩ", morph: "PRON|PronType=Dem", gloss: "that"}   # [NT]
@@ -69,7 +72,7 @@
     chcon.pre.7.7: {lemma: "ᎾᏍᎩ", morph: "PRON|PronType=Dem", gloss: "that"}
     chcon.pre.7.8: {lemma: "ᎢᏳᏍᏗ", morph: "ADV", gloss: "such"}
     chcon.pre.7.9: {lemma: "ᏗᎦᎸᏫᏍᏓᏁᏗ", morph: "VERB|Clusivity=Ex|Number=Plur|Person=1|VerbForm=Inf", gloss: "for-us-to-do"}   # [NT, "work"]
-    chcon.pre.7.10: {lemma: "ᎢᏳᎵᏍᏓᏁᏗ", morph: "VERB", gloss: "it-has-come-about?"}   # a form of the same verb as 3.3 [NT ᎢᏳᎵᏍᏓᏁᏗ]; CED ᏂᎦᎵᏍᏓᏂᏏᏒ, "sequence of events"; sense from the English
+    chcon.pre.7.10: {lemma: "ᎢᏳᎵᏍᏓᏁᏗ", morph: "VERB", gloss: "it-has-come-about?"}   # a form of the same verb as 3.3 [NT ᎢᏳᎵᏍᏓᏁᏗ]; CWL ᏂᎦᎵᏍᏓᏂᏏᏒ, "sequence of events"; sense from the English
     chcon.pre.8.1: {lemma: "ᎠᎴ", morph: "CCONJ", gloss: "and"}
     chcon.pre.8.2: {lemma: "ᎾᏍᎩ", morph: "PRON|PronType=Dem", gloss: "him"}
     chcon.pre.8.3: {lemma: "ᎠᏍᏕᎵᎭ", morph: "VERB|Clusivity[obj]=Ex|Number[obj]=Plur|Person[obj]=1|VerbForm=Inf", gloss: "to-help-us"}   # [CED, "he's helping him"; NT ᎣᎩᏍᏕᎸᏗᏱ]

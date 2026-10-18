@@ -5,8 +5,22 @@ run:
   - '2'
   - '4'
   - '5'
+  - '6'
   - '7'
+  - '8'
+  - '9'
+  - '10'
+  - '11'
+  - '12'
   - '13'
+  - '14'
+  - '15'
+  - '16'
+  - '17'
+  - '18'
+  - '19'
+  - '20'
+  - '21'
   - '22'
   - '23'
   - '24'
@@ -16,18 +30,35 @@ run:
   - '29'
   - '30'
   - '32'
+  - '33'
+  - '34'
   - '35'
+  - '36'
+  - '37'
   - '38'
   - '39'
+  - '40'
+  - '41'
+  - '42'
   - '43'
+  - '44'
   - '45'
+  - '46'
+  - '47'
   - '48'
+  - '49'
+  - '50'
+  - '51'
   - '52'
+  - '53'
   - '54'
+  - '55'
+  - '56'
   - '57'
+  - '58'
 counts:
-  lines: 28
-  tokens: 171
+  lines: 63
+  tokens: 382
 failures: {}
 samples: {}
 failure_rate: {}
@@ -37,10 +68,15 @@ predicted_gaps:
 - the Norman reading of about 1070 is reconstructed from Old French and Anglo-Norman sound history and spelling and from later accounts of French reading of Latin; no description from the period survives;
   approximate, and u as French u and silent h (Harold) are its least certain points
 - the transcription normalizes letter forms (U for V, W for VV, J for I) and expands abbreviations in square brackets; the sound reads the expanded word, as a reader of the cloth would have
-- 'the cloth''s spellings are kept and read as written: names in English or Norman form (Harold, Willelm, Wilgelm, Edward, Eadward, Wido, Lewine, Gyrð, Stigant), places (Bosham, Bagias, Pevenesæ, Hestenga
-  ceastra), at for ad, and e for ae and oe (PR[O]ELIUM, [A]EDIFICARE are printed with the transcription''s brackets); names take no long vowels in the classical reading, since none is attested'
+- 'the cloth''s spellings are kept and read as written: names in English or Norman form (Harold, Willelm, Wilgelm, Edward, Eadward, Wido, Lewine, Gyrð, Stigant, Turold, Ælfgyva, Conan and Cunan, Wadard,
+  Rotbert, Vital, Eustatius), places (Bosham, Belrem, Dol, Rednes, Dinan, Bagias, Pevenesæ, Hestenga ceastra), at for ad, and e for ae and oe (PR[O]ELIUM, [A]EDIFICARE are printed with the transcription''s
+  brackets); names take no long vowels in the classical reading, since none is attested'
 - HIE in scene 22 is a slip of the needle for HIC and is read as hic
-- the cross that opens scene 38 is kept as a token; it has no sound
-- 'scene 21 is omitted: the transcription gives HIC WILLELM[US] DEDIT ARMA HAROLDO, while the cloth reads HIC WILLELM DEDIT HAROLDO ARMA (checked against the photograph)'
+- the crosses that open scenes 12 and 38 are kept as tokens; they have no sound. The Tironian sign ⁊ in scene 9 is printed as the cloth has it and read as et
+- scene 21 follows the cloth, HIC WILLELM DEDIT HAROLDO ARMA, where the transcription gives DEDIT ARMA HAROLDO, and scenes 44, 50 and 55 follow the cloth's spellings of the duke's name, WILLELM, WILELMI
+  and WILEL, where the transcription regularizes them (the photographs, Fowke and Bruce agree); each difference is declared in edition.yaml
+- 'scene 15 stops at ÆLFGYVA: the caption has no verb, and what it refers to is not known'
+- the caption of scene 58, ET FUGA VERTERUNT ANGLI, is missing from 18th-century copies of the cloth and is held by Musset to be a restoration, as is EDWARD in scene 1; both are kept as the cloth now reads,
+  with a note
 - Fowke's English comes from OCR of the 1898 printing; clear OCR errors are corrected and listed in the sense file; Bruce's renderings are Project Gutenberg's proofread text
-- Bruce gives no rendering for some captions (scenes 1, 4, 7, 23, 38, 39 and Stigand in 30); his translation is marked partial
+- Bruce gives no rendering for some captions (scenes 1, 4, 6, 14, 23, 33, 37, 41, 53, Turold in 10, Rednes in 18, Stigand in 30, Eustace in 56); his translation is marked partial

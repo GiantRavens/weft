@@ -197,3 +197,19 @@ stays until a human reviewer lifts it.
   carries punctuation, which is how that slip shows itself.
 - The CLTK copy of the heimskringla Hávamál stops at stanza 145. Check a "complete" file against
   the standard count before building on it.
+- GLAUx, the automatic Greek parse, errs most on agreement with a word outside the phrase: neuter
+  "things" and feminine "arts" or "sciences" parsed as masculine, subjects and predicates parsed as
+  accusatives, and οἷον or an adverbial accusative parsed as a nominative. Metaphysics A.1 needed 57
+  corrections in 748 tokens. Read every token of a GLAUx work, not a sample.
+- The UD conversion of IcePaHC is automatic: it drops or adds person and case features (a case on the
+  verb mun), converts þú and þetta as proper nouns, and now and then gives a wrong lemma. Grettis saga
+  chapter 14 needed 37 corrections in about 1,100 tokens.
+- A `verify_corrections` entry replaces every match in the source, so key it on context unique to the
+  line (EXERCITU WILLELMI, not WILLELMI). The Bayeux transcription regularizes names the cloth spells
+  otherwise; check a caption against the photograph and the 19th-century prints, not only the
+  transcription.
+- On cherokeedictionary.net, search with searchForExactMatch: the substring search caps its results
+  and silently drops Feeling's entries. The result names the word list each entry comes from.
+- Long translations read from OCR (Taylor 1801, M'Mahon 1857) need the page image wherever the OCR
+  is unclear or the scan has margin notes: `https://archive.org/download/<id>/page/n<leaf-1>_w1400.jpg`,
+  with the leaf from `<id>_page_numbers.json`.

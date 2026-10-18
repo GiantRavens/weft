@@ -1,16 +1,36 @@
-# Weft edition: the Latin captions (tituli) of the Bayeux Tapestry, about 1070s, in a selection of
-# twenty-four scenes that follows the story from Edward and Harold to Harold's death. The text is the
+# Weft edition: the Latin captions (tituli) of the Bayeux Tapestry, about 1070s: every caption on the
+# surviving cloth, scenes 1 to 58 (the first twenty-four scenes built 2026-10-01, the rest 2026-10-17). The text is the
 # transcription in the English Wikipedia article "Bayeux Tapestry tituli" (revision 1375979759),
 # which numbers scenes by the numbers on the tapestry's backing cloth (added around 1800) and puts
 # letters supplied for abbreviations in square brackets. That transcription normalizes the letter
 # forms: U for the cloth's V where it is a vowel, W for VV, J for consonantal I. Every line is checked
 # verbatim against it by `weft draft`; the page's footnote templates are stripped before the check.
 # Where a caption spans two backing-cloth numbers it stands in one section (2-3, 27-28, 30-31).
-# Scene 21 (HIC WILLELM DEDIT HAROLDO ARMA on the cloth) is omitted: the transcription gives its
-# words in a different order from the embroidery.
+# Scene 21 follows the cloth's word order, HIC WILLELM DEDIT HAROLDO ARMA, where the transcription
+# gives DEDIT ARMA HAROLDO; the difference is declared under verify_corrections. Scene 15 stops at
+# ÆLFGYVA, where the transcription's [...] marks the missing verb. The Tironian sign in scene 9 is a
+# token printed as ⁊ and read as et. In scenes 44, 50 and 55 the duke's name follows the cloth's spelling
+# (WILLELM, WILELMI, WILEL), where the transcription regularizes it; these are declared below too.
 # Each section carries one photograph of its scene (art/works/bayeux-tapestry/).
 verify_in: sources/tituli-en-wikipedia.txt
 verify_strip: '\{\{sic\}\}|\{\{#tag:ref\|.*?\|group="nb"\}\}'
+verify_corrections:
+# scene 21: the transcription gives DEDIT ARMA HAROLDO; the cloth reads DEDIT HAROLDO ARMA (the 2017
+# photograph; Fowke 1898 plate XXV, HIC WILLELM DEDIT HAROLDO ARMA; Bruce 1856). The edition follows the cloth.
+- ocr: DEDIT ARMA HAROLDO
+  print: DEDIT HAROLDO ARMA
+  in: sources/tituli-en-wikipedia.txt
+# scenes 44, 50 and 55: the transcription regularizes the duke's name; the cloth reads WILLELM (44),
+# WILELMI (50) and WILEL (55), as the 2017 photographs show and Fowke and Bruce print them
+- ocr: WILLEM[US] ROTBERT
+  print: WILLELM[US] ROTBERT
+  in: sources/tituli-en-wikipedia.txt
+- ocr: EXERCITU WILLELMI
+  print: EXERCITU WILELMI
+  in: sources/tituli-en-wikipedia.txt
+- ocr: WILLEL[MUS] DUX
+  print: WILEL[MUS] DUX
+  in: sources/tituli-en-wikipedia.txt
 sections:
   - id: "1"
     title: "Scene 1: King Edward"
@@ -56,6 +76,17 @@ sections:
       source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_05_(cropped).png"
     lines:
       - "ET VELIS VENTO PLENIS VENIT IN TERRA WIDONIS COMITIS"
+  - id: "6"
+    title: "Scene 6: Harold comes ashore"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-06.jpg"
+      caption: "Scene 6. Harold's ship comes in to the shore. Harold, named above him, stands in the bow, and a man in the water hauls the anchor line."
+      alt: "Embroidered ship with a striped hull coming to shore, a man standing in its bow and another in the water holding a line"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_06_(cropped).png"
+    lines:
+      - "HAROLD"
   - id: "7"
     title: "Scene 7: Guy seizes Harold"
     figure:
@@ -67,6 +98,67 @@ sections:
       source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_07_(cropped).png"
     lines:
       - "HIC APPREHENDIT WIDO HAROLDU[M]"
+  - id: "8"
+    title: "Scene 8: Guy leads Harold to Beaurain"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-08.jpg"
+      caption: "Scene 8. Guy's party rides with Harold toward Beaurain, hounds running ahead; the rider at the right carries a hawk. The cloth spells the place BELREM."
+      alt: "Embroidered procession of horsemen with hounds and a hawk passing a tree"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_08_(cropped).png"
+    lines:
+      - "ET DUXIT EUM AD BELREM ET IBI EUM TENUIT"
+  - id: "9"
+    title: "Scene 9: Harold and Guy confer"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-09.jpg"
+      caption: "Scene 9. Guy, seated, talks with Harold, who stands before him, while armed men look on. The cloth writes the Tironian sign ⁊ for et."
+      alt: "Embroidered scene of a seated man gesturing to a standing man, with a group of men to the left"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_09_(cropped).png"
+    lines:
+      - tokens:
+        - {t: "UBI"}
+        - {t: "HAROLD"}
+        - {t: "⁊", n: "et"}
+        - {t: "WIDO"}
+        - {t: "PARABOLANT"}
+  - id: "10"
+    title: "Scene 10: William's messengers come to Guy"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-10.jpg"
+      caption: "Scene 10. William's messengers come to Guy. The small bearded figure holding the horses is named TUROLD on the cloth."
+      alt: "Embroidered scene of men with spears and an axe meeting, a small figure holding a horse, an arcaded building at right"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_10_(cropped)2.png"
+    lines:
+      - "UBI NUNTII WILLELMI DUCIS VENERUNT AD WIDONE[M]"
+      - "TUROLD"
+  - id: "11"
+    title: "Scene 11: The messengers ride"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-11.jpg"
+      caption: "Scene 11. Two of William's messengers gallop with shields and spears."
+      alt: "Two embroidered horsemen galloping with shields beside an arcaded building"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_11_(cropped).png"
+    lines:
+      - "NUNTII WILLELMI"
+  - id: "12"
+    title: "Scene 12: News reaches William"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-12.jpg"
+      caption: "Scene 12. A messenger comes before Duke William, who sits with a sword beside a walled palace. A cross stands before the first word on the cloth."
+      alt: "Embroidered scene of a seated man with a sword receiving a standing and a crouching man, a towered building at right"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_12_(cropped).png"
+    lines:
+      - "† HIC VENIT NUNTIUS AD WILGELMUM DUCEM"
   - id: "13"
     title: "Scene 13: Guy brings Harold to William"
     figure:
@@ -78,6 +170,96 @@ sections:
       source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_13_(cropped).png"
     lines:
       - "HIC WIDO ADDUXIT HAROLDUM AD WILGELMUM NORMANNORUM DUCEM"
+  - id: "14"
+    title: "Scene 14: William brings Harold to his palace"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-14.jpg"
+      caption: "Scene 14. William and Harold ride to the duke's palace, where William sits in the hall and a man speaks before him."
+      alt: "Embroidered strip of horsemen riding toward a long arcaded hall where a seated man listens to a standing man"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_14_(cropped).png"
+    lines:
+      - "HIC DUX WILGELM[US] CUM HAROLDO VENIT AD PALATIU[M] SUU[M]"
+  - id: "15"
+    title: "Scene 15: A cleric and Ælfgyva"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-15.jpg"
+      caption: "Scene 15. A cleric reaches toward the face of a woman named Ælfgyva, who stands between two carved posts. No verb follows her name, and what the scene refers to is not known."
+      alt: "Embroidered scene of a man in a cloak touching the face of a woman framed by two decorated posts"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_15_(cropped).png"
+    lines:
+      - "UBI UNUS CLERICUS ET ÆLFGYVA"
+  - id: "16"
+    title: "Scene 16: To Mont Saint-Michel"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-16.jpg"
+      caption: "Scene 16. William's army rides toward Mont Saint-Michel, shown at the right as a building on a mound."
+      alt: "Embroidered column of horsemen riding toward a building set on a hill"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_16_(cropped).png"
+    lines:
+      - "HIC WILLEM[US] DUX ET EXERCITUS EIUS VENERUNT AD MONTE[M] MICHAELIS"
+  - id: "17"
+    title: "Scene 17: The crossing of the Couesnon"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-17.jpg"
+      caption: "Scene 17. The army fords the Couesnon. Men and a horse founder in the sand, and Harold carries one man on his back and pulls another by the hand."
+      alt: "Embroidered scene of men wading a river, a horse falling, one man carrying another on his back"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_17_(cropped).png"
+    lines:
+      - "ET HIC TRANSIERUNT FLUMEN COSNONIS"
+      - "HIC HAROLD DUX TRAHEBAT EOS DE ARENA"
+  - id: "18"
+    title: "Scene 18: Dol and Rennes"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-18.jpg"
+      caption: "Scene 18. The army attacks Dol, and a man lets himself down from the tower on a rope, usually taken to be Conan escaping. The name of Rennes, REDNES, begins at the right edge."
+      alt: "Embroidered horsemen charging a tower on a mound, a man sliding down a rope from it"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_18_(cropped).png"
+    lines:
+      - "ET VENERUNT AD DOL ET CONAN FUGA VERTIT"
+      - "REDNES"
+  - id: "19"
+    title: "Scene 19: The attack on Dinan"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-19.jpg"
+      caption: "Scene 19. William's knights charge the fortress of Dinan on its mound, and two men set torches to the palisade."
+      alt: "Embroidered horsemen with lances charging a fortified mound while men hold torches to its walls"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_19_(cropped).png"
+    lines:
+      - "HIC MILITES WILLELMI DUCIS PUGNANT CONTRA DINANTES"
+  - id: "20"
+    title: "Scene 20: Conan surrenders the keys"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-20.jpg"
+      caption: "Scene 20. The keys of Dinan pass from lance to lance, from the defenders to a mounted knight."
+      alt: "Embroidered scene of keys hanging from the tip of a lance held out to a horseman"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_20_(cropped).png"
+    lines:
+      - "ET CUNAN CLAVES PORREXIT"
+  - id: "21"
+    title: "Scene 21: William gives arms to Harold"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-21.jpg"
+      caption: "Scene 21. William, in mail, gives arms to Harold, also in mail, laying a hand on his helmet. The cloth reads DEDIT HAROLDO ARMA."
+      alt: "Two embroidered men in mail coats facing each other, one touching the other's helmet"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_21_(cropped).png"
+    lines:
+      - "HIC WILLELM[US] DEDIT HAROLDO ARMA"
   - id: "22"
     title: "Scene 22: William comes to Bayeux"
     figure:
@@ -179,6 +361,28 @@ sections:
       source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_32_(cropped).png"
     lines:
       - "ISTI MIRANT[UR] STELLA[M]"
+  - id: "33"
+    title: "Scene 33: Harold enthroned"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-33.jpg"
+      caption: "Scene 33. Harold, seated in a hall, turns to a man who leans toward him. In the lower border, ships are drawn in outline only."
+      alt: "Embroidered king on a throne under an arch, a man leaning toward him, faint outlined ships below"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_33_(cropped).png"
+    lines:
+      - "HAROLD"
+  - id: "34"
+    title: "Scene 34: An English ship comes to Normandy"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-34.jpg"
+      caption: "Scene 34. An English ship with a full sail comes to shore, and a man on the beach holds its mooring line."
+      alt: "Embroidered ship with a striped hull and full sail near a shore where a man stands watching"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_34_(cropped).png"
+    lines:
+      - "HIC NAVIS ANGLICA VENIT IN TERRAM WILLELMI DUCIS"
   - id: "35"
     title: "Scene 35: William orders ships to be built"
     figure:
@@ -190,6 +394,28 @@ sections:
       source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_35_(cropped).png"
     lines:
       - "HIC WILLELM[US] DUX JUSSIT NAVES [A]EDIFICARE"
+  - id: "36"
+    title: "Scene 36: The ships are hauled to the sea"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-36.jpg"
+      caption: "Scene 36. Men haul the newly built ships down to the water on ropes."
+      alt: "Embroidered men pulling ropes attached to a stack of ships"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_36_(cropped).png"
+    lines:
+      - "HIC TRAHUNT NAVES AD MARE"
+  - id: "37"
+    title: "Scene 37: Arms and wine for the ships"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-37.jpg"
+      caption: "Scene 37. Men carry mail coats, helmets, swords and spears, and two men drag a cart loaded with a cask and spears; the caption says they take them to the ships."
+      alt: "Embroidered men carrying mail coats and weapons on poles, two men pulling a cart with a barrel"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_37_(cropped).png"
+    lines:
+      - "ISTI PORTANT ARMAS AD NAVES ET HIC TRAHUNT CARRUM CUM VINO ET ARMIS"
   - id: "38"
     title: "Scene 38: The crossing to Pevensey"
     figure:
@@ -212,6 +438,39 @@ sections:
       source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_39_(cropped).png"
     lines:
       - "HIC EXEUNT CABALLI DE NAVIBUS"
+  - id: "40"
+    title: "Scene 40: Foraging at Hastings"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-40.jpg"
+      caption: "Scene 40. Mounted knights ride out from the beached ships toward Hastings, and men on foot kill an ox and lead off a sheep."
+      alt: "Embroidered horsemen riding away from beached ships toward men slaughtering an ox"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_40_(cropped).png"
+    lines:
+      - "ET HIC MILITES FESTINAVERUNT HESTINGA UT CIBUM RAPERENTUR"
+  - id: "41"
+    title: "Scene 41: Wadard"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-41.jpg"
+      caption: "Scene 41. Wadard, named above him, sits on horseback among men on foot carrying provisions."
+      alt: "Embroidered horseman between two houses with men carrying goods and leading a horse"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_41_(cropped).png"
+    lines:
+      - "HIC EST WADARD"
+  - id: "42"
+    title: "Scene 42: Cooking and serving"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-42.jpg"
+      caption: "Scene 42. Cooks boil meat in a hanging pot and bake on a stove, and servants pass the cooked food on spits."
+      alt: "Embroidered cooks at a cauldron and a stove, servants handing food on spits"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-expired)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_42_(cropped).jpg"
+    lines:
+      - "HIC COQUITUR CARO ET HIC MINISTRAVERUNT MINISTRI"
   - id: "43"
     title: "Scene 43: The meal and the blessing"
     figure:
@@ -224,6 +483,17 @@ sections:
     lines:
       - "HIC FECERUN[T] PRANDIUM"
       - "ET HIC EPISCOPUS CIBU[M] ET POTU[M] BENEDICIT"
+  - id: "44"
+    title: "Scene 44: Odo, William and Robert"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-44.jpg"
+      caption: "Scene 44. Bishop Odo, Duke William and Robert, the duke's half-brothers on either side of him, sit together under a roof."
+      alt: "Three embroidered men seated side by side under a tiled roof"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_44_(cropped).png"
+    lines:
+      - "ODO EP[ISCOPU]S WILLELM[US] ROTBERT"
   - id: "45"
     title: "Scene 45: A fort at Hastings"
     figure:
@@ -236,6 +506,28 @@ sections:
     lines:
       - "ISTE JUSSIT UT FODERETUR CASTELLUM AT HESTENGA"
       - "CEASTRA"
+  - id: "46"
+    title: "Scene 46: News of Harold"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-46.jpg"
+      caption: "Scene 46. William, seated with a banner, hears news of Harold from a man before him."
+      alt: "Embroidered seated man holding a banner, listening to a standing man in a cloak"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_46_(cropped).png"
+    lines:
+      - "HIC NUNTIATUM EST WILLELM[O] DE HAROLD[O]"
+  - id: "47"
+    title: "Scene 47: A house is burned"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-47.jpg"
+      caption: "Scene 47. Two men set a house on fire with torches while a woman leads a child out of it."
+      alt: "Embroidered house in flames, two men holding torches to it, a woman and child at the door"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_47_(cropped).png"
+    lines:
+      - "HIC DOMUS INCENDITUR"
   - id: "48"
     title: "Scene 48: The army leaves Hastings"
     figure:
@@ -247,6 +539,39 @@ sections:
       source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_48_(cropped)_(cropped).jpg"
     lines:
       - "HIC MILITES EXIERUNT DE HESTENGA ET VENERUNT AD PR[O]ELIUM CONTRA HAROLDUM REGE[M]"
+  - id: "49"
+    title: "Scene 49: William questions Vital"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-49.jpg"
+      caption: "Scene 49. William, mounted, questions Vital, a knight who points ahead toward the hill."
+      alt: "Embroidered horsemen in mail riding toward a hill, one pointing ahead"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_49_(cropped)2.png"
+    lines:
+      - "HIC WILLELM[US] DUX INTERROGAT VITAL[EM] SI VIDISSET HAROLDI EXERCITU[M]"
+  - id: "50"
+    title: "Scene 50: Harold hears of William's army"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-50.jpg"
+      caption: "Scene 50. An English scout on foot looks out from the hill, and a messenger brings word to Harold on horseback."
+      alt: "Embroidered man on foot with a shield on a hillside, a horseman beyond him"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-expired)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_50_(cropped).jpg"
+    lines:
+      - "ISTE NUNTIAT HAROLDUM REGE[M] DE EXERCITU WILELMI DUCIS"
+  - id: "51"
+    title: "Scene 51: William speaks to his knights"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-51.jpg"
+      caption: "Scene 51. William, at the left, turns to address his mounted knights, who ride on ahead of him."
+      alt: "Embroidered line of horsemen in mail riding with lances"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-expired)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_51_(cropped)_2.jpg"
+    lines:
+      - "HIC WILLELM[US] DUX ALLOQUITUR SUIS MILITIBUS UT PREPARAREN[T] SE VIRILITER ET SAPIENTER AD PR[O]ELIUM CONTRA ANGLORUM EXERCITU[M]"
   - id: "52"
     title: "Scene 52: Leofwine and Gyrth fall"
     figure:
@@ -258,6 +583,17 @@ sections:
       source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_52_(cropped)2.jpg"
     lines:
       - "HIC CECIDERUNT LEWINE ET GYRÐ FRATRES HAROLDI REGIS"
+  - id: "53"
+    title: "Scene 53: English and French fall together"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-53.jpg"
+      caption: "Scene 53. Horses tumble and men fall on both sides around a low hillock, and the dead fill the lower border."
+      alt: "Embroidered battle with horses falling headlong and men lying dead in the border"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_53_(cropped)2.png"
+    lines:
+      - "HIC CECIDERUNT SIMUL ANGLI ET FRANCI IN PR[O]ELIO"
   - id: "54"
     title: "Scene 54: Bishop Odo rallies the young men"
     figure:
@@ -269,6 +605,29 @@ sections:
       source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_54_(cropped).png"
     lines:
       - "HIC ODO EP[ISCOPU]S BACULU[M] TENENS CONFORTAT PUEROS"
+  - id: "55"
+    title: "Scene 55: Here is Duke William"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-55.jpg"
+      caption: "Scene 55. William, on horseback, raises a hand to his helmet; the scene is usually read as the duke showing his face to his men to prove he was alive."
+      alt: "Embroidered horseman in mail turning and lifting his hand to his helmet"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_55_(cropped).png"
+    lines:
+      - "HIC EST WILEL[MUS] DUX"
+  - id: "56"
+    title: "Scene 56: Eustace, and the French attack"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-56.jpg"
+      caption: "Scene 56. The French horsemen charge, and the English on foot fall before them. Eustace, named E[USTA]TIUS, rides with a banner at the end of scene 55, just before this photograph begins."
+      alt: "Embroidered cavalry charging into men on foot with shields, archers in the lower border"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_56_(cropped).png"
+    lines:
+      - "E[USTA]TIUS"
+      - "HIC FRANCI PUGNANT ET CECIDERUNT QUI ERANT CUM HAROLDO"
   - id: "57"
     title: "Scene 57: The death of Harold"
     figure:
@@ -280,3 +639,14 @@ sections:
       source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_57_(cropped).png"
     lines:
       - "HIC HAROLD REX INTERFECTUS EST"
+  - id: "58"
+    title: "Scene 58: The English flee"
+    figure:
+      file: "art/works/bayeux-tapestry/scene-58.jpg"
+      caption: "Scene 58. The English flee on foot and on horseback, pursued by mounted knights. The cloth ends here; its original end is lost."
+      alt: "Embroidered horsemen pursuing men running away past a tree, the cloth frayed at the right edge"
+      credit: "Bayeux Tapestry, about 1070s; photograph 2017, Université de Caen Normandie, CNRS, ENSICAEN, after the photographic campaign of the Fabrique de patrimoines en Normandie; via Wikimedia Commons"
+      license: "Public domain (Commons templates: PD-Art|PD-old-100-1923; PD-France)"
+      source: "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Scene_58_(cropped).png"
+    lines:
+      - "ET FUGA VERTERUNT ANGLI"

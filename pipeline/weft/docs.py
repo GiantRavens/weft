@@ -11,7 +11,7 @@ import html as H
 import re
 from pathlib import Path
 
-PAGES = {"about": "About Weft", "languages": "Languages and pronunciation"}
+PAGES = {"about": "About Weft", "languages": "Languages and pronunciation", "speakers": "For speakers: reviews and recordings"}
 REPO_URL = "https://github.com/GiantRavens/weft"
 
 

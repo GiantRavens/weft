@@ -1,10 +1,10 @@
 # John Collingwood Bruce, The Bayeux Tapestry Elucidated (London: J. Russell Smith, 1856), the English
 # Bruce sets after each caption he quotes, as transcribed by Project Gutenberg (eBook #55614).
 # Verbatim. Bruce quotes the captions inside his narrative and does not render every one; lines he
-# does not render (scenes 1, 4, 7, 23, 30's Stigant, 38, 39) have no span. Where he renders the two
-# halves of a caption separately, with description between them (scene 48), the omitted words are
+# does not render (scenes 1, 4, 6, 10's Turold, 14, 18's Rednes, 23, 30's Stigant, 33, 37, 41, 53, 56's Eustace) have no span. He renders 7-8 and 39-40 as one sentence each, and gives 44 as ODO EPISCOPUS: ROBERTUS, without William. Where he renders the two
+# halves of a caption separately, with description between them (scenes 18, 48), the omitted words are
 # marked with an ellipsis. A final semicolon or colon where his sentence continues is set as a
-# period (29, 45). His "Guy" is the cloth's Wido.
+# period (29, 42, 45), and so is a rendering his narrative runs on from, after a dash (17) or inside a parenthesis (20, 22). His "Guy" is the cloth's Wido.
 translation: bruce1856
 aligned_by: hand, phase 0
 spans:
@@ -12,8 +12,34 @@ spans:
   text: "Where Harold the English chief and his knights ride to Bosham."
 - lines: [bt.5.1, bt.5.1]
   text: "And his sails being filled with the wind, he came into the territory of Count Guy."
+- lines: [bt.7.1, bt.8.1]
+  text: "Here Guy seized Harold, and led him to Beaurain, where he detained him prisoner."
+- lines: [bt.9.1, bt.9.1]
+  text: "Where Harold and Guy converse."
+- lines: [bt.10.1, bt.10.1]
+  text: "Where the messengers of Duke William came to Guy."
+- lines: [bt.11.1, bt.11.1]
+  text: "The messengers of William."
+- lines: [bt.12.1, bt.12.1]
+  text: "Here a messenger came to Duke William."
 - lines: [bt.13.1, bt.13.1]
   text: "Here Guy led Harold to William Duke of the Normans."
+- lines: [bt.15.1, bt.15.1]
+  text: "Where a clerk and Ælfgyva [converse]."
+- lines: [bt.16.1, bt.16.1]
+  text: "Here Duke William and his army came to Mount St. Michael."
+- lines: [bt.17.1, bt.17.1]
+  text: "And here they crossed the river Coësnon."
+- lines: [bt.17.2, bt.17.2]
+  text: "Here Harold the Earl dragged them out of the quicksand."
+- lines: [bt.18.1, bt.18.1]
+  text: "And they came to Dol ... And Conan betakes himself to flight."
+- lines: [bt.19.1, bt.19.1]
+  text: "Here the soldiers of William attack Dinan."
+- lines: [bt.20.1, bt.20.1]
+  text: "And Conan reached out the keys."
+- lines: [bt.21.1, bt.21.1]
+  text: "Here William gave arms to Harold."
 - lines: [bt.22.1, bt.22.1]
   text: "William came to Bayeux."
 - lines: [bt.24.1, bt.24.1]
@@ -32,19 +58,47 @@ spans:
   text: "Here is seated Harold, King of the English."
 - lines: [bt.32.1, bt.32.1]
   text: "These men wonder at the star."
+- lines: [bt.34.1, bt.34.1]
+  text: "Here an English ship came to the territory of Duke William."
 - lines: [bt.35.1, bt.35.1]
   text: "Here Duke William issues orders for the building of ships."
+- lines: [bt.36.1, bt.36.1]
+  text: "Here they draw the vessels to the sea."
+- lines: [bt.38.1, bt.38.1]
+  text: "Here Duke William in a large ship crossed the sea, and arrived at Pevensey."
+- lines: [bt.39.1, bt.40.1]
+  text: "Here the horses disembark, and here the soldiers hurry forward to Hastings to seize food."
+- lines: [bt.42.1, bt.42.1]
+  text: "Here the food is being cooked and here the attendants have served up the viands."
 - lines: [bt.43.1, bt.43.2]
   text: "Here they have prepared the feast and here the bishop is blessing the meat and drink."
+- lines: [bt.44.1, bt.44.1]
+  text: "Odo the Bishop: Robert."
 - lines: [bt.45.1, bt.45.1]
   text: "He has ordered an intrenchment to be dug at Hastings."
 - lines: [bt.45.2, bt.45.2]
   text: "The camp."
+- lines: [bt.46.1, bt.46.1]
+  text: "Here news is brought to William respecting Harold."
+- lines: [bt.47.1, bt.47.1]
+  text: "Here a house is set fire to."
 - lines: [bt.48.1, bt.48.1]
   text: "Here the soldiers have departed from Hastings ... And march to battle against Harold the King."
+- lines: [bt.49.1, bt.49.1]
+  text: "Here Duke William asks Vitalis, whether he had seen Harold’s army."
+- lines: [bt.50.1, bt.50.1]
+  text: "This man brings word to Harold the King respecting Duke William’s army."
+- lines: [bt.51.1, bt.51.1]
+  text: "Here Duke William exhorts his soldiers to prepare manfully and prudently for battle against the army of the English."
 - lines: [bt.52.1, bt.52.1]
   text: "Here fell Leofwin and Gurth, the brothers of Harold the King."
 - lines: [bt.54.1, bt.54.1]
   text: "Here Odo holding a staff exhorts the soldiers."
+- lines: [bt.55.1, bt.55.1]
+  text: "Here is Duke William."
+- lines: [bt.56.2, bt.56.2]
+  text: "Here the French are fighting, and have slain the men who were with Harold."
 - lines: [bt.57.1, bt.57.1]
   text: "Here Harold the King is slain."
+- lines: [bt.58.1, bt.58.1]
+  text: "And the English betake themselves to flight."
