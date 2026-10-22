@@ -1,10 +1,35 @@
-# Weft edition: the heading and chapters 1-4, 34 and 35 of the Res Gestae Divi Augusti, from the
+# Weft edition: the heading and all 35 chapters of the Res Gestae Divi Augusti, from the
 # text on Latin Wikisource (page "Res gestae", revision 194194). Every line is checked verbatim
 # against that page by `weft draft`. Square brackets are the source's: they enclose letters lost
 # from the stone and restored by editors, and they are kept as printed, including the places where
 # the source opens or closes a bracket without its partner (ch. 34, potest]atis; ch. 35, pat]rem).
 # Weft divides the sentences into lines at their clause boundaries.
 verify_in: sources/rg-la.txt
+verify_strip: " ~(?= )"
+verify_corrections:
+# The Wikisource page sets stray tildes between words in chapters 8 to 27 (removed by verify_strip
+# above), splits three words with a space and runs seven pairs of words together. The edition prints
+# the words as the inscription has them; each spacing change is declared here.
+- ocr: "[qu] am"
+  print: "[qu]am"
+- ocr: "p[r] aesenti"
+  print: "p[r]aesenti"
+- ocr: "princi[pi] bus"
+  print: "princi[pi]bus"
+- ocr: "sena]tu[de]poposci"
+  print: "sena]tu [de]poposci"
+- ocr: "sunt]civ[ium"
+  print: "sunt] civ[ium"
+- ocr: "pro]redi[t]u"
+  print: "pro] redi[t]u"
+- ocr: "D.Laelio"
+  print: "D. Laelio"
+- ocr: "L.Caninio"
+  print: "L. Caninio"
+- ocr: "C.Silano"
+  print: "C. Silano"
+- ocr: "pervent[um]est"
+  print: "pervent[um] est"
 sections:
   - id: praef
     title: "The heading: what the copy contains and where the original stood"
@@ -48,6 +73,516 @@ sections:
       - "Dies a[utem, pe]r quos ex senatus consulto [s]upplicatum est, fuere DC[CCLXXXX."
       - "In triumphis meis] ducti sunt ante currum meum reges aut r[eg]um lib[eri novem."
       - "Consul f]ueram terdeciens, cum [scribeb]a[m] haec, [et eram se]p[timum et] tricen[simu]m tribuniciae potestatis."
+  - id: "5"
+    title: "Chapter 5: the dictatorship refused; the grain supply"
+    lines:
+      - "Dic]tat[ura]m et apsent[i e]t praesent[i mihi delatam et a popul]o et a se[na]tu [M. Marce]llo e[t] L. Arruntio [cos.] non rec[epi."
+      - "Non sum] depreca[tus] in s[umma f]rum[enti p]enuria curatio[n]em an[non]ae. [qu]am ita ad[min]ist[ravi,"
+      - "ut] in[tra] die[s] paucos metu et periclo p[r]aesenti civitatem univ[ersam liberarem impensa et] cura mea."
+      - tokens:
+          - {t: "Consul[atum]"}
+          - {t: "quoqu]e", n: "quŏque"}
+          - {t: "tum"}
+          - {t: "annum"}
+          - {t: "e[t"}
+          - {t: "perpetuum"}
+          - {t: "mihi]"}
+          - {t: "dela[tum"}
+          - {t: "non"}
+          - {t: "recepi.]"}
+  - id: "6"
+    title: "Chapter 6: a new office refused; the tribunician power"
+    lines:
+      - "Consulibus M. Vinicio et Q. Lucretio] et postea P. Lentulo et Cn. L[entulo et tertium Paullo Fabio Maximo] e[t Q. Tuberone senatu populoq]u[e Romano consentientibus]"
+      - "ut cu[rator legum et morum maxima potestate solus crearer"
+      - "nullum magistratum contra morem maiorem delatum recepi."
+      - "Quae tum per me fieri senatus] v[o]luit, per trib[un]ici[a]m p[otestatem perfeci,"
+      - "cuius potes]tatis conlegam et [ips]e ultro [quinquiens mihi a sena]tu [de]poposci et accepi."
+  - id: "7"
+    title: "Chapter 7: triumvir, first of the senate, the priesthoods"
+    lines:
+      - "Tri]umv[i]rum rei pu[blicae c]on[s]ti[tuendae fui per continuos an]nos [decem."
+      - tokens:
+          - {t: "P]rinceps"}
+          - {t: "s[enatus", n: "senātūs"}
+          - {t: "fui"}
+          - {t: "usque"}
+          - {t: "ad"}
+          - {t: "e]um"}
+          - {t: "d[iem,"}
+          - {t: "quo"}
+          - {t: "scrip]seram"}
+          - {t: "[haec,"}
+          - {t: "per"}
+          - {t: "annos]"}
+          - {t: "quadra[ginta."}
+      - "Pon]tifex [maximus, augur, Xvvir]um sacris fac[iundis, VIIvirum ep]ulon[um, frater arvalis, sodalis Titius], fetialis fui."
+  - id: "8"
+    title: "Chapter 8: patricians, three censuses, new laws"
+    lines:
+      - tokens:
+          - {t: "Patriciorum"}
+          - {t: "numerum"}
+          - {t: "auxi"}
+          - {t: "consul"}
+          - {t: "quintum"}
+          - {t: "iussu"}
+          - {t: "populi"}
+          - {t: "et"}
+          - {t: "senatus.", n: "senātūs"}
+      - "Senatum ter legi."
+      - "Et in consulatu sexto censum populi conlega M. Agrippa egi."
+      - "Lustrum post annum alterum et quadragensimum fec[i]."
+      - "Quo lustro civium Romanorum censa sunt capita quadragiens centum millia et sexag[i]inta tria millia."
+      - "Tum [iteru]m consulari com imperio lustrum [s]olus feci C. Censorin[o et C.]"
+      - "Asinio cos. Quo lustro censa sunt civium Romanorum [capita] quadragiens centum millia et ducenta triginta tria mi[llia."
+      - "Et tertiu]m consulari cum imperio lustrum conlega Tib."
+      - "Cae[sare filio] m[eo feci,] Sex. Pompeio et Sex. Appuleio cos."
+      - "Quo lustro ce[nsa sunt] civ[ium Ro]manorum capitum quadragiens centum mill[ia et n]onge[nta tr]iginta et septem millia."
+      - "Legibus novi[s] m[e auctore l]atis m[ulta e]xempla maiorum exolescentia iam ex nostro [saecul]o red[uxi et ipse] multarum rer[um exe]mpla imitanda pos[teris tradidi.]"
+  - id: "9"
+    title: "Chapter 9: vows and games for his health"
+    lines:
+      - "Vota p[ro valetudine meo susc]ipi p[er cons]ules et sacerdotes qu[in]to qu[oque anno senatus decrevit."
+      - "Ex iis] votis s[ae]pe fecerunt vivo m[e ludos aliquotiens sace]rdo[tu]m quattuor amplissima colle[gia, aliquotiens consules."
+      - "Pr]iva[t]im etiam et municipatim univer[si cives unanimite]r con[tinente]r apud omnia pulvinaria pro vale[tu]din[e mea s]upp[licaverunt.]"
+  - id: "10"
+    title: "Chapter 10: the Salian hymn, the tribunician power, the chief priesthood"
+    lines:
+      - tokens:
+          - {t: "Nom[en"}
+          - {t: "me]um"}
+          - {t: "[sena]tus", n: "senātūs"}
+          - {t: "c[onsulto"}
+          - {t: "inc]lusum"}
+          - {t: "est"}
+          - {t: "in"}
+          - {t: "saliare"}
+          - {t: "carmen"}
+          - {t: "et"}
+          - {t: "sacrosanctu[s"}
+          - {t: "in"}
+          - {t: "perp]etum"}
+          - {t: "[ut"}
+          - {t: "essem"}
+          - {t: "et,"}
+      - "q]uoad ivierem, tribunicia potestas mihi [esse, per lege]m sanc[tum est."
+      - "Pontif]ex maximus ne fierem in vivi [c]onlegae l]ocum, [populo id sace]rdotium deferente mihi, quod pater meu[s habuer]at, r[ecusavi."
+      - "Qu]od sacerdotium aliquod post annos, eo mor[t]uo q[ui civilis] m[otus o]ccasione occupaverat,"
+      - tokens:
+          - {t: "cuncta"}
+          - {t: "ex"}
+          - {t: "Italia"}
+          - {t: "[ad"}
+          - {t: "comitia"}
+          - {t: "mea]", n: "meă"}
+          - {t: "confluen[te"}
+          - {t: "mu]ltitudine,"}
+          - {t: "quanta"}
+          - {t: "Romae"}
+          - {t: "nun[q]uam"}
+          - {t: "[fertur"}
+          - {t: "ante"}
+          - {t: "i]d"}
+          - {t: "temp[us"}
+          - {t: "fuisse],"}
+      - "recep[i] P. Sulpicio C. Valgio consulibu[s]."
+  - id: "11"
+    title: "Chapter 11: the altar of Fortune the Home-bringer"
+    lines:
+      - "Aram [Fortunae] R[educis a]nte aedes Honoris et Virtutis ad portam Cap[enam pro] red[itu me]o senatus consacravit,"
+      - "in qua ponti[fices et] vir[gines Ve]stal[es anni]versarium sacrificium facere [decrevit"
+      - "eo] di[e quo co]nsul[ibus Q. Luc]retio et [M. Vi]nic[i]o in urbem ex [Syria redieram,"
+      - "et diem Augustali]a ex [c]o[gnomine] nos[t]ro appellavit."
+  - id: "12"
+    title: "Chapter 12: the altar of Augustan Peace"
+    lines:
+      - tokens:
+          - {t: "Senatus", n: "senātūs"}
+          - {t: "consulto"}
+          - {t: "ea", n: "eā"}
+          - {t: "occasion]e"}
+          - {t: "pars"}
+          - {t: "[praetorum"}
+          - {t: "e]t"}
+          - {t: "tribunorum"}
+          - {t: "[plebi"}
+          - {t: "cum"}
+          - {t: "consule"}
+          - {t: "Q.]"}
+      - "Lu[cret]io et princi[pi]bus viris [ob]viam mihi mis[s]a e[st in Campan]iam, quo honos [ad ho]c tempus nemini praeter [m]e es[t decretus."
+      - "Cu]m ex H[is[]ania Gal[liaque, rebu]s in iis provincis prosp[e]re [gest]i[s], R[omam redi] Ti. Nerone P. Qui[ntilio c]o[n]s[ulibu]s,"
+      - "aram [Pacis A]u[g]ust[ae senatus pro] redi[t]u meo consa[c]randam [censuit] ad campam [Martium,"
+      - "in qua ma]gistratus et sac[er]dotes [et v]irgines V[est]a[les ann]iversarium sacrific]ium facer[e decrevit.]"
+  - id: "13"
+    title: "Chapter 13: the closing of Janus Quirinus"
+    lines:
+      - "Ianum] Quirin[um, quem cl]aussum ess[e maiores nostri voluer]unt, cum [p]er totum i[mperium po]puli Roma[ni terra marique es]set parta victoriis pax,"
+      - "cum pr[ius quam] nascerer, a co[ndita] u[rb]e bis omnino clausum [f]uisse prodatur m[emori]ae,"
+      - "ter me princi]pe senat]us claudendum esse censui[t]."
+  - id: "14"
+    title: "Chapter 14: honors for his sons Gaius and Lucius"
+    lines:
+      - "Filios meos, quos iuv[enes] mihi eripuit for[tuna], Gaium et Lucium Caesares,"
+      - "honoris mei causa senatus populusque Romanus annum quintum et decimum agentis consules designavit,"
+      - "ut [e]um magistratum inirent post quinquennium."
+      - "Et ex eo die, quo deducti [s]unt in forum ut interessent consiliis publicis decrevit sena[t]us."
+      - "Equites [a]utem Romani universi principem iuventutis utrumque eorum parm[is] et hastis argenteis donatum appellaverunt."
+  - id: "15"
+    title: "Chapter 15: gifts of money to the people and the colonists"
+    lines:
+      - tokens:
+          - {t: "Plebei"}
+          - {t: "Romanae"}
+          - {t: "viritum"}
+          - {t: "HS", n: "sēstertiōs"}
+          - {t: "trecenos"}
+          - {t: "numeravi"}
+          - {t: "ex"}
+          - {t: "testamento"}
+          - {t: "patris"}
+          - {t: "mei."}
+          - {t: "et"}
+          - {t: "nomine"}
+          - {t: "meo"}
+          - {t: "HS", n: "sēstertiōs"}
+          - {t: "quadringenos"}
+          - {t: "ex"}
+          - {t: "bellorum"}
+          - {t: "manibiis"}
+          - {t: "consul"}
+          - {t: "quintum"}
+          - {t: "dedi,"}
+      - tokens:
+          - {t: "iterum"}
+          - {t: "autem"}
+          - {t: "in"}
+          - {t: "consulatu"}
+          - {t: "decimo"}
+          - {t: "ex"}
+          - {t: "patrimonio"}
+          - {t: "meo"}
+          - {t: "HS", n: "sēstertiōs"}
+          - {t: "quadringenos"}
+          - {t: "congiari"}
+          - {t: "viritim"}
+          - {t: "pernumer[a]vi,"}
+      - "et consul undecimum duodecim frumentationes frumento pr[i]vatim coempto emensus sum. et tribunicia potestate duodecimum quadringenos nummos tertium viritim dedi."
+      - tokens:
+          - {t: "Quae"}
+          - {t: "mea", n: "meă"}
+          - {t: "congiaria"}
+          - {t: "p[e]rvenerunt"}
+          - {t: "ad"}
+          - {t: "[homi]num"}
+          - {t: "millia"}
+          - {t: "nunquam"}
+          - {t: "minus"}
+          - {t: "quinquaginta"}
+          - {t: "et"}
+          - {t: "ducenta."}
+      - "Tribuniciae potestatis duodevicensimum consul XII trecentis et viginti millibus plebis urbanae sexagenos denarios viritim dedi."
+      - "Et colon[i]s militum meorum consul quintum ex manibiis viritim millia nummum singula dedi."
+      - "acceperunt id triumphale congiarium in colonis hominum circiter centum et viginti millia."
+      - "Consul tertium dec[i]mum sexagenos denarios plebei, quae tum frumentum publicum acciebat, dedi; ea millia hominum paullo plura quam ducenta fuerunt"
+  - id: "16"
+    title: "Chapter 16: payments for the veterans' land"
+    lines:
+      - "Pecuniam [pr]o agris, quos in consulatu meo quarto et postea consulibus M. Cr[a]ssao et Cn. Lentulo augure adsignavi militibus, soliv municipis."
+      - "Ea [s]u[mma s]estertium circiter sexsiens milliens fuit, quam [p]ro Italicis praedis numeravi. et ci[r]citer bis mill[ie]ns et sescentiens,"
+      - "quod pro agris provincialibus soliv."
+      - "Id primus et [s]olus omnium, qui [d]eduxerunt colonias militum in Italia aut in provincis, ad memoriam aetatis meae feci."
+      - "Et postea Ti. Nerone et Cn. Pisone consulibus, et D. Laelio cos., et C. Calvisio et L. Pasieno consulibus,"
+      - "et L. Le[nt]ulo et M. Messalla consulibus, et L. Caninio et Q. Fabricio co[s.],"
+      - "milit[i]bus, quos emeriteis stipendis in sua municpi[a dedux]i, praem[i]a numerato persolvi. quam in rem sestertium q[uater m]illiens cir[cite]r impendi."
+  - id: "17"
+    title: "Chapter 17: help to the treasury; the military treasury"
+    lines:
+      - "Quater [pe]cunia mea iuvi aerarium, ita ut sestertium milliens et quing[en]ties ad eos qui praerant aerario detulerim."
+      - "Et M. Lepido et L. Ar[r]untio cos. in aerarium militare, quod ex consilio n[eo] co[ns]titutum est,"
+      - "ex [q]uo praemia darentur militibus, qui vicena [aut plu]ra sti[pendi]a emeruissent — HS milliens et septing[e]nti[ens ex pa]t[rim]onio [m]eo detuli."
+  - id: "18"
+    title: "Chapter 18: grain and money from his own granary and funds"
+    lines:
+      - "Ab eo anno q]uo Cn. et P. Lentuli c[ons]ules fuerunt, cum deficerent [vecti]g[alia,"
+      - "tum] centum millibus h[omi]num, tum pluribus multo frume[ntarios et n]umma[rio]s t[ributus ex horr]eo et patr[i]monio m[e]o edidi."
+  - id: "19"
+    title: "Chapter 19: buildings: the senate house, temples, porticoes"
+    lines:
+      - "Curiam et continens ei Chalcidicum templumque Apollinis in Palatio cum porticibus, aedem divi Iuli,"
+      - "Lupercal, porticum ad circum Flaminium, quam sum appellari passus ex nomine eius qui priorem eodem in solo fecerat Octaviam,"
+      - "pulvinar ad circum maximum, aedes in Capitolio Iovis Feretri et Iovis Tonantis,"
+      - "aedem Quirini, aedes Minervae et Iunonis reginae et Iovis Libertatis in Aventino,"
+      - "aedem Larum in summa sacra via, aedem deum Penatium in Velia, aedem Iuventatis,"
+      - "aedem Matris Magnae in Palatio feci."
+  - id: "20"
+    title: "Chapter 20: restorations: the Capitol, Pompey's theater, aqueducts, eighty-two temples, the Flaminian Way"
+    lines:
+      - "Capitolium et Pompeium theatrum utrumque opus impensa grandi refeci sine ulla inscriptione nominis mei."
+      - "Rovos aquarum compluribus locis vetustate labentes refeci, et aquam quae Marcia appellatur duplicavi fonte novo in rivum eius inmisso."
+      - "Forum Iulium et basilicam quae fuit inter aedem Castoris et aedem Saturni,"
+      - "coepta profligataque poera a patre meo, perfeci, et eandem basilicam consumptam incendio ampliato eius solo sub titulo nominis filiorum m[eorum i]ncohavi,"
+      - "et, si vivus non perfecissem, perfici ab heredibus [meis ius]si."
+      - tokens:
+          - {t: "Duo"}
+          - {t: "et"}
+          - {t: "octoginta"}
+          - {t: "templa"}
+          - {t: "deum"}
+          - {t: "in"}
+          - {t: "urbe"}
+          - {t: "consul"}
+          - {t: "sextum"}
+          - {t: "ex"}
+          - {t: "[auctori]tate"}
+          - {t: "senatus", n: "senātūs"}
+          - {t: "refeci,"}
+          - {t: "nullo"}
+          - {t: "praetermisso"}
+          - {t: "quod"}
+          - {t: "e[o]"}
+          - {t: "tempore"}
+          - {t: "[refici"}
+          - {t: "debeba]t."}
+      - "Consul septimum viam Flaminiam a[b urbe] Ari[minum refeci pontes]que omnes praeter Mulvium et Minucium."
+  - id: "21"
+    title: "Chapter 21: his forum and the temple of Mars the Avenger; crown gold refused"
+    lines:
+      - "In privato solo Martis Ultoris templum [f]orumque Augustum [ex ma]n[i]biis feci."
+      - "Theatrum ad aede Apollinis in solo magna ex parte a p[r]i[v]atis empto feci, quod sub nomine M. Marcell[i] generi mei esset."
+      - "Don[a e]x manibiis in Capitolio et in aede divi Iu[l]i et in aede Apollinis de Vestae et in templo Martis Ultoris consecravi,"
+      - "quae mihi constituerunt HS circiter milliens."
+      - "Auri coronari pondo triginta et quinque millia municipiis et colonis Italiae conferentibus ad triumpho[s] meos quintum consul remisi,"
+      - "et postea, quotienscumque imperator a[ppe]llatus sum, aurum coronarium non accepi, decernentibus municipii[s] et colonis aequ[e] beni[g]ne adque antea decreverant."
+  - id: "22"
+    title: "Chapter 22: gladiators, athletes and games"
+    lines:
+      - "Ter munus gladiatorium dedi meo nomine et quinquiens filiorum meorum aut n[e]potum nomine; quibus muneribus depugnaverunt hominum circiter decem millia."
+      - "Bis athletarum undique accitorum spectaculu[m] p[o]pulo pra[ebui meo nomine et tertium nepo[tis] mei nomine."
+      - "Ludos feci m[eo no]m[ine] quater, aliorum autem magistratuum vicem ter et viciens."
+      - "Pro conlegio Xvvirorum magis[ter con]legii collega M. Agrippa ludos saeclares, C. Furnio C. Silano cos. [feci."
+      - tokens:
+          - {t: "C]onsul"}
+          - {t: "XIII"}
+          - {t: "ludos"}
+          - {t: "Mar[tia]les"}
+          - {t: "primus"}
+          - {t: "feci,"}
+          - {t: "quos"}
+          - {t: "post"}
+          - {t: "id"}
+          - {t: "tempus"}
+          - {t: "deincep[s]"}
+          - {t: "ins[equen]ti[bus]"}
+          - {t: "annis"}
+          - {t: "[ex"}
+          - {t: "senatus", n: "senātūs"}
+          - {t: "consulto"}
+          - {t: "et"}
+          - {t: "lege"}
+          - {t: "fecerunt"}
+          - {t: "consules."}
+      - "Venation[es] best[ia]rum Africanarum meo nomine aut filio[ru]m meorum et nepotum in circo aut in foro aut in amphitheatris,"
+      - "popul[o d]edi sexiens et viciens, quibus confecta sunt bestiarum circiter tria m[ill]ia et quingentae."
+  - id: "23"
+    title: "Chapter 23: a naval battle staged across the Tiber"
+    lines:
+      - "Navalis proeli spectaclum populo de[di tr]ans Tiberim, in quo loco nunc nemus est Caesarum,"
+      - "avato [s]olo in longitudinem mille et octingentos pedes in latudine[m mille] e[t] ducenti."
+      - "In quo triginta rostratae naves triremes a[ut birem]es plures autem minores inter se conflixerunt."
+      - "Q[uibu]s in classibus pugnaverunt praeter remiges millia ho[minum tr]ia circiter."
+  - id: "24"
+    title: "Chapter 24: temples of Asia restored; his silver statues removed"
+    lines:
+      - "In templis omnium civitatium prov[inci]ae Asiae victor ornamenta reposui, quae spoliatis templis is cum quo bellum gesseram privatim possederat."
+      - "Statuae [mea]e pedestres et equestres et in quadrigeis argenteae steterunt in urbe XXC circiter,"
+      - tokens:
+          - {t: "quas"}
+          - {t: "ipse"}
+          - {t: "sustuli"}
+          - {t: "exque"}
+          - {t: "ea", n: "eā"}
+          - {t: "pecunia"}
+          - {t: "dona"}
+          - {t: "aurea"}
+          - {t: "in"}
+          - {t: "aede"}
+          - {t: "Apollinis"}
+          - {t: "meo"}
+          - {t: "nomine"}
+          - {t: "et"}
+          - {t: "illorum,"}
+      - "qui mihi statuarum honorem habuerunt, posui."
+  - id: "25"
+    title: "Chapter 25: the sea cleared of pirates; the oath of Italy and the western provinces"
+    lines:
+      - "Mare pacavi a praedonibus."
+      - "Eo bello servorum, qui fugerant a dominis suis et arma contra rem publicam ceperant,"
+      - "triginta fere millia capta dominis ad supplicium sumendum tradidi."
+      - tokens:
+          - {t: "Iuravit"}
+          - {t: "in"}
+          - {t: "mea", n: "meă"}
+          - {t: "verba"}
+          - {t: "tota"}
+          - {t: "Italia"}
+          - {t: "sponte"}
+          - {t: "sual"}
+          - {t: "et"}
+          - {t: "me"}
+          - {t: "be[lli]"}
+          - {t: "quo"}
+          - {t: "vici"}
+          - {t: "ad"}
+          - {t: "Actium"}
+          - {t: "ducem"}
+          - {t: "depoposcit."}
+      - "Iuraverunt in eadem ver[ba provi]nciae Galliae, Hispaniae, Africa, Sicilia, Sardinia."
+      - "Qui sub [signis meis tum] militaverint, fuerunt senatores plures quam DCC,"
+      - "in ii[s qui vel antea vel pos]tea consules facti sunt ad eum diem quo scripta su[nt haec LX]X[XIII, sacerdo]tes ci[rc]iter CLXX."
+  - id: "26"
+    title: "Chapter 26: the frontiers extended: Gaul, Spain, Germany, the Alps, Ethiopia, Arabia"
+    lines:
+      - "Omnium prov[inciarum populi Romani], quibus finitimae fuerunt gentes quae non p[arerent imperio nos]tro, fines auxi."
+      - "Gallias et Hispanias provincias, i[tem Germaniam qua inclu]dit Oceanus a Gadibus ad ostium Albis flumin[is pacavi."
+      - tokens:
+          - {t: "Alpes"}
+          - {t: "a"}
+          - {t: "re]gione"}
+          - {t: "ea,", n: "eā"}
+          - {t: "quae"}
+          - {t: "proxima"}
+          - {t: "est"}
+          - {t: "Hadriano"}
+          - {t: "mari,"}
+          - {t: "[ad"}
+          - {t: "Tuscum"}
+          - {t: "pacari"}
+          - {t: "fec]i."}
+          - {t: "nulli"}
+          - {t: "genti"}
+          - {t: "bello"}
+          - {t: "per"}
+          - {t: "iniuriam"}
+          - {t: "inlato."}
+      - tokens:
+          - {t: "Cla[ssis"}
+          - {t: "m]ea", n: "meă"}
+          - {t: "per"}
+          - {t: "Oceanum]"}
+          - {t: "ab"}
+          - {t: "ostio"}
+          - {t: "Rheni"}
+          - {t: "ad"}
+          - {t: "solis"}
+          - {t: "orientis"}
+          - {t: "regionem"}
+          - {t: "usque"}
+          - {t: "ad"}
+          - {t: "fi[nes"}
+          - {t: "Cimbroru]m"}
+          - {t: "navigavit,"}
+      - "quo neque terra neque mari quisquam Romanus ante id tempus adit,"
+      - "Cimbrique et Charydes et Semnones et eiusdem tractus alli Germanorum popu[l]i per legatos amicitiam mean et populi Romani petierunt."
+      - tokens:
+          - {t: "Meo"}
+          - {t: "iussu"}
+          - {t: "et"}
+          - {t: "auspicio"}
+          - {t: "ducti"}
+          - {t: "sunt"}
+          - {t: "[duo]"}
+          - {t: "exercitus", n: "exercitūs"}
+          - {t: "eodem"}
+          - {t: "fere"}
+          - {t: "tempore"}
+          - {t: "in"}
+          - {t: "Aethiopiam"}
+          - {t: "et"}
+          - {t: "in"}
+          - {t: "Ar[a]biam,"}
+      - "quae appel[latur Eudaemon, [maxim]aeque hos[t]ium gentis utr[iu]sque cop[iae] caesae sunt in acie et [c]om[plur]a oppida capta."
+      - "In Aethiopiam usque ad oppidum Nabata pervent[um] est, cui proxima est Meroe."
+      - "In Arabiam usque in fines Sabaeorum pro[cess]it exercitus ad oppidum Mariba."
+  - id: "27"
+    title: "Chapter 27: Egypt added; Armenia"
+    lines:
+      - "Aegyptum imperio populi [Ro]mani adieci."
+      - "Armeniam maiorum, interfecto rege eius Artaxe, c[u]m possem facere provinciam, malui maiorum nostrorum exemplo regn[u]m id Tigrani,"
+      - "regis Artavasdis filio, nepoti autem Tigranis regis, per T[i."
+      - "Ne]ronem trad[er], qui tum mihi priv[ig]nus erat."
+      - "Et eandem gentem postea d[e]sciscentem et rebellantem domit[a]m per Gaium filium meum regi Ariobarzani,"
+      - "regis Medorum Artaba[zi] filio, regendam tradidi et post eius mortem filio eius Artavasdi."
+      - "Quo interfecto, Tig[ra]ne qui erat ex regio genere Armeniorum oriundus, in id regnum misi."
+      - "Provincias omnis, quae trans Hadrianum mare vergunt ad orien[te]m, Cyrenasque, iam ex parte magna regibus eas possidentibus,"
+      - "et antea Siciliam et Sardiniam occupatas bello servili reciperavi."
+  - id: "28"
+    title: "Chapter 28: colonies of soldiers"
+    lines:
+      - "Colonias in Africa Sicilia Macedonia utraque Hispania Achai[a] Asia S[y]ria Gallia Narbonensi Pi[si]dia militum deduxi."
+      - "Italia autem XXVIII [colo]nias, quae vivo me celeberrimae et frequentissimae fuerunt, me auctore deductas habet."
+  - id: "29"
+    title: "Chapter 29: standards recovered; the Parthians made to return them"
+    lines:
+      - "Signa militaria complur[a per] alios d[u]ces ami[ssa] devicti[s hostibu]s re[cipe]ravi ex Hispania et Gallia et a Dalmateis."
+      - "Parthos trium exercitum Romanorum spolia et signa re[ddere] mihi supplicesque amicitiam populi Romani petere coegi."
+      - "Ea autem si[gn]a in penetrali, quod est in templo Martis Ultoris, reposui."
+  - id: "30"
+    title: "Chapter 30: the Pannonians and the Dacians"
+    lines:
+      - "Pannoniorum gentes, qua[s a]nte me principem populi Romani exercitus numquam ad[it], devictas per Ti. Neronem,"
+      - "qui tum erat privignus et legatus meus, imperio populi Romani s[ubie]ci protulique fines Illyrici ad r[ip]am fluminis Dan[uv]i."
+      - "Citr[a] quod [D]a[cor]u[m tra]n[s]gressus exercitus meis a[u]sp[icis vict]us profligatusque [es]t,"
+      - tokens:
+          - {t: "et"}
+          - {t: "pos[tea"}
+          - {t: "tran]s"}
+          - {t: "Dan[u]vium"}
+          - {t: "ductus"}
+          - {t: "ex[ercitus"}
+          - {t: "me]u[s]"}
+          - {t: "Dacorum"}
+          - {t: "gentis", n: "gentīs"}
+          - {t: "im[peri]a"}
+          - {t: "p[opuli]"}
+          - {t: "R[omani"}
+          - {t: "perferre"}
+          - {t: "coegit]."}
+  - id: "31"
+    title: "Chapter 31: embassies from India and other peoples"
+    lines:
+      - "Ad me ex In[dia regum legationes saepe missae sunt nunquam visae ante id t]em[pus] apud quemquam Romanorum ducem."
+      - "Nostram amic[itiam petie]run[t] per legat[os] Bastarnae Scythaeque et Sarmatarum qui sunt citra flumen Tanaim et ultra reges."
+      - "Albanorumque rex et Hiberorum e[t Medorum]."
+  - id: "32"
+    title: "Chapter 32: kings as suppliants; Parthian hostages"
+    lines:
+      - "Ad me supplices confugerunt reges Parthorum Tirida[te]s et post[ea] Phrates regis Phratis filius."
+      - "Medorum Artavasdes, Adiabenorum Artaxares, Britannorum Dumnobellaunus et Tincommius, Sugambr]orum Maelo, Marcomannorum Sueborum [Segime]rus."
+      - "Ad me rex Parthorum Phrates, Orod[i]s filius, filios suos nepot[esque omnes] misit in Italiam,"
+      - "non bello superatus, sed amicitiam nostram per [libe]ror[um] suorum pignora petens."
+      - "Plurimaeque aliae gentes expertae sunt p."
+      - "R. fidem me principe, quibus antea cum populo Romano nullum extiterat legationum et amicitiae commercium."
+  - id: "33"
+    title: "Chapter 33: kings given to the Parthians and the Medes"
+    lines:
+      - tokens:
+          - {t: "A", n: "ā"}
+          - {t: "me"}
+          - {t: "gentes"}
+          - {t: "Parthorum"}
+          - {t: "et"}
+          - {t: "Medoru[m"}
+          - {t: "per"}
+          - {t: "legatos]"}
+          - {t: "principes"}
+          - {t: "earum"}
+          - {t: "gentium"}
+          - {t: "reges"}
+          - {t: "pet[i]tos"}
+          - {t: "acceperunt:"}
+      - "Par[thi Vononem, regis Phr]atis filium, regis Orodis nepotem."
+      - "Medi Ariobarzanem, regis Artavazdis filium, regis Ariobarzanis nepotem."
   - id: "34"
     title: "Chapter 34: the settlement of 28-27 BC and the name Augustus"
     lines:

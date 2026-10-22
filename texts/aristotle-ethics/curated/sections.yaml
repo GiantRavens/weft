@@ -1,0 +1,421 @@
+# Human overlay for aristotle-ethics. Glosses by hand; corrections to the automatic parse in their own changesets.
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-18
+  why: "1094a1-1094b11: literal word-for-word gloss"
+  status: draft
+  set:
+    eth.1.1.1.1: {gloss: "every"}   # πᾶσα
+    eth.1.1.1.2: {gloss: "art"}   # τέχνη
+    eth.1.1.1.3: {gloss: "and"}   # καὶ
+    eth.1.1.1.4: {gloss: "every"}   # πᾶσα
+    eth.1.1.1.5: {gloss: "inquiry"}   # μέθοδος
+    eth.1.1.1.6: {gloss: "likewise"}   # ὁμοίως
+    eth.1.1.1.7: {gloss: "and"}   # δὲ
+    eth.1.1.1.8: {gloss: "action"}   # πρᾶξίς
+    eth.1.1.1.9: {gloss: "both"}   # τε
+    eth.1.1.1.10: {gloss: "and"}   # καὶ
+    eth.1.1.1.11: {gloss: "choice"}   # προαίρεσις
+    eth.1.1.1.12: {gloss: "good"}   # ἀγαθοῦ
+    eth.1.1.1.13: {gloss: "some"}   # τινὸς
+    eth.1.1.1.14: {gloss: "to-aim-at"}   # ἐφίεσθαι
+    eth.1.1.1.15: {gloss: "seems"}   # δοκεῖ
+    eth.1.1.2.1: {gloss: "therefore"}   # διὸ
+    eth.1.1.2.2: {gloss: "rightly"}   # καλῶς
+    eth.1.1.2.3: {gloss: "they-declared"}   # ἀπεφήναντο
+    eth.1.1.2.4: {gloss: "the-good"}   # τἀγαθόν
+    eth.1.1.2.5: {gloss: "which"}   # οὗ
+    eth.1.1.2.6: {gloss: "all-things"}   # πάντʼ
+    eth.1.1.2.7: {gloss: "aims-at"}   # ἐφίεται
+    eth.1.1.3.1: {gloss: "difference"}   # διαφορὰ
+    eth.1.1.3.2: {gloss: "but"}   # δέ
+    eth.1.1.3.3: {gloss: "a-certain"}   # τις
+    eth.1.1.3.4: {gloss: "appears"}   # φαίνεται
+    eth.1.1.3.5: {gloss: "of-the"}   # τῶν
+    eth.1.1.3.6: {gloss: "ends"}   # τελῶν
+    eth.1.1.4.1: {gloss: "some"}   # τὰ
+    eth.1.1.4.2: {gloss: "on-one-hand"}   # μὲν
+    eth.1.1.4.3: {gloss: "for"}   # γάρ
+    eth.1.1.4.4: {gloss: "are"}   # εἰσιν
+    eth.1.1.4.5: {gloss: "activities"}   # ἐνέργειαι
+    eth.1.1.4.6: {gloss: "others"}   # τὰ
+    eth.1.1.4.7: {gloss: "and"}   # δὲ
+    eth.1.1.4.8: {gloss: "beside"}   # παρʼ
+    eth.1.1.4.9: {gloss: "them"}   # αὐτὰς
+    eth.1.1.4.10: {gloss: "works"}   # ἔργα
+    eth.1.1.4.11: {gloss: "certain"}   # τινά
+    eth.1.1.5.1: {gloss: "of-which"}   # ὧν
+    eth.1.1.5.2: {gloss: "and"}   # δʼ
+    eth.1.1.5.3: {gloss: "there-are"}   # εἰσὶ
+    eth.1.1.5.4: {gloss: "ends"}   # τέλη
+    eth.1.1.5.5: {gloss: "certain"}   # τινὰ
+    eth.1.1.5.6: {gloss: "beside"}   # παρὰ
+    eth.1.1.5.7: {gloss: "the"}   # τὰς
+    eth.1.1.5.8: {gloss: "actions"}   # πράξεις
+    eth.1.1.5.9: {gloss: "in"}   # ἐν
+    eth.1.1.5.10: {gloss: "these"}   # τούτοις
+    eth.1.1.5.11: {gloss: "better"}   # βελτίω
+    eth.1.1.5.12: {gloss: "are-by-nature"}   # πέφυκε
+    eth.1.1.5.13: {gloss: "than-the"}   # τῶν
+    eth.1.1.5.14: {gloss: "activities"}   # ἐνεργειῶν
+    eth.1.1.5.15: {gloss: "the"}   # τὰ
+    eth.1.1.5.16: {gloss: "works"}   # ἔργα
+    eth.1.1.6.1: {gloss: "many"}   # πολλῶν
+    eth.1.1.6.2: {gloss: "and"}   # δὲ
+    eth.1.1.6.3: {gloss: "actions"}   # πράξεων
+    eth.1.1.6.4: {gloss: "being"}   # οὐσῶν
+    eth.1.1.6.5: {gloss: "and"}   # καὶ
+    eth.1.1.6.6: {gloss: "arts"}   # τεχνῶν
+    eth.1.1.6.7: {gloss: "and"}   # καὶ
+    eth.1.1.6.8: {gloss: "sciences"}   # ἐπιστημῶν
+    eth.1.1.6.9: {gloss: "many"}   # πολλὰ
+    eth.1.1.6.10: {gloss: "become"}   # γίνεται
+    eth.1.1.6.11: {gloss: "also"}   # καὶ
+    eth.1.1.6.12: {gloss: "the"}   # τὰ
+    eth.1.1.6.13: {gloss: "ends"}   # τέλη
+    eth.1.1.7.1: {gloss: "of-medicine"}   # ἰατρικῆς
+    eth.1.1.7.2: {gloss: "on-one-hand"}   # μὲν
+    eth.1.1.7.3: {gloss: "for"}   # γὰρ
+    eth.1.1.7.4: {gloss: "health"}   # ὑγίεια
+    eth.1.1.7.5: {gloss: "of-shipbuilding"}   # ναυπηγικῆς
+    eth.1.1.7.6: {gloss: "and"}   # δὲ
+    eth.1.1.7.7: {gloss: "ship"}   # πλοῖον
+    eth.1.1.7.8: {gloss: "of-generalship"}   # στρατηγικῆς
+    eth.1.1.7.9: {gloss: "and"}   # δὲ
+    eth.1.1.7.10: {gloss: "victory"}   # νίκη
+    eth.1.1.7.11: {gloss: "of-household-management"}   # οἰκονομικῆς
+    eth.1.1.7.12: {gloss: "and"}   # δὲ
+    eth.1.1.7.13: {gloss: "wealth"}   # πλοῦτος
+    eth.1.1.8.1: {gloss: "as-many-as"}   # ὅσαι
+    eth.1.1.8.2: {gloss: "and"}   # δʼ
+    eth.1.1.8.3: {gloss: "are"}   # εἰσὶ
+    eth.1.1.8.4: {gloss: "of-the"}   # τῶν
+    eth.1.1.8.5: {gloss: "such"}   # τοιούτων
+    eth.1.1.8.6: {gloss: "under"}   # ὑπὸ
+    eth.1.1.8.7: {gloss: "one"}   # μίαν
+    eth.1.1.8.8: {gloss: "some"}   # τινὰ
+    eth.1.1.8.9: {gloss: "capacity"}   # δύναμιν
+    eth.1.1.8.10: {gloss: "just-as"}   # καθάπερ
+    eth.1.1.8.11: {gloss: "under"}   # ὑπὸ
+    eth.1.1.8.12: {gloss: "the"}   # τὴν
+    eth.1.1.8.13: {gloss: "horsemanship"}   # ἱππικὴν
+    eth.1.1.8.14: {gloss: "bridle-making"}   # χαλινοποιικὴ
+    eth.1.1.8.15: {gloss: "and"}   # καὶ
+    eth.1.1.8.16: {gloss: "as-many-as"}   # ὅσαι
+    eth.1.1.8.17: {gloss: "other"}   # ἄλλαι
+    eth.1.1.8.18: {gloss: "of-the"}   # τῶν
+    eth.1.1.8.19: {gloss: "of-horses"}   # ἱππικῶν
+    eth.1.1.8.20: {gloss: "equipment"}   # ὀργάνων
+    eth.1.1.8.21: {gloss: "are"}   # εἰσίν
+    eth.1.1.8.22: {gloss: "this"}   # αὕτη
+    eth.1.1.8.23: {gloss: "and"}   # δὲ
+    eth.1.1.8.24: {gloss: "and"}   # καὶ
+    eth.1.1.8.25: {gloss: "every"}   # πᾶσα
+    eth.1.1.8.26: {gloss: "military"}   # πολεμικὴ
+    eth.1.1.8.27: {gloss: "action"}   # πρᾶξις
+    eth.1.1.8.28: {gloss: "under"}   # ὑπὸ
+    eth.1.1.8.29: {gloss: "the"}   # τὴν
+    eth.1.1.8.30: {gloss: "generalship"}   # στρατηγικήν
+    eth.1.1.8.31: {gloss: "in"}   # κατὰ
+    eth.1.1.8.32: {gloss: "the"}   # τὸν
+    eth.1.1.8.33: {gloss: "same"}   # αὐτὸν
+    eth.1.1.8.34: {gloss: "indeed"}   # δὴ
+    eth.1.1.8.35: {gloss: "way"}   # τρόπον
+    eth.1.1.8.36: {gloss: "others"}   # ἄλλαι
+    eth.1.1.8.37: {gloss: "under"}   # ὑφʼ
+    eth.1.1.8.38: {gloss: "different-ones"}   # ἑτέρας
+    eth.1.1.9.1: {gloss: "in"}   # ἐν
+    eth.1.1.9.2: {gloss: "all"}   # ἁπάσαις
+    eth.1.1.9.3: {gloss: "and"}   # δὲ
+    eth.1.1.9.4: {gloss: "the"}   # τὰ
+    eth.1.1.9.5: {gloss: "of-the"}   # τῶν
+    eth.1.1.9.6: {gloss: "architectonic"}   # ἀρχιτεκτονικῶν
+    eth.1.1.9.7: {gloss: "ends"}   # τέλη
+    eth.1.1.9.8: {gloss: "of-all"}   # πάντων
+    eth.1.1.9.9: {gloss: "are"}   # ἐστὶν
+    eth.1.1.9.10: {gloss: "more-choiceworthy"}   # αἱρετώτερα
+    eth.1.1.9.11: {gloss: "than-the"}   # τῶν
+    eth.1.1.9.12: {gloss: "under"}   # ὑπʼ
+    eth.1.1.9.13: {gloss: "them"}   # αὐτά
+    eth.1.1.10.1: {gloss: "of-these"}   # τούτων
+    eth.1.1.10.2: {gloss: "for"}   # γὰρ
+    eth.1.1.10.3: {gloss: "for-the-sake-of"}   # χάριν
+    eth.1.1.10.4: {gloss: "and-those"}   # κἀκεῖνα
+    eth.1.1.10.5: {gloss: "are-pursued"}   # διώκεται
+    eth.1.1.11.1: {gloss: "it-differs"}   # διαφέρει
+    eth.1.1.11.2: {gloss: "but"}   # δʼ
+    eth.1.1.11.3: {gloss: "in-nothing"}   # οὐδὲν
+    eth.1.1.11.4: {gloss: "the"}   # τὰς
+    eth.1.1.11.5: {gloss: "activities"}   # ἐνεργείας
+    eth.1.1.11.6: {gloss: "themselves"}   # αὐτὰς
+    eth.1.1.11.7: {gloss: "to-be"}   # εἶναι
+    eth.1.1.11.8: {gloss: "the"}   # τὰ
+    eth.1.1.11.9: {gloss: "ends"}   # τέλη
+    eth.1.1.11.10: {gloss: "of-the"}   # τῶν
+    eth.1.1.11.11: {gloss: "actions"}   # πράξεων
+    eth.1.1.11.12: {gloss: "or"}   # ἢ
+    eth.1.1.11.13: {gloss: "beside"}   # παρὰ
+    eth.1.1.11.14: {gloss: "these"}   # ταύτας
+    eth.1.1.11.15: {gloss: "other"}   # ἄλλο
+    eth.1.1.11.16: {gloss: "something"}   # τι
+    eth.1.1.11.17: {gloss: "just-as"}   # καθάπερ
+    eth.1.1.11.18: {gloss: "in-the-case-of"}   # ἐπὶ
+    eth.1.1.11.19: {gloss: "the"}   # τῶν
+    eth.1.1.11.20: {gloss: "mentioned"}   # λεχθεισῶν
+    eth.1.1.11.21: {gloss: "sciences"}   # ἐπιστημῶν
+    eth.1.2.1.1: {gloss: "if"}   # εἰ
+    eth.1.2.1.2: {gloss: "then"}   # δή
+    eth.1.2.1.3: {gloss: "some"}   # τι
+    eth.1.2.1.4: {gloss: "end"}   # τέλος
+    eth.1.2.1.5: {gloss: "is"}   # ἐστὶ
+    eth.1.2.1.6: {gloss: "of-the"}   # τῶν
+    eth.1.2.1.7: {gloss: "things-done"}   # πρακτῶν
+    eth.1.2.1.8: {gloss: "which"}   # ὃ
+    eth.1.2.1.9: {gloss: "for-the-sake-of"}   # διʼ
+    eth.1.2.1.10: {gloss: "itself"}   # αὑτὸ
+    eth.1.2.1.11: {gloss: "we-wish"}   # βουλόμεθα
+    eth.1.2.1.12: {gloss: "the-other-things"}   # τἆλλα
+    eth.1.2.1.13: {gloss: "and"}   # δὲ
+    eth.1.2.1.14: {gloss: "for-the-sake-of"}   # διὰ
+    eth.1.2.1.15: {gloss: "this"}   # τοῦτο
+    eth.1.2.1.16: {gloss: "and"}   # καὶ
+    eth.1.2.1.17: {gloss: "not"}   # μὴ
+    eth.1.2.1.18: {gloss: "all-things"}   # πάντα
+    eth.1.2.1.19: {gloss: "for-the-sake-of"}   # διʼ
+    eth.1.2.1.20: {gloss: "another"}   # ἕτερον
+    eth.1.2.1.21: {gloss: "we-choose"}   # αἱρούμεθα
+    eth.1.2.1.22: {gloss: "it-will-go-on"}   # πρόεισι
+    eth.1.2.1.23: {gloss: "for"}   # γὰρ
+    eth.1.2.1.24: {gloss: "so"}   # οὕτω
+    eth.1.2.1.25: {gloss: "at-least"}   # γʼ
+    eth.1.2.1.26: {gloss: "into"}   # εἰς
+    eth.1.2.1.27: {gloss: "infinity"}   # ἄπειρον
+    eth.1.2.1.28: {gloss: "so-that"}   # ὥστʼ
+    eth.1.2.1.29: {gloss: "to-be"}   # εἶναι
+    eth.1.2.1.30: {gloss: "empty"}   # κενὴν
+    eth.1.2.1.31: {gloss: "and"}   # καὶ
+    eth.1.2.1.32: {gloss: "vain"}   # ματαίαν
+    eth.1.2.1.33: {gloss: "the"}   # τὴν
+    eth.1.2.1.34: {gloss: "desire"}   # ὄρεξιν
+    eth.1.2.1.35: {gloss: "clear"}   # δῆλον
+    eth.1.2.1.36: {gloss: "that"}   # ὡς
+    eth.1.2.1.37: {gloss: "this"}   # τοῦτʼ
+    eth.1.2.1.38: {gloss: "would"}   # ἂν
+    eth.1.2.1.39: {gloss: "be"}   # εἴη
+    eth.1.2.1.40: {gloss: "the-good"}   # τἀγαθὸν
+    eth.1.2.1.41: {gloss: "and"}   # καὶ
+    eth.1.2.1.42: {gloss: "the"}   # τὸ
+    eth.1.2.1.43: {gloss: "best"}   # ἄριστον
+    eth.1.2.2.1: {gloss: "is-it"}   # ἆρʼ
+    eth.1.2.2.2: {gloss: "then"}   # οὖν
+    eth.1.2.2.3: {gloss: "also"}   # καὶ
+    eth.1.2.2.4: {gloss: "for"}   # πρὸς
+    eth.1.2.2.5: {gloss: "the"}   # τὸν
+    eth.1.2.2.6: {gloss: "life"}   # βίον
+    eth.1.2.2.7: {gloss: "the"}   # ἡ
+    eth.1.2.2.8: {gloss: "knowledge"}   # γνῶσις
+    eth.1.2.2.9: {gloss: "of-it"}   # αὐτοῦ
+    eth.1.2.2.10: {gloss: "great"}   # μεγάλην
+    eth.1.2.2.11: {gloss: "has"}   # ἔχει
+    eth.1.2.2.12: {gloss: "weight"}   # ῥοπήν
+    eth.1.2.2.13: {gloss: "and"}   # καὶ
+    eth.1.2.2.14: {gloss: "just-as"}   # καθάπερ
+    eth.1.2.2.15: {gloss: "archers"}   # τοξόται
+    eth.1.2.2.16: {gloss: "target"}   # σκοπὸν
+    eth.1.2.2.17: {gloss: "having"}   # ἔχοντες
+    eth.1.2.2.18: {gloss: "more"}   # μᾶλλον
+    eth.1.2.2.19: {gloss: "would"}   # ἂν
+    eth.1.2.2.20: {gloss: "we-may-hit"}   # τυγχάνοιμεν
+    eth.1.2.2.21: {gloss: "the"}   # τοῦ
+    eth.1.2.2.22: {gloss: "right-thing"}   # δέοντος
+    eth.1.2.3.1: {gloss: "if"}   # εἰ
+    eth.1.2.3.2: {gloss: "and"}   # δʼ
+    eth.1.2.3.3: {gloss: "so"}   # οὕτω
+    eth.1.2.3.4: {gloss: "one-must-try"}   # πειρατέον
+    eth.1.2.3.5: {gloss: "in-outline"}   # τύπῳ
+    eth.1.2.3.6: {gloss: "at-least"}   # γε
+    eth.1.2.3.7: {gloss: "to-grasp"}   # περιλαβεῖν
+    eth.1.2.3.8: {gloss: "it"}   # αὐτὸ
+    eth.1.2.3.9: {gloss: "what"}   # τί
+    eth.1.2.3.10: {gloss: "ever"}   # ποτʼ
+    eth.1.2.3.11: {gloss: "it-is"}   # ἐστὶ
+    eth.1.2.3.12: {gloss: "and"}   # καὶ
+    eth.1.2.3.13: {gloss: "of-which"}   # τίνος
+    eth.1.2.3.14: {gloss: "of-the"}   # τῶν
+    eth.1.2.3.15: {gloss: "sciences"}   # ἐπιστημῶν
+    eth.1.2.3.16: {gloss: "or"}   # ἢ
+    eth.1.2.3.17: {gloss: "capacities"}   # δυνάμεων
+    eth.1.2.4.1: {gloss: "it-may-seem"}   # δόξειε
+    eth.1.2.4.2: {gloss: "and"}   # δʼ
+    eth.1.2.4.3: {gloss: "would"}   # ἂν
+    eth.1.2.4.4: {gloss: "of-the"}   # τῆς
+    eth.1.2.4.5: {gloss: "most-authoritative"}   # κυριωτάτης
+    eth.1.2.4.6: {gloss: "and"}   # καὶ
+    eth.1.2.4.7: {gloss: "most"}   # μάλιστα
+    eth.1.2.4.8: {gloss: "architectonic"}   # ἀρχιτεκτονικῆς
+    eth.1.2.5.1: {gloss: "such"}   # τοιαύτη
+    eth.1.2.5.2: {gloss: "and"}   # δʼ
+    eth.1.2.5.3: {gloss: "the"}   # ἡ
+    eth.1.2.5.4: {gloss: "political-science"}   # πολιτικὴ
+    eth.1.2.5.5: {gloss: "appears"}   # φαίνεται
+    eth.1.2.6.1: {gloss: "which"}   # τίνας
+    eth.1.2.6.2: {gloss: "for"}   # γὰρ
+    eth.1.2.6.3: {gloss: "to-be"}   # εἶναι
+    eth.1.2.6.4: {gloss: "needful"}   # χρεὼν
+    eth.1.2.6.5: {gloss: "of-the"}   # τῶν
+    eth.1.2.6.6: {gloss: "sciences"}   # ἐπιστημῶν
+    eth.1.2.6.7: {gloss: "in"}   # ἐν
+    eth.1.2.6.8: {gloss: "the"}   # ταῖς
+    eth.1.2.6.9: {gloss: "cities"}   # πόλεσι
+    eth.1.2.6.10: {gloss: "and"}   # καὶ
+    eth.1.2.6.11: {gloss: "which-kinds"}   # ποίας
+    eth.1.2.6.12: {gloss: "each"}   # ἑκάστους
+    eth.1.2.6.13: {gloss: "to-learn"}   # μανθάνειν
+    eth.1.2.6.14: {gloss: "and"}   # καὶ
+    eth.1.2.6.15: {gloss: "up-to"}   # μέχρι
+    eth.1.2.6.16: {gloss: "what-point"}   # τίνος
+    eth.1.2.6.17: {gloss: "this"}   # αὕτη
+    eth.1.2.6.18: {gloss: "ordains"}   # διατάσσει
+    eth.1.2.7.1: {gloss: "we-see"}   # ὁρῶμεν
+    eth.1.2.7.2: {gloss: "and"}   # δὲ
+    eth.1.2.7.3: {gloss: "also"}   # καὶ
+    eth.1.2.7.4: {gloss: "the"}   # τὰς
+    eth.1.2.7.5: {gloss: "most-honored"}   # ἐντιμοτάτας
+    eth.1.2.7.6: {gloss: "of-the"}   # τῶν
+    eth.1.2.7.7: {gloss: "capacities"}   # δυνάμεων
+    eth.1.2.7.8: {gloss: "under"}   # ὑπὸ
+    eth.1.2.7.9: {gloss: "this"}   # ταύτην
+    eth.1.2.7.10: {gloss: "being"}   # οὔσας
+    eth.1.2.7.11: {gloss: "for-example"}   # οἷον
+    eth.1.2.7.12: {gloss: "generalship"}   # στρατηγικὴν
+    eth.1.2.7.13: {gloss: "household-management"}   # οἰκονομικὴν
+    eth.1.2.7.14: {gloss: "rhetoric"}   # ῥητορικήν
+    eth.1.2.8.1: {gloss: "using"}   # χρωμένης
+    eth.1.2.8.2: {gloss: "and"}   # δὲ
+    eth.1.2.8.3: {gloss: "this"}   # ταύτης
+    eth.1.2.8.4: {gloss: "the"}   # ταῖς
+    eth.1.2.8.5: {gloss: "remaining"}   # λοιπαῖς
+    eth.1.2.8.6: {gloss: "practical"}   # πρακτικαῖς
+    eth.1.2.8.7: {gloss: "of-the"}   # τῶν
+    eth.1.2.8.8: {gloss: "sciences"}   # ἐπιστημῶν
+    eth.1.2.8.9: {gloss: "further"}   # ἔτι
+    eth.1.2.8.10: {gloss: "and"}   # δὲ
+    eth.1.2.8.11: {gloss: "legislating"}   # νομοθετούσης
+    eth.1.2.8.12: {gloss: "what"}   # τί
+    eth.1.2.8.13: {gloss: "it-is-needful"}   # δεῖ
+    eth.1.2.8.14: {gloss: "to-do"}   # πράττειν
+    eth.1.2.8.15: {gloss: "and"}   # καὶ
+    eth.1.2.8.16: {gloss: "from-what"}   # τίνων
+    eth.1.2.8.17: {gloss: "to-abstain"}   # ἀπέχεσθαι
+    eth.1.2.8.18: {gloss: "the"}   # τὸ
+    eth.1.2.8.19: {gloss: "of-this"}   # ταύτης
+    eth.1.2.8.20: {gloss: "end"}   # τέλος
+    eth.1.2.8.21: {gloss: "may-embrace"}   # περιέχοι
+    eth.1.2.8.22: {gloss: "would"}   # ἂν
+    eth.1.2.8.23: {gloss: "those"}   # τὰ
+    eth.1.2.8.24: {gloss: "of-the"}   # τῶν
+    eth.1.2.8.25: {gloss: "others"}   # ἄλλων
+    eth.1.2.8.26: {gloss: "so-that"}   # ὥστε
+    eth.1.2.8.27: {gloss: "this"}   # τοῦτʼ
+    eth.1.2.8.28: {gloss: "would"}   # ἂν
+    eth.1.2.8.29: {gloss: "be"}   # εἴη
+    eth.1.2.8.30: {gloss: "the-human"}   # τἀνθρώπινον
+    eth.1.2.8.31: {gloss: "good"}   # ἀγαθόν
+    eth.1.2.9.1: {gloss: "if"}   # εἰ
+    eth.1.2.9.2: {gloss: "for"}   # γὰρ
+    eth.1.2.9.3: {gloss: "even"}   # καὶ
+    eth.1.2.9.4: {gloss: "the-same"}   # ταὐτόν
+    eth.1.2.9.5: {gloss: "it-is"}   # ἐστιν
+    eth.1.2.9.6: {gloss: "for-one"}   # ἑνὶ
+    eth.1.2.9.7: {gloss: "and"}   # καὶ
+    eth.1.2.9.8: {gloss: "for-a-city"}   # πόλει
+    eth.1.2.9.9: {gloss: "greater"}   # μεῖζόν
+    eth.1.2.9.10: {gloss: "at-least"}   # γε
+    eth.1.2.9.11: {gloss: "and"}   # καὶ
+    eth.1.2.9.12: {gloss: "more-complete"}   # τελειότερον
+    eth.1.2.9.13: {gloss: "that"}   # τὸ
+    eth.1.2.9.14: {gloss: "of-the"}   # τῆς
+    eth.1.2.9.15: {gloss: "city"}   # πόλεως
+    eth.1.2.9.16: {gloss: "appears"}   # φαίνεται
+    eth.1.2.9.17: {gloss: "both"}   # καὶ
+    eth.1.2.9.18: {gloss: "to-attain"}   # λαβεῖν
+    eth.1.2.9.19: {gloss: "and"}   # καὶ
+    eth.1.2.9.20: {gloss: "to-preserve"}   # σῴζειν
+    eth.1.2.10.1: {gloss: "to-be-welcomed"}   # ἀγαπητὸν
+    eth.1.2.10.2: {gloss: "on-one-hand"}   # μὲν
+    eth.1.2.10.3: {gloss: "for"}   # γὰρ
+    eth.1.2.10.4: {gloss: "even"}   # καὶ
+    eth.1.2.10.5: {gloss: "for-one"}   # ἑνὶ
+    eth.1.2.10.6: {gloss: "alone"}   # μόνῳ
+    eth.1.2.10.7: {gloss: "finer"}   # κάλλιον
+    eth.1.2.10.8: {gloss: "but"}   # δὲ
+    eth.1.2.10.9: {gloss: "and"}   # καὶ
+    eth.1.2.10.10: {gloss: "more-divine"}   # θειότερον
+    eth.1.2.10.11: {gloss: "for-a-nation"}   # ἔθνει
+    eth.1.2.10.12: {gloss: "and"}   # καὶ
+    eth.1.2.10.13: {gloss: "for-cities"}   # πόλεσιν
+    eth.1.2.11.1: {gloss: "the"}   # ἡ
+    eth.1.2.11.2: {gloss: "so"}   # μὲν
+    eth.1.2.11.3: {gloss: "then"}   # οὖν
+    eth.1.2.11.4: {gloss: "inquiry"}   # μέθοδος
+    eth.1.2.11.5: {gloss: "these-things"}   # τούτων
+    eth.1.2.11.6: {gloss: "aims-at"}   # ἐφίεται
+    eth.1.2.11.7: {gloss: "political"}   # πολιτική
+    eth.1.2.11.8: {gloss: "a-kind-of"}   # τις
+    eth.1.2.11.9: {gloss: "being"}   # οὖσα
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-18
+  why: "corrections to the GLAUx automatic parse of 1094a1-1094b11: 45 of 358 tokens corrected (10 lemmas, 45 morph tags). Subjects and predicates parsed as accusatives; feminine arts and sciences and neuter things parsed as masculine; comparative predicates parsed as accusatives; crasis tokens set to the content word; ἄπειρον lemmatized as ἤπειρος; πρόεισι lemmatized as προέρχομαι and parsed as plural; χρεών parsed as a masculine participle; οἷον parsed as a nominative; χαλινοποιική and ῥητορική set to their adjective headwords"
+  status: draft
+  set:
+    eth.1.1.1.12: {morph: a-s---ng-}   # ἀγαθοῦ: 'some good', neuter
+    eth.1.1.2.4: {lemma: ἀγαθός, morph: a-s---na-}   # τἀγαθόν: crasis of τὸ ἀγαθόν, glossed as the adjective; object of ἀπεφήναντο
+    eth.1.1.2.6: {morph: a-p---nn-}   # πάντʼ: subject of ἐφίεται
+    eth.1.1.4.6: {morph: l-p---nn-}   # τὰ: subject, 'the others are works'
+    eth.1.1.4.10: {morph: n-p---nn-}   # ἔργα: predicate nominative
+    eth.1.1.4.11: {morph: a-p---nn-}   # τινά: agrees with ἔργα
+    eth.1.1.5.4: {morph: n-p---nn-}   # τέλη: subject of εἰσί
+    eth.1.1.5.5: {morph: a-p---nn-}   # τινὰ: agrees with τέλη
+    eth.1.1.5.11: {morph: a-p---nnc}   # βελτίω: predicate nominative with πέφυκε
+    eth.1.1.5.15: {morph: l-p---nn-}   # τὰ: subject of πέφυκε
+    eth.1.1.5.16: {morph: n-p---nn-}   # ἔργα: subject of πέφυκε
+    eth.1.1.8.4: {morph: l-p---fg-}   # τῶν: of such arts, feminine
+    eth.1.1.8.5: {morph: a-p---fg-}   # τοιούτων: arts and sciences, feminine
+    eth.1.1.8.14: {lemma: χαλινοποιικός, morph: a-s---fn-}   # χαλινοποιικὴ: LSJ headword is the adjective χαλινοποιικός (sc. τέχνη), like ἱππικὴν beside it
+    eth.1.1.9.4: {morph: l-p---nn-}   # τὰ: subject of ἐστὶν
+    eth.1.1.9.5: {morph: l-p---fg-}   # τῶν: the master arts, feminine
+    eth.1.1.9.6: {morph: a-p---fg-}   # ἀρχιτεκτονικῶν: arts, feminine
+    eth.1.1.9.7: {morph: n-p---nn-}   # τέλη: subject of ἐστὶν
+    eth.1.1.9.8: {morph: a-p---fg-}   # πάντων: 'of all the master arts', with ἀρχιτεκτονικῶν
+    eth.1.1.9.10: {morph: a-p---nnc}   # αἱρετώτερα: predicate nominative
+    eth.1.1.10.4: {lemma: ἐκεῖνος, morph: a-p---nn-}   # κἀκεῖνα: crasis of καὶ ἐκεῖνα, glossed as the pronoun; subject of διώκεται
+    eth.1.2.1.3: {morph: a-s---nn-}   # τι: agrees with τέλος
+    eth.1.2.1.4: {morph: n-s---nn-}   # τέλος: subject of ἐστὶ
+    eth.1.2.1.12: {lemma: ἄλλος, morph: a-p---na-}   # τἆλλα: crasis of τὰ ἄλλα, glossed as the adjective
+    eth.1.2.1.18: {morph: a-p---na-}   # πάντα: object of αἱρούμεθα
+    eth.1.2.1.22: {lemma: πρόειμι, morph: v3spia---}   # πρόεισι: 3rd singular of πρόειμι 'go forward' (εἶμι), not προέρχομαι, not plural
+    eth.1.2.1.27: {lemma: ἄπειρος, morph: a-s---na-}   # ἄπειρον: εἰς ἄπειρον 'to infinity', adjective ἄπειρος; ἤπειρος 'mainland' is a different word
+    eth.1.2.1.40: {lemma: ἀγαθός, morph: a-s---nn-}   # τἀγαθὸν: crasis of τὸ ἀγαθόν, glossed as the adjective
+    eth.1.2.2.9: {morph: a-s---ng-}   # αὐτοῦ: refers to τἀγαθόν, neuter
+    eth.1.2.3.9: {morph: a-s---nn-}   # τί: predicate nominative in the indirect question
+    eth.1.2.6.4: {morph: n-s---nn-}   # χρεὼν: indeclinable neuter noun 'need' (LSJ), not a masculine participle
+    eth.1.2.7.11: {morph: d--------}   # οἷον: 'for example', adverbial
+    eth.1.2.7.14: {lemma: ῥητορικός, morph: a-s---fa-}   # ῥητορικήν: LSJ headword is the adjective ῥητορικός (sc. τέχνη), as with στρατηγικὴν and οἰκονομικὴν beside it
+    eth.1.2.8.18: {morph: l-s---nn-}   # τὸ: subject of περιέχοι
+    eth.1.2.8.20: {morph: n-s---nn-}   # τέλος: subject of περιέχοι
+    eth.1.2.8.24: {morph: l-p---fg-}   # τῶν: the other sciences, feminine
+    eth.1.2.8.25: {morph: a-p---fg-}   # ἄλλων: sciences, feminine
+    eth.1.2.8.30: {lemma: ἀνθρώπινος, morph: a-s---nn-}   # τἀνθρώπινον: crasis of τὸ ἀνθρώπινον, glossed as the adjective; predicate nominative with εἴη
+    eth.1.2.8.31: {morph: a-s---nn-}   # ἀγαθόν: predicate nominative with εἴη
+    eth.1.2.9.4: {lemma: αὐτός, morph: a-s---nn-}   # ταὐτόν: crasis of τὸ αὐτόν, glossed as the adjective; neuter predicate nominative
+    eth.1.2.9.9: {morph: a-s---nnc}   # μεῖζόν: predicate nominative
+    eth.1.2.9.12: {morph: a-s---nnc}   # τελειότερον: predicate nominative
+    eth.1.2.9.13: {morph: l-s---nn-}   # τὸ: subject of φαίνεται
+    eth.1.2.10.7: {morph: a-s---nnc}   # κάλλιον: predicate nominative
+    eth.1.2.10.10: {morph: a-s---nnc}   # θειότερον: predicate nominative
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-18
+  why: "review: two glosses (πρακτός 'to be done'; καί as 'also' in the crasis)"
+  status: draft
+  set:
+    eth.1.2.1.7: {gloss: "things-to-be-done"}   # πρακτῶν
+    eth.1.1.10.4: {gloss: "those-too"}   # κἀκεῖνα

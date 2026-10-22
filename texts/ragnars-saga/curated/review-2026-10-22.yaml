@@ -1,0 +1,28 @@
+# Corrections from the adversarial review of the whole saga's annotation, 2026-10-22.
+- by: "Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar"
+  date: "2026-10-22"
+  status: draft
+  why: "review of all chapters: one headword for the possessive (yðvarr, Zoëga's), fá ekki at gert as the convention table gives it, fyrr for the adverb before en, til as ADP in þar til er, Degree=Sup on four superlatives"
+  set:
+    rag.5.43.7: {lemma: "yðvarr"}   # yðarri
+    rag.5.43.20: {lemma: "yðvarr"}   # yðarra
+    rag.10.74.5: {lemma: "yðvarr"}   # yðru
+    rag.10.112.9: {lemma: "yðvarr"}   # yðarra
+    rag.15.106.4: {lemma: "yðvarr"}   # yðarrar
+    rag.16.44.21: {lemma: "yðvarr"}   # yðarn
+    rag.19.49.4: {gloss: "your"}   # yðarn
+    rag.7.20.39: {lemma: "engi", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Neg", gloss: "nothing"}   # ekki
+    rag.7.20.40: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    rag.16.1.8: {lemma: "fyrr", morph: "ADV|Degree=Cmp", gloss: "sooner"}   # fyrri
+    rag.12.35.9: {morph: "ADP"}   # til
+    rag.6.44.3: {morph: "ADJ|Case=Acc|Degree=Sup|Gender=Masc|Number=Sing"}   # fyrsta
+    rag.18.25.10: {morph: "ADJ|Case=Nom|Degree=Sup|Gender=Masc|Number=Sing"}   # fyrstr
+    rag.19.2.19: {morph: "ADJ|Case=Dat|Degree=Sup|Gender=Masc|Number=Plur"}   # næstum
+    rag.19.6.6: {morph: "ADJ|Case=Nom|Degree=Sup|Gender=Neut|Number=Sing"}   # fyrsta
+# Checked against Finnur Jónsson, Den norsk-islandske skjaldedigtning B II (1915), pp. 253, 259-260 (pin 190).
+- by: "Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar"
+  date: "2026-10-22"
+  status: draft
+  why: "Skjaldedigtning B II p. 260 construes roðna with svíra, 'necks reddened with blood': a past participle of rjóða, not the infinitive of roðna"
+  set:
+    rag.19.47.3: {lemma: "rjóða", morph: "VERB|Case=Acc|Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part", gloss: "reddened"}   # roðna

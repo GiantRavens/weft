@@ -1,0 +1,146 @@
+# Verbatim from sources/vigfusson-powell1883.txt (Krákumál, in Gudbrand Vigfusson and F. York Powell, Corpus Poeticum Boreale,
+# vol. 2, Oxford 1883, pp. 341-345, the English beneath their Old Norse text); see manifest for the edition.
+# Dropped: running heads, page numbers, the Old Norse, the line-numbered textual footnotes, the section numeral 'I.' before
+# stanza 1, and the editorial note that opens section II before stanza 22 ('II. Henceforward the poem is of a nobler type, and
+# we translate more fully.'), which is the translators' comment, not translation. Italics (with wrath, thus) are not marked.
+# The translators' square-bracket glosses are their own and are kept. Whitespace normalized; curly apostrophes as printed.
+# OCR corrections, each checked against the page images (archive.org corpuspoeticumbo02guuoft, leaves 349-353):
+#   1. 'WE' -> 'We' (small capitals of the opening word)
+#   2. '1 was' -> 'I was' (damaged I read as the figure 1)
+#   3. 'fray,' -> 'fray.' (OCR comma for the printed full stop)
+#   4. 'Enderis- ore' -> 'Enderis-ore' (line-end hyphen of a hyphenated name kept, line joined)
+#   5. '"Woolner' -> 'Woolner' (stray OCR quotation mark; none in print)
+#   6. 'by — hundreds' -> 'by hundreds' (stray OCR dash at the line end; none in print)
+#   7. 'An- gelico' -> 'Angelico' (word broken at the line end rejoined)
+#   8. '[war- tempest]' -> '[war-tempest]' (line-end hyphen of a compound kept, line joined)
+#   9. 'We,etc.' -> 'We, etc.' (OCR dropped the space; twice)
+#   10. '. in the morning' -> 'in the morning' (stray OCR mark at the line start; none in print)
+#   11. 'girlin' -> 'girl in' (OCR ran two words together)
+#   12. '[the West coast]. ;' -> '[the West coast].' (stray OCR semicolon; none in print)
+#   13. 'pierce lla.' -> 'pierce Ælla.' (OCR dropped the ligature Æ)
+#   14. 'their scree has' -> 'their father has' (OCR misread of father)
+# The translators abridge stanzas 1-21 (several are reduced to a clause) and give them as one running paragraph with the
+# refrain shortened to 'We, etc.'; each 'We, etc.' marks a stanza boundary and opens the span of the stanza it begins.
+# Stanzas 22-29 are translated in full, one paragraph each. Their Old Norse text differs from this edition in places
+# (see the notes): in stanza 20 the English closes with 'It was not as if one were kissing a young girl in the high-seat',
+# which renders this edition's 14.9-10, since their text exchanges the closing pair of stanzas 14 and 20; and their
+# footnote marks a line missing in stanza 23, which this edition also gives in 8 lines.
+translation: vigfusson-powell1883
+aligned_by: hand, phase 0; one span per stanza (prose); the translators number the 29 stanzas as this edition does; stanzas 1-21 are one running paragraph in which the refrain is shortened to 'We, etc.', and each 'We, etc.' opens the span of the stanza it begins (2026-10-22)
+spans:
+- lines:
+  - krak.1.1
+  - krak.1.10
+  text: We hewed with the brand! It was ever-so-long ago when we went to Gautland to the slaying of the snake. Then I won Thora; hence they called me Lodbrok [Shaggy-breech] because of that battle, when I pierced the serpent. I struck through the monster with my bright inlaid steel.
+- lines:
+  - krak.2.1
+  - krak.2.10
+  text: We, etc. I was very young when we made a breakfast for the wolf, east in Ore-sound.
+- lines:
+  - krak.3.1
+  - krak.3.10
+  text: We, etc. We bore our spears high, when we were twenty years old, and reddened our sword far and wide. We overcame eight earls in the east at the Dwina’s mouth.
+- lines:
+  - krak.4.1
+  - krak.4.10
+  text: We, etc. Hedin’s wife [war] was fated when we sent home the Helsings to Woden’s hall. We laid our ships up at Iwa’s mouth [East Baltic].
+- lines:
+  - krak.5.1
+  - krak.5.10
+  text: We, etc. No one, I think, questioned our courage, before Herraud fell on his ships in the fray.
+- lines:
+  - krak.6.1
+  - krak.6.10
+  text: We, etc. The host cast away their shields when the sword bit at Skarpa-reef [Scarborough]. The shield-moon was crimsoned ere King Raven fell.
+- lines:
+  - krak.7.1
+  - krak.7.10
+  text: We, etc. The swords screamed shrilly before King Eystan fell in Wuldur-acre.
+- lines:
+  - krak.8.1
+  - krak.8.10
+  text: We, etc. At Enderis-ore [?] the ravens soon got plenty of carrion to rip. It was ill at sunrise.
+- lines:
+  - krak.9.1
+  - krak.9.10
+  text: We, etc. We blooded the shields when we battened the ravens at Bornholm. Woolner fell at the battle.
+- lines:
+  - krak.10.1
+  - krak.10.10
+  text: We, etc. The fray was fast growing ere Frey fell in the land of the Flemings. Many a maid wept. The weapons bit in the morning.
+- lines:
+  - krak.11.1
+  - krak.11.10
+  text: We, etc. They lay by hundreds on their war-ships at the place called Angel-ness [Cape Angelico]. We held a mass of spears at the rising of the sun. Waltheow fell by our swords in the struggle.
+- lines:
+  - krak.12.1
+  - krak.12.10
+  text: We, etc. The dark blood dripped off our swords in Bard-firth [?].
+- lines:
+  - krak.13.1
+  - krak.13.10
+  text: We, etc. We hoisted high the tent of Hlank [shield] in the game of Hild [war] off Hedninga-bay [Hedinse by Swold]. It was not like laying a fair lady by one’s side, when we were splitting men’s helms.
+- lines:
+  - krak.14.1
+  - krak.14.10
+  text: We, etc. Hard was the shower that fell on the shield; the corse fell to earth in Northumberland; the battle in the morning watch could not be gainsaid.
+- lines:
+  - krak.15.1
+  - krak.15.10
+  text: We, etc. Hertheow was fated to win a victory over our men. Regnwald sank in the shield-rain [war-tempest].
+- lines:
+  - krak.16.1
+  - krak.16.10
+  text: We, etc. Marstan, the king who ruled Ireland, let neither eagle nor she-wolf starve. A sacrifice of the slain was given to the raven in Wetherford.
+- lines:
+  - krak.17.1
+  - krak.17.10
+  text: 'We, etc. I saw many hundred fall that morning in the Mouth in the battle. The sword cut my son to the heart: yea, Eystan slew Agnar.'
+- lines:
+  - krak.18.1
+  - krak.18.10
+  text: We, etc. On Wick-field it was not as when women are serving the wine.
+- lines:
+  - krak.19.1
+  - krak.19.10
+  text: We, etc. South we held a game [of war] with three kings at Lindis-ore of a morning. The blood of the Irish fell into the ocean in the dawn.
+- lines:
+  - krak.20.1
+  - krak.20.10
+  text: We, etc. I saw the fair-haired damsel’s son quail in the morning, and the gallants gave back in the battle. It was not as if the damsel were setting a bath for us in Ila-sound ere King Erne fell. It was not as if one were kissing a young girl in the high-seat.
+- lines:
+  - krak.21.1
+  - krak.21.10
+  text: We, etc. Ever after it will be seen in Anglesey, how the kings stormed forth to the sword-play. The dart was dyed on the Ore, early in the morning.
+- lines:
+  - krak.22.1
+  - krak.22.10
+  text: We hewed with the brand! Why should a man be nearer to death, though he be placed in the van in the tempest of spears? He who has never fed the she-wolf will often bemoan his lost life. Hard is it to egg on a coward to the brisk play of the sword. The heart of the coward will never stand him in good stead.
+- lines:
+  - krak.23.1
+  - krak.23.8
+  text: We hewed with the brand! I count it fair that man should meet man when swords are drawn. Let not thane flinch before thane. That was never the way of the brave. The darling of the maidens should ever be dauntless amid the clatter of swords.
+- lines:
+  - krak.24.1
+  - krak.24.10
+  text: 'We hewed with the brand! Of a truth methinks we must follow our fates: no man can overstep the decree of the Fates. I never thought that Ella would be my death, when I gorged the blood-hawks and drove my ships through the water, what time we gave the wolves a quarry in the firths of Scotland [the West coast].'
+- lines:
+  - krak.25.1
+  - krak.25.10
+  text: We hewed with the brand! It is ever my joy, that I know that the benches are decked for a banquet at Balder’s father’s. We shall soon be quaffing ale out of the crooked skull-boughs [horns] in the splendid house of Woden. The brave man does not quail before death. I shall not come into Withri’s [Woden’s] hall with a word of fear.
+- lines:
+  - krak.26.1
+  - krak.26.10
+  text: We hewed with the brand! All the sons of Anslaug would be waking the battle here with their bitter blades if they but knew of my plight, how a multitude of venomful serpents are rending me. Good kin on the mother’s side I gave my sons, so that their hearts will hold.
+- lines:
+  - krak.27.1
+  - krak.27.10
+  text: We hewed with the brand! My life is well-nigh past. Cruel is the pang that the adder gives. Goin [the snake] has housed himself in my heart’s core. I hope that Woden’s wand [the sword] shall one day pierce Ælla. My sons will swell with wrath, when they find their father has been thus betrayed. The brave lads will not rest in peace withal.
+- lines:
+  - krak.28.1
+  - krak.28.10
+  text: We hewed with the brand! I, the harbinger of war, have fought fifty pitched battles and one. My least thought was that any king should ever prove my better. Young was I when I betook me to the reddening of spears. The Anses will welcome me. Death is dreadless.
+- lines:
+  - krak.29.1
+  - krak.29.8
+  text: I am willing to depart. They are calling me home, the Fays whom Woden, the Lord of Hosts, has sent me from his hall. Merrily shall I drink ale in my high-seat with the Anses. My life days are done. Laughing I will die.

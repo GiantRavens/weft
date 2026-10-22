@@ -427,6 +427,708 @@ lines:
     sound:
       italian-humanist: {ipa: re.du.ˈkan.tur, respell: re-doo-KAN-toor}
       classical: {ipa: rɛ.duː.ˈkan.tʊr, respell: re-doo-KAN-tur}
+- id: ic.granata.1
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:granata.1
+  stanza: granata
+  stanza_title: 'Why the pope grants this: the sovereigns and Granada'
+  text: Unde cum ad hanc Sacram Petri Sedem, divina favente clementia, meritis licet imparibus, evocati fuerimus,
+  tokens:
+  - id: ic.granata.1.1
+    surface: Unde
+    sound:
+      italian-humanist: {ipa: ˈun.de, respell: OON-de}
+      classical: {ipa: ˈʊn.dɛ, respell: UN-de}
+  - id: ic.granata.1.2
+    surface: cum
+    sound:
+      italian-humanist: {ipa: kum, respell: koom}
+      classical: {ipa: kʊm, respell: kum}
+  - id: ic.granata.1.3
+    surface: ad
+    sound:
+      italian-humanist: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: ic.granata.1.4
+    surface: hanc
+    sound:
+      italian-humanist: {ipa: aŋk, respell: angk}
+      classical: {ipa: haŋk, respell: hangk}
+  - id: ic.granata.1.5
+    surface: Sacram
+    sound:
+      italian-humanist: {ipa: ˈsa.kram, respell: SA-kram}
+      classical: {ipa: ˈsa.kram, respell: SA-kram}
+  - id: ic.granata.1.6
+    surface: Petri
+    sound:
+      italian-humanist: {ipa: ˈpe.tri, respell: PE-tree}
+      classical: {ipa: ˈpɛ.triː, respell: PE-tree}
+  - id: ic.granata.1.7
+    surface: Sedem
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈse.dem, respell: SE-dem}
+      classical: {ipa: ˈseː.dɛm, respell: SAY-dem}
+  - id: ic.granata.1.8
+    surface: divina
+    sound:
+      italian-humanist: {ipa: di.ˈvi.na, respell: dee-VEE-na}
+      classical: {ipa: diː.ˈwiː.na, respell: dee-WEE-na}
+  - id: ic.granata.1.9
+    surface: favente
+    sound:
+      italian-humanist: {ipa: fa.ˈven.te, respell: fa-VEN-te}
+      classical: {ipa: fa.ˈwɛn.tɛ, respell: fa-WEN-te}
+  - id: ic.granata.1.10
+    surface: clementia
+    punct: ','
+    sound:
+      italian-humanist: {ipa: kle.ˈmen.tsi.a, respell: kle-MEN-tsee-a}
+      classical: {ipa: kleː.ˈmɛn.tɪ.aː, respell: klay-MEN-ti-aa}
+  - id: ic.granata.1.11
+    surface: meritis
+    sound:
+      italian-humanist: {ipa: ˈme.ri.tis, respell: ME-ree-tees}
+      classical: {ipa: ˈmɛ.rɪ.tiːs, respell: ME-ri-tees}
+  - id: ic.granata.1.12
+    surface: licet
+    sound:
+      italian-humanist: {ipa: ˈli.tʃet, respell: LEE-chet}
+      classical: {ipa: ˈlɪ.kɛt, respell: LI-ket}
+  - id: ic.granata.1.13
+    surface: imparibus
+    punct: ','
+    sound:
+      italian-humanist: {ipa: im.ˈpa.ri.bus, respell: eem-PA-ree-boos}
+      classical: {ipa: ɪm.ˈpa.rɪ.bʊs, respell: im-PA-ri-bus}
+  - id: ic.granata.1.14
+    surface: evocati
+    sound:
+      italian-humanist: {ipa: e.vo.ˈka.ti, respell: e-vo-KA-tee}
+      classical: {ipa: eː.wɔ.ˈkaː.tiː, respell: ay-wo-KAA-tee}
+  - id: ic.granata.1.15
+    surface: fuerimus
+    punct: ','
+    sound:
+      italian-humanist: {ipa: fu.ˈe.ri.mus, respell: foo-E-ree-moos}
+      classical: {ipa: fʊ.ˈɛ.rɪ.mʊs, respell: fu-E-ri-mus}
+- id: ic.granata.2
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:granata.2
+  stanza: granata
+  stanza_title: 'Why the pope grants this: the sovereigns and Granada'
+  text: cognoscentes vos, tanquam veros Catholicos reges et principes, quales semper fuisse novimus,
+  tokens:
+  - id: ic.granata.2.1
+    surface: cognoscentes
+    sound:
+      italian-humanist: {ipa: ko.ɲoʃ.ˈen.tes, respell: ko-nyosh-EN-tes}
+      classical: {ipa: kɔɡ.noːs.ˈkɛn.teːs, respell: kog-nohs-KEN-tays}
+  - id: ic.granata.2.2
+    surface: vos
+    punct: ','
+    sound:
+      italian-humanist: {ipa: vos, respell: vos}
+      classical: {ipa: woːs, respell: wohs}
+  - id: ic.granata.2.3
+    surface: tanquam
+    sound:
+      italian-humanist: {ipa: ˈtaŋ.kwam, respell: TANG-kwam}
+      classical: {ipa: ˈtaŋ.kʷam, respell: TANG-kwam}
+  - id: ic.granata.2.4
+    surface: veros
+    sound:
+      italian-humanist: {ipa: ˈve.ros, respell: VE-ros}
+      classical: {ipa: ˈweː.roːs, respell: WAY-rohs}
+  - id: ic.granata.2.5
+    surface: Catholicos
+    sound:
+      italian-humanist: {ipa: ka.ˈto.li.kos, respell: ka-TO-lee-kos}
+      classical: {ipa: ka.ˈtʰɔ.lɪ.koːs, respell: ka-TʰO-li-kohs}
+  - id: ic.granata.2.6
+    surface: reges
+    sound:
+      italian-humanist: {ipa: ˈre.dʒes, respell: RE-jes}
+      classical: {ipa: ˈreː.ɡeːs, respell: RAY-gays}
+  - id: ic.granata.2.7
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.granata.2.8
+    surface: principes
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈpriŋ.tʃi.pes, respell: PREENG-chee-pes}
+      classical: {ipa: ˈpriːŋ.kɪ.peːs, respell: PREENG-ki-pays}
+  - id: ic.granata.2.9
+    surface: quales
+    sound:
+      italian-humanist: {ipa: ˈkwa.les, respell: KWA-les}
+      classical: {ipa: ˈkʷaː.leːs, respell: KWAA-lays}
+  - id: ic.granata.2.10
+    surface: semper
+    sound:
+      italian-humanist: {ipa: ˈsem.per, respell: SEM-per}
+      classical: {ipa: ˈsɛm.pɛr, respell: SEM-per}
+  - id: ic.granata.2.11
+    surface: fuisse
+    sound:
+      italian-humanist: {ipa: fu.ˈis.se, respell: foo-EES-se}
+      classical: {ipa: fʊ.ˈɪs.sɛ, respell: fu-IS-se}
+  - id: ic.granata.2.12
+    surface: novimus
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈno.vi.mus, respell: NO-vee-moos}
+      classical: {ipa: ˈnoː.wɪ.mʊs, respell: NOH-wi-mus}
+- id: ic.granata.3
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:granata.3
+  stanza: granata
+  stanza_title: 'Why the pope grants this: the sovereigns and Granada'
+  text: et a vobis preclare gesta toti pene jam orbi notissima demonstrant,
+  tokens:
+  - id: ic.granata.3.1
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.granata.3.2
+    surface: a
+    sound:
+      italian-humanist: {ipa: a, respell: a}
+      classical: {ipa: aː, respell: aa}
+  - id: ic.granata.3.3
+    surface: vobis
+    sound:
+      italian-humanist: {ipa: ˈvo.bis, respell: VO-bees}
+      classical: {ipa: ˈwoː.biːs, respell: WOH-bees}
+  - id: ic.granata.3.4
+    surface: preclare
+    sound:
+      italian-humanist: {ipa: prɛ.ˈkla.re, respell: pre-KLA-re}
+      classical: {ipa: prae.ˈklaː.reː, respell: prai-KLAA-ray}
+  - id: ic.granata.3.5
+    surface: gesta
+    sound:
+      italian-humanist: {ipa: ˈdʒes.ta, respell: JES-ta}
+      classical: {ipa: ˈɡɛs.ta, respell: GES-ta}
+  - id: ic.granata.3.6
+    surface: toti
+    sound:
+      italian-humanist: {ipa: ˈto.ti, respell: TO-tee}
+      classical: {ipa: ˈtoː.tiː, respell: TOH-tee}
+  - id: ic.granata.3.7
+    surface: pene
+    sound:
+      italian-humanist: {ipa: ˈpɛ.ne, respell: PE-ne}
+      classical: {ipa: ˈpae.nɛ, respell: PAI-ne}
+  - id: ic.granata.3.8
+    surface: jam
+    sound:
+      italian-humanist: {ipa: jam, respell: yam}
+      classical: {ipa: jam, respell: yam}
+  - id: ic.granata.3.9
+    surface: orbi
+    sound:
+      italian-humanist: {ipa: ˈor.bi, respell: OR-bee}
+      classical: {ipa: ˈɔr.biː, respell: OR-bee}
+  - id: ic.granata.3.10
+    surface: notissima
+    sound:
+      italian-humanist: {ipa: no.ˈtis.si.ma, respell: no-TEES-see-ma}
+      classical: {ipa: noː.ˈtɪs.sɪ.ma, respell: noh-TIS-si-ma}
+  - id: ic.granata.3.11
+    surface: demonstrant
+    punct: ','
+    sound:
+      italian-humanist: {ipa: de.ˈmons.trant, respell: de-MONS-trant}
+      classical: {ipa: deː.ˈmoːns.trant, respell: day-MOHNS-trant}
+- id: ic.granata.4
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:granata.4
+  stanza: granata
+  stanza_title: 'Why the pope grants this: the sovereigns and Granada'
+  text: nedum id exoptare, sed omni conatu, studio, et diligentia, nullis laboribus, nullis impensis, nullisque parcendo periculis,
+  tokens:
+  - id: ic.granata.4.1
+    surface: nedum
+    sound:
+      italian-humanist: {ipa: ˈne.dum, respell: NE-doom}
+      classical: {ipa: ˈneː.dʊm, respell: NAY-dum}
+  - id: ic.granata.4.2
+    surface: id
+    sound:
+      italian-humanist: {ipa: id, respell: eed}
+      classical: {ipa: ɪd, respell: id}
+  - id: ic.granata.4.3
+    surface: exoptare
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ek.sop.ˈta.re, respell: ek-sop-TA-re}
+      classical: {ipa: ɛk.sɔp.ˈtaː.rɛ, respell: ek-sop-TAA-re}
+  - id: ic.granata.4.4
+    surface: sed
+    sound:
+      italian-humanist: {ipa: sed, respell: sed}
+      classical: {ipa: sɛd, respell: sed}
+  - id: ic.granata.4.5
+    surface: omni
+    sound:
+      italian-humanist: {ipa: ˈom.ni, respell: OM-nee}
+      classical: {ipa: ˈɔm.niː, respell: OM-nee}
+  - id: ic.granata.4.6
+    surface: conatu
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ko.ˈna.tu, respell: ko-NA-too}
+      classical: {ipa: koː.ˈnaː.tuː, respell: koh-NAA-too}
+  - id: ic.granata.4.7
+    surface: studio
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈstu.di.o, respell: STOO-dee-o}
+      classical: {ipa: ˈstʊ.dɪ.oː, respell: STU-di-oh}
+  - id: ic.granata.4.8
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.granata.4.9
+    surface: diligentia
+    punct: ','
+    sound:
+      italian-humanist: {ipa: di.li.ˈdʒen.tsi.a, respell: dee-lee-JEN-tsee-a}
+      classical: {ipa: diː.lɪ.ˈɡɛn.tɪ.aː, respell: dee-li-GEN-ti-aa}
+  - id: ic.granata.4.10
+    surface: nullis
+    sound:
+      italian-humanist: {ipa: ˈnul.lis, respell: NOOL-lees}
+      classical: {ipa: ˈnuːl.liːs, respell: NOOL-lees}
+  - id: ic.granata.4.11
+    surface: laboribus
+    punct: ','
+    sound:
+      italian-humanist: {ipa: la.ˈbo.ri.bus, respell: la-BO-ree-boos}
+      classical: {ipa: la.ˈboː.rɪ.bʊs, respell: la-BOH-ri-bus}
+  - id: ic.granata.4.12
+    surface: nullis
+    sound:
+      italian-humanist: {ipa: ˈnul.lis, respell: NOOL-lees}
+      classical: {ipa: ˈnuːl.liːs, respell: NOOL-lees}
+  - id: ic.granata.4.13
+    surface: impensis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: im.ˈpen.sis, respell: eem-PEN-sees}
+      classical: {ipa: ɪm.ˈpeːn.siːs, respell: im-PAYN-sees}
+  - id: ic.granata.4.14
+    surface: nullisque
+    sound:
+      italian-humanist: {ipa: nul.ˈlis.kwe, respell: nool-LEES-kwe}
+      classical: {ipa: nuːl.ˈliːs.kʷɛ, respell: nool-LEES-kwe}
+  - id: ic.granata.4.15
+    surface: parcendo
+    sound:
+      italian-humanist: {ipa: par.ˈtʃen.do, respell: par-CHEN-do}
+      classical: {ipa: par.ˈkɛn.doː, respell: par-KEN-doh}
+  - id: ic.granata.4.16
+    surface: periculis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: pe.ˈri.ku.lis, respell: pe-REE-koo-lees}
+      classical: {ipa: pɛ.ˈriː.kʊ.liːs, respell: pe-REE-ku-lees}
+- id: ic.granata.5
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:granata.5
+  stanza: granata
+  stanza_title: 'Why the pope grants this: the sovereigns and Granada'
+  text: etiam proprium sanguinem effundendo, efficere, ac omnem animum vestrum omnesque conatus ad hoc jam dudum dedicasse—
+  tokens:
+  - id: ic.granata.5.1
+    surface: etiam
+    sound:
+      italian-humanist: {ipa: ˈe.tsi.am, respell: E-tsee-am}
+      classical: {ipa: ˈɛ.tɪ.am, respell: E-ti-am}
+  - id: ic.granata.5.2
+    surface: proprium
+    sound:
+      italian-humanist: {ipa: ˈpro.pri.um, respell: PRO-pree-oom}
+      classical: {ipa: ˈprɔ.prɪ.ʊm, respell: PRO-pri-um}
+  - id: ic.granata.5.3
+    surface: sanguinem
+    sound:
+      italian-humanist: {ipa: ˈsaŋ.ɡwi.nem, respell: SANG-gwee-nem}
+      classical: {ipa: ˈsaŋ.ɡʷɪ.nɛm, respell: SANG-gwi-nem}
+  - id: ic.granata.5.4
+    surface: effundendo,
+    sound:
+      italian-humanist: {ipa: ef.fun.ˈden.do, respell: ef-foon-DEN-do}
+      classical: {ipa: ɛf.fʊn.ˈdɛn.doː, respell: ef-fun-DEN-doh}
+  - id: ic.granata.5.5
+    surface: efficere,
+    sound:
+      italian-humanist: {ipa: ef.ˈfi.tʃe.re, respell: ef-FEE-che-re}
+      classical: {ipa: ɛf.ˈfɪ.kɛ.rɛ, respell: ef-FI-ke-re}
+  - id: ic.granata.5.6
+    surface: ac
+    sound:
+      italian-humanist: {ipa: ak, respell: ak}
+      classical: {ipa: ak, respell: ak}
+  - id: ic.granata.5.7
+    surface: omnem
+    sound:
+      italian-humanist: {ipa: ˈom.nem, respell: OM-nem}
+      classical: {ipa: ˈɔm.nɛm, respell: OM-nem}
+  - id: ic.granata.5.8
+    surface: animum
+    sound:
+      italian-humanist: {ipa: ˈa.ni.mum, respell: A-nee-moom}
+      classical: {ipa: ˈa.nɪ.mʊm, respell: A-ni-mum}
+  - id: ic.granata.5.9
+    surface: vestrum
+    sound:
+      italian-humanist: {ipa: ˈves.trum, respell: VES-troom}
+      classical: {ipa: ˈwɛs.trʊm, respell: WES-trum}
+  - id: ic.granata.5.10
+    surface: omnesque
+    sound:
+      italian-humanist: {ipa: om.ˈnes.kwe, respell: om-NES-kwe}
+      classical: {ipa: ɔm.ˈneːs.kʷɛ, respell: om-NAYS-kwe}
+  - id: ic.granata.5.11
+    surface: conatus
+    sound:
+      italian-humanist: {ipa: ko.ˈna.tus, respell: ko-NA-toos}
+      classical: {ipa: koː.ˈnaː.tuːs, respell: koh-NAA-toos}
+  - id: ic.granata.5.12
+    surface: ad
+    sound:
+      italian-humanist: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: ic.granata.5.13
+    surface: hoc
+    sound:
+      italian-humanist: {ipa: ok, respell: ok}
+      classical: {ipa: hɔk, respell: hok}
+  - id: ic.granata.5.14
+    surface: jam
+    sound:
+      italian-humanist: {ipa: jam, respell: yam}
+      classical: {ipa: jam, respell: yam}
+  - id: ic.granata.5.15
+    surface: dudum
+    sound:
+      italian-humanist: {ipa: ˈdu.dum, respell: DOO-doom}
+      classical: {ipa: ˈduː.dʊm, respell: DOO-dum}
+  - id: ic.granata.5.16
+    surface: dedicasse—
+    sound:
+      italian-humanist: {ipa: de.di.ˈkas.se, respell: de-dee-KAS-se}
+      classical: {ipa: deː.dɪ.ˈkaːs.sɛ, respell: day-di-KAAS-se}
+- id: ic.granata.6
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:granata.6
+  stanza: granata
+  stanza_title: 'Why the pope grants this: the sovereigns and Granada'
+  text: quemadmodum recuperatio regni Granate a tyrannide Saracenorum hodiernis temporibus per vos, cum tanta Divini Nominis gloria facta, testatur—
+  tokens:
+  - id: ic.granata.6.1
+    surface: quemadmodum
+    sound:
+      italian-humanist: {ipa: kwe.ˈmad.mo.dum, respell: kwe-MAD-mo-doom}
+      classical: {ipa: kʷɛ.ˈmad.mɔ.dʊm, respell: kwe-MAD-mo-dum}
+  - id: ic.granata.6.2
+    surface: recuperatio
+    sound:
+      italian-humanist: {ipa: re.ku.pe.ˈra.tsi.o, respell: re-koo-pe-RA-tsee-o}
+      classical: {ipa: rɛ.kʊ.pɛ.ˈraː.tɪ.oː, respell: re-ku-pe-RAA-ti-oh}
+  - id: ic.granata.6.3
+    surface: regni
+    sound:
+      italian-humanist: {ipa: ˈre.ɲi, respell: RE-nyee}
+      classical: {ipa: ˈreːɡ.niː, respell: RAYG-nee}
+  - id: ic.granata.6.4
+    surface: Granate
+    sound:
+      italian-humanist: {ipa: ɡra.ˈna.tɛ, respell: gra-NA-te}
+      classical: {ipa: ɡra.ˈnaː.tae, respell: gra-NAA-tai}
+  - id: ic.granata.6.5
+    surface: a
+    sound:
+      italian-humanist: {ipa: a, respell: a}
+      classical: {ipa: aː, respell: aa}
+  - id: ic.granata.6.6
+    surface: tyrannide
+    sound:
+      italian-humanist: {ipa: ti.ˈran.ni.de, respell: tee-RAN-nee-de}
+      classical: {ipa: tʏ.ˈran.nɪ.dɛ, respell: tü-RAN-ni-de}
+  - id: ic.granata.6.7
+    surface: Saracenorum
+    sound:
+      italian-humanist: {ipa: sa.ra.tʃe.ˈno.rum, respell: sa-ra-che-NO-room}
+      classical: {ipa: sa.ra.keː.ˈnoː.rʊm, respell: sa-ra-kay-NOH-rum}
+  - id: ic.granata.6.8
+    surface: hodiernis
+    sound:
+      italian-humanist: {ipa: o.di.ˈer.nis, respell: o-dee-ER-nees}
+      classical: {ipa: hɔ.dɪ.ˈɛr.niːs, respell: ho-di-ER-nees}
+  - id: ic.granata.6.9
+    surface: temporibus
+    sound:
+      italian-humanist: {ipa: tem.ˈpo.ri.bus, respell: tem-PO-ree-boos}
+      classical: {ipa: tɛm.ˈpɔ.rɪ.bʊs, respell: tem-PO-ri-bus}
+  - id: ic.granata.6.10
+    surface: per
+    sound:
+      italian-humanist: {ipa: per, respell: per}
+      classical: {ipa: pɛr, respell: per}
+  - id: ic.granata.6.11
+    surface: vos,
+    sound:
+      italian-humanist: {ipa: vos, respell: vos}
+      classical: {ipa: woːs, respell: wohs}
+  - id: ic.granata.6.12
+    surface: cum
+    sound:
+      italian-humanist: {ipa: kum, respell: koom}
+      classical: {ipa: kʊm, respell: kum}
+  - id: ic.granata.6.13
+    surface: tanta
+    sound:
+      italian-humanist: {ipa: ˈtan.ta, respell: TAN-ta}
+      classical: {ipa: ˈtan.taː, respell: TAN-taa}
+  - id: ic.granata.6.14
+    surface: Divini
+    sound:
+      italian-humanist: {ipa: di.ˈvi.ni, respell: dee-VEE-nee}
+      classical: {ipa: diː.ˈwiː.niː, respell: dee-WEE-nee}
+  - id: ic.granata.6.15
+    surface: Nominis
+    sound:
+      italian-humanist: {ipa: ˈno.mi.nis, respell: NO-mee-nees}
+      classical: {ipa: ˈnoː.mɪ.nɪs, respell: NOH-mi-nis}
+  - id: ic.granata.6.16
+    surface: gloria
+    sound:
+      italian-humanist: {ipa: ˈɡlo.ri.a, respell: GLO-ree-a}
+      classical: {ipa: ˈɡloː.rɪ.aː, respell: GLOH-ri-aa}
+  - id: ic.granata.6.17
+    surface: facta,
+    sound:
+      italian-humanist: {ipa: ˈfak.ta, respell: FAK-ta}
+      classical: {ipa: ˈfak.taː, respell: FAK-taa}
+  - id: ic.granata.6.18
+    surface: testatur—
+    sound:
+      italian-humanist: {ipa: tes.ˈta.tur, respell: tes-TA-toor}
+      classical: {ipa: tɛs.ˈtaː.tʊr, respell: tes-TAA-tur}
+- id: ic.granata.7
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:granata.7
+  stanza: granata
+  stanza_title: 'Why the pope grants this: the sovereigns and Granada'
+  text: digne ducimur non immerito, et debemus illa vobis etiam sponte et favorabiliter concedere,
+  tokens:
+  - id: ic.granata.7.1
+    surface: digne
+    sound:
+      italian-humanist: {ipa: ˈdi.ɲe, respell: DEE-nye}
+      classical: {ipa: ˈdiːɡ.neː, respell: DEEG-nay}
+  - id: ic.granata.7.2
+    surface: ducimur
+    sound:
+      italian-humanist: {ipa: ˈdu.tʃi.mur, respell: DOO-chee-moor}
+      classical: {ipa: ˈduː.kɪ.mʊr, respell: DOO-ki-mur}
+  - id: ic.granata.7.3
+    surface: non
+    sound:
+      italian-humanist: {ipa: non, respell: non}
+      classical: {ipa: noːn, respell: nohn}
+  - id: ic.granata.7.4
+    surface: immerito
+    punct: ','
+    sound:
+      italian-humanist: {ipa: im.ˈme.ri.to, respell: eem-ME-ree-to}
+      classical: {ipa: ɪm.ˈmɛ.rɪ.toː, respell: im-ME-ri-toh}
+  - id: ic.granata.7.5
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.granata.7.6
+    surface: debemus
+    sound:
+      italian-humanist: {ipa: de.ˈbe.mus, respell: de-BE-moos}
+      classical: {ipa: deː.ˈbeː.mʊs, respell: day-BAY-mus}
+  - id: ic.granata.7.7
+    surface: illa
+    sound:
+      italian-humanist: {ipa: ˈil.la, respell: EEL-la}
+      classical: {ipa: ˈɪl.la, respell: IL-la}
+  - id: ic.granata.7.8
+    surface: vobis
+    sound:
+      italian-humanist: {ipa: ˈvo.bis, respell: VO-bees}
+      classical: {ipa: ˈwoː.biːs, respell: WOH-bees}
+  - id: ic.granata.7.9
+    surface: etiam
+    sound:
+      italian-humanist: {ipa: ˈe.tsi.am, respell: E-tsee-am}
+      classical: {ipa: ˈɛ.tɪ.am, respell: E-ti-am}
+  - id: ic.granata.7.10
+    surface: sponte
+    sound:
+      italian-humanist: {ipa: ˈspon.te, respell: SPON-te}
+      classical: {ipa: ˈspɔn.tɛ, respell: SPON-te}
+  - id: ic.granata.7.11
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.granata.7.12
+    surface: favorabiliter
+    sound:
+      italian-humanist: {ipa: fa.vo.ra.ˈbi.li.ter, respell: fa-vo-ra-BEE-lee-ter}
+      classical: {ipa: fa.woː.raː.ˈbɪ.lɪ.tɛr, respell: fa-woh-raa-BI-li-ter}
+  - id: ic.granata.7.13
+    surface: concedere
+    punct: ','
+    sound:
+      italian-humanist: {ipa: koŋ.ˈtʃe.de.re, respell: kong-CHE-de-re}
+      classical: {ipa: kɔŋ.ˈkeː.dɛ.rɛ, respell: kong-KAY-de-re}
+- id: ic.granata.8
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:granata.8
+  stanza: granata
+  stanza_title: 'Why the pope grants this: the sovereigns and Granada'
+  text: per que hujusmodi sanctum et laudabile ac immortali Deo acceptum propositum
+  tokens:
+  - id: ic.granata.8.1
+    surface: per
+    sound:
+      italian-humanist: {ipa: per, respell: per}
+      classical: {ipa: pɛr, respell: per}
+  - id: ic.granata.8.2
+    surface: que
+    sound:
+      italian-humanist: {ipa: kwɛ, respell: kwe}
+      classical: {ipa: kʷae, respell: kwai}
+  - id: ic.granata.8.3
+    surface: hujusmodi
+    sound:
+      italian-humanist: {ipa: u.ˈjus.mo.di, respell: oo-YOOS-mo-dee}
+      classical: {ipa: hʊ.ˈjʊs.mɔ.diː, respell: hu-YUS-mo-dee}
+  - id: ic.granata.8.4
+    surface: sanctum
+    sound:
+      italian-humanist: {ipa: ˈsaŋk.tum, respell: SANGK-toom}
+      classical: {ipa: ˈsaːŋk.tʊm, respell: SAANGK-tum}
+  - id: ic.granata.8.5
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.granata.8.6
+    surface: laudabile
+    sound:
+      italian-humanist: {ipa: lau.ˈda.bi.le, respell: low-DA-bee-le}
+      classical: {ipa: lau.ˈdaː.bɪ.lɛ, respell: low-DAA-bi-le}
+  - id: ic.granata.8.7
+    surface: ac
+    sound:
+      italian-humanist: {ipa: ak, respell: ak}
+      classical: {ipa: ak, respell: ak}
+  - id: ic.granata.8.8
+    surface: immortali
+    sound:
+      italian-humanist: {ipa: im.mor.ˈta.li, respell: eem-mor-TA-lee}
+      classical: {ipa: ɪm.mɔr.ˈtaː.liː, respell: im-mor-TAA-lee}
+  - id: ic.granata.8.9
+    surface: Deo
+    sound:
+      italian-humanist: {ipa: ˈde.o, respell: DE-o}
+      classical: {ipa: ˈdɛ.oː, respell: DE-oh}
+  - id: ic.granata.8.10
+    surface: acceptum
+    sound:
+      italian-humanist: {ipa: ak.ˈtʃep.tum, respell: ak-CHEP-toom}
+      classical: {ipa: ak.ˈkɛp.tʊm, respell: ak-KEP-tum}
+  - id: ic.granata.8.11
+    surface: propositum
+    sound:
+      italian-humanist: {ipa: pro.ˈpo.zi.tum, respell: pro-PO-zee-toom}
+      classical: {ipa: proː.ˈpɔ.sɪ.tʊm, respell: proh-PO-si-tum}
+- id: ic.granata.9
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:granata.9
+  stanza: granata
+  stanza_title: 'Why the pope grants this: the sovereigns and Granada'
+  text: in dies ferventiori animo ad ipsius Dei honorem et imperii Christiani propagationem prosequi valeatis.
+  tokens:
+  - id: ic.granata.9.1
+    surface: in
+    sound:
+      italian-humanist: {ipa: in, respell: een}
+      classical: {ipa: ɪn, respell: in}
+  - id: ic.granata.9.2
+    surface: dies
+    sound:
+      italian-humanist: {ipa: ˈdi.es, respell: DEE-es}
+      classical: {ipa: ˈdɪ.eːs, respell: DI-ays}
+  - id: ic.granata.9.3
+    surface: ferventiori
+    sound:
+      italian-humanist: {ipa: fer.ven.tsi.ˈo.ri, respell: fer-ven-tsee-O-ree}
+      classical: {ipa: fɛr.wɛn.tɪ.ˈoː.riː, respell: fer-wen-ti-OH-ree}
+  - id: ic.granata.9.4
+    surface: animo
+    sound:
+      italian-humanist: {ipa: ˈa.ni.mo, respell: A-nee-mo}
+      classical: {ipa: ˈa.nɪ.moː, respell: A-ni-moh}
+  - id: ic.granata.9.5
+    surface: ad
+    sound:
+      italian-humanist: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: ic.granata.9.6
+    surface: ipsius
+    sound:
+      italian-humanist: {ipa: ip.ˈsi.us, respell: eep-SEE-oos}
+      classical: {ipa: ɪp.ˈsiː.ʊs, respell: ip-SEE-us}
+  - id: ic.granata.9.7
+    surface: Dei
+    sound:
+      italian-humanist: {ipa: ˈde.i, respell: DE-ee}
+      classical: {ipa: ˈdɛ.iː, respell: DE-ee}
+  - id: ic.granata.9.8
+    surface: honorem
+    sound:
+      italian-humanist: {ipa: o.ˈno.rem, respell: o-NO-rem}
+      classical: {ipa: hɔ.ˈnoː.rɛm, respell: ho-NOH-rem}
+  - id: ic.granata.9.9
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.granata.9.10
+    surface: imperii
+    sound:
+      italian-humanist: {ipa: im.ˈpe.ri.i, respell: eem-PE-ree-ee}
+      classical: {ipa: ɪm.ˈpɛ.rɪ.iː, respell: im-PE-ri-ee}
+  - id: ic.granata.9.11
+    surface: Christiani
+    sound:
+      italian-humanist: {ipa: kris.ti.ˈa.ni, respell: krees-tee-A-nee}
+      classical: {ipa: kʰriːs.tɪ.ˈaː.niː, respell: kʰrees-ti-AA-nee}
+  - id: ic.granata.9.12
+    surface: propagationem
+    sound:
+      italian-humanist: {ipa: pro.pa.ɡa.tsi.ˈo.nem, respell: pro-pa-ga-tsee-O-nem}
+      classical: {ipa: proː.paː.ɡaː.tɪ.ˈoː.nɛm, respell: proh-paa-gaa-ti-OH-nem}
+  - id: ic.granata.9.13
+    surface: prosequi
+    sound:
+      italian-humanist: {ipa: ˈpro.ze.kwi, respell: PRO-ze-kwee}
+      classical: {ipa: ˈproː.sɛ.kʷiː, respell: PROH-se-kwee}
+  - id: ic.granata.9.14
+    surface: valeatis
+    punct: .
+    sound:
+      italian-humanist: {ipa: va.le.ˈa.tis, respell: va-le-A-tees}
+      classical: {ipa: wa.lɛ.ˈaː.tɪs, respell: wa-le-AA-tis}
 - id: ic.narratio.1
   cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:narratio.1
   stanza: narratio
@@ -1949,6 +2651,826 @@ lines:
     sound:
       italian-humanist: {ipa: re.pe.ri.ˈun.tur, respell: re-pe-ree-OON-toor}
       classical: {ipa: rɛ.pɛ.rɪ.ˈʊn.tʊr, respell: re-pe-ri-UN-tur}
+- id: ic.propositum.1
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:propositum.1
+  stanza: propositum
+  stanza_title: The sovereigns' purpose
+  text: Unde omnibus diligenter, et presertim fidei Catholice exaltatione et dilatatione, prout decet Catholicos reges et principes, consideratis,
+  tokens:
+  - id: ic.propositum.1.1
+    surface: Unde
+    sound:
+      italian-humanist: {ipa: ˈun.de, respell: OON-de}
+      classical: {ipa: ˈʊn.dɛ, respell: UN-de}
+  - id: ic.propositum.1.2
+    surface: omnibus
+    sound:
+      italian-humanist: {ipa: ˈom.ni.bus, respell: OM-nee-boos}
+      classical: {ipa: ˈɔm.nɪ.bʊs, respell: OM-ni-bus}
+  - id: ic.propositum.1.3
+    surface: diligenter
+    punct: ','
+    sound:
+      italian-humanist: {ipa: di.li.ˈdʒen.ter, respell: dee-lee-JEN-ter}
+      classical: {ipa: diː.lɪ.ˈɡɛn.tɛr, respell: dee-li-GEN-ter}
+  - id: ic.propositum.1.4
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.propositum.1.5
+    surface: presertim
+    sound:
+      italian-humanist: {ipa: prɛ.ˈzer.tim, respell: pre-ZER-teem}
+      classical: {ipa: prae.ˈsɛr.tɪm, respell: prai-SER-tim}
+  - id: ic.propositum.1.6
+    surface: fidei
+    sound:
+      italian-humanist: {ipa: ˈfi.de.i, respell: FEE-de-ee}
+      classical: {ipa: ˈfɪ.dɛ.iː, respell: FI-de-ee}
+  - id: ic.propositum.1.7
+    surface: Catholice
+    sound:
+      italian-humanist: {ipa: ka.ˈto.li.tʃɛ, respell: ka-TO-lee-che}
+      classical: {ipa: ka.ˈtʰɔ.lɪ.kae, respell: ka-TʰO-li-kai}
+  - id: ic.propositum.1.8
+    surface: exaltatione
+    sound:
+      italian-humanist: {ipa: ek.sal.ta.tsi.ˈo.ne, respell: ek-sal-ta-tsee-O-ne}
+      classical: {ipa: ɛk.sal.taː.tɪ.ˈoː.nɛ, respell: ek-sal-taa-ti-OH-ne}
+  - id: ic.propositum.1.9
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.propositum.1.10
+    surface: dilatatione
+    punct: ','
+    sound:
+      italian-humanist: {ipa: di.la.ta.tsi.ˈo.ne, respell: dee-la-ta-tsee-O-ne}
+      classical: {ipa: diː.laː.taː.tɪ.ˈoː.nɛ, respell: dee-laa-taa-ti-OH-ne}
+  - id: ic.propositum.1.11
+    surface: prout
+    sound:
+      italian-humanist: {ipa: ˈpro.ut, respell: PRO-oot}
+      classical: {ipa: ˈproː.ʊt, respell: PROH-ut}
+  - id: ic.propositum.1.12
+    surface: decet
+    sound:
+      italian-humanist: {ipa: ˈde.tʃet, respell: DE-chet}
+      classical: {ipa: ˈdɛ.kɛt, respell: DE-ket}
+  - id: ic.propositum.1.13
+    surface: Catholicos
+    sound:
+      italian-humanist: {ipa: ka.ˈto.li.kos, respell: ka-TO-lee-kos}
+      classical: {ipa: ka.ˈtʰɔ.lɪ.koːs, respell: ka-TʰO-li-kohs}
+  - id: ic.propositum.1.14
+    surface: reges
+    sound:
+      italian-humanist: {ipa: ˈre.dʒes, respell: RE-jes}
+      classical: {ipa: ˈreː.ɡeːs, respell: RAY-gays}
+  - id: ic.propositum.1.15
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.propositum.1.16
+    surface: principes
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈpriŋ.tʃi.pes, respell: PREENG-chee-pes}
+      classical: {ipa: ˈpriːŋ.kɪ.peːs, respell: PREENG-ki-pays}
+  - id: ic.propositum.1.17
+    surface: consideratis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: kon.si.de.ˈra.tis, respell: kon-see-de-RA-tees}
+      classical: {ipa: koːn.siː.dɛ.ˈraː.tiːs, respell: kohn-see-de-RAA-tees}
+- id: ic.propositum.2
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:propositum.2
+  stanza: propositum
+  stanza_title: The sovereigns' purpose
+  text: more progenitorum vestrorum, clare memorie regum,
+  tokens:
+  - id: ic.propositum.2.1
+    surface: more
+    sound:
+      italian-humanist: {ipa: ˈmo.re, respell: MO-re}
+      classical: {ipa: ˈmoː.rɛ, respell: MOH-re}
+  - id: ic.propositum.2.2
+    surface: progenitorum
+    sound:
+      italian-humanist: {ipa: pro.dʒe.ni.ˈto.rum, respell: pro-je-nee-TO-room}
+      classical: {ipa: proː.ɡɛ.nɪ.ˈtoː.rʊm, respell: proh-ge-ni-TOH-rum}
+  - id: ic.propositum.2.3
+    surface: vestrorum
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ves.ˈtro.rum, respell: ves-TRO-room}
+      classical: {ipa: wɛs.ˈtroː.rʊm, respell: wes-TROH-rum}
+  - id: ic.propositum.2.4
+    surface: clare
+    sound:
+      italian-humanist: {ipa: ˈkla.rɛ, respell: KLA-re}
+      classical: {ipa: ˈklaː.rae, respell: KLAA-rai}
+  - id: ic.propositum.2.5
+    surface: memorie
+    sound:
+      italian-humanist: {ipa: me.ˈmo.ri.ɛ, respell: me-MO-ree-e}
+      classical: {ipa: mɛ.ˈmɔ.rɪ.ae, respell: me-MO-ri-ai}
+  - id: ic.propositum.2.6
+    surface: regum
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈre.ɡum, respell: RE-goom}
+      classical: {ipa: ˈreː.ɡʊm, respell: RAY-gum}
+- id: ic.propositum.3
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:propositum.3
+  stanza: propositum
+  stanza_title: The sovereigns' purpose
+  text: terras firmas et insulas predictas illarumque incolas et habitatores, vobis, divina favente clementia,
+  tokens:
+  - id: ic.propositum.3.1
+    surface: terras
+    sound:
+      italian-humanist: {ipa: ˈter.ras, respell: TER-ras}
+      classical: {ipa: ˈtɛr.raːs, respell: TER-raas}
+  - id: ic.propositum.3.2
+    surface: firmas
+    sound:
+      italian-humanist: {ipa: ˈfir.mas, respell: FEER-mas}
+      classical: {ipa: ˈfɪr.maːs, respell: FIR-maas}
+  - id: ic.propositum.3.3
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.propositum.3.4
+    surface: insulas
+    sound:
+      italian-humanist: {ipa: ˈin.su.las, respell: EEN-soo-las}
+      classical: {ipa: ˈiːn.sʊ.laːs, respell: EEN-su-laas}
+  - id: ic.propositum.3.5
+    surface: predictas
+    sound:
+      italian-humanist: {ipa: prɛ.ˈdik.tas, respell: pre-DEEK-tas}
+      classical: {ipa: prae.ˈdɪk.taːs, respell: prai-DIK-taas}
+  - id: ic.propositum.3.6
+    surface: illarumque
+    sound:
+      italian-humanist: {ipa: il.la.ˈrum.kwe, respell: eel-la-ROOM-kwe}
+      classical: {ipa: ɪl.laː.ˈrʊm.kʷɛ, respell: il-laa-RUM-kwe}
+  - id: ic.propositum.3.7
+    surface: incolas
+    sound:
+      italian-humanist: {ipa: ˈiŋ.ko.las, respell: EENG-ko-las}
+      classical: {ipa: ˈɪŋ.kɔ.laːs, respell: ING-ko-laas}
+  - id: ic.propositum.3.8
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.propositum.3.9
+    surface: habitatores
+    punct: ','
+    sound:
+      italian-humanist: {ipa: a.bi.ta.ˈto.res, respell: a-bee-ta-TO-res}
+      classical: {ipa: ha.bɪ.taː.ˈtoː.reːs, respell: ha-bi-taa-TOH-rays}
+  - id: ic.propositum.3.10
+    surface: vobis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈvo.bis, respell: VO-bees}
+      classical: {ipa: ˈwoː.biːs, respell: WOH-bees}
+  - id: ic.propositum.3.11
+    surface: divina
+    sound:
+      italian-humanist: {ipa: di.ˈvi.na, respell: dee-VEE-na}
+      classical: {ipa: diː.ˈwiː.na, respell: dee-WEE-na}
+  - id: ic.propositum.3.12
+    surface: favente
+    sound:
+      italian-humanist: {ipa: fa.ˈven.te, respell: fa-VEN-te}
+      classical: {ipa: fa.ˈwɛn.tɛ, respell: fa-WEN-te}
+  - id: ic.propositum.3.13
+    surface: clementia
+    punct: ','
+    sound:
+      italian-humanist: {ipa: kle.ˈmen.tsi.a, respell: kle-MEN-tsee-a}
+      classical: {ipa: kleː.ˈmɛn.tɪ.aː, respell: klay-MEN-ti-aa}
+- id: ic.propositum.4
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:propositum.4
+  stanza: propositum
+  stanza_title: The sovereigns' purpose
+  text: subjicere et ad fidem Catholicam reducere proposuistis.
+  tokens:
+  - id: ic.propositum.4.1
+    surface: subjicere
+    sound:
+      italian-humanist: {ipa: sub.ˈji.tʃe.re, respell: soob-YEE-che-re}
+      classical: {ipa: sʊb.ˈjɪ.kɛ.rɛ, respell: sub-YI-ke-re}
+  - id: ic.propositum.4.2
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.propositum.4.3
+    surface: ad
+    sound:
+      italian-humanist: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: ic.propositum.4.4
+    surface: fidem
+    sound:
+      italian-humanist: {ipa: ˈfi.dem, respell: FEE-dem}
+      classical: {ipa: ˈfɪ.dɛm, respell: FI-dem}
+  - id: ic.propositum.4.5
+    surface: Catholicam
+    sound:
+      italian-humanist: {ipa: ka.ˈto.li.kam, respell: ka-TO-lee-kam}
+      classical: {ipa: ka.ˈtʰɔ.lɪ.kam, respell: ka-TʰO-li-kam}
+  - id: ic.propositum.4.6
+    surface: reducere
+    sound:
+      italian-humanist: {ipa: re.ˈdu.tʃe.re, respell: re-DOO-che-re}
+      classical: {ipa: rɛ.ˈduː.kɛ.rɛ, respell: re-DOO-ke-re}
+  - id: ic.propositum.4.7
+    surface: proposuistis
+    punct: .
+    sound:
+      italian-humanist: {ipa: pro.po.zu.ˈis.tis, respell: pro-po-zoo-EES-tees}
+      classical: {ipa: proː.pɔ.sʊ.ˈɪs.tɪs, respell: proh-po-su-IS-tis}
+- id: ic.hortatio.1
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:hortatio.1
+  stanza: hortatio
+  stanza_title: The exhortation to bring the peoples to the faith
+  text: Nos igitur hujusmodi vestrum sanctum et laudabile propositum plurimum in Domino commendantes,
+  tokens:
+  - id: ic.hortatio.1.1
+    surface: Nos
+    sound:
+      italian-humanist: {ipa: nos, respell: nos}
+      classical: {ipa: noːs, respell: nohs}
+  - id: ic.hortatio.1.2
+    surface: igitur
+    sound:
+      italian-humanist: {ipa: ˈi.dʒi.tur, respell: EE-jee-toor}
+      classical: {ipa: ˈɪ.ɡɪ.tʊr, respell: I-gi-tur}
+  - id: ic.hortatio.1.3
+    surface: hujusmodi
+    sound:
+      italian-humanist: {ipa: u.ˈjus.mo.di, respell: oo-YOOS-mo-dee}
+      classical: {ipa: hʊ.ˈjʊs.mɔ.diː, respell: hu-YUS-mo-dee}
+  - id: ic.hortatio.1.4
+    surface: vestrum
+    sound:
+      italian-humanist: {ipa: ˈves.trum, respell: VES-troom}
+      classical: {ipa: ˈwɛs.trʊm, respell: WES-trum}
+  - id: ic.hortatio.1.5
+    surface: sanctum
+    sound:
+      italian-humanist: {ipa: ˈsaŋk.tum, respell: SANGK-toom}
+      classical: {ipa: ˈsaːŋk.tʊm, respell: SAANGK-tum}
+  - id: ic.hortatio.1.6
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.hortatio.1.7
+    surface: laudabile
+    sound:
+      italian-humanist: {ipa: lau.ˈda.bi.le, respell: low-DA-bee-le}
+      classical: {ipa: lau.ˈdaː.bɪ.lɛ, respell: low-DAA-bi-le}
+  - id: ic.hortatio.1.8
+    surface: propositum
+    sound:
+      italian-humanist: {ipa: pro.ˈpo.zi.tum, respell: pro-PO-zee-toom}
+      classical: {ipa: proː.ˈpɔ.sɪ.tʊm, respell: proh-PO-si-tum}
+  - id: ic.hortatio.1.9
+    surface: plurimum
+    sound:
+      italian-humanist: {ipa: ˈplu.ri.mum, respell: PLOO-ree-moom}
+      classical: {ipa: ˈpluː.rɪ.mʊm, respell: PLOO-ri-mum}
+  - id: ic.hortatio.1.10
+    surface: in
+    sound:
+      italian-humanist: {ipa: in, respell: een}
+      classical: {ipa: ɪn, respell: in}
+  - id: ic.hortatio.1.11
+    surface: Domino
+    sound:
+      italian-humanist: {ipa: ˈdo.mi.no, respell: DO-mee-no}
+      classical: {ipa: ˈdɔ.mɪ.noː, respell: DO-mi-noh}
+  - id: ic.hortatio.1.12
+    surface: commendantes
+    punct: ','
+    sound:
+      italian-humanist: {ipa: kom.men.ˈdan.tes, respell: kom-men-DAN-tes}
+      classical: {ipa: kɔm.mɛn.ˈdan.teːs, respell: kom-men-DAN-tays}
+- id: ic.hortatio.2
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:hortatio.2
+  stanza: hortatio
+  stanza_title: The exhortation to bring the peoples to the faith
+  text: ac cupientes ut illud ad debitum finem perducatur, et ipsum nomen Salvatoris nostri in partibus illis inducatur,
+  tokens:
+  - id: ic.hortatio.2.1
+    surface: ac
+    sound:
+      italian-humanist: {ipa: ak, respell: ak}
+      classical: {ipa: ak, respell: ak}
+  - id: ic.hortatio.2.2
+    surface: cupientes
+    sound:
+      italian-humanist: {ipa: ku.pi.ˈen.tes, respell: koo-pee-EN-tes}
+      classical: {ipa: kʊ.pɪ.ˈɛn.teːs, respell: ku-pi-EN-tays}
+  - id: ic.hortatio.2.3
+    surface: ut
+    sound:
+      italian-humanist: {ipa: ut, respell: oot}
+      classical: {ipa: ʊt, respell: ut}
+  - id: ic.hortatio.2.4
+    surface: illud
+    sound:
+      italian-humanist: {ipa: ˈil.lud, respell: EEL-lood}
+      classical: {ipa: ˈɪl.lʊd, respell: IL-lud}
+  - id: ic.hortatio.2.5
+    surface: ad
+    sound:
+      italian-humanist: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: ic.hortatio.2.6
+    surface: debitum
+    sound:
+      italian-humanist: {ipa: ˈde.bi.tum, respell: DE-bee-toom}
+      classical: {ipa: ˈdeː.bɪ.tʊm, respell: DAY-bi-tum}
+  - id: ic.hortatio.2.7
+    surface: finem
+    sound:
+      italian-humanist: {ipa: ˈfi.nem, respell: FEE-nem}
+      classical: {ipa: ˈfiː.nɛm, respell: FEE-nem}
+  - id: ic.hortatio.2.8
+    surface: perducatur
+    punct: ','
+    sound:
+      italian-humanist: {ipa: per.du.ˈka.tur, respell: per-doo-KA-toor}
+      classical: {ipa: pɛr.duː.ˈkaː.tʊr, respell: per-doo-KAA-tur}
+  - id: ic.hortatio.2.9
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.hortatio.2.10
+    surface: ipsum
+    sound:
+      italian-humanist: {ipa: ˈip.sum, respell: EEP-soom}
+      classical: {ipa: ˈɪp.sʊm, respell: IP-sum}
+  - id: ic.hortatio.2.11
+    surface: nomen
+    sound:
+      italian-humanist: {ipa: ˈno.men, respell: NO-men}
+      classical: {ipa: ˈnoː.mɛn, respell: NOH-men}
+  - id: ic.hortatio.2.12
+    surface: Salvatoris
+    sound:
+      italian-humanist: {ipa: sal.va.ˈto.ris, respell: sal-va-TO-rees}
+      classical: {ipa: sal.waː.ˈtoː.rɪs, respell: sal-waa-TOH-ris}
+  - id: ic.hortatio.2.13
+    surface: nostri
+    sound:
+      italian-humanist: {ipa: ˈnos.tri, respell: NOS-tree}
+      classical: {ipa: ˈnɔs.triː, respell: NOS-tree}
+  - id: ic.hortatio.2.14
+    surface: in
+    sound:
+      italian-humanist: {ipa: in, respell: een}
+      classical: {ipa: ɪn, respell: in}
+  - id: ic.hortatio.2.15
+    surface: partibus
+    sound:
+      italian-humanist: {ipa: ˈpar.ti.bus, respell: PAR-tee-boos}
+      classical: {ipa: ˈpar.tɪ.bʊs, respell: PAR-ti-bus}
+  - id: ic.hortatio.2.16
+    surface: illis
+    sound:
+      italian-humanist: {ipa: ˈil.lis, respell: EEL-lees}
+      classical: {ipa: ˈɪl.liːs, respell: IL-lees}
+  - id: ic.hortatio.2.17
+    surface: inducatur
+    punct: ','
+    sound:
+      italian-humanist: {ipa: in.du.ˈka.tur, respell: een-doo-KA-toor}
+      classical: {ipa: ɪn.duː.ˈkaː.tʊr, respell: in-doo-KAA-tur}
+- id: ic.hortatio.3
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:hortatio.3
+  stanza: hortatio
+  stanza_title: The exhortation to bring the peoples to the faith
+  text: hortamur vos plurimum in Domino, et per sacri lavacri susceptionem, qua mandatis apostolicis obligati estis,
+  tokens:
+  - id: ic.hortatio.3.1
+    surface: hortamur
+    sound:
+      italian-humanist: {ipa: or.ˈta.mur, respell: or-TA-moor}
+      classical: {ipa: hɔr.ˈtaː.mʊr, respell: hor-TAA-mur}
+  - id: ic.hortatio.3.2
+    surface: vos
+    sound:
+      italian-humanist: {ipa: vos, respell: vos}
+      classical: {ipa: woːs, respell: wohs}
+  - id: ic.hortatio.3.3
+    surface: plurimum
+    sound:
+      italian-humanist: {ipa: ˈplu.ri.mum, respell: PLOO-ree-moom}
+      classical: {ipa: ˈpluː.rɪ.mʊm, respell: PLOO-ri-mum}
+  - id: ic.hortatio.3.4
+    surface: in
+    sound:
+      italian-humanist: {ipa: in, respell: een}
+      classical: {ipa: ɪn, respell: in}
+  - id: ic.hortatio.3.5
+    surface: Domino
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈdo.mi.no, respell: DO-mee-no}
+      classical: {ipa: ˈdɔ.mɪ.noː, respell: DO-mi-noh}
+  - id: ic.hortatio.3.6
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.hortatio.3.7
+    surface: per
+    sound:
+      italian-humanist: {ipa: per, respell: per}
+      classical: {ipa: pɛr, respell: per}
+  - id: ic.hortatio.3.8
+    surface: sacri
+    sound:
+      italian-humanist: {ipa: ˈsa.kri, respell: SA-kree}
+      classical: {ipa: ˈsa.kriː, respell: SA-kree}
+  - id: ic.hortatio.3.9
+    surface: lavacri
+    sound:
+      italian-humanist: {ipa: la.ˈva.kri, respell: la-VA-kree}
+      classical: {ipa: la.ˈwaː.kriː, respell: la-WAA-kree}
+  - id: ic.hortatio.3.10
+    surface: susceptionem
+    punct: ','
+    sound:
+      italian-humanist: {ipa: suʃ.ep.tsi.ˈo.nem, respell: soosh-ep-tsee-O-nem}
+      classical: {ipa: sʊs.kɛp.tɪ.ˈoː.nɛm, respell: sus-kep-ti-OH-nem}
+  - id: ic.hortatio.3.11
+    surface: qua
+    sound:
+      italian-humanist: {ipa: kwa, respell: kwa}
+      classical: {ipa: kʷaː, respell: kwaa}
+  - id: ic.hortatio.3.12
+    surface: mandatis
+    sound:
+      italian-humanist: {ipa: man.ˈda.tis, respell: man-DA-tees}
+      classical: {ipa: man.ˈdaː.tiːs, respell: man-DAA-tees}
+  - id: ic.hortatio.3.13
+    surface: apostolicis
+    sound:
+      italian-humanist: {ipa: a.pos.ˈto.li.tʃis, respell: a-pos-TO-lee-chees}
+      classical: {ipa: a.pɔs.ˈtɔ.lɪ.kiːs, respell: a-pos-TO-li-kees}
+  - id: ic.hortatio.3.14
+    surface: obligati
+    sound:
+      italian-humanist: {ipa: o.bli.ˈɡa.ti, respell: o-blee-GA-tee}
+      classical: {ipa: ɔ.blɪ.ˈɡaː.tiː, respell: o-bli-GAA-tee}
+  - id: ic.hortatio.3.15
+    surface: estis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈes.tis, respell: ES-tees}
+      classical: {ipa: ˈɛs.tɪs, respell: ES-tis}
+- id: ic.hortatio.4
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:hortatio.4
+  stanza: hortatio
+  stanza_title: The exhortation to bring the peoples to the faith
+  text: et viscera misericordie Domini nostri Jhesu Christi attente requirimus,
+  tokens:
+  - id: ic.hortatio.4.1
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.hortatio.4.2
+    surface: viscera
+    sound:
+      italian-humanist: {ipa: ˈviʃ.e.ra, respell: VEESH-e-ra}
+      classical: {ipa: ˈwɪs.kɛ.ra, respell: WIS-ke-ra}
+  - id: ic.hortatio.4.3
+    surface: misericordie
+    sound:
+      italian-humanist: {ipa: mi.ze.ri.ˈkor.di.ɛ, respell: mee-ze-ree-KOR-dee-e}
+      classical: {ipa: mɪ.sɛ.rɪ.ˈkɔr.dɪ.ae, respell: mi-se-ri-KOR-di-ai}
+  - id: ic.hortatio.4.4
+    surface: Domini
+    sound:
+      italian-humanist: {ipa: ˈdo.mi.ni, respell: DO-mee-nee}
+      classical: {ipa: ˈdɔ.mɪ.niː, respell: DO-mi-nee}
+  - id: ic.hortatio.4.5
+    surface: nostri
+    sound:
+      italian-humanist: {ipa: ˈnos.tri, respell: NOS-tree}
+      classical: {ipa: ˈnɔs.triː, respell: NOS-tree}
+  - id: ic.hortatio.4.6
+    surface: Jhesu
+    sound:
+      italian-humanist: {ipa: ˈje.zu, respell: YE-zoo}
+      classical: {ipa: ˈjeː.suː, respell: YAY-soo}
+  - id: ic.hortatio.4.7
+    surface: Christi
+    sound:
+      italian-humanist: {ipa: ˈkris.ti, respell: KREES-tee}
+      classical: {ipa: ˈkʰriːs.tiː, respell: KʰREES-tee}
+  - id: ic.hortatio.4.8
+    surface: attente
+    sound:
+      italian-humanist: {ipa: at.ˈten.te, respell: at-TEN-te}
+      classical: {ipa: at.ˈtɛn.teː, respell: at-TEN-tay}
+  - id: ic.hortatio.4.9
+    surface: requirimus
+    punct: ','
+    sound:
+      italian-humanist: {ipa: re.ˈkwi.ri.mus, respell: re-KWEE-ree-moos}
+      classical: {ipa: rɛ.ˈkʷiː.rɪ.mʊs, respell: re-KWEE-ri-mus}
+- id: ic.hortatio.5
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:hortatio.5
+  stanza: hortatio
+  stanza_title: The exhortation to bring the peoples to the faith
+  text: ut cum expeditionem hujusmodi omnino prosequi et assumere prona mente orthodoxe fidei zelo intendatis,
+  tokens:
+  - id: ic.hortatio.5.1
+    surface: ut
+    sound:
+      italian-humanist: {ipa: ut, respell: oot}
+      classical: {ipa: ʊt, respell: ut}
+  - id: ic.hortatio.5.2
+    surface: cum
+    sound:
+      italian-humanist: {ipa: kum, respell: koom}
+      classical: {ipa: kʊm, respell: kum}
+  - id: ic.hortatio.5.3
+    surface: expeditionem
+    sound:
+      italian-humanist: {ipa: eks.pe.di.tsi.ˈo.nem, respell: eks-pe-dee-tsee-O-nem}
+      classical: {ipa: ɛks.pɛ.diː.tɪ.ˈoː.nɛm, respell: eks-pe-dee-ti-OH-nem}
+  - id: ic.hortatio.5.4
+    surface: hujusmodi
+    sound:
+      italian-humanist: {ipa: u.ˈjus.mo.di, respell: oo-YOOS-mo-dee}
+      classical: {ipa: hʊ.ˈjʊs.mɔ.diː, respell: hu-YUS-mo-dee}
+  - id: ic.hortatio.5.5
+    surface: omnino
+    sound:
+      italian-humanist: {ipa: om.ˈni.no, respell: om-NEE-no}
+      classical: {ipa: ɔm.ˈniː.noː, respell: om-NEE-noh}
+  - id: ic.hortatio.5.6
+    surface: prosequi
+    sound:
+      italian-humanist: {ipa: ˈpro.ze.kwi, respell: PRO-ze-kwee}
+      classical: {ipa: ˈproː.sɛ.kʷiː, respell: PROH-se-kwee}
+  - id: ic.hortatio.5.7
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.hortatio.5.8
+    surface: assumere
+    sound:
+      italian-humanist: {ipa: as.ˈsu.me.re, respell: as-SOO-me-re}
+      classical: {ipa: as.ˈsuː.mɛ.rɛ, respell: as-SOO-me-re}
+  - id: ic.hortatio.5.9
+    surface: prona
+    sound:
+      italian-humanist: {ipa: ˈpro.na, respell: PRO-na}
+      classical: {ipa: ˈproː.naː, respell: PROH-naa}
+  - id: ic.hortatio.5.10
+    surface: mente
+    sound:
+      italian-humanist: {ipa: ˈmen.te, respell: MEN-te}
+      classical: {ipa: ˈmɛn.tɛ, respell: MEN-te}
+  - id: ic.hortatio.5.11
+    surface: orthodoxe
+    sound:
+      italian-humanist: {ipa: or.to.ˈdok.sɛ, respell: or-to-DOK-se}
+      classical: {ipa: ɔr.tʰɔ.ˈdɔk.sae, respell: or-tʰo-DOK-sai}
+  - id: ic.hortatio.5.12
+    surface: fidei
+    sound:
+      italian-humanist: {ipa: ˈfi.de.i, respell: FEE-de-ee}
+      classical: {ipa: ˈfɪ.dɛ.iː, respell: FI-de-ee}
+  - id: ic.hortatio.5.13
+    surface: zelo
+    sound:
+      italian-humanist: {ipa: ˈdze.lo, respell: DZE-lo}
+      classical: {ipa: ˈdzeː.loː, respell: DZAY-loh}
+  - id: ic.hortatio.5.14
+    surface: intendatis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: in.ten.ˈda.tis, respell: een-ten-DA-tees}
+      classical: {ipa: ɪn.tɛn.ˈdaː.tɪs, respell: in-ten-DAA-tis}
+- id: ic.hortatio.6
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:hortatio.6
+  stanza: hortatio
+  stanza_title: The exhortation to bring the peoples to the faith
+  text: populos in hujusmodi insulis et terris degentes ad Christianam religionem suscipiendam inducere velitis et debeatis,
+  tokens:
+  - id: ic.hortatio.6.1
+    surface: populos
+    sound:
+      italian-humanist: {ipa: ˈpo.pu.los, respell: PO-poo-los}
+      classical: {ipa: ˈpɔ.pʊ.loːs, respell: PO-pu-lohs}
+  - id: ic.hortatio.6.2
+    surface: in
+    sound:
+      italian-humanist: {ipa: in, respell: een}
+      classical: {ipa: ɪn, respell: in}
+  - id: ic.hortatio.6.3
+    surface: hujusmodi
+    sound:
+      italian-humanist: {ipa: u.ˈjus.mo.di, respell: oo-YOOS-mo-dee}
+      classical: {ipa: hʊ.ˈjʊs.mɔ.diː, respell: hu-YUS-mo-dee}
+  - id: ic.hortatio.6.4
+    surface: insulis
+    sound:
+      italian-humanist: {ipa: ˈin.su.lis, respell: EEN-soo-lees}
+      classical: {ipa: ˈiːn.sʊ.liːs, respell: EEN-su-lees}
+  - id: ic.hortatio.6.5
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.hortatio.6.6
+    surface: terris
+    sound:
+      italian-humanist: {ipa: ˈter.ris, respell: TER-rees}
+      classical: {ipa: ˈtɛr.riːs, respell: TER-rees}
+  - id: ic.hortatio.6.7
+    surface: degentes
+    sound:
+      italian-humanist: {ipa: de.ˈdʒen.tes, respell: de-JEN-tes}
+      classical: {ipa: deː.ˈɡɛn.teːs, respell: day-GEN-tays}
+  - id: ic.hortatio.6.8
+    surface: ad
+    sound:
+      italian-humanist: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: ic.hortatio.6.9
+    surface: Christianam
+    sound:
+      italian-humanist: {ipa: kris.ti.ˈa.nam, respell: krees-tee-A-nam}
+      classical: {ipa: kʰriːs.tɪ.ˈaː.nam, respell: kʰrees-ti-AA-nam}
+  - id: ic.hortatio.6.10
+    surface: religionem
+    sound:
+      italian-humanist: {ipa: re.li.dʒi.ˈo.nem, respell: re-lee-jee-O-nem}
+      classical: {ipa: rɛ.lɪ.ɡɪ.ˈoː.nɛm, respell: re-li-gi-OH-nem}
+  - id: ic.hortatio.6.11
+    surface: suscipiendam
+    sound:
+      italian-humanist: {ipa: suʃ.i.pi.ˈen.dam, respell: soosh-ee-pee-EN-dam}
+      classical: {ipa: sʊs.kɪ.pɪ.ˈɛn.dam, respell: sus-ki-pi-EN-dam}
+  - id: ic.hortatio.6.12
+    surface: inducere
+    sound:
+      italian-humanist: {ipa: in.ˈdu.tʃe.re, respell: een-DOO-che-re}
+      classical: {ipa: ɪn.ˈduː.kɛ.rɛ, respell: in-DOO-ke-re}
+  - id: ic.hortatio.6.13
+    surface: velitis
+    sound:
+      italian-humanist: {ipa: ve.ˈli.tis, respell: ve-LEE-tees}
+      classical: {ipa: wɛ.ˈliː.tɪs, respell: we-LEE-tis}
+  - id: ic.hortatio.6.14
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.hortatio.6.15
+    surface: debeatis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: de.be.ˈa.tis, respell: de-be-A-tees}
+      classical: {ipa: deː.bɛ.ˈaː.tɪs, respell: day-be-AA-tis}
+- id: ic.hortatio.7
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:hortatio.7
+  stanza: hortatio
+  stanza_title: The exhortation to bring the peoples to the faith
+  text: nec pericula, nec labores ullo unquam tempore vos deterreant,
+  tokens:
+  - id: ic.hortatio.7.1
+    surface: nec
+    sound:
+      italian-humanist: {ipa: nek, respell: nek}
+      classical: {ipa: nɛk, respell: nek}
+  - id: ic.hortatio.7.2
+    surface: pericula
+    punct: ','
+    sound:
+      italian-humanist: {ipa: pe.ˈri.ku.la, respell: pe-REE-koo-la}
+      classical: {ipa: pɛ.ˈriː.kʊ.la, respell: pe-REE-ku-la}
+  - id: ic.hortatio.7.3
+    surface: nec
+    sound:
+      italian-humanist: {ipa: nek, respell: nek}
+      classical: {ipa: nɛk, respell: nek}
+  - id: ic.hortatio.7.4
+    surface: labores
+    sound:
+      italian-humanist: {ipa: la.ˈbo.res, respell: la-BO-res}
+      classical: {ipa: la.ˈboː.reːs, respell: la-BOH-rays}
+  - id: ic.hortatio.7.5
+    surface: ullo
+    sound:
+      italian-humanist: {ipa: ˈul.lo, respell: OOL-lo}
+      classical: {ipa: ˈuːl.loː, respell: OOL-loh}
+  - id: ic.hortatio.7.6
+    surface: unquam
+    sound:
+      italian-humanist: {ipa: ˈuŋ.kwam, respell: OONG-kwam}
+      classical: {ipa: ˈʊŋ.kʷam, respell: UNG-kwam}
+  - id: ic.hortatio.7.7
+    surface: tempore
+    sound:
+      italian-humanist: {ipa: ˈtem.po.re, respell: TEM-po-re}
+      classical: {ipa: ˈtɛm.pɔ.rɛ, respell: TEM-po-re}
+  - id: ic.hortatio.7.8
+    surface: vos
+    sound:
+      italian-humanist: {ipa: vos, respell: vos}
+      classical: {ipa: woːs, respell: wohs}
+  - id: ic.hortatio.7.9
+    surface: deterreant
+    punct: ','
+    sound:
+      italian-humanist: {ipa: de.ˈter.re.ant, respell: de-TER-re-ant}
+      classical: {ipa: deː.ˈtɛr.rɛ.ant, respell: day-TER-re-ant}
+- id: ic.hortatio.8
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:hortatio.8
+  stanza: hortatio
+  stanza_title: The exhortation to bring the peoples to the faith
+  text: firma spe fiduciaque conceptis, quod Deus Omnipotens conatus vestros feliciter prosequetur.
+  tokens:
+  - id: ic.hortatio.8.1
+    surface: firma
+    sound:
+      italian-humanist: {ipa: ˈfir.ma, respell: FEER-ma}
+      classical: {ipa: ˈfɪr.maː, respell: FIR-maa}
+  - id: ic.hortatio.8.2
+    surface: spe
+    sound:
+      italian-humanist: {ipa: spe, respell: spe}
+      classical: {ipa: speː, respell: spay}
+  - id: ic.hortatio.8.3
+    surface: fiduciaque
+    sound:
+      italian-humanist: {ipa: fi.du.tʃi.ˈa.kwe, respell: fee-doo-chee-A-kwe}
+      classical: {ipa: fiː.duː.kɪ.ˈaː.kʷɛ, respell: fee-doo-ki-AA-kwe}
+  - id: ic.hortatio.8.4
+    surface: conceptis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: koŋ.ˈtʃep.tis, respell: kong-CHEP-tees}
+      classical: {ipa: kɔŋ.ˈkɛp.tiːs, respell: kong-KEP-tees}
+  - id: ic.hortatio.8.5
+    surface: quod
+    sound:
+      italian-humanist: {ipa: kwod, respell: kwod}
+      classical: {ipa: kʷɔd, respell: kwod}
+  - id: ic.hortatio.8.6
+    surface: Deus
+    sound:
+      italian-humanist: {ipa: ˈde.us, respell: DE-oos}
+      classical: {ipa: ˈdɛ.ʊs, respell: DE-us}
+  - id: ic.hortatio.8.7
+    surface: Omnipotens
+    sound:
+      italian-humanist: {ipa: om.ˈni.po.tens, respell: om-NEE-po-tens}
+      classical: {ipa: ɔm.ˈnɪ.pɔ.teːns, respell: om-NI-po-tayns}
+  - id: ic.hortatio.8.8
+    surface: conatus
+    sound:
+      italian-humanist: {ipa: ko.ˈna.tus, respell: ko-NA-toos}
+      classical: {ipa: koː.ˈnaː.tuːs, respell: koh-NAA-toos}
+  - id: ic.hortatio.8.9
+    surface: vestros
+    sound:
+      italian-humanist: {ipa: ˈves.tros, respell: VES-tros}
+      classical: {ipa: ˈwɛs.troːs, respell: WES-trohs}
+  - id: ic.hortatio.8.10
+    surface: feliciter
+    sound:
+      italian-humanist: {ipa: fe.ˈli.tʃi.ter, respell: fe-LEE-chee-ter}
+      classical: {ipa: feː.ˈliː.kɪ.tɛr, respell: fay-LEE-ki-ter}
+  - id: ic.hortatio.8.11
+    surface: prosequetur
+    punct: .
+    sound:
+      italian-humanist: {ipa: pro.ze.ˈkwe.tur, respell: pro-ze-KWE-toor}
+      classical: {ipa: proː.sɛ.ˈkʷeː.tʊr, respell: proh-se-KWAY-tur}
 - id: ic.donatio.1
   cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:donatio.1
   stanza: donatio
@@ -2364,8 +3886,8 @@ lines:
   - id: ic.donatio.6.2
     surface: terre
     sound:
-      italian-humanist: {ipa: ˈter.re, respell: TER-re}
-      classical: {ipa: ˈtɛr.reː, respell: TER-ray}
+      italian-humanist: {ipa: ˈter.rɛ, respell: TER-re}
+      classical: {ipa: ˈtɛr.rae, respell: TER-rai}
   - id: ic.donatio.6.3
     surface: firme
     sound:
@@ -2523,8 +4045,8 @@ lines:
   - id: ic.donatio.7.16
     surface: leucis
     sound:
-      italian-humanist: {ipa: ˈle.u.tʃis, respell: LE-oo-chees}
-      classical: {ipa: ˈlɛ.ʊ.kiːs, respell: LE-u-kees}
+      italian-humanist: {ipa: ˈleu.tʃis, respell: LEU-chees}
+      classical: {ipa: ˈleu.kiːs, respell: LEU-kees}
   - id: ic.donatio.7.17
     surface: versus
     sound:
@@ -2580,8 +4102,8 @@ lines:
   - id: ic.donatio.8.6
     surface: terre
     sound:
-      italian-humanist: {ipa: ˈter.re, respell: TER-re}
-      classical: {ipa: ˈtɛr.reː, respell: TER-ray}
+      italian-humanist: {ipa: ˈter.rɛ, respell: TER-re}
+      classical: {ipa: ˈtɛr.rae, respell: TER-rai}
   - id: ic.donatio.8.7
     surface: firme
     sound:
@@ -3322,7 +4844,7 @@ lines:
     surface: nulli
     sound:
       italian-humanist: {ipa: ˈnul.li, respell: NOOL-lee}
-      classical: {ipa: ˈnʊl.liː, respell: NUL-lee}
+      classical: {ipa: ˈnuːl.liː, respell: NOOL-lee}
   - id: ic.donatio.16.11
     surface: Christiano
     sound:
@@ -3473,6 +4995,1878 @@ lines:
     sound:
       italian-humanist: {ipa: de.ˈbe.re, respell: de-BE-re}
       classical: {ipa: deː.ˈbeː.rɛ, respell: day-BAY-re}
+- id: ic.mandatum.1
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:mandatum.1
+  stanza: mandatum
+  stanza_title: Missionaries, and no one to sail west of the line without leave
+  text: Et insuper mandamus vobis in virtute sancte obedientie,
+  tokens:
+  - id: ic.mandatum.1.1
+    surface: Et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.1.2
+    surface: insuper
+    sound:
+      italian-humanist: {ipa: ˈin.su.per, respell: EEN-soo-per}
+      classical: {ipa: ˈiːn.sʊ.pɛr, respell: EEN-su-per}
+  - id: ic.mandatum.1.3
+    surface: mandamus
+    sound:
+      italian-humanist: {ipa: man.ˈda.mus, respell: man-DA-moos}
+      classical: {ipa: man.ˈdaː.mʊs, respell: man-DAA-mus}
+  - id: ic.mandatum.1.4
+    surface: vobis
+    sound:
+      italian-humanist: {ipa: ˈvo.bis, respell: VO-bees}
+      classical: {ipa: ˈwoː.biːs, respell: WOH-bees}
+  - id: ic.mandatum.1.5
+    surface: in
+    sound:
+      italian-humanist: {ipa: in, respell: een}
+      classical: {ipa: ɪn, respell: in}
+  - id: ic.mandatum.1.6
+    surface: virtute
+    sound:
+      italian-humanist: {ipa: vir.ˈtu.te, respell: veer-TOO-te}
+      classical: {ipa: wɪr.ˈtuː.tɛ, respell: wir-TOO-te}
+  - id: ic.mandatum.1.7
+    surface: sancte
+    sound:
+      italian-humanist: {ipa: ˈsaŋk.tɛ, respell: SANGK-te}
+      classical: {ipa: ˈsaːŋk.tae, respell: SAANGK-tai}
+  - id: ic.mandatum.1.8
+    surface: obedientie
+    punct: ','
+    sound:
+      italian-humanist: {ipa: o.be.di.ˈen.tsi.ɛ, respell: o-be-dee-EN-tsee-e}
+      classical: {ipa: ɔ.beː.dɪ.ˈɛn.tɪ.ae, respell: o-bay-di-EN-ti-ai}
+- id: ic.mandatum.2
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:mandatum.2
+  stanza: mandatum
+  stanza_title: Missionaries, and no one to sail west of the line without leave
+  text: ut, sicut etiam pollicemini et non dubitamus pro vestra maxima devotione et regia magnanimitate vos esse facturos,
+  tokens:
+  - id: ic.mandatum.2.1
+    surface: ut
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ut, respell: oot}
+      classical: {ipa: ʊt, respell: ut}
+  - id: ic.mandatum.2.2
+    surface: sicut
+    sound:
+      italian-humanist: {ipa: ˈsi.kut, respell: SEE-koot}
+      classical: {ipa: ˈsiː.kʊt, respell: SEE-kut}
+  - id: ic.mandatum.2.3
+    surface: etiam
+    sound:
+      italian-humanist: {ipa: ˈe.tsi.am, respell: E-tsee-am}
+      classical: {ipa: ˈɛ.tɪ.am, respell: E-ti-am}
+  - id: ic.mandatum.2.4
+    surface: pollicemini
+    sound:
+      italian-humanist: {ipa: pol.li.ˈtʃe.mi.ni, respell: pol-lee-CHE-mee-nee}
+      classical: {ipa: pɔl.lɪ.ˈkeː.mɪ.niː, respell: pol-li-KAY-mi-nee}
+  - id: ic.mandatum.2.5
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.2.6
+    surface: non
+    sound:
+      italian-humanist: {ipa: non, respell: non}
+      classical: {ipa: noːn, respell: nohn}
+  - id: ic.mandatum.2.7
+    surface: dubitamus
+    sound:
+      italian-humanist: {ipa: du.bi.ˈta.mus, respell: doo-bee-TA-moos}
+      classical: {ipa: dʊ.bɪ.ˈtaː.mʊs, respell: du-bi-TAA-mus}
+  - id: ic.mandatum.2.8
+    surface: pro
+    sound:
+      italian-humanist: {ipa: pro, respell: pro}
+      classical: {ipa: proː, respell: proh}
+  - id: ic.mandatum.2.9
+    surface: vestra
+    sound:
+      italian-humanist: {ipa: ˈves.tra, respell: VES-tra}
+      classical: {ipa: ˈwɛs.traː, respell: WES-traa}
+  - id: ic.mandatum.2.10
+    surface: maxima
+    sound:
+      italian-humanist: {ipa: ˈmak.si.ma, respell: MAK-see-ma}
+      classical: {ipa: ˈmak.sɪ.maː, respell: MAK-si-maa}
+  - id: ic.mandatum.2.11
+    surface: devotione
+    sound:
+      italian-humanist: {ipa: de.vo.tsi.ˈo.ne, respell: de-vo-tsee-O-ne}
+      classical: {ipa: deː.woː.tɪ.ˈoː.nɛ, respell: day-woh-ti-OH-ne}
+  - id: ic.mandatum.2.12
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.2.13
+    surface: regia
+    sound:
+      italian-humanist: {ipa: ˈre.dʒi.a, respell: RE-jee-a}
+      classical: {ipa: ˈreː.ɡɪ.aː, respell: RAY-gi-aa}
+  - id: ic.mandatum.2.14
+    surface: magnanimitate
+    sound:
+      italian-humanist: {ipa: ma.ɲa.ni.mi.ˈta.te, respell: ma-nya-nee-mee-TA-te}
+      classical: {ipa: maɡ.na.nɪ.mɪ.ˈtaː.tɛ, respell: mag-na-ni-mi-TAA-te}
+  - id: ic.mandatum.2.15
+    surface: vos
+    sound:
+      italian-humanist: {ipa: vos, respell: vos}
+      classical: {ipa: woːs, respell: wohs}
+  - id: ic.mandatum.2.16
+    surface: esse
+    sound:
+      italian-humanist: {ipa: ˈes.se, respell: ES-se}
+      classical: {ipa: ˈɛs.sɛ, respell: ES-se}
+  - id: ic.mandatum.2.17
+    surface: facturos
+    punct: ','
+    sound:
+      italian-humanist: {ipa: fak.ˈtu.ros, respell: fak-TOO-ros}
+      classical: {ipa: fak.ˈtuː.roːs, respell: fak-TOO-rohs}
+- id: ic.mandatum.3
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:mandatum.3
+  stanza: mandatum
+  stanza_title: Missionaries, and no one to sail west of the line without leave
+  text: ad terras firmas et insulas predictas viros probos et Deum timentes, doctos, peritos, et expertos,
+  tokens:
+  - id: ic.mandatum.3.1
+    surface: ad
+    sound:
+      italian-humanist: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: ic.mandatum.3.2
+    surface: terras
+    sound:
+      italian-humanist: {ipa: ˈter.ras, respell: TER-ras}
+      classical: {ipa: ˈtɛr.raːs, respell: TER-raas}
+  - id: ic.mandatum.3.3
+    surface: firmas
+    sound:
+      italian-humanist: {ipa: ˈfir.mas, respell: FEER-mas}
+      classical: {ipa: ˈfɪr.maːs, respell: FIR-maas}
+  - id: ic.mandatum.3.4
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.3.5
+    surface: insulas
+    sound:
+      italian-humanist: {ipa: ˈin.su.las, respell: EEN-soo-las}
+      classical: {ipa: ˈiːn.sʊ.laːs, respell: EEN-su-laas}
+  - id: ic.mandatum.3.6
+    surface: predictas
+    sound:
+      italian-humanist: {ipa: prɛ.ˈdik.tas, respell: pre-DEEK-tas}
+      classical: {ipa: prae.ˈdɪk.taːs, respell: prai-DIK-taas}
+  - id: ic.mandatum.3.7
+    surface: viros
+    sound:
+      italian-humanist: {ipa: ˈvi.ros, respell: VEE-ros}
+      classical: {ipa: ˈwɪ.roːs, respell: WI-rohs}
+  - id: ic.mandatum.3.8
+    surface: probos
+    sound:
+      italian-humanist: {ipa: ˈpro.bos, respell: PRO-bos}
+      classical: {ipa: ˈprɔ.boːs, respell: PRO-bohs}
+  - id: ic.mandatum.3.9
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.3.10
+    surface: Deum
+    sound:
+      italian-humanist: {ipa: ˈde.um, respell: DE-oom}
+      classical: {ipa: ˈdɛ.ʊm, respell: DE-um}
+  - id: ic.mandatum.3.11
+    surface: timentes
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ti.ˈmen.tes, respell: tee-MEN-tes}
+      classical: {ipa: tɪ.ˈmɛn.teːs, respell: ti-MEN-tays}
+  - id: ic.mandatum.3.12
+    surface: doctos
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈdok.tos, respell: DOK-tos}
+      classical: {ipa: ˈdɔk.toːs, respell: DOK-tohs}
+  - id: ic.mandatum.3.13
+    surface: peritos
+    punct: ','
+    sound:
+      italian-humanist: {ipa: pe.ˈri.tos, respell: pe-REE-tos}
+      classical: {ipa: pɛ.ˈriː.toːs, respell: pe-REE-tohs}
+  - id: ic.mandatum.3.14
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.3.15
+    surface: expertos
+    punct: ','
+    sound:
+      italian-humanist: {ipa: eks.ˈper.tos, respell: eks-PER-tos}
+      classical: {ipa: ɛks.ˈpɛr.toːs, respell: eks-PER-tohs}
+- id: ic.mandatum.4
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:mandatum.4
+  stanza: mandatum
+  stanza_title: Missionaries, and no one to sail west of the line without leave
+  text: ad instruendum incolas et habitatores prefatos in fide Catholica et bonis moribus imbuendum destinare debeatis,
+  tokens:
+  - id: ic.mandatum.4.1
+    surface: ad
+    sound:
+      italian-humanist: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: ic.mandatum.4.2
+    surface: instruendum
+    sound:
+      italian-humanist: {ipa: ins.tru.ˈen.dum, respell: eens-troo-EN-doom}
+      classical: {ipa: iːns.trʊ.ˈɛn.dʊm, respell: eens-tru-EN-dum}
+  - id: ic.mandatum.4.3
+    surface: incolas
+    sound:
+      italian-humanist: {ipa: ˈiŋ.ko.las, respell: EENG-ko-las}
+      classical: {ipa: ˈɪŋ.kɔ.laːs, respell: ING-ko-laas}
+  - id: ic.mandatum.4.4
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.4.5
+    surface: habitatores
+    sound:
+      italian-humanist: {ipa: a.bi.ta.ˈto.res, respell: a-bee-ta-TO-res}
+      classical: {ipa: ha.bɪ.taː.ˈtoː.reːs, respell: ha-bi-taa-TOH-rays}
+  - id: ic.mandatum.4.6
+    surface: prefatos
+    sound:
+      italian-humanist: {ipa: prɛ.ˈfa.tos, respell: pre-FA-tos}
+      classical: {ipa: prae.ˈfaː.toːs, respell: prai-FAA-tohs}
+  - id: ic.mandatum.4.7
+    surface: in
+    sound:
+      italian-humanist: {ipa: in, respell: een}
+      classical: {ipa: ɪn, respell: in}
+  - id: ic.mandatum.4.8
+    surface: fide
+    sound:
+      italian-humanist: {ipa: ˈfi.de, respell: FEE-de}
+      classical: {ipa: ˈfɪ.deː, respell: FI-day}
+  - id: ic.mandatum.4.9
+    surface: Catholica
+    sound:
+      italian-humanist: {ipa: ka.ˈto.li.ka, respell: ka-TO-lee-ka}
+      classical: {ipa: ka.ˈtʰɔ.lɪ.ka, respell: ka-TʰO-li-ka}
+  - id: ic.mandatum.4.10
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.4.11
+    surface: bonis
+    sound:
+      italian-humanist: {ipa: ˈbo.nis, respell: BO-nees}
+      classical: {ipa: ˈbɔ.niːs, respell: BO-nees}
+  - id: ic.mandatum.4.12
+    surface: moribus
+    sound:
+      italian-humanist: {ipa: ˈmo.ri.bus, respell: MO-ree-boos}
+      classical: {ipa: ˈmoː.rɪ.bʊs, respell: MOH-ri-bus}
+  - id: ic.mandatum.4.13
+    surface: imbuendum
+    sound:
+      italian-humanist: {ipa: im.bu.ˈen.dum, respell: eem-boo-EN-doom}
+      classical: {ipa: ɪm.bʊ.ˈɛn.dʊm, respell: im-bu-EN-dum}
+  - id: ic.mandatum.4.14
+    surface: destinare
+    sound:
+      italian-humanist: {ipa: des.ti.ˈna.re, respell: des-tee-NA-re}
+      classical: {ipa: deːs.tɪ.ˈnaː.rɛ, respell: days-ti-NAA-re}
+  - id: ic.mandatum.4.15
+    surface: debeatis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: de.be.ˈa.tis, respell: de-be-A-tees}
+      classical: {ipa: deː.bɛ.ˈaː.tɪs, respell: day-be-AA-tis}
+- id: ic.mandatum.5
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:mandatum.5
+  stanza: mandatum
+  stanza_title: Missionaries, and no one to sail west of the line without leave
+  text: omnem debitam diligentiam in premissis adhibentes,
+  tokens:
+  - id: ic.mandatum.5.1
+    surface: omnem
+    sound:
+      italian-humanist: {ipa: ˈom.nem, respell: OM-nem}
+      classical: {ipa: ˈɔm.nɛm, respell: OM-nem}
+  - id: ic.mandatum.5.2
+    surface: debitam
+    sound:
+      italian-humanist: {ipa: ˈde.bi.tam, respell: DE-bee-tam}
+      classical: {ipa: ˈdeː.bɪ.tam, respell: DAY-bi-tam}
+  - id: ic.mandatum.5.3
+    surface: diligentiam
+    sound:
+      italian-humanist: {ipa: di.li.ˈdʒen.tsi.am, respell: dee-lee-JEN-tsee-am}
+      classical: {ipa: diː.lɪ.ˈɡɛn.tɪ.am, respell: dee-li-GEN-ti-am}
+  - id: ic.mandatum.5.4
+    surface: in
+    sound:
+      italian-humanist: {ipa: in, respell: een}
+      classical: {ipa: ɪn, respell: in}
+  - id: ic.mandatum.5.5
+    surface: premissis
+    sound:
+      italian-humanist: {ipa: prɛ.ˈmis.sis, respell: pre-MEES-sees}
+      classical: {ipa: prae.ˈmɪs.siːs, respell: prai-MIS-sees}
+  - id: ic.mandatum.5.6
+    surface: adhibentes
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ad.i.ˈben.tes, respell: ad-ee-BEN-tes}
+      classical: {ipa: ad.hɪ.ˈbɛn.teːs, respell: ad-hi-BEN-tays}
+- id: ic.mandatum.6
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:mandatum.6
+  stanza: mandatum
+  stanza_title: Missionaries, and no one to sail west of the line without leave
+  text: ac quibuscunque personis cujuscunque dignitatis, etiam imperialis et regalis, status, gradus, ordinis, vel conditionis,
+  tokens:
+  - id: ic.mandatum.6.1
+    surface: ac
+    sound:
+      italian-humanist: {ipa: ak, respell: ak}
+      classical: {ipa: ak, respell: ak}
+  - id: ic.mandatum.6.2
+    surface: quibuscunque
+    sound:
+      italian-humanist: {ipa: kwi.bus.ˈkuŋ.kwe, respell: kwee-boos-KOONG-kwe}
+      classical: {ipa: kʷɪ.bʊs.ˈkʊŋ.kʷɛ, respell: kwi-bus-KUNG-kwe}
+  - id: ic.mandatum.6.3
+    surface: personis
+    sound:
+      italian-humanist: {ipa: per.ˈso.nis, respell: per-SO-nees}
+      classical: {ipa: pɛr.ˈsoː.niːs, respell: per-SOH-nees}
+  - id: ic.mandatum.6.4
+    surface: cujuscunque
+    sound:
+      italian-humanist: {ipa: ku.jus.ˈkuŋ.kwe, respell: koo-yoos-KOONG-kwe}
+      classical: {ipa: kʊ.jʊs.ˈkʊŋ.kʷɛ, respell: ku-yus-KUNG-kwe}
+  - id: ic.mandatum.6.5
+    surface: dignitatis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: di.ɲi.ˈta.tis, respell: dee-nyee-TA-tees}
+      classical: {ipa: diːɡ.nɪ.ˈtaː.tɪs, respell: deeg-ni-TAA-tis}
+  - id: ic.mandatum.6.6
+    surface: etiam
+    sound:
+      italian-humanist: {ipa: ˈe.tsi.am, respell: E-tsee-am}
+      classical: {ipa: ˈɛ.tɪ.am, respell: E-ti-am}
+  - id: ic.mandatum.6.7
+    surface: imperialis
+    sound:
+      italian-humanist: {ipa: im.pe.ri.ˈa.lis, respell: eem-pe-ree-A-lees}
+      classical: {ipa: ɪm.pɛ.rɪ.ˈaː.lɪs, respell: im-pe-ri-AA-lis}
+  - id: ic.mandatum.6.8
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.6.9
+    surface: regalis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: re.ˈɡa.lis, respell: re-GA-lees}
+      classical: {ipa: reː.ˈɡaː.lɪs, respell: ray-GAA-lis}
+  - id: ic.mandatum.6.10
+    surface: status
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈsta.tus, respell: STA-toos}
+      classical: {ipa: ˈsta.tuːs, respell: STA-toos}
+  - id: ic.mandatum.6.11
+    surface: gradus
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈɡra.dus, respell: GRA-doos}
+      classical: {ipa: ˈɡra.duːs, respell: GRA-doos}
+  - id: ic.mandatum.6.12
+    surface: ordinis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈor.di.nis, respell: OR-dee-nees}
+      classical: {ipa: ˈoːr.dɪ.nɪs, respell: OHR-di-nis}
+  - id: ic.mandatum.6.13
+    surface: vel
+    sound:
+      italian-humanist: {ipa: vel, respell: vel}
+      classical: {ipa: wɛl, respell: wel}
+  - id: ic.mandatum.6.14
+    surface: conditionis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: kon.di.tsi.ˈo.nis, respell: kon-dee-tsee-O-nees}
+      classical: {ipa: kɔn.dɪ.tɪ.ˈoː.nɪs, respell: kon-di-ti-OH-nis}
+- id: ic.mandatum.7
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:mandatum.7
+  stanza: mandatum
+  stanza_title: Missionaries, and no one to sail west of the line without leave
+  text: sub excommunicationis late sententie pena, quam eo ipso si contrafecerint, incurrant, districtius inhibemus,
+  tokens:
+  - id: ic.mandatum.7.1
+    surface: sub
+    sound:
+      italian-humanist: {ipa: sub, respell: soob}
+      classical: {ipa: sʊb, respell: sub}
+  - id: ic.mandatum.7.2
+    surface: excommunicationis
+    sound:
+      italian-humanist: {ipa: eks.kom.mu.ni.ka.tsi.ˈo.nis, respell: eks-kom-moo-nee-ka-tsee-O-nees}
+      classical: {ipa: ɛks.kɔm.muː.nɪ.kaː.tɪ.ˈoː.nɪs, respell: eks-kom-moo-ni-kaa-ti-OH-nis}
+  - id: ic.mandatum.7.3
+    surface: late
+    sound:
+      italian-humanist: {ipa: ˈla.tɛ, respell: LA-te}
+      classical: {ipa: ˈlaː.tae, respell: LAA-tai}
+  - id: ic.mandatum.7.4
+    surface: sententie
+    sound:
+      italian-humanist: {ipa: sen.ˈten.tsi.ɛ, respell: sen-TEN-tsee-e}
+      classical: {ipa: sɛn.ˈtɛn.tɪ.ae, respell: sen-TEN-ti-ai}
+  - id: ic.mandatum.7.5
+    surface: pena
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈpɛ.na, respell: PE-na}
+      classical: {ipa: ˈpoe.naː, respell: POY-naa}
+  - id: ic.mandatum.7.6
+    surface: quam
+    sound:
+      italian-humanist: {ipa: kwam, respell: kwam}
+      classical: {ipa: kʷam, respell: kwam}
+  - id: ic.mandatum.7.7
+    surface: eo
+    sound:
+      italian-humanist: {ipa: ˈe.o, respell: E-o}
+      classical: {ipa: ˈɛ.oː, respell: E-oh}
+  - id: ic.mandatum.7.8
+    surface: ipso
+    sound:
+      italian-humanist: {ipa: ˈip.so, respell: EEP-so}
+      classical: {ipa: ˈɪp.soː, respell: IP-soh}
+  - id: ic.mandatum.7.9
+    surface: si
+    sound:
+      italian-humanist: {ipa: si, respell: see}
+      classical: {ipa: siː, respell: see}
+  - id: ic.mandatum.7.10
+    surface: contrafecerint
+    punct: ','
+    sound:
+      italian-humanist: {ipa: kon.tra.ˈfe.tʃe.rint, respell: kon-tra-FE-che-reent}
+      classical: {ipa: kɔn.traː.ˈfeː.kɛ.rɪnt, respell: kon-traa-FAY-ke-rint}
+  - id: ic.mandatum.7.11
+    surface: incurrant
+    punct: ','
+    sound:
+      italian-humanist: {ipa: iŋ.ˈkur.rant, respell: eeng-KOOR-rant}
+      classical: {ipa: ɪŋ.ˈkʊr.rant, respell: ing-KUR-rant}
+  - id: ic.mandatum.7.12
+    surface: districtius
+    sound:
+      italian-humanist: {ipa: dis.ˈtrik.tsi.us, respell: dees-TREEK-tsee-oos}
+      classical: {ipa: dɪs.ˈtriːk.tɪ.ʊs, respell: dis-TREEK-ti-us}
+  - id: ic.mandatum.7.13
+    surface: inhibemus
+    punct: ','
+    sound:
+      italian-humanist: {ipa: in.i.ˈbe.mus, respell: een-ee-BE-moos}
+      classical: {ipa: ɪn.hɪ.ˈbeː.mʊs, respell: in-hi-BAY-mus}
+- id: ic.mandatum.8
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:mandatum.8
+  stanza: mandatum
+  stanza_title: Missionaries, and no one to sail west of the line without leave
+  text: ne ad insulas et terras firmas, inventas et inveniendas, detectas et detegendas versus occidentem et meridiem,
+  tokens:
+  - id: ic.mandatum.8.1
+    surface: ne
+    sound:
+      italian-humanist: {ipa: ne, respell: ne}
+      classical: {ipa: neː, respell: nay}
+  - id: ic.mandatum.8.2
+    surface: ad
+    sound:
+      italian-humanist: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: ic.mandatum.8.3
+    surface: insulas
+    sound:
+      italian-humanist: {ipa: ˈin.su.las, respell: EEN-soo-las}
+      classical: {ipa: ˈiːn.sʊ.laːs, respell: EEN-su-laas}
+  - id: ic.mandatum.8.4
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.8.5
+    surface: terras
+    sound:
+      italian-humanist: {ipa: ˈter.ras, respell: TER-ras}
+      classical: {ipa: ˈtɛr.raːs, respell: TER-raas}
+  - id: ic.mandatum.8.6
+    surface: firmas
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈfir.mas, respell: FEER-mas}
+      classical: {ipa: ˈfɪr.maːs, respell: FIR-maas}
+  - id: ic.mandatum.8.7
+    surface: inventas
+    sound:
+      italian-humanist: {ipa: in.ˈven.tas, respell: een-VEN-tas}
+      classical: {ipa: ɪn.ˈwɛn.taːs, respell: in-WEN-taas}
+  - id: ic.mandatum.8.8
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.8.9
+    surface: inveniendas
+    punct: ','
+    sound:
+      italian-humanist: {ipa: in.ve.ni.ˈen.das, respell: een-ve-nee-EN-das}
+      classical: {ipa: ɪn.wɛ.nɪ.ˈɛn.daːs, respell: in-we-ni-EN-daas}
+  - id: ic.mandatum.8.10
+    surface: detectas
+    sound:
+      italian-humanist: {ipa: de.ˈtek.tas, respell: de-TEK-tas}
+      classical: {ipa: deː.ˈteːk.taːs, respell: day-TAYK-taas}
+  - id: ic.mandatum.8.11
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.8.12
+    surface: detegendas
+    sound:
+      italian-humanist: {ipa: de.te.ˈdʒen.das, respell: de-te-JEN-das}
+      classical: {ipa: deː.tɛ.ˈɡɛn.daːs, respell: day-te-GEN-daas}
+  - id: ic.mandatum.8.13
+    surface: versus
+    sound:
+      italian-humanist: {ipa: ˈver.sus, respell: VER-soos}
+      classical: {ipa: ˈwɛr.sʊs, respell: WER-sus}
+  - id: ic.mandatum.8.14
+    surface: occidentem
+    sound:
+      italian-humanist: {ipa: ok.tʃi.ˈden.tem, respell: ok-chee-DEN-tem}
+      classical: {ipa: ɔk.kɪ.ˈdɛn.tɛm, respell: ok-ki-DEN-tem}
+  - id: ic.mandatum.8.15
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.8.16
+    surface: meridiem
+    punct: ','
+    sound:
+      italian-humanist: {ipa: me.ˈri.di.em, respell: me-REE-dee-em}
+      classical: {ipa: mɛ.ˈriː.dɪ.ɛm, respell: me-REE-di-em}
+- id: ic.mandatum.9
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:mandatum.9
+  stanza: mandatum
+  stanza_title: Missionaries, and no one to sail west of the line without leave
+  text: fabricando et constituendo lineam a polo Arctico ad polum Antarcticum,
+  tokens:
+  - id: ic.mandatum.9.1
+    surface: fabricando
+    sound:
+      italian-humanist: {ipa: fa.bri.ˈkan.do, respell: fa-bree-KAN-do}
+      classical: {ipa: fa.brɪ.ˈkan.doː, respell: fa-bri-KAN-doh}
+  - id: ic.mandatum.9.2
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.9.3
+    surface: constituendo
+    sound:
+      italian-humanist: {ipa: kons.ti.tu.ˈen.do, respell: kons-tee-too-EN-do}
+      classical: {ipa: koːns.tɪ.tʊ.ˈɛn.doː, respell: kohns-ti-tu-EN-doh}
+  - id: ic.mandatum.9.4
+    surface: lineam
+    sound:
+      italian-humanist: {ipa: ˈli.ne.am, respell: LEE-ne-am}
+      classical: {ipa: ˈliː.nɛ.am, respell: LEE-ne-am}
+  - id: ic.mandatum.9.5
+    surface: a
+    sound:
+      italian-humanist: {ipa: a, respell: a}
+      classical: {ipa: aː, respell: aa}
+  - id: ic.mandatum.9.6
+    surface: polo
+    sound:
+      italian-humanist: {ipa: ˈpo.lo, respell: PO-lo}
+      classical: {ipa: ˈpɔ.loː, respell: PO-loh}
+  - id: ic.mandatum.9.7
+    surface: Arctico
+    sound:
+      italian-humanist: {ipa: ˈark.ti.ko, respell: ARK-tee-ko}
+      classical: {ipa: ˈark.tɪ.koː, respell: ARK-ti-koh}
+  - id: ic.mandatum.9.8
+    surface: ad
+    sound:
+      italian-humanist: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: ic.mandatum.9.9
+    surface: polum
+    sound:
+      italian-humanist: {ipa: ˈpo.lum, respell: PO-loom}
+      classical: {ipa: ˈpɔ.lʊm, respell: PO-lum}
+  - id: ic.mandatum.9.10
+    surface: Antarcticum
+    punct: ','
+    sound:
+      italian-humanist: {ipa: an.ˈtark.ti.kum, respell: an-TARK-tee-koom}
+      classical: {ipa: an.ˈtark.tɪ.kʊm, respell: an-TARK-ti-kum}
+- id: ic.mandatum.10
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:mandatum.10
+  stanza: mandatum
+  stanza_title: Missionaries, and no one to sail west of the line without leave
+  text: sive terre firme et insule invente et inveniende sint versus Indiam aut versus aliam quancunque partem,
+  tokens:
+  - id: ic.mandatum.10.1
+    surface: sive
+    sound:
+      italian-humanist: {ipa: ˈsi.ve, respell: SEE-ve}
+      classical: {ipa: ˈsiː.wɛ, respell: SEE-we}
+  - id: ic.mandatum.10.2
+    surface: terre
+    sound:
+      italian-humanist: {ipa: ˈter.rɛ, respell: TER-re}
+      classical: {ipa: ˈtɛr.rae, respell: TER-rai}
+  - id: ic.mandatum.10.3
+    surface: firme
+    sound:
+      italian-humanist: {ipa: ˈfir.mɛ, respell: FEER-me}
+      classical: {ipa: ˈfɪr.mae, respell: FIR-mai}
+  - id: ic.mandatum.10.4
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.10.5
+    surface: insule
+    sound:
+      italian-humanist: {ipa: ˈin.su.lɛ, respell: EEN-soo-le}
+      classical: {ipa: ˈiːn.sʊ.lae, respell: EEN-su-lai}
+  - id: ic.mandatum.10.6
+    surface: invente
+    sound:
+      italian-humanist: {ipa: in.ˈven.tɛ, respell: een-VEN-te}
+      classical: {ipa: ɪn.ˈwɛn.tae, respell: in-WEN-tai}
+  - id: ic.mandatum.10.7
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.10.8
+    surface: inveniende
+    sound:
+      italian-humanist: {ipa: in.ve.ni.ˈen.dɛ, respell: een-ve-nee-EN-de}
+      classical: {ipa: ɪn.wɛ.nɪ.ˈɛn.dae, respell: in-we-ni-EN-dai}
+  - id: ic.mandatum.10.9
+    surface: sint
+    sound:
+      italian-humanist: {ipa: sint, respell: seent}
+      classical: {ipa: sɪnt, respell: sint}
+  - id: ic.mandatum.10.10
+    surface: versus
+    sound:
+      italian-humanist: {ipa: ˈver.sus, respell: VER-soos}
+      classical: {ipa: ˈwɛr.sʊs, respell: WER-sus}
+  - id: ic.mandatum.10.11
+    surface: Indiam
+    sound:
+      italian-humanist: {ipa: ˈin.di.am, respell: EEN-dee-am}
+      classical: {ipa: ˈɪn.dɪ.am, respell: IN-di-am}
+  - id: ic.mandatum.10.12
+    surface: aut
+    sound:
+      italian-humanist: {ipa: aut, respell: owt}
+      classical: {ipa: aut, respell: owt}
+  - id: ic.mandatum.10.13
+    surface: versus
+    sound:
+      italian-humanist: {ipa: ˈver.sus, respell: VER-soos}
+      classical: {ipa: ˈwɛr.sʊs, respell: WER-sus}
+  - id: ic.mandatum.10.14
+    surface: aliam
+    sound:
+      italian-humanist: {ipa: ˈa.li.am, respell: A-lee-am}
+      classical: {ipa: ˈa.lɪ.am, respell: A-li-am}
+  - id: ic.mandatum.10.15
+    surface: quancunque
+    sound:
+      italian-humanist: {ipa: kwaŋ.ˈkuŋ.kwe, respell: kwang-KOONG-kwe}
+      classical: {ipa: kʷaŋ.ˈkʊŋ.kʷɛ, respell: kwang-KUNG-kwe}
+  - id: ic.mandatum.10.16
+    surface: partem
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈpar.tem, respell: PAR-tem}
+      classical: {ipa: ˈpar.tɛm, respell: PAR-tem}
+- id: ic.mandatum.11
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:mandatum.11
+  stanza: mandatum
+  stanza_title: Missionaries, and no one to sail west of the line without leave
+  text: que linea distet a qualibet insularum, que vulgariter nuncupantur de los Azores et Caboverde, centum leucis versus occidentem et meridiem, ut prefertur,
+  tokens:
+  - id: ic.mandatum.11.1
+    surface: que
+    sound:
+      italian-humanist: {ipa: kwɛ, respell: kwe}
+      classical: {ipa: kʷae, respell: kwai}
+  - id: ic.mandatum.11.2
+    surface: linea
+    sound:
+      italian-humanist: {ipa: ˈli.ne.a, respell: LEE-ne-a}
+      classical: {ipa: ˈliː.nɛ.a, respell: LEE-ne-a}
+  - id: ic.mandatum.11.3
+    surface: distet
+    sound:
+      italian-humanist: {ipa: ˈdis.tet, respell: DEES-tet}
+      classical: {ipa: ˈdɪs.tɛt, respell: DIS-tet}
+  - id: ic.mandatum.11.4
+    surface: a
+    sound:
+      italian-humanist: {ipa: a, respell: a}
+      classical: {ipa: aː, respell: aa}
+  - id: ic.mandatum.11.5
+    surface: qualibet
+    sound:
+      italian-humanist: {ipa: ˈkwa.li.bet, respell: KWA-lee-bet}
+      classical: {ipa: ˈkʷaː.lɪ.bɛt, respell: KWAA-li-bet}
+  - id: ic.mandatum.11.6
+    surface: insularum
+    punct: ','
+    sound:
+      italian-humanist: {ipa: in.su.ˈla.rum, respell: een-soo-LA-room}
+      classical: {ipa: iːn.sʊ.ˈlaː.rʊm, respell: een-su-LAA-rum}
+  - id: ic.mandatum.11.7
+    surface: que
+    sound:
+      italian-humanist: {ipa: kwɛ, respell: kwe}
+      classical: {ipa: kʷae, respell: kwai}
+  - id: ic.mandatum.11.8
+    surface: vulgariter
+    sound:
+      italian-humanist: {ipa: vul.ˈɡa.ri.ter, respell: vool-GA-ree-ter}
+      classical: {ipa: wʊl.ˈɡaː.rɪ.tɛr, respell: wul-GAA-ri-ter}
+  - id: ic.mandatum.11.9
+    surface: nuncupantur
+    sound:
+      italian-humanist: {ipa: nuŋ.ku.ˈpan.tur, respell: noong-koo-PAN-toor}
+      classical: {ipa: nʊŋ.kʊ.ˈpan.tʊr, respell: nung-ku-PAN-tur}
+  - id: ic.mandatum.11.10
+    surface: de
+    sound:
+      italian-humanist: {ipa: de, respell: de}
+      classical: {ipa: deː, respell: day}
+  - id: ic.mandatum.11.11
+    surface: los
+    sound:
+      italian-humanist: {ipa: los, respell: los}
+      classical: {ipa: lɔs, respell: los}
+  - id: ic.mandatum.11.12
+    surface: Azores
+    sound:
+      italian-humanist: {ipa: a.ˈdzo.res, respell: a-DZO-res}
+      classical: {ipa: a.ˈdzoː.reːs, respell: a-DZOH-rays}
+  - id: ic.mandatum.11.13
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.11.14
+    surface: Caboverde
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ka.bo.ˈver.de, respell: ka-bo-VER-de}
+      classical: {ipa: ka.bɔ.ˈwɛr.dɛ, respell: ka-bo-WER-de}
+  - id: ic.mandatum.11.15
+    surface: centum
+    sound:
+      italian-humanist: {ipa: ˈtʃen.tum, respell: CHEN-toom}
+      classical: {ipa: ˈkɛn.tʊm, respell: KEN-tum}
+  - id: ic.mandatum.11.16
+    surface: leucis
+    sound:
+      italian-humanist: {ipa: ˈleu.tʃis, respell: LEU-chees}
+      classical: {ipa: ˈleu.kiːs, respell: LEU-kees}
+  - id: ic.mandatum.11.17
+    surface: versus
+    sound:
+      italian-humanist: {ipa: ˈver.sus, respell: VER-soos}
+      classical: {ipa: ˈwɛr.sʊs, respell: WER-sus}
+  - id: ic.mandatum.11.18
+    surface: occidentem
+    sound:
+      italian-humanist: {ipa: ok.tʃi.ˈden.tem, respell: ok-chee-DEN-tem}
+      classical: {ipa: ɔk.kɪ.ˈdɛn.tɛm, respell: ok-ki-DEN-tem}
+  - id: ic.mandatum.11.19
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.11.20
+    surface: meridiem
+    punct: ','
+    sound:
+      italian-humanist: {ipa: me.ˈri.di.em, respell: me-REE-dee-em}
+      classical: {ipa: mɛ.ˈriː.dɪ.ɛm, respell: me-REE-di-em}
+  - id: ic.mandatum.11.21
+    surface: ut
+    sound:
+      italian-humanist: {ipa: ut, respell: oot}
+      classical: {ipa: ʊt, respell: ut}
+  - id: ic.mandatum.11.22
+    surface: prefertur
+    punct: ','
+    sound:
+      italian-humanist: {ipa: prɛ.ˈfer.tur, respell: pre-FER-toor}
+      classical: {ipa: prae.ˈfɛr.tʊr, respell: prai-FER-tur}
+- id: ic.mandatum.12
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:mandatum.12
+  stanza: mandatum
+  stanza_title: Missionaries, and no one to sail west of the line without leave
+  text: pro mercibus habendis vel quavis alia de causa, accedere presumant
+  tokens:
+  - id: ic.mandatum.12.1
+    surface: pro
+    sound:
+      italian-humanist: {ipa: pro, respell: pro}
+      classical: {ipa: proː, respell: proh}
+  - id: ic.mandatum.12.2
+    surface: mercibus
+    sound:
+      italian-humanist: {ipa: ˈmer.tʃi.bus, respell: MER-chee-boos}
+      classical: {ipa: ˈmɛr.kɪ.bʊs, respell: MER-ki-bus}
+  - id: ic.mandatum.12.3
+    surface: habendis
+    sound:
+      italian-humanist: {ipa: a.ˈben.dis, respell: a-BEN-dees}
+      classical: {ipa: ha.ˈbɛn.diːs, respell: ha-BEN-dees}
+  - id: ic.mandatum.12.4
+    surface: vel
+    sound:
+      italian-humanist: {ipa: vel, respell: vel}
+      classical: {ipa: wɛl, respell: wel}
+  - id: ic.mandatum.12.5
+    surface: quavis
+    sound:
+      italian-humanist: {ipa: ˈkwa.vis, respell: KWA-vees}
+      classical: {ipa: ˈkʷaː.wiːs, respell: KWAA-wees}
+  - id: ic.mandatum.12.6
+    surface: alia
+    sound:
+      italian-humanist: {ipa: ˈa.li.a, respell: A-lee-a}
+      classical: {ipa: ˈa.lɪ.a, respell: A-li-a}
+  - id: ic.mandatum.12.7
+    surface: de
+    sound:
+      italian-humanist: {ipa: de, respell: de}
+      classical: {ipa: deː, respell: day}
+  - id: ic.mandatum.12.8
+    surface: causa
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈkau.za, respell: KOW-za}
+      classical: {ipa: ˈkau.saː, respell: KOW-saa}
+  - id: ic.mandatum.12.9
+    surface: accedere
+    sound:
+      italian-humanist: {ipa: ak.ˈtʃe.de.re, respell: ak-CHE-de-re}
+      classical: {ipa: ak.ˈkeː.dɛ.rɛ, respell: ak-KAY-de-re}
+  - id: ic.mandatum.12.10
+    surface: presumant
+    sound:
+      italian-humanist: {ipa: prɛ.ˈzu.mant, respell: pre-ZOO-mant}
+      classical: {ipa: prae.ˈsuː.mant, respell: prai-SOO-mant}
+- id: ic.mandatum.13
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:mandatum.13
+  stanza: mandatum
+  stanza_title: Missionaries, and no one to sail west of the line without leave
+  text: absque vestra ac heredum et successorum vestrorum predictorum licentia speciali,
+  tokens:
+  - id: ic.mandatum.13.1
+    surface: absque
+    sound:
+      italian-humanist: {ipa: ˈabs.kwe, respell: ABS-kwe}
+      classical: {ipa: ˈabs.kʷɛ, respell: ABS-kwe}
+  - id: ic.mandatum.13.2
+    surface: vestra
+    sound:
+      italian-humanist: {ipa: ˈves.tra, respell: VES-tra}
+      classical: {ipa: ˈwɛs.traː, respell: WES-traa}
+  - id: ic.mandatum.13.3
+    surface: ac
+    sound:
+      italian-humanist: {ipa: ak, respell: ak}
+      classical: {ipa: ak, respell: ak}
+  - id: ic.mandatum.13.4
+    surface: heredum
+    sound:
+      italian-humanist: {ipa: e.ˈre.dum, respell: e-RE-doom}
+      classical: {ipa: heː.ˈreː.dʊm, respell: hay-RAY-dum}
+  - id: ic.mandatum.13.5
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.13.6
+    surface: successorum
+    sound:
+      italian-humanist: {ipa: suk.tʃes.ˈso.rum, respell: sook-ches-SO-room}
+      classical: {ipa: sʊk.kɛs.ˈsoː.rʊm, respell: suk-kes-SOH-rum}
+  - id: ic.mandatum.13.7
+    surface: vestrorum
+    sound:
+      italian-humanist: {ipa: ves.ˈtro.rum, respell: ves-TRO-room}
+      classical: {ipa: wɛs.ˈtroː.rʊm, respell: wes-TROH-rum}
+  - id: ic.mandatum.13.8
+    surface: predictorum
+    sound:
+      italian-humanist: {ipa: prɛ.dik.ˈto.rum, respell: pre-deek-TO-room}
+      classical: {ipa: prae.dɪk.ˈtoː.rʊm, respell: prai-dik-TOH-rum}
+  - id: ic.mandatum.13.9
+    surface: licentia
+    sound:
+      italian-humanist: {ipa: li.ˈtʃen.tsi.a, respell: lee-CHEN-tsee-a}
+      classical: {ipa: lɪ.ˈkɛn.tɪ.aː, respell: li-KEN-ti-aa}
+  - id: ic.mandatum.13.10
+    surface: speciali
+    punct: ','
+    sound:
+      italian-humanist: {ipa: spe.tʃi.ˈa.li, respell: spe-chee-A-lee}
+      classical: {ipa: spɛ.kɪ.ˈaː.liː, respell: spe-ki-AA-lee}
+- id: ic.mandatum.14
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:mandatum.14
+  stanza: mandatum
+  stanza_title: Missionaries, and no one to sail west of the line without leave
+  text: non obstantibus constitutionibus et ordinationibus apostolicis, ceterisque contrariis quibuscunque,
+  tokens:
+  - id: ic.mandatum.14.1
+    surface: non
+    sound:
+      italian-humanist: {ipa: non, respell: non}
+      classical: {ipa: noːn, respell: nohn}
+  - id: ic.mandatum.14.2
+    surface: obstantibus
+    sound:
+      italian-humanist: {ipa: obs.ˈtan.ti.bus, respell: obs-TAN-tee-boos}
+      classical: {ipa: ɔbs.ˈtan.tɪ.bʊs, respell: obs-TAN-ti-bus}
+  - id: ic.mandatum.14.3
+    surface: constitutionibus
+    sound:
+      italian-humanist: {ipa: kons.ti.tu.tsi.ˈo.ni.bus, respell: kons-tee-too-tsee-O-nee-boos}
+      classical: {ipa: koːns.tɪ.tuː.tɪ.ˈoː.nɪ.bʊs, respell: kohns-ti-too-ti-OH-ni-bus}
+  - id: ic.mandatum.14.4
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.14.5
+    surface: ordinationibus
+    sound:
+      italian-humanist: {ipa: or.di.na.tsi.ˈo.ni.bus, respell: or-dee-na-tsee-O-nee-boos}
+      classical: {ipa: oːr.dɪ.naː.tɪ.ˈoː.nɪ.bʊs, respell: ohr-di-naa-ti-OH-ni-bus}
+  - id: ic.mandatum.14.6
+    surface: apostolicis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: a.pos.ˈto.li.tʃis, respell: a-pos-TO-lee-chees}
+      classical: {ipa: a.pɔs.ˈtɔ.lɪ.kiːs, respell: a-pos-TO-li-kees}
+  - id: ic.mandatum.14.7
+    surface: ceterisque
+    sound:
+      italian-humanist: {ipa: tʃe.te.ˈris.kwe, respell: che-te-REES-kwe}
+      classical: {ipa: keː.tɛ.ˈriːs.kʷɛ, respell: kay-te-REES-kwe}
+  - id: ic.mandatum.14.8
+    surface: contrariis
+    sound:
+      italian-humanist: {ipa: kon.ˈtra.ri.is, respell: kon-TRA-ree-ees}
+      classical: {ipa: kɔn.ˈtraː.rɪ.iːs, respell: kon-TRAA-ri-ees}
+  - id: ic.mandatum.14.9
+    surface: quibuscunque
+    punct: ','
+    sound:
+      italian-humanist: {ipa: kwi.bus.ˈkuŋ.kwe, respell: kwee-boos-KOONG-kwe}
+      classical: {ipa: kʷɪ.bʊs.ˈkʊŋ.kʷɛ, respell: kwi-bus-KUNG-kwe}
+- id: ic.mandatum.15
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:mandatum.15
+  stanza: mandatum
+  stanza_title: Missionaries, and no one to sail west of the line without leave
+  text: in Illo a quo imperia et dominationes ac bona cuncta procedunt confidentes,
+  tokens:
+  - id: ic.mandatum.15.1
+    surface: in
+    sound:
+      italian-humanist: {ipa: in, respell: een}
+      classical: {ipa: ɪn, respell: in}
+  - id: ic.mandatum.15.2
+    surface: Illo
+    sound:
+      italian-humanist: {ipa: ˈil.lo, respell: EEL-lo}
+      classical: {ipa: ˈɪl.loː, respell: IL-loh}
+  - id: ic.mandatum.15.3
+    surface: a
+    sound:
+      italian-humanist: {ipa: a, respell: a}
+      classical: {ipa: aː, respell: aa}
+  - id: ic.mandatum.15.4
+    surface: quo
+    sound:
+      italian-humanist: {ipa: kwo, respell: kwo}
+      classical: {ipa: kʷoː, respell: kwoh}
+  - id: ic.mandatum.15.5
+    surface: imperia
+    sound:
+      italian-humanist: {ipa: im.ˈpe.ri.a, respell: eem-PE-ree-a}
+      classical: {ipa: ɪm.ˈpɛ.rɪ.a, respell: im-PE-ri-a}
+  - id: ic.mandatum.15.6
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.15.7
+    surface: dominationes
+    sound:
+      italian-humanist: {ipa: do.mi.na.tsi.ˈo.nes, respell: do-mee-na-tsee-O-nes}
+      classical: {ipa: dɔ.mɪ.naː.tɪ.ˈoː.neːs, respell: do-mi-naa-ti-OH-nays}
+  - id: ic.mandatum.15.8
+    surface: ac
+    sound:
+      italian-humanist: {ipa: ak, respell: ak}
+      classical: {ipa: ak, respell: ak}
+  - id: ic.mandatum.15.9
+    surface: bona
+    sound:
+      italian-humanist: {ipa: ˈbo.na, respell: BO-na}
+      classical: {ipa: ˈbɔ.na, respell: BO-na}
+  - id: ic.mandatum.15.10
+    surface: cuncta
+    sound:
+      italian-humanist: {ipa: ˈkuŋk.ta, respell: KOONGK-ta}
+      classical: {ipa: ˈkuːŋk.ta, respell: KOONGK-ta}
+  - id: ic.mandatum.15.11
+    surface: procedunt
+    sound:
+      italian-humanist: {ipa: pro.ˈtʃe.dunt, respell: pro-CHE-doont}
+      classical: {ipa: proː.ˈkeː.dʊnt, respell: proh-KAY-dunt}
+  - id: ic.mandatum.15.12
+    surface: confidentes
+    punct: ','
+    sound:
+      italian-humanist: {ipa: kon.fi.ˈden.tes, respell: kon-fee-DEN-tes}
+      classical: {ipa: koːn.fiː.ˈdɛn.teːs, respell: kohn-fee-DEN-tays}
+- id: ic.mandatum.16
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:mandatum.16
+  stanza: mandatum
+  stanza_title: Missionaries, and no one to sail west of the line without leave
+  text: quod, dirigente Domino actus vestros, si hujusmodi sanctum et laudabile propositum prosequamini,
+  tokens:
+  - id: ic.mandatum.16.1
+    surface: quod
+    punct: ','
+    sound:
+      italian-humanist: {ipa: kwod, respell: kwod}
+      classical: {ipa: kʷɔd, respell: kwod}
+  - id: ic.mandatum.16.2
+    surface: dirigente
+    sound:
+      italian-humanist: {ipa: di.ri.ˈdʒen.te, respell: dee-ree-JEN-te}
+      classical: {ipa: diː.rɪ.ˈɡɛn.tɛ, respell: dee-ri-GEN-te}
+  - id: ic.mandatum.16.3
+    surface: Domino
+    sound:
+      italian-humanist: {ipa: ˈdo.mi.no, respell: DO-mee-no}
+      classical: {ipa: ˈdɔ.mɪ.noː, respell: DO-mi-noh}
+  - id: ic.mandatum.16.4
+    surface: actus
+    sound:
+      italian-humanist: {ipa: ˈak.tus, respell: AK-toos}
+      classical: {ipa: ˈaːk.tuːs, respell: AAK-toos}
+  - id: ic.mandatum.16.5
+    surface: vestros
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈves.tros, respell: VES-tros}
+      classical: {ipa: ˈwɛs.troːs, respell: WES-trohs}
+  - id: ic.mandatum.16.6
+    surface: si
+    sound:
+      italian-humanist: {ipa: si, respell: see}
+      classical: {ipa: siː, respell: see}
+  - id: ic.mandatum.16.7
+    surface: hujusmodi
+    sound:
+      italian-humanist: {ipa: u.ˈjus.mo.di, respell: oo-YOOS-mo-dee}
+      classical: {ipa: hʊ.ˈjʊs.mɔ.diː, respell: hu-YUS-mo-dee}
+  - id: ic.mandatum.16.8
+    surface: sanctum
+    sound:
+      italian-humanist: {ipa: ˈsaŋk.tum, respell: SANGK-toom}
+      classical: {ipa: ˈsaːŋk.tʊm, respell: SAANGK-tum}
+  - id: ic.mandatum.16.9
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.16.10
+    surface: laudabile
+    sound:
+      italian-humanist: {ipa: lau.ˈda.bi.le, respell: low-DA-bee-le}
+      classical: {ipa: lau.ˈdaː.bɪ.lɛ, respell: low-DAA-bi-le}
+  - id: ic.mandatum.16.11
+    surface: propositum
+    sound:
+      italian-humanist: {ipa: pro.ˈpo.zi.tum, respell: pro-PO-zee-toom}
+      classical: {ipa: proː.ˈpɔ.sɪ.tʊm, respell: proh-PO-si-tum}
+  - id: ic.mandatum.16.12
+    surface: prosequamini
+    punct: ','
+    sound:
+      italian-humanist: {ipa: pro.ze.ˈkwa.mi.ni, respell: pro-ze-KWA-mee-nee}
+      classical: {ipa: proː.sɛ.ˈkʷaː.mɪ.niː, respell: proh-se-KWAA-mi-nee}
+- id: ic.mandatum.17
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:mandatum.17
+  stanza: mandatum
+  stanza_title: Missionaries, and no one to sail west of the line without leave
+  text: brevi tempore, cum felicitate et gloria totius populi Christiani, vestri labores et conatus exitum felicissimum consequentur.
+  tokens:
+  - id: ic.mandatum.17.1
+    surface: brevi
+    sound:
+      italian-humanist: {ipa: ˈbre.vi, respell: BRE-vee}
+      classical: {ipa: ˈbrɛ.wiː, respell: BRE-wee}
+  - id: ic.mandatum.17.2
+    surface: tempore
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈtem.po.re, respell: TEM-po-re}
+      classical: {ipa: ˈtɛm.pɔ.rɛ, respell: TEM-po-re}
+  - id: ic.mandatum.17.3
+    surface: cum
+    sound:
+      italian-humanist: {ipa: kum, respell: koom}
+      classical: {ipa: kʊm, respell: kum}
+  - id: ic.mandatum.17.4
+    surface: felicitate
+    sound:
+      italian-humanist: {ipa: fe.li.tʃi.ˈta.te, respell: fe-lee-chee-TA-te}
+      classical: {ipa: feː.liː.kɪ.ˈtaː.tɛ, respell: fay-lee-ki-TAA-te}
+  - id: ic.mandatum.17.5
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.17.6
+    surface: gloria
+    sound:
+      italian-humanist: {ipa: ˈɡlo.ri.a, respell: GLO-ree-a}
+      classical: {ipa: ˈɡloː.rɪ.aː, respell: GLOH-ri-aa}
+  - id: ic.mandatum.17.7
+    surface: totius
+    sound:
+      italian-humanist: {ipa: to.ˈtsi.us, respell: to-TSEE-oos}
+      classical: {ipa: toː.ˈtiː.ʊs, respell: toh-TEE-us}
+  - id: ic.mandatum.17.8
+    surface: populi
+    sound:
+      italian-humanist: {ipa: ˈpo.pu.li, respell: PO-poo-lee}
+      classical: {ipa: ˈpɔ.pʊ.liː, respell: PO-pu-lee}
+  - id: ic.mandatum.17.9
+    surface: Christiani
+    punct: ','
+    sound:
+      italian-humanist: {ipa: kris.ti.ˈa.ni, respell: krees-tee-A-nee}
+      classical: {ipa: kʰriːs.tɪ.ˈaː.niː, respell: kʰrees-ti-AA-nee}
+  - id: ic.mandatum.17.10
+    surface: vestri
+    sound:
+      italian-humanist: {ipa: ˈves.tri, respell: VES-tree}
+      classical: {ipa: ˈwɛs.triː, respell: WES-tree}
+  - id: ic.mandatum.17.11
+    surface: labores
+    sound:
+      italian-humanist: {ipa: la.ˈbo.res, respell: la-BO-res}
+      classical: {ipa: la.ˈboː.reːs, respell: la-BOH-rays}
+  - id: ic.mandatum.17.12
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.mandatum.17.13
+    surface: conatus
+    sound:
+      italian-humanist: {ipa: ko.ˈna.tus, respell: ko-NA-toos}
+      classical: {ipa: koː.ˈnaː.tuːs, respell: koh-NAA-toos}
+  - id: ic.mandatum.17.14
+    surface: exitum
+    sound:
+      italian-humanist: {ipa: ˈek.si.tum, respell: EK-see-toom}
+      classical: {ipa: ˈɛk.sɪ.tʊm, respell: EK-si-tum}
+  - id: ic.mandatum.17.15
+    surface: felicissimum
+    sound:
+      italian-humanist: {ipa: fe.li.ˈtʃis.si.mum, respell: fe-lee-CHEES-see-moom}
+      classical: {ipa: feː.liː.ˈkɪs.sɪ.mʊm, respell: fay-lee-KIS-si-mum}
+  - id: ic.mandatum.17.16
+    surface: consequentur
+    punct: .
+    sound:
+      italian-humanist: {ipa: kon.se.ˈkwen.tur, respell: kon-se-KWEN-toor}
+      classical: {ipa: koːn.sɛ.ˈkʷɛn.tʊr, respell: kohn-se-KWEN-tur}
+- id: ic.transumpta.1
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:transumpta.1
+  stanza: transumpta
+  stanza_title: Copies to be believed as the original
+  text: Verum, quia difficile foret presentes litteras ad singula queque loca in quibus expediens fuerit deferri,
+  tokens:
+  - id: ic.transumpta.1.1
+    surface: Verum
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈve.rum, respell: VE-room}
+      classical: {ipa: ˈweː.rʊm, respell: WAY-rum}
+  - id: ic.transumpta.1.2
+    surface: quia
+    sound:
+      italian-humanist: {ipa: ˈkwi.a, respell: KWEE-a}
+      classical: {ipa: ˈkʷɪ.a, respell: KWI-a}
+  - id: ic.transumpta.1.3
+    surface: difficile
+    sound:
+      italian-humanist: {ipa: dif.ˈfi.tʃi.le, respell: deef-FEE-chee-le}
+      classical: {ipa: dɪf.ˈfɪ.kɪ.lɛ, respell: dif-FI-ki-le}
+  - id: ic.transumpta.1.4
+    surface: foret
+    sound:
+      italian-humanist: {ipa: ˈfo.ret, respell: FO-ret}
+      classical: {ipa: ˈfɔ.rɛt, respell: FO-ret}
+  - id: ic.transumpta.1.5
+    surface: presentes
+    sound:
+      italian-humanist: {ipa: prɛ.ˈzen.tes, respell: pre-ZEN-tes}
+      classical: {ipa: prae.ˈsɛn.teːs, respell: prai-SEN-tays}
+  - id: ic.transumpta.1.6
+    surface: litteras
+    sound:
+      italian-humanist: {ipa: ˈlit.te.ras, respell: LEET-te-ras}
+      classical: {ipa: ˈlɪt.tɛ.raːs, respell: LIT-te-raas}
+  - id: ic.transumpta.1.7
+    surface: ad
+    sound:
+      italian-humanist: {ipa: ad, respell: ad}
+      classical: {ipa: ad, respell: ad}
+  - id: ic.transumpta.1.8
+    surface: singula
+    sound:
+      italian-humanist: {ipa: ˈsiŋ.ɡu.la, respell: SEENG-goo-la}
+      classical: {ipa: ˈsɪŋ.ɡʊ.la, respell: SING-gu-la}
+  - id: ic.transumpta.1.9
+    surface: queque
+    sound:
+      italian-humanist: {ipa: ˈkwɛ.kwe, respell: KWE-kwe}
+      classical: {ipa: ˈkʷae.kʷɛ, respell: KWAI-kwe}
+  - id: ic.transumpta.1.10
+    surface: loca
+    sound:
+      italian-humanist: {ipa: ˈlo.ka, respell: LO-ka}
+      classical: {ipa: ˈlɔ.ka, respell: LO-ka}
+  - id: ic.transumpta.1.11
+    surface: in
+    sound:
+      italian-humanist: {ipa: in, respell: een}
+      classical: {ipa: ɪn, respell: in}
+  - id: ic.transumpta.1.12
+    surface: quibus
+    sound:
+      italian-humanist: {ipa: ˈkwi.bus, respell: KWEE-boos}
+      classical: {ipa: ˈkʷɪ.bʊs, respell: KWI-bus}
+  - id: ic.transumpta.1.13
+    surface: expediens
+    sound:
+      italian-humanist: {ipa: eks.ˈpe.di.ens, respell: eks-PE-dee-ens}
+      classical: {ipa: ɛks.ˈpɛ.dɪ.eːns, respell: eks-PE-di-ayns}
+  - id: ic.transumpta.1.14
+    surface: fuerit
+    sound:
+      italian-humanist: {ipa: ˈfu.e.rit, respell: FOO-e-reet}
+      classical: {ipa: ˈfʊ.ɛ.rɪt, respell: FU-e-rit}
+  - id: ic.transumpta.1.15
+    surface: deferri
+    punct: ','
+    sound:
+      italian-humanist: {ipa: de.ˈfer.ri, respell: de-FER-ree}
+      classical: {ipa: deː.ˈfɛr.riː, respell: day-FER-ree}
+- id: ic.transumpta.2
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:transumpta.2
+  stanza: transumpta
+  stanza_title: Copies to be believed as the original
+  text: volumus, ac motu et scientia similibus decernimus,
+  tokens:
+  - id: ic.transumpta.2.1
+    surface: volumus
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ˈvo.lu.mus, respell: VO-loo-moos}
+      classical: {ipa: ˈwɔ.lʊ.mʊs, respell: WO-lu-mus}
+  - id: ic.transumpta.2.2
+    surface: ac
+    sound:
+      italian-humanist: {ipa: ak, respell: ak}
+      classical: {ipa: ak, respell: ak}
+  - id: ic.transumpta.2.3
+    surface: motu
+    sound:
+      italian-humanist: {ipa: ˈmo.tu, respell: MO-too}
+      classical: {ipa: ˈmoː.tuː, respell: MOH-too}
+  - id: ic.transumpta.2.4
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.transumpta.2.5
+    surface: scientia
+    sound:
+      italian-humanist: {ipa: ʃi.ˈen.tsi.a, respell: shee-EN-tsee-a}
+      classical: {ipa: skɪ.ˈɛn.tɪ.aː, respell: ski-EN-ti-aa}
+  - id: ic.transumpta.2.6
+    surface: similibus
+    sound:
+      italian-humanist: {ipa: si.ˈmi.li.bus, respell: see-MEE-lee-boos}
+      classical: {ipa: sɪ.ˈmɪ.lɪ.bʊs, respell: si-MI-li-bus}
+  - id: ic.transumpta.2.7
+    surface: decernimus
+    punct: ','
+    sound:
+      italian-humanist: {ipa: de.ˈtʃer.ni.mus, respell: de-CHER-nee-moos}
+      classical: {ipa: deː.ˈkɛr.nɪ.mʊs, respell: day-KER-ni-mus}
+- id: ic.transumpta.3
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:transumpta.3
+  stanza: transumpta
+  stanza_title: Copies to be believed as the original
+  text: quod illarum transumptis manu publici notarii inde rogati subscriptis,
+  tokens:
+  - id: ic.transumpta.3.1
+    surface: quod
+    sound:
+      italian-humanist: {ipa: kwod, respell: kwod}
+      classical: {ipa: kʷɔd, respell: kwod}
+  - id: ic.transumpta.3.2
+    surface: illarum
+    sound:
+      italian-humanist: {ipa: il.ˈla.rum, respell: eel-LA-room}
+      classical: {ipa: ɪl.ˈlaː.rʊm, respell: il-LAA-rum}
+  - id: ic.transumpta.3.3
+    surface: transumptis
+    sound:
+      italian-humanist: {ipa: tran.ˈsump.tis, respell: tran-SOOMP-tees}
+      classical: {ipa: traːn.ˈsuːmp.tiːs, respell: traan-SOOMP-tees}
+  - id: ic.transumpta.3.4
+    surface: manu
+    sound:
+      italian-humanist: {ipa: ˈma.nu, respell: MA-noo}
+      classical: {ipa: ˈma.nuː, respell: MA-noo}
+  - id: ic.transumpta.3.5
+    surface: publici
+    sound:
+      italian-humanist: {ipa: ˈpu.bli.tʃi, respell: POO-blee-chee}
+      classical: {ipa: ˈpuː.blɪ.kiː, respell: POO-bli-kee}
+  - id: ic.transumpta.3.6
+    surface: notarii
+    sound:
+      italian-humanist: {ipa: no.ˈta.ri.i, respell: no-TA-ree-ee}
+      classical: {ipa: nɔ.ˈtaː.rɪ.iː, respell: no-TAA-ri-ee}
+  - id: ic.transumpta.3.7
+    surface: inde
+    sound:
+      italian-humanist: {ipa: ˈin.de, respell: EEN-de}
+      classical: {ipa: ˈɪn.dɛ, respell: IN-de}
+  - id: ic.transumpta.3.8
+    surface: rogati
+    sound:
+      italian-humanist: {ipa: ro.ˈɡa.ti, respell: ro-GA-tee}
+      classical: {ipa: rɔ.ˈɡaː.tiː, respell: ro-GAA-tee}
+  - id: ic.transumpta.3.9
+    surface: subscriptis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: subs.ˈkrip.tis, respell: soobs-KREEP-tees}
+      classical: {ipa: sʊbs.ˈkriːp.tiːs, respell: subs-KREEP-tees}
+- id: ic.transumpta.4
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:transumpta.4
+  stanza: transumpta
+  stanza_title: Copies to be believed as the original
+  text: et sigillo alicujus persone in ecclesiastica dignitate constitute, seu curie ecclesiastice munitis,
+  tokens:
+  - id: ic.transumpta.4.1
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.transumpta.4.2
+    surface: sigillo
+    sound:
+      italian-humanist: {ipa: si.ˈdʒil.lo, respell: see-JEEL-lo}
+      classical: {ipa: sɪ.ˈɡɪl.loː, respell: si-GIL-loh}
+  - id: ic.transumpta.4.3
+    surface: alicujus
+    sound:
+      italian-humanist: {ipa: a.ˈli.ku.jus, respell: a-LEE-koo-yoos}
+      classical: {ipa: a.ˈlɪ.kʊ.jʊs, respell: a-LI-ku-yus}
+  - id: ic.transumpta.4.4
+    surface: persone
+    sound:
+      italian-humanist: {ipa: per.ˈso.nɛ, respell: per-SO-ne}
+      classical: {ipa: pɛr.ˈsoː.nae, respell: per-SOH-nai}
+  - id: ic.transumpta.4.5
+    surface: in
+    sound:
+      italian-humanist: {ipa: in, respell: een}
+      classical: {ipa: ɪn, respell: in}
+  - id: ic.transumpta.4.6
+    surface: ecclesiastica
+    sound:
+      italian-humanist: {ipa: ek.kle.zi.ˈas.ti.ka, respell: ek-kle-zee-AS-tee-ka}
+      classical: {ipa: ɛk.kleː.sɪ.ˈas.tɪ.kaː, respell: ek-klay-si-AS-ti-kaa}
+  - id: ic.transumpta.4.7
+    surface: dignitate
+    sound:
+      italian-humanist: {ipa: di.ɲi.ˈta.te, respell: dee-nyee-TA-te}
+      classical: {ipa: diːɡ.nɪ.ˈtaː.tɛ, respell: deeg-ni-TAA-te}
+  - id: ic.transumpta.4.8
+    surface: constitute
+    punct: ','
+    sound:
+      italian-humanist: {ipa: kons.ti.ˈtu.tɛ, respell: kons-tee-TOO-te}
+      classical: {ipa: koːns.tɪ.ˈtuː.tae, respell: kohns-ti-TOO-tai}
+  - id: ic.transumpta.4.9
+    surface: seu
+    sound:
+      italian-humanist: {ipa: seu, respell: seu}
+      classical: {ipa: seu, respell: seu}
+  - id: ic.transumpta.4.10
+    surface: curie
+    sound:
+      italian-humanist: {ipa: ˈku.ri.ɛ, respell: KOO-ree-e}
+      classical: {ipa: ˈkuː.rɪ.ae, respell: KOO-ri-ai}
+  - id: ic.transumpta.4.11
+    surface: ecclesiastice
+    sound:
+      italian-humanist: {ipa: ek.kle.zi.ˈas.ti.tʃɛ, respell: ek-kle-zee-AS-tee-che}
+      classical: {ipa: ɛk.kleː.sɪ.ˈas.tɪ.kae, respell: ek-klay-si-AS-ti-kai}
+  - id: ic.transumpta.4.12
+    surface: munitis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: mu.ˈni.tis, respell: moo-NEE-tees}
+      classical: {ipa: muː.ˈniː.tiːs, respell: moo-NEE-tees}
+- id: ic.transumpta.5
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:transumpta.5
+  stanza: transumpta
+  stanza_title: Copies to be believed as the original
+  text: ea prorsus fides in judicio et extra ac alias ubilibet adhibeatur, que presentibus adhiberetur, si essent exhibite vel ostense.
+  tokens:
+  - id: ic.transumpta.5.1
+    surface: ea
+    sound:
+      italian-humanist: {ipa: ˈe.a, respell: E-a}
+      classical: {ipa: ˈɛ.a, respell: E-a}
+  - id: ic.transumpta.5.2
+    surface: prorsus
+    sound:
+      italian-humanist: {ipa: ˈpror.sus, respell: PROR-soos}
+      classical: {ipa: ˈproːr.sʊs, respell: PROHR-sus}
+  - id: ic.transumpta.5.3
+    surface: fides
+    sound:
+      italian-humanist: {ipa: ˈfi.des, respell: FEE-des}
+      classical: {ipa: ˈfɪ.deːs, respell: FI-days}
+  - id: ic.transumpta.5.4
+    surface: in
+    sound:
+      italian-humanist: {ipa: in, respell: een}
+      classical: {ipa: ɪn, respell: in}
+  - id: ic.transumpta.5.5
+    surface: judicio
+    sound:
+      italian-humanist: {ipa: ju.ˈdi.tʃi.o, respell: yoo-DEE-chee-o}
+      classical: {ipa: juː.ˈdɪ.kɪ.oː, respell: yoo-DI-ki-oh}
+  - id: ic.transumpta.5.6
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.transumpta.5.7
+    surface: extra
+    sound:
+      italian-humanist: {ipa: ˈeks.tra, respell: EKS-tra}
+      classical: {ipa: ˈɛks.traː, respell: EKS-traa}
+  - id: ic.transumpta.5.8
+    surface: ac
+    sound:
+      italian-humanist: {ipa: ak, respell: ak}
+      classical: {ipa: ak, respell: ak}
+  - id: ic.transumpta.5.9
+    surface: alias
+    sound:
+      italian-humanist: {ipa: ˈa.li.as, respell: A-lee-as}
+      classical: {ipa: ˈa.lɪ.aːs, respell: A-li-aas}
+  - id: ic.transumpta.5.10
+    surface: ubilibet
+    sound:
+      italian-humanist: {ipa: u.ˈbi.li.bet, respell: oo-BEE-lee-bet}
+      classical: {ipa: ʊ.ˈbɪ.lɪ.bɛt, respell: u-BI-li-bet}
+  - id: ic.transumpta.5.11
+    surface: adhibeatur
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ad.i.be.ˈa.tur, respell: ad-ee-be-A-toor}
+      classical: {ipa: ad.hɪ.bɛ.ˈaː.tʊr, respell: ad-hi-be-AA-tur}
+  - id: ic.transumpta.5.12
+    surface: que
+    sound:
+      italian-humanist: {ipa: kwɛ, respell: kwe}
+      classical: {ipa: kʷae, respell: kwai}
+  - id: ic.transumpta.5.13
+    surface: presentibus
+    sound:
+      italian-humanist: {ipa: prɛ.ˈzen.ti.bus, respell: pre-ZEN-tee-boos}
+      classical: {ipa: prae.ˈsɛn.tɪ.bʊs, respell: prai-SEN-ti-bus}
+  - id: ic.transumpta.5.14
+    surface: adhiberetur
+    punct: ','
+    sound:
+      italian-humanist: {ipa: ad.i.be.ˈre.tur, respell: ad-ee-be-RE-toor}
+      classical: {ipa: ad.hɪ.beː.ˈreː.tʊr, respell: ad-hi-bay-RAY-tur}
+  - id: ic.transumpta.5.15
+    surface: si
+    sound:
+      italian-humanist: {ipa: si, respell: see}
+      classical: {ipa: siː, respell: see}
+  - id: ic.transumpta.5.16
+    surface: essent
+    sound:
+      italian-humanist: {ipa: ˈes.sent, respell: ES-sent}
+      classical: {ipa: ˈɛs.sɛnt, respell: ES-sent}
+  - id: ic.transumpta.5.17
+    surface: exhibite
+    sound:
+      italian-humanist: {ipa: eks.ˈi.bi.tɛ, respell: eks-EE-bee-te}
+      classical: {ipa: ɛks.ˈhɪ.bɪ.tae, respell: eks-HI-bi-tai}
+  - id: ic.transumpta.5.18
+    surface: vel
+    sound:
+      italian-humanist: {ipa: vel, respell: vel}
+      classical: {ipa: wɛl, respell: wel}
+  - id: ic.transumpta.5.19
+    surface: ostense
+    punct: .
+    sound:
+      italian-humanist: {ipa: os.ˈten.sɛ, respell: os-TEN-se}
+      classical: {ipa: ɔs.ˈteːn.sae, respell: os-TAYN-sai}
+- id: ic.sanctio.1
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:sanctio.1
+  stanza: sanctio
+  stanza_title: The penalty clause
+  text: Nulli ergo omnino hominum liceat hanc paginam nostre commendationis, ortationis, requisitionis, donationis,
+  tokens:
+  - id: ic.sanctio.1.1
+    surface: Nulli
+    sound:
+      italian-humanist: {ipa: ˈnul.li, respell: NOOL-lee}
+      classical: {ipa: ˈnuːl.liː, respell: NOOL-lee}
+  - id: ic.sanctio.1.2
+    surface: ergo
+    sound:
+      italian-humanist: {ipa: ˈer.ɡo, respell: ER-go}
+      classical: {ipa: ˈɛr.ɡoː, respell: ER-goh}
+  - id: ic.sanctio.1.3
+    surface: omnino
+    sound:
+      italian-humanist: {ipa: om.ˈni.no, respell: om-NEE-no}
+      classical: {ipa: ɔm.ˈniː.noː, respell: om-NEE-noh}
+  - id: ic.sanctio.1.4
+    surface: hominum
+    sound:
+      italian-humanist: {ipa: ˈo.mi.num, respell: O-mee-noom}
+      classical: {ipa: ˈhɔ.mɪ.nʊm, respell: HO-mi-num}
+  - id: ic.sanctio.1.5
+    surface: liceat
+    sound:
+      italian-humanist: {ipa: ˈli.tʃe.at, respell: LEE-che-at}
+      classical: {ipa: ˈlɪ.kɛ.at, respell: LI-ke-at}
+  - id: ic.sanctio.1.6
+    surface: hanc
+    sound:
+      italian-humanist: {ipa: aŋk, respell: angk}
+      classical: {ipa: haŋk, respell: hangk}
+  - id: ic.sanctio.1.7
+    surface: paginam
+    sound:
+      italian-humanist: {ipa: ˈpa.dʒi.nam, respell: PA-jee-nam}
+      classical: {ipa: ˈpaː.ɡɪ.nam, respell: PAA-gi-nam}
+  - id: ic.sanctio.1.8
+    surface: nostre
+    sound:
+      italian-humanist: {ipa: ˈnos.trɛ, respell: NOS-tre}
+      classical: {ipa: ˈnɔs.trae, respell: NOS-trai}
+  - id: ic.sanctio.1.9
+    surface: commendationis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: kom.men.da.tsi.ˈo.nis, respell: kom-men-da-tsee-O-nees}
+      classical: {ipa: kɔm.mɛn.daː.tɪ.ˈoː.nɪs, respell: kom-men-daa-ti-OH-nis}
+  - id: ic.sanctio.1.10
+    surface: ortationis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: or.ta.tsi.ˈo.nis, respell: or-ta-tsee-O-nees}
+      classical: {ipa: ɔr.taː.tɪ.ˈoː.nɪs, respell: or-taa-ti-OH-nis}
+  - id: ic.sanctio.1.11
+    surface: requisitionis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: re.kwi.zi.tsi.ˈo.nis, respell: re-kwee-zee-tsee-O-nees}
+      classical: {ipa: rɛ.kʷiː.siː.tɪ.ˈoː.nɪs, respell: re-kwee-see-ti-OH-nis}
+  - id: ic.sanctio.1.12
+    surface: donationis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: do.na.tsi.ˈo.nis, respell: do-na-tsee-O-nees}
+      classical: {ipa: doː.naː.tɪ.ˈoː.nɪs, respell: doh-naa-ti-OH-nis}
+- id: ic.sanctio.2
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:sanctio.2
+  stanza: sanctio
+  stanza_title: The penalty clause
+  text: concessionis, assignationis, constitutionis, deputationis, decreti, mandati, inhibitionis, et voluntatis,
+  tokens:
+  - id: ic.sanctio.2.1
+    surface: concessionis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: koŋ.tʃes.si.ˈo.nis, respell: kong-ches-see-O-nees}
+      classical: {ipa: kɔŋ.kɛs.sɪ.ˈoː.nɪs, respell: kong-kes-si-OH-nis}
+  - id: ic.sanctio.2.2
+    surface: assignationis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: as.si.ɲa.tsi.ˈo.nis, respell: as-see-nya-tsee-O-nees}
+      classical: {ipa: as.siːɡ.naː.tɪ.ˈoː.nɪs, respell: as-seeg-naa-ti-OH-nis}
+  - id: ic.sanctio.2.3
+    surface: constitutionis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: kons.ti.tu.tsi.ˈo.nis, respell: kons-tee-too-tsee-O-nees}
+      classical: {ipa: koːns.tɪ.tuː.tɪ.ˈoː.nɪs, respell: kohns-ti-too-ti-OH-nis}
+  - id: ic.sanctio.2.4
+    surface: deputationis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: de.pu.ta.tsi.ˈo.nis, respell: de-poo-ta-tsee-O-nees}
+      classical: {ipa: deː.pʊ.taː.tɪ.ˈoː.nɪs, respell: day-pu-taa-ti-OH-nis}
+  - id: ic.sanctio.2.5
+    surface: decreti
+    punct: ','
+    sound:
+      italian-humanist: {ipa: de.ˈkre.ti, respell: de-KRE-tee}
+      classical: {ipa: deː.ˈkreː.tiː, respell: day-KRAY-tee}
+  - id: ic.sanctio.2.6
+    surface: mandati
+    punct: ','
+    sound:
+      italian-humanist: {ipa: man.ˈda.ti, respell: man-DA-tee}
+      classical: {ipa: man.ˈdaː.tiː, respell: man-DAA-tee}
+  - id: ic.sanctio.2.7
+    surface: inhibitionis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: in.i.bi.tsi.ˈo.nis, respell: een-ee-bee-tsee-O-nees}
+      classical: {ipa: ɪn.hɪ.bɪ.tɪ.ˈoː.nɪs, respell: in-hi-bi-ti-OH-nis}
+  - id: ic.sanctio.2.8
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.sanctio.2.9
+    surface: voluntatis
+    punct: ','
+    sound:
+      italian-humanist: {ipa: vo.lun.ˈta.tis, respell: vo-loon-TA-tees}
+      classical: {ipa: wɔ.lʊn.ˈtaː.tɪs, respell: wo-lun-TAA-tis}
+- id: ic.sanctio.3
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:sanctio.3
+  stanza: sanctio
+  stanza_title: The penalty clause
+  text: infringere, vel ei ausu temerario contraire.
+  tokens:
+  - id: ic.sanctio.3.1
+    surface: infringere
+    punct: ','
+    sound:
+      italian-humanist: {ipa: inf.ˈriŋ.dʒe.re, respell: eenf-REENG-je-re}
+      classical: {ipa: iːnf.ˈrɪŋ.ɡɛ.rɛ, respell: eenf-RING-ge-re}
+  - id: ic.sanctio.3.2
+    surface: vel
+    sound:
+      italian-humanist: {ipa: vel, respell: vel}
+      classical: {ipa: wɛl, respell: wel}
+  - id: ic.sanctio.3.3
+    surface: ei
+    sound:
+      italian-humanist: {ipa: ˈe.i, respell: E-ee}
+      classical: {ipa: ˈɛ.iː, respell: E-ee}
+  - id: ic.sanctio.3.4
+    surface: ausu
+    sound:
+      italian-humanist: {ipa: ˈau.zu, respell: OW-zoo}
+      classical: {ipa: ˈau.suː, respell: OW-soo}
+  - id: ic.sanctio.3.5
+    surface: temerario
+    sound:
+      italian-humanist: {ipa: te.me.ˈra.ri.o, respell: te-me-RA-ree-o}
+      classical: {ipa: tɛ.mɛ.ˈraː.rɪ.oː, respell: te-me-RAA-ri-oh}
+  - id: ic.sanctio.3.6
+    surface: contraire
+    punct: .
+    sound:
+      italian-humanist: {ipa: kon.tra.ˈi.re, respell: kon-tra-EE-re}
+      classical: {ipa: kɔn.traː.ˈiː.rɛ, respell: kon-traa-EE-re}
+- id: ic.sanctio.4
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:sanctio.4
+  stanza: sanctio
+  stanza_title: The penalty clause
+  text: Si quis autem hoc attemptare presumpserit,
+  tokens:
+  - id: ic.sanctio.4.1
+    surface: Si
+    sound:
+      italian-humanist: {ipa: si, respell: see}
+      classical: {ipa: siː, respell: see}
+  - id: ic.sanctio.4.2
+    surface: quis
+    sound:
+      italian-humanist: {ipa: kwis, respell: kwees}
+      classical: {ipa: kʷɪs, respell: kwis}
+  - id: ic.sanctio.4.3
+    surface: autem
+    sound:
+      italian-humanist: {ipa: ˈau.tem, respell: OW-tem}
+      classical: {ipa: ˈau.tɛm, respell: OW-tem}
+  - id: ic.sanctio.4.4
+    surface: hoc
+    sound:
+      italian-humanist: {ipa: ok, respell: ok}
+      classical: {ipa: hɔk, respell: hok}
+  - id: ic.sanctio.4.5
+    surface: attemptare
+    sound:
+      italian-humanist: {ipa: at.temp.ˈta.re, respell: at-temp-TA-re}
+      classical: {ipa: at.tɛmp.ˈtaː.rɛ, respell: at-temp-TAA-re}
+  - id: ic.sanctio.4.6
+    surface: presumpserit
+    punct: ','
+    sound:
+      italian-humanist: {ipa: prɛ.ˈzump.se.rit, respell: pre-ZOOMP-se-reet}
+      classical: {ipa: prae.ˈsuːmp.sɛ.rɪt, respell: prai-SOOMP-se-rit}
+- id: ic.sanctio.5
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:sanctio.5
+  stanza: sanctio
+  stanza_title: The penalty clause
+  text: indignationem Omnipotentis Dei ac beatorum Petri et Pauli apostolorum ejus se noverit incursurum.
+  tokens:
+  - id: ic.sanctio.5.1
+    surface: indignationem
+    sound:
+      italian-humanist: {ipa: in.di.ɲa.tsi.ˈo.nem, respell: een-dee-nya-tsee-O-nem}
+      classical: {ipa: ɪn.diːɡ.naː.tɪ.ˈoː.nɛm, respell: in-deeg-naa-ti-OH-nem}
+  - id: ic.sanctio.5.2
+    surface: Omnipotentis
+    sound:
+      italian-humanist: {ipa: om.ni.po.ˈten.tis, respell: om-nee-po-TEN-tees}
+      classical: {ipa: ɔm.nɪ.pɔ.ˈtɛn.tɪs, respell: om-ni-po-TEN-tis}
+  - id: ic.sanctio.5.3
+    surface: Dei
+    sound:
+      italian-humanist: {ipa: ˈde.i, respell: DE-ee}
+      classical: {ipa: ˈdɛ.iː, respell: DE-ee}
+  - id: ic.sanctio.5.4
+    surface: ac
+    sound:
+      italian-humanist: {ipa: ak, respell: ak}
+      classical: {ipa: ak, respell: ak}
+  - id: ic.sanctio.5.5
+    surface: beatorum
+    sound:
+      italian-humanist: {ipa: be.a.ˈto.rum, respell: be-a-TO-room}
+      classical: {ipa: bɛ.aː.ˈtoː.rʊm, respell: be-aa-TOH-rum}
+  - id: ic.sanctio.5.6
+    surface: Petri
+    sound:
+      italian-humanist: {ipa: ˈpe.tri, respell: PE-tree}
+      classical: {ipa: ˈpɛ.triː, respell: PE-tree}
+  - id: ic.sanctio.5.7
+    surface: et
+    sound:
+      italian-humanist: {ipa: et, respell: et}
+      classical: {ipa: ɛt, respell: et}
+  - id: ic.sanctio.5.8
+    surface: Pauli
+    sound:
+      italian-humanist: {ipa: ˈpau.li, respell: POW-lee}
+      classical: {ipa: ˈpau.liː, respell: POW-lee}
+  - id: ic.sanctio.5.9
+    surface: apostolorum
+    sound:
+      italian-humanist: {ipa: a.pos.to.ˈlo.rum, respell: a-pos-to-LO-room}
+      classical: {ipa: a.pɔs.tɔ.ˈloː.rʊm, respell: a-pos-to-LOH-rum}
+  - id: ic.sanctio.5.10
+    surface: ejus
+    sound:
+      italian-humanist: {ipa: ˈe.jus, respell: E-yoos}
+      classical: {ipa: ˈɛ.jʊs, respell: E-yus}
+  - id: ic.sanctio.5.11
+    surface: se
+    sound:
+      italian-humanist: {ipa: se, respell: se}
+      classical: {ipa: seː, respell: say}
+  - id: ic.sanctio.5.12
+    surface: noverit
+    sound:
+      italian-humanist: {ipa: ˈno.ve.rit, respell: NO-ve-reet}
+      classical: {ipa: ˈnoː.wɛ.rɪt, respell: NOH-we-rit}
+  - id: ic.sanctio.5.13
+    surface: incursurum
+    punct: .
+    sound:
+      italian-humanist: {ipa: iŋ.kur.ˈsu.rum, respell: eeng-koor-SOO-room}
+      classical: {ipa: ɪŋ.kʊr.ˈsuː.rʊm, respell: ing-kur-SOO-rum}
 - id: ic.datum.1
   cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:datum.1
   stanza: datum
@@ -3584,3 +6978,144 @@ lines:
     sound:
       italian-humanist: {ipa: ˈpri.mo, respell: PREE-mo}
       classical: {ipa: ˈpriː.moː, respell: PREE-moh}
+- id: ic.notae.1
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:notae.1
+  stanza: notae
+  stanza_title: The chancery notes
+  text: Gratis de mandato sanctissimi Domini nostri pape.
+  tokens:
+  - id: ic.notae.1.1
+    surface: Gratis
+    sound:
+      italian-humanist: {ipa: ˈɡra.tis, respell: GRA-tees}
+      classical: {ipa: ˈɡraː.tiːs, respell: GRAA-tees}
+  - id: ic.notae.1.2
+    surface: de
+    sound:
+      italian-humanist: {ipa: de, respell: de}
+      classical: {ipa: deː, respell: day}
+  - id: ic.notae.1.3
+    surface: mandato
+    sound:
+      italian-humanist: {ipa: man.ˈda.to, respell: man-DA-to}
+      classical: {ipa: man.ˈdaː.toː, respell: man-DAA-toh}
+  - id: ic.notae.1.4
+    surface: sanctissimi
+    sound:
+      italian-humanist: {ipa: saŋk.ˈtis.si.mi, respell: sangk-TEES-see-mee}
+      classical: {ipa: saːŋk.ˈtɪs.sɪ.miː, respell: saangk-TIS-si-mee}
+  - id: ic.notae.1.5
+    surface: Domini
+    sound:
+      italian-humanist: {ipa: ˈdo.mi.ni, respell: DO-mee-nee}
+      classical: {ipa: ˈdɔ.mɪ.niː, respell: DO-mi-nee}
+  - id: ic.notae.1.6
+    surface: nostri
+    sound:
+      italian-humanist: {ipa: ˈnos.tri, respell: NOS-tree}
+      classical: {ipa: ˈnɔs.triː, respell: NOS-tree}
+  - id: ic.notae.1.7
+    surface: pape
+    punct: .
+    sound:
+      italian-humanist: {ipa: ˈpa.pɛ, respell: PA-pe}
+      classical: {ipa: ˈpaː.pae, respell: PAA-pai}
+- id: ic.notae.2
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:notae.2
+  stanza: notae
+  stanza_title: The chancery notes
+  text: Jun[io].
+  tokens:
+  - id: ic.notae.2.1
+    surface: Jun[io
+    punct: '].'
+    sound:
+      italian-humanist: {ipa: ˈju.ni.o, respell: YOO-nee-o}
+      classical: {ipa: ˈjuː.nɪ.oː, respell: YOO-ni-oh}
+- id: ic.notae.3
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:notae.3
+  stanza: notae
+  stanza_title: The chancery notes
+  text: Pro r[eferenda]rio, A. DE MUCCIARELLIS.
+  tokens:
+  - id: ic.notae.3.1
+    surface: Pro
+    sound:
+      italian-humanist: {ipa: pro, respell: pro}
+      classical: {ipa: proː, respell: proh}
+  - id: ic.notae.3.2
+    surface: r[eferenda]rio
+    punct: ','
+    sound:
+      italian-humanist: {ipa: re.fe.ren.ˈda.ri.o, respell: re-fe-ren-DA-ree-o}
+      classical: {ipa: rɛ.fɛ.rɛn.ˈdaː.rɪ.oː, respell: re-fe-ren-DAA-ri-oh}
+  - id: ic.notae.3.3
+    surface: A
+    punct: .
+    sound:
+      italian-humanist: {ipa: a, respell: a}
+      classical: {ipa: aː, respell: aa}
+  - id: ic.notae.3.4
+    surface: DE
+    sound:
+      italian-humanist: {ipa: de, respell: de}
+      classical: {ipa: deː, respell: day}
+  - id: ic.notae.3.5
+    surface: MUCCIARELLIS
+    punct: .
+    sound:
+      italian-humanist: {ipa: muk.tʃi.a.ˈrel.lis, respell: mook-chee-a-REL-lees}
+      classical: {ipa: mʊk.kɪ.a.ˈrɛl.liːs, respell: muk-ki-a-REL-lees}
+- id: ic.notae.4
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:notae.4
+  stanza: notae
+  stanza_title: The chancery notes
+  text: Pro Jo. BUF[OLINUS], A. SANTOSEVERINO.
+  tokens:
+  - id: ic.notae.4.1
+    surface: Pro
+    sound:
+      italian-humanist: {ipa: pro, respell: pro}
+      classical: {ipa: proː, respell: proh}
+  - id: ic.notae.4.2
+    surface: Jo
+    punct: .
+    sound:
+      italian-humanist: {ipa: jo, respell: yo}
+      classical: {ipa: jɔ, respell: yo}
+  - id: ic.notae.4.3
+    surface: BUF[OLINUS
+    punct: '],'
+    sound:
+      italian-humanist: {ipa: bu.fo.ˈli.nus, respell: boo-fo-LEE-noos}
+      classical: {ipa: bʊ.fɔ.ˈliː.nʊs, respell: bu-fo-LEE-nus}
+  - id: ic.notae.4.4
+    surface: A
+    punct: .
+    sound:
+      italian-humanist: {ipa: a, respell: a}
+      classical: {ipa: aː, respell: aa}
+  - id: ic.notae.4.5
+    surface: SANTOSEVERINO
+    punct: .
+    sound:
+      italian-humanist: {ipa: san.to.ze.ve.ˈri.no, respell: san-to-ze-ve-REE-no}
+      classical: {ipa: san.tɔ.sɛ.wɛ.ˈriː.noː, respell: san-to-se-we-REE-noh}
+- id: ic.notae.5
+  cite: urn:weft:lat:alexander6.intercaetera.1493-05-04.la-wikisource-intercaetera:notae.5
+  stanza: notae
+  stanza_title: The chancery notes
+  text: L. PODOCATHARUS.
+  tokens:
+  - id: ic.notae.5.1
+    surface: L
+    punct: .
+    sound:
+      italian-humanist: {ipa: l, respell: l}
+      classical: {ipa: l, respell: l}
+  - id: ic.notae.5.2
+    surface: PODOCATHARUS
+    punct: .
+    sound:
+      italian-humanist: {ipa: po.do.ˈka.ta.rus, respell: po-do-KA-ta-roos}
+      classical: {ipa: pɔ.dɔ.ˈka.tʰa.rʊs, respell: po-do-KA-tʰa-rus}

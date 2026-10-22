@@ -46,15 +46,17 @@ def test_expand_code_reproduces_a_committed_overlay():
 
 
 def test_parse_line_spec_metre_staves_and_note():
-    metre, toks = scaffold.parse_line_spec("a g :: *Gáttir|doorways|gátt|N.nfp ;; allar,|all|allr|A.nfp | irregular")
-    assert metre == "long line, a-verse · stave g · irregular"
+    metre, toks, note = scaffold.parse_line_spec("a g :: *Gáttir|doorways|gátt|N.nfp ;; allar,|all|allr|A.nfp | irregular")
+    assert metre == "long line, a-verse · stave g · irregular" and note is None   # a verse note joins the metre
     assert [t["surface"] for t in toks] == ["Gáttir", "allar"]        # the print's punctuation is dropped: gen surfaces are bare
     assert toks[0]["stave"] and not toks[1]["stave"]
     assert toks[0]["morph"] == "NOUN|Case=Nom|Gender=Fem|Number=Plur"
-    metre, toks = scaffold.parse_line_spec("f sk :: skal|shall|skulu|AUX.i3s.pr")
+    metre, toks, _ = scaffold.parse_line_spec("f sk :: skal|shall|skulu|AUX.i3s.pr")
     assert metre == "full line · staves sk"
-    metre, toks = scaffold.parse_line_spec("Die|the|der|D.fs")        # prose: no metre
-    assert metre is None and toks[0]["lemma"] == "der"
+    metre, toks, note = scaffold.parse_line_spec("Die|the|der|D.fs")        # prose: no metre
+    assert metre is None and toks[0]["lemma"] == "der" and note is None
+    metre, toks, note = scaffold.parse_line_spec("Die|the|der|D.fs | article, not the relative")
+    assert metre is None and note == "article, not the relative"    # a prose note comes back for the caller to keep
     with pytest.raises(ValueError):
         scaffold.parse_line_spec("Die|the|der")
 
@@ -84,6 +86,11 @@ def test_overlay_expands_a_spec_and_refuses_a_mismatch(tmp_path, monkeypatch):
     assert s["fk.1.1"] == {"metre": "long line, a-verse · stave g"}
     assert s["fk.1.1.1"] == {"lemma": "gátt", "morph": "NOUN|Case=Nom|Gender=Fem|Number=Plur", "gloss": "doorways", "stave": True}
     assert s["fk.1.1.2"] == {"lemma": "allr", "morph": "ADJ|Case=Nom|Gender=Fem|Number=Plur", "gloss": "all"}
+    # a prose line's note survives as a comment in the overlay, for the reviewer
+    spec.write_text(yaml.dump({"lines": {"fk.1.1": "Gáttir|doorways|gátt|N.nfp ;; allar|all|allr|A.nfp | allr, not the noun"}}, allow_unicode=True))
+    scaffold.overlay(tmp_path, "fake-work", spec, "prose.yaml")
+    text = (tmp_path / "texts/fake-work/curated/prose.yaml").read_text()
+    assert "    # fk.1.1: allr, not the noun\n" in text and "fk.1.1" not in yaml.safe_load(text)[0]["set"]
     # a surface that is not the text's: refused, nothing written
     spec.write_text(yaml.dump({"lines": {"fk.1.1": "Gáttir|doorways|gátt|N.nfp ;; allir|all|allr|A.nmp"}}, allow_unicode=True))
     with pytest.raises(SystemExit, match="does not match"):

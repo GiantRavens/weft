@@ -1,13 +1,31 @@
 # Andrew Lang, Walter Leaf and Ernest Myers, The Iliad of Homer (1883), book I, verbatim from
 # Project Gutenberg #3059. Split at sentence ends, and at the colon that opens a speech
 # (1.16/17, 1.25/26, 1.36/37), where the sentence runs on into the next Greek line. No corrections.
+# Lines 1.53-611 added 2026-10-18. Left out: the footnote marks and five footnotes (1.129, "Reading with
+# Cobet Τρῳήν for Τροίην."; 1.307, 1.393, 1.419, 1.474). Square-bracketed passages (1.265, 1.295-296) are the
+# translators' own marks for lines they judged spurious and are kept verbatim. Split at sentence ends;
+# at the colon that opens a speech (1.58/59, 1.73/74, 1.84/85, 1.92/93, 1.105/106, 1.121/122,
+# 1.130/131, 1.148/149, 1.201/202, 1.206/207, 1.215/216, 1.224/225, 1.233/234, 1.253/254, 1.285/286,
+# 1.292/293); at a semicolon or comma where a clause boundary falls on a Greek line boundary (1.53/54,
+# 1.70/71, 1.85/86, 1.124/125, 1.140/141, 1.153/154, 1.157/158, 1.164/165, 1.276/277); at the colon
+# "threat to thee:" (1.181/182); at the dash after "mighty oath in thine eyes" (1.239/240); and once
+# with no punctuation, where "because" opens 1.111 (1.110/111). Judgment calls: 1.141-147 (seven
+# lines) is one span because Chryseis is embarked across 1.143-144; 1.203 keeps the source's full stop
+# after a question ("son of Atreus.") as printed. Extended to 1.611, the end of book I, on the same
+# rule; long sentences are also split at a semicolon or clause boundary that falls at a Greek line
+# boundary. The Gutenberg footnote marks (*) and their notes are dropped: 1.307 (Patroklos), 1.393
+# (reading ἑοῖο), 1.419 (perhaps rather, "hurler of the thunderbolt"), 1.474 (Or, "the Averter" of
+# pestilence). The Gutenberg misprint "they heart" (1.362) is kept as printed.
 translation: lang-leaf-myers1883
-aligned_by: hand, by sentence (phase 0 proem; extended to 1.52)
+aligned_by: hand, by sentence (phase 0 proem; extended to 1.611)
 spans:
 - lines:
   - il.1.1
   - il.1.7
-  text: Sing, goddess, the wrath of Achilles Peleus’ son, the ruinous wrath that brought on the Achaians woes innumerable, and hurled down into Hades many strong souls of heroes, and gave their bodies to be a prey to dogs and all winged fowls; and so the counsel of Zeus wrought out its accomplishment from the day when first strife parted Atreides king of men and noble Achilles.
+  text: Sing, goddess, the wrath of Achilles Peleus’ son, the ruinous wrath that brought on the Achaians
+    woes innumerable, and hurled down into Hades many strong souls of heroes, and gave their bodies to
+    be a prey to dogs and all winged fowls; and so the counsel of Zeus wrought out its accomplishment
+    from the day when first strife parted Atreides king of men and noble Achilles.
 - lines:
   - il.1.8
   - il.1.8
@@ -15,44 +33,1169 @@ spans:
 - lines:
   - il.1.9
   - il.1.11
-  text: Even the son of Leto and of Zeus; for he in anger at the king sent a sore plague upon the host, that the folk began to perish, because Atreides had done dishonour to Chryses the priest.
+  text: Even the son of Leto and of Zeus; for he in anger at the king sent a sore plague upon the host,
+    that the folk began to perish, because Atreides had done dishonour to Chryses the priest.
 - lines:
   - il.1.12
   - il.1.16
-  text: 'For he had come to the Achaians’ fleet ships to win his daughter’s freedom, and brought a ransom beyond telling; and bare in his hands the fillet of Apollo the Far-darter upon a golden staff; and made his prayer unto all the Achaians, and most of all to the two sons of Atreus, orderers of the host:'
+  text: 'For he had come to the Achaians’ fleet ships to win his daughter’s freedom, and brought a ransom
+    beyond telling; and bare in his hands the fillet of Apollo the Far-darter upon a golden staff; and
+    made his prayer unto all the Achaians, and most of all to the two sons of Atreus, orderers of the
+    host:'
 - lines:
   - il.1.17
   - il.1.21
-  text: “Ye sons of Atreus and all ye well-greaved Achaians, now may the gods that dwell in the mansions of Olympus grant you to lay waste the city of Priam, and to fare happily homeward; only set ye my dear child free, and accept the ransom in reverence to the son of Zeus, far-darting Apollo.”
+  text: “Ye sons of Atreus and all ye well-greaved Achaians, now may the gods that dwell in the mansions
+    of Olympus grant you to lay waste the city of Priam, and to fare happily homeward; only set ye my
+    dear child free, and accept the ransom in reverence to the son of Zeus, far-darting Apollo.”
 - lines:
   - il.1.22
   - il.1.25
-  text: 'Then all the other Achaians cried assent, to reverence the priest and accept his goodly ransom; yet the thing pleased not the heart of Agamemnon son of Atreus, but he roughly sent him away, and laid stern charge upon him, saying:'
+  text: 'Then all the other Achaians cried assent, to reverence the priest and accept his goodly ransom;
+    yet the thing pleased not the heart of Agamemnon son of Atreus, but he roughly sent him away, and
+    laid stern charge upon him, saying:'
 - lines:
   - il.1.26
   - il.1.28
-  text: “Let me not find thee, old man, amid the hollow ships, whether tarrying now or returning again hereafter, lest the staff and fillet of the god avail thee naught.
+  text: “Let me not find thee, old man, amid the hollow ships, whether tarrying now or returning again
+    hereafter, lest the staff and fillet of the god avail thee naught.
 - lines:
   - il.1.29
   - il.1.32
-  text: And her will I not set free; nay, ere that shall old age come on her in our house, in Argos, far from her native land, where she shall ply the loom and serve my couch. But depart, provoke me not, that thou mayest the rather go in peace.”
+  text: And her will I not set free; nay, ere that shall old age come on her in our house, in Argos, far
+    from her native land, where she shall ply the loom and serve my couch. But depart, provoke me not,
+    that thou mayest the rather go in peace.”
 - lines:
   - il.1.33
   - il.1.36
-  text: 'So said he, and the old man was afraid and obeyed his word, and fared silently along the shore of the loud-sounding sea. Then went that aged man apart and prayed aloud to king Apollo, whom Leto of the fair locks bare:'
+  text: 'So said he, and the old man was afraid and obeyed his word, and fared silently along the shore
+    of the loud-sounding sea. Then went that aged man apart and prayed aloud to king Apollo, whom Leto
+    of the fair locks bare:'
 - lines:
   - il.1.37
   - il.1.42
-  text: “Hear me, god of the silver bow, that standest over Chryse and holy Killa, and rulest Tenedos with might, O Smintheus! If ever I built a temple gracious in thine eyes, or if ever I burnt to thee fat flesh of thighs of bulls or goats, fulfil thou this my desire; let the Danaans pay by thine arrows for my tears.”
+  text: “Hear me, god of the silver bow, that standest over Chryse and holy Killa, and rulest Tenedos
+    with might, O Smintheus! If ever I built a temple gracious in thine eyes, or if ever I burnt to thee
+    fat flesh of thighs of bulls or goats, fulfil thou this my desire; let the Danaans pay by thine arrows
+    for my tears.”
 - lines:
   - il.1.43
   - il.1.47
-  text: So spake he in prayer, and Phoebus Apollo heard him, and came down from the peaks of Olympus wroth at heart, bearing on his shoulders his bow and covered quiver. And the arrows clanged upon his shoulders in wrath, as the god moved; and he descended like to night.
+  text: So spake he in prayer, and Phoebus Apollo heard him, and came down from the peaks of Olympus wroth
+    at heart, bearing on his shoulders his bow and covered quiver. And the arrows clanged upon his shoulders
+    in wrath, as the god moved; and he descended like to night.
 - lines:
   - il.1.48
   - il.1.49
-  text: Then he sate him aloof from the ships, and let an arrow fly; and there was heard a dread clanging of the silver bow.
+  text: Then he sate him aloof from the ships, and let an arrow fly; and there was heard a dread clanging
+    of the silver bow.
 - lines:
   - il.1.50
   - il.1.52
-  text: First did he assail the mules and fleet dogs, but afterward, aiming at the men his piercing dart, he smote; and the pyres of the dead burnt continually in multitude.
+  text: First did he assail the mules and fleet dogs, but afterward, aiming at the men his piercing dart,
+    he smote; and the pyres of the dead burnt continually in multitude.
+- lines:
+  - il.1.53
+  - il.1.53
+  text: Now for nine days ranged the god’s shafts through the host;
+- lines:
+  - il.1.54
+  - il.1.56
+  text: but on the tenth Achilles summoned the folk to assembly, for in his mind did goddess Hera of the
+    white arms put the thought, because she had pity on the Danaans when she beheld them perishing.
+- lines:
+  - il.1.57
+  - il.1.58
+  text: 'Now when they had gathered and were met in assembly, then Achilles fleet of foot stood up and
+    spake among them:'
+- lines:
+  - il.1.59
+  - il.1.61
+  text: “Son of Atreus, now deem I that we shall return wandering home again—if verily we might escape
+    death—if war at once and pestilence must indeed ravage the Achaians.
+- lines:
+  - il.1.62
+  - il.1.67
+  text: But come, let us now inquire of some soothsayer or priest, yea, or an interpreter of dreams—seeing
+    that a dream too is of Zeus—who shall say wherefore Phoebus Apollo is so wroth, whether he blame us
+    by reason of vow or hecatomb; if perchance he would accept the savour of lambs or unblemished goats,
+    and so would take away the pestilence from us.”
+- lines:
+  - il.1.68
+  - il.1.70
+  text: So spake he and sate him down; and there stood up before them Kalchas son of Thestor, most excellent
+    far of augurs, who knew both things that were and that should be and that had been before,
+- lines:
+  - il.1.71
+  - il.1.72
+  text: and guided the ships of the Achaians to Ilios by his soothsaying that Phoebus Apollo bestowed
+    on him.
+- lines:
+  - il.1.73
+  - il.1.73
+  text: 'He of good intent made harangue and spake amid them:'
+- lines:
+  - il.1.74
+  - il.1.75
+  text: “Achilles, dear to Zeus, thou biddest me tell the wrath of Apollo, the king that smiteth afar.
+- lines:
+  - il.1.76
+  - il.1.77
+  text: Therefore will I speak; but do thou make covenant with me, and swear that verily with all thy
+    heart thou wilt aid me both by word and deed.
+- lines:
+  - il.1.78
+  - il.1.79
+  text: For of a truth I deem that I shall provoke one that ruleth all the Argives with might, and whom
+    the Achaians obey.
+- lines:
+  - il.1.80
+  - il.1.83
+  text: For a king is more of might when he is wroth with a meaner man; even though for the one day he
+    swallow his anger, yet doth he still keep his displeasure thereafter in his breast till he accomplish
+    it. Consider thou, then, if thou wilt hold me safe.”
+- lines:
+  - il.1.84
+  - il.1.84
+  text: 'And Achilles fleet of foot made answer and spake to him:'
+- lines:
+  - il.1.85
+  - il.1.85
+  text: “Yea, be of good courage, speak whatever soothsaying thou knowest;
+- lines:
+  - il.1.86
+  - il.1.91
+  text: for by Apollo dear to Zeus, him by whose worship thou, O Kalchas, declarest thy soothsaying to
+    the Danaans, no man while I live and behold light on earth shall lay violent hands upon thee amid
+    the hollow ships, no man of all the Danaans, not even if thou mean Agamemnon, that now avoweth him
+    to be greatest far of the Achaians.”
+- lines:
+  - il.1.92
+  - il.1.92
+  text: 'Then was the noble seer of good courage, and spake:'
+- lines:
+  - il.1.93
+  - il.1.96
+  text: “Neither by reason of a vow is he displeased, nor for any hecatomb, but for his priest’s sake
+    to whom Agamemnon did despite, and set not his daughter free and accepted not the ransom; therefore
+    hath the Far-darter brought woes upon us, yea, and will bring.
+- lines:
+  - il.1.97
+  - il.1.100
+  text: Nor will he ever remove the loathly pestilence from the Danaans till we have given the bright-eyed
+    damsel to her father, unbought, unransomed, and carried a holy hecatomb to Chryse; then might we propitiate
+    him to our prayer.”
+- lines:
+  - il.1.101
+  - il.1.104
+  text: So said he and sate him down, and there stood up before them the hero son of Atreus, wide-ruling
+    Agamemnon, sore displeased; and his dark heart within him was greatly filled with anger, and his eyes
+    were like flashing fire.
+- lines:
+  - il.1.105
+  - il.1.105
+  text: 'To Kalchas first spake he with look of ill:'
+- lines:
+  - il.1.106
+  - il.1.106
+  text: “Thou seer of evil, never yet hast thou told me the thing that is pleasant.
+- lines:
+  - il.1.107
+  - il.1.108
+  text: Evil is ever the joy of thy heart to prophesy, but never yet didst thou tell any good matter nor
+    bring to pass.
+- lines:
+  - il.1.109
+  - il.1.110
+  text: And now with soothsaying thou makest harangue among the Danaans, how that the Far-darter bringeth
+    woes upon them
+- lines:
+  - il.1.111
+  - il.1.115
+  text: because, forsooth, I would not take the goodly ransom of the damsel Chryseis, seeing I am the
+    rather fain to keep her own self within mine house. Yea, I prefer her before Klytaimnestra my wedded
+    wife; in no wise is she lacking beside her, neither in favour nor stature, nor wit nor skill.
+- lines:
+  - il.1.116
+  - il.1.117
+  text: Yet for all this will I give her back, if that is better; rather would I see my folk whole than
+    perishing.
+- lines:
+  - il.1.118
+  - il.1.120
+  text: Only make ye me ready a prize of honour forthwith, lest I alone of all the Argives be disprized,
+    which thing beseemeth not; for ye all behold how my prize is departing from me.”
+- lines:
+  - il.1.121
+  - il.1.121
+  text: 'To him then made answer fleet-footed goodly Achilles:'
+- lines:
+  - il.1.122
+  - il.1.123
+  text: “Most noble son of Atreus, of all men most covetous, how shall the great-hearted Achaians give
+    thee a meed of honour?
+- lines:
+  - il.1.124
+  - il.1.124
+  text: We know naught of any wealth of common store,
+- lines:
+  - il.1.125
+  - il.1.126
+  text: but what spoil soe’er we took from captured cities hath been apportioned, and it beseemeth not
+    to beg all this back from the folk.
+- lines:
+  - il.1.127
+  - il.1.129
+  text: Nay, yield thou the damsel to the god, and we Achaians will pay thee back threefold and fourfold,
+    if ever Zeus grant us to sack some well-walled town of Troy-land.”
+- lines:
+  - il.1.130
+  - il.1.130
+  text: 'To him lord Agamemnon made answer and said:'
+- lines:
+  - il.1.131
+  - il.1.132
+  text: “Not in this wise, strong as thou art, O godlike Achilles, beguile thou me by craft; thou shalt
+    not outwit me nor persuade me.
+- lines:
+  - il.1.133
+  - il.1.134
+  text: Dost thou wish, that thou mayest keep thy meed of honour, for me to sit idle in bereavement, and
+    biddest me give her back?
+- lines:
+  - il.1.135
+  - il.1.139
+  text: Nay, if the great-hearted Achaians will give me a meed suited to my mind, that the recompense
+    be equal—but if they give it not, then I myself will go and take a meed of honour, thine be it or
+    Aias’, or Odysseus’ that I will take unto me; wroth shall he be to whomsoever I come.
+- lines:
+  - il.1.140
+  - il.1.140
+  text: But for this we will take counsel hereafter;
+- lines:
+  - il.1.141
+  - il.1.147
+  text: now let us launch a black ship on the great sea, and gather picked oarsmen, and set therein a
+    hecatomb, and embark Chryseis of the fair cheeks herself, and let one of our counsellors be captain,
+    Aias or Idomeneus or goodly Odysseus, or thou, Peleides, most redoubtable of men, to do sacrifice
+    for us and propitiate the Far-darter.”
+- lines:
+  - il.1.148
+  - il.1.148
+  text: 'Then Achilles fleet of foot looked at him scowling and said:'
+- lines:
+  - il.1.149
+  - il.1.151
+  text: “Ah me, thou clothed in shamelessness, thou of crafty mind, how shall any Achaian hearken to thy
+    bidding with all his heart, be it to go a journey or to fight the foe amain?
+- lines:
+  - il.1.152
+  - il.1.153
+  text: Not by reason of the Trojan spearmen came I hither to fight, for they have not wronged me;
+- lines:
+  - il.1.154
+  - il.1.157
+  text: never did they harry mine oxen nor my horses, nor ever waste my harvest in deep-soiled Phthia,
+    the nurse of men; seeing there lieth between us long space of shadowy mountains and sounding sea;
+- lines:
+  - il.1.158
+  - il.1.162
+  text: but thee, thou shameless one, followed we hither to make thee glad, by earning recompense at the
+    Trojans’ hands for Menelaos and for thee, thou dog-face! All this thou threatenest thyself to take
+    my meed of honour, wherefor I travailed much, and the sons of the Achaians gave it me.
+- lines:
+  - il.1.163
+  - il.1.164
+  text: Never win I meed like unto thine, when the Achaians sack any populous citadel of Trojan men;
+- lines:
+  - il.1.165
+  - il.1.168
+  text: my hands bear the brunt of furious war, but when the apportioning cometh then is thy meed far
+    ampler, and I betake me to the ships with some small thing, yet mine own, when I have fought to weariness.
+- lines:
+  - il.1.169
+  - il.1.171
+  text: Now will I depart to Phthia, seeing it is far better to return home on my beaked ships; nor am
+    I minded here in dishonour to draw thee thy fill of riches and wealth.”
+- lines:
+  - il.1.172
+  - il.1.175
+  text: Then Agamemnon king of men made answer to him “Yea, flee, if thy soul be set thereon. It is not
+    I that beseech thee to tarry for my sake; I have others by my side that shall do me honour, and above
+    all Zeus, lord of counsel.
+- lines:
+  - il.1.176
+  - il.1.177
+  text: Most hateful art thou to me of all kings, fosterlings of Zeus; thou ever lovest strife and wars
+    and fightings.
+- lines:
+  - il.1.178
+  - il.1.178
+  text: Though thou be very strong, yet that I ween is a gift to thee of God.
+- lines:
+  - il.1.179
+  - il.1.181
+  text: 'Go home with thy ships and company and lord it among thy Myrmidons; I reck not aught of thee
+    nor care I for thine indignation; and all this shall be my threat to thee:'
+- lines:
+  - il.1.182
+  - il.1.187
+  text: seeing Phoebus Apollo bereaveth me of Chryseis, her with my ship and my company will I send back;
+    and mine own self will I go to thy hut and take Briseis of the fair cheeks, even that thy meed of
+    honour, that thou mayest well know how far greater I am than thou, and so shall another hereafter
+    abhor to match his words with mine and rival me to my face.”
+- lines:
+  - il.1.188
+  - il.1.192
+  text: So said he, and grief came upon Peleus’ son, and his heart within his shaggy breast was divided
+    in counsel, whether to draw his keen blade from his thigh and set the company aside and so slay Atreides,
+    or to assuage his anger and curb his soul.
+- lines:
+  - il.1.193
+  - il.1.196
+  text: While yet he doubted thereof in heart and soul, and was drawing his great sword from his sheath,
+    Athene came to him from heaven, sent forth of the white-armed goddess Hera, whose heart loved both
+    alike and had care for them.
+- lines:
+  - il.1.197
+  - il.1.198
+  text: She stood behind Peleus’ son and caught him by his golden hair, to him only visible, and of the
+    rest no man beheld her.
+- lines:
+  - il.1.199
+  - il.1.200
+  text: Then Achilles marvelled, and turned him about, and straightway knew Pallas Athene; and terribly
+    shone her eyes.
+- lines:
+  - il.1.201
+  - il.1.201
+  text: 'He spake to her winged words, and said:'
+- lines:
+  - il.1.202
+  - il.1.202
+  text: “Why now art thou come hither, thou daughter of aegis-bearing Zeus?
+- lines:
+  - il.1.203
+  - il.1.203
+  text: Is it to behold the insolence of Agamemnon, son of Atreus.
+- lines:
+  - il.1.204
+  - il.1.205
+  text: 'Yea, I will tell thee that I deem shall even be brought to pass: by his own haughtinesses shall
+    he soon lose his life.”'
+- lines:
+  - il.1.206
+  - il.1.206
+  text: 'Then the bright-eyed goddess Athene spake to him again:'
+- lines:
+  - il.1.207
+  - il.1.209
+  text: “I came from heaven to stay thine anger, if perchance thou wilt hearken to me, being sent forth
+    if the white-armed goddess Hera, that loveth you twain alike and careth for you.
+- lines:
+  - il.1.210
+  - il.1.211
+  text: Go to now, cease from strife, and let not thine hand draw the sword; yet with words indeed revile
+    him, even as it shall come to pass.
+- lines:
+  - il.1.212
+  - il.1.214
+  text: For thus will I say to thee, and so it shall be fulfilled; hereafter shall goodly gifts come to
+    thee, yea in threefold measure, by reason of this despite; hold thou thine hand, and hearken to us.”
+- lines:
+  - il.1.215
+  - il.1.215
+  text: 'And Achilles fleet of foot made answer and said to her:'
+- lines:
+  - il.1.216
+  - il.1.217
+  text: “Goddess, needs must a man observe the saying of you twain, even though he be very wroth at heart;
+    for so is the better way.
+- lines:
+  - il.1.218
+  - il.1.218
+  text: Whosoever obeyeth the gods, to him they gladly hearken.”
+- lines:
+  - il.1.219
+  - il.1.222
+  text: He said, and stayed his heavy hand on the silver hilt, and thrust the great sword back into the
+    sheath, and was not disobedient to the saying of Athene; and she forthwith was departed to Olympus,
+    to the other gods in the palace of aegis-bearing Zeus.
+- lines:
+  - il.1.223
+  - il.1.224
+  text: 'Then Peleus’ son spake again with bitter words to Atreus’ son, and in no wise ceased from anger:'
+- lines:
+  - il.1.225
+  - il.1.228
+  text: “Thou heavy with wine, thou with face of dog and heart of deer, never didst thou take courage
+    to arm for battle among thy folk or to lay ambush with the princes of the Achaians; that to thee were
+    even as death.
+- lines:
+  - il.1.229
+  - il.1.230
+  text: Far better booteth it, forsooth, to seize for thyself the meed of honour of every man through
+    the wide host of the Achaians that speaketh contrary to thee.
+- lines:
+  - il.1.231
+  - il.1.232
+  text: Folk-devouring king! seeing thou rulest men of naught; else were this despite, thou son of Atreus,
+    thy last.
+- lines:
+  - il.1.233
+  - il.1.233
+  text: 'But I will speak my word to thee, and swear a mighty oath therewith:'
+- lines:
+  - il.1.234
+  - il.1.239
+  text: verily by this staff that shall no more put forth leaf or twig, seeing it hath for ever left its
+    trunk among the hills, neither shall it grow green again, because the axe hath stripped it of leaves
+    and bark; and now the sons of the Achaians that exercise judgment bear it in their hands, even they
+    that by Zeus’ command watch over the traditions—so shall this be a mighty oath in thine eyes—
+- lines:
+  - il.1.240
+  - il.1.244
+  text: verily shall longing for Achilles come hereafter upon the sons of the Achaians one and all; and
+    then wilt thou in no wise avail to save them, for all thy grief, when multitudes fall dying before
+    manslaying Hector. Then shalt thou tear thy heart within thee for anger that thou didst in no wise
+    honour the best of the Achaians.”
+- lines:
+  - il.1.245
+  - il.1.249
+  text: So said Peleides and dashed to earth the staff studded with golden nails, and himself sat down;
+    and over against him Atreides waxed furious. Then in their midst rose up Nestor, pleasant of speech,
+    the clear-voiced orator of the Pylians, he from whose tongue flowed discourse sweeter than honey.
+- lines:
+  - il.1.250
+  - il.1.252
+  text: Two generations of mortal men already had he seen perish, that had been of old time born and nurtured
+    with him in goodly Pylos, and he was king among the third.
+- lines:
+  - il.1.253
+  - il.1.253
+  text: 'He of good intent made harangue to them and said:'
+- lines:
+  - il.1.254
+  - il.1.254
+  text: “Alas, of a truth sore lamentation cometh upon the land of Achaia.
+- lines:
+  - il.1.255
+  - il.1.258
+  text: Verily Priam would be glad and Priam’s sons, and all the Trojans would have great joy of heart,
+    were they to hear all this tale of strife between you twain that are chiefest of the Danaans in counsel
+    and chiefest in battle.
+- lines:
+  - il.1.259
+  - il.1.259
+  text: Nay, hearken to me; ye are younger both than I.
+- lines:
+  - il.1.260
+  - il.1.261
+  text: Of old days held I converse with better men even than you, and never did they make light of me.
+- lines:
+  - il.1.262
+  - il.1.265
+  text: Yea, I never beheld such warriors, nor shall behold, as were Peirithoos and Dryas shepherd of
+    the host and Kaineus and Exadios and godlike Polyphemos [and Theseus son of Aigeus, like to the immortals].
+- lines:
+  - il.1.266
+  - il.1.268
+  text: Mightiest of growth were they of all men upon the earth; mightiest they were and with the mightiest
+    fought they, even the wild tribes of the mountain caves, and destroyed them utterly.
+- lines:
+  - il.1.269
+  - il.1.270
+  text: And with these held I converse, being come from Pylos, from a distant land afar; for of themselves
+    they summoned me.
+- lines:
+  - il.1.271
+  - il.1.272
+  text: So I played my part in fight; and with them could none of men that are now on earth do battle.
+- lines:
+  - il.1.273
+  - il.1.273
+  text: And they laid to heart my counsels and hearkened to my voice.
+- lines:
+  - il.1.274
+  - il.1.274
+  text: Even so hearken ye also, for better is it to hearken.
+- lines:
+  - il.1.275
+  - il.1.276
+  text: Neither do thou, though thou art very great, seize from him his damsel, but leave her as she was
+    given at the first by the sons of the Achaians to be a meed of honour;
+- lines:
+  - il.1.277
+  - il.1.279
+  text: nor do thou, son of Peleus, think to strive with a king, might against might; seeing that no common
+    honour pertaineth to a sceptred king to whom Zeus apportioneth glory.
+- lines:
+  - il.1.280
+  - il.1.281
+  text: Though thou be strong, and a goddess mother bare thee, yet his is the greater place, for he is
+    king over more.
+- lines:
+  - il.1.282
+  - il.1.284
+  text: And thou, Atreides, abate thy fury; nay, it is even I that beseech thee to let go thine anger
+    with Achilles, who is made unto all the Achaians a mighty bulwark of evil war.”
+- lines:
+  - il.1.285
+  - il.1.285
+  text: 'Then lord Agamemnon answered and said:'
+- lines:
+  - il.1.286
+  - il.1.286
+  text: “Yea verily, old man, all this thou sayest is according unto right.
+- lines:
+  - il.1.287
+  - il.1.289
+  text: But this fellow would be above all others, he would be lord of all and king among all and captain
+    to all; wherein I deem none will hearken to him.
+- lines:
+  - il.1.290
+  - il.1.291
+  text: Though the immortal gods made him a spearman, do they therefore put revilings in his mouth for
+    him to utter?”
+- lines:
+  - il.1.292
+  - il.1.292
+  text: 'Then goodly Achilles brake in on him and answered:'
+- lines:
+  - il.1.293
+  - il.1.294
+  text: “Yea, for I should be called coward and man of naught, if I yield to thee in every matter, howsoe’er
+    thou bid.
+- lines:
+  - il.1.295
+  - il.1.296
+  text: To others give now thine orders, not to me [play master; for thee I deem that I shall no more
+    obey].
+- lines:
+  - il.1.297
+  - il.1.297
+  text: This, moreover, will I say to thee, and do thou lay it to thy heart.
+- lines:
+  - il.1.298
+  - il.1.299
+  text: Know that not by violence will I strive for the damsel’s sake, neither with thee nor any other;
+    ye gave and ye have taken away.
+- lines:
+  - il.1.300
+  - il.1.301
+  text: But of all else that is mine beside my fleet black ship, thereof shalt thou not take anything
+    or bear it away against my will.
+- lines:
+  - il.1.302
+  - il.1.303
+  text: Yea, go to now, make trial, that all these may see; forthwith thy dark blood shall gush about
+    my spear.”
+- lines:
+  - il.1.304
+  - il.1.305
+  text: Now when the twain had thus finished the battle of violent words, they stood up and dissolved
+    the assembly beside the Achaian ships.
+- lines:
+  - il.1.306
+  - il.1.307
+  text: Peleides went his way to his huts and trim ships with Menoitios’ son and his company;
+- lines:
+  - il.1.308
+  - il.1.311
+  text: and Atreides launched a fleet ship on the sea, and picked twenty oarsmen therefor, and embarked
+    the hecatomb for the god, and brought Chryseis of the fair cheeks and set her therein; and Odysseus
+    of many devices went to be their captain.
+- lines:
+  - il.1.312
+  - il.1.313
+  text: So these embarked and sailed over the wet ways; and Atreides bade the folk purify themselves.
+- lines:
+  - il.1.314
+  - il.1.317
+  text: So they purified themselves, and cast the defilements into the sea and did sacrifice to Apollo,
+    even unblemished hecatombs of bulls and goats, along the shore of the unvintaged sea; and the sweet
+    savour arose to heaven eddying amid the smoke.
+- lines:
+  - il.1.318
+  - il.1.321
+  text: 'Thus were they busied throughout the host; but Agamemnon ceased not from the strife wherewith
+    he threatened Achilles at the first; he spake to Talthybios and Eurybates that were his heralds and
+    nimble squires:'
+- lines:
+  - il.1.322
+  - il.1.325
+  text: “Go ye to the tent of Achilles Peleus’ son, and take Briseis of the fair cheeks by the hand and
+    lead her hither; and if he give her not, then will I myself go, and more with me, and seize her; and
+    that will be yet more grievous for him.”
+- lines:
+  - il.1.326
+  - il.1.326
+  text: So saying he sent them forth, and laid stern charge upon them.
+- lines:
+  - il.1.327
+  - il.1.328
+  text: Unwillingly went they along the beach of the unvintaged sea, and came to the huts and ships of
+    the Myrmidons.
+- lines:
+  - il.1.329
+  - il.1.330
+  text: Him found they sitting beside his hut and black ship; nor when he saw them was Achilles glad.
+- lines:
+  - il.1.331
+  - il.1.332
+  text: So they in dread and reverence of the king stood, and spake to him no word, nor questioned him.
+- lines:
+  - il.1.333
+  - il.1.336
+  text: 'But he knew in his heart, and spake to them: “All hail, ye heralds, messengers of Zeus and men,
+    come near; ye are not guilty in my sight, but Agamemnon that sent you for the sake of the damsel Briseis.'
+- lines:
+  - il.1.337
+  - il.1.344
+  text: Go now, heaven-sprung Patroklos, bring forth the damsel, and give them her to lead away. Moreover,
+    let the twain themselves be my witnesses before the face of the blessed gods and mortal men, yea and
+    of him, that king untoward, against the day when there cometh need of me hereafter to save them all
+    from shameful wreck. Of a truth he raveth with baleful mind, and hath not knowledge to look before
+    and after, that so his Achaians might battle in safety beside their ships.”
+- lines:
+  - il.1.345
+  - il.1.350
+  text: So said he, and Patroklos hearkened to his dear comrade, and led forth from the hut Briseis of
+    the fair cheeks, and gave them her to lead away. So these twain took their way back along the Achaians’
+    ships, and with them went the woman all unwilling. Then Achilles wept anon, and sat him down apart,
+    aloof from his comrades on the beach of the grey sea, gazing across the boundless main;
+- lines:
+  - il.1.351
+  - il.1.351
+  text: 'he stretched forth his hands and prayed instantly to his dear mother:'
+- lines:
+  - il.1.352
+  - il.1.354
+  text: “Mother, seeing thou didst of a truth bear me to so brief span of life, honour at the least ought
+    the Olympian to have granted me, even Zeus that thundereth on high; but now doth he not honour me,
+    no, not one whit.
+- lines:
+  - il.1.355
+  - il.1.356
+  text: Verily Atreus’ son, wide-ruling Agamemnon, hath done me dishonour; for he hath taken away my meed
+    of honour and keepeth her of his own violent deed.”
+- lines:
+  - il.1.357
+  - il.1.358
+  text: So spake he weeping, and his lady mother heard him as she sate in the sea-depths beside her aged
+    sire.
+- lines:
+  - il.1.359
+  - il.1.361
+  text: 'With speed arose she from the grey sea, like a mist, and sate her before the face of her weeping
+    son, and stroked him with her hand, and spake and called on his name:'
+- lines:
+  - il.1.362
+  - il.1.363
+  text: “My child, why weepest thou? What sorrow hath entered into they heart? Speak it forth, hide it
+    not in thy mind, that both may know it.”
+- lines:
+  - il.1.364
+  - il.1.364
+  text: 'Then with heavy moan Achilles fleet of foot spake to her:'
+- lines:
+  - il.1.365
+  - il.1.365
+  text: “Thou knowest it; why should I tell this to thee that knowest all!
+- lines:
+  - il.1.366
+  - il.1.367
+  text: We had fared to Thebe, the holy city of Eëtion, and laid it waste and carried hither all the spoils.
+- lines:
+  - il.1.368
+  - il.1.369
+  text: So the sons of the Achaians divided among them all aright; and for Atreides they set apart Chryseis
+    of the fair cheeks.
+- lines:
+  - il.1.370
+  - il.1.375
+  text: But Chryses, priest of Apollo the Far-darter, came unto the fleet ships of the mail-clad Achaians
+    to win his daughter’s freedom, and brought a ransom beyond telling, and bare in his hands the fillet
+    of Apollo the Far-darter upon a golden staff, and made his prayer unto all the Achaians, and most
+    of all to the two sons of Atreus, orderers of the host.
+- lines:
+  - il.1.376
+  - il.1.379
+  text: Then all the other Achaians cried assent, to reverence the priest and accept his goodly ransom;
+    yet the thing pleased not the heart of Agamemnon son of Atreus, but he roughly sent him away and laid
+    stern charge upon him.
+- lines:
+  - il.1.380
+  - il.1.385
+  text: So the old man went back in anger; and Apollo heard his prayers, seeing he loved him greatly,
+    and he aimed against the Argives his deadly darts. So the people began to perish in multitudes, and
+    the god’s shafts ranged everywhither throughout the wide host of the Achaians. Then of full knowledge
+    the seer declared to us the oracle of the Far-darter.
+- lines:
+  - il.1.386
+  - il.1.388
+  text: Forthwith I first bade propitiate the god; but wrath gat hold upon Atreus’ son thereat, and anon
+    he stood up and spake a threatening word, that hath now been accomplished.
+- lines:
+  - il.1.389
+  - il.1.390
+  text: Her the glancing-eyed Achaians are bringing on their fleet ship to Chryse, and bear with them
+    offerings to the king;
+- lines:
+  - il.1.391
+  - il.1.392
+  text: and the other but now the heralds went and took from my hut, even the daughter of Briseus, whom
+    the sons of the Achaians gave me.
+- lines:
+  - il.1.393
+  - il.1.393
+  text: Thou therefore, if indeed thou canst, guard thine own son;
+- lines:
+  - il.1.394
+  - il.1.395
+  text: betake thee to Olympus and beseech Zeus by any deed or word whereby thou ever didst make glad
+    his heart.
+- lines:
+  - il.1.396
+  - il.1.400
+  text: For oft have I heard thee proclaiming in my father’s halls and telling that thou alone amid the
+    immortals didst save the son of Kronos, lord of the storm-cloud, from shameful wreck, when all the
+    other Olympians would have bound him, even Hera and Poseidon and Pallas Athene.
+- lines:
+  - il.1.401
+  - il.1.406
+  text: Then didst thou, O goddess, enter in and loose him from his bonds, having with speed summoned
+    to high Olympus him of the hundred arms whom gods call Briareus, but all men call Aigaion; for he
+    is mightier even than his father—so he sate him by Kronion’s side rejoicing in his triumph, and the
+    blessed gods feared him withal and bound not Zeus.
+- lines:
+  - il.1.407
+  - il.1.408
+  text: This bring thou to his remembrance and sit by him and clasp his knees, if perchance he will give
+    succour to the Trojans;
+- lines:
+  - il.1.409
+  - il.1.412
+  text: and for the Achaians, hem them among their ships’ sterns about the bay, given over to slaughter;
+    that they may make trial of their king, and that even Atreides, wide-ruling Agamemnon, may perceive
+    his blindness, in that he honoured not at all the best of the Achaians.”
+- lines:
+  - il.1.413
+  - il.1.413
+  text: 'Then Thetis weeping made answer to him:'
+- lines:
+  - il.1.414
+  - il.1.414
+  text: “Ah me, my child, why reared I thee, cursed in my motherhood?
+- lines:
+  - il.1.415
+  - il.1.416
+  text: Would thou hadst been left tearless and griefless amid the ships, seeing thy lot is very brief
+    and endureth no long while;
+- lines:
+  - il.1.417
+  - il.1.418
+  text: but now art thou made short-lived alike and lamentable beyond all men; in an evil hour I bare
+    thee in our halls.
+- lines:
+  - il.1.419
+  - il.1.420
+  text: But I will go myself to snow-clad Olympus to tell this thy saying to Zeus, whose joy is in the
+    thunder, if perchance he may hearken to me.
+- lines:
+  - il.1.421
+  - il.1.422
+  text: 'But tarry thou now amid thy fleet-faring ships, and continue wroth with the Achaians, and refrain
+    utterly from battle:'
+- lines:
+  - il.1.423
+  - il.1.424
+  text: for Zeus went yesterday to Okeanos, unto the noble Ethiopians for a feast, and all the gods followed
+    with him;
+- lines:
+  - il.1.425
+  - il.1.427
+  text: but on the twelfth day will he return to Olympus, and then will I fare to Zeus’ palace of the
+    bronze threshold, and will kneel to him and think to win him.”
+- lines:
+  - il.1.428
+  - il.1.431
+  text: 'So saying she went her way and left him there, vexed in spirit for the fair-girdled woman’s sake,
+    whom they had taken perforce despite his will: and meanwhile Odysseus came to Chryse with the holy
+    hecatomb.'
+- lines:
+  - il.1.432
+  - il.1.435
+  text: When they were now entered within the deep haven, they furled their sails and laid them in the
+    black ship, and lowered the mast by the forestays and brought it to the crutch with speed, and rowed
+    her with oars to the anchorage.
+- lines:
+  - il.1.436
+  - il.1.439
+  text: Then they cast out the mooring stones and made fast the hawsers, and so themselves went forth
+    on to the sea-beach, and forth they brought the hecatomb for the Far-darter Apollo, and forth came
+    Chryseis withal from the seafaring ship.
+- lines:
+  - il.1.440
+  - il.1.441
+  text: 'Then Odysseus of many counsels brought her to the altar and gave her into her father’s arms,
+    and spake unto him:'
+- lines:
+  - il.1.442
+  - il.1.445
+  text: “Chryses, Agamemnon king of men sent me hither to bring thee thy daughter, and to offer to Phoebus
+    a holy hecatomb on the Danaans’ behalf, wherewith to propitiate the king that hath now brought sorrow
+    and lamentation on the Argives.”
+- lines:
+  - il.1.446
+  - il.1.448
+  text: So saying he gave her to his arms, and he gladly took his dear child; and anon they set in order
+    for the god the holy hecatomb about his well-builded altar;
+- lines:
+  - il.1.449
+  - il.1.449
+  text: next washed they their hands and took up the barley meal.
+- lines:
+  - il.1.450
+  - il.1.450
+  text: 'Then Chryses lifted up his hands and prayed aloud for them:'
+- lines:
+  - il.1.451
+  - il.1.452
+  text: “Hearken to me, god of the silver bow that standest over Chryse and holy Killa, and rulest Tenedos
+    with might;
+- lines:
+  - il.1.453
+  - il.1.456
+  text: 'even as erst thou heardest my prayer, and didst me honour, and mightily afflictest the people
+    of the Achaians, even so now fulfil me this my desire: remove thou from the Danaans forthwith the
+    loathly pestilence.”'
+- lines:
+  - il.1.457
+  - il.1.457
+  text: So spake he in prayer, and Phoebus Apollo heard him.
+- lines:
+  - il.1.458
+  - il.1.459
+  text: Now when they had prayed and sprinkled the barley meal, first they drew back the victims’ heads
+    and slaughtered them and flayed them,
+- lines:
+  - il.1.460
+  - il.1.461
+  text: and cut slices from the thighs and wrapped them in fat, making a double fold, and laid raw collops
+    thereon,
+- lines:
+  - il.1.462
+  - il.1.463
+  text: and the old man burnt them on cleft wood and made libation over them of gleaming wine; and at
+    his side the young men in their hands held five-pronged forks.
+- lines:
+  - il.1.464
+  - il.1.466
+  text: Now when the thighs were burnt and they had tasted the vitals, then sliced they all the rest and
+    pierced it through with spits, and roasted it carefully, and drew all off again.
+- lines:
+  - il.1.467
+  - il.1.468
+  text: So when they had rest from the task and had made ready the banquet, they feasted, nor was their
+    heart aught stinted of the fair banquet.
+- lines:
+  - il.1.469
+  - il.1.471
+  text: But when they had put away from them the desire of meat and drink, the young men crowned the bowls
+    with wine, and gave each man his portion after the drink-offering had been poured into the cups.
+- lines:
+  - il.1.472
+  - il.1.474
+  text: So all day long worshipped they the god with music, singing the beautiful paean, the sons of the
+    Achaians making music to the Far-darter; and his heart was glad to hear.
+- lines:
+  - il.1.475
+  - il.1.476
+  text: And when the sun went down and darkness came on them, they laid them to sleep beside the ship’s
+    hawsers;
+- lines:
+  - il.1.477
+  - il.1.478
+  text: and when rosy-fingered Dawn appeared, the child of morning, then set they sail for the wide camp
+    of the Achaians;
+- lines:
+  - il.1.479
+  - il.1.479
+  text: and Apollo the Far-darter sent them a favouring gale.
+- lines:
+  - il.1.480
+  - il.1.483
+  text: They set up their mast and spread the white sails forth, and the wind filled the sail’s belly
+    and the dark wave sang loud about the stem as the ship made way, and she sped across the wave, accomplishing
+    her journey.
+- lines:
+  - il.1.484
+  - il.1.487
+  text: So when they were now come to the wide camp of the Achaians, they drew up their black ship to
+    land high upon the sands, and set in line the long props beneath her; and themselves were scattered
+    amid their huts and ships.
+- lines:
+  - il.1.488
+  - il.1.489
+  text: But he sat by his swift-faring ships, still wroth, even the heaven-sprung son of Peleus, Achilles
+    fleet of foot;
+- lines:
+  - il.1.490
+  - il.1.492
+  text: he betook him neither to the assembly that is the hero’s glory, neither to war, but consumed his
+    heart in tarrying in his place, and yearned for the war-cry and for battle.
+- lines:
+  - il.1.493
+  - il.1.497
+  text: Now when the twelfth morn thereafter was come, then the gods that are for ever fared to Olympus
+    all in company, led of Zeus. And Thetis forgat not her son’s charge, but rose up from the sea-wave,
+    and at early morn mounted up to great heaven and Olympus.
+- lines:
+  - il.1.498
+  - il.1.499
+  text: There found she Kronos’ son of the far-sounding voice sitting apart from all on the topmost peak
+    of many-ridged Olympus.
+- lines:
+  - il.1.500
+  - il.1.502
+  text: 'So she sat before his face and with her left hand clasped his knees, and with her right touched
+    him beneath his chin, and spake in prayer to king Zeus son of Kronos:'
+- lines:
+  - il.1.503
+  - il.1.504
+  text: '“Father Zeus, if ever I gave thee aid amid the immortal gods, whether by word or deed, fulfil
+    thou this my desire:'
+- lines:
+  - il.1.505
+  - il.1.507
+  text: 'do honour to my son, that is doomed to earliest death of all men: now hath Agamemnon king of
+    men done him dishonour, for he hath taken away his meed of honour and keepeth her of his own violent
+    deed.'
+- lines:
+  - il.1.508
+  - il.1.510
+  text: But honour thou him, Zeus of Olympus, lord of counsel; grant thou victory to the Trojans the while
+    until the Achaians do my son honour and exalt him with recompense.”
+- lines:
+  - il.1.511
+  - il.1.513
+  text: 'So spake she; but Zeus the cloud-gatherer said no word to her, and sat long time in silence.
+    But even as Thetis had clasped his knees, so held she by him clinging, and questioned him yet a second
+    time:'
+- lines:
+  - il.1.514
+  - il.1.516
+  text: “Promise me now this thing verily, and bow thy head thereto; or else deny me, seeing there is
+    naught for thee to fear; that I may know full well how I among all gods am least in honour.”
+- lines:
+  - il.1.517
+  - il.1.517
+  text: 'Then Zeus the cloud-gatherer, sore troubled, spake to her:'
+- lines:
+  - il.1.518
+  - il.1.519
+  text: “Verily it is a sorry matter, if thou wilt set me at variance with Hera, whene’er she provoketh
+    me with taunting words.
+- lines:
+  - il.1.520
+  - il.1.521
+  text: Even now she upbraideth me ever amid the immortal gods, and saith that I aid the Trojans in battle.
+- lines:
+  - il.1.522
+  - il.1.523
+  text: But do thou now depart again, lest Hera mark aught; and I will take thought for these things to
+    fulfil them.
+- lines:
+  - il.1.524
+  - il.1.524
+  text: Come now, I will bow my head to thee, that thou mayest be of good courage;
+- lines:
+  - il.1.525
+  - il.1.527
+  text: for that, of my part, is the surest token amid the immortals; no word of mine is revocable nor
+    false nor unfulfilled when the bowing of my head hath pledged it.”
+- lines:
+  - il.1.528
+  - il.1.530
+  text: Kronion spake, and bowed his dark brow, and the ambrosial locks waved from the king’s immortal
+    head; and he made great Olympus quake.
+- lines:
+  - il.1.531
+  - il.1.535
+  text: Thus the twain took counsel and parted; she leapt therewith into the deep sea from glittering
+    Olympus, and Zeus fared to his own palace. All the gods in company arose from their seats before their
+    father’s face; neither ventured any to await his coming, but stood up all before him.
+- lines:
+  - il.1.536
+  - il.1.538
+  text: So he sate him there upon his throne; but Hera saw, and was not ignorant how that the daughter
+    of the Ancient of the sea, Thetis the silver-footed, had devised counsel with him.
+- lines:
+  - il.1.539
+  - il.1.539
+  text: 'Anon with taunting words spake she to Zeus the son of Kronos:'
+- lines:
+  - il.1.540
+  - il.1.540
+  text: “Now who among the gods, thou crafty of mind, hath devised counsel with thee?
+- lines:
+  - il.1.541
+  - il.1.543
+  text: It is ever thy good pleasure to hold aloof from me and in secret meditation to give thy judgments,
+    nor of thine own good will hast thou ever brought thyself to declare unto me the thing thou purposest.”
+- lines:
+  - il.1.544
+  - il.1.544
+  text: 'Then the father of gods and men made answer her:'
+- lines:
+  - il.1.545
+  - il.1.546
+  text: “Hera, think not thou to know all my sayings; hard they are for thee, even though thou art my
+    wife.
+- lines:
+  - il.1.547
+  - il.1.548
+  text: But whichsoever it is seemly for thee to hear, none sooner than thou shall know, be he god or
+    man.
+- lines:
+  - il.1.549
+  - il.1.550
+  text: Only when I will to take thought aloof from the gods, then do not thou ask of every matter nor
+    make question.”
+- lines:
+  - il.1.551
+  - il.1.551
+  text: Then Hera the ox-eyed queen made answer to him.
+- lines:
+  - il.1.552
+  - il.1.552
+  text: “Most dread son of Kronos, what word is this thou hast spoken?
+- lines:
+  - il.1.553
+  - il.1.554
+  text: Yea, surely of old I have not asked thee nor made question,
+- lines:
+  - il.1.555
+  - il.1.557
+  text: but in my heart sore afraid lest thou have been won over by silver-footed Thetis, daughter of
+    the Ancient of the sea, for she at early morn sat by thee and clasped thy knees.
+- lines:
+  - il.1.558
+  - il.1.559
+  text: To her I deem thou gavest a sure pledge that thou wilt do honour to Achilles, and lay many low
+    beside the Achaians’ ships.”
+- lines:
+  - il.1.560
+  - il.1.560
+  text: 'To her made answer Zeus the cloud-gatherer:'
+- lines:
+  - il.1.561
+  - il.1.561
+  text: “Lady, Good lack! ever art thou imagining, nor can I escape thee;
+- lines:
+  - il.1.562
+  - il.1.563
+  text: yet shalt thou in no wise have power to fulfil, but wilt be the further from my heart; that shall
+    be even the worse for thee.
+- lines:
+  - il.1.564
+  - il.1.564
+  text: And if it be so, then such must my good pleasure be.
+- lines:
+  - il.1.565
+  - il.1.567
+  text: Abide thou in silence and hearken to my bidding, lest all the gods that are in Olympus keep not
+    off from thee my visitation, when I put forth my hands unapproachable against thee.”
+- lines:
+  - il.1.568
+  - il.1.569
+  text: He said, and Hera the ox-eyed queen was afraid, and sat in silence, curbing her heart;
+- lines:
+  - il.1.570
+  - il.1.570
+  text: but throughout Zeus’ palace the gods of heaven were troubled.
+- lines:
+  - il.1.571
+  - il.1.572
+  text: 'Then Hephaistos the famed craftsman began to make harangue among them, to do kindness to his
+    mother, white-armed Hera:'
+- lines:
+  - il.1.573
+  - il.1.576
+  text: “Verily this will be a sorry matter, neither any more endurable, if ye twain thus fight for mortals’
+    sakes, and bring wrangling among the gods; neither will there any more be joy of the goodly feast,
+    seeing that evil triumpheth.
+- lines:
+  - il.1.577
+  - il.1.579
+  text: So I give counsel to my mother, though herself is wise, to do kindness to our dear father Zeus,
+    that our father upbraid us not again and cast the banquet in confusion.
+- lines:
+  - il.1.580
+  - il.1.581
+  text: What if the Olympian, the lord of the lightning, will to dash us from our seats! for he is strongest
+    far.
+- lines:
+  - il.1.582
+  - il.1.583
+  text: Nay, approach thou him with gentle words, then will the Olympian forthwith be gracious unto us.”
+- lines:
+  - il.1.584
+  - il.1.585
+  text: 'So speaking he rose up and sat in his dear mother’s hand the twy-handled cup, and spake to her:'
+- lines:
+  - il.1.586
+  - il.1.586
+  text: “Be of good courage, mother mine, and endure, though thou art vexed,
+- lines:
+  - il.1.587
+  - il.1.589
+  text: lest I behold thee, thou art so dear, chastised before mine eyes, and then shall I not be able
+    for all my sorrow to save thee; for the Olympian is a hard foe to face.
+- lines:
+  - il.1.590
+  - il.1.591
+  text: Yea, once ere this, when I was fain to save thee, he caught me by my foot and hurled me from the
+    heavenly threshold;
+- lines:
+  - il.1.592
+  - il.1.593
+  text: all day I flew, and at the set of sun I fell in Lemnos, and little life was in me.
+- lines:
+  - il.1.594
+  - il.1.594
+  text: There did the Sintian folk forthwith tend me for my fall.”
+- lines:
+  - il.1.595
+  - il.1.596
+  text: He spake, and the white-armed goddess Hera smiled, and smiling took the cup at her son’s hand.
+- lines:
+  - il.1.597
+  - il.1.598
+  text: Then he poured wine to all the other gods from right to left, ladling the sweet nectar from the
+    bowl.
+- lines:
+  - il.1.599
+  - il.1.600
+  text: And laughter unquenchable arose amid the blessed gods to see Hephaistos bustling through the palace.
+- lines:
+  - il.1.601
+  - il.1.604
+  text: So feasted they all day till the setting of the sun; nor was their soul aught stinted of the fair
+    banquet, nor of the beauteous lyre that Apollo held, and the Muses singing alternately with sweet
+    voice.
+- lines:
+  - il.1.605
+  - il.1.608
+  text: Now when the bright light of the sun was set, these went each to his own house to sleep, where
+    each one had his palace made with cunning device by famed Hephaistos the lame god;
+- lines:
+  - il.1.609
+  - il.1.610
+  text: and Zeus the Olympian, the lord of lightning, departed to his couch where he was wont of old to
+    take his rest, whenever sweet sleep visited him.
+- lines:
+  - il.1.611
+  - il.1.611
+  text: There went he up and slept, and beside him was Hera of the golden throne.

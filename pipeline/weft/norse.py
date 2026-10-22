@@ -92,10 +92,14 @@ def _ipa(segs: list[Seg], scheme: str) -> list[str]:
             out.append("ʏ" if t == "*" else (ON_V if scheme == "old-norse" else MI_V)[t])
             continue
         if t == "h" and nxt is not None and not nxt.vowel:
+            if nxt.text == "j":                                    # hjarta, hjörr: Old Norse keeps the h; Icelandic says ç
+                out.append("h" if scheme == "old-norse" else "ç"); continue
             if nxt.text == "v":
                 out.append("x" if scheme == "old-norse" else "k"); continue
             out.append(""); continue                               # hl hr hn: devoice the next
         if prev is not None and prev.text == "h" and not s.vowel and k == 1:
+            if t == "j":
+                out.append("j" if scheme == "old-norse" else ""); continue
             if t == "v":
                 out.append("w" if scheme == "old-norse" else "v"); continue
             out.append({"l": "l̥", "r": "r̥", "n": "n̥"}.get(t, t)); continue
@@ -140,11 +144,11 @@ RESPELL = {
     "old-norse": [("ɔu", "ou"), ("øy", "öy"), ("aː", "aa"), ("eː", "ay"), ("iː", "ee"), ("oː", "oh"),
                   ("uː", "oo"), ("yː", "üü"), ("ɛː", "ê"), ("øː", "öö"), ("ɔ", "aw"), ("ø", "ö"),
                   ("y", "ü"), ("θ", "th"), ("ð", "dh"), ("ɣ", "gh"), ("x", "kh"), ("r̥", "hr"),
-                  ("l̥", "hl"), ("n̥", "hn"), ("ŋ", "ng"), ("ɡ", "g"), ("j", "y")],
+                  ("l̥", "hl"), ("n̥", "hn"), ("ŋ", "ng"), ("ɡ", "g"), ("hj", "hy"), ("j", "y")],
     "modern-icelandic": [("jɛ", "ye"), ("øy", "öy"), ("au", "ow"), ("ou", "oh"), ("ai", "ai"),
                          ("ei", "ay"), ("ɛ", "e"), ("ɪ", "i"), ("ɔ", "o"), ("ʏ", "ü"), ("œ", "ö"),
                          ("i", "ee"), ("u", "oo"), ("θ", "th"), ("ð", "dh"), ("ɣ", "gh"),
-                         ("r̥", "hr"), ("l̥", "hl"), ("n̥", "hn"), ("ŋ", "ng"), ("ɡ", "g"), ("j", "y")],
+                         ("r̥", "hr"), ("l̥", "hl"), ("n̥", "hn"), ("ŋ", "ng"), ("ɡ", "g"), ("ç", "hy"), ("j", "y")],
 }
 KEY = {
     "old-norse": [
@@ -170,6 +174,7 @@ KEY = {
         ("tl", "ll: allar = atlar"),
         ("tn", "nn after a long vowel: einn = aytn"),
         ("kv", "hv: hvar = kvar"),
+        ("hy", "hj: a breathy y, as in huge (hjarta)"),
         ("-ür", "final r after a consonant gains a vowel: frændr = frændur"),
         ("CAPS", "stress: always the first syllable"),
     ],

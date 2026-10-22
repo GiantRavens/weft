@@ -1,0 +1,17 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '514'
+  - '515'
+  - '516'
+counts:
+  lines: 47
+  tokens: 876
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- lemma and morphology are an automatic parse (GLAUx), not hand-checked; every token was read, and 66 of 876 were corrected in curated/ (lemma, gender, case, tense, part of speech)
+- long a/i/u not marked in the spelling; the quantity table covers only the words it lists
+- Davies and Vaughan are read from OCR of a later reprint and checked against the scan where the OCR is unclear

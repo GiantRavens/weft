@@ -1,0 +1,77 @@
+work: plato-republic
+title: Republic
+author: Plato
+language: grc
+kind: philosophy
+wikipedia: {title: "Allegory of the cave", match: work}
+prefix: rep
+urn: urn:cts:greekLit:tlg0059.tlg030
+unit: section
+section_noun: passage
+written:
+  year: -375
+  display: "about 375 BC"
+  label: written by Plato at Athens about 375 BC, a dialogue in which Socrates narrates a conversation held at the Piraeus
+status: phase-0
+extent: {is: section, of: "the whole image of the cave, 514a1 to 517a7, up to where Socrates begins to interpret it; the Republic has 10 books"}
+pilot:
+  sections:
+  - '514'
+  - '515'
+  - '516'
+edition:
+  id: perseus-grc2
+  name: Perseus perseus-grc2 (Burnet 1902), passage in a Weft edition file
+  format: weft-edition
+  file: edition.yaml
+  license: CC BY-SA 4.0
+treebank:
+  id: glaux
+  name: 'GLAUx, the Greek Language Automated corpus (Keersmaekers), Republic: automatic parse, not hand-checked'
+  format: glaux
+  subdocs:
+  - '514'
+  - '515'
+  - '516'
+  - '517'
+  sentences: [29032, 29076]          # GLAUx's subdocs follow Perseus's page divisions; the passage is these sentences
+  file: sources/glaux-0059-030.xml
+  url: https://raw.githubusercontent.com/perseids-publications/glaux-trees/12606b3426f1e5245413f3a8e1c5e0b22348a13c/public/xml/0059-030.xml
+  sha256: 4f46dc917913b1bc9ba48de0cc27f0c10eb1f528582677130706f5e8a6704792
+  license: CC BY-SA 4.0
+  license_url: https://github.com/perseids-publications/glaux-trees/blob/master/TREEBANK_LICENSE
+schemes:
+- restored
+- erasmian
+quantities: pipeline/weft/data/grc_quantities.yaml
+sources_extra:
+- id: perseus-grc2
+  name: Perseus canonical-greekLit TEI edition (Burnet)
+  file: sources/perseus-grc2.xml
+  url: https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/bcc5df0602f3b3fe6fefe1e1d575602a25ab1db6/data/tlg0059/tlg030/tlg0059.tlg030.perseus-grc2.xml
+  sha256: 5f9f8ad62cdbfb0446223cc93a52215614c10e66c4ffd53a99d497ded855edfd
+  license: CC BY-SA 4.0
+  license_url: https://github.com/PerseusDL/canonical-greekLit#license
+translations:
+- id: jowett1888
+  translator: Benjamin Jowett
+  year: 1888
+  form: prose, The Republic of Plato, third edition (Oxford, 1888)
+  license: public-domain
+  license_url: https://www.gutenberg.org/ebooks/55201
+  file: sources/jowett1888.txt
+  url: https://www.gutenberg.org/cache/epub/55201/pg55201.txt
+  sha256: 8a30ff0c9c6384c218e28298aee340fea0fea820f81b59bb63e5f640d27a7460
+- id: davies-vaughan1852
+  translator: John Llewelyn Davies and David James Vaughan
+  year: 1852
+  form: prose, The Republic of Plato (a later reprint, A. L. Burt, New York)
+  license: public-domain
+  license_url: https://archive.org/details/cu31924014570208
+  file: sources/davies-vaughan1852.txt
+  url: https://archive.org/download/cu31924014570208/cu31924014570208_djvu.txt
+  sha256: b7b4791f46ca6c918cabe3790e5d2f404a489c67974becd110e86c8cdeb8bf2c
+predicted_gaps:
+- lemma and morphology are an automatic parse (GLAUx), not hand-checked; every token was read, and 66 of 876 were corrected in curated/ (lemma, gender, case, tense, part of speech)
+- long a/i/u not marked in the spelling; the quantity table covers only the words it lists
+- Davies and Vaughan are read from OCR of a later reprint and checked against the scan where the OCR is unclear

@@ -1,0 +1,35 @@
+# The three verses of chapter 14, which IcePaHC leaves out, from the edition of G. Magnússon and
+# G. Thordarson (Copenhagen, 1853) as transcribed on heimskringla.no (revision 35933). They keep that
+# edition's spelling (göri, sèr, enn), which is older than the modernized spelling of the IcePaHC prose
+# around them. The parentheses mark the interlaced clauses of the skaldic stanza, as the 1853 print sets
+# them. Each verse follows the sentence that introduces it; line ids are <sentence>v<line>. Where the
+# 1853 spelling would mislead the sound (è for é, ö for ø in göri and gjör, the 19th-century ei of
+# Keingálu, enn and berr for en and ber), the line gives `say`, the normalized form the sound is read from.
+verify_in: sources/heimskringla-grettis.json
+verses:
+- after: 31
+  lines:
+  - {text: "Þat göri ek víst, er vetrar,", say: "Þat gøri ek víst, er vetrar,"}
+  - ving ek háls á kjúklingum;
+  - {text: "enn þótt ellri finnist,", say: "en þótt ellri finnist,"}
+  - {text: "einn berr ek af sèrhverri.", say: "einn ber ek af sérhverri."}
+- after: 53
+  lines:
+  - Mik vill menja stökkvir
+  - (mjök kenni ek þess) brenna,
+  - (hoddagrund!) á höndum
+  - (höfugt ráð er þat) báðum.
+  - Læt ek á hringa hreyti,
+  - (hörgerðr!) tekit verða
+  - {text: "(gjör sè ek gildra sára", say: "(gørr sé ek gildra sára"}
+  - gögl) úskornum nöglum.
+- after: 94
+  lines:
+  - Fyrst hefir flegna trausta
+  - (fær prettað mik Grettir;
+  - fljóð eru flest hin prúðu
+  - {text: "fullmálug) Keingálu.", say: "fullmálug) Kengálu."}
+  - Víst man venja flestar
+  - {text: "vitr drengr af sèr lengi", say: "vitr drengr af sér lengi"}
+  - (hróðr nemi hrings hin fríða
+  - hlín) kvaðningar mínar.

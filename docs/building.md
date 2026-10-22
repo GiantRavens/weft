@@ -89,6 +89,10 @@ stanza-text`, which converts the wikitext to the stanza-text layout (speaker lin
 and the stanza numbers kept, markup dropped), records the conversion in the manifest, and lets
 `weft acquire` reproduce the file and verify its sha. A dialogue poem's speaker lines become the stanza
 headings on the page. Scaffold such a work with `--unit stanza --format stanza-text`.
+A saga page (prose with verses) is pinned with `--as wikitext`, which keeps the wikitext as plain text
+for a hand-built `edition.yaml` in the weft-edition format: a prose sentence is a string, a verse line is
+`{v: "..."}` and is marked `verse: true` on the page, and `verify_strip` removes the references, tags and
+quote markup before the verbatim check (Ragnars saga loðbrókar, Þáttr af Ragnars sonum).
 
 **Internet Archive.** `https://archive.org/download/<id>/<id>_djvu.txt` is the OCR text of a scan.
 Fraktur OCR is usable with the German module's `check` (below); the long s, the superscript-e
@@ -119,7 +123,9 @@ Public domain or CC BY-SA only, and the credits say which.
 
 **Translations.** Project Gutenberg and the English Wikisource carry most of what is public domain.
 "Public domain" is judged by the translator's death plus seventy years, not by US publication
-alone; a translation that is free only in the United States is cited as a reference.
+alone. A translation that is free only in the United States is cited as a reference, unless it is
+the only older English for the work: then it may be printed (Sadler 1918, Schlauch 1930), with the
+license line saying US only and a predicted gap saying so again.
 
 ## Patterns in the edition file
 
@@ -172,10 +178,19 @@ already written as UD features is passed through. The expander checks every surf
 generated text and refuses a spec that does not match it, so the ids cannot drift; it is the same
 expansion the Hávamál overlays for stanzas 81 to 164 were produced with.
 
+A ` | note` on a prose line has no field on the page; the expander keeps it as a comment above the
+line's entries (`# rag.9.17: bæði is the subjunctive of biðja`), so the reviewer reads the reason where
+the annotation is.
+
 Method: build a reuse map from the overlays of sibling works (`weft overlay --reuse <work>` prints
 the most common annotation for each form), fill the matches, and then read every line in context
 and override what the context changes. The overlay's `by:` names the method; `status: draft`
 stays until a human reviewer lifts it.
+
+When several annotators work one long text in parallel (Ragnars saga, 20 chapters, seven hands), write
+the shared convention table first: the frequent forms with their analysis (er, at, sem, þá, sá, þessi,
+ekki, fyrr against fyrri), the headword for each variant (yðvarr, not yðarr), and the fixed English form
+of every name. The reviews still found the residue there, in forms the table did not list.
 
 ## Gotchas already paid for
 
@@ -203,7 +218,7 @@ stays until a human reviewer lifts it.
   corrections in 748 tokens. Read every token of a GLAUx work, not a sample.
 - The UD conversion of IcePaHC is automatic: it drops or adds person and case features (a case on the
   verb mun), converts þú and þetta as proper nouns, and now and then gives a wrong lemma. Grettis saga
-  chapter 14 needed 37 corrections in about 1,100 tokens.
+  chapter 14 needed 54 corrections in about 1,100 tokens.
 - A `verify_corrections` entry replaces every match in the source, so key it on context unique to the
   line (EXERCITU WILLELMI, not WILLELMI). The Bayeux transcription regularizes names the cloth spells
   otherwise; check a caption against the photograph and the 19th-century prints, not only the
@@ -213,3 +228,35 @@ stays until a human reviewer lifts it.
 - Long translations read from OCR (Taylor 1801, M'Mahon 1857) need the page image wherever the OCR
   is unclear or the scan has margin notes: `https://archive.org/download/<id>/page/n<leaf-1>_w1400.jpg`,
   with the leaf from `<id>_page_numbers.json`.
+- GLAUx's `subdoc` follows the Perseus page divisions, which can fall a few words from the printed
+  page break, and a chapter can begin or end inside one (Republic 517, Politics 1252a, Ethics 1094b).
+  Name the passage's first and last GLAUx sentence ids in the manifest, `treebank.sentences: [first,
+  last]`, so the loader takes only those sentences.
+- GLAUx splits crasis into two words (κ- + ἐκεῖνα for κἀκεῖνα, τ- + ἄλλα for τἆλλα). The loader rejoins
+  them and gives the token the first part's parse; correct it in curated/ to the content word.
+- GLAUx tags the neuter article and adjective that head an item of a list (Marcus 1.1 to 1.17, τὸ
+  καλόηθες) now nominative and now accusative. Choose one reading for the whole list and say so; in
+  Meditations book 1 that choice accounts for half of the 260 correction entries.
+- A colon followed by a space inside an unquoted YAML value (an alt text such as "Painted page: a
+  woman ...") breaks the whole credits file and with it every build. Quote such values.
+- When several hands gloss one work in parallel, settle the shared conventions first: the potential
+  optative beside ἄν, the substantive article, adverbial accusatives, and the gloss for the key term
+  (κοινωνία as "partnership"). The reviews of Republic and Politics found most of their defects there.
+- The AGDT writes elision with a combining psili (δ̓, ἄλγἐ, ἄῤ) and splits οὐδʼ into οὐ + δ̓. The
+  reconciler reads a psili on a word-final vowel after a consonant, or on a final rho, as elision, and
+  rejoins a split pair; where the treebank cites a few words to the neighboring line (Iliad 1.154,
+  1.526) it borrows them and reports `tb-line-borrow`.
+- The Latin module reads ngu before a vowel as gw (sanguis, lingua) and eu as one syllable only in seu,
+  neu, ceu, heu and leuca; in deus, meus and eum it stays two.
+- A Wikisource transcription of an inscription can carry stray marks (tildes in the Res Gestae) and
+  spacing slips (a word split by a space, two words run together). Remove the marks with `verify_strip`
+  and declare each spacing change in `verify_corrections`, so every token on the page is one word.
+- The heimskringla normalized prose prints a dash between words as ` -- `. The drafter joins a free-standing
+  dash to the word before it with a no-break space (`inni,\u00a0--`) and strips it as punctuation; the
+  trailing-punctuation pattern must accept a dash of more than one character, or the word keeps it.
+- Old Norse hj is [hj] in the old-norse scheme and [ç] in modern Icelandic (hjarta, hjörvi). The norse
+  module once read it as [j] in both; a change to a sound rule is checked by redrafting every work in the
+  language and diffing gen, which should show only the tokens the rule names.
+- A word that is a homograph of a convention-table form (bæði the verb, heim the noun heimr, kveðr from
+  kveðja) is where parallel annotators depart from the table; ask for a ` | note` on each departure.
+

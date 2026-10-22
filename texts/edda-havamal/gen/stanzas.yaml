@@ -2911,8 +2911,8 @@ lines:
   - id: hav.21.1.1
     surface: Hjarðir
     sound:
-      old-norse: {ipa: ˈjar.ðir, respell: YAR-dhir}
-      modern-icelandic: {ipa: ˈjar.ðɪr, respell: YAR-dhir}
+      old-norse: {ipa: ˈhjar.ðir, respell: HYAR-dhir}
+      modern-icelandic: {ipa: ˈçar.ðɪr, respell: HYAR-dhir}
   - id: hav.21.1.2
     surface: þat
     sound:
@@ -5306,8 +5306,8 @@ lines:
     surface: hjarta
     punct: ','
     sound:
-      old-norse: {ipa: ˈjar.ta, respell: YAR-ta}
-      modern-icelandic: {ipa: ˈjar.ta, respell: YAR-ta}
+      old-norse: {ipa: ˈhjar.ta, respell: HYAR-ta}
+      modern-icelandic: {ipa: ˈçar.ta, respell: HYAR-ta}
 - id: hav.37.5
   cite: urn:weft:non:edda.havamal.jonsson-heimskringla:37.5
   stanza: 37
@@ -7911,8 +7911,8 @@ lines:
   - id: hav.55.4.5
     surface: hjarta
     sound:
-      old-norse: {ipa: ˈjar.ta, respell: YAR-ta}
-      modern-icelandic: {ipa: ˈjar.ta, respell: YAR-ta}
+      old-norse: {ipa: ˈhjar.ta, respell: HYAR-ta}
+      modern-icelandic: {ipa: ˈçar.ta, respell: HYAR-ta}
 - id: hav.55.5
   cite: urn:weft:non:edda.havamal.jonsson-heimskringla:55.5
   stanza: 55
@@ -9270,10 +9270,12 @@ lines:
   text: -- -- -- --
   tokens:
   - id: hav.65.1.1
-    surface: -- -- -- --
+    surface: --
+    lead: -- 
+    punct:  -- --
     sound:
-      old-norse: {ipa: -- -- -- --, respell: -- -- -- --}
-      modern-icelandic: {ipa: -- -- -- --, respell: -- -- -- --}
+      old-norse: {ipa: --, respell: --}
+      modern-icelandic: {ipa: --, respell: --}
 - id: hav.65.2
   cite: urn:weft:non:edda.havamal.jonsson-heimskringla:65.2
   stanza: 65
@@ -10138,8 +10140,8 @@ lines:
   - id: hav.71.2.1
     surface: hjörð
     sound:
-      old-norse: {ipa: jɔrð, respell: yawrdh}
-      modern-icelandic: {ipa: jœrð, respell: yördh}
+      old-norse: {ipa: hjɔrð, respell: hyawrdh}
+      modern-icelandic: {ipa: çœrð, respell: hyördh}
   - id: hav.71.2.2
     surface: rekr
     sound:
@@ -12096,8 +12098,8 @@ lines:
   - id: hav.84.5.3
     surface: hjörtu
     sound:
-      old-norse: {ipa: ˈjɔr.tu, respell: YAWR-tu}
-      modern-icelandic: {ipa: ˈjœr.tʏ, respell: YÖR-tü}
+      old-norse: {ipa: ˈhjɔr.tu, respell: HYAWR-tu}
+      modern-icelandic: {ipa: ˈçœr.tʏ, respell: HYÖR-tü}
   - id: hav.84.5.4
     surface: sköpuð
     punct: ','
@@ -13614,8 +13616,8 @@ lines:
   - id: hav.95.2.3
     surface: hjarta
     sound:
-      old-norse: {ipa: ˈjar.ta, respell: YAR-ta}
-      modern-icelandic: {ipa: ˈjar.ta, respell: YAR-ta}
+      old-norse: {ipa: ˈhjar.ta, respell: HYAR-ta}
+      modern-icelandic: {ipa: ˈçar.ta, respell: HYAR-ta}
   - id: hav.95.2.4
     surface: nær
     punct: ','
@@ -13835,8 +13837,8 @@ lines:
   - id: hav.96.4.3
     surface: hjarta
     sound:
-      old-norse: {ipa: ˈjar.ta, respell: YAR-ta}
-      modern-icelandic: {ipa: ˈjar.ta, respell: YAR-ta}
+      old-norse: {ipa: ˈhjar.ta, respell: HYAR-ta}
+      modern-icelandic: {ipa: ˈçar.ta, respell: HYAR-ta}
 - id: hav.96.5
   cite: urn:weft:non:edda.havamal.jonsson-heimskringla:96.5
   stanza: 96
@@ -18396,8 +18398,8 @@ lines:
     surface: hjarta
     punct: ','
     sound:
-      old-norse: {ipa: ˈjar.ta, respell: YAR-ta}
-      modern-icelandic: {ipa: ˈjar.ta, respell: YAR-ta}
+      old-norse: {ipa: ˈhjar.ta, respell: HYAR-ta}
+      modern-icelandic: {ipa: ˈçar.ta, respell: HYAR-ta}
 - id: hav.121.9
   cite: urn:weft:non:edda.havamal.jonsson-heimskringla:121.9
   stanza: 121
@@ -23426,8 +23428,8 @@ lines:
   - id: hav.146.4.1
     surface: Hjalp
     sound:
-      old-norse: {ipa: jalp, respell: yalp}
-      modern-icelandic: {ipa: jalp, respell: yalp}
+      old-norse: {ipa: hjalp, respell: hyalp}
+      modern-icelandic: {ipa: çalp, respell: hyalp}
   - id: hav.146.4.2
     surface: heitir
     sound:
@@ -23462,8 +23464,8 @@ lines:
   - id: hav.146.5.4
     surface: hjalpa
     sound:
-      old-norse: {ipa: ˈjal.pa, respell: YAL-pa}
-      modern-icelandic: {ipa: ˈjal.pa, respell: YAL-pa}
+      old-norse: {ipa: ˈhjal.pa, respell: HYAL-pa}
+      modern-icelandic: {ipa: ˈçal.pa, respell: HYAL-pa}
   - id: hav.146.5.5
     surface: mun
     sound:
@@ -25431,8 +25433,8 @@ lines:
     surface: hjörum
     punct: .
     sound:
-      old-norse: {ipa: ˈjɔ.rum, respell: YAW-rum}
-      modern-icelandic: {ipa: ˈjœ.rʏm, respell: YÖ-rüm}
+      old-norse: {ipa: ˈhjɔ.rum, respell: HYAW-rum}
+      modern-icelandic: {ipa: ˈçœ.rʏm, respell: HYÖ-rüm}
 - id: hav.159.1
   cite: urn:weft:non:edda.havamal.jonsson-heimskringla:159.1
   stanza: 159

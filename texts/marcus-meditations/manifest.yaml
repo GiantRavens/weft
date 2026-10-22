@@ -13,9 +13,26 @@ written:
   display: "AD 170–180"
   label: written about AD 170–180, private notes kept in Greek by the Roman emperor, much of it on campaign
 status: phase-0
-extent: {is: section, of: "book 2 of 12"}
+extent: {is: section, of: "books 1 and 2 of 12"}
 pilot:
   sections:
+  - '1.1'
+  - '1.2'
+  - '1.3'
+  - '1.4'
+  - '1.5'
+  - '1.6'
+  - '1.7'
+  - '1.8'
+  - '1.9'
+  - '1.10'
+  - '1.11'
+  - '1.12'
+  - '1.13'
+  - '1.14'
+  - '1.15'
+  - '1.16'
+  - '1.17'
   - '2.1'
   - '2.2'
   - '2.3'
@@ -35,7 +52,7 @@ pilot:
   - '2.17'
 edition:
   id: perseus-grc2
-  name: Perseus perseus-grc2 (Leopold 1908), Book 2 in a Weft edition file
+  name: Perseus perseus-grc2 (Leopold 1908), Books 1 and 2 in a Weft edition file
   format: weft-edition
   file: edition.yaml
   license: CC BY-SA 4.0
@@ -44,6 +61,48 @@ treebank:
   name: 'GLAUx, the Greek Language Automated corpus (Keersmaekers), Meditations: automatic parse, not hand-checked'
   format: glaux
   subdocs:
+  - '1.1.1'
+  - '1.2.1'
+  - '1.3.1'
+  - '1.4.1'
+  - '1.5.1'
+  - '1.6.1'
+  - '1.7.1'
+  - '1.7.2'
+  - '1.7.3'
+  - '1.8.1'
+  - '1.8.2'
+  - '1.9.1'
+  - '1.9.2'
+  - '1.9.3'
+  - '1.10.1'
+  - '1.11.1'
+  - '1.12.1'
+  - '1.13.1'
+  - '1.14.1'
+  - '1.14.2'
+  - '1.15.1'
+  - '1.15.2'
+  - '1.15.3'
+  - '1.16.1'
+  - '1.16.2'
+  - '1.16.3'
+  - '1.16.4'
+  - '1.16.5'
+  - '1.16.6'
+  - '1.16.7'
+  - '1.16.8'
+  - '1.16.9'
+  - '1.16.10'
+  - '1.17.1'
+  - '1.17.2'
+  - '1.17.3'
+  - '1.17.4'
+  - '1.17.5'
+  - '1.17.6'
+  - '1.17.7'
+  - '1.17.8'
+  - '1.17.9'
   - '2.1.1'
   - '2.2.1'
   - '2.3.1'
@@ -108,7 +167,9 @@ translations:
   url: https://www.gutenberg.org/cache/epub/2680/pg2680.txt
   sha256: 6977474f82a39dd88a4af31a59504821658174d33c177732c54357e4d680b96c
 predicted_gaps:
-- lemma and morphology are an automatic parse (GLAUx), not hand-checked; expect some errors (Book 2 review corrected 142 of 1409 tokens in 2.2-2.17, see curated/)
+- lemma and morphology are an automatic parse (GLAUx), read token by token and corrected in curated/; book 2 needed 142 corrections in 1409 tokens of 2.2-2.17; book 1 has 260 entries in 1847 tokens, of which 129 only set the article and adjective heading an item of the list (τὸ καλόηθες) to accusative, a form identical with the nominative, which GLAUx tags now one way and now the other; the other 131 correct lemmas, gender, case, tense and part of speech
+- 'form-mismatch and no-treebank-word, 3 each, in book 1: 1.16.29, where Leopold prints φελώνῃ and the GLAUx text reads τελώνῃ, and the quotation marks on ʽθεῶν and δεῖται.ʼ in 1.17.23; lemma and morph for all three are supplied in curated/'
+- '1.14.3 breaks off after the article (ἐν τῇ τιμῇ τῆς ·, with no noun after τῆς; Long translates "in my regard for philosophy"); the page prints the high stop as Leopold sets it'
 - Koine pronunciation of the late 2nd century is reconstructed; Marcus was a Latin speaker writing Greek
 - 'form-mismatch and no-treebank-word, 2 each, in 2.13: the Perseus text prints the Pindar quotation in ʽ ʼ marks, which the tokenizer keeps on τὰ and ἐρευνῶντος; lemma and morph for both are supplied in curated/'
 - 'morph-empty-declinable, 2, in 2.14: GLAUx tags the indeclinable numerals δύο and ἑκατόν as adjectives with no inflection; the tag is filled in curated/'

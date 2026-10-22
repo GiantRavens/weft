@@ -25,6 +25,8 @@ VERSION = "0.1"
 MACRON = "̄"
 VOWELS = set("aeiouy")
 DIPHTHONGS = {"ae", "au", "oe"}
+# eu is one syllable only in these words (seu, neu, heu and the Gaulish leuca); in deus, meus, eum it is two
+EU_WORDS = {"seu", "neu", "ceu", "heu", "heus", "leuca", "leucae", "leucam", "leucas", "leucis"}
 ENCLITICS = ("que", "ne", "ve")
 STOPS = set("pbtdcgk") | {"ph", "th", "ch"}
 LIQUIDS = set("lr")
@@ -47,6 +49,7 @@ def _segments(word: str) -> list[Seg]:
             chars[-1] = (chars[-1][0], True)
         elif not ud.combining(ch):
             chars.append((ch, False))
+    plain = "".join(ch for ch, _ in chars)
     segs: list[Seg] = []
     i = 0
     while i < len(chars):
@@ -54,6 +57,9 @@ def _segments(word: str) -> list[Seg]:
         nxt = chars[i + 1][0] if i + 1 < len(chars) else ""
         if c == "q" and nxt == "u":
             segs.append(Seg("qu", False)); i += 2; continue
+        if c == "g" and nxt == "u" and i > 0 and chars[i - 1][0] == "n" and i + 2 < len(chars) \
+                and chars[i + 2][0] in VOWELS and chars[i + 2][0] != "u":
+            segs.append(Seg("gu", False)); i += 2; continue        # sanguis, lingua: u is consonantal after ng
         if c in "cpt" and nxt == "h":
             segs.append(Seg(c + "h", False)); i += 2; continue
         if c == "x":
@@ -62,7 +68,8 @@ def _segments(word: str) -> list[Seg]:
             segs.append(Seg("j", False)); i += 1; continue      # iūnctus, iam: consonantal i
         if c in VOWELS:
             pair = c + nxt
-            if pair in DIPHTHONGS and not mac and not (i + 1 < len(chars) and chars[i + 1][1]):
+            if (pair in DIPHTHONGS or (pair == "eu" and plain in EU_WORDS)) and not mac \
+                    and not (i + 1 < len(chars) and chars[i + 1][1]):
                 segs.append(Seg(pair, True, True)); i += 2; continue
             segs.append(Seg(c, True, mac)); i += 1; continue
         segs.append(Seg(c, False)); i += 1
@@ -118,19 +125,19 @@ def _front(seg: Seg | None) -> bool:
 
 def _vowel_ipa(v: Seg, scheme: str) -> str:
     if scheme == "classical":
-        if v.text in DIPHTHONGS:
-            return {"ae": "ae", "au": "au", "oe": "oe"}[v.text]   # plain: the non-syllabic mark breaks web fonts
+        if v.text in DIPHTHONGS or v.text == "eu":
+            return {"ae": "ae", "au": "au", "oe": "oe", "eu": "eu"}[v.text]   # plain: the non-syllabic mark breaks web fonts
         short = {"a": "a", "e": "ɛ", "i": "ɪ", "o": "ɔ", "u": "ʊ", "y": "ʏ"}[v.text]
         long_ = {"a": "aː", "e": "eː", "i": "iː", "o": "oː", "u": "uː", "y": "yː"}[v.text]
         return long_ if v.long else short
-    return {"ae": "ɛ", "oe": "ɛ", "au": "au", "a": "a", "e": "ɛ", "i": "i", "o": "ɔ", "u": "u", "y": "i"}[v.text]
+    return {"ae": "ɛ", "oe": "ɛ", "au": "au", "eu": "eu", "a": "a", "e": "ɛ", "i": "i", "o": "ɔ", "u": "u", "y": "i"}[v.text]
 
 
 def _cons_ipa(c: Seg, nxt: Seg | None, prev: Seg | None, scheme: str) -> str:
     t = c.text
     if scheme == "classical":
-        return {"c": "k", "k": "k", "qu": "kʷ", "v": "w", "j": "j", "ch": "kʰ", "ph": "pʰ",
-                "th": "tʰ", "h": "h", "z": "dz", "g": "ɡ"}.get(t, "ŋ" if t == "n" and nxt and nxt.text in ("c", "g", "qu", "k") else t)
+        return {"c": "k", "k": "k", "qu": "kʷ", "gu": "ɡʷ", "v": "w", "j": "j", "ch": "kʰ", "ph": "pʰ",
+                "th": "tʰ", "h": "h", "z": "dz", "g": "ɡ"}.get(t, "ŋ" if t == "n" and nxt and nxt.text in ("c", "g", "qu", "gu", "k") else t)
     if scheme == "anglo-latin":
         # Latin as read in England around 1215, in the French manner: soft c = ts (becoming s
         # during the 1200s), soft g and consonantal i/j = dʒ, h silent, v = v
@@ -138,8 +145,8 @@ def _cons_ipa(c: Seg, nxt: Seg | None, prev: Seg | None, scheme: str) -> str:
             return "ts" if _front(nxt) else "k"
         if t == "g":
             return "dʒ" if _front(nxt) else "ɡ"
-        return {"k": "k", "qu": "kw", "v": "v", "j": "dʒ", "ch": "k", "ph": "f", "th": "t",
-                "h": "", "z": "dz", "x": "ks"}.get(t, "ŋ" if t == "n" and nxt and nxt.text in ("c", "g", "qu", "k") else t)
+        return {"k": "k", "qu": "kw", "gu": "ɡw", "v": "v", "j": "dʒ", "ch": "k", "ph": "f", "th": "t",
+                "h": "", "z": "dz", "x": "ks"}.get(t, "ŋ" if t == "n" and nxt and nxt.text in ("c", "g", "qu", "gu", "k") else t)
     # ecclesiastical
     if t == "c":
         return "tʃ" if _front(nxt) else "k"
@@ -151,8 +158,8 @@ def _cons_ipa(c: Seg, nxt: Seg | None, prev: Seg | None, scheme: str) -> str:
         return "ɲ"
     if t == "s" and nxt and nxt.text == "c":
         return "s"
-    return {"k": "k", "qu": "kw", "v": "v", "j": "j", "ch": "k", "ph": "f", "th": "t",
-            "h": "", "z": "dz", "x": "ks"}.get(t, "ŋ" if t == "n" and nxt and nxt.text in ("c", "g", "qu", "k") else t)
+    return {"k": "k", "qu": "kw", "gu": "ɡw", "v": "v", "j": "j", "ch": "k", "ph": "f", "th": "t",
+            "h": "", "z": "dz", "x": "ks"}.get(t, "ŋ" if t == "n" and nxt and nxt.text in ("c", "g", "qu", "gu", "k") else t)
 
 
 def _syl_ipa(syls: list[Syl], scheme: str) -> list[str]:
@@ -188,7 +195,7 @@ def _syl_ipa(syls: list[Syl], scheme: str) -> list[str]:
 
 RESPELL = {
     "classical": [("ae", "ai"), ("au", "ow"), ("oe", "oy"), ("aː", "aa"), ("eː", "ay"), ("iː", "ee"),
-                  ("oː", "oh"), ("uː", "oo"), ("yː", "üü"), ("kʷ", "kw"), ("kʰ", "kʰ"), ("pʰ", "pʰ"),
+                  ("oː", "oh"), ("uː", "oo"), ("yː", "üü"), ("kʷ", "kw"), ("ɡʷ", "gw"), ("kʰ", "kʰ"), ("pʰ", "pʰ"),
                   ("tʰ", "tʰ"), ("ɛ", "e"), ("ɪ", "i"), ("ɔ", "o"), ("ʊ", "u"), ("ʏ", "ü"), ("ŋ", "ng"), ("ɡ", "g"),
                   ("j", "y")],
     "ecclesiastical": [("au", "ow"), ("tʃ", "ch"), ("dʒ", "j"), ("ʃ", "sh"), ("ɲ", "ny"), ("ɡ", "g"),
@@ -258,6 +265,8 @@ def apply_quantity(word: str, table: dict[str, str]) -> tuple[str, bool]:
     key = ud.normalize("NFC", word.lower())
     if key in table:
         return ud.normalize("NFC", table[key]), True
+    if any(c in ("\u0304", "\u0306") for c in ud.normalize("NFD", word)):
+        return word, True        # a form that carries its own lengths (an edition token's n: meă, senātūs)
     return word, False
 
 
@@ -297,12 +306,12 @@ KEY["anglo-latin"] = KEY_ANGLO
 # Vox Latina, appendix); treat them as approximate.
 
 _ENG_LONG = {"a": ("eɪ", "ay"), "e": ("iː", "ee"), "i": ("aɪ", "eye"), "y": ("aɪ", "eye"),
-             "o": ("oʊ", "oh"), "u": ("juː", "yoo"), "ae": ("iː", "ee"), "oe": ("iː", "ee"), "au": ("ɔː", "aw")}
+             "o": ("oʊ", "oh"), "u": ("juː", "yoo"), "ae": ("iː", "ee"), "oe": ("iː", "ee"), "au": ("ɔː", "aw"), "eu": ("juː", "yoo")}
 _ENG_SHORT = {"a": ("æ", "a"), "e": ("ɛ", "e"), "i": ("ɪ", "i"), "y": ("ɪ", "i"),
-              "o": ("ɒ", "o"), "u": ("ʌ", "u"), "ae": ("iː", "ee"), "oe": ("iː", "ee"), "au": ("ɔː", "aw")}
+              "o": ("ɒ", "o"), "u": ("ʌ", "u"), "ae": ("iː", "ee"), "oe": ("iː", "ee"), "au": ("ɔː", "aw"), "eu": ("juː", "yoo")}
 _ENG_FINAL = {"a": ("ə", "uh"), "e": ("iː", "ee"), "i": ("aɪ", "eye"), "o": ("oʊ", "oh"), "u": ("juː", "yoo")}
 _FR_V = {"a": ("a", "a"), "e": ("e", "e"), "i": ("i", "ee"), "y": ("i", "ee"), "o": ("o", "o"),
-         "u": ("y", "ü"), "ae": ("e", "e"), "oe": ("e", "e"), "au": ("o", "o")}
+         "u": ("y", "ü"), "ae": ("e", "e"), "oe": ("e", "e"), "au": ("o", "o"), "eu": ("ø", "eu")}
 _FR_NASAL = {"a": ("ɑ̃", "an"), "e": ("ɑ̃", "an"), "i": ("ɛ̃", "in"), "o": ("ɔ̃", "on"), "u": ("ɔ̃", "on")}
 
 
@@ -365,6 +374,8 @@ def _national(syls: list[Syl], stress: int, dialect: str) -> list[tuple[str, str
             a, b = ("dʒ", "j") if dialect == "english" else ("ʒ", "zh")
         elif t == "qu":
             a, b = ("kw", "kw") if dialect == "english" else ("k", "k")
+        elif t == "gu":
+            a, b = ("ɡw", "gw") if dialect == "english" else ("ɡ", "g")
         elif t == "t" and nxt is not None and nxt.text == "i" and nxt2 is not None and nxt2.vowel and k > 0 \
                 and not (prev is not None and prev.text in ("s", "t", "k")):
             a, b = ("ʃ", "sh") if dialect == "english" else ("s", "s")
@@ -482,9 +493,9 @@ def key_for(scheme: str, dialects: set[str]) -> list:
 HUMANIST = {"low-countries": "dutch", "tudor-english": "tudor", "italian-humanist": "italian"}
 
 _NL_LONG = {"a": ("aː", "aa"), "e": ("eː", "ay"), "i": ("iː", "ee"), "y": ("iː", "ee"), "o": ("oː", "oh"),
-            "u": ("yː", "üü"), "ae": ("eː", "ay"), "oe": ("eː", "ay"), "au": ("ɑu", "ow")}
+            "u": ("yː", "üü"), "ae": ("eː", "ay"), "oe": ("eː", "ay"), "au": ("ɑu", "ow"), "eu": ("øː", "eu")}
 _NL_SHORT = {"a": ("ɑ", "a"), "e": ("ɛ", "e"), "i": ("ɪ", "i"), "y": ("ɪ", "i"), "o": ("ɔ", "o"),
-             "u": ("ʏ", "ü"), "ae": ("eː", "ay"), "oe": ("eː", "ay"), "au": ("ɑu", "ow")}
+             "u": ("ʏ", "ü"), "ae": ("eː", "ay"), "oe": ("eː", "ay"), "au": ("ɑu", "ow"), "eu": ("øː", "eu")}
 _TU_LONG = {"a": ("aː", "aa"), "e": ("iː", "ee"), "i": ("əi", "ei"), "y": ("əi", "ei"), "o": ("ɔː", "aw"),
             "u": ("iu", "yoo"), "ae": ("iː", "ee"), "oe": ("iː", "ee"), "au": ("au", "ow")}
 _TU_SHORT = {"a": ("a", "a"), "e": ("ɛ", "e"), "i": ("ɪ", "i"), "y": ("ɪ", "i"), "o": ("ɔ", "o"),
@@ -565,6 +576,8 @@ def _humanist(syls: list[Syl], stress: int, dialect: str) -> list[tuple[str, str
             a, b = ("dʒ", "j") if dialect == "tudor" else ("j", "y")
         elif t == "qu":
             a, b = ("kw", "kw")
+        elif t == "gu":
+            a, b = ("ɡw", "gw")
         elif ti:
             a, b = ("s", "s") if dialect == "tudor" else ("ts", "ts")
         elif t == "s" and prev is not None and prev.vowel and nxt is not None and nxt.vowel:
@@ -581,7 +594,7 @@ def _humanist(syls: list[Syl], stress: int, dialect: str) -> list[tuple[str, str
             a, b = ("t", "t")
         elif t == "z":
             a, b = ("dz", "dz") if dialect == "italian" else ("z", "z")
-        elif t == "n" and nxt is not None and nxt.text in ("c", "g", "qu", "k") and not (dialect == "italian" and nxt.text == "g" and nxt2 is not None and nxt2.text == "n"):
+        elif t == "n" and nxt is not None and nxt.text in ("c", "g", "qu", "gu", "k") and not (dialect == "italian" and nxt.text == "g" and nxt2 is not None and nxt2.text == "n"):
             a, b = ("ŋ", "ng")
         else:
             a, b = (t, t)
@@ -717,6 +730,8 @@ def _german(syls: list[Syl], stress: int) -> list[tuple[str, str]]:
             a, b = ("f", "f")
         elif t == "qu":
             a, b = ("kv", "kv")
+        elif t == "gu":
+            a, b = ("ɡv", "gv")
         elif t == "j":
             a, b = ("j", "y")
         elif t == "z":
@@ -736,7 +751,7 @@ def _german(syls: list[Syl], stress: int) -> list[tuple[str, str]]:
             a, b = ("f", "f")
         elif t == "th":
             a, b = ("t", "t")
-        elif t == "n" and nxt is not None and nxt.text in ("c", "g", "qu", "k"):
+        elif t == "n" and nxt is not None and nxt.text in ("c", "g", "qu", "gu", "k"):
             a, b = ("ŋ", "ng")
         else:
             a, b = (t, t)
@@ -872,6 +887,8 @@ def _norman(syls: list[Syl]) -> list[tuple[str, str]]:
             a, b = ("dʒ", "j")
         elif t == "qu":
             a, b = ("kw", "kw")
+        elif t == "gu":
+            a, b = ("ɡw", "gw")
         elif t == "t" and nxt is not None and nxt.text == "i" and nxt2 is not None and nxt2.vowel and k > 0 \
                 and not (prev is not None and prev.text in ("s", "t", "k")):
             a, b = ("ts", "ts")
@@ -889,7 +906,7 @@ def _norman(syls: list[Syl]) -> list[tuple[str, str]]:
             a, b = ("ð", "dh")
         elif t == "z":
             a, b = ("dz", "dz")
-        elif t == "n" and nxt is not None and nxt.text in ("c", "g", "qu", "k"):
+        elif t == "n" and nxt is not None and nxt.text in ("c", "g", "qu", "gu", "k"):
             a, b = ("ŋ", "ng")
         else:
             a, b = (t, t)

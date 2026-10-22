@@ -1,0 +1,34 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: plato-republic
+src: weft.about 0.1
+fetched: '2026-10-18'
+match: work
+wikipedia:
+  title: Allegory of the cave
+  lang: en
+  revision: 1379912198
+  url: https://en.wikipedia.org/w/index.php?title=Allegory_of_the_cave&oldid=1379912198
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Allegory of the cave” (en.wikipedia.org, revision 1379912198),
+    CC BY-SA 4.0
+  lead: The allegory of the cave is an allegory presented by the Greek philosopher Plato in his work Republic
+    (514a–520a, Book VII) to compare "the effect of education (παιδεία) and the lack of it on our nature".
+    It is written as a dialogue between Plato's brother Glaucon and his mentor Socrates and is narrated
+    by the latter. The allegory is presented after the analogy of the Sun (508b–509c) and the analogy
+    of the divided line (509d–511e).
+wikidata:
+  id: Q22738
+  revision: 2526325552
+  license: CC0
+  description: allegory by Plato
+  instance_of:
+  - id: Q18535
+    label: allegory
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q208555
+    label: parable
+  - id: Q18535
+    label: allegory

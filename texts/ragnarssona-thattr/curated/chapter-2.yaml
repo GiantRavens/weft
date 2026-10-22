@@ -1,0 +1,1045 @@
+# Human overlay for Ragnarssona þáttr chapter 2 (rsons.2.*). Lemmas follow Zoëga, A Concise Dictionary of Old
+# Icelandic (1910), in normalized Old Norse spelling; morphology uses Universal Dependencies features, written in the
+# compact spec and expanded by weft overlay. Frequent forms follow the shared convention table (rag/conventions.tsv);
+# a line that departs from it carries a note in the spec. The seven lausavísur (Eiríkr two, Áslaug, Sigurðr, Björn,
+# Hvítserkr, Ívarr) are in skaldic measure: six-syllable lines paired by alliteration, the odd line with two staves,
+# the even line with a head-stave. Vowels alliterate with each other; h with hr and hl. Kennings glossed word by word.
+- by: "Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar"
+  date: "2026-10-22"
+  why: "hand lemma, morphology and gloss for chapter 2, with staves and meter for the verses; no treebank covers this text; written in the compact spec and expanded by weft overlay, following the shared convention table"
+  status: "draft"
+  set:
+    rsons.2.1.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rsons.2.1.2: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rsons.2.1.3: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons"}   # synir
+    rsons.2.1.4: {lemma: "Ragnarr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Ragnar's"}   # Ragnars
+    rsons.2.1.5: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "were"}   # váru
+    rsons.2.1.6: {lemma: "vaxa", morph: "VERB|Case=Nom|Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part", gloss: "grown"}   # vaxnir
+    rsons.2.1.7: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rsons.2.1.8: {lemma: "herja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "harried"}   # herjuðu
+    rsons.2.1.9: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rsons.2.1.10: {lemma: "víða", morph: "ADV", gloss: "widely"}   # víða
+    rsons.2.1.11: {lemma: "um", morph: "ADP", gloss: "about"}   # um
+    rsons.2.1.12: {lemma: "land", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "lands"}   # lönd
+    rsons.2.2.1: {lemma: "sá", morph: "DET|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "those"}   # Þeir
+    rsons.2.2.2: {lemma: "bróðir", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "brothers"}   # bræðr
+    rsons.2.2.3: {lemma: "Eiríkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eiríkr
+    rsons.2.2.4: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.2.5: {lemma: "Agnarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Agnar"}   # Agnarr
+    rsons.2.2.6: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "went"}   # fóru
+    rsons.2.2.7: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rsons.2.2.8: {lemma: "annarr", morph: "ADJ|Case=Dat|Gender=Masc|Number=Sing", gloss: "another"}   # öðrum
+    rsons.2.2.9: {lemma: "staðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "place"}   # stað
+    rsons.2.2.10: {lemma: "en", morph: "CCONJ", gloss: "but"}   # en
+    rsons.2.2.11: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rsons.2.2.12: {lemma: "þriði", morph: "ADJ|Case=Dat|Gender=Masc|Number=Sing", gloss: "third"}   # þriðja
+    rsons.2.2.13: {lemma: "staðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "place"}   # stað
+    rsons.2.2.14: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "went"}   # fóru
+    rsons.2.2.15: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rsons.2.2.16: {lemma: "Ívarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Ivar"}   # Ívarr
+    rsons.2.2.17: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.2.18: {lemma: "sá", morph: "DET|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "those"}   # þeir
+    rsons.2.2.19: {lemma: "inn", morph: "DET|Case=Nom|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # inir
+    rsons.2.2.20: {lemma: "ungr", morph: "ADJ|Case=Nom|Degree=Cmp|Gender=Masc|Number=Plur", gloss: "younger"}   # yngri
+    rsons.2.2.21: {lemma: "bróðir", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "brothers"}   # bræðr
+    rsons.2.2.22: {lemma: "hann", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|Person=3", gloss: "his"}   # hans
+    rsons.2.2.23: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    rsons.2.2.24: {lemma: "hann", morph: "PRON|Case=Dat|Gender=Masc|Number=Sing|Person=3", gloss: "him"}   # honum
+    rsons.2.2.25: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.2.26: {lemma: "gera", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "made"}   # gerði
+    rsons.2.2.27: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.2.28: {lemma: "ráð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "counsel"}   # ráð
+    rsons.2.2.29: {lemma: "fyrir", morph: "ADP", gloss: "for"}   # fyrir
+    rsons.2.2.30: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Masc|Number=Plur|PronType=Dem", gloss: "them"}   # þeim
+    rsons.2.2.31: {lemma: "því", morph: "ADV", gloss: "because"}   # því
+    rsons.2.2.32: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.2.33: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.2.34: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rsons.2.2.35: {lemma: "forvitri", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "foresighted"}   # forvitri
+    rsons.2.3.1: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # Þeir
+    rsons.2.3.2: {lemma: "leggja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "laid"}   # lögðu
+    rsons.2.3.3: {lemma: "undir", morph: "ADP", gloss: "under"}   # undir
+    rsons.2.3.4: {lemma: "sik", morph: "PRON|Case=Acc|Person=3|Reflex=Yes", gloss: "themselves"}   # sik
+    rsons.2.3.5: {lemma: "Selund", morph: "PROPN|Case=Acc|Gender=Fem|Number=Sing", gloss: "Zealand"}   # Selund
+    rsons.2.3.6: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.3.7: {lemma: "Reiðgotaland", morph: "PROPN|Case=Acc|Gender=Neut|Number=Sing", gloss: "Reidgotaland"}   # Reiðgotaland
+    rsons.2.3.8: {lemma: "Eygotaland", morph: "PROPN|Case=Acc|Gender=Neut|Number=Sing", gloss: "Eygotaland"}   # Eygotaland
+    rsons.2.3.9: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.3.10: {lemma: "Eyland", morph: "PROPN|Case=Acc|Gender=Neut|Number=Sing", gloss: "Eyland"}   # Eyland
+    rsons.2.3.11: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.3.12: {lemma: "allr", morph: "ADJ|Case=Acc|Gender=Neut|Number=Plur", gloss: "all"}   # öll
+    rsons.2.3.13: {lemma: "smáland", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "small-lands"}   # smálönd
+    rsons.2.3.14: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rsons.2.3.15: {lemma: "haf", morph: "NOUN|Case=Dat|Definite=Def|Gender=Neut|Number=Sing", gloss: "the-sea"}   # hafinu
+    rsons.2.4.1: {lemma: "setja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Mid", gloss: "settled"}   # Settist
+    rsons.2.4.2: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rsons.2.4.3: {lemma: "Ívarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Ivar"}   # Ívarr
+    rsons.2.4.4: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    rsons.2.4.5: {lemma: "inn", morph: "DET|Case=Dat|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # inum
+    rsons.2.4.6: {lemma: "ungr", morph: "ADJ|Case=Dat|Degree=Cmp|Gender=Masc|Number=Plur", gloss: "younger"}   # yngrum
+    rsons.2.4.7: {lemma: "bróðir", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "brothers"}   # bræðrum
+    rsons.2.4.8: {lemma: "sinn", morph: "DET|Case=Dat|Gender=Masc|Number=Plur|Poss=Yes", gloss: "his-own"}   # sínum
+    rsons.2.4.9: {lemma: "af", morph: "ADP", gloss: "at"}   # af
+    rsons.2.4.10: {lemma: "Hleiðra", morph: "PROPN|Case=Dat|Gender=Fem|Number=Sing", gloss: "Lejre"}   # Hleiðru
+    rsons.2.4.11: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    rsons.2.4.12: {lemma: "Selund", morph: "PROPN|Case=Dat|Gender=Fem|Number=Sing", gloss: "Zealand"}   # Selundi
+    rsons.2.4.13: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.4.14: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rsons.2.4.15: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rsons.2.4.16: {lemma: "þó", morph: "ADV", gloss: "yet"}   # þó
+    rsons.2.4.17: {lemma: "móti", morph: "ADP", gloss: "against"}   # móti
+    rsons.2.4.18: {lemma: "vili", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "will"}   # vilja
+    rsons.2.4.19: {lemma: "Ragnarr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Ragnar"}   # Ragnars
+    rsons.2.4.20: {lemma: "konungr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "king's"}   # konungs
+    rsons.2.5.1: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "went"}   # Fóru
+    rsons.2.5.2: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons"}   # synir
+    rsons.2.5.3: {lemma: "hann", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|Person=3", gloss: "his"}   # hans
+    rsons.2.5.4: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    rsons.2.5.5: {lemma: "hernaðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "raiding"}   # hernaði
+    rsons.2.5.6: {lemma: "allr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "all"}   # allir
+    rsons.2.5.7: {lemma: "því", morph: "ADV", gloss: "because"}   # því
+    rsons.2.5.8: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.5.9: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rsons.2.5.10: {lemma: "vilja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "wished"}   # vildu
+    rsons.2.5.11: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rsons.2.5.12: {lemma: "ófrægr", morph: "ADJ|Case=Nom|Degree=Cmp|Gender=Masc|Number=Plur", gloss: "less-famous"}   # ófrægri
+    rsons.2.5.13: {lemma: "vera", morph: "AUX|VerbForm=Inf", gloss: "be"}   # vera
+    rsons.2.5.14: {lemma: "en", morph: "SCONJ", gloss: "than"}   # en
+    rsons.2.5.15: {lemma: "Ragnarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Ragnar"}   # Ragnarr
+    rsons.2.5.16: {lemma: "konungr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "king"}   # konungr
+    rsons.2.5.17: {lemma: "faðir", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "father"}   # faðir
+    rsons.2.5.18: {lemma: "sá", morph: "PRON|Case=Gen|Gender=Masc|Number=Plur|PronType=Dem", gloss: "their"}   # þeira
+    rsons.2.6.1: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    rsons.2.6.2: {lemma: "líka", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "pleased"}   # líkaði
+    rsons.2.6.3: {lemma: "Ragnarr", morph: "PROPN|Case=Dat|Gender=Masc|Number=Sing", gloss: "Ragnar"}   # Ragnari
+    rsons.2.6.4: {lemma: "konungr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "king"}   # konungi
+    rsons.2.6.5: {lemma: "illa", morph: "ADV", gloss: "ill"}   # illa
+    rsons.2.6.6: {lemma: "er", morph: "SCONJ", gloss: "that"}   # er
+    rsons.2.6.7: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons"}   # synir
+    rsons.2.6.8: {lemma: "hann", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|Person=3", gloss: "his"}   # hans
+    rsons.2.6.9: {lemma: "halda", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "held"}   # heldu
+    rsons.2.6.10: {lemma: "móti", morph: "ADP", gloss: "against"}   # móti
+    rsons.2.6.11: {lemma: "hann", morph: "PRON|Case=Dat|Gender=Masc|Number=Sing|Person=3", gloss: "him"}   # honum
+    rsons.2.6.12: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.6.13: {lemma: "taka", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "took"}   # tóku
+    rsons.2.6.14: {lemma: "skattland", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "tributary-lands"}   # skattlönd
+    rsons.2.6.15: {lemma: "hann", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|Person=3", gloss: "his"}   # hans
+    rsons.2.6.16: {lemma: "móti", morph: "ADP", gloss: "against"}   # móti
+    rsons.2.6.17: {lemma: "hann", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|Person=3", gloss: "his"}   # hans
+    rsons.2.6.18: {lemma: "vili", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "will"}   # vilja
+    rsons.2.7.1: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # Hann
+    rsons.2.7.2: {lemma: "setja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "set"}   # setti
+    rsons.2.7.3: {lemma: "sá", morph: "DET|Case=Acc|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # þann
+    rsons.2.7.4: {lemma: "konungr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "king"}   # konung
+    rsons.2.7.5: {lemma: "yfir", morph: "ADP", gloss: "over"}   # yfir
+    rsons.2.7.6: {lemma: "Upp-Svíaveldi", morph: "PROPN|Case=Acc|Gender=Neut|Number=Sing", gloss: "Upper-Sweden"}   # Upp-Svíaveldi
+    rsons.2.7.7: {lemma: "er", morph: "PRON|PronType=Rel", gloss: "who"}   # er
+    rsons.2.7.8: {lemma: "Eysteinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eystein"}   # Eysteinn
+    rsons.2.7.9: {lemma: "beli", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Beli"}   # beli
+    rsons.2.7.10: {lemma: "heita", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was-called"}   # hét
+    rsons.2.7.11: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.7.12: {lemma: "biðja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "bade"}   # bað
+    rsons.2.7.13: {lemma: "hann", morph: "PRON|Case=Acc|Gender=Masc|Number=Sing|Person=3", gloss: "him"}   # hann
+    rsons.2.7.14: {lemma: "halda", morph: "VERB|VerbForm=Inf", gloss: "hold"}   # halda
+    rsons.2.7.15: {lemma: "sá", morph: "DET|Case=Dat|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # því
+    rsons.2.7.16: {lemma: "ríki", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "realm"}   # ríki
+    rsons.2.7.17: {lemma: "sik", morph: "PRON|Case=Dat|Person=3|Reflex=Yes", gloss: "himself"}   # sér
+    rsons.2.7.18: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rsons.2.7.19: {lemma: "hönd", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "hands"}   # handa
+    rsons.2.7.20: {lemma: "en", morph: "CCONJ", gloss: "and"}   # en
+    rsons.2.7.21: {lemma: "verja", morph: "VERB|VerbForm=Inf", gloss: "defend"}   # verja
+    rsons.2.7.22: {lemma: "fyrir", morph: "ADP", gloss: "against"}   # fyrir
+    rsons.2.7.23: {lemma: "sonr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "sons"}   # sonum
+    rsons.2.7.24: {lemma: "sinn", morph: "DET|Case=Dat|Gender=Masc|Number=Plur|Poss=Yes", gloss: "his-own"}   # sínum
+    rsons.2.7.25: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    rsons.2.7.26: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rsons.2.7.27: {lemma: "kalla", morph: "VERB|Mood=Sub|Number=Plur|Person=3|Tense=Past", gloss: "laid-claim"}   # kallaði
+    rsons.2.7.28: {lemma: "til", morph: "ADV", gloss: "to-it"}   # til
+    rsons.2.8.1: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    rsons.2.8.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rsons.2.8.3: {lemma: "einn", morph: "NUM|Case=Acc|Gender=Neut|Number=Sing", gloss: "one"}   # eitt
+    rsons.2.8.4: {lemma: "sumar", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "summer"}   # sumar
+    rsons.2.8.5: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rsons.2.8.6: {lemma: "Ragnarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Ragnar"}   # Ragnarr
+    rsons.2.8.7: {lemma: "konungr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "king"}   # konungr
+    rsons.2.8.8: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rsons.2.8.9: {lemma: "fara", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "gone"}   # farinn
+    rsons.2.8.10: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    rsons.2.8.11: {lemma: "herr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "host"}   # her
+    rsons.2.8.12: {lemma: "í", morph: "ADP", gloss: "into"}   # í
+    rsons.2.8.13: {lemma: "Austrvegr", morph: "PROPN|Case=Acc|Gender=Masc|Number=Sing", gloss: "the-Eastern-Way"}   # Austrveg
+    rsons.2.8.14: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.8.15: {lemma: "Eiríkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eiríkr
+    rsons.2.8.16: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.8.17: {lemma: "Agnarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Agnar"}   # Agnarr
+    rsons.2.8.18: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons"}   # synir
+    rsons.2.8.19: {lemma: "hann", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|Person=3", gloss: "his"}   # hans
+    rsons.2.8.20: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "came"}   # kómu
+    rsons.2.8.21: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rsons.2.8.22: {lemma: "Svíþjóð", morph: "PROPN|Case=Gen|Gender=Fem|Number=Sing", gloss: "Sweden"}   # Svíþjóðar
+    rsons.2.8.23: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.8.24: {lemma: "halda", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "steered"}   # heldu
+    rsons.2.8.25: {lemma: "skip", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "ships"}   # skipum
+    rsons.2.8.26: {lemma: "sinn", morph: "DET|Case=Dat|Gender=Neut|Number=Plur|Poss=Yes", gloss: "their-own"}   # sínum
+    rsons.2.8.27: {lemma: "upp", morph: "ADV", gloss: "up"}   # upp
+    rsons.2.8.28: {lemma: "í", morph: "ADP", gloss: "into"}   # í
+    rsons.2.8.29: {lemma: "lögr", morph: "NOUN|Case=Acc|Definite=Def|Gender=Masc|Number=Sing", gloss: "the-Lake"}   # Löginn
+    rsons.2.9.1: {lemma: "gera", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "made"}   # Gerðu
+    rsons.2.9.2: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rsons.2.9.3: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rsons.2.9.4: {lemma: "boð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "word"}   # boð
+    rsons.2.9.5: {lemma: "Eysteinn", morph: "PROPN|Case=Dat|Gender=Masc|Number=Sing", gloss: "Eystein"}   # Eysteini
+    rsons.2.9.6: {lemma: "konungr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "king"}   # konungi
+    rsons.2.9.7: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rsons.2.9.8: {lemma: "Uppsalir", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "Uppsala"}   # Uppsala
+    rsons.2.9.9: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.9.10: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.9.11: {lemma: "koma", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "should-come"}   # kæmi
+    rsons.2.9.12: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rsons.2.9.13: {lemma: "sá", morph: "PRON|Case=Gen|Gender=Masc|Number=Plur|PronType=Dem", gloss: "them"}   # þeira
+    rsons.2.10.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rsons.2.10.2: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rsons.2.10.3: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rsons.2.10.4: {lemma: "finna", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past|Voice=Mid", gloss: "met"}   # fundust
+    rsons.2.10.5: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "said"}   # sagði
+    rsons.2.10.6: {lemma: "Eiríkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eiríkr
+    rsons.2.10.7: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.10.8: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.10.9: {lemma: "vilja", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "wished"}   # vildi
+    rsons.2.10.10: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.10.11: {lemma: "Eysteinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eystein"}   # Eysteinn
+    rsons.2.10.12: {lemma: "konungr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "king"}   # konungr
+    rsons.2.10.13: {lemma: "halda", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "should-hold"}   # heldi
+    rsons.2.10.14: {lemma: "Svíaríki", morph: "PROPN|Case=Acc|Gender=Neut|Number=Sing", gloss: "the-Swedish-realm"}   # Svíaríki
+    rsons.2.10.15: {lemma: "undir", morph: "ADP", gloss: "under"}   # undir
+    rsons.2.10.16: {lemma: "sá", morph: "DET|Case=Acc|Gender=Masc|Number=Plur|PronType=Dem", gloss: "those"}   # þá
+    rsons.2.10.17: {lemma: "bróðir", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "brothers"}   # bræðr
+    rsons.2.10.18: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.10.19: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Mid", gloss: "says-he"}   # kveðst
+    rsons.2.10.20: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rsons.2.10.21: {lemma: "fá", morph: "VERB|VerbForm=Inf", gloss: "get"}   # fá
+    rsons.2.10.22: {lemma: "vilja", morph: "VERB|VerbForm=Inf", gloss: "wish"}   # vilja
+    rsons.2.10.23: {lemma: "Borghildr", morph: "PROPN|Case=Gen|Gender=Fem|Number=Sing", gloss: "Borghild"}   # Borghildar
+    rsons.2.10.24: {lemma: "dóttir", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "daughter"}   # dóttur
+    rsons.2.10.25: {lemma: "hann", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|Person=3", gloss: "his"}   # hans
+    rsons.2.10.26: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.10.27: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rsons.2.10.28: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.10.29: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rsons.2.10.30: {lemma: "mega", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "may"}   # megu
+    rsons.2.10.31: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rsons.2.10.32: {lemma: "vel", morph: "ADV", gloss: "well"}   # vel
+    rsons.2.10.33: {lemma: "halda", morph: "VERB|VerbForm=Inf", gloss: "hold"}   # halda
+    rsons.2.10.34: {lemma: "sá", morph: "DET|Case=Dat|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # því
+    rsons.2.10.35: {lemma: "ríki", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "realm"}   # ríki
+    rsons.2.10.36: {lemma: "fyrir", morph: "ADP", gloss: "against"}   # fyrir
+    rsons.2.10.37: {lemma: "Ragnarr", morph: "PROPN|Case=Dat|Gender=Masc|Number=Sing", gloss: "Ragnar"}   # Ragnari
+    rsons.2.10.38: {lemma: "konungr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "king"}   # konungi
+    rsons.2.11.1: {lemma: "Eysteinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eystein"}   # Eysteinn
+    rsons.2.11.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Mid", gloss: "says-he"}   # kveðst
+    rsons.2.11.3: {lemma: "þessi", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "this"}   # þetta
+    rsons.2.11.4: {lemma: "vilja", morph: "VERB|VerbForm=Inf", gloss: "wish"}   # vilja
+    rsons.2.11.5: {lemma: "tjá", morph: "VERB|VerbForm=Inf", gloss: "lay-before"}   # tjá
+    rsons.2.11.6: {lemma: "innanlands", morph: "ADV", gloss: "inland"}   # innanlands
+    rsons.2.11.7: {lemma: "höfðingi", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "chieftains"}   # höfðingjum
+    rsons.2.11.8: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.11.9: {lemma: "skilja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past|Voice=Mid", gloss: "parted"}   # skildust
+    rsons.2.11.10: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rsons.2.11.11: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    rsons.2.12.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rsons.2.12.2: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rsons.2.12.3: {lemma: "Eysteinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eystein"}   # Eysteinn
+    rsons.2.12.4: {lemma: "konungr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "king"}   # konungr
+    rsons.2.12.5: {lemma: "bera", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "bore"}   # bar
+    rsons.2.12.6: {lemma: "þessi", morph: "DET|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "this"}   # þetta
+    rsons.2.12.7: {lemma: "mál", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "matter"}   # mál
+    rsons.2.12.8: {lemma: "upp", morph: "ADV", gloss: "up"}   # upp
+    rsons.2.12.9: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rsons.2.12.10: {lemma: "verða", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "became"}   # urðu
+    rsons.2.12.11: {lemma: "allr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "all"}   # allir
+    rsons.2.12.12: {lemma: "landsmaðr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "countrymen"}   # landsmenn
+    rsons.2.12.13: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    rsons.2.12.14: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rsons.2.12.15: {lemma: "sáttr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "agreed"}   # sáttir
+    rsons.2.12.16: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    rsons.2.12.17: {lemma: "verja", morph: "VERB|VerbForm=Inf", gloss: "defend"}   # verja
+    rsons.2.12.18: {lemma: "land", morph: "NOUN|Case=Acc|Definite=Def|Gender=Neut|Number=Sing", gloss: "the-land"}   # landit
+    rsons.2.12.19: {lemma: "fyrir", morph: "ADP", gloss: "against"}   # fyrir
+    rsons.2.12.20: {lemma: "sonr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "sons"}   # sonum
+    rsons.2.12.21: {lemma: "Ragnarr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Ragnar's"}   # Ragnars
+    rsons.2.12.22: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.12.23: {lemma: "draga", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Mid", gloss: "gathers"}   # dregst
+    rsons.2.12.24: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rsons.2.12.25: {lemma: "saman", morph: "ADV", gloss: "together"}   # saman
+    rsons.2.12.26: {lemma: "óvígr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "invincible"}   # óvígr
+    rsons.2.12.27: {lemma: "herr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "host"}   # herr
+    rsons.2.12.28: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.12.29: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "goes"}   # ferr
+    rsons.2.12.30: {lemma: "Eysteinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eystein"}   # Eysteinn
+    rsons.2.12.31: {lemma: "konungr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "king"}   # konungr
+    rsons.2.12.32: {lemma: "móti", morph: "ADP", gloss: "against"}   # móti
+    rsons.2.12.33: {lemma: "Ragnarr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Ragnar's"}   # Ragnars
+    rsons.2.12.34: {lemma: "sonr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "sons"}   # sonum
+    rsons.2.13.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rsons.2.13.2: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rsons.2.13.3: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rsons.2.13.4: {lemma: "finna", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|Voice=Mid", gloss: "meet"}   # finnast
+    rsons.2.13.5: {lemma: "verða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "becomes"}   # verðr
+    rsons.2.13.6: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rsons.2.13.7: {lemma: "mikill", morph: "ADJ|Case=Nom|Gender=Fem|Number=Sing", gloss: "great"}   # mikil
+    rsons.2.13.8: {lemma: "orrosta", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "battle"}   # orrosta
+    rsons.2.13.9: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.13.10: {lemma: "verða", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "become"}   # verða
+    rsons.2.13.11: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rsons.2.13.12: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons"}   # synir
+    rsons.2.13.13: {lemma: "loðbrók", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "Lothbrok's"}   # Loðbrókar
+    rsons.2.13.14: {lemma: "ofrliði", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "by-overwhelming-force"}   # ofrliði
+    rsons.2.13.15: {lemma: "bera", morph: "VERB|Case=Nom|Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part", gloss: "borne"}   # bornir
+    rsons.2.13.16: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.13.17: {lemma: "falla", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "falls"}   # fellr
+    rsons.2.13.18: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    rsons.2.13.19: {lemma: "lið", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "host"}   # lið
+    rsons.2.13.20: {lemma: "sá", morph: "DET|Case=Gen|Gender=Masc|Number=Plur|PronType=Dem", gloss: "of-those"}   # þeira
+    rsons.2.13.21: {lemma: "bróðir", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-brothers"}   # bræðra
+    rsons.2.13.22: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.13.23: {lemma: "fár", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "few"}   # fátt
+    rsons.2.13.24: {lemma: "einn", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "only"}   # eitt
+    rsons.2.13.25: {lemma: "standa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "stood"}   # stóð
+    rsons.2.13.26: {lemma: "upp", morph: "ADV", gloss: "up"}   # upp
+    rsons.2.14.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # Þá
+    rsons.2.14.2: {lemma: "falla", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "fell"}   # fell
+    rsons.2.14.3: {lemma: "ok", morph: "ADV", gloss: "also"}   # ok
+    rsons.2.14.4: {lemma: "Agnarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Agnar"}   # Agnarr
+    rsons.2.14.5: {lemma: "en", morph: "CCONJ", gloss: "but"}   # en
+    rsons.2.14.6: {lemma: "Eiríkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eiríkr
+    rsons.2.14.7: {lemma: "verða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # varð
+    rsons.2.14.8: {lemma: "handtaka", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "captured"}   # handtekinn
+    rsons.2.15.1: {lemma: "Eysteinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eystein"}   # Eysteinn
+    rsons.2.15.2: {lemma: "konungr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "king"}   # konungr
+    rsons.2.15.3: {lemma: "bjóða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "offered"}   # bauð
+    rsons.2.15.4: {lemma: "Eiríkr", morph: "PROPN|Case=Dat|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eiríki
+    rsons.2.15.5: {lemma: "grið", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "truce"}   # grið
+    rsons.2.15.6: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.15.7: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    rsons.2.15.8: {lemma: "mikill", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "much"}   # mikit
+    rsons.2.15.9: {lemma: "fé", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "wealth"}   # fé
+    rsons.2.15.10: {lemma: "af", morph: "ADP", gloss: "from"}   # af
+    rsons.2.15.11: {lemma: "Uppsalir", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "Uppsala"}   # Uppsala
+    rsons.2.15.12: {lemma: "veldi", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "realm"}   # veldi
+    rsons.2.15.13: {lemma: "fyrir", morph: "ADP", gloss: "for"}   # fyrir
+    rsons.2.15.14: {lemma: "Agnarr", morph: "PROPN|Case=Acc|Gender=Masc|Number=Sing", gloss: "Agnar"}   # Agnar
+    rsons.2.15.15: {lemma: "bróðir", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "brother"}   # bróður
+    rsons.2.15.16: {lemma: "sinn", morph: "DET|Case=Acc|Gender=Masc|Number=Sing|Poss=Yes", gloss: "his-own"}   # sinn
+    rsons.2.15.17: {lemma: "sem", morph: "SCONJ", gloss: "as"}   # sem
+    rsons.2.15.18: {lemma: "sjálfr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "himself"}   # sjálfr
+    rsons.2.15.19: {lemma: "vilja", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "wished"}   # vildi
+    rsons.2.15.20: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.15.21: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.15.22: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rsons.2.15.23: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    rsons.2.15.24: {lemma: "dóttir", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "daughter"}   # dóttur
+    rsons.2.15.25: {lemma: "sinn", morph: "DET|Case=Acc|Gender=Fem|Number=Sing|Poss=Yes", gloss: "his-own"}   # sína
+    rsons.2.15.26: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Fem|Number=Sing|PronType=Dem", gloss: "her"}   # þá
+    rsons.2.15.27: {lemma: "er", morph: "PRON|PronType=Rel", gloss: "whom"}   # er
+    rsons.2.15.28: {lemma: "áðr", morph: "ADV", gloss: "before"}   # áðr
+    rsons.2.15.29: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "had"}   # hafði
+    rsons.2.15.30: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.15.31: {lemma: "biðja", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "asked-for"}   # beðit
+    rsons.2.16.1: {lemma: "Eiríkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eiríkr
+    rsons.2.16.2: {lemma: "vilja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "would-have"}   # vildi
+    rsons.2.16.3: {lemma: "engi", morph: "PRON|Case=Acc|Gender=Fem|Number=Plur|PronType=Neg", gloss: "no"}   # engar
+    rsons.2.16.4: {lemma: "fébót", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "money-atonements"}   # fébætr
+    rsons.2.16.5: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.16.6: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rsons.2.16.7: {lemma: "konungr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "king's"}   # konungs
+    rsons.2.16.8: {lemma: "dóttir", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "daughter"}   # dóttur
+    rsons.2.16.9: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.16.10: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rsons.2.16.11: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Mid", gloss: "says-he"}   # kveðst
+    rsons.2.16.12: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.16.13: {lemma: "vilja", morph: "VERB|VerbForm=Inf", gloss: "wish"}   # vilja
+    rsons.2.16.14: {lemma: "lifa", morph: "VERB|VerbForm=Inf", gloss: "live"}   # lifa
+    rsons.2.16.15: {lemma: "eptir", morph: "ADP", gloss: "after"}   # eptir
+    rsons.2.16.16: {lemma: "sá", morph: "DET|Case=Acc|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # þann
+    rsons.2.16.17: {lemma: "ósigr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "defeat"}   # ósigr
+    rsons.2.16.18: {lemma: "er", morph: "PRON|PronType=Rel", gloss: "which"}   # er
+    rsons.2.16.19: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.16.20: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "had"}   # hafði
+    rsons.2.16.21: {lemma: "fá", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "got"}   # fengit
+    rsons.2.16.22: {lemma: "en", morph: "CCONJ", gloss: "but"}   # en
+    rsons.2.16.23: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rsons.2.16.24: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Mid", gloss: "says-he"}   # kveðst
+    rsons.2.16.25: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.16.26: {lemma: "þiggja", morph: "VERB|VerbForm=Inf", gloss: "accept"}   # þiggja
+    rsons.2.16.27: {lemma: "vilja", morph: "VERB|VerbForm=Inf", gloss: "wish"}   # vilja
+    rsons.2.16.28: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.16.29: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.16.30: {lemma: "kjósa", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "choose"}   # kjósi
+    rsons.2.16.31: {lemma: "sik", morph: "PRON|Case=Dat|Person=3|Reflex=Yes", gloss: "for-himself"}   # sér
+    rsons.2.16.32: {lemma: "sjálfr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "himself"}   # sjálfr
+    rsons.2.16.33: {lemma: "dauðdagi", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "manner-of-death"}   # dauðdaga
+    rsons.2.17.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rsons.2.17.2: {lemma: "af", morph: "ADP", gloss: "from"}   # af
+    rsons.2.17.3: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # því
+    rsons.2.17.4: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.17.5: {lemma: "Eysteinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eystein"}   # Eysteinn
+    rsons.2.17.6: {lemma: "konungr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "king"}   # konungr
+    rsons.2.17.7: {lemma: "mega", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "could"}   # mátti
+    rsons.2.17.8: {lemma: "engi", morph: "PRON|Case=Acc|Gender=Fem|Number=Sing|PronType=Neg", gloss: "no"}   # enga
+    rsons.2.17.9: {lemma: "sætt", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "settlement"}   # sætt
+    rsons.2.17.10: {lemma: "fá", morph: "VERB|VerbForm=Inf", gloss: "get"}   # fá
+    rsons.2.17.11: {lemma: "af", morph: "ADP", gloss: "from"}   # af
+    rsons.2.17.12: {lemma: "Eiríkr", morph: "PROPN|Case=Dat|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eiríki
+    rsons.2.17.13: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rsons.2.17.14: {lemma: "játta", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "grants"}   # játtar
+    rsons.2.17.15: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.17.16: {lemma: "hann", morph: "PRON|Case=Dat|Gender=Masc|Number=Sing|Person=3", gloss: "him"}   # honum
+    rsons.2.17.17: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rsons.2.18.1: {lemma: "Eiríkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eiríkr
+    rsons.2.18.2: {lemma: "biðja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "bade"}   # bað
+    rsons.2.18.3: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.18.4: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rsons.2.18.5: {lemma: "taka", morph: "VERB|Mood=Sub|Number=Plur|Person=3|Tense=Past", gloss: "should-take"}   # tæki
+    rsons.2.18.6: {lemma: "undir", morph: "ADP", gloss: "under"}   # undir
+    rsons.2.18.7: {lemma: "hann", morph: "PRON|Case=Acc|Gender=Masc|Number=Sing|Person=3", gloss: "him"}   # hann
+    rsons.2.18.8: {lemma: "spjótsoddr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "spear-points"}   # spjótsoddum
+    rsons.2.18.9: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.18.10: {lemma: "hefja", morph: "VERB|Mood=Sub|Number=Plur|Person=3|Tense=Pres", gloss: "should-raise"}   # hefi
+    rsons.2.18.11: {lemma: "hann", morph: "PRON|Case=Acc|Gender=Masc|Number=Sing|Person=3", gloss: "him"}   # hann
+    rsons.2.18.12: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    rsons.2.18.13: {lemma: "upp", morph: "ADV", gloss: "up"}   # upp
+    rsons.2.18.14: {lemma: "yfir", morph: "ADP", gloss: "over"}   # yfir
+    rsons.2.18.15: {lemma: "allr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "all"}   # allan
+    rsons.2.18.16: {lemma: "valr", morph: "NOUN|Case=Acc|Definite=Def|Gender=Masc|Number=Sing", gloss: "the-slain"}   # valinn
+    rsons.2.19.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # Þá
+    rsons.2.19.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    rsons.2.19.3: {lemma: "Eiríkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eiríkr
+    rsons.2.20: {metre: "odd line · staves b · first verse of Eiríkr: skaldic measure, six-syllable lines"}
+    rsons.2.20.1: {lemma: "vilja", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres", gloss: "will-I-not"}   # Vilkat
+    rsons.2.20.2: {lemma: "boð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "offer", stave: true}   # boð
+    rsons.2.20.3: {lemma: "fyrir", morph: "ADP", gloss: "for"}   # fyr
+    rsons.2.20.4: {lemma: "bróðir", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "brother", stave: true}   # bróður
+    rsons.2.21: {metre: "even line · head-stave b"}
+    rsons.2.21.1: {lemma: "né", morph: "CCONJ", gloss: "nor"}   # né
+    rsons.2.21.2: {lemma: "baugr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "with-rings", stave: true}   # baugum
+    rsons.2.21.3: {lemma: "mær", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "maid"}   # mey
+    rsons.2.21.4: {lemma: "kaupa", morph: "VERB|VerbForm=Inf", gloss: "buy"}   # kaupa
+    rsons.2.22: {metre: "odd line · staves vowel"}
+    rsons.2.22.1: {lemma: "Eysteinn", morph: "PROPN|Case=Acc|Gender=Masc|Number=Sing", gloss: "Eystein", stave: true}   # Eystein
+    rsons.2.22.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "they-say"}   # kveða
+    rsons.2.22.3: {lemma: "verða", morph: "VERB|Case=Acc|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "become", stave: true}   # orðinn
+    rsons.2.23: {metre: "even line · head-stave vowel · heyra read as an infinitive dependent on kveða (men say they hear Eystein has become Agnar's bane); uncertain"}
+    rsons.2.23.1: {lemma: "Agnarr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Agnar's", stave: true}   # Agnars
+    rsons.2.23.2: {lemma: "bani", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "bane"}   # bana
+    rsons.2.23.3: {lemma: "heyra", morph: "VERB|VerbForm=Inf", gloss: "hear"}   # heyra
+    rsons.2.24: {metre: "odd line · staves m · staves on mik and móðir (pronoun carrying a stave)"}
+    rsons.2.24.1: {lemma: "gráta", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "weeps"}   # grætr
+    rsons.2.24.2: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rsons.2.24.3: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me", stave: true}   # mik
+    rsons.2.24.4: {lemma: "móðir", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "mother", stave: true}   # móðir
+    rsons.2.25: {metre: "even line · head-stave m"}
+    rsons.2.25.1: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "shall-I", stave: true}   # munk
+    rsons.2.25.2: {lemma: "efstr", morph: "ADJ|Case=Nom|Degree=Sup|Gender=Masc|Number=Sing", gloss: "uppermost"}   # efstr
+    rsons.2.25.3: {lemma: "of", morph: "ADP", gloss: "over"}   # of
+    rsons.2.25.4: {lemma: "valr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "the-slain"}   # val
+    rsons.2.25.5: {lemma: "deyja", morph: "VERB|VerbForm=Inf", gloss: "die"}   # deyja
+    rsons.2.26: {metre: "odd line · staves g · í gögnum = through (Zoëga gegnum, gögnum); geirtré 'spear-trees' = spear-shafts"}
+    rsons.2.26.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.26.2: {lemma: "geirtré", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "spear-trees", stave: true}   # geirtré
+    rsons.2.26.3: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rsons.2.26.4: {lemma: "gegnum", morph: "ADP", gloss: "through", stave: true}   # gögnum
+    rsons.2.27: {metre: "even line · head-stave g · gerr read as the adverb 'fully, right' (Zoëga görr, gerr); uncertain"}
+    rsons.2.27.1: {lemma: "görr", morph: "ADV", gloss: "fully", stave: true}   # gerr
+    rsons.2.27.2: {lemma: "láta", morph: "VERB|Mood=Imp|Number=Plur|Person=2|Tense=Pres", gloss: "let"}   # látið
+    rsons.2.27.3: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # mik
+    rsons.2.27.4: {lemma: "standa", morph: "VERB|VerbForm=Inf", gloss: "stand"}   # standa
+    rsons.2.28.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rsons.2.28.2: {lemma: "áðr", morph: "SCONJ", gloss: "before"}   # áðr
+    rsons.2.28.3: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.28.4: {lemma: "vera", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # væri
+    rsons.2.28.5: {lemma: "hefja", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "raised"}   # hafinn
+    rsons.2.28.6: {lemma: "upp", morph: "ADV", gloss: "up"}   # upp
+    rsons.2.28.7: {lemma: "á", morph: "ADP", gloss: "onto"}   # á
+    rsons.2.28.8: {lemma: "spjót", morph: "NOUN|Case=Acc|Definite=Def|Gender=Neut|Number=Plur", gloss: "the-spears"}   # spjótin
+    rsons.2.28.9: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rsons.2.28.10: {lemma: "sjá", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "saw"}   # sá
+    rsons.2.28.11: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.28.12: {lemma: "einn", morph: "NUM|Case=Acc|Gender=Masc|Number=Sing", gloss: "a"}   # einn
+    rsons.2.28.13: {lemma: "maðr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "man"}   # mann
+    rsons.2.28.14: {lemma: "ríða", morph: "VERB|VerbForm=Inf", gloss: "ride"}   # ríða
+    rsons.2.28.15: {lemma: "mikill", morph: "ADV", gloss: "hard"}   # mikit
+    rsons.2.29.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # Þá
+    rsons.2.29.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    rsons.2.29.3: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.30: {metre: "odd line · staves vowel · second verse of Eiríkr, skaldic measure; it efra read adverbially, 'the latter, at the last'; uncertain"}
+    rsons.2.30.1: {lemma: "sá", morph: "DET|Case=Acc|Gender=Neut|Number=Plur|PronType=Dem", gloss: "those"}   # Þau
+    rsons.2.30.2: {lemma: "bera", morph: "VERB|Mood=Imp|Number=Plur|Person=2|Tense=Pres", gloss: "bear"}   # berið
+    rsons.2.30.3: {lemma: "orð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "words", stave: true}   # orð
+    rsons.2.30.4: {lemma: "inn", morph: "DET|Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art", gloss: "the"}   # it
+    rsons.2.30.5: {lemma: "efri", morph: "ADJ|Case=Acc|Degree=Cmp|Gender=Neut|Number=Sing", gloss: "latter", stave: true}   # efra
+    rsons.2.31: {metre: "even line · head-stave vowel · head-stave on austrfarar; the unstressed eru also begins with a vowel"}
+    rsons.2.31.1: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "are"}   # eru
+    rsons.2.31.2: {lemma: "austrför", morph: "NOUN|Case=Nom|Gender=Fem|Number=Plur", gloss: "east-journeys", stave: true}   # austrfarar
+    rsons.2.31.3: {lemma: "líða", morph: "VERB|Case=Nom|Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part", gloss: "passed"}   # liðnar
+    rsons.2.32: {metre: "odd line · staves m"}
+    rsons.2.32.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.32.2: {lemma: "mær", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "maid", stave: true}   # mær
+    rsons.2.32.3: {lemma: "hafa", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "have"}   # hafi
+    rsons.2.32.4: {lemma: "minn", morph: "DET|Case=Acc|Gender=Masc|Number=Plur|Poss=Yes", gloss: "my", stave: true}   # mína
+    rsons.2.33: {metre: "even line · head-stave m · Áslaugu dative, the receiver of the message (berið orð ... Áslaugu)"}
+    rsons.2.33.1: {lemma: "mjór", morph: "ADJ|Case=Nom|Gender=Fem|Number=Sing", gloss: "slender", stave: true}   # mjó
+    rsons.2.33.2: {lemma: "Áslaug", morph: "PROPN|Case=Dat|Gender=Fem|Number=Sing", gloss: "to-Aslaug"}   # Áslaugu
+    rsons.2.33.3: {lemma: "baugr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "rings"}   # bauga
+    rsons.2.34: {metre: "odd line · staves m"}
+    rsons.2.34.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rsons.2.34.2: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "will"}   # mun
+    rsons.2.34.3: {lemma: "mikill", morph: "ADV|Degree=Sup", gloss: "most", stave: true}   # mest
+    rsons.2.34.4: {lemma: "af", morph: "ADP", gloss: "from"}   # af
+    rsons.2.34.5: {lemma: "móðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "wrath", stave: true}   # móði
+    rsons.2.35: {metre: "even line · head-stave m · head-stave on the pronoun mik"}
+    rsons.2.35.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    rsons.2.35.2: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me", stave: true}   # mik
+    rsons.2.35.3: {lemma: "spyrja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "hear-of"}   # spyrja
+    rsons.2.35.4: {lemma: "dauðr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "dead"}   # dauðan
+    rsons.2.36: {metre: "odd line · staves m"}
+    rsons.2.36.1: {lemma: "minn", morph: "DET|Case=Nom|Gender=Fem|Number=Sing|Poss=Yes", gloss: "my", stave: true}   # mín
+    rsons.2.36.2: {lemma: "stjúpmóðir", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "stepmother"}   # stjúpmóðir
+    rsons.2.36.3: {lemma: "mildr", morph: "ADJ|Case=Dat|Gender=Masc|Number=Plur", gloss: "gentle", stave: true}   # mildum
+    rsons.2.37: {metre: "even line · head-stave m"}
+    rsons.2.37.1: {lemma: "mögr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "sons", stave: true}   # mögum
+    rsons.2.37.2: {lemma: "sinn", morph: "DET|Case=Dat|Gender=Masc|Number=Plur|Poss=Yes", gloss: "her-own"}   # sínum
+    rsons.2.37.3: {lemma: "til", morph: "ADV", gloss: "to-it"}   # til
+    rsons.2.37.4: {lemma: "segja", morph: "VERB|VerbForm=Inf", gloss: "tell"}   # segja
+    rsons.2.38.1: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # Var
+    rsons.2.38.2: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rsons.2.38.3: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    rsons.2.38.4: {lemma: "gera", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "done"}   # gert
+    rsons.2.38.5: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.38.6: {lemma: "Eiríkr", morph: "PROPN|Case=Dat|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eiríki
+    rsons.2.38.7: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rsons.2.38.8: {lemma: "lypta", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "lifted"}   # lypt
+    rsons.2.38.9: {lemma: "upp", morph: "ADV", gloss: "up"}   # upp
+    rsons.2.38.10: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    rsons.2.38.11: {lemma: "spjótsoddr", morph: "NOUN|Case=Dat|Definite=Def|Gender=Masc|Number=Plur", gloss: "the-spear-points"}   # spjótsoddunum
+    rsons.2.38.12: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.38.13: {lemma: "deyja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "died"}   # dó
+    rsons.2.38.14: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.38.15: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    rsons.2.38.16: {lemma: "uppi", morph: "ADV", gloss: "aloft"}   # uppi
+    rsons.2.38.17: {lemma: "yfir", morph: "ADP", gloss: "over"}   # yfir
+    rsons.2.38.18: {lemma: "valr", morph: "NOUN|Case=Dat|Definite=Def|Gender=Masc|Number=Sing", gloss: "the-slain"}   # valnum
+    rsons.2.39.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rsons.2.39.2: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rsons.2.39.3: {lemma: "þessi", morph: "DET|Case=Nom|Gender=Neut|Number=Plur|PronType=Dem", gloss: "these"}   # þessi
+    rsons.2.39.4: {lemma: "tíðendi", morph: "NOUN|Case=Nom|Gender=Neut|Number=Plur", gloss: "tidings"}   # tíðendi
+    rsons.2.39.5: {lemma: "spyrja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|Voice=Mid", gloss: "are-heard"}   # spyrjast
+    rsons.2.39.6: {lemma: "út", morph: "ADV", gloss: "out"}   # út
+    rsons.2.39.7: {lemma: "á", morph: "ADP", gloss: "to"}   # á
+    rsons.2.39.8: {lemma: "Selund", morph: "PROPN|Case=Acc|Gender=Fem|Number=Sing", gloss: "Zealand"}   # Selund
+    rsons.2.39.9: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rsons.2.39.10: {lemma: "Áslaug", morph: "PROPN|Case=Gen|Gender=Fem|Number=Sing", gloss: "Aslaug"}   # Áslaugar
+    rsons.2.39.11: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rsons.2.39.12: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "goes"}   # ferr
+    rsons.2.39.13: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rsons.2.39.14: {lemma: "þegar", morph: "ADV", gloss: "at-once"}   # þegar
+    rsons.2.39.15: {lemma: "á", morph: "ADP", gloss: "to"}   # á
+    rsons.2.39.16: {lemma: "fundr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "meeting"}   # fund
+    rsons.2.39.17: {lemma: "sonr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "sons"}   # sona
+    rsons.2.39.18: {lemma: "sinn", morph: "DET|Case=Gen|Gender=Masc|Number=Plur|Poss=Yes", gloss: "her-own"}   # sinna
+    rsons.2.39.19: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.39.20: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "tells"}   # segir
+    rsons.2.39.21: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Masc|Number=Plur|PronType=Dem", gloss: "them"}   # þeim
+    rsons.2.39.22: {lemma: "þessi", morph: "DET|Case=Acc|Gender=Neut|Number=Plur|PronType=Dem", gloss: "these"}   # þessi
+    rsons.2.39.23: {lemma: "tíðendi", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "tidings"}   # tíðendi
+    rsons.2.40.1: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # Þeir
+    rsons.2.40.2: {lemma: "Björn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Bjorn"}   # Björn
+    rsons.2.40.3: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.40.4: {lemma: "Hvítserkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Hvitserk"}   # Hvítserkr
+    rsons.2.40.5: {lemma: "leika", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "played"}   # léku
+    rsons.2.40.6: {lemma: "tafl", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "board-game"}   # tafl
+    rsons.2.40.7: {lemma: "en", morph: "CCONJ", gloss: "but"}   # en
+    rsons.2.40.8: {lemma: "Sigurðr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Sigurd"}   # Sigurðr
+    rsons.2.40.9: {lemma: "standa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "stood"}   # stóð
+    rsons.2.40.10: {lemma: "at", morph: "ADV", gloss: "by"}   # at
+    rsons.2.40.11: {lemma: "framan", morph: "ADV", gloss: "in-front"}   # framan
+    rsons.2.41.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # Þá
+    rsons.2.41.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    rsons.2.41.3: {lemma: "Áslaug", morph: "PROPN|Case=Nom|Gender=Fem|Number=Sing", gloss: "Aslaug"}   # Áslaug
+    rsons.2.42: {metre: "odd line · staves vowel · Áslaug's verse, skaldic measure; yðar the genitive of þér (your death)"}
+    rsons.2.42.1: {lemma: "eigi", morph: "ADV", gloss: "not", stave: true}   # Eigi
+    rsons.2.42.2: {lemma: "munu", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "would"}   # mundi
+    rsons.2.42.3: {lemma: "þér", morph: "PRON|Case=Gen|Number=Plur|Person=2", gloss: "of-you", stave: true}   # yðar
+    rsons.2.43: {metre: "even line · head-stave vowel · head-stave on the pronoun ér (older form of þér)"}
+    rsons.2.43.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    rsons.2.43.2: {lemma: "þér", morph: "PRON|Case=Nom|Number=Plur|Person=2", gloss: "ye", stave: true}   # ér
+    rsons.2.43.3: {lemma: "deyja", morph: "VERB|Mood=Sub|Number=Plur|Person=2|Tense=Past", gloss: "had-died"}   # dæið
+    rsons.2.43.4: {lemma: "fyrr", morph: "ADV|Degree=Cmp", gloss: "sooner"}   # fyrri
+    rsons.2.44: {metre: "odd line · staves vowel · eptir without an object, adverb"}
+    rsons.2.44.1: {lemma: "einn", morph: "NUM|Case=Acc|Gender=Neut|Number=Sing", gloss: "one", stave: true}   # eitt
+    rsons.2.44.2: {lemma: "misseri", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "half-year"}   # misseri
+    rsons.2.44.3: {lemma: "eptir", morph: "ADV", gloss: "after", stave: true}   # eptir
+    rsons.2.45: {metre: "even line · head-stave vowel"}
+    rsons.2.45.1: {lemma: "óhefndr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "unavenged", stave: true}   # óhefnt
+    rsons.2.45.2: {lemma: "vera", morph: "AUX|VerbForm=Inf", gloss: "be"}   # vera
+    rsons.2.45.3: {lemma: "bróðir", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-brothers"}   # bræðra
+    rsons.2.46: {metre: "odd line · staves l"}
+    rsons.2.46.1: {lemma: "lítt", morph: "ADV", gloss: "little", stave: true}   # lítt
+    rsons.2.46.2: {lemma: "ráða", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|Voice=Mid", gloss: "resolve-I"}   # ráðumk
+    rsons.2.46.3: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # því
+    rsons.2.46.4: {lemma: "leyna", morph: "VERB|VerbForm=Inf", gloss: "hide", stave: true}   # leyna
+    rsons.2.47: {metre: "even line · head-stave l"}
+    rsons.2.47.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    rsons.2.47.2: {lemma: "líf", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "life", stave: true}   # líf
+    rsons.2.47.3: {lemma: "hafa", morph: "VERB|VerbForm=Inf", gloss: "have"}   # hafa
+    rsons.2.47.4: {lemma: "knega", morph: "VERB|Mood=Sub|Number=Plur|Person=3|Tense=Past", gloss: "could"}   # knætti
+    rsons.2.48: {metre: "odd line · staves vowel"}
+    rsons.2.48.1: {lemma: "Eiríkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eirik", stave: true}   # Eiríkr
+    rsons.2.48.2: {lemma: "sinn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing|Poss=Yes", gloss: "their-own"}   # sitt
+    rsons.2.48.3: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.48.4: {lemma: "Agnarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Agnar", stave: true}   # Agnarr
+    rsons.2.49: {metre: "even line · head-stave vowel"}
+    rsons.2.49.1: {lemma: "óborinn", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "unborn", stave: true}   # óbornir
+    rsons.2.49.2: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "to-me"}   # mér
+    rsons.2.49.3: {lemma: "niðr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "kinsmen"}   # niðjar
+    rsons.2.50.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # Þá
+    rsons.2.50.2: {lemma: "svara", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "answered"}   # svaraði
+    rsons.2.50.3: {lemma: "Sigurðr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Sigurd"}   # Sigurðr
+    rsons.2.50.4: {lemma: "ormr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Snake"}   # ormr
+    rsons.2.50.5: {lemma: "í", morph: "ADP", gloss: "in-the"}   # í
+    rsons.2.50.6: {lemma: "auga", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "Eye"}   # auga
+    rsons.2.51: {metre: "odd line · staves þ · Sigurðr's verse, skaldic measure; þriggja vikna genitive of time, within three weeks"}
+    rsons.2.51.1: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that", stave: true}   # Þat
+    rsons.2.51.2: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    rsons.2.51.3: {lemma: "þrír", morph: "NUM|Case=Gen|Gender=Fem|Number=Plur", gloss: "of-three", stave: true}   # þriggja
+    rsons.2.51.4: {lemma: "vika", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "of-weeks"}   # vikna
+    rsons.2.52: {metre: "even line · head-stave þ · móðir vocative (ef þik tregar, móðir)"}
+    rsons.2.52.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    rsons.2.52.2: {lemma: "þú", morph: "PRON|Case=Acc|Number=Sing|Person=2", gloss: "thee", stave: true}   # þik
+    rsons.2.52.3: {lemma: "trega", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "grieves"}   # tregar
+    rsons.2.52.4: {lemma: "móðir", morph: "NOUN|Case=Voc|Gender=Fem|Number=Sing", gloss: "mother"}   # móðir
+    rsons.2.53: {metre: "odd line · staves l · eigu with vér, coded 1st plural"}
+    rsons.2.53.1: {lemma: "leið", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "way", stave: true}   # leið
+    rsons.2.53.2: {lemma: "eiga", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "have"}   # eigu
+    rsons.2.53.3: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    rsons.2.53.4: {lemma: "langr", morph: "ADJ|Case=Acc|Gender=Fem|Number=Sing", gloss: "long", stave: true}   # langa
+    rsons.2.54: {metre: "even line · head-stave l"}
+    rsons.2.54.1: {lemma: "leiðangr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "levy", stave: true}   # leiðangr
+    rsons.2.54.2: {lemma: "búa", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "ready"}   # búinn
+    rsons.2.54.3: {lemma: "verða", morph: "VERB|VerbForm=Inf", gloss: "become"}   # verða
+    rsons.2.55: {metre: "odd line · staves vowel"}
+    rsons.2.55.1: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    rsons.2.55.2: {lemma: "Uppsalir", morph: "PROPN|Case=Dat|Gender=Masc|Number=Plur", gloss: "at-Uppsala", stave: true}   # Uppsölum
+    rsons.2.55.3: {lemma: "eigi", morph: "ADV", gloss: "not", stave: true}   # eigi
+    rsons.2.56: {metre: "even line · head-stave vowel"}
+    rsons.2.56.1: {lemma: "þótt", morph: "SCONJ", gloss: "though"}   # þótt
+    rsons.2.56.2: {lemma: "ófafé", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "abundant-wealth", stave: true}   # ófafé
+    rsons.2.56.3: {lemma: "bjóða", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "he-offer"}   # bjóði
+    rsons.2.57: {metre: "odd line · staves vowel · eggjar is the noun egg 'edge' (subject of duga), not the verb eggja"}
+    rsons.2.57.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    rsons.2.57.2: {lemma: "vér", morph: "PRON|Case=Dat|Number=Plur|Person=1", gloss: "us", stave: true}   # oss
+    rsons.2.57.3: {lemma: "duga", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "avail"}   # duga
+    rsons.2.57.4: {lemma: "egg", morph: "NOUN|Case=Nom|Gender=Fem|Number=Plur", gloss: "edges", stave: true}   # eggjar
+    rsons.2.58: {metre: "even line · head-stave vowel"}
+    rsons.2.58.1: {lemma: "Eysteinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eystein", stave: true}   # Eysteinn
+    rsons.2.58.2: {lemma: "beli", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Beli"}   # beli
+    rsons.2.58.3: {lemma: "ráða", morph: "VERB|VerbForm=Inf", gloss: "rule"}   # ráða
+    rsons.2.59.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # Þá
+    rsons.2.59.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    rsons.2.59.3: {lemma: "Björn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Bjorn"}   # Björn
+    rsons.2.59.4: {lemma: "járnsíða", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "Ironside"}   # járnsíða
+    rsons.2.60: {metre: "odd line · staves h · Björn's verse, skaldic measure"}
+    rsons.2.60.1: {lemma: "duga", morph: "VERB|VerbForm=Inf", gloss: "avail"}   # Duga
+    rsons.2.60.2: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "will"}   # mun
+    rsons.2.60.3: {lemma: "hugr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "courage", stave: true}   # hugr
+    rsons.2.60.4: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.60.5: {lemma: "hjarta", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "heart", stave: true}   # hjarta
+    rsons.2.61: {metre: "even line · head-stave h"}
+    rsons.2.61.1: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rsons.2.61.2: {lemma: "hauksnarr", morph: "ADJ|Case=Dat|Gender=Neut|Number=Sing", gloss: "hawk-keen", stave: true}   # hauksnöru
+    rsons.2.61.3: {lemma: "brjóst", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "breast"}   # brjósti
+    rsons.2.62: {metre: "odd line · staves m"}
+    rsons.2.62.1: {lemma: "þótt", morph: "SCONJ", gloss: "though"}   # þótt
+    rsons.2.62.2: {lemma: "minnr", morph: "ADV|Degree=Cmp", gloss: "less", stave: true}   # minnr
+    rsons.2.62.3: {lemma: "um", morph: "ADP", gloss: "about"}   # um
+    rsons.2.62.4: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rsons.2.62.5: {lemma: "mæla", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "one-speak", stave: true}   # mæli
+    rsons.2.63: {metre: "even line · head-stave m"}
+    rsons.2.63.1: {lemma: "maðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "man", stave: true}   # manni
+    rsons.2.63.2: {lemma: "innan", morph: "ADP", gloss: "within"}   # innan
+    rsons.2.63.3: {lemma: "rif", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "ribs"}   # rifja
+    rsons.2.64: {metre: "odd line · staves vowel · er is the copula 'is'"}
+    rsons.2.64.1: {lemma: "eigi", morph: "ADV", gloss: "not", stave: true}   # eigi
+    rsons.2.64.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rsons.2.64.3: {lemma: "vér", morph: "PRON|Case=Dat|Number=Plur|Person=1", gloss: "to-us"}   # oss
+    rsons.2.64.4: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rsons.2.64.5: {lemma: "auga", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "eyes", stave: true}   # augum
+    rsons.2.65: {metre: "even line · head-stave vowel"}
+    rsons.2.65.1: {lemma: "ormr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "serpent", stave: true}   # ormr
+    rsons.2.65.2: {lemma: "né", morph: "CCONJ", gloss: "nor"}   # né
+    rsons.2.65.3: {lemma: "fránn", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "gleaming"}   # fránir
+    rsons.2.65.4: {lemma: "snákr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "snakes"}   # snákar
+    rsons.2.66: {metre: "odd line · staves m · staves on mik and mínir, after the even line's head-stave mank"}
+    rsons.2.66.1: {lemma: "bróðir", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "brothers"}   # bræðr
+    rsons.2.66.2: {lemma: "gleðja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "gladdened"}   # glöddu
+    rsons.2.66.3: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me", stave: true}   # mik
+    rsons.2.66.4: {lemma: "minn", morph: "DET|Case=Nom|Gender=Masc|Number=Plur|Poss=Yes", gloss: "my", stave: true}   # mínir
+    rsons.2.67: {metre: "even line · head-stave m"}
+    rsons.2.67.1: {lemma: "muna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "remember-I", stave: true}   # mank
+    rsons.2.67.2: {lemma: "stjúpsonr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "stepsons"}   # stjúpsonu
+    rsons.2.67.3: {lemma: "þinn", morph: "DET|Case=Acc|Gender=Masc|Number=Plur|Poss=Yes", gloss: "thy"}   # þína
+    rsons.2.68.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # Þá
+    rsons.2.68.2: {lemma: "svara", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "answered"}   # svaraði
+    rsons.2.68.3: {lemma: "Hvítserkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Hvitserk"}   # Hvítserkr
+    rsons.2.69: {metre: "odd line · staves h · Hvítserkr's verse, skaldic measure; hyggja at = consider, at without an object coded ADV, a reading the row does not list"}
+    rsons.2.69.1: {lemma: "hyggja", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "let-us-consider", stave: true}   # Hyggjum
+    rsons.2.69.2: {lemma: "at", morph: "ADV", gloss: "to-it"}   # at
+    rsons.2.69.3: {lemma: "áðr", morph: "SCONJ", gloss: "before"}   # áðr
+    rsons.2.69.4: {lemma: "heita", morph: "VERB|Mood=Sub|Number=Plur|Person=1|Tense=Pres", gloss: "we-vow", stave: true}   # heitim
+    rsons.2.70: {metre: "even line · head-stave h"}
+    rsons.2.70.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.70.2: {lemma: "hefna", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "avenged", stave: true}   # hefnt
+    rsons.2.70.3: {lemma: "mega", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "may"}   # megi
+    rsons.2.70.4: {lemma: "verða", morph: "VERB|VerbForm=Inf", gloss: "be"}   # verða
+    rsons.2.71: {metre: "odd line · staves vowel · ýmsa illu read as 'with various evil' (Agnar's bane to welcome it); uncertain"}
+    rsons.2.71.1: {lemma: "láta", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "let-us-make"}   # látum
+    rsons.2.71.2: {lemma: "ýmiss", morph: "ADJ|Case=Acc|Gender=Masc|Number=Plur", gloss: "various", stave: true}   # ýmsa
+    rsons.2.71.3: {lemma: "illr", morph: "ADJ|Case=Dat|Gender=Neut|Number=Sing", gloss: "with-evil", stave: true}   # illu
+    rsons.2.72: {metre: "even line · head-stave vowel"}
+    rsons.2.72.1: {lemma: "Agnarr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Agnar's", stave: true}   # Agnars
+    rsons.2.72.2: {lemma: "bani", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "bane"}   # bana
+    rsons.2.72.3: {lemma: "fagna", morph: "VERB|VerbForm=Inf", gloss: "welcome"}   # fagna
+    rsons.2.73: {metre: "odd line · staves h · hrindum also alliterates on h"}
+    rsons.2.73.1: {lemma: "hrinda", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "let-us-push"}   # hrindum
+    rsons.2.73.2: {lemma: "húfr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "hull", stave: true}   # húf
+    rsons.2.73.3: {lemma: "á", morph: "ADP", gloss: "onto"}   # á
+    rsons.2.73.4: {lemma: "hrönn", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "waves", stave: true}   # hrannir
+    rsons.2.74: {metre: "even line · head-stave h"}
+    rsons.2.74.1: {lemma: "höggva", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "let-us-hew", stave: true}   # höggum
+    rsons.2.74.2: {lemma: "íss", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "ice"}   # ís
+    rsons.2.74.3: {lemma: "fyrir", morph: "ADP", gloss: "before"}   # fyr
+    rsons.2.74.4: {lemma: "barð", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "prow"}   # barði
+    rsons.2.75: {metre: "odd line · staves s"}
+    rsons.2.75.1: {lemma: "sjá", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "let-us-look", stave: true}   # sjám
+    rsons.2.75.2: {lemma: "á", morph: "ADP", gloss: "to"}   # á
+    rsons.2.75.3: {lemma: "hinn", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # hitt
+    rsons.2.75.4: {lemma: "hvé", morph: "ADV", gloss: "how"}   # hvé
+    rsons.2.75.5: {lemma: "snekkja", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "warships", stave: true}   # snekkjur
+    rsons.2.76: {metre: "even line · head-stave s"}
+    rsons.2.76.1: {lemma: "snemma", morph: "ADV|Degree=Sup", gloss: "soonest", stave: true}   # snemmst
+    rsons.2.76.2: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    rsons.2.76.3: {lemma: "fá", morph: "VERB|Mood=Sub|Number=Plur|Person=1|Tense=Pres", gloss: "may-get"}   # fáim
+    rsons.2.76.4: {lemma: "búa", morph: "VERB|Case=Acc|Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part", gloss: "ready"}   # búnar
+    rsons.2.77.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # Þá
+    rsons.2.77.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    rsons.2.77.3: {lemma: "Ívarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Ivar"}   # Ívarr
+    rsons.2.77.4: {lemma: "beinlauss", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "the-Boneless"}   # beinlausi
+    rsons.2.78: {metre: "odd line · staves vowel · Ívarr's verse, skaldic measure"}
+    rsons.2.78.1: {lemma: "hafa", morph: "VERB|Mood=Ind|Number=Plur|Person=2|Tense=Pres", gloss: "ye-have"}   # Hafið
+    rsons.2.78.2: {lemma: "ofrhugi", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "over-courage", stave: true}   # ofrhuga
+    rsons.2.78.3: {lemma: "ærinn", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "enough", stave: true}   # ærinn
+    rsons.2.79: {metre: "even line · head-stave vowel"}
+    rsons.2.79.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.79.2: {lemma: "áræði", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "boldness", stave: true}   # áræði
+    rsons.2.79.3: {lemma: "bæði", morph: "CCONJ", gloss: "both"}   # bæði
+    rsons.2.80: {metre: "odd line · staves þ"}
+    rsons.2.80.1: {lemma: "sá", morph: "PRON|Case=Gen|Gender=Neut|Number=Sing|PronType=Dem", gloss: "of-that", stave: true}   # þess
+    rsons.2.80.2: {lemma: "munu", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "would"}   # mundi
+    rsons.2.80.3: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rsons.2.80.4: {lemma: "þurfa", morph: "VERB|VerbForm=Inf", gloss: "need", stave: true}   # þurfa
+    rsons.2.81: {metre: "even line · head-stave þ · þrá 'longing, stubborn will' and mikit as adverb; uncertain"}
+    rsons.2.81.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.81.2: {lemma: "þrá", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "longing", stave: true}   # þrá
+    rsons.2.81.3: {lemma: "mikill", morph: "ADV", gloss: "greatly"}   # mikit
+    rsons.2.81.4: {lemma: "fylgja", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "followed"}   # fylgdi
+    rsons.2.82: {metre: "odd line · staves b"}
+    rsons.2.82.1: {lemma: "bera", morph: "VERB|VerbForm=Inf", gloss: "bear", stave: true}   # bera
+    rsons.2.82.2: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "must"}   # mun
+    rsons.2.82.3: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # mik
+    rsons.2.82.4: {lemma: "fyrir", morph: "ADP", gloss: "before"}   # fyr
+    rsons.2.82.5: {lemma: "bragnar", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "warriors", stave: true}   # bragna
+    rsons.2.83: {metre: "even line · head-stave b · verða with the infinitive bera = must (one must bear me forward)"}
+    rsons.2.83.1: {lemma: "beinlauss", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "boneless", stave: true}   # beinlausan
+    rsons.2.83.2: {lemma: "fram", morph: "ADV", gloss: "forward"}   # fram
+    rsons.2.83.3: {lemma: "verða", morph: "VERB|VerbForm=Inf", gloss: "must"}   # verða
+    rsons.2.84: {metre: "odd line · staves h"}
+    rsons.2.84.1: {lemma: "þó", morph: "ADV", gloss: "yet"}   # þó
+    rsons.2.84.2: {lemma: "geta", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "got-I"}   # gatk
+    rsons.2.84.3: {lemma: "hönd", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "hand", stave: true}   # hönd
+    rsons.2.84.4: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rsons.2.84.5: {lemma: "hefnd", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "vengeance", stave: true}   # hefnda
+    rsons.2.85: {metre: "even line · head-stave h"}
+    rsons.2.85.1: {lemma: "at", morph: "SCONJ", gloss: "though"}   # at
+    rsons.2.85.2: {lemma: "hvárigr", morph: "PRON|Case=Acc|Gender=Fem|Number=Sing|PronType=Neg", gloss: "neither", stave: true}   # hváriga
+    rsons.2.85.3: {lemma: "nýta", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres", gloss: "use-I-not"}   # nýtak
+    rsons.2.86.1: {lemma: "eptir", morph: "ADP", gloss: "after"}   # Eptir
+    rsons.2.86.2: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rsons.2.86.3: {lemma: "draga", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "drew"}   # drógu
+    rsons.2.86.4: {lemma: "Ragnarr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Ragnar's"}   # Ragnars
+    rsons.2.86.5: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons"}   # synir
+    rsons.2.86.6: {lemma: "saman", morph: "ADV", gloss: "together"}   # saman
+    rsons.2.86.7: {lemma: "óvígr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "invincible"}   # óvígan
+    rsons.2.86.8: {lemma: "herr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "host"}   # her
+    rsons.2.87.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rsons.2.87.2: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rsons.2.87.3: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rsons.2.87.4: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "were"}   # váru
+    rsons.2.87.5: {lemma: "búa", morph: "VERB|Case=Nom|Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part", gloss: "ready"}   # búnir
+    rsons.2.87.6: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rsons.2.87.7: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "went"}   # fóru
+    rsons.2.87.8: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rsons.2.87.9: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    rsons.2.87.10: {lemma: "skipaherr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "ship-host"}   # skipaher
+    rsons.2.87.11: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rsons.2.87.12: {lemma: "Svíþjóð", morph: "PROPN|Case=Gen|Gender=Fem|Number=Sing", gloss: "Sweden"}   # Svíþjóðar
+    rsons.2.87.13: {lemma: "en", morph: "CCONJ", gloss: "but"}   # en
+    rsons.2.87.14: {lemma: "Áslaug", morph: "PROPN|Case=Nom|Gender=Fem|Number=Sing", gloss: "Aslaug"}   # Áslaug
+    rsons.2.87.15: {lemma: "dróttning", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "queen"}   # drottning
+    rsons.2.87.16: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "goes"}   # ferr
+    rsons.2.87.17: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    rsons.2.87.18: {lemma: "fimmtán", morph: "NUM", gloss: "fifteen"}   # fimmtán
+    rsons.2.87.19: {lemma: "hundrað", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "hundreds"}   # hundruðum
+    rsons.2.87.20: {lemma: "riddari", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-riders"}   # riddara
+    rsons.2.87.21: {lemma: "landvegr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "overland"}   # landveg
+    rsons.2.87.22: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.87.23: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rsons.2.87.24: {lemma: "sá", morph: "DET|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rsons.2.87.25: {lemma: "fólk", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "people"}   # fólk
+    rsons.2.87.26: {lemma: "allvel", morph: "ADV", gloss: "very-well"}   # allvel
+    rsons.2.87.27: {lemma: "búa", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "equipped"}   # búit
+    rsons.2.88.1: {lemma: "sjálfr", morph: "ADJ|Case=Nom|Gender=Fem|Number=Sing", gloss: "herself"}   # Sjálf
+    rsons.2.88.2: {lemma: "bera", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "bore"}   # bar
+    rsons.2.88.3: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rsons.2.88.4: {lemma: "herklæði", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "armor"}   # herklæði
+    rsons.2.88.5: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.88.6: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rsons.2.88.7: {lemma: "formaðr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "leader"}   # formaðr
+    rsons.2.88.8: {lemma: "sá", morph: "DET|Case=Gen|Gender=Masc|Number=Sing|PronType=Dem", gloss: "of-that"}   # þess
+    rsons.2.88.9: {lemma: "herr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "host"}   # hers
+    rsons.2.88.10: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.88.11: {lemma: "kalla", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Mid", gloss: "called-herself"}   # kallaðist
+    rsons.2.88.12: {lemma: "Randalín", morph: "PROPN|Case=Nom|Gender=Fem|Number=Sing", gloss: "Randalin"}   # Randalín
+    rsons.2.88.13: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.88.14: {lemma: "mæta", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|Voice=Mid", gloss: "meet"}   # mætast
+    rsons.2.88.15: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Plur|PronType=Dem", gloss: "they"}   # þau
+    rsons.2.88.16: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rsons.2.88.17: {lemma: "Svíþjóð", morph: "PROPN|Case=Dat|Gender=Fem|Number=Sing", gloss: "Sweden"}   # Svíþjóð
+    rsons.2.88.18: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.88.19: {lemma: "ræna", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "rob"}   # ræna
+    rsons.2.88.20: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.88.21: {lemma: "brenna", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "burn"}   # brenna
+    rsons.2.88.22: {lemma: "hvar", morph: "ADV", gloss: "where"}   # hvar
+    rsons.2.88.23: {lemma: "sem", morph: "SCONJ", gloss: "as"}   # sem
+    rsons.2.88.24: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Plur|PronType=Dem", gloss: "they"}   # þau
+    rsons.2.88.25: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "go"}   # fara
+    rsons.2.88.26: {lemma: "yfir", morph: "ADV", gloss: "over"}   # yfir
+    rsons.2.89.1: {lemma: "þessi", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "this"}   # Þetta
+    rsons.2.89.2: {lemma: "spyrja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "hears"}   # spyrr
+    rsons.2.89.3: {lemma: "Eysteinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eystein"}   # Eysteinn
+    rsons.2.89.4: {lemma: "konungr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "king"}   # konungr
+    rsons.2.89.5: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.89.6: {lemma: "safna", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "gathers"}   # safnar
+    rsons.2.89.7: {lemma: "herr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "host"}   # her
+    rsons.2.89.8: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rsons.2.89.9: {lemma: "móti", morph: "ADP", gloss: "against"}   # móti
+    rsons.2.89.10: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Masc|Number=Plur|PronType=Dem", gloss: "them"}   # þeim
+    rsons.2.89.11: {lemma: "hverr", morph: "PRON|Case=Dat|Gender=Masc|Number=Sing|PronType=Ind", gloss: "each"}   # hverjum
+    rsons.2.89.12: {lemma: "sá", morph: "DET|Case=Dat|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # þeim
+    rsons.2.89.13: {lemma: "maðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "man"}   # manni
+    rsons.2.89.14: {lemma: "er", morph: "PRON|PronType=Rel", gloss: "who"}   # er
+    rsons.2.89.15: {lemma: "vígr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "fit-to-fight"}   # vígr
+    rsons.2.89.16: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rsons.2.89.17: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rsons.2.89.18: {lemma: "hann", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|Person=3", gloss: "his"}   # hans
+    rsons.2.89.19: {lemma: "ríki", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "realm"}   # ríki
+    rsons.2.90.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rsons.2.90.2: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rsons.2.90.3: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rsons.2.90.4: {lemma: "mæta", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|Voice=Mid", gloss: "meet"}   # mætast
+    rsons.2.90.5: {lemma: "verða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "becomes"}   # verðr
+    rsons.2.90.6: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rsons.2.90.7: {lemma: "mikill", morph: "ADJ|Case=Nom|Gender=Fem|Number=Sing", gloss: "great"}   # mikil
+    rsons.2.90.8: {lemma: "orrosta", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "battle"}   # orrosta
+    rsons.2.90.9: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.90.10: {lemma: "fá", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "get"}   # fá
+    rsons.2.90.11: {lemma: "loðbrók", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "Lothbrok's"}   # Loðbrókar
+    rsons.2.90.12: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons"}   # synir
+    rsons.2.90.13: {lemma: "sigr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "victory"}   # sigr
+    rsons.2.90.14: {lemma: "en", morph: "CCONJ", gloss: "but"}   # en
+    rsons.2.90.15: {lemma: "Eysteinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eystein"}   # Eysteinn
+    rsons.2.90.16: {lemma: "konungr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "king"}   # konungr
+    rsons.2.90.17: {lemma: "falla", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "fell"}   # fell
+    rsons.2.90.18: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.90.19: {lemma: "spyrja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Mid", gloss: "is-heard"}   # spyrst
+    rsons.2.90.20: {lemma: "þessi", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "this"}   # þetta
+    rsons.2.90.21: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.90.22: {lemma: "verða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "becomes"}   # verðr
+    rsons.2.90.23: {lemma: "mjök", morph: "ADV", gloss: "very"}   # mjök
+    rsons.2.90.24: {lemma: "frægr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "famous"}   # frægt
+    rsons.2.91.1: {lemma: "Ragnarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Ragnar"}   # Ragnarr
+    rsons.2.91.2: {lemma: "konungr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "king"}   # konungr
+    rsons.2.91.3: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rsons.2.91.4: {lemma: "sem", morph: "SCONJ", gloss: "where"}   # sem
+    rsons.2.91.5: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.91.6: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rsons.2.91.7: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rsons.2.91.8: {lemma: "hernaðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "raiding"}   # hernaði
+    rsons.2.91.9: {lemma: "spyrja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "hears"}   # spyrr
+    rsons.2.91.10: {lemma: "þessi", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "this"}   # þetta
+    rsons.2.91.11: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.91.12: {lemma: "líka", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "likes"}   # líkar
+    rsons.2.91.13: {lemma: "stórilla", morph: "ADV", gloss: "very-ill"}   # stórilla
+    rsons.2.91.14: {lemma: "við", morph: "ADP", gloss: "with"}   # við
+    rsons.2.91.15: {lemma: "sonr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "sons"}   # sonu
+    rsons.2.91.16: {lemma: "sinn", morph: "DET|Case=Acc|Gender=Masc|Number=Plur|Poss=Yes", gloss: "his-own"}   # sína
+    rsons.2.91.17: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.91.18: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rsons.2.91.19: {lemma: "láta", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "let"}   # létu
+    rsons.2.91.20: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rsons.2.91.21: {lemma: "hefnd", morph: "NOUN|Case=Acc|Definite=Def|Gender=Fem|Number=Sing", gloss: "the-vengeance"}   # hefndina
+    rsons.2.91.22: {lemma: "bíða", morph: "VERB|VerbForm=Inf", gloss: "await"}   # bíða
+    rsons.2.91.23: {lemma: "hann", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|Person=3", gloss: "him"}   # hans
+    rsons.2.92.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rsons.2.92.2: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rsons.2.92.3: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.92.4: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "came"}   # kom
+    rsons.2.92.5: {lemma: "heim", morph: "ADV", gloss: "home"}   # heim
+    rsons.2.92.6: {lemma: "í", morph: "ADP", gloss: "into"}   # í
+    rsons.2.92.7: {lemma: "ríki", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "realm"}   # ríki
+    rsons.2.92.8: {lemma: "sinn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing|Poss=Yes", gloss: "his-own"}   # sitt
+    rsons.2.92.9: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rsons.2.92.10: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rsons.2.92.11: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.92.12: {lemma: "Áslaug", morph: "PROPN|Case=Dat|Gender=Fem|Number=Sing", gloss: "to-Aslaug"}   # Áslaugu
+    rsons.2.92.13: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.92.14: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.92.15: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    rsons.2.92.16: {lemma: "gera", morph: "VERB|VerbForm=Inf", gloss: "do"}   # gera
+    rsons.2.92.17: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rsons.2.92.18: {lemma: "lítill", morph: "ADJ|Case=Acc|Degree=Cmp|Gender=Neut|Number=Sing", gloss: "lesser"}   # minna
+    rsons.2.92.19: {lemma: "frægðarverk", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "deed-of-fame"}   # frægðarverk
+    rsons.2.92.20: {lemma: "en", morph: "SCONJ", gloss: "than"}   # en
+    rsons.2.92.21: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons"}   # synir
+    rsons.2.92.22: {lemma: "hann", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|Person=3", gloss: "his"}   # hans
+    rsons.2.92.23: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "had"}   # höfðu
+    rsons.2.92.24: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rsons.2.92.25: {lemma: "gera", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "done"}   # gert
+    rsons.2.93.1: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "have"}   # Hefi
+    rsons.2.93.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    rsons.2.93.3: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rsons.2.93.4: {lemma: "flestr", morph: "ADJ|Case=Acc|Degree=Sup|Gender=Neut|Number=Sing", gloss: "nearly"}   # flest
+    rsons.2.93.5: {lemma: "allr", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "all"}   # allt
+    rsons.2.93.6: {lemma: "sá", morph: "DET|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rsons.2.93.7: {lemma: "ríki", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "realm"}   # ríki
+    rsons.2.93.8: {lemma: "aptr", morph: "ADV", gloss: "back"}   # aptr
+    rsons.2.93.9: {lemma: "vinna", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "won"}   # unnit
+    rsons.2.93.10: {lemma: "undir", morph: "ADP", gloss: "under"}   # undir
+    rsons.2.93.11: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # mik
+    rsons.2.93.12: {lemma: "er", morph: "PRON|PronType=Rel", gloss: "which"}   # er
+    rsons.2.93.13: {lemma: "minn", morph: "DET|Case=Nom|Gender=Masc|Number=Plur|Poss=Yes", gloss: "my"}   # mínir
+    rsons.2.93.14: {lemma: "forellrismaðr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "forefathers"}   # forellrismenn
+    rsons.2.93.15: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "have"}   # hafa
+    rsons.2.93.16: {lemma: "eiga", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "owned"}   # átt
+    rsons.2.93.17: {lemma: "utan", morph: "ADP", gloss: "except"}   # utan
+    rsons.2.93.18: {lemma: "England", morph: "PROPN|Case=Acc|Gender=Neut|Number=Sing", gloss: "England"}   # England
+    rsons.2.93.19: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rsons.2.93.20: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.93.21: {lemma: "því", morph: "ADV", gloss: "therefore"}   # því
+    rsons.2.93.22: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "have"}   # hefi
+    rsons.2.93.23: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    rsons.2.93.24: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rsons.2.93.25: {lemma: "láta", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "had"}   # látit
+    rsons.2.93.26: {lemma: "gera", morph: "VERB|VerbForm=Inf", gloss: "made"}   # gera
+    rsons.2.93.27: {lemma: "knörr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "knarrs"}   # knörru
+    rsons.2.93.28: {lemma: "tveir", morph: "NUM|Case=Acc|Gender=Masc|Number=Plur", gloss: "two"}   # tvá
+    rsons.2.93.29: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rsons.2.93.30: {lemma: "Líðir", morph: "PROPN|Case=Dat|Gender=Masc|Number=Plur", gloss: "Lidir"}   # Líðum
+    rsons.2.93.31: {lemma: "á", morph: "ADP", gloss: "in"}   # á
+    rsons.2.93.32: {lemma: "Vestfold", morph: "PROPN|Case=Dat|Gender=Fem|Number=Sing", gloss: "Vestfold"}   # Vestfold," --
+    rsons.2.93.33: {lemma: "því", morph: "ADV", gloss: "because"}   # því
+    rsons.2.93.34: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.93.35: {lemma: "hann", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|Person=3", gloss: "his"}   # hans
+    rsons.2.93.36: {lemma: "ríki", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "realm"}   # ríki
+    rsons.2.93.37: {lemma: "standa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "stood"}   # stóð
+    rsons.2.93.38: {lemma: "allr", morph: "ADV", gloss: "all-the-way"}   # allt
+    rsons.2.93.39: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rsons.2.93.40: {lemma: "Dofrafjall", morph: "PROPN|Case=Gen|Gender=Neut|Number=Sing", gloss: "Dofrafjall"}   # Dofrafjalls
+    rsons.2.93.41: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.93.42: {lemma: "Líðandisnes", morph: "PROPN|Case=Gen|Gender=Neut|Number=Sing", gloss: "Lidandisnes"}   # Líðandisness
+    rsons.2.94.1: {lemma: "Áslaug", morph: "PROPN|Case=Nom|Gender=Fem|Number=Sing", gloss: "Aslaug"}   # Áslaug
+    rsons.2.94.2: {lemma: "svara", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "answered"}   # svaraði
+    rsons.2.94.3: {lemma: "margr", morph: "ADJ|Case=Acc|Gender=Neut|Number=Plur", gloss: "many"}   # Mörg
+    rsons.2.94.4: {lemma: "langskip", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "longships"}   # langskip
+    rsons.2.94.5: {lemma: "mega", morph: "VERB|Mood=Ind|Number=Plur|Person=2|Tense=Past", gloss: "might"}   # máttu
+    rsons.2.94.6: {lemma: "þér", morph: "PRON|Case=Nom|Number=Plur|Person=2", gloss: "ye"}   # þér
+    rsons.2.94.7: {lemma: "hafa", morph: "AUX|VerbForm=Inf", gloss: "have"}   # hafa
+    rsons.2.94.8: {lemma: "gera", morph: "VERB|VerbForm=Inf", gloss: "made"}   # gera
+    rsons.2.94.9: {lemma: "láta", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "had"}   # látit
+    rsons.2.94.10: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    rsons.2.94.11: {lemma: "verð", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "the-price"}   # verði
+    rsons.2.94.12: {lemma: "þessi", morph: "DET|Case=Gen|Gender=Masc|Number=Plur|PronType=Dem", gloss: "of-these"}   # þessa
+    rsons.2.94.13: {lemma: "knörr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "knarrs"}   # knarra
+    rsons.2.95.1: {lemma: "vita", morph: "VERB|Mood=Imp|Number=Plur|Person=2|Tense=Pres", gloss: "know"}   # Vitu
+    rsons.2.95.2: {lemma: "þér", morph: "PRON|Case=Nom|Number=Plur|Person=2", gloss: "ye"}   # þér
+    rsons.2.95.3: {lemma: "ok", morph: "ADV", gloss: "also"}   # ok
+    rsons.2.95.4: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rsons.2.95.5: {lemma: "stórskip", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "for-great-ships"}   # stórskipum
+    rsons.2.95.6: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rsons.2.95.7: {lemma: "ekki", morph: "ADV", gloss: "not"}   # ekki
+    rsons.2.95.8: {lemma: "góðr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "good"}   # gott
+    rsons.2.95.9: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    rsons.2.95.10: {lemma: "halda", morph: "VERB|VerbForm=Inf", gloss: "steer"}   # halda
+    rsons.2.95.11: {lemma: "at", morph: "ADP", gloss: "to"}   # at
+    rsons.2.95.12: {lemma: "England", morph: "PROPN|Case=Dat|Gender=Neut|Number=Sing", gloss: "England"}   # Englandi
+    rsons.2.95.13: {lemma: "sök", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "because-of"}   # sakir
+    rsons.2.95.14: {lemma: "straumr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-current"}   # straums
+    rsons.2.95.15: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.95.16: {lemma: "útgrynni", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "of-shallows"}   # útgrynnis
+    rsons.2.95.17: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.95.18: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rsons.2.95.19: {lemma: "þessi", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "this"}   # þetta
+    rsons.2.95.20: {lemma: "ekki", morph: "ADV", gloss: "not"}   # ekki
+    rsons.2.95.21: {lemma: "vitrliga", morph: "ADV", gloss: "wisely"}   # vitrliga
+    rsons.2.95.22: {lemma: "ráða", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "counseled"}   # ráðit
+    rsons.2.96.1: {lemma: "en", morph: "CCONJ", gloss: "but"}   # En
+    rsons.2.96.2: {lemma: "allr", morph: "ADV", gloss: "all"}   # allt
+    rsons.2.96.3: {lemma: "at", morph: "ADP", gloss: "at"}   # at
+    rsons.2.96.4: {lemma: "einn", morph: "NUM|Case=Dat|Gender=Neut|Number=Sing", gloss: "one"}   # einu
+    rsons.2.96.5: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "goes"}   # ferr
+    rsons.2.96.6: {lemma: "Ragnarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Ragnar"}   # Ragnarr
+    rsons.2.96.7: {lemma: "konungr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "king"}   # konungr
+    rsons.2.96.8: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    rsons.2.96.9: {lemma: "þessi", morph: "DET|Case=Dat|Gender=Masc|Number=Plur|PronType=Dem", gloss: "these"}   # þessum
+    rsons.2.96.10: {lemma: "knörr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "knarrs"}   # knörrum
+    rsons.2.96.11: {lemma: "vestr", morph: "ADV", gloss: "west"}   # vestr
+    rsons.2.96.12: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rsons.2.96.13: {lemma: "England", morph: "PROPN|Case=Gen|Gender=Neut|Number=Sing", gloss: "England"}   # Englands
+    rsons.2.96.14: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    rsons.2.96.15: {lemma: "fimm", morph: "NUM", gloss: "five"}   # fimm
+    rsons.2.96.16: {lemma: "hundrað", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "hundred"}   # hundruð
+    rsons.2.96.17: {lemma: "maðr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-men"}   # manna
+    rsons.2.96.18: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.96.19: {lemma: "brjóta", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "breaks"}   # brýtr
+    rsons.2.96.20: {lemma: "bæði", morph: "CCONJ", gloss: "both"}   # bæði
+    rsons.2.96.21: {lemma: "skip", morph: "NOUN|Case=Acc|Definite=Def|Gender=Neut|Number=Plur", gloss: "the-ships"}   # skipin
+    rsons.2.96.22: {lemma: "við", morph: "ADP", gloss: "on"}   # við
+    rsons.2.96.23: {lemma: "England", morph: "PROPN|Case=Acc|Gender=Neut|Number=Sing", gloss: "England"}   # England
+    rsons.2.96.24: {lemma: "en", morph: "CCONJ", gloss: "but"}   # en
+    rsons.2.96.25: {lemma: "sjálfr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "himself"}   # sjálfr
+    rsons.2.96.26: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.96.27: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rsons.2.96.28: {lemma: "allr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "all"}   # allr
+    rsons.2.96.29: {lemma: "herr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "host"}   # herr
+    rsons.2.96.30: {lemma: "hann", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|Person=3", gloss: "his"}   # hans
+    rsons.2.96.31: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "came"}   # kom
+    rsons.2.96.32: {lemma: "heill", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "whole"}   # heill
+    rsons.2.96.33: {lemma: "á", morph: "ADP", gloss: "to"}   # á
+    rsons.2.96.34: {lemma: "land", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "land"}   # land
+    rsons.2.97.1: {lemma: "taka", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "takes"}   # Tekr
+    rsons.2.97.2: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.97.3: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rsons.2.97.4: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    rsons.2.97.5: {lemma: "herja", morph: "VERB|VerbForm=Inf", gloss: "harry"}   # herja
+    rsons.2.97.6: {lemma: "hvar", morph: "ADV", gloss: "where"}   # hvar
+    rsons.2.97.7: {lemma: "sem", morph: "SCONJ", gloss: "as"}   # sem
+    rsons.2.97.8: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rsons.2.97.9: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "goes"}   # ferr

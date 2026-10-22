@@ -1,0 +1,477 @@
+# Human overlay for Krákumál stanzas 21-29. Lemmas follow Zoëga, A Concise Dictionary of Old
+# Icelandic (1910); morphology uses Universal Dependencies features. Staves and meter by hand: six-syllable lines
+# paired by alliteration, the odd line with two staves, the even line with one head-stave; vowels alliterate with
+# each other. Kennings are glossed word by word; the notes resolve them.
+- by: "Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar"
+  date: "2026-10-22"
+  why: "hand lemma, morphology, gloss, staves and meter for stanzas 21-29; no treebank exists for skaldic verse; written in the compact spec and expanded by weft overlay"
+  status: "draft"
+  set:
+    krak.21.1: {metre: "odd line · staves h"}
+    krak.21.1.1: {lemma: "höggva", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "hewed", stave: true}   # Hjoggum
+    krak.21.1.2: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    krak.21.1.3: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    krak.21.1.4: {lemma: "hjörr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "sword", stave: true}   # hjörvi
+    krak.21.2: {metre: "even line · head-stave h"}
+    krak.21.2.1: {lemma: "hár", morph: "ADJ|Case=Nom|Gender=Neut|Number=Plur", gloss: "high", stave: true}   # Há
+    krak.21.2.2: {lemma: "sverð", morph: "NOUN|Case=Nom|Gender=Neut|Number=Plur", gloss: "swords"}   # sverð
+    krak.21.2.3: {lemma: "bíta", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "bit"}   # bitu
+    krak.21.2.4: {lemma: "skjöldr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "shields"}   # skjöldu
+    krak.21.3: {metre: "odd line · staves g"}
+    krak.21.3.1: {lemma: "þá", morph: "SCONJ", gloss: "when"}   # þás
+    krak.21.3.2: {lemma: "gullhroðinn", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "gold-adorned", stave: true}   # gullhroðinn
+    krak.21.3.3: {lemma: "glymja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "rang", stave: true}   # glumdi
+    krak.21.4: {metre: "even line · head-stave g"}
+    krak.21.4.1: {lemma: "geirr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "spear", stave: true}   # geirr
+    krak.21.4.2: {lemma: "við", morph: "ADP", gloss: "against"}   # við
+    krak.21.4.3: {lemma: "Hildr", morph: "PROPN|Case=Gen|Gender=Fem|Number=Sing", gloss: "Hild's"}   # Hildar
+    krak.21.4.4: {lemma: "næfr", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "bark"}   # næfri
+    krak.21.5: {metre: "odd line · staves vowel · a single stave, Öngulseyju; sjá does not alliterate with the vowel of the even line"}
+    krak.21.5.1: {lemma: "sjá", morph: "VERB|VerbForm=Inf", gloss: "see"}   # sjá
+    krak.21.5.2: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "will"}   # mun
+    krak.21.5.3: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    krak.21.5.4: {lemma: "Öngulsey", morph: "PROPN|Case=Dat|Gender=Fem|Number=Sing", gloss: "Anglesey", stave: true}   # Öngulseyju
+    krak.21.6: {metre: "even line · head-stave vowel"}
+    krak.21.6.1: {lemma: "of", morph: "ADP", gloss: "over"}   # of
+    krak.21.6.2: {lemma: "aldr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "age", stave: true}   # aldr
+    krak.21.6.3: {lemma: "mega", morph: "VERB|VerbForm=Inf", gloss: "be-able"}   # mega
+    krak.21.6.4: {lemma: "síðan", morph: "ADV", gloss: "afterward"}   # síðan
+    krak.21.7: {metre: "odd line · staves l"}
+    krak.21.7.1: {lemma: "hversu", morph: "ADV", gloss: "how"}   # hversu
+    krak.21.7.2: {lemma: "at", morph: "ADP", gloss: "at"}   # at
+    krak.21.7.3: {lemma: "lögðir", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-the-sword", stave: true}   # lögðis
+    krak.21.7.4: {lemma: "leikr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "play", stave: true}   # leiki
+    krak.21.8: {metre: "even line · head-stave l"}
+    krak.21.8.1: {lemma: "lofðungr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "princes", stave: true}   # lofðungar
+    krak.21.8.2: {lemma: "fram", morph: "ADV", gloss: "forward"}   # fram
+    krak.21.8.3: {lemma: "ganga", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "went"}   # gengu
+    krak.21.9: {metre: "odd line · staves vowel"}
+    krak.21.9.1: {lemma: "rjóða", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "reddened"}   # roðin
+    krak.21.9.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # vas
+    krak.21.9.3: {lemma: "út", morph: "ADV", gloss: "out", stave: true}   # út
+    krak.21.9.4: {lemma: "fyrir", morph: "ADP", gloss: "off"}   # fyr
+    krak.21.9.5: {lemma: "eyrr", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "the-gravel-spit", stave: true}   # eyri
+    krak.21.10: {metre: "even line · head-stave vowel"}
+    krak.21.10.1: {lemma: "ár", morph: "ADV", gloss: "early", stave: true}   # ár
+    krak.21.10.2: {lemma: "flugdreki", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "flying-dragon"}   # flugdreki
+    krak.21.10.3: {lemma: "sár", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-wounds"}   # sára
+    krak.22.1: {metre: "odd line · staves h"}
+    krak.22.1.1: {lemma: "höggva", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "hewed", stave: true}   # Hjoggum
+    krak.22.1.2: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    krak.22.1.3: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    krak.22.1.4: {lemma: "hjörr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "sword", stave: true}   # hjörvi
+    krak.22.2: {metre: "even line · head-stave h"}
+    krak.22.2.1: {lemma: "hví", morph: "ADV", gloss: "why", stave: true}   # Hví
+    krak.22.2.2: {lemma: "vera", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "be"}   # sé
+    krak.22.2.3: {lemma: "drengr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "warrior"}   # drengr
+    krak.22.2.4: {lemma: "at", morph: "ADV", gloss: "the"}   # at
+    krak.22.2.5: {lemma: "feigr", morph: "ADJ|Case=Nom|Degree=Cmp|Gender=Masc|Number=Sing", gloss: "more-doomed"}   # feigri
+    krak.22.3: {metre: "odd line · staves vowel"}
+    krak.22.3.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    krak.22.3.2: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    krak.22.3.3: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    krak.22.3.4: {lemma: "oddr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-points", stave: true}   # odda
+    krak.22.3.5: {lemma: "él", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "storm", stave: true}   # éli
+    krak.22.4: {metre: "even line · head-stave vowel"}
+    krak.22.4.1: {lemma: "öndurðr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "facing-forward", stave: true}   # öndurðr
+    krak.22.4.2: {lemma: "láta", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "slain"}   # látinn
+    krak.22.4.3: {lemma: "verða", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "be"}   # verði
+    krak.22.5: {metre: "odd line · staves vowel"}
+    krak.22.5.1: {lemma: "opt", morph: "ADV", gloss: "often", stave: true}   # Opt
+    krak.22.5.2: {lemma: "sýta", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "laments"}   # sýtir
+    krak.22.5.3: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that-one"}   # sá
+    krak.22.5.4: {lemma: "ævi", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "life", stave: true}   # ævi
+    krak.22.6: {metre: "even line · head-stave vowel"}
+    krak.22.6.1: {lemma: "er", morph: "PRON|PronType=Rel", gloss: "who"}   # es
+    krak.22.6.2: {lemma: "aldrigi", morph: "ADV", gloss: "never", stave: true}   # aldrigi
+    krak.22.6.3: {lemma: "nista", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "pierces"}   # nistir
+    krak.22.7: {metre: "odd line · staves vowel"}
+    krak.22.7.1: {lemma: "illr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "ill", stave: true}   # illt
+    krak.22.7.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "they-say"}   # kveða
+    krak.22.7.3: {lemma: "argr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "the-coward", stave: true}   # argan
+    krak.22.7.4: {lemma: "eggja", morph: "VERB|VerbForm=Inf", gloss: "urge"}   # eggja
+    krak.22.8: {metre: "even line · head-stave vowel"}
+    krak.22.8.1: {lemma: "örn", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "eagle", stave: true}   # örn
+    krak.22.8.2: {lemma: "at", morph: "ADP", gloss: "to"}   # at
+    krak.22.8.3: {lemma: "sverð", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-swords"}   # sverða
+    krak.22.8.4: {lemma: "leikr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "play"}   # leiki
+    krak.22.9: {metre: "odd line · staves h"}
+    krak.22.9.1: {lemma: "hugblauðr", morph: "ADJ|Case=Dat|Gender=Masc|Number=Sing", gloss: "to-the-mind-soft", stave: true}   # hugblauðum
+    krak.22.9.2: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "comes"}   # kemr
+    krak.22.9.3: {lemma: "hvergi", morph: "ADV", gloss: "nowhere", stave: true}   # hvergi
+    krak.22.10: {metre: "even line · head-stave h"}
+    krak.22.10.1: {lemma: "hjarta", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "heart", stave: true}   # hjarta
+    krak.22.10.2: {lemma: "sinn", morph: "DET|Case=Nom|Gender=Neut|Number=Sing|Poss=Yes|Reflex=Yes", gloss: "his-own"}   # sitt
+    krak.22.10.3: {lemma: "at", morph: "ADP", gloss: "to"}   # at
+    krak.22.10.4: {lemma: "gagn", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "use"}   # gagni
+    krak.23.1: {metre: "odd line · staves h"}
+    krak.23.1.1: {lemma: "höggva", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "hewed", stave: true}   # Hjoggum
+    krak.23.1.2: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    krak.23.1.3: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    krak.23.1.4: {lemma: "hjörr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "sword", stave: true}   # hjörvi
+    krak.23.2: {metre: "even line · head-stave h"}
+    krak.23.2.1: {lemma: "hinn", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "this", stave: true}   # Hitt
+    krak.23.2.2: {lemma: "telja", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "count-I"}   # telk
+    krak.23.2.3: {lemma: "jafn", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "even"}   # jafnt
+    krak.23.2.4: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    krak.23.2.5: {lemma: "ganga", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "go"}   # gangi
+    krak.23.3: {metre: "odd line · staves s"}
+    krak.23.3.1: {lemma: "at", morph: "ADP", gloss: "to"}   # at
+    krak.23.3.2: {lemma: "samtog", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "together-pulling", stave: true}   # samtogi
+    krak.23.3.3: {lemma: "sverð", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-swords", stave: true}   # sverða
+    krak.23.4: {metre: "even line · head-stave s"}
+    krak.23.4.1: {lemma: "sveinn", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "youth", stave: true}   # sveinn
+    krak.23.4.2: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    krak.23.4.3: {lemma: "mót", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "meeting"}   # móti
+    krak.23.4.4: {lemma: "einn", morph: "NUM|Case=Dat|Gender=Masc|Number=Sing", gloss: "one"}   # einum
+    krak.23.5: {metre: "odd line · staves þ"}
+    krak.23.5.1: {lemma: "hrökkva", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Polarity=Neg|Tense=Pres", gloss: "flinch-not"}   # hrökkvit
+    krak.23.5.2: {lemma: "þegn", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "thane", stave: true}   # þegn
+    krak.23.5.3: {lemma: "fyrir", morph: "ADP", gloss: "before"}   # fyr
+    krak.23.5.4: {lemma: "þegn", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "thane", stave: true}   # þegni
+    krak.23.6: {metre: "even line · head-stave þ · the head-stave falls on the pronoun þat, the only word in þ"}
+    krak.23.6.1: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that", stave: true}   # þat
+    krak.23.6.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # vas
+    krak.23.6.3: {lemma: "drengr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "warrior's"}   # drengs
+    krak.23.6.4: {lemma: "aðal", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "nature"}   # aðal
+    krak.23.6.5: {lemma: "lengi", morph: "ADV", gloss: "long"}   # lengi
+    krak.23.7: {metre: "odd line · staves vowel"}
+    krak.23.7.1: {lemma: "æ", morph: "ADV", gloss: "ever", stave: true}   # æ
+    krak.23.7.2: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    krak.23.7.3: {lemma: "ástvinr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "love-friend", stave: true}   # ástvinr
+    krak.23.7.4: {lemma: "mær", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "of-maidens"}   # meyja
+    krak.23.8: {metre: "even line · head-stave vowel · the stanza ends here, after four pairs"}
+    krak.23.8.1: {lemma: "einarðr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "steadfast", stave: true}   # einarðr
+    krak.23.8.2: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    krak.23.8.3: {lemma: "dynr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "din"}   # dyn
+    krak.23.8.4: {lemma: "sverð", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-swords"}   # sverða
+    krak.24.1: {metre: "odd line · staves h"}
+    krak.24.1.1: {lemma: "höggva", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "hewed", stave: true}   # Hjoggum
+    krak.24.1.2: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    krak.24.1.3: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    krak.24.1.4: {lemma: "hjörr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "sword", stave: true}   # hjörvi
+    krak.24.2: {metre: "even line · head-stave h"}
+    krak.24.2.1: {lemma: "hinn", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "this", stave: true}   # Hitt
+    krak.24.2.2: {lemma: "sýna", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Mid", gloss: "seems"}   # sýnisk
+    krak.24.2.3: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "to-me"}   # mér
+    krak.24.2.4: {lemma: "raunar", morph: "ADV", gloss: "truly"}   # raunar
+    krak.24.3: {metre: "odd line · staves f"}
+    krak.24.3.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    krak.24.3.2: {lemma: "forlög", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "fates", stave: true}   # forlögum
+    krak.24.3.3: {lemma: "fylgja", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "follow-we", stave: true}   # fylgjum
+    krak.24.4: {metre: "even line · head-stave f"}
+    krak.24.4.1: {lemma: "fár", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "few-a-one", stave: true}   # fár
+    krak.24.4.2: {lemma: "ganga", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "goes"}   # gengr
+    krak.24.4.3: {lemma: "of", morph: "ADP", gloss: "beyond"}   # of
+    krak.24.4.4: {lemma: "sköp", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "shapings"}   # sköp
+    krak.24.4.5: {lemma: "norn", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "of-the-norns"}   # norna
+    krak.24.5: {metre: "odd line · staves vowel"}
+    krak.24.5.1: {lemma: "eigi", morph: "ADV", gloss: "not", stave: true}   # eigi
+    krak.24.5.2: {lemma: "hyggja", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "thought-I"}   # hugðak
+    krak.24.5.3: {lemma: "Ella", morph: "PROPN|Case=Acc|Gender=Masc|Number=Sing", gloss: "Ella", stave: true}   # Ellu
+    krak.24.6: {metre: "even line · head-stave vowel"}
+    krak.24.6.1: {lemma: "at", morph: "ADP", gloss: "at"}   # at
+    krak.24.6.2: {lemma: "aldrlag", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "life-laying", stave: true}   # aldrlagi
+    krak.24.6.3: {lemma: "minn", morph: "DET|Case=Dat|Gender=Neut|Number=Sing|Poss=Yes", gloss: "my"}   # mínu
+    krak.24.7: {metre: "odd line · staves b"}
+    krak.24.7.1: {lemma: "þá", morph: "SCONJ", gloss: "when"}   # þás
+    krak.24.7.2: {lemma: "blóðvalr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "blood-hawk", stave: true}   # blóðvali
+    krak.24.7.3: {lemma: "bræða", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "fed-I", stave: true}   # bræddak
+    krak.24.8: {metre: "even line · head-stave b"}
+    krak.24.8.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    krak.24.8.2: {lemma: "borð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "planks", stave: true}   # borð
+    krak.24.8.3: {lemma: "á", morph: "ADP", gloss: "onto"}   # á
+    krak.24.8.4: {lemma: "lögr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "sea"}   # lög
+    krak.24.8.5: {lemma: "keyra", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "drove-I"}   # keyrðak
+    krak.24.9: {metre: "odd line · staves v"}
+    krak.24.9.1: {lemma: "vítt", morph: "ADV", gloss: "widely", stave: true}   # vítt
+    krak.24.9.2: {lemma: "fá", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "got-we"}   # fengum
+    krak.24.9.3: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    krak.24.9.4: {lemma: "vargr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "for-the-wolf", stave: true}   # vargi
+    krak.24.10: {metre: "even line · head-stave v"}
+    krak.24.10.1: {lemma: "verðr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "meal", stave: true}   # verð
+    krak.24.10.2: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    krak.24.10.3: {lemma: "Skotland", morph: "PROPN|Case=Gen|Gender=Neut|Number=Sing", gloss: "Scotland's"}   # Skotlands
+    krak.24.10.4: {lemma: "fjörðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "firths"}   # fjörðum
+    krak.25.1: {metre: "odd line · staves h"}
+    krak.25.1.1: {lemma: "höggva", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "hewed", stave: true}   # Hjoggum
+    krak.25.1.2: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    krak.25.1.3: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    krak.25.1.4: {lemma: "hjörr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "sword", stave: true}   # hjörvi
+    krak.25.2: {metre: "even line · head-stave h"}
+    krak.25.2.1: {lemma: "hinn", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "this", stave: true}   # Hitt
+    krak.25.2.2: {lemma: "hlægja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "gladdens"}   # lægir
+    krak.25.2.3: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # mik
+    krak.25.2.4: {lemma: "jafnan", morph: "ADV", gloss: "always"}   # jafnan
+    krak.25.3: {metre: "odd line · staves b"}
+    krak.25.3.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    krak.25.3.2: {lemma: "Baldr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Baldr's", stave: true}   # Baldrs
+    krak.25.3.3: {lemma: "faðir", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "father's"}   # föður
+    krak.25.3.4: {lemma: "bekkr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "benches", stave: true}   # bekki
+    krak.25.4: {metre: "even line · head-stave b"}
+    krak.25.4.1: {lemma: "búa", morph: "VERB|Case=Acc|Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part", gloss: "prepared", stave: true}   # búna
+    krak.25.4.2: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know-I"}   # veitk
+    krak.25.4.3: {lemma: "at", morph: "ADP", gloss: "for"}   # at
+    krak.25.4.4: {lemma: "sumbl", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "feasts"}   # sumblum
+    krak.25.5: {metre: "odd line · staves b"}
+    krak.25.5.1: {lemma: "drekka", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "drink-we"}   # drekkum
+    krak.25.5.2: {lemma: "bjórr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "beer", stave: true}   # bjór
+    krak.25.5.3: {lemma: "af", morph: "ADP", gloss: "from"}   # af
+    krak.25.5.4: {lemma: "bragð", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "moment", stave: true}   # bragði
+    krak.25.6: {metre: "even line · head-stave b"}
+    krak.25.6.1: {lemma: "ór", morph: "ADP", gloss: "out-of"}   # ór
+    krak.25.6.2: {lemma: "bjúgviðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "curved-trees", stave: true}   # bjúgviðum
+    krak.25.6.3: {lemma: "hauss", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-skulls"}   # hausa
+    krak.25.7: {metre: "odd line · staves d"}
+    krak.25.7.1: {lemma: "sýta", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres", gloss: "laments-not"}   # sýtira
+    krak.25.7.2: {lemma: "drengr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "warrior", stave: true}   # drengr
+    krak.25.7.3: {lemma: "við", morph: "ADP", gloss: "at"}   # við
+    krak.25.7.4: {lemma: "dauði", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "death", stave: true}   # dauða
+    krak.25.8: {metre: "even line · head-stave d"}
+    krak.25.8.1: {lemma: "dýrr", morph: "ADJ|Case=Gen|Gender=Masc|Number=Sing", gloss: "precious", stave: true}   # dýrs
+    krak.25.8.2: {lemma: "at", morph: "ADP", gloss: "at"}   # at
+    krak.25.8.3: {lemma: "Fjölnir", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Fjölnir's"}   # Fjölnis
+    krak.25.8.4: {lemma: "hús", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "houses"}   # húsum
+    krak.25.9: {metre: "odd line · staves vowel"}
+    krak.25.9.1: {lemma: "eigi", morph: "ADV", gloss: "not", stave: true}   # eigi
+    krak.25.9.2: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "come-I"}   # kemk
+    krak.25.9.3: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    krak.25.9.4: {lemma: "æðra", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "of-fear", stave: true}   # æðru
+    krak.25.10: {metre: "even line · head-stave vowel"}
+    krak.25.10.1: {lemma: "orð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "word", stave: true}   # orð
+    krak.25.10.2: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    krak.25.10.3: {lemma: "Viðrir", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Viðrir's"}   # Viðris
+    krak.25.10.4: {lemma: "höll", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "hall"}   # hallar
+    krak.26.1: {metre: "odd line · staves h"}
+    krak.26.1.1: {lemma: "höggva", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "hewed", stave: true}   # Hjoggum
+    krak.26.1.2: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    krak.26.1.3: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    krak.26.1.4: {lemma: "hjörr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "sword", stave: true}   # hjörvi
+    krak.26.2: {metre: "even line · head-stave h"}
+    krak.26.2.1: {lemma: "hér", morph: "ADV", gloss: "here", stave: true}   # Hér
+    krak.26.2.2: {lemma: "vilja", morph: "VERB|Mood=Sub|Number=Plur|Person=3|Tense=Past", gloss: "would"}   # vildi
+    krak.26.2.3: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    krak.26.2.4: {lemma: "allr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "all"}   # allir
+    krak.26.3: {metre: "odd line · staves b"}
+    krak.26.3.1: {lemma: "burr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons", stave: true}   # burir
+    krak.26.3.2: {lemma: "Áslaug", morph: "PROPN|Case=Gen|Gender=Fem|Number=Sing", gloss: "Áslaug's"}   # Áslaugar
+    krak.26.3.3: {lemma: "brandr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "with-brands", stave: true}   # bröndum
+    krak.26.4: {metre: "even line · head-stave b"}
+    krak.26.4.1: {lemma: "bitr", morph: "ADJ|Case=Dat|Gender=Masc|Number=Plur", gloss: "biting", stave: true}   # bitrum
+    krak.26.4.2: {lemma: "Hildr", morph: "PROPN|Case=Acc|Gender=Fem|Number=Sing", gloss: "Hild"}   # Hildi
+    krak.26.4.3: {lemma: "vekja", morph: "VERB|VerbForm=Inf", gloss: "wake"}   # vekja
+    krak.26.5: {metre: "odd line · staves v"}
+    krak.26.5.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    krak.26.5.2: {lemma: "vandliga", morph: "ADV", gloss: "exactly", stave: true}   # vandliga
+    krak.26.5.3: {lemma: "vita", morph: "VERB|Mood=Sub|Number=Plur|Person=3|Tense=Past", gloss: "knew", stave: true}   # vissi
+    krak.26.6: {metre: "even line · head-stave v"}
+    krak.26.6.1: {lemma: "of", morph: "ADP", gloss: "about"}   # of
+    krak.26.6.2: {lemma: "viðför", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "dealings", stave: true}   # viðfarar
+    krak.26.6.3: {lemma: "várr", morph: "DET|Case=Acc|Gender=Fem|Number=Plur|Poss=Yes", gloss: "our"}   # ossar
+    krak.26.7: {metre: "odd line · staves vowel"}
+    krak.26.7.1: {lemma: "hvé", morph: "ADV", gloss: "how"}   # hvé
+    krak.26.7.2: {lemma: "ófár", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "not-few", stave: true}   # ófáir
+    krak.26.7.3: {lemma: "ormr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "snakes", stave: true}   # ormar
+    krak.26.8: {metre: "even line · head-stave vowel"}
+    krak.26.8.1: {lemma: "eitrfullr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "venom-full", stave: true}   # eitrfullir
+    krak.26.8.2: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # mik
+    krak.26.8.3: {lemma: "slíta", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "tear"}   # slíta
+    krak.26.9: {metre: "odd line · staves m"}
+    krak.26.9.1: {lemma: "móðerni", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "of-motherhood", stave: true}   # móðernis
+    krak.26.9.2: {lemma: "fá", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "got-I"}   # fekk
+    krak.26.9.3: {lemma: "minn", morph: "DET|Case=Dat|Gender=Masc|Number=Plur|Poss=Yes", gloss: "my", stave: true}   # mínum
+    krak.26.10: {metre: "even line · head-stave m"}
+    krak.26.10.1: {lemma: "mögr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "sons", stave: true}   # mögum
+    krak.26.10.2: {lemma: "svá", morph: "ADV", gloss: "so-that"}   # svát
+    krak.26.10.3: {lemma: "hjarta", morph: "NOUN|Case=Nom|Gender=Neut|Number=Plur", gloss: "hearts"}   # hjörtu
+    krak.26.10.4: {lemma: "duga", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "availed"}   # dugðu
+    krak.27.1: {metre: "odd line · staves h"}
+    krak.27.1.1: {lemma: "höggva", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "hewed", stave: true}   # Hjoggum
+    krak.27.1.2: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    krak.27.1.3: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    krak.27.1.4: {lemma: "hjörr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "sword", stave: true}   # hjörvi
+    krak.27.2: {metre: "even line · head-stave h"}
+    krak.27.2.1: {lemma: "harðla", morph: "ADV", gloss: "very", stave: true}   # Harðla
+    krak.27.2.2: {lemma: "líða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "passes"}   # líðr
+    krak.27.2.3: {lemma: "at", morph: "ADP", gloss: "toward"}   # at
+    krak.27.2.4: {lemma: "ævi", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "life"}   # ævi
+    krak.27.3: {metre: "odd line · staves g"}
+    krak.27.3.1: {lemma: "grimmr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "grim", stave: true}   # grimmt
+    krak.27.3.2: {lemma: "standa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "stands"}   # stendr
+    krak.27.3.3: {lemma: "grand", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "harm", stave: true}   # grand
+    krak.27.3.4: {lemma: "af", morph: "ADP", gloss: "from"}   # af
+    krak.27.3.5: {lemma: "naðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "adder"}   # naðri
+    krak.27.4: {metre: "even line · head-stave g"}
+    krak.27.4.1: {lemma: "Góinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Góinn", stave: true}   # góinn
+    krak.27.4.2: {lemma: "byggva", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "dwells-in"}   # byggvir
+    krak.27.4.3: {lemma: "salr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "hall"}   # sal
+    krak.27.4.4: {lemma: "hjarta", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "of-the-heart"}   # hjarta
+    krak.27.5: {metre: "odd line · staves v"}
+    krak.27.5.1: {lemma: "vænta", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "expect-we", stave: true}   # væntum
+    krak.27.5.2: {lemma: "hinn", morph: "PRON|Case=Gen|Gender=Neut|Number=Sing|PronType=Dem", gloss: "this"}   # hins
+    krak.27.5.3: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    krak.27.5.4: {lemma: "Viðrir", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Viðrir's", stave: true}   # Viðris
+    krak.27.6: {metre: "even line · head-stave v"}
+    krak.27.6.1: {lemma: "vöndr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "wand", stave: true}   # vöndr
+    krak.27.6.2: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    krak.27.6.3: {lemma: "Ella", morph: "PROPN|Case=Dat|Gender=Masc|Number=Sing", gloss: "Ella"}   # Ellu
+    krak.27.6.4: {lemma: "standa", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "stand"}   # standi
+    krak.27.7: {metre: "odd line · staves s"}
+    krak.27.7.1: {lemma: "sonr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "to-sons", stave: true}   # sonum
+    krak.27.7.2: {lemma: "minn", morph: "DET|Case=Dat|Gender=Masc|Number=Plur|Poss=Yes", gloss: "my"}   # mínum
+    krak.27.7.3: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "will"}   # mun
+    krak.27.7.4: {lemma: "svella", morph: "VERB|VerbForm=Inf", gloss: "swell", stave: true}   # svella
+    krak.27.8: {metre: "even line · head-stave s"}
+    krak.27.8.1: {lemma: "sinn", morph: "DET|Case=Acc|Gender=Masc|Number=Sing|Poss=Yes|Reflex=Yes", gloss: "their-own", stave: true}   # sinn
+    krak.27.8.2: {lemma: "faðir", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "father"}   # föður
+    krak.27.8.3: {lemma: "ráða", morph: "VERB|Case=Acc|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "done-to-death"}   # ráðinn
+    krak.27.8.4: {lemma: "verða", morph: "AUX|VerbForm=Inf", gloss: "become"}   # verða
+    krak.27.9: {metre: "odd line · staves s"}
+    krak.27.9.1: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Polarity=Neg|Tense=Pres", gloss: "will-not"}   # munut
+    krak.27.9.2: {lemma: "snarpr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "keen", stave: true}   # snarpir
+    krak.27.9.3: {lemma: "sveinn", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "lads", stave: true}   # sveinar
+    krak.27.10: {metre: "even line · head-stave s"}
+    krak.27.10.1: {lemma: "sinn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing|Poss=Yes|Reflex=Yes", gloss: "their-own", stave: true}   # sitt
+    krak.27.10.2: {lemma: "kyrr", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "quiet"}   # kyrrt
+    krak.27.10.3: {lemma: "vera", morph: "AUX|VerbForm=Inf", gloss: "be"}   # vesa
+    krak.27.10.4: {lemma: "láta", morph: "VERB|VerbForm=Inf", gloss: "let"}   # láta
+    krak.28.1: {metre: "odd line · staves h"}
+    krak.28.1.1: {lemma: "höggva", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "hewed", stave: true}   # Hjoggum
+    krak.28.1.2: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    krak.28.1.3: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    krak.28.1.4: {lemma: "hjörr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "sword", stave: true}   # hjörvi
+    krak.28.2: {metre: "even line · head-stave h"}
+    krak.28.2.1: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "has", stave: true}   # Hefir
+    krak.28.2.2: {lemma: "fimm", morph: "NUM", gloss: "five"}   # fimm
+    krak.28.2.3: {lemma: "tigr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "tens"}   # tigum
+    krak.28.2.4: {lemma: "sinn", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-times"}   # sinna
+    krak.28.3: {metre: "odd line · staves f"}
+    krak.28.3.1: {lemma: "fólkorrosta", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "folk-battles", stave: true}   # fólkorrostur
+    krak.28.3.2: {lemma: "fremja", morph: "VERB|Case=Acc|Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part", gloss: "performed", stave: true}   # framdar
+    krak.28.4: {metre: "even line · head-stave f"}
+    krak.28.4.1: {lemma: "fleinþing", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "of-the-shaft-assembly", stave: true}   # fleinþings
+    krak.28.4.2: {lemma: "boði", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "offerer"}   # boði
+    krak.28.4.3: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    krak.28.4.4: {lemma: "einn", morph: "NUM|Case=Acc|Gender=Fem|Number=Sing", gloss: "one"}   # eina
+    krak.28.5: {metre: "odd line · staves m"}
+    krak.28.5.1: {lemma: "lítt", morph: "ADV|Degree=Sup", gloss: "least", stave: true}   # minnst
+    krak.28.5.2: {lemma: "hyggja", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "thought"}   # hugða
+    krak.28.5.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    krak.28.5.4: {lemma: "maðr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-men", stave: true}   # manna
+    krak.28.6: {metre: "even line · head-stave m"}
+    krak.28.6.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    krak.28.6.2: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "than-me", stave: true}   # mér
+    krak.28.6.3: {lemma: "vera", morph: "AUX|VerbForm=Inf", gloss: "be"}   # vesa
+    krak.28.6.4: {lemma: "skulu", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "should"}   # skyldi
+    krak.28.7: {metre: "odd line · staves vowel"}
+    krak.28.7.1: {lemma: "ungr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "young", stave: true}   # ungr
+    krak.28.7.2: {lemma: "nema", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "began-I"}   # namk
+    krak.28.7.3: {lemma: "oddr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "point", stave: true}   # odd
+    krak.28.7.4: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    krak.28.7.5: {lemma: "rjóða", morph: "VERB|VerbForm=Inf", gloss: "redden"}   # rjóða
+    krak.28.8: {metre: "even line · head-stave vowel"}
+    krak.28.8.1: {lemma: "annarr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "another", stave: true}   # annarr
+    krak.28.8.2: {lemma: "konungr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "king"}   # konungr
+    krak.28.8.3: {lemma: "fremri", morph: "ADJ|Case=Nom|Degree=Cmp|Gender=Masc|Number=Sing", gloss: "more-eminent"}   # fremri
+    krak.28.9: {metre: "odd line · staves vowel"}
+    krak.28.9.1: {lemma: "vér", morph: "PRON|Case=Acc|Number=Plur|Person=1", gloss: "us", stave: true}   # oss
+    krak.28.9.2: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "will"}   # munu
+    krak.28.9.3: {lemma: "áss", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "Æsir", stave: true}   # Æsir
+    krak.28.9.4: {lemma: "bjóða", morph: "VERB|VerbForm=Inf", gloss: "invite"}   # bjóða
+    krak.28.10: {metre: "even line · head-stave vowel"}
+    krak.28.10.1: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres", gloss: "is-not", stave: true}   # esat
+    krak.28.10.2: {lemma: "sýta", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Part", gloss: "lamenting"}   # sýtandi
+    krak.28.10.3: {lemma: "dauði", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "death"}   # dauði
+    krak.29.1: {metre: "odd line · staves h"}
+    krak.29.1.1: {lemma: "fýsa", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|Voice=Mid", gloss: "am-eager-I"}   # Fýsumk
+    krak.29.1.2: {lemma: "hinn", morph: "PRON|Case=Gen|Gender=Neut|Number=Sing|PronType=Dem", gloss: "of-this", stave: true}   # hins
+    krak.29.1.3: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    krak.29.1.4: {lemma: "hætta", morph: "VERB|VerbForm=Inf", gloss: "cease", stave: true}   # hætta
+    krak.29.2: {metre: "even line · head-stave h"}
+    krak.29.2.1: {lemma: "heim", morph: "ADV", gloss: "home", stave: true}   # heim
+    krak.29.2.2: {lemma: "bjóða", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "bid"}   # bjóða
+    krak.29.2.3: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "me"}   # mér
+    krak.29.2.4: {lemma: "dís", morph: "NOUN|Case=Nom|Gender=Fem|Number=Plur", gloss: "dísir"}   # dísir
+    krak.29.3: {metre: "odd line · staves h"}
+    krak.29.3.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Fem|Number=Plur|PronType=Dem", gloss: "whom"}   # þærs
+    krak.29.3.2: {lemma: "frá", morph: "ADP", gloss: "from"}   # frá
+    krak.29.3.3: {lemma: "Herjann", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Herjann's", stave: true}   # Herjans
+    krak.29.3.4: {lemma: "höll", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "hall", stave: true}   # höllu
+    krak.29.4: {metre: "even line · head-stave h"}
+    krak.29.4.1: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "has", stave: true}   # hefir
+    krak.29.4.2: {lemma: "Óðinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Odin"}   # Óðinn
+    krak.29.4.3: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "to-me"}   # mér
+    krak.29.4.4: {lemma: "senda", morph: "VERB|Case=Acc|Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part", gloss: "sent"}   # sendar
+    krak.29.5: {metre: "odd line · staves vowel"}
+    krak.29.5.1: {lemma: "glaðr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "glad"}   # glaðr
+    krak.29.5.2: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "shall-I"}   # skalk
+    krak.29.5.3: {lemma: "öl", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "ale", stave: true}   # öl
+    krak.29.5.4: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    krak.29.5.5: {lemma: "áss", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "Æsir", stave: true}   # Ásum
+    krak.29.6: {metre: "even line · head-stave vowel"}
+    krak.29.6.1: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    krak.29.6.2: {lemma: "öndvegi", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "high-seat", stave: true}   # öndvegi
+    krak.29.6.3: {lemma: "drekka", morph: "VERB|VerbForm=Inf", gloss: "drink"}   # drekka
+    krak.29.7: {metre: "odd line · staves l"}
+    krak.29.7.1: {lemma: "líf", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "of-life", stave: true}   # lífs
+    krak.29.7.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "are"}   # eru
+    krak.29.7.3: {lemma: "líða", morph: "VERB|Case=Nom|Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part", gloss: "passed", stave: true}   # liðnar
+    krak.29.7.4: {lemma: "ván", morph: "NOUN|Case=Nom|Gender=Fem|Number=Plur", gloss: "hopes"}   # vánir
+    krak.29.8: {metre: "even line · head-stave l · the print's læjandi (for hlæjandi) alliterates on l with lífs and liðnar"}
+    krak.29.8.1: {lemma: "hlæja", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Part", gloss: "laughing", stave: true}   # læjandi
+    krak.29.8.2: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "shall-I"}   # skalk
+    krak.29.8.3: {lemma: "deyja", morph: "VERB|VerbForm=Inf", gloss: "die"}   # deyja
+- by: "Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar"
+  date: "2026-10-22"
+  why: "the refrain glossed the same in every stanza"
+  status: "draft"
+  set:
+    krak.1.1.4: {gloss: "sword"}   # hjörvi
+    krak.2.1.4: {gloss: "sword"}   # hjörvi
+    krak.3.1.4: {gloss: "sword"}   # hjörvi
+    krak.4.1.4: {gloss: "sword"}   # hjörvi
+    krak.5.1.4: {gloss: "sword"}   # hjörvi
+    krak.6.1.4: {gloss: "sword"}   # hjörvi
+    krak.7.1.4: {gloss: "sword"}   # hjörvi
+    krak.8.1.4: {gloss: "sword"}   # hjörvi
+    krak.9.1.4: {gloss: "sword"}   # hjörvi
+    krak.10.1.4: {gloss: "sword"}   # hjörvi
+    krak.11.1.4: {gloss: "sword"}   # hjörvi
+    krak.12.1.4: {gloss: "sword"}   # hjörvi
+    krak.13.1.4: {gloss: "sword"}   # hjörvi
+    krak.14.1.4: {gloss: "sword"}   # hjörvi
+    krak.15.1.4: {gloss: "sword"}   # hjörvi
+    krak.16.1.4: {gloss: "sword"}   # hjörvi
+    krak.17.1.4: {gloss: "sword"}   # hjörvi
+    krak.18.1.4: {gloss: "sword"}   # hjörvi
+    krak.19.1.4: {gloss: "sword"}   # hjörvi
+    krak.20.1.4: {gloss: "sword"}   # hjörvi
+    krak.21.1.4: {gloss: "sword"}   # hjörvi
+    krak.22.1.4: {gloss: "sword"}   # hjörvi
+    krak.23.1.4: {gloss: "sword"}   # hjörvi
+    krak.24.1.4: {gloss: "sword"}   # hjörvi
+    krak.25.1.4: {gloss: "sword"}   # hjörvi
+    krak.26.1.4: {gloss: "sword"}   # hjörvi
+    krak.27.1.4: {gloss: "sword"}   # hjörvi
+    krak.28.1.4: {gloss: "sword"}   # hjörvi
+
+- by: "Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar"
+  date: "2026-10-22"
+  status: draft
+  why: "corrections from review: headwords after Zoëga (Hlökk, blíkja, hrökkva, hríð, úlfr, hjálmr), hjarni masculine, þás and Hildr handled the same way throughout"
+  set:
+    krak.7.10.3: {morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing"}   # hjarna
+    krak.10.2.1: {lemma: "Hildr", morph: "PROPN|Case=Nom|Gender=Fem|Number=Sing", gloss: "Hild"}   # Hildr
+    krak.13.2.2: {lemma: "Hlökk", gloss: "Hlökk's"}   # Lakkar
+    krak.13.3.3: {gloss: "Hild's"}   # Hildar
+    krak.13.8.1: {lemma: "hjálmr"}   # hjalm
+    krak.14.2.3: {lemma: "hríð"}   # ríð
+    krak.14.7.1: {gloss: "Hild's"}   # Hildar
+    krak.14.8.1: {lemma: "hjálmstofn"}   # hjalmstofn
+    krak.15.10.1: {lemma: "hjálmr"}   # hjalms
+    krak.17.10.2: {lemma: "blíkja"}   # bliku
+    krak.18.3.4: {lemma: "úlfr"}   # ulfa
+    krak.19.7.5: {lemma: "úlfr"}   # ulfi
+    krak.20.2.3: {lemma: "hrökkva", gloss: "recoil"}   # rökkva
+    krak.21.3.1: {lemma: "þás"}   # þás
+    krak.24.7.1: {lemma: "þás"}   # þás

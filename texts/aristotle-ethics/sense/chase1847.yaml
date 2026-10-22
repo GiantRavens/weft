@@ -1,0 +1,105 @@
+# D. P. Chase, The Ethics of Aristotle (1847), book I, chapters I and II, in the Everyman printing, read from the
+# validated Wikisource transcription of its pages 1 and 2 (raw wikitext, scan pages 29 and 30, proofread level 4).
+# Left out in stripping the markup: the page headers and footers (proofreading tags, the title block "Aristotle's
+# Ethics, Book I", the running head "2 Aristotle's Ethics Book 1", the references tag); the chapter heads II and III;
+# the transcriber's {{verse|verse=1094a}} Bekker marker; the {{polytonic}} wrappers (their Greek is kept); line-break
+# tags; the italic marks on "i.e." and "The Good"; and Chase's long note on πολιτικὴ (keyed "P. 2, l. 16"), which
+# sits on page 2 at the word it explains. Chase prints no chapter head I on page 1.
+# Chase opens his chapter III with the last Greek sentence of chapter 2 (ἡ μὲν οὖν μέθοδος ... πολιτική τις οὖσα,
+# 1094b10-11) and runs on into chapter 3 mid-sentence; eth.1.2.11 takes only the clause that renders it, up to the
+# colon, and the rest of that sentence belongs to chapter 3.
+translation: chase1847
+aligned_by: hand, phase 0
+spans:
+- lines:
+  - eth.1.1.1
+  - eth.1.1.1
+  text: 'Every art, and every science reduced to a teachable form, and in like manner every action and moral choice, aims, it is thought, at some good:'
+- lines:
+  - eth.1.1.2
+  - eth.1.1.2
+  text: for which reason a common and by no means a bad description of the Chief Good is, "that which all things aim at."
+- lines:
+  - eth.1.1.3
+  - eth.1.1.3
+  text: 'Now there plainly is a difference in the Ends proposed:'
+- lines:
+  - eth.1.1.4
+  - eth.1.1.4
+  text: 'for in some cases they are acts of working, and in others certain works or tangible results beyond and beside the acts of working:'
+- lines:
+  - eth.1.1.5
+  - eth.1.1.5
+  text: and where there are certain Ends beyond and beside the actions, the works are in their nature better than the acts of working.
+- lines:
+  - eth.1.1.6
+  - eth.1.1.6
+  text: 'Again, since actions and arts and sciences are many, the Ends likewise come to be many:'
+- lines:
+  - eth.1.1.7
+  - eth.1.1.7
+  text: of the healing art, for instance, health; of the ship-building art, a vessel; of the military art, victory; and of domestic management, wealth; are respectively the Ends.
+- lines:
+  - eth.1.1.8
+  - eth.1.1.8
+  text: And whatever of such actions, arts, or sciences range under some one faculty (as under that of horsemanship the art of making bridles, and all that are connected with the manufacture of horse-furniture
+    in general; this itself again, and every action connected with war, under the military art; and in the same way others under others),
+- lines:
+  - eth.1.1.9
+  - eth.1.1.9
+  text: in all such, the Ends of the master-arts are more choice-worthy than those ranging under them,
+- lines:
+  - eth.1.1.10
+  - eth.1.1.10
+  text: because it is with a view to the former that the latter are pursued.
+- lines:
+  - eth.1.1.11
+  - eth.1.1.11
+  text: (And in this comparison it makes no difference whether the acts of working are themselves the Ends of the actions, or something further beside them, as is the case in the arts and sciences we have
+    been just speaking of.)
+- lines:
+  - eth.1.2.1
+  - eth.1.2.1
+  text: Since then of all things which may be done there is some one End which we desire for its own sake, and with a view to which we desire everything else; and since we do not choose in all instances
+    with a further End in view (for then men would go on without limit, and so the desire would be unsatisfied and fruitless), this plainly must be the Chief Good, i.e. the best thing of all.
+- lines:
+  - eth.1.2.2
+  - eth.1.2.2
+  text: 'Surely then, even with reference to actual life and conduct, the knowledge of it must have great weight; and like archers, with a mark in view, we shall be more likely to hit upon what is right:'
+- lines:
+  - eth.1.2.3
+  - eth.1.2.3
+  text: and if so, we ought to try to describe, in outline at least, what it is and of which of the sciences and faculties it is the End.
+- lines:
+  - eth.1.2.4
+  - eth.1.2.4
+  text: 'Now one would naturally suppose it to be the End of that which is most commanding and most inclusive:'
+- lines:
+  - eth.1.2.5
+  - eth.1.2.5
+  text: 'and to this description, πολιτικὴ plainly answers:'
+- lines:
+  - eth.1.2.6
+  - eth.1.2.6
+  text: for this it is that determines which of the sciences should be in the communities, and which kind individuals are to learn, and what degree of proficiency is to be required.
+- lines:
+  - eth.1.2.7
+  - eth.1.2.7
+  text: Again; we see also ranging under this the most highly esteemed faculties, such as the art military, and that of domestic management, and Rhetoric.
+- lines:
+  - eth.1.2.8
+  - eth.1.2.8
+  text: Well then, since this uses all the other practical sciences, and moreover lays down rules as to what men are to do, and from what to abstain, the End of this must include the Ends of the rest, and
+    so must be The Good of Man.
+- lines:
+  - eth.1.2.9
+  - eth.1.2.9
+  text: 'And grant that this is the same to the individual and to the community, yet surely that of the latter is plainly greater and more perfect to discover and preserve:'
+- lines:
+  - eth.1.2.10
+  - eth.1.2.10
+  text: for to do this even for a single individual were a matter for contentment; but to do it for a whole nation, and for communities generally, were more noble and godlike.
+- lines:
+  - eth.1.2.11
+  - eth.1.2.11
+  text: 'Such then are the objects proposed by our treatise, which is of the nature of πολιτικὴ:'

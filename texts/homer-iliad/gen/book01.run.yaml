@@ -1,36 +1,56 @@
 run:
   weft: 0.1.0
   book: 1
-  lines: 1-52
+  lines: 1-611
 counts:
-  lines: 52
-  tokens: 367
+  lines: 611
+  tokens: 4519
 failures:
-  form-mismatch: 5
-  morph-empty-declinable: 3
+  morph-empty-declinable: 11
+  form-mismatch: 2
+  tb-line-borrow: 2
+  metre-no-fit: 1
+  metre-ambiguous: 1
 metre_licences:
-  metre-dichronon-long: 4
-  metre-synizesis-assumed: 1
-  metre-lengthening-final-consonant: 2
+  metre-dichronon-long: 168
+  metre-synizesis-assumed: 5
+  metre-lengthening-final-consonant: 31
+  metre-lengthening: 8
+  metre-lengthening-before-liquid: 1
+  metre-internal-correption: 1
 samples:
-  form-mismatch:
-  - 1.2 ἄλγεʼ|ἄλγἐ
-  - 1.13 ἀπερείσιʼ|ἀπερείσἰ
-  - 1.35 ὁ|ὃ
-  - 1.38 Κίλλαν|Κίλλάν
-  - 1.46 ἄρʼ|ἄῤ
   morph-empty-declinable:
   - 1.3 Ἄϊδι (---------)
   - 1.8 τίς (x--------)
   - 1.16 δύω (m--------)
+  - 1.155 Φθίῃ (---------)
+  - 1.165 πολυάϊκος (---------)
+  form-mismatch:
+  - 1.35 ὁ|ὃ
+  - 1.38 Κίλλαν|Κίλλάν
+  tb-line-borrow:
+  - 1.154 4 word(s) from line 155
+  - 1.526 3 word(s) from line 527
+  metre-no-fit:
+  - 1.277 μήτε σὺ Πηλείδη ἔθελʼ ἐριζέμεναι βασιλῆϊ
+  metre-ambiguous:
+  - 1.583 —◡◡|——|—◡◡|—◡◡|—◡◡|—× or —◡◡|—◡◡|——|—◡◡|—◡◡|—×
 failure_rate:
-  form-mismatch: 0.014
-  morph-empty-declinable: 0.008
+  morph-empty-declinable: 0.002
+  form-mismatch: 0.0
+  tb-line-borrow: 0.0
+  metre-no-fit: 0.0
+  metre-ambiguous: 0.0
 shift_left: []
 predicted_gaps:
 - a/i/u vowel length not marked in the spelling; the two quantity tables cover the words they list (long by LSJ and confirmed by the metre), others default to short
 - treebank is on perseus-grc1, edition is grc2; expect form and elision-mark differences
-- both translations are prose paragraphs; spans follow sentences (one span still covers the whole proem, 1.1-7, and Butler 1.43-49)
+- both translations are prose paragraphs; spans follow sentences, or clauses where a long sentence covers many lines (one span still covers the whole proem, 1.1-7, and the longest later spans run to seven
+  or eight lines)
 - the editor's accentuation of Πηληϊάδεω and the synizesis of -εω are not modeled by the sound layer
 - 'treebank tags are empty for Ἄϊδι (1.3), τίς (1.8) and δύω (1.16): morph-empty-declinable 3; Ἄϊδι and τίς are filled in curated/, δύω is left as the indeclinable Homeric numeral'
-- meter for 1.8-52 is the hexameter scanner's output (weft.greek.scan_hexameter), checked by hand and stored in curated/ until the scanner writes to gen
+- meter for 1.8-52 is the hexameter scanner's output (weft.greek.scan_hexameter), checked by hand and stored in curated/; for 1.53-611 it is the scanner's output, read by hand only where the scanner found
+  no fit (1.277, synecphonesis) or two (1.583)
+- the AGDT parse of 1.53-611 was read token by token and 136 tokens corrected in curated/ (οὐδέ and οὔτε, which the treebank splits, given the whole word's parse; the directional -δε, which it reads as
+  the particle δέ; lemma, degree and voice slips)
+- the treebank cites a few words to the neighboring line at 1.154-155 and 1.526-527; the draft moves them back (tb-line-borrow)

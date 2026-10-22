@@ -1,0 +1,113 @@
+# F. H. Peters, The Nicomachean Ethics of Aristotle (Kegan Paul, Trench; first edition 1881), book I, chapters 1 and 2,
+# read from the OCR of the third edition (1886, archive.org petersethics00arisrich), with the doubtful readings settled
+# on the page images (leaves 25-27, printed pages 1-3). Translator: Frank Hesketh Peters (born 1849), Fellow of
+# University College, Oxford (Foster, Alumni Oxonienses 1715-1886, vol. 3, p. 1102); his death year is not yet
+# established; the translation is treated as public domain because, born in 1849, he would have had to live past
+# 106 to die after 1955 (the manifest records the same reasoning).
+# Corrections to the OCR, each checked on the page image:
+#   "Loth" -> "both" (1.2.9, page 3); "the. good" -> "the good" (1.1.2); "like- / wise" -> "likewise" (line-end
+#   hyphen joined, 1.1.1); "EVERY" (small capitals in the print) -> "Every".
+# Typography normalized: the spaces the print sets before ";" and ":" are closed up ("good ;" -> "good;", also
+#   "point ;", "secure ;"); spaces the OCR puts around the em-dash are removed, as the print sets "science,—as",
+#   "on,—then", "objectless),—this"; italics ("e.g.", "ad infinitum") are kept as plain text.
+# Omitted: the section numbers in the margins (1-4 on page 1; 5, 1, 2, 3, 4, 5 on page 2; 6, 8, 9 on page 3, which the
+#   OCR mostly misses) and a stray comma the OCR reads before "we wish"; the chapter numbers "1." and "2."; the book and
+#   chapter heads ("BOOK I.", "THE END."); the running heads "2 NICOMACHEAN ETHICS OF ARISTOTLE. [BK. I." and
+#   "1, 5-3, 4.] THE END. 3"; the side-notes in the outer margin, of which the OCR keeps only fragments ("in", "*«",
+#   "»**" on page 1); the footnote marks after "Politics" (1.2.5) and "inquiry" (1.2.11); and the two footnotes
+#   themselves ("To Aristotle Politics is a much wider term than to us ...", page 2; "i.e. covers a part of the ground
+#   only: see preceding note.", page 3).
+translation: peters1881
+aligned_by: hand, phase 0
+spans:
+- lines:
+  - eth.1.1.1
+  - eth.1.1.1
+  text: 'Every art and every kind of inquiry, and likewise every act and purpose, seems to aim at some good:'
+- lines:
+  - eth.1.1.2
+  - eth.1.1.2
+  text: and so it has been well said that the good is that at which everything aims.
+- lines:
+  - eth.1.1.3
+  - eth.1.1.3
+  text: But a difference is observable among these aims or ends.
+- lines:
+  - eth.1.1.4
+  - eth.1.1.4
+  text: What is aimed at is sometimes the exercise of a faculty, sometimes a certain result beyond that exercise.
+- lines:
+  - eth.1.1.5
+  - eth.1.1.5
+  text: And where there is an end beyond the act, there the result is better than the exercise of the faculty.
+- lines:
+  - eth.1.1.6
+  - eth.1.1.6
+  text: Now since there are many kinds of actions and many arts and sciences, it follows that there are many ends also;
+- lines:
+  - eth.1.1.7
+  - eth.1.1.7
+  text: e.g. health is the end of medicine, ships of shipbuilding, victory of the art of war, and wealth of economy.
+- lines:
+  - eth.1.1.8
+  - eth.1.1.8
+  text: But when several of these are subordinated to some one art or science,—as the making of bridles and other trappings to the art of horsemanship, and this in turn, along with all else that the soldier
+    does, to the art of war, and so on,—
+- lines:
+  - eth.1.1.9
+  - eth.1.1.9
+  text: then the end of the master-art is always more desired than the ends of the subordinate arts,
+- lines:
+  - eth.1.1.10
+  - eth.1.1.10
+  text: since these are pursued for its sake.
+- lines:
+  - eth.1.1.11
+  - eth.1.1.11
+  text: And this is equally true whether the end in view be the mere exercise of a faculty or something beyond that, as in the above instances.
+- lines:
+  - eth.1.2.1
+  - eth.1.2.1
+  text: If then in what we do there be some end which we wish for on its own account, choosing all the others as means to this, but not every end without exception as a means to something else (for so we
+    should go on ad infinitum, and desire would be left void and objectless),—this evidently will be the good or the best of all things.
+- lines:
+  - eth.1.2.2
+  - eth.1.2.2
+  text: And surely from a practical point of view it much concerns us to know this good; for then, like archers shooting at a definite mark, we shall be more likely to attain what we want.
+- lines:
+  - eth.1.2.3
+  - eth.1.2.3
+  text: If this be so, we must try to indicate roughly what it is, and first of all to which of the arts or sciences it belongs.
+- lines:
+  - eth.1.2.4
+  - eth.1.2.4
+  text: It would seem to belong to the supreme art or science, that one which most of all deserves the name of master-art or master-science.
+- lines:
+  - eth.1.2.5
+  - eth.1.2.5
+  text: Now Politics seems to answer to this description.
+- lines:
+  - eth.1.2.6
+  - eth.1.2.6
+  text: For it prescribes which of the sciences a state needs, and which each man shall study, and up to what point;
+- lines:
+  - eth.1.2.7
+  - eth.1.2.7
+  text: and to it we see subordinated even the highest arts, such as economy, rhetoric, and the art of war.
+- lines:
+  - eth.1.2.8
+  - eth.1.2.8
+  text: Since then it makes use of the other practical sciences, and since it further ordains what men are to do and from what to refrain, its end must include the ends of the others, and must be the proper
+    good of man.
+- lines:
+  - eth.1.2.9
+  - eth.1.2.9
+  text: For though this good is the same for the individual and the state, yet the good of the state seems a grander and more perfect thing both to attain and to secure;
+- lines:
+  - eth.1.2.10
+  - eth.1.2.10
+  text: and glad as one would be to do this service for a single individual, to do it for a people and for a number of states is nobler and more divine.
+- lines:
+  - eth.1.2.11
+  - eth.1.2.11
+  text: This then is the aim of the present inquiry, which is a sort of political inquiry.

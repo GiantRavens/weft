@@ -1683,3 +1683,2157 @@
     med.2.17.9.20: {morph: a-p---ng-}   # πάντων
     med.2.17.10.4: {morph: a-s---nn-}   # οὐδὲν
     med.2.17.10.6: {morph: a-s---nn-}   # κακὸν
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-18
+  why: "Book 1, sections 1.1-1.15: literal word-for-word gloss, same conventions as book 2"
+  status: draft
+  set:
+    med.1.1.1.1: {gloss: "from"}   # Παρὰ
+    med.1.1.1.2: {gloss: "the"}   # τοῦ
+    med.1.1.1.3: {gloss: "grandfather"}   # πάππου
+    med.1.1.1.4: {gloss: "Verus"}   # Οὐήρου
+    med.1.1.1.5: {gloss: "the"}   # τὸ
+    med.1.1.1.6: {gloss: "good-character"}   # καλόηθες
+    med.1.1.1.7: {gloss: "and"}   # καὶ
+    med.1.1.1.8: {gloss: "not-angry"}   # ἀόργητον
+    med.1.2.1.1: {gloss: "from"}   # Παρὰ
+    med.1.2.1.2: {gloss: "the"}   # τῆς
+    med.1.2.1.3: {gloss: "reputation"}   # δόξης
+    med.1.2.1.4: {gloss: "and"}   # καὶ
+    med.1.2.1.5: {gloss: "memory"}   # μνήμης
+    med.1.2.1.6: {gloss: "the"}   # τῆς
+    med.1.2.1.7: {gloss: "about"}   # περὶ
+    med.1.2.1.8: {gloss: "the"}   # τοῦ
+    med.1.2.1.9: {gloss: "one-who-begot-me"}   # γεννήσαντος
+    med.1.2.1.10: {gloss: "the"}   # τὸ
+    med.1.2.1.11: {gloss: "modesty"}   # αἰδῆμον
+    med.1.2.1.12: {gloss: "and"}   # καὶ
+    med.1.2.1.13: {gloss: "manliness"}   # ἀρρενικόν
+    med.1.3.1.1: {gloss: "from"}   # Παρὰ
+    med.1.3.1.2: {gloss: "the"}   # τῆς
+    med.1.3.1.3: {gloss: "mother"}   # μητρὸς
+    med.1.3.1.4: {gloss: "the"}   # τὸ
+    med.1.3.1.5: {gloss: "piety"}   # θεοσεβὲς
+    med.1.3.1.6: {gloss: "and"}   # καὶ
+    med.1.3.1.7: {gloss: "generosity"}   # μεταδοτικὸν
+    med.1.3.1.8: {gloss: "and"}   # καὶ
+    med.1.3.1.9: {gloss: "abstaining"}   # ἀφεκτικὸν
+    med.1.3.1.10: {gloss: "not"}   # οὐ
+    med.1.3.1.11: {gloss: "only"}   # μόνον
+    med.1.3.1.12: {gloss: "from-the"}   # τοῦ
+    med.1.3.1.13: {gloss: "doing-wrong"}   # κακοποιεῖν
+    med.1.3.1.14: {gloss: "but"}   # ἀλλὰ
+    med.1.3.1.15: {gloss: "also"}   # καὶ
+    med.1.3.1.16: {gloss: "from-the"}   # τοῦ
+    med.1.3.1.17: {gloss: "upon"}   # ἐπὶ
+    med.1.3.1.18: {gloss: "thought"}   # ἐννοίας
+    med.1.3.1.19: {gloss: "to-come"}   # γίνεσθαι
+    med.1.3.1.20: {gloss: "such"}   # τοιαύτης
+    med.1.3.2.1: {gloss: "further"}   # ἔτι
+    med.1.3.2.2: {gloss: "and"}   # δὲ
+    med.1.3.2.3: {gloss: "the"}   # τὸ
+    med.1.3.2.4: {gloss: "simplicity"}   # λιτὸν
+    med.1.3.2.5: {gloss: "in"}   # κατὰ
+    med.1.3.2.6: {gloss: "the"}   # τὴν
+    med.1.3.2.7: {gloss: "way-of-life"}   # δίαιταν
+    med.1.3.2.8: {gloss: "and"}   # καὶ
+    med.1.3.2.9: {gloss: "far"}   # πόρρω
+    med.1.3.2.10: {gloss: "from-the"}   # τῆς
+    med.1.3.2.11: {gloss: "wealthy"}   # πλουσιακῆς
+    med.1.3.2.12: {gloss: "manner-of-living"}   # διαγωγῆς
+    med.1.4.1.1: {gloss: "from"}   # Παρὰ
+    med.1.4.1.2: {gloss: "the"}   # τοῦ
+    med.1.4.1.3: {gloss: "great-grandfather"}   # προπάππου
+    med.1.4.1.4: {gloss: "the"}   # τὸ
+    med.1.4.1.5: {gloss: "not"}   # μὴ
+    med.1.4.1.6: {gloss: "to"}   # εἰς
+    med.1.4.1.7: {gloss: "public"}   # δημοσίας
+    med.1.4.1.8: {gloss: "schools"}   # διατριβὰς
+    med.1.4.1.9: {gloss: "to-go"}   # φοιτῆσαι
+    med.1.4.1.10: {gloss: "and"}   # καὶ
+    med.1.4.1.11: {gloss: "the"}   # τὸ
+    med.1.4.1.12: {gloss: "good"}   # ἀγαθοῖς
+    med.1.4.1.13: {gloss: "teachers"}   # διδασκάλοις
+    med.1.4.1.14: {gloss: "at"}   # κατ’
+    med.1.4.1.15: {gloss: "home"}   # οἶκον
+    med.1.4.1.16: {gloss: "to-use"}   # χρήσασθαι
+    med.1.4.1.17: {gloss: "and"}   # καὶ
+    med.1.4.1.18: {gloss: "the"}   # τὸ
+    med.1.4.1.19: {gloss: "to-know"}   # γνῶναι
+    med.1.4.1.20: {gloss: "that"}   # ὅτι
+    med.1.4.1.21: {gloss: "on"}   # εἰς
+    med.1.4.1.22: {gloss: "the"}   # τὰ
+    med.1.4.1.23: {gloss: "such-things"}   # τοιαῦτα
+    med.1.4.1.24: {gloss: "it-is-necessary"}   # δεῖ
+    med.1.4.1.25: {gloss: "liberally"}   # ἐκτενῶς
+    med.1.4.1.26: {gloss: "to-spend"}   # ἀναλίσκειν
+    med.1.5.1.1: {gloss: "from"}   # Παρὰ
+    med.1.5.1.2: {gloss: "the"}   # τοῦ
+    med.1.5.1.3: {gloss: "tutor"}   # τροφέως
+    med.1.5.1.4: {gloss: "the"}   # τὸ
+    med.1.5.1.5: {gloss: "neither"}   # μήτε
+    med.1.5.1.6: {gloss: "a-Green"}   # Πρασιανὸς
+    med.1.5.1.7: {gloss: "nor"}   # μήτε
+    med.1.5.1.8: {gloss: "a-Blue"}   # Βενετιανὸς
+    med.1.5.1.9: {gloss: "nor"}   # μήτε
+    med.1.5.1.10: {gloss: "a-Parmularius"}   # Παλμουλάριος
+    med.1.5.1.11: {gloss: "or"}   # ἢ
+    med.1.5.1.12: {gloss: "a-Scutarius"}   # Σκουτάριος
+    med.1.5.1.13: {gloss: "to-become"}   # γενέσθαι
+    med.1.5.2.1: {gloss: "and"}   # καὶ
+    med.1.5.2.2: {gloss: "the"}   # τὸ
+    med.1.5.2.3: {gloss: "endurance-of-toil"}   # φερέπονον
+    med.1.5.2.4: {gloss: "and"}   # καὶ
+    med.1.5.2.5: {gloss: "wanting-little"}   # ὀλιγοδεές
+    med.1.5.3.1: {gloss: "and"}   # καὶ
+    med.1.5.3.2: {gloss: "the"}   # τὸ
+    med.1.5.3.3: {gloss: "working-with-one's-own-hands"}   # αὐτουργικὸν
+    med.1.5.3.4: {gloss: "and"}   # καὶ
+    med.1.5.3.5: {gloss: "not-meddling"}   # ἀπολύπραγμον
+    med.1.5.4.1: {gloss: "and"}   # καὶ
+    med.1.5.4.2: {gloss: "the"}   # τὸ
+    med.1.5.4.3: {gloss: "unreceptiveness"}   # δυσπρόσδεκτον
+    med.1.5.4.4: {gloss: "of-slander"}   # διαβολῆς
+    med.1.6.1.1: {gloss: "from"}   # Παρὰ
+    med.1.6.1.2: {gloss: "Diognetus"}   # Διογνήτου
+    med.1.6.1.3: {gloss: "the"}   # τὸ
+    med.1.6.1.4: {gloss: "not-busying-with-trifles"}   # ἀκενόσπουδον
+    med.1.6.2.1: {gloss: "and"}   # καὶ
+    med.1.6.2.2: {gloss: "the"}   # τὸ
+    med.1.6.2.3: {gloss: "disbelief"}   # ἀπιστητικὸν
+    med.1.6.2.4: {gloss: "in-the"}   # τοῖς
+    med.1.6.2.5: {gloss: "by"}   # ὑπὸ
+    med.1.6.2.6: {gloss: "the"}   # τῶν
+    med.1.6.2.7: {gloss: "wonder-workers"}   # τερατευομένων
+    med.1.6.2.8: {gloss: "and"}   # καὶ
+    med.1.6.2.9: {gloss: "sorcerers"}   # γοήτων
+    med.1.6.2.10: {gloss: "about"}   # περὶ
+    med.1.6.2.11: {gloss: "incantations"}   # ἐπῳδῶν
+    med.1.6.2.12: {gloss: "and"}   # καὶ
+    med.1.6.2.13: {gloss: "about"}   # περὶ
+    med.1.6.2.14: {gloss: "of-spirits"}   # δαιμόνων
+    med.1.6.2.15: {gloss: "driving-away"}   # ἀποπομπῆς
+    med.1.6.2.16: {gloss: "and"}   # καὶ
+    med.1.6.2.17: {gloss: "the"}   # τῶν
+    med.1.6.2.18: {gloss: "like-things"}   # τοιούτων
+    med.1.6.2.19: {gloss: "things-said"}   # λεγομένοις
+    med.1.6.3.1: {gloss: "and"}   # καὶ
+    med.1.6.3.2: {gloss: "the"}   # τὸ
+    med.1.6.3.3: {gloss: "not"}   # μὴ
+    med.1.6.3.4: {gloss: "to-keep-quails"}   # ὀρτυγοτροφεῖν
+    med.1.6.3.5: {gloss: "nor"}   # μηδὲ
+    med.1.6.3.6: {gloss: "about"}   # περὶ
+    med.1.6.3.7: {gloss: "the"}   # τὰ
+    med.1.6.3.8: {gloss: "such-things"}   # τοιαῦτα
+    med.1.6.3.9: {gloss: "to-be-excited"}   # ἐπτοῆσθαι
+    med.1.6.4.1: {gloss: "and"}   # καὶ
+    med.1.6.4.2: {gloss: "the"}   # τὸ
+    med.1.6.4.3: {gloss: "to-bear-with"}   # ἀνέχεσθαι
+    med.1.6.4.4: {gloss: "frankness"}   # παρρησίας
+    med.1.6.5.1: {gloss: "and"}   # καὶ
+    med.1.6.5.2: {gloss: "the"}   # τὸ
+    med.1.6.5.3: {gloss: "to-become-familiar"}   # οἰκειωθῆναι
+    med.1.6.5.4: {gloss: "with-philosophy"}   # φιλοσοφίᾳ
+    med.1.6.5.5: {gloss: "and"}   # καὶ
+    med.1.6.5.6: {gloss: "the"}   # τὸ
+    med.1.6.5.7: {gloss: "to-hear"}   # ἀκοῦσαι
+    med.1.6.5.8: {gloss: "first"}   # πρῶτον
+    med.1.6.5.9: {gloss: "on-one-hand"}   # μὲν
+    med.1.6.5.10: {gloss: "Bacchius"}   # Βακχείου
+    med.1.6.5.11: {gloss: "then"}   # εἶτα
+    med.1.6.5.12: {gloss: "Tandasis"}   # Τανδάσιδος
+    med.1.6.5.13: {gloss: "and"}   # καὶ
+    med.1.6.5.14: {gloss: "Marcianus"}   # Μαρκιανοῦ
+    med.1.6.6.1: {gloss: "and"}   # καὶ
+    med.1.6.6.2: {gloss: "the"}   # τὸ
+    med.1.6.6.3: {gloss: "to-write"}   # γράψαι
+    med.1.6.6.4: {gloss: "dialogues"}   # διαλόγους
+    med.1.6.6.5: {gloss: "as"}   # ἐν
+    med.1.6.6.6: {gloss: "a-boy"}   # παιδί
+    med.1.6.7.1: {gloss: "and"}   # καὶ
+    med.1.6.7.2: {gloss: "the"}   # τὸ
+    med.1.6.7.3: {gloss: "for-a-camp-bed"}   # σκίμποδος
+    med.1.6.7.4: {gloss: "and"}   # καὶ
+    med.1.6.7.5: {gloss: "a-hide"}   # δορᾶς
+    med.1.6.7.6: {gloss: "to-desire"}   # ἐπιθυμῆσαι
+    med.1.6.7.7: {gloss: "and"}   # καὶ
+    med.1.6.7.8: {gloss: "whatever"}   # ὅσα
+    med.1.6.7.9: {gloss: "such-things"}   # τοιαῦτα
+    med.1.6.7.10: {gloss: "of-the"}   # τῆς
+    med.1.6.7.11: {gloss: "Greek"}   # Ἑλληνικῆς
+    med.1.6.7.12: {gloss: "training"}   # ἀγωγῆς
+    med.1.6.7.13: {gloss: "belonging-to"}   # ἐχόμενα
+    med.1.7.1.1: {gloss: "from"}   # Παρὰ
+    med.1.7.1.2: {gloss: "Rusticus"}   # Ῥουστίκου
+    med.1.7.1.3: {gloss: "the"}   # τὸ
+    med.1.7.1.4: {gloss: "to-receive"}   # λαβεῖν
+    med.1.7.1.5: {gloss: "an-impression"}   # φαντασίαν
+    med.1.7.1.6: {gloss: "of-the"}   # τοῦ
+    med.1.7.1.7: {gloss: "needing"}   # χρῄζειν
+    med.1.7.1.8: {gloss: "correction"}   # διορθώσεως
+    med.1.7.1.9: {gloss: "and"}   # καὶ
+    med.1.7.1.10: {gloss: "care"}   # θεραπείας
+    med.1.7.1.11: {gloss: "of-the"}   # τοῦ
+    med.1.7.1.12: {gloss: "character"}   # ἤθους
+    med.1.7.2.1: {gloss: "and"}   # καὶ
+    med.1.7.2.2: {gloss: "the"}   # τὸ
+    med.1.7.2.3: {gloss: "not"}   # μὴ
+    med.1.7.2.4: {gloss: "to-be-turned-aside"}   # ἐκτραπῆναι
+    med.1.7.2.5: {gloss: "into"}   # εἰς
+    med.1.7.2.6: {gloss: "zeal"}   # ζῆλον
+    med.1.7.2.7: {gloss: "sophistic"}   # σοφιστικόν
+    med.1.7.2.8: {gloss: "nor"}   # μηδὲ
+    med.1.7.2.9: {gloss: "the"}   # τὸ
+    med.1.7.2.10: {gloss: "to-write"}   # συγγράφειν
+    med.1.7.2.11: {gloss: "about"}   # περὶ
+    med.1.7.2.12: {gloss: "the"}   # τῶν
+    med.1.7.2.13: {gloss: "theories"}   # θεωρημάτων
+    med.1.7.2.14: {gloss: "or"}   # ἢ
+    med.1.7.2.15: {gloss: "hortatory"}   # προτρεπτικὰ
+    med.1.7.2.16: {gloss: "little-speeches"}   # λογάρια
+    med.1.7.2.17: {gloss: "to-deliver"}   # διαλέγεσθαι
+    med.1.7.2.18: {gloss: "or"}   # ἢ
+    med.1.7.2.19: {gloss: "so-as-to-dazzle"}   # φαντασιοπλήκτως
+    med.1.7.2.20: {gloss: "the"}   # τὸν
+    med.1.7.2.21: {gloss: "ascetic"}   # ἀσκητικὸν
+    med.1.7.2.22: {gloss: "or"}   # ἢ
+    med.1.7.2.23: {gloss: "the"}   # τὸν
+    med.1.7.2.24: {gloss: "active"}   # ἐνεργητικὸν
+    med.1.7.2.25: {gloss: "man"}   # ἄνδρα
+    med.1.7.2.26: {gloss: "to-display"}   # ἐπιδείκνυσθαι
+    med.1.7.3.1: {gloss: "and"}   # καὶ
+    med.1.7.3.2: {gloss: "the"}   # τὸ
+    med.1.7.3.3: {gloss: "to-stand-aloof"}   # ἀποστῆναι
+    med.1.7.3.4: {gloss: "from-rhetoric"}   # ῥητορικῆς
+    med.1.7.3.5: {gloss: "and"}   # καὶ
+    med.1.7.3.6: {gloss: "poetry"}   # ποιητικῆς
+    med.1.7.3.7: {gloss: "and"}   # καὶ
+    med.1.7.3.8: {gloss: "fine-language"}   # ἀστειολογίας
+    med.1.7.4.1: {gloss: "and"}   # καὶ
+    med.1.7.4.2: {gloss: "the"}   # τὸ
+    med.1.7.4.3: {gloss: "not"}   # μὴ
+    med.1.7.4.4: {gloss: "in"}   # ἐν
+    med.1.7.4.5: {gloss: "a-robe"}   # στολῇ
+    med.1.7.4.6: {gloss: "at"}   # κατ’
+    med.1.7.4.7: {gloss: "home"}   # οἶκον
+    med.1.7.4.8: {gloss: "to-walk-about"}   # περιπατεῖν
+    med.1.7.4.9: {gloss: "nor"}   # μηδὲ
+    med.1.7.4.10: {gloss: "the"}   # τὰ
+    med.1.7.4.11: {gloss: "such-things"}   # τοιαῦτα
+    med.1.7.4.12: {gloss: "to-do"}   # ποιεῖν
+    med.1.7.5.1: {gloss: "and"}   # καὶ
+    med.1.7.5.2: {gloss: "the"}   # τὸ
+    med.1.7.5.3: {gloss: "the"}   # τὰ
+    med.1.7.5.4: {gloss: "letters"}   # ἐπιστόλια
+    med.1.7.5.5: {gloss: "simply"}   # ἀφελῶς
+    med.1.7.5.6: {gloss: "to-write"}   # γράφειν
+    med.1.7.5.7: {gloss: "such-as"}   # οἷον
+    med.1.7.5.8: {gloss: "the-one"}   # τὸ
+    med.1.7.5.9: {gloss: "by"}   # ὑπʼ
+    med.1.7.5.10: {gloss: "very"}   # αὐτοῦ
+    med.1.7.5.11: {gloss: "this-man"}   # τούτου
+    med.1.7.5.12: {gloss: "from"}   # ἀπὸ
+    med.1.7.5.13: {gloss: "Sinuessa"}   # Σινοέσσης
+    med.1.7.5.14: {gloss: "to-the"}   # τῇ
+    med.1.7.5.15: {gloss: "mother"}   # μητρί
+    med.1.7.5.16: {gloss: "my"}   # μου
+    med.1.7.5.17: {gloss: "written"}   # γραφέν
+    med.1.7.6.1: {gloss: "and"}   # καὶ
+    med.1.7.6.2: {gloss: "the"}   # τὸ
+    med.1.7.6.3: {gloss: "towards"}   # πρὸς
+    med.1.7.6.4: {gloss: "the"}   # τοὺς
+    med.1.7.6.5: {gloss: "having-been-angry"}   # χαλεπήναντας
+    med.1.7.6.6: {gloss: "and"}   # καὶ
+    med.1.7.6.7: {gloss: "having-offended"}   # πλημμελήσαντας
+    med.1.7.6.8: {gloss: "placably"}   # εὐανακλήτως
+    med.1.7.6.9: {gloss: "and"}   # καὶ
+    med.1.7.6.10: {gloss: "reconcilably"}   # εὐδιαλλάκτως
+    med.1.7.6.11: {gloss: "when"}   # ἐπειδὰν
+    med.1.7.6.12: {gloss: "soonest"}   # τάχιστα
+    med.1.7.6.13: {gloss: "they-themselves"}   # αὐτοὶ
+    med.1.7.6.14: {gloss: "to-come-back"}   # ἐπανελθεῖν
+    med.1.7.6.15: {gloss: "should-wish"}   # ἐθελήσωσι
+    med.1.7.6.16: {gloss: "to-be-disposed"}   # διακεῖσθαι
+    med.1.7.7.1: {gloss: "and"}   # καὶ
+    med.1.7.7.2: {gloss: "the"}   # τὸ
+    med.1.7.7.3: {gloss: "accurately"}   # ἀκριβῶς
+    med.1.7.7.4: {gloss: "to-read"}   # ἀναγινώσκειν
+    med.1.7.7.5: {gloss: "and"}   # καὶ
+    med.1.7.7.6: {gloss: "not"}   # μὴ
+    med.1.7.7.7: {gloss: "to-be-content"}   # ἀρκεῖσθαι
+    med.1.7.7.8: {gloss: "considering"}   # περινοοῦντα
+    med.1.7.7.9: {gloss: "roughly"}   # ὁλοσχερῶς
+    med.1.7.7.10: {gloss: "nor"}   # μηδὲ
+    med.1.7.7.11: {gloss: "to-the"}   # τοῖς
+    med.1.7.7.12: {gloss: "big-talkers"}   # περιλαλοῦσι
+    med.1.7.7.13: {gloss: "quickly"}   # ταχέως
+    med.1.7.7.14: {gloss: "to-assent"}   # συγκατατίθεσθαι
+    med.1.7.8.1: {gloss: "and"}   # καὶ
+    med.1.7.8.2: {gloss: "the"}   # τὸ
+    med.1.7.8.3: {gloss: "to-meet-with"}   # ἐντυχεῖν
+    med.1.7.8.4: {gloss: "the"}   # τοῖς
+    med.1.7.8.5: {gloss: "Epictetan"}   # Ἐπικτητείοις
+    med.1.7.8.6: {gloss: "notes"}   # ὑπομνήμασιν
+    med.1.7.8.7: {gloss: "of-which"}   # ὧν
+    med.1.7.8.8: {gloss: "from-home"}   # οἴκοθεν
+    med.1.7.8.9: {gloss: "he-gave-a-share"}   # μετέδωκεν
+    med.1.8.1.1: {gloss: "from"}   # Παρὰ
+    med.1.8.1.2: {gloss: "Apollonius"}   # Ἀπολλωνίου
+    med.1.8.1.3: {gloss: "the"}   # τὸ
+    med.1.8.1.4: {gloss: "freedom"}   # ἐλεύθερον
+    med.1.8.1.5: {gloss: "and"}   # καὶ
+    med.1.8.1.6: {gloss: "unambiguously"}   # ἀναμφιβόλως
+    med.1.8.1.7: {gloss: "not-staking-on-chance"}   # ἀκύβευτον
+    med.1.8.1.8: {gloss: "and"}   # καὶ
+    med.1.8.1.9: {gloss: "to"}   # πρὸς
+    med.1.8.1.10: {gloss: "nothing"}   # μηδὲν
+    med.1.8.1.11: {gloss: "other"}   # ἄλλο
+    med.1.8.1.12: {gloss: "to-look"}   # ἀποβλέπειν
+    med.1.8.1.13: {gloss: "not-even"}   # μηδὲ
+    med.1.8.1.14: {gloss: "for"}   # ἐπ’
+    med.1.8.1.15: {gloss: "a-little-while"}   # ὀλίγον
+    med.1.8.1.16: {gloss: "except"}   # ἢ
+    med.1.8.1.17: {gloss: "to"}   # πρὸς
+    med.1.8.1.18: {gloss: "the"}   # τὸν
+    med.1.8.1.19: {gloss: "reason"}   # λόγον
+    med.1.8.2.1: {gloss: "and"}   # καὶ
+    med.1.8.2.2: {gloss: "the"}   # τὸ
+    med.1.8.2.3: {gloss: "always"}   # ἀεὶ
+    med.1.8.2.4: {gloss: "same"}   # ὅμοιον
+    med.1.8.2.5: {gloss: "in"}   # ἐν
+    med.1.8.2.6: {gloss: "pains"}   # ἀλγηδόσιν
+    med.1.8.2.7: {gloss: "sharp"}   # ὀξείαις
+    med.1.8.2.8: {gloss: "in"}   # ἐν
+    med.1.8.2.9: {gloss: "loss"}   # ἀποβολῇ
+    med.1.8.2.10: {gloss: "of-a-child"}   # τέκνου
+    med.1.8.2.11: {gloss: "in"}   # ἐν
+    med.1.8.2.12: {gloss: "long"}   # μακραῖς
+    med.1.8.2.13: {gloss: "illnesses"}   # νόσοις
+    med.1.8.3.1: {gloss: "and"}   # καὶ
+    med.1.8.3.2: {gloss: "the"}   # τὸ
+    med.1.8.3.3: {gloss: "in"}   # ἐπὶ
+    med.1.8.3.4: {gloss: "an-example"}   # παραδείγματος
+    med.1.8.3.5: {gloss: "living"}   # ζῶντος
+    med.1.8.3.6: {gloss: "to-see"}   # ἰδεῖν
+    med.1.8.3.7: {gloss: "clearly"}   # ἐναργῶς
+    med.1.8.3.8: {gloss: "that"}   # ὅτι
+    med.1.8.3.9: {gloss: "is-able"}   # δύναται
+    med.1.8.3.10: {gloss: "the"}   # ὁ
+    med.1.8.3.11: {gloss: "same"}   # αὐτὸς
+    med.1.8.3.12: {gloss: "most-intense"}   # σφοδρότατος
+    med.1.8.3.13: {gloss: "to-be"}   # εἶναι
+    med.1.8.3.14: {gloss: "and"}   # καὶ
+    med.1.8.3.15: {gloss: "relaxed"}   # ἀνειμένος
+    med.1.8.4.1: {gloss: "and"}   # καὶ
+    med.1.8.4.2: {gloss: "the"}   # τὸ
+    med.1.8.4.3: {gloss: "in"}   # ἐν
+    med.1.8.4.4: {gloss: "the"}   # ταῖς
+    med.1.8.4.5: {gloss: "explanations"}   # ἐξηγήσεσι
+    med.1.8.4.6: {gloss: "not"}   # μὴ
+    med.1.8.4.7: {gloss: "peevish"}   # δυσχεραντικόν
+    med.1.8.5.1: {gloss: "and"}   # καὶ
+    med.1.8.5.2: {gloss: "the"}   # τὸ
+    med.1.8.5.3: {gloss: "to-see"}   # ἰδεῖν
+    med.1.8.5.4: {gloss: "a-man"}   # ἄνθρωπον
+    med.1.8.5.5: {gloss: "plainly"}   # σαφῶς
+    med.1.8.5.6: {gloss: "least"}   # ἐλάχιστον
+    med.1.8.5.7: {gloss: "of-the"}   # τῶν
+    med.1.8.5.8: {gloss: "his-own"}   # ἑαυτοῦ
+    med.1.8.5.9: {gloss: "merits"}   # καλῶν
+    med.1.8.5.10: {gloss: "considering"}   # ἡγούμενον
+    med.1.8.5.11: {gloss: "the"}   # τὴν
+    med.1.8.5.12: {gloss: "experience"}   # ἐμπειρίαν
+    med.1.8.5.13: {gloss: "and"}   # καὶ
+    med.1.8.5.14: {gloss: "the"}   # τὴν
+    med.1.8.5.15: {gloss: "skill"}   # ἐντρέχειαν
+    med.1.8.5.16: {gloss: "the"}   # τὴν
+    med.1.8.5.17: {gloss: "in"}   # περὶ
+    med.1.8.5.18: {gloss: "the"}   # τὸ
+    med.1.8.5.19: {gloss: "transmitting"}   # παραδιδόναι
+    med.1.8.5.20: {gloss: "the"}   # τὰ
+    med.1.8.5.21: {gloss: "doctrines"}   # θεωρήματα
+    med.1.8.6.1: {gloss: "and"}   # καὶ
+    med.1.8.6.2: {gloss: "the"}   # τὸ
+    med.1.8.6.3: {gloss: "to-learn"}   # μαθεῖν
+    med.1.8.6.4: {gloss: "how"}   # πῶς
+    med.1.8.6.5: {gloss: "it-is-necessary"}   # δεῖ
+    med.1.8.6.6: {gloss: "to-receive"}   # λαμβάνειν
+    med.1.8.6.7: {gloss: "the"}   # τὰς
+    med.1.8.6.8: {gloss: "supposed"}   # δοκούσας
+    med.1.8.6.9: {gloss: "favors"}   # χάριτας
+    med.1.8.6.10: {gloss: "from"}   # παρὰ
+    med.1.8.6.11: {gloss: "friends"}   # φίλων
+    med.1.8.6.12: {gloss: "neither"}   # μήτε
+    med.1.8.6.13: {gloss: "being-worsted"}   # ἐξηττώμενον
+    med.1.8.6.14: {gloss: "on-account-of"}   # διὰ
+    med.1.8.6.15: {gloss: "them"}   # ταῦτα
+    med.1.8.6.16: {gloss: "nor"}   # μήτε
+    med.1.8.6.17: {gloss: "insensibly"}   # ἀναισθήτως
+    med.1.8.6.18: {gloss: "letting-pass"}   # παραπέμποντα
+    med.1.9.1.1: {gloss: "from"}   # Παρὰ
+    med.1.9.1.2: {gloss: "Sextus"}   # Σέξτου
+    med.1.9.1.3: {gloss: "the"}   # τὸ
+    med.1.9.1.4: {gloss: "kindliness"}   # εὐμενές
+    med.1.9.2.1: {gloss: "and"}   # καὶ
+    med.1.9.2.2: {gloss: "the"}   # τὸ
+    med.1.9.2.3: {gloss: "example"}   # παράδειγμα
+    med.1.9.2.4: {gloss: "of-the"}   # τοῦ
+    med.1.9.2.5: {gloss: "household"}   # οἴκου
+    med.1.9.2.6: {gloss: "the"}   # τοῦ
+    med.1.9.2.7: {gloss: "governed-in-fatherly-fashion"}   # πατρονομουμένου
+    med.1.9.3.1: {gloss: "and"}   # καὶ
+    med.1.9.3.2: {gloss: "the"}   # τὴν
+    med.1.9.3.3: {gloss: "idea"}   # ἔννοιαν
+    med.1.9.3.4: {gloss: "of-the"}   # τοῦ
+    med.1.9.3.5: {gloss: "according-to"}   # κατὰ
+    med.1.9.3.6: {gloss: "nature"}   # φύσιν
+    med.1.9.3.7: {gloss: "to-live"}   # ζῆν
+    med.1.9.4.1: {gloss: "and"}   # καὶ
+    med.1.9.4.2: {gloss: "the"}   # τὸ
+    med.1.9.4.3: {gloss: "dignity"}   # σεμνὸν
+    med.1.9.4.4: {gloss: "unaffectedly"}   # ἀπλάστως
+    med.1.9.5.1: {gloss: "and"}   # καὶ
+    med.1.9.5.2: {gloss: "the"}   # τὸ
+    med.1.9.5.3: {gloss: "attentiveness"}   # στοχαστικὸν
+    med.1.9.5.4: {gloss: "of-the"}   # τῶν
+    med.1.9.5.5: {gloss: "friends"}   # φίλων
+    med.1.9.5.6: {gloss: "solicitously"}   # κηδεμονικῶς
+    med.1.9.6.1: {gloss: "and"}   # καὶ
+    med.1.9.6.2: {gloss: "the"}   # τὸ
+    med.1.9.6.3: {gloss: "tolerance"}   # ἀνεκτικὸν
+    med.1.9.6.4: {gloss: "of-the"}   # τῶν
+    med.1.9.6.5: {gloss: "laymen"}   # ἰδιωτῶν
+    med.1.9.6.6: {gloss: "and"}   # καὶ
+    med.1.9.6.7: {gloss: "the"}   # τὸ
+    med.1.9.6.8: {gloss: "unexamined"}   # ἀθεώρητον
+    med.1.9.6.9: {gloss: "those-who-opine"}   # οἰομένων
+    med.1.9.7.1: {gloss: "and"}   # καὶ
+    med.1.9.7.2: {gloss: "the"}   # τὸ
+    med.1.9.7.3: {gloss: "towards"}   # πρὸς
+    med.1.9.7.4: {gloss: "all"}   # πάντας
+    med.1.9.7.5: {gloss: "adaptability"}   # εὐάρμοστον
+    med.1.9.7.6: {gloss: "so-that"}   # ὥστε
+    med.1.9.7.7: {gloss: "than-flattery"}   # κολακείας
+    med.1.9.7.8: {gloss: "on-one-hand"}   # μὲν
+    med.1.9.7.9: {gloss: "any"}   # πάσης
+    med.1.9.7.10: {gloss: "more-pleasing"}   # προσηνεστέραν
+    med.1.9.7.11: {gloss: "to-be"}   # εἶναι
+    med.1.9.7.12: {gloss: "the"}   # τὴν
+    med.1.9.7.13: {gloss: "company"}   # ὁμιλίαν
+    med.1.9.7.14: {gloss: "of-him"}   # αὐτοῦ
+    med.1.9.7.15: {gloss: "most-revered"}   # αἰδεσιμώτατον
+    med.1.9.7.16: {gloss: "but"}   # δὲ
+    med.1.9.7.17: {gloss: "by-the-very"}   # αὐτοῖς
+    med.1.9.7.18: {gloss: "those"}   # ἐκείνοις
+    med.1.9.7.19: {gloss: "at"}   # παρ’
+    med.1.9.7.20: {gloss: "very"}   # αὐτὸν
+    med.1.9.7.21: {gloss: "that"}   # ἐκεῖνον
+    med.1.9.7.22: {gloss: "the"}   # τὸν
+    med.1.9.7.23: {gloss: "time"}   # καιρὸν
+    med.1.9.7.24: {gloss: "to-be"}   # εἶναι
+    med.1.9.8.1: {gloss: "and"}   # καὶ
+    med.1.9.8.2: {gloss: "the"}   # τὸ
+    med.1.9.8.3: {gloss: "with-sure-grasp"}   # καταληπτικῶς
+    med.1.9.8.4: {gloss: "and"}   # καὶ
+    med.1.9.8.5: {gloss: "by-method"}   # ὁδῷ
+    med.1.9.8.6: {gloss: "discovering"}   # ἐξευρετικόν
+    med.1.9.8.7: {gloss: "both"}   # τε
+    med.1.9.8.8: {gloss: "and"}   # καὶ
+    med.1.9.8.9: {gloss: "ordering"}   # τακτικὸν
+    med.1.9.8.10: {gloss: "of-the"}   # τῶν
+    med.1.9.8.11: {gloss: "for"}   # εἰς
+    med.1.9.8.12: {gloss: "life"}   # βίον
+    med.1.9.8.13: {gloss: "necessary"}   # ἀναγκαίων
+    med.1.9.8.14: {gloss: "principles"}   # δογμάτων
+    med.1.9.9.1: {gloss: "and"}   # καὶ
+    med.1.9.9.2: {gloss: "the"}   # τὸ
+    med.1.9.9.3: {gloss: "not-even"}   # μηδὲ
+    med.1.9.9.4: {gloss: "an-appearance"}   # ἔμφασίν
+    med.1.9.9.5: {gloss: "ever"}   # ποτε
+    med.1.9.9.6: {gloss: "of-anger"}   # ὀργῆς
+    med.1.9.9.7: {gloss: "or"}   # ἢ
+    med.1.9.9.8: {gloss: "of-other"}   # ἄλλου
+    med.1.9.9.9: {gloss: "any"}   # τινὸς
+    med.1.9.9.10: {gloss: "passion"}   # πάθους
+    med.1.9.9.11: {gloss: "to-give"}   # παρασχεῖν
+    med.1.9.9.12: {gloss: "but"}   # ἀλλὰ
+    med.1.9.9.13: {gloss: "at-once"}   # ἅμα
+    med.1.9.9.14: {gloss: "on-one-hand"}   # μὲν
+    med.1.9.9.15: {gloss: "most-free-from-passion"}   # ἀπαθέστατον
+    med.1.9.9.16: {gloss: "to-be"}   # εἶναι
+    med.1.9.9.17: {gloss: "at-once"}   # ἅμα
+    med.1.9.9.18: {gloss: "and"}   # δὲ
+    med.1.9.9.19: {gloss: "most-affectionate"}   # φιλοστοργότατον
+    med.1.9.10.1: {gloss: "and"}   # καὶ
+    med.1.9.10.2: {gloss: "the"}   # τὸ
+    med.1.9.10.3: {gloss: "approval"}   # εὔφημον
+    med.1.9.10.4: {gloss: "noiselessly"}   # ἀψοφητὶ
+    med.1.9.10.5: {gloss: "and"}   # καὶ
+    med.1.9.10.6: {gloss: "the"}   # τὸ
+    med.1.9.10.7: {gloss: "much-learning"}   # πολυμαθὲς
+    med.1.9.10.8: {gloss: "unostentatiously"}   # ἀνεπιφάντως
+    med.1.10.1.1: {gloss: "from"}   # Παρὰ
+    med.1.10.1.2: {gloss: "Alexander"}   # Ἀλεξάνδρου
+    med.1.10.1.3: {gloss: "the"}   # τοῦ
+    med.1.10.1.4: {gloss: "grammarian"}   # γραμματικοῦ
+    med.1.10.1.5: {gloss: "the"}   # τὸ
+    med.1.10.1.6: {gloss: "not-finding-fault"}   # ἀνεπίπληκτον
+    med.1.10.1.7: {gloss: "and"}   # καὶ
+    med.1.10.1.8: {gloss: "the"}   # τὸ
+    med.1.10.1.9: {gloss: "not"}   # μὴ
+    med.1.10.1.10: {gloss: "reproachfully"}   # ὀνειδιστικῶς
+    med.1.10.1.11: {gloss: "to-pounce-on"}   # ἐπιλαμβάνεσθαι
+    med.1.10.1.12: {gloss: "those"}   # τῶν
+    med.1.10.1.13: {gloss: "barbarous"}   # βάρβαρον
+    med.1.10.1.14: {gloss: "or"}   # ἢ
+    med.1.10.1.15: {gloss: "ungrammatical"}   # σόλοικόν
+    med.1.10.1.16: {gloss: "something"}   # τι
+    med.1.10.1.17: {gloss: "or"}   # ἢ
+    med.1.10.1.18: {gloss: "harsh-sounding"}   # ἀπηχὲς
+    med.1.10.1.19: {gloss: "who-uttered"}   # προενεγκαμένων
+    med.1.10.1.20: {gloss: "but"}   # ἀλλ’
+    med.1.10.1.21: {gloss: "dexterously"}   # ἐπιδεξίως
+    med.1.10.1.22: {gloss: "just"}   # αὐτὸ
+    med.1.10.1.23: {gloss: "only"}   # μόνον
+    med.1.10.1.24: {gloss: "that"}   # ἐκεῖνο
+    med.1.10.1.25: {gloss: "which"}   # ὃ
+    med.1.10.1.26: {gloss: "it-was-necessary"}   # ἔδει
+    med.1.10.1.27: {gloss: "to-have-been-said"}   # εἰρῆσθαι
+    med.1.10.1.28: {gloss: "to-introduce"}   # προφέρεσθαι
+    med.1.10.1.29: {gloss: "in"}   # ἐν
+    med.1.10.1.30: {gloss: "way"}   # τρόπῳ
+    med.1.10.1.31: {gloss: "of-answer"}   # ἀποκρίσεως
+    med.1.10.1.32: {gloss: "or"}   # ἢ
+    med.1.10.1.33: {gloss: "of-joint-confirmation"}   # συνεπιμαρτυρήσεως
+    med.1.10.1.34: {gloss: "or"}   # ἢ
+    med.1.10.1.35: {gloss: "of-joint-inquiry"}   # συνδιαλήψεως
+    med.1.10.1.36: {gloss: "about"}   # περὶ
+    med.1.10.1.37: {gloss: "very"}   # αὐτοῦ
+    med.1.10.1.38: {gloss: "the"}   # τοῦ
+    med.1.10.1.39: {gloss: "matter"}   # πράγματος
+    med.1.10.2.1: {gloss: "not"}   # οὐχὶ
+    med.1.10.2.2: {gloss: "about"}   # περὶ
+    med.1.10.2.3: {gloss: "the"}   # τοῦ
+    med.1.10.2.4: {gloss: "word"}   # ῥήματος
+    med.1.10.2.5: {gloss: "or"}   # ἢ
+    med.1.10.2.6: {gloss: "through"}   # δι’
+    med.1.10.2.7: {gloss: "other"}   # ἑτέρας
+    med.1.10.2.8: {gloss: "some"}   # τινὸς
+    med.1.10.2.9: {gloss: "such"}   # τοιαύτης
+    med.1.10.2.10: {gloss: "apt"}   # ἐμμελοῦς
+    med.1.10.2.11: {gloss: "reminder"}   # παρυπομνήσεως
+    med.1.11.1.1: {gloss: "from"}   # Παρὰ
+    med.1.11.1.2: {gloss: "Fronto"}   # Φρόντωνος
+    med.1.11.1.3: {gloss: "the"}   # τὸ
+    med.1.11.1.4: {gloss: "to-observe"}   # ἐπιστῆσαι
+    med.1.11.1.5: {gloss: "what-sort"}   # οἵα
+    med.1.11.1.6: {gloss: "the"}   # ἡ
+    med.1.11.1.7: {gloss: "tyrannical"}   # τυραννικὴ
+    med.1.11.1.8: {gloss: "envy"}   # βασκανία
+    med.1.11.1.9: {gloss: "and"}   # καὶ
+    med.1.11.1.10: {gloss: "duplicity"}   # ποικιλία
+    med.1.11.1.11: {gloss: "and"}   # καὶ
+    med.1.11.1.12: {gloss: "hypocrisy"}   # ὑπόκρισις
+    med.1.11.1.13: {gloss: "and"}   # καὶ
+    med.1.11.1.14: {gloss: "that"}   # ὅτι
+    med.1.11.1.15: {gloss: "as"}   # ὡς
+    med.1.11.1.16: {gloss: "on-the-whole"}   # ἐπίπαν
+    med.1.11.1.17: {gloss: "the"}   # οἱ
+    med.1.11.1.18: {gloss: "so-called"}   # καλούμενοι
+    med.1.11.1.19: {gloss: "these"}   # οὗτοι
+    med.1.11.1.20: {gloss: "among"}   # παρ’
+    med.1.11.1.21: {gloss: "us"}   # ἡμῖν
+    med.1.11.1.22: {gloss: "patricians"}   # εὐπατρίδαι
+    med.1.11.1.23: {gloss: "less-affectionate"}   # ἀστοργότεροί
+    med.1.11.1.24: {gloss: "somewhat"}   # πως
+    med.1.11.1.25: {gloss: "are"}   # εἰσί
+    med.1.12.1.1: {gloss: "from"}   # Παρὰ
+    med.1.12.1.2: {gloss: "Alexander"}   # Ἀλεξάνδρου
+    med.1.12.1.3: {gloss: "the"}   # τοῦ
+    med.1.12.1.4: {gloss: "Platonist"}   # Πλατωνικοῦ
+    med.1.12.1.5: {gloss: "the"}   # τὸ
+    med.1.12.1.6: {gloss: "not"}   # μὴ
+    med.1.12.1.7: {gloss: "often"}   # πολλάκις
+    med.1.12.1.8: {gloss: "nor"}   # μηδὲ
+    med.1.12.1.9: {gloss: "without"}   # χωρὶς
+    med.1.12.1.10: {gloss: "necessity"}   # ἀνάγκης
+    med.1.12.1.11: {gloss: "to-say"}   # λέγειν
+    med.1.12.1.12: {gloss: "to"}   # πρός
+    med.1.12.1.13: {gloss: "someone"}   # τινα
+    med.1.12.1.14: {gloss: "or"}   # ἢ
+    med.1.12.1.15: {gloss: "in"}   # ἐν
+    med.1.12.1.16: {gloss: "a-letter"}   # ἐπιστολῇ
+    med.1.12.1.17: {gloss: "to-write"}   # γράφειν
+    med.1.12.1.18: {gloss: "that"}   # ὅτι
+    med.1.12.1.19: {gloss: "without-leisure"}   # ἄσχολός
+    med.1.12.1.20: {gloss: "I-am"}   # εἰμι
+    med.1.12.1.21: {gloss: "nor"}   # μηδὲ
+    med.1.12.1.22: {gloss: "through"}   # διὰ
+    med.1.12.1.23: {gloss: "this"}   # τούτου
+    med.1.12.1.24: {gloss: "the"}   # τοῦ
+    med.1.12.1.25: {gloss: "manner"}   # τρόπου
+    med.1.12.1.26: {gloss: "continually"}   # συνεχῶς
+    med.1.12.1.27: {gloss: "to-decline"}   # παραιτεῖσθαι
+    med.1.12.1.28: {gloss: "the"}   # τὰ
+    med.1.12.1.29: {gloss: "according-to"}   # κατὰ
+    med.1.12.1.30: {gloss: "the"}   # τὰς
+    med.1.12.1.31: {gloss: "towards"}   # πρὸς
+    med.1.12.1.32: {gloss: "those"}   # τοὺς
+    med.1.12.1.33: {gloss: "living-with-one"}   # συμβιοῦντας
+    med.1.12.1.34: {gloss: "relations"}   # σχέσεις
+    med.1.12.1.35: {gloss: "duties"}   # καθήκοντα
+    med.1.12.1.36: {gloss: "pleading"}   # προβαλλόμενον
+    med.1.12.1.37: {gloss: "the"}   # τὰ
+    med.1.12.1.38: {gloss: "pressing"}   # περιεστῶτα
+    med.1.12.1.39: {gloss: "affairs"}   # πράγματα
+    med.1.13.1.1: {gloss: "from"}   # Παρὰ
+    med.1.13.1.2: {gloss: "Catulus"}   # Κατούλου
+    med.1.13.1.3: {gloss: "the"}   # τὸ
+    med.1.13.1.4: {gloss: "not"}   # μὴ
+    med.1.13.1.5: {gloss: "carelessly"}   # ὀλιγώρως
+    med.1.13.1.6: {gloss: "to-be"}   # ἔχειν
+    med.1.13.1.7: {gloss: "of-a-friend"}   # φίλου
+    med.1.13.1.8: {gloss: "finding-fault"}   # αἰτιωμένου
+    med.1.13.1.9: {gloss: "something"}   # τι
+    med.1.13.1.10: {gloss: "even-if"}   # κἂν
+    med.1.13.1.11: {gloss: "he-happens"}   # τύχῃ
+    med.1.13.1.12: {gloss: "unreasonably"}   # ἀλόγως
+    med.1.13.1.13: {gloss: "finding-fault"}   # αἰτιώμενος
+    med.1.13.1.14: {gloss: "but"}   # ἀλλὰ
+    med.1.13.1.15: {gloss: "to-try"}   # πειρᾶσθαι
+    med.1.13.2.1: {gloss: "to-restore"}   # ἀποκαθιστάναι
+    med.1.13.2.2: {gloss: "to"}   # ἐπὶ
+    med.1.13.2.3: {gloss: "the"}   # τὸ
+    med.1.13.2.4: {gloss: "usual-footing"}   # σύνηθες
+    med.1.13.3.1: {gloss: "and"}   # καὶ
+    med.1.13.3.2: {gloss: "the"}   # τὸ
+    med.1.13.3.3: {gloss: "about"}   # περὶ
+    med.1.13.3.4: {gloss: "the"}   # τῶν
+    med.1.13.3.5: {gloss: "teachers"}   # διδασκάλων
+    med.1.13.3.6: {gloss: "wholeheartedly"}   # ἐκθύμως
+    med.1.13.3.7: {gloss: "speaking-well"}   # εὔφημον
+    med.1.13.3.8: {gloss: "such-as"}   # οἷα
+    med.1.13.3.9: {gloss: "the-things"}   # τὰ
+    med.1.13.3.10: {gloss: "about"}   # περὶ
+    med.1.13.3.11: {gloss: "Domitius"}   # Δομιτίου
+    med.1.13.3.12: {gloss: "and"}   # καὶ
+    med.1.13.3.13: {gloss: "Athenodotus"}   # Ἀθηνοδότου
+    med.1.13.3.14: {gloss: "recorded"}   # ἀπομνημονευόμενα
+    med.1.13.4.1: {gloss: "and"}   # καὶ
+    med.1.13.4.2: {gloss: "the"}   # τὸ
+    med.1.13.4.3: {gloss: "towards"}   # περὶ
+    med.1.13.4.4: {gloss: "the"}   # τὰ
+    med.1.13.4.5: {gloss: "children"}   # τέκνα
+    med.1.13.4.6: {gloss: "truly"}   # ἀληθινῶς
+    med.1.13.4.7: {gloss: "loving"}   # ἀγαπητικόν
+    med.1.14.1.1: {gloss: "from"}   # Παρὰ
+    med.1.14.1.2: {gloss: "the"}   # τοῦ
+    med.1.14.1.3: {gloss: "brother"}   # ἀδελφοῦ
+    med.1.14.1.4: {gloss: "my"}   # μου
+    med.1.14.1.5: {gloss: "Severus"}   # Σεουήρου
+    med.1.14.1.6: {gloss: "the"}   # τὸ
+    med.1.14.1.7: {gloss: "love-of-family"}   # φιλοίκειον
+    med.1.14.1.8: {gloss: "and"}   # καὶ
+    med.1.14.1.9: {gloss: "love-of-truth"}   # φιλάληθες
+    med.1.14.1.10: {gloss: "and"}   # καὶ
+    med.1.14.1.11: {gloss: "love-of-justice"}   # φιλοδίκαιον
+    med.1.14.2.1: {gloss: "and"}   # καὶ
+    med.1.14.2.2: {gloss: "the"}   # τὸ
+    med.1.14.2.3: {gloss: "through"}   # δι’
+    med.1.14.2.4: {gloss: "him"}   # αὐτοῦ
+    med.1.14.2.5: {gloss: "to-know"}   # γνῶναι
+    med.1.14.2.6: {gloss: "Thrasea"}   # Θρασέαν
+    med.1.14.2.7: {gloss: "Helvidius"}   # Ἑλβίδιον
+    med.1.14.2.8: {gloss: "Cato"}   # Κάτωνα
+    med.1.14.2.9: {gloss: "Dio"}   # Δίωνα
+    med.1.14.2.10: {gloss: "Brutus"}   # Βροῦτον
+    med.1.14.2.11: {gloss: "and"}   # καὶ
+    med.1.14.2.12: {gloss: "an-idea"}   # φαντασίαν
+    med.1.14.2.13: {gloss: "to-receive"}   # λαβεῖν
+    med.1.14.2.14: {gloss: "of-a-state"}   # πολιτείας
+    med.1.14.2.15: {gloss: "with-equal-laws"}   # ἰσονόμου
+    med.1.14.2.16: {gloss: "according-to"}   # κατ’
+    med.1.14.2.17: {gloss: "equality"}   # ἰσότητα
+    med.1.14.2.18: {gloss: "and"}   # καὶ
+    med.1.14.2.19: {gloss: "equal-speech"}   # ἰσηγορίαν
+    med.1.14.2.20: {gloss: "administered"}   # διοικουμένης
+    med.1.14.2.21: {gloss: "and"}   # καὶ
+    med.1.14.2.22: {gloss: "of-a-kingship"}   # βασιλείας
+    med.1.14.2.23: {gloss: "honoring"}   # τιμώσης
+    med.1.14.2.24: {gloss: "of-all"}   # πάντων
+    med.1.14.2.25: {gloss: "most"}   # μάλιστα
+    med.1.14.2.26: {gloss: "the"}   # τὴν
+    med.1.14.2.27: {gloss: "freedom"}   # ἐλευθερίαν
+    med.1.14.2.28: {gloss: "of-the"}   # τῶν
+    med.1.14.2.29: {gloss: "ruled"}   # ἀρχομένων
+    med.1.14.3.1: {gloss: "and"}   # καὶ
+    med.1.14.3.2: {gloss: "further"}   # ἔτι
+    med.1.14.3.3: {gloss: "from"}   # παρὰ
+    med.1.14.3.4: {gloss: "the"}   # τοῦ
+    med.1.14.3.5: {gloss: "same"}   # αὐτοῦ
+    med.1.14.3.6: {gloss: "the"}   # τὸ
+    med.1.14.3.7: {gloss: "evenness"}   # ὁμαλὲς
+    med.1.14.3.8: {gloss: "and"}   # καὶ
+    med.1.14.3.9: {gloss: "steadiness"}   # ὁμότονον
+    med.1.14.3.10: {gloss: "in"}   # ἐν
+    med.1.14.3.11: {gloss: "the"}   # τῇ
+    med.1.14.3.12: {gloss: "esteem"}   # τιμῇ
+    med.1.14.3.13: {gloss: "of-the"}   # τῆς
+    med.1.14.4.1: {gloss: "and"}   # καὶ
+    med.1.14.4.2: {gloss: "the"}   # τὸ
+    med.1.14.4.3: {gloss: "beneficence"}   # εὐποιητικὸν
+    med.1.14.4.4: {gloss: "and"}   # καὶ
+    med.1.14.4.5: {gloss: "the"}   # τὸ
+    med.1.14.4.6: {gloss: "liberality"}   # εὐμετάδοτον
+    med.1.14.4.7: {gloss: "readily"}   # ἐκτενῶς
+    med.1.14.4.8: {gloss: "and"}   # καὶ
+    med.1.14.4.9: {gloss: "the"}   # τὸ
+    med.1.14.4.10: {gloss: "hopefulness"}   # εὔελπι
+    med.1.14.4.11: {gloss: "and"}   # καὶ
+    med.1.14.4.12: {gloss: "the"}   # τὸ
+    med.1.14.4.13: {gloss: "trustfulness"}   # πιστευτικὸν
+    med.1.14.4.14: {gloss: "about"}   # περὶ
+    med.1.14.4.15: {gloss: "the"}   # τοῦ
+    med.1.14.4.16: {gloss: "by"}   # ὑπὸ
+    med.1.14.4.17: {gloss: "the"}   # τῶν
+    med.1.14.4.18: {gloss: "friends"}   # φίλων
+    med.1.14.4.19: {gloss: "to-be-loved"}   # φιλεῖσθαι
+    med.1.14.5.1: {gloss: "and"}   # καὶ
+    med.1.14.5.2: {gloss: "the"}   # τὸ
+    med.1.14.5.3: {gloss: "openness"}   # ἀνεπίκρυπτον
+    med.1.14.5.4: {gloss: "towards"}   # πρὸς
+    med.1.14.5.5: {gloss: "those"}   # τοὺς
+    med.1.14.5.6: {gloss: "censure"}   # καταγνώσεως
+    med.1.14.5.7: {gloss: "by"}   # ὑπ’
+    med.1.14.5.8: {gloss: "him"}   # αὐτοῦ
+    med.1.14.5.9: {gloss: "meeting-with"}   # τυγχάνοντας
+    med.1.14.6.1: {gloss: "and"}   # καὶ
+    med.1.14.6.2: {gloss: "the"}   # τὸ
+    med.1.14.6.3: {gloss: "not"}   # μὴ
+    med.1.14.6.4: {gloss: "to-need"}   # δεῖσθαι
+    med.1.14.6.5: {gloss: "conjecture"}   # στοχασμοῦ
+    med.1.14.6.6: {gloss: "the"}   # τοὺς
+    med.1.14.6.7: {gloss: "friends"}   # φίλους
+    med.1.14.6.8: {gloss: "of-him"}   # αὐτοῦ
+    med.1.14.6.9: {gloss: "about"}   # περὶ
+    med.1.14.6.10: {gloss: "the"}   # τοῦ
+    med.1.14.6.11: {gloss: "what"}   # τί
+    med.1.14.6.12: {gloss: "he-wants"}   # θέλει
+    med.1.14.6.13: {gloss: "or"}   # ἢ
+    med.1.14.6.14: {gloss: "what"}   # τί
+    med.1.14.6.15: {gloss: "not"}   # οὐ
+    med.1.14.6.16: {gloss: "he-wants"}   # θέλει
+    med.1.14.6.17: {gloss: "but"}   # ἀλλὰ
+    med.1.14.6.18: {gloss: "clear"}   # δῆλον
+    med.1.14.6.19: {gloss: "to-be"}   # εἶναι
+    med.1.15.1.1: {gloss: "from"}   # Παρὰ
+    med.1.15.1.2: {gloss: "Maximus"}   # Μαξίμου
+    med.1.15.1.3: {gloss: "the"}   # τὸ
+    med.1.15.1.4: {gloss: "to-master"}   # κρατεῖν
+    med.1.15.1.5: {gloss: "himself"}   # ἑαυτοῦ
+    med.1.15.1.6: {gloss: "and"}   # καὶ
+    med.1.15.1.7: {gloss: "in"}   # κατὰ
+    med.1.15.1.8: {gloss: "nothing"}   # μηδὲν
+    med.1.15.1.9: {gloss: "carried-about"}   # περίφορον
+    med.1.15.1.10: {gloss: "to-be"}   # εἶναι
+    med.1.15.2.1: {gloss: "and"}   # καὶ
+    med.1.15.2.2: {gloss: "the"}   # τὸ
+    med.1.15.2.3: {gloss: "cheerfulness"}   # εὔθυμον
+    med.1.15.2.4: {gloss: "in"}   # ἔν
+    med.1.15.2.5: {gloss: "both"}   # τε
+    med.1.15.2.6: {gloss: "the"}   # ταῖς
+    med.1.15.2.7: {gloss: "other"}   # ἄλλαις
+    med.1.15.2.8: {gloss: "circumstances"}   # περιστάσεσι
+    med.1.15.2.9: {gloss: "and"}   # καὶ
+    med.1.15.2.10: {gloss: "in"}   # ἐν
+    med.1.15.2.11: {gloss: "the"}   # ταῖς
+    med.1.15.2.12: {gloss: "illnesses"}   # νόσοις
+    med.1.15.3.1: {gloss: "and"}   # καὶ
+    med.1.15.3.2: {gloss: "the"}   # τὸ
+    med.1.15.3.3: {gloss: "good-blend"}   # εὔκρατον
+    med.1.15.3.4: {gloss: "of-the"}   # τοῦ
+    med.1.15.3.5: {gloss: "character"}   # ἤθους
+    med.1.15.3.6: {gloss: "and"}   # καὶ
+    med.1.15.3.7: {gloss: "sweetness"}   # μειλίχιον
+    med.1.15.3.8: {gloss: "and"}   # καὶ
+    med.1.15.3.9: {gloss: "dignity"}   # γεραρόν
+    med.1.15.4.1: {gloss: "and"}   # καὶ
+    med.1.15.4.2: {gloss: "the"}   # τὸ
+    med.1.15.4.3: {gloss: "not"}   # οὐ
+    med.1.15.4.4: {gloss: "complainingly"}   # σχετλίως
+    med.1.15.4.5: {gloss: "accomplishing"}   # κατεργαστικὸν
+    med.1.15.4.6: {gloss: "of-the"}   # τῶν
+    med.1.15.4.7: {gloss: "tasks-set-before"}   # προκειμένων
+    med.1.15.5.1: {gloss: "and"}   # καὶ
+    med.1.15.5.2: {gloss: "the"}   # τὸ
+    med.1.15.5.3: {gloss: "all"}   # πάντας
+    med.1.15.5.4: {gloss: "him"}   # αὐτῷ
+    med.1.15.5.5: {gloss: "to-believe"}   # πιστεύειν
+    med.1.15.5.6: {gloss: "about"}   # περὶ
+    med.1.15.5.7: {gloss: "what"}   # ὧν
+    med.1.15.5.8: {gloss: "he-might-say"}   # λέγοι
+    med.1.15.5.9: {gloss: "that"}   # ὅτι
+    med.1.15.5.10: {gloss: "so"}   # οὕτως
+    med.1.15.5.11: {gloss: "he-thinks"}   # φρονεῖ
+    med.1.15.5.12: {gloss: "and"}   # καὶ
+    med.1.15.5.13: {gloss: "about"}   # περὶ
+    med.1.15.5.14: {gloss: "what"}   # ὧν
+    med.1.15.5.15: {gloss: "he-might-do"}   # πράττοι
+    med.1.15.5.16: {gloss: "that"}   # ὅτι
+    med.1.15.5.17: {gloss: "not"}   # οὐ
+    med.1.15.5.18: {gloss: "badly"}   # κακῶς
+    med.1.15.5.19: {gloss: "he-does"}   # πράττει
+    med.1.15.6.1: {gloss: "and"}   # καὶ
+    med.1.15.6.2: {gloss: "the"}   # τὸ
+    med.1.15.6.3: {gloss: "not-wondering"}   # ἀθαύμαστον
+    med.1.15.6.4: {gloss: "and"}   # καὶ
+    med.1.15.6.5: {gloss: "not-startled"}   # ἀνέκπληκτον
+    med.1.15.6.6: {gloss: "and"}   # καὶ
+    med.1.15.6.7: {gloss: "nowhere"}   # μηδαμοῦ
+    med.1.15.6.8: {gloss: "hurrying"}   # ἐπειγόμενον
+    med.1.15.6.9: {gloss: "or"}   # ἢ
+    med.1.15.6.10: {gloss: "hesitating"}   # ὀκνοῦν
+    med.1.15.6.11: {gloss: "or"}   # ἢ
+    med.1.15.6.12: {gloss: "at-a-loss"}   # ἀμηχανοῦν
+    med.1.15.6.13: {gloss: "or"}   # ἢ
+    med.1.15.6.14: {gloss: "downcast"}   # κατηφὲς
+    med.1.15.6.15: {gloss: "or"}   # ἢ
+    med.1.15.6.16: {gloss: "grinning"}   # προσσεσηρός
+    med.1.15.6.17: {gloss: "or"}   # ἢ
+    med.1.15.6.18: {gloss: "again"}   # πάλιν
+    med.1.15.6.19: {gloss: "angry"}   # θυμούμενον
+    med.1.15.6.20: {gloss: "or"}   # ἢ
+    med.1.15.6.21: {gloss: "suspicious"}   # ὑφορώμενον
+    med.1.15.7.1: {gloss: "and"}   # καὶ
+    med.1.15.7.2: {gloss: "the"}   # τὸ
+    med.1.15.7.3: {gloss: "beneficence"}   # εὐεργετικὸν
+    med.1.15.7.4: {gloss: "and"}   # καὶ
+    med.1.15.7.5: {gloss: "the"}   # τὸ
+    med.1.15.7.6: {gloss: "readiness-to-forgive"}   # συγγνωμονικὸν
+    med.1.15.7.7: {gloss: "and"}   # καὶ
+    med.1.15.7.8: {gloss: "the"}   # τὸ
+    med.1.15.7.9: {gloss: "truthfulness"}   # ἀψευδές
+    med.1.15.8.1: {gloss: "and"}   # καὶ
+    med.1.15.8.2: {gloss: "the"}   # τὸ
+    med.1.15.8.3: {gloss: "of-an-undistorted-man"}   # ἀδιαστρόφου
+    med.1.15.8.4: {gloss: "rather"}   # μᾶλλον
+    med.1.15.8.5: {gloss: "than"}   # ἢ
+    med.1.15.8.6: {gloss: "of-one-being-corrected"}   # διορθουμένου
+    med.1.15.8.7: {gloss: "an-impression"}   # φαντασίαν
+    med.1.15.8.8: {gloss: "to-give"}   # παρέχειν
+    med.1.15.9.1: {gloss: "and"}   # καὶ
+    med.1.15.9.2: {gloss: "that"}   # ὅτι
+    med.1.15.9.3: {gloss: "neither"}   # οὔτε
+    med.1.15.9.4: {gloss: "thought"}   # ᾠήθη
+    med.1.15.9.5: {gloss: "would"}   # ἄν
+    med.1.15.9.6: {gloss: "ever"}   # ποτέ
+    med.1.15.9.7: {gloss: "anyone"}   # τις
+    med.1.15.9.8: {gloss: "to-be-despised"}   # ὑπερορᾶσθαι
+    med.1.15.9.9: {gloss: "by"}   # ὑπ’
+    med.1.15.9.10: {gloss: "him"}   # αὐτοῦ
+    med.1.15.9.11: {gloss: "nor"}   # οὔτε
+    med.1.15.9.12: {gloss: "endured"}   # ὑπέμεινεν
+    med.1.15.9.13: {gloss: "would"}   # ἂν
+    med.1.15.9.14: {gloss: "better"}   # κρείττονα
+    med.1.15.9.15: {gloss: "than-him"}   # αὐτοῦ
+    med.1.15.9.16: {gloss: "himself"}   # αὑτὸν
+    med.1.15.9.17: {gloss: "to-suppose"}   # ὑπολαβεῖν
+    med.1.15.10.1: {gloss: "and"}   # καὶ
+    med.1.15.10.2: {gloss: "the"}   # τὸ
+    med.1.15.10.3: {gloss: "to-jest-gracefully"}   # εὐχαριεντίζεσθαι
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-18
+  why: "corrections to the GLAUx automatic parse of 1.1-1.15: 118 of 853 tokens corrected (20 lemmas, 106 morph tags). Lemma errors: 6 lemmas that are not Greek words (γητών, ἐκτράπτω, ἀστειολόγιος, προαφέρω, ἀνεπίκρυπτω, ἀμηχανούω); 6 headwords with a wrong accent or breathing (Οὔηρος, Βακχείος, Ἀθηνοδότος, Σεόυηρος, ἀστόργος, ἰσονομος); 3 inflected forms given as the lemma (εὐπατρίδαι, εὔελπι, προσσεσηρός); 5 real but wrong lemmas (πάππης for πάππος, ἐπῳδός for ἐπῳδή, δορός for δορά, χαλεπαίνομαι for χαλεπαίνω, κρατύς for κρείσσων). Morph errors, counted per feature: case 79, gender 29, part of speech 10, number 5, tense 4, mood 3, voice 3. Most case errors (72 of 79) follow the book 1 convention: the τό heading each item of the list and the neuter adjective it governs are accusative, the object of the verb understood with Παρά (as Long supplies it, and as τὴν ἔννοιαν in 1.9.3 shows), and GLAUx tags them nominative, usually every item after the first. Other classes: superlative and other predicates of a person tagged neuter (1.9.7, 1.9.9, 1.12, 1.15.1); articles of articular infinitives tagged masculine (1.9.3, 1.14.4); participles in the neuter list of 1.15.6 tagged nominative or masculine; adverbial πρῶτον and τάχιστα tagged as adjectives. In 1.14.3 the text ends ἐν τῇ τιμῇ τῆς with no noun (Long reads 'for philosophy'); τῆς is glossed 'of-the' and left as tagged."
+  status: draft
+  set:
+    med.1.1.1.3: {lemma: πάππος}   # πάππου: lemma: πάππης is not the word; LSJ πάππος, grandfather
+    med.1.1.1.4: {lemma: Οὐῆρος}   # Οὐήρου: lemma accent: Verus, Οὐῆρος
+    med.1.3.2.3: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.3.2.4: {morph: a-s---na-}   # λιτὸν: list item, accusative (book 1 convention)
+    med.1.4.1.18: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.5.2.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.5.2.3: {morph: a-s---na-}   # φερέπονον: list item, accusative (book 1 convention)
+    med.1.5.2.5: {morph: a-s---na-}   # ὀλιγοδεές: list item, accusative (book 1 convention)
+    med.1.5.3.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.5.3.3: {morph: a-s---na-}   # αὐτουργικὸν: list item, accusative (book 1 convention)
+    med.1.5.3.5: {morph: a-s---na-}   # ἀπολύπραγμον: list item, accusative (book 1 convention)
+    med.1.5.4.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.5.4.3: {morph: a-s---na-}   # δυσπρόσδεκτον: list item, accusative (book 1 convention)
+    med.1.6.2.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.6.2.3: {morph: a-s---na-}   # ἀπιστητικὸν: list item, accusative (book 1 convention)
+    med.1.6.2.9: {lemma: γόης}   # γοήτων: lemma: γητών is not a Greek word; γόης, sorcerer
+    med.1.6.2.11: {lemma: ἐπῳδή, morph: n-p---fg-}   # ἐπῳδῶν: incantations: noun ἐπῳδή, not adjective ἐπῳδός
+    med.1.6.3.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.6.4.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.6.5.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.6.5.6: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.6.5.8: {morph: d--------}   # πρῶτον: adverbial πρῶτον, first, answered by εἶτα
+    med.1.6.5.10: {lemma: Βακχεῖος}   # Βακχείου: lemma accent: Βακχεῖος
+    med.1.6.6.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.6.6.6: {morph: n-s---md-}   # παιδί: παῖς refers to Marcus as a boy: masculine
+    med.1.6.7.3: {morph: n-s---mg-}   # σκίμποδος: σκίμπους is a noun, masculine
+    med.1.6.7.5: {lemma: δορά, morph: n-s---fg-}   # δορᾶς: genitive singular of δορά, hide, with ἐπιθυμῆσαι
+    med.1.6.7.8: {morph: p-p---na-}   # ὅσα: list item, accusative
+    med.1.6.7.9: {morph: a-p---na-}   # τοιαῦτα: agrees with ὅσα, accusative
+    med.1.6.7.13: {morph: v-pppena-}   # ἐχόμενα: agrees with ὅσα, accusative
+    med.1.7.2.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.7.2.4: {lemma: ἐκτρέπω}   # ἐκτραπῆναι: lemma: ἐκτραπῆναι is aorist passive of ἐκτρέπω
+    med.1.7.2.9: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.7.3.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.7.3.8: {lemma: ἀστειολογία, morph: n-s---fg-}   # ἀστειολογίας: noun ἀστειολογία, fine speaking, not an adjective
+    med.1.7.5.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.7.5.11: {morph: a-s---mg-}   # τούτου: this man, Rusticus, masculine
+    med.1.7.5.17: {morph: v-sappnn-}   # γραφέν: agrees with τὸ and οἷον, nominative
+    med.1.7.6.5: {lemma: χαλεπαίνω}   # χαλεπήναντας: lemma: active χαλεπαίνω, not a middle
+    med.1.7.6.12: {morph: d-------s}   # τάχιστα: adverb, ἐπειδὰν τάχιστα
+    med.1.7.7.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.7.7.12: {morph: v-pppamd-}   # περιλαλοῦσι: present participle, not aorist
+    med.1.7.8.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.8.2.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.8.2.4: {morph: a-s---na-}   # ὅμοιον: list item, accusative (book 1 convention)
+    med.1.8.3.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.8.3.5: {morph: v-sppang-}   # ζῶντος: agrees with neuter παραδείγματος
+    med.1.8.5.6: {morph: a-s---nas}   # ἐλάχιστον: neuter, the least of his merits
+    med.1.8.6.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.9.2.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.9.2.3: {morph: n-s---na-}   # παράδειγμα: list item, accusative
+    med.1.9.3.4: {morph: l-s---ng-}   # τοῦ: article of the infinitive ζῆν, neuter
+    med.1.9.4.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.9.4.3: {morph: a-s---na-}   # σεμνὸν: list item, accusative (book 1 convention)
+    med.1.9.5.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.9.5.3: {morph: a-s---na-}   # στοχαστικὸν: list item, accusative (book 1 convention)
+    med.1.9.7.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.9.7.5: {morph: a-s---na-}   # εὐάρμοστον: list item, accusative (book 1 convention)
+    med.1.9.7.15: {morph: a-s---mas}   # αἰδεσιμώτατον: predicate of Sextus, masculine
+    med.1.9.7.17: {morph: a-p---md-}   # αὐτοῖς: intensive with ἐκείνοις, masculine
+    med.1.9.9.15: {morph: a-s---mas}   # ἀπαθέστατον: predicate of the man, masculine
+    med.1.9.9.19: {morph: a-s---mas}   # φιλοστοργότατον: predicate of the man, masculine
+    med.1.9.10.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.9.10.3: {morph: a-s---na-}   # εὔφημον: list item, accusative (book 1 convention)
+    med.1.9.10.6: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.9.10.7: {morph: a-s---na-}   # πολυμαθὲς: list item, accusative (book 1 convention)
+    med.1.10.1.19: {lemma: προφέρω}   # προενεγκαμένων: lemma: προαφέρω is not a Greek word; προενεγκαμένων is aorist middle of προφέρω
+    med.1.10.2.8: {morph: a-s---fg-}   # τινὸς: agrees with feminine παρυπομνήσεως
+    med.1.11.1.22: {lemma: εὐπατρίδης, morph: n-p---mn-}   # εὐπατρίδαι: lemma is εὐπατρίδης; patricians, masculine
+    med.1.11.1.23: {lemma: ἄστοργος}   # ἀστοργότεροί: lemma accent: ἄστοργος
+    med.1.12.1.19: {morph: a-s---mn-}   # ἄσχολός: the speaker, masculine
+    med.1.12.1.35: {morph: v-pppana-}   # καθήκοντα: neuter plural with τὰ, duties
+    med.1.13.3.13: {lemma: Ἀθηνόδοτος}   # Ἀθηνοδότου: lemma accent: Ἀθηνόδοτος
+    med.1.14.1.5: {lemma: Σεουῆρος}   # Σεουήρου: lemma accent and breathing: Σεουῆρος
+    med.1.14.2.15: {lemma: ἰσόνομος}   # ἰσονόμου: lemma accent: ἰσόνομος
+    med.1.14.3.4: {morph: l-s---mg-}   # τοῦ: τοῦ αὐτοῦ, the same man, masculine
+    med.1.14.3.5: {morph: a-s---mg-}   # αὐτοῦ: the same man, masculine
+    med.1.14.3.6: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.14.3.7: {morph: a-s---na-}   # ὁμαλὲς: list item, accusative (book 1 convention)
+    med.1.14.3.9: {morph: a-s---na-}   # ὁμότονον: list item, accusative (book 1 convention)
+    med.1.14.4.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.14.4.3: {morph: a-s---na-}   # εὐποιητικὸν: list item, accusative (book 1 convention)
+    med.1.14.4.5: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.14.4.6: {morph: a-s---na-}   # εὐμετάδοτον: list item, accusative (book 1 convention)
+    med.1.14.4.9: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.14.4.10: {lemma: εὔελπις, morph: a-s---na-}   # εὔελπι: neuter of the adjective εὔελπις, not a verb
+    med.1.14.4.15: {morph: l-s---ng-}   # τοῦ: article of the infinitive φιλεῖσθαι, neuter
+    med.1.14.5.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.14.5.3: {lemma: ἀνεπίκρυπτος, morph: a-s---na-}   # ἀνεπίκρυπτον: adjective ἀνεπίκρυπτος, openness; ἀνεπίκρυπτω is not a word
+    med.1.14.6.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.14.6.18: {morph: a-s---na-}   # δῆλον: predicate in the infinitive clause, accusative
+    med.1.15.1.9: {morph: a-s---ma-}   # περίφορον: predicate of the person, masculine
+    med.1.15.2.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.15.2.3: {morph: a-s---na-}   # εὔθυμον: list item, accusative (book 1 convention)
+    med.1.15.3.7: {morph: a-s---na-}   # μειλίχιον: coordinated with τὸ εὔκρατον, neuter
+    med.1.15.3.9: {morph: a-s---na-}   # γεραρόν: coordinated with τὸ εὔκρατον, neuter
+    med.1.15.4.5: {morph: a-s---na-}   # κατεργαστικὸν: agrees with τὸ, list item, accusative
+    med.1.15.5.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.15.5.4: {morph: p-s---md-}   # αὐτῷ: Maximus, masculine
+    med.1.15.6.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.15.6.3: {morph: a-s---na-}   # ἀθαύμαστον: list item, accusative (book 1 convention)
+    med.1.15.6.5: {morph: a-s---na-}   # ἀνέκπληκτον: list item, accusative (book 1 convention)
+    med.1.15.6.8: {morph: v-sppena-}   # ἐπειγόμενον: neuter with τὸ, accusative
+    med.1.15.6.10: {morph: v-sppana-}   # ὀκνοῦν: neuter, accusative
+    med.1.15.6.12: {lemma: ἀμηχανέω, morph: v-sppana-}   # ἀμηχανοῦν: lemma: ἀμηχανούω is not a word; ἀμηχανέω
+    med.1.15.6.14: {morph: a-s---na-}   # κατηφὲς: neuter, accusative
+    med.1.15.6.16: {lemma: προσσαίρω, morph: v-srpana-}   # προσσεσηρός: perfect participle of προσσαίρω, grin
+    med.1.15.6.19: {morph: v-sppena-}   # θυμούμενον: neuter with τὸ, accusative
+    med.1.15.6.21: {morph: v-sppena-}   # ὑφορώμενον: neuter with τὸ, accusative
+    med.1.15.7.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.15.7.3: {morph: a-s---na-}   # εὐεργετικὸν: list item, accusative (book 1 convention)
+    med.1.15.7.5: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.15.7.6: {morph: a-s---na-}   # συγγνωμονικὸν: list item, accusative (book 1 convention)
+    med.1.15.7.8: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+    med.1.15.7.9: {morph: a-s---na-}   # ἀψευδές: list item, accusative (book 1 convention)
+    med.1.15.8.3: {morph: a-s---mg-}   # ἀδιαστρόφου: substantive adjective, not a noun
+    med.1.15.9.14: {lemma: κρείσσων}   # κρείττονα: lemma: κρείττων is the comparative κρείσσων, not κρατύς
+    med.1.15.10.2: {morph: l-s---na-}   # τὸ: list item, accusative (book 1 convention)
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-18
+  why: "Book 1, section 1.16: literal word-for-word gloss, same conventions as book 2"
+  status: draft
+  set:
+    med.1.16.1.1: {gloss: "from"}   # Παρὰ
+    med.1.16.1.2: {gloss: "the"}   # τοῦ
+    med.1.16.1.3: {gloss: "father"}   # πατρὸς
+    med.1.16.1.4: {gloss: "the"}   # τὸ
+    med.1.16.1.5: {gloss: "gentleness"}   # ἥμερον
+    med.1.16.1.6: {gloss: "and"}   # καὶ
+    med.1.16.1.7: {gloss: "steadfastness"}   # μενετικὸν
+    med.1.16.1.8: {gloss: "unshakably"}   # ἀσαλεύτως
+    med.1.16.1.9: {gloss: "in"}   # ἐπὶ
+    med.1.16.1.10: {gloss: "the-things"}   # τῶν
+    med.1.16.1.11: {gloss: "after-examination"}   # ἐξητασμένως
+    med.1.16.1.12: {gloss: "judged"}   # κριθέντων
+    med.1.16.2.1: {gloss: "and"}   # καὶ
+    med.1.16.2.2: {gloss: "the"}   # τὸ
+    med.1.16.2.3: {gloss: "indifference-to-vainglory"}   # ἀκενόδοξον
+    med.1.16.2.4: {gloss: "concerning"}   # περὶ
+    med.1.16.2.5: {gloss: "the"}   # τὰς
+    med.1.16.2.6: {gloss: "seeming"}   # δοκούσας
+    med.1.16.2.7: {gloss: "honors"}   # τιμάς
+    med.1.16.3.1: {gloss: "and"}   # καὶ
+    med.1.16.3.2: {gloss: "the"}   # τὸ
+    med.1.16.3.3: {gloss: "love-of-labor"}   # φιλόπονον
+    med.1.16.3.4: {gloss: "and"}   # καὶ
+    med.1.16.3.5: {gloss: "perseverance"}   # ἐνδελεχές
+    med.1.16.4.1: {gloss: "and"}   # καὶ
+    med.1.16.4.2: {gloss: "the"}   # τὸ
+    med.1.16.4.3: {gloss: "readiness-to-listen"}   # ἀκουστικὸν
+    med.1.16.4.4: {gloss: "to-those"}   # τῶν
+    med.1.16.4.5: {gloss: "able"}   # ἐχόντων
+    med.1.16.4.6: {gloss: "something"}   # τι
+    med.1.16.4.7: {gloss: "of-common-benefit"}   # κοινωφελὲς
+    med.1.16.4.8: {gloss: "to-contribute"}   # εἰσφέρειν
+    med.1.16.5.1: {gloss: "and"}   # καὶ
+    med.1.16.5.2: {gloss: "the"}   # τὸ
+    med.1.16.5.3: {gloss: "unswervingly"}   # ἀπαρατρέπτως
+    med.1.16.5.4: {gloss: "the"}   # τοῦ
+    med.1.16.5.5: {gloss: "according-to"}   # κατ’
+    med.1.16.5.6: {gloss: "worth"}   # ἀξίαν
+    med.1.16.5.7: {gloss: "assigning"}   # ἀπονεμητικὸν
+    med.1.16.5.8: {gloss: "to-each"}   # ἑκάστῳ
+    med.1.16.6.1: {gloss: "and"}   # καὶ
+    med.1.16.6.2: {gloss: "the"}   # τὸ
+    med.1.16.6.3: {gloss: "experience"}   # ἔμπειρον
+    med.1.16.6.4: {gloss: "where"}   # ποῦ
+    med.1.16.6.5: {gloss: "on-one-hand"}   # μὲν
+    med.1.16.6.6: {gloss: "need"}   # χρεία
+    med.1.16.6.7: {gloss: "of-tension"}   # ἐντάσεως
+    med.1.16.6.8: {gloss: "where"}   # ποῦ
+    med.1.16.6.9: {gloss: "on-the-other"}   # δὲ
+    med.1.16.6.10: {gloss: "of-relaxation"}   # ἀνέσεως
+    med.1.16.7.1: {gloss: "and"}   # καὶ
+    med.1.16.7.2: {gloss: "the"}   # τὸ
+    med.1.16.7.3: {gloss: "to-put-a-stop-to"}   # παῦσαι
+    med.1.16.7.4: {gloss: "the-things"}   # τὰ
+    med.1.16.7.5: {gloss: "concerning"}   # περὶ
+    med.1.16.7.6: {gloss: "the"}   # τοὺς
+    med.1.16.7.7: {gloss: "love-affairs"}   # ἔρωτας
+    med.1.16.7.8: {gloss: "of-the"}   # τῶν
+    med.1.16.7.9: {gloss: "youths"}   # μειρακίων
+    med.1.16.8.1: {gloss: "and"}   # καὶ
+    med.1.16.8.2: {gloss: "the"}   # ἡ
+    med.1.16.8.3: {gloss: "community-feeling"}   # κοινονοημοσύνη
+    med.1.16.8.4: {gloss: "and"}   # καὶ
+    med.1.16.8.5: {gloss: "the"}   # τὸ
+    med.1.16.8.6: {gloss: "having-permitted"}   # ἐφεῖσθαι
+    med.1.16.8.7: {gloss: "to-the"}   # τοῖς
+    med.1.16.8.8: {gloss: "friends"}   # φίλοις
+    med.1.16.8.9: {gloss: "neither"}   # μήτε
+    med.1.16.8.10: {gloss: "to-dine-with"}   # συνδειπνεῖν
+    med.1.16.8.11: {gloss: "him"}   # αὐτῷ
+    med.1.16.8.12: {gloss: "at-all-costs"}   # πάντως
+    med.1.16.8.13: {gloss: "nor"}   # μήτε
+    med.1.16.8.14: {gloss: "to-travel-abroad-with-him"}   # συναποδημεῖν
+    med.1.16.8.15: {gloss: "of-necessity"}   # ἐπάναγκες
+    med.1.16.8.16: {gloss: "always"}   # ἀεὶ
+    med.1.16.8.17: {gloss: "but"}   # δὲ
+    med.1.16.8.18: {gloss: "the-same"}   # ὅμοιον
+    med.1.16.8.19: {gloss: "him"}   # αὐτὸν
+    med.1.16.8.20: {gloss: "to-be-found"}   # καταλαμβάνεσθαι
+    med.1.16.8.21: {gloss: "by"}   # ὑπὸ
+    med.1.16.8.22: {gloss: "those"}   # τῶν
+    med.1.16.8.23: {gloss: "because-of"}   # διὰ
+    med.1.16.8.24: {gloss: "needs"}   # χρείας
+    med.1.16.8.25: {gloss: "some"}   # τινὰς
+    med.1.16.8.26: {gloss: "having-stayed-behind"}   # ἀπολειφθέντων
+    med.1.16.9.1: {gloss: "and"}   # καὶ
+    med.1.16.9.2: {gloss: "the"}   # τὸ
+    med.1.16.9.3: {gloss: "inquiring"}   # ζητητικὸν
+    med.1.16.9.4: {gloss: "precisely"}   # ἀκριβῶς
+    med.1.16.9.5: {gloss: "in"}   # ἐν
+    med.1.16.9.6: {gloss: "the"}   # τοῖς
+    med.1.16.9.7: {gloss: "councils"}   # συμβουλίοις
+    med.1.16.9.8: {gloss: "and"}   # καὶ
+    med.1.16.9.9: {gloss: "persistence"}   # ἐπίμονον
+    med.1.16.9.10: {gloss: "and"}   # ἀλλ’
+    med.1.16.9.11: {gloss: "not"}   # οὐ
+    med.1.16.9.12: {gloss: "the"}   # τὸ
+    med.1.16.9.13: {gloss: "he-desisted-early"}   # προαπέστη
+    med.1.16.9.14: {gloss: "from-the"}   # τῆς
+    med.1.16.9.15: {gloss: "inquiry"}   # ἐρεύνης
+    med.1.16.9.16: {gloss: "being-content"}   # ἀρκεσθεὶς
+    med.1.16.9.17: {gloss: "with-the"}   # ταῖς
+    med.1.16.9.18: {gloss: "ready-to-hand"}   # προχείροις
+    med.1.16.9.19: {gloss: "impressions"}   # φαντασίαις
+    med.1.16.10.1: {gloss: "and"}   # καὶ
+    med.1.16.10.2: {gloss: "the"}   # τὸ
+    med.1.16.10.3: {gloss: "keeping"}   # διατηρητικὸν
+    med.1.16.10.4: {gloss: "of-the"}   # τῶν
+    med.1.16.10.5: {gloss: "friends"}   # φίλων
+    med.1.16.10.6: {gloss: "and"}   # καὶ
+    med.1.16.10.7: {gloss: "never"}   # μηδαμοῦ
+    med.1.16.10.8: {gloss: "quickly-sated"}   # ἁψίκορον
+    med.1.16.10.9: {gloss: "nor"}   # μηδὲ
+    med.1.16.10.10: {gloss: "infatuated"}   # ἐπιμανές
+    med.1.16.11.1: {gloss: "and"}   # καὶ
+    med.1.16.11.2: {gloss: "the"}   # τὸ
+    med.1.16.11.3: {gloss: "self-sufficiency"}   # αὔταρκες
+    med.1.16.11.4: {gloss: "in"}   # ἐν
+    med.1.16.11.5: {gloss: "everything"}   # παντὶ
+    med.1.16.11.6: {gloss: "and"}   # καὶ
+    med.1.16.11.7: {gloss: "the"}   # τὸ
+    med.1.16.11.8: {gloss: "cheerfulness"}   # φαιδρόν
+    med.1.16.12.1: {gloss: "and"}   # καὶ
+    med.1.16.12.2: {gloss: "the"}   # τὸ
+    med.1.16.12.3: {gloss: "from-afar"}   # πόρρωθεν
+    med.1.16.12.4: {gloss: "foreseeing"}   # προνοητικὸν
+    med.1.16.12.5: {gloss: "and"}   # καὶ
+    med.1.16.12.6: {gloss: "of-the"}   # τῶν
+    med.1.16.12.7: {gloss: "smallest-things"}   # ἐλαχίστων
+    med.1.16.12.8: {gloss: "providing-in-advance"}   # προδιοικητικὸν
+    med.1.16.12.9: {gloss: "without-fuss"}   # ἀτραγῴδως
+    med.1.16.13.1: {gloss: "and"}   # καὶ
+    med.1.16.13.2: {gloss: "the"}   # τὸ
+    med.1.16.13.3: {gloss: "the"}   # τὰς
+    med.1.16.13.4: {gloss: "acclamations"}   # ἐπιβοήσεις
+    med.1.16.13.5: {gloss: "and"}   # καὶ
+    med.1.16.13.6: {gloss: "all"}   # πᾶσαν
+    med.1.16.13.7: {gloss: "flattery"}   # κολακείαν
+    med.1.16.13.8: {gloss: "in-his-time"}   # ἐπ’
+    med.1.16.13.9: {gloss: "him"}   # αὐτοῦ
+    med.1.16.13.10: {gloss: "to-have-been-checked"}   # συσταλῆναν
+    med.1.16.13.11: {gloss: "and"}   # καὶ
+    med.1.16.13.12: {gloss: "the"}   # τὸ
+    med.1.16.13.13: {gloss: "guarding"}   # φυλακτικὸν
+    med.1.16.13.14: {gloss: "always"}   # ἀεὶ
+    med.1.16.13.15: {gloss: "of-the"}   # τῶν
+    med.1.16.13.16: {gloss: "necessities"}   # ἀναγκαίων
+    med.1.16.13.17: {gloss: "for-the"}   # τῇ
+    med.1.16.13.18: {gloss: "rule"}   # ἀρχῇ
+    med.1.16.13.19: {gloss: "and"}   # καὶ
+    med.1.16.13.20: {gloss: "sparing"}   # ταμιευτικὸν
+    med.1.16.13.21: {gloss: "of-the"}   # τῆς
+    med.1.16.13.22: {gloss: "expenditure"}   # χορηγίας
+    med.1.16.13.23: {gloss: "and"}   # καὶ
+    med.1.16.13.24: {gloss: "patient-enduring"}   # ὑπομενετικὸν
+    med.1.16.13.25: {gloss: "of-the"}   # τῆς
+    med.1.16.13.26: {gloss: "for"}   # ἐπὶ
+    med.1.16.13.27: {gloss: "the"}   # τῶν
+    med.1.16.13.28: {gloss: "such-things"}   # τοιούτων
+    med.1.16.13.29: {gloss: "of-some"}   # τινῶν
+    med.1.16.13.30: {gloss: "blame"}   # καταιτιάσεως
+    med.1.16.14.1: {gloss: "and"}   # καὶ
+    med.1.16.14.2: {gloss: "the"}   # τὸ
+    med.1.16.14.3: {gloss: "neither"}   # μήτε
+    med.1.16.14.4: {gloss: "concerning"}   # περὶ
+    med.1.16.14.5: {gloss: "gods"}   # θεοὺς
+    med.1.16.14.6: {gloss: "superstitious"}   # δεισίδαιμον
+    med.1.16.14.7: {gloss: "nor"}   # μήτε
+    med.1.16.14.8: {gloss: "concerning"}   # περὶ
+    med.1.16.14.9: {gloss: "men"}   # ἀνθρώπους
+    med.1.16.14.10: {gloss: "courting-the-people"}   # δημοκοπικὸν
+    med.1.16.14.11: {gloss: "or"}   # ἢ
+    med.1.16.14.12: {gloss: "people-pleasing"}   # ἀρεσκευτικὸν
+    med.1.16.14.13: {gloss: "or"}   # ἢ
+    med.1.16.14.14: {gloss: "crowd-courting"}   # ὀχλοχαρές
+    med.1.16.14.15: {gloss: "but"}   # ἀλλὰ
+    med.1.16.14.16: {gloss: "sober"}   # νῆφον
+    med.1.16.14.17: {gloss: "in"}   # ἐν
+    med.1.16.14.18: {gloss: "all-things"}   # πᾶσι
+    med.1.16.14.19: {gloss: "and"}   # καὶ
+    med.1.16.14.20: {gloss: "steady"}   # βέβαιον
+    med.1.16.14.21: {gloss: "and"}   # καὶ
+    med.1.16.14.22: {gloss: "never"}   # μηδαμοῦ
+    med.1.16.14.23: {gloss: "vulgar"}   # ἀπειρόκαλον
+    med.1.16.14.24: {gloss: "nor"}   # μηδὲ
+    med.1.16.14.25: {gloss: "innovating"}   # καινοτόμον
+    med.1.16.15.1: {gloss: "and"}   # καὶ
+    med.1.16.15.2: {gloss: "the"}   # τὸ
+    med.1.16.15.3: {gloss: "the-things"}   # τοῖς
+    med.1.16.15.4: {gloss: "to"}   # εἰς
+    med.1.16.15.5: {gloss: "ease"}   # εὐμάρειαν
+    med.1.16.15.6: {gloss: "of-life"}   # βίου
+    med.1.16.15.7: {gloss: "contributing"}   # φέρουσί
+    med.1.16.15.8: {gloss: "something"}   # τι
+    med.1.16.15.9: {gloss: "of-which"}   # ὧν
+    med.1.16.15.10: {gloss: "the"}   # ἡ
+    med.1.16.15.11: {gloss: "fortune"}   # τύχη
+    med.1.16.15.12: {gloss: "supplied"}   # παρεῖχε
+    med.1.16.15.13: {gloss: "abundance"}   # δαψίλειαν
+    med.1.16.15.14: {gloss: "using"}   # χρηστικὸν
+    med.1.16.15.15: {gloss: "without-arrogance"}   # ἀτύφως
+    med.1.16.15.16: {gloss: "at-once"}   # ἅμα
+    med.1.16.15.17: {gloss: "and"}   # καὶ
+    med.1.16.15.18: {gloss: "without-excuse"}   # ἀπροφασίστως
+    med.1.16.15.19: {gloss: "so-as"}   # ὥστε
+    med.1.16.15.20: {gloss: "being-present"}   # παρόντων
+    med.1.16.15.21: {gloss: "on-one-hand"}   # μὲν
+    med.1.16.15.22: {gloss: "unaffectedly"}   # ἀνεπιτηδεύτως
+    med.1.16.15.23: {gloss: "to-take-hold-of"}   # ἅπτεσθαι
+    med.1.16.15.24: {gloss: "being-absent"}   # ἀπόντων
+    med.1.16.15.25: {gloss: "on-the-other"}   # δὲ
+    med.1.16.15.26: {gloss: "not"}   # μὴ
+    med.1.16.15.27: {gloss: "to-need"}   # δεῖσθαι
+    med.1.16.16.1: {gloss: "and"}   # καὶ
+    med.1.16.16.2: {gloss: "the"}   # τὸ
+    med.1.16.16.3: {gloss: "not-even"}   # μηδὲ
+    med.1.16.16.4: {gloss: "would"}   # ἄν
+    med.1.16.16.5: {gloss: "anyone"}   # τινα
+    med.1.16.16.6: {gloss: "to-say"}   # εἰπεῖν
+    med.1.16.16.7: {gloss: "neither"}   # μήτε
+    med.1.16.16.8: {gloss: "that"}   # ὅτι
+    med.1.16.16.9: {gloss: "a-sophist"}   # σοφιστὴς
+    med.1.16.16.10: {gloss: "nor"}   # μήτε
+    med.1.16.16.11: {gloss: "that"}   # ὅτι
+    med.1.16.16.12: {gloss: "a-home-bred-slave"}   # οὐερνάκλος
+    med.1.16.16.13: {gloss: "nor"}   # μήτε
+    med.1.16.16.14: {gloss: "that"}   # ὅτι
+    med.1.16.16.15: {gloss: "a-pedant"}   # σχολαστικός
+    med.1.16.16.16: {gloss: "but"}   # ἀλλ’
+    med.1.16.16.17: {gloss: "that"}   # ὅτι
+    med.1.16.16.18: {gloss: "a-man"}   # ἀνὴρ
+    med.1.16.16.19: {gloss: "ripe"}   # πέπειρος
+    med.1.16.16.20: {gloss: "complete"}   # τέλειος
+    med.1.16.16.21: {gloss: "above-flattery"}   # ἀκολάκευτος
+    med.1.16.16.22: {gloss: "to-stand-at-the-head"}   # προεστάναι
+    med.1.16.16.23: {gloss: "able"}   # δυνάμενος
+    med.1.16.16.24: {gloss: "both"}   # καὶ
+    med.1.16.16.25: {gloss: "the-affairs"}   # τῶν
+    med.1.16.16.26: {gloss: "of-himself"}   # ἑαυτοῦ
+    med.1.16.16.27: {gloss: "and"}   # καὶ
+    med.1.16.16.28: {gloss: "of-others"}   # ἄλλων
+    med.1.16.17.1: {gloss: "in-addition-to"}   # πρὸς
+    med.1.16.17.2: {gloss: "these-things"}   # τούτοις
+    med.1.16.17.3: {gloss: "and"}   # δὲ
+    med.1.16.17.4: {gloss: "also"}   # καὶ
+    med.1.16.17.5: {gloss: "the"}   # τὸ
+    med.1.16.17.6: {gloss: "honoring"}   # τιμητικὸν
+    med.1.16.17.7: {gloss: "of-those"}   # τῶν
+    med.1.16.17.8: {gloss: "truly"}   # ἀληθῶς
+    med.1.16.17.9: {gloss: "philosophizing"}   # φιλοσοφούντων
+    med.1.16.17.10: {gloss: "to-the"}   # τοῖς
+    med.1.16.17.11: {gloss: "and"}   # δὲ
+    med.1.16.17.12: {gloss: "others"}   # ἄλλοις
+    med.1.16.17.13: {gloss: "not"}   # οὐκ
+    med.1.16.17.14: {gloss: "reproachful"}   # ἐξονειδιστικὸν
+    med.1.16.17.15: {gloss: "nor"}   # οὐδὲ
+    med.1.16.17.16: {gloss: "indeed"}   # μὴν
+    med.1.16.17.17: {gloss: "easily-led"}   # εὐπαράγωγον
+    med.1.16.17.18: {gloss: "by"}   # ὑπ’
+    med.1.16.17.19: {gloss: "them"}   # αὐτῶν
+    med.1.16.18.1: {gloss: "further"}   # ἔτι
+    med.1.16.18.2: {gloss: "and"}   # δὲ
+    med.1.16.18.3: {gloss: "the"}   # τὸ
+    med.1.16.18.4: {gloss: "sociability"}   # εὐόμιλον
+    med.1.16.18.5: {gloss: "and"}   # καὶ
+    med.1.16.18.6: {gloss: "graciousness"}   # εὔχαρι
+    med.1.16.18.7: {gloss: "not"}   # οὐ
+    med.1.16.18.8: {gloss: "to-excess"}   # κατακόρως
+    med.1.16.19.1: {gloss: "and"}   # καὶ
+    med.1.16.19.2: {gloss: "the"}   # τὸ
+    med.1.16.19.3: {gloss: "of-the"}   # τοῦ
+    med.1.16.19.4: {gloss: "own"}   # ἰδίου
+    med.1.16.19.5: {gloss: "body"}   # σώματος
+    med.1.16.19.6: {gloss: "caring-for"}   # ἐπιμελητικὸν
+    med.1.16.19.7: {gloss: "moderately"}   # ἐμμέτρως
+    med.1.16.19.8: {gloss: "neither"}   # οὔτε
+    med.1.16.19.9: {gloss: "as"}   # ὡς
+    med.1.16.19.10: {gloss: "would"}   # ἄν
+    med.1.16.19.11: {gloss: "someone"}   # τις
+    med.1.16.19.12: {gloss: "life-loving"}   # φιλόζωος
+    med.1.16.19.13: {gloss: "nor"}   # οὔτε
+    med.1.16.19.14: {gloss: "for"}   # πρὸς
+    med.1.16.19.15: {gloss: "adornment"}   # καλλωπισμὸν
+    med.1.16.19.16: {gloss: "nor"}   # οὔτε
+    med.1.16.19.17: {gloss: "indeed"}   # μὴν
+    med.1.16.19.18: {gloss: "carelessly"}   # ὀλιγώρως
+    med.1.16.19.19: {gloss: "but"}   # ἀλλ’
+    med.1.16.19.20: {gloss: "so-as"}   # ὥστε
+    med.1.16.19.21: {gloss: "through"}   # διὰ
+    med.1.16.19.22: {gloss: "the"}   # τὴν
+    med.1.16.19.23: {gloss: "own"}   # ἰδίαν
+    med.1.16.19.24: {gloss: "attention"}   # προσοχὴν
+    med.1.16.19.25: {gloss: "in"}   # εἰς
+    med.1.16.19.26: {gloss: "very-few-cases"}   # ὀλίγιστα
+    med.1.16.19.27: {gloss: "of-medical-art"}   # ἰατρικῆς
+    med.1.16.19.28: {gloss: "to-need"}   # χρῄζειν
+    med.1.16.19.29: {gloss: "or"}   # ἢ
+    med.1.16.19.30: {gloss: "of-drugs"}   # φαρμάκων
+    med.1.16.19.31: {gloss: "and"}   # καὶ
+    med.1.16.19.32: {gloss: "of-applications"}   # ἐπιθεμάτων
+    med.1.16.19.33: {gloss: "external"}   # ἐκτός
+    med.1.16.20.1: {gloss: "most-of-all"}   # μάλιστα
+    med.1.16.20.2: {gloss: "and"}   # δὲ
+    med.1.16.20.3: {gloss: "the"}   # τὸ
+    med.1.16.20.4: {gloss: "yielding"}   # παραχωρητικὸν
+    med.1.16.20.5: {gloss: "without-envy"}   # ἀβασκάνως
+    med.1.16.20.6: {gloss: "to-those"}   # τοῖς
+    med.1.16.20.7: {gloss: "faculty"}   # δύναμίν
+    med.1.16.20.8: {gloss: "some"}   # τινα
+    med.1.16.20.9: {gloss: "having-acquired"}   # κεκτημένοις
+    med.1.16.20.10: {gloss: "such-as"}   # οἷον
+    med.1.16.20.11: {gloss: "the"}   # τὴν
+    med.1.16.20.12: {gloss: "eloquence"}   # φραστικὴν
+    med.1.16.20.13: {gloss: "or"}   # ἢ
+    med.1.16.20.14: {gloss: "the"}   # τὴν
+    med.1.16.20.15: {gloss: "from"}   # ἐξ
+    med.1.16.20.16: {gloss: "knowledge"}   # ἱστορίας
+    med.1.16.20.17: {gloss: "of-laws"}   # νόμων
+    med.1.16.20.18: {gloss: "or"}   # ἢ
+    med.1.16.20.19: {gloss: "of-customs"}   # ἐθῶν
+    med.1.16.20.20: {gloss: "or"}   # ἢ
+    med.1.16.20.21: {gloss: "of-other"}   # ἄλλων
+    med.1.16.20.22: {gloss: "some"}   # τινῶν
+    med.1.16.20.23: {gloss: "matters"}   # πραγμάτων
+    med.1.16.20.24: {gloss: "and"}   # καὶ
+    med.1.16.20.25: {gloss: "joining-in-zeal"}   # συσπουδαστικὸν
+    med.1.16.20.26: {gloss: "with-them"}   # αὐτοῖς
+    med.1.16.20.27: {gloss: "so-that"}   # ἵνα
+    med.1.16.20.28: {gloss: "each"}   # ἕκαστοι
+    med.1.16.20.29: {gloss: "according-to"}   # κατὰ
+    med.1.16.20.30: {gloss: "the"}   # τὰ
+    med.1.16.20.31: {gloss: "own"}   # ἴδια
+    med.1.16.20.32: {gloss: "excellences"}   # προτερήματα
+    med.1.16.20.33: {gloss: "might-be-esteemed"}   # εὐδοκιμῶσι
+    med.1.16.21.1: {gloss: "all-things"}   # πάντα
+    med.1.16.21.2: {gloss: "and"}   # δὲ
+    med.1.16.21.3: {gloss: "according-to"}   # κατὰ
+    med.1.16.21.4: {gloss: "the"}   # τὰ
+    med.1.16.21.5: {gloss: "ancestral-ways"}   # πάτρια
+    med.1.16.21.6: {gloss: "doing"}   # πράσσων
+    med.1.16.21.7: {gloss: "not-even"}   # οὐδὲ
+    med.1.16.21.8: {gloss: "itself"}   # αὐτὸ
+    med.1.16.21.9: {gloss: "this"}   # τοῦτο
+    med.1.16.21.10: {gloss: "aiming-at"}   # ἐπιτηδεύων
+    med.1.16.21.11: {gloss: "to-appear"}   # φαίνεσθαι
+    med.1.16.21.12: {gloss: "the"}   # τὸ
+    med.1.16.21.13: {gloss: "the"}   # τὰ
+    med.1.16.21.14: {gloss: "ancestral-ways"}   # πάτρια
+    med.1.16.21.15: {gloss: "to-keep"}   # φυλάσσειν
+    med.1.16.22.1: {gloss: "further"}   # ἔτι
+    med.1.16.22.2: {gloss: "and"}   # δὲ
+    med.1.16.22.3: {gloss: "the"}   # τὸ
+    med.1.16.22.4: {gloss: "not"}   # μὴ
+    med.1.16.22.5: {gloss: "easily-moved"}   # εὐμετακίνητον
+    med.1.16.22.6: {gloss: "and"}   # καὶ
+    med.1.16.22.7: {gloss: "restless"}   # ῥιπταστικόν
+    med.1.16.22.8: {gloss: "but"}   # ἀλλὰ
+    med.1.16.22.9: {gloss: "both"}   # καὶ
+    med.1.16.22.10: {gloss: "in-places"}   # τόποις
+    med.1.16.22.11: {gloss: "and"}   # καὶ
+    med.1.16.22.12: {gloss: "in-pursuits"}   # πράγμασι
+    med.1.16.22.13: {gloss: "the"}   # τοῖς
+    med.1.16.22.14: {gloss: "same"}   # αὐτοῖς
+    med.1.16.22.15: {gloss: "staying-on"}   # ἐνδιατριπτικόν
+    med.1.16.23.1: {gloss: "and"}   # καὶ
+    med.1.16.23.2: {gloss: "the"}   # τὸ
+    med.1.16.23.3: {gloss: "after"}   # μετὰ
+    med.1.16.23.4: {gloss: "the"}   # τοὺς
+    med.1.16.23.5: {gloss: "attacks"}   # παροξυσμοὺς
+    med.1.16.23.6: {gloss: "of-the"}   # τῆς
+    med.1.16.23.7: {gloss: "headache"}   # κεφαλαλγίας
+    med.1.16.23.8: {gloss: "fresh"}   # νεαρὸν
+    med.1.16.23.9: {gloss: "at-once"}   # εὐθὺς
+    med.1.16.23.10: {gloss: "and"}   # καὶ
+    med.1.16.23.11: {gloss: "vigorous"}   # ἀκμαῖον
+    med.1.16.23.12: {gloss: "for"}   # πρὸς
+    med.1.16.23.13: {gloss: "the"}   # τὰ
+    med.1.16.23.14: {gloss: "usual"}   # συνήθη
+    med.1.16.23.15: {gloss: "tasks"}   # ἔργα
+    med.1.16.24.1: {gloss: "and"}   # καὶ
+    med.1.16.24.2: {gloss: "the"}   # τὸ
+    med.1.16.24.3: {gloss: "not"}   # μὴ
+    med.1.16.24.4: {gloss: "to-be"}   # εἶναι
+    med.1.16.24.5: {gloss: "to-him"}   # αὐτῷ
+    med.1.16.24.6: {gloss: "many"}   # πολλὰ
+    med.1.16.24.7: {gloss: "the"}   # τὰ
+    med.1.16.24.8: {gloss: "secrets"}   # ἀπόρρητα
+    med.1.16.24.9: {gloss: "but"}   # ἀλλ’
+    med.1.16.24.10: {gloss: "very-few"}   # ὀλίγιστα
+    med.1.16.24.11: {gloss: "and"}   # καὶ
+    med.1.16.24.12: {gloss: "very-rare"}   # σπανιώτατα
+    med.1.16.24.13: {gloss: "and"}   # καὶ
+    med.1.16.24.14: {gloss: "these"}   # ταῦτα
+    med.1.16.24.15: {gloss: "concerning"}   # ὑπὲρ
+    med.1.16.24.16: {gloss: "the"}   # τῶν
+    med.1.16.24.17: {gloss: "public-affairs"}   # κοινῶν
+    med.1.16.24.18: {gloss: "only"}   # μόνων
+    med.1.16.25.1: {gloss: "and"}   # καὶ
+    med.1.16.25.2: {gloss: "the"}   # τὸ
+    med.1.16.25.3: {gloss: "prudence"}   # ἔμφρον
+    med.1.16.25.4: {gloss: "and"}   # καὶ
+    med.1.16.25.5: {gloss: "measuredness"}   # μεμετρημένον
+    med.1.16.25.6: {gloss: "in"}   # ἔν
+    med.1.16.25.7: {gloss: "both"}   # τε
+    med.1.16.25.8: {gloss: "of-spectacles"}   # θεωριῶν
+    med.1.16.25.9: {gloss: "exhibition"}   # ἐπιτελέσει
+    med.1.16.25.10: {gloss: "and"}   # καὶ
+    med.1.16.25.11: {gloss: "of-works"}   # ἔργων
+    med.1.16.25.12: {gloss: "constructions"}   # κατασκευαῖς
+    med.1.16.25.13: {gloss: "and"}   # καὶ
+    med.1.16.25.14: {gloss: "distributions"}   # διανομαῖς
+    med.1.16.25.15: {gloss: "and"}   # καὶ
+    med.1.16.25.16: {gloss: "the"}   # τοῖς
+    med.1.16.25.17: {gloss: "such-things"}   # τοιούτοις
+    med.1.16.25.18: {gloss: "which"}   # ὅ
+    med.1.16.25.19: {gloss: "is"}   # ἐστιν
+    med.1.16.25.20: {gloss: "of-a-man"}   # ἀνθρώπου
+    med.1.16.25.21: {gloss: "to"}   # πρὸς
+    med.1.16.25.22: {gloss: "itself"}   # αὐτὸ
+    med.1.16.25.23: {gloss: "the"}   # τὸ
+    med.1.16.25.24: {gloss: "needful"}   # δέον
+    med.1.16.25.25: {gloss: "to-be-done"}   # πραχθῆναι
+    med.1.16.25.26: {gloss: "having-looked"}   # δεδορκότος
+    med.1.16.25.27: {gloss: "not"}   # οὐ
+    med.1.16.25.28: {gloss: "to"}   # πρὸς
+    med.1.16.25.29: {gloss: "the"}   # τὴν
+    med.1.16.25.30: {gloss: "for"}   # ἐπὶ
+    med.1.16.25.31: {gloss: "the-things"}   # τοῖς
+    med.1.16.25.32: {gloss: "done"}   # πραχθεῖσιν
+    med.1.16.25.33: {gloss: "glory"}   # εὐδοξίαν
+    med.1.16.26.1: {gloss: "not"}   # οὐκ
+    med.1.16.26.2: {gloss: "at-odd-hours"}   # ἀωρὶ
+    med.1.16.26.3: {gloss: "a-bather"}   # λούστης
+    med.1.16.26.4: {gloss: "not"}   # οὐχὶ
+    med.1.16.26.5: {gloss: "fond-of-building"}   # φιλοικοδόμος
+    med.1.16.26.6: {gloss: "not"}   # οὐ
+    med.1.16.26.7: {gloss: "about"}   # περὶ
+    med.1.16.26.8: {gloss: "the"}   # τὰς
+    med.1.16.26.9: {gloss: "foods"}   # ἐδωδὰς
+    med.1.16.26.10: {gloss: "a-deviser"}   # ἐπινοητής
+    med.1.16.26.11: {gloss: "not"}   # οὐ
+    med.1.16.26.12: {gloss: "about"}   # περὶ
+    med.1.16.26.13: {gloss: "of-clothes"}   # ἐσθήτων
+    med.1.16.26.14: {gloss: "textures"}   # ὑφὰς
+    med.1.16.26.15: {gloss: "and"}   # καὶ
+    med.1.16.26.16: {gloss: "colors"}   # χρόας
+    med.1.16.26.17: {gloss: "not"}   # οὐ
+    med.1.16.26.18: {gloss: "about"}   # περὶ
+    med.1.16.26.19: {gloss: "of-slaves"}   # σωμάτων
+    med.1.16.26.20: {gloss: "beauties"}   # ὥρας
+    med.1.16.27.1: {gloss: "the"}   # ἡ
+    med.1.16.27.2: {gloss: "from"}   # ἀπὸ
+    med.1.16.27.3: {gloss: "Lorium"}   # Λωρίου
+    med.1.16.27.4: {gloss: "robe"}   # στολὴ
+    med.1.16.27.5: {gloss: "brought-up"}   # ἀνάγουσα
+    med.1.16.27.6: {gloss: "from"}   # ἀπὸ
+    med.1.16.27.7: {gloss: "the"}   # τῆς
+    med.1.16.27.8: {gloss: "lower"}   # κάτω
+    med.1.16.27.9: {gloss: "villa"}   # ἐπαύλεως
+    med.1.16.28.1: {gloss: "tunic"}   # χιτὼν
+    med.1.16.28.2: {gloss: "at"}   # ἐν
+    med.1.16.28.3: {gloss: "Lanuvium"}   # Λανουβίῳ
+    med.1.16.28.4: {gloss: "the"}   # τὰ
+    med.1.16.28.5: {gloss: "most-part"}   # πολλά
+    med.1.16.29.1: {gloss: "the"}   # τῷ
+    med.1.16.29.2: {gloss: "cloak"}   # φελώνῃ
+    med.1.16.29.3: {gloss: "at"}   # ἐν
+    med.1.16.29.4: {gloss: "Tusculum"}   # Τούσκλοις
+    med.1.16.29.5: {gloss: "apologizing"}   # παραιτουμένῳ
+    med.1.16.29.6: {gloss: "how"}   # ὡς
+    med.1.16.29.7: {gloss: "he-dealt"}   # ἐχρήσατο
+    med.1.16.29.8: {gloss: "and"}   # καὶ
+    med.1.16.29.9: {gloss: "all"}   # πᾶς
+    med.1.16.29.10: {gloss: "the"}   # ὁ
+    med.1.16.29.11: {gloss: "such"}   # τοιοῦτος
+    med.1.16.29.12: {gloss: "manner"}   # τρόπος
+    med.1.16.30.1: {gloss: "nothing"}   # οὐδὲν
+    med.1.16.30.2: {gloss: "harsh"}   # ἀπηνὲς
+    med.1.16.30.3: {gloss: "nor"}   # οὐδὲ
+    med.1.16.30.4: {gloss: "indeed"}   # μὴν
+    med.1.16.30.5: {gloss: "implacable"}   # ἀδυσώπητον
+    med.1.16.30.6: {gloss: "nor"}   # οὐδὲ
+    med.1.16.30.7: {gloss: "violent"}   # λάβρον
+    med.1.16.30.8: {gloss: "nor"}   # οὐδὲ
+    med.1.16.30.9: {gloss: "so-that"}   # ὥστ’
+    med.1.16.30.10: {gloss: "would"}   # ἄν
+    med.1.16.30.11: {gloss: "anyone"}   # τινα
+    med.1.16.30.12: {gloss: "to-say"}   # εἰπεῖν
+    med.1.16.30.13: {gloss: "ever"}   # ποτε
+    med.1.16.30.14: {gloss: "up-to"}   # ἕως
+    med.1.16.30.15: {gloss: "sweat"}   # ἱδρῶτος
+    med.1.16.31.1: {gloss: "but"}   # ἀλλὰ
+    med.1.16.31.2: {gloss: "all-things"}   # πάντα
+    med.1.16.31.3: {gloss: "distinguished"}   # διειλημμένα
+    med.1.16.31.4: {gloss: "to-have-reasoned-out"}   # λελογίσθαι
+    med.1.16.31.5: {gloss: "as"}   # ὡς
+    med.1.16.31.6: {gloss: "at"}   # ἐπὶ
+    med.1.16.31.7: {gloss: "leisure"}   # σχολῆς
+    med.1.16.31.8: {gloss: "calmly"}   # ἀταράχως
+    med.1.16.31.9: {gloss: "orderly"}   # τεταγμένως
+    med.1.16.31.10: {gloss: "vigorously"}   # ἐρρωμένως
+    med.1.16.31.11: {gloss: "consistently"}   # συμφώνως
+    med.1.16.31.12: {gloss: "with-themselves"}   # ἑαυτοῖς
+    med.1.16.32.1: {gloss: "would-fit"}   # ἐφαρμόσειε
+    med.1.16.32.2: {gloss: "and"}   # δ’
+    med.1.16.32.3: {gloss: "would"}   # ἂν
+    med.1.16.32.4: {gloss: "to-him"}   # αὐτῷ
+    med.1.16.32.5: {gloss: "the"}   # τὸ
+    med.1.16.32.6: {gloss: "about"}   # περὶ
+    med.1.16.32.7: {gloss: "the"}   # τοῦ
+    med.1.16.32.8: {gloss: "Socrates"}   # Σωκράτους
+    med.1.16.32.9: {gloss: "recorded"}   # μνημονευόμενον
+    med.1.16.32.10: {gloss: "that"}   # ὅτι
+    med.1.16.32.11: {gloss: "both"}   # καὶ
+    med.1.16.32.12: {gloss: "to-abstain"}   # ἀπέχεσθαι
+    med.1.16.32.13: {gloss: "and"}   # καὶ
+    med.1.16.32.14: {gloss: "to-enjoy"}   # ἀπολαύειν
+    med.1.16.32.15: {gloss: "he-was-able"}   # ἐδύνατο
+    med.1.16.32.16: {gloss: "those-things"}   # τούτων
+    med.1.16.32.17: {gloss: "of-which"}   # ὧν
+    med.1.16.32.18: {gloss: "the"}   # οἱ
+    med.1.16.32.19: {gloss: "many"}   # πολλοὶ
+    med.1.16.32.20: {gloss: "towards"}   # πρός
+    med.1.16.32.21: {gloss: "both"}   # τε
+    med.1.16.32.22: {gloss: "the"}   # τὰς
+    med.1.16.32.23: {gloss: "abstinences"}   # ἀποχὰς
+    med.1.16.32.24: {gloss: "weakly"}   # ἀσθενῶς
+    med.1.16.32.25: {gloss: "and"}   # καὶ
+    med.1.16.32.26: {gloss: "towards"}   # πρὸς
+    med.1.16.32.27: {gloss: "the"}   # τὰς
+    med.1.16.32.28: {gloss: "enjoyments"}   # ἀπολαύσεις
+    med.1.16.32.29: {gloss: "yieldingly"}   # ἐνδοτικῶς
+    med.1.16.32.30: {gloss: "are-disposed"}   # ἔχουσι
+    med.1.16.33.1: {gloss: "the"}   # τὸ
+    med.1.16.33.2: {gloss: "and"}   # δὲ
+    med.1.16.33.3: {gloss: "to-be-strong"}   # ἰσχύειν
+    med.1.16.33.4: {gloss: "and"}   # καὶ
+    med.1.16.33.5: {gloss: "to-persevere"}   # ἐγκαρτερεῖν
+    med.1.16.33.6: {gloss: "and"}   # καὶ
+    med.1.16.33.7: {gloss: "to-be-sober"}   # ἐννήφειν
+    med.1.16.33.8: {gloss: "in-each"}   # ἑκατέρῳ
+    med.1.16.33.9: {gloss: "of-a-man"}   # ἀνδρός
+    med.1.16.33.10: {gloss: "it-is"}   # ἐστιν
+    med.1.16.33.11: {gloss: "perfect"}   # ἄρτιον
+    med.1.16.33.12: {gloss: "and"}   # καὶ
+    med.1.16.33.13: {gloss: "invincible"}   # ἀήττητον
+    med.1.16.33.14: {gloss: "soul"}   # ψυχὴν
+    med.1.16.33.15: {gloss: "having"}   # ἔχοντος
+    med.1.16.33.16: {gloss: "as"}   # οἷον
+    med.1.16.33.17: {gloss: "in"}   # ἐν
+    med.1.16.33.18: {gloss: "the"}   # τῇ
+    med.1.16.33.19: {gloss: "illness"}   # νόσῳ
+    med.1.16.33.20: {gloss: "the"}   # τῇ
+    med.1.16.33.21: {gloss: "of-Maximus"}   # Μαξίμου
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-18
+  why: "corrections to the GLAUx automatic parse of 1.16: 94 of 554 tokens corrected (17 lemmas, 86 morph tags). Lemmas that are not Greek words or are wrong headwords (συσταλῆνα, νῆφος, ἔμφρος, μεμετραίνω, διειλάπτω, λελογίζομαι, ὀλιγύς twice, φένδω for ἐφίημι, πρόσωθεν for πόρρωθεν, ἐρεύνη, ἐπίβοησις); the place names Lorium and Lanuvium set as neuters; ἐπιτελέσει, a noun, tagged as a future verb, and φέρουσί, a participle, tagged as an indicative; εὐδοκιμῶσι set as present subjunctive; ἀτραγῴδως, ἐπάναγκες and ἐκτός set as adverbs; the article and neuter adjective or infinitive heading each item of the list (τὸ φιλόπονον, τὸ ζητητικὸν, and the rest) set to accusative, the object of the verb understood with Παρά, where GLAUx tagged them nominative (about half the items; the book 1 convention); neuter substantives (the matters judged, the things present, his own affairs) tagged masculine; agreement with a referent outside the phrase (ὅμοιον, ἄρτιον, τινὰς, τινα); οἷον set as adverbial accusative. φελώνῃ (GLAUx reads τελώνῃ) had no treebank word; its lemma φελόνης and morph are supplied here."
+  status: draft
+  set:
+    med.1.16.1.10: {morph: l-p---ng-}   # τῶν: neuter, the matters judged
+    med.1.16.1.12: {morph: v-pappng-}   # κριθέντων: neuter, the matters judged
+    med.1.16.2.2: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.2.3: {morph: a-s---na-}   # ἀκενόδοξον: list item, accusative object of the verb understood with Παρά
+    med.1.16.3.2: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.3.3: {morph: a-s---na-}   # φιλόπονον: list item, accusative object of the verb understood with Παρά
+    med.1.16.3.5: {morph: a-s---na-}   # ἐνδελεχές: list item, accusative object of the verb understood with Παρά
+    med.1.16.4.2: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.4.3: {morph: a-s---na-}   # ἀκουστικὸν: list item, accusative object of the verb understood with Παρά
+    med.1.16.5.2: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.6.2: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.6.3: {morph: a-s---na-}   # ἔμπειρον: list item, accusative object of the verb understood with Παρά
+    med.1.16.7.2: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.7.8: {morph: l-p---ng-}   # τῶν: article of neuter μειρακίων
+    med.1.16.8.5: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.8.6: {lemma: ἐφίημι}   # ἐφεῖσθαι: perfect infinitive of ἐφίημι, not φένδω
+    med.1.16.8.15: {lemma: ἐπάναγκες, morph: d--------}   # ἐπάναγκες: adverb, of necessity
+    med.1.16.8.18: {morph: a-s---ma-}   # ὅμοιον: predicate agreeing with αὐτὸν
+    med.1.16.8.25: {morph: a-p---fa-}   # τινὰς: agrees with χρείας (feminine), not common gender
+    med.1.16.9.2: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.9.3: {morph: a-s---na-}   # ζητητικὸν: list item, accusative object of the verb understood with Παρά
+    med.1.16.9.9: {morph: a-s---na-}   # ἐπίμονον: coordinated with ζητητικὸν, neuter accusative
+    med.1.16.9.15: {lemma: ἔρευνα}   # ἐρεύνης: headword is ἔρευνα
+    med.1.16.10.2: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.10.3: {morph: a-s---na-}   # διατηρητικὸν: list item, accusative object of the verb understood with Παρά
+    med.1.16.10.8: {morph: a-s---na-}   # ἁψίκορον: list item, accusative object of the verb understood with Παρά
+    med.1.16.10.10: {morph: a-s---na-}   # ἐπιμανές: list item, accusative object of the verb understood with Παρά
+    med.1.16.11.2: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.11.3: {morph: a-s---na-}   # αὔταρκες: list item, accusative object of the verb understood with Παρά
+    med.1.16.12.2: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.12.3: {lemma: πόρρωθεν}   # πόρρωθεν: πόρρωθεν, not πρόσωθεν
+    med.1.16.12.4: {morph: a-s---na-}   # προνοητικὸν: list item, accusative object of the verb understood with Παρά
+    med.1.16.12.7: {morph: a-p---ngs}   # ἐλαχίστων: neuter, the smallest things
+    med.1.16.12.8: {morph: a-s---na-}   # προδιοικητικὸν: list item, accusative object of the verb understood with Παρά
+    med.1.16.12.9: {morph: d--------}   # ἀτραγῴδως: adverb in -ως tagged as noun
+    med.1.16.13.2: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.13.4: {lemma: ἐπιβόησις}   # ἐπιβοήσεις: headword accent
+    med.1.16.13.10: {lemma: συστέλλω, morph: v--anp---}   # συσταλῆναν: aorist passive infinitive (συσταλῆναι); συσταλῆνα is not a Greek word
+    med.1.16.13.29: {morph: a-p---mg-}   # τινῶν: persons, the blame from some people
+    med.1.16.14.2: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.14.6: {morph: a-s---na-}   # δεισίδαιμον: agrees with τὸ, neuter, not masculine
+    med.1.16.14.16: {lemma: νήφω, morph: v-sppana-}   # νῆφον: participle of νήφω; νῆφος is not a Greek word
+    med.1.16.14.20: {morph: a-s---na-}   # βέβαιον: list item, accusative object of the verb understood with Παρά
+    med.1.16.14.23: {morph: a-s---na-}   # ἀπειρόκαλον: list item, accusative object of the verb understood with Παρά
+    med.1.16.14.25: {morph: a-s---na-}   # καινοτόμον: list item, accusative object of the verb understood with Παρά
+    med.1.16.15.2: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.15.3: {morph: l-p---nd-}   # τοῖς: neuter, the things that contribute
+    med.1.16.15.7: {morph: v-pppand-}   # φέρουσί: participle (dative plural), not indicative
+    med.1.16.15.20: {morph: v-pppang-}   # παρόντων: neuter, the things present
+    med.1.16.15.24: {morph: v-pppang-}   # ἀπόντων: neuter, the things absent
+    med.1.16.16.2: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.16.25: {morph: l-p---ng-}   # τῶν: neuter, his own affairs
+    med.1.16.17.10: {morph: l-p---md-}   # τοῖς: persons, the others
+    med.1.16.17.12: {morph: a-p---md-}   # ἄλλοις: persons, the others
+    med.1.16.17.14: {morph: a-s---na-}   # ἐξονειδιστικὸν: list item, accusative object of the verb understood with Παρά
+    med.1.16.17.17: {morph: a-s---na-}   # εὐπαράγωγον: list item, accusative object of the verb understood with Παρά
+    med.1.16.18.6: {morph: a-s---na-}   # εὔχαρι: adjective εὔχαρις (neuter εὔχαρι), not a noun
+    med.1.16.19.2: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.19.6: {morph: a-s---na-}   # ἐπιμελητικὸν: list item, accusative object of the verb understood with Παρά
+    med.1.16.19.26: {lemma: ὀλίγος}   # ὀλίγιστα: superlative of ὀλίγος; ὀλιγύς is not a headword
+    med.1.16.19.33: {morph: d--------}   # ἐκτός: adverb, external (applications)
+    med.1.16.20.3: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.20.4: {morph: a-s---na-}   # παραχωρητικὸν: list item, accusative object of the verb understood with Παρά
+    med.1.16.20.8: {morph: a-s---fa-}   # τινα: agrees with δύναμιν (feminine)
+    med.1.16.20.10: {morph: p-s---na-}   # οἷον: adverbial οἷον, accusative
+    med.1.16.20.25: {morph: a-s---na-}   # συσπουδαστικὸν: list item, accusative object of the verb understood with Παρά
+    med.1.16.20.26: {morph: a-p---md-}   # αὐτοῖς: persons (those who have a faculty); common gender invalid for αὐτός
+    med.1.16.20.33: {morph: v3ppsa---}   # εὐδοκιμῶσι: present subjunctive after ἵνα, not future
+    med.1.16.22.3: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.22.5: {morph: a-s---na-}   # εὐμετακίνητον: list item, accusative object of the verb understood with Παρά
+    med.1.16.22.7: {morph: a-s---na-}   # ῥιπταστικόν: list item, accusative object of the verb understood with Παρά
+    med.1.16.22.15: {morph: a-s---na-}   # ἐνδιατριπτικόν: list item, accusative object of the verb understood with Παρά
+    med.1.16.23.8: {morph: a-s---na-}   # νεαρὸν: list item, accusative object of the verb understood with Παρά
+    med.1.16.23.11: {morph: a-s---na-}   # ἀκμαῖον: list item, accusative object of the verb understood with Παρά
+    med.1.16.24.2: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.24.10: {lemma: ὀλίγος}   # ὀλίγιστα: superlative of ὀλίγος; ὀλιγύς is not a headword
+    med.1.16.25.2: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.16.25.3: {lemma: ἔμφρων, morph: a-s---na-}   # ἔμφρον: headword ἔμφρων; ἔμφρος is not a Greek word; list accusative
+    med.1.16.25.5: {lemma: μετρέω, morph: v-srpena-}   # μεμετρημένον: perfect participle of μετρέω; μεμετραίνω is not a Greek word; list accusative
+    med.1.16.25.8: {morph: n-p---fg-}   # θεωριῶν: θεωρία is feminine
+    med.1.16.25.9: {lemma: ἐπιτέλεσις, morph: n-s---fd-}   # ἐπιτελέσει: noun, dative singular, not a future verb
+    med.1.16.26.5: {morph: a-s---mn-}   # φιλοικοδόμος: adjective, fond of building
+    med.1.16.26.20: {morph: n-p---fa-}   # ὥρας: accusative plural after περί, parallel to ὑφὰς
+    med.1.16.27.3: {lemma: Λώριον, morph: n-s---ng-}   # Λωρίου: the place Lorium, neuter
+    med.1.16.28.3: {lemma: Λανούβιον, morph: n-s---nd-}   # Λανουβίῳ: the place Lanuvium, neuter
+    med.1.16.29.2: {lemma: φελόνης, morph: n-s---md-}   # φελώνῃ: reading φελώνῃ (cloak, Latin paenula); GLAUx reads τελώνῃ
+    med.1.16.31.3: {lemma: διαλαμβάνω}   # διειλημμένα: perfect participle of διαλαμβάνω; διειλάπτω is not a Greek word
+    med.1.16.31.4: {lemma: λογίζομαι}   # λελογίσθαι: headword λογίζομαι; λελογίζομαι is an inflected stem
+    med.1.16.31.12: {morph: p-p---nd-}   # ἑαυτοῖς: refers to πάντα (neuter)
+    med.1.16.32.5: {morph: l-s---nn-}   # τὸ: subject of ἐφαρμόσειε
+    med.1.16.32.9: {morph: v-sppenn-}   # μνημονευόμενον: subject of ἐφαρμόσειε
+    med.1.16.33.8: {morph: a-s---nd-}   # ἑκατέρῳ: neuter, in each of the two (cases)
+    med.1.16.33.11: {morph: a-s---fa-}   # ἄρτιον: agrees with ψυχὴν
+    med.1.16.33.16: {morph: p-s---na-}   # οἷον: adverbial οἷον, accusative
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-18
+  why: "Book 1, section 1.17: literal word-for-word gloss, same conventions as book 2"
+  status: draft
+  set:
+    med.1.17.1.1: {gloss: "from"}   # Παρὰ
+    med.1.17.1.2: {gloss: "the"}   # τῶν
+    med.1.17.1.3: {gloss: "gods"}   # θεῶν
+    med.1.17.1.4: {gloss: "the"}   # τὸ
+    med.1.17.1.5: {gloss: "good"}   # ἀγαθοὺς
+    med.1.17.1.6: {gloss: "grandfathers"}   # πάππους
+    med.1.17.1.7: {gloss: "good"}   # ἀγαθοὺς
+    med.1.17.1.8: {gloss: "parents"}   # γονέας
+    med.1.17.1.9: {gloss: "a-good"}   # ἀγαθὴν
+    med.1.17.1.10: {gloss: "sister"}   # ἀδελφήν
+    med.1.17.1.11: {gloss: "good"}   # ἀγαθοὺς
+    med.1.17.1.12: {gloss: "teachers"}   # διδασκάλους
+    med.1.17.1.13: {gloss: "good"}   # ἀγαθοὺς
+    med.1.17.1.14: {gloss: "household-members"}   # οἰκείους
+    med.1.17.1.15: {gloss: "kinsmen"}   # συγγενεῖς
+    med.1.17.1.16: {gloss: "friends"}   # φίλους
+    med.1.17.1.17: {gloss: "nearly"}   # σχεδὸν
+    med.1.17.1.18: {gloss: "all"}   # ἅπαντας
+    med.1.17.1.19: {gloss: "to-have"}   # ἔχειν
+    med.1.17.2.1: {gloss: "and"}   # καὶ
+    med.1.17.2.2: {gloss: "that"}   # ὅτι
+    med.1.17.2.3: {gloss: "towards"}   # περὶ
+    med.1.17.2.4: {gloss: "none"}   # οὐδένα
+    med.1.17.2.5: {gloss: "of-them"}   # αὐτῶν
+    med.1.17.2.6: {gloss: "I-fell-into"}   # προέπεσον
+    med.1.17.2.7: {gloss: "to-offend-in"}   # πλημμελῆσαί
+    med.1.17.2.8: {gloss: "anything"}   # τι
+    med.1.17.2.9: {gloss: "although"}   # καίτοι
+    med.1.17.2.10: {gloss: "a-disposition"}   # διάθεσιν
+    med.1.17.2.11: {gloss: "having"}   # ἔχων
+    med.1.17.2.12: {gloss: "such"}   # τοιαύτην
+    med.1.17.2.13: {gloss: "from"}   # ἀφ’
+    med.1.17.2.14: {gloss: "which"}   # ἧς
+    med.1.17.2.15: {gloss: "if"}   # εἰ
+    med.1.17.2.16: {gloss: "it-had-chanced"}   # ἔτυχε
+    med.1.17.2.17: {gloss: "even-would"}   # κἂν
+    med.1.17.2.18: {gloss: "I-did"}   # ἔπραξά
+    med.1.17.2.19: {gloss: "something"}   # τι
+    med.1.17.2.20: {gloss: "such"}   # τοιοῦτο
+    med.1.17.3.1: {gloss: "of-the"}   # τῶν
+    med.1.17.3.2: {gloss: "gods"}   # θεῶν
+    med.1.17.3.3: {gloss: "and"}   # δὲ
+    med.1.17.3.4: {gloss: "a-kindness"}   # εὐποιία
+    med.1.17.3.5: {gloss: "the"}   # τὸ
+    med.1.17.3.6: {gloss: "no"}   # μηδεμίαν
+    med.1.17.3.7: {gloss: "concurrence"}   # συνδρομὴν
+    med.1.17.3.8: {gloss: "of-circumstances"}   # πραγμάτων
+    med.1.17.3.9: {gloss: "to-have-arisen"}   # γενέσθαι
+    med.1.17.3.10: {gloss: "which"}   # ἥτις
+    med.1.17.3.11: {gloss: "was-going"}   # ἔμελλέ
+    med.1.17.3.12: {gloss: "me"}   # με
+    med.1.17.3.13: {gloss: "to-put-to-the-test"}   # ἐλέγξειν
+    med.1.17.4.1: {gloss: "and"}   # καὶ
+    med.1.17.4.2: {gloss: "the"}   # τὸ
+    med.1.17.4.3: {gloss: "not"}   # μὴ
+    med.1.17.4.4: {gloss: "for"}   # ἐπὶ
+    med.1.17.4.5: {gloss: "longer"}   # πλέον
+    med.1.17.4.6: {gloss: "to-have-been-brought-up"}   # τραφῆναι
+    med.1.17.4.7: {gloss: "with"}   # παρὰ
+    med.1.17.4.8: {gloss: "the"}   # τῇ
+    med.1.17.4.9: {gloss: "concubine"}   # παλλακῇ
+    med.1.17.4.10: {gloss: "of-the"}   # τοῦ
+    med.1.17.4.11: {gloss: "grandfather"}   # πάππου
+    med.1.17.4.12: {gloss: "and"}   # καὶ
+    med.1.17.4.13: {gloss: "the"}   # τὸ
+    med.1.17.4.14: {gloss: "the"}   # τὴν
+    med.1.17.4.15: {gloss: "youthful-bloom"}   # ὥραν
+    med.1.17.4.16: {gloss: "to-preserve"}   # διασῶσαι
+    med.1.17.4.17: {gloss: "and"}   # καὶ
+    med.1.17.4.18: {gloss: "the"}   # τὸ
+    med.1.17.4.19: {gloss: "not"}   # μὴ
+    med.1.17.4.20: {gloss: "before"}   # πρὸ
+    med.1.17.4.21: {gloss: "the-season"}   # ὥρας
+    med.1.17.4.22: {gloss: "to-become-a-man"}   # ἀνδρωθῆναι
+    med.1.17.4.23: {gloss: "but"}   # ἀλλ’
+    med.1.17.4.24: {gloss: "even"}   # ἔτι
+    med.1.17.4.25: {gloss: "also"}   # καὶ
+    med.1.17.4.26: {gloss: "to-take-over"}   # ἐπιλαβεῖν
+    med.1.17.4.27: {gloss: "the"}   # τοῦ
+    med.1.17.4.28: {gloss: "time"}   # χρόνου
+    med.1.17.5.1: {gloss: "the"}   # τὸ
+    med.1.17.5.2: {gloss: "to-a-ruler"}   # ἄρχοντι
+    med.1.17.5.3: {gloss: "and"}   # καὶ
+    med.1.17.5.4: {gloss: "father"}   # πατρὶ
+    med.1.17.5.5: {gloss: "to-have-been-subjected"}   # ὑποταχθῆναι
+    med.1.17.5.6: {gloss: "who"}   # ὃς
+    med.1.17.5.7: {gloss: "was-going"}   # ἔμελλε
+    med.1.17.5.8: {gloss: "all"}   # πάντα
+    med.1.17.5.9: {gloss: "the"}   # τὸν
+    med.1.17.5.10: {gloss: "vanity"}   # τῦφον
+    med.1.17.5.11: {gloss: "to-take-away"}   # ἀφαιρήσειν
+    med.1.17.5.12: {gloss: "from-me"}   # μου
+    med.1.17.5.13: {gloss: "and"}   # καὶ
+    med.1.17.5.14: {gloss: "into"}   # εἰς
+    med.1.17.5.15: {gloss: "a-notion"}   # ἔννοιαν
+    med.1.17.5.16: {gloss: "to-lead"}   # ἄξειν
+    med.1.17.5.17: {gloss: "of-the"}   # τοῦ
+    med.1.17.5.18: {gloss: "that"}   # ὅτι
+    med.1.17.5.19: {gloss: "possible"}   # δυνατόν
+    med.1.17.5.20: {gloss: "it-is"}   # ἐστιν
+    med.1.17.5.21: {gloss: "in"}   # ἐν
+    med.1.17.5.22: {gloss: "a-palace"}   # αὐλῇ
+    med.1.17.5.23: {gloss: "one-living"}   # βιοῦντα
+    med.1.17.5.24: {gloss: "neither"}   # μήτε
+    med.1.17.5.25: {gloss: "of-bodyguards"}   # δορυφορήσεων
+    med.1.17.5.26: {gloss: "to-need"}   # χρῄζειν
+    med.1.17.5.27: {gloss: "nor"}   # μήτε
+    med.1.17.5.28: {gloss: "of-robes"}   # ἐσθήτων
+    med.1.17.5.29: {gloss: "marked"}   # σημειωδῶν
+    med.1.17.5.30: {gloss: "nor"}   # μήτε
+    med.1.17.5.31: {gloss: "of-torches"}   # λαμπάδων
+    med.1.17.5.32: {gloss: "and"}   # καὶ
+    med.1.17.5.33: {gloss: "of-statues"}   # ἀνδριάντων
+    med.1.17.5.34: {gloss: "of-such-a-kind"}   # τοιῶνδέ
+    med.1.17.5.35: {gloss: "certain"}   # τινων
+    med.1.17.5.36: {gloss: "and"}   # καὶ
+    med.1.17.5.37: {gloss: "of-the"}   # τοῦ
+    med.1.17.5.38: {gloss: "like"}   # ὁμοίου
+    med.1.17.5.39: {gloss: "pomp"}   # κόμπου
+    med.1.17.6.1: {gloss: "but"}   # ἀλλʼ
+    med.1.17.6.2: {gloss: "it-is-possible"}   # ἔξεστιν
+    med.1.17.6.3: {gloss: "very-near"}   # ἐγγυτάτω
+    med.1.17.6.4: {gloss: "to-a-private-man"}   # ἰδιώτου
+    med.1.17.6.5: {gloss: "to-draw-in"}   # συστέλλειν
+    med.1.17.6.6: {gloss: "oneself"}   # ἑαυτὸν
+    med.1.17.6.7: {gloss: "and"}   # καὶ
+    med.1.17.6.8: {gloss: "not"}   # μὴ
+    med.1.17.6.9: {gloss: "because-of"}   # διὰ
+    med.1.17.6.10: {gloss: "this"}   # τοῦτο
+    med.1.17.6.11: {gloss: "more-humbly"}   # ταπεινότερον
+    med.1.17.6.12: {gloss: "or"}   # ἢ
+    med.1.17.6.13: {gloss: "more-slackly"}   # ῥᾳθυμότερον
+    med.1.17.6.14: {gloss: "to-be-disposed"}   # ἔχειν
+    med.1.17.6.15: {gloss: "towards"}   # πρὸς
+    med.1.17.6.16: {gloss: "the-things"}   # τὰ
+    med.1.17.6.17: {gloss: "on-behalf-of"}   # ὑπὲρ
+    med.1.17.6.18: {gloss: "the"}   # τῶν
+    med.1.17.6.19: {gloss: "common-affairs"}   # κοινῶν
+    med.1.17.6.20: {gloss: "in-a-ruler's-way"}   # ἡγεμονικῶς
+    med.1.17.6.21: {gloss: "to-be-done"}   # πραχθῆναι
+    med.1.17.6.22: {gloss: "needing"}   # δέοντα
+    med.1.17.7.1: {gloss: "the"}   # τὸ
+    med.1.17.7.2: {gloss: "a-brother"}   # ἀδελφοῦ
+    med.1.17.7.3: {gloss: "such"}   # τοιούτου
+    med.1.17.7.4: {gloss: "to-have-obtained"}   # τυχεῖν
+    med.1.17.7.5: {gloss: "being-able"}   # δυναμένου
+    med.1.17.7.6: {gloss: "on-one-hand"}   # μὲν
+    med.1.17.7.7: {gloss: "through"}   # διὰ
+    med.1.17.7.8: {gloss: "character"}   # ἤθους
+    med.1.17.7.9: {gloss: "to-rouse"}   # ἐπεγεῖραί
+    med.1.17.7.10: {gloss: "me"}   # με
+    med.1.17.7.11: {gloss: "towards"}   # πρὸς
+    med.1.17.7.12: {gloss: "care"}   # ἐπιμέλειαν
+    med.1.17.7.13: {gloss: "of-myself"}   # ἐμαυτοῦ
+    med.1.17.7.14: {gloss: "at-the-same-time"}   # ἅμα
+    med.1.17.7.15: {gloss: "and"}   # δὲ
+    med.1.17.7.16: {gloss: "also"}   # καὶ
+    med.1.17.7.17: {gloss: "by-respect"}   # τιμῇ
+    med.1.17.7.18: {gloss: "and"}   # καὶ
+    med.1.17.7.19: {gloss: "by-affection"}   # στοργῇ
+    med.1.17.7.20: {gloss: "gladdening"}   # εὐφραίνοντός
+    med.1.17.7.21: {gloss: "me"}   # με
+    med.1.17.8.1: {gloss: "the"}   # τὸ
+    med.1.17.8.2: {gloss: "children"}   # παιδία
+    med.1.17.8.3: {gloss: "to-me"}   # μοι
+    med.1.17.8.4: {gloss: "dull-witted"}   # ἀφυῆ
+    med.1.17.8.5: {gloss: "not"}   # μὴ
+    med.1.17.8.6: {gloss: "to-have-been-born"}   # γενέσθαι
+    med.1.17.8.7: {gloss: "nor"}   # μηδὲ
+    med.1.17.8.8: {gloss: "in"}   # κατὰ
+    med.1.17.8.9: {gloss: "the"}   # τὸ
+    med.1.17.8.10: {gloss: "little-body"}   # σωμάτιον
+    med.1.17.8.11: {gloss: "misshapen"}   # διάστροφα
+    med.1.17.9.1: {gloss: "the"}   # τὸ
+    med.1.17.9.2: {gloss: "not"}   # μὴ
+    med.1.17.9.3: {gloss: "for"}   # ἐπὶ
+    med.1.17.9.4: {gloss: "further"}   # πλέον
+    med.1.17.9.5: {gloss: "me"}   # με
+    med.1.17.9.6: {gloss: "to-have-advanced"}   # προκόψαι
+    med.1.17.9.7: {gloss: "in"}   # ἐν
+    med.1.17.9.8: {gloss: "rhetoric"}   # ῥητορικῇ
+    med.1.17.9.9: {gloss: "and"}   # καὶ
+    med.1.17.9.10: {gloss: "poetry"}   # ποιητικῇ
+    med.1.17.9.11: {gloss: "and"}   # καὶ
+    med.1.17.9.12: {gloss: "the"}   # τοῖς
+    med.1.17.9.13: {gloss: "other"}   # ἄλλοις
+    med.1.17.9.14: {gloss: "pursuits"}   # ἐπιτηδεύμασιν
+    med.1.17.9.15: {gloss: "in"}   # ἐν
+    med.1.17.9.16: {gloss: "which"}   # οἷς
+    med.1.17.9.17: {gloss: "perhaps"}   # ἴσως
+    med.1.17.9.18: {gloss: "would"}   # ἂν
+    med.1.17.9.19: {gloss: "I-have-been-held-fast"}   # κατεσχέθην
+    med.1.17.9.20: {gloss: "if"}   # εἰ
+    med.1.17.9.21: {gloss: "I-had-perceived"}   # ᾐσθόμην
+    med.1.17.9.22: {gloss: "myself"}   # ἐμαυτὸν
+    med.1.17.9.23: {gloss: "easily"}   # εὐόδως
+    med.1.17.9.24: {gloss: "going-forward"}   # προιόντα
+    med.1.17.10.1: {gloss: "the"}   # τὸ
+    med.1.17.10.2: {gloss: "to-have-been-quick"}   # φθάσαι
+    med.1.17.10.3: {gloss: "the"}   # τοὺς
+    med.1.17.10.4: {gloss: "ones-who-reared-me"}   # τροφέας
+    med.1.17.10.5: {gloss: "in"}   # ἐν
+    med.1.17.10.6: {gloss: "a-rank"}   # ἀξιώματι
+    med.1.17.10.7: {gloss: "to-set"}   # καταστῆσαι
+    med.1.17.10.8: {gloss: "which"}   # οὗ
+    med.1.17.10.9: {gloss: "indeed"}   # δὴ
+    med.1.17.10.10: {gloss: "they-seemed"}   # ἐδόκουν
+    med.1.17.10.11: {gloss: "to-me"}   # μοι
+    med.1.17.10.12: {gloss: "to-desire"}   # ἐπιθυμεῖν
+    med.1.17.10.13: {gloss: "and"}   # καὶ
+    med.1.17.10.14: {gloss: "not"}   # μὴ
+    med.1.17.10.15: {gloss: "to-have-put-off"}   # ἀναβαλέσθαι
+    med.1.17.10.16: {gloss: "in-hope"}   # ἐλπίδι
+    med.1.17.10.17: {gloss: "of-the"}   # τοῦ
+    med.1.17.10.18: {gloss: "me"}   # με
+    med.1.17.10.19: {gloss: "since"}   # ἐπεὶ
+    med.1.17.10.20: {gloss: "young"}   # νέοι
+    med.1.17.10.21: {gloss: "still"}   # ἔτι
+    med.1.17.10.22: {gloss: "they-were"}   # ἦσαν
+    med.1.17.10.23: {gloss: "later"}   # ὕστερον
+    med.1.17.10.24: {gloss: "it"}   # αὐτὸ
+    med.1.17.10.25: {gloss: "to-be-going-to-do"}   # πράξειν
+    med.1.17.11.1: {gloss: "the"}   # τὸ
+    med.1.17.11.2: {gloss: "to-have-known"}   # γνῶναι
+    med.1.17.11.3: {gloss: "Apollonius"}   # Ἀπολλώνιον
+    med.1.17.11.4: {gloss: "Rusticus"}   # Ῥούστικον
+    med.1.17.11.5: {gloss: "Maximus"}   # Μάξιμον
+    med.1.17.12.1: {gloss: "the"}   # τὸ
+    med.1.17.12.2: {gloss: "to-have-pictured"}   # φαντασθῆναι
+    med.1.17.12.3: {gloss: "about"}   # περὶ
+    med.1.17.12.4: {gloss: "the"}   # τοῦ
+    med.1.17.12.5: {gloss: "according-to"}   # κατὰ
+    med.1.17.12.6: {gloss: "nature"}   # φύσιν
+    med.1.17.12.7: {gloss: "life"}   # βίου
+    med.1.17.12.8: {gloss: "clearly"}   # ἐναργῶς
+    med.1.17.12.9: {gloss: "and"}   # καὶ
+    med.1.17.12.10: {gloss: "often"}   # πολλάκις
+    med.1.17.12.11: {gloss: "of-what-sort"}   # οἷός
+    med.1.17.12.12: {gloss: "a"}   # τίς
+    med.1.17.12.13: {gloss: "it-is"}   # ἐστιν
+    med.1.17.12.14: {gloss: "so-that"}   # ὥστε
+    med.1.17.12.15: {gloss: "as-far-as"}   # ὅσον
+    med.1.17.12.16: {gloss: "depends-on"}   # ἐπὶ
+    med.1.17.12.17: {gloss: "the"}   # τοῖς
+    med.1.17.12.18: {gloss: "gods"}   # θεοῖς
+    med.1.17.12.19: {gloss: "and"}   # καὶ
+    med.1.17.12.20: {gloss: "the"}   # ταῖς
+    med.1.17.12.21: {gloss: "from-there"}   # ἐκεῖθεν
+    med.1.17.12.22: {gloss: "gifts"}   # διαδόσεσι
+    med.1.17.12.23: {gloss: "and"}   # καὶ
+    med.1.17.12.24: {gloss: "helps"}   # συλλήψεσι
+    med.1.17.12.25: {gloss: "and"}   # καὶ
+    med.1.17.12.26: {gloss: "inspirations"}   # ἐπιπνοίαις
+    med.1.17.13.1: {gloss: "nothing"}   # μηδὲν
+    med.1.17.13.2: {gloss: "to-hinder"}   # κωλύειν
+    med.1.17.13.3: {gloss: "already"}   # ἤδη
+    med.1.17.13.4: {gloss: "according-to"}   # κατὰ
+    med.1.17.13.5: {gloss: "nature"}   # φύσιν
+    med.1.17.13.6: {gloss: "to-live"}   # ζῆν
+    med.1.17.13.7: {gloss: "me"}   # με
+    med.1.17.13.8: {gloss: "to-fall-short"}   # ἀπολείπεσθαι
+    med.1.17.13.9: {gloss: "but"}   # δὲ
+    med.1.17.13.10: {gloss: "still"}   # ἔτι
+    med.1.17.13.11: {gloss: "of-this"}   # τούτου
+    med.1.17.13.12: {gloss: "through"}   # παρὰ
+    med.1.17.13.13: {gloss: "the"}   # τὴν
+    med.1.17.13.14: {gloss: "my-own"}   # ἐμὴν
+    med.1.17.13.15: {gloss: "fault"}   # αἰτίαν
+    med.1.17.13.16: {gloss: "and"}   # καὶ
+    med.1.17.13.17: {gloss: "through"}   # παρὰ
+    med.1.17.13.18: {gloss: "the"}   # τὸ
+    med.1.17.13.19: {gloss: "not"}   # μὴ
+    med.1.17.13.20: {gloss: "to-keep"}   # διατηρεῖν
+    med.1.17.13.21: {gloss: "the"}   # τὰς
+    med.1.17.13.22: {gloss: "from"}   # ἐκ
+    med.1.17.13.23: {gloss: "the"}   # τῶν
+    med.1.17.13.24: {gloss: "gods"}   # θεῶν
+    med.1.17.13.25: {gloss: "reminders"}   # ὑπομνήσεις
+    med.1.17.13.26: {gloss: "and"}   # καὶ
+    med.1.17.13.27: {gloss: "all-but"}   # μονονουχὶ
+    med.1.17.13.28: {gloss: "instructions"}   # διδασκαλίας
+    med.1.17.14.1: {gloss: "the"}   # τὸ
+    med.1.17.14.2: {gloss: "to-have-held-out"}   # ἀντισχεῖν
+    med.1.17.14.3: {gloss: "for-me"}   # μοι
+    med.1.17.14.4: {gloss: "the"}   # τὸ
+    med.1.17.14.5: {gloss: "body"}   # σῶμα
+    med.1.17.14.6: {gloss: "for"}   # ἐπὶ
+    med.1.17.14.7: {gloss: "so-long"}   # τοσοῦτον
+    med.1.17.14.8: {gloss: "in"}   # ἐν
+    med.1.17.14.9: {gloss: "such"}   # τοιούτῳ
+    med.1.17.14.10: {gloss: "a-life"}   # βίῳ
+    med.1.17.15.1: {gloss: "the"}   # τὸ
+    med.1.17.15.2: {gloss: "neither"}   # μήτε
+    med.1.17.15.3: {gloss: "Benedicta"}   # Βενεδίκτης
+    med.1.17.15.4: {gloss: "to-have-touched"}   # ἅψασθαι
+    med.1.17.15.5: {gloss: "nor"}   # μήτε
+    med.1.17.15.6: {gloss: "Theodotus"}   # Θεοδότου
+    med.1.17.15.7: {gloss: "but"}   # ἀλλὰ
+    med.1.17.15.8: {gloss: "even"}   # καὶ
+    med.1.17.15.9: {gloss: "later"}   # ὕστερον
+    med.1.17.15.10: {gloss: "in"}   # ἐν
+    med.1.17.15.11: {gloss: "erotic"}   # ἐρωτικοῖς
+    med.1.17.15.12: {gloss: "passions"}   # πάθεσι
+    med.1.17.15.13: {gloss: "having-come-to-be"}   # γενόμενον
+    med.1.17.15.14: {gloss: "to-have-become-sound"}   # ὑγιᾶναι
+    med.1.17.16.1: {gloss: "the"}   # τὸ
+    med.1.17.16.2: {gloss: "having-been-angry"}   # χαλεπήναντα
+    med.1.17.16.3: {gloss: "often"}   # πολλάκις
+    med.1.17.16.4: {gloss: "with-Rusticus"}   # Ῥουστίκῳ
+    med.1.17.16.5: {gloss: "nothing"}   # μηδὲν
+    med.1.17.16.6: {gloss: "more"}   # πλέον
+    med.1.17.16.7: {gloss: "to-have-done"}   # πρᾶξαι
+    med.1.17.16.8: {gloss: "for"}   # ἐφ’
+    med.1.17.16.9: {gloss: "which"}   # ᾧ
+    med.1.17.16.10: {gloss: "would"}   # ἂν
+    med.1.17.16.11: {gloss: "I-have-repented"}   # μετέγνων
+    med.1.17.17.1: {gloss: "the"}   # τὸ
+    med.1.17.17.2: {gloss: "being-destined"}   # μέλλουσαν
+    med.1.17.17.3: {gloss: "young"}   # νέαν
+    med.1.17.17.4: {gloss: "to-die"}   # τελευτᾶν
+    med.1.17.17.5: {gloss: "the"}   # τὴν
+    med.1.17.17.6: {gloss: "one-who-bore-me"}   # τεκοῦσαν
+    med.1.17.17.7: {gloss: "nevertheless"}   # ὅμως
+    med.1.17.17.8: {gloss: "to-have-lived"}   # οἰκῆσαι
+    med.1.17.17.9: {gloss: "with"}   # μετ’
+    med.1.17.17.10: {gloss: "me"}   # ἐμοῦ
+    med.1.17.17.11: {gloss: "the"}   # τὰ
+    med.1.17.17.12: {gloss: "last"}   # τελευταῖα
+    med.1.17.17.13: {gloss: "years"}   # ἔτη
+    med.1.17.18.1: {gloss: "the"}   # τὸ
+    med.1.17.18.2: {gloss: "as-often-as"}   # ὁσάκις
+    med.1.17.18.3: {gloss: "I-wished"}   # ἐβουλήθην
+    med.1.17.18.4: {gloss: "to-help"}   # ἐπικουρῆσαί
+    med.1.17.18.5: {gloss: "someone"}   # τινι
+    med.1.17.18.6: {gloss: "being-poor"}   # πενομένῳ
+    med.1.17.18.7: {gloss: "or"}   # ἢ
+    med.1.17.18.8: {gloss: "for"}   # εἰς
+    med.1.17.18.9: {gloss: "other"}   # ἄλλο
+    med.1.17.18.10: {gloss: "some-thing"}   # τι
+    med.1.17.18.11: {gloss: "being-in-need"}   # χρῄζοντι
+    med.1.17.18.12: {gloss: "never"}   # μηδέποτε
+    med.1.17.18.13: {gloss: "to-have-heard"}   # ἀκοῦσαί
+    med.1.17.18.14: {gloss: "me"}   # με
+    med.1.17.18.15: {gloss: "that"}   # ὅτι
+    med.1.17.18.16: {gloss: "not"}   # οὐκ
+    med.1.17.18.17: {gloss: "there-is"}   # ἔστι
+    med.1.17.18.18: {gloss: "to-me"}   # μοι
+    med.1.17.18.19: {gloss: "money"}   # χρήματα
+    med.1.17.18.20: {gloss: "from-which"}   # ὅθεν
+    med.1.17.18.21: {gloss: "it-may-be-done"}   # γένηται
+    med.1.17.18.22: {gloss: "and"}   # καὶ
+    med.1.17.18.23: {gloss: "the"}   # τὸ
+    med.1.17.18.24: {gloss: "to-self"}   # αὐτῷ
+    med.1.17.18.25: {gloss: "to-me"}   # ἐμοὶ
+    med.1.17.18.26: {gloss: "a-need"}   # χρείαν
+    med.1.17.18.27: {gloss: "like"}   # ὁμοίαν
+    med.1.17.18.28: {gloss: "so-as"}   # ὡς
+    med.1.17.18.29: {gloss: "from"}   # παρ’
+    med.1.17.18.30: {gloss: "another"}   # ἑτέρου
+    med.1.17.18.31: {gloss: "to-receive-a-share"}   # μεταλαβεῖν
+    med.1.17.18.32: {gloss: "not"}   # μὴ
+    med.1.17.18.33: {gloss: "to-have-befallen"}   # συμπεσεῖν
+    med.1.17.19.1: {gloss: "the"}   # τὸ
+    med.1.17.19.2: {gloss: "the"}   # τὴν
+    med.1.17.19.3: {gloss: "wife"}   # γυναῖκα
+    med.1.17.19.4: {gloss: "such"}   # τοιαύτην
+    med.1.17.19.5: {gloss: "to-be"}   # εἶναι
+    med.1.17.19.6: {gloss: "so"}   # οὑτωσὶ
+    med.1.17.19.7: {gloss: "on-one-hand"}   # μὲν
+    med.1.17.19.8: {gloss: "obedient"}   # πειθήνιον
+    med.1.17.19.9: {gloss: "so"}   # οὕτω
+    med.1.17.19.10: {gloss: "and"}   # δὲ
+    med.1.17.19.11: {gloss: "affectionate"}   # φιλόστοργον
+    med.1.17.19.12: {gloss: "so"}   # οὕτω
+    med.1.17.19.13: {gloss: "and"}   # δὲ
+    med.1.17.19.14: {gloss: "simple"}   # ἀφελῆ
+    med.1.17.20.1: {gloss: "the"}   # τὸ
+    med.1.17.20.2: {gloss: "suitable"}   # ἐπιτηδείων
+    med.1.17.20.3: {gloss: "of-tutors"}   # τροφέων
+    med.1.17.20.4: {gloss: "for"}   # εἰς
+    med.1.17.20.5: {gloss: "the"}   # τὰ
+    med.1.17.20.6: {gloss: "children"}   # παιδία
+    med.1.17.20.7: {gloss: "to-have-had-plenty"}   # εὐπορῆσαι
+    med.1.17.21.1: {gloss: "the"}   # τὸ
+    med.1.17.21.2: {gloss: "through"}   # δι’
+    med.1.17.21.3: {gloss: "dreams"}   # ὀνειράτων
+    med.1.17.21.4: {gloss: "remedies"}   # βοηθήματα
+    med.1.17.21.5: {gloss: "to-have-been-given"}   # δοθῆναι
+    med.1.17.21.6: {gloss: "others"}   # ἄλλα
+    med.1.17.21.7: {gloss: "both"}   # τε
+    med.1.17.21.8: {gloss: "and"}   # καὶ
+    med.1.17.21.9: {gloss: "so-as"}   # ὡς
+    med.1.17.21.10: {gloss: "not"}   # μὴ
+    med.1.17.21.11: {gloss: "to-spit"}   # πτύειν
+    med.1.17.21.12: {gloss: "blood"}   # αἷμα
+    med.1.17.21.13: {gloss: "and"}   # καὶ
+    med.1.17.21.14: {gloss: "not"}   # μὴ
+    med.1.17.21.15: {gloss: "to-be-dizzy"}   # ἰλιγγιᾶν
+    med.1.17.21.16: {gloss: "and"}   # καὶ
+    med.1.17.21.17: {gloss: "of-this"}   # τούτου
+    med.1.17.21.18: {gloss: "in"}   # ἐν
+    med.1.17.21.19: {gloss: "Caieta"}   # Καιήτῃ
+    med.1.17.21.20: {gloss: "as"}   # ὥσπερ
+    med.1.17.21.21: {gloss: "you-will-use"}   # χρήσῃ
+    med.1.17.22.1: {gloss: "the"}   # τὸ
+    med.1.17.22.2: {gloss: "when"}   # ὅπως
+    med.1.17.22.3: {gloss: "I-desired"}   # ἐπεθύμησα
+    med.1.17.22.4: {gloss: "philosophy"}   # φιλοσοφίας
+    med.1.17.22.5: {gloss: "not"}   # μὴ
+    med.1.17.22.6: {gloss: "to-have-fallen"}   # ἐμπεσεῖν
+    med.1.17.22.7: {gloss: "into"}   # εἴς
+    med.1.17.22.8: {gloss: "some"}   # τινα
+    med.1.17.22.9: {gloss: "sophist"}   # σοφιστὴν
+    med.1.17.22.10: {gloss: "nor"}   # μηδὲ
+    med.1.17.22.11: {gloss: "to-have-sat-down"}   # ἀποκαθίσαι
+    med.1.17.22.12: {gloss: "to"}   # ἐπὶ
+    med.1.17.22.13: {gloss: "the"}   # τὸ
+    med.1.17.22.14: {gloss: "writing"}   # συγγράφειν
+    med.1.17.22.15: {gloss: "or"}   # ἢ
+    med.1.17.22.16: {gloss: "syllogisms"}   # συλλογισμοὺς
+    med.1.17.22.17: {gloss: "to-resolve"}   # ἀναλύειν
+    med.1.17.22.18: {gloss: "or"}   # ἢ
+    med.1.17.22.19: {gloss: "about"}   # περὶ
+    med.1.17.22.20: {gloss: "the"}   # τὰ
+    med.1.17.22.21: {gloss: "heavenly-phenomena"}   # μετεωρολογικὰ
+    med.1.17.22.22: {gloss: "to-be-occupied"}   # καταγίνεσθαι
+    med.1.17.23.1: {gloss: "all"}   # πάντα
+    med.1.17.23.2: {gloss: "for"}   # γὰρ
+    med.1.17.23.3: {gloss: "these-things"}   # ταῦτα
+    med.1.17.23.4: {gloss: "of-gods"}   # ʽθεῶν
+    med.1.17.23.5: {gloss: "as-helpers"}   # βοηθῶν
+    med.1.17.23.6: {gloss: "and"}   # καὶ
+    med.1.17.23.7: {gloss: "of-fortune"}   # τύχης
+    med.1.17.23.8: {gloss: "has-need"}   # δεῖται.ʼ
+    med.1.17.24.1: {gloss: "the-things"}   # Τὰ
+    med.1.17.24.2: {gloss: "among"}   # ἐν
+    med.1.17.24.3: {gloss: "the-Quadi"}   # Κουάδοις
+    med.1.17.24.4: {gloss: "by"}   # πρὸς
+    med.1.17.24.5: {gloss: "the"}   # τῷ
+    med.1.17.24.6: {gloss: "Granua"}   # Γρανούᾳ
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-18
+  why: "corrections to the GLAUx automatic parse of 1.17: 46 of 440 tokens corrected (15 lemmas, 37 morph tags). The τό heading each item of the list is read as accusative, the object of the verb understood with Παρά ('I have from the gods'), as GLAUx tags most of them; 8 that GLAUx tagged nominative are set to accusative. The τό of 1.17.3, subject of εὐποιία with the copula understood, is set to nominative. Lemmas that are not headwords or carry the wrong accent (πάππης, σημειωδός, κόμπον, κατεσχίσκω, μονονου, συλλήψις, Ῥουστίκον, Κόυαδος, Καίητη, χαλεπήναντα given as its own lemma); real but wrong lemmas (προέρχομαι for πρόειμι, τίς for enclitic τις, τροφέω for τροφεύς, masculine Βενεδίκτης for the feminine name); agreement errors in gender (two-termination adjectives agreeing with γυναῖκα, τοῦ ὁμοίου κόμπου, ἐπιτηδείων τροφέων, πάντα τὸν τῦφον, ἑτέρου); subjects and predicates of infinitives tagged nominative, and the subjects of ἔστι and δεῖται tagged accusative; comparative and superlative adverbs (ὕστερον, ἐγγυτάτω, ταπεινότερον, ῥᾳθυμότερον) tagged as adjectives or without degree; εὐποιία tagged as a preposition; προέπεσον as 3rd plural for 1st singular. Two further tokens (ʽθεῶν, δεῖται.ʼ) carry the quotation marks the tokenizer does not strip and got no treebank word; their lemma and morph are supplied here and not counted as parse errors. βοηθῶν is set to βοηθός (helpers), not a participle of βοηθέω."
+  status: draft
+  set:
+    med.1.17.1.4: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.17.2.6: {morph: v1saia---}   # προέπεσον: 1st sg (I fell), not 3rd pl
+    med.1.17.3.4: {morph: n-s---fn-}   # εὐποιία: noun, predicate nominative, not preposition
+    med.1.17.3.5: {morph: l-s---nn-}   # τὸ: articular infinitive is the subject
+    med.1.17.4.11: {lemma: πάππος}   # πάππου: lemma not a headword
+    med.1.17.5.1: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.17.5.8: {morph: a-s---ma-}   # πάντα: agrees with τὸν τῦφον
+    med.1.17.5.29: {lemma: σημειώδης}   # σημειωδῶν: lemma not a headword
+    med.1.17.5.37: {morph: l-s---mg-}   # τοῦ: agrees with κόμπου, masculine
+    med.1.17.5.38: {morph: a-s---mg-}   # ὁμοίου: agrees with κόμπου, masculine
+    med.1.17.5.39: {lemma: κόμπος, morph: n-s---mg-}   # κόμπου: κόμπος is masculine; κόμπον is not a headword
+    med.1.17.6.3: {morph: d-------s}   # ἐγγυτάτω: superlative adverb
+    med.1.17.6.11: {morph: d-------c}   # ταπεινότερον: comparative adverb with ἔχειν
+    med.1.17.6.13: {morph: d-------c}   # ῥᾳθυμότερον: comparative adverb with ἔχειν
+    med.1.17.8.1: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.17.8.2: {morph: n-p---na-}   # παιδία: subject of the infinitive, accusative
+    med.1.17.8.4: {morph: a-p---na-}   # ἀφυῆ: predicate of the infinitive, accusative
+    med.1.17.8.11: {morph: a-p---na-}   # διάστροφα: predicate of the infinitive, accusative
+    med.1.17.9.19: {lemma: κατέχω}   # κατεσχέθην: aorist passive of κατέχω; lemma not a word
+    med.1.17.9.24: {lemma: πρόειμι}   # προιόντα: προϊέναι belongs to πρόειμι (εἶμι)
+    med.1.17.10.1: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.17.10.17: {morph: l-s---ng-}   # τοῦ: article of the infinitive τοῦ ... πράξειν
+    med.1.17.10.23: {morph: d-------c}   # ὕστερον: comparative adverb
+    med.1.17.12.1: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.17.12.12: {lemma: τις}   # τίς: enclitic indefinite, accent from ἐστιν
+    med.1.17.12.24: {lemma: σύλληψις}   # συλλήψεσι: headword accent
+    med.1.17.13.27: {lemma: μονονουχί}   # μονονουχὶ: lemma not a headword
+    med.1.17.15.1: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.17.15.3: {lemma: Βενεδίκτη, morph: n-s---fg-}   # Βενεδίκτης: feminine name, genitive after ἅψασθαι
+    med.1.17.16.1: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.17.16.2: {lemma: χαλεπαίνω, morph: v-sapama-}   # χαλεπήναντα: aorist participle, lemma was the surface form
+    med.1.17.16.4: {lemma: Ῥούστικος, morph: n-s---md-}   # Ῥουστίκῳ: masculine name, lemma not a headword
+    med.1.17.18.19: {morph: n-p---nn-}   # χρήματα: subject of ἔστι, nominative
+    med.1.17.18.30: {morph: a-s---mg-}   # ἑτέρου: from another person, masculine
+    med.1.17.19.1: {morph: l-s---na-}   # τὸ: list item, accusative object of the verb understood with Παρά
+    med.1.17.19.8: {morph: a-s---fa-}   # πειθήνιον: agrees with γυναῖκα, feminine
+    med.1.17.19.11: {morph: a-s---fa-}   # φιλόστοργον: agrees with γυναῖκα, feminine
+    med.1.17.19.14: {morph: a-s---fa-}   # ἀφελῆ: agrees with γυναῖκα, feminine
+    med.1.17.20.2: {morph: a-p---mg-}   # ἐπιτηδείων: agrees with τροφέων, masculine
+    med.1.17.20.3: {lemma: τροφεύς, morph: n-p---mg-}   # τροφέων: noun, not participle of τροφέω
+    med.1.17.21.19: {lemma: Καιήτη}   # Καιήτῃ: headword accent
+    med.1.17.23.1: {morph: a-p---nn-}   # πάντα: subject of δεῖται, nominative
+    med.1.17.23.3: {morph: a-p---nn-}   # ταῦτα: subject of δεῖται, nominative
+    med.1.17.23.4: {lemma: θεός, morph: n-p---mg-}   # ʽθεῶν: quotation mark kept, no treebank word
+    med.1.17.23.5: {lemma: βοηθός, morph: a-p---mg-}   # βοηθῶν: genitive plural of βοηθός, not participle
+    med.1.17.23.8: {lemma: δέω, morph: v3spie---}   # δεῖται.ʼ: quotation mark kept, no treebank word; δεῖται, needs
+    med.1.17.24.1: {morph: l-p---nn-}   # Τὰ: heading, nominative
+    med.1.17.24.3: {lemma: Κουάδοι}   # Κουάδοις: lemma not a headword
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-18
+  why: "review of book 1: lemmas (εὐδοκιμέω, πατρονομέω, Τοῦσκλον, ῥητορικός as an adjective, as ποιητικός beside it), agreement of an article with its adjective, αὐτός as an adjective as elsewhere, Σκουτάριος as a noun like Παλμουλάριος, and five glosses"
+  status: draft
+  set:
+    med.1.16.20.33: {lemma: εὐδοκιμέω}   # εὐδοκιμῶσι
+    med.1.16.12.6: {morph: l-p---ng-}   # τῶν, with ἐλαχίστων
+    med.1.15.5.4: {morph: a-s---md-}   # αὐτῷ
+    med.1.5.1.12: {morph: n-s---mn-}   # Σκουτάριος
+    med.1.17.9.8: {lemma: ῥητορικός, morph: a-s---fd-}   # ῥητορικῇ, beside ποιητικῇ
+    med.1.16.29.4: {lemma: Τοῦσκλον, morph: n-p---nd-}   # Τούσκλοις, Tusculum
+    med.1.9.2.7: {lemma: πατρονομέω}   # πατρονομουμένου
+    med.1.16.27.5: {gloss: "leading-up"}   # ἀνάγουσα
+    med.1.16.9.10: {gloss: "but"}   # ἀλλ’
+    med.1.16.13.8: {gloss: "in-the-time-of"}   # ἐπ’
+    med.1.17.4.26: {gloss: "to-exceed"}   # ἐπιλαβεῖν (τοῦ χρόνου)
+    med.1.16.8.6: {gloss: "to-have-been-permitted"}   # ἐφεῖσθαι

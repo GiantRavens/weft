@@ -11,8 +11,8 @@ unit: section
 section_noun: passage
 written: {year: 1493, display: "1493", label: "dated at Rome, 4 May 1493 (quarto nonas Maii), seven weeks after Columbus landed at Palos on his return; the chancery issued it in June and dated it back to May"}
 status: phase-0
-extent: {is: excerpt, of: "the address, the account of the voyage, the grant and the dating; five passages of the bull are omitted"}
-pilot: {sections: [salutatio, arenga, narratio, donatio, datum]}
+extent: {is: whole, of: "the whole bull, from the address to the chancery notes below the date"}
+pilot: {sections: [salutatio, arenga, granata, narratio, propositum, hortatio, donatio, mandatum, transumpta, sanctio, datum, notae]}
 edition:
   id: la-wikisource-intercaetera
   name: "Inter caetera (quarto nonas Maii 1493) as on Latin Wikisource, which reproduces the Latin printed by Frances Gardiner Davenport (1917) from the promulgated original in the Archivo General de Indias, Seville (Patronato 1-1-1, no. 3)"
@@ -46,6 +46,7 @@ translations:
     url: https://archive.org/download/europeantreaties01daveuoft/europeantreaties01daveuoft_djvu.txt
     sha256: 58eba163d857b3547361831b17fe54b524ad6e5496735440b6892d15784fc190
   - id: blair-robertson1903
+    partial: true                  # their notes below the date are the Vatican register's, not the Seville original's
     translator: "Emma Helen Blair and James Alexander Robertson (eds.)"
     year: 1903
     form: "prose; The Philippine Islands, 1493-1803, vol. 1 (Cleveland: Arthur H. Clark, 1903), pp. 105-111, 'Inter Cætera--May 4'. Translated from the copy in the Vatican register (it reads lex, 'law', where the Seville original reads religio, and abridges the formulas with 'etc.'). Project Gutenberg #13255"
@@ -56,10 +57,12 @@ translations:
     sha256: 1ff7a0f39756cdf999ebfcb9403146a5f3eaee4eaab78a1284785e41c316f402
 predicted_gaps:
   - "no treebank: lemma and morphology hand-annotated (Lewis and Short; chancery and Medieval Latin words after Niermeyer and Du Cange), draft"
-  - "five passages, not the whole bull: the long sentence praising the conquest of Granada, the paragraph on the sovereigns' purpose, the exhortation to send missionaries, the prohibition on others sailing west of the line, and the closing formulas are omitted"
-  - "the Wikisource page names no source; its agreement with Davenport's printed Latin, word for word in these lines, was checked against the Internet Archive OCR of Davenport, not against the manuscript or a facsimile"
+  - "the Wikisource page misreads Davenport's illa as ilia and spaces his two dashes; the print (p. 73) is followed, and the three differences are declared in edition.yaml"
+  - "the chancery notes below the date (Gratis de mandato, Jun[io], the officers' names) are given in the reading Davenport credits to Vander Linden, with the expansions in square brackets; the edition follows her print, Jo. and MUCCIARELLIS. with its full stop, where the Wikisource page differs; the officers other than Podocatharus are not identified"
+  - "the Wikisource page names no source; its agreement with Davenport's printed Latin, word for word, was checked against the Internet Archive OCR of Davenport, not against the manuscript or a facsimile"
   - "the original's e for ae and oe (cetera, regine, presertim) is kept on the page; the quantity table restores the diphthong in the classical reading, and the Italian reading says e for both, as Italian readers did"
   - "the Italian reading of 1493 is the module's italian-humanist scheme, built for Pico's northern Italy in the 1480s and reconstructed from Italian sound history and the later ecclesiastical tradition; it marks s between vowels as z, a northern trait that a Roman or Spanish-born chancery reader may not have had; approximate"
+  - "the quantity table is keyed by the printed form, so a form takes one length wherever it stands: facta is read with the long a of the ablative in the account of the voyage, also where it is nominative in the passage on Granada (the stress is the same)"
   - "Spanish and Latinized names (Fernando, Elisabeth, Colon, de los Azores, Caboverde) are read by the Latin rules; their Castilian sound is not modeled"
   - "the dating formula's numerals (millesimo quadringentesimo nonagesimo tertio) are written out in the original as here, so no numerals need expanding"
   - "Davenport's English rearranges the grant sentence (the authority clause comes before the grant, the line after it), so the grant is one span; Blair and Robertson do the same"

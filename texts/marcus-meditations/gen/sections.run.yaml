@@ -1,6 +1,23 @@
 run:
   weft: 0.1.0
   sections:
+  - '1.1'
+  - '1.2'
+  - '1.3'
+  - '1.4'
+  - '1.5'
+  - '1.6'
+  - '1.7'
+  - '1.8'
+  - '1.9'
+  - '1.10'
+  - '1.11'
+  - '1.12'
+  - '1.13'
+  - '1.14'
+  - '1.15'
+  - '1.16'
+  - '1.17'
   - '2.1'
   - '2.2'
   - '2.3'
@@ -19,17 +36,23 @@ run:
   - '2.16'
   - '2.17'
 counts:
-  lines: 110
-  tokens: 1514
+  lines: 231
+  tokens: 3361
 failures:
-  form-mismatch: 2
-  no-treebank-word: 2
+  form-mismatch: 5
+  no-treebank-word: 5
   morph-empty-declinable: 2
 samples:
   form-mismatch:
+  - 1.16.29 φελώνῃ|τελώνῃ
+  - 1.17.23 ʽθεῶν|θεῶν
+  - 1.17.23 δεῖται.ʼ|δεῖται
   - 2.13.1 ʽτὰ|τὰ
   - 2.13.1 ἐρευνῶντοςʼ|ἐρευνῶντος
   no-treebank-word:
+  - 1.16.29 φελώνῃ
+  - 1.17.23 ʽθεῶν
+  - 1.17.23 δεῖται.ʼ
   - 2.13.1 ʽτὰ
   - 2.13.1 ἐρευνῶντοςʼ
   morph-empty-declinable:
@@ -41,7 +64,12 @@ failure_rate:
   morph-empty-declinable: 0.001
 shift_left: []
 predicted_gaps:
-- lemma and morphology are an automatic parse (GLAUx), not hand-checked; expect some errors (Book 2 review corrected 142 of 1409 tokens in 2.2-2.17, see curated/)
+- lemma and morphology are an automatic parse (GLAUx), read token by token and corrected in curated/; book 2 needed 142 corrections in 1409 tokens of 2.2-2.17; book 1 has 260 entries in 1847 tokens, of
+  which 129 only set the article and adjective heading an item of the list (τὸ καλόηθες) to accusative, a form identical with the nominative, which GLAUx tags now one way and now the other; the other 131
+  correct lemmas, gender, case, tense and part of speech
+- 'form-mismatch and no-treebank-word, 3 each, in book 1: 1.16.29, where Leopold prints φελώνῃ and the GLAUx text reads τελώνῃ, and the quotation marks on ʽθεῶν and δεῖται.ʼ in 1.17.23; lemma and morph
+  for all three are supplied in curated/'
+- 1.14.3 breaks off after the article (ἐν τῇ τιμῇ τῆς ·, with no noun after τῆς; Long translates "in my regard for philosophy"); the page prints the high stop as Leopold sets it
 - Koine pronunciation of the late 2nd century is reconstructed; Marcus was a Latin speaker writing Greek
 - 'form-mismatch and no-treebank-word, 2 each, in 2.13: the Perseus text prints the Pindar quotation in ʽ ʼ marks, which the tokenizer keeps on τὰ and ἐρευνῶντος; lemma and morph for both are supplied in
   curated/'

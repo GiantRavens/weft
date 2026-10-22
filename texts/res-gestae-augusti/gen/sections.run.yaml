@@ -6,16 +6,53 @@ run:
   - '2'
   - '3'
   - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '10'
+  - '11'
+  - '12'
+  - '13'
+  - '14'
+  - '15'
+  - '16'
+  - '17'
+  - '18'
+  - '19'
+  - '20'
+  - '21'
+  - '22'
+  - '23'
+  - '24'
+  - '25'
+  - '26'
+  - '27'
+  - '28'
+  - '29'
+  - '30'
+  - '31'
+  - '32'
+  - '33'
   - '34'
   - '35'
 counts:
-  lines: 43
-  tokens: 444
+  lines: 193
+  tokens: 2512
 failures: {}
 samples: {}
 failure_rate: {}
 shift_left: []
 predicted_gaps:
+- the Wikisource page sets stray tildes between words in chapters 8 to 27, splits three words with a space ([qu] am, p[r] aesenti, princi[pi] bus) and runs seven pairs together (sena]tu[de]poposci, D.Laelio
+  and others); the edition removes the tildes and corrects the spacing, and declares each change in edition.yaml
+- 'misprints in chapters 5 to 33 (campam, soliv, ivierem, constituerunt for constiterunt, poera, Rovos and others) are kept on the page and annotated and sounded as the intended word, as in chapter 35;
+  four places are annotated for a word the print does not give: esse (10.2) as esset, which the syntax needs; de (21.3) as the end of aede, the rest of which the page omits; praerant (17.1) as praeerant;
+  and n[eo (17.2) as meo. These four are sounded as printed'
+- 'the quantity table is keyed by form, so a form that stands for two words would take one length; where that matters the edition token carries its own lengths (n: meă, eā, senātūs, sēstertiōs, ā for the
+  preposition A in 33.1). Forms whose two uses differ only in a final length (Italia, Africa, Sicilia, summa, tribunicia, and the abbreviations M., P., Cn., Ti.) keep one value; the stress is the same either
+  way'
 - 'no treebank on this text: the Latin Dependency Treebank 2.1 annotates the Res Gestae on an unbracketed text close to the one on The Latin Library whose wording differs from the Wikisource text in several
   places (ch. 1 sententiae dicendae tribuens for simul dans sententiae ferendae, ch. 2 trucidaverunt for interfecerunt, ch. 4 Cum autem pluris ... decrevisset for decernente pluris), and the stream alignment
   cannot skip from ch. 4 to ch. 34; lemma and morphology are hand-annotated (Lewis and Short), draft, and cross-checked against the treebank where the words agree'

@@ -64,7 +64,7 @@ the page shows no invitation.
 | Sumerian | `sumerian` | Enheduanna, Temple Hymn 5 | recon-2300 (first), classroom | low |
 | Akkadian | `akkadian` | Hammurabi, prologue | ob-1750 (first), classroom | low |
 | Vedic Sanskrit | `sanskrit` | Rigveda 1.1 | vedic (first), modern | medium |
-| Ancient Greek | `greek` | Iliad, Odyssey, Aristotle | restored (first), erasmian | not set |
+| Ancient Greek | `greek` | Iliad, Odyssey, Plato, Aristotle | restored (first), erasmian | not set |
 | | | Nicene Creed (381) | koine (first), erasmian | medium |
 | | | John, Beatitudes, 1 Corinthians 13 | koine (first), erasmian | not set |
 | | | Epictetus, Marcus Aurelius | koine (first), restored, erasmian | not set |

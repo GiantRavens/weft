@@ -1,0 +1,22 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+counts:
+  lines: 252
+  tokens: 3306
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank covers this text: lemma, morphology and gloss are hand-annotated after Zoëga, A Concise Dictionary of Old Icelandic (1910), by several hands under one convention table, and the verses also
+  carry staves and meter (draft)'
+- the normalized text is Guðni Jónsson and Bjarni Vilhjálmsson's (Fornaldarsögur Norðurlanda, 1943-44), not a critical edition; the page reproduces it from heimskringla.no with the markup stripped
+- no public-domain English translation of the prose exists; the English beside each line is Weft's own draft translation. Vigfusson and Powell (1883) translate the verses only, and theirs is aligned where
+  they do. The modern translations are cited, not printed
+- the old-norse sound scheme models the 13th century approximately, from the normalized spelling

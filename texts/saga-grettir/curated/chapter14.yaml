@@ -6,7 +6,7 @@
   status: draft
   set:
     gre.14.1.1: {gloss: "Asmund"}   # Ásmundur
-    gre.14.1.2: {gloss: "greyhair-long"}   # hærulangur
+    gre.14.1.2: {gloss: "grayhair-long"}   # hærulangur
     gre.14.1.3: {gloss: "set-up"}   # setti
     gre.14.1.4: {gloss: "household"}   # bú
     gre.14.1.5: {gloss: "at"}   # að
@@ -159,7 +159,7 @@
     gre.14.16.6: {gloss: "was"}   # var
     gre.14.16.7: {gloss: "Ospak"}   # Óspakur
     gre.14.16.8: {gloss: "who"}   # er
-    gre.14.16.9: {gloss: "quarrelled"}   # deildi
+    gre.14.16.9: {gloss: "quarreled"}   # deildi
     gre.14.16.10: {gloss: "with"}   # við
     gre.14.16.11: {gloss: "Odd"}   # Odd
     gre.14.16.12: {gloss: "Ofeig's-son"}   # Ófeigsson
@@ -1240,3 +1240,129 @@
     gre.14.43.8: {lemma: "eldaskáli"}   # eldaskálar: plural of eldaskáli, as in 93.4 and 104.5
     gre.14.44.7: {lemma: "aftann"}   # öftnum: dative plural of aftann, 'evening'
     gre.14.95.9: {lemma: "meir", morph: "ADV|Degree=Cmp"}   # meir: the comparative adverb
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-18
+  why: "the three verses (after sentences 31, 53, 94), which IcePaHC leaves out: hand annotation after Cleasby and Vigfusson and Finnur Jónsson's Lexicon Poeticum, draft; lemmas in normalized Old Icelandic"
+  status: draft
+  set:
+    gre.14.31v1.1: {lemma: "þat", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    gre.14.31v1.2: {lemma: "gera", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act", gloss: "do"}   # göri
+    gre.14.31v1.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1|PronType=Prs", gloss: "I"}   # ek
+    gre.14.31v1.4: {lemma: "víst", morph: "ADV", gloss: "surely"}   # víst
+    gre.14.31v1.5: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    gre.14.31v1.6: {lemma: "vetra", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act", gloss: "it-turns-winter"}   # vetrar: impersonal vetra, 'it becomes winter'
+    gre.14.31v2.1: {lemma: "vinda", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act", gloss: "twist"}   # ving: vind ek, assimilated (vingk); vinda 'twist'
+    gre.14.31v2.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1|PronType=Prs", gloss: "I"}   # ek
+    gre.14.31v2.3: {lemma: "háls", morph: "NOUN|Case=Acc|Definite=Ind|Gender=Masc|Number=Sing", gloss: "neck"}   # háls
+    gre.14.31v2.4: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    gre.14.31v2.5: {lemma: "kjúklingr", morph: "NOUN|Case=Dat|Definite=Ind|Gender=Masc|Number=Plur", gloss: "goslings"}   # kjúklingum
+    gre.14.31v3.1: {lemma: "en", morph: "CCONJ", gloss: "but"}   # enn: the 1853 spelling of the conjunction en
+    gre.14.31v3.2: {lemma: "þótt", morph: "SCONJ", gloss: "though"}   # þótt
+    gre.14.31v3.3: {lemma: "ellri", morph: "ADJ|Case=Nom|Degree=Cmp|Gender=Fem|Number=Plur", gloss: "older-ones"}   # ellri: the older birds, the geese (gæs, feminine), set against the goslings
+    gre.14.31v3.4: {lemma: "finna", morph: "VERB|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid", gloss: "be-found"}   # finnist
+    gre.14.31v4.1: {lemma: "einn", morph: "NUM|Case=Acc|Gender=Masc|Number=Sing|NumType=Card", gloss: "one"}   # einn: read as accusative, 'one [neck]', taking up háls; 'I alone' (nominative) is possible; uncertain
+    gre.14.31v4.2: {lemma: "bera", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act", gloss: "take"}   # berr: first person with ek; the 1853 print gives the -r form; bera af 'take off'
+    gre.14.31v4.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1|PronType=Prs", gloss: "I"}   # ek
+    gre.14.31v4.4: {lemma: "af", morph: "ADP", gloss: "off"}   # af
+    gre.14.31v4.5: {lemma: "sérhverr", morph: "PRON|Case=Dat|Gender=Fem|Number=Sing|PronType=Tot", gloss: "each-one"}   # sèrhverri
+    gre.14.53v1.1: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1|PronType=Prs", gloss: "me"}   # Mik
+    gre.14.53v1.2: {lemma: "vilja", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act", gloss: "wants"}   # vill
+    gre.14.53v1.3: {lemma: "men", morph: "NOUN|Case=Gen|Definite=Ind|Gender=Neut|Number=Plur", gloss: "of-necklaces"}   # menja
+    gre.14.53v1.4: {lemma: "stökkvir", morph: "NOUN|Case=Nom|Definite=Ind|Gender=Masc|Number=Sing", gloss: "scatterer"}   # stökkvir: menja stökkvir, 'scatterer of necklaces': a generous man, here Asmund
+    gre.14.53v2.1: {lemma: "mjök", morph: "ADV", gloss: "much"}   # mjök
+    gre.14.53v2.2: {lemma: "kenna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act", gloss: "feel"}   # kenni
+    gre.14.53v2.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1|PronType=Prs", gloss: "I"}   # ek
+    gre.14.53v2.4: {lemma: "þat", morph: "PRON|Case=Gen|Gender=Neut|Number=Sing|PronType=Dem", gloss: "of-that"}   # þess
+    gre.14.53v2.5: {lemma: "brenna", morph: "VERB|VerbForm=Inf|Voice=Act", gloss: "to-burn"}   # brenna
+    gre.14.53v3.1: {lemma: "hoddagrund", morph: "NOUN|Case=Nom|Definite=Ind|Gender=Fem|Number=Sing", gloss: "hoards-ground"}   # hoddagrund: vocative, 'ground of hoards': a woman, here Asdis
+    gre.14.53v3.2: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    gre.14.53v3.3: {lemma: "hönd", morph: "NOUN|Case=Dat|Definite=Ind|Gender=Fem|Number=Plur", gloss: "hands"}   # höndum
+    gre.14.53v4.1: {lemma: "höfugr", morph: "ADJ|Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Sing", gloss: "heavy"}   # höfugt
+    gre.14.53v4.2: {lemma: "ráð", morph: "NOUN|Case=Nom|Definite=Ind|Gender=Neut|Number=Sing", gloss: "plan"}   # ráð
+    gre.14.53v4.3: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act", gloss: "is"}   # er
+    gre.14.53v4.4: {lemma: "þat", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    gre.14.53v4.5: {lemma: "báðir", morph: "DET|Case=Dat|Gender=Fem|Number=Plur|PronType=Tot", gloss: "both"}   # báðum
+    gre.14.53v5.1: {lemma: "láta", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act", gloss: "let"}   # Læt
+    gre.14.53v5.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1|PronType=Prs", gloss: "I"}   # ek
+    gre.14.53v5.3: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    gre.14.53v5.4: {lemma: "hringr", morph: "NOUN|Case=Gen|Definite=Ind|Gender=Masc|Number=Plur", gloss: "of-rings"}   # hringa
+    gre.14.53v5.5: {lemma: "hreytir", morph: "NOUN|Case=Dat|Definite=Ind|Gender=Masc|Number=Sing", gloss: "flinger"}   # hreyti: hringa hreytir, 'flinger of rings': Asmund again
+    gre.14.53v6.1: {lemma: "hörgerðr", morph: "NOUN|Case=Nom|Definite=Ind|Gender=Fem|Number=Sing", gloss: "flax-Gerd"}   # hörgerðr: vocative, 'flax-Gerðr': a woman, Asdis
+    gre.14.53v6.2: {lemma: "taka", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|VerbForm=Part|Voice=Act", gloss: "taken"}   # tekit: taka á 'touch'; læt ek tekit verða á, 'I let [him] be touched on'
+    gre.14.53v6.3: {lemma: "verða", morph: "AUX|VerbForm=Inf|Voice=Act", gloss: "be"}   # verða
+    gre.14.53v7.1: {lemma: "gerr", morph: "ADV|Degree=Cmp", gloss: "clearly"}   # gjör: read as the comparative adverb gerr, 'more clearly'; or the adjective gerr 'ready' agreeing with gögl; uncertain
+    gre.14.53v7.2: {lemma: "sjá", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act", gloss: "see"}   # sè
+    gre.14.53v7.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1|PronType=Prs", gloss: "I"}   # ek
+    gre.14.53v7.4: {lemma: "gildr", morph: "ADJ|Case=Gen|Definite=Ind|Degree=Pos|Gender=Neut|Number=Plur", gloss: "of-great"}   # gildra: gildr 'great', with sára; a noun gildra 'trap' is also possible; uncertain
+    gre.14.53v7.5: {lemma: "sár", morph: "NOUN|Case=Gen|Definite=Ind|Gender=Neut|Number=Plur", gloss: "of-wounds"}   # sára
+    gre.14.53v8.1: {lemma: "gagl", morph: "NOUN|Case=Acc|Definite=Ind|Gender=Neut|Number=Plur", gloss: "goslings"}   # gögl: gögl sára, 'goslings of wounds': birds of carrion, ravens or eagles; the reference here is disputed
+    gre.14.53v8.2: {lemma: "óskorinn", morph: "ADJ|Case=Dat|Definite=Ind|Degree=Pos|Gender=Masc|Number=Plur", gloss: "uncut"}   # úskornum
+    gre.14.53v8.3: {lemma: "nagl", morph: "NOUN|Case=Dat|Definite=Ind|Gender=Masc|Number=Plur", gloss: "nails"}   # nöglum
+    gre.14.94v1.1: {lemma: "fyrst", morph: "ADV", gloss: "first"}   # Fyrst
+    gre.14.94v1.2: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act", gloss: "has"}   # hefir
+    gre.14.94v1.3: {lemma: "flá", morph: "VERB|Case=Acc|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Act", gloss: "flayed"}   # flegna: participle agreeing with the object Keingálu
+    gre.14.94v1.4: {lemma: "traustr", morph: "ADJ|Case=Acc|Definite=Ind|Degree=Pos|Gender=Fem|Number=Sing", gloss: "trusty"}   # trausta
+    gre.14.94v2.1: {lemma: "fá", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act", gloss: "gets"}   # fær: fá with the supine, 'has managed to'
+    gre.14.94v2.2: {lemma: "pretta", morph: "VERB|VerbForm=Sup|Voice=Act", gloss: "tricked"}   # prettað
+    gre.14.94v2.3: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1|PronType=Prs", gloss: "me"}   # mik
+    gre.14.94v2.4: {lemma: "grettir", morph: "PROPN|Case=Nom|Definite=Ind|Gender=Masc|Number=Sing", gloss: "Grettir"}   # Grettir
+    gre.14.94v3.1: {lemma: "fljóð", morph: "NOUN|Case=Nom|Definite=Ind|Gender=Neut|Number=Plur", gloss: "women"}   # fljóð
+    gre.14.94v3.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act", gloss: "are"}   # eru
+    gre.14.94v3.3: {lemma: "flestr", morph: "ADJ|Case=Nom|Degree=Sup|Gender=Neut|Number=Plur", gloss: "most"}   # flest
+    gre.14.94v3.4: {lemma: "hinn", morph: "DET|Case=Nom|Gender=Neut|Number=Plur", gloss: "the"}   # hin
+    gre.14.94v3.5: {lemma: "prúðr", morph: "ADJ|Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Plur", gloss: "proud"}   # prúðu
+    gre.14.94v4.1: {lemma: "fullmálugr", morph: "ADJ|Case=Nom|Definite=Ind|Degree=Pos|Gender=Neut|Number=Plur", gloss: "full-talkative"}   # fullmálug
+    gre.14.94v4.2: {lemma: "kengála", morph: "PROPN|Case=Acc|Definite=Ind|Gender=Fem|Number=Sing", gloss: "Keingala"}   # Keingálu: the 1853 spelling; the prose has Kengála
+    gre.14.94v5.1: {lemma: "víst", morph: "ADV", gloss: "surely"}   # Víst
+    gre.14.94v5.2: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act", gloss: "will"}   # man
+    gre.14.94v5.3: {lemma: "venja", morph: "VERB|VerbForm=Inf|Voice=Act", gloss: "wean"}   # venja: venja af sér, 'wean off oneself', shake off
+    gre.14.94v5.4: {lemma: "flestr", morph: "ADJ|Case=Acc|Degree=Sup|Gender=Fem|Number=Plur", gloss: "most"}   # flestar
+    gre.14.94v6.1: {lemma: "vitr", morph: "ADJ|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing", gloss: "clever"}   # vitr
+    gre.14.94v6.2: {lemma: "drengr", morph: "NOUN|Case=Nom|Definite=Ind|Gender=Masc|Number=Sing", gloss: "lad"}   # drengr
+    gre.14.94v6.3: {lemma: "af", morph: "ADP", gloss: "off"}   # af
+    gre.14.94v6.4: {lemma: "sik", morph: "PRON|Case=Dat|Gender=Masc|Number=Sing|PronType=Prs", gloss: "himself"}   # sèr
+    gre.14.94v6.5: {lemma: "lengi", morph: "ADV", gloss: "long"}   # lengi
+    gre.14.94v7.1: {lemma: "hróðr", morph: "NOUN|Case=Acc|Definite=Ind|Gender=Masc|Number=Sing", gloss: "praise-poem"}   # hróðr
+    gre.14.94v7.2: {lemma: "nema", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act", gloss: "may-take-in"}   # nemi: optative subjunctive, 'let her take in'
+    gre.14.94v7.3: {lemma: "hringr", morph: "NOUN|Case=Gen|Definite=Ind|Gender=Masc|Number=Sing", gloss: "of-ring"}   # hrings
+    gre.14.94v7.4: {lemma: "hinn", morph: "DET|Case=Nom|Gender=Fem|Number=Sing", gloss: "the"}   # hin
+    gre.14.94v7.5: {lemma: "fríðr", morph: "ADJ|Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing", gloss: "fair"}   # fríða
+    gre.14.94v8.1: {lemma: "hlín", morph: "PROPN|Case=Nom|Definite=Ind|Gender=Fem|Number=Sing", gloss: "Hlin"}   # hlín: hrings hlín, 'Hlín of the ring': a woman, Asdis
+    gre.14.94v8.2: {lemma: "kvaðning", morph: "NOUN|Case=Acc|Definite=Ind|Gender=Fem|Number=Plur", gloss: "summonses"}   # kvaðningar
+    gre.14.94v8.3: {lemma: "minn", morph: "PRON|Case=Acc|Gender=Fem|Number=Plur|PronType=Prs", gloss: "my"}   # mínar
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-18
+  why: "review of the verses: lemmas in the modern spelling IcePaHC uses for the prose around them (ég, það, sig, mjög, -ur nominatives), so one word has one lemma on the page; ellri under gamall as the prose files elstur; the name glossed Kengala as in the prose"
+  status: draft
+  set:
+    gre.14.31v1.1: {lemma: "það"}
+    gre.14.31v1.3: {lemma: "ég"}
+    gre.14.31v2.2: {lemma: "ég"}
+    gre.14.31v2.5: {lemma: "kjúklingur"}
+    gre.14.31v3.3: {lemma: "gamall"}
+    gre.14.31v4.3: {lemma: "ég"}
+    gre.14.31v4.5: {lemma: "sérhver"}
+    gre.14.53v1.1: {lemma: "ég"}
+    gre.14.53v2.1: {lemma: "mjög"}
+    gre.14.53v2.3: {lemma: "ég"}
+    gre.14.53v2.4: {lemma: "það"}
+    gre.14.53v4.1: {lemma: "höfugur"}
+    gre.14.53v4.4: {lemma: "það"}
+    gre.14.53v5.2: {lemma: "ég"}
+    gre.14.53v5.4: {lemma: "hringur"}
+    gre.14.53v6.1: {lemma: "hörgerður"}
+    gre.14.53v7.3: {lemma: "ég"}
+    gre.14.53v7.4: {lemma: "gildur"}
+    gre.14.94v1.4: {lemma: "traustur"}
+    gre.14.94v2.3: {lemma: "ég"}
+    gre.14.94v3.3: {lemma: "flestur"}
+    gre.14.94v3.5: {lemma: "prúður"}
+    gre.14.94v4.1: {lemma: "fullmálugur"}
+    gre.14.94v5.4: {lemma: "flestur"}
+    gre.14.94v6.1: {lemma: "vitur"}
+    gre.14.94v6.2: {lemma: "drengur"}
+    gre.14.94v6.4: {lemma: "sig"}
+    gre.14.94v7.1: {lemma: "hróður"}
+    gre.14.94v7.3: {lemma: "hringur"}
+    gre.14.94v7.5: {lemma: "fríður"}
+    gre.14.94v4.2: {gloss: "Kengala"}   # Keingálu

@@ -1,6 +1,7 @@
-# Weft edition: the bull Inter caetera of Alexander VI, dated 4 May 1493. Five passages: the
-# address to Ferdinand and Isabella, the opening clause (arenga), the account of Columbus's
-# voyage, the grant with the line of demarcation, and the date.
+# Weft edition: the bull Inter caetera of Alexander VI, dated 4 May 1493, the whole bull: the
+# address, the opening clause, the reasons for the grant, the account of Columbus's voyage, the
+# sovereigns' purpose, the exhortation, the grant with the line of demarcation, the mandate, the clause
+# on copies, the penalty clause, the date and the chancery notes.
 #
 # The text is the one on Latin Wikisource ('Inter caetera (quarto nonas Maii 1493)', revision
 # 129534), which reproduces, word for word in these lines, the Latin printed by Frances Gardiner
@@ -12,6 +13,20 @@
 # long sentences into lines at their clauses.
 verify_in: sources/intercaetera-la.txt
 verify_strip: " (?=[;:])"
+verify_corrections:
+# the Wikisource page misreads Davenport's illa and spaces his dashes; the print (p. 73) reads
+# 'debemus illa vobis' and sets 'dedicasse—quemadmodum' and 'testatur—digne' closed up
+- ocr: ilia vobis
+  print: illa vobis
+- ocr: "dedicasse -- quemadmodum"
+  print: "dedicasse—quemadmodum"
+- ocr: "testatur -- digne"
+  print: "testatur—digne"
+# and in the chancery notes (p. 75) the print reads 'MUCCIARELLIS.' with a full stop and 'Jo.' in lower case
+- ocr: "A. DE MUCCIARELLIS\n"
+  print: "A. DE MUCCIARELLIS.\n"
+- ocr: "Pro JO. BUF"
+  print: "Pro Jo. BUF"
 sections:
   - id: salutatio
     title: "The address: Alexander to Ferdinand and Isabella"
@@ -28,6 +43,52 @@ sections:
       - "ut fides Catholica et Christiana religio nostris presertim temporibus exaltetur,"
       - "ac ubilibet amplietur et dilatetur, animarumque salus procuretur,"
       - "ac barbare nationes deprimantur et ad fidem ipsam reducantur."
+  - id: granata
+    title: "Why the pope grants this: the sovereigns and Granada"
+    lines:
+      - "Unde cum ad hanc Sacram Petri Sedem, divina favente clementia, meritis licet imparibus, evocati fuerimus,"
+      - "cognoscentes vos, tanquam veros Catholicos reges et principes, quales semper fuisse novimus,"
+      - "et a vobis preclare gesta toti pene jam orbi notissima demonstrant,"
+      - "nedum id exoptare, sed omni conatu, studio, et diligentia, nullis laboribus, nullis impensis, nullisque parcendo periculis,"
+      - tokens:
+        - {t: "etiam"}
+        - {t: "proprium"}
+        - {t: "sanguinem"}
+        - {t: "effundendo,"}
+        - {t: "efficere,"}
+        - {t: "ac"}
+        - {t: "omnem"}
+        - {t: "animum"}
+        - {t: "vestrum"}
+        - {t: "omnesque"}
+        - {t: "conatus"}
+        - {t: "ad"}
+        - {t: "hoc"}
+        - {t: "jam"}
+        - {t: "dudum"}
+        - {t: "dedicasse—", glue: true}
+      - tokens:
+        - {t: "quemadmodum"}
+        - {t: "recuperatio"}
+        - {t: "regni"}
+        - {t: "Granate"}
+        - {t: "a"}
+        - {t: "tyrannide"}
+        - {t: "Saracenorum"}
+        - {t: "hodiernis"}
+        - {t: "temporibus"}
+        - {t: "per"}
+        - {t: "vos,"}
+        - {t: "cum"}
+        - {t: "tanta"}
+        - {t: "Divini"}
+        - {t: "Nominis"}
+        - {t: "gloria"}
+        - {t: "facta,"}
+        - {t: "testatur—", glue: true}
+      - "digne ducimur non immerito, et debemus illa vobis etiam sponte et favorabiliter concedere,"
+      - "per que hujusmodi sanctum et laudabile ac immortali Deo acceptum propositum"
+      - "in dies ferventiori animo ad ipsius Dei honorem et imperii Christiani propagationem prosequi valeatis."
   - id: narratio
     title: "The voyage of Christopher Columbus"
     lines:
@@ -49,6 +110,24 @@ sections:
       - "ac prefatus Cristophorus in una ex principalibus insulis predictis jam unam turrim satis munitam,"
       - "in qua certos Christianos qui secum iverant, in custodiam, et ut alias insulas et terras firmas remotas et incognitas inquirerent, posuit, construi et edificari fecit;"
       - "in quibusquidem insulis et terris jam repertis, aurum, aromata, et alie quamplurime res preciose diversi generis et diverse qualitatis reperiuntur."
+  - id: propositum
+    title: "The sovereigns' purpose"
+    lines:
+      - "Unde omnibus diligenter, et presertim fidei Catholice exaltatione et dilatatione, prout decet Catholicos reges et principes, consideratis,"
+      - "more progenitorum vestrorum, clare memorie regum,"
+      - "terras firmas et insulas predictas illarumque incolas et habitatores, vobis, divina favente clementia,"
+      - "subjicere et ad fidem Catholicam reducere proposuistis."
+  - id: hortatio
+    title: "The exhortation to bring the peoples to the faith"
+    lines:
+      - "Nos igitur hujusmodi vestrum sanctum et laudabile propositum plurimum in Domino commendantes,"
+      - "ac cupientes ut illud ad debitum finem perducatur, et ipsum nomen Salvatoris nostri in partibus illis inducatur,"
+      - "hortamur vos plurimum in Domino, et per sacri lavacri susceptionem, qua mandatis apostolicis obligati estis,"
+      - "et viscera misericordie Domini nostri Jhesu Christi attente requirimus,"
+      - "ut cum expeditionem hujusmodi omnino prosequi et assumere prona mente orthodoxe fidei zelo intendatis,"
+      - "populos in hujusmodi insulis et terris degentes ad Christianam religionem suscipiendam inducere velitis et debeatis,"
+      - "nec pericula, nec labores ullo unquam tempore vos deterreant,"
+      - "firma spe fiduciaque conceptis, quod Deus Omnipotens conatus vestros feliciter prosequetur."
   - id: donatio
     title: "The grant and the line one hundred leagues west"
     figure:
@@ -77,8 +156,52 @@ sections:
       - "decernentes nichilominus per hujusmodi donationem, concessionem, et assignationem nostram nulli Christiano principi,"
       - "qui actualiter prefatas insulas aut terras firmas possederit usque ad predictum diem Nativitatis Domini nostri Jhesu Christi,"
       - "jus quesitum sublatum intelligi posse aut auferri debere."
+  - id: mandatum
+    title: "Missionaries, and no one to sail west of the line without leave"
+    lines:
+      - "Et insuper mandamus vobis in virtute sancte obedientie,"
+      - "ut, sicut etiam pollicemini et non dubitamus pro vestra maxima devotione et regia magnanimitate vos esse facturos,"
+      - "ad terras firmas et insulas predictas viros probos et Deum timentes, doctos, peritos, et expertos,"
+      - "ad instruendum incolas et habitatores prefatos in fide Catholica et bonis moribus imbuendum destinare debeatis,"
+      - "omnem debitam diligentiam in premissis adhibentes,"
+      - "ac quibuscunque personis cujuscunque dignitatis, etiam imperialis et regalis, status, gradus, ordinis, vel conditionis,"
+      - "sub excommunicationis late sententie pena, quam eo ipso si contrafecerint, incurrant, districtius inhibemus,"
+      - "ne ad insulas et terras firmas, inventas et inveniendas, detectas et detegendas versus occidentem et meridiem,"
+      - "fabricando et constituendo lineam a polo Arctico ad polum Antarcticum,"
+      - "sive terre firme et insule invente et inveniende sint versus Indiam aut versus aliam quancunque partem,"
+      - "que linea distet a qualibet insularum, que vulgariter nuncupantur de los Azores et Caboverde, centum leucis versus occidentem et meridiem, ut prefertur,"
+      - "pro mercibus habendis vel quavis alia de causa, accedere presumant"
+      - "absque vestra ac heredum et successorum vestrorum predictorum licentia speciali,"
+      - "non obstantibus constitutionibus et ordinationibus apostolicis, ceterisque contrariis quibuscunque,"
+      - "in Illo a quo imperia et dominationes ac bona cuncta procedunt confidentes,"
+      - "quod, dirigente Domino actus vestros, si hujusmodi sanctum et laudabile propositum prosequamini,"
+      - "brevi tempore, cum felicitate et gloria totius populi Christiani, vestri labores et conatus exitum felicissimum consequentur."
+  - id: transumpta
+    title: "Copies to be believed as the original"
+    lines:
+      - "Verum, quia difficile foret presentes litteras ad singula queque loca in quibus expediens fuerit deferri,"
+      - "volumus, ac motu et scientia similibus decernimus,"
+      - "quod illarum transumptis manu publici notarii inde rogati subscriptis,"
+      - "et sigillo alicujus persone in ecclesiastica dignitate constitute, seu curie ecclesiastice munitis,"
+      - "ea prorsus fides in judicio et extra ac alias ubilibet adhibeatur, que presentibus adhiberetur, si essent exhibite vel ostense."
+  - id: sanctio
+    title: "The penalty clause"
+    lines:
+      - "Nulli ergo omnino hominum liceat hanc paginam nostre commendationis, ortationis, requisitionis, donationis,"
+      - "concessionis, assignationis, constitutionis, deputationis, decreti, mandati, inhibitionis, et voluntatis,"
+      - "infringere, vel ei ausu temerario contraire."
+      - "Si quis autem hoc attemptare presumpserit,"
+      - "indignationem Omnipotentis Dei ac beatorum Petri et Pauli apostolorum ejus se noverit incursurum."
   - id: datum
     title: "The date: Rome, 4 May 1493"
     lines:
       - "Datum Rome apud Sanctum Petrum, anno Incarnationis Dominice millesimo quadringentesimo nonagesimo tertio,"
       - "quarto nonas Maii, pontificatus nostri anno primo."
+  - id: notae
+    title: "The chancery notes"
+    lines:
+      - "Gratis de mandato sanctissimi Domini nostri pape."
+      - "Jun[io]."
+      - "Pro r[eferenda]rio, A. DE MUCCIARELLIS."
+      - "Pro Jo. BUF[OLINUS], A. SANTOSEVERINO."
+      - "L. PODOCATHARUS."

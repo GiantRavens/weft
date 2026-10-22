@@ -1,0 +1,49 @@
+run:
+  weft: 0.1.0
+  stanzas:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+counts:
+  lines: 286
+  tokens: 1066
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank covers skaldic verse: lemma, morphology, gloss, staves and meter are hand-annotated after Zoëga (draft)'
+- the normalized text is Guðni Jónsson and Bjarni Vilhjálmsson's, not a critical edition; several readings are uncertain, among them rottar (7), ygli (16) and strenglágar palmi (15), and are annotated as
+  they stand
+- the meter is a kind of háttlausa (lines paired by alliteration, without the regular internal rhymes of dróttkvætt); the page marks the staves and gives each line odd or even, and the irregular pairs say
+  so
+- Vigfusson and Powell translate in running prose, shorten the refrain to 'We, etc.' and join some stanzas; their spans are aligned stanza by stanza where the English allows. Johnstone (1782) translates
+  freely and expands; his spans follow his numbered stanzas, except that his 19 and 20 are aligned by content rather than by number
+- the old-norse sound scheme models the poem's 12th century approximately, from the normalized spelling; r- and l- spellings of older hr- and hl- words (rafnar, læjandi) are read as written; the alliteration
+  supports the r- spelling in two places (6.3, 7.7)

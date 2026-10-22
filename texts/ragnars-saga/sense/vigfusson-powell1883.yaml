@@ -1,0 +1,233 @@
+# Gudbrand Vigfusson and F. York Powell, Corpus Poeticum Boreale, vol. 2 (Oxford, 1883), Book IX, § 1,
+# "Ragnar Lodbrok, Anslaug, and Ragnar's Sons", pp. 345-353: their English prose translation of the
+# verses, verbatim from the archive.org OCR (corpuspoeticumbo02guuoft), checked against the page images
+# (leaves 353-361). PARTIAL: verse only. CPB translates the verses, not the saga prose, so every prose
+# line of the work is uncovered. CPB numbers its stanzas 1-38 in its own order (it regroups them by
+# speaker and episode); the stanza numbers, the section numerals (I-VIII), the italic headings and the
+# speaker labels ("Crow:", "Ragnar:", "First Champion:" ...) are dropped from the span text, as is the
+# editorial note after stanza 25 ("The verses which once followed here ..."). CPB's italics (marking
+# words it supplies or renders doubtfully) are not kept. CPB stanza 32 (Sitja veiðivitjar) belongs to the
+# þáttr, not the saga, and is aligned there.
+# Weft stanza (verse-line range) -> CPB stanza number:
+#   rag.3.23-rag.3.30          -> CPB 1
+#   rag.5.54-rag.5.61          -> CPB 2
+#   rag.5.68-rag.5.71          -> CPB 3 (first half, Ragnarr)
+#   rag.5.73-rag.5.76          -> CPB 3 (second half, Kraka; unnumbered in CPB)
+#   rag.6.7-rag.6.14           -> CPB 4
+#   rag.6.16-rag.6.23          -> CPB 5
+#   rag.6.48-rag.6.55          -> CPB 6
+#   rag.8.18-rag.8.25          -> CPB 28
+#   rag.9.56-rag.9.63          -> CPB 7
+#   rag.9.67-rag.9.74          -> CPB 8
+#   rag.9.76-rag.9.83          -> CPB 9
+#   rag.10.26-rag.10.33        -> CPB 10
+#   rag.10.38-rag.10.45        -> CPB 11
+#   rag.10.47-rag.10.54        -> CPB 13
+#   rag.10.57-rag.10.64        -> CPB 12
+#   rag.10.74-rag.10.81        -> CPB 14
+#   rag.10.83-rag.10.90        -> CPB 15
+#   rag.10.102-rag.10.109      -> CPB 29
+#   rag.10.118-rag.10.125      -> CPB 16
+#   rag.10.139-rag.10.146      -> CPB 17
+#   rag.10.151-rag.10.158      -> CPB 18
+#   rag.10.160-rag.10.167      -> CPB 19
+#   rag.10.170-rag.10.177      -> CPB 20
+#   rag.15.20-rag.15.27        -> CPB 21
+#   rag.15.31-rag.15.38        -> CPB 22
+#   rag.15.44-rag.15.51        -> CPB 23
+#   rag.15.82-rag.15.89        -> CPB 24
+#   rag.15.91-rag.15.98        -> CPB 25
+#   rag.15.115-rag.15.122      -> CPB 26
+#   rag.15.124-rag.15.131      -> CPB 27
+#   rag.18.7-rag.18.14         -> CPB 30
+#   rag.18.16-rag.18.23        -> CPB 31
+#   rag.19.22-rag.19.29        -> CPB 33
+#   rag.19.31-rag.19.38        -> CPB 34
+#   rag.19.40-rag.19.47        -> CPB 35
+#   rag.19.49-rag.19.56        -> CPB 36
+#   rag.19.58-rag.19.65        -> CPB 37
+#   rag.19.67-rag.19.74        -> CPB 38
+# Uncovered verse (no CPB translation): rag.20.7-rag.20.30 (the wooden idol's three fornyrðislag stanzas,
+#   "Þat var fyr löngu"; CPB does not print or translate them in this section).
+# OCR corrections, each checked against the page image (CPB's spaced ellipsis ". . . ." restored throughout):
+#   "old. ... I" -> "old . . . . I" (1)
+#   "1am" -> "I am" (2)
+#   "hands... ." -> "hands . . . ." (3)
+#   "[Scar- bay =Scarhorough ?], Let" -> "[Scar-bay=Scarborough ?]. Let" (28)
+#   "[Sigfred|" -> "[Sigfred]" (7)
+#   "eye...." -> "eye . . . ." (7)
+#   "1 will" -> "I will" (10)
+#   "ona" -> "on a" (11)
+#   "death, There" -> "death. There" (15)
+#   "eye...." -> "eye . . . ." (18)
+#   "ships . as" -> "ships as" (19)
+#   "dash = to" -> "dash to" (20)
+#   "van};" -> "van;" (20)
+#   "beseems _ a" -> "beseems a" (21)
+#   "4 fort" -> "A fort" (21)
+#   "thee ig this" -> "thee this" (23)
+#   "1 have" -> "I have" (24)
+#   "many aman" -> "many a man" (24)
+#   "old, There....my" -> "old. There . . . . my" (27)
+#   "him ...." -> "him . . . ." (31)
+#   "himself! ...." -> "himself! . . . ." (31)
+#   "dead.... golden" -> "dead . . . . golden" (35)
+#   "1 did" -> "I did" (36)
+#   "ship.... and" -> "ship . . . . and" (36)
+#   "sea .... furiously" -> "sea . . . . furiously" (36)
+
+translation: vigfusson-powell1883
+aligned_by: hand, phase 0; one span per stanza (verse only, prose lines uncovered); stanza correspondence by content to CPB ii, pp. 345-353
+spans:
+- lines:
+  - rag.3.23
+  - rag.3.30
+  text: I risked my life when I was fifteen years old . . . . I pierced the coiled serpent to the heart.
+- lines:
+  - rag.5.54
+  - rag.5.61
+  text: I dare not break the command ye laid upon me, nor the order ye gave me, Ragnar. There is no one with me; my body is not bare; I have smelt but at a leek; I am come alone.
+- lines:
+  - rag.5.68
+  - rag.5.71
+  text: The king [I] would fain lay hold on the maid with my hands . . . .
+- lines:
+  - rag.5.73
+  - rag.5.76
+  text: Thou shalt let me go hence unshamed, O king, if thou wilt keep thy covenant.
+- lines:
+  - rag.6.7
+  - rag.6.14
+  text: Wilt thou take this sark, silver-broidered, that Thora Hart had? It will befit thee well; her white hands often touched this raiment. She was blithe to her husband till she died.
+- lines:
+  - rag.6.16
+  - rag.6.23
+  text: I dare not take the silver-broidered sark that Thora Hart had, it will not befit me. I am called Crow because in coal-black raiment I have tramped over the pebbles and driven the goats along the shore.
+- lines:
+  - rag.6.48
+  - rag.6.55
+  text: Let us wait three nights, nor lie together, till we have sacrificed to the Holy God. There shall be a blemish on my son for many a day. Thou art too eager to beget him that shall have no bones.
+- lines:
+  - rag.8.18
+  - rag.8.25
+  text: Let us raise a mighty war-whoop in Gnip-firth [Scar-bay=Scarborough ?]. Let every one slay his man outside of Whitby.
+- lines:
+  - rag.9.56
+  - rag.9.63
+  text: Let the boy be called Sigfred, he shall fight battles and be like his mother’s father, [Sigfred]. He shall be called the noblest of Woden’s race, there is a serpent in his eye . . . .
+- lines:
+  - rag.9.67
+  - rag.9.74
+  text: Brunhild’s dear daughter’s son has a keen eye and a doughty heart. He shall surpass all other men in might, he, the scion of Budli, that hates the red rings.
+- lines:
+  - rag.9.76
+  - rag.9.83
+  text: There is a serpent in no other child’s eyes save Sigurd’s alone. This prince has a snake in his eyeball.
+- lines:
+  - rag.10.26
+  - rag.10.33
+  text: I will not take atonement nor rings as ransom for my brother’s death. Eystan [Beli] is Agnar’s slayer. No mother weeps for me. I shall die last; let the spears pierce me.
+- lines:
+  - rag.10.38
+  - rag.10.45
+  text: No prince, that I know, shall die on a costlier bed for the raven’s feast. The raven shall soon be screaming over my blood, requiting me ill for my care for him.
+- lines:
+  - rag.10.47
+  - rag.10.54
+  text: Carry my last words, now that the Eastern journeys are come to an end. Let my step-mother Anslaug have this ring of mine. She will be wroth when she hears of my death, she will egg her gallant sons on to avenge me.
+- lines:
+  - rag.10.57
+  - rag.10.64
+  text: The raven is screaming over my head, he is asking for the eyes out of my head. Know, O Raven, if thou tearest the eyeballs out of my head, that thou wilt be repaying me ill for many a fill I have given thee.
+- lines:
+  - rag.10.74
+  - rag.10.81
+  text: What say ye, are the Swedes in the land? I have heard that the Danes have come from the South, and I know that the kings had a sacrificial-launch.
+- lines:
+  - rag.10.83
+  - rag.10.90
+  text: I tell thee, lady, of Thora’s sons’ death. There is no news fresher than this, I have just come from where the ravens were flying over their dead corses.
+- lines:
+  - rag.10.102
+  - rag.10.109
+  text: My sons have left me sorrowing. Ye are aye laggards all of you. Rognwald the brave was wont to dye his target red in men’s blood, he came first of all my sons to Woden.
+- lines:
+  - rag.10.118
+  - rag.10.125
+  text: Ye would not have been left one year unrevenged of them, if ye had died first, if Eric and Agnar, no sons of mine, were living.
+- lines:
+  - rag.10.139
+  - rag.10.146
+  text: The levy shall be ready within three nights. Eystan Beli shall not rule Upsal long though he offer us weregild, if the goddesses help us.
+- lines:
+  - rag.10.151
+  - rag.10.158
+  text: The heart may be steadfast in a man’s breast, though he speak little. I have no snake in my eye . . . . I will remember thy step-sons.
+- lines:
+  - rag.10.160
+  - rag.10.167
+  text: Let us look ere we vow, that our revenge be feasible! May every ill befall Agnar’s slayers. Let us launch our barks on the wave! Let us cleave the ice with our prows! Let us make ready our ships as soon as may be!
+- lines:
+  - rag.10.170
+  - rag.10.177
+  text: Ye have spirit enough and dash to boot, yet ye lack foresight. Ye must bear me with you in the van; though I can use neither hand, yet I shall take my share of the revenge with you.
+- lines:
+  - rag.15.20
+  - rag.15.27
+  text: Let not a man spare gold if he will gather warriors about him; a great treasure beseems a king less than a company of heroes. A fort cannot be held by rings. Many a king I know of that is dead when he might have lived but for his meanness.
+- lines:
+  - rag.15.31
+  - rag.15.38
+  text: What is this murmuring I hear from the hills? Nevertheless, I shall abide without fear what shall happen, if the gods will it so.
+- lines:
+  - rag.15.44
+  - rag.15.51
+  text: With a whole heart I give thee this long shirt, not sewn, but woven of hair-fine yarn. Wound shall not bleed on thee, nor weapon-edge bite on thee in this holy surcoat, that was blessed by the gods.
+- lines:
+  - rag.15.82
+  - rag.15.89
+  text: I have fought battles fifty and one. I never thought that serpents would be my death. What he least looked for befalls many a man.
+- lines:
+  - rag.15.91
+  - rag.15.98
+  text: The porklings would grunt if they knew of the old boar’s need. The serpents gnaw me to death, they are eating into me, and they hiss cruelly, draining my blood. I shall soon be a dead man.
+- lines:
+  - rag.15.115
+  - rag.15.122
+  text: Here flies every morning a raven over the fort, he is hungry for carrion; let him go south of the sand where we fought, there he may slake his thirst in the wounds of the dead.
+- lines:
+  - rag.15.124
+  - rag.15.131
+  text: When I first set Frey’s game going in the Roman empire [Italy], I was eighteen years old. There . . . . my sword was drawn.
+- lines:
+  - rag.18.7
+  - rag.18.14
+  text: One son I had that died in Eastway—Whitesark was his name—that never sought to flee. He was burnt on a pile of the heads of the slain, this was the death he chose ere he fell.
+- lines:
+  - rag.18.16
+  - rag.18.23
+  text: There were hundreds of heads piled beneath him . . . . What better bed could a king spread for himself! . . . .
+- lines:
+  - rag.19.22
+  - rag.19.29
+  text: Tell thy feats, I bid thee. Where hast thou seen the blood-sated raven perched on the bough? Thou wert oftener to be found in the high-seat than dragging their food to the eagles.
+- lines:
+  - rag.19.31
+  - rag.19.38
+  text: Hold thy peace, thou stay-at-home. What hast thou, thou wretch? Nought hast thou wrought wherein I should fall short. Thou hast never slaked the wolf’s thirst.
+- lines:
+  - rag.19.40
+  - rag.19.47
+  text: We made the prow-strong sea-horses speed through the brine. The grey wolf yawned over the dead . . . . golden beacon heads.
+- lines:
+  - rag.19.49
+  - rag.19.56
+  text: I did not see thee where we saw the white waves gaping for the ship . . . . and the sea . . . . furiously before the red prow.
+- lines:
+  - rag.19.58
+  - rag.19.65
+  text: Let us not quarrel in the high-seat which of us two has done the greatest deed of daring. Thou didst stand where the billow floated the ships, and I was sitting on the ship as she touched the harbour.
+- lines:
+  - rag.19.67
+  - rag.19.74
+  text: We both followed Biorn or else Ragnar to battle. I remember how we followed men in the Bolgars’ land [Bulgaria]. There I got a wound in my side. Come and sit here inside next me!

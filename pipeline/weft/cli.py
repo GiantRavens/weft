@@ -51,7 +51,7 @@ def main(argv: list[str] | None = None) -> int:
     pn.add_argument("--id", help="source id (default from the title and revision)"); pn.add_argument("--name", help="citation text")
     pn.add_argument("--license", dest="license_"); pn.add_argument("--license-url")
     pn.add_argument("--edition", action="store_true", help="record as the manifest's edition file rather than in sources_extra")
-    pn.add_argument("--as", dest="as_", help="convert the fetched page: stanza-text (heimskringla.no poem pages)")
+    pn.add_argument("--as", dest="as_", help="convert the fetched page: stanza-text (heimskringla.no poem pages) or wikitext (the page's wikitext as plain text, for a prose edition)")
     im = sub.add_parser("image", help="fetch a Commons image, write the 760 and 220 px JPEGs under art/works/, append the credits record")
     im.add_argument("work"); im.add_argument("commons_file", help='"File:Name.jpg"')
     im.add_argument("--caption"); im.add_argument("--alt")

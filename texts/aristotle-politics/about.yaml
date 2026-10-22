@@ -1,0 +1,37 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: aristotle-politics
+src: weft.about 0.1
+fetched: '2026-10-18'
+match: work
+wikipedia:
+  title: Politics (Aristotle)
+  lang: en
+  revision: 1376524303
+  url: https://en.wikipedia.org/w/index.php?title=Politics_%28Aristotle%29&oldid=1376524303
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Politics (Aristotle)” (en.wikipedia.org, revision 1376524303),
+    CC BY-SA 4.0
+  lead: 'Politics (Ancient Greek: Πολιτικα, Politiká) is a work of political philosophy by Aristotle,
+    a 4th-century BC Greek philosopher.
+
+
+    At the end of the Nicomachean Ethics, Aristotle declared that the inquiry into ethics leads into a
+    discussion of politics. The two works are frequently considered to be parts of a larger treatise –
+    or perhaps connected lectures – dealing with the "philosophy of human affairs". In Aristotle''s hierarchical
+    system of philosophy he considers politics, the study of communities, to be of higher priority than
+    ethics, which concerns individuals.'
+wikidata:
+  id: Q69539
+  revision: 2557458827
+  license: CC0
+  description: work of political philosophy by Aristotle
+  instance_of:
+  - id: Q12765855
+    label: philosophical work
+  genre:
+  - id: Q384515
+    label: treatise
+  main_subject:
+  - id: Q7163
+    label: politics

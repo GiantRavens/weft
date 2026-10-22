@@ -6,6 +6,7 @@ actual) goes to gen/<book>.run.yaml so the data diff stays clean between runs.
 from __future__ import annotations
 
 import hashlib
+import json
 import re
 import unicodedata
 import xml.etree.ElementTree as ET
@@ -24,8 +25,8 @@ PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebr
         "qya": elvish, "sjn": elvish, "eo": esperanto,      # Quenya and Sindarin share one module; private works only
         "pt": portuguese}
 NORMALIZE = {"heyne-to-macron": oldenglish.heyne_to_macron}
-LEAD = re.compile(r"^([(\[“«‹\"]+|[-–—]\u00a0)")
-TRAIL = re.compile(r"((?:[,.·;:!?)\]”»›\"\u0387\u037e]|\u00a0[-–—])+)$")
+LEAD = re.compile(r"^([(\[“«‹\"]+|[-–—]+\u00a0)")
+TRAIL = re.compile(r"((?:[,.·;:!?)\]”»›\"\u0387\u037e]|\u00a0[-–—]+)+)$")
 
 
 def load_manifest(work_dir: Path) -> dict:
@@ -147,10 +148,51 @@ def equation_record(eq: dict, phon, schemes: list[str], quantities) -> dict:
     return rec
 
 
+def insert_verses(units: list, work_dir: Path, spec: dict, book, fail, first: int, last: int) -> tuple[list, set, dict]:
+    """Verses a treebank edition leaves out (IcePaHC omits the verses of the sagas), set into the prose
+    from a Weft file: {verify_in: <source>, verses: [{after: <sentence>, lines: [...]}]}. Each line is
+    checked verbatim against the source (whitespace normalized) and becomes a line with the id
+    <sentence>v<k>, after that sentence; its lemma, morphology and gloss are hand-annotated in curated/.
+    A line may be {text, say}: say gives, word for word, the normalized form the sound is read from,
+    where the print's spelling would mislead it (the 1853 sèr for sér). Verses after a sentence outside
+    first..last belong to a part not being drafted and are skipped."""
+    vf = yaml.safe_load((work_dir / spec["file"]).read_text())
+    src = (work_dir / vf["verify_in"]).read_text()
+    if src.lstrip().startswith('{"'):          # a MediaWiki API envelope (heimskringla.no): the wikitext inside
+        src = json.loads(src)["parse"]["wikitext"]["*"]
+    for pat in vf.get("verify_strip") or []:
+        src = re.sub(pat, "", src)
+    src = " ".join(src.split())
+    out, ids, say = list(units), set(), {}
+    for v in vf["verses"]:
+        if not first <= v["after"] <= last:
+            continue
+        at = next((i for i, u in enumerate(out) if u[1] == v["after"]), None)
+        if at is None:
+            fail("verse-anchor-missing", f"{book}.{v['after']}")
+            continue
+        new = []
+        for k, ln in enumerate(v["lines"], start=1):
+            if isinstance(ln, dict):
+                if len(ln["say"].split()) != len(ln["text"].split()):
+                    fail("verse-say-count", f"{book}.{v['after']}v{k}")
+                say[f"{v['after']}v{k}"] = ln["say"].split()
+                ln = ln["text"]
+            if " ".join(ln.split()) not in src:
+                fail("verse-not-in-source", f"{book}.{v['after']}v{k} {ln}")
+            nid = f"{v['after']}v{k}"
+            ids.add(nid)
+            new.append((book, nid, ln))
+        out[at + 1:at + 1] = new
+    return out, ids, say
+
+
 def run(work_dir: Path, book: int | None = None, first: int | None = None, last: int | None = None) -> dict:
     m = load_manifest(work_dir)
     pilot = m.get("pilot", {})
     ed_fmt = m["edition"].get("format", "tei")
+    verse_ids: set = set()       # lines set into a treebank edition by hand (insert_verses)
+    verse_say: dict = {}         # their normalized spoken forms, word for word, where given
     more: list = []          # further chapters to draft after this one (pilot.also), set below
     speakers: dict = {}      # stanza -> speaker, for dialogue poems in stanza-text
     if ed_fmt in ("stanza-text", "weft-edition"):
@@ -207,6 +249,12 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         # Weft's own edition file: grouped units (inscriptions), tokens given explicitly
         edition = yaml.safe_load((work_dir / m["edition"]["file"]).read_text())
         glist = edition.get("inscriptions") or edition.get("sections")
+        # a line {v: "..."} is a line of verse inside prose (a stanza in a saga): plain text, marked verse
+        for g in glist:
+            for i, ln in enumerate(g["lines"], start=1):
+                if isinstance(ln, dict) and "v" in ln:
+                    g["lines"][i - 1] = ln["v"]
+                    verse_ids.add((str(g["id"]), i))
         groups = {str(g["id"]): g for g in glist}
         # a line is either plain text (tokenized normally) or explicit tokens (runic inscriptions)
         # token lines join with the edition's joiner: a space for runes, nothing for Japanese
@@ -293,6 +341,8 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         for n in range(first, last + 1):
             if n not in sents:
                 fail("sentence-missing-in-edition", f"{book}.{n}")
+        if m["edition"].get("verses"):
+            units, verse_ids, verse_say = insert_verses(units, work_dir, m["edition"]["verses"], book, fail, first, last)
     elif ed_fmt == "verse-text":
         ed = verse_lines(work_dir / m["edition"]["file"], m["edition"]["start_after"], first, last)
         units = [(None, n, ed[n]) for n in range(first, last + 1) if n in ed]
@@ -318,7 +368,8 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         verses = treebank.load_conllu_verse(tb_path, m["treebank"]["token_prefix"], m["treebank"].get("verse_key", "Verso"),
                                             m["treebank"].get("match"))
     elif tb_fmt == "glaux":
-        stream, cursor = treebank.load_glaux(tb_path, [str(x) for x in m["treebank"]["subdocs"]]), 0
+        stream, cursor = treebank.load_glaux(tb_path, [str(x) for x in m["treebank"]["subdocs"]],
+                                              m["treebank"].get("sentences")), 0
     elif tb_fmt == "conllu-citation":
         cit = m["treebank"]["citation"]
         stream, cursor = treebank.load_conllu_citation([tb_path], cit["text"], cit["chapter"]), 0
@@ -343,13 +394,14 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         return f"{prefix}.{book}.{n}" if book is not None else f"{prefix}.{n}"
 
     for book, n, text in units:
+        verse_line = n in verse_ids or (book, n) in verse_ids
         # a wide gap inside a verse line is the caesura: remember where the second half starts
         halves = re.split(r"\s{3,}", text.strip())
         caesura_at = len(halves[0].split()) if len(halves) == 2 else None
         printed_text = text
         text = " ".join(text.split())
         token_edition = ed_fmt == "weft-edition" and not isinstance(groups[book]["lines"][n - 1], str)
-        raw = [] if (ed_fmt in ("conllu", "morphgnt", "oshb") or token_edition) else text.split()
+        raw = [] if ((ed_fmt in ("conllu", "morphgnt", "oshb") and not verse_line) or token_edition) else text.split()
         # a dash standing alone (a parenthesis, or the dash after a refrain) is punctuation, not a
         # word: it joins the word before it, or the word after it at the start of a line
         merged: list[str] = []
@@ -381,7 +433,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             puncts = [r["text"][len(r["word"]):] or None for r in verses[n]]
             leads = [None] * len(surfaces)
             conllu_pairs = [{"lemma": r["lemma"], "postag": r["postag"], "ref": r["ref"]} for r in verses[n]]
-        if ed_fmt == "conllu":
+        if ed_fmt == "conllu" and not verse_line:
             surfaces, puncts, conllu_pairs, leads = treebank.conllu_tokens(sents[n]["rows"], sents[n]["sent_id"])
         for t in raw:
             ml = LEAD.search(t)
@@ -390,10 +442,26 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             mt = TRAIL.search(t)
             puncts.append(mt.group(1) if mt else None)
             surfaces.append(TRAIL.sub("", t))
-        if ed_fmt in ("conllu", "morphgnt", "oshb"):
+        if verse_line:
+            # a verse the treebank leaves out: lemma, morphology and gloss are hand-annotated in curated/
+            pairs, fl = [None] * len(surfaces), []
+        elif ed_fmt in ("conllu", "morphgnt", "oshb"):
             pairs, fl = conllu_pairs, []
         elif tb_fmt == "agdt-cite":
             pairs, fl = treebank.reconcile(surfaces, tb.get(f"{book}.{n}", []))
+            nxt_key = f"{book}.{n + 1}" if isinstance(n, int) else None
+            if any(f.startswith("count-mismatch") for f in fl) and nxt_key in tb:
+                # the treebank cites a few words to the next line (Iliad 1.154, 1.526): borrow them
+                # when that makes this line's words match, and take them from the next line
+                tries = []
+                for k in range(1, min(8, len(tb[nxt_key])) + 1):
+                    p2, f2 = treebank.reconcile(surfaces, tb.get(f"{book}.{n}", []) + tb[nxt_key][:k])
+                    if not any(f.startswith("count-mismatch") for f in f2):
+                        tries.append((len(f2), k, p2, f2))
+                if tries:
+                    _, k, pairs, fl = min(tries, key=lambda x: x[:2])     # fewest form mismatches, then fewest words
+                    fl = fl + [f"tb-line-borrow:{k} word(s) from line {n + 1}"]
+                    tb[nxt_key] = tb[nxt_key][k:]
         elif tb_fmt == "conllu-verse":
             # group the verse's treebank tokens under each edition word: the treebank splits elisions
             # the edition prints as one word (Tant'è = Tant' + è), so take tokens until the letters match
@@ -473,6 +541,10 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                     tok.update(fields)
                     for cls, sample in tfails:
                         fail(cls, f"{book}.{n} {sample}")
+            if verse_line and n in verse_say:
+                w_say = verse_say[n][i - 1].strip(",.;:!?()")
+                if w_say != s:
+                    tok["norm"] = w_say
             if lead:
                 tok["lead"] = lead
             if p:
@@ -499,7 +571,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                 # carry no inflection; an empty tag on anything that declines or conjugates is a gap
                 if tb_fmt in ("agdt-cite", "ldt-stream", "glaux") and w["postag"][1:].strip("-") == "" and w["postag"][0] not in INDECLINABLE:
                     fail("morph-empty-declinable", f"{book}.{n} {s} ({w['postag']})")
-            elif tb_fmt != "none":
+            elif tb_fmt != "none" and not verse_line:
                 fail("no-treebank-word", f"{book}.{n} {s}")
             snd = {}
             if lang == "grc":
@@ -551,6 +623,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                if ed_fmt == "weft-edition" and n == 1 else {}),
             "text": text,
             "tokens": toks,
+            **({"verse": True} if verse_line else {}),
         }
         if equation:
             # a displayed equation: MathML from its TeX for the page, and the words a reader says for it

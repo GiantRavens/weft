@@ -103,6 +103,8 @@ h1 { margin: 4px 0 0; font-size: 1.5rem; font-weight: 700; line-height: 1.1; }
   border-bottom: 1px dashed var(--rule);
 }
 .lineset:last-child { border-bottom: 0; }
+/* a verse set into prose (the stanzas of a saga): indented, with a rule beside it */
+.lineset.verse .body { padding-left: 1.2rem; border-left: 2px solid var(--rule); }
 .lnum { font: 500 0.78rem/1 var(--sans); color: var(--ink-faint); padding-top: calc(var(--src-size) * 0.45); text-align: right; }
 .lnum .lnote { display: block; margin: 6px 0 0 auto; color: var(--accent); cursor: pointer; background: none; border: 0; padding: 0; font: inherit; }
 .body { min-width: 0; }

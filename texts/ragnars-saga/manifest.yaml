@@ -1,0 +1,87 @@
+work: ragnars-saga
+title: "Ragnars saga loðbrókar: the saga of Ragnar Lothbrok and his sons, all 20 chapters"
+short_title: Ragnars saga loðbrókar
+author: anonymous, Old Icelandic (13th century)
+language: non
+lang_name: Old Norse
+kind: epic-and-myth
+wikipedia: {title: "Ragnars saga loðbrókar", match: work}
+prefix: rag
+urn: urn:weft:non:ragnars-saga
+unit: section
+section_noun: section
+written:
+  year: 1250
+  display: 13th century
+  label: written in Iceland in the 13th century, probably after the middle of the century, as a sequel to the Völsunga saga, with which it is preserved; it tells of Ragnar Lothbrok, his wives Thora and Aslaug, the daughter of Sigurd and Brynhild, and his sons
+status: phase-0
+extent: {is: whole, of: "all 20 chapters and the verses set in them"}
+pilot:
+  sections: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20']
+edition:
+  id: fornaldarsogur-weft
+  name: "Ragnars saga loðbrókar ok sona hans, Guðni Jónsson and Bjarni Vilhjálmsson's normalized text (Fornaldarsögur Norðurlanda, 1943-44) as on heimskringla.no (revision 35865), in a Weft edition file"
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain; normalized text credited to Guðni Jónsson, Bjarni Vilhjálmsson and heimskringla.no; Weft line division CC BY-SA 4.0
+treebank: null
+schemes:
+- old-norse
+- modern-icelandic
+scheme_labels:
+  old-norse: "Old Norse of the 13th century, when the saga was written; from the normalized spelling (approximate)"
+sound_confidence: medium
+sources_extra:
+- id: fornaldarsogur-heimskringla
+  name: Ragnars saga loðbrókar ok sona hans, Guðni Jónsson and Bjarni Vilhjálmsson's normalized text (Fornaldarsögur Norðurlanda, 1943-44),
+    via heimskringla.no
+  file: sources/fornaldarsogur-heimskringla.txt
+  url: https://heimskringla.no/api.php?action=parse&oldid=35865&prop=wikitext&format=json
+  sha256: 3421a7990d4520e68b76182e2f78de6526304df9bac914159f7f6da68670f341
+  license: medieval text public domain; normalized text credited to heimskringla.no
+  license_url: http://heimskringla.no/wiki/Heimskringla.no:Copyright
+  page: https://heimskringla.no/index.php?title=Ragnars_saga_lo%C3%B0br%C3%B3kar_ok_sona_hans&oldid=35865
+  convert: wikitext
+  note: the file is the page's wikitext, taken out of the API's JSON envelope; weft acquire reproduces it
+translations:
+- id: weft-editorial
+  kind: editorial
+  translator: Weft editorial translation, draft
+  year: 2026
+  form: prose, line by line, close to the Old Norse; the verses stanza by stanza
+  license: CC BY-SA 4.0
+- id: vigfusson-powell1883
+  partial: true                      # the verses only
+  translator: Gudbrand Vigfusson and F. York Powell
+  year: 1883
+  form: prose, Corpus Poeticum Boreale, vol. 2 (Oxford, 1883), the verses of the Ragnar saga and of his sons
+  license: public-domain
+  license_url: https://archive.org/details/corpuspoeticumbo02guuoft
+  file: sources/vigfusson-powell1883.txt
+  url: https://archive.org/download/corpuspoeticumbo02guuoft/corpuspoeticumbo02guuoft_djvu.txt
+  sha256: 748666f6376fe6a0a04c9aac1952a2ed52ce168c63df72a23a2bef73647586b9
+- id: schlauch1930
+  translator: Margaret Schlauch
+  year: 1930
+  form: "prose, with the verses in rhymed quatrains, The Saga of Ragnar Lodbrok, in The Saga of the Volsungs; The Saga of Ragnar Lodbrok together with the Lay of Kraka (New York, 1930), pp. 185-256"
+  license: "public domain in the United States (published 1930, entered the public domain on 1 January 2026); Schlauch died in 1986; elsewhere the status depends on the country: under a life-plus-70 term it would run through 2056, and countries that apply the rule of the shorter term to a work first published in the United States may treat it as free"
+  license_url: https://archive.org/details/sagaofvolsungssa0000unse
+  file: sources/schlauch1930.txt
+  url: https://archive.org/download/sagaofvolsungssa0000unse/sagaofvolsungssa0000unse_djvu.txt
+  sha256: f0381b93f6cd0c334f7c39b731871dc4a37e44d863ae6c4a1c748646222a928d
+- id: waggoner2009
+  kind: reference
+  translator: Ben Waggoner
+  year: 2009
+  form: "The Sagas of Ragnar Lodbrok (The Troth, 2009)"
+- id: crawford2017
+  kind: reference
+  translator: Jackson Crawford
+  year: 2017
+  form: "The Saga of the Volsungs with the Saga of Ragnar Lothbrok (Hackett, 2017)"
+predicted_gaps:
+- "no treebank covers this text: lemma, morphology and gloss are hand-annotated after Zoëga, A Concise Dictionary of Old Icelandic (1910), by several hands under one convention table, and the verses also carry staves and meter (draft)"
+- "the normalized text is Guðni Jónsson and Bjarni Vilhjálmsson's (Fornaldarsögur Norðurlanda, 1943-44), not a critical edition; the page reproduces it from heimskringla.no with the markup stripped"
+- "no English translation of the prose is public domain worldwide: the English beside each line is Weft's own draft translation. Schlauch (1930) is printed beside it but is public domain in the United States only (Schlauch died 1986); her verses are rhymed quatrains, freer than her prose, aligned stanza by stanza. Vigfusson and Powell (1883) translate the verses only, and theirs is aligned where they do. The modern translations are cited, not printed"
+- "the old-norse sound scheme models the 13th century approximately, from the normalized spelling"
+- "several skaldic stanzas are insecure in the text or the reading; the worst is the flyting stanza rag.19.49-56, where lasi and mollu have no dictionary headword and Finnur Jónsson (Skjaldedigtning B II, 1915, p. 260) leaves the two phrases that hold them untranslated: their glosses read (obscure) and the English marks them unintelligible"

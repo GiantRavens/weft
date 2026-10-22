@@ -286,6 +286,22 @@ states it beside the recording, though it cannot enforce it on others. A withdra
 record and loses its files. `weft check` enforces each of these rules; it does not yet confirm that a
 listed file exists. The terms a speaker is offered are in [For speakers](speakers.md).
 
+## Verses set into a treebank edition, and passages inside a treebank citation
+
+Two manifest fields handle a treebank whose units do not match the passage.
+
+- `edition.verses: {file: verses.yaml}`, for an edition read from a treebank (`format: conllu`) that
+  leaves out verse, as IcePaHC leaves out the stanzas of the sagas. The file names the source the verses
+  are checked against (`verify_in`, a pinned file; a MediaWiki API envelope is unwrapped) and lists
+  `verses: [{after: <sentence>, lines: [...]}]`. Each line becomes a line with the id
+  `<sentence>v<k>`, placed after that sentence and marked `verse: true` (the page sets it off with a rule).
+  A line may be `{text, say}`: `say` gives the normalized form the sound is read from, word for word,
+  where the print's spelling would mislead it. Lemma, morphology and gloss of verse lines are
+  hand-annotated in `curated/` (rule 3 exception), and a partial draft skips verses outside its range.
+- `treebank.sentences: [first, last]`, for GLAUx: the first and last sentence ids of the passage, where a
+  passage begins or ends inside one of GLAUx's `subdoc` citations (which follow the Perseus page
+  divisions, not the printed page breaks).
+
 ## notes/bookNN.yaml
 
 ```yaml

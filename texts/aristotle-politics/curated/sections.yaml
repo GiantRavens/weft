@@ -1,0 +1,919 @@
+# Human overlay for aristotle-politics. Glosses by hand; corrections to the automatic parse in their own changesets.
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-18
+  why: "1252a24-1252b: literal word-for-word gloss"
+  status: draft
+  set:
+    pol.1252a.1.1: {gloss: "if"}   # εἰ
+    pol.1252a.1.2: {gloss: "indeed"}   # δή
+    pol.1252a.1.3: {gloss: "anyone"}   # τις
+    pol.1252a.1.4: {gloss: "from"}   # ἐξ
+    pol.1252a.1.5: {gloss: "the-beginning"}   # ἀρχῆς
+    pol.1252a.1.6: {gloss: "the"}   # τὰ
+    pol.1252a.1.7: {gloss: "things"}   # πράγματα
+    pol.1252a.1.8: {gloss: "growing"}   # φυόμενα
+    pol.1252a.1.9: {gloss: "should-look-at"}   # βλέψειεν
+    pol.1252a.1.10: {gloss: "just-as"}   # ὥσπερ
+    pol.1252a.1.11: {gloss: "in"}   # ἐν
+    pol.1252a.1.12: {gloss: "the"}   # τοῖς
+    pol.1252a.1.13: {gloss: "other-cases"}   # ἄλλοις
+    pol.1252a.1.14: {gloss: "also"}   # καὶ
+    pol.1252a.1.15: {gloss: "in"}   # ἐν
+    pol.1252a.1.16: {gloss: "these"}   # τούτοις
+    pol.1252a.1.17: {gloss: "most-finely"}   # κάλλιστʼ
+    pol.1252a.1.18: {gloss: "would"}   # ἂν
+    pol.1252a.1.19: {gloss: "thus"}   # οὕτω
+    pol.1252a.1.20: {gloss: "he-contemplate"}   # θεωρήσειεν
+    pol.1252a.2.1: {gloss: "necessity"}   # ἀνάγκη
+    pol.1252a.2.2: {gloss: "then"}   # δὴ
+    pol.1252a.2.3: {gloss: "first"}   # πρῶτον
+    pol.1252a.2.4: {gloss: "to-be-paired"}   # συνδυάζεσθαι
+    pol.1252a.2.5: {gloss: "those"}   # τοὺς
+    pol.1252a.2.6: {gloss: "without"}   # ἄνευ
+    pol.1252a.2.7: {gloss: "one-another"}   # ἀλλήλων
+    pol.1252a.2.8: {gloss: "not"}   # μὴ
+    pol.1252a.2.9: {gloss: "being-able"}   # δυναμένους
+    pol.1252a.2.10: {gloss: "to-be"}   # εἶναι
+    pol.1252a.2.11: {gloss: "for-example"}   # οἷον
+    pol.1252a.2.12: {gloss: "female"}   # θῆλυ
+    pol.1252a.2.13: {gloss: "on-the-one-hand"}   # μὲν
+    pol.1252a.2.14: {gloss: "and"}   # καὶ
+    pol.1252a.2.15: {gloss: "male"}   # ἄρρεν
+    pol.1252a.2.16: {gloss: "of-the"}   # τῆς
+    pol.1252a.2.17: {gloss: "generation"}   # γενέσεως
+    pol.1252a.2.18: {gloss: "for-the-sake-of"}   # ἕνεκεν
+    pol.1252a.2.19: {gloss: "and"}   # καὶ
+    pol.1252a.2.20: {gloss: "this"}   # τοῦτο
+    pol.1252a.2.21: {gloss: "not"}   # οὐκ
+    pol.1252a.2.22: {gloss: "from"}   # ἐκ
+    pol.1252a.2.23: {gloss: "choice"}   # προαιρέσεως
+    pol.1252a.2.24: {gloss: "but"}   # ἀλλʼ
+    pol.1252a.2.25: {gloss: "just-as"}   # ὥσπερ
+    pol.1252a.2.26: {gloss: "also"}   # καὶ
+    pol.1252a.2.27: {gloss: "in"}   # ἐν
+    pol.1252a.2.28: {gloss: "the"}   # τοῖς
+    pol.1252a.2.29: {gloss: "other"}   # ἄλλοις
+    pol.1252a.2.30: {gloss: "animals"}   # ζῴοις
+    pol.1252a.2.31: {gloss: "and"}   # καὶ
+    pol.1252a.2.32: {gloss: "plants"}   # φυτοῖς
+    pol.1252a.2.33: {gloss: "natural"}   # φυσικὸν
+    pol.1252a.2.34: {gloss: "the"}   # τὸ
+    pol.1252a.2.35: {gloss: "to-desire"}   # ἐφίεσθαι
+    pol.1252a.2.36: {gloss: "of-what-sort"}   # οἷον
+    pol.1252a.2.37: {gloss: "itself"}   # αὐτό
+    pol.1252a.2.38: {gloss: "such"}   # τοιοῦτον
+    pol.1252a.2.39: {gloss: "to-leave-behind"}   # καταλιπεῖν
+    pol.1252a.2.40: {gloss: "another"}   # ἕτερον
+    pol.1252a.2.41: {gloss: "ruling"}   # ἄρχον
+    pol.1252a.2.42: {gloss: "on-the-other-hand"}   # δὲ
+    pol.1252a.2.43: {gloss: "and"}   # καὶ
+    pol.1252a.2.44: {gloss: "ruled"}   # ἀρχόμενον
+    pol.1252a.2.45: {gloss: "by-nature"}   # φύσει
+    pol.1252a.2.46: {gloss: "because-of"}   # διὰ
+    pol.1252a.2.47: {gloss: "the"}   # τὴν
+    pol.1252a.2.48: {gloss: "preservation"}   # σωτηρίαν
+    pol.1252a.3.1: {gloss: "the-one"}   # τὸ
+    pol.1252a.3.2: {gloss: "on-the-one-hand"}   # μὲν
+    pol.1252a.3.3: {gloss: "for"}   # γὰρ
+    pol.1252a.3.4: {gloss: "being-able"}   # δυνάμενον
+    pol.1252a.3.5: {gloss: "with-the"}   # τῇ
+    pol.1252a.3.6: {gloss: "thought"}   # διανοίᾳ
+    pol.1252a.3.7: {gloss: "to-foresee"}   # προορᾶν
+    pol.1252a.3.8: {gloss: "ruling"}   # ἄρχον
+    pol.1252a.3.9: {gloss: "by-nature"}   # φύσει
+    pol.1252a.3.10: {gloss: "and"}   # καὶ
+    pol.1252a.3.11: {gloss: "mastering"}   # δεσπόζον
+    pol.1252a.3.12: {gloss: "by-nature"}   # φύσει
+    pol.1252a.3.13: {gloss: "the-other"}   # τὸ
+    pol.1252a.3.14: {gloss: "on-the-other-hand"}   # δὲ
+    pol.1252a.3.15: {gloss: "being-able"}   # δυνάμενον
+    pol.1252a.3.16: {gloss: "with-the"}   # τῷ
+    pol.1252a.3.17: {gloss: "body"}   # σώματι
+    pol.1252a.3.18: {gloss: "these-things"}   # ταῦτα
+    pol.1252a.3.19: {gloss: "to-labor-at"}   # πονεῖν
+    pol.1252a.3.20: {gloss: "ruled"}   # ἀρχόμενον
+    pol.1252a.3.21: {gloss: "and"}   # καὶ
+    pol.1252a.3.22: {gloss: "by-nature"}   # φύσει
+    pol.1252a.3.23: {gloss: "slave"}   # δοῦλον
+    pol.1252a.4.1: {gloss: "therefore"}   # διὸ
+    pol.1252a.4.2: {gloss: "for-master"}   # δεσπότῃ
+    pol.1252a.4.3: {gloss: "and"}   # καὶ
+    pol.1252a.4.4: {gloss: "for-slave"}   # δούλῳ
+    pol.1252a.4.5: {gloss: "the-same-thing"}   # ταὐτὸ
+    pol.1252a.4.6: {gloss: "is-advantageous"}   # συμφέρει
+    pol.1252b.1.1: {gloss: "by-nature"}   # φύσει
+    pol.1252b.1.2: {gloss: "so"}   # μὲν
+    pol.1252b.1.3: {gloss: "then"}   # οὖν
+    pol.1252b.1.4: {gloss: "has-been-distinguished"}   # διώρισται
+    pol.1252b.1.5: {gloss: "the"}   # τὸ
+    pol.1252b.1.6: {gloss: "female"}   # θῆλυ
+    pol.1252b.1.7: {gloss: "and"}   # καὶ
+    pol.1252b.1.8: {gloss: "the"}   # τὸ
+    pol.1252b.1.9: {gloss: "slave"}   # δοῦλον
+    pol.1252b.1.10: {gloss: "nothing"}   # οὐθὲν
+    pol.1252b.1.11: {gloss: "for"}   # γὰρ
+    pol.1252b.1.12: {gloss: "the"}   # ἡ
+    pol.1252b.1.13: {gloss: "nature"}   # φύσις
+    pol.1252b.1.14: {gloss: "makes"}   # ποιεῖ
+    pol.1252b.1.15: {gloss: "such"}   # τοιοῦτον
+    pol.1252b.1.16: {gloss: "as"}   # οἷον
+    pol.1252b.1.17: {gloss: "the"}   # οἱ
+    pol.1252b.1.18: {gloss: "bronze-smiths"}   # χαλκοτύποι
+    pol.1252b.1.19: {gloss: "the"}   # τὴν
+    pol.1252b.1.20: {gloss: "Delphic"}   # Δελφικὴν
+    pol.1252b.1.21: {gloss: "knife"}   # μάχαιραν
+    pol.1252b.1.22: {gloss: "stingily"}   # πενιχρῶς
+    pol.1252b.1.23: {gloss: "but"}   # ἀλλʼ
+    pol.1252b.1.24: {gloss: "one-thing"}   # ἓν
+    pol.1252b.1.25: {gloss: "for"}   # πρὸς
+    pol.1252b.1.26: {gloss: "one-use"}   # ἕν
+    pol.1252b.2.1: {gloss: "thus"}   # οὕτω
+    pol.1252b.2.2: {gloss: "for"}   # γὰρ
+    pol.1252b.2.3: {gloss: "would"}   # ἂν
+    pol.1252b.2.4: {gloss: "be-perfected"}   # ἀποτελοῖτο
+    pol.1252b.2.5: {gloss: "most-finely"}   # κάλλιστα
+    pol.1252b.2.6: {gloss: "of-the"}   # τῶν
+    pol.1252b.2.7: {gloss: "tools"}   # ὀργάνων
+    pol.1252b.2.8: {gloss: "each"}   # ἕκαστον
+    pol.1252b.2.9: {gloss: "not"}   # μὴ
+    pol.1252b.2.10: {gloss: "to-many"}   # πολλοῖς
+    pol.1252b.2.11: {gloss: "tasks"}   # ἔργοις
+    pol.1252b.2.12: {gloss: "but"}   # ἀλλʼ
+    pol.1252b.2.13: {gloss: "to-one"}   # ἑνὶ
+    pol.1252b.2.14: {gloss: "serving"}   # δουλεῦον
+    pol.1252b.3.1: {gloss: "among"}   # ἐν
+    pol.1252b.3.2: {gloss: "but"}   # δὲ
+    pol.1252b.3.3: {gloss: "the"}   # τοῖς
+    pol.1252b.3.4: {gloss: "barbarians"}   # βαρβάροις
+    pol.1252b.3.5: {gloss: "the"}   # τὸ
+    pol.1252b.3.6: {gloss: "female"}   # θῆλυ
+    pol.1252b.3.7: {gloss: "and"}   # καὶ
+    pol.1252b.3.8: {gloss: "the"}   # τὸ
+    pol.1252b.3.9: {gloss: "slave"}   # δοῦλον
+    pol.1252b.3.10: {gloss: "the"}   # τὴν
+    pol.1252b.3.11: {gloss: "same"}   # αὐτὴν
+    pol.1252b.3.12: {gloss: "has"}   # ἔχει
+    pol.1252b.3.13: {gloss: "rank"}   # τάξιν
+    pol.1252b.4.1: {gloss: "cause"}   # αἴτιον
+    pol.1252b.4.2: {gloss: "and"}   # δʼ
+    pol.1252b.4.3: {gloss: "that"}   # ὅτι
+    pol.1252b.4.4: {gloss: "the"}   # τὸ
+    pol.1252b.4.5: {gloss: "by-nature"}   # φύσει
+    pol.1252b.4.6: {gloss: "ruling-element"}   # ἄρχον
+    pol.1252b.4.7: {gloss: "not"}   # οὐκ
+    pol.1252b.4.8: {gloss: "they-have"}   # ἔχουσιν
+    pol.1252b.4.9: {gloss: "but"}   # ἀλλὰ
+    pol.1252b.4.10: {gloss: "becomes"}   # γίνεται
+    pol.1252b.4.11: {gloss: "the"}   # ἡ
+    pol.1252b.4.12: {gloss: "partnership"}   # κοινωνία
+    pol.1252b.4.13: {gloss: "of-them"}   # αὐτῶν
+    pol.1252b.4.14: {gloss: "of-female-slave"}   # δούλης
+    pol.1252b.4.15: {gloss: "and"}   # καὶ
+    pol.1252b.4.16: {gloss: "of-male-slave"}   # δούλου
+    pol.1252b.5.1: {gloss: "therefore"}   # διό
+    pol.1252b.5.2: {gloss: "say"}   # φασιν
+    pol.1252b.5.3: {gloss: "the"}   # οἱ
+    pol.1252b.5.4: {gloss: "poets"}   # ποιηταὶ
+    pol.1252b.5.5: {gloss: "over-barbarians"}   # βαρβάρων
+    pol.1252b.5.6: {gloss: "and"}   # δʼ
+    pol.1252b.5.7: {gloss: "Greeks"}   # Ἕλληνας
+    pol.1252b.5.8: {gloss: "to-rule"}   # ἄρχειν
+    pol.1252b.5.9: {gloss: "fitting"}   # εἰκός
+    pol.1252b.5.10: {gloss: "as"}   # ὡς
+    pol.1252b.5.11: {gloss: "the-same-thing"}   # ταὐτὸ
+    pol.1252b.5.12: {gloss: "by-nature"}   # φύσει
+    pol.1252b.5.13: {gloss: "barbarian"}   # βάρβαρον
+    pol.1252b.5.14: {gloss: "and"}   # καὶ
+    pol.1252b.5.15: {gloss: "slave"}   # δοῦλον
+    pol.1252b.5.16: {gloss: "being"}   # ὄν
+    pol.1252b.6.1: {gloss: "from"}   # ἐκ
+    pol.1252b.6.2: {gloss: "so"}   # μὲν
+    pol.1252b.6.3: {gloss: "then"}   # οὖν
+    pol.1252b.6.4: {gloss: "these"}   # τούτων
+    pol.1252b.6.5: {gloss: "the"}   # τῶν
+    pol.1252b.6.6: {gloss: "two"}   # δύο
+    pol.1252b.6.7: {gloss: "partnerships"}   # κοινωνιῶν
+    pol.1252b.6.8: {gloss: "household"}   # οἰκία
+    pol.1252b.6.9: {gloss: "first"}   # πρώτη
+    pol.1252b.6.10: {gloss: "and"}   # καὶ
+    pol.1252b.6.11: {gloss: "rightly"}   # ὀρθῶς
+    pol.1252b.6.12: {gloss: "Hesiod"}   # Ἡσίοδος
+    pol.1252b.6.13: {gloss: "said"}   # εἶπε
+    pol.1252b.6.14: {gloss: "having-composed"}   # ποιήσας
+    pol.1252b.6.15: {gloss: "house"}   # οἶκον
+    pol.1252b.6.16: {gloss: "on-the-one-hand"}   # μὲν
+    pol.1252b.6.17: {gloss: "first-of-all"}   # πρώτιστα
+    pol.1252b.6.18: {gloss: "wife"}   # γυναῖκά
+    pol.1252b.6.19: {gloss: "and"}   # τε
+    pol.1252b.6.20: {gloss: "ox"}   # βοῦν
+    pol.1252b.6.21: {gloss: "and"}   # τʼ
+    pol.1252b.6.22: {gloss: "plowing"}   # ἀροτῆρα
+    pol.1252b.7.1: {gloss: "the"}   # ὁ
+    pol.1252b.7.2: {gloss: "for"}   # γὰρ
+    pol.1252b.7.3: {gloss: "ox"}   # βοῦς
+    pol.1252b.7.4: {gloss: "in-place-of"}   # ἀντʼ
+    pol.1252b.7.5: {gloss: "servant"}   # οἰκέτου
+    pol.1252b.7.6: {gloss: "for-the"}   # τοῖς
+    pol.1252b.7.7: {gloss: "poor"}   # πένησίν
+    pol.1252b.7.8: {gloss: "is"}   # ἐστιν
+    pol.1252b.8.1: {gloss: "the"}   # ἡ
+    pol.1252b.8.2: {gloss: "so"}   # μὲν
+    pol.1252b.8.3: {gloss: "then"}   # οὖν
+    pol.1252b.8.4: {gloss: "for"}   # εἰς
+    pol.1252b.8.5: {gloss: "every"}   # πᾶσαν
+    pol.1252b.8.6: {gloss: "day"}   # ἡμέραν
+    pol.1252b.8.7: {gloss: "constituted"}   # συνεστηκυῖα
+    pol.1252b.8.8: {gloss: "partnership"}   # κοινωνία
+    pol.1252b.8.9: {gloss: "according-to"}   # κατὰ
+    pol.1252b.8.10: {gloss: "nature"}   # φύσιν
+    pol.1252b.8.11: {gloss: "household"}   # οἶκός
+    pol.1252b.8.12: {gloss: "is"}   # ἐστιν
+    pol.1252b.8.13: {gloss: "whom"}   # οὓς
+    pol.1252b.8.14: {gloss: "Charondas"}   # Χαρώνδας
+    pol.1252b.8.15: {gloss: "on-the-one-hand"}   # μὲν
+    pol.1252b.8.16: {gloss: "calls"}   # καλεῖ
+    pol.1252b.8.17: {gloss: "bread-bin-sharers"}   # ὁμοσιπύους
+    pol.1252b.8.18: {gloss: "Epimenides"}   # Ἐπιμενίδης
+    pol.1252b.8.19: {gloss: "on-the-other-hand"}   # δὲ
+    pol.1252b.8.20: {gloss: "the"}   # ὁ
+    pol.1252b.8.21: {gloss: "Cretan"}   # Κρὴς
+    pol.1252b.8.22: {gloss: "manger-sharers"}   # ὁμοκάπους
+    pol.1252b.9.1: {gloss: "the"}   # ἡ
+    pol.1252b.9.2: {gloss: "and"}   # δʼ
+    pol.1252b.9.3: {gloss: "from"}   # ἐκ
+    pol.1252b.9.4: {gloss: "more"}   # πλειόνων
+    pol.1252b.9.5: {gloss: "households"}   # οἰκιῶν
+    pol.1252b.9.6: {gloss: "partnership"}   # κοινωνία
+    pol.1252b.9.7: {gloss: "first"}   # πρώτη
+    pol.1252b.9.8: {gloss: "of-use"}   # χρήσεως
+    pol.1252b.9.9: {gloss: "for-the-sake-of"}   # ἕνεκεν
+    pol.1252b.9.10: {gloss: "not"}   # μὴ
+    pol.1252b.9.11: {gloss: "daily"}   # ἐφημέρου
+    pol.1252b.9.12: {gloss: "village"}   # κώμη
+    pol.1252b.10.1: {gloss: "most"}   # μάλιστα
+    pol.1252b.10.2: {gloss: "and"}   # δὲ
+    pol.1252b.10.3: {gloss: "according-to"}   # κατὰ
+    pol.1252b.10.4: {gloss: "nature"}   # φύσιν
+    pol.1252b.10.5: {gloss: "seems"}   # ἔοικεν
+    pol.1252b.10.6: {gloss: "the"}   # ἡ
+    pol.1252b.10.7: {gloss: "village"}   # κώμη
+    pol.1252b.10.8: {gloss: "colony"}   # ἀποικία
+    pol.1252b.10.9: {gloss: "of-household"}   # οἰκίας
+    pol.1252b.10.10: {gloss: "to-be"}   # εἶναι
+    pol.1252b.10.11: {gloss: "whom"}   # οὓς
+    pol.1252b.10.12: {gloss: "call"}   # καλοῦσί
+    pol.1252b.10.13: {gloss: "some"}   # τινες
+    pol.1252b.10.14: {gloss: "milk-sharers"}   # ὁμογάλακτας
+    pol.1252b.10.15: {gloss: "children"}   # παῖδάς
+    pol.1252b.10.16: {gloss: "both"}   # τε
+    pol.1252b.10.17: {gloss: "and"}   # καὶ
+    pol.1252b.10.18: {gloss: "of-children"}   # παίδων
+    pol.1252b.10.19: {gloss: "children"}   # παῖδας
+    pol.1252b.11.1: {gloss: "therefore"}   # διὸ
+    pol.1252b.11.2: {gloss: "also"}   # καὶ
+    pol.1252b.11.3: {gloss: "the"}   # τὸ
+    pol.1252b.11.4: {gloss: "first"}   # πρῶτον
+    pol.1252b.11.5: {gloss: "were-ruled-by-kings"}   # ἐβασιλεύοντο
+    pol.1252b.11.6: {gloss: "the"}   # αἱ
+    pol.1252b.11.7: {gloss: "cities"}   # πόλεις
+    pol.1252b.11.8: {gloss: "and"}   # καὶ
+    pol.1252b.11.9: {gloss: "now"}   # νῦν
+    pol.1252b.11.10: {gloss: "still"}   # ἔτι
+    pol.1252b.11.11: {gloss: "the"}   # τὰ
+    pol.1252b.11.12: {gloss: "nations"}   # ἔθνη
+    pol.1252b.12.1: {gloss: "from"}   # ἐκ
+    pol.1252b.12.2: {gloss: "people-ruled-by-kings"}   # βασιλευομένων
+    pol.1252b.12.3: {gloss: "for"}   # γὰρ
+    pol.1252b.12.4: {gloss: "they-came-together"}   # συνῆλθον
+    pol.1252b.13.1: {gloss: "every"}   # πᾶσα
+    pol.1252b.13.2: {gloss: "for"}   # γὰρ
+    pol.1252b.13.3: {gloss: "household"}   # οἰκία
+    pol.1252b.13.4: {gloss: "is-ruled-as-by-a-king"}   # βασιλεύεται
+    pol.1252b.13.5: {gloss: "by"}   # ὑπὸ
+    pol.1252b.13.6: {gloss: "the"}   # τοῦ
+    pol.1252b.13.7: {gloss: "eldest"}   # πρεσβυτάτου
+    pol.1252b.13.8: {gloss: "so-that"}   # ὥστε
+    pol.1252b.13.9: {gloss: "also"}   # καὶ
+    pol.1252b.13.10: {gloss: "the"}   # αἱ
+    pol.1252b.13.11: {gloss: "colonies"}   # ἀποικίαι
+    pol.1252b.13.12: {gloss: "because-of"}   # διὰ
+    pol.1252b.13.13: {gloss: "the"}   # τὴν
+    pol.1252b.13.14: {gloss: "kinship"}   # συγγένειαν
+    pol.1252b.14.1: {gloss: "and"}   # καὶ
+    pol.1252b.14.2: {gloss: "this"}   # τοῦτʼ
+    pol.1252b.14.3: {gloss: "is"}   # ἐστὶν
+    pol.1252b.14.4: {gloss: "what"}   # ὃ
+    pol.1252b.14.5: {gloss: "says"}   # λέγει
+    pol.1252b.14.6: {gloss: "Homer"}   # Ὅμηρος
+    pol.1252b.14.7: {gloss: "gives-law"}   # θεμιστεύει
+    pol.1252b.14.8: {gloss: "and"}   # δὲ
+    pol.1252b.14.9: {gloss: "each"}   # ἕκαστος
+    pol.1252b.14.10: {gloss: "to-children"}   # παίδων
+    pol.1252b.14.11: {gloss: "and"}   # ἠδʼ
+    pol.1252b.14.12: {gloss: "to-wives"}   # ἀλόχων
+    pol.1252b.14.13: {gloss: "scattered"}   # σποράδες
+    pol.1252b.14.14: {gloss: "for"}   # γάρ
+    pol.1252b.15.1: {gloss: "and"}   # καὶ
+    pol.1252b.15.2: {gloss: "thus"}   # οὕτω
+    pol.1252b.15.3: {gloss: "the"}   # τὸ
+    pol.1252b.15.4: {gloss: "of-old"}   # ἀρχαῖον
+    pol.1252b.15.5: {gloss: "they-dwelt"}   # ᾤκουν
+    pol.1252b.16.1: {gloss: "and"}   # καὶ
+    pol.1252b.16.2: {gloss: "the"}   # τοὺς
+    pol.1252b.16.3: {gloss: "gods"}   # θεοὺς
+    pol.1252b.16.4: {gloss: "also"}   # δὲ
+    pol.1252b.16.5: {gloss: "because-of"}   # διὰ
+    pol.1252b.16.6: {gloss: "this"}   # τοῦτο
+    pol.1252b.16.7: {gloss: "all"}   # πάντες
+    pol.1252b.16.8: {gloss: "say"}   # φασὶ
+    pol.1252b.16.9: {gloss: "to-be-ruled-by-a-king"}   # βασιλεύεσθαι
+    pol.1252b.16.10: {gloss: "because"}   # ὅτι
+    pol.1252b.16.11: {gloss: "also"}   # καὶ
+    pol.1252b.16.12: {gloss: "themselves"}   # αὐτοὶ
+    pol.1252b.16.13: {gloss: "some"}   # οἱ
+    pol.1252b.16.14: {gloss: "on-the-one-hand"}   # μὲν
+    pol.1252b.16.15: {gloss: "still"}   # ἔτι
+    pol.1252b.16.16: {gloss: "even"}   # καὶ
+    pol.1252b.16.17: {gloss: "now"}   # νῦν
+    pol.1252b.16.18: {gloss: "others"}   # οἱ
+    pol.1252b.16.19: {gloss: "on-the-other-hand"}   # δὲ
+    pol.1252b.16.20: {gloss: "the"}   # τὸ
+    pol.1252b.16.21: {gloss: "of-old"}   # ἀρχαῖον
+    pol.1252b.16.22: {gloss: "were-ruled-by-kings"}   # ἐβασιλεύοντο
+    pol.1252b.16.23: {gloss: "just-as"}   # ὥσπερ
+    pol.1252b.16.24: {gloss: "and"}   # δὲ
+    pol.1252b.16.25: {gloss: "also"}   # καὶ
+    pol.1252b.16.26: {gloss: "the"}   # τὰ
+    pol.1252b.16.27: {gloss: "forms"}   # εἴδη
+    pol.1252b.16.28: {gloss: "to-themselves"}   # ἑαυτοῖς
+    pol.1252b.16.29: {gloss: "liken"}   # ἀφομοιοῦσιν
+    pol.1252b.16.30: {gloss: "the"}   # οἱ
+    pol.1252b.16.31: {gloss: "humans"}   # ἄνθρωποι
+    pol.1252b.16.32: {gloss: "so"}   # οὕτω
+    pol.1252b.16.33: {gloss: "also"}   # καὶ
+    pol.1252b.16.34: {gloss: "the"}   # τοὺς
+    pol.1252b.16.35: {gloss: "lives"}   # βίους
+    pol.1252b.16.36: {gloss: "of-the"}   # τῶν
+    pol.1252b.16.37: {gloss: "gods"}   # θεῶν
+    pol.1252b.17.1: {gloss: "the"}   # ἡ
+    pol.1252b.17.2: {gloss: "and"}   # δʼ
+    pol.1252b.17.3: {gloss: "from"}   # ἐκ
+    pol.1252b.17.4: {gloss: "more"}   # πλειόνων
+    pol.1252b.17.5: {gloss: "villages"}   # κωμῶν
+    pol.1252b.17.6: {gloss: "partnership"}   # κοινωνία
+    pol.1252b.17.7: {gloss: "complete"}   # τέλειος
+    pol.1252b.17.8: {gloss: "city"}   # πόλις
+    pol.1252b.17.9: {gloss: "already"}   # ἤδη
+    pol.1252b.17.10: {gloss: "of-all"}   # πάσης
+    pol.1252b.17.11: {gloss: "having"}   # ἔχουσα
+    pol.1252b.17.12: {gloss: "limit"}   # πέρας
+    pol.1252b.17.13: {gloss: "of-the"}   # τῆς
+    pol.1252b.17.14: {gloss: "self-sufficiency"}   # αὐταρκείας
+    pol.1252b.17.15: {gloss: "as"}   # ὡς
+    pol.1252b.17.16: {gloss: "word"}   # ἔπος
+    pol.1252b.17.17: {gloss: "to-say"}   # εἰπεῖν
+    pol.1252b.17.18: {gloss: "coming-to-be"}   # γινομένη
+    pol.1252b.17.19: {gloss: "on-the-one-hand"}   # μὲν
+    pol.1252b.17.20: {gloss: "of-the"}   # τοῦ
+    pol.1252b.17.21: {gloss: "living"}   # ζῆν
+    pol.1252b.17.22: {gloss: "for-the-sake-of"}   # ἕνεκεν
+    pol.1252b.17.23: {gloss: "being"}   # οὖσα
+    pol.1252b.17.24: {gloss: "on-the-other-hand"}   # δὲ
+    pol.1252b.17.25: {gloss: "of-the"}   # τοῦ
+    pol.1252b.17.26: {gloss: "well"}   # εὖ
+    pol.1252b.17.27: {gloss: "living"}   # ζῆν
+    pol.1252b.18.1: {gloss: "therefore"}   # διὸ
+    pol.1252b.18.2: {gloss: "every"}   # πᾶσα
+    pol.1252b.18.3: {gloss: "city"}   # πόλις
+    pol.1252b.18.4: {gloss: "by-nature"}   # φύσει
+    pol.1252b.18.5: {gloss: "is"}   # ἔστιν
+    pol.1252b.18.6: {gloss: "if-indeed"}   # εἴπερ
+    pol.1252b.18.7: {gloss: "also"}   # καὶ
+    pol.1252b.18.8: {gloss: "the"}   # αἱ
+    pol.1252b.18.9: {gloss: "first"}   # πρῶται
+    pol.1252b.18.10: {gloss: "partnerships"}   # κοινωνίαι
+    pol.1252b.19.1: {gloss: "end"}   # τέλος
+    pol.1252b.19.2: {gloss: "for"}   # γὰρ
+    pol.1252b.19.3: {gloss: "this"}   # αὕτη
+    pol.1252b.19.4: {gloss: "of-those"}   # ἐκείνων
+    pol.1252b.19.5: {gloss: "the"}   # ἡ
+    pol.1252b.19.6: {gloss: "and"}   # δὲ
+    pol.1252b.19.7: {gloss: "nature"}   # φύσις
+    pol.1252b.19.8: {gloss: "end"}   # τέλος
+    pol.1252b.19.9: {gloss: "is"}   # ἐστίν
+    pol.1252b.20.1: {gloss: "what-sort"}   # οἷον
+    pol.1252b.20.2: {gloss: "for"}   # γὰρ
+    pol.1252b.20.3: {gloss: "each-thing"}   # ἕκαστόν
+    pol.1252b.20.4: {gloss: "is"}   # ἐστι
+    pol.1252b.20.5: {gloss: "the"}   # τῆς
+    pol.1252b.20.6: {gloss: "generation"}   # γενέσεως
+    pol.1252b.20.7: {gloss: "having-been-completed"}   # τελεσθείσης
+    pol.1252b.20.8: {gloss: "this"}   # ταύτην
+    pol.1252b.20.9: {gloss: "we-say"}   # φαμὲν
+    pol.1252b.20.10: {gloss: "the"}   # τὴν
+    pol.1252b.20.11: {gloss: "nature"}   # φύσιν
+    pol.1252b.20.12: {gloss: "to-be"}   # εἶναι
+    pol.1252b.20.13: {gloss: "of-each"}   # ἑκάστου
+    pol.1252b.20.14: {gloss: "just-as"}   # ὥσπερ
+    pol.1252b.20.15: {gloss: "of-human"}   # ἀνθρώπου
+    pol.1252b.20.16: {gloss: "of-horse"}   # ἵππου
+    pol.1252b.20.17: {gloss: "of-household"}   # οἰκίας
+    pol.1252b.21.1: {gloss: "further"}   # ἔτι
+    pol.1252b.21.2: {gloss: "the"}   # τὸ
+    pol.1252b.21.3: {gloss: "which"}   # οὗ
+    pol.1252b.21.4: {gloss: "for-the-sake-of"}   # ἕνεκα
+    pol.1252b.21.5: {gloss: "and"}   # καὶ
+    pol.1252b.21.6: {gloss: "the"}   # τὸ
+    pol.1252b.21.7: {gloss: "end"}   # τέλος
+    pol.1252b.21.8: {gloss: "best"}   # βέλτιστον
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-18
+  why: "corrections to the GLAUx automatic parse of 1252a24-1252b: 44 of 422 tokens corrected (6 lemmas, 42 morph tags). Subjects parsed as accusatives and objects as nominatives (τὸ θῆλυ καὶ τὸ δοῦλον, τὸ οὗ ἕνεκα καὶ τὸ τέλος, οὐθὲν, πέρας); neuter things parsed as masculine (ἕτερον, ἑκάστου) and masculine or feminine referents parsed as neuter or masculine (τοῦ πρεσβυτάτου, ἐκείνων); predicate and parallel participles in the wrong case (ἄρχον, ἀρχόμενον); the accusative absolute ὡς ταὐτὸ ... ὄν parsed as nominative; two crasis tokens ταὐτό moved to αὐτός; οἷον and adverbial superlatives retagged as adverbs; lemmas that are not LSJ headwords (ὁμόκαποι, ὁμογάλακτες) or the wrong word (πρότερος for πρῶται, the adverb οὗ for the relative); Χαρώνδας parsed as plural accusative; οἰκίας as accusative plural; σποράδες as a noun; and δύο, which arrives with an empty tag"
+  status: draft
+  set:
+    pol.1252a.2.11: {morph: d--------}   # οἷον: 'for example', adverbial
+    pol.1252a.2.20: {morph: a-s---nn-}   # τοῦτο: subject, 'and this is not from choice'
+    pol.1252a.2.37: {morph: a-s---nn-}   # αὐτό: subject of the comparative clause οἷον αὐτό (sc. ἐστι)
+    pol.1252a.2.40: {morph: a-s---na-}   # ἕτερον: agrees with τοιοῦτον, neuter
+    pol.1252a.2.41: {morph: v-sppana-}   # ἄρχον: accusative, parallel to θῆλυ and ἄρρεν under συνδυάζεσθαι
+    pol.1252a.2.44: {morph: v-sppena-}   # ἀρχόμενον: accusative, as ἄρχον
+    pol.1252a.3.20: {morph: v-sppenn-}   # ἀρχόμενον: predicate nominative of τὸ δυνάμενον
+    pol.1252a.3.23: {morph: a-s---nn-}   # δοῦλον: neuter predicate adjective of τὸ δυνάμενον, parsed as a masculine accusative noun
+    pol.1252a.4.5: {lemma: αὐτός, morph: a-s---nn-}   # ταὐτὸ: crasis of τὸ αὐτό, subject of συμφέρει
+    pol.1252b.1.10: {morph: a-s---na-}   # οὐθὲν: object of ποιεῖ
+    pol.1252b.1.15: {morph: a-s---na-}   # τοιοῦτον: object of ποιεῖ
+    pol.1252b.2.5: {morph: d-------s}   # κάλλιστα: superlative adverb, as κάλλιστʼ at 1252a.1
+    pol.1252b.2.8: {morph: a-s---nn-}   # ἕκαστον: subject of ἀποτελοῖτο
+    pol.1252b.3.5: {morph: l-s---nn-}   # τὸ: subject of ἔχει
+    pol.1252b.3.6: {morph: a-s---nn-}   # θῆλυ: subject
+    pol.1252b.3.8: {morph: l-s---nn-}   # τὸ: subject
+    pol.1252b.3.9: {morph: a-s---nn-}   # δοῦλον: subject
+    pol.1252b.4.4: {morph: l-s---na-}   # τὸ: object of ἔχουσιν
+    pol.1252b.4.6: {morph: v-sppana-}   # ἄρχον: object of ἔχουσιν
+    pol.1252b.5.11: {lemma: αὐτός, morph: a-s---na-}   # ταὐτὸ: crasis of τὸ αὐτό, predicate in the accusative absolute ὡς ... ὄν
+    pol.1252b.5.13: {morph: a-s---na-}   # βάρβαρον: accusative absolute with ὡς
+    pol.1252b.5.15: {morph: a-s---na-}   # δοῦλον: accusative absolute
+    pol.1252b.5.16: {morph: v-sppana-}   # ὄν: accusative absolute with ὡς
+    pol.1252b.6.6: {morph: a-p---fg-}   # δύο: empty tag; agrees with κοινωνιῶν, as δύο in med.2.14.7.4
+    pol.1252b.6.17: {morph: d-------s}   # πρώτιστα: adverbial, 'first of all'
+    pol.1252b.8.14: {morph: n-s---mn-}   # Χαρώνδας: subject of καλεῖ, singular nominative, parsed as accusative plural
+    pol.1252b.8.22: {lemma: ὁμόκαπος, morph: a-p---ma-}   # ὁμοκάπους: LSJ headword ὁμόκαπος, adjective, parallel to ὁμοσιπύους
+    pol.1252b.10.9: {morph: n-s---fg-}   # οἰκίας: 'colony of the household', genitive singular
+    pol.1252b.10.14: {lemma: ὁμογάλαξ}   # ὁμογάλακτας: LSJ headword ὁμογάλαξ
+    pol.1252b.13.6: {morph: l-s---mg-}   # τοῦ: the eldest man, masculine
+    pol.1252b.13.7: {morph: a-s---mgs}   # πρεσβυτάτου: masculine
+    pol.1252b.14.13: {morph: a-p---mn-}   # σποράδες: σποράς is an adjective
+    pol.1252b.16.26: {morph: l-p---na-}   # τὰ: object of ἀφομοιοῦσιν
+    pol.1252b.16.27: {morph: n-p---na-}   # εἴδη: object of ἀφομοιοῦσιν
+    pol.1252b.17.12: {morph: n-s---na-}   # πέρας: object of ἔχουσα, neuter accusative, parsed as feminine genitive
+    pol.1252b.18.9: {lemma: πρῶτος}   # πρῶται: superlative πρῶτος, not πρότερος
+    pol.1252b.19.4: {morph: a-p---fg-}   # ἐκείνων: the first partnerships, feminine
+    pol.1252b.20.3: {morph: a-s---nn-}   # ἕκαστόν: subject of ἐστι
+    pol.1252b.20.13: {morph: a-s---ng-}   # ἑκάστου: each thing, neuter
+    pol.1252b.21.2: {morph: l-s---nn-}   # τὸ: subject
+    pol.1252b.21.3: {lemma: ὅς, morph: p-s---ng-}   # οὗ: relative pronoun governed by ἕνεκα, parsed as the adverb 'where'
+    pol.1252b.21.6: {morph: l-s---nn-}   # τὸ: subject
+    pol.1252b.21.7: {morph: n-s---nn-}   # τέλος: subject
+    pol.1252b.21.8: {morph: a-s---nns}   # βέλτιστον: predicate nominative
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-18
+  why: "1253a: literal word-for-word gloss"
+  status: draft
+  set:
+    pol.1253a.1.1: {gloss: "the"}   # ἡ
+    pol.1253a.1.2: {gloss: "and"}   # δʼ
+    pol.1253a.1.3: {gloss: "self-sufficiency"}   # αὐτάρκεια
+    pol.1253a.1.4: {gloss: "both"}   # καὶ
+    pol.1253a.1.5: {gloss: "an-end"}   # τέλος
+    pol.1253a.1.6: {gloss: "and"}   # καὶ
+    pol.1253a.1.7: {gloss: "best"}   # βέλτιστον
+    pol.1253a.2.1: {gloss: "from"}   # ἐκ
+    pol.1253a.2.2: {gloss: "these-things"}   # τούτων
+    pol.1253a.2.3: {gloss: "then"}   # οὖν
+    pol.1253a.2.4: {gloss: "evident"}   # φανερὸν
+    pol.1253a.2.5: {gloss: "that"}   # ὅτι
+    pol.1253a.2.6: {gloss: "of-the-things"}   # τῶν
+    pol.1253a.2.7: {gloss: "by-nature"}   # φύσει
+    pol.1253a.2.8: {gloss: "the"}   # ἡ
+    pol.1253a.2.9: {gloss: "city"}   # πόλις
+    pol.1253a.2.10: {gloss: "is"}   # ἐστί
+    pol.1253a.2.11: {gloss: "and"}   # καὶ
+    pol.1253a.2.12: {gloss: "that"}   # ὅτι
+    pol.1253a.2.13: {gloss: "the"}   # ὁ
+    pol.1253a.2.14: {gloss: "human-being"}   # ἄνθρωπος
+    pol.1253a.2.15: {gloss: "by-nature"}   # φύσει
+    pol.1253a.2.16: {gloss: "political"}   # πολιτικὸν
+    pol.1253a.2.17: {gloss: "animal"}   # ζῷον
+    pol.1253a.2.18: {gloss: "and"}   # καὶ
+    pol.1253a.2.19: {gloss: "the"}   # ὁ
+    pol.1253a.2.20: {gloss: "cityless-one"}   # ἄπολις
+    pol.1253a.2.21: {gloss: "through"}   # διὰ
+    pol.1253a.2.22: {gloss: "nature"}   # φύσιν
+    pol.1253a.2.23: {gloss: "and"}   # καὶ
+    pol.1253a.2.24: {gloss: "not"}   # οὐ
+    pol.1253a.2.25: {gloss: "through"}   # διὰ
+    pol.1253a.2.26: {gloss: "chance"}   # τύχην
+    pol.1253a.2.27: {gloss: "either"}   # ἤτοι
+    pol.1253a.2.28: {gloss: "base"}   # φαῦλός
+    pol.1253a.2.29: {gloss: "is"}   # ἐστιν
+    pol.1253a.2.30: {gloss: "or"}   # ἢ
+    pol.1253a.2.31: {gloss: "stronger"}   # κρείττων
+    pol.1253a.2.32: {gloss: "than"}   # ἢ
+    pol.1253a.2.33: {gloss: "a-human-being"}   # ἄνθρωπος
+    pol.1253a.3.1: {gloss: "just-as"}   # ὥσπερ
+    pol.1253a.3.2: {gloss: "also"}   # καὶ
+    pol.1253a.3.3: {gloss: "the-one"}   # ὁ
+    pol.1253a.3.4: {gloss: "by"}   # ὑφʼ
+    pol.1253a.3.5: {gloss: "Homer"}   # Ὁμήρου
+    pol.1253a.3.6: {gloss: "reviled"}   # λοιδορηθεὶς
+    pol.1253a.3.7: {gloss: "clanless"}   # ἀφρήτωρ
+    pol.1253a.3.8: {gloss: "lawless"}   # ἀθέμιστος
+    pol.1253a.3.9: {gloss: "hearthless"}   # ἀνέστιος
+    pol.1253a.4.1: {gloss: "at-once"}   # ἅμα
+    pol.1253a.4.2: {gloss: "for"}   # γὰρ
+    pol.1253a.4.3: {gloss: "by-nature"}   # φύσει
+    pol.1253a.4.4: {gloss: "such"}   # τοιοῦτος
+    pol.1253a.4.5: {gloss: "also"}   # καὶ
+    pol.1253a.4.6: {gloss: "of-war"}   # πολέμου
+    pol.1253a.4.7: {gloss: "a-lover"}   # ἐπιθυμητής
+    pol.1253a.4.8: {gloss: "inasmuch"}   # ἅτε
+    pol.1253a.4.9: {gloss: "as"}   # περ
+    pol.1253a.4.10: {gloss: "unyoked"}   # ἄζυξ
+    pol.1253a.4.11: {gloss: "being"}   # ὢν
+    pol.1253a.4.12: {gloss: "as"}   # ὥσπερ
+    pol.1253a.4.13: {gloss: "in"}   # ἐν
+    pol.1253a.4.14: {gloss: "draughts"}   # πεττοῖς
+    pol.1253a.5.1: {gloss: "why"}   # διότι
+    pol.1253a.5.2: {gloss: "and"}   # δὲ
+    pol.1253a.5.3: {gloss: "political"}   # πολιτικὸν
+    pol.1253a.5.4: {gloss: "the"}   # ὁ
+    pol.1253a.5.5: {gloss: "human-being"}   # ἄνθρωπος
+    pol.1253a.5.6: {gloss: "animal"}   # ζῷον
+    pol.1253a.5.7: {gloss: "than-every"}   # πάσης
+    pol.1253a.5.8: {gloss: "bee"}   # μελίττης
+    pol.1253a.5.9: {gloss: "and"}   # καὶ
+    pol.1253a.5.10: {gloss: "than-every"}   # παντὸς
+    pol.1253a.5.11: {gloss: "herding"}   # ἀγελαίου
+    pol.1253a.5.12: {gloss: "animal"}   # ζῴου
+    pol.1253a.5.13: {gloss: "more"}   # μᾶλλον
+    pol.1253a.5.14: {gloss: "is-clear"}   # δῆλον
+    pol.1253a.6.1: {gloss: "nothing"}   # οὐθὲν
+    pol.1253a.6.2: {gloss: "for"}   # γάρ
+    pol.1253a.6.3: {gloss: "as"}   # ὡς
+    pol.1253a.6.4: {gloss: "we-say"}   # φαμέν
+    pol.1253a.6.5: {gloss: "in-vain"}   # μάτην
+    pol.1253a.6.6: {gloss: "the"}   # ἡ
+    pol.1253a.6.7: {gloss: "nature"}   # φύσις
+    pol.1253a.6.8: {gloss: "does"}   # ποιεῖ
+    pol.1253a.7.1: {gloss: "speech"}   # λόγον
+    pol.1253a.7.2: {gloss: "but"}   # δὲ
+    pol.1253a.7.3: {gloss: "alone"}   # μόνον
+    pol.1253a.7.4: {gloss: "a-human-being"}   # ἄνθρωπος
+    pol.1253a.7.5: {gloss: "has"}   # ἔχει
+    pol.1253a.7.6: {gloss: "of-the"}   # τῶν
+    pol.1253a.7.7: {gloss: "animals"}   # ζῴων
+    pol.1253a.8.1: {gloss: "the"}   # ἡ
+    pol.1253a.8.2: {gloss: "on-the-one-hand"}   # μὲν
+    pol.1253a.8.3: {gloss: "then"}   # οὖν
+    pol.1253a.8.4: {gloss: "voice"}   # φωνὴ
+    pol.1253a.8.5: {gloss: "of-the"}   # τοῦ
+    pol.1253a.8.6: {gloss: "painful"}   # λυπηροῦ
+    pol.1253a.8.7: {gloss: "and"}   # καὶ
+    pol.1253a.8.8: {gloss: "pleasant"}   # ἡδέος
+    pol.1253a.8.9: {gloss: "is"}   # ἐστὶ
+    pol.1253a.8.10: {gloss: "a-sign"}   # σημεῖον
+    pol.1253a.8.11: {gloss: "therefore"}   # διὸ
+    pol.1253a.8.12: {gloss: "also"}   # καὶ
+    pol.1253a.8.13: {gloss: "to-the"}   # τοῖς
+    pol.1253a.8.14: {gloss: "other"}   # ἄλλοις
+    pol.1253a.8.15: {gloss: "belongs"}   # ὑπάρχει
+    pol.1253a.8.16: {gloss: "animals"}   # ζῴοις
+    pol.1253a.8.17: {gloss: "up-to"}   # μέχρι
+    pol.1253a.8.18: {gloss: "for"}   # γὰρ
+    pol.1253a.8.19: {gloss: "this-point"}   # τούτου
+    pol.1253a.8.20: {gloss: "the"}   # ἡ
+    pol.1253a.8.21: {gloss: "nature"}   # φύσις
+    pol.1253a.8.22: {gloss: "of-them"}   # αὐτῶν
+    pol.1253a.8.23: {gloss: "has-come"}   # ἐλήλυθε
+    pol.1253a.8.24: {gloss: "of-the"}   # τοῦ
+    pol.1253a.8.25: {gloss: "having"}   # ἔχειν
+    pol.1253a.8.26: {gloss: "perception"}   # αἴσθησιν
+    pol.1253a.8.27: {gloss: "of-painful"}   # λυπηροῦ
+    pol.1253a.8.28: {gloss: "and"}   # καὶ
+    pol.1253a.8.29: {gloss: "pleasant"}   # ἡδέος
+    pol.1253a.8.30: {gloss: "and"}   # καὶ
+    pol.1253a.8.31: {gloss: "these-things"}   # ταῦτα
+    pol.1253a.8.32: {gloss: "to-signify"}   # σημαίνειν
+    pol.1253a.8.33: {gloss: "to-one-another"}   # ἀλλήλοις
+    pol.1253a.9.1: {gloss: "the"}   # ὁ
+    pol.1253a.9.2: {gloss: "but"}   # δὲ
+    pol.1253a.9.3: {gloss: "speech"}   # λόγος
+    pol.1253a.9.4: {gloss: "for"}   # ἐπὶ
+    pol.1253a.9.5: {gloss: "the"}   # τῷ
+    pol.1253a.9.6: {gloss: "making-clear"}   # δηλοῦν
+    pol.1253a.9.7: {gloss: "is"}   # ἐστι
+    pol.1253a.9.8: {gloss: "the"}   # τὸ
+    pol.1253a.9.9: {gloss: "advantageous"}   # συμφέρον
+    pol.1253a.9.10: {gloss: "and"}   # καὶ
+    pol.1253a.9.11: {gloss: "the"}   # τὸ
+    pol.1253a.9.12: {gloss: "harmful"}   # βλαβερόν
+    pol.1253a.9.13: {gloss: "so-that"}   # ὥστε
+    pol.1253a.9.14: {gloss: "also"}   # καὶ
+    pol.1253a.9.15: {gloss: "the"}   # τὸ
+    pol.1253a.9.16: {gloss: "just"}   # δίκαιον
+    pol.1253a.9.17: {gloss: "and"}   # καὶ
+    pol.1253a.9.18: {gloss: "the"}   # τὸ
+    pol.1253a.9.19: {gloss: "unjust"}   # ἄδικον
+    pol.1253a.10.1: {gloss: "this"}   # τοῦτο
+    pol.1253a.10.2: {gloss: "for"}   # γὰρ
+    pol.1253a.10.3: {gloss: "in-relation-to"}   # πρὸς
+    pol.1253a.10.4: {gloss: "the"}   # τὰ
+    pol.1253a.10.5: {gloss: "other"}   # ἄλλα
+    pol.1253a.10.6: {gloss: "animals"}   # ζῷα
+    pol.1253a.10.7: {gloss: "to-the"}   # τοῖς
+    pol.1253a.10.8: {gloss: "human-beings"}   # ἀνθρώποις
+    pol.1253a.10.9: {gloss: "peculiar"}   # ἴδιον
+    pol.1253a.10.10: {gloss: "the"}   # τὸ
+    pol.1253a.10.11: {gloss: "alone"}   # μόνον
+    pol.1253a.10.12: {gloss: "of-good"}   # ἀγαθοῦ
+    pol.1253a.10.13: {gloss: "and"}   # καὶ
+    pol.1253a.10.14: {gloss: "of-bad"}   # κακοῦ
+    pol.1253a.10.15: {gloss: "and"}   # καὶ
+    pol.1253a.10.16: {gloss: "of-just"}   # δικαίου
+    pol.1253a.10.17: {gloss: "and"}   # καὶ
+    pol.1253a.10.18: {gloss: "of-unjust"}   # ἀδίκου
+    pol.1253a.10.19: {gloss: "and"}   # καὶ
+    pol.1253a.10.20: {gloss: "of-the"}   # τῶν
+    pol.1253a.10.21: {gloss: "other-things"}   # ἄλλων
+    pol.1253a.10.22: {gloss: "perception"}   # αἴσθησιν
+    pol.1253a.10.23: {gloss: "to-have"}   # ἔχειν
+    pol.1253a.11.1: {gloss: "the"}   # ἡ
+    pol.1253a.11.2: {gloss: "and"}   # δὲ
+    pol.1253a.11.3: {gloss: "of-these-things"}   # τούτων
+    pol.1253a.11.4: {gloss: "community"}   # κοινωνία
+    pol.1253a.11.5: {gloss: "makes"}   # ποιεῖ
+    pol.1253a.11.6: {gloss: "a-household"}   # οἰκίαν
+    pol.1253a.11.7: {gloss: "and"}   # καὶ
+    pol.1253a.11.8: {gloss: "a-city"}   # πόλιν
+    pol.1253a.12.1: {gloss: "and"}   # καὶ
+    pol.1253a.12.2: {gloss: "prior"}   # πρότερον
+    pol.1253a.12.3: {gloss: "and"}   # δὲ
+    pol.1253a.12.4: {gloss: "by-the"}   # τῇ
+    pol.1253a.12.5: {gloss: "nature"}   # φύσει
+    pol.1253a.12.6: {gloss: "a-city"}   # πόλις
+    pol.1253a.12.7: {gloss: "than"}   # ἢ
+    pol.1253a.12.8: {gloss: "a-household"}   # οἰκία
+    pol.1253a.12.9: {gloss: "and"}   # καὶ
+    pol.1253a.12.10: {gloss: "each"}   # ἕκαστος
+    pol.1253a.12.11: {gloss: "of-us"}   # ἡμῶν
+    pol.1253a.12.12: {gloss: "is"}   # ἐστιν
+    pol.1253a.13.1: {gloss: "the"}   # τὸ
+    pol.1253a.13.2: {gloss: "for"}   # γὰρ
+    pol.1253a.13.3: {gloss: "whole"}   # ὅλον
+    pol.1253a.13.4: {gloss: "prior"}   # πρότερον
+    pol.1253a.13.5: {gloss: "necessary"}   # ἀναγκαῖον
+    pol.1253a.13.6: {gloss: "to-be"}   # εἶναι
+    pol.1253a.13.7: {gloss: "than-the"}   # τοῦ
+    pol.1253a.13.8: {gloss: "part"}   # μέρους
+    pol.1253a.14.1: {gloss: "being-destroyed"}   # ἀναιρουμένου
+    pol.1253a.14.2: {gloss: "for"}   # γὰρ
+    pol.1253a.14.3: {gloss: "the"}   # τοῦ
+    pol.1253a.14.4: {gloss: "whole"}   # ὅλου
+    pol.1253a.14.5: {gloss: "not"}   # οὐκ
+    pol.1253a.14.6: {gloss: "will-be"}   # ἔσται
+    pol.1253a.14.7: {gloss: "a-foot"}   # ποὺς
+    pol.1253a.14.8: {gloss: "nor"}   # οὐδὲ
+    pol.1253a.14.9: {gloss: "a-hand"}   # χείρ
+    pol.1253a.14.10: {gloss: "if"}   # εἰ
+    pol.1253a.14.11: {gloss: "not"}   # μὴ
+    pol.1253a.14.12: {gloss: "homonymously"}   # ὁμωνύμως
+    pol.1253a.14.13: {gloss: "as"}   # ὥσπερ
+    pol.1253a.14.14: {gloss: "if"}   # εἴ
+    pol.1253a.14.15: {gloss: "someone"}   # τις
+    pol.1253a.14.16: {gloss: "were-to-speak-of"}   # λέγοι
+    pol.1253a.14.17: {gloss: "the"}   # τὴν
+    pol.1253a.14.18: {gloss: "stone-one"}   # λιθίνην
+    pol.1253a.14.19: {gloss: "having-been-destroyed"}   # διαφθαρεῖσα
+    pol.1253a.14.20: {gloss: "for"}   # γὰρ
+    pol.1253a.14.21: {gloss: "will-be"}   # ἔσται
+    pol.1253a.14.22: {gloss: "such"}   # τοιαύτη
+    pol.1253a.14.23: {gloss: "all-things"}   # πάντα
+    pol.1253a.14.24: {gloss: "and"}   # δὲ
+    pol.1253a.14.25: {gloss: "by-the"}   # τῷ
+    pol.1253a.14.26: {gloss: "function"}   # ἔργῳ
+    pol.1253a.14.27: {gloss: "have-been-defined"}   # ὥρισται
+    pol.1253a.14.28: {gloss: "and"}   # καὶ
+    pol.1253a.14.29: {gloss: "by-the"}   # τῇ
+    pol.1253a.14.30: {gloss: "capacity"}   # δυνάμει
+    pol.1253a.14.31: {gloss: "so-that"}   # ὥστε
+    pol.1253a.14.32: {gloss: "no-longer"}   # μηκέτι
+    pol.1253a.14.33: {gloss: "such"}   # τοιαῦτα
+    pol.1253a.14.34: {gloss: "being"}   # ὄντα
+    pol.1253a.14.35: {gloss: "not"}   # οὐ
+    pol.1253a.14.36: {gloss: "must-be-said"}   # λεκτέον
+    pol.1253a.14.37: {gloss: "the"}   # τὰ
+    pol.1253a.14.38: {gloss: "same"}   # αὐτὰ
+    pol.1253a.14.39: {gloss: "to-be"}   # εἶναι
+    pol.1253a.14.40: {gloss: "but"}   # ἀλλʼ
+    pol.1253a.14.41: {gloss: "homonymous"}   # ὁμώνυμα
+    pol.1253a.15.1: {gloss: "that"}   # ὅτι
+    pol.1253a.15.2: {gloss: "on-the-one-hand"}   # μὲν
+    pol.1253a.15.3: {gloss: "then"}   # οὖν
+    pol.1253a.15.4: {gloss: "the"}   # ἡ
+    pol.1253a.15.5: {gloss: "city"}   # πόλις
+    pol.1253a.15.6: {gloss: "also"}   # καὶ
+    pol.1253a.15.7: {gloss: "by-nature"}   # φύσει
+    pol.1253a.15.8: {gloss: "prior"}   # πρότερον
+    pol.1253a.15.9: {gloss: "than"}   # ἢ
+    pol.1253a.15.10: {gloss: "each"}   # ἕκαστος
+    pol.1253a.15.11: {gloss: "is-clear"}   # δῆλον
+    pol.1253a.16.1: {gloss: "if"}   # εἰ
+    pol.1253a.16.2: {gloss: "for"}   # γὰρ
+    pol.1253a.16.3: {gloss: "not"}   # μὴ
+    pol.1253a.16.4: {gloss: "self-sufficient"}   # αὐτάρκης
+    pol.1253a.16.5: {gloss: "each"}   # ἕκαστος
+    pol.1253a.16.6: {gloss: "having-been-separated"}   # χωρισθείς
+    pol.1253a.16.7: {gloss: "similarly"}   # ὁμοίως
+    pol.1253a.16.8: {gloss: "to-the"}   # τοῖς
+    pol.1253a.16.9: {gloss: "other"}   # ἄλλοις
+    pol.1253a.16.10: {gloss: "parts"}   # μέρεσιν
+    pol.1253a.16.11: {gloss: "he-will-be-disposed"}   # ἕξει
+    pol.1253a.16.12: {gloss: "toward"}   # πρὸς
+    pol.1253a.16.13: {gloss: "the"}   # τὸ
+    pol.1253a.16.14: {gloss: "whole"}   # ὅλον
+    pol.1253a.16.15: {gloss: "the-one"}   # ὁ
+    pol.1253a.16.16: {gloss: "and"}   # δὲ
+    pol.1253a.16.17: {gloss: "not"}   # μὴ
+    pol.1253a.16.18: {gloss: "being-able"}   # δυνάμενος
+    pol.1253a.16.19: {gloss: "to-share"}   # κοινωνεῖν
+    pol.1253a.16.20: {gloss: "or"}   # ἢ
+    pol.1253a.16.21: {gloss: "nothing"}   # μηδὲν
+    pol.1253a.16.22: {gloss: "needing"}   # δεόμενος
+    pol.1253a.16.23: {gloss: "through"}   # διʼ
+    pol.1253a.16.24: {gloss: "self-sufficiency"}   # αὐτάρκειαν
+    pol.1253a.16.25: {gloss: "no"}   # οὐθὲν
+    pol.1253a.16.26: {gloss: "part"}   # μέρος
+    pol.1253a.16.27: {gloss: "of-a-city"}   # πόλεως
+    pol.1253a.16.28: {gloss: "so-that"}   # ὥστε
+    pol.1253a.16.29: {gloss: "either"}   # ἢ
+    pol.1253a.16.30: {gloss: "a-beast"}   # θηρίον
+    pol.1253a.16.31: {gloss: "or"}   # ἢ
+    pol.1253a.16.32: {gloss: "a-god"}   # θεός
+    pol.1253a.17.1: {gloss: "by-nature"}   # φύσει
+    pol.1253a.17.2: {gloss: "on-the-one-hand"}   # μὲν
+    pol.1253a.17.3: {gloss: "then"}   # οὖν
+    pol.1253a.17.4: {gloss: "the"}   # ἡ
+    pol.1253a.17.5: {gloss: "impulse"}   # ὁρμὴ
+    pol.1253a.17.6: {gloss: "in"}   # ἐν
+    pol.1253a.17.7: {gloss: "all"}   # πᾶσιν
+    pol.1253a.17.8: {gloss: "toward"}   # ἐπὶ
+    pol.1253a.17.9: {gloss: "the"}   # τὴν
+    pol.1253a.17.10: {gloss: "such"}   # τοιαύτην
+    pol.1253a.17.11: {gloss: "community"}   # κοινωνίαν
+    pol.1253a.18.1: {gloss: "the"}   # ὁ
+    pol.1253a.18.2: {gloss: "and"}   # δὲ
+    pol.1253a.18.3: {gloss: "first"}   # πρῶτος
+    pol.1253a.18.4: {gloss: "having-put-together"}   # συστήσας
+    pol.1253a.18.5: {gloss: "of-greatest"}   # μεγίστων
+    pol.1253a.18.6: {gloss: "goods"}   # ἀγαθῶν
+    pol.1253a.18.7: {gloss: "cause"}   # αἴτιος
+    pol.1253a.19.1: {gloss: "just-as"}   # ὥσπερ
+    pol.1253a.19.2: {gloss: "for"}   # γὰρ
+    pol.1253a.19.3: {gloss: "also"}   # καὶ
+    pol.1253a.19.4: {gloss: "perfected"}   # τελεωθὲν
+    pol.1253a.19.5: {gloss: "best"}   # βέλτιστον
+    pol.1253a.19.6: {gloss: "of-the"}   # τῶν
+    pol.1253a.19.7: {gloss: "animals"}   # ζῴων
+    pol.1253a.19.8: {gloss: "the"}   # ὁ
+    pol.1253a.19.9: {gloss: "human-being"}   # ἄνθρωπός
+    pol.1253a.19.10: {gloss: "is"}   # ἐστιν
+    pol.1253a.19.11: {gloss: "so"}   # οὕτω
+    pol.1253a.19.12: {gloss: "also"}   # καὶ
+    pol.1253a.19.13: {gloss: "separated"}   # χωρισθεὶς
+    pol.1253a.19.14: {gloss: "from-law"}   # νόμου
+    pol.1253a.19.15: {gloss: "and"}   # καὶ
+    pol.1253a.19.16: {gloss: "justice"}   # δίκης
+    pol.1253a.19.17: {gloss: "worst"}   # χείριστον
+    pol.1253a.19.18: {gloss: "of-all"}   # πάντων
+    pol.1253a.20.1: {gloss: "hardest"}   # χαλεπωτάτη
+    pol.1253a.20.2: {gloss: "for"}   # γὰρ
+    pol.1253a.20.3: {gloss: "injustice"}   # ἀδικία
+    pol.1253a.20.4: {gloss: "having"}   # ἔχουσα
+    pol.1253a.20.5: {gloss: "weapons"}   # ὅπλα
+    pol.1253a.21.1: {gloss: "the"}   # ὁ
+    pol.1253a.21.2: {gloss: "but"}   # δὲ
+    pol.1253a.21.3: {gloss: "human-being"}   # ἄνθρωπος
+    pol.1253a.21.4: {gloss: "weapons"}   # ὅπλα
+    pol.1253a.21.5: {gloss: "having"}   # ἔχων
+    pol.1253a.21.6: {gloss: "is-born"}   # φύεται
+    pol.1253a.21.7: {gloss: "for-practical-wisdom"}   # φρονήσει
+    pol.1253a.21.8: {gloss: "and"}   # καὶ
+    pol.1253a.21.9: {gloss: "virtue"}   # ἀρετῇ
+    pol.1253a.21.10: {gloss: "which"}   # οἷς
+    pol.1253a.21.11: {gloss: "for"}   # ἐπὶ
+    pol.1253a.21.12: {gloss: "the-opposite-ends"}   # τἀναντία
+    pol.1253a.21.13: {gloss: "it-is-possible"}   # ἔστι
+    pol.1253a.21.14: {gloss: "to-use"}   # χρῆσθαι
+    pol.1253a.21.15: {gloss: "most"}   # μάλιστα
+    pol.1253a.22.1: {gloss: "therefore"}   # διὸ
+    pol.1253a.22.2: {gloss: "most-unholy"}   # ἀνοσιώτατον
+    pol.1253a.22.3: {gloss: "and"}   # καὶ
+    pol.1253a.22.4: {gloss: "most-savage"}   # ἀγριώτατον
+    pol.1253a.22.5: {gloss: "without"}   # ἄνευ
+    pol.1253a.22.6: {gloss: "virtue"}   # ἀρετῆς
+    pol.1253a.22.7: {gloss: "and"}   # καὶ
+    pol.1253a.22.8: {gloss: "toward"}   # πρὸς
+    pol.1253a.22.9: {gloss: "sex"}   # ἀφροδίσια
+    pol.1253a.22.10: {gloss: "and"}   # καὶ
+    pol.1253a.22.11: {gloss: "food"}   # ἐδωδὴν
+    pol.1253a.22.12: {gloss: "worst"}   # χείριστον
+    pol.1253a.23.1: {gloss: "the"}   # ἡ
+    pol.1253a.23.2: {gloss: "and"}   # δὲ
+    pol.1253a.23.3: {gloss: "justice"}   # δικαιοσύνη
+    pol.1253a.23.4: {gloss: "political"}   # πολιτικόν
+    pol.1253a.24.1: {gloss: "the"}   # ἡ
+    pol.1253a.24.2: {gloss: "for"}   # γὰρ
+    pol.1253a.24.3: {gloss: "justice"}   # δίκη
+    pol.1253a.24.4: {gloss: "of-political"}   # πολιτικῆς
+    pol.1253a.24.5: {gloss: "community"}   # κοινωνίας
+    pol.1253a.24.6: {gloss: "ordering"}   # τάξις
+    pol.1253a.24.7: {gloss: "is"}   # ἐστίν
+    pol.1253a.24.8: {gloss: "the"}   # ἡ
+    pol.1253a.24.9: {gloss: "and"}   # δὲ
+    pol.1253a.24.10: {gloss: "justice"}   # δικαιοσύνη
+    pol.1253a.24.11: {gloss: "of-the"}   # τοῦ
+    pol.1253a.24.12: {gloss: "just"}   # δικαίου
+    pol.1253a.24.13: {gloss: "judging"}   # κρίσις
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-18
+  why: "corrections to the GLAUx automatic parse of 1253a: 48 of 364 tokens corrected (5 lemmas, 47 morph tags). Neuter things (the animals, the painful and pleasant, the whole, the just) parsed as masculine; subjects and predicates parsed as accusatives or the reverse, including the objects of δηλοῦν; superlative and comparative predicates parsed as accusatives, adverbs, or without degree; φύσει twice parsed as a future of φύω; ἄπολις, ἀφρήτωρ and ἄζυξ parsed as nouns; ἀναιρουμένου lemmatized as ἀνιεράομαι; ὄντα parsed as masculine singular; the crasis τἀναντία; ἀφροδίσια lemmatized as a proper adjective"
+  status: draft
+  set:
+    pol.1253a.2.15: {lemma: φύσις, morph: n-s---fd-}   # φύσει: dative of φύσις, 'by nature', parsed as a future of φύω
+    pol.1253a.2.20: {morph: a-s---mn-}   # ἄπολις: adjective 'cityless' used substantively, parsed as a noun
+    pol.1253a.3.7: {morph: a-s---mn-}   # ἀφρήτωρ: adjective 'clanless', parsed as a noun
+    pol.1253a.4.3: {lemma: φύσις, morph: n-s---fd-}   # φύσει: dative of φύσις, parsed as a future of φύω
+    pol.1253a.4.10: {morph: a-s---mn-}   # ἄζυξ: adjective 'unyoked', parsed as a noun
+    pol.1253a.5.6: {morph: n-s---nn-}   # ζῷον: predicate nominative with πολιτικὸν
+    pol.1253a.8.19: {morph: a-s---ng-}   # τούτου: neuter, anticipates τοῦ ἔχειν
+    pol.1253a.8.22: {morph: a-p---ng-}   # αὐτῶν: the animals, neuter
+    pol.1253a.8.27: {morph: a-s---ng-}   # λυπηροῦ: the painful, neuter
+    pol.1253a.8.29: {morph: a-s---ng-}   # ἡδέος: the pleasant, neuter
+    pol.1253a.8.33: {morph: p-p---nd-}   # ἀλλήλοις: the animals, neuter
+    pol.1253a.9.8: {morph: l-s---na-}   # τὸ: object of δηλοῦν
+    pol.1253a.9.9: {morph: v-sppana-}   # συμφέρον: object of δηλοῦν
+    pol.1253a.9.11: {morph: l-s---na-}   # τὸ: object of δηλοῦν
+    pol.1253a.9.12: {morph: a-s---na-}   # βλαβερόν: object of δηλοῦν
+    pol.1253a.9.15: {morph: l-s---na-}   # τὸ: object of δηλοῦν
+    pol.1253a.9.16: {morph: a-s---na-}   # δίκαιον: object of δηλοῦν
+    pol.1253a.9.18: {morph: l-s---na-}   # τὸ: object of δηλοῦν
+    pol.1253a.9.19: {morph: a-s---na-}   # ἄδικον: object of δηλοῦν
+    pol.1253a.10.1: {morph: a-s---nn-}   # τοῦτο: subject
+    pol.1253a.10.9: {morph: a-s---nn-}   # ἴδιον: predicate nominative
+    pol.1253a.10.10: {morph: l-s---nn-}   # τὸ: articular infinitive in apposition to τοῦτο, nominative
+    pol.1253a.10.20: {morph: l-p---ng-}   # τῶν: the other such things, neuter
+    pol.1253a.10.21: {morph: a-p---ng-}   # ἄλλων: neuter
+    pol.1253a.12.2: {morph: a-s---nnc}   # πρότερον: neuter predicate adjective with πόλις, parsed as an adverb
+    pol.1253a.13.1: {morph: l-s---na-}   # τὸ: subject accusative of εἶναι after ἀναγκαῖον
+    pol.1253a.13.3: {morph: a-s---na-}   # ὅλον: subject accusative of εἶναι
+    pol.1253a.13.4: {morph: a-s---nac}   # πρότερον: predicate adjective of εἶναι, parsed as an adverb
+    pol.1253a.14.1: {lemma: ἀναιρέω, morph: v-sppeng-}   # ἀναιρουμένου: present passive of ἀναιρέω agreeing with τοῦ ὅλου, lemmatized as ἀνιεράομαι
+    pol.1253a.14.3: {morph: l-s---ng-}   # τοῦ: the whole, neuter
+    pol.1253a.14.4: {morph: a-s---ng-}   # ὅλου: neuter
+    pol.1253a.14.23: {morph: a-p---nn-}   # πάντα: subject of ὥρισται
+    pol.1253a.14.34: {morph: v-pppana-}   # ὄντα: neuter plural, agrees with τοιαῦτα, parsed as masculine singular
+    pol.1253a.15.8: {morph: a-s---nnc}   # πρότερον: neuter predicate nominative, comparative
+    pol.1253a.16.25: {morph: a-s---nn-}   # οὐθὲν: predicate nominative with μέρος
+    pol.1253a.16.26: {morph: n-s---nn-}   # μέρος: predicate nominative
+    pol.1253a.17.7: {morph: a-p---md-}   # πᾶσιν: all men, masculine
+    pol.1253a.18.5: {morph: a-p---ngs}   # μεγίστων: superlative, degree missing
+    pol.1253a.19.17: {morph: a-s---nns}   # χείριστον: predicate nominative, parsed as accusative
+    pol.1253a.19.18: {morph: a-p---ng-}   # πάντων: of all animals, neuter
+    pol.1253a.21.10: {morph: p-p---nd-}   # οἷς: refers to ὅπλα, neuter
+    pol.1253a.21.12: {lemma: ἐναντίος, morph: a-p---na-}   # τἀναντία: crasis of τὰ ἐναντία, glossed as the adjective
+    pol.1253a.22.2: {morph: a-s---nns}   # ἀνοσιώτατον: predicate nominative, parsed as accusative
+    pol.1253a.22.4: {morph: a-s---nns}   # ἀγριώτατον: predicate nominative, parsed as accusative
+    pol.1253a.22.9: {lemma: ἀφροδίσιος}   # ἀφροδίσια: τὰ ἀφροδίσια 'sexual pleasures', lemmatized as the proper adjective Ἀφροδίσιος
+    pol.1253a.22.12: {morph: a-s---nns}   # χείριστον: predicate nominative superlative, parsed as accusative without degree
+    pol.1253a.24.11: {morph: l-s---ng-}   # τοῦ: the just, neuter
+    pol.1253a.24.12: {morph: a-s---ng-}   # δικαίου: neuter
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-18
+  why: "κρείττων under its LSJ headword κρείσσων, as in the Meditations overlay; GLAUx gives κρατύς"
+  status: draft
+  set:
+    pol.1253a.2.31: {lemma: κρείσσων}   # κρείττων
+- by: Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar
+  date: 2026-10-18
+  why: "review: κοινωνία glossed 'partnership' throughout, as in 1252a-b and the notes; ὁμογάλακτες as LSJ heads it, in the plural; adverbial πρῶτον tagged as an adverb, as κάλλιστα and πρώτιστα are; four glosses"
+  status: draft
+  set:
+    pol.1253a.11.4: {gloss: "partnership"}   # κοινωνία
+    pol.1253a.17.11: {gloss: "partnership"}   # κοινωνίαν
+    pol.1253a.24.5: {gloss: "of-partnership"}   # κοινωνίας
+    pol.1252b.10.14: {lemma: ὁμογάλακτες}   # ὁμογάλακτας
+    pol.1252a.2.3: {morph: d--------}   # πρῶτον
+    pol.1253a.2.31: {gloss: "superior"}   # κρείττων
+    pol.1252b.6.22: {gloss: "plow-ox"}   # ἀροτῆρα
+    pol.1253a.4.5: {gloss: "and"}   # καὶ (ἅμα ... καί)
+    pol.1252a.2.36: {gloss: "such-as"}   # οἷον

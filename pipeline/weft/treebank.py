@@ -153,8 +153,23 @@ def reconcile(edition_tokens: list[str], tb_words: list[dict]) -> tuple[list[dic
     """Pair edition tokens with treebank words in order. Returns pairs and failure classes."""
     failures: list[str] = []
     if len(edition_tokens) != len(tb_words):
-        failures.append(f"count-mismatch:{len(edition_tokens)}vs{len(tb_words)}")
-        return [None] * len(edition_tokens), failures
+        # the treebank splits some words the edition prints as one (οὐδʼ = οὐ + δ̓, μηδʼ = μη + δ̓):
+        # rejoin a pair whose forms make up the edition word, and fail only if the counts still differ
+        merged, j = [], 0
+        for t in edition_tokens:
+            if j + 1 < len(tb_words) and comparable(t) != comparable(tb_words[j]["form"]) \
+                    and comparable(t) == comparable(tb_words[j]["form"]) + comparable(tb_words[j + 1]["form"]):
+                a, b = tb_words[j], tb_words[j + 1]
+                merged.append(dict(a, form=a["form"] + b["form"], word=f"{a['word']}+{b['word']}",
+                                   enclitic={"form": "-" + b["form"], "lemma": b["lemma"], "morph": b["postag"]}))
+                j += 2
+            elif j < len(tb_words):
+                merged.append(tb_words[j]); j += 1
+        if len(merged) == len(edition_tokens) and j == len(tb_words):
+            tb_words = merged
+        else:
+            failures.append(f"count-mismatch:{len(edition_tokens)}vs{len(tb_words)}")
+            return [None] * len(edition_tokens), failures
     pairs: list[dict | None] = []
     for t, w in zip(edition_tokens, tb_words):
         if comparable(t) != comparable(w["form"]):
@@ -210,6 +225,17 @@ def _norm(form: str) -> str:
     return ud.normalize("NFC", (form or "").lower().strip("-"))   # GLAUx splits crasis as τ- + αὐτὸν
 
 
+def _letters(s: str) -> str:
+    return "".join(c for c in ud.normalize("NFD", (s or "").lower()) if c.isalpha() and not ud.combining(c))
+
+
+def _crasis(tok: str, first: str, second: str) -> bool:
+    """A printed crasis (κἀκεῖνα) against GLAUx's split (κ- + ἐκεῖνα): the first part's consonants begin
+    the word, and the second part's letters after its first vowel end it."""
+    t, a, b = _letters(tok), _letters(first), _letters(second)
+    return bool(a) and t.startswith(a) and len(b) > 2 and t.endswith(b[1:]) and len(t) <= len(a) + len(b)
+
+
 def reconcile_stream(tokens: list[str], stream: list[dict], cursor: int) -> tuple[list[dict | None], list[str], int]:
     """Match edition tokens against the treebank stream from `cursor`. Returns pairs, failures, new cursor.
 
@@ -225,6 +251,13 @@ def reconcile_stream(tokens: list[str], stream: list[dict], cursor: int) -> tupl
         if w0 and _norm(w0["form"]) == t:
             pairs.append(dict(w0, lemma=_bare(w0["lemma"]), ref=f"{w0['sentence']}/{w0['word']}"))
             cursor += 1
+            continue
+        if w0 and w1 and (w0["form"] or "").endswith("-") and _crasis(t, w0["form"], w1["form"]):
+            # GLAUx splits crasis as κ- + ἐκεῖνα; the vowels merge (κἀκεῖνα, τἆλλα), so the parts do not
+            # concatenate to the printed word. Recorded as the joined pair is (the first part is the host).
+            pairs.append(dict(w0, lemma=_bare(w0["lemma"]), ref=f"{w0['sentence']}/{w0['word']}+{w1['word']}",
+                              enclitic={"form": "-" + _norm(w1["form"]), "lemma": _bare(w1["lemma"]), "morph": w1["postag"]}))
+            cursor += 2
             continue
         if w0 and w1:
             a, b = _norm(w0["form"]), _norm(w1["form"])
@@ -603,14 +636,20 @@ def load_conllu_citation(paths: list[Path], text: str, chapter: str) -> list[dic
 
 
 # ---------------------------------------------------------------- GLAUx (automatically parsed Greek)
-def load_glaux(path: Path, subdocs: list[str]) -> list[dict]:
+def load_glaux(path: Path, subdocs: list[str], sentences: list[int] | None = None) -> list[dict]:
     """Words of the GLAUx sentences whose citation (subdoc) is in `subdocs`, in file order,
     punctuation dropped. GLAUx is AGDT-format XML parsed automatically (Keersmaekers, Pedalion
-    project); its citations are strings such as '1.1', '2.1.3' or Bekker '1.980a'."""
+    project); its citations are strings such as '1.1', '2.1.3' or Bekker '1.980a'. A passage that
+    begins or ends inside a subdoc names its first and last sentence ids in `sentences`."""
     want = set(subdocs)
+    lo, hi = sentences if sentences else (None, None)
     words: list[dict] = []
     for _, el in ET.iterparse(path):
         if el.tag != "sentence":
+            continue
+        sid = int(el.get("id") or 0)
+        if lo is not None and not lo <= sid <= hi:
+            el.clear()
             continue
         if (el.get("subdoc") or "") in want:
             for w in el.findall("word"):

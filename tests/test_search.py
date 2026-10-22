@@ -72,7 +72,7 @@ for (const q of ["fable", "saga", "pope", "god", "epic", "ulfr", "θεος", "�
 console.log(JSON.stringify(out));""")
     r = json.loads(subprocess.run([NODE, str(script)], capture_output=True, text=True, check=True).stdout)
     assert r["fable"]["works"][0] == "swahili-tales-steere"
-    assert r["saga"]["works"][0] == "saga-grettir" and "edda-grimnismal" in r["saga"]["lines"]
+    assert set(r["saga"]["works"][:2]) == {"saga-grettir", "ragnars-saga"} and "edda-grimnismal" in r["saga"]["lines"]
     assert r["pope"]["works"][0] == "inter-caetera-1493" and r["pope"]["lines"][0] == "luther-95-theses"
     langs = {lang for lang, _ in r["god"]["gloss"]}
     assert len(langs) >= 10 and {"θεός", "deus", "Gott"} <= {lemma for _, lemma in r["god"]["gloss"]}

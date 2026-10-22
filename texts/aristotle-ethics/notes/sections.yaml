@@ -1,0 +1,37 @@
+# Notes for Aristotle, Nicomachean Ethics 1.1-2. Editorial notes are drafts until a reviewer lifts them.
+- id: n.eth.title
+  attach: eth.1.1.1
+  kind: editorial
+  status: draft
+  leans_on: "the manuscript title Ἠθικὰ Νικομάχεια; Cicero, De finibus 5.12; Bekker's Aristotle (the Nicomachean Ethics, the Eudemian Ethics and the Magna Moralia)"
+  text: "Three treatises on ethics come down under Aristotle's name: the Nicomachean Ethics, the Eudemian Ethics and the Magna Moralia. The Nicomachean and the Eudemian share three books (books 5 to 7 of the first are books 4 to 6 of the second). The title names Nicomachus, Aristotle's son. Cicero speaks of books on conduct by Nicomachus that are said to be Aristotle's, and adds that he sees no reason the son could not have been like the father; the title is usually explained as naming him as the person who edited the work or to whom it was addressed; the text itself does not say."
+- id: n.eth.aim
+  attach: eth.1.1.2.4
+  kind: editorial
+  status: draft
+  leans_on: "Nicomachean Ethics 1.1 and 10.2 (1172b9-15)"
+  text: "The first sentence says that every art, inquiry, action and choice seems to aim at some good; the second, that therefore people have rightly declared the good to be 'that at which all things aim'. The verb ἀπεφήναντο has no named subject. In book 10 Aristotle reports that Eudoxus argued that pleasure is the good because all things aim at it, and commentators often connect the two passages, but the first chapter does not name anyone. τἀγαθόν is a crasis of τὸ ἀγαθόν, 'the good'."
+- id: n.eth.arts
+  attach: eth.1.1.8.14
+  kind: editorial
+  status: draft
+  leans_on: "Nicomachean Ethics 1.1"
+  text: "The examples set out an order among arts. Bridle-making and the other crafts that make equipment for horses serve horsemanship; horsemanship and every military action serve generalship; and so on. Aristotle calls the arts at the head of such chains ἀρχιτεκτονικαί, 'master arts', from ἀρχιτέκτων, a master builder who directs the workmen, and says that their ends are more to be chosen than the ends of the arts under them, since those are pursued for their sake."
+- id: n.eth.politike
+  attach: eth.1.2.4.8
+  kind: editorial
+  status: draft
+  leans_on: "Nicomachean Ethics 1.2; LSJ s.v. πολιτικός"
+  text: "Chapter 2 argues that if there is an end desired for its own sake, for which everything else is desired, it is the chief good, and that the science of it is the most authoritative and most architectonic. That science, Aristotle says, appears to be πολιτική, the knowledge that concerns the city. It decides which sciences a city needs and who should learn them, and the most honored capacities, such as generalship, household management and rhetoric, fall under it. The glosses give 'political-science' here and 'political' at the end of the chapter; the word is formed from πόλις, the city, and the sense is closer to 'the art of the city' than to politics in the modern sense."
+- id: n.eth.bracket
+  attach: eth.1.2.8.6
+  kind: editorial
+  status: draft
+  leans_on: "the Perseus TEI of Bywater's text, which marks the word as deleted; GLAUx"
+  text: "Bywater, the editor of the text, brackets πρακτικαῖς, 'practical', which would limit the sciences that πολιτική uses to the practical ones. The automatic parse treats it as part of the text, and the page prints it; on Bywater's judgment it is a later addition."
+- id: n.eth.city
+  attach: eth.1.2.10.10
+  kind: editorial
+  status: draft
+  leans_on: "Nicomachean Ethics 1.2"
+  text: "Even if the good is the same for one person and for a city, Aristotle says, the good of the city is greater and more complete to obtain and to preserve. To secure it for one person alone is something to be content with, ἀγαπητόν, but to secure it for a people and for cities is finer and more divine, κάλλιον καὶ θειότερον. The next line names the inquiry: it aims at these things and is in a sense πολιτική. The Politics, also in this library, takes up the city itself."

@@ -8,19 +8,266 @@
 # hardships, dangers, and expenses" to the recovery of Granada, where the Latin has it with the
 # sending of Columbus.
 # Changes: the Gutenberg underscores marking italics (_Azores_, _Cabo Verde_) are removed; line
-# breaks are joined. Nothing else is changed. The bull's formal closing is not given here.
+# breaks are joined. Nothing else is changed.
+# The whole bull is now aligned. In the penalty clause their "etc." stands for the formulas the Vatican
+# copy abridges ("Let no one therefore, etc., infringe, etc., ..."; "Should any one, etc."), and their
+# list of the bull's acts is shorter than the Seville text's (no exhortation or requisition). The chancery
+# notes they print are those of the Vatican register copy, not of the Seville original: "Gratis by order
+# of our most holy lord the Pope.", then "D. Gallectus.", "For the registrar: A. de Muciarellis." and
+# "Collator, L. Amerinus.". Only two of them answer to lines of the Seville notes: the gratis note (line
+# 1) and the note naming A. de Muciarellis (line 3; the register's officer is named "registrar" where the
+# Seville text has "Pro r[eferenda]rio"). The Seville lines "Jun[io].", "Pro JO. BUF[OLINUS], A.
+# SANTOSEVERINO." and "L. PODOCATHARUS." have no counterpart in their text and are left uncovered; "D.
+# Gallectus." and "Collator, L. Amerinus." are not given here. Their English reorders the clauses in the
+# passages added here: in the sovereigns' purpose the object comes after the verb (lines 3-4 are one
+# span); in the exhortation "insist strictly" (requirimus) is moved up beside "we exhort you" (lines 3-4
+# are one span); in the mandate "employing all due diligence in the premises" is moved up beside "as you
+# promise" (lines 2-5 are one span), and in the prohibition the penalty comes before the persons named and
+# the permit and the purpose of the voyage before the line (lines 6-7 and 8-13 are one span each); in the
+# penalty clause the verb comes before the list (lines 1-3 are one span), and "Should any one, etc."
+# covers both lines of the curse (lines 4-5); in the Granada sentence "so pleasing to immortal God" closes
+# the sentence (lines 8-9 are one span). Further Gutenberg underscores removed: _late sententie_, _ipso
+# facto_, and _Azores_ and _Cabo Verde_ a second time. "main-lands" in the mandate is kept as the
+# transcription has it (elsewhere they write "mainlands").
 translation: blair-robertson1903
 aligned_by: hand, phase 0; one span per English sentence group, matched to the Latin passages
 spans:
-- lines: [ic.salutatio.1, ic.salutatio.4]
-  text: "Alexander, etc., to the illustrious sovereigns, our very dear son in Christ, Ferdinand, King, and our very dear daughter in Christ, Helisabeth [Isabella], Queen of Castile and Leon, Aragon, Sicily, and Granada, health, etc."
-- lines: [ic.arenga.1, ic.arenga.5]
-  text: "Among other works well pleasing to his divine Majesty and cherished of our heart, this assuredly ranks highest: that in our times especially the Catholic faith and the Christian law be exalted and everywhere increased and spread as well as that the health of souls be procured, and barbarous nations overthrown and brought to the faith itself."
-- lines: [ic.narratio.1, ic.narratio.14]
-  text: "In sooth we have learned that according to your purpose long ago you were in quest of some far-away islands and mainlands not hitherto discovered by others, to the end that you might bring to the worship of our Redeemer and the profession of the Catholic faith the inhabitants of them with the dwellers therein; that hitherto having been earnestly engaged in the siege and recovery of the kingdom itself of Granada you were unable to accomplish this saintly and praiseworthy purpose; but at length, as was pleasing to the Lord, the said kingdom having been regained, not without the greatest hardships, dangers, and expenses, that with the wish to fulfil your desire, you chose our beloved son, Christopher Colon, a man assuredly worthy and of the highest recommendations as well as furnished with ships and men equipped for like designs, to make diligent quest for these far-away, unknown mainlands and islands through the sea, where hitherto no one has sailed; who in fine, with divine aid, nor without the utmost diligence, sailing in the Ocean Sea discovered certain very far-away islands and even mainlands that hitherto had not been discovered by others, wherein dwell very many peoples living in peace, and, as reported, going unclothed, nor users of flesh meat; and, as your aforesaid envoys are of opinion, these very peoples living in the said islands and countries believe in one God, Creator in heaven, besides being sufficiently ready in appearance to embrace the Catholic faith and be trained in good morals."
-- lines: [ic.narratio.15, ic.narratio.18]
-  text: "Nor is hope lacking that, were they instructed, the name of the Savior, our Lord Jesus Christ, would easily be introduced into the said countries and islands. Besides on one of these aforesaid chief islands the said Christopher has already had put together and built a well-equipped fortress, wherein he has stationed as garrison certain Christians, companions of his, who are to make search for other far-away and unknown islands and mainlands. In certain islands and countries already discovered are found gold, spices, and very many other precious things of divers kinds and species."
-- lines: [ic.donatio.1, ic.donatio.18]
-  text: "Moreover, moved thereunto by our own accord, not at your instance nor the request of any one else in your regard, but wholly of our own largess and certain knowledge as well as fulness of our apostolic power, by the authority of Almighty God conferred upon us in blessed Peter and of the vicarship of Jesus Christ, which we hold on earth, in order that with greater readiness and heartiness you enter upon an undertaking of so lofty a character as has been entrusted to you by the graciousness of our apostolic favor, by tenor of these presents should any of said islands have been found by your envoys and captains, we do give, grant, and assign to you and your heirs and successors, kings of Castile and Leon, forever, together with all their dominions, cities, camps, places, and towns, as well as all rights, jurisdictions, and appurtenances, all islands and mainlands found and to be found, discovered and to be discovered towards the west and south, by drawing and establishing a line from the Arctic pole, namely the north, to the Antarctic pole, namely the south, no matter whether the said mainlands and islands are found and to be found in the direction of India or towards any other quarter, the said line to the west and south to be distant one hundred leagues from any of the islands commonly known as the Azores and Cabo Verde. With this proviso however that none of the islands and mainlands found and to be found, discovered and to be discovered beyond that said line towards the west and south, be in the actual possession of any Christian king or prince up to the birthday of our Lord Jesus Christ just past in the present year one thousand four hundred and ninety-three. Moreover we make, appoint and depute you and your said heirs and successors owners of them with full and free power, authority, and jurisdiction of every kind; with this proviso however that through this gift, grant, and assignment of ours no right conferred on any Christian prince, who may be in actual possession of said islands and mainlands up to the said birthday of our Lord Jesus Christ, is hereby to be considered as withdrawn or to be withdrawn."
-- lines: [ic.datum.1, ic.datum.2]
-  text: "Given at Rome at St. Peter's in the year, etc., one thousand four hundred and ninety-three, the fourth of May, and the first year of our pontificate."
+- lines:
+  - ic.salutatio.1
+  - ic.salutatio.4
+  text: Alexander, etc., to the illustrious sovereigns, our very dear son in Christ, Ferdinand, King,
+    and our very dear daughter in Christ, Helisabeth [Isabella], Queen of Castile and Leon, Aragon, Sicily,
+    and Granada, health, etc.
+- lines:
+  - ic.arenga.1
+  - ic.arenga.5
+  text: 'Among other works well pleasing to his divine Majesty and cherished of our heart, this assuredly
+    ranks highest: that in our times especially the Catholic faith and the Christian law be exalted and
+    everywhere increased and spread as well as that the health of souls be procured, and barbarous nations
+    overthrown and brought to the faith itself.'
+- lines:
+  - ic.granata.1
+  - ic.granata.1
+  text: Wherefore inasmuch as by the favor of divine clemency, through no fitting merits of ours, we have
+    been raised to so holy a see as Peter's,
+- lines:
+  - ic.granata.2
+  - ic.granata.2
+  text: recognizing that as true Catholic kings and princes such as we have always known you to be,
+- lines:
+  - ic.granata.3
+  - ic.granata.3
+  text: and as your illustrious deeds already known to almost the whole world declare,
+- lines:
+  - ic.granata.4
+  - ic.granata.4
+  text: you not only eagerly desire but with every effort, zeal, and diligence, without regard to hardships,
+    expenses, dangers,
+- lines:
+  - ic.granata.5
+  - ic.granata.5
+  text: with the shedding even of your blood, are laboring to that end; that besides you have already
+    long ago dedicated to this purpose your whole soul and all your endeavors,
+- lines:
+  - ic.granata.6
+  - ic.granata.6
+  text: as witnessed in these times with so much glory to the divine name in your recovery of the kingdom
+    of Granada from the yoke of the Moors,
+- lines:
+  - ic.granata.7
+  - ic.granata.7
+  text: we therefore not unrighteously hold it as our duty to grant you even of our own accord and in
+    your favor those things
+- lines:
+  - ic.granata.8
+  - ic.granata.9
+  text: whereby daily and with heartier effort you may be enabled for the honor of God himself and the
+    spread of the Christian rule to accomplish your saintly and praiseworthy purpose so pleasing to immortal
+    God.
+- lines:
+  - ic.narratio.1
+  - ic.narratio.14
+  text: In sooth we have learned that according to your purpose long ago you were in quest of some far-away
+    islands and mainlands not hitherto discovered by others, to the end that you might bring to the worship
+    of our Redeemer and the profession of the Catholic faith the inhabitants of them with the dwellers
+    therein; that hitherto having been earnestly engaged in the siege and recovery of the kingdom itself
+    of Granada you were unable to accomplish this saintly and praiseworthy purpose; but at length, as
+    was pleasing to the Lord, the said kingdom having been regained, not without the greatest hardships,
+    dangers, and expenses, that with the wish to fulfil your desire, you chose our beloved son, Christopher
+    Colon, a man assuredly worthy and of the highest recommendations as well as furnished with ships and
+    men equipped for like designs, to make diligent quest for these far-away, unknown mainlands and islands
+    through the sea, where hitherto no one has sailed; who in fine, with divine aid, nor without the utmost
+    diligence, sailing in the Ocean Sea discovered certain very far-away islands and even mainlands that
+    hitherto had not been discovered by others, wherein dwell very many peoples living in peace, and,
+    as reported, going unclothed, nor users of flesh meat; and, as your aforesaid envoys are of opinion,
+    these very peoples living in the said islands and countries believe in one God, Creator in heaven,
+    besides being sufficiently ready in appearance to embrace the Catholic faith and be trained in good
+    morals.
+- lines:
+  - ic.narratio.15
+  - ic.narratio.18
+  text: Nor is hope lacking that, were they instructed, the name of the Savior, our Lord Jesus Christ,
+    would easily be introduced into the said countries and islands. Besides on one of these aforesaid
+    chief islands the said Christopher has already had put together and built a well-equipped fortress,
+    wherein he has stationed as garrison certain Christians, companions of his, who are to make search
+    for other far-away and unknown islands and mainlands. In certain islands and countries already discovered
+    are found gold, spices, and very many other precious things of divers kinds and species.
+- lines:
+  - ic.propositum.1
+  - ic.propositum.1
+  text: Wherefore, as becoming to Catholic kings and princes, after earnest consideration of all matters,
+    especially of the rise and spread of the Catholic faith,
+- lines:
+  - ic.propositum.2
+  - ic.propositum.2
+  text: as was the fashion of your ancestors, kings of renowned memory,
+- lines:
+  - ic.propositum.3
+  - ic.propositum.4
+  text: you have purposed with the favor of divine clemency to bring under your sway the said mainlands
+    and islands with their inhabitants and the dwellers therein, and bring them to the Catholic faith.
+- lines:
+  - ic.hortatio.1
+  - ic.hortatio.1
+  text: Hence in heartiest commendation in the Lord of this your saintly and praiseworthy purpose,
+- lines:
+  - ic.hortatio.2
+  - ic.hortatio.2
+  text: desirous too that it be duly accomplished in the carrying to those regions of the name of our
+    Savior,
+- lines:
+  - ic.hortatio.3
+  - ic.hortatio.4
+  text: we exhort you very earnestly in the Lord and insist strictly both through your reception of holy
+    baptism, whereby you are bound to our apostolic commands, and in the bowels of the mercy of our Lord
+    Jesus Christ,
+- lines:
+  - ic.hortatio.5
+  - ic.hortatio.5
+  text: that, inasmuch as with upright spirit and through zeal for the true faith you design to equip
+    and despatch this expedition,
+- lines:
+  - ic.hortatio.6
+  - ic.hortatio.6
+  text: you purpose also as is your duty to lead the peoples dwelling in those islands and countries to
+    embrace the Christian religion;
+- lines:
+  - ic.hortatio.7
+  - ic.hortatio.7
+  text: nor at any time let dangers nor hardships deter you therefrom,
+- lines:
+  - ic.hortatio.8
+  - ic.hortatio.8
+  text: with the stout hope and trust in your hearts that Almighty God will further your undertakings.
+- lines:
+  - ic.donatio.1
+  - ic.donatio.18
+  text: Moreover, moved thereunto by our own accord, not at your instance nor the request of any one else
+    in your regard, but wholly of our own largess and certain knowledge as well as fulness of our apostolic
+    power, by the authority of Almighty God conferred upon us in blessed Peter and of the vicarship of
+    Jesus Christ, which we hold on earth, in order that with greater readiness and heartiness you enter
+    upon an undertaking of so lofty a character as has been entrusted to you by the graciousness of our
+    apostolic favor, by tenor of these presents should any of said islands have been found by your envoys
+    and captains, we do give, grant, and assign to you and your heirs and successors, kings of Castile
+    and Leon, forever, together with all their dominions, cities, camps, places, and towns, as well as
+    all rights, jurisdictions, and appurtenances, all islands and mainlands found and to be found, discovered
+    and to be discovered towards the west and south, by drawing and establishing a line from the Arctic
+    pole, namely the north, to the Antarctic pole, namely the south, no matter whether the said mainlands
+    and islands are found and to be found in the direction of India or towards any other quarter, the
+    said line to the west and south to be distant one hundred leagues from any of the islands commonly
+    known as the Azores and Cabo Verde. With this proviso however that none of the islands and mainlands
+    found and to be found, discovered and to be discovered beyond that said line towards the west and
+    south, be in the actual possession of any Christian king or prince up to the birthday of our Lord
+    Jesus Christ just past in the present year one thousand four hundred and ninety-three. Moreover we
+    make, appoint and depute you and your said heirs and successors owners of them with full and free
+    power, authority, and jurisdiction of every kind; with this proviso however that through this gift,
+    grant, and assignment of ours no right conferred on any Christian prince, who may be in actual possession
+    of said islands and mainlands up to the said birthday of our Lord Jesus Christ, is hereby to be considered
+    as withdrawn or to be withdrawn.
+- lines:
+  - ic.mandatum.1
+  - ic.mandatum.1
+  text: Moreover we command you in virtue of holy obedience
+- lines:
+  - ic.mandatum.2
+  - ic.mandatum.5
+  text: that, employing all due diligence in the premises, as you promise, nor do we doubt your compliance
+    therein to the best of your loyalty and royal greatness of spirit, you send to the aforesaid main-lands
+    and islands worthy, God-fearing, learned, skilled, and experienced men, in order to instruct the aforesaid
+    inhabitants and dwellers therein in the Catholic faith and train them in good morals.
+- lines:
+  - ic.mandatum.6
+  - ic.mandatum.7
+  text: Besides under penalty of excommunication late sententie to be incurred ipso facto, should any
+    one thus contravene, we strictly forbid all persons of whatsoever rank, even imperial and royal, or
+    of whatsoever estate, degree, order, or condition,
+- lines:
+  - ic.mandatum.8
+  - ic.mandatum.13
+  text: to dare, without your special permit or that of your aforesaid heirs and successors, to go, as
+    charged, for the purpose of trade or any other reason to the islands and mainlands found and to be
+    found, discovered and to be discovered, towards the west and south, by drawing and establishing a
+    line from the Arctic pole to the Antarctic pole, no matter whether the mainlands and islands found
+    and to be found lie in the direction of India or towards any other quarter whatsoever, the said line
+    to the west and south to be distant one hundred leagues from any of the islands commonly known as
+    the Azores and Cabo Verde,
+- lines:
+  - ic.mandatum.14
+  - ic.mandatum.14
+  text: the apostolic constitutions and ordinances and other decrees whatsoever to the contrary notwithstanding.
+- lines:
+  - ic.mandatum.15
+  - ic.mandatum.15
+  text: We trust in him from whom derive empires and governments and everything good,
+- lines:
+  - ic.mandatum.16
+  - ic.mandatum.16
+  text: that with his guidance, should you pursue this saintly and praiseworthy undertaking,
+- lines:
+  - ic.mandatum.17
+  - ic.mandatum.17
+  text: in a short while your hardships and endeavors will result in the utmost success, to the happiness
+    and glory of all Christendom.
+- lines:
+  - ic.transumpta.1
+  - ic.transumpta.1
+  text: But inasmuch as it would be difficult to have these present letters sent to all places where desirable,
+- lines:
+  - ic.transumpta.2
+  - ic.transumpta.2
+  text: we wish, and with similar accord and knowledge do decree,
+- lines:
+  - ic.transumpta.3
+  - ic.transumpta.3
+  text: that to copies of them, signed by the hand of any public notary commissioned therefor,
+- lines:
+  - ic.transumpta.4
+  - ic.transumpta.4
+  text: and sealed with the seal of any ecclesiastical officer or ecclesiastical court,
+- lines:
+  - ic.transumpta.5
+  - ic.transumpta.5
+  text: the same respect is to be shown in court and outside as well as anywhere else as would be given
+    to these presents, should they thus be exhibited or shown.
+- lines:
+  - ic.sanctio.1
+  - ic.sanctio.3
+  text: Let no one therefore, etc., infringe, etc., this our recommendation, gift, grant, assignment,
+    constitution, deputation, decree, mandate, prohibition, and will.
+- lines:
+  - ic.sanctio.4
+  - ic.sanctio.5
+  text: Should any one, etc.
+- lines:
+  - ic.datum.1
+  - ic.datum.2
+  text: Given at Rome at St. Peter's in the year, etc., one thousand four hundred and ninety-three, the
+    fourth of May, and the first year of our pontificate.
+- lines:
+  - ic.notae.1
+  - ic.notae.1
+  text: Gratis by order of our most holy lord the Pope.
+- lines:
+  - ic.notae.3
+  - ic.notae.3
+  text: 'For the registrar: A. de Muciarellis.'

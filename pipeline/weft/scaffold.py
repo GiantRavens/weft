@@ -54,6 +54,27 @@ def sha256(data: bytes) -> str:
 HK = re.compile(r"^https?://(?:www\.)?heimskringla\.no/(?:wiki/(?P<title>[^?#]+)|index\.php\?(?P<q>.*))$")
 
 
+def _add_source_text(text: str, rec: dict) -> str:
+    """Append one sources_extra entry to a manifest's text: at the end of an existing sources_extra
+    block, or as a new block before translations: (or at the end). Indentation follows the block."""
+    entry = yaml.dump([rec], allow_unicode=True, sort_keys=False, width=130)
+    lines = text.splitlines(keepends=True)
+    start = next((i for i, l in enumerate(lines) if l.startswith("sources_extra:")), None)
+    if start is not None and lines[start].strip() != "sources_extra: []":
+        end = start + 1
+        while end < len(lines) and (lines[end].startswith((" ", "-", "#")) or not lines[end].strip()):
+            end += 1
+        first_item = next((l for l in lines[start + 1:end] if l.lstrip().startswith("- ")), "  - ")
+        pad = first_item[:len(first_item) - len(first_item.lstrip())]
+        entry = "".join(pad + l if l.strip() else l for l in entry.splitlines(keepends=True))
+        return "".join(lines[:end]) + entry + "".join(lines[end:])
+    if start is not None:
+        lines[start] = "sources_extra:\n"
+        return "".join(lines[:start + 1]) + entry + "".join(lines[start + 1:])
+    at = next((i for i, l in enumerate(lines) if l.startswith("translations:")), len(lines))
+    return "".join(lines[:at]) + "sources_extra:\n" + entry + "".join(lines[at:])
+
+
 def resolve_heimskringla(url: str) -> tuple[str, str, int | None, str | None, str | None]:
     """heimskringla.no refuses action=raw; its API serves the wikitext of a revision as JSON.
     -> (api url for the wikitext, display name, revid, title, page url by oldid)."""
@@ -83,7 +104,16 @@ def wikitext_to_stanza_text(data: bytes) -> bytes:
         raw = json.loads(raw)["parse"]["wikitext"]["*"]
     i = re.search(r"^::\s*1\.\s*$", raw, re.M)
     if not i:
-        raise SystemExit("weft pin: no '::1.' stanza marker in the wikitext; is this a poem page?")
+        # some pages set each line after <br> instead of ::, with the stanza number on a <br> line of its own
+        raw = re.sub(r"\n?<br\s*/?>", "\n", raw)
+        i = re.search(r"^\s*1\.\s*$", raw, re.M)
+        if i:
+            # the page's prose after the poem (a summary, a source line) ends it: verse lines are short
+            long_ = re.search(r"^.{100,}$", raw[i.start():], re.M)
+            if long_:
+                raw = raw[:i.start() + long_.start()]
+    if not i:
+        raise SystemExit("weft pin: no '::1.' or '1.' stanza marker in the wikitext; is this a poem page?")
     pre = raw[:i.start()].rstrip().splitlines()
     last = pre[-1].strip() if pre else ""
     head = [last] if last.endswith(":") and len(last.split()) <= 6 else []     # a speaker line, not a prose paragraph ending in "kvað:"
@@ -102,7 +132,16 @@ def wikitext_to_stanza_text(data: bytes) -> bytes:
     return txt.encode("utf-8")
 
 
-CONVERTERS = {"heimskringla-stanza-text": wikitext_to_stanza_text}
+def wikitext_plain(data: bytes) -> bytes:
+    """A heimskringla page (API parse JSON) -> its wikitext as plain UTF-8, for a prose edition whose
+    lines are checked against it with verify_strip (the JSON envelope escapes every accented letter)."""
+    raw = data.decode("utf-8")
+    if raw.lstrip().startswith('{"'):
+        raw = json.loads(raw)["parse"]["wikitext"]["*"]
+    return raw.encode("utf-8")
+
+
+CONVERTERS = {"heimskringla-stanza-text": wikitext_to_stanza_text, "wikitext": wikitext_plain}
 
 WS = re.compile(r"^https?://(?P<lang>[a-z\-]+)\.wikisource\.org/(?:wiki/(?P<title>[^?#]+)|w/index\.php\?(?P<q>.*))$")
 
@@ -143,6 +182,8 @@ def pin(repo: Path, work: str, url: str, sid: str | None = None, name: str | Non
         raw_url, display, rev, title, page_url = resolve_heimskringla(url)
         if as_ == "stanza-text":
             convert = "heimskringla-stanza-text"
+        elif as_ == "wikitext":
+            convert = "wikitext"
         elif as_:
             raise SystemExit(f"weft pin: unknown conversion {as_!r}")
     else:
@@ -164,7 +205,8 @@ def pin(repo: Path, work: str, url: str, sid: str | None = None, name: str | Non
                                    "text public domain; Wikisource transcription CC BY-SA 4.0" if rev else "TODO: the source's license"),
            **({"license_url": license_url} if license_url else {"license_url": "http://heimskringla.no/wiki/Heimskringla.no:Copyright"} if page_url else {}),
            **({"page": page_url} if page_url else {}),
-           **({"convert": convert, "note": "the file is the page's wikitext converted by weft to the stanza-text layout (speaker lines and stanza numbers kept, markup dropped); weft acquire reproduces it"} if convert else {})}
+           **({"convert": convert, "note": ("the file is the page's wikitext converted by weft to the stanza-text layout (speaker lines and stanza numbers kept, markup dropped); weft acquire reproduces it"
+                                             if convert == "heimskringla-stanza-text" else "the file is the page's wikitext, taken out of the API's JSON envelope; weft acquire reproduces it")} if convert else {})}
     m = yaml.safe_load(mp.read_text())
     if edition:
         m.setdefault("edition", {}).update({"file": rec["file"], "url": rec["url"], "sha256": rec["sha256"],
@@ -174,8 +216,13 @@ def pin(repo: Path, work: str, url: str, sid: str | None = None, name: str | Non
         if str(m["edition"].get("license", "TODO")).startswith("TODO"): m["edition"]["license"] = rec["license"]
         if convert == "heimskringla-stanza-text": m["edition"]["format"] = "stanza-text"
     else:
-        m.setdefault("sources_extra", [])
-        m["sources_extra"] = [s for s in m["sources_extra"] if s.get("id") != rec["id"]] + [rec]
+        if any(s_.get("id") == rec["id"] for s_ in m.get("sources_extra") or []) or "#" not in mp.read_text():
+            m.setdefault("sources_extra", [])
+            m["sources_extra"] = [s_ for s_ in m["sources_extra"] if s_.get("id") != rec["id"]] + [rec]
+        else:
+            # a manifest with comments is edited as text, so the comments survive (yaml.dump drops them)
+            mp.write_text(_add_source_text(mp.read_text(), rec))
+            return {"saved": str(out.relative_to(repo)), "bytes": len(data), "sha256": rec["sha256"], "revision": rev, "manifest": "sources_extra"}
     mp.write_text(yaml.dump(m, allow_unicode=True, sort_keys=False, width=130))
     return {"saved": str(out.relative_to(repo)), "bytes": len(data), "sha256": rec["sha256"], "revision": rev, "manifest": "edition" if edition else "sources_extra"}
 
@@ -212,7 +259,7 @@ def image(repo: Path, work: str, commons_file: str, caption: str | None = None, 
     desc = strip_tags(em.get("ImageDescription", {}).get("value", ""))[:200]
     rec = {"image": f"art/works/{work}.jpg", "thumb": f"art/works/thumb/{work}.jpg",
            "caption": caption or f"TODO: {desc}", "alt": alt or "TODO: describe the image for a reader who cannot see it",
-           "credit": strip_tags(em.get("Artist", {}).get("value", "")) or "Unknown", "date": (strip_tags(em.get("DateTimeOriginal", {}).get("value", "")) or strip_tags(em.get("DateTime", {}).get("value", "")))[:40] or "unknown",
+           "credit": strip_tags(em.get("Artist", {}).get("value", "")) or "Unknown", "date": re.sub(r"\s*date QS:.*$", "", strip_tags(em.get("DateTimeOriginal", {}).get("value", "")) or strip_tags(em.get("DateTime", {}).get("value", "")))[:40] or "unknown",   # Commons appends Wikidata markup (date QS:P571,...)
            "license": lic, "source": "https://commons.wikimedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"), safe=":()'"), "commons_file": title}
     cp = repo / "art" / "works" / "credits.yaml"
     text = cp.read_text()
@@ -373,8 +420,9 @@ METRE_ROLE = {"a": "long line, a-verse · stave {s}", "b": "long line, b-verse �
               "list": "line of a name list{s}"}      # list lines (þulur) often rhyme or pair names without a stave
 
 
-def parse_line_spec(spec: str) -> tuple[str | None, list[dict]]:
-    """'a g :: *Surf|gloss|lemma|code ;; ...' -> (metre string or None, tokens)."""
+def parse_line_spec(spec: str) -> tuple[str | None, list[dict], str | None]:
+    """'a g :: *Surf|gloss|lemma|code ;; ... | note' -> (metre string or None, tokens, note or None).
+    On a verse line the note joins the metre string; on a prose line the caller keeps it as a comment."""
     metre = None
     body = spec
     if " :: " in spec:
@@ -388,7 +436,7 @@ def parse_line_spec(spec: str) -> tuple[str | None, list[dict]]:
     if " | " in body:
         body, note = body.rsplit(" | ", 1)
     if metre and note:
-        metre = f"{metre} · {note}"
+        metre, note = f"{metre} · {note}", None
     toks = []
     for item in body.split(" ;; "):
         parts = item.split("|")
@@ -400,7 +448,13 @@ def parse_line_spec(spec: str) -> tuple[str | None, list[dict]]:
         if lemma != lemma.strip(EDGE_PUNCT) or not lemma:
             raise ValueError(f"lemma {lemma!r} carries punctuation (a template slip?) in {item!r}")
         toks.append({"surface": bare, "stave": surf.startswith("*"), "gloss": gloss, "lemma": lemma, "morph": expand_code(code)})
-    return metre, toks
+    return metre, toks, note
+
+
+def _edge(surface: str) -> str:
+    """A surface without the punctuation at its edges, for matching a spec to gen: a gen token may keep
+    the print's comma and a dash joined by a no-break space (inni,\u00a0--), which a spec cannot type."""
+    return re.sub(r"^\W+|\W+$", "", surface.replace("\u00a0", " "))
 
 
 def gen_lines(work_dir: Path) -> dict[str, list[str]]:
@@ -426,9 +480,11 @@ def overlay(repo: Path, work: str, spec_path: Path, out_name: str) -> dict:
     for lid, s in spec["lines"].items():
         if lid not in lines:
             problems.append(f"{lid}: not in gen"); continue
-        metre, toks = parse_line_spec(s)
-        if [t["surface"] for t in toks] != lines[lid]:
+        metre, toks, note = parse_line_spec(s)
+        if [_edge(t["surface"]) for t in toks] != [_edge(x) for x in lines[lid]]:
             problems.append(f"{lid}: spec {[t['surface'] for t in toks]} vs gen {lines[lid]}"); continue
+        if note:                                    # the annotator's reason, kept for the reviewer; not shown on the page
+            out.append(f"    # {lid}: {' '.join(note.split())}")
         if metre:
             out.append(f'    {lid}: {{metre: {json.dumps(metre, ensure_ascii=False)}}}')
         for i, t in enumerate(toks, 1):
@@ -441,7 +497,9 @@ def overlay(repo: Path, work: str, spec_path: Path, out_name: str) -> dict:
     body = (f"{head}\n- by: \"{spec.get('by', 'TODO')}\"\n  date: \"{spec.get('date', 'TODO')}\"\n  why: \"{spec.get('why', 'TODO')}\"\n  status: \"{spec.get('status', 'draft')}\"\n  set:\n" + "\n".join(out) + "\n")
     (wd / "curated").mkdir(exist_ok=True)
     (wd / "curated" / out_name).write_text(body)
-    return {"wrote": str((wd / "curated" / out_name).relative_to(repo)), "lines": len(spec["lines"]), "tokens": ntok}
+    written = wd / "curated" / out_name           # an absolute out_name replaces the curated/ folder
+    return {"wrote": str(written.relative_to(repo)) if written.is_relative_to(repo) else str(written),
+            "lines": len(spec["lines"]), "tokens": ntok}
 
 
 def reuse_map(repo: Path, works: list[str]) -> dict[str, list]:

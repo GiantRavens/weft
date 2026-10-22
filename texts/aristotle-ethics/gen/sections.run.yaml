@@ -1,0 +1,18 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1.1'
+  - '1.2'
+counts:
+  lines: 22
+  tokens: 358
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- lemma and morphology are an automatic parse (GLAUx), not hand-checked; every token was read, and 45 of 358 were corrected in curated/ (lemma, case, gender, number, tense, part of speech)
+- long a/i/u not marked in the spelling; the quantity table covers only the words it lists
+- Peters is read from OCR of the scan and checked against the page images; every correction is listed in the sense file
+- Peters (born 1849; Foster, Alumni Oxonienses, vol. 3, p. 1102) has no death year in the sources checked; the translation is treated as public domain because he would have had to live past 106 to die after
+  1955

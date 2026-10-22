@@ -210,7 +210,7 @@
               safeUrl(f.source) ? " · " : "", safeUrl(f.source) ? h("a", { href: safeUrl(f.source), text: "source" }) : null) : null)));
       }
       prevStanza = line.stanza;
-      text.append(h("section", { class: "lineset" + (newStanza ? " stanza-first" : ""), id: line.id },
+      text.append(h("section", { class: "lineset" + (newStanza ? " stanza-first" : "") + (line.verse ? " verse" : ""), id: line.id },
         gutter, h("div", { class: "body" }, strip,
           line.reading ? h("p", { class: "reading" }, h("span", { class: "rl", text: "Read aloud" }), h("span", { lang: LANG, text: line.reading })) : null,
           metre, spans.length ? sense : null)));

@@ -1,0 +1,37 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: ragnars-saga
+src: weft.about 0.1
+fetched: '2026-10-22'
+match: work
+wikipedia:
+  title: Tale of Ragnar Lodbrok
+  lang: en
+  revision: 1376262787
+  url: https://en.wikipedia.org/w/index.php?title=Tale_of_Ragnar_Lodbrok&oldid=1376262787
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Tale of Ragnar Lodbrok” (en.wikipedia.org, revision 1376262787),
+    CC BY-SA 4.0
+  lead: 'The Tale of Ragnarr Loðbrók (Old Norse: Ragnars saga loðbrókar) is an Icelandic legendary saga
+    of the 13th century about the Viking ruler Ragnar loðbrók. It is first found in the same manuscript
+    as Vǫlsunga saga, which it immediately follows. The tale covers the origin of Áslaug, Ragnarr''s quest
+    for the hand of Þóra borgarhjǫrtr, his later marriage to Áslaug, the deeds of their sons (and Áslaug)
+    in battle, and Ragnarr''s death at the hands of king Ælla of Northumbria.'
+wikidata:
+  id: Q3370179
+  revision: 2532376970
+  license: CC0
+  description: nordic legendary saga
+  instance_of:
+  - id: Q46783
+    label: oral lore
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q180494
+    label: saga
+  - id: Q2469348
+    label: legendary saga
+  main_subject:
+  - id: Q314492
+    label: Ragnar Lodbrok

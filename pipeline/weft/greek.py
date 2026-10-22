@@ -73,6 +73,20 @@ class Syllable:
         return any(IOTA_SUB in l.marks for l in self.nucleus)
 
 
+def _final_elided_vowel(s: str, i: int) -> bool:
+    """s is NFD; s[i] is a psili. True when it sits on the last letter of the word and that letter is a
+    vowel after a consonant: a breathing cannot stand there, so the treebank means elision (ἄλγἐ = ἄλγεʼ).
+    οὐ and αὐ, where the breathing sits on the second vowel of an initial diphthong, are left alone."""
+    bases = [k for k, c in enumerate(s) if not ud.combining(c)]
+    before = [k for k in bases if k < i]
+    if not before or any(k > i for k in bases) or len(before) < 2:
+        return False
+    v, prev = s[before[-1]].lower(), s[before[-2]].lower()
+    if v == "ρ":                     # ἄῤ: a word-final rho takes no breathing, so this is elision too
+        return True
+    return v in VOWELS and prev not in VOWELS
+
+
 def normalize_elision(s: str) -> str:
     """Unify the several apostrophes editions and treebanks use for elision into U+2019."""
     s = ud.normalize("NFD", s)
@@ -82,6 +96,8 @@ def normalize_elision(s: str) -> str:
             out.append("’")
         elif ch == PSILI and i > 0 and ud.normalize("NFD", s[i - 1])[0].lower() not in VOWELS | {"ρ"}:
             out.append("’")  # treebank style: combining psili on a consonant = elision
+        elif ch == PSILI and _final_elided_vowel(s, i):
+            out.append("’")  # treebank style: psili on a word-final vowel after a consonant (ἄλγἐ) = elision
         else:
             out.append(ch)
     return ud.normalize("NFC", "".join(out))

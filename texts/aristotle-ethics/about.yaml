@@ -1,0 +1,43 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: aristotle-ethics
+src: weft.about 0.1
+fetched: '2026-10-18'
+match: work
+wikipedia:
+  title: Nicomachean Ethics
+  lang: en
+  revision: 1376958477
+  url: https://en.wikipedia.org/w/index.php?title=Nicomachean_Ethics&oldid=1376958477
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Nicomachean Ethics” (en.wikipedia.org, revision 1376958477),
+    CC BY-SA 4.0
+  lead: 'The Nicomachean Ethics (; Ancient Greek: Ἠθικὰ Νικομάχεια, Ēthika Nikomacheia) is Aristotle''s
+    best-known work on ethics: the philosophical study of the good for human life, that which is the goal
+    or end at which all our actions aim. It consists of ten sections, referred to as books, and is closely
+    related to Aristotle''s Eudemian Ethics. The work is essential for the interpretation of Aristotelian
+    ethics.'
+wikidata:
+  id: Q474537
+  revision: 2556790774
+  license: CC0
+  description: literary work by Aristotle
+  instance_of:
+  - id: Q234460
+    label: text
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q384515
+    label: treatise
+  main_subject:
+  - id: Q9465
+    label: ethics
+  - id: Q48324
+    label: morality
+  - id: Q8
+    label: happiness
+  - id: Q157811
+    label: virtue
+  - id: Q5891
+    label: philosophy

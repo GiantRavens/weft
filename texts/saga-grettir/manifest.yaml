@@ -9,13 +9,14 @@ urn: urn:weft:non:grettis-saga   # no CTS URN; Weft-local identifier
 unit: sentence
 written: {year: 1315, display: "1310–1320", label: "written about 1310–1320"}   # composition date; the library sorts by year
 status: phase-0
-extent: {is: section, of: "the prose of chapter 14, all 104 sentences, without its three verses; the saga has more than 90 chapters"}
+extent: {is: section, of: "the whole of chapter 14, its 104 sentences of prose and its three verses; the saga has more than 90 chapters"}
 pilot: {chapter: 14, first: 1, last: 104}    # IcePaHC sentence numbers within the text; its excerpt opens chapter 14
 edition:
   id: icepahc
   name: Icelandic Parsed Historical Corpus (IcePaHC), text 1310.GRETTIR, modernized spelling
   format: conllu                 # the treebank carries the text: edition and parse are one file
   text_id: "1310.GRETTIR.NAR-SAG"
+  verses: {file: verses.yaml}    # the three verses IcePaHC leaves out, set in after sentences 31, 53 and 94
   file: sources/icepahc-train.conllu
   url: https://raw.githubusercontent.com/UniversalDependencies/UD_Icelandic-IcePaHC/200fcd231e699705b35bdbbadc336b4261b0bc70/is_icepahc-ud-train.conllu
   sha256: 8fd17bd56309bdd2d3ecb3945fb59fe1961ddc4826baebef2c24f1b81212911f
@@ -27,6 +28,15 @@ treebank:
   format: conllu-edition         # lemma and morph come from the edition file itself
   license: LGPL-3.0 / CC BY-SA 4.0
 schemes: [old-norse, modern-icelandic]   # default = as first written (c. 1310); approximate, because the spelling is modernized
+sources_extra:
+  - id: heimskringla-grettis
+    name: "Grettis saga, ed. G. Magnússon and G. Thordarson (Copenhagen, 1853), as on heimskringla.no, revision 35933: the source of the three verses"
+    file: sources/heimskringla-grettis.json
+    url: https://heimskringla.no/api.php?action=parse&oldid=35933&prop=wikitext&format=json
+    sha256: c27f77ada973b9fd41c1a1a3c6177402e28828e740d28b8e617e5413f2ea860f
+    license: public domain (text, 1853); heimskringla.no transcription
+    license_url: http://heimskringla.no/wiki/Heimskringla.no:Copyright
+    page: https://heimskringla.no/index.php?title=Grettis_saga&oldid=35933
 translations:
   - id: morris-magnusson1869
     translator: William Morris and Eiríkr Magnússon
@@ -50,6 +60,6 @@ predicted_gaps:
   - "IcePaHC spells the saga in modern Icelandic (kallaður, not kallaðr): the old-norse reading is approximate"
   - "UD layer is an automatic conversion of hand-made Penn parses: expect some wrong case and part-of-speech tags"
   - "unit is the sentence: a saga is prose, so lines are sentences and spans are clauses"
-  - "the three verses of chapter 14 (after sentences 31, 53 and 94: Grettir on the geese, Grettir on the back-scratching, Asmund on Kengala) are not in IcePaHC, which leaves out verse; they are not yet edited here, and their translations are left out of the spans, so the chapter's prose is complete and its verse is not"
+  - "the three verses of chapter 14 (after sentences 31, 53 and 94) are not in IcePaHC, which leaves out verse; they are set in from the edition of 1853 as transcribed on heimskringla.no, in that edition's older spelling, and hand-annotated after Cleasby and Vigfusson and the Lexicon Poeticum (draft). The readings and kenning resolutions follow the standard editions as recalled, not checked against Íslenzk fornrit VII page by page; the phrase gildra sára gögl in the second verse is disputed. The verse lemmas follow the modern spelling IcePaHC uses for the prose lemmas (ég, það, -ur nominatives), and the sound is read from normalized forms where the 1853 spelling would mislead it (verses.yaml, say)"
   - "the UD conversion needed 54 corrections in sentences 10-104 (case, person and gender features, the preterite infinitive mundu tagged as finite, pronouns converted as proper nouns, a few lemmas), each recorded in the curated overlay"
   - "the treebank file is 61 MB for one chapter; acceptable, but a slicing acquire step would help"

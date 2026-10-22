@@ -1,0 +1,70 @@
+# Gudbrand Vigfusson and F. York Powell, Corpus Poeticum Boreale, vol. 2 (Oxford, 1883): English prose
+# translations of the verses, verbatim from the archive.org OCR (corpuspoeticumbo02guuoft), checked
+# against the page images. Seven stanzas are from Book IX, § 1, "Ragnar Lodbrok, Anslaug, and Ragnar's
+# Sons", pp. 348-352 (CPB prints the Wolsunga vellum text with Hauksbók parallels for vv. 10, 16-20, 32,
+# the Hauksbók stanzas being this þáttr's); the Ella stanza is Sighvat's Tog-drapa ("Stretch-song on King
+# Cnut", i.e. Knútsdrápa) v. 1, Book VIII, § 2, p. 135 (leaf 143). PARTIAL: verse only; every prose line
+# of the work is uncovered. CPB translates the saga (Wolsunga MS.) text, so where the þáttr's wording
+# differs (e.g. "þriggja vikna", three weeks, where CPB has three nights) the English follows CPB, not
+# the þáttr. CPB's stanza numbers, section numerals, italic headings and speaker labels are dropped from
+# the span text; CPB's italics are not kept.
+# Weft stanza (verse-line range) -> CPB stanza number:
+#   rsons.2.20-rsons.2.27      -> CPB 10
+#   rsons.2.30-rsons.2.37      -> CPB 13
+#   rsons.2.42-rsons.2.49      -> CPB 16
+#   rsons.2.51-rsons.2.58      -> CPB 17
+#   rsons.2.60-rsons.2.67      -> CPB 18
+#   rsons.2.69-rsons.2.76      -> CPB 19
+#   rsons.2.78-rsons.2.85      -> CPB 20
+#   rsons.3.31-rsons.3.34      -> CPB Sighvat, Tog-drapa (Knutsdrapa) 1, CPB ii p. 135
+#   rsons.5.12-rsons.5.19      -> CPB 32
+# Uncovered verse: none (all 9 stanzas placed).
+# OCR corrections, each checked against the page image:
+#   "1 will" -> "I will" (10)
+#   "eye...." -> "eye . . . ." (18)
+#   "ships . as" -> "ships as" (19)
+#   "dash = to" -> "dash to" (20)
+#   "van};" -> "van;" (20)
+#   "AND Iwar" -> "And Iwar" (Sighvat 1)
+#   "of lla." -> "of Ælla." (Sighvat 1)
+#   "pin- nacles" -> "pinnacles" (32)
+
+translation: vigfusson-powell1883
+aligned_by: hand, phase 0; one span per stanza (verse only, prose lines uncovered); stanza correspondence by content to CPB ii, pp. 345-353 and p. 135
+spans:
+- lines:
+  - rsons.2.20
+  - rsons.2.27
+  text: I will not take atonement nor rings as ransom for my brother’s death. Eystan [Beli] is Agnar’s slayer. No mother weeps for me. I shall die last; let the spears pierce me.
+- lines:
+  - rsons.2.30
+  - rsons.2.37
+  text: Carry my last words, now that the Eastern journeys are come to an end. Let my step-mother Anslaug have this ring of mine. She will be wroth when she hears of my death, she will egg her gallant sons on to avenge me.
+- lines:
+  - rsons.2.42
+  - rsons.2.49
+  text: Ye would not have been left one year unrevenged of them, if ye had died first, if Eric and Agnar, no sons of mine, were living.
+- lines:
+  - rsons.2.51
+  - rsons.2.58
+  text: The levy shall be ready within three nights. Eystan Beli shall not rule Upsal long though he offer us weregild, if the goddesses help us.
+- lines:
+  - rsons.2.60
+  - rsons.2.67
+  text: The heart may be steadfast in a man’s breast, though he speak little. I have no snake in my eye . . . . I will remember thy step-sons.
+- lines:
+  - rsons.2.69
+  - rsons.2.76
+  text: Let us look ere we vow, that our revenge be feasible! May every ill befall Agnar’s slayers. Let us launch our barks on the wave! Let us cleave the ice with our prows! Let us make ready our ships as soon as may be!
+- lines:
+  - rsons.2.78
+  - rsons.2.85
+  text: Ye have spirit enough and dash to boot, yet ye lack foresight. Ye must bear me with you in the van; though I can use neither hand, yet I shall take my share of the revenge with you.
+- lines:
+  - rsons.3.31
+  - rsons.3.34
+  text: And Iwar that ruled at York cut an Eagle on the back of Ælla.
+- lines:
+  - rsons.5.12
+  - rsons.5.19
+  text: Lo, the ravens perched on the pinnacles of the burghs. The doom has overtaken Sigfred’s namesake. Blow, gentle winds, on the chips of his funeral pile. Woden made the Walkyrie’s darling die too soon.

@@ -1,0 +1,1966 @@
+# Human overlay for Ragnars saga loðbrókar chapter 10 (rag.10.*). Lemmas follow Zoëga, A Concise Dictionary of
+# Old Icelandic (1910), in normalized spelling; morphology in Universal Dependencies features, written in the
+# compact spec and expanded by weft overlay; frequent forms after the shared convention table (rag/conventions.tsv).
+# All twelve verses are in skaldic measure close to dróttkvætt without regular hendingar, as in Krákumál: odd line
+# two staves, even line one head-stave; vowels alliterate with each other. Seven of them also stand in
+# Ragnarssona þáttr chapter 2 and are annotated as there (rsons.2.20-85). Kennings are glossed word by word.
+# The cow Síbilja is a feminine thing in the convention table: hún, hennar, sínum glossed it, its, its-own.
+- by: "Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar"
+  date: "2026-10-22"
+  why: "hand lemma, morphology and gloss for chapter 10, with staves and meter for the verses; no treebank covers this text; written in the compact spec and expanded by weft overlay, following the shared convention table"
+  status: "draft"
+  set:
+    rag.10.1.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.1.2: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rag.10.1.3: {lemma: "sá", morph: "DET|Case=Nom|Gender=Fem|Number=Sing|PronType=Dem", gloss: "that"}   # sú
+    rag.10.1.4: {lemma: "stund", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "time"}   # stund
+    rag.10.1.5: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rag.10.1.6: {lemma: "líða", morph: "VERB|Case=Nom|Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part", gloss: "passed"}   # liðin
+    rag.10.1.7: {lemma: "er", morph: "PRON|PronType=Rel", gloss: "which"}   # er
+    rag.10.1.8: {lemma: "á", morph: "ADV", gloss: "on"}   # á
+    rag.10.1.9: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rag.10.1.10: {lemma: "kveða", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "appointed"}   # kveðit
+    rag.10.1.11: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.1.12: {lemma: "Ragnarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Ragnar"}   # Ragnarr
+    rag.10.1.13: {lemma: "skulu", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "should"}   # skyldi
+    rag.10.1.14: {lemma: "veizla", morph: "NOUN|Case=Acc|Definite=Def|Gender=Fem|Number=Sing", gloss: "the-feast"}   # veizluna
+    rag.10.1.15: {lemma: "sækja", morph: "VERB|VerbForm=Inf", gloss: "attend"}   # sækja
+    rag.10.1.16: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rag.10.1.17: {lemma: "Uppsalir", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "Uppsala"}   # Uppsala
+    rag.10.1.18: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.1.19: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "came"}   # kom
+    rag.10.1.20: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.1.21: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.1.22: {lemma: "þykkja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "seemed"}   # þótti
+    rag.10.1.23: {lemma: "Eysteinn", morph: "PROPN|Case=Dat|Gender=Masc|Number=Sing", gloss: "to-Eystein"}   # Eysteini
+    rag.10.1.24: {lemma: "konungr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "king"}   # konungi
+    rag.10.1.25: {lemma: "gera", morph: "VERB|Case=Nom|Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part", gloss: "done"}   # ger
+    rag.10.1.26: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rag.10.1.27: {lemma: "sik", morph: "PRON|Case=Gen|Person=3|Reflex=Yes", gloss: "himself"}   # sín
+    rag.10.1.28: {lemma: "svívirðing", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "dishonor"}   # svívirðing
+    rag.10.1.29: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.1.30: {lemma: "dóttir", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "daughter"}   # dóttur
+    rag.10.1.31: {lemma: "sinn", morph: "DET|Case=Gen|Gender=Fem|Number=Sing|Poss=Yes", gloss: "his-own"}   # sinnar
+    rag.10.1.32: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.1.33: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.1.34: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rag.10.1.35: {lemma: "lúka", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "ended"}   # lokit
+    rag.10.1.36: {lemma: "vinfengi", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "friendship"}   # vinfengi
+    rag.10.1.37: {lemma: "sá", morph: "DET|Case=Gen|Gender=Masc|Number=Plur|PronType=Dem", gloss: "of-those"}   # þeira
+    rag.10.1.38: {lemma: "konungr", morph: "NOUN|Case=Gen|Definite=Def|Gender=Masc|Number=Plur", gloss: "the-kings"}   # konunganna
+    rag.10.2.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.2.2: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rag.10.2.3: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rag.10.2.4: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.2.5: {lemma: "Eiríkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eirekr
+    rag.10.2.6: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.2.7: {lemma: "Agnarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Agnar"}   # Agnarr
+    rag.10.2.8: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons"}   # synir
+    rag.10.2.9: {lemma: "Ragnarr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Ragnar's"}   # Ragnars
+    rag.10.2.10: {lemma: "spyrja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "learn"}   # spyrja
+    rag.10.2.11: {lemma: "þessi", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "this"}   # þetta
+    rag.10.2.12: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rag.10.2.13: {lemma: "ræða", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "talked"}   # ræddu
+    rag.10.2.14: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.2.15: {lemma: "með", morph: "ADP", gloss: "among"}   # með
+    rag.10.2.16: {lemma: "sik", morph: "PRON|Case=Dat|Person=3|Reflex=Yes", gloss: "themselves"}   # sér
+    rag.10.2.17: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.2.18: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.2.19: {lemma: "munu", morph: "AUX|Mood=Sub|Number=Plur|Person=3|Tense=Past", gloss: "would"}   # mundu
+    rag.10.2.20: {lemma: "fá", morph: "VERB|VerbForm=Inf", gloss: "get"}   # fá
+    rag.10.2.21: {lemma: "sik", morph: "PRON|Case=Dat|Person=3|Reflex=Yes", gloss: "for-themselves"}   # sér
+    rag.10.2.22: {lemma: "lið", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "host"}   # lið
+    rag.10.2.23: {lemma: "mikill", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "great"}   # mikit
+    rag.10.2.24: {lemma: "sem", morph: "SCONJ", gloss: "as"}   # sem
+    rag.10.2.25: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.2.26: {lemma: "mega", morph: "VERB|Mood=Sub|Number=Plur|Person=3|Tense=Past", gloss: "might"}   # mætti
+    rag.10.2.27: {lemma: "mikill", morph: "ADV|Degree=Sup", gloss: "most"}   # mest
+    rag.10.2.28: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.2.29: {lemma: "munu", morph: "AUX|Mood=Sub|Number=Plur|Person=3|Tense=Past", gloss: "would"}   # mundu
+    rag.10.2.30: {lemma: "herja", morph: "VERB|VerbForm=Inf", gloss: "harry"}   # herja
+    rag.10.2.31: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    rag.10.2.32: {lemma: "Svíþjóð", morph: "PROPN|Case=Acc|Gender=Fem|Number=Sing", gloss: "Sweden"}   # Svíþjóð
+    rag.10.3.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.3.2: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.3.3: {lemma: "draga", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "draw"}   # draga
+    rag.10.3.4: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.3.5: {lemma: "saman", morph: "ADV", gloss: "together"}   # saman
+    rag.10.3.6: {lemma: "lið", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "host"}   # lið
+    rag.10.3.7: {lemma: "mikill", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "great"}   # mikit
+    rag.10.3.8: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.3.9: {lemma: "búa", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "prepare"}   # búa
+    rag.10.3.10: {lemma: "skip", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "ships"}   # skip
+    rag.10.3.11: {lemma: "sinn", morph: "DET|Case=Acc|Gender=Neut|Number=Plur|Poss=Yes", gloss: "their-own"}   # sín
+    rag.10.3.12: {lemma: "en", morph: "CCONJ", gloss: "and"}   # en
+    rag.10.3.13: {lemma: "þykkja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "seemed"}   # þótti
+    rag.10.3.14: {lemma: "mikill", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "much"}   # mikit
+    rag.10.3.15: {lemma: "undir", morph: "ADV", gloss: "under-it"}   # undir
+    rag.10.3.16: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.3.17: {lemma: "vel", morph: "ADV", gloss: "well"}   # vel
+    rag.10.3.18: {lemma: "taka", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Past|Voice=Mid", gloss: "turned-out"}   # tækist
+    rag.10.3.19: {lemma: "til", morph: "ADV", gloss: "to-it"}   # til
+    rag.10.3.20: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rag.10.3.21: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rag.10.3.22: {lemma: "skip", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "ships"}   # skip
+    rag.10.3.23: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "should"}   # skyldi
+    rag.10.3.24: {lemma: "fram", morph: "ADV", gloss: "forth"}   # fram
+    rag.10.3.25: {lemma: "setja", morph: "VERB|VerbForm=Inf", gloss: "set"}   # setja
+    rag.10.4.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.4.2: {lemma: "verða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "happens"}   # verðr
+    rag.10.4.3: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.4.4: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.4.5: {lemma: "skip", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "ship"}   # skip
+    rag.10.4.6: {lemma: "Agnarr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Agnar's"}   # Agnars
+    rag.10.4.7: {lemma: "skjóta", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Mid", gloss: "shot"}   # skauzt
+    rag.10.4.8: {lemma: "af", morph: "ADP", gloss: "off"}   # af
+    rag.10.4.9: {lemma: "hlunnr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "roller"}   # hlunni
+    rag.10.4.10: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.4.11: {lemma: "verða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # varð
+    rag.10.4.12: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rag.10.4.13: {lemma: "maðr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "a-man"}   # maðr
+    rag.10.4.14: {lemma: "fyrir", morph: "ADV", gloss: "in-the-way"}   # fyrir
+    rag.10.4.15: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.4.16: {lemma: "fá", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "gets"}   # fær
+    rag.10.4.17: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that-one"}   # sá
+    rag.10.4.18: {lemma: "bani", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "death"}   # bana
+    rag.10.4.19: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.4.20: {lemma: "kalla", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "called"}   # kölluðu
+    rag.10.4.21: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.4.22: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.4.23: {lemma: "hlunnroð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "roller-reddening"}   # hlunnroð
+    rag.10.5.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.5.2: {lemma: "þykkja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "seemed"}   # þótti
+    rag.10.5.3: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Masc|Number=Plur|PronType=Dem", gloss: "to-them"}   # þeim
+    rag.10.5.4: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.5.5: {lemma: "vel", morph: "ADV", gloss: "well"}   # vel
+    rag.10.5.6: {lemma: "til", morph: "ADV", gloss: "to-it"}   # til
+    rag.10.5.7: {lemma: "taka", morph: "VERB|VerbForm=Inf|Voice=Mid", gloss: "turn-out"}   # takast
+    rag.10.5.8: {lemma: "í", morph: "ADP", gloss: "at"}   # í
+    rag.10.5.9: {lemma: "fyrstr", morph: "ADJ|Case=Dat|Degree=Sup|Gender=Neut|Number=Sing", gloss: "first"}   # fyrstu
+    rag.10.5.10: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.5.11: {lemma: "vilja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "would"}   # vildu
+    rag.10.5.12: {lemma: "ekki", morph: "ADV", gloss: "not"}   # ekki
+    rag.10.5.13: {lemma: "láta", morph: "VERB|VerbForm=Inf", gloss: "let"}   # láta
+    rag.10.5.14: {lemma: "standa", morph: "VERB|VerbForm=Inf", gloss: "stand"}   # standa
+    rag.10.5.15: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.5.16: {lemma: "fyrir", morph: "ADP", gloss: "before"}   # fyrir
+    rag.10.5.17: {lemma: "ferð", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "journey"}   # ferð
+    rag.10.5.18: {lemma: "sinn", morph: "DET|Case=Dat|Gender=Fem|Number=Sing|Poss=Yes", gloss: "their-own"}   # sinni
+    rag.10.6.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.6.2: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rag.10.6.3: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rag.10.6.4: {lemma: "lið", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "host"}   # lið
+    rag.10.6.5: {lemma: "sá", morph: "PRON|Case=Gen|Gender=Masc|Number=Plur|PronType=Dem", gloss: "their"}   # þeira
+    rag.10.6.6: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rag.10.6.7: {lemma: "búa", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "prepared"}   # búit
+    rag.10.6.8: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "go"}   # fara
+    rag.10.6.9: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.6.10: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    rag.10.6.11: {lemma: "lið", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "host"}   # lið
+    rag.10.6.12: {lemma: "sinn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing|Poss=Yes", gloss: "their-own"}   # sitt
+    rag.10.6.13: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rag.10.6.14: {lemma: "Svíþjóð", morph: "PROPN|Case=Gen|Gender=Fem|Number=Sing", gloss: "Sweden"}   # Svíþjóðar
+    rag.10.6.15: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.6.16: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rag.10.6.17: {lemma: "er", morph: "SCONJ", gloss: "where"}   # er
+    rag.10.6.18: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.6.19: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "come"}   # koma
+    rag.10.6.20: {lemma: "fyrst", morph: "ADV|Degree=Sup", gloss: "first"}   # fyrst
+    rag.10.6.21: {lemma: "í", morph: "ADP", gloss: "into"}   # í
+    rag.10.6.22: {lemma: "ríki", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "realm"}   # ríki
+    rag.10.6.23: {lemma: "Eysteinn", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Eystein's"}   # Eysteins
+    rag.10.6.24: {lemma: "konungr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "king's"}   # konungs
+    rag.10.6.25: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "went"}   # fóru
+    rag.10.6.26: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.6.27: {lemma: "herskjöldr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "with-war-shield"}   # herskildi
+    rag.10.6.28: {lemma: "yfir", morph: "ADV", gloss: "over"}   # yfir
+    rag.10.7.1: {lemma: "en", morph: "CCONJ", gloss: "but"}   # En
+    rag.10.7.2: {lemma: "landsmaðr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "landsmen"}   # landsmenn
+    rag.10.7.3: {lemma: "verða", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "became"}   # urðu
+    rag.10.7.4: {lemma: "varr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "aware"}   # varir
+    rag.10.7.5: {lemma: "við", morph: "ADV", gloss: "of-it"}   # við
+    rag.10.7.6: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.7.7: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "went"}   # fóru
+    rag.10.7.8: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rag.10.7.9: {lemma: "Uppsalir", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "Uppsala"}   # Uppsala
+    rag.10.7.10: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.7.11: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "tell"}   # segja
+    rag.10.7.12: {lemma: "Eysteinn", morph: "PROPN|Case=Dat|Gender=Masc|Number=Sing", gloss: "Eystein"}   # Eysteini
+    rag.10.7.13: {lemma: "konungr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "king"}   # konungi
+    rag.10.7.14: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.7.15: {lemma: "herr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "a-host"}   # herr
+    rag.10.7.16: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rag.10.7.17: {lemma: "koma", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "come"}   # kominn
+    rag.10.7.18: {lemma: "í", morph: "ADP", gloss: "into"}   # í
+    rag.10.7.19: {lemma: "land", morph: "NOUN|Case=Acc|Definite=Def|Gender=Neut|Number=Sing", gloss: "the-land"}   # landit
+    rag.10.8.1: {lemma: "en", morph: "CCONJ", gloss: "and"}   # En
+    rag.10.8.2: {lemma: "konungr", morph: "NOUN|Case=Nom|Definite=Def|Gender=Masc|Number=Sing", gloss: "the-king"}   # konungrinn
+    rag.10.8.3: {lemma: "láta", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "lets"}   # lætr
+    rag.10.8.4: {lemma: "fara", morph: "VERB|VerbForm=Inf", gloss: "go"}   # fara
+    rag.10.8.5: {lemma: "örvarboð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "arrow-summons"}   # örvarboð
+    rag.10.8.6: {lemma: "um", morph: "ADP", gloss: "throughout"}   # um
+    rag.10.8.7: {lemma: "ríki", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "realm"}   # ríki
+    rag.10.8.8: {lemma: "sinn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing|Poss=Yes", gloss: "his-own"}   # sitt
+    rag.10.8.9: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.8.10: {lemma: "draga", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "draws"}   # dregr
+    rag.10.8.11: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    rag.10.8.12: {lemma: "mikill", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "great"}   # mikinn
+    rag.10.8.13: {lemma: "herr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "host"}   # her
+    rag.10.8.14: {lemma: "saman", morph: "ADV", gloss: "together"}   # saman
+    rag.10.8.15: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.8.16: {lemma: "furða", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "wonder"}   # furða
+    rag.10.8.17: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rag.10.8.18: {lemma: "at", morph: "ADV", gloss: "at-it"}   # at
+    rag.10.9.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.9.2: {lemma: "sá", morph: "DET|Case=Acc|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # þann
+    rag.10.9.3: {lemma: "herr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "host"}   # her
+    rag.10.9.4: {lemma: "flytja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "leads"}   # flytr
+    rag.10.9.5: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.9.6: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rag.10.9.7: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rag.10.9.8: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rag.10.9.9: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.9.10: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "comes"}   # kemr
+    rag.10.9.11: {lemma: "í", morph: "ADP", gloss: "into"}   # í
+    rag.10.9.12: {lemma: "skógr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "wood"}   # skóg
+    rag.10.9.13: {lemma: "einn", morph: "NUM|Case=Acc|Gender=Masc|Number=Sing", gloss: "a"}   # einn
+    rag.10.9.14: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.9.15: {lemma: "setja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "sets"}   # setr
+    rag.10.9.16: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rag.10.9.17: {lemma: "sinn", morph: "DET|Case=Acc|Gender=Fem|Number=Plur|Poss=Yes", gloss: "his-own"}   # sínar
+    rag.10.9.18: {lemma: "herbúð", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "war-booths"}   # herbúðir
+    rag.10.9.19: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.9.20: {lemma: "hafa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "has"}   # hefir
+    rag.10.9.21: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.9.22: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.9.23: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    rag.10.9.24: {lemma: "sik", morph: "PRON|Case=Dat|Person=3|Reflex=Yes", gloss: "himself"}   # sér
+    rag.10.9.25: {lemma: "kýr", morph: "NOUN|Case=Acc|Definite=Def|Gender=Fem|Number=Sing", gloss: "the-cow"}   # kúna
+    rag.10.9.26: {lemma: "Síbilja", morph: "PROPN|Case=Acc|Gender=Fem|Number=Sing", gloss: "Sibilja"}   # Síbilju
+    rag.10.9.27: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.9.28: {lemma: "mjök", morph: "ADV", gloss: "much"}   # mjök
+    rag.10.9.29: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.9.30: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "it"}   # hún
+    rag.10.9.31: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.9.32: {lemma: "blóta", morph: "VERB|Case=Nom|Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part", gloss: "sacrificed-to"}   # blótin
+    rag.10.9.33: {lemma: "áðr", morph: "ADV", gloss: "before"}   # áðr
+    rag.10.9.34: {lemma: "en", morph: "SCONJ", gloss: "than"}   # en
+    rag.10.9.35: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "it"}   # hún
+    rag.10.9.36: {lemma: "vilja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "would"}   # vildi
+    rag.10.9.37: {lemma: "fara", morph: "VERB|VerbForm=Inf", gloss: "go"}   # fara
+    rag.10.10.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.10.2: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rag.10.10.3: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.10.4: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "are"}   # eru
+    rag.10.10.5: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rag.10.10.6: {lemma: "skógr", morph: "NOUN|Case=Dat|Definite=Def|Gender=Masc|Number=Sing", gloss: "the-wood"}   # skóginum
+    rag.10.10.7: {lemma: "mæla", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # mælti
+    rag.10.10.8: {lemma: "Eysteinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eystein"}   # Eysteinn
+    rag.10.10.9: {lemma: "konungr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "king"}   # konungr
+    rag.10.10.10: {lemma: "frétta", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "learned"}   # Frétt
+    rag.10.10.11: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "have"}   # hefi
+    rag.10.10.12: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    rag.10.10.13: {lemma: "til", morph: "ADV", gloss: "of-it"}   # til
+    rag.10.10.14: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rag.10.10.15: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.10.16: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.10.17: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons"}   # synir
+    rag.10.10.18: {lemma: "Ragnarr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Ragnar's"}   # Ragnars
+    rag.10.10.19: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "are"}   # eru
+    rag.10.10.20: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    rag.10.10.21: {lemma: "völlr", morph: "NOUN|Case=Dat|Definite=Def|Gender=Masc|Number=Plur", gloss: "the-plains"}   # völlunum
+    rag.10.10.22: {lemma: "fyrir", morph: "ADP", gloss: "before"}   # fyrir
+    rag.10.10.23: {lemma: "framan", morph: "ADV", gloss: "in-front"}   # framan
+    rag.10.10.24: {lemma: "skógr", morph: "NOUN|Case=Acc|Definite=Def|Gender=Masc|Number=Sing", gloss: "the-wood"}   # skóginn
+    rag.10.10.25: {lemma: "en", morph: "CCONJ", gloss: "and"}   # en
+    rag.10.10.26: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.10.27: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.10.28: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "to-me"}   # mér
+    rag.10.10.29: {lemma: "sannliga", morph: "ADV", gloss: "truly"}   # sannliga
+    rag.10.10.30: {lemma: "segja", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "said"}   # sagt
+    rag.10.10.31: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.10.32: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.10.33: {lemma: "hafa", morph: "VERB|Mood=Sub|Number=Plur|Person=3|Tense=Pres", gloss: "have"}   # hafi
+    rag.10.10.34: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.10.35: {lemma: "einn", morph: "NUM|Case=Acc|Gender=Masc|Number=Sing", gloss: "one"}   # einn
+    rag.10.10.36: {lemma: "þriðjungr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "third"}   # þriðjung
+    rag.10.10.37: {lemma: "lið", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "of-host"}   # liðs
+    rag.10.10.38: {lemma: "við", morph: "ADP", gloss: "against"}   # við
+    rag.10.10.39: {lemma: "vér", morph: "PRON|Case=Acc|Number=Plur|Person=1", gloss: "us"}   # oss
+    rag.10.11.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.11.2: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "shall"}   # skulu
+    rag.10.11.3: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    rag.10.11.4: {lemma: "skipa", morph: "VERB|VerbForm=Inf", gloss: "array"}   # skipa
+    rag.10.11.5: {lemma: "várr", morph: "DET|Case=Acc|Gender=Fem|Number=Plur|Poss=Yes", gloss: "our"}   # várar
+    rag.10.11.6: {lemma: "fylking", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "ranks"}   # fylkingar
+    rag.10.11.7: {lemma: "til", morph: "ADV", gloss: "for-it"}   # til
+    rag.10.11.8: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    rag.10.11.9: {lemma: "berja", morph: "VERB|VerbForm=Inf|Voice=Mid", gloss: "fight"}   # berjast
+    rag.10.11.10: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.11.11: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    rag.10.11.12: {lemma: "þriðjungr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "a-third"}   # þriðjungr
+    rag.10.11.13: {lemma: "lið", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "of-the-host"}   # liðs
+    rag.10.11.14: {lemma: "várr", morph: "DET|Case=Gen|Gender=Neut|Number=Sing|Poss=Yes", gloss: "our"}   # várs
+    rag.10.11.15: {lemma: "fara", morph: "VERB|VerbForm=Inf", gloss: "go"}   # fara
+    rag.10.11.16: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rag.10.11.17: {lemma: "móti", morph: "ADP", gloss: "against"}   # mót
+    rag.10.11.18: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Masc|Number=Plur|PronType=Dem", gloss: "them"}   # þeim
+    rag.10.11.19: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.11.20: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "are"}   # eru
+    rag.10.11.21: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.11.22: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    rag.10.11.23: {lemma: "harðfengr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "hardy"}   # harðfengnir
+    rag.10.12.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.12.2: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.12.3: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "will"}   # munu
+    rag.10.12.4: {lemma: "þykkja", morph: "VERB|VerbForm=Inf|Voice=Mid", gloss: "think"}   # þykkjast
+    rag.10.12.5: {lemma: "hafa", morph: "VERB|VerbForm=Inf", gloss: "have"}   # hafa
+    rag.10.12.6: {lemma: "ráð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "fate"}   # ráð
+    rag.10.12.7: {lemma: "várr", morph: "DET|Case=Acc|Gender=Neut|Number=Sing|Poss=Yes", gloss: "our"}   # várt
+    rag.10.12.8: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rag.10.12.9: {lemma: "hönd", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "hand"}   # hendi
+    rag.10.12.10: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.12.11: {lemma: "þegar", morph: "ADV", gloss: "at-once"}   # þegar
+    rag.10.12.12: {lemma: "eptir", morph: "ADV", gloss: "after"}   # eptir
+    rag.10.12.13: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "shall"}   # skulum
+    rag.10.12.14: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    rag.10.12.15: {lemma: "allr", morph: "ADJ|Case=Dat|Gender=Neut|Number=Plur", gloss: "all"}   # öllum
+    rag.10.12.16: {lemma: "megin", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "sides"}   # megin
+    rag.10.12.17: {lemma: "koma", morph: "VERB|VerbForm=Inf", gloss: "come"}   # koma
+    rag.10.12.18: {lemma: "at", morph: "ADP", gloss: "at"}   # at
+    rag.10.12.19: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Masc|Number=Plur|PronType=Dem", gloss: "them"}   # þeim
+    rag.10.12.20: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.12.21: {lemma: "kýr", morph: "NOUN|Case=Nom|Definite=Def|Gender=Fem|Number=Sing", gloss: "the-cow"}   # kýrin
+    rag.10.12.22: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    rag.10.12.23: {lemma: "fara", morph: "VERB|VerbForm=Inf", gloss: "go"}   # fara
+    rag.10.12.24: {lemma: "fyrir", morph: "ADP", gloss: "before"}   # fyrir
+    rag.10.12.25: {lemma: "lið", morph: "NOUN|Case=Dat|Definite=Def|Gender=Neut|Number=Sing", gloss: "the-host"}   # liðinu
+    rag.10.13.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.13.2: {lemma: "vænta", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "expects"}   # væntir
+    rag.10.13.3: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # mik
+    rag.10.13.4: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.13.5: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.13.6: {lemma: "skulu", morph: "AUX|Mood=Sub|Number=Plur|Person=3|Tense=Pres", gloss: "shall"}   # skuli
+    rag.10.13.7: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.13.8: {lemma: "halda", morph: "VERB|VerbForm=Inf|Voice=Mid", gloss: "hold-out"}   # haldast
+    rag.10.13.9: {lemma: "við", morph: "ADV", gloss: "against-it"}   # við
+    rag.10.13.10: {lemma: "fyrir", morph: "ADP", gloss: "before"}   # fyrir
+    rag.10.13.11: {lemma: "lát", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "cries"}   # lát
+    rag.10.13.12: {lemma: "hon", morph: "PRON|Case=Gen|Gender=Fem|Number=Sing|Person=3", gloss: "its"}   # hennar
+    rag.10.14.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.14.2: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.14.3: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.14.4: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    rag.10.14.5: {lemma: "gera", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "done"}   # gert
+    rag.10.15.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.15.2: {lemma: "þegar", morph: "ADV", gloss: "as-soon"}   # þegar
+    rag.10.15.3: {lemma: "er", morph: "SCONJ", gloss: "as"}   # er
+    rag.10.15.4: {lemma: "sá", morph: "DET|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "those"}   # þeir
+    rag.10.15.5: {lemma: "bróðir", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "brothers"}   # bræðr
+    rag.10.15.6: {lemma: "sjá", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "see"}   # sjá
+    rag.10.15.7: {lemma: "lið", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "host"}   # lið
+    rag.10.15.8: {lemma: "Eysteinn", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Eystein's"}   # Eysteins
+    rag.10.15.9: {lemma: "konungr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "king's"}   # konungs
+    rag.10.15.10: {lemma: "þykkja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "seemed"}   # þótti
+    rag.10.15.11: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Masc|Number=Plur|PronType=Dem", gloss: "to-them"}   # þeim
+    rag.10.15.12: {lemma: "sik", morph: "PRON|Case=Dat|Person=3|Reflex=Yes", gloss: "for-themselves"}   # sér
+    rag.10.15.13: {lemma: "engi", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Neg", gloss: "no"}   # ekki
+    rag.10.15.14: {lemma: "ofrefli", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "overwhelming-force"}   # ofrefli
+    rag.10.15.15: {lemma: "við", morph: "ADV", gloss: "with"}   # við
+    rag.10.15.16: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    rag.10.15.17: {lemma: "eiga", morph: "VERB|VerbForm=Inf", gloss: "deal"}   # eiga
+    rag.10.15.18: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.15.19: {lemma: "ætla", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "expect"}   # ætla
+    rag.10.15.20: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.15.21: {lemma: "mikill", morph: "ADJ|Case=Acc|Degree=Cmp|Gender=Neut|Number=Sing", gloss: "greater"}   # meira
+    rag.10.15.22: {lemma: "lið", morph: "NOUN|Case=Acc|Definite=Def|Gender=Neut|Number=Sing", gloss: "the-host"}   # liðit
+    rag.10.15.23: {lemma: "vera", morph: "AUX|VerbForm=Inf", gloss: "be"}   # vera
+    rag.10.15.24: {lemma: "munu", morph: "AUX|VerbForm=Inf", gloss: "would"}   # munu
+    rag.10.16.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.16.2: {lemma: "þegar", morph: "ADV", gloss: "at-once"}   # þegar
+    rag.10.16.3: {lemma: "hér", morph: "ADV", gloss: "here"}   # hér
+    rag.10.16.4: {lemma: "eptir", morph: "ADV", gloss: "after"}   # eptir
+    rag.10.16.5: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "comes"}   # kemr
+    rag.10.16.6: {lemma: "allr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "all"}   # allt
+    rag.10.16.7: {lemma: "lið", morph: "NOUN|Case=Nom|Definite=Def|Gender=Neut|Number=Sing", gloss: "the-host"}   # liðit
+    rag.10.16.8: {lemma: "ór", morph: "ADP", gloss: "out-of"}   # ór
+    rag.10.16.9: {lemma: "skógr", morph: "NOUN|Case=Dat|Definite=Def|Gender=Masc|Number=Sing", gloss: "the-wood"}   # skóginum
+    rag.10.16.10: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.16.11: {lemma: "kýr", morph: "NOUN|Case=Nom|Definite=Def|Gender=Fem|Number=Sing", gloss: "the-cow"}   # kýrin
+    rag.10.16.12: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.16.13: {lemma: "lauss", morph: "ADJ|Case=Nom|Gender=Fem|Number=Sing", gloss: "loose"}   # laus
+    rag.10.16.14: {lemma: "láta", morph: "VERB|Case=Nom|Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part", gloss: "let"}   # látin
+    rag.10.16.15: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.16.16: {lemma: "hlaupa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "runs"}   # hleypr
+    rag.10.16.17: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "it"}   # hún
+    rag.10.16.18: {lemma: "fyrir", morph: "ADP", gloss: "before"}   # fyrir
+    rag.10.16.19: {lemma: "lið", morph: "NOUN|Case=Dat|Definite=Def|Gender=Neut|Number=Sing", gloss: "the-host"}   # liðinu
+    rag.10.16.20: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.16.21: {lemma: "láta", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "bellows"}   # lætr
+    rag.10.16.22: {lemma: "grimmliga", morph: "ADV", gloss: "fiercely"}   # grimmliga
+    rag.10.16.23: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.16.24: {lemma: "verða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "became"}   # varð
+    rag.10.16.25: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    rag.10.16.26: {lemma: "mikill", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "great"}   # mikill
+    rag.10.16.27: {lemma: "gnýr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "din"}   # gnýr
+    rag.10.16.28: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.16.29: {lemma: "sá", morph: "DET|Case=Dat|Gender=Masc|Number=Plur|PronType=Dem", gloss: "those"}   # þeim
+    rag.10.16.30: {lemma: "hermaðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "warriors"}   # hermönnum
+    rag.10.16.31: {lemma: "er", morph: "PRON|PronType=Rel", gloss: "who"}   # er
+    rag.10.16.32: {lemma: "heyra", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "heard"}   # heyrðu
+    rag.10.16.33: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.16.34: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.16.35: {lemma: "berja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past|Voice=Mid", gloss: "fought"}   # börðust
+    rag.10.16.36: {lemma: "sjálfr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "themselves"}   # sjálfir
+    rag.10.16.37: {lemma: "nema", morph: "SCONJ", gloss: "except"}   # nema
+    rag.10.16.38: {lemma: "sá", morph: "DET|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "those"}   # þeir
+    rag.10.16.39: {lemma: "bróðir", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "brothers"}   # bræðr
+    rag.10.16.40: {lemma: "tveir", morph: "NUM|Case=Nom|Gender=Masc|Number=Plur", gloss: "two"}   # tveir
+    rag.10.16.41: {lemma: "fá", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "could"}   # fengu
+    rag.10.16.42: {lemma: "standa", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Mid", gloss: "withstand"}   # staðizt
+    rag.10.17.1: {lemma: "en", morph: "CCONJ", gloss: "and"}   # En
+    rag.10.17.2: {lemma: "sá", morph: "DET|Case=Nom|Gender=Fem|Number=Sing|PronType=Dem", gloss: "that"}   # sú
+    rag.10.17.3: {lemma: "inn", morph: "DET|Case=Nom|Definite=Def|Gender=Fem|Number=Sing|PronType=Art", gloss: "the"}   # in
+    rag.10.17.4: {lemma: "illr", morph: "ADJ|Case=Nom|Gender=Fem|Number=Sing", gloss: "evil"}   # illa
+    rag.10.17.5: {lemma: "vættr", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "creature"}   # vættr
+    rag.10.17.6: {lemma: "vega", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "gored"}   # vá
+    rag.10.17.7: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    rag.10.17.8: {lemma: "horn", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "horns"}   # hornum
+    rag.10.17.9: {lemma: "sinn", morph: "DET|Case=Dat|Gender=Neut|Number=Plur|Poss=Yes", gloss: "its-own"}   # sínum
+    rag.10.17.10: {lemma: "margr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "many-a"}   # margan
+    rag.10.17.11: {lemma: "maðr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "man"}   # mann
+    rag.10.17.12: {lemma: "sá", morph: "DET|Case=Acc|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # þann
+    rag.10.17.13: {lemma: "dagr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "day"}   # dag
+    rag.10.18.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.18.2: {lemma: "þótt", morph: "SCONJ", gloss: "though"}   # þótt
+    rag.10.18.3: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons"}   # synir
+    rag.10.18.4: {lemma: "Ragnarr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Ragnar's"}   # Ragnars
+    rag.10.18.5: {lemma: "vera", morph: "AUX|Mood=Sub|Number=Plur|Person=3|Tense=Past", gloss: "were"}   # væri
+    rag.10.18.6: {lemma: "mikill", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "great"}   # miklir
+    rag.10.18.7: {lemma: "fyrir", morph: "ADP", gloss: "in"}   # fyrir
+    rag.10.18.8: {lemma: "sik", morph: "PRON|Case=Dat|Person=3|Reflex=Yes", gloss: "themselves"}   # sér
+    rag.10.18.9: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rag.10.18.10: {lemma: "mega", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "could"}   # máttu
+    rag.10.18.11: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.18.12: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.18.13: {lemma: "bæði", morph: "CCONJ", gloss: "both"}   # bæði
+    rag.10.18.14: {lemma: "standa", morph: "VERB|VerbForm=Inf|Voice=Mid", gloss: "withstand"}   # standast
+    rag.10.18.15: {lemma: "ofrefli", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "overwhelming-force"}   # ofrefli
+    rag.10.18.16: {lemma: "fjölmenni", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "of-the-multitude"}   # fjölmennis
+    rag.10.18.17: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.18.18: {lemma: "blótskapr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "sorcery"}   # blótskap
+    rag.10.18.19: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.18.20: {lemma: "þó", morph: "ADV", gloss: "yet"}   # þó
+    rag.10.18.21: {lemma: "veita", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "gave"}   # veittu
+    rag.10.18.22: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.18.23: {lemma: "harðr", morph: "ADJ|Case=Acc|Gender=Fem|Number=Sing", gloss: "hard"}   # harða
+    rag.10.18.24: {lemma: "viðtaka", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "resistance"}   # viðtöku
+    rag.10.18.25: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.18.26: {lemma: "verja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past|Voice=Mid", gloss: "defended-themselves"}   # vörðust
+    rag.10.18.27: {lemma: "vel", morph: "ADV", gloss: "well"}   # vel
+    rag.10.18.28: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.18.29: {lemma: "drengiliga", morph: "ADV", gloss: "bravely"}   # drengiliga
+    rag.10.18.30: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.18.31: {lemma: "af", morph: "ADP", gloss: "with"}   # af
+    rag.10.18.32: {lemma: "mikill", morph: "ADJ|Case=Dat|Gender=Fem|Number=Sing", gloss: "great"}   # mikilli
+    rag.10.18.33: {lemma: "frægð", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "renown"}   # frægð
+    rag.10.19.1: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # Þeir
+    rag.10.19.2: {lemma: "Eiríkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eirekr
+    rag.10.19.3: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.19.4: {lemma: "Agnarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Agnar"}   # Agnarr
+    rag.10.19.5: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "were"}   # váru
+    rag.10.19.6: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rag.10.19.7: {lemma: "öndverðr", morph: "ADJ|Case=Dat|Gender=Fem|Number=Sing", gloss: "the-front"}   # öndverðri
+    rag.10.19.8: {lemma: "fylking", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "battle-line"}   # fylkingu
+    rag.10.19.9: {lemma: "sá", morph: "DET|Case=Acc|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # þann
+    rag.10.19.10: {lemma: "dagr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "day"}   # dag
+    rag.10.19.11: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.19.12: {lemma: "opt", morph: "ADV", gloss: "often"}   # opt
+    rag.10.19.13: {lemma: "ganga", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "went"}   # gengu
+    rag.10.19.14: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.19.15: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rag.10.19.16: {lemma: "gegnum", morph: "ADP", gloss: "through"}   # gegnum
+    rag.10.19.17: {lemma: "fylking", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "ranks"}   # fylkingar
+    rag.10.19.18: {lemma: "Eysteinn", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Eystein's"}   # Eysteins
+    rag.10.19.19: {lemma: "konungr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "king's"}   # konungs
+    rag.10.20.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.20.2: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.20.3: {lemma: "falla", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "fell"}   # fell
+    rag.10.20.4: {lemma: "Agnarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Agnar"}   # Agnarr
+    rag.10.21.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.21.2: {lemma: "sjá", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "sees"}   # sér
+    rag.10.21.3: {lemma: "Eiríkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eirekr
+    rag.10.21.4: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.21.5: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.21.6: {lemma: "berja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Mid", gloss: "fights"}   # berst
+    rag.10.21.7: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.21.8: {lemma: "allr", morph: "ADJ|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-all"}   # allra
+    rag.10.21.9: {lemma: "fræknliga", morph: "ADV|Degree=Sup", gloss: "most-valiantly"}   # fræknligast
+    rag.10.21.10: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.21.11: {lemma: "hirða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "cares"}   # hirðir
+    rag.10.21.12: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.21.13: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.21.14: {lemma: "hvárt", morph: "SCONJ", gloss: "whether"}   # hvárt
+    rag.10.21.15: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.21.16: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Mid", gloss: "gets"}   # kemst
+    rag.10.21.17: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rag.10.21.18: {lemma: "brott", morph: "ADV", gloss: "away"}   # brott
+    rag.10.21.19: {lemma: "eða", morph: "CCONJ", gloss: "or"}   # eða
+    rag.10.21.20: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.22.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.22.2: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.22.3: {lemma: "verða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # verðr
+    rag.10.22.4: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.22.5: {lemma: "ofrliði", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "by-overwhelming-force"}   # ofrliði
+    rag.10.22.6: {lemma: "bera", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "borne-down"}   # borinn
+    rag.10.22.7: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.22.8: {lemma: "handtaka", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "captured"}   # handtekinn
+    rag.10.23.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.23.2: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.23.3: {lemma: "mæla", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "said"}   # mælti
+    rag.10.23.4: {lemma: "Eysteinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eystein"}   # Eysteinn
+    rag.10.23.5: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.23.6: {lemma: "stöðva", morph: "VERB|VerbForm=Inf", gloss: "stop"}   # stöðva
+    rag.10.23.7: {lemma: "skulu", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "should"}   # skyldi
+    rag.10.23.8: {lemma: "bardagi", morph: "NOUN|Case=Acc|Definite=Def|Gender=Masc|Number=Sing", gloss: "the-battle"}   # bardagann
+    rag.10.23.9: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.23.10: {lemma: "bjóða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "offered"}   # bauð
+    rag.10.23.11: {lemma: "Eiríkr", morph: "PROPN|Case=Dat|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eireki
+    rag.10.23.12: {lemma: "grið", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "quarter"}   # grið
+    rag.10.24.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.24.2: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.24.3: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "will"}   # mun
+    rag.10.24.4: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    rag.10.24.5: {lemma: "til", morph: "ADV", gloss: "to-it"}   # til
+    rag.10.24.6: {lemma: "leggja", morph: "VERB|VerbForm=Inf", gloss: "add"}   # leggja
+    rag.10.24.7: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rag.10.24.8: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.24.9: {lemma: "við", morph: "ADP", gloss: "with"}   # við
+    rag.10.24.10: {lemma: "þú", morph: "PRON|Case=Acc|Number=Sing|Person=2", gloss: "thee"}   # þik
+    rag.10.24.11: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.24.12: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    rag.10.24.13: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "will"}   # mun
+    rag.10.24.14: {lemma: "gifta", morph: "VERB|VerbForm=Inf", gloss: "give-in-marriage"}   # gifta
+    rag.10.24.15: {lemma: "þú", morph: "PRON|Case=Dat|Number=Sing|Person=2", gloss: "to-thee"}   # þér
+    rag.10.24.16: {lemma: "dóttir", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "daughter"}   # dóttur
+    rag.10.24.17: {lemma: "minn", morph: "DET|Case=Acc|Gender=Fem|Number=Sing|Poss=Yes", gloss: "my"}   # mína
+    rag.10.25.1: {lemma: "Eiríkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eirekr
+    rag.10.25.2: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rag.10.25.3: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.25.4: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    rag.10.25.5: {lemma: "vísa", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "a-verse"}   # vísu
+    rag.10.26: {metre: "odd line · staves b · first verse of Eirik, skaldic measure, six-syllable lines; the same stanza as rsons.2.20-27, annotated alike"}
+    rag.10.26.1: {lemma: "vilja", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres", gloss: "will-I-not"}   # Vilkat
+    rag.10.26.2: {lemma: "boð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "offer", stave: true}   # boð
+    rag.10.26.3: {lemma: "fyrir", morph: "ADP", gloss: "for"}   # fyr
+    rag.10.26.4: {lemma: "bróðir", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "brother", stave: true}   # bróður
+    rag.10.27: {metre: "even line · head-stave b"}
+    rag.10.27.1: {lemma: "né", morph: "CCONJ", gloss: "nor"}   # né
+    rag.10.27.2: {lemma: "baugr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "with-rings", stave: true}   # baugum
+    rag.10.27.3: {lemma: "mær", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "maid"}   # mey
+    rag.10.27.4: {lemma: "kaupa", morph: "VERB|VerbForm=Inf", gloss: "buy"}   # kaupa
+    rag.10.28: {metre: "odd line · staves vowel"}
+    rag.10.28.1: {lemma: "Eysteinn", morph: "PROPN|Case=Acc|Gender=Masc|Number=Sing", gloss: "Eystein", stave: true}   # Eystein
+    rag.10.28.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "they-say"}   # kveða
+    rag.10.28.3: {lemma: "verða", morph: "VERB|Case=Acc|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "become", stave: true}   # orðinn
+    rag.10.29: {metre: "even line · head-stave vowel · heyra read as an infinitive dependent on kveða (men say they hear Eystein has become Agnar's bane); uncertain"}
+    rag.10.29.1: {lemma: "Agnarr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Agnar's", stave: true}   # Agnars
+    rag.10.29.2: {lemma: "bani", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "bane"}   # bana
+    rag.10.29.3: {lemma: "heyra", morph: "VERB|VerbForm=Inf", gloss: "hear"}   # heyra
+    rag.10.30: {metre: "odd line · staves m · staves on mik and móðir (pronoun carrying a stave)"}
+    rag.10.30.1: {lemma: "gráta", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "weeps"}   # grætr
+    rag.10.30.2: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.30.3: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me", stave: true}   # mik
+    rag.10.30.4: {lemma: "móðir", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "mother", stave: true}   # móðir
+    rag.10.31: {metre: "even line · head-stave m"}
+    rag.10.31.1: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "shall-I", stave: true}   # munk
+    rag.10.31.2: {lemma: "efstr", morph: "ADJ|Case=Nom|Degree=Sup|Gender=Masc|Number=Sing", gloss: "uppermost"}   # efstr
+    rag.10.31.3: {lemma: "of", morph: "ADP", gloss: "over"}   # of
+    rag.10.31.4: {lemma: "valr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "the-slain"}   # val
+    rag.10.31.5: {lemma: "deyja", morph: "VERB|VerbForm=Inf", gloss: "die"}   # deyja
+    rag.10.32: {metre: "odd line · staves g · í gögnum = through (Zoëga gegnum, gögnum); geirtré 'spear-trees' = spear-shafts"}
+    rag.10.32.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.32.2: {lemma: "geirtré", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "spear-trees", stave: true}   # geirtré
+    rag.10.32.3: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rag.10.32.4: {lemma: "gegnum", morph: "ADP", gloss: "through", stave: true}   # gögnum
+    rag.10.33: {metre: "even line · head-stave g · gerr read as the adverb 'fully, right' (Zoëga görr, gerr); uncertain"}
+    rag.10.33.1: {lemma: "görr", morph: "ADV", gloss: "fully", stave: true}   # gerr
+    rag.10.33.2: {lemma: "láta", morph: "VERB|Mood=Imp|Number=Plur|Person=2|Tense=Pres", gloss: "let"}   # látið
+    rag.10.33.3: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # mik
+    rag.10.33.4: {lemma: "standa", morph: "VERB|VerbForm=Inf", gloss: "stand"}   # standa
+    rag.10.34.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.34.2: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rag.10.34.3: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.34.4: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.34.5: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.34.6: {lemma: "vilja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "wants"}   # vill
+    rag.10.34.7: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.34.8: {lemma: "sá", morph: "DET|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "those"}   # þeir
+    rag.10.34.9: {lemma: "maðr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "men"}   # menn
+    rag.10.34.10: {lemma: "hafa", morph: "VERB|Mood=Sub|Number=Plur|Person=3|Tense=Pres", gloss: "have"}   # hafi
+    rag.10.34.11: {lemma: "grið", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "quarter"}   # grið
+    rag.10.34.12: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.34.13: {lemma: "fara", morph: "VERB|Mood=Sub|Number=Plur|Person=3|Tense=Pres", gloss: "go"}   # fari
+    rag.10.34.14: {lemma: "hvert", morph: "ADV", gloss: "whither"}   # hvert
+    rag.10.34.15: {lemma: "er", morph: "SCONJ", gloss: "that"}   # er
+    rag.10.34.16: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.34.17: {lemma: "vilja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "wish"}   # vilja
+    rag.10.34.18: {lemma: "er", morph: "PRON|PronType=Rel", gloss: "who"}   # er
+    rag.10.34.19: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Masc|Number=Plur|PronType=Dem", gloss: "them"}   # þeim
+    rag.10.34.20: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "have"}   # hafa
+    rag.10.34.21: {lemma: "fylgja", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "followed"}   # fylgt
+    rag.10.35.1: {lemma: "en", morph: "CCONJ", gloss: "but"}   # En
+    rag.10.35.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    rag.10.35.3: {lemma: "vilja", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "will"}   # vil
+    rag.10.35.4: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.35.5: {lemma: "spjót", morph: "NOUN|Case=Nom|Gender=Neut|Number=Plur", gloss: "spears"}   # spjót
+    rag.10.35.6: {lemma: "vera", morph: "AUX|Mood=Sub|Number=Plur|Person=3|Tense=Pres", gloss: "be"}   # sé
+    rag.10.35.7: {lemma: "taka", morph: "VERB|Case=Nom|Gender=Neut|Number=Plur|Tense=Past|VerbForm=Part", gloss: "taken"}   # tekin
+    rag.10.35.8: {lemma: "sem", morph: "SCONJ", gloss: "as"}   # sem
+    rag.10.35.9: {lemma: "flestr", morph: "ADJ|Case=Nom|Degree=Sup|Gender=Neut|Number=Plur", gloss: "most"}   # flest
+    rag.10.35.10: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.35.11: {lemma: "vera", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "be"}   # sé
+    rag.10.35.12: {lemma: "stinga", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "thrust"}   # stungit
+    rag.10.35.13: {lemma: "spjót", morph: "NOUN|Case=Dat|Definite=Def|Gender=Neut|Number=Plur", gloss: "the-spears"}   # spjótunum
+    rag.10.35.14: {lemma: "í", morph: "ADP", gloss: "into"}   # í
+    rag.10.35.15: {lemma: "völlr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "field"}   # völl
+    rag.10.35.16: {lemma: "niðr", morph: "ADV", gloss: "down"}   # niðr
+    rag.10.35.17: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.35.18: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rag.10.35.19: {lemma: "vilja", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "will"}   # vil
+    rag.10.35.20: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    rag.10.35.21: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # mik
+    rag.10.35.22: {lemma: "láta", morph: "VERB|VerbForm=Inf", gloss: "let"}   # láta
+    rag.10.35.23: {lemma: "hefja", morph: "VERB|VerbForm=Inf", gloss: "raise"}   # hefja
+    rag.10.35.24: {lemma: "á", morph: "ADV", gloss: "on"}   # á
+    rag.10.35.25: {lemma: "upp", morph: "ADV", gloss: "up"}   # upp
+    rag.10.35.26: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.35.27: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rag.10.35.28: {lemma: "vilja", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "will"}   # vil
+    rag.10.35.29: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    rag.10.35.30: {lemma: "láta", morph: "VERB|VerbForm=Inf", gloss: "lose"}   # láta
+    rag.10.35.31: {lemma: "líf", morph: "NOUN|Case=Acc|Definite=Def|Gender=Neut|Number=Sing", gloss: "the-life"}   # lífit
+    rag.10.36.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.36.2: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rag.10.36.3: {lemma: "Eysteinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eystein"}   # Eysteinn
+    rag.10.36.4: {lemma: "konungr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "king"}   # konungr
+    rag.10.36.5: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.36.6: {lemma: "eptir", morph: "ADP", gloss: "after"}   # eptir
+    rag.10.36.7: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # því
+    rag.10.36.8: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    rag.10.36.9: {lemma: "gera", morph: "VERB|VerbForm=Inf", gloss: "do"}   # gera
+    rag.10.36.10: {lemma: "sem", morph: "SCONJ", gloss: "as"}   # sem
+    rag.10.36.11: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.36.12: {lemma: "beiða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "asks"}   # beiðir
+    rag.10.36.13: {lemma: "þótt", morph: "SCONJ", gloss: "though"}   # þótt
+    rag.10.36.14: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.36.15: {lemma: "kjósa", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "choose"}   # kjósi
+    rag.10.36.16: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.36.17: {lemma: "er", morph: "PRON|PronType=Rel", gloss: "which"}   # er
+    rag.10.36.18: {lemma: "illa", morph: "ADV|Degree=Cmp", gloss: "worse"}   # verr
+    rag.10.36.19: {lemma: "gegna", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "serves"}   # gegnir
+    rag.10.36.20: {lemma: "hvárrtveggi", morph: "PRON|Case=Dat|Gender=Masc|Number=Plur|PronType=Ind", gloss: "both"}   # hvárumtveggjum
+    rag.10.37.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.37.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "are"}   # eru
+    rag.10.37.3: {lemma: "spjót", morph: "NOUN|Case=Nom|Definite=Def|Gender=Neut|Number=Plur", gloss: "the-spears"}   # spjótin
+    rag.10.37.4: {lemma: "niðr", morph: "ADV", gloss: "down"}   # niðr
+    rag.10.37.5: {lemma: "setja", morph: "VERB|Case=Nom|Gender=Neut|Number=Plur|Tense=Past|VerbForm=Part", gloss: "set"}   # sett
+    rag.10.37.6: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.37.7: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    rag.10.37.8: {lemma: "Eiríkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eirekr
+    rag.10.37.9: {lemma: "vísa", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "a-verse"}   # vísu
+    rag.10.38: {metre: "odd line · staves vowel · second verse of Eirik, skaldic measure; konungs efni 'the makings of a king', a prince"}
+    rag.10.38.1: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres", gloss: "will-not"}   # Munat
+    rag.10.38.2: {lemma: "einn", morph: "NUM|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-one", stave: true}   # eins
+    rag.10.38.3: {lemma: "konungr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "king's"}   # konungs
+    rag.10.38.4: {lemma: "efni", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "makings", stave: true}   # efni
+    rag.10.39: {metre: "even line · head-stave vowel · svát = svá at, one token; the head-stave can only fall on the pronoun ek; weak"}
+    rag.10.39.1: {lemma: "svá", morph: "ADV", gloss: "so-that"}   # svát
+    rag.10.39.2: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I", stave: true}   # ek
+    rag.10.39.3: {lemma: "vita", morph: "VERB|Mood=Sub|Number=Sing|Person=1|Tense=Pres", gloss: "know"}   # vita
+    rag.10.39.4: {lemma: "dæmi", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "instances"}   # dæmi
+    rag.10.40: {metre: "odd line · staves d"}
+    rag.10.40.1: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    rag.10.40.2: {lemma: "dýrr", morph: "ADJ|Case=Dat|Degree=Cmp|Gender=Masc|Number=Sing", gloss: "costlier", stave: true}   # dýrra
+    rag.10.40.3: {lemma: "beðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "bed"}   # beð
+    rag.10.40.4: {lemma: "deyja", morph: "VERB|VerbForm=Inf", gloss: "die", stave: true}   # deyja
+    rag.10.41: {metre: "even line · head-stave d"}
+    rag.10.41.1: {lemma: "til", morph: "ADP", gloss: "for"}   # til
+    rag.10.41.2: {lemma: "dögurðr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "morning-meal", stave: true}   # dögurðar
+    rag.10.41.3: {lemma: "hrafn", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "for-the-raven"}   # hrafni
+    rag.10.42: {metre: "odd line · staves b"}
+    rag.10.42.1: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "will"}   # mun
+    rag.10.42.2: {lemma: "blóð", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "in-blood", stave: true}   # blóði
+    rag.10.42.3: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rag.10.42.4: {lemma: "bráð", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "raw-flesh", stave: true}   # bráðir
+    rag.10.43: {metre: "even line · head-stave b"}
+    rag.10.43.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.43.2: {lemma: "brátt", morph: "ADV", gloss: "soon", stave: true}   # brátt
+    rag.10.43.3: {lemma: "yfir", morph: "ADV", gloss: "over"}   # yfir
+    rag.10.43.4: {lemma: "gjalla", morph: "VERB|VerbForm=Inf", gloss: "scream"}   # gjalla
+    rag.10.44: {metre: "odd line · staves b"}
+    rag.10.44.1: {lemma: "bróðir", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-brothers", stave: true}   # bræðra
+    rag.10.44.2: {lemma: "báðir", morph: "ADJ|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-both", stave: true}   # beggja
+    rag.10.44.3: {lemma: "slíta", morph: "VERB|VerbForm=Inf", gloss: "tear"}   # slíta
+    rag.10.45: {metre: "even line · head-stave b · blár 'the dark one', the raven, subject of mun ... slíta (singular, though the English layer has 'the dark ones'); the closing clause is uncertain"}
+    rag.10.45.1: {lemma: "blár", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "the-dark-one", stave: true}   # blár
+    rag.10.45.2: {lemma: "þótt", morph: "SCONJ", gloss: "though"}   # þótt
+    rag.10.45.3: {lemma: "illa", morph: "ADV", gloss: "ill"}   # illa
+    rag.10.45.4: {lemma: "launa", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "repay"}   # launi
+    rag.10.46.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.46.2: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.46.3: {lemma: "ganga", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "goes"}   # gengr
+    rag.10.46.4: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.46.5: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rag.10.46.6: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rag.10.46.7: {lemma: "er", morph: "SCONJ", gloss: "where"}   # er
+    rag.10.46.8: {lemma: "spjót", morph: "NOUN|Case=Nom|Definite=Def|Gender=Neut|Number=Plur", gloss: "the-spears"}   # spjótin
+    rag.10.46.9: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "are"}   # eru
+    rag.10.46.10: {lemma: "niðr", morph: "ADV", gloss: "down"}   # niðr
+    rag.10.46.11: {lemma: "setja", morph: "VERB|Case=Nom|Gender=Neut|Number=Plur|Tense=Past|VerbForm=Part", gloss: "set"}   # sett
+    rag.10.46.12: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.46.13: {lemma: "taka", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "takes"}   # tekr
+    rag.10.46.14: {lemma: "hringr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "ring"}   # hring
+    rag.10.46.15: {lemma: "af", morph: "ADP", gloss: "off"}   # af
+    rag.10.46.16: {lemma: "hönd", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "hand"}   # hendi
+    rag.10.46.17: {lemma: "sik", morph: "PRON|Case=Dat|Person=3|Reflex=Yes", gloss: "his"}   # sér
+    rag.10.46.18: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.46.19: {lemma: "kasta", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "throws"}   # kastar
+    rag.10.46.20: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rag.10.46.21: {lemma: "sá", morph: "PRON|Case=Gen|Gender=Masc|Number=Plur|PronType=Dem", gloss: "those"}   # þeira
+    rag.10.46.22: {lemma: "er", morph: "PRON|PronType=Rel", gloss: "who"}   # er
+    rag.10.46.23: {lemma: "hann", morph: "PRON|Case=Dat|Gender=Masc|Number=Sing|Person=3", gloss: "him"}   # honum
+    rag.10.46.24: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "had"}   # höfðu
+    rag.10.46.25: {lemma: "fylgja", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "followed"}   # fylgt
+    rag.10.46.26: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.46.27: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rag.10.46.28: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "were"}   # váru
+    rag.10.46.29: {lemma: "grið", morph: "NOUN|Case=Nom|Gender=Neut|Number=Plur", gloss: "quarter"}   # grið
+    rag.10.46.30: {lemma: "gefa", morph: "VERB|Case=Nom|Gender=Neut|Number=Plur|Tense=Past|VerbForm=Part", gloss: "given"}   # gefin
+    rag.10.46.31: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.46.32: {lemma: "senda", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "sends"}   # sendir
+    rag.10.46.33: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Masc|Number=Plur|PronType=Dem", gloss: "them"}   # þá
+    rag.10.46.34: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rag.10.46.35: {lemma: "Áslaug", morph: "PROPN|Case=Gen|Gender=Fem|Number=Sing", gloss: "Aslaug"}   # Áslaugar
+    rag.10.46.36: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.46.37: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    rag.10.46.38: {lemma: "vísa", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "a-verse"}   # visu
+    rag.10.47: {metre: "odd line · staves vowel · third verse of Eirik, skaldic measure, as rsons.2.30-37; it efra read adverbially, 'the latter, at the last'; uncertain"}
+    rag.10.47.1: {lemma: "sá", morph: "DET|Case=Acc|Gender=Neut|Number=Plur|PronType=Dem", gloss: "those"}   # Þau
+    rag.10.47.2: {lemma: "bera", morph: "VERB|Mood=Imp|Number=Plur|Person=2|Tense=Pres", gloss: "bear"}   # berið
+    rag.10.47.3: {lemma: "orð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "words", stave: true}   # orð
+    rag.10.47.4: {lemma: "inn", morph: "DET|Case=Acc|Definite=Def|Gender=Neut|Number=Sing|PronType=Art", gloss: "the"}   # it
+    rag.10.47.5: {lemma: "efri", morph: "ADJ|Case=Acc|Degree=Cmp|Gender=Neut|Number=Sing", gloss: "latter", stave: true}   # efra
+    rag.10.48: {metre: "even line · head-stave vowel · head-stave on austrfarar; the unstressed eru also begins with a vowel"}
+    rag.10.48.1: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "are"}   # eru
+    rag.10.48.2: {lemma: "austrför", morph: "NOUN|Case=Nom|Gender=Fem|Number=Plur", gloss: "east-journeys", stave: true}   # austrfarar
+    rag.10.48.3: {lemma: "líða", morph: "VERB|Case=Nom|Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part", gloss: "passed"}   # liðnar
+    rag.10.49: {metre: "odd line · staves m"}
+    rag.10.49.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.49.2: {lemma: "mær", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "maid", stave: true}   # mær
+    rag.10.49.3: {lemma: "hafa", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "have"}   # hafi
+    rag.10.49.4: {lemma: "minn", morph: "DET|Case=Acc|Gender=Masc|Number=Plur|Poss=Yes", gloss: "my", stave: true}   # mína
+    rag.10.50: {metre: "even line · head-stave m · Áslaugu dative, the receiver of the message (berið orð ... Áslaugu), as in rsons.2.33"}
+    rag.10.50.1: {lemma: "mjór", morph: "ADJ|Case=Nom|Gender=Fem|Number=Sing", gloss: "slender", stave: true}   # mjó
+    rag.10.50.2: {lemma: "Áslaug", morph: "PROPN|Case=Dat|Gender=Fem|Number=Sing", gloss: "to-Aslaug"}   # Áslaugu
+    rag.10.50.3: {lemma: "baugr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "rings"}   # bauga
+    rag.10.51: {metre: "odd line · staves m"}
+    rag.10.51.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rag.10.51.2: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "will"}   # mun
+    rag.10.51.3: {lemma: "mikill", morph: "ADV|Degree=Sup", gloss: "most", stave: true}   # mest
+    rag.10.51.4: {lemma: "af", morph: "ADP", gloss: "from"}   # af
+    rag.10.51.5: {lemma: "móðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "wrath", stave: true}   # móði
+    rag.10.52: {metre: "even line · head-stave m · head-stave on the pronoun mik; the þáttr has ef where the saga has er"}
+    rag.10.52.1: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rag.10.52.2: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me", stave: true}   # mik
+    rag.10.52.3: {lemma: "spyrja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "hear-of"}   # spyrja
+    rag.10.52.4: {lemma: "dauðr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "dead"}   # dauðan
+    rag.10.53: {metre: "odd line · staves m"}
+    rag.10.53.1: {lemma: "minn", morph: "DET|Case=Nom|Gender=Fem|Number=Sing|Poss=Yes", gloss: "my", stave: true}   # mín
+    rag.10.53.2: {lemma: "stjúpmóðir", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "stepmother"}   # stjúpmóðir
+    rag.10.53.3: {lemma: "mildr", morph: "ADJ|Case=Dat|Gender=Masc|Number=Plur", gloss: "gentle", stave: true}   # mildum
+    rag.10.54: {metre: "even line · head-stave m"}
+    rag.10.54.1: {lemma: "mögr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "sons", stave: true}   # mögum
+    rag.10.54.2: {lemma: "sinn", morph: "DET|Case=Dat|Gender=Masc|Number=Plur|Poss=Yes", gloss: "her-own"}   # sínum
+    rag.10.54.3: {lemma: "til", morph: "ADV", gloss: "to-it"}   # til
+    rag.10.54.4: {lemma: "segja", morph: "VERB|VerbForm=Inf", gloss: "tell"}   # segja
+    rag.10.55.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.55.2: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.55.3: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.55.4: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.55.5: {lemma: "hefja", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "raised"}   # hafinn
+    rag.10.55.6: {lemma: "upp", morph: "ADV", gloss: "up"}   # upp
+    rag.10.55.7: {lemma: "á", morph: "ADP", gloss: "onto"}   # á
+    rag.10.55.8: {lemma: "spjót", morph: "NOUN|Case=Acc|Definite=Def|Gender=Neut|Number=Plur", gloss: "the-spears"}   # spjótin
+    rag.10.56.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # Þá
+    rag.10.56.2: {lemma: "sjá", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "sees"}   # sér
+    rag.10.56.3: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.56.4: {lemma: "hvar", morph: "ADV", gloss: "where"}   # hvar
+    rag.10.56.5: {lemma: "hrafn", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "a-raven"}   # hrafn
+    rag.10.56.6: {lemma: "fljúga", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "flies"}   # flýgr
+    rag.10.56.7: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.56.8: {lemma: "enn", morph: "ADV", gloss: "again"}   # enn
+    rag.10.56.9: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    rag.10.56.10: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.57: {metre: "odd line · staves h · last verse of Eirik, skaldic measure; már sára (with 58) 'gull of wounds' and unda valr (59, 63) 'falcon of wounds' are raven-kennings"}
+    rag.10.57.1: {lemma: "hlakka", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "screams", stave: true}   # Hlakkar
+    rag.10.57.2: {lemma: "már", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "gull"}   # már
+    rag.10.57.3: {lemma: "of", morph: "ADP", gloss: "over"}   # of
+    rag.10.57.4: {lemma: "höfuð", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "head", stave: true}   # höfði
+    rag.10.58: {metre: "even line · head-stave h · mínu agrees with höfði (57); sára completes the kenning már sára"}
+    rag.10.58.1: {lemma: "hér", morph: "ADV", gloss: "here", stave: true}   # hér
+    rag.10.58.2: {lemma: "minn", morph: "DET|Case=Dat|Gender=Neut|Number=Sing|Poss=Yes", gloss: "my"}   # mínu
+    rag.10.58.3: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.58.4: {lemma: "sár", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-wounds"}   # sára
+    rag.10.59: {metre: "odd line · staves vowel · augna is the genitive object of krefja"}
+    rag.10.59.1: {lemma: "krefja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "demands"}   # krefr
+    rag.10.59.2: {lemma: "und", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "of-wounds", stave: true}   # unda
+    rag.10.59.3: {lemma: "valr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "falcon"}   # valr
+    rag.10.59.4: {lemma: "auga", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "eyes", stave: true}   # augna
+    rag.10.60: {metre: "even line · head-stave vowel"}
+    rag.10.60.1: {lemma: "ósýnn", morph: "ADJ|Case=Gen|Gender=Neut|Number=Plur", gloss: "unseeing", stave: true}   # ósýnna
+    rag.10.60.2: {lemma: "hér", morph: "ADV", gloss: "here"}   # hér
+    rag.10.60.3: {lemma: "minn", morph: "DET|Case=Gen|Gender=Neut|Number=Plur|Poss=Yes", gloss: "my"}   # minna
+    rag.10.61: {metre: "odd line · staves h"}
+    rag.10.61.1: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "knowest-thou"}   # veizt
+    rag.10.61.2: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    rag.10.61.3: {lemma: "hrafn", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "raven", stave: true}   # hrafn
+    rag.10.61.4: {lemma: "ór", morph: "ADP", gloss: "out-of"}   # ór
+    rag.10.61.5: {lemma: "höfuð", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "head", stave: true}   # höfði
+    rag.10.62: {metre: "even line · head-stave h · brúnsteinar 'brow-stones', a kenning for the eyes; brúnsteinn is not a Zoëga headword"}
+    rag.10.62.1: {lemma: "höggva", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "hews", stave: true}   # höggr
+    rag.10.62.2: {lemma: "brúnsteinn", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "brow-stones"}   # brúnsteina
+    rag.10.62.3: {lemma: "minn", morph: "DET|Case=Acc|Gender=Masc|Number=Plur|Poss=Yes", gloss: "my"}   # mína
+    rag.10.63: {metre: "odd line · staves vowel · Ekkill, a sea-king's name; how Ekkils fits the kenning is uncertain"}
+    rag.10.63.1: {lemma: "launa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "repays"}   # launar
+    rag.10.63.2: {lemma: "und", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "of-wounds", stave: true}   # unda
+    rag.10.63.3: {lemma: "valr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "falcon"}   # valr
+    rag.10.63.4: {lemma: "Ekkill", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Ekkil's", stave: true}   # Ekkils
+    rag.10.64: {metre: "even line · head-stave vowel"}
+    rag.10.64.1: {lemma: "illa", morph: "ADV", gloss: "ill", stave: true}   # illa
+    rag.10.64.2: {lemma: "margr", morph: "ADJ|Case=Acc|Gender=Fem|Number=Sing", gloss: "many-a"}   # marga
+    rag.10.64.3: {lemma: "fylli", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "fill"}   # fylli
+    rag.10.65.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.65.2: {lemma: "láta", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "loses"}   # lætr
+    rag.10.65.3: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.65.4: {lemma: "líf", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "life"}   # líf
+    rag.10.65.5: {lemma: "sinn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing|Poss=Yes", gloss: "his-own"}   # sitt
+    rag.10.65.6: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    rag.10.65.7: {lemma: "mikill", morph: "ADJ|Case=Dat|Gender=Fem|Number=Sing", gloss: "great"}   # mikilli
+    rag.10.65.8: {lemma: "hreysti", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "valor"}   # hreysti
+    rag.10.66.1: {lemma: "en", morph: "CCONJ", gloss: "and"}   # En
+    rag.10.66.2: {lemma: "sendimaðr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "messengers"}   # sendimenn
+    rag.10.66.3: {lemma: "hann", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|Person=3", gloss: "his"}   # hans
+    rag.10.66.4: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "went"}   # fóru
+    rag.10.66.5: {lemma: "heim", morph: "ADV", gloss: "home"}   # heim
+    rag.10.66.6: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.66.7: {lemma: "létta", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "cease"}   # létta
+    rag.10.66.8: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.66.9: {lemma: "fyrr", morph: "ADV|Degree=Cmp", gloss: "before"}   # fyrr
+    rag.10.66.10: {lemma: "en", morph: "SCONJ", gloss: "than"}   # en
+    rag.10.66.11: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.66.12: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "come"}   # koma
+    rag.10.66.13: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rag.10.66.14: {lemma: "er", morph: "SCONJ", gloss: "where"}   # er
+    rag.10.66.15: {lemma: "Ragnarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Ragnar"}   # Ragnarr
+    rag.10.66.16: {lemma: "eiga", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "had"}   # átti
+    rag.10.66.17: {lemma: "atseta", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "seat"}   # atsetu
+    rag.10.67.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.67.2: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rag.10.67.3: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rag.10.67.4: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.67.5: {lemma: "fara", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "gone"}   # farinn
+    rag.10.67.6: {lemma: "í", morph: "ADP", gloss: "to"}   # í
+    rag.10.67.7: {lemma: "konungastefna", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "kings'-meeting"}   # konungastefnu
+    rag.10.68.1: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # Þeir
+    rag.10.68.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "were"}   # váru
+    rag.10.68.3: {lemma: "ok", morph: "ADV", gloss: "also"}   # ok
+    rag.10.68.4: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.68.5: {lemma: "heim", morph: "ADV", gloss: "home"}   # heim
+    rag.10.68.6: {lemma: "koma", morph: "VERB|Case=Nom|Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part", gloss: "come"}   # komnir
+    rag.10.68.7: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons"}   # synir
+    rag.10.68.8: {lemma: "Ragnarr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Ragnar's"}   # Ragnars
+    rag.10.68.9: {lemma: "ór", morph: "ADP", gloss: "from"}   # ór
+    rag.10.68.10: {lemma: "hernaðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "raiding"}   # hernaði
+    rag.10.69.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.69.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "are"}   # eru
+    rag.10.69.3: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.69.4: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rag.10.69.5: {lemma: "þrír", morph: "NUM|Case=Acc|Gender=Fem|Number=Plur", gloss: "three"}   # þrjár
+    rag.10.69.6: {lemma: "nótt", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "nights"}   # nætr
+    rag.10.69.7: {lemma: "áðr", morph: "SCONJ", gloss: "before"}   # áðr
+    rag.10.69.8: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.69.9: {lemma: "ganga", morph: "VERB|Mood=Sub|Number=Plur|Person=3|Tense=Pres", gloss: "go"}   # gangi
+    rag.10.69.10: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rag.10.69.11: {lemma: "fundr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "meeting"}   # fundar
+    rag.10.69.12: {lemma: "við", morph: "ADP", gloss: "with"}   # við
+    rag.10.69.13: {lemma: "Áslaug", morph: "PROPN|Case=Acc|Gender=Fem|Number=Sing", gloss: "Aslaug"}   # Áslaugu
+    rag.10.70.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.70.2: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rag.10.70.3: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rag.10.70.4: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.70.5: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "come"}   # koma
+    rag.10.70.6: {lemma: "fyrir", morph: "ADP", gloss: "before"}   # fyrir
+    rag.10.70.7: {lemma: "hásæti", morph: "NOUN|Case=Acc|Definite=Def|Gender=Neut|Number=Sing", gloss: "the-high-seat"}   # hásætit
+    rag.10.70.8: {lemma: "Áslaug", morph: "PROPN|Case=Gen|Gender=Fem|Number=Sing", gloss: "Aslaug's"}   # Áslaugar
+    rag.10.70.9: {lemma: "kveðja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "greet"}   # kveðja
+    rag.10.70.10: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.70.11: {lemma: "hon", morph: "PRON|Case=Acc|Gender=Fem|Number=Sing|Person=3", gloss: "her"}   # hana
+    rag.10.70.12: {lemma: "virðuliga", morph: "ADV", gloss: "worthily"}   # virðuliga
+    rag.10.70.13: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.70.14: {lemma: "taka", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "takes"}   # tekr
+    rag.10.70.15: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rag.10.70.16: {lemma: "kveðja", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "greeting"}   # kveðju
+    rag.10.70.17: {lemma: "sá", morph: "PRON|Case=Gen|Gender=Masc|Number=Plur|PronType=Dem", gloss: "their"}   # þeira
+    rag.10.70.18: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.70.19: {lemma: "hafa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "had"}   # hafði
+    rag.10.70.20: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rag.10.70.21: {lemma: "einn", morph: "NUM|Case=Acc|Gender=Masc|Number=Sing", gloss: "a"}   # einn
+    rag.10.70.22: {lemma: "líndúkr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "linen-cloth"}   # líndúk
+    rag.10.70.23: {lemma: "fyrir", morph: "ADP", gloss: "before"}   # fyrir
+    rag.10.70.24: {lemma: "kné", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "knees"}   # knjám
+    rag.10.70.25: {lemma: "sik", morph: "PRON|Case=Dat|Person=3|Reflex=Yes", gloss: "her"}   # sér
+    rag.10.70.26: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.70.27: {lemma: "ætla", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "intended"}   # ætlaði
+    rag.10.70.28: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    rag.10.70.29: {lemma: "kemba", morph: "VERB|VerbForm=Inf", gloss: "comb"}   # kemba
+    rag.10.70.30: {lemma: "sik", morph: "PRON|Case=Dat|Person=3|Reflex=Yes", gloss: "herself"}   # sér
+    rag.10.70.31: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.70.32: {lemma: "hár", morph: "NOUN|Case=Acc|Definite=Def|Gender=Neut|Number=Sing", gloss: "the-hair"}   # hárit
+    rag.10.70.33: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "had"}   # hafði
+    rag.10.70.34: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rag.10.70.35: {lemma: "leysa", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "loosened"}   # leyst
+    rag.10.71.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.71.2: {lemma: "spyrja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "asks"}   # spyrr
+    rag.10.71.3: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rag.10.71.4: {lemma: "hverr", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Int", gloss: "who"}   # hverir
+    rag.10.71.5: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.71.6: {lemma: "vera", morph: "AUX|Mood=Sub|Number=Plur|Person=3|Tense=Past", gloss: "were"}   # væri
+    rag.10.71.7: {lemma: "fyrir", morph: "ADP", gloss: "for"}   # fyrir
+    rag.10.71.8: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # því
+    rag.10.71.9: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.71.10: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rag.10.71.11: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "had"}   # hafði
+    rag.10.71.12: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Masc|Number=Plur|PronType=Dem", gloss: "them"}   # þá
+    rag.10.71.13: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.71.14: {lemma: "fyrr", morph: "ADV|Degree=Cmp", gloss: "before"}   # fyrr
+    rag.10.71.15: {lemma: "sjá", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "seen"}   # sét
+    rag.10.72.1: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that-one"}   # Sá
+    rag.10.72.2: {lemma: "er", morph: "PRON|PronType=Rel", gloss: "who"}   # er
+    rag.10.72.3: {lemma: "orð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "word"}   # orð
+    rag.10.72.4: {lemma: "hafa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "had"}   # hafði
+    rag.10.72.5: {lemma: "fyrir", morph: "ADP", gloss: "for"}   # fyrir
+    rag.10.72.6: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Masc|Number=Plur|PronType=Dem", gloss: "them"}   # þeim
+    rag.10.72.7: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "said"}   # sagði
+    rag.10.72.8: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.72.9: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.72.10: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "had"}   # höfðu
+    rag.10.72.11: {lemma: "vera", morph: "AUX|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "been"}   # verit
+    rag.10.72.12: {lemma: "liðsmaðr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "followers"}   # liðsmenn
+    rag.10.72.13: {lemma: "sá", morph: "PRON|Case=Gen|Gender=Masc|Number=Plur|PronType=Dem", gloss: "of-those"}   # þeira
+    rag.10.72.14: {lemma: "Eiríkr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eireks
+    rag.10.72.15: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.72.16: {lemma: "Agnarr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Agnar"}   # Agnars
+    rag.10.72.17: {lemma: "sonr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "sons"}   # sona
+    rag.10.72.18: {lemma: "Ragnarr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Ragnar's"}   # Ragnars
+    rag.10.73.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # Þá
+    rag.10.73.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    rag.10.73.3: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rag.10.73.4: {lemma: "vísa", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "a-verse"}   # vísu
+    rag.10.74: {metre: "odd line · staves vowel · Aslaug's question, skaldic measure; ór yðru 'from your (journey)', the noun understood; the staves are uncertain"}
+    rag.10.74.1: {lemma: "hvat", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Int", gloss: "what"}   # Hvat
+    rag.10.74.2: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Plur|Person=2|Tense=Pres", gloss: "say"}   # segið
+    rag.10.74.3: {lemma: "þér", morph: "PRON|Case=Nom|Number=Plur|Person=2", gloss: "ye", stave: true}   # ér
+    rag.10.74.4: {lemma: "ór", morph: "ADP", gloss: "out-of"}   # ór
+    rag.10.74.5: {lemma: "yðarr", morph: "DET|Case=Dat|Gender=Neut|Number=Sing|Poss=Yes", gloss: "your", stave: true}   # yðru
+    rag.10.75: {metre: "even line · head-stave vowel · the head-stave falls on the verb eru; weak"}
+    rag.10.75.1: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "are", stave: true}   # eru
+    rag.10.75.2: {lemma: "Svíar", morph: "PROPN|Case=Nom|Gender=Masc|Number=Plur", gloss: "Swedes"}   # Svíar
+    rag.10.75.3: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rag.10.75.4: {lemma: "land", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "land"}   # landi
+    rag.10.76: {metre: "odd line · staves vowel"}
+    rag.10.76.1: {lemma: "eða", morph: "CCONJ", gloss: "or"}   # eða
+    rag.10.76.2: {lemma: "elligar", morph: "ADV", gloss: "else", stave: true}   # elligar
+    rag.10.76.3: {lemma: "úti", morph: "ADV", gloss: "abroad", stave: true}   # úti
+    rag.10.77: {metre: "even line · head-stave vowel · spjalli read as addressed to the messenger; the sense of allnýs konungs is uncertain"}
+    rag.10.77.1: {lemma: "allnýr", morph: "ADJ|Case=Gen|Gender=Masc|Number=Sing", gloss: "very-new", stave: true}   # allnýs
+    rag.10.77.2: {lemma: "konungr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "king's"}   # konungs
+    rag.10.77.3: {lemma: "spjalli", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "confidant"}   # spjalli
+    rag.10.78: {metre: "odd line · staves f"}
+    rag.10.78.1: {lemma: "fregna", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "heard", stave: true}   # Fregit
+    rag.10.78.2: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "have-I"}   # hefk
+    rag.10.78.3: {lemma: "hinn", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # hitt
+    rag.10.78.4: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.78.5: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "went", stave: true}   # fóru
+    rag.10.79: {metre: "even line · head-stave f"}
+    rag.10.79.1: {lemma: "en", morph: "CCONJ", gloss: "but"}   # en
+    rag.10.79.2: {lemma: "fremr", morph: "ADV|Degree=Cmp", gloss: "further", stave: true}   # fremr
+    rag.10.79.3: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "know"}   # vitum
+    rag.10.79.4: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.80: {metre: "odd line · staves h"}
+    rag.10.80.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.80.2: {lemma: "hildingr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "war-leaders", stave: true}   # hildingar
+    rag.10.80.3: {lemma: "hafa", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "had", stave: true}   # höfðu
+    rag.10.81: {metre: "even line · head-stave h"}
+    rag.10.81.1: {lemma: "hlunnroð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "roller-reddening", stave: true}   # hlunnroð
+    rag.10.81.2: {lemma: "Danir", morph: "PROPN|Case=Nom|Gender=Masc|Number=Plur", gloss: "Danes"}   # Danir
+    rag.10.81.3: {lemma: "sunnan", morph: "ADV", gloss: "from-the-south"}   # sunnan
+    rag.10.82.1: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # Hann
+    rag.10.82.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    rag.10.82.3: {lemma: "vísa", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "a-verse"}   # vísu
+    rag.10.82.4: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rag.10.82.5: {lemma: "móti", morph: "ADV", gloss: "reply"}   # mót
+    rag.10.83: {metre: "odd line · staves þ · the messenger's answer, skaldic measure; þínum (dat. pl.) 'thy (stepsons)', the noun understood"}
+    rag.10.83.1: {lemma: "þú", morph: "PRON|Case=Dat|Number=Sing|Person=2", gloss: "to-thee", stave: true}   # Þér
+    rag.10.83.2: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "tell"}   # segjum
+    rag.10.83.3: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    rag.10.83.4: {lemma: "þinn", morph: "DET|Case=Dat|Gender=Masc|Number=Plur|Poss=Yes", gloss: "thy", stave: true}   # þínum
+    rag.10.84: {metre: "even line · head-stave þ · dauða read as the object of segjum (83); kona vocative"}
+    rag.10.84.1: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that", stave: true}   # þat
+    rag.10.84.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.84.3: {lemma: "nauð", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "hardship"}   # nauð
+    rag.10.84.4: {lemma: "kona", morph: "NOUN|Case=Voc|Gender=Fem|Number=Sing", gloss: "woman"}   # kona
+    rag.10.84.5: {lemma: "dauði", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "death"}   # dauða
+    rag.10.85: {metre: "odd line · staves vowel"}
+    rag.10.85.1: {lemma: "illr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Plur", gloss: "ill", stave: true}   # ill
+    rag.10.85.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "are"}   # eru
+    rag.10.85.3: {lemma: "einkar", morph: "ADV", gloss: "especially", stave: true}   # einkar
+    rag.10.85.4: {lemma: "maðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "for-a-man"}   # manni
+    rag.10.86: {metre: "even line · head-stave vowel · sonu Þóru, the sons of Thora (Eirik and Agnar), read as a second object of segjum"}
+    rag.10.86.1: {lemma: "örlög", morph: "NOUN|Case=Nom|Gender=Neut|Number=Plur", gloss: "fates", stave: true}   # örlög
+    rag.10.86.2: {lemma: "sonr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "sons"}   # sonu
+    rag.10.86.3: {lemma: "Þóra", morph: "PROPN|Case=Gen|Gender=Fem|Number=Sing", gloss: "Thora's"}   # Þóru
+    rag.10.87: {metre: "odd line · staves vowel · only one vowel stave in the odd line (önnur); the expected second stave is missing"}
+    rag.10.87.1: {lemma: "þungr", morph: "ADJ|Case=Acc|Gender=Neut|Number=Plur", gloss: "heavy"}   # þung
+    rag.10.87.2: {lemma: "spjall", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "tidings"}   # spjöll
+    rag.10.87.3: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "know"}   # vitum
+    rag.10.87.4: {lemma: "annarr", morph: "ADJ|Case=Acc|Gender=Neut|Number=Plur", gloss: "other", stave: true}   # önnur
+    rag.10.88: {metre: "even line · head-stave vowel"}
+    rag.10.88.1: {lemma: "eigi", morph: "ADV", gloss: "not", stave: true}   # eigi
+    rag.10.88.2: {lemma: "nýr", morph: "ADJ|Case=Acc|Degree=Cmp|Gender=Neut|Number=Plur", gloss: "newer"}   # nýjari
+    rag.10.88.3: {lemma: "en", morph: "SCONJ", gloss: "than"}   # en
+    rag.10.88.4: {lemma: "þessi", morph: "PRON|Case=Acc|Gender=Neut|Number=Plur|PronType=Dem", gloss: "these"}   # þessi
+    rag.10.89: {metre: "odd line · staves f"}
+    rag.10.89.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.89.2: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "have-I"}   # hefk
+    rag.10.89.3: {lemma: "fram", morph: "ADV", gloss: "forth", stave: true}   # fram
+    rag.10.89.4: {lemma: "koma", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "brought"}   # komit
+    rag.10.89.5: {lemma: "frétt", morph: "NOUN|Case=Dat|Gender=Fem|Number=Plur", gloss: "tidings", stave: true}   # fréttum
+    rag.10.90: {metre: "even line · head-stave f"}
+    rag.10.90.1: {lemma: "fljúga", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "flew", stave: true}   # flaug
+    rag.10.90.2: {lemma: "örn", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "an-eagle"}   # örn
+    rag.10.90.3: {lemma: "of", morph: "ADP", gloss: "over"}   # of
+    rag.10.90.4: {lemma: "nár", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "corpse"}   # ná
+    rag.10.90.5: {lemma: "dauðr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "dead"}   # dauðan
+    rag.10.91.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.91.2: {lemma: "spyrja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "asks"}   # spyrr
+    rag.10.91.3: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rag.10.91.4: {lemma: "hvé", morph: "ADV", gloss: "how"}   # hvé
+    rag.10.91.5: {lemma: "fara", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "gone"}   # farit
+    rag.10.91.6: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "had"}   # hafði
+    rag.10.92.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.92.2: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.92.3: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    rag.10.92.4: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.92.5: {lemma: "sá", morph: "DET|Case=Acc|Gender=Fem|Number=Sing|PronType=Dem", gloss: "that"}   # þá
+    rag.10.92.6: {lemma: "vísa", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "verse"}   # vísu
+    rag.10.92.7: {lemma: "er", morph: "PRON|PronType=Rel", gloss: "which"}   # er
+    rag.10.92.8: {lemma: "Eiríkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eirekr
+    rag.10.92.9: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "had"}   # hafði
+    rag.10.92.10: {lemma: "kveða", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "spoken"}   # kveðit
+    rag.10.92.11: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rag.10.92.12: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.92.13: {lemma: "senda", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "sent"}   # sendi
+    rag.10.92.14: {lemma: "hon", morph: "PRON|Case=Dat|Gender=Fem|Number=Sing|Person=3", gloss: "to-her"}   # henni
+    rag.10.92.15: {lemma: "hringr", morph: "NOUN|Case=Acc|Definite=Def|Gender=Masc|Number=Sing", gloss: "the-ring"}   # hringinn
+    rag.10.93.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.93.2: {lemma: "sjá", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "see"}   # sjá
+    rag.10.93.3: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.93.4: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.93.5: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rag.10.93.6: {lemma: "fella", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "shed"}   # felldi
+    rag.10.93.7: {lemma: "tár", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "a-tear"}   # tár
+    rag.10.93.8: {lemma: "en", morph: "CCONJ", gloss: "and"}   # en
+    rag.10.93.9: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.93.10: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rag.10.93.11: {lemma: "sem", morph: "SCONJ", gloss: "as"}   # sem
+    rag.10.93.12: {lemma: "blóð", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "blood"}   # blóð
+    rag.10.93.13: {lemma: "vera", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "were"}   # væri
+    rag.10.93.14: {lemma: "álit", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "to-look-at"}   # álits
+    rag.10.93.15: {lemma: "en", morph: "CCONJ", gloss: "but"}   # en
+    rag.10.93.16: {lemma: "harðr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "hard"}   # hart
+    rag.10.93.17: {lemma: "sem", morph: "SCONJ", gloss: "as"}   # sem
+    rag.10.93.18: {lemma: "haglkorn", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "a-hailstone"}   # haglkorn
+    rag.10.94.1: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    rag.10.94.2: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "had"}   # hafði
+    rag.10.94.3: {lemma: "engi", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Neg", gloss: "no"}   # engi
+    rag.10.94.4: {lemma: "maðr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "man"}   # maðr
+    rag.10.94.5: {lemma: "sjá", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "seen"}   # sét
+    rag.10.94.6: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.94.7: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rag.10.94.8: {lemma: "hafa", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "had"}   # hefði
+    rag.10.94.9: {lemma: "tár", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "a-tear"}   # tár
+    rag.10.94.10: {lemma: "fella", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "shed"}   # fellt
+    rag.10.94.11: {lemma: "hvárki", morph: "CCONJ", gloss: "neither"}   # hvárki
+    rag.10.94.12: {lemma: "áðr", morph: "ADV", gloss: "before"}   # áðr
+    rag.10.94.13: {lemma: "né", morph: "CCONJ", gloss: "nor"}   # né
+    rag.10.94.14: {lemma: "síðan", morph: "ADV", gloss: "since"}   # síðan
+    rag.10.95.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.95.2: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rag.10.95.3: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rag.10.95.4: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.95.5: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rag.10.95.6: {lemma: "mega", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "may"}   # má
+    rag.10.95.7: {lemma: "ekki", morph: "ADV", gloss: "not"}   # ekki
+    rag.10.95.8: {lemma: "til", morph: "ADP", gloss: "toward"}   # til
+    rag.10.95.9: {lemma: "hefnd", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "vengeance"}   # hefnda
+    rag.10.95.10: {lemma: "sýsla", morph: "VERB|VerbForm=Inf", gloss: "busy-herself"}   # sýsla
+    rag.10.95.11: {lemma: "fyrr", morph: "ADV|Degree=Cmp", gloss: "before"}   # fyrr
+    rag.10.95.12: {lemma: "en", morph: "SCONJ", gloss: "than"}   # en
+    rag.10.95.13: {lemma: "heim", morph: "ADV", gloss: "home"}   # heim
+    rag.10.95.14: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "come"}   # koma
+    rag.10.95.15: {lemma: "annarr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "one"}   # aðrir
+    rag.10.95.16: {lemma: "hvárr", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Ind", gloss: "or-the-other"}   # hvárir
+    rag.10.95.17: {lemma: "Ragnarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Ragnar"}   # Ragnarr
+    rag.10.95.18: {lemma: "eða", morph: "CCONJ", gloss: "or"}   # eða
+    rag.10.95.19: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons"}   # synir
+    rag.10.95.20: {lemma: "hann", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|Person=3", gloss: "his"}   # hans
+    rag.10.96.1: {lemma: "en", morph: "CCONJ", gloss: "but"}   # En
+    rag.10.96.2: {lemma: "þér", morph: "PRON|Case=Nom|Number=Plur|Person=2", gloss: "ye"}   # þér
+    rag.10.96.3: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Plur|Person=2|Tense=Pres", gloss: "shall"}   # skuluð
+    rag.10.96.4: {lemma: "vera", morph: "AUX|VerbForm=Inf", gloss: "be"}   # vera
+    rag.10.96.5: {lemma: "hér", morph: "ADV", gloss: "here"}   # hér
+    rag.10.96.6: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rag.10.96.7: {lemma: "til", morph: "ADV", gloss: "until"}   # til
+    rag.10.96.8: {lemma: "en", morph: "CCONJ", gloss: "and"}   # en
+    rag.10.96.9: {lemma: "engi", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Neg", gloss: "nothing"}   # ekki
+    rag.10.96.10: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    rag.10.96.11: {lemma: "af", morph: "ADV", gloss: "off"}   # af
+    rag.10.96.12: {lemma: "spara", morph: "VERB|VerbForm=Inf", gloss: "spare"}   # spara
+    rag.10.96.13: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    rag.10.96.14: {lemma: "eggja", morph: "VERB|VerbForm=Inf", gloss: "urge"}   # eggja
+    rag.10.96.15: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rag.10.96.16: {lemma: "hefnd", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "vengeance"}   # hefnda
+    rag.10.96.17: {lemma: "jafn", morph: "ADV", gloss: "just"}   # jafnt
+    rag.10.96.18: {lemma: "sem", morph: "SCONJ", gloss: "as"}   # sem
+    rag.10.96.19: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.96.20: {lemma: "vera", morph: "AUX|Mood=Sub|Number=Plur|Person=3|Tense=Past", gloss: "were"}   # væri
+    rag.10.96.21: {lemma: "minn", morph: "DET|Case=Nom|Gender=Masc|Number=Plur|Poss=Yes", gloss: "my"}   # mínir
+    rag.10.96.22: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons"}   # synir
+    rag.10.97.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.97.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "are"}   # eru
+    rag.10.97.3: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.97.4: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rag.10.98.1: {lemma: "en", morph: "CCONJ", gloss: "and"}   # En
+    rag.10.98.2: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    rag.10.98.3: {lemma: "gefa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "gives"}   # gefr
+    rag.10.98.4: {lemma: "til", morph: "ADV", gloss: "to-it"}   # til
+    rag.10.98.5: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.98.6: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.98.7: {lemma: "Ívarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Ivar"}   # Ívarr
+    rag.10.98.8: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "come"}   # koma
+    rag.10.98.9: {lemma: "fyrr", morph: "ADV|Degree=Cmp", gloss: "sooner"}   # fyrri
+    rag.10.98.10: {lemma: "heim", morph: "ADV", gloss: "home"}   # heim
+    rag.10.98.11: {lemma: "en", morph: "SCONJ", gloss: "than"}   # en
+    rag.10.98.12: {lemma: "Ragnarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Ragnar"}   # Ragnarr
+    rag.10.98.13: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.98.14: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "are"}   # eru
+    rag.10.98.15: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.98.16: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.98.17: {lemma: "lengi", morph: "ADV", gloss: "long"}   # lengi
+    rag.10.98.18: {lemma: "heima", morph: "ADV", gloss: "at-home"}   # heima
+    rag.10.98.19: {lemma: "áðr", morph: "SCONJ", gloss: "before"}   # áðr
+    rag.10.98.20: {lemma: "Áslaug", morph: "PROPN|Case=Nom|Gender=Fem|Number=Sing", gloss: "Aslaug"}   # Áslaug
+    rag.10.98.21: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "goes"}   # ferr
+    rag.10.98.22: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    rag.10.98.23: {lemma: "finna", morph: "VERB|VerbForm=Inf", gloss: "visit"}   # finna
+    rag.10.98.24: {lemma: "sonr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "sons"}   # sonu
+    rag.10.98.25: {lemma: "sinn", morph: "DET|Case=Acc|Gender=Masc|Number=Plur|Poss=Yes", gloss: "her-own"}   # sína
+    rag.10.98.26: {lemma: "en", morph: "CCONJ", gloss: "and"}   # en
+    rag.10.98.27: {lemma: "Sigurðr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Sigurd"}   # Sigurðr
+    rag.10.98.28: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rag.10.98.29: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rag.10.98.30: {lemma: "þrévetr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "three-winters-old"}   # þrévetr
+    rag.10.99.1: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # Hann
+    rag.10.99.2: {lemma: "fara", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "goes"}   # ferr
+    rag.10.99.3: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    rag.10.99.4: {lemma: "móðir", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "mother"}   # móður
+    rag.10.99.5: {lemma: "sinn", morph: "DET|Case=Dat|Gender=Fem|Number=Sing|Poss=Yes", gloss: "his-own"}   # sinni
+    rag.10.100.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.100.2: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rag.10.100.3: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rag.10.100.4: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rag.10.100.5: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "comes"}   # kemr
+    rag.10.100.6: {lemma: "í", morph: "ADP", gloss: "into"}   # í
+    rag.10.100.7: {lemma: "höll", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "hall"}   # höll
+    rag.10.100.8: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Fem|Number=Sing|PronType=Dem", gloss: "that"}   # þá
+    rag.10.100.9: {lemma: "er", morph: "PRON|PronType=Rel", gloss: "which"}   # er
+    rag.10.100.10: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.100.11: {lemma: "ráða", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "ruled"}   # réðu
+    rag.10.100.12: {lemma: "fyrir", morph: "ADV", gloss: "over"}   # fyrir
+    rag.10.100.13: {lemma: "bróðir", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "brothers"}   # bræðr
+    rag.10.100.14: {lemma: "fagna", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "welcome"}   # fagna
+    rag.10.100.15: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.100.16: {lemma: "hon", morph: "PRON|Case=Dat|Gender=Fem|Number=Sing|Person=3", gloss: "her"}   # henni
+    rag.10.100.17: {lemma: "vel", morph: "ADV", gloss: "well"}   # vel
+    rag.10.100.18: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.100.19: {lemma: "spyrja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "ask"}   # spyrja
+    rag.10.100.20: {lemma: "hvárr", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Ind", gloss: "each"}   # hvárir
+    rag.10.100.21: {lemma: "annarr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Plur", gloss: "other"}   # aðra
+    rag.10.100.22: {lemma: "tíðendi", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-tidings"}   # tíðenda
+    rag.10.100.23: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.100.24: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "tell"}   # segja
+    rag.10.100.25: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.100.26: {lemma: "fyrr", morph: "ADV|Degree=Cmp", gloss: "first"}   # fyrri
+    rag.10.100.27: {lemma: "fall", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "fall"}   # fall
+    rag.10.100.28: {lemma: "Rögnvaldr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Rognvald"}   # Rögnvalds
+    rag.10.100.29: {lemma: "sonr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "son"}   # sonar
+    rag.10.100.30: {lemma: "hon", morph: "PRON|Case=Gen|Gender=Fem|Number=Sing|Person=3", gloss: "her"}   # hennar
+    rag.10.100.31: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.100.32: {lemma: "frá", morph: "ADP", gloss: "about"}   # frá
+    rag.10.100.33: {lemma: "sá", morph: "DET|Case=Dat|Gender=Masc|Number=Plur|PronType=Dem", gloss: "those"}   # þeim
+    rag.10.100.34: {lemma: "atburðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "events"}   # atburðum
+    rag.10.100.35: {lemma: "er", morph: "PRON|PronType=Rel", gloss: "which"}   # er
+    rag.10.100.36: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rag.10.100.37: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "had"}   # höfðu
+    rag.10.100.38: {lemma: "verða", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "happened"}   # orðit
+    rag.10.101.1: {lemma: "en", morph: "CCONJ", gloss: "but"}   # En
+    rag.10.101.2: {lemma: "ekki", morph: "ADV", gloss: "not"}   # ekki
+    rag.10.101.3: {lemma: "fá", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "affects"}   # fær
+    rag.10.101.4: {lemma: "hon", morph: "PRON|Case=Dat|Gender=Fem|Number=Sing|Person=3", gloss: "her"}   # henni
+    rag.10.101.5: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.101.6: {lemma: "mikill", morph: "ADJ|Case=Gen|Gender=Neut|Number=Sing", gloss: "much"}   # mikils
+    rag.10.101.7: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.101.8: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    rag.10.102: {metre: "odd line · staves m · Aslaug's verse on Rognvald, skaldic measure"}
+    rag.10.102.1: {lemma: "kaga", morph: "VERB|VerbForm=Inf", gloss: "peer"}   # Kaga
+    rag.10.102.2: {lemma: "láta", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "made"}   # létu
+    rag.10.102.3: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me", stave: true}   # mik
+    rag.10.102.4: {lemma: "minn", morph: "DET|Case=Nom|Gender=Masc|Number=Plur|Poss=Yes", gloss: "my", stave: true}   # mínir
+    rag.10.103: {metre: "even line · head-stave m · mávangr 'gull-plain', a kenning for the sea"}
+    rag.10.103.1: {lemma: "mávangr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "over-the-gull-plain", stave: true}   # mávangs
+    rag.10.103.2: {lemma: "sonr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons"}   # synir
+    rag.10.103.3: {lemma: "löngum", morph: "ADV", gloss: "long"}   # löngum
+    rag.10.104: {metre: "odd line · staves h"}
+    rag.10.104.1: {lemma: "þér", morph: "PRON|Case=Nom|Number=Plur|Person=2", gloss: "ye"}   # ér
+    rag.10.104.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=2|Tense=Pres", gloss: "are"}   # eruð
+    rag.10.104.3: {lemma: "heim", morph: "ADV", gloss: "home", stave: true}   # heim
+    rag.10.104.4: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.104.5: {lemma: "heiman", morph: "ADV", gloss: "from-home", stave: true}   # heiman
+    rag.10.105: {metre: "even line · head-stave h · húsgangr 'going from house to house, begging'; meðalfærr not confirmed in Zoëga; the sense of the couplet is uncertain"}
+    rag.10.105.1: {lemma: "húsgangr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-house-going", stave: true}   # húsgangs
+    rag.10.105.2: {lemma: "meðalfærr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "middling-fit"}   # meðalfærir
+    rag.10.106: {metre: "odd line · staves r"}
+    rag.10.106.1: {lemma: "Rögnvaldr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Rognvald", stave: true}   # Rögnvaldr
+    rag.10.106.2: {lemma: "taka", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "began"}   # tók
+    rag.10.106.3: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    rag.10.106.4: {lemma: "rjóða", morph: "VERB|VerbForm=Inf", gloss: "redden", stave: true}   # rjóða
+    rag.10.107: {metre: "even line · head-stave r"}
+    rag.10.107.1: {lemma: "rönd", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "shield-rim", stave: true}   # rönd
+    rag.10.107.2: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rag.10.107.3: {lemma: "gumi", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-men"}   # gumna
+    rag.10.107.4: {lemma: "blóð", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "blood"}   # blóði
+    rag.10.108: {metre: "odd line · staves vowel"}
+    rag.10.108.1: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.108.2: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "came"}   # kom
+    rag.10.108.3: {lemma: "ungr", morph: "ADJ|Case=Nom|Degree=Sup|Gender=Masc|Number=Sing", gloss: "youngest", stave: true}   # yngstr
+    rag.10.108.4: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rag.10.108.5: {lemma: "Óðinn", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Odin", stave: true}   # Óðins
+    rag.10.109: {metre: "even line · head-stave vowel"}
+    rag.10.109.1: {lemma: "ógndjarfr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "battle-bold", stave: true}   # ógndjarfr
+    rag.10.109.2: {lemma: "sonr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-sons"}   # sona
+    rag.10.109.3: {lemma: "minn", morph: "DET|Case=Gen|Gender=Masc|Number=Plur|Poss=Yes", gloss: "my"}   # minna
+    rag.10.110.1: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # Ek
+    rag.10.110.2: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "can"}   # kann
+    rag.10.110.3: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.110.4: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.110.5: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    rag.10.110.6: {lemma: "sjá", morph: "VERB|VerbForm=Inf", gloss: "see"}   # sjá
+    rag.10.110.7: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rag.10.110.8: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rag.10.110.9: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.110.10: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.110.11: {lemma: "munu", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "would"}   # mundi
+    rag.10.110.12: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rag.10.110.13: {lemma: "mikill", morph: "ADJ|Case=Gen|Degree=Cmp|Gender=Fem|Number=Sing", gloss: "greater"}   # meiri
+    rag.10.110.14: {lemma: "frægð", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "renown"}   # frægðar
+    rag.10.110.15: {lemma: "lifa", morph: "VERB|VerbForm=Inf", gloss: "live"}   # lifa
+    rag.10.111.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.111.2: {lemma: "spyrja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "ask"}   # spyrja
+    rag.10.111.3: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.111.4: {lemma: "hvat", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Int", gloss: "what"}   # hvat
+    rag.10.111.5: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rag.10.111.6: {lemma: "segja", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "tell"}   # segi
+    rag.10.111.7: {lemma: "tíðendi", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-tidings"}   # tíðenda
+    rag.10.112.1: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # Hún
+    rag.10.112.2: {lemma: "svara", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "answers"}   # svarar
+    rag.10.112.3: {lemma: "fall", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "the-fall"}   # Fall
+    rag.10.112.4: {lemma: "sá", morph: "PRON|Case=Gen|Gender=Masc|Number=Plur|PronType=Dem", gloss: "of-those"}   # þeira
+    rag.10.112.5: {lemma: "Eiríkr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Eirik"}   # Eireks
+    rag.10.112.6: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.112.7: {lemma: "Agnarr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Agnar"}   # Agnars
+    rag.10.112.8: {lemma: "bróðir", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "brothers"}   # bræðra
+    rag.10.112.9: {lemma: "yðarr", morph: "DET|Case=Gen|Gender=Masc|Number=Plur|Poss=Yes", gloss: "your"}   # yðarra
+    rag.10.112.10: {lemma: "en", morph: "CCONJ", gloss: "and"}   # en
+    rag.10.112.11: {lemma: "stjúpsonr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "stepsons"}   # stjúpsona
+    rag.10.112.12: {lemma: "minn", morph: "DET|Case=Gen|Gender=Masc|Number=Plur|Poss=Yes", gloss: "my"}   # minna
+    rag.10.112.13: {lemma: "sá", morph: "DET|Case=Gen|Gender=Masc|Number=Plur|PronType=Dem", gloss: "those"}   # þeira
+    rag.10.112.14: {lemma: "maðr", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "men"}   # manna
+    rag.10.112.15: {lemma: "er", morph: "PRON|PronType=Rel", gloss: "who"}   # er
+    rag.10.112.16: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    rag.10.112.17: {lemma: "ætla", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "think"}   # ætla
+    rag.10.112.18: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.112.19: {lemma: "inn", morph: "DET|Case=Nom|Definite=Def|Gender=Masc|Number=Plur|PronType=Art", gloss: "the"}   # inir
+    rag.10.112.20: {lemma: "góðr", morph: "ADJ|Case=Nom|Degree=Sup|Gender=Masc|Number=Plur", gloss: "best"}   # beztu
+    rag.10.112.21: {lemma: "drengr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "warriors"}   # drengir
+    rag.10.112.22: {lemma: "hafa", morph: "AUX|Mood=Sub|Number=Plur|Person=3|Tense=Pres", gloss: "have"}   # hafi
+    rag.10.112.23: {lemma: "vera", morph: "AUX|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "been"}   # verit
+    rag.10.113.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.113.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.113.3: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.113.4: {lemma: "ókynligr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "unnatural"}   # ókynligt
+    rag.10.113.5: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.113.6: {lemma: "þér", morph: "PRON|Case=Nom|Number=Plur|Person=2", gloss: "ye"}   # þér
+    rag.10.113.7: {lemma: "þola", morph: "VERB|Mood=Sub|Number=Plur|Person=2|Tense=Pres", gloss: "endure"}   # þolið
+    rag.10.113.8: {lemma: "slíkr", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "such"}   # slíkt
+    rag.10.113.9: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.113.10: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.113.11: {lemma: "hefna", morph: "VERB|Mood=Sub|Number=Plur|Person=2|Tense=Pres", gloss: "avenge"}   # hefnið
+    rag.10.113.12: {lemma: "mikill", morph: "ADJ|Case=Dat|Gender=Neut|Number=Sing", gloss: "greatly"}   # miklu
+    rag.10.114.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.114.2: {lemma: "sá", morph: "PRON|Case=Gen|Gender=Neut|Number=Sing|PronType=Dem", gloss: "for-this"}   # þess
+    rag.10.114.3: {lemma: "vilja", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "will"}   # vil
+    rag.10.114.4: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    rag.10.114.5: {lemma: "biðja", morph: "VERB|VerbForm=Inf", gloss: "ask"}   # biðja
+    rag.10.114.6: {lemma: "þér", morph: "PRON|Case=Acc|Number=Plur|Person=2", gloss: "you"}   # yðr
+    rag.10.114.7: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.114.8: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rag.10.114.9: {lemma: "allr", morph: "ADJ|Case=Dat|Gender=Masc|Number=Sing", gloss: "all"}   # öllum
+    rag.10.114.10: {lemma: "atbeini", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "support"}   # atbeina
+    rag.10.114.11: {lemma: "vera", morph: "AUX|VerbForm=Inf", gloss: "be"}   # vera
+    rag.10.114.12: {lemma: "með", morph: "ADP", gloss: "with"}   # með
+    rag.10.114.13: {lemma: "þér", morph: "PRON|Case=Dat|Number=Plur|Person=2", gloss: "you"}   # yðr
+    rag.10.114.14: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.114.15: {lemma: "þessi", morph: "PRON|Case=Gen|Gender=Neut|Number=Sing|PronType=Dem", gloss: "this"}   # þessa
+    rag.10.114.16: {lemma: "verða", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "be"}   # verði
+    rag.10.114.17: {lemma: "mjök", morph: "ADV|Degree=Cmp", gloss: "more"}   # meir
+    rag.10.114.18: {lemma: "hefna", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "avenged"}   # hefnt
+    rag.10.114.19: {lemma: "en", morph: "SCONJ", gloss: "than"}   # en
+    rag.10.114.20: {lemma: "miðr", morph: "ADV|Degree=Cmp", gloss: "less"}   # miðr
+    rag.10.115.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.115.2: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rag.10.115.3: {lemma: "Ívarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Ivar"}   # Ívarr
+    rag.10.115.4: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.115.5: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.115.6: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.115.7: {lemma: "víss", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "certain"}   # víst
+    rag.10.115.8: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.115.9: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rag.10.115.10: {lemma: "Svíþjóð", morph: "PROPN|Case=Gen|Gender=Fem|Number=Sing", gloss: "Sweden"}   # Svíþjóðar
+    rag.10.115.11: {lemma: "koma", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "come"}   # kem
+    rag.10.115.12: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    rag.10.115.13: {lemma: "aldri", morph: "ADV", gloss: "never"}   # aldri
+    rag.10.115.14: {lemma: "sá", morph: "DET|Case=Gen|Gender=Fem|Number=Sing|PronType=Dem", gloss: "that"}   # þeirar
+    rag.10.115.15: {lemma: "tíð", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "time"}   # tíðar
+    rag.10.115.16: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.115.17: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    rag.10.115.18: {lemma: "berja", morph: "VERB|Mood=Sub|Number=Sing|Person=1|Tense=Pres|Voice=Mid", gloss: "fight"}   # berjumst
+    rag.10.115.19: {lemma: "við", morph: "ADP", gloss: "against"}   # við
+    rag.10.115.20: {lemma: "Eysteinn", morph: "PROPN|Case=Acc|Gender=Masc|Number=Sing", gloss: "Eystein"}   # Eystein
+    rag.10.115.21: {lemma: "konungr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "king"}   # konung
+    rag.10.115.22: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.115.23: {lemma: "sá", morph: "DET|Case=Acc|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # þann
+    rag.10.115.24: {lemma: "blótskapr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "sorcery"}   # blótskap
+    rag.10.115.25: {lemma: "er", morph: "PRON|PronType=Rel", gloss: "which"}   # er
+    rag.10.115.26: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rag.10.115.27: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.116.1: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # Hún
+    rag.10.116.2: {lemma: "fylgja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "follows"}   # fylgir
+    rag.10.116.3: {lemma: "þessi", morph: "PRON|Case=Dat|Gender=Neut|Number=Sing|PronType=Dem", gloss: "this"}   # þessu
+    rag.10.116.4: {lemma: "vel", morph: "ADV", gloss: "well"}   # vel
+    rag.10.116.5: {lemma: "en", morph: "CCONJ", gloss: "but"}   # en
+    rag.10.116.6: {lemma: "Ívarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Ivar"}   # Ívarr
+    rag.10.116.7: {lemma: "hafa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "has"}   # hefir
+    rag.10.116.8: {lemma: "orð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "word"}   # orð
+    rag.10.116.9: {lemma: "fyrir", morph: "ADP", gloss: "for"}   # fyrir
+    rag.10.116.10: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Masc|Number=Plur|PronType=Dem", gloss: "them"}   # þeim
+    rag.10.116.11: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.116.12: {lemma: "synja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "refuses"}   # synjar
+    rag.10.116.13: {lemma: "ávallt", morph: "ADV", gloss: "always"}   # ávallt
+    rag.10.116.14: {lemma: "för", morph: "NOUN|Case=Gen|Definite=Def|Gender=Fem|Number=Sing", gloss: "the-journey"}   # fararinnar
+    rag.10.117.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.117.2: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.117.3: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    rag.10.117.4: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rag.10.117.5: {lemma: "vísa", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "a-verse"}   # vísu
+    rag.10.118: {metre: "odd line · staves vowel · Aslaug's verse, skaldic measure, as rsons.2.42-49 with the couplets in another order; yðar the genitive of þér"}
+    rag.10.118.1: {lemma: "eigi", morph: "ADV", gloss: "not", stave: true}   # Eigi
+    rag.10.118.2: {lemma: "munu", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "would"}   # mundi
+    rag.10.118.3: {lemma: "þér", morph: "PRON|Case=Gen|Number=Plur|Person=2", gloss: "of-you", stave: true}   # yðar
+    rag.10.119: {metre: "even line · head-stave vowel"}
+    rag.10.119.1: {lemma: "óhefndr", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "unavenged", stave: true}   # óhefnt
+    rag.10.119.2: {lemma: "vera", morph: "AUX|VerbForm=Inf", gloss: "be"}   # vera
+    rag.10.119.3: {lemma: "bróðir", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-brothers"}   # bræðra
+    rag.10.120: {metre: "odd line · staves vowel · eptir without an object, adverb"}
+    rag.10.120.1: {lemma: "einn", morph: "NUM|Case=Acc|Gender=Neut|Number=Sing", gloss: "one", stave: true}   # eitt
+    rag.10.120.2: {lemma: "misseri", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "half-year"}   # misseri
+    rag.10.120.3: {lemma: "eptir", morph: "ADV", gloss: "after", stave: true}   # eptir
+    rag.10.121: {metre: "even line · head-stave vowel · head-stave on the pronoun ér (older form of þér)"}
+    rag.10.121.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    rag.10.121.2: {lemma: "þér", morph: "PRON|Case=Nom|Number=Plur|Person=2", gloss: "ye", stave: true}   # ér
+    rag.10.121.3: {lemma: "deyja", morph: "VERB|Mood=Sub|Number=Plur|Person=2|Tense=Past", gloss: "had-died"}   # dæið
+    rag.10.121.4: {lemma: "fyrr", morph: "ADV|Degree=Cmp", gloss: "sooner"}   # fyrri
+    rag.10.122: {metre: "odd line · staves l · hirðik = hirði with the enclitic -k of ek; the þáttr has ráðumk"}
+    rag.10.122.1: {lemma: "lítt", morph: "ADV", gloss: "little", stave: true}   # lítt
+    rag.10.122.2: {lemma: "hirða", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "care-I"}   # hirðik
+    rag.10.122.3: {lemma: "sá", morph: "PRON|Case=Dat|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # því
+    rag.10.122.4: {lemma: "leyna", morph: "VERB|VerbForm=Inf", gloss: "hide", stave: true}   # leyna
+    rag.10.123: {metre: "even line · head-stave l"}
+    rag.10.123.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    rag.10.123.2: {lemma: "líf", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "life", stave: true}   # líf
+    rag.10.123.3: {lemma: "hafa", morph: "VERB|VerbForm=Inf", gloss: "have"}   # hafa
+    rag.10.123.4: {lemma: "knega", morph: "VERB|Mood=Sub|Number=Plur|Person=3|Tense=Past", gloss: "could"}   # knætti
+    rag.10.124: {metre: "odd line · staves vowel"}
+    rag.10.124.1: {lemma: "Eiríkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eirik", stave: true}   # Eirekr
+    rag.10.124.2: {lemma: "sinn", morph: "DET|Case=Acc|Gender=Neut|Number=Sing|Poss=Yes", gloss: "their-own"}   # sitt
+    rag.10.124.3: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.124.4: {lemma: "Agnarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Agnar", stave: true}   # Agnarr
+    rag.10.125: {metre: "even line · head-stave vowel"}
+    rag.10.125.1: {lemma: "óborinn", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "unborn", stave: true}   # óbornir
+    rag.10.125.2: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "to-me"}   # mér
+    rag.10.125.3: {lemma: "niðr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "kinsmen"}   # niðjar
+    rag.10.126.1: {lemma: "eigi", morph: "ADV", gloss: "not"}   # Eigi
+    rag.10.126.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.126.3: {lemma: "víss", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "certain"}   # víst
+    rag.10.126.4: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rag.10.126.5: {lemma: "Ívarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Ivar"}   # Ívarr
+    rag.10.126.6: {lemma: "hvárt", morph: "SCONJ", gloss: "whether"}   # hvárt
+    rag.10.126.7: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.126.8: {lemma: "stoða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "avails"}   # stoðar
+    rag.10.126.9: {lemma: "nökkurr", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Ind", gloss: "anything"}   # nakkvat
+    rag.10.126.10: {lemma: "þótt", morph: "SCONJ", gloss: "though"}   # þótt
+    rag.10.126.11: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "thou"}   # þú
+    rag.10.126.12: {lemma: "kveða", morph: "VERB|Mood=Sub|Number=Sing|Person=2|Tense=Pres", gloss: "speak"}   # kveðir
+    rag.10.126.13: {lemma: "annarr", morph: "ADJ|Case=Acc|Gender=Fem|Number=Sing", gloss: "one"}   # aðra
+    rag.10.126.14: {lemma: "vísa", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "verse"}   # vísu
+    rag.10.126.15: {lemma: "at", morph: "ADP", gloss: "after"}   # at
+    rag.10.126.16: {lemma: "annarr", morph: "ADJ|Case=Dat|Gender=Fem|Number=Sing", gloss: "another"}   # annarri
+    rag.10.126.17: {lemma: "eða", morph: "CCONJ", gloss: "or"}   # eða
+    rag.10.126.18: {lemma: "hvé", morph: "ADV", gloss: "how"}   # hvé
+    rag.10.126.19: {lemma: "görla", morph: "ADV", gloss: "clearly"}   # gerla
+    rag.10.126.20: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "knowest-thou"}   # veiztu
+    rag.10.126.21: {lemma: "hverr", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Int", gloss: "what"}   # hverr
+    rag.10.126.22: {lemma: "fastgarðr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "stronghold"}   # fastgarðr
+    rag.10.126.23: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rag.10.126.24: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.126.25: {lemma: "fyrir", morph: "ADV", gloss: "in-the-way"}   # fyrir
+    rag.10.127.1: {lemma: "eigi", morph: "ADV", gloss: "not"}   # Eigi
+    rag.10.127.2: {lemma: "vita", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "know"}   # veit
+    rag.10.127.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    rag.10.127.4: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.127.5: {lemma: "víss", morph: "ADV", gloss: "certainly"}   # víst
+    rag.10.127.6: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rag.10.127.7: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rag.10.127.8: {lemma: "eða", morph: "CCONJ", gloss: "or"}   # eða
+    rag.10.127.9: {lemma: "hvat", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Int", gloss: "what"}   # hvat
+    rag.10.127.10: {lemma: "kunna", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "canst-thou"}   # kanntu
+    rag.10.127.11: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    rag.10.127.12: {lemma: "segja", morph: "VERB|VerbForm=Inf", gloss: "tell"}   # segja
+    rag.10.127.13: {lemma: "hverr", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|PronType=Int", gloss: "what"}   # hver
+    rag.10.127.14: {lemma: "torveldi", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "difficulty"}   # torveldi
+    rag.10.127.15: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rag.10.127.16: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.127.17: {lemma: "á", morph: "ADV", gloss: "on-it"}   # á
+    rag.10.128.1: {lemma: "Ívarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Ivar"}   # Ívarr
+    rag.10.128.2: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rag.10.128.3: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.128.4: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rag.10.128.5: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.128.6: {lemma: "blótskapr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "sorcery"}   # blótskapr
+    rag.10.128.7: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    rag.10.128.8: {lemma: "mikill", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "great"}   # mikill
+    rag.10.128.9: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.128.10: {lemma: "hvergi", morph: "ADV", gloss: "nowhere"}   # hvergi
+    rag.10.128.11: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Mid", gloss: "said-he"}   # kvaðst
+    rag.10.128.12: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.128.13: {lemma: "spurdagi", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "report"}   # spurdaga
+    rag.10.128.14: {lemma: "hafa", morph: "VERB|VerbForm=Inf", gloss: "have"}   # hafa
+    rag.10.128.15: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.128.16: {lemma: "þvílíkr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "such"}   # þvílíkr
+    rag.10.128.17: {lemma: "munu", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "would"}   # mundi
+    rag.10.128.18: {lemma: "vera", morph: "AUX|VerbForm=Inf", gloss: "be"}   # vera
+    rag.10.129.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.129.2: {lemma: "sá", morph: "DET|Case=Nom|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # sá
+    rag.10.129.3: {lemma: "konungr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "king"}   # konungr
+    rag.10.129.4: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.129.5: {lemma: "bæði", morph: "CCONJ", gloss: "both"}   # bæði
+    rag.10.129.6: {lemma: "ríkr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "mighty"}   # ríkr
+    rag.10.129.7: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.129.8: {lemma: "illgjarn", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "malicious"}   # illgjarn
+    rag.10.130.1: {lemma: "hvat", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Int", gloss: "what"}   # Hvat
+    rag.10.130.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.130.3: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.130.4: {lemma: "er", morph: "PRON|PronType=Rel", gloss: "which"}   # er
+    rag.10.130.5: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.130.6: {lemma: "trúa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "trusts"}   # trúir
+    rag.10.130.7: {lemma: "mikill", morph: "ADV|Degree=Sup", gloss: "most"}   # mest
+    rag.10.130.8: {lemma: "á", morph: "ADV", gloss: "on"}   # á
+    rag.10.130.9: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rag.10.130.10: {lemma: "blót", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "sacrifices"}   # blótum
+    rag.10.131.1: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # Hann
+    rag.10.131.2: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rag.10.131.3: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # Þat
+    rag.10.131.4: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.131.5: {lemma: "kýr", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "cow"}   # kýr
+    rag.10.131.6: {lemma: "einn", morph: "NUM|Case=Nom|Gender=Fem|Number=Sing", gloss: "a"}   # ein
+    rag.10.131.7: {lemma: "mikill", morph: "ADJ|Case=Nom|Gender=Fem|Number=Sing", gloss: "great"}   # mikil
+    rag.10.131.8: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.131.9: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.131.10: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "it"}   # hún
+    rag.10.131.11: {lemma: "kalla", morph: "VERB|Case=Nom|Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part", gloss: "called"}   # kölluð
+    rag.10.131.12: {lemma: "Síbilja", morph: "PROPN|Case=Nom|Gender=Fem|Number=Sing", gloss: "Sibilja"}   # Síbilja
+    rag.10.132.1: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "it"}   # Hún
+    rag.10.132.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.132.3: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    rag.10.132.4: {lemma: "mjök", morph: "ADV", gloss: "greatly"}   # mjök
+    rag.10.132.5: {lemma: "magna", morph: "VERB|Case=Nom|Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part", gloss: "empowered"}   # mögnuð
+    rag.10.132.6: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.132.7: {lemma: "þegar", morph: "ADV", gloss: "as-soon"}   # þegar
+    rag.10.132.8: {lemma: "er", morph: "SCONJ", gloss: "as"}   # er
+    rag.10.132.9: {lemma: "maðr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "men"}   # menn
+    rag.10.132.10: {lemma: "heyra", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "hear"}   # heyra
+    rag.10.132.11: {lemma: "lát", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "cries"}   # lát
+    rag.10.132.12: {lemma: "hon", morph: "PRON|Case=Gen|Gender=Fem|Number=Sing|Person=3", gloss: "its"}   # hennar
+    rag.10.132.13: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "have"}   # hafa
+    rag.10.132.14: {lemma: "óvinr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "enemies"}   # óvinir
+    rag.10.132.15: {lemma: "hann", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|Person=3", gloss: "his"}   # hans
+    rag.10.132.16: {lemma: "engi", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Neg", gloss: "none"}   # engir
+    rag.10.132.17: {lemma: "standa", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Mid", gloss: "withstood"}   # staðizt
+    rag.10.132.18: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.132.19: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.132.20: {lemma: "trauðr", morph: "ADV", gloss: "hardly"}   # trautt
+    rag.10.132.21: {lemma: "sem", morph: "SCONJ", gloss: "as-if"}   # sem
+    rag.10.132.22: {lemma: "berja", morph: "VERB|VerbForm=Inf|Voice=Mid", gloss: "fight"}   # berjast
+    rag.10.132.23: {lemma: "skulu", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "should"}   # skuli
+    rag.10.132.24: {lemma: "við", morph: "ADP", gloss: "against"}   # við
+    rag.10.132.25: {lemma: "maðr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "men"}   # menn
+    rag.10.132.26: {lemma: "at", morph: "ADP", gloss: "at"}   # at
+    rag.10.132.27: {lemma: "einn", morph: "NUM|Case=Gen|Gender=Neut|Number=Sing", gloss: "only"}   # eins
+    rag.10.133.1: {lemma: "heldr", morph: "ADV|Degree=Cmp", gloss: "rather"}   # heldr
+    rag.10.133.2: {lemma: "mega", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "may"}   # má
+    rag.10.133.3: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rag.10.133.4: {lemma: "sá", morph: "PRON|Case=Gen|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þess
+    rag.10.133.5: {lemma: "ætla", morph: "VERB|VerbForm=Inf", gloss: "expect"}   # ætla
+    rag.10.133.6: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.133.7: {lemma: "fyrr", morph: "ADV|Degree=Cmp", gloss: "sooner"}   # fyrri
+    rag.10.133.8: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    rag.10.133.9: {lemma: "tröllskapr", morph: "NOUN|Case=Dat|Definite=Def|Gender=Masc|Number=Sing", gloss: "the-troll-craft"}   # tröllskapnum
+    rag.10.133.10: {lemma: "mæta", morph: "VERB|VerbForm=Inf", gloss: "meet"}   # mæta
+    rag.10.133.11: {lemma: "en", morph: "SCONJ", gloss: "than"}   # en
+    rag.10.133.12: {lemma: "konungr", morph: "NOUN|Case=Dat|Definite=Def|Gender=Masc|Number=Sing", gloss: "the-king"}   # konunginum
+    rag.10.133.13: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.133.14: {lemma: "vilja", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "will"}   # vil
+    rag.10.133.15: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    rag.10.133.16: {lemma: "hvárki", morph: "CCONJ", gloss: "neither"}   # hvárki
+    rag.10.133.17: {lemma: "hætta", morph: "VERB|VerbForm=Inf", gloss: "risk"}   # hætta
+    rag.10.133.18: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rag.10.133.19: {lemma: "til", morph: "ADV", gloss: "to-it"}   # til
+    rag.10.133.20: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "myself"}   # mér
+    rag.10.133.21: {lemma: "né", morph: "CCONJ", gloss: "nor"}   # né
+    rag.10.133.22: {lemma: "lið", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "host"}   # liði
+    rag.10.133.23: {lemma: "minn", morph: "DET|Case=Dat|Gender=Neut|Number=Sing|Poss=Yes", gloss: "my"}   # mínu
+    rag.10.134.1: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # Hún
+    rag.10.134.2: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rag.10.134.3: {lemma: "á", morph: "ADP", gloss: "on"}   # Á
+    rag.10.134.4: {lemma: "hinn", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # hitt
+    rag.10.134.5: {lemma: "mega", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "canst-thou"}   # máttu
+    rag.10.134.6: {lemma: "líta", morph: "VERB|VerbForm=Inf", gloss: "look"}   # líta
+    rag.10.134.7: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.134.8: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "thou"}   # þú
+    rag.10.134.9: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "wilt"}   # munt
+    rag.10.134.10: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.134.11: {lemma: "bæði", morph: "CCONJ", gloss: "both"}   # bæði
+    rag.10.134.12: {lemma: "mega", morph: "VERB|VerbForm=Inf", gloss: "be-able"}   # mega
+    rag.10.134.13: {lemma: "heita", morph: "VERB|VerbForm=Inf", gloss: "be-called"}   # heita
+    rag.10.134.14: {lemma: "mikill", morph: "ADJ|Case=Nom|Degree=Sup|Gender=Masc|Number=Sing", gloss: "greatest"}   # mestr
+    rag.10.134.15: {lemma: "maðr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "man"}   # maðr
+    rag.10.134.16: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.134.17: {lemma: "vinna", morph: "VERB|VerbForm=Inf", gloss: "do"}   # vinna
+    rag.10.134.18: {lemma: "engi", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Neg", gloss: "nothing"}   # ekki
+    rag.10.134.19: {lemma: "til", morph: "ADV", gloss: "for-it"}   # til
+    rag.10.135.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.135.2: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.135.3: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rag.10.135.4: {lemma: "hon", morph: "PRON|Case=Dat|Gender=Fem|Number=Sing|Person=3", gloss: "to-her"}   # henni
+    rag.10.135.5: {lemma: "þykkja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "seems"}   # þykkir
+    rag.10.135.6: {lemma: "fyrir", morph: "ADP", gloss: "beyond"}   # fyrir
+    rag.10.135.7: {lemma: "ván", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "expectation"}   # ván
+    rag.10.135.8: {lemma: "koma", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "come"}   # komit
+    rag.10.135.9: {lemma: "ætla", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "intends"}   # ætlar
+    rag.10.135.10: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rag.10.135.11: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rag.10.135.12: {lemma: "brott", morph: "ADV", gloss: "away"}   # brott
+    rag.10.135.13: {lemma: "þykkja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "seemed"}   # þótti
+    rag.10.135.14: {lemma: "hon", morph: "PRON|Case=Dat|Gender=Fem|Number=Sing|Person=3", gloss: "to-her"}   # henni
+    rag.10.135.15: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "they"}   # þeir
+    rag.10.135.16: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.135.17: {lemma: "mikill", morph: "ADJ|Case=Gen|Gender=Neut|Number=Sing", gloss: "much"}   # mikils
+    rag.10.135.18: {lemma: "meta", morph: "VERB|VerbForm=Inf", gloss: "value"}   # meta
+    rag.10.135.19: {lemma: "sinn", morph: "DET|Case=Acc|Gender=Neut|Number=Plur|Poss=Yes", gloss: "her-own"}   # sín
+    rag.10.135.20: {lemma: "orð", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "words"}   # orð
+    rag.10.136.1: {lemma: "þá", morph: "ADV", gloss: "then"}   # Þá
+    rag.10.136.2: {lemma: "mæla", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # mælti
+    rag.10.136.3: {lemma: "Sigurðr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Sigurd"}   # Sigurðr
+    rag.10.136.4: {lemma: "ormr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Snake"}   # ormr
+    rag.10.136.5: {lemma: "í", morph: "ADP", gloss: "in-the"}   # í
+    rag.10.136.6: {lemma: "auga", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "Eye"}   # auga
+    rag.10.136.7: {lemma: "segja", morph: "VERB|VerbForm=Inf", gloss: "tell"}   # Segja
+    rag.10.136.8: {lemma: "mega", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "can"}   # má
+    rag.10.136.9: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    rag.10.136.10: {lemma: "þú", morph: "PRON|Case=Dat|Number=Sing|Person=2", gloss: "thee"}   # þér
+    rag.10.136.11: {lemma: "móðir", morph: "NOUN|Case=Voc|Gender=Fem|Number=Sing", gloss: "mother"}   # móðir
+    rag.10.136.12: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rag.10.136.13: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.136.14: {lemma: "hvat", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Int", gloss: "what"}   # hvat
+    rag.10.136.15: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "to-me"}   # mér
+    rag.10.136.16: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.136.17: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rag.10.136.18: {lemma: "hugr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "mind"}   # hug
+    rag.10.136.19: {lemma: "en", morph: "CCONJ", gloss: "but"}   # en
+    rag.10.136.20: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.136.21: {lemma: "mega", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "can"}   # má
+    rag.10.136.22: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    rag.10.136.23: {lemma: "ráða", morph: "VERB|VerbForm=Inf", gloss: "rule"}   # ráða
+    rag.10.136.24: {lemma: "sá", morph: "PRON|Case=Gen|Gender=Masc|Number=Plur|PronType=Dem", gloss: "their"}   # þeira
+    rag.10.136.25: {lemma: "svar", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "answers"}   # svörum
+    rag.10.137.1: {lemma: "heyra", morph: "VERB|VerbForm=Inf", gloss: "hear"}   # Heyra
+    rag.10.137.2: {lemma: "vilja", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "will"}   # vil
+    rag.10.137.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    rag.10.137.4: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.137.5: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rag.10.137.6: {lemma: "hon", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|Person=3", gloss: "she"}   # hún
+    rag.10.138.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.138.2: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    rag.10.138.3: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.138.4: {lemma: "vísa", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "a-verse"}   # vísu
+    rag.10.139: {metre: "odd line · staves þ · Sigurd's verse, skaldic measure, as rsons.2.51-58 (there vikna 'weeks'); genitive of time, within three nights"}
+    rag.10.139.1: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that", stave: true}   # Þat
+    rag.10.139.2: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    rag.10.139.3: {lemma: "þrír", morph: "NUM|Case=Gen|Gender=Fem|Number=Plur", gloss: "of-three", stave: true}   # þriggja
+    rag.10.139.4: {lemma: "nótt", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "of-nights"}   # nátta
+    rag.10.140: {metre: "even line · head-stave þ · móðir vocative (ef þik tregar, móðir)"}
+    rag.10.140.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    rag.10.140.2: {lemma: "þú", morph: "PRON|Case=Acc|Number=Sing|Person=2", gloss: "thee", stave: true}   # þik
+    rag.10.140.3: {lemma: "trega", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "grieves"}   # tregar
+    rag.10.140.4: {lemma: "móðir", morph: "NOUN|Case=Voc|Gender=Fem|Number=Sing", gloss: "mother"}   # móðir
+    rag.10.141: {metre: "odd line · staves l · eigu with vér, coded 1st plural"}
+    rag.10.141.1: {lemma: "leið", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "way", stave: true}   # leið
+    rag.10.141.2: {lemma: "eiga", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "have"}   # eigu
+    rag.10.141.3: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    rag.10.141.4: {lemma: "langr", morph: "ADJ|Case=Acc|Gender=Fem|Number=Sing", gloss: "long", stave: true}   # langa
+    rag.10.142: {metre: "even line · head-stave l"}
+    rag.10.142.1: {lemma: "leiðangr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "levy", stave: true}   # leiðangr
+    rag.10.142.2: {lemma: "búa", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "ready"}   # búinn
+    rag.10.142.3: {lemma: "verða", morph: "VERB|VerbForm=Inf", gloss: "become"}   # verða
+    rag.10.143: {metre: "odd line · staves vowel"}
+    rag.10.143.1: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "shall"}   # skal
+    rag.10.143.2: {lemma: "Uppsalir", morph: "PROPN|Case=Dat|Gender=Masc|Number=Plur", gloss: "at-Uppsala", stave: true}   # Uppsölum
+    rag.10.143.3: {lemma: "eigi", morph: "ADV", gloss: "not", stave: true}   # eigi
+    rag.10.144: {metre: "even line · head-stave vowel"}
+    rag.10.144.1: {lemma: "þótt", morph: "SCONJ", gloss: "though"}   # þótt
+    rag.10.144.2: {lemma: "ófafé", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "abundant-wealth", stave: true}   # ófafé
+    rag.10.144.3: {lemma: "bjóða", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "he-offer"}   # bjóði
+    rag.10.145: {metre: "odd line · staves vowel · eggjar is the noun egg 'edge' (subject of duga), not the verb eggja"}
+    rag.10.145.1: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    rag.10.145.2: {lemma: "vér", morph: "PRON|Case=Dat|Number=Plur|Person=1", gloss: "us", stave: true}   # oss
+    rag.10.145.3: {lemma: "duga", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "avail"}   # duga
+    rag.10.145.4: {lemma: "egg", morph: "NOUN|Case=Nom|Gender=Fem|Number=Plur", gloss: "edges", stave: true}   # eggjar
+    rag.10.146: {metre: "even line · head-stave vowel · the þáttr has Eysteinn beli"}
+    rag.10.146.1: {lemma: "Eysteinn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Eystein", stave: true}   # Eysteinn
+    rag.10.146.2: {lemma: "konungr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "king"}   # konungr
+    rag.10.146.3: {lemma: "ráða", morph: "VERB|VerbForm=Inf", gloss: "rule"}   # ráða
+    rag.10.147.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.147.2: {lemma: "er", morph: "SCONJ", gloss: "when"}   # er
+    rag.10.147.3: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.147.4: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "had"}   # hafði
+    rag.10.147.5: {lemma: "þessi", morph: "DET|Case=Acc|Gender=Fem|Number=Sing|PronType=Dem", gloss: "this"}   # þessa
+    rag.10.147.6: {lemma: "vísa", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "verse"}   # vísu
+    rag.10.147.7: {lemma: "kveða", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "spoken"}   # kveðit
+    rag.10.147.8: {lemma: "skipa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Mid", gloss: "changes"}   # skipast
+    rag.10.147.9: {lemma: "nökkurr", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Ind", gloss: "somewhat"}   # nokkut
+    rag.10.147.10: {lemma: "hugr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "mind"}   # hugr
+    rag.10.147.11: {lemma: "sá", morph: "DET|Case=Gen|Gender=Masc|Number=Plur|PronType=Dem", gloss: "of-those"}   # þeira
+    rag.10.147.12: {lemma: "bróðir", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "brothers"}   # bræðra
+    rag.10.148.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.148.2: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.148.3: {lemma: "mæla", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # mælti
+    rag.10.148.4: {lemma: "Áslaug", morph: "PROPN|Case=Nom|Gender=Fem|Number=Sing", gloss: "Aslaug"}   # Áslaug
+    rag.10.148.5: {lemma: "yfir", morph: "ADV", gloss: "over"}   # Yfir
+    rag.10.148.6: {lemma: "lýsa", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "declare"}   # lýsir
+    rag.10.148.7: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "thou"}   # þú
+    rag.10.148.8: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.148.9: {lemma: "sonr", morph: "NOUN|Case=Voc|Gender=Masc|Number=Sing", gloss: "son"}   # sonr
+    rag.10.148.10: {lemma: "minn", morph: "DET|Case=Nom|Gender=Masc|Number=Sing|Poss=Yes", gloss: "my"}   # minn
+    rag.10.148.11: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.148.12: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "thou"}   # þú
+    rag.10.148.13: {lemma: "vilja", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "wilt"}   # vilt
+    rag.10.148.14: {lemma: "gera", morph: "VERB|VerbForm=Inf", gloss: "do"}   # gera
+    rag.10.148.15: {lemma: "minn", morph: "DET|Case=Acc|Gender=Masc|Number=Sing|Poss=Yes", gloss: "my"}   # minn
+    rag.10.148.16: {lemma: "vili", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "will"}   # vilja
+    rag.10.149.1: {lemma: "en", morph: "CCONJ", gloss: "and"}   # En
+    rag.10.149.2: {lemma: "þó", morph: "ADV", gloss: "yet"}   # þó
+    rag.10.149.3: {lemma: "mega", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "can"}   # má
+    rag.10.149.4: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    rag.10.149.5: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.149.6: {lemma: "yfir", morph: "ADV", gloss: "over"}   # yfir
+    rag.10.149.7: {lemma: "sjá", morph: "VERB|VerbForm=Inf", gloss: "see"}   # sjá
+    rag.10.149.8: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.149.9: {lemma: "vit", morph: "PRON|Case=Nom|Number=Dual|Person=1", gloss: "we-two"}   # vit
+    rag.10.149.10: {lemma: "koma", morph: "VERB|Mood=Sub|Number=Dual|Person=1|Tense=Pres", gloss: "bring"}   # komim
+    rag.10.149.11: {lemma: "þessi", morph: "PRON|Case=Dat|Gender=Neut|Number=Sing|PronType=Dem", gloss: "this"}   # þessu
+    rag.10.149.12: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    rag.10.149.13: {lemma: "leið", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "way"}   # leið
+    rag.10.149.14: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    rag.10.149.15: {lemma: "vit", morph: "PRON|Case=Nom|Number=Dual|Person=1", gloss: "we-two"}   # vit
+    rag.10.149.16: {lemma: "hafa", morph: "VERB|Mood=Ind|Number=Dual|Person=1|Tense=Pres", gloss: "have"}   # höfum
+    rag.10.149.17: {lemma: "eigi", morph: "ADV", gloss: "not"}   # eigi
+    rag.10.149.18: {lemma: "fullting", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "help"}   # fullting
+    rag.10.149.19: {lemma: "bróðir", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-brothers"}   # bræðra
+    rag.10.149.20: {lemma: "þinn", morph: "DET|Case=Gen|Gender=Masc|Number=Plur|Poss=Yes", gloss: "thy"}   # þinna
+    rag.10.149.21: {lemma: "en", morph: "CCONJ", gloss: "but"}   # en
+    rag.10.149.22: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.149.23: {lemma: "mega", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "might"}   # mætti
+    rag.10.149.24: {lemma: "svá", morph: "ADV", gloss: "so"}   # svá
+    rag.10.149.25: {lemma: "verða", morph: "VERB|VerbForm=Inf", gloss: "turn-out"}   # verða
+    rag.10.149.26: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.149.27: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "to-me"}   # mér
+    rag.10.149.28: {lemma: "mega", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "might"}   # mætti
+    rag.10.149.29: {lemma: "góðr", morph: "ADV|Degree=Sup", gloss: "best"}   # bezt
+    rag.10.149.30: {lemma: "þykkja", morph: "VERB|VerbForm=Inf", gloss: "seem"}   # þykkja
+    rag.10.149.31: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.149.32: {lemma: "þessi", morph: "PRON|Case=Gen|Gender=Neut|Number=Sing|PronType=Dem", gloss: "this"}   # þessa
+    rag.10.149.33: {lemma: "verða", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "be"}   # yrði
+    rag.10.149.34: {lemma: "hefna", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "avenged"}   # hefnt
+    rag.10.149.35: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.149.36: {lemma: "vel", morph: "ADV", gloss: "well"}   # vel
+    rag.10.149.37: {lemma: "þykkja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "seems"}   # þykki
+    rag.10.149.38: {lemma: "ek", morph: "PRON|Case=Dat|Number=Sing|Person=1", gloss: "to-me"}   # mér
+    rag.10.149.39: {lemma: "þú", morph: "PRON|Case=Dat|Number=Sing|Person=2", gloss: "for-thee"}   # þér
+    rag.10.149.40: {lemma: "fara", morph: "VERB|VerbForm=Inf", gloss: "go"}   # fara
+    rag.10.149.41: {lemma: "sonr", morph: "NOUN|Case=Voc|Gender=Masc|Number=Sing", gloss: "son"}   # sonr
+    rag.10.149.42: {lemma: "minn", morph: "DET|Case=Nom|Gender=Masc|Number=Sing|Poss=Yes", gloss: "my"}   # minn
+    rag.10.150.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.150.2: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.150.3: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    rag.10.150.4: {lemma: "Björn", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Bjorn"}   # Björn
+    rag.10.150.5: {lemma: "vísa", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "a-verse"}   # vísu
+    rag.10.151: {metre: "odd line · staves h · Bjorn's verse, skaldic measure, as rsons.2.60-67"}
+    rag.10.151.1: {lemma: "duga", morph: "VERB|VerbForm=Inf", gloss: "avail"}   # Duga
+    rag.10.151.2: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "will"}   # mun
+    rag.10.151.3: {lemma: "hugr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "courage", stave: true}   # hugr
+    rag.10.151.4: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.151.5: {lemma: "hjarta", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "heart", stave: true}   # hjarta
+    rag.10.152: {metre: "even line · head-stave h"}
+    rag.10.152.1: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rag.10.152.2: {lemma: "hauksnarr", morph: "ADJ|Case=Dat|Gender=Neut|Number=Sing", gloss: "hawk-keen", stave: true}   # hauksnöru
+    rag.10.152.3: {lemma: "brjóst", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "breast"}   # brjósti
+    rag.10.153: {metre: "odd line · staves m"}
+    rag.10.153.1: {lemma: "þótt", morph: "SCONJ", gloss: "though"}   # þótt
+    rag.10.153.2: {lemma: "minnr", morph: "ADV|Degree=Cmp", gloss: "less", stave: true}   # minnr
+    rag.10.153.3: {lemma: "um", morph: "ADP", gloss: "about"}   # um
+    rag.10.153.4: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.153.5: {lemma: "mæla", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "one-speak", stave: true}   # mæli
+    rag.10.154: {metre: "even line · head-stave m"}
+    rag.10.154.1: {lemma: "maðr", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "man", stave: true}   # manni
+    rag.10.154.2: {lemma: "innan", morph: "ADP", gloss: "within"}   # innan
+    rag.10.154.3: {lemma: "rif", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "ribs"}   # rifja
+    rag.10.155: {metre: "odd line · staves vowel · er is the copula 'is'"}
+    rag.10.155.1: {lemma: "eigi", morph: "ADV", gloss: "not", stave: true}   # eigi
+    rag.10.155.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.155.3: {lemma: "vér", morph: "PRON|Case=Dat|Number=Plur|Person=1", gloss: "to-us"}   # oss
+    rag.10.155.4: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rag.10.155.5: {lemma: "auga", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "eyes", stave: true}   # augum
+    rag.10.156: {metre: "even line · head-stave vowel"}
+    rag.10.156.1: {lemma: "ormr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "serpent", stave: true}   # ormr
+    rag.10.156.2: {lemma: "né", morph: "CCONJ", gloss: "nor"}   # né
+    rag.10.156.3: {lemma: "fránn", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "gleaming"}   # fránir
+    rag.10.156.4: {lemma: "snákr", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "snakes"}   # snákar
+    rag.10.157: {metre: "odd line · staves m · staves on mik and mínir, after the even line's head-stave mank"}
+    rag.10.157.1: {lemma: "bróðir", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "brothers"}   # bræðr
+    rag.10.157.2: {lemma: "gleðja", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "gladdened"}   # glöddu
+    rag.10.157.3: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me", stave: true}   # mik
+    rag.10.157.4: {lemma: "minn", morph: "DET|Case=Nom|Gender=Masc|Number=Plur|Poss=Yes", gloss: "my", stave: true}   # mínir
+    rag.10.158: {metre: "even line · head-stave m"}
+    rag.10.158.1: {lemma: "muna", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "remember-I", stave: true}   # mank
+    rag.10.158.2: {lemma: "stjúpsonr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "stepsons"}   # stjúpsonu
+    rag.10.158.3: {lemma: "þinn", morph: "DET|Case=Acc|Gender=Masc|Number=Plur|Poss=Yes", gloss: "thy"}   # þína
+    rag.10.159.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.159.2: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.159.3: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    rag.10.159.4: {lemma: "Hvítserkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Hvitserk"}   # Hvítserkr
+    rag.10.159.5: {lemma: "vísa", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "a-verse"}   # vísu
+    rag.10.160: {metre: "odd line · staves h · Hvitserk's verse, skaldic measure, as rsons.2.69-76; hyggja at = consider, at without an object coded ADV, a reading the row does not list"}
+    rag.10.160.1: {lemma: "hyggja", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "let-us-consider", stave: true}   # Hyggjum
+    rag.10.160.2: {lemma: "at", morph: "ADV", gloss: "to-it"}   # at
+    rag.10.160.3: {lemma: "áðr", morph: "SCONJ", gloss: "before"}   # áðr
+    rag.10.160.4: {lemma: "heita", morph: "VERB|Mood=Sub|Number=Plur|Person=1|Tense=Pres", gloss: "we-vow", stave: true}   # heitim
+    rag.10.161: {metre: "even line · head-stave h"}
+    rag.10.161.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.161.2: {lemma: "hefna", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "avenged", stave: true}   # hefnt
+    rag.10.161.3: {lemma: "mega", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Pres", gloss: "may"}   # megi
+    rag.10.161.4: {lemma: "verða", morph: "VERB|VerbForm=Inf", gloss: "be"}   # verða
+    rag.10.162: {metre: "odd line · staves vowel · ýmsa illu read as 'with various evil' (Agnar's bane to welcome it); uncertain"}
+    rag.10.162.1: {lemma: "láta", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "let-us-make"}   # látum
+    rag.10.162.2: {lemma: "ýmiss", morph: "ADJ|Case=Acc|Gender=Masc|Number=Plur", gloss: "various", stave: true}   # ýmsa
+    rag.10.162.3: {lemma: "illr", morph: "ADJ|Case=Dat|Gender=Neut|Number=Sing", gloss: "with-evil", stave: true}   # illu
+    rag.10.163: {metre: "even line · head-stave vowel"}
+    rag.10.163.1: {lemma: "Agnarr", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "Agnar's", stave: true}   # Agnars
+    rag.10.163.2: {lemma: "bani", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "bane"}   # bana
+    rag.10.163.3: {lemma: "fagna", morph: "VERB|VerbForm=Inf", gloss: "welcome"}   # fagna
+    rag.10.164: {metre: "odd line · staves h · the þáttr has hrindum"}
+    rag.10.164.1: {lemma: "skjóta", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "let-us-shove"}   # skjótum
+    rag.10.164.2: {lemma: "húfr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "hull", stave: true}   # húf
+    rag.10.164.3: {lemma: "á", morph: "ADP", gloss: "onto"}   # á
+    rag.10.164.4: {lemma: "hrönn", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "waves", stave: true}   # hrannir
+    rag.10.165: {metre: "even line · head-stave h"}
+    rag.10.165.1: {lemma: "höggva", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "let-us-hew", stave: true}   # höggum
+    rag.10.165.2: {lemma: "íss", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "ice"}   # ís
+    rag.10.165.3: {lemma: "fyrir", morph: "ADP", gloss: "before"}   # fyr
+    rag.10.165.4: {lemma: "barð", morph: "NOUN|Case=Dat|Gender=Neut|Number=Sing", gloss: "prow"}   # barði
+    rag.10.166: {metre: "odd line · staves s"}
+    rag.10.166.1: {lemma: "sjá", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "let-us-look", stave: true}   # sjám
+    rag.10.166.2: {lemma: "á", morph: "ADP", gloss: "to"}   # á
+    rag.10.166.3: {lemma: "hinn", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # hitt
+    rag.10.166.4: {lemma: "hvé", morph: "ADV", gloss: "how"}   # hvé
+    rag.10.166.5: {lemma: "snekkja", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "warships", stave: true}   # snekkjur
+    rag.10.167: {metre: "even line · head-stave s"}
+    rag.10.167.1: {lemma: "snemma", morph: "ADV|Degree=Sup", gloss: "soonest", stave: true}   # snemmst
+    rag.10.167.2: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    rag.10.167.3: {lemma: "fá", morph: "VERB|Mood=Sub|Number=Plur|Person=1|Tense=Pres", gloss: "may-get"}   # fáim
+    rag.10.167.4: {lemma: "búa", morph: "VERB|Case=Acc|Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part", gloss: "ready"}   # búnar
+    rag.10.168.1: {lemma: "en", morph: "CCONJ", gloss: "and"}   # En
+    rag.10.168.2: {lemma: "Hvítserkr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Hvitserk"}   # Hvítserkr
+    rag.10.168.3: {lemma: "ræða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # ræddi
+    rag.10.168.4: {lemma: "því", morph: "ADV", gloss: "because"}   # því
+    rag.10.168.5: {lemma: "um", morph: "ADP", gloss: "about"}   # um
+    rag.10.168.6: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    rag.10.168.7: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.168.8: {lemma: "íss", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "ice"}   # ís
+    rag.10.168.9: {lemma: "skulu", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "should"}   # skyldi
+    rag.10.168.10: {lemma: "höggva", morph: "VERB|VerbForm=Inf", gloss: "hew"}   # höggva
+    rag.10.168.11: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.168.12: {lemma: "frost", morph: "NOUN|Case=Nom|Gender=Neut|Number=Plur", gloss: "frosts"}   # frost
+    rag.10.168.13: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "were"}   # váru
+    rag.10.168.14: {lemma: "á", morph: "ADV", gloss: "on"}   # á
+    rag.10.168.15: {lemma: "mikill", morph: "ADJ|Case=Nom|Gender=Neut|Number=Plur", gloss: "great"}   # mikil
+    rag.10.168.16: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.168.17: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "were"}   # váru
+    rag.10.168.18: {lemma: "skip", morph: "NOUN|Case=Nom|Gender=Neut|Number=Plur", gloss: "ships"}   # skip
+    rag.10.168.19: {lemma: "sá", morph: "PRON|Case=Gen|Gender=Masc|Number=Plur|PronType=Dem", gloss: "their"}   # þeira
+    rag.10.168.20: {lemma: "inni", morph: "ADV", gloss: "in"}   # inni
+    rag.10.168.21: {lemma: "frjósa", morph: "VERB|Case=Nom|Gender=Neut|Number=Plur|Tense=Past|VerbForm=Part", gloss: "frozen"}   # frerin
+    rag.10.169.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.169.2: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.169.3: {lemma: "taka", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "took"}   # tók
+    rag.10.169.4: {lemma: "Ívarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Ivar"}   # Ívarr
+    rag.10.169.5: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rag.10.169.6: {lemma: "orð", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "words"}   # orða
+    rag.10.169.7: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.169.8: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rag.10.169.9: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.169.10: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rag.10.169.11: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # var
+    rag.10.169.12: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    rag.10.169.13: {lemma: "koma", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "come"}   # komit
+    rag.10.169.14: {lemma: "er", morph: "SCONJ", gloss: "where"}   # er
+    rag.10.169.15: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.169.16: {lemma: "munu", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "would"}   # mundi
+    rag.10.169.17: {lemma: "nökkurr", morph: "PRON|Case=Acc|Gender=Masc|Number=Sing|PronType=Ind", gloss: "some"}   # nokkurn
+    rag.10.169.18: {lemma: "hlutr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "share"}   # hlut
+    rag.10.169.19: {lemma: "í", morph: "ADV", gloss: "in-it"}   # í
+    rag.10.169.20: {lemma: "eiga", morph: "VERB|VerbForm=Inf", gloss: "have"}   # eiga
+    rag.10.169.21: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.169.22: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.169.23: {lemma: "kveða", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "spoke"}   # kvað
+    rag.10.169.24: {lemma: "hann", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hann
+    rag.10.169.25: {lemma: "vísa", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "a-verse"}   # visu
+    rag.10.170: {metre: "odd line · staves vowel · Ivar's verse, skaldic measure, as rsons.2.78-85"}
+    rag.10.170.1: {lemma: "hafa", morph: "VERB|Mood=Ind|Number=Plur|Person=2|Tense=Pres", gloss: "ye-have"}   # Hafið
+    rag.10.170.2: {lemma: "ofrhugi", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "over-courage", stave: true}   # ofrhuga
+    rag.10.170.3: {lemma: "ærinn", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "enough", stave: true}   # ærinn
+    rag.10.171: {metre: "even line · head-stave vowel"}
+    rag.10.171.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.171.2: {lemma: "áræði", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "boldness", stave: true}   # áræði
+    rag.10.171.3: {lemma: "bæði", morph: "CCONJ", gloss: "both"}   # bæði
+    rag.10.172: {metre: "odd line · staves þ"}
+    rag.10.172.1: {lemma: "sá", morph: "PRON|Case=Gen|Gender=Neut|Number=Sing|PronType=Dem", gloss: "of-that", stave: true}   # þess
+    rag.10.172.2: {lemma: "munu", morph: "AUX|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "would"}   # mundi
+    rag.10.172.3: {lemma: "þá", morph: "ADV", gloss: "then"}   # þá
+    rag.10.172.4: {lemma: "þurfa", morph: "VERB|VerbForm=Inf", gloss: "need", stave: true}   # þurfa
+    rag.10.173: {metre: "even line · head-stave þ · þrá 'longing, stubborn will' and mikit as adverb; uncertain"}
+    rag.10.173.1: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.173.2: {lemma: "þrá", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "longing", stave: true}   # þrá
+    rag.10.173.3: {lemma: "mikill", morph: "ADV", gloss: "greatly"}   # mikit
+    rag.10.173.4: {lemma: "fylgja", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Past", gloss: "followed"}   # fylgdi
+    rag.10.174: {metre: "odd line · staves b"}
+    rag.10.174.1: {lemma: "bera", morph: "VERB|VerbForm=Inf", gloss: "bear", stave: true}   # bera
+    rag.10.174.2: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "must"}   # mun
+    rag.10.174.3: {lemma: "ek", morph: "PRON|Case=Acc|Number=Sing|Person=1", gloss: "me"}   # mik
+    rag.10.174.4: {lemma: "fyrir", morph: "ADP", gloss: "before"}   # fyr
+    rag.10.174.5: {lemma: "bragnar", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "warriors", stave: true}   # bragna
+    rag.10.175: {metre: "even line · head-stave b · verða with the infinitive bera = must (one must bear me forward)"}
+    rag.10.175.1: {lemma: "beinlauss", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "boneless", stave: true}   # beinlausan
+    rag.10.175.2: {lemma: "fram", morph: "ADV", gloss: "forward"}   # fram
+    rag.10.175.3: {lemma: "verða", morph: "VERB|VerbForm=Inf", gloss: "must"}   # verða
+    rag.10.176: {metre: "odd line · staves h"}
+    rag.10.176.1: {lemma: "þó", morph: "ADV", gloss: "yet"}   # þó
+    rag.10.176.2: {lemma: "geta", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "got-I"}   # gatk
+    rag.10.176.3: {lemma: "hönd", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "hand", stave: true}   # hönd
+    rag.10.176.4: {lemma: "til", morph: "ADP", gloss: "to"}   # til
+    rag.10.176.5: {lemma: "hefnd", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "vengeance", stave: true}   # hefnda
+    rag.10.177: {metre: "even line · head-stave h · the head-stave h falls on hváriga"}
+    rag.10.177.1: {lemma: "at", morph: "SCONJ", gloss: "though"}   # at
+    rag.10.177.2: {lemma: "hvárigr", morph: "PRON|Case=Acc|Gender=Fem|Number=Sing|PronType=Neg", gloss: "neither", stave: true}   # hváriga
+    rag.10.177.3: {lemma: "nýta", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres", gloss: "use-I-not"}   # nýtak
+    rag.10.178.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # Ok
+    rag.10.178.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    rag.10.178.3: {lemma: "hinn", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # hitt
+    rag.10.178.4: {lemma: "nú", morph: "ADV", gloss: "now"}   # nú
+    rag.10.178.5: {lemma: "til", morph: "ADV", gloss: "to-do"}   # til
+    rag.10.178.6: {lemma: "segja", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "says"}   # segir
+    rag.10.178.7: {lemma: "Ívarr", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Ivar"}   # Ívarr
+    rag.10.178.8: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.178.9: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    rag.10.178.10: {lemma: "leggja", morph: "VERB|Mood=Sub|Number=Plur|Person=1|Tense=Pres", gloss: "lay"}   # leggjum
+    rag.10.178.11: {lemma: "á", morph: "ADP", gloss: "on"}   # á
+    rag.10.178.12: {lemma: "slíkr", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "such"}   # slíkan
+    rag.10.178.13: {lemma: "hugr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "mind"}   # hug
+    rag.10.178.14: {lemma: "sem", morph: "SCONJ", gloss: "as"}   # sem
+    rag.10.178.15: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    rag.10.178.16: {lemma: "mega", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "can"}   # megum
+    rag.10.178.17: {lemma: "of", morph: "ADP", gloss: "over"}   # of
+    rag.10.178.18: {lemma: "skipabúnaðr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "ship-fitting"}   # skipabúnað
+    rag.10.178.19: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    rag.10.178.20: {lemma: "um", morph: "ADP", gloss: "about"}   # um
+    rag.10.178.21: {lemma: "samdráttr", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "gathering"}   # samdrátt
+    rag.10.178.22: {lemma: "herlið", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "of-the-war-host"}   # herliðs
+    rag.10.178.23: {lemma: "því", morph: "ADV", gloss: "because"}   # því
+    rag.10.178.24: {lemma: "at", morph: "SCONJ", gloss: "that"}   # at
+    rag.10.178.25: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    rag.10.178.26: {lemma: "munu", morph: "AUX|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "shall"}   # munum
+    rag.10.178.27: {lemma: "sá", morph: "PRON|Case=Gen|Gender=Neut|Number=Sing|PronType=Dem", gloss: "of-that"}   # þess
+    rag.10.178.28: {lemma: "við", morph: "ADV", gloss: "of-it"}   # við
+    rag.10.178.29: {lemma: "þurfa", morph: "VERB|VerbForm=Inf", gloss: "need"}   # þurfa
+    rag.10.178.30: {lemma: "at", morph: "PART", gloss: "to"}   # at
+    rag.10.178.31: {lemma: "spara", morph: "VERB|VerbForm=Inf", gloss: "spare"}   # spara
+    rag.10.178.32: {lemma: "engi", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Neg", gloss: "nothing"}   # ekki
+    rag.10.178.33: {lemma: "af", morph: "ADV", gloss: "off"}   # af
+    rag.10.178.34: {lemma: "ef", morph: "SCONJ", gloss: "if"}   # ef
+    rag.10.178.35: {lemma: "vér", morph: "PRON|Case=Nom|Number=Plur|Person=1", gloss: "we"}   # vér
+    rag.10.178.36: {lemma: "skulu", morph: "AUX|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "shall"}   # skulum
+    rag.10.178.37: {lemma: "sigra", morph: "VERB|VerbForm=Inf|Voice=Mid", gloss: "win"}   # sigrast
+    rag.10.179.1: {lemma: "nú", morph: "ADV", gloss: "now"}   # Nú
+    rag.10.179.2: {lemma: "ganga", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "goes"}   # gengr
+    rag.10.179.3: {lemma: "Áslaug", morph: "PROPN|Case=Nom|Gender=Fem|Number=Sing", gloss: "Aslaug"}   # Áslaug
+    rag.10.179.4: {lemma: "í", morph: "ADP", gloss: "in"}   # í
+    rag.10.179.5: {lemma: "brott", morph: "ADV", gloss: "away"}   # brott

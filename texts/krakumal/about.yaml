@@ -1,0 +1,26 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: krakumal
+src: weft.about 0.1
+fetched: '2026-10-22'
+match: work
+wikipedia:
+  title: Krákumál
+  lang: en
+  revision: 1370550196
+  url: https://en.wikipedia.org/w/index.php?title=Kr%C3%A1kum%C3%A1l&oldid=1370550196
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Krákumál” (en.wikipedia.org, revision 1370550196), CC BY-SA
+    4.0
+  lead: Krákumál or the Lay of Kraka is a skaldic poem, consisting of a monologue in which Ragnar Lodbrok
+    is dying in Ælla's snake pit and looks back at a life full of heroic deeds. It was composed in the
+    12th century, almost certainly in the Scottish islands. It is composed in a kind of háttlausa in 29
+    stanzas, most of them with ten lines. Thomas Percy was the first to translate the poem into English.
+wikidata:
+  id: Q1358906
+  revision: 2529153479
+  license: CC0
+  description: poem
+  instance_of:
+  - id: Q7725634
+    label: literary work

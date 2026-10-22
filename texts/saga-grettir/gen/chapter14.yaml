@@ -2470,6 +2470,135 @@ lines:
     sound:
       old-norse: {ipa: ˈswa.rar, respell: SWA-rar}
       modern-icelandic: {ipa: ˈsva.rar, respell: SVA-rar}
+- id: gre.14.31v1
+  cite: urn:weft:non:grettis-saga.icepahc:14.31v1
+  text: Þat göri ek víst, er vetrar,
+  tokens:
+  - id: gre.14.31v1.1
+    surface: Þat
+    sound:
+      old-norse: {ipa: θat, respell: that}
+      modern-icelandic: {ipa: θat, respell: that}
+  - id: gre.14.31v1.2
+    surface: göri
+    norm: gøri
+    sound:
+      old-norse: {ipa: ˈɡø.ri, respell: GÖ-ri}
+      modern-icelandic: {ipa: ˈɡœ.rɪ, respell: GÖ-ri}
+  - id: gre.14.31v1.3
+    surface: ek
+    sound:
+      old-norse: {ipa: ek, respell: ek}
+      modern-icelandic: {ipa: ɛk, respell: ek}
+  - id: gre.14.31v1.4
+    surface: víst
+    punct: ','
+    sound:
+      old-norse: {ipa: wiːst, respell: weest}
+      modern-icelandic: {ipa: vist, respell: veest}
+  - id: gre.14.31v1.5
+    surface: er
+    sound:
+      old-norse: {ipa: er, respell: er}
+      modern-icelandic: {ipa: ɛr, respell: er}
+  - id: gre.14.31v1.6
+    surface: vetrar
+    punct: ','
+    sound:
+      old-norse: {ipa: ˈwet.rar, respell: WET-rar}
+      modern-icelandic: {ipa: ˈvɛt.rar, respell: VET-rar}
+  verse: true
+- id: gre.14.31v2
+  cite: urn:weft:non:grettis-saga.icepahc:14.31v2
+  text: ving ek háls á kjúklingum;
+  tokens:
+  - id: gre.14.31v2.1
+    surface: ving
+    sound:
+      old-norse: {ipa: wiŋɡ, respell: wingg}
+      modern-icelandic: {ipa: vɪŋɡ, respell: vingg}
+  - id: gre.14.31v2.2
+    surface: ek
+    sound:
+      old-norse: {ipa: ek, respell: ek}
+      modern-icelandic: {ipa: ɛk, respell: ek}
+  - id: gre.14.31v2.3
+    surface: háls
+    sound:
+      old-norse: {ipa: haːls, respell: haals}
+      modern-icelandic: {ipa: hauls, respell: howls}
+  - id: gre.14.31v2.4
+    surface: á
+    sound:
+      old-norse: {ipa: aː, respell: aa}
+      modern-icelandic: {ipa: au, respell: ow}
+  - id: gre.14.31v2.5
+    surface: kjúklingum
+    punct: ;
+    sound:
+      old-norse: {ipa: ˈkjuːk.liŋ.ɡum, respell: KYOOK-ling-gum}
+      modern-icelandic: {ipa: ˈkjuk.lɪŋ.ɡʏm, respell: KYOOK-ling-güm}
+  verse: true
+- id: gre.14.31v3
+  cite: urn:weft:non:grettis-saga.icepahc:14.31v3
+  text: enn þótt ellri finnist,
+  tokens:
+  - id: gre.14.31v3.1
+    surface: enn
+    norm: en
+    sound:
+      old-norse: {ipa: en, respell: en}
+      modern-icelandic: {ipa: ɛn, respell: en}
+  - id: gre.14.31v3.2
+    surface: þótt
+    sound:
+      old-norse: {ipa: θoːtt, respell: thohtt}
+      modern-icelandic: {ipa: θoutt, respell: thohtt}
+  - id: gre.14.31v3.3
+    surface: ellri
+    sound:
+      old-norse: {ipa: ˈell.ri, respell: ELL-ri}
+      modern-icelandic: {ipa: ˈɛtl.rɪ, respell: ETL-ri}
+  - id: gre.14.31v3.4
+    surface: finnist
+    punct: ','
+    sound:
+      old-norse: {ipa: ˈfin.nist, respell: FIN-nist}
+      modern-icelandic: {ipa: ˈfɪn.nɪst, respell: FIN-nist}
+  verse: true
+- id: gre.14.31v4
+  cite: urn:weft:non:grettis-saga.icepahc:14.31v4
+  text: einn berr ek af sèrhverri.
+  tokens:
+  - id: gre.14.31v4.1
+    surface: einn
+    sound:
+      old-norse: {ipa: einn, respell: einn}
+      modern-icelandic: {ipa: eitn, respell: aytn}
+  - id: gre.14.31v4.2
+    surface: berr
+    norm: ber
+    sound:
+      old-norse: {ipa: ber, respell: ber}
+      modern-icelandic: {ipa: bɛr, respell: ber}
+  - id: gre.14.31v4.3
+    surface: ek
+    sound:
+      old-norse: {ipa: ek, respell: ek}
+      modern-icelandic: {ipa: ɛk, respell: ek}
+  - id: gre.14.31v4.4
+    surface: af
+    sound:
+      old-norse: {ipa: av, respell: av}
+      modern-icelandic: {ipa: av, respell: av}
+  - id: gre.14.31v4.5
+    surface: sèrhverri
+    norm: sérhverri
+    punct: .
+    sound:
+      old-norse: {ipa: ˈseːrx.wer.ri, respell: SAYRKH-wer-ri}
+      modern-icelandic: {ipa: ˈsjɛrk.vɛr.rɪ, respell: SYERK-ver-ri}
+  verse: true
 - id: gre.14.32
   cite: urn:weft:non:grettis-saga.icepahc:14.32
   text: Og skaltu eigi lengur af þeim bera," sagði Ásmundur.
@@ -4364,6 +4493,227 @@ lines:
     sound:
       old-norse: {ipa: ˈθes.sa, respell: THES-sa}
       modern-icelandic: {ipa: ˈθɛs.sa, respell: THES-sa}
+- id: gre.14.53v1
+  cite: urn:weft:non:grettis-saga.icepahc:14.53v1
+  text: Mik vill menja stökkvir
+  tokens:
+  - id: gre.14.53v1.1
+    surface: Mik
+    sound:
+      old-norse: {ipa: mik, respell: mik}
+      modern-icelandic: {ipa: mɪk, respell: mik}
+  - id: gre.14.53v1.2
+    surface: vill
+    sound:
+      old-norse: {ipa: will, respell: will}
+      modern-icelandic: {ipa: vɪtl, respell: vitl}
+  - id: gre.14.53v1.3
+    surface: menja
+    sound:
+      old-norse: {ipa: ˈmen.ja, respell: MEN-ya}
+      modern-icelandic: {ipa: ˈmɛn.ja, respell: MEN-ya}
+  - id: gre.14.53v1.4
+    surface: stökkvir
+    sound:
+      old-norse: {ipa: ˈstɔkk.wir, respell: STAWKK-wir}
+      modern-icelandic: {ipa: ˈstœkk.vɪr, respell: STÖKK-vir}
+  verse: true
+- id: gre.14.53v2
+  cite: urn:weft:non:grettis-saga.icepahc:14.53v2
+  text: (mjök kenni ek þess) brenna,
+  tokens:
+  - id: gre.14.53v2.1
+    surface: mjök
+    lead: (
+    sound:
+      old-norse: {ipa: mjɔk, respell: myawk}
+      modern-icelandic: {ipa: mjœk, respell: myök}
+  - id: gre.14.53v2.2
+    surface: kenni
+    sound:
+      old-norse: {ipa: ˈken.ni, respell: KEN-ni}
+      modern-icelandic: {ipa: ˈkɛn.nɪ, respell: KEN-ni}
+  - id: gre.14.53v2.3
+    surface: ek
+    sound:
+      old-norse: {ipa: ek, respell: ek}
+      modern-icelandic: {ipa: ɛk, respell: ek}
+  - id: gre.14.53v2.4
+    surface: þess
+    punct: )
+    sound:
+      old-norse: {ipa: θess, respell: thess}
+      modern-icelandic: {ipa: θɛss, respell: thess}
+  - id: gre.14.53v2.5
+    surface: brenna
+    punct: ','
+    sound:
+      old-norse: {ipa: ˈbren.na, respell: BREN-na}
+      modern-icelandic: {ipa: ˈbrɛn.na, respell: BREN-na}
+  verse: true
+- id: gre.14.53v3
+  cite: urn:weft:non:grettis-saga.icepahc:14.53v3
+  text: (hoddagrund!) á höndum
+  tokens:
+  - id: gre.14.53v3.1
+    surface: hoddagrund
+    lead: (
+    punct: '!)'
+    sound:
+      old-norse: {ipa: ˈhod.daɣ.rund, respell: HOD-dagh-rund}
+      modern-icelandic: {ipa: ˈhɔd.daɣ.rʏnd, respell: HOD-dagh-ründ}
+  - id: gre.14.53v3.2
+    surface: á
+    sound:
+      old-norse: {ipa: aː, respell: aa}
+      modern-icelandic: {ipa: au, respell: ow}
+  - id: gre.14.53v3.3
+    surface: höndum
+    sound:
+      old-norse: {ipa: ˈhɔn.dum, respell: HAWN-dum}
+      modern-icelandic: {ipa: ˈhœn.dʏm, respell: HÖN-düm}
+  verse: true
+- id: gre.14.53v4
+  cite: urn:weft:non:grettis-saga.icepahc:14.53v4
+  text: (höfugt ráð er þat) báðum.
+  tokens:
+  - id: gre.14.53v4.1
+    surface: höfugt
+    lead: (
+    sound:
+      old-norse: {ipa: ˈhɔ.vuɣt, respell: HAW-vught}
+      modern-icelandic: {ipa: ˈhœ.vʏɣt, respell: HÖ-vüght}
+  - id: gre.14.53v4.2
+    surface: ráð
+    sound:
+      old-norse: {ipa: raːð, respell: raadh}
+      modern-icelandic: {ipa: rauð, respell: rowdh}
+  - id: gre.14.53v4.3
+    surface: er
+    sound:
+      old-norse: {ipa: er, respell: er}
+      modern-icelandic: {ipa: ɛr, respell: er}
+  - id: gre.14.53v4.4
+    surface: þat
+    punct: )
+    sound:
+      old-norse: {ipa: θat, respell: that}
+      modern-icelandic: {ipa: θat, respell: that}
+  - id: gre.14.53v4.5
+    surface: báðum
+    punct: .
+    sound:
+      old-norse: {ipa: ˈbaː.ðum, respell: BAA-dhum}
+      modern-icelandic: {ipa: ˈbau.ðʏm, respell: BOW-dhüm}
+  verse: true
+- id: gre.14.53v5
+  cite: urn:weft:non:grettis-saga.icepahc:14.53v5
+  text: Læt ek á hringa hreyti,
+  tokens:
+  - id: gre.14.53v5.1
+    surface: Læt
+    sound:
+      old-norse: {ipa: lɛːt, respell: lêt}
+      modern-icelandic: {ipa: lait, respell: lait}
+  - id: gre.14.53v5.2
+    surface: ek
+    sound:
+      old-norse: {ipa: ek, respell: ek}
+      modern-icelandic: {ipa: ɛk, respell: ek}
+  - id: gre.14.53v5.3
+    surface: á
+    sound:
+      old-norse: {ipa: aː, respell: aa}
+      modern-icelandic: {ipa: au, respell: ow}
+  - id: gre.14.53v5.4
+    surface: hringa
+    sound:
+      old-norse: {ipa: ˈr̥iŋ.ɡa, respell: HRING-ga}
+      modern-icelandic: {ipa: ˈr̥ɪŋ.ɡa, respell: HRING-ga}
+  - id: gre.14.53v5.5
+    surface: hreyti
+    punct: ','
+    sound:
+      old-norse: {ipa: ˈr̥øy.ti, respell: HRÖY-ti}
+      modern-icelandic: {ipa: ˈr̥ei.tɪ, respell: HRAY-ti}
+  verse: true
+- id: gre.14.53v6
+  cite: urn:weft:non:grettis-saga.icepahc:14.53v6
+  text: (hörgerðr!) tekit verða
+  tokens:
+  - id: gre.14.53v6.1
+    surface: hörgerðr
+    lead: (
+    punct: '!)'
+    sound:
+      old-norse: {ipa: ˈhɔr.ɡerðr, respell: HAWR-gerdhr}
+      modern-icelandic: {ipa: ˈhœr.ɡɛr.ðʏr, respell: HÖR-ger-dhür}
+  - id: gre.14.53v6.2
+    surface: tekit
+    sound:
+      old-norse: {ipa: ˈte.kit, respell: TE-kit}
+      modern-icelandic: {ipa: ˈtɛ.kɪt, respell: TE-kit}
+  - id: gre.14.53v6.3
+    surface: verða
+    sound:
+      old-norse: {ipa: ˈwer.ða, respell: WER-dha}
+      modern-icelandic: {ipa: ˈvɛr.ða, respell: VER-dha}
+  verse: true
+- id: gre.14.53v7
+  cite: urn:weft:non:grettis-saga.icepahc:14.53v7
+  text: (gjör sè ek gildra sára
+  tokens:
+  - id: gre.14.53v7.1
+    surface: gjör
+    norm: gørr
+    lead: (
+    sound:
+      old-norse: {ipa: ɡørr, respell: görr}
+      modern-icelandic: {ipa: ɡœrr, respell: görr}
+  - id: gre.14.53v7.2
+    surface: sè
+    norm: sé
+    sound:
+      old-norse: {ipa: seː, respell: say}
+      modern-icelandic: {ipa: sjɛ, respell: sye}
+  - id: gre.14.53v7.3
+    surface: ek
+    sound:
+      old-norse: {ipa: ek, respell: ek}
+      modern-icelandic: {ipa: ɛk, respell: ek}
+  - id: gre.14.53v7.4
+    surface: gildra
+    sound:
+      old-norse: {ipa: ˈɡild.ra, respell: GILD-ra}
+      modern-icelandic: {ipa: ˈɡɪld.ra, respell: GILD-ra}
+  - id: gre.14.53v7.5
+    surface: sára
+    sound:
+      old-norse: {ipa: ˈsaː.ra, respell: SAA-ra}
+      modern-icelandic: {ipa: ˈsau.ra, respell: SOW-ra}
+  verse: true
+- id: gre.14.53v8
+  cite: urn:weft:non:grettis-saga.icepahc:14.53v8
+  text: gögl) úskornum nöglum.
+  tokens:
+  - id: gre.14.53v8.1
+    surface: gögl
+    punct: )
+    sound:
+      old-norse: {ipa: ɡɔɣl, respell: gawghl}
+      modern-icelandic: {ipa: ɡœɣl, respell: göghl}
+  - id: gre.14.53v8.2
+    surface: úskornum
+    sound:
+      old-norse: {ipa: ˈuːs.kor.num, respell: OOS-kor-num}
+      modern-icelandic: {ipa: ˈus.kɔr.nʏm, respell: OOS-kor-nüm}
+  - id: gre.14.53v8.3
+    surface: nöglum
+    punct: .
+    sound:
+      old-norse: {ipa: ˈnɔɣ.lum, respell: NAWGH-lum}
+      modern-icelandic: {ipa: ˈnœɣ.lʏm, respell: NÖGH-lüm}
+  verse: true
 - id: gre.14.54
   cite: urn:weft:non:grettis-saga.icepahc:14.54
   text: Illa þótti húsfreyju er Grettir hafði þetta til tekið og kvað hann ekki fyrirleitinn verða mundu.
@@ -8968,6 +9318,215 @@ lines:
     sound:
       old-norse: {ipa: ˈwiː.su, respell: WEE-su}
       modern-icelandic: {ipa: ˈvi.sʏ, respell: VEE-sü}
+- id: gre.14.94v1
+  cite: urn:weft:non:grettis-saga.icepahc:14.94v1
+  text: Fyrst hefir flegna trausta
+  tokens:
+  - id: gre.14.94v1.1
+    surface: Fyrst
+    sound:
+      old-norse: {ipa: fyrst, respell: fürst}
+      modern-icelandic: {ipa: fɪrst, respell: first}
+  - id: gre.14.94v1.2
+    surface: hefir
+    sound:
+      old-norse: {ipa: ˈhe.vir, respell: HE-vir}
+      modern-icelandic: {ipa: ˈhɛ.vɪr, respell: HE-vir}
+  - id: gre.14.94v1.3
+    surface: flegna
+    sound:
+      old-norse: {ipa: ˈfleɣ.na, respell: FLEGH-na}
+      modern-icelandic: {ipa: ˈflɛɣ.na, respell: FLEGH-na}
+  - id: gre.14.94v1.4
+    surface: trausta
+    sound:
+      old-norse: {ipa: ˈtrɔus.ta, respell: TROUS-ta}
+      modern-icelandic: {ipa: ˈtrøys.ta, respell: TRÖYS-ta}
+  verse: true
+- id: gre.14.94v2
+  cite: urn:weft:non:grettis-saga.icepahc:14.94v2
+  text: (fær prettað mik Grettir;
+  tokens:
+  - id: gre.14.94v2.1
+    surface: fær
+    lead: (
+    sound:
+      old-norse: {ipa: fɛːr, respell: fêr}
+      modern-icelandic: {ipa: fair, respell: fair}
+  - id: gre.14.94v2.2
+    surface: prettað
+    sound:
+      old-norse: {ipa: ˈpret.tað, respell: PRET-tadh}
+      modern-icelandic: {ipa: ˈprɛt.tað, respell: PRET-tadh}
+  - id: gre.14.94v2.3
+    surface: mik
+    sound:
+      old-norse: {ipa: mik, respell: mik}
+      modern-icelandic: {ipa: mɪk, respell: mik}
+  - id: gre.14.94v2.4
+    surface: Grettir
+    punct: ;
+    sound:
+      old-norse: {ipa: ˈɡret.tir, respell: GRET-tir}
+      modern-icelandic: {ipa: ˈɡrɛt.tɪr, respell: GRET-tir}
+  verse: true
+- id: gre.14.94v3
+  cite: urn:weft:non:grettis-saga.icepahc:14.94v3
+  text: fljóð eru flest hin prúðu
+  tokens:
+  - id: gre.14.94v3.1
+    surface: fljóð
+    sound:
+      old-norse: {ipa: fljoːð, respell: flyohdh}
+      modern-icelandic: {ipa: fljouð, respell: flyohdh}
+  - id: gre.14.94v3.2
+    surface: eru
+    sound:
+      old-norse: {ipa: ˈe.ru, respell: E-ru}
+      modern-icelandic: {ipa: ˈɛ.rʏ, respell: E-rü}
+  - id: gre.14.94v3.3
+    surface: flest
+    sound:
+      old-norse: {ipa: flest, respell: flest}
+      modern-icelandic: {ipa: flɛst, respell: flest}
+  - id: gre.14.94v3.4
+    surface: hin
+    sound:
+      old-norse: {ipa: hin, respell: hin}
+      modern-icelandic: {ipa: hɪn, respell: hin}
+  - id: gre.14.94v3.5
+    surface: prúðu
+    sound:
+      old-norse: {ipa: ˈpruː.ðu, respell: PROO-dhu}
+      modern-icelandic: {ipa: ˈpru.ðʏ, respell: PROO-dhü}
+  verse: true
+- id: gre.14.94v4
+  cite: urn:weft:non:grettis-saga.icepahc:14.94v4
+  text: fullmálug) Keingálu.
+  tokens:
+  - id: gre.14.94v4.1
+    surface: fullmálug
+    punct: )
+    sound:
+      old-norse: {ipa: ˈfull.maː.luɣ, respell: FULL-maa-lugh}
+      modern-icelandic: {ipa: ˈfʏtl.mau.lʏɣ, respell: FÜTL-mow-lügh}
+  - id: gre.14.94v4.2
+    surface: Keingálu
+    norm: Kengálu
+    punct: .
+    sound:
+      old-norse: {ipa: ˈkeŋ.ɡaː.lu, respell: KENG-gaa-lu}
+      modern-icelandic: {ipa: ˈkɛŋ.ɡau.lʏ, respell: KENG-gow-lü}
+  verse: true
+- id: gre.14.94v5
+  cite: urn:weft:non:grettis-saga.icepahc:14.94v5
+  text: Víst man venja flestar
+  tokens:
+  - id: gre.14.94v5.1
+    surface: Víst
+    sound:
+      old-norse: {ipa: wiːst, respell: weest}
+      modern-icelandic: {ipa: vist, respell: veest}
+  - id: gre.14.94v5.2
+    surface: man
+    sound:
+      old-norse: {ipa: man, respell: man}
+      modern-icelandic: {ipa: man, respell: man}
+  - id: gre.14.94v5.3
+    surface: venja
+    sound:
+      old-norse: {ipa: ˈwen.ja, respell: WEN-ya}
+      modern-icelandic: {ipa: ˈvɛn.ja, respell: VEN-ya}
+  - id: gre.14.94v5.4
+    surface: flestar
+    sound:
+      old-norse: {ipa: ˈfles.tar, respell: FLES-tar}
+      modern-icelandic: {ipa: ˈflɛs.tar, respell: FLES-tar}
+  verse: true
+- id: gre.14.94v6
+  cite: urn:weft:non:grettis-saga.icepahc:14.94v6
+  text: vitr drengr af sèr lengi
+  tokens:
+  - id: gre.14.94v6.1
+    surface: vitr
+    sound:
+      old-norse: {ipa: witr, respell: witr}
+      modern-icelandic: {ipa: ˈvɪ.tʏr, respell: VI-tür}
+  - id: gre.14.94v6.2
+    surface: drengr
+    sound:
+      old-norse: {ipa: dreŋɡr, respell: drenggr}
+      modern-icelandic: {ipa: ˈdrɛŋ.ɡʏr, respell: DRENG-gür}
+  - id: gre.14.94v6.3
+    surface: af
+    sound:
+      old-norse: {ipa: av, respell: av}
+      modern-icelandic: {ipa: av, respell: av}
+  - id: gre.14.94v6.4
+    surface: sèr
+    norm: sér
+    sound:
+      old-norse: {ipa: seːr, respell: sayr}
+      modern-icelandic: {ipa: sjɛr, respell: syer}
+  - id: gre.14.94v6.5
+    surface: lengi
+    sound:
+      old-norse: {ipa: ˈleŋ.ɡi, respell: LENG-gi}
+      modern-icelandic: {ipa: ˈlɛŋ.ɡɪ, respell: LENG-gi}
+  verse: true
+- id: gre.14.94v7
+  cite: urn:weft:non:grettis-saga.icepahc:14.94v7
+  text: (hróðr nemi hrings hin fríða
+  tokens:
+  - id: gre.14.94v7.1
+    surface: hróðr
+    lead: (
+    sound:
+      old-norse: {ipa: r̥oːðr, respell: hrohdhr}
+      modern-icelandic: {ipa: ˈr̥ou.ðʏr, respell: HROH-dhür}
+  - id: gre.14.94v7.2
+    surface: nemi
+    sound:
+      old-norse: {ipa: ˈne.mi, respell: NE-mi}
+      modern-icelandic: {ipa: ˈnɛ.mɪ, respell: NE-mi}
+  - id: gre.14.94v7.3
+    surface: hrings
+    sound:
+      old-norse: {ipa: r̥iŋɡs, respell: hringgs}
+      modern-icelandic: {ipa: r̥ɪŋɡs, respell: hringgs}
+  - id: gre.14.94v7.4
+    surface: hin
+    sound:
+      old-norse: {ipa: hin, respell: hin}
+      modern-icelandic: {ipa: hɪn, respell: hin}
+  - id: gre.14.94v7.5
+    surface: fríða
+    sound:
+      old-norse: {ipa: ˈfriː.ða, respell: FREE-dha}
+      modern-icelandic: {ipa: ˈfri.ða, respell: FREE-dha}
+  verse: true
+- id: gre.14.94v8
+  cite: urn:weft:non:grettis-saga.icepahc:14.94v8
+  text: hlín) kvaðningar mínar.
+  tokens:
+  - id: gre.14.94v8.1
+    surface: hlín
+    punct: )
+    sound:
+      old-norse: {ipa: l̥iːn, respell: hleen}
+      modern-icelandic: {ipa: l̥in, respell: hleen}
+  - id: gre.14.94v8.2
+    surface: kvaðningar
+    sound:
+      old-norse: {ipa: ˈkwað.niŋ.ɡar, respell: KWADH-ning-gar}
+      modern-icelandic: {ipa: ˈkvað.nɪŋ.ɡar, respell: KVADH-ning-gar}
+  - id: gre.14.94v8.3
+    surface: mínar
+    punct: .
+    sound:
+      old-norse: {ipa: ˈmiː.nar, respell: MEE-nar}
+      modern-icelandic: {ipa: ˈmi.nar, respell: MEE-nar}
+  verse: true
 - id: gre.14.95
   cite: urn:weft:non:grettis-saga.icepahc:14.95
   text: 'Húsfreyja svarar: " Eigi veit eg hvort mér þykir meir frá móti að þú skipar honum jafnan starfa eða hitt að hann leysir alla einn veg af hendi."'

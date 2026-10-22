@@ -1,0 +1,76 @@
+work: ragnarssona-thattr
+title: "Þáttr af Ragnars sonum: the tale of Ragnar's sons, all 5 chapters"
+short_title: Þáttr af Ragnars sonum
+author: anonymous, Old Icelandic (about 1300)
+language: non
+lang_name: Old Norse
+kind: epic-and-myth
+wikipedia: {title: "Tale of Ragnar's sons", match: work}
+prefix: rsons
+urn: urn:weft:non:ragnarssona-thattr
+unit: section
+section_noun: section
+written:
+  year: 1300
+  display: about 1300
+  label: an Icelandic tale of Ragnar Lothbrok and his sons, preserved in Hauksbók (early 14th century); it retells the saga in brief and follows the sons and their descendants down to Harald Fairhair
+status: phase-0
+extent: {is: whole, of: "all 5 chapters and the verses set in them"}
+pilot:
+  sections: ['1', '2', '3', '4', '5']
+edition:
+  id: fornaldarsogur-weft
+  name: "Þáttr af Ragnars sonum, Guðni Jónsson and Bjarni Vilhjálmsson's normalized text (Fornaldarsögur Norðurlanda, 1943-44) as on heimskringla.no (revision 81121), in a Weft edition file"
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain; normalized text credited to Guðni Jónsson, Bjarni Vilhjálmsson and heimskringla.no; Weft line division CC BY-SA 4.0
+treebank: null
+schemes:
+- old-norse
+- modern-icelandic
+scheme_labels:
+  old-norse: "Old Norse of the 13th century, when the saga was written; from the normalized spelling (approximate)"
+sound_confidence: medium
+sources_extra:
+- id: fornaldarsogur-heimskringla
+  name: Þáttr af Ragnars sonum, Guðni Jónsson and Bjarni Vilhjálmsson's normalized text (Fornaldarsögur Norðurlanda, 1943-44), via heimskringla.no
+  file: sources/fornaldarsogur-heimskringla.txt
+  url: https://heimskringla.no/api.php?action=parse&oldid=81121&prop=wikitext&format=json
+  sha256: bdcf53093de073c13733d25a0b3c7cbc96351c563399805d4fb811aacd49c4b7
+  license: medieval text public domain; normalized text credited to heimskringla.no
+  license_url: http://heimskringla.no/wiki/Heimskringla.no:Copyright
+  page: https://heimskringla.no/index.php?title=%C3%9E%C3%A1ttr_af_Ragnars_sonum&oldid=81121
+  convert: wikitext
+  note: the file is the page's wikitext, taken out of the API's JSON envelope; weft acquire reproduces it
+translations:
+- id: weft-editorial
+  kind: editorial
+  translator: Weft editorial translation, draft
+  year: 2026
+  form: prose, line by line, close to the Old Norse; the verses stanza by stanza
+  license: CC BY-SA 4.0
+- id: vigfusson-powell1883
+  partial: true                      # the verses only
+  translator: Gudbrand Vigfusson and F. York Powell
+  year: 1883
+  form: prose, Corpus Poeticum Boreale, vol. 2 (Oxford, 1883), the verses of the Ragnar saga and of his sons
+  license: public-domain
+  license_url: https://archive.org/details/corpuspoeticumbo02guuoft
+  file: sources/vigfusson-powell1883.txt
+  url: https://archive.org/download/corpuspoeticumbo02guuoft/corpuspoeticumbo02guuoft_djvu.txt
+  sha256: 748666f6376fe6a0a04c9aac1952a2ed52ce168c63df72a23a2bef73647586b9
+- id: waggoner2009
+  kind: reference
+  translator: Ben Waggoner
+  year: 2009
+  form: "The Sagas of Ragnar Lodbrok (The Troth, 2009)"
+- id: tunstall2005
+  kind: reference
+  translator: Peter Tunstall
+  year: 2005
+  form: "The Tale of Ragnar's Sons (online, 2005)"
+predicted_gaps:
+- "no treebank covers this text: lemma, morphology and gloss are hand-annotated after Zoëga, A Concise Dictionary of Old Icelandic (1910), by several hands under one convention table, and the verses also carry staves and meter (draft)"
+- "the normalized text is Guðni Jónsson and Bjarni Vilhjálmsson's (Fornaldarsögur Norðurlanda, 1943-44), not a critical edition; the page reproduces it from heimskringla.no with the markup stripped"
+- "no English translation of the prose is public domain worldwide: Schlauch (1930, New York) entered the US public domain in 2026 but remains in copyright where the term is life plus 70 years; the English beside each line is Weft's own draft translation. Vigfusson and Powell (1883) translate the verses only, and theirs is aligned where they do. The modern translations are cited, not printed"
+- "the old-norse sound scheme models the 13th century approximately, from the normalized spelling"

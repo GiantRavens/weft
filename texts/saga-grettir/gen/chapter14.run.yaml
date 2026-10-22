@@ -3,8 +3,8 @@ run:
   book: 14
   lines: 1-104
 counts:
-  lines: 104
-  tokens: 1163
+  lines: 124
+  tokens: 1248
 failures: {}
 samples: {}
 failure_rate: {}
@@ -13,8 +13,10 @@ predicted_gaps:
 - 'IcePaHC spells the saga in modern Icelandic (kallaður, not kallaðr): the old-norse reading is approximate'
 - 'UD layer is an automatic conversion of hand-made Penn parses: expect some wrong case and part-of-speech tags'
 - 'unit is the sentence: a saga is prose, so lines are sentences and spans are clauses'
-- 'the three verses of chapter 14 (after sentences 31, 53 and 94: Grettir on the geese, Grettir on the back-scratching, Asmund on Kengala) are not in IcePaHC, which leaves out verse; they are not yet edited
-  here, and their translations are left out of the spans, so the chapter''s prose is complete and its verse is not'
+- the three verses of chapter 14 (after sentences 31, 53 and 94) are not in IcePaHC, which leaves out verse; they are set in from the edition of 1853 as transcribed on heimskringla.no, in that edition's
+  older spelling, and hand-annotated after Cleasby and Vigfusson and the Lexicon Poeticum (draft). The readings and kenning resolutions follow the standard editions as recalled, not checked against Íslenzk
+  fornrit VII page by page; the phrase gildra sára gögl in the second verse is disputed. The verse lemmas follow the modern spelling IcePaHC uses for the prose lemmas (ég, það, -ur nominatives), and the
+  sound is read from normalized forms where the 1853 spelling would mislead it (verses.yaml, say)
 - the UD conversion needed 54 corrections in sentences 10-104 (case, person and gender features, the preterite infinitive mundu tagged as finite, pronouns converted as proper nouns, a few lemmas), each
   recorded in the curated overlay
 - the treebank file is 61 MB for one chapter; acceptable, but a slicing acquire step would help

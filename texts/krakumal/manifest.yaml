@@ -1,0 +1,109 @@
+work: krakumal
+title: 'Krákumál: Ragnar Lothbrok''s death song, all 29 stanzas'
+short_title: Krákumál
+author: anonymous, Old Norse (put in the mouth of Ragnar Lothbrok; probably composed in the Orkneys or the Hebrides in the 12th century)
+language: non
+lang_name: Old Norse
+kind: poetry
+wikipedia:
+  title: Krákumál
+  match: work
+prefix: krak
+urn: urn:weft:non:krakumal
+unit: stanza-line
+written:
+  year: 1150
+  display: 12th century
+  label: a skaldic poem in the voice of Ragnar Lothbrok in the snake pit of King Ella, dated by most scholars to the 12th century and
+    placed in the Norse west, the Orkneys or the Hebrides; preserved with Ragnars saga loðbrókar
+status: phase-0
+extent:
+  is: whole
+  of: all 29 stanzas
+pilot:
+  stanzas:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+edition:
+  id: fornaldarsogur-heimskringla
+  name: Guðni Jónsson and Bjarni Vilhjálmsson's normalized text (Fornaldarsögur Norðurlanda, 1943-44), via heimskringla.no
+  format: stanza-text
+  file: sources/fornaldarsogur-heimskringla.txt
+  license: poem public domain; normalized text credited to Guðni Jónsson, Bjarni Vilhjálmsson and heimskringla.no
+  url: https://heimskringla.no/api.php?action=parse&oldid=22564&prop=wikitext&format=json
+  sha256: d8203604f14b7afd30bba65eb14e2bca90ce73f4064854c786f3b3b6c940c669
+  page: https://heimskringla.no/index.php?title=Kr%C3%A1kum%C3%A1l_%28Fornaldars%C3%B6gur_Nor%C3%B0urlanda%29&oldid=22564
+  convert: heimskringla-stanza-text
+  note: the file is the page's wikitext converted by weft to the stanza-text layout (speaker lines and stanza numbers kept, markup dropped);
+    weft acquire reproduces it
+  license_url: http://heimskringla.no/wiki/Heimskringla.no:Copyright
+treebank: null
+schemes:
+- old-norse
+- modern-icelandic
+scheme_labels:
+  old-norse: Old Norse of the 12th century, the poem's likely time; the normalized spelling is Guðni Jónsson's (approximate)
+sound_confidence: medium
+sources_extra: []
+translations:
+- id: vigfusson-powell1883
+  translator: Gudbrand Vigfusson and F. York Powell
+  year: 1883
+  form: prose, Corpus Poeticum Boreale, vol. 2 (Oxford, 1883), pp. 339-345, beside their Old Norse text
+  license: public-domain
+  license_url: https://archive.org/details/corpuspoeticumbo02guuoft
+  file: sources/vigfusson-powell1883.txt
+  url: https://archive.org/download/corpuspoeticumbo02guuoft/corpuspoeticumbo02guuoft_djvu.txt
+  sha256: 748666f6376fe6a0a04c9aac1952a2ed52ce168c63df72a23a2bef73647586b9
+- id: johnstone1782
+  translator: James Johnstone
+  year: 1782
+  form: prose, Lodbrokar-Quida, or the Death-Song of Lodbroc (Copenhagen, 1782), free and expanded
+  license: public-domain
+  license_url: https://archive.org/details/bim_eighteenth-century_lodbrokar-qui-da-or-the_krkuml-icelandic_1782
+  file: sources/johnstone1782.txt
+  url: https://archive.org/download/bim_eighteenth-century_lodbrokar-qui-da-or-the_krkuml-icelandic_1782/bim_eighteenth-century_lodbrokar-qui-da-or-the_krkuml-icelandic_1782_djvu.txt
+  sha256: 1b82e943bc9465cd1beb0dfc37690c5d23ad63195fa9bcc07a2c3e30f261139c
+- id: schlauch1930
+  translator: Margaret Schlauch
+  year: 1930
+  form: "verse, 'The Lay of Kraka', in The Saga of the Volsungs; The Saga of Ragnar Lodbrok together with the Lay of Kraka (New York, 1930), pp. 259-267; five rhymed lines to the stanza"
+  license: "public domain in the United States (published 1930, entered the public domain on 1 January 2026); Schlauch died in 1986; elsewhere the status depends on the country: under a life-plus-70 term it would run through 2056, and countries that apply the rule of the shorter term to a work first published in the United States may treat it as free"
+  license_url: https://archive.org/details/sagaofvolsungssa0000unse
+  file: sources/schlauch1930.txt
+  url: https://archive.org/download/sagaofvolsungssa0000unse/sagaofvolsungssa0000unse_djvu.txt
+  sha256: f0381b93f6cd0c334f7c39b731871dc4a37e44d863ae6c4a1c748646222a928d
+predicted_gaps:
+- "no treebank covers skaldic verse: lemma, morphology, gloss, staves and meter are hand-annotated after Zoëga (draft)"
+- "the normalized text is Guðni Jónsson and Bjarni Vilhjálmsson's, not a critical edition; several readings are uncertain, among them rottar (7), ygli (16) and strenglágar palmi (15), and are annotated as they stand"
+- "the meter is a kind of háttlausa (lines paired by alliteration, without the regular internal rhymes of dróttkvætt); the page marks the staves and gives each line odd or even, and the irregular pairs say so"
+- "Vigfusson and Powell translate in running prose, shorten the refrain to 'We, etc.' and join some stanzas; their spans are aligned stanza by stanza where the English allows. Johnstone (1782) translates freely and expands; his spans follow his numbered stanzas, except that his 19 and 20 are aligned by content rather than by number"
+- "Schlauch (1930) is public domain in the United States only (Schlauch died 1986); her rhymed version compresses each ten-line stanza into five lines and is aligned stanza by stanza"
+- "the old-norse sound scheme models the poem's 12th century approximately, from the normalized spelling; r- and l- spellings of older hr- and hl- words (rafnar, læjandi) are read as written; the alliteration supports the r- spelling in two places (6.3, 7.7)"
