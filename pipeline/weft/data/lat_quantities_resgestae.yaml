@@ -15,10 +15,9 @@
 # the e of sescentas (from sex + centum; Lewis and Short mark no length); the u of Augustus and of
 # nuncupaveram. None of these changes the stress.
 #
-# Limits of the Latin module, recorded here rather than worked around: iis is keyed as eīs, a spelling of
-# the same form, because the module reads word-initial i before a vowel as consonantal (iīs would come out
-# as one syllable, jīs); the true reading is i-īs. The doubled consonantal i of eius (ej-jus) is not
-# modeled. senatus is nominative in three places and genitive (senātūs) in two (4.6, 34.3), and in chapters 5-33 genitive
+# Limits of the Latin module, recorded here rather than worked around: the doubled consonantal i of eius
+# (ej-jus) is not modeled. (iis was once keyed as eīs because the module read every word-initial i before a
+# vowel as consonantal; it now reads i-īs, pin 75.) senatus is nominative in three places and genitive (senātūs) in two (4.6, 34.3), and in chapters 5-33 genitive
 # six times more, where the edition token carries the genitive (n: senātūs); one table entry
 # serves all five, so the classical reading shows a short final u in the two genitives; stress is unaffected.
 # The numeral DCCCLXXXX and s.c. are each read as one word, with one stress.
@@ -181,7 +180,7 @@
 "aliquanto": "aliquantō"
 "plura": "plūra"
 "trecenta": "trecenta"
-"iis": "eīs"
+"iis": "iīs"
 "agros": "agrōs"
 "adsignavi": "adsignāvī"
 "pecuniam": "pecūniam"

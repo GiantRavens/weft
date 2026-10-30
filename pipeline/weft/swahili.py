@@ -80,7 +80,6 @@ UNSTRESSED = {"ya", "wa", "za", "la", "cha", "vya", "pa", "kwa", "mwa", "na"}
 # letters Steere's alphabet uses (Handbook pp. 8-11): no c without h, no q, no x
 STEERE_LETTERS = set("abcdefghijklmnoprstuvwyz'")
 
-_CTX: dict = {}
 
 
 def units(word: str) -> list[tuple[str, str]]:
@@ -201,7 +200,6 @@ def respell_ipa(ipa: str) -> str:
 def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[str, str]]]:
     """Split punctuation off the printed word, check its letters against Steere's alphabet, and
     hold the printed form and any ipa override for phonemize, which draft calls next."""
-    global _CTX
     fields: dict = {}
     fails: list[tuple[str, str]] = []
     word = surface
@@ -221,18 +219,30 @@ def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[
     n = et.get("n")
     if not n:
         fails.append(("modern-form-missing", surface))
-    _CTX = {"t": word, "n": n, "ipa": et.get("ipa") or {}}
     return fields, fails
 
 
-def phonemize(word: str, scheme: str = "z1870", quantities=None, **_) -> dict:
+def _printed_word(surface: str) -> str:
+    """The printed word without its leading and trailing punctuation, as token_fields splits it."""
+    ml = LEAD_P.search(surface)
+    w = surface[ml.end():] if ml else surface
+    mt = TRAIL_P.search(w)
+    return w[:mt.start()] if mt else w
+
+
+WANTS_TOKEN = True        # draft passes the edition token and its printed surface (pin 201)
+
+
+def phonemize(word: str, scheme: str = "z1870", quantities=None, etok: dict | None = None,
+              surface: str | None = None, **_) -> dict:
+    ctx = {"t": _printed_word(surface or ""), "n": etok.get("n"), "ipa": etok.get("ipa") or {}} if etok is not None else {}
     """`word` is the token's modern form (n). The 1870 scheme reads the printed form instead,
     which token_fields has just stored for this token."""
-    mine = _CTX.get("n") == word
-    ov = (_CTX.get("ipa") or {}).get(scheme) if mine else None
+    mine = ctx.get("n") == word
+    ov = (ctx.get("ipa") or {}).get(scheme) if mine else None
     if ov:
         return {"ipa": ov, "respell": respell_ipa(ov), "syllables": len(re.split(r"[. ]", ov))}
-    src = _CTX["t"] if (scheme == "z1870" and mine and _CTX.get("t")) else word
+    src = ctx["t"] if (scheme == "z1870" and mine and ctx.get("t")) else word
     ipas, rss, n = [], [], 0
     for w in src.split():
         ipa, rs, k = word_sound(w, scheme)

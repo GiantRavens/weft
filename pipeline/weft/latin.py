@@ -5,16 +5,42 @@ through the quantity table (``data/lat_quantities.yaml``): lowercase form -> mac
 with ``+`` before an enclitic (``prīmā+que``). A word missing from the table is phonemized
 from its bare spelling and reported as ``quantity-unknown``.
 
-Stress (both schemes): one syllable, that one; two, the first; three or more, the penult if it
-is heavy (long vowel, diphthong, or closed), otherwise the antepenult. Before an enclitic
-(-que, -ne, -ve) the stress falls on the host's last syllable: PRĪ-mā but prī-MĀ-que.
+Stress: one syllable, that one; two, the first; three or more, the penult if it is heavy (long
+vowel, diphthong, or closed), otherwise the antepenult. Before an enclitic (-que, -ne, -ve) the
+stress falls on the host's last syllable: PRĪ-mā but prī-MĀ-que. Every scheme keeps this rule
+except the French method of `as-first-read`, which stresses the last syllable. In the later
+schemes vowel length sets only the stress; the vowel's quality follows the reader's own language.
 
-Schemes
--------
-classical       Restored pronunciation of the late Republic (after W. S. Allen, *Vox Latina*):
-                c and g always hard, v = w, ae = ai, vowel length audible.
-ecclesiastical  Italianate church Latin: c and g soften before e, i, ae, oe; v = v; ae = e;
-                vowel quality ignores length, but stress still follows the classical rule.
+Schemes (ten). The first is the default; the others are "as first read" for authors who wrote
+after Latin was no longer spoken as a first language, each in the reader's own country's manner.
+Each section of the module below gives its rules and evidence; all but the first two are
+reconstructions from indirect evidence and are labelled approximate.
+
+classical         Restored pronunciation of the late Republic (after W. S. Allen, *Vox Latina*):
+                  c and g always hard, v = w, ae = ai, vowel length audible.
+ecclesiastical    Italianate church Latin: c and g soften before e, i, ae, oe; v = v; ae = e;
+                  vowel quality ignores length.
+anglo-latin       A clerk in England around 1215: c before e and i = ts, soft g and consonantal
+                  i = dʒ, h silent, v = v.
+anglo-norman      A cleric in Normandy or Norman England around 1070 (the Bayeux Tapestry): c
+                  before e and i = ts, soft g = dʒ, u = y, as in the French of the time.
+danish-medieval   A Danish cleric around 1200 (Saxo): soft c = s, g always hard, consonantal u
+                  and v = v, qu = kv, th = t, h sounded but k in mihi (michi).
+italian-humanist  Northern Italy in the 1480s (Pico): Italian vowels, soft c = ch, gn = ny, s
+                  between vowels = z.
+low-countries     The Low Countries around 1500 (Erasmus): Dutch vowels, long in open syllables,
+                  u as Dutch uu, g a fricative.
+tudor-english     England around 1516 (More): the English method at an early stage of the Great
+                  Vowel Shift.
+german-humanist   Saxony around 1517 (Luther): stressed open vowels long, c before front vowels
+                  = ts, qu = kv, v = f.
+as-first-read     Takes a `dialect`: english (Newton, the English method of the 1680s, stressed
+                  open vowels with English long values) or french (Descartes, the 1640s, final
+                  stress, u = y, nasal vowels); also dutch, tudor and italian, the rules of the
+                  three humanist schemes above.
+
+Word-initial i before a vowel is the consonant of iam, except before another i (iīs, iīdem) and in
+the Greek words listed in VOCALIC_I (iambus, Iōnia).
 """
 from __future__ import annotations
 
@@ -27,6 +53,10 @@ VOWELS = set("aeiouy")
 DIPHTHONGS = {"ae", "au", "oe"}
 # eu is one syllable only in these words (seu, neu, heu and the Gaulish leuca); in deus, meus, eum it is two
 EU_WORDS = {"seu", "neu", "ceu", "heu", "heus", "leuca", "leucae", "leucam", "leucas", "leucis"}
+# Greek words whose initial i before a vowel is a vowel, not the consonant of iam (Allen, Vox Latina, ch. 2):
+# the forms of iambus, Iōnia and Iōnes, iōta. Latin words in ii- (iīs, iīdem) are handled by the rule itself
+VOCALIC_I = {"iambus", "iambi", "iambo", "iambum", "iambe", "iambos", "iota", "ionia", "ioniae", "ioniam",
+             "iones", "ionum", "ionibus", "ionas", "ionius", "ionium", "ionio", "ionii", "ionicus", "ionica", "ionicum"}
 ENCLITICS = ("que", "ne", "ve")
 STOPS = set("pbtdcgk") | {"ph", "th", "ch"}
 LIQUIDS = set("lr")
@@ -64,8 +94,8 @@ def _segments(word: str) -> list[Seg]:
             segs.append(Seg(c + "h", False)); i += 2; continue
         if c == "x":
             segs.append(Seg("k", False)); segs.append(Seg("s", False)); i += 1; continue
-        if c == "i" and i == 0 and nxt in VOWELS and len(chars) > 2:
-            segs.append(Seg("j", False)); i += 1; continue      # iūnctus, iam: consonantal i
+        if c == "i" and i == 0 and nxt in VOWELS and nxt != "i" and len(chars) > 2 and plain not in VOCALIC_I:
+            segs.append(Seg("j", False)); i += 1; continue      # iūnctus, iam: consonantal i; not iīs, iīdem (pin 75)
         if c in VOWELS:
             pair = c + nxt
             if (pair in DIPHTHONGS or (pair == "eu" and plain in EU_WORDS)) and not mac \
@@ -959,3 +989,210 @@ KEY["anglo-norman"] = [
     ("CAPS", "stressed syllable, by the classical penultimate rule, which clerks of this date still kept"),
 ]
 SCHEME_LABELS["anglo-norman"] = "As first read: Latin in Normandy and Norman England around 1070 (approximate)"
+
+
+# ---------------------------------------------------------------- Danish reading, about 1200
+# Latin as a Danish cleric most likely read it around 1200, when Saxo Grammaticus wrote the Gesta
+# Danorum (about 1185 to 1208) for Archbishop Absalon and his successor Anders Sunesen. Added as its
+# own scheme, after all the others, so no existing scheme changes. No description of how Danes
+# sounded Latin at this date survives; the rules below rest on indirect evidence:
+#
+#   - Schooling. Absalon studied in Paris and in 1165 brought William, a canon of Sainte-Geneviève
+#     there and later abbot of Æbelholt, to reform Danish houses; Anders Sunesen studied in Paris,
+#     Italy and England (Arnold of Lübeck, Chronica Slavorum). The Danish church was
+#     under Hamburg-Bremen until Lund became an archbishopric in 1103/04, and German clerics served
+#     in Denmark throughout the 1100s. A Danish reader had French and German models, and his own
+#     Danish sound system.
+#   - Old Danish and Old Norse forms of Latin and Greek church names. Cecilia gives Danish Sidsel
+#     and Icelandic Sesselja (c before e, i = s; Old Danish had no ts); Michael gives Danish Mikkel
+#     (ch = k); Georgius gives Danish Jørgen, which may show g before e as j (see weakest points).
+#   - The spellings of Holder's text, which follows medieval orthography: ci for ti before a vowel
+#     (gracia, expedicione) shows ti and ci sounding alike, so ti there takes the value of c; e for
+#     ae and oe (celum, pena) shows both as e; y for i in names (Syuardus, Sygne, Roskyldensis) and
+#     Greek words (clypeo, lachrymis) shows y and i sounding alike; michi, which Holder prints 61
+#     times against 7 mihi, shows the h of mihi said as k. (Holder prints nihil, never nichil, so
+#     nihil keeps its h; these counts are for the whole of Holder's text, not book 9 alone.)
+#   - Old Danish sound history: þ was becoming t at the start of words (Danish ting, tak beside
+#     Icelandic þing, þakk) around this time, so th in Latin and in Norse names (Thora) = t; Old
+#     Danish had no voiced z, so s between vowels stays s; it had h, so h is sounded.
+#   - Quantitative verse. Saxo's poems in the Gesta and Anders Sunesen's Hexaemeron (about 1200)
+#     are in classical metres, so these writers knew vowel quantity; the classical penultimate
+#     stress rule is kept.
+#
+#   danish-medieval  c before e, i, y, ae, oe = s (so sc there is s + s); ti before a vowel = si (not
+#                    after s, t, x, or at the start of a word); g always hard, gn = g + n; j and
+#                    consonantal i = j; consonantal u, v and w = v; qu = kv, gu after n = gv;
+#                    h sounded, except between the vowels of mihi, where it is k, as the
+#                    spelling michi shows; ch = k (so michi and nichil as written give k), ph = f,
+#                    th = t, x = ks, z = s; s between vowels = s; ae and oe = e; y = i; u = u;
+#                    length is not heard, only stress. Stress by the classical penultimate rule.
+#
+# Medieval spelling is read as written. Consonantal u is found from the spelling: at the start of
+# a word before a vowel (uirtus, uel), and between vowels (Siuardus, Syuardus, nouus); a word
+# beginning iu before another vowel is I + v (Iuarus, Iuo), and iuu before a vowel is j + u + v
+# (iuuenis). i between vowels is j (cuius, eius, maior). A word not in the quantity table as
+# printed is looked up again with its consonantal u written v (uirtus as virtus).
+#
+# Weakest points: c before front vowels as s rather than ts (a Paris-trained reader of about 1200
+# may still have said ts, as French did until the 1200s); g before e and i kept hard (Jørgen may
+# instead show a soft j, though Low German Jürgen offers another route for that name); h sounded
+# (French-trained readers dropped it); v rather than w for consonantal u and w (the Danish change
+# of w to v is not securely dated); vowel length not heard (the Scandinavian lengthening of
+# stressed vowels in open syllables may already have reached Latin reading in Denmark, as the
+# German rule does in german-humanist); u as u rather than French ü. Norse names (Regnerus,
+# Siuardus, Waldemarus) take the Latin stress rule like any other word, and a Dane may have
+# stressed them on the first syllable as in Danish; the quantity table decides. The date of þ to t
+# in Danish is approximate, so a Dane may still have said þ in Norse names. A consonant
+# followed by uu is read as u + u (tuus, fluuius), so seruus and paruus need a table entry.
+
+_DK_V = {"a": ("a", "a"), "e": ("ɛ", "e"), "i": ("i", "ee"), "y": ("i", "ee"), "o": ("ɔ", "o"),
+         "u": ("u", "oo"), "ae": ("ɛ", "e"), "oe": ("ɛ", "e"), "au": ("au", "ow")}
+
+
+def _dk_consonantal(w: str) -> str:
+    """Write the consonantal u of medieval spelling as v, and i between vowels as j, so that
+    syllabify sees consonants. Macrons and the enclitic + are kept."""
+    units: list[str] = []
+    for ch in ud.normalize("NFD", w):
+        if ud.combining(ch) and units:
+            units[-1] += ch
+        else:
+            units.append(ch)
+    base = [u[0].lower() for u in units]
+    out = list(units)
+
+    def vowel(k: int) -> bool:
+        if not (0 <= k < len(base)) or base[k] not in VOWELS or out[k][0] in "vj":
+            return False
+        if base[k] == "u" and k > 0 and (base[k - 1] == "q" or (base[k - 1] == "g" and k > 1 and base[k - 2] == "n")):
+            return False                     # the u of qu and ngu is not a vowel
+        return True
+
+    start = 0
+    if len(base) > 2 and base[0] == "i" and base[1] == "u":
+        if base[2] == "u" and vowel(3):
+            out[0] = "j" + out[0][1:]; out[2] = "v" + out[2][1:]; start = 3    # iuuenis
+        elif vowel(2) and base[2] != "u":
+            out[1] = "v" + out[1][1:]; start = 2                              # Iuarus, Iuo
+    for k in range(start, len(base)):
+        if base[k] == "u" and vowel(k) and vowel(k + 1) and (k == 0 or vowel(k - 1)):
+            out[k] = "v" + out[k][1:]
+        elif base[k] == "i" and k > 0 and vowel(k) and vowel(k - 1) and vowel(k + 1):
+            out[k] = "j" + out[k][1:]
+    return ud.normalize("NFC", "".join(out))
+
+
+def _danish(syls: list[Syl], plain: str) -> list[tuple[str, str]]:
+    """(ipa, respell) per syllable for the Danish reading of about 1200. plain is the word in
+    lowercase letters, used for the h of mihi."""
+    flat: list[tuple[int, Seg]] = []
+    for n, s in enumerate(syls):
+        for seg in s.onset + [s.nucleus] + s.coda:
+            flat.append((n, seg))
+    ipa = [""] * len(syls)
+    sp = [""] * len(syls)
+    h_is_k = plain.startswith("mihi")
+
+    def front(seg: Seg | None) -> bool:
+        return seg is not None and seg.vowel and (seg.text[0] in "eiy" or seg.text in ("ae", "oe"))
+
+    for k, (n, seg) in enumerate(flat):
+        nxt = flat[k + 1][1] if k + 1 < len(flat) else None
+        nxt2 = flat[k + 2][1] if k + 2 < len(flat) else None
+        prev = flat[k - 1][1] if k > 0 else None
+        t = seg.text
+        if seg.vowel:
+            a, b = _DK_V.get(t, (t, t))
+            ipa[n] += a; sp[n] += b
+            continue
+        if t == "c":
+            if front(nxt) and prev is not None and prev.text == "s" and flat[k - 1][0] == n:
+                a, b = ("", "")              # sc before a front vowel, in one onset: s
+            else:
+                a, b = ("s", "s") if front(nxt) else ("k", "k")
+        elif t == "t" and nxt is not None and nxt.text == "i" and nxt2 is not None and nxt2.vowel and k > 0 \
+                and not (prev is not None and prev.text in ("s", "t", "k")):
+            a, b = ("s", "s")
+        elif t == "g":
+            a, b = ("ɡ", "g")
+        elif t == "j":
+            a, b = ("j", "y")
+        elif t in ("v", "w"):
+            a, b = ("v", "v")
+        elif t == "qu":
+            a, b = ("kv", "kv")
+        elif t == "gu":
+            a, b = ("ɡv", "gv")
+        elif t == "h":
+            a, b = ("k", "k") if (h_is_k and prev is not None and prev.vowel and nxt is not None and nxt.vowel) else ("h", "h")
+        elif t in ("ch", "k"):
+            a, b = ("k", "k")
+        elif t == "ph":
+            a, b = ("f", "f")
+        elif t == "th":
+            a, b = ("t", "t")
+        elif t == "z":
+            a, b = ("s", "s")
+        elif t == "n" and nxt is not None and nxt.text in ("c", "g", "qu", "gu", "k") and not (nxt.text == "c" and front(nxt2)):
+            a, b = ("ŋ", "ng")
+        else:
+            a, b = (t, t)
+        ipa[n] += a; sp[n] += b
+    return list(zip(ipa, sp))
+
+
+def danish(word: str, quantities: dict[str, str] | None = None) -> dict:
+    w = "".join(ch for ch in word if ch not in PUNCT)
+    known = False
+    if quantities is not None:
+        w, known = apply_quantity(w, quantities)
+        if not known:
+            alt = _dk_consonantal(w).replace("j", "i")
+            if alt != w:
+                found, known = apply_quantity(alt, quantities)
+                if known:
+                    w = found
+    w = _dk_consonantal(w)
+    plain = "".join(ch for ch in ud.normalize("NFD", w.lower()) if ch.isalpha() and not ud.combining(ch))
+    host_len = None
+    if "+" in w:
+        host, enc = w.split("+", 1)
+        host_len = len(syllabify(host))
+        w = host + enc
+    syls = syllabify(w)
+    if not syls:
+        return {"ipa": w, "respell": w, "syllables": 0, "known": known}
+    stress = stress_index(syls, host_len)
+    parts = _danish(syls, plain)
+    one = len(syls) == 1
+    ipa = ".".join(("ˈ" if j == stress and not one else "") + p[0] for j, p in enumerate(parts))
+    resp = "-".join(p[1].upper() if j == stress and not one else p[1] for j, p in enumerate(parts))
+    return {"ipa": ipa, "respell": resp, "syllables": len(syls), "known": known}
+
+
+_phonemize_v04 = phonemize
+
+
+def phonemize(word: str, scheme: str, quantities: dict[str, str] | None = None, dialect: str | None = None, **kw) -> dict:  # noqa: F811
+    """Adds the Danish reading of about 1200; every other scheme goes through unchanged."""
+    if scheme == "danish-medieval" or (scheme == "as-first-read" and dialect == "danish"):
+        return danish(word, _printed_key(word, quantities))
+    return _phonemize_v04(word, scheme, quantities, dialect=dialect, **kw)
+
+
+KEY["danish-medieval"] = [
+    ("", "Latin as a Danish cleric most likely read it around 1200, when Saxo wrote. Reconstructed from the French and German schooling of Danish clergy, Old Danish forms of church names (Sidsel from Cecilia, Mikkel from Michael), Old Danish sound history, and the medieval spellings of the text itself; no description of the period survives. Approximate."),
+    ("a e ee o oo", "plain vowels; long and short no longer differ in sound, only in where the stress falls"),
+    ("e", "ae and oe are both e; Holder's text writes celum for caelum and pena for poena"),
+    ("ee", "y is read as i; Holder's text writes Syuardus beside Siuardus"),
+    ("s", "c before e, i and y, as in sit: Danish Sidsel from Cecilia; also ti before a vowel, which Holder's text writes ci (gracia = GRA-see-a). The least certain point: ts, as in French of the time, is also possible"),
+    ("g", "g is always hard, as in get, even before e and i"),
+    ("y", "j and consonantal i, as in yes: cuius = KOO-yoos"),
+    ("v", "consonantal u and the letter w, as in English v: uirtus = VEER-toos, Waldemarus. w is also possible"),
+    ("kv", "qu"),
+    ("h", "h is sounded, except in michi (mihi), where Holder's spelling shows k"),
+    ("t", "th, in Latin words and in Norse names (Thora): Danish was turning þ into t around this time"),
+    ("s (between vowels)", "s stays s; Danish had no z"),
+    ("CAPS", "stressed syllable, by the classical penultimate rule; Saxo and Anders Sunesen wrote quantitative verse"),
+]
+SCHEME_LABELS["danish-medieval"] = "As first read: Latin in Denmark around 1200 (approximate)"

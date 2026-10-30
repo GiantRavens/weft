@@ -9,7 +9,6 @@ counts:
 failures:
   reading-from-variant: 5
   oc-from-zhengzhang: 1
-  reading-missing: 2
 samples:
   reading-from-variant:
   - 9 眾->衆
@@ -19,13 +18,9 @@ samples:
   - 13 為->爲
   oc-from-zhengzhang:
   - 2.5 較
-  reading-missing:
-  - 14 弗
-  - 15 弗
 failure_rate:
   reading-from-variant: 0.034
   oc-from-zhengzhang: 0.007
-  reading-missing: 0.014
 shift_left: []
 predicted_gaps:
 - Old Chinese is a reconstruction (Baxter-Sagart 2014), approximate; brackets and parentheses in the scholarly form mark uncertain segments

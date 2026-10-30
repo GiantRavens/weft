@@ -316,7 +316,15 @@ Two manifest fields handle a treebank whose units do not match the passage.
   kind: quoted                # verbatim; `source` is required
   source: Samuel Butler, preface to The Odyssey (1900)
   text: "..."
+- id: n.ic.1.columbus
+  attach: ic.1.10
+  kind: editorial
+  see: [columbus-letter-1493]   # other works of the library; each becomes a link titled from its manifest
+  text: "..."
 ```
+
+`see` names works by their folder name. A public work's note may name only public works: a private
+work, or a name that is no work, is not linked, and `weft check` reports it as `note-see-unknown`.
 
 ## Quoting modern scholarship in notes
 
@@ -327,6 +335,12 @@ translator's rendering, a scholar's key judgment), set in quotation marks with t
 the sentence. No note quotes more than two such sources. Longer copyrighted material goes in
 `private/` and is never published. Public-domain scholarship (Leaf, Monro, Jebb, Bellows's notes)
 may be quoted at length as `kind: quoted`.
+
+To measure the notes of a work against a commentary they draw on, give the commentary's text as a local
+file: `weft notes-check <work> --against <file>`. It reports each editorial note that shares a run of six
+words or more with the file (`note-shares-run`) or quotes fifteen words or more (`note-quote-too-long`), and
+exits non-zero if any does. Run it against copyrighted commentary; a short shared run with a public-domain
+source (a common phrase such as "in the tenth year of the") is not a breach.
 
 ## Conventions for the gloss layer
 

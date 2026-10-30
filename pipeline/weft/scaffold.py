@@ -23,6 +23,8 @@ from pathlib import Path
 
 import yaml
 
+from . import tls
+
 UA = "Weft/0.1 (https://weftlibrary.org; a living interlinear library)"
 
 
@@ -33,7 +35,7 @@ def fetch(url: str, timeout: int = 60) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     for attempt in (1, 2):
         try:
-            with urllib.request.urlopen(req, timeout=timeout) as r:
+            with urllib.request.urlopen(req, timeout=timeout, context=tls.context()) as r:
                 return r.read()
         except urllib.error.HTTPError as e:
             if e.code < 500 or attempt == 2:

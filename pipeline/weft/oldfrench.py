@@ -70,7 +70,6 @@ SHOW_TRANSLIT = True
 TRANSLIT_LABEL = "Central French spelling"
 
 _LEX: dict | None = None
-_CTX: dict = {}
 _OCR: dict = {}
 
 LEAD_P = re.compile(r"^([(\[«“]+)")
@@ -308,7 +307,6 @@ def _strip(word: str) -> tuple[str, str | None, str | None]:
 def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[str, str]]]:
     """Split punctuation off the printed word, check the lexicon, and hold the token's context
     (next word, pause, printed form) for phonemize, which draft calls next for this token."""
-    global _CTX
     fields: dict = {}
     fails: list[tuple[str, str]] = []
     word, lead, trail = _strip(surface)
@@ -323,17 +321,23 @@ def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[
         fails.append(("normalized-spelling-missing", surface))
     elif entry(n) is None and not et.get("ipa"):
         fails.append(("lexicon-missing", n))
+    return fields, fails
+
+
+def context(surface: str, et: dict, group: dict) -> dict:
+    """The token's context for its sound (next word, pause, printed form), from the edition token and its
+    group, which draft passes to phonemize (pin 201: no module-global hand-off)."""
+    word, lead, trail = _strip(surface)
     toks = _flat(group)
     k = next((i for i, t in enumerate(toks) if t is et), None)
     nxt = toks[k + 1] if k is not None and k + 1 < len(toks) else None
     pause = bool(trail) or nxt is None or bool(nxt and LEAD_P.search(nxt["t"]))
-    _CTX = {"n": n, "next": (nxt or {}).get("n"), "pause": pause, "printed": word,
+    return {"n": et.get("n"), "next": (nxt or {}).get("n"), "pause": pause, "printed": word,
             "ipa": et.get("ipa") or {}, "glue": bool(et.get("glue"))}
-    return fields, fails
 
 
-def in_context(word: str, scheme: str) -> str:
-    ctx = _CTX if _CTX.get("n") == word else {}
+def in_context(word: str, scheme: str, ctx: dict | None = None) -> str:
+    ctx = ctx if ctx and ctx.get("n") == word else {}
     over = (ctx.get("ipa") or {}).get(scheme)
     if over:
         return over
@@ -372,9 +376,14 @@ def syllables(ipa: str) -> int:
     return len(parts)
 
 
-def phonemize(word: str, scheme: str = "fr1300", quantities=None, **_) -> dict:
+WANTS_TOKEN = True        # draft passes the edition token, its group and its printed surface (pin 201)
+
+
+def phonemize(word: str, scheme: str = "fr1300", quantities=None, etok: dict | None = None, group: dict | None = None,
+              surface: str | None = None, **_) -> dict:
     """`word` is the token's normalized spelling (n); the Italian reading uses the printed form."""
-    ipa = in_context(word, scheme)
+    ctx = context(surface if surface is not None else word, etok, group or {}) if etok is not None else None
+    ipa = in_context(word, scheme, ctx)
     return {"ipa": ipa, "respell": respell(ipa) if ipa != "?" else "?", "syllables": syllables(ipa)}
 
 

@@ -160,6 +160,7 @@
 
   /* ---------- the text */
   const text = $("#text");
+  const REVEALED = new Set();
   function renderText() {
     text.replaceChildren();
     let prevStanza = null;
@@ -183,8 +184,8 @@
           t.script ? h("span", { class: "scr", "aria-hidden": "true", text: t.script }) : null,
           h("span", { class: "src", lang: LANG }, t.lead ? h("span", { class: "p", text: t.lead }) : null, h("span", { class: "form", text: shown(t) }), t.punct ? h("span", { class: "p", text: t.punct }) : null),
           D.work.show_translit && t.norm ? h("span", { class: "tl", text: t.norm }) : null,
-          h("span", { class: "snd", text: snd.respell || "" }),
-          h("span", { class: "gls", text: t.gloss || "·" }),
+          h("span", { class: "snd" }, snd.respell || "", t.pause ? h("span", { class: "pause", title: `pause: ${t.pause.length} of 3`, text: " " + t.pause }) : null),
+          h("span", { class: "gls" + (REVEALED.has("g:" + t.id) ? " shown" : ""), "data-reveal": "g:" + t.id, text: t.gloss || "·" }),
         );
         strip.append(w);
       }
@@ -196,7 +197,8 @@
         const t = trById[tr];
         const range = span.lines[0] === span.lines[1] ? `${UNIT} ${lineNo(span.lines[0])}` : `${UNIT}s ${lineNo(span.lines[0])}–${lineNo(span.lines[1])}`;
         const who = t.kind === "editorial" ? `${t.translator} · ${range}` : `${t.translator}, ${t.year} · ${range}`;
-        sense.append(h("blockquote", { class: "tr" + (t.kind === "editorial" ? " editorial" : "") }, span.text, h("cite", { text: who })));
+        const rk = "t:" + tr + ":" + span.lines.join("-");
+        sense.append(h("blockquote", { class: "tr" + (t.kind === "editorial" ? " editorial" : "") + (REVEALED.has(rk) ? " shown" : ""), "data-reveal": rk }, span.text, h("cite", { text: who })));
       }
       const newStanza = STANZAS && line.stanza !== prevStanza;
       if (newStanza) text.append(h("h2", { class: "stanza-head" + (line.hexagram ? " hex-head" : ""), id: `sec-${line.stanza}` },
@@ -217,11 +219,15 @@
     }
   }
 
-  /* veil: tap a hidden gloss or translation to reveal it */
+  /* veil: tap a hidden gloss or translation to reveal it; the reveals are kept by key (word id, or translation
+     and line span), so a re-render on a scheme or translation switch keeps them (pin 19) */
   text.addEventListener("click", (e) => {
     if (!S.veil) return;
     const el = e.target.closest(".gls, .tr");
-    if (el && !el.classList.contains("shown")) { el.classList.add("shown"); e.stopPropagation(); e.preventDefault(); }
+    if (el && !el.classList.contains("shown")) {
+      el.classList.add("shown"); if (el.dataset.reveal) REVEALED.add(el.dataset.reveal);
+      e.stopPropagation(); e.preventDefault();
+    }
   }, true);
 
   /* ---------- word and line detail */
@@ -241,7 +247,8 @@
     if (n.status && n.status !== "reviewed") badges.push(h("span", { class: "badge draft", text: n.status }));
     return h("div", { class: "note" }, badges, h("p", { text: n.text }),
       n.source ? h("div", { class: "src-line", text: n.source }) : null,
-      n.leans_on ? h("div", { class: "src-line", text: "Leans on " + n.leans_on }) : null);
+      n.leans_on ? h("div", { class: "src-line", text: "Leans on " + n.leans_on }) : null,
+      n.see_links ? h("div", { class: "src-line" }, "See ", ...n.see_links.flatMap((l, i) => [i ? "; " : "", h("a", { href: l.href, text: l.title })]), ".") : null);
   }
   function showWord(t, line) {
     document.querySelectorAll(".w.active").forEach((x) => x.classList.remove("active"));
@@ -298,7 +305,7 @@
     b.classList.toggle("veil", !!S.veil);
     b.classList.toggle("wrap", !!S.wrap);
     for (const [v, , , , , unit] of SLIDERS) document.documentElement.style.setProperty(v, S.sizes[v] + unit);
-    if (!S.veil) document.querySelectorAll(".shown").forEach((x) => x.classList.remove("shown"));
+    if (!S.veil) { REVEALED.clear(); document.querySelectorAll(".shown").forEach((x) => x.classList.remove("shown")); }
   }
   function buildLoom() {
     const lt = $("#layer-toggles"); lt.replaceChildren();

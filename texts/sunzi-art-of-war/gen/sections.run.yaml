@@ -6,17 +6,11 @@ counts:
   lines: 41
   tokens: 340
 failures:
-  reading-missing: 12
   oc-from-zhengzhang: 4
   mandarin-reading-unattested: 2
   reading-from-variant: 3
+  reading-missing: 1
 samples:
-  reading-missing:
-  - 3 察
-  - 26 佐
-  - 28 詭
-  - 31 誘
-  - 34 佚
   oc-from-zhengzhang:
   - 1.4 校
   - 1.17 校
@@ -29,11 +23,13 @@ samples:
   - 20 眾->衆
   - 25 為->爲
   - 40 於->于
+  reading-missing:
+  - 34 佚
 failure_rate:
-  reading-missing: 0.035
   oc-from-zhengzhang: 0.012
   mandarin-reading-unattested: 0.006
   reading-from-variant: 0.009
+  reading-missing: 0.003
 shift_left: []
 predicted_gaps:
 - Old Chinese is a reconstruction (Baxter-Sagart 2014), approximate; brackets and parentheses in the scholarly form mark uncertain segments

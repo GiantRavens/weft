@@ -37,8 +37,6 @@ SCHEME_FIELD = {"tang": "kTang", "mandarin": "kMandarin", "cantonese": "kCantone
 
 def load_readings(readings: Path, variants: Path, chars: set[str]) -> dict[str, dict]:
     """{char: {kTang, kMandarin, kCantonese, kDefinition, via?}} for the characters needed."""
-    global _PICK
-    _PICK = None                 # a new draft starts with no reading choice pending
     want = {f"U+{ord(c):04X}": c for c in chars}
     var: dict[str, list[str]] = {}
     for line in variants.read_text(encoding="utf-8").splitlines():
@@ -123,6 +121,8 @@ KEY = {
         ("ǎ (caron)", "rising tone (上)"),
         ("à (grave)", "departing tone (去)"),
         ("-p, -t, -k", "entering tone (入): a short syllable cut off by a stop"),
+        ("° before a reading", "Unihan records no Tang reading for this character; shown instead is its Middle Chinese in William Baxter's notation (Baxter and Sagart 2014), the language of the Qieyun rhyme book of 601, about a century before the Tang readings and spelled differently: H marks the departing tone, X the rising"),
+        ("?", "no reading recorded for this character in either source"),
     ],
     "mandarin": [("pinyin", "standard pinyin; tone marks: ā level, á rising, ǎ dipping, à falling")],
     "cantonese": [("Jyutping", "number = tone 1-6; Cantonese keeps final -p -t -k and -m")],
@@ -145,7 +145,6 @@ _OC: dict | None = None
 # before it phonemizes that token, so the choice is held here for the calls that follow.
 # load_readings clears it at the start of every draft. Works without an edition file (Li Bai)
 # never set it, so their readings are the first listed, as before.
-_PICK: tuple[str, dict] | None = None
 
 
 def oc_table() -> dict:
@@ -203,9 +202,7 @@ def oc_reading(char: str, index: int = 1) -> dict | None:
 
 def token_fields(surface: str, edition_token: dict, group: dict) -> tuple[dict, list]:
     """Language hook: hold the token's reading choice for phonemize, and check it against the data."""
-    global _PICK
     pick = {k: edition_token[k] for k in ("oc", "tang", "mandarin") if k in edition_token}
-    _PICK = (surface, pick)
     fields, fails = {}, []
     ent = oc_table().get(surface)
     if not ent:
@@ -247,10 +244,13 @@ def line_checks(text: str, edition_tokens: list[dict], edition: dict) -> list[tu
     return fails
 
 
-def phonemize(word: str, scheme: str = "tang", quantities: dict | None = None, **_) -> dict:
+WANTS_TOKEN = True        # draft passes the edition token, whose oc/tang/mandarin fields choose a reading
+
+
+def phonemize(word: str, scheme: str = "tang", quantities: dict | None = None, etok: dict | None = None, **_) -> dict:
     """quantities: the reading table from load_readings. First listed reading wins, unless the
-    edition token being drafted chose another (see _PICK)."""
-    pick = _PICK[1] if _PICK and _PICK[0] == word else {}
+    edition token being drafted chose another (its oc, tang or mandarin field; pin 58)."""
+    pick = {k: etok[k] for k in ("oc", "tang", "mandarin") if k in etok} if etok else {}
     if scheme == "old-chinese":
         r = oc_reading(word, pick.get("oc", 1))
         if not r:
@@ -260,6 +260,13 @@ def phonemize(word: str, scheme: str = "tang", quantities: dict | None = None, *
     rec = (quantities or {}).get(word, {})
     val = rec.get(SCHEME_FIELD[scheme], "")
     readings = [v.lstrip("*") for v in val.split()]
+    if scheme == "tang" and not readings:
+        # Unihan records no Tang reading for this character: Baxter's Middle Chinese from the Baxter-Sagart
+        # list stands in, marked °, in his own notation and of the Qieyun's time (601) rather than Li Bai's
+        # (pin 154); with neither, the character stays unknown (?)
+        r = oc_reading(word, pick.get("oc", 1)) or oc_reading(word, 1)
+        if r and r.get("mc"):
+            return {"ipa": r["mc"], "respell": "°" + r["mc"], "syllables": 1, "via_mc": True}
     first = readings[0] if readings else "?"
     if scheme == "tang" and readings and 1 <= pick.get("tang", 1) <= len(readings):
         first = readings[pick.get("tang", 1) - 1]

@@ -1,0 +1,91 @@
+# Second harmonization, after the adversarial review of the annotation (2026-10-22): one rule per class over every
+# token (reflexive sui with Person=3; assimilated headwords as Lewis and Short prints them, arcesso for accerso; no Voice
+# on gerundives; no NumType; Aspect on present and future finite verbs and the present infinitive of sum; Voice=Act on
+# active verbs lacking it; tantus ADJ, totus DET Tot, unusquisque Tot, alter PronType=Ind, proximus Degree=Sup,
+# quippe ADV, siquidem CCONJ), and the content errors the review found (iugulum and nostrum neuter at 9.3.3.9; ad modum
+# read as admodum, 'quite', at 9.4.6.1 and 9.5.8.1; two glosses).
+- by: "Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar"
+  date: "2026-10-22"
+  status: draft
+  why: "second harmonization across the five annotators and fixes from the annotation review"
+  set:
+    gd.3.2.1.11: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.3.2.4.14: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.3.3.7.19: {morph: "VERB|Aspect=Imp|Tense=Pres|VerbForm=Inf|Voice=Act"}   # subesse
+    gd.3.3.9.11: {morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing"}   # iugulum
+    gd.3.3.9.12: {morph: "DET|Case=Acc|Gender=Neut|Number=Sing|Poss=Yes|PronType=Prs"}   # nostrum
+    gd.4.1.3.15: {morph: "ADJ|Case=Abl|Degree=Sup|Gender=Neut|Number=Sing"}   # proximo
+    gd.4.1.3.27: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.4.2.1.3: {morph: "VERB|Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Act"}   # affuit
+    gd.4.2.2.33: {morph: "PRON|Case=Dat|Person=3|PronType=Prs|Reflex=Yes"}   # sibi
+    gd.4.3.4.5: {morph: "PRON|Case=Acc|Gender=Fem|Number=Sing|PronType=Ind"}   # alteram
+    gd.4.3.4.8: {morph: "PRON|Case=Acc|Gender=Fem|Number=Sing|PronType=Ind"}   # alteram
+    gd.4.4.1.16: {gloss: "of-Ragnar"}   # Regneri
+    gd.4.4.3.18: {morph: "PRON|Case=Dat|Person=3|PronType=Prs|Reflex=Yes"}   # sibi
+    gd.4.4.4.9: {morph: "PRON|Case=Gen|Person=3|PronType=Prs|Reflex=Yes"}   # sui
+    gd.4.5.2.25: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.4.6.1.13: {lemma: "admodum", morph: "ADV", gloss: "quite"}   # ad
+    gd.4.6.1.14: {lemma: "admodum", morph: "ADV", gloss: "(admodum,-written-apart)"}   # modum
+    gd.4.7.1.8: {morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Ind"}   # alter
+    gd.4.7.5.23: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.4.7.7.8: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.4.8.2.10: {lemma: "arcesso"}   # accersit
+    gd.4.8.3.4: {morph: "PRON|Case=Dat|Person=3|PronType=Prs|Reflex=Yes"}   # sibi
+    gd.4.11.3.26: {morph: "DET|Case=Gen|Gender=Fem|Number=Sing|PronType=Tot"}   # tociusque
+    gd.4.16.5.4: {morph: "DET|Case=Gen|Gender=Fem|Number=Sing|PronType=Tot"}   # tocius
+    gd.4.18.1.21: {morph: "PRON|Case=Dat|Person=3|PronType=Prs|Reflex=Yes"}   # sibi
+    gd.4.18.3.4: {lemma: "assurgo"}   # assurgendi
+    gd.4.18.3.8: {morph: "PRON|Case=Dat|Person=3|PronType=Prs|Reflex=Yes"}   # sibi
+    gd.4.18.4.7: {lemma: "alloquium"}   # alloquio
+    gd.4.18.7.11: {lemma: "asservo"}   # asseruabatur
+    gd.4.18.8.12: {lemma: "asto"}   # astitit
+    gd.4.19.1.14: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.4.19.2.2: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.4.19.2.10: {lemma: "affirmo"}   # affirmante
+    gd.4.19.7.6: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.4.20.1.12: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.4.20.1.18: {morph: "DET|Case=Nom|Gender=Masc|Number=Sing|PronType=Tot"}   # unusquisque
+    gd.4.21.4.1: {morph: "PRON|Case=Abl|Gender=Masc|Number=Sing|PronType=Ind"}   # Altero
+    gd.4.21.4.5: {morph: "PRON|Case=Abl|Gender=Masc|Number=Sing|PronType=Ind"}   # altero
+    gd.4.22.1.5: {morph: "PRON|Case=Dat|Person=3|PronType=Prs|Reflex=Yes"}   # sibi
+    gd.4.22.2.8: {lemma: "aggredior"}   # aggressi
+    gd.4.22.6.7: {lemma: "afficio"}   # affecta
+    gd.4.23.1.2: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.4.24.1.6: {lemma: "allapsus"}   # allapsu
+    gd.4.24.4.11: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.4.25.3.10: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.4.25.3.21: {morph: "CCONJ"}   # siquidem
+    gd.4.25.4.14: {morph: "PRON|Case=Abl|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.4.26.1.19: {lemma: "arrogo"}   # arrogauit
+    gd.4.26.5.7: {lemma: "alloquium"}   # alloquiis
+    gd.4.26.6.2: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.4.28.2.10: {morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|VerbForm=Gdv"}   # onerandus
+    gd.4.29.4.11: {morph: "VERB|Case=Gen|Gender=Fem|Number=Sing|VerbForm=Gdv"}   # repetende
+    gd.4.30.3.31: {morph: "VERB|Case=Abl|Gender=Neut|Number=Sing|VerbForm=Gdv"}   # eligendo
+    gd.4.30.4.13: {morph: "VERB|Case=Acc|Gender=Masc|Number=Sing|VerbForm=Gdv"}   # consumendum
+    gd.4.30.4.14: {morph: "AUX|Aspect=Imp|Tense=Pres|VerbForm=Inf"}   # esse
+    gd.4.32.2.12: {morph: "AUX|Aspect=Imp|Tense=Pres|VerbForm=Inf"}   # esse
+    gd.4.32.3.20: {morph: "VERB|Case=Acc|Gender=Fem|Number=Sing|VerbForm=Gdv"}   # infligendam
+    gd.4.33.2.26: {morph: "VERB|Case=Acc|Gender=Fem|Number=Sing|VerbForm=Gdv"}   # fruendam
+    gd.4.34.3.1: {morph: "ADV"}   # Quippe
+    gd.4.34.4.1: {gloss: "by-which"}   # Quo
+    gd.4.36.6.7: {morph: "PRON|Case=Dat|Person=3|PronType=Prs|Reflex=Yes"}   # sibi
+    gd.4.38.1.8: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.4.39.1.5: {morph: "NUM|Case=Acc|Gender=Fem|Number=Plur"}   # duas
+    gd.4.39.1.7: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.4.39.1.11: {morph: "VERB|Aspect=Imp|Mood=Ind|Number=Plur|Person=1|Tense=Fut|Voice=Act"}   # dicemus
+    gd.5.3.1.8: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.5.3.1.12: {morph: "ADJ|Case=Abl|Gender=Fem|Number=Sing"}   # tanta
+    gd.5.3.2.5: {morph: "NUM|Case=Gen|Gender=Masc|Number=Plur"}   # trium
+    gd.5.3.2.20: {morph: "PRON|Case=Dat|Person=3|PronType=Prs|Reflex=Yes"}   # sibi
+    gd.5.4.3.8: {morph: "ADJ|Case=Abl|Gender=Masc|Number=Sing"}   # tanto
+    gd.5.5.1.6: {morph: "NUM|Case=Gen|Gender=Fem|Number=Plur"}   # quadringentarum
+    gd.5.6.2.5: {morph: "NUM"}   # mille
+    gd.5.6.2.6: {morph: "NUM|Case=Gen|Gender=Fem|Number=Plur"}   # septingentarum
+    gd.5.6.6.8: {morph: "PRON|Case=Gen|Person=3|PronType=Prs|Reflex=Yes"}   # sui
+    gd.5.7.2.27: {morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing"}   # tantum
+    gd.5.8.1.5: {lemma: "admodum", morph: "ADV", gloss: "quite"}   # ad
+    gd.5.8.1.6: {lemma: "admodum", morph: "ADV", gloss: "(admodum,-written-apart)"}   # modum
+    gd.5.8.2.26: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.5.8.3.4: {morph: "PRON|Case=Acc|Person=3|PronType=Prs|Reflex=Yes"}   # se
+    gd.5.8.6.9: {morph: "ADJ|Case=Abl|Gender=Fem|Number=Sing"}   # tanta

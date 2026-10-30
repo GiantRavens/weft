@@ -3837,3 +3837,16 @@
     med.1.16.13.8: {gloss: "in-the-time-of"}   # ἐπ’
     med.1.17.4.26: {gloss: "to-exceed"}   # ἐπιλαβεῖν (τοῦ χρόνου)
     med.1.16.8.6: {gloss: "to-have-been-permitted"}   # ἐφεῖσθαι
+- by: Claude Opus 5.5 (Weft), for review by Skip and a scholar
+  date: 2026-10-30
+  why: "lemma-not-in-lexicon sensor (pin 47): GLAUx lemmas that are not LSJ headwords where LSJ has the word under its standard lemma; ἀπολύπραγμον is the neuter of ἀπολυπράγμων, as εὔδαιμον of εὐδαίμων; ἀτραγῴδως is an adverb, not a noun"
+  status: draft
+  set:
+    med.1.4.1.9: {lemma: "φοιτάω"}   # φοιτῆσαι (GLAUx φοιτέω)
+    med.1.5.3.5: {lemma: "ἀπολυπράγμων"}   # ἀπολύπραγμον (GLAUx ἀπολύπραγμος)
+    med.1.6.2.7: {lemma: "τερατεύομαι"}   # τερατευομένων (GLAUx τερατεύω)
+    med.1.8.6.13: {lemma: "ἐξηττάομαι"}   # ἐξηττώμενον (GLAUx ἐξησσάομαι)
+    med.1.16.9.13: {lemma: "προαφίσταμαι"}   # προαπέστη (GLAUx προαφίστημι)
+    med.1.16.12.9: {morph: "d--------"}   # ἀτραγῴδως (GLAUx n-s---mn-)
+    med.2.7.4.1: {lemma: "ληρέω"}   # ληροῦσι (GLAUx ληρόω)
+    med.2.12.1.4: {lemma: "ἐναφανίζω"}   # ἐναφανίζεται (GLAUx ἐναφανίζομαι)

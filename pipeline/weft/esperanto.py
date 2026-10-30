@@ -149,12 +149,10 @@ def word_sound(word: str) -> tuple[str, str, int]:
     return ipa, resp, len(sylls)
 
 
-_CTX: dict = {}
 
 
 def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[str, str]]]:
     """Split punctuation off the printed word; the word keeps its apostrophe divisions."""
-    global _CTX
     fields: dict = {}
     fails: list[tuple[str, str]] = []
     word = surface
@@ -168,12 +166,14 @@ def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[
         fields["surface"] = word
     if not et.get("n"):
         fails.append(("fundamento-spelling-missing", surface))
-    _CTX = {"t": word, "n": et.get("n"), "ipa": et.get("ipa") or {}}
     return fields, fails
 
 
-def phonemize(word: str, scheme: str = "zamenhof", quantities=None, **_) -> dict:
-    ov = (_CTX.get("ipa") or {}).get(scheme) if _CTX.get("n") == word else None
+WANTS_TOKEN = True        # draft passes the edition token: its n and ipa override (pin 201)
+
+
+def phonemize(word: str, scheme: str = "zamenhof", quantities=None, etok: dict | None = None, **_) -> dict:
+    ov = (etok.get("ipa") or {}).get(scheme) if etok and etok.get("n") == word else None
     if ov:
         return {"ipa": ov, "respell": ov, "syllables": len(ov.split("."))}
     parts = [p for p in re.split(r"[-\s]+", word) if p]

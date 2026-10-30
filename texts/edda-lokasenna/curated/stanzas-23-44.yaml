@@ -613,3 +613,47 @@
     lok.44.6.2: {lemma: "und", morph: "ADP", gloss: "under"}   # und
     lok.44.6.3: {lemma: "kvern", morph: "NOUN|Case=Dat|Gender=Fem|Number=Plur", gloss: "the-mill", stave: true}   # kvernum
     lok.44.6.4: {lemma: "klaka", morph: "VERB|VerbForm=Inf", gloss: "chatter", stave: true}   # klaka
+- by: "Claude Opus 5.5 (Weft), for review by Skip and a scholar"
+  date: "2026-10-30"
+  why: "the second halves of stanzas 23 and 33, which the edition prints after a blank line and the stanza reader dropped until pin 72; lemmas after Zoëga, conventions as above; 23.8 repeats 24.6"
+  status: "draft"
+  set:
+    lok.23.6: {metre: "full line · staves k"}
+    lok.23.6.1: {lemma: "kýr", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "a-cow", stave: true}   # kýr
+    lok.23.6.2: {lemma: "mjólka", morph: "VERB|Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part", gloss: "milking"}   # mólkandi
+    lok.23.6.3: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    lok.23.6.4: {lemma: "kona", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "a-woman", stave: true}   # kona
+    lok.23.7: {metre: "full line · staves b"}
+    lok.23.7.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    lok.23.7.2: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "hast"}   # hefr
+    lok.23.7.3: {lemma: "þú", morph: "PRON|Case=Nom|Number=Sing|Person=2", gloss: "thou"}   # þú
+    lok.23.7.4: {lemma: "þar", morph: "ADV", gloss: "there"}   # þar
+    lok.23.7.5: {lemma: "barn", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "children", stave: true}   # börn
+    lok.23.7.6: {lemma: "bera", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "borne", stave: true}   # borit
+    lok.23.8: {metre: "full line · staves vowel"}
+    lok.23.8.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    lok.23.8.2: {lemma: "hyggja", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "thought"}   # hugða
+    lok.23.8.3: {lemma: "ek", morph: "PRON|Case=Nom|Number=Sing|Person=1", gloss: "I"}   # ek
+    lok.23.8.4: {lemma: "sá", morph: "PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # þat
+    lok.23.8.5: {lemma: "argr", morph: "ADJ|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-an-unmanly-man", stave: true}   # args
+    lok.23.8.6: {lemma: "aðal", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "the-nature", stave: true}   # aðal
+    lok.33.4: {metre: "long line, a-verse · stave vowel"}
+    lok.33.4.1: {lemma: "hinn", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # hitt
+    lok.33.4.2: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    lok.33.4.3: {lemma: "undr", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "a-wonder", stave: true}   # undr
+    lok.33.4.4: {lemma: "er", morph: "SCONJ", gloss: "that"}   # er
+    lok.33.4.5: {lemma: "áss", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "a-god", stave: true}   # áss
+    lok.33.4.6: {lemma: "ragr", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "unmanly"}   # ragr
+    lok.33.5: {metre: "long line, b-verse · stave vowel"}
+    lok.33.5.1: {lemma: "vera", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # er
+    lok.33.5.2: {lemma: "hér", morph: "ADV", gloss: "here"}   # hér
+    lok.33.5.3: {lemma: "inn", morph: "ADV", gloss: "in", stave: true}   # inn
+    lok.33.5.4: {lemma: "of", morph: "PART", gloss: "(particle)"}   # of
+    lok.33.5.5: {lemma: "koma", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part", gloss: "come"}   # kominn
+    lok.33.6: {metre: "full line · staves b"}
+    lok.33.6.1: {lemma: "ok", morph: "CCONJ", gloss: "and"}   # ok
+    lok.33.6.2: {lemma: "hafa", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "has"}   # hefir
+    lok.33.6.3: {lemma: "sá", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Dem", gloss: "he"}   # sá
+    lok.33.6.4: {lemma: "barn", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "children", stave: true}   # börn
+    lok.33.6.5: {lemma: "of", morph: "PART", gloss: "(particle)"}   # of
+    lok.33.6.6: {lemma: "bera", morph: "VERB|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part", gloss: "borne", stave: true}   # borit

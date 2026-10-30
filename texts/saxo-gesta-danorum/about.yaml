@@ -1,0 +1,32 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: saxo-gesta-danorum
+src: weft.about 0.1
+fetched: '2026-10-22'
+match: parent
+wikipedia:
+  title: Gesta Danorum
+  lang: en
+  revision: 1371535188
+  url: https://en.wikipedia.org/w/index.php?title=Gesta_Danorum&oldid=1371535188
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Gesta Danorum” (en.wikipedia.org, revision 1371535188), CC
+    BY-SA 4.0
+  lead: Gesta Danorum ("Deeds of the Danes") is a patriotic work of Danish history, by the 12th-century
+    author Saxo Grammaticus ("Saxo the Grammarian"). It is the most ambitious literary undertaking of
+    medieval Denmark and is an essential source for the nation's early history. It is also one of the
+    oldest known written documents about the history of Estonia and Latvia.
+wikidata:
+  id: Q939074
+  revision: 2553745974
+  license: CC0
+  description: 12th century work of Danish history
+  instance_of:
+  - id: Q47461344
+    label: written work
+  genre:
+  - id: Q185363
+    label: chronicle
+  main_subject:
+  - id: Q204680
+    label: history of Denmark

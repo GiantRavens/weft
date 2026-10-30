@@ -99,6 +99,25 @@ def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
     for root in roots:
         for _, ns in _load_yaml_dir(root / "notes"):
             notes.extend(ns or [])
+    # a note may name other works of the library (see: [work, ...]); each becomes a link titled from that
+    # work's manifest (pin 77). A public work's note never links to a private work: such a name, or one
+    # that is no work at all, stays unresolved and weft check reports it
+    from .paths import public_dir as _pub_dir, private_dir as _priv_dir, is_private_work
+    repo = work_dir.parents[1]
+    this_private = is_private_work(repo, work_dir.name)
+    for n in notes:
+        links, unknown = [], []
+        for w in n.get("see") or []:
+            priv = is_private_work(repo, w)
+            mp = (_priv_dir(repo, w) if priv else _pub_dir(repo, w)) / "manifest.yaml"
+            if mp.exists() and (this_private or not priv):
+                links.append({"href": f"{w}.html", "title": (yaml.safe_load(mp.read_text()) or {}).get("title") or w})
+            else:
+                unknown.append(w)
+        if links:
+            n["see_links"] = links
+        if unknown:
+            n["see_unknown"] = unknown
 
     # render-time conveniences: readable morphology; Hebrew without cantillation for easy reading;
     # section images embedded so the page stays one file
@@ -138,7 +157,10 @@ def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
         "treebank": ({k: m["treebank"].get(k) for k in ("id", "name", "license")} if m.get("treebank")
                      else {"id": "hand annotation", "name": "no treebank: hand annotation, draft", "license": "CC BY-SA 4.0"}),
         "schemes": m["schemes"],
-        "keys": {s: (PHON[m["language"]].key_for(s, edition_dialects(work_dir, m)) if hasattr(PHON[m["language"]], "key_for")
+        # a work's manifest may give its own key for a scheme (sound_key: {scheme: [[symbol, says], ...]}),
+        # so a key shared by several works need not name one of them (pin 59)
+        "keys": {s: ([tuple(x) for x in (m.get("sound_key") or {})[s]] if s in (m.get("sound_key") or {})
+                     else PHON[m["language"]].key_for(s, edition_dialects(work_dir, m)) if hasattr(PHON[m["language"]], "key_for")
                      else PHON[m["language"]].KEY[s]) for s in m["schemes"]},
         # a work may override a scheme's label, e.g. to give its own date for a shared reconstruction
         "scheme_labels": {s: (m.get("scheme_labels") or {}).get(s) or PHON[m["language"]].SCHEME_LABELS.get(s, s) for s in m["schemes"]},

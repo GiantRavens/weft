@@ -69,17 +69,11 @@ counts:
   lines: 450
   tokens: 4937
 failures:
-  reading-missing: 386
   reading-from-variant: 286
   oc-from-zhengzhang: 209
+  reading-missing: 130
   mandarin-reading-unattested: 6
 samples:
-  reading-missing:
-  - 1 亨
-  - 5 淵
-  - 1 亨
-  - 1 牝
-  - 5 括
   reading-from-variant:
   - 4 无->無
   - 5 无->無
@@ -92,6 +86,12 @@ samples:
   - 3.3 邅
   - 4.1 瀆
   - 4.1 瀆
+  reading-missing:
+  - 5 括
+  - 1 瀆
+  - 1 瀆
+  - 1 孚
+  - 1 孚
   mandarin-reading-unattested:
   - 4.2 說 tuō
   - 9.4 說 tuō
@@ -99,9 +99,9 @@ samples:
   - 33.3 說 tuō
   - 38.7 說 tuō
 failure_rate:
-  reading-missing: 0.078
   reading-from-variant: 0.058
   oc-from-zhengzhang: 0.042
+  reading-missing: 0.026
   mandarin-reading-unattested: 0.001
 shift_left: []
 predicted_gaps:

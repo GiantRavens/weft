@@ -31,6 +31,7 @@ from __future__ import annotations
 
 import difflib
 import hashlib
+import re
 import shutil
 import subprocess
 import urllib.request
@@ -91,6 +92,12 @@ def sign_diff(edition: str, witness: str) -> list[str]:
 _WITNESS: dict[str, str] = {}
 
 
+# letters the witness may hold between two consecutive edition lines without a report: a heading's numeral read as
+# a letter (the Cherokee Constitution's "I" before Article I comes out as Ꭲ); anything longer is reported
+OCR_GAP_ALLOWED = 1
+_CURSOR: dict[str, list] = {}
+
+
 def witness_check(etoks: list[dict], edition: dict, lang: str) -> list[tuple[str, str]]:
     """Sensor for a language module's line_checks: with the edition's `ocr_check: {file}` naming a witness written by
     weft ocr (gen/ocr/<page>.txt), the line, with each token's declared `ocr` reading in place of the settled word,
@@ -111,9 +118,25 @@ def witness_check(etoks: list[dict], edition: dict, lang: str) -> list[tuple[str
         _WITNESS[str(p)] = "".join(letters((wd / f).read_text(encoding="utf-8"), lang) for f in files)
     out = [("ocr-reading-unneeded", t["t"]) for t in etoks if t.get("ocr") is not None and letters(t["ocr"], lang) == letters(t["t"], lang)]
     want = letters("".join(t["ocr"] if t.get("ocr") is not None else t["t"] for t in etoks), lang)
-    if want not in _WITNESS[str(p)]:
-        cost, a, b = best_window(want, _WITNESS[str(p)])
-        out.append(("edition-not-in-ocr", " ".join(sign_diff(want, _WITNESS[str(p)][a:b]))))
+    wit = _WITNESS[str(p)]
+    # order (pin 170): the lines are walked in edition order through the witness, each match starting where the
+    # last one ended. A line found only earlier is out of order (its readings borrowed from another printed
+    # line); letters left between two consecutive lines are witness text no line accounts for (a dropped line
+    # edge). A run of draft starts afresh: the cursor is keyed to this edition object.
+    cur = _CURSOR.get(str(p))
+    if cur is None or cur[0] != id(edition):
+        cur = _CURSOR[str(p)] = [id(edition), 0]
+    pos = wit.find(want, cur[1]) if want else -1
+    if pos >= 0:
+        gap = wit[cur[1]:pos]
+        if cur[1] and len(gap) > OCR_GAP_ALLOWED:
+            out.append(("ocr-letters-unattributed", f"{len(gap)} witness letters before this line: {gap[:24]}"))
+        cur[1] = pos + len(want)
+    elif want and want in wit:
+        out.append(("ocr-line-out-of-order", f"found only before the previous line's match (at {wit.find(want)}, cursor {cur[1]})"))
+    elif want:
+        cost, a, b = best_window(want, wit)
+        out.append(("edition-not-in-ocr", " ".join(sign_diff(want, wit[a:b]))))
     return out
 
 
@@ -235,3 +258,54 @@ def run(work_dir: Path) -> dict:
                       for k in range(blk.size)}
             report["agreed"] = f"{len(agreed)} signs read alike by both; {len(agreed - right)} of them wrong in the settled text"
     return report
+
+
+# ---------------------------------------------------------------- hOCR body-column check (pin 63)
+_HOCR: dict[str, str] = {}
+_HOCR_W = re.compile(r"<span class=['\"]ocrx_word['\"][^>]*title=['\"]bbox (\d+) (\d+) (\d+) (\d+)[^'\"]*['\"][^>]*>(.*?)</span>", re.S)
+_HOCR_PAGE = re.compile(r"<div class=['\"]ocr_page['\"] id=['\"]([^'\"]+)['\"]")
+
+
+def hocr_body(path: Path, pages: dict) -> str:
+    """The words inside each page's body column, in reading order, line-end hyphens rejoined,
+    without spaces."""
+    import html
+    h = path.read_text(encoding="utf-8")
+    starts = [(m.start(), m.group(1)) for m in _HOCR_PAGE.finditer(h)]
+    out = []
+    for k, (pos, pid) in enumerate(starts):
+        if pid not in pages:
+            continue
+        x0, y0, x1, y1 = pages[pid]
+        seg = h[pos:starts[k + 1][0] if k + 1 < len(starts) else len(h)]
+        for line in re.split(r"(?=<span class=['\"]ocr_line)", seg)[1:]:
+            ws = [html.unescape(re.sub(r"<[^>]+>", "", t)).strip()
+                  for a, b, _, _, t in _HOCR_W.findall(line) if x0 <= int(a) < x1 and y0 <= int(b) < y1]
+            ws = [w for w in ws if w]
+            if not ws:
+                continue
+            if ws[-1].endswith("-"):
+                ws[-1] = ws[-1][:-1]
+            out.append("".join(ws))
+    return re.sub(r"\s+", "", "".join(out))
+
+
+def hocr_check(etoks: list[dict], edition: dict) -> list[tuple[str, str]]:
+    """Sensor for an edition transcribed from scans whose ocr_check names an hOCR file and the body column of
+    each page ({file, pages: {page id: [x0, y0, x1, y1]}}): the line, with each token's declared OCR reading in
+    place of the printed word, must occur in the OCR of those columns (edition-not-in-source otherwise).
+    Run by draft for any language (pin 63; first written for Linschoten's Dutch)."""
+    oc = edition.get("ocr_check")
+    if not oc or not oc.get("pages"):
+        return []
+    from .paths import work_dir
+    p = work_dir(Path(__file__).resolve().parents[2], edition["work"]) / oc["file"]
+    if str(p) not in _HOCR:
+        if not p.exists():
+            return [("ocr-source-missing", oc["file"])]
+        _HOCR[str(p)] = hocr_body(p, oc["pages"])
+    want = "".join((t.get("ocr") or t["t"]) + (t.get("p") or "") for t in etoks)
+    want = re.sub(r"\s+", "", want)
+    if want not in _HOCR[str(p)]:
+        return [("edition-not-in-source", " ".join(t["t"] for t in etoks[:4]) + " ...")]
+    return []

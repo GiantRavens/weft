@@ -151,7 +151,6 @@ ABBR = re.compile(r"^\w(\.\w)+\.$")          # u.s.w. keeps its points
 
 _LEX: dict | None = None
 NORTHLIKE = ("northern", "ecg1545")   # trilled r, fricative g at the end of a syllable
-_CTX: dict = {}
 
 # monosyllables said without stress in running text; every other monosyllable is stressed
 UNSTRESSED = {"der", "die", "das", "den", "dem", "des", "ein", "eine", "einen", "einem", "einer",
@@ -464,7 +463,6 @@ def old_form(word: str) -> str:
 def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[str, str]]]:
     """Split punctuation off the printed word, check every polysyllable against the lexicon, and
     hold the token's ipa override for phonemize, which draft calls next for this token."""
-    global _CTX
     fields: dict = {}
     fails: list[tuple[str, str]] = []
     word = surface
@@ -496,17 +494,32 @@ def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[
             sylls, _, over = lex_entry(w)
             if len(sylls) > 1 and key(w) not in lexicon() and not (et.get("ipa") or {}).get("ecg1545"):
                 fails.append(("old-form-syllables-by-rule", w))
-    _CTX = {"n": n, "ipa": et.get("ipa") or {}, "o": o}
     return fields, fails
 
 
-def phonemize(word: str, scheme: str = "northern", quantities=None, **_) -> dict:
+def _printed_word(surface: str) -> str:
+    """The printed word without its leading and trailing punctuation, as token_fields splits it."""
+    ml = LEAD_P.search(surface)
+    w = surface[ml.end():] if ml else surface
+    mt = TRAIL_P.search(w)
+    return w[:mt.start()] if mt else w
+
+
+WANTS_TOKEN = True        # draft passes the edition token, its group and its printed surface (pin 201)
+
+
+def phonemize(word: str, scheme: str = "northern", quantities=None, etok: dict | None = None, group: dict | None = None,
+              surface: str | None = None, **_) -> dict:
+    ctx: dict = {}
+    if etok is not None:
+        o = (etok.get("o") or old_form(_printed_word(surface or ""))) if ((group or {}).get("old_forms") or etok.get("o")) else None
+        ctx = {"n": etok.get("n"), "ipa": etok.get("ipa") or {}, "o": o}
     """`word` is the token's modern spelling (n); a group written apart is said word by word."""
-    ov = (_CTX.get("ipa") or {}).get(scheme) if _CTX.get("n") == word else None
+    ov = (ctx.get("ipa") or {}).get(scheme) if ctx.get("n") == word else None
     if ov:
         return {"ipa": ov, "respell": respell(ov), "syllables": len(re.split(r"[. ]", ov))}
-    if scheme == "ecg1545" and _CTX.get("o") and _CTX.get("n") == word:
-        word = _CTX["o"]                  # the 1545 form, not the modern spelling
+    if scheme == "ecg1545" and ctx.get("o") and ctx.get("n") == word:
+        word = ctx["o"]                  # the 1545 form, not the modern spelling
     parts, n = [], 0
     for w in word.split():
         if ABBR.match(w):

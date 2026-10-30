@@ -63,6 +63,9 @@ def main(argv: list[str] | None = None) -> int:
     ix.add_argument("--private", action="store_true", help="index the private build in private/build")
     oc = sub.add_parser("ocr", help="read the manifest's pinned page scans with Tesseract into gen/ocr/ (a witness) and collate with the edition")
     oc.add_argument("work")
+    nc = sub.add_parser("notes-check", help="measure a work's editorial notes against a commentary's text: shared runs of 6+ words and quotations of 15+ words are reported")
+    nc.add_argument("work"); nc.add_argument("--against", required=True, help="the commentary's text, a local file")
+    sub.add_parser("lexica", help="fetch the pinned LSJ (Perseus, CC BY-SA) once into ~/.cache/weft and write the headword list the lemma-not-in-lexicon sensor reads")
     ab = sub.add_parser("about", help="fetch the Wikipedia lead and Wikidata subjects named in the manifest into about.yaml")
     ab.add_argument("work", help="a work's folder name, or 'all' for every public work")
     ab.add_argument("--suggest", action="store_true", help="write nothing: list article candidates for works without a wikipedia field")
@@ -139,6 +142,15 @@ def main(argv: list[str] | None = None) -> int:
     elif a.cmd == "ocr":
         from . import ocr
         show(ocr.run(paths.work_dir(repo, a.work)))
+    elif a.cmd == "notes-check":
+        from . import notescheck
+        from pathlib import Path as _P
+        r = notescheck.run(paths.work_dir(repo, a.work), _P(a.against))
+        show(r)
+        return 0 if r["ok"] else 1
+    elif a.cmd == "lexica":
+        from . import lexica
+        lexica.fetch()
     elif a.cmd == "about":
         from . import about
         dirs = (sorted(d for d in (repo / "texts").iterdir() if (d / "manifest.yaml").exists())

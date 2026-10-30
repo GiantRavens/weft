@@ -68,6 +68,11 @@ def run(repo: Path, work: str) -> dict:
         bad("manifest-extent", f"{ext!r}; extent: {{is: one of {', '.join(EXTENTS)}, of: \"the denominator in words\"}}")
     elif not isinstance(ext.get("of"), str) or not ext["of"].strip():
         bad("manifest-extent-of", "extent.of says how much of the work this is, in words (canto 1 of 34)")
+    for sk, rows in (manifest.get("sound_key") or {}).items():
+        if sk not in (manifest.get("schemes") or []):
+            bad("manifest-sound-key", f"sound_key names {sk}, which is not one of the work's schemes")
+        elif not isinstance(rows, list) or not all(isinstance(r, list) and len(r) == 2 and all(isinstance(x, str) for x in r) for r in rows):
+            bad("manifest-sound-key", f"sound_key {sk}: a list of [symbol, what it says] pairs")
     check_about(work_dir(repo, work), manifest, bad)
     from . import stewardship
     from .draft import PHON
@@ -114,6 +119,8 @@ def run(repo: Path, work: str) -> dict:
             bad("note-unattached", n.get("id", "?"))
         if n.get("kind") == "quoted" and not n.get("source"):
             bad("quoted-note-no-source", n.get("id", "?"))
+        for w in n.get("see_unknown") or []:
+            bad("note-see-unknown", f"{n.get('id', '?')}: {w} is not a work this page may link to")
     for s in data["sense"]:
         covered = []
         for sp in s["spans"]:

@@ -67,8 +67,8 @@ run:
   - 64
   - 65
 counts:
-  lines: 390
-  tokens: 1461
+  lines: 396
+  tokens: 1494
 failures: {}
 samples: {}
 failure_rate: {}
@@ -81,5 +81,3 @@ predicted_gaps:
 - 'the poem is a flyting in dialogue: the speaker named above each stanza in the edition is shown in the stanza heading; stanza 1 follows the prose directly and carries none'
 - the prose frame (the feast at Ægir's, and the binding of Loki at the end) stands in the source file but is not a stanza; the notes summarize it
 - Bellows and Thorpe both number the 65 stanzas as the standard text does, and are aligned one span per stanza
-- the edition's stanza 23 has five lines; Neckel-Kuhn and the translators give three more (kýr mólkandi ok kona, ok hefr þú þar börn borit, ok hugða ek þat args aðal), which this text does not carry, so
-  Bellows's and Thorpe's stanza 23 say more than the Norse shown

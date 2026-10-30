@@ -16,6 +16,7 @@ import urllib.request
 from pathlib import Path
 
 from .draft import load_manifest
+from . import tls
 
 
 def sources(m: dict) -> list[dict]:
@@ -71,7 +72,7 @@ def run(work_dir: Path, accept: bool = False) -> dict:
             p.parent.mkdir(parents=True, exist_ok=True)
             tmp = p.with_suffix(p.suffix + ".part")
             req = urllib.request.Request(s["url"], headers={"User-Agent": "weft-acquire/0.1"})
-            with urllib.request.urlopen(req, timeout=120) as r, tmp.open("wb") as f:
+            with urllib.request.urlopen(req, timeout=120, context=tls.context()) as r, tmp.open("wb") as f:
                 while chunk := r.read(1 << 20):
                     f.write(chunk)
             if s.get("extract"):

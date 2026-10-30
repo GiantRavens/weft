@@ -76,14 +76,16 @@ def test_the_witness_check_needs_every_difference_declared(tmp_path, monkeypatch
     (wd / "gen" / "ocr").mkdir(parents=True)
     (wd / "gen" / "ocr" / "p1.txt").write_text("ᎠᏴ ᎬᏂᏉ ᎠᏫᏂᏘᏢ ᎪᎦᎪᎥ ᎪᎪ-\nᏪᎳ, ᏣᎳᎩ\n", encoding="utf-8")
     monkeypatch.setattr(paths, "work_dir", lambda repo, work: tmp_path / work)
-    ocr._WITNESS.clear()
+    ocr._WITNESS.clear(); ocr._CURSOR.clear()
     ed = {"work": "w", "ocr_check": {"file": "gen/ocr/p1.txt"}}
     toks = [{"t": "ᎠᏴ"}, {"t": "ᎬᏂᏉ"}, {"t": "ᎠᏫᏂᏗᏢ"}, {"t": "ᎪᎦᎪᎥ"}, {"t": "ᎪᎪᏪᎳ,"}, {"t": "ᏣᎳᎩ"}]
     fails = ocr.witness_check(toks, ed, "chr")
     assert fails == [("edition-not-in-ocr", "Ꮒ[Ꮧ/Ꮨ]Ꮲ")]
     toks[2]["ocr"] = "ᎠᏫᏂᏘᏢ"                       # the OCR's reading, declared after settling on the scan
+    ocr._CURSOR.clear()                              # each check here stands for a fresh run of draft (pin 170)
     assert ocr.witness_check(toks, ed, "chr") == []
     toks[0]["ocr"] = "ᎠᏴ"                            # a declaration that changes nothing
+    ocr._CURSOR.clear()
     assert ocr.witness_check(toks, ed, "chr") == [("ocr-reading-unneeded", "ᎠᏴ")]
 
 
@@ -92,7 +94,7 @@ def test_a_word_the_ocr_dropped_is_declared_empty(tmp_path, monkeypatch):
     (tmp_path / "w" / "gen" / "ocr").mkdir(parents=True)
     (tmp_path / "w" / "gen" / "ocr" / "p1.txt").write_text("ᏣᎳᎩ ᎪᎩᏁᏤᎸᎯ", encoding="utf-8")
     monkeypatch.setattr(paths, "work_dir", lambda repo, work: tmp_path / work)
-    ocr._WITNESS.clear()
+    ocr._WITNESS.clear(); ocr._CURSOR.clear()
     ed = {"work": "w", "ocr_check": {"file": "gen/ocr/p1.txt"}}
     toks = [{"t": "ᏣᎳᎩ"}, {"t": "ᎾᏅᎾᏛ", "ocr": ""}, {"t": "ᎪᎩᏁᏤᎸᎯ"}]
     assert ocr.witness_check(toks, ed, "chr") == []

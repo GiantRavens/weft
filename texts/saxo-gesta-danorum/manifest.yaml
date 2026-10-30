@@ -1,0 +1,73 @@
+work: saxo-gesta-danorum
+title: 'Gesta Danorum, book 9: Ragnar Lothbrok and his sons'
+short_title: Gesta Danorum 9.3-5 (Ragnar)
+author: Saxo Grammaticus (late 12th and early 13th century)
+language: lat
+lang_name: Latin of Denmark about 1200
+kind: epic-and-myth
+wikipedia:
+  title: Gesta Danorum
+  match: parent
+prefix: gd
+urn: urn:weft:lat:saxo.gesta-danorum.9
+unit: section
+section_noun: section
+written:
+  year: 1200
+  display: about 1200
+  label: written in Latin in Denmark by Saxo, a clerk of Archbishop Absalon of Lund, and probably finished in the first years of the 13th century under Archbishop Anders Sunesen; first printed in Paris in 1514
+status: phase-0
+extent:
+  is: section
+  of: chapters 3 to 5 of book 9, of 16 books
+pilot:
+  sections: ['3.1', '3.2', '3.3', '3.4', '4.1', '4.2', '4.3', '4.4', '4.5', '4.6', '4.7', '4.8', '4.9', '4.10', '4.11', '4.12', '4.13', '4.14', '4.15', '4.16', '4.17', '4.18', '4.19', '4.20', '4.21', '4.22', '4.23', '4.24', '4.25', '4.26', '4.27', '4.28', '4.29', '4.30', '4.31', '4.32', '4.33', '4.34', '4.35', '4.36', '4.37', '4.38', '4.39', '5.1', '5.2', '5.3', '5.4', '5.5', '5.6', '5.7', '5.8']
+edition:
+  id: holder1886-weft
+  name: "Saxonis Grammatici Gesta Danorum, ed. Alfred Holder (Strassburg: Trübner, 1886), pp. 299-316, corrected from the Internet Archive's OCR against the page images, in a Weft edition file"
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain (Holder's edition, 1886; Holder died 1916); Weft transcription and line division CC BY-SA 4.0
+treebank: null
+schemes: [danish-medieval, classical, ecclesiastical]   # default: Latin as read in Denmark around 1200 (approximate)
+scheme_labels:
+  danish-medieval: "As first read: Latin in Denmark around 1200, when Saxo wrote (approximate)"
+sound_confidence: medium
+quantities:
+  - pipeline/weft/data/lat_quantities.yaml
+  - pipeline/weft/data/lat_quantities_saxo.yaml
+sources_extra:
+- id: holder1886-ocr
+  name: 'Saxonis Grammatici Gesta Danorum, ed. Alfred Holder (Strassburg: Trübner, 1886), the Internet Archive''s OCR of the University
+    of Toronto copy (saxonisgrammatic00saxouoft)'
+  file: sources/holder1886-ocr.txt
+  url: https://archive.org/download/saxonisgrammatic00saxouoft/saxonisgrammatic00saxouoft_djvu.txt
+  sha256: d549bd332e108a323a24b4037b5d9c3eede6ccccdedeeed2c060e7f1d14e9780
+  license: public domain (Holder died 1916)
+  license_url: https://archive.org/details/saxonisgrammatic00saxouoft
+translations:
+- id: elton1894
+  translator: Oliver Elton
+  year: 1894
+  form: "prose, The First Nine Books of the Danish History of Saxo Grammaticus (London: David Nutt, 1894), as reprinted by the Norroena Society (London and New York, 1905) and transcribed by Project Gutenberg (#1150); the 1894 margins give the pages of Holder's text"
+  license: "public domain (Elton died 1945; the reprint dates from 1905)"
+  license_url: https://www.gutenberg.org/ebooks/1150
+  file: sources/elton1894.txt
+  url: https://www.gutenberg.org/cache/epub/1150/pg1150.txt
+  sha256: 97d7dd2cf633cda86b1bc46e3ef1c9c0bf997600ce43d6206a7829ef50f94e13
+- id: fisher-davidson1979
+  kind: reference
+  translator: Peter Fisher (tr.) and Hilda Ellis Davidson (ed.)
+  year: 1979
+  form: "Saxo Grammaticus, The History of the Danes, Books I-IX (Cambridge: D. S. Brewer, 1979-80)"
+- id: friis-jensen-fisher2015
+  kind: reference
+  translator: Karsten Friis-Jensen (ed.) and Peter Fisher (tr.)
+  year: 2015
+  form: "Saxo Grammaticus, Gesta Danorum: The History of the Danes (Oxford Medieval Texts, 2015), Latin and English"
+predicted_gaps:
+- "only chapters 3 to 5 of book 9 (Siward Ring, Ragnar, and his sons' vengeance) are given; the rest of book 9 and the other fifteen books are not"
+- "no treebank covers Saxo: lemma, morphology and gloss are hand-annotated after Lewis and Short in classical spelling, by five hands under one convention table (draft)"
+- "the Latin is Holder's (1886), read from one copy's OCR; the 318 words on which four OCRs of three copies disagreed, or on which Holder differs from the Olrik-Raeder edition, were read on the page images, and the rest rests on the agreement of the OCRs. Paragraph and sentence numbers follow Olrik and Raeder (1931); their text is not used"
+- "the danish-medieval sound scheme reconstructs Latin as read in Denmark around 1200 from spelling evidence and the later history of Danish (approximate); vowel lengths come from a table with one value per printed form, so a form that stands in two cases (filia and filiā) shows one length in the classical scheme"
+- "Elton's translation is given in the Norroena Society's reprint of 1905, as transcribed by Project Gutenberg, which departs from the 1894 print in a few words; two transcription errors are corrected from the 1894 print"

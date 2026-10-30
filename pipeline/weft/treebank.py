@@ -423,7 +423,9 @@ OSHB_PART = {"o": ("PART", "Obj"), "d": ("DET", "Art"), "n": ("PART", "Neg"), "i
 
 def oshb_to_ud(seg: str, lang: str = "H") -> str:
     """One OSHB morph segment ('Vqw3ms', 'Ncfsa', 'To', 'R') -> a UD-style string. `lang` is the
-    parsing string's language prefix, H (Hebrew) or A (Aramaic): the verb-stem letters differ."""
+    parsing string's language prefix, H (Hebrew) or A (Aramaic): the verb-stem letters differ.
+    Membership tests use tuples, not strings: "" in "123" is True, and a short segment (a pronoun
+    with no person, Dan. 8) then indexed past its end (pin 167)."""
     pos, rest = seg[:1], seg[1:]
     f: dict[str, str] = {}
     if pos == "V":
@@ -431,21 +433,21 @@ def oshb_to_ud(seg: str, lang: str = "H") -> str:
         conj = rest[1:2]
         f["Conj"] = OSHB_CONJ.get(conj, conj)
         tail = rest[2:]
-        if conj in "rs":                      # participle: gender, number, state
+        if conj in ("r", "s"):                      # participle: gender, number, state
             g, n, st = (tail + "---")[:3]
-        elif conj in "ac":                    # infinitive
+        elif conj in ("a", "c"):                    # infinitive
             g = n = st = "-"
         else:                                 # finite: person, gender, number
-            if tail[:1] in "123":
+            if tail[:1] in ("1", "2", "3"):
                 f["Person"] = tail[0]
             g, n, st = (tail[1:] + "---")[0], (tail[1:] + "---")[1], "-"
         if g in OSHB_GEN: f["Gender"] = OSHB_GEN[g]
         if n in OSHB_NUM: f["Number"] = OSHB_NUM[n]
         if st in OSHB_STATE: f["State"] = OSHB_STATE[st]
         upos = "VERB"
-    elif pos in "NA":
+    elif pos in ("N", "A"):
         kind = rest[:1]
-        upos = "PROPN" if (pos == "N" and kind == "p") else ("NUM" if pos == "A" and kind in "co" else
+        upos = "PROPN" if (pos == "N" and kind == "p") else ("NUM" if pos == "A" and kind in ("c", "o") else
                                                             "NOUN" if pos == "N" else "ADJ")
         g, n, st = (rest[1:] + "---")[:3]
         if g in OSHB_GEN: f["Gender"] = OSHB_GEN[g]
@@ -455,7 +457,7 @@ def oshb_to_ud(seg: str, lang: str = "H") -> str:
         upos = "PRON"
         f["PronType"] = {"d": "Dem", "f": "Ind", "i": "Int", "p": "Prs", "r": "Rel"}.get(rest[:1], rest[:1])
         tail = rest[1:]
-        if tail[:1] in "123":
+        if tail[:1] in ("1", "2", "3"):
             f["Person"] = tail[0]; tail = tail[1:]
         if tail[:1] in OSHB_GEN: f["Gender"] = OSHB_GEN[tail[0]]
         if tail[1:2] in OSHB_NUM: f["Number"] = OSHB_NUM[tail[1]]
@@ -466,12 +468,12 @@ def oshb_to_ud(seg: str, lang: str = "H") -> str:
         upos = "PRON"
         f["PronType"] = "Suffix"
         tail = rest[1:]
-        if tail[:1] in "123": f["Person"] = tail[0]; tail = tail[1:]
+        if tail[:1] in ("1", "2", "3"): f["Person"] = tail[0]; tail = tail[1:]
         if tail[:1] in OSHB_GEN: f["Gender"] = OSHB_GEN[tail[0]]
         if tail[1:2] in OSHB_NUM: f["Number"] = OSHB_NUM[tail[1]]
     else:
         upos = {"C": "CCONJ", "D": "ADV", "R": "ADP"}.get(pos, "X")
-    return upos + "".join(f"|{k}={v}" for k, v in sorted(f.items()))
+    return upos + "".join(f"|{k}={v}" for k, v in sorted(f.items()) if v)
 
 
 def load_strong_lexicon(path: Path) -> dict[str, dict]:
@@ -563,12 +565,16 @@ def load_oshb(path: Path, book: str, chapter: int, first: int, last: int, lexico
                          "ref": f"{verse.get('osisID')}/{el.get('id')}"})
             if num in QERE_PERPETUUM:
                 # the divine name is written with the vowels of the word read in its place (qere
-                # perpetuum): the reading is sounded. A prefix changes its vowel before the reading
-                # (לַיהוָה, laʾdōnāy), which is not derived here and is reported instead.
+                # perpetuum): the reading is sounded. After a prefix the reading's first vowel, the
+                # hateph under its aleph, is the one the scribes already wrote under the prefix
+                # (לַיהוָה = la + ʾdōnāy, לֵיהוִה = lē + ʾlōhîm): the reading is the prefix as written,
+                # then the word with that hateph dropped (pin 167)
                 head, tail = QERE_PERPETUUM[num]
                 # the accents, and the meteg with which the Leningrad text writes a verse-final silluq
-                accents = "".join(c for c in wtext if "\u0591" <= c <= "\u05AE" or c == "\u05BD")
-                rows[-1]["qere" if not prefixes else "qere_unread"] = head + accents + tail
+                accents = "".join(c for c in wtext.split("/")[-1] if "\u0591" <= c <= "\u05AE" or c == "\u05BD")
+                if prefixes:
+                    head = "".join(pf["form"] for pf in prefixes) + head.replace("\u05B2", "", 1).replace("\u05B1", "", 1)
+                rows[-1]["qere"] = head + accents + tail
                 rows[-1]["perpetuum"] = True
         out[int(vs)] = rows
     return out

@@ -329,11 +329,8 @@ def mora_count(kana: str) -> int:
     return sum(1 for ch in kana if ch not in _SMALL_Y and ch not in ("ゎ", _SEP, _HOLD))
 
 
-_PICK: tuple = (None, {})         # the token being drafted: (reading, its edition fields)
-
-
-def _new_phonemize(word: str, scheme: str) -> dict:
-    pick = _PICK[1] if _PICK[0] == word else {}
+def _new_phonemize(word: str, scheme: str, pick: dict | None = None) -> dict:
+    pick = pick or {}
     if pick.get("oki") or not word or not any(ch in KANA_OK for ch in word):
         return {"ipa": "", "respell": "(silent)", "syllables": 0}
     if word == "は":
@@ -435,9 +432,6 @@ def _find_line_in_edition(edition: dict, etoks: list[dict]) -> dict | None:
 def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[str, str]]]:
     """Language hook. Holds the token's reading options for phonemize; in a kunten section, adds
     `script`: the token's place in the reading order and its return mark."""
-    global _PICK
-    reading = et.get("n") or surface
-    _PICK = (reading, {k: et[k] for k in ("oki", "mod") if k in et})
     fields: dict = {}
     fails: list[tuple[str, str]] = []
     if et.get("n"):
@@ -708,10 +702,17 @@ SCRIPT_LABEL = "Reading order (kunten)"
 SCRIPT_WORD = "reading order"
 
 
-def phonemize(word: str, scheme: str = "edo-1686", quantities=None, **_) -> dict:
+WANTS_TOKEN = True        # draft passes the edition token and its printed surface: oki, mod (pin 201)
+
+
+def phonemize(word: str, scheme: str = "edo-1686", quantities=None, etok: dict | None = None,
+              surface: str | None = None, **_) -> dict:
     """`word` is the token's historical kana reading."""
+    # the token's reading options apply when draft is sounding this token's own reading (n, or the print)
+    pick = ({k: etok[k] for k in ("oki", "mod") if k in etok}
+            if etok is not None and (etok.get("n") or surface) == word else {})
     if scheme in NEW_SCHEMES:
-        return _new_phonemize(word, scheme)
+        return _new_phonemize(word, scheme, pick)
     ms = morae(word, scheme)
     shown = _contract(ms, word) if word != "は" else ms
     return {"ipa": ".".join(_ipa(m) for m in shown), "respell": "-".join(shown), "syllables": len(ms)}

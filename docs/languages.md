@@ -25,7 +25,9 @@ that use it. Where the repository names no source, this page says so.
 - **The Sound key.** The masthead button opens the key for the scheme in use: the scheme's label
   and a table of every symbol. The key text is the `KEY` dictionary in the language module; the
   label is the manifest's `scheme_labels` entry if it has one, otherwise the module's
-  `SCHEME_LABELS`.
+  `SCHEME_LABELS`. A manifest may also replace a scheme's key for that work alone with
+  `sound_key: {scheme: [[symbol, what it says], ...]}`, so a key shared by several works need not
+  name one of them; `weft check` reports a `sound_key` for a scheme the work does not use.
 - **Confidence.** A manifest may set `sound_confidence`. At `low` the page opens with "The
   pronunciation here is a reconstruction"; at `medium`, "Parts of the pronunciation here are
   reconstructed". Both link to the Pronunciation and Recording forms and to this page. Works with
@@ -78,6 +80,7 @@ the page shows no invitation.
 | Latin | `latin` | Ovid, Res Gestae | classical (first), ecclesiastical | not set |
 | | | Bayeux Tapestry | anglo-norman (first), classical | medium |
 | | | Magna Carta | anglo-latin (first), classical | not set |
+| | | Saxo, Gesta Danorum 9.3-5 | danish-medieval (first), classical, ecclesiastical | medium |
 | | | Saer de Quincy, two charters | anglo-latin (first), classical | medium |
 | | | Pico | italian-humanist (first), classical | not set |
 | | | Inter caetera | italian-humanist (first), classical | medium |
@@ -360,6 +363,7 @@ against the hexameter for Ovid. A word missing from the table is reported as `qu
 | `classical` | Classical: restored pronunciation of Cicero's and Ovid's Rome | first for Ovid and the Res Gestae; third for Luther; second elsewhere | after W. S. Allen, *Vox Latina*: c and g hard, v as w, ae as ai, length audible |
 | `ecclesiastical` | Ecclesiastical: Italianate church Latin | second for Ovid and the Res Gestae; second of three for Luther | soft c and g before front vowels, v as v, ae as e, length heard only in stress |
 | `anglo-norman` | As first read: Latin in Normandy and Norman England around 1070 (approximate) | Bayeux Tapestry | c before front vowels ts, g and j dʒ, h silent, u as French u, s between vowels z |
+| `danish-medieval` | As first read: Latin in Denmark around 1200 (approximate) | Saxo, Gesta Danorum (Holder 1886) | c before front vowels s, ti before a vowel s (Holder writes ci), g hard, consonantal u and w v, qu kv, h sounded but k in michi, th t, length heard only in stress |
 | `anglo-latin` | Anglo-Latin: as a clerk in England read Latin around 1215 (approximate) | Magna Carta; the Saer de Quincy charters | soft c ts, soft g and j dʒ, h silent, v as v, s between vowels z |
 | `italian-humanist` | As first read: Latin in northern Italy in the 1480s (approximate) | Pico; Inter caetera | Italian vowels, soft c ch, gn ny, sc sh, ti ts, h silent, s between vowels z |
 | `low-countries` | As first read: Latin in the Low Countries around 1500 (approximate) | Erasmus | Dutch vowel values long in open syllables, u as Dutch uu, g a fricative, ch kh, ti ts |
@@ -385,6 +389,11 @@ Res Gestae).
   (PRELIUM, EDIFICARE), Roger Wright's argument on the reading of Latin before and after the
   Carolingian reform, and Allen's appendix on French reading (module). The notes cite Pope, *From
   Latin to Modern French* (1934), and Wright, *Late Latin and Early Romance* (1982).
+- `danish-medieval`: the Paris and German schooling of Danish clergy (Absalon, Anders Sunesen,
+  William of Æbelholt), Old Danish and Old Norse forms of church names (Sidsel and Sesselja from
+  Cecilia, Mikkel from Michael), Old Danish sound history (þ to t, no z), the medieval spellings of
+  Holder's text (gracia, celum, Syuardus, michi), and the quantitative verse of Saxo and
+  Anders Sunesen for keeping the penultimate rule (module).
 - `anglo-latin`: spelling and French and English sound history (key); no work is named. The
   charters' quantity table follows Lewis and Short, with the charter vocabulary (elemosina,
   warantizo, ius patronatus) after Niermeyer and Du Cange (manifest).
@@ -393,6 +402,11 @@ Res Gestae).
 - Every national scheme is labeled approximate. None rests on a description by the author.
 - `anglo-norman`: u as [y], silent h (Harold may have kept his), and whether qu was still [kw]
   (module).
+- `danish-medieval`: c before front vowels as s rather than ts; g kept hard (Danish Jørgen may
+  show a soft g); h sounded; v rather than w; vowel length not heard; Norse names stressed by the
+  Latin rule, where a Dane may have stressed the first syllable. Consonantal u is found from the
+  spelling, so a consonant followed by uu (seruus) is read as two vowels unless the quantity table
+  gives the word (module).
 - `german-humanist`: v as f; v or w is also possible (module and manifest). The module has no eu
   diphthong, so seu is read as two syllables (Luther manifest).
 - `italian-humanist` on Inter caetera: the scheme was built for northern Italy and voices s
@@ -410,7 +424,7 @@ Res Gestae).
 
 **What a specialist could improve.** Quantity-table entries, especially hidden quantities and
 medieval words keyed by their classical stems; the rule functions in `latin.py` (`_humanist`,
-`_german`, `_norman`, `_national`) for a named period grammar; an eu diphthong; a separate
+`_german`, `_norman`, `_danish`, `_national`) for a named period grammar; an eu diphthong; a separate
 southern Italian or Roman reading for the papal chancery.
 
 ## Sahidic Coptic
@@ -934,34 +948,70 @@ the hymn to Elbereth exist only as private works built from a reader's own copy 
 The module is public because it states pronunciation rules and holds no text.
 
 **Scheme.**
-- `tolkien`, "As Tolkien described it: Appendix E (1955)", the only scheme: c always k, qu kw, ch
-  the sound of German bach, dh and th as in these and thin, r trilled everywhere, s always voiceless,
-  f at the end of a word v; a e i o u as in father, were, machine, for, brute, long with the acute
+- `tolkien`, "As Tolkien described it: Appendix E (1955) and The Road Goes Ever On (1967)", the
+  only scheme: c always k, qu kw, ch the sound of German bach, dh and th as in these and thin, ng as
+  in finger inside a word and as in sing at the end (and, in Sindarin, at the start), r trilled
+  everywhere, s always voiceless, f at the end of a word v; a e i o u as in father, were, machine, for, brute, long with the acute
   (Quenya long é and ó closer than the short vowels; Sindarin long vowels the same quality held);
   Sindarin y the French u; the diphthongs ai au eu iu oi ui (Quenya) and ae ai ei oe ui au
   (Sindarin), all falling; every other vowel pair two syllables; final e always sounded. Stress by
   Tolkien's rule: the first of two syllables; otherwise the last but one when it holds a long vowel,
-  a diphthong or a vowel before two consonants, else the third from the end.
+  a diphthong or a vowel before two consonants, else the third from the end. Quenya secondary
+  stress (ˌ in the IPA): the first syllable when the main stress is two or more syllables later, or
+  is next and the first syllable is long; and the last syllable of a word ending in two short
+  syllables after the main stress. Sindarin short vowels as in ah, bed, sick, hot, foot; the long
+  diphthongs ae oe au ui with the first vowel prolonged (half-long in the IPA).
 
-**What it rests on.** Appendix E, part I, "Pronunciation of Words and Names", in The Lord of the
-Rings (1955): the author's own account of how his transcription is to be read. This is the one
+**Script row (Tengwar).** Each word also carries a Tengwar row, set in Alcarin Tengwar (SIL OFL 1.1,
+bundled in `site/fonts`, loaded only on pages with Tengwar). Quenya follows the classical mode of
+Appendix E as Tolkien wrote Namárië in Tengwar on p. 65 of The Road Goes Ever On (3rd ed.): each vowel
+sign over the consonant before it, the long carrier for a long vowel but a doubled accent for long é,
+yanta and úre for the second part of a diphthong, rómen before a vowel and óre elsewhere. Ten words are
+pinned in the tests as read off that page; the rest await a reading against it
+(`private/tolkien-namarie/review/`, weft#196). An edition token may carry `tengwar:` to give Tolkien's
+own spelling where it departs from the mode. Sindarin follows Appendix E's general use (the vowel sign
+over the consonant after it) and is Weft's transcription: Tolkien left no Tengwar of these Sindarin texts.
+
+**Pauses (Namárië).** Tolkien's handwritten copy of Namárië (The Road Goes Ever On, p. 76) marks "the
+pauses in the chant in ascending order of time-length and tone-fall" with | || |||. They are kept as a
+`pause` field on the word each follows (`private/tolkien-namarie/curated/pauses.yaml`, sixteen marks)
+and shown after that word's respelling. The same page divides each line into feet with thin hairlines;
+a hairline that falls between words is told from a pause by the iambic scansion. The hairlines are kept
+as each line's metre string, the line's own text with | where Tolkien drew one, and only there: he did not
+mark every boundary (none after the opening trochee of line 3, one only in line 17). Thirteen lines are
+recorded; lines 10, 12 and 14 and the left half of line 4 show only faint traces in the scan and await a
+reading against the page (weft#200).
+
+**What it rests on.** Two accounts by the author. Appendix E, part I, "Pronunciation of Words and
+Names", in The Lord of the Rings (1955), gives the letter values and the stress rule. The "Notes and
+Translations" in The Road Goes Ever On (1967; read from the 3rd edition, HarperCollins 2002, pp.
+66-72) add what Tolkien thought Appendix E had given "not perhaps with great clarity": for Quenya,
+the tone of the main stress, the secondary stresses, and Namárië printed with every major and
+minor stress marked; for Sindarin, the short vowel qualities, the sound of ae, the long diphthongs,
+and initial ng. Where the two differ in detail, the later notes are followed. This is the one
 language in the library whose author wrote down its pronunciation, so the scheme is a statement of
-his rules rather than a reconstruction. The twelve stress examples Tolkien gives there are the
-module's regression tests, and so are the stress marks he printed on Namárië in The Road Goes Ever
-On (1967), as recorded word by word in Eldamo (P. Strack, eldamo.org): the module reproduces every
-one. Lemma and gloss in the private works follow Tolkien's own word glosses through Eldamo's
+his rules rather than a reconstruction. The regression tests are the twelve stress examples of
+Appendix E and the marks on Namárië: the module's main stress agrees with every major mark, and its
+main and secondary stresses together agree with the marked syllables of 36 of 37 words of more
+than one syllable. The exception is laurië in line 1, where the rule gives the last syllable a light
+stress that Tolkien describes as available to the metre and the line does not use. Lemma and gloss in the private works follow Tolkien's own word glosses through Eldamo's
 citations to the page and line; Eldamo's neo-Eldarin forms (fan reconstructions) are never used.
 
 **Where it is weakest.** Appendix E gives letter values "approximately" and only by English
-keywords, so the IPA is broad. The quality of Sindarin ae and oe is not described (the respelling
-reads them as ai, oi, which Appendix E allows). Written th in Quenya is read θ, though Tolkien says
-the sound had become s in speech. Secondary stress in compounds, which Tolkien marks with a grave
-in 1967, is not shown. Tolkien's 1952 recordings are not used: they differ from the printed text in
+keywords, and the 1967 notes add more keywords (sick, bed, hot, foot) that "may" render the
+Sindarin short vowels; the IPA stays broad rather than reading lax English vowels into Sindarin.
+The quality of Sindarin oe is not described (the respelling reads it oi, which Appendix E allows);
+ae is "very similar to" the vowel of high (1967). How much longer the first vowel of a long
+diphthong is, Tolkien says only "somewhat". Written th in Quenya is read θ, though Tolkien says
+the sound had become s in speech. In hyphenated compounds the 1967 marks vary (aíre-tári-lírinèn has
+three major stresses, ùndu-láve a minor first part); the module gives each part its own main
+stress. Secondary stress in Sindarin is not described and not shown. Tolkien's 1952 recordings are not used: they differ from the printed text in
 places and are a performance, not a rule.
 
 **What a specialist could improve.** The digraph list and the syllable split in `elvish.py`;
 whether ly, ny, ry count as one consonant or two for stress (Tolkien's 1967 marks on ómaryo and
-Calaciryo support two, as the module has it); the Sindarin long-vowel qualities.
+Calaciryo support two, as the module has it); the Sindarin long-vowel qualities; whether the light
+final stress should be shown only where a line's metre uses it (laurië).
 
 ## Open inconsistencies
 

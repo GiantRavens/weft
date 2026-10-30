@@ -156,7 +156,7 @@ def test_lokasenna_draft_and_check():
         before = (work / "gen/stanzas.yaml").read_text()
         report = draft.run(work)
         assert (work / "gen/stanzas.yaml").read_text() == before
-        assert report["counts"] == {"lines": 390, "tokens": 1461}   # all 65 stanzas (2026-10-08)
+        assert report["counts"] == {"lines": 396, "tokens": 1494}   # all 65 stanzas; +6 lines in 23 and 33, recovered by pin 72
     gen = yaml.safe_load((work / "gen/stanzas.yaml").read_text())
     titles = {l["stanza"]: l.get("stanza_title") for l in gen["lines"]}
     assert titles[1] is None and titles[2] == "Stanza 2 · Eldir kvað" and titles[57] == "Stanza 57 · Þá kom Þórr at ok kvað"
@@ -316,6 +316,34 @@ def test_anglo_latin_and_magna_carta():
         assert report["failures"] == {}             # includes: every line found verbatim in McKechnie
     r = check.run(REPO, "magna-carta")
     assert r["ok"], r["problems"]
+
+
+def test_danish_medieval_latin():
+    """Latin in Denmark around 1200 (Saxo), read from Holder's medieval spellings."""
+    q = LQ
+    cases = {"gracia": "GRA-see-a",          # ci before a vowel; c before i = s
+             "gratia": "GRA-see-a",          # ti before a vowel takes the value of ci
+             "Regnerus": "REG-ne-roos",      # g hard before n; no quantity, so the antepenult
+             "Iuarus": "EE-va-roos",         # iu before a vowel is I + v, not j + u
+             "michi": "MEE-kee",             # ch = k
+             "mihi": "MEE-kee",              # h between vowels in mihi = k, as michi shows
+             "nichil": "NEE-keel",
+             "celum": "SE-loom",             # e for ae
+             "caelum": "SE-loom",
+             "cuius": "KOO-yoos",            # i between vowels = j
+             "uirtus": "VEER-toos",          # initial u before a vowel = v
+             "Siuardus": "see-VAR-doos",     # u between vowels = v; closed penult stressed
+             "Syuardus": "see-VAR-doos",     # y = i
+             "homo": "HO-mo",                 # h sounded
+             "incipit": "EEN-see-peet",      # n stays n before soft c
+             "quia": "KVEE-a"}               # the u of qu is not a vowel, so i stays a vowel
+    for w, want in cases.items():
+        assert latin.phonemize(w, "danish-medieval", q)["respell"] == want, w
+    assert latin.phonemize("gracia", "as-first-read", q, dialect="danish")["respell"] == "GRA-see-a"
+    assert latin.SCHEME_LABELS["danish-medieval"] == "As first read: Latin in Denmark around 1200 (approximate)"
+    assert latin.phonemize("cuius", "danish-medieval", q)["known"]          # through the table's cujus
+    # the existing schemes are untouched by the new one
+    assert latin.phonemize("caelum", "anglo-norman", q)["respell"] == "TSE-lüm"
 
 
 def test_national_latin_and_science():
@@ -624,11 +652,40 @@ def test_elvish_stress_matches_tolkien():
     for w, want in rgeo.items():
         assert E.word_sound(w, "qya")[1] == want, w
     # letter values: c = k, qu = kw, final f = v, Sindarin y = ü, ae read as ai, ng final as in sing
-    assert E.word_sound("Calacirya", "qya")[0].startswith("ka.la.")
+    assert E.word_sound("Calacirya", "qya")[0].startswith("ˌka.la.")       # secondary stress, RGEO Càlacíryo
     assert E.word_sound("nef", "sjn")[0] == "nɛv"
     assert E.word_sound("emyn", "sjn")[1] == "E-mün"
     assert E.word_sound("aear", "sjn")[1] == "AI-ar"
     assert E.word_sound("thalion", "sjn")[0].endswith("ɔn")
+    # RGEO p. 71: Sindarin ng at the start of a word is the ng of sing; the long diphthongs prolong
+    # their first vowel. Inside a word ng is the ng of finger (and the IPA table must hold it)
+    assert E.word_sound("nguruthos", "sjn")[0].startswith("ˈŋu")
+    assert "uˑi̯" in E.word_sound("Fanuilos", "sjn")[0]
+    assert E.word_sound("Ingwë", "qya") == ("ˈiŋ.gʷɛ", "ING-gwe", 2)
+    assert E.word_sound("Angband", "sjn")[1] == "ANG-band"
+
+
+def test_elvish_secondary_stress_matches_rgeo():
+    """Quenya secondary stress (RGEO pp. 68-69) against the marks Tolkien printed on Namárië (RGEO
+    p. 66): every syllable he marks major (acute) or minor (grave) carries ˈ or ˌ in the IPA, and no
+    other. Words in the Lord of the Rings spelling; RGEO's hyphenated compounds as their parts;
+    monosyllables, which take sentence stress, are left out."""
+    from weft import elvish as E
+    marks = {"súrinen": {0, 2}, "únótimë": {0, 1, 3}, "aldaron": {0, 2}, "avánier": {1, 3}, "oromardi": {0, 2},
+             "lisse": {0}, "miruvóreva": {0, 2, 4}, "Andúnë": {0, 1}, "tellumar": {0, 2}, "tintilar": {0, 2},
+             "eleni": {0, 2}, "ómaryo": {0, 1}, "lirinen": {0, 2}, "enquantuva": {0, 1, 3}, "Tintallë": {0, 1},
+             "Oiolossëo": {0, 2, 4}, "Elentári": {0, 2}, "ortanë": {0, 2}, "undu": {0}, "lávë": {0}, "lumbulë": {0, 2},
+             "sinda": {0}, "noriello": {0, 2}, "mornië": {0, 2}, "falmalinnar": {0, 2}, "hísië": {0, 2},
+             "Calaciryo": {0, 2}, "oialë": {0, 2}, "Rómello": {0, 1}, "Valimar": {0, 2}, "Namárië": {1, 3},
+             "hiruvalyë": {0, 2}, "hiruva": {0, 2}, "luini": {0}, "caita": {0}, "aire": {0}}
+    stressed = lambda w: {k for k, s in enumerate(E.word_sound(w, "qya")[0].split(".")) if s[:1] in "ˈˌ"}
+    for w, want in marks.items():
+        assert stressed(w) == want, w
+    # the one divergence: laurië (line 1) ends in two short syllables after the stress, so the rule
+    # gives its last a light stress, but the light stress is one that "could be used metrically" and
+    # the line does not use it; Tolkien leaves it unmarked
+    assert stressed("laurië") == {0, 2}
+    assert "ˌ" not in E.word_sound("Elbereth", "sjn")[0]           # no secondary stress in Sindarin
 
 
 def test_aramaic_daniel():
@@ -652,7 +709,7 @@ def test_aramaic_daniel():
 def test_shema_large_letters_and_the_divine_name(tmp_path):
     """The OSHB wraps the Shema's enlarged ayin and dalet in a <seg> inside the word, and the reader keeps
     their text; the divine name is sounded as the word read in its place (qere perpetuum), accent carried
-    over, and a prefixed form is reported rather than guessed."""
+    over, and after a prefix the reading follows the prefix as written (pin 167)."""
     from weft import treebank as T
     osis = tmp_path / "x.xml"
     osis.write_text('<osis xmlns="http://www.bibletechnologies.net/2003/OSIS/namespace"><verse osisID="Deut.6.4">'
@@ -662,7 +719,7 @@ def test_shema_large_letters_and_the_divine_name(tmp_path):
     rows = T.load_oshb(osis, "Deut", 6, 4, 4, {})[4]
     assert rows[0]["word"] == "שְׁמַ֖ע"
     assert rows[1]["qere"] == "אֲדֹנָ֥י" and rows[1]["perpetuum"]
-    assert "qere" not in rows[2] and rows[2]["qere_unread"]
+    assert rows[2]["qere"] == "לַאדֹנָ֥י" and rows[2]["perpetuum"]
     from weft import hebrew as he   # a verse-final name: the silluq (written as meteg) carries over to the reading
     osis.write_text('<osis xmlns="http://www.bibletechnologies.net/2003/OSIS/namespace"><verse osisID="Deut.6.4">'
                     '<w lemma="3068" morph="HNp">יְהוָֽה</w></verse></osis>', encoding="utf-8")
@@ -791,3 +848,228 @@ def test_german_monosyllables_stress_by_one_rule():
     assert german.phonemize("gleich", "northern")["respell"] == "GLAIHY"
     assert german.phonemize("wär", "northern")["respell"] == "vehr"        # an auxiliary, as war
     assert german.phonemize("el", "modern")["respell"] == "EL"             # a letter name given as IPA
+
+
+def test_latin_initial_i():
+    """Word-initial i before a vowel is the consonant of iam, except before another i (iīs, iīdem: no
+    Latin word begins ji-) and in declared Greek words (iambus, Iōnia). Pin 75."""
+    from weft import latin as L
+    syl = lambda w: L.phonemize(w, "classical")["syllables"]
+    assert L.phonemize("iam", "classical")["ipa"] == "jam" and syl("iūnctus") == 2
+    assert syl("iīs") == 2 and syl("iīsdem") == 3 and syl("iambus") == 3 and syl("Iōnia") == 4
+
+
+def test_elvish_tengwar():
+    """The Tengwar row (weft#196). Quenya: the words below were read letter by letter off Tolkien's
+    Tengwar of Namárië (The Road Goes Ever On, 3rd ed. p. 65) and the classical mode reproduces each;
+    the rest of the poem awaits the same reading (private/tolkien-namarie/review/). Sindarin: App. E's
+    general use, Weft's transcription."""
+    from weft import elvish as E
+    cps = lambda w, l: " ".join("%04X" % ord(c) for c in E.tengwar(w, l))
+    read_from_p65 = {
+        "laurië": "E022 E02B E040 E020 E044 E02E E046",      # au: úre carries the a
+        "lantar": "E022 E040 E00C E040 E014",                # nt anto; final r óre
+        "súrinen": "E024 E02C E04C E020 E044 E010 E046 E010",  # ú on the long carrier; r rómen before a vowel
+        "yéni": "E016 E043 E048 E010 E044",                  # anna with the y-dots; é a doubled accent
+        "únótimë": "E02C E04C E010 E02C E04A E000 E044 E011 E046",
+        "ve": "E015 E046",
+        "rámar": "E020 E02C E040 E011 E040 E014",
+        "aldaron": "E02E E040 E023 E040 E020 E04A E010",     # ld alda
+        "yuldar": "E016 E043 E04C E023 E040 E014",
+        "avánier": "E02E E040 E015 E02C E040 E010 E044 E02E E046 E014",
+    }
+    for w, want in read_from_p65.items():
+        assert cps(w, "qya") == want, w
+    assert cps("vanwa", "qya") == "E015 E040 E010 E017 E040"       # medial nw: númen + vilya, as Tolkien writes vanwa
+    # Sindarin, general use: the vowel sign over the consonant after it; ng at the start is nwalme
+    assert cps("Elbereth", "sjn") == "E022 E046 E005 E020 E046 E008 E046"
+    assert cps("nguruthos", "sjn").startswith("E013")
+    assert cps("Angband", "sjn") == "E007 E050 E040 E005 E004 E050 E040"
+
+
+def test_namarie_pauses():
+    """Tolkien's pause marks on Namárië (RGEO p. 76, weft#197): every mark on his page, on the word it
+    follows, and the key quotes his definition. Private work: skipped where the owner's copy is absent."""
+    p = REPO / "private/tolkien-namarie/curated/pauses.yaml"
+    if not p.exists():
+        pytest.skip("private work not present")
+    marks = {k: v["pause"] for cs in yaml.safe_load(p.read_text()) for k, v in cs["set"].items()}
+    assert marks == {
+        "nam.1.1.5": "|", "nam.1.2.5": "|||", "nam.1.4.3": "||", "nam.1.6.2": "|", "nam.1.7.2": "|||",
+        "nam.1.8.6": "|||", "nam.1.9.5": "|", "nam.1.10.5": "||", "nam.1.11.5": "|||", "nam.1.13.4": "||",
+        "nam.1.14.4": "||", "nam.1.15.6": "|||", "nam.1.16.1": "|||", "nam.1.16.4": "||", "nam.1.17.3": "||",
+        "nam.1.17.4": "|||"}
+    from weft import elvish as E
+    assert any("ascending order of time-length and tone-fall" in d for _, d in E.KEY["tolkien"])
+
+
+def test_namarie_feet():
+    """Tolkien's foot divisions on Namárië (RGEO p. 76, weft#200), recorded only where read clearly. Each
+    string is the line's own text with | where a hairline is drawn; no line has more than 6 feet
+    (RGEO p. 68: 5 or 6), and the lines read in full divide as he says (trochee opening line 2, anapaest
+    in the second foot of line 1). Private work: skipped where absent."""
+    p = REPO / "private/tolkien-namarie/curated/metre.yaml"
+    if not p.exists():
+        pytest.skip("private work not present")
+    metre = {k: v["metre"] for cs in yaml.safe_load(p.read_text()) for k, v in cs["set"].items()}
+    ed = yaml.safe_load((REPO / "private/tolkien-namarie/edition.yaml").read_text())
+    text = {f"nam.1.{n}": " ".join(t["t"] for t in l["tokens"]) for n, l in enumerate(ed["sections"][0]["lines"], 1)}
+    norm = lambda s: " ".join(s.replace("|", "").split())
+    for k, m in metre.items():
+        assert norm(m) == " ".join(text[k].split()), k       # the line itself, only dividers added
+        assert m.count("|") <= 5, k
+    assert metre["nam.1.1"].split("|")[1].strip() == "rië lan"      # the anapaest, foot 2
+    assert metre["nam.1.2"].split("|")[0] == "yéni"                  # the opening trochee
+    assert {"nam.1.10", "nam.1.12", "nam.1.14"}.isdisjoint(metre)    # not yet read
+
+
+def test_oshb_short_segments_and_prefixed_divine_name():
+    """Pin 167. A short OSHB segment no longer indexes past its end ("" in "123" is True, so a pronoun
+    with no person broke Dan. 8), and empty features are dropped. The divine name after a prefix is sounded
+    from the qere perpetuum: the prefix as written (its vowel is the reading's), then אדני without the
+    hateph under its aleph, so לַיהוָה reads laʾdōnāy (Gen 4:3)."""
+    from weft import treebank as T
+    assert T.oshb_to_ud("Pp", "A") == "PRON|PronType=Prs" and T.oshb_to_ud("V", "A") == "VERB"
+    w = REPO / "texts/tanakh-daniel"
+    m = yaml.safe_load((w / "manifest.yaml").read_text())
+    lex = T.load_strong_lexicon(w / m["edition"]["lexicon"])
+    assert len(T.load_oshb(w / m["edition"]["file"], "Dan", 8, 1, 60, lex)) == 27
+    g = REPO / "texts/tanakh-genesis"
+    gm = yaml.safe_load((g / "manifest.yaml").read_text())
+    v = T.load_oshb(g / gm["edition"]["file"], gm["edition"]["osis_book"], 4, 3, 3, T.load_strong_lexicon(g / gm["edition"]["lexicon"]))
+    name = next(r for r in v[3] if r.get("perpetuum"))
+    assert name["qere"] == "לַֽאדֹנָֽי"
+
+
+def test_ocr_witness_check_is_order_aware():
+    """Pin 170. The OCR witness check walks the edition's lines in order through the witness: a line whose
+    readings are copied from a later printed line is out of order, and witness letters left between two
+    lines (a dropped line edge) are unattributed. The real Cherokee Constitution passes; two altered copies
+    fail with those classes."""
+    import copy
+    from weft import ocr
+    ed = yaml.safe_load((REPO / "texts/cherokee-constitution-1827/edition.yaml").read_text())
+    lines = [l for s in ed["sections"] for l in s["lines"]]
+    run = lambda e, ls: [c for l in ls for c, _ in ocr.witness_check(l["tokens"], e, "chr")]
+    assert run(ed, lines) == []
+    # (a) line 3 carries line 6's words: found only after the cursor has moved past it on the next pass
+    e2 = copy.deepcopy(ed); l2 = [l for s in e2["sections"] for l in s["lines"]]
+    l2[2]["tokens"] = copy.deepcopy(l2[5]["tokens"])
+    assert "ocr-line-out-of-order" in run(e2, l2)
+    # (b) a line loses its last word: the witness keeps letters no line accounts for
+    e3 = copy.deepcopy(ed); l3 = [l for s in e3["sections"] for l in s["lines"]]
+    l3[4]["tokens"] = l3[4]["tokens"][:-1]
+    assert "ocr-letters-unattributed" in run(e3, l3)
+
+
+def test_note_links_to_other_works(tmp_path):
+    """Pin 77. A note's see: [work, ...] becomes links titled from those works' manifests; a public work's
+    note never links to a private work, and a name that is no work is left for weft check to report."""
+    import shutil
+    from weft import build as B
+    d = B.assemble(REPO / "texts/inter-caetera-1493")
+    links = [l for n in d["notes"] for l in n.get("see_links", [])]
+    assert {"href": "columbus-letter-1493.html", "title": yaml.safe_load((REPO / "texts/columbus-letter-1493/manifest.yaml").read_text())["title"]} in links
+    shutil.copytree(REPO / "texts/basho-furuike", tmp_path / "texts/basho-furuike")
+    (tmp_path / "private/secret").mkdir(parents=True)
+    (tmp_path / "private/secret/manifest.yaml").write_text("work: secret\ntitle: Secret\n")
+    nf = tmp_path / "texts/basho-furuike/notes/zz-see.yaml"
+    first = yaml.safe_load(next((tmp_path / "texts/basho-furuike/notes").glob("*.yaml")).read_text())[0]["attach"]
+    nf.write_text(yaml.safe_dump([{"id": "n.see", "attach": first, "kind": "editorial", "text": "x", "see": ["secret", "no-such-work"]}]))
+    n = next(n for n in B.assemble(tmp_path / "texts/basho-furuike")["notes"] if n["id"] == "n.see")
+    assert "see_links" not in n and n["see_unknown"] == ["secret", "no-such-work"]
+
+
+def test_manifest_sound_key_override(tmp_path):
+    """Pin 59. A manifest's sound_key replaces a scheme's shared key on that work's page only, and
+    weft check reports a sound_key for a scheme the work does not use."""
+    import shutil
+    from weft import build as B, check as C
+    shutil.copytree(REPO / "texts/basho-furuike", tmp_path / "texts/basho-furuike")
+    mp = tmp_path / "texts/basho-furuike/manifest.yaml"
+    m = yaml.safe_load(mp.read_text())
+    m["sound_key"] = {"modern": [["CAPS", "a key written for this work"]], "no-such": [["x", "y"]]}
+    mp.write_text(yaml.safe_dump(m, allow_unicode=True))
+    d = B.assemble(tmp_path / "texts/basho-furuike")
+    assert d["keys"]["modern"] == [("CAPS", "a key written for this work")]
+    assert d["keys"]["edo-1686"] == B.assemble(REPO / "texts/basho-furuike")["keys"]["edo-1686"]   # the other scheme keeps the shared key
+    r = C.run(tmp_path, "basho-furuike")
+    assert "manifest-sound-key" in r["problems"]
+
+
+def test_lemma_not_in_lexicon_sensor():
+    """Pin 47. With the curated corrections ignored, GLAUx's invented lemmas in Epictetus and Marcus are
+    caught (the four named in the ticket among them); with corrections and the declared exceptions, the
+    drafts report none. Needs the LSJ headword list (weft lexica); skipped where it is absent."""
+    from weft import lexica as L
+    hw = L.lsj_headwords()
+    if hw is None:
+        pytest.skip("LSJ headword list not fetched (weft lexica)")
+    raw = set()
+    for w in ("epictetus-enchiridion", "marcus-meditations"):
+        g = yaml.safe_load((REPO / f"texts/{w}/gen/sections.yaml").read_text())
+        for l in g["lines"]:
+            for t in l["tokens"]:
+                lem = t.get("lemma") or ""
+                if lem and not lem[:1].isupper() and not (t.get("morph") or "").startswith(("d-", "ADV")) \
+                        and lem not in L.grc_lemma_ok() and L.bare_grc(lem) not in hw:
+                    raw.add(lem)
+    assert {"ταραχθαίνω", "περιβαλέω", "ἀπαραποδύς", "συντεύχω"} <= raw
+    for w in ("epictetus-enchiridion", "marcus-meditations"):
+        run = yaml.safe_load((REPO / f"texts/{w}/gen/sections.run.yaml").read_text())
+        assert "lemma-not-in-lexicon" not in run["failures"], w
+
+
+def test_tang_falls_back_to_baxter_middle_chinese():
+    """Pin 154. A character with no Tang reading in Unihan shows Baxter's Middle Chinese, marked °,
+    from the Baxter-Sagart list; a character in neither source stays ?, and the key says both."""
+    from weft import chinese as C
+    assert C.phonemize("弗", "tang", {})["respell"] == "°pjut"
+    assert C.phonemize("〇", "tang", {})["respell"] == "?"
+    assert any(sym.startswith("°") for sym, _ in C.KEY["tang"])
+
+
+def test_notes_check_measures_closeness(tmp_path):
+    """Pin 114. weft notes-check: an editorial note sharing a run of 6+ words with the commentary, or quoting
+    15+ words, is reported; a retelling in other words passes."""
+    from weft import notescheck as N
+    src = tmp_path / "commentary.txt"
+    src.write_text("The epithet is best taken as of many turns, a man who is never at a loss for a plan.", encoding="utf-8")
+    (tmp_path / "w" / "notes").mkdir(parents=True)
+    notes = [
+        {"id": "n.ok", "kind": "editorial", "text": "The scholar reads the word as describing a resourceful man."},
+        {"id": "n.run", "kind": "editorial", "text": "He says it means a man who is never at a loss for words."},
+        {"id": "n.quote", "kind": "editorial", "text": "He writes \"one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen\"."},
+        {"id": "n.pd", "kind": "quoted", "source": "x", "text": "best taken as of many turns, a man who is never at a loss"},
+    ]
+    (tmp_path / "w" / "notes" / "n.yaml").write_text(yaml.safe_dump(notes, allow_unicode=True))
+    r = N.run(tmp_path / "w", src)
+    assert r["notes"] == 3 and not r["ok"]
+    assert r["failures"] == {"note-shares-run": 1, "note-quote-too-long": 1}
+    assert r["samples"]["note-shares-run"][0].startswith("n.run: 9 words")
+
+
+def test_tls_context_supplies_intermediates_without_weakening():
+    """Pin 69. weft's fetches use the system roots plus pinned intermediates that some servers omit (Oracc);
+    hostname checking and verification stay on, and partial chains stay off, so an intermediate never ends
+    a chain on its own."""
+    import ssl
+    from weft import tls
+    ctx = tls.context()
+    assert ctx.verify_mode == ssl.CERT_REQUIRED and ctx.check_hostname
+    assert not ctx.verify_flags & ssl.VERIFY_X509_PARTIAL_CHAIN
+    assert all((tls.DIR / n).exists() for n in tls.PINS)
+
+
+def test_hocr_check_is_core():
+    """Pin 63. The hOCR body-column check lives in weft.ocr and runs for any edition whose ocr_check names
+    pages: Linschoten's lines pass, and a line with a word changed is reported."""
+    import copy
+    from weft import ocr
+    ed = yaml.safe_load((REPO / "texts/linschoten-japan/edition.yaml").read_text())
+    lines = [l for s in ed["sections"] for l in s["lines"] if isinstance(l, dict)]
+    assert all(ocr.hocr_check(l["tokens"], ed) == [] for l in lines)
+    bad = copy.deepcopy(lines[0]["tokens"]); bad[0]["t"] = "Xyzzy"; bad[0].pop("ocr", None)
+    assert ocr.hocr_check(bad, ed)[0][0] == "edition-not-in-source"
+    from weft import dutch
+    assert not hasattr(dutch, "line_checks")

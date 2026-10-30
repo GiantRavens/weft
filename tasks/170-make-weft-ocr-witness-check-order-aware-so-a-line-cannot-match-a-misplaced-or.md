@@ -1,13 +1,14 @@
 ---
 id: 170
 title: Make weft ocr witness_check order-aware so a line cannot match a misplaced or...
-state: TODO
+state: DONE
 priority: 2
 tags:
   - ocr
   - sensor
 created_at: 2026-10-13T17:04:39.485575334-05:00
-updated_at: 2026-10-13T17:04:39.485585052-05:00
+updated_at: 2026-10-30T09:28:38.473231964-05:00
+completed_at: 2026-10-30T09:28:38.473226891-05:00
 ---
 
 # Make weft ocr witness_check order-aware so a line cannot match a misplaced or truncated stretch of the witness
@@ -22,10 +23,15 @@ Make the sensor order-aware: walk the edition's lines in order through the joine
 
 ## Acceptance
 
-- [ ] A fixture edition with one line's ocr readings copied from a later line fails with an ordering failure class
-- [ ] A fixture with OCR letters dropped at a line edge fails with an unattributed-letters class
-- [ ] weft check passes on cherokee-constitution-1827 and every other work with ocr_check; full suite passes
+- [x] A fixture edition with one line's ocr readings copied from a later line fails with an ordering failure class
+- [x] A fixture with OCR letters dropped at a line edge fails with an unattributed-letters class
+- [x] weft check passes on cherokee-constitution-1827 and every other work with ocr_check; full suite passes
+
+## Notes
+
+- 2026-10-30T14:28:38Z: Done: witness_check walks lines in edition order (cursor keyed to the edition object); classes ocr-line-out-of-order and ocr-letters-unattributed (allowance 1 letter: the Article I numeral read as Ꭲ); Cherokee Constitution passes; fixtures in test_ocr_witness_check_is_order_aware; full suite passed.
 
 ## Log
 
 - 2026-10-13T22:04:39Z: Created task
+- 2026-10-30T14:28:38Z: State changed from TODO to DONE

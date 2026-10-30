@@ -176,6 +176,7 @@ Eighty-two works built across twenty-eight languages, oldest first in the librar
 | Krákumál | all 29 stanzas: Ragnar Lothbrok's death song in King Ella's snake pit | Old Norse, modern Icelandic | Vigfusson and Powell 1883, Johnstone 1782, Schlauch 1930 (US public domain only) |
 | Ragnars saga loðbrókar | the whole saga, 20 chapters and their verses | Old Norse, modern Icelandic | Weft editorial (draft); Schlauch 1930 (US public domain only); Vigfusson and Powell 1883 for the verses; Waggoner 2009, Crawford 2017 cited |
 | Þáttr af Ragnars sonum | the whole tale of Ragnar's sons, 5 chapters | Old Norse, modern Icelandic | Weft editorial (draft); Vigfusson and Powell 1883 for the verses; Waggoner 2009, Tunstall 2005 cited |
+| Saxo, Gesta Danorum | book 9, chapters 3 to 5: Ragnar Lothbrok and his sons (Holder's Latin, 1886) | Latin as read in Denmark around 1200, classical, ecclesiastical | Elton 1894; Fisher 1979 and Friis-Jensen and Fisher 2015 cited |
 
 Homer, Ovid, John, Grettis saga and the Rigveda take lemma and grammar from treebanks (AGDT, LDT, MorphGNT, IcePaHC, the Vedic Treebank); Aristotle, Epictetus and Marcus Aurelius from GLAUx, an automatic parse, corrected by hand where it errs; Genesis, the Shema and the Aramaic of Daniel 5 from the Open Scriptures Hebrew Bible; Li Bai from the Kyoto Classical Chinese treebank, with Tang readings from Unicode's Unihan database. No open
 treebank covers Eddic or Old English poetry or runic inscriptions, so Hávamál, the complete Völuspá, Þrymskviða, Fáfnismál, Snorri's Gylfaginning, Beowulf and the

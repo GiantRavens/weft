@@ -91,7 +91,6 @@ ONSET_SOUND = {
 }
 ONSET_SOUND["modern"] = dict(ONSET_SOUND["c1828"], g=("k", "g"), d=("t", "d"), ts=("d͡ʒ", "j"), w=("ɰ", "w"))
 
-_CTX: dict = {}
 
 
 def capital(ch: str) -> str:
@@ -162,7 +161,6 @@ def word_sound(sg: list[str], scheme: str) -> tuple[str, str, int]:
 def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[str, str]]]:
     """Split punctuation off the printed word, generate the romanization, flag a character outside the syllabary,
     and carry an uncertain sign into the word's provenance."""
-    global _CTX
     fields: dict = {}
     fails: list[tuple[str, str]] = []
     word = surface
@@ -189,21 +187,37 @@ def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[
         else:
             fields["uncertain"] = True
             fields["prov"] = {"text": f"an uncertain sign; the scan also allows {unc['alt']} ({romanize(unc['alt'])}); {unc['why']}"}
-    _CTX = {"norm": fields.get("norm"), "word": word, "signs": sg, "sound": et.get("sound") or {}}
     return fields, fails
 
 
-def phonemize(word: str, scheme: str = "c1828", quantities=None, **_) -> dict:
+def context(surface: str, et: dict) -> dict:
+    """The token's signs, romanization and any sound override, from its printed surface and edition token
+    (draft passes both to phonemize; pin 201: no module-global hand-off)."""
+    ml = LEAD_P.search(surface)
+    word = surface[ml.end():] if ml else surface
+    mt = TRAIL_P.search(word)
+    word = word[:mt.start()] if mt else word
+    sg = signs(word)
+    outside = "".join(c for c in sg if c not in SIGNS)
+    return {"norm": None if outside else romanize(word), "word": word, "signs": sg, "sound": et.get("sound") or {}}
+
+
+WANTS_TOKEN = True        # draft passes the edition token and its printed surface (pin 201)
+
+
+def phonemize(word: str, scheme: str = "c1828", quantities=None, etok: dict | None = None,
+              surface: str | None = None, **_) -> dict:
     """`word` is the token's romanization (draft passes the norm row), its printed form when it has none, the
-    syllabary itself, or a romanized word. The signs and any sound override token_fields stored apply only when the
-    word is the token token_fields just read."""
-    mine = _CTX.get("norm") == word
-    ov = (_CTX.get("sound") or {}).get(scheme)
-    if ov and (mine or word == _CTX.get("word")):
+    syllabary itself, or a romanized word. The signs and any sound override of the edition token apply only when the
+    word is the token being drafted."""
+    ctx = context(surface or "", etok) if etok is not None else {}
+    mine = ctx.get("norm") == word
+    ov = (ctx.get("sound") or {}).get(scheme)
+    if ov and (mine or word == ctx.get("word")):
         return {"ipa": ov["ipa"], "respell": ov["respell"], "syllables": len(re.split(r"[. ]", ov["ipa"]))}
     ipas, rss, n = [], [], 0
     for w in word.split():
-        sg = _CTX["signs"] if mine and len(word.split()) == 1 else (
+        sg = ctx["signs"] if mine and len(word.split()) == 1 else (
             signs(w) if any(capital(c) in SIGNS for c in w) else from_roman(w.lower()))
         sg = [c for c in sg if c in SIGNS]
         ipa, rs, k = word_sound(sg, scheme)

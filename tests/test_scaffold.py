@@ -154,7 +154,7 @@ def test_pin_records_a_source_in_the_manifest(tmp_path, monkeypatch):
 
 
 def test_heimskringla_wikitext_to_stanza_text_and_speakers(tmp_path):
-    from weft.draft import stanza_lines, stanza_speakers
+    from weft.draft import stanza_blocks, stanza_lines, stanza_speakers
     wikitext = ("{| table |}\n<center>'''Vafþrúðnismál'''</center>\n\n\nÓðinn kvað:\n\n::1.\n::\"Ráð þú mér nú, Frigg,\n::alls mik fara tíðir\n::&nbsp;\n"
                 "Frigg kvað:\n\n::2.\n::\"Heima letja\n::ek mynda Herjaföðr\n::&nbsp;\n\n::3.\n::Fór þá Óðinn\n\n{{DEFAULTSORT:Vaftrudnismal}}\n[[Kategori:Den eldre Edda]]\n")
     env = '{"parse": {"wikitext": {"*": ' + __import__("json").dumps(wikitext) + '}}}'
@@ -164,6 +164,14 @@ def test_heimskringla_wikitext_to_stanza_text_and_speakers(tmp_path):
     p = tmp_path / "s.txt"; p.write_text(txt)
     assert stanza_lines(p, [1, 2, 3]) == {1: ['"Ráð þú mér nú, Frigg,', "alls mik fara tíðir"], 2: ['"Heima letja', "ek mynda Herjaföðr"], 3: ["Fór þá Óðinn"]}
     assert stanza_speakers(p) == {1: "Óðinn kvað", 2: "Frigg kvað"}                # stanza 3 is narrative: no speaker
+    # a stanza split by a blank line keeps its second half (Lokasenna 23, 33: pin 72); a speaker label,
+    # a prose line leading into speech and a separator end the stanza and are returned as loose text
+    p.write_text('1.\n"Veiztu, ef ek gaf,\nátta vetr\n\nkýr mólkandi ok kona,\nok hugða ek þat args aðal."\n\n'
+                 'Hann tók við horni ok drakk af:\n\n2.\nFór þá Óðinn\n\n---------\n\nLoki kvað:\n\n3.\nein lína\n')
+    st, loose = stanza_blocks(p)
+    assert st[1] == ['"Veiztu, ef ek gaf,', "átta vetr", "kýr mólkandi ok kona,", 'ok hugða ek þat args aðal."']
+    assert st[2] == ["Fór þá Óðinn"] and st[3] == ["ein lína"]
+    assert loose == ["Hann tók við horni ok drakk af:", "---------", "Loki kvað:"]
     with pytest.raises(SystemExit, match="stanza marker"):
         scaffold.wikitext_to_stanza_text(b"no poem here")
 

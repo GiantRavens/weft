@@ -11,6 +11,7 @@ failures:
   tb-line-borrow: 2
   metre-no-fit: 1
   metre-ambiguous: 1
+  lemma-not-in-lexicon: 67
 metre_licences:
   metre-dichronon-long: 168
   metre-synizesis-assumed: 5
@@ -35,12 +36,19 @@ samples:
   - 1.277 μήτε σὺ Πηλείδη ἔθελʼ ἐριζέμεναι βασιλῆϊ
   metre-ambiguous:
   - 1.583 —◡◡|——|—◡◡|—◡◡|—◡◡|—× or —◡◡|—◡◡|——|—◡◡|—◡◡|—×
+  lemma-not-in-lexicon:
+  - il.1.1.4 Πηληιάδης
+  - il.1.11.3 Χρύσης
+  - il.1.16.3 μάλιστα
+  - il.1.30.7 πάτρη
+  - il.1.37.5 Χρύση
 failure_rate:
   morph-empty-declinable: 0.002
   form-mismatch: 0.0
   tb-line-borrow: 0.0
   metre-no-fit: 0.0
   metre-ambiguous: 0.0
+  lemma-not-in-lexicon: 0.015
 shift_left: []
 predicted_gaps:
 - a/i/u vowel length not marked in the spelling; the two quantity tables cover the words they list (long by LSJ and confirmed by the metre), others default to short

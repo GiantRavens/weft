@@ -1,0 +1,681 @@
+# Weft edition: Saxo Grammaticus, Gesta Danorum, book 9, chapters 3 to 5: Siward Ring and the birth of Regnerus
+# (Ragnar), Ragnar's reign and death in King Hella's snake pit, and the vengeance of his sons.
+#
+# The text is Alfred Holder's (Saxonis Grammatici Gesta Danorum, Strassburg 1886), pp. 299-316, read from the
+# Internet Archive's OCR of the University of Toronto copy (sources/holder1886-ocr.txt) and corrected against the page
+# images of that scan. Holder follows the spelling of the first printed edition (Paris, 1514) except where the
+# fragment of Angers spells otherwise (his preface): u for consonantal v (uir, Iuarus), e for ae and oe (Suetie,
+# pene), ci for ti before a vowel (gracia, expedicione), y in hyeme and Syuardus. Paragraphs and sentences are numbered as in the Olrik-Raeder edition (Copenhagen, 1931),
+# the standard citation (9.4.12 is book 9, chapter 4, paragraph 12); the section id is chapter.paragraph and the line
+# is the sentence. Only the numbering is taken from that edition, not its text, which differs from Holder's in
+# places (occupandae at 9.3.2, which Holder does not print; fictae at 9.4.29 where Holder prints facte).
+#
+# Holder's editorial signs: letters he supplies stand in angle brackets (auxil⟨i⟩a, edi⟨c⟩ta, proper⟨ar⟩ent),
+# letters or words he rejects in square brackets (Dunwa[r]t[hn]umque, [in]), and ab(s)cisum is printed so; these
+# are kept as printed. His marks of position are not kept: the bars | and || that mark the pages of the 1514 edition
+# (removed by verify_strip, together with Holder's running heads, the line numbers, the marginal page references and
+# the sheet signature 'Saxo Grammaticus. 20'), the asterisks, the italic type of letters he changed, and the acute
+# of ipsó (9.4.11.3).
+#
+# Every line is checked against the OCR by weft draft after verify_strip and verify_corrections. Each correction
+# was read on the page image (four independent OCRs of three copies were compared first, and every word on which
+# they disagreed or on which Holder differs from the 1931 text was looked at on the page: 318 words, of which 84
+# were misreadings, 47 marginal matter and 4 words joined by the OCR). Each correction carries a word of context
+# so that it applies only where it was read.
+verify_in: sources/holder1886-ocr.txt
+verify_strip: (?m)^\s*\d{3}\s+[—-]\s+IX\s+[—-]\s*$|^\s*[—-]\s+IX\s+[—-]\s+\d{3}\s*$|^\s*(?:5|10|15|20|25|30|35|40|s|io)\s+(?=\S)|\(\d{2,3}\)|\s+p\s*[•.]\s*\d+[°o]?(?=\s)|(?<=\w)-\s*\n\s*(?:(?:5|10|15|20|25|30|35|40)\s+)?|\s+(?=[,;:.?!])|^\s*Saxo\s+Grammaticus\.\s*\d*\s*$|\|+\s*|\*|\^
+verify_corrections:
+# the Toronto copy (the scan the OCR was made from) has damaged type at 9.4.38.3; the Oxford copy (archive.org
+# saxonisgrammati00holdgoog, p. 314) prints carcerem and aduertit, with a comma only
+- ocr: in earcerem coniectus,
+  print: in carcerem coniectus,
+- ocr: aduertit,. atque
+  print: aduertit, atque
+- ocr: ex Gtrici filia
+  print: ex Gøtrici filia
+- ocr: idemque Gotrici nepos
+  print: idemque Gøtrici nepos
+- ocr: Ringo, domwicionis eius
+  print: Ringo, domuicionis eius
+- ocr: graciam co'ere liberum
+  print: graciam colere liberum
+- ocr: Ringonis ampleeti uideretur
+  print: Ringonis amplecti uideretur
+- ocr: iugulum nojstrum arma sponte p. 44i prestamus?
+  print: iugulum nostrum arma sponte prestamus?
+- ocr: consilii salu- xc» britate et
+  print: consilii salubritate et
+- ocr: Suetie Fr0, interfecto
+  print: Suetie Frø, interfecto
+- ocr: publice constupraodas exhibuit.
+  print: publice constuprandas exhibuit.
+- ocr: uenerat, auxil(i)a mutuari.
+  print: uenerat, auxil⟨i⟩a mutuari.
+- ocr: apud Golerdal (id
+  print: apud Gølerdal (id
+- ocr: Vbi exceptws a
+  print: Vbi exceptus a
+- ocr: Fridleuo suscepris, triennium
+  print: Fridleuo susceptis, triennium
+- ocr: tricenas in- struit puppes,
+  print: tricenas instruit puppes,
+- ocr: exactaque hyemo cum
+  print: exactaque hyeme cum
+- ocr: perniciem sm summe
+  print: perniciem sui summe
+- ocr: uirgineis mani- xCb bus educare
+  print: uirgineis manibus educare
+- ocr: periculosam inamter operam
+  print: periculosam inaniter operam
+- ocr: ut munimonti gracia
+  print: ut munimenti gracia
+- ocr: uoluminibus "5 quatere,
+  print: uoluminibus quatere,
+- ocr: eminus inspoctabant. Ipse
+  print: eminus inspectabant. Ipse
+- ocr: felicem pugno euentum
+  print: felicem pugne euentum
+- ocr: Rathbarthum Dunwa[r]- t[hn]umque, egregie
+  print: Rathbarthum Dunwa[r]t[hn]umque, egregie
+- ocr: exuberans, i>. 413 cum
+  print: exuberans, cum
+- ocr: habuit. Ybi Iuarus,
+  print: habuit. Vbi Iuarus,
+- ocr: specioso forti- xci» tudinis exemplo
+  print: specioso fortitudinis exemplo
+- ocr: eius p. -»46 communicare
+  print: eius communicare
+- ocr: curandum inedicis corpus
+  print: curandum medicis corpus
+- ocr: posse, pe£it«s cupide
+  print: posse, petitis cupide
+- ocr: subitamque uulneii cicatrieem intendit.
+  print: subitamque uulneri cicatricem intendit.
+- ocr: miraculi aucto- (,7D rem futuram
+  print: miraculi auctorem futuram
+- ocr: decidens, lir.qui animo
+  print: decidens, linqui animo
+- ocr: constituit. Miiiciam itaque detra- P. 447 hende egritudinis
+  print: constituit. Miliciam itaque detrahende egritudinis
+- ocr: Quod edietum tametsi
+  print: Quod edictum tametsi
+- ocr: regemque p- 443 eius
+  print: regemque eius
+- ocr: occidit. Indo Scotie
+  print: occidit. Inde Scotie
+- ocr: quoque piincipe suo
+  print: quoque principe suo
+- ocr: Danorum quidanf, pertinacioiis erga
+  print: Danorum quidam, pertinacioris erga
+- ocr: excitauerunt cxternisque liberum
+  print: excitauerunt externisque liberum
+- ocr: exercitus xcn> ducem,
+  print: exercitus ducem,
+- ocr: interceptis j uigilibus
+  print: interceptis uigilibus
+- ocr: fefellisset ex- cubias, atque
+  print: fefellisset excubias, atque
+- ocr: ad Sighwini fluminis
+  print: ad Sighuini fluminis
+- ocr: pene Euiope domitor,
+  print: pene Europe domitor,
+- ocr: de p- -tso morte
+  print: de morte
+- ocr: fortitudinis mevitum Suetica
+  print: fortitudinis meritum Suetica
+- ocr: ipsius amplissimo. bensficencie cultu
+  print: ipsius amplissimo beneficencie cultu
+- ocr: sibi con sessu ueneratus
+  print: sibi consessu ueneratus
+- ocr: amore tilie sue
+  print: amore filie sue
+- ocr: principis Hberalitatem descendisse
+  print: principis liberalitatem descendisse
+- ocr: impensius objseruan- dam curauit,
+  print: impensius obseruandam curauit,
+- ocr: consensus cius nuncio
+  print: consensus eius nuncio
+- ocr: asseruabatur, accessir, nihilque
+  print: asseruabatur, accessit, nihilque
+- ocr: opus ex- xcn» plicanti muliebriter
+  print: opus explicanti muliebriter
+- ocr: puelle greniio proderetur,
+  print: puelle gremio proderetur,
+- ocr: filia polluendarn dedisset,
+  print: filia polluendam dedisset,
+- ocr: saluberrimas so populo
+  print: saluberrimas se populo
+- ocr: duxerat, r- 45> militaturum
+  print: duxerat, militaturum
+- ocr: aut probaeioris fidei
+  print: aut probacioris fidei
+- ocr: preter Vbbo20 nem, assumptis,
+  print: preter Vbbonem, assumptis,
+- ocr: paterne uindiete negocium
+  print: paterne uindicte negocium
+- ocr: hostes (ns) maxima
+  print: hostes maxima
+- ocr: fidens, formid.olosa Regneri
+  print: fidens, formidolosa Regneri
+- ocr: inualida subieccionis. fide
+  print: inualida subieccionis fide
+- ocr: assultu. xcin> Quorum
+  print: assultu. Quorum
+- ocr: Finmarchie ducera, perfugio
+  print: Finmarchie ducem, perfugio
+- ocr: culminis trtumphatorem, ab
+  print: culminis triumphatorem, ab
+- ocr: ac se- renissimi ducis
+  print: ac serenissimi ducis
+- ocr: fuit. "Nec Finnorum
+  print: fuit. Nec Finnorum
+- ocr: pre seferentibus hisdemque
+  print: pre se ferentibus hisdemque
+- ocr: auum suumHesbernum ad
+  print: auum suum Hesbernum ad
+- ocr: cum (i-i) Regnerus
+  print: cum Regnerus
+- ocr: regis de- P. 455 sertores efficere
+  print: regis desertores efficere
+- ocr: Biorni arbitiio suum
+  print: Biorni arbitrio suum
+- ocr: uiridis appellatur,' aggressus
+  print: uiridis appellatur; aggressus
+- ocr: facile pro- xcm» uocancium inhiberet
+  print: facile prouocancium inhiberet
+- ocr: At ubi.Iuarus tumultum
+  print: At ubi Iuarus tumultum
+- ocr: comperit, p. «6 Daniam
+  print: comperit, Daniam
+- ocr: diu jo nequicquam
+  print: diu nequicquam
+- ocr: in p. 57 eligendo
+  print: in eligendo
+- ocr: patrem N cruentos
+  print: patrem cruentos
+- ocr: fletu paireret, quantum
+  print: fletu pareret, quantum
+- ocr: ingenia. luaro ergo
+  print: ingenia. Iuaro ergo
+- ocr: deferens, Ybbonemque pristine
+  print: deferens, Vbbonemque pristine
+- ocr: apud Ytgarthiam custodie
+  print: apud Vtgarthiam custodie
+- ocr: annuo p- 458 nudatum
+  print: annuo nudatum
+- ocr: ac xciiib supplicem
+  print: ac supplicem
+- ocr: securim distiingere, superbamque
+  print: securim distringere, superbamque
+- ocr: Inde protectus filium
+  print: Inde prouectus filium
+- ocr: Ericum, Yentosi Pillei
+  print: Ericum, Ventosi Pillei
+- ocr: prefert. Ybi, Fridleuo
+  print: prefert. Vbi, Fridleuo
+- ocr: nomen arrogasse comperiens,
+  print: nomen irrogasse comperiens,
+- ocr: interfecit. Yerum filii
+  print: interfecit. Verum filii
+- ocr: mentis luctuin intra
+  print: mentis luctum intra
+- ocr: est. Yerum hanc
+  print: est. Verum hanc
+- ocr: usus, edi(c)ta classe,
+  print: usus, edi⟨c⟩ta classe,
+- ocr: Melbrico, Dwflinam barbaris
+  print: Melbrico, Duflinam barbaris
+- ocr: auxiliis. p- 46° Quibus
+  print: auxiliis. Quibus
+- ocr: reiectoque demonurn cultu,
+  print: reiectoque demonum cultu,
+- ocr: primum negleete spectaculum
+  print: primum neglecte spectaculum
+- ocr: iusta omnipo- xcmi tentis animaduersione
+  print: iusta omnipotentis animaduersione
+- ocr: coniectus, uoxios artus
+  print: coniectus, noxios artus
+- ocr: absoluere proper(ar)ent. Quo
+  print: absoluere proper⟨ar⟩ent. Quo
+- ocr: interpretatus, p. 46i quiescere
+  print: interpretatus, quiescere
+- ocr: prolapsus mero- rem pocius
+  print: prolapsus merorem pocius
+- ocr: ut tahule quoque
+  print: ut tabule quoque
+- ocr: Anglie partihus, cum
+  print: Anglie partibus, cum
+- ocr: equino tergorc complecti
+  print: equino tergore complecti
+- ocr: Et quidom, j quod 0") peciit,
+  print: Et quidem, quod peciit,
+- ocr: corrigias scissem extracto,
+  print: corrigias scissim extracto,
+- ocr: mensus. Qujim enim
+  print: mensus. Quam enim
+- ocr: tempore exsocuti, xcmib comprehensi
+  print: tempore exsecuti, comprehensi
+- ocr: affici r»o iubent,
+  print: affici iubent,
+- ocr: Interea Daui. perseuerantissima
+  print: Interea Dani, perseuerantissima
+- ocr: Nec minu8 is,
+  print: Nec minus is,
+- ocr: Erico p. m domum
+  print: Erico domum
+- ocr: Adeo aulm studiorum
+  print: Adeo autem studiorum
+- ocr: sediciosis P. 465 patria,
+  print: sediciosis patria,
+- ocr: atrocissimis exhaustacedibus,adunicumsuperiorisSiuardifiliumredigeretur. Hic
+  print: atrocissimis exhausta cedibus, ad unicum superioris Siuardi filium redigeretur. Hic
+sections:
+- id: '3.1'
+  title: "9.3.1 Siward Ring and Ring divide the kingdom"
+  lines:
+  - Post hos Siuardus cognomento Ring, quem eiusdem nominis pater, Noruagie dux, olim ex Gøtrici filia susceperat, Scanis Sialandisque fautoribus regnat.
+  - Nam consobrinus eius Ringo idemque Gøtrici nepos Iutiam occupabat.
+  - Igitur unius regni diuidua potestas, tanquam utraque parte ob paruitatem ignobili, non sperni modo, sed eciam lacessi ab exteris cepit.
+  - Quos Siuardus maiore odio quam regni emulum insecutus, peregrina bella ciuilibus preferendo, quinquennio periculis patrie defensionem suam opponere perseuerauit.
+  - Elegit enim uulnus tolerare domesticum, quo prompcius sanaret externum.
+- id: '3.2'
+  title: "9.3.2 The Zealanders proclaim the child Ragnar king"
+  lines:
+  - Quamobrem Ringo, domuicionis eius occasione suscepta, uniuersum imperii ius in se ipsum transferre conatus, foris excubias peragentem intus lacerare sustinuit.
+  - Prouincias siquidem, que ab ipso possidebantur, inuadens, communis patrie defensionem ingrata mente pensabat.
+  - Igitur ex Sialandicis quidam Siuardi studiosiores, quo synceriorem absenti fidem gererent, filium eius Regnerum uixdum cunis erutum regis nomine censuerunt, non quod ipsum regimini intempestiuum nescirent, sed ut tanti pignoris ductu aduersum Ringonem torpencium sociorum animos excitarent.
+  - Audiens autem Ringo, Siuardum interim ab expedicione regressum, Sialandenses magna manu petitos, ni se dederent, ferro perituros edixit.
+- id: '3.3'
+  title: "9.3.3 The boy Ragnar's counsel: feign surrender to Ring"
+  lines:
+  - At Sialandici, quibus aut rubor aut periculum imperabatur, uiribus ob paucitatem diffisi, deliberande rei inducias poposcerunt.
+  - Quibus impetratis, cum nec Siuardi graciam colere liberum nec Ringonis amplecti uideretur honestum, diu inter metum pudoremque solliciti iactabantur.
+  - Qua in re ne senibus quidem consilio suppetente, Regnerus, tunc forte concioni presens, Breuis, inquit, arcus subito spiculum iacit.
+  - Ego uero, tametsi puerili ausu maiorum ora precurrere uidear, ignoscendum erratis ueniamque immature editis precor.
+  - Verum prudencie monitor, tametsi despicabilis uideatur, respuendus non est.
+  - Docili quippe animo sorbenda est utilium disciplina.
+  - At quoniam, ut desertores ac transfugas notari turpe, ita supra uires audere temerarium est, et utrobique par culpa subesse conuincitur, simulata transicione petendus est hostis, idemque, cum primum facultas obuenerit, opportuna desercione linquendus.
+  - Sacius ergo erit aduersarii iram obsequii figmento precurrere, quam negacione eundem in nosmet ipsos acrius incessendos armare.
+  - Quid enim forcioris imperium detrectantes agimus, nisi quod ipsi in iugulum nostrum arma sponte prestamus?
+  - Sepe inuolucioribus studiis efficacissima fraus alitur.
+  - Astu illaqueanda est uulpes.
+- id: '3.4'
+  title: "9.3.4 Ragnar sent to Norway; Siward kills Ring and dies"
+  lines:
+  - Cuius consilii salubritate et fluctuancium ciuium cunctacionem discussit et hostilibus castris noxium robur adiecit.
+  - Concio quoque, infancie eius non facundiam minus quam ingenium mirans, egregie indolis decretum habitu annorum excellencius cupide amplexata est.
+  - Nec rubori fuit defectis consilio senibus puerilibus obsequi monitis, que quanquam a tenero manassent, integerrimo discipline pondere redundabant.
+  - Auctorem uero consilii instanti periculo obiicere ueriti, educacionis gracia Noruagiam transtulerunt.
+  - Breui post conserta pugna Ringonem Syuardus aggreditur; quo occiso, ipse, immedicabili plaga perstrictus, paucis interiectis diebus ex uulnere decessit.
+  - Cui Regnerus in regnum succedit.
+- id: '4.1'
+  title: "9.4.1 Fro of Sweden shames the women; Ragnar comes to avenge"
+  lines:
+  - Quo tempore rex Suetie Frø, interfecto Noruagiensium rege Syuardo, coniuges necessariorum eius prostibulo religatas publice constuprandas exhibuit.
+  - Quo Regnerus audito, auite ulcionis studio Noruagiam petiuit.
+  - Eo ueniente matrone complures, que corporum suorum ludibria aut nuper passe fuerant aut in proximo pudicicie periculum uerebantur, uiriliter culte cupide castris eius adproperare ceperunt, profitentes, se fatum contumelie prelaturas.
+  - Nec erubuit futurus muliebris improperii uindex aduersum auctorem turpitudinis, quarum ignominiam ulcisci uenerat, auxil⟨i⟩a mutuari.
+- id: '4.2'
+  title: "9.4.2 Lathgertha fights among the men"
+  lines:
+  - Inter quas affuit et Lathgertha, perita bellandi femina, que, uirilem in uirgine animum gerens, immisso humeris capillicio, prima inter promptissimos dimicabat.
+  - Cuius incomparabilem operam ammirantibus cunctis, (quippe cesaries tergo inuolare conspecta feminam esse prodebat,) Regnerus, aui interfectore prostrato, de puella, quam in acie preuiam prenotauerat, commilitones plurimum percontatus est, unius femine uiribus uictoriam sibi constitisse professus.
+  - Quam cum illustri inter barbaros loco natam cognouisset, per internuncios procari perstitit.
+- id: '4.3'
+  title: "9.4.3 The wooing of Lathgertha: a bear and a dog at her door"
+  lines:
+  - Illa, legacione tacite spreta, consensum simulat.
+  - Cumque datis fallaciter responsis anhelanti proco pociendi uoti fiduciam attulisset, adiectum urso canem in edis sue uestibulo religari precepit, contra omne amatoris studium per obiectas beluas proprium tutatura conclaue.
+  - Regnerus uero, fauorabili nuncio recreatus, nauigium scandit, emensusque fretum, comitibus apud Gølerdal (id ualli nomen est) subsistere iussis, solitarius puelle penates accedit.
+  - Vbi exceptus a beluis, alteram telo traiicit, alteram faucibus apprehensam obtorto gutture strangulauit, uirginemque uicti periculi premium habuit.
+  - Ex cuius matrimonio geminis filiabus, quarum nomina memorie prodita non sunt, filioque Fridleuo susceptis, triennium feriatus est.
+- id: '4.4'
+  title: "9.4.4 The Jutes and Scanians rebel; Ragnar turns to Thora"
+  lines:
+  - Cuius ob recentes nupcias reditu desperato, Iuti, gens insolens, Scanis in societatem contractis, Sialandos, qui Regneri fidem propensiori caritate colebant, bello lacessere tentant.
+  - Quo comperto Regnerus tricenas instruit puppes, uentisque nauigacioni parentibus, Scanos apud Whiteby uicum bellum ausos obtriuit, exactaque hyeme cum Iutis prope Lymfiorthinum eius regionis fretum habitantibus secundis euentibus dimicauit.
+  - Tercio item ac quarto Scanis, Halandisque felici auspicio domitis, in Thoram, Herothi regis filiam, nupciarum amore conuerso, sibi ac Lathgerthe repudium interiecit.
+  - Damnabat enim coniugis fidem, quam olim in perniciem sui summe ferocitatis beluas admouisse meminerat.
+- id: '4.5'
+  title: "9.4.5 Herodd's daughter Thora rears snakes"
+  lines:
+  - Interea rex Sueonum Herothus, siluas forte uenacione complexus, repertas a comitibus angues filie detulit nutriendas.
+  - Illa paterno ocius obsecuta precepto, uipereum genus uirgineis manibus educare sustinuit. Quin eciam cure habuit, ut integrum bouis cadauer earum cotidie sacietati suppeteret, ignorans, se priuato pabulo publicam sustentare perniciem.
+  - Que cum adulte pestilentissimo alitu uiciniam urerent, rex, inertis opere penitens, potiturum filia, qui pestem amouisset, edixit.
+  - Quo non minori fortitudinis quam libidinis incitamento frequens iuuentus adducta, periculosam inaniter operam erogabat.
+- id: '4.6'
+  title: "9.4.6 Ragnar's shaggy clothes, frozen stiff"
+  lines:
+  - Cuius rei summam Regnerus ab intermeantibus expertus, laneum a nutrice sagulum uillosaque ad modum femoralia, quibus inflictos anguium morsus elideret, expetiuit.
+  - Nam ut munimenti gracia referto pilis cultu utendum credidit, ita agilitatis causa tractabilem sumpsit.
+  - Cumque nauigio Suetiam appulisset, incidente gelu, aquis de industria corpus iniecit, humefactamque uestem, quo minus penetrabilis redderetur, brume durandam prebuit.
+  - Qua amictus, salutatos comites ad fidem Fridleuo seruandam hortatus, solus procedit ad regiam.
+  - Qua uisa, ensem lateri nectens, dextre telum inserit amentatum.
+- id: '4.7'
+  title: "9.4.7 Ragnar kills the two snakes"
+  lines:
+  - Procedenti inusitate magnitudinis obuius allabitur serpens. Huic alter granditate par priorisque prolapsum insecutus arrepsit.
+  - Qui iuuenem modo caude uoluminibus quatere, modo pertinaci uomitu ac ueneno conspuere decertabant.
+  - Interea aulici, tuciora complexi latibula, perinde ac pauentes puellule rem eminus inspectabant.
+  - Ipse rex, pari metu perterritus, in angustum cum paucis conclaue refugerat.
+  - At Regnerus, gelati cultus duricie fretus, non armis modo, sed eciam amictu uirulentos frustrabatur assultus, solusque duarum rictum pertinaci spiritu uirus in se profundencium infatigabili congressione sustinuit.
+  - Quippe morsus clypeo, uenenum ueste respuit.
+  - Ad ultimum excussum manu telum strennue incessencium se beluarum corporibus adigit, eoque utriusque precordia lacerans, felicem pugne euentum habuit.
+- id: '4.8'
+  title: "9.4.8 Lothbrog: the name from his breeches; Ragnar marries Thora"
+  lines:
+  - Cuius cultum rex curiosius contemplatus, cum hirtum atque hispidum animaduertisset, precipue tamen occidue uestis horrorem, maximeque incomptam braccharum speciem eludens, Lothbrog eum per ludibrium agnominauit.
+  - Quem eciam, ut ex laboribus recrearet, cum amicis epulaturum accersit.
+  - Ille prius reuisendos sibi, quos reliquerat, arbitros aiebat. Profectusque eosdem future epulacionis gracia nitidius cultos adducit.
+  - Ac demum peracto conuiuio prefixum uictorie pignus accepit.
+  - Ex qua Rathbarthum Dunwa[r]t[hn]umque, egregie indolis pignora, procreauit. Hisdem Syuardus, Biornus, Agnerus, Iuarusque natura fratres adiecti sunt.
+- id: '4.9'
+  title: "9.4.9 The Jutes and Scanians raise up Harald; Lathgertha comes to help"
+  lines:
+  - Interea Iuti ac Scani, insopibili sedicionis face succensi, abrogato Regneri titulo, Haraldo cuidam rerum contribuunt summam.
+  - Aduersum quos Regnerus, legatis Noruagiam missis, cum amica precaretur auxilia, Lathgertha, pristini amoris pertinaciore haustu exuberans, cum uiro ac filio nauigacionem arripuit.
+  - Centum ac uiginti nauium classem ei, a quo olim repudio acta fuerat, exhibere sustinuit.
+  - Qui eciam uniuerse opis egenum se iudicans, ab omni etate presidium mutuari curauit, robustisque imbecilles agglomerans, forcium cuneis senum puerorumque partes inserere non erubuit.
+- id: '4.10'
+  title: "9.4.10 Battle in the Woolly Field; Ivar at seven"
+  lines:
+  - Igitur apud campum, qui Latialiter Laneus dicitur, in primis Scanorum res obterere orsus, graue cum facciosis bellum habuit.
+  - Vbi Iuarus, septimum agens annum, insigni pugna edita, puerili corpore grandeuum robur exercuit.
+  - Syuardus uero, dum hosti uim aduerso corpore ingerit, humi collapsus prono uulnus excepit.
+  - Que res inspectantibus sociis grauissimam circunspiciende fuge sollicitudinem attulit, nec Syuardum modo, sed et omnia fere Regnerice partis arma deiecit.
+  - Verum hunc attonitarum mencium lapsum Regnerus uirili opera hortatuque firmauit, paratosque uinci uictoriam conari perpulit.
+- id: '4.11'
+  title: "9.4.11 Lathgertha turns the battle, then kills her husband"
+  lines:
+  - Lathgertha quoque, teneris membris incomparabilem sortita spiritum, trepidantis milicie studium specioso fortitudinis exemplo contexit.
+  - Militari namque discursu inopinatorum terga circumuolans, socialem metum in hostilia castra conuertit.
+  - Ad ultimum laxata Haraldi acie atque ipso per summam suorum stragem fugato, cum domum ex acie reuertisset, spiculo, quod toga occultauerat, noctu mariti iugulum attentauit, tociusque potencie eius ac nominis summam inuasit.
+  - Insolentissimus namque femine spiritus absque uiro regnum gerere, quam fortune eius communicare iocundius duxit.
+- id: '4.12'
+  title: "9.4.12 Siward's wound healed by Rostar"
+  lines:
+  - Interea Syuardus oppido, quod in uicinia erat, allatus curandum medicis corpus prebebat.
+  - Quibus ad summam usque desperacionem prouectis, dum uulneris immanitas adhibita fomentorum genera frustraretur, quidam stupenda magnitudine egri lectulum adire conspectus, si sibi illorum, quos armis oppressurus foret, animas dedicasset, protinus incolumitate gauisurum promittit.
+  - Nec nomine quidem suppresso, Rostarum se dici subiunxit.
+  - Animaduertens autem Syuardus, paruule promissionis impendio ingens comparari beneficium posse, petitis cupide paruit.
+  - Tunc senex attrectate tabis liuorem repentino manus auxilio dispulit, subitamque uulneri cicatricem intendit.
+  - Postremo pupillas eius puluere perfundens abiit.
+  - Qui, maculis repente coortis, eximiam uermiculorum similitudinem obstupescentibus oculis ingenerauit.
+  - Crediderim, huius miraculi auctorem futuram iuuenis seuiciam euidenciori luminum testimonio prodere uoluisse, ne perspicacior corporis pars sequentis uite presagio uacua maneret.
+  - Quem anus, que pocionibus eius preerat, uermiculatas ore notas preferre conspiciens, inusitato iuuenis horrore permota, subito lapsu decidens, linqui animo cepit.
+  - Quo euenit, ut Syuardo serpentini oculi uulgatum late cognomen accederet.
+- id: '4.13'
+  title: "9.4.13 Thora's death; the levy of the least valued sons"
+  lines:
+  - Interea nuptam Regneri Thoram uiolentus morbi casus absumpsit, eaque res amantissimo coniugis uiro infinitam egritudinis molestiam peperit.
+  - Quam optime negocio discuciendam ratus, solacium ab exercicio mutuari doloremque labore temperare constituit.
+  - Miliciam itaque detrahende egritudinis pariendique solaminis gracia meditatus, statuit, ut unusquisque paterfamilias, quem inter liberos contemptissimum duceret, aut siquem pigrioris opere ac minus spectate fidei seruum haberet, stipendia sibi meriturum offerret.
+  - Quod edictum tametsi parum proposito competens uideretur, inualidissimos Danice gentis aliarum nacionum fortissimis prestare docuit, magnumque iuuentuti profectum attulit, delectis certatim socordie notam abstergere cupientibus.
+- id: '4.14'
+  title: "9.4.14 Twelve elders to judge every suit; Hame killed in Britain"
+  lines:
+  - Preterea, ut omnis controuersiarum lis, semotis accionum instrumentis, nec accusantis impeticione nec rei defensione admissa, duodecim patrum approbatorum iudicio mandaretur, instituit.
+  - Cuius legis beneficio temeraria licium contraccione summota, improborum calumnie sufficienter obuiatum existimans, arma in Britanniam erexit, regemque eius Hamam, Helle, nobilissimi iuuenis, patrem, pugna perstrictum occidit.
+  - Inde Scotie ac Petie insularumque, quas australes uel meridianas uocant, ducibus interfectis, Syuardo ac Rathbartho filiis uacuas gubernatore prouincias in potestatem addixit.
+  - Noruagiam quoque principe suo uiolenter exutam Fridleuo parere precepit, eundemque Orchadibus proprio duce defectis preferre curauit.
+- id: '4.15'
+  title: "9.4.15 Harald driven into Germany; the rebels tortured"
+  lines:
+  - Interea Danorum quidam, pertinacioris erga Regnerum odii, obstinatis ad rebellandum animis, Haraldi quondam profugi partibus aduoluti, prostratam tyranni fortunam attollere conati sunt.
+  - Qua temeritate insolentissimos belli ciuilis aduersum regem spiritus excitauerunt externisque liberum domesticis implicuere periculis.
+  - Ad quos constringendos Regnerus cum insularium Danorum classe profectus, rebellium agmen elisit, Haraldumque, superati exercitus ducem, fuga in Germaniam actum, honorem improbe partum impudenter abiicere compulit.
+  - Captiuos quoque, simplici morte afficere non contentus, tortos necare maluit, ut, qui ad deserendam impietatem adduci non poterant, ne spiritum quidem nisi per summam penarum uiolenciam deponere sinerentur.
+  - Ceterum latifundia eorum, qui cum Haraldo profugerant, secum stipendia peragentibus partitus est, eo patres puniciores iudicans, quod ad liberos, quos suo iudicio repulissent, carioribus patrimonio spoliatis, honorem hereditatis sue translatum uiderent.
+- id: '4.16'
+  title: "9.4.16 Ragnar against Charles and the Saxons"
+  lines:
+  - Sed ne sic quidem ulcionis sacietate perfusus, insuper Saxoniam, quod eam asylum hostium Haraldique profugium crederet, oppugnare constituens, implorato filiorum auxilio, Karolum tunc forte illis imperii sui finibus immorantem offendit.
+  - Cuius cum, interceptis uigilibus preiectas fefellisset excubias, atque ob hoc cetera factu leuia duceret conatuque prompciora speraret, subito diuina futuri muliercula, tanquam celeste quoddam oraculum aut diuine uoluntatis interpres, salutari regem prediccione permonuit, aduentantisque periculi malum felici uaticinio precucurrit, Syuardi classem ad Sighuini fluminis fauces appulisse denuncians.
+  - Imperator, attente accepto monitu, hostilem interpretatus aduentum, significatos sibi barbaros pugne oppositu constringendos curauit.
+  - Qua in Regnerum habita, non similiter, ut discriminis cautelam hausit, belli actum impleuit.
+  - Itaque infatigabilis ille tocius pene Europe domitor, serenissimis amplissimisque uictoriis tantam terrarum partem emensus, tot ciuitatum, tot gencium uictorem exercitum, auersis bello pectoribus, unius prouincie paruula manu profligatum aspexit.
+- id: '4.17'
+  title: "9.4.17 Sorle of Sweden; Starkad and his seven sons"
+  lines:
+  - Cumque Regnerus, oneratis tributo Saxonibus, de morte Heroddi certum e Suetia nuncium accepisset, liberosque suos Sorli, suffecti regis, calumnia auitis bonis exutos cognosceret, Biorni, Fridleui atque Rathbarthi collegium apprecatus, (nam Regnaldus, Withsercus et Ericus, quos ex Suanlogha progenuerat, nondum habilem armis etatem impleuerant) Suetiam peciit.
+  - Cui occurrens cum exercitu Sorlus, publice an priuatim dimicandi opcione facta, singularem deligenti conflictum Scarchdhum, spectate audacie pugilem, cum septena filiorum manu ex prouocacione pugnaturum admouit.
+  - Cum quibus Regnerus, tribus filiis in certaminis societatem assumptis, utroque exercitu inspectante congressus, agone uictor excessit.
+  - Biornus uero, quod integer hosti cladem ingesserat, tanquam a ferrei lateris firmitate sempiternum usurpauit agnomen.
+  - Qua uictoria Regnerus omnis periculi superandi fiduciam nactus, Sorlum cum uniuersis, quas ductauerat, copiis impetitum occidit.
+- id: '4.18'
+  title: "9.4.18 Ragnar's love for Esbern's daughter"
+  lines:
+  - Cumque, Biorno ob conspicue fortitudinis meritum Suetica prelacione donato, aliquanto bellorum intersticio quieuisset, cuiusdam forte muliercule amancior factus, quo prompciorem sibi pociende eius aditum strueret, patrem ipsius amplissimo beneficencie cultu officiosissime captandum curauit.
+  - Sepe enim numero accersitum ad epulas plurime comitatis officiis prosequebatur.
+  - Nam et uenientem assurgendi reuerencia discumbentemque proximo sibi consessu ueneratus est.
+  - Sepe eciam donis, interdum benignissimo recreauit alloquio.
+  - Qui cum tante honoracionis causam a nullo suo merito profectam animaduerteret, cogitacione uarie deflexa, ex amore filie sue tacitam principis liberalitatem descendisse cognouit, libidinosum propositum humanitatis nomine colorantis.
+  - Quam, ut exactissimum amantis ingenium frustraretur, tanto impensius obseruandam curauit, quanto eam latencioribus studiis ac peruicacioribus modis ambiri comperit.
+  - Verum Regnerus, certissimo consensus eius nuncio recreatus, uillam, in qua asseruabatur, accessit, nihilque amori inuium putans, in uicino quendam rustice uite solitarius hospicio peciit.
+  - Mane, commutata cum feminis ueste, amice laneum opus explicanti muliebriter cultus astitit, uirgineoque operi rudes artificii manus callide, ne proderetur, admouit; nocte uero uotis uirginem amplexatus indulsit.
+- id: '4.19'
+  title: "9.4.19 The daughter's child and Ubbe"
+  lines:
+  - Cumque, maturescente partu, temerate pudicicie facinus tumidiore puelle gremio proderetur, incertus pater, cui se filia polluendam dedisset, ignoratum stupri auctorem ex ipsa maxime cognoscere perseuerauit.
+  - Qua se, neminem preter pedissequam lecti participem habuisse, pertinacius affirmante, rem regi cognoscendam mandauit.
+  - Ille, insontem famulam inusitata criminacione notari non sustinens, proprii sceleris professione aliene innocencie fidem facere non erubuit.
+  - Qua humanitate et muliebris calumnie partes reppulit et, ne ridiculus rumor apud improbas aures sereretur, effecit.
+  - Preterea gignendum ex ea filium sui sanguinis esse, quodque eum Vbbonem nuncupari uellet, adiecit.
+  - Qui cum aliquatenus excreuisset, tenere etatis ingenio mature discrecionis habitum apprehendit.
+  - Matris enim dileccionem, quod excellenti se thoro miscuisset, amplexus, ueneracionem patris, quod ad obscuriorem iusto copulam descendisset, abiecit.
+- id: '4.20'
+  title: "9.4.20 The best sons armed; Dia of the Hellespont killed"
+  lines:
+  - Post hec Regnerus, expedicionem in Hellesponticos parans, uocataque Danorum concione, saluberrimas se populo leges laturum promittens, ut unusquisque paterfamilias, sicut ante, quem minimi inter liberos duxerat, militaturum exhiberet, ita tunc ualencioris opere filium aut probacioris fidei seruum armaret, edixit.
+  - Quo facto, omnibus, quos ex Thora procreauerat, filiis, preter Vbbonem, assumptis, Hellespontum eiusque regem Dian uariis contusum bellis lacessendo perdomuit.
+  - Ad ultimum eundem creberrimis discriminibus implicatum extinxit.
+- id: '4.21'
+  title: "9.4.21 Dia's sons Dia and Daxo defeated"
+  lines:
+  - Cuius filii Dian et Daxon, olim Rutheni regis filias maritali sorte complexi, impetratis a socero copiis, ardentissimo spiritu paterne uindicte negocium rapuerunt.
+  - Quorum Regnerus immensum animaduertens exercitum, diffidencia copiarum habita, equos eneos ductilibus rotulis superpositos ac uersatilibus curriculis circunductos in confertissimos hostes maxima ui exagitari precepit.
+  - Que res tantum ad laxandam aduersariorum aciem ualuit, ut uincendi spes magis in machinamento quam milite reposita uideretur, cuius intolerabilis moles, quicquid impulit, obruit.
+  - Altero ergo ducum interfecto, altero fuga sublapso, uniuersus Hellesponticorum cessit exercitus.
+  - Scithe quoque, Daxon arctissimo materni sanguinis uinculo contingentes, eodem obtriti discrimine referuntur.
+  - Quorum prouincia Withserco attributa, Ruthenorum rex, parum uiribus fidens, formidolosa Regneri arma fuga precurrere maturauit.
+- id: '4.22'
+  title: "9.4.22 The Perms' sorcery: storms, then heat"
+  lines:
+  - At Regnerus, ceteris prompta sibi dedicione substratis, cum quinquennem prope modum piraticam expleuisset, Biarmos nuper deuictos inualida subieccionis fide palam imperium detrectantes inuenit.
+  - Qui cum aduentum eius compertum haberent, carminibus aggressi celum, sollicitatas nubes ad summam usque nimborum uiolenciam impulerunt.
+  - Que res Danos aliquandiu nauigacione prohibitos alimentorum facultate defecit.
+  - Eosdem quoque, subito remissa tempestate, estuosissimi feruoris flagrancia torruit.
+  - Nec ea quidem pestis concitati frigoris magnitudine tolerabilior extitit.
+  - Itaque anceps gemine intemperancie malum uicissim affecta corpora immoderata utriusque status accessione corrupit.
+  - Ceterum laxi uentris profluuium complurimos exanimauit.
+  - Ita Danorum plerique, dubia celi qualitate conclusi, passim oborta corporum pestilencia decesserunt.
+- id: '4.23'
+  title: "9.4.23 Through the land of the Kurlanders and Sembs"
+  lines:
+  - Cumque se Regnerus adulterina magis quam uera aeris ui prepeditum animaduerteret, utcunque nauigacione producta, in Curorum Semborumque regionem accessit; qui maiestatem eius perinde atque honoratissimi uictoris amplitudinem impensius uenerati sunt.
+  - Quo beneficio rex magis aduersus Biarmorum insolenciam efferatus, sprete maiestatis sue uindictam inopinato petiuit assultu.
+  - Quorum ignoti nominis rex, subitanea hostium irrupcione perculsus simulque conserende cum ipsis manus fiducia uacuus, Matullum, Finmarchie ducem, perfugio peciit.
+  - Cuius peritissima sagittariorum opera fretus, Regneri apud Biarmiam hiberna peragentem impune lacerauit exercitum.
+- id: '4.24'
+  title: "9.4.24 The Finns on skis"
+  lines:
+  - Quippe Finni, lubricorum stipitum celeri allapsu cursum intendere soliti, arbitraria uelocitatis potencia rapiuntur, promptissimamque propinquitatis uel absencie facultatem obtinere creduntur.
+  - Mox enim, ut hostem leserint, eadem celeritate, qua subeunt, auolant, nec procursu languidius reditum tentant.
+  - Itaque et uehiculorum et corporum agilitate instandi fugiendique expertissimam obtinent potestatem.
+  - Credendum est, tunc Regnerum fortune sue imbecillitatem ammiranter tulisse, cum se, olim Romani culminis triumphatorem, ab inermi inconditoque agmine ad ultimum usque discrimen abripi peruideret.
+  - Itaque qui splendidissimum Romane milicie decus maximique ac serenissimi ducis insignes copias excellenter obtriuerat, agrestis et ignobilis uulgi sordidissimo atque tenuissimo apparatui cessit, isque, cuius bellicam antea claritatem fortissime gentis uis hebetare nequiuerat, despicabilis populi paruulam manum sustinere non ualuit.
+- id: '4.25'
+  title: "9.4.25 The Finns routed by ambush; a record on the rocks"
+  lines:
+  - Quo euenit, ut ea manu, qua clarissimam orbis pompam ac grauissimum militaris roboris instrumentum fortissime contudit, qua tot peditum, tot castrorum, tanti equitatus fragorem apertissime subruit, uilem obscuramque plebeculam furtim et quasi per latrocinium incessere sustineret, illustremque gloriam suam, palam atque interdiu partam, nocturna fallacia maculare non erubesceret, manifeste fortitudinis loco clandestinas amplexatus insidias.
+  - Que res ut opere deformis, ita exitu utilis fuit.
+  - Nec Finnorum quam Caroli fuga parcius gratulatus est, plus se uirium in nudissima plebe, quam in instructissimo milite repperisse confessus; siquidem grauissimam Romanorum armaturam, quam leuia pannose gentis spicula tolerabilius ferre potuit.
+  - Vbi Biarmorum rege interfecto, Finnorum uero fugato, Regnerus saxis rerum gestarum apices pre se ferentibus hisdemque superne locatis, eternum uictorie sue monimentum affixit.
+- id: '4.26'
+  title: "9.4.26 Ubbe's rebellion, urged by Esbern"
+  lines:
+  - Interea Vbbo, per auum suum Hesbernum ad sacrilegam regni cupiditatem adductus, abiecta paterni respectus uerecundia, capiti suo regium arrogauit insigne.
+  - Cuius cum Regnerus insolenciam ex Suetie ducibus Kelthero Thorkilloque cognosceret, Gothiam uersus perpropere nauigacionem exercuit.
+  - Quos Hesbernus Regneri partibus singulari fide deuinctos expertus, premio sollicitatos regis desertores efficere laborabat.
+  - Illi, non flexo e sentencia proposito, ex Biorni arbitrio suum consistere retulerunt, confessi, Sueonum neminem, quod ab eius placito destitisset, ausurum.
+  - Nec segniter ipsum Hesbernus benignissimis legatorum alloquiis captauit.
+  - Qui se perfidie quam bone fidei propiorem fore denegans, piissimi patris amori improbissimi fratris graciam anteferri perquam nefarium iudicabat. In ipsos uero legatos perinde ac grauissimi criminis hortatores laqueo animaduertit.
+  - Sueti quoque de reliqua legatorum turba pari clade noxie exhortacionis penas sumpserunt.
+- id: '4.27'
+  title: "9.4.27 Esbern takes the field; Ivar's choice"
+  lines:
+  - Igitur Hesbernus, occulto clandestinoque paratui parum prosperum ratus constare progressum, adcitis palam copiis, manifeste procurrit ad bellum.
+  - At prefectus Iutie Iuarus, neutram sacrilege pugne partem pietati propinquam autumans, impium bellum uoluntario precucurrit exilio.
+  - Regnerus uero Hesbernum apud sinum, qui Latialiter uiridis appellatur; aggressus occidit, exanimisque ab(s)cisum caput prora excipi mandans, terribile facciosis spectaculum edidit.
+- id: '4.28'
+  title: "9.4.28 Ubbe defeated and bound"
+  lines:
+  - Vbbo uero, profugio usus, itemque patrem reuocato apud Sialandiam bello adortus, dum, laxata suorum acie, undique solus impetitur, tantum aduersi agminis fudit, ut hostilium cadauerum excremento perinde ac municione firmissima circumactus facile prouocancium inhiberet accessum.
+  - Ad ultimum frequencioribus hostium globis obfusus comprehensusque publicis uinculis onerandus abstrahitur.
+  - At ille, immensa ui extricatis recisisque catenis, inditos sibi nexus disiicere ac lacerare adorsus, nullis obicem modis effugere potuit.
+  - At ubi Iuarus tumultum patrie facciosi supplicio discussum comperit, Daniam peciit.
+  - Quem Regnerus, quod inter seuissimas parricidiorum procellas integerrimum se pietatis cultorem gesserat, amplissima ueneracione suscepit.
+- id: '4.29'
+  title: "9.4.29 Daxo takes Hvitserk by treachery"
+  lines:
+  - Interea Daxon Withsercum, Suetie principantem, diu nequicquam superare conatus, tandem facte pacis commento circunuentum aggreditur.
+  - Conuiuialiter ab eo exceptus, armatum subornauit exercitum, qui simulata mercacione in urbem rhedis aduectus hospitis domum nocturno laceraret assultu.
+  - Cuius latrocinii manum tanta Withsercus strage perculit, ut hostilium corporum cumulo circunfusus nisi scalis superne admotis comprehendi nequiret.
+  - Duodecim quoque comites eius pariter ab hoste capti, facta sibi repetende patrie potestate, deuotis pro rege capitibus, alienum participare periculum, quam suum abiicere maluerunt.
+- id: '4.30'
+  title: "9.4.30 Hvitserk chooses to burn with his friends"
+  lines:
+  - At Daxon, egregie Withserci forme miseracione permotus, orientem speciosissime indolis florem conuellere passus non est.
+  - Cui non tantum salutem, sed et filiam dimidio regni sui dotatam in matrimonium obtulit, ac decori incolumitatem quam fortitudini penam afferre maluit.
+  - Ille uero, precarie uite usum animi magnitudine floccipendens, impunitatem perinde atque paruulum aliquod beneficium respuit, mortis sentenciam sua sponte complexus, prefatus, Regnerum [in] uindictam filii remissius exacturum, si eum in eligendo mortis genere proprio usum arbitrio comperisset.
+  - Cuius temeritatem ammiratus hostis, ea fati specie, qua ipse in se animaduertisset, consumendum esse promittit.
+  - Quam libertatem iuuenis ingentis beneficii loco suscipiens, uinctum se cum sociis cremari petiuit.
+  - Nec segniter Daxon auidis fati precibus obsecutus, pro beneficio optate mortis supplicium erogauit.
+- id: '4.31'
+  title: "9.4.31 Ragnar's grief and Swanloga's counsel"
+  lines:
+  - Quo audito Regnerus, obstinato ad moriendum luctu, non modo merorem induit, uerum et per summam animi egritudinem lectulo corpus affixit, doloremque conceptum gemitu patefecit.
+  - Quem coniunx, uirilem supergressa fiduciam, imbecillitatis increpitum uirili adhortacione firmauit, reuocatumque a merore animum arma impensius celebrare perdocuit, affirmans, fortissimum patrem cruentos filii cineres iustius armis quam lachrymis expiaturum.
+  - Monuit quoque, ne muliebriter lugens tantum sibi ignominie fletu pareret, quantum antea claritatis uirtute contraxerat.
+  - Ad hanc uocem ueritus Regnerus, ne pristinos fortitudinis titulos effeminato merore contereret, discusso mesticie habitu depositisque doloris insignibus, promptissima uindicte spe iacentem reuocauit audaciam.
+  - Adeo interdum ab inualidis forcia roborantur ingenia.
+- id: '4.32'
+  title: "9.4.32 Ragnar in Russia; Daxo taken to Utgard"
+  lines:
+  - Iuaro ergo regni tutelam deferens, Vbbonemque pristine gracie redditum paterna caritate complectens, traiecta in Rusciam classe, comprehensum Daxon catenarumque pena choercitum apud Vtgarthiam custodie relegauit.
+  - Siquidem tunc Regnerum aduersus carissimi filii interfectorem clementissima animi moderacione usum esse constabat, cum ad concupite ulcionis sacietatem exilium sontis quam necem sufficere maluit.
+  - Qua quidem humanitate magnus Ruthenis iniectus est rubor ulterius aduersus eum seuiendi regem, quem ne iniuriarum quidem acerbitate ad infligendam captiuis mortem impellere potuerunt.
+  - Eundem quoque Regnerus breui in graciam reductum patrie reddidit, pollicentem, se ei annuo nudatum pedes cum duodecim patribus discalciatis suppliciter tributa pensurum.
+  - Enimuero in captiuum ac supplicem leniter animaduertere, quam cruentam securim distringere, superbamque ceruicem sedulo mulctare seruicio, quam semel elidere sacius duxit.
+- id: '4.33'
+  title: "9.4.33 Eric Wind-hat over Sweden; war in Norway and Scotland"
+  lines:
+  - Inde prouectus filium suum Ericum, Ventosi Pillei cognomen habentem, Suetie prefert.
+  - Vbi, Fridleuo atque Siuardo apud se stipendia merentibus, Normannos Scotosque duobus aliis falso regis nomen irrogasse comperiens, in primis Noruagice rei usurpatorem sustulit, eamque Biorno fruendam tradidit.
+  - Deinde, eo atque Erico accitis, Orcades populatus, ad ultimum Scotorum finibus appulit, eorumque regem Murial triduano exhaustum prelio interfecit.
+  - Verum filii eius Dunuat atque Rathbarthus, pugna spectabiliter edita, ab hoste necati sanguine suo cruentam patri uictoriam pepererunt.
+- id: '4.34'
+  title: "9.4.34 Swanloga's death; Ragnar in solitude"
+  lines:
+  - Cumque in Daniam reuersus coniugem Suanlogam interim morbo cognouisset absumptam, protinus sollicitudini remedium solitudine quesiuit, egreque mentis luctum intra penacium suorum claustra cohibere passus [non] est.
+  - Verum hanc meroris acerbitatem Iuari regno pulsi repentinus detraxit aduentus.
+  - Quippe Galli, fugato eo, in Hellam quendam Hamonis filium falsam regis contulerant potestatem.
+  - Quo duce Regnerus perinde atque locorum perito usus, edi⟨c⟩ta classe, portum, qui Noruicus appellatur, accessit, ubi expositis copiis, Hellam, Gallicana uirtute subnixum, post extractam in triduum pugnam fuge amantem effecit, eaque res creberrimo Anglorum, rarissimo Danorum sanguine constitit.
+- id: '4.35'
+  title: "9.4.35 Ireland and Dublin; the voyage to the Hellespont"
+  lines:
+  - Cumque ibidem Regnerus annum uictor explesset, consequenter, excitis in opem filiis, Hiberniam petit, occisoque eius rege Melbrico, Duflinam barbaris opibus refertissimam obsedit, oppugnauit, accepit; ibique annuo statiuis habitis, mediterraneum fretum pernauigans ad Hellesponticum penetrauit, interiecta regionum spacia clarissimis emensus uictoriis, continue felicitatis progressum nusquam interpellante fortuna.
+- id: '4.36'
+  title: "9.4.36 Harald at Mainz: help on condition of baptism"
+  lines:
+  - Inter hec Haraldus quorundam astipulacione Danorum, Regneri miliciam languidiore studio comitancium, recidiuos patrie tumultus incuciens, regii nominis usurpator emersit.
+  - Qui Regneri ab Hellesponto redeuntis armis exceptus, cum, rebus infeliciter gestis, exhausta domestice opis presidia animaduerteret, Lodouicum, Maguntie constitutum, auxilia petiturus accessit.
+  - At Lodouicus, summo amplificande religionis ardore confertus, condicionem barbaro intulit, opem spondendo, si Christi cultum exsequi consensisset.
+  - Nullam enim posse aiebat animorum interuenire concordiam dissona sacra complexis.
+  - Quamobrem petitorem opis primum religionis contubernio opus habere, neque magnorum operum consortes existere posse, quos superne ueneracionis formula disparasset.
+  - Qua sentencia et salutem hospiti et sibi pietatis preconium peperit.
+  - Haraldum enim, solenni lauacro usum, consequenter Saxonicis roborauit auxiliis.
+- id: '4.37'
+  title: "9.4.37 Harald builds a church in Sleswik"
+  lines:
+  - Quibus is fretus, in territorio Slesuicensi dicandam deo edem sollicita moliebatur impensa.
+  - Hic itaque sanctissimi tenoris specimen a Romanis ritibus mutuatus, profanato perfidorum errore, delubra diruit, uictimarios proscripsit, flaminium abrogauit, atque incondite patrie Christianismi sacra primus intulit, reiectoque demonum cultu, diuinum emulatus est.
+  - Supremo, quicquid ad custodiam religionis attinuit, scrupulosissima cura seruauit.
+  - Sed non tam efficaciter quam pie rem auspicatus est.
+  - Superueniens enim Regnerus inductaque per eum sacra temerans, uera religione proscripta, pristino adulterinam loco restituit, ac suo cerimonias honore donauit.
+  - Haraldus uero profugus fortunam ad sacrilegium transtulit.
+  - Nam ut precipuum inchoate religionis specimen, ita primum neglecte spectaculum fuit, atque ex splendido sanctitatis auctore infamis eiusdem desertor euasit.
+- id: '4.38'
+  title: "9.4.38 Ella's war; Ragnar taken and thrown to the snakes"
+  lines:
+  - Interea Hella ad Hibernos collatus, omnes, qui se Regnero propiore fide deuinxerant, ferro suppliciisque mulctauit.
+  - Quem Regnerus classe adortus, iusta omnipotentis animaduersione manifestas detracte religionis penas pependit.
+  - Comprehensus enim atque in carcerem coniectus, noxios artus colubris consumendos aduertit, atque ex uiscerum suorum fibris tristem uiperis alimoniam prebuit.
+  - 'Cuius adeso iocinore, cum cor ipsum funesti carnificis loco coluber obsideret, omnem operum suorum cursum animosa uoce recensuit, superiori rerum contextui hanc adiiciens clausulam: Si sucule uerris supplicium scirent, haud dubio, irruptis haris, afflictum absoluere proper⟨ar⟩ent.'
+  - Quo dicto Hella adhuc nonnullos filiorum eius uiuere interpretatus, quiescere carnifices amouerique uiperas iubet.
+  - Cumque satellites peragende iussionis gracia accurrissent, Regnerus imperium regis funere suo precesserat.
+- id: '4.39'
+  title: "9.4.39 Ragnar's double fortune"
+  lines:
+  - Quem quid aliud quam duas inter se fortunas partitas esse dicemus?
+  - alteram, que ei incolumem classem, propensum imperium, precipuas piratice uires adiiceret, alteram, que claritatis ruinam, commilitonum necem, acerbissimum uite exitum irrogaret, cum ipsum carnifex, uenenatis beluis circunfusum, eo corde, quod aduersus omne discrimen immobile gesserat, aspides exsaciantem uideret.
+  - Itaque ex speciosissimo uictore ad miserabilem captiui sortem deductus, nequis nimium fortune credat, edocuit.
+- id: '5.1'
+  title: "9.5.1 Ivar hears the news at the games"
+  lines:
+  - Quem casum Iuarus, dum forte ludos inspectaret, accepit.
+  - Sed nihilominus uultum in eodem habitu continens solitoque nulla ex parte infraccior non solum nunciatam parentis cladem doloris dissimulacione suppressit, sed ne strepitum quidem exoriri passus, attonitum rumore populum theatro discedere uetuit.
+  - Itaque neque oris hilaritatem deposuit, ne cessato ludo scenam interrumperet, neque oculos a publico plausu ad priuatam mesticiam flexit, ne ex summo tripudio repente in ultimum prolapsus merorem pocius calamitosi filii, quam iocabundi ducis partes egisse uideretur.
+- id: '5.2'
+  title: "9.5.2 Siward drives a spear into his foot"
+  lines:
+  - Siuardus uero, eodem nuncio accepto, propior paterne caritati quam priuate passioni, hastile, quod forte in manu habebat, alcius pedi stupefactus immersit, tristicie salebra corpoream negligente molestiam.
+  - Vt enim animi uulnus paciencius ferre potuisset, corporis partem grauius afficere studuit.
+  - Quo facto simul fortitudinem meroremque detexit, fortunam suam inter calamitosum filium constantemque partitus.
+- id: '5.3'
+  title: "9.5.3 Bjorn crushes the dice"
+  lines:
+  - At Biornus, inter tesserarum iactus delato ad se paterne mortis nuncio, tanta ui correptum manu calculum pressit, ut tabule quoque cruorem digitis extortum infunderet; ubi nimirum fortune iactum ipsa, quam uersabat, alea leuiorem esse didicit.
+  - Quod audiens Hella, hunc trium parentis obitum forciori animi robore sustinuisse iudicauit, qui nihil pietatis eius funeri prestitisset, ideoque sibi Iuari suspectissimam haberi uirtutem.
+- id: '5.4'
+  title: "9.5.4 Ivar's horse-hide trick in England"
+  lines:
+  - Iuarus uero, petitis Anglie partibus, cum classem suam conserendi cum hoste belli impotentem animaduerteret, astum audacie preferens, Hellam acumine tentat, spacium arui, quantum equino tergore complecti potuisset, in sequestre pacis pignus expostulans.
+  - Et quidem, quod peciit, impetrauit.
+  - Rex enim, paruo preces stare autumans, a tanto hoste exiguum magne rei loco expeti gratulatus est, ratus, perquam breue tergus paululum ruris occupaturum.
+  - At Iuarus, corio in exiles ad modum corrigias scissim extracto, habilem exedificande urbi agrum implicuit.
+  - Igitur Hella, prodigalitatis penitencia succedente, magnitudinem corii sera estimacione collegit, diuisam cuticulam reccius quam incolumem mensus.
+  - Quam enim exiguum soli cincturam credidit, amplissima iugera lacius occupantem aspexit.
+  - Iuarus uero condite urbi abunde suffecturos obsidioni commeatus inuexit, ab inedia perinde atque hoste defensam haberi cupiens.
+- id: '5.5'
+  title: "9.5.5 Siward and Bjorn cut the eagle on Ella"
+  lines:
+  - Interea Siuardus ac Biornus cum quadringentarum nauium classe superuenientes, bellum regi manifesta prouocacione significant.
+  - Idque statuto tempore exsecuti, comprehensi ipsius dorsum plaga aquilam figurante affici iubent, seuissimum hostem atrocissimi alitis signo profligare gaudentes.
+  - Nec uulnus impressisse contenti, laceratam saliuere carnem.
+  - Taliter perempto Hella, Biornus ac Siuardus regna sua reduces expetiuere. Iuarus Angliam biennio tenuit.
+- id: '5.6'
+  title: "9.5.6 The sons win back Denmark"
+  lines:
+  - Interea Dani, perseuerantissima bellum faccione complexi, Siuardo cuidam atque Erico, regia gente creatis, publicam detulere tyrannidem.
+  - Quos Regneri filii communiter mille septingentarum nauium classe apud Slesuicum adorti, semestri deleuere pugna.
+  - Colles indicio manent. Nec minus is, apud quem belligeratum est, sinus Siuardi funere inclaruit.
+  - Iamque preter Regneri filios regius prope modum interierat sanguis.
+  - Exinde Biorno atque Erico domum reuersis, Iuarus atque Siuardus, quo tenaciores rebellibus frenos imponerent, in Dania resederunt, Agnerum Anglie preferentes.
+  - Qui repulsa prouocatus Anglorum, opitulante Siuardo, contemptricem sui prouinciam incolis uacuefaciendo tenacia situ iugera cultore carere, quam insolentem alere maluit, pinguissimaque insule rura teterrima uastitate perfundens, deserte quam superbe regioni imperitare sacius autumauit.
+  - Post hec Ericum apud Suetiam Osteni cuiusdam malignitate sublatum ulcisci cupiens, dum aliene uindicte arccius incumbit, suum hosti sanguinem erogauit, dumque cesi fratris penas auidius expetit, proprium fraterne caritati funus impendit.
+- id: '5.7'
+  title: "9.5.7 Siward king of Denmark"
+  lines:
+  - Itaque Siuardus summis tocius Danice concionis suffragiis paternum apprehendit imperium.
+  - Hic autem post editas late strages domestica claritate contentus, toga quam armis illustris haberi maluit; omissoque castrorum cultu, ex acerrimo tyranno exactissimum pacis custodem agere cepit, tantum decoris in ocio atque uacacione constituens, quantum ante in uictoriarum frequencia repositum autumabat.
+  - Adeo autem studiorum eius mutacionem fortuna fauorabiliter prosecuta est, ut, sicut ipse neminem, ita nec ipsum quisquam hostiliter laceraret.
+- id: '5.8'
+  title: "9.5.8 The child Eric; the royal line reduced to one son"
+  lines:
+  - Idem fato functus, Ericum ad modum infantulum nature magis quam regni aut pacis heredem habuit.
+  - Quippe Ericus, Haraldi frater, tenerrimam eius etatulam spernens, irrupta cum sediciosis patria, regium occupauit insigne; nec erubuit, lacessita legitimi ducis infancia, adulterinam arripere potestatem, hoc se regno indigniorem comprobans, quod imbellem eo spoliare sustinuit.
+  - Igitur illum sceptro, se ipsum uirtutibus exuit, et, dum armis incunabula appetit, omni pectus uirilitate nudauit.
+  - Neque enim, ubi cupiditas ambicioque flagrauit, consanguinea caritas sedem habuit.
+  - Sed hanc inhumanitatem superne ulcionis ira pensauit.
+  - Inter ipsum namque ac Guthormum, Haraldi filium, subito tanta clade confectum est bellum, ut eorum utroque cum innumeris aliis interempto, regia Danorum stirps, atrocissimis exhausta cedibus, ad unicum superioris Siuardi filium redigeretur.

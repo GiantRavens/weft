@@ -83,7 +83,6 @@ SHOW_TRANSLIT = True
 TRANSLIT_LABEL = "Modern spelling"
 
 _LEX: dict | None = None
-_CTX: dict = {}
 
 LEAD_P = re.compile(r"^([(¿¡«“]+)")
 TRAIL_P = re.compile(r"([,.;:!?)»”]+)$")
@@ -369,7 +368,6 @@ def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[
     """Split punctuation off the printed word, check the lexicon, and compare the sibilant letters
     of the print with the 1490s spelling the lexicon gives (a sensor: a difference is either a
     printing habit, such as s for ss, or a lexicon error)."""
-    global _CTX
     fields: dict = {}
     fails: list[tuple[str, str]] = []
     word = surface
@@ -384,7 +382,6 @@ def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[
     if word != surface:
         fields["surface"] = word
     n = et.get("n")
-    _CTX = {"n": n, "o": et.get("o"), "ipa": et.get("ipa") or {}}
     if not n:
         fails.append(("modern-spelling-missing", surface))
         return fields, fails
@@ -399,9 +396,13 @@ def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[
     return fields, fails
 
 
-def phonemize(word: str, scheme: str = "c1492", quantities=None, **_) -> dict:
+WANTS_TOKEN = True        # draft passes the edition token: its n, o and ipa override (pin 201)
+
+
+def phonemize(word: str, scheme: str = "c1492", quantities=None, etok: dict | None = None, **_) -> dict:
     """`word` is the token's modern spelling (n)."""
-    ctx = _CTX if _CTX.get("n") == word else {}
+    ctx = {"n": etok.get("n"), "o": etok.get("o"), "ipa": etok.get("ipa") or {}} if etok is not None else {}
+    ctx = ctx if ctx.get("n") == word else {}
     ov = (ctx.get("ipa") or {}).get(scheme)
     if ov:
         ipa = ov

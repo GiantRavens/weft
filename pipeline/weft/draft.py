@@ -50,20 +50,50 @@ def edition_lines(xml_path: Path, book: int, first: int, last: int) -> dict[int,
     raise SystemExit(f"book {book} not found in {xml_path}")
 
 
-def stanza_lines(path: Path, stanzas: list[int]) -> dict[int, list[str]]:
-    """Plain-text poems laid out as a number line ("76.") followed by the stanza's lines."""
+PROSE_LINE = 70        # a verse line of the Eddic editions is under 50 characters; a prose link runs past 70
+
+
+def _verse_block(block: list[str]) -> bool:
+    """A block after a blank line inside a stanza is the stanza's second half (a helming, as in Lokasenna
+    23 and 33) unless it is a speaker label ("Loki kvað:"), a prose line leading into speech ("Hann tók
+    við horni ok drakk af:"), a separator line or prose."""
+    if block[-1].endswith(":"):
+        return False
+    return all(len(l) <= PROSE_LINE and re.search(r"\w", l) for l in block)
+
+
+def stanza_blocks(path: Path) -> tuple[dict[int, list[str]], list[str]]:
+    """Plain-text poems laid out as a number line ("76.") followed by the stanza's lines, which may be
+    split by a blank line. Returns the stanzas and the text that belongs to none (speaker labels, prose
+    links, separators), so a caller can report it rather than lose it silently."""
     out: dict[int, list[str]] = {}
+    loose: list[str] = []
     cur = None
+    blocks: list[list[str]] = [[]]
     for raw in path.read_text(encoding="utf-8").splitlines():
-        line = raw.strip()
-        if re.fullmatch(r"\d+\.", line):
-            cur = int(line[:-1])
-            out[cur] = []
-        elif cur is not None and line:
-            out[cur].append(" ".join(line.split()))
-        elif not line:
-            cur = cur if cur is None or not out.get(cur) else None
-    return {k: v for k, v in out.items() if k in stanzas}
+        line = " ".join(raw.split())
+        if line:
+            blocks[-1].append(line)
+        elif blocks[-1]:
+            blocks.append([])
+    for block in blocks:
+        cont = cur is not None and bool(out[cur]) and _verse_block(block)
+        for line in block:
+            if re.fullmatch(r"\d+\.", line):
+                cur, cont = int(line[:-1]), True
+                out[cur] = []
+            elif cont:
+                out[cur].append(line)       # type: ignore[index]
+            else:
+                loose.append(line)
+        if not cont:
+            cur = None
+    return out, loose
+
+
+def stanza_lines(path: Path, stanzas: list[int]) -> dict[int, list[str]]:
+    """The stanzas asked for (see stanza_blocks)."""
+    return {k: v for k, v in stanza_blocks(path)[0].items() if k in stanzas}
 
 
 def stanza_speakers(path: Path) -> dict[int, str]:
@@ -312,6 +342,11 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
     elif ed_fmt == "stanza-text":
         st = stanza_lines(work_dir / m["edition"]["file"], pilot["stanzas"])
         speakers = stanza_speakers(work_dir / m["edition"]["file"])
+        # sensor: text outside every stanza is expected when it is a speaker label, a separator or prose;
+        # a short line of verse there is a stanza line the reader failed to keep
+        for line in stanza_blocks(work_dir / m["edition"]["file"])[1]:
+            if re.search(r"\w", line) and not line.endswith(":") and len(line) <= PROSE_LINE:
+                fail("verse-outside-stanzas", line)
         units = [(k, i, t) for k in pilot["stanzas"] for i, t in enumerate(st.get(k, []), start=1)]
         for k in pilot["stanzas"]:
             if k not in st:
@@ -536,6 +571,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                 if et.get("m"):
                     tok["metre_form"] = et["m"]
                 # language hook: extra token fields (a generated script row, a reading) from the module
+                tf_surface = s
                 if hasattr(phon, "token_fields"):
                     fields, tfails = phon.token_fields(s, et, g)
                     tok.update(fields)
@@ -558,8 +594,6 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                     tok["norm"] = w["qere"]
                     tok["prov"] = {"sound": "from the Qere perpetuum: the divine name is written with the vowels of the word read in its place, and the reading is sounded"
                                    if w.get("perpetuum") else "from the Qere (the margin reading); the surface is the Ketiv, the consonants as written"}
-                elif w.get("qere_unread"):
-                    fail("qere-perpetuum-prefixed", f"{book}.{n} {s}: the reading {w['qere_unread']} after a prefix is not derived; sounded as written")
                 if w.get("enclitic"):
                     tok["enclitic"] = w["enclitic"]
                 for k in ("prefixes", "lexgloss", "strong"):
@@ -584,8 +618,11 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             hint = {}
             if token_edition and lang in ("hbo", "arc") and (et.get("stress") or edition.get("stress_default")):
                 hint = {"stress": et.get("stress") or edition["stress_default"]}
+            # a module that reads its token's context gets the edition token, its group and its printed
+            # surface as arguments (WANTS_TOKEN; pin 58), not through a module global
+            tokctx = {"etok": et, "group": g, "surface": tf_surface} if token_edition and getattr(phon, "WANTS_TOKEN", False) else {}
             for k_s, scheme in enumerate(m["schemes"]):
-                r = phon.phonemize(say, scheme, quantities, **extra, **hint,
+                r = phon.phonemize(say, scheme, quantities, **extra, **hint, **tokctx,
                                    **({"silluq": True} if w and w.get("silluq") else {}))
                 snd[scheme] = {"ipa": r["ipa"], "respell": r["respell"]}
                 if k_s == 0:
@@ -596,7 +633,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             if lang == "grc" and qhit:
                 tok["prov"] = {"sound": f"weft.greek {greek.VERSION} + quantity table"}
             if lang == "lzh":
-                tr = phon.phonemize(s, "tang", quantities)
+                tr = phon.phonemize(s, "tang", quantities, **tokctx)
                 tok["tone"] = tr.get("tone")
                 tok["final"] = tr.get("final")
                 if tr.get("via"):
@@ -659,6 +696,11 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         if token_edition and toks and hasattr(phon, "line_checks"):
             # language hook: sensors that compare the line against its source (spelling, marks)
             for cls, sample in phon.line_checks(text, etoks, edition):
+                fail(cls, f"{book}.{n} {sample}")
+        if token_edition and toks and (edition.get("ocr_check") or {}).get("pages"):
+            # core sensor: an edition transcribed from scans, checked line by line against the hOCR (pin 63)
+            from . import ocr as _ocr
+            for cls, sample in _ocr.hocr_check(etoks, edition):
                 fail(cls, f"{book}.{n} {sample}")
         if lang == "san" and toks:
             ns = [et["n"] for et in etoks]
@@ -726,6 +768,30 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
     header = "# Generated by `weft draft`. Do not edit. Corrections go in curated/.\n"
     out.write_text(header + yaml.dump(gen, allow_unicode=True, sort_keys=False, width=200,
                                       default_flow_style=None))
+    # sensor (pin 47): a Greek treebank lemma that is not an LSJ headword is most likely not a Greek word at
+    # all (GLAUx's automatic parses invent some: ταραχθαίνω, κροκύφω). A lemma already corrected in curated/
+    # is not reported. Without the headword list on this machine the sensor says it was skipped.
+    sensors_skipped = []
+    if lang == "grc" and m.get("treebank") and tb_fmt == "glaux":      # automatic parses only; AGDT is by hand
+        from . import lexica
+        hw = lexica.lsj_headwords()
+        if hw is None:
+            sensors_skipped.append("lemma-not-in-lexicon: no LSJ headword list on this machine (run weft lexica)")
+        else:
+            fixed = set()
+            for cf in sorted((work_dir / "curated").glob("*.yaml")) if (work_dir / "curated").is_dir() else []:
+                for cs in yaml.safe_load(cf.read_text(encoding="utf-8")) or []:
+                    fixed.update(k for k, v in (cs.get("set") or {}).items() if isinstance(v, dict) and "lemma" in v)
+            for line_rec in lines:
+                for tok in line_rec.get("tokens", []):
+                    lem = tok.get("lemma") or ""
+                    # names and adverbs are left out: LSJ omits many names and files an adverb under its
+                    # adjective (μόνον under μόνος); a real word LSJ lacks is declared in data/grc_lemma_ok.yaml
+                    if (not lem or tok["id"] in fixed or lem[:1].isupper() or (tok.get("morph") or "").startswith(("PROPN", "ADV", "d-"))
+                            or lem in lexica.grc_lemma_ok()):
+                        continue
+                    if lexica.bare_grc(lem) and lexica.bare_grc(lem) not in hw:
+                        fail("lemma-not-in-lexicon", f"{tok['id']} {lem}")
     report = {
         "run": {"weft": __version__, **({"sections": [u[0] for u in units if u[1] == 1]} if ed_fmt == "weft-edition"
                                           else {"stanzas": pilot["stanzas"]} if ed_fmt == "stanza-text"
@@ -734,6 +800,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         "counts": {"lines": len(lines), "tokens": ntok},
         "failures": dict(failures),
         **({"metre_licences": dict(metre_flags)} if metre_flags else {}),
+        **({"sensors_skipped": sensors_skipped} if sensors_skipped else {}),
         "samples": samples,
         "failure_rate": {k: round(v / max(ntok, 1), 3) for k, v in failures.items()},
         "shift_left": [k for k, v in failures.items() if v / max(ntok, 1) > 0.15],

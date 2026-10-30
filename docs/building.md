@@ -192,6 +192,15 @@ the shared convention table first: the frequent forms with their analysis (er, a
 ekki, fyrr against fyrri), the headword for each variant (yðvarr, not yðarr), and the fixed English form
 of every name. The reviews still found the residue there, in forms the table did not list.
 
+## The Greek lemma sensor
+
+A Greek work drafted from GLAUx, whose parses are automatic, is checked against LSJ: `weft draft` reports
+`lemma-not-in-lexicon` for a treebank lemma whose letters match no LSJ headword. Run `weft lexica` once on a
+machine to fetch the pinned Perseus LSJ (about 280 MB, into `~/.cache/weft`, never committed); without it
+the draft report lists the sensor under `sensors_skipped`. Names and adverbs are not checked. For each hit,
+either correct the lemma in `curated/` (the sensor then passes it) or, if the lemma is a real word LSJ
+files elsewhere or lacks, add it to `pipeline/weft/data/grc_lemma_ok.yaml` with the reason.
+
 ## Gotchas already paid for
 
 - The Italian lexicon sensor reads only the shared `it_lexicon.yaml`; a work-local pronunciation
@@ -260,3 +269,16 @@ of every name. The reviews still found the residue there, in forms the table did
 - A word that is a homograph of a convention-table form (bæði the verb, heim the noun heimr, kveðr from
   kveðja) is where parallel annotators depart from the table; ask for a ` | note` on each departure.
 
+- An OCR text with no proofread transcription (Holder's Saxo) is checked by voting, not by reading every word: take
+  the OCR of each scanned copy (archive.org often has three or four), align them word by word, and read on the page
+  image every word where they disagree or where a later edition differs. The OCRs share some misreadings (I for l,
+  e for c), so a majority is not proof; and one copy can have damaged type the others do not (earcerem for carcerem
+  in the Toronto copy of Holder), so the edition follows the print, with the copy named in the correction.
+- A margin line number that the OCR reads as letters (jo for 40, s for 5) can be "corrected" into a word and double
+  one (diu diu). After building the corrections, list every one whose OCR side has a one- or two-letter token, and
+  every line with the same word twice in a row.
+- A Project Gutenberg translation may be a later reprint, not the first edition (Elton's Saxo is the Norroena
+  reprint of 1905, which changes some words); compare it with the first edition's OCR before naming it.
+- Parallel annotators diverge on headword spelling (adfirmo and affirmo, se and sui) and on optional UD features
+  (Voice on gerundives, NumType, Aspect on sum). Fix these in the convention table before the work starts, and
+  harmonize afterwards with one rule per class over every token, not form by form.

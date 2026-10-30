@@ -52,7 +52,7 @@ Edition token fields (texts/<work>/edition.yaml)
 -----------------------------------------------
 t      the word as printed, punctuation attached (landt,); the punctuation moves to punct
 n      the modern spelling of the same form; clitic groups apart (van 't, dat er)
-ocr    the OCR's reading of this token where it differs from the printed page (see line_checks)
+ocr    the OCR's reading of this token where it differs from the printed page (see weft.ocr.hocr_check)
 ipa    {scheme: ipa} override for this occurrence
 """
 from __future__ import annotations
@@ -72,7 +72,6 @@ TRAIL_P = re.compile(r"([,;:!?)\]”]+|(?<![0-9])\.)$")
 ABBR = re.compile(r"^\w(\.\w)+\.$")          # n.o. keeps its points
 
 _LEX: dict | None = None
-_CTX: dict = {}
 
 # monosyllables said without stress in running text (articles, clitics, prepositions,
 # conjunctions); everything else of one syllable is stressed
@@ -295,7 +294,6 @@ def respell(ipa: str) -> str:
 def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[str, str]]]:
     """Split punctuation off the printed word, check every polysyllable against the lexicon, and
     hold the token's ipa override for phonemize, which draft calls next for this token."""
-    global _CTX
     fields: dict = {}
     fails: list[tuple[str, str]] = []
     word = surface
@@ -318,13 +316,15 @@ def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[
             sylls, _, _ = lex_entry(w)
             if len(sylls) > 1 and key(w) not in lexicon() and not et.get("ipa"):
                 fails.append(("syllables-by-rule", w))
-    _CTX = {"n": n, "ipa": et.get("ipa") or {}}
     return fields, fails
 
 
-def phonemize(word: str, scheme: str = "h1596", quantities=None, **_) -> dict:
+WANTS_TOKEN = True        # draft passes the edition token: its n and ipa override (pin 201)
+
+
+def phonemize(word: str, scheme: str = "h1596", quantities=None, etok: dict | None = None, **_) -> dict:
     """`word` is the token's modern spelling (n); a clitic group (van 't) is said word by word."""
-    ov = (_CTX.get("ipa") or {}).get(scheme) if _CTX.get("n") == word else None
+    ov = (etok.get("ipa") or {}).get(scheme) if etok and etok.get("n") == word else None
     if ov:
         return {"ipa": ov, "respell": respell(ov), "syllables": len(re.split(r"[. ]", ov))}
     parts, n = [], 0
@@ -336,52 +336,8 @@ def phonemize(word: str, scheme: str = "h1596", quantities=None, **_) -> dict:
 
 
 # ---------------------------------------------------------------- OCR sensor
-_OCR: dict[str, str] = {}
-_W = re.compile(r"<span class=['\"]ocrx_word['\"][^>]*title=['\"]bbox (\d+) (\d+) (\d+) (\d+)[^'\"]*['\"][^>]*>(.*?)</span>", re.S)
-_PAGE = re.compile(r"<div class=['\"]ocr_page['\"] id=['\"]([^'\"]+)['\"]")
-
-
-def ocr_body(path: Path, pages: dict) -> str:
-    """The words inside each page's body column, in reading order, line-end hyphens rejoined,
-    without spaces."""
-    import html
-    h = path.read_text(encoding="utf-8")
-    starts = [(m.start(), m.group(1)) for m in _PAGE.finditer(h)]
-    out = []
-    for k, (pos, pid) in enumerate(starts):
-        if pid not in pages:
-            continue
-        x0, y0, x1, y1 = pages[pid]
-        seg = h[pos:starts[k + 1][0] if k + 1 < len(starts) else len(h)]
-        for line in re.split(r"(?=<span class=['\"]ocr_line)", seg)[1:]:
-            ws = [html.unescape(re.sub(r"<[^>]+>", "", t)).strip()
-                  for a, b, _, _, t in _W.findall(line) if x0 <= int(a) < x1 and y0 <= int(b) < y1]
-            ws = [w for w in ws if w]
-            if not ws:
-                continue
-            if ws[-1].endswith("-"):
-                ws[-1] = ws[-1][:-1]
-            out.append("".join(ws))
-    return re.sub(r"\s+", "", "".join(out))
-
-
-def line_checks(text: str, etoks: list[dict], edition: dict) -> list[tuple[str, str]]:
-    """Sensor: the line, with each token's declared OCR reading in place of the printed word,
-    must occur in the OCR of the page's body column (edition-not-in-source otherwise)."""
-    oc = edition.get("ocr_check")
-    if not oc:
-        return []
-    from .paths import work_dir
-    p = work_dir(Path(__file__).resolve().parents[2], edition["work"]) / oc["file"]
-    if str(p) not in _OCR:
-        if not p.exists():
-            return [("ocr-source-missing", oc["file"])]
-        _OCR[str(p)] = ocr_body(p, oc["pages"])
-    want = "".join((t.get("ocr") or t["t"]) + (t.get("p") or "") for t in etoks)
-    want = re.sub(r"\s+", "", want)
-    if want not in _OCR[str(p)]:
-        return [("edition-not-in-source", " ".join(t["t"] for t in etoks[:4]) + " ...")]
-    return []
+# the OCR verbatim check for editions transcribed from scans (hOCR page boxes, declared OCR readings) is
+# core: weft.ocr.hocr_check, run by draft for any edition whose ocr_check names hOCR pages (pin 63)
 
 
 KEY = {

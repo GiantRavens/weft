@@ -321,7 +321,6 @@ def respell(ipa: str) -> str:
 
 
 # ---------------------------------------------------------------- hooks
-_CTX: dict = {}
 
 
 def phon_ipa(n: str, scheme: str, override: str | None = None) -> tuple[str, int, list]:
@@ -337,7 +336,6 @@ def phon_ipa(n: str, scheme: str, override: str | None = None) -> tuple[str, int
 
 
 def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[str, str]]]:
-    global _CTX
     fields: dict = {}
     fails: list[tuple[str, str]] = []
     word = surface
@@ -359,7 +357,6 @@ def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[
             _, _, fl = word_ipa(o, "lisboa1540")
             fails += fl
         fields["prov"] = {"sound": f"weft.portuguese {VERSION}, from the lexicon's normalized 1540 spelling {' '.join(os_)}"}
-    _CTX = {"n": n, "o": et.get("o"), "ipa": et.get("ipa") or {}}
     return fields, fails
 
 
@@ -368,10 +365,23 @@ def bare(word: str) -> str:
     return TRAIL_P.sub("", LEAD_P.sub("", word or ""))
 
 
-def phonemize(word: str, scheme: str = "lisboa1540", quantities=None, **_) -> dict:
+def _printed_word(surface: str) -> str:
+    """The printed word without its leading and trailing punctuation, as token_fields splits it."""
+    ml = LEAD_P.search(surface)
+    w = surface[ml.end():] if ml else surface
+    mt = TRAIL_P.search(w)
+    return w[:mt.start()] if mt else w
+
+
+WANTS_TOKEN = True        # draft passes the edition token and its printed surface (pin 201)
+
+
+def phonemize(word: str, scheme: str = "lisboa1540", quantities=None, etok: dict | None = None,
+              surface: str | None = None, **_) -> dict:
     """`word` is the token's modern spelling (n) or, for a modern text, the printed word."""
     word = bare(word)
-    ctx = _CTX if _CTX.get("n") == word else {}
+    ctx = {"n": etok.get("n") or _printed_word(surface or ""), "o": etok.get("o"), "ipa": etok.get("ipa") or {}} if etok is not None else {}
+    ctx = ctx if ctx.get("n") == word else {}
     ov = (ctx.get("ipa") or {}).get(scheme)
     if ov:
         return {"ipa": ov, "respell": respell(ov), "syllables": len([p for p in re.split(r"[.ˈ ]", ov) if p])}

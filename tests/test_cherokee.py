@@ -42,7 +42,9 @@ def test_token_hooks():
     assert fails == [("not-syllabary", "1827 (1827)")]
     said = {"c1828": {"ipa": "x", "respell": "eighteen twenty-seven"}, "modern": {"ipa": "x", "respell": "eighteen twenty-seven"}}
     f, fails = c.token_fields("1827", {"sound": said}, {})
-    assert fails == [] and c.phonemize("1827", "c1828")["respell"] == "eighteen twenty-seven"
+    # the override comes with the edition token, passed to phonemize as draft passes it (pin 201)
+    assert fails == [] and c.phonemize("1827", "c1828", etok={"sound": said}, surface="1827")["respell"] == "eighteen twenty-seven"
+    assert c.phonemize("1827", "c1828")["respell"] != "eighteen twenty-seven"     # no token, no override
     f, fails = c.token_fields("ᎠᏫᏂᏗᏢ", {"uncertain": {"alt": "ᎠᏫᏂᏘᏢ", "why": "Ꮧ and Ꮨ alike at this resolution"}}, {})
     assert f["uncertain"] is True and "ᎠᏫᏂᏘᏢ (awinititlv)" in f["prov"]["text"]
     _, fails = c.token_fields("ᎠᏫᏂᏗᏢ", {"uncertain": {"alt": "ᎠᏫᏂᏘᏢ"}}, {})

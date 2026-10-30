@@ -113,7 +113,6 @@ SHOW_TRANSLIT = True
 TRANSLIT_LABEL = "Modern spelling"
 
 _LEX: dict | None = None
-_CTX: dict = {}            # the current token's context, set by token_fields for phonemize
 
 LEAD_P = re.compile(r"^([(\[«“]+)")
 TRAIL_P = re.compile(r"([,.;:!?)\]»”…]+)$")
@@ -207,10 +206,29 @@ def _flat(group: dict) -> list[dict]:
     return [t for ln in group.get("lines", []) if not isinstance(ln, str) for t in ln["tokens"]]
 
 
+def context(surface: str, et: dict, group: dict) -> dict:
+    """The token's context for its sound: its modern spelling, the next word, whether a pause follows, and
+    its liaison marks. Computed from the edition token and its group, which draft passes to phonemize
+    (pin 58: no module-global hand-off)."""
+    word = surface
+    ml = LEAD_P.search(word)
+    if ml:
+        word = word[ml.end():]
+    mt = TRAIL_P.search(word)
+    if mt:
+        word = word[:mt.start()]
+    n = et.get("n") or word
+    toks = _flat(group)
+    k = next((i for i, t in enumerate(toks) if t is et), None)
+    nxt = toks[k + 1] if k is not None and k + 1 < len(toks) else None
+    pause = bool(mt) or bool(et.get("p")) or nxt is None or bool(nxt and LEAD_P.search(nxt["t"]))
+    return {"n": n, "next": (nxt or {}).get("n") or (bare(nxt["t"]) if nxt else None), "pause": pause,
+            "z": bool(et.get("z")), "zf": bool(et.get("zf")),
+            "nz": bool(et.get("nz")), "ipa": et.get("ipa") or {}, "glue": bool(et.get("glue"))}
+
+
 def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[str, str]]]:
-    """Split punctuation off the printed word, check the lexicon, and hold the token's context
-    (next word, pause, liaison marks) for phonemize, which draft calls next for this token."""
-    global _CTX
+    """Split punctuation off the printed word, check the lexicon and the liaison marks."""
     fields: dict = {}
     fails: list[tuple[str, str]] = []
     word = surface
@@ -224,30 +242,24 @@ def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[
         word = word[:mt.start()]
     if word != surface:
         fields["surface"] = word
+    ctx = context(surface, et, group)
+    n = ctx["n"]
     # the lexicon key: the modern spelling, or the printed word when the print is modern
-    n = et.get("n") or word
     if key(n) not in lexicon() and not et.get("ipa"):
         fails.append(("lexicon-missing", n))
-    toks = _flat(group)
-    k = next((i for i, t in enumerate(toks) if t is et), None)
-    nxt = toks[k + 1] if k is not None and k + 1 < len(toks) else None
-    pause = bool(mt) or bool(et.get("p")) or nxt is None or bool(nxt and LEAD_P.search(nxt["t"]))
-    _CTX = {"n": n, "next": (nxt or {}).get("n") or (bare(nxt["t"]) if nxt else None), "pause": pause,
-            "z": bool(et.get("z")), "zf": bool(et.get("zf")),
-            "nz": bool(et.get("nz")), "ipa": et.get("ipa") or {}, "glue": bool(et.get("glue"))}
     for mark in ("z", "zf"):
         if et.get(mark):
             lz = (lexicon().get(key(n or "")) or {}).get("lz")
             if not lz:
                 fails.append(("liaison-no-consonant", n or surface))
-            elif pause or not begins_with_vowel(base_ipa(_CTX["next"] or "", "modern")):
-                fails.append(("liaison-not-before-vowel", f"{n} {_CTX['next']}"))
+            elif ctx["pause"] or not begins_with_vowel(base_ipa(ctx["next"] or "", "modern")):
+                fails.append(("liaison-not-before-vowel", f"{n} {ctx['next']}"))
     return fields, fails
 
 
-def in_context(word: str, scheme: str) -> str:
-    """The word's IPA in this scheme, with liaison and elision applied from the held context."""
-    ctx = _CTX if _CTX.get("n") == word else {}
+def in_context(word: str, scheme: str, ctx: dict | None = None) -> str:
+    """The word's IPA in this scheme, with liaison and elision applied from the token's context."""
+    ctx = ctx if ctx and ctx.get("n") == word else {}
     ipa = (ctx.get("ipa") or {}).get(scheme) or base_ipa(word, scheme)
     if ipa is None:
         return "?"
@@ -281,9 +293,14 @@ def syllables(ipa: str) -> int:
     return len(parts)
 
 
-def phonemize(word: str, scheme: str = "m1580", quantities=None, **_) -> dict:
+WANTS_TOKEN = True        # draft passes the edition token, its group and its printed surface
+
+
+def phonemize(word: str, scheme: str = "m1580", quantities=None, etok: dict | None = None, group: dict | None = None,
+              surface: str | None = None, **_) -> dict:
     """`word` is the token's modern spelling (n), or the printed word when the edition gives no n."""
-    ipa = in_context(bare(word), scheme)
+    ctx = context(surface if surface is not None else word, etok, group or {}) if etok is not None else None
+    ipa = in_context(bare(word), scheme, ctx)
     return {"ipa": ipa, "respell": respell(ipa) if ipa != "?" else "?", "syllables": syllables(ipa)}
 
 
