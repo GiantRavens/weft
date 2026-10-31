@@ -6,6 +6,7 @@ layers:
   lemma: {src: morphgnt-6.12}
   morph: {src: morphgnt-6.12}
   sound: {src: weft.greek 0.1}
+  phrase: {src: weft.greek connected speech 0.1}
 lines:
 - id: jn.1.1
   cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.1
@@ -150,6 +151,10 @@ lines:
     sound:
       koine: {ipa: ˈlo.ɣos, respell: LO-ghos}
       erasmian: {ipa: ˈlo.ɡos, respell: LO-gos}
+  phrase:
+    koine: {ipa: 'ɛn‿ar.ˈxe ˈen o‿ˈlo.ɣos, ˈkɛ o‿ˈlo.ɣos ˈen ˈpros ˈton θɛ.ˈon, ˈkɛ θɛ.ˈos ˈen o‿ˈlo.ɣos.', respell: 'en‿ar-KHAY AYN o‿LO-ghos, KE o‿LO-ghos AYN PROS TON the-ON, KE the-OS AYN o‿LO-ghos.'}
+    erasmian: {ipa: 'en‿ar.ˈxɛː ˈɛːn ho‿ˈlo.ɡos, ˈkai ho‿ˈlo.ɡos ˈɛːn ˈpros ˈton θe.ˈon, ˈkai θe.ˈos ˈɛːn ho‿ˈlo.ɡos.', respell: 'en‿ar-KHAY AYN ho‿LO-gos, KAI ho‿LO-gos AYN PROS TON the-ON, KAI the-OS
+        AYN ho‿LO-gos.'}
 - id: jn.1.2
   cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.2
   text: οὗτος ἦν ἐν ἀρχῇ πρὸς τὸν θεόν.
@@ -211,6 +216,9 @@ lines:
     sound:
       koine: {ipa: θɛ.ˈon, respell: the-ON}
       erasmian: {ipa: θe.ˈon, respell: the-ON}
+  phrase:
+    koine: {ipa: ˈu.tos ˈen ɛn‿ar.ˈxe ˈpros ˈton θɛ.ˈon., respell: OO-tos AYN en‿ar-KHAY PROS TON the-ON.}
+    erasmian: {ipa: ˈhuː.tos ˈɛːn en‿ar.ˈxɛː ˈpros ˈton θe.ˈon., respell: HOO-tos AYN en‿ar-KHAY PROS TON the-ON.}
 - id: jn.1.3
   cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.3
   text: πάντα δι’ αὐτοῦ ἐγένετο, καὶ χωρὶς αὐτοῦ ἐγένετο οὐδὲ ἕν. ὃ γέγονεν
@@ -313,6 +321,9 @@ lines:
     sound:
       koine: {ipa: ˈjɛ.ɣo.nɛn, respell: YE-gho-nen}
       erasmian: {ipa: ˈɡe.ɡo.nen, respell: GE-go-nen}
+  phrase:
+    koine: {ipa: 'ˈpan.ta ði‿av.ˈtu ɛ.ˈjɛ.nɛ.to, ˈkɛ xo.ˈris av.ˈtu ɛ.ˈjɛ.nɛ.to u.ˈðɛ ˈɛn. ˈo ˈjɛ.ɣo.nɛn', respell: 'PAN-ta dhee‿av-TOO e-YE-ne-to, KE kho-REES av-TOO e-YE-ne-to oo-DHE EN. O YE-gho-nen'}
+    erasmian: {ipa: 'ˈpan.ta di‿au.ˈtuː e.ˈɡe.ne.to, ˈkai xɔː.ˈris au.ˈtuː e.ˈɡe.ne.to uː.ˈde ˈhen. ˈho ˈɡe.ɡo.nen', respell: 'PAN-ta di‿ow-TOO e-GE-ne-to, KAI khoh-RIS ow-TOO e-GE-ne-to oo-DE HEN. HO GE-go-nen'}
 - id: jn.1.4
   cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.4
   text: ἐν αὐτῷ ζωὴ ἦν, καὶ ἡ ζωὴ ἦν τὸ φῶς τῶν ἀνθρώπων·
@@ -415,6 +426,9 @@ lines:
     sound:
       koine: {ipa: an.ˈθro.pon, respell: an-THRO-pon}
       erasmian: {ipa: an.ˈθrɔː.pɔːn, respell: an-THROH-pohn}
+  phrase:
+    koine: {ipa: 'ɛn‿av.ˈto zo.ˈe ˈen, ˈkɛ e‿zo.ˈe ˈen ˈto ˈfos ˈton an.ˈθro.pon·', respell: 'en‿av-TO zo-AY AYN, KE ay‿zo-AY AYN TO FOS TON an-THRO-pon·'}
+    erasmian: {ipa: 'en‿au.ˈtɔː dzɔː.ˈɛː ˈɛːn, ˈkai hɛː‿dzɔː.ˈɛː ˈɛːn ˈto ˈfɔːs ˈtɔːn an.ˈθrɔː.pɔːn·', respell: 'en‿ow-TOH dzoh-AY AYN, KAI hay‿dzoh-AY AYN TO FOHS TOHN an-THROH-pohn·'}
 - id: jn.1.5
   cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.5
   text: καὶ τὸ φῶς ἐν τῇ σκοτίᾳ φαίνει, καὶ ἡ σκοτία αὐτὸ οὐ κατέλαβεν.
@@ -525,6 +539,9 @@ lines:
     sound:
       koine: {ipa: ka.ˈtɛ.la.vɛn, respell: ka-TE-la-ven}
       erasmian: {ipa: ka.ˈte.la.ben, respell: ka-TE-la-ben}
+  phrase:
+    koine: {ipa: 'ˈkɛ ˈto ˈfos ɛn‿ˈte sko.ˈti.a ˈfɛ.ni, ˈkɛ e‿sko.ˈti.a av.ˈto u‿ka.ˈtɛ.la.vɛn.', respell: 'KE TO FOS en‿TAY sko-TEE-a FE-nee, KE ay‿sko-TEE-a av-TO oo‿ka-TE-la-ven.'}
+    erasmian: {ipa: 'ˈkai ˈto ˈfɔːs en‿ˈtɛː sko.ˈti.aː ˈfai.nei, ˈkai hɛː‿sko.ˈti.a au.ˈto uː‿ka.ˈte.la.ben.', respell: 'KAI TO FOHS en‿TAY sko-TI-aa FAI-nay, KAI hay‿sko-TI-a ow-TO oo‿ka-TE-la-ben.'}
 - id: jn.1.6
   cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.6
   text: Ἐγένετο ἄνθρωπος ἀπεσταλμένος παρὰ θεοῦ, ὄνομα αὐτῷ Ἰωάννης·
@@ -595,6 +612,9 @@ lines:
     sound:
       koine: {ipa: i.o.ˈan.nes, respell: ee-o-AN-nays}
       erasmian: {ipa: i.ɔː.ˈan.nɛːs, respell: i-oh-AN-nays}
+  phrase:
+    koine: {ipa: 'ɛ.ˈjɛ.nɛ.to ˈan.θro.pos a.pɛs.tal.ˈmɛ.nos pa.ˈra θɛ.ˈu, ˈo.no.ma av.ˈto i.o.ˈan.nes·', respell: 'e-YE-ne-to AN-thro-pos a-pes-tal-ME-nos pa-RA the-OO, O-no-ma av-TO ee-o-AN-nays·'}
+    erasmian: {ipa: 'e.ˈɡe.ne.to ˈan.θrɔː.pos a.pes.tal.ˈme.nos pa.ˈra θe.ˈuː, ˈo.no.ma au.ˈtɔː i.ɔː.ˈan.nɛːs·', respell: 'e-GE-ne-to AN-throh-pos a-pes-tal-ME-nos pa-RA the-OO, O-no-ma ow-TOH i-oh-AN-nays·'}
 - id: jn.1.7
   cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.7
   text: οὗτος ἦλθεν εἰς μαρτυρίαν, ἵνα μαρτυρήσῃ περὶ τοῦ φωτός, ἵνα πάντες πιστεύσωσιν δι’ αὐτοῦ.
@@ -714,6 +734,11 @@ lines:
     sound:
       koine: {ipa: av.ˈtu, respell: av-TOO}
       erasmian: {ipa: au.ˈtuː, respell: ow-TOO}
+  phrase:
+    koine: {ipa: 'ˈu.tos ˈel.θɛn is‿mar.ty.ˈri.an, ˈi.na mar.ty.ˈre.se pɛ.ˈri ˈtu fo.ˈtos, ˈi.na ˈpan.tɛs pis.ˈtev.so.sin ði‿av.ˈtu.', respell: 'OO-tos AYL-then ees‿mar-tü-REE-an, EE-na mar-tü-RAY-say pe-REE
+        TOO fo-TOS, EE-na PAN-tes pees-TAYV-so-seen dhee‿av-TOO.'}
+    erasmian: {ipa: 'ˈhuː.tos ˈɛːl.θen eis‿mar.ty.ˈri.an, ˈhi.na mar.ty.ˈrɛː.sɛː pe.ˈri ˈtuː fɔː.ˈtos, ˈhi.na ˈpan.tes pis.ˈteu.sɔː.sin di‿au.ˈtuː.', respell: 'HOO-tos AYL-then ays‿mar-tü-RI-an, HI-na mar-tü-RAY-say
+        pe-RI TOO foh-TOS, HI-na PAN-tes pis-TYOO-soh-sin di‿ow-TOO.'}
 - id: jn.1.8
   cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.8
   text: οὐκ ἦν ἐκεῖνος τὸ φῶς, ἀλλ’ ἵνα μαρτυρήσῃ περὶ τοῦ φωτός.
@@ -808,6 +833,9 @@ lines:
     sound:
       koine: {ipa: fo.ˈtos, respell: fo-TOS}
       erasmian: {ipa: fɔː.ˈtos, respell: foh-TOS}
+  phrase:
+    koine: {ipa: 'uk‿ˈen ɛ.ˈki.nos ˈto ˈfos, all‿ˈi.na mar.ty.ˈre.se pɛ.ˈri ˈtu fo.ˈtos.', respell: 'ook‿AYN e-KEE-nos TO FOS, all‿EE-na mar-tü-RAY-say pe-REE TOO fo-TOS.'}
+    erasmian: {ipa: 'uːk‿ˈɛːn e.ˈkei.nos ˈto ˈfɔːs, all‿ˈhi.na mar.ty.ˈrɛː.sɛː pe.ˈri ˈtuː fɔː.ˈtos.', respell: 'ook‿AYN e-KAY-nos TO FOHS, all‿HI-na mar-tü-RAY-say pe-RI TOO foh-TOS.'}
 - id: jn.1.9
   cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.9
   text: ἦν τὸ φῶς τὸ ἀληθινὸν ὃ φωτίζει πάντα ἄνθρωπον ἐρχόμενον εἰς τὸν κόσμον.
@@ -917,6 +945,11 @@ lines:
     sound:
       koine: {ipa: ˈkos.mon, respell: KOS-mon}
       erasmian: {ipa: ˈkos.mon, respell: KOS-mon}
+  phrase:
+    koine: {ipa: ˈen ˈto ˈfos ˈto a.le.θi.ˈnon ˈo fo.ˈti.zi ˈpan.ta ˈan.θro.pon ɛr.ˈxo.mɛ.non is‿ˈton ˈkos.mon., respell: AYN TO FOS TO a-lay-thee-NON O fo-TEE-zee PAN-ta AN-thro-pon er-KHO-me-non ees‿TON
+        KOS-mon.}
+    erasmian: {ipa: ˈɛːn ˈto ˈfɔːs ˈto a.lɛː.θi.ˈnon ˈho fɔː.ˈti.dzei ˈpan.ta ˈan.θrɔː.pon er.ˈxo.me.non eis‿ˈton ˈkos.mon., respell: AYN TO FOHS TO a-lay-thi-NON HO foh-TI-dzay PAN-ta AN-throh-pon er-KHO-me-non
+        ays‿TON KOS-mon.}
 - id: jn.1.10
   cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.10
   text: Ἐν τῷ κόσμῳ ἦν, καὶ ὁ κόσμος δι’ αὐτοῦ ἐγένετο, καὶ ὁ κόσμος αὐτὸν οὐκ ἔγνω.
@@ -1052,6 +1085,10 @@ lines:
     sound:
       koine: {ipa: ˈɛɣ.no, respell: EGH-no}
       erasmian: {ipa: ˈeɡ.nɔː, respell: EG-noh}
+  phrase:
+    koine: {ipa: 'ɛn‿ˈto ˈkos.mo ˈen, ˈkɛ o‿ˈkos.mos ði‿av.ˈtu ɛ.ˈjɛ.nɛ.to, ˈkɛ o‿ˈkos.mos av.ˈton uk‿ˈɛɣ.no.', respell: 'en‿TO KOS-mo AYN, KE o‿KOS-mos dhee‿av-TOO e-YE-ne-to, KE o‿KOS-mos av-TON ook‿EGH-no.'}
+    erasmian: {ipa: 'en‿ˈtɔː ˈkos.mɔː ˈɛːn, ˈkai ho‿ˈkos.mos di‿au.ˈtuː e.ˈɡe.ne.to, ˈkai ho‿ˈkos.mos au.ˈton uːk‿ˈeɡ.nɔː.', respell: 'en‿TOH KOS-moh AYN, KAI ho‿KOS-mos di‿ow-TOO e-GE-ne-to, KAI ho‿KOS-mos
+        ow-TON ook‿EG-noh.'}
 - id: jn.1.11
   cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.11
   text: εἰς τὰ ἴδια ἦλθεν, καὶ οἱ ἴδιοι αὐτὸν οὐ παρέλαβον.
@@ -1138,6 +1175,9 @@ lines:
     sound:
       koine: {ipa: pa.ˈrɛ.la.von, respell: pa-RE-la-von}
       erasmian: {ipa: pa.ˈre.la.bon, respell: pa-RE-la-bon}
+  phrase:
+    koine: {ipa: 'is‿ˈta ˈi.ði.a ˈel.θɛn, ˈkɛ y‿ˈi.ði.y av.ˈton u‿pa.ˈrɛ.la.von.', respell: 'ees‿TA EE-dhee-a AYL-then, KE ü‿EE-dhee-ü av-TON oo‿pa-RE-la-von.'}
+    erasmian: {ipa: 'eis‿ˈta ˈi.di.a ˈɛːl.θen, ˈkai hoi‿ˈi.di.oi au.ˈton uː‿pa.ˈre.la.bon.', respell: 'ays‿TA I-di-a AYL-then, KAI hoy‿I-di-oy ow-TON oo‿pa-RE-la-bon.'}
 - id: jn.1.12
   cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.12
   text: ὅσοι δὲ ἔλαβον αὐτόν, ἔδωκεν αὐτοῖς ἐξουσίαν τέκνα θεοῦ γενέσθαι, τοῖς πιστεύουσιν εἰς τὸ ὄνομα αὐτοῦ,
@@ -1273,6 +1313,11 @@ lines:
     sound:
       koine: {ipa: av.ˈtu, respell: av-TOO}
       erasmian: {ipa: au.ˈtuː, respell: ow-TOO}
+  phrase:
+    koine: {ipa: 'ˈo.sy ˈðɛ ˈɛ.la.von av.ˈton, ˈɛ.ðo.kɛn av.ˈtys ɛ.ksu.ˈsi.an ˈtɛk.na θɛ.ˈu jɛ.ˈnɛs.θɛ, ˈtys pis.ˈtev.u.sin is‿ˈto ˈo.no.ma av.ˈtu,', respell: 'O-sü DHE E-la-von av-TON, E-dho-ken av-TÜS
+        e-ksoo-SEE-an TEK-na the-OO ye-NES-the, TÜS pees-TAYV-oo-seen ees‿TO O-no-ma av-TOO,'}
+    erasmian: {ipa: 'ˈho.soi ˈde ˈe.la.bon au.ˈton, ˈe.dɔː.ken au.ˈtois e.ksuː.ˈsi.an ˈtek.na θe.ˈuː ɡe.ˈnes.θai, ˈtois pis.ˈteu.uː.sin eis‿ˈto ˈo.no.ma au.ˈtuː,', respell: 'HO-soy DE E-la-bon ow-TON, E-doh-ken
+        ow-TOYS e-ksoo-SI-an TEK-na the-OO ge-NES-thai, TOYS pis-TYOO-oo-sin ays‿TO O-no-ma ow-TOO,'}
 - id: jn.1.13
   cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.13
   text: οἳ οὐκ ἐξ αἱμάτων οὐδὲ ἐκ θελήματος σαρκὸς οὐδὲ ἐκ θελήματος ἀνδρὸς ἀλλ’ ἐκ θεοῦ ἐγεννήθησαν.
@@ -1406,6 +1451,11 @@ lines:
     sound:
       koine: {ipa: ɛ.jɛn.ˈne.θe.san, respell: e-yen-NAY-thay-san}
       erasmian: {ipa: e.ɡen.ˈnɛː.θɛː.san, respell: e-gen-NAY-thay-san}
+  phrase:
+    koine: {ipa: ˈy uk‿ɛks‿ɛ.ˈma.ton u.ˈðɛ ɛk‿θɛ.ˈle.ma.tos sar.ˈkos u.ˈðɛ ɛk‿θɛ.ˈle.ma.tos an.ˈðros all‿ɛk‿θɛ.ˈu ɛ.jɛn.ˈne.θe.san., respell: Ü ook‿eks‿e-MA-ton oo-DHE ek‿the-LAY-ma-tos sar-KOS oo-DHE ek‿the-LAY-ma-tos
+        an-DHROS all‿ek‿the-OO e-yen-NAY-thay-san.}
+    erasmian: {ipa: ˈhoi uːk‿eks‿hai.ˈma.tɔːn uː.ˈde ek‿θe.ˈlɛː.ma.tos sar.ˈkos uː.ˈde ek‿θe.ˈlɛː.ma.tos an.ˈdros all‿ek‿θe.ˈuː e.ɡen.ˈnɛː.θɛː.san., respell: HOY ook‿eks‿hai-MA-tohn oo-DE ek‿the-LAY-ma-tos
+        sar-KOS oo-DE ek‿the-LAY-ma-tos an-DROS all‿ek‿the-OO e-gen-NAY-thay-san.}
 - id: jn.1.14
   cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.14
   text: Καὶ ὁ λόγος σὰρξ ἐγένετο καὶ ἐσκήνωσεν ἐν ἡμῖν, καὶ ἐθεασάμεθα τὴν δόξαν αὐτοῦ, δόξαν ὡς μονογενοῦς παρὰ πατρός, πλήρης χάριτος καὶ ἀληθείας·
@@ -1597,7 +1647,15 @@ lines:
     tb: 040114/23
     sound:
       koine: {ipa: a.le.ˈθi.as, respell: a-lay-THEE-as}
-      erasmian: {ipa: a.lɛː.ˈθei.as, respell: a-lay-THAY-as}
+      erasmian: {ipa: a.lɛː.ˈθei.aːs, respell: a-lay-THAY-aas}
+    prov: {sound: weft.greek 0.1 + vowel length from LSJ (ἀλήθεια) and the first declension}
+    conf: {sound: 0.8}
+  phrase:
+    koine: {ipa: 'ˈkɛ o‿ˈlo.ɣos ˈsarks ɛ.ˈjɛ.nɛ.to ˈkɛ ɛs.ˈke.no.sɛn ɛn‿e.ˈmin, ˈkɛ ɛ.θɛ.a.ˈsa.mɛ.θa ˈten ˈðo.ksan av.ˈtu, ˈðo.ksan os‿mo.no.jɛ.ˈnus pa.ˈra pa.ˈtros, ˈple.res ˈxa.ri.tos ˈkɛ a.le.ˈθi.as·',
+      respell: 'KE o‿LO-ghos SARKS e-YE-ne-to KE es-KAY-no-sen en‿ay-MEEN, KE e-the-a-SA-me-tha TAYN DHO-ksan av-TOO, DHO-ksan os‿mo-no-ye-NOOS pa-RA pa-TROS, PLAY-rays KHA-ree-tos KE a-lay-THEE-as·'}
+    erasmian: {ipa: 'ˈkai ho‿ˈlo.ɡos ˈsarks e.ˈɡe.ne.to ˈkai es.ˈkɛː.nɔː.sen en‿hɛː.ˈmiːn, ˈkai e.θe.a.ˈsa.me.θa ˈtɛːn ˈdo.ksan au.ˈtuː, ˈdo.ksan hɔːs‿mo.no.ɡe.ˈnuːs pa.ˈra pa.ˈtros, ˈplɛː.rɛːs ˈxa.ri.tos
+        ˈkai a.lɛː.ˈθei.aːs·', respell: 'KAI ho‿LO-gos SARKS e-GE-ne-to KAI es-KAY-noh-sen en‿hay-MEEN, KAI e-the-a-SA-me-tha TAYN DO-ksan ow-TOO, DO-ksan hohs‿mo-no-ge-NOOS pa-RA pa-TROS, PLAY-rays KHA-ri-tos
+        KAI a-lay-THAY-aas·'}
 - id: jn.1.15
   cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.15
   text: (Ἰωάννης μαρτυρεῖ περὶ αὐτοῦ καὶ κέκραγεν λέγων· Οὗτος ἦν ὃν εἶπον· Ὁ ὀπίσω μου ἐρχόμενος ἔμπροσθέν μου γέγονεν, ὅτι πρῶτός μου ἦν·)
@@ -1783,6 +1841,11 @@ lines:
     sound:
       koine: {ipa: ˈen, respell: AYN}
       erasmian: {ipa: ˈɛːn, respell: AYN}
+  phrase:
+    koine: {ipa: 'i.o.ˈan.nesς mar.ty.ˈri pɛ.ˈri av.ˈtu ˈkɛ ˈkɛ.kra.jɛn ˈlɛ.ɣon· ˈu.tos ˈen ˈon ˈi.pon· o‿o.ˈpi.so‿mu ɛr.ˈxo.mɛ.nos ˈɛm.pros.ˈθɛn‿mu ˈjɛ.ɣo.nɛn, ˈo.ti ˈpro.ˈtos‿mu ˈen·)', respell: 'ee-o-AN-naysς
+        mar-tü-REE pe-REE av-TOO KE KE-kra-yen LE-ghon· OO-tos AYN ON EE-pon· o‿o-PEE-so‿moo er-KHO-me-nos EM-pros-THEN‿moo YE-gho-nen, O-tee PRO-TOS‿moo AYN·)'}
+    erasmian: {ipa: 'i.ɔː.ˈan.nɛːsς mar.ty.ˈrei pe.ˈri au.ˈtuː ˈkai ˈke.kra.ɡen ˈle.ɡɔːn· ˈhuː.tos ˈɛːn ˈhon ˈei.pon· ho‿o.ˈpi.sɔː‿muː er.ˈxo.me.nos ˈem.pros.ˈθen‿muː ˈɡe.ɡo.nen, ˈho.ti ˈprɔː.ˈtos‿muː ˈɛːn·)',
+      respell: 'i-oh-AN-naysς mar-tü-RAY pe-RI ow-TOO KAI KE-kra-gen LE-gohn· HOO-tos AYN HON AY-pon· ho‿o-PI-soh‿moo er-KHO-me-nos EM-pros-THEN‿moo GE-go-nen, HO-ti PROH-TOS‿moo AYN·)'}
 - id: jn.1.16
   cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.16
   text: ὅτι ἐκ τοῦ πληρώματος αὐτοῦ ἡμεῖς πάντες ἐλάβομεν, καὶ χάριν ἀντὶ χάριτος·
@@ -1885,6 +1948,11 @@ lines:
     sound:
       koine: {ipa: ˈxa.ri.tos, respell: KHA-ree-tos}
       erasmian: {ipa: ˈxa.ri.tos, respell: KHA-ri-tos}
+  phrase:
+    koine: {ipa: 'ˈo.ti ɛk‿ˈtu ple.ˈro.ma.tos av.ˈtu e.ˈmis ˈpan.tɛs ɛ.ˈla.vo.mɛn, ˈkɛ ˈxa.rin an.ˈti ˈxa.ri.tos·', respell: 'O-tee ek‿TOO play-RO-ma-tos av-TOO ay-MEES PAN-tes e-LA-vo-men, KE KHA-reen
+        an-TEE KHA-ree-tos·'}
+    erasmian: {ipa: 'ˈho.ti ek‿ˈtuː plɛː.ˈrɔː.ma.tos au.ˈtuː hɛː.ˈmeis ˈpan.tes e.ˈla.bo.men, ˈkai ˈxa.rin an.ˈti ˈxa.ri.tos·', respell: 'HO-ti ek‿TOO play-ROH-ma-tos ow-TOO hay-MAYS PAN-tes e-LA-bo-men,
+        KAI KHA-rin an-TI KHA-ri-tos·'}
 - id: jn.1.17
   cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.17
   text: ὅτι ὁ νόμος διὰ Μωϋσέως ἐδόθη, ἡ χάρις καὶ ἡ ἀλήθεια διὰ Ἰησοῦ Χριστοῦ ἐγένετο.
@@ -2011,6 +2079,11 @@ lines:
     sound:
       koine: {ipa: ɛ.ˈjɛ.nɛ.to, respell: e-YE-ne-to}
       erasmian: {ipa: e.ˈɡe.ne.to, respell: e-GE-ne-to}
+  phrase:
+    koine: {ipa: 'ˈo.ti o‿ˈno.mos ði.ˈa mo.y.ˈsɛ.os ɛ.ˈðo.θe, e‿ˈxa.ris ˈkɛ e‿a.ˈle.θi.a ði.ˈa i.e.ˈsu xris.ˈtu ɛ.ˈjɛ.nɛ.to.', respell: 'O-tee o‿NO-mos dhee-A mo-ü-SE-os e-DHO-thay, ay‿KHA-rees KE ay‿a-LAY-thee-a
+        dhee-A ee-ay-SOO khrees-TOO e-YE-ne-to.'}
+    erasmian: {ipa: 'ˈho.ti ho‿ˈno.mos di.ˈa mɔː.y.ˈse.ɔːs e.ˈdo.θɛː, hɛː‿ˈxa.ris ˈkai hɛː‿a.ˈlɛː.θei.a di.ˈa i.ɛː.ˈsuː xris.ˈtuː e.ˈɡe.ne.to.', respell: 'HO-ti ho‿NO-mos di-A moh-ü-SE-ohs e-DO-thay, hay‿KHA-ris
+        KAI hay‿a-LAY-thay-a di-A i-ay-SOO khris-TOO e-GE-ne-to.'}
 - id: jn.1.18
   cite: urn:cts:greekLit:tlg0031.tlg004.sblgnt:1.18
   text: θεὸν οὐδεὶς ἑώρακεν πώποτε· μονογενὴς θεὸς ὁ ὢν εἰς τὸν κόλπον τοῦ πατρὸς ἐκεῖνος ἐξηγήσατο.
@@ -2137,3 +2210,8 @@ lines:
     sound:
       koine: {ipa: ɛ.kse.ˈje.sa.to, respell: e-ksay-YAY-sa-to}
       erasmian: {ipa: e.ksɛː.ˈɡɛː.sa.to, respell: e-ksay-GAY-sa-to}
+  phrase:
+    koine: {ipa: θɛ.ˈon u.ˈðis ɛ.ˈo.ra.kɛn ˈpo.po.tɛ· mo.no.jɛ.ˈnes θɛ.ˈos o‿ˈon is‿ˈton ˈkol.pon ˈtu pa.ˈtros ɛ.ˈki.nos ɛ.kse.ˈje.sa.to., respell: the-ON oo-DHEES e-O-ra-ken PO-po-te· mo-no-ye-NAYS the-OS
+        o‿ON ees‿TON KOL-pon TOO pa-TROS e-KEE-nos e-ksay-YAY-sa-to.}
+    erasmian: {ipa: θe.ˈon uː.ˈdeis he.ˈɔː.ra.ken ˈpɔː.po.te· mo.no.ɡe.ˈnɛːs θe.ˈos ho‿ˈɔːn eis‿ˈton ˈkol.pon ˈtuː pa.ˈtros e.ˈkei.nos e.ksɛː.ˈɡɛː.sa.to., respell: the-ON oo-DAYS he-OH-ra-ken POH-po-te·
+        mo-no-ge-NAYS the-OS ho‿OHN ays‿TON KOL-pon TOO pa-TROS e-KAY-nos e-ksay-GAY-sa-to.}

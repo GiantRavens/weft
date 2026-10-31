@@ -60,6 +60,7 @@ translations:
     file: sources/shipley1924.txt
     url: https://archive.org/download/compendiumofroma00velluoft/compendiumofroma00velluoft_djvu.txt
     sha256: 19a6a671e27f7bd29daf55c62efaaf41a479666a3d612390c0ad305b4691a5a9
+sound_confidence: medium
 predicted_gaps:
   - "the Wikisource page sets stray tildes between words in chapters 8 to 27, splits three words with a space ([qu] am, p[r] aesenti, princi[pi] bus) and runs seven pairs together (sena]tu[de]poposci, D.Laelio and others); the edition removes the tildes and corrects the spacing, and declares each change in edition.yaml"
   - "misprints in chapters 5 to 33 (campam, soliv, ivierem, constituerunt for constiterunt, poera, Rovos and others) are kept on the page and annotated and sounded as the intended word, as in chapter 35; four places are annotated for a word the print does not give: esse (10.2) as esset, which the syntax needs; de (21.3) as the end of aede, the rest of which the page omits; praerant (17.1) as praeerant; and n[eo (17.2) as meo. These four are sounded as printed"

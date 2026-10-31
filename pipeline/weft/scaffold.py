@@ -172,6 +172,17 @@ def resolve_wikisource(url: str) -> tuple[str, str, int | None, str | None]:
     return f"https://{lang}.wikisource.org/w/index.php?oldid={rev}&action=raw", f"{title}, {lang}.wikisource, revision {rev}", rev, title
 
 
+def _stem(title: str, limit: int = 40) -> str:
+    """A file stem from a page title. A long title keeps its last path part (the /14 of a Wikisource
+    Page: title), which is what tells the pages of one book apart."""
+    slug = lambda s: re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
+    full = slug(title)
+    head, _, tail = title.rpartition("/")
+    if len(full) > limit and head and slug(tail):
+        full = slug(head)[:limit - len(slug(tail)) - 1].rstrip("-") + "-" + slug(tail)
+    return full[:limit] or "source"
+
+
 def pin(repo: Path, work: str, url: str, sid: str | None = None, name: str | None = None, license_: str | None = None,
         license_url: str | None = None, edition: bool = False, as_: str | None = None) -> dict:
     from .paths import work_dir
@@ -193,7 +204,7 @@ def pin(repo: Path, work: str, url: str, sid: str | None = None, name: str | Non
     data = fetch(raw_url)
     if convert:
         data = CONVERTERS[convert](data)
-    stem = sid or (re.sub(r"[^a-z0-9]+", "-", (title or Path(urllib.parse.urlparse(url).path).stem).lower()).strip("-")[:40] or "source")
+    stem = sid or _stem(title or Path(urllib.parse.urlparse(url).path).stem)
     if rev and not sid:
         stem = f"{stem}-{rev}"
     ext = ".txt" if rev or convert or not Path(urllib.parse.urlparse(raw_url).path).suffix else Path(urllib.parse.urlparse(raw_url).path).suffix

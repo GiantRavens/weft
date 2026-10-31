@@ -74,6 +74,7 @@ translations:
     sha256: 2af0ac3b8cfab9740ab364ba0923425a92a959c89b74fbbdcea404b33fe27bf8   # of the extracted member
     url: https://ebible.org/Scriptures/eng-kjv_usfm.zip
     extract: "JHN"
+sound_confidence: medium
 predicted_gaps:
   - "the text is verified against the Zeno.org transcription as published by TextGrid, not against the page images of the 1545 print; the transcription prints long s as s and the superscript e of the Fraktur umlauts (uͤ) as ü, and its TEI header names the Weimar edition as its source while Zeno names Volz's edition of 1972"
   - "the transcription marks John 1:1-2 and the first words of Psalm 23 as set in a different type (rend italic); the edition does not mark it"

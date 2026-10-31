@@ -21,7 +21,6 @@ verify_strip: '(?m)^(?!\s*"frag": ").*$|^\s*"frag": "|",$'
 sections:
   - id: "5"
     title: "Hymn 5: the E-šumeša, house of Ninurta at Nippur"
-    oracc_json: sources/P346196.json
     lines:
       - tokens:   # o 1
         - {t: "⸢e₂", ref: "P346196.3.1"}

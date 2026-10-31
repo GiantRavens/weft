@@ -6,6 +6,7 @@ layers:
   lemma: {src: glaux}
   morph: {src: glaux}
   sound: {src: 'weft.greek 0.1, from the normalized form'}
+  phrase: {src: weft.greek connected speech 0.1}
 lines:
 - id: pol.1252a.1
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252a.1
@@ -176,6 +177,11 @@ lines:
     sound:
       restored: {ipa: tʰe.ɔː.rɛ́ː.seː.en, respell: tʰe-aw-RÊ-say-en}
       erasmian: {ipa: θe.ɔː.ˈrɛː.sei.en, respell: the-oh-RAY-say-en}
+  phrase:
+    restored: {ipa: 'eː‿dɛ́ː tis‿eks‿ar.kʰɛ̂ːs tà práɡ.ma.ta pʰy.ó.me.na blé.pseː.en, hɔ́ːs.per en‿tôis ál.lois, kaì en‿túː.tois kál.list‿àn húː.tɔː tʰe.ɔː.rɛ́ː.seː.en.', respell: 'ay‿DÊ tis‿eks‿ar-KʰÊS
+        ta PRAG-ma-ta pʰü-O-me-na BLE-psay-en, HAWS-per en‿TOYS AL-loys, kai en‿TOO-toys KAL-list‿an HOO-taw tʰe-aw-RÊ-say-en.'}
+    erasmian: {ipa: 'ei‿ˈdɛː tis‿eks‿ar.ˈxɛːs ˈta ˈpraɡ.ma.ta fy.ˈo.me.na ˈble.psei.en, ˈhɔːs.per en‿ˈtois ˈal.lois, ˈkai en‿ˈtuː.tois ˈkal.list‿ˈan ˈhuː.tɔː θe.ɔː.ˈrɛː.sei.en.', respell: 'ay‿DAY tis‿eks‿ar-KHAYS
+        TA PRAG-ma-ta fü-O-me-na BLE-psay-en, HOHS-per en‿TOYS AL-loys, KAI en‿TOO-toys KAL-list‿AN HOO-toh the-oh-RAY-say-en.'}
 - id: pol.1252a.2
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252a.2
   stanza: 1252a
@@ -575,6 +581,16 @@ lines:
     sound:
       restored: {ipa: sɔː.tɛː.rí.an, respell: saw-tê-RI-an}
       erasmian: {ipa: sɔː.tɛː.ˈri.an, respell: soh-tay-RI-an}
+  phrase:
+    restored: {ipa: 'a.náŋ.kɛː dɛ̀ː prɔ̂ː.ton syn.dy.á.zdes.tʰai tùːs á.neu al.lɛ́ː.lɔːn mɛ̀ː dy.na.mé.nuːs êː.nai, hôi.on tʰɛ̂ː.ly mèn kaì ár.ren tɛ̂ːs ɡe.né.se.ɔːs hé.ne.ken (kaì tûː.to
+        uːk‿ek‿pro.ai.ré.se.ɔːs, all‿hɔ́ːs.per kaì en‿tôis ál.lois zdɔːí.ois kaì pʰy.tôis pʰy.si.kòn tò e.pʰí.es.tʰai, hôi.on au.tó, toi.ûː.ton ka.ta.li.pêːn hé.te.ron), ár.kʰon dè kaì
+        ar.kʰó.me.non pʰý.seː, di.à tɛ̀ːn sɔː.tɛː.rí.an.', respell: 'a-NANG-kê dê PRAW-ton sün-dü-A-zdes-tʰai toos A-neu al-LÊ-lawn mê dü-na-ME-noos AY-nai, HOY-on TʰÊ-lü men kai AR-ren TÊS ge-NE-se-aws
+        HE-ne-ken (kai TOO-to ook‿ek‿pro-ai-RE-se-aws, all‿HAWS-per kai en‿TOYS AL-loys ZDAWI-oys kai pʰü-TOYS pʰü-si-kon to e-PʰI-es-tʰai, HOY-on ow-TO, toy-OO-ton ka-ta-li-PAYN HE-te-ron), AR-kʰon de
+        kai ar-KʰO-me-non PʰÜ-say, di-a tên saw-tê-RI-an.'}
+    erasmian: {ipa: 'a.ˈnaŋ.kɛː ˈdɛː ˈprɔː.ton syn.dy.ˈa.dzes.θai ˈtuːs ˈa.neu al.ˈlɛː.lɔːn ˈmɛː dy.na.ˈme.nuːs ˈei.nai, ˈhoi.on ˈθɛː.ly ˈmen ˈkai ˈar.ren ˈtɛːs ɡe.ˈne.se.ɔːs ˈhe.ne.ken (ˈkai ˈtuː.to uːk‿ek‿pro.ai.ˈre.se.ɔːs,
+        all‿ˈhɔːs.per ˈkai en‿ˈtois ˈal.lois ˈdzɔː.ois ˈkai fy.ˈtois fy.si.ˈkon ˈto e.ˈfi.es.θai, ˈhoi.on au.ˈto, toi.ˈuː.ton ka.ta.li.ˈpein ˈhe.te.ron), ˈar.xon ˈde ˈkai ar.ˈxo.me.non ˈfy.sei, di.ˈa ˈtɛːn
+        sɔː.tɛː.ˈri.an.', respell: 'a-NANG-kay DAY PROH-ton sün-dü-A-dzes-thai TOOS A-nyoo al-LAY-lohn MAY dü-na-ME-noos AY-nai, HOY-on THAY-lü MEN KAI AR-ren TAYS ge-NE-se-ohs HE-ne-ken (KAI TOO-to ook‿ek‿pro-ai-RE-se-ohs,
+        all‿HOHS-per KAI en‿TOYS AL-loys DZOH-oys KAI fü-TOYS fü-si-KON TO e-FI-es-thai, HOY-on ow-TO, toy-OO-ton ka-ta-li-PAYN HE-te-ron), AR-khon DE KAI ar-KHO-me-non FÜ-say, di-A TAYN soh-tay-RI-an.'}
 - id: pol.1252a.3
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252a.3
   stanza: 1252a
@@ -767,6 +783,12 @@ lines:
     sound:
       restored: {ipa: dûː.lon, respell: DOO-lon}
       erasmian: {ipa: ˈduː.lon, respell: DOO-lon}
+  phrase:
+    restored: {ipa: 'tò mèn ɡàr dy.ná.me.non tɛ̂ːi di.a.noí.aːi pro.o.râːn ár.kʰon pʰý.seː kaì des.pó.zdon pʰý.seː, tò dè dy.ná.me.non tɔ̂ːi sɔ́ː.ma.ti tâu.ta po.nêːn ar.kʰó.me.non kaì
+        pʰý.seː dûː.lon·', respell: 'to men gar dü-NA-me-non TÊI di-a-NOY-aai pro-o-RAAN AR-kʰon PʰÜ-say kai des-PO-zdon PʰÜ-say, to de dü-NA-me-non TAWI SAW-ma-ti TOW-ta po-NAYN ar-KʰO-me-non kai PʰÜ-say
+        DOO-lon·'}
+    erasmian: {ipa: 'ˈto ˈmen ˈɡar dy.ˈna.me.non ˈtɛː di.a.ˈnoi.aː pro.o.ˈraːn ˈar.xon ˈfy.sei ˈkai des.ˈpo.dzon ˈfy.sei, ˈto ˈde dy.ˈna.me.non ˈtɔː ˈsɔː.ma.ti ˈtau.ta po.ˈnein ar.ˈxo.me.non ˈkai ˈfy.sei
+        ˈduː.lon·', respell: 'TO MEN GAR dü-NA-me-non TAY di-a-NOY-aa pro-o-RAAN AR-khon FÜ-say KAI des-PO-dzon FÜ-say, TO DE dü-NA-me-non TOH SOH-ma-ti TOW-ta po-NAYN ar-KHO-me-non KAI FÜ-say DOO-lon·'}
 - id: pol.1252a.4
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252a.4
   stanza: 1252a
@@ -823,6 +845,9 @@ lines:
     sound:
       restored: {ipa: sym.pʰé.reː, respell: süm-PʰE-ray}
       erasmian: {ipa: sym.ˈfe.rei, respell: süm-FE-ray}
+  phrase:
+    restored: {ipa: di.ò des.pó.tɛːi kaì dúː.lɔːi tau.tò sym.pʰé.reː., respell: di-o des-PO-têi kai DOO-lawi tow-to süm-PʰE-ray.}
+    erasmian: {ipa: di.ˈo des.ˈpo.tɛː ˈkai ˈduː.lɔː tau.ˈto sym.ˈfe.rei., respell: di-O des-PO-tay KAI DOO-loh tow-TO süm-FE-ray.}
 - id: pol.1252b.1
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.1
   stanza: 1252b
@@ -1041,6 +1066,13 @@ lines:
     sound:
       restored: {ipa: hén, respell: HEN}
       erasmian: {ipa: ˈhen, respell: HEN}
+  phrase:
+    restored: {ipa: 'pʰý.seː mèn ûːn di.ɔ́ː.ris.tai tò tʰɛ̂ː.ly kaì tò dûː.lon (uː.tʰèn ɡàr hɛː‿pʰý.sis poi.êː toi.ûː.ton hôi.on hoi‿kʰal.ko.tý.poi tɛ̀ːn del.pʰi.kɛ̀ːn má.kʰai.ran, pe.ni.kʰrɔ̂ːs,
+        all‿hèn pròs hén·', respell: 'PʰÜ-say men OON di-AW-ris-tai to TʰÊ-lü kai to DOO-lon (oo-tʰen gar hê‿PʰÜ-sis poy-AY toy-OO-ton HOY-on hoy‿kʰal-ko-TÜ-poy tên del-pʰi-kên MA-kʰai-ran, pe-ni-KʰRAWS,
+        all‿hen pros HEN·'}
+    erasmian: {ipa: 'ˈfy.sei ˈmen ˈuːn di.ˈɔː.ris.tai ˈto ˈθɛː.ly ˈkai ˈto ˈduː.lon (uː.ˈθen ˈɡar hɛː‿ˈfy.sis poi.ˈei toi.ˈuː.ton ˈhoi.on hoi‿xal.ko.ˈty.poi ˈtɛːn del.fi.ˈkɛːn ˈma.xai.ran, pe.ni.ˈxrɔːs,
+        all‿ˈhen ˈpros ˈhen·', respell: 'FÜ-say MEN OON di-OH-ris-tai TO THAY-lü KAI TO DOO-lon (oo-THEN GAR hay‿FÜ-sis poy-AY toy-OO-ton HOY-on hoy‿khal-ko-TÜ-poy TAYN del-fi-KAYN MA-khai-ran, pe-ni-KHROHS,
+        all‿HEN PROS HEN·'}
 - id: pol.1252b.2
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.2
   stanza: 1252b
@@ -1161,6 +1193,11 @@ lines:
     sound:
       restored: {ipa: duː.lêu.on, respell: doo-LEU-on}
       erasmian: {ipa: duː.ˈleu.on, respell: doo-LYOO-on}
+  phrase:
+    restored: {ipa: 'húː.tɔː ɡàr àn a.po.te.lôi.to kál.lis.ta tɔ̂ːn or.ɡá.nɔːn hé.kas.ton, mɛ̀ː pol.lôis ér.ɡois all‿he.nì duː.lêu.on)·', respell: 'HOO-taw gar an a-po-te-LOY-to KAL-lis-ta TAWN
+        or-GA-nawn HE-kas-ton, mê pol-LOYS ER-goys all‿he-ni doo-LEU-on)·'}
+    erasmian: {ipa: 'ˈhuː.tɔː ˈɡar ˈan a.po.te.ˈloi.to ˈkal.lis.ta ˈtɔːn or.ˈɡa.nɔːn ˈhe.kas.ton, ˈmɛː pol.ˈlois ˈer.ɡois all‿he.ˈni duː.ˈleu.on)·', respell: 'HOO-toh GAR AN a-po-te-LOY-to KAL-lis-ta TOHN
+        or-GA-nohn HE-kas-ton, MAY pol-LOYS ER-goys all‿he-NI doo-LYOO-on)·'}
 - id: pol.1252b.3
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.3
   stanza: 1252b
@@ -1272,6 +1309,9 @@ lines:
     sound:
       restored: {ipa: tá.ksin, respell: TA-ksin}
       erasmian: {ipa: ˈta.ksin, respell: TA-ksin}
+  phrase:
+    restored: {ipa: en‿dè tôis bar.bá.rois tò tʰɛ̂ː.ly kaì tò dûː.lon tɛ̀ːn au.tɛ̀ːn é.kʰeː tá.ksin., respell: en‿de TOYS bar-BA-roys to TʰÊ-lü kai to DOO-lon tên ow-tên E-kʰay TA-ksin.}
+    erasmian: {ipa: en‿ˈde ˈtois bar.ˈba.rois ˈto ˈθɛː.ly ˈkai ˈto ˈduː.lon ˈtɛːn au.ˈtɛːn ˈe.xei ˈta.ksin., respell: en‿DE TOYS bar-BA-roys TO THAY-lü KAI TO DOO-lon TAYN ow-TAYN E-khay TA-ksin.}
 - id: pol.1252b.4
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.4
   stanza: 1252b
@@ -1408,6 +1448,11 @@ lines:
     sound:
       restored: {ipa: dúː.luː, respell: DOO-loo}
       erasmian: {ipa: ˈduː.luː, respell: DOO-loo}
+  phrase:
+    restored: {ipa: 'aí.ti.on d‿hó.ti tò pʰý.seː ár.kʰon uːk‿é.kʰuː.sin, al.là ɡí.ne.tai hɛː‿koi.nɔː.ní.a au.tɔ̂ːn dúː.lɛːs kaì dúː.luː.', respell: 'AI-ti-on d‿HO-ti to PʰÜ-say AR-kʰon ook‿E-kʰoo-sin,
+        al-la GI-ne-tai hê‿koy-naw-NI-a ow-TAWN DOO-lês kai DOO-loo.'}
+    erasmian: {ipa: 'ˈai.ti.on d‿ˈho.ti ˈto ˈfy.sei ˈar.xon uːk‿ˈe.xuː.sin, al.ˈla ˈɡi.ne.tai hɛː‿koi.nɔː.ˈni.a au.ˈtɔːn ˈduː.lɛːs ˈkai ˈduː.luː.', respell: 'AI-ti-on d‿HO-ti TO FÜ-say AR-khon ook‿E-khoo-sin,
+        al-LA GI-ne-tai hay‿koy-noh-NI-a ow-TOHN DOO-lays KAI DOO-loo.'}
 - id: pol.1252b.5
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.5
   stanza: 1252b
@@ -1545,6 +1590,11 @@ lines:
     sound:
       restored: {ipa: ón, respell: 'ON'}
       erasmian: {ipa: ˈon, respell: 'ON'}
+  phrase:
+    restored: {ipa: 'di.ó‿pʰa.sin hoi‿poi.ɛː.taì bar.bá.rɔːn d‿hél.lɛː.nas ár.kʰeːn eː.kós, hɔːs‿tau.tò pʰý.seː bár.ba.ron kaì dûː.lon ón.', respell: 'di-O‿pʰa-sin hoy‿poy-ê-tai bar-BA-rawn
+        d‿HEL-lê-nas AR-kʰayn ay-KOS, haws‿tow-to PʰÜ-say BAR-ba-ron kai DOO-lon ON.'}
+    erasmian: {ipa: 'di.ˈo‿fa.sin hoi‿poi.ɛː.ˈtai bar.ˈba.rɔːn d‿ˈhel.lɛː.nas ˈar.xein ei.ˈkos, hɔːs‿tau.ˈto ˈfy.sei ˈbar.ba.ron ˈkai ˈduː.lon ˈon.', respell: 'di-O‿fa-sin hoy‿poy-ay-TAI bar-BA-rohn d‿HEL-lay-nas
+        AR-khayn ay-KOS, hohs‿tow-TO FÜ-say BAR-ba-ron KAI DOO-lon ON.'}
 - id: pol.1252b.6
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.6
   stanza: 1252b
@@ -1729,6 +1779,11 @@ lines:
     sound:
       restored: {ipa: a.ro.tɛ̂ː.ra, respell: a-ro-TÊ-ra}
       erasmian: {ipa: a.ro.ˈtɛː.ra, respell: a-ro-TAY-ra}
+  phrase:
+    restored: {ipa: 'ek‿mèn ûːn túː.tɔːn tɔ̂ːn dý.o koi.nɔː.ni.ɔ̂ːn oi.kí.a prɔ́ː.tɛː, kaì or.tʰɔ̂ːs hɛː.sí.o.dos êː.pe poi.ɛ́ː.sas ôi.kon mèn prɔ́ː.tis.ta ɡy.nâi.ká‿te bûːn t‿a.ro.tɛ̂ː.ra·',
+      respell: 'ek‿men OON TOO-tawn TAWN DÜ-o koy-naw-ni-AWN oy-KI-a PRAW-tê, kai or-TʰAWS hê-SI-o-dos AY-pe poy-Ê-sas OY-kon men PRAW-tis-ta gü-NAI-KA‿te BOON t‿a-ro-TÊ-ra·'}
+    erasmian: {ipa: 'ek‿ˈmen ˈuːn ˈtuː.tɔːn ˈtɔːn ˈdy.o koi.nɔː.ni.ˈɔːn oi.ˈki.a ˈprɔː.tɛː, ˈkai or.ˈθɔːs hɛː.ˈsi.o.dos ˈei.pe poi.ˈɛː.sas ˈoi.kon ˈmen ˈprɔː.tis.ta ɡy.ˈnai.ˈka‿te ˈbuːn t‿a.ro.ˈtɛː.ra·',
+      respell: 'ek‿MEN OON TOO-tohn TOHN DÜ-o koy-noh-ni-OHN oy-KI-a PROH-tay, KAI or-THOHS hay-SI-o-dos AY-pe poy-AY-sas OY-kon MEN PROH-tis-ta gü-NAI-KA‿te BOON t‿a-ro-TAY-ra·'}
 - id: pol.1252b.7
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.7
   stanza: 1252b
@@ -1800,6 +1855,9 @@ lines:
     sound:
       restored: {ipa: es.tin, respell: es-tin}
       erasmian: {ipa: es.tin, respell: es-tin}
+  phrase:
+    restored: {ipa: ho‿ɡàr bûːs ant‿oi.ké.tuː tôis pé.nɛː.sín‿es.tin., respell: ho‿gar BOOS ant‿oy-KE-too TOYS PE-nê-SIN‿es-tin.}
+    erasmian: {ipa: ho‿ˈɡar ˈbuːs ant‿oi.ˈke.tuː ˈtois ˈpe.nɛː.ˈsin‿es.tin., respell: ho‿GAR BOOS ant‿oy-KE-too TOYS PE-nay-SIN‿es-tin.}
 - id: pol.1252b.8
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.8
   stanza: 1252b
@@ -1985,6 +2043,12 @@ lines:
     sound:
       restored: {ipa: ho.mo.ká.puːs, respell: ho-mo-KA-poos}
       erasmian: {ipa: ho.mo.ˈka.puːs, respell: ho-mo-KA-poos}
+  phrase:
+    restored: {ipa: 'hɛː‿mèn ûːn eːs‿pâː.san hɛː.mé.ran sy.nes.tɛː.kŷi.a koi.nɔː.ní.a ka.tà pʰý.sin ôi.kós‿es.tin, hùːs kʰa.rɔ́ːn.das mèn ka.lêː ho.mo.si.pý.uːs, e.pi.me.ní.dɛːs dè ho‿krɛ̀ːs
+        ho.mo.ká.puːs·', respell: 'hê‿men OON ays‿PAA-san hê-ME-ran sü-nes-tê-KÜI-a koy-naw-NI-a ka-ta PʰÜ-sin OY-KOS‿es-tin, hoos kʰa-RAWN-das men ka-LAY ho-mo-si-PÜ-oos, e-pi-me-NI-dês de ho‿krês ho-mo-KA-poos·'}
+    erasmian: {ipa: 'hɛː‿ˈmen ˈuːn eis‿ˈpaː.san hɛː.ˈme.ran sy.nes.tɛː.ˈkyi.a koi.nɔː.ˈni.a ka.ˈta ˈfy.sin ˈoi.ˈkos‿es.tin, ˈhuːs xa.ˈrɔːn.das ˈmen ka.ˈlei ho.mo.si.ˈpy.uːs, e.pi.me.ˈni.dɛːs ˈde ho‿ˈkrɛːs
+        ho.mo.ˈka.puːs·', respell: 'hay‿MEN OON ays‿PAA-san hay-ME-ran sü-nes-tay-KWEE-a koy-noh-NI-a ka-TA FÜ-sin OY-KOS‿es-tin, HOOS kha-ROHN-das MEN ka-LAY ho-mo-si-PÜ-oos, e-pi-me-NI-days DE ho‿KRAYS
+        ho-mo-KA-poos·'}
 - id: pol.1252b.9
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.9
   stanza: 1252b
@@ -2088,6 +2152,11 @@ lines:
     sound:
       restored: {ipa: kɔ́ː.mɛː, respell: KAW-mê}
       erasmian: {ipa: ˈkɔː.mɛː, respell: KOH-may}
+  phrase:
+    restored: {ipa: hɛː‿d‿ek‿pleː.ó.nɔːn oi.ki.ɔ̂ːn koi.nɔː.ní.a prɔ́ː.tɛː kʰrɛ́ː.se.ɔːs hé.ne.ken mɛ̀ː e.pʰɛː.mé.ruː kɔ́ː.mɛː., respell: hê‿d‿ek‿play-O-nawn oy-ki-AWN koy-naw-NI-a PRAW-tê KʰRÊ-se-aws
+        HE-ne-ken mê e-pʰê-ME-roo KAW-mê.}
+    erasmian: {ipa: hɛː‿d‿ek‿plei.ˈo.nɔːn oi.ki.ˈɔːn koi.nɔː.ˈni.a ˈprɔː.tɛː ˈxrɛː.se.ɔːs ˈhe.ne.ken ˈmɛː e.fɛː.ˈme.ruː ˈkɔː.mɛː., respell: hay‿d‿ek‿play-O-nohn oy-ki-OHN koy-noh-NI-a PROH-tay KHRAY-se-ohs
+        HE-ne-ken MAY e-fay-ME-roo KOH-may.}
 - id: pol.1252b.10
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.10
   stanza: 1252b
@@ -2164,8 +2233,10 @@ lines:
     morph: n-p---fa-
     tb: 21/1767257
     sound:
-      restored: {ipa: oi.kí.as, respell: oy-KI-as}
-      erasmian: {ipa: oi.ˈki.as, respell: oy-KI-as}
+      restored: {ipa: oi.kí.aːs, respell: oy-KI-aas}
+      erasmian: {ipa: oi.ˈki.aːs, respell: oy-KI-aas}
+    prov: {sound: weft.greek 0.1 + vowel length from LSJ (οἰκία) and the first declension}
+    conf: {sound: 0.8}
   - id: pol.1252b.10.10
     surface: εἶναι
     punct: ','
@@ -2249,6 +2320,11 @@ lines:
     sound:
       restored: {ipa: pâi.das, respell: PAI-das}
       erasmian: {ipa: ˈpai.das, respell: PAI-das}
+  phrase:
+    restored: {ipa: 'má.lis.ta dè ka.tà pʰý.sin é.oi.ken hɛː‿kɔ́ː.mɛː a.poi.kí.a oi.kí.aːs êː.nai, hùːs ka.lûː.sí ti.nes‿ho.mo.ɡá.lak.tas, pâi.dás‿te kaì paí.dɔːn pâi.das.', respell: 'MA-lis-ta
+        de ka-ta PʰÜ-sin E-oy-ken hê‿KAW-mê a-poy-KI-a oy-KI-aas AY-nai, hoos ka-LOO-SI ti-nes‿ho-mo-GA-lak-tas, PAI-DAS‿te kai PAI-dawn PAI-das.'}
+    erasmian: {ipa: 'ˈma.lis.ta ˈde ka.ˈta ˈfy.sin ˈe.oi.ken hɛː‿ˈkɔː.mɛː a.poi.ˈki.a oi.ˈki.aːs ˈei.nai, ˈhuːs ka.ˈluː.ˈsi ti.nes‿ho.mo.ˈɡa.lak.tas, ˈpai.ˈdas‿te ˈkai ˈpai.dɔːn ˈpai.das.', respell: 'MA-lis-ta
+        DE ka-TA FÜ-sin E-oy-ken hay‿KOH-may a-poy-KI-a oy-KI-aas AY-nai, HOOS ka-LOO-SI ti-nes‿ho-mo-GA-lak-tas, PAI-DAS‿te KAI PAI-dohn PAI-das.'}
 - id: pol.1252b.11
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.11
   stanza: 1252b
@@ -2353,6 +2429,9 @@ lines:
     sound:
       restored: {ipa: étʰ.nɛː, respell: ETʰ-nê}
       erasmian: {ipa: ˈeθ.nɛː, respell: ETH-nay}
+  phrase:
+    restored: {ipa: 'di.ò kaì tò prɔ̂ː.ton e.ba.si.leú.on.to hai‿pó.leːs, kaì nŷːn é.ti tà étʰ.nɛː·', respell: 'di-o kai to PRAW-ton e-ba-si-LEU-on-to hai‿PO-lays, kai NÜÜN E-ti ta ETʰ-nê·'}
+    erasmian: {ipa: 'di.ˈo ˈkai ˈto ˈprɔː.ton e.ba.si.ˈleu.on.to hai‿ˈpo.leis, ˈkai ˈnyːn ˈe.ti ˈta ˈeθ.nɛː·', respell: 'di-O KAI TO PROH-ton e-ba-si-LYOO-on-to hai‿PO-lays, KAI NÜÜN E-ti TA ETH-nay·'}
 - id: pol.1252b.12
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.12
   stanza: 1252b
@@ -2392,6 +2471,9 @@ lines:
     sound:
       restored: {ipa: sy.nɛ̂ːl.tʰon, respell: sü-NÊL-tʰon}
       erasmian: {ipa: sy.ˈnɛːl.θon, respell: sü-NAYL-thon}
+  phrase:
+    restored: {ipa: ek‿ba.si.leu.o.mé.nɔːn ɡàr sy.nɛ̂ːl.tʰon·, respell: ek‿ba-si-leu-o-ME-nawn gar sü-NÊL-tʰon·}
+    erasmian: {ipa: ek‿ba.si.leu.o.ˈme.nɔːn ˈɡar sy.ˈnɛːl.θon·, respell: ek‿ba-si-lyoo-o-ME-nohn GAR sü-NAYL-thon·}
 - id: pol.1252b.13
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.13
   stanza: 1252b
@@ -2513,6 +2595,11 @@ lines:
     sound:
       restored: {ipa: syŋ.ɡé.neː.an, respell: süng-GE-nay-an}
       erasmian: {ipa: syŋ.ˈɡe.nei.an, respell: süng-GE-nay-an}
+  phrase:
+    restored: {ipa: 'pâː.sa ɡàr oi.kí.a ba.si.leú.e.tai hy.pò tûː prez.by.tá.tuː, hɔ́ːs.te kaì hai‿a.poi.kí.ai, di.à tɛ̀ːn syŋ.ɡé.neː.an.', respell: 'PAA-sa gar oy-KI-a ba-si-LEU-e-tai hü-po
+        TOO prez-bü-TA-too, HAWS-te kai hai‿a-poy-KI-ai, di-a tên süng-GE-nay-an.'}
+    erasmian: {ipa: 'ˈpaː.sa ˈɡar oi.ˈki.a ba.si.ˈleu.e.tai hy.ˈpo ˈtuː pres.by.ˈta.tuː, ˈhɔːs.te ˈkai hai‿a.poi.ˈki.ai, di.ˈa ˈtɛːn syŋ.ˈɡe.nei.an.', respell: 'PAA-sa GAR oy-KI-a ba-si-LYOO-e-tai hü-PO
+        TOO pres-bü-TA-too, HOHS-te KAI hai‿a-poy-KI-ai, di-A TAYN süng-GE-nay-an.'}
 - id: pol.1252b.14
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.14
   stanza: 1252b
@@ -2633,6 +2720,11 @@ lines:
     sound:
       restored: {ipa: ɡár, respell: GAR}
       erasmian: {ipa: ˈɡar, respell: GAR}
+  phrase:
+    restored: {ipa: kaì tûːt‿es.tìn hò lé.ɡeː hó.mɛː.ros tʰe.mis.teú.eː dè hé.kas.tos paí.dɔːn ɛːd‿a.ló.kʰɔːn. spo.rá.des ɡár·, respell: kai TOOT‿es-tin ho LE-gay HO-mê-ros tʰe-mis-TEU-ay de
+        HE-kas-tos PAI-dawn êd‿a-LO-kʰawn. spo-RA-des GAR·}
+    erasmian: {ipa: ˈkai ˈtuːt‿es.ˈtin ˈho ˈle.ɡei ˈho.mɛː.ros θe.mis.ˈteu.ei ˈde ˈhe.kas.tos ˈpai.dɔːn ɛːd‿a.ˈlo.xɔːn. spo.ˈra.des ˈɡar·, respell: KAI TOOT‿es-TIN HO LE-gay HO-may-ros the-mis-TYOO-ay DE
+        HE-kas-tos PAI-dohn ayd‿a-LO-khohn. spo-RA-des GAR·}
 - id: pol.1252b.15
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.15
   stanza: 1252b
@@ -2680,6 +2772,9 @@ lines:
     sound:
       restored: {ipa: ɔːí.kuːn, respell: AWI-koon}
       erasmian: {ipa: ˈɔː.kuːn, respell: OH-koon}
+  phrase:
+    restored: {ipa: kaì húː.tɔː tò ar.kʰâi.on ɔːí.kuːn., respell: kai HOO-taw to ar-KʰAI-on AWI-koon.}
+    erasmian: {ipa: ˈkai ˈhuː.tɔː ˈto ar.ˈxai.on ˈɔː.kuːn., respell: KAI HOO-toh TO ar-KHAI-on OH-koon.}
 - id: pol.1252b.16
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.16
   stanza: 1252b
@@ -2987,6 +3082,13 @@ lines:
     sound:
       restored: {ipa: tʰe.ɔ̂ːn, respell: tʰe-AWN}
       erasmian: {ipa: θe.ˈɔːn, respell: the-OHN}
+  phrase:
+    restored: {ipa: 'kaì tùːs tʰe.ùːs dè di.à tûː.to pán.tes pʰa.sì ba.si.leú.es.tʰai, hó.ti kaì au.toì hoi‿mèn é.ti kaì nŷːn hoi‿dè tò ar.kʰâi.on e.ba.si.leú.on.to, hɔ́ːs.per dè kaì
+        tà éː.dɛː he.au.tôis a.pʰo.moi.ûː.sin hoi‿án.tʰrɔː.poi, húː.tɔː kaì tùːs bí.uːs tɔ̂ːn tʰe.ɔ̂ːn.', respell: 'kai toos tʰe-oos de di-a TOO-to PAN-tes pʰa-si ba-si-LEU-es-tʰai, HO-ti kai ow-toy
+        hoy‿men E-ti kai NÜÜN hoy‿de to ar-KʰAI-on e-ba-si-LEU-on-to, HAWS-per de kai ta AY-dê he-ow-TOYS a-pʰo-moy-OO-sin hoy‿AN-tʰraw-poy, HOO-taw kai toos BI-oos TAWN tʰe-AWN.'}
+    erasmian: {ipa: 'ˈkai ˈtuːs θe.ˈuːs ˈde di.ˈa ˈtuː.to ˈpan.tes fa.ˈsi ba.si.ˈleu.es.θai, ˈho.ti ˈkai au.ˈtoi hoi‿ˈmen ˈe.ti ˈkai ˈnyːn hoi‿ˈde ˈto ar.ˈxai.on e.ba.si.ˈleu.on.to, ˈhɔːs.per ˈde ˈkai ˈta
+        ˈei.dɛː he.au.ˈtois a.fo.moi.ˈuː.sin hoi‿ˈan.θrɔː.poi, ˈhuː.tɔː ˈkai ˈtuːs ˈbi.uːs ˈtɔːn θe.ˈɔːn.', respell: 'KAI TOOS the-OOS DE di-A TOO-to PAN-tes fa-SI ba-si-LYOO-es-thai, HO-ti KAI ow-TOY hoy‿MEN
+        E-ti KAI NÜÜN hoy‿DE TO ar-KHAI-on e-ba-si-LYOO-on-to, HOHS-per DE KAI TA AY-day he-ow-TOYS a-fo-moy-OO-sin hoy‿AN-throh-poy, HOO-toh KAI TOOS BI-oos TOHN the-OHN.'}
 - id: pol.1252b.17
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.17
   stanza: 1252b
@@ -3104,8 +3206,10 @@ lines:
     morph: n-s---fg-
     tb: 29/1767384
     sound:
-      restored: {ipa: au.tar.kéː.as, respell: ow-tar-KAY-as}
-      erasmian: {ipa: au.tar.ˈkei.as, respell: ow-tar-KAY-as}
+      restored: {ipa: au.tar.kéː.aːs, respell: ow-tar-KAY-aas}
+      erasmian: {ipa: au.tar.ˈkei.aːs, respell: ow-tar-KAY-aas}
+    prov: {sound: weft.greek 0.1 + vowel length from LSJ (αὐτάρκεια) and the first declension}
+    conf: {sound: 0.8}
   - id: pol.1252b.17.15
     surface: ὡς
     lemma: ὡς
@@ -3213,6 +3317,13 @@ lines:
     sound:
       restored: {ipa: zdɛ̂ːn, respell: ZDÊN}
       erasmian: {ipa: ˈdzɛːn, respell: DZAYN}
+  phrase:
+    restored: {ipa: 'hɛː‿d‿ek‿pleː.ó.nɔːn kɔː.mɔ̂ːn koi.nɔː.ní.a té.leː.os pó.lis, ɛ́ː.dɛː pá.sɛːs é.kʰuː.sa pé.ras tɛ̂ːs au.tar.kéː.aːs hɔːs‿é.pos eː.pêːn, ɡi.no.mé.nɛː mèn tûː zdɛ̂ːn hé.ne.ken,
+        ûː.sa dè tûː êu zdɛ̂ːn.', respell: 'hê‿d‿ek‿play-O-nawn kaw-MAWN koy-naw-NI-a TE-lay-os PO-lis, Ê-dê PA-sês E-kʰoo-sa PE-ras TÊS ow-tar-KAY-aas haws‿E-pos ay-PAYN, gi-no-ME-nê men TOO ZDÊN HE-ne-ken,
+        OO-sa de TOO EU ZDÊN.'}
+    erasmian: {ipa: 'hɛː‿d‿ek‿plei.ˈo.nɔːn kɔː.ˈmɔːn koi.nɔː.ˈni.a ˈte.lei.os ˈpo.lis, ˈɛː.dɛː ˈpa.sɛːs ˈe.xuː.sa ˈpe.ras ˈtɛːs au.tar.ˈkei.aːs hɔːs‿ˈe.pos ei.ˈpein, ɡi.no.ˈme.nɛː ˈmen ˈtuː ˈdzɛːn ˈhe.ne.ken,
+        ˈuː.sa ˈde ˈtuː ˈeu ˈdzɛːn.', respell: 'hay‿d‿ek‿play-O-nohn koh-MOHN koy-noh-NI-a TE-lay-os PO-lis, AY-day PA-says E-khoo-sa PE-ras TAYS ow-tar-KAY-aas hohs‿E-pos ay-PAYN, gi-no-ME-nay MEN TOO
+        DZAYN HE-ne-ken, OO-sa DE TOO YOO DZAYN.'}
 - id: pol.1252b.18
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.18
   stanza: 1252b
@@ -3301,6 +3412,9 @@ lines:
     sound:
       restored: {ipa: koi.nɔː.ní.ai, respell: koy-naw-NI-ai}
       erasmian: {ipa: koi.nɔː.ˈni.ai, respell: koy-noh-NI-ai}
+  phrase:
+    restored: {ipa: 'di.ò pâː.sa pó.lis pʰý.seː és.tin, éː.per kaì hai‿prɔ̂ː.tai koi.nɔː.ní.ai.', respell: 'di-o PAA-sa PO-lis PʰÜ-say ES-tin, AY-per kai hai‿PRAW-tai koy-naw-NI-ai.'}
+    erasmian: {ipa: 'di.ˈo ˈpaː.sa ˈpo.lis ˈfy.sei ˈes.tin, ˈei.per ˈkai hai‿ˈprɔː.tai koi.nɔː.ˈni.ai.', respell: 'di-O PAA-sa PO-lis FÜ-say ES-tin, AY-per KAI hai‿PROH-tai koy-noh-NI-ai.'}
 - id: pol.1252b.19
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.19
   stanza: 1252b
@@ -3381,6 +3495,9 @@ lines:
     sound:
       restored: {ipa: es.tín, respell: es-TIN}
       erasmian: {ipa: es.ˈtin, respell: es-TIN}
+  phrase:
+    restored: {ipa: 'té.los ɡàr haú.tɛː e.kéː.nɔːn, hɛː‿dè pʰý.sis té.los es.tín·', respell: 'TE-los gar HOW-tê e-KAY-nawn, hê‿de PʰÜ-sis TE-los es-TIN·'}
+    erasmian: {ipa: 'ˈte.los ˈɡar ˈhau.tɛː e.ˈkei.nɔːn, hɛː‿ˈde ˈfy.sis ˈte.los es.ˈtin·', respell: 'TE-los GAR HOW-tay e-KAY-nohn, hay‿DE FÜ-sis TE-los es-TIN·'}
 - id: pol.1252b.20
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.20
   stanza: 1252b
@@ -3524,8 +3641,15 @@ lines:
     morph: n-s---fg-
     tb: 32/1767442
     sound:
-      restored: {ipa: oi.kí.as, respell: oy-KI-as}
-      erasmian: {ipa: oi.ˈki.as, respell: oy-KI-as}
+      restored: {ipa: oi.kí.aːs, respell: oy-KI-aas}
+      erasmian: {ipa: oi.ˈki.aːs, respell: oy-KI-aas}
+    prov: {sound: weft.greek 0.1 + vowel length from LSJ (οἰκία) and the first declension}
+    conf: {sound: 0.8}
+  phrase:
+    restored: {ipa: 'hôi.on ɡàr hé.kas.tón‿es.ti tɛ̂ːs ɡe.né.se.ɔːs te.les.tʰéː.sɛːs, taú.tɛːn pʰa.mèn tɛ̀ːn pʰý.sin êː.nai he.kás.tuː, hɔ́ːs.per an.tʰrɔ́ː.puː híp.puː oi.kí.aːs.', respell: 'HOY-on
+        gar HE-kas-TON‿es-ti TÊS ge-NE-se-aws te-les-TʰAY-sês, TOW-tên pʰa-men tên PʰÜ-sin AY-nai he-KAS-too, HAWS-per an-TʰRAW-poo HIP-poo oy-KI-aas.'}
+    erasmian: {ipa: 'ˈhoi.on ˈɡar ˈhe.kas.ˈton‿es.ti ˈtɛːs ɡe.ˈne.se.ɔːs te.les.ˈθei.sɛːs, ˈtau.tɛːn fa.ˈmen ˈtɛːn ˈfy.sin ˈei.nai he.ˈkas.tuː, ˈhɔːs.per an.ˈθrɔː.puː ˈhip.puː oi.ˈki.aːs.', respell: 'HOY-on
+        GAR HE-kas-TON‿es-ti TAYS ge-NE-se-ohs te-les-THAY-says, TOW-tayn fa-MEN TAYN FÜ-sin AY-nai he-KAS-too, HOHS-per an-THROH-poo HIP-poo oy-KI-aas.'}
 - id: pol.1252b.21
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1252b.21
   stanza: 1252b
@@ -3597,6 +3721,9 @@ lines:
     sound:
       restored: {ipa: bél.tis.ton, respell: BEL-tis-ton}
       erasmian: {ipa: ˈbel.tis.ton, respell: BEL-tis-ton}
+  phrase:
+    restored: {ipa: é.ti tò hûː hé.ne.ka kaì tò té.los bél.tis.ton·, respell: E-ti to HOO HE-ne-ka kai to TE-los BEL-tis-ton·}
+    erasmian: {ipa: ˈe.ti ˈto ˈhuː ˈhe.ne.ka ˈkai ˈto ˈte.los ˈbel.tis.ton·, respell: E-ti TO HOO HE-ne-ka KAI TO TE-los BEL-tis-ton·}
 - id: pol.1253a.1
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.1
   stanza: 1253a
@@ -3660,6 +3787,9 @@ lines:
     sound:
       restored: {ipa: bél.tis.ton, respell: BEL-tis-ton}
       erasmian: {ipa: ˈbel.tis.ton, respell: BEL-tis-ton}
+  phrase:
+    restored: {ipa: hɛː‿d‿au.tár.keː.a kaì té.los kaì bél.tis.ton., respell: hê‿d‿ow-TAR-kay-a kai TE-los kai BEL-tis-ton.}
+    erasmian: {ipa: hɛː‿d‿au.ˈtar.kei.a ˈkai ˈte.los ˈkai ˈbel.tis.ton., respell: hay‿d‿ow-TAR-kay-a KAI TE-los KAI BEL-tis-ton.}
 - id: pol.1253a.2
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.2
   stanza: 1253a
@@ -3793,8 +3923,10 @@ lines:
     morph: a-s---nn-
     tb: 35/1767477
     sound:
-      restored: {ipa: po.li.ti.kòn, respell: po-li-ti-kon}
-      erasmian: {ipa: po.li.ti.ˈkon, respell: po-li-ti-KON}
+      restored: {ipa: po.liː.ti.kòn, respell: po-lee-ti-kon}
+      erasmian: {ipa: po.liː.ti.ˈkon, respell: po-lee-ti-KON}
+    prov: {sound: weft.greek 0.1 + vowel length from LSJ (πολιτικός) and the first declension}
+    conf: {sound: 0.8}
   - id: pol.1253a.2.17
     surface: ζῷον
     punct: ','
@@ -3934,6 +4066,13 @@ lines:
     sound:
       restored: {ipa: án.tʰrɔː.pos, respell: AN-tʰraw-pos}
       erasmian: {ipa: ˈan.θrɔː.pos, respell: AN-throh-pos}
+  phrase:
+    restored: {ipa: 'ek‿túː.tɔːn ûːn pʰa.ne.ròn hó.ti tɔ̂ːn pʰý.seː hɛː‿pó.lis es.tí, kaì hó.ti ho‿án.tʰrɔː.pos pʰý.seː po.liː.ti.kòn zdɔ̂ːi.on, kaì ho‿á.po.lis di.à pʰý.sin kaì uː‿di.à
+        tý.kʰɛːn ɛ́ː.toi pʰâu.lós‿es.tin, ɛ̀ː kréːt.tɔːn ɛ̀ː án.tʰrɔː.pos·', respell: 'ek‿TOO-tawn OON pʰa-ne-ron HO-ti TAWN PʰÜ-say hê‿PO-lis es-TI, kai HO-ti ho‿AN-tʰraw-pos PʰÜ-say po-lee-ti-kon
+        ZDAWI-on, kai ho‿A-po-lis di-a PʰÜ-sin kai oo‿di-a TÜ-kʰên Ê-toy PʰOW-LOS‿es-tin, ê KRAYT-tawn ê AN-tʰraw-pos·'}
+    erasmian: {ipa: 'ek‿ˈtuː.tɔːn ˈuːn fa.ne.ˈron ˈho.ti ˈtɔːn ˈfy.sei hɛː‿ˈpo.lis es.ˈti, ˈkai ˈho.ti ho‿ˈan.θrɔː.pos ˈfy.sei po.liː.ti.ˈkon ˈdzɔː.on, ˈkai ho‿ˈa.po.lis di.ˈa ˈfy.sin ˈkai uː‿di.ˈa ˈty.xɛːn
+        ˈɛː.toi ˈfau.ˈlos‿es.tin, ˈɛː ˈkreit.tɔːn ˈɛː ˈan.θrɔː.pos·', respell: 'ek‿TOO-tohn OON fa-ne-RON HO-ti TOHN FÜ-say hay‿PO-lis es-TI, KAI HO-ti ho‿AN-throh-pos FÜ-say po-lee-ti-KON DZOH-on, KAI
+        ho‿A-po-lis di-A FÜ-sin KAI oo‿di-A TÜ-khayn AY-toy FOW-LOS‿es-tin, AY KRAYT-tohn AY AN-throh-pos·'}
 - id: pol.1253a.3
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.3
   stanza: 1253a
@@ -4013,6 +4152,9 @@ lines:
     sound:
       restored: {ipa: a.nés.ti.os, respell: a-NES-ti-os}
       erasmian: {ipa: a.ˈnes.ti.os, respell: a-NES-ti-os}
+  phrase:
+    restored: {ipa: hɔ́ːs.per kaì ho‿hypʰ‿ho.mɛ́ː.ruː loi.do.rɛː.tʰèːs a.pʰrɛ́ː.tɔːr a.tʰé.mis.tos a.nés.ti.os·, respell: HAWS-per kai ho‿hüpʰ‿ho-MÊ-roo loy-do-rê-tʰays a-PʰRÊ-tawr a-TʰE-mis-tos a-NES-ti-os·}
+    erasmian: {ipa: ˈhɔːs.per ˈkai ho‿hyf‿ho.ˈmɛː.ruː loi.do.rɛː.ˈθeis a.ˈfrɛː.tɔːr a.ˈθe.mis.tos a.ˈnes.ti.os·, respell: HOHS-per KAI ho‿hüf‿ho-MAY-roo loy-do-ray-THAYS a-FRAY-tohr a-THE-mis-tos a-NES-ti-os·}
 - id: pol.1253a.4
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.4
   stanza: 1253a
@@ -4074,8 +4216,10 @@ lines:
     morph: n-s---mn-
     tb: 37/1767514
     sound:
-      restored: {ipa: e.pi.tʰy.mɛː.tɛ́ːs, respell: e-pi-tʰü-mê-TÊS}
-      erasmian: {ipa: e.pi.θy.mɛː.ˈtɛːs, respell: e-pi-thü-may-TAYS}
+      restored: {ipa: e.pi.tʰyː.mɛː.tɛ́ːs, respell: e-pi-tʰüü-mê-TÊS}
+      erasmian: {ipa: e.pi.θyː.mɛː.ˈtɛːs, respell: e-pi-thüü-may-TAYS}
+    prov: {sound: weft.greek 0.1 + vowel length from LSJ (ἐπιθυμητής) and the first declension}
+    conf: {sound: 0.8}
   - id: pol.1253a.4.8
     surface: ἅτε
     lemma: ἅτε
@@ -4133,6 +4277,11 @@ lines:
     sound:
       restored: {ipa: pet.tôis, respell: pet-TOYS}
       erasmian: {ipa: pet.ˈtois, respell: pet-TOYS}
+  phrase:
+    restored: {ipa: 'há.ma ɡàr pʰý.seː toi.ûː.tos kaì po.lé.muː e.pi.tʰyː.mɛː.tɛ́ːs, há.te‿per á.zdyks ɔ̀ːn hɔ́ːs.per en‿pet.tôis.', respell: 'HA-ma gar PʰÜ-say toy-OO-tos kai po-LE-moo e-pi-tʰüü-mê-TÊS,
+        HA-te‿per A-zdüks awn HAWS-per en‿pet-TOYS.'}
+    erasmian: {ipa: 'ˈha.ma ˈɡar ˈfy.sei toi.ˈuː.tos ˈkai po.ˈle.muː e.pi.θyː.mɛː.ˈtɛːs, ˈha.te‿per ˈa.dzyks ˈɔːn ˈhɔːs.per en‿pet.ˈtois.', respell: 'HA-ma GAR FÜ-say toy-OO-tos KAI po-LE-moo e-pi-thüü-may-TAYS,
+        HA-te‿per A-dzüks OHN HOHS-per en‿pet-TOYS.'}
 - id: pol.1253a.5
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.5
   stanza: 1253a
@@ -4161,8 +4310,10 @@ lines:
     morph: a-s---nn-
     tb: 38/1767526
     sound:
-      restored: {ipa: po.li.ti.kòn, respell: po-li-ti-kon}
-      erasmian: {ipa: po.li.ti.ˈkon, respell: po-li-ti-KON}
+      restored: {ipa: po.liː.ti.kòn, respell: po-lee-ti-kon}
+      erasmian: {ipa: po.liː.ti.ˈkon, respell: po-lee-ti-KON}
+    prov: {sound: weft.greek 0.1 + vowel length from LSJ (πολιτικός) and the first declension}
+    conf: {sound: 0.8}
   - id: pol.1253a.5.4
     surface: ὁ
     lemma: ὁ
@@ -4253,6 +4404,11 @@ lines:
     sound:
       restored: {ipa: dɛ̂ː.lon, respell: DÊ-lon}
       erasmian: {ipa: ˈdɛː.lon, respell: DAY-lon}
+  phrase:
+    restored: {ipa: 'di.ó.ti dè po.liː.ti.kòn ho‿án.tʰrɔː.pos zdɔ̂ːi.on pá.sɛːs me.lít.tɛːs kaì pan.tòs a.ɡe.laí.uː zdɔːí.uː mâːl.lon, dɛ̂ː.lon.', respell: 'di-O-ti de po-lee-ti-kon ho‿AN-tʰraw-pos
+        ZDAWI-on PA-sês me-LIT-tês kai pan-tos a-ge-LAI-oo ZDAWI-oo MAAL-lon, DÊ-lon.'}
+    erasmian: {ipa: 'di.ˈo.ti ˈde po.liː.ti.ˈkon ho‿ˈan.θrɔː.pos ˈdzɔː.on ˈpa.sɛːs me.ˈlit.tɛːs ˈkai pan.ˈtos a.ɡe.ˈlai.uː ˈdzɔː.uː ˈmaːl.lon, ˈdɛː.lon.', respell: 'di-O-ti DE po-lee-ti-KON ho‿AN-throh-pos
+        DZOH-on PA-says me-LIT-tays KAI pan-TOS a-ge-LAI-oo DZOH-oo MAAL-lon, DAY-lon.'}
 - id: pol.1253a.6
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.6
   stanza: 1253a
@@ -4326,6 +4482,9 @@ lines:
     sound:
       restored: {ipa: poi.êː, respell: poy-AY}
       erasmian: {ipa: poi.ˈei, respell: poy-AY}
+  phrase:
+    restored: {ipa: 'uː.tʰèn ɡár, hɔːs‿pʰa.mén, má.tɛːn hɛː‿pʰý.sis poi.êː·', respell: 'oo-tʰen GAR, haws‿pʰa-MEN, MA-tên hê‿PʰÜ-sis poy-AY·'}
+    erasmian: {ipa: 'uː.ˈθen ˈɡar, hɔːs‿fa.ˈmen, ˈma.tɛːn hɛː‿ˈfy.sis poi.ˈei·', respell: 'oo-THEN GAR, hohs‿fa-MEN, MA-tayn hay‿FÜ-sis poy-AY·'}
 - id: pol.1253a.7
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.7
   stanza: 1253a
@@ -4389,6 +4548,9 @@ lines:
     sound:
       restored: {ipa: zdɔːí.ɔːn, respell: ZDAWI-awn}
       erasmian: {ipa: ˈdzɔː.ɔːn, respell: DZOH-ohn}
+  phrase:
+    restored: {ipa: ló.ɡon dè mó.non án.tʰrɔː.pos é.kʰeː tɔ̂ːn zdɔːí.ɔːn·, respell: LO-gon de MO-non AN-tʰraw-pos E-kʰay TAWN ZDAWI-awn·}
+    erasmian: {ipa: ˈlo.ɡon ˈde ˈmo.non ˈan.θrɔː.pos ˈe.xei ˈtɔːn ˈdzɔː.ɔːn·, respell: LO-gon DE MO-non AN-throh-pos E-khay TOHN DZOH-ohn·}
 - id: pol.1253a.8
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.8
   stanza: 1253a
@@ -4441,8 +4603,10 @@ lines:
     morph: a-s---ng-
     tb: 41/1767564
     sound:
-      restored: {ipa: ly.pɛː.rûː, respell: lü-pê-ROO}
-      erasmian: {ipa: ly.pɛː.ˈruː, respell: lü-pay-ROO}
+      restored: {ipa: lyː.pɛː.rûː, respell: lüü-pê-ROO}
+      erasmian: {ipa: lyː.pɛː.ˈruː, respell: lüü-pay-ROO}
+    prov: {sound: weft.greek 0.1 + vowel length from LSJ (λυπηρός) and the first declension}
+    conf: {sound: 0.8}
   - id: pol.1253a.8.7
     surface: καὶ
     lemma: καί
@@ -4612,8 +4776,10 @@ lines:
     morph: a-s---mg-
     tb: 41/1767588
     sound:
-      restored: {ipa: ly.pɛː.rûː, respell: lü-pê-ROO}
-      erasmian: {ipa: ly.pɛː.ˈruː, respell: lü-pay-ROO}
+      restored: {ipa: lyː.pɛː.rûː, respell: lüü-pê-ROO}
+      erasmian: {ipa: lyː.pɛː.ˈruː, respell: lüü-pay-ROO}
+    prov: {sound: weft.greek 0.1 + vowel length from LSJ (λυπηρός) and the first declension}
+    conf: {sound: 0.8}
   - id: pol.1253a.8.28
     surface: καὶ
     lemma: καί
@@ -4663,6 +4829,13 @@ lines:
     sound:
       restored: {ipa: al.lɛ́ː.lois, respell: al-LÊ-loys}
       erasmian: {ipa: al.ˈlɛː.lois, respell: al-LAY-loys}
+  phrase:
+    restored: {ipa: 'hɛː‿mèn ûːn pʰɔː.nɛ̀ː tûː lyː.pɛː.rûː kaì hɛː.dé.os es.tì sɛː.mêː.on, di.ò kaì tôis ál.lois hy.pár.kʰeː zdɔːí.ois (mé.kʰri ɡàr túː.tuː hɛː‿pʰý.sis au.tɔ̂ːn e.lɛ́ː.ly.tʰe,
+        tûː é.kʰeːn aís.tʰɛː.sin lyː.pɛː.rûː kaì hɛː.dé.os kaì tâu.ta sɛː.maí.neːn al.lɛ́ː.lois),', respell: 'hê‿men OON pʰaw-nê TOO lüü-pê-ROO kai hê-DE-os es-ti sê-MAY-on, di-o kai TOYS AL-loys
+        hü-PAR-kʰay ZDAWI-oys (ME-kʰri gar TOO-too hê‿PʰÜ-sis ow-TAWN e-LÊ-lü-tʰe, TOO E-kʰayn AIS-tʰê-sin lüü-pê-ROO kai hê-DE-os kai TOW-ta sê-MAI-nayn al-LÊ-loys),'}
+    erasmian: {ipa: 'hɛː‿ˈmen ˈuːn fɔː.ˈnɛː ˈtuː lyː.pɛː.ˈruː ˈkai hɛː.ˈde.os es.ˈti sɛː.ˈmei.on, di.ˈo ˈkai ˈtois ˈal.lois hy.ˈpar.xei ˈdzɔː.ois (ˈme.xri ˈɡar ˈtuː.tuː hɛː‿ˈfy.sis au.ˈtɔːn e.ˈlɛː.ly.θe,
+        ˈtuː ˈe.xein ˈais.θɛː.sin lyː.pɛː.ˈruː ˈkai hɛː.ˈde.os ˈkai ˈtau.ta sɛː.ˈmai.nein al.ˈlɛː.lois),', respell: 'hay‿MEN OON foh-NAY TOO lüü-pay-ROO KAI hay-DE-os es-TI say-MAY-on, di-O KAI TOYS AL-loys
+        hü-PAR-khay DZOH-oys (ME-khri GAR TOO-too hay‿FÜ-sis ow-TOHN e-LAY-lü-the, TOO E-khayn AIS-thay-sin lüü-pay-ROO KAI hay-DE-os KAI TOW-ta say-MAI-nayn al-LAY-loys),'}
 - id: pol.1253a.9
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.9
   stanza: 1253a
@@ -4823,6 +4996,11 @@ lines:
     sound:
       restored: {ipa: á.di.kon, respell: A-di-kon}
       erasmian: {ipa: ˈa.di.kon, respell: A-di-kon}
+  phrase:
+    restored: {ipa: 'ho‿dè ló.ɡos e.pì tɔ̂ːi dɛː.lûːn‿es.ti tò sym.pʰé.ron kaì tò bla.be.rón, hɔ́ːs.te kaì tò dí.kai.on kaì tò á.di.kon·', respell: 'ho‿de LO-gos e-pi TAWI dê-LOON‿es-ti to
+        süm-PʰE-ron kai to bla-be-RON, HAWS-te kai to DI-kai-on kai to A-di-kon·'}
+    erasmian: {ipa: 'ho‿ˈde ˈlo.ɡos e.ˈpi ˈtɔː dɛː.ˈluːn‿es.ti ˈto sym.ˈfe.ron ˈkai ˈto bla.be.ˈron, ˈhɔːs.te ˈkai ˈto ˈdi.kai.on ˈkai ˈto ˈa.di.kon·', respell: 'ho‿DE LO-gos e-PI TOH day-LOON‿es-ti TO
+        süm-FE-ron KAI TO bla-be-RON, HOHS-te KAI TO DI-kai-on KAI TO A-di-kon·'}
 - id: pol.1253a.10
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.10
   stanza: 1253a
@@ -5015,6 +5193,11 @@ lines:
     sound:
       restored: {ipa: é.kʰeːn, respell: E-kʰayn}
       erasmian: {ipa: ˈe.xein, respell: E-khayn}
+  phrase:
+    restored: {ipa: 'tûː.to ɡàr pròs tà ál.la zdɔ̂ːi.a tôis an.tʰrɔ́ː.pois í.di.on, tò mó.non a.ɡa.tʰûː kaì ka.kûː kaì di.kaí.uː kaì a.dí.kuː kaì tɔ̂ːn ál.lɔːn aís.tʰɛː.sin é.kʰeːn·',
+      respell: 'TOO-to gar pros ta AL-la ZDAWI-a TOYS an-TʰRAW-poys I-di-on, to MO-non a-ga-TʰOO kai ka-KOO kai di-KAI-oo kai a-DI-koo kai TAWN AL-lawn AIS-tʰê-sin E-kʰayn·'}
+    erasmian: {ipa: 'ˈtuː.to ˈɡar ˈpros ˈta ˈal.la ˈdzɔː.a ˈtois an.ˈθrɔː.pois ˈi.di.on, ˈto ˈmo.non a.ɡa.ˈθuː ˈkai ka.ˈkuː ˈkai di.ˈkai.uː ˈkai a.ˈdi.kuː ˈkai ˈtɔːn ˈal.lɔːn ˈais.θɛː.sin ˈe.xein·', respell: 'TOO-to
+        GAR PROS TA AL-la DZOH-a TOYS an-THROH-poys I-di-on, TO MO-non a-ga-THOO KAI ka-KOO KAI di-KAI-oo KAI a-DI-koo KAI TOHN AL-lohn AIS-thay-sin E-khayn·'}
 - id: pol.1253a.11
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.11
   stanza: 1253a
@@ -5086,6 +5269,9 @@ lines:
     sound:
       restored: {ipa: pó.lin, respell: PO-lin}
       erasmian: {ipa: ˈpo.lin, respell: PO-lin}
+  phrase:
+    restored: {ipa: hɛː‿dè túː.tɔːn koi.nɔː.ní.a poi.êː oi.kí.an kaì pó.lin., respell: hê‿de TOO-tawn koy-naw-NI-a poy-AY oy-KI-an kai PO-lin.}
+    erasmian: {ipa: hɛː‿ˈde ˈtuː.tɔːn koi.nɔː.ˈni.a poi.ˈei oi.ˈki.an ˈkai ˈpo.lin., respell: hay‿DE TOO-tohn koy-noh-NI-a poy-AY oy-KI-an KAI PO-lin.}
 - id: pol.1253a.12
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.12
   stanza: 1253a
@@ -5189,6 +5375,9 @@ lines:
     sound:
       restored: {ipa: es.tin, respell: es-tin}
       erasmian: {ipa: es.tin, respell: es-tin}
+  phrase:
+    restored: {ipa: kaì pró.te.ron dè tɛ̂ːi pʰý.seː pó.lis ɛ̀ː oi.kí.a kaì hé.kas.tos hɛː.mɔ̂ːn‿es.tin., respell: kai PRO-te-ron de TÊI PʰÜ-say PO-lis ê oy-KI-a kai HE-kas-tos hê-MAWN‿es-tin.}
+    erasmian: {ipa: ˈkai ˈpro.te.ron ˈde ˈtɛː ˈfy.sei ˈpo.lis ˈɛː oi.ˈki.a ˈkai ˈhe.kas.tos hɛː.ˈmɔːn‿es.tin., respell: KAI PRO-te-ron DE TAY FÜ-say PO-lis AY oy-KI-a KAI HE-kas-tos hay-MOHN‿es-tin.}
 - id: pol.1253a.13
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.13
   stanza: 1253a
@@ -5260,6 +5449,9 @@ lines:
     sound:
       restored: {ipa: mé.ruːs, respell: ME-roos}
       erasmian: {ipa: ˈme.ruːs, respell: ME-roos}
+  phrase:
+    restored: {ipa: tò ɡàr hó.lon pró.te.ron a.naŋ.kâi.on êː.nai tûː mé.ruːs·, respell: to gar HO-lon PRO-te-ron a-nang-KAI-on AY-nai TOO ME-roos·}
+    erasmian: {ipa: ˈto ˈɡar ˈho.lon ˈpro.te.ron a.naŋ.ˈkai.on ˈei.nai ˈtuː ˈme.ruːs·, respell: TO GAR HO-lon PRO-te-ron a-nang-KAI-on AY-nai TOO ME-roos·}
 - id: pol.1253a.14
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.14
   stanza: 1253a
@@ -5601,6 +5793,15 @@ lines:
     sound:
       restored: {ipa: ho.mɔ́ː.ny.ma, respell: ho-MAW-nü-ma}
       erasmian: {ipa: ho.ˈmɔː.ny.ma, respell: ho-MOH-nü-ma}
+  phrase:
+    restored: {ipa: 'a.nai.ruː.mé.nuː ɡàr tûː hó.luː uːk‿és.tai pùːs uː.dè kʰéːr, eː‿mɛ̀ː ho.mɔː.ný.mɔːs, hɔ́ːs.per éː tis‿lé.ɡoi tɛ̀ːn li.tʰí.nɛːn (di.apʰ.tʰa.rêː.sa ɡàr és.tai toi.aú.tɛː),
+        pán.ta dè tɔ̂ːi ér.ɡɔːi hɔ́ː.ris.tai kaì tɛ̂ːi dy.ná.meː, hɔ́ːs.te mɛː.ké.ti toi.âu.ta ón.ta uː‿lek.té.on tà au.tà êː.nai all‿ho.mɔ́ː.ny.ma.', respell: 'a-nai-roo-ME-noo gar TOO HO-loo
+        ook‿ES-tai poos oo-de KʰAYR, ay‿mê ho-maw-NÜ-maws, HAWS-per AY tis‿LE-goy tên li-TʰI-nên (di-apʰ-tʰa-RAY-sa gar ES-tai toy-OW-tê), PAN-ta de TAWI ER-gawi HAW-ris-tai kai TÊI dü-NA-may, HAWS-te mê-KE-ti
+        toy-OW-ta ON-ta oo‿lek-TE-on ta ow-ta AY-nai all‿ho-MAW-nü-ma.'}
+    erasmian: {ipa: 'a.nai.ruː.ˈme.nuː ˈɡar ˈtuː ˈho.luː uːk‿ˈes.tai ˈpuːs uː.ˈde ˈxeir, ei‿ˈmɛː ho.mɔː.ˈny.mɔːs, ˈhɔːs.per ˈei tis‿ˈle.ɡoi ˈtɛːn li.ˈθi.nɛːn (di.af.θa.ˈrei.sa ˈɡar ˈes.tai toi.ˈau.tɛː),
+        ˈpan.ta ˈde ˈtɔː ˈer.ɡɔː ˈhɔː.ris.tai ˈkai ˈtɛː dy.ˈna.mei, ˈhɔːs.te mɛː.ˈke.ti toi.ˈau.ta ˈon.ta uː‿lek.ˈte.on ˈta au.ˈta ˈei.nai all‿ho.ˈmɔː.ny.ma.', respell: 'a-nai-roo-ME-noo GAR TOO HO-loo
+        ook‿ES-tai POOS oo-DE KHAYR, ay‿MAY ho-moh-NÜ-mohs, HOHS-per AY tis‿LE-goy TAYN li-THI-nayn (di-af-tha-RAY-sa GAR ES-tai toy-OW-tay), PAN-ta DE TOH ER-goh HOH-ris-tai KAI TAY dü-NA-may, HOHS-te
+        may-KE-ti toy-OW-ta ON-ta oo‿lek-TE-on TA ow-TA AY-nai all‿ho-MOH-nü-ma.'}
 - id: pol.1253a.15
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.15
   stanza: 1253a
@@ -5697,6 +5898,9 @@ lines:
     sound:
       restored: {ipa: dɛ̂ː.lon, respell: DÊ-lon}
       erasmian: {ipa: ˈdɛː.lon, respell: DAY-lon}
+  phrase:
+    restored: {ipa: 'hó.ti mèn ûːn hɛː‿pó.lis kaì pʰý.seː pró.te.ron ɛ̀ː hé.kas.tos, dɛ̂ː.lon·', respell: 'HO-ti men OON hê‿PO-lis kai PʰÜ-say PRO-te-ron ê HE-kas-tos, DÊ-lon·'}
+    erasmian: {ipa: 'ˈho.ti ˈmen ˈuːn hɛː‿ˈpo.lis ˈkai ˈfy.sei ˈpro.te.ron ˈɛː ˈhe.kas.tos, ˈdɛː.lon·', respell: 'HO-ti MEN OON hay‿PO-lis KAI FÜ-say PRO-te-ron AY HE-kas-tos, DAY-lon·'}
 - id: pol.1253a.16
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.16
   stanza: 1253a
@@ -5963,6 +6167,13 @@ lines:
     sound:
       restored: {ipa: tʰe.ós, respell: tʰe-OS}
       erasmian: {ipa: θe.ˈos, respell: the-OS}
+  phrase:
+    restored: {ipa: 'eː‿ɡàr mɛ̀ː au.tár.kɛːs hé.kas.tos kʰɔː.ris.tʰéːs, ho.moí.ɔːs tôis ál.lois mé.re.sin hé.kseː pròs tò hó.lon, ho‿dè mɛ̀ː dy.ná.me.nos koi.nɔː.nêːn ɛ̀ː mɛː.dèn de.ó.me.nos
+        di‿au.tár.keː.an uː.tʰèn mé.ros pó.le.ɔːs, hɔ́ːs.te ɛ̀ː tʰɛː.rí.on ɛ̀ː tʰe.ós.', respell: 'ay‿gar mê ow-TAR-kês HE-kas-tos kʰaw-ris-TʰAYS, ho-MOY-aws TOYS AL-loys ME-re-sin HE-ksay pros to
+        HO-lon, ho‿de mê dü-NA-me-nos koy-naw-NAYN ê mê-den de-O-me-nos di‿ow-TAR-kay-an oo-tʰen ME-ros PO-le-aws, HAWS-te ê tʰê-RI-on ê tʰe-OS.'}
+    erasmian: {ipa: 'ei‿ˈɡar ˈmɛː au.ˈtar.kɛːs ˈhe.kas.tos xɔː.ris.ˈθeis, ho.ˈmoi.ɔːs ˈtois ˈal.lois ˈme.re.sin ˈhe.ksei ˈpros ˈto ˈho.lon, ho‿ˈde ˈmɛː dy.ˈna.me.nos koi.nɔː.ˈnein ˈɛː mɛː.ˈden de.ˈo.me.nos
+        di‿au.ˈtar.kei.an uː.ˈθen ˈme.ros ˈpo.le.ɔːs, ˈhɔːs.te ˈɛː θɛː.ˈri.on ˈɛː θe.ˈos.', respell: 'ay‿GAR MAY ow-TAR-kays HE-kas-tos khoh-ris-THAYS, ho-MOY-ohs TOYS AL-loys ME-re-sin HE-ksay PROS TO
+        HO-lon, ho‿DE MAY dü-NA-me-nos koy-noh-NAYN AY may-DEN de-O-me-nos di‿ow-TAR-kay-an oo-THEN ME-ros PO-le-ohs, HOHS-te AY thay-RI-on AY the-OS.'}
 - id: pol.1253a.17
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.17
   stanza: 1253a
@@ -6058,6 +6269,9 @@ lines:
     sound:
       restored: {ipa: koi.nɔː.ní.an, respell: koy-naw-NI-an}
       erasmian: {ipa: koi.nɔː.ˈni.an, respell: koy-noh-NI-an}
+  phrase:
+    restored: {ipa: pʰý.seː mèn ûːn hɛː‿hor.mɛ̀ː en‿pâː.sin e.pì tɛ̀ːn toi.aú.tɛːn koi.nɔː.ní.an·, respell: PʰÜ-say men OON hê‿hor-mê en‿PAA-sin e-pi tên toy-OW-tên koy-naw-NI-an·}
+    erasmian: {ipa: ˈfy.sei ˈmen ˈuːn hɛː‿hor.ˈmɛː en‿ˈpaː.sin e.ˈpi ˈtɛːn toi.ˈau.tɛːn koi.nɔː.ˈni.an·, respell: FÜ-say MEN OON hay‿hor-MAY en‿PAA-sin e-PI TAYN toy-OW-tayn koy-noh-NI-an·}
 - id: pol.1253a.18
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.18
   stanza: 1253a
@@ -6121,6 +6335,9 @@ lines:
     sound:
       restored: {ipa: aí.ti.os, respell: AI-ti-os}
       erasmian: {ipa: ˈai.ti.os, respell: AI-ti-os}
+  phrase:
+    restored: {ipa: ho‿dè prɔ̂ː.tos sys.tɛ́ː.sas me.ɡís.tɔːn a.ɡa.tʰɔ̂ːn aí.ti.os., respell: ho‿de PRAW-tos süs-TÊ-sas me-GIS-tawn a-ga-TʰAWN AI-ti-os.}
+    erasmian: {ipa: ho‿ˈde ˈprɔː.tos sys.ˈtɛː.sas me.ˈɡis.tɔːn a.ɡa.ˈθɔːn ˈai.ti.os., respell: ho‿DE PROH-tos süs-TAY-sas me-GIS-tohn a-ga-THOHN AI-ti-os.}
 - id: pol.1253a.19
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.19
   stanza: 1253a
@@ -6273,6 +6490,11 @@ lines:
     sound:
       restored: {ipa: pán.tɔːn, respell: PAN-tawn}
       erasmian: {ipa: ˈpan.tɔːn, respell: PAN-tohn}
+  phrase:
+    restored: {ipa: 'hɔ́ːs.per ɡàr kaì te.le.ɔː.tʰèn bél.tis.ton tɔ̂ːn zdɔːí.ɔːn ho‿án.tʰrɔː.pós‿es.tin, húː.tɔː kaì kʰɔː.ris.tʰèːs nó.muː kaì dí.kɛːs kʰéː.ris.ton pán.tɔːn.', respell: 'HAWS-per
+        gar kai te-le-aw-tʰen BEL-tis-ton TAWN ZDAWI-awn ho‿AN-tʰraw-POS‿es-tin, HOO-taw kai kʰaw-ris-tʰays NO-moo kai DI-kês KʰAY-ris-ton PAN-tawn.'}
+    erasmian: {ipa: 'ˈhɔːs.per ˈɡar ˈkai te.le.ɔː.ˈθen ˈbel.tis.ton ˈtɔːn ˈdzɔː.ɔːn ho‿ˈan.θrɔː.ˈpos‿es.tin, ˈhuː.tɔː ˈkai xɔː.ris.ˈθeis ˈno.muː ˈkai ˈdi.kɛːs ˈxei.ris.ton ˈpan.tɔːn.', respell: 'HOHS-per
+        GAR KAI te-le-oh-THEN BEL-tis-ton TOHN DZOH-ohn ho‿AN-throh-POS‿es-tin, HOO-toh KAI khoh-ris-THAYS NO-moo KAI DI-kays KHAY-ris-ton PAN-tohn.'}
 - id: pol.1253a.20
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.20
   stanza: 1253a
@@ -6320,6 +6542,9 @@ lines:
     sound:
       restored: {ipa: hó.pla, respell: HO-pla}
       erasmian: {ipa: ˈho.pla, respell: HO-pla}
+  phrase:
+    restored: {ipa: kʰa.le.pɔː.tá.tɛː ɡàr a.di.kí.a é.kʰuː.sa hó.pla·, respell: kʰa-le-paw-TA-tê gar a-di-KI-a E-kʰoo-sa HO-pla·}
+    erasmian: {ipa: xa.le.pɔː.ˈta.tɛː ˈɡar a.di.ˈki.a ˈe.xuː.sa ˈho.pla·, respell: kha-le-poh-TA-tay GAR a-di-KI-a E-khoo-sa HO-pla·}
 - id: pol.1253a.21
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.21
   stanza: 1253a
@@ -6449,6 +6674,11 @@ lines:
     sound:
       restored: {ipa: má.lis.ta, respell: MA-lis-ta}
       erasmian: {ipa: ˈma.lis.ta, respell: MA-lis-ta}
+  phrase:
+    restored: {ipa: 'ho‿dè án.tʰrɔː.pos hó.pla é.kʰɔːn pʰý.e.tai pʰro.nɛ́ː.seː kaì a.re.tɛ̂ːi, hôis e.pì ta.nan.tí.a és.ti kʰrɛ̂ːs.tʰai má.lis.ta.', respell: 'ho‿de AN-tʰraw-pos HO-pla E-kʰawn
+        PʰÜ-e-tai pʰro-NÊ-say kai a-re-TÊI, HOYS e-pi ta-nan-TI-a ES-ti KʰRÊS-tʰai MA-lis-ta.'}
+    erasmian: {ipa: 'ho‿ˈde ˈan.θrɔː.pos ˈho.pla ˈe.xɔːn ˈfy.e.tai fro.ˈnɛː.sei ˈkai a.re.ˈtɛː, ˈhois e.ˈpi ta.nan.ˈti.a ˈes.ti ˈxrɛːs.θai ˈma.lis.ta.', respell: 'ho‿DE AN-throh-pos HO-pla E-khohn FÜ-e-tai
+        fro-NAY-say KAI a-re-TAY, HOYS e-PI ta-nan-TI-a ES-ti KHRAYS-thai MA-lis-ta.'}
 - id: pol.1253a.22
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.22
   stanza: 1253a
@@ -6553,6 +6783,11 @@ lines:
     sound:
       restored: {ipa: kʰéː.ris.ton, respell: KʰAY-ris-ton}
       erasmian: {ipa: ˈxei.ris.ton, respell: KHAY-ris-ton}
+  phrase:
+    restored: {ipa: 'di.ò a.no.si.ɔ́ː.ta.ton kaì a.ɡri.ɔ́ː.ta.ton á.neu a.re.tɛ̂ːs, kaì pròs a.pʰro.dí.si.a kaì e.dɔː.dɛ̀ːn kʰéː.ris.ton.', respell: 'di-o a-no-si-AW-ta-ton kai a-gri-AW-ta-ton A-neu
+        a-re-TÊS, kai pros a-pʰro-DI-si-a kai e-daw-dên KʰAY-ris-ton.'}
+    erasmian: {ipa: 'di.ˈo a.no.si.ˈɔː.ta.ton ˈkai a.ɡri.ˈɔː.ta.ton ˈa.neu a.re.ˈtɛːs, ˈkai ˈpros a.fro.ˈdi.si.a ˈkai e.dɔː.ˈdɛːn ˈxei.ris.ton.', respell: 'di-O a-no-si-OH-ta-ton KAI a-gri-OH-ta-ton A-nyoo
+        a-re-TAYS, KAI PROS a-fro-DI-si-a KAI e-doh-DAYN KHAY-ris-ton.'}
 - id: pol.1253a.23
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.23
   stanza: 1253a
@@ -6590,8 +6825,13 @@ lines:
     morph: a-s---nn-
     tb: 55/1767852
     sound:
-      restored: {ipa: po.li.ti.kón, respell: po-li-ti-KON}
-      erasmian: {ipa: po.li.ti.ˈkon, respell: po-li-ti-KON}
+      restored: {ipa: po.liː.ti.kón, respell: po-lee-ti-KON}
+      erasmian: {ipa: po.liː.ti.ˈkon, respell: po-lee-ti-KON}
+    prov: {sound: weft.greek 0.1 + vowel length from LSJ (πολιτικός) and the first declension}
+    conf: {sound: 0.8}
+  phrase:
+    restored: {ipa: hɛː‿dè di.kai.o.sý.nɛː po.liː.ti.kón·, respell: hê‿de di-kai-o-SÜ-nê po-lee-ti-KON·}
+    erasmian: {ipa: hɛː‿ˈde di.kai.o.ˈsy.nɛː po.liː.ti.ˈkon·, respell: hay‿DE di-kai-o-SÜ-nay po-lee-ti-KON·}
 - id: pol.1253a.24
   cite: urn:cts:greekLit:tlg0086.tlg035.perseus-grc2:1253a.24
   stanza: 1253a
@@ -6628,16 +6868,20 @@ lines:
     morph: a-s---fg-
     tb: 56/1767857
     sound:
-      restored: {ipa: po.li.ti.kɛ̂ːs, respell: po-li-ti-KÊS}
-      erasmian: {ipa: po.li.ti.ˈkɛːs, respell: po-li-ti-KAYS}
+      restored: {ipa: po.liː.ti.kɛ̂ːs, respell: po-lee-ti-KÊS}
+      erasmian: {ipa: po.liː.ti.ˈkɛːs, respell: po-lee-ti-KAYS}
+    prov: {sound: weft.greek 0.1 + vowel length from LSJ (πολιτικός) and the first declension}
+    conf: {sound: 0.8}
   - id: pol.1253a.24.5
     surface: κοινωνίας
     lemma: κοινωνία
     morph: n-s---fg-
     tb: 56/1767858
     sound:
-      restored: {ipa: koi.nɔː.ní.as, respell: koy-naw-NI-as}
-      erasmian: {ipa: koi.nɔː.ˈni.as, respell: koy-noh-NI-as}
+      restored: {ipa: koi.nɔː.ní.aːs, respell: koy-naw-NI-aas}
+      erasmian: {ipa: koi.nɔː.ˈni.aːs, respell: koy-noh-NI-aas}
+    prov: {sound: weft.greek 0.1 + vowel length from LSJ (κοινωνία) and the first declension}
+    conf: {sound: 0.8}
   - id: pol.1253a.24.6
     surface: τάξις
     lemma: τάξις
@@ -6704,3 +6948,8 @@ lines:
     sound:
       restored: {ipa: krí.sis, respell: KRI-sis}
       erasmian: {ipa: ˈkri.sis, respell: KRI-sis}
+  phrase:
+    restored: {ipa: 'hɛː‿ɡàr dí.kɛː po.liː.ti.kɛ̂ːs koi.nɔː.ní.aːs tá.ksis es.tín, hɛː‿dè di.kai.o.sý.nɛː tûː di.kaí.uː krí.sis.', respell: 'hê‿gar DI-kê po-lee-ti-KÊS koy-naw-NI-aas TA-ksis es-TIN,
+        hê‿de di-kai-o-SÜ-nê TOO di-KAI-oo KRI-sis.'}
+    erasmian: {ipa: 'hɛː‿ˈɡar ˈdi.kɛː po.liː.ti.ˈkɛːs koi.nɔː.ˈni.aːs ˈta.ksis es.ˈtin, hɛː‿ˈde di.kai.o.ˈsy.nɛː ˈtuː di.ˈkai.uː ˈkri.sis.', respell: 'hay‿GAR DI-kay po-lee-ti-KAYS koy-noh-NI-aas TA-ksis
+        es-TIN, hay‿DE di-kai-o-SÜ-nay TOO di-KAI-oo KRI-sis.'}

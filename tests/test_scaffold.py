@@ -190,3 +190,11 @@ def test_parse_line_spec_refuses_a_lemma_with_punctuation():
     with pytest.raises(ValueError, match="carries punctuation"):
         scaffold.parse_line_spec("logi,|flame|logi,|N.nms")
     assert scaffold.parse_line_spec("verðr-at|comes-not|verða|V.i3s.pr.neg")[1][0]["lemma"] == "verða"
+
+
+def test_pin_stem_keeps_the_page_number_of_a_long_title():
+    """Wikisource Page: titles of one book differ only after the slash; a cut at 40 characters lost it (2026-10-30)."""
+    s = scaffold._stem
+    a, b = s("Page:De Gouges - Les Droits de la femme, 1791.djvu/14"), s("Page:De Gouges - Les Droits de la femme, 1791.djvu/15")
+    assert a.endswith("-14") and b.endswith("-15") and len(a) <= 40
+    assert s("Hávamál") == "h-vam-l" and s("Short/title") == "short-title"

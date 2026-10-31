@@ -44,6 +44,7 @@ translations:
     file: sources/richardson1798.txt
     url: https://archive.org/download/essaysandtreati01kantgoog/essaysandtreati01kantgoog_djvu.txt
     sha256: 3ea1ef81904d0ab0455f94eaaaae628a672606170fcf15a9455dd62b7ad4801c
+sound_confidence: medium
 predicted_gaps:
   - "the text is verified against the Wikisource transcription of the 1784 print, not against the page images; Wikisource prints ß and umlauts where the Fraktur print has them, and long s as s"
   - "the print's 'u. s. w.' is one token, u.s.w., because the Wikisource text joins its parts with non-breaking spaces"

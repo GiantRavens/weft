@@ -7,6 +7,7 @@ layers:
   morph: {src: agdt-2.1}
   sound: {src: weft.greek 0.1}
   metre: {src: weft.greek hexameter scanner 0.1}
+  phrase: {src: weft.greek connected speech 0.1}
 lines:
 - id: od.1.1
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.1
@@ -80,6 +81,9 @@ lines:
       restored: {ipa: pol.là, respell: pol-la}
       erasmian: {ipa: pol.ˈla, respell: pol-LA}
   metre: —◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×
+  phrase:
+    restored: {ipa: 'án.dra‿moj én.ne.pe, mûː.sa, po.lý.tro.pon, hòs má.la pol.là', respell: 'AN-dra‿moy˘ EN-ne-pe, MOO-sa, po-LÜ-tro-pon, hos MA-la pol-la'}
+    erasmian: {ipa: 'ˈan.dra‿moi ˈen.ne.pe, ˈmuː.sa, po.ˈly.tro.pon, ˈhos ˈma.la pol.ˈla', respell: 'AN-dra‿moy EN-ne-pe, MOO-sa, po-LÜ-tro-pon, HOS MA-la pol-LA'}
 - id: od.1.2
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.2
   text: πλάγχθη, ἐπεὶ Τροίης ἱερὸν πτολίεθρον ἔπερσεν·
@@ -135,6 +139,9 @@ lines:
       restored: {ipa: é.per.sen, respell: E-per-sen}
       erasmian: {ipa: ˈe.per.sen, respell: E-per-sen}
   metre: —◡◡|——|—◡◡|—◡◡|—◡◡|—×
+  phrase:
+    restored: {ipa: 'pláŋkʰ.tʰɛ, e.pèː troí.ɛːs hi.e.ròn pto.lí.e.tʰron é.per.sen·', respell: 'PLANGKʰ-tʰê˘, e-pay TROY-ês hi-e-ron pto-LI-e-tʰron E-per-sen·'}
+    erasmian: {ipa: 'ˈplaŋx.θɛː, e.ˈpei ˈtroi.ɛːs hi.e.ˈron pto.ˈli.e.θron ˈe.per.sen·', respell: 'PLANGKH-thay, e-PAY TROY-ays hi-e-RON pto-LI-e-thron E-per-sen·'}
 - id: od.1.3
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.3
   text: πολλῶν δʼ ἀνθρώπων ἴδεν ἄστεα καὶ νόον ἔγνω,
@@ -205,6 +212,9 @@ lines:
       restored: {ipa: éɡ.nɔː, respell: EG-naw}
       erasmian: {ipa: ˈeɡ.nɔː, respell: EG-noh}
   metre: ——|——|—◡◡|—◡◡|—◡◡|—×
+  phrase:
+    restored: {ipa: 'pol.lɔ̂ːn d‿an.tʰrɔ́ː.pɔːn í.den ás.te.a kaì nó.on éɡ.nɔː,', respell: 'pol-LAWN d‿an-TʰRAW-pawn I-den AS-te-a kai NO-on EG-naw,'}
+    erasmian: {ipa: 'pol.ˈlɔːn d‿an.ˈθrɔː.pɔːn ˈi.den ˈas.te.a ˈkai ˈno.on ˈeɡ.nɔː,', respell: 'pol-LOHN d‿an-THROH-pohn I-den AS-te-a KAI NO-on EG-noh,'}
 - id: od.1.4
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.4
   text: πολλὰ δʼ ὅ γʼ ἐν πόντῳ πάθεν ἄλγεα ὃν κατὰ θυμόν,
@@ -300,6 +310,9 @@ lines:
       erasmian: {ipa: θyː.ˈmon, respell: thüü-MON}
     prov: {sound: weft.greek 0.1 + quantity table}
   metre: —◡◡|——|—◡◡|—◡◡|—◡◡|—×
+  phrase:
+    restored: {ipa: 'pol.là d‿hó ɡ‿en‿pón.tɔːi pá.tʰen ál.ɡe.a hòn ka.tà tʰyː.món,', respell: 'pol-la d‿HO g‿en‿PON-tawi PA-tʰen AL-ge-a hon ka-ta tʰüü-MON,'}
+    erasmian: {ipa: 'pol.ˈla d‿ˈho ɡ‿en‿ˈpon.tɔː ˈpa.θen ˈal.ɡe.a ˈhon ka.ˈta θyː.ˈmon,', respell: 'pol-LA d‿HO g‿en‿PON-toh PA-then AL-ge-a HON ka-TA thüü-MON,'}
 - id: od.1.5
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.5
   text: ἀρνύμενος ἥν τε ψυχὴν καὶ νόστον ἑταίρων.
@@ -363,6 +376,9 @@ lines:
       restored: {ipa: he.taí.rɔːn, respell: he-TAI-rawn}
       erasmian: {ipa: he.ˈtai.rɔːn, respell: he-TAI-rohn}
   metre: —◡◡|——|——|——|—◡◡|—×
+  phrase:
+    restored: {ipa: ar.ný.me.nos hɛ́ːn‿te psyː.kʰɛ̀ːn kaì nós.ton he.taí.rɔːn., respell: ar-NÜ-me-nos HÊN‿te psüü-kʰên kai NOS-ton he-TAI-rawn.}
+    erasmian: {ipa: ar.ˈny.me.nos ˈhɛːn‿te psyː.ˈxɛːn ˈkai ˈnos.ton he.ˈtai.rɔːn., respell: ar-NÜ-me-nos HAYN‿te psüü-KHAYN KAI NOS-ton he-TAI-rohn.}
 - id: od.1.6
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.6
   text: ἀλλʼ οὐδʼ ὣς ἑτάρους ἐρρύσατο, ἱέμενός περ·
@@ -428,6 +444,9 @@ lines:
       restored: {ipa: per, respell: per}
       erasmian: {ipa: per, respell: per}
   metre: ——|—◡◡|——|—◡◡|—◡◡|—×
+  phrase:
+    restored: {ipa: 'all‿uːd‿hɔ̀ːs he.tá.ruːs er.rýː.sa.to, hiː.é.me.nós‿per·', respell: 'all‿ood‿haws he-TA-roos er-RÜÜ-sa-to, hee-E-me-NOS‿per·'}
+    erasmian: {ipa: 'all‿uːd‿ˈhɔːs he.ˈta.ruːs er.ˈryː.sa.to, hiː.ˈe.me.ˈnos‿per·', respell: 'all‿ood‿HOHS he-TA-roos er-RÜÜ-sa-to, hee-E-me-NOS‿per·'}
 - id: od.1.7
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.7
   text: αὐτῶν γὰρ σφετέρῃσιν ἀτασθαλίῃσιν ὄλοντο,
@@ -474,6 +493,9 @@ lines:
       restored: {ipa: ó.lon.to, respell: O-lon-to}
       erasmian: {ipa: ˈo.lon.to, respell: O-lon-to}
   metre: ——|—◡◡|—◡◡|—◡◡|—◡◡|—×
+  phrase:
+    restored: {ipa: 'au.tɔ̂ːn ɡàr spʰe.té.rɛːi.sin a.tas.tʰa.lí.ɛːi.sin ó.lon.to,', respell: 'ow-TAWN gar spʰe-TE-rêi-sin a-tas-tʰa-LI-êi-sin O-lon-to,'}
+    erasmian: {ipa: 'au.ˈtɔːn ˈɡar sfe.ˈte.rɛː.sin a.tas.θa.ˈli.ɛː.sin ˈo.lon.to,', respell: 'ow-TOHN GAR sfe-TE-ray-sin a-tas-tha-LI-ay-sin O-lon-to,'}
 - id: od.1.8
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.8
   text: νήπιοι, οἳ κατὰ βοῦς Ὑπερίονος Ἠελίοιο
@@ -529,6 +551,9 @@ lines:
       restored: {ipa: ɛː.e.lí.oi.o, respell: ê-e-LI-oy-o}
       erasmian: {ipa: ɛː.e.ˈli.oi.o, respell: ay-e-LI-oy-o}
   metre: —◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×
+  phrase:
+    restored: {ipa: 'nɛ́ː.pi.oj, hoì ka.tà bûːs hy.pe.ríː.o.nos ɛː.e.lí.oi.o', respell: 'NÊ-pi-oy˘, hoy ka-ta BOOS hü-pe-REE-o-nos ê-e-LI-oy-o'}
+    erasmian: {ipa: 'ˈnɛː.pi.oi, ˈhoi ka.ˈta ˈbuːs hy.pe.ˈriː.o.nos ɛː.e.ˈli.oi.o', respell: 'NAY-pi-oy, HOY ka-TA BOOS hü-pe-REE-o-nos ay-e-LI-oy-o'}
 - id: od.1.9
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.9
   text: ἤσθιον· αὐτὰρ ὁ τοῖσιν ἀφείλετο νόστιμον ἦμαρ.
@@ -592,6 +617,9 @@ lines:
       restored: {ipa: ɛ̂ː.mar, respell: Ê-mar}
       erasmian: {ipa: ˈɛː.mar, respell: AY-mar}
   metre: —◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×
+  phrase:
+    restored: {ipa: ɛ́ːs.tʰi.on· au.tàr ho‿tôi.sin a.pʰéː.le.to nós.ti.mon ɛ̂ː.mar., respell: ÊS-tʰi-on· ow-tar ho‿TOY-sin a-PʰAY-le-to NOS-ti-mon Ê-mar.}
+    erasmian: {ipa: ˈɛːs.θi.on· au.ˈtar ho‿ˈtoi.sin a.ˈfei.le.to ˈnos.ti.mon ˈɛː.mar., respell: AYS-thi-on· ow-TAR ho‿TOY-sin a-FAY-le-to NOS-ti-mon AY-mar.}
 - id: od.1.10
   cite: urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:1.10
   text: τῶν ἁμόθεν γε, θεά, θύγατερ Διός, εἰπὲ καὶ ἡμῖν.
@@ -674,3 +702,6 @@ lines:
       restored: {ipa: hɛː.mîːn, respell: hê-MEEN}
       erasmian: {ipa: hɛː.ˈmiːn, respell: hay-MEEN}
   metre: —◡◡|—◡◡|—◡◡|—◡◡|—◡◡|—×
+  phrase:
+    restored: {ipa: 'tɔ̂ːn ha.mó.tʰen‿ɡe, tʰe.áː, tʰý.ɡa.ter di.ós, eː.pè kàj hɛː.mîːn.', respell: 'TAWN ha-MO-tʰen‿ge, tʰe-AA, TʰÜ-ga-ter di-OS, ay-pe kai˘ hê-MEEN.'}
+    erasmian: {ipa: 'ˈtɔːn ha.ˈmo.θen‿ɡe, θe.ˈaː, ˈθy.ɡa.ter di.ˈos, ei.ˈpe ˈkai hɛː.ˈmiːn.', respell: 'TOHN ha-MO-then‿ge, the-AA, THÜ-ga-ter di-OS, ay-PE KAI hay-MEEN.'}

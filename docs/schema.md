@@ -58,7 +58,15 @@ lines:
       restored: {ipa: po.lý.tro.pon, respell: po-LÜ-tro-pon}
       erasmian: {ipa: po.ˈly.tro.pon, respell: po-LÜ-tro-pon}
     prov: {sound: weft.greek 0.1 + quantity table}   # only when it differs from layers
+  phrase:                      # Greek: the line spoken whole (layer src: weft.greek connected speech)
+    restored: {ipa: "án.dra‿moj én.ne.pe, ...", respell: "AN-dra‿moy˘ EN-ne-pe, ..."}
+    erasmian: {ipa: "ˈan.dra‿moi ˈen.ne.pe, ...", respell: "AN-dra‿moy EN-ne-pe, ..."}
 ```
+
+`phrase` joins with ‿ the words sounded as one (an elided word and the next, a clitic and its host) and,
+in the first scheme of a hexameter, reads short the final long vowels the scan shortens (correption),
+marked ˘ in the respelling. It is built from the tokens' sound in the same draft, so a curated change
+to a token's sound does not reach it until the work is drafted again.
 
 ## curated/bookNN.yaml
 
@@ -301,6 +309,28 @@ Two manifest fields handle a treebank whose units do not match the passage.
 - `treebank.sentences: [first, last]`, for GLAUx: the first and last sentence ids of the passage, where a
   passage begins or ends inside one of GLAUx's `subdoc` citations (which follow the Perseus page
   divisions, not the printed page breaks).
+
+## Keyed treebanks
+
+A corpus that names each word by an identifier (Oracc's word references, the TLA's token ids) is read as
+`format: keyed`. Each edition token carries that identifier in the field `treebank.key` names, and the
+language module reads the file the manifest names into a table of rows:
+
+```yaml
+treebank:
+  id: oracc-epsd2-literary
+  format: keyed
+  key: ref                       # the edition token field that holds the corpus identifier
+  file: sources/P346196.json     # the one place the file is named, relative to the work
+```
+
+The module supplies `load_treebank(path, spec) -> {identifier: {form, lemma, postag, ref, extra?,
+lemma_missing?}}`; `extra` holds fields only that corpus has (Oracc's `oracc_morph`, `oracc_sense`), which
+draft copies onto the token. Draft looks each token up, sets `lemma`, `morph` and `tb`, and reports under
+the core names: `no-treebank-word` (no row for the identifier), `form-mismatch` (the edition's form is not
+the corpus's), `treebank-lemma-missing` (a row the corpus left unlemmatized). The module's `token_fields`
+receives the row as `tb_row` for anything else it needs from it (the TLA's sign codes). Design:
+`docs/design/keyed-treebanks.md`.
 
 ## notes/bookNN.yaml
 

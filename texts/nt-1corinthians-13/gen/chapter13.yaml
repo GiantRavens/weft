@@ -6,6 +6,7 @@ layers:
   lemma: {src: morphgnt-6.12}
   morph: {src: morphgnt-6.12}
   sound: {src: weft.greek 0.1}
+  phrase: {src: weft.greek connected speech 0.1}
 lines:
 - id: 1cor.13.1
   cite: urn:cts:greekLit:tlg0031.tlg007.sblgnt:13.1
@@ -166,6 +167,11 @@ lines:
     sound:
       koine: {ipa: a.la.ˈla.zon, respell: a-la-LA-zon}
       erasmian: {ipa: a.la.ˈla.dzon, respell: a-la-LA-dzon}
+  phrase:
+    koine: {ipa: 'ɛ.ˈan ˈtɛs ˈɣlos.sɛs ˈton an.ˈθro.pon la.ˈlo ˈkɛ ˈton aŋ.ˈjɛ.lon, a.ˈɣa.pen ˈðɛ ˈme ˈɛ.xo, ˈjɛ.ɣo.na xal.ˈkos e.ˈxon ˈe ˈkym.va.lon a.la.ˈla.zon.', respell: 'e-AN TES GHLOS-ses TON an-THRO-pon
+        la-LO KE TON ang-YE-lon, a-GHA-payn DHE MAY E-kho, YE-gho-na khal-KOS ay-KHON AY KÜM-va-lon a-la-LA-zon.'}
+    erasmian: {ipa: 'e.ˈan ˈtais ˈɡlɔːs.sais ˈtɔːn an.ˈθrɔː.pɔːn la.ˈlɔː ˈkai ˈtɔːn aŋ.ˈɡe.lɔːn, a.ˈɡa.pɛːn ˈde ˈmɛː ˈe.xɔː, ˈɡe.ɡo.na xal.ˈkos ɛː.ˈxɔːn ˈɛː ˈkym.ba.lon a.la.ˈla.dzon.', respell: 'e-AN TAIS
+        GLOHS-sais TOHN an-THROH-pohn la-LOH KAI TOHN ang-GE-lohn, a-GA-payn DE MAY E-khoh, GE-go-na khal-KOS ay-KHOHN AY KÜM-ba-lon a-la-LA-dzon.'}
 - id: 1cor.13.2
   cite: urn:cts:greekLit:tlg0031.tlg007.sblgnt:13.2
   text: καὶ ἐὰν ἔχω προφητείαν καὶ εἰδῶ τὰ μυστήρια πάντα καὶ πᾶσαν τὴν γνῶσιν, καὶ ἐὰν ἔχω πᾶσαν τὴν πίστιν ὥστε ὄρη μεθιστάναι, ἀγάπην δὲ μὴ ἔχω, οὐθέν εἰμι.
@@ -398,6 +404,12 @@ lines:
     sound:
       koine: {ipa: i.mi, respell: ee-mee}
       erasmian: {ipa: ei.mi, respell: ay-mi}
+  phrase:
+    koine: {ipa: 'ˈkɛ ɛ.ˈan ˈɛ.xo pro.fe.ˈti.an ˈkɛ i.ˈðo ˈta mys.ˈte.ri.a ˈpan.ta ˈkɛ ˈpa.san ˈten ˈɣno.sin, ˈkɛ ɛ.ˈan ˈɛ.xo ˈpa.san ˈten ˈpis.tin ˈos.tɛ ˈo.re mɛ.θis.ˈta.nɛ, a.ˈɣa.pen ˈðɛ ˈme ˈɛ.xo, u.ˈθɛn‿i.mi.',
+      respell: 'KE e-AN E-kho pro-fay-TEE-an KE ee-DHO TA müs-TAY-ree-a PAN-ta KE PA-san TAYN GHNO-seen, KE e-AN E-kho PA-san TAYN PEES-teen OS-te O-ray me-thees-TA-ne, a-GHA-payn DHE MAY E-kho, oo-THEN‿ee-mee.'}
+    erasmian: {ipa: 'ˈkai e.ˈan ˈe.xɔː pro.fɛː.ˈtei.an ˈkai ei.ˈdɔː ˈta mys.ˈtɛː.ri.a ˈpan.ta ˈkai ˈpaː.san ˈtɛːn ˈɡnɔː.sin, ˈkai e.ˈan ˈe.xɔː ˈpaː.san ˈtɛːn ˈpis.tin ˈhɔːs.te ˈo.rɛː me.θis.ˈta.nai, a.ˈɡa.pɛːn
+        ˈde ˈmɛː ˈe.xɔː, uː.ˈθen‿ei.mi.', respell: 'KAI e-AN E-khoh pro-fay-TAY-an KAI ay-DOH TA müs-TAY-ri-a PAN-ta KAI PAA-san TAYN GNOH-sin, KAI e-AN E-khoh PAA-san TAYN PIS-tin HOHS-te O-ray me-this-TA-nai,
+        a-GA-payn DE MAY E-khoh, oo-THEN‿ay-mi.'}
 - id: 1cor.13.3
   cite: urn:cts:greekLit:tlg0031.tlg007.sblgnt:13.3
   text: καὶ ἐὰν ψωμίσω πάντα τὰ ὑπάρχοντά μου, καὶ ἐὰν παραδῶ τὸ σῶμά μου, ἵνα καυθήσομαι, ἀγάπην δὲ μὴ ἔχω, οὐδὲν ὠφελοῦμαι.
@@ -575,6 +587,11 @@ lines:
     sound:
       koine: {ipa: o.fɛ.ˈlu.mɛ, respell: o-fe-LOO-me}
       erasmian: {ipa: ɔː.fe.ˈluː.mai, respell: oh-fe-LOO-mai}
+  phrase:
+    koine: {ipa: 'ˈkɛ ɛ.ˈan pso.ˈmi.so ˈpan.ta ˈta y.ˈpar.xon.ˈta‿mu, ˈkɛ ɛ.ˈan pa.ra.ˈðo ˈto ˈso.ˈma‿mu, ˈi.na kav.ˈθe.so.mɛ, a.ˈɣa.pen ˈðɛ ˈme ˈɛ.xo, u.ˈðɛn o.fɛ.ˈlu.mɛ.', respell: 'KE e-AN pso-MEE-so
+        PAN-ta TA ü-PAR-khon-TA‿moo, KE e-AN pa-ra-DHO TO SO-MA‿moo, EE-na kav-THAY-so-me, a-GHA-payn DHE MAY E-kho, oo-DHEN o-fe-LOO-me.'}
+    erasmian: {ipa: 'ˈkai e.ˈan psɔː.ˈmi.sɔː ˈpan.ta ˈta hy.ˈpar.xon.ˈta‿muː, ˈkai e.ˈan pa.ra.ˈdɔː ˈto ˈsɔː.ˈma‿muː, ˈhi.na kau.ˈθɛː.so.mai, a.ˈɡa.pɛːn ˈde ˈmɛː ˈe.xɔː, uː.ˈden ɔː.fe.ˈluː.mai.', respell: 'KAI
+        e-AN psoh-MI-soh PAN-ta TA hü-PAR-khon-TA‿moo, KAI e-AN pa-ra-DOH TO SOH-MA‿moo, HI-na kow-THAY-so-mai, a-GA-payn DE MAY E-khoh, oo-DEN oh-fe-LOO-mai.'}
 - id: 1cor.13.4
   cite: urn:cts:greekLit:tlg0031.tlg007.sblgnt:13.4
   text: Ἡ ἀγάπη μακροθυμεῖ, χρηστεύεται ἡ ἀγάπη, οὐ ζηλοῖ ἡ ἀγάπη, οὐ περπερεύεται, οὐ φυσιοῦται,
@@ -603,7 +620,9 @@ lines:
     tb: 071304/3
     sound:
       koine: {ipa: ma.kro.θy.ˈmi, respell: ma-kro-thü-MEE}
-      erasmian: {ipa: ma.kro.θy.ˈmei, respell: ma-kro-thü-MAY}
+      erasmian: {ipa: ma.kro.θyː.ˈmei, respell: ma-kro-thüü-MAY}
+    prov: {sound: weft.greek 0.1 + vowel length from LSJ (μακροθυμέω) and the first declension}
+    conf: {sound: 0.8}
   - id: 1cor.13.4.4
     surface: χρηστεύεται
     lemma: χρηστεύομαι
@@ -696,6 +715,11 @@ lines:
     sound:
       koine: {ipa: fy.si.ˈu.tɛ, respell: fü-see-OO-te}
       erasmian: {ipa: fy.si.ˈuː.tai, respell: fü-si-OO-tai}
+  phrase:
+    koine: {ipa: 'e‿a.ˈɣa.pe ma.kro.θy.ˈmi, xres.ˈtev.ɛ.tɛ e‿a.ˈɣa.pe, u‿ze.ˈly e‿a.ˈɣa.pe, u‿pɛr.pɛ.ˈrev.ɛ.tɛ, u‿fy.si.ˈu.tɛ,', respell: 'ay‿a-GHA-pay ma-kro-thü-MEE, khrays-TAYV-e-te ay‿a-GHA-pay, oo‿zay-LÜ
+        ay‿a-GHA-pay, oo‿per-pe-RAYV-e-te, oo‿fü-see-OO-te,'}
+    erasmian: {ipa: 'hɛː‿a.ˈɡa.pɛː ma.kro.θyː.ˈmei, xrɛːs.ˈteu.e.tai hɛː‿a.ˈɡa.pɛː, uː‿dzɛː.ˈloi hɛː‿a.ˈɡa.pɛː, uː‿per.pe.ˈreu.e.tai, uː‿fy.si.ˈuː.tai,', respell: 'hay‿a-GA-pay ma-kro-thüü-MAY, khrays-TYOO-e-tai
+        hay‿a-GA-pay, oo‿dzay-LOY hay‿a-GA-pay, oo‿per-pe-RYOO-e-tai, oo‿fü-si-OO-tai,'}
 - id: 1cor.13.5
   cite: urn:cts:greekLit:tlg0031.tlg007.sblgnt:13.5
   text: οὐκ ἀσχημονεῖ, οὐ ζητεῖ τὰ ἑαυτῆς, οὐ παροξύνεται, οὐ λογίζεται τὸ κακόν,
@@ -800,6 +824,11 @@ lines:
     sound:
       koine: {ipa: ka.ˈkon, respell: ka-KON}
       erasmian: {ipa: ka.ˈkon, respell: ka-KON}
+  phrase:
+    koine: {ipa: 'uk‿as.xe.mo.ˈni, u‿ze.ˈti ˈta ɛ.av.ˈtes, u‿pa.ro.ˈksy.nɛ.tɛ, u‿lo.ˈji.zɛ.tɛ ˈto ka.ˈkon,', respell: 'ook‿as-khay-mo-NEE, oo‿zay-TEE TA e-av-TAYS, oo‿pa-ro-KSÜ-ne-te, oo‿lo-YEE-ze-te TO
+        ka-KON,'}
+    erasmian: {ipa: 'uːk‿as.xɛː.mo.ˈnei, uː‿dzɛː.ˈtei ˈta he.au.ˈtɛːs, uː‿pa.ro.ˈksy.ne.tai, uː‿lo.ˈɡi.dze.tai ˈto ka.ˈkon,', respell: 'ook‿as-khay-mo-NAY, oo‿dzay-TAY TA he-ow-TAYS, oo‿pa-ro-KSÜ-ne-tai,
+        oo‿lo-GI-dze-tai TO ka-KON,'}
 - id: 1cor.13.6
   cite: urn:cts:greekLit:tlg0031.tlg007.sblgnt:13.6
   text: οὐ χαίρει ἐπὶ τῇ ἀδικίᾳ, συγχαίρει δὲ τῇ ἀληθείᾳ·
@@ -878,6 +907,9 @@ lines:
     sound:
       koine: {ipa: a.le.ˈθi.a, respell: a-lay-THEE-a}
       erasmian: {ipa: a.lɛː.ˈθei.aː, respell: a-lay-THAY-aa}
+  phrase:
+    koine: {ipa: 'u‿ˈxɛ.ri ɛ.ˈpi ˈte a.ði.ˈki.a, syŋ.ˈxɛ.ri ˈðɛ ˈte a.le.ˈθi.a·', respell: 'oo‿KHE-ree e-PEE TAY a-dhee-KEE-a, süng-KHE-ree DHE TAY a-lay-THEE-a·'}
+    erasmian: {ipa: 'uː‿ˈxai.rei e.ˈpi ˈtɛː a.di.ˈki.aː, syŋ.ˈxai.rei ˈde ˈtɛː a.lɛː.ˈθei.aː·', respell: 'oo‿KHAI-ray e-PI TAY a-di-KI-aa, süng-KHAI-ray DE TAY a-lay-THAY-aa·'}
 - id: 1cor.13.7
   cite: urn:cts:greekLit:tlg0031.tlg007.sblgnt:13.7
   text: πάντα στέγει, πάντα πιστεύει, πάντα ἐλπίζει, πάντα ὑπομένει.
@@ -950,6 +982,9 @@ lines:
     sound:
       koine: {ipa: y.po.ˈmɛ.ni, respell: ü-po-ME-nee}
       erasmian: {ipa: hy.po.ˈme.nei, respell: hü-po-ME-nay}
+  phrase:
+    koine: {ipa: 'ˈpan.ta ˈstɛ.ji, ˈpan.ta pis.ˈtev.i, ˈpan.ta ɛl.ˈpi.zi, ˈpan.ta y.po.ˈmɛ.ni.', respell: 'PAN-ta STE-yee, PAN-ta pees-TAYV-ee, PAN-ta el-PEE-zee, PAN-ta ü-po-ME-nee.'}
+    erasmian: {ipa: 'ˈpan.ta ˈste.ɡei, ˈpan.ta pis.ˈteu.ei, ˈpan.ta el.ˈpi.dzei, ˈpan.ta hy.po.ˈme.nei.', respell: 'PAN-ta STE-gay, PAN-ta pis-TYOO-ay, PAN-ta el-PI-dzay, PAN-ta hü-po-ME-nay.'}
 - id: 1cor.13.8
   cite: urn:cts:greekLit:tlg0031.tlg007.sblgnt:13.8
   text: Ἡ ἀγάπη οὐδέποτε πίπτει. εἴτε δὲ προφητεῖαι, καταργηθήσονται· εἴτε γλῶσσαι, παύσονται· εἴτε γνῶσις, καταργηθήσεται.
@@ -1073,6 +1108,11 @@ lines:
     sound:
       koine: {ipa: ka.tar.je.ˈθe.sɛ.tɛ, respell: ka-tar-yay-THAY-se-te}
       erasmian: {ipa: ka.tar.ɡɛː.ˈθɛː.se.tai, respell: ka-tar-gay-THAY-se-tai}
+  phrase:
+    koine: {ipa: 'e‿a.ˈɣa.pe u.ˈðɛ.po.tɛ ˈpip.ti. ˈi.tɛ ˈðɛ pro.fe.ˈti.ɛ, ka.tar.je.ˈθe.son.tɛ· ˈi.tɛ ˈɣlos.sɛ, ˈpav.son.tɛ· ˈi.tɛ ˈɣno.sis, ka.tar.je.ˈθe.sɛ.tɛ.', respell: 'ay‿a-GHA-pay oo-DHE-po-te PEEP-tee.
+        EE-te DHE pro-fay-TEE-e, ka-tar-yay-THAY-son-te· EE-te GHLOS-se, PAV-son-te· EE-te GHNO-sees, ka-tar-yay-THAY-se-te.'}
+    erasmian: {ipa: 'hɛː‿a.ˈɡa.pɛː uː.ˈde.po.te ˈpip.tei. ˈei.te ˈde pro.fɛː.ˈtei.ai, ka.tar.ɡɛː.ˈθɛː.son.tai· ˈei.te ˈɡlɔːs.sai, ˈpau.son.tai· ˈei.te ˈɡnɔː.sis, ka.tar.ɡɛː.ˈθɛː.se.tai.', respell: 'hay‿a-GA-pay
+        oo-DE-po-te PIP-tay. AY-te DE pro-fay-TAY-ai, ka-tar-gay-THAY-son-tai· AY-te GLOHS-sai, POW-son-tai· AY-te GNOH-sis, ka-tar-gay-THAY-se-tai.'}
 - id: 1cor.13.9
   cite: urn:cts:greekLit:tlg0031.tlg007.sblgnt:13.9
   text: ἐκ μέρους γὰρ γινώσκομεν καὶ ἐκ μέρους προφητεύομεν·
@@ -1142,6 +1182,9 @@ lines:
     sound:
       koine: {ipa: pro.fe.ˈtev.o.mɛn, respell: pro-fay-TAYV-o-men}
       erasmian: {ipa: pro.fɛː.ˈteu.o.men, respell: pro-fay-TYOO-o-men}
+  phrase:
+    koine: {ipa: ɛk‿ˈmɛ.rus ˈɣar ji.ˈnos.ko.mɛn ˈkɛ ɛk‿ˈmɛ.rus pro.fe.ˈtev.o.mɛn·, respell: ek‿ME-roos GHAR yee-NOS-ko-men KE ek‿ME-roos pro-fay-TAYV-o-men·}
+    erasmian: {ipa: ek‿ˈme.ruːs ˈɡar ɡi.ˈnɔːs.ko.men ˈkai ek‿ˈme.ruːs pro.fɛː.ˈteu.o.men·, respell: ek‿ME-roos GAR gi-NOHS-ko-men KAI ek‿ME-roos pro-fay-TYOO-o-men·}
 - id: 1cor.13.10
   cite: urn:cts:greekLit:tlg0031.tlg007.sblgnt:13.10
   text: ὅταν δὲ ἔλθῃ τὸ τέλειον, τὸ ἐκ μέρους καταργηθήσεται.
@@ -1220,6 +1263,9 @@ lines:
     sound:
       koine: {ipa: ka.tar.je.ˈθe.sɛ.tɛ, respell: ka-tar-yay-THAY-se-te}
       erasmian: {ipa: ka.tar.ɡɛː.ˈθɛː.se.tai, respell: ka-tar-gay-THAY-se-tai}
+  phrase:
+    koine: {ipa: 'ˈo.tan ˈðɛ ˈɛl.θe ˈto ˈtɛ.li.on, ˈto ɛk‿ˈmɛ.rus ka.tar.je.ˈθe.sɛ.tɛ.', respell: 'O-tan DHE EL-thay TO TE-lee-on, TO ek‿ME-roos ka-tar-yay-THAY-se-te.'}
+    erasmian: {ipa: 'ˈho.tan ˈde ˈel.θɛː ˈto ˈte.lei.on, ˈto ek‿ˈme.ruːs ka.tar.ɡɛː.ˈθɛː.se.tai.', respell: 'HO-tan DE EL-thay TO TE-lay-on, TO ek‿ME-roos ka-tar-gay-THAY-se-tai.'}
 - id: 1cor.13.11
   cite: urn:cts:greekLit:tlg0031.tlg007.sblgnt:13.11
   text: ὅτε ἤμην νήπιος, ἐλάλουν ὡς νήπιος, ἐφρόνουν ὡς νήπιος, ἐλογιζόμην ὡς νήπιος· ὅτε γέγονα ἀνήρ, κατήργηκα τὰ τοῦ νηπίου.
@@ -1382,6 +1428,11 @@ lines:
     sound:
       koine: {ipa: ne.ˈpi.u, respell: nay-PEE-oo}
       erasmian: {ipa: nɛː.ˈpi.uː, respell: nay-PI-oo}
+  phrase:
+    koine: {ipa: 'ˈo.tɛ ˈe.men ˈne.pi.os, ɛ.ˈla.lun os‿ˈne.pi.os, ɛ.ˈfro.nun os‿ˈne.pi.os, ɛ.lo.ji.ˈzo.men os‿ˈne.pi.os· ˈo.tɛ ˈjɛ.ɣo.na a.ˈner, ka.ˈter.je.ka ˈta ˈtu ne.ˈpi.u.', respell: 'O-te AY-mayn
+        NAY-pee-os, e-LA-loon os‿NAY-pee-os, e-FRO-noon os‿NAY-pee-os, e-lo-yee-ZO-mayn os‿NAY-pee-os· O-te YE-gho-na a-NAYR, ka-TAYR-yay-ka TA TOO nay-PEE-oo.'}
+    erasmian: {ipa: 'ˈho.te ˈɛː.mɛːn ˈnɛː.pi.os, e.ˈla.luːn hɔːs‿ˈnɛː.pi.os, e.ˈfro.nuːn hɔːs‿ˈnɛː.pi.os, e.lo.ɡi.ˈdzo.mɛːn hɔːs‿ˈnɛː.pi.os· ˈho.te ˈɡe.ɡo.na a.ˈnɛːr, ka.ˈtɛːr.ɡɛː.ka ˈta ˈtuː nɛː.ˈpi.uː.',
+      respell: 'HO-te AY-mayn NAY-pi-os, e-LA-loon hohs‿NAY-pi-os, e-FRO-noon hohs‿NAY-pi-os, e-lo-gi-DZO-mayn hohs‿NAY-pi-os· HO-te GE-go-na a-NAYR, ka-TAYR-gay-ka TA TOO nay-PI-oo.'}
 - id: 1cor.13.12
   cite: urn:cts:greekLit:tlg0031.tlg007.sblgnt:13.12
   text: βλέπομεν γὰρ ἄρτι δι’ ἐσόπτρου ἐν αἰνίγματι, τότε δὲ πρόσωπον πρὸς πρόσωπον· ἄρτι γινώσκω ἐκ μέρους, τότε δὲ ἐπιγνώσομαι καθὼς καὶ ἐπεγνώσθην.
@@ -1566,6 +1617,11 @@ lines:
     sound:
       koine: {ipa: ɛ.pɛɣ.ˈnos.θen, respell: e-pegh-NOS-thayn}
       erasmian: {ipa: e.peɡ.ˈnɔːs.θɛːn, respell: e-peg-NOHS-thayn}
+  phrase:
+    koine: {ipa: 'ˈvlɛ.po.mɛn ˈɣar ˈar.ti ði‿ɛ.ˈsop.tru ɛn‿ɛ.ˈniɣ.ma.ti, ˈto.tɛ ˈðɛ ˈpro.so.pon ˈpros ˈpro.so.pon· ˈar.ti ji.ˈnos.ko ɛk‿ˈmɛ.rus, ˈto.tɛ ˈðɛ ɛ.piɣ.ˈno.so.mɛ ka.ˈθos ˈkɛ ɛ.pɛɣ.ˈnos.θen.',
+      respell: 'VLE-po-men GHAR AR-tee dhee‿e-SOP-troo en‿e-NEEGH-ma-tee, TO-te DHE PRO-so-pon PROS PRO-so-pon· AR-tee yee-NOS-ko ek‿ME-roos, TO-te DHE e-peegh-NO-so-me ka-THOS KE e-pegh-NOS-thayn.'}
+    erasmian: {ipa: 'ˈble.po.men ˈɡar ˈar.ti di‿e.ˈsop.truː en‿ai.ˈniɡ.ma.ti, ˈto.te ˈde ˈpro.sɔː.pon ˈpros ˈpro.sɔː.pon· ˈar.ti ɡi.ˈnɔːs.kɔː ek‿ˈme.ruːs, ˈto.te ˈde e.piɡ.ˈnɔː.so.mai ka.ˈθɔːs ˈkai e.peɡ.ˈnɔːs.θɛːn.',
+      respell: 'BLE-po-men GAR AR-ti di‿e-SOP-troo en‿ai-NIG-ma-ti, TO-te DE PRO-soh-pon PROS PRO-soh-pon· AR-ti gi-NOHS-koh ek‿ME-roos, TO-te DE e-pig-NOH-so-mai ka-THOHS KAI e-peg-NOHS-thayn.'}
 - id: 1cor.13.13
   cite: urn:cts:greekLit:tlg0031.tlg007.sblgnt:13.13
   text: νυνὶ δὲ μένει πίστις, ἐλπίς, ἀγάπη· τὰ τρία ταῦτα, μείζων δὲ τούτων ἡ ἀγάπη.
@@ -1577,7 +1633,9 @@ lines:
     tb: 071313/1
     sound:
       koine: {ipa: ny.ˈni, respell: nü-NEE}
-      erasmian: {ipa: ny.ˈni, respell: nü-NI}
+      erasmian: {ipa: nyː.ˈni, respell: nüü-NI}
+    prov: {sound: weft.greek 0.1 + vowel length from LSJ (νυνί) and the first declension}
+    conf: {sound: 0.8}
   - id: 1cor.13.13.2
     surface: δὲ
     lemma: δέ
@@ -1687,3 +1745,8 @@ lines:
     sound:
       koine: {ipa: a.ˈɣa.pe, respell: a-GHA-pay}
       erasmian: {ipa: a.ˈɡa.pɛː, respell: a-GA-pay}
+  phrase:
+    koine: {ipa: 'ny.ˈni ˈðɛ ˈmɛ.ni ˈpis.tis, ɛl.ˈpis, a.ˈɣa.pe· ˈta ˈtri.a ˈtav.ta, ˈmi.zon ˈðɛ ˈtu.ton e‿a.ˈɣa.pe.', respell: 'nü-NEE DHE ME-nee PEES-tees, el-PEES, a-GHA-pay· TA TREE-a TAV-ta, MEE-zon
+        DHE TOO-ton ay‿a-GHA-pay.'}
+    erasmian: {ipa: 'nyː.ˈni ˈde ˈme.nei ˈpis.tis, el.ˈpis, a.ˈɡa.pɛː· ˈta ˈtri.a ˈtau.ta, ˈmei.dzɔːn ˈde ˈtuː.tɔːn hɛː‿a.ˈɡa.pɛː.', respell: 'nüü-NI DE ME-nay PIS-tis, el-PIS, a-GA-pay· TA TRI-a TOW-ta,
+        MAY-dzohn DE TOO-tohn hay‿a-GA-pay.'}

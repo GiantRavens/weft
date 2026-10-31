@@ -23,7 +23,7 @@ spelled out (Case=Comitative), because the page's decoder reads Com as common ge
 writes one morpheme e for both the ergative (the agent) and the directive ('at, on'); Weft keeps
 that ambiguity as Case=Ergative-or-Directive rather than choosing. Oracc's own string is kept
 beside it as `oracc_morph`. A word Oracc did not lemmatize is reported as
-`oracc-unlemmatized`; a broken sign (x) as `sign-illegible`.
+`treebank-lemma-missing` (draft's keyed treebank); a broken sign (x) as `sign-illegible`.
 
 The cuneiform row is generated from the sign reading through the Oracc Sign List value table
 (data/akk_osl_values.tsv, CC0), reused from weft.akkadian. A reading the table does not know is
@@ -74,11 +74,10 @@ _CDL: dict[str, dict[str, dict]] = {}
 
 
 def _resolve(rel: str) -> Path:
-    """A section's `oracc_json` is relative to its work folder; find it under texts/ or private/."""
-    for root in ("texts", "private"):
-        hits = sorted((REPO / root).glob(f"*/{rel}"))
-        if hits:
-            return hits[0]
+    """The corpus file: draft passes its path (the manifest's treebank.file under the work's folder)."""
+    p = Path(rel)
+    if p.exists():
+        return p
     raise SystemExit(f"weft.sumerian: {rel} not found; run `weft acquire` for this work")
 
 
@@ -180,7 +179,7 @@ def sound_form(reading: str) -> str:
     return "-".join(p for p in re.split(r"[-.]", r) if p)
 
 
-def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[str, str]]]:
+def token_fields(surface: str, et: dict, group: dict, tb_row: dict | None = None) -> tuple[dict, list[tuple[str, str]]]:
     fields: dict = {}
     fails: list[tuple[str, str]] = []
     sg = et.get("sg") or clean(surface)
@@ -194,29 +193,26 @@ def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[
         for s in missing:
             fails.append(("sign-unmapped", f"{s} in {sg}"))
     fields["norm"] = et.get("n") or sound_form(sg)
-    ref = et.get("ref")
-    if not ref or not group.get("oracc_json"):
-        fails.append(("oracc-ref-missing", surface))
-        return fields, fails
-    node = oracc_words(group["oracc_json"]).get(ref)
-    if node is None:
-        fails.append(("oracc-ref-missing", f"{ref} {surface}"))
-        return fields, fails
-    if node.get("frag") != surface:
-        # sensor: the edition token must be the Oracc form at that reference, verbatim
-        fails.append(("token-not-in-oracc", f"{ref}: edition {surface}, Oracc {node.get('frag')}"))
-    f = node.get("f", {})
-    fields["tb"] = ref
-    if f.get("cf"):
-        fields["lemma"] = f"{f['cf']}[{f.get('gw', '')}]{f.get('pos', '')}"
-        fields["morph"] = ud_morph(f.get("pos"), f.get("morph"))
-        fields["oracc_morph"] = f.get("morph")
-        fields["oracc_sense"] = f.get("sense")
-    else:
-        fields["lemma"] = "not lemmatized"
-        fields["morph"] = "X"
-        fails.append(("oracc-unlemmatized", f"{ref} {surface}"))
+    # lemma, morphology and the Oracc reference come from draft's keyed treebank (load_treebank below),
+    # which also reports a missing reference, a form that differs and a word Oracc leaves unlemmatized
     return fields, fails
+
+
+def load_treebank(path: Path, spec: dict) -> dict[str, dict]:
+    """Draft's keyed format (pin 70): {Oracc word ref: row} for one Oracc corpus JSON file. A row carries the
+    Oracc form (frag), the lemma as citation form [guide word] POS, the morphology as UD features, and
+    Oracc's own morpheme string and sense; a word Oracc leaves unlemmatized is marked lemma_missing."""
+    rows: dict[str, dict] = {}
+    for ref, node in oracc_words(str(path)).items():
+        f = node.get("f", {})
+        row = {"form": node.get("frag"), "ref": ref}
+        if f.get("cf"):
+            row.update(lemma=f"{f['cf']}[{f.get('gw', '')}]{f.get('pos', '')}", postag=ud_morph(f.get("pos"), f.get("morph")),
+                       extra={"oracc_morph": f.get("morph"), "oracc_sense": f.get("sense")})
+        else:
+            row.update(lemma="not lemmatized", postag="X", lemma_missing=True)
+        rows[ref] = row
+    return rows
 
 
 # ---------------------------------------------------------------- sound

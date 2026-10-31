@@ -6,10 +6,10 @@ counts:
   lines: 19
   tokens: 96
 failures:
-  oracc-unlemmatized: 4
+  treebank-lemma-missing: 4
   sign-illegible: 1
 samples:
-  oracc-unlemmatized:
+  treebank-lemma-missing:
   - 5.4 P346196.6.2 gurun
   - 5.4 P346196.6.5 ud
   - 5.4 P346196.6.6 lu-u₁₉-lu-za
@@ -17,7 +17,7 @@ samples:
   sign-illegible:
   - 5.6 x
 failure_rate:
-  oracc-unlemmatized: 0.042
+  treebank-lemma-missing: 0.042
   sign-illegible: 0.01
 shift_left: []
 predicted_gaps:
@@ -25,8 +25,8 @@ predicted_gaps:
   from it (Q000623); no individual manuscript of it is edited in an openly licensed corpus. This edition takes instead a complete hymn from the Temple Hymns, the other major work attributed to Enheduanna,
   from an Ur manuscript that is not ETCSL data'
 - 'the edition is one manuscript, not a composite: its wording and line division differ from the composite text (this hymn is 15 lines in the ancient count, 19 on this tablet)'
-- 'one sign is broken (line 6: sign-illegible, and with three words of line 4 it makes four oracc-unlemmatized tokens: x, gurun, ud, lu-u₁₉-lu-za); their lemma and form are marked as unknown and their gloss
-  is bracketed'
+- 'one sign is broken (line 6: sign-illegible, and with three words of line 4 it makes four treebank-lemma-missing tokens: x, gurun, ud, lu-u₁₉-lu-za); their lemma and form are marked as unknown and their
+  gloss is bracketed'
 - the Oracc JSON drops the scribal-error and query flags that the Oracc page prints (an!? in line 1, nun! in line 2); the edition reproduces the JSON forms, and the notes name the flags
 - 'Oracc and CDLI read two signs differently: u₁₉ (URU) against ulu₃ (URU×MIN) in line 4, and kišib (MES) against kišib₃ (DUB) in line 13. The cuneiform row follows Oracc'
 - Oracc's parse is followed for lemma and morphology, including three readings other editions do not share (ki-gal-la as genitive, ur-saŋ-ŋa₂ with 'my', Ninurta-ke₄ as genitive); the notes discuss them

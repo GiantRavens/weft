@@ -11,7 +11,6 @@ failures:
   tb-line-borrow: 2
   metre-no-fit: 1
   metre-ambiguous: 1
-  lemma-not-in-lexicon: 67
 metre_licences:
   metre-dichronon-long: 168
   metre-synizesis-assumed: 5
@@ -19,6 +18,16 @@ metre_licences:
   metre-lengthening: 8
   metre-lengthening-before-liquid: 1
   metre-internal-correption: 1
+quantity_sources:
+  unmarked: 2123
+  table: 57
+  none-needed: 2289
+  lexicon: 50
+phrase_links:
+  elision: 455
+  enclitic: 281
+  proclitic: 108
+  correption: 203
 samples:
   morph-empty-declinable:
   - 1.3 Ἄϊδι (---------)
@@ -36,22 +45,16 @@ samples:
   - 1.277 μήτε σὺ Πηλείδη ἔθελʼ ἐριζέμεναι βασιλῆϊ
   metre-ambiguous:
   - 1.583 —◡◡|——|—◡◡|—◡◡|—◡◡|—× or —◡◡|—◡◡|——|—◡◡|—◡◡|—×
-  lemma-not-in-lexicon:
-  - il.1.1.4 Πηληιάδης
-  - il.1.11.3 Χρύσης
-  - il.1.16.3 μάλιστα
-  - il.1.30.7 πάτρη
-  - il.1.37.5 Χρύση
 failure_rate:
   morph-empty-declinable: 0.002
   form-mismatch: 0.0
   tb-line-borrow: 0.0
   metre-no-fit: 0.0
   metre-ambiguous: 0.0
-  lemma-not-in-lexicon: 0.015
 shift_left: []
 predicted_gaps:
-- a/i/u vowel length not marked in the spelling; the two quantity tables cover the words they list (long by LSJ and confirmed by the metre), others default to short
+- a/i/u vowel length not marked in the spelling; the two quantity tables cover the words they list (long by LSJ and confirmed by the metre), others take LSJ's headword marks where it gives them (50 tokens
+  in book 1, conf 0.8), and the rest are read short
 - treebank is on perseus-grc1, edition is grc2; expect form and elision-mark differences
 - both translations are prose paragraphs; spans follow sentences, or clauses where a long sentence covers many lines (one span still covers the whole proem, 1.1-7, and the longest later spans run to seven
   or eight lines)

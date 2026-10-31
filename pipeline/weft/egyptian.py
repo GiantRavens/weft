@@ -77,7 +77,7 @@ _TLA: dict[str, dict[str, tuple[str, dict]]] = {}
 
 
 def tla_index(rel: str) -> dict[str, tuple[str, dict]]:
-    """token id -> (sentence id, token) for an AES JSON file, path relative to the repository."""
+    """token id -> (sentence id, token) for an AES JSON file (an absolute path, or relative to the repository)."""
     if rel not in _TLA:
         data = json.loads((REPO / rel).read_text(encoding="utf-8"))
         idx = {}
@@ -185,21 +185,25 @@ def _subsequence(a: str, b: str) -> bool:
     return all(c in it for c in a)
 
 
-def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[str, str]]]:
+def load_treebank(path: Path, spec: dict) -> dict[str, dict]:
+    """Draft's keyed format (pin 70): {TLA token id: row} for one AES JSON file. A row carries the written
+    form, the TLA lemma, the part of speech and features as UD, the reference sentence/token, and the TLA
+    token itself (tla) for token_fields, which reads its Gardiner codes."""
+    rows = {}
+    for tid, (sid, t) in tla_index(str(path)).items():
+        rows[tid] = {"form": t.get("written_form"), "lemma": t.get("lemma_form", ""), "postag": ud_morph(t),
+                     "ref": f"{sid}/{tid}", "tla": t}
+    return rows
+
+
+def token_fields(surface: str, et: dict, group: dict, tb_row: dict | None = None) -> tuple[dict, list[tuple[str, str]]]:
+    """Signs, the hieroglyph row and the sound's provenance. Lemma, morphology and the TLA reference come
+    from draft's keyed treebank, which also reports a missing token and a form that differs."""
     fields: dict = {}
     fails: list[tuple[str, str]] = []
     n = et.get("n", surface)
-    rel = group.get("tla_file")
-    hit = tla_index(rel).get(et.get("tla", "")) if rel else None
-    if not hit:
-        fails.append(("tla-token-missing", f"{surface} {et.get('tla')}"))
-    else:
-        sid, t = hit
-        if t.get("written_form") != surface:
-            fails.append(("edition-differs-from-tla", f"{surface} vs {t.get('written_form')}"))
-        fields["lemma"] = t.get("lemma_form", "")
-        fields["morph"] = ud_morph(t)
-        fields["tb"] = f"{sid}/{t['_id']}"
+    if tb_row:
+        t = tb_row["tla"]
         codes = t.get("hiero", "")
         if codes:
             fields["signs"] = codes
@@ -226,11 +230,15 @@ def token_fields(surface: str, et: dict, group: dict) -> tuple[dict, list[tuple[
 
 
 def line_checks(text: str, etoks: list[dict], edition: dict) -> list[tuple[str, str]]:
-    """Sensor: one Weft line is one column of the wall; every token must come from that column."""
-    rel = next((s.get("tla_file") for s in edition.get("sections", []) if s.get("tla_file")), None)
-    if not rel:
+    """Sensor: one Weft line is one column of the wall; every token must come from that column. The TLA
+    file is the one the manifest names (treebank.file)."""
+    from .paths import work_dir
+    import yaml
+    wd = work_dir(REPO, edition["work"])
+    tb = (yaml.safe_load((wd / "manifest.yaml").read_text(encoding="utf-8")) or {}).get("treebank") or {}
+    if not tb.get("file"):
         return []
-    idx = tla_index(rel)
+    idx = tla_index(str(wd / tb["file"]))
     cols = {idx[et["tla"]][1].get("lineCount", "").strip() for et in etoks if et.get("tla") in idx}
     return [("column-split", f"{text[:30]}: {sorted(cols)}")] if len(cols) > 1 else []
 

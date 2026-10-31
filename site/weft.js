@@ -25,6 +25,8 @@
     ["source", "Source text"],
     ...(D.work.show_translit && D.lines.some((l) => l.tokens.some((t) => t.norm)) ? [["translit", D.work.translit_label || "Transliteration"]] : []), ["sound", "Sound"], ["gloss", "Gloss, word for word"],
     ...(D.lines.some((l) => l.reading) ? [["reading", D.work.reading_label || "Reading aloud, whole line"]] : []),
+    // the line spoken whole (pin 18): off until a reader turns it on, so the page keeps its rows
+    ...(D.lines.some((l) => l.phrase) ? [["phrase", "Sound, whole line", false]] : []),
     ["metre", "Meter"], ["sense", "Translations"], ["notes", "Note markers"],
   ];
   const SLIDERS = [
@@ -39,7 +41,7 @@
   const STORE = "weft:" + D.work.work;
   document.body.classList.add("lang-" + D.work.language);
   const defaults = () => ({
-    layers: Object.fromEntries(LAYERS.map(([k]) => [k, true])),
+    layers: Object.fromEntries(LAYERS.map(([k, , on]) => [k, on !== false])),
     scheme: D.schemes[0],
     tr: Object.fromEntries(D.translations.map((t) => [t.id, true])),
     sizes: Object.fromEntries(SLIDERS.map(([v, , , , , , d]) => [v, d])),
@@ -215,6 +217,8 @@
       text.append(h("section", { class: "lineset" + (newStanza ? " stanza-first" : "") + (line.verse ? " verse" : ""), id: line.id },
         gutter, h("div", { class: "body" }, strip,
           line.reading ? h("p", { class: "reading" }, h("span", { class: "rl", text: "Read aloud" }), h("span", { lang: LANG, text: line.reading })) : null,
+          line.phrase && line.phrase[S.scheme] ? h("p", { class: "phrase", title: line.phrase[S.scheme].ipa },
+            h("span", { class: "rl", text: "Spoken whole" }), h("span", { text: line.phrase[S.scheme].respell })) : null,
           metre, spans.length ? sense : null)));
     }
   }
@@ -367,6 +371,10 @@
       has((t) => t.stave) ? h("li", {}, sw("stave"), "A colored first letter marks a stave, the alliterating sound that binds a verse to its partner. The gray line beneath names the verse and its staves.") : null,
       !has((t) => t.stave) && metreMarks ? h("li", {}, "The row of long and short marks beneath a line is its meter, divided into feet by bars.") : null,
       !has((t) => t.stave) && !metreMarks && metreText ? h("li", {}, "The gray line beneath a line describes its meter.") : null,
+      D.lines.some((l) => l.phrase) ? h("li", {}, "Loom can add a row, Spoken whole, with each line as it is said rather than word by word. ",
+        "A tie (‿) joins words sounded as one: a word that lost its last vowel (elision) and the word after it, and a small unaccented word and the word it leans on. ",
+        D.lines.some((l) => l.phrase && /˘/.test((l.phrase[D.schemes[0]] || {}).respell || "")) ? "A ˘ after a syllable marks a long vowel or diphthong the verse reads short before the next word's vowel. " : "",
+        "Hold the pointer on the row for its phonetic transcription.") : null,
       has((t) => t.uncertain) ? h("li", {}, "A dotted underline under a whole word marks a reading or a sound that is uncertain.") : null,
       D.notes.length ? h("li", {}, "A dotted underline in the text color marks a word with a note. The ¶ beside a line number opens the notes on that line.") : null,
       D.translations.length ? h("li", {}, "Translations follow the lines they render, each with its translator and date, so the gloss and a published translation can be read side by side.") : null,

@@ -62,6 +62,11 @@ def _verse_block(block: list[str]) -> bool:
     return all(len(l) <= PROSE_LINE and re.search(r"\w", l) for l in block)
 
 
+def lexica_marks_missing() -> bool:
+    from . import lexica
+    return lexica.lsj_long_marks() is None
+
+
 def stanza_blocks(path: Path) -> tuple[dict[int, list[str]], list[str]]:
     """Plain-text poems laid out as a number line ("76.") followed by the stanza's lines, which may be
     split by a blank line. Returns the stanzas and the text that belongs to none (speaker labels, prose
@@ -247,6 +252,8 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
     repo = work_dir.parents[1]
     failures: Counter[str] = Counter()
     metre_flags: Counter[str] = Counter()   # licenses the hexameter scanner used
+    qsrc: Counter[str] = Counter()          # Greek: where each token's vowel length came from (pin 17)
+    phrase_links: Counter[str] = Counter()  # Greek: the links the connected-speech row made (pin 18)
     samples: dict[str, list[str]] = {}
 
     def fail(cls: str, sample: str):
@@ -278,6 +285,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
     if ed_fmt == "weft-edition":
         # Weft's own edition file: grouped units (inscriptions), tokens given explicitly
         edition = yaml.safe_load((work_dir / m["edition"]["file"]).read_text())
+        edition.setdefault("work", m["work"])       # sensors find the work (and its manifest) from the edition
         glist = edition.get("inscriptions") or edition.get("sections")
         # a line {v: "..."} is a line of verse inside prose (a stanza in a saga): plain text, marked verse
         for g in glist:
@@ -320,6 +328,10 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                 vpath = "+".join(vpath)
             if vpath not in cache:
                 raw_src = " ".join((work_dir / vp).read_text(encoding="utf-8") for vp in vpath.split("+"))
+                # a word split across two Wikisource pages: {{tiret|recon|nois}} ends the first page and
+                # {{tiret2|recon|nois}} begins the next; the word is read once, whole, where the second stands
+                raw_src = re.sub(r"\{\{tiret\|[^|{}]*\|[^|{}]*\}\}", "", raw_src)
+                raw_src = re.sub(r"\{\{tiret2\|([^|{}]*)\|([^|{}]*)\}\}", r"\1\2", raw_src)
                 if edition.get("verify_strip"):       # verse labels printed inside the source lines
                     raw_src = re.sub(edition["verify_strip"], "", raw_src)
                 raw_src = " ".join(raw_src.split())
@@ -405,6 +417,12 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
     elif tb_fmt == "glaux":
         stream, cursor = treebank.load_glaux(tb_path, [str(x) for x in m["treebank"]["subdocs"]],
                                               m["treebank"].get("sentences")), 0
+    elif tb_fmt == "keyed":
+        # a corpus keyed by word: each edition token carries the corpus's identifier for its word (in the
+        # field the manifest names, treebank.key), and the language module reads the corpus file into
+        # {identifier: {form, lemma, postag, ref, extra?, lemma_missing?}} (pin 70)
+        keyed = phon.load_treebank(tb_path, m["treebank"])
+        keyed_key = m["treebank"].get("key", "ref")
     elif tb_fmt == "conllu-citation":
         cit = m["treebank"]["citation"]
         stream, cursor = treebank.load_conllu_citation([tb_path], cit["text"], cit["chapter"]), 0
@@ -539,6 +557,18 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                 fused = k > 1 and (said[:1] == tbw[:1] or (said[:1] in "aāiīuūeo" and tbw[:1] in "aāiīuūeo"))
                 if said[:k3] != tbw[:k3] and not fused and not (said.startswith("gne") and tbw.startswith("agne")):
                     fl.append(f"treebank-form-mismatch: {et['n']} vs {tbw}")
+        elif tb_fmt == "keyed":
+            # look each token up by its identifier; a token without a row is reported as no-treebank-word
+            # below, a row whose form differs from the edition's as form-mismatch, a row without a lemma
+            # as treebank-lemma-missing (the core names for what the Oracc and TLA modules once named)
+            pairs, fl = [], []
+            for et, s_ in zip(etoks, surfaces):
+                row = keyed.get(et.get(keyed_key) or "")
+                pairs.append(row)
+                if row and row.get("form") != s_:
+                    fl.append(f"form-mismatch:{row.get('ref')}: edition {s_}, treebank {row.get('form')}")
+                if row and row.get("lemma_missing"):
+                    fl.append(f"treebank-lemma-missing:{row.get('ref')} {s_}")
         else:
             pairs, fl = [None] * len(surfaces), []
         for f in fl:
@@ -573,7 +603,8 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                 # language hook: extra token fields (a generated script row, a reading) from the module
                 tf_surface = s
                 if hasattr(phon, "token_fields"):
-                    fields, tfails = phon.token_fields(s, et, g)
+                    fields, tfails = (phon.token_fields(s, et, g, tb_row=w) if tb_fmt == "keyed"
+                                      else phon.token_fields(s, et, g))
                     tok.update(fields)
                     for cls, sample in tfails:
                         fail(cls, f"{book}.{n} {sample}")
@@ -589,6 +620,8 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                 tok["lemma"] = w["lemma"]
                 tok["morph"] = w["postag"]
                 tok["tb"] = w.get("ref") or f"{w['sentence']}/{w['word']}"
+                if w.get("extra"):
+                    tok.update(w["extra"])          # fields only one keyed corpus has (Oracc's sense and morphemes)
                 if w.get("qere"):
                     # Ketiv in the text, Qere in the margin: the reading is sounded, the writing is shown
                     tok["norm"] = w["qere"]
@@ -608,9 +641,18 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             elif tb_fmt != "none" and not verse_line:
                 fail("no-treebank-word", f"{book}.{n} {s}")
             snd = {}
+            lexq = None
             if lang == "grc":
-                _, qhit = greek.apply_quantity(greek.normalize_elision(s).rstrip("’"), quantities)
+                bare_s = greek.normalize_elision(s).rstrip("’")
+                _, qhit = greek.apply_quantity(bare_s, quantities)
+                # a long α, ι, υ the spelling does not show: the hand table first, then the lemma's LSJ
+                # headword and the first-declension -ας rule (pin 17); what neither knows stays short
+                if not qhit and tok.get("lemma"):
+                    lexq = greek.quantity_from_lexicon(bare_s, tok["lemma"])
+                qsrc["table" if qhit else "lexicon" if lexq else "unmarked" if greek.unmarked_dichrona(bare_s) else "none-needed"] += 1
             say = tok.get("norm", s)          # runic: sound comes from the normalized form
+            if lexq:
+                say = s.replace(bare_s, lexq) if bare_s in s else lexq
             if ed_fmt == "weft-edition" and groups[book].get("dialect"):
                 extra["dialect"] = groups[book]["dialect"]
             # pointed Hebrew or Aramaic without cantillation (a prayer book): the stress is declared, the
@@ -632,6 +674,11 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
             tok["sound"] = snd
             if lang == "grc" and qhit:
                 tok["prov"] = {"sound": f"weft.greek {greek.VERSION} + quantity table"}
+            elif lang == "grc" and lexq:
+                # agreement with the hand tables, measured 2026-10-30: 36 of 38 forms (the two misses are
+                # endings LSJ cannot give), so a judgment, not a certainty (hard rule 2)
+                tok["prov"] = {"sound": f"weft.greek {greek.VERSION} + vowel length from LSJ ({tok['lemma']}) and the first declension"}
+                tok["conf"] = {"sound": 0.8}
             if lang == "lzh":
                 tr = phon.phonemize(s, "tang", quantities, **tokctx)
                 tok["tone"] = tr.get("tone")
@@ -672,7 +719,7 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         if lang == "grc" and m.get("metre") == "hexameter" and toks:
             # dactylic hexameter scanned from the printed words; the licenses it used (lengthening,
             # synizesis, correption...) are features of the verse, kept as telemetry, not failures
-            hx, hflags = greek.scan_hexameter(text.split(), quantities)
+            hx, hflags, corr = greek.scan_hexameter(text.split(), quantities, detail=True)
             if hx:
                 line_rec["metre"] = hx
             for cls, sample in hflags:
@@ -680,6 +727,18 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                     fail(cls, f"{book}.{n} {sample}")
                 else:
                     metre_flags[cls] += 1
+            # the scan counts the printed words; it names its correptions by their index among them
+            if len(text.split()) == len(toks):
+                correption = set(corr)
+            else:
+                correption = set()
+                fail("phrase-words-differ-from-tokens", f"{book}.{n} {len(text.split())} words, {len(toks)} tokens")
+        else:
+            correption = set()
+        if lang == "grc" and toks:
+            # the line spoken whole (pin 18): elision and clitics linked, correption from the scan
+            line_rec["phrase"], links = greek.connected(toks, m["schemes"], correption)
+            phrase_links.update({k: v for k, v in links.items() if v})
         if token_edition and toks and hasattr(phon, "line_metre"):
             # language hook: meter computed from the line's tokens, with its own failure classes
             m_str, mfails = phon.line_metre(etoks, edition)
@@ -761,6 +820,8 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         gen["layers"].update(phon.LAYERS)
     if lang == "grc" and m.get("metre") == "hexameter":
         gen["layers"]["metre"] = {"src": f"weft.greek hexameter scanner {greek.SCANNER_VERSION}"}
+    if lang == "grc":
+        gen["layers"]["phrase"] = {"src": f"weft.greek connected speech {greek.CONNECTED_VERSION}"}
     stem = ("inscriptions" if "inscriptions" in (yaml.safe_load((work_dir / m["edition"]["file"]).read_text()) or {}) else "sections") if ed_fmt == "weft-edition" else "lines" if book is None and ed_fmt != "stanza-text" else {"stanza-text": "stanzas", "verse-text": "lines"}.get(ed_fmt) or (
         f"chapter{book:02d}" if ed_fmt in ("conllu", "morphgnt", "oshb") else f"book{book:02d}")
     (work_dir / "gen").mkdir(exist_ok=True)
@@ -772,6 +833,9 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
     # all (GLAUx's automatic parses invent some: ταραχθαίνω, κροκύφω). A lemma already corrected in curated/
     # is not reported. Without the headword list on this machine the sensor says it was skipped.
     sensors_skipped = []
+    if lang == "grc" and qsrc and lexica_marks_missing():
+        sensors_skipped.append("vowel length from LSJ: no LSJ quantity list on this machine (run weft lexica); "
+                               "long α, ι, υ that no hand table lists are read short")
     if lang == "grc" and m.get("treebank") and tb_fmt == "glaux":      # automatic parses only; AGDT is by hand
         from . import lexica
         hw = lexica.lsj_headwords()
@@ -801,6 +865,8 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
         "failures": dict(failures),
         **({"metre_licences": dict(metre_flags)} if metre_flags else {}),
         **({"sensors_skipped": sensors_skipped} if sensors_skipped else {}),
+        **({"quantity_sources": dict(qsrc)} if qsrc else {}),
+        **({"phrase_links": dict(phrase_links)} if phrase_links else {}),
         "samples": samples,
         "failure_rate": {k: round(v / max(ntok, 1), 3) for k, v in failures.items()},
         "shift_left": [k for k, v in failures.items() if v / max(ntok, 1) > 0.15],

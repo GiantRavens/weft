@@ -86,6 +86,8 @@ def fetch(log=print) -> Path:
     keys.discard("")
     HEADWORDS.write_text("\n".join(sorted(keys)), encoding="utf-8")
     log(f"{len(keys)} bare LSJ headwords -> {HEADWORDS}")
+    build_quantities(log)
+    fetch_ls(log)
     return HEADWORDS
 
 
@@ -106,3 +108,126 @@ def grc_lemma_ok() -> dict[str, str]:
     import yaml
     p = Path(__file__).parent / "data" / "grc_lemma_ok.yaml"
     return (yaml.safe_load(p.read_text(encoding="utf-8")) or {}) if p.exists() else {}
+
+
+# ---------------------------------------------------------------- vowel length from LSJ headwords (pin 17)
+# LSJ's headword spellings (the entry's first orth) mark doubtful vowels in Beta Code: _ after a long one, ^ after a
+# short one (neo/-xu^tos). The map below keeps, for each headword, its letters with the long marks, so a word's
+# long α, ι, υ can be taken from its lemma's headword (greek.lsj_quantity).
+QUANTITIES = CACHE / "headwords-quantity.tsv"
+_ORTH = re.compile(r'<entryFree[^>]*\bkey="([^"]+)"[^>]*>\s*(?:<[^o][^>]*>\s*)*<orth [^>]*>([^<]+)</orth>')   # the first orth, full or suff (yu_x-h/)
+
+
+def beta_letters(orth: str) -> list[tuple[str, bool]]:
+    """A Beta Code headword -> [(bare letter, long?)]: a letter followed by _ is long."""
+    out: list[tuple[str, bool]] = []
+    for ch in orth.lower():
+        if "a" <= ch <= "z":
+            out.append((ch, False))
+        elif ch == "_" and out:
+            out[-1] = (out[-1][0], True)
+    return out
+
+
+def build_quantities(log=print) -> Path:
+    """From the fetched LSJ files: bare headword -> its letters, long ones capitalized (q_ta^ -> 'qTa' style)."""
+    rows: dict[str, str] = {}
+    gcands: dict[str, set[str]] = {}
+    for n in LSJ_SHA256:
+        text = (CACHE / f"grc.lsj.perseus-eng{n}.xml").read_text(encoding="utf-8")
+        for key, orth in _ORTH.findall(text):
+            letters = beta_letters(orth)
+            bare = "".join(c for c, _ in letters)
+            if bare != bare_beta(key):
+                continue
+            gcands.setdefault(bare, set()).add("".join(c.upper() if long else c for c, long in letters))
+    # homographs that mark the word differently are left out (as for Lewis and Short)
+    for b, ms in gcands.items():
+        if len(ms) == 1 and any(c.isupper() for c in next(iter(ms))):
+            rows[b] = next(iter(ms))
+    QUANTITIES.write_text("\n".join(f"{k}\t{v}" for k, v in sorted(rows.items())), encoding="utf-8")
+    log(f"{len(rows)} LSJ headwords with a marked long vowel -> {QUANTITIES}")
+    return QUANTITIES
+
+
+_QSET: dict[str, str] | None = None
+
+
+def lsj_long_marks() -> dict[str, str] | None:
+    """bare headword -> its letters with the long ones upper-cased, or None before `weft lexica` has run."""
+    global _QSET
+    if _QSET is None and QUANTITIES.exists():
+        _QSET = dict(line.split("\t", 1) for line in QUANTITIES.read_text(encoding="utf-8").splitlines() if "\t" in line)
+    return _QSET
+
+
+# ---------------------------------------------------------------- Latin: Lewis and Short (pin 21)
+# Lewis and Short, A Latin Dictionary (1879), in the Perseus TEI edition (CC BY-SA 3.0), from the same pinned
+# commit. Its headwords print length in Unicode: ō long, ŏ short (ălĭmōnĭa). Only the macrons are taken: an
+# unmarked vowel is not a short one (abhorreo's final o is long and unmarked).
+LS_URL = "https://raw.githubusercontent.com/PerseusDL/lexica/{commit}/CTS_XML_TEI/perseus/pdllex/lat/ls/lat.ls.perseus-eng{n}.xml"
+LS_SHA256 = {
+    1: "421782f2b444f2705077745e7b0455314bb0ebaee3d66acf0110f88e4b5a121c",
+    2: "933ba8fde0ef06823f69a130c95ba6f345ece3cb1603514b17972d1edd421d32",
+}
+LS_QUANTITIES = CACHE / "ls-headwords-quantity.tsv"
+_LS_ORTH = re.compile(r'<entryFree[^>]*\bkey="([^"]+)"[^>]*>\s*<orth [^>]*>([^<]+)</orth>')
+_MACRON_LETTERS = {"ā": "a", "ē": "e", "ī": "i", "ō": "o", "ū": "u", "ȳ": "y"}
+
+
+def bare_lat(word: str) -> str:
+    """Lower-case Latin letters only, j as i and v as u (the dictionary and the editions differ)."""
+    s = "".join(c for c in ud.normalize("NFD", word.lower().replace("æ", "ae").replace("œ", "oe")) if not ud.combining(c))
+    return re.sub(r"[^a-z]", "", s).replace("j", "i").replace("v", "u")
+
+
+def ls_letters(orth: str) -> str:
+    """A headword -> its bare letters with the long (macron) ones upper-cased: ălĭmōnĭa -> alimOnia."""
+    out = []
+    for ch in ud.normalize("NFC", orth.lower().replace("æ", "ae").replace("œ", "oe")):
+        if ch in _MACRON_LETTERS:
+            out.append(_MACRON_LETTERS[ch].upper())
+        else:
+            b = bare_lat(ch)
+            out.append(b)
+    return "".join(out).replace("J", "I").replace("V", "U")
+
+
+def fetch_ls(log=print) -> Path:
+    """Download the pinned Lewis and Short (sha256-checked) and write the headword list with long marks."""
+    CACHE.mkdir(parents=True, exist_ok=True)
+    rows: dict[str, str] = {}
+    cands: dict[str, set[str]] = {}
+    for n, want in LS_SHA256.items():
+        p = CACHE / f"lat.ls.perseus-eng{n}.xml"
+        if not p.exists() or hashlib.sha256(p.read_bytes()).hexdigest() != want:
+            log(f"fetching Lewis and Short part {n} of {len(LS_SHA256)}")
+            req = urllib.request.Request(LS_URL.format(commit=LSJ_COMMIT, n=n), headers={"User-Agent": "weft-lexica/0.1"})
+            with urllib.request.urlopen(req, timeout=300) as r:
+                data = r.read()
+            if hashlib.sha256(data).hexdigest() != want:
+                raise SystemExit(f"weft lexica: Lewis and Short part {n} does not match its pinned sha256")
+            p.write_bytes(data)
+        for key, orth in _LS_ORTH.findall(p.read_text(encoding="utf-8")):
+            marked = ls_letters(orth)
+            bare = marked.lower()
+            if bare != bare_lat(re.sub(r"\d+$", "", key)):
+                continue
+            cands.setdefault(bare, set()).add(marked)
+    # homographs (solum 'ground', sōlum 'only') that mark the word differently are left out: a guess between
+    # them is worse than the default
+    rows = {b: next(iter(ms)) for b, ms in cands.items() if len(ms) == 1 and any(c.isupper() for c in next(iter(ms)))}
+    dropped = sum(1 for ms in cands.values() if len(ms) > 1)
+    LS_QUANTITIES.write_text("\n".join(f"{k}\t{v}" for k, v in sorted(rows.items())), encoding="utf-8")
+    log(f"{len(rows)} Lewis and Short headwords with a marked long vowel ({dropped} homographs that disagree left out) -> {LS_QUANTITIES}")
+    return LS_QUANTITIES
+
+
+_LSQ: dict[str, str] | None = None
+
+
+def ls_long_marks() -> dict[str, str] | None:
+    global _LSQ
+    if _LSQ is None and LS_QUANTITIES.exists():
+        _LSQ = dict(l.split("\t", 1) for l in LS_QUANTITIES.read_text(encoding="utf-8").splitlines() if "\t" in l)
+    return _LSQ

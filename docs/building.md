@@ -46,7 +46,8 @@ is "done" before that.
    seven in `docs/schema.md`), `extent` (`whole`, `section` or `excerpt`, with the denominator in
    words; `docs/schema.md`), `written` with a
    label, the edition record, schemes and their labels for this time and place,
-   `sound_confidence`, translations with licenses, and `predicted_gaps`, which states what the
+   `sound_confidence` (`low`, `medium` or `none`, by the rule in `docs/languages.md`; `weft check`
+   requires it), translations with licenses, and `predicted_gaps`, which states what the
    work does not yet do and what is approximate.
 9. **About:** name the work's Wikipedia article in the manifest, `wikipedia: {title, match}`, then
    run `weft about <work>`. `match` says what the article describes: `work` (this text, or the work
@@ -71,6 +72,18 @@ is "done" before that.
 
 ## Recipes
 
+**A Latin quantity table.** Draft the work, then run `weft quantities <work>`: it writes
+`gen/quantities-proposed.yaml`, one line per unlisted form with the long vowels Lewis and Short gives its
+stem. Check each against the dictionary, add the ending's length, and copy it into the work's own table
+(`pipeline/weft/data/lat_quantities_<work>.yaml`, named in the manifest's `quantities`). Run
+`weft lexica` once on the machine first.
+
+**A corpus keyed by word (Oracc, the TLA).** Set `treebank.format: keyed` and `treebank.key` to the token
+field that will hold the corpus identifier, give each edition token that identifier, and give the language
+module a `load_treebank(path, spec)` that reads the file into rows (docs/schema.md, "Keyed treebanks").
+Draft then sets lemma, morphology and the reference, and its sensors check the identifier, the form and
+the lemma; the module's `token_fields` keeps only what is its own (signs, a script row, the sound).
+
 **Wikisource.** The API gives a page's current revision and the raw wikitext:
 
     https://<lang>.wikisource.org/w/api.php?action=query&prop=revisions&titles=<title>&rvprop=ids&format=json
@@ -78,7 +91,9 @@ is "done" before that.
 
 Prefer the `Page:` or `Seite:`/`Pagina:` scan pages (one per printed page, with a proofreading
 level) over the transcluded whole; pin each page you use. A section whose lines cross a page break
-names its pages as a list in `verify_in`, and the pages are read together. `weft pin` does the
+names its pages as a list in `verify_in`, and the pages are read together. A word hyphenated across
+the break (`{{tiret|recon|nois}}` on one page, `{{tiret2|recon|nois}}` on the next) is rejoined by
+the check, so the edition writes it whole and `verify_strip` need not mention it. `weft pin` does the
 resolution and the hashing. Always send a User-Agent that names Weft and a contact; the APIs
 refuse anonymous bursts.
 

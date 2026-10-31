@@ -166,6 +166,7 @@ translations:
   file: sources/casaubon1634.txt
   url: https://www.gutenberg.org/cache/epub/2680/pg2680.txt
   sha256: 6977474f82a39dd88a4af31a59504821658174d33c177732c54357e4d680b96c
+sound_confidence: medium
 predicted_gaps:
 - lemma and morphology are an automatic parse (GLAUx), read token by token and corrected in curated/; book 2 needed 142 corrections in 1409 tokens of 2.2-2.17; book 1 has 260 entries in 1847 tokens, of which 129 only set the article and adjective heading an item of the list (τὸ καλόηθες) to accusative, a form identical with the nominative, which GLAUx tags now one way and now the other; the other 131 correct lemmas, gender, case, tense and part of speech
 - 'form-mismatch and no-treebank-word, 3 each, in book 1: 1.16.29, where Leopold prints φελώνῃ and the GLAUx text reads τελώνῃ, and the quotation marks on ʽθεῶν and δεῖται.ʼ in 1.17.23; lemma and morph for all three are supplied in curated/'

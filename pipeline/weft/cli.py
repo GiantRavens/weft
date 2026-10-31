@@ -65,6 +65,8 @@ def main(argv: list[str] | None = None) -> int:
     oc.add_argument("work")
     nc = sub.add_parser("notes-check", help="measure a work's editorial notes against a commentary's text: shared runs of 6+ words and quotations of 15+ words are reported")
     nc.add_argument("work"); nc.add_argument("--against", required=True, help="the commentary's text, a local file")
+    qu = sub.add_parser("quantities", help="draft quantity-table entries for a Latin work's unlisted forms from Lewis and Short, for review (gen/quantities-proposed.yaml)")
+    qu.add_argument("work")
     sub.add_parser("lexica", help="fetch the pinned LSJ (Perseus, CC BY-SA) once into ~/.cache/weft and write the headword list the lemma-not-in-lexicon sensor reads")
     ab = sub.add_parser("about", help="fetch the Wikipedia lead and Wikidata subjects named in the manifest into about.yaml")
     ab.add_argument("work", help="a work's folder name, or 'all' for every public work")
@@ -148,6 +150,9 @@ def main(argv: list[str] | None = None) -> int:
         r = notescheck.run(paths.work_dir(repo, a.work), _P(a.against))
         show(r)
         return 0 if r["ok"] else 1
+    elif a.cmd == "quantities":
+        from . import quantities
+        show(quantities.run(paths.work_dir(repo, a.work)))
     elif a.cmd == "lexica":
         from . import lexica
         lexica.fetch()

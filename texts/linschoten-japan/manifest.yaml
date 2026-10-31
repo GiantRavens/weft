@@ -38,6 +38,7 @@ translations:
     file: sources/hakluyt1885-v1.txt
     url: https://archive.org/download/voyagejohnhuygh01tielgoog/voyagejohnhuygh01tielgoog_djvu.txt
     sha256: 73b74ba26de48f33f626d0b45355d6018b1df2bd51c79fc67c9509a08f2b77af
+sound_confidence: medium
 predicted_gaps:
   - "the edition is the 1910 reprint of the 1596 text, not the 1596 print itself; the 1596 gothic type was not checked letter by letter for this passage"
   - "the edition is checked against OCR, not a proofread transcription: the scan was read by hand, and each place where the OCR misreads the scan is declared per token (ocr) and listed in edition.yaml"

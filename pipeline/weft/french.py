@@ -51,8 +51,10 @@ fr1791   French as a Paris reader would have read a public text aloud in 1791, u
          Gouges's Déclaration des droits de la femme et de la citoyenne. Evidence: Féraud, Dictionnaire
          critique de la langue française (1787-88), which gives a pronunciation for each word, and the
          grammarians of the decade (Domergue 1778, 1805) as collected by Thurot (1881-83). By 1791 the
-         Paris norm had most of its modern values: oi is [wa] in loi, droit (Féraud writes loa, droa;
-         the older [wɛ] survived in the -ois endings and in some words, none of them in this text);
+         Paris norm had most of its modern values: oi is [wa] in loi, droit (Féraud writes loa, droa);
+         the oi of the imperfect and conditional (étoit, seroient, voudrois) and of foible, connoître and
+         François was already [ɛ], the sound the spelling ai gave it after 1835, so those words are sounded
+         from their modern spelling;
          the r is the Paris uvular r; final consonants fall as today; the e caduc is sounded more
          often in careful reading, as the lexicon already keeps it. What differed and is shown:
          l mouillé, the palatal l of fille (fiʎ), which became [j] in the 19th century, written in the

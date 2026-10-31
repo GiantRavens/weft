@@ -51,6 +51,7 @@ translations:
     file: sources/perseus-eng3.xml
     url: https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0959/phi006/phi0959.phi006.perseus-eng3.xml
     sha256: fb9e111e13e294dac98cd4f740d864f384901a0831e8b236ab4639ae9a1b54c0
+sound_confidence: medium
 predicted_gaps:
   - "Latin never marks vowel length; stress needs it; every word must be in the quantity table"
   - "treebank has no per-word line cites; stream alignment against the edition"

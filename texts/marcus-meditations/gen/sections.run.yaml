@@ -42,6 +42,15 @@ failures:
   form-mismatch: 5
   no-treebank-word: 5
   morph-empty-declinable: 2
+quantity_sources:
+  unmarked: 1424
+  none-needed: 1816
+  table: 85
+  lexicon: 36
+phrase_links:
+  proclitic: 165
+  elision: 51
+  enclitic: 75
 samples:
   form-mismatch:
   - 1.16.29 φελώνῃ|τελώνῃ

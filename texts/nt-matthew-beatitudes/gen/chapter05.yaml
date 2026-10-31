@@ -6,6 +6,7 @@ layers:
   lemma: {src: morphgnt-6.12}
   morph: {src: morphgnt-6.12}
   sound: {src: weft.greek 0.1}
+  phrase: {src: weft.greek connected speech 0.1}
 lines:
 - id: mt.5.3
   cite: urn:cts:greekLit:tlg0031.tlg001.sblgnt:5.3
@@ -109,6 +110,10 @@ lines:
     sound:
       koine: {ipa: u.ra.ˈnon, respell: oo-ra-NON}
       erasmian: {ipa: uː.ra.ˈnɔːn, respell: oo-ra-NOHN}
+  phrase:
+    koine: {ipa: 'ma.ˈka.ri.y y‿pto.ˈxy ˈto ˈpnev.ma.ti, ˈo.ti av.ˈton‿ɛs.tin e‿va.si.ˈli.a ˈton u.ra.ˈnon.', respell: 'ma-KA-ree-ü ü‿pto-KHÜ TO PNAYV-ma-tee, O-tee av-TON‿es-teen ay‿va-see-LEE-a TON oo-ra-NON.'}
+    erasmian: {ipa: 'ma.ˈka.ri.oi hoi‿ptɔː.ˈxoi ˈtɔː ˈpneu.ma.ti, ˈho.ti au.ˈtɔːn‿es.tin hɛː‿ba.si.ˈlei.a ˈtɔːn uː.ra.ˈnɔːn.', respell: 'ma-KA-ri-oy hoy‿ptoh-KHOY TOH PNYOO-ma-ti, HO-ti ow-TOHN‿es-tin hay‿ba-si-LAY-a
+        TOHN oo-ra-NOHN.'}
 - id: mt.5.4
   cite: urn:cts:greekLit:tlg0031.tlg001.sblgnt:5.4
   text: μακάριοι οἱ πενθοῦντες, ὅτι αὐτοὶ παρακληθήσονται.
@@ -163,6 +168,9 @@ lines:
     sound:
       koine: {ipa: pa.ra.kle.ˈθe.son.tɛ, respell: pa-ra-klay-THAY-son-te}
       erasmian: {ipa: pa.ra.klɛː.ˈθɛː.son.tai, respell: pa-ra-klay-THAY-son-tai}
+  phrase:
+    koine: {ipa: 'ma.ˈka.ri.y y‿pɛn.ˈθun.tɛs, ˈo.ti av.ˈty pa.ra.kle.ˈθe.son.tɛ.', respell: 'ma-KA-ree-ü ü‿pen-THOON-tes, O-tee av-TÜ pa-ra-klay-THAY-son-te.'}
+    erasmian: {ipa: 'ma.ˈka.ri.oi hoi‿pen.ˈθuːn.tes, ˈho.ti au.ˈtoi pa.ra.klɛː.ˈθɛː.son.tai.', respell: 'ma-KA-ri-oy hoy‿pen-THOON-tes, HO-ti ow-TOY pa-ra-klay-THAY-son-tai.'}
 - id: mt.5.5
   cite: urn:cts:greekLit:tlg0031.tlg001.sblgnt:5.5
   text: μακάριοι οἱ πραεῖς, ὅτι αὐτοὶ κληρονομήσουσι τὴν γῆν.
@@ -191,7 +199,9 @@ lines:
     tb: 010505/3
     sound:
       koine: {ipa: pra.ˈis, respell: pra-EES}
-      erasmian: {ipa: pra.ˈeis, respell: pra-AYS}
+      erasmian: {ipa: praː.ˈeis, respell: praa-AYS}
+    prov: {sound: weft.greek 0.1 + vowel length from LSJ (πραΰς) and the first declension}
+    conf: {sound: 0.8}
   - id: mt.5.5.4
     surface: ὅτι
     lemma: ὅτι
@@ -233,6 +243,9 @@ lines:
     sound:
       koine: {ipa: ˈjen, respell: YAYN}
       erasmian: {ipa: ˈɡɛːn, respell: GAYN}
+  phrase:
+    koine: {ipa: 'ma.ˈka.ri.y y‿pra.ˈis, ˈo.ti av.ˈty kle.ro.no.ˈme.su.si ˈten ˈjen.', respell: 'ma-KA-ree-ü ü‿pra-EES, O-tee av-TÜ klay-ro-no-MAY-soo-see TAYN YAYN.'}
+    erasmian: {ipa: 'ma.ˈka.ri.oi hoi‿praː.ˈeis, ˈho.ti au.ˈtoi klɛː.ro.no.ˈmɛː.suː.si ˈtɛːn ˈɡɛːn.', respell: 'ma-KA-ri-oy hoy‿praa-AYS, HO-ti ow-TOY klay-ro-no-MAY-soo-si TAYN GAYN.'}
 - id: mt.5.6
   cite: urn:cts:greekLit:tlg0031.tlg001.sblgnt:5.6
   text: μακάριοι οἱ πεινῶντες καὶ διψῶντες τὴν δικαιοσύνην, ὅτι αὐτοὶ χορτασθήσονται.
@@ -319,6 +332,11 @@ lines:
     sound:
       koine: {ipa: xor.tas.ˈθe.son.tɛ, respell: khor-tas-THAY-son-te}
       erasmian: {ipa: xor.tas.ˈθɛː.son.tai, respell: khor-tas-THAY-son-tai}
+  phrase:
+    koine: {ipa: 'ma.ˈka.ri.y y‿pi.ˈnon.tɛs ˈkɛ ði.ˈpson.tɛs ˈten ði.kɛ.o.ˈsy.nen, ˈo.ti av.ˈty xor.tas.ˈθe.son.tɛ.', respell: 'ma-KA-ree-ü ü‿pee-NON-tes KE dhee-PSON-tes TAYN dhee-ke-o-SÜ-nayn, O-tee av-TÜ
+        khor-tas-THAY-son-te.'}
+    erasmian: {ipa: 'ma.ˈka.ri.oi hoi‿pei.ˈnɔːn.tes ˈkai di.ˈpsɔːn.tes ˈtɛːn di.kai.o.ˈsy.nɛːn, ˈho.ti au.ˈtoi xor.tas.ˈθɛː.son.tai.', respell: 'ma-KA-ri-oy hoy‿pay-NOHN-tes KAI di-PSOHN-tes TAYN di-kai-o-SÜ-nayn,
+        HO-ti ow-TOY khor-tas-THAY-son-tai.'}
 - id: mt.5.7
   cite: urn:cts:greekLit:tlg0031.tlg001.sblgnt:5.7
   text: μακάριοι οἱ ἐλεήμονες, ὅτι αὐτοὶ ἐλεηθήσονται.
@@ -373,6 +391,9 @@ lines:
     sound:
       koine: {ipa: ɛ.lɛ.e.ˈθe.son.tɛ, respell: e-le-ay-THAY-son-te}
       erasmian: {ipa: e.le.ɛː.ˈθɛː.son.tai, respell: e-le-ay-THAY-son-tai}
+  phrase:
+    koine: {ipa: 'ma.ˈka.ri.y y‿ɛ.lɛ.ˈe.mo.nɛs, ˈo.ti av.ˈty ɛ.lɛ.e.ˈθe.son.tɛ.', respell: 'ma-KA-ree-ü ü‿e-le-AY-mo-nes, O-tee av-TÜ e-le-ay-THAY-son-te.'}
+    erasmian: {ipa: 'ma.ˈka.ri.oi hoi‿e.le.ˈɛː.mo.nes, ˈho.ti au.ˈtoi e.le.ɛː.ˈθɛː.son.tai.', respell: 'ma-KA-ri-oy hoy‿e-le-AY-mo-nes, HO-ti ow-TOY e-le-ay-THAY-son-tai.'}
 - id: mt.5.8
   cite: urn:cts:greekLit:tlg0031.tlg001.sblgnt:5.8
   text: μακάριοι οἱ καθαροὶ τῇ καρδίᾳ, ὅτι αὐτοὶ τὸν θεὸν ὄψονται.
@@ -459,6 +480,9 @@ lines:
     sound:
       koine: {ipa: ˈo.pson.tɛ, respell: O-pson-te}
       erasmian: {ipa: ˈo.pson.tai, respell: O-pson-tai}
+  phrase:
+    koine: {ipa: 'ma.ˈka.ri.y y‿ka.θa.ˈry ˈte kar.ˈði.a, ˈo.ti av.ˈty ˈton θɛ.ˈon ˈo.pson.tɛ.', respell: 'ma-KA-ree-ü ü‿ka-tha-RÜ TAY kar-DHEE-a, O-tee av-TÜ TON the-ON O-pson-te.'}
+    erasmian: {ipa: 'ma.ˈka.ri.oi hoi‿ka.θa.ˈroi ˈtɛː kar.ˈdi.aː, ˈho.ti au.ˈtoi ˈton θe.ˈon ˈo.pson.tai.', respell: 'ma-KA-ri-oy hoy‿ka-tha-ROY TAY kar-DI-aa, HO-ti ow-TOY TON the-ON O-pson-tai.'}
 - id: mt.5.9
   cite: urn:cts:greekLit:tlg0031.tlg001.sblgnt:5.9
   text: μακάριοι οἱ εἰρηνοποιοί, ὅτι αὐτοὶ υἱοὶ θεοῦ κληθήσονται.
@@ -529,6 +553,9 @@ lines:
     sound:
       koine: {ipa: kle.ˈθe.son.tɛ, respell: klay-THAY-son-te}
       erasmian: {ipa: klɛː.ˈθɛː.son.tai, respell: klay-THAY-son-tai}
+  phrase:
+    koine: {ipa: 'ma.ˈka.ri.y y‿i.re.no.py.ˈy, ˈo.ti av.ˈty yi.ˈy θɛ.ˈu kle.ˈθe.son.tɛ.', respell: 'ma-KA-ree-ü ü‿ee-ray-no-pü-Ü, O-tee av-TÜ üee-Ü the-OO klay-THAY-son-te.'}
+    erasmian: {ipa: 'ma.ˈka.ri.oi hoi‿ei.rɛː.no.poi.ˈoi, ˈho.ti au.ˈtoi hyi.ˈoi θe.ˈuː klɛː.ˈθɛː.son.tai.', respell: 'ma-KA-ri-oy hoy‿ay-ray-no-poy-OY, HO-ti ow-TOY hwee-OY the-OO klay-THAY-son-tai.'}
 - id: mt.5.10
   cite: urn:cts:greekLit:tlg0031.tlg001.sblgnt:5.10
   text: μακάριοι οἱ δεδιωγμένοι ἕνεκεν δικαιοσύνης, ὅτι αὐτῶν ἐστιν ἡ βασιλεία τῶν οὐρανῶν.
@@ -631,6 +658,11 @@ lines:
     sound:
       koine: {ipa: u.ra.ˈnon, respell: oo-ra-NON}
       erasmian: {ipa: uː.ra.ˈnɔːn, respell: oo-ra-NOHN}
+  phrase:
+    koine: {ipa: 'ma.ˈka.ri.y y‿ðɛ.ði.oɣ.ˈmɛ.ny ˈɛ.nɛ.kɛn ði.kɛ.o.ˈsy.nes, ˈo.ti av.ˈton‿ɛs.tin e‿va.si.ˈli.a ˈton u.ra.ˈnon.', respell: 'ma-KA-ree-ü ü‿dhe-dhee-ogh-ME-nü E-ne-ken dhee-ke-o-SÜ-nays, O-tee
+        av-TON‿es-teen ay‿va-see-LEE-a TON oo-ra-NON.'}
+    erasmian: {ipa: 'ma.ˈka.ri.oi hoi‿de.di.ɔːɡ.ˈme.noi ˈhe.ne.ken di.kai.o.ˈsy.nɛːs, ˈho.ti au.ˈtɔːn‿es.tin hɛː‿ba.si.ˈlei.a ˈtɔːn uː.ra.ˈnɔːn.', respell: 'ma-KA-ri-oy hoy‿de-di-ohg-ME-noy HE-ne-ken di-kai-o-SÜ-nays,
+        HO-ti ow-TOHN‿es-tin hay‿ba-si-LAY-a TOHN oo-ra-NOHN.'}
 - id: mt.5.11
   cite: urn:cts:greekLit:tlg0031.tlg001.sblgnt:5.11
   text: μακάριοί ἐστε ὅταν ὀνειδίσωσιν ὑμᾶς καὶ διώξωσιν καὶ εἴπωσιν πᾶν πονηρὸν καθ’ ὑμῶν ψευδόμενοι ἕνεκεν ἐμοῦ.
@@ -764,6 +796,11 @@ lines:
     sound:
       koine: {ipa: ɛ.ˈmu, respell: e-MOO}
       erasmian: {ipa: e.ˈmuː, respell: e-MOO}
+  phrase:
+    koine: {ipa: ma.ˈka.ri.ˈy‿ɛs.tɛ ˈo.tan o.ni.ˈði.so.sin y.ˈmas ˈkɛ ði.ˈo.kso.sin ˈkɛ ˈi.po.sin ˈpan po.ne.ˈron kaθ‿y.ˈmon psev.ˈðo.mɛ.ny ˈɛ.nɛ.kɛn ɛ.ˈmu., respell: ma-KA-ree-Ü‿es-te O-tan o-nee-DHEE-so-seen
+        ü-MAS KE dhee-O-kso-seen KE EE-po-seen PAN po-nay-RON kath‿ü-MON psayv-DHO-me-nü E-ne-ken e-MOO.}
+    erasmian: {ipa: ma.ˈka.ri.ˈoi‿es.te ˈho.tan o.nei.ˈdi.sɔː.sin hy.ˈmaːs ˈkai di.ˈɔː.ksɔː.sin ˈkai ˈei.pɔː.sin ˈpaːn po.nɛː.ˈron kaθ‿hy.ˈmɔːn pseu.ˈdo.me.noi ˈhe.ne.ken e.ˈmuː., respell: ma-KA-ri-OY‿es-te
+        HO-tan o-nay-DI-soh-sin hü-MAAS KAI di-OH-ksoh-sin KAI AY-poh-sin PAAN po-nay-RON kath‿hü-MOHN psyoo-DO-me-noy HE-ne-ken e-MOO.}
 - id: mt.5.12
   cite: urn:cts:greekLit:tlg0031.tlg001.sblgnt:5.12
   text: χαίρετε καὶ ἀγαλλιᾶσθε, ὅτι ὁ μισθὸς ὑμῶν πολὺς ἐν τοῖς οὐρανοῖς· οὕτως γὰρ ἐδίωξαν τοὺς προφήτας τοὺς πρὸ ὑμῶν.
@@ -923,3 +960,8 @@ lines:
     sound:
       koine: {ipa: y.ˈmon, respell: ü-MON}
       erasmian: {ipa: hy.ˈmɔːn, respell: hü-MOHN}
+  phrase:
+    koine: {ipa: 'ˈxɛ.rɛ.tɛ ˈkɛ a.ɣal.li.ˈas.θɛ, ˈo.ti o‿mis.ˈθos y.ˈmon po.ˈlys ɛn‿ˈtys u.ra.ˈnys· ˈu.tos ˈɣar ɛ.ˈði.o.ksan ˈtus pro.ˈfe.tas ˈtus ˈpro y.ˈmon.', respell: 'KHE-re-te KE a-ghal-lee-AS-the,
+        O-tee o‿mees-THOS ü-MON po-LÜS en‿TÜS oo-ra-NÜS· OO-tos GHAR e-DHEE-o-ksan TOOS pro-FAY-tas TOOS PRO ü-MON.'}
+    erasmian: {ipa: 'ˈxai.re.te ˈkai a.ɡal.li.ˈaːs.θe, ˈho.ti ho‿mis.ˈθos hy.ˈmɔːn po.ˈlys en‿ˈtois uː.ra.ˈnois· ˈhuː.tɔːs ˈɡar e.ˈdi.ɔː.ksan ˈtuːs pro.ˈfɛː.tas ˈtuːs ˈpro hy.ˈmɔːn.', respell: 'KHAI-re-te
+        KAI a-gal-li-AAS-the, HO-ti ho‿mis-THOS hü-MOHN po-LÜS en‿TOYS oo-ra-NOYS· HOO-tohs GAR e-DI-oh-ksan TOOS pro-FAY-tas TOOS PRO hü-MOHN.'}

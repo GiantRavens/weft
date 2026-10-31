@@ -12,6 +12,15 @@ counts:
 failures:
   form-mismatch: 1
   no-treebank-word: 1
+quantity_sources:
+  unmarked: 289
+  none-needed: 431
+  table: 7
+  lexicon: 21
+phrase_links:
+  elision: 31
+  proclitic: 43
+  enclitic: 6
 samples:
   form-mismatch:
   - 980b.1 ἔστι|ἔσι

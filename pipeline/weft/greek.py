@@ -542,11 +542,12 @@ def _feet_patterns():
 
 
 def scan_hexameter(words: list[str], quantities: dict | None = None, synizesis: set[str] | None = None,
-                   digamma_stems: tuple[str, ...] = DIGAMMA_STEMS) -> tuple[str | None, list[tuple[str, str]]]:
+                   digamma_stems: tuple[str, ...] = DIGAMMA_STEMS, detail: bool = False):
     """Scan one dactylic hexameter. ``words`` are the line's surfaces as printed (elision marks
     kept, punctuation tolerated). ``quantities`` is the work's merged quantity table; ``synizesis``
     names words (unaccented, lowercase) to read with synizesis. Returns (metre string or None,
-    [(failure class, sample)])."""
+    [(failure class, sample)]); with ``detail``, a third item: the indices of the words whose final
+    long vowel or diphthong the winning scan reads short before the next word's vowel (correption)."""
     marked = {_bare(s) for s in (synizesis or set())}
     digamma = lambda w: _bare(normalize_elision(w)).startswith(digamma_stems)
     forced, optional = _synizesis_candidates(words, quantities, marked)
@@ -566,6 +567,7 @@ def scan_hexameter(words: list[str], quantities: dict | None = None, synizesis: 
             if len(tmpl) != len(opts):
                 continue
             cost, flags = base, [("metre-synizesis-assumed", words[wi]) for wi, _ in sorted(use)]
+            corr = []
             for k, (t, o) in enumerate(zip(tmpl, opts)):
                 if t == "X":
                     continue
@@ -575,14 +577,203 @@ def scan_hexameter(words: list[str], quantities: dict | None = None, synizesis: 
                 cost += c
                 if why in FLAGGED:
                     flags.append((f"metre-{why}", f"{words[nuclei[k]['wi']]} (syllable {k + 1})"))
+                elif why == "correption":
+                    corr.append(nuclei[k]["wi"])
             else:
                 metre = "|".join({"D": "—◡◡", "S": "——"}[f] for f in feet) + "|—×"
-                best.append((round(cost, 3), metre, flags))
+                best.append((round(cost, 3), metre, flags, corr))
     if not best:
-        return None, [("metre-no-fit", " ".join(words))]
+        return (None, [("metre-no-fit", " ".join(words))]) + (([],) if detail else ())
     best.sort(key=lambda b: b[0])
-    cost, metre, flags = best[0]
+    cost, metre, flags, corr = best[0]
     ties = [b for b in best[1:] if b[0] == cost and b[1] != metre]
     if ties:
         flags = flags + [("metre-ambiguous", f"{metre} or {ties[0][1]}")]
-    return metre, flags
+    return (metre, flags, corr) if detail else (metre, flags)
+
+
+# ---------------------------------------------------------------- long dichrona from LSJ (pin 17)
+_DICHRONA = set("αιυ")
+_CIRC, _IOTA_SUB, _DIAER, _MACRON, _BREVE = "͂", "ͅ", "̈", "̄", "̆"
+
+
+def lsj_quantity(form: str, lemma: str) -> str | None:
+    """The form with a macron on each α, ι, υ that its lemma's LSJ headword marks long, carried over where
+    the form's letters line up with the headword's (the stem through an augment or a new ending), or None
+    when LSJ marks nothing long there. A vowel already long by its circumflex or iota subscript, or the
+    first part of a diphthong, is left alone. The match is by letters, not by morphology: an ending LSJ
+    marks long is carried only where the form keeps that ending's letters."""
+    from difflib import SequenceMatcher
+    from . import lexica
+    marks = lexica.lsj_long_marks()
+    if not marks or not lemma:
+        return None
+    head = marks.get(lexica.bare_grc(lemma))
+    if not head:
+        return None
+    # the form's Greek letters, each with its decomposed marks, and their bare (Beta Code) letters
+    chars = []                                   # [(base, marks)]
+    for ch in ud.normalize("NFD", form):
+        if ud.combining(ch) and chars:
+            chars[-1] = (chars[-1][0], chars[-1][1] + ch)
+        else:
+            chars.append((ch, ""))
+    idx = [k for k, (b, _) in enumerate(chars) if lexica.bare_grc(b)]
+    fb = "".join(lexica.bare_grc(chars[k][0]) for k in idx)
+    hb = head.lower()
+    long_at = set()
+    for blk in SequenceMatcher(None, hb, fb, autojunk=False).get_matching_blocks():
+        for i in range(blk.size):
+            if head[blk.a + i].isupper():
+                long_at.add(blk.b + i)
+    changed = False
+    for j in sorted(long_at):
+        k = idx[j]
+        base, mk = chars[k]
+        if base.lower() not in _DICHRONA or _CIRC in mk or _IOTA_SUB in mk or _MACRON in mk or _BREVE in mk:
+            continue
+        nxt = chars[k + 1] if k + 1 < len(chars) else ("", "")
+        if nxt[0].lower() in ("ι", "υ") and _DIAER not in nxt[1] and base.lower() != nxt[0].lower():
+            continue                             # the first part of a diphthong: not a separate long vowel
+        chars[k] = (base, _MACRON + mk)
+        changed = True
+    return ud.normalize("NFC", "".join(b + m for b, m in chars)) if changed else None
+
+
+def first_declension_as(form: str, lemma: str) -> str | None:
+    """-ας is long in the first declension: the genitive singular of α-stem nouns and every accusative plural.
+    Applied when the lemma ends in -α or -η and the form ends in -ας; a rule of the grammar, not of LSJ."""
+    from . import lexica
+    lb = lexica.bare_grc(lemma)
+    nfd = ud.normalize("NFD", form)
+    if not (lb.endswith(("a", "h")) and lexica.bare_grc(form).endswith("as")):
+        return None
+    # the α before the final ς, with any marks it carries
+    k = nfd.rstrip().rfind("ς")
+    j = k - 1
+    while j >= 0 and ud.combining(nfd[j]):
+        j -= 1
+    if j < 0 or nfd[j].lower() != "α" or any(m in nfd[j + 1:k] for m in (_CIRC, _MACRON, _BREVE, _IOTA_SUB)):
+        return None
+    return ud.normalize("NFC", nfd[:j + 1] + _MACRON + nfd[j + 1:])
+
+
+def quantity_from_lexicon(form: str, lemma: str) -> str | None:
+    """LSJ's stem marks, then the first-declension -ας rule, for a form no hand table lists (pin 17)."""
+    w = lsj_quantity(form, lemma) or form
+    w2 = first_declension_as(w, lemma) or w
+    return w2 if w2 != form else None
+
+
+def unmarked_dichrona(word: str) -> int:
+    """How many α, ι, υ in the word carry no sign of their length: no macron or breve, no circumflex, no
+    iota subscript, and not the first part of a diphthong. Each is read short (telemetry for pin 17)."""
+    chars = []
+    for ch in ud.normalize("NFD", word):
+        if ud.combining(ch) and chars:
+            chars[-1] = (chars[-1][0], chars[-1][1] + ch)
+        else:
+            chars.append((ch, ""))
+    n = 0
+    for k, (b, mk) in enumerate(chars):
+        if b.lower() not in _DICHRONA or any(m in mk for m in (_CIRC, _IOTA_SUB, _MACRON, _BREVE)):
+            continue
+        nxt = chars[k + 1] if k + 1 < len(chars) else ("", "")
+        if nxt[0].lower() in ("ι", "υ") and _DIAER not in nxt[1] and b.lower() != nxt[0].lower():
+            continue
+        if k > 0 and b.lower() in ("ι", "υ") and chars[k - 1][0].lower() in "αεοηωυ" and _DIAER not in mk:
+            continue                             # the second part of a diphthong
+        n += 1
+    return n
+
+
+# ---------------------------------------------------------------- connected speech (pin 18)
+# The sound row phonemizes each word alone. A line spoken whole differs in three ways this models:
+# an elided word is sounded with the word after it (δʼ ἀνθρώπων), a clitic is sounded with its host
+# (ἄνδρα μοι, ἐν πόντῳ), and in epic verse a long final vowel or diphthong before a vowel is read short
+# (correption). A link is written with the IPA undertie ‿. Clitics are found from the spelling: Greek
+# accents every word except its clitics, so a word printed with no accent is one. An enclitic leans on the
+# word before it, a proclitic on the word after it. Not modeled: resyllabification of a final consonant
+# across an ordinary word boundary, crasis, and the accent an enclitic takes before another enclitic
+# (the edition prints that accent, and an accented word is not joined).
+CONNECTED_VERSION = "0.1"
+ENCLITICS = {_bare(_b) for _b in (
+    "μοι", "μου", "με", "σοι", "σου", "σε", "μιν", "νιν", "σφι", "σφιν", "σφε", "σφισι", "σφισιν", "σφεας",
+    "τε", "γε", "περ", "κε", "κεν", "ρα", "ρ", "νυ", "νυν", "τοι", "θην", "που", "πω", "πως", "ποτε", "ποθι",
+    "ποθεν", "πη", "τις", "τι", "τινα", "τινος", "του", "τινι", "τω", "τινες", "τινας", "τινων", "τισι", "τισιν",
+    "εστι", "εστιν", "εισι", "εισιν", "εστον", "εσμεν", "εστε", "ειμι", "φημι", "φησι", "φησιν", "φασι", "φασιν",
+    "μευ", "σεο", "σευ", "ε", "εσσι", "σφωε", "σφωιν")}
+ARTICLE_LEMMAS = {"ὁ", "ἡ", "τό"}
+# an unaccented form of these lemmas leans on the word before it (οἱ "to him", lemma ἕ, not the article)
+ENCLITIC_LEMMAS = {"ἐγώ", "σύ", "ἕ", "οὗ", "σφεῖς", "τις", "εἰμί", "φημί", "πως", "που", "ποτε", "πω", "πη"}
+
+
+def _accented(w: str) -> bool:
+    return any(c in (ACUTE, GRAVE, CIRC) for c in ud.normalize("NFD", w))
+
+
+def clitic(surface: str, lemma: str | None = None) -> str | None:
+    """'en' (enclitic), 'pro' (proclitic) or None. An elided word is not counted here: its link is elision."""
+    w = normalize_elision(surface)
+    for p in PUNCT:
+        w = w.replace(p, "")
+    if not w or w.endswith("’") or _accented(w):
+        return None
+    if lemma in ARTICLE_LEMMAS:
+        return "pro"                              # οἱ the article, not οἱ the pronoun
+    return "en" if lemma in ENCLITIC_LEMMAS or _bare(w) in ENCLITICS else "pro"
+
+
+def _correpted(ipa: str) -> str:
+    """The last nucleus read short: a long vowel loses its length mark; the second part of a diphthong
+    becomes a glide (καὶ ἐν: [kàj]), its pitch mark moving to the first part."""
+    nfd = ud.normalize("NFD", ipa)
+    if nfd.endswith("ː"):
+        return ud.normalize("NFC", nfd[:-1])
+    j = len(nfd)
+    while j > 0 and ud.combining(nfd[j - 1]):
+        j -= 1
+    base, marks = nfd[j - 1:j], nfd[j:]
+    if base in ("i", "u", "y") and j >= 2 and nfd[j - 2] in "aeoɛɔ":
+        k = j - 1
+        return ud.normalize("NFC", nfd[:k] + marks + {"i": "j", "u": "w", "y": "ɥ"}[base])
+    return ipa
+
+
+def connected(toks: list[dict], schemes: list[str], correption: set[int] = frozenset()) -> tuple[dict, dict]:
+    """The line spoken whole, per scheme: {scheme: {ipa, respell}}, and counts of each kind of link.
+    ``toks`` are the line's draft tokens (surface, sound, punct, lemma); ``correption`` holds the indices of
+    the tokens the hexameter scan reads short, applied to the first scheme only, the reconstruction of
+    the verse as performed."""
+    n = len(toks)
+    kinds = [clitic(t["surface"], t.get("lemma")) for t in toks]
+    elided = [normalize_elision(t["surface"].rstrip(PUNCT)).endswith("’") for t in toks]
+    link = [False] * n                            # link[i]: token i is sounded with token i + 1
+    counts = {"elision": 0, "enclitic": 0, "proclitic": 0, "correption": 0}
+    for i in range(n - 1):
+        if toks[i].get("punct") or toks[i + 1].get("lead"):
+            continue                              # no link across punctuation
+        if elided[i]:
+            link[i] = True; counts["elision"] += 1
+        elif kinds[i + 1] == "en":
+            link[i] = True; counts["enclitic"] += 1
+        elif kinds[i] == "pro":
+            link[i] = True; counts["proclitic"] += 1
+    out = {}
+    for k_s, sch in enumerate(schemes):
+        ipa, resp = [], []
+        for i, t in enumerate(toks):
+            snd = (t.get("sound") or {}).get(sch) or {}
+            a, r = snd.get("ipa", ""), snd.get("respell", "").replace("’", "")
+            if k_s == 0 and i in correption:
+                a2 = _correpted(a)
+                if a2 != a:
+                    a, r = a2, r + "˘"
+                    counts["correption"] += 1
+            ipa.append((t.get("lead") or "") + a + (t.get("punct") or ""))
+            resp.append((t.get("lead") or "") + r + (t.get("punct") or ""))
+            if i < n - 1:
+                ipa.append("‿" if link[i] else " ")
+                resp.append("‿" if link[i] else " ")
+        out[sch] = {"ipa": "".join(ipa), "respell": "".join(resp)}
+    return out, counts

@@ -28,11 +28,14 @@ that use it. Where the repository names no source, this page says so.
   `SCHEME_LABELS`. A manifest may also replace a scheme's key for that work alone with
   `sound_key: {scheme: [[symbol, what it says], ...]}`, so a key shared by several works need not
   name one of them; `weft check` reports a `sound_key` for a scheme the work does not use.
-- **Confidence.** A manifest may set `sound_confidence`. At `low` the page opens with "The
-  pronunciation here is a reconstruction"; at `medium`, "Parts of the pronunciation here are
-  reconstructed". Both link to the Pronunciation and Recording forms and to this page. Works with
-  no value show no invitation. Twenty-seven of the sixty-one public works set a value (see the table, and the
-  last section).
+- **Confidence.** Every manifest sets `sound_confidence`, and `weft check` reports one that does not
+  (pin 79, 2026-10-30). The rule: `low` where the sounds of the period are inferred indirectly and
+  specialists disagree, as the page's notice says (Old Egyptian, Sumerian, Akkadian, runic, Old East
+  Slavic, Middle Mongolian, the Cherokee of 1827, the Kaddish's Aramaic); `none` where the pronunciation is
+  documented by the author (Esperanto, and Tolkien's languages); `medium`, the default, for every
+  other reconstruction. At `low` the page opens with "The pronunciation here is a reconstruction";
+  at `medium`, "Parts of the pronunciation here are reconstructed". Both link to the Pronunciation
+  and Recording forms and to this page. At `none`, and on private works, the page shows no invitation.
 - **Each word alone.** Unless a section below says otherwise, each word is phonemized on its own:
   elision, sandhi and assimilation across words are not modeled in the sound row.
 
@@ -57,8 +60,8 @@ schemes sit side by side and the reader chooses.
 
 ## Summary
 
-"First" marks the page default. Confidence is the manifest's `sound_confidence`; "not set" means
-the page shows no invitation.
+"First" marks the page default. Confidence is the manifest's `sound_confidence`; at `none` the page
+shows no invitation.
 
 | Language | Module | Works | Schemes | Confidence |
 |---|---|---|---|---|
@@ -66,59 +69,59 @@ the page shows no invitation.
 | Sumerian | `sumerian` | Enheduanna, Temple Hymn 5 | recon-2300 (first), classroom | low |
 | Akkadian | `akkadian` | Hammurabi, prologue | ob-1750 (first), classroom | low |
 | Vedic Sanskrit | `sanskrit` | Rigveda 1.1 | vedic (first), modern | medium |
-| Ancient Greek | `greek` | Iliad, Odyssey, Plato, Aristotle | restored (first), erasmian | not set |
+| Ancient Greek | `greek` | Iliad, Odyssey, Plato, Aristotle | restored (first), erasmian | medium |
 | | | Nicene Creed (381) | koine (first), erasmian | medium |
-| | | John, Beatitudes, 1 Corinthians 13 | koine (first), erasmian | not set |
-| | | Epictetus, Marcus Aurelius | koine (first), restored, erasmian | not set |
-| Biblical Hebrew | `hebrew` | Genesis | tiberian (first), modern-israeli | not set |
+| | | John, Beatitudes, 1 Corinthians 13 | koine (first), erasmian | medium |
+| | | Epictetus, Marcus Aurelius | koine (first), restored, erasmian | medium |
+| Biblical Hebrew | `hebrew` | Genesis | tiberian (first), modern-israeli | medium |
 | | | The Shema (Deuteronomy 6:4-9) | tiberian (first), modern-israeli | medium |
 | Biblical Aramaic | `hebrew` | Daniel 5 | tiberian (first), modern-israeli | medium |
 | Jewish Aramaic (liturgy) | `hebrew` | The Kaddish | tiberian (first), modern-israeli | low |
 | Classical Chinese | `chinese` | Sunzi, Daodejing | old-chinese (first), tang, mandarin | medium |
 | | | Li Bai | tang (first), mandarin, cantonese | medium |
 | Sahidic Coptic | `coptic` | Gospel of Mark 1 | sahidic (first), bohairic | medium |
-| Latin | `latin` | Ovid, Res Gestae | classical (first), ecclesiastical | not set |
+| Latin | `latin` | Ovid, Res Gestae | classical (first), ecclesiastical | medium |
 | | | Bayeux Tapestry | anglo-norman (first), classical | medium |
-| | | Magna Carta | anglo-latin (first), classical | not set |
+| | | Magna Carta | anglo-latin (first), classical | medium |
 | | | Saxo, Gesta Danorum 9.3-5 | danish-medieval (first), classical, ecclesiastical | medium |
 | | | Saer de Quincy, two charters | anglo-latin (first), classical | medium |
-| | | Pico | italian-humanist (first), classical | not set |
+| | | Pico | italian-humanist (first), classical | medium |
 | | | Inter caetera | italian-humanist (first), classical | medium |
-| | | Erasmus | low-countries (first), classical | not set |
-| | | More, Utopia | tudor-english (first), classical | not set |
-| | | Luther, Ninety-five Theses | german-humanist (first), ecclesiastical, classical | not set |
-| | | Descartes and Newton | as-first-read (first), classical | not set |
+| | | Erasmus | low-countries (first), classical | medium |
+| | | More, Utopia | tudor-english (first), classical | medium |
+| | | Luther, Ninety-five Theses | german-humanist (first), ecclesiastical, classical | medium |
+| | | Descartes and Newton | as-first-read (first), classical | medium |
 | Old Tamil | `tamil` | Tirukkural | old-tamil (first), modern | medium |
 | Runic | `runic` | Kylver, Gallehus, Rök | as-carved (only) | low |
-| Old English | `oldenglish` | Beowulf | west-saxon (only) | not set |
-| Old Norse | `norse` | Völuspá, Hávamál, Vafþrúðnismál, Grímnismál, Lokasenna, Þrymskviða, Grettis saga | old-norse (first), modern-icelandic | not set |
+| Old English | `oldenglish` | Beowulf | west-saxon (only) | medium |
+| Old Norse | `norse` | Völuspá, Hávamál, Vafþrúðnismál, Grímnismál, Lokasenna, Þrymskviða, Grettis saga | old-norse (first), modern-icelandic | medium |
 | | | Snorri, Gylfaginning | old-norse (first), modern-icelandic | medium |
 | Old East Slavic | `oldeastslavic` | Primary Chronicle, 859-862 | orv1100 (first), ru | low |
 | Persian | `persian` | Rubaiyat | early (first), modern | medium |
 | Middle Mongolian | `mongolian` | Secret History of the Mongols, 1-10 | mm-1250 (only) | low |
-| Japanese | `japanese` | Bashō | edo-1686 (first), modern | not set |
+| Japanese | `japanese` | Bashō | edo-1686 (first), modern | medium |
 | Franco-Italian | `oldfrench` | Marco Polo, Cipangu | fr1300 (first), it1300 | medium |
-| Italian | `italian` | Dante, Petrarch, Machiavelli | florentine (first), modern | not set |
+| Italian | `italian` | Dante, Petrarch, Machiavelli | florentine (first), modern | medium |
 | | | Da Ponte, Le nozze di Figaro (1786) | florentine (first), modern | medium |
 | | | Verdi, Brindisi and Credo (1853, 1887) | florentine (first), modern | medium |
-| Spanish | `spanish` | Columbus, 1493 | c1492 (first), modern | not set |
+| Spanish | `spanish` | Columbus, 1493 | c1492 (first), modern | medium |
 | Portuguese | `portuguese` | Camões, Os Lusíadas I.1-3 | lisboa1540 (first), europeu, brasileiro | medium |
 | | | Caminha, letter of 1500 | lisboa1540 (first), europeu, brasileiro | medium |
-| Dutch | `dutch` | Linschoten | h1596 (first), modern | not set |
-| French | `french` | Montaigne | m1580 (first), modern | not set |
+| Dutch | `dutch` | Linschoten | h1596 (first), modern | medium |
+| French | `french` | Montaigne | m1580 (first), modern | medium |
 | | | Declaration of the Rights of Man (1789) | fr1791 (first), modern | medium |
-| | | de Gouges, Rights of Woman (1791) | fr1791 (first), modern | not set |
+| | | de Gouges, Rights of Woman (1791) | fr1791 (first), modern | medium |
 | | | Rouget de Lisle, La Marseillaise (1792) | fr1791 (first), modern | medium |
-| | | Berlin Act, 1885 | fr1885 (first), modern | not set |
-| German | `german` | Kant, Nietzsche | northern (first), modern | not set |
+| | | Berlin Act, 1885 | fr1885 (first), modern | medium |
+| German | `german` | Kant, Nietzsche | northern (first), modern | medium |
 | | | Marx and Engels, Manifest (1848) | northern (first), modern | medium |
 | | | Einstein, inertia and energy content (1905) | northern (first), modern | medium |
 | | | Schikaneder, Die Zauberflöte (1791) | northern (first), modern | medium |
-| | | Luther's Bible | ecg1545 (first), modern | not set |
+| | | Luther's Bible | ecg1545 (first), modern | medium |
 | Swahili | `swahili` | Steere, The Kites and the Crows | z1870 (first), modern | medium |
 | Cherokee | `cherokee` | Constitution of the Cherokee Nation (1827), the preamble and Article I | c1828 (first), modern | low |
-| Esperanto | `esperanto` | Zamenhof, Unua Libro specimens (1887) | zamenhof (only) | not set |
-| Quenya, Sindarin | `elvish` | private works only (Tolkien, in copyright) | tolkien (only) | not set |
+| Esperanto | `esperanto` | Zamenhof, Unua Libro specimens (1887) | zamenhof (only) | none |
+| Quenya, Sindarin | `elvish` | private works only (Tolkien, in copyright) | tolkien (only) | none |
 
 The registry that maps a manifest's `language` code to a module is `PHON` in
 `pipeline/weft/draft.py`.
@@ -260,14 +263,30 @@ reports each costed choice as a failure class. `test_hexameter_scanner_matches_h
 lengthening before initial liquids except as a costed option, and synizesis beyond word-final -εω.
 
 **Where it is weakest.**
-- Vowel length of α ι υ: words not in a quantity table default to short (Iliad and Aristotle
-  manifests).
+- Vowel length of α ι υ. A form in a hand quantity table takes its length from there. A form no table
+  lists takes the long vowels its lemma's LSJ headword marks, carried onto the form's stem by matching
+  letters, and a first-declension -ας is long by rule (`weft.greek.quantity_from_lexicon`, after
+  `weft lexica`); such a sound carries `conf: 0.8` and names LSJ in its provenance. Measured against the
+  hand tables, which were checked against the hexameter, it agrees on 36 of 38 forms; the two it misses
+  are endings LSJ cannot give (alpha purum, ἐπιθυμίᾱν). LSJ marks only some doubtful vowels, so what
+  neither source knows is still read short; each draft report counts the sources (`quantity_sources`:
+  table, lexicon, unmarked). Applied on 2026-10-30, it lengthened 155 tokens across the Greek works and
+  changed no line's scansion. Headwords whose LSJ homographs mark them differently are left out.
 - Koine: the New Testament manifests note that scholars differ on how far η and υ had moved by the
   first century. The scheme models the first century; the Epictetus (early second century) and
   Marcus Aurelius (late second century) pages relabel it to say their texts are later.
 - Homer: the editor's accentuation of Πηληϊάδεω and the synizesis of -εω are not modeled in the
-  sound row (Iliad manifest). Each word is phonemized alone, so elision and correption across
-  words appear in the meter row only.
+  sound row (Iliad manifest). The sound row phonemizes each word alone.
+- Connected speech (pin 18): every Greek line also carries the line spoken whole, a row the reader
+  turns on in Loom. An elided word is tied to the next (δ‿an.tʰrɔ́ː.pɔːn), and a clitic to its host:
+  a word printed without an accent is a clitic, since Greek accents every other word, and it leans
+  back if it is one of the enclitics (μοι, τε, γε, τις, the unaccented forms of εἰμί and φημί, and
+  Homer's pronouns, told from the article οἱ by the treebank lemma), forward otherwise (ἐν, οὐ, ὁ).
+  In a hexameter the first scheme also reads short each final long vowel or diphthong the scan
+  shortens before a vowel (correption: καὶ ἡμῖν, [kàj]); the later schemes do not. In Iliad 1 that
+  is 203 correptions, 455 elisions, 281 enclitics and 108 proclitics. Not modeled: a final consonant
+  carried into the next word's first syllable, crasis, and an enclitic's own accent before another
+  enclitic (the edition prints it, and an accented word is not joined).
 
 **What a specialist could improve.** Entries in the quantity tables; the digamma stem list and the
 costs in the scanner; the Koine vowel and consonant tables in `greek.py`; a scheme for the language
@@ -355,6 +374,12 @@ every word needs its vowel length from a quantity table: `pipeline/weft/data/lat
 plus per-work tables for the Bayeux Tapestry, Inter caetera, the Ninety-five Theses, the Res
 Gestae and the Saer de Quincy charters. Entries follow Lewis and Short headword quantities plus inflectional endings, confirmed
 against the hexameter for Ovid. A word missing from the table is reported as `quantity-unknown`.
+`weft quantities <work>` drafts entries for a new work's unlisted forms: each form's lemma is looked up
+in Lewis and Short (fetched by `weft lexica`), and the vowels its headword marks long are carried onto
+the form's stem. The proposals go to `gen/quantities-proposed.yaml` for review and reach no page until
+copied into a table. With the Res Gestae's own table withheld, 90% of the long marks it places agree
+with that table; it finds about 60% of the long vowels, because a headword shows the stem and not the
+ending, and a reviewer adds the endings.
 
 **Schemes.**
 
@@ -1022,13 +1047,10 @@ the README sample respelling, the Grettis saga scheme order, a Spanish key examp
 
 - **Homer.** The Iliad and Odyssey pages open in `restored`, 5th-century Attic, and their labels
   say it stands in for the poet's own Greek; no archaic scheme exists.
-- **Confidence is uneven within a scheme.** `italian-humanist` is medium for Inter caetera and not
-  set for Pico. `old-norse` is medium for Snorri and not set for the three Eddic poems and Grettis
-  saga (whose manifest calls its reading approximate). Of the national Latin schemes only
-  `anglo-norman` and Inter caetera's `italian-humanist` set a value, though the module labels all of
-  them approximate. Homer, Bashō, Genesis, the Koine works, Beowulf and every Italian, Spanish, Dutch,
-  French and German work set none, although their manifests or modules call the first scheme
-  reconstructed or approximate. Which pages carry the invitation is a policy still to be settled.
+- **Confidence by rule.** Until pin 79 (2026-10-30), 41 works set no `sound_confidence`, so a scheme
+  could carry the invitation on one page and not on another (`italian-humanist` for Inter caetera
+  but not Pico; `old-norse` for Snorri but not the Eddic poems). Each work now sets a value by the
+  rule under "Confidence" above, and `weft check` reports one that does not.
 - **Swahili manifest.** Its predicted gaps say the morphology display does not decode `NounClass`
   or `Aspect`; `treebank.py` now decodes both, so the page shows the class and the aspect, and the
   gap text is out of date until the work is next drafted.

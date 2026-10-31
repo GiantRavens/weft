@@ -58,7 +58,11 @@ commentaries:
     title: "Homer's Odyssey, Books I-XII (Merry, Riddell, Monro)"
     year: 1886
     license: public-domain
-    source: Perseus
+    # the notes on 1.1-10 are quoted in notes/book01.yaml from the print (pp. 1-2); Perseus's transcription
+    # (Perseus:text:1999.04.0055) is licensed non-commercial and served only as a reading aid
+    source: "Clarendon Press print, scan at archive.org"
+    url: https://archive.org/details/homersodysseyedi01home
+sound_confidence: medium
 predicted_gaps:
   - "a/i/u vowel length not marked; the quantity table covers the pilot lines the scanner reads"
   - "treebank is on perseus-grc1, edition is grc2; expect form differences and elision-mark differences"

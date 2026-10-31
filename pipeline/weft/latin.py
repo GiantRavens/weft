@@ -44,6 +44,7 @@ the Greek words listed in VOCALIC_I (iambus, Iōnia).
 """
 from __future__ import annotations
 
+import re
 import unicodedata as ud
 from dataclasses import dataclass
 
@@ -1196,3 +1197,36 @@ KEY["danish-medieval"] = [
     ("CAPS", "stressed syllable, by the classical penultimate rule; Saxo and Anders Sunesen wrote quantitative verse"),
 ]
 SCHEME_LABELS["danish-medieval"] = "As first read: Latin in Denmark around 1200 (approximate)"
+
+
+# ---------------------------------------------------------------- vowel length from Lewis and Short (pin 21)
+def lexicon_long_positions(form: str, lemma: str) -> set[int] | None:
+    """Positions (in the form's bare letters, j as i, v as u) of the vowels its lemma's Lewis and Short headword
+    marks long, carried onto the form where the letters line up (the stem); None without the headword list or a
+    marked headword. Endings are not given: a dictionary headword shows the stem, not the inflection."""
+    from difflib import SequenceMatcher
+    from . import lexica
+    marks = lexica.ls_long_marks()
+    if not marks or not lemma:
+        return None
+    head = marks.get(lexica.bare_lat(re.sub(r"\d+$", "", lemma)))
+    if not head:
+        return None
+    fb, hb = lexica.bare_lat(form), head.lower()
+    raw = re.sub(r"[^a-z]", "", "".join(c for c in ud.normalize("NFD", form.lower().replace("æ", "ae").replace("œ", "oe")) if not ud.combining(c)))
+    # the headword's last syllable is its own ending (aedēs, the nominative): its marks carry over only to
+    # the headword itself, never to another form (aede, aedem are short)
+    vow = [k for k, c in enumerate(hb) if c in "aeiouy"]
+    last = vow[-1] if vow else len(hb)
+    while last > 0 and hb[last - 1] in "aeiouy":
+        last -= 1
+    stem_end = len(hb) if fb == hb else last
+    out = set()
+    for blk in SequenceMatcher(None, hb, fb, autojunk=False).get_matching_blocks():
+        if blk.size < 3:                 # a short chance match (nec against nē) carries nothing
+            continue
+        for i in range(blk.size):
+            j = blk.b + i
+            if blk.a + i < stem_end and head[blk.a + i].isupper() and raw[j:j + 1] not in ("v", "j"):   # never a consonantal v or j
+                out.add(j)
+    return out

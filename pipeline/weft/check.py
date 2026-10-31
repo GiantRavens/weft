@@ -63,6 +63,11 @@ def run(repo: Path, work: str) -> dict:
 
     if manifest.get("kind") not in KINDS:
         bad("manifest-kind", f"{manifest.get('kind')!r}; one of {', '.join(KINDS)}")
+    # every first scheme is a reconstruction unless its pronunciation is documented, so the page's invitation
+    # to specialists is decided for each work, never left out by default (pin 79): low, medium, or none
+    if manifest.get("sound_confidence") not in ("low", "medium", "none"):
+        bad("sound-confidence", f"{manifest.get('sound_confidence')!r}; one of low (no descendant or description of the "
+                                "sounds), medium (any other reconstruction), none (a documented pronunciation)")
     ext = manifest.get("extent")
     if not isinstance(ext, dict) or ext.get("is") not in EXTENTS:
         bad("manifest-extent", f"{ext!r}; extent: {{is: one of {', '.join(EXTENTS)}, of: \"the denominator in words\"}}")

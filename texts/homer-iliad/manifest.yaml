@@ -55,8 +55,9 @@ translations:
     file: sources/lang-leaf-myers1883.txt
     url: https://www.gutenberg.org/cache/epub/3059/pg3059.txt
     sha256: b3053a57e162b79a0a418ef8bf8f6b8796a834acc668832f38cda804e92ac2a2
+sound_confidence: medium
 predicted_gaps:
-  - "a/i/u vowel length not marked in the spelling; the two quantity tables cover the words they list (long by LSJ and confirmed by the metre), others default to short"
+  - "a/i/u vowel length not marked in the spelling; the two quantity tables cover the words they list (long by LSJ and confirmed by the metre), others take LSJ's headword marks where it gives them (50 tokens in book 1, conf 0.8), and the rest are read short"
   - "treebank is on perseus-grc1, edition is grc2; expect form and elision-mark differences"
   - "both translations are prose paragraphs; spans follow sentences, or clauses where a long sentence covers many lines (one span still covers the whole proem, 1.1-7, and the longest later spans run to seven or eight lines)"
   - "the editor's accentuation of Πηληϊάδεω and the synizesis of -εω are not modeled by the sound layer"

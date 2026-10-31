@@ -2,7 +2,7 @@
 # articles, as printed in the Extrait des procès-verbaux de l'Assemblée nationale (Paris, 1789), transcribed and validated on
 # French Wikisource (Page:Déclaration des Droits de l'Homme.djvu/1-8); each line is checked verbatim against the pinned page
 # revisions, a section naming its pages in order so a line that crosses a page is found. verify_strip sets aside the page's
-# templates and tags; the one hyphenation across pages (opi-nions) is declared as a correction.
+# templates and tags; the one word hyphenated across pages (opi-nions) is rejoined by weft draft, which reads tiret and tiret2.
 #
 # The print keeps its 1789 spelling: Représentans, Gouvernemens, suivans, talens (the -ans plural), François, reconnoît,
 # seroit (the oi that became ai in 1835), solemnelle, protége, assiète. Those tokens carry n, the modern spelling the
@@ -15,11 +15,7 @@
 #   with the same ids as the de Gouges Declaration of 1791, which answers them one by one.
 work: ddhc-1789
 joiner: ' '
-verify_strip: \{\{tiret\|[^}]*\}\}|\{\{tiret2\||\{\{Alinéa\||\{\{taille\||\{\{espacé\|[0-9.]+em\||\|200\}\}|\{\{pc\||\{\{sc\||\|0\|0\|(?:début|fin)=1\}\}|\[\[[^|\]]*\||\]\]|\{\{[^{}]*\}\}|\}\}|<[^>]+>|''
-verify_corrections:
-- ocr: opi|nions
-  print: opinions
-  in: sources/p6.txt
+verify_strip: \{\{Alinéa\||\{\{taille\||\{\{espacé\|[0-9.]+em\||\|200\}\}|\{\{pc\||\{\{sc\||\|0\|0\|(?:début|fin)=1\}\}|\[\[[^|\]]*\||\]\]|\{\{[^{}]*\}\}|\}\}|<[^>]+>|''
 sections:
 - id: pre
   title: Préambule

@@ -54,6 +54,31 @@ def test_draft_is_deterministic_and_matches_committed_gen():
         assert report["shift_left"] == []
 
 
+def test_connected_speech():
+    """Pin 18: the proem spoken whole. Elision and clitics are tied (‿); the correptions are the four
+    places the hexameter's dactyls need a long final vowel or diphthong read short."""
+    import unicodedata as ud
+    nfc = lambda x: ud.normalize("NFC", x)
+    g = yaml.safe_load(nfc((WORK / "gen/book01.yaml").read_text()))
+    ph = {l["id"]: l["phrase"]["restored"] for l in g["lines"]}
+    assert ph["od.1.1"]["ipa"].startswith("án.dra‿moj én.ne.pe")          # μοι ἔννεπε: correption
+    assert ph["od.1.3"]["ipa"].startswith("pol.lɔ̂ːn d‿an.tʰrɔ́ː.pɔːn")      # δʼ ἀνθρώπων: elision
+    assert "d‿hó ɡ‿en‿pón.tɔːi" in ph["od.1.4"]["ipa"]                    # two elisions, then ἐν leans forward
+    assert "kàj hɛː.mîːn" in ph["od.1.10"]["ipa"]                         # καὶ ἡμῖν: diphthong to glide
+    assert sum(r["respell"].count("˘") for r in ph.values()) == 4
+    # the later scheme ties the same words but keeps the long vowels: correption is the verse's, scheme one only
+    er = g["lines"][0]["phrase"]["erasmian"]["respell"]
+    assert er.startswith("AN-dra‿moy EN-ne-pe") and "˘" not in er
+    # clitics from the spelling, and the article told from the pronoun by its lemma
+    assert greek.clitic("μοι") == "en" and greek.clitic("τις") == "en" and greek.clitic("ἐν") == "pro"
+    assert greek.clitic("οἱ", "ὁ") == "pro" and greek.clitic("οἱ", "ἕ") == "en"
+    assert greek.clitic("ἄνδρα") is None and greek.clitic("δʼ") is None     # accented; elided
+    assert nfc(greek._correpted("pɛ̂ː")) == nfc("pɛ̂") and nfc(greek._correpted("kaì")) == nfc("kàj")
+    # the scanner names the words it shortened, by their index among the printed words
+    _, _, corr = greek.scan_hexameter("ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον, ὃς μάλα πολλὰ".split(), Q, detail=True)
+    assert corr == [1]
+
+
 def test_check_passes():
     r = check.run(REPO, "homer-odyssey")
     assert r["ok"], r["problems"]
@@ -930,6 +955,8 @@ def test_oshb_short_segments_and_prefixed_divine_name():
     hateph under its aleph, so לַיהוָה reads laʾdōnāy (Gen 4:3)."""
     from weft import treebank as T
     assert T.oshb_to_ud("Pp", "A") == "PRON|PronType=Prs" and T.oshb_to_ud("V", "A") == "VERB"
+    if not (sources_present(REPO / "texts/tanakh-daniel") and sources_present(REPO / "texts/tanakh-genesis")):
+        pytest.skip("OSHB sources not fetched (weft acquire); the segment checks above still ran")
     w = REPO / "texts/tanakh-daniel"
     m = yaml.safe_load((w / "manifest.yaml").read_text())
     lex = T.load_strong_lexicon(w / m["edition"]["lexicon"])
@@ -1065,11 +1092,89 @@ def test_hocr_check_is_core():
     """Pin 63. The hOCR body-column check lives in weft.ocr and runs for any edition whose ocr_check names
     pages: Linschoten's lines pass, and a line with a word changed is reported."""
     import copy
-    from weft import ocr
+    from weft import ocr, dutch
+    assert not hasattr(dutch, "line_checks")            # the check is core, not the Dutch module's
+    if not sources_present(REPO / "texts/linschoten-japan"):
+        pytest.skip("Linschoten's hOCR not fetched (weft acquire)")
     ed = yaml.safe_load((REPO / "texts/linschoten-japan/edition.yaml").read_text())
     lines = [l for s in ed["sections"] for l in s["lines"] if isinstance(l, dict)]
     assert all(ocr.hocr_check(l["tokens"], ed) == [] for l in lines)
     bad = copy.deepcopy(lines[0]["tokens"]); bad[0]["t"] = "Xyzzy"; bad[0].pop("ocr", None)
     assert ocr.hocr_check(bad, ed)[0][0] == "edition-not-in-source"
-    from weft import dutch
-    assert not hasattr(dutch, "line_checks")
+
+
+def test_keyed_treebank_core_sensors(tmp_path):
+    """Pin 70. A keyed treebank (format: keyed) is read by the language module's load_treebank and looked up
+    by draft, which reports under the core names: a token whose identifier is not in the corpus as
+    no-treebank-word, a form that differs as form-mismatch, an unlemmatized word as treebank-lemma-missing.
+    Uses a copy of the Enheduanna work; skipped where its Oracc file is not fetched."""
+    import shutil
+    from weft import draft
+    src = REPO / "texts/enheduanna-temple-hymns"
+    if not sources_present(src):
+        pytest.skip("Oracc file not fetched (weft acquire)")
+    wd = tmp_path / "texts" / "enheduanna-temple-hymns"
+    shutil.copytree(src, wd)
+    ed = yaml.safe_load((wd / "edition.yaml").read_text())
+    toks = [t for s in ed["sections"] for l in s["lines"] if isinstance(l, dict) for t in l["tokens"]]
+    toks[0]["ref"] = "P346196.no.such"            # no row
+    toks[1]["t"] = toks[1]["t"] + "x"               # a form Oracc does not have
+    (wd / "edition.yaml").write_text(yaml.safe_dump(ed, allow_unicode=True, sort_keys=False))
+    r = draft.run(wd)
+    assert r["failures"].get("no-treebank-word") == 1
+    assert r["failures"].get("form-mismatch") == 1
+    assert r["failures"].get("treebank-lemma-missing") == 4
+    assert not any(k.startswith(("oracc-", "tla-")) for k in r["failures"])
+
+
+def test_greek_vowel_length_from_lexicon():
+    """Pin 17. A long α, ι, υ the spelling does not show: the first-declension -ας is long (a rule, needs no
+    data); with the LSJ quantity list (weft lexica), the lemma's headword marks carry over to the form's
+    stem, and they agree with the hand tables, which were checked against the hexameter."""
+    from weft import greek as G, lexica as L
+    assert G.first_declension_as("ψυχὰς", "ψυχή") == "ψυχᾱ̀ς"          # accusative plural
+    assert G.first_declension_as("ἄνδρας", "ἀνήρ") is None              # third declension: short
+    assert G.unmarked_dichrona("ἄνδρα") == 2 and G.unmarked_dichrona("ψῡχήν") == 0 and G.unmarked_dichrona("παῖς") == 0
+    if L.lsj_long_marks() is None:
+        pytest.skip("LSJ quantity list not built (weft lexica)")
+    assert G.quantity_from_lexicon("ψυχὰς", "ψυχή") == "ψῡχᾱ̀ς"
+    assert G.quantity_from_lexicon("μυθήσασθαι", "μυθέομαι") is not None
+    assert G.quantity_from_lexicon("φύσις", "φύσις") is None              # LSJ: short υ, nothing to mark
+
+
+def test_latin_quantities_draft_from_lewis_and_short(tmp_path):
+    """Pin 21. weft quantities proposes table entries from Lewis and Short for the forms no table lists. With
+    the Res Gestae's own table withheld, its proposals are checked against that table: at least 85% of the
+    long marks it places are long there (90% measured), no proposal marks a nominative ending onto another
+    form (aedem stays short), and nothing is written to a table. Needs weft lexica; skipped without it."""
+    import shutil, unicodedata as ud
+    from weft import quantities as Q, lexica as L
+    if L.ls_long_marks() is None:
+        pytest.skip("Lewis and Short list not built (weft lexica)")
+    wd = tmp_path / "texts" / "res-gestae-augusti"
+    shutil.copytree(REPO / "texts/res-gestae-augusti", wd, ignore=shutil.ignore_patterns("sources"))
+    (tmp_path / "pipeline/weft/data").mkdir(parents=True)
+    shutil.copy(REPO / "pipeline/weft/data/lat_quantities.yaml", tmp_path / "pipeline/weft/data/")
+    m = yaml.safe_load((wd / "manifest.yaml").read_text())
+    m["quantities"] = ["pipeline/weft/data/lat_quantities.yaml"]
+    (wd / "manifest.yaml").write_text(yaml.safe_dump(m, allow_unicode=True))
+    r = Q.run(wd)
+    prop = yaml.safe_load((wd / "gen/quantities-proposed.yaml").read_text())
+    held = yaml.safe_load((REPO / "pipeline/weft/data/lat_quantities_resgestae.yaml").read_text())
+    def longs(s):
+        out, k = set(), -1
+        for ch in ud.normalize("NFD", s.lower()):
+            if ud.combining(ch):
+                if ch == "̄" and k >= 0:
+                    out.add(k)
+            elif "a" <= ch <= "z":
+                k += 1
+        return out
+    placed = agree = 0
+    for f, v in prop.items():
+        if isinstance(held.get(f), str):
+            p, h = longs(v), longs(held[f].replace("+", ""))
+            placed += len(p); agree += len(p & h)
+    assert r["proposed"] > 300 and agree / placed >= 0.85, (agree, placed)
+    assert "aedem" not in prop or "̄" not in ud.normalize("NFD", prop["aedem"])
+    assert not any("[" in k or "]" in k for k in prop)

@@ -22,7 +22,8 @@ edition:
 treebank:
   id: tla-2018
   name: "Thesaurus Linguae Aegyptiae, database excerpt of January 2018 (urn:nbn:de:kobv:b4-opus4-29190), Pyramid Texts subcorpus in the AES JSON of S. D. Schweitzer: lemma, part of speech, morphological features and Gardiner sign codes, read by weft.egyptian"
-  format: "none"                 # draft reads no treebank format; weft.egyptian reads this file through its token hook
+  format: keyed                  # each edition token names its word by the corpus identifier in `tla`; weft.egyptian reads the file (load_treebank)
+  key: tla
   file: sources/aes_bbawpyramidentexte.json
   url: "https://raw.githubusercontent.com/simondschweitzer/aes/35276d2527cca1a055e31ed5f6683e777717170f/files/aes/_aes_bbawpyramidentexte.json"
   sha256: c82b275a2f5b70cb50b919d68f2113ef1d2c5cc1d50602718aa7931fa5f6ccf0

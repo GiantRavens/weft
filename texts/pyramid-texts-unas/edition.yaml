@@ -20,7 +20,6 @@ verify_strip: '(?m)^(?![ \t]*"written_form": ").*\n?|^[ \t]*"written_form": "|",
 sections:
   - id: "273"
     title: "Pyramid Text 273, opening: Unas columns 496-509"
-    tla_file: texts/pyramid-texts-unas/sources/aes_bbawpyramidentexte.json
     # the evidence behind each vocalized form; the page shows it in the word's provenance.
     # Forms are Weft's inference from the named evidence, conjectural throughout
     vocalization:

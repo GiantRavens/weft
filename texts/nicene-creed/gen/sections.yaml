@@ -6,6 +6,7 @@ layers:
   lemma: {src: 'none: no treebank; hand annotation in curated/'}
   morph: {src: 'none: no treebank; hand annotation in curated/'}
   sound: {src: 'weft.greek 0.1, from the normalized form'}
+  phrase: {src: weft.greek connected speech 0.1}
 lines:
 - id: nc.pater.1
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:pater.1
@@ -43,6 +44,9 @@ lines:
     sound:
       koine: {ipa: pan.to.ˈkra.to.ra, respell: pan-to-KRA-to-ra}
       erasmian: {ipa: pan.to.ˈkra.to.ra, respell: pan-to-KRA-to-ra}
+  phrase:
+    koine: {ipa: pis.ˈtev.o.mɛn is‿ˈɛ.na θɛ.ˈon pa.ˈtɛ.ra pan.to.ˈkra.to.ra, respell: pees-TAYV-o-men ees‿E-na the-ON pa-TE-ra pan-to-KRA-to-ra}
+    erasmian: {ipa: pis.ˈteu.o.men eis‿ˈhe.na θe.ˈon pa.ˈte.ra pan.to.ˈkra.to.ra, respell: pis-TYOO-o-men ays‿HE-na the-ON pa-TE-ra pan-to-KRA-to-ra}
 - id: nc.pater.2
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:pater.2
   stanza: pater
@@ -94,6 +98,9 @@ lines:
     sound:
       koine: {ipa: a.o.ˈra.ton, respell: a-o-RA-ton}
       erasmian: {ipa: a.o.ˈra.tɔːn, respell: a-o-RA-tohn}
+  phrase:
+    koine: {ipa: py.e.ˈten u.ra.ˈnu ˈkɛ ˈjes o.ra.ˈton‿tɛ ˈpan.ton ˈkɛ a.o.ˈra.ton, respell: pü-ay-TAYN oo-ra-NOO KE YAYS o-ra-TON‿te PAN-ton KE a-o-RA-ton}
+    erasmian: {ipa: poi.ɛː.ˈtɛːn uː.ra.ˈnuː ˈkai ˈɡɛːs ho.ra.ˈtɔːn‿te ˈpan.tɔːn ˈkai a.o.ˈra.tɔːn, respell: poy-ay-TAYN oo-ra-NOO KAI GAYS ho-ra-TOHN‿te PAN-tohn KAI a-o-RA-tohn}
 - id: nc.hyios.1
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:hyios.1
   stanza: hyios
@@ -130,6 +137,9 @@ lines:
     sound:
       koine: {ipa: xris.ˈton, respell: khrees-TON}
       erasmian: {ipa: xris.ˈton, respell: khris-TON}
+  phrase:
+    koine: {ipa: ˈkɛ is‿ˈɛ.na ˈky.ri.on i.e.ˈsun xris.ˈton, respell: KE ees‿E-na KÜ-ree-on ee-ay-SOON khrees-TON}
+    erasmian: {ipa: ˈkai eis‿ˈhe.na ˈky.ri.on i.ɛː.ˈsuːn xris.ˈton, respell: KAI ays‿HE-na KÜ-ri-on i-ay-SOON khris-TON}
 - id: nc.hyios.2
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:hyios.2
   stanza: hyios
@@ -166,6 +176,9 @@ lines:
     sound:
       koine: {ipa: mo.no.jɛ.ˈne, respell: mo-no-ye-NAY}
       erasmian: {ipa: mo.no.ɡe.ˈnɛː, respell: mo-no-ge-NAY}
+  phrase:
+    koine: {ipa: ˈton yi.ˈon ˈtu θɛ.ˈu ˈton mo.no.jɛ.ˈne, respell: TON üee-ON TOO the-OO TON mo-no-ye-NAY}
+    erasmian: {ipa: ˈton hyi.ˈon ˈtuː θe.ˈuː ˈton mo.no.ɡe.ˈnɛː, respell: TON hwee-ON TOO the-OO TON mo-no-ge-NAY}
 - id: nc.hyios.3
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:hyios.3
   stanza: hyios
@@ -217,6 +230,9 @@ lines:
     sound:
       koine: {ipa: ɛ.ˈo.non, respell: e-O-non}
       erasmian: {ipa: ai.ˈɔː.nɔːn, respell: ai-OH-nohn}
+  phrase:
+    koine: {ipa: ˈton ɛk‿ˈtu pa.ˈtros jɛn.ne.ˈθɛn.ta ˈpro ˈpan.ton ˈton ɛ.ˈo.non, respell: TON ek‿TOO pa-TROS yen-nay-THEN-ta PRO PAN-ton TON e-O-non}
+    erasmian: {ipa: ˈton ek‿ˈtuː pa.ˈtros ɡen.nɛː.ˈθen.ta ˈpro ˈpan.tɔːn ˈtɔːn ai.ˈɔː.nɔːn, respell: TON ek‿TOO pa-TROS gen-nay-THEN-ta PRO PAN-tohn TOHN ai-OH-nohn}
 - id: nc.hyios.4
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:hyios.4
   stanza: hyios
@@ -263,6 +279,9 @@ lines:
     sound:
       koine: {ipa: a.le.θi.ˈnu, respell: a-lay-thee-NOO}
       erasmian: {ipa: a.lɛː.θi.ˈnuː, respell: a-lay-thi-NOO}
+  phrase:
+    koine: {ipa: ˈfos ɛk‿fo.ˈtos θɛ.ˈon a.le.θi.ˈnon ɛk‿θɛ.ˈu a.le.θi.ˈnu, respell: FOS ek‿fo-TOS the-ON a-lay-thee-NON ek‿the-OO a-lay-thee-NOO}
+    erasmian: {ipa: ˈfɔːs ek‿fɔː.ˈtos θe.ˈon a.lɛː.θi.ˈnon ek‿θe.ˈuː a.lɛː.θi.ˈnuː, respell: FOHS ek‿foh-TOS the-ON a-lay-thi-NON ek‿the-OO a-lay-thi-NOO}
 - id: nc.hyios.5
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:hyios.5
   stanza: hyios
@@ -299,6 +318,9 @@ lines:
     sound:
       koine: {ipa: pa.ˈtri, respell: pa-TREE}
       erasmian: {ipa: pa.ˈtri, respell: pa-TRI}
+  phrase:
+    koine: {ipa: jɛn.ne.ˈθɛn.ta u‿py.e.ˈθɛn.ta o.mo.ˈu.si.on ˈto pa.ˈtri, respell: yen-nay-THEN-ta oo‿pü-ay-THEN-ta o-mo-OO-see-on TO pa-TREE}
+    erasmian: {ipa: ɡen.nɛː.ˈθen.ta uː‿poi.ɛː.ˈθen.ta ho.mo.ˈuː.si.on ˈtɔː pa.ˈtri, respell: gen-nay-THEN-ta oo‿poy-ay-THEN-ta ho-mo-OO-si-on TOH pa-TRI}
 - id: nc.hyios.6
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:hyios.6
   stanza: hyios
@@ -330,6 +352,9 @@ lines:
     sound:
       koine: {ipa: ɛ.ˈjɛ.nɛ.to, respell: e-YE-ne-to}
       erasmian: {ipa: e.ˈɡe.ne.to, respell: e-GE-ne-to}
+  phrase:
+    koine: {ipa: ði‿ˈu ˈta ˈpan.ta ɛ.ˈjɛ.nɛ.to, respell: dhee‿OO TA PAN-ta e-YE-ne-to}
+    erasmian: {ipa: di‿ˈhuː ˈta ˈpan.ta e.ˈɡe.ne.to, respell: di‿HOO TA PAN-ta e-GE-ne-to}
 - id: nc.oikonomia.1
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:oikonomia.1
   stanza: oikonomia
@@ -386,6 +411,9 @@ lines:
     sound:
       koine: {ipa: so.te.ˈri.an, respell: so-tay-REE-an}
       erasmian: {ipa: sɔː.tɛː.ˈri.an, respell: soh-tay-RI-an}
+  phrase:
+    koine: {ipa: ˈton ði‿e.ˈmas ˈtus an.ˈθro.pus ˈkɛ ði.ˈa ˈten e.mɛ.ˈtɛ.ran so.te.ˈri.an, respell: TON dhee‿ay-MAS TOOS an-THRO-poos KE dhee-A TAYN ay-me-TE-ran so-tay-REE-an}
+    erasmian: {ipa: ˈton di‿hɛː.ˈmaːs ˈtuːs an.ˈθrɔː.puːs ˈkai di.ˈa ˈtɛːn hɛː.me.ˈte.ran sɔː.tɛː.ˈri.an, respell: TON di‿hay-MAAS TOOS an-THROH-poos KAI di-A TAYN hay-me-TE-ran soh-tay-RI-an}
 - id: nc.oikonomia.2
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:oikonomia.2
   stanza: oikonomia
@@ -412,6 +440,9 @@ lines:
     sound:
       koine: {ipa: u.ra.ˈnon, respell: oo-ra-NON}
       erasmian: {ipa: uː.ra.ˈnɔːn, respell: oo-ra-NOHN}
+  phrase:
+    koine: {ipa: ka.tɛl.ˈθon.ta ɛk‿ˈton u.ra.ˈnon, respell: ka-tel-THON-ta ek‿TON oo-ra-NON}
+    erasmian: {ipa: ka.tel.ˈθon.ta ek‿ˈtɔːn uː.ra.ˈnɔːn, respell: ka-tel-THON-ta ek‿TOHN oo-ra-NOHN}
 - id: nc.oikonomia.3
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:oikonomia.3
   stanza: oikonomia
@@ -473,6 +504,10 @@ lines:
     sound:
       koine: {ipa: ɛ.nan.θro.ˈpe.san.ta, respell: e-nan-thro-PAY-san-ta}
       erasmian: {ipa: e.nan.θrɔː.ˈpɛː.san.ta, respell: e-nan-throh-PAY-san-ta}
+  phrase:
+    koine: {ipa: ˈkɛ sar.ko.ˈθɛn.ta ɛk‿ˈpnev.ma.tos a.ˈji.u ˈkɛ ma.ˈri.as ˈtes par.ˈθɛ.nu ˈkɛ ɛ.nan.θro.ˈpe.san.ta, respell: KE sar-ko-THEN-ta ek‿PNAYV-ma-tos a-YEE-oo KE ma-REE-as TAYS par-THE-noo KE e-nan-thro-PAY-san-ta}
+    erasmian: {ipa: ˈkai sar.kɔː.ˈθen.ta ek‿ˈpneu.ma.tos ha.ˈɡi.uː ˈkai ma.ˈri.as ˈtɛːs par.ˈθe.nuː ˈkai e.nan.θrɔː.ˈpɛː.san.ta, respell: KAI sar-koh-THEN-ta ek‿PNYOO-ma-tos ha-GI-oo KAI ma-RI-as TAYS par-THE-noo
+        KAI e-nan-throh-PAY-san-ta}
 - id: nc.oikonomia.4
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:oikonomia.4
   stanza: oikonomia
@@ -514,6 +549,9 @@ lines:
     sound:
       koine: {ipa: pi.ˈla.tu, respell: pee-LA-too}
       erasmian: {ipa: pi.ˈla.tuː, respell: pi-LA-too}
+  phrase:
+    koine: {ipa: stav.ro.ˈθɛn.ta‿tɛ y.ˈpɛr e.ˈmon ɛ.ˈpi pon.ˈti.u pi.ˈla.tu, respell: stav-ro-THEN-ta‿te ü-PER ay-MON e-PEE pon-TEE-oo pee-LA-too}
+    erasmian: {ipa: stau.rɔː.ˈθen.ta‿te hy.ˈper hɛː.ˈmɔːn e.ˈpi pon.ˈti.uː pi.ˈla.tuː, respell: stow-roh-THEN-ta‿te hü-PER hay-MOHN e-PI pon-TI-oo pi-LA-too}
 - id: nc.oikonomia.5
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:oikonomia.5
   stanza: oikonomia
@@ -540,6 +578,9 @@ lines:
     sound:
       koine: {ipa: ta.ˈfɛn.ta, respell: ta-FEN-ta}
       erasmian: {ipa: ta.ˈfen.ta, respell: ta-FEN-ta}
+  phrase:
+    koine: {ipa: ˈkɛ pa.ˈθon.ta ˈkɛ ta.ˈfɛn.ta, respell: KE pa-THON-ta KE ta-FEN-ta}
+    erasmian: {ipa: ˈkai pa.ˈθon.ta ˈkai ta.ˈfen.ta, respell: KAI pa-THON-ta KAI ta-FEN-ta}
 - id: nc.oikonomia.6
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:oikonomia.6
   stanza: oikonomia
@@ -586,6 +627,9 @@ lines:
     sound:
       koine: {ipa: ɣra.ˈfas, respell: ghra-FAS}
       erasmian: {ipa: ɡra.ˈfas, respell: gra-FAS}
+  phrase:
+    koine: {ipa: ˈkɛ a.nas.ˈtan.ta ˈte ˈtri.te e.ˈmɛ.ra ka.ˈta ˈtas ɣra.ˈfas, respell: KE a-nas-TAN-ta TAY TREE-tay ay-ME-ra ka-TA TAS ghra-FAS}
+    erasmian: {ipa: ˈkai a.nas.ˈtan.ta ˈtɛː ˈtri.tɛː hɛː.ˈme.raː ka.ˈta ˈtas ɡra.ˈfas, respell: KAI a-nas-TAN-ta TAY TRI-tay hay-ME-raa ka-TA TAS gra-FAS}
 - id: nc.oikonomia.7
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:oikonomia.7
   stanza: oikonomia
@@ -647,6 +691,9 @@ lines:
     sound:
       koine: {ipa: pa.ˈtros, respell: pa-TROS}
       erasmian: {ipa: pa.ˈtros, respell: pa-TROS}
+  phrase:
+    koine: {ipa: ˈkɛ a.nɛl.ˈθon.ta is‿ˈtus u.ra.ˈnus ˈkɛ ka.θɛ.ˈzo.mɛ.non ɛn‿ðɛ.ksi.ˈa ˈtu pa.ˈtros, respell: KE a-nel-THON-ta ees‿TOOS oo-ra-NOOS KE ka-the-ZO-me-non en‿dhe-ksee-A TOO pa-TROS}
+    erasmian: {ipa: ˈkai a.nel.ˈθon.ta eis‿ˈtuːs uː.ra.ˈnuːs ˈkai ka.θe.ˈdzo.me.non en‿de.ksi.ˈaː ˈtuː pa.ˈtros, respell: KAI a-nel-THON-ta ays‿TOOS oo-ra-NOOS KAI ka-the-DZO-me-non en‿de-ksi-AA TOO pa-TROS}
 - id: nc.oikonomia.8
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:oikonomia.8
   stanza: oikonomia
@@ -698,6 +745,9 @@ lines:
     sound:
       koine: {ipa: nɛ.ˈkrus, respell: ne-KROOS}
       erasmian: {ipa: ne.ˈkruːs, respell: ne-KROOS}
+  phrase:
+    koine: {ipa: ˈkɛ ˈpa.lin ɛr.ˈxo.mɛ.non mɛ.ˈta ˈðo.kses ˈkri.nɛ ˈzon.tas ˈkɛ nɛ.ˈkrus, respell: KE PA-leen er-KHO-me-non me-TA DHO-ksays KREE-ne ZON-tas KE ne-KROOS}
+    erasmian: {ipa: ˈkai ˈpa.lin er.ˈxo.me.non me.ˈta ˈdo.ksɛːs ˈkriː.nai ˈdzɔːn.tas ˈkai ne.ˈkruːs, respell: KAI PA-lin er-KHO-me-non me-TA DO-ksays KREE-nai DZOHN-tas KAI ne-KROOS}
 - id: nc.oikonomia.9
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:oikonomia.9
   stanza: oikonomia
@@ -734,6 +784,9 @@ lines:
     sound:
       koine: {ipa: ˈtɛ.los, respell: TE-los}
       erasmian: {ipa: ˈte.los, respell: TE-los}
+  phrase:
+    koine: {ipa: ˈu ˈtes va.si.ˈli.as uk‿ˈɛs.tɛ ˈtɛ.los, respell: OO TAYS va-see-LEE-as ook‿ES-te TE-los}
+    erasmian: {ipa: ˈhuː ˈtɛːs ba.si.ˈlei.as uːk‿ˈes.tai ˈte.los, respell: HOO TAYS ba-si-LAY-as ook‿ES-tai TE-los}
 - id: nc.pneuma.1
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:pneuma.1
   stanza: pneuma
@@ -770,6 +823,9 @@ lines:
     sound:
       koine: {ipa: ˈa.ji.on, respell: A-yee-on}
       erasmian: {ipa: ˈha.ɡi.on, respell: HA-gi-on}
+  phrase:
+    koine: {ipa: ˈkɛ is‿ˈto ˈpnev.ma ˈto ˈa.ji.on, respell: KE ees‿TO PNAYV-ma TO A-yee-on}
+    erasmian: {ipa: ˈkai eis‿ˈto ˈpneu.ma ˈto ˈha.ɡi.on, respell: KAI ays‿TO PNYOO-ma TO HA-gi-on}
 - id: nc.pneuma.2
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:pneuma.2
   stanza: pneuma
@@ -796,6 +852,9 @@ lines:
     sound:
       koine: {ipa: zo.o.py.ˈon, respell: zo-o-pü-ON}
       erasmian: {ipa: dzɔː.o.poi.ˈon, respell: dzoh-o-poy-ON}
+  phrase:
+    koine: {ipa: ˈto ˈky.ri.on ˈkɛ zo.o.py.ˈon, respell: TO KÜ-ree-on KE zo-o-pü-ON}
+    erasmian: {ipa: ˈto ˈky.ri.on ˈkai dzɔː.o.poi.ˈon, respell: TO KÜ-ri-on KAI dzoh-o-poy-ON}
 - id: nc.pneuma.3
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:pneuma.3
   stanza: pneuma
@@ -827,6 +886,9 @@ lines:
     sound:
       koine: {ipa: ɛk.po.rev.ˈo.mɛ.non, respell: ek-po-rayv-O-me-non}
       erasmian: {ipa: ek.po.reu.ˈo.me.non, respell: ek-po-ryoo-O-me-non}
+  phrase:
+    koine: {ipa: ˈto ɛk‿ˈtu pa.ˈtros ɛk.po.rev.ˈo.mɛ.non, respell: TO ek‿TOO pa-TROS ek-po-rayv-O-me-non}
+    erasmian: {ipa: ˈto ek‿ˈtuː pa.ˈtros ek.po.reu.ˈo.me.non, respell: TO ek‿TOO pa-TROS ek-po-ryoo-O-me-non}
 - id: nc.pneuma.4
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:pneuma.4
   stanza: pneuma
@@ -873,6 +935,9 @@ lines:
     sound:
       koine: {ipa: syn.ðo.ksa.ˈzo.mɛ.non, respell: sün-dho-ksa-ZO-me-non}
       erasmian: {ipa: syn.do.ksa.ˈdzo.me.non, respell: sün-do-ksa-DZO-me-non}
+  phrase:
+    koine: {ipa: ˈto ˈsyn pa.ˈtri ˈkɛ yi.ˈo sym.pros.ky.ˈnu.mɛ.non ˈkɛ syn.ðo.ksa.ˈzo.mɛ.non, respell: TO SÜN pa-TREE KE üee-O süm-pros-kü-NOO-me-non KE sün-dho-ksa-ZO-me-non}
+    erasmian: {ipa: ˈto ˈsyn pa.ˈtri ˈkai hyi.ˈɔː sym.pros.ky.ˈnuː.me.non ˈkai syn.do.ksa.ˈdzo.me.non, respell: TO SÜN pa-TRI KAI hwee-OH süm-pros-kü-NOO-me-non KAI sün-do-ksa-DZO-me-non}
 - id: nc.pneuma.5
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:pneuma.5
   stanza: pneuma
@@ -904,6 +969,9 @@ lines:
     sound:
       koine: {ipa: pro.fe.ˈton, respell: pro-fay-TON}
       erasmian: {ipa: pro.fɛː.ˈtɔːn, respell: pro-fay-TOHN}
+  phrase:
+    koine: {ipa: ˈto la.ˈle.san ði.ˈa ˈton pro.fe.ˈton, respell: TO la-LAY-san dhee-A TON pro-fay-TON}
+    erasmian: {ipa: ˈto la.ˈlɛː.san di.ˈa ˈtɔːn pro.fɛː.ˈtɔːn, respell: TO la-LAY-san di-A TOHN pro-fay-TOHN}
 - id: nc.ekklesia.1
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:ekklesia.1
   stanza: ekklesia
@@ -945,6 +1013,9 @@ lines:
     sound:
       koine: {ipa: ɛk.kle.ˈsi.an, respell: ek-klay-SEE-an}
       erasmian: {ipa: ek.klɛː.ˈsi.an, respell: ek-klay-SI-an}
+  phrase:
+    koine: {ipa: is‿ˈmi.an a.ˈji.an ka.θo.li.ˈken ˈkɛ a.pos.to.li.ˈken ɛk.kle.ˈsi.an, respell: ees‿MEE-an a-YEE-an ka-tho-lee-KAYN KE a-pos-to-lee-KAYN ek-klay-SEE-an}
+    erasmian: {ipa: eis‿ˈmi.an ha.ˈɡi.an ka.θo.li.ˈkɛːn ˈkai a.pos.to.li.ˈkɛːn ek.klɛː.ˈsi.an, respell: ays‿MI-an ha-GI-an ka-tho-li-KAYN KAI a-pos-to-li-KAYN ek-klay-SI-an}
 - id: nc.ekklesia.2
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:ekklesia.2
   stanza: ekklesia
@@ -981,6 +1052,9 @@ lines:
     sound:
       koine: {ipa: a.mar.ti.ˈon, respell: a-mar-tee-ON}
       erasmian: {ipa: ha.mar.ti.ˈɔːn, respell: ha-mar-ti-OHN}
+  phrase:
+    koine: {ipa: o.mo.lo.ˈɣu.mɛn ˈɛn ˈvap.tis.ma is‿ˈa.fɛ.sin a.mar.ti.ˈon, respell: o-mo-lo-GHOO-men EN VAP-tees-ma ees‿A-fe-seen a-mar-tee-ON}
+    erasmian: {ipa: ho.mo.lo.ˈɡuː.men ˈhen ˈbap.tis.ma eis‿ˈa.fe.sin ha.mar.ti.ˈɔːn, respell: ho-mo-lo-GOO-men HEN BAP-tis-ma ays‿A-fe-sin ha-mar-ti-OHN}
 - id: nc.ekklesia.3
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:ekklesia.3
   stanza: ekklesia
@@ -1002,6 +1076,9 @@ lines:
     sound:
       koine: {ipa: nɛ.ˈkron, respell: ne-KRON}
       erasmian: {ipa: ne.ˈkrɔːn, respell: ne-KROHN}
+  phrase:
+    koine: {ipa: pros.ðo.ˈko.mɛn a.ˈnas.ta.sin nɛ.ˈkron, respell: pros-dho-KO-men a-NAS-ta-seen ne-KRON}
+    erasmian: {ipa: pros.do.ˈkɔː.men a.ˈnas.ta.sin ne.ˈkrɔːn, respell: pros-do-KOH-men a-NAS-ta-sin ne-KROHN}
 - id: nc.ekklesia.4
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:ekklesia.4
   stanza: ekklesia
@@ -1033,6 +1110,9 @@ lines:
     sound:
       koine: {ipa: ɛ.ˈo.nos, respell: e-O-nos}
       erasmian: {ipa: ai.ˈɔː.nos, respell: ai-OH-nos}
+  phrase:
+    koine: {ipa: ˈkɛ zo.ˈen ˈtu ˈmɛl.lon.tos ɛ.ˈo.nos, respell: KE zo-AYN TOO MEL-lon-tos e-O-nos}
+    erasmian: {ipa: ˈkai dzɔː.ˈɛːn ˈtuː ˈmel.lon.tos ai.ˈɔː.nos, respell: KAI dzoh-AYN TOO MEL-lon-tos ai-OH-nos}
 - id: nc.ekklesia.5
   cite: urn:weft:grc:concilia.constantinopolitanum.381.ws-ekthesis-150:ekklesia.5
   stanza: ekklesia
@@ -1044,3 +1124,6 @@ lines:
     sound:
       koine: {ipa: a.ˈmen, respell: a-MAYN}
       erasmian: {ipa: a.ˈmɛːn, respell: a-MAYN}
+  phrase:
+    koine: {ipa: a.ˈmen, respell: a-MAYN}
+    erasmian: {ipa: a.ˈmɛːn, respell: a-MAYN}

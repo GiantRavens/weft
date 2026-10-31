@@ -1,20 +1,25 @@
 # Weft edition of the Déclaration des droits de la femme et de la citoyenne (Olympe de Gouges, Paris, September
-# 1791): the preamble and the seventeen articles. Text as printed in the 1791 pamphlet (Les Droits de la femme.
-# À la reine), transcribed on French Wikisource page by page (Page:De Gouges - Les Droits de la femme, 1791.djvu/8-13,
-# validated); each line is checked verbatim against the pinned page revisions, a section naming its pages in order
-# so a line that crosses a page is found. verify_strip sets aside the wiki templates ({{corr|soeurs|sœurs}} leaves
-# the corrected word), tags and italics.
+# 1791): the preamble, the seventeen articles, and the Postambule with its Forme du contrat social. Text as printed
+# in the 1791 pamphlet (Les Droits de la femme. À la reine), transcribed on French Wikisource page by page
+# (Page:De Gouges - Les Droits de la femme, 1791.djvu/8-24, validated); each line is checked verbatim against the
+# pinned page revisions, a section naming its pages in order so a line that crosses a page is found. verify_strip
+# sets aside the wiki templates ({{corr|soeurs|sœurs}} leaves the corrected word), tags, italics and the author's
+# footnotes (<ref>, given on the page as notes).
 #
 # The print keeps its 1791 spelling: loix, enfans, représentans, suivans, solemnelle, personellement, sur-tout,
-# the long s of impreſcriptibles, and the ampersand. Those tokens carry n, the modern spelling the lexicon is
-# keyed by; the page shows the print and sounds the word.
+# the long s of impreſcriptibles, and the ampersand; in the Postambule also the -oit and -oient imperfects (étoit,
+# avoit), foible, François, tems, achette, bisarre, appanage and alument. Those tokens carry n, the modern spelling
+# the lexicon is keyed by; the page shows the print and sounds the word.
 #   t     the word as printed, punctuation attached; an elision (l’, d’, qu’) is its own token, glued to the next
 #   n     the modern spelling where the print differs
 #   p     punctuation the print sets off by a space (French " :" and " ;")
-#   Lines are Weft's division of the text at its stops and commas; sections are the preamble and the articles.
+#   z     a liaison careful modern reading makes (les‿enfants, nous‿avons): after a determiner or a clitic
+#         pronoun, and after en, dans, sans, chez and tout autre, before a vowel
+#   Lines are Weft's division of the text at its stops and commas; sections are the preamble, the articles, the
+#   eight paragraphs of the Postambule (pb1-pb8) and the contract between them.
 work: gouges-droits-de-la-femme
 joiner: ' '
-verify_strip: \{\{corr\|[^|}]*\||\{\{[^{}]*\}\}|\}\}|<[^>]+>|''|__NOTOC__
+verify_strip: <ref>.*?</ref>|\{\{corr\|[^|}]*\||\{\{[^{}]*\}\}|\}\}|<[^>]+>|''|__NOTOC__
 sections:
 - id: pre
   title: Préambule
@@ -41,6 +46,7 @@ sections:
     - t: être
     - t: constituées
     - t: en
+      z: true
     - t: assemblée
     - t: nationale.
   - tokens:
@@ -82,6 +88,7 @@ sections:
       glue: true
     - t: exposer
     - t: dans
+      z: true
     - t: une
     - t: déclaration
     - t: solemnelle,
@@ -126,6 +133,7 @@ sections:
     - t: afin
     - t: que
     - t: les
+      z: true
     - t: actes
     - t: du
     - t: pouvoir
@@ -137,6 +145,7 @@ sections:
     - t: du
     - t: pouvoir
     - t: des
+      z: true
     - t: hommes
     - t: pouvant
     - t: être
@@ -216,6 +225,7 @@ sections:
     - t: et
     - t: sous
     - t: les
+      z: true
     - t: auspices
     - t: de
     - t: l’
@@ -366,6 +376,7 @@ sections:
     - t: n’
       glue: true
     - t: en
+      z: true
     - t: émane
     - t: expressément.
 - id: a4
@@ -580,6 +591,7 @@ sections:
     - t: '&'
       n: et
     - t: sans
+      z: true
     - t: autres
     - t: distinctions
     - t: que
@@ -626,6 +638,7 @@ sections:
     - t: obéissent
     - t: comme
     - t: les
+      z: true
     - t: hommes
     - t: à
     - t: cette
@@ -709,6 +722,7 @@ sections:
     - t: inquiété
     - t: pour
     - t: ses
+      z: true
     - t: opinions
     - t: mêmes
     - t: fondamentales,
@@ -767,6 +781,7 @@ sections:
     - t: pensées
     - t: et
     - t: des
+      z: true
     - t: opinions
     - t: est
     - t: un
@@ -789,6 +804,7 @@ sections:
     - t: pères
     - t: envers
     - t: les
+      z: true
     - t: enfans.
       n: enfants
   - tokens:
@@ -805,9 +821,11 @@ sections:
     - t: d’
       glue: true
     - t: un
+      z: true
     - t: enfant
     - t: qui
     - t: vous
+      z: true
     - t: appartient,
   - tokens:
     - t: sans
@@ -957,6 +975,7 @@ sections:
     - t: des
     - t: places,
     - t: des
+      z: true
     - t: emplois,
     - t: des
     - t: charges,
@@ -1066,6 +1085,7 @@ sections:
     - t: à
     - t: celle
     - t: des
+      z: true
     - t: hommes,
   - tokens:
     - t: a
@@ -1082,6 +1102,7 @@ sections:
   - tokens:
     - t: de
     - t: son
+      z: true
     - t: administration.
 - id: a16
   title: Article XVI
@@ -1127,6 +1148,7 @@ sections:
     - t: la
     - t: majorité
     - t: des
+      z: true
     - t: individus
     - t: qui
     - t: composent
@@ -1160,6 +1182,7 @@ sections:
       p: ;
   - tokens:
     - t: elles
+      z: true
     - t: ont
     - t: pour
     - t: chacun
@@ -1174,6 +1197,7 @@ sections:
     - t: ne
     - t: peut
     - t: en
+      z: true
     - t: être
     - t: privé
     - t: comme
@@ -1210,3 +1234,2783 @@ sections:
     - t: et
     - t: préalable
     - t: indemnité.
+- id: pb1
+  title: Postambule, 1
+  verify_in:
+  - sources/p13.txt
+  - sources/ws-p14.txt
+  - sources/ws-p15.txt
+  lines:
+  - tokens:
+    - t: Femme,
+    - t: réveille-toi
+      p: ;
+  - tokens:
+    - t: le
+    - t: tocſin
+      n: tocsin
+    - t: de
+    - t: la
+    - t: raison
+    - t: se
+    - t: fait
+    - t: entendre
+    - t: dans
+    - t: tout
+    - t: l’
+      glue: true
+    - t: univers
+      p: ;
+  - tokens:
+    - t: reconnois
+      n: reconnais
+    - t: tes
+    - t: droits.
+  - tokens:
+    - t: Le
+    - t: puissant
+    - t: empire
+    - t: de
+    - t: la
+    - t: nature
+    - t: n’
+      glue: true
+    - t: est
+    - t: plus
+    - t: environné
+    - t: de
+    - t: préjugés,
+  - tokens:
+    - t: de
+    - t: fanatisme,
+    - t: de
+    - t: superstition
+    - t: et
+    - t: de
+    - t: mensonges.
+  - tokens:
+    - t: Le
+    - t: flambeau
+    - t: de
+    - t: la
+    - t: vérité
+    - t: a
+    - t: dissipé
+    - t: tous
+    - t: les
+    - t: nuages
+    - t: de
+    - t: la
+    - t: sottise
+    - t: et
+    - t: de
+    - t: l’
+      glue: true
+    - t: usurpation.
+  - tokens:
+    - t: L’
+      glue: true
+    - t: homme
+    - t: esclave
+    - t: a
+    - t: multiplié
+    - t: ses
+    - t: forces,
+  - tokens:
+    - t: a
+    - t: eu
+    - t: besoin
+    - t: de
+    - t: recourir
+    - t: aux
+    - t: tiennes
+    - t: pour
+    - t: briser
+    - t: ses
+    - t: fers.
+  - tokens:
+    - t: Devenu
+    - t: libre,
+    - t: il
+    - t: est
+    - t: devenu
+    - t: injuste
+    - t: envers
+    - t: sa
+    - t: compagne.
+  - tokens:
+    - t: Ô
+    - t: femmes
+      p: '!'
+  - tokens:
+    - t: femmes,
+    - t: quand
+    - t: cesserez-vous
+    - t: d’
+      glue: true
+    - t: être
+    - t: aveugles
+      p: '?'
+  - tokens:
+    - t: Quels
+    - t: sont
+    - t: les
+      z: true
+    - t: avantages
+    - t: que
+    - t: vous
+      z: true
+    - t: avez
+    - t: recueillis
+    - t: dans
+    - t: la
+    - t: révolution
+      p: '?'
+  - tokens:
+    - t: Un
+    - t: mépris
+    - t: plus
+    - t: marqué,
+  - tokens:
+    - t: un
+    - t: dédain
+    - t: plus
+    - t: signalé.
+  - tokens:
+    - t: Dans
+    - t: les
+    - t: siècles
+    - t: de
+    - t: corruption
+    - t: vous
+    - t: n’
+      glue: true
+    - t: avez
+    - t: régné
+    - t: que
+    - t: sur
+    - t: la
+    - t: foiblesse
+      n: faiblesse
+    - t: des
+      z: true
+    - t: hommes.
+  - tokens:
+    - t: Votre
+    - t: empire
+    - t: est
+    - t: détruit
+      p: ;
+  - tokens:
+    - t: que
+    - t: vous
+    - t: reste-t-il
+    - t: donc
+      p: '?'
+  - tokens:
+    - t: la
+    - t: conviction
+    - t: des
+      z: true
+    - t: injustices
+    - t: de
+    - t: l’
+      glue: true
+    - t: homme.
+  - tokens:
+    - t: La
+    - t: réclamation
+    - t: de
+    - t: votre
+    - t: patrimoine,
+  - tokens:
+    - t: fondée
+    - t: sur
+    - t: les
+    - t: sages
+    - t: décrets
+    - t: de
+    - t: la
+    - t: nature
+      p: ;
+  - tokens:
+    - t: qu’
+      glue: true
+    - t: auriez-vous
+    - t: à
+    - t: redouter
+    - t: pour
+    - t: une
+    - t: si
+    - t: belle
+    - t: entreprise
+      p: '?'
+  - tokens:
+    - t: le
+    - t: bon
+    - t: mot
+    - t: du
+    - t: Législateur
+    - t: des
+    - t: noces
+    - t: de
+    - t: Cana
+      p: '?'
+  - tokens:
+    - t: Craignez-vous
+    - t: que
+    - t: nos
+    - t: Législateurs
+    - t: Français,
+  - tokens:
+    - t: correcteurs
+    - t: de
+    - t: cette
+    - t: morale,
+  - tokens:
+    - t: long-temps
+      n: longtemps
+    - t: accrochée
+    - t: aux
+    - t: branches
+    - t: de
+    - t: la
+    - t: politique,
+  - tokens:
+    - t: mais
+    - t: qui
+    - t: n’
+      glue: true
+    - t: est
+    - t: plus
+    - t: de
+    - t: saison,
+  - tokens:
+    - t: ne
+    - t: vous
+    - t: répètent
+      p: ':'
+  - tokens:
+    - t: femmes,
+    - t: qu’
+      glue: true
+    - t: y
+    - t: a-t-il
+    - t: de
+    - t: commun
+    - t: entre
+    - t: vous
+    - t: et
+    - t: nous
+      p: '?'
+  - tokens:
+    - t: Tout,
+    - t: auriez-vous
+    - t: à
+    - t: répondre.
+  - tokens:
+    - t: S’
+      glue: true
+    - t: ils
+    - t: s’
+      glue: true
+    - t: obstinoient,
+      n: obstinaient
+  - tokens:
+    - t: dans
+    - t: leur
+    - t: faiblesse,
+    - t: à
+    - t: mettre
+    - t: cette
+    - t: inconséquence
+    - t: en
+    - t: contradiction
+    - t: avec
+    - t: leurs
+    - t: principes
+      p: ;
+  - tokens:
+    - t: opposez
+    - t: courageusement
+    - t: la
+    - t: force
+    - t: de
+    - t: la
+    - t: raison
+    - t: aux
+    - t: vaines
+    - t: prétentions
+    - t: de
+    - t: supériorité
+      p: ;
+  - tokens:
+    - t: réunissez-vous
+    - t: sous
+    - t: les
+      z: true
+    - t: étendards
+    - t: de
+    - t: la
+    - t: philosophie
+      p: ;
+  - tokens:
+    - t: déployez
+    - t: toute
+    - t: l’
+      glue: true
+    - t: énergie
+    - t: de
+    - t: votre
+    - t: caractère,
+  - tokens:
+    - t: et
+    - t: vous
+    - t: verrez
+    - t: bientôt
+    - t: ces
+      z: true
+    - t: orgueilleux,
+  - tokens:
+    - t: non
+    - t: serviles
+    - t: adorateurs
+    - t: rampans
+      n: rampants
+    - t: à
+    - t: vos
+    - t: pieds,
+  - tokens:
+    - t: mais
+    - t: fiers
+    - t: de
+    - t: partager
+    - t: avec
+    - t: vous
+    - t: les
+    - t: trésors
+    - t: de
+    - t: l’
+      glue: true
+    - t: Être
+    - t: Suprême.
+  - tokens:
+    - t: Quelles
+    - t: que
+    - t: soient
+    - t: les
+    - t: barrières
+    - t: que
+    - t: l’
+      glue: true
+    - t: 'on'
+    - t: vous
+      z: true
+    - t: oppose,
+  - tokens:
+    - t: il
+    - t: est
+    - t: en
+    - t: votre
+    - t: pouvoir
+    - t: de
+    - t: les
+      z: true
+    - t: affranchir
+      p: ;
+  - tokens:
+    - t: vous
+    - t: n’
+      glue: true
+    - t: avez
+    - t: qu’
+      glue: true
+    - t: à
+    - t: le
+    - t: vouloir.
+  - tokens:
+    - t: Passons
+    - t: maintenant
+    - t: à
+    - t: l’
+      glue: true
+    - t: effroyable
+    - t: tableau
+    - t: de
+    - t: ce
+    - t: que
+    - t: vous
+      z: true
+    - t: avez
+    - t: été
+    - t: dans
+    - t: la
+    - t: société
+      p: ;
+  - tokens:
+    - t: '&'
+      n: et
+    - t: puisqu’
+      glue: true
+    - t: il
+    - t: est
+    - t: question,
+  - tokens:
+    - t: en
+    - t: ce
+    - t: moment,
+    - t: d’
+      glue: true
+    - t: une
+    - t: éducation
+    - t: nationale,
+  - tokens:
+    - t: voyons
+    - t: si
+    - t: nos
+    - t: sages
+    - t: Législateurs
+    - t: penseront
+    - t: sainement
+    - t: sur
+    - t: l’
+      glue: true
+    - t: éducation
+    - t: des
+    - t: femmes.
+- id: pb2
+  title: Postambule, 2
+  verify_in:
+  - sources/ws-p15.txt
+  - sources/ws-p16.txt
+  lines:
+  - tokens:
+    - t: Les
+    - t: femmes
+    - t: ont
+    - t: fait
+    - t: plus
+    - t: de
+    - t: mal
+    - t: que
+    - t: de
+    - t: bien.
+  - tokens:
+    - t: La
+    - t: contrainte
+    - t: et
+    - t: la
+    - t: dissimulation
+    - t: ont
+    - t: été
+    - t: leur
+    - t: partage.
+  - tokens:
+    - t: Ce
+    - t: que
+    - t: la
+    - t: force
+    - t: leur
+    - t: avoit
+      n: avait
+    - t: ravi,
+  - tokens:
+    - t: la
+    - t: ruse
+    - t: leur
+    - t: a
+    - t: rendu
+      p: ;
+  - tokens:
+    - t: elles
+      z: true
+    - t: ont
+    - t: eu
+    - t: recours
+    - t: à
+    - t: toutes
+    - t: les
+    - t: ressources
+    - t: de
+    - t: leurs
+    - t: charmes,
+  - tokens:
+    - t: et
+    - t: le
+    - t: plus
+    - t: irréprochable
+    - t: ne
+    - t: leur
+    - t: résistoit
+      n: résistait
+    - t: pas.
+  - tokens:
+    - t: Le
+    - t: poison,
+    - t: le
+    - t: fer,
+  - tokens:
+    - t: tout
+    - t: leur
+    - t: étoit
+      n: était
+    - t: soumis
+      p: ;
+  - tokens:
+    - t: elles
+    - t: commandoient
+      n: commandaient
+    - t: au
+    - t: crime
+    - t: comme
+    - t: à
+    - t: la
+    - t: vertu.
+  - tokens:
+    - t: Le
+    - t: gouvernement
+    - t: français,
+    - t: sur-tout,
+      n: surtout
+  - tokens:
+    - t: a
+    - t: dépendu,
+    - t: pendant
+    - t: des
+    - t: siècles,
+  - tokens:
+    - t: de
+    - t: l’
+      glue: true
+    - t: administration
+    - t: nocturne
+    - t: des
+    - t: femmes
+      p: ;
+  - tokens:
+    - t: le
+    - t: cabinet
+    - t: n’
+      glue: true
+    - t: avoit
+      n: avait
+    - t: point
+    - t: de
+    - t: secret
+    - t: pour
+    - t: leur
+    - t: indiscrétion
+      p: ;
+  - tokens:
+    - t: ambassade,
+    - t: commandement,
+    - t: ministère,
+    - t: présidence,
+  - tokens:
+    - t: pontificat,
+    - t: cardinalat
+      p: ;
+  - tokens:
+    - t: enfin
+    - t: tout
+    - t: ce
+    - t: qui
+    - t: caractérise
+    - t: la
+    - t: sottise
+    - t: des
+      z: true
+    - t: hommes,
+  - tokens:
+    - t: profane
+    - t: et
+    - t: sacré,
+    - t: tout
+    - t: a
+    - t: été
+    - t: soumis
+    - t: à
+    - t: la
+    - t: cupidité
+    - t: et
+    - t: à
+    - t: l’
+      glue: true
+    - t: ambition
+    - t: de
+    - t: ce
+    - t: sexe
+    - t: autrefois
+    - t: méprisable
+    - t: et
+    - t: respecté,
+  - tokens:
+    - t: et
+    - t: depuis
+    - t: la
+    - t: révolution,
+  - tokens:
+    - t: respectable
+    - t: et
+    - t: méprisé.
+- id: pb3
+  title: Postambule, 3
+  verify_in:
+  - sources/ws-p16.txt
+  - sources/ws-p17.txt
+  - sources/ws-p18.txt
+  lines:
+  - tokens:
+    - t: Dans
+    - t: cette
+    - t: sorte
+    - t: d’
+      glue: true
+    - t: antithèse,
+  - tokens:
+    - t: que
+    - t: de
+    - t: remarques
+    - t: n’
+      glue: true
+    - t: ai-je
+    - t: point
+    - t: à
+    - t: offrir
+      p: '!'
+  - tokens:
+    - t: je
+    - t: n’
+      glue: true
+    - t: ai
+    - t: qu’
+      glue: true
+    - t: un
+    - t: moment
+    - t: pour
+    - t: les
+    - t: faire,
+  - tokens:
+    - t: mais
+    - t: ce
+    - t: moment
+    - t: fixera
+    - t: l’
+      glue: true
+    - t: attention
+    - t: de
+    - t: la
+    - t: postérité
+    - t: la
+    - t: plus
+    - t: reculée.
+  - tokens:
+    - t: Sous
+    - t: l’
+      glue: true
+    - t: ancien
+    - t: régime,
+  - tokens:
+    - t: tout
+    - t: étoit
+      n: était
+    - t: vicieux,
+    - t: tout
+    - t: étoit
+      n: était
+    - t: coupable
+      p: ;
+  - tokens:
+    - t: mais
+    - t: ne
+    - t: pourroit-on
+      n: pourrait-on
+    - t: pas
+    - t: apercevoir
+    - t: l’
+      glue: true
+    - t: amélioration
+    - t: des
+    - t: choses
+    - t: dans
+    - t: la
+    - t: substance
+    - t: même
+    - t: des
+    - t: vices
+      p: '?'
+  - tokens:
+    - t: Une
+    - t: femme
+    - t: n’
+      glue: true
+    - t: avoit
+      n: avait
+    - t: besoin
+    - t: que
+    - t: d’
+      glue: true
+    - t: être
+    - t: belle
+    - t: ou
+    - t: aimable
+      p: ;
+  - tokens:
+    - t: quand
+      z: true
+    - t: elle
+    - t: possédoit
+      n: possédait
+    - t: ces
+    - t: deux
+      z: true
+    - t: avantages,
+  - tokens:
+    - t: elle
+    - t: voyoit
+      n: voyait
+    - t: cent
+    - t: fortunes
+    - t: à
+    - t: ses
+    - t: pieds.
+  - tokens:
+    - t: Si
+    - t: elle
+    - t: n’
+      glue: true
+    - t: en
+    - t: profitoit
+      n: profitait
+    - t: pas,
+  - tokens:
+    - t: elle
+    - t: avoit
+      n: avait
+    - t: un
+    - t: caractère
+    - t: bizarre,
+  - tokens:
+    - t: ou
+    - t: une
+    - t: philosophie
+    - t: peu
+    - t: commune,
+  - tokens:
+    - t: qui
+    - t: la
+    - t: portoit
+      n: portait
+    - t: aux
+    - t: mépris
+    - t: des
+    - t: richesses
+      p: ;
+  - tokens:
+    - t: alors
+    - t: elle
+    - t: n’
+      glue: true
+    - t: étoit
+      n: était
+    - t: plus
+    - t: considérée
+    - t: que
+    - t: comme
+    - t: une
+    - t: mauvaise
+    - t: tête
+      p: ;
+  - tokens:
+    - t: la
+    - t: plus
+    - t: indécente
+    - t: se
+    - t: faisoit
+      n: faisait
+    - t: respecter
+    - t: avec
+    - t: de
+    - t: l’
+      glue: true
+    - t: or
+      p: ;
+  - tokens:
+    - t: le
+    - t: commerce
+    - t: des
+    - t: femmes
+    - t: étoit
+      n: était
+    - t: une
+    - t: espèce
+    - t: d’
+      glue: true
+    - t: industrie
+    - t: reçue
+    - t: dans
+    - t: la
+    - t: première
+    - t: classe,
+  - tokens:
+    - t: qui,
+    - t: désormais,
+    - t: n’
+      glue: true
+    - t: aura
+    - t: plus
+    - t: de
+    - t: crédit.
+  - tokens:
+    - t: S’
+      glue: true
+    - t: il
+    - t: en
+      z: true
+    - t: avoit
+      n: avait
+    - t: encore,
+  - tokens:
+    - t: la
+    - t: révolution
+    - t: seroit
+      n: serait
+    - t: perdue,
+  - tokens:
+    - t: et
+    - t: sous
+    - t: de
+    - t: nouveaux
+    - t: rapports,
+  - tokens:
+    - t: nous
+    - t: serions
+    - t: toujours
+    - t: corrompus
+      p: ;
+  - tokens:
+    - t: cependant
+    - t: la
+    - t: raison
+    - t: peut-elle
+    - t: se
+    - t: dissimuler
+    - t: que
+    - t: tout
+      z: true
+    - t: autre
+    - t: chemin
+    - t: à
+    - t: la
+    - t: fortune
+    - t: est
+    - t: fermé
+    - t: à
+    - t: la
+    - t: femme
+    - t: que
+    - t: l’
+      glue: true
+    - t: homme
+    - t: achette,
+      n: achète
+  - tokens:
+    - t: comme
+    - t: l’
+      glue: true
+    - t: esclave
+    - t: sur
+    - t: les
+    - t: côtes
+    - t: d’
+      glue: true
+    - t: Afrique.
+  - tokens:
+    - t: La
+    - t: différence
+    - t: est
+    - t: grande
+      p: ;
+  - tokens:
+    - t: 'on'
+    - t: le
+    - t: sait.
+  - tokens:
+    - t: L’
+      glue: true
+    - t: esclave
+    - t: commande
+    - t: au
+    - t: maître
+      p: ;
+  - tokens:
+    - t: mais
+    - t: si
+    - t: le
+    - t: maître
+    - t: lui
+    - t: donne
+    - t: la
+    - t: liberté
+    - t: sans
+    - t: récompense,
+  - tokens:
+    - t: et
+    - t: à
+    - t: un
+      z: true
+    - t: âge
+    - t: où
+    - t: l’
+      glue: true
+    - t: esclave
+    - t: a
+    - t: perdu
+    - t: tous
+    - t: ses
+    - t: charmes,
+  - tokens:
+    - t: que
+    - t: devient
+    - t: cette
+    - t: infortunée
+      p: '?'
+  - tokens:
+    - t: Le
+    - t: jouet
+    - t: du
+    - t: mépris
+      p: ;
+  - tokens:
+    - t: les
+    - t: portes
+    - t: même
+    - t: de
+    - t: la
+    - t: bienfaisance
+    - t: lui
+    - t: sont
+    - t: fermées
+      p: ;
+  - tokens:
+    - t: elle
+    - t: est
+    - t: pauvre
+    - t: et
+    - t: vieille,
+  - tokens:
+    - t: dit-on
+      p: ;
+  - tokens:
+    - t: pourquoi
+    - t: n’
+      glue: true
+    - t: a-t-elle
+    - t: pas
+    - t: su
+    - t: faire
+    - t: fortune
+      p: '?'
+  - tokens:
+    - t: D’
+      glue: true
+    - t: autres
+    - t: exemples
+    - t: encore
+    - t: plus
+    - t: touchans
+      n: touchants
+    - t: s’
+      glue: true
+    - t: offrent
+    - t: à
+    - t: la
+    - t: raison.
+  - tokens:
+    - t: Une
+    - t: jeune
+    - t: personne
+    - t: sans
+      z: true
+    - t: expérience,
+  - tokens:
+    - t: séduite
+    - t: par
+    - t: un
+      z: true
+    - t: homme
+    - t: qu’
+      glue: true
+    - t: elle
+    - t: aime,
+  - tokens:
+    - t: abandonnera
+    - t: ses
+    - t: parens
+      n: parents
+    - t: pour
+    - t: le
+    - t: suivre
+      p: ;
+  - tokens:
+    - t: l’
+      glue: true
+    - t: ingrat
+    - t: la
+    - t: laissera
+    - t: après
+    - t: quelques
+      z: true
+    - t: années,
+  - tokens:
+    - t: et
+    - t: plus
+    - t: elle
+    - t: aura
+    - t: vieilli
+    - t: avec
+    - t: lui,
+  - tokens:
+    - t: plus
+    - t: son
+      z: true
+    - t: inconstance
+    - t: sera
+    - t: inhumaine
+      p: ;
+  - tokens:
+    - t: si
+    - t: elle
+    - t: a
+    - t: des
+      z: true
+    - t: enfants,
+  - tokens:
+    - t: il
+    - t: l’
+      glue: true
+    - t: abandonnera
+    - t: de
+    - t: même.
+  - tokens:
+    - t: S’
+      glue: true
+    - t: il
+    - t: est
+    - t: riche,
+  - tokens:
+    - t: il
+    - t: se
+    - t: croira
+    - t: dispensé
+    - t: de
+    - t: partager
+    - t: sa
+    - t: fortune
+    - t: avec
+    - t: ses
+    - t: nobles
+    - t: victimes.
+  - tokens:
+    - t: Si
+    - t: quelqu’
+      glue: true
+    - t: engagement
+    - t: le
+    - t: lie
+    - t: à
+    - t: ses
+    - t: devoirs,
+  - tokens:
+    - t: il
+    - t: en
+    - t: violera
+    - t: la
+    - t: puissance
+    - t: en
+      z: true
+    - t: espérant
+    - t: tout
+    - t: des
+    - t: lois.
+  - tokens:
+    - t: S’
+      glue: true
+    - t: il
+    - t: est
+    - t: marié,
+  - tokens:
+    - t: tout
+      z: true
+    - t: autre
+    - t: engagement
+    - t: perd
+    - t: ses
+    - t: droits.
+  - tokens:
+    - t: Quelles
+    - t: lois
+    - t: reste-t-il
+    - t: donc
+    - t: à
+    - t: faire
+    - t: pour
+    - t: extirper
+    - t: le
+    - t: vice
+    - t: jusques
+      n: jusque
+    - t: dans
+    - t: la
+    - t: racine
+      p: '?'
+  - tokens:
+    - t: Celle
+    - t: du
+    - t: partage
+    - t: des
+    - t: fortunes
+    - t: entre
+    - t: les
+      z: true
+    - t: hommes
+    - t: et
+    - t: les
+    - t: femmes,
+  - tokens:
+    - t: et
+    - t: de
+    - t: l’
+      glue: true
+    - t: administration
+    - t: publique.
+  - tokens:
+    - t: 'On'
+    - t: conçoit
+    - t: aisément
+    - t: que
+    - t: celle
+    - t: qui
+    - t: est
+    - t: née
+    - t: d’
+      glue: true
+    - t: une
+    - t: famille
+    - t: riche,
+  - tokens:
+    - t: gagne
+    - t: beaucoup
+    - t: avec
+    - t: l’
+      glue: true
+    - t: égalité
+    - t: des
+    - t: partages.
+  - tokens:
+    - t: Mais
+    - t: celle
+    - t: qui
+    - t: est
+    - t: née
+    - t: d’
+      glue: true
+    - t: une
+    - t: famille
+    - t: pauvre,
+  - tokens:
+    - t: avec
+    - t: du
+    - t: mérite
+    - t: et
+    - t: des
+    - t: vertus
+      p: ;
+  - tokens:
+    - t: quel
+    - t: est
+    - t: son
+    - t: lot
+      p: '?'
+  - tokens:
+    - t: La
+    - t: pauvreté
+    - t: et
+    - t: l’
+      glue: true
+    - t: opprobre.
+  - tokens:
+    - t: Si
+    - t: elle
+    - t: n’
+      glue: true
+    - t: excelle
+    - t: pas
+    - t: précisément
+    - t: en
+    - t: musique
+    - t: ou
+    - t: en
+    - t: peinture,
+  - tokens:
+    - t: elle
+    - t: ne
+    - t: peut
+    - t: être
+    - t: admise
+    - t: à
+    - t: aucune
+    - t: fonction
+    - t: publique,
+  - tokens:
+    - t: quand
+      z: true
+    - t: elle
+    - t: en
+      z: true
+    - t: auroit
+      n: aurait
+    - t: toute
+    - t: la
+    - t: capacité.
+  - tokens:
+    - t: Je
+    - t: ne
+    - t: veux
+    - t: donner
+    - t: qu’
+      glue: true
+    - t: un
+      z: true
+    - t: aperçu
+    - t: des
+    - t: choses,
+  - tokens:
+    - t: je
+    - t: les
+      z: true
+    - t: approfondirai
+    - t: dans
+    - t: la
+    - t: nouvelle
+    - t: édition
+    - t: de
+    - t: mes
+      z: true
+    - t: ouvrages
+    - t: politiques
+    - t: que
+    - t: je
+    - t: me
+    - t: propose
+    - t: de
+    - t: donner
+    - t: au
+    - t: public
+    - t: dans
+    - t: quelques
+    - t: jours,
+  - tokens:
+    - t: avec
+    - t: des
+    - t: notes.
+- id: pb4
+  title: Postambule, 4
+  verify_in:
+  - sources/ws-p18.txt
+  - sources/ws-p19.txt
+  lines:
+  - tokens:
+    - t: Je
+    - t: reprends
+    - t: mon
+    - t: texte
+    - t: quant
+    - t: aux
+    - t: mœurs.
+  - tokens:
+    - t: Le
+    - t: mariage
+    - t: est
+    - t: le
+    - t: tombeau
+    - t: de
+    - t: la
+    - t: confiance
+    - t: '&'
+      n: et
+    - t: de
+    - t: l’
+      glue: true
+    - t: amour.
+  - tokens:
+    - t: La
+    - t: femme
+    - t: mariée
+    - t: peut
+    - t: impunément
+    - t: donner
+    - t: des
+    - t: bâtards
+    - t: à
+    - t: son
+    - t: mari,
+  - tokens:
+    - t: et
+    - t: la
+    - t: fortune
+    - t: qui
+    - t: ne
+    - t: leur
+    - t: appartient
+    - t: pas.
+  - tokens:
+    - t: Celle
+    - t: qui
+    - t: ne
+    - t: l’
+      glue: true
+    - t: est
+    - t: pas,
+  - tokens:
+    - t: n’
+      glue: true
+    - t: a
+    - t: qu’
+      glue: true
+    - t: un
+    - t: foible
+      n: faible
+    - t: droit
+      p: ':'
+  - tokens:
+    - t: les
+    - t: lois
+    - t: anciennes
+    - t: et
+    - t: inhumaines
+    - t: lui
+    - t: refusoient
+      n: refusaient
+    - t: ce
+    - t: droit
+    - t: sur
+    - t: le
+    - t: nom
+    - t: '&'
+      n: et
+    - t: sur
+    - t: le
+    - t: bien
+    - t: de
+    - t: leur
+    - t: père,
+  - tokens:
+    - t: pour
+    - t: ses
+      z: true
+    - t: enfants,
+    - t: et
+    - t: l’
+      glue: true
+    - t: 'on'
+    - t: n’
+      glue: true
+    - t: a
+    - t: pas
+    - t: fait
+    - t: de
+    - t: nouvelles
+    - t: lois
+    - t: sur
+    - t: cette
+    - t: matière.
+  - tokens:
+    - t: Si
+    - t: tenter
+    - t: de
+    - t: donner
+    - t: à
+    - t: mon
+    - t: sexe
+    - t: une
+    - t: consistance
+    - t: honorable
+    - t: et
+    - t: juste,
+  - tokens:
+    - t: est
+    - t: considéré
+    - t: dans
+    - t: ce
+    - t: moment
+    - t: comme
+    - t: un
+    - t: paradoxe
+    - t: de
+    - t: ma
+    - t: part,
+  - tokens:
+    - t: et
+    - t: comme
+    - t: tenter
+    - t: l’
+      glue: true
+    - t: impossible,
+  - tokens:
+    - t: je
+    - t: laisse
+    - t: aux
+      z: true
+    - t: hommes
+    - t: à
+    - t: venir
+    - t: la
+    - t: gloire
+    - t: de
+    - t: traiter
+    - t: cette
+    - t: matière
+      p: ;
+  - tokens:
+    - t: mais,
+    - t: en
+      z: true
+    - t: attendant,
+    - t: 'on'
+    - t: peut
+    - t: la
+    - t: préparer
+    - t: par
+    - t: l’
+      glue: true
+    - t: éducation
+    - t: nationale,
+  - tokens:
+    - t: par
+    - t: la
+    - t: restauration
+    - t: des
+    - t: mœurs
+    - t: et
+    - t: par
+    - t: les
+    - t: conventions
+    - t: conjugales.
+- id: contrat
+  title: Forme du contrat social de l’homme et de la femme
+  verify_in:
+  - sources/ws-p19.txt
+  - sources/ws-p20.txt
+  lines:
+  - tokens:
+    - t: Nous
+      z: true
+    - t: N
+    - t: et
+    - t: N,
+  - tokens:
+    - t: mus
+    - t: par
+    - t: notre
+    - t: propre
+    - t: volonté,
+  - tokens:
+    - t: nous
+      z: true
+    - t: unissons
+    - t: pour
+    - t: le
+    - t: terme
+    - t: de
+    - t: notre
+    - t: vie,
+  - tokens:
+    - t: et
+    - t: pour
+    - t: la
+    - t: durée
+    - t: de
+    - t: nos
+    - t: penchans
+      n: penchants
+    - t: mutuels,
+  - tokens:
+    - t: aux
+    - t: conditions
+    - t: suivantes
+      p: ':'
+  - tokens:
+    - t: Nous
+      z: true
+    - t: entendons
+    - t: '&'
+      n: et
+    - t: voulons
+    - t: mettre
+    - t: nos
+    - t: fortunes
+    - t: en
+    - t: communauté,
+  - tokens:
+    - t: en
+    - t: nous
+    - t: réservant
+    - t: cependant
+    - t: le
+    - t: droit
+    - t: de
+    - t: les
+    - t: séparer
+    - t: en
+    - t: faveur
+    - t: de
+    - t: nos
+      z: true
+    - t: enfans,
+      n: enfants
+  - tokens:
+    - t: et
+    - t: de
+    - t: ceux
+    - t: que
+    - t: nous
+    - t: pourrions
+    - t: avoir
+    - t: d’
+      glue: true
+    - t: une
+    - t: inclination
+    - t: particulière,
+  - tokens:
+    - t: reconnaissant
+    - t: mutuellement
+    - t: que
+    - t: notre
+    - t: bien
+    - t: appartient
+    - t: directement
+    - t: à
+    - t: nos
+      z: true
+    - t: enfans,
+      n: enfants
+  - tokens:
+    - t: de
+    - t: quelque
+    - t: lit
+    - t: qu’
+      glue: true
+    - t: ils
+    - t: sortent,
+  - tokens:
+    - t: et
+    - t: que
+    - t: tous
+      z: true
+    - t: indistinctement
+    - t: ont
+    - t: le
+    - t: droit
+    - t: de
+    - t: porter
+    - t: le
+    - t: nom
+    - t: des
+    - t: pères
+    - t: et
+    - t: mères
+    - t: qui
+    - t: les
+      z: true
+    - t: ont
+    - t: avoués,
+  - tokens:
+    - t: et
+    - t: nous
+      z: true
+    - t: imposons
+    - t: de
+    - t: souscrire
+    - t: à
+    - t: la
+    - t: loi
+    - t: qui
+    - t: punit
+    - t: l’
+      glue: true
+    - t: abnégation
+    - t: de
+    - t: son
+    - t: propre
+    - t: sang.
+  - tokens:
+    - t: Nous
+    - t: nous
+      z: true
+    - t: obligeons
+    - t: également,
+  - tokens:
+    - t: au
+    - t: cas
+    - t: de
+    - t: séparation,
+  - tokens:
+    - t: de
+    - t: faire
+    - t: le
+    - t: partage
+    - t: de
+    - t: notre
+    - t: fortune,
+  - tokens:
+    - t: et
+    - t: de
+    - t: prélever
+    - t: la
+    - t: portion
+    - t: de
+    - t: nos
+      z: true
+    - t: enfans
+      n: enfants
+    - t: indiquée
+    - t: par
+    - t: la
+    - t: loi
+      p: ;
+  - tokens:
+    - t: et,
+    - t: au
+    - t: cas
+    - t: d’
+      glue: true
+    - t: union
+    - t: parfaite,
+  - tokens:
+    - t: celui
+    - t: qui
+    - t: viendrait
+    - t: à
+    - t: mourir,
+  - tokens:
+    - t: se
+    - t: désisteroit
+      n: désisterait
+    - t: de
+    - t: la
+    - t: moitié
+    - t: de
+    - t: ses
+    - t: propriétés
+    - t: en
+    - t: faveur
+    - t: de
+    - t: ses
+      z: true
+    - t: enfans
+      n: enfants
+      p: ;
+  - tokens:
+    - t: et
+    - t: si
+    - t: l’
+      glue: true
+    - t: un
+    - t: mouroit
+      n: mourait
+    - t: sans
+      z: true
+    - t: enfans,
+      n: enfants
+  - tokens:
+    - t: le
+    - t: survivant
+    - t: hériteroit
+      n: hériterait
+    - t: de
+    - t: droit,
+  - tokens:
+    - t: à
+    - t: moins
+    - t: que
+    - t: le
+    - t: mourant
+    - t: n’
+      glue: true
+    - t: ait
+    - t: disposé
+    - t: de
+    - t: la
+    - t: moitié
+    - t: du
+    - t: bien
+    - t: commun
+    - t: en
+    - t: faveur
+    - t: de
+    - t: qui
+    - t: il
+    - t: jugeroit
+      n: jugerait
+    - t: à
+    - t: propos.
+- id: pb5
+  title: Postambule, 5
+  verify_in:
+  - sources/ws-p20.txt
+  - sources/ws-p21.txt
+  lines:
+  - tokens:
+    - t: Voilà
+    - t: à-peu-près
+      n: à peu près
+    - t: la
+    - t: formule
+    - t: de
+    - t: l’
+      glue: true
+    - t: acte
+    - t: conjugal
+    - t: dont
+    - t: je
+    - t: propose
+    - t: l’
+      glue: true
+    - t: exécution.
+  - tokens:
+    - t: À
+    - t: la
+    - t: lecture
+    - t: de
+    - t: ce
+    - t: bisarre
+      n: bizarre
+    - t: écrit,
+  - tokens:
+    - t: je
+    - t: vois
+    - t: s’
+      glue: true
+    - t: élever
+    - t: contre
+    - t: moi
+    - t: les
+    - t: tartuffes,
+  - tokens:
+    - t: les
+    - t: bégueules,
+    - t: le
+    - t: clergé
+    - t: et
+    - t: toute
+    - t: la
+    - t: séquelle
+    - t: infernale.
+  - tokens:
+    - t: Mais
+    - t: combien
+    - t: il
+    - t: offrira
+    - t: aux
+    - t: sages
+    - t: de
+    - t: moyens
+    - t: moraux
+    - t: pour
+    - t: arriver
+    - t: à
+    - t: la
+    - t: perfectibilité
+    - t: d’
+      glue: true
+    - t: un
+    - t: gouvernement
+    - t: heureux
+      p: '!'
+  - tokens:
+    - t: j’
+      glue: true
+    - t: en
+    - t: vais
+    - t: donner
+    - t: en
+    - t: peu
+    - t: de
+    - t: mots
+    - t: la
+    - t: preuve
+    - t: physique.
+  - tokens:
+    - t: Le
+    - t: riche
+    - t: Épicurien
+    - t: sans
+      z: true
+    - t: enfans,
+      n: enfants
+  - tokens:
+    - t: trouve
+    - t: fort
+    - t: bon
+    - t: d’
+      glue: true
+    - t: aller
+    - t: chez
+    - t: son
+    - t: voisin
+    - t: pauvre
+    - t: augmenter
+    - t: sa
+    - t: famille.
+  - tokens:
+    - t: Lorsqu’
+      glue: true
+    - t: il
+    - t: y
+    - t: aura
+    - t: une
+    - t: loi
+    - t: qui
+    - t: autorisera
+    - t: la
+    - t: femme
+    - t: du
+    - t: pauvre
+    - t: à
+    - t: faire
+    - t: adopter
+    - t: au
+    - t: riche
+    - t: ses
+      z: true
+    - t: enfans,
+      n: enfants
+  - tokens:
+    - t: les
+    - t: liens
+    - t: de
+    - t: la
+    - t: société
+    - t: seront
+    - t: plus
+    - t: resserrés,
+  - tokens:
+    - t: et
+    - t: les
+    - t: mœurs
+    - t: plus
+    - t: épurées.
+  - tokens:
+    - t: Cette
+    - t: loi
+    - t: conservera
+    - t: peut-être
+    - t: le
+    - t: bien
+    - t: de
+    - t: la
+    - t: communauté,
+  - tokens:
+    - t: et
+    - t: retiendra
+    - t: le
+    - t: désordre
+    - t: qui
+    - t: conduit
+    - t: tant
+    - t: de
+    - t: victimes
+    - t: dans
+    - t: les
+      z: true
+    - t: hospices
+    - t: de
+    - t: l’
+      glue: true
+    - t: opprobre,
+  - tokens:
+    - t: de
+    - t: la
+    - t: bassesse
+    - t: et
+    - t: de
+    - t: la
+    - t: dégénération
+    - t: des
+    - t: principes
+    - t: humains,
+  - tokens:
+    - t: où,
+    - t: depuis
+    - t: long-tems,
+      n: longtemps
+    - t: gémit
+    - t: la
+    - t: nature.
+  - tokens:
+    - t: Que
+    - t: les
+    - t: détracteurs
+    - t: de
+    - t: la
+    - t: saine
+    - t: philosophie
+    - t: cessent
+    - t: donc
+    - t: de
+    - t: se
+    - t: récrier
+    - t: contre
+    - t: les
+    - t: mœurs
+    - t: primitives,
+  - tokens:
+    - t: ou
+    - t: qu’
+      glue: true
+    - t: ils
+      z: true
+    - t: aillent
+    - t: se
+    - t: perdre
+    - t: dans
+    - t: la
+    - t: source
+    - t: de
+    - t: leurs
+    - t: citations.
+- id: pb6
+  title: Postambule, 6
+  verify_in:
+  - sources/ws-p21.txt
+  lines:
+  - tokens:
+    - t: Je
+    - t: voudrois
+      n: voudrais
+    - t: encore
+    - t: une
+    - t: loi
+    - t: qui
+    - t: avantageât
+    - t: les
+    - t: veuves
+    - t: et
+    - t: les
+    - t: demoiselles
+    - t: trompées
+    - t: par
+    - t: les
+    - t: fausses
+    - t: promesses
+    - t: d’
+      glue: true
+    - t: un
+      z: true
+    - t: homme
+    - t: à
+    - t: qui
+    - t: elles
+    - t: se
+    - t: seroient
+      n: seraient
+    - t: attachées
+      p: ;
+  - tokens:
+    - t: je
+    - t: voudrois,
+      n: voudrais
+    - t: dis-je,
+    - t: que
+    - t: cette
+    - t: loi
+    - t: forçât
+    - t: un
+      z: true
+    - t: inconstant
+    - t: à
+    - t: tenir
+    - t: ses
+      z: true
+    - t: engagemens,
+      n: engagements
+  - tokens:
+    - t: ou
+    - t: à
+    - t: une
+    - t: indemnité
+    - t: proportionnelle
+    - t: à
+    - t: sa
+    - t: fortune.
+  - tokens:
+    - t: Je
+    - t: voudrois
+      n: voudrais
+    - t: encore
+    - t: que
+    - t: cette
+    - t: loi
+    - t: fût
+    - t: rigoureuse
+    - t: contre
+    - t: les
+    - t: femmes,
+  - tokens:
+    - t: du
+    - t: moins
+    - t: pour
+    - t: celles
+    - t: qui
+    - t: auroient
+      n: auraient
+    - t: le
+    - t: front
+    - t: de
+    - t: recourir
+    - t: à
+    - t: une
+    - t: loi
+    - t: qu’
+      glue: true
+    - t: elles
+      z: true
+    - t: auroient
+      n: auraient
+    - t: elles-mêmes
+    - t: enfreinte
+    - t: par
+    - t: leur
+    - t: inconduite,
+  - tokens:
+    - t: si
+    - t: la
+    - t: preuve
+    - t: en
+      z: true
+    - t: étoit
+      n: était
+    - t: faite.
+  - tokens:
+    - t: Je
+    - t: voudrois,
+      n: voudrais
+    - t: en
+    - t: même
+    - t: tems,
+      n: temps
+  - tokens:
+    - t: comme
+    - t: je
+    - t: l’
+      glue: true
+    - t: ai
+    - t: exposée
+    - t: dans
+    - t: le
+    - t: bonheur
+    - t: primitif
+    - t: de
+    - t: l’
+      glue: true
+    - t: homme,
+  - tokens:
+    - t: en
+    - t: 1788,
+    - t: que
+    - t: les
+    - t: filles
+    - t: publiques
+    - t: fussent
+    - t: placées
+    - t: dans
+    - t: des
+    - t: quartiers
+    - t: désignés.
+  - tokens:
+    - t: Ce
+    - t: ne
+    - t: sont
+    - t: pas
+    - t: les
+    - t: femmes
+    - t: publiques
+    - t: qui
+    - t: contribuent
+    - t: le
+    - t: plus
+    - t: à
+    - t: la
+    - t: dépravation
+    - t: des
+    - t: mœurs,
+  - tokens:
+    - t: ce
+    - t: sont
+    - t: les
+    - t: femmes
+    - t: de
+    - t: la
+    - t: société.
+  - tokens:
+    - t: En
+    - t: restaurant
+    - t: les
+    - t: dernières,
+  - tokens:
+    - t: 'on'
+    - t: modifie
+    - t: les
+    - t: premières.
+  - tokens:
+    - t: Cette
+    - t: chaîne
+    - t: d’
+      glue: true
+    - t: union
+    - t: fraternelle
+    - t: offrira
+    - t: d’
+      glue: true
+    - t: abord
+    - t: le
+    - t: désordre,
+  - tokens:
+    - t: mais
+    - t: par
+    - t: les
+    - t: suites,
+  - tokens:
+    - t: elle
+    - t: produira
+    - t: à
+    - t: la
+    - t: fin
+    - t: un
+      z: true
+    - t: ensemble
+    - t: parfait.
+- id: pb7
+  title: Postambule, 7
+  verify_in:
+  - sources/ws-p22.txt
+  lines:
+  - tokens:
+    - t: J’
+      glue: true
+    - t: offre
+    - t: un
+    - t: moyen
+    - t: invincible
+    - t: pour
+    - t: élever
+    - t: l’
+      glue: true
+    - t: ame
+      n: âme
+    - t: des
+    - t: femmes
+      p: ;
+  - tokens:
+    - t: c’
+      glue: true
+    - t: est
+    - t: de
+    - t: les
+    - t: joindre
+    - t: à
+    - t: tous
+    - t: les
+      z: true
+    - t: exercices
+    - t: de
+    - t: l’
+      glue: true
+    - t: homme
+      p: ':'
+  - tokens:
+    - t: si
+    - t: l’
+      glue: true
+    - t: homme
+    - t: s’
+      glue: true
+    - t: obstine
+    - t: à
+    - t: trouver
+    - t: ce
+    - t: moyen
+    - t: impraticable,
+  - tokens:
+    - t: qu’
+      glue: true
+    - t: il
+    - t: partage
+    - t: avec
+    - t: la
+    - t: femme,
+  - tokens:
+    - t: non
+    - t: à
+    - t: son
+    - t: caprice,
+  - tokens:
+    - t: mais
+    - t: par
+    - t: la
+    - t: sageſſe
+      n: sagesse
+    - t: des
+    - t: loix.
+      n: lois
+  - tokens:
+    - t: Le
+    - t: préjugé
+    - t: tombe,
+    - t: les
+    - t: mœurs
+    - t: s’
+      glue: true
+    - t: épurent,
+  - tokens:
+    - t: et
+    - t: la
+    - t: nature
+    - t: reprend
+    - t: tous
+    - t: ses
+    - t: droits.
+  - tokens:
+    - t: Ajoutez-y
+    - t: le
+    - t: mariage
+    - t: des
+    - t: prêtres
+      p: ;
+  - tokens:
+    - t: le
+    - t: Roi,
+    - t: raffermi
+    - t: sur
+    - t: son
+    - t: trône,
+  - tokens:
+    - t: et
+    - t: le
+    - t: gouvernement
+    - t: français
+    - t: ne
+    - t: sauroit
+      n: saurait
+    - t: plus
+    - t: périr.
+- id: pb8
+  title: Postambule, 8
+  verify_in:
+  - sources/ws-p22.txt
+  - sources/ws-p23.txt
+  - sources/ws-p24.txt
+  lines:
+  - tokens:
+    - t: Il
+    - t: étoit
+      n: était
+    - t: bien
+    - t: nécessaire
+    - t: que
+    - t: je
+    - t: dise
+    - t: quelques
+    - t: mots
+    - t: sur
+    - t: les
+    - t: troubles
+    - t: que
+    - t: cause,
+  - tokens:
+    - t: dit-on,
+    - t: le
+    - t: décret
+    - t: en
+    - t: faveur
+    - t: des
+      z: true
+    - t: hommes
+    - t: de
+    - t: couleur,
+  - tokens:
+    - t: dans
+    - t: nos
+      z: true
+    - t: îles.
+  - tokens:
+    - t: C’
+      glue: true
+    - t: est
+    - t: l’à
+      n: là
+    - t: où
+    - t: la
+    - t: nature
+    - t: frémit
+    - t: d’
+      glue: true
+    - t: horreur
+      p: ;
+  - tokens:
+    - t: c’
+      glue: true
+    - t: est
+    - t: l’à
+      n: là
+    - t: où
+    - t: la
+    - t: raison
+    - t: et
+    - t: l’
+      glue: true
+    - t: humanité,
+  - tokens:
+    - t: n’
+      glue: true
+    - t: ont
+    - t: pas
+    - t: encore
+    - t: touché
+    - t: les
+      z: true
+    - t: âmes
+    - t: endurcies
+      p: ;
+  - tokens:
+    - t: c’
+      glue: true
+    - t: est
+    - t: là
+    - t: sur-tout
+      n: surtout
+    - t: où
+    - t: la
+    - t: division
+    - t: et
+    - t: la
+    - t: discorde
+    - t: agitent
+    - t: leurs
+      z: true
+    - t: habitans.
+      n: habitants
+  - tokens:
+    - t: Il
+    - t: n’
+      glue: true
+    - t: est
+    - t: pas
+    - t: difficile
+    - t: de
+    - t: deviner
+    - t: les
+      z: true
+    - t: instigateurs
+    - t: de
+    - t: ces
+    - t: fermentations
+    - t: incendiaires
+      p: ':'
+  - tokens:
+    - t: il
+    - t: y
+    - t: en
+      z: true
+    - t: a
+    - t: dans
+    - t: le
+    - t: sein
+    - t: même
+    - t: de
+    - t: l’
+      glue: true
+    - t: Assemblée
+    - t: Nationale
+      p: ':'
+  - tokens:
+    - t: ils
+      z: true
+    - t: alument
+      n: allument
+    - t: en
+      z: true
+    - t: Europe
+    - t: le
+    - t: feu
+    - t: qui
+    - t: doit
+    - t: embraser
+    - t: l’
+      glue: true
+    - t: Amérique.
+  - tokens:
+    - t: Les
+    - t: Colons
+    - t: prétendent
+    - t: régner
+    - t: en
+    - t: despotes
+    - t: sur
+    - t: des
+      z: true
+    - t: hommes
+    - t: dont
+      z: true
+    - t: ils
+    - t: sont
+    - t: les
+    - t: pères
+    - t: et
+    - t: les
+    - t: frères
+      p: ;
+  - tokens:
+    - t: et
+    - t: méconnoissant
+      n: méconnaissant
+    - t: les
+    - t: droits
+    - t: de
+    - t: la
+    - t: nature,
+  - tokens:
+    - t: ils
+      z: true
+    - t: en
+    - t: poursuivent
+    - t: la
+    - t: source
+    - t: jusque
+    - t: dans
+    - t: la
+    - t: plus
+    - t: petite
+    - t: teinte
+    - t: de
+    - t: leur
+    - t: sang.
+  - tokens:
+    - t: Ces
+    - t: Colons
+    - t: inhumains
+    - t: disent
+      p: ':'
+  - tokens:
+    - t: notre
+    - t: sang
+    - t: circule
+    - t: dans
+    - t: leurs
+    - t: veines,
+  - tokens:
+    - t: mais
+    - t: nous
+    - t: le
+    - t: répandrons
+    - t: tout,
+  - tokens:
+    - t: s’
+      glue: true
+    - t: il
+    - t: le
+    - t: faut,
+  - tokens:
+    - t: pour
+    - t: assouvir
+    - t: notre
+    - t: cupidité,
+  - tokens:
+    - t: ou
+    - t: notre
+    - t: aveugle
+    - t: ambition.
+  - tokens:
+    - t: C’
+      glue: true
+    - t: est
+    - t: dans
+    - t: ces
+    - t: lieux
+    - t: les
+    - t: plus
+    - t: près
+    - t: de
+    - t: la
+    - t: nature,
+  - tokens:
+    - t: que
+    - t: le
+    - t: père
+    - t: méconnoît
+      n: méconnaît
+    - t: le
+    - t: fils
+      p: ;
+  - tokens:
+    - t: sourd
+    - t: aux
+    - t: cris
+    - t: du
+    - t: sang,
+  - tokens:
+    - t: il
+    - t: en
+      z: true
+    - t: étouffe
+    - t: tous
+    - t: les
+    - t: charmes
+      p: ;
+  - tokens:
+    - t: que
+    - t: peut-on
+    - t: espérer
+    - t: de
+    - t: la
+    - t: résistance
+    - t: qu’
+      glue: true
+    - t: 'on'
+    - t: lui
+    - t: oppose
+      p: '?'
+  - tokens:
+    - t: la
+    - t: contraindre
+    - t: avec
+    - t: violence,
+  - tokens:
+    - t: c’
+      glue: true
+    - t: est
+    - t: la
+    - t: rendre
+    - t: terrible,
+  - tokens:
+    - t: la
+    - t: laisser
+    - t: encore
+    - t: dans
+    - t: les
+    - t: fers,
+  - tokens:
+    - t: c’
+      glue: true
+    - t: est
+    - t: acheminer
+    - t: toutes
+    - t: les
+    - t: calamités
+    - t: vers
+    - t: l’
+      glue: true
+    - t: Amérique.
+  - tokens:
+    - t: Une
+    - t: main
+    - t: divine
+    - t: semble
+    - t: répandre
+    - t: par
+    - t: tout
+    - t: l’
+      glue: true
+    - t: appanage
+      n: apanage
+    - t: de
+    - t: l’
+      glue: true
+    - t: homme,
+  - tokens:
+    - t: la
+    - t: liberté
+      p: ;
+  - tokens:
+    - t: la
+    - t: loi
+    - t: seule
+    - t: a
+    - t: le
+    - t: droit
+    - t: de
+    - t: réprimer
+    - t: cette
+    - t: liberté,
+  - tokens:
+    - t: si
+    - t: elle
+    - t: dégénére
+      n: dégénère
+    - t: en
+    - t: licence
+      p: ;
+  - tokens:
+    - t: mais
+    - t: elle
+    - t: doit
+    - t: être
+    - t: égale
+    - t: pour
+    - t: tous,
+  - tokens:
+    - t: c’
+      glue: true
+    - t: est
+    - t: elle
+    - t: sur-tout
+      n: surtout
+    - t: qui
+    - t: doit
+    - t: renfermer
+    - t: l’
+      glue: true
+    - t: Assemblée
+    - t: Nationale
+    - t: dans
+    - t: son
+    - t: décret,
+  - tokens:
+    - t: dicté
+    - t: par
+    - t: la
+    - t: prudence
+    - t: et
+    - t: par
+    - t: la
+    - t: justice.
+  - tokens:
+    - t: Puisse-t-elle
+    - t: agir
+    - t: de
+    - t: même
+    - t: pour
+    - t: l’
+      glue: true
+    - t: état
+    - t: de
+    - t: la
+    - t: France,
+  - tokens:
+    - t: et
+    - t: se
+    - t: rendre
+    - t: aussi
+    - t: attentive
+    - t: sur
+    - t: les
+    - t: nouveaux
+      z: true
+    - t: abus,
+  - tokens:
+    - t: comme
+    - t: elle
+    - t: l’
+      glue: true
+    - t: a
+    - t: été
+    - t: sur
+    - t: les
+      z: true
+    - t: anciens
+    - t: qui
+    - t: deviennent
+    - t: chaque
+    - t: jour
+    - t: plus
+    - t: effroyables
+      p: '!'
+  - tokens:
+    - t: Mon
+      z: true
+    - t: opinion
+    - t: seroit
+      n: serait
+    - t: encore
+    - t: de
+    - t: raccommoder
+    - t: le
+    - t: pouvoir
+    - t: exécutif
+    - t: avec
+    - t: le
+    - t: pouvoir
+    - t: législatif,
+  - tokens:
+    - t: car
+    - t: il
+    - t: me
+    - t: semble
+    - t: que
+    - t: l’
+      glue: true
+    - t: un
+      z: true
+    - t: est
+    - t: tout,
+  - tokens:
+    - t: et
+    - t: que
+    - t: l’
+      glue: true
+    - t: autre
+    - t: n’
+      glue: true
+    - t: est
+    - t: rien
+      p: ;
+  - tokens:
+    - t: d’
+      glue: true
+    - t: où
+    - t: naîtra,
+    - t: malheureusement
+    - t: peut
+    - t: être,
+  - tokens:
+    - t: la
+    - t: perte
+    - t: de
+    - t: l’
+      glue: true
+    - t: Empire
+    - t: François.
+      n: français
+  - tokens:
+    - t: Je
+    - t: considère
+    - t: ces
+    - t: deux
+    - t: pouvoirs,
+  - tokens:
+    - t: comme
+    - t: l’
+      glue: true
+    - t: homme
+    - t: et
+    - t: la
+    - t: femme
+    - t: qui
+    - t: doivent
+    - t: être
+    - t: unis,
+  - tokens:
+    - t: mais
+    - t: égaux
+    - t: en
+    - t: force
+    - t: et
+    - t: en
+    - t: vertu,
+  - tokens:
+    - t: pour
+    - t: faire
+    - t: un
+    - t: bon
+    - t: ménage.
