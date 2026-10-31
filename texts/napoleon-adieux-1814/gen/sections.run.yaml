@@ -1,0 +1,21 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+  - fain
+  - '2'
+counts:
+  lines: 31
+  tokens: 237
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- no one took the speech down as it was spoken; the text is Fain's, published in 1823, and other versions printed in the 1810s and 1820s differ in wording (Tarbell's English follows one of them); the page
+  gives Fain's as the Correspondance prints it, and a note compares the others
+- Fain's account between the two parts is the secretary's narration, not Napoleon's words; it is kept because the Correspondance prints it as part of the item
+- 'no treebank covers the text: lemma and morphology are a hand parse in UD French-GSD conventions; glosses are hand-written; all draft'
+- the sound is the fr1791 scheme (Féraud, 1787-88), the nearest the library models, read as Paris French of the early 19th century; Napoleon's own French kept a Corsican accent, which the scheme does not
+  try to recover
+- Tarbell's 1897 English translates a different version and covers the address only; it is marked partial

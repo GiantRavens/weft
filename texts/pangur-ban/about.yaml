@@ -1,0 +1,27 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: pangur-ban
+src: weft.about 0.1
+fetched: '2026-10-31'
+match: work
+wikipedia:
+  title: Pangur Bán
+  lang: en
+  revision: 1380112929
+  url: https://en.wikipedia.org/w/index.php?title=Pangur_B%C3%A1n&oldid=1380112929
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Pangur Bán” (en.wikipedia.org, revision 1380112929), CC BY-SA
+    4.0
+  lead: '"Pangur Bán" is an Old Irish poem written in about the 9th century at or near Reichenau Abbey,
+    in what is now Germany, by an Irish monk about his cat. Pangur Bán, meaning "White Pangur", is the
+    cat''s name. Although the poem is anonymous, it bears similarities to the poetry of Sedulius Scottus,
+    prompting speculation that he is the author. In eight verses of four lines each, the author compares
+    the cat''s happy hunting with his own scholarly pursuits.'
+wikidata:
+  id: Q2624870
+  revision: 2545262277
+  license: CC0
+  description: Old Irish poem
+  instance_of:
+  - id: Q7725634
+    label: literary work

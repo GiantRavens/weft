@@ -1,0 +1,16 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+counts:
+  lines: 88
+  tokens: 306
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank for Middle Welsh: lemma and morphology hand-annotated against Geiriadur Prifysgol Cymru (GPC), draft; many names and some lines are obscure'
+- the sound is Middle Welsh of the manuscript's time, read from Weft's normalized spelling; the date of composition is uncertain and its sound is not modeled
+- the text is Skene's (1868), not a modern critical edition; Skene heads it XXXII on p. 50, a misprint (his vol. 1 numbers it XXXI)
+- the poem breaks off in the manuscript; the last line is incomplete

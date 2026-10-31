@@ -1,0 +1,66 @@
+work: caedmon-hymn
+title: Cædmon's Hymn
+short_title: Cædmon's Hymn
+author: Cædmon (fl. 658–680)
+language: ang
+lang_name: Old English of about 700 and the 900s
+kind: poetry
+wikipedia: {title: "Cædmon's Hymn", match: work}
+prefix: cae                      # cae.<copy>.<line>[.<token>]: moore (Northumbrian), tanner (West Saxon)
+urn: urn:weft:ang:caedmon.hymn   # no CTS URN; Weft-local identifier
+unit: section
+section_noun: copy
+written: {year: 670, display: "658–680", label: "composed at Whitby between 658 and 680, while Hild was abbess, by Bede's account (Ecclesiastical History 4.24); the Northumbrian copy written about 737, the West Saxon copy in the 10th century"}
+status: phase-0
+extent: {is: whole, of: "the nine lines, in two of the 21 surviving copies"}
+pilot: {sections: [moore, tanner]}
+edition:
+  id: ws-caedmon
+  name: Cædmon's Hymn, the Moore Bede and Tanner 10 texts, English Wikisource (revisions 7235070 and 7235069)
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain (7th century); Wikisource transcription CC BY-SA 4.0; Weft line division CC BY-SA 4.0
+treebank: null                   # no open treebank for Old English poetry: lemma and morphology by hand, draft
+schemes: [west-saxon]
+stress_prefixes: pipeline/weft/data/ang_prefixes.yaml
+scheme_labels:
+  west-saxon: "Old English: each copy read in its own dialect's words, the Northumbrian of about 700 and the West Saxon of the 900s, by the sound rules of late West Saxon (approximate)"
+sound_confidence: medium
+sources_extra:
+- id: ws-moore
+  name: Cædmon's Hymn (Moore Bede), English Wikisource, revision 7235070
+  file: sources/ws-moore.txt
+  url: https://en.wikisource.org/w/index.php?oldid=7235070&action=raw
+  sha256: bdb842f4e83a8c9d1af464913b40d9d5584b702c711b21a1e147a651dfb4b8de
+  license: text public domain (7th century); Wikisource transcription CC BY-SA 4.0
+  license_url: https://en.wikisource.org/wiki/C%C3%A6dmon%27s_Hymn_(Moore_Bede)
+- id: ws-tanner
+  name: Cædmon's Hymn (Tanner 10), English Wikisource, revision 7235069
+  file: sources/ws-tanner.txt
+  url: https://en.wikisource.org/w/index.php?oldid=7235069&action=raw
+  sha256: 7c7616651d1bd9833bef16c24ace3ec492a5abb7acd5b1bfc191e7915fdc1914
+  license: text public domain (7th century); Wikisource transcription CC BY-SA 4.0
+  license_url: https://en.wikisource.org/wiki/C%C3%A6dmon%27s_Hymn_(Tanner_10)
+translations:
+- id: brooke1898
+  translator: Stopford A. Brooke
+  year: 1898
+  form: verse, line for line, in English Literature from the Beginning to the Norman Conquest, p. 129 note; translates the Northumbrian copy
+  partial: true
+  license: public-domain
+  license_url: https://archive.org/details/englishliteratu00broo
+  file: sources/brooke1898.txt
+  url: https://archive.org/download/englishliteratu00broo/englishliteratu00broo_djvu.txt
+  sha256: 10f99c4bc09ee7127234787afe74448b81692bd5108177e8a10626618f308948
+- id: weft-editorial
+  kind: editorial
+  translator: Weft editorial translation, draft
+  year: 2026
+  form: prose, close to the original, both copies
+  license: CC BY-SA 4.0
+predicted_gaps:
+  - "no open treebank for Old English poetry: lemma and morphology hand-annotated (Clark Hall, 1916), draft"
+  - "the sound rules are late West Saxon; the Northumbrian copy is read from its own words respelled in the letters those rules read (n in the edition), so its vowels and endings are Cædmon's dialect's but the sound values are modeled on the later standard"
+  - "vowel length is the Wikisource transcriber's marking, not the manuscripts'; the Tanner copy leaves he unmarked, sounded long"
+  - "19 further copies (the aelda and eorðan recensions in other manuscripts of Bede) are not included"
+  - "Brooke translates the Northumbrian copy only; the West Saxon copy has the Weft translation alone"

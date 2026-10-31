@@ -1,0 +1,29 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: henry-i-charter
+src: weft.about 0.1
+fetched: '2026-10-31'
+match: work
+wikipedia:
+  title: Charter of Liberties
+  lang: en
+  revision: 1357162819
+  url: https://en.wikipedia.org/w/index.php?title=Charter_of_Liberties&oldid=1357162819
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Charter of Liberties” (en.wikipedia.org, revision 1357162819),
+    CC BY-SA 4.0
+  lead: 'The Charter of Liberties (Latin: Carta Libertatum), also called the Coronation Charter, or Statutes
+    of the Realm, was a written proclamation by Henry I of England, issued upon his accession to the throne
+    in 1100. It sought to bind the King to certain laws regarding the treatment of nobles, church officials,
+    and individuals. The nineteenth-century historians Frederick Maitland and Frederick Pollock considered
+    it a landmark document in English legal history and a forerunner of Magna Carta. It was issued in
+    Latin, Anglo-Norman and Old English versions, a sign of the increasing status of the English language
+    at the time.'
+wikidata:
+  id: Q1067837
+  revision: 2545444361
+  license: CC0
+  description: document
+  instance_of:
+  - id: Q49848
+    label: document

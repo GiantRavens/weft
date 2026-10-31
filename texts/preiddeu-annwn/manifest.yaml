@@ -1,0 +1,52 @@
+work: preiddeu-annwn
+title: Preiddeu Annwn
+short_title: Preiddeu Annwn
+author: Anonymous; in the Book of Taliesin, attributed to Taliesin
+language: wlm
+lang_name: Middle Welsh of the Book of Taliesin (14th century)
+kind: poetry
+wikipedia: {title: "Preiddeu Annwfn", match: work}
+prefix: pa                       # pa.<stanza>.<line>[.<token>]
+urn: urn:weft:wlm:preiddeu-annwn # no CTS URN; Weft-local identifier
+unit: section
+section_noun: stanza
+written: {year: 900, display: "800s–1100s", label: "a poem in the voice of Taliesin on Arthur's raid on the otherworld, composed perhaps between the 9th and the 12th century; copied in the Book of Taliesin in the first half of the 14th century"}
+status: phase-0
+extent: {is: whole, of: "all eight stanzas, 60 lines"}
+pilot: {sections: ["1", "2", "3", "4", "5", "6", "7", "8"]}
+edition:
+  id: skene1868
+  name: W. F. Skene, The Four Ancient Books of Wales (1868), vol. 2, pp. 181-182, from the Book of Taliesin; Internet Archive OCR, checked against the page images
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain; Skene's edition public domain; Weft line division and normalization CC BY-SA 4.0
+treebank: null                   # no treebank for Middle Welsh verse: lemma and morphology by hand (GPC), draft
+schemes: [middle-welsh]
+sound_confidence: low
+sources_extra:
+- id: skene1868-v2
+  name: 'W. F. Skene, The Four Ancient Books of Wales (Edinburgh, 1868), vol. 2: the Welsh texts. Internet Archive OCR of
+    the University of Toronto copy (fourancientbooks02skenuoft)'
+  file: sources/skene1868-v2.txt
+  url: https://archive.org/download/fourancientbooks02skenuoft/fourancientbooks02skenuoft_djvu.txt
+  sha256: c13f6f26250954460943b6fa8851581361a35b15370e2187091702d941f304bd
+  license: public-domain
+  license_url: https://archive.org/details/fourancientbooks02skenuoft
+translations:
+- id: williams1868
+  translator: Robert Williams
+  year: 1868
+  form: literal verse lines, in Skene, The Four Ancient Books of Wales, vol. 1, pp. 264-266
+  license: public-domain
+  license_url: https://archive.org/details/fourancientbooks01skenuoft
+  file: sources/skene1868-v1.txt
+  url: https://archive.org/download/fourancientbooks01skenuoft/fourancientbooks01skenuoft_djvu.txt
+  sha256: e6e6a5ccde06bcc1f591e4f2ddbc493b4d3a6f3aa78048ec107defd1e10cd7a0
+predicted_gaps:
+- 'no treebank for Middle Welsh: lemma and morphology hand-annotated against Geiriadur Prifysgol Cymru (GPC), draft; the poem
+  is among the most obscure in early Welsh, and many readings are disputed'
+- the sound is Middle Welsh of the manuscript's time, read from Weft's normalized spelling; the date of composition is uncertain
+  and its sound is not modeled
+- the text is Skene's (1868), not a modern critical edition (Marged Haycock, Legendary Poems from the Book of Taliesin, 2007,
+  in copyright)
+- Robert Williams's 1868 translation is the only public-domain one used; it is literal and in places superseded

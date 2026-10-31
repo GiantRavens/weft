@@ -1,0 +1,25 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: preiddeu-annwn
+src: weft.about 0.1
+fetched: '2026-10-31'
+match: work
+wikipedia:
+  title: Preiddeu Annwfn
+  lang: en
+  revision: 1382150411
+  url: https://en.wikipedia.org/w/index.php?title=Preiddeu_Annwfn&oldid=1382150411
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Preiddeu Annwfn” (en.wikipedia.org, revision 1382150411), CC
+    BY-SA 4.0
+  lead: 'Preiddeu Annwfn or Preiddeu Annwn (English: The Spoils of Annwfn) is a cryptic poem of sixty
+    lines in Middle Welsh, found in the Book of Taliesin. The text recounts an expedition with King Arthur
+    to Annwfn or Annwn, the Otherworld in Welsh.'
+wikidata:
+  id: Q2108398
+  revision: 2439637420
+  license: CC0
+  description: poem
+  instance_of:
+  - id: Q7725634
+    label: literary work

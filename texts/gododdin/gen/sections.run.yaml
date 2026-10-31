@@ -1,0 +1,21 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+  - '8'
+  - '10'
+  - b33
+counts:
+  lines: 40
+  tokens: 184
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank for Middle Welsh: lemma and morphology hand-annotated against Geiriadur Prifysgol Cymru (GPC), draft; the poem''s vocabulary is old and many readings are disputed'
+- the sound is Middle Welsh of the manuscript's time, read from Weft's normalized spelling; the poem was composed earlier, perhaps centuries earlier, with the stress on the last syllable, and that is not
+  modeled
+- the text is Skene's (1868), not a modern critical edition (Ifor Williams, Canu Aneirin, 1938, in copyright); Skene's readings differ from Williams's in places, most notably cein for ceni in the Arthur
+  stanza
+- 4 of about 130 stanzas

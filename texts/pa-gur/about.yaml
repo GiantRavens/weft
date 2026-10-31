@@ -1,0 +1,36 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: pa-gur
+src: weft.about 0.1
+fetched: '2026-10-31'
+match: work
+wikipedia:
+  title: Pa Ŵr yw'r Porthor?
+  lang: en
+  revision: 1382150406
+  url: https://en.wikipedia.org/w/index.php?title=Pa_%C5%B4r_yw%27r_Porthor%3F&oldid=1382150406
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Pa Ŵr yw'r Porthor?” (en.wikipedia.org, revision 1382150406),
+    CC BY-SA 4.0
+  lead: 'Poem 31 of the Black Book of Carmarthen, a mid-13th-century manuscript, is known from its first
+    line as Pa Ŵr yw''r Porthor? (Middle Welsh: Pa gur yv y porthaur? ''What man is the gatekeeper?'')
+    and alternatively as Pa Ŵr, Pa gur, or Ymddiddan Arthur a Glewlwyd Gafaelfawr ("The dialogue of Arthur
+    and Glewlwyd Gafaelfawr"). It is a fragmentary, anonymous poem in Old Welsh, taking the form of a
+    dialogue between King Arthur and the gatekeeper Glewlwyd Gafaelfawr, in which Arthur boasts of his
+    own exploits and those of his companions, especially Cai the Fair. Pa Ŵr is notable for being one
+    of the earliest vernacular Arthurian works, and for alluding to several early adventures of Arthur
+    which are now lost. Its precise age is not known and has been the subject of wide-ranging disagreement,
+    but scholarly opinion now tends to favour a date of c. 1100.'
+wikidata:
+  id: Q2044985
+  revision: 2452457718
+  license: CC0
+  description: 13th century poem
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  main_subject:
+  - id: Q45792
+    label: King Arthur
+  - id: Q1159457
+    label: chivalric romance

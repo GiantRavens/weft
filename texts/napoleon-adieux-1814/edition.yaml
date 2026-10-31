@@ -1,0 +1,339 @@
+# Weft edition of Napoleon's farewell to the Old Guard (Fontainebleau, 20 April 1814), in the text of the
+# Correspondance de Napoléon Ier, tome XXVII (Paris, 1869), no. 21561, p. 362, which prints it from Baron Fain's
+# Manuscrit de 1814 with Fain's account of the embrace between the two parts. Each line is checked against the
+# Internet Archive OCR of the University of Toronto copy (pinned). verify_strip rejoins the word the print
+# hyphenates across a line (en-semble) and closes the space the OCR sets before , ; : and !, which the print
+# does not; verify_fold reads the edition's ’ as the OCR's straight apostrophe; verify_corrections give the
+# printed reading where the OCR misreads, each settled on the page image (archive.org
+# correspondancede27napouoft, leaf n371).
+#   t     the word as printed, punctuation attached; an elision (l’, d’, n’, c’, j’, s’) is its own token,
+#         glued to the next
+#   n     the modern spelling where the print differs (the capital A without its accent)
+#   z     a liaison careful modern reading makes (mes‿adieux, nous‿avons)
+#   zf    a liaison of formal reading then, not made in the modern scheme (était‿interminable)
+#   Lines are Weft's division at the print's stops and commas; sections are the speech, Fain's account, and
+#   the last words.
+work: napoleon-adieux-1814
+joiner: ' '
+verify_in: sources/correspondancede27napouoft-djvu.txt
+verify_strip: -[ \t]*\n+[ \t]*|(?<=\w) +(?=[,;:!])
+verify_fold:
+  ’: ''''
+verify_corrections:
+- ocr: votre drapeau!
+  print: votre drapeau!.....
+- ocr: Xapoléon
+  print: Napoléon
+- ocr: fait im effort
+  print: fait un effort
+- ocr: encore une lois
+  print: encore une fois
+sections:
+- id: '1'
+  title: The farewell
+  lines:
+  - tokens:
+    - t: Soldats
+    - t: de
+    - t: ma
+    - t: Vieille
+    - t: Garde,
+    - t: je
+    - t: vous
+    - t: fais
+    - t: mes
+      z: true
+    - t: adieux.
+  - tokens:
+    - t: Depuis
+    - t: vingt
+      z: true
+    - t: ans,
+    - t: je
+    - t: vous
+      z: true
+    - t: ai
+    - t: trouvés
+    - t: constamment
+  - tokens:
+    - t: sur
+    - t: le
+    - t: chemin
+    - t: de
+    - t: l’
+      glue: true
+    - t: honneur
+    - t: et
+    - t: de
+    - t: la
+    - t: gloire.
+  - tokens:
+    - t: Dans
+    - t: ces
+    - t: derniers
+    - t: temps,
+  - tokens:
+    - t: comme
+    - t: dans
+    - t: ceux
+    - t: de
+    - t: notre
+    - t: prospérité,
+  - tokens:
+    - t: vous
+    - t: n’
+      glue: true
+    - t: avez
+    - t: cessé
+    - t: d’
+      glue: true
+    - t: être
+    - t: des
+    - t: modèles
+    - t: de
+    - t: bravoure
+    - t: et
+    - t: de
+    - t: fidélité.
+  - tokens:
+    - t: Avec
+    - t: des
+      z: true
+    - t: hommes
+    - t: tels
+    - t: que
+    - t: vous,
+    - t: notre
+    - t: cause
+    - t: n’
+      glue: true
+    - t: était
+    - t: pas
+    - t: perdue.
+  - tokens:
+    - t: Mais
+    - t: la
+    - t: guerre
+    - t: était
+      zf: true
+    - t: interminable;
+  - tokens:
+    - t: c’
+      glue: true
+    - t: eût
+      zf: true
+    - t: été
+    - t: la
+    - t: guerre
+    - t: civile,
+  - tokens:
+    - t: et
+    - t: la
+    - t: France
+    - t: n’
+      glue: true
+    - t: en
+    - t: serait
+    - t: devenue
+    - t: que
+    - t: plus
+    - t: malheureuse.
+  - tokens:
+    - t: J’
+      glue: true
+    - t: ai
+    - t: donc
+    - t: sacrifié
+    - t: tous
+    - t: nos
+      z: true
+    - t: intérêts
+    - t: à
+    - t: ceux
+    - t: de
+    - t: la
+    - t: patrie;
+  - tokens:
+    - t: je
+    - t: pars.
+  - tokens:
+    - t: Vous,
+    - t: mes
+      z: true
+    - t: amis,
+    - t: continuez
+    - t: de
+    - t: servir
+    - t: la
+    - t: France.
+  - tokens:
+    - t: Son
+    - t: bonheur
+    - t: était
+    - t: mon
+      z: true
+    - t: unique
+    - t: pensée;
+  - tokens:
+    - t: il
+    - t: sera
+    - t: toujours
+    - t: l’
+      glue: true
+    - t: objet
+    - t: de
+    - t: mes
+    - t: vœux!
+  - tokens:
+    - t: Ne
+    - t: plaignez
+    - t: pas
+    - t: mon
+    - t: sort;
+  - tokens:
+    - t: si
+    - t: j’
+      glue: true
+    - t: ai
+    - t: consenti
+    - t: à
+    - t: me
+    - t: survivre,
+  - tokens:
+    - t: c’
+      glue: true
+    - t: est
+    - t: pour
+    - t: servir
+    - t: encore
+    - t: à
+    - t: votre
+    - t: gloire;
+  - tokens:
+    - t: je
+    - t: veux
+      zf: true
+    - t: écrire
+    - t: les
+    - t: grandes
+    - t: choses
+  - tokens:
+    - t: que
+    - t: nous
+      z: true
+    - t: avons
+    - t: faites
+    - t: ensemble!
+  - tokens:
+    - t: Adieu,
+    - t: mes
+      z: true
+    - t: enfants!
+  - tokens:
+    - t: Je
+    - t: voudrais
+    - t: vous
+    - t: presser
+    - t: tous
+    - t: sur
+    - t: mon
+    - t: cœur;
+  - tokens:
+    - t: que
+    - t: j’
+      glue: true
+    - t: embrasse
+    - t: au
+    - t: moins
+    - t: votre
+    - t: drapeau!.....
+- id: fain
+  title: Fain's account
+  lines:
+  - tokens:
+    - t: A
+      n: à
+    - t: ces
+    - t: mots,
+    - t: le
+    - t: général
+    - t: Petit,
+    - t: saisissant
+    - t: l’
+      glue: true
+    - t: aigle,
+    - t: s’
+      glue: true
+    - t: avance.
+  - tokens:
+    - t: Napoléon
+    - t: reçoit
+    - t: le
+    - t: général
+    - t: dans
+    - t: ses
+    - t: bras
+    - t: et
+    - t: baise
+    - t: le
+    - t: drapeau.
+  - tokens:
+    - t: Le
+    - t: silence
+    - t: que
+    - t: cette
+    - t: grande
+    - t: scène
+    - t: inspire
+  - tokens:
+    - t: n’
+      glue: true
+    - t: est
+      zf: true
+    - t: interrompu
+    - t: que
+    - t: par
+    - t: les
+    - t: sanglots
+    - t: des
+    - t: soldats.
+  - tokens:
+    - t: Napoléon,
+    - t: dont
+    - t: l’
+      glue: true
+    - t: émotion
+    - t: est
+    - t: visible,
+  - tokens:
+    - t: fait
+      zf: true
+    - t: un
+    - t: effort
+    - t: et
+    - t: reprend
+    - t: d’
+      glue: true
+    - t: une
+    - t: voix
+    - t: 'ferme:'
+- id: '2'
+  title: Adieu once more
+  lines:
+  - tokens:
+    - t: Adieu
+    - t: encore
+    - t: une
+    - t: fois,
+    - t: mes
+    - t: vieux
+    - t: compagnons!
+  - tokens:
+    - t: Que
+    - t: ce
+    - t: dernier
+    - t: baiser
+    - t: passe
+    - t: dans
+    - t: vos
+    - t: cœurs!

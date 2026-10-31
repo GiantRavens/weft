@@ -44,6 +44,15 @@ private build in the footer, and pages of private works carry no links to the pu
 tracker. Do not publish or share `private/build/`: the pages are single files, so they are easy to
 send by mistake.
 
+Open `private/build/index.html` from disk; nothing needs a server. To serve it to another device
+on your own network, `python3 -m http.server 8000 -d private/build`.
+
+With the hooks enabled (below), every commit also starts this build in the background
+(`.githooks/post-commit`). The commit returns at once, the pages are current about ten minutes
+later, and `private/build/autobuild.log` records each run with its commit and result. A commit
+made while a build runs is picked up when that build finishes. Skip it for one commit with
+`WEFT_NO_AUTOBUILD=1 git commit ...`, or turn it off with `git config weft.autobuild false`.
+
 ## Keeping it safe
 
 - Enable the leak guard once per clone. It refuses any commit that stages a file from here or a

@@ -206,6 +206,9 @@ def test_heyne_and_old_english():
         "Scyld": "shüld",                  # sc = sh; y = ü
         "frōfre": "FROH-vre",              # f between voiced sounds = v
         "cyning": "KÜ-ning",               # c before y stays k; final ng sounds its g
+        "bearnum": "BÆAR-num",             # be before a is the root diphthong ea, not the prefix
+        "middan-geard": "MID-dahn-yæard",  # a compound's second element begins as a word: g = y, n not ng
+        "ēci": "AY-chi",                   # c between front vowels = ch (Northumbrian ēci, West Saxon ēce)
     }
     for w, want in cases.items():
         assert oe.phonemize(w, "west-saxon", {}, prefixes=P)["respell"] == want, w
@@ -826,6 +829,70 @@ def test_esperanto_rules():
     assert E.analyze("ni'a'j'n") == ("nia", "DET|Poss=Yes|PronType=Prs|Person=1|Case=Acc|Number=Plur")
     assert E.analyze("kor’") == ("koro", "NOUN|Case=Nom|Number=Sing") and E.analyze("kiu") == ("kiu", "PRON|PronType=Rel")
     assert E.analyze("konduku") == ("konduki", "VERB|Mood=Imp|VerbForm=Fin")   # an undivided word, read from its ending
+
+
+def test_old_irish_rules():
+    """Old Irish from the normalized spelling: c t p voiced and b d g m lenited after a vowel, quality
+    from the vowel letters, stress after a pretonic preverb, enclitics and hiatus, nasalization."""
+    from weft import oldirish as O
+    say = lambda w: O.phonemize(w)["ipa"]
+    assert say("ocus") == "ˈo.ɡəs" and say("bán") == "baːn" and say("céin") == "kʲeːnʲ"
+    assert say("do·tuit") == "də.ˈtudʲ" and say("caraim-se") == "ˈka.rəβ̃ʲ.sʲə"
+    assert say("ṁenma-sam") == "ˈβ̃ʲen.mə.səβ̃" and say("dliged") == "ˈdʲlʲi.ɣʲəð"
+    assert say("n-dil") == "nʲilʲ" and say("n-óendís").startswith("ˈnai̯")
+    assert O.phonemize("ó ru·biäm")["syllables"] == 4 and O.phonemize("fria")["syllables"] == 1
+
+
+def test_middle_welsh_rules():
+    """Middle Welsh from the normalized spelling: penultimate stress, clear and obscure y, ll and dd, w and i as
+    consonants before a vowel, the diphthongs, and a compound's parts."""
+    from weft import welsh as W
+    say = lambda w: W.phonemize(w)["ipa"]
+    assert say("gatraeth") == "ˈɡat.rai̯θ" and say("llydan") == "ˈɬə.dan" and say("gŵr") == "ɡuːr"
+    assert say("cleddyfawr") == "kle.ˈðə.vau̯r" and say("gwas") == "ɡwas" and say("iaith") == "jai̯θ"
+    assert say("y") == "ə" and say("dyn") == "dɨn" and say("Mynyddawg") == "mə.ˈnə.ðau̯ɡ"
+    assert say("yng-nghad") == "əŋ.ˈŋ̊ad" and say("a-thi") == "a.ˈθi" and say("arthur") == "ˈar.θʉr"   # a proclitic joined by a hyphen
+
+
+def test_verify_fold_and_wildcard(tmp_path):
+    """A printed letter the OCR cannot carry is declared once: verify_fold maps it (ẏ read as y), and
+    verify_wildcard lets it match a declared class of renderings (ỽ read as O or C) while every other
+    letter must match exactly."""
+    import shutil
+    w = tmp_path / "texts" / "t"
+    (w / "sources").mkdir(parents=True)
+    (w / "sources" / "s.txt").write_text("Gwyr a aeth  gatraeth\nNeut Oyf glot geinmyn\nNeut Cyf glot\n", encoding="utf-8")
+    (w / "manifest.yaml").write_text("""work: t
+title: T
+author: A
+language: wlm
+prefix: t
+urn: urn:weft:wlm:t
+unit: section
+pilot: {sections: ['1']}
+edition: {id: e, format: weft-edition, file: edition.yaml}
+treebank: null
+schemes: [middle-welsh]
+""", encoding="utf-8")
+    def run(lines):
+        toks = "\n".join("  - tokens:\n" + "\n".join(f"    - {{t: '{x}', n: '{x.lower()}'}}" for x in l.split()) for l in lines)
+        (w / "edition.yaml").write_text("joiner: ' '\nverify_in: sources/s.txt\nverify_fold: {ẏ: y}\n"
+                                        "verify_wildcard: {ỽ: '(?:[OoCc06dỽ]|Ci|Cr)'}\nsections:\n- id: '1'\n  title: S\n  lines:\n" + toks + "\n", encoding="utf-8")
+        return draft.run(w)["failures"].get("edition-not-in-source", 0)
+    assert run(["Gwẏr a aeth gatraeth", "Neut ỽyf glot geinmyn"]) == 0
+    assert run(["Neut ỽyf glot geinmin"]) == 1          # the wildcard covers only ỽ: a wrong letter still fails
+    assert run(["Neut ỽyf glat"]) == 1
+
+
+def test_pangur_ban_seven_syllables():
+    """Pangur Bán is in deibide, seven syllables to the line (Murphy 1956): every line of the draft counts
+    seven from the normalized spelling, which tests the normalization and the module together."""
+    work = REPO / "texts" / "pangur-ban"
+    gen = yaml.safe_load((work / "gen/sections.yaml").read_text())
+    counts = {l["id"]: sum(len(t["sound"]["old-irish"]["ipa"].replace(" ", ".").split(".")) for t in l["tokens"]) for l in gen["lines"]}
+    assert len(counts) == 32 and set(counts.values()) == {7}, {k: v for k, v in counts.items() if v != 7}
+    r = check.run(REPO, "pangur-ban")
+    assert r["ok"], r["problems"]
 
 
 def test_german_fraktur_ocr_normalizer(tmp_path):

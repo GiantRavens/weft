@@ -1,0 +1,84 @@
+# Weft edition of Bede, Historia ecclesiastica gentis Anglorum, book I, chapter 15 (the coming of the Angles,
+# Saxons and Jutes), in the text of C. Plummer, Venerabilis Baedae Opera Historica (Oxford, 1896), vol. 1,
+# pp. 30-33, with Plummer's paragraphs and his spelling (u for consonantal v: uera, Uurtigerno; sumsere,
+# consumsit, puplica, interemtos, inpar). Each line is checked against the Latin Wikisource text of book I
+# (pinned by revision), which reproduces Plummer's text in this chapter word for word: a comparison with the
+# Internet Archive OCR of Plummer's volume (operahistorica00bedeuoft) found 36 differences, every one an OCR
+# misreading (Tune, lutis, iultente, the italic of the passages from Gildas) or one of Plummer's margin
+# notes. verify_strip sets aside the bold of the initial (''').
+# Lines are Weft's division of the text at Plummer's punctuation; sections are his three paragraphs: the
+# coming (1), the three peoples (2), and the turn against the Britons (3).
+work: bede-hist-1-15
+joiner: ' '
+verify_in: sources/historia-ecclesiastica-gent-liber-primus-267494.txt
+verify_strip: "'''"
+sections:
+  - id: "1"
+    title: "The coming: three ships, and a larger fleet"
+    lines:
+      - "Anno ab incarnatione Domini CCCCXLVIIII"
+      - "Marcianus cum Ualentiniano XLVI ab Augusto regnum adeptus, VII annis tenuit."
+      - "Tunc Anglorum siue Saxonum gens, inuitata a rege praefato,"
+      - "Brittaniam tribus longis nauibus aduehitur,"
+      - "et in orientali parte insulae, iubente eodem rege, locum manendi,"
+      - "quasi pro patria pugnatura, re autem uera hanc expugnatura, suscipit."
+      - "Inito ergo certamine cum hostibus, qui ab aquilone ad aciem uenerant,"
+      - "uictoriam sumsere Saxones."
+      - "Quod ubi domi nuntiatum est, simul et insulae fertilitas, ac segnitia Brettonum;"
+      - "mittitur confestim illo classis prolixior, armatorum ferens manum fortiorem,"
+      - "quae praemissae adiuncta cohorti inuincibilem fecit exercitum."
+      - "Susceperunt ergo, qui aduenerant, donantibus Brittanis, locum habitationis inter eos,"
+      - "ea condicione, ut hi pro patriae pace et salute contra aduersarios militarent,"
+      - "illi militantibus debita stipendia conferrent."
+  - id: "2"
+    title: "The three peoples: Saxons, Angles, Jutes"
+    lines:
+      - "Aduenerant autem de tribus Germaniae populis fortioribus, id est Saxonibus, Anglis, Iutis."
+      - "De Iutarum origine sunt Cantuarii et Uictuarii,"
+      - "hoc est ea gens, quae Uectam tenet insulam,"
+      - "et ea, quae usque hodie in prouincia Occidentalium Saxonum Iutarum natio nominatur,"
+      - "posita contra ipsam insulam Uectam."
+      - "De Saxonibus, id est ea regione, quae nunc Antiquorum Saxonum cognominatur,"
+      - "uenere Orientales Saxones, Meridiani Saxones, Occidui Saxones."
+      - "Porro de Anglis, hoc est de illa patria, quae Angulus dicitur,"
+      - "et ab eo tempore usque hodie manere desertus inter prouincias Iutarum et Saxonum perhibetur,"
+      - "Orientales Angli, Mediterranei Angli, Merci, tota Nordanhymbrorum progenies,"
+      - "id est illarum gentium, quae ad Boream Humbri fluminis inhabitant,"
+      - "ceterique Anglorum populi sunt orti."
+      - "Duces fuisse perhibentur eorum primi duo fratres Hengist et Horsa;"
+      - "e quibus Horsa postea occisus in bello a Brettonibus,"
+      - "hactenus in orientalibus Cantiae partibus monumentum habet suo nomine insigne."
+      - "Erant autem filii Uictgilsi, cuius pater Uitta, cuius pater Uecta, cuius pater Uoden,"
+      - "de cuius stirpe multarum prouinciarum regium genus originem duxit."
+  - id: "3"
+    title: "The turn against the Britons"
+    lines:
+      - "Non mora ergo, confluentibus certatim in insulam gentium memoratarum cateruis,"
+      - "grandescere populus coepit aduenarum,"
+      - "ita ut ipsis quoque, qui eos aduocauerant, indigenis essent terrori."
+      - "Tum subito inito ad tempus foedere cum Pictis, quos longius iam bellando pepulerant,"
+      - "in socios arma uertere incipiunt."
+      - "Et primum quidem annonas sibi eos affluentius ministrare cogunt,"
+      - "quaerentesque occasionem diuortii, protestantur,"
+      - "nisi profusior sibi alimentorum copia daretur,"
+      - "se cuncta insulae loca rupto foedere uastaturos."
+      - "Neque aliquanto segnius minas effectibus prosequuntur."
+      - "Siquidem, ut breuiter dicam, accensus manibus paganorum ignis,"
+      - "iustas de sceleribus populi Dei ultiones expetiit,"
+      - "non illius inpar, qui quondam a Chaldaeis succensus,"
+      - "Hierosolymorum moenia, immo aedificia cuncta consumsit."
+      - "Sic enim et hic agente impio uictore, immo disponente iusto Iudice,"
+      - "proximas quasque ciuitates agrosque depopulans,"
+      - "ab orientali mari usque ad occidentale, nullo prohibente,"
+      - "suum continuauit incendium, totamque prope insulae pereuntis superficiem obtexit."
+      - "Ruebant aedificia puplica simul et priuata,"
+      - "passim sacerdotes inter altaria trucidabantur,"
+      - "praesules cum populis sine ullo respectu honoris, ferro pariter et flammis absumebantur;"
+      - "nec erat, qui crudeliter interemtos sepulturae traderet."
+      - "Itaque nonnulli de miserandis reliquiis in montibus conprehensi, aceruatim iugulabantur;"
+      - "alii fame confecti procedentes manus hostibus dabant,"
+      - "pro accipiendis alimentorum subsidiis aeternum subituri seruitium,"
+      - "si tamen non continuo trucidarentur;"
+      - "alii transmarinas regiones dolentes petebant;"
+      - "alii perstantes in patria trepidi pauperem uitam"
+      - "in montibus, siluis, uel rupibus arduis suspecta semper mente agebant."

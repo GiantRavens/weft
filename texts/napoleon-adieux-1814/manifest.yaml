@@ -1,0 +1,78 @@
+work: napoleon-adieux-1814
+title: Napoleon's farewell to the Old Guard (Fontainebleau, 20 April 1814)
+short_title: Farewell to the Old Guard
+author: Napoleon Bonaparte (1769-1821), as recorded by Baron Agathon Fain (1778-1837)
+language: fr
+lang_name: French of 1814
+kind: correspondence
+wikipedia:
+  title: none
+  match: none
+prefix: adg
+urn: urn:weft:fr:napoleon.adieux-garde.1814
+unit: section
+section_noun: part
+written:
+  year: 1814
+  display: '1814'
+  label: spoken in the Cour du Cheval-Blanc of the palace of Fontainebleau on 20 April 1814, two weeks after the abdication, as Napoleon left
+    for Elba; printed from the account of his secretary, Baron Fain, in the Manuscrit de 1814 (1823)
+status: phase-0
+extent:
+  is: whole
+  of: the address and its closing words as Fain records them, with his account of the embrace between them
+pilot:
+  sections:
+  - '1'
+  - fain
+  - '2'
+edition:
+  id: corresp27
+  name: Correspondance de Napoléon Ier, publiée par ordre de l'empereur Napoléon III, tome XXVII (Paris, 1869), no. 21561, p. 362, from Fain's
+    Manuscrit de 1814; Internet Archive OCR of the University of Toronto copy, checked against the page image
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain; the 1869 edition public domain; Weft line division CC BY-SA 4.0
+treebank: null
+schemes:
+- fr1791
+- modern
+scheme_labels:
+  fr1791: 'As first heard: a Paris reading of the early 19th century (approximate)'
+sound_confidence: medium
+sources_extra:
+- id: corresp27
+  name: Correspondance de Napoléon Ier, tome XXVII (1869). Internet Archive OCR of the University of Toronto copy (correspondancede27napouoft)
+  file: sources/correspondancede27napouoft-djvu.txt
+  url: https://archive.org/download/correspondancede27napouoft/correspondancede27napouoft_djvu.txt
+  sha256: c43ca66cbe560757a9e22360e05b4fcce55203b4681ac5cb302810bc12b9234f
+  license: public-domain
+  license_url: https://archive.org/details/correspondancede27napouoft
+translations:
+- id: weft-editorial
+  kind: editorial
+  translator: Weft editorial translation, draft
+  year: 2026
+  form: prose, sentence by sentence, close to the French
+  license: CC BY-SA 4.0
+- id: tarbell
+  translator: 'Ida M. Tarbell (editor), Napoleon''s Addresses: Selections from the Proclamations, Speeches and Correspondence of Napoleon Bonaparte
+    (Boston, 1897), p. 133'
+  year: 1897
+  form: prose; translates a different printed version of the speech, which ends with the embrace of the general rather than of the flag; aligned
+    to the address only
+  license: public-domain
+  license_url: https://en.wikisource.org/wiki/Napoleon%27s_Addresses/Part_V
+  file: sources/page-napoleon-s-addresses-djvu-137-7931990.txt
+  url: https://en.wikisource.org/w/index.php?oldid=7931990&action=raw
+  sha256: 84713ec0312823fc54fa5d27991da15f2763bd23c3165e26e3546885191a9238
+  partial: true
+predicted_gaps:
+- no one took the speech down as it was spoken; the text is Fain's, published in 1823, and other versions printed in the 1810s and 1820s differ
+  in wording (Tarbell's English follows one of them); the page gives Fain's as the Correspondance prints it, and a note compares the others
+- Fain's account between the two parts is the secretary's narration, not Napoleon's words; it is kept because the Correspondance prints it as
+  part of the item
+- 'no treebank covers the text: lemma and morphology are a hand parse in UD French-GSD conventions; glosses are hand-written; all draft'
+- the sound is the fr1791 scheme (Féraud, 1787-88), the nearest the library models, read as Paris French of the early 19th century; Napoleon's
+  own French kept a Corsican accent, which the scheme does not try to recover
+- Tarbell's 1897 English translates a different version and covers the address only; it is marked partial

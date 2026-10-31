@@ -1,0 +1,429 @@
+# Weft edition of Pa gur yv y porthaur ('What man is the gatekeeper?'), the Arthurian dialogue of the Black
+# Book of Carmarthen (National Library of Wales, Peniarth MS 1, fol. 47b-48b, about 1250), in the text of
+# W. F. Skene, The Four Ancient Books of Wales (1868), vol. 2, pp. 50-53 (his no. XXXI; vol. 2 misprints
+# the heading XXXII, the number of the next poem). Each line is
+# checked against the Internet Archive OCR of the Toronto copy (pinned); the OCR's misreadings are declared
+# in verify_corrections, each settled on the page image (archive.org leaf n69 to n72). Skene prints the
+# manuscript's dotted y as ẏ, which the OCR reads as y (verify_fold). The poem breaks off where the
+# manuscript is defective; Skene's last word, a., is where the text stops.
+#
+#   t        the word as Skene prints it, punctuation attached (his points inside lines are kept)
+#   n        Weft's normalized spelling in modern Welsh letters, from which the sound is read; draft
+work: pa-gur
+joiner: ' '
+verify_in: sources/skene1868-v2.txt
+verify_fold: {ẏ: y}
+verify_corrections:
+- {ocr: '^y^A gur', print: Pa gur}
+- {ocr: 'Arthur, a chei', print: Arthur. a chei}
+- {ocr: mydroii, print: mydron}
+- {ocr: N'eustuc, print: Neustuc}
+- {ocr: Kei bid trae, print: Kei hid trae}
+- {ocr: awamach, print: awarnach}
+- {ocr: dissetbach, print: dissethach}
+- {ocr: guycHr, print: guychir}
+- {ocr: 0 detyw, print: O detyw}
+- {ocr: Ar Ueg ar lies gulad, print: Ar lleg ar lles gulad}
+- {ocr: Chuecliant, print: Chuechant}
+- {ocr: Eac riev, print: Rac riev}
+- {ocr: Vrtb cant, print: Vrth cant}
+- {ocr: Puy gnant, print: Puy guant}
+- {ocr: 'kinlluc,', print: kinlluc.}
+sections:
+- id: '1'
+  title: 'The gatekeeper''s question and Arthur''s men (Skene, Black Book no. XXXII)'
+  lines:
+  - tokens:
+    - {t: 'Pa', n: 'pa'}
+    - {t: 'gur', n: 'gŵr'}
+    - {t: 'ẏv', n: 'yw'}
+    - {t: 'ẏ', n: 'y'}
+    - {t: 'porthaur.', n: 'porthawr'}
+  - tokens:
+    - {t: 'Gleuluid', n: 'Glewlwyd'}
+    - {t: 'gauaeluaur.', n: 'Gafaelfawr'}
+  - tokens:
+    - {t: 'Pa', n: 'pa'}
+    - {t: 'gur', n: 'gŵr'}
+    - {t: 'ae', n: 'a''e'}
+    - {t: 'gouin.', n: 'gofyn'}
+  - tokens:
+    - {t: 'Arthur.', n: 'Arthur'}
+    - {t: 'a', n: 'a'}
+    - {t: 'chei', n: 'Chei'}
+    - {t: 'guin.', n: 'gwyn'}
+  - tokens:
+    - {t: 'Pa', n: 'pa'}
+    - {t: 'imda', n: 'ymda'}
+    - {t: 'genhid.', n: 'gennyt'}
+  - tokens:
+    - {t: 'Guir', n: 'gwŷr'}
+    - {t: 'gorev', n: 'goreu'}
+    - {t: 'im', n: 'ym'}
+    - {t: 'bid.', n: 'myd'}
+  - tokens:
+    - {t: 'Ym', n: 'ym'}
+    - {t: 'tẏ', n: 'nhŷ'}
+    - {t: 'nẏ', n: 'ny'}
+    - {t: 'doi.', n: 'ddoi'}
+  - tokens:
+    - {t: 'Onẏsguaredi.', n: 'onys-gwaredi'}
+  - tokens:
+    - {t: 'Mi', n: 'mi'}
+    - {t: 'ae', n: 'a''e'}
+    - {t: 'guardi.', n: 'gwardi'}
+  - tokens:
+    - {t: 'Athi', n: 'a-thi'}
+    - {t: 'ae', n: 'a''e'}
+    - {t: 'gueli.', n: 'gweli'}
+  - tokens:
+    - {t: 'Vẏthneint', n: 'Wythneint'}
+    - {t: 'elei.', n: 'elei'}
+  - tokens:
+    - {t: 'Assivẏon', n: 'a-sifyon'}
+    - {t: 'ell', n: 'ell'}
+    - {t: 'tri.', n: 'tri'}
+  - tokens:
+    - {t: 'Mabon', n: 'Mabon'}
+    - {t: 'am', n: 'am'}
+    - {t: 'mẏdron.', n: 'Mydron'}
+  - tokens:
+    - {t: 'Guas', n: 'gwas'}
+    - {t: 'uthir', n: 'Uthyr'}
+    - {t: 'pen', n: 'Pen'}
+    - {t: 'dragon.', n: 'Dragon'}
+  - tokens:
+    - {t: 'Kẏsceint.', n: 'Cysgeint'}
+    - {t: 'mab.', n: 'mab'}
+    - {t: 'banon.', n: 'Banon'}
+  - tokens:
+    - {t: 'A', n: 'a'}
+    - {t: 'guin', n: 'Gwyn'}
+    - {t: 'godẏbrion.', n: 'Godybrion'}
+  - tokens:
+    - {t: 'Oet', n: 'oedd'}
+    - {t: 'rinn', n: 'rhyn'}
+    - {t: 'vẏ', n: 'fy'}
+    - {t: 'gueisson', n: 'ngweision'}
+  - tokens:
+    - {t: 'In', n: 'yn'}
+    - {t: 'amuin', n: 'amwyn'}
+    - {t: 'ev', n: 'eu'}
+    - {t: 'detvon.', n: 'deddfon'}
+  - tokens:
+    - {t: 'Manawidan', n: 'Manawydan'}
+    - {t: 'ab', n: 'ab'}
+    - {t: 'llẏr.', n: 'Llŷr'}
+  - tokens:
+    - {t: 'Oet', n: 'oedd'}
+    - {t: 'duis', n: 'dwys'}
+    - {t: 'ẏ', n: 'y'}
+    - {t: 'cusil.', n: 'gusyl'}
+  - tokens:
+    - {t: 'Neustuc', n: 'neus-dug'}
+    - {t: 'manauid', n: 'Manawyd'}
+  - tokens:
+    - {t: 'Eis', n: 'eis'}
+    - {t: 'tull', n: 'twll'}
+    - {t: 'o', n: 'o'}
+    - {t: 'trẏwruid.', n: 'Dryfrwyd'}
+  - tokens:
+    - {t: 'A', n: 'a'}
+    - {t: 'mabon', n: 'Mabon'}
+    - {t: 'am', n: 'am'}
+    - {t: 'melld.', n: 'Mellt'}
+  - tokens:
+    - {t: 'Maglei', n: 'maglei'}
+    - {t: 'guaed', n: 'gwaed'}
+    - {t: 'ar', n: 'ar'}
+    - {t: 'guelld.', n: 'gwellt'}
+  - tokens:
+    - {t: 'Ac', n: 'ac'}
+    - {t: 'anguas', n: 'Angwas'}
+    - {t: 'edeinauc.', n: 'Edeinawg'}
+  - tokens:
+    - {t: 'A', n: 'a'}
+    - {t: 'lluch.', n: 'Llwch'}
+    - {t: 'llauẏnnauc.', n: 'Llawynnawg'}
+  - tokens:
+    - {t: 'Oetin', n: 'oeddyn'}
+    - {t: 'diffreidauc', n: 'diffreidawg'}
+  - tokens:
+    - {t: 'Ar', n: 'ar'}
+    - {t: 'eidin', n: 'Eidyn'}
+    - {t: 'cẏminauc.', n: 'cyminawg'}
+  - tokens:
+    - {t: 'Argluit', n: 'arglwydd'}
+    - {t: 'ae', n: 'a''e'}
+    - {t: 'llochei', n: 'llochei'}
+  - tokens:
+    - {t: 'Mẏ', n: 'fy'}
+    - {t: 'nei', n: 'nei'}
+    - {t: 'ẏmtiwẏgei.', n: 'ymdiwygei'}
+  - tokens:
+    - {t: 'Kei', n: 'Cei'}
+    - {t: 'ae', n: 'a''e'}
+    - {t: 'heiriolei.', n: 'heiriolei'}
+  - tokens:
+    - {t: 'Trae', n: 'tra''e'}
+    - {t: 'llathei', n: 'lladdei'}
+    - {t: 'pop', n: 'pob'}
+    - {t: 'tri.', n: 'tri'}
+  - tokens:
+    - {t: 'Pan', n: 'pan'}
+    - {t: 'colled', n: 'colled'}
+    - {t: 'kelli.', n: 'Celli'}
+  - tokens:
+    - {t: 'Caffad', n: 'caffad'}
+    - {t: 'cuelli.', n: 'Cwelli'}
+    - {t: 'aseirolei.', n: 'a''s-eirolei'}
+  - tokens:
+    - {t: 'Kei', n: 'Cei'}
+    - {t: 'hid', n: 'hyd'}
+    - {t: 'trae', n: 'tra''e'}
+    - {t: 'kẏmẏnhei.', n: 'cymynhei'}
+  - tokens:
+    - {t: 'Arthur', n: 'Arthur'}
+    - {t: 'ced', n: 'ced'}
+    - {t: 'huarhei.', n: 'chwarhei'}
+  - tokens:
+    - {t: 'Y', n: 'y'}
+    - {t: 'guaed', n: 'gwaed'}
+    - {t: 'gouerei.', n: 'goferei'}
+  - tokens:
+    - {t: 'In', n: 'yn'}
+    - {t: 'neuat', n: 'neuadd'}
+    - {t: 'awarnach', n: 'Awarnach'}
+  - tokens:
+    - {t: 'In', n: 'yn'}
+    - {t: 'imlat', n: 'ymladd'}
+    - {t: 'ew', n: 'ef'}
+    - {t: 'agurach.', n: 'a-gwrach'}
+  - tokens:
+    - {t: 'Ew', n: 'ef'}
+    - {t: 'a', n: 'a'}
+    - {t: 'guant', n: 'gwant'}
+    - {t: 'pen', n: 'pen'}
+    - {t: 'palach.', n: 'Palach'}
+  - tokens:
+    - {t: 'In', n: 'yn'}
+    - {t: 'atodev.', n: 'atodeu'}
+    - {t: 'dissethach.', n: 'Dissethach'}
+  - tokens:
+    - {t: 'Ym', n: 'ym'}
+    - {t: 'minit', n: 'mynydd'}
+    - {t: 'eidin.', n: 'Eidyn'}
+  - tokens:
+    - {t: 'Amuc.', n: 'amug'}
+    - {t: 'a.', n: 'a'}
+    - {t: 'chinbin.', n: 'chynbyn'}
+  - tokens:
+    - {t: 'Pop', n: 'pob'}
+    - {t: 'cant', n: 'cant'}
+    - {t: 'id', n: 'yd'}
+    - {t: 'cuitin.', n: 'cwyddyn'}
+  - tokens:
+    - {t: 'Id', n: 'yd'}
+    - {t: 'cvitin.', n: 'cwyddyn'}
+    - {t: 'pop', n: 'pob'}
+    - {t: 'cant.', n: 'cant'}
+  - tokens:
+    - {t: 'Rac', n: 'rhag'}
+    - {t: 'beduir', n: 'Bedwyr'}
+    - {t: 'bedrẏdant.', n: 'Bedrydant'}
+  - tokens:
+    - {t: 'Ar', n: 'ar'}
+    - {t: 'traethev', n: 'traetheu'}
+    - {t: 'trẏwruid.', n: 'Tryfrwyd'}
+  - tokens:
+    - {t: 'In', n: 'yn'}
+    - {t: 'amvin', n: 'amwyn'}
+    - {t: 'a', n: 'a'}
+    - {t: 'garv', n: 'Garw'}
+    - {t: 'luid.', n: 'lwyd'}
+  - tokens:
+    - {t: 'Oet', n: 'oedd'}
+    - {t: 'guẏchir', n: 'gwychyr'}
+    - {t: 'ẏ', n: 'y'}
+    - {t: 'annuẏd.', n: 'annwyd'}
+  - tokens:
+    - {t: 'O', n: 'o'}
+    - {t: 'detẏw', n: 'deddyf'}
+    - {t: 'ac', n: 'ac'}
+    - {t: 'ẏscuid.', n: 'ysgwyd'}
+  - tokens:
+    - {t: 'Oet', n: 'oedd'}
+    - {t: 'guaget', n: 'gwagedd'}
+    - {t: 'bragad', n: 'bragad'}
+  - tokens:
+    - {t: 'Vrth.', n: 'wrth'}
+    - {t: 'kei', n: 'Cei'}
+    - {t: 'ig', n: 'yng'}
+    - {t: 'kad.', n: 'nghad'}
+  - tokens:
+    - {t: 'Oet', n: 'oedd'}
+    - {t: 'cletẏw', n: 'cleddyf'}
+    - {t: 'ighad.', n: 'yng-nghad'}
+  - tokens:
+    - {t: 'Oe', n: 'o''e'}
+    - {t: 'lav', n: 'law'}
+    - {t: 'diguistlad.', n: 'digwystlad'}
+  - tokens:
+    - {t: 'Oet', n: 'oedd'}
+    - {t: 'hẏneiw', n: 'hyneif'}
+    - {t: 'guastad', n: 'gwastad'}
+  - tokens:
+    - {t: 'Ar', n: 'ar'}
+    - {t: 'lleg', n: 'lleng'}
+    - {t: 'ar', n: 'ar'}
+    - {t: 'lles', n: 'lles'}
+    - {t: 'gulad.', n: 'gwlad'}
+  - tokens:
+    - {t: 'Beduir.', n: 'Bedwyr'}
+    - {t: 'a', n: 'a'}
+    - {t: 'bridlav.', n: 'Bridlaw'}
+  - tokens:
+    - {t: 'Nau', n: 'naw'}
+    - {t: 'cant', n: 'cant'}
+    - {t: 'guarandau.', n: 'gwarandaw'}
+  - tokens:
+    - {t: 'Chuechant', n: 'chwechant'}
+    - {t: 'ẏ', n: 'y'}
+    - {t: 'eirthau.', n: 'eirthaw'}
+  - tokens:
+    - {t: 'A', n: 'a'}
+    - {t: 'talei', n: 'dalei'}
+    - {t: 'ẏ', n: 'y'}
+    - {t: 'ortinav.', n: 'orddinaw'}
+  - tokens:
+    - {t: 'Gueisson', n: 'gweision'}
+    - {t: 'am', n: 'a''m'}
+    - {t: 'buẏint.', n: 'bwyint'}
+  - tokens:
+    - {t: 'Oet', n: 'oedd'}
+    - {t: 'guell', n: 'gwell'}
+    - {t: 'banuitint.', n: 'ban-fyddynt'}
+  - tokens:
+    - {t: 'Rac', n: 'rhag'}
+    - {t: 'riev', n: 'rhieu'}
+    - {t: 'emreis.', n: 'Emreis'}
+  - tokens:
+    - {t: 'Gueleise.', n: 'gweleise'}
+    - {t: 'kei', n: 'Cei'}
+    - {t: 'ar', n: 'ar'}
+    - {t: 'uris.', n: 'frys'}
+  - tokens:
+    - {t: 'Preitev', n: 'preiddeu'}
+    - {t: 'gorthowis.', n: 'gorthowys'}
+  - tokens:
+    - {t: 'Oet', n: 'oedd'}
+    - {t: 'gur', n: 'gŵr'}
+    - {t: 'hir', n: 'hir'}
+    - {t: 'in', n: 'yn'}
+    - {t: 'ewnis.', n: 'ewnys'}
+  - tokens:
+    - {t: 'Oet', n: 'oedd'}
+    - {t: 'trum', n: 'trwm'}
+    - {t: 'ẏ', n: 'y'}
+    - {t: 'dial.', n: 'ddial'}
+  - tokens:
+    - {t: 'Oet', n: 'oedd'}
+    - {t: 'tost', n: 'tost'}
+    - {t: 'ẏ', n: 'y'}
+    - {t: 'cẏnial.', n: 'gynial'}
+  - tokens:
+    - {t: 'Pan', n: 'pan'}
+    - {t: 'ẏuei', n: 'yfei'}
+    - {t: 'o', n: 'o'}
+    - {t: 'wual', n: 'fual'}
+  - tokens:
+    - {t: 'Y', n: 'y'}
+    - {t: 'uei', n: 'fei'}
+    - {t: 'urth', n: 'wrth'}
+    - {t: 'peduar.', n: 'pedwar'}
+  - tokens:
+    - {t: 'Yg', n: 'yng'}
+    - {t: 'kad', n: 'nghad'}
+    - {t: 'pandelhei.', n: 'pan-delhei'}
+  - tokens:
+    - {t: 'Vrth', n: 'wrth'}
+    - {t: 'cant', n: 'gant'}
+    - {t: 'idlathei.', n: 'yd-laddei'}
+  - tokens:
+    - {t: 'Nẏ', n: 'ny'}
+    - {t: 'bei', n: 'bei'}
+    - {t: 'duv', n: 'Duw'}
+    - {t: 'ae', n: 'a''e'}
+    - {t: 'digonhei.', n: 'digonhei'}
+  - tokens:
+    - {t: 'Oet', n: 'oedd'}
+    - {t: 'diheit', n: 'diheidd'}
+    - {t: 'aghev', n: 'angheu'}
+    - {t: 'kei.', n: 'Cei'}
+  - tokens:
+    - {t: 'Kei', n: 'Cei'}
+    - {t: 'guin', n: 'gwyn'}
+    - {t: 'allachev.', n: 'a-llacheu'}
+  - tokens:
+    - {t: 'Digonint', n: 'digonynt'}
+    - {t: 'we', n: 'we'}
+    - {t: 'kadev', n: 'cadeu'}
+  - tokens:
+    - {t: 'Kin', n: 'cyn'}
+    - {t: 'gloes', n: 'gloes'}
+    - {t: 'glas', n: 'glas'}
+    - {t: 'verev.', n: 'fereu'}
+  - tokens:
+    - {t: 'Y', n: 'y'}
+    - {t: 'guarthaw', n: 'gwarthaf'}
+    - {t: 'ẏstaw', n: 'Ystaf'}
+    - {t: 'in', n: 'yn'}
+    - {t: 'gun.', n: 'gwn'}
+  - tokens:
+    - {t: 'Kei', n: 'Cei'}
+    - {t: 'a', n: 'a'}
+    - {t: 'guant', n: 'gwant'}
+    - {t: 'nav', n: 'naw'}
+    - {t: 'guiton.', n: 'gwiddon'}
+  - tokens:
+    - {t: 'Kei', n: 'Cei'}
+    - {t: 'win', n: 'wyn'}
+    - {t: 'aaeth', n: 'a-aeth'}
+    - {t: 'von', n: 'Fôn'}
+  - tokens:
+    - {t: 'Y', n: 'y'}
+    - {t: 'dilein', n: 'dilein'}
+    - {t: 'lleuon.', n: 'llewon'}
+  - tokens:
+    - {t: 'Y', n: 'y'}
+    - {t: 'iscuid', n: 'ysgwyd'}
+    - {t: 'oet', n: 'oedd'}
+    - {t: 'mẏnud', n: 'mynud'}
+  - tokens:
+    - {t: 'Erbin', n: 'erbyn'}
+    - {t: 'cath', n: 'Cath'}
+    - {t: 'paluc.', n: 'Palug'}
+  - tokens:
+    - {t: 'Pan', n: 'pan'}
+    - {t: 'gogiueirch', n: 'gogyfeirch'}
+    - {t: 'tud.', n: 'tud'}
+  - tokens:
+    - {t: 'Puẏ', n: 'pwy'}
+    - {t: 'guant', n: 'gwant'}
+    - {t: 'cath', n: 'Cath'}
+    - {t: 'paluc.', n: 'Palug'}
+  - tokens:
+    - {t: 'Nau', n: 'naw'}
+    - {t: 'ugein', n: 'ugein'}
+    - {t: 'kinlluc.', n: 'cynllug'}
+  - tokens:
+    - {t: 'A', n: 'a'}
+    - {t: 'cuẏtei', n: 'gwyddei'}
+    - {t: 'in', n: 'yn'}
+    - {t: 'ẏ', n: 'y'}
+    - {t: 'buẏd.', n: 'bwyd'}
+  - tokens:
+    - {t: 'Nau', n: 'naw'}
+    - {t: 'ugein', n: 'ugein'}
+    - {t: 'kinran.', n: 'cynran'}
+    - {t: 'a.', n: 'a'}

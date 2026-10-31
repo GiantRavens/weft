@@ -1,0 +1,344 @@
+# Human overlay, written in the compact spec and expanded by weft overlay.
+- by: "Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar"
+  date: "2026-10-31"
+  why: "all 88 lines. Hand lemma, morphology and gloss; no treebank exists for Middle Welsh verse. Lemmas are the headwords of Geiriadur Prifysgol Cymru (GPC) in modern spelling, verbs under the verbal noun, mutated forms under the radical, names in their conventional modern form; Welsh has no case, so nouns carry gender and number only. The glosses follow D. Silvan Evans's translation in Skene (1868) where it reads the Welsh plausibly and the modern readings (Sims-Williams 1991, Bromwich) where it does not; those modern readings were not checked here against the printed editions. The lines with a note carry a reading a reviewer should check first"
+  status: "draft"
+  set:
+    pagur.1.1.1: {lemma: "pa", morph: "DET|PronType=Int", gloss: "what"}   # Pa
+    pagur.1.1.2: {lemma: "gŵr", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "man"}   # gur
+    pagur.1.1.3: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # ẏv
+    pagur.1.1.4: {lemma: "y", morph: "DET|Definite=Def|PronType=Art", gloss: "the"}   # ẏ
+    pagur.1.1.5: {lemma: "porthor", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "gatekeeper"}   # porthaur
+    pagur.1.2.1: {lemma: "Glewlwyd", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Glewlwyd"}   # Gleuluid
+    pagur.1.2.2: {lemma: "Gafaelfawr", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Mighty-Grip"}   # gauaeluaur
+    pagur.1.3.1: {lemma: "pa", morph: "DET|PronType=Int", gloss: "what"}   # Pa
+    pagur.1.3.2: {lemma: "gŵr", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "man"}   # gur
+    pagur.1.3.3: {lemma: "a + ei", morph: "PART|PronType=Rel + PRON|Number=Sing|Person=3|PronType=Prs", gloss: "that-it"}   # ae
+    pagur.1.3.4: {lemma: "gofyn", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "asks"}   # gouin
+    pagur.1.4.1: {lemma: "Arthur", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Arthur"}   # Arthur
+    pagur.1.4.2: {lemma: "a", morph: "CCONJ", gloss: "and"}   # a
+    pagur.1.4.3: {lemma: "Cei", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Cei"}   # chei
+    pagur.1.4.4: {lemma: "gwyn", morph: "ADJ", gloss: "fair"}   # guin
+    # pagur.1.5: Evans 'How goes it with thee?'; read here as the gatekeeper asking who comes with Arthur (pa 'what, who' with ymda 'goes'), which line 6 answers; the analysis of imda as the 3s present of ymdaith is the weak point
+    pagur.1.5.1: {lemma: "pa", morph: "PRON|PronType=Int", gloss: "who"}   # Pa
+    pagur.1.5.2: {lemma: "ymdaith", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "goes"}   # imda
+    pagur.1.5.3: {lemma: "gan + ti", morph: "ADP + PRON|Number=Sing|Person=2|PronType=Prs", gloss: "with-you"}   # genhid
+    pagur.1.6.1: {lemma: "gŵr", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "men"}   # Guir
+    pagur.1.6.2: {lemma: "da", morph: "ADJ|Degree=Sup", gloss: "best"}   # gorev
+    pagur.1.6.3: {lemma: "yn", morph: "ADP", gloss: "in"}   # im
+    pagur.1.6.4: {lemma: "byd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "world"}   # bid
+    pagur.1.7.1: {lemma: "yn + fy", morph: "ADP + DET|Number=Sing|Person=1|Poss=Yes|PronType=Prs", gloss: "into-my"}   # Ym
+    pagur.1.7.2: {lemma: "tŷ", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "house"}   # tẏ
+    pagur.1.7.3: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # nẏ
+    pagur.1.7.4: {lemma: "dod", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "you-shall-come"}   # doi
+    # pagur.1.8: onys = o 'if' + ny 'not' + the infixed object 's; gwaredi read as 'you deliver, vouch for (them)'; Evans 'Unless thou prevailest'
+    pagur.1.8.1: {lemma: "oni + gwared", morph: "SCONJ|Polarity=Neg + PRON|Person=3|PronType=Prs + VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "unless-you-vouch-for-them"}   # Onẏsguaredi
+    # pagur.1.9: guardi is unclear in form (its ending is not the 1s): read with line 8 as gwared 'vouch for'; Evans 'I forbid it', from gwardd 'forbid'
+    pagur.1.9.1: {lemma: "mi", morph: "PRON|Number=Sing|Person=1|PronType=Prs", gloss: "I"}   # Mi
+    pagur.1.9.2: {lemma: "a + ei", morph: "PART|PronType=Rel + PRON|Number=Sing|Person=3|PronType=Prs", gloss: "it"}   # ae
+    pagur.1.9.3: {lemma: "gwared", morph: "VERB|Mood=Ind|Tense=Pres", gloss: "will-vouch-for"}   # guardi
+    pagur.1.10.1: {lemma: "a + ti", morph: "CCONJ + PRON|Number=Sing|Person=2|PronType=Prs", gloss: "and-you"}   # Athi
+    pagur.1.10.2: {lemma: "a + ei", morph: "PART|PronType=Rel + PRON|Number=Sing|Person=3|PronType=Prs", gloss: "it"}   # ae
+    pagur.1.10.3: {lemma: "gweld", morph: "VERB|Mood=Ind|Number=Sing|Person=2|Tense=Pres", gloss: "shall-see"}   # gueli
+    # pagur.1.11: Evans 'If Wythnaint were to go'; Elei may instead be a second name (the river Elái), making lines 11 and 12 a list of three names
+    pagur.1.11.1: {lemma: "Wythnaint", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Wythnaint"}   # Vẏthneint
+    pagur.1.11.2: {lemma: "mynd", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "would-go"}   # elei
+    # pagur.1.12: Assivẏon read as a 'and' + a name (Sywyon), the three of line 11 and 12; Evans 'The three would be unlucky' takes it as an adjective; both readings are uncertain
+    pagur.1.12.1: {lemma: "a + Sywyon", morph: "CCONJ + PROPN|Gender=Masc|Number=Sing", gloss: "and-Sywyon"}   # Assivẏon
+    pagur.1.12.2: {lemma: "oll", morph: "DET|PronType=Tot", gloss: "all"}   # ell
+    pagur.1.12.3: {lemma: "tri", morph: "NUM", gloss: "three"}   # tri
+    pagur.1.13.1: {lemma: "Mabon", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Mabon"}   # Mabon
+    pagur.1.13.2: {lemma: "mab", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "son-of"}   # am
+    pagur.1.13.3: {lemma: "Modron", morph: "PROPN|Gender=Fem|Number=Sing", gloss: "Modron"}   # mẏdron
+    pagur.1.14.1: {lemma: "gwas", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "servant"}   # Guas
+    pagur.1.14.2: {lemma: "Uthr", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "of-Uthr"}   # uthir
+    pagur.1.14.3: {lemma: "Pendragon", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Pen-"}   # pen
+    pagur.1.14.4: {lemma: "Pendragon", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "-dragon"}   # dragon
+    pagur.1.15.1: {lemma: "Cysgaint", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Cysgaint"}   # Kẏsceint
+    pagur.1.15.2: {lemma: "mab", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "son-of"}   # mab
+    pagur.1.15.3: {lemma: "Banon", morph: "PROPN", gloss: "Banon"}   # banon
+    pagur.1.16.1: {lemma: "a", morph: "CCONJ", gloss: "and"}   # A
+    pagur.1.16.2: {lemma: "Gwyn", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Gwyn"}   # guin
+    pagur.1.16.3: {lemma: "Godybrion", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Godybrion"}   # godẏbrion
+    pagur.1.17.1: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "were"}   # Oet
+    pagur.1.17.2: {lemma: "rhyn", morph: "ADJ", gloss: "fierce"}   # rinn
+    pagur.1.17.3: {lemma: "fy", morph: "DET|Number=Sing|Person=1|Poss=Yes|PronType=Prs", gloss: "my"}   # vẏ
+    pagur.1.17.4: {lemma: "gwas", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "servants"}   # gueisson
+    pagur.1.18.1: {lemma: "yn", morph: "PART", gloss: "in"}   # In
+    pagur.1.18.2: {lemma: "amwyn", morph: "NOUN|VerbForm=Vnoun", gloss: "defending"}   # amuin
+    pagur.1.18.3: {lemma: "eu", morph: "DET|Number=Plur|Person=3|Poss=Yes|PronType=Prs", gloss: "their"}   # ev
+    pagur.1.18.4: {lemma: "deddf", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "rights"}   # detvon
+    pagur.1.19.1: {lemma: "Manawydan", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Manawydan"}   # Manawidan
+    pagur.1.19.2: {lemma: "mab", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "son-of"}   # ab
+    pagur.1.19.3: {lemma: "Llŷr", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "of-Llŷr"}   # llẏr
+    pagur.1.20.1: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "was"}   # Oet
+    pagur.1.20.2: {lemma: "dwys", morph: "ADJ", gloss: "deep"}   # duis
+    pagur.1.20.3: {lemma: "ei", morph: "DET|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "his"}   # ẏ
+    pagur.1.20.4: {lemma: "cusul", morph: "NOUN|Number=Sing", gloss: "counsel"}   # cusil
+    # pagur.1.21: neus is the affirmative particle neu with the infixed object 's; Evans makes the line a question, 'Did not Manawyd bring'
+    pagur.1.21.1: {lemma: "neu + dwyn", morph: "PART + PRON|Person=3|PronType=Prs + VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "brought"}   # Neustuc
+    pagur.1.21.2: {lemma: "Manawyd", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Manawyd"}   # manauid
+    # pagur.1.22: eis is ais 'ribs, laths', here the frame of a shield; Evans 'Perforated shields'
+    pagur.1.22.1: {lemma: "ais", morph: "NOUN|Number=Plur", gloss: "shields"}   # Eis
+    pagur.1.22.2: {lemma: "twll", morph: "ADJ", gloss: "pierced"}   # tull
+    pagur.1.22.3: {lemma: "o", morph: "ADP", gloss: "from"}   # o
+    pagur.1.22.4: {lemma: "Tryfrwyd", morph: "PROPN", gloss: "Tryfrwyd"}   # trẏwruid
+    pagur.1.23.1: {lemma: "a", morph: "CCONJ", gloss: "and"}   # A
+    pagur.1.23.2: {lemma: "Mabon", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Mabon"}   # mabon
+    pagur.1.23.3: {lemma: "mab", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "son-of"}   # am
+    pagur.1.23.4: {lemma: "Mellt", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Mellt"}   # melld
+    pagur.1.24.1: {lemma: "maglu", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "spotted"}   # Maglei
+    pagur.1.24.2: {lemma: "gwaed", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "blood"}   # guaed
+    pagur.1.24.3: {lemma: "ar", morph: "ADP", gloss: "on"}   # ar
+    pagur.1.24.4: {lemma: "gwellt", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "grass"}   # guelld
+    pagur.1.25.1: {lemma: "a", morph: "CCONJ", gloss: "and"}   # Ac
+    pagur.1.25.2: {lemma: "Anwas", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Anwas"}   # anguas
+    pagur.1.25.3: {lemma: "adeiniog", morph: "ADJ", gloss: "the-Winged"}   # edeinauc
+    pagur.1.26.1: {lemma: "a", morph: "CCONJ", gloss: "and"}   # A
+    pagur.1.26.2: {lemma: "Llwch", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Llwch"}   # lluch
+    pagur.1.26.3: {lemma: "Llawwynnog", morph: "ADJ", gloss: "Llawwynnog"}   # llauẏnnauc
+    pagur.1.27.1: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Imp", gloss: "they-were"}   # Oetin
+    pagur.1.27.2: {lemma: "diffreidiog", morph: "ADJ", gloss: "defenders"}   # diffreidauc
+    # pagur.1.28: cẏminauc is obscure; Evans takes it as an epithet of Eidyn ('Eiddyn Cymminog'); its sense is not settled
+    pagur.1.28.1: {lemma: "ar", morph: "ADP", gloss: "on"}   # Ar
+    pagur.1.28.2: {lemma: "Eidyn", morph: "PROPN", gloss: "Eidyn"}   # eidin
+    pagur.1.28.3: {lemma: "cyminog", morph: "ADJ", gloss: "Cyminog"}   # cẏminauc
+    pagur.1.29.1: {lemma: "arglwydd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "a-lord"}   # Argluit
+    pagur.1.29.2: {lemma: "a + ei", morph: "PART|PronType=Rel + PRON|Number=Sing|Person=3|PronType=Prs", gloss: "who-them"}   # ae
+    pagur.1.29.3: {lemma: "llochi", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "would-shelter"}   # llochei
+    # pagur.1.30: Evans 'He would have his will and make redress' reads Mẏ nei as one verb, mynnei 'he would wish'; read here as fy nai 'my nephew'; the ym- of ẏmtiwẏgei (reflexive, or the infixed 'me') is uncertain
+    pagur.1.30.1: {lemma: "fy", morph: "DET|Number=Sing|Person=1|Poss=Yes|PronType=Prs", gloss: "my"}   # Mẏ
+    pagur.1.30.2: {lemma: "nai", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "nephew"}   # nei
+    pagur.1.30.3: {lemma: "diwygio", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "would-make-redress"}   # ẏmtiwẏgei
+    pagur.1.31.1: {lemma: "Cei", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Cei"}   # Kei
+    pagur.1.31.2: {lemma: "a + ei", morph: "PART|PronType=Rel + PRON|Number=Sing|Person=3|PronType=Prs", gloss: "them"}   # ae
+    pagur.1.31.3: {lemma: "eiriol", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "would-entreat"}   # heiriolei
+    pagur.1.32.1: {lemma: "tra + ei", morph: "SCONJ + PRON|Number=Sing|Person=3|PronType=Prs", gloss: "while-them"}   # Trae
+    pagur.1.32.2: {lemma: "lladd", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "he-slew"}   # llathei
+    pagur.1.32.3: {lemma: "pob", morph: "DET|PronType=Tot", gloss: "every"}   # pop
+    pagur.1.32.4: {lemma: "tri", morph: "NUM", gloss: "three"}   # tri
+    pagur.1.33.1: {lemma: "pan", morph: "SCONJ", gloss: "when"}   # Pan
+    pagur.1.33.2: {lemma: "colli", morph: "VERB|Mood=Ind|Person=0|Tense=Past", gloss: "was-lost"}   # colled
+    pagur.1.33.3: {lemma: "Celli", morph: "PROPN", gloss: "Celli"}   # kelli
+    # pagur.1.34: Evans 'Cuelli was found; and rejoiced', taking cuelli as a name; it may be a common noun, and aseirolei is read as a 's eirolei, the verb of line 31 with an infixed object
+    pagur.1.34.1: {lemma: "cael", morph: "VERB|Mood=Ind|Person=0|Tense=Past", gloss: "was-found"}   # Caffad
+    pagur.1.34.2: {lemma: "Cuelli", morph: "PROPN", gloss: "Cuelli"}   # cuelli
+    pagur.1.34.3: {lemma: "a + eu + eiriol", morph: "PART + PRON|Number=Plur|Person=3|PronType=Prs + VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "entreated-them"}   # aseirolei
+    pagur.1.35.1: {lemma: "Cei", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Cei"}   # Kei
+    pagur.1.35.2: {lemma: "hyd", morph: "ADV", gloss: "as-long"}   # hid
+    pagur.1.35.3: {lemma: "tra + ei", morph: "SCONJ + PRON|Number=Sing|Person=3|PronType=Prs", gloss: "as-them"}   # trae
+    pagur.1.35.4: {lemma: "cymynu", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "hewed-down"}   # kẏmẏnhei
+    # pagur.1.36: Evans 'Arthur distributed gifts' takes ced as the noun 'gift'; read here as ced 'though' and chwarae 'play'; the sense of the line is disputed
+    pagur.1.36.1: {lemma: "Arthur", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Arthur"}   # Arthur
+    pagur.1.36.2: {lemma: "cyd", morph: "SCONJ", gloss: "though"}   # ced
+    pagur.1.36.3: {lemma: "chwarae", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "was-playing"}   # huarhei
+    pagur.1.37.1: {lemma: "y", morph: "DET|Definite=Def|PronType=Art", gloss: "the"}   # Y
+    pagur.1.37.2: {lemma: "gwaed", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "blood"}   # guaed
+    pagur.1.37.3: {lemma: "goferu", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "flowed"}   # gouerei
+    pagur.1.38.1: {lemma: "yn", morph: "ADP", gloss: "in"}   # In
+    pagur.1.38.2: {lemma: "neuadd", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "the-hall"}   # neuat
+    pagur.1.38.3: {lemma: "Awarnach", morph: "PROPN", gloss: "of-Awarnach"}   # awarnach
+    pagur.1.39.1: {lemma: "yn", morph: "PART", gloss: "in"}   # In
+    pagur.1.39.2: {lemma: "ymladd", morph: "NOUN|VerbForm=Vnoun", gloss: "fighting"}   # imlat
+    pagur.1.39.3: {lemma: "ef", morph: "PRON|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "he"}   # ew
+    pagur.1.39.4: {lemma: "a + gwrach", morph: "ADP + NOUN|Gender=Fem|Number=Sing", gloss: "with-a-hag"}   # agurach
+    # pagur.1.40: Evans 'He cleft the head of Palach' takes palach as a name; it may be a common noun
+    pagur.1.40.1: {lemma: "ef", morph: "PRON|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "he"}   # Ew
+    pagur.1.40.2: {lemma: "a", morph: "PART|PronType=Rel", gloss: "who"}   # a
+    pagur.1.40.3: {lemma: "gwanu", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "pierced"}   # guant
+    pagur.1.40.4: {lemma: "pen", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-head"}   # pen
+    pagur.1.40.5: {lemma: "Palach", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "of-Palach"}   # palach
+    # pagur.1.41: atodev is obscure: Evans 'fastnesses'; the headword is uncertain
+    pagur.1.41.1: {lemma: "yn", morph: "ADP", gloss: "in"}   # In
+    pagur.1.41.2: {lemma: "atod", morph: "NOUN|Number=Plur", gloss: "the-fastnesses"}   # atodev
+    pagur.1.41.3: {lemma: "Dissethach", morph: "PROPN", gloss: "of-Dissethach"}   # dissethach
+    pagur.1.42.1: {lemma: "yn", morph: "ADP", gloss: "on"}   # Ym
+    pagur.1.42.2: {lemma: "mynydd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "Mount"}   # minit
+    pagur.1.42.3: {lemma: "Eidyn", morph: "PROPN", gloss: "Eidyn"}   # eidin
+    # pagur.1.43: Evans 'He contended with Cynvyn'; chinbin may be a common noun, cŵn 'dogs' + pen 'head', 'dog-heads'
+    pagur.1.43.1: {lemma: "amwyn", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "he-fought"}   # Amuc
+    pagur.1.43.2: {lemma: "a", morph: "ADP", gloss: "with"}   # a
+    pagur.1.43.3: {lemma: "Cynbyn", morph: "PROPN", gloss: "Cynbyn"}   # chinbin
+    pagur.1.44.1: {lemma: "pob", morph: "DET|PronType=Tot", gloss: "every"}   # Pop
+    pagur.1.44.2: {lemma: "cant", morph: "NUM", gloss: "hundred"}   # cant
+    pagur.1.44.3: {lemma: "yd", morph: "PART", gloss: "there"}   # id
+    pagur.1.44.4: {lemma: "cwyddo", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Imp", gloss: "they-fell"}   # cuitin
+    pagur.1.45.1: {lemma: "yd", morph: "PART", gloss: "there"}   # Id
+    pagur.1.45.2: {lemma: "cwyddo", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Imp", gloss: "they-fell"}   # cvitin
+    pagur.1.45.3: {lemma: "pob", morph: "DET|PronType=Tot", gloss: "every"}   # pop
+    pagur.1.45.4: {lemma: "cant", morph: "NUM", gloss: "hundred"}   # cant
+    # pagur.1.46: bedrẏdant is an epithet, soft-mutated, perhaps pedry- 'four-, perfect' + tant 'sinew'; Evans 'the accomplished'; the headword is uncertain
+    pagur.1.46.1: {lemma: "rhag", morph: "ADP", gloss: "before"}   # Rac
+    pagur.1.46.2: {lemma: "Bedwyr", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Bedwyr"}   # beduir
+    pagur.1.46.3: {lemma: "pedrydant", morph: "ADJ", gloss: "the-accomplished"}   # bedrẏdant
+    pagur.1.47.1: {lemma: "ar", morph: "ADP", gloss: "on"}   # Ar
+    pagur.1.47.2: {lemma: "traeth", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "the-strands"}   # traethev
+    pagur.1.47.3: {lemma: "Tryfrwyd", morph: "PROPN", gloss: "of-Tryfrwyd"}   # trẏwruid
+    # pagur.1.48: Garwlwyd ('Rough-grey'), one name written as two words
+    pagur.1.48.1: {lemma: "yn", morph: "PART", gloss: "in"}   # In
+    pagur.1.48.2: {lemma: "amwyn", morph: "NOUN|VerbForm=Vnoun", gloss: "contending"}   # amvin
+    pagur.1.48.3: {lemma: "a", morph: "ADP", gloss: "with"}   # a
+    pagur.1.48.4: {lemma: "Garwlwyd", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Garw-"}   # garv
+    pagur.1.48.5: {lemma: "Garwlwyd", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "-lwyd"}   # luid
+    pagur.1.49.1: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "was"}   # Oet
+    pagur.1.49.2: {lemma: "gwychr", morph: "ADJ", gloss: "brave"}   # guẏchir
+    pagur.1.49.3: {lemma: "ei", morph: "DET|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "his"}   # ẏ
+    pagur.1.49.4: {lemma: "annwyd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "disposition"}   # annuẏd
+    # pagur.1.50: detẏw is read as cletẏw 'sword' (line 53), with Evans 'With sword and shield'; as printed it is not a known word
+    pagur.1.50.1: {lemma: "o", morph: "ADP", gloss: "with"}   # O
+    pagur.1.50.2: {lemma: "cleddyf", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "sword"}   # detẏw
+    pagur.1.50.3: {lemma: "a", morph: "CCONJ", gloss: "and"}   # ac
+    pagur.1.50.4: {lemma: "ysgwyd", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "shield"}   # ẏscuid
+    pagur.1.51.1: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "was"}   # Oet
+    pagur.1.51.2: {lemma: "gwagedd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "vanity"}   # guaget
+    pagur.1.51.3: {lemma: "bragad", morph: "NOUN|Number=Sing", gloss: "a-host"}   # bragad
+    pagur.1.52.1: {lemma: "wrth", morph: "ADP", gloss: "compared-with"}   # Vrth
+    pagur.1.52.2: {lemma: "Cei", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Cei"}   # kei
+    pagur.1.52.3: {lemma: "yn", morph: "ADP", gloss: "in"}   # ig
+    pagur.1.52.4: {lemma: "cad", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "battle"}   # kad
+    pagur.1.53.1: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "was"}   # Oet
+    pagur.1.53.2: {lemma: "cleddyf", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "a-sword"}   # cletẏw
+    pagur.1.53.3: {lemma: "yn + cad", morph: "ADP + NOUN|Gender=Fem|Number=Sing", gloss: "in-battle"}   # ighad
+    # pagur.1.54: diguistlad is di- 'without' + gwystl 'pledge'; Evans 'unerring'; the sense and the headword are uncertain
+    pagur.1.54.1: {lemma: "o + ei", morph: "ADP + DET|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "in-his"}   # Oe
+    pagur.1.54.2: {lemma: "llaw", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "hand"}   # lav
+    pagur.1.54.3: {lemma: "diwystl", morph: "ADJ", gloss: "unerring"}   # diguistlad
+    pagur.1.55.1: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "were"}   # Oet
+    pagur.1.55.2: {lemma: "hynaf", morph: "NOUN|Number=Plur", gloss: "commanders"}   # hẏneiw
+    pagur.1.55.3: {lemma: "gwastad", morph: "ADJ", gloss: "steadfast"}   # guastad
+    pagur.1.56.1: {lemma: "ar", morph: "ADP", gloss: "over"}   # Ar
+    pagur.1.56.2: {lemma: "lleng", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "a-legion"}   # lleg
+    pagur.1.56.3: {lemma: "ar", morph: "ADP", gloss: "for"}   # ar
+    pagur.1.56.4: {lemma: "lles", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-benefit"}   # lles
+    pagur.1.56.5: {lemma: "gwlad", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "of-the-country"}   # gulad
+    pagur.1.57.1: {lemma: "Bedwyr", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Bedwyr"}   # Beduir
+    pagur.1.57.2: {lemma: "a", morph: "CCONJ", gloss: "and"}   # a
+    pagur.1.57.3: {lemma: "Bridlaw", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Bridlaw"}   # bridlav
+    pagur.1.58.1: {lemma: "naw", morph: "NUM", gloss: "nine"}   # Nau
+    pagur.1.58.2: {lemma: "cant", morph: "NUM", gloss: "hundred"}   # cant
+    pagur.1.58.3: {lemma: "gwrando", morph: "NOUN|VerbForm=Vnoun", gloss: "would-listen"}   # guarandau
+    # pagur.1.59: eirthau is obscure: Evans 'gasping for breath'; no headword is identified here
+    pagur.1.59.1: {lemma: "chwechant", morph: "NUM", gloss: "six-hundred"}   # Chuechant
+    pagur.1.59.2: {lemma: "i", morph: "ADP", gloss: "to"}   # ẏ
+    pagur.1.59.3: {lemma: "eirthaw", morph: "NOUN|VerbForm=Vnoun", gloss: "gasp"}   # eirthau
+    # pagur.1.60: Evans 'Would be the cost of attacking them'; ortinav read as the soft-mutated verbal noun of gorddin 'attack, pressure'
+    pagur.1.60.1: {lemma: "a", morph: "PART|PronType=Rel", gloss: "who"}   # A
+    pagur.1.60.2: {lemma: "talu", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "would-pay"}   # talei
+    pagur.1.60.3: {lemma: "i", morph: "ADP", gloss: "to"}   # ẏ
+    pagur.1.60.4: {lemma: "gorddin", morph: "NOUN|VerbForm=Vnoun", gloss: "attack"}   # ortinav
+    pagur.1.61.1: {lemma: "gwas", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "servants"}   # Gueisson
+    pagur.1.61.2: {lemma: "a + fy", morph: "PART|PronType=Rel + PRON|Number=Sing|Person=1|PronType=Prs", gloss: "that-to-me"}   # am
+    pagur.1.61.3: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "were"}   # buẏint
+    pagur.1.62.1: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "it-was"}   # Oet
+    pagur.1.62.2: {lemma: "da", morph: "ADJ|Degree=Cmp", gloss: "better"}   # guell
+    pagur.1.62.3: {lemma: "pan + bod", morph: "SCONJ + VERB|Mood=Ind|Number=Plur|Person=3|Tense=Imp", gloss: "when-they-were"}   # banuitint
+    pagur.1.63.1: {lemma: "rhag", morph: "ADP", gloss: "before"}   # Rac
+    pagur.1.63.2: {lemma: "rhi", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "the-chiefs"}   # riev
+    pagur.1.63.3: {lemma: "Emrys", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "of-Emrys"}   # emreis
+    pagur.1.64.1: {lemma: "gweld", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Past", gloss: "I-saw"}   # Gueleise
+    pagur.1.64.2: {lemma: "Cei", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Cei"}   # kei
+    pagur.1.64.3: {lemma: "ar", morph: "ADP", gloss: "in"}   # ar
+    pagur.1.64.4: {lemma: "brys", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "haste"}   # uris
+    # pagur.1.65: gorthowis is obscure: Evans 'Booty for chieftains'; no headword is identified here
+    pagur.1.65.1: {lemma: "praidd", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "booty"}   # Preitev
+    pagur.1.65.2: {lemma: "gorthowys", morph: "NOUN|Number=Plur", gloss: "for-chieftains"}   # gorthowis
+    # pagur.1.66: Evans 'Was Gwrhir among foes' reads gur hir as the name Gwrhyr; read here as gŵr hir 'a tall man'; ewnis is obscure and the gloss follows Evans
+    pagur.1.66.1: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "was"}   # Oet
+    pagur.1.66.2: {lemma: "gŵr", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "a-man"}   # gur
+    pagur.1.66.3: {lemma: "hir", morph: "ADJ", gloss: "tall"}   # hir
+    pagur.1.66.4: {lemma: "yn", morph: "ADP", gloss: "among"}   # in
+    pagur.1.66.5: {lemma: "ewnys", morph: "NOUN|Number=Sing", gloss: "foes"}   # ewnis
+    pagur.1.67.1: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "was"}   # Oet
+    pagur.1.67.2: {lemma: "trwm", morph: "ADJ", gloss: "heavy"}   # trum
+    pagur.1.67.3: {lemma: "ei", morph: "DET|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "his"}   # ẏ
+    pagur.1.67.4: {lemma: "dial", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "vengeance"}   # dial
+    # pagur.1.68: cẏnial is obscure: Evans 'advance'; the headword is uncertain
+    pagur.1.68.1: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "was"}   # Oet
+    pagur.1.68.2: {lemma: "tost", morph: "ADJ", gloss: "severe"}   # tost
+    pagur.1.68.3: {lemma: "ei", morph: "DET|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "his"}   # ẏ
+    pagur.1.68.4: {lemma: "cynial", morph: "NOUN|Number=Sing", gloss: "advance"}   # cẏnial
+    pagur.1.69.1: {lemma: "pan", morph: "SCONJ", gloss: "when"}   # Pan
+    pagur.1.69.2: {lemma: "yfed", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "he-drank"}   # ẏuei
+    pagur.1.69.3: {lemma: "o", morph: "ADP", gloss: "from"}   # o
+    pagur.1.69.4: {lemma: "bual", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "a-horn"}   # wual
+    # pagur.1.70: uei read with Evans as (y)fei 'he would drink', echoing line 69; it may instead be fei, the soft-mutated bei 'he would be' ('he was a match for four')
+    pagur.1.70.1: {lemma: "yd", morph: "PART", gloss: "(particle)"}   # Y
+    pagur.1.70.2: {lemma: "yfed", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "he-would-drink"}   # uei
+    pagur.1.70.3: {lemma: "wrth", morph: "ADP", gloss: "with"}   # urth
+    pagur.1.70.4: {lemma: "pedwar", morph: "NUM", gloss: "four"}   # peduar
+    pagur.1.71.1: {lemma: "yn", morph: "ADP", gloss: "into"}   # Yg
+    pagur.1.71.2: {lemma: "cad", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "battle"}   # kad
+    pagur.1.71.3: {lemma: "pan + dod", morph: "SCONJ + VERB|Mood=Sub|Number=Sing|Person=3|Tense=Imp", gloss: "when-he-came"}   # pandelhei
+    pagur.1.72.1: {lemma: "wrth", morph: "ADP", gloss: "by"}   # Vrth
+    pagur.1.72.2: {lemma: "cant", morph: "NUM", gloss: "the-hundred"}   # cant
+    pagur.1.72.3: {lemma: "yd + lladd", morph: "PART + VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "he-would-slay"}   # idlathei
+    # pagur.1.73: read as 'unless it were God who accomplished it' (duv = Duw); Evans 'There was no day that would satisfy him' reads duv as diw 'day'
+    pagur.1.73.1: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # Nẏ
+    pagur.1.73.2: {lemma: "bod", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Imp", gloss: "were-it"}   # bei
+    pagur.1.73.3: {lemma: "Duw", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "God"}   # duv
+    pagur.1.73.4: {lemma: "a + ei", morph: "PART|PronType=Rel + PRON|Number=Sing|Person=3|PronType=Prs", gloss: "who-it"}   # ae
+    pagur.1.73.5: {lemma: "digoni", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Imp", gloss: "accomplished"}   # digonhei
+    # pagur.1.74: diheit is di- + haedd- 'reach, deserve': 'unattainable' (the modern reading) or Evans 'unmerited'; the headword is uncertain
+    pagur.1.74.1: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "was"}   # Oet
+    pagur.1.74.2: {lemma: "dihaedd", morph: "ADJ", gloss: "unattainable"}   # diheit
+    pagur.1.74.3: {lemma: "angau", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-death"}   # aghev
+    pagur.1.74.4: {lemma: "Cei", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "of-Cei"}   # kei
+    pagur.1.75.1: {lemma: "Cei", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Cei"}   # Kei
+    pagur.1.75.2: {lemma: "gwyn", morph: "ADJ", gloss: "the-fair"}   # guin
+    pagur.1.75.3: {lemma: "a + Llachau", morph: "CCONJ + PROPN|Gender=Masc|Number=Sing", gloss: "and-Llachau"}   # allachev
+    pagur.1.76.1: {lemma: "digoni", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Imp", gloss: "they-wrought"}   # Digonint
+    pagur.1.76.2: {lemma: "hwy", morph: "PRON|Number=Plur|Person=3|PronType=Prs", gloss: "they"}   # we
+    pagur.1.76.3: {lemma: "cad", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "battles"}   # kadev
+    pagur.1.77.1: {lemma: "cyn", morph: "ADP", gloss: "before"}   # Kin
+    pagur.1.77.2: {lemma: "gloes", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "the-pang"}   # gloes
+    pagur.1.77.3: {lemma: "glas", morph: "ADJ", gloss: "of-blue"}   # glas
+    pagur.1.77.4: {lemma: "bêr", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "shafts"}   # verev
+    # pagur.1.78: the place name, Evans 'Ystavingon', is printed as three words and read here as one, Ystafngwn
+    pagur.1.78.1: {lemma: "yn", morph: "ADP", gloss: "on"}   # Y
+    pagur.1.78.2: {lemma: "gwarthaf", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-heights"}   # guarthaw
+    pagur.1.78.3: {lemma: "Ystafngwn", morph: "PROPN", gloss: "of-Ystaf-"}   # ẏstaw
+    pagur.1.78.4: {lemma: "Ystafngwn", morph: "PROPN", gloss: "-yn-"}   # in
+    pagur.1.78.5: {lemma: "Ystafngwn", morph: "PROPN", gloss: "-gwn"}   # gun
+    pagur.1.79.1: {lemma: "Cei", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Cei"}   # Kei
+    pagur.1.79.2: {lemma: "a", morph: "PART|PronType=Rel", gloss: "who"}   # a
+    pagur.1.79.3: {lemma: "gwanu", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "pierced"}   # guant
+    pagur.1.79.4: {lemma: "naw", morph: "NUM", gloss: "nine"}   # nav
+    pagur.1.79.5: {lemma: "gwiddon", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "witches"}   # guiton
+    pagur.1.80.1: {lemma: "Cei", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Cei"}   # Kei
+    pagur.1.80.2: {lemma: "gwyn", morph: "ADJ", gloss: "the-fair"}   # win
+    pagur.1.80.3: {lemma: "a + mynd", morph: "PART + VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "went"}   # aaeth
+    pagur.1.80.4: {lemma: "Môn", morph: "PROPN", gloss: "to-Môn"}   # von
+    # pagur.1.81: Evans 'To devastate Llewon' takes lleuon as a place name; read here as the plural of llew 'lion'
+    pagur.1.81.1: {lemma: "i", morph: "ADP", gloss: "to"}   # Y
+    pagur.1.81.2: {lemma: "dileu", morph: "NOUN|VerbForm=Vnoun", gloss: "destroy"}   # dilein
+    pagur.1.81.3: {lemma: "llew", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "lions"}   # lleuon
+    # pagur.1.82: mẏnud: Evans 'ready'; the sense of the adjective here is not settled
+    pagur.1.82.1: {lemma: "ei", morph: "DET|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "his"}   # Y
+    pagur.1.82.2: {lemma: "ysgwyd", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "shield"}   # iscuid
+    pagur.1.82.3: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "was"}   # oet
+    pagur.1.82.4: {lemma: "mynud", morph: "ADJ", gloss: "ready"}   # mẏnud
+    pagur.1.83.1: {lemma: "erbyn", morph: "ADP", gloss: "against"}   # Erbin
+    pagur.1.83.2: {lemma: "Cath Palug", morph: "PROPN|Gender=Fem|Number=Sing", gloss: "the-Cat"}   # cath
+    pagur.1.83.3: {lemma: "Cath Palug", morph: "PROPN|Gender=Fem|Number=Sing", gloss: "of-Palug"}   # paluc
+    # pagur.1.84: gogyfarch 'greet, ask', here leading into the question of line 85; Evans 'When the people welcomed him'
+    pagur.1.84.1: {lemma: "pan", morph: "SCONJ", gloss: "when"}   # Pan
+    pagur.1.84.2: {lemma: "gogyfarch", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "ask"}   # gogiueirch
+    pagur.1.84.3: {lemma: "tud", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "people"}   # tud
+    pagur.1.85.1: {lemma: "pwy", morph: "PRON|PronType=Int", gloss: "who"}   # Puẏ
+    pagur.1.85.2: {lemma: "gwanu", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "pierced"}   # guant
+    pagur.1.85.3: {lemma: "Cath Palug", morph: "PROPN|Gender=Fem|Number=Sing", gloss: "the-Cat"}   # cath
+    pagur.1.85.4: {lemma: "Cath Palug", morph: "PROPN|Gender=Fem|Number=Sing", gloss: "of-Palug"}   # paluc
+    # pagur.1.86: Evans 'Nine score before dawn' reads cyn llug 'before light'; the parallel kinran 'chieftains' of line 88 suggests a noun for warriors instead
+    pagur.1.86.1: {lemma: "naw", morph: "NUM", gloss: "nine"}   # Nau
+    pagur.1.86.2: {lemma: "ugain", morph: "NUM", gloss: "score"}   # ugein
+    pagur.1.86.3: {lemma: "cyn + llug", morph: "ADP + NOUN|Number=Sing", gloss: "before-dawn"}   # kinlluc
+    pagur.1.87.1: {lemma: "a", morph: "PART|PronType=Rel", gloss: "who"}   # A
+    pagur.1.87.2: {lemma: "cwyddo", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "would-fall"}   # cuẏtei
+    pagur.1.87.3: {lemma: "yn", morph: "ADP", gloss: "as"}   # in
+    pagur.1.87.4: {lemma: "ei", morph: "DET|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "its"}   # ẏ
+    pagur.1.87.5: {lemma: "bwyd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "food"}   # buẏd
+    # pagur.1.88: the text breaks off here, where the manuscript is defective; a is the first word of a lost line
+    pagur.1.88.1: {lemma: "naw", morph: "NUM", gloss: "nine"}   # Nau
+    pagur.1.88.2: {lemma: "ugain", morph: "NUM", gloss: "score"}   # ugein
+    pagur.1.88.3: {lemma: "cynran", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "chieftains"}   # kinran
+    pagur.1.88.4: {lemma: "a", morph: "CCONJ", gloss: "and"}   # a

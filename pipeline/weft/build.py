@@ -16,9 +16,9 @@ import yaml
 from . import __version__, stewardship, treebank
 from .draft import PHON, load_manifest
 
-HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "arc": "arc", "lzh": "lzh", "runic": "gmq", "ja": "ja", "san": "sa", "akk": "akk", "fa": "fa", "ta": "ta", "it": "it", "fr": "fr", "es": "es", "nl": "nl", "fro": "fro", "de": "de", "egy": "egy", "sux": "sux", "orv": "orv", "xng": "xng", "cop": "cop", "sw": "sw", "qya": "qya", "sjn": "sjn", "pt": "pt", "eo": "eo", "chr": "chr"}
+HTML_LANG = {"grc": "grc", "lat": "la", "non": "non", "ang": "ang", "hbo": "he", "arc": "arc", "lzh": "lzh", "runic": "gmq", "ja": "ja", "san": "sa", "akk": "akk", "fa": "fa", "ta": "ta", "it": "it", "fr": "fr", "es": "es", "nl": "nl", "fro": "fro", "de": "de", "egy": "egy", "sux": "sux", "orv": "orv", "xng": "xng", "cop": "cop", "sw": "sw", "qya": "qya", "sjn": "sjn", "pt": "pt", "eo": "eo", "chr": "chr", "sga": "sga", "wlm": "wlm"}
 RTL = {"hbo", "arc", "fa"}
-LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "arc": "Biblical Aramaic", "lzh": "Classical Chinese", "runic": "Runic Norse", "ja": "Early modern Japanese", "san": "Vedic Sanskrit", "akk": "Akkadian", "fa": "Classical Persian", "ta": "Old Tamil", "it": "Renaissance Italian", "fr": "Middle French", "es": "Early Modern Spanish", "nl": "Early Modern Dutch", "fro": "Old French", "de": "German", "egy": "Old Egyptian", "sux": "Sumerian", "orv": "Old East Slavic", "xng": "Middle Mongolian", "cop": "Sahidic Coptic", "sw": "Swahili", "qya": "Quenya", "sjn": "Sindarin", "pt": "Portuguese", "eo": "Esperanto", "chr": "Cherokee"}
+LANG_NAMES = {"grc": "Ancient Greek", "lat": "Latin", "non": "Old Norse", "ang": "Old English", "hbo": "Biblical Hebrew", "arc": "Biblical Aramaic", "lzh": "Classical Chinese", "runic": "Runic Norse", "ja": "Early modern Japanese", "san": "Vedic Sanskrit", "akk": "Akkadian", "fa": "Classical Persian", "ta": "Old Tamil", "it": "Renaissance Italian", "fr": "Middle French", "es": "Early Modern Spanish", "nl": "Early Modern Dutch", "fro": "Old French", "de": "German", "egy": "Old Egyptian", "sux": "Sumerian", "orv": "Old East Slavic", "xng": "Middle Mongolian", "cop": "Sahidic Coptic", "sw": "Swahili", "qya": "Quenya", "sjn": "Sindarin", "pt": "Portuguese", "eo": "Esperanto", "chr": "Cherokee", "sga": "Old Irish", "wlm": "Middle Welsh"}
 
 
 def _load_yaml_dir(d: Path) -> list[tuple[Path, object]]:
@@ -53,6 +53,10 @@ def assemble(work_dir: Path, private_dir: Path | None = None) -> dict:
     m = load_manifest(work_dir)
     lines, index = [], {}
     for _, g in _load_yaml_dir(work_dir / "gen"):
+        # gen/ also holds files that are not layers (quantities-proposed.yaml, which reaches no page and
+        # is empty when nothing is proposed); only a file with lines is a layer
+        if not isinstance(g, dict) or not g.get("lines"):
+            continue
         for line in g["lines"]:
             lines.append(line)
             index[line["id"]] = line

@@ -1,0 +1,31 @@
+#!/bin/sh
+# Run by post-commit. One build at a time: a commit made while a build runs leaves a marker, and the
+# running build goes round once more when it finishes, so the last commit is always the one built.
+# The lock is a directory (mkdir is atomic on Linux and macOS alike); a lock left by a killed build
+# is cleared when its pid is gone.
+top=$1
+cd "$top" || exit 1
+out=private/build
+lock=$out/.autobuild.lock
+pending=$out/.autobuild.pending
+touch "$pending"
+if ! mkdir "$lock" 2>/dev/null; then
+  # no pid yet: the holder has only just taken the lock; a pid whose process is gone is a dead build
+  pid=$(cat "$lock/pid" 2>/dev/null)
+  [ -z "$pid" ] && exit 0
+  kill -0 "$pid" 2>/dev/null && exit 0
+  rm -rf "$lock"; mkdir "$lock" 2>/dev/null || exit 0
+fi
+echo $$ >"$lock/pid"
+trap 'rm -rf "$lock"' EXIT
+while [ -e "$pending" ]; do
+  rm -f "$pending"
+  {
+    echo "== $(date '+%Y-%m-%dT%H:%M:%S') building $(git rev-parse --short HEAD)"
+    if nice .venv/bin/weft build all --private; then
+      echo "== $(date '+%Y-%m-%dT%H:%M:%S') ok"
+    else
+      echo "== $(date '+%Y-%m-%dT%H:%M:%S') FAILED"
+    fi
+  } >>"$out/autobuild.log" 2>&1
+done

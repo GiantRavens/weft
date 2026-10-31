@@ -60,6 +60,9 @@ fr1791   French as a Paris reader would have read a public text aloud in 1791, u
          l mouillé, the palatal l of fille (fiʎ), which became [j] in the 19th century, written in the
          lexicon as fr1791 where a word has it. Everything else is taken from the modern form; the
          scheme says so and is approximate.
+         The same scheme reads Napoleon's farewell to the Old Guard (1814). Paris usage changed little
+         between Féraud and the 1820s, and l mouillé was still the norm; Napoleon's own Corsican accent
+         is not modeled.
 fr1885   French as an educated Parisian reader of the 1880s would have read a formal text aloud,
          used for the General Act of the Berlin Conference (1885). French of 1885 is close to
          modern standard French: the spelling had been fixed since the Academy's dictionary of 1835

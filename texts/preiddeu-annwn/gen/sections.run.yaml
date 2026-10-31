@@ -1,0 +1,23 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+counts:
+  lines: 60
+  tokens: 384
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank for Middle Welsh: lemma and morphology hand-annotated against Geiriadur Prifysgol Cymru (GPC), draft; the poem is among the most obscure in early Welsh, and many readings are disputed'
+- the sound is Middle Welsh of the manuscript's time, read from Weft's normalized spelling; the date of composition is uncertain and its sound is not modeled
+- the text is Skene's (1868), not a modern critical edition (Marged Haycock, Legendary Poems from the Book of Taliesin, 2007, in copyright)
+- Robert Williams's 1868 translation is the only public-domain one used; it is literal and in places superseded

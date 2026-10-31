@@ -1,0 +1,52 @@
+work: gododdin
+title: Y Gododdin
+short_title: Y Gododdin
+author: Aneirin, by the manuscript's attribution
+language: wlm
+lang_name: Middle Welsh of the manuscript (13th century); the poem composed in Early Welsh
+kind: poetry
+wikipedia: {title: "Y Gododdin", match: work}
+prefix: god                      # god.<stanza>.<line>[.<token>]; b33 is stanza XXXIII of Skene's second series
+urn: urn:weft:wlm:gododdin       # no CTS URN; Weft-local identifier
+unit: section
+section_noun: stanza
+written: {year: 650, display: "600s–1000s", label: "a lament for the Gododdin's raid on Catraeth, set around 600 and attributed to Aneirin; the date of composition is disputed, from the 7th century to the 10th or 11th; the one manuscript, the Book of Aneirin, was written about 1265"}
+status: phase-0
+extent: {is: excerpt, of: "4 stanzas: I, VIII and X of the main text and the Arthur stanza (XXXIII of the second series), of about 130"}
+pilot: {sections: ["1", "8", "10", "b33"]}
+edition:
+  id: skene1868
+  name: W. F. Skene, The Four Ancient Books of Wales (1868), vol. 2, pp. 62-65 and 106, from the Book of Aneirin; Internet Archive OCR, checked against the page images
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain; Skene's edition public domain; Weft line division and normalization CC BY-SA 4.0
+treebank: null                   # no treebank for Middle Welsh verse: lemma and morphology by hand (GPC), draft
+schemes: [middle-welsh]
+sound_confidence: low
+sources_extra:
+- id: skene1868-v2
+  name: 'W. F. Skene, The Four Ancient Books of Wales (Edinburgh, 1868), vol. 2: the Welsh texts. Internet Archive OCR of
+    the University of Toronto copy (fourancientbooks02skenuoft)'
+  file: sources/skene1868-v2.txt
+  url: https://archive.org/download/fourancientbooks02skenuoft/fourancientbooks02skenuoft_djvu.txt
+  sha256: c13f6f26250954460943b6fa8851581361a35b15370e2187091702d941f304bd
+  license: public-domain
+  license_url: https://archive.org/details/fourancientbooks02skenuoft
+translations:
+- id: evans1868
+  translator: D. Silvan Evans
+  year: 1868
+  form: literal verse lines, in Skene, The Four Ancient Books of Wales, vol. 1 (the Gododin poems)
+  license: public-domain
+  license_url: https://archive.org/details/fourancientbooks01skenuoft
+  file: sources/skene1868-v1.txt
+  url: https://archive.org/download/fourancientbooks01skenuoft/fourancientbooks01skenuoft_djvu.txt
+  sha256: e6e6a5ccde06bcc1f591e4f2ddbc493b4d3a6f3aa78048ec107defd1e10cd7a0
+predicted_gaps:
+- 'no treebank for Middle Welsh: lemma and morphology hand-annotated against Geiriadur Prifysgol Cymru (GPC), draft; the poem''s
+  vocabulary is old and many readings are disputed'
+- the sound is Middle Welsh of the manuscript's time, read from Weft's normalized spelling; the poem was composed earlier,
+  perhaps centuries earlier, with the stress on the last syllable, and that is not modeled
+- the text is Skene's (1868), not a modern critical edition (Ifor Williams, Canu Aneirin, 1938, in copyright); Skene's readings
+  differ from Williams's in places, most notably cein for ceni in the Arthur stanza
+- 4 of about 130 stanzas

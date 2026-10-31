@@ -1,0 +1,23 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+  - '2'
+  - '3'
+counts:
+  lines: 60
+  tokens: 497
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- the Latin Wikisource page cites Migne's Patrologia Latina 95 and is rated incomplete; its text of this chapter is Plummer's, word for word, which a comparison with the OCR of Plummer's volume shows; the
+  edition is named as Plummer's and checked against the Wikisource page
+- 'no treebank covers Bede: lemma and morphology hand-annotated against Lewis and Short, draft'
+- 'the sound is the classical scheme, read as the book Latin of Northumbria: Bede and his teachers learned Latin from the grammarians as a written language, without a spoken Romance norm; how a Northumbrian
+  monk actually sounded c before e and i, or the vowels, is not known in detail, and the scheme is approximate'
+- vowel length comes from the quantity table; forms not yet in it read short, and the count is reported by weft draft
+- Plummer's critical notes (the variant readings of the manuscripts M, C, B and N) are not shown
+- 'the Old English translation of the Historia (late 9th century), which the Pin task asks for beside the Latin, is not included: no clean public-domain digital text was found (Miller''s EETS edition, 1890-98,
+  survives only as poor OCR); and the Anglo-Saxon Chronicle''s annal for 449, which follows Bede, waits on the same source problem (pin 105)'

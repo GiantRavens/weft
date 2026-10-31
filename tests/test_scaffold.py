@@ -198,3 +198,16 @@ def test_pin_stem_keeps_the_page_number_of_a_long_title():
     a, b = s("Page:De Gouges - Les Droits de la femme, 1791.djvu/14"), s("Page:De Gouges - Les Droits de la femme, 1791.djvu/15")
     assert a.endswith("-14") and b.endswith("-15") and len(a) <= 40
     assert s("Hávamál") == "h-vam-l" and s("Short/title") == "short-title"
+
+
+def test_strip_tags_drops_hidden_commons_markup():
+    # Commons repeats the artist in a hidden span and hides Wikidata markup in a div; neither is text
+    assert scaffold.strip_tags('Unknown author<span style="display: none;">Unknown author</span>') == "Unknown author"
+    assert scaffold.strip_tags('8<sup>th</sup> century<div style="display: none;">date QS:P,+750-00-00T00:00:00Z/7</div>') == "8th century"
+
+
+def test_resolve_wikisource_multilingual_host_offline():
+    # multilingual Wikisource (Old Irish) has no language subdomain; it was once fetched as an HTML page
+    raw, name, rev, _ = scaffold.resolve_wikisource("https://wikisource.org/w/index.php?title=Page:X.djvu/1&oldid=848297")
+    assert raw == "https://wikisource.org/w/index.php?oldid=848297&action=raw" and rev == 848297
+    assert scaffold.resolve_wikisource("https://fr.wikisource.org/w/index.php?oldid=5")[0] == "https://fr.wikisource.org/w/index.php?oldid=5&action=raw"

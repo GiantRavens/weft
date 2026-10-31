@@ -1,0 +1,61 @@
+work: henry-i-charter
+title: Charter of Liberties of Henry I
+short_title: Henry I's Charter of Liberties
+author: Henry I, king of England (1068–1135)
+language: lat
+lang_name: Anglo-Latin of about 1100
+kind: law
+wikipedia: {title: "Charter of Liberties", match: work}
+prefix: hen                      # hen.<chapter>.<line>[.<token>]; pre = preamble, t = witnesses
+urn: urn:weft:lat:henry-i-charter-1100   # Weft-local identifier
+unit: section
+section_noun: chapter
+written: {year: 1100, display: "1100", label: "issued by Henry I at his coronation in London, 5 August 1100, and sent to each shire; this is the Worcestershire copy's address with the common text"}
+status: phase-0
+extent: {is: whole, of: "the preamble of the Worcestershire copy, all fourteen chapters and the witnesses"}
+pilot: {sections: ["pre", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "t"]}
+edition:
+  id: stubbs1913
+  name: W. Stubbs, Select Charters, 9th edition revised by H. W. C. Davis (Oxford, 1913), pp. 117-119; Internet Archive OCR of the CIHM copy, checked against the page images
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain; Stubbs and Davis's edition public domain; Weft line division CC BY-SA 4.0
+treebank: null                   # no treebank covers medieval charters; hand annotation, draft
+schemes: [anglo-latin, classical]   # default = Latin as read in England around 1100
+scheme_labels:
+  anglo-latin: "As first read: Latin as a royal clerk in England read it, about 1100 (approximate)"
+quantities: pipeline/weft/data/lat_quantities.yaml
+sound_confidence: medium
+sources_extra:
+- id: stubbs1913
+  name: W. Stubbs, Select Charters, 9th ed. by H. W. C. Davis (1913). Internet Archive OCR of the CIHM copy (cihm_65823)
+  file: sources/stubbs1913.txt
+  url: https://archive.org/download/cihm_65823/cihm_65823_djvu.txt
+  sha256: dc485d9340b363d5ec630ffd43baf5c5ac6e146b23a676499c13e0e83041e007
+  license: public-domain
+  license_url: https://archive.org/details/cihm_65823
+translations:
+- id: cheyney1901
+  translator: Edward P. Cheyney
+  year: 1901
+  form: prose, in G. B. Adams and H. M. Stephens, Select Documents of English Constitutional History, no. 7; chapters 1 to
+    14 (another copy of the charter)
+  partial: true
+  license: public-domain
+  license_url: https://archive.org/details/cu31924030503555
+  file: sources/cheyney1901.txt
+  url: https://archive.org/download/cu31924030503555/cu31924030503555_djvu.txt
+  sha256: d6f9143f23ed25e9ac60831e4e4ba2c88cf1fcd901515e343ee7070f21918e70
+- id: weft-editorial
+  kind: editorial
+  translator: Weft editorial translation, draft
+  year: 2026
+  form: prose, the preamble and witnesses only
+  partial: true
+  license: CC BY-SA 4.0
+predicted_gaps:
+- 'vowel length: 308 forms (477 of 688 tokens) are not yet in the quantity table, so their long vowels read short and the stress may fall wrongly; the proposals await review (pin 206)'
+- 'no treebank for medieval charters: lemma and morphology hand-annotated, draft'
+- Cheyney translates another copy, so his preamble and witnesses are not this copy's; the Weft translation covers those parts
+- the text is Stubbs and Davis's (1913), from the Worcestershire copy's address with the common text; the variants of the
+  other copies (Bémont 1892, Liebermann) are not shown

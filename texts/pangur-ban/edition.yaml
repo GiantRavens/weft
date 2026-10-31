@@ -1,0 +1,232 @@
+# Weft edition of Pangur Bán, the Old Irish poem of the Reichenau Primer (Stift St. Paul im Lavanttal,
+# Cod. 86b/1, fol. 1v), in the text of Stokes and Strachan, Thesaurus Palaeohibernicus, vol. 2 (1903),
+# pp. 293-294, from multilingual Wikisource (pinned in the manifest). Each line is checked verbatim
+# against the pinned pages; verify_strip sets aside the page's templates, footnotes and the
+# italics of the editors' expansions (ocus for the manuscript's sign, the supplied m of fristarddam
+# and fuachimm).
+#
+# The print keeps the manuscript's long lines, two to a quatrain, divided by a point. Weft's lines are
+# the poem's metrical lines, four to a quatrain: the metre is deibide, seven syllables to the line.
+#
+#   t        the word as printed, punctuation attached. The manuscript writes a proclitic with the
+#            word it leans on (innar, arnáthius, hinglen), and t keeps that division.
+#   n        Weft's normalized spelling, from which the sound is read (pipeline/weft/oldirish.py):
+#            long vowels marked; a dot over a letter for lenition the manuscript does not write
+#            (ṁenma after a "his" and mu "my"); n- for nasalization (n-doraid); a middle dot after a
+#            pretonic preverb (du·fuit, stress on fuit); a hyphen before an enclitic (menma-sam); a
+#            diaeresis for two vowels in hiatus (ru·biäm); a word the manuscript joins is split
+#            (innar: inar; arnáthius: ar n-áthius). The normalization is Weft's own, draft.
+work: pangur-ban
+joiner: ' '
+verify_strip: <ref>.*?</ref>|\{\{[^{}]*\}\}|<[^>]+>|''|&emsp;
+sections:
+- id: '1'
+  title: Quatrain 1
+  verify_in: sources/tp2-p339.txt
+  lines:
+  - tokens:
+    - {t: Messe, n: messe}
+    - {t: ocus, n: ocus}
+    - {t: Pangur, n: Pangur}
+    - {t: 'Bán,', n: Bán}
+  - tokens:
+    - {t: cechtar, n: cechtar}
+    - {t: nathar, n: nathar}
+    - {t: fria, n: fria}
+    - {t: saindan, n: saindán}
+  - tokens:
+    - {t: bíth, n: bíth}
+    - {t: a, n: a}
+    - {t: menmasam, n: ṁenma-sam}
+    - {t: fri, n: fri}
+    - {t: seilgg, n: seilgg}
+  - tokens:
+    - {t: mu, n: mu}
+    - {t: menma, n: ṁenma}
+    - {t: céin, n: céin}
+    - {t: im, n: im}
+    - {t: saincheirdd., n: ṡaincheirdd}
+- id: '2'
+  title: Quatrain 2
+  verify_in: sources/tp2-p339.txt
+  lines:
+  - tokens:
+    - {t: Caraimse, n: caraim-se}
+    - {t: fos, n: fos}
+    - {t: ferr, n: ferr}
+    - {t: cach, n: cach}
+    - {t: clú, n: clú}
+  - tokens:
+    - {t: oc, n: oc}
+    - {t: mu, n: mu}
+    - {t: lebran, n: lebrán}
+    - {t: leir, n: léir}
+    - {t: ingnu, n: ingnu}
+  - tokens:
+    - {t: ni, n: ní}
+    - {t: foirmtech, n: foirmtech}
+    - {t: frimm, n: frimm}
+    - {t: Pangur, n: Pangur}
+    - {t: Bán, n: Bán}
+  - tokens:
+    - {t: caraid, n: caraid}
+    - {t: cesin, n: cesin}
+    - {t: a, n: a}
+    - {t: maccdán., n: maccdán}
+- id: '3'
+  title: Quatrain 3
+  verify_in: sources/tp2-p339.txt
+  lines:
+  - tokens:
+    - {t: Orubiam, n: ó ru·biäm}
+    - {t: scél, n: scél}
+    - {t: cen, n: cen}
+    - {t: scís, n: scís}
+  - tokens:
+    - {t: innar, n: inar}
+    - {t: tegdais, n: tegdais}
+    - {t: ar, n: ar}
+    - {t: noendís, n: n-óendís}
+  - tokens:
+    - {t: taithiunn, n: taithiunn}
+    - {t: dichrichide, n: díchríchide}
+    - {t: clius, n: clius}
+  - tokens:
+    - {t: ni, n: ní}
+    - {t: fristarddam, n: fris·tarddam}
+    - {t: arnáthius., n: ar n-áthius}
+- id: '4'
+  title: Quatrain 4
+  verify_in: sources/tp2-p339.txt
+  lines:
+  - tokens:
+    - {t: Gnáth, n: gnáth}
+    - {t: huaraib, n: úaraib}
+    - {t: ar, n: ar}
+    - {t: gressaib, n: gressaib}
+    - {t: gal, n: gal}
+  - tokens:
+    - {t: glenaid, n: glenaid}
+    - {t: luch, n: luch}
+    - {t: inna, n: inna}
+    - {t: línsam, n: lín-sam}
+  - tokens:
+    - {t: os, n: os}
+    - {t: mé, n: mé}
+    - {t: dufuit, n: du·fuit}
+    - {t: im, n: im}
+    - {t: lín, n: lín}
+    - {t: chéin, n: chéin}
+  - tokens:
+    - {t: dliged, n: dliged}
+    - {t: ndoraid, n: n-doraid}
+    - {t: cu, n: cu}
+    - {t: ndronchéill., n: n-dronchéill}
+- id: '5'
+  title: Quatrain 5
+  verify_in: sources/tp2-p339.txt
+  lines:
+  - tokens:
+    - {t: Fuachaidsem, n: fúachaid-sem}
+    - {t: fri, n: fri}
+    - {t: frega, n: frega}
+    - {t: fál, n: fál}
+  - tokens:
+    - {t: a, n: a}
+    - {t: rosc, n: rosc}
+    - {t: anglése, n: a n-glé-se}
+    - {t: comlán, n: comlán}
+  - tokens:
+    - {t: fuachimm, n: fúachimm}
+    - {t: chein, n: chéin}
+    - {t: fri, n: fri}
+    - {t: fegi, n: féigi}
+    - {t: fis, n: fis}
+  - tokens:
+    - {t: mu, n: mu}
+    - {t: rosc, n: rosc}
+    - {t: reil, n: réil}
+    - {t: cesu, n: cesu}
+    - {t: imdis., n: imdis}
+- id: '6'
+  title: Quatrain 6
+  verify_in: sources/tp2-p339.txt
+  lines:
+  - tokens:
+    - {t: Faelidsem, n: fáelid-sem}
+    - {t: cu, n: cu}
+    - {t: ndene, n: n-déne}
+    - {t: dul, n: dul}
+  - tokens:
+    - {t: hinglen, n: i n-glen}
+    - {t: luch, n: luch}
+    - {t: inna, n: inna}
+    - {t: gerchrub, n: gérchrub}
+  - tokens:
+    - {t: hi, n: i}
+    - {t: tucu, n: tucu}
+    - {t: cheist, n: cheist}
+    - {t: ndoraid, n: n-doraid}
+    - {t: ndil, n: n-dil}
+  - tokens:
+    - {t: os, n: os}
+    - {t: me, n: mé}
+    - {t: chene, n: chéne}
+    - {t: am, n: am}
+    - {t: faelid., n: fáelid}
+- id: '7'
+  title: Quatrain 7
+  verify_in: sources/tp2-p340.txt
+  lines:
+  - tokens:
+    - {t: Cia, n: cia}
+    - {t: beimmi, n: beimmi}
+    - {t: amin, n: amin}
+    - {t: nach, n: nach}
+    - {t: 'ré,', n: ré}
+  - tokens:
+    - {t: ni, n: ní}
+    - {t: derban, n: derban}
+    - {t: cách, n: cách}
+    - {t: a, n: a}
+    - {t: chele, n: chéle}
+  - tokens:
+    - {t: maith, n: maith}
+    - {t: la, n: la}
+    - {t: cechtar, n: cechtar}
+    - {t: nár, n: nár}
+    - {t: a, n: a}
+    - {t: 'dán,', n: dán}
+  - tokens:
+    - {t: subaigthius, n: subaigthius}
+    - {t: a, n: a}
+    - {t: óenurán., n: óenurán}
+- id: '8'
+  title: Quatrain 8
+  verify_in: sources/tp2-p340.txt
+  lines:
+  - tokens:
+    - {t: He, n: é}
+    - {t: fesin, n: fesin}
+    - {t: as, n: as}
+    - {t: choimsid, n: choimsid}
+    - {t: dáu, n: dáu}
+  - tokens:
+    - {t: in, n: in}
+    - {t: muid, n: muid}
+    - {t: dungní, n: dun·gní}
+    - {t: cach, n: cach}
+    - {t: oenláu, n: óenláu}
+  - tokens:
+    - {t: du, n: du}
+    - {t: thabairt, n: thabairt}
+    - {t: doraid, n: doraid}
+    - {t: du, n: du}
+    - {t: glé, n: glé}
+  - tokens:
+    - {t: for, n: for}
+    - {t: mu, n: mu}
+    - {t: mud, n: ṁud}
+    - {t: cein, n: céin}
+    - {t: am, n: am}
+    - {t: messe., n: messe}

@@ -81,7 +81,9 @@ shows no invitation.
 | | | Li Bai | tang (first), mandarin, cantonese | medium |
 | Sahidic Coptic | `coptic` | Gospel of Mark 1 | sahidic (first), bohairic | medium |
 | Latin | `latin` | Ovid, Res Gestae | classical (first), ecclesiastical | medium |
+| | | Bede, Ecclesiastical History I.15 (731) | classical (first, as Northumbrian book Latin), ecclesiastical | medium |
 | | | Bayeux Tapestry | anglo-norman (first), classical | medium |
+| | | Henry I's Charter of Liberties | anglo-latin (first), classical | medium |
 | | | Magna Carta | anglo-latin (first), classical | medium |
 | | | Saxo, Gesta Danorum 9.3-5 | danish-medieval (first), classical, ecclesiastical | medium |
 | | | Saer de Quincy, two charters | anglo-latin (first), classical | medium |
@@ -93,7 +95,9 @@ shows no invitation.
 | | | Descartes and Newton | as-first-read (first), classical | medium |
 | Old Tamil | `tamil` | Tirukkural | old-tamil (first), modern | medium |
 | Runic | `runic` | Kylver, Gallehus, Rök | as-carved (only) | low |
-| Old English | `oldenglish` | Beowulf | west-saxon (only) | medium |
+| Old Irish | `oldirish` | Pangur Bán | old-irish (only) | low |
+| Middle Welsh | `welsh` | Y Gododdin, Pa gur, Preiddeu Annwn | middle-welsh (only) | low |
+| Old English | `oldenglish` | Beowulf, Cædmon's Hymn | west-saxon (only) | medium |
 | Old Norse | `norse` | Völuspá, Hávamál, Vafþrúðnismál, Grímnismál, Lokasenna, Þrymskviða, Grettis saga | old-norse (first), modern-icelandic | medium |
 | | | Snorri, Gylfaginning | old-norse (first), modern-icelandic | medium |
 | Old East Slavic | `oldeastslavic` | Primary Chronicle, 859-862 | orv1100 (first), ru | low |
@@ -112,6 +116,7 @@ shows no invitation.
 | | | Declaration of the Rights of Man (1789) | fr1791 (first), modern | medium |
 | | | de Gouges, Rights of Woman (1791) | fr1791 (first), modern | medium |
 | | | Rouget de Lisle, La Marseillaise (1792) | fr1791 (first), modern | medium |
+| | | Napoleon, farewell to the Old Guard (1814) | fr1791 (first), modern | medium |
 | | | Berlin Act, 1885 | fr1885 (first), modern | medium |
 | German | `german` | Kant, Nietzsche | northern (first), modern | medium |
 | | | Marx and Engels, Manifest (1848) | northern (first), modern | medium |
@@ -385,11 +390,11 @@ ending, and a reviewer adds the endings.
 
 | Id | Label | Used by | What it represents |
 |---|---|---|---|
-| `classical` | Classical: restored pronunciation of Cicero's and Ovid's Rome | first for Ovid and the Res Gestae; third for Luther; second elsewhere | after W. S. Allen, *Vox Latina*: c and g hard, v as w, ae as ai, length audible |
+| `classical` | Classical: restored pronunciation of Cicero's and Ovid's Rome | first for Ovid, the Res Gestae and Bede (relabeled for Northumbria about 731); third for Luther; second elsewhere | after W. S. Allen, *Vox Latina*: c and g hard, v as w, ae as ai, length audible |
 | `ecclesiastical` | Ecclesiastical: Italianate church Latin | second for Ovid and the Res Gestae; second of three for Luther | soft c and g before front vowels, v as v, ae as e, length heard only in stress |
 | `anglo-norman` | As first read: Latin in Normandy and Norman England around 1070 (approximate) | Bayeux Tapestry | c before front vowels ts, g and j dʒ, h silent, u as French u, s between vowels z |
 | `danish-medieval` | As first read: Latin in Denmark around 1200 (approximate) | Saxo, Gesta Danorum (Holder 1886) | c before front vowels s, ti before a vowel s (Holder writes ci), g hard, consonantal u and w v, qu kv, h sounded but k in michi, th t, length heard only in stress |
-| `anglo-latin` | Anglo-Latin: as a clerk in England read Latin around 1215 (approximate) | Magna Carta; the Saer de Quincy charters | soft c ts, soft g and j dʒ, h silent, v as v, s between vowels z |
+| `anglo-latin` | Anglo-Latin: as a clerk in England read Latin around 1215 (approximate) | Magna Carta; the Saer de Quincy charters; Henry I's Charter of Liberties (relabeled for 1100) | soft c ts, soft g and j dʒ, h silent, v as v, s between vowels z |
 | `italian-humanist` | As first read: Latin in northern Italy in the 1480s (approximate) | Pico; Inter caetera | Italian vowels, soft c ch, gn ny, sc sh, ti ts, h silent, s between vowels z |
 | `low-countries` | As first read: Latin in the Low Countries around 1500 (approximate) | Erasmus | Dutch vowel values long in open syllables, u as Dutch uu, g a fricative, ch kh, ti ts |
 | `tudor-english` | As first read: Latin in England around 1516 (approximate) | More | English long values in stressed open syllables at an earlier stage of the Great Vowel Shift, ti as si |
@@ -526,11 +531,60 @@ inherits every choice in the normalization (manifest). The Gallehus runes surviv
 **What a specialist could improve.** The normalizations, with a named edition; the values of z and
 ʀ and of the fricatives in `runic.py`; a citation for the scheme as a whole.
 
+## Old Irish
+
+**Scheme.** `old-irish`, "Old Irish of the 9th century (reconstructed, approximate)". One scheme. Each
+consonant broad or slender by the vowel letters around it; after a vowel, single c t p are g d b and
+single b d g m are the fricatives β ð ɣ and nasal β̃; ch th ph are x θ f; initial and doubled l n r
+are the strong sounds L N R; nd is N; stress on the first syllable, or the first after a pretonic
+preverb; unstressed short vowels ə.
+
+**What it rests on.** Thurneysen, *A Grammar of Old Irish* (1946), and Stifter, *Sengoídelc* (2006)
+(module). Old Irish spelling does not write the lenition of b d g m, the nasalization of a vowel, the
+stress of a compound verb, or a division into words, so the sound is read from a normalized spelling
+in each token's `n`: long vowels marked, a dot for unwritten lenition (ṁenma), n- for nasalization,
+· after a pretonic preverb, a hyphen before an enclitic, a diaeresis for hiatus (ru·biäm). The
+normalization is Weft's, draft. In Pangur Bán every line counts seven syllables, as the metre
+(deibide) requires; a test holds the count.
+
+**Where it is weakest.** The quality of a consonant after e, the value of unstressed final vowels,
+and whether nd and mb were already n and m. Reading every unstressed short vowel as ə flattens
+distinctions the 9th-century spelling still keeps. The respelling does not show broad and slender.
+
+**What a specialist could improve.** The normalization of Pangur Bán, token by token; the
+treatment of unstressed vowels; the lenition of consonants after l and r, which the module applies
+to b d g m.
+
+## Middle Welsh
+
+**Scheme.** `middle-welsh`, "Middle Welsh of the 12th and 13th centuries, the language of the
+manuscripts (approximate)". One scheme. Stress on the last syllable but one; y clear (ɨ) in a final
+syllable and obscure (ə) before it, and in the proclitics; u a close rounded vowel (ʉ); ll ɬ, ch x,
+dd ð, f v, ff f; the nasal mutation (ngh, mh, nh) and rh voiceless; w and i consonants before a vowel
+where modern spelling has them so.
+
+**What it rests on.** D. Simon Evans, *A Grammar of Middle Welsh* (1964), and Morris-Jones, *A Welsh
+Grammar* (1913) (module). The manuscripts write the sounds inconsistently (u and v for v, d for both d
+and dd, t for d, gu for gw), so the sound is read from a normalized spelling in each token's `n`,
+written in modern Welsh letters with the word's medieval form kept (frein, neithiawr). The
+normalization is Weft's, draft.
+
+**Where it is weakest.** The value of u and of the diphthongs au and eu, which changed in this period;
+vowel length, not modeled; and the poems' composition in an older language than the manuscripts'.
+The Gododdin may be centuries older than its copy, with the stress then on the final syllable: the
+scheme reads the manuscript's Welsh, not the poet's, and says so.
+
+**What a specialist could improve.** The normalizations, token by token; a second scheme for Old
+Welsh (final stress, the older vowels) for the Gododdin and the oldest poems.
+
 ## Old English
 
 **Scheme.** `west-saxon`, "Late West Saxon, around the year 1000". One scheme. Stress on the first
 syllable of the root; ge-, be- and, on verbs, a-, for-, of-, on-, to-, un-, ymb- unstressed.
-Palatal c and g, sc, cg, voicing of f s þ between voiced sounds, and h by position.
+Palatal c and g, sc, cg, voicing of f s þ between voiced sounds, and h by position. be and ge
+before a or o are the root's diphthong (bearn, geard), not the prefix. Cædmon's Hymn relabels the
+scheme for its two copies: the Northumbrian copy of about 737 is read from its own words, respelled
+in the edition's `n` field in the letters the rules read (uard as ward, dryctin as dryhtin).
 
 **What it rests on.** Consonant rules after Mitchell and Robinson, *A Guide to Old English*
 (module). Vowel length comes from the edition's marks (Harrison and Sharp), corrected by
@@ -540,10 +594,14 @@ Dictionary*), then from the hand-annotated lemma, whose macrons carry over along
 
 **Where it is weakest.** Palatal c and g are inferred from spelling; an edition that dots them
 would remove the guess (manifest). Forms that diverge from their lemma before the last macron are
-reported `quantity-uncertain`. Compound stress relies on the editor's hyphens.
+reported `quantity-uncertain`. Compound stress relies on the editor's hyphens, and a hyphen also
+makes the second element begin as a word does (middan-geard has the y sound). The Northumbrian of
+Cædmon's Hymn is sounded by West Saxon rules: its words and endings are its own, its sound values
+are the later standard's.
 
 **What a specialist could improve.** The quantity table (three entries at present) and the prefix list;
-the palatalization rules in `oldenglish.py`; a second scheme, since none is offered.
+the palatalization rules in `oldenglish.py`; a second scheme, since none is offered; an early Northumbrian scheme for Cædmon's Hymn and the
+other 8th-century records.
 
 ## Old Norse
 

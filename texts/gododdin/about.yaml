@@ -1,0 +1,27 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: gododdin
+src: weft.about 0.1
+fetched: '2026-10-31'
+match: work
+wikipedia:
+  title: Y Gododdin
+  lang: en
+  revision: 1382150386
+  url: https://en.wikipedia.org/w/index.php?title=Y_Gododdin&oldid=1382150386
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Y Gododdin” (en.wikipedia.org, revision 1382150386), CC BY-SA
+    4.0
+  lead: 'Y Gododdin (Welsh: [əː ɡɔˈdɔðɪn]) is a medieval Welsh poem consisting of a series of elegies
+    to the men of the Brittonic kingdom of Gododdin and its allies who, according to the conventional
+    interpretation, died fighting the Angles of Deira and Bernicia at a place named Catraeth in about
+    AD 600. It is traditionally ascribed to the bard Aneirin and survives only in one manuscript, the
+    "Book of Aneirin".'
+wikidata:
+  id: Q430891
+  revision: 2490077170
+  license: CC0
+  description: poem by Aneirin
+  instance_of:
+  - id: Q7725634
+    label: literary work

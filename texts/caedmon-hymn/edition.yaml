@@ -1,0 +1,133 @@
+# Weft edition of Cædmon's Hymn in two copies, from English Wikisource (pinned in the manifest): the
+# Northumbrian text added to the Moore Bede (Cambridge University Library MS Kk.5.16, about
+# 737) and the West Saxon text of the Old English Bede in Bodleian MS Tanner 10 (10th century). Each
+# line is checked verbatim against its pinned page; verify_strip sets aside the page's templates.
+#
+# The vowel-length marks are the Wikisource transcriber's, not the scribes'. The Moore copy prints
+# āērist with two marks; the long vowel is the single sound ǣ, and the sound reads it so.
+#
+#   t        the word as printed, punctuation attached
+#   n        the form the sound is read from, where the Moore scribe's spelling differs from the
+#            letters the sound rules read: u and uu for w (uard, uundra), ae for æ, ct for ht
+#            (dryctin, the h sound before t), th for þ, d for þ in mōdgidanc, b for the v sound
+#            in heben. In the Tanner copy, the e that marks a palatal sc or g (sceōp, herigean)
+#            is left out of the form sounded. A hyphen in n marks a compound's boundary, as in
+#            Beowulf's edition, so the second element begins as a word does (middan-geard). The
+#            Northumbrian forms are otherwise kept: the sound is read from Cædmon's dialect's words
+#   caesura  this word begins the second half-line
+#
+# Lines are the poem's nine long lines in both copies; the two sections are the two copies.
+work: caedmon-hymn
+joiner: ' '
+verify_strip: \{\{[^{}]*\}\}|<[^>]+>|''
+sections:
+- id: moore
+  title: Northumbrian, the Moore Bede (about 737)
+  verify_in: sources/ws-moore.txt
+  lines:
+  - tokens:
+    - {t: Nū}
+    - {t: scylun}
+    - {t: hergan}
+    - {t: hefaenrīces, n: hefæn-rīces, caesura: true}
+    - {t: 'Uard,', n: ward}
+  - tokens:
+    - {t: Metudæs}
+    - {t: maecti, n: mæhti}
+    - {t: end, caesura: true}
+    - {t: his}
+    - {t: 'mōdgidanc,', n: mōd-giþanc}
+  - tokens:
+    - {t: uerc, n: werc}
+    - {t: 'Uuldurfadur,', n: wuldur-fadur}
+    - {t: suē, n: swē, caesura: true}
+    - {t: hē}
+    - {t: uundra, n: wundra}
+    - {t: 'gihuaes,', n: gihwæs}
+  - tokens:
+    - {t: ēci}
+    - {t: 'dryctin,', n: dryhtin}
+    - {t: ōr, caesura: true}
+    - {t: āstelidæ.}
+  - tokens:
+    - {t: Hē}
+    - {t: āērist, n: ǣrist}
+    - {t: scōp}
+    - {t: aelda, n: ælda, caesura: true}
+    - {t: barnum}
+  - tokens:
+    - {t: heben, n: hefen}
+    - {t: til}
+    - {t: 'hrōfe,'}
+    - {t: hāleg, caesura: true}
+    - {t: Scepen.}
+  - tokens:
+    - {t: Thā, n: þā}
+    - {t: middungeard, n: middun-geard}
+    - {t: moncynnæs, n: mon-cynnæs, caesura: true}
+    - {t: 'Uard,', n: ward}
+  - tokens:
+    - {t: ēci}
+    - {t: 'Dryctin,', n: dryhtin}
+    - {t: æfter, caesura: true}
+    - {t: tīadæ}
+  - tokens:
+    - {t: firum}
+    - {t: 'foldu,'}
+    - {t: Frēa, caesura: true}
+    - {t: allmectig., n: all-mehtig}
+- id: tanner
+  title: West Saxon, Bodleian MS Tanner 10 (10th century)
+  verify_in: sources/ws-tanner.txt
+  lines:
+  - tokens:
+    - {t: Nū}
+    - {t: sculon}
+    - {t: herigean, n: herigan}
+    - {t: heofonrīces, n: heofon-rīces, caesura: true}
+    - {t: 'Weard,'}
+  - tokens:
+    - {t: Meotedes}
+    - {t: meahte}
+    - {t: ond, caesura: true}
+    - {t: his}
+    - {t: 'mōdgeþanc,', n: mōd-geþanc}
+  - tokens:
+    - {t: weorc}
+    - {t: 'Wuldorfæder,', n: wuldor-fæder}
+    - {t: swā, caesura: true}
+    - {t: he, n: hē}
+    - {t: wundra}
+    - {t: 'gihwæs,'}
+  - tokens:
+    - {t: ēce}
+    - {t: 'Drihten,'}
+    - {t: ōr, caesura: true}
+    - {t: onstealde.}
+  - tokens:
+    - {t: Hē}
+    - {t: ǣrest}
+    - {t: sceōp, n: scōp}
+    - {t: eorðan, caesura: true}
+    - {t: bearnum}
+  - tokens:
+    - {t: heofon}
+    - {t: tō}
+    - {t: 'hrōfe,'}
+    - {t: hālig, caesura: true}
+    - {t: Scyppend.}
+  - tokens:
+    - {t: Þā}
+    - {t: middangeard, n: middan-geard}
+    - {t: moncynnes, n: mon-cynnes, caesura: true}
+    - {t: 'Weard,'}
+  - tokens:
+    - {t: ēce}
+    - {t: 'Drihten,'}
+    - {t: æfter, caesura: true}
+    - {t: tēode}
+  - tokens:
+    - {t: firum}
+    - {t: 'foldan,'}
+    - {t: Frēa, caesura: true}
+    - {t: ælmihtig., n: æl-mihtig}

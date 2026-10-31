@@ -1,0 +1,551 @@
+# Human overlay for Bede, Historia ecclesiastica I.15, Plummer's text of 1896 (Venerabilis Baedae Opera Historica, vol. 1).
+# No treebank covers Bede, so this file carries lemma and morphology too (rule 3 exception), hand-annotated and in draft.
+# Lemmas follow Lewis and Short under their classical headwords, written with v for consonantal u and i for consonantal i,
+# as the Res Gestae overlay does (venio, sive, iubeo, adiungo); Plummer's spellings (uera, sumsere, consumsit, puplica,
+# interemtos, inpar, conprehensi) stay in the surface and the lemma takes the headword. Peoples are lemmatized under the
+# nominative plural, as Lewis and Short enter them (Saxones, Picti, Chaldaei; Bede's Brittani and Brettones, Angli, Iutae,
+# Merci, Nordanhymbri); the Henry I overlay writes Anglus. Other names keep Bede's spelling in the nominative (Ualentinianus,
+# Uictgilsus, Uitta, Uecta, Uoden, Brittania, Cantia, Humber, Hierosolyma). Written in the compact spec and expanded by weft overlay.
+- by: "Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar"
+  date: "2026-10-31"
+  why: "whole chapter, 60 lines, 497 tokens; hand annotation, no treebank. Method: the reuse map of the Henry I, Magna Carta and Res Gestae overlays (weft overlay --reuse) supplied the frequent forms and their conventions (sum as AUX, non as PART with Polarity=Neg, a and e under ab and ex, ac under atque), then every line was read in context and the analysis written by hand; glosses were compared with A. M. Sellar's English of 1907 and follow the Latin where Sellar paraphrases (longis nauibus, manum fortiorem, fortioribus, populi Dei, inter altaria; the line notes say where). Lemmas and headwords are Lewis and Short's from memory, not checked against the printed dictionary in this session; the readings of praefato (praefor), suspecta (suspicio, active sense), aliquanto (aliquantus), Iutae for Bede's Iutarum, and the Latin forms of the numerals are judgments a reviewer should check. Deponent verbs (adipiscor, orior, protestor, prosequor) carry Voice=Pass, the morphology of the form; the numerals are lemmatized under the Latin ordinal or cardinal they stand for."
+  status: "draft"
+  set:
+    # bede.1.1: the numeral is read as the ablative ordinal agreeing with anno (quadringentesimo quadragesimo nono); the lemma names the ordinal, as the Res Gestae overlay does for its numerals
+    bede.1.1.1: {lemma: "annus", morph: "NOUN|Case=Abl|Gender=Masc|Number=Sing", gloss: "in-the-year"}   # Anno
+    bede.1.1.2: {lemma: "ab", morph: "ADP", gloss: "from"}   # ab
+    bede.1.1.3: {lemma: "incarnatio", morph: "NOUN|Case=Abl|Gender=Fem|Number=Sing", gloss: "the-incarnation"}   # incarnatione
+    bede.1.1.4: {lemma: "dominus", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-the-Lord"}   # Domini
+    bede.1.1.5: {lemma: "quadringentesimus quadragesimus nonus", morph: "NUM", gloss: "four-hundred-forty-ninth"}   # CCCCXLVIIII
+    # bede.1.2: XLVI agrees with Marcianus (the forty-sixth from Augustus); adeptus is the participle of a deponent and carries Voice=Pass, the morphology of the form
+    bede.1.2.1: {lemma: "Marcianus", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Marcian"}   # Marcianus
+    bede.1.2.2: {lemma: "cum", morph: "ADP", gloss: "with"}   # cum
+    bede.1.2.3: {lemma: "Ualentinianus", morph: "PROPN|Case=Abl|Gender=Masc|Number=Sing", gloss: "Valentinian"}   # Ualentiniano
+    bede.1.2.4: {lemma: "quadragesimus sextus", morph: "NUM", gloss: "forty-sixth"}   # XLVI
+    bede.1.2.5: {lemma: "ab", morph: "ADP", gloss: "from"}   # ab
+    bede.1.2.6: {lemma: "Augustus", morph: "PROPN|Case=Abl|Gender=Masc|Number=Sing", gloss: "Augustus"}   # Augusto
+    bede.1.2.7: {lemma: "regnum", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "the-rule"}   # regnum
+    bede.1.2.8: {lemma: "adipiscor", morph: "VERB|Aspect=Perf|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "having-gained"}   # adeptus
+    bede.1.2.9: {lemma: "septem", morph: "NUM", gloss: "seven"}   # VII
+    bede.1.2.10: {lemma: "annus", morph: "NOUN|Case=Abl|Gender=Masc|Number=Plur", gloss: "for-years"}   # annis
+    bede.1.2.11: {lemma: "teneo", morph: "VERB|Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Act", gloss: "held-it"}   # tenuit
+    # bede.1.3: praefatus is entered in Lewis and Short as the participle of praefor, used passively, 'aforesaid'; the king is Vortigern, named in I.14
+    bede.1.3.1: {lemma: "tunc", morph: "ADV", gloss: "then"}   # Tunc
+    bede.1.3.2: {lemma: "Angli", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-Angles"}   # Anglorum
+    bede.1.3.3: {lemma: "sive", morph: "CCONJ", gloss: "or"}   # siue
+    bede.1.3.4: {lemma: "Saxones", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-Saxons"}   # Saxonum
+    bede.1.3.5: {lemma: "gens", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "the-nation"}   # gens
+    bede.1.3.6: {lemma: "invito", morph: "VERB|Aspect=Perf|Case=Nom|Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "invited"}   # inuitata
+    bede.1.3.7: {lemma: "ab", morph: "ADP", gloss: "by"}   # a
+    bede.1.3.8: {lemma: "rex", morph: "NOUN|Case=Abl|Gender=Masc|Number=Sing", gloss: "the-king"}   # rege
+    bede.1.3.9: {lemma: "praefor", morph: "VERB|Aspect=Perf|Case=Abl|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "aforesaid"}   # praefato
+    # bede.1.4: Brittania is Bede's spelling; Lewis and Short enter the name as Britannia. longae naves are warships, which Sellar's 'ships of war' renders
+    bede.1.4.1: {lemma: "Brittania", morph: "PROPN|Case=Acc|Gender=Fem|Number=Sing", gloss: "to-Britain"}   # Brittaniam
+    bede.1.4.2: {lemma: "tres", morph: "NUM|Case=Abl|Gender=Fem|Number=Plur", gloss: "in-three"}   # tribus
+    bede.1.4.3: {lemma: "longus", morph: "ADJ|Case=Abl|Gender=Fem|Number=Plur", gloss: "long"}   # longis
+    bede.1.4.4: {lemma: "navis", morph: "NOUN|Case=Abl|Gender=Fem|Number=Plur", gloss: "ships"}   # nauibus
+    bede.1.4.5: {lemma: "adveho", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Pass", gloss: "is-carried"}   # aduehitur
+    bede.1.5.1: {lemma: "et", morph: "CCONJ", gloss: "and"}   # et
+    bede.1.5.2: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    bede.1.5.3: {lemma: "orientalis", morph: "ADJ|Case=Abl|Gender=Fem|Number=Sing", gloss: "the-eastern"}   # orientali
+    bede.1.5.4: {lemma: "pars", morph: "NOUN|Case=Abl|Gender=Fem|Number=Sing", gloss: "part"}   # parte
+    bede.1.5.5: {lemma: "insula", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "of-the-island"}   # insulae
+    bede.1.5.6: {lemma: "iubeo", morph: "VERB|Case=Abl|Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act", gloss: "at-the-order"}   # iubente
+    bede.1.5.7: {lemma: "idem", morph: "DET|Case=Abl|Gender=Masc|Number=Sing|PronType=Dem", gloss: "of-the-same"}   # eodem
+    bede.1.5.8: {lemma: "rex", morph: "NOUN|Case=Abl|Gender=Masc|Number=Sing", gloss: "king"}   # rege
+    bede.1.5.9: {lemma: "locus", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "a-place"}   # locum
+    bede.1.5.10: {lemma: "maneo", morph: "VERB|Case=Gen|VerbForm=Ger", gloss: "of-staying"}   # manendi
+    # bede.1.6: the future participles agree with gens (1.3); re autem uera, 'but in true fact', i.e. in reality; hanc is patriam, the island
+    bede.1.6.1: {lemma: "quasi", morph: "ADV", gloss: "as-if"}   # quasi
+    bede.1.6.2: {lemma: "pro", morph: "ADP", gloss: "for"}   # pro
+    bede.1.6.3: {lemma: "patria", morph: "NOUN|Case=Abl|Gender=Fem|Number=Sing", gloss: "the-homeland"}   # patria
+    bede.1.6.4: {lemma: "pugno", morph: "VERB|Case=Nom|Gender=Fem|Number=Sing|Tense=Fut|VerbForm=Part|Voice=Act", gloss: "about-to-fight"}   # pugnatura
+    bede.1.6.5: {lemma: "res", morph: "NOUN|Case=Abl|Gender=Fem|Number=Sing", gloss: "in-fact"}   # re
+    bede.1.6.6: {lemma: "autem", morph: "ADV", gloss: "but"}   # autem
+    bede.1.6.7: {lemma: "verus", morph: "ADJ|Case=Abl|Gender=Fem|Number=Sing", gloss: "true"}   # uera
+    bede.1.6.8: {lemma: "hic", morph: "PRON|Case=Acc|Gender=Fem|Number=Sing|PronType=Dem", gloss: "it"}   # hanc
+    bede.1.6.9: {lemma: "expugno", morph: "VERB|Case=Nom|Gender=Fem|Number=Sing|Tense=Fut|VerbForm=Part|Voice=Act", gloss: "about-to-conquer"}   # expugnatura
+    bede.1.6.10: {lemma: "suscipio", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Act", gloss: "receives"}   # suscipit
+    bede.1.7.1: {lemma: "ineo", morph: "VERB|Aspect=Perf|Case=Abl|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "joined"}   # Inito
+    bede.1.7.2: {lemma: "ergo", morph: "ADV", gloss: "so"}   # ergo
+    bede.1.7.3: {lemma: "certamen", morph: "NOUN|Case=Abl|Gender=Neut|Number=Sing", gloss: "the-battle"}   # certamine
+    bede.1.7.4: {lemma: "cum", morph: "ADP", gloss: "with"}   # cum
+    bede.1.7.5: {lemma: "hostis", morph: "NOUN|Case=Abl|Gender=Masc|Number=Plur", gloss: "the-enemy"}   # hostibus
+    bede.1.7.6: {lemma: "qui", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Rel", gloss: "who"}   # qui
+    bede.1.7.7: {lemma: "ab", morph: "ADP", gloss: "from"}   # ab
+    bede.1.7.8: {lemma: "aquilo", morph: "NOUN|Case=Abl|Gender=Masc|Number=Sing", gloss: "the-north"}   # aquilone
+    bede.1.7.9: {lemma: "ad", morph: "ADP", gloss: "to"}   # ad
+    bede.1.7.10: {lemma: "acies", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "battle"}   # aciem
+    bede.1.7.11: {lemma: "venio", morph: "VERB|Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Pqp|Voice=Act", gloss: "had-come"}   # uenerant
+    # bede.1.8: sumsere is Plummer's spelling of sumpsere, the perfect in -ere for -erunt
+    bede.1.8.1: {lemma: "victoria", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "the-victory"}   # uictoriam
+    bede.1.8.2: {lemma: "sumo", morph: "VERB|Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Past|Voice=Act", gloss: "took"}   # sumsere
+    bede.1.8.3: {lemma: "Saxones", morph: "PROPN|Case=Nom|Gender=Masc|Number=Plur", gloss: "the-Saxons"}   # Saxones
+    # bede.1.9: Quod is the connecting relative ('and when this'); the nominatives fertilitas and segnitia stand loosely as further subjects of nuntiatum est; domi is the locative
+    bede.1.9.1: {lemma: "qui", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Rel", gloss: "this"}   # Quod
+    bede.1.9.2: {lemma: "ubi", morph: "SCONJ", gloss: "when"}   # ubi
+    bede.1.9.3: {lemma: "domus", morph: "NOUN|Case=Loc|Gender=Fem|Number=Sing", gloss: "at-home"}   # domi
+    bede.1.9.4: {lemma: "nuntio", morph: "VERB|Aspect=Perf|Case=Nom|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "reported"}   # nuntiatum
+    bede.1.9.5: {lemma: "sum", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "was"}   # est
+    bede.1.9.6: {lemma: "simul", morph: "ADV", gloss: "at-the-same-time"}   # simul
+    bede.1.9.7: {lemma: "et", morph: "CCONJ", gloss: "both"}   # et
+    bede.1.9.8: {lemma: "insula", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "of-the-island"}   # insulae
+    bede.1.9.9: {lemma: "fertilitas", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "the-fertility"}   # fertilitas
+    bede.1.9.10: {lemma: "atque", morph: "CCONJ", gloss: "and"}   # ac
+    bede.1.9.11: {lemma: "segnitia", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "the-sloth"}   # segnitia
+    bede.1.9.12: {lemma: "Brettones", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-Britons"}   # Brettonum
+    # bede.1.10: armatorum is the participle of armo used as a noun; manum fortiorem is 'a stronger band', which Sellar gives as 'a greater number of men'
+    bede.1.10.1: {lemma: "mitto", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Pass", gloss: "is-sent"}   # mittitur
+    bede.1.10.2: {lemma: "confestim", morph: "ADV", gloss: "at-once"}   # confestim
+    bede.1.10.3: {lemma: "illo", morph: "ADV", gloss: "thither"}   # illo
+    bede.1.10.4: {lemma: "classis", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "a-fleet"}   # classis
+    bede.1.10.5: {lemma: "prolixus", morph: "ADJ|Case=Nom|Degree=Cmp|Gender=Fem|Number=Sing", gloss: "larger"}   # prolixior
+    bede.1.10.6: {lemma: "armo", morph: "VERB|Aspect=Perf|Case=Gen|Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "of-armed-men"}   # armatorum
+    bede.1.10.7: {lemma: "fero", morph: "VERB|Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act", gloss: "bearing"}   # ferens
+    bede.1.10.8: {lemma: "manus", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "a-band"}   # manum
+    bede.1.10.9: {lemma: "fortis", morph: "ADJ|Case=Acc|Degree=Cmp|Gender=Fem|Number=Sing", gloss: "stronger"}   # fortiorem
+    # bede.1.11: quae is manus (1.10)
+    bede.1.11.1: {lemma: "qui", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|PronType=Rel", gloss: "which"}   # quae
+    bede.1.11.2: {lemma: "praemitto", morph: "VERB|Aspect=Perf|Case=Dat|Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "to-the-one-sent-before"}   # praemissae
+    bede.1.11.3: {lemma: "adiungo", morph: "VERB|Aspect=Perf|Case=Nom|Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "joined"}   # adiuncta
+    bede.1.11.4: {lemma: "cohors", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "band"}   # cohorti
+    bede.1.11.5: {lemma: "invincibilis", morph: "ADJ|Case=Acc|Gender=Masc|Number=Sing", gloss: "invincible"}   # inuincibilem
+    bede.1.11.6: {lemma: "facio", morph: "VERB|Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Act", gloss: "made"}   # fecit
+    bede.1.11.7: {lemma: "exercitus", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "an-army"}   # exercitum
+    # bede.1.12: Brittani, Bede's spelling; Lewis and Short enter the people as Britanni. Bede uses both Brittani and Brettones in this chapter
+    bede.1.12.1: {lemma: "suscipio", morph: "VERB|Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Past|Voice=Act", gloss: "received"}   # Susceperunt
+    bede.1.12.2: {lemma: "ergo", morph: "ADV", gloss: "so"}   # ergo
+    bede.1.12.3: {lemma: "qui", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Rel", gloss: "those-who"}   # qui
+    bede.1.12.4: {lemma: "advenio", morph: "VERB|Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Pqp|Voice=Act", gloss: "had-come"}   # aduenerant
+    bede.1.12.5: {lemma: "dono", morph: "VERB|Case=Abl|Gender=Masc|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act", gloss: "granting-it"}   # donantibus
+    bede.1.12.6: {lemma: "Brittani", morph: "PROPN|Case=Abl|Gender=Masc|Number=Plur", gloss: "the-Britons"}   # Brittanis
+    bede.1.12.7: {lemma: "locus", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "a-place"}   # locum
+    bede.1.12.8: {lemma: "habitatio", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "of-dwelling"}   # habitationis
+    bede.1.12.9: {lemma: "inter", morph: "ADP", gloss: "among"}   # inter
+    bede.1.12.10: {lemma: "is", morph: "PRON|Case=Acc|Gender=Masc|Number=Plur|PronType=Prs", gloss: "them"}   # eos
+    # bede.1.13: hi are the newcomers, illi (1.14) the Britons
+    bede.1.13.1: {lemma: "is", morph: "DET|Case=Abl|Gender=Fem|Number=Sing|PronType=Dem", gloss: "on-that"}   # ea
+    bede.1.13.2: {lemma: "condicio", morph: "NOUN|Case=Abl|Gender=Fem|Number=Sing", gloss: "condition"}   # condicione
+    bede.1.13.3: {lemma: "ut", morph: "SCONJ", gloss: "that"}   # ut
+    bede.1.13.4: {lemma: "hic", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "these"}   # hi
+    bede.1.13.5: {lemma: "pro", morph: "ADP", gloss: "for"}   # pro
+    bede.1.13.6: {lemma: "patria", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "of-the-country"}   # patriae
+    bede.1.13.7: {lemma: "pax", morph: "NOUN|Case=Abl|Gender=Fem|Number=Sing", gloss: "the-peace"}   # pace
+    bede.1.13.8: {lemma: "et", morph: "CCONJ", gloss: "and"}   # et
+    bede.1.13.9: {lemma: "salus", morph: "NOUN|Case=Abl|Gender=Fem|Number=Sing", gloss: "safety"}   # salute
+    bede.1.13.10: {lemma: "contra", morph: "ADP", gloss: "against"}   # contra
+    bede.1.13.11: {lemma: "adversarius", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "the-enemies"}   # aduersarios
+    bede.1.13.12: {lemma: "milito", morph: "VERB|Aspect=Imp|Mood=Sub|Number=Plur|Person=3|Tense=Past|Voice=Act", gloss: "should-fight"}   # militarent
+    bede.1.14.1: {lemma: "ille", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Dem", gloss: "those"}   # illi
+    bede.1.14.2: {lemma: "milito", morph: "VERB|Case=Dat|Gender=Masc|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act", gloss: "to-those-fighting"}   # militantibus
+    bede.1.14.3: {lemma: "debeo", morph: "VERB|Aspect=Perf|Case=Acc|Gender=Neut|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "due"}   # debita
+    bede.1.14.4: {lemma: "stipendium", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "pay"}   # stipendia
+    bede.1.14.5: {lemma: "confero", morph: "VERB|Aspect=Imp|Mood=Sub|Number=Plur|Person=3|Tense=Past|Voice=Act", gloss: "should-furnish"}   # conferrent
+    # bede.2.1: fortioribus is comparative ('the stronger'); Sellar writes 'the three most powerful nations'. Iutae, not Iuti: the genitive Iutarum (2.2, 2.4, 2.9) is first declension
+    bede.2.1.1: {lemma: "advenio", morph: "VERB|Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Pqp|Voice=Act", gloss: "they-had-come"}   # Aduenerant
+    bede.2.1.2: {lemma: "autem", morph: "ADV", gloss: "now"}   # autem
+    bede.2.1.3: {lemma: "de", morph: "ADP", gloss: "from"}   # de
+    bede.2.1.4: {lemma: "tres", morph: "NUM|Case=Abl|Gender=Masc|Number=Plur", gloss: "three"}   # tribus
+    bede.2.1.5: {lemma: "Germania", morph: "PROPN|Case=Gen|Gender=Fem|Number=Sing", gloss: "of-Germany"}   # Germaniae
+    bede.2.1.6: {lemma: "populus", morph: "NOUN|Case=Abl|Gender=Masc|Number=Plur", gloss: "peoples"}   # populis
+    bede.2.1.7: {lemma: "fortis", morph: "ADJ|Case=Abl|Degree=Cmp|Gender=Masc|Number=Plur", gloss: "stronger"}   # fortioribus
+    bede.2.1.8: {lemma: "is", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # id
+    bede.2.1.9: {lemma: "sum", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # est
+    bede.2.1.10: {lemma: "Saxones", morph: "PROPN|Case=Abl|Gender=Masc|Number=Plur", gloss: "Saxons"}   # Saxonibus
+    bede.2.1.11: {lemma: "Angli", morph: "PROPN|Case=Abl|Gender=Masc|Number=Plur", gloss: "Angles"}   # Anglis
+    bede.2.1.12: {lemma: "Iutae", morph: "PROPN|Case=Abl|Gender=Masc|Number=Plur", gloss: "Jutes"}   # Iutis
+    bede.2.2.1: {lemma: "de", morph: "ADP", gloss: "from"}   # De
+    bede.2.2.2: {lemma: "Iutae", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-Jutes"}   # Iutarum
+    bede.2.2.3: {lemma: "origo", morph: "NOUN|Case=Abl|Gender=Fem|Number=Sing", gloss: "stock"}   # origine
+    bede.2.2.4: {lemma: "sum", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "are"}   # sunt
+    bede.2.2.5: {lemma: "Cantuarii", morph: "PROPN|Case=Nom|Gender=Masc|Number=Plur", gloss: "the-men-of-Kent"}   # Cantuarii
+    bede.2.2.6: {lemma: "et", morph: "CCONJ", gloss: "and"}   # et
+    bede.2.2.7: {lemma: "Uictuarii", morph: "PROPN|Case=Nom|Gender=Masc|Number=Plur", gloss: "the-men-of-Wight"}   # Uictuarii
+    # bede.2.3: Uecta here is the Isle of Wight (Vectis in the classical writers), not the ancestor Uecta of 2.16
+    bede.2.3.1: {lemma: "hic", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # hoc
+    bede.2.3.2: {lemma: "sum", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # est
+    bede.2.3.3: {lemma: "is", morph: "DET|Case=Nom|Gender=Fem|Number=Sing|PronType=Dem", gloss: "the"}   # ea
+    bede.2.3.4: {lemma: "gens", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "nation"}   # gens
+    bede.2.3.5: {lemma: "qui", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|PronType=Rel", gloss: "which"}   # quae
+    bede.2.3.6: {lemma: "Uecta", morph: "PROPN|Case=Acc|Gender=Fem|Number=Sing", gloss: "Wight"}   # Uectam
+    bede.2.3.7: {lemma: "teneo", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Act", gloss: "holds"}   # tenet
+    bede.2.3.8: {lemma: "insula", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "the-island"}   # insulam
+    # bede.2.4: ea is gens understood
+    bede.2.4.1: {lemma: "et", morph: "CCONJ", gloss: "and"}   # et
+    bede.2.4.2: {lemma: "is", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|PronType=Dem", gloss: "that"}   # ea
+    bede.2.4.3: {lemma: "qui", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|PronType=Rel", gloss: "which"}   # quae
+    bede.2.4.4: {lemma: "usque", morph: "ADV", gloss: "even"}   # usque
+    bede.2.4.5: {lemma: "hodie", morph: "ADV", gloss: "today"}   # hodie
+    bede.2.4.6: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    bede.2.4.7: {lemma: "provincia", morph: "NOUN|Case=Abl|Gender=Fem|Number=Sing", gloss: "the-province"}   # prouincia
+    bede.2.4.8: {lemma: "occidentalis", morph: "ADJ|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-West"}   # Occidentalium
+    bede.2.4.9: {lemma: "Saxones", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "Saxons"}   # Saxonum
+    bede.2.4.10: {lemma: "Iutae", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-Jutes"}   # Iutarum
+    bede.2.4.11: {lemma: "natio", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "nation"}   # natio
+    bede.2.4.12: {lemma: "nomino", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Pass", gloss: "is-called"}   # nominatur
+    bede.2.5.1: {lemma: "pono", morph: "VERB|Aspect=Perf|Case=Nom|Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "set"}   # posita
+    bede.2.5.2: {lemma: "contra", morph: "ADP", gloss: "opposite"}   # contra
+    bede.2.5.3: {lemma: "ipse", morph: "DET|Case=Acc|Gender=Fem|Number=Sing|PronType=Dem", gloss: "that-very"}   # ipsam
+    bede.2.5.4: {lemma: "insula", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "island"}   # insulam
+    bede.2.5.5: {lemma: "Uecta", morph: "PROPN|Case=Acc|Gender=Fem|Number=Sing", gloss: "of-Wight"}   # Uectam
+    bede.2.6.1: {lemma: "de", morph: "ADP", gloss: "from"}   # De
+    bede.2.6.2: {lemma: "Saxones", morph: "PROPN|Case=Abl|Gender=Masc|Number=Plur", gloss: "the-Saxons"}   # Saxonibus
+    bede.2.6.3: {lemma: "is", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # id
+    bede.2.6.4: {lemma: "sum", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # est
+    bede.2.6.5: {lemma: "is", morph: "DET|Case=Abl|Gender=Fem|Number=Sing|PronType=Dem", gloss: "that"}   # ea
+    bede.2.6.6: {lemma: "regio", morph: "NOUN|Case=Abl|Gender=Fem|Number=Sing", gloss: "region"}   # regione
+    bede.2.6.7: {lemma: "qui", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|PronType=Rel", gloss: "which"}   # quae
+    bede.2.6.8: {lemma: "nunc", morph: "ADV", gloss: "now"}   # nunc
+    bede.2.6.9: {lemma: "antiquus", morph: "ADJ|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-Old"}   # Antiquorum
+    bede.2.6.10: {lemma: "Saxones", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "Saxons"}   # Saxonum
+    bede.2.6.11: {lemma: "cognomino", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Pass", gloss: "is-named"}   # cognominatur
+    # bede.2.7: uenere is the perfect in -ere
+    bede.2.7.1: {lemma: "venio", morph: "VERB|Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Past|Voice=Act", gloss: "came"}   # uenere
+    bede.2.7.2: {lemma: "orientalis", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "the-East"}   # Orientales
+    bede.2.7.3: {lemma: "Saxones", morph: "PROPN|Case=Nom|Gender=Masc|Number=Plur", gloss: "Saxons"}   # Saxones
+    bede.2.7.4: {lemma: "meridianus", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "the-South"}   # Meridiani
+    bede.2.7.5: {lemma: "Saxones", morph: "PROPN|Case=Nom|Gender=Masc|Number=Plur", gloss: "Saxons"}   # Saxones
+    bede.2.7.6: {lemma: "occiduus", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "the-West"}   # Occidui
+    bede.2.7.7: {lemma: "Saxones", morph: "PROPN|Case=Nom|Gender=Masc|Number=Plur", gloss: "Saxons"}   # Saxones
+    # bede.2.8: Angulus, 'the corner', is Angeln; desertus (2.9) agrees with it
+    bede.2.8.1: {lemma: "porro", morph: "ADV", gloss: "further"}   # Porro
+    bede.2.8.2: {lemma: "de", morph: "ADP", gloss: "from"}   # de
+    bede.2.8.3: {lemma: "Angli", morph: "PROPN|Case=Abl|Gender=Masc|Number=Plur", gloss: "the-Angles"}   # Anglis
+    bede.2.8.4: {lemma: "hic", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # hoc
+    bede.2.8.5: {lemma: "sum", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # est
+    bede.2.8.6: {lemma: "de", morph: "ADP", gloss: "from"}   # de
+    bede.2.8.7: {lemma: "ille", morph: "DET|Case=Abl|Gender=Fem|Number=Sing|PronType=Dem", gloss: "that"}   # illa
+    bede.2.8.8: {lemma: "patria", morph: "NOUN|Case=Abl|Gender=Fem|Number=Sing", gloss: "country"}   # patria
+    bede.2.8.9: {lemma: "qui", morph: "PRON|Case=Nom|Gender=Fem|Number=Sing|PronType=Rel", gloss: "which"}   # quae
+    bede.2.8.10: {lemma: "Angulus", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Angulus"}   # Angulus
+    bede.2.8.11: {lemma: "dico", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Pass", gloss: "is-called"}   # dicitur
+    bede.2.9.1: {lemma: "et", morph: "CCONJ", gloss: "and"}   # et
+    bede.2.9.2: {lemma: "ab", morph: "ADP", gloss: "from"}   # ab
+    bede.2.9.3: {lemma: "is", morph: "DET|Case=Abl|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # eo
+    bede.2.9.4: {lemma: "tempus", morph: "NOUN|Case=Abl|Gender=Neut|Number=Sing", gloss: "time"}   # tempore
+    bede.2.9.5: {lemma: "usque", morph: "ADV", gloss: "even"}   # usque
+    bede.2.9.6: {lemma: "hodie", morph: "ADV", gloss: "today"}   # hodie
+    bede.2.9.7: {lemma: "maneo", morph: "VERB|Tense=Pres|VerbForm=Inf|Voice=Act", gloss: "to-remain"}   # manere
+    bede.2.9.8: {lemma: "desero", morph: "VERB|Aspect=Perf|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "deserted"}   # desertus
+    bede.2.9.9: {lemma: "inter", morph: "ADP", gloss: "between"}   # inter
+    bede.2.9.10: {lemma: "provincia", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "the-provinces"}   # prouincias
+    bede.2.9.11: {lemma: "Iutae", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-Jutes"}   # Iutarum
+    bede.2.9.12: {lemma: "et", morph: "CCONJ", gloss: "and"}   # et
+    bede.2.9.13: {lemma: "Saxones", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-Saxons"}   # Saxonum
+    bede.2.9.14: {lemma: "perhibeo", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Pass", gloss: "is-said"}   # perhibetur
+    # bede.2.10: Merci and Nordanhymbri are Bede's own Latin names, lemma as his nominative plural
+    bede.2.10.1: {lemma: "orientalis", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "the-East"}   # Orientales
+    bede.2.10.2: {lemma: "Angli", morph: "PROPN|Case=Nom|Gender=Masc|Number=Plur", gloss: "Angles"}   # Angli
+    bede.2.10.3: {lemma: "mediterraneus", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "the-Midland"}   # Mediterranei
+    bede.2.10.4: {lemma: "Angli", morph: "PROPN|Case=Nom|Gender=Masc|Number=Plur", gloss: "Angles"}   # Angli
+    bede.2.10.5: {lemma: "Merci", morph: "PROPN|Case=Nom|Gender=Masc|Number=Plur", gloss: "the-Mercians"}   # Merci
+    bede.2.10.6: {lemma: "totus", morph: "DET|Case=Nom|Gender=Fem|Number=Sing|PronType=Tot", gloss: "the-whole"}   # tota
+    bede.2.10.7: {lemma: "Nordanhymbri", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-Northumbrians"}   # Nordanhymbrorum
+    bede.2.10.8: {lemma: "progenies", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "race"}   # progenies
+    # bede.2.11: Boreas, the north wind, here the north; Humbri is the genitive of Humber (second declension in -er)
+    bede.2.11.1: {lemma: "is", morph: "PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem", gloss: "that"}   # id
+    bede.2.11.2: {lemma: "sum", morph: "AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "is"}   # est
+    bede.2.11.3: {lemma: "ille", morph: "DET|Case=Gen|Gender=Fem|Number=Plur|PronType=Dem", gloss: "of-those"}   # illarum
+    bede.2.11.4: {lemma: "gens", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "peoples"}   # gentium
+    bede.2.11.5: {lemma: "qui", morph: "PRON|Case=Nom|Gender=Fem|Number=Plur|PronType=Rel", gloss: "which"}   # quae
+    bede.2.11.6: {lemma: "ad", morph: "ADP", gloss: "to"}   # ad
+    bede.2.11.7: {lemma: "Boreas", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "the-north"}   # Boream
+    bede.2.11.8: {lemma: "Humber", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-the-Humber"}   # Humbri
+    bede.2.11.9: {lemma: "flumen", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "river"}   # fluminis
+    bede.2.11.10: {lemma: "inhabito", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|Voice=Act", gloss: "dwell"}   # inhabitant
+    # bede.2.12: the main verb of 2.8-2.12 is sunt orti: from the Angles are sprung the East Angles ... and the other peoples of the Angles
+    bede.2.12.1: {lemma: "ceterus", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "and-the-other"}   # ceterique
+    bede.2.12.2: {lemma: "Angli", morph: "PROPN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-Angles"}   # Anglorum
+    bede.2.12.3: {lemma: "populus", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "peoples"}   # populi
+    bede.2.12.4: {lemma: "sum", morph: "AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "have"}   # sunt
+    bede.2.12.5: {lemma: "orior", morph: "VERB|Aspect=Perf|Case=Nom|Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "sprung"}   # orti
+    bede.2.13.1: {lemma: "dux", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "leaders"}   # Duces
+    bede.2.13.2: {lemma: "sum", morph: "AUX|Aspect=Perf|Tense=Past|VerbForm=Inf", gloss: "to-have-been"}   # fuisse
+    bede.2.13.3: {lemma: "perhibeo", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|Voice=Pass", gloss: "are-said"}   # perhibentur
+    bede.2.13.4: {lemma: "is", morph: "PRON|Case=Gen|Gender=Masc|Number=Plur|PronType=Prs", gloss: "their"}   # eorum
+    bede.2.13.5: {lemma: "primus", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "first"}   # primi
+    bede.2.13.6: {lemma: "duo", morph: "NUM|Case=Nom|Gender=Masc|Number=Plur", gloss: "two"}   # duo
+    bede.2.13.7: {lemma: "frater", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "brothers"}   # fratres
+    bede.2.13.8: {lemma: "Hengist", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Hengist"}   # Hengist
+    bede.2.13.9: {lemma: "et", morph: "CCONJ", gloss: "and"}   # et
+    bede.2.13.10: {lemma: "Horsa", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Horsa"}   # Horsa
+    bede.2.14.1: {lemma: "ex", morph: "ADP", gloss: "of"}   # e
+    bede.2.14.2: {lemma: "qui", morph: "PRON|Case=Abl|Gender=Masc|Number=Plur|PronType=Rel", gloss: "whom"}   # quibus
+    bede.2.14.3: {lemma: "Horsa", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Horsa"}   # Horsa
+    bede.2.14.4: {lemma: "postea", morph: "ADV", gloss: "afterwards"}   # postea
+    bede.2.14.5: {lemma: "occido", morph: "VERB|Aspect=Perf|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "slain"}   # occisus
+    bede.2.14.6: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    bede.2.14.7: {lemma: "bellum", morph: "NOUN|Case=Abl|Gender=Neut|Number=Sing", gloss: "battle"}   # bello
+    bede.2.14.8: {lemma: "ab", morph: "ADP", gloss: "by"}   # a
+    bede.2.14.9: {lemma: "Brettones", morph: "PROPN|Case=Abl|Gender=Masc|Number=Plur", gloss: "the-Britons"}   # Brettonibus
+    # bede.2.15: monumentum ... suo nomine insigne, 'a monument marked with his name'
+    bede.2.15.1: {lemma: "hactenus", morph: "ADV", gloss: "to-this-day"}   # hactenus
+    bede.2.15.2: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    bede.2.15.3: {lemma: "orientalis", morph: "ADJ|Case=Abl|Gender=Fem|Number=Plur", gloss: "the-eastern"}   # orientalibus
+    bede.2.15.4: {lemma: "Cantia", morph: "PROPN|Case=Gen|Gender=Fem|Number=Sing", gloss: "of-Kent"}   # Cantiae
+    bede.2.15.5: {lemma: "pars", morph: "NOUN|Case=Abl|Gender=Fem|Number=Plur", gloss: "parts"}   # partibus
+    bede.2.15.6: {lemma: "monumentum", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "a-monument"}   # monumentum
+    bede.2.15.7: {lemma: "habeo", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Act", gloss: "has"}   # habet
+    bede.2.15.8: {lemma: "suus", morph: "DET|Case=Abl|Gender=Neut|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes", gloss: "by-his-own"}   # suo
+    bede.2.15.9: {lemma: "nomen", morph: "NOUN|Case=Abl|Gender=Neut|Number=Sing", gloss: "name"}   # nomine
+    bede.2.15.10: {lemma: "insignis", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "marked"}   # insigne
+    # bede.2.16: the verb (erat) is understood in each cuius pater clause
+    bede.2.16.1: {lemma: "sum", morph: "AUX|Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Past", gloss: "they-were"}   # Erant
+    bede.2.16.2: {lemma: "autem", morph: "ADV", gloss: "now"}   # autem
+    bede.2.16.3: {lemma: "filius", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "sons"}   # filii
+    bede.2.16.4: {lemma: "Uictgilsus", morph: "PROPN|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-Victgils"}   # Uictgilsi
+    bede.2.16.5: {lemma: "qui", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|PronType=Rel", gloss: "whose"}   # cuius
+    bede.2.16.6: {lemma: "pater", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "father"}   # pater
+    bede.2.16.7: {lemma: "Uitta", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Vitta"}   # Uitta
+    bede.2.16.8: {lemma: "qui", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|PronType=Rel", gloss: "whose"}   # cuius
+    bede.2.16.9: {lemma: "pater", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "father"}   # pater
+    bede.2.16.10: {lemma: "Uecta", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Vecta"}   # Uecta
+    bede.2.16.11: {lemma: "qui", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|PronType=Rel", gloss: "whose"}   # cuius
+    bede.2.16.12: {lemma: "pater", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "father"}   # pater
+    bede.2.16.13: {lemma: "Uoden", morph: "PROPN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Woden"}   # Uoden
+    bede.2.17.1: {lemma: "de", morph: "ADP", gloss: "from"}   # de
+    bede.2.17.2: {lemma: "qui", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|PronType=Rel", gloss: "whose"}   # cuius
+    bede.2.17.3: {lemma: "stirps", morph: "NOUN|Case=Abl|Gender=Fem|Number=Sing", gloss: "stock"}   # stirpe
+    bede.2.17.4: {lemma: "multus", morph: "ADJ|Case=Gen|Gender=Fem|Number=Plur", gloss: "of-many"}   # multarum
+    bede.2.17.5: {lemma: "provincia", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "provinces"}   # prouinciarum
+    bede.2.17.6: {lemma: "regius", morph: "ADJ|Case=Nom|Gender=Neut|Number=Sing", gloss: "royal"}   # regium
+    bede.2.17.7: {lemma: "genus", morph: "NOUN|Case=Nom|Gender=Neut|Number=Sing", gloss: "race"}   # genus
+    bede.2.17.8: {lemma: "origo", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "its-origin"}   # originem
+    bede.2.17.9: {lemma: "duco", morph: "VERB|Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Act", gloss: "drew"}   # duxit
+    # bede.3.1: Non mora, '(there was) no delay'; the ablative absolute is confluentibus ... cateruis
+    bede.3.1.1: {lemma: "non", morph: "PART|Polarity=Neg", gloss: "no"}   # Non
+    bede.3.1.2: {lemma: "mora", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "delay"}   # mora
+    bede.3.1.3: {lemma: "ergo", morph: "ADV", gloss: "then"}   # ergo
+    bede.3.1.4: {lemma: "confluo", morph: "VERB|Case=Abl|Gender=Fem|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act", gloss: "flocking"}   # confluentibus
+    bede.3.1.5: {lemma: "certatim", morph: "ADV", gloss: "eagerly"}   # certatim
+    bede.3.1.6: {lemma: "in", morph: "ADP", gloss: "into"}   # in
+    bede.3.1.7: {lemma: "insula", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "the-island"}   # insulam
+    bede.3.1.8: {lemma: "gens", morph: "NOUN|Case=Gen|Gender=Fem|Number=Plur", gloss: "of-the-nations"}   # gentium
+    bede.3.1.9: {lemma: "memoro", morph: "VERB|Aspect=Perf|Case=Gen|Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "aforementioned"}   # memoratarum
+    bede.3.1.10: {lemma: "caterva", morph: "NOUN|Case=Abl|Gender=Fem|Number=Plur", gloss: "bands"}   # cateruis
+    bede.3.2.1: {lemma: "grandesco", morph: "VERB|Tense=Pres|VerbForm=Inf|Voice=Act", gloss: "to-grow"}   # grandescere
+    bede.3.2.2: {lemma: "populus", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "the-host"}   # populus
+    bede.3.2.3: {lemma: "coepi", morph: "VERB|Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Act", gloss: "began"}   # coepit
+    bede.3.2.4: {lemma: "advena", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-newcomers"}   # aduenarum
+    # bede.3.3: essent terrori, the double dative: they were a terror to the very natives who had called them in
+    bede.3.3.1: {lemma: "ita", morph: "ADV", gloss: "so"}   # ita
+    bede.3.3.2: {lemma: "ut", morph: "SCONJ", gloss: "that"}   # ut
+    bede.3.3.3: {lemma: "ipse", morph: "DET|Case=Dat|Gender=Masc|Number=Plur|PronType=Dem", gloss: "to-the-very"}   # ipsis
+    bede.3.3.4: {lemma: "quoque", morph: "ADV", gloss: "also"}   # quoque
+    bede.3.3.5: {lemma: "qui", morph: "PRON|Case=Nom|Gender=Masc|Number=Plur|PronType=Rel", gloss: "who"}   # qui
+    bede.3.3.6: {lemma: "is", morph: "PRON|Case=Acc|Gender=Masc|Number=Plur|PronType=Prs", gloss: "them"}   # eos
+    bede.3.3.7: {lemma: "advoco", morph: "VERB|Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Pqp|Voice=Act", gloss: "had-called-in"}   # aduocauerant
+    bede.3.3.8: {lemma: "indigena", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "natives"}   # indigenis
+    bede.3.3.9: {lemma: "sum", morph: "AUX|Aspect=Imp|Mood=Sub|Number=Plur|Person=3|Tense=Past", gloss: "they-were"}   # essent
+    bede.3.3.10: {lemma: "terror", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "a-terror"}   # terrori
+    # bede.3.4: Sellar leaves out ad tempus ('for a time') and longius ('farther off')
+    bede.3.4.1: {lemma: "tum", morph: "ADV", gloss: "then"}   # Tum
+    bede.3.4.2: {lemma: "subito", morph: "ADV", gloss: "suddenly"}   # subito
+    bede.3.4.3: {lemma: "ineo", morph: "VERB|Aspect=Perf|Case=Abl|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "made"}   # inito
+    bede.3.4.4: {lemma: "ad", morph: "ADP", gloss: "for"}   # ad
+    bede.3.4.5: {lemma: "tempus", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "a-time"}   # tempus
+    bede.3.4.6: {lemma: "foedus", morph: "NOUN|Case=Abl|Gender=Neut|Number=Sing", gloss: "a-treaty"}   # foedere
+    bede.3.4.7: {lemma: "cum", morph: "ADP", gloss: "with"}   # cum
+    bede.3.4.8: {lemma: "Picti", morph: "PROPN|Case=Abl|Gender=Masc|Number=Plur", gloss: "the-Picts"}   # Pictis
+    bede.3.4.9: {lemma: "qui", morph: "PRON|Case=Acc|Gender=Masc|Number=Plur|PronType=Rel", gloss: "whom"}   # quos
+    bede.3.4.10: {lemma: "longe", morph: "ADV|Degree=Cmp", gloss: "farther"}   # longius
+    bede.3.4.11: {lemma: "iam", morph: "ADV", gloss: "by-now"}   # iam
+    bede.3.4.12: {lemma: "bello", morph: "VERB|Case=Abl|VerbForm=Ger", gloss: "by-fighting"}   # bellando
+    bede.3.4.13: {lemma: "pello", morph: "VERB|Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Pqp|Voice=Act", gloss: "they-had-driven"}   # pepulerant
+    bede.3.5.1: {lemma: "in", morph: "ADP", gloss: "against"}   # in
+    bede.3.5.2: {lemma: "socius", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "the-allies"}   # socios
+    bede.3.5.3: {lemma: "arma", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "arms"}   # arma
+    bede.3.5.4: {lemma: "verto", morph: "VERB|Tense=Pres|VerbForm=Inf|Voice=Act", gloss: "to-turn"}   # uertere
+    bede.3.5.5: {lemma: "incipio", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|Voice=Act", gloss: "they-begin"}   # incipiunt
+    bede.3.6.1: {lemma: "et", morph: "CCONJ", gloss: "and"}   # Et
+    bede.3.6.2: {lemma: "primum", morph: "ADV", gloss: "first"}   # primum
+    bede.3.6.3: {lemma: "quidem", morph: "ADV", gloss: "indeed"}   # quidem
+    bede.3.6.4: {lemma: "annona", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "provisions"}   # annonas
+    bede.3.6.5: {lemma: "sui", morph: "PRON|Case=Dat|PronType=Prs|Reflex=Yes", gloss: "to-themselves"}   # sibi
+    bede.3.6.6: {lemma: "is", morph: "PRON|Case=Acc|Gender=Masc|Number=Plur|PronType=Prs", gloss: "them"}   # eos
+    bede.3.6.7: {lemma: "affluenter", morph: "ADV|Degree=Cmp", gloss: "more-abundantly"}   # affluentius
+    bede.3.6.8: {lemma: "ministro", morph: "VERB|Tense=Pres|VerbForm=Inf|Voice=Act", gloss: "to-supply"}   # ministrare
+    bede.3.6.9: {lemma: "cogo", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|Voice=Act", gloss: "they-compel"}   # cogunt
+    # bede.3.7: protestor is deponent; Voice=Pass is the morphology of the form
+    bede.3.7.1: {lemma: "quaero", morph: "VERB|Case=Nom|Gender=Masc|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act", gloss: "and-seeking"}   # quaerentesque
+    bede.3.7.2: {lemma: "occasio", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "an-occasion"}   # occasionem
+    bede.3.7.3: {lemma: "divortium", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "of-a-break"}   # diuortii
+    bede.3.7.4: {lemma: "protestor", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|Voice=Pass", gloss: "they-declare"}   # protestantur
+    bede.3.8.1: {lemma: "nisi", morph: "SCONJ", gloss: "unless"}   # nisi
+    bede.3.8.2: {lemma: "profusus", morph: "ADJ|Case=Nom|Degree=Cmp|Gender=Fem|Number=Sing", gloss: "more-lavish"}   # profusior
+    bede.3.8.3: {lemma: "sui", morph: "PRON|Case=Dat|PronType=Prs|Reflex=Yes", gloss: "to-them"}   # sibi
+    bede.3.8.4: {lemma: "alimentum", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-food"}   # alimentorum
+    bede.3.8.5: {lemma: "copia", morph: "NOUN|Case=Nom|Gender=Fem|Number=Sing", gloss: "a-supply"}   # copia
+    bede.3.8.6: {lemma: "do", morph: "VERB|Aspect=Imp|Mood=Sub|Number=Sing|Person=3|Tense=Past|Voice=Pass", gloss: "were-given"}   # daretur
+    # bede.3.9: se ... uastaturos (esse), the future infinitive in indirect statement after protestantur (3.7); loca is the neuter plural of locus
+    bede.3.9.1: {lemma: "sui", morph: "PRON|Case=Acc|PronType=Prs|Reflex=Yes", gloss: "they"}   # se
+    bede.3.9.2: {lemma: "cunctus", morph: "ADJ|Case=Acc|Gender=Neut|Number=Plur", gloss: "all"}   # cuncta
+    bede.3.9.3: {lemma: "insula", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "of-the-island"}   # insulae
+    bede.3.9.4: {lemma: "locus", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "places"}   # loca
+    bede.3.9.5: {lemma: "rumpo", morph: "VERB|Aspect=Perf|Case=Abl|Gender=Neut|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "broken"}   # rupto
+    bede.3.9.6: {lemma: "foedus", morph: "NOUN|Case=Abl|Gender=Neut|Number=Sing", gloss: "the-treaty"}   # foedere
+    bede.3.9.7: {lemma: "vasto", morph: "VERB|Case=Acc|Gender=Masc|Number=Plur|Tense=Fut|VerbForm=Part|Voice=Act", gloss: "would-lay-waste"}   # uastaturos
+    # bede.3.10: 'nor were they any slower to follow up their threats with deeds'; prosequor is deponent
+    bede.3.10.1: {lemma: "neque", morph: "CCONJ", gloss: "nor"}   # Neque
+    bede.3.10.2: {lemma: "aliquantus", morph: "ADJ|Case=Abl|Gender=Neut|Number=Sing", gloss: "by-a-little"}   # aliquanto
+    bede.3.10.3: {lemma: "segniter", morph: "ADV|Degree=Cmp", gloss: "more-slowly"}   # segnius
+    bede.3.10.4: {lemma: "minae", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "threats"}   # minas
+    bede.3.10.5: {lemma: "effectus", morph: "NOUN|Case=Abl|Gender=Masc|Number=Plur", gloss: "with-deeds"}   # effectibus
+    bede.3.10.6: {lemma: "prosequor", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres|Voice=Pass", gloss: "they-follow-up"}   # prosequuntur
+    bede.3.11.1: {lemma: "siquidem", morph: "ADV", gloss: "for-indeed"}   # Siquidem
+    bede.3.11.2: {lemma: "ut", morph: "SCONJ", gloss: "to"}   # ut
+    bede.3.11.3: {lemma: "breviter", morph: "ADV", gloss: "briefly"}   # breuiter
+    bede.3.11.4: {lemma: "dico", morph: "VERB|Mood=Sub|Number=Sing|Person=1|Tense=Pres|Voice=Act", gloss: "speak"}   # dicam
+    bede.3.11.5: {lemma: "accendo", morph: "VERB|Aspect=Perf|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "kindled"}   # accensus
+    bede.3.11.6: {lemma: "manus", morph: "NOUN|Case=Abl|Gender=Fem|Number=Plur", gloss: "by-the-hands"}   # manibus
+    bede.3.11.7: {lemma: "paganus", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-the-pagans"}   # paganorum
+    bede.3.11.8: {lemma: "ignis", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "the-fire"}   # ignis
+    # bede.3.12: Dei goes with populi, 'the people of God'; Sellar's 'God's just vengeance for the crimes of the people' attaches it to the vengeance
+    bede.3.12.1: {lemma: "iustus", morph: "ADJ|Case=Acc|Gender=Fem|Number=Plur", gloss: "just"}   # iustas
+    bede.3.12.2: {lemma: "de", morph: "ADP", gloss: "for"}   # de
+    bede.3.12.3: {lemma: "scelus", morph: "NOUN|Case=Abl|Gender=Neut|Number=Plur", gloss: "the-crimes"}   # sceleribus
+    bede.3.12.4: {lemma: "populus", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-the-people"}   # populi
+    bede.3.12.5: {lemma: "deus", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-God"}   # Dei
+    bede.3.12.6: {lemma: "ultio", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "vengeances"}   # ultiones
+    bede.3.12.7: {lemma: "expeto", morph: "VERB|Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Act", gloss: "exacted"}   # expetiit
+    # bede.3.13: inpar is Plummer's spelling of impar; non illius inpar, 'not unlike that (fire)'
+    bede.3.13.1: {lemma: "non", morph: "PART|Polarity=Neg", gloss: "not"}   # non
+    bede.3.13.2: {lemma: "ille", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|PronType=Dem", gloss: "that"}   # illius
+    bede.3.13.3: {lemma: "impar", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "unlike"}   # inpar
+    bede.3.13.4: {lemma: "qui", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Rel", gloss: "which"}   # qui
+    bede.3.13.5: {lemma: "quondam", morph: "ADV", gloss: "once"}   # quondam
+    bede.3.13.6: {lemma: "ab", morph: "ADP", gloss: "by"}   # a
+    bede.3.13.7: {lemma: "Chaldaei", morph: "PROPN|Case=Abl|Gender=Masc|Number=Plur", gloss: "the-Chaldaeans"}   # Chaldaeis
+    bede.3.13.8: {lemma: "succendo", morph: "VERB|Aspect=Perf|Case=Nom|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "kindled"}   # succensus
+    # bede.3.14: Hierosolyma, -orum, the neuter plural form of the name; consumsit is Plummer's spelling of consumpsit
+    bede.3.14.1: {lemma: "Hierosolyma", morph: "PROPN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-Jerusalem"}   # Hierosolymorum
+    bede.3.14.2: {lemma: "moenia", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "the-walls"}   # moenia
+    bede.3.14.3: {lemma: "immo", morph: "ADV", gloss: "nay-rather"}   # immo
+    bede.3.14.4: {lemma: "aedificium", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "buildings"}   # aedificia
+    bede.3.14.5: {lemma: "cunctus", morph: "ADJ|Case=Acc|Gender=Neut|Number=Plur", gloss: "all"}   # cuncta
+    bede.3.14.6: {lemma: "consumo", morph: "VERB|Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Act", gloss: "consumed"}   # consumsit
+    # bede.3.15: et is adverbial here ('here too'); Sellar renders impio as 'pitiless'
+    bede.3.15.1: {lemma: "sic", morph: "ADV", gloss: "so"}   # Sic
+    bede.3.15.2: {lemma: "enim", morph: "ADV", gloss: "for"}   # enim
+    bede.3.15.3: {lemma: "et", morph: "ADV", gloss: "also"}   # et
+    bede.3.15.4: {lemma: "hic", morph: "ADV", gloss: "here"}   # hic
+    bede.3.15.5: {lemma: "ago", morph: "VERB|Case=Abl|Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act", gloss: "acting"}   # agente
+    bede.3.15.6: {lemma: "impius", morph: "ADJ|Case=Abl|Gender=Masc|Number=Sing", gloss: "the-impious"}   # impio
+    bede.3.15.7: {lemma: "victor", morph: "NOUN|Case=Abl|Gender=Masc|Number=Sing", gloss: "conqueror"}   # uictore
+    bede.3.15.8: {lemma: "immo", morph: "ADV", gloss: "nay-rather"}   # immo
+    bede.3.15.9: {lemma: "dispono", morph: "VERB|Case=Abl|Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act", gloss: "ordering-it"}   # disponente
+    bede.3.15.10: {lemma: "iustus", morph: "ADJ|Case=Abl|Gender=Masc|Number=Sing", gloss: "the-just"}   # iusto
+    bede.3.15.11: {lemma: "iudex", morph: "NOUN|Case=Abl|Gender=Masc|Number=Sing", gloss: "Judge"}   # Iudice
+    # bede.3.16: proximas quasque, 'all the nearest, one after another'; depopulans agrees with ignis (3.11); depopulor is deponent, but the present participle is active in form
+    bede.3.16.1: {lemma: "proximus", morph: "ADJ|Case=Acc|Gender=Fem|Number=Plur", gloss: "the-nearest"}   # proximas
+    bede.3.16.2: {lemma: "quisque", morph: "DET|Case=Acc|Gender=Fem|Number=Plur|PronType=Tot", gloss: "each"}   # quasque
+    bede.3.16.3: {lemma: "civitas", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "cities"}   # ciuitates
+    bede.3.16.4: {lemma: "ager", morph: "NOUN|Case=Acc|Gender=Masc|Number=Plur", gloss: "and-fields"}   # agrosque
+    bede.3.16.5: {lemma: "depopulor", morph: "VERB|Case=Nom|Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act", gloss: "laying-waste"}   # depopulans
+    bede.3.17.1: {lemma: "ab", morph: "ADP", gloss: "from"}   # ab
+    bede.3.17.2: {lemma: "orientalis", morph: "ADJ|Case=Abl|Gender=Neut|Number=Sing", gloss: "the-eastern"}   # orientali
+    bede.3.17.3: {lemma: "mare", morph: "NOUN|Case=Abl|Gender=Neut|Number=Sing", gloss: "sea"}   # mari
+    bede.3.17.4: {lemma: "usque", morph: "ADV", gloss: "all-the-way"}   # usque
+    bede.3.17.5: {lemma: "ad", morph: "ADP", gloss: "to"}   # ad
+    bede.3.17.6: {lemma: "occidentalis", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "the-western"}   # occidentale
+    bede.3.17.7: {lemma: "nullus", morph: "DET|Case=Abl|Gender=Masc|Number=Sing|PronType=Neg", gloss: "no-one"}   # nullo
+    bede.3.17.8: {lemma: "prohibeo", morph: "VERB|Case=Abl|Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act", gloss: "preventing-it"}   # prohibente
+    bede.3.18.1: {lemma: "suus", morph: "DET|Case=Acc|Gender=Neut|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes", gloss: "its"}   # suum
+    bede.3.18.2: {lemma: "continuo", morph: "VERB|Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Act", gloss: "carried-on"}   # continuauit
+    bede.3.18.3: {lemma: "incendium", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "burning"}   # incendium
+    bede.3.18.4: {lemma: "totus", morph: "DET|Case=Acc|Gender=Fem|Number=Sing|PronType=Tot", gloss: "and-the-whole"}   # totamque
+    bede.3.18.5: {lemma: "prope", morph: "ADV", gloss: "almost"}   # prope
+    bede.3.18.6: {lemma: "insula", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "of-the-island"}   # insulae
+    bede.3.18.7: {lemma: "pereo", morph: "VERB|Case=Gen|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act", gloss: "perishing"}   # pereuntis
+    bede.3.18.8: {lemma: "superficies", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "surface"}   # superficiem
+    bede.3.18.9: {lemma: "obtego", morph: "VERB|Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Act", gloss: "covered"}   # obtexit
+    # bede.3.19: puplica is Plummer's spelling of publica
+    bede.3.19.1: {lemma: "ruo", morph: "VERB|Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Past|Voice=Act", gloss: "fell"}   # Ruebant
+    bede.3.19.2: {lemma: "aedificium", morph: "NOUN|Case=Nom|Gender=Neut|Number=Plur", gloss: "buildings"}   # aedificia
+    bede.3.19.3: {lemma: "publicus", morph: "ADJ|Case=Nom|Gender=Neut|Number=Plur", gloss: "public"}   # puplica
+    bede.3.19.4: {lemma: "simul", morph: "ADV", gloss: "alike"}   # simul
+    bede.3.19.5: {lemma: "et", morph: "CCONJ", gloss: "and"}   # et
+    bede.3.19.6: {lemma: "privatus", morph: "ADJ|Case=Nom|Gender=Neut|Number=Plur", gloss: "private"}   # priuata
+    # bede.3.20: inter altaria, 'among the altars'; Sellar has 'before the altars'
+    bede.3.20.1: {lemma: "passim", morph: "ADV", gloss: "everywhere"}   # passim
+    bede.3.20.2: {lemma: "sacerdos", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "priests"}   # sacerdotes
+    bede.3.20.3: {lemma: "inter", morph: "ADP", gloss: "among"}   # inter
+    bede.3.20.4: {lemma: "altare", morph: "NOUN|Case=Acc|Gender=Neut|Number=Plur", gloss: "the-altars"}   # altaria
+    bede.3.20.5: {lemma: "trucido", morph: "VERB|Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Past|Voice=Pass", gloss: "were-slaughtered"}   # trucidabantur
+    # bede.3.21: sine ullo respectu honoris, 'without any regard for their rank'
+    bede.3.21.1: {lemma: "praesul", morph: "NOUN|Case=Nom|Gender=Masc|Number=Plur", gloss: "prelates"}   # praesules
+    bede.3.21.2: {lemma: "cum", morph: "ADP", gloss: "with"}   # cum
+    bede.3.21.3: {lemma: "populus", morph: "NOUN|Case=Abl|Gender=Masc|Number=Plur", gloss: "the-people"}   # populis
+    bede.3.21.4: {lemma: "sine", morph: "ADP", gloss: "without"}   # sine
+    bede.3.21.5: {lemma: "ullus", morph: "DET|Case=Abl|Gender=Masc|Number=Sing|PronType=Ind", gloss: "any"}   # ullo
+    bede.3.21.6: {lemma: "respectus", morph: "NOUN|Case=Abl|Gender=Masc|Number=Sing", gloss: "regard"}   # respectu
+    bede.3.21.7: {lemma: "honor", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "for-rank"}   # honoris
+    bede.3.21.8: {lemma: "ferrum", morph: "NOUN|Case=Abl|Gender=Neut|Number=Sing", gloss: "by-sword"}   # ferro
+    bede.3.21.9: {lemma: "pariter", morph: "ADV", gloss: "alike"}   # pariter
+    bede.3.21.10: {lemma: "et", morph: "CCONJ", gloss: "and"}   # et
+    bede.3.21.11: {lemma: "flamma", morph: "NOUN|Case=Abl|Gender=Fem|Number=Plur", gloss: "flames"}   # flammis
+    bede.3.21.12: {lemma: "absumo", morph: "VERB|Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Past|Voice=Pass", gloss: "were-destroyed"}   # absumebantur
+    # bede.3.22: interemtos is Plummer's spelling of interemptos
+    bede.3.22.1: {lemma: "nec", morph: "CCONJ", gloss: "nor"}   # nec
+    bede.3.22.2: {lemma: "sum", morph: "AUX|Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was-there-anyone"}   # erat
+    bede.3.22.3: {lemma: "qui", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|PronType=Rel", gloss: "who"}   # qui
+    bede.3.22.4: {lemma: "crudeliter", morph: "ADV", gloss: "cruelly"}   # crudeliter
+    bede.3.22.5: {lemma: "interimo", morph: "VERB|Aspect=Perf|Case=Acc|Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "slain"}   # interemtos
+    bede.3.22.6: {lemma: "sepultura", morph: "NOUN|Case=Dat|Gender=Fem|Number=Sing", gloss: "to-burial"}   # sepulturae
+    bede.3.22.7: {lemma: "trado", morph: "VERB|Aspect=Imp|Mood=Sub|Number=Sing|Person=3|Tense=Past|Voice=Act", gloss: "might-give"}   # traderet
+    # bede.3.23: miserandis is the gerundive of miseror, 'to be pitied'; conprehensi is Plummer's spelling of comprehensi
+    bede.3.23.1: {lemma: "itaque", morph: "ADV", gloss: "and-so"}   # Itaque
+    bede.3.23.2: {lemma: "nonnullus", morph: "DET|Case=Nom|Gender=Masc|Number=Plur|PronType=Ind", gloss: "some"}   # nonnulli
+    bede.3.23.3: {lemma: "de", morph: "ADP", gloss: "of"}   # de
+    bede.3.23.4: {lemma: "miseror", morph: "VERB|Case=Abl|Gender=Fem|Number=Plur|VerbForm=Gdv", gloss: "wretched"}   # miserandis
+    bede.3.23.5: {lemma: "reliquiae", morph: "NOUN|Case=Abl|Gender=Fem|Number=Plur", gloss: "remnants"}   # reliquiis
+    bede.3.23.6: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    bede.3.23.7: {lemma: "mons", morph: "NOUN|Case=Abl|Gender=Masc|Number=Plur", gloss: "the-mountains"}   # montibus
+    bede.3.23.8: {lemma: "comprehendo", morph: "VERB|Aspect=Perf|Case=Nom|Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "caught"}   # conprehensi
+    bede.3.23.9: {lemma: "acervatim", morph: "ADV", gloss: "in-heaps"}   # aceruatim
+    bede.3.23.10: {lemma: "iugulo", morph: "VERB|Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Past|Voice=Pass", gloss: "were-butchered"}   # iugulabantur
+    # bede.3.24: manus dare, 'to give the hands', to surrender
+    bede.3.24.1: {lemma: "alius", morph: "DET|Case=Nom|Gender=Masc|Number=Plur|PronType=Ind", gloss: "others"}   # alii
+    bede.3.24.2: {lemma: "fames", morph: "NOUN|Case=Abl|Gender=Fem|Number=Sing", gloss: "by-hunger"}   # fame
+    bede.3.24.3: {lemma: "conficio", morph: "VERB|Aspect=Perf|Case=Nom|Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "worn-out"}   # confecti
+    bede.3.24.4: {lemma: "procedo", morph: "VERB|Case=Nom|Gender=Masc|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act", gloss: "coming-forth"}   # procedentes
+    bede.3.24.5: {lemma: "manus", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "their-hands"}   # manus
+    bede.3.24.6: {lemma: "hostis", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "to-the-enemy"}   # hostibus
+    bede.3.24.7: {lemma: "do", morph: "VERB|Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Past|Voice=Act", gloss: "gave"}   # dabant
+    # bede.3.25: pro accipiendis ... subsidiis, the gerundive construction, 'for the receiving of supplies of food'
+    bede.3.25.1: {lemma: "pro", morph: "ADP", gloss: "for"}   # pro
+    bede.3.25.2: {lemma: "accipio", morph: "VERB|Case=Abl|Gender=Neut|Number=Plur|VerbForm=Gdv", gloss: "receiving"}   # accipiendis
+    bede.3.25.3: {lemma: "alimentum", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-food"}   # alimentorum
+    bede.3.25.4: {lemma: "subsidium", morph: "NOUN|Case=Abl|Gender=Neut|Number=Plur", gloss: "supplies"}   # subsidiis
+    bede.3.25.5: {lemma: "aeternus", morph: "ADJ|Case=Acc|Gender=Neut|Number=Sing", gloss: "everlasting"}   # aeternum
+    bede.3.25.6: {lemma: "subeo", morph: "VERB|Case=Nom|Gender=Masc|Number=Plur|Tense=Fut|VerbForm=Part|Voice=Act", gloss: "ready-to-undergo"}   # subituri
+    bede.3.25.7: {lemma: "servitium", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "servitude"}   # seruitium
+    bede.3.26.1: {lemma: "si", morph: "SCONJ", gloss: "if"}   # si
+    bede.3.26.2: {lemma: "tamen", morph: "ADV", gloss: "only"}   # tamen
+    bede.3.26.3: {lemma: "non", morph: "PART|Polarity=Neg", gloss: "not"}   # non
+    bede.3.26.4: {lemma: "continuo", morph: "ADV", gloss: "at-once"}   # continuo
+    bede.3.26.5: {lemma: "trucido", morph: "VERB|Aspect=Imp|Mood=Sub|Number=Plur|Person=3|Tense=Past|Voice=Pass", gloss: "they-were-slaughtered"}   # trucidarentur
+    bede.3.27.1: {lemma: "alius", morph: "DET|Case=Nom|Gender=Masc|Number=Plur|PronType=Ind", gloss: "others"}   # alii
+    bede.3.27.2: {lemma: "transmarinus", morph: "ADJ|Case=Acc|Gender=Fem|Number=Plur", gloss: "overseas"}   # transmarinas
+    bede.3.27.3: {lemma: "regio", morph: "NOUN|Case=Acc|Gender=Fem|Number=Plur", gloss: "regions"}   # regiones
+    bede.3.27.4: {lemma: "doleo", morph: "VERB|Case=Nom|Gender=Masc|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act", gloss: "grieving"}   # dolentes
+    bede.3.27.5: {lemma: "peto", morph: "VERB|Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Past|Voice=Act", gloss: "sought"}   # petebant
+    # bede.3.28: Sellar's 'a miserable life' is pauperem uitam, 'a poor life'
+    bede.3.28.1: {lemma: "alius", morph: "DET|Case=Nom|Gender=Masc|Number=Plur|PronType=Ind", gloss: "others"}   # alii
+    bede.3.28.2: {lemma: "persto", morph: "VERB|Case=Nom|Gender=Masc|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act", gloss: "holding-on"}   # perstantes
+    bede.3.28.3: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    bede.3.28.4: {lemma: "patria", morph: "NOUN|Case=Abl|Gender=Fem|Number=Sing", gloss: "the-homeland"}   # patria
+    bede.3.28.5: {lemma: "trepidus", morph: "ADJ|Case=Nom|Gender=Masc|Number=Plur", gloss: "fearful"}   # trepidi
+    bede.3.28.6: {lemma: "pauper", morph: "ADJ|Case=Acc|Gender=Fem|Number=Sing", gloss: "a-poor"}   # pauperem
+    bede.3.28.7: {lemma: "vita", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "life"}   # uitam
+    # bede.3.29: suspecta is the participle of suspicio ('look up at, suspect') in the active sense 'apprehensive', 'with a mind ever full of fear'; a judgment
+    bede.3.29.1: {lemma: "in", morph: "ADP", gloss: "in"}   # in
+    bede.3.29.2: {lemma: "mons", morph: "NOUN|Case=Abl|Gender=Masc|Number=Plur", gloss: "mountains"}   # montibus
+    bede.3.29.3: {lemma: "silva", morph: "NOUN|Case=Abl|Gender=Fem|Number=Plur", gloss: "woods"}   # siluis
+    bede.3.29.4: {lemma: "vel", morph: "CCONJ", gloss: "or"}   # uel
+    bede.3.29.5: {lemma: "rupes", morph: "NOUN|Case=Abl|Gender=Fem|Number=Plur", gloss: "crags"}   # rupibus
+    bede.3.29.6: {lemma: "arduus", morph: "ADJ|Case=Abl|Gender=Fem|Number=Plur", gloss: "steep"}   # arduis
+    bede.3.29.7: {lemma: "suspicio", morph: "VERB|Aspect=Perf|Case=Abl|Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass", gloss: "apprehensive"}   # suspecta
+    bede.3.29.8: {lemma: "semper", morph: "ADV", gloss: "always"}   # semper
+    bede.3.29.9: {lemma: "mens", morph: "NOUN|Case=Abl|Gender=Fem|Number=Sing", gloss: "in-mind"}   # mente
+    bede.3.29.10: {lemma: "ago", morph: "VERB|Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Past|Voice=Act", gloss: "they-led"}   # agebant

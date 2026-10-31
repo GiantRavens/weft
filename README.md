@@ -128,11 +128,18 @@ Eighty-two works built across twenty-eight languages, oldest first in the librar
 | The golden horn of Gallehus (DR 12) | the maker's inscription, about 400 | Proto-Norse | Stephens 1884; Weft editorial reading |
 | The Rök runestone (Ög 136) | the opening, about 800 | Old East Norse | Stephens 1884; Weft editorial reading |
 | Beowulf | 1-11 | late West Saxon | Gummere 1910, Morris and Wyatt 1895 |
+| Cædmon's Hymn | complete, in two copies: the Northumbrian of the Moore Bede (about 737) and the West Saxon of Tanner 10 (10th century) | Old English, each copy in its own dialect | Brooke 1898 (Northumbrian copy), Weft editorial (draft) |
+| Pangur Bán | complete, eight quatrains: the scholar and his cat (Reichenau Primer, 9th century) | Old Irish (reconstructed, approximate) | Flower 1912, Meyer 1911, Stokes and Strachan 1903 |
+| Y Gododdin | 4 stanzas: I, VIII and X, and the Arthur stanza | Middle Welsh of the manuscript (approximate) | Evans 1868 |
+| Pa gur yv y porthaur | complete as it survives, 88 lines: Arthur, Cai and the gatekeeper | Middle Welsh (approximate) | Evans 1868 |
+| Preiddeu Annwn | complete, 60 lines: Arthur's raid on the otherworld | Middle Welsh (approximate) | Williams 1868 |
 | Rubaiyat, quatrains attributed to Omar Khayyam | 6 quatrains | Early New Persian (about 1100), modern Persian | FitzGerald 1889, Heron-Allen 1899 |
 | Marco Polo, on Cipangu (Japan) | the whole chapter, F text | Franco-Italian: French of about 1300, and an Italian reader's reading | Yule 1903, Marsden 1818 |
+| Bede, Ecclesiastical History of the English People, book I, chapter 15 | the whole chapter: the coming of the Saxons in 449, the three peoples (Saxons, Angles, Jutes) and the turn against the Britons (731), in Plummer's text | Latin of 8th-century Northumbria, read with the classical values (approximate); ecclesiastical | Sellar 1907 |
 | Bayeux Tapestry, the embroidered captions | complete: every caption, scenes 1 to 58; a picture of each scene | Anglo-Norman Latin (about 1070), classical | Fowke 1898, Bruce 1856 (partial) |
 | The Rus' Primary Chronicle: the calling of the Varangians | annals 859-862 | Old East Slavic about 1100 (approximate), modern Russian reading | Cross 1930; Cross and Sherbowitz-Wetzor 1953 cited |
 | The charters of Saer de Quincy, earl of Winchester | two grants: Gask to Brackley Hospital (1218-19) and Duglyn to Cambuskenneth (c. 1207-14) | Anglo-Latin (England, early 13th c.), classical | the 1908 and 1872 editors' English abstracts, Weft editorial |
+| Charter of Liberties of Henry I | complete: the Worcestershire copy's address, fourteen chapters, witnesses (1100) | Anglo-Latin (England, 1100), classical | Cheyney 1901 (chapters 1-14), Weft editorial (address and witnesses) |
 | Magna Carta | chapters 39-40 | Anglo-Latin (England, 1215), classical | McKechnie 1905, Bell 1910 |
 | The Secret History of the Mongols | sections 1-10, the wolf and the doe to Alan Qo'a's sons; Ming transcription with its own word glosses | Middle Mongolian about 1250 (reconstructed) | Weft editorial, the Ming summary translation; de Rachewiltz 2015 cited |
 | Dante, Inferno 1 | the whole canto, 136 lines | Florentine (about 1307), modern Italian; lemma and form from UD Italian-Old | Longfellow 1867, Cary 1814 |
@@ -157,6 +164,7 @@ Eighty-two works built across twenty-eight languages, oldest first in the librar
 | Schikaneder and Mozart, Die Zauberflöte | Der Vogelfänger, Dies Bildniß, Der Hölle Rache, In diesen heil'gen Hallen and Ein Mädchen oder Weibchen (Vienna, 1791), from the first edition's spelling | educated German of 1791, modern | Weft editorial (draft); Macfarren and Dent cited |
 | Olympe de Gouges, Declaration of the Rights of Woman and of the Female Citizen | the preamble and all seventeen articles (1791), in the pamphlet's spelling | Paris reading of 1791, modern | Weft editorial (draft); Levy, Applewhite and Johnson 1979 cited |
 | Rouget de Lisle, La Marseillaise | the six couplets and the refrain of the Chant de guerre pour l'Armée du Rhin (1792), in Fiaux's 1918 printing of the 1792 text | Paris reading of 1792, modern | Weft editorial (draft); the English singing version 'Ye sons of France' (1795, couplets 1-2) |
+| Napoleon, farewell to the Old Guard | the whole speech at Fontainebleau (20 April 1814) as Baron Fain recorded it, with his account of the kiss of the flag, from the Correspondance de Napoléon Ier (1869) | Paris reading of the early 19th century, modern | Weft editorial (draft); Tarbell 1897 (a variant version, the address only) |
 | Constitution of the Cherokee Nation (1827), in Cherokee | the preamble and Article I (the boundaries of the Nation, and its common land), transcribed from the bilingual printing of 1828 in Sequoyah's syllabary, with a romanization; glosses a draft awaiting a Cherokee speaker's review | the New Echota press, 1828 (approximate), Oklahoma today | the convention's English text, printed beside it (1828) |
 | Marx and Engels, Manifest der Kommunistischen Partei | the opening, the first lines of section I, the ten measures and the closing call (London, 1848), in the first printing's spelling | educated German of the 1840s, modern | Samuel Moore 1888 (Kerr edition, 1910) |
 | Verdi, La traviata: the Brindisi | 'Libiam ne' lieti calici' (Piave, 1853) | stage Italian of Verdi's day, modern | Weft editorial (draft); Macfarren cited |
@@ -179,7 +187,7 @@ Eighty-two works built across twenty-eight languages, oldest first in the librar
 | Saxo, Gesta Danorum | book 9, chapters 3 to 5: Ragnar Lothbrok and his sons (Holder's Latin, 1886) | Latin as read in Denmark around 1200, classical, ecclesiastical | Elton 1894; Fisher 1979 and Friis-Jensen and Fisher 2015 cited |
 
 Homer, Ovid, John, Grettis saga and the Rigveda take lemma and grammar from treebanks (AGDT, LDT, MorphGNT, IcePaHC, the Vedic Treebank); Aristotle, Epictetus and Marcus Aurelius from GLAUx, an automatic parse, corrected by hand where it errs; Genesis, the Shema and the Aramaic of Daniel 5 from the Open Scriptures Hebrew Bible; Li Bai from the Kyoto Classical Chinese treebank, with Tang readings from Unicode's Unihan database. No open
-treebank covers Eddic or Old English poetry or runic inscriptions, so Hávamál, the complete Völuspá, Þrymskviða, Fáfnismál, Snorri's Gylfaginning, Beowulf and the
+treebank covers Eddic, Old English, Old Irish or Middle Welsh poetry or runic inscriptions, so Hávamál, the complete Völuspá, Þrymskviða, Fáfnismál, Snorri's Gylfaginning, Beowulf, Cædmon's Hymn, Pangur Bán, the Welsh poems and the
 runes are hand-annotated and marked draft (see CLAUDE.md rule 3). The runic pages add a script
 row, generated from the transliteration, and a labeled Weft translation where no public-domain
 modern one exists. The Rigveda page reads the accent strokes of the Devanagari back into pitch

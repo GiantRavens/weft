@@ -1,0 +1,33 @@
+# Written by `weft about` from the article named in manifest.yaml (wikipedia:). Regenerable: do not edit.
+# The lead is quoted verbatim from Wikipedia under CC BY-SA 4.0; the subjects are Wikidata labels, CC0.
+work: bede-hist-1-15
+src: weft.about 0.1
+fetched: '2026-10-31'
+match: parent
+wikipedia:
+  title: Ecclesiastical History of the English People
+  lang: en
+  revision: 1381928871
+  url: https://en.wikipedia.org/w/index.php?title=Ecclesiastical_History_of_the_English_People&oldid=1381928871
+  license: CC BY-SA 4.0
+  attribution: From the Wikipedia article “Ecclesiastical History of the English People” (en.wikipedia.org,
+    revision 1381928871), CC BY-SA 4.0
+  lead: 'The Ecclesiastical History of the English People (Latin: Historia ecclesiastica gentis Anglorum),
+    written by Bede in about AD 731, is a history of the Christian churches in England, and of England
+    generally; its main focus is on the growth of Christianity. It was composed in Latin, and is believed
+    to have been completed in 731 when Bede was approximately 59 years old. It is considered one of the
+    most important original references on Anglo-Saxon history, and according to some scholars has played
+    a key role in the development of an English national identity.'
+wikidata:
+  id: Q661541
+  revision: 2559586033
+  license: CC0
+  description: work in Latin by Bede
+  instance_of:
+  - id: Q7725634
+    label: literary work
+  genre:
+  - id: Q116796301
+    label: church history
+  - id: Q185363
+    label: chronicle

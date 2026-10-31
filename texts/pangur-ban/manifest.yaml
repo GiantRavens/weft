@@ -1,0 +1,83 @@
+work: pangur-ban
+title: Pangur Bán
+short_title: Pangur Bán
+author: Anonymous Irish scholar (9th century)
+language: sga
+lang_name: Old Irish of the 9th century
+kind: poetry
+wikipedia: {title: "Pangur Bán", match: work}
+prefix: pan                      # pan.<quatrain>.<line>[.<token>]
+urn: urn:weft:sga:pangur.ban     # no CTS URN; Weft-local identifier
+unit: section
+section_noun: quatrain
+written: {year: 850, display: "800s", label: "written in the 9th century by an Irish scholar on the Continent, probably at or near Reichenau Abbey; preserved only in the Reichenau Primer, now at St. Paul im Lavanttal"}
+status: phase-0
+extent: {is: whole, of: "all eight quatrains"}
+pilot: {sections: ["1", "2", "3", "4", "5", "6", "7", "8"]}
+edition:
+  id: tp1903
+  name: Whitley Stokes and John Strachan, Thesaurus Palaeohibernicus, vol. 2 (1903), pp. 293-294, multilingual Wikisource (revisions 848297 and 760417)
+  format: weft-edition
+  file: edition.yaml
+  license: text public domain (9th century); Stokes and Strachan's edition public domain; Wikisource transcription CC BY-SA 4.0; Weft line division and normalization CC BY-SA 4.0
+treebank: null                   # no treebank for Old Irish verse: lemma and morphology by hand (eDIL), draft
+schemes: [old-irish]
+sound_confidence: low
+sources_extra:
+- id: tp2-p339
+  name: Thesaurus Palaeohibernicus, vol. 2 (1903), p. 293 (scan page 339), multilingual Wikisource, revision 848297 (validated)
+  file: sources/tp2-p339.txt
+  url: https://wikisource.org/w/index.php?oldid=848297&action=raw
+  sha256: be80e21df4f113658beb7ca395fa631ba3ae5e61c52d93e7f8e78b7572990536
+  license: text public domain (9th century); Thesaurus Palaeohibernicus (1903) public domain; Wikisource transcription CC
+    BY-SA 4.0
+  license_url: https://wikisource.org/wiki/Pangur_B%C3%A1n
+- id: tp2-p340
+  name: Thesaurus Palaeohibernicus, vol. 2 (1903), p. 294 (scan page 340), multilingual Wikisource, revision 760417 (proofread)
+  file: sources/tp2-p340.txt
+  url: https://wikisource.org/w/index.php?oldid=760417&action=raw
+  sha256: 262144cbc222ccb2b3f35866acf96ddddbf8af41e0bcf0bea57599774f3ae52e
+  license: text public domain (9th century); Thesaurus Palaeohibernicus (1903) public domain; Wikisource transcription CC
+    BY-SA 4.0
+  license_url: https://wikisource.org/wiki/Pangur_B%C3%A1n
+- id: meyer1911-p82
+  name: 'Kuno Meyer, Selections from Ancient Irish Poetry (1911), p. 82 (scan page 104), English Wikisource, revision 11053121:
+    the last quatrain of his translation'
+  file: sources/meyer1911-p82.txt
+  url: https://en.wikisource.org/w/index.php?oldid=11053121&action=raw
+  sha256: b75d55d99803c7a07615f853e6cec683d99cf9e0a5b62b24257fb8d95d71570e
+  license: public-domain
+  license_url: https://en.wikisource.org/wiki/Selections_from_Ancient_Irish_Poetry/The_Monk_and_his_Pet_Cat
+translations:
+- id: flower1912
+  translator: Robin Flower
+  year: 1912
+  form: rhymed verse, 'The Student and his Cat', in Eleanor Hull, The Poem-Book of the Gael (1912), Project Gutenberg 46917
+  license: public-domain
+  license_url: https://www.gutenberg.org/policy/license.html
+  file: sources/flower1912.txt
+  url: https://www.gutenberg.org/cache/epub/46917/pg46917.txt
+  sha256: 7a6baeda933285e177ba57412492ead516029d42c690cbdf0defa8955ed46d13
+- id: meyer1911
+  translator: Kuno Meyer
+  year: 1911
+  form: verse, 'The Monk and his Pet Cat', in Selections from Ancient Irish Poetry (1911), pp. 81-82, English Wikisource
+  license: public-domain
+  license_url: https://en.wikisource.org/wiki/Selections_from_Ancient_Irish_Poetry/The_Monk_and_his_Pet_Cat
+  file: sources/meyer1911-p81.txt
+  url: https://en.wikisource.org/w/index.php?oldid=11053118&action=raw
+  sha256: 209995ae20e309841cfe14fc461d3ef46ff80f6d0edb3edf1d7abc69b93cdfd4
+- id: stokes-strachan1903
+  translator: Whitley Stokes and John Strachan
+  year: 1903
+  form: literal prose, facing the text in Thesaurus Palaeohibernicus, vol. 2, pp. 293-294 (the pages pinned for the edition)
+  license: public-domain
+  license_url: https://wikisource.org/wiki/Pangur_B%C3%A1n
+predicted_gaps:
+- 'no treebank for Old Irish: lemma and morphology hand-annotated against the electronic Dictionary of the Irish Language
+  (eDIL), draft'
+- the sound is read from Weft's normalized spelling, which marks the lenition, nasalization and stress the manuscript does
+  not write; the normalization is an editorial reading, draft
+- consonant quality after e and the value of unstressed final vowels are the least certain parts of the reconstruction; all
+  unstressed short vowels are read as ə
+- the manuscript itself is not transcribed here; the text is Stokes and Strachan's, which keeps its spellings and word division

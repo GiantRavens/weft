@@ -1,0 +1,212 @@
+# Human overlay, written in the compact spec and expanded by weft overlay.
+- by: "Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar"
+  date: "2026-10-31"
+  why: "all four stanzas (I, VIII, X and the Arthur stanza). Hand lemma, morphology and gloss; no treebank exists for Middle Welsh verse. Lemmas are the headwords of Geiriadur Prifysgol Cymru (GPC) in modern spelling, verbs under the verbal noun, mutated forms under the radical. The glosses follow Evans's 1868 translation where it reads the Welsh plausibly and the modern editors (Ifor Williams, Canu Aneirin; Jarman; Koch) where it does not. The poem's vocabulary is old and many readings are disputed; the lines with a note carry a reading a reviewer should check first. The readings attributed in the notes to Williams, Jarman or Koch were given from the annotator's knowledge of those editions, not checked against them; each attribution is to be verified"
+  status: "draft"
+  set:
+    # god.1.1: oed read as the noun 'age' (a man's mettle, a youth's years), with Williams, Jarman and Koch; Evans took it as the verb 'was' ('of manly disposition was the youth'), and the edition's n 'oedd' follows Evans
+    god.1.1.1: {lemma: "greddf", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "mettle"}   # Gredyf
+    god.1.1.2: {lemma: "gŵr", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "of-a-man"}   # gwr
+    god.1.1.3: {lemma: "oed", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "age"}   # oed
+    god.1.1.4: {lemma: "gwas", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "of-a-youth"}   # gwas
+    god.1.2.1: {lemma: "gwrhyd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "valour"}   # Gwrhẏt
+    god.1.2.2: {lemma: "am", morph: "ADP", gloss: "in"}   # am
+    god.1.2.3: {lemma: "dias", morph: "NOUN|Number=Sing", gloss: "the-tumult"}   # dias
+    god.1.3.1: {lemma: "march", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "stallions"}   # Meirch
+    god.1.3.2: {lemma: "mwth", morph: "ADJ", gloss: "swift"}   # mwth
+    god.1.3.3: {lemma: "myngfras", morph: "ADJ", gloss: "thick-maned"}   # mẏngvras
+    # god.1.4: a dan is the compound preposition 'under' (GPC tan, y dan, a dan). megyr is obscure: Evans 'illustrious'; later editors write megyrwas as one compound, 'fine (or slender) youth'
+    god.1.4.1: {lemma: "a", morph: "ADP", gloss: "beneath"}   # A
+    god.1.4.2: {lemma: "tan", morph: "ADP", gloss: "under"}   # dan
+    god.1.4.3: {lemma: "morddwyd", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "the-thigh"}   # vordwẏt
+    god.1.4.4: {lemma: "megyr", morph: "ADJ", gloss: "of-a-fine"}   # megẏr
+    god.1.4.5: {lemma: "gwas", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "youth"}   # was
+    god.1.5.1: {lemma: "ysgwyd", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "a-shield"}   # Ysgwẏt
+    god.1.5.2: {lemma: "ysgafn", morph: "ADJ", gloss: "light"}   # ẏsgauẏn
+    god.1.5.3: {lemma: "llydan", morph: "ADJ", gloss: "broad"}   # lledan
+    god.1.6.1: {lemma: "ar", morph: "ADP", gloss: "on"}   # Ar
+    god.1.6.2: {lemma: "pedrain", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "the-crupper"}   # bedrein
+    god.1.6.3: {lemma: "main", morph: "ADJ", gloss: "of-the-slender"}   # mein
+    god.1.6.4: {lemma: "buan", morph: "ADJ", gloss: "swift-one"}   # vuan
+    # god.1.7: cledyuawr read as the plural in -awr, 'swords'; Evans 'a sword'
+    god.1.7.1: {lemma: "cleddyf", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "swords"}   # Kledẏuawr
+    god.1.7.2: {lemma: "glas", morph: "ADJ", gloss: "blue-grey"}   # glas
+    god.1.7.3: {lemma: "glân", morph: "ADJ", gloss: "bright"}   # glan
+    # god.1.8: ethy is obscure; Evans's 'spurs' is the usual reading, but it is not secure. aphan is a + phan, pân 'fur, ermine' after the spirant mutation
+    god.1.8.1: {lemma: "ethy", morph: "NOUN|Number=Plur", gloss: "spurs"}   # Ethẏ
+    god.1.8.2: {lemma: "aur", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "of-gold"}   # eur
+    god.1.8.3: {lemma: "a + pân", morph: "CCONJ + NOUN|Gender=Masc|Number=Sing", gloss: "and-ermine"}   # aphan
+    god.1.9.1: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # Nẏ
+    god.1.9.2: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Fut", gloss: "will-be"}   # bi
+    god.1.9.3: {lemma: "ef", morph: "PRON|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "it"}   # ef
+    god.1.9.4: {lemma: "â", morph: "ADP", gloss: "with"}   # a
+    god.1.9.5: {lemma: "mi", morph: "PRON|Number=Sing|Person=1|PronType=Prs", gloss: "me"}   # vi
+    # god.1.10: e rof is y rof, the first person singular of rhwng 'between' with its old particle: 'between me and thee'
+    god.1.10.1: {lemma: "cas", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "hatred"}   # Cas
+    god.1.10.2: {lemma: "y", morph: "ADP", gloss: "in"}   # e
+    god.1.10.3: {lemma: "rhwng", morph: "ADP|Number=Sing|Person=1", gloss: "between-me"}   # rof
+    god.1.10.4: {lemma: "a", morph: "CCONJ", gloss: "and"}   # a
+    god.1.10.5: {lemma: "ti", morph: "PRON|Number=Sing|Person=2|PronType=Prs", gloss: "thee"}   # thi
+    god.1.11.1: {lemma: "da", morph: "ADJ|Degree=Cmp", gloss: "better"}   # Gwell
+    god.1.11.2: {lemma: "gwneud", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "I-will-do"}   # gwneif
+    god.1.11.3: {lemma: "â", morph: "ADP", gloss: "with"}   # a
+    god.1.11.4: {lemma: "ti", morph: "PRON|Number=Sing|Person=2|PronType=Prs", gloss: "thee"}   # thi
+    god.1.12.1: {lemma: "ar", morph: "ADP", gloss: "in"}   # Ar
+    god.1.12.2: {lemma: "gwawd", morph: "NOUN|Number=Sing", gloss: "song"}   # wawt
+    god.1.12.3: {lemma: "dy", morph: "DET|Number=Sing|Person=2|Poss=Yes|PronType=Prs", gloss: "thee"}   # dẏ
+    god.1.12.4: {lemma: "moli", morph: "NOUN|VerbForm=Vnoun", gloss: "to-praise"}   # uoli
+    # god.1.13: Skene prints elawr as one word and Evans reads elor 'bier' ('the bloody bier'); the modern editors divide e lawr, 'to the ground'. y waet is 'his blood' (the soft mutation after the masculine possessive); Evans has 'thou'
+    god.1.13.1: {lemma: "cynt", morph: "ADV|Degree=Cmp", gloss: "sooner"}   # Kẏnt
+    god.1.13.2: {lemma: "ei", morph: "DET|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "his"}   # ẏ
+    god.1.13.3: {lemma: "gwaed", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "blood"}   # waet
+    god.1.13.4: {lemma: "i + llawr", morph: "ADP + NOUN|Gender=Masc|Number=Sing", gloss: "to-the-ground"}   # elawr
+    god.1.14.1: {lemma: "nag", morph: "SCONJ", gloss: "than"}   # Nogẏt
+    god.1.14.2: {lemma: "i", morph: "ADP", gloss: "to"}   # ẏ
+    god.1.14.3: {lemma: "neithior", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "a-wedding-feast"}   # neithẏawr
+    god.1.15.1: {lemma: "cynt", morph: "ADV|Degree=Cmp", gloss: "sooner"}   # Kẏnt
+    god.1.15.2: {lemma: "i", morph: "ADP", gloss: "to"}   # ẏ
+    god.1.15.3: {lemma: "bwyd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "food"}   # vwẏt
+    god.1.15.4: {lemma: "i", morph: "ADP", gloss: "for"}   # ẏ
+    god.1.15.5: {lemma: "brân", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "ravens"}   # vrein
+    # god.1.16: argyfrein is obscure. Evans 'the conflict of spears'; the modern editors relate it to argyfrau 'dowry, wedding portion', so 'than to the wedding', and some read it as burial. The lemma and gloss are tentative
+    god.1.16.1: {lemma: "nag", morph: "SCONJ", gloss: "than"}   # Noc
+    god.1.16.2: {lemma: "i", morph: "ADP", gloss: "to"}   # ẏ
+    god.1.16.3: {lemma: "argyfrau", morph: "NOUN|Number=Sing", gloss: "the-wedding"}   # argẏurein
+    god.1.17.1: {lemma: "cu", morph: "ADJ", gloss: "dear"}   # Ku
+    god.1.17.2: {lemma: "cyfaill", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "friend"}   # kẏueillt
+    god.1.17.3: {lemma: "Ewein", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "of-Ewein"}   # ewein
+    god.1.18.1: {lemma: "cwl", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "a-pity"}   # Kwl
+    god.1.18.2: {lemma: "ei", morph: "DET|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "his"}   # ẏ
+    god.1.18.3: {lemma: "bod", morph: "NOUN|VerbForm=Vnoun", gloss: "being"}   # uot
+    god.1.18.4: {lemma: "a", morph: "ADP", gloss: "beneath"}   # a
+    god.1.18.5: {lemma: "tan", morph: "ADP", gloss: "under"}   # dan
+    god.1.18.6: {lemma: "brân", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "ravens"}   # vrein
+    # god.1.19: marth is 'sorrow' or 'wonder' (GPC); Evans 'it is evident' does not fit the word
+    god.1.19.1: {lemma: "marth", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "a-grief"}   # Marth
+    god.1.19.2: {lemma: "yn", morph: "ADP", gloss: "in"}   # ẏm
+    god.1.19.3: {lemma: "pa", morph: "DET|PronType=Int", gloss: "what"}   # pa
+    god.1.19.4: {lemma: "bro", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "land"}   # vro
+    god.1.20.1: {lemma: "lladd", morph: "NOUN|VerbForm=Vnoun", gloss: "the-slaying-of"}   # Llad
+    god.1.20.2: {lemma: "un", morph: "NUM", gloss: "the-only"}   # un
+    god.1.20.3: {lemma: "mab", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "son"}   # mab
+    god.1.20.4: {lemma: "Marro", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "of-Marro"}   # marro
+    # god.8.1: ffraeth is 'eloquent, ready' and also 'swift, eager'; Evans 'loquacious', the modern editors 'swift' or 'eager'
+    god.8.1.1: {lemma: "gŵr", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "men"}   # Gwyr
+    god.8.1.2: {lemma: "a", morph: "PART|PronType=Rel", gloss: "who"}   # a
+    god.8.1.3: {lemma: "mynd", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "went"}   # aeth
+    god.8.1.4: {lemma: "Catraeth", morph: "PROPN", gloss: "to-Catraeth"}   # gatraeth
+    god.8.1.5: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "was"}   # oed
+    god.8.1.6: {lemma: "ffraeth", morph: "ADJ", gloss: "swift"}   # fraeth
+    god.8.1.7: {lemma: "eu", morph: "DET|Number=Plur|Person=3|Poss=Yes|PronType=Prs", gloss: "their"}   # eu
+    god.8.1.8: {lemma: "llu", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "host"}   # llu
+    god.8.2.1: {lemma: "glasfedd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "fresh-mead"}   # Glasved
+    god.8.2.2: {lemma: "eu", morph: "DET|Number=Plur|Person=3|Poss=Yes|PronType=Prs", gloss: "their"}   # eu
+    god.8.2.3: {lemma: "ancwyn", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "feast"}   # hancwẏn
+    god.8.2.4: {lemma: "a", morph: "CCONJ", gloss: "and"}   # a
+    god.8.2.5: {lemma: "gwenwyn", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "poison"}   # gwenwẏn
+    god.8.2.6: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "it-was"}   # vu
+    # god.8.3: trwy beiriant 'by command, in order' with the modern editors (GPC peiriant 'command, ordering'); Evans 'contending with weapons'
+    god.8.3.1: {lemma: "trychant", morph: "NUM", gloss: "three-hundred"}   # Trẏchant
+    god.8.3.2: {lemma: "trwy", morph: "ADP", gloss: "through"}   # trwẏ
+    god.8.3.3: {lemma: "peiriant", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "command"}   # beirẏant
+    god.8.3.4: {lemma: "yn", morph: "ADP", gloss: "in"}   # en
+    god.8.3.5: {lemma: "cad", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "battles"}   # cattau
+    god.8.4.1: {lemma: "a", morph: "CCONJ", gloss: "and"}   # A
+    god.8.4.2: {lemma: "wedi", morph: "ADP", gloss: "after"}   # gwedẏ
+    god.8.4.3: {lemma: "elwch", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "rejoicing"}   # elwch
+    god.8.4.4: {lemma: "tawelwch", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "silence"}   # tawelwch
+    god.8.4.5: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "there-was"}   # vu
+    god.8.5.1: {lemma: "cyd", morph: "SCONJ", gloss: "though"}   # Ket
+    god.8.5.2: {lemma: "mynd", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Imp", gloss: "they-went"}   # elwẏnt
+    god.8.5.3: {lemma: "i", morph: "ADP", gloss: "to"}   # e
+    god.8.5.4: {lemma: "llan", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "churches"}   # lanneu
+    god.8.5.5: {lemma: "i", morph: "ADP", gloss: "to"}   # e
+    god.8.5.6: {lemma: "penydu", morph: "NOUN|VerbForm=Vnoun", gloss: "do-penance"}   # benẏdu
+    # god.8.6: dadyl dieu 'the certain issue (was)', a reading of the modern editors; Evans 'the inevitable strife'
+    god.8.6.1: {lemma: "dadl", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "the-matter"}   # Dadẏl
+    god.8.6.2: {lemma: "dieu", morph: "ADJ", gloss: "certain"}   # dieu
+    god.8.6.3: {lemma: "angau", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "death"}   # agheu
+    god.8.6.4: {lemma: "i", morph: "ADP", gloss: "to"}   # ẏ
+    god.8.6.5: {lemma: "eu", morph: "DET|Number=Plur|Person=3|Poss=Yes|PronType=Prs", gloss: "them"}   # eu
+    god.8.6.6: {lemma: "treiddio", morph: "NOUN|VerbForm=Vnoun", gloss: "pierce"}   # treidu
+    god.10.1.1: {lemma: "gŵr", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "men"}   # Gwyr
+    god.10.1.2: {lemma: "a", morph: "PART|PronType=Rel", gloss: "who"}   # a
+    god.10.1.3: {lemma: "mynd", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "went"}   # aeth
+    god.10.1.4: {lemma: "Catraeth", morph: "PROPN", gloss: "to-Catraeth"}   # gatraeth
+    god.10.1.5: {lemma: "gan", morph: "ADP", gloss: "with"}   # gan
+    god.10.1.6: {lemma: "gwawr", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "the-dawn"}   # wawr
+    # god.10.2: an obscure line. hovnawr read as a plural in -awr of ofn, 'their fears'; Evans 'they dealt peaceably with those who feared them'. The sense of trafod here is not settled
+    god.10.2.1: {lemma: "trafod", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Imp", gloss: "they-handled"}   # Trauodẏnt
+    god.10.2.2: {lemma: "yn", morph: "ADP", gloss: "in"}   # en
+    god.10.2.3: {lemma: "hedd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "peace"}   # hed
+    god.10.2.4: {lemma: "eu", morph: "DET|Number=Plur|Person=3|Poss=Yes|PronType=Prs", gloss: "their"}   # eu
+    god.10.2.5: {lemma: "ofn", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "fears"}   # hovnawr
+    # god.10.3: emdaflawr is the impersonal of ymdaflu 'to throw at one another' (Person=0 for the Welsh impersonal); Evans 'engaged in mutual overthrow'
+    god.10.3.1: {lemma: "milcant", morph: "NUM", gloss: "a-hundred-thousand"}   # Milcant
+    god.10.3.2: {lemma: "a", morph: "CCONJ", gloss: "and"}   # a
+    god.10.3.3: {lemma: "trychant", morph: "NUM", gloss: "three-hundred"}   # thrẏchant
+    god.10.3.4: {lemma: "a", morph: "PART|PronType=Rel", gloss: "who"}   # a
+    god.10.3.5: {lemma: "ymdaflu", morph: "VERB|Mood=Ind|Person=0|Tense=Pres", gloss: "were-hurled-together"}   # emdaflawr
+    # god.10.4: gwynnodynt is read here as from gwynnu 'to whiten' (or 'to make bright'); the sense with gwyarllyd is disputed, and Evans's 'served as butts for lances' does not follow the grammar. Tentative
+    god.10.4.1: {lemma: "gwyarllyd", morph: "ADJ", gloss: "gory"}   # Gwẏarllẏt
+    god.10.4.2: {lemma: "gwynnu", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Imp", gloss: "they-whitened"}   # gwẏnnodẏnt
+    god.10.4.3: {lemma: "gwayw", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "spears"}   # waewawr
+    # god.10.5: an obscure line. gorsaf may be the noun 'station, stand' or a verb 'stood'; gwryaf is read as a superlative 'most manly' after Evans ('most manfully defended'); gwryawr is uncertain ('battle-press' here; some take it as 'warriors'). Both lemmas are written as printed because their GPC headword is not settled
+    god.10.5.1: {lemma: "ef", morph: "PRON|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "he"}   # Ef
+    god.10.5.2: {lemma: "gorsaf", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "a-stand"}   # gorsaf
+    god.10.5.3: {lemma: "yn", morph: "ADP", gloss: "in"}   # ẏng
+    god.10.5.4: {lemma: "gwryaf", morph: "ADJ|Degree=Sup", gloss: "the-most-manly"}   # gwrẏaf
+    god.10.5.5: {lemma: "yn", morph: "ADP", gloss: "in"}   # eg
+    god.10.5.6: {lemma: "gwryawr", morph: "NOUN|Number=Sing", gloss: "the-press"}   # gwrẏawr
+    god.10.6.1: {lemma: "rhag", morph: "ADP", gloss: "before"}   # Rac
+    god.10.6.2: {lemma: "gosgordd", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "the-retinue"}   # gosgord
+    god.10.6.3: {lemma: "Mynyddog", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "of-Mynyddog"}   # mẏnẏdawc
+    god.10.6.4: {lemma: "Mwynfawr", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "the-Wealthy"}   # mwẏnvawr
+    # god.b33.1: trigant is the older spelling of trychant 'three hundred' (Evans 'upwards of three hundred'). echassaf read as the superlative of echas 'hateful, hostile', 'the most hostile (of the foe)'; Evans 'of the foe'
+    god.b33.1.1: {lemma: "ef", morph: "PRON|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "he"}   # Ef
+    god.b33.1.2: {lemma: "gwanu", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "pierced"}   # guant
+    god.b33.1.3: {lemma: "tra", morph: "ADP", gloss: "beyond"}   # tra
+    god.b33.1.4: {lemma: "trychant", morph: "NUM", gloss: "three-hundred"}   # trigant
+    god.b33.1.5: {lemma: "echas", morph: "ADJ|Degree=Sup", gloss: "of-the-most-hateful"}   # echassaf
+    # god.b33.2: auet is obscure; 'centre' is Evans's reading, set against eithaf 'the extreme, the edge'. The lemma is written as the normalized form
+    god.b33.2.1: {lemma: "ef", morph: "PRON|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "he"}   # Ef
+    god.b33.2.2: {lemma: "lladd", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "would-slay"}   # ladhei
+    god.b33.2.3: {lemma: "afed", morph: "NOUN|Number=Sing", gloss: "the-centre"}   # auet
+    god.b33.2.4: {lemma: "a", morph: "CCONJ", gloss: "and"}   # ac
+    god.b33.2.5: {lemma: "eithaf", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-extreme"}   # eithaf
+    god.b33.3.1: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "he-was"}   # Oid
+    god.b33.3.2: {lemma: "gwiw", morph: "ADJ", gloss: "worthy"}   # guiu
+    god.b33.3.3: {lemma: "yn", morph: "ADP", gloss: "in"}   # e
+    god.b33.3.4: {lemma: "blaen", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-front"}   # mlaen
+    god.b33.3.5: {lemma: "llu", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "of-a-host"}   # llu
+    god.b33.3.6: {lemma: "llary", morph: "ADJ|Degree=Sup", gloss: "most-generous"}   # llarahaf
+    # god.b33.4: godolei is obscure; Evans 'he fed (his horses upon barley)'. The lemma godoli is tentative
+    god.b33.4.1: {lemma: "godoli", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "he-used-to-give"}   # Godolei
+    god.b33.4.2: {lemma: "o", morph: "ADP", gloss: "of"}   # o
+    god.b33.4.3: {lemma: "haidd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "barley"}   # heit
+    god.b33.4.4: {lemma: "march", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "to-horses"}   # meirch
+    god.b33.4.5: {lemma: "yn", morph: "ADP", gloss: "in"}   # e
+    god.b33.4.6: {lemma: "gaeaf", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "winter"}   # gaẏaf
+    # god.b33.5: gochore (the edition's n gochorei) is read with the modern editors as a verb, 'he fed (black ravens on the rampart)', with ravens the object; Evans made the ravens the subject, 'black ravens croaked on the wall'. The lemma is tentative
+    god.b33.5.1: {lemma: "gochori", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "he-fed"}   # Gochore
+    god.b33.5.2: {lemma: "brân", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "ravens"}   # brein
+    god.b33.5.3: {lemma: "du", morph: "ADJ", gloss: "black"}   # du
+    god.b33.5.4: {lemma: "ar", morph: "ADP", gloss: "on"}   # ar
+    god.b33.5.5: {lemma: "mur", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-wall"}   # uur
+    # god.b33.6: Skene prints cein, annotated here as printed, cain 'fair' (Evans 'the beautiful Caer'). The modern editors read ceni 'though he was not', so ceni bei ef Arthur 'though he was not Arthur', the reading on which the stanza's place in the Arthur question rests
+    god.b33.6.1: {lemma: "caer", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "of-a-fortress"}   # Caer
+    god.b33.6.2: {lemma: "cain", morph: "ADJ", gloss: "fair"}   # cein
+    god.b33.6.3: {lemma: "bod", morph: "VERB|Mood=Sub|Number=Sing|Person=3|Tense=Imp", gloss: "he-were"}   # bei
+    god.b33.6.4: {lemma: "ef", morph: "PRON|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "he"}   # ef
+    god.b33.6.5: {lemma: "Arthur", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Arthur"}   # arthur
+    # god.b33.7: an obscure line, glossed tentatively. ciuin read as cyfin 'border, edge'; uerthi and disur have no settled reading, and Evans's 'in the midst of the exhausting conflict' renders the line as a whole. The lemmas for uerthi and disur are the normalized forms, not GPC headwords
+    god.b33.7.1: {lemma: "rhwng", morph: "ADP", gloss: "among"}   # Rug
+    god.b33.7.2: {lemma: "cyfin", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "the-borders"}   # ciuin
+    god.b33.7.3: {lemma: "gwerthi", morph: "NOUN|Number=Sing", gloss: "of-defence"}   # uerthi
+    god.b33.7.4: {lemma: "yn", morph: "ADP", gloss: "in"}   # ig
+    god.b33.7.5: {lemma: "dysur", morph: "NOUN|Number=Sing", gloss: "the-onslaught"}   # disur
+    # god.b33.8: Evans reads guernor as a name, 'like Gwernor the hero'; some editors read gwernor 'alder (spear-shafts)'. guaur is gwawr 'lord, hero' (GPC gwawr²), not gwawr 'dawn'. cynnor is 'door-post', figuratively 'the front, the van'
+    god.b33.8.1: {lemma: "yn", morph: "ADP", gloss: "in"}   # Ig
+    god.b33.8.2: {lemma: "cynnor", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-van"}   # kunnor
+    god.b33.8.3: {lemma: "Gwernor", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Gwernor"}   # guernor
+    god.b33.8.4: {lemma: "gwawr", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "hero"}   # guaur

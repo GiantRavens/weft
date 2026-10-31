@@ -1,0 +1,135 @@
+# Weft edition of the Charter of Liberties of Henry I (1100), in the text of W. Stubbs, Select Charters,
+# 9th edition revised by H. W. C. Davis (Oxford, 1913), pp. 117-119: the Worcestershire copy's preamble
+# (Red Book of the Exchequer, fo. 163v) and the common text of the fourteen chapters. Each line is checked
+# against the Internet Archive OCR of the CIHM copy (pinned); verify_strip rejoins the words the print
+# hyphenates across a line and closes the space it sets before ; and :, and verify_corrections gives the
+# printed reading where the OCR misreads, each settled on the page image (archive.org cihm_65823, leaf
+# n142, n143); the first removes the running head and scanner noise the OCR puts inside chapter 1. Weft divides each chapter at Stubbs's punctuation into lines that
+# fit one strip.
+verify_in: sources/stubbs1913.txt
+verify_strip: '-[ \t]*\n+[ \t]*|(?<=\w) +(?=[;:])'
+verify_corrections:
+- {ocr: 'malas Silat dciaesocaaciaglbtate cn oa ts 118 Henry I PART eee consuetudines', print: malas consuetudines}
+- {ocr: 'baronum: sive hominum', print: baronum sive hominum}
+- {ocr: 'forisfecerit, ron dabit', print: 'forisfecerit, non dabit'}
+- {ocr: fritris, print: fratris}
+- {ocr: 'et ca quae amodo', print: et ea quae amodo}
+- {ocr: cmendentur, print: emendentur}
+sections:
+  - id: "pre"
+    title: "Preamble: the Worcestershire copy"
+    lines:
+      - "Henricus rex Anglorum Samsoni episcopo et Ursoni de Abetot"
+      - "et omnibus baronibus et fidelibus suis tam Francigenis quam Angligenis de Wirecestrescira salutem."
+  - id: "1"
+    title: "Chapter 1: the Church made free; the evil customs taken away"
+    lines:
+      - "Sciatis me Dei misericordia et communi consilio baronum totius regni Angliae"
+      - "ejusdem regni regem coronatum esse;"
+      - "et quia regnum oppressum erat injustis exactionibus,"
+      - "ego, Dei respectu et amore quem erga vos omnes habeo,"
+      - "sanctam Dei ecclesiam imprimis liberam facio,"
+      - "ita quod nec vendam nec ad firmam ponam,"
+      - "nec mortuo archiepiscopo sive episcopo sive abbate"
+      - "aliquid accipiam de dominio ecclesiae vel de hominibus ejus"
+      - "donec successor in eam ingrediatur."
+      - "Et omnes malas consuetudines quibus regnum Angliae injuste opprimebatur inde aufero;"
+      - "quas malas consuetudines ex parte hic pono:"
+  - id: "2"
+    title: "Chapter 2: reliefs"
+    lines:
+      - "Si quis baronum, comitum meorum sive aliorum qui de me tenent, mortuus fuerit,"
+      - "haeres suus non redimet terram suam sicut faciebat tempore fratris mei,"
+      - "sed justa et legitima relevatione relevabit eam."
+      - "Similiter et homines baronum meorum justa et legitima relevatione"
+      - "relevabunt terras suas de dominis suis."
+  - id: "3"
+    title: "Chapter 3: the marriage of daughters, heiresses and widows"
+    lines:
+      - "Et si quis baronum vel aliorum hominum meorum filiam suam nuptum tradere voluerit"
+      - "sive sororem sive neptem sive cognatam, mecum inde loquatur;"
+      - "sed neque ego aliquid de suo pro hac licentia accipiam neque defendam ei quin eam det,"
+      - "excepto si eam vellet jungere inimico meo."
+      - "Et si mortuo barone vel alio homine meo filia haeres remanserit,"
+      - "illam dabo consilio baronum meorum cum terra sua."
+      - "Et si mortuo marito uxor ejus remanserit et sine liberis fuerit,"
+      - "dotem suam et maritationem habebit,"
+      - "et eam non dabo marito nisi secundum velle suum."
+  - id: "4"
+    title: "Chapter 4: widows with children, and wardship"
+    lines:
+      - "Si vero uxor cum liberis remanserit, dotem quidem et maritationem suam habebit,"
+      - "dum corpus suum legitime servaverit, et eam non dabo nisi secundum velle suum."
+      - "Et terrae et liberorum custos erit sive uxor sive alius propinquorum qui justius esse debebit."
+      - "Et praecipio ut barones mei similiter se contineant erga filios et filias vel uxores hominum suorum."
+  - id: "5"
+    title: "Chapter 5: the common moneyage, and false coin"
+    lines:
+      - "Monetagium commune, quod capiebatur per civitates et comitatus,"
+      - "quod non fuit tempore regis Eadwardi, hoc ne amodo sit omnino defendo."
+      - "Si quis captus fuerit sive monetarius sive alius cum falsa moneta, justitia recta inde fiat."
+  - id: "6"
+    title: "Chapter 6: pleas and debts owed to his brother forgiven"
+    lines:
+      - "Omnia placita et omnia debita quae fratri meo debebantur condono,"
+      - "exceptis rectis firmis meis et exceptis illis quae pacta erant pro aliorum haereditatibus"
+      - "vel pro eis rebus quae justius aliis contingebant."
+      - "Et si quis pro haereditate sua aliquid pepigerat, illud condono,"
+      - "et omnes relevationes quae pro rectis haereditatibus pactae fuerant."
+  - id: "7"
+    title: "Chapter 7: the wills of barons and their men"
+    lines:
+      - "Et si quis baronum vel hominum meorum infirmabitur,"
+      - "sicut ipse dabit vel dare disponet pecuniam suam, ita datam esse concedo."
+      - "Quod si ipse, praeventus vel armis vel infirmitate, pecuniam suam non dederit vel dare disposuerit,"
+      - "uxor sua sive liberi aut parentes, aut legitimi homines ejus,"
+      - "eam pro anima ejus dividant, sicut eis melius visum fuerit."
+  - id: "8"
+    title: "Chapter 8: amercements"
+    lines:
+      - "Si quis baronum sive hominum meorum forisfecerit,"
+      - "non dabit vadium in misericordia pecuniae suae, sicut faciebat tempore patris mei vel fratris mei;"
+      - "sed secundum modum forisfacti, ita emendabit"
+      - "sicut emendasset retro a tempore patris mei, in tempore aliorum antecessorum meorum."
+      - "Quod si perfidiae vel sceleris convictus fuerit, sicut justum fuerit, sic emendet."
+  - id: "9"
+    title: "Chapter 9: murder fines"
+    lines:
+      - "Murdra etiam retro ab illa die qua in regem coronatus fui omnia condono:"
+      - "et ea quae amodo facta fuerint, juste emendentur secundum lagam regis Eadwardi."
+  - id: "10"
+    title: "Chapter 10: the forests"
+    lines:
+      - "Forestas communi consensu baronum meorum in manu mea retinui, sicut pater meus eas habuit."
+  - id: "11"
+    title: "Chapter 11: knights' demesne lands quit of geld"
+    lines:
+      - "Militibus qui per loricas terras suas deserviunt,"
+      - "terras dominicarum carrucarum suarum quietas, ab omnibus geldis et ab omni opere,"
+      - "proprio dono meo concedo,"
+      - "ut sicut tam magno gravamine alleviati sint,"
+      - "ita se equis et armis bene instruant,"
+      - "ut apti et parati sint ad servitium meum et ad defensionem regni mei."
+  - id: "12"
+    title: "Chapter 12: firm peace"
+    lines:
+      - "Pacem firmam in toto regno meo pono et teneri amodo praecipio."
+  - id: "13"
+    title: "Chapter 13: the law of King Edward restored"
+    lines:
+      - "Lagam Eadwardi regis vobis reddo cum illis emendationibus"
+      - "quibus pater meus eam emendavit consilio baronum suorum."
+  - id: "14"
+    title: "Chapter 14: goods taken since his brother's death"
+    lines:
+      - "Si quis aliquid de rebus meis vel de rebus alicujus post obitum Willelmi regis fratris mei ceperit,"
+      - "totum cito reddatur absque emendatione,"
+      - "et si quis inde aliquid retinuerit, ille super quem inventum fuerit mihi graviter emendabit."
+  - id: "t"
+    title: "Witnesses and place"
+    lines:
+      - "Testibus Mauricio Lundoniensi episcopo et Willelmo electo Wintoniensi episcopo"
+      - "et Gerardo Herefordensi episcopo et Henrico comite et Simone comite"
+      - "et Waltero Gefardo et Rodberto de Muntforte et Rogero Bigodo"
+      - "et Eudone dapifero et Roberto filio Hamonis et Roberto Malet."
+      - "Apud Lundoniam quando coronatus fui. Valete"

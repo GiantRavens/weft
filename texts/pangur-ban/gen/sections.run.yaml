@@ -1,0 +1,23 @@
+run:
+  weft: 0.1.0
+  sections:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+counts:
+  lines: 32
+  tokens: 146
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no treebank for Old Irish: lemma and morphology hand-annotated against the electronic Dictionary of the Irish Language (eDIL), draft'
+- the sound is read from Weft's normalized spelling, which marks the lenition, nasalization and stress the manuscript does not write; the normalization is an editorial reading, draft
+- consonant quality after e and the value of unstressed final vowels are the least certain parts of the reconstruction; all unstressed short vowels are read as ə
+- the manuscript itself is not transcribed here; the text is Stokes and Strachan's, which keeps its spellings and word division

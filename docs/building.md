@@ -159,6 +159,17 @@ The verbatim check joins each line's tokens and looks for the result in the sour
   into the next word stays with the first token with `glue: true`.
 - **OCR and transcription slips** are `verify_corrections`, each `{ocr, print, in}`; a correction
   that matches nothing is itself reported, so a stale one cannot linger.
+- **A letter the OCR cannot carry** is declared once for the edition, not word by word. `verify_fold`
+  maps a printed letter to the one the OCR reads in its place (Skene's dotted `ẏ` read as `y`:
+  `{ẏ: y}`), applied to the edition's side before the comparison. `verify_wildcard` maps a printed
+  letter the OCR renders inconsistently to a regular expression of its observed renderings (the Book
+  of Taliesin's `ỽ`, read as O, C, c, 0, 6, d, Ci or Cr: `{ỽ: '(?:[OoCc06dỽ]|Ci|Cr)'}`); every other
+  letter of the line must still match exactly. Settle the class on the page images, and keep it as
+  narrow as the observed readings (gododdin, pa-gur, preiddeu-annwn).
+- **Finding a page image**: an Internet Archive scan serves each leaf at
+  `https://archive.org/download/<id>/page/n<leaf>_w900.jpg`. The leaf is the printed page plus the
+  front matter, and plates shift the offset, so fetch one leaf, read its page number, and step from
+  there.
 - **A symbol or formula** is a token printed as the paper prints it (`E₀`, `L/V²`), with the
   transcription's TeX as `src`, the words a reader says for it as `n`, and its sound given outright
   in `ipa`. A displayed equation is a line of its own, `{equation: {tex, say, gloss}}`: the TeX is
@@ -297,3 +308,22 @@ files elsewhere or lacks, add it to `pipeline/weft/data/grc_lemma_ok.yaml` with 
 - Parallel annotators diverge on headword spelling (adfirmo and affirmo, se and sui) and on optional UD features
   (Voice on gerundives, NumType, Aspect on sum). Fix these in the convention table before the work starts, and
   harmonize afterwards with one rule per class over every token, not form by form.
+- A Wikisource text that cites one edition can carry another's text (the Latin Bede names Migne's Patrologia but
+  prints Plummer's 1896 text, down to his run-together utSaxonum). Before verifying against it, diff it word by
+  word with the OCR of the edition you name; when every difference is an OCR misreading or a margin note, verify
+  against the clean transcription and say so in the edition record (bede-hist-1-15).
+- The whole-volume OCR of a collected edition (the Correspondance de Napoléon Ier, 1.4 MB for one 237-token item)
+  is a usable verify source: the check is a search for each line, so the rest of the volume does no harm. Find the
+  item's leaf from the running heads (`grep` the page numbers around it) before fetching page images.
+- A shared pronunciation lexicon loaded as YAML keeps the last of two duplicate keys without a word, which
+  would change the sound of every work that uses the word. After adding entries, list duplicates
+  (`grep -o -E '^"[^"]+":' <lexicon> | sort | uniq -d`) and redraft the other works in the language.
+- A YAML list item that ends in a colon (`- fait un effort et reprend d'une voix ferme:`) is read as a mapping,
+  not a string. Quote any line of a spec or edition that ends in a colon. A bare year in a subjects list (1814)
+  is read as a number and fails `about-curated-subjects`; quote it too.
+- `weft quantities` proposes from lemmas, so it proposes nothing before the overlay exists: annotate first. A
+  work's manifest may name several quantity tables (`quantities: [shared, other works', its own]`); the tables
+  of the other Latin works covered 155 of Bede's 372 forms before any new entry was written.
+- Old English is not yet buildable from archive.org OCR: the scans of Plummer and Earle (1892) and of the EETS
+  editions render þ, ð, æ and the Tironian 7 as noise in nearly every word, and the clean electronic texts online
+  are under copyright notices. Wait for a high-resolution copy or a proofread transcription (pin 104, 105).

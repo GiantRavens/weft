@@ -1,0 +1,23 @@
+# Weft's own translation, close to the Old English and in its order where English allows, draft.
+# Square brackets mark a word the English needs and the Old English does not have: neither copy has
+# a word for "we". The two copies differ in one word that changes the sense, line 5: aelda barnum
+# "for the children of men" (Moore), eorðan bearnum "for the children of earth" (Tanner).
+translation: weft-editorial
+aligned_by: hand, phase 0; spans follow the sentences
+spans:
+- lines: [cae.moore.1, cae.moore.2]
+  text: Now [we] must praise the Guardian of the heavenly kingdom, the Measurer's might and the thought of his mind,
+- lines: [cae.moore.3, cae.moore.4]
+  text: the work of the Father of glory, as he, the eternal Lord, established the beginning of every wonder.
+- lines: [cae.moore.5, cae.moore.6]
+  text: He first shaped heaven as a roof for the children of men, the holy Creator.
+- lines: [cae.moore.7, cae.moore.9]
+  text: Then the Guardian of mankind, the eternal Lord, afterwards made ready middle-earth, the land for men, the Lord almighty.
+- lines: [cae.tanner.1, cae.tanner.2]
+  text: Now [we] must praise the Guardian of the heavenly kingdom, the Measurer's might and the thought of his mind,
+- lines: [cae.tanner.3, cae.tanner.4]
+  text: the work of the Father of glory, as he, the eternal Lord, established the beginning of every wonder.
+- lines: [cae.tanner.5, cae.tanner.6]
+  text: He first shaped heaven as a roof for the children of earth, the holy Creator.
+- lines: [cae.tanner.7, cae.tanner.9]
+  text: Then the Guardian of mankind, the eternal Lord, afterwards made ready middle-earth, the land for men, the Lord almighty.

@@ -1,0 +1,19 @@
+run:
+  weft: 0.1.0
+  sections:
+  - moore
+  - tanner
+counts:
+  lines: 18
+  tokens: 84
+failures: {}
+samples: {}
+failure_rate: {}
+shift_left: []
+predicted_gaps:
+- 'no open treebank for Old English poetry: lemma and morphology hand-annotated (Clark Hall, 1916), draft'
+- the sound rules are late West Saxon; the Northumbrian copy is read from its own words respelled in the letters those rules read (n in the edition), so its vowels and endings are Cædmon's dialect's but
+  the sound values are modeled on the later standard
+- vowel length is the Wikisource transcriber's marking, not the manuscripts'; the Tanner copy leaves he unmarked, sounded long
+- 19 further copies (the aelda and eorðan recensions in other manuscripts of Bede) are not included
+- Brooke translates the Northumbrian copy only; the West Saxon copy has the Weft translation alone

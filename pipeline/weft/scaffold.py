@@ -145,7 +145,8 @@ def wikitext_plain(data: bytes) -> bytes:
 
 CONVERTERS = {"heimskringla-stanza-text": wikitext_to_stanza_text, "wikitext": wikitext_plain}
 
-WS = re.compile(r"^https?://(?P<lang>[a-z\-]+)\.wikisource\.org/(?:wiki/(?P<title>[^?#]+)|w/index\.php\?(?P<q>.*))$")
+# the language subdomain is optional: multilingual Wikisource (Old Irish, Gaulish, ...) is bare wikisource.org
+WS = re.compile(r"^https?://(?:(?P<lang>[a-z\-]+)\.)?wikisource\.org/(?:wiki/(?P<title>[^?#]+)|w/index\.php\?(?P<q>.*))$")
 
 
 def resolve_wikisource(url: str) -> tuple[str, str, int | None, str | None]:
@@ -155,21 +156,23 @@ def resolve_wikisource(url: str) -> tuple[str, str, int | None, str | None]:
     if not m:
         return url, url, None, None
     lang = m.group("lang")
+    host = f"{lang}.wikisource.org" if lang else "wikisource.org"
+    lang = lang or "multilingual"
     if m.group("q"):
         q = urllib.parse.parse_qs(m.group("q"))
         if "oldid" in q:
             rev = int(q["oldid"][0])
-            return f"https://{lang}.wikisource.org/w/index.php?oldid={rev}&action=raw", f"{lang}.wikisource revision {rev}", rev, q.get("title", [None])[0]
+            return f"https://{host}/w/index.php?oldid={rev}&action=raw", f"{lang}.wikisource revision {rev}", rev, q.get("title", [None])[0]
         title = q.get("title", [""])[0]
     else:
         title = urllib.parse.unquote(m.group("title"))
-    api = f"https://{lang}.wikisource.org/w/api.php?action=query&prop=revisions&rvprop=ids&format=json&titles=" + urllib.parse.quote(title)
+    api = f"https://{host}/w/api.php?action=query&prop=revisions&rvprop=ids&format=json&titles=" + urllib.parse.quote(title)
     pages = fetch_json(api)["query"]["pages"]
     page = next(iter(pages.values()))
     if "revisions" not in page:
         raise SystemExit(f"weft pin: no such page on {lang}.wikisource: {title}")
     rev = page["revisions"][0]["revid"]
-    return f"https://{lang}.wikisource.org/w/index.php?oldid={rev}&action=raw", f"{title}, {lang}.wikisource, revision {rev}", rev, title
+    return f"https://{host}/w/index.php?oldid={rev}&action=raw", f"{title}, {lang}.wikisource, revision {rev}", rev, title
 
 
 def _stem(title: str, limit: int = 40) -> str:
@@ -241,8 +244,13 @@ def pin(repo: Path, work: str, url: str, sid: str | None = None, name: str | Non
 
 
 # ---------------------------------------------------------------- image
+HIDDEN = re.compile(r"<(span|div)[^>]*display:\s*none[^>]*>.*?</\1>", re.S)
+
+
 def strip_tags(s: str) -> str:
-    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", s or "")).strip()
+    """Commons metadata HTML -> text. A hidden element (display: none) is dropped with its text: Commons
+    repeats the artist in one ('Unknown author' twice) and puts Wikidata markup in another."""
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", HIDDEN.sub("", s or ""))).strip()
 
 
 def image(repo: Path, work: str, commons_file: str, caption: str | None = None, alt: str | None = None) -> dict:
@@ -476,7 +484,7 @@ def gen_lines(work_dir: Path) -> dict[str, list[str]]:
     for gp in sorted((work_dir / "gen").glob("*.yaml")):
         if gp.name.endswith(".run.yaml"):
             continue
-        g = yaml.safe_load(gp.read_text())
+        g = yaml.safe_load(gp.read_text()) or {}      # a comment-only gen file (an empty quantities-proposed.yaml) has no lines
         for l in g.get("lines", []):
             out[l["id"]] = [t["surface"] for t in l["tokens"]]
     return out

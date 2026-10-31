@@ -15,14 +15,14 @@ from pathlib import Path
 
 import yaml
 
-from . import __version__, akkadian, cherokee, chinese, coptic, dutch, egyptian, elvish, esperanto, french, german, greek, hebrew, italian, japanese, latin, mongolian, norse, oldeastslavic, oldenglish, oldfrench, persian, portuguese, runic, sanskrit, spanish, sumerian, swahili, tamil, treebank
+from . import __version__, akkadian, cherokee, chinese, coptic, dutch, egyptian, elvish, esperanto, french, german, greek, hebrew, italian, japanese, latin, mongolian, norse, oldeastslavic, oldenglish, oldfrench, oldirish, persian, portuguese, runic, sanskrit, spanish, sumerian, swahili, tamil, treebank, welsh
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
 INDECLINABLE = set("dcgriebz")   # b: GLAUx coordinating conjunction
 PHON = {"grc": greek, "lat": latin, "non": norse, "ang": oldenglish, "hbo": hebrew, "arc": hebrew, "lzh": chinese, "runic": runic, "ja": japanese, "san": sanskrit,
         "akk": akkadian, "fa": persian, "ta": tamil, "it": italian, "fr": french,
         "es": spanish, "nl": dutch, "fro": oldfrench, "de": german, "egy": egyptian, "sux": sumerian, "orv": oldeastslavic, "xng": mongolian, "cop": coptic, "sw": swahili, "chr": cherokee,
-        "qya": elvish, "sjn": elvish, "eo": esperanto,      # Quenya and Sindarin share one module; private works only
+        "qya": elvish, "sjn": elvish, "eo": esperanto, "sga": oldirish, "wlm": welsh,      # Quenya and Sindarin share one module; private works only
         "pt": portuguese}
 NORMALIZE = {"heyne-to-macron": oldenglish.heyne_to_macron}
 LEAD = re.compile(r"^([(\[“«‹\"]+|[-–—]+\u00a0)")
@@ -349,7 +349,20 @@ def run(work_dir: Path, book: int | None = None, first: int | None = None, last:
                     if k == 0:
                         fail("ocr-correction-unused", str(c["ocr"]))
                 cache[vpath] = raw_src
-            if " ".join(verify_text.get((gid, i), text).split()) not in cache[vpath]:
+            # a declared letter the source's OCR cannot carry (Skene's dotted ẏ read as y) is folded on the
+            # edition's side before the comparison: {printed: as-read}
+            vt = verify_text.get((gid, i), text)
+            for k_, v_ in (edition.get("verify_fold") or {}).items():
+                vt = vt.replace(k_, v_)
+            # a letter the OCR renders inconsistently (the Book of Taliesin's ỽ, read as O, C, 6, 0, d) may be
+            # declared as a class of renderings: {printed: regex}. Every other letter must still match exactly
+            wild = edition.get("verify_wildcard") or {}
+            vt = " ".join(vt.split())
+            if wild and any(c in vt for c in wild):
+                found = re.search("".join(wild.get(c) or re.escape(c) for c in vt), cache[vpath]) is not None
+            else:
+                found = vt in cache[vpath]
+            if not found:
                 fail("edition-not-in-source", f"{gid}.{i}")
     elif ed_fmt == "stanza-text":
         st = stanza_lines(work_dir / m["edition"]["file"], pilot["stanzas"])

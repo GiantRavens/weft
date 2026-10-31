@@ -1,0 +1,39 @@
+run:
+  weft: 0.1.0
+  sections:
+  - pre
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '10'
+  - '11'
+  - '12'
+  - '13'
+  - '14'
+  - t
+counts:
+  lines: 69
+  tokens: 688
+failures:
+  quantity-unknown: 477
+samples:
+  quantity-unknown:
+  - pre.1 Henricus
+  - pre.1 rex
+  - pre.1 Anglorum
+  - pre.1 Samsoni
+  - pre.1 episcopo
+failure_rate:
+  quantity-unknown: 0.693
+shift_left:
+- quantity-unknown
+predicted_gaps:
+- 'no treebank for medieval charters: lemma and morphology hand-annotated, draft'
+- Cheyney translates another copy, so his preamble and witnesses are not this copy's; the Weft translation covers those parts
+- the text is Stubbs and Davis's (1913), from the Worcestershire copy's address with the common text; the variants of the other copies (Bémont 1892, Liebermann) are not shown

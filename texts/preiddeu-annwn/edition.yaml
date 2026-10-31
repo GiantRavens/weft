@@ -1,0 +1,507 @@
+# Weft edition of Preiddeu Annwn ('The spoils of Annwn'), poem XXX of the Book of Taliesin (National Library
+# of Wales, Peniarth MS 2, fol. 25b-26a, first half of the 14th century), in the text of W. F. Skene, The
+# Four Ancient Books of Wales (1868), vol. 2, pp. 181-182. Each line is checked against the Internet Archive
+# OCR of the Toronto copy (pinned).
+#
+# Skene prints the manuscript's w-letter with the sign ỽ (Unicode U+1EFD, Middle-Welsh v), which this
+# edition keeps; plain w also occurs (wledic, prytwen). The OCR reads ỽ as O, C, c, 0, 6 or d, so the
+# check treats ỽ as that declared class (verify_wildcard; also Ci, Cr) and every other letter exactly. The remaining
+# OCR misreadings are declared in verify_corrections, each settled on the page image (leaf n206, n207).
+# Skene's dotted y in peridẏd (line 44) is folded to y for the check.
+#
+# Sections are the poem's eight stanzas, each closed by the refrain 'nam(yn) seith ny dyrreith'.
+#   t        the word as Skene prints it, punctuation attached
+#   n        Weft's normalized spelling in modern Welsh letters, from which the sound is read; draft
+work: preiddeu-annwn
+joiner: ' '
+verify_in: sources/skene1868-v2.txt
+verify_fold: {ẏ: y}
+verify_wildcard: {ỽ: '(?:[OoCc06dỽ]|Ci|Cr)'}
+verify_corrections:
+- {ocr: '^►^OLYCHAF', print: Golychaf}
+- {ocr: traetb mmidi, print: traeth mundi}
+- {ocr: Tri Uoneit pr3i;wen, print: Tri lloneit prytwen}
+- {ocr: Tri Uoneit prytwen yd aetham ni ar vor, print: Tri lloneit prytwen yd aetham ni ar vor}
+- {ocr: Ygk3nmeir, print: Ygkynneir}
+- {ocr: rytygbit, print: rytyghit}
+- {ocr: UaO leminadc, print: llaỽ leminaỽc}
+- {ocr: Uoscit, print: lloscit}
+- {ocr: A pban aetham, print: A phan aetham}
+- {ocr: Neut Cyf glot geinmyn kerd gly^anaOr, print: Neut ỽyf glot geinmyn kerd glywanaỽr}
+- {ocr: pybjrrdor, print: pybyrdor}
+- {ocr: Nainyn seith, print: Namyn seith}
+- {ocr: M obrynafi lawyr lien Uywyadur, print: Ni obrynafi lawyr llen llywyadur}
+- {ocr: dyn^eith o gaer vandOy, print: dyrreith o gaer vandỽy}
+- {ocr: law3rr, print: lawyr}
+- {ocr: 0 gyfranc udyd, print: O gyfranc udyd}
+- {ocr: pendeiic maOr, print: pendefic maỽr}
+- {ocr: tost yt geni Ac yt, print: tost yt geni. Ac yt}
+sections:
+- id: '1'
+  title: 'Stanza 1'
+  lines:
+  - tokens:
+    - {t: 'Golychaf', n: 'golychaf'}
+    - {t: 'wledic', n: 'wledig'}
+    - {t: 'pendeuic', n: 'pendefig'}
+    - {t: 'gỽlat', n: 'gwlad'}
+    - {t: 'ri.', n: 'rhi'}
+  - tokens:
+    - {t: 'Py', n: 'py'}
+    - {t: 'ledas', n: 'ledas'}
+    - {t: 'y', n: 'y'}
+    - {t: 'pennaeth', n: 'pennaeth'}
+    - {t: 'dros', n: 'dros'}
+    - {t: 'traeth', n: 'traeth'}
+    - {t: 'mundi.', n: 'mundi'}
+  - tokens:
+    - {t: 'Bu', n: 'bu'}
+    - {t: 'kyweir', n: 'cyweir'}
+    - {t: 'karchar', n: 'carchar'}
+    - {t: 'gweir', n: 'Gweir'}
+    - {t: 'ygkaer', n: 'yng nghaer'}
+    - {t: 'sidi.', n: 'Siddi'}
+  - tokens:
+    - {t: 'Trỽy', n: 'trwy'}
+    - {t: 'ebostol', n: 'ebostol'}
+    - {t: 'pỽyll', n: 'Pwyll'}
+    - {t: 'a', n: 'a'}
+    - {t: 'phryderi.', n: 'Phryderi'}
+  - tokens:
+    - {t: 'Neb', n: 'neb'}
+    - {t: 'kyn', n: 'cyn'}
+    - {t: 'noc', n: 'noc'}
+    - {t: 'ef', n: 'ef'}
+    - {t: 'nyt', n: 'nyd'}
+    - {t: 'aeth', n: 'aeth'}
+    - {t: 'idi.', n: 'iddi'}
+  - tokens:
+    - {t: 'Yr', n: 'yr'}
+    - {t: 'gadỽyn', n: 'gadwyn'}
+    - {t: 'tromlas', n: 'tromlas'}
+    - {t: 'kywirwas', n: 'cywirwas'}
+    - {t: 'ae', n: 'a''e'}
+    - {t: 'ketwi.', n: 'cedwi'}
+  - tokens:
+    - {t: 'A', n: 'a'}
+    - {t: 'rac', n: 'rhag'}
+    - {t: 'preideu', n: 'preiddeu'}
+    - {t: 'annỽfyn', n: 'Annwfn'}
+    - {t: 'tost', n: 'tost'}
+    - {t: 'yt', n: 'yd'}
+    - {t: 'geni.', n: 'geni'}
+  - tokens:
+    - {t: 'Ac', n: 'ac'}
+    - {t: 'yt', n: 'yd'}
+    - {t: 'uraỽt', n: 'frawd'}
+    - {t: 'parahaỽt', n: 'parahawd'}
+    - {t: 'yn', n: 'yn'}
+    - {t: 'bard', n: 'bardd'}
+    - {t: 'wedi.', n: 'weddi'}
+  - tokens:
+    - {t: 'Tri', n: 'tri'}
+    - {t: 'lloneit', n: 'lloneid'}
+    - {t: 'prytwen', n: 'Prydwen'}
+    - {t: 'yd', n: 'yd'}
+    - {t: 'aetham', n: 'aetham'}
+    - {t: 'ni', n: 'ni'}
+    - {t: 'idi.', n: 'iddi'}
+  - tokens:
+    - {t: 'Nam', n: 'nam'}
+    - {t: 'seith', n: 'seith'}
+    - {t: 'ny', n: 'ny'}
+    - {t: 'dyrreith', n: 'dyrreith'}
+    - {t: 'o', n: 'o'}
+    - {t: 'gaer', n: 'gaer'}
+    - {t: 'sidi.', n: 'Siddi'}
+- id: '2'
+  title: 'Stanza 2'
+  lines:
+  - tokens:
+    - {t: 'Neut', n: 'neud'}
+    - {t: 'ỽyf', n: 'wyf'}
+    - {t: 'glot', n: 'glod'}
+    - {t: 'geinmyn', n: 'geinmyn'}
+    - {t: 'cerd', n: 'cerdd'}
+    - {t: 'o', n: 'o'}
+    - {t: 'chlywir.', n: 'chlywir'}
+  - tokens:
+    - {t: 'Igkaer', n: 'yng nghaer'}
+    - {t: 'pedryuan', n: 'Pedryfan'}
+    - {t: 'pedyr', n: 'pedyr'}
+    - {t: 'y', n: 'y'}
+    - {t: 'chwelyt.', n: 'chwelyd'}
+  - tokens:
+    - {t: 'Ygkynneir', n: 'yng nghynneir'}
+    - {t: 'or', n: 'o''r'}
+    - {t: 'peir', n: 'peir'}
+    - {t: 'pan', n: 'pan'}
+    - {t: 'leferit.', n: 'leferid'}
+  - tokens:
+    - {t: 'O', n: 'o'}
+    - {t: 'anadyl', n: 'anadyl'}
+    - {t: 'naỽ', n: 'naw'}
+    - {t: 'morỽyn', n: 'morwyn'}
+    - {t: 'gochyneuit.', n: 'gochyneuid'}
+  - tokens:
+    - {t: 'Neu', n: 'neu'}
+    - {t: 'peir', n: 'peir'}
+    - {t: 'pen', n: 'pen'}
+    - {t: 'annỽfyn', n: 'Annwfn'}
+    - {t: 'pỽy', n: 'pwy'}
+    - {t: 'y', n: 'y'}
+    - {t: 'vynut.', n: 'fynud'}
+  - tokens:
+    - {t: 'Gỽrym', n: 'gwrym'}
+    - {t: 'am', n: 'am'}
+    - {t: 'y', n: 'y'}
+    - {t: 'oror', n: 'oror'}
+    - {t: 'a', n: 'a'}
+    - {t: 'mererit.', n: 'mererid'}
+  - tokens:
+    - {t: 'Ny', n: 'ny'}
+    - {t: 'beirỽ', n: 'beirw'}
+    - {t: 'bỽyt', n: 'bwyd'}
+    - {t: 'llỽfyr', n: 'llwfyr'}
+    - {t: 'ny', n: 'ny'}
+    - {t: 'rytyghit.', n: 'rydyngid'}
+  - tokens:
+    - {t: 'Cledyf', n: 'cleddyf'}
+    - {t: 'lluch', n: 'lluch'}
+    - {t: 'lleaỽc', n: 'lleawg'}
+    - {t: 'idaỽ', n: 'iddaw'}
+    - {t: 'rydyrchit.', n: 'rydyrchid'}
+  - tokens:
+    - {t: 'Ac', n: 'ac'}
+    - {t: 'yn', n: 'yn'}
+    - {t: 'llaỽ', n: 'llaw'}
+    - {t: 'leminaỽc', n: 'Leminog'}
+    - {t: 'yd', n: 'yd'}
+    - {t: 'edewit.', n: 'edewid'}
+  - tokens:
+    - {t: 'A', n: 'a'}
+    - {t: 'rac', n: 'rhag'}
+    - {t: 'drỽs', n: 'drws'}
+    - {t: 'porth', n: 'porth'}
+    - {t: 'vffern', n: 'uffern'}
+    - {t: 'llugyrn', n: 'llugyrn'}
+    - {t: 'lloscit.', n: 'llosgid'}
+  - tokens:
+    - {t: 'A', n: 'a'}
+    - {t: 'phan', n: 'phan'}
+    - {t: 'aetham', n: 'aetham'}
+    - {t: 'ni', n: 'ni'}
+    - {t: 'gan', n: 'gan'}
+    - {t: 'arthur', n: 'Arthur'}
+    - {t: 'trafferth', n: 'trafferth'}
+    - {t: 'lethrit.', n: 'lethrid'}
+  - tokens:
+    - {t: 'Namyn', n: 'namyn'}
+    - {t: 'seith', n: 'seith'}
+    - {t: 'ny', n: 'ny'}
+    - {t: 'dyrreith', n: 'dyrreith'}
+    - {t: 'o', n: 'o'}
+    - {t: 'gaer', n: 'gaer'}
+    - {t: 'vedwit.', n: 'Fedwyd'}
+- id: '3'
+  title: 'Stanza 3'
+  lines:
+  - tokens:
+    - {t: 'Neut', n: 'neud'}
+    - {t: 'ỽyf', n: 'wyf'}
+    - {t: 'glot', n: 'glod'}
+    - {t: 'geinmyn', n: 'geinmyn'}
+    - {t: 'kerd', n: 'cerdd'}
+    - {t: 'glywanaỽr.', n: 'glywanawr'}
+  - tokens:
+    - {t: 'Igkaer', n: 'yng nghaer'}
+    - {t: 'pedryfan', n: 'Pedryfan'}
+    - {t: 'ynys', n: 'ynys'}
+    - {t: 'pybyrdor.', n: 'pybyrdor'}
+  - tokens:
+    - {t: 'Echỽyd', n: 'echwydd'}
+    - {t: 'a', n: 'a'}
+    - {t: 'muchyd', n: 'muchydd'}
+    - {t: 'kymysgetor.', n: 'cymysgedor'}
+  - tokens:
+    - {t: 'Gỽin', n: 'gwin'}
+    - {t: 'gloyỽ', n: 'gloyw'}
+    - {t: 'eu', n: 'eu'}
+    - {t: 'gỽiraỽt', n: 'gwirawd'}
+    - {t: 'rac', n: 'rhag'}
+    - {t: 'eu', n: 'eu'}
+    - {t: 'gorgord.', n: 'gorgordd'}
+  - tokens:
+    - {t: 'Tri', n: 'tri'}
+    - {t: 'lloneit', n: 'lloneid'}
+    - {t: 'prytwen', n: 'Prydwen'}
+    - {t: 'yd', n: 'yd'}
+    - {t: 'aetham', n: 'aetham'}
+    - {t: 'ni', n: 'ni'}
+    - {t: 'ar', n: 'ar'}
+    - {t: 'vor.', n: 'for'}
+  - tokens:
+    - {t: 'Namyn', n: 'namyn'}
+    - {t: 'seith', n: 'seith'}
+    - {t: 'ny', n: 'ny'}
+    - {t: 'dyrreith', n: 'dyrreith'}
+    - {t: 'o', n: 'o'}
+    - {t: 'gaer', n: 'gaer'}
+    - {t: 'rigor.', n: 'Rigor'}
+- id: '4'
+  title: 'Stanza 4'
+  lines:
+  - tokens:
+    - {t: 'Ni', n: 'ni'}
+    - {t: 'obrynafi', n: 'obrynafi'}
+    - {t: 'lawyr', n: 'lawyr'}
+    - {t: 'llen', n: 'llen'}
+    - {t: 'llywyadur', n: 'llywyadur'}
+  - tokens:
+    - {t: 'Tra', n: 'tra'}
+    - {t: 'chaer', n: 'chaer'}
+    - {t: 'wydyr', n: 'Wydyr'}
+    - {t: 'ny', n: 'ny'}
+    - {t: 'welsynt', n: 'welsynt'}
+    - {t: 'ỽrhyt', n: 'wrhyd'}
+    - {t: 'arthur.', n: 'Arthur'}
+  - tokens:
+    - {t: 'Tri', n: 'tri'}
+    - {t: 'vgeint', n: 'ugeint'}
+    - {t: 'canhỽr', n: 'canhwr'}
+    - {t: 'a', n: 'a'}
+    - {t: 'seui', n: 'sefi'}
+    - {t: 'ar', n: 'ar'}
+    - {t: 'y', n: 'y'}
+    - {t: 'mur.', n: 'mur'}
+  - tokens:
+    - {t: 'Oed', n: 'oedd'}
+    - {t: 'anhaỽd', n: 'anhawdd'}
+    - {t: 'ymadraỽd', n: 'ymadrawdd'}
+    - {t: 'ae', n: 'a''e'}
+    - {t: 'gwylyadur.', n: 'gwylyadur'}
+  - tokens:
+    - {t: 'Tri', n: 'tri'}
+    - {t: 'lloneit', n: 'lloneid'}
+    - {t: 'prytwen', n: 'Prydwen'}
+    - {t: 'yd', n: 'yd'}
+    - {t: 'aeth', n: 'aeth'}
+    - {t: 'gan', n: 'gan'}
+    - {t: 'arthur.', n: 'Arthur'}
+  - tokens:
+    - {t: 'Namyn', n: 'namyn'}
+    - {t: 'seith', n: 'seith'}
+    - {t: 'ny', n: 'ny'}
+    - {t: 'dyrreith', n: 'dyrreith'}
+    - {t: 'o', n: 'o'}
+    - {t: 'gaer', n: 'gaer'}
+    - {t: 'golud.', n: 'Golud'}
+- id: '5'
+  title: 'Stanza 5'
+  lines:
+  - tokens:
+    - {t: 'Ny', n: 'ny'}
+    - {t: 'obrynaf', n: 'obrynaf'}
+    - {t: 'y', n: 'y'}
+    - {t: 'lawyr', n: 'lawyr'}
+    - {t: 'llaes', n: 'llaes'}
+    - {t: 'eu', n: 'eu'}
+    - {t: 'kylchỽy.', n: 'cylchwy'}
+  - tokens:
+    - {t: 'Ny', n: 'ny'}
+    - {t: 'ỽdant', n: 'wddant'}
+    - {t: 'ỽy', n: 'wy'}
+    - {t: 'py', n: 'py'}
+    - {t: 'dyd', n: 'dydd'}
+    - {t: 'peridyd', n: 'peridydd'}
+    - {t: 'pỽy.', n: 'pwy'}
+  - tokens:
+    - {t: 'Py', n: 'py'}
+    - {t: 'aỽr', n: 'awr'}
+    - {t: 'y', n: 'y'}
+    - {t: 'meindyd', n: 'meindydd'}
+    - {t: 'y', n: 'y'}
+    - {t: 'ganet', n: 'ganed'}
+    - {t: 'cỽy.', n: 'Cwy'}
+  - tokens:
+    - {t: 'Pỽy', n: 'pwy'}
+    - {t: 'gỽnaeth', n: 'gwnaeth'}
+    - {t: 'ar', n: 'ar'}
+    - {t: 'nyt', n: 'nyd'}
+    - {t: 'aeth', n: 'aeth'}
+    - {t: 'doleu', n: 'doleu'}
+    - {t: 'defỽy.', n: 'Defwy'}
+  - tokens:
+    - {t: 'Ny', n: 'ny'}
+    - {t: 'ỽdant', n: 'wddant'}
+    - {t: 'ỽy', n: 'wy'}
+    - {t: 'yr', n: 'yr'}
+    - {t: 'ych', n: 'ych'}
+    - {t: 'brych', n: 'brych'}
+    - {t: 'bras', n: 'bras'}
+    - {t: 'y', n: 'y'}
+    - {t: 'penrỽy.', n: 'penrwy'}
+  - tokens:
+    - {t: 'Seith', n: 'seith'}
+    - {t: 'vgein', n: 'ugein'}
+    - {t: 'kygỽng', n: 'cygwng'}
+    - {t: 'yny', n: 'yn y'}
+    - {t: 'aerỽy.', n: 'aerwy'}
+  - tokens:
+    - {t: 'A', n: 'a'}
+    - {t: 'phan', n: 'phan'}
+    - {t: 'aetham', n: 'aetham'}
+    - {t: 'ni', n: 'ni'}
+    - {t: 'gan', n: 'gan'}
+    - {t: 'arthir', n: 'Arthur'}
+    - {t: 'auyrdol', n: 'afyrdol'}
+    - {t: 'gofỽy.', n: 'gofwy'}
+  - tokens:
+    - {t: 'Namyn', n: 'namyn'}
+    - {t: 'seith', n: 'seith'}
+    - {t: 'ny', n: 'ny'}
+    - {t: 'dyrreith', n: 'dyrreith'}
+    - {t: 'o', n: 'o'}
+    - {t: 'gaer', n: 'gaer'}
+    - {t: 'vandỽy.', n: 'Fandwy'}
+- id: '6'
+  title: 'Stanza 6'
+  lines:
+  - tokens:
+    - {t: 'Ny', n: 'ny'}
+    - {t: 'obrynaf', n: 'obrynaf'}
+    - {t: 'y', n: 'y'}
+    - {t: 'lawyr', n: 'lawyr'}
+    - {t: 'llaes', n: 'llaes'}
+    - {t: 'eu', n: 'eu'}
+    - {t: 'goheu.', n: 'goheu'}
+  - tokens:
+    - {t: 'Ny', n: 'ny'}
+    - {t: 'ỽdant', n: 'wddant'}
+    - {t: 'py', n: 'py'}
+    - {t: 'dyd', n: 'dydd'}
+    - {t: 'peridẏd', n: 'peridydd'}
+    - {t: 'pen.', n: 'pen'}
+  - tokens:
+    - {t: 'Py', n: 'py'}
+    - {t: 'aỽr', n: 'awr'}
+    - {t: 'y', n: 'y'}
+    - {t: 'meindyd', n: 'meindydd'}
+    - {t: 'y', n: 'y'}
+    - {t: 'ganet', n: 'ganed'}
+    - {t: 'perchen.', n: 'perchen'}
+  - tokens:
+    - {t: 'Py', n: 'py'}
+    - {t: 'vil', n: 'fil'}
+    - {t: 'a', n: 'a'}
+    - {t: 'gatwant', n: 'gadwant'}
+    - {t: 'aryant', n: 'aryant'}
+    - {t: 'y', n: 'y'}
+    - {t: 'pen.', n: 'pen'}
+  - tokens:
+    - {t: 'Pan', n: 'pan'}
+    - {t: 'aetham', n: 'aetham'}
+    - {t: 'ni', n: 'ni'}
+    - {t: 'gan', n: 'gan'}
+    - {t: 'arthur', n: 'Arthur'}
+    - {t: 'afyrdỽl', n: 'afyrdwl'}
+    - {t: 'gynhen.', n: 'gynhen'}
+  - tokens:
+    - {t: 'Namyn', n: 'namyn'}
+    - {t: 'seith', n: 'seith'}
+    - {t: 'ny', n: 'ny'}
+    - {t: 'dyrreith', n: 'dyrreith'}
+    - {t: 'a', n: 'a'}
+    - {t: 'gaer', n: 'gaer'}
+    - {t: 'ochren.', n: 'Ochren'}
+- id: '7'
+  title: 'Stanza 7'
+  lines:
+  - tokens:
+    - {t: 'Myneich', n: 'myneich'}
+    - {t: 'dychnut', n: 'dychnud'}
+    - {t: 'val', n: 'fal'}
+    - {t: 'cunin', n: 'cunin'}
+    - {t: 'cor.', n: 'cor'}
+  - tokens:
+    - {t: 'O', n: 'o'}
+    - {t: 'gyfranc', n: 'gyfranc'}
+    - {t: 'udyd', n: 'uddydd'}
+    - {t: 'ae', n: 'ae'}
+    - {t: 'gỽidan', n: 'gwiddan'}
+    - {t: 'hor.', n: 'hor'}
+  - tokens:
+    - {t: 'Ae', n: 'ae'}
+    - {t: 'vn', n: 'un'}
+    - {t: 'hynt', n: 'hynt'}
+    - {t: 'gỽynt', n: 'gwynt'}
+    - {t: 'ae', n: 'ae'}
+    - {t: 'vn', n: 'un'}
+    - {t: 'dỽfyr', n: 'dwfyr'}
+    - {t: 'mor.', n: 'mor'}
+  - tokens:
+    - {t: 'Ae', n: 'ae'}
+    - {t: 'vn', n: 'un'}
+    - {t: 'ufel', n: 'ufel'}
+    - {t: 'tan', n: 'tan'}
+    - {t: 'tỽrỽf', n: 'twrwf'}
+    - {t: 'diachor.', n: 'diachor'}
+- id: '8'
+  title: 'Stanza 8'
+  lines:
+  - tokens:
+    - {t: 'Myneych', n: 'myneych'}
+    - {t: 'dychnut', n: 'dychnud'}
+    - {t: 'val', n: 'fal'}
+    - {t: 'bleidaỽr.', n: 'bleiddawr'}
+  - tokens:
+    - {t: 'O', n: 'o'}
+    - {t: 'gyfranc', n: 'gyfranc'}
+    - {t: 'udyd', n: 'uddydd'}
+    - {t: 'ae', n: 'ae'}
+    - {t: 'gỽydyanhaỽr', n: 'gwyddyanhawr'}
+  - tokens:
+    - {t: 'Ny', n: 'ny'}
+    - {t: 'ỽdant', n: 'wddant'}
+    - {t: 'pan', n: 'pan'}
+    - {t: 'yscar', n: 'ysgar'}
+    - {t: 'deweint', n: 'deweint'}
+    - {t: 'a', n: 'a'}
+    - {t: 'gỽaỽr.', n: 'gwawr'}
+  - tokens:
+    - {t: 'Neu', n: 'neu'}
+    - {t: 'ỽynt', n: 'wynt'}
+    - {t: 'pỽy', n: 'pwy'}
+    - {t: 'hynt', n: 'hynt'}
+    - {t: 'pỽy', n: 'pwy'}
+    - {t: 'y', n: 'y'}
+    - {t: 'rynnaỽd.', n: 'rynnawd'}
+  - tokens:
+    - {t: 'Py', n: 'py'}
+    - {t: 'va', n: 'fa'}
+    - {t: 'diua', n: 'difa'}
+    - {t: 'py', n: 'py'}
+    - {t: 'tir', n: 'tir'}
+    - {t: 'a', n: 'a'}
+    - {t: 'plaỽd.', n: 'plawd'}
+  - tokens:
+    - {t: 'Bet', n: 'bedd'}
+    - {t: 'sant', n: 'sant'}
+    - {t: 'yn', n: 'yn'}
+    - {t: 'diuant', n: 'difant'}
+    - {t: 'a', n: 'a'}
+    - {t: 'bet', n: 'bedd'}
+    - {t: 'allaỽr.', n: 'allawr'}
+  - tokens:
+    - {t: 'Golychaf', n: 'golychaf'}
+    - {t: 'y', n: 'y'}
+    - {t: 'wledic', n: 'wledig'}
+    - {t: 'pendefic', n: 'pendefig'}
+    - {t: 'maỽr.', n: 'mawr'}
+  - tokens:
+    - {t: 'Na', n: 'na'}
+    - {t: 'bỽyf', n: 'bwyf'}
+    - {t: 'trist', n: 'trist'}
+    - {t: 'crist', n: 'Crist'}
+    - {t: 'am', n: 'a''m'}
+    - {t: 'gỽadaỽl.', n: 'gwaddawl'}

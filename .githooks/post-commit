@@ -1,0 +1,12 @@
+#!/bin/sh
+# Weft private build after each commit: starts `weft build all --private` in the background, so the
+# commit returns at once and private/build/ is current about ten minutes later. Log:
+# private/build/autobuild.log. Skip once with WEFT_NO_AUTOBUILD=1 git commit ..., or for good with
+# git config weft.autobuild false. Needs core.hooksPath .githooks (see pre-commit).
+[ "${WEFT_NO_AUTOBUILD:-0}" = 1 ] && exit 0
+[ "$(git config --bool weft.autobuild)" = false ] && exit 0
+top=$(git rev-parse --show-toplevel)
+[ -x "$top/.venv/bin/weft" ] && [ -d "$top/private" ] || exit 0
+mkdir -p "$top/private/build"
+nohup "$top/.githooks/autobuild-private" "$top" >/dev/null 2>&1 &
+exit 0

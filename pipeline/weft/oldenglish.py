@@ -27,7 +27,7 @@ import re
 import unicodedata as ud
 from dataclasses import dataclass
 
-VERSION = "0.1"
+VERSION = "0.2"
 MACRON = "̄"
 VOWELS = set("aæeiouy")
 FRONT = set("eiæy")
@@ -131,7 +131,8 @@ def _split_prefix(word: str, pos: str | None, lemma: str | None,
     w = word.lower()
     lem = _strip_macrons((lemma or "").lower())
     for p in ALWAYS_PREFIXES:
-        if w.startswith(p) and len(w) > len(p) + 2 and not lem.startswith(p):
+        # be or ge before a or o is a root diphthong (bearn, beorht, gēar, geong), not the prefix
+        if w.startswith(p) and len(w) > len(p) + 2 and not lem.startswith(p) and _strip_macrons(w)[len(p)] not in "ao":
             return word[: len(p)], word[len(p):]
     if pos in ("VERB", "AUX"):
         for p in VERB_PREFIXES:
@@ -230,7 +231,7 @@ def _word_ipa(syls: list[Syl], root_start: int, boundaries: set[int] | None = No
         if t == "c":
             if (initial and _is_front(nxt)) or (final and prev is not None and prev.vowel and prev.text in ("i",)):
                 parts[n] += "tʃ"
-            elif prev is not None and prev.vowel and prev.text in ("i", "e") and nxt is not None and nxt.vowel and nxt.text in ("e",) and not initial:
+            elif prev is not None and prev.vowel and prev.text in ("i", "e") and nxt is not None and nxt.vowel and nxt.text in ("e", "i") and not initial:
                 parts[n] += "tʃ"
             else:
                 parts[n] += "k"
@@ -239,17 +240,18 @@ def _word_ipa(syls: list[Syl], root_start: int, boundaries: set[int] | None = No
         elif t == "cg":
             parts[n] += "dʒ"
         elif t == "g":
-            if prev is not None and prev.text == "n":
-                parts[n] += "ɡ"
-            elif initial:
+            # a compound's second element begins as a word does: middan-geard has the y sound
+            if initial:
                 parts[n] += "j" if _is_front(nxt) else "ɡ"
+            elif prev is not None and prev.text == "n":
+                parts[n] += "ɡ"
             elif prev is not None and prev.vowel and prev.text[-1] in "ieæ":
                 parts[n] += "j"
             elif prev is not None and (prev.vowel or prev.text in "lr"):
                 parts[n] += "ɣ"
             else:
                 parts[n] += "ɡ"
-        elif t == "n" and nxt is not None and nxt.text in ("g", "c", "k"):
+        elif t == "n" and nxt is not None and nxt.text in ("g", "c", "k") and k + 1 not in (boundaries or set()):
             parts[n] += "ŋ"
         elif t == "h":
             if initial or (nxt is not None and nxt.vowel):

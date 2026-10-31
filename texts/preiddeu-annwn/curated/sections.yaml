@@ -1,0 +1,433 @@
+# Human overlay, written in the compact spec and expanded by weft overlay.
+- by: "Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar"
+  date: "2026-10-31"
+  why: "all eight stanzas. Hand lemma, morphology and gloss; no treebank exists for Middle Welsh. Lemmas are Geiriadur Prifysgol Cymru (GPC) headwords in modern spelling, verbs under the verbal noun, mutated forms under the radical, names in their conventional modern form; morphology in Universal Dependencies features, with Person=0 for the Welsh impersonal. The glosses follow Robert Williams's 1868 translation where it reads the Welsh plausibly, and the readings of Marged Haycock (Legendary Poems from the Book of Taliesin, 2007) where it does not. The poem is among the most obscure in early Welsh; the lines with a note carry a disputed word a reviewer should check first. The readings attributed in the notes to Haycock, Sims-Williams or Koch were given from the annotator's knowledge of those books, not checked against them; each attribution is to be verified"
+  status: "draft"
+  set:
+    pa.1.1.1: {lemma: "golychu", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "I-praise"}   # Golychaf
+    pa.1.1.2: {lemma: "gwledig", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-lord"}   # wledic
+    pa.1.1.3: {lemma: "pendefig", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "prince"}   # pendeuic
+    pa.1.1.4: {lemma: "gwlad", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "of-the-land"}   # gỽlat
+    pa.1.1.5: {lemma: "rhi", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "king"}   # ri
+    # pa.1.2: mundi is Latin, the genitive of mundus 'world'
+    pa.1.2.1: {lemma: "py", morph: "PRON|PronType=Int", gloss: "who"}   # Py
+    pa.1.2.2: {lemma: "lledu", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "extended"}   # ledas
+    pa.1.2.3: {lemma: "ei", morph: "DET|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "his"}   # y
+    pa.1.2.4: {lemma: "pennaeth", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "dominion"}   # pennaeth
+    pa.1.2.5: {lemma: "dros", morph: "ADP", gloss: "over"}   # dros
+    pa.1.2.6: {lemma: "traeth", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-shore"}   # traeth
+    pa.1.2.7: {lemma: "mundus", morph: "NOUN|Case=Gen|Foreign=Yes|Gender=Masc|Number=Sing", gloss: "of-the-world"}   # mundi
+    # pa.1.3: kyweir 'complete' (Williams); Haycock 'made ready, prepared'
+    pa.1.3.1: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "was"}   # Bu
+    pa.1.3.2: {lemma: "cyweir", morph: "ADJ", gloss: "complete"}   # kyweir
+    pa.1.3.3: {lemma: "carchar", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-prison"}   # karchar
+    pa.1.3.4: {lemma: "Gweir", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "of-Gweir"}   # gweir
+    pa.1.3.5: {lemma: "yn + caer", morph: "ADP + NOUN|Gender=Fem|Number=Sing", gloss: "in-the-fort"}   # ygkaer
+    pa.1.3.6: {lemma: "Siddi", morph: "PROPN", gloss: "Siddi"}   # sidi
+    # pa.1.4: ebostol is literally 'epistle' (Latin epistola); Williams 'spite' does not fit the word; Haycock reads 'according to the account (tale) of'
+    pa.1.4.1: {lemma: "trwy", morph: "ADP", gloss: "through"}   # Trỽy
+    pa.1.4.2: {lemma: "epistol", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-account"}   # ebostol
+    pa.1.4.3: {lemma: "Pwyll", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "of-Pwyll"}   # pỽyll
+    pa.1.4.4: {lemma: "a", morph: "CCONJ", gloss: "and"}   # a
+    pa.1.4.5: {lemma: "Pryderi", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Pryderi"}   # phryderi
+    pa.1.5.1: {lemma: "neb", morph: "PRON|PronType=Ind", gloss: "no-one"}   # Neb
+    pa.1.5.2: {lemma: "cyn", morph: "ADP", gloss: "before"}   # kyn
+    pa.1.5.3: {lemma: "noc", morph: "SCONJ", gloss: "than"}   # noc
+    pa.1.5.4: {lemma: "ef", morph: "PRON|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "him"}   # ef
+    pa.1.5.5: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # nyt
+    pa.1.5.6: {lemma: "mynd", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "went"}   # aeth
+    pa.1.5.7: {lemma: "i", morph: "ADP|Gender=Fem|Number=Sing|Person=3", gloss: "into-it"}   # idi
+    # pa.1.6: Yr may be the article (Williams 'the heavy blue chain') or yr 'for, into the' (Haycock 'in the heavy grey chain'); tromlas trwm + glas, glas 'blue, grey, steel-coloured'; ae read a'e, the relative with the infixed object pronoun
+    pa.1.6.1: {lemma: "y", morph: "DET|Definite=Def|PronType=Art", gloss: "the"}   # Yr
+    pa.1.6.2: {lemma: "cadwyn", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "chain"}   # gadỽyn
+    pa.1.6.3: {lemma: "trymlas", morph: "ADJ", gloss: "heavy-blue"}   # tromlas
+    pa.1.6.4: {lemma: "cywirwas", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-faithful-youth"}   # kywirwas
+    pa.1.6.5: {lemma: "a + ef", morph: "PART|PronType=Rel + PRON|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "which-him"}   # ae
+    pa.1.6.6: {lemma: "cadw", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "held"}   # ketwi
+    # pa.1.7: rac here 'before' (Williams) or 'because of' (Haycock); geni read as keni, the imperfect of canu after the particle yt (Williams 'he sings')
+    pa.1.7.1: {lemma: "a", morph: "CCONJ", gloss: "and"}   # A
+    pa.1.7.2: {lemma: "rhag", morph: "ADP", gloss: "before"}   # rac
+    pa.1.7.3: {lemma: "praidd", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "the-spoils"}   # preideu
+    pa.1.7.4: {lemma: "Annwfn", morph: "PROPN", gloss: "of-Annwfn"}   # annỽfyn
+    pa.1.7.5: {lemma: "tost", morph: "ADJ", gloss: "grievously"}   # tost
+    pa.1.7.6: {lemma: "yd", morph: "PART", gloss: "(particle)"}   # yt
+    pa.1.7.7: {lemma: "canu", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "he-sang"}   # geni
+    # pa.1.8: yn read as the possessive 'our' with Haycock ('our bardic prayer'); Williams takes it as the predicative yn, 'a bard of prayer'; bard wedi is often printed as one word, bardwedi
+    pa.1.8.1: {lemma: "a", morph: "CCONJ", gloss: "and"}   # Ac
+    pa.1.8.2: {lemma: "hyd", morph: "ADP", gloss: "until"}   # yt
+    pa.1.8.3: {lemma: "brawd", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "Judgement"}   # uraỽt
+    pa.1.8.4: {lemma: "parhau", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "will-continue"}   # parahaỽt
+    pa.1.8.5: {lemma: "ein", morph: "DET|Number=Plur|Person=1|Poss=Yes|PronType=Prs", gloss: "our"}   # yn
+    pa.1.8.6: {lemma: "bardd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "bardic"}   # bard
+    pa.1.8.7: {lemma: "gweddi", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "prayer"}   # wedi
+    pa.1.9.1: {lemma: "tri", morph: "NUM", gloss: "three"}   # Tri
+    pa.1.9.2: {lemma: "llonaid", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "loads"}   # lloneit
+    pa.1.9.3: {lemma: "Prydwen", morph: "PROPN|Gender=Fem|Number=Sing", gloss: "of-Prydwen"}   # prytwen
+    pa.1.9.4: {lemma: "yd", morph: "PART", gloss: "(particle)"}   # yd
+    pa.1.9.5: {lemma: "mynd", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "went"}   # aetham
+    pa.1.9.6: {lemma: "ni", morph: "PRON|Number=Plur|Person=1|PronType=Prs", gloss: "we"}   # ni
+    pa.1.9.7: {lemma: "i", morph: "ADP|Gender=Fem|Number=Sing|Person=3", gloss: "into-it"}   # idi
+    # pa.1.10: dyrreith 'came back' is a preterite of the verb that GPC files under dyre-; the headword dyrraith is not verified against GPC
+    pa.1.10.1: {lemma: "namyn", morph: "ADP", gloss: "except"}   # Nam
+    pa.1.10.2: {lemma: "saith", morph: "NUM", gloss: "seven"}   # seith
+    pa.1.10.3: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # ny
+    pa.1.10.4: {lemma: "dyrraith", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "returned"}   # dyrreith
+    pa.1.10.5: {lemma: "o", morph: "ADP", gloss: "from"}   # o
+    pa.1.10.6: {lemma: "caer", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "the-fort"}   # gaer
+    pa.1.10.7: {lemma: "Siddi", morph: "PROPN", gloss: "Siddi"}   # sidi
+    # pa.2.1: neut is the affirmative particle; Williams reads it as a question ('Am I not a candidate for fame'); Haycock 'I am honoured in praise'; geinmyn (ceinmyn) is uncertain, glossed by context
+    pa.2.1.1: {lemma: "neud", morph: "PART", gloss: "indeed"}   # Neut
+    pa.2.1.2: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "I-am"}   # ỽyf
+    pa.2.1.3: {lemma: "clod", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "fame"}   # glot
+    pa.2.1.4: {lemma: "ceinmyn", morph: "ADJ", gloss: "splendid"}   # geinmyn
+    pa.2.1.5: {lemma: "cerdd", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "song"}   # cerd
+    pa.2.1.6: {lemma: "o", morph: "SCONJ", gloss: "if"}   # o
+    pa.2.1.7: {lemma: "clywed", morph: "VERB|Mood=Ind|Person=0|Tense=Pres", gloss: "is-heard"}   # chlywir
+    # pa.2.2: Pedryfan 'four-cornered'; pedyr y chwelyt is disputed: Williams 'four its revolutions'; others read ychwelyt as one word, a verb 'it turns', the fort turning to the four quarters; lemma chwyl 'turn' is provisional
+    pa.2.2.1: {lemma: "yn + caer", morph: "ADP + NOUN|Gender=Fem|Number=Sing", gloss: "in-the-fort"}   # Igkaer
+    pa.2.2.2: {lemma: "Pedryfan", morph: "PROPN", gloss: "Pedryfan"}   # pedryuan
+    pa.2.2.3: {lemma: "pedwar", morph: "NUM", gloss: "four"}   # pedyr
+    pa.2.2.4: {lemma: "ei", morph: "DET|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "its"}   # y
+    pa.2.2.5: {lemma: "chwyl", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "revolutions"}   # chwelyt
+    # pa.2.3: Ygkynneir: Williams 'in the first word' (yn + cyn + gair); Haycock takes yg as the possessive 'my', 'my first utterance'; the lemma cynnair (cyn + gair) is provisional
+    pa.2.3.1: {lemma: "yn + cynnair", morph: "ADP + NOUN|Gender=Masc|Number=Sing", gloss: "in-the-first-word"}   # Ygkynneir
+    pa.2.3.2: {lemma: "o + y", morph: "ADP + DET|Definite=Def|PronType=Art", gloss: "from-the"}   # or
+    pa.2.3.3: {lemma: "pair", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "cauldron"}   # peir
+    pa.2.3.4: {lemma: "pan", morph: "SCONJ", gloss: "when"}   # pan
+    pa.2.3.5: {lemma: "llefaru", morph: "VERB|Mood=Ind|Person=0|Tense=Past", gloss: "it-was-spoken"}   # leferit
+    # pa.2.4: gochyneuit is the impersonal preterite of cynnau 'kindle' with go- 'somewhat, gently'; the prefixed headword gochynnau is not verified against GPC
+    pa.2.4.1: {lemma: "o", morph: "ADP", gloss: "from"}   # O
+    pa.2.4.2: {lemma: "anadl", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "the-breath"}   # anadyl
+    pa.2.4.3: {lemma: "naw", morph: "NUM", gloss: "of-nine"}   # naỽ
+    pa.2.4.4: {lemma: "morwyn", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "maidens"}   # morỽyn
+    pa.2.4.5: {lemma: "gochynnau", morph: "VERB|Mood=Ind|Person=0|Tense=Past", gloss: "it-was-gently-kindled"}   # gochyneuit
+    # pa.2.5: vynut, mynud 'courtesy, manner': Williams 'intention', Haycock 'its nature'
+    pa.2.5.1: {lemma: "neu", morph: "PART", gloss: "is-it-not"}   # Neu
+    pa.2.5.2: {lemma: "pair", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-cauldron"}   # peir
+    pa.2.5.3: {lemma: "pen", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "of-the-chief"}   # pen
+    pa.2.5.4: {lemma: "Annwfn", morph: "PROPN", gloss: "of-Annwfn"}   # annỽfyn
+    pa.2.5.5: {lemma: "pwy", morph: "PRON|PronType=Int", gloss: "what"}   # pỽy
+    pa.2.5.6: {lemma: "ei", morph: "DET|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "its"}   # y
+    pa.2.5.7: {lemma: "mynud", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "nature"}   # vynut
+    # pa.2.6: gwrym 'seam, ridge' (Williams 'a ridge'); also read as a colour, 'dark blue'
+    pa.2.6.1: {lemma: "gwrym", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "a-dark-ridge"}   # Gỽrym
+    pa.2.6.2: {lemma: "am", morph: "ADP", gloss: "about"}   # am
+    pa.2.6.3: {lemma: "ei", morph: "DET|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "its"}   # y
+    pa.2.6.4: {lemma: "goror", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "edge"}   # oror
+    pa.2.6.5: {lemma: "a", morph: "CCONJ", gloss: "and"}   # a
+    pa.2.6.6: {lemma: "mererid", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "pearls"}   # mererit
+    # pa.2.7: rytyghit, ry + the impersonal preterite of tynghu 'swear, destine': Williams 'that has not been sworn', Haycock 'it has not been destined (to do so)'
+    pa.2.7.1: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # Ny
+    pa.2.7.2: {lemma: "berwi", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "it-boils"}   # beirỽ
+    pa.2.7.3: {lemma: "bwyd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-food"}   # bỽyt
+    pa.2.7.4: {lemma: "llwfr", morph: "ADJ", gloss: "of-a-coward"}   # llỽfyr
+    pa.2.7.5: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # ny
+    pa.2.7.6: {lemma: "ry + tynghu", morph: "PART + VERB|Mood=Ind|Person=0|Tense=Past", gloss: "it-has-been-sworn"}   # rytyghit
+    # pa.2.8: lluch lleaỽc: Williams 'bright gleaming'; several scholars read Lluch Lleawg as a name (compare the Irish Lug), 'the sword of Lluch Lleawg'; the verb is the impersonal of dyrchafu 'raise', glossed 'thrust into it' by Haycock
+    pa.2.8.1: {lemma: "cleddyf", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "a-sword"}   # Cledyf
+    pa.2.8.2: {lemma: "lluch", morph: "ADJ", gloss: "flashing"}   # lluch
+    pa.2.8.3: {lemma: "lleawg", morph: "ADJ", gloss: "gleaming"}   # lleaỽc
+    pa.2.8.4: {lemma: "i", morph: "ADP|Gender=Masc|Number=Sing|Person=3", gloss: "to-it"}   # idaỽ
+    pa.2.8.5: {lemma: "ry + dyrchafu", morph: "PART + VERB|Mood=Ind|Person=0|Tense=Past", gloss: "was-raised"}   # rydyrchit
+    pa.2.9.1: {lemma: "a", morph: "CCONJ", gloss: "and"}   # Ac
+    pa.2.9.2: {lemma: "yn", morph: "ADP", gloss: "in"}   # yn
+    pa.2.9.3: {lemma: "llaw", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "the-hand"}   # llaỽ
+    pa.2.9.4: {lemma: "Lleminog", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "of-Lleminog"}   # leminaỽc
+    pa.2.9.5: {lemma: "yd", morph: "PART", gloss: "(particle)"}   # yd
+    pa.2.9.6: {lemma: "gadael", morph: "VERB|Mood=Ind|Person=0|Tense=Past", gloss: "it-was-left"}   # edewit
+    pa.2.10.1: {lemma: "a", morph: "CCONJ", gloss: "and"}   # A
+    pa.2.10.2: {lemma: "rhag", morph: "ADP", gloss: "before"}   # rac
+    pa.2.10.3: {lemma: "drws", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-door"}   # drỽs
+    pa.2.10.4: {lemma: "porth", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "of-the-gate"}   # porth
+    pa.2.10.5: {lemma: "uffern", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "of-hell"}   # vffern
+    pa.2.10.6: {lemma: "llugorn", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "lamps"}   # llugyrn
+    pa.2.10.7: {lemma: "llosgi", morph: "VERB|Mood=Ind|Person=0|Tense=Past", gloss: "were-burning"}   # lloscit
+    # pa.2.11: lethrit (llethrid) 'shining, splendid' after Williams 'a splendid labour'; the headword is not verified against GPC
+    pa.2.11.1: {lemma: "a", morph: "CCONJ", gloss: "and"}   # A
+    pa.2.11.2: {lemma: "pan", morph: "SCONJ", gloss: "when"}   # phan
+    pa.2.11.3: {lemma: "mynd", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "went"}   # aetham
+    pa.2.11.4: {lemma: "ni", morph: "PRON|Number=Plur|Person=1|PronType=Prs", gloss: "we"}   # ni
+    pa.2.11.5: {lemma: "gan", morph: "ADP", gloss: "with"}   # gan
+    pa.2.11.6: {lemma: "Arthur", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Arthur"}   # arthur
+    pa.2.11.7: {lemma: "trafferth", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "a-labour"}   # trafferth
+    pa.2.11.8: {lemma: "llethrid", morph: "ADJ", gloss: "splendid"}   # lethrit
+    # pa.2.12: Caer Fedwyd is often read as Caer Feddwid 'fort of carousal' (meddw 'drunk')
+    pa.2.12.1: {lemma: "namyn", morph: "ADP", gloss: "except"}   # Namyn
+    pa.2.12.2: {lemma: "saith", morph: "NUM", gloss: "seven"}   # seith
+    pa.2.12.3: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # ny
+    pa.2.12.4: {lemma: "dyrraith", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "returned"}   # dyrreith
+    pa.2.12.5: {lemma: "o", morph: "ADP", gloss: "from"}   # o
+    pa.2.12.6: {lemma: "caer", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "the-fort"}   # gaer
+    pa.2.12.7: {lemma: "Fedwyd", morph: "PROPN", gloss: "Fedwyd"}   # vedwit
+    # pa.3.1: glywanaỽr is read as an impersonal of clywed; Williams 'with the listened song'; the form is unusual
+    pa.3.1.1: {lemma: "neud", morph: "PART", gloss: "indeed"}   # Neut
+    pa.3.1.2: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "I-am"}   # ỽyf
+    pa.3.1.3: {lemma: "clod", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "fame"}   # glot
+    pa.3.1.4: {lemma: "ceinmyn", morph: "ADJ", gloss: "splendid"}   # geinmyn
+    pa.3.1.5: {lemma: "cerdd", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "song"}   # kerd
+    pa.3.1.6: {lemma: "clywed", morph: "VERB|Mood=Ind|Person=0|Tense=Pres", gloss: "is-heard"}   # glywanaỽr
+    pa.3.2.1: {lemma: "yn + caer", morph: "ADP + NOUN|Gender=Fem|Number=Sing", gloss: "in-the-fort"}   # Igkaer
+    pa.3.2.2: {lemma: "Pedryfan", morph: "PROPN", gloss: "Pedryfan"}   # pedryfan
+    pa.3.2.3: {lemma: "ynys", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "the-isle"}   # ynys
+    pa.3.2.4: {lemma: "pybyr + dôr", morph: "ADJ + NOUN|Gender=Fem|Number=Sing", gloss: "of-the-strong-door"}   # pybyrdor
+    # pa.3.3: echwydd is 'noon, afternoon' in GPC; Williams 'twilight'; muchudd is 'jet' (Williams 'pitchy darkness')
+    pa.3.3.1: {lemma: "echwydd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "twilight"}   # Echỽyd
+    pa.3.3.2: {lemma: "a", morph: "CCONJ", gloss: "and"}   # a
+    pa.3.3.3: {lemma: "muchudd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "jet-black-darkness"}   # muchyd
+    pa.3.3.4: {lemma: "cymysgu", morph: "VERB|Mood=Ind|Person=0|Tense=Pres", gloss: "are-mixed"}   # kymysgetor
+    # pa.3.4: gorgord is filed under gosgordd 'retinue', of which it is taken to be a variant; a reviewer should check whether GPC enters gorgordd separately
+    pa.3.4.1: {lemma: "gwin", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "wine"}   # Gỽin
+    pa.3.4.2: {lemma: "gloyw", morph: "ADJ", gloss: "bright"}   # gloyỽ
+    pa.3.4.3: {lemma: "eu", morph: "DET|Number=Plur|Person=3|Poss=Yes|PronType=Prs", gloss: "their"}   # eu
+    pa.3.4.4: {lemma: "gwirawd", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "liquor"}   # gỽiraỽt
+    pa.3.4.5: {lemma: "rhag", morph: "ADP", gloss: "before"}   # rac
+    pa.3.4.6: {lemma: "eu", morph: "DET|Number=Plur|Person=3|Poss=Yes|PronType=Prs", gloss: "their"}   # eu
+    pa.3.4.7: {lemma: "gosgordd", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "retinue"}   # gorgord
+    pa.3.5.1: {lemma: "tri", morph: "NUM", gloss: "three"}   # Tri
+    pa.3.5.2: {lemma: "llonaid", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "loads"}   # lloneit
+    pa.3.5.3: {lemma: "Prydwen", morph: "PROPN|Gender=Fem|Number=Sing", gloss: "of-Prydwen"}   # prytwen
+    pa.3.5.4: {lemma: "yd", morph: "PART", gloss: "(particle)"}   # yd
+    pa.3.5.5: {lemma: "mynd", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "went"}   # aetham
+    pa.3.5.6: {lemma: "ni", morph: "PRON|Number=Plur|Person=1|PronType=Prs", gloss: "we"}   # ni
+    pa.3.5.7: {lemma: "ar", morph: "ADP", gloss: "on"}   # ar
+    pa.3.5.8: {lemma: "môr", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "sea"}   # vor
+    # pa.3.6: Williams's translation misprints the name as Caer Eigor
+    pa.3.6.1: {lemma: "namyn", morph: "ADP", gloss: "except"}   # Namyn
+    pa.3.6.2: {lemma: "saith", morph: "NUM", gloss: "seven"}   # seith
+    pa.3.6.3: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # ny
+    pa.3.6.4: {lemma: "dyrraith", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "returned"}   # dyrreith
+    pa.3.6.5: {lemma: "o", morph: "ADP", gloss: "from"}   # o
+    pa.3.6.6: {lemma: "caer", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "the-fort"}   # gaer
+    pa.3.6.7: {lemma: "Rigor", morph: "PROPN", gloss: "Rigor"}   # rigor
+    # pa.4.1: the line is disputed: Williams 'I shall not deserve much from the ruler of literature'; Haycock takes lawyr as llawwyr 'paltry, puny men' (llaw 'small, mean' + gwŷr), the object of obrynaf 'I value, deserve'; lemma llawwr is provisional; the line has no closing point in Skene
+    pa.4.1.1: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # Ni
+    pa.4.1.2: {lemma: "gobrynu + mi", morph: "V.i1s.pr + PRON|Number=Sing|Person=1|PronType=Prs", gloss: "I-value"}   # obrynafi
+    pa.4.1.3: {lemma: "llawwr", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "paltry-men"}   # lawyr
+    pa.4.1.4: {lemma: "llên", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "of-literature"}   # llen
+    pa.4.1.5: {lemma: "llywiadur", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "ruler"}   # llywyadur
+    # pa.4.2: Caer Wydyr 'fort of glass' (gwydr)
+    pa.4.2.1: {lemma: "tra", morph: "ADP", gloss: "beyond"}   # Tra
+    pa.4.2.2: {lemma: "caer", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "the-fort"}   # chaer
+    pa.4.2.3: {lemma: "Wydyr", morph: "PROPN", gloss: "Wydyr"}   # wydyr
+    pa.4.2.4: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # ny
+    pa.4.2.5: {lemma: "gweld", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pqp", gloss: "they-had-seen"}   # welsynt
+    pa.4.2.6: {lemma: "gwrhyd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-valour"}   # ỽrhyt
+    pa.4.2.7: {lemma: "Arthur", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "of-Arthur"}   # arthur
+    # pa.4.3: canhwr (cant + gwr) is a company of a hundred men, 'three score hundreds', six thousand; Williams leaves Canhwr untranslated
+    pa.4.3.1: {lemma: "tri", morph: "NUM", gloss: "three"}   # Tri
+    pa.4.3.2: {lemma: "ugain", morph: "NUM", gloss: "score"}   # vgeint
+    pa.4.3.3: {lemma: "canhwr", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "hundred-men"}   # canhỽr
+    pa.4.3.4: {lemma: "a", morph: "PART|PronType=Rel", gloss: "who"}   # a
+    pa.4.3.5: {lemma: "sefyll", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "stood"}   # seui
+    pa.4.3.6: {lemma: "ar", morph: "ADP", gloss: "on"}   # ar
+    pa.4.3.7: {lemma: "y", morph: "DET|Definite=Def|PronType=Art", gloss: "the"}   # y
+    pa.4.3.8: {lemma: "mur", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "wall"}   # mur
+    # pa.4.4: ae is read as â + possessive; the possessive may be singular ('its sentinel', Williams) or plural
+    pa.4.4.1: {lemma: "bod", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Imp", gloss: "it-was"}   # Oed
+    pa.4.4.2: {lemma: "anhawdd", morph: "ADJ", gloss: "difficult"}   # anhaỽd
+    pa.4.4.3: {lemma: "ymadrodd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "conversation"}   # ymadraỽd
+    pa.4.4.4: {lemma: "â + eu", morph: "ADP + DET|Number=Plur|Person=3|Poss=Yes|PronType=Prs", gloss: "with-their"}   # ae
+    pa.4.4.5: {lemma: "gwyliadur", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "sentinel"}   # gwylyadur
+    pa.4.5.1: {lemma: "tri", morph: "NUM", gloss: "three"}   # Tri
+    pa.4.5.2: {lemma: "llonaid", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "loads"}   # lloneit
+    pa.4.5.3: {lemma: "Prydwen", morph: "PROPN|Gender=Fem|Number=Sing", gloss: "of-Prydwen"}   # prytwen
+    pa.4.5.4: {lemma: "yd", morph: "PART", gloss: "(particle)"}   # yd
+    pa.4.5.5: {lemma: "mynd", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "went"}   # aeth
+    pa.4.5.6: {lemma: "gan", morph: "ADP", gloss: "with"}   # gan
+    pa.4.5.7: {lemma: "Arthur", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Arthur"}   # arthur
+    # pa.4.6: Caer Golud 'fort of riches' (golud 'wealth')
+    pa.4.6.1: {lemma: "namyn", morph: "ADP", gloss: "except"}   # Namyn
+    pa.4.6.2: {lemma: "saith", morph: "NUM", gloss: "seven"}   # seith
+    pa.4.6.3: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # ny
+    pa.4.6.4: {lemma: "dyrraith", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "returned"}   # dyrreith
+    pa.4.6.5: {lemma: "o", morph: "ADP", gloss: "from"}   # o
+    pa.4.6.6: {lemma: "caer", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "the-fort"}   # gaer
+    pa.4.6.7: {lemma: "Golud", morph: "PROPN", gloss: "Golud"}   # golud
+    # pa.5.1: as pa.4.1: y is the affixed pronoun i written apart; Williams 'from those with long shields'; Haycock 'paltry men with trailing shields'
+    pa.5.1.1: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # Ny
+    pa.5.1.2: {lemma: "gobrynu", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "I-value"}   # obrynaf
+    pa.5.1.3: {lemma: "mi", morph: "PRON|Number=Sing|Person=1|PronType=Prs", gloss: "I"}   # y
+    pa.5.1.4: {lemma: "llawwr", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "paltry-men"}   # lawyr
+    pa.5.1.5: {lemma: "llaes", morph: "ADJ", gloss: "trailing"}   # llaes
+    pa.5.1.6: {lemma: "eu", morph: "DET|Number=Plur|Person=3|Poss=Yes|PronType=Prs", gloss: "their"}   # eu
+    pa.5.1.7: {lemma: "cylchwy", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "shields"}   # kylchỽy
+    # pa.5.2: peridyd is read as a noun, 'creator, causer' (Williams 'who the causer'); it can also be taken as a verb form of peri 'cause, create', 'which day (the Lord) was created'
+    pa.5.2.1: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # Ny
+    pa.5.2.2: {lemma: "gwybod", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "know"}   # ỽdant
+    pa.5.2.3: {lemma: "hwy", morph: "PRON|Number=Plur|Person=3|PronType=Prs", gloss: "they"}   # ỽy
+    pa.5.2.4: {lemma: "py", morph: "DET|PronType=Int", gloss: "what"}   # py
+    pa.5.2.5: {lemma: "dydd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "day"}   # dyd
+    pa.5.2.6: {lemma: "peridydd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-causer"}   # peridyd
+    pa.5.2.7: {lemma: "pwy", morph: "PRON|PronType=Int", gloss: "who"}   # pỽy
+    # pa.5.3: meindyd mein 'fine, slender' + dydd, 'the fair day' (Williams 'serene day'), taken by others as 'midday'; Cwy is a name to Williams, but may be an interrogative ('who'), rhyming with pwy; the lemma meinddydd is provisional
+    pa.5.3.1: {lemma: "py", morph: "DET|PronType=Int", gloss: "what"}   # Py
+    pa.5.3.2: {lemma: "awr", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "hour"}   # aỽr
+    pa.5.3.3: {lemma: "y", morph: "DET|Definite=Def|PronType=Art", gloss: "in-the"}   # y
+    pa.5.3.4: {lemma: "meinddydd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "serene-day"}   # meindyd
+    pa.5.3.5: {lemma: "y", morph: "PART", gloss: "that"}   # y
+    pa.5.3.6: {lemma: "geni", morph: "VERB|Mood=Ind|Person=0|Tense=Past", gloss: "was-born"}   # ganet
+    pa.5.3.7: {lemma: "Cwy", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Cwy"}   # cỽy
+    # pa.5.4: ar is unclear: Williams 'who caused that he should not go'; read here as a + yr, 'the one who'; the line's sense is disputed
+    pa.5.4.1: {lemma: "pwy", morph: "PRON|PronType=Int", gloss: "who"}   # Pỽy
+    pa.5.4.2: {lemma: "gwneud", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "caused"}   # gỽnaeth
+    pa.5.4.3: {lemma: "a + yr", morph: "PART|PronType=Rel + DET|Definite=Def|PronType=Art", gloss: "that"}   # ar
+    pa.5.4.4: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # nyt
+    pa.5.4.5: {lemma: "mynd", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "went"}   # aeth
+    pa.5.4.6: {lemma: "dôl", morph: "NOUN|Gender=Fem|Number=Plur", gloss: "the-dales"}   # doleu
+    pa.5.4.7: {lemma: "Defwy", morph: "PROPN", gloss: "of-Defwy"}   # defỽy
+    pa.5.5.1: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # Ny
+    pa.5.5.2: {lemma: "gwybod", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "know"}   # ỽdant
+    pa.5.5.3: {lemma: "hwy", morph: "PRON|Number=Plur|Person=3|PronType=Prs", gloss: "they"}   # ỽy
+    pa.5.5.4: {lemma: "y", morph: "DET|Definite=Def|PronType=Art", gloss: "the"}   # yr
+    pa.5.5.5: {lemma: "ych", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "ox"}   # ych
+    pa.5.5.6: {lemma: "brych", morph: "ADJ", gloss: "brindled"}   # brych
+    pa.5.5.7: {lemma: "bras", morph: "ADJ", gloss: "thick"}   # bras
+    pa.5.5.8: {lemma: "ei", morph: "DET|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "his"}   # y
+    pa.5.5.9: {lemma: "penrwy", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "head-band"}   # penrỽy
+    # pa.5.6: kygwng 'joint, link' (Williams 'knobs')
+    pa.5.6.1: {lemma: "saith", morph: "NUM", gloss: "seven"}   # Seith
+    pa.5.6.2: {lemma: "ugain", morph: "NUM", gloss: "score"}   # vgein
+    pa.5.6.3: {lemma: "cygwng", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "links"}   # kygỽng
+    pa.5.6.4: {lemma: "yn + ei", morph: "ADP + DET|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "in-his"}   # yny
+    pa.5.6.5: {lemma: "aerwy", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "collar"}   # aerỽy
+    # pa.5.7: Skene prints arthir and auyrdol, the refrain elsewhere arthur and afyrdwl (6.5); auyrdol 'sorrowful, grievous' (Williams 'of anxious memory'); the headword afrddwl is not verified against GPC
+    pa.5.7.1: {lemma: "a", morph: "CCONJ", gloss: "and"}   # A
+    pa.5.7.2: {lemma: "pan", morph: "SCONJ", gloss: "when"}   # phan
+    pa.5.7.3: {lemma: "mynd", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "went"}   # aetham
+    pa.5.7.4: {lemma: "ni", morph: "PRON|Number=Plur|Person=1|PronType=Prs", gloss: "we"}   # ni
+    pa.5.7.5: {lemma: "gan", morph: "ADP", gloss: "with"}   # gan
+    pa.5.7.6: {lemma: "Arthur", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Arthur"}   # arthir
+    pa.5.7.7: {lemma: "afrddwl", morph: "ADJ", gloss: "sorrowful"}   # auyrdol
+    pa.5.7.8: {lemma: "gofwy", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "visit"}   # gofỽy
+    pa.5.8.1: {lemma: "namyn", morph: "ADP", gloss: "except"}   # Namyn
+    pa.5.8.2: {lemma: "saith", morph: "NUM", gloss: "seven"}   # seith
+    pa.5.8.3: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # ny
+    pa.5.8.4: {lemma: "dyrraith", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "returned"}   # dyrreith
+    pa.5.8.5: {lemma: "o", morph: "ADP", gloss: "from"}   # o
+    pa.5.8.6: {lemma: "caer", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "the-fort"}   # gaer
+    pa.5.8.7: {lemma: "Fandwy", morph: "PROPN", gloss: "Fandwy"}   # vandỽy
+    # pa.6.1: Skene prints goheu; the rhyme of the stanza (pen, perchen, gynhen, ochren) and other texts read gohen; the sense is uncertain (Williams 'those of loose bias'); gloss and lemma provisional
+    pa.6.1.1: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # Ny
+    pa.6.1.2: {lemma: "gobrynu", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "I-value"}   # obrynaf
+    pa.6.1.3: {lemma: "mi", morph: "PRON|Number=Sing|Person=1|PronType=Prs", gloss: "I"}   # y
+    pa.6.1.4: {lemma: "llawwr", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "paltry-men"}   # lawyr
+    pa.6.1.5: {lemma: "llaes", morph: "ADJ", gloss: "slack"}   # llaes
+    pa.6.1.6: {lemma: "eu", morph: "DET|Number=Plur|Person=3|Poss=Yes|PronType=Prs", gloss: "their"}   # eu
+    pa.6.1.7: {lemma: "gohen", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "resolve"}   # goheu
+    # pa.6.2: as pa.5.2; Williams 'what day the chief was caused'; the gloss follows Williams, the lemma the noun reading
+    pa.6.2.1: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # Ny
+    pa.6.2.2: {lemma: "gwybod", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "know"}   # ỽdant
+    pa.6.2.3: {lemma: "py", morph: "DET|PronType=Int", gloss: "what"}   # py
+    pa.6.2.4: {lemma: "dydd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "day"}   # dyd
+    pa.6.2.5: {lemma: "peridydd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "was-caused"}   # peridẏd
+    pa.6.2.6: {lemma: "pen", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-chief"}   # pen
+    pa.6.3.1: {lemma: "py", morph: "DET|PronType=Int", gloss: "what"}   # Py
+    pa.6.3.2: {lemma: "awr", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "hour"}   # aỽr
+    pa.6.3.3: {lemma: "y", morph: "DET|Definite=Def|PronType=Art", gloss: "in-the"}   # y
+    pa.6.3.4: {lemma: "meinddydd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "serene-day"}   # meindyd
+    pa.6.3.5: {lemma: "y", morph: "PART", gloss: "that"}   # y
+    pa.6.3.6: {lemma: "geni", morph: "VERB|Mood=Ind|Person=0|Tense=Past", gloss: "was-born"}   # ganet
+    pa.6.3.7: {lemma: "perchen", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-owner"}   # perchen
+    pa.6.4.1: {lemma: "py", morph: "DET|PronType=Int", gloss: "what"}   # Py
+    pa.6.4.2: {lemma: "mil", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "animal"}   # vil
+    pa.6.4.3: {lemma: "a", morph: "PART|PronType=Rel", gloss: "that"}   # a
+    pa.6.4.4: {lemma: "cadw", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "they-keep"}   # gatwant
+    pa.6.4.5: {lemma: "arian", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "silver"}   # aryant
+    pa.6.4.6: {lemma: "ei", morph: "DET|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "its"}   # y
+    pa.6.4.7: {lemma: "pen", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "head"}   # pen
+    pa.6.5.1: {lemma: "pan", morph: "SCONJ", gloss: "when"}   # Pan
+    pa.6.5.2: {lemma: "mynd", morph: "VERB|Mood=Ind|Number=Plur|Person=1|Tense=Past", gloss: "went"}   # aetham
+    pa.6.5.3: {lemma: "ni", morph: "PRON|Number=Plur|Person=1|PronType=Prs", gloss: "we"}   # ni
+    pa.6.5.4: {lemma: "gan", morph: "ADP", gloss: "with"}   # gan
+    pa.6.5.5: {lemma: "Arthur", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Arthur"}   # arthur
+    pa.6.5.6: {lemma: "afrddwl", morph: "ADJ", gloss: "sorrowful"}   # afyrdỽl
+    pa.6.5.7: {lemma: "cynnen", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "contention"}   # gynhen
+    # pa.6.6: Skene prints a for the o of every other refrain; annotated as o 'from'
+    pa.6.6.1: {lemma: "namyn", morph: "ADP", gloss: "except"}   # Namyn
+    pa.6.6.2: {lemma: "saith", morph: "NUM", gloss: "seven"}   # seith
+    pa.6.6.3: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # ny
+    pa.6.6.4: {lemma: "dyrraith", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "returned"}   # dyrreith
+    pa.6.6.5: {lemma: "o", morph: "ADP", gloss: "from"}   # a
+    pa.6.6.6: {lemma: "caer", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "the-fort"}   # gaer
+    pa.6.6.7: {lemma: "Ochren", morph: "PROPN", gloss: "Ochren"}   # ochren
+    # pa.7.1: dychnut is uncertain: Williams 'congregate'; others 'howl'; it is taken here as a verbal noun used as the predicate; cunin 'dogs, whelps' (Williams 'dogs') has no verified GPC headword; cor may be côr 'enclosure, stall' (Williams 'kennel') or côr 'choir'
+    pa.7.1.1: {lemma: "mynach", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "monks"}   # Myneich
+    pa.7.1.2: {lemma: "dychnud", morph: "NOUN|VerbForm=Vnoun", gloss: "congregate"}   # dychnut
+    pa.7.1.3: {lemma: "fel", morph: "ADP", gloss: "like"}   # val
+    pa.7.1.4: {lemma: "cunin", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "dogs"}   # cunin
+    pa.7.1.5: {lemma: "côr", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "in-a-kennel"}   # cor
+    # pa.7.2: Williams 'From contact with their superiors they acquire knowledge'; gỽidan hor is one word in other texts (gwidanhor, compare gỽydyanhaỽr in 8.2), a form of gwybod 'know' whose analysis is uncertain; udyd taken as a plural of udd 'lord'; the whole line is disputed
+    pa.7.2.1: {lemma: "o", morph: "ADP", gloss: "from"}   # O
+    pa.7.2.2: {lemma: "cyfranc", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "contact"}   # gyfranc
+    pa.7.2.3: {lemma: "udd", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "with-lords"}   # udyd
+    pa.7.2.4: {lemma: "a + eu", morph: "CCONJ + DET|Number=Plur|Person=3|Poss=Yes|PronType=Prs", gloss: "and-their"}   # ae
+    pa.7.2.5: {lemma: "gwybod", morph: "VERB", gloss: "knowledge"}   # gỽidan
+    pa.7.2.6: {lemma: "gwybod", morph: "X", gloss: "(ending)"}   # hor
+    pa.7.3.1: {lemma: "ai", morph: "PART", gloss: "is"}   # Ae
+    pa.7.3.2: {lemma: "un", morph: "NUM", gloss: "one"}   # vn
+    pa.7.3.3: {lemma: "hynt", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "the-course"}   # hynt
+    pa.7.3.4: {lemma: "gwynt", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "of-the-wind"}   # gỽynt
+    pa.7.3.5: {lemma: "ai", morph: "PART", gloss: "is"}   # ae
+    pa.7.3.6: {lemma: "un", morph: "NUM", gloss: "one"}   # vn
+    pa.7.3.7: {lemma: "dŵr", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-water"}   # dỽfyr
+    pa.7.3.8: {lemma: "môr", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "of-the-sea"}   # mor
+    pa.7.4.1: {lemma: "ai", morph: "PART", gloss: "is"}   # Ae
+    pa.7.4.2: {lemma: "un", morph: "NUM", gloss: "one"}   # vn
+    pa.7.4.3: {lemma: "ufel", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-spark"}   # ufel
+    pa.7.4.4: {lemma: "tân", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "of-the-fire"}   # tan
+    pa.7.4.5: {lemma: "twrf", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "tumult"}   # tỽrỽf
+    pa.7.4.6: {lemma: "diachor", morph: "ADJ", gloss: "unrestrainable"}   # diachor
+    # pa.8.1: as pa.7.1
+    pa.8.1.1: {lemma: "mynach", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "monks"}   # Myneych
+    pa.8.1.2: {lemma: "dychnud", morph: "NOUN|VerbForm=Vnoun", gloss: "congregate"}   # dychnut
+    pa.8.1.3: {lemma: "fel", morph: "ADP", gloss: "like"}   # val
+    pa.8.1.4: {lemma: "blaidd", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "wolves"}   # bleidaỽr
+    # pa.8.2: as pa.7.2
+    pa.8.2.1: {lemma: "o", morph: "ADP", gloss: "from"}   # O
+    pa.8.2.2: {lemma: "cyfranc", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "contact"}   # gyfranc
+    pa.8.2.3: {lemma: "udd", morph: "NOUN|Gender=Masc|Number=Plur", gloss: "with-lords"}   # udyd
+    pa.8.2.4: {lemma: "a + eu", morph: "CCONJ + DET|Number=Plur|Person=3|Poss=Yes|PronType=Prs", gloss: "and-their"}   # ae
+    pa.8.2.5: {lemma: "gwybod", morph: "VERB", gloss: "knowledge"}   # gỽydyanhaỽr
+    pa.8.3.1: {lemma: "ni", morph: "PART|Polarity=Neg", gloss: "not"}   # Ny
+    pa.8.3.2: {lemma: "gwybod", morph: "VERB|Mood=Ind|Number=Plur|Person=3|Tense=Pres", gloss: "know"}   # ỽdant
+    pa.8.3.3: {lemma: "pan", morph: "SCONJ", gloss: "when"}   # pan
+    pa.8.3.4: {lemma: "ysgar", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "divide"}   # yscar
+    pa.8.3.5: {lemma: "dewaint", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-deep-night"}   # deweint
+    pa.8.3.6: {lemma: "a", morph: "CCONJ", gloss: "and"}   # a
+    pa.8.3.7: {lemma: "gwawr", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "dawn"}   # gỽaỽr
+    # pa.8.4: rynnaỽd is taken as a preterite of rhynnu 'shake, shiver' (Williams 'who agitates it'); the form and sense are uncertain
+    pa.8.4.1: {lemma: "neu", morph: "CCONJ", gloss: "or"}   # Neu
+    pa.8.4.2: {lemma: "gwynt", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-wind"}   # ỽynt
+    pa.8.4.3: {lemma: "pwy", morph: "PRON|PronType=Int", gloss: "what"}   # pỽy
+    pa.8.4.4: {lemma: "hynt", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "course"}   # hynt
+    pa.8.4.5: {lemma: "pwy", morph: "PRON|PronType=Int", gloss: "who"}   # pỽy
+    pa.8.4.6: {lemma: "ef", morph: "PRON|Gender=Masc|Number=Sing|Person=3|PronType=Prs", gloss: "it"}   # y
+    pa.8.4.7: {lemma: "rhynnu", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "agitates"}   # rynnaỽd
+    # pa.8.5: diua 'destroys, perishes' (Williams 'dies away'); plaỽd follows Williams 'roars' and is uncertain; the headword plawdd is provisional
+    pa.8.5.1: {lemma: "py", morph: "DET|PronType=Int", gloss: "what"}   # Py
+    pa.8.5.2: {lemma: "ma", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "place"}   # va
+    pa.8.5.3: {lemma: "difa", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "it-dies-away"}   # diua
+    pa.8.5.4: {lemma: "py", morph: "DET|PronType=Int", gloss: "what"}   # py
+    pa.8.5.5: {lemma: "tir", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "land"}   # tir
+    pa.8.5.6: {lemma: "a", morph: "PART|PronType=Rel", gloss: "that"}   # a
+    pa.8.5.7: {lemma: "plawdd", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres", gloss: "it-roars"}   # plaỽd
+    # pa.8.6: Williams 'The grave of the saint is vanishing from the altar-tomb'; a here is read as 'and', with Haycock ('both grave and altar')
+    pa.8.6.1: {lemma: "bedd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-grave"}   # Bet
+    pa.8.6.2: {lemma: "sant", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "of-the-saint"}   # sant
+    pa.8.6.3: {lemma: "yn", morph: "PART", gloss: "(predicative)"}   # yn
+    pa.8.6.4: {lemma: "difant", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "vanishing"}   # diuant
+    pa.8.6.5: {lemma: "a", morph: "CCONJ", gloss: "and"}   # a
+    pa.8.6.6: {lemma: "bedd", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "the-grave"}   # bet
+    pa.8.6.7: {lemma: "allor", morph: "NOUN|Gender=Fem|Number=Sing", gloss: "of-the-altar"}   # allaỽr
+    pa.8.7.1: {lemma: "golychu", morph: "VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres", gloss: "I-praise"}   # Golychaf
+    pa.8.7.2: {lemma: "y", morph: "DET|Definite=Def|PronType=Art", gloss: "the"}   # y
+    pa.8.7.3: {lemma: "gwledig", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "lord"}   # wledic
+    pa.8.7.4: {lemma: "pendefig", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "prince"}   # pendefic
+    pa.8.7.5: {lemma: "mawr", morph: "ADJ", gloss: "great"}   # maỽr
+    # pa.8.8: am is read as a'm (Williams 'Christ be my portion'); gwadawl may also be a verb, 'who endows me'
+    pa.8.8.1: {lemma: "na", morph: "PART|Polarity=Neg", gloss: "that-not"}   # Na
+    pa.8.8.2: {lemma: "bod", morph: "VERB|Mood=Sub|Number=Sing|Person=1|Tense=Pres", gloss: "I-be"}   # bỽyf
+    pa.8.8.3: {lemma: "trist", morph: "ADJ", gloss: "wretched"}   # trist
+    pa.8.8.4: {lemma: "Crist", morph: "PROPN|Gender=Masc|Number=Sing", gloss: "Christ"}   # crist
+    pa.8.8.5: {lemma: "a + fy", morph: "PART|PronType=Rel + DET|Number=Sing|Person=1|Poss=Yes|PronType=Prs", gloss: "my"}   # am
+    pa.8.8.6: {lemma: "gwaddol", morph: "NOUN|Gender=Masc|Number=Sing", gloss: "portion"}   # gỽadaỽl

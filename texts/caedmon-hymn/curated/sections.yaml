@@ -1,0 +1,108 @@
+# Human overlay, written in the compact spec and expanded by weft overlay.
+- by: "Claude Opus 5.5 (Weft phase 0), for review by Skip and a scholar"
+  date: "2026-10-31"
+  why: "both copies, all nine lines. Hand lemma, morphology, gloss, staves and metre; no treebank exists. Lemmas follow J. R. Clark Hall, A Concise Anglo-Saxon Dictionary (1916), in its West Saxon headwords for both copies"
+  status: "draft"
+  set:
+    cae.moore.1: {metre: "long line, two half-lines · stave h"}
+    cae.moore.1.1: {lemma: "nū", morph: "ADV", gloss: "now"}   # Nū
+    cae.moore.1.2: {lemma: "sculan", morph: "AUX|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "must"}   # scylun
+    cae.moore.1.3: {lemma: "herian", morph: "VERB|VerbForm=Inf", gloss: "praise", stave: true}   # hergan
+    cae.moore.1.4: {lemma: "heofonrīce", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "of-heaven-kingdom", stave: true}   # hefaenrīces
+    cae.moore.1.5: {lemma: "weard", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "guardian"}   # Uard
+    cae.moore.2: {metre: "long line, two half-lines · stave m"}
+    cae.moore.2.1: {lemma: "metod", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "the-Measurer's", stave: true}   # Metudæs
+    cae.moore.2.2: {lemma: "meaht", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "might", stave: true}   # maecti
+    cae.moore.2.3: {lemma: "and", morph: "CCONJ", gloss: "and"}   # end
+    cae.moore.2.4: {lemma: "hē", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "his"}   # his
+    cae.moore.2.5: {lemma: "mōdgeþanc", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "mind-thought", stave: true}   # mōdgidanc
+    cae.moore.3: {metre: "long line, two half-lines · stave w"}
+    cae.moore.3.1: {lemma: "weorc", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "work", stave: true}   # uerc
+    cae.moore.3.2: {lemma: "wuldorfæder", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-the-glory-Father", stave: true}   # Uuldurfadur
+    cae.moore.3.3: {lemma: "swā", morph: "SCONJ", gloss: "as"}   # suē
+    cae.moore.3.4: {lemma: "hē", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # hē
+    cae.moore.3.5: {lemma: "wundor", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-wonders", stave: true}   # uundra
+    cae.moore.3.6: {lemma: "gehwā", morph: "PRON|Case=Gen|Gender=Neut|Number=Sing|PronType=Ind", gloss: "each"}   # gihuaes
+    cae.moore.4: {metre: "long line, two half-lines · stave vowel"}
+    cae.moore.4.1: {lemma: "ēce", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "eternal", stave: true}   # ēci
+    cae.moore.4.2: {lemma: "dryhten", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Lord"}   # dryctin
+    cae.moore.4.3: {lemma: "ōr", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "beginning", stave: true}   # ōr
+    cae.moore.4.4: {lemma: "āstellan", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "established"}   # āstelidæ
+    cae.moore.5: {metre: "long line, two half-lines · stave vowel"}
+    cae.moore.5.1: {lemma: "hē", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # Hē
+    cae.moore.5.2: {lemma: "ǣrest", morph: "ADV", gloss: "first", stave: true}   # āērist
+    cae.moore.5.3: {lemma: "scieppan", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "shaped"}   # scōp
+    cae.moore.5.4: {lemma: "ielde", morph: "NOUN|Case=Gen|Gender=Masc|Number=Plur", gloss: "of-men", stave: true}   # aelda
+    cae.moore.5.5: {lemma: "bearn", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "for-children"}   # barnum
+    cae.moore.6: {metre: "long line, two half-lines · stave h"}
+    cae.moore.6.1: {lemma: "heofon", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "heaven", stave: true}   # heben
+    cae.moore.6.2: {lemma: "til", morph: "ADP", gloss: "as"}   # til
+    cae.moore.6.3: {lemma: "hrōf", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "roof", stave: true}   # hrōfe
+    cae.moore.6.4: {lemma: "hālig", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "holy", stave: true}   # hāleg
+    cae.moore.6.5: {lemma: "scieppend", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Creator"}   # Scepen
+    cae.moore.7: {metre: "long line, two half-lines · stave m"}
+    cae.moore.7.1: {lemma: "þā", morph: "ADV", gloss: "then"}   # Thā
+    cae.moore.7.2: {lemma: "middangeard", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "middle-earth", stave: true}   # middungeard
+    cae.moore.7.3: {lemma: "mancynn", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "of-mankind", stave: true}   # moncynnæs
+    cae.moore.7.4: {lemma: "weard", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "guardian"}   # Uard
+    cae.moore.8: {metre: "long line, two half-lines · stave vowel"}
+    cae.moore.8.1: {lemma: "ēce", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "eternal", stave: true}   # ēci
+    cae.moore.8.2: {lemma: "dryhten", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Lord"}   # Dryctin
+    cae.moore.8.3: {lemma: "æfter", morph: "ADV", gloss: "afterwards", stave: true}   # æfter
+    cae.moore.8.4: {lemma: "tēon", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "made-ready"}   # tīadæ
+    cae.moore.9: {metre: "long line, two half-lines · stave f"}
+    cae.moore.9.1: {lemma: "firas", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "for-men", stave: true}   # firum
+    cae.moore.9.2: {lemma: "folde", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "earth", stave: true}   # foldu
+    cae.moore.9.3: {lemma: "frēa", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Lord", stave: true}   # Frēa
+    cae.moore.9.4: {lemma: "ælmihtig", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "almighty"}   # allmectig
+    cae.tanner.1: {metre: "long line, two half-lines · stave h"}
+    cae.tanner.1.1: {lemma: "nū", morph: "ADV", gloss: "now"}   # Nū
+    cae.tanner.1.2: {lemma: "sculan", morph: "AUX|Mood=Ind|Number=Plur|Person=1|Tense=Pres", gloss: "must"}   # sculon
+    cae.tanner.1.3: {lemma: "herian", morph: "VERB|VerbForm=Inf", gloss: "praise", stave: true}   # herigean
+    cae.tanner.1.4: {lemma: "heofonrīce", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "of-heaven-kingdom", stave: true}   # heofonrīces
+    cae.tanner.1.5: {lemma: "weard", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "guardian"}   # Weard
+    cae.tanner.2: {metre: "long line, two half-lines · stave m"}
+    cae.tanner.2.1: {lemma: "metod", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "the-Measurer's", stave: true}   # Meotedes
+    cae.tanner.2.2: {lemma: "meaht", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "might", stave: true}   # meahte
+    cae.tanner.2.3: {lemma: "and", morph: "CCONJ", gloss: "and"}   # ond
+    cae.tanner.2.4: {lemma: "hē", morph: "PRON|Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs", gloss: "his"}   # his
+    cae.tanner.2.5: {lemma: "mōdgeþanc", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "mind-thought", stave: true}   # mōdgeþanc
+    cae.tanner.3: {metre: "long line, two half-lines · stave w"}
+    cae.tanner.3.1: {lemma: "weorc", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "work", stave: true}   # weorc
+    cae.tanner.3.2: {lemma: "wuldorfæder", morph: "NOUN|Case=Gen|Gender=Masc|Number=Sing", gloss: "of-the-glory-Father", stave: true}   # Wuldorfæder
+    cae.tanner.3.3: {lemma: "swā", morph: "SCONJ", gloss: "as"}   # swā
+    cae.tanner.3.4: {lemma: "hē", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # he
+    cae.tanner.3.5: {lemma: "wundor", morph: "NOUN|Case=Gen|Gender=Neut|Number=Plur", gloss: "of-wonders", stave: true}   # wundra
+    cae.tanner.3.6: {lemma: "gehwā", morph: "PRON|Case=Gen|Gender=Neut|Number=Sing|PronType=Ind", gloss: "each"}   # gihwæs
+    cae.tanner.4: {metre: "long line, two half-lines · stave vowel"}
+    cae.tanner.4.1: {lemma: "ēce", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "eternal", stave: true}   # ēce
+    cae.tanner.4.2: {lemma: "dryhten", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Lord"}   # Drihten
+    cae.tanner.4.3: {lemma: "ōr", morph: "NOUN|Case=Acc|Gender=Neut|Number=Sing", gloss: "beginning", stave: true}   # ōr
+    cae.tanner.4.4: {lemma: "onstellan", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "established"}   # onstealde
+    cae.tanner.5: {metre: "long line, two half-lines · stave vowel"}
+    cae.tanner.5.1: {lemma: "hē", morph: "PRON|Case=Nom|Gender=Masc|Number=Sing|Person=3", gloss: "he"}   # Hē
+    cae.tanner.5.2: {lemma: "ǣrest", morph: "ADV", gloss: "first", stave: true}   # ǣrest
+    cae.tanner.5.3: {lemma: "scieppan", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "shaped"}   # sceōp
+    cae.tanner.5.4: {lemma: "eorþe", morph: "NOUN|Case=Gen|Gender=Fem|Number=Sing", gloss: "of-earth", stave: true}   # eorðan
+    cae.tanner.5.5: {lemma: "bearn", morph: "NOUN|Case=Dat|Gender=Neut|Number=Plur", gloss: "for-children"}   # bearnum
+    cae.tanner.6: {metre: "long line, two half-lines · stave h"}
+    cae.tanner.6.1: {lemma: "heofon", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "heaven", stave: true}   # heofon
+    cae.tanner.6.2: {lemma: "tō", morph: "ADP", gloss: "as"}   # tō
+    cae.tanner.6.3: {lemma: "hrōf", morph: "NOUN|Case=Dat|Gender=Masc|Number=Sing", gloss: "roof", stave: true}   # hrōfe
+    cae.tanner.6.4: {lemma: "hālig", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "holy", stave: true}   # hālig
+    cae.tanner.6.5: {lemma: "scieppend", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Creator"}   # Scyppend
+    cae.tanner.7: {metre: "long line, two half-lines · stave m"}
+    cae.tanner.7.1: {lemma: "þā", morph: "ADV", gloss: "then"}   # Þā
+    cae.tanner.7.2: {lemma: "middangeard", morph: "NOUN|Case=Acc|Gender=Masc|Number=Sing", gloss: "middle-earth", stave: true}   # middangeard
+    cae.tanner.7.3: {lemma: "mancynn", morph: "NOUN|Case=Gen|Gender=Neut|Number=Sing", gloss: "of-mankind", stave: true}   # moncynnes
+    cae.tanner.7.4: {lemma: "weard", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "guardian"}   # Weard
+    cae.tanner.8: {metre: "long line, two half-lines · stave vowel"}
+    cae.tanner.8.1: {lemma: "ēce", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "eternal", stave: true}   # ēce
+    cae.tanner.8.2: {lemma: "dryhten", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Lord"}   # Drihten
+    cae.tanner.8.3: {lemma: "æfter", morph: "ADV", gloss: "afterwards", stave: true}   # æfter
+    cae.tanner.8.4: {lemma: "tēon", morph: "VERB|Mood=Ind|Number=Sing|Person=3|Tense=Past", gloss: "made-ready"}   # tēode
+    cae.tanner.9: {metre: "long line, two half-lines · stave f"}
+    cae.tanner.9.1: {lemma: "firas", morph: "NOUN|Case=Dat|Gender=Masc|Number=Plur", gloss: "for-men", stave: true}   # firum
+    cae.tanner.9.2: {lemma: "folde", morph: "NOUN|Case=Acc|Gender=Fem|Number=Sing", gloss: "earth", stave: true}   # foldan
+    cae.tanner.9.3: {lemma: "frēa", morph: "NOUN|Case=Nom|Gender=Masc|Number=Sing", gloss: "Lord", stave: true}   # Frēa
+    cae.tanner.9.4: {lemma: "ælmihtig", morph: "ADJ|Case=Nom|Gender=Masc|Number=Sing", gloss: "almighty"}   # ælmihtig

@@ -1,0 +1,273 @@
+# Weft edition of four stanzas of Y Gododdin, in the text of W. F. Skene, The Four Ancient Books of
+# Wales (Edinburgh, 1868), vol. 2, pp. 62-65 and 106, transcribed from the Book of Aneirin (Cardiff
+# MS 2.81, now in the National Library of Wales). Each line is checked against the Internet Archive OCR of the University of
+# Toronto copy (pinned in the manifest).
+#
+# The OCR cannot read Skene's dotted ẏ, which he prints for the manuscript's dotted y; the check folds
+# ẏ to y (verify_fold). Where the OCR misreads a letter, verify_corrections gives the printed reading,
+# each settled on the page image (archive.org leaf n81, n84, n85, n86 and n127). Skene's decorated and
+# capital initials (GREDYF, GWYR) are written in ordinary capitals and small letters.
+#
+# Stanzas I, VIII and X are from the main text, in the later of the manuscript's two spellings; the
+# Arthur stanza is from the second series, in the older spelling (gu for gw, i for y, u for w).
+#
+#   t        the word as Skene prints it, punctuation attached
+#   n        Weft's normalized spelling in modern Welsh letters, from which the sound is read
+#            (pipeline/weft/welsh.py): dd, f, ff, w, the mutations written out; the medieval form of
+#            the word is kept (frein, brein, not brain; neithiawr), and the nasal mutation after yng is
+#            written out (yng ngwryawr) though the print does not show it. Draft, Weft's own.
+work: gododdin
+joiner: ' '
+verify_in: sources/skene1868-v2.txt
+verify_fold: {ẏ: y}
+verify_corrections:
+- {ocr: '^►^EEDYF', print: Gredyf}
+- {ocr: Gwrliyt, print: Gwrhyt}
+- {ocr: At bedrein, print: Ar bedrein}
+- {ocr: '^ogyt', print: Nogyt}
+- {ocr: kyneillt ewein, print: kyueillt ewein}
+- {ocr: vreiii, print: vrein}
+- {ocr: '^S> WYE a aeth gatraeth oed', print: Gwyr a aeth gatraeth oed}
+- {ocr: '^SfWYE a aeth gatraeth gan wawr', print: Gwyr a aeth gatraeth gan wawr}
+- {ocr: en bed eu hovnawr, print: en hed eu hovnawr}
+- {ocr: tbrycbant, print: thrychant}
+- {ocr: Eac gosgord, print: Rac gosgord}
+- {ocr: Eug ciuin, print: Rug ciuin}
+- {ocr: guemor, print: guernor}
+sections:
+- id: '1'
+  title: "Stanza I: Gredyf gwr oed gwas"
+  lines:
+  - tokens:
+    - {t: 'Gredyf', n: 'greddyf'}
+    - {t: 'gwr', n: 'gŵr'}
+    - {t: 'oed', n: 'oed'}
+    - {t: 'gwas', n: 'gwas'}
+  - tokens:
+    - {t: 'Gwrhẏt', n: 'gwrhyd'}
+    - {t: 'am', n: 'am'}
+    - {t: 'dias.', n: 'dias'}
+  - tokens:
+    - {t: 'Meirch', n: 'meirch'}
+    - {t: 'mwth', n: 'mwth'}
+    - {t: 'mẏngvras.', n: 'myngfras'}
+  - tokens:
+    - {t: 'A', n: 'a'}
+    - {t: 'dan', n: 'dan'}
+    - {t: 'vordwẏt', n: 'fordwyd'}
+    - {t: 'megẏr', n: 'megyr'}
+    - {t: 'was.', n: 'was'}
+  - tokens:
+    - {t: 'Ysgwẏt', n: 'ysgwyd'}
+    - {t: 'ẏsgauẏn', n: 'ysgafyn'}
+    - {t: 'lledan', n: 'llydan'}
+  - tokens:
+    - {t: 'Ar', n: 'ar'}
+    - {t: 'bedrein', n: 'bedrein'}
+    - {t: 'mein', n: 'mein'}
+    - {t: 'vuan.', n: 'fuan'}
+  - tokens:
+    - {t: 'Kledẏuawr', n: 'cleddyfawr'}
+    - {t: 'glas', n: 'glas'}
+    - {t: 'glan', n: 'glân'}
+  - tokens:
+    - {t: 'Ethẏ', n: 'ethy'}
+    - {t: 'eur', n: 'eur'}
+    - {t: 'aphan.', n: 'a phan'}
+  - tokens:
+    - {t: 'Nẏ', n: 'ny'}
+    - {t: 'bi', n: 'bi'}
+    - {t: 'ef', n: 'ef'}
+    - {t: 'a', n: 'a'}
+    - {t: 'vi', n: 'fi'}
+  - tokens:
+    - {t: 'Cas', n: 'cas'}
+    - {t: 'e', n: 'e'}
+    - {t: 'rof', n: 'rof'}
+    - {t: 'a', n: 'a'}
+    - {t: 'thi.', n: 'thi'}
+  - tokens:
+    - {t: 'Gwell', n: 'gwell'}
+    - {t: 'gwneif', n: 'gwneif'}
+    - {t: 'a', n: 'a'}
+    - {t: 'thi', n: 'thi'}
+  - tokens:
+    - {t: 'Ar', n: 'ar'}
+    - {t: 'wawt', n: 'wawd'}
+    - {t: 'dẏ', n: 'dy'}
+    - {t: 'uoli.', n: 'foli'}
+  - tokens:
+    - {t: 'Kẏnt', n: 'cynt'}
+    - {t: 'ẏ', n: 'y'}
+    - {t: 'waet', n: 'waed'}
+    - {t: 'elawr', n: 'elawr'}
+  - tokens:
+    - {t: 'Nogẏt', n: 'nogyd'}
+    - {t: 'ẏ', n: 'y'}
+    - {t: 'neithẏawr.', n: 'neithiawr'}
+  - tokens:
+    - {t: 'Kẏnt', n: 'cynt'}
+    - {t: 'ẏ', n: 'y'}
+    - {t: 'vwẏt', n: 'fwyd'}
+    - {t: 'ẏ', n: 'y'}
+    - {t: 'vrein', n: 'frein'}
+  - tokens:
+    - {t: 'Noc', n: 'noc'}
+    - {t: 'ẏ', n: 'y'}
+    - {t: 'argẏurein.', n: 'argyfrein'}
+  - tokens:
+    - {t: 'Ku', n: 'cu'}
+    - {t: 'kẏueillt', n: 'cyfeillt'}
+    - {t: 'ewein.', n: 'Ewein'}
+  - tokens:
+    - {t: 'Kwl', n: 'cwl'}
+    - {t: 'ẏ', n: 'y'}
+    - {t: 'uot', n: 'fod'}
+    - {t: 'a', n: 'a'}
+    - {t: 'dan', n: 'dan'}
+    - {t: 'vrein.', n: 'frein'}
+  - tokens:
+    - {t: 'Marth', n: 'marth'}
+    - {t: 'ẏm', n: 'ym'}
+    - {t: 'pa', n: 'pa'}
+    - {t: 'vro', n: 'fro'}
+  - tokens:
+    - {t: 'Llad', n: 'lladd'}
+    - {t: 'un', n: 'un'}
+    - {t: 'mab', n: 'mab'}
+    - {t: 'marro.', n: 'Marro'}
+- id: '8'
+  title: "Stanza VIII: Gwyr a aeth Gatraeth oed fraeth eu llu"
+  lines:
+  - tokens:
+    - {t: 'Gwyr', n: 'gwŷr'}
+    - {t: 'a', n: 'a'}
+    - {t: 'aeth', n: 'aeth'}
+    - {t: 'gatraeth', n: 'Gatraeth'}
+    - {t: 'oed', n: 'oedd'}
+    - {t: 'fraeth', n: 'ffraeth'}
+    - {t: 'eu', n: 'eu'}
+    - {t: 'llu.', n: 'llu'}
+  - tokens:
+    - {t: 'Glasved', n: 'glasfedd'}
+    - {t: 'eu', n: 'eu'}
+    - {t: 'hancwẏn', n: 'hancwyn'}
+    - {t: 'a', n: 'a'}
+    - {t: 'gwenwẏn', n: 'gwenwyn'}
+    - {t: 'vu.', n: 'fu'}
+  - tokens:
+    - {t: 'Trẏchant', n: 'trychant'}
+    - {t: 'trwẏ', n: 'trwy'}
+    - {t: 'beirẏant', n: 'beiriant'}
+    - {t: 'en', n: 'yn'}
+    - {t: 'cattau.', n: 'cadau'}
+  - tokens:
+    - {t: 'A', n: 'a'}
+    - {t: 'gwedẏ', n: 'gwedy'}
+    - {t: 'elwch', n: 'elwch'}
+    - {t: 'tawelwch', n: 'tawelwch'}
+    - {t: 'vu.', n: 'fu'}
+  - tokens:
+    - {t: 'Ket', n: 'ced'}
+    - {t: 'elwẏnt', n: 'elwynt'}
+    - {t: 'e', n: 'y'}
+    - {t: 'lanneu', n: 'lanneu'}
+    - {t: 'e', n: 'y'}
+    - {t: 'benẏdu.', n: 'benydu'}
+  - tokens:
+    - {t: 'Dadẏl', n: 'dadyl'}
+    - {t: 'dieu', n: 'dieu'}
+    - {t: 'agheu', n: 'angheu'}
+    - {t: 'ẏ', n: 'y'}
+    - {t: 'eu', n: 'eu'}
+    - {t: 'treidu.', n: 'treidu'}
+- id: '10'
+  title: "Stanza X: Gwyr a aeth Gatraeth gan wawr"
+  lines:
+  - tokens:
+    - {t: 'Gwyr', n: 'gwŷr'}
+    - {t: 'a', n: 'a'}
+    - {t: 'aeth', n: 'aeth'}
+    - {t: 'gatraeth', n: 'Gatraeth'}
+    - {t: 'gan', n: 'gan'}
+    - {t: 'wawr', n: 'wawr'}
+  - tokens:
+    - {t: 'Trauodẏnt', n: 'trafodynt'}
+    - {t: 'en', n: 'yn'}
+    - {t: 'hed', n: 'hedd'}
+    - {t: 'eu', n: 'eu'}
+    - {t: 'hovnawr.', n: 'hofnawr'}
+  - tokens:
+    - {t: 'Milcant', n: 'milcant'}
+    - {t: 'a', n: 'a'}
+    - {t: 'thrẏchant', n: 'thrychant'}
+    - {t: 'a', n: 'a'}
+    - {t: 'emdaflawr.', n: 'ymdaflawr'}
+  - tokens:
+    - {t: 'Gwẏarllẏt', n: 'gwyarllyd'}
+    - {t: 'gwẏnnodẏnt', n: 'gwynnodynt'}
+    - {t: 'waewawr.', n: 'waywawr'}
+  - tokens:
+    - {t: 'Ef', n: 'ef'}
+    - {t: 'gorsaf', n: 'gorsaf'}
+    - {t: 'ẏng', n: 'yng'}
+    - {t: 'gwrẏaf.', n: 'ngwryaf'}
+    - {t: 'eg', n: 'yng'}
+    - {t: 'gwrẏawr.', n: 'ngwryawr'}
+  - tokens:
+    - {t: 'Rac', n: 'rhag'}
+    - {t: 'gosgord', n: 'gosgordd'}
+    - {t: 'mẏnẏdawc', n: 'Mynyddawg'}
+    - {t: 'mwẏnvawr.', n: 'Mwynfawr'}
+- id: 'b33'
+  title: "Stanza XXXIII of the second series: Ef guant tra trigant (the Arthur stanza)"
+  lines:
+  - tokens:
+    - {t: 'Ef', n: 'ef'}
+    - {t: 'guant', n: 'gwant'}
+    - {t: 'tra', n: 'tra'}
+    - {t: 'trigant', n: 'trychant'}
+    - {t: 'echassaf', n: 'echassaf'}
+  - tokens:
+    - {t: 'Ef', n: 'ef'}
+    - {t: 'ladhei', n: 'laddei'}
+    - {t: 'auet', n: 'afed'}
+    - {t: 'ac', n: 'ac'}
+    - {t: 'eithaf', n: 'eithaf'}
+  - tokens:
+    - {t: 'Oid', n: 'oedd'}
+    - {t: 'guiu', n: 'gwiw'}
+    - {t: 'e', n: 'y'}
+    - {t: 'mlaen', n: 'mlaen'}
+    - {t: 'llu', n: 'llu'}
+    - {t: 'llarahaf', n: 'llarahaf'}
+  - tokens:
+    - {t: 'Godolei', n: 'godolei'}
+    - {t: 'o', n: 'o'}
+    - {t: 'heit', n: 'haidd'}
+    - {t: 'meirch', n: 'meirch'}
+    - {t: 'e', n: 'y'}
+    - {t: 'gaẏaf', n: 'gayaf'}
+  - tokens:
+    - {t: 'Gochore', n: 'gochore'}
+    - {t: 'brein', n: 'brein'}
+    - {t: 'du', n: 'du'}
+    - {t: 'ar', n: 'ar'}
+    - {t: 'uur', n: 'fur'}
+  - tokens:
+    - {t: 'Caer', n: 'caer'}
+    - {t: 'cein', n: 'cein'}
+    - {t: 'bei', n: 'bei'}
+    - {t: 'ef', n: 'ef'}
+    - {t: 'arthur', n: 'Arthur'}
+  - tokens:
+    - {t: 'Rug', n: 'rhwng'}
+    - {t: 'ciuin', n: 'cyfin'}
+    - {t: 'uerthi', n: 'ferthi'}
+    - {t: 'ig', n: 'yng'}
+    - {t: 'disur', n: 'nysur'}
+  - tokens:
+    - {t: 'Ig', n: 'yng'}
+    - {t: 'kunnor', n: 'nghynnor'}
+    - {t: 'guernor', n: 'gwernor'}
+    - {t: 'guaur', n: 'gwawr'}
